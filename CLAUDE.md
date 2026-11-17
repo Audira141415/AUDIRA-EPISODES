@@ -5,7 +5,7 @@ Aturan produksi (pipeline 11 tahap, gerbang style, branding, VO, QA, caption 6 p
 **Satu sesi = satu episode** (atau batch kecil ±3 episode). Mulai sesi baru setelah setiap gerbang ✅; lanjutkan dengan `audira_episode_status get` → `audira_render_batch status` → `audira_project_layout check`.
 
 ## Aset bersama (`shared/`)
-- HyperFrames / motion graphic 2D (hanya bila pengguna memaksa 2D; default = world3d 3D): `shared/styles/studio-motion.css` (9:16, safe zone atas 236 px (panel y 236), bawah 380 px) dan `shared/scripts/studio-motion-kit.js` (`StudioMotion.cameraDrift`, `cameraShake`, `cardEnter`, `popIn`).
+- HyperFrames / motion graphic 2D (hanya bila pengguna memaksa 2D; default = Remotion + R3F sejak 2026-11-17; world3d hanya QISSAH rule 14 dan FAKTADUNIA rule 17): `shared/styles/studio-motion.css` (9:16, safe zone atas 236 px (panel y 236), bawah 380 px) dan `shared/scripts/studio-motion-kit.js` (`StudioMotion.cameraDrift`, `cameraShake`, `cardEnter`, `popIn`).
 - Host manusia: `shared/assets/characters/agus-avatar-sketch.jpg` (sketsa pensil grafit + cat air), panduan tokoh lain di `shared/assets/characters/CHARACTER_GUIDE.md`. Hindari karakter CGI plastik generik.
 - SFX: `shared/assets/sfx/` sesuai `catalog.json` (`impact-bass-1`, `whoosh-cinematic`, `pop`, `click`, `glitch`, `riser`).
 - Skrip workspace: `scripts/tts-cartesia.mjs` (cadangan bila tool `audira_generate_voiceover` tidak bisa dipakai), `scripts/build-karaoke-captions.mjs` (subtitle karaoke per kata dari timestamp Cartesia).
