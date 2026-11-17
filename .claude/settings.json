@@ -1,0 +1,27 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node F:/AUDIRA-VIDEO-MOTION/scripts/hooks/pipeline-guard.mjs"
+          }
+        ],
+        "matcher": {
+          "tool_name": "Write|Edit"
+        }
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node F:/AUDIRA-VIDEO-MOTION/scripts/hooks/context-guard.mjs"
+          }
+        ]
+      }
+    ]
+  }
+}
