@@ -1,0 +1,227 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP31_CARA_KERJA_INTERNET",
+  "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+  "createdAt": "2026-11-19T00:52:09.561Z",
+  "updatedAt": "2026-11-19T09:06:11.355Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [],
+      "doneAt": "2026-11-19T00:52:44.979Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-19T00:53:58.484Z",
+          "text": "8 fakta terverifikasi, 6 HIGH (RFC, TeleGeography, IANA)"
+        }
+      ],
+      "doneAt": "2026-11-19T00:53:58.484Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-19T00:53:58.519Z",
+      "notes": [
+        {
+          "at": "2026-11-19T00:53:58.519Z",
+          "text": "CIRCUITFORGE dipilih pengguna. Cover topik pending (akan dirender setelah naskah)."
+        }
+      ],
+      "doneAt": "2026-11-19T00:53:58.519Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-19T00:56:47.933Z",
+      "notes": [
+        {
+          "at": "2026-11-19T00:56:47.933Z",
+          "text": "213 kata, ~90 dtk, 7 scene. Acc pengguna."
+        }
+      ],
+      "doneAt": "2026-11-19T00:56:47.933Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-19T00:58:31.254Z",
+          "text": "Starter + CIRCUITFORGE kit copied, npm install done"
+        }
+      ],
+      "doneAt": "2026-11-19T00:58:31.254Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-19T00:59:15.391Z",
+          "text": "81.04s, 206 words. Scene boundaries mapped from VO timestamps."
+        }
+      ],
+      "doneAt": "2026-11-19T00:59:15.391Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-19T01:22:06.303Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-19T05:24:54.205Z",
+          "text": "Composition built: rig.ts (14-beat shotPlan), InternetWorld.tsx (5 zones + data packet anim), InternetOverlay.tsx (HUD), EpisodeInternet.tsx. Registered InternetPreview + InternetFinal in Root.tsx. VO copied to public/audio/."
+        }
+      ],
+      "doneAt": "2026-11-19T05:24:54.205Z",
+      "startedAt": "2026-11-19T00:57:20.696Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-19T09:03:00.923Z",
+      "notes": [
+        {
+          "at": "2026-11-19T09:03:00.923Z",
+          "text": "User acc. Jury LOLOS avg 4.0. Contact sheet + motion-check passed all audits."
+        }
+      ],
+      "doneAt": "2026-11-19T09:03:00.923Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-19T09:03:06.844Z",
+          "text": "1080x1920@60 NVENC Vulkan, 141MB, 85s, LUFS -13.88, TP -0.71, metadata tagged, self-score avg 4.0 LOLOS"
+        }
+      ],
+      "doneAt": "2026-11-19T09:03:06.844Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-19T09:06:11.355Z",
+          "text": "SOCIAL_CAPTIONS.md validated, NOTES.md written, 3 lessons recorded to style memory, intermediates cleaned"
+        }
+      ],
+      "doneAt": "2026-11-19T09:06:11.355Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "cara-kerja-viral-EP31",
+    "style": "CIRCUITFORGE",
+    "engine": "remotion",
+    "wordCount": 213,
+    "estimatedDuration": {
+      "wordCount": 213,
+      "minSec": 85,
+      "maxSec": 95
+    }
+  },
+  "syncedAt": "2026-11-19T01:22:06.303Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-19T05:26:34.494Z",
+      "doing": "Render 7 key-frame stills for contact sheet (InternetPreview 540x960)",
+      "command": "npm run stills -- ../draft 1.5s,8s,25s,45s,60s,74s,82s InternetPreview",
+      "next": "Tile into contact sheet, audit:visual, score with style memory, ask user acc",
+      "snapshot": {
+        "episode": "EP31_CARA_KERJA_INTERNET",
+        "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+        "style": "CIRCUITFORGE",
+        "memoryEpisode": "cara-kerja-viral-EP31",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP31_CARA_KERJA_INTERNET/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    }
+  ],
+  "handover": {
+    "at": "2026-11-19T05:26:34.494Z",
+    "doing": "Render 7 key-frame stills for contact sheet (InternetPreview 540x960)",
+    "command": "npm run stills -- ../draft 1.5s,8s,25s,45s,60s,74s,82s InternetPreview",
+    "next": "Tile into contact sheet, audit:visual, score with style memory, ask user acc",
+    "snapshot": {
+      "episode": "EP31_CARA_KERJA_INTERNET",
+      "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+      "style": "CIRCUITFORGE",
+      "memoryEpisode": "cara-kerja-viral-EP31",
+      "currentStage": "draft",
+      "gates": {
+        "style": {
+          "approved": true,
+          "status": "done"
+        },
+        "script": {
+          "approved": true,
+          "status": "done"
+        },
+        "draft": {
+          "approved": false,
+          "status": "pending"
+        }
+      },
+      "voPath": "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP31_CARA_KERJA_INTERNET/audio/vo.wav",
+      "draftScores": [],
+      "finals": []
+    }
+  }
+}
