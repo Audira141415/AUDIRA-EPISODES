@@ -59,6 +59,7 @@ const subdirs = [
   'thumbnails',
   'project',
   'project/src',
+  'project/src/scenes',
   'project/public',
   'project/public/audio',
   'project/public/brand',
@@ -86,13 +87,77 @@ const statusData = {
     research: false,
     scriptApproved: false,
     voGenerated: false,
-    sceneBuilt: false,
+    multiSceneBuilt: false,
     audioMixed: false,
     rendered: false,
     qaPassed: false
   }
 };
 fs.writeFileSync(path.join(epDir, 'STATUS.json'), JSON.stringify(statusData, null, 2), 'utf-8');
+
+// 3. Multi-Scene Template Code Generation (Enforces Anti-Monolithic Law)
+const sceneBeats = [
+  { name: 'Scene1_Hook', title: 'Hook: Pembuka Dramatis', start: 0, end: 15, metric: 'FAKTA UTAMA', label: 'PENETRASI AWAL' },
+  { name: 'Scene2_Context', title: 'Context: Latar & Lanskap', start: 15, end: 35, metric: 'TAHUN AWAL', label: 'SEJARAH / LOKASI' },
+  { name: 'Scene3_Development', title: 'Development: Arsitektur & Detail', start: 35, end: 60, metric: 'DATA KUNCI', label: 'STRUKTUR UTAMA' },
+  { name: 'Scene4_Conflict', title: 'Conflict: Bencana / Tantangan', start: 60, end: 75, metric: 'PERISTIWA', label: 'TITIK KRUSIAL' },
+  { name: 'Scene5_Payoff', title: 'Payoff: Penemuan / Restorasi', start: 75, end: 85, metric: 'RESTORASI', label: 'RESOLUSI' },
+  { name: 'Scene6_Outro', title: 'Outro: Epilog Megah', start: 85, end: 92, metric: 'WARISAN', label: 'PENUTUP' },
+];
+
+for (const s of sceneBeats) {
+  const sceneCode = `import React from "react";
+import * as THREE from "three";
+
+/**
+ * ${s.title} (${s.start}s – ${s.end}s)
+ * WAJIB: Tampilkan visual hero yang mencerminkan apa yang diucapkan narator pada detik ini.
+ * DILARANG: Membiarkan objek statis tanpa relevansi narasi.
+ */
+export const ${s.name}: React.FC<{ t: number }> = ({ t }) => {
+  return (
+    <group>
+      {/* TODO: Letakkan hero asset (.glb), pencahayaan spesifik, dan environment babak ini */}
+      <ambientLight intensity={0.4} />
+      <directionalLight position={[5, 8, 5]} intensity={1.5} castShadow />
+    </group>
+  );
+};
+`;
+  fs.writeFileSync(path.join(epDir, `project/src/scenes/${s.name}.tsx`), sceneCode, 'utf-8');
+}
+
+// Generate MultiSceneComposition.tsx
+const compCode = `import React from "react";
+import { MultiSceneDirector, type SceneBeat } from "F:/AUDIRA-SKILL-MOTION/starter/src/templates/MultiSceneDirector.tsx";
+import { Scene1_Hook } from "./scenes/Scene1_Hook.tsx";
+import { Scene2_Context } from "./scenes/Scene2_Context.tsx";
+import { Scene3_Development } from "./scenes/Scene3_Development.tsx";
+import { Scene4_Conflict } from "./scenes/Scene4_Conflict.tsx";
+import { Scene5_Payoff } from "./scenes/Scene5_Payoff.tsx";
+import { Scene6_Outro } from "./scenes/Scene6_Outro.tsx";
+
+const SCENES: SceneBeat[] = [
+  { id: "s1", start: 0,  end: 15, title: "Hook",        metricValue: "FAKTA KUNCI", metricLabel: "PENETRASI AWAL", content: <Scene1_Hook t={0} /> },
+  { id: "s2", start: 15, end: 35, title: "Context",     metricValue: "LOKASI",      metricLabel: "LATAR HISTORIS", content: <Scene2_Context t={0} /> },
+  { id: "s3", start: 35, end: 60, title: "Development", metricValue: "STRUKTUR",   metricLabel: "ARSITEKTUR UTAMA", content: <Scene3_Development t={0} /> },
+  { id: "s4", start: 60, end: 75, title: "Conflict",    metricValue: "BENCANA",     metricLabel: "TITIK BALIK", content: <Scene4_Conflict t={0} /> },
+  { id: "s5", start: 75, end: 85, title: "Payoff",      metricValue: "RESTORASI",   metricLabel: "PENEMUAN", content: <Scene5_Payoff t={0} /> },
+  { id: "s6", start: 85, end: 92, title: "Outro",       metricValue: "WARISAN",     metricLabel: "PENUTUP", content: <Scene6_Outro t={0} /> },
+];
+
+export const EpisodeComposition: React.FC = () => {
+  return (
+    <MultiSceneDirector
+      totalSeconds={92}
+      scenes={SCENES}
+      channelHandle="@AUDIRA"
+      signatureSeed="${episodeName.toLowerCase()}"
+    />
+  );
+};
+`;
+fs.writeFileSync(path.join(epDir, 'project/src/EpisodeComposition.tsx'), compCode, 'utf-8');
 
 // 3. Rule 20 Documentation: PRD.md, PROGRESS.md, HANDOFF.md
 const prdContent = `# PRD — ${seriesName} / ${episodeName}
