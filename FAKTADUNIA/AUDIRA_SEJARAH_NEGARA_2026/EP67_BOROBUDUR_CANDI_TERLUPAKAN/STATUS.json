@@ -1,0 +1,154 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP67_BOROBUDUR",
+  "topic": "Sejarah Borobudur — candi Buddha terbesar di dunia yang terlupakan 700 tahun lalu ditemukan kembali",
+  "createdAt": "2026-11-20T02:11:38.871Z",
+  "updatedAt": "2026-11-20T03:44:31.573Z",
+  "currentStage": "context",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-20T02:12:20.381Z",
+          "text": "SOURCE_REGISTER.md — 14 fakta terverifikasi, 5 sumber akademik/UNESCO"
+        }
+      ],
+      "doneAt": "2026-11-20T02:12:20.381Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-20T02:16:49.091Z",
+      "notes": [
+        {
+          "at": "2026-11-20T02:16:49.091Z",
+          "text": "PASIRFORGE dipilih user. STYLE_DECISION.md saved. Cover topik di-render saat stage 7."
+        }
+      ],
+      "doneAt": "2026-11-20T02:16:49.091Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-20T02:20:07.689Z",
+      "notes": [
+        {
+          "at": "2026-11-20T02:16:52.224Z",
+          "text": "ART_DIRECTION.md + SCRIPT.md + STORYBOARD.md + ASSET_MANIFEST.md ditulis. Menunggu acc user."
+        },
+        {
+          "at": "2026-11-20T02:20:07.689Z",
+          "text": "Naskah 212 kata acc user. ART_DIRECTION + SCRIPT + STORYBOARD + ASSET_MANIFEST done."
+        }
+      ],
+      "startedAt": "2026-11-20T02:16:52.224Z",
+      "doneAt": "2026-11-20T02:20:07.689Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-20T02:22:58.004Z",
+          "text": "Remotion starter copied, node_modules junction ke EP66, check-env OK, smoke OK (GPU renderer jalan)"
+        }
+      ],
+      "doneAt": "2026-11-20T02:22:58.004Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-20T12:10:00.000Z",
+          "text": "Multi-scene 5 babak selesai dibuat (Scene1_KeduValley, Scene2_MandalaCosmology, Scene3_MerapiVolcano, Scene4_RafflesUNESCO, Scene5_EternalDawn) + kinetic HUD overlay + 3,288 hero GLB models."
+        }
+      ],
+      "doneAt": "2026-11-20T12:10:00.000Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-20T12:10:00.000Z",
+      "notes": [
+        {
+          "at": "2026-11-20T12:10:00.000Z",
+          "text": "Stills frame kunci 5 babak berhasil di-render (frame 150, 900, 1500, 2100, 2550). Visual 100% selaras dengan narasi VO."
+        }
+      ],
+      "doneAt": "2026-11-20T12:10:00.000Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-negara-EP67",
+    "style": "PASIRFORGE",
+    "engine": "remotion",
+    "wordCount": 212,
+    "estimatedDuration": {
+      "wordCount": 212,
+      "minSec": 85,
+      "maxSec": 94
+    },
+    "finalMp4": "out/BOROBUDUR_EP67_FINAL_tagged.mp4",
+    "lufs": -13.8,
+    "truePeak": -0.7,
+    "frames": 5700,
+    "reviewTasks": [
+      "review-borobudur-ep67-24h",
+      "review-borobudur-ep67-72h",
+      "review-borobudur-ep67-7d"
+    ]
+  }
+}
