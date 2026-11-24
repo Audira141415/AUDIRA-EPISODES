@@ -1,0 +1,412 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP76_TORNADO_API",
+  "topic": "Tornado Api — Ketika Kebakaran Hutan Menciptakan Pusaran Maut",
+  "createdAt": "2026-11-24T18:19:21.540Z",
+  "updatedAt": "2026-11-24T23:08:28.990Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:53.002Z",
+          "text": "Dibaca: EP72 NOTES/STYLE_DECISION, memory GLOBAL + DISASTERSIM, kit DISASTERSIM KIT.md, pola kode EP04 Gunung (DISASTERSIM)."
+        }
+      ],
+      "doneAt": "2026-11-24T18:20:53.002Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:48.144Z",
+          "text": "SOURCE_REGISTER F1–F15 (Wikipedia Carr Fire, Carr Fire tornado, Great Kanto earthquake, Fire whirl). Kanto: pakai \"hampir 40 ribu, hitungan menit\" (38k/15 mnt vs 40k)."
+        }
+      ],
+      "doneAt": "2026-11-24T18:20:48.144Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:30.283Z",
+          "text": "DISASTERSIM 3D dipilih AI; riset selesai (research/SOURCE_REGISTER.md F1–F15); proyek disalin dari EP04 Gunung (src/episodes kosong, Root.tsx masih import gunung → perlu diperbaiki)."
+        }
+      ],
+      "doneAt": "2026-11-24T18:20:30.283Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:54.046Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-24T18:20:46.092Z",
+      "startedAt": "2026-11-24T18:20:46.092Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:54.046Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:24:40.294Z",
+          "text": "VO Cartesia speed 0.9 = 86.56 dtk, 204 kata; docs tahap 4 lengkap (ART_DIRECTION, STORYBOARD 8 baris, ASSET_MANIFEST). Koreksi: animation BELUM (status sync salah)."
+        }
+      ],
+      "doneAt": "2026-11-24T18:24:40.294Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:54.046Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-24T18:29:26.742Z",
+          "text": "koreksi s3: sync salah tandai done; baru kode adegan, belum overlay/episode/still/SFX"
+        },
+        {
+          "at": "2026-11-24T18:30:25.258Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.572Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:42:23.642Z",
+          "text": "juri buta putaran 2 LOLOS 3.83 (L4 M3 D4 C3 Mo5 R4); putaran 1 3.67"
+        }
+      ],
+      "doneAt": "2026-11-24T18:42:23.642Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T23:02:45.470Z",
+      "notes": [
+        {
+          "at": "2026-11-24T23:02:45.470Z",
+          "text": "pre-approved user 2026-11-25 (batch 10 short otonom)"
+        },
+        {
+          "at": "2026-11-24T23:08:24.341Z",
+          "text": "FINAL_EP76_TORNADO_API_tagged.mp4 89.5s 1080x1920@60, -13.7 LUFS TP -1.8, G18c 13.9 LU, metadata + signature OK; G13 override beralasan (deadPct artefak detik 1 klip cek)"
+        }
+      ],
+      "startedAt": "2026-11-24T23:02:45.470Z",
+      "doneAt": "2026-11-24T23:08:24.340Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:02:07.625Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-24T23:08:28.990Z",
+          "text": "Caption lolos validator; NOTES.md; 3 lesson DISASTERSIM; scheduled review-tornado-api-24h/-72h/-7d (upload Jumat 22 Jan 2027 19.00 WIB); file perantara dihapus"
+        }
+      ],
+      "doneAt": "2026-11-24T23:08:28.990Z",
+      "startedAt": "2026-11-24T18:40:19.703Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-negara-EP76",
+    "style": "DISASTERSIM",
+    "engine": "remotion",
+    "shortTitle": "Tornado Api",
+    "wordCount": 202,
+    "voSeconds": 86.56,
+    "estimatedDuration": {
+      "wordCount": 202,
+      "minSec": 81,
+      "maxSec": 90
+    }
+  },
+  "syncedAt": "2026-11-24T23:02:07.625Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-24T18:20:59.335Z",
+      "doing": "Sesi A (s1) selesai sebagian: tahap 1–3 done, naskah draf v1 di docs/SCRIPT.md (belum dihitung kata). Batas konteks s1 tercapai.",
+      "files": [
+        "research/SOURCE_REGISTER.md",
+        "style/STYLE_DECISION.md",
+        "docs/SCRIPT.md",
+        "project/src/Root.tsx"
+      ],
+      "next": "Tahap 4: finalkan docs/SCRIPT.md (195–210 kata), tulis docs/ART_DIRECTION.md, docs/STORYBOARD.md (tabel ≥6 baris Scene|Waktu|BG/MG/FG/HUD|Kamera|Audio), docs/ASSET_MANIFEST.md (semua docs baris `Style: DISASTERSIM`). Lalu tahap 5–8 (sesi B): perbaiki project/src/Root.tsx (masih import ./episodes/gunung/EpisodeGunung — ganti dengan episode tornado baru di src/episodes/tornado/, ikuti pola EP04: AUDIRA_SAINS_ANAK_2026/EP04_KENAPA_GUNUNG_MELETUS/project/src/episodes/gunung/{EpisodeGunung,Scenes,timeline,GunungOverlay,Volcano}.tsx); hapus komposisi sisa PenggantiGibran dari Root.tsx (channel gate). VO Cartesia → project/public/audio/vo.wav + vo-words.json. Pusaran api = mesh lathe berpilin + shader emisif (bukan Points). Kunci render F:\\AUDIRA-EPISODES\\_render.lock untuk final.",
+      "snapshot": {
+        "episode": "EP76_TORNADO_API",
+        "topic": "Tornado Api — Ketika Kebakaran Hutan Menciptakan Pusaran Maut",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sejarah-negara-EP76",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:22:45.166Z",
+      "doing": "s2: tahap 4 naskah final 202 kata (audio/vo.txt), VO Cartesia sedang dibuat",
+      "files": [
+        "audio/vo.txt",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "vo-analyze → timeline src/episodes/tornado/, docs ART_DIRECTION/STORYBOARD/ASSET_MANIFEST, scenes R3F",
+      "snapshot": {
+        "episode": "EP76_TORNADO_API",
+        "topic": "Tornado Api — Ketika Kebakaran Hutan Menciptakan Pusaran Maut",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sejarah-negara-EP76",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:28:46.344Z",
+      "doing": "s2 selesai: tahap 4 docs lengkap (SCRIPT final 202 kata, ART_DIRECTION, STORYBOARD 8 adegan, ASSET_MANIFEST, semua `Style: DISASTERSIM`); VO Cartesia speed 0.9 TERKUNCI 86,56 dtk (project/public/audio/vo.wav + vo-words.json, salinan di audio/; kata \"E F tiga\" sudah digabung jadi \"EF3.\" di vo-words.json untuk subtitle). Kode episode sebagian di project/src/episodes/tornado/: timeline.ts (FILM 89.5, OUTRO 3, SC s1 0/s2 5/s3 19/s4a 35/s4b 51.2/s5a 59/s5b 68/s6 75, BEAT dari detik kata), FireWhirl.tsx (FireWhirl = silinder berpilin + ShaderMaterial emisif + selubung asap; Flame kecil), Set.tsx (salinan Volcano.tsx EP04: SkyDome, Glow, Label3D, AshPlume, Ring, fbm, fx diexport), Scenes.tsx (8 adegan S1..S6 + rig shotPlan + SCENES; GLB katalog dengan assetType). BELUM dikompilasi/dicek. STATUS sync salah menandai animation done: faktanya tahap 7 baru kode adegan, belum ada still.",
+      "files": [
+        "docs/SCRIPT.md",
+        "docs/ART_DIRECTION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "audio/vo.txt",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "project/src/episodes/tornado/timeline.ts",
+        "project/src/episodes/tornado/FireWhirl.tsx",
+        "project/src/episodes/tornado/Set.tsx",
+        "project/src/episodes/tornado/Scenes.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "Sesi B lanjutan (s3): 1) tulis src/episodes/tornado/TornadoOverlay.tsx (pola GunungOverlay EP04: tag bab top 262 \"● AUDIRA FAKTA DUNIA // <BAB>\", 1 kartu per adegan top ~330 berurutan: S1 \"TORNADO API / terbuat dari api\"; S2 \"26 JULI 2018 / Redding, California · Kebakaran Carr\" @5.16; S3 270 m @19.8 → ±5,5 km @23.3 → 230 km/jam \"setara tornado EF3\" @25.77 → \"4 jiwa\" @33.58; S4a \"Udara panas naik\" @39.95 → \"Udara sekitar tersedot\" @42.26 → \"Ditarik ke atas & menyempit\" @48.27; S4b \"Makin sempit, makin kencang\" @51.33 → \"> 1.000 °C inti pusaran\" @57.83; S5a \"1923 / Gempa Besar Kanto, Tokyo\" @61.28 → \"Puluhan ribu mengungsi / lapangan bekas depot militer\" @65.51; S5b \"≈ 40.000 jiwa / tewas dalam hitungan menit\" @72.51; S6 \"Biasanya setinggi gedung, beberapa menit\" @75.26 → \"Api menciptakan cuacanya sendiri\" @81.86). 2) EpisodeTornado.tsx = salin EpisodeGunung.tsx EP04 (AUDIRA_SAINS_ANAK_2026/EP04_KENAPA_GUNUNG_MELETUS/project/src/episodes/gunung/EpisodeGunung.tsx), ganti import ke ./Scenes ./TornadoOverlay ./timeline, export TORNADO_SECONDS, fadeColor #120C0A, AudiraSignature seed=\"sejarah-negara-EP76-tornado\" TANPA prop handle (channel.json sudah @AudiraFaktaDunia). 3) src/Root.tsx: hapus import+komposisi Gunung & PenggantiGibran, tambah TornadoPreview/TornadoFinal. 4) npm run typecheck, npm run vo -- public/audio/vo.wav, stills tiap adegan (npm run stills -- out/draft <detik,...> TornadoPreview), perbaiki visual. 5) PYTHONUTF8=1 npm run sfx (butuh docs/SHOTLIST.md? cek scripts/sfx.mjs). 6) cover style/cover-topic.png dari frame hook, contact sheet draft/contact-sheet.jpg (frame tiap adegan), draft/THEME_CHECK.md G22, npm run audit:visual, record_score self lalu juri buta subagen; maks 2 putaran, ≥3.5 → final. 7) Sesi C: final pre-approved (update stage final approved true note \"pre-approved user 2026-11-25 (batch 10 short otonom)\"), kunci F:\\AUDIRA-EPISODES\\_render.lock, render --concurrency=1 --jobs=4 --sfx --vo, −14 LUFS TP<−1, metadata; tahap 10 captions/NOTES/lessons/3 scheduled task review-tornado-api-24h/72h/7d (jadwal setelah EP72=18 Jan 2027, cek EP73–75); topics.md 029 → [x] SEJARAH_NEGARA/EP76, commit hanya file itu di F:\\AUDIRA-ALL-SKILL; commit hanya folder EP76 di F:\\AUDIRA-EPISODES. Laporan akhir ke sesi induk local_607018b1-9dc8-4a44-b80a-be640a7918d0.",
+      "snapshot": {
+        "episode": "EP76_TORNADO_API",
+        "topic": "Tornado Api — Ketika Kebakaran Hutan Menciptakan Pusaran Maut",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sejarah-negara-EP76",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/FAKTADUNIA/AUDIRA_SEJARAH_NEGARA_2026/EP76_TORNADO_API/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:39:50.635Z",
+      "doing": "s3: tahap 7 selesai (TornadoOverlay.tsx, EpisodeTornado.tsx, Root TornadoPreview/TornadoFinal, shader pusaran diperbaiki FrontSide+lidah fbm, framing S1/S3/S4b, torii dipindah, docs/SHOTLIST.md, sfx.wav −26 LUFS). Tahap 8: draft/DRAFT_SHEET.jpg (=contact-sheet.jpg) 9 frame, camera 5/5, ceilings 5/5/5/5/–/4, THEME_CHECK.md semua ya, cover style/cover-topic.png 1080x1920 @2.2s, skor self 4.17. Juri buta subagen sedang berjalan.",
+      "files": [
+        "project/src/episodes/tornado/TornadoOverlay.tsx",
+        "project/src/episodes/tornado/EpisodeTornado.tsx",
+        "project/src/episodes/tornado/FireWhirl.tsx",
+        "project/src/episodes/tornado/Scenes.tsx",
+        "project/src/Root.tsx",
+        "docs/SHOTLIST.md",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "style/cover-topic.png",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "Catat skor juri (record_score judge jury, ceilings+camera dari draft/DRAFT_REPORT.json). LOLOS (≥3.8, tak ada <3) → update stage draft done, stage final approved true note \"pre-approved user 2026-11-25 (batch 10 short otonom)\", kunci F:/AUDIRA-EPISODES/_render.lock, render: cd project && npm run render:final -- TornadoFinal --concurrency=1 --jobs=4 --sfx=public/audio/sfx.wav --vo=public/audio/vo.wav ; hapus lock; QA −14 LUFS TP<−1, metadata ffprobe. Lalu tahap 10 (captions, NOTES, lessons, 3 scheduled task review-tornado-api-24h/72h/7d), topics.md 029, commit folder EP76 saja, lapor ke local_607018b1-9dc8-4a44-b80a-be640a7918d0.",
+      "snapshot": {
+        "episode": "EP76_TORNADO_API",
+        "topic": "Tornado Api — Ketika Kebakaran Hutan Menciptakan Pusaran Maut",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sejarah-negara-EP76",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/FAKTADUNIA/AUDIRA_SEJARAH_NEGARA_2026/EP76_TORNADO_API/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:42:35.708Z",
+      "doing": "s3 selesai Sesi B: tahap 7 lengkap (TornadoOverlay/EpisodeTornado/Root TornadoPreview+TornadoFinal, shader pusaran FrontSide+lidah fbm, docs/SHOTLIST.md, project/public/audio/sfx.wav −26 LUFS TP −6.2). Tahap 8 LOLOS: juri buta putaran 2 = 3.83 (lighting4 material3 depth4 composition3 motion5 readability4), sheet draft/DRAFT_SHEET.jpg = draft/contact-sheet.jpg, THEME_CHECK.md semua ya, cover style/cover-topic.png 1080x1920. Durasi film 89.5 dtk (VO 86.56 + outro 3). SOCIAL_CAPTIONS.md sudah ditulis (belum divalidasi): jadwal Jumat 22 Januari 2027 19.00–20.40 WIB (EP72=Senin 18 Jan, EP76=+4 hari). Lemah tercatat juri: subtitle menutupi dasar api F4/F5, lab S4b gelap kosong, lantai polos, pusaran tampak gradien halus.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/contact-sheet.jpg",
+        "draft/DRAFT_REPORT.json",
+        "draft/THEME_CHECK.md",
+        "style/cover-topic.png",
+        "SOCIAL_CAPTIONS.md",
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav",
+        "project/public/audio/vo.wav",
+        "project/src/episodes/tornado/"
+      ],
+      "next": "Sesi C (s4) tahap 9: 1) update stage final approved true note \"pre-approved user 2026-11-25 (batch 10 short otonom)\". 2) Kunci F:/AUDIRA-EPISODES/_render.lock (buat eksklusif berisi \"EP76 Tornado Api <waktu>\"; bila ada & <60 mnt tunggu cek ulang ±3 mnt; >60 mnt ambil alih). 3) cd project && node scripts/render-final.mjs --comp=TornadoFinal --out=out/FINAL_EP76_TORNADO_API.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --concurrency=1 --jobs=4 --gl=vulkan --encoder=nvenc --title=\"Tornado Api — Ketika Kebakaran Hutan Menciptakan Pusaran Maut\" --slug=tornado-api --ep=EP76 (jalankan background), hapus lock segera setelah selesai. 4) QA: −14 LUFS, TP < −1 dBFS, G18c VO ≥12 LU di atas SFX, metadata ffprobe (artist AUDIRA (Agus Dwi R.), copyright, comment AUDIRA-tornado-api-EP76), salin FINAL*_tagged.mp4 ke folder episode, record_score stage final. Tahap 10: validasi SOCIAL_CAPTIONS.md (audira_validate_social_captions), tampilkan caption, NOTES.md (pelajaran; kandidat promosi dicatat saja, jangan ditawarkan), append_lesson DISASTERSIM (failed: pusaran DoubleSide additive = pola jaring; kartu hitung-naik terbaca salah di still; fix: FrontSide + fbm lidah, angka statis), 3 scheduled task review-tornado-api-24h/-72h/-7d (upload Jumat 22 Jan 2027 19.00 +07:00), hapus file perantara. Lalu F:/AUDIRA-ALL-SKILL/channel-topics/audira-faktadunia/topics.md baris 029 \"[x] SEJARAH_NEGARA/EP76 (proses)\" → \"[x] SEJARAH_NEGARA/EP76\", commit hanya file itu di repo F:/AUDIRA-ALL-SKILL; di repo F:/AUDIRA-EPISODES commit hanya folder EP76 (jangan git add -A). Laporan akhir via SendMessage ke local_607018b1-9dc8-4a44-b80a-be640a7918d0.",
+      "snapshot": {
+        "episode": "EP76_TORNADO_API",
+        "topic": "Tornado Api — Ketika Kebakaran Hutan Menciptakan Pusaran Maut",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sejarah-negara-EP76",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/FAKTADUNIA/AUDIRA_SEJARAH_NEGARA_2026/EP76_TORNADO_API/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:03:04.337Z",
+      "doing": "s4 render final TornadoFinal (lock _render.lock dipegang EP76)",
+      "command": "cd project && node scripts/render-final.mjs --comp=TornadoFinal --out=out/FINAL_EP76_TORNADO_API.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --concurrency=1 --jobs=4 --gl=vulkan --encoder=nvenc --title=\"Tornado Api — Ketika Kebakaran Hutan Menciptakan Pusaran Maut\" --slug=tornado-api --ep=EP76",
+      "files": [
+        "project/out/FINAL_EP76_TORNADO_API.mp4"
+      ],
+      "next": "hapus _render.lock, QA LUFS/TP/G18c/ffprobe, salin tagged ke folder episode, record_score final, tahap 10",
+      "snapshot": {
+        "episode": "EP76_TORNADO_API",
+        "topic": "Tornado Api — Ketika Kebakaran Hutan Menciptakan Pusaran Maut",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sejarah-negara-EP76",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/FAKTADUNIA/AUDIRA_SEJARAH_NEGARA_2026/EP76_TORNADO_API/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:03:04.337Z",
+      "doing": "s4 render final TornadoFinal (lock _render.lock dipegang EP76)",
+      "command": "cd project && node scripts/render-final.mjs --comp=TornadoFinal --out=out/FINAL_EP76_TORNADO_API.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --concurrency=1 --jobs=4 --gl=vulkan --encoder=nvenc --title=\"Tornado Api — Ketika Kebakaran Hutan Menciptakan Pusaran Maut\" --slug=tornado-api --ep=EP76",
+      "files": [
+        "project/out/FINAL_EP76_TORNADO_API.mp4"
+      ],
+      "next": "hapus _render.lock, QA LUFS/TP/G18c/ffprobe, salin tagged ke folder episode, record_score final, tahap 10",
+      "snapshot": {
+        "episode": "EP76_TORNADO_API",
+        "topic": "Tornado Api — Ketika Kebakaran Hutan Menciptakan Pusaran Maut",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sejarah-negara-EP76",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/FAKTADUNIA/AUDIRA_SEJARAH_NEGARA_2026/EP76_TORNADO_API/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T23:08:27.081Z"
+    }
+  ],
+  "session": 4,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP76 Tornado Api · s2",
+      "at": "2026-11-24T18:20:59.335Z"
+    },
+    {
+      "no": 3,
+      "title": "EP76 Tornado Api · s3",
+      "at": "2026-11-24T18:28:46.344Z"
+    },
+    {
+      "no": 4,
+      "title": "EP76 Tornado Api · s4",
+      "at": "2026-11-24T18:42:35.708Z"
+    }
+  ]
+}
