@@ -1,0 +1,801 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+  "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+  "createdAt": "2026-11-23T14:21:48.371Z",
+  "updatedAt": "2026-11-24T13:22:27.067Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.101Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:21:48.371Z",
+      "startedAt": "2026-11-23T14:21:48.371Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:21:51.859Z",
+          "text": "SOURCE_REGISTER disalin dari _research/b12"
+        }
+      ],
+      "doneAt": "2026-11-23T14:21:51.859Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.102Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        },
+        {
+          "at": "2026-11-24T07:15:55.265Z",
+          "text": "FELTCRAFT juri r1 3.00 / r2 3.33 → ganti ke WORLDFORGE (G21), ulang tahap 4. Lihat style/STYLE_DECISION.md + docs/HANDOFF.md s4→s5."
+        },
+        {
+          "at": "2026-11-24T07:21:01.791Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T07:15:50.810Z",
+      "startedAt": "2026-11-23T14:23:11.336Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.102Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:23:11.365Z",
+      "startedAt": "2026-11-23T14:23:11.365Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.102Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:29:10.991Z",
+          "text": "VO Cartesia 78.95 s, 190 kata (Pihasalmi/loylu fonetik). Film 82.0 s, outro 79-82. Docs tahap 4 + SHOTLIST lint OK 0 red."
+        }
+      ],
+      "doneAt": "2026-11-23T14:29:10.991Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.102Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-23T18:27:34.209Z",
+          "text": "s3: scenes.tsx (A–H) + SaunaFilm.tsx + Root (SaunaPreview/SaunaFinal); stills dipoles (subtitle gap 0.4em, ejaan Pyhäsalmi/löyly, papan auto-fit, sangkar tambang); cover-topic.png 1080x1920; sfx.wav -26 LUFS 36 suara."
+        }
+      ],
+      "doneAt": "2026-11-23T18:27:34.209Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T18:28:58.458Z",
+          "text": "sync: 1 gambar draf (bukan contact-sheet.jpg; buat dulu: bash sheet.sh <EP>)"
+        },
+        {
+          "at": "2026-11-24T09:51:24.646Z",
+          "text": "WORLDFORGE juri buta r2 LOLOS 3.83 (L4 M3 D4 C3 Mo5 R4), self 4.0. THEME_CHECK r2 8/8 ya. Menunggu acc gerbang final."
+        }
+      ],
+      "doneAt": "2026-11-24T09:51:24.646Z",
+      "startedAt": "2026-11-23T18:28:56.170Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T10:06:13.196Z",
+      "notes": [
+        {
+          "at": "2026-11-24T10:06:13.196Z",
+          "text": "Acc pengguna 2026-11-24 (\"Gas render final\") di gerbang tahap 9; draf r2 diterima 3.67 setelah 2 putaran."
+        },
+        {
+          "at": "2026-11-24T13:16:29.348Z",
+          "text": "s8 r4: qa_video PASS, -13.7 LUFS TP -1.9, metadata + Ed25519/C2PA VALID. Fix adegan: hole sumur 2.2, fade steam."
+        }
+      ],
+      "startedAt": "2026-11-24T10:06:13.196Z",
+      "doneAt": "2026-11-24T13:16:29.348Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T12:08:25.770Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-24T13:16:32.992Z",
+          "text": "Caption 6 platform + SRT lolos validator, NOTES s8, perantara dihapus, review task 24h/72h/7d (upload Selasa 5 Jan 2027 19.00 WIB)."
+        }
+      ],
+      "doneAt": "2026-11-24T13:16:32.992Z",
+      "startedAt": "2026-11-24T12:07:10.622Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-negara-EP59",
+    "style": "WORLDFORGE",
+    "shortTitle": "Finlandia Sauna",
+    "engine": "remotion",
+    "wordCount": 190,
+    "voSeconds": 78.95,
+    "filmSeconds": 82,
+    "estimatedDuration": {
+      "wordCount": 190,
+      "minSec": 76,
+      "maxSec": 84
+    },
+    "failedStyles": [
+      "FELTCRAFT"
+    ]
+  },
+  "syncedAt": "2026-11-24T12:08:25.770Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-23T14:30:33.733Z",
+      "doing": "s2 selesai: docs tahap 4 + SHOTLIST, VO 78.95s, timeline.ts + parts.tsx. Kode scenes/film belum.",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/episode/timeline.ts",
+        "project/src/episode/parts.tsx",
+        "docs/SHOTLIST.md"
+      ],
+      "next": "Baca docs/HANDOFF.md bagian 'HANDOFF s2 → s3', tulis src/episode/scenes.tsx + SaunaFilm.tsx + Root.tsx, typecheck, stills, cover, sfx, draf + juri, lalu gerbang acc.",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "FELTCRAFT",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:27:53.021Z",
+      "doing": "draft contact sheet + audit (npm run draft -- SaunaPreview --frames=2s,13s,20.5s,28s,37s,55s,62s,73s)",
+      "command": "npm run draft -- SaunaPreview --frames=2s,13s,20.5s,28s,37s,55s,62s,73s",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/SaunaFilm.tsx",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Baca docs/HANDOFF.md bagian 'HANDOFF s3 → s4': cek draft/, record_score self + juri buta, lalu gerbang acc render final.",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "FELTCRAFT",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:30:04.205Z",
+      "doing": "draft selesai: ceilings semua 5 (readability 5, diversity 67), camera motion 5/5, OK. draft/DRAFT_SHEET.jpg, DRAFT_REPORT.json, jury_input.json, CHECK_43-61s.mp4.",
+      "files": [
+        "docs/HANDOFF.md",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/DRAFT_REPORT.json",
+        "draft/jury_input.json"
+      ],
+      "next": "record_score self (stage draft, ceilings+camera dari draft/DRAFT_REPORT.json), juri buta subagen (project/qa/jury.md + draft/jury_input.json) → record_score jury; lalu gerbang acc render final (contact sheet, skor juri, durasi 82 dtk, G18c).",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "FELTCRAFT",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:09:03.237Z",
+      "doing": "Poles putaran 2 setelah juri r1 3.0 (material 2, readability 2): AssetModel prop felt (box UV fibre), FeltGround repeat 26, counter 0.35s, subtitle 60px kontras, LOOK E/F ki, terowongan tambang (MineBoulders, lengkung kayu, rel), interior F bench+bucket. Typecheck bersih.",
+      "files": [
+        "project/src/core/assets/AssetModel.tsx",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/SaunaFilm.tsx",
+        "project/src/episode/timeline.ts",
+        "project/src/core/hud/Subtitle.tsx"
+      ],
+      "next": "Stills cek → npm run draft -- SaunaPreview --frames=2.4s,13s,20.5s,28s,37s,55s,62s,73s → juri buta r2 → record_score jury → gerbang acc",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "FELTCRAFT",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:16:01.098Z",
+      "doing": "Ganti style FELTCRAFT → WORLDFORGE (juri r1 3.00, r2 3.33). Kode poles s4 tetap; AssetModel prop felt harus dilepas.",
+      "files": [
+        "docs/HANDOFF.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Ikuti docs/HANDOFF.md bagian \"HANDOFF s4 → s5\": style guide WORLDFORGE → ulang tahap 4 docs (Style: WORLDFORGE) → kode material realistis → cover topik → draf → juri → gerbang acc",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:42:20.544Z",
+      "doing": "s5: material WORLDFORGE (episode/materials.ts, AssetModel grain prop, parts/scenes/SaunaFilm tanpa felt) selesai; render draf r1 WORLDFORGE",
+      "command": "npm run draft -- SaunaPreview --frames=2.4s,13s,20.5s,28s,37s,55s,62s,73s",
+      "files": [
+        "project/src/episode/materials.ts",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/SaunaFilm.tsx",
+        "project/src/episode/timeline.ts",
+        "project/src/core/assets/AssetModel.tsx"
+      ],
+      "next": "cek sheet, poles, docs tahap 4 baris Style: WORLDFORGE, cover topik, SFX, THEME_CHECK, juri buta",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:51:05.111Z",
+      "doing": "s5: WORLDFORGE material selesai, docs tahap 4 Style: WORLDFORGE, cover-topic.png baru, sfx.wav ulang (-26 LUFS), THEME_CHECK r1, self score 4.0; juri buta r1 berjalan",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "style/cover-topic.png",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "baca skor juri r1 (style memory WORLDFORGE sejarah-negara-EP59). LOLOS → gerbang tahap 9 (contact sheet draft/DRAFT_SHEET.jpg, skor, durasi 82 dtk, G18c VO -16 vs SFX -30 = 14 LU). PERLU POLES → poles (apartemen F3 polos, figur), draft ulang, juri r2 (terakhir).",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:52:08.813Z",
+      "doing": "s5 selesai: WORLDFORGE r1 juri buta 3.67 PERLU POLES (lighting 3, material 3, depth 3, composition 4, motion 5, readability 4). Putaran juri ke-2 = terakhir.",
+      "command": "npm run draft -- SaunaPreview --frames=2.4s,13s,20.5s,28s,37s,55s,62s,73s",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/episode/materials.ts",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/SaunaFilm.tsx",
+        "project/src/episode/timeline.ts"
+      ],
+      "next": "Poles r2 (lihat docs/HANDOFF.md 'HANDOFF s5 → s6'), npm run draft, self + juri buta r2, lalu gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:33:05.937Z",
+      "doing": "s6 poles r2 selesai di kode (sun side-back + Haze, Smoke sprite, apartemen postwar + WarmWindows, tambang rel/lori/kabin kecil, sauna asap jelaga+beam+figur, Berlin stadion+banner); render draf r2",
+      "command": "npm run draft -- SaunaPreview --frames=2.4s,13s,20.5s,28s,37s,55s,62s,73s",
+      "files": [
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/SaunaFilm.tsx"
+      ],
+      "next": "cek sheet, THEME_CHECK, record_score self, juri buta r2, gerbang tahap 9",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:51:24.960Z",
+      "doing": "s6: juri r2 LOLOS 3.83, menunggu acc pengguna gerbang tahap 9",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Setelah acc: update final approved true, lalu di project/: npm run render:final -- --comp=SaunaFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --title=\"Finlandia: 3 Juta Sauna\" --slug=finlandia-sauna --ep=EP59 --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc → QA, captions, NOTES, memori, 3 scheduled review",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:57:11.486Z",
+      "doing": "s6 selesai: poles r2 + draf r2, juri buta r2 3.67 (r1 3.67) → diterima 3.67 setelah 2 putaran (NOTES.md). Menunggu acc pengguna di gerbang tahap 9.",
+      "files": [
+        "NOTES.md",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/SaunaFilm.tsx"
+      ],
+      "next": "Setelah acc pengguna: update stage final approved true, render final 1080x1920@60 (npm run render:final -- ... --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav, setelan PC rule 07), QA -14 LUFS/TP<-1, metadata, lalu tahap 10. Jangan poles lagi, jangan ganti style.",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T10:06:13.361Z",
+      "doing": "Gerbang tahap 9 sudah di-acc pengguna (final approved: true). Render final belum dimulai.",
+      "files": [
+        "NOTES.md",
+        "project/src/episode/SaunaFilm.tsx",
+        "project/scripts/render-final.mjs"
+      ],
+      "next": "Render final 1080x1920@60 SaunaPreview/komposisi final dengan --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav + setelan PC rule 07, QA (-14 LUFS, TP<-1, ffprobe metadata, cek frame), record_score final, lalu tahap 10 delivery.",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T12:05:48.917Z",
+      "doing": "Render final SaunaFinal 1080x1920@60 (s7, background) ke ../FINAL_EP59_FINLANDIA_SAUNA.mp4",
+      "command": "cd project && npm run render:final -- --comp=SaunaFinal --out=../FINAL_EP59_FINLANDIA_SAUNA.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Kenapa Finlandia Punya 3 Juta Sauna?\" --slug=finlandia-sauna --ep=EP59 --log=error",
+      "files": [
+        "FINAL_EP59_FINLANDIA_SAUNA.mp4"
+      ],
+      "next": "QA: loudness -14/TP<-1, ffprobe metadata, contact sheet dari MP4, record_score final, lalu tahap 10 delivery",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T12:20:42.010Z",
+      "doing": "Render final SaunaFinal (s7, percobaan 3, resume segmen di project/out/seg). Percobaan 2 gagal: Chrome OOM, C: penuh (1,9 GB). SOCIAL_CAPTIONS.md + SUBTITLES.srt sudah jadi, validator lolos.",
+      "command": "TEMP=F:\\temp\\remotion-tmp npm run render:final -- --comp=SaunaFinal --out=../FINAL_EP59_FINLANDIA_SAUNA.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=3 --parts=18 --concurrency=1 --gl=vulkan --encoder=nvenc --title=... --slug=finlandia-sauna --ep=EP59 --skip-channel=<scaffold PenggantiGibran>; log out/render-final.log",
+      "files": [
+        "FINAL_EP59_FINLANDIA_SAUNA.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt"
+      ],
+      "next": "QA final (LUFS/TP, ffprobe metadata, contact sheet), record_score final, NOTES.md, lesson, bersih-bersih, scheduled task review",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T12:27:25.355Z",
+      "doing": "Render ulang final penuh (s7, r2). Final r1 (out/FINAL_glitch_r1.mp4) gagal qa_video: 5 LONCAT di 25,42/33,93/33,97/35,92/36,43 dtk = frame tanpa tekstur/lighting dari segmen yang dirender saat Chrome OOM (concurrency 2). r1 sudah -13,7 LUFS TP -1,9, metadata ok.",
+      "command": "TEMP=F:\\temp\\remotion-tmp npm run render:final -- --comp=SaunaFinal ... --jobs=3 --parts=18 --concurrency=1 (lihat out/render-final.log)",
+      "files": [
+        "FINAL_EP59_FINLANDIA_SAUNA.mp4",
+        "out/FINAL_glitch_r1.mp4"
+      ],
+      "next": "qa_video hardOnly dengan cuts shotlist; bila lolos hapus out/FINAL_glitch_r1.mp4, record_score final, NOTES, lesson, scheduled task",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T12:55:31.939Z",
+      "doing": "Final r2 gagal qa_video (model hitam/hilang akibat kebocoran GPU dalam tab panjang; render dingin rentang sama bersih). Caption + SRT selesai. Lihat NOTES.md bagian Final (s7).",
+      "command": "cd project && TEMP=F:\\temp\\remotion-tmp TMP=F:\\temp\\remotion-tmp npm run render:final -- --comp=SaunaFinal --out=../FINAL_EP59_FINLANDIA_SAUNA.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=3 --parts=60 --concurrency=1 --gl=vulkan --encoder=nvenc \"--title=Kenapa Finlandia Punya 3 Juta Sauna?\" --slug=finlandia-sauna --ep=EP59 --log=error \"--skip-channel=handle salah hanya di scene scaffold PenggantiGibranWapres (tidak dirender)\"",
+      "files": [
+        "NOTES.md",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt",
+        "FINAL_EP59_FINLANDIA_SAUNA.mp4",
+        "out/FINAL_glitch_r1.mp4"
+      ],
+      "next": "Pindahkan final r2 ke out/, render ulang parts=60, qa_video hardOnly (cuts shotlist), lalu record_score final, NOTES, append_lesson (WORLDFORGE+GLOBAL: part pendek), hapus perantara, tanya jam upload + 3 scheduled task",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T12:58:15.095Z",
+      "doing": "s8: render final r3 --parts=60 --concurrency=1 (r2 dipindah ke out/FINAL_glitch_r2.mp4), log di out/render-final.log",
+      "command": "cd project && TEMP='F:\\temp\\remotion-tmp' TMP='F:\\temp\\remotion-tmp' npm run render:final -- --comp=SaunaFinal --out=../FINAL_EP59_FINLANDIA_SAUNA.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=3 --parts=60 --concurrency=1 --gl=vulkan --encoder=nvenc ... > ../out/render-final.log",
+      "files": [
+        "FINAL_EP59_FINLANDIA_SAUNA.mp4",
+        "out/render-final.log",
+        "out/FINAL_glitch_r1.mp4",
+        "out/FINAL_glitch_r2.mp4"
+      ],
+      "next": "qa_video hardOnly (cuts shotlist), loudness, ffprobe metadata, contact sheet, record_score final, append_lesson, NOTES, hapus perantara, tanya jam upload + 3 scheduled task",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T12:58:15.095Z",
+      "doing": "s8: render final r3 --parts=60 --concurrency=1 (r2 dipindah ke out/FINAL_glitch_r2.mp4), log di out/render-final.log",
+      "command": "cd project && TEMP='F:\\temp\\remotion-tmp' TMP='F:\\temp\\remotion-tmp' npm run render:final -- --comp=SaunaFinal --out=../FINAL_EP59_FINLANDIA_SAUNA.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=3 --parts=60 --concurrency=1 --gl=vulkan --encoder=nvenc ... > ../out/render-final.log",
+      "files": [
+        "FINAL_EP59_FINLANDIA_SAUNA.mp4",
+        "out/render-final.log",
+        "out/FINAL_glitch_r1.mp4",
+        "out/FINAL_glitch_r2.mp4"
+      ],
+      "next": "qa_video hardOnly (cuts shotlist), loudness, ffprobe metadata, contact sheet, record_score final, append_lesson, NOTES, hapus perantara, tanya jam upload + 3 scheduled task",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T13:16:36.753Z"
+    },
+    {
+      "at": "2026-11-24T13:21:46.076Z",
+      "doing": "EP59 selesai (final r4 qa PASS, delivery done, review task terjadwal). Sedang: promosi setelan render part pendek (--parts=60/±80 frame per tab, concurrency 1) ke kit AUDIRA-SKILL-MOTION starter render-final.mjs, atas acc pengguna \"Ya, promosikan\".",
+      "files": [
+        "F:/AUDIRA-SKILL-MOTION (starter scripts/render-final.mjs)",
+        "NOTES.md"
+      ],
+      "next": "Ubah default render-final.mjs di kit (parts ≈ frames/80, concurrency 1), lalu audira_style_memory mark_promoted style GLOBAL param parts/concurrency. Tidak ada kerja episode tersisa selain tahap 11 (scheduled task).",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "review",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T13:21:46.076Z",
+      "doing": "EP59 selesai (final r4 qa PASS, delivery done, review task terjadwal). Sedang: promosi setelan render part pendek (--parts=60/±80 frame per tab, concurrency 1) ke kit AUDIRA-SKILL-MOTION starter render-final.mjs, atas acc pengguna \"Ya, promosikan\".",
+      "files": [
+        "F:/AUDIRA-SKILL-MOTION (starter scripts/render-final.mjs)",
+        "NOTES.md"
+      ],
+      "next": "Ubah default render-final.mjs di kit (parts ≈ frames/80, concurrency 1), lalu audira_style_memory mark_promoted style GLOBAL param parts/concurrency. Tidak ada kerja episode tersisa selain tahap 11 (scheduled task).",
+      "snapshot": {
+        "episode": "EP59_FINLANDIA_3_JUTA_SAUNA",
+        "topic": "Finlandia punya ±3,2 juta sauna untuk ±5,7 juta penduduk — parlemen, tambang 1.400 m, löyly, sauna asap, Berlin 1936, UNESCO 2020",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP59",
+        "currentStage": "review",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T13:22:27.067Z"
+    }
+  ],
+  "session": 8,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP59 Finlandia Sauna · s2",
+      "at": "2026-11-23T14:23:44.048Z"
+    },
+    {
+      "no": 3,
+      "title": "EP59 Finlandia Sauna · s3",
+      "at": "2026-11-23T14:30:33.733Z"
+    },
+    {
+      "no": 4,
+      "title": "EP59 Finlandia Sauna · s4",
+      "at": "2026-11-23T18:30:04.205Z"
+    },
+    {
+      "no": 5,
+      "title": "EP59 Finlandia Sauna · s5",
+      "at": "2026-11-24T07:16:01.098Z"
+    },
+    {
+      "no": 6,
+      "title": "EP59 Finlandia Sauna · s6",
+      "at": "2026-11-24T07:52:08.813Z"
+    },
+    {
+      "no": 7,
+      "title": "EP59 Finlandia Sauna · s7",
+      "at": "2026-11-24T10:06:13.361Z"
+    },
+    {
+      "no": 8,
+      "title": "EP59 Finlandia Sauna · s8",
+      "at": "2026-11-24T12:55:31.939Z"
+    }
+  ]
+}
