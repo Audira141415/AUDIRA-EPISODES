@@ -1,0 +1,465 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP06_LUBANG_HITAM_TIDAK_MENYEDOT",
+  "topic": "Lubang Hitam Tidak Menyedot — Ini yang Sebenarnya Terjadi",
+  "createdAt": "2026-11-24T18:17:42.842Z",
+  "updatedAt": "2026-11-24T23:13:14.291Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:50.588Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-24T18:18:58.635Z",
+      "startedAt": "2026-11-24T18:18:58.635Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:46.129Z",
+          "text": "12 fakta (9 HIGH) di research/SOURCE_REGISTER.md. Koreksi: Matahari tidak bisa jadi lubang hitam (andai-andai), jarak Sgr A* ~26 ribu tc (ESO), tanpa nama peraih Nobel, S2 3% c hanya di titik terdekat."
+        }
+      ],
+      "doneAt": "2026-11-24T18:20:46.129Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:49.904Z",
+          "text": "SCALEFORGE 3D Remotion dipilih AI (skala/ukur ruang angkasa: Matahari dipadatkan 6 km, Bumi tetap mengorbit, S2 di Sgr A*). Proyek disalin dari EP05 (kit scaleforge di starter). Cover topik = frame hook film (dibuat setelah kode film)."
+        }
+      ],
+      "doneAt": "2026-11-24T18:20:49.904Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:50.588Z",
+          "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-24T18:20:50.603Z",
+          "text": "docs rule 12 lengkap (ART_DIRECTION, SCRIPT, STORYBOARD 7 adegan, ASSET_MANIFEST). VO 214 kata terucap di audio/vo.txt, estimasi 86–95 dtk (Cartesia biasanya lebih cepat, EP05 225 kata = 84 dtk)."
+        }
+      ],
+      "doneAt": "2026-11-24T18:20:50.603Z",
+      "startedAt": "2026-11-24T18:20:12.719Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:50.588Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:37:32.965Z",
+          "text": "VO Cartesia 85,50 dtk dikunci (public/audio/vo.wav, offset 0)"
+        }
+      ],
+      "doneAt": "2026-11-24T18:37:32.965Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:50.588Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.572Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:34:27.479Z",
+          "text": "sync: 1 gambar draf (bukan contact-sheet.jpg; buat dulu: bash sheet.sh <EP>)"
+        }
+      ],
+      "doneAt": "2026-11-24T18:33:51.975Z",
+      "startedAt": "2026-11-24T18:33:51.975Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T18:42:17.268Z",
+      "notes": [
+        {
+          "at": "2026-11-24T18:42:17.268Z",
+          "text": "pre-approved user 2026-11-25 (batch 10 short otonom). Juri draf r2 4.0 LOLOS (r1 3.67)."
+        },
+        {
+          "at": "2026-11-24T23:13:11.192Z",
+          "text": "FINAL_EP06_LUBANG_HITAM_tagged.mp4 89.0 dtk, −13.7 LUFS TP −1.7, metadata+C2PA ok, juri final 3.5"
+        }
+      ],
+      "startedAt": "2026-11-24T18:42:17.268Z",
+      "doneAt": "2026-11-24T23:13:11.192Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:02:03.344Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-24T23:13:13.387Z",
+          "text": "caption valid, NOTES.md, 2 lesson SCALEFORGE, 3 scheduled task review-lubang-hitam-tidak-menyedot-24h/-72h/-7d, perantara dihapus, topik 003 selesai (AUDIRA-ALL-SKILL 6f53909)"
+        }
+      ],
+      "doneAt": "2026-11-24T23:13:13.387Z",
+      "startedAt": "2026-11-24T18:43:23.868Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sains-anak-EP06",
+    "style": "SCALEFORGE",
+    "engine": "remotion",
+    "shortTitle": "Lubang Hitam",
+    "wordCount": 214,
+    "estimatedDuration": {
+      "wordCount": 214,
+      "minSec": 86,
+      "maxSec": 95
+    }
+  },
+  "syncedAt": "2026-11-24T23:02:03.344Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-24T18:21:02.196Z",
+      "doing": "Sesi A selesai (tahap 0–4): riset 12 fakta, style SCALEFORGE 3D Remotion, docs rule 12 lengkap, audio/vo.txt 214 kata.",
+      "files": [
+        "research/SOURCE_REGISTER.md",
+        "style/STYLE_DECISION.md",
+        "docs/ART_DIRECTION.md",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "audio/vo.txt",
+        "project/src/episodes/blackhole/",
+        "project/src/Root.tsx",
+        "project/SERIES.json"
+      ],
+      "next": "Sesi B: tahap 6 VO Cartesia dari audio/vo.txt (text, bukan scriptPath) ke project/public/audio/vo.wav + vo-words.json, npm run vo; lalu tulis film di project/src/episodes/blackhole/ (saat ini salinan mentah MoonFilm EP05: timeline.ts, MoonFilm.tsx, bodies.tsx, scenes.tsx, Hud.tsx — ganti nama jadi BlackHoleFilm, 7 adegan hook/squeeze/sunswap/horizon/disk/sgra/outro sesuai docs/STORYBOARD.md), daftarkan BlackHolePreview/BlackHoleFinal di src/Root.tsx (hapus komposisi Moon), docs/SHOTLIST.md, npm run sfx (TARGET_LUFS -29 di sfx/cues/auto.py sudah dari EP05), cover-topic.png, contact sheet + juri (tahap 8). Proyek project/ disalin dari EP05 lengkap dengan node_modules (robocopy), SERIES.json proyek = @AudiraSains. Lubang hitam: bola hitam + cakram akresi kanvas additive + cincin lensa vertikal; GLB: large-asteroid-391721, medium-asteroid-ba674f, comm-satellite-fdc2cd, scout-ship-289ccc, astronaut-explorer-323482. Finish APPLE_STUDIO_CLEAN exp 1 env 0.55 ao off, fill rendah 0.05–0.2. ATURAN OTONOM 2026-11-25: gerbang tahap 9 sudah pre-approved (catat approved true \"pre-approved user 2026-11-25 (batch 10 short otonom)\"); render final pakai kunci F:/AUDIRA-EPISODES/_render.lock (tunggu bila < 60 menit, ambil alih bila basi, hapus setelah selesai); render --skip-channel bila PenggantiGibranWapres flag; concurrency 1 bila sesi lain render. Tahap 10: slot pertama jadwal default, 3 scheduled task review, jangan tawarkan promosi (catat NOTES.md), ubah topik 003 di F:/AUDIRA-ALL-SKILL/channel-topics/audira-sains/topics.md jadi \"[x] SAINS_ANAK/EP06\" dan commit hanya file itu; di F:/AUDIRA-EPISODES commit hanya folder EP06.",
+      "snapshot": {
+        "episode": "EP06_LUBANG_HITAM_TIDAK_MENYEDOT",
+        "topic": "Lubang Hitam Tidak Menyedot — Ini yang Sebenarnya Terjadi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP06",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:22:12.244Z",
+      "doing": "Sesi B s2: VO Cartesia dari audio/vo.txt ke project/public/audio/vo.wav",
+      "command": "audira_generate_voiceover text=audio/vo.txt outputPath=project/public/audio/vo.wav",
+      "files": [
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "npm run vo; tulis film blackhole 7 adegan",
+      "snapshot": {
+        "episode": "EP06_LUBANG_HITAM_TIDAK_MENYEDOT",
+        "topic": "Lubang Hitam Tidak Menyedot — Ini yang Sebenarnya Terjadi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP06",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:28:26.895Z",
+      "doing": "Sesi B s2: VO selesai (85,50 dtk, 214 kata, vo.timing.json). Film ditulis: src/episodes/blackhole/{timeline.ts, bodies.tsx, scenes.tsx, Hud.tsx, BlackHoleFilm.tsx} 7 adegan (hook 0–5.4, squeeze –16.4, sunswap –32.0, horizon –47.4, disk –55.75, sgra –77.3, outro –89.0), Root.tsx: BlackHolePreview/BlackHoleFinal (89,0 dtk). tsc bersih untuk blackhole.",
+      "files": [
+        "project/src/episodes/blackhole/",
+        "project/src/Root.tsx",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "Stills cek tiap adegan (npm run stills out/check <t...> BlackHolePreview), perbaiki; docs/SHOTLIST.md; npm run sfx; cover-topic.png; contact sheet + draft/THEME_CHECK.md + juri buta",
+      "snapshot": {
+        "episode": "EP06_LUBANG_HITAM_TIDAK_MENYEDOT",
+        "topic": "Lubang Hitam Tidak Menyedot — Ini yang Sebenarnya Terjadi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP06",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:34:00.624Z",
+      "doing": "Sesi B s2 selesai sebagian (context guard 215k): VO 85,50 dtk dikunci (public/audio/vo.wav, vo-words.json, vo.timing.json). Film 7 adegan di project/src/episodes/blackhole/ (BlackHoleFilm.tsx, scenes.tsx, bodies.tsx, Hud.tsx, timeline.ts), komposisi BlackHolePreview/BlackHoleFinal 89,0 dtk di Root.tsx. docs/SHOTLIST.md 17 shot. npm run sfx selesai (public/audio/sfx.wav −29 LUFS stem). Dua putaran still self-check sudah dipoles (plate terpotong, astronaut, latar sgra, ruler). Kandidat contact sheet 8 frame (2.2,15.2,28.9,40.6,46.4,55.0,69.6,80.2 dtk) di project/out/draft2/_sheet.jpg + look.json (audit: tidak ada aspek di bawah 4), salinan draft/contact-sheet-r1-candidate.jpg — BELUM dilihat ulang setelah poles terakhir.",
+      "files": [
+        "project/src/episodes/blackhole/",
+        "project/src/Root.tsx",
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav",
+        "project/out/draft2/_sheet.jpg",
+        "project/out/draft2/look.json",
+        "draft/contact-sheet-r1-candidate.jpg"
+      ],
+      "next": "Sesi B lanjut tahap 8: lihat project/out/draft2/_sheet.jpg; bila oke salin ke draft/contact-sheet.jpg; tulis draft/THEME_CHECK.md (8 frame, subjek = kata VO, semua ya); cover-topic.png (npm run cover atau still 2.2s BlackHoleFinal scale → style/cover-topic.png); npm run audit:camera pada klip 15 dtk 540×960 bila perlu; record_score self lalu juri buta subagen (qa/jury.md, cover F:/AUDIRA-ALL-SKILL/assets/style-covers/scaleforge.png, ceilings dari look.json) maks 2 putaran; LOLOS atau ≥3.5 → Sesi C: gerbang pre-approved (approved true, note \"pre-approved user 2026-11-25 (batch 10 short otonom)\"), _render.lock, npm run render:final -- BlackHoleFinal ... --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav (lihat rule 07 §4 poin 9), QA −14 LUFS TP<−1, metadata tag, tahap 10 (captions, NOTES, 3 scheduled task, topik 003, commit hanya EP06).",
+      "snapshot": {
+        "episode": "EP06_LUBANG_HITAM_TIDAK_MENYEDOT",
+        "topic": "Lubang Hitam Tidak Menyedot — Ini yang Sebenarnya Terjadi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP06",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:37:29.809Z",
+      "doing": "Sesi s3 tahap 8: draft/contact-sheet.jpg, draft/THEME_CHECK.md (8/8 ya), style/cover-topic.png, camera audit 5/5 (out/cam/camera.json), self score 4.17 dicatat; juri buta sedang jalan.",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "style/cover-topic.png",
+        "project/out/cam/camera.json"
+      ],
+      "next": "Catat skor juri; bila lolos: update final approved (pre-approved 2026-11-25), _render.lock, npm run render:final -- --comp=BlackHoleFinal --out=out/FINAL_EP06_LUBANG_HITAM.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=... --slug=lubang-hitam-tidak-menyedot --ep=EP06; lalu tahap 10.",
+      "snapshot": {
+        "episode": "EP06_LUBANG_HITAM_TIDAK_MENYEDOT",
+        "topic": "Lubang Hitam Tidak Menyedot — Ini yang Sebenarnya Terjadi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP06",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T18:42:30.819Z",
+      "doing": "Sesi s3: tahap 8 selesai (juri r1 3.67 → poles → juri r2 4.0 LOLOS, material 3 lemah = tabung spagetifikasi plastik). Poles: AssetModel pakai SkeletonUtils.clone (astronaut skinned kini ikut transform), kartu ORBIT TETAP putih mulai 28.4, asteroid hook lerp(-4.5,6), Earth 0.58, astronaut outro dipindah. cover-topic.png dirender ulang. Gate final approved (pre-approved 2026-11-25). _render.lock diambil 01:42 WIB; render final dimulai di background.",
+      "command": "cd project && node scripts/render-final.mjs --comp=BlackHoleFinal --out=out/FINAL_EP06_LUBANG_HITAM.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Lubang Hitam Tidak Menyedot — Ini yang Sebenarnya Terjadi\" --slug=lubang-hitam-tidak-menyedot --ep=EP06 --log=error",
+      "files": [
+        "project/out/FINAL_EP06_LUBANG_HITAM.mp4",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "style/cover-topic.png",
+        "project/src/core/assets/AssetModel.tsx",
+        "project/src/episodes/blackhole/scenes.tsx",
+        "project/src/episodes/blackhole/Hud.tsx"
+      ],
+      "next": "Setelah render: HAPUS F:/AUDIRA-EPISODES/_render.lock; salin final ke folder episode FINAL_EP06_LUBANG_HITAM.mp4 + buat FINAL_EP06_LUBANG_HITAM_tagged.mp4 (ffmpeg metadata AUDIRA); QA ffmpeg ebur128 −14 LUFS TP<−1, ffprobe metadata, cek 3 frame; record_score final (jury). Tahap 10: SOCIAL_CAPTIONS.md (template EP05, isi nyata: fakta NASA/ESO dari research/SOURCE_REGISTER.md), validate, NOTES.md, append_lesson SCALEFORGE, 3 scheduled task review-lubang-hitam-tidak-menyedot-24h/-72h/-7d, hapus out/draft*, out/cam, out/seg; topik 003 audira-sains topics.md \"(proses)\" dihapus + commit di F:/AUDIRA-ALL-SKILL; commit folder EP06 saja di F:/AUDIRA-EPISODES.",
+      "snapshot": {
+        "episode": "EP06_LUBANG_HITAM_TIDAK_MENYEDOT",
+        "topic": "Lubang Hitam Tidak Menyedot — Ini yang Sebenarnya Terjadi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP06",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T18:43:58.683Z",
+      "doing": "s3 selesai: tahap 8 LOLOS (juri r2 4.0; L4 M3 D4 C4 Mo5 R4), gate final approved (pre-approved 2026-11-25), SOCIAL_CAPTIONS.md tervalidasi (jadwal Rabu 25 Nov 19.00 WIB TikTok → Threads 20.40). Render final BELUM jadi: percobaan 1 gagal channel gate (PenggantiGibranWapres) → pakai --skip-channel; percobaan 2 gagal net::ERR_CONNECTION_ABORTED localhost:3000 (race port 6 job); percobaan 3 tidak jalan karena _render.lock dipegang sesi lain. Segmen tersimpan resumable di project/out/seg.",
+      "command": "Ambil F:/AUDIRA-EPISODES/_render.lock (noclobber; umur > 60 mnt ambil alih), lalu di project/: node scripts/render-final.mjs --comp=BlackHoleFinal --out=out/FINAL_EP06_LUBANG_HITAM.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=3 --parts=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Lubang Hitam Tidak Menyedot — Ini yang Sebenarnya Terjadi\" --slug=lubang-hitam-tidak-menyedot --ep=EP06 --log=error --skip-channel=\"file berita lain di src/scenes/news bukan bagian film EP06\" > out/render-final.log 2>&1 ; hapus kunci segera setelahnya.",
+      "files": [
+        "SOCIAL_CAPTIONS.md",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "style/cover-topic.png",
+        "project/out/render-final.log",
+        "project/src/core/assets/AssetModel.tsx",
+        "project/src/episodes/blackhole/scenes.tsx",
+        "project/src/episodes/blackhole/Hud.tsx"
+      ],
+      "next": "Sesi C lanjut tahap 9: render final (perintah di atas, background). QA: ffmpeg ebur128 −14 LUFS & TP < −1 dBFS; G18c sudah lolos (VO −17, SFX duck −32, gap 15 LU); buat FINAL_EP06_LUBANG_HITAM_tagged.mp4 di folder episode bila script belum menulis metadata (ffprobe cek artist \"AUDIRA (Agus Dwi R.)\"); cek 3 frame; record_score final judge jury (subagen buta, qa/jury.md di F:/AUDIRA-SKILL-MOTION, cover F:/AUDIRA-ALL-SKILL/assets/style-covers/scaleforge.png, ceilings semua 5). Tahap 10: NOTES.md (pelajaran: SkeletonUtils.clone fix sudah dicatat GLOBAL; lesson SCALEFORGE failed sudah dicatat; kandidat promosi jangan ditawarkan), append_lesson SCALEFORGE worked, 3 scheduled task review-lubang-hitam-tidak-menyedot-24h/-72h/-7d (fireAt dari 2026-11-25T19:00+07:00), hapus out/draft2, out/draft3, out/cam, out/seg; topik 003 di F:/AUDIRA-ALL-SKILL/channel-topics/audira-sains/topics.md \"[x] SAINS_ANAK/EP06 (proses)\" → \"[x] SAINS_ANAK/EP06\" + commit file itu saja; commit folder EP06 saja di F:/AUDIRA-EPISODES (git add path EP06, bukan -A); SERIES.json/MASTER_INDEX.md seri diedit kecil dengan Edit. Caption lengkap tampil di laporan akhir.",
+      "snapshot": {
+        "episode": "EP06_LUBANG_HITAM_TIDAK_MENYEDOT",
+        "topic": "Lubang Hitam Tidak Menyedot — Ini yang Sebenarnya Terjadi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP06",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:08:04.284Z",
+      "doing": "s4: render final BlackHoleFinal berjalan (lock diambil 06:07 WIB), log project/out/render-final.log",
+      "command": "node scripts/render-final.mjs --comp=BlackHoleFinal ... --jobs=3 --parts=6 --skip-channel (lihat handover sebelumnya)",
+      "files": [
+        "project/out/FINAL_EP06_LUBANG_HITAM.mp4",
+        "project/out/render-final.log"
+      ],
+      "next": "QA LUFS/TP + metadata, FINAL_EP06_LUBANG_HITAM_tagged.mp4, record_score final, tahap 10, cleanup, topik, commit",
+      "snapshot": {
+        "episode": "EP06_LUBANG_HITAM_TIDAK_MENYEDOT",
+        "topic": "Lubang Hitam Tidak Menyedot — Ini yang Sebenarnya Terjadi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP06",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:08:04.284Z",
+      "doing": "s4: render final BlackHoleFinal berjalan (lock diambil 06:07 WIB), log project/out/render-final.log",
+      "command": "node scripts/render-final.mjs --comp=BlackHoleFinal ... --jobs=3 --parts=6 --skip-channel (lihat handover sebelumnya)",
+      "files": [
+        "project/out/FINAL_EP06_LUBANG_HITAM.mp4",
+        "project/out/render-final.log"
+      ],
+      "next": "QA LUFS/TP + metadata, FINAL_EP06_LUBANG_HITAM_tagged.mp4, record_score final, tahap 10, cleanup, topik, commit",
+      "snapshot": {
+        "episode": "EP06_LUBANG_HITAM_TIDAK_MENYEDOT",
+        "topic": "Lubang Hitam Tidak Menyedot — Ini yang Sebenarnya Terjadi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP06",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T23:13:14.291Z"
+    }
+  ],
+  "session": 4,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP06 Lubang Hitam · s2",
+      "at": "2026-11-24T18:21:02.195Z"
+    },
+    {
+      "no": 3,
+      "title": "EP06 Lubang Hitam · s3",
+      "at": "2026-11-24T18:34:00.624Z"
+    },
+    {
+      "no": 4,
+      "title": "EP06 Lubang Hitam · s4",
+      "at": "2026-11-24T18:43:58.683Z"
+    }
+  ]
+}
