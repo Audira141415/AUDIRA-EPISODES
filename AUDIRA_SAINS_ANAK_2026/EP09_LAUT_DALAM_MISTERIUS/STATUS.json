@@ -1,0 +1,310 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP09",
+  "topic": "Kenapa Laut Dalam Lebih Misterius dari Luar Angkasa",
+  "createdAt": "2026-11-24T18:19:05.081Z",
+  "updatedAt": "2026-11-24T18:56:49.833Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:50.649Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-24T18:19:05.081Z",
+      "startedAt": "2026-11-24T18:19:05.081Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:50.649Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:16:30.080Z",
+      "startedAt": "2026-11-23T14:16:30.080Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:50.649Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T18:20:15.423Z",
+      "startedAt": "2026-11-24T18:20:15.423Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:23:44.306Z",
+          "text": "212 kata (audio/vo.txt), estimasi 85–94 dtk. docs ART_DIRECTION/SCRIPT/STORYBOARD/ASSET_MANIFEST terisi. SHOTLIST.md belum (tulis setelah VO di sesi B)."
+        }
+      ],
+      "doneAt": "2026-11-24T18:23:44.306Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:50.649Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:56:46.183Z",
+          "text": "Cartesia speed 1.06, 83,36 dtk, 212 kata; vo.timing.json via npm run vo."
+        }
+      ],
+      "doneAt": "2026-11-24T18:56:46.183Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:50.649Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.572Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:56:47.983Z",
+          "text": "Juri buta putaran 2 LOLOS 4,0 (putaran 1: 3,67). draft/DRAFT_SHEET.jpg + THEME_CHECK.md."
+        }
+      ],
+      "doneAt": "2026-11-24T18:56:47.983Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T18:43:30.767Z",
+      "notes": [
+        {
+          "at": "2026-11-24T18:43:30.767Z",
+          "text": "pre-approved user 2026-11-25 (batch 10 short otonom). Draf juri putaran 2 LOLOS 4,0; durasi 86,6 dtk."
+        },
+        {
+          "at": "2026-11-24T18:56:42.949Z",
+          "text": "FINAL_EP09_LAUT_DALAM.mp4 86,61 dtk, −13,8 LUFS, TP −1,8 dBFS, metadata + Ed25519/C2PA. QA di QA_REPORT.md (BLACK = adegan gelap gaya, YAVG 28–34)."
+        }
+      ],
+      "startedAt": "2026-11-24T18:43:30.767Z",
+      "doneAt": "2026-11-24T18:56:42.949Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:56:49.833Z",
+          "text": "SOCIAL_CAPTIONS.md lolos validator; SUBTITLES.srt; NOTES.md; 3 scheduled task review-laut-dalam-misterius-24h/72h/7d (upload Kamis 26 Nov 2026 19.00 WIB)."
+        }
+      ],
+      "doneAt": "2026-11-24T18:56:49.833Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sains-anak-EP09",
+    "wordCount": 212,
+    "style": "ABYSSFORGE",
+    "engine": "remotion",
+    "shortTitle": "Laut Dalam",
+    "estimatedDuration": {
+      "wordCount": 212,
+      "minSec": 85,
+      "maxSec": 94
+    }
+  },
+  "syncedAt": "2026-11-24T18:20:50.649Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-24T18:20:59.194Z",
+      "doing": "Sesi A (s1): tahap 0–3 berjalan. Proyek Remotion disalin dari EP05 project (tanpa out/, public/audio, src/episodes) ke EP09/project, node_modules ikut tersalin. 26 GLB laut disalin ke project/public/models/polyfork (angler-one-base, one-person-submarine-0b9d14, jellyfish-base, moon-jellyfish-0fa43c, octopus-base, sea-turtle-base, dolphin-base, reef-shark-base, exploration-rover-7afd91, comm-satellite-fdc2cd, mountaineer-13df29, karst-limestone-peak-ee1b76, fumarole-vent-8280ba, coral-pinnacle-0d9756, aquascape-rock-arch-48bf5e, sea-anemone-base, sunken-fishing-boat-061c70, small-fishing-boat-4ac0e3, scuba-diver-bdd1c8, lava-rock-pile-d56d19, gorgonian-sea-fan-aa3c45, sea-urchin-base, astronaut-explorer-323482, field-rock-5e37c6, stingray-base, moray-eel-base). Style dipilih: ABYSSFORGE 3D (style/STYLE_DECISION.md terisi; cover-reference.png). src/episodes/abyss/bodies.tsx = salinan bodies EP05 (Moon, Earth, StarSphere, LabelPlate, Arrow). Riset dijalankan subagent → research/SOURCE_REGISTER.md (cek isinya; bila kosong, riset ulang).",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "research/SOURCE_REGISTER.md",
+        "project/src/episodes/abyss/bodies.tsx",
+        "project/SERIES.json"
+      ],
+      "next": "Selesaikan riset (verifikasi: zona 200/1000/4000/6000 m, +1 atm per 10 m, Challenger Deep ~10.935 m vs Everest 8.849 m, Seabed 2030 % terpeta terbaru, 12 orang di Bulan vs jumlah orang ke Challenger Deep (kemungkinan >12, jangan klaim 'lebih sedikit'), ~76% hewan bercahaya MBARI, 71% Bumi laut). Lalu tahap 4: docs/ART_DIRECTION.md, docs/SCRIPT.md (195–210 kata, 'Audira' di hook/outro, ramah anak), docs/STORYBOARD.md (8 adegan: Bulan/astronaut hook → permukaan 71% + kapal → turun per zona (lumba-lumba/penyu, hiu, ubur-ubur, ikan pemancing) → tekanan + kapal selam → palung vs Everest (karst peak) → kenapa sulit dipetakan (sonar kapal, % terpeta) → makhluk bercahaya → outro), docs/ASSET_MANIFEST.md, docs/SHOTLIST.md. Root.tsx: hapus Moon + PenggantiGibran, daftarkan AbyssPreview/AbyssFinal. Pola kode: tiru EP05 src/episodes/moon (MoonFilm.tsx, scenes.tsx SceneOut, Hud.tsx Card, timeline.ts). Finish: CYBER_NEON_VOID exp 1.15 env 0.35 ao; pasang <QaProbe/> di dalam FilmScene children. Kit abyssforge: WaterColumn3D (salju laut, plankton, god-ray), Jellyfish3D, Lanternmaw3D, palette ABYSS_PALETTE. TEMP ke F: (C: sisa 1 GB). Kunci render F:/AUDIRA-EPISODES/_render.lock sebelum render final.",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Kenapa Laut Dalam Lebih Misterius dari Luar Angkasa",
+        "style": null,
+        "memoryEpisode": "sains-anak-EP09",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:23:58.580Z",
+      "doing": "Sesi A selesai (tahap 0–4). Riset di research/SOURCE_REGISTER.md (angka: >70% laut, rata-rata 3.682 m, zona 200/1.000/4.000/6.000 m, +1 atm/10 m, Challenger Deep 10.935 m, Everest 8.849 m → puncak ±2 km di bawah air, >1.000× tekanan, 28,7% terpeta (NOAA Apr 2026, VO '29 persen'), 76% hewan bercahaya, Bulan 384.400 km). Klaim 'lebih sedikit orang ke palung dari ke Bulan' SALAH, tidak dipakai. Style ABYSSFORGE 3D, engine Remotion+R3F (style/STYLE_DECISION.md). Naskah final audio/vo.txt 212 kata, 8 baris s1–s8 (Audira di hook & outro). docs ART_DIRECTION/SCRIPT/STORYBOARD/ASSET_MANIFEST selesai. Proyek project/ disalin dari EP05 (node_modules ada), Root.tsx sudah mendaftarkan AbyssPreview/AbyssFinal dari src/episodes/abyss/AbyssFilm.tsx (FILE BELUM DIBUAT — wajib export AbyssFilm + ABYSS_SECONDS), PenggantiGibran dihapus. Sudah ada: src/episodes/abyss/bodies.tsx (Moon, Earth, StarSphere, LabelPlate, Arrow dari EP05) dan src/episodes/abyss/ocean.tsx (waterAt, WaterFog, MarineSnow, GodRays, Seabed, Glow). 26 GLB laut di public/models/polyfork.",
+      "files": [
+        "audio/vo.txt",
+        "research/SOURCE_REGISTER.md",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "project/src/episodes/abyss/ocean.tsx",
+        "project/src/episodes/abyss/bodies.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "Sesi B tahap 5–8: (6) VO: audira_generate_voiceover text=isi audio/vo.txt, outputPath project/public/audio/vo.wav, wordsPath project/public/audio/vo-words.json; npm run vo -- public/audio/vo.wav. (7) Tulis timeline.ts (8 adegan dipotong di jeda kalimat VO), scenes.tsx, Hud.tsx, AbyssFilm.tsx meniru EP05 ../EP05_SISI_BULAN_YANG_SAMA/project/src/episodes/moon/ (FilmScene + Karaoke + Hud Card + AudiraSignature seed sains-EP09-laut-dalam + AudiraOutro 3,2 dtk); Finish CYBER_NEON_VOID exp 1.15 env 0.35 ao; QaProbe di dalam children FilmScene; kapal bertuliskan AUDIRA; docs/SHOTLIST.md; npm run sfx (PYTHONUTF8=1). (8) contact sheet 540x960 + audit:visual + juri buta + draft/THEME_CHECK.md. Lalu sesi C: render final (pre-approved user 2026-11-25, batch 10 short otonom; kunci F:/AUDIRA-EPISODES/_render.lock), QA, caption, 3 scheduled task, topik 025 di F:/AUDIRA-ALL-SKILL/channel-topics/audira-sains/topics.md jadi '[x] SAINS_ANAK/EP09', commit hanya folder EP09.",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Kenapa Laut Dalam Lebih Misterius dari Luar Angkasa",
+        "style": "ABYSSFORGE",
+        "memoryEpisode": "sains-anak-EP09",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:42:01.980Z",
+      "doing": "Sesi s1 lanjut (start_session ditolak app karena giliran otomatis). VO dikunci 83,36 dtk (speed 1.06), film 86,6 dtk, 8 adegan di project/src/episodes/abyss (AbyssFilm/scenes/Hud/timeline/ocean/bodies). AssetModel dipatch SkeletonUtils.clone (model -base ber-rig). SFX public/audio/sfx.wav -29 LUFS. docs/SHOTLIST.md, draft/THEME_CHECK.md, style/cover-topic.png ada. Juri putaran 1 = 3,67 PERLU POLES (material 3, depth 3, composition 3). Sedang poles putaran 2: astronaut T-pose/rover terpotong, Bumi tertimpa caption, hiu terpotong, rim light lebih kuat, material logam kapal selam.",
+      "files": [
+        "project/src/episodes/abyss/scenes.tsx",
+        "project/src/episodes/abyss/AbyssFilm.tsx",
+        "draft/DRAFT_SHEET.jpg"
+      ],
+      "next": "npm run draft -- AbyssPreview --frames=3s,9s,15s,27s,37s,49s,64s,74s --clip=off (camera.json lama 5/5) → juri buta putaran 2 → bila ≥3.5 render final: ambil F:/AUDIRA-EPISODES/_render.lock, TEMP=F:\\temp\\ep09, npm run render:final -- --comp=AbyssFinal --out=../FINAL_EP09_LAUT_DALAM.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=1 --gl=vulkan --encoder=nvenc --title=... --slug=laut-dalam-misterius --ep=EP09; lalu QA, caption, 3 scheduled task, topik 025, commit.",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Kenapa Laut Dalam Lebih Misterius dari Luar Angkasa",
+        "style": "ABYSSFORGE",
+        "memoryEpisode": "sains-anak-EP09",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:50:41.185Z",
+      "doing": "Render final ulang (cahaya adegan gelap dinaikkan setelah qa_video BLACK di 7–11, 30–37, 68–77 dtk) → FINAL_EP09_LAUT_DALAM.mp4; log F:/temp/ep09/render2.log; kunci _render.lock dihapus otomatis di akhir perintah. Juri draf 4,0 LOLOS. SOCIAL_CAPTIONS.md lolos validator, SUBTITLES.srt, NOTES.md, 3 scheduled task review dibuat.",
+      "command": "npm run render:final -- --comp=AbyssFinal --out=../FINAL_EP09_LAUT_DALAM.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=4 --concurrency=1 --gl=vulkan --encoder=nvenc",
+      "next": "Cek log (LUFS −14, TP < −1, metadata), audira_qa_video hardOnly (cuts 11,17.85,33.4,39.5,53,67.9,76.8,83.4; allow 12.27 = menembus permukaan, disengaja), record_score final, stage final/delivery done, hapus project/out besar, ubah topik 025 di F:/AUDIRA-ALL-SKILL/channel-topics/audira-sains/topics.md → '[x] SAINS_ANAK/EP09' + commit file itu saja, commit folder EP09 saja di F:/AUDIRA-EPISODES (tanpa node_modules/out).",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Kenapa Laut Dalam Lebih Misterius dari Luar Angkasa",
+        "style": "ABYSSFORGE",
+        "memoryEpisode": "sains-anak-EP09",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    }
+  ],
+  "session": 2,
+  "handover": {
+    "at": "2026-11-24T18:50:41.185Z",
+    "doing": "Render final ulang (cahaya adegan gelap dinaikkan setelah qa_video BLACK di 7–11, 30–37, 68–77 dtk) → FINAL_EP09_LAUT_DALAM.mp4; log F:/temp/ep09/render2.log; kunci _render.lock dihapus otomatis di akhir perintah. Juri draf 4,0 LOLOS. SOCIAL_CAPTIONS.md lolos validator, SUBTITLES.srt, NOTES.md, 3 scheduled task review dibuat.",
+    "command": "npm run render:final -- --comp=AbyssFinal --out=../FINAL_EP09_LAUT_DALAM.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=4 --concurrency=1 --gl=vulkan --encoder=nvenc",
+    "next": "Cek log (LUFS −14, TP < −1, metadata), audira_qa_video hardOnly (cuts 11,17.85,33.4,39.5,53,67.9,76.8,83.4; allow 12.27 = menembus permukaan, disengaja), record_score final, stage final/delivery done, hapus project/out besar, ubah topik 025 di F:/AUDIRA-ALL-SKILL/channel-topics/audira-sains/topics.md → '[x] SAINS_ANAK/EP09' + commit file itu saja, commit folder EP09 saja di F:/AUDIRA-EPISODES (tanpa node_modules/out).",
+    "snapshot": {
+      "episode": "EP09",
+      "topic": "Kenapa Laut Dalam Lebih Misterius dari Luar Angkasa",
+      "style": "ABYSSFORGE",
+      "memoryEpisode": "sains-anak-EP09",
+      "currentStage": "voice",
+      "gates": {
+        "final": {
+          "approved": true,
+          "status": "in_progress"
+        }
+      },
+      "voPath": null,
+      "draftScores": [],
+      "finals": []
+    }
+  },
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP09 Laut Dalam · s2",
+      "at": "2026-11-24T18:23:58.580Z"
+    }
+  ]
+}
