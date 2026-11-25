@@ -5,7 +5,11 @@ title: "Cara Baca Error Stack Trace seperti Senior Developer"
 hook: "Error message bukan musuh — itu petunjuk yang kamu abaikan"
 styleCandidates: ["VISUALINVESTIGATION (2D)", "DEVFORGE (2D)", "BONGKAR (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "rendah; arah baca beda per bahasa wajib disebut, format trace bisa berubah antarversi, tanpa logo bahasa/IDE (rule 15)"
 ---
 
 # Cara Baca Error Stack Trace seperti Senior Developer

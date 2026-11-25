@@ -5,7 +5,11 @@ title: "Danau Dalam yang Menyimpan Air Tawar 20% Dunia"
 hook: "Baikal Rusia: satu danau dengan air lebih banyak dari semua Great Lakes Amerika"
 styleCandidates: ["SCALEFORGE (3D)", "WORLDFORGE (3D)", "PAPERWORLD (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Rendah; klaim 20% harus disebut air tawar permukaan tak beku dan selisih dengan Great Lakes tipis, GLB nerpa tidak tersedia."
 ---
 
 # Danau Dalam yang Menyimpan Air Tawar 20% Dunia

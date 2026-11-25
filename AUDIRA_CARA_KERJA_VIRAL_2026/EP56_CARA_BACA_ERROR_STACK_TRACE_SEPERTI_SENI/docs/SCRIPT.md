@@ -1,93 +1,69 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP56`)
+# Naskah — Cara Baca Error Stack Trace seperti Senior Developer
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: Terminal gelap dibanjiri teks error merah bergulir cepat; teks membeku, lalu garis-garis traceback berubah jadi rute peta dengan pin merah di satu baris. HUD: "BUKAN MUSUH".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Layar merah penuh tulisan itu bukan musuh. Itu peta yang menunjuk langsung ke bug kamu.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Tumpukan kartu frame (fungsi) tersusun vertikal seperti tumpukan piring; kartu paling atas retak saat program "jatuh". Label HUD di objek: "AUDIRA DEBUG LAB".
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya stack trace: laporan fungsi yang sedang aktif saat program jatuh. Di AUDIRA, kita bedah bareng, baris demi baris.
 
-## c02 — <Judul Bab 1>
+## c02 — Python: baca dari bawah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Traceback Python generik (kode buatan sendiri, tanpa logo). Judul "most recent call last" disorot; panah besar meluncur ke bawah; baris terakhir membesar. Callout HUD: "NameError".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Mulai dari Python. Judulnya: most recent call last. Artinya, panggilan terakhir ada di paling bawah. Jadi baca dari bawah. Baris terakhir berisi jenis error dan pesannya, misalnya NameError.
 
-## c03 — <Judul Bab 2>
+## c03 — Java & JavaScript: baca dari atas
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Layar terbelah: trace gaya Java (`at ...`) dan gaya JavaScript; panah naik ke frame teratas, ikon "lemparan" bola merah keluar dari frame itu. Callout HUD: "10 FRAME" dengan penghitung 1→10 lalu sisa frame memudar.
 
-> <teks narasi>
+> Java dan JavaScript kebalikannya. Baris paling atas adalah pemanggilan terakhir, titik tempat error dilempar. Di mesin V8, jejaknya cuma sepuluh frame secara bawaan.
 
-## c04 — <Judul Bab 3>
+## c04 — Caused by
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Kotak error dibuka seperti boneka matryoshka/kardus berlapis: tiap lapisan bertulis "Caused by:", lapisan terdalam menyala sebagai akar. Baris "... 1 more" dilipat seperti akordeon. Callout HUD: "Caused by:" dan "... 1 more = singkatan".
 
-> <teks narasi>
+> Ketemu tulisan Caused by? Itu error asli yang dibungkus error lain. Caused by paling bawah adalah penyebab paling awal. Baris titik-titik dengan kata more cuma menyingkat frame yang sama.
 
-## c05 — <Judul Bab 4>
+## c05 — Rantai error Python
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Dua domino error: (a) domino kedua jatuh di tengah upaya menahan domino pertama, label "During handling"; (b) domino pertama dengan sengaja mendorong yang kedua, label "direct cause". Diagram panah berbeda warna.
 
-> <teks narasi>
+> Python punya versinya sendiri. During handling berarti error kedua muncul saat menangani error pertama. Direct cause berarti error itu sengaja dilempar ulang dari error sebelumnya.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan: Python makin membantu
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **12 dtk**
+- Visual: Timeline versi: chip "3.10" memunculkan balon saran "Did you mean: namedtuple?" yang mengoreksi teks salah ketik; chip "3.11" memunculkan deretan caret ^^^^ yang mengetik di bawah ekspresi gagal. Callout HUD: "Python 3.10", "Python 3.11".
 
-> <teks narasi>
+> Python juga makin membantu. Sejak versi 3.10, salah ketik nama sering diberi saran Did you mean. Versi 3.11 menambah tanda caret yang menunjuk persis ekspresi yang gagal.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Checklist 3 langkah menyala berurutan (1 jenis error → 2 baris kode sendiri → 3 Caused by sampai dasar); layar merah berubah hijau "BUILD PASSED". Lalu outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi urutannya: baca jenis error, cari baris dari kode kamu sendiri, lalu telusuri Caused by sampai dasar. Error itu bukan musuh, tapi petunjuk. Ikuti AUDIRA untuk cara kerja lainnya.
+
+## Opsi hook lain
+
+1. Programmer pemula panik lihat teks merah. Padahal jawabannya sering ada di satu baris.
+2. Python bilang baca dari bawah, Java bilang dari atas. Salah arah, kamu memburu bug di tempat yang salah.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **195 kata** ≈ **78–87 dtk**

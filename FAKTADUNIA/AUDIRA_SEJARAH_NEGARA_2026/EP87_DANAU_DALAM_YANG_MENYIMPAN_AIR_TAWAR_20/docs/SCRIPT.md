@@ -1,93 +1,69 @@
-# SCRIPT — `Fakta sejarah unik negara-negara di dunia` (`EP87`)
+# Naskah — Danau Dalam yang Menyimpan Air Tawar 20% Dunia
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **14** · estimasi **6 dtk**
+- Visual: peta Siberia, satu danau sabit menyala; di sebelahnya lima Danau Besar Amerika muncul sebagai lima tangki air yang lebih pendek dari satu tangki Baikal.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Satu danau di Siberia menyimpan air lebih banyak dari lima Danau Besar Amerika digabung.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: kamera turun ke Baikal dari orbit, garis ukur memanjang sepanjang danau; HUD "636 km" dan badge "UNESCO 1996".
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya Baikal, di Siberia, Rusia. Panjangnya 636 kilometer, dan UNESCO memasukkannya ke daftar Warisan Dunia sejak 1996.
 
-## c02 — <Judul Bab 1>
+## c02 — Kedalaman
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: potongan melintang danau, kamera menyelam vertikal di kolom air biru yang makin gelap; penggaris kedalaman berjalan, HUD "1.642 m".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Rahasianya bukan di luas, tapi di dalam. Titik terdalamnya 1.642 meter, lebih dari satu setengah kilometer air di bawah permukaan. Danau terdalam di planet ini.
 
-## c03 — <Judul Bab 2>
+## c03 — Volume vs Danau Besar
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: dua tangki raksasa berdampingan: tangki Baikal vs tangki gabungan Superior–Ontario; air naik, Baikal unggul tipis. HUD "23.600 km³" vs "22.700 km³".
 
-> <teks narasi>
+> Isinya sekitar 23.600 kilometer kubik. Lima Danau Besar Amerika, Superior sampai Ontario, cuma sekitar 22.700. Kalah tipis, tapi tetap kalah.
 
-## c04 — <Judul Bab 3>
+## c04 — Seperlima air tawar dunia
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: bola Bumi, semua air tawar permukaan cair dikumpulkan jadi satu kubus; seperlimanya terpotong dan mengalir ke Baikal. HUD "20%".
 
-> <teks narasi>
+> Menurut UNESCO, Baikal menampung sekitar 20 persen air tawar permukaan Bumi yang tidak membeku. Satu danau, seperlima cadangan dunia.
 
-## c05 — <Judul Bab 4>
+## c05 — Umur dan retakan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: lapisan kerak Bumi terbelah pelan (zona rift), danau terisi di celahnya; timeline "25 juta tahun"; lalu peta aliran: ratusan garis sungai masuk, satu garis keluar berlabel "Angara". HUD "330 → 1".
 
-> <teks narasi>
+> Umurnya sekitar 25 juta tahun, danau tertua di dunia. Ia lahir di retakan kerak Bumi yang sampai sekarang masih pelan-pelan merenggang. Sekitar 330 sungai mengalir masuk, tapi cuma satu yang keluar: Sungai Angara.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan: nerpa
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **40** · estimasi **16 dtk**
+- Visual: bawah es Baikal, nerpa (anjing laut abu-abu) berenang ke kamera; peta tiga panah tanda tanya dari Arktik, Kaspia, dan Pasifik menuju Baikal. Callout "Pusa sibirica" dan "Asal? Belum pasti".
 
-> <teks narasi>
+> Isolasi selama itu melahirkan penghuni yang aneh. Banyak hewan dan tumbuhannya tidak ada di tempat lain. Nerpa, anjing laut yang hidup hanya di Baikal, padahal danaunya terkurung daratan Siberia. Bagaimana leluhurnya bisa sampai ke sini? Peneliti sampai sekarang belum sepakat.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **13 dtk**
+- Visual: hero shot Baikal golden hour, kamera tarik ke atas memperlihatkan kedalaman di bawah permukaan (efek x-ray); tulisan AUDIRA di papan dermaga; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi kalau ada yang bilang danau terbesar itu soal luas, ingat Baikal. Yang menang bukan yang paling lebar, tapi yang paling dalam. Simpan video ini, dan ikuti AUDIRA untuk fakta dunia berikutnya.
+
+## Opsi hook lain
+
+1. Danau ini kelihatan biasa di peta, tapi dasarnya 1.642 meter di bawah permukaan.
+2. Seperlima air tawar permukaan Bumi yang tidak membeku ada di satu danau Rusia.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **200 kata** ≈ **80–89 dtk**
