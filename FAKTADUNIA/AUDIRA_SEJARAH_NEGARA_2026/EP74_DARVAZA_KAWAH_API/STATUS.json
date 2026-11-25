@@ -1,0 +1,543 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP74_DARVAZA_KAWAH_API",
+  "topic": "Fakta sejarah unik negara-negara di dunia",
+  "createdAt": "2026-11-24T18:16:39.764Z",
+  "updatedAt": "2026-11-25T00:20:56.815Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:16:55.340Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-24T18:16:39.765Z",
+      "startedAt": "2026-11-24T18:16:39.765Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:16:55.340Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-23T18:28:37.279Z",
+      "startedAt": "2026-11-23T18:28:37.279Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:18.528Z",
+          "text": "WORLDFORGE 3D R3F dipilih AI (tanpa acc). cover-reference.jpg disalin. cover-topic.png dirender di Sesi B setelah scaffold."
+        }
+      ],
+      "doneAt": "2026-11-24T18:20:18.528Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:15.436Z",
+          "text": "Sesi A selesai: SOURCE_REGISTER (12 fakta, W-DV+BBC20+NG14+CNN22+F24-25+AFP25+NYT26), STYLE_DECISION WORLDFORGE 3D (alt DISASTERSIM, CHRONICLE ditolak), ART_DIRECTION, SCRIPT (±199 kata terucap, ±80–88 dtk), VO_TTS.txt (ejaan fonetik), STORYBOARD 8 scene, ASSET_MANIFEST 7 GLB. Preflight AUDIRA-ALL-SKILL tidak punya script 'preflight' → jalankan dari project starter di Sesi B."
+        }
+      ],
+      "doneAt": "2026-11-24T18:20:15.436Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:29:16.404Z",
+          "text": "sync: proyek render sudah disiapkan"
+        },
+        {
+          "at": "2026-11-24T18:29:16.712Z",
+          "text": "project/ salinan EP59 + junction node_modules dan public/models/polyfork -> E:/ASET/ASSET-AUDIRA/downloads/glb; check-env Ready. Smoke dijalankan setelah film Darvaza ditulis."
+        }
+      ],
+      "doneAt": "2026-11-24T18:29:16.712Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:29:08.135Z",
+          "text": "VO Cartesia speed 1: 77.74 dtk, 200 kata, npm run vo OK. FILM_SECONDS 81 (outro 78-81). Setup: project disalin dari EP59, check-env Ready."
+        }
+      ],
+      "doneAt": "2026-11-24T18:29:08.135Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:29:16.404Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-24T18:29:45.285Z",
+          "text": "Koreksi sync: tahap 7 BELUM selesai. Baru src/episode/world.ts (terrain gurun + kawah + peta) + materials.ts. Sisa: parts.tsx, scenes.tsx, timeline.ts, DarvazaFilm.tsx, Root.tsx, smoke, stills, cover-topic.png, sfx."
+        },
+        {
+          "at": "2026-11-24T18:30:25.186Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.572Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:11:39.800Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        }
+      ],
+      "doneAt": "2026-11-24T23:11:15.429Z",
+      "startedAt": "2026-11-24T23:11:15.429Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T23:46:32.624Z",
+      "notes": [
+        {
+          "at": "2026-11-24T23:46:32.625Z",
+          "text": "pre-approved user 2026-11-25 (batch 10 short otonom)"
+        },
+        {
+          "at": "2026-11-25T00:20:56.815Z",
+          "text": "FINAL_EP74_DARVAZA_tagged.mp4 1080x1920@60 81 s, -13.7 LUFS TP -1.9, qa_video PASS, diterima 3.50 setelah 2 putaran"
+        }
+      ],
+      "startedAt": "2026-11-24T23:46:32.624Z",
+      "doneAt": "2026-11-25T00:20:56.815Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:55:23.878Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T23:47:37.028Z",
+      "startedAt": "2026-11-24T23:47:37.028Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-negara-EP74",
+    "style": "WORLDFORGE",
+    "engine": "remotion",
+    "shortTitle": "Darvaza",
+    "wordCount": 199,
+    "estimatedDuration": {
+      "wordCount": 199,
+      "minSec": 80,
+      "maxSec": 88
+    },
+    "voSeconds": 77.74,
+    "filmSeconds": 81
+  },
+  "syncedAt": "2026-11-24T23:55:23.878Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-24T18:20:24.177Z",
+      "doing": "Sesi A (tahap 0–4) selesai: riset, style WORLDFORGE 3D, art direction, naskah ±199 kata, storyboard 8 scene, manifest 7 GLB.",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/ART_DIRECTION.md",
+        "docs/VO_TTS.txt",
+        "docs/SCRIPT.md",
+        "research/SOURCE_REGISTER.md"
+      ],
+      "next": "Sesi B tahap 5: scaffold project/ dengan menyalin EP59_FINLANDIA_3_JUTA_SAUNA/project (WORLDFORGE R3F; robocopy tanpa node_modules/out) + junction node_modules -> F:/AUDIRA-SKILL-MOTION/node_modules + junction public/models/polyfork (lihat EP59), hapus src/episode Sauna, check-env + smoke. Lalu tahap 6 VO dari docs/VO_TTS.txt (audira_generate_voiceover, speed 1), npm run vo; tahap 7 scene 8 adegan per STORYBOARD + npm run sfx; tahap 8 contact sheet + juri buta (maks 2 putaran). Akhir B: handover newSession ke Sesi C. Aturan otonom batch 2026-11-25: gerbang tahap 9 sudah pre-approved, kunci render F:/AUDIRA-EPISODES/_render.lock untuk render final, jadwal upload slot pertama default, jangan tawarkan promosi kit.",
+      "snapshot": {
+        "episode": "EP74_DARVAZA_KAWAH_API",
+        "topic": "Fakta sejarah unik negara-negara di dunia",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP74",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:24:35.413Z",
+      "doing": "Sesi B tahap 5-6: project/ disalin dari EP59 (tanpa node_modules/out/public/models/audio/src/episode), junction node_modules + public/models/polyfork -> E:/ASET/ASSET-AUDIRA/downloads/glb dibuat. VO sedang digenerate.",
+      "files": [
+        "project/src/episode/",
+        "project/src/Root.tsx",
+        "project/public/audio/vo.wav"
+      ],
+      "next": "npm run vo, tulis src/episode (DarvazaFilm, timeline, scenes, parts), Root.tsx bersih, smoke, cover.",
+      "snapshot": {
+        "episode": "EP74_DARVAZA_KAWAH_API",
+        "topic": "Fakta sejarah unik negara-negara di dunia",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP74",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:29:12.276Z",
+      "doing": "Sesi B: tahap 5 scaffold selesai (project/ + junction, check-env Ready), tahap 6 VO selesai (77.74 dtk, FILM_SECONDS 81). Tahap 7 belum mulai menulis kode: rencana lengkap (waktu adegan, dunia, props, kamera, kartu HUD) ada di work/SESSION_B_PLAN.md.",
+      "files": [
+        "work/SESSION_B_PLAN.md",
+        "project/src/episode/",
+        "project/src/Root.tsx",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "Tahap 7: tulis project/src/episode/{world.ts, parts.tsx, scenes.tsx, timeline.ts, DarvazaFilm.tsx} sesuai work/SESSION_B_PLAN.md (pola dari EP59 src/episode), bersihkan Root.tsx (DarvazaPreview/DarvazaFinal saja + Showcase untuk smoke), npm run smoke, stills per adegan, cover-topic.png, PYTHONUTF8=1 npm run sfx. Lalu tahap 8 contact sheet + THEME_CHECK + juri buta.",
+      "snapshot": {
+        "episode": "EP74_DARVAZA_KAWAH_API",
+        "topic": "Fakta sejarah unik negara-negara di dunia",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP74",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:29:52.434Z",
+      "doing": "Sesi B (s2) berhenti karena batas konteks. Selesai: tahap 5 (project/ salinan EP59 + junction node_modules -> F:/AUDIRA-SKILL-MOTION/node_modules dan public/models/polyfork -> E:/ASET/ASSET-AUDIRA/downloads/glb; check-env Ready), tahap 6 (VO 77.74 dtk, 200 kata, npm run vo OK, FILM_SECONDS 81, outro 78-81). Tahap 7 dimulai: project/src/episode/world.ts (terrain gurun Karakum + kawah R35/D30 + grid peta) dan materials.ts (dari EP59) sudah ditulis, belum dites.",
+      "files": [
+        "work/SESSION_B_PLAN.md",
+        "project/src/episode/world.ts",
+        "project/src/episode/materials.ts",
+        "project/src/Root.tsx",
+        "project/public/audio/vo-words.json",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md"
+      ],
+      "next": "Sesi B lanjutan, tahap 7: baca work/SESSION_B_PLAN.md (waktu adegan A-I dari kata VO, dunia, props GLB, kamera per shot, kartu HUD) lalu tulis project/src/episode/{parts.tsx, scenes.tsx, timeline.ts, DarvazaFilm.tsx} meniru pola EP59 (../../EP59_FINLANDIA_3_JUTA_SAUNA/project/src/episode), ganti Root.tsx (hapus SaunaFilm + PenggantiGibran, daftarkan DarvazaPreview/DarvazaFinal), typecheck, npm run smoke, stills per adegan, cover-topic.png ke style/, PYTHONUTF8=1 npm run sfx. Tahap 8: contact sheet + draft/THEME_CHECK.md + juri buta subagen (maks 2 putaran). Lalu handover ke Sesi C.",
+      "snapshot": {
+        "episode": "EP74_DARVAZA_KAWAH_API",
+        "topic": "Fakta sejarah unik negara-negara di dunia",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP74",
+        "currentStage": "animation",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:37:36.137Z",
+      "doing": "Sesi B s3 berhenti karena batas konteks. Tahap 7: timeline.ts dan parts.tsx SELESAI ditulis (belum typecheck). Rancangan lengkap scenes.tsx + DarvazaFilm.tsx + Root.tsx ada di work/SESSION_B_PLAN.md bagian \"Status s3\" dan \"Rancangan scenes.tsx + DarvazaFilm.tsx\".",
+      "files": [
+        "work/SESSION_B_PLAN.md",
+        "project/src/episode/timeline.ts",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/world.ts",
+        "project/src/episode/materials.ts",
+        "project/src/Root.tsx",
+        "../EP59_FINLANDIA_3_JUTA_SAUNA/project/src/episode/SaunaFilm.tsx",
+        "../EP59_FINLANDIA_3_JUTA_SAUNA/project/src/episode/scenes.tsx"
+      ],
+      "next": "Sesi B lanjutan: tulis project/src/episode/scenes.tsx + DarvazaFilm.tsx (ikuti rancangan di work/SESSION_B_PLAN.md), ganti src/Root.tsx, npm run typecheck, npm run smoke, stills per adegan (npm run stills -- out/stills 3s,10s,17s,22s,25s,31s,36s,42s,48s,57s,61s,70s,76s DarvazaPreview), tuning cahaya api, style/cover-topic.png (frame hook + \"GERBANG NERAKA\"), PYTHONUTF8=1 npm run sfx. Tahap 8: contact sheet + npm run audit:visual + draft/THEME_CHECK.md + juri buta subagen (maks 2 putaran). Lalu handover ke Sesi C (render final --concurrency=1, kunci F:/AUDIRA-EPISODES/_render.lock, QA, captions, NOTES, 3 scheduled task review-darvaza-kawah-api-24h/-72h/-7d, topik 034, commit hanya folder EP74).",
+      "snapshot": {
+        "episode": "EP74_DARVAZA_KAWAH_API",
+        "topic": "Fakta sejarah unik negara-negara di dunia",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP74",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:45:00.310Z",
+      "doing": "Sesi B s4 tahap 7: scenes.tsx (A–I) + DarvazaFilm.tsx DITULIS, Root.tsx sudah DarvazaPreview/DarvazaFinal, typecheck bersih (sisa error lama scene-qa/PenggantiGibran bukan milik episode), smoke OK, stills 13 frame dirender di project/out/stills (_sheet.jpg, look.json: tidak ada aspek di bawah 4). Timeline E kamera diubah ke [-36,10,262]->[30,4,248] target [0,-16,-20]. Rig GLB assetType = prop. world.ts albedo bug diperbaiki.",
+      "command": "npm run stills -- out/stills 3s,10s,17s,22s,25s,31s,36s,42s,48s,57s,61s,70s,76s DarvazaPreview",
+      "files": [
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/DarvazaFilm.tsx",
+        "project/src/episode/timeline.ts",
+        "project/src/Root.tsx",
+        "project/out/stills/_sheet.jpg"
+      ],
+      "next": "Lihat project/out/stills/_sheet.jpg (perkecil ±1200 px), tuning cahaya api/arah heading orang bila salah, lalu style/cover-topic.png (frame hook ~3s + teks GERBANG NERAKA), PYTHONUTF8=1 npm run sfx. Tahap 8: contact sheet 6–8 frame + npm run audit:visual + draft/THEME_CHECK.md + juri buta subagen (maks 2 putaran). Lalu Sesi C sesuai rencana (render final --concurrency=1 --vo --sfx, kunci _render.lock, QA, captions, NOTES, 3 scheduled task review-darvaza-kawah-api-24h/-72h/-7d, topik 034, commit hanya folder EP74).",
+      "snapshot": {
+        "episode": "EP74_DARVAZA_KAWAH_API",
+        "topic": "Fakta sejarah unik negara-negara di dunia",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP74",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:46:00.298Z",
+      "doing": "Sesi B s4 selesai sebagian (batas konteks). Tahap 7 kode LENGKAP: project/src/episode/scenes.tsx (A–I) + DarvazaFilm.tsx (LOOK per adegan, SkyDome, HUD count/bar/micro, Subtitle, Signature seed darvaza-kawah-api, Outro) + Root.tsx (DarvazaPreview 540x960@30, DarvazaFinal 1080x1920@60). Typecheck bersih untuk src/episode (error lama scene-qa/PenggantiGibran abaikan). Smoke OK. Stills 13 frame r1 di project/out/stills/_sheet.jpg (look.json: tidak ada aspek < 4). Temuan r1 dari sheet: (1) adegan malam A/F/G/H terlalu oranye, langit malam biru hampir tak terlihat; (2) B peta beige polos, rute dan kota kurang terbaca; (3) C rig terlalu besar menutupi frame; (4) D asap metana jadi lempeng hijau; (5) G61 penjelajah overexposed putih; (6) I fajar kawah hampir tak terlihat, boulder tampak melayang. Sudah diperbaiki setelah r1 (BELUM dirender ulang): asap D opacity 0.07 size 2.4, rig C size 12, kamera C2 [-24,6,34]->[-17,5,29], tube rute B r 0.9 + blok kota lebih besar, pointLight api y-2 2600->1200.",
+      "files": [
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/DarvazaFilm.tsx",
+        "project/src/episode/timeline.ts",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/world.ts",
+        "project/src/Root.tsx",
+        "project/out/stills/_sheet.jpg",
+        "work/SESSION_B_PLAN.md"
+      ],
+      "next": "Sesi B lanjutan (s5): render ulang stills (npm run stills -- out/stills 3s,10s,17s,22s,25s,31s,36s,42s,48s,57s,61s,70s,76s DarvazaPreview, ±1 menit), cek sheet diperkecil ±1000 px, tangani sisa temuan (malam lebih biru: naikkan key bulan/hemi biru atau env, kurangi pointLight api di luar kawah; B kontras peta; G61 kurangi exposure penjelajah; I kamera lihat kawah; boulder melayang), lalu style/cover-topic.png (frame hook ±3s + teks GERBANG NERAKA), PYTHONUTF8=1 npm run sfx. Tahap 8: contact sheet 6–8 frame + npm run audit:visual + draft/THEME_CHECK.md + juri buta subagen (maks 2 putaran; LOLOS rata2 >=3.8 tanpa aspek <3, else terbaik >=3.5 diterima). Lalu Sesi C: render final --concurrency=1 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav dengan kunci F:/AUDIRA-EPISODES/_render.lock, QA -14 LUFS TP<-1, metadata, SOCIAL_CAPTIONS.md tervalidasi, NOTES.md, 3 scheduled task review-darvaza-kawah-api-24h/-72h/-7d, topik 034 di F:/AUDIRA-ALL-SKILL/channel-topics/audira-faktadunia/topics.md, commit hanya folder EP74.",
+      "snapshot": {
+        "episode": "EP74_DARVAZA_KAWAH_API",
+        "topic": "Fakta sejarah unik negara-negara di dunia",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP74",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:16:13.389Z",
+      "doing": "Sesi B s5 (batas konteks): tahap 8 putaran juri 1 SELESAI, poles r2 sudah diedit tapi BELUM dirender. Selesai s5: tuning malam biru (NIGHT hemi 0.6/key 1.1/fog #141A30), peta B (kamera oblique [-10,58,62], tint #8C7858, label GURUN KARAKUM, tube r0.5), kamera G lebih dekat, kamera I lebih tinggi, explorer material redup + sample emissive 1.2, boulder tenggelam 0.3*s; style/cover-topic.png (frame 0.9s + teks GERBANG NERAKA, raw di cover-topic-raw.png); docs/SHOTLIST.md ditulis; public/audio/sfx.wav (-26 LUFS, 28 suara); draft/contact-sheet.jpg r1 (3s,12s,17s,36s,42s,57.5s,70s,79.5s); draft/THEME_CHECK.md 8 baris semua ya; draft/camera.json (clip 22-37s motion 5/5); look ceilings depth 3 readability 4. Skor: self 3.83; JURI r1 3.17 (lighting 3, material 2, depth 2, composition 3, motion 5, readability 4) — kelemahan: api billboard datar dgn artefak garis hitam horizontal (F4/F6), dinding kawah oranye polos seperti plastik, haze coklat datar tanpa arah matahari (F1/F2/F4), kartu F7 menutup rig sumur. Poles r2 sudah diedit (belum dirender): world.ts dinding kawah bergerigi (ridged+fbm wallMask) + albedo bercak batu + jelaga vertikal; timeline.ts kamera H target [0,4,0] supaya rig turun di bawah kartu.",
+      "files": [
+        "project/src/episode/world.ts",
+        "project/src/episode/timeline.ts",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/DarvazaFilm.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/camera.json",
+        "draft/look.json",
+        "style/cover-topic.png",
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "Sesi B lanjutan (s6): cek cepat r2 (npm run stills -- out/diag 3s,36s,57.5s,70s DarvazaPreview), bila perlu tambah asap panas hangat di atas kawah malam (Smoke additive warna #FF9A50 opacity ~0.12 di A/F/H) dan raking light lebih kuat; selidiki garis hitam horizontal di api (Fire shader parts.tsx: mungkin sprite tumpang tindih/Label) — lalu render ulang contact sheet r2 (npm run stills -- out/draft 3s,12s,17s,36s,42s,57.5s,70s,79.5s DarvazaPreview; npm run audit:visual -- out/draft --style=WORLDFORGE --json=out/draft/look.json; cp ke draft/contact-sheet.jpg), record_score self, juri buta subagen putaran 2 (prompt qa/jury.md; camera dari draft/camera.json). LOLOS >=3.8 tanpa aspek<3, else terbaik >=3.5 diterima, else ganti style. append_lesson failed untuk juri r1. Lalu Sesi C via handover newSession: render final --concurrency=1 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav dengan kunci F:/AUDIRA-EPISODES/_render.lock (gerbang final sudah pre-approved user 2026-11-25 batch 10 short otonom: update stage final approved true dengan note itu), QA -14 LUFS TP<-1, metadata, SOCIAL_CAPTIONS.md tervalidasi, NOTES.md, 3 scheduled task review-darvaza-kawah-api-24h/-72h/-7d (slot upload pertama default), topik 034 di F:/AUDIRA-ALL-SKILL/channel-topics/audira-faktadunia/topics.md jadi [x] SEJARAH_NEGARA/EP74 + commit file itu saja, commit hanya folder EP74 di F:/AUDIRA-EPISODES. Sesi lain paralel di checkout sama: sentuh hanya folder EP74.",
+      "snapshot": {
+        "episode": "EP74_DARVAZA_KAWAH_API",
+        "topic": "Fakta sejarah unik negara-negara di dunia",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP74",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:47:51.497Z",
+      "doing": "s6: juri r2 3.50 (L3 M3 D3 C3 Mo5 R4) diterima setelah 2 putaran; fix shader api NaN; SOCIAL_CAPTIONS.md valid (jadwal Rabu 20 Jan 2027 19.00). Menunggu _render.lock (EP07) lalu render final.",
+      "command": "cd project && RENDER_TMPDIR=F:/render-tmp npm run render:final -- --comp=DarvazaFinal --out=../FINAL_EP74_DARVAZA.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --concurrency=1 --title=\"Darvaza: Gerbang Neraka yang Menyala Sejak 1971\" --slug=darvaza-kawah-api --ep=EP74",
+      "files": [
+        "project/src/episode/parts.tsx",
+        "draft/contact-sheet.jpg",
+        "SOCIAL_CAPTIONS.md"
+      ],
+      "next": "QA loudness -14 LUFS TP<-1, tag metadata -> FINAL_EP74_DARVAZA_tagged.mp4, NOTES.md (diterima 3.50 setelah 2 putaran), record_score final, 3 scheduled task review-darvaza-kawah-api-24h/-72h/-7d (upload Rabu 20 Jan 2027 19.00 WIB), topik 034 [x], commit folder EP74 saja.",
+      "snapshot": {
+        "episode": "EP74_DARVAZA_KAWAH_API",
+        "topic": "Fakta sejarah unik negara-negara di dunia",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP74",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-25T00:20:55.110Z",
+      "doing": "s6: FINAL_EP74_DARVAZA_tagged.mp4 selesai (-13.7 LUFS TP -1.9, qa_video PASS, metadata ok), SOCIAL_CAPTIONS valid, SUBTITLES.srt, NOTES.md, 3 scheduled task review dibuat, lesson fix+failed WORLDFORGE dicatat.",
+      "files": [
+        "FINAL_EP74_DARVAZA_tagged.mp4",
+        "NOTES.md",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt"
+      ],
+      "next": "Sisa: update stage final+delivery done; topik 034 di F:/AUDIRA-ALL-SKILL/channel-topics/audira-faktadunia/topics.md hapus \"(proses)\" + commit file itu saja; hapus project/out + F:/render-tmp sisa EP74; git add folder EP74 saja (tanpa mp4 bila .gitignore) + commit.",
+      "snapshot": {
+        "episode": "EP74_DARVAZA_KAWAH_API",
+        "topic": "Fakta sejarah unik negara-negara di dunia",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP74",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    }
+  ],
+  "session": 6,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP74 Darvaza · s2",
+      "at": "2026-11-24T18:20:24.176Z"
+    },
+    {
+      "no": 3,
+      "title": "EP74 Darvaza · s3",
+      "at": "2026-11-24T18:29:52.434Z"
+    },
+    {
+      "no": 4,
+      "title": "EP74 Darvaza · s4",
+      "at": "2026-11-24T18:37:36.137Z"
+    },
+    {
+      "no": 5,
+      "title": "EP74 Darvaza · s5",
+      "at": "2026-11-24T18:46:00.298Z"
+    },
+    {
+      "no": 6,
+      "title": "EP74 Darvaza · s6",
+      "at": "2026-11-24T23:16:13.389Z"
+    }
+  ],
+  "handover": {
+    "at": "2026-11-25T00:20:55.110Z",
+    "doing": "s6: FINAL_EP74_DARVAZA_tagged.mp4 selesai (-13.7 LUFS TP -1.9, qa_video PASS, metadata ok), SOCIAL_CAPTIONS valid, SUBTITLES.srt, NOTES.md, 3 scheduled task review dibuat, lesson fix+failed WORLDFORGE dicatat.",
+    "files": [
+      "FINAL_EP74_DARVAZA_tagged.mp4",
+      "NOTES.md",
+      "SOCIAL_CAPTIONS.md",
+      "SUBTITLES.srt"
+    ],
+    "next": "Sisa: update stage final+delivery done; topik 034 di F:/AUDIRA-ALL-SKILL/channel-topics/audira-faktadunia/topics.md hapus \"(proses)\" + commit file itu saja; hapus project/out + F:/render-tmp sisa EP74; git add folder EP74 saja (tanpa mp4 bila .gitignore) + commit.",
+    "snapshot": {
+      "episode": "EP74_DARVAZA_KAWAH_API",
+      "topic": "Fakta sejarah unik negara-negara di dunia",
+      "style": "WORLDFORGE",
+      "memoryEpisode": "sejarah-negara-EP74",
+      "currentStage": "final",
+      "gates": {
+        "final": {
+          "approved": true,
+          "status": "in_progress"
+        }
+      },
+      "voPath": null,
+      "draftScores": [],
+      "finals": [],
+      "draftRounds": 0
+    }
+  }
+}
