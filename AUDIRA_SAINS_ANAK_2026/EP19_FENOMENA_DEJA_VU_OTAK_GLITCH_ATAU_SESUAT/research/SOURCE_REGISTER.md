@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi`
+# Source Register — Fenomena Deja Vu: Otak Glitch atau Sesuatu yang Lebih Dalam
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Sekitar 60% populasi pernah mengalami déjà vu; frekuensi turun seiring usia; terkait stres dan kelelahan; 4 kelompok teori (dual processing, neurologis, memori, atensi) | A review of the déjà vu experience, Brown AS, Psychol Bull 2003 | https://pubmed.ncbi.nlm.nih.gov/12784936/ (DOI 10.1037/0033-2909.129.3.394) | 2026-11-25 | HIGH |
+| 2 | Meta-analisis 46 studi: déjà vu non-iktal pada 74% orang sehat; iktal pada 22% pasien epilepsi; "déjà vu" artinya "already seen" | Non-ictal, interictal and ictal déjà vu: a systematic review and meta-analysis, Hadzic A dkk., Front Neurol 2024 | https://pubmed.ncbi.nlm.nih.gov/38966090/ (DOI 10.3389/fneur.2024.1406889) | 2026-11-25 | HIGH |
+| 3 | Eksperimen VR: scene baru yang tata letaknya mirip scene lama (tapi tidak diingat) meningkatkan rasa akrab dan laporan déjà vu | Familiarity from the configuration of objects in 3-dimensional space and its relation to déjà vu, Cleary AM dkk., Conscious Cogn 2012 | https://pubmed.ncbi.nlm.nih.gov/22322010/ (DOI 10.1016/j.concog.2011.12.010) | 2026-11-25 | HIGH |
+| 4 | fMRI 33 relawan sehat (18 DV+, 15 DV-): insula lebih aktif, hippocampus dan parahippocampal kurang aktif pada DV+; performa memori sama | Functional activity changes in memory and emotional systems of healthy subjects with déjà vu, Nigro S dkk., Epilepsy Behav 2019 | https://pubmed.ncbi.nlm.nih.gov/31181431/ (DOI 10.1016/j.yebeh.2019.05.018) | 2026-11-25 | HIGH |
+| 5 | Kohort 1.000 orang (543 sehat, 457 epilepsi): hanya pasien epilepsi yang yakin merasakan "recognition" saat kejang | Insight into epileptic and physiological déjà vu: from a multicentric cohort study, Labate A dkk., Eur J Neurol 2019 | https://pubmed.ncbi.nlm.nih.gov/30184312/ (DOI 10.1111/ene.13806) | 2026-11-25 | HIGH |
+| 6 | Survei 365 dewasa sehat Ceko: 324 (88,8%) melapor déjà vu; penulis menduga angka mencerminkan kemauan melapor pengalaman "luar biasa" | Déjà Vu Experiences in Healthy Czech Adults, Lacinová L dkk., J Nerv Ment Dis 2016 | https://pubmed.ncbi.nlm.nih.gov/27441459/ (DOI 10.1097/NMD.0000000000000573) | 2026-11-25 | MEDIUM |
+| 7 | Stimulasi listrik intrakranial pada 6 pasien epilepsi memicu "reminiscences" (termasuk 1 déjà-rêvé) pada jaringan lobus temporal dan insula | Complex memories induced by intracranial electrical brain stimulation, Curot J dkk., Cortex 2025 | https://pubmed.ncbi.nlm.nih.gov/39741056/ (DOI 10.1016/j.cortex.2024.11.015) | 2026-11-25 | MEDIUM |

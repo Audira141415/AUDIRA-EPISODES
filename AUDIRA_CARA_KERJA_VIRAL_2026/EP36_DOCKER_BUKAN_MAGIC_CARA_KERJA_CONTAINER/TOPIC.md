@@ -5,7 +5,11 @@ title: "Docker Bukan Magic: Cara Kerja Container yang Sebenarnya"
 hook: "Kalau kamu pakai Docker tapi nggak paham ini, kamu buta di production"
 styleCandidates: ["INNERWORKS (3D)", "NANOFORGE (3D)", "DEVFORGE (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah; \"berbagi kernel\" tidak berlaku persis di Docker Desktop (VM Linux), jangan klaim absolut."
 ---
 
 # Docker Bukan Magic: Cara Kerja Container yang Sebenarnya

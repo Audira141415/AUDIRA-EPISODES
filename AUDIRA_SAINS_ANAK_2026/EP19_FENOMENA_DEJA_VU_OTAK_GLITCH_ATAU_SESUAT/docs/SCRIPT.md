@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP19`)
+# Naskah — Fenomena Deja Vu: Otak Glitch atau Sesuatu yang Lebih Dalam
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Close-up siluet kepala 3D transparan, di dalamnya otak menyala; teks besar DÉJÀ VU muncul per kata. Dua frame ruangan identik berkedip.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Kamu masuk ke ruangan baru, lalu merasa: ini pernah terjadi. Padahal belum. Itu déjà vu. Otakmu tidak rusak. Aku AUDIRA, ayo bedah.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Kerumunan siluet tanpa wajah di jalan, tiap siluet kadang berkedip menyala; callout HUD '60%' lalu '74%' menghentak.
 
-> <konteks singkat + "Di Audira, ...">
+> Déjà vu berarti sudah pernah melihat, dari bahasa Prancis. Tinjauan tahun 2003 menyebut sekitar 60 persen orang pernah mengalaminya. Analisis gabungan tahun 2024 dari 46 studi: sekitar 74 persen orang sehat.
 
-## c02 — <Judul Bab 1>
+## c02 — Bab 1 — Kapan sering muncul
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Grafik batang usia menurun, ikon bantal dan jam (lelah), awan stres di atas kepala siluet.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Déjà vu lebih sering muncul pada anak muda, dan makin jarang seiring usia. Ia juga cenderung muncul saat stres atau lelah.
 
-## c03 — <Judul Bab 2>
+## c03 — Bab 2 — Teori pola yang mirip
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Ruangan 3D A dan ruangan 3D B dengan tata letak sama tetapi isi berbeda; garis penghubung menyala antar benda.
 
-> <teks narasi>
+> Salah satu teori: otak mengenali pola susunan benda. Pada 2012, peneliti memakai realitas virtual. Ruangan baru bertata letak mirip ruangan lama yang tidak diingat, membuat orang merasa akrab.
 
-## c04 — <Judul Bab 3>
+## c04 — Bab 3 — Di dalam otak
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Potongan otak 3D, hippocampus bercahaya redup, insula menyala terang; callout '33 relawan' dan '18 mengalami'.
 
-> <teks narasi>
+> Pada 2019, peneliti Italia memindai otak 33 relawan sehat. Delapan belas pernah mengalami déjà vu. Insula mereka lebih aktif, sedangkan hippocampus, pusat memori, kurang aktif. Daya ingat tetap sama.
 
-## c05 — <Judul Bab 4>
+## c05 — Bab 4 — Kejang epilepsi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Siluet pasien tanpa wajah di ruang EEG; gelombang otak berubah menjadi lonjakan; callout '22%'.
 
-> <teks narasi>
+> Pada penderita epilepsi, déjà vu bisa menjadi tanda kejang. Analisis tahun 2024 mencatat sekitar 22 persen pasien epilepsi merasakannya saat kejang.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan — Belum ada jawaban pasti
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Papan tulis 3D dengan empat kartu teori terbuka satu per satu; tanda tanya besar di tengah.
 
-> <teks narasi>
+> Sudah ada jawaban final? Belum. Tinjauan tahun 2003 membagi teori ke empat kelompok: dua proses kognitif tidak sinkron, gangguan saraf, memori samar, dan perhatian terbagi.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Hero shot otak berputar pelan, ruangan identik memudar menjadi outro card AUDIRA, teks 'Created by Agus Dwi R.'.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Intinya, déjà vu hampir pasti normal. Otak merasa akrab, tapi gagal mengingat sumbernya. Bila sangat sering atau disertai kejang, periksakan ke dokter. Ikuti AUDIRA untuk sains berikutnya.
+
+## Opsi hook lain
+
+1. Pernah merasa momen ini sudah terjadi persis sebelumnya? Sains punya petunjuknya.
+2. Tujuh dari sepuluh orang sehat pernah mengalami ini, dan otakmu tidak sedang error.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **204 kata** ≈ **85 dtk**

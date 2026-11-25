@@ -5,7 +5,11 @@ title: "Cara Kerja Deepfake dan Kenapa Semakin Sulit Dideteksi"
 hook: "Video palsu yang sudah hampir sempurna — ini cara kerjanya"
 styleCandidates: ["GLITCHFORGE (2D)", "CYBERFORGE (3D)", "DEVFORGE (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Topik sensitif (korban deepfake): tanpa wajah nyata; angka benchmark cepat basi, tulis per tanggal studi."
 ---
 
 # Cara Kerja Deepfake dan Kenapa Semakin Sulit Dideteksi

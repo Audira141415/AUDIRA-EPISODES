@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP27`)
+# Naskah — Rahasia di Balik Perang Badar: 313 Melawan 1.000
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: Layar gelap, deretan 313 titik cahaya kecil muncul satu per satu di sisi kiri padang pasir; di kanan menjulang lautan 1.000 siluet pasukan. Callout HUD besar: 313 vs ±1.000.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Tiga ratus tiga belas orang melawan seribu. Di atas kertas, Badar seharusnya selesai sebelum siang.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Peta lembah Badar dari atas, kalender Hijriah berputar berhenti di 17 Ramadan; callout 13 Maret 624 M. Garis rute Madinah ke Badar.
 
-> <konteks singkat + "Di Audira, ...">
+> Tanggalnya 17 Ramadan tahun kedua Hijriah, atau 13 Maret 624 Masehi. Di AUDIRA, kita baca angkanya dulu, baru pesannya.
 
-## c02 — <Judul Bab 1>
+## c02 — Pasukan kecil yang tidak siap
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **32** · estimasi **13 dtk**
+- Visual: Barisan siluet tanpa wajah berjalan melintasi gurun, dua kuda dan unta berbagi tunggangan; di langit muncul ilustrasi kafilah dagang Quraisy sebagai target awal. Callout: 2 kuda, 70 unta.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Pasukan Muslim 313 orang. Al-Bara' bin Azib dalam Sahih Bukhari bilang, jumlah mereka sama seperti pasukan Talut. Perlengkapannya cuma dua kuda dan 70 unta. Mereka berangkat untuk mencegat kafilah dagang, bukan berperang.
 
-## c03 — <Judul Bab 2>
+## c03 — Seribu lawan tiga ratus
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **12 dtk**
+- Visual: Dua kolom infografis: kitab Bukhari 3957 dan Muslim 1763 dengan angka masing-masing; ikon cap derajat SAHIH. Kamera zoom ke tulisan Arab riwayat. Callout: ±1.000 vs 313/319.
 
-> <teks narasi>
+> Quraisy datang sekitar seribu orang. Imam Muslim meriwayatkan dari Umar bin Khattab: musuh seribu, sahabat 319 orang. Hadis sahih. Beda angka 313 dan 319 itu beda riwayat, bukan beda cerita.
 
-## c04 — <Judul Bab 3>
+## c04 — Doa dan pertolongan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Siluet tanpa wajah di tengah padang, tangan terangkat ke langit, selendang jatuh; cahaya emas turun dari langit. Kaligrafi Al-Anfal 8:9 muncul bersama callout 1.000 malaikat.
 
-> <teks narasi>
+> Sebelum perang, Nabi menghadap kiblat berdoa sampai selendangnya jatuh. Abu Bakar memungutnya. Lalu turun janji: seribu malaikat datang berturut-turut, Al-Anfal ayat 9.
 
-## c05 — <Judul Bab 4>
+## c05 — Hasil di medan Badar
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Peta taktik: sumur dikuasai, panah pergerakan pasukan; counter animasi 70, 70, lalu 14 dengan warna berbeda.
 
-> <teks narasi>
+> Hasilnya, 70 Quraisy tewas dan 70 ditawan, menurut Al-Bara' dalam Bukhari. Dari pihak Muslim, 14 orang gugur.
 
-## c06 — <Judul Bab 5>
+## c06 — Pesan di balik angkanya
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Tiga kartu ayat bergantian: 8:65 rasio 1 banding 10, 8:66 rasio 1 banding 2, 3:123. Kaligrafi tebal dan terjemah di tengah; rasio digambar sebagai timbangan.
 
-> <teks narasi>
+> Lalu pesannya apa? Al-Anfal ayat 65 menjanjikan seratus orang sabar mengalahkan seribu. Ayat 66 meringankan: seratus mengalahkan dua ratus, karena Allah tahu ada kelemahan. Ali Imran 123 menyebut mereka lemah, dan tetap ditolong.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **12 dtk**
+- Visual: Siluet kecil di bawah langit fajar, cahaya hangat menyapu padang; 313 titik cahaya menyatu jadi bulan sabit. Outro card AUDIRA, Created by Agus Dwi R.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Rahasianya bukan rumus angka. Al-Baqarah ayat 249 menyebut, betapa banyak kelompok kecil mengalahkan kelompok besar dengan izin Allah. Kemenangan itu soal sabar, takwa, dan pertolongan-Nya. Ikuti AUDIRA untuk kisah berikutnya.
+
+## Opsi hook lain
+
+1. Pasukan Quraisy sekitar seribu, pasukan Nabi 313. Tapi angka 313 itu sendiri sudah punya cerita lama.
+2. Dua kuda, 70 unta, 313 orang. Itu seluruh pasukan Badar.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **198 kata** ≈ **82 dtk**

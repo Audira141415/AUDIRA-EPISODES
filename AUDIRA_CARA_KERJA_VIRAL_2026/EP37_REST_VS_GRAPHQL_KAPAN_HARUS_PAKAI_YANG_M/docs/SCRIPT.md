@@ -1,93 +1,69 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP37`)
+# Naskah — REST vs GraphQL: Kapan Harus Pakai yang Mana
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: dua pintu API berdampingan berlabel REST dan GraphQL, satu retak; HUD "6 bulan" (hook retoris)
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Pilih API yang salah, lalu enam bulan kemudian kamu menulis ulang semuanya. REST atau GraphQL, mana yang cocok?
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: diagram klien-server, tiap kotak data punya alamat URL sendiri; callout HUD "2000" dan "HTTP"
 
-> <konteks singkat + "Di Audira, ...">
+> Kita mulai dari REST. Konsepnya dirumuskan Roy Fielding dalam disertasinya tahun 2000. Setiap data punya alamat URL sendiri, dan kamu mengambilnya lewat HTTP biasa.
 
-## c02 — <Judul Bab 1>
+## c02 — Asal GraphQL
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: layar ponsel dengan blok feed disusun dari satu permintaan; callout "2012" lalu "2015"
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> GraphQL lahir di Facebook. Tahun 2012 mereka membangun ulang aplikasi mobile, dan butuh data News Feed yang pas dengan layar. Tahun 2015, GraphQL dibuka untuk umum.
 
-## c03 — <Judul Bab 2>
+## c03 — Beda bentuknya
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: kiri banyak jalur URL bercabang, kanan satu pintu tunggal bertuliskan /graphql; kartu query dan hasil dengan bentuk sama
 
-> <teks narasi>
+> Bedanya di bentuk. REST punya banyak alamat. GraphQL cuma satu pintu, biasanya di alamat slash graphql, dikirim lewat POST. Kamu sendiri menulis field yang diminta, hasilnya berbentuk persis seperti itu.
 
-## c04 — <Judul Bab 3>
+## c04 — Untung GraphQL
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: animasi tiga panah bolak-balik ke server menyusut jadi satu panah; ikon sinyal seluler
 
-> <teks narasi>
+> Untungnya apa? Facebook menulis bahwa REST bisa butuh beberapa kali bolak-balik untuk mengikuti relasi data, boros di jaringan seluler. GraphQL cukup satu permintaan.
 
-## c05 — <Judul Bab 4>
+## c05 — Harga yang dibayar
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **46** · estimasi **19 dtk**
+- Visual: kunci cache menempel di URL REST, lalu di sisi GraphQL kunci hilang dan muncul label id unik; meter poin; callout "5.000 poin/jam" dan "500.000 node"
 
-> <teks narasi>
+> Tapi ada harganya. Di REST, URL otomatis jadi kunci cache. Di GraphQL tidak ada URL seperti itu, jadi server harus menyediakan ID unik agar klien bisa membuat cache. Batas pemakaian juga berbeda. GitHub memberi 5.000 poin per jam untuk GraphQL, dan satu panggilan maksimal 500.000 node.
 
-## c06 — <Judul Bab 5>
+## c06 — Cara memilih
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: papan keputusan dua kolom: banyak klien dan data berelasi menunjuk GraphQL; API sederhana dan publik menunjuk REST; ikon skema tanpa nomor versi
 
-> <teks narasi>
+> Jadi pilih sesuai kebutuhan. Banyak klien dan data saling berkaitan? GraphQL masuk akal. API sederhana, publik, mudah di-cache? REST sudah cukup.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: timbangan REST dan GraphQL seimbang, lalu kartu outro AUDIRA
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Intinya, REST untuk kesederhanaan, GraphQL untuk fleksibilitas. Pilih dari kebutuhan, bukan dari tren. Ikuti AUDIRA untuk penjelasan teknologi berikutnya.
+
+## Opsi hook lain
+
+1. REST atau GraphQL? Salah pilih, kamu bayar mahal belakangan.
+2. Facebook bikin GraphQL karena REST tidak cukup untuk News Feed. Apakah proyekmu butuh itu juga?
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **207 kata** ≈ **86 dtk**

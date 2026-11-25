@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP20`)
+# Naskah — Bintang yang Kamu Lihat Malam Ini Mungkin Sudah Mati Ribuan Tahun Lalu
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Langit malam 9:16, satu bintang terang dizoom; garis cahaya panjang melengkung ke bumi dari bintang itu; HUD kecil: "cahaya tua".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Cahaya bintang yang kamu lihat malam ini berangkat jauh sebelum kamu lahir. Pengirimnya bisa saja sudah padam. Aku AUDIRA, ini penjelasannya.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Berkas cahaya melesat melewati penggaris tahun cahaya; callout HUD "299.792.458 m/s" dan "1 tahun cahaya ≈ 9,46 triliun km".
 
-> <konteks singkat + "Di Audira, ...">
+> Cahaya melaju hampir tiga ratus ribu kilometer per detik. Jarak yang ditempuhnya setahun disebut tahun cahaya, sekitar sembilan koma empat enam triliun kilometer.
 
-## c02 — <Judul Bab 1>
+## c02 — Bintang tetangga
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **20** · estimasi **9 dtk**
+- Visual: Model Matahari kecil, lalu Proxima Centauri di ujung garis jarak; HUD "4,25 tahun cahaya".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Bintang terdekat setelah Matahari, Proxima Centauri, berjarak empat koma dua lima tahun cahaya. Cahayanya sudah berumur lebih dari empat tahun.
 
-## c03 — <Judul Bab 2>
+## c03 — Betelgeuse
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Bintang merah raksasa Betelgeuse di konstelasi Orion; HUD "548 tahun cahaya" dan "membakar helium".
 
-> <teks narasi>
+> Betelgeuse, bintang merah di bahu Orion, sekitar lima ratus empat puluh delapan tahun cahaya jauhnya. Cahayanya berangkat sekitar abad lima belas. Sudah meledak? Perkiraan astronom: belum. Ia masih membakar helium.
 
-## c04 — <Judul Bab 3>
+## c04 — Bintang yang benar-benar meledak
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **36** · estimasi **15 dtk**
+- Visual: Ledakan supernova, lalu sisa gas Nebula Kepiting mengembang; garis waktu mundur; HUD "1054" dan "6.500 tahun cahaya".
 
-> <teks narasi>
+> Tapi ada kasus nyata. Tahun seribu lima puluh empat, astronom Tiongkok mencatat bintang tamu yang terlihat siang hari hampir sebulan. Itu supernova, kini sisa gasnya bernama Nebula Kepiting, enam ribu lima ratus tahun cahaya dari kita.
 
-## c05 — <Judul Bab 4>
+## c05 — Umur bintang
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Dua bilah umur: bintang besar pendek, bintang kecil panjang; perbandingan dengan pita "ribuan tahun" yang hampir tak terlihat; HUD "beberapa juta tahun" dan "triliunan tahun".
 
-> <teks narasi>
+> Jadi apakah banyak bintang yang kamu lihat sudah mati? Biasanya tidak. Bintang besar hidup beberapa juta tahun, bintang kecil triliunan tahun. Perjalanan cahaya ratusan sampai ribuan tahun masih singkat.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Foto lama dengan bingkai bintang; satelit Gaia memindai langit, titik-titik bintang diberi label tahun cahaya; HUD "Gaia (ESA)".
 
-> <teks narasi>
+> Menatap bintang itu seperti membuka foto lama. Makin jauh bintangnya, makin tua fotonya. Satelit Gaia milik badan antariksa Eropa mengukur jarak bintang dengan teliti.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Kamera mundur dari langit malam ke seorang anak siluet menatap bintang; kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Malam ini kamu sedang melihat masa lalu. Sebagian besar bintangnya masih ada, hanya cahayanya yang tua. Ikuti AUDIRA untuk sains yang lebih seru.
+
+## Opsi hook lain
+
+1. Kamu sedang menatap masa lalu. Cahaya bintang itu sudah menempuh perjalanan ratusan sampai ribuan tahun.
+2. Satu bintang di langit ini sudah meledak, tapi kamu baru melihat ledakannya sekarang.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **206 kata** ≈ **88 dtk**

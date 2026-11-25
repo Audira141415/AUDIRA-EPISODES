@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi`
+# Source Register — Cara Kerja Antibiotik dan Kenapa Bakteri Semakin Kebal
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | 2019: 4,95 juta kematian terkait AMR bakteri, 1,27 juta kematian langsung disebabkan AMR (95% UI 0,911–1,71 juta); lebih dari 1,5 juta kematian terkait resistansi berasal dari infeksi saluran napas bawah | Global burden of bacterial antimicrobial resistance in 2019: a systematic analysis, Antimicrobial Resistance Collaborators (Murray dkk.), The Lancet 399(10325):629–655, 2022 | https://pubmed.ncbi.nlm.nih.gov/35065702/ | 2026-11-25 | HIGH |
+| 2 | 1 dari 6 infeksi bakteri terkonfirmasi lab di dunia tahun 2023 resistan antibiotik; resistansi naik di lebih dari 40% kombinasi patogen-antibiotik 2018–2023; penyalahgunaan/pemakaian berlebih antibiotik pendorong utama; sedikit obat baru dalam pipa riset | Antimicrobial resistance (fact sheet), World Health Organization, diakses 2026 | https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance | 2026-11-25 | HIGH |
+| 3 | Fleming di kuliah Nobel 1945 memperingatkan: dosis kurang membuat mikroba resistan; mikroba bisa dilatih kebal di laboratorium dengan konsentrasi yang tidak mematikan | Penicillin (Nobel Lecture, 1945), Alexander Fleming, Nobel Prize in Physiology or Medicine 1945 | https://www.nobelprize.org/uploads/2018/06/fleming-lecture.pdf | 2026-11-25 | HIGH |
+| 4 | Dua strategi genetik bakteri melawan antibiotik: mutasi gen dan perolehan DNA asing lewat transfer gen horizontal (plasmid, transposon); pada bakteri gram-negatif resistansi β-laktam terutama lewat enzim β-laktamase, pada gram-positif lewat modifikasi target (protein pengikat penisilin) | Mechanisms of Antibiotic Resistance, Munita JM & Arias CA, Microbiology Spectrum 4(2), 2016 | https://pmc.ncbi.nlm.nih.gov/articles/PMC4888801/ | 2026-11-25 | HIGH |
+| 5 | Makalah Fleming 1929 melaporkan aksi antibakteri biakan jamur Penicillium (British Journal of Experimental Pathology 10:226–236; dicetak ulang Bull World Health Organ 2001) | On the antibacterial action of cultures of a penicillium, with special reference to their use in the isolation of B. influenzae, Fleming A, 1929 | https://pubmed.ncbi.nlm.nih.gov/11545337/ | 2026-11-25 | HIGH |
+| 6 | Sebagian besar antibiotik β-laktam (termasuk penisilin) bekerja dengan menghambat pembuatan dinding sel bakteri; penisilin pertama diisolasi dari Penicillium rubens | β-Lactam antibiotic, Wikipedia, diakses 2026 | https://en.wikipedia.org/wiki/Beta-lactam_antibiotic | 2026-11-25 | MEDIUM |
+| 7 | Fleming menemukan penisilin 1928; berbagi Nobel Fisiologi/Kedokteran 1945 dengan Howard Florey dan Ernst Chain | Alexander Fleming, Wikipedia, diakses 2026 | https://en.wikipedia.org/wiki/Alexander_Fleming | 2026-11-25 | MEDIUM |
+| 8 | Antibiotik aktif melawan bakteri; tidak efektif melawan virus atau jamur; dapat membunuh atau menghambat pertumbuhan bakteri | Antibiotic, Wikipedia, diakses 2026 | https://en.wikipedia.org/wiki/Antibiotic | 2026-11-25 | MEDIUM |

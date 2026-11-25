@@ -5,7 +5,11 @@ title: "Kenapa Google Gemini Belum Bisa Kalahkan ChatGPT"
 hook: "Google punya data terbanyak di dunia, tapi masih tertinggal di AI — kenapa?"
 styleCandidates: ["BROADCASTFORGE (2D)", "DATAPHYSICAL (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak
+risiko: "Angka pengguna berubah tiap kuartal, metrik MAU vs WAU tidak setara, premis 'data terbanyak' tidak terbukti; angka ChatGPT hanya Wikipedia (MEDIUM)."
 ---
 
 # Kenapa Google Gemini Belum Bisa Kalahkan ChatGPT

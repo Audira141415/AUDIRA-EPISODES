@@ -5,7 +5,11 @@ title: "Kota yang Tenggelam Setengah Meter per Tahun — dan Masih Dihuni"
 hook: "Jakarta bukan satu-satunya — ini kota-kota yang perlahan menghilang"
 styleCandidates: ["DISASTERSIM (3D)", "URBANFORGE (3D)", "SATELLITEBRIEFING (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul setengah meter per tahun melebihi angka terverifikasi (puncak 39,1 cm di Mexico City); pakai puncak lokal, bukan rata-rata kota"
 ---
 
 # Kota yang Tenggelam Setengah Meter per Tahun — dan Masih Dihuni

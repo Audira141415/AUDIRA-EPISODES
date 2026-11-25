@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris` (`EP46`)
+# Naskah — Fakta Tersembunyi di Balik 8 Balon Emas Messi
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **13** · estimasi **5 dtk**
+- Visual: Siluet 3D generik anak kecil di samping bayangan teman sebayanya yang lebih tinggi; HUD "usia 10" menyala.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Umur sepuluh tahun, badannya tak tumbuh normal. Masa depannya sebagai pemain bola terancam.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Peta Argentina ke Rosario; lapangan Newell's Old Boys versi generik tanpa logo; HUD "~500 gol".
 
-> <konteks singkat + "Di Audira, ...">
+> Anak itu Lionel Messi, dari Rosario, Argentina. Dokter mendiagnosisnya kekurangan hormon pertumbuhan. Padahal di Newell's Old Boys ia mencetak hampir lima ratus gol dalam enam tahun.
 
-## c02 — <Judul Bab 1>
+## c02 — Terapi dan Serbet
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Suntikan dan kalender terapi umur 11 sampai 14 (infografis); lalu serbet kertas bertulis tangan di atas meja kafe, HUD "14 Desember 2000".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Terapi dimulai umur sebelas, selesai umur empat belas. Di tengahnya, Barcelona menjajalnya umur tiga belas. Direkturnya, Carles Rexach, menulis kontrak di serbet kertas, empat belas Desember dua ribu.
 
-## c03 — <Judul Bab 2>
+## c03 — Delapan Trofi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Delapan trofi emas generik muncul satu per satu di rak 3D, tahun di bawah tiap trofi; HUD "2009 → 2023".
 
-> <teks narasi>
+> Balon Emas pertamanya datang tahun dua ribu sembilan, lalu empat kali berturut-turut. Keenam di tahun dua ribu sembilan belas, ketujuh dua ribu dua puluh satu.
 
-## c04 — <Judul Bab 3>
+## c04 — Dunia Berubah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Stadion Lusail generik malam hari, trofi Piala Dunia (replika generik) diangkat siluet; adu penalti 4–2.
 
-> <teks narasi>
+> Desember dua ribu dua puluh dua, di Lusail, Argentina juara Piala Dunia lewat adu penalti empat banding dua.
 
-## c05 — <Judul Bab 4>
+## c05 — Kemenangan Kedelapan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **35** · estimasi **15 dtk**
+- Visual: Panggung Paris generik; tiga bar poin tumbuh: 462, 357, 270, HUD "30 Oktober 2023".
 
-> <teks narasi>
+> Tiga puluh Oktober dua ribu dua puluh tiga, di Paris, ia menang untuk kedelapan kalinya. Poinnya empat ratus enam puluh dua. Erling Haaland dapat tiga ratus lima puluh tujuh, Kylian Mbappé dua ratus tujuh puluh.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Grafik batang: Messi 8 vs Cristiano Ronaldo 5 vs Cruyff/Platini/van Basten masing-masing 3; peta tiga klub berbeda.
 
-> <teks narasi>
+> Rekor ini jauh di depan. Cristiano Ronaldo punya lima. Johan Cruyff, Michel Platini, dan Marco van Basten masing-masing tiga. Messi juga satu-satunya yang menang bersama tiga klub berbeda.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Siluet anak kecil dari c00 berjalan ke rak delapan trofi; lalu kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Tinggi badannya cuma satu koma tujuh meter. Tapi dari tubuh yang dulu dikhawatirkan, lahir delapan Balon Emas. Ikuti AUDIRA untuk fakta olahraga lainnya.
+
+## Opsi hook lain
+
+1. Dokter bilang ia terlalu kecil untuk jadi pemain bola. Sekarang ia pegang delapan Balon Emas.
+2. Kontrak paling terkenal di sepak bola ditulis di atas serbet kertas.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **196 kata** ≈ **78–87 dtk**

@@ -1,33 +1,16 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Momen Paling Tragis dalam Sejarah Sepak Bola Dunia
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Estadio Nacional, Lima, 24 Mei 1964, Peru vs Argentina: jumlah resmi korban tewas 328 (bisa lebih; korban tembakan tak dihitung); gol Peru dianulir wasit memicu amarah penonton; gas air mata, kerumunan terjepit di pintu keluar | The Lima stadium disaster, BBC News Magazine, 2014 | https://www.bbc.co.uk/news/magazine-27540668 | 2026-11-25 | HIGH |
+| 2 | Laporan arsip hari berikutnya: 263 korban awal dilaporkan, tujuh hari berkabung nasional (angka awal lebih rendah dari angka resmi akhir) | Stadium disaster in Lima, Peru, 1964 (arsip), The Guardian, 2014 | https://www.theguardian.com/football/2014/may/26/stadium-disaster-lima-peru-1964-archive | 2026-11-25 | HIGH |
+| 3 | Heysel, Brussel, 29 Mei 1985, final Piala Champions Juventus vs Liverpool: 39 tewas, lebih dari 600 terluka; kerusuhan sebelum laga, tembok runtuh | Heysel stadium disaster: I saw the rows of bodies piled high, The Guardian, 2015 | https://www.theguardian.com/football/2015/may/27/heysel-stadium-disaster-30th-anniversary | 2026-11-25 | HIGH |
+| 4 | Heysel: 39 suporter tewas, ratusan terluka, tembok stadion runtuh saat desakan massa sebelum final Piala Eropa | Heysel film novel (BBC Merseyside), BBC News, 2011 | https://www.bbc.co.uk/news/uk-england-merseyside-13430935 | 2026-11-25 | HIGH |
+| 5 | Hillsborough Independent Panel menerbitkan laporan resminya 12 September 2012 (Parlemen Inggris, HC 581) | The report of the Hillsborough Independent Panel, GOV.UK, 2012 | https://www.gov.uk/government/publications/the-report-of-the-hillsborough-independent-panel | 2026-11-25 | HIGH |
+| 6 | Andrés Escobar tewas ditembak enam kali dini hari 2 Juli 1994 di parkiran kelab malam Medellín, setelah gol bunuh diri di Piala Dunia USA 94 | World Cup stunning moments: Andrés Escobar's deadly own goal, The Guardian, 2014 | https://www.theguardian.com/football/blog/2014/mar/25/world-cup-moments-andres-escobar-death | 2026-11-25 | HIGH |
+| 7 | Hillsborough, Sheffield, 15 April 1989, semifinal Piala FA Liverpool vs Nottingham Forest: 97 korban jiwa, 766 terluka; gerbang C dibuka sehingga kandang Leppings Lane kelewat penuh; Laporan Taylor 1990: penyebab utama kegagalan kendali massa polisi South Yorkshire; pagar tribun berdiri dihapus, stadion papan atas all-seater | Hillsborough disaster, Wikipedia (merujuk Taylor Report dan Panel), akses 2026 | https://en.wikipedia.org/wiki/Hillsborough_disaster | 2026-11-25 | MEDIUM |
+| 8 | Kanjuruhan, Malang, 1 Oktober 2022: Arema kalah dari Persebaya, sekitar 3.000 suporter turun ke lapangan, polisi tembakkan gas air mata, desak-desakan di pintu keluar; per 24 Oktober 2022: 135 tewas, 583 luka | Kanjuruhan Stadium disaster, Wikipedia, akses 2026 | https://en.wikipedia.org/wiki/Kanjuruhan_Stadium_disaster | 2026-11-25 | MEDIUM |
+| 9 | Angka korban Kanjuruhan awal berbeda: Polri 125 tewas dan 467 luka (4 Okt 2022), Posko Postmortem 133, Aremania memperkirakan di atas 200 | Empat versi jumlah korban tewas tragedi Kanjuruhan, CNN Indonesia, 2022 | https://www.cnnindonesia.com/nasional/20221004171448-20-856295/empat-versi-jumlah-korban-tewas-tragedi-kanjuruhan | 2026-11-25 | MEDIUM |
+| 10 | Andrés Escobar (13 Maret 1967 – 2 Juli 1994), bek tengah Kolombia dan Atlético Nacional; dibunuh setelah Piala Dunia 1994, dikaitkan dengan gol bunuh dirinya (motif dilaporkan, bukan putusan tunggal) | Andrés Escobar, Wikipedia, akses 2026 | https://en.wikipedia.org/wiki/Andr%C3%A9s_Escobar | 2026-11-25 | MEDIUM |

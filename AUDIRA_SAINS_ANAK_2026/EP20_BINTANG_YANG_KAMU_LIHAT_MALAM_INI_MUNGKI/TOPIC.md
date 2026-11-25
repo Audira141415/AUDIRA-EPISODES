@@ -5,7 +5,11 @@ title: "Bintang yang Kamu Lihat Malam Ini Mungkin Sudah Mati Ribuan Tahun Lalu"
 hook: "Cahaya bintang adalah pesan dari masa lalu — dan beberapa pengirimnya sudah lama tiada"
 styleCandidates: ["ABYSSFORGE (3D)", "WORLDFORGE (3D)", "SCALEFORGE (3D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul melebih-lebihkan (bintang kasat mata hampir semua masih hidup); dikoreksi di naskah, jarak Betelgeuse beda antar studi"
 ---
 
 # Bintang yang Kamu Lihat Malam Ini Mungkin Sudah Mati Ribuan Tahun Lalu

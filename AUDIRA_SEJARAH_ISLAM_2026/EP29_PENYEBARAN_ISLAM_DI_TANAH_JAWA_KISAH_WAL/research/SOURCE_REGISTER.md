@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sejarah peradaban Islam yang jarang diketahui`
+# Source Register — Penyebaran Islam di Tanah Jawa: Kisah Wali Songo yang Jarang Diceritakan
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Islam hadir di Jawa sebelum Wali Sanga; riset Wain menempatkan penetrasi Kubrawi-Hamadani di Jawa abad 14 sampai pertengahan abad 16 | "The Kubrawi and early Javanese Islam", Alexander Wain, Indonesia and the Malay World 49(143), 2021 (metadata dicek lewat Crossref) | https://doi.org/10.1080/13639811.2021.1875658 | 2026-11-25 | HIGH |
+| 2 | Nama Syekh Jumadil Kubra kemungkinan korupsi dari Najmuddin al-Kubra; melekat pada tokoh legendaris sebagai leluhur/guru para wali (tradisi legenda, bukan fakta biografis) | "Najmuddin al-Kubra, Jumadil Kubra and Jamaluddin al-Akbar; Traces of Kubrawiyya influence in early Indonesian islam", Martin van Bruinessen, BKI 150(2), 1994 (metadata dicek lewat Crossref) | https://doi.org/10.1163/22134379-90003084 | 2026-11-25 | HIGH |
+| 3 | Silsilah sufi dalam babad (mis. Sejarah Banten) berbeda dari garis keturunan biologis; Sunan Gunung Jati inisiat beberapa tarekat | "Shari'a court, tarekat and pesantren: Religious Institutions in the Banten Sultanate", Martin van Bruinessen, Archipel 50, 1995 (metadata dicek lewat Crossref; isi dirujuk lewat kutipan Wikipedia) | https://doi.org/10.3406/arch.1995.3069 | 2026-11-25 | HIGH |
+| 4 | Zheng He 1405 di Tuban: 1.000 keluarga Muslim Tionghoa; Gresik dan Surabaya sama; Ma Huan 1433: orang Arab dan Cina di pantai utara Jawa Muslim, pribumi mayoritas non-Muslim (Wikipedia merujuk Ma Huan, Ying-yai Sheng-lan, 1433, terj. Mills, CUP 2011, dan Kong Yuanzhi 2000) | "Wali Sanga" (kutipan Ma Huan; Kong Yuanzhi 2000), Wikipedia EN | https://en.wikipedia.org/wiki/Wali_Sanga | 2026-11-25 | MEDIUM |
+| 5 | Anggota: Malik Ibrahim (Sunan Gresik) tiba 1404, wafat 1419 di Gresik; Sunan Ampel 1401–1481, ayah Bonang dan Drajat, guru Raden Patah; Kalijaga memakai wayang kulit dan gamelan; Bonang dan Drajat menggubah lagu gamelan; Gunung Jati pendiri Kesultanan Cirebon, putranya Hasanudin sultan pertama Banten. Wiki menandai daftar ini bergantung pada segelintir sumber awal; pengaruh sulit dibuktikan secara kuantitatif | "Wali Sanga", Wikipedia EN (ada peringatan "needs expert attention") | https://en.wikipedia.org/wiki/Wali_Sanga | 2026-11-25 | MEDIUM |
+| 6 | Istilah "Wali Songo" (sembilan) baru ada di Babad Tanah Jawi (naskah jauh lebih muda); Kitab Walisana awal abad 16 menyebut delapan wali, "sana" = tempat/daerah; arkeologi-filologi: Islam di Jawa sejak abad 11 | "Walisongo", Wikipedia ID (merujuk Sunyoto 2012) | https://id.wikipedia.org/wiki/Walisongo | 2026-11-25 | MEDIUM |
+| 7 | Kalijaga: dakwah lewat seni (ukiran, wayang kulit, gamelan, tembang); kisah Babad Tanah Jawi bercampur legenda (perampok Said); dimakamkan di Kadilangu, Demak | "Sunan Kalijaga", Wikipedia EN | https://en.wikipedia.org/wiki/Sunan_Kalijaga | 2026-11-25 | MEDIUM |
+| 8 | Teori asal-usul Tionghoa Wali Sanga (Slamet Muljana 1968) kontroversial; bersumber rantai Parlindungan–Poortman yang tak teruji | "Walisongo", Wikipedia ID (merujuk Russell Jones, BSOAS 50(2), 1987) | https://id.wikipedia.org/wiki/Walisongo | 2026-11-25 | MEDIUM |

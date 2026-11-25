@@ -5,7 +5,11 @@ title: "Rahasia di Balik Perang Badar: 313 Melawan 1.000"
 hook: "Angka-angka yang tidak masuk akal itu ternyata menyimpan pesan yang sangat dalam"
 styleCandidates: ["CHRONICLE (2D)", "CINESTORY (2D)", "HISTORYMAP (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Makna angka 313 bersifat tafsir (bukan nash); sumber Ibn Hisham/Tabari belum diverifikasi langsung; wajib tanpa wajah Nabi/sahabat/malaikat"
 ---
 
 # Rahasia di Balik Perang Badar: 313 Melawan 1.000

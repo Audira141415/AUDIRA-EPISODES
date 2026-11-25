@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP14`)
+# Naskah — Cara Kerja Deepfake dan Kenapa Semakin Sulit Dideteksi
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **20** · estimasi **9 dtk**
+- Visual: Layar hitam, glitch: siluet kepala tanpa wajah (mannequin abstrak) terbentuk dari piksel dan noise; kamera kecil di sudut dicoret merah.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Video ini tidak pernah direkam kamera. Wajah dan suaranya dibuat mesin. Begini cara kerja deepfake, dan kenapa makin sulit dideteksi.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Papan forum anonim bergaya wireframe (tanpa logo), kalender bergulir ke akhir 2017, ikon topeng wajah dipindah antar siluet. HUD: 2017.
 
-> <konteks singkat + "Di Audira, ...">
+> Istilah deepfake lahir akhir 2017, dari satu pengguna Reddit bernama deepfakes. Dia menempelkan wajah selebriti ke video lain.
 
-## c02 — <Judul Bab 1>
+## c02 — Dua model saling berlomba (GAN)
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **32** · estimasi **14 dtk**
+- Visual: Dua robot abstrak berhadapan: satu mencetak lembar gambar, satu memegang kaca pembesar dan stempel asli/palsu; skor berpindah. HUD: 2014.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Mesin awalnya adalah GAN, diusulkan Ian Goodfellow dan kawan-kawan tahun 2014. Dua model saling berlomba. Satu membuat gambar palsu, satu lagi menebak asli atau palsu. Si pemalsu dilatih supaya tebakan lawannya meleset.
 
-## c03 — <Judul Bab 2>
+## c03 — Makin halus: StyleGAN dan model difusi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Slider atribut (pose, identitas) menggeser wajah sintetis abstrak; lalu noise statis jernih bertahap menjadi bentuk kepala. HUD: 2018, 2020.
 
-> <teks narasi>
+> Tahun 2018, StyleGAN memisahkan atribut seperti pose dan identitas, jadi kontrolnya makin halus. Tahun 2020 muncul model difusi. Gambar dibangun dari noise acak, dibersihkan langkah demi langkah, sampai kualitasnya menyaingi GAN.
 
-## c04 — <Judul Bab 3>
+## c04 — Detektor ikut belajar
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Pemindai grid melintasi bingkai video sintetis, kotak deteksi menyala hijau pada tepi wajah; timbangan manusia vs mesin. HUD: 2019.
 
-> <teks narasi>
+> Detektor juga belajar. FaceForensics plus plus, tahun 2019, menunjukkan detektor otomatis bisa mengungguli pengamat manusia. Tapi detektor hanya sebaik data latihnya.
 
-## c05 — <Judul Bab 4>
+## c05 — Tantangan deteksi terbuka
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **34** · estimasi **15 dtk**
+- Visual: Dinding ribuan klip kecil bergulir, kerumunan ikon tim, grafik batang skor mentok di tengah. HUD: 100.000 klip, 3.426 aktor, 2.114 tim, 0,73.
 
-> <teks narasi>
+> Tahun 2020, tantangan deteksi terbuka memakai seratus ribu klip dari 3.426 aktor bayaran. Ikut 2.114 tim. Pada video asli dari internet, model terbaik hanya mencapai ROC-AUC sekitar 0,73. Penulisnya menyebut deteksi masih belum terpecahkan.
 
-## c06 — <Judul Bab 5>
+## c06 — Kenyataan di media sosial
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **12 dtk**
+- Visual: Aliran umpan media sosial abstrak (tanpa logo) dengan klip bergaya acak; grafik AUC jatuh tajam. HUD: 2024, 50 persen.
 
-> <teks narasi>
+> Benchmark Deepfake-Eval-2024 mengumpulkan deepfake yang beredar di media sosial tahun 2024. Hasilnya, detektor sumber terbuka anjlok. AUC untuk model video turun sekitar 50 persen dibanding benchmark lama.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Meja analis: layar mosaik verifikasi, stempel Cek Sumber; outro card AUDIRA. HUD: Juni 2023.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> FBI pada Juni 2023 memperingatkan, foto dan video orang dipalsukan untuk pelecehan dan pemerasan. Jadi jangan percaya satu video saja. Cek sumbernya dulu. Ini AUDIRA.
+
+## Opsi hook lain
+
+1. Wajah itu nyata, kata-katanya nyata, tapi orangnya tidak pernah mengatakannya.
+2. Detektor deepfake terbaik gagal separuh saat diuji di dunia nyata.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **208 kata** ≈ **90 dtk**

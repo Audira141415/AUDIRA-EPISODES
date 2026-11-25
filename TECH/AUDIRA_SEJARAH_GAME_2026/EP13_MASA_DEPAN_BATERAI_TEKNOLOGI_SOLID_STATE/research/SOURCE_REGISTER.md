@@ -1,33 +1,17 @@
-# SOURCE_REGISTER — `Sejarah game yang viral dan jarang diketahui`
+# Source Register — Masa Depan Baterai: Teknologi Solid-State yang Mengubah EV
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Nissan menarget EV dengan baterai all-solid-state buatan sendiri paling lambat tahun fiskal 2028 | High-quality battery technology that dramatically boosts the performance of EVs, Nissan Global (halaman resmi) | https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ARCHIVE/ASSB/ | 2026-11-25 | HIGH |
+| 2 | Potensi kerapatan energi sekitar 2x baterai lithium-ion biasa, pengisian lebih singkat, biaya lebih rendah (berstatus potensi) | Nissan Global, halaman all-solid-state batteries | https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ARCHIVE/ASSB/ | 2026-11-25 | HIGH |
+| 3 | Tantangan praktis: material elektroda dan elektrolit padat harus tersebar merata dan antarmuka antar-padatan harus terjaga | Nissan Global, halaman all-solid-state batteries | https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ARCHIVE/ASSB/ | 2026-11-25 | HIGH |
+| 4 | Baterai solid-state dipandang sebagai teknologi penyimpan energi generasi berikut; masih ada tantangan komersialisasi | Challenges in speeding up solid-state battery development, Janek & Zeier, Nature Energy 8, 2023 | https://www.nature.com/articles/s41560-023-01208-9 | 2026-11-25 | HIGH |
+| 5 | Operasi andal baterai solid-state butuh antarmuka stabil antar komponen padat | Understanding interface stability in solid-state batteries, Xiao dkk., Nature Reviews Materials, 2020 | https://www.nature.com/articles/s41578-019-0157-5 | 2026-11-25 | HIGH |
+| 6 | Toyota (Okt 2023) mengklaim produksi 2028, jarak 1.200 km, pengisian 10 menit; kerja sama dengan Idemitsu Kosan (elektrolit sulfida), target produksi 2027 atau 2028 | What are solid-state batteries and why do we need them?, Matthew Sparkes, New Scientist, 24 Okt 2023 | https://www.newscientist.com/article/2398896-what-are-solid-state-batteries-and-why-do-we-need-them/ | 2026-11-25 | HIGH |
+| 7 | Tanpa elektrolit cair, baterai lebih kecil kemungkinan terbakar; elektrolit padat kurang rapat sehingga baterai bisa lebih kecil dan ringan; cara produksi murah belum ditemukan | New Scientist, Sparkes, 2023 (sama dengan #6) | https://www.newscientist.com/article/2398896-what-are-solid-state-batteries-and-why-do-we-need-them/ | 2026-11-25 | HIGH |
+| 8 | BloombergNEF memproyeksikan solid-state hanya 10% permintaan baterai EV dan penyimpanan global pada 2035; 83% kapasitas manufaktur solid-state (terencana/berjalan) ada di Tiongkok | All Current And Upcoming EVs With Solid-State Batteries, Suvrat Kothari, InsideEVs, 5 Jan 2026 (dengan pembaruan) | https://insideevs.com/news/771402/every-solid-state-battery-ev/ | 2026-11-25 | MEDIUM |
+| 9 | Semi-solid-state (gel) sudah dijual terbatas di Tiongkok (Nio, SAIC); klaim Donut Labs (400 Wh/kg, 100.000 siklus) menuai kritik karena belum ada bukti kimia | InsideEVs, Kothari, 2026 (sama dengan #8) | https://insideevs.com/news/771402/every-solid-state-battery-ev/ | 2026-11-25 | MEDIUM |
+| 10 | Hyundai menyatakan belum bisa komersialisasi sebelum 2030; BYD demo 2027, produksi massal setelah 2030 | InsideEVs, Kothari, 2026 (sama dengan #8) | https://insideevs.com/news/771402/every-solid-state-battery-ev/ | 2026-11-25 | MEDIUM |
+| 11 | Per 2026 pasar solid-state belum mencapai skala dan komersialisasi; Panasonic memamerkan prototipe all-solid-state yang diisi 10% ke 80% dalam 3 menit (Sep 2023); Toyota memegang 8.274 paten baterai padat 2020-2023 | Solid-state battery, Wikipedia (rujukan WIPO, Panasonic), diakses 2026-11-25 | https://en.wikipedia.org/wiki/Solid-state_battery | 2026-11-25 | MEDIUM |

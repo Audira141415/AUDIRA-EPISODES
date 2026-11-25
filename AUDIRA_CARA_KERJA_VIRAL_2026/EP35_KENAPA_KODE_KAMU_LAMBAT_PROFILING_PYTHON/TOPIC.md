@@ -5,7 +5,11 @@ title: "Kenapa Kode Kamu Lambat: Profiling Python dari Nol"
 hook: "Tanpa profiling kamu cuma nebak — dan nebak itu mahal"
 styleCandidates: ["DATAPHYSICAL (2D)", "PRECISION (2D)", "CIRCUITFORGE (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Fitur Tachyon/profiling baru di Python 3.15 (mudah basi per versi); kutipan Knuth dibaca via Wikipedia; visual harus tanpa logo Python/PSF."
 ---
 
 # Kenapa Kode Kamu Lambat: Profiling Python dari Nol

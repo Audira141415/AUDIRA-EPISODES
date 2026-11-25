@@ -1,33 +1,15 @@
-# SOURCE_REGISTER — `Sejarah peradaban Islam yang jarang diketahui`
+# Source Register — Rahasia di Balik Perang Badar: 313 Melawan 1.000
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | QS 3:123: Allah menolong kamu di Badar padahal kamu dalam keadaan lemah | Al-Qur'an terjemah Kemenag RI, via Quran.com API v4 (resource 33) | https://quran.com/3/123 | 2026-11-25 | HIGH |
+| 2 | QS 8:65-66: rasio 20 banding 200 / 100 banding 1.000, lalu diringankan 100 banding 200 dan 1.000 banding 2.000 karena ada kelemahan | Al-Qur'an terjemah Kemenag RI, via Quran.com API v4 | https://quran.com/8/65-66 | 2026-11-25 | HIGH |
+| 3 | QS 8:9: bala bantuan seribu malaikat berturut-turut; 8:7: tujuan awal menghadang salah satu dari dua golongan (kafilah atau pasukan); 8:43-44: jumlah musuh diperlihatkan sedikit | Al-Qur'an terjemah Kemenag RI, via Quran.com API v4 | https://quran.com/8/9 | 2026-11-25 | HIGH |
+| 4 | Sahih Bukhari no. 3957 (terjemah ID) / 3958 (EN): Al-Bara' bin Azib, jumlah pasukan Badar sama dengan pasukan Talut, sekitar 310 lebih. Derajat: sahih (Bukhari, perkataan sahabat yang disandarkan pada para sahabat Badar) | Sahih al-Bukhari, Kitab al-Maghazi, Imam al-Bukhari; Hadith API fawazahmed0 | https://github.com/fawazahmed0/hadith-api/tree/1/editions/eng-bukhari | 2026-11-25 | HIGH |
+| 5 | Sahih Muslim (Kitab al-Jihad wa as-Siyar; no. 4588 edisi USC-MSA/fawazahmed0): riwayat Umar bin Khattab, musuh 1.000 orang, sahabat 319 orang; Nabi berdoa menghadap kiblat hingga selendang jatuh, Abu Bakar memungutnya; turun QS 8:9. Derajat: sahih (Muslim) | Sahih Muslim, Imam Muslim; Hadith API fawazahmed0 | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-muslim.min.json | 2026-11-25 | HIGH |
+| 6 | Sahih Bukhari 3986 (EN): kaum Muslim menimpakan 140 korban pada musyrik di Badar, 70 ditawan dan 70 tewas (Al-Bara' bin Azib). Derajat: sahih | Sahih al-Bukhari, Kitab al-Maghazi, Imam al-Bukhari; Hadith API fawazahmed0 | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-bukhari/3986.json | 2026-11-25 | HIGH |
+| 7 | QS 2:249: kisah Talut menguji pasukan dengan sungai; "betapa banyak kelompok kecil mengalahkan kelompok besar dengan izin Allah" | Al-Qur'an terjemah Kemenag RI, via Quran.com API v4 | https://quran.com/2/249 | 2026-11-25 | HIGH |
+| 8 | Tanggal 17 Ramadan 2 H = 13 Maret 624 M; pasukan Muslim 313-317 (diterima umum 313): 82 Muhajirin, 61 Aus, 170 Khazraj; 2 kuda, 70 unta; kafilah Abu Sufyan dijaga 70 orang; Hubab bin Mundzir mengusulkan menguasai sumur terdekat; 14 Muslim gugur | Battle of Badr, Wikipedia (rujukan Ibn Ishaq, Waqidi, Watt, Lings), diakses 2026 | https://en.wikipedia.org/wiki/Battle_of_Badr | 2026-11-25 | MEDIUM |
+| 9 | Nabi memperkirakan musuh 900-1.000 dari jumlah unta yang disembelih per hari (9-10 ekor); riwayat jumlah Muslim 313/314/317/319; 70 tewas, 70 ditawan; 14 syahid (6 Muhajirin, 8 Anshar); pasukan Quraisy sekitar 1.000 (sebagian sumber 1.300) | غزوة بدر, Wikipedia Arab (rujukan Ibn Hisham, Tabari, Ibn Katsir), diakses 2026 | https://ar.wikipedia.org/wiki/غزوة_بدر | 2026-11-25 | MEDIUM |

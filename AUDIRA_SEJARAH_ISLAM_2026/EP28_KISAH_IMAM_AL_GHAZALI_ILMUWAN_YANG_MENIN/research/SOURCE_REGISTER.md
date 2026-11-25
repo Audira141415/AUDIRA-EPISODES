@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sejarah peradaban Islam yang jarang diketahui`
+# Source Register — Kisah Imam al-Ghazali: Ilmuwan yang Meninggalkan Segalanya di Puncak Karirnya
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Lidah "dikeringkan" sejak Rajab 488 H (Juli 1095), nyaris 6 bulan galau, sulit menelan makanan, dokter menyebut sumbernya hati; mengajar 300 murid di Baghdad; membagikan harta, menyisakan secukupnya untuk anak; berpura-pura berhaji padahal ke Syam; Damaskus hampir 2 tahun, Yerusalem; berangkat Dzulqa'dah 488 (Nov 1095); kembali ke Nishapur Dzulqa'dah 499 (Juli 1106) setelah 11 tahun menyendiri | Al-Munqidh min al-Dalal (Deliverance from Error), al-Ghazali; terj. W. Montgomery Watt, The Faith and Practice of al-Ghazali, 1953 | https://archive.org/details/AlMunqidhMinAldalalByImamGhazzaliInEnglish | 2026-11-25 | HIGH |
+| 2 | Lahir 1058/59 di Tus (hitungan usia dari karyanya: 1055/56); 1091 diangkat Nizam al-Mulk ke Nizamiyah Baghdad; 1095 meninggalkan jabatan; Damaskus, Yerusalem, Hebron (sumpah tak melayani penguasa); haji 1096; sekolah kecil + khanqah di Tus; 1106 mengajar lagi di Nishapur; wafat Desember 1111 di Tus | Al-Ghazali, Stanford Encyclopedia of Philosophy, Frank Griffel, 2024 (entri direvisi) | https://plato.stanford.edu/entries/al-ghazali/ | 2026-11-25 | HIGH |
+| 3 | Krisis spiritual-psikosomatik yang mencegahnya bicara dan mengajar; ±300 murid; meninggalkan jabatan dan keluarga 1095, sepuluh tahun mengembara (Damaskus, Yerusalem, Hebron, Mekkah, Madinah); wafat 1111 usia 55 di Tus; Ihya terdiri 40 kitab | Al-Ghazali, Internet Encyclopedia of Philosophy | https://iep.utm.edu/al-ghazali/ | 2026-11-25 | HIGH |
+| 4 | Ihya Ulum al-Din disebut karya terbesar al-Ghazali; terbagi empat bagian (ibadah, adat, hal yang membinasakan, hal yang menyelamatkan); tahun hidup 450-505 H / 1058-1111 | Ghazali, Abu Hamed Mohammad (entri Ihya), Encyclopaedia Iranica | https://iranicaonline.org/articles/gazali-abu-hamed-mohammad | 2026-11-25 | HIGH |
+| 5 | Tahafut al-Falasifa mengkritik dua puluh pandangan filsuf; Averroes membalas dengan Tahafut al-Tahafut | Al-Ghazali, Stanford Encyclopedia of Philosophy (bagian Incoherence), Frank Griffel | https://plato.stanford.edu/entries/al-ghazali/ | 2026-11-25 | HIGH |
+| 6 | Wafat 19 Desember 1111; tidak punya anak laki-laki (beberapa putri, per Abd al-Ghafir al-Farisi); undangan wazir Seljuk 1110 ke Baghdad ditolak | Al-Ghazali, Wikipedia (merujuk Abd al-Ghafir al-Farisi, Griffel, Watt) | https://en.wikipedia.org/wiki/Al-Ghazali | 2026-11-25 | MEDIUM |
+| 7 | Al-Qur'an 27:62 (dikutip Watt sebagai 27:63 pada penomoran lama): "Bukankah Dia yang memperkenankan doa orang yang dalam kesulitan..." | Quran.com API v4, verses/by_key/27:62 | https://api.quran.com/api/v4/verses/by_key/27:62 | 2026-11-25 | HIGH |
+| 8 | Ringkasan krisis 1095: kehilangan nafsu makan, pencernaan buruk, sulit berceramah; "lebih dari 10 tahun" menghilang | Al-Ghazali, Wikipedia | https://en.wikipedia.org/wiki/Al-Ghazali | 2026-11-25 | MEDIUM |

@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Cara kerja benda dan fenomena viral yang jarang diketahui`
+# Source Register — Docker Bukan Magic: Cara Kerja Container yang Sebenarnya
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Container = proses biasa dengan tampilan sistem sendiri; semua container berbagi kernel mesin; start ±1 detik; menghapus container menghapus yang ditulisnya | "What is a container?", Docker Docs (Michael Irwin), 2026 | https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/ | 2026-11-25 | HIGH |
+| 2 | Kernel Linux punya 8 tipe namespace (Cgroup, IPC, Network, Mount, PID, Time, User, UTS) | namespaces(7), Linux man-pages 6.19, 2026 | https://man7.org/linux/man-pages/man7/namespaces.7.html | 2026-11-25 | HIGH |
+| 3 | cgroups membatasi, menghitung, dan mengontrol sumber daya (CPU, memori) kelompok proses | cgroups(7), Linux man-pages, 2026 | https://man7.org/linux/man-pages/man7/cgroups.7.html | 2026-11-25 | HIGH |
+| 4 | Proses pertama di PID namespace baru mendapat PID 1; PID sama bisa ada di namespace berbeda | pid_namespaces(7), Linux man-pages, 2026 | https://man7.org/linux/man-pages/man7/pid_namespaces.7.html | 2026-11-25 | HIGH |
+| 5 | Layer image read-only (lowerdir), layer container writable (upperdir), digabung lewat OverlayFS (merged) | "OverlayFS storage driver", Docker Docs, 2026 | https://docs.docker.com/engine/storage/drivers/overlayfs-driver/ | 2026-11-25 | HIGH |
+| 6 | OCI diluncurkan 22 Juni 2015 oleh Docker, CoreOS, dan lainnya; Docker menyumbangkan runC; ada spesifikasi runtime, image, distribution | "About the Open Container Initiative", Linux Foundation, 2026 | https://opencontainers.org/about/overview/ | 2026-11-25 | MEDIUM |
+| 7 | `docker run` membuat satu set namespace dan control group; keamanan kernel jadi salah satu area utama keamanan Docker | "Docker Engine security", Docker Docs, 2025 | https://docs.docker.com/engine/security/ | 2026-11-25 | MEDIUM |

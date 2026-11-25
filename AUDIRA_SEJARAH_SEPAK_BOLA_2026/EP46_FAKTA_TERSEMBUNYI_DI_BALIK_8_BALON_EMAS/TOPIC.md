@@ -5,7 +5,11 @@ title: "Fakta Tersembunyi di Balik 8 Balon Emas Messi"
 hook: "Siapa sangka pria ini hampir pensiun di usia 25 karena masalah hormon"
 styleCandidates: ["CINESTORY (2D)", "CHARACTERFLOW (2D)", "FILM16 (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak
+risiko: "Hook awal (pensiun umur 25) salah; angka rekor Ballon d'Or bisa berubah; angka bersumber Wikipedia, kroscek FIFA/France Football."
 ---
 
 # Fakta Tersembunyi di Balik 8 Balon Emas Messi

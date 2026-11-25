@@ -5,7 +5,11 @@ title: "Kisah Imam al-Ghazali: Ilmuwan yang Meninggalkan Segalanya di Puncak Kar
 hook: "Saat namanya sudah dikenal seluruh dunia, ia tiba-tiba menghilang — ini alasannya"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "MANUSCRIPT (2D)", "CHRONICLE (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul/hook berlebihan (ia menyisakan harta dan kembali mengajar 1106; krisis berlangsung 6 bulan); motif sejarawan beda dengan versi al-Ghazali; tanpa wajah/hadis dinarasikan."
 ---
 
 # Kisah Imam al-Ghazali: Ilmuwan yang Meninggalkan Segalanya di Puncak Karirnya

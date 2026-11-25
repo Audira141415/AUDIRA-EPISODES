@@ -5,7 +5,11 @@ title: "Kenapa Kevin Sanjaya Tidak Pernah Terkalahkan di Usia Emas"
 hook: "Refleks 0,3 detik — lebih cepat dari kedipan mata manusia"
 styleCandidates: ["CHARACTERFLOW (2D)", "NEKAT (2D)", "DATAPHYSICAL (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Premis judul dan hook keliru (dikoreksi di VO); rekor 215 minggu dan pensiun baru bersumber Wikipedia."
 ---
 
 # Kenapa Kevin Sanjaya Tidak Pernah Terkalahkan di Usia Emas

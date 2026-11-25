@@ -1,93 +1,69 @@
-# SCRIPT — `Fakta sejarah unik negara-negara di dunia` (`EP71`)
+# Naskah — Kota yang Tenggelam Setengah Meter per Tahun — dan Masih Dihuni
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Kota Meksiko dari udara, peta satelit memerah di Iztapalapa; callout HUD 39,1 cm/tahun.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Tanah di bawah kota ini turun hampir empat puluh sentimeter dalam setahun. Dan jutaan orang masih tinggal di atasnya.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Diorama jalan kota, tanah bergeser turun, satelit melintas; HUD 39,1 cm/tahun dan 2014–2020.
 
-> <konteks singkat + "Di Audira, ...">
+> Kotanya Meksiko. Satelit mencatat penurunan tertinggi di Iztapalapa: tiga puluh sembilan koma satu sentimeter per tahun, antara dua ribu empat belas dan dua puluh.
 
-## c02 — <Judul Bab 1>
+## c02 — Kota yang Memadat
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Potongan tanah: lapisan lempung menyusut, tiang penanda menunjukkan 9 m; HUD 9 m.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Sejak awal abad kedua puluh, sebagian kota itu sudah amblas sampai sembilan meter. Penyebabnya bukan gempa. Tanahnya memadat, karena air tanahnya disedot terus.
 
-## c03 — <Judul Bab 2>
+## c03 — Bukan Satu Kota
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Pompa air dan sumur bor bergantian di banyak kota; infografis donat 80%.
 
-> <teks narasi>
+> Dan ini bukan masalah satu kota. Menurut satu perkiraan, delapan puluh persen kasus amblesan serius berkaitan dengan air tanah yang dipompa berlebihan.
 
-## c04 — <Judul Bab 3>
+## c04 — Jakarta
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Peta Jakarta, grafik batang laju amblesan, titik terparah menyala; HUD 1–15 cm, 28 cm.
 
-> <teks narasi>
+> Jakarta salah satunya. Survei 1982 sampai 2010 mencatat penurunan satu sampai lima belas sentimeter per tahun, dan di beberapa titik sampai dua puluh delapan.
 
-## c05 — <Judul Bab 4>
+## c05 — Pesisir dan Ibu Kota
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Garis pantai utara, air pasang naik di blok bangunan; peta bergeser ke Kalimantan Timur, label Nusantara.
 
-> <teks narasi>
+> Di Jakarta Utara, tanah yang turun bertemu air pasang, jadi banjir pesisir makin parah. Ini sering disebut alasan ibu kota pindah ke Nusantara.
 
-## c06 — <Judul Bab 5>
+## c06 — Bangkok Bisa Diperlambat
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Grafik garis menurun 1981 ke 2000-an, keran air tanah ditutup; HUD 120 mm lalu 10–30 mm.
 
-> <teks narasi>
+> Tapi amblesan bisa diperlambat. Bangkok amblas sampai dua belas sentimeter per tahun pada 1981. Setelah air tanahnya dibatasi, lajunya turun jadi sepuluh sampai tiga puluh milimeter per tahun.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **37** · estimasi **15 dtk**
+- Visual: Globe dengan 48 titik kota, Asia menyala; papan kota bertulisan AUDIRA, outro card.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Satelit memeriksa empat puluh delapan kota pesisir terbesar dunia. Penurunan tanah tercepatnya menumpuk di Asia. Jadi laut bukan satu-satunya pelaku. Sering kali, air tanah yang disedot dari bawah ikut menurunkan kotanya. Ikuti AUDIRA untuk fakta dunia berikutnya.
+
+## Opsi hook lain
+
+1. Kota ini amblas lebih cepat dari kuku tumbuh. Dan masih ada yang tinggal di atasnya.
+2. Air yang dipompa dari tanah perlahan menurunkan kotanya sendiri.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **200 kata** ≈ **83 dtk**

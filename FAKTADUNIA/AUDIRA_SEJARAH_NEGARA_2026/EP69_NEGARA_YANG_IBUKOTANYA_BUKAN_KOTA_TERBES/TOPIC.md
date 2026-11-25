@@ -5,7 +5,11 @@ title: "Negara yang Ibukotanya Bukan Kota Terbesar"
 hook: "Bukan Tokyo, bukan Sydney — tebak ibukota negara-negara ini"
 styleCandidates: ["HISTORYMAP (2D)", "NEGERI (3D)", "PAPERWORLD (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook awal salah (Tokyo adalah kota terbesar sekaligus ibukota Jepang); definisi ibukota Bolivia dan Afrika Selatan perlu bahasa hati-hati."
 ---
 
 # Negara yang Ibukotanya Bukan Kota Terbesar

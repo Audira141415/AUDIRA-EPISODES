@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP28`)
+# Naskah — Kisah Imam al-Ghazali: Ilmuwan yang Meninggalkan Segalanya di Puncak Karirnya
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Siluet dosen tanpa wajah berdiri di ruang kuliah Nizamiyah Baghdad bergaya manuskrip, bibir/kepala tertutup bayangan, gema kosong; HUD '1095' menghentak.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Baghdad, 1095. Dosen paling berpengaruh di zamannya masuk ruang kuliah, dan lidahnya menolak mengucap satu kata pun.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Peta Persia, penanda Tus (1058) lalu kubah Baghdad; kartu HUD '1091', '300 murid', siluet deretan murid duduk.
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya Abu Hamid al-Ghazali, lahir di Tus, Persia, sekitar 1058. Tahun 1091, wazir Nizam al-Mulk mengangkatnya profesor di Nizamiyah Baghdad. Ia mengaku mengajar tiga ratus murid. Dari luar, hidupnya sempurna.
 
-## c02 — <Judul Bab 1>
+## c02 — Gelisah di Puncak
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **34** · estimasi **15 dtk**
+- Visual: Siluet dosen duduk sendiri di bawah lampu minyak, tumpukan kitab; kalender hijriah bergerak ke 'Rajab 488 H / Juli 1095', garis timbangan jabatan vs akhirat.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tapi di dalam, ia gelisah. Ia curiga ilmunya tak mendekatkannya kepada Tuhan, dan niat mengajarnya lebih demi nama. Hampir enam bulan, sejak Rajab 488 Hijriah atau Juli 1095, ia terombang-ambing antara jabatan dan akhirat.
 
-## c03 — <Judul Bab 2>
+## c03 — Tubuh Menyerah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Tinta kaligrafi 'lidah' mengering menjadi retak, mangkuk makanan tak tersentuh, siluet tabib menggeleng, ikon hati berdenyut.
 
-> <teks narasi>
+> Lalu tubuhnya menyerah. Ia menulis, lidahnya seperti dikeringkan sampai tak bisa mengajar. Makanan nyaris tak tertelan. Dokter angkat tangan: sumber sakitnya ada di hati.
 
-## c04 — <Judul Bab 3>
+## c04 — Pergi Diam-diam
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **9 dtk**
+- Visual: Pintu gerbang Baghdad, kantong harta dibagikan, dua panah rute di peta: 'Mekkah' (pura-pura) memudar, 'Syam' menyala; HUD 'Nov 1095'.
 
-> <teks narasi>
+> November 1095, ia pergi. Hartanya dibagikan, hanya disisakan secukupnya untuk anak-anaknya. Katanya mau berhaji, padahal tujuannya Syam, supaya tak dicegah.
 
-## c05 — <Judul Bab 4>
+## c05 — Uzlah dan Pulang
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Montase: menara masjid Damaskus, Kubah Shakhrah Yerusalem, Hebron, kafilah ke Mekkah (HUD 1096), lalu sekolah kecil dan khanqah di Tus.
 
-> <teks narasi>
+> Hampir dua tahun ia menyendiri di Damaskus, lalu ke Yerusalem dan Hebron. Tahun 1096 ia berhaji, lalu pulang ke Tus dan mendirikan sekolah kecil serta khanqah.
 
-## c06 — <Judul Bab 5>
+## c06 — Ihya
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Manuskrip Ihya terbuka, empat kuadran bercahaya, hitungan '40 kitab' naik; hati bercahaya di tengah arabesque.
 
-> <teks narasi>
+> Dari pengalaman itu lahir kitab terbesarnya, Ihya Ulumuddin. Empat bagian, empat puluh kitab. Ia tidak membuang ilmu. Ia ingin ilmu itu menghidupkan hati.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Kafilah kembali ke gerbang Nishapur (HUD 1106), garis waktu uzlah 11 tahun, siluet di Tus, kaligrafi 'Desember 1111', kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Tahun 1106, sebelas tahun setelah pergi, ia kembali mengajar di Nishapur. Ia wafat di Tus, Desember 1111. Ia tidak pernah benar-benar menghilang, ia sedang mencari jawaban. Kisah ini hadir di AUDIRA.
+
+## Opsi hook lain
+
+1. Enam bulan ia tak sanggup menelan makanan, padahal ia dosen paling dihormati di Baghdad.
+2. Ia membagikan hartanya, lalu berbohong soal tujuan perjalanannya. Alasannya mengubah dunia Islam.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **205 kata** ≈ **88 dtk**

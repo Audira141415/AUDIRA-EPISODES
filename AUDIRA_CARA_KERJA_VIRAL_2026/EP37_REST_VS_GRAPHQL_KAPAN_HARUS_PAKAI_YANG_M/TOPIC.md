@@ -5,7 +5,11 @@ title: "REST vs GraphQL: Kapan Harus Pakai yang Mana"
 hook: "Pilih yang salah dan kamu refactor ulang 6 bulan kemudian"
 styleCandidates: ["CERDIK (2D)", "DATAPHYSICAL (2D)", "TACTICBOARD (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Hook enam bulan retoris tanpa sumber; angka batas GitHub bisa berubah, tulis per 2026-11-25"
 ---
 
 # REST vs GraphQL: Kapan Harus Pakai yang Mana

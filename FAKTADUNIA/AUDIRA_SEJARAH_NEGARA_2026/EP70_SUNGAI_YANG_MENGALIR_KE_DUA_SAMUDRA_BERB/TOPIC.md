@@ -5,7 +5,11 @@ title: "Sungai yang Mengalir ke Dua Samudra Berbeda"
 hook: "Ada titik di Amerika Selatan di mana setetes hujan bisa berakhir di dua lautan"
 styleCandidates: ["WORLDFORGE (3D)", "HISTORYMAP (2D)", "PAPERWORLD (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul tidak akurat (Casiquiare bukan dua samudra); sumber primer NPS/Britannica belum bisa diakses, bergantung Wikipedia"
 ---
 
 # Sungai yang Mengalir ke Dua Samudra Berbeda

@@ -5,7 +5,11 @@ title: "Momen Paling Tragis dalam Sejarah Sepak Bola Dunia"
 hook: "Air mata jutaan penonton ketika gol bunuh diri membawa maut"
 styleCandidates: ["CINESTORY (2D)", "COMICFORGE (2D)", "FILM16 (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Topik sensitif (korban nyata); angka Kanjuruhan dan motif Escobar perlu verifikasi primer saat tahap 4."
 ---
 
 # Momen Paling Tragis dalam Sejarah Sepak Bola Dunia

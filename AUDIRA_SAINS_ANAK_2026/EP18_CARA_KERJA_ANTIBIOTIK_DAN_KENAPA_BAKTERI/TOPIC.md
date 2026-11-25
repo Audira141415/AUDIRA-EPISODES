@@ -5,7 +5,11 @@ title: "Cara Kerja Antibiotik dan Kenapa Bakteri Semakin Kebal"
 hook: "Perang evolusioner antara manusia dan bakteri yang manusia mulai kalah"
 styleCandidates: ["NANOFORGE (3D)", "CHAINREACTION (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook \"manusia mulai kalah\" berlebihan dan \"kebal\" harus jelas milik bakteri; angka AMR Lancet 2019 dan WHO 2023 bisa diperbarui; tanpa wajah Fleming."
 ---
 
 # Cara Kerja Antibiotik dan Kenapa Bakteri Semakin Kebal

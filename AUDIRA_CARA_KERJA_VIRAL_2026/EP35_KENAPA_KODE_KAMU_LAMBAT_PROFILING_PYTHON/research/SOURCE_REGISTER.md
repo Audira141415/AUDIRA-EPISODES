@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Cara kerja benda dan fenomena viral yang jarang diketahui`
+# Source Register — Kenapa Kode Kamu Lambat: Profiling Python dari Nol
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Python 3.15 menambah paket `profiling` dengan dua submodul: `profiling.sampling` (statistik) dan `profiling.tracing` (deterministik); sampling direkomendasikan untuk kebanyakan analisis | "profiling — Python profilers", Python Software Foundation, dokumentasi 3.15 | https://docs.python.org/3/library/profiling.html | 2026-11-25 | HIGH |
+| 2 | `profiling.sampling` bernama Tachyon; mengambil sampel tumpukan panggilan berkala dari luar proses, bisa menempel ke proses berjalan tanpa ubah kode/restart, overhead hampir nol; di 10 kHz selama 10 detik, fungsi 5% punya margin galat sekitar ±0,5% | "profiling.sampling — Statistical profiler", Python Software Foundation, dokumentasi 3.15 | https://docs.python.org/3/library/profiling.sampling.html | 2026-11-25 | HIGH |
+| 3 | Profiling deterministik memantau semua event panggil, kembali, dan exception; modul `profile` murni-Python dideprekasi sejak 3.15 (dihapus di 3.17); `cProfile` tetap sebagai alias kompatibel `profiling.tracing`; overhead lebih tinggi dibanding sampling | "profile and profiling.tracing", Python Software Foundation, dokumentasi 3.15 | https://docs.python.org/3/library/profile.html | 2026-11-25 | HIGH |
+| 4 | `timeit.repeat` default repeat=5 (sebelumnya 3, berubah di 3.7); `timeit()` mematikan garbage collection sementara secara bawaan; contoh keluaran "best of 5" | "timeit — Measure execution time of small code snippets", Python Software Foundation, dokumentasi 3.15 | https://docs.python.org/3/library/timeit.html | 2026-11-25 | HIGH |
+| 5 | Modul `tracemalloc` melacak alokasi memori dan menampilkan traceback blok memori serta ukuran saat ini/puncak | "tracemalloc — Trace memory allocations", Python Software Foundation, dokumentasi 3.15 | https://docs.python.org/3/library/tracemalloc.html | 2026-11-25 | HIGH |
+| 6 | py-spy: profiler sampling untuk program Python, ditulis dengan Rust, berjalan di luar proses, bisa melihat program tanpa restart/ubah kode, membuat flame graph (`py-spy record`), perintah `record`, `top`, `dump` | README py-spy, Ben Frederickson (benfred), repositori resmi | https://github.com/benfred/py-spy | 2026-11-25 | MEDIUM |
+| 7 | Scalene: profiler CPU, GPU, dan memori; profiling tingkat baris dan fungsi; melacak penggunaan memori dan mendeteksi dugaan kebocoran memori | README Scalene, plasma-umass (UMass Amherst), repositori resmi | https://github.com/plasma-umass/scalene | 2026-11-25 | MEDIUM |
+| 8 | Kutipan Knuth: lupakan efisiensi kecil sekitar 97% waktu, premature optimization akar segala kejahatan, tapi jangan lewatkan 3% yang kritis; sumber asli Knuth, "Structured Programming with go to Statements", ACM Computing Surveys 6(4), Desember 1974, hlm. 268, doi 10.1145/356635.356640 (kutipan dibaca lewat artikel Wikipedia, makalah asli tidak dibuka) | "Program optimization", Wikipedia, mengutip Knuth 1974 | https://en.wikipedia.org/wiki/Program_optimization | 2026-11-25 | MEDIUM |

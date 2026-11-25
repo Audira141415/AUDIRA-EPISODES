@@ -5,7 +5,11 @@ title: "Penyebaran Islam di Tanah Jawa: Kisah Wali Songo yang Jarang Diceritakan
 hook: "Bagaimana 9 orang mengubah seluruh budaya Jawa tanpa pedang dan tanpa paksaan?"
 styleCandidates: ["WAYANGFORGE (2D)", "BATIKFORGE (2D)", "NEGERI (3D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook asli terlalu pasti (tanpa paksaan, sembilan wali); asal-usul etnis sensitif; sebagian kisah wali legenda, wajib tanpa wajah."
 ---
 
 # Penyebaran Islam di Tanah Jawa: Kisah Wali Songo yang Jarang Diceritakan

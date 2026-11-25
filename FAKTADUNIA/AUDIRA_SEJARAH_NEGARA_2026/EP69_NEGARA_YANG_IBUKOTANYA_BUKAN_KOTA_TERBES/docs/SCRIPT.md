@@ -1,93 +1,69 @@
-# SCRIPT — `Fakta sejarah unik negara-negara di dunia` (`EP69`)
+# Naskah — Negara yang Ibukotanya Bukan Kota Terbesar
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **14** · estimasi **6 dtk**
+- Visual: Peta dunia gelap; Sydney dan São Paulo menyala merah lalu dicoret. Callout HUD: "Sydney ≠ ibukota", "São Paulo ≠ ibukota".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Ibukota Australia bukan Sydney. Ibukota Brasil bukan São Paulo. Dan itu bukan salah ketik.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Zoom out ke globe, deretan pin kota besar dan pin kota kecil berpasangan. Teks kinetik: "Kota terbesar ≠ ibukota".
 
-> <konteks singkat + "Di Audira, ...">
+> Banyak negara sengaja menaruh ibukotanya di luar kota terbesar. Alasannya: kompromi politik, atau rencana tata kota. Di AUDIRA kali ini, kita lihat polanya.
 
-## c02 — <Judul Bab 1>
+## c02 — Canberra
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Peta tenggara Australia, Sydney dan Melbourne saling tarik, garis radius 160 km, lalu kota Canberra tumbuh di antaranya. Callout HUD: "160 km", "12 Maret 1913".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Sydney dan Melbourne dulu berebut jadi ibukota. Jalan tengahnya: bangun kota baru, minimal 160 kilometer dari Sydney. Namanya, Canberra, diumumkan 12 Maret 1913.
 
-## c03 — <Judul Bab 2>
+## c03 — Brasília
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **12 dtk**
+- Visual: Dataran tinggi kosong berubah menjadi denah kota berbentuk burung terbang, lalu gedung modernis muncul. Callout HUD: "21 April 1960", "UNESCO 1987".
 
-> <teks narasi>
+> Brasil melangkah lebih jauh. Brasília diresmikan 21 April 1960, menggantikan Rio de Janeiro. Lucio Costa dan Oscar Niemeyer merancangnya di dataran tinggi tengah negara. UNESCO menjadikannya warisan dunia tahun 1987.
 
-## c04 — <Judul Bab 3>
+## c04 — Ottawa dan Washington
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **13 dtk**
+- Visual: Peta Amerika Utara; surat bersegel kerajaan terbang ke Ottawa, lalu garis sungai Potomac dengan lencana tanggal. Callout HUD: "31 Des 1857", "16 Juli 1790".
 
-> <teks narasi>
+> Kanada punya cerita lain. Ratu Victoria memilih Ottawa, berlaku 31 Desember 1857. Kini Ottawa cuma kota terbesar keempat Kanada. Amerika serupa: Residence Act, 16 Juli 1790, menetapkan ibukota di tepi Sungai Potomac.
 
-## c05 — <Judul Bab 4>
+## c05 — Negara dengan ibukota ganda
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Peta Afrika Selatan terbelah tiga pin: Pretoria, Cape Town, Bloemfontein; lalu pindah ke Bolivia: La Paz dan Sucre. Callout HUD: "3 ibukota", "Pasal 6".
 
-> <teks narasi>
+> Ada yang lebih rumit. Afrika Selatan punya tiga ibukota: Pretoria, Cape Town, dan Bloemfontein. Konstitusi Bolivia menyebut Sucre ibukota, tapi pemerintahannya duduk di La Paz.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Tiga adegan kota baru berurutan: Abuja, Dodoma, Naypyidaw; panah dari kota lama ke kota baru. Callout HUD: "1991", "1996", "2005".
 
-> <teks narasi>
+> Pola ini terus berulang. Abuja menggantikan Lagos pada 12 Desember 1991. Dodoma resmi jadi ibukota Tanzania tahun 1996. Naypyidaw menggantikan Yangon sebagai pusat pemerintahan Myanmar pada 6 November 2005.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Globe kembali, semua pin ibukota menyala berbeda dari pin kota terbesar; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi ibukota sering bukan soal siapa paling ramai. Ia soal kompromi dan rencana. Menurutmu, ibukota mana yang paling mengejutkan?
+
+## Opsi hook lain
+
+1. Kamu pasti kira ibukota Australia itu Sydney. Salah.
+2. Bolivia punya dua ibukota. Afrika Selatan punya tiga.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **195 kata** ≈ **81 dtk**

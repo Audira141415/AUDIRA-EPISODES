@@ -5,7 +5,11 @@ title: "Fenomena Deja Vu: Otak Glitch atau Sesuatu yang Lebih Dalam"
 hook: "Neurosains akhirnya punya jawaban untuk pengalaman aneh yang hampir semua orang pernah rasakan"
 styleCandidates: ["ANATOMIX (3D)", "INNERWORKS (3D)", "BEDAH (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook asli \"neurosains punya jawaban\" berlebihan: belum ada konsensus; hindari klaim medis"
 ---
 
 # Fenomena Deja Vu: Otak Glitch atau Sesuatu yang Lebih Dalam

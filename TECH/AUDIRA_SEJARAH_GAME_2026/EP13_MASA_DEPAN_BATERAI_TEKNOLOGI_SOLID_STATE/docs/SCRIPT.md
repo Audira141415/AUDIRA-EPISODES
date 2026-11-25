@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP13`)
+# Naskah — Masa Depan Baterai: Teknologi Solid-State yang Mengubah EV
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **16** · estimasi **7 dtk**
+- Visual: Sel baterai lithium-ion dibelah; cairan elektrolit biru menguap lalu digantikan blok padat keramik. Callout "10 menit".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Baterai yang jauh lebih sulit terbakar, dan terisi dalam sepuluh menit. Kenapa belum ada di mobilmu?
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Penampang sel: anoda, elektrolit cair, katoda; ion lithium bergerak. Lalu cairan diganti lapisan padat. Teks "AUDIRA".
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya baterai solid-state. Baterai sekarang berisi cairan, tempat ion lithium berpindah. Di sini cairan diganti bahan padat, seperti keramik. AUDIRA bedah untungnya, dan alasan kenapa tertunda.
 
-## c02 — <Judul Bab 1>
+## c02 — Keuntungan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Dua tumpukan sel berdampingan, satu besar satu ramping; ikon api mengecil. Callout "±2x".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tanpa cairan, risiko terbakar lebih kecil. Bahan padat juga lebih ringkas. Nissan menyebut energinya berpotensi dua kali lipat per ukuran. Mobil bisa lebih ringan, atau melaju lebih jauh.
 
-## c03 — <Judul Bab 2>
+## c03 — Janji pabrikan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Peta jalan jarak 1.200 km, mobil di jalan, kalender 2027–2028, papan target Nissan FY2028.
 
-> <teks narasi>
+> Toyota mengklaim jarak seribu dua ratus kilometer, dengan pengisian sepuluh menit. Targetnya produksi tahun 2027 sampai 2028, bersama Idemitsu. Nissan membidik tahun fiskal 2028.
 
-## c04 — <Judul Bab 3>
+## c04 — Masalah utama
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Close-up dua lempeng padat yang tidak menempel rapat, celah dan retak; ban berjalan pabrik dengan sel cacat disingkirkan.
 
-> <teks narasi>
+> Masalahnya ada di sambungan antar bahan padat. Dua padatan susah menempel rapat, dan bisa rusak saat dipakai. Bikin satu sel di lab itu mudah. Bikin jutaan tanpa cacat, itu yang mahal.
 
-## c05 — <Judul Bab 4>
+## c05 — Kenyataan pasar
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Peta dunia, wilayah Asia Timur menyala dengan callout "83%"; grafik batang menuju "10% di 2035".
 
-> <teks narasi>
+> Sementara itu, versi semi-padat berisi gel sudah dijual terbatas di Tiongkok. Negara itu memegang delapan puluh tiga persen kapasitas solid-state terencana, menurut BloombergNEF. Tahun 2035, solid-state diproyeksikan baru sepuluh persen pasar.
 
-## c06 — <Judul Bab 5>
+## c06 — Hati-hati klaim
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Layar uji dengan tanda tanya besar di atas angka klaim, centang "bukti" kosong; grafik siklus pengisian.
 
-> <teks narasi>
+> Hati-hati klaim. Ada startup mengaku baterainya tahan seratus ribu siklus, tapi industri menuntut bukti kimianya, dan belum ada. Ujian sebenarnya: tahan lama di mobil sungguhan, berharga masuk akal.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Mobil listrik melaju di jalan saat matahari terbit, pack baterai transparan; lalu kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi solid-state bukan sulap. Ini perlombaan yang garis finisnya sekitar 2030-an. Kalau berhasil, mobil listrik lebih aman, ringan, dan cepat diisi. Ikuti terus bersama AUDIRA.
+
+## Opsi hook lain
+
+1. Satu cairan di dalam baterai kamu adalah sumber kebakaran. Para insinyur ingin membuangnya.
+2. Toyota janji 1.200 kilometer dengan isi sepuluh menit. Bisa dipercaya?
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **209 kata** ≈ **87 dtk**

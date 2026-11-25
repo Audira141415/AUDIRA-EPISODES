@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP18`)
+# Naskah — Cara Kerja Antibiotik dan Kenapa Bakteri Semakin Kebal
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Layar gelap, bakteri 3D membesar; HUD "1,27 juta" muncul di samping bakteri yang menolak tetesan obat.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Tahun 2019, kuman yang kebal obat menewaskan 1,27 juta orang. Obatnya ada, tapi kumannya sudah tahu cara selamat. Ini cerita AUDIRA tentang perang yang tidak terlihat.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: Kapsul antibiotik di samping bola bakteri dan bola virus; bakteri bergetar, virus tetap tenang. Label "bakteri" dan "virus".
 
-> <konteks singkat + "Di Audira, ...">
+> Antibiotik itu obat khusus bakteri. Bukan untuk virus, jadi flu tidak sembuh karenanya. Dia membunuh bakteri atau menghentikan mereka berkembang.
 
-## c02 — <Judul Bab 1>
+## c02 — Penisilin
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Cawan petri dengan koloni jamur hijau di tengah, bakteri menjauh membentuk lingkaran bening; callout "1928", siluet ilmuwan bertopi laboratorium tanpa wajah.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tahun 1928, Alexander Fleming menemukan jamur Penicillium yang menghambat bakteri di cawan biakannya. Dari jamur itulah lahir penisilin, antibiotik pertama. Tujuh belas tahun kemudian, dia mendapat Nobel.
 
-## c03 — <Judul Bab 2>
+## c03 — Cara Kerja
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Penampang dinding sel bakteri seperti tembok bata; molekul penisilin masuk ke sela bata, bata berhenti terpasang, dinding retak, bakteri pecah.
 
-> <teks narasi>
+> Cara kerjanya begini. Bakteri membangun dinding sel seperti menyusun bata. Penisilin dan obat sejenisnya menghalangi pembuatan dinding itu. Dinding bolong, bakteri pun rapuh dan mati.
 
-## c04 — <Judul Bab 3>
+## c04 — Bakteri Selamat
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Ribuan bakteri berwarna biru; satu bakteri berwarna oranye (mutan) tetap utuh saat tetesan obat menyapu semua yang biru; si oranye membelah jadi banyak.
 
-> <teks narasi>
+> Masalahnya, di antara jutaan bakteri, selalu ada yang kebetulan bermutasi dan tahan obat. Yang lemah mati. Yang tahan beranak pinak. Itu seleksi alam.
 
-## c05 — <Judul Bab 4>
+## c05 — Berbagi Gen
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Dua bakteri saling menyambung jembatan kecil; lingkaran DNA kecil berlabel "plasmid" berpindah; bakteri penerima berubah warna jadi oranye; enzim bergunting memotong molekul obat.
 
-> <teks narasi>
+> Lebih licik lagi, bakteri bisa menukar gen kebal lewat lingkaran DNA kecil bernama plasmid. Ada yang membuat enzim pemotong obat. Satu bakteri kebal bisa menularkannya ke yang lain.
 
-## c06 — <Judul Bab 5>
+## c06 — Penyebab dan Data
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Grafik kotak: 1 dari 6 kotak bakteri menyala merah; callout "2023" dan "40%"; lalu botol obat setengah isi dengan tanda tanya.
 
-> <teks narasi>
+> WHO mencatat, tahun 2023 satu dari enam infeksi bakteri yang dites di laboratorium sudah kebal antibiotik. Pemakaian salah mempercepatnya. Fleming sudah memperingatkan sejak 1945: dosis kurang justru melatih kuman.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Bakteri oranye terjepit di antara tameng "resep dokter" dan "cuci tangan"; lalu kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi yang kebal bukan kita, tapi bakterinya. Obat baru masih sedikit. Pakai antibiotik hanya dengan resep dokter, dan cuci tangan. Ikuti AUDIRA untuk sains berikutnya.
+
+## Opsi hook lain
+
+1. Obat yang menyelamatkan jutaan nyawa kini dilawan oleh makhluk yang bahkan tidak punya otak.
+2. Satu bakteri oranye selamat dari obat. Beberapa jam kemudian, jutaan lagi seperti dia.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **203 kata** ≈ **86 dtk**

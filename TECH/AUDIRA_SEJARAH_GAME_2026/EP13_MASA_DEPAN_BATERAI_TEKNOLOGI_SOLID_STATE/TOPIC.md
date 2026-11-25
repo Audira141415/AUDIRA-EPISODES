@@ -5,7 +5,11 @@ title: "Masa Depan Baterai: Teknologi Solid-State yang Mengubah EV"
 hook: "Baterai yang tidak bisa terbakar dan tahan 2x lebih lama — sudah sedekat ini"
 styleCandidates: ["INNERWORKS (3D)", "NANOFORGE (3D)", "PRECISION (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak
+risiko: "Klaim Toyota/Nissan masih target perusahaan dan jadwal bisa meleset; hook awal 'tidak bisa terbakar' berlebihan; hindari logo/wajah nyata (channel TECH)."
 ---
 
 # Masa Depan Baterai: Teknologi Solid-State yang Mengubah EV

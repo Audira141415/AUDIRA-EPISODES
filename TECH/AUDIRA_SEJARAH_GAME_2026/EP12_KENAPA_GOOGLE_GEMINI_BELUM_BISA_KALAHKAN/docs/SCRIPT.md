@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP12`)
+# Naskah — Kenapa Google Gemini Belum Bisa Kalahkan ChatGPT
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: dua bilah besar naik tanpa logo: bilah panjang berlabel "ChatGPT 51%", bilah lebih pendek "Gemini 29%"; HUD angka 51 dan 29 menghentak.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Google punya mesin pencari terbesar di dunia. Tapi di chatbot AI, ChatGPT masih memimpin: sekitar lima puluh satu persen, Gemini dua puluh sembilan persen.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: zoom keluar dari bilah ke peta dunia abstrak berisi titik-titik pengguna; teks "Per Oktober 2026".
 
-> <konteks singkat + "Di Audira, ...">
+> Ini bukan cerita Google kalah telak. Di AUDIRA kali ini kita lihat kenapa jaraknya masih ada, dan seberapa cepat jarak itu menyempit. Data per Oktober 2026.
 
-## c02 — <Judul Bab 1>
+## c02 — Awal yang goyah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: panggung demo abstrak, panah grafik saham turun; callout "-8%" dan "Feb 2023".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Mulai dari Februari 2023. Google mengumumkan Bard, demonya mengecewakan, dan saham turun delapan persen. Sekitar seratus miliar dolar nilai pasar hilang.
 
-## c03 — <Judul Bab 2>
+## c03 — ChatGPT sudah melesat
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: grafik garis naik tajam; callout "100 juta" dan "900 juta mingguan".
 
-> <teks narasi>
+> Sementara itu ChatGPT sudah jauh di depan. Dua bulan setelah rilis, penggunanya seratus juta. Februari 2026, sembilan ratus juta pengguna tiap minggu.
 
-## c04 — <Judul Bab 3>
+## c04 — Gemini mengejar
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: tiga anak tangga angka naik di garis waktu: 650 juta, 750 juta, 950 juta, tiap angka menghentak.
 
-> <teks narasi>
+> Google mengejar lewat Gemini. November 2025, aplikasinya enam ratus lima puluh juta pengguna bulanan. Februari 2026, tujuh ratus lima puluh juta. Juli 2026, sembilan ratus lima puluh juta.
 
-## c05 — <Judul Bab 4>
+## c05 — Satu miliar
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: counter berputar sampai 1 miliar, ledakan partikel cahaya, teks "28 Okt 2026".
 
-> <teks narasi>
+> Dan akhir Oktober 2026, Google menyebut aplikasi Gemini mencapai satu miliar pengguna. Produk dengan pertumbuhan tercepat dalam sejarah Google.
 
-## c06 — <Judul Bab 5>
+## c06 — Jangan salah banding
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: dua timbangan beda satuan, "bulanan" vs "mingguan", tanda sama dengan dicoret.
 
-> <teks narasi>
+> Tapi hati-hati. Google menghitung pengguna bulanan, OpenAI melaporkan pengguna mingguan. Ukurannya berbeda, jadi tidak bisa langsung diadu. Angka pangsa pasar tadi pun hanya mengukur lalu lintas web.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **35** · estimasi **15 dtk**
+- Visual: kota data abstrak, server menyala; callout "103%" dan "32 miliar token per menit"; kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Di balik layar, Google justru melesat. Cloud tumbuh seratus tiga persen, dan model Google memproses hampir tiga puluh dua miliar token per menit. Jadi Google belum menang di obrolan, tapi jaraknya makin tipis. Ikuti AUDIRA.
+
+## Opsi hook lain
+
+1. Satu miliar pengguna, tapi masih nomor dua. Gemini kenapa?
+2. Satu demo bikin saham Google turun delapan persen. Tiga tahun kemudian, apa yang berubah?
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **202 kata** ≈ **84 dtk**
