@@ -2,15 +2,13 @@
 
 | Chapter | Kebutuhan visual | Kandidat aset (id/type) | Catatan |
 |---|---|---|---|
-| c00_hook | Siluet kota berkubah terbakar, peta Iberia | belum ada GLB cocok | Katalog GLB tidak punya arsitektur Islam; pakai ilustrasi 2D berlapis (BG/MG/FG) |
-| c01_intro | Peta Iberia + garis waktu 711–1492 | tidak perlu GLB | Peta vektor 2D, wilayah menyusut |
-| c02 | Pantai Gibraltar, pasukan siluet, hutan tiang lengkung merah-putih | tidak ada | Ilustrasi 2D; tiang dan lengkung dibuat vektor |
-| c03 | Panorama menara masjid, istana berteras | castle-gatehouse-4ed5c6 / building (kit medieval-japan, gaya salah) | Tidak direkomendasikan; ilustrasi 2D lebih akurat |
-| c04 | Meja dokter bedah, oud, rak naskah | bookshelf-5e881a / ultra; lefthand-item-30f012 (Hardback Book) / ultra; alcove-bookcase-83894d / prop | Hanya rak naskah; gaya modern, sesuaikan material |
-| c05 | Pengepungan, api, peta pecah | tidak ada | Efek api 2D, siluet pasukan |
-| c06 | Panah ke Toledo, meja penerjemah | exercise-book-stack-266d9d / prop | Opsional |
-| c07_payoff | Alhambra senja, hutan tiang, kartu outro | tidak ada | Ilustrasi vektor; outro: shared/assets/brand/audira-outro-card.svg |
+| c00_hook | Rak manuskrip, siluet kota berkubah, peta retak | belum dicari di katalog | Belum dicari; pakai ilustrasi 2D berlapis |
+| c01_intro | Peta Iberia + garis waktu 711–1492 | belum dicari | Peta vektor 2D |
+| c02 | Selat Gibraltar, pasukan siluet, tiang lengkung merah-putih | belum dicari | Tiang dan lengkung vektor; tanpa wajah |
+| c03 | Aula pualam, istana berteras Madinat al-Zahra | belum dicari | Katalog GLB kemungkinan tidak punya arsitektur Islam |
+| c04 | Meja bedah, naskah Latin, kaca, sayap kain | belum dicari | Props sederhana, bisa 2D |
+| c05 | Api, pasukan siluet, peta pecah | belum dicari | Efek 2D |
+| c06 | Peta taifa, panah dari utara, Alhambra | belum dicari | Peta bergerak 2D |
+| c07_payoff | Hutan tiang Masjid Agung, kartu outro | belum dicari | Outro: shared/assets/brand/audira-outro-card.svg |
 
-Pencarian audira_search_assets (topic, castle, book) dilakukan 2026-11-25; tidak ada model masjid, kubah, atau istana Andalusia.
-
-Saran engine: 2D — katalog GLB tidak punya arsitektur Islam; ilustrasi bertingkat, peta bergerak, dan tipografi kinetik (CHRONICLE atau HISTORYMAP) lebih akurat dan tetap tanpa wajah.
+Saran engine: 2D — peta bergerak, ilustrasi berlapis, dan tipografi kinetik (CHRONICLE atau HISTORYMAP) paling cocok; arsitektur Islam jarang ada di katalog GLB.

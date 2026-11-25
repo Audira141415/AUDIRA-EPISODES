@@ -5,65 +5,65 @@
 
 ## c00_hook — Hook
 
-- Kata: **27** · estimasi **11 dtk**
-- Visual: Angka 22 raksasa di tengah layar, lalu dua puluh dua siluet pemain 3D generik berlari satu per satu mengisi garis timeline; HUD: 22 GOL / 22 LAGA.
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Layar hitam, angka 22 menyala besar (HUD) lalu pecah jadi papan skor gol Piala Dunia bertuliskan MBAPPÉ di atas, nama Messi tergeser turun. Tanpa wajah atlet, hanya siluet pemain dan bola.
 
-> Dua puluh dua gol. Dua puluh dua pertandingan. Kylian Mbappé baru 27 tahun, dan namanya sudah di puncak pencetak gol Piala Dunia sepanjang masa, per Juli 2026.
+> Dua puluh dua gol di Piala Dunia. Rekor itu dulu dipegang Messi. Sekarang, per Juli dua ribu dua puluh enam, angka itu milik Mbappé.
 
 ## c01_intro — Intro
 
+- Kata: **9** · estimasi **4 dtk**
+- Visual: Papan data AUDIRA: siluet striker bernomor 10 berdiri di tengah lapangan 3D, callout usia 27 tahun (per November 2026).
+
+> Umurnya baru dua puluh tujuh tahun. AUDIRA bongkar angkanya.
+
+## c02 — Bab 1: Remaja termuda
+
 - Kata: **23** · estimasi **10 dtk**
-- Visual: Papan peringkat 3D bertingkat: balok Klose 16, Messi 21, Mbappé 22 naik satu per satu; callout HUD angka.
+- Visual: Lorong stadion Monaco bergaya poster, siluet remaja berseragam merah putih menendang bola, HUD 18 th 350 hari dan angka 10 gol Liga Champions.
 
-> Rekor lama dipegang Miroslav Klose dengan 16 gol. Lionel Messi mendekat sampai 21. Mbappé melewati keduanya dalam tiga turnamen: 2018, 2022, dan 2026.
+> Dari remaja. Umur delapan belas tahun tiga ratus lima puluh hari, ia sudah mencetak gol Liga Champions kesepuluh. Belum ada yang lebih muda.
 
-## c02 — Rusia 2018
+## c03 — Bab 2: Final Piala Dunia
 
-- Kata: **26** · estimasi **11 dtk**
-- Visual: Peta Rusia dengan stadion 3D generik, siluet remaja berlari menuju gawang, trofi emas generik; HUD: 19 TAHUN 207 HARI.
+- Kata: **34** · estimasi **14 dtk**
+- Visual: Replika gawang dan trofi Piala Dunia (tanpa logo resmi), siluet pemain biru melepas tembakan, HUD 4 gol di final dan Sepatu Emas 2022 serta 2026.
 
-> Mulai dari Rusia 2018. Usianya 19 tahun 207 hari saat mencetak gol di final, dan Prancis juara dunia. Sebelum dia, hanya Pelé, sesama remaja, yang melakukannya.
+> Final Piala Dunia dua ribu dua puluh dua: hat-trick, empat gol di final, rekor sepanjang masa. Tahun dua ribu dua puluh enam, sepuluh golnya memberi Sepatu Emas kedua. Belum ada yang menang dua kali.
 
-## c03 — Final Qatar 2022
-
-- Kata: **28** · estimasi **12 dtk**
-- Visual: Lapangan malam, tiga bola menembus gawang berurutan, papan skor generik tanpa logo; HUD: HAT-TRICK 2022.
-
-> Qatar 2022. Di final, dia mencetak hat-trick. Prancis kalah, tapi empat gol di dua final jadi rekor terbanyak. Hanya Geoff Hurst, tahun 1966, yang pernah hat-trick di final.
-
-## c04 — Sepatu Emas dua kali
-
-- Kata: **24** · estimasi **10 dtk**
-- Visual: Sepatu emas 3D berputar di podium, dua kali, diikuti tabel gol per turnamen: 8 lalu 10; HUD: 8 GOL, 10 GOL.
-
-> Di Qatar dia dapat Sepatu Emas dengan delapan gol. Di 2026, sepuluh gol memberinya Sepatu Emas kedua. Dia pemain pertama yang menang dua kali.
-
-## c05 — Dibanding para legenda
+## c04 — Bab 3: Raja gol Piala Dunia
 
 - Kata: **28** · estimasi **12 dtk**
-- Visual: Tiga jalur lari paralel di trek 3D: panjang jalur = jumlah laga; Mbappé 22, Messi 34, Klose 24, Ronaldo 19; HUD rasio.
+- Visual: Grafik batang bergerak: tumpukan gol Piala Dunia, batang MBAPPÉ naik melewati batang Messi dan angka 22 membesar; di sebelahnya kartu 67 gol untuk Prancis.
 
-> Bandingkan efisiensinya. Messi: 34 laga untuk 21 gol. Klose: 24 laga untuk 16 gol. Ronaldo dari Brasil: 19 laga untuk 15 gol. Mbappé: 22 gol dalam 22 laga.
+> Total gol Piala Dunia-nya dua puluh dua, melewati Messi. Untuk Prancis, ia juga pencetak gol terbanyak sepanjang masa: enam puluh tujuh, per November dua ribu dua puluh enam.
 
-## c06 — Angka di luar Piala Dunia
+## c05 — Bab 4: Real Madrid
 
-- Kata: **28** · estimasi **12 dtk**
-- Visual: Globe data berputar lalu pecah menjadi empat tumpukan bola: Monaco, PSG, Madrid, Prancis; HUD: 400 GOL.
+- Kata: **36** · estimasi **15 dtk**
+- Visual: Stadion putih 3D dari udara, siluet striker putih berlari, HUD 100 gol dalam 116 laga, kartu 59 gol dalam setahun (sejajar rekor Cristiano Ronaldo) dan trofi Pichichi.
 
-> Di luar Piala Dunia pun gila. Per November 2025, usia 26, dia mencapai 400 gol karier menurut Opta: 27 untuk Monaco, 256 PSG, 62 Real Madrid, 55 Prancis.
+> Di Real Madrid, seratus gol ia capai dalam seratus enam belas laga, per Oktober dua ribu dua puluh enam. Tahun dua ribu dua puluh lima, ia menyamai Cristiano Ronaldo: lima puluh sembilan gol dalam setahun kalender.
+
+## c06 — Penjelasan: konsistensi
+
+- Kata: **32** · estimasi **13 dtk**
+- Visual: Peta Eropa bergaya garis, tiga pin klub (Monaco, Paris, Madrid) menyala berurutan, HUD 71 gol Liga Champions dan 256 gol di Paris.
+
+> Di Liga Champions, tujuh puluh satu gol, sejajar Raúl di peringkat kelima, per September dua ribu dua puluh enam. Di Paris Saint-Germain, dua ratus lima puluh enam gol, terbanyak di klub itu.
 
 ## c07_payoff — Payoff + outro
 
-- Kata: **25** · estimasi **11 dtk**
-- Visual: Satu siluet berdiri di puncak tangga bar 22, sorotan stadion menyala, outro card AUDIRA; HUD: REKOR 1958 vs 2026.
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Semua kartu angka (22, 67, 100, 71, 256) berputar rapi mengelilingi siluet striker, lalu zoom out ke kartu outro AUDIRA.
 
-> Satu rekor masih bertahan: 13 gol Just Fontaine dalam satu turnamen, 1958, hanya dalam enam laga. Mbappé berhenti di sepuluh. Ikuti AUDIRA untuk angka berikutnya.
+> Apakah ia melampaui para legenda? Itu perdebatan lain. Tapi soal angka, mereka harus bergeser. Ikuti AUDIRA untuk statistik berikutnya.
 
 ## Opsi hook lain
 
-1. Messi butuh 34 pertandingan untuk 21 gol Piala Dunia. Mbappé cukup 22.
-2. Rekor yang dipegang Klose dan Messi jatuh ke pemain berusia 27 tahun.
+1. Seratus gol untuk Real Madrid hanya dalam 116 pertandingan. Lalu ia lanjut memecahkan rekor Piala Dunia.
+2. Pemain pertama yang meraih Sepatu Emas Piala Dunia dua kali. Dan itu baru satu dari sekian rekornya.
 
 ## Total
 
-- **209 kata** ≈ **88 dtk**
+- **205 kata** ≈ **85 dtk**

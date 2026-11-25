@@ -9,7 +9,7 @@ stage: drafted
 researchedAt: "2026-11-25"
 prioritas: 4
 awet: tidak
-risiko: "Angka rekor Piala Dunia per 19 Juli 2026 bisa berubah di 2030; hook Ronaldo awal tidak terverifikasi; FIFA/UEFA tidak terbaca, bergantung ESPN, Fox, BBC."
+risiko: "Hook asli (lebih banyak gol dari Ronaldo di usia sama) tidak terverifikasi, diganti fakta 59 gol setahun; angka cepat basi; angka PSG dan Prancis hanya dari Wikipedia."
 ---
 
 # Statistik Mbappe yang Membuat Para Legenda Terdiam
