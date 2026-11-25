@@ -5,7 +5,11 @@ title: "Cara Kerja Mata: Kamera Paling Canggih yang Pernah Ada"
 hook: "126 juta fotoreseptor bekerja bersama untuk menghasilkan gambar — dan kelemahannya yang tak terduga"
 styleCandidates: ["ANATOMIX (3D)", "INNERWORKS (3D)", "NANOFORGE (3D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 5
+awet: ya
+risiko: "rendah"
 ---
 
 # Cara Kerja Mata: Kamera Paling Canggih yang Pernah Ada

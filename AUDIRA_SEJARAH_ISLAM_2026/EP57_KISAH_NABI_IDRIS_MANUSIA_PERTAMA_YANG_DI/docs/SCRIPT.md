@@ -1,93 +1,70 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP57`)
+# Naskah — Kisah Nabi Idris: Manusia Pertama yang Diberi Ilmu Menulis
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **14** · estimasi **6 dtk**
+- Visual: Siluet sosok berjubah berdiri di puncak menara, langit malam penuh bintang. Cahaya keemasan dari bawah. Teks HUD: "LANGIT KE-4"
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Seorang nabi diangkat ke langit keempat — dan tidak pernah kembali ke bumi. Siapa dia?
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Gulungan perkamen terbuka, pena bercahaya menulis huruf-huruf kuno. Transisi ke siluet nabi di padang pasir. HUD: "NABI IDRIS · MANUSIA PERTAMA MENULIS"
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya Idris. Al-Quran menyebutnya seorang yang sangat mencintai kebenaran dan seorang nabi. Tapi yang membuat kisahnya istimewa: dialah manusia pertama yang menulis dengan pena. Ini kisahnya di Audira.
 
-## c02 — <Judul Bab 1>
+## c02 — Nasab dan Masa Hidup
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Pohon nasab bercahaya (Adam → Syits → ... → Yarid → Idris → Metusalah → Nuh). Latar kota kuno Babil. HUD: "NABI KE-2 SETELAH ADAM"
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Idris hidup antara zaman Adam dan Nuh. Menurut Ibnu Katsir, ia lahir di Babil dan merupakan kakek buyut Nabi Nuh. Zamannya, manusia mulai menyimpang.
 
-## c03 — <Judul Bab 2>
+## c03 — Pelopor Ilmu
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Close-up pena menulis di lembaran. Transisi ke jarum menjahit kain. Transisi ke langit malam dengan garis-garis rasi bintang. HUD: "3 KEPELOPORAN: MENULIS · MENJAHIT · ASTRONOMI"
 
-> <teks narasi>
+> Ibnu Ishaq mencatat: Idris adalah manusia pertama yang menulis dengan pena. Ia juga yang pertama menjahit pakaian — sebelumnya orang hanya memakai kulit hewan. Dan ia mempelajari pergerakan bintang di langit.
 
-## c04 — <Judul Bab 3>
+## c04 — Dakwah dan Hijrah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Siluet nabi berdakwah di tengah kerumunan yang berpaling. Transisi ke rombongan berjalan melintasi gurun. Lalu Sungai Nil dengan pohon palem. HUD: "BABIL → MESIR"
 
-> <teks narasi>
+> Idris berdakwah di Babil, tapi kaumnya banyak yang ingkar. Maka ia membawa pengikutnya hijrah ke Mesir. Saat melihat Sungai Nil, ia bertakbir: Subhanallah.
 
-## c05 — <Judul Bab 4>
+## c05 — Diangkat ke Martabat Tinggi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Ayat Al-Quran Maryam 19:57 bercahaya di layar. Transisi ke siluet nabi di antara awan bercahaya di langit ke-4, disambut sosok lain. HUD: "QS. MARYAM 19:57"
 
-> <teks narasi>
+> Allah berfirman dalam Surah Maryam: "Kami telah mengangkatnya ke martabat yang tinggi." Saat Isra Mikraj, Rasulullah bertemu Idris di langit keempat. Idris menyapa: "Selamat datang, saudaraku yang saleh."
 
-## c06 — <Judul Bab 5>
+## c06 — Ilmu Sebagai Amanah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **12 dtk**
+- Visual: Montase tiga ikon berputar (pena, jarum, bintang) di atas telapak tangan terbuka. Cahaya naik ke atas. HUD: "ILMU = AMANAH"
 
-> <teks narasi>
+> Nabi Idris mengajarkan bahwa ilmu adalah amanah dari Allah. Menulis, menjahit, mengamati bintang — semuanya ia gunakan untuk ibadah dan mengajarkan kebaikan kepada seluruh umat manusia.
 
 ## c07_payoff — Payoff dan Penutup
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Hero shot — siluet Idris di langit keempat, bintang-bintang mengelilingi. Transisi ke outro card AUDIRA. HUD: —
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Manusia pertama yang menulis. Diangkat ke langit. Kisahnya singkat di Al-Quran, tapi pesannya abadi. Temukan kisah para nabi lainnya bersama Audira.
+
+## Opsi hook lain
+
+1. Sebelum ada yang bisa menulis, satu orang mengangkat pena pertama di muka bumi — dan namanya ada di Al-Quran.
+2. Tiga hal yang kita pakai setiap hari — menulis, berpakaian, dan mengamati langit — semuanya dimulai dari satu nabi.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **195 kata** ≈ **78–87 dtk** @135–150 WPM
+- 8 blok: hook, intro, 5 chapter, payoff + outro.

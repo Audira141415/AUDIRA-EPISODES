@@ -5,7 +5,11 @@ title: "Saat Usman bin Affan Membeli Sumur untuk Semua Muslim"
 hook: "Keputusan bisnis terbesar sepanjang sejarah — satu sumur yang mengubah nasib seluruh komunitas"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "STORYBOOK (2D)", "CHARACTERFLOW (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah — hadis sahih Bukhari/Tirmidzi/Nasa'i, tokoh mulia disepakati Sunni; hindari detail harga (riwayat beragam) dan identitas agama pemilik asal"
 ---
 
 # Saat Usman bin Affan Membeli Sumur untuk Semua Muslim

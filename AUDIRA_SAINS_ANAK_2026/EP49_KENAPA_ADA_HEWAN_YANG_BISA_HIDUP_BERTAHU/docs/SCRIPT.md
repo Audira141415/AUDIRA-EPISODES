@@ -1,93 +1,70 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP49`)
+# Naskah — Kenapa Ada Hewan yang Bisa Hidup Bertahun-Tahun Tanpa Makan
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **9** · estimasi **3 dtk**
+- Visual: Olm putih pucat melayang di gua gelap, HUD callout "10 TAHUN" muncul besar
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Sepuluh tahun tanpa makan — dan hewan ini tetap hidup.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: Montase cepat — olm, lungfish dalam lumpur, tardigrade mikroskopis, buaya diam di air; logo AUDIRA kecil di sudut
 
-> <konteks singkat + "Di Audira, ...">
+> Di {AUDIRA|Audira}, kita bongkar rahasia hewan-hewan yang bisa puasa lebih lama dari manusia — bahkan bertahun-tahun.
 
-## c02 — <Judul Bab 1>
+## c02 — Olm Sang Juara Puasa
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **32** · estimasi **14 dtk** · mulai ±0:09
+- Visual: Gua bawah tanah dengan air jernih suhu rendah, olm berenang pelan; HUD callout "8–11 °C" dan "10 TAHUN"; close-up hati olm menyimpan lemak (diagram)
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Olm, salamander buta dari gua Eropa, memegang rekor. Di air gelap bersuhu delapan derajat, hewan ini bertahan sepuluh tahun tanpa makan. Rahasianya: menyimpan lemak di hati dan memperlambat metabolisme hampir sampai nol.
 
-## c03 — <Judul Bab 2>
+## c03 — Lungfish dan Kepompong Lendir
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **34** · estimasi **15 dtk** · mulai ±0:23
+- Visual: Sungai Afrika mengering, lungfish membenamkan diri ke lumpur; potongan silang menunjukkan kepompong lendir dengan tabung napas; HUD callout "{1/60|satu per enam puluh}" dan "3,5 TAHUN"
 
-> <teks narasi>
+> Lungfish Afrika punya strategi berbeda. Saat sungai mengering, dia membenamkan diri dalam lumpur dan membungkus tubuh dengan lendir yang mengeras jadi kepompong. Metabolismenya turun jadi satu per enam puluh. Tiga setengah tahun tanpa makan.
 
-## c04 — <Judul Bab 3>
+## c04 — Tardigrade Si Penyintas Luar Angkasa
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **14 dtk** · mulai ±0:38
+- Visual: Zoom in dari ujung jarum ke tardigrade raksasa (skala diperbesar); tardigrade mengkerut jadi bola tun; latar berubah ke luar angkasa — vakum, radiasi, es; HUD callout "METABOLISME: 0%"
 
-> <teks narasi>
+> Tardigrade, hewan mikroskopis lebih kecil dari ujung jarum, punya kemampuan paling ekstrem. Saat kering, tubuhnya mengkerut jadi bola kecil bernama tun. Metabolisme berhenti total — nol. Dia bertahan bertahun-tahun, bahkan di luar angkasa.
 
-## c05 — <Judul Bab 4>
+## c05 — Buaya Si Pemangsa Sabar
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk** · mulai ±0:52
+- Visual: Buaya diam di bawah air, detak jantung visualisasi lambat; HUD callout "1–2x/menit"; anakan buaya kecil dengan counter "58 HARI"
 
-> <teks narasi>
+> Buaya juga pelaku puasa ulung. Metabolismenya sangat rendah, dan di bawah air detak jantungnya turun sampai satu kali per menit. Anakan buaya saja bisa lima puluh delapan hari tanpa makan.
 
-## c06 — <Judul Bab 5>
+## c06 — Rahasia Besar: Metabolisme
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk** · mulai ±1:05
+- Visual: Diagram perbandingan metabolisme — manusia vs beruang vs olm vs tardigrade (bar chart kinetik); animasi UNS beruang: urea di usus dipecah mikroba jadi asam amino
 
-> <teks narasi>
+> Kunci dari semua hewan ini sama: menurunkan metabolisme. Makin lambat tubuh membakar energi, makin lama persediaan bertahan. Beruang saat hibernasi bahkan mendaur ulang urea jadi asam amino supaya ototnya tidak menyusut.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **9 dtk** · mulai ±1:18
+- Visual: Hero shot — globe dengan semua hewan di habitat masing-masing (gua, lumpur, es, air); zoom out ke luar angkasa dengan tardigrade; outro card AUDIRA
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Dari gua gelap, dasar lumpur, sampai es Arktik — alam sudah menemukan cara bertahan yang belum bisa ditiru manusia. Bersama {AUDIRA|Audira}.
+
+## Opsi hook lain
+
+1. "Ada hewan yang bisa puasa tiga setengah tahun. Terbungkus lendir. Di dalam lumpur."
+2. "Hewan ini lebih kecil dari ujung jarum — tapi bisa bertahan di luar angkasa tanpa makan."
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **203 kata** ≈ **81–90 dtk** @135–150 WPM
+- 8 blok: hook, intro, 5 chapter, payoff + outro.

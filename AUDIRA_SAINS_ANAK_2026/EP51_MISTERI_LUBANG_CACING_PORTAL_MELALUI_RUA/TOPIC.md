@@ -5,7 +5,11 @@ title: "Misteri Lubang Cacing: Portal Melalui Ruang dan Waktu"
 hook: "Apakah wormhole benar-benar ada? Fisika relativitas umum mengizinkannya secara matematis"
 styleCandidates: ["ABYSSFORGE (3D)", "WORLDFORGE (3D)", "SCALEFORGE (3D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah"
 ---
 
 # Misteri Lubang Cacing: Portal Melalui Ruang dan Waktu

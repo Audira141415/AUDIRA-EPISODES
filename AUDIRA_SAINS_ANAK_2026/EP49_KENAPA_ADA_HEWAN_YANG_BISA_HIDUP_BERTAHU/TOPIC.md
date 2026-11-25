@@ -5,7 +5,11 @@ title: "Kenapa Ada Hewan yang Bisa Hidup Bertahun-Tahun Tanpa Makan"
 hook: "Metabolisme ekstrem dari beruang kutub, kecoa, dan ubur-ubur abadi yang menantang batas biologi"
 styleCandidates: ["TERRARIUM (3D)", "ANATOMIX (3D)", "SCALEFORGE (3D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah"
 ---
 
 # Kenapa Ada Hewan yang Bisa Hidup Bertahun-Tahun Tanpa Makan

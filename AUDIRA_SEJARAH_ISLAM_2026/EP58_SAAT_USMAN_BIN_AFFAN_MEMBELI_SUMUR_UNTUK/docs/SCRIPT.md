@@ -1,93 +1,70 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP58`)
+# Naskah — Saat Usman bin Affan Membeli Sumur untuk Semua Muslim
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Siluet sosok berjubah berdiri di tepi sumur batu di padang pasir. Cahaya keemasan, debu berterbangan. HUD callout: "Bi'r Rumah — Madinah"
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Satu sumur. Satu keputusan. Dan janji surga langsung dari Rasulullah. Di AUDIRA, ini kisahnya.
 
-## c01_intro — Intro
+## c01_intro — Konteks Madinah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk** · mulai ±0:08
+- Visual: Panorama kota Madinah kuno dari ketinggian. Tanah kering, rumah-rumah sederhana. HUD callout: "1 H / {622|enam-dua-dua} M — Hijrah"
 
-> <konteks singkat + "Di Audira, ...">
+> Saat Nabi Muhammad hijrah ke Madinah, kota itu punya satu masalah besar. Hanya ada satu sumur air tawar yang layak minum: Bi'r Rumah. Dan pemiliknya menjual setiap tetes airnya.
 
-## c02 — <Judul Bab 1>
+## c02 — Krisis Air
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **27** · estimasi **11 dtk** · mulai ±0:20
+- Visual: Antrean panjang siluet orang membawa wadah menuju sumur. Tangan menerima koin. HUD callout: "Satu-satunya sumber air tawar"
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Kaum Muhajirin yang baru datang harus membayar untuk minum. Air bukan kemewahan — ini kebutuhan hidup. Tapi tidak semua punya uang. Janda, anak yatim, musafir — semua bergantung pada belas kasihan.
 
-## c03 — <Judul Bab 2>
+## c03 — Seruan Nabi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk** · mulai ±0:31
+- Visual: Siluet Nabi berdiri di depan jamaah. Cahaya dari atas menyinari sumur. HUD callout hadis: "Siapa yang membeli sumur Rumah, baginya surga"
 
-> <teks narasi>
+> Rasulullah lalu bersabda — dan ini tercatat dalam Sahih al-Bukhari: "Siapa yang membeli sumur Rumah dan meletakkan timbanya bersama timba kaum muslimin, baginya surga."
 
-## c04 — <Judul Bab 3>
+## c04 — Usman Menjawab
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **12 dtk** · mulai ±0:41
+- Visual: Siluet Usman melangkah maju dari kerumunan. Kantong emas di tangan. Close-up tangan menyerahkan pembayaran. HUD callout: "Usman bin Affan — Khalifah ke-3"
 
-> <teks narasi>
+> Usman bin Affan, pedagang terkaya di kalangan sahabat, langsung maju. Ia membeli sumur itu dari inti kekayaannya. Bukan untuk dijual lagi. Ia mewakafkannya — gratis untuk semua: kaya, miskin, dan musafir.
 
-## c05 — <Judul Bab 4>
+## c05 — Pola Kedermawanan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk** · mulai ±0:53
+- Visual: Tiga panel berurutan — sumur berair, masjid meluas, barisan pasukan. HUD callout: "{1.000|seribu} dinar emas · sepertiga pasukan Tabuk"
 
-> <teks narasi>
+> Dan ini bukan satu-satunya. Usman juga membeli tanah untuk memperluas Masjid Nabawi. Ia menyumbang {1.000|seribu} dinar emas untuk pasukan Tabuk — sumbangan individu terbesar. Ketiganya dikonfirmasi para sahabat dalam hadis sahih.
 
-## c06 — <Judul Bab 5>
+## c06 — Makna Wakaf
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk** · mulai ±1:06
+- Visual: Sumur dilihat dari atas, air berkilau. Lingkaran cahaya meluas ke seluruh kota. HUD callout: "QS {2:261|al-Baqarah dua-enam-satu} — 1 biji → 700 biji"
 
-> <teks narasi>
+> Al-Quran menyebut: satu biji yang ditanam di jalan Allah menumbuhkan {700|tujuh ratus} biji. Sumur Rumah adalah biji itu — satu keputusan yang memberi minum seluruh komunitas, dan pahalanya terus mengalir.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **18** · estimasi **8 dtk** · mulai ±1:16
+- Visual: Golden hour, sumur megah dengan cahaya surgawi. Teks kinetik: "Wakaf pertama Islam." Fade ke outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Sumur itu masih ada di Madinah. Wakaf Usman — salah satu yang tertua dalam sejarah Islam. Kisah selanjutnya, bersama {AUDIRA|Audira}.
+
+## Opsi hook lain
+
+1. "Bagaimana seorang pedagang membeli tiket surga dengan satu sumur?"
+2. "Air gratis untuk semua orang — ini bukan slogan, ini sejarah Islam abad ke-7."
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **210 kata** ≈ **84–93 dtk** @135–150 WPM
+- 8 blok: hook, intro, 5 chapter, payoff + outro.

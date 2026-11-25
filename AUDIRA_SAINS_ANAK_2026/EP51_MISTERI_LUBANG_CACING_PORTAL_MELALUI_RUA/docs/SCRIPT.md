@@ -1,93 +1,70 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP51`)
+# Naskah — Misteri Lubang Cacing: Portal Melalui Ruang dan Waktu
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **8** · estimasi **3 dtk**
+- Visual: Grid ruang-waktu melengkung drastis membentuk terowongan bercahaya, kamera terjun masuk
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Bagaimana kalau ada jalan pintas menembus alam semesta?
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk** · mulai ±0:03
+- Visual: Siluet Einstein dan Rosen di depan papan persamaan, grid ruang-waktu membentuk dua corong yang terhubung
 
-> <konteks singkat + "Di Audira, ...">
+> Tahun {1935|sembilan belas tiga puluh lima}, Einstein dan Rosen menemukan bahwa relativitas umum mengizinkan "jembatan" yang menghubungkan dua titik jauh di alam semesta. Di AUDIRA, kita bedah misterinya.
 
-## c02 — <Judul Bab 1>
+## c02 — Asal-Usul Teori
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **32** · estimasi **14 dtk** · mulai ±0:14
+- Visual: Timeline 1916–1957, siluet Flamm di samping solusi Schwarzschild, Wheeler menulis "wormhole" di papan. HUD callout: "1916", "1957"
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Ide ini lebih tua. Tahun {1916|sembilan belas enam belas}, fisikawan Ludwig Flamm menyadari solusi Schwarzschild bisa membentuk terowongan ruang-waktu. Tahun {1957|sembilan belas lima puluh tujuh}, John Wheeler menamakannya: "wormhole", lubang cacing.
 
-## c03 — <Judul Bab 2>
+## c03 — Runtuh Seketika
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk** · mulai ±0:28
+- Visual: Animasi terowongan ruang-waktu yang terbentuk lalu langsung runtuh dan menutup, cahaya gagal melewati. HUD callout: "1962"
 
-> <teks narasi>
+> Masalahnya, jembatan ini langsung runtuh. Tahun {1962|sembilan belas enam puluh dua}, Wheeler dan Fuller membuktikan: lubang cacing menutup terlalu cepat, bahkan cahaya tak sempat lewat.
 
-## c04 — <Judul Bab 3>
+## c04 — Materi Eksotis
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **12 dtk** · mulai ±0:38
+- Visual: Terowongan dijaga terbuka oleh cincin bercahaya (materi eksotis), dua pelat Casimir dengan energi negatif di antaranya. HUD callout: "1988", "Energi Negatif"
 
-> <teks narasi>
+> Tahun {1988|sembilan belas delapan puluh delapan}, Kip Thorne mengusulkan solusi: materi eksotis dengan energi negatif bisa menjaga terowongan tetap terbuka. Efek Casimir dalam fisika kuantum membuktikan energi negatif itu nyata.
 
-## c05 — <Judul Bab 4>
+## c05 — Dunia Kuantum
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk** · mulai ±0:50
+- Visual: Zoom-in dari galaksi ke atom ke skala Planck, busa kuantum bergelembung dengan lubang cacing mikroskopis muncul-menghilang. HUD callout: "10⁻³⁵ meter"
 
-> <teks narasi>
+> Di skala terkecil alam semesta, sekitar {10⁻³⁵|sepuluh pangkat negatif tiga puluh lima} meter, lubang cacing mikroskopis mungkin muncul dan menghilang setiap saat di busa kuantum.
 
-## c06 — <Judul Bab 5>
+## c06 — Belum Ditemukan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **10 dtk** · mulai ±1:01
+- Visual: Teleskop dan detektor partikel, layar data menunjukkan "NOT DETECTED", kutipan NASA. HUD callout: "0 bukti observasi"
 
-> <teks narasi>
+> Sampai hari ini, belum satu pun lubang cacing yang berhasil diamati. NASA menegaskan: lubang hitam bukan lubang cacing. Ini masih hipotesis matematis.
 
 ## c07_payoff — Payoff dan Penutup
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk** · mulai ±1:11
+- Visual: Persamaan Einstein bercahaya keemasan, terowongan ruang-waktu megah terbuka dengan bintang di ujungnya, outro card AUDIRA
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Meski belum terbukti nyata, matematikanya terus bilang: mungkin. Di situlah sains paling menarik, di perbatasan antara yang diketahui dan yang belum. Terus jelajahi bersama {AUDIRA|Audira}.
+
+## Opsi hook lain
+
+1. "Lubang cacing: jalan pintas alam semesta yang diizinkan matematika tapi belum pernah ditemukan."
+2. "Einstein menemukan portal di persamaannya sendiri. Tapi ada satu masalah besar."
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **~195 kata** ≈ **78–87 dtk** @135–150 WPM
+- 8 blok: hook, intro, 4 chapter, penjelasan, payoff + CTA.

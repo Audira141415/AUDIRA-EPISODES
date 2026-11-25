@@ -5,7 +5,11 @@ title: "Kisah Ibnu Rushd (Averroës): Filsuf Islam yang Menyelamatkan Aristotele
 hook: "Tanpa Ibnu Rushd, Renaisans Eropa mungkin tidak akan pernah terjadi — ini kisahnya"
 styleCandidates: ["MANUSCRIPT (2D)", "CHRONICLE (2D)", "WORLDFORGE (3D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Al-Ghazali vs Ibnu Rushd sensitif di sebagian kalangan; narasi netral, tidak menyalahkan salah satu"
 ---
 
 # Kisah Ibnu Rushd (Averroës): Filsuf Islam yang Menyelamatkan Aristoteles untuk Eropa

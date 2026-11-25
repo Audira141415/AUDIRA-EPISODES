@@ -5,7 +5,11 @@ title: "Kisah Nabi Idris: Manusia Pertama yang Diberi Ilmu Menulis"
 hook: "Ia adalah manusia yang naik ke langit keempat dan tidak pernah kembali — apa yang terjadi sebenarnya?"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "STORYBOOK (2D)", "TIMEFORGE (3D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Kisah wafat di langit ke-4 dari riwayat israiliyyat (Ka'b al-Ahbar), bukan hadis sahih langsung. Identifikasi dengan Henokh tidak ijma'. Naskah menandai keduanya."
 ---
 
 # Kisah Nabi Idris: Manusia Pertama yang Diberi Ilmu Menulis
