@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris` (`EP55`)
+# Naskah — Rekor Formula 1 Michael Schumacher yang Baru Disamai 15 Tahun Kemudian
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: dua counter raksasa menghentak di tengah layar: "7" (trofi) lalu "91" (bendera kotak-kotak); di belakang, kalender berputar cepat 2004 → 2020. Mobil F1 merah bergaya siluet melesat melintas frame. HUD: `7 GELAR` · `91 MENANG`.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Tujuh gelar dunia. Sembilan puluh satu kemenangan. Dua rekor Michael Schumacher ini bertahan lebih dari empat belas tahun. Siapa yang akhirnya menyamainya?
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: peta Eropa, pin di Jerman lalu garis ke Spa, Belgia. Mobil hijau (livery generik ala Jordan, tanpa logo) di grid, lalu kartu berganti warna biru-hijau ala Benetton. HUD: `1991 · DEBUT · SPA`.
 
-> <konteks singkat + "Di Audira, ...">
+> Schumacher, pembalap Jerman, debut di Formula Satu tahun 1991 bersama Jordan di Belgia. Cuma satu balapan, Benetton langsung merekrutnya.
 
-## c02 — <Judul Bab 1>
+## c02 — Era Benetton
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: dua trofi muncul berurutan di rak kosong, label `1994` dan `1995`. Diagram top-down sirkuit dengan dua titik mobil bersenggolan (Schumacher vs Hill) di lap terakhir. Transisi: rak trofi dipindah truk ke garasi merah. HUD: `JUARA 1994 · 1995`.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Bersama Benetton, dia juara dunia 1994 dan 1995. Gelar pertamanya dikunci di balapan terakhir, setelah tabrakan dengan Damon Hill. Lalu dia pindah ke Ferrari, tim besar yang sedang kesulitan.
 
-## c03 — <Judul Bab 2>
+## c03 — Ferrari bangkit
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: garasi merah gelap, lampu menyala satu per satu. Timeline horizontal 1979 → 2000 dengan celah kosong panjang, lalu 5 trofi beruntun 2000–2004 jatuh ke rak. HUD: `21 TAHUN MENUNGGU` lalu counter `2000 · 01 · 02 · 03 · 04`.
 
-> <teks narasi>
+> Tahun 2000, dia memberi Ferrari gelar pembalap pertama dalam 21 tahun. Setelah itu gelar datang tiap musim, tanpa putus, sampai 2004.
 
-## c04 — <Judul Bab 3>
+## c04 — Puncak 2004
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: grid 18 kotak balapan, 13 kotak menyala merah satu per satu (data physical). Kamera turun ke sirkuit Spa (hutan Ardennes), bendera kotak-kotak, trofi ketujuh masuk rak. HUD: `13 / 18` dan `GELAR KE-7 · SPA · 29 AGU 2004`.
 
-> <teks narasi>
+> Musim 2004 jadi puncaknya. Dia menang 13 dari 18 balapan, rekor semusim saat itu, lalu mengunci gelar ketujuh di Spa, Belgia, akhir Agustus.
 
-## c05 — <Judul Bab 4>
+## c05 — Angka penutup karier
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: sirkuit Shanghai malam, mobil merah menyeberangi garis finis, counter kemenangan berhenti di `91`. Lalu tiga kolom data physical naik dari lantai: `91 menang`, `68 pole`, `155 podium`. HUD: `KEMENANGAN TERAKHIR · SHANGHAI · 1 OKT 2006`.
 
-> <teks narasi>
+> Kemenangan ke-91, yang terakhir, datang di Shanghai, Oktober 2006. Di akhir kariernya dia memegang rekor 68 pole position dan 155 podium.
 
-## c06 — <Judul Bab 5>
+## c06 — Rekor ditagih (penjelasan)
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: kalender melompat ke Oktober 2020. Mobil perak (livery generik, tanpa logo) di Nürburgring; bar race dua kolom "Schumacher 91" vs "Hamilton 91" sejajar. Close-up helm balap merah berpindah tangan (siluet, tanpa wajah). Lalu bar Hamilton naik ke 92, peta Portugal menyala. HUD: `91 = 91 · NÜRBURGRING` lalu `92 · PORTIMÃO · 25 OKT 2020`.
 
-> <teks narasi>
+> Rekor kemenangan itu baru tersentuh Oktober 2020. Lewis Hamilton menang ke-91 di Nürburgring, Jerman, dan Mick, putra Schumacher, menyerahkan helm ayahnya. Dua pekan kemudian, kemenangan ke-92 di Portugal mematahkan rekor itu.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **35** · estimasi **15 dtk**
+- Visual: sirkuit Istanbul basah, mobil perak finis. Dua rak trofi berdiri berdampingan, masing-masing 7 trofi, kamera mundur megah dengan cahaya emas. Garis waktu `2004 ——16 TAHUN—— 2020` di atasnya. Lalu outro card AUDIRA. HUD: `7 = 7 · 15 NOV 2020` dan `REKOR BERSAMA · per Nov 2026`.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Lalu 15 November 2020, Hamilton juara di Turki dan menyamai tujuh gelar, enam belas tahun setelah gelar terakhir Schumacher. Per November 2026, tujuh gelar masih rekor bersama mereka berdua. Ikuti AUDIRA untuk rekor olahraga berikutnya.
+
+## Opsi hook lain
+
+1. Butuh enam belas tahun sampai ada pembalap yang bisa menyamai angka ini: tujuh.
+2. Dalam lima minggu di tahun 2020, tiga rekor Michael Schumacher runtuh atau tersamai.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **201 kata** ≈ **80–89 dtk**

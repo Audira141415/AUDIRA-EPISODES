@@ -5,7 +5,11 @@ title: "Kisah di Balik Medali Emas Olimpiade yang Dicuri dari Indonesia"
 hook: "Lari 10.000 meter 1988: keputusan wasit yang masih diperdebatkan"
 styleCandidates: ["CHRONICLE (2D)", "CINESTORY (2D)", "FILM16 (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul dan hook tidak akurat (tidak ada emas dicuri, 10.000 m 1988 tanpa insiden Indonesia), wajib ganti judul; folder di seri sepak bola padahal topik panahan/bulu tangkis."
 ---
 
 # Kisah di Balik Medali Emas Olimpiade yang Dicuri dari Indonesia

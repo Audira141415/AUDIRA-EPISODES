@@ -5,7 +5,11 @@ title: "Masa Depan Pekerjaan: 10 Profesi yang Akan Diganti AI 2030"
 hook: "Bukan hanya pabrik — programmer dan dokter pun terancam"
 styleCandidates: ["DATAPHYSICAL (2D)", "CERDIK (2D)", "BROADCASTFORGE (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak   # tidak = fakta cepat basi (rekor, harga, produk)
+risiko: "Judul dan hook tidak akurat (data bukan daftar diganti AI; dokter tidak terancam), angka proyeksi WEF/peringkat Microsoft bisa diperbarui, hindari logo WEF/IMF/Microsoft di visual."
 ---
 
 # Masa Depan Pekerjaan: 10 Profesi yang Akan Diganti AI 2030

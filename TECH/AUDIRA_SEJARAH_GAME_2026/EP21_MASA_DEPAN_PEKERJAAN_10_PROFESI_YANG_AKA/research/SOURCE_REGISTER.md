@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sejarah game yang viral dan jarang diketahui`
+# Source Register — Masa Depan Pekerjaan: 10 Profesi yang Akan Diganti AI 2030
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Survei >1.000 pemberi kerja global (mewakili >14 juta pekerja). Proyeksi 2025–2030: 170 juta pekerjaan tercipta, 92 juta tergeser, neto +78 juta (7% lapangan kerja saat ini) | Future of Jobs Report 2025, World Economic Forum, Januari 2025 | https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf | 2026-11-25 | HIGH |
+| 2 | Pekerjaan menyusut tercepat 2025–2030 (Fig. 2.2): Postal Service Clerks, Bank Tellers, Data Entry Clerks, Cashiers and Ticket Clerks, Administrative Assistants and Executive Secretaries, Printing workers, Accounting/Bookkeeping/Payroll Clerks, Material-Recording and Stock-Keeping Clerks, Transportation Attendants and Conductors, Door-to-Door Sales/Street Vendors (lalu Graphic Designers, Claims Adjusters, Legal Officials, Legal Secretaries, Telemarketers). Tumbuh tercepat: Big Data Specialists, FinTech Engineers, AI/ML Specialists, Software and Applications Developers | Future of Jobs Report 2025, World Economic Forum, Januari 2025 | https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf | 2026-11-25 | HIGH |
+| 3 | Rata-rata 39% keterampilan pekerja akan berubah/usang 2025–2030; 40% pemberi kerja berencana mengurangi staf yang keterampilannya kurang relevan | Future of Jobs Report 2025, World Economic Forum, Januari 2025 | https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf | 2026-11-25 | HIGH |
+| 4 | Hampir 40% lapangan kerja global terpapar AI; ±60% di negara maju; kira-kira separuh pekerjaan terpapar bisa terbantu AI, separuh lain tugas kuncinya bisa dikerjakan AI (permintaan tenaga kerja turun) | AI Will Transform the Global Economy. Let's Make Sure It Benefits Humanity, Kristalina Georgieva (IMF Blog), 14 Jan 2024 | https://www.imf.org/en/Blogs/Articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity | 2026-11-25 | HIGH |
+| 5 | Secara global 1 dari 4 pekerja berada di pekerjaan dengan paparan GenAI; 3,3% di kategori paparan tertinggi; pekerjaan klerikal paling terpapar | Generative AI and Jobs: A Refined Global Index of Occupational Exposure, ILO, 20 Mei 2025 | https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure | 2026-11-25 | HIGH |
+| 6 | Analisis 200 ribu percakapan anonim Bing Copilot; AI paling banyak dipakai untuk kerja informasi (membuat, mengolah, mengomunikasikan informasi) | Working with AI: Measuring the Applicability of Generative AI to Occupations, Tomlinson, Jaffe, Wang, Counts, Suri (Microsoft Research), 2025 (arXiv 2507.07935) | https://arxiv.org/abs/2507.07935 | 2026-11-25 | HIGH |
+| 7 | Peringkat skor penerapan AI dari 785 profesi: Interpreters & Translators #1; Computer Programmers #81; Software Developers #120; Family Medicine Physicians #334; Radiologists #400; Nursing Assistants #745 (dihitung dari CSV resmi, urut skor tertinggi) | ai_applicability_scores.csv, microsoft/working-with-ai (data pendukung paper #6), 2025 | https://github.com/microsoft/working-with-ai | 2026-11-25 | MEDIUM |
+| 8 | AI generatif bisa memaparkan setara 300 juta pekerjaan penuh waktu pada otomasi; potensi menaikkan PDB global 7% | Generative AI could raise global GDP by 7%, Goldman Sachs Research (Briggs & Kodnani), 5 Apr 2023 | https://www.goldmansachs.com/insights/articles/generative-ai-could-raise-global-gdp-by-7-percent | 2026-11-25 | MEDIUM |

@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris` (`EP54`)
+# Naskah — Fakta Mengejutkan di Balik Final Piala Dunia 2022 yang Paling Dramatis
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Papan skor 3-3 raksasa di tengah layar, tiga bola emas jatuh ke gawang, tulisan KALAH? berkedip.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Prancis mencetak tiga gol di final Piala Dunia, dan tetap kalah. Belum pernah terjadi sebelumnya. Ini fakta di balik final Qatar 2022.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Stadion Lusail dari udara saat senja, kamera turun ke tribun; callout HUD 88.966 dan ~1,5 miliar (laporan FIFA, Januari 2023).
 
-> <konteks singkat + "Di Audira, ...">
+> Minggu, 18 Desember 2022, Stadion Lusail. Sebanyak 88.966 penonton memadati tribun, dan menurut FIFA hampir satu setengah miliar orang ikut menonton. Argentina melawan Prancis, sang juara bertahan.
 
-## c02 — <Judul Bab 1>
+## c02 — Dua kosong
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Papan taktik 3D, siluet pemain biru-putih menyerang; HUD menit 23 dan 36, skor 2-0; statistik tembakan Prancis: 0.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Argentina menguasai babak pertama. Messi mencetak penalti menit ke-23, Di Maria menambah di menit ke-36. Dua kosong. Prancis belum punya satu percobaan pun ke gawang sampai menit ke-80.
 
-## c03 — <Judul Bab 2>
+## c03 — Sembilan puluh tujuh detik
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Jam digital menghitung 97 detik di atas siluet serangan balik; dua kilatan gol; skor 2-2.
 
-> <teks narasi>
+> Lalu Mbappe mengubah segalanya. Penalti menit ke-80. Hanya sembilan puluh tujuh detik kemudian, ia menyambar umpan Thuram dengan tendangan voli. Dua sama. Pertandingan masuk perpanjangan waktu.
 
-## c04 — <Judul Bab 3>
+## c04 — Perpanjangan waktu
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **37** · estimasi **15 dtk**
+- Visual: Bola 3D menyentuh tangan siluet bek, titik penalti, jaring bergetar; HUD 118' dan 1966 Hurst.
 
-> <teks narasi>
+> Di babak tambahan, Messi mencetak gol lagi, Argentina unggul tiga dua. Tapi tembakan Mbappe mengenai tangan Montiel. Menit ke-118, penalti kedua, Mbappe mencetaknya. Tiga sama, hat-trick yang kedua di final Piala Dunia setelah Geoff Hurst, 1966.
 
-## c05 — <Judul Bab 4>
+## c05 — Adu penalti
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Gawang dari belakang kiper siluet, bola melebar, papan skor penalti 4-2; HUD 1978, 1986, 2022.
 
-> <teks narasi>
+> Lalu adu penalti. Kiper Emiliano Martinez menahan tendangan Coman, tendangan Tchouameni melenceng. Montiel menuntaskan. Argentina menang empat dua, juara dunia ketiga, pertama sejak 1986.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Piala emas generik berputar di podium, teks Golden Ball x2 (per November 2026), kolase kutipan media tanpa logo.
 
-> <teks narasi>
+> Messi dinobatkan pemain terbaik turnamen, Golden Ball kedua. Sampai kini, belum ada pemain lain yang meraihnya dua kali. Banyak media menyebutnya salah satu final terhebat.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: Gawang dan bola emas diam di stadion kosong, matahari terbit; kartu outro AUDIRA, Created by Agus Dwi R.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Tiga gol saja ternyata tak cukup untuk juara. Ikuti AUDIRA untuk fakta sepak bola berikutnya.
+
+## Opsi hook lain
+
+1. 3-3 di final Piala Dunia, dan sang pencetak tiga gol justru pulang kalah.
+2. Dua gol dalam 97 detik membalik final yang sudah dianggap selesai.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **204 kata** ≈ **85 dtk**

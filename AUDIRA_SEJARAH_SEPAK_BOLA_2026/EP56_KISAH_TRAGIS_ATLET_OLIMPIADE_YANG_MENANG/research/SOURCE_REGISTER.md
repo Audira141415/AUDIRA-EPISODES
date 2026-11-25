@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Kisah Tragis Atlet Olimpiade yang Menang tapi Tidak Pernah Diakui Negaranya
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Sohn & Nam menunduk di podium Berlin 1936; Sohn menutupi bendera Jepang dengan bibit pohon ek; bendera & lagu yang diputar milik Jepang; Dong-A Ilbo menghapus bendera dari foto (25 Agustus), dibredel 9 bulan, 8 wartawan ditangkap; Sohn membawa obor Seoul 1988 di depan 80.000 penonton | "The forgotten story of Sohn Kee-chung, Korea's Olympic hero", Andy Bull, The Guardian, 2011 | https://www.theguardian.com/sport/blog/2011/aug/27/sohn-kee-chung-olympics-korea | 2026-11-25 | HIGH |
+| 2 | Lagu kebangsaan Jepang diputar saat Sohn & Nam berdiri menunduk; IOC baru bertahun-tahun kemudian mencatat keduanya sebagai Korea; Sohn membawa api Olimpiade di Seoul 1988 | "Sohn Kee-chung" (obituari), Mike Lewis, The Guardian, 2002 | https://www.theguardian.com/news/2002/nov/30/guardianobituaries | 2026-11-25 | HIGH |
+| 3 | Sohn wajib bertanding dengan nama Jepang "Son Kitei"; menang maraton 1936 dengan rekor Olimpiade 2:29:19.2; IOC mengkreditkan emasnya ke Jepang; Sohn wafat 15 Nov 2002 | "Sohn Kee-chung", Wikipedia (diakses via API), 2026 | https://en.wikipedia.org/wiki/Sohn_Kee-chung | 2026-11-25 | MEDIUM |
+| 4 | Owens meraih 4 emas di Berlin 1936; di resepsi Waldorf New York ia harus naik lift barang; tidak diundang ke Gedung Putih, Roosevelt bahkan tidak mengirim telegram; balapan melawan kuda; Medal of Freedom 1976 | "50 stunning Olympic moments No6: Jesse Owens's four gold medals, 1936", The Guardian, 2011 | https://www.theguardian.com/sport/london-2012-olympics-blog/2011/dec/21/jesse-owens-four-gold-medals | 2026-11-25 | HIGH |
+| 5 | Owens: 4 emas dengan rekor Olimpiade; kutipan "Hitler didn't snub me—it was our president"; Presidential Medal of Freedom 1976 (Presiden Ford); Congressional Gold Medal anumerta 1990 | "Jesse Owens", Wikipedia (diakses via API), 2026 | https://en.wikipedia.org/wiki/Jesse_Owens | 2026-11-25 | MEDIUM |
+| 6 | Peter Norman (perak 200 m, Meksiko 1968) memakai lencana Olympic Project for Human Rights; keluarga menyebut ia sengaja tak dipilih ke Munich 1972, AOC membantah (finis ketiga di kejuaraan nasional 1972); usulan permintaan maaf parlemen 2012 | "Apology urged for Australian Olympian in 1968 black power protest", CNN, 2012 | https://edition.cnn.com/2012/08/21/world/asia/australia-norman-olympic-apology/index.html | 2026-11-25 | HIGH |
+| 7 | Norman wafat 3 Okt 2006; Smith & Carlos jadi pengusung peti; DPR Australia mengesahkan permintaan maaf anumerta 11 Okt 2012; AOC memberi Order of Merit anumerta 2018 | "Peter Norman", Wikipedia (diakses via API; merujuk Parliament of Australia Votes 11 Okt 2012), 2026 | https://en.wikipedia.org/wiki/Peter_Norman | 2026-11-25 | MEDIUM |

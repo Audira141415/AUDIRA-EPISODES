@@ -5,7 +5,11 @@ title: "Fakta Mengejutkan di Balik Final Piala Dunia 2022 yang Paling Dramatis"
 hook: "3-3 setelah perpanjangan waktu — detik-detik yang mengguncang 1,5 miliar penonton"
 styleCandidates: ["CINESTORY (2D)", "COMICFORGE (2D)", "BROADCASTFORGE (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 5
+awet: ya   # final 2022 tetap; hanya "satu-satunya Golden Ball ganda" bisa basi
+risiko: "Angka 1,5 miliar adalah jangkauan global versi FIFA, bukan penonton serempak; gamesmanship Martinez dan gol ketiga Argentina diperdebatkan"
 ---
 
 # Fakta Mengejutkan di Balik Final Piala Dunia 2022 yang Paling Dramatis

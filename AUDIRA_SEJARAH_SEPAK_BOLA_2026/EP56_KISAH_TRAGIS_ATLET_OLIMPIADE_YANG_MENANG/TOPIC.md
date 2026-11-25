@@ -5,7 +5,11 @@ title: "Kisah Tragis Atlet Olimpiade yang Menang tapi Tidak Pernah Diakui Negara
 hook: "Medali emas tapi pulang tanpa sambutan — ironi yang menyesakkan"
 styleCandidates: ["CINESTORY (2D)", "FILM16 (2D)", "CHARACTERFLOW (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul terlalu mutlak (ketiganya akhirnya diakui); kasus Peter Norman diperdebatkan AOC; tokoh nyata wajib siluet tanpa wajah; bukan topik sepak bola meski di folder seri sepak bola"
 ---
 
 # Kisah Tragis Atlet Olimpiade yang Menang tapi Tidak Pernah Diakui Negaranya

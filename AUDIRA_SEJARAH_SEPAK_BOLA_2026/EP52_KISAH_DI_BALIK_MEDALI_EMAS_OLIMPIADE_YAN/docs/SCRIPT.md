@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris` (`EP52`)
+# Naskah — Kisah di Balik Medali Emas Olimpiade yang Dicuri dari Indonesia
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: Judul klaim 'DICURI?' retak di layar; terbelah ke arsip stadion Seoul bergaya dokumen. Siluet pelari tanpa wajah.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Medali emas Olimpiade yang dicuri dari Indonesia? Cerita itu sering beredar. Catatan resminya berkata lain.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Lintasan stadion 3D berputar, siluet pelari; callout HUD '27:21.46 · REKOR OLIMPIADE', label MAR.
 
-> <konteks singkat + "Di Audira, ...">
+> Ini AUDIRA. Kita mulai dari lari sepuluh ribu meter, Olimpiade Seoul, September 1988. Pemenangnya Brahim Boutayeb dari Maroko, dengan waktu dua puluh tujuh menit dua puluh satu detik. Itu rekor Olimpiade.
 
-## c02 — <Judul Bab 1>
+## c02 — Pelari Indonesia di 10.000 m
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **36** · estimasi **15 dtk**
+- Visual: Papan hasil penyisihan, baris INA disorot; HUD '29:55.23'; siluet pelari berseragam merah putih berhenti di garis, tanpa wajah.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Indonesia memang punya pelari di lomba itu, Edward Nabunome. Ia urutan tujuh belas di heat satu, dua puluh sembilan menit lima puluh lima detik, dan tidak lolos ke final. Tidak ada medali yang hilang di sana.
 
-## c03 — <Judul Bab 2>
+## c03 — Medali pertama dari panahan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Lapangan panahan Hwarang, tiga name plate teks (tanpa foto), busur dan target 70 m.
 
-> <teks narasi>
+> Medali pertama Indonesia justru datang di Seoul juga, dari panahan. Tiga perempuan: Lilies Handayani, Nurfitriyana Saiman, dan Kusuma Wardhani.
 
-## c04 — <Judul Bab 3>
+## c04 — Drama adu tembak
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Close-up target, anak panah menancap berurutan, papan skor imbang, HUD '9 PANAH'.
 
-> <teks narasi>
+> Drama terjadi di final beregu. Indonesia dan Amerika Serikat sama-sama berada di posisi kedua dengan poin yang sama. Wasit memakai adu tembak sembilan anak panah.
 
-## c05 — <Judul Bab 4>
+## c05 — Skor penentu
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: Dua papan skor 72 vs 67 beradu, medali perak berputar, podium KOR-INA-USA.
 
-> <teks narasi>
+> Indonesia menembak tujuh puluh dua. Amerika hanya enam puluh tujuh. Perak jadi milik Indonesia, di belakang Korea Selatan yang juara.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan: emas pertama Barcelona 1992
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **12 dtk**
+- Visual: Lapangan bulu tangkis 3D, kok melayang, dua name plate teks, peta Asia Tenggara dengan Indonesia menyala; HUD 'BARCELONA 1992'.
 
-> <teks narasi>
+> Lalu kapan emas pertama datang? Empat tahun kemudian, Barcelona 1992. Susi Susanti dan Alan Budikusuma menang bulu tangkis tunggal, dan Indonesia jadi negara Asia Tenggara pertama yang meraih emas Olimpiade.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **12 dtk**
+- Visual: Garis waktu 1988 perak, 1992 emas, 2024 hitungan 40 medali / 10 emas naik; bendera merah putih; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Per Paris 2024, Indonesia membawa pulang empat puluh medali, sepuluh di antaranya emas. Jadi bukan emas yang dicuri. Yang ada, perjalanan panjang dari perak panahan sampai emas. Ikuti terus AUDIRA.
+
+## Opsi hook lain
+
+1. Tidak ada medali emas yang dicuri dari Indonesia. Tapi ada medali pertama yang diputuskan lewat sembilan anak panah.
+2. Satu skor, 72 lawan 67, mengubah sejarah olahraga Indonesia di Olimpiade.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **206 kata** ≈ **86 dtk**

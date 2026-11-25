@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Fakta Mengejutkan di Balik Final Piala Dunia 2022 yang Paling Dramatis
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Final 18 Des 2022 dihadiri 88.966 penonton di Lusail; jangkauan global mendekati 1,5 miliar penonton | One Month On: 5 billion engaged with the FIFA World Cup Qatar 2022, FIFA, 2023 | https://web.archive.org/web/20230118183433/https://www.fifa.com/tournaments/mens/worldcup/qatar2022/news/one-month-on-5-billion-engaged-with-the-fifa-world-cup-qatar-2022-tm | 2026-11-25 | HIGH |
+| 2 | Wasit final: Szymon Marciniak (Polandia) | Poland's Szymon Marciniak to referee FIFA World Cup final, FIFA, 2022 | https://web.archive.org/web/20221216125623/https://www.fifa.com/technical/refereeing/news/szymon-marciniak-from-poland-to-referee-fifa-world-cup-final | 2026-11-25 | HIGH |
+| 3 | Final dinilai salah satu yang terhebat: duel Messi-Mbappe, gol balasan dramatis, penentuan lewat adu penalti | World Cup 2022: Was Argentina's win over France the best ever final?, BBC Sport, 2022 | https://www.bbc.com/sport/football/64019067 | 2026-11-25 | HIGH |
+| 4 | Skor 3-3, adu penalti 4-2 (Mbappe, Messi, Dybala, Paredes, Kolo Muani, Montiel mencetak; Coman ditahan, Tchouameni melebar); wasit; penonton 88.966 | World Cup 2022 Final, RSSSF (Rec.Sport.Soccer Statistics Foundation), 2022 | https://www.rsssf.org/tables/2022f.html | 2026-11-25 | MEDIUM |
+| 5 | Messi penalti min-23, Di Maria min-36; Prancis tanpa percobaan ke gawang sampai min-80; Mbappe penalti min-80 lalu gol voli 97 detik kemudian (2-2); Messi gol di perpanjangan, Mbappe penalti min-118 (3-3) dan hat-trick kedua di final setelah Geoff Hurst 1966 | 2022 FIFA World Cup final, Wikipedia (merujuk FIFA/BBC/Guardian), diakses 2026 | https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final | 2026-11-25 | MEDIUM |
+| 6 | Prancis tim pertama yang mencetak tiga gol di final Piala Dunia dan kalah; Argentina juara ke-3, pertama sejak 1986; final ke-3 yang ditentukan adu penalti | 2022 FIFA World Cup final, Wikipedia, diakses 2026 | https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final | 2026-11-25 | MEDIUM |
+| 7 | Messi Golden Ball kedua (pertama dan sejauh ini satu-satunya yang dua kali); Martinez Golden Glove; Enzo Fernandez Young Player | 2022 FIFA World Cup final, Wikipedia (merujuk FIFA), diakses 2026 | https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final | 2026-11-25 | MEDIUM |
+| 8 | 18 Des = Hari Nasional Qatar; Lusail dirancang Foster and Partners dan Populous; Argentina kalah 1-2 dari Arab Saudi di laga pembuka lalu juara | 2022 FIFA World Cup final, Wikipedia, diakses 2026 | https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final | 2026-11-25 | MEDIUM |

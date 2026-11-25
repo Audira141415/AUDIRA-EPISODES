@@ -5,7 +5,11 @@ title: "Robotika Humanoid 2025: Tesla Optimus vs Figure 01 vs Boston Dynamics"
 hook: "Robot yang bisa berjalan, berlari, dan belajar — siapa paling canggih?"
 styleCandidates: ["AUDIRABOT (3D)", "SCALEFORGE (3D)", "CYBERFORGE (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak   # tidak = fakta cepat basi (rekor, harga, produk)
+risiko: "Fakta produk cepat basi (per Nov 2026 Atlas versi produk sudah tampil di CES 2026 dan Optimus Gen 3 menunggu rilis), judul masih menyebut Figure 01 yang usang, dan banyak angka berupa klaim perusahaan."
 ---
 
 # Robotika Humanoid 2025: Tesla Optimus vs Figure 01 vs Boston Dynamics

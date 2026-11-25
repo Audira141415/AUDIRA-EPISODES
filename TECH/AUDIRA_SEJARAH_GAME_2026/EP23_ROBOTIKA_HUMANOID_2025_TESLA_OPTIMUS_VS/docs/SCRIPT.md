@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP23`)
+# Naskah — Robotika Humanoid 2025: Tesla Optimus vs Figure 01 vs Boston Dynamics
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **12** · estimasi **5 dtk**
+- Visual: Tiga siluet robot humanoid berdiri berjajar di panggung gelap, lampu sorot menyala satu per satu. HUD label: OPTIMUS · ATLAS · FIGURE 03.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Tiga robot humanoid, tiga cara berpikir. Mana yang paling siap kerja beneran?
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Kaki robot melangkah di lantai pabrik, kamera turun ke langkah kaki; teks kinetik "jalan dua kaki ✓" dicoret, diganti "belajar?".
 
-> <konteks singkat + "Di Audira, ...">
+> Per 2025, lombanya bukan lagi soal jalan dua kaki. Semuanya sudah bisa. Sekarang pertanyaannya, siapa yang paling cepat belajar?
 
-## c02 — <Judul Bab 1>
+## c02 — Tesla Optimus
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **34** · estimasi **14 dtk**
+- Visual: Robot ramping di lini perakitan mobil; HUD callout "AI Day 2021", lalu "GEN 2 · DES 2023", bar "+30% kecepatan", timbangan "−10 kg", kartu harga "US$20.000–30.000".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tesla mengumumkan Optimus di AI Day, Agustus 2021. Generasi keduanya muncul Desember 2023, jalannya tiga puluh persen lebih cepat dan sepuluh kilo lebih ringan. Musk bilang harganya dua puluh sampai tiga puluh ribu dolar.
 
-## c03 — <Judul Bab 2>
+## c03 — Boston Dynamics Atlas
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **12 dtk**
+- Visual: Robot hidrolik besar melakukan salto di arena parkur (HUD "2017"), lalu masuk kotak "PENSIUN · APR 2024"; robot listrik ramping bangkit dari lantai dengan sendi pinggang berputar penuh.
 
-> <teks narasi>
+> Boston Dynamics punya jam terbang paling lama. Atlas hidrolik mereka sudah salto sejak 2017. April 2024, versi itu dipensiunkan dan diganti Atlas listrik yang sendinya bisa berputar melebihi gerak manusia.
 
-## c04 — <Judul Bab 3>
+## c04 — Figure dan Helix
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Dapur rumah; dua robot berdiri di kiri-kanan meja, satu "otak" hologram di tengah memancarkan garis ke keduanya. HUD "BERDIRI 2022", "HELIX · FEB 2025", "1 OTAK = 2 ROBOT".
 
-> <teks narasi>
+> Figure paling muda, baru berdiri 2022. Tapi Februari 2025 mereka merilis Helix, otak AI yang bisa mengendalikan dua robot sekaligus, bahkan untuk barang yang belum pernah mereka lihat.
 
-## c05 — <Judul Bab 4>
+## c05 — Figure 03
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Close-up tangan robot mengangkat telur; HUD sensor ujung jari "3 GRAM", panel kamera "2× FRAME RATE", tanggal "OKT 2025".
 
-> <teks narasi>
+> Oktober 2025 datang Figure 03. Kameranya dua kali lebih cepat, dan ujung jarinya bisa merasakan tekanan cuma tiga gram.
 
-## c06 — <Judul Bab 5>
+## c06 — Siapa paling canggih
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **12 dtk**
+- Visual: Papan skor tiga kolom: ATLAS "kelincahan", FIGURE "otak belajar", OPTIMUS "skala pabrik"; di kolom Optimus muncul tangan operator bersarung dengan kabel ke robot (label "TELEOPERASI").
 
-> <teks narasi>
+> Jadi siapa paling canggih? Atlas unggul di kelincahan. Figure unggul di otak yang belajar dari manusia. Optimus unggul di skala pabrik, tapi beberapa demonya ketahuan masih dikendalikan operator dari jauh.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: Hero shot ketiga robot berjalan maju bersama saat matahari terbit di pintu gudang; papan "AUDIRA" di dinding gudang; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Robot paling canggih bukan yang paling jago salto, tapi yang paling cepat belajar pekerjaan baru. Ikuti AUDIRA buat babak berikutnya.
+
+## Opsi hook lain
+
+1. Satu robot bisa salto, satu bisa belajar dari manusia, satu dijual seharga mobil. Kamu pilih yang mana?
+2. Robot rumah tangga sudah bukan fiksi. Tiga perusahaan ini lagi balapan jadi yang pertama.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **192 kata** ≈ **77–85 dtk** @135–150 WPM

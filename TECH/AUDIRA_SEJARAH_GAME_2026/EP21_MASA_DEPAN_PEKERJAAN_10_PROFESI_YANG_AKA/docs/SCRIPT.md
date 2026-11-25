@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP21`)
+# Naskah — Masa Depan Pekerjaan: 10 Profesi yang Akan Diganti AI 2030
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **12** · estimasi **5 dtk**
+- Visual: Jas dokter dan laptop programmer berdiri berdampingan, stempel merah "DIGANTI AI?" menghantam, lalu retak. HUD: tanda tanya besar.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Dokter dan programmer bakal diganti AI duluan? Data terbaru bilang: belum tentu.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Tumpukan laporan tebal terbuka di meja, halaman berkibar. HUD: ">1.000 perusahaan", "2030". Papan nama "AUDIRA" di sampul map.
 
-> <konteks singkat + "Di Audira, ...">
+> Ini AUDIRA. Kita bongkar laporan Future of Jobs dari Forum Ekonomi Dunia, hasil survei lebih dari seribu perusahaan, soal nasib pekerjaan sampai 2030.
 
-## c02 — <Judul Bab 1>
+## c02 — Sepuluh profesi yang menyusut
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **37** · estimasi **16 dtk**
+- Visual: Rak 10 kartu profesi berikon (kotak pos, loket bank, keyboard, mesin kasir, map sekretaris, mesin cetak, buku kas, rak gudang, tiket kondektur, gerobak dagang) jatuh satu per satu seperti domino mengikuti tiap kata. HUD: counter 1–10.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Sepuluh profesi yang diprediksi paling cepat menyusut: petugas pos, teller bank, juru entri data, kasir, asisten administrasi, pekerja percetakan, staf pembukuan dan penggajian, petugas pencatat stok, kondektur, dan pedagang keliling. Polanya sama: kerja rutin, mengolah data, berulang.
 
-## c03 — <Judul Bab 2>
+## c03 — Skala pergeseran
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **9 dtk**
+- Visual: Timbangan raksasa. Kiri turun tumpukan balok merah "92 JUTA", kanan naik balok hijau "170 JUTA", jarum berhenti di "+78 JUTA".
 
-> <teks narasi>
+> Skalanya besar. Sampai 2030, sekitar 92 juta pekerjaan diprediksi hilang. Tapi 170 juta pekerjaan baru muncul. Selisihnya, bertambah 78 juta.
 
-## c04 — <Judul Bab 3>
+## c04 — Lalu dokter dan programmer?
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Gelembung chat bertumpuk jadi menara ("200 RIBU"), lalu berubah jadi papan peringkat vertikal 785 baris. Pin programmer menyala di #81, pin dokter jauh di bawah #334, radiolog #400. Tanpa logo merek.
 
-> <teks narasi>
+> Lalu dokter dan programmer? Peneliti Microsoft menganalisis 200 ribu percakapan dengan Copilot. Programmer komputer skor AI-nya cukup tinggi, peringkat 81 dari 785 profesi. Dokter keluarga? Peringkat 334. Radiolog, 400.
 
-## c05 — <Judul Bab 4>
+## c05 — Peta paparan dunia
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Globe berputar, 40% wilayah pekerja menyala kuning; zoom ke blok negara maju yang menyala 60%. Lalu pekerja terbelah dua: separuh dibantu lengan robot, separuh mejanya kosong. HUD: "40%", "60%", "1/2".
 
-> <teks narasi>
+> Dana Moneter Internasional menghitung, hampir 40 persen pekerjaan di dunia terpapar AI. Di negara maju, sekitar 60 persen. Tapi kira-kira separuhnya justru bisa terbantu. Separuh lagi, tugasnya bisa diambil alih.
 
-## c06 — <Judul Bab 5>
+## c06 — Kenapa begitu
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Layar terbagi. Kiri: dokumen, ringkasan, gelembung tanya-jawab terisi otomatis oleh kursor AI. Kanan: tangan dokter memegang stetoskop di ruang periksa, robot berhenti di depan pintu.
 
-> <teks narasi>
+> Kenapa begitu? AI paling jago di kerja informasi: menulis, merangkum, menjawab pertanyaan. Kerja yang butuh tangan, tubuh, dan tatap muka, seperti memeriksa pasien, jauh lebih sulit diambil alih.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Ikon gelar wisuda tetap utuh, sementara balok "tugas berulang" hancur. Meter keterampilan terisi ke 39%. Pertanyaan ke penonton, lalu outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi yang terancam bukan gelar, tapi tugas yang berulang. Rata-rata, 39 persen keterampilan pekerja bakal berubah sampai 2030. Pekerjaanmu masuk daftar yang mana?
+
+## Opsi hook lain
+
+1. 92 juta pekerjaan bakal hilang sampai 2030. Tapi dokter bukan salah satunya.
+2. Teller bank, kasir, juru entri data. Kenapa justru mereka yang paling cepat menyusut, bukan programmer?
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **202 kata** ≈ **81–90 dtk** @135–150 WPM

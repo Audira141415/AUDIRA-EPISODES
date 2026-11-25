@@ -5,7 +5,11 @@ title: "Rekor Formula 1 Michael Schumacher yang Baru Disamai 15 Tahun Kemudian"
 hook: "7 gelar dunia dan hampir 100 kemenangan — warisan yang abadi"
 styleCandidates: ["DATAPHYSICAL (2D)", "CINESTORY (2D)", "FILM16 (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul '15 tahun' & hook 'hampir 100' tidak akurat (16 thn gelar, 14 thn kemenangan, 91 menang); topik F1 di folder seri sepak bola; kesehatan Schumacher sensitif, jangan wajah asli/logo tim."
 ---
 
 # Rekor Formula 1 Michael Schumacher yang Baru Disamai 15 Tahun Kemudian

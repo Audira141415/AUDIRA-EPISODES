@@ -1,33 +1,16 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Rekor Formula 1 Michael Schumacher yang Baru Disamai 15 Tahun Kemudian
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Lewis Hamilton menang GP Turki 15 November 2020 dan meraih gelar dunia ketujuh, menyamai rekor Michael Schumacher | Lewis Hamilton wins seventh Formula 1 title – equalling Michael Schumacher, BBC Sport, 15 Nov 2020 | https://www.bbc.co.uk/sport/formula1/54950152 | 2026-11-25 | HIGH |
+| 2 | Kemenangan di Turki (Istanbul Park) memastikan gelar ketujuh Hamilton, menyamai rekor tujuh gelar | Lewis Hamilton wins Turkish GP to clinch record-equalling seventh F1 title, The Guardian, 15 Nov 2020 | https://www.theguardian.com/sport/2020/nov/15/lewis-hamilton-wins-turkish-gp-to-clinch-record-equalling-seventh-f1-world-title-michael-schumacher | 2026-11-25 | HIGH |
+| 3 | Hamilton menyamai rekor 91 kemenangan Schumacher di GP Eifel (Nürburgring, Jerman) 11 Oktober 2020; Mick Schumacher menyerahkan salah satu helm Michael kepada Hamilton saat wawancara pasca-balapan | Eifel Grand Prix 2020 race report: Hamilton matches Schumacher record with 91st win, Formula1.com, 11 Oct 2020 | https://www.formula1.com/en/latest/article.hamilton-takes-record-equalling-91st-victory-at-eifel-gp-as-ricciardo-claims.5z1UB37DlpHwKWM9GBM90M.html | 2026-11-25 | HIGH |
+| 4 | Hamilton meraih kemenangan ke-92 di GP Portugal (Portimão) 25 Oktober 2020, mematahkan rekor kemenangan Schumacher | Portuguese Grand Prix 2020: Lewis Hamilton takes record-breaking 92nd win, Formula1.com, 25 Oct 2020 | https://www.formula1.com/en/latest/article.hamilton-takes-record-breaking-92nd-win-with-dominant-drive-in-portuguese-gp.5gTAYvkxPrfqhT8ZYZFRt2.html | 2026-11-25 | HIGH |
+| 5 | Schumacher (Ferrari) menang GP Tiongkok, Shanghai, 1 Oktober 2006 — kemenangan ke-91 sekaligus terakhir kariernya | 2006 Sinopec Chinese Grand Prix – Race Result, Formula1.com (hasil resmi); konteks "91st and last victory": Wikipedia "2006 Chinese Grand Prix" | https://www.formula1.com/en/results.html/2006/races/805/china/race-result.html | 2026-11-25 | HIGH |
+| 6 | GP Belgia (Spa-Francorchamps) 29 Agustus 2004: Schumacher finis ke-2 dan memastikan gelar dunia ketujuh | 2004 Belgian Grand Prix – Race Result, Formula1.com (hasil resmi); konteks gelar ketujuh: Wikipedia "2004 Belgian Grand Prix" | https://www.formula1.com/en/results.html/2004/races/766/belgium/race-result.html | 2026-11-25 | HIGH |
+| 7 | Schumacher (lahir 3 Jan 1969, Jerman) membalap F1 1991–2006 dan 2010–2012; tujuh gelar dunia; saat pensiun memegang rekor 91 kemenangan, 68 pole position, 155 podium; gelar disamai Hamilton 2020 (per halaman yang dibaca 2026-11-25 masih rekor bersama) | Michael Schumacher, Wikipedia (versi dibaca 2026-11-25) | https://en.wikipedia.org/wiki/Michael_Schumacher | 2026-11-25 | MEDIUM |
+| 8 | Debut F1 bersama Jordan di GP Belgia 1991, lalu direkrut Benetton untuk sisa musim; juara 1994 (dikunci di balapan terakhir setelah tabrakan dengan Damon Hill) dan 1995; pindah ke Ferrari 1996; gelar 2000 = gelar pembalap pertama Ferrari dalam 21 tahun; juara beruntun 2000–2004 | Michael Schumacher, Wikipedia | https://en.wikipedia.org/wiki/Michael_Schumacher | 2026-11-25 | MEDIUM |
+| 9 | Musim 2004: Schumacher menang 13 dari 18 balapan, mematahkan rekornya sendiri (11 kemenangan semusim, 2002); juga rekor 5 gelar beruntun | 2004 Formula One World Championship, Wikipedia | https://en.wikipedia.org/wiki/2004_Formula_One_World_Championship | 2026-11-25 | MEDIUM |
+| 10 | Rekor 13 kemenangan semusim disamai Vettel 2013 dan dipecahkan Verstappen 2022 (rekor semusim Schumacher sudah tidak berlaku) | 2004 Formula One World Championship, Wikipedia | https://en.wikipedia.org/wiki/2004_Formula_One_World_Championship | 2026-11-25 | MEDIUM |
