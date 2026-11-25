@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP31`)
+# Naskah — Neutrino: Partikel Hantu yang Menembus Bumi Tanpa Hambatan
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Siluet tubuh manusia close-up, hujan garis cahaya tipis menembusnya dari atas tanpa jejak. HUD: "RIBUAN MILIAR / DETIK".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Saat kamu dengar kalimat ini, ribuan miliar partikel sedang menembus tubuhmu. Ini AUDIRA, dan partikel itu namanya neutrino.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Satu neutrino (bola kecil bercahaya) melesat menembus tembok bata, lalu menembus Bumi utuh dari sisi ke sisi. HUD: "MUATAN 0 · MASSA ≈ 0".
 
-> <konteks singkat + "Di Audira, ...">
+> Neutrino tidak bermuatan listrik dan massanya super kecil. Ia hampir tidak pernah menabrak apa pun, jadi tembok, tubuhmu, bahkan planet dilewati begitu saja.
 
-## c02 — <Judul Bab 1>
+## c02 — Tebakan Pauli
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Meja kerja 1930, surat dan rumus peluruhan beta, timbangan energi yang miring lalu seimbang saat partikel misterius ditambahkan. HUD: "1930 · WOLFGANG PAULI".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tahun 1930, Wolfgang Pauli menebak partikel ini ada, cuma untuk menyelamatkan hukum kekekalan energi. Pauli sendiri ragu partikel itu benar-benar ada.
 
-## c03 — <Judul Bab 2>
+## c03 — Tertangkap di reaktor
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Reaktor nuklir di malam hari, kamera turun ke tangki air besar di sebelahnya, satu kilatan kecil di dalam tangki. HUD: "1956 · COWAN & REINES", lalu badge "NOBEL 1995".
 
-> <teks narasi>
+> Baru tahun 1956, Clyde Cowan dan Frederick Reines berhasil menangkapnya di dekat reaktor nuklir, pakai tangki air besar. Reines kemudian dapat Nobel.
 
-## c04 — <Judul Bab 3>
+## c04 — Super-Kamiokande
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Potongan gunung, kamera menyelam ke rongga raksasa berisi air dengan dinding penuh sensor bulat keemasan. HUD: "1.000 M", "50.000 TON AIR", "11.129 SENSOR".
 
-> <teks narasi>
+> Di Jepang, detektor Super-Kamiokande tertanam 1.000 meter di bawah gunung. Isinya 50.000 ton air murni, dijaga lebih dari 11.000 sensor cahaya.
 
-## c05 — <Judul Bab 4>
+## c05 — IceCube di Antartika
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Lanskap es Kutub Selatan, kamera menembus lapisan es ke kubus berisi deretan untai sensor; satu tumbukan memicu kilatan yang merambat dari sensor ke sensor. HUD: "1 KM³ ES".
 
-> <teks narasi>
+> Di Kutub Selatan, IceCube menanam sensor di dalam es sebanyak satu kilometer kubik. Begitu satu neutrino akhirnya menabrak atom, muncul kilatan cahaya kecil yang langsung tertangkap.
 
-## c06 — <Judul Bab 5>
+## c06 — Berganti jenis dan ditelan Bumi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **39** · estimasi **17 dtk**
+- Visual: Neutrino berganti warna tiga kali di perjalanan (tiga jenis), badge "NOBEL FISIKA 2015". Lalu irisan Bumi: neutrino biasa lolos, neutrino berenergi tinggi meredup di inti. HUD: "2017 · DITELAN BUMI".
 
-> <teks narasi>
+> Dari Jepang ketahuan, neutrino bisa berganti jenis di tengah perjalanan. Artinya ia punya massa, temuan yang meraih Nobel Fisika 2015. Tapi benarkah menembus Bumi tanpa hambatan? Tidak selalu. Tahun 2017, IceCube membuktikan neutrino berenergi sangat tinggi sebagian ditelan Bumi.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Supernova di Awan Magellan Besar, gelombang neutrino tiba di Bumi lebih dulu, cahaya menyusul. HUD: "1987", "25 NEUTRINO", "2–3 JAM LEBIH AWAL". Tutup dengan outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Tahun 1987, sebuah bintang di galaksi tetangga meledak. Neutrinonya tiba dua sampai tiga jam sebelum cahayanya terlihat. Cuma 25 yang tertangkap, tapi itu kabar pertama dari ledakan bintang. Sampai jumpa di sains berikutnya.
+
+## Opsi hook lain
+
+1. Partikel paling banyak kedua di alam semesta sedang lewat di badanmu sekarang, dan tidak meninggalkan bekas.
+2. Ada partikel yang bisa menembus Bumi seperti menembus kabut. Fisikawan menyebutnya partikel hantu.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **203 kata** ≈ **87 dtk** (81–90 dtk @135–150 WPM)

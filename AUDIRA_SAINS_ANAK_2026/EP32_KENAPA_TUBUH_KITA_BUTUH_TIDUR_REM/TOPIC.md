@@ -5,7 +5,11 @@ title: "Kenapa Tubuh Kita Butuh Tidur REM"
 hook: "Fase tidur misterius yang otak gunakannya untuk memproses emosi dan mengkonsolidasi memori"
 styleCandidates: ["ANATOMIX (3D)", "INNERWORKS (3D)", "BEDAH (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Klaim fungsi REM sering dilebih-lebihkan: bukti memori kausal dari mencit, bukti emosi pada manusia korelasional; NREM juga penting untuk memori."
 ---
 
 # Kenapa Tubuh Kita Butuh Tidur REM

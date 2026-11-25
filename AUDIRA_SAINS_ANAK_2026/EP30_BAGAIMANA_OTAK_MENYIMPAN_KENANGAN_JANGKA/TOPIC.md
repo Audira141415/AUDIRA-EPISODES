@@ -5,7 +5,11 @@ title: "Bagaimana Otak Menyimpan Kenangan Jangka Panjang"
 hook: "Mekanisme molekuler di balik memori yang kamu simpan bertahun-tahun — dan kenapa beberapa hilang"
 styleCandidates: ["ANATOMIX (3D)", "NANOFORGE (3D)", "INNERWORKS (3D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Rendah; hook perlu nuansa (lupa sering = gagal panggil, bukan terhapus) dan pasien H.M. ditampilkan sebagai siluet tanpa wajah."
 ---
 
 # Bagaimana Otak Menyimpan Kenangan Jangka Panjang

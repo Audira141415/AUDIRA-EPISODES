@@ -5,7 +5,11 @@ title: "Teladan Uwais al-Qarni: Orang yang Dipuji Nabi tapi Tidak Pernah Bertemu
 hook: "Bagaimana seseorang bisa disebut-sebut Nabi sebagai manusia terbaik tanpa pernah sekalipun hadir?"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "STORYBOOK (2D)", "CHARACTERFLOW (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook asli salah ('manusia terbaik' seharusnya 'sebaik-baik tabi'in'); kisah populer menggendong ibu/larangan ibu tanpa sanad sahih tidak dipakai; tokoh wajib tanpa wajah."
 ---
 
 # Teladan Uwais al-Qarni: Orang yang Dipuji Nabi tapi Tidak Pernah Bertemu Beliau

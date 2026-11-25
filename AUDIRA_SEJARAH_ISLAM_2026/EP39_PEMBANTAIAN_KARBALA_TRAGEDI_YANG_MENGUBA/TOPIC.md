@@ -5,7 +5,11 @@ title: "Pembantaian Karbala: Tragedi yang Mengubah Sejarah Islam Selamanya"
 hook: "Cucu Nabi SAW dan 72 orang bersama beliau — apa yang sebenarnya terjadi di padang Karbala?"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "CINESTORY (2D)", "CHRONICLE (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Sensitif antar-mazhab Sunni/Syiah: angka 72 dan 4.000 berbeda antar riwayat, tanggung jawab Yazid diperdebatkan; wajib narasi netral, tanpa wajah dan kekerasan grafis"
 ---
 
 # Pembantaian Karbala: Tragedi yang Mengubah Sejarah Islam Selamanya

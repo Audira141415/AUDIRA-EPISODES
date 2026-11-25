@@ -5,7 +5,11 @@ title: "Neutrino: Partikel Hantu yang Menembus Bumi Tanpa Hambatan"
 hook: "Miliaran partikel menembus tubuhmu setiap detik, dan kamu tidak bisa merasakannya"
 styleCandidates: ["POLYVERSE (3D)", "SCALEFORGE (3D)", "NANOFORGE (3D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah; judul \"tanpa hambatan\" tidak mutlak (neutrino >40 TeV sebagian diserap Bumi), sudah dikoreksi di naskah"
 ---
 
 # Neutrino: Partikel Hantu yang Menembus Bumi Tanpa Hambatan

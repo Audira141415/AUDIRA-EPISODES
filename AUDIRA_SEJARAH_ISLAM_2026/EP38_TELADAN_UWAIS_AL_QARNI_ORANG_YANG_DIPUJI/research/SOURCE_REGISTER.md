@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sejarah peradaban Islam yang jarang diketahui`
+# Source Register — Teladan Uwais al-Qarni: Orang yang Dipuji Nabi tapi Tidak Pernah Bertemu Beliau
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Nabi bersabda akan datang orang Yaman bernama Uwais yang hanya meninggalkan ibunya di Yaman; pernah sakit belang (baras) lalu sembuh kecuali seluas dinar/dirham; siapa bertemu dengannya hendaknya minta dimohonkan ampun (Sahih Muslim 2542a, Kitab Fadha'il ash-Shahabah; derajat: sahih) | Sahih Muslim no. 2542a, Imam Muslim (w. 261 H), edisi terjemah Inggris via Hadith API fawazahmed0 | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-muslim/6490.json | 2026-11-25 | HIGH |
+| 2 | "Inna khaira at-tabi'in rajulun yuqalu lahu Uwais" — sebaik-baik tabi'in adalah lelaki bernama Uwais, ia punya ibu, ada bekas belang; perintahkan ia memohonkan ampun untuk kalian (Sahih Muslim 2542b, riwayat Umar bin Khattab; sahih) | Sahih Muslim no. 2542b, teks Arab, Imam Muslim, via Hadith API fawazahmed0 | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/ara-muslim/6491.json | 2026-11-25 | HIGH |
+| 3 | Umar menanyai tiap pasukan bantuan (amdad) dari Yaman "Adakah Uwais bin Amir?" sampai bertemu; Uwais dari Murad lalu Qaran; sangat berbakti pada ibunya; bila bersumpah atas nama Allah, Allah memenuhinya; Uwais memohonkan ampun untuk Umar; menolak surat Umar untuk gubernur Kufah karena ingin hidup di tengah orang miskin/biasa (Sahih Muslim 2542c, riwayat Usair bin Jabir; sahih) | Sahih Muslim no. 2542c, Imam Muslim, terjemah Inggris via Hadith API fawazahmed0 | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-muslim/6492.json | 2026-11-25 | HIGH |
+| 4 | Uwais seorang tabi'in, hidup sezaman dengan Nabi tetapi tidak pernah bertemu beliau; bertemu Umar; mayoritas sejarawan abad pertengahan mencatat ia gugur di Perang Shiffin tahun 657 M (37 H) di pihak Ali, sebagian lain menyebut gugur di penaklukan Azerbaijan | Uways al-Qarani, Wikipedia (merujuk Ibn Sa'd, Ibn al-Atsir, adz-Dzahabi Siyar A'lam an-Nubala 4/19, Ibn Hajar al-Ishabah) | https://en.wikipedia.org/wiki/Uways_al%E2%80%91Qarani | 2026-11-25 | MEDIUM |
+| 5 | Makam/masjid Uwais di Raqqa, Suriah, dihancurkan ISIS (2013/2014) | Uways al-Qarani, Wikipedia (merujuk The World/PRI 2016, Washington Times 2014) | https://en.wikipedia.org/wiki/Uways_al%E2%80%91Qarani | 2026-11-25 | MEDIUM |
+| 6 | Uwais hidup di Yaman, lelaki sederhana yang merawat ibunya; kutipan Arab + terjemah Indonesia hadis Muslim tentang Uwais bin Amir dari Murad lalu Qaran | "Menjadi Uwais Al-Qarni di Zaman Modern", Gazzeta Raka Putra Setyawan, Muslim.or.id, 22 Nov 2025 | https://muslim.or.id/110411-menjadi-uwais-al-qarni-di-zaman-modern.html | 2026-11-25 | MEDIUM |
+| 7 | Kisah Uwais mendahulukan ibu daripada hijrah dipakai sebagai argumen akademik membantah propaganda jihad ISIS | Muhammad Haniff Hassan, "Refuting Islamic State (IS) Jihad Propaganda with the Story of Uwais Al-Qarni", Counter Terrorist Trends and Analyses 10(10):12–16, RSIS, 2018 | https://www.jstor.org/stable/26501461 | 2026-11-25 | MEDIUM |
+| 8 | Kajian pendidikan akhlak dari kisah Uwais al-Qarni (bakti, ikhlas) dalam literatur Indonesia | Ubai Dillah, "Nilai-Nilai Pendidikan Akhlak pada Kisah Uwais Al Qarni", JRTIE (IAIN Pontianak) 2(2), 2019, DOI 10.24260/jrtie.v2i2.1396 | https://doi.org/10.24260/jrtie.v2i2.1396 | 2026-11-25 | MEDIUM |

@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sejarah peradaban Islam yang jarang diketahui`
+# Source Register — Pembantaian Karbala: Tragedi yang Mengubah Sejarah Islam Selamanya
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Kisah Karbala tercatat dalam riwayat Abu Mikhnaf yang dinukil al-Tabari (Tarikh al-Rusul wa al-Muluk), bab kekhalifahan Yazid; sumber primer utama narasi Karbala | Muhammad al-Tabari: Caliphate of Yazid (terjemahan sumber primer), Schlager Group, 2024 | https://doi.org/10.3735/9781961844247.book-part-014 | 2026-11-25 | HIGH |
+| 2 | Hadis: "Al-Hasan dan al-Husain adalah pemimpin pemuda ahli surga" — Sunan at-Tirmidzi no. 3768, sahih (Ahmad Syakir, al-Albani; Bashar Awad: hasan sahih) | Sunan at-Tirmidzi no. 3768, edisi Hadith API fawazahmed0 | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-tirmidhi/3768.json | 2026-11-25 | HIGH |
+| 3 | Ibnu Umar menegur orang Irak yang bertanya hukum membunuh lalat padahal mereka membunuh putra dari putri Rasulullah; Nabi menyebut Hasan dan Husain "dua raihanku di dunia" — Sahih al-Bukhari no. 3753 (sahih) | Sahih al-Bukhari no. 3753, edisi Hadith API fawazahmed0 | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-bukhari/3753.json | 2026-11-25 | HIGH |
+| 4 | Pertempuran terjadi 10 Muharram 61 H (10 Oktober 680 M) di Karbala, Irak selatan, antara pasukan Khalifah Yazid I dan rombongan Husain bin Ali, cucu Nabi Muhammad | Battle of Karbala, Wikipedia (rev. 2026-11-14) | https://en.wikipedia.org/wiki/Battle_of_Karbala | 2026-11-25 | MEDIUM |
+| 5 | Muawiyah menunjuk Yazid sebagai penerus, suksesi turun-temurun tanpa preseden dalam sejarah Islam; Husain menolak berbaiat dan berlindung di Makkah; warga Kufah mengirim banyak surat undangan; Muslim bin Aqil diutus lalu dibunuh setelah Ubaidullah bin Ziyad jadi gubernur Kufah | Battle of Karbala, Wikipedia (rev. 2026-11-14) | https://en.wikipedia.org/wiki/Battle_of_Karbala | 2026-11-25 | MEDIUM |
+| 6 | Husain berkemah di Karbala 2 Muharram (2 Okt 680), ±70 km utara Kufah; esoknya datang ±4.000 pasukan di bawah Umar bin Sa'ad; 500 penunggang kuda menutup jalan ke Sungai Eufrat, rombongan Husain tanpa air tiga hari | Battle of Karbala, Wikipedia (rev. 2026-11-14) | https://en.wikipedia.org/wiki/Battle_of_Karbala | 2026-11-25 | MEDIUM |
+| 7 | Menurut kebanyakan riwayat pihak Husain 32 penunggang kuda + 40 pejalan kaki; riwayat lain menyebut lebih banyak; sumber Syiah menyebut pasukan Umayyah hingga 30.000; 70 atau 72 orang di pihak Husain gugur; keluarga yang selamat (perempuan, anak-anak) ditawan ke Kufah lalu Damaskus | Battle of Karbala, Wikipedia (rev. 2026-11-14) | https://en.wikipedia.org/wiki/Battle_of_Karbala | 2026-11-25 | MEDIUM |
+| 8 | Sunni dan Syiah sama-sama memandang Husain dan para pengikutnya sebagai syuhada; tragedi diperingati pada Asyura; peristiwa ini memicu Fitnah Kedua (gerakan Tawwabin, Mukhtar ats-Tsaqafi) | Husayn ibn Ali, Wikipedia (2026) | https://en.wikipedia.org/wiki/Husayn_ibn_Ali | 2026-11-25 | MEDIUM |

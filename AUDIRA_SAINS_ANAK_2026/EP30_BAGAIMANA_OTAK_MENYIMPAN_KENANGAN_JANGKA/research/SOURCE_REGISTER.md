@@ -1,33 +1,16 @@
-# SOURCE_REGISTER — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi`
+# Source Register — Bagaimana Otak Menyimpan Kenangan Jangka Panjang
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Otak pria dewasa rata-rata berisi 86,1 ± 8,1 miliar neuron (bukan "100 miliar" yang sering dikutip) | Equal numbers of neuronal and nonneuronal cells make the human brain an isometrically scaled-up primate brain, Azevedo dkk., J Comp Neurol, 2009 | https://doi.org/10.1002/cne.21974 | 2026-11-25 | HIGH |
+| 2 | Pengangkatan hipokampus kedua sisi menyebabkan hilangnya kemampuan menyimpan memori baru (kasus pasien H.M.) | Loss of recent memory after bilateral hippocampal lesions, Scoville & Milner, J Neurol Neurosurg Psychiatry, 1957 | https://doi.org/10.1136/jnnp.20.1.11 | 2026-11-25 | HIGH |
+| 3 | Henry Molaison (H.M.) dioperasi tahun 1953 untuk epilepsi; sebagian hipokampus diangkat dan ia tak bisa membentuk memori baru | Henry Molaison, Wikipedia, diakses 2026 | https://en.wikipedia.org/wiki/Henry_Molaison | 2026-11-25 | MEDIUM |
+| 4 | Bliss & Lømo (1973) menunjukkan rangsangan berulang membuat transmisi sinaps menguat dan bertahan lama (potensiasi jangka panjang/LTP) | Long-lasting potentiation of synaptic transmission in the dentate area of the anaesthetized rabbit following stimulation of the perforant path, Bliss & Lømo, J Physiol, 1973 | https://doi.org/10.1113/jphysiol.1973.sp010273 | 2026-11-25 | HIGH |
+| 5 | LTP = penguatan sinaps yang persisten; kebalikannya, depresi jangka panjang (LTD), melemahkan sinaps | Long-term potentiation, Wikipedia, diakses 2026 | https://en.wikipedia.org/wiki/Long-term_potentiation | 2026-11-25 | MEDIUM |
+| 6 | Nobel Fisiologi/Kedokteran 2000 untuk Eric Kandel (bersama Carlsson & Greengard); riset siput laut: memori jangka pendek lewat fosforilasi protein, memori jangka panjang butuh sintesis protein baru yang mengubah bentuk dan fungsi sinaps | Press release: The Nobel Prize in Physiology or Medicine 2000, Nobel Assembly at Karolinska Institutet, 2000 | https://www.nobelprize.org/prizes/medicine/2000/press-release/ | 2026-11-25 | HIGH |
+| 7 | Penyimpanan memori adalah "dialog antara gen dan sinaps": memori jangka panjang melibatkan ekspresi gen dan pertumbuhan sinaps baru | The Molecular Biology of Memory Storage: A Dialogue Between Genes and Synapses, Eric Kandel, Science, 2001 | https://doi.org/10.1126/science.1067020 | 2026-11-25 | HIGH |
+| 8 | Saat tidur gelombang lambat, osilasi lambat, spindle, dan ripple mengoordinasikan pemutaran ulang memori hipokampus dan pemindahannya ke neokorteks | The memory function of sleep, Diekelmann & Born, Nat Rev Neurosci, 2010 | https://doi.org/10.1038/nrn2762 | 2026-11-25 | HIGH |
+| 9 | Kurva lupa Ebbinghaus (1880) berhasil direplikasi: lupa paling cepat di awal lalu melambat (diuji 20 menit s.d. 31 hari) | Replication and Analysis of Ebbinghaus' Forgetting Curve, Murre & Dros, PLOS ONE, 2015 | https://doi.org/10.1371/journal.pone.0120644 | 2026-11-25 | HIGH |
+| 10 | Istilah "engram" diperkenalkan Richard Semon tahun 1904; memori dipanggil kembali saat kelompok sel engram diaktifkan ulang | Memory engrams: Recalling the past and imagining the future, Josselyn & Tonegawa, Science, 2020 | https://doi.org/10.1126/science.aaw4325 | 2026-11-25 | HIGH |

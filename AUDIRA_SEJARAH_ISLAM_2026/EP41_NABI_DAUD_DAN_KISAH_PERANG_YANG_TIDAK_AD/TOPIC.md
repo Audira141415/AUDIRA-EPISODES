@@ -5,7 +5,11 @@ title: "Nabi Daud dan Kisah Perang yang Tidak Ada Seorang pun Percaya Bisa Dimen
 hook: "Jalut raksasa itu ternyata dikalahkan oleh pemuda kecil dengan hanya sebuah batu"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "STORYBOOK (2D)", "CINESTORY (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook batu/ketapel dan judul \"tidak ada yang percaya\" tidak sesuai teks Al-Qur'an (Israiliyat); wajib siluet tanpa wajah untuk Dawud dan Talut"
 ---
 
 # Nabi Daud dan Kisah Perang yang Tidak Ada Seorang pun Percaya Bisa Dimenangkan

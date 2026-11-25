@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP38`)
+# Naskah — Teladan Uwais al-Qarni: Orang yang Dipuji Nabi tapi Tidak Pernah Bertemu Beliau
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: gurun Yaman malam, siluet lelaki tanpa wajah berdiri jauh; teks kinetik "TIDAK PERNAH BERTEMU" lalu tiga chip muncul: NAMA · SUKU · BEKAS SAKIT.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Ia tidak pernah bertemu Nabi. Tapi Nabi menyebut namanya, sukunya, bahkan bekas penyakit di kulitnya.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: peta Jazirah Arab, pin bergerak ke Yaman, label HUD "Uwais bin Amir · Qaran · Murad"; kampung batu kecil di lembah.
 
-> <konteks singkat + "Di Audira, ...">
+> Ini AUDIRA. Namanya Uwais bin Amir, dari Qaran, cabang suku Murad di Yaman. Ia hidup sezaman dengan Nabi, tapi tetap tinggal di kampung.
 
-## c02 — <Judul Bab 1>
+## c02 — Alasan tinggal
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **20** · estimasi **9 dtk**
+- Visual: interior rumah sederhana, lampu minyak, tangan (tanpa wajah) menuangkan air untuk ibu yang terbaring (siluet); callout "HR. Muslim 2542".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Kenapa tidak berangkat? Riwayat yang dicatat Imam Muslim hanya menyebut satu alasan: ia punya ibu, dan ia sangat berbakti kepadanya.
 
-## c03 — <Judul Bab 2>
+## c03 — Pesan Nabi kepada Umar
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: gulungan naskah Arab terbuka, kaligrafi "Uwais" bercahaya; koin perak kecil berputar dengan callout "1 DIRHAM"; tidak ada figur Nabi/Umar.
 
-> <teks narasi>
+> Nabi lalu berpesan kepada Umar bin Khattab. Akan datang Uwais bersama pasukan bantuan dari Yaman. Ia pernah sakit kulit, sembuh kecuali seluas satu dirham. Kalau bertemu, mintalah ia memohonkan ampun untukmu.
 
-## c04 — <Judul Bab 3>
+## c04 — Pencarian bertahun-tahun
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: barisan pasukan bantuan berjalan melintasi gurun (siluet, tombak, unta), kamera menyusuri barisan; tiap rombongan lewat, teks tanya "Adakah Uwais bin Amir?" muncul lagi.
 
-> <teks narasi>
+> Bertahun-tahun kemudian, Umar sudah menjadi khalifah. Setiap rombongan Yaman datang, ia bertanya hal yang sama: adakah Uwais bin Amir di antara kalian? Sampai akhirnya ia menemukannya.
 
-## c05 — <Judul Bab 4>
+## c05 — Pertemuan dan penolakan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **35** · estimasi **15 dtk**
+- Visual: dua siluet berhadapan di perkemahan; checklist HUD tercentang satu per satu (Suku ✓ Bekas sakit ✓ Ibu ✓); amplop surat bersegel "Gubernur Kufah" didorong kembali; pasar rakyat Kufah yang ramai.
 
-> <teks narasi>
+> Umar mencocokkan semuanya. Suku, bekas sakit, ibunya. Lalu sahabat besar itu meminta didoakan oleh orang yang tak dikenal siapa pun. Umar menawarkan surat untuk gubernur Kufah. Uwais menolak. Ia ingin hidup di tengah orang-orang biasa.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: diagram generasi bertingkat (Nabi → Sahabat → Tabi'in) sebagai pilar cahaya tanpa figur; pilar Tabi'in menyala dengan callout "SEBAIK-BAIK TABI'IN · HR. Muslim".
 
-> <teks narasi>
+> Hadis sahih riwayat Muslim menyebutnya sebaik-baik tabi'in, generasi setelah sahabat. Bukan karena harta atau jabatan, tapi karena bakti dan doa yang tulus.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: dataran Shiffin senja, callout "SHIFFIN · 657 M"; transisi ke lampu minyak di rumah ibu yang tetap menyala; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Banyak sejarawan mencatat ia gugur di Shiffin, tahun 657. Kemuliaannya tidak butuh panggung. Cukup seorang ibu yang dirawat. Ikuti AUDIRA untuk kisah teladan berikutnya.
+
+## Opsi hook lain
+
+1. Seorang khalifah mencari satu lelaki miskin di setiap rombongan Yaman. Alasannya: pesan Nabi.
+2. Umar bin Khattab pernah minta didoakan. Bukan oleh sahabat, tapi oleh orang yang tak dikenal.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **196 kata** ≈ **84 dtk** (@140 WPM; 78–87 dtk @135–150)

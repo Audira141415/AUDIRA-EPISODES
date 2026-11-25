@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP41`)
+# Naskah — Nabi Daud dan Kisah Perang yang Tidak Ada Seorang pun Percaya Bisa Dimenangkan
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Barisan kecil siluet prajurit di tepi kiri, bayangan pasukan Jalut raksasa menutup cakrawala kanan; split-screen kecil vs besar, debu gurun.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Pasukannya kecil, sudah gemetar. Di seberang berdiri Jalut dan bala tentaranya. Di atas kertas, jawabannya jelas. Siapa yang menang?
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Mushaf terbuka, kaligrafi Al-Baqarah menyala; HUD "QS 2:246–251"; lalu siluet rombongan pengungsi meninggalkan kampung.
 
-> <konteks singkat + "Di Audira, ...">
+> Kisah ini tercatat di surah Al-Baqarah ayat 246 sampai 251. Bani Israil terusir dari kampung halaman, lalu meminta seorang raja untuk memimpin perang.
 
-## c02 — <Judul Bab 1>
+## c02 — Talut diangkat, banyak yang mundur
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Mahkota sederhana turun ke siluet Talut (tanpa wajah); barisan prajurit menipis, sebagian berbalik pergi; counter HUD barisan menyusut.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Allah mengangkat Talut. Tapi begitu perang benar-benar diwajibkan, kebanyakan mereka berpaling. Hanya sebagian kecil yang tetap ikut.
 
-## c03 — <Judul Bab 2>
+## c03 — Ujian sungai
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Sungai berkilau di padang tandus; close-up telapak tangan menciduk air; prajurit lain berlutut minum; HUD "QS 2:249".
 
-> <teks narasi>
+> Di tengah jalan, Talut memberi ujian berupa sungai. Siapa yang minum sepuasnya, bukan pengikutnya. Paling banyak seciduk dengan tangan. Ternyata sebagian besar tetap minum.
 
-## c04 — <Judul Bab 3>
+## c04 — Yang tersisa: 310 lebih
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **9 dtk**
+- Visual: Kamera atas, titik-titik prajurit menyeberang sungai; callout kinetik "310+" dan "HR Bukhari 3957"; transisi peta kecil "Badar" dengan angka sama.
 
-> <teks narasi>
+> Menurut hadis sahih Bukhari nomor 3957, yang menyeberang hanya tiga ratus sepuluh lebih orang beriman. Jumlahnya sama dengan pasukan Badar.
 
-## c05 — <Judul Bab 4>
+## c05 — Gentar dan doa
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **34** · estimasi **15 dtk**
+- Visual: Siluet Jalut menjulang di bukit, pasukan kecil di bawah; kalimat ayat 249 muncul sebagai tipografi besar "kelompok kecil vs kelompok besar"; tangan-tangan terangkat berdoa, langit senja.
 
-> <teks narasi>
+> Melihat Jalut, sebagian berkata, kami tak sanggup hari ini. Yang yakin akan bertemu Allah menjawab, betapa sering kelompok kecil mengalahkan kelompok besar dengan izin Allah. Lalu mereka berdoa minta sabar dan kaki yang kokoh.
 
-## c06 — <Judul Bab 5>
+## c06 — Apa kata Al-Quran, apa kata riwayat
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Panel terbelah: kiri teks ayat 251 dengan label "Al-Qur'an"; kanan ketapel dan batu bergaya sketsa pudar dengan label "Riwayat Israiliyat (Ibnu Katsir)".
 
-> <teks narasi>
+> Ayat 251 menulisnya singkat saja: Dawud membunuh Jalut. Cerita ketapel dan batu berasal dari riwayat Bani Israil yang dikutip Ibnu Katsir, bukan dari teks Al-Quran.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Mahkota dan baju besi (zirah rantai) berkilau di cahaya fajar, siluet Dawud tanpa wajah; HUD "QS 21:80"; tutup dengan outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Setelah itu Allah memberi Dawud kerajaan dan hikmah, bahkan mengajarinya membuat baju besi. Kemenangan itu bukan soal jumlah, tapi soal sabar yang lolos ujian sungai. Ikuti AUDIRA untuk kisah nabi berikutnya.
+
+## Opsi hook lain
+
+1. Tentara ini kalah jumlah, dan setengahnya gagal ujian minum air. Tapi merekalah yang menang.
+2. Berapa orang yang dibutuhkan untuk mengalahkan Jalut? Hadis sahih menyebut angkanya: tiga ratus sepuluh lebih.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **193 kata** ≈ **83 dtk**

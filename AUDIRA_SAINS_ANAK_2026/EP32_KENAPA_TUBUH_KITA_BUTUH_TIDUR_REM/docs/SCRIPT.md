@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP32`)
+# Naskah — Kenapa Tubuh Kita Butuh Tidur REM
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: kamar gelap, anak tidur di ranjang; close-up kelopak mata, bola mata bergerak cepat ke kiri-kanan; tubuh diam kaku dengan garis "LOCK" tipis di lengan dan kaki. Teks HUD "REM" berdenyut.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Tiap malam, badanmu hampir lumpuh, tapi bola matamu justru bergerak cepat. Ini bukan film horor. Ini tidur REM, dan bareng AUDIRA kita bongkar kenapa kamu butuh fase ini.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: laboratorium tidur tahun 1950-an (siluet tanpa wajah), kertas grafik EEG menggulung dengan coretan zig-zag mata. Callout HUD "1953" dan "Rapid Eye Movement".
 
-> <konteks singkat + "Di Audira, ...">
+> Tahun 1953, Eugene Aserinsky dan Nathaniel Kleitman melihat mata orang tidur bergerak cepat secara berkala. Fase ini dinamai rapid eye movement, disingkat REM.
 
-## c02 — <Judul Bab 1>
+## c02 — Siklus tidur
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: grafik hipnogram berbentuk tangga naik-turun sepanjang malam; jam bergerak dari 22.00 ke 06.00; blok REM menyala makin lebar menjelang pagi. Callout HUD "90–120 menit" dan "4–5×".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tidur itu berputar dalam siklus sekitar sembilan puluh sampai seratus dua puluh menit. Semalam, REM biasanya muncul empat sampai lima kali, dan makin panjang menjelang pagi.
 
-## c03 — <Judul Bab 2>
+## c03 — Panggung mimpi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: diagram lingkaran waktu tidur, satu potongan seperempat menyala; dari kepala anak keluar gelembung mimpi berisi adegan bercerita (naik roket, dikejar dinosaurus). Callout HUD "±25%".
 
-> <teks narasi>
+> Totalnya, REM mengisi sekitar seperempat waktu tidurmu. Di fase inilah kebanyakan mimpi yang jelas dan penuh cerita terjadi.
 
-## c04 — <Judul Bab 3>
+## c04 — Kunci otot
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: potongan tubuh transparan, sinyal dari batang otak ke sumsum tulang belakang menutup gerbang-gerbang saraf otot (ikon gembok). Lalu adegan kedua: gembok terbuka, siluet orang tidur menendang selimut. Label HUD "REM atonia" dan "gangguan perilaku tidur REM".
 
-> <teks narasi>
+> Biar kamu nggak ikut lari mengejar mimpi, otak mengunci hampir semua otot. Kalau kunci ini gagal, orang bisa memeragakan mimpinya. Namanya gangguan perilaku tidur REM.
 
-## c05 — <Judul Bab 4>
+## c05 — Alarm emosi diredam
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: model otak 3D, amigdala merah berdenyut seperti sirene; saat malam berganti dan blok REM lewat, warnanya turun ke biru tenang. Callout HUD "2011 · UC Berkeley" dan label "amigdala = alarm emosi".
 
-> <teks narasi>
+> Lalu buat apa? Tahun dua ribu sebelas, peneliti di Berkeley menemukan tidur REM berkaitan dengan meredanya respons amigdala, alarm emosi di otak, pada pengalaman emosional sehari sebelumnya.
 
-## c06 — <Judul Bab 5>
+## c06 — Ingatan dirapikan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: arena uji dengan seekor tikus kartun dan dua benda; gelombang theta mengalir di layar; saat gelombang "dimatikan" (saklar OFF), ingatan letak benda di gelembung pikiran tikus memudar. Callout HUD "2016 · ritme theta".
 
-> <teks narasi>
+> Ingatan juga ikut dirapikan. Tahun dua ribu enam belas, riset pada tikus menunjukkan, saat ritme theta di fase REM dimatikan, ingatan tentang letak benda yang baru dipelajari hilang.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: kembali ke kamar, langit jendela beralih ke fajar; otak anak menyala tenang dengan rak-rak memori tersusun rapi; jam weker hampir berbunyi dicoret. Outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi REM itu semacam terapi semalam: emosi diredam, ingatan disimpan. Jangan suka memotong tidur pagi, karena REM paling banyak di jam-jam terakhir. Ikuti AUDIRA untuk sains seru lainnya.
+
+## Opsi hook lain
+
+1. Setiap malam, otakmu mematikan hampir semua ototmu. Kenapa harus begitu?
+2. Ada fase tidur saat otakmu hampir seaktif waktu bangun, tapi badanmu tidak bisa bergerak.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **203 kata** ≈ **81–90 dtk**
