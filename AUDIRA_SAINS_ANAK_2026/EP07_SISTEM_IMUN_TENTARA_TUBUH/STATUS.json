@@ -1,0 +1,399 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP07_SISTEM_IMUN_TENTARA_TUBUH",
+  "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+  "createdAt": "2026-11-24T18:17:37.582Z",
+  "updatedAt": "2026-11-25T00:09:50.832Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:17:41.662Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-24T18:17:37.583Z",
+      "startedAt": "2026-11-24T18:17:37.583Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:17:41.662Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:16:30.080Z",
+      "startedAt": "2026-11-23T14:16:30.080Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:50.609Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T18:20:42.774Z",
+      "startedAt": "2026-11-24T18:20:42.774Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:21:28.956Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-24T18:20:58.931Z",
+      "startedAt": "2026-11-24T18:20:58.931Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:07:58.305Z",
+          "text": "koordinator: shortTitle diisi; sesi s2 = \"EP07 Sistem Imun · s2\""
+        },
+        {
+          "at": "2026-11-24T23:10:25.489Z",
+          "text": "project/ dari starter, node_modules junction EP05, Gibran dihapus, channel.json SAINS, preflight no blockers, smoke ok"
+        }
+      ],
+      "doneAt": "2026-11-24T23:10:25.489Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:15:37.413Z",
+          "text": "VO Cartesia 79.18 dtk, 187 kata, npm run vo ok; film 82.6 dtk (outro 3.2)"
+        }
+      ],
+      "doneAt": "2026-11-24T23:15:37.413Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:11:34.068Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-24T23:25:14.459Z",
+          "text": "s3: scenes.tsx, Hud.tsx, ImunFilm.tsx ditulis; ImunPreview/ImunFinal di Root.tsx; typecheck bersih; stills out/stills + out/stills2/3 (framing diperbaiki); docs/SHOTLIST.md 15 shot; sfx.wav -26 LUFS 32 sounds; style/cover-topic.png dari frame 2.7s ImunFinal."
+        }
+      ],
+      "doneAt": "2026-11-24T23:25:14.459Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:28:46.476Z",
+          "text": "s4: draf r1 ceilings readability 3 (ring 52% kontras) → ring diberi backdrop opak, draf r2 dirender. SOCIAL_CAPTIONS.md sudah ditulis + valid."
+        },
+        {
+          "at": "2026-11-24T23:29:27.265Z",
+          "text": "sync: look.json PASS"
+        }
+      ],
+      "startedAt": "2026-11-24T23:28:46.476Z",
+      "doneAt": "2026-11-24T23:29:10.430Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T23:33:12.335Z",
+      "notes": [
+        {
+          "at": "2026-11-24T23:33:12.335Z",
+          "text": "pre-approved user 2026-11-25 (batch 10 short otonom)"
+        },
+        {
+          "at": "2026-11-25T00:09:20.313Z",
+          "text": "FINAL_EP07_SISTEM_IMUN_tagged.mp4 82.6 dtk 1080x1920@60, -13.7 LUFS TP -1.9, metadata ffprobe ok, signature VALID + C2PA."
+        },
+        {
+          "at": "2026-11-25T00:09:45.027Z",
+          "text": "FINAL_EP07_SISTEM_IMUN_tagged.mp4 1080x1920@60 82.6s, -13.7 LUFS TP -1.9 dBTP, metadata AUDIRA ok (ffprobe), skor final self 3.83"
+        }
+      ],
+      "doneAt": "2026-11-25T00:09:45.027Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:29:27.265Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T23:27:06.226Z",
+      "startedAt": "2026-11-24T23:27:06.226Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sains-anak-EP07",
+    "shortTitle": "Sistem Imun",
+    "style": "NANOFORGE",
+    "engine": "remotion"
+  },
+  "syncedAt": "2026-11-24T23:29:27.265Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-24T18:21:41.577Z",
+      "doing": "Sesi A selesai (tahap 0–4): riset F1–F13, style NANOFORGE 3D Remotion+R3F, docs SCRIPT/STORYBOARD/ART_DIRECTION/ASSET_MANIFEST/STYLE_DECISION. Preflight belum dijalankan (proyek belum ada). Cover topik ditunda ke sesi B (dari frame hook film, pola EP05).",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/ART_DIRECTION.md",
+        "docs/SCRIPT.md",
+        "research/SOURCE_REGISTER.md"
+      ],
+      "next": "Sesi B tahap 5: buat project/ dengan menyalin F:/AUDIRA-SKILL-MOTION/starter (src, scripts, public, sfx, package.json, tsconfig, remotion.config.ts; tanpa node_modules/out) ke EP07/project; node_modules: junction (mklink /J) ke ../EP05_SISI_BULAN_YANG_SAMA/project/node_modules atau npm ci. Hapus komposisi sisa template PenggantiGibran dari Root.tsx (channel gate). Lalu preflight, VO Cartesia dari teks VO docs/SCRIPT.md (pakai param text, bentuk spoken), npm run vo, kode episode src/episodes/imun/ multi-scene 7 adegan, SFX, contact sheet, juri buta. Lalu sesi C: render final (kunci F:/AUDIRA-EPISODES/_render.lock), QA, caption, 3 scheduled task, update topik 015 di F:/AUDIRA-ALL-SKILL/channel-topics/audira-sains/topics.md, commit hanya folder EP07.",
+      "snapshot": {
+        "episode": "EP07_SISTEM_IMUN_TENTARA_TUBUH",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": null,
+        "memoryEpisode": "sains-anak-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:10:32.361Z",
+      "doing": "Sesi B: tahap 5 selesai (project/ siap, smoke ok). Tahap 6 VO Cartesia sedang dibuat ke project/public/audio/vo.wav + vo-words.json",
+      "files": [
+        "project/public/audio/vo.wav",
+        "project/src/episodes/imun/"
+      ],
+      "next": "npm run vo -- public/audio/vo.wav, lalu timeline.ts + film src/episodes/imun/ (pola EP05 moon: timeline/scenes/Hud/Film)",
+      "snapshot": {
+        "episode": "EP07_SISTEM_IMUN_TENTARA_TUBUH",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "NANOFORGE",
+        "memoryEpisode": "sains-anak-EP07",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:15:35.804Z",
+      "doing": "Sesi B s2 (konteks penuh): tahap 5 DONE (project/ dari starter, node_modules junction ke EP05, Gibran dihapus, src/brand/channel.json = SAINS @AudiraSains disalin dari EP05, project/SERIES.json starter dihapus, public/models/polyfork/<type> diganti jadi junction ke E:/ASET/ASSET-AUDIRA/downloads/glb/<type> karena robocopy sempat menyalin isinya; preflight no blockers, smoke ok). Tahap 6 VO DONE: public/audio/vo.wav 79.18 dtk, vo-words.json 187 kata, vo.timing.json (npm run vo). Tahap 7 MULAI: src/episodes/imun/timeline.ts (7 adegan: hook 0-6.23, patrol 6.23-19.28, wound 19.28-34.61, macro 34.61-47.63, attack 47.63-57.62, memory 57.62-71.12, outro 71.12-82.6; VO_END 79.18, OUTRO 3.2, IMUN_SECONDS 82.6; helper ramp/pop/lerp3/prog) dan src/episodes/imun/cells.tsx (bumpyGeo, tissueGeo, vesselGeo, Antibody, Neutrophil[reach,reachK,dead], RedCell, Bacterium[coat,dead,ghost,glow], Macrophage[eat], TCell[color,badge bintang], BCell, MemoryCell[halo], InfectedCell[burst], Medium bokeh, LabelPlate canvas) SUDAH DITULIS, belum typecheck.",
+      "files": [
+        "project/src/episodes/imun/timeline.ts",
+        "project/src/episodes/imun/cells.tsx",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "docs/STORYBOARD.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Sesi B lanjutan: tulis src/episodes/imun/scenes.tsx (SCENE_FN per adegan -> {node, shot}; lights per adegan: ambient + directional + point rim cyan/magenta/gold mengikuti target + fog), Hud.tsx (pola EP05 moon/Hud.tsx: Card pop, SafeLabel; kartu: PERANG DI DALAM TUBUH 0.8; 100 MILIAR/HARI count-up selesai ≤9.2 dtk (kata 'seratus miliar' ±9.5); SEPARUH LEBIH ring 2D 14.5; DALAM HITUNGAN MENIT 22.6; NANAH = TENTARA GUGUR 31; MAKROFAG · 1884 35.8; SEL T PEMBANTU = JENDERAL 43; PERINTAH! 45.6; SEL T PEMBUNUH 47.8; ANTIBODI · RIBUAN/DETIK 54.3; SEL MEMORI · BERTAHUN-TAHUN 60.6; CACAR AIR: BIASANYA SEKALI 65.1; LANGSUNG SIAP 69.9; TAK PERNAH ISTIRAHAT 74.4) dan ImunFilm.tsx (salin pola EP05 project/src/episodes/moon/MoonFilm.tsx: Voiceover, FilmScene profile CINEMA_TEAL_ORANGE exposure 1 envIntensity 0.55 ao, Karaoke y1300, AudiraSignature seed 'sains-EP07-sistem-imun' outroSeconds 3.2, AudiraOutro 3.2, fade 0.16 dtk di tiap cut). Daftarkan ImunPreview/ImunFinal di Root.tsx. Rencana adegan: HOOK 0-3.4 kamar senja (lantai, dinding, jendela oranye, GLB bed-6e10e8 prop size 2.4 + bedside-table-740c6b, ToyPerson anak scale 0.7) kamera push ke lengan yang berpendar cyan; 3.4-6.23 flash lalu dalam pembuluh: neutrofil mengejar bakteri, lampu alarm merah. PATROL: vesselGeo tunnel BackSide merah (fog #1a0308), kamera maju -z 1.4 u/dtk, 60 RedCell wrap loop, neutrofil hero s1.3 di depan kamera, 12-17 dtk kerumunan 7 neutrofil + 5 sel lain (separuh lebih). WOUND: tissueGeo kulit pink, goresan merah gelap, tabung pembuluh tembus di z=-3; 19.3-22.6 8 bakteri menyerbu turun (crane turun); 22.6-29.7 4 neutrofil keluar pembuluh, pseudopod, bakteri ditelan (27-29.4 bakteri masuk & mengecil) orbit 30°; 29.7-34.6 neutrofil gugur kuning (dead) + tumpukan nanah, push-in. MACRO: tissue ungu, Macrophage s2.2 di (0,1.6,0) memakan 10 debris 36-41, antigen oktahedron emas ke TCell badge di (4.2,1.4,0.5) 40.5-44, cincin perintah 45.5-47.6, LabelPlate 'AUDIRA LAB' (0,4.6,-3); dolly samping. ATTACK: 47.6-51.7 TCell oranye #f97316 menempel InfectedCell (-5,1,0) burst 50.2-51.5; 51.7-57.6 BCell (2,0.6,0) menembak 24 antibodi ke 3 bakteri (5.5,1,-0.5)(6.2,-0.4,0.8)(4.8,-0.9,-1), coat 54-57, whip-pan lalu push ke bakteri. MEMORY: barak biru-emas (lantai biru, rusuk lengkung emas), LabelPlate 'BARAK AUDIRA' (0,4.2,-4), 7 MemoryCell pop 58.8-61, hologram bakteri ghost 60.6-67, 68.2 bakteri datang dari kanan, 69.8 dikepung (impact), pull-back lalu push cepat. OUTRO: kamar malam biru, jendela bulan, anak ToyPerson berbaring di ranjang (rotasi), 6 titik cyan patroli bergerak di tubuh, pull-back + crane naik. Lalu: npm run typecheck, stills per beat (contact sheet kecil), docs/SHOTLIST.md + npm run sfx, cover topik dari frame hook (style/cover-topic.png), tahap 8 contact sheet + audit:visual + audit:camera + draft/THEME_CHECK.md + juri buta (record_score judge jury). Lalu Sesi C: final pre-approved (update stage final approved true, note 'pre-approved user 2026-11-25 (batch 10 short otonom)'), render:final dengan kunci F:/AUDIRA-EPISODES/_render.lock, QA, tag metadata, caption 6 platform tervalidasi, NOTES.md, lesson, 3 scheduled task review-sains-ep07-sistem-imun-24h/-72h/-7d, topik 015 audira-sains topics.md hapus '(proses)' + commit terpisah, commit folder EP07 saja. Aturan otonom: C:/Users/ASUS/AppData/Local/Claude-Data/claude_pzs8sxrjxfjjc/side-session-notes/local_607018b1-9dc8-4a44-b80a-be640a7918d0/ATURAN_OTONOM_BATCH.md. Referensi kode: EP05 moon (struktur), EP33 vaksin project/src/scenes/vaksin/Vaksin3D.tsx (Lights, Medium, kamera shotPlan).",
+      "snapshot": {
+        "episode": "EP07_SISTEM_IMUN_TENTARA_TUBUH",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "NANOFORGE",
+        "memoryEpisode": "sains-anak-EP07",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:25:24.504Z",
+      "doing": "Sesi s3 selesai tahap 7: src/episodes/imun/{scenes.tsx,Hud.tsx,ImunFilm.tsx} ditulis, ImunPreview/ImunFinal terdaftar di Root.tsx (durasi 82.6 dtk), typecheck bersih. Stills diperiksa dan framing diperbaiki (hook push ke lengan, neutrofil hero digeser, plate AUDIRA LAB di kiri bawah, kartu memori di y1000/1130, anak tidur bedTop 0.8). docs/SHOTLIST.md 15 shot; npm run sfx -> public/audio/sfx.wav -26 LUFS. style/cover-topic.png (frame 2.7s ImunFinal). audit stills: 'no aspect capped below 4' untuk set perbaikan.",
+      "files": [
+        "project/src/episodes/imun/scenes.tsx",
+        "project/src/episodes/imun/Hud.tsx",
+        "project/src/episodes/imun/ImunFilm.tsx",
+        "project/src/Root.tsx",
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav",
+        "style/cover-topic.png"
+      ],
+      "next": "Tahap 8: npm run draft/contact sheet 6-8 frame (mis. 2.7s,10s,15.5s,27.8s,38s,46.5s,55.5s,63.5s,76s) di 540x960 -> draft/contact-sheet.jpg, npm run audit:visual, klip 15-20 dtk 540x960 (mis. 45-62s) + npm run audit:camera, draft/THEME_CHECK.md (G22), juri buta subagent (qa/jury.md) -> record_score judge jury stage draft style NANOFORGE. Lalu tahap 9 (final pre-approved: update stage final approved true note 'pre-approved user 2026-11-25 (batch 10 short otonom)'), kunci F:/AUDIRA-EPISODES/_render.lock, npm run render:final -- ImunFinal ... --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc, QA -14 LUFS TP<-1, tag metadata ffmpeg. Tahap 10: SOCIAL_CAPTIONS.md 6 platform + Jadwal Upload + Label AI tervalidasi, NOTES.md, append_lesson NANOFORGE, 3 scheduled task review-sains-ep07-sistem-imun-24h/-72h/-7d, hapus '(proses)' topik 015 di F:/AUDIRA-ALL-SKILL/channel-topics/audira-sains/topics.md + commit terpisah repo AUDIRA-ALL-SKILL, commit hanya folder EP07 di repo AUDIRA-EPISODES. Aturan otonom: C:/Users/ASUS/AppData/Local/Claude-Data/claude_pzs8sxrjxfjjc/side-session-notes/local_607018b1-9dc8-4a44-b80a-be640a7918d0/ATURAN_OTONOM_BATCH.md",
+      "snapshot": {
+        "episode": "EP07_SISTEM_IMUN_TENTARA_TUBUH",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "NANOFORGE",
+        "memoryEpisode": "sains-anak-EP07",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:33:56.773Z",
+      "doing": "s4: tahap 8 LOLOS (juri r2 3.83: L3 M4 D4 C3 Mo5 R4). Render final ImunFinal berjalan dengan _render.lock. SOCIAL_CAPTIONS.md sudah valid.",
+      "command": "cd project; node scripts/render-final.mjs --comp=ImunFinal --out=../FINAL_EP07_SISTEM_IMUN_tagged.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Cara Kerja Sistem Imun: Tentara di Dalam Tubuhmu\" --slug=sains-ep07-sistem-imun --ep=EP07",
+      "files": [
+        "FINAL_EP07_SISTEM_IMUN_tagged.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "QA loudness (-14 LUFS, TP<-1) + ffprobe metadata, hapus _render.lock, NOTES.md, 3 scheduled task, topik 015, commit.",
+      "snapshot": {
+        "episode": "EP07_SISTEM_IMUN_TENTARA_TUBUH",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "NANOFORGE",
+        "memoryEpisode": "sains-anak-EP07",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:37:19.333Z",
+      "doing": "s5: menunggu render final ImunFinal (PID 4180, mulai 06:34 WIB) yang dimulai s4; lock _render.lock dipegang EP07",
+      "command": "cd project; node scripts/render-final.mjs --comp=ImunFinal --out=../FINAL_EP07_SISTEM_IMUN_tagged.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Cara Kerja Sistem Imun: Tentara di Dalam Tubuhmu\" --slug=sains-ep07-sistem-imun --ep=EP07",
+      "files": [
+        "FINAL_EP07_SISTEM_IMUN_tagged.mp4",
+        "NOTES.md"
+      ],
+      "next": "Hapus _render.lock, QA -14 LUFS TP<-1 + ffprobe metadata, record_score final, NOTES.md, lesson, 3 scheduled task, topik 015, stage final+delivery done, commit folder EP07",
+      "snapshot": {
+        "episode": "EP07_SISTEM_IMUN_TENTARA_TUBUH",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "NANOFORGE",
+        "memoryEpisode": "sains-anak-EP07",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:37:19.333Z",
+      "doing": "s5: menunggu render final ImunFinal (PID 4180, mulai 06:34 WIB) yang dimulai s4; lock _render.lock dipegang EP07",
+      "command": "cd project; node scripts/render-final.mjs --comp=ImunFinal --out=../FINAL_EP07_SISTEM_IMUN_tagged.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Cara Kerja Sistem Imun: Tentara di Dalam Tubuhmu\" --slug=sains-ep07-sistem-imun --ep=EP07",
+      "files": [
+        "FINAL_EP07_SISTEM_IMUN_tagged.mp4",
+        "NOTES.md"
+      ],
+      "next": "Hapus _render.lock, QA -14 LUFS TP<-1 + ffprobe metadata, record_score final, NOTES.md, lesson, 3 scheduled task, topik 015, stage final+delivery done, commit folder EP07",
+      "snapshot": {
+        "episode": "EP07_SISTEM_IMUN_TENTARA_TUBUH",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "NANOFORGE",
+        "memoryEpisode": "sains-anak-EP07",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-25T00:09:50.832Z"
+    }
+  ],
+  "session": 5,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP07 Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi · s2",
+      "at": "2026-11-24T18:21:41.576Z"
+    },
+    {
+      "no": 3,
+      "title": "EP07 Sistem Imun · s3",
+      "at": "2026-11-24T23:15:35.804Z"
+    },
+    {
+      "no": 4,
+      "title": "EP07 Sistem Imun · s4",
+      "at": "2026-11-24T23:25:24.504Z"
+    }
+  ]
+}
