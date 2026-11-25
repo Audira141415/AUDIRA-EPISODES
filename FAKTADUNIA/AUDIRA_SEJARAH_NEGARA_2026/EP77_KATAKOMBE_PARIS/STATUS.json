@@ -1,0 +1,688 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP77",
+  "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
+  "createdAt": "2026-11-24T18:20:36.605Z",
+  "updatedAt": "2026-11-25T00:37:34.928Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:54.066Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-24T18:20:36.606Z",
+      "startedAt": "2026-11-24T18:20:36.606Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:54.066Z",
+          "text": "sync: riset ada"
+        },
+        {
+          "at": "2026-11-24T18:21:22.045Z",
+          "text": "research/SOURCE_REGISTER.md: 15 fakta (situs resmi catacombes.paris.fr + Wikipedia). Angka: >6 juta (bukan 7 juta). Style CHRONICLE 3D dipilih."
+        }
+      ],
+      "doneAt": "2026-11-24T18:21:22.045Z",
+      "startedAt": "2026-11-24T18:20:50.829Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:21:36.016Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        },
+        {
+          "at": "2026-11-25T00:13:33.961Z",
+          "text": "s7: CHRONICLE → PAPERWORLD (juri CHRONICLE 3.33/3.17)"
+        }
+      ],
+      "doneAt": "2026-11-24T18:21:17.062Z",
+      "startedAt": "2026-11-24T18:21:17.062Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:27:36.940Z",
+          "text": "docs ART_DIRECTION/SCRIPT/STORYBOARD/ASSET_MANIFEST ditulis s2 (200 kata, 8 adegan S1-S8, teks TTS fonetik di SCRIPT.md)"
+        }
+      ],
+      "doneAt": "2026-11-24T18:27:36.940Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:05:47.727Z",
+          "text": "sync: proyek render sudah disiapkan"
+        },
+        {
+          "at": "2026-11-24T23:07:36.747Z",
+          "text": "s3: project/ disalin dari EP72 (tanpa node_modules/out/audio), junction node_modules, kit chronicle + film/fxextra.tsx + film/glb.tsx (dari EP42), 17 GLB di public/glb/<nama-tanpa-hash>.glb, font chronicle lengkap. src/episode masih berisi file Lisbon (akan ditimpa)."
+        }
+      ],
+      "doneAt": "2026-11-24T23:07:36.747Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:07:38.647Z",
+          "text": "VO Cartesia 89.21 dtk, 215 kata → project/public/audio/vo.wav + vo-words.json, npm run vo ok. Film 92.2 dtk (outro 89.2–92.2). draft/TIMING_LOCK.md ditulis."
+        }
+      ],
+      "doneAt": "2026-11-24T23:07:38.647Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:05:47.727Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-24T23:08:18.652Z",
+          "text": "Belum ada kode film (sync salah menandai selesai karena file salinan EP72). Rencana kode lengkap di draft/FILM_PLAN.md."
+        },
+        {
+          "at": "2026-11-24T23:08:20.613Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.572Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:29:30.229Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-24T23:27:41.519Z",
+      "startedAt": "2026-11-24T23:27:41.519Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-25T00:15:03.979Z",
+      "notes": [
+        {
+          "at": "2026-11-25T00:15:03.979Z",
+          "text": "pre-approved user 2026-11-25 (batch 10 short otonom). Juri draf PAPERWORLD 3.83 LOLOS putaran 1."
+        },
+        {
+          "at": "2026-11-25T00:37:34.928Z",
+          "text": "FINAL_EP77_KATAKOMBE_PARIS_tagged.mp4 1080x1920@60 92.2s, -13.7 LUFS TP -1.8, metadata+signature ok, juri final 3.83"
+        }
+      ],
+      "startedAt": "2026-11-25T00:15:03.979Z",
+      "doneAt": "2026-11-25T00:37:34.928Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:32:27.008Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T23:31:49.599Z",
+      "startedAt": "2026-11-24T23:31:49.599Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-negara-EP77",
+    "style": "PAPERWORLD",
+    "engine": "remotion",
+    "shortTitle": "Katakombe Paris",
+    "channel": "FAKTADUNIA",
+    "wordCount": 200,
+    "estimatedDuration": {
+      "wordCount": 200,
+      "minSec": 80,
+      "maxSec": 89
+    }
+  },
+  "syncedAt": "2026-11-24T23:32:27.008Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-24T18:21:28.673Z",
+      "doing": "Sesi A s1: tahap 0-2 selesai (riset 15 fakta, style CHRONICLE 3D dipilih). Context guard 192k memaksa pindah sesi sebelum tahap 4.",
+      "files": [
+        "research/SOURCE_REGISTER.md",
+        "style/STYLE_DECISION.md",
+        "style/cover-reference.jpg"
+      ],
+      "next": "Sesi baru: tahap 4 naskah (docs ART_DIRECTION, SCRIPT, STORYBOARD, ASSET_MANIFEST) lalu tahap 5-10. Proyek: salin EP72 project (robocopy tanpa node_modules/out, junction node_modules ke F:/AUDIRA-SKILL-MOTION/node_modules) + salin kits/chronicle/project/src/kits/chronicle dan src/film/fxextra.tsx. Arsitektur film ikuti EP72 src/episode (LisbonFilm.tsx/timeline.ts/scenes.tsx/parts.tsx) tetapi kanvas = ShotCanvas+Stage+Look CHRONICLE.",
+      "snapshot": {
+        "episode": "EP77",
+        "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
+        "style": "CHRONICLE",
+        "memoryEpisode": "sejarah-negara-EP77",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:27:53.344Z",
+      "doing": "Sesi A selesai (s2): tahap 4 docs ditulis — ART_DIRECTION, SCRIPT (200 kata, teks TTS fonetik per segmen s1-s8 di bagian \"Teks untuk TTS\"), STORYBOARD (8 adegan S1-S8: lorong tulang hook, potongan melintang tambang batu kapur, jalan Paris runtuh 1774 + inspektur, pemakaman Saints-Innocents, gerobak malam 1786-1814, dinding tulang Héricart, gerbang empire de la Mort + pengunjung tangga spiral, outro kota cahaya), ASSET_MANIFEST (GLB: townhouse-row-unit-b9544b, brownstone-row-house-1b84fd, corner-tenement-92fb62, colonial-lamp-post-eb85f8, collapse-rubble-mound-4fbfed, grave-cross-95b3e9, carved-grave-stele-a1359c, grave-mound-169ec3, arched-cemetery-gate-bdca7c, cemetery-fieldstone-wall-run-ab9077, parish-church-543cf8, four-wheel-wagon-adb946, draft-horse-519160, crypt-well-head-d368f3, mine-cart-21d7f0, hand-lantern-cdbe1a, spiral-stair-shaft-80de26; tengkorak/tulang = relief prosedural instanced).",
+      "files": [
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/ART_DIRECTION.md",
+        "docs/ASSET_MANIFEST.md",
+        "style/STYLE_DECISION.md",
+        "research/SOURCE_REGISTER.md"
+      ],
+      "next": "Sesi B: tahap 5 scaffold. robocopy ..\\EP72_GEMPA_LISBON_1755\\project → EP77\\project /E /XD node_modules out (skip public\\audio isi lama: hapus vo/sfx Lisbon); junction project\\node_modules → F:\\AUDIRA-SKILL-MOTION\\node_modules. Salin F:\\AUDIRA-SKILL-MOTION\\kits\\chronicle\\project\\src\\kits\\chronicle\\ → project\\src\\kits\\chronicle\\ dan ...\\src\\film\\fxextra.tsx → project\\src\\film\\fxextra.tsx. Kit API (sudah dicek): ShotCanvas({shot,look,frame,children}) membungkus ThreeCanvas+Stage+QaProbe; Look dari kits/chronicle/looks.ts (GOLDEN, DUSK, INFERNO, NIGHT, MORNING, DAY, ROOM_DAY, ROOM_NIGHT, MAPROOM) + mixLook(a,b,t) dari Stage.tsx; INK {hero amber, ally, foe crimson, grief violet, neutral ivory}; Figure({id,outline,pos,rotY,pose,look,t}) dengan POSES/idle/gait; props.tsx: Lantern, Ground, Water...; fx.tsx: Embers, AshColumn, Birds; fxextra: Flames, Shafts, Candle; cam.ts: camAt(keys,s), handheld, project. Contoh episode CHRONICLE custom: F:\\AUDIRA-EPISODES\\QISSAH\\AUDIRA_KISAH_ISLAM_2026\\EP42_SAMIRI_ANAK_SAPI_EMAS\\project\\src\\film\\sinai.tsx + glb.tsx. Pola EP72: src/episode/LisbonFilm.tsx (DISPLAY map subtitle, HudCard, Subtitle y1290, Voiceover, AudiraOutro, AudiraSignature) + timeline.ts (SHOTS+CARDS, cameraAt) + scenes.tsx (SCENES record). Ganti FilmScene EP72 dengan ShotCanvas CHRONICLE; overlay HUD sebagai div di atas canvas. Root.tsx: hapus Lisbon + PenggantiGibran, daftarkan KatakombePreview/KatakombeFinal. Lalu cover-topic.png, VO (teks TTS dari SCRIPT.md, gabung s1-s8) → project/public/audio/vo.wav + vo-words.json, npm run vo, TIMING_LOCK, visual S1-S8, npm run sfx, contact sheet + juri buta + THEME_CHECK. Tahap 9 sudah pre-approved (lihat brief asli: render.lock, --concurrency=1 --jobs=6, --vo --sfx). Tahap 10 captions/SRT/NOTES/3 scheduled task review-katakombe-paris-24h/-72h/-7d, update topics.md 022 → \"[x] SEJARAH_NEGARA/EP77\", commit hanya folder EP77.",
+      "snapshot": {
+        "episode": "EP77",
+        "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
+        "style": "CHRONICLE",
+        "memoryEpisode": "sejarah-negara-EP77",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:28:33.684Z",
+      "doing": "s2 berhenti (context guard 218k). Tahap 4 selesai. Scaffold tahap 5 BELUM jalan: folder project/ ada tetapi kosong (perintah PowerShell gabungan diblokir karena Remove-Item public\\audio\\*). Sesi s3 belum bisa dibuat: app membatasi 5 sesi paralel.",
+      "files": [
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Sesi s3: mulai tahap 5 dari nol. Jalankan langkah terpisah: (1) robocopy ..\\EP72_GEMPA_LISBON_1755\\project → project /E /XD node_modules out audio  lalu buat public\\audio kosong (jangan Remove-Item wildcard; pakai /XD audio di robocopy); (2) hapus src\\episode Lisbon (Bash rm -rf di path relatif); (3) junction node_modules → F:\\AUDIRA-SKILL-MOTION\\node_modules; (4) salin kit chronicle + fxextra.tsx. Selebihnya ikuti catatan handover sebelumnya (API kit, GLB list, VO, juri, final pre-approved, captions, tasks, commit).",
+      "snapshot": {
+        "episode": "EP77",
+        "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
+        "style": "CHRONICLE",
+        "memoryEpisode": "sejarah-negara-EP77",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:08:24.829Z",
+      "doing": "s3 selesai (context guard ±193k): tahap 5 scaffold + tahap 6 VO (89.21 dtk, film 92.2 dtk) selesai; draft/TIMING_LOCK.md + draft/FILM_PLAN.md (rencana kode lengkap + ringkasan API kit) ditulis. Kode film BELUM ditulis.",
+      "files": [
+        "draft/FILM_PLAN.md",
+        "draft/TIMING_LOCK.md",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "project/src/kits/chronicle/",
+        "project/src/film/glb.tsx",
+        "project/public/glb/"
+      ],
+      "next": "s4: baca draft/FILM_PLAN.md + draft/TIMING_LOCK.md saja (API kit sudah diringkas di sana). Hapus src/episode Lisbon, tulis timeline.ts/parts.tsx/scenes.tsx/KatakombeFilm.tsx, ubah Root.tsx, tsc, stills, cover-topic.png, sfx, contact sheet + juri buta + THEME_CHECK, lalu render final (sudah pre-approved user 2026-11-25), delivery tahap 10, commit EP77 + topics.md 022.",
+      "snapshot": {
+        "episode": "EP77",
+        "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
+        "style": "CHRONICLE",
+        "memoryEpisode": "sejarah-negara-EP77",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:14:16.519Z",
+      "doing": "s4 tahap 7: kode film sebagian ditulis (timeline.ts, parts.tsx, glb.tsx prop sil); scenes.tsx, KatakombeFilm.tsx, Root.tsx belum",
+      "files": [
+        "draft/FILM_LAYOUT_S4.md",
+        "draft/FILM_PLAN.md",
+        "draft/TIMING_LOCK.md",
+        "project/src/episode/timeline.ts",
+        "project/src/episode/parts.tsx",
+        "project/src/film/glb.tsx"
+      ],
+      "next": "Baca draft/FILM_LAYOUT_S4.md (tata letak tiap adegan + dimensi GLB + spesifikasi HUD) lalu tulis src/episode/scenes.tsx + KatakombeFilm.tsx + Root.tsx; tsc; stills; cover-topic; sfx; contact sheet + audit + THEME_CHECK; juri buta; render final (pre-approved 2026-11-25); delivery tahap 10; commit.",
+      "snapshot": {
+        "episode": "EP77",
+        "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
+        "style": "CHRONICLE",
+        "memoryEpisode": "sejarah-negara-EP77",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:16:26.568Z",
+      "doing": "s4 selesai menulis SEMUA kode film (belum di-tsc / belum dirender): src/episode/timeline.ts, parts.tsx, scenes.tsx (12 sub-adegan S1..S8 + LOOKS), KatakombeFilm.tsx (HUD kartu CHRONICLE, Subtitle, VO, outro, signature), src/Root.tsx (KatakombePreview/KatakombeFinal saja), src/film/glb.tsx (prop sil). Dummy mesh tak terpakai di akhir S8 (scenes.tsx, mesh visible=false) boleh dihapus.",
+      "files": [
+        "draft/FILM_LAYOUT_S4.md",
+        "draft/FILM_PLAN.md",
+        "draft/TIMING_LOCK.md",
+        "project/src/episode/timeline.ts",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/KatakombeFilm.tsx",
+        "project/src/Root.tsx",
+        "project/src/film/glb.tsx"
+      ],
+      "next": "s5: npx tsc --noEmit (perbaiki error) → npm run stills -- out/draft 3,8,15,22,27,33,40,48,55,63,68,73,78,82,86 KatakombePreview → periksa still (penempatan GLB/kamera sesuai draft/FILM_LAYOUT_S4.md, perbaiki) → style/cover-topic.png → PYTHONUTF8=1 npm run sfx → contact sheet 8 frame + audit:visual + THEME_CHECK.md → juri buta (maks 2 putaran) → render final (pre-approved) → tahap 10 → commit.",
+      "snapshot": {
+        "episode": "EP77",
+        "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
+        "style": "CHRONICLE",
+        "memoryEpisode": "sejarah-negara-EP77",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:28:56.172Z",
+      "doing": "s5 selesai tahap 8 sebagian: tsc bersih (stub src/data/map-nusantara.json dibuat untuk kit relief.ts); perbaikan: Embers size 0.06–0.12 (dulu 0.6–1.1 = gumpalan putih), tengkorak BoneWall (oval tegak + rongga mata besar + rongga hidung, eRef count ×3), S6 Héricart jalan x −1.5→0.2 59.8–63.2 lalu menunjuk, S7A Tunnel w3.6 h3.7 (portal tak tertutup plafon) + kamera mundur + glow plakat 0.22, S7B kunci kamera akhir k([0.6,-2.6,6.2],[0,-4.6,0]) & k([2.2,-3.4,5.8],[0,-5.8,0]), kartu HUD keluar = fade (bukan mengecil), CutEarth + pointLight fill hangat di depan muka potongan. style/cover-topic.png dibuat (KatakombeFinal 3.6 dtk). docs/SHOTLIST.md ditulis; PYTHONUTF8=1 npm run sfx -- --style=CHRONICLE → public/audio/sfx.wav −26 LUFS (VO mentah −28.2; setelah mix VO −16 vs SFX efektif −30 = 14 LU, G18c lolos). npm run draft -- KatakombePreview --frames=3.6s,12s,22s,40s,55s,66s,73s,80s → plafon audit lighting5 material5 depth5 composition5 readability4, kamera motion 5/5; draft/DRAFT_SHEET.jpg + contact-sheet.jpg + jury_input.json ada (sheet DIBUAT SEBELUM fill CutEarth). Sisa cacat kecil: S2 11–12 dtk separuh bawah masih gelap (muka tanah di bawah jalan) — opsional naikkan intensitas fill atau warna soil.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/jury_input.json",
+        "draft/DRAFT_REPORT.json",
+        "docs/SHOTLIST.md",
+        "style/cover-topic.png",
+        "project/public/audio/sfx.wav",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/timeline.ts",
+        "project/src/episode/KatakombeFilm.tsx"
+      ],
+      "next": "s6: (opsional) poles S2 12 dtk gelap → ulang `npm run draft -- KatakombePreview --frames=3.6s,12s,22s,40s,55s,66s,73s,80s` di project/ → tulis draft/THEME_CHECK.md (G22, 8 frame, subjek = kata VO, semua ya) → record_score judge self lalu juri buta subagent (F:/AUDIRA-SKILL-MOTION/qa/jury.md + draft/jury_input.json + DRAFT_SHEET.jpg + quality-bar chronicle.jpg; record_score judge jury, style CHRONICLE, episode sejarah-negara-EP77, maks 2 putaran) → bila LOLOS / ≥3.5 setelah 2 putaran: update stage final approved true note \"pre-approved user 2026-11-25 (batch 10 short otonom)\" → kunci F:/AUDIRA-EPISODES/_render.lock → npm run render:final -- KatakombeFinal --concurrency=1 --jobs=6 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav (cek argumen di scripts/render-final.mjs) → hapus lock → QA −14 LUFS TP<−1, metadata ffprobe, signature → tahap 10 (SOCIAL_CAPTIONS jadwal lanjut setelah EP72 18 Jan 2027 & cek EP73–76, SUBTITLES.srt, NOTES.md, lessons, 3 scheduled task review-katakombe-paris-24h/-72h/-7d) → topics.md 022 hapus \"(proses)\" commit di F:/AUDIRA-ALL-SKILL → commit folder EP77 saja.",
+      "snapshot": {
+        "episode": "EP77",
+        "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
+        "style": "CHRONICLE",
+        "memoryEpisode": "sejarah-negara-EP77",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:47:21.646Z",
+      "doing": "s6 selesai: 2 putaran juri buta CHRONICLE gagal (3.33, 3.17; terbaik < 3.5). Final TIDAK dirender. SOCIAL_CAPTIONS.md (validator ok, Sabtu 23 Jan 2027) + SUBTITLES.srt + NOTES.md ditulis. Kode s6 (CutEarth fill, City cut ground, S3A cobble+lampu lubang, boneMat bump, clothMat, kartu sub 0.95, kutipan tanpa teks Prancis) belum di-commit.",
+      "files": [
+        "NOTES.md",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/timeline.ts",
+        "project/src/episode/KatakombeFilm.tsx"
+      ],
+      "next": "Ganti style (rule 6c / G21): audira_recommend_fallback_style failedStyles [CHRONICLE] → AI pilih style (material batu/tulang terbukti) → ulang tahap 4 docs + cover topik → scene → draf + THEME_CHECK → juri maks 2 putaran → tahap 9 (pre-approved user 2026-11-25, batch) render dengan _render.lock --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav → tahap 10 (caption sudah ada, cek ulang teks cover) → 3 scheduled task review-katakombe-paris-24h/-72h/-7d → topics.md 022 hapus (proses) → commit folder EP77 saja. Naskah/VO/SFX tetap.",
+      "snapshot": {
+        "episode": "EP77",
+        "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
+        "style": "CHRONICLE",
+        "memoryEpisode": "sejarah-negara-EP77",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-25T00:05:03.227Z",
+      "doing": "koordinator: s6 idle, buka s7 untuk ganti style (CHRONICLE gagal 3.33/3.17)",
+      "next": "s7: audira_recommend_fallback_style failedStyles [CHRONICLE] → style baru → ulang tahap 4 + cover → scene → draf + THEME_CHECK → juri maks 2 → final via _render.lock → tahap 10 → commit",
+      "snapshot": {
+        "episode": "EP77",
+        "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
+        "style": "CHRONICLE",
+        "memoryEpisode": "sejarah-negara-EP77",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-25T00:06:44.533Z",
+      "doing": "s7: CHRONICLE fallback habis kategori → style baru PAPERWORLD (Remotion R3F). Reskin: src/episode/paper.tsx (PaperSkin traverse material→paperFace, look kertas, outline off), parts.tsx material kertas, HUD kartu kertas. Geometri/timeline/VO/SFX tetap.",
+      "files": [
+        "project/src/episode/paper.tsx",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/KatakombeFilm.tsx"
+      ],
+      "next": "G21 docs Style: PAPERWORLD + STYLE_DECISION + cover topik → draf contact sheet + THEME_CHECK → juri buta maks 2 → final via _render.lock",
+      "snapshot": {
+        "episode": "EP77",
+        "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
+        "style": "CHRONICLE",
+        "memoryEpisode": "sejarah-negara-EP77",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-25T00:11:00.379Z",
+      "doing": "s7: style baru PAPERWORLD (fallback CHRONICLE habis kategori; PAPERWORLD = unggulan, juri sejarah 4.17). Reskin selesai & tsc bersih: src/episode/paper.tsx (PaperSkin: material→paperFace kit, point light ×0.32 + warna ke putih, hapus outline sil; paperLook per scene dengan fill dingin), parts.tsx (limestone strata kertas, cobble kertas, boneMat paperFace ivoryLight), scenes.tsx LOOKS=paperLook, KatakombeFilm HUD kartu kertas ivory. Draf lama CHRONICLE dipindah ke draft/chronicle_s6/. Draf PAPERWORLD v2: ceilings L5 M5 D3 C5 R3 (diversity 60). Belum ada juri.",
+      "files": [
+        "project/src/episode/paper.tsx",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/KatakombeFilm.tsx",
+        "draft/DRAFT_SHEET.jpg"
+      ],
+      "next": "Poles sebelum juri: (1) limestone strata masih terbaca papan kayu → tepi lapisan bergelombang + warna variasi (ivory/gold/sage/biru abu); (2) frame 80s kartu 131 sedang fade (card 77.7–80.1) → ganti frame ke 79s; (3) S4B dinding jebol kurang terbaca, S3A lubang kosong. Lalu draf: cd project; npm run draft -- KatakombePreview --frames=3.6s,12s,22.6s,40s,55s,66s,73s,79s --clip=auto --out=../draft. Tulis draft/THEME_CHECK.md (Style: PAPERWORLD), docs G21 baris Style: PAPERWORLD (SCRIPT/STORYBOARD/ART_DIRECTION/ASSET_MANIFEST), style/STYLE_DECISION.md, cover topik (npm run cover). Juri buta subagent (qa/jury.md + draft/jury_input.json) maks 2 putaran → final via _render.lock (--vo=public/audio/vo.wav --sfx=public/audio/sfx.wav), QA, tag, tahap 10, topics.md baris 022, commit folder EP77.",
+      "snapshot": {
+        "episode": "EP77",
+        "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
+        "style": "CHRONICLE",
+        "memoryEpisode": "sejarah-negara-EP77",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-25T00:12:55.575Z",
+      "doing": "s7 selesai: style PAPERWORLD (reskin kertas di src/episode/paper.tsx + parts.tsx strata kertas bergelombang + LOOKS paperLook + HUD kartu kertas). Draf v3 (8 frame 3.6,12,22.6,40,55,66,73,79 s, clip auto): ceilings L5 M5 D5 C5 R5, kamera 5/5, \"OK: no aspect capped below 4\". G21 docs baris Style: PAPERWORLD (SCRIPT/STORYBOARD/ART_DIRECTION/ASSET_MANIFEST/SHOTLIST), style/STYLE_DECISION.md baru (lama → STYLE_DECISION_CHRONICLE_s6.md), draft/THEME_CHECK.md baru (semua ya). Belum: cover topik PAPERWORLD, juri buta.",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "draft/THEME_CHECK.md",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/jury_input.json",
+        "project/src/episode/paper.tsx",
+        "project/src/episode/parts.tsx",
+        "NOTES.md"
+      ],
+      "next": "s8: (1) cover topik: cd project; npm run cover (atau salin still hook dari draft/_stills) → style/cover-topic.png. (2) record_score self lalu juri buta subagent (qa/jury.md + draft/jury_input.json + draft/DRAFT_SHEET.jpg), stage draft, style PAPERWORLD, maks 2 putaran; ≥3.5 → final. (3) update stage final approved:true note \"pre-approved user 2026-11-25 (batch 10 short otonom)\"; lock F:/AUDIRA-EPISODES/_render.lock (set -C, umur>60 menit basi, tunggu via background loop); npm run render:final -- KatakombeFinal ... --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav; hapus lock. (4) QA −14 LUFS TP<−1, metadata ffprobe → FINAL_EP77_*_tagged.mp4; record_score final; append_lesson PAPERWORLD (worked: reskin PaperSkin untuk menyelamatkan scene gagal material; lampu ×0.32). (5) SOCIAL_CAPTIONS.md teks cover sesuai style + validator; 3 scheduled task review-katakombe-paris-24h/-72h/-7d (upload Sabtu 23 Jan 2027 slot pertama); NOTES.md. (6) F:/AUDIRA-ALL-SKILL/channel-topics/audira-faktadunia/topics.md baris 022 hapus \" (proses)\", commit hanya file itu. (7) commit hanya folder EP77.",
+      "snapshot": {
+        "episode": "EP77",
+        "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
+        "style": "CHRONICLE",
+        "memoryEpisode": "sejarah-negara-EP77",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-25T00:15:09.234Z",
+      "doing": "s8: cover PAPERWORLD selesai (style/cover-topic.png), juri buta 3.83 LOLOS. Render final antre _render.lock (script menunggu lock, ambil atomik, render, lepas lock).",
+      "command": "bash F:/temp/claude/4b963ae6b9cd5ff7/2f6cd629-d026-44f5-8102-f9c35e5702b4/scratchpad/render_ep77.sh (npm run render:final -- --comp=KatakombeFinal --out=../FINAL_EP77_KATAKOMBE_PARIS.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --offset=0 --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=... --slug=katakombe-paris --ep=EP77, RENDER_TMPDIR=F:/render-tmp)",
+      "files": [
+        "FINAL_EP77_KATAKOMBE_PARIS.mp4",
+        "style/cover-topic.png"
+      ],
+      "next": "QA -14 LUFS TP<-1 + ffprobe metadata → FINAL_EP77_KATAKOMBE_PARIS_tagged.mp4; record_score final (juri); append_lesson worked; SOCIAL_CAPTIONS validator; 3 scheduled task; NOTES; topics.md baris 022; commit EP77.",
+      "snapshot": {
+        "episode": "EP77",
+        "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "sejarah-negara-EP77",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-25T00:24:05.459Z",
+      "doing": "render_ep77.sh (bash pid 12284, orphan — sesi s8 tidak akan dibangunkan) antre _render.lock (EP75 pegang), lalu render KatakombeFinal PAPERWORLD",
+      "files": [
+        "FINAL_EP77_KATAKOMBE_PARIS.mp4",
+        "F:/temp/claude/4b963ae6b9cd5ff7/2f6cd629-d026-44f5-8102-f9c35e5702b4/scratchpad/render_ep77.sh"
+      ],
+      "next": "s9: pantau pid 12284 + FINAL_EP77_KATAKOMBE_PARIS.mp4 (background loop); bila script mati tanpa final, jalankan render sendiri lewat lock. Lalu QA -14 LUFS TP<-1, tag _tagged.mp4 + ffprobe, record_score final, append_lesson, SOCIAL_CAPTIONS validator, 3 scheduled task, NOTES, topik 022 tanpa (proses), commit folder EP77",
+      "snapshot": {
+        "episode": "EP77",
+        "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "sejarah-negara-EP77",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-25T00:25:23.764Z",
+      "doing": "s9: pantau render_ep77.sh (winpid 12284) antre _render.lock lalu render KatakombeFinal",
+      "command": "bash render_ep77.sh (orphan)",
+      "next": "Bila skrip mati tanpa FINAL: render sendiri via lock. Lalu QA -14 LUFS/TP, qa_video, tag, record_score final, lesson, caption validator, 3 scheduled task (slot pertama Sabtu 23 Jan 2027 19.00 WIB), NOTES (masih versi CHRONICLE s6, perlu ditulis ulang PAPERWORLD), topik 022, commit EP77",
+      "snapshot": {
+        "episode": "EP77",
+        "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "sejarah-negara-EP77",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    }
+  ],
+  "session": 9,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP77 Katakombe Paris · s2",
+      "at": "2026-11-24T18:21:28.672Z"
+    },
+    {
+      "no": 3,
+      "title": "EP77 Katakombe Paris · s3",
+      "at": "2026-11-24T18:27:53.344Z"
+    },
+    {
+      "no": 4,
+      "title": "EP77 Katakombe Paris · s4",
+      "at": "2026-11-24T23:08:24.829Z"
+    },
+    {
+      "no": 5,
+      "title": "EP77 Katakombe Paris · s5",
+      "at": "2026-11-24T23:16:26.568Z"
+    },
+    {
+      "no": 6,
+      "title": "EP77 Katakombe Paris · s6",
+      "at": "2026-11-24T23:28:56.171Z"
+    },
+    {
+      "no": 7,
+      "title": "EP77 Katakombe Paris · s7",
+      "at": "2026-11-25T00:05:03.226Z"
+    },
+    {
+      "no": 8,
+      "title": "EP77 Katakombe Paris · s8",
+      "at": "2026-11-25T00:12:55.575Z"
+    },
+    {
+      "no": 9,
+      "title": "EP77 Katakombe Paris · s9",
+      "at": "2026-11-25T00:24:05.459Z"
+    }
+  ],
+  "handover": {
+    "at": "2026-11-25T00:25:23.764Z",
+    "doing": "s9: pantau render_ep77.sh (winpid 12284) antre _render.lock lalu render KatakombeFinal",
+    "command": "bash render_ep77.sh (orphan)",
+    "next": "Bila skrip mati tanpa FINAL: render sendiri via lock. Lalu QA -14 LUFS/TP, qa_video, tag, record_score final, lesson, caption validator, 3 scheduled task (slot pertama Sabtu 23 Jan 2027 19.00 WIB), NOTES (masih versi CHRONICLE s6, perlu ditulis ulang PAPERWORLD), topik 022, commit EP77",
+    "snapshot": {
+      "episode": "EP77",
+      "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
+      "style": "PAPERWORLD",
+      "memoryEpisode": "sejarah-negara-EP77",
+      "currentStage": "final",
+      "gates": {
+        "final": {
+          "approved": true,
+          "status": "in_progress"
+        }
+      },
+      "voPath": null,
+      "draftScores": [],
+      "finals": [],
+      "draftRounds": 0
+    }
+  }
+}
