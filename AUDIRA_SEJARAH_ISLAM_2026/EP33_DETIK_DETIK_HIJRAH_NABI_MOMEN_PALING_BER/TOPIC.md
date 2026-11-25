@@ -5,7 +5,11 @@ title: "Detik-Detik Hijrah Nabi: Momen Paling Berbahaya dalam Sejarah Islam"
 hook: "Kenapa perjalanan sejauh 400 km itu hampir tidak pernah berhasil dicapai?"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "CHRONICLE (2D)", "CINESTORY (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook awal TOPIC.md keliru (perjalanan berhasil, hampir gagal); laba-laba dan merpati di gua tidak dinarasikan; adab tanpa wajah."
 ---
 
 # Detik-Detik Hijrah Nabi: Momen Paling Berbahaya dalam Sejarah Islam

@@ -5,7 +5,11 @@ title: "Kenapa Manusia Punya Sidik Jari yang Berbeda-Beda"
 hook: "Jawaban evolusioner di balik garis-garis di ujung jarimu yang ternyata bukan untuk identifikasi"
 styleCandidates: ["NANOFORGE (3D)", "CERDIK (2D)", "BEDAH (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah; fungsi sidik jari masih diperdebatkan, naskah sudah membingkainya sebagai hipotesis, dan visual janin perlu dibuat lembut"
 ---
 
 # Kenapa Manusia Punya Sidik Jari yang Berbeda-Beda

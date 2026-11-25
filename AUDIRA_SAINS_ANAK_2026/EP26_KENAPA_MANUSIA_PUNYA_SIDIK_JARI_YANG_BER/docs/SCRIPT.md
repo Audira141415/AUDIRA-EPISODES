@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP26`)
+# Naskah — Kenapa Manusia Punya Sidik Jari yang Berbeda-Beda
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **13** · estimasi **5 dtk**
+- Visual: Ujung jari raksasa menekan kaca, cap sidik jari tercetak; stempel "BUKAN UNTUK POLISI" dicoret, kamera zoom masuk ke garis-garis.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Sidik jarimu tidak dibuat untuk polisi. Lalu, untuk apa garis-garis kecil itu ada?
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Dua tangan kembar identik berdampingan, dua cap sidik jari ditumpuk dan tidak cocok; HUD "KEMBAR IDENTIK ≠", untai DNA kembar di latar.
 
-> <konteks singkat + "Di Audira, ...">
+> Setiap orang punya pola sidik jari sendiri, bahkan anak kembar identik. Padahal DNA mereka hampir sama persis. Jadi, dari mana bedanya?
 
-## c02 — <Judul Bab 1>
+## c02 — Di dalam kandungan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Rahim bercahaya lembut, janin siluet, zoom ke ujung jari mungil; kulit mulai menonjol. HUD "MINGGU KE-13".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Jawabannya dimulai di dalam kandungan. Sekitar minggu ke-13, kulit ujung jari janin mulai membentuk tonjolan pertama, cikal bakal garis sidik jari.
 
-## c03 — <Judul Bab 2>
+## c03 — Gelombang garis
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Close-up permukaan ujung jari seperti peta; beberapa titik awal menyala, garis tumbuh menyebar seperti riak air. HUD "2023 · UNIV. EDINBURGH · CELL".
 
-> <teks narasi>
+> Tahun 2023, tim peneliti Universitas Edinburgh menemukan caranya. Garis itu tumbuh seperti gelombang, dari beberapa titik awal di ujung jari, lalu menyebar ke seluruh bantalan jari dan saling bertemu.
 
-## c04 — <Judul Bab 3>
+## c04 — Sinyal Turing
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Level sel: tiga partikel sinyal berwarna berlabel WNT, EDAR, BMP saling dorong dan mundur, pola belang muncul di lapisan kulit. HUD "SISTEM TURING".
 
-> <teks narasi>
+> Tiga sinyal kimia, yaitu WNT, EDAR, dan BMP, saling dorong dan saling rem. Ilmuwan menyebut mekanisme pembuat pola ini sistem Turing.
 
-## c05 — <Judul Bab 4>
+## c05 — Tabrakan jadi pola
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Tiga jari berjajar, gelombang dari titik berbeda bertabrakan dan menghasilkan tiga pola; kartu HUD "LENGKUNG · SANGKUTAN · PUSARAN".
 
-> <teks narasi>
+> Di mana gelombang mulai, dan di mana mereka bertabrakan, selalu sedikit berbeda di tiap jari. Bentuk ujung jari ikut menentukan. Hasilnya lengkung, sangkutan, atau pusaran yang tak pernah sama.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan fungsi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **40** · estimasi **17 dtk**
+- Visual: Uji lab: jari menekan kaca akrilik, area kontak menyusut, HUD "−1/3 LUAS SENTUH · 2009", ikon genggaman dicoret. Lalu jari mengusap kain, gelombang getaran menyala menuju reseptor di bawah kulit.
 
-> <teks narasi>
+> Terus, fungsinya apa? Dulu dikira supaya genggaman kuat. Tapi uji tahun 2009 menunjukkan sidik jari justru mengurangi luas sentuhan sepertiga di kaca akrilik. Penelitian lain menemukan garis ini memperkuat getaran saat jari mengusap benda, jadi tekstur halus lebih mudah terasa.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Payoff: ribuan sidik jari berbeda tersusun membentuk satu jari raksasa, pusaran unik berputar ke kamera; label "AUDIRA" terukir di kaca lab; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi keunikan sidik jarimu bukan tujuan evolusi, tapi efek samping proses tumbuh yang acak. Ikuti AUDIRA untuk cerita sains seru di balik tubuhmu sendiri.
+
+## Opsi hook lain
+
+1. Ada orang yang lahir tanpa sidik jari sama sekali. Jadi, sebenarnya sidik jari itu buat apa?
+2. Kembar identik punya DNA hampir sama, tapi sidik jarinya beda. Kok bisa?
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **198 kata** ≈ **79–88 dtk**

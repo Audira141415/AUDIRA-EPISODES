@@ -5,7 +5,11 @@ title: "Fisika Kuantum Untuk Pemula: Dunia di Bawah Atom Sangat Aneh"
 hook: "Elektron bisa ada di dua tempat sekaligus — dan itu bukan metafora"
 styleCandidates: ["POLYVERSE (3D)", "NANOFORGE (3D)", "CERDIK (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook asli (elektron di dua tempat) tidak akurat; naskah sudah dikoreksi ke superposisi, tafsir kuantum dihindari."
 ---
 
 # Fisika Kuantum Untuk Pemula: Dunia di Bawah Atom Sangat Aneh

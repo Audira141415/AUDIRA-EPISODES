@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP25`)
+# Naskah — Fisika Kuantum Untuk Pemula: Dunia di Bawah Atom Sangat Aneh
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Close-up ekstrem sehelai rambut, kamera menyelam masuk sampai deretan bola atom karbon. HUD: "1 rambut ≈ 1.000.000 atom".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Sehelai rambutmu selebar kira-kira sejuta atom. Dan di dalam dunia sekecil itu, aturan alam jadi aneh banget.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Atom tunggal melayang, awan elektron berpendar di sekitar inti. Penggaris skala HUD "±100 pikometer". Label HUD "AUDIRA SAINS" di papan lab.
 
-> <konteks singkat + "Di Audira, ...">
+> Ini AUDIRA. Satu atom cuma sekitar seratus pikometer. Di ukuran segitu, benda kecil tidak lagi bergerak seperti kelereng. Fisikawan menyebutnya dunia kuantum.
 
-## c02 — <Judul Bab 1>
+## c02 — Energi datang per paket
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Lab kayu kuno, papan tulis; sinar cahaya pecah menjadi butiran-butiran paket energi. Card HUD "1918 · Max Planck · Nobel".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Semua berawal dari Max Planck. Ia menemukan energi ternyata datang dalam paket kecil, namanya kuanta. Penemuan itu membuatnya meraih Nobel tahun seribu sembilan ratus delapan belas.
 
-## c03 — <Judul Bab 2>
+## c03 — Elektron satu per satu
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Mikroskop elektron besar, pistol elektron menembak ke layar berdinding dua celah. Titik cahaya muncul satu-satu di layar detektor. HUD "1 elektron · ±10/detik".
 
-> <teks narasi>
+> Lalu tim peneliti Hitachi menembakkan elektron satu per satu ke arah dua celah. Setiap elektron mendarat sebagai satu titik kecil, persis seperti butiran.
 
-## c04 — <Judul Bab 3>
+## c04 — Pola zebra misterius
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Time-lapse layar detektor: ribuan titik menumpuk menjadi garis-garis terang gelap. Jam HUD berputar "±20 menit".
 
-> <teks narasi>
+> Tapi setelah sekitar dua puluh menit, titik-titik itu menyusun garis-garis seperti zebra. Pola ini cuma bisa muncul kalau ada gelombang yang seolah lewat dua celah sekaligus.
 
-## c05 — <Judul Bab 4>
+## c05 — Penjelasan: belum punya posisi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Elektron berubah jadi kabut gelombang peluang yang menyebar; senter/detektor menyorot, kabut runtuh jadi satu titik tajam. Label HUD "superposisi" lalu "diukur".
 
-> <teks narasi>
+> Artinya, sebelum diukur, elektron belum punya satu posisi pasti. Ia menyebar seperti gelombang peluang. Begitu diukur, ia langsung muncul di satu titik saja.
 
-## c06 — <Judul Bab 5>
+## c06 — Menembus dinding
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Partikel menabrak dinding tebal lalu tembus ke seberang; potong ke matahari menyala, lalu ponsel dengan chip memori berkedip. HUD "tunneling" + ikon memori flash.
 
-> <teks narasi>
+> Keanehan lainnya, partikel bisa menembus dinding yang harusnya mustahil dilewati. Namanya tunneling. Berkat ini, inti atom di matahari bisa menyatu, jadi matahari terus bersinar. Memori flash di ponselmu juga memakainya.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Hero shot chip sirkuit berkilau di atas meja lab, medali Nobel muncul. Card HUD "2025 · Nobel Fisika · tunneling di chip". Ditutup outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Tahun dua ribu dua puluh lima, Nobel Fisika diberikan untuk tunneling yang terlihat di sebuah chip. Dunia kuantum memang aneh, tapi ternyata ada di sakumu. Ikuti AUDIRA buat keanehan sains berikutnya.
+
+## Opsi hook lain
+
+1. Elektron yang kamu kirim satu-satu ternyata bikin pola gelombang. Kok bisa?
+2. Matahari seharusnya tidak bisa bersinar, kalau bukan karena trik kuantum.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **198 kata** ≈ **83 dtk**

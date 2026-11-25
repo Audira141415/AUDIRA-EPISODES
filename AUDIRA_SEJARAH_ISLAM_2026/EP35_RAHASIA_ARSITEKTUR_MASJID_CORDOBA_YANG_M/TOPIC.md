@@ -5,7 +5,11 @@ title: "Rahasia Arsitektur Masjid Córdoba yang Masih Membingungkan Arsitek Mode
 hook: "Sebuah bangunan abad ke-8 yang masih belum bisa sepenuhnya dipahami cara membuatnya"
 styleCandidates: ["WORLDFORGE (3D)", "CHRONICLE (2D)", "MANUSCRIPT (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul/hook berlebihan (bukan misteri, hanya nama arsitek yang tak diketahui); kiriman mosaik Bizantium hanya dari kronik Ibnu Idhari; tokoh wajib siluet tanpa wajah."
 ---
 
 # Rahasia Arsitektur Masjid Córdoba yang Masih Membingungkan Arsitek Modern

@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP24`)
+# Naskah — Plankton: Makhluk Tak Kasat Mata yang Menghasilkan Setengah Oksigen Bumi
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **14** · estimasi **6 dtk**
+- Visual: close-up hidung/napas anak di tepi pantai, kamera menyelam ke satu tetes air laut, zoom mikroskop ke titik-titik hijau bercahaya.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Napas yang kamu tarik barusan? Sebagian oksigennya dibuat makhluk yang bahkan tak terlihat mata.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: laut biru luas, partikel plankton hanyut terbawa arus panah; HUD kata Yunani "planktos = pengembara".
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya plankton, dari kata Yunani planktos, artinya si pengembara. Mereka tak bisa melawan arus, cuma hanyut terbawa laut.
 
-## c02 — <Judul Bab 1>
+## c02 — Pabrik oksigen mini
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: satu sel fitoplankton raksasa di bawah sinar matahari tembus air; panah CO₂ masuk, gelembung O₂ keluar; label klorofil.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Ada plankton yang mirip tumbuhan, namanya fitoplankton. Ia punya klorofil, menangkap sinar matahari, menyerap karbon dioksida, lalu melepas oksigen. Persis seperti pohon di darat.
 
-## c03 — <Judul Bab 2>
+## c03 — Bentuk yang ajaib
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **9 dtk**
+- Visual: galeri mikroskop berputar: diatom transparan seperti kaca (callout "silika"), kokolitofor berlapis keping kapur (callout "kapur").
 
-> <teks narasi>
+> Bentuknya ajaib. Di bawah mikroskop, mereka tampak seperti perhiasan kecil. Diatom berumah kaca dari silika, sementara kokolitofor berbaju zirah kapur.
 
-## c04 — <Judul Bab 3>
+## c04 — Si kecil Prochlorococcus
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: skala menyusut dari ikan ke butir pasir ke satu sel bulat mungil; HUD "1986" lalu meter persen naik ke "s.d. 20% oksigen biosfer".
 
-> <teks narasi>
+> Lalu ada Prochlorococcus, makhluk fotosintesis terkecil di Bumi, baru ditemukan tahun 1986. Menurut NOAA, bakteri mungil ini menghasilkan sampai dua puluh persen oksigen seluruh biosfer.
 
-## c05 — <Judul Bab 4>
+## c05 — Rantai makanan laut
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **37** · estimasi **16 dtk**
+- Visual: rantai bergerak naik: awan fitoplankton → kawanan krill → paus biru membuka mulut; HUD "6 ton krill / hari" dengan tumpukan ton.
 
-> <teks narasi>
+> Fitoplankton jadi dasar rantai makanan laut. Krill memakannya, lalu krill disantap paus biru, hewan terbesar yang pernah hidup. Paus biru terbesar bisa makan sampai enam ton krill sehari. Raksasa itu hidup dari makanan yang awalnya sekecil debu.
 
-## c06 — <Judul Bab 5>
+## c06 — Jadi, benarkah setengah?
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: globe Bumi terbelah daratan vs laut, diagram timbangan oksigen: sisi produksi "±50% dari laut", sisi konsumsi ikan dan makhluk laut bernapas, timbangan nyaris seimbang.
 
-> <teks narasi>
+> Jadi benarkah plankton menghasilkan setengah oksigen Bumi? Ilmuwan memperkirakan kira-kira separuh produksi oksigen datang dari laut, sebagian besar dari plankton. Tapi hampir sebanyak itu dipakai lagi makhluk laut untuk bernapas.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: kamera mundur dari satu sel ke lautan bercahaya hijau-biru dilihat dari orbit, lalu fade ke outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Artinya, hutan paling penting di planet ini mungkin justru tak kelihatan. Ia hanyut diam-diam di setiap tetes laut. Ikuti AUDIRA untuk rahasia sains berikutnya, dan jaga laut kita.
+
+## Opsi hook lain
+
+1. Hutan terpenting di Bumi ternyata tak punya satu pohon pun.
+2. Makhluk sekecil debu ini menyumbang sampai seperlima oksigen dunia.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **196 kata** ≈ **78–87 dtk** @135–150 WPM

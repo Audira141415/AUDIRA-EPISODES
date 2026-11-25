@@ -5,7 +5,11 @@ title: "Plankton: Makhluk Tak Kasat Mata yang Menghasilkan Setengah Oksigen Bumi
 hook: "Makhluk mikroskopis di lautan yang diam-diam menghidupi hampir semua kehidupan di Bumi"
 styleCandidates: ["TERRARIUM (3D)", "NANOFORGE (3D)", "SCALEFORGE (3D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul dan hook melebih-lebihkan (oksigen = kira-kira separuh produksi dari laut, sebagian besar plankton, dan hampir sama banyak dikonsumsi lagi); aset GLB plankton/krill/paus belum ada"
 ---
 
 # Plankton: Makhluk Tak Kasat Mata yang Menghasilkan Setengah Oksigen Bumi

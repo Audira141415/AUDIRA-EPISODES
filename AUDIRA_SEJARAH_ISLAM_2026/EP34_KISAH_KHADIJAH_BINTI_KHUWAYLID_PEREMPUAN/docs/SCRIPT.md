@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP34`)
+# Naskah — Kisah Khadijah binti Khuwaylid: Perempuan Pertama yang Menjadi Benteng Islam
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Malam gelap, mulut Gua Hira di tebing berbatu; siluet sosok berselimut turun menuruni bukit menuju satu rumah berlampu di Makkah (tanpa wajah).
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Malam itu, Nabi pulang dari Gua Hira dengan tubuh gemetar. Orang pertama yang menenangkannya adalah seorang perempuan.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Interior rumah, lampu minyak menyala; kaligrafi nama "Khadijah binti Khuwaylid" muncul sebagai kartu nama HUD. Callout: "Orang pertama yang beriman".
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya Khadijah binti Khuwaylid. Istri pertama Nabi Muhammad, dan menurut mayoritas ulama, orang pertama yang beriman kepadanya.
 
-## c02 — <Judul Bab 1>
+## c02 — Saudagar Quraisy
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Peta Arab bergerak, garis rute kafilah unta dari Makkah ke Syam; deretan unta bermuatan kain dan rempah. Callout HUD: "Makkah → Syam".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Sebelum Islam, Khadijah adalah saudagar besar Quraisy. Ia mempekerjakan Muhammad muda membawa kafilah dagangnya ke Syam. Terkesan oleh kejujurannya, dialah yang melamar lebih dulu.
 
-## c03 — <Judul Bab 2>
+## c03 — Malam wahyu pertama
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Close-up tangan menyelimutkan kain ke bahu siluet yang duduk; teks kinetik per kata kutipan Khadijah. Callout: "HR. Bukhari no. 3".
 
-> <teks narasi>
+> Lalu wahyu pertama turun. Nabi berkata, aku takut terjadi sesuatu padaku. Khadijah menjawab, demi Allah, Allah tidak akan menghinakanmu. Engkau menyambung silaturahmi, menolong yang lemah, dan memuliakan tamu.
 
-## c04 — <Judul Bab 3>
+## c04 — Menemui Waraqah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Dua siluet berjalan di lorong kota Makkah malam hari menuju rumah tua penuh gulungan naskah; gulungan terbuka berhuruf kuno. Callout: "Waraqah bin Naufal".
 
-> <teks narasi>
+> Ia tidak berhenti di kata-kata. Khadijah membawa Nabi menemui sepupunya, Waraqah bin Naufal, orang tua yang paham kitab-kitab terdahulu. Kisah ini tercatat dalam Shahih Bukhari, hadis nomor tiga.
 
-## c05 — <Judul Bab 4>
+## c05 — Harta untuk dakwah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Peti dagang terbuka, koin dan karung gandum dibagikan ke tangan-tangan tanpa wajah; lalu lembah sempit berbatu yang dikepung (boikot). Callout: "Boikot Bani Hasyim".
 
-> <teks narasi>
+> Saat Quraisy menekan kaum Muslim, Khadijah tetap di sisi suaminya. Hartanya ikut dipakai menopang dakwah, sampai masa boikot terhadap Bani Hasyim.
 
-## c06 — <Judul Bab 5>
+## c06 — Tahun Duka
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Langit senja memudar jadi kelabu; dua lampu minyak padam satu per satu. Callout tahun "±619 M" dan label "Tahun Duka".
 
-> <teks narasi>
+> Sekitar tahun 619 Masehi, tiga tahun sebelum hijrah, Khadijah wafat. Di tahun yang sama, paman Nabi, Abu Thalib, juga wafat. Tahun itu dikenal sebagai Tahun Duka.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **35** · estimasi **15 dtk**
+- Visual: Fajar keemasan di atas Makkah; kaligrafi nama Maryam dan Khadijah bersanding; cahaya turun ke rumah berlampu. Callout: "HR. Bukhari no. 3815, 3818 & 3820". Ditutup outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Bertahun-tahun kemudian, Nabi masih sering menyebut namanya, dan terus mengirim hadiah untuk sahabat-sahabat Khadijah. Beliau bersabda, perempuan terbaik di masanya adalah Maryam, dan Khadijah. Jibril bahkan membawa salam dari Allah untuknya. Kisah ini dari AUDIRA.
+
+## Opsi hook lain
+
+1. Wahyu pertama membuat Nabi gemetar. Kalimat pertama yang menenangkannya datang dari istrinya.
+2. Ada satu perempuan yang menerima salam langsung dari Allah lewat Jibril. Namanya Khadijah.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **196 kata** ≈ **78–87 dtk**

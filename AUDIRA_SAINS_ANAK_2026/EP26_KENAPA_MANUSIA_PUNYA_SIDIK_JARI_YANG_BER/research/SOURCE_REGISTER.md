@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi`
+# Source Register — Kenapa Manusia Punya Sidik Jari yang Berbeda-Beda
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Garis sidik jari terbentuk sebelum lahir lewat sistem reaksi-difusi Turing (sinyal EDAR, WNT, dan BMP yang saling menghambat); garis tumbuh sebagai gelombang dari beberapa titik awal yang bervariasi, dan cara gelombang menyebar lalu bertemu menentukan tipe pola serta variasinya yang tak berujung | The developmental basis of fingerprint pattern formation and variation, Glover JD, Headon DJ dkk. (Roslin Institute, Univ. Edinburgh), Cell 186(5), 2023 | https://doi.org/10.1016/j.cell.2023.01.015 | 2026-11-25 | HIGH |
+| 2 | Pada kulit janin manusia, tonjolan epidermis primer (cikal bakal garis sidik jari) mulai terbentuk pada usia kehamilan 13–14 minggu, lalu memadat antara minggu 14 dan 16 | Epidermal stem cells are the source of sweat glands in human fetal skin, Fu X dkk., Wound Repair and Regeneration 13(1), 2005 | https://pubmed.ncbi.nlm.nih.gov/15659042/ | 2026-11-25 | HIGH |
+| 3 | Uji gesekan ujung jari pada kaca akrilik kering: kulit jari berperilaku seperti karet, dan sidik jari mengurangi luas kontak sekitar sepertiga dibanding kulit datar, sehingga fungsi "penambah cengkeraman" sangat diragukan | Fingerprints are unlikely to increase the friction of primate fingerpads, Warman PH & Ennos AR, Journal of Experimental Biology 212, 2009 | https://doi.org/10.1242/jeb.028977 | 2026-11-25 | HIGH |
+| 4 | Sensor biomimetik bergaris mirip sidik jari: saat mengusap permukaan, getaran didominasi satu frekuensi yang jatuh di rentang paling peka reseptor Pacini, sehingga sidik jari diduga memperkuat informasi tekstur halus (< 200 mikrometer) | The role of fingerprints in the coding of tactile information probed with a biomimetic sensor, Scheibert J, Leurent S, Prevost A, Debrégeas G, Science 323, 2009 | https://doi.org/10.1126/science.1166467 | 2026-11-25 | HIGH |
+| 5 | Sidik jari kembar identik lebih mirip dalam tipe pola, tetapi tetap bisa dibedakan satu sama lain | On the similarity of identical twin fingerprints, Jain AK, Prabhakar S, Pankanti S, Pattern Recognition 35(11), 2002 | https://doi.org/10.1016/S0031-3203(01)00218-7 | 2026-11-25 | HIGH |
+| 6 | Tipe pola sidik jari berkaitan dengan bentuk (geometri) permukaan ujung jari saat pola terbentuk; model tekukan lapisan basal epidermis janin | Fingerprint formation, Kücken M & Newell AC, Journal of Theoretical Biology 235(1), 2005 | https://doi.org/10.1016/j.jtbi.2004.12.020 | 2026-11-25 | MEDIUM |
+| 7 | Mutasi gen SMARCAD1 (isoform khusus kulit) menyebabkan adermatoglyphia, kondisi bawaan tanpa sidik jari | Mutations in SMARCAD1 cause autosomal dominant adermatoglyphia, Nousbeck J dkk., British Journal of Dermatology 171(6), 2014 | https://doi.org/10.1111/bjd.13176 | 2026-11-25 | MEDIUM |
+| 8 | Tiga pola dasar sidik jari: lengkung (arch), sangkutan (loop), dan pusaran (whorl); sidik jari dipakai sebagai penanda identitas biometrik | Fingerprint, Wikipedia (rev. 2026-11-23) | https://en.wikipedia.org/wiki/Fingerprint | 2026-11-25 | MEDIUM |

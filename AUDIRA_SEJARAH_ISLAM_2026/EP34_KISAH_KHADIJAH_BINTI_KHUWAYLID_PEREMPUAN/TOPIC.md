@@ -5,7 +5,11 @@ title: "Kisah Khadijah binti Khuwaylid: Perempuan Pertama yang Menjadi Benteng I
 hook: "Tanpa Khadijah, apakah Islam akan bertahan di masa-masa paling gelap dakwah pertama?"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "CHARACTERFLOW (2D)", "STORYBOOK (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Isu sensitif QISSAH: tanpa wajah Nabi/Khadijah; usia saat menikah diperselisihkan (tidak dinarasikan); judul \"Perempuan Pertama\"/\"Benteng Islam\" kurang tepat, koreksi di RESEARCH_REPORT."
 ---
 
 # Kisah Khadijah binti Khuwaylid: Perempuan Pertama yang Menjadi Benteng Islam
