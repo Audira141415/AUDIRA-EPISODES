@@ -1,0 +1,529 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP10_KUCING_MENDARAT_KAKI",
+  "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+  "createdAt": "2026-11-24T18:18:19.209Z",
+  "updatedAt": "2026-11-25T00:14:15.531Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:50.694Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-24T18:18:19.210Z",
+      "startedAt": "2026-11-24T18:18:19.210Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:50.694Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:16:30.080Z",
+      "startedAt": "2026-11-23T14:16:30.080Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:22:09.422Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T18:22:09.163Z",
+      "startedAt": "2026-11-24T18:22:09.163Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:22:56.890Z",
+          "text": "Tahap 1–4 selesai sesi A (2026-11-25): SOURCE_REGISTER 9 fakta, STYLE_DECISION ANATOMIX, SCRIPT 205 kata (audio/vo.txt ejaan TTS), STORYBOARD 7 adegan, ART_DIRECTION, ASSET_MANIFEST. Proyek project/ disalin dari starter + junction node_modules."
+        }
+      ],
+      "doneAt": "2026-11-24T18:22:56.890Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:50.694Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:21:35.898Z",
+          "text": "VO Cartesia 90.93 dtk terkunci (s2): public/audio/vo.wav + vo-words.json + vo.timing.json"
+        }
+      ],
+      "doneAt": "2026-11-24T23:21:35.898Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:50.695Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.572Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:22:19.353Z",
+          "text": "sync: look.json PASS"
+        },
+        {
+          "at": "2026-11-24T23:23:04.298Z",
+          "text": "Draf r1 selesai (s3): draft/DRAFT_SHEET.jpg + DRAFT_REPORT.json. Ceilings L5 M3 D5 C5 R4, camera motion 5/5, diversity 45.5. PERLU POLES material≤3: surface detail 6.6 vs cover 11.2, 56.9% bidang datar (cover 23.7%) → tambah tekstur/grain/bevel di bidang besar (lantai, dinding, lab, strip Marey) sebelum juri r1, atau skor juri dengan material cap 3 (rata-rata masih bisa ≥3.8)."
+        },
+        {
+          "at": "2026-11-24T23:25:49.270Z",
+          "text": "sync: look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-24T23:21:57.629Z",
+      "startedAt": "2026-11-24T23:21:57.629Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T23:36:04.481Z",
+      "notes": [
+        {
+          "at": "2026-11-24T23:36:04.481Z",
+          "text": "pre-approved user 2026-11-25 (batch 10 short otonom)"
+        },
+        {
+          "at": "2026-11-25T00:14:13.833Z",
+          "text": "FINAL_EP10_KUCING_MENDARAT_tagged.mp4 1080x1920@60 94.4 s, -13.8 LUFS TP -1.8 dBFS, G18c gap 13.0 LU, metadata+C2PA valid"
+        }
+      ],
+      "startedAt": "2026-11-24T23:36:04.481Z",
+      "doneAt": "2026-11-25T00:14:13.833Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:34:17.016Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-25T00:14:15.531Z",
+          "text": "Caption 6 platform valid (Jumat 27 Nov 19.00 WIB), NOTES.md, lesson ANATOMIX, task review-kucing-mendarat-kaki-24h/-72h/-7d"
+        }
+      ],
+      "doneAt": "2026-11-25T00:14:15.531Z",
+      "startedAt": "2026-11-24T23:33:45.843Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sains-anak-EP10",
+    "style": "ANATOMIX",
+    "engine": "remotion",
+    "wordCount": 205,
+    "shortTitle": "Kucing Mendarat",
+    "title": "Kenapa Kucing Selalu Mendarat dengan Kaki",
+    "slug": "kucing-mendarat-kaki",
+    "heroModel": "cat-base (rigged)",
+    "estimatedDuration": {
+      "wordCount": 205,
+      "minSec": 82,
+      "maxSec": 91
+    }
+  },
+  "syncedAt": "2026-11-24T23:34:17.016Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-24T18:23:11.532Z",
+      "doing": "Sesi A selesai (tahap 0–4). Style ANATOMIX, Remotion+R3F 3D, hero GLB rigged cat-base. Naskah 205 kata (est. 82–91 dtk). Tahap 7 di checklist tampil ✓ palsu (dari file template) — BELUM dikerjakan.",
+      "files": [
+        "STATUS.json",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/ART_DIRECTION.md",
+        "docs/SCRIPT.md",
+        "audio/vo.txt",
+        "research/SOURCE_REGISTER.md"
+      ],
+      "next": "Sesi B tahap 5–8: (5) project/ sudah disalin dari F:/AUDIRA-SKILL-MOTION/starter + junction node_modules → starter/node_modules; edit project/SERIES.json jadi akun SAINS @AudiraSains; hapus komposisi template PenggantiGibran dari src/Root.tsx; npm run check-env + smoke. (6) VO: audira_generate_voiceover text = isi audio/vo.txt (scriptPath bisa gagal 'no timed lines'), output project/public/audio/vo.wav + vo-words.json; npm run vo -- public/audio/vo.wav; kunci timeline. (7) Film di project/src/episodes/cat/ pola EP05 (F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP05_SISI_BULAN_YANG_SAMA/project/src/episodes/moon: MoonFilm.tsx FilmScene+Karaoke+Hud+AudiraSignature+AudiraOutro, timeline.ts SCENES, scenes.tsx per-scene node+shot). Kucing: salin E:/ASET/ASSET-AUDIRA/downloads/glb/animal/cat-base.glb ke public/models/ep10/cat.glb, load GLTFLoader + SkeletonUtils.clone; tulang: Hips(2)→Spine→Chest→Neck→Head(LeftEar/RightEar/Jaw), Chest→Left/RightFrontUpLeg→Elbow→Leg→Foot, Hips→Tail→TailTip, Hips→Left/RightHindUpLeg→Leg→Hock→Foot; tanpa rotasi default, sumbu badan = +z (kepala +z), tinggi 0.36. Putaran: Hips.rotation.z = roll belakang, Spine.z+Chest.z = selisih roll depan; fase A depan π→π/2 (kaki depan dilipat) belakang π→π+10°, fase B keduanya ke 0. Mode hologram = MeshStandard teal transparan 0.28 + fresnel onBeforeCompile; mode nyata = vertex color + MeshPhysical sheen. Animasi Idle/Walk via AnimationMixer.setTime (deterministik). Furnitur: alcove-bookcase-83894d, lounge-sofa-c34b3e, floor-houseplant-8fad17, area-rug-5c56e2, arc-floor-lamp-fa0b5f (AssetModel). 7 adegan di docs/STORYBOARD.md; Finish CYBER_NEON_VOID exp 1 env 0.55 ao off bg #03141A. Lalu npm run sfx (PYTHONUTF8=1, TARGET_LUFS -27 bila G18c tipis). (8) contact sheet 6–8 frame + audit:visual + draft/THEME_CHECK.md + juri buta (record_score self lalu jury). Lalu handover ke sesi C. ATURAN OTONOM: gerbang tahap 9 sudah pre-approved user 2026-11-25 (batch 10 short otonom); kunci F:/AUDIRA-EPISODES/_render.lock sebelum render final penuh; commit hanya folder EP10; setelah final ubah baris topik 038 di F:/AUDIRA-ALL-SKILL/channel-topics/audira-sains/topics.md jadi '[x] SAINS_ANAK/EP10' dan commit file itu saja.",
+      "snapshot": {
+        "episode": "EP10_KUCING_MENDARAT_KAKI",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP10",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:23:45.163Z",
+      "doing": "Sesi s1 berhenti di batas konteks (215k). Tahap 0–4 selesai. Tahap 5 sebagian: project/SERIES.json sudah akun SAINS, komposisi template PenggantiGibran dihapus dari Root.tsx + file-nya, cat.glb disalin ke project/public/models/ep10/cat.glb, audio template lama dihapus. Belum: npm run check-env + smoke.",
+      "files": [
+        "project/SERIES.json",
+        "project/src/Root.tsx",
+        "project/public/models/ep10/cat.glb"
+      ],
+      "next": "Sesi s2 (judul \"EP10 Kucing Mendarat · s2\", sudah dinomori): npm run check-env + smoke di project/, lalu tahap 6–8 sesuai catatan handover sebelumnya (VO dari audio/vo.txt via audira_generate_voiceover text, film src/episodes/cat/ pola EP05 moon, sfx, contact sheet + juri), lalu sesi C. Aturan otonom batch 2026-11-25 tetap berlaku (pre-approved gerbang 9, _render.lock, commit hanya folder EP10, topik 038).",
+      "snapshot": {
+        "episode": "EP10_KUCING_MENDARAT_KAKI",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP10",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:14:38.035Z",
+      "doing": "Sesi s2 (B): tahap 5 selesai (node_modules junction rusak diganti npm ci lokal; check-env + smoke OK). Tahap 6 selesai: VO Cartesia 90,93 dtk, 205 kata → project/public/audio/vo.wav + vo-words.json + vo.timing.json. Tahap 7 sedang: film ditulis di project/src/episodes/cat/ (timeline.ts 7 scene: hook 0–8.6, marey 8.6–27.5, ear 27.5–40.7, spine 40.7–53.6, momentum 53.6–74.6, landing 74.6–82.4, outro 82.4–94.4; Cat.tsx rigged cat real/holo + bone portals; sets.tsx LivingRoom/FilmStrip/Lab/Arc/Shock; scenes.tsx; Hud.tsx; CatFilm.tsx). Root.tsx sudah daftar CatPreview/CatFinal (CAT_SECONDS 94.4). Props GLB disalin ke public/models/ep10/.",
+      "files": [
+        "project/src/episodes/cat/timeline.ts",
+        "project/src/episodes/cat/Cat.tsx",
+        "project/src/episodes/cat/sets.tsx",
+        "project/src/episodes/cat/scenes.tsx",
+        "project/src/episodes/cat/Hud.tsx",
+        "project/src/episodes/cat/CatFilm.tsx",
+        "project/src/Root.tsx",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "Cek prop FilmScene (near/far/fade mungkin tidak ada → hapus dari CatFilm.tsx), npx tsc --noEmit, lalu npm run stills CatPreview di detik 3,15,32,47,63,79,88 → cek pose tulang (sumbu rotasi foldFront/extendHind/roll) dan framing; lalu npm run sfx, tahap 8 contact sheet + audit:visual + juri buta (qa/jury.md), lalu Sesi C (gerbang 9 pre-approved, _render.lock, render:final CatFinal --vo --sfx).",
+      "snapshot": {
+        "episode": "EP10_KUCING_MENDARAT_KAKI",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP10",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:18:49.125Z",
+      "doing": "Sesi s2 (B) berhenti di batas konteks. Selesai: tahap 5 (npm ci lokal, junction lama rusak; check-env+smoke OK), tahap 6 (VO 90,93 dtk → public/audio/vo.wav + vo-words.json + vo.timing.json), film tahap 7 di project/src/episodes/cat/ (CatFilm.tsx, Cat.tsx rigged real/holo + useThree.advance fix, sets.tsx dgn grainTex, scenes.tsx 7 scene, Hud.tsx, timeline.ts CAT_SECONDS 94.4), Root.tsx CatPreview/CatFinal; tsc bersih. Still s2 (out/s2/_sheet.jpg) sudah menunjukkan kucing di semua scene. Sesudah s2 diubah (belum dirender ulang): hologram opacity 0.16 FrontSide, kanal telinga digeser ke (±0.034,0.036,-0.004), kamera spine d 4.1→3.5, ear d 3.6→1.4, tekstur grain di lantai/dinding/lab/marey (audit material sebelumnya cap 3 karena 52,8% bidang datar).",
+      "files": [
+        "project/src/episodes/cat/CatFilm.tsx",
+        "project/src/episodes/cat/Cat.tsx",
+        "project/src/episodes/cat/sets.tsx",
+        "project/src/episodes/cat/scenes.tsx",
+        "project/src/episodes/cat/Hud.tsx",
+        "project/src/episodes/cat/timeline.ts",
+        "project/out/s2/_sheet.jpg",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "Sesi s3: (1) npm run stills -- out/s3 3s,15s,33s,47s,63s,80s CatPreview → cek cepat contact sheet. (2) Buat docs/SHOTLIST.md (contoh format: ../EP05_SISI_BULAN_YANG_SAMA/docs/SHOTLIST.md; cut di 8.6,27.5,40.7,53.6,74.6,82.4; pop di waktu kartu Hud.tsx; riser 69.8→impact 79.0 mendarat) lalu npm run sfx. (3) Tahap 8: npm run draft -- CatPreview → draft/DRAFT_SHEET.jpg, isi draft/THEME_CHECK.md (G22), skor self + juri buta (subagent, qa/jury.md) via audira_style_memory record_score ANATOMIX episode sains-anak-EP10; maks 2 putaran; lolos ≥3.8 atau terbaik ≥3.5. (4) Sesi C: update stage final approved:true note \"pre-approved user 2026-11-25 (batch 10 short otonom)\", antre F:\\AUDIRA-EPISODES\\_render.lock, npm run render:final CatFinal --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav, tag metadata, −14 LUFS TP<−1, tahap 10 (caption 6 platform validasi, NOTES.md, lesson, 3 scheduled task review-kucing-mendarat-kaki-24h/-72h/-7d, topik 038 di F:\\AUDIRA-ALL-SKILL\\channel-topics\\audira-sains\\topics.md hapus \"(proses)\" + commit terpisah, commit hanya folder EP10).",
+      "snapshot": {
+        "episode": "EP10_KUCING_MENDARAT_KAKI",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP10",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:21:31.278Z",
+      "doing": "s3 (diambil alih sesi EP06): docs/SHOTLIST.md ditulis, npm run sfx OK (public/audio/sfx.wav −26 LUFS, 38 sounds, payoff 79.0); npm run draft -- CatPreview berjalan (log project/out/draft.log)",
+      "command": "npm run draft -- CatPreview",
+      "files": [
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav",
+        "draft/DRAFT_SHEET.jpg"
+      ],
+      "next": "THEME_CHECK.md G22, skor self + juri buta ANATOMIX sains-anak-EP10; lalu update final approved (pre-approved), lock, render:final CatFinal --vo --sfx, QA, tahap 10",
+      "snapshot": {
+        "episode": "EP10_KUCING_MENDARAT_KAKI",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP10",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:22:07.476Z",
+      "doing": "s3 (diambil alih sesi EP06, berhenti di context guard ±191k). Selesai s3: docs/SHOTLIST.md (18 shot, payoff 79.0 'SENDI = PEGAS'), npm run sfx → project/public/audio/sfx.wav (−26 LUFS, TP −6.9, 38 sounds), stage voice=done. Sedang/terakhir: `npm run draft -- CatPreview` dijalankan di background 06:2x WIB (log project/out/draft.log; hasil ke draft/DRAFT_SHEET.jpg, look.json, camera.json, jury_input.json). Bila DRAFT_SHEET.jpg belum ada atau log tidak berakhir dengan ringkasan, jalankan ulang perintah itu. SOCIAL_CAPTIONS.md, NOTES.md, draft/THEME_CHECK.md MASIH TEMPLATE.",
+      "command": "npm run draft -- CatPreview (background, log project/out/draft.log)",
+      "files": [
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav",
+        "project/out/draft.log",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md"
+      ],
+      "next": "Sesi s4: (1) cek draft/DRAFT_SHEET.jpg + out/draft.log ringkasan; isi draft/THEME_CHECK.md (≥6 baris, frame cocok VO: hook kucing jatuh 0–8.6, strip Marey 8.6–27.5, telinga vestibular 27.5–40.7, tulang punggung 40.7–53.6, momentum 90°/10° 53.6–74.6, mendarat 74.6–82.4, outro); record_score self lalu juri buta subagent (F:/AUDIRA-SKILL-MOTION/qa/jury.md, cover quality-bar ANATOMIX, ceilings dari look.json, camera dari camera.json) style ANATOMIX episode sains-anak-EP10; maks 2 putaran, lolos ≥3.8 atau terbaik ≥3.5. (2) update stage final approved:true note 'pre-approved user 2026-11-25 (batch 10 short otonom)'. (3) ambil F:/AUDIRA-EPISODES/_render.lock (noclobber, isi nama EP + ISO; umur>60 mnt = basi), di project/: node scripts/render-final.mjs --comp=CatFinal --out=out/FINAL_EP10_KUCING_MENDARAT.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=3 --parts=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Kenapa Kucing Selalu Mendarat dengan Kaki\" --slug=kucing-mendarat-kaki --ep=EP10 --log=error (tambah --skip-channel=\"<alasan>\" bila channel gate gagal karena file lain di src/scenes/news) > out/render-final.log 2>&1, hapus lock sesudahnya (jobs 6 memicu ERR_CONNECTION_ABORTED). Script sudah menulis metadata+C2PA+loudness; salin byte-identik (cp, jangan remux) ke ../FINAL_EP10_KUCING_MENDARAT_tagged.mp4; QA ebur128 −14±0.5 LUFS TP<−1, ffprobe artist 'AUDIRA (Agus Dwi R.)'. record_score final judge jury. (4) Tahap 10: tulis SOCIAL_CAPTIONS.md 6 platform (contoh format ../EP06_LUBANG_HITAM_TIDAK_MENYEDOT/SOCIAL_CAPTIONS.md; fakta dari docs/SCRIPT.md + research/SOURCE_REGISTER.md: Marey 1894 Nature, refleks 3–4 minggu, vestibular, tulang punggung lentur + selangka kecil, momentum sudut 90°/10°, sendi = pegas, kucing tetap bisa cedera/high-rise), jadwal Jumat 27 Nov 2026 TikTok 19.00 → IG 19.20 → YT 19.40 → FB 20.00 → X 20.20 → Threads 20.40 WIB (Rabu=EP06, Kamis=EP09), Label Konten AI; validasi expectedKeywords [kucing, vestibular, momentum sudut]. NOTES.md, append_lesson ANATOMIX, 3 scheduled task review-kucing-mendarat-kaki-24h/-72h/-7d (fireAt 2026-11-28T19:00+07:00, 2026-11-30T19:00+07:00, 2026-12-04T19:00+07:00; prompt mandiri, contoh di C:/Users/ASUS/.claude/scheduled-tasks/review-lubang-hitam-tidak-menyedot-24h/SKILL.md). Hapus project/out/s1 s2 smoke draft klip + MP4 mentah; topik 038 F:/AUDIRA-ALL-SKILL/channel-topics/audira-sains/topics.md hapus '(proses)' + commit file itu saja; commit hanya folder EP10, KELUARKAN *.mp4 dan *.wav dari commit (EP lain tidak commit biner).",
+      "snapshot": {
+        "episode": "EP10_KUCING_MENDARAT_KAKI",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP10",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:22:59.848Z",
+      "doing": "s3 (koordinator) cek draf: draft/DRAFT_SHEET.jpg ada (06:21, CatPreview 30fps, frame 57/425/849/1274/1699/2123/2491/2789 = 1.9/14.2/28.3/42.5/56.6/70.8/83.0/93.0 dtk). Proses remotion render draf (PID 58372) masih jalan 06:22, draft.log kosong; camera.json + jury_input.json belum ada. THEME_CHECK belum diisi.",
+      "command": "npm run draft -- CatPreview (background, project/out/draft.log)",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/_stills/_meta.json",
+        "project/out/draft.log"
+      ],
+      "next": "Sesi s4: (1) tunggu render draf selesai (cek draft/camera.json, jury_input.json); bila prosesnya mati tanpa itu, jalankan ulang `npm run draft -- CatPreview`. (2) Isi draft/THEME_CHECK.md (format EP06). Kata VO per frame: 1.9 \"Kucing jatuh dengan punggung di bawah\" = kucing terbalik jatuh dekat rak buku, ya; 14.2 \"Marei memotret kucing jatuh dengan kamera cepat\" = kucing jatuh + strip film, ya; 28.3 \"Langkah pertama, mencari arah bawah\" = hologram kucing dengan tulang punggung menyala, TANPA telinga/vestibular disorot, kemungkinan `tidak` → tambah sorotan telinga dalam/callout VESTIBULAR di adegan 27.5–40.7 lalu render ulang sheet; 42.5 \"Langkah kedua, menekuk badan\" = hologram kucing menekuk, ya; 56.6 \"momentum sudut\" = hologram kucing berputar, ya; 70.8 \"Lalu gantian, badan belakang\" = hologram + panah GANTIAN, ya; 83.0 \"Tapi ingat, kucing tetap bisa terluka\" = kucing berdiri di lantai, lemah (tambah callout cedera/high-rise bila mudah); 93.0 outro AUDIRA Sains, ya. (3) Juri + render final + tahap 10 persis seperti handover sebelumnya (perintah render-final.mjs CatFinal, jadwal Jumat 27 Nov, task review-kucing-mendarat-kaki-*, topik 038, commit tanpa mp4/wav).",
+      "snapshot": {
+        "episode": "EP10_KUCING_MENDARAT_KAKI",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP10",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:36:13.404Z",
+      "doing": "s4: draf r2 selesai (telinga dalam menyala 27.6 dtk + callout TELINGA DALAM, kartu cedera 82.6 dtk; ceilings L5 M3 D5 C5 R4, kamera 5). THEME_CHECK 8 baris semua ya. Self 4.0. Juri buta r2 berjalan. SOCIAL_CAPTIONS.md sudah ditulis + valid. final approved:true (pre-approved). Menunggu _render.lock (dipegang EP07 sejak 06:34 WIB).",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "SOCIAL_CAPTIONS.md",
+        "project/src/episodes/cat/Hud.tsx",
+        "project/src/episodes/cat/scenes.tsx"
+      ],
+      "next": "record_score judge jury (bila belum); tunggu lock bebas → tulis lock → di project/: node scripts/render-final.mjs --comp=CatFinal --out=out/FINAL_EP10_KUCING_MENDARAT.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=3 --parts=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Kenapa Kucing Selalu Mendarat dengan Kaki\" --slug=kucing-mendarat-kaki --ep=EP10 --log=error > out/render-final.log 2>&1 → hapus lock → cp ke ../FINAL_EP10_KUCING_MENDARAT_tagged.mp4 → QA → NOTES, lesson, 3 task review (fireAt 2026-11-28T19:00+07:00 / 11-30 / 12-04), topik 038, commit.",
+      "snapshot": {
+        "episode": "EP10_KUCING_MENDARAT_KAKI",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP10",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 1
+      }
+    },
+    {
+      "at": "2026-11-24T23:40:30.644Z",
+      "doing": "s4 selesai sampai draf r2: juri buta r1 = 3.67 (L4 M3 D3 C3 R4 Mo5, tercatat). Poles r2: dinding grid momentum z+2.9, hook z start -0.25, kamera spine d 4.7→3.9; DRAFT_SHEET.jpg r2 dirender 06:39 (stills OK; klip camera timeout karena GPU dipakai final EP07 → camera.json r1 (5/5) tetap berlaku, kamera tak berubah). THEME_CHECK 8 baris ya. SOCIAL_CAPTIONS.md valid. NOTES.md ditulis. 3 scheduled task review-kucing-mendarat-kaki-24h/-72h/-7d SUDAH dibuat. final approved:true. Lock dipegang EP07 sejak 06:34 WIB.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md",
+        "project/src/episodes/cat/scenes.tsx",
+        "project/src/episodes/cat/Hud.tsx"
+      ],
+      "next": "(1) Juri buta r2 (subagent, qa/jury.md, DRAFT_SHEET.jpg + quality-bar anatomix.png + draft/jury_input.json; ceilings L5 M3 D5 C5 R4, motion 5) → record_score judge jury ANATOMIX sains-anak-EP10 stage draft (putaran 2/2; lolos ≥3.8 atau terbaik ≥3.5 → final). (2) Tunggu F:/AUDIRA-EPISODES/_render.lock bebas (Monitor until-loop), tulis lock 'EP10_KUCING_MENDARAT_KAKI <ISO>', di project/: node scripts/render-final.mjs --comp=CatFinal --out=out/FINAL_EP10_KUCING_MENDARAT.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=3 --parts=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Kenapa Kucing Selalu Mendarat dengan Kaki\" --slug=kucing-mendarat-kaki --ep=EP10 --log=error > out/render-final.log 2>&1; hapus lock. (3) cp byte-identik ke ../FINAL_EP10_KUCING_MENDARAT_tagged.mp4; QA ebur128 -14±0.5 LUFS TP<-1, ffprobe artist 'AUDIRA (Agus Dwi R.)'; record_score final jury. (4) append_lesson ANATOMIX (fix: dinding grid kedua bila kamera di balik dinding Lab; failed: material low-poly 3). (5) stage delivery done; hapus project/out/s1 s2 smoke + draft/CHECK_*.mp4; topik 038 F:/AUDIRA-ALL-SKILL/channel-topics/audira-sains/topics.md baris 42 hapus ' (proses)' + commit file itu saja; commit folder EP10 tanpa *.mp4/*.wav.",
+      "snapshot": {
+        "episode": "EP10_KUCING_MENDARAT_KAKI",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP10",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 1
+      }
+    },
+    {
+      "at": "2026-11-24T23:41:27.865Z",
+      "doing": "Juri r2 3.67 → diterima setelah 2 putaran (lesson failed+fix ANATOMIX tercatat, NOTES diperbarui). Skrip background menunggu _render.lock lalu render final CatFinal + cp ke FINAL_EP10_KUCING_MENDARAT_tagged.mp4 + ffprobe/ebur128 (log: project/out/render-final.log).",
+      "command": "bash F:/temp/claude/4b963ae6b9cd5ff7/c7f09a0f-a174-46d8-9146-10c96b52bf8b/scratchpad/ep10_final.sh",
+      "files": [
+        "FINAL_EP10_KUCING_MENDARAT_tagged.mp4",
+        "project/out/render-final.log"
+      ],
+      "next": "Bila FINAL_EP10_KUCING_MENDARAT_tagged.mp4 ada & −14±0.5 LUFS TP<−1 & artist AUDIRA: record_score final jury (pakai skor juri draf terbaik), stage final+delivery done; hapus project/out/s1 s2 smoke + draft/CHECK_*.mp4 + project/out/FINAL mentah; topik 038 baris 42 hapus ' (proses)' + commit di F:/AUDIRA-ALL-SKILL; git add folder EP10 tanpa mp4/wav + commit. Bila render gagal: pastikan lock dilepas, jalankan ulang perintah render-final (lihat handover sebelumnya).",
+      "snapshot": {
+        "episode": "EP10_KUCING_MENDARAT_KAKI",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP10",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 1
+      }
+    }
+  ],
+  "session": 4,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP10 Kucing Mendarat · s2",
+      "at": "2026-11-24T18:23:11.532Z"
+    },
+    {
+      "no": 3,
+      "title": "EP10 Kucing Mendarat · s3",
+      "at": "2026-11-24T23:18:49.125Z"
+    },
+    {
+      "no": 4,
+      "title": "EP10 Kucing Mendarat · s4",
+      "at": "2026-11-24T23:22:59.848Z"
+    }
+  ],
+  "handover": {
+    "at": "2026-11-24T23:41:27.865Z",
+    "doing": "Juri r2 3.67 → diterima setelah 2 putaran (lesson failed+fix ANATOMIX tercatat, NOTES diperbarui). Skrip background menunggu _render.lock lalu render final CatFinal + cp ke FINAL_EP10_KUCING_MENDARAT_tagged.mp4 + ffprobe/ebur128 (log: project/out/render-final.log).",
+    "command": "bash F:/temp/claude/4b963ae6b9cd5ff7/c7f09a0f-a174-46d8-9146-10c96b52bf8b/scratchpad/ep10_final.sh",
+    "files": [
+      "FINAL_EP10_KUCING_MENDARAT_tagged.mp4",
+      "project/out/render-final.log"
+    ],
+    "next": "Bila FINAL_EP10_KUCING_MENDARAT_tagged.mp4 ada & −14±0.5 LUFS TP<−1 & artist AUDIRA: record_score final jury (pakai skor juri draf terbaik), stage final+delivery done; hapus project/out/s1 s2 smoke + draft/CHECK_*.mp4 + project/out/FINAL mentah; topik 038 baris 42 hapus ' (proses)' + commit di F:/AUDIRA-ALL-SKILL; git add folder EP10 tanpa mp4/wav + commit. Bila render gagal: pastikan lock dilepas, jalankan ulang perintah render-final (lihat handover sebelumnya).",
+    "snapshot": {
+      "episode": "EP10_KUCING_MENDARAT_KAKI",
+      "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+      "style": "ANATOMIX",
+      "memoryEpisode": "sains-anak-EP10",
+      "currentStage": "final",
+      "gates": {
+        "final": {
+          "approved": true,
+          "status": "in_progress"
+        }
+      },
+      "voPath": null,
+      "draftScores": [],
+      "finals": [],
+      "draftRounds": 1
+    }
+  }
+}
