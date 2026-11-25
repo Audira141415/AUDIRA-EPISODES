@@ -1,0 +1,589 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP75_SON_DOONG_GUA_RAKSASA",
+  "topic": "Hang Son Doong, Vietnam: gua terbesar di dunia, muat satu blok gedung pencakar langit New York, punya hutan dan cuaca sendiri",
+  "createdAt": "2026-11-24T18:19:30.427Z",
+  "updatedAt": "2026-11-25T00:28:39.002Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:54.016Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        },
+        {
+          "at": "2026-11-24T18:22:39.656Z",
+          "text": "Preflight OK (warning VRAM rendah karena sesi paralel). Baca EP72 NOTES/STYLE_DECISION + memori WORLDFORGE/SCALEFORGE/GLOBAL."
+        }
+      ],
+      "doneAt": "2026-11-24T18:22:39.656Z",
+      "startedAt": "2026-11-24T18:19:33.578Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:54.016Z",
+          "text": "sync: riset ada"
+        },
+        {
+          "at": "2026-11-24T18:22:45.113Z",
+          "text": "research/SOURCE_REGISTER.md 13 fakta (Wikipedia, Oxalis, NatGeo). Judul diganti: muat SATU BLOK New York, bukan lebih besar dari New York."
+        }
+      ],
+      "doneAt": "2026-11-24T18:22:45.113Z",
+      "startedAt": "2026-11-24T18:20:18.789Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:21:33.014Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T18:21:03.186Z",
+      "startedAt": "2026-11-24T18:21:03.186Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:21:33.014Z",
+          "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-24T18:22:45.803Z",
+          "text": "docs/ART_DIRECTION, SCRIPT (198 kata, ±79–88 dtk), STORYBOARD (11 adegan), ASSET_MANIFEST. Teks TTS research/vo.txt."
+        }
+      ],
+      "doneAt": "2026-11-24T18:22:45.803Z",
+      "startedAt": "2026-11-24T18:21:03.244Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:54.016Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.000Z",
+      "startedAt": "2026-11-22T06:09:42.000Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:11:04.278Z",
+          "text": "VO Cartesia 83,41 dtk, 198 kata, project/public/audio/vo.wav + vo-words.json + vo.timing.json. Dikunci."
+        }
+      ],
+      "doneAt": "2026-11-24T23:11:04.278Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:54.016Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-24T18:22:49.602Z",
+          "text": "Koreksi: sync salah membaca file salinan proyek EP72. src/episode masih kosong; animasi belum dimulai."
+        },
+        {
+          "at": "2026-11-24T18:29:16.422Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-24T23:11:07.806Z",
+          "text": "Film BELUM dibangun (src/episode hanya materials.ts). Tanda ✓ sebelumnya salah dari sync. Rencana lengkap: draft/BUILD_PLAN.md."
+        },
+        {
+          "at": "2026-11-24T23:11:39.820Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.000Z",
+      "startedAt": "2026-11-22T16:52:30.000Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:29:33.858Z",
+          "text": "sync: look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-24T23:29:07.830Z",
+      "startedAt": "2026-11-24T23:29:07.830Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T23:53:34.312Z",
+      "notes": [
+        {
+          "at": "2026-11-24T23:53:34.312Z",
+          "text": "pre-approved user 2026-11-25 (batch 10 short otonom). Juri r2 3.67 diterima setelah 2 putaran."
+        },
+        {
+          "at": "2026-11-25T00:27:39.346Z",
+          "text": "FINAL_EP75_SON_DOONG_tagged.mp4 1080x1920@60 86.4s, -13.7 LUFS TP -1.9, G18c gap 13.5 LU, metadata ffprobe ok, C2PA di FINAL_EP75_SON_DOONG.mp4. --skip-memory-gate (juri 3.67 diterima 2 putaran)."
+        },
+        {
+          "at": "2026-11-25T00:28:35.952Z",
+          "text": "FINAL_EP75_SON_DOONG_tagged.mp4 1080x1920@60, -13.7 LUFS TP -1.9, qa-video PASS, ffprobe artist AUDIRA, C2PA valid. Skor final 3.67."
+        }
+      ],
+      "startedAt": "2026-11-24T23:53:34.312Z",
+      "doneAt": "2026-11-25T00:28:35.952Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:55:23.895Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-25T00:28:38.021Z",
+          "text": "Caption valid, NOTES.md, 2 lesson WORLDFORGE, scheduled task review-son-doong-24h/-72h/-7d (2027-01-22/24/28 19:00 WIB)."
+        }
+      ],
+      "doneAt": "2026-11-25T00:28:38.021Z",
+      "startedAt": "2026-11-24T23:43:54.720Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-negara-EP75",
+    "style": "WORLDFORGE",
+    "engine": "remotion",
+    "shortTitle": "Son Doong",
+    "wordCount": 198,
+    "title": "Gua yang Muat Satu Blok New York",
+    "estimatedDuration": {
+      "wordCount": 198,
+      "minSec": 79,
+      "maxSec": 88
+    },
+    "voSeconds": 83.41,
+    "filmSeconds": 86.4
+  },
+  "syncedAt": "2026-11-24T23:55:23.895Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-24T18:22:56.929Z",
+      "doing": "Sesi A selesai (tahap 0–4): preflight OK, riset 13 fakta, style WORLDFORGE 3D R3F, docs SCRIPT/STORYBOARD/ART_DIRECTION/ASSET_MANIFEST.",
+      "files": [
+        "research/SOURCE_REGISTER.md",
+        "research/vo.txt",
+        "style/STYLE_DECISION.md",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/ART_DIRECTION.md",
+        "docs/ASSET_MANIFEST.md",
+        "project/src/Root.tsx",
+        "../EP72_GEMPA_LISBON_1755/project/src/episode/"
+      ],
+      "next": "Sesi B tahap 5–8: project/ sudah disalin dari EP72 (node_modules junction ke F:/AUDIRA-SKILL-MOTION/node_modules, Lisbon & PenggantiGibran dihapus dari Root.tsx, src/episode kosong). Langkah: (6) VO Cartesia dari research/vo.txt (198 kata) → audio/vo.wav + vo-words.json, salin ke project/public/audio, npm run vo; (7) tulis src/episode/SonDoongFilm.tsx multi-scene 11 adegan pakai pola EP72 src/episode (LisbonFilm/parts/scenes/timeline), daftarkan SonDoongPreview/SonDoongFinal di Root.tsx, docs/SHOTLIST.md, npm run sfx; cover topik style/cover-topic.png; (8) contact sheet + audit:visual + THEME_CHECK + juri buta. Keputusan: WORLDFORGE, Remotion+R3F, judul 'Gua yang Muat Satu Blok New York', handle @AudiraFaktaDunia, signature seed ep75-son-doong. Render final pakai --concurrency=1 --jobs=4..6 (lesson GLOBAL), kunci F:/AUDIRA-EPISODES/_render.lock. Gerbang tahap 9 pre-approved pengguna 2026-11-25 (batch 10 short otonom).",
+      "snapshot": {
+        "episode": "EP75_SON_DOONG_GUA_RAKSASA",
+        "topic": "Hang Son Doong, Vietnam: gua terbesar di dunia, muat satu blok gedung pencakar langit New York, punya hutan dan cuaca sendiri",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP75",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:23:31.103Z",
+      "doing": "Sesi A selesai (tahap 0–4). Sesi B belum mulai: start_session ditolak (batas 5 sesi paralel), konteks s1 habis.",
+      "files": [
+        "research/vo_tts.txt",
+        "research/vo.txt",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/ART_DIRECTION.md"
+      ],
+      "next": "Sesi B (judul 'EP75 Son Doong · s2', counter sudah dinaikkan): mulai tahap 6 VO dari research/vo_tts.txt (ejaan TTS: 'Ho Kan', 'Hang Son Dong', 'Audira'; teks asli research/vo.txt). Lalu tahap 7–8 sesuai catatan handover sebelumnya, lalu Sesi C tahap 9–10 (gerbang final pre-approved pengguna 2026-11-25, kunci F:/AUDIRA-EPISODES/_render.lock, render --concurrency=1 --jobs=4, commit hanya folder EP75, update topik 028 di F:/AUDIRA-ALL-SKILL/channel-topics/audira-faktadunia/topics.md).",
+      "snapshot": {
+        "episode": "EP75_SON_DOONG_GUA_RAKSASA",
+        "topic": "Hang Son Doong, Vietnam: gua terbesar di dunia, muat satu blok gedung pencakar langit New York, punya hutan dan cuaca sendiri",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP75",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:08:07.846Z",
+      "doing": "Sesi B s2: tahap 6 VO Cartesia dari research/vo_tts.txt",
+      "files": [
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "npm run vo, lalu bangun src/episode (template EP72 Lisbon), sfx, contact sheet, juri",
+      "snapshot": {
+        "episode": "EP75_SON_DOONG_GUA_RAKSASA",
+        "topic": "Hang Son Doong, Vietnam: gua terbesar di dunia, muat satu blok gedung pencakar langit New York, punya hutan dan cuaca sendiri",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP75",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:11:11.452Z",
+      "doing": "Sesi B s2 selesai sebagian: tahap 6 VO dikunci (83,41 dtk), 18 GLB disalin ke public/models/polyfork, materials.ts disalin dari EP59. Konteks s2 habis (194k).",
+      "files": [
+        "draft/BUILD_PLAN.md",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "project/public/audio/vo-words.json",
+        "project/src/episode/materials.ts"
+      ],
+      "next": "Sesi B lanjut tahap 7: bangun film WORLDFORGE 11 scene persis draft/BUILD_PLAN.md (batas scene, kartu HUD, template EP59), lalu sfx, tahap 8 contact sheet + juri buta, lalu Sesi C tahap 9–10 (pre-approved, _render.lock, --concurrency=1 --jobs=4).",
+      "snapshot": {
+        "episode": "EP75_SON_DOONG_GUA_RAKSASA",
+        "topic": "Hang Son Doong, Vietnam: gua terbesar di dunia, muat satu blok gedung pencakar langit New York, punya hutan dan cuaca sendiri",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP75",
+        "currentStage": "animation",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:22:32.549Z",
+      "doing": "s3: film WORLDFORGE 11 scene DITULIS, tsc bersih, BELUM dirender/dicek visual. File: project/src/episode/{SonDoongFilm.tsx, scenes.tsx (S1–S11), parts.tsx (Cave tube displaced, RockWall strata, Surface, Jungle GLB, SunShaft, Mist, Caver helm+lampu, Crate, MeasureBar, Leaves), timeline.ts (SHOTS 18 shot + CARDS 28 kartu sesuai BUILD_PLAN)}. Root.tsx mendaftarkan SonDoongPreview + SonDoongFinal. core/assets/AssetModel.tsx disalin dari EP59 (prop grain/grainTiles). Belum diverifikasi: orientasi Boeing (S5, rotation 0, harus terbang ke +z), intensitas lampu (pointLight/spotLight SunShaft 900–5000), keterbacaan scene gelap S4/S8.",
+      "files": [
+        "draft/BUILD_PLAN.md",
+        "project/src/episode/SonDoongFilm.tsx",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/timeline.ts",
+        "project/src/Root.tsx"
+      ],
+      "next": "s4: (1) npm run stills -- out/s 4s,8s,11s,16s,21s,26s,31s,37s,41s,45s,49s,54s,59s,63s,67s,72s,77s,80s SonDoongPreview, buat satu contact sheet kecil, perbaiki kamera/lampu/orientasi GLB; (2) docs/SHOTLIST.md (SFX cue per shot dari timeline.ts) + npm run sfx; (3) draft/THEME_CHECK.md G22 + npm run draft -- SonDoongPreview + record_score self + juri buta subagent (maks 2 putaran); (4) Sesi C: update final approved:true note \"pre-approved user 2026-11-25 (batch 10 short otonom)\", render final antre F:/AUDIRA-EPISODES/_render.lock --concurrency=1 --jobs=4 --sfx=public/audio/sfx.wav --vo=public/audio/vo.wav, tag metadata, cek -14 LUFS/TP<-1; (5) tahap 10 caption/SRT/NOTES/lesson/3 scheduled task, topik 028 di F:/AUDIRA-ALL-SKILL/channel-topics/audira-faktadunia/topics.md hapus (proses) (commit terpisah), commit hanya folder EP75.",
+      "snapshot": {
+        "episode": "EP75_SON_DOONG_GUA_RAKSASA",
+        "topic": "Hang Son Doong, Vietnam: gua terbesar di dunia, muat satu blok gedung pencakar langit New York, punya hutan dan cuaca sendiri",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP75",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:34:57.535Z",
+      "doing": "s4: tahap 7 visual diperbaiki (kamera S2/S4 tidak tabrak GLB, S4 lebih terang, S8 tidak overexposed, Boeing menghadap +z lewat kamera 39.6–43.0, bola bisbol dalam frame, Ho Khanh scale 0.95, boulder assetType prop). docs/SHOTLIST.md + sfx.wav (-26 LUFS; jalankan dgn PYTHONUTF8=1 npm run sfx). draft/THEME_CHECK.md ditulis. SUBTITLES.srt dibuat + ejaan Khanh/Sơn Đoòng/AUDIRA. Juri buta r1 = 3.33 (lighting3 material2 depth3 comp3 motion5 read4) PERLU POLES; self 4.17. Putaran 2 BELUM dimulai.",
+      "files": [
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/materials.ts",
+        "project/src/episode/timeline.ts",
+        "project/src/episode/SonDoongFilm.tsx",
+        "docs/SHOTLIST.md",
+        "draft/THEME_CHECK.md",
+        "draft/DRAFT_SHEET.jpg",
+        "SUBTITLES.srt"
+      ],
+      "next": "Putaran juri 2 (terakhir): poles material — (a) tambah limeGrain (strata horizontal + noda tetes vertikal + speckle) di materials.ts, pakai di caveMat parts.tsx:49 (bumpScale ~3, roughness 0.9); (b) flowMat scenes.tsx:209 pakai map+bump tekstur tetes vertikal, warna #B49670; (c) mutiara scenes.tsx:270 roughness 0.45 clearcoat 0.4 + bump stoneGrain; (d) framing lebih dekat ke pemanjat S4 shot1 & S8 shot1 di timeline.ts. Lalu: cd project; npm run draft -- SonDoongPreview --frames=3s,12.5s,26s,41.5s,48s,59s,63.5s,72s; record_score self + juri buta subagent (qa/jury.md, DRAFT_SHEET.jpg, quality-bar/worldforge.jpg, jury_input.json). Skor terbaik ≥3.5 → final; <3.5 → style baru (G21). Tahap 9 pre-approved: update final approved:true note \"pre-approved user 2026-11-25 (batch 10 short otonom)\"; lock F:/AUDIRA-EPISODES/_render.lock; npm run render:final -- --comp=SonDoongFinal --out=../FINAL_EP75_SON_DOONG.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --title=\"Gua yang Muat Satu Blok New York\" --slug=son-doong --ep=EP75 --jobs=4 --concurrency=1 --gl=vulkan --encoder=nvenc; tag metadata + cek -14 LUFS TP<-1. Tahap 10: SOCIAL_CAPTIONS.md (6 platform, Jadwal Upload WIB, Label Konten AI, keyword Son Doong/Vietnam), NOTES.md, append_lesson, 3 scheduled task review-son-doong-24h/-72h/-7d, topik 028 hapus (proses), commit hanya folder EP75.",
+      "snapshot": {
+        "episode": "EP75_SON_DOONG_GUA_RAKSASA",
+        "topic": "Hang Son Doong, Vietnam: gua terbesar di dunia, muat satu blok gedung pencakar langit New York, punya hutan dan cuaca sendiri",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP75",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:35:02.108Z",
+      "doing": "s4 selesai sampai juri r1 (3.33 PERLU POLES); pindah sesi karena batas konteks.",
+      "next": "s5: putaran juri 2 → tahap 9 render final (pre-approved) → tahap 10 (lihat handover sebelumnya untuk detail lengkap).",
+      "snapshot": {
+        "episode": "EP75_SON_DOONG_GUA_RAKSASA",
+        "topic": "Hang Son Doong, Vietnam: gua terbesar di dunia, muat satu blok gedung pencakar langit New York, punya hutan dan cuaca sendiri",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP75",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:53:30.047Z",
+      "doing": "s5: tahap 8 selesai. Juri r2 3.67 (L4 M3 D3 C3 Mo5 R4) diterima setelah 2 putaran (lesson failed dicatat). SOCIAL_CAPTIONS.md ditulis + validator OK (jadwal Kamis 21 Jan 2027 19.00 WIB). NOTES.md sebagian (sampai poles r2). Mulai tahap 9 render final.",
+      "files": [
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md",
+        "draft/DRAFT_SHEET.jpg",
+        "project/src/episode/materials.ts",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/timeline.ts",
+        "project/src/episode/SonDoongFilm.tsx"
+      ],
+      "next": "Tahap 9: update final approved:true note \"pre-approved user 2026-11-25 (batch 10 short otonom)\"; tunggu/ambil F:/AUDIRA-EPISODES/_render.lock (isi nama EP + ISO; >60 mnt basi); cd project; RENDER_TMPDIR=F:/render-tmp npm run render:final -- --comp=SonDoongFinal --out=../FINAL_EP75_SON_DOONG.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --title=\"Gua yang Muat Satu Blok New York\" --slug=son-doong --ep=EP75 --jobs=4 --concurrency=1 --gl=vulkan --encoder=nvenc; hapus lock; tag metadata → FINAL_EP75_SON_DOONG_tagged.mp4; ukur -14 LUFS TP<-1; record_score final (jury). Tahap 10: lengkapi NOTES.md (final, review task), append_lesson worked, 3 scheduled task review-son-doong-24h/-72h/-7d (fire 22/24/28 Jan 2027 19.00+07:00), topik 028 topics.md [x] SEJARAH_NEGARA/EP75 (commit repo AUDIRA-ALL-SKILL hanya file itu), commit hanya folder EP75, hapus project/out + draft/_stills + draft/CHECK_*.",
+      "snapshot": {
+        "episode": "EP75_SON_DOONG_GUA_RAKSASA",
+        "topic": "Hang Son Doong, Vietnam: gua terbesar di dunia, muat satu blok gedung pencakar langit New York, punya hutan dan cuaca sendiri",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP75",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:53:44.496Z",
+      "doing": "s5 selesai: juri r2 3.67 diterima, final approved:true (pre-approved), SOCIAL_CAPTIONS valid, NOTES.md sampai tahap 10 caption. Render final BELUM dimulai. Pindah sesi karena konteks ±195k.",
+      "files": [
+        "NOTES.md",
+        "SOCIAL_CAPTIONS.md",
+        "draft/DRAFT_SHEET.jpg"
+      ],
+      "next": "Sesi baru: langsung tahap 9 render final (lihat handover sebelumnya: perintah render:final, _render.lock, tag metadata, -14 LUFS TP<-1, record_score final jury), lalu tahap 10 sisa (NOTES final + review task, append_lesson worked, 3 scheduled task review-son-doong-24h/-72h/-7d fire 2027-01-22/24/28T19:00:00+07:00, topik 028 [x] SEJARAH_NEGARA/EP75, commit hanya folder EP75, bersihkan project/out draft/_stills draft/CHECK_*).",
+      "snapshot": {
+        "episode": "EP75_SON_DOONG_GUA_RAKSASA",
+        "topic": "Hang Son Doong, Vietnam: gua terbesar di dunia, muat satu blok gedung pencakar langit New York, punya hutan dan cuaca sendiri",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP75",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-25T00:03:59.821Z",
+      "doing": "s6: antre _render.lock (EP07 pegang), lalu render final",
+      "command": "cd project && npm run render:final -- --comp=SonDoongFinal --out=../FINAL_EP75_SON_DOONG.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --title=\"Gua yang Muat Satu Blok New York\" --slug=son-doong --ep=EP75 --jobs=4 --concurrency=1 --gl=vulkan --encoder=nvenc",
+      "files": [
+        "FINAL_EP75_SON_DOONG.mp4",
+        "NOTES.md"
+      ],
+      "next": "hapus lock, QA -14 LUFS TP<-1, tag FINAL_EP75_SON_DOONG_tagged.mp4 + ffprobe, record_score final, NOTES, append_lesson, 3 scheduled task fire 2027-01-22/24/28T19:00+07:00 (upload 21 Jan 2027 per SOCIAL_CAPTIONS, konsisten EP73/EP76), topik 028 tanpa (proses), bersih out/_stills/CHECK_*, commit folder EP75",
+      "snapshot": {
+        "episode": "EP75_SON_DOONG_GUA_RAKSASA",
+        "topic": "Hang Son Doong, Vietnam: gua terbesar di dunia, muat satu blok gedung pencakar langit New York, punya hutan dan cuaca sendiri",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP75",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-25T00:24:01.765Z",
+      "doing": "render final SonDoongFinal jalan (node render-final.mjs pid 22880, orphan — sesi s6 tidak akan dibangunkan), pegang _render.lock sejak 00:21Z, 46% @07:23",
+      "files": [
+        "FINAL_EP75_SON_DOONG.mp4",
+        "render-final.log",
+        "NOTES.md"
+      ],
+      "next": "s7: tunggu pid 22880 selesai (background loop), hapus _render.lock bila isinya EP75, QA -14 LUFS TP<-1, tag FINAL_EP75_SON_DOONG_tagged.mp4 + ffprobe, record_score final, NOTES, append_lesson, 3 scheduled task 2027-01-22/24/28T19:00+07:00, topik 028 tanpa (proses), bersih, commit folder EP75",
+      "snapshot": {
+        "episode": "EP75_SON_DOONG_GUA_RAKSASA",
+        "topic": "Hang Son Doong, Vietnam: gua terbesar di dunia, muat satu blok gedung pencakar langit New York, punya hutan dan cuaca sendiri",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP75",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-25T00:24:01.765Z",
+      "doing": "render final SonDoongFinal jalan (node render-final.mjs pid 22880, orphan — sesi s6 tidak akan dibangunkan), pegang _render.lock sejak 00:21Z, 46% @07:23",
+      "files": [
+        "FINAL_EP75_SON_DOONG.mp4",
+        "render-final.log",
+        "NOTES.md"
+      ],
+      "next": "s7: tunggu pid 22880 selesai (background loop), hapus _render.lock bila isinya EP75, QA -14 LUFS TP<-1, tag FINAL_EP75_SON_DOONG_tagged.mp4 + ffprobe, record_score final, NOTES, append_lesson, 3 scheduled task 2027-01-22/24/28T19:00+07:00, topik 028 tanpa (proses), bersih, commit folder EP75",
+      "snapshot": {
+        "episode": "EP75_SON_DOONG_GUA_RAKSASA",
+        "topic": "Hang Son Doong, Vietnam: gua terbesar di dunia, muat satu blok gedung pencakar langit New York, punya hutan dan cuaca sendiri",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP75",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-25T00:28:39.002Z"
+    }
+  ],
+  "session": 7,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP75 Son Doong · s2",
+      "at": "2026-11-24T18:22:56.929Z"
+    },
+    {
+      "no": 3,
+      "title": "EP75 Son Doong · s3",
+      "at": "2026-11-24T23:11:11.451Z"
+    },
+    {
+      "no": 4,
+      "title": "EP75 Son Doong · s4",
+      "at": "2026-11-24T23:22:32.549Z"
+    },
+    {
+      "no": 5,
+      "title": "EP75 Son Doong · s5",
+      "at": "2026-11-24T23:35:02.108Z"
+    },
+    {
+      "no": 6,
+      "title": "EP75 Son Doong · s6",
+      "at": "2026-11-24T23:53:44.496Z"
+    },
+    {
+      "no": 7,
+      "title": "EP75 Son Doong · s7",
+      "at": "2026-11-25T00:24:01.765Z"
+    }
+  ]
+}
