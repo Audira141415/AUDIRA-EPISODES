@@ -104,6 +104,154 @@ For advanced rendering beyond simple `npx remotion render`, see: [Rendering Best
 
 When working with Captions, load [Remotion Captions](../remotion-captions/SKILL.md).
 
+## AUDIRA Render Patterns
+
+### Bundle-Once Render-Many
+
+Untuk batch render multi-segment (episode dengan banyak adegan), bundle sekali dan reuse Chrome:
+
+```js
+import { bundle } from "@remotion/bundler";
+import { renderMedia, selectComposition, openBrowser } from "@remotion/renderer";
+
+const serveUrl = await bundle({ entryPoint: "src/index.ts" });
+const browser = await openBrowser("chrome");
+
+try {
+  for (const segment of segments) {
+    // selectComposition WAJIB sebelum renderMedia — evaluasi calculateMetadata
+    const composition = await selectComposition({
+      serveUrl,
+      id: "ShortVideo",
+      inputProps: segment.props,
+      puppeteerInstance: browser,
+    });
+    await renderMedia({
+      composition,
+      serveUrl,
+      codec: "h264",
+      crf: 18,
+      outputLocation: segment.outputPath,
+      inputProps: segment.props,
+      puppeteerInstance: browser,
+    });
+  }
+} finally {
+  await browser.close();
+}
+```
+
+**Kritis**: Jangan skip `selectComposition()` — tanpa ini `calculateMetadata` tidak dievaluasi dan durasi dinamis tidak berlaku.
+
+### OffthreadVideo + CSS Reframing (tanpa re-encode)
+
+Crop 16:9 → 9:16 via CSS transform, bukan FFmpeg pre-processing:
+
+```tsx
+const scale = outputWidth / crop.w;
+const translateX = -crop.x * scale;
+const translateY = -crop.y * scale;
+
+<div style={{ width: 1080, height: 1920, overflow: "hidden" }}>
+  <OffthreadVideo
+    src={clipPath}  // harus http://, bukan file://
+    style={{
+      width: sourceWidth * scale,
+      height: sourceHeight * scale,
+      transform: `translate(${translateX}px, ${translateY}px)`,
+    }}
+  />
+</div>
+```
+
+Pakai `OffthreadVideo` (bukan `Video`) — decode di thread terpisah, lebih cepat.
+`clipSrc` saat render headless wajib `http://` URL — jalankan local HTTP server sementara, jangan `staticFile()` untuk sumber dinamis.
+
+### calculateMetadata untuk Durasi Dinamis
+
+```tsx
+<Composition
+  id="EpisodeVideo"
+  component={EpisodeComp}
+  width={1080}
+  height={1920}
+  fps={30}
+  durationInFrames={30 * 30}
+  calculateMetadata={({ props }) => ({
+    durationInFrames: Math.ceil(props.durationInSeconds * 30),
+    fps: 30,
+    width: 1080,
+    height: 1920,
+  })}
+/>
+```
+
+### Zod Schema untuk inputProps
+
+```ts
+import { z } from "zod";
+
+const EpisodePropsSchema = z.object({
+  clipSrc: z.string(),
+  captions: z.array(CaptionSchema),
+  captionStyle: z.enum(["bold", "bounce", "clean"]),
+  durationInSeconds: z.number(),
+});
+```
+
+### Spring Config Guide
+
+| damping | Efek |
+|---------|------|
+| < 10 | Bouncy visible overshoot |
+| 10–15 | Slight overshoot, professional |
+| > 20 | No overshoot, smooth ease |
+
+| stiffness | Efek |
+|-----------|------|
+| > 150 | Fast, snappy |
+| < 100 | Slow, gentle |
+
+### Spring Overlap Timing (kamera & objek multi-part)
+
+Untuk animasi kamera atau objek dengan banyak bagian yang bergerak bersama, beri delay per bagian agar terasa berat alami:
+
+| Bagian | Delay dari trigger |
+|---|---|
+| Pivot / base | 0 f |
+| Bahu / upper | 1 f |
+| Tengah / torso | 2 f |
+| Tangan / ujung | 2 f |
+| Kepala / fokus | 4 f |
+| **Mata / highlight** | **−3 f (bergerak duluan)** |
+
+Anticipation otomatis: sebelum pergerakan besar, sertakan gerakan kecil ke arah berlawanan selama ~4 f.
+
+### Physics Timing Table (30 fps)
+
+Untuk animasi jatuh, lempar, drop (ease-in ke kontak, SFX tepat di frame kontak):
+
+| Jarak jatuh | Durasi (30 fps) |
+|---|---|
+| 10 cm | ~4 f |
+| 30 cm | ~7–8 f |
+| 1 m | ~14 f |
+| 2 m | ~19 f |
+
+Lebih lambat dari tabel = melayang (efek komik/slow-mo, harus disengaja). SFX landing tepat di frame kontak.
+
+### Acting Line per Shot
+
+Sebelum menganimasikan tiap shot, tulis:
+```
+SHOT 03 (2.1 s) "data kunci muncul"
+  thought:      apa yang sedang terjadi di frame ini
+  anticipation: elemen bergerak dulu ke arah berlawanan ~4 f sebelum aksi
+  action:       gerakan utama landing tepat di kata VO yang di-stress
+  hold:         ~10 f hasilnya visible sebelum cut
+```
+Urutan: mata/highlight bergerak dulu → kepala/kamera → objek/badan.
+
 ## Creating a SaaS, automation or application
 
 Use the [Remotion SaaS skill](https://www.remotion.dev/docs/ai/skills) (not adopted in AUDIRA: remotion-saas) for knowledge about Remotion-powered SaaS apps, such as `<Player>`, rendering on Lambda, Vercel, Cloudflare, via Express.js, client-side rendering, or for finding the right SaaS template.

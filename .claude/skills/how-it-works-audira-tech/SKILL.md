@@ -1,20 +1,20 @@
 ---
 name: how-it-works-audira-tech
-description: End-to-end technical motion documentary engine for AUDIRA TECH "HOW IT WORKS". Generates verified scientific research, causal component breakdowns, broadcast-grade Indonesian scripts, storyboard direction, multi-model world3d visual engine by default (Three.js world in HyperFrames, see F:/AUDIRA-VIDEO-MOTION/shared/world3d/BRIEF.md), optional AI video prompts (Kling, Runway Gen-3/4, Luma Ray 2, Wan 2.1, Hailuo), vector momentum continuity (Motion Doctrine), technical HUD/blueprint overlay plans, HyperFrames executable timelines, Cartesia TTS voiceover integration, and automated quality gates. Use when creating HOW IT WORKS documentary videos, explaining complex machinery/electronics, or engineering technical motion graphics.
+description: End-to-end technical motion documentary engine for AUDIRA TECH "HOW IT WORKS". Generates verified scientific research, causal component breakdowns, broadcast-grade Indonesian scripts, storyboard direction, Remotion + R3F visual engine by default (sejak 2026-11-17; world3d hanya bila dipaksa), optional AI video prompts (Kling, Runway Gen-3/4, Luma Ray 2, Wan 2.1, Hailuo), vector momentum continuity (Motion Doctrine), technical HUD/blueprint overlay plans, Cartesia TTS voiceover integration, and automated quality gates. Use when creating HOW IT WORKS documentary videos, explaining complex machinery/electronics, or engineering technical motion graphics.
 license: MIT
 metadata:
   version: "2.0.0-audira-pro"
   brand: "AUDIRA TECH"
   series: "HOW IT WORKS"
   tagline: "Understand the Technology Around You."
-  frameworks: ["world3d (Three.js in HyperFrames)", "HyperFrames", "GSAP", "Cartesia TTS", "AI Video Models (optional)"]
+  frameworks: ["Remotion + R3F (default)", "world3d (bila dipaksa)", "HyperFrames", "GSAP", "Cartesia TTS", "AI Video Models (optional)"]
 ---
 
 # HOW IT WORKS — AUDIRA TECH (Pro Motion Engine v2.0)
 
 Turn any device, machine, industrial system, digital infrastructure, or physical mechanism into a broadcast-ready educational documentary video with photorealistic 3D mechanics and kinetic engineering HUD overlays.
 
-> **Engine visual utama = world3d**: dunia 3D Three.js (`project/world3d.js` + shader style) di dalam HyperFrames (`project/hf/`), dibangun menurut BRIEF `F:/AUDIRA-VIDEO-MOTION/shared/world3d/BRIEF.md`. Model video AI (Kling, Runway, Luma, Wan) opsional, hanya untuk cutaway bila pengguna meminta.
+> **Engine visual utama = Remotion + R3F** (default sejak 2026-11-17; style utama INNERWORKS / CIRCUITFORGE, lihat `.agents/brain/ENGINE_STYLE_SELECTION.md`). world3d (Three.js di HyperFrames, BRIEF `F:/AUDIRA-EPISODES/shared/world3d/BRIEF.md`) hanya bila pengguna memaksa. Model video AI (Kling, Runway, Luma, Wan) opsional, hanya untuk cutaway bila pengguna meminta.
 
 Brand: **AUDIRA TECH**  
 Series: **HOW IT WORKS**  
@@ -24,14 +24,15 @@ Tagline: **Understand the Technology Around You.**
 
 ## 🎯 1. Specs & Formats
 
-| Attribute | Primary Format (Shorts/Reels) | Longform Format (YouTube/Broadcast) |
-|---|---|---|
-| **Aspect Ratio** | Vertical 9:16 (`1080x1920`) | Horizontal 16:9 (`1920x1080` / `3840x2160`) |
-| **Pacing / Target Duration** | 60–90 detik (pacing cepat, padat) | 3–8 menit (investigasi mendalam) |
-| **Narration Speed** | 135–150 kata per menit (WPM) | 120–135 kata per menit (WPM) |
-| **Safe Zone** | Top: 15% (profile/UI), Bottom: 20% (caption/actions) | 10% title/action safe margins |
-| **Visual Core** | 3D Exploded View, Cutaway, X-Ray HUD | Exploded View, Macro, Physical Simulation, Microscopic |
-| **Voiceover Engine** | `audira_generate_voiceover` (Cartesia TTS) | Studio VO or Cartesia TTS (`natural-documentary-id`) |
+| Attribute | Nilai (rule 07/09) |
+|---|---|
+| **Aspect Ratio** | 9:16 vertical (`1080x1920`) — 16:9 hanya bila pengguna meminta |
+| **Durasi** | 80–92 detik, 190–210 kata, 8 scenes (s1–s8) |
+| **Narration Speed** | 135–150 WPM |
+| **Safe Zone** | Panel y 236, caption y 1300, bottom 380 clear, active-word bounce ≤ 1.04 |
+| **Visual Core** | 3D Exploded View, Cutaway, X-Ray HUD, Macro, Physical Simulation, Microscopic |
+| **Voiceover Engine** | `audira_generate_voiceover` (Cartesia TTS) |
+| **Engine** | Remotion + R3F (default sejak 2026-11-17); world3d hanya bila pengguna memaksa |
 
 ---
 
@@ -41,7 +42,7 @@ Tagline: **Understand the Technology Around You.**
 2. **Show the Causal Chain:** Jangan sekadar memperlihatkan objek diam yang diputar. Tunjukkan hubungan sebab-akibat: *Trigger → Sensor/Input → Controller/Processor → Actuator/Physical Effect → System Output*.
 3. **Motion Vector Continuity (Motion Doctrine):** Setiap perpindahan klip AI video wajib mewarisi momentum kamera (vektor arah orbit, zoom, atau panning) agar penonton tidak mengalami disorientasi spasial (*spatial whiplash*).
 4. **Cinematic 3D + HUD Overlays:** Pisahkan visual menjadi 2 layer:
-   - **Base Video Layer:** Dunia 3D world3d (Three.js di HyperFrames, lihat BRIEF). Klip model video AI (Kling, Runway, Luma Ray 2, Wan 2.1) opsional, tanpa teks generator mentah.
+   - **Base Video Layer:** Scene 3D Remotion + R3F (world3d hanya bila dipaksa). Klip model video AI (Kling, Runway, Luma Ray 2, Wan 2.1) opsional, tanpa teks generator mentah.
    - **Telemetry/HUD Layer:** Motion graphic overlay (HyperFrames / Remotion / After Effects) berupa garis penunjuk, dimensi CAD, nilai sensor live, dan teks keterangan.
 5. **Anti-Slop Copywriting:** Larang frasa klise AI seperti *"Pernahkah Anda bertanya-tanya"*, *"Di era modern ini"*, *"Sebuah keajaiban teknologi"*. Awali langsung dengan fenomena fisik atau pertanyaan mekanis tajam.
 6. **Master Clock Principle:** Audio voiceover adalah *master clock*. Visual, cutaways, dan HUD animations diselaraskan persis dengan timestamp pengucapan kata kunci audio.
@@ -67,7 +68,7 @@ flowchart TD
 
 ### Fase 01 — Topic Framing & Scope
 - Tentukan objek spesifik, generasi/model produk, atau prinsip universal.
-- Tentukan format output: **Vertical 9:16** atau **Horizontal 16:9**.
+- Format output: **9:16 vertical** (default). 16:9 hanya bila pengguna meminta.
 - Rumuskan 1 pertanyaan sentral mekanis (Contoh: *"Bagaimana sensor optik kamera mengubah foton cahaya menjadi sinyal digital tanpa blur?"*).
 
 ### Fase 02 — Research & Claim Ledger
@@ -112,7 +113,7 @@ Pilih visual mode per adegan dari `references/visual-modes.md`:
 - Rancang **HUD Elements** (`references/hud-technical-overlays.md`): Leader lines, caliper CAD, label teks neon, gauge RPM/voltase.
 
 ### Fase 08 — Multi-Model AI Video Prompt Generation (opsional)
-Fase ini opsional: visual utama dibangun di world3d. Tulis prompt AI video hanya bila pengguna meminta klip model video.
+Fase ini opsional: visual utama dibangun di Remotion + R3F. Tulis prompt AI video hanya bila pengguna meminta klip model video.
 Tulis prompt video mandiri (*standalone*) yang kompatibel dengan model video terkini (`references/ai-video-engines.md`):
 - **Kling 1.5/2.0** (Camera parameter tokens, lighting, high mechanical fidelity)
 - **Runway Gen-3 Alpha / Gen-4** (Camera controls: Pan, Tilt, Zoom, FPV)
@@ -133,10 +134,10 @@ Tulis prompt video mandiri (*standalone*) yang kompatibel dengan model video ter
   - Web HUD overlays / SVG leader lines (layer 1).
   - Kinetic typography captions (layer 2).
   - Sound cues (audio layer).
-- Manfaatkan script generator `scripts/scaffold_hyperframes.py` untuk menginisiasi project kode.
+- Gunakan `audira_project_layout` (action `add_episode`; `world3d` hanya bila dipaksa) untuk scaffold project (bukan `scaffold_hyperframes.py` yang melewati layout/gerbang).
 
 ### Fase 11 — Packaging, SEO & Multi-Platform Social Captions (Default di Chat)
-Wajib membuat berkas `SOCIAL_CAPTIONS.md` di folder episode dan **MENAMPILKAN LANGSUNG** teks caption siap pakai di pesan respons akhir chat untuk 5 platform tanpa menunggu diminta:
+Wajib membuat berkas `SOCIAL_CAPTIONS.md` di folder episode dan **MENAMPILKAN LANGSUNG** teks caption siap pakai di pesan respons akhir chat untuk **6 platform** (termasuk Threads) tanpa menunggu diminta:
 1. **TikTok:** Hook sains mengejutkan, teks sampul (cover text), pinned comment rujukan ilmiah resmi, dan minimal 3 hashtag.
 2. **Instagram Reels:** Rangkuman 5 poin kausalitas mekanis terstruktur, audio cue, prompt diskusi komentar, dan minimal 3 hashtag.
 3. **YouTube Shorts:** 3 variasi judul high-CTR (<100 karakter), deskripsi lengkap + timestamp chapters + minimal 3 hashtag, YouTube Tags (<500 karakter), pinned comment, dan rekomendasi thumbnail.

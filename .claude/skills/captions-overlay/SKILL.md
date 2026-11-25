@@ -48,11 +48,11 @@ voiceover where the words must read.
 
 In a composed video with captions enabled, the caption line is a **small, minimal
 word-by-word line** composited as an overlay layer ON TOP of the whole film (a single
-text line, bottom-centered, roughly the bottom ~5-8% of canvas height). It is an
+text line, bottom-centered, at caption y ≈ 1300 on a 1920-tall canvas, bottom 380 clear). It is an
 overlay, not a reserved zone:
 
-- **Center the composition on the TRUE vertical center — y = H / 2** (landscape 540,
-  portrait 960). Do not shift content up to "make room" for captions; a composition
+- **Center the composition on the TRUE vertical center** (landscape 540,
+  portrait ≈ 768 considering panel y 236 and caption y 1300: visual center ≈ (236+1300)/2 = 768). Do not shift content up to "make room" for captions; a composition
   centered at 0.42 × H with a dead lower band is the bug, not the fix.
 - Content may extend to the canvas bottom. Full-bleed subjects, rails, and backgrounds
   all welcome.

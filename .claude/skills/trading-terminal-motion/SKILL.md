@@ -12,7 +12,7 @@ metadata:
 
 Author & Architect: **AUDIRA (Agus Dwi R)**  
 Version: `1.0.0 Commercial Release`  
-Engine: **world3d** (Three.js in HyperFrames, lihat BRIEF `F:/AUDIRA-EPISODES/shared/world3d/BRIEF.md`). Target Frameworks lama (hanya bila engine: remotion): Remotion (`@remotion/three`, SVG Canvas), GSAP, WebGL Three.js
+Engine: **Remotion + R3F** (default sejak 2026-11-17; `@remotion/three`, SVG Canvas). **world3d** (Three.js in HyperFrames, lihat BRIEF `F:/AUDIRA-EPISODES/shared/world3d/BRIEF.md`) hanya bila pengguna memaksa.
 
 ---
 

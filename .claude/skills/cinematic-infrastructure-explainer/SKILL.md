@@ -53,6 +53,7 @@ Specialized motion skill for engineering explainers, megaproject construction ti
 ```tsx
 import { useCurrentFrame, interpolate } from 'remotion';
 import * as THREE from 'three';
+import { AssetModel } from '../../core/assets/AssetModel.tsx';
 
 export const InfrastructureSegment: React.FC<{
   index: number;
@@ -68,20 +69,11 @@ export const InfrastructureSegment: React.FC<{
   });
 
   const posY = interpolate(progress, [0, 1], [8, 0]);
-  const opacity = interpolate(progress, [0, 0.4], [0, 1]);
 
   return (
     <group position={[index * 2.5, posY, 0]}>
-      <mesh castShadow receiveShadow>
-        <boxGeometry args={[2.4, 1.2, 3.5]} />
-        <meshStandardMaterial
-          color="#B0BEC5"
-          roughness={0.7}
-          metalness={0.2}
-          transparent
-          opacity={opacity}
-        />
-      </mesh>
+      {/* GLB from the local catalogue; find the right segment with audira_search_assets */}
+      <AssetModel id="sky-bridge-span-26fcde" assetType="building" size={2.4} ground roughness={0.7} />
     </group>
   );
 };

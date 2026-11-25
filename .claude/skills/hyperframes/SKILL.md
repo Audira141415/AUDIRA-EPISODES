@@ -1,6 +1,6 @@
 ---
 name: hyperframes
-description: Shell render untuk engine default AUDIRA world3d (dunia Three.js project/world3d.js di dalam komposisi HyperFrames project/hf/, lihat F:/AUDIRA-VIDEO-MOTION/shared/world3d/BRIEF.md); karya 2D murni hanya bila pengguna memaksa. Read first to make, edit, animate or render any video with HyperFrames (HTML rendered to video), including launch films, explainers, music videos, charts, maps, vertical clips, title cards, captions and overlays. Holds the render contract, the work loop and what each kind of video needs. Bundles every HyperFrames companion skill (CLI, registry, media, motion doctrine, transitions, seams, captions, cursor, Figma, slideshow, changelog video, Remotion port) under skills/.
+description: Shell render HyperFrames (dipakai oleh world3d bila dipaksa, dan HyperFrames 2D murni bila dipaksa; engine default AUDIRA sekarang Remotion + R3F sejak 2026-11-17). Read first to make, edit, animate or render any video with HyperFrames (HTML rendered to video), including launch films, explainers, music videos, charts, maps, vertical clips, title cards, captions and overlays. Holds the render contract, the work loop and what each kind of video needs. Bundles every HyperFrames companion skill (CLI, registry, media, motion doctrine, transitions, seams, captions, cursor, Figma, slideshow, changelog video, Remotion port) under skills/.
 ---
 
 **Bundled skills:** every companion skill now lives inside this folder. When this file or another names `/<skill>`, read `skills/<skill>/SKILL.md`:
@@ -28,7 +28,7 @@ HyperFrames renders HTML to video by seeking a paused timeline frame by frame, s
 
 `index.html` is the root composition: it declares the video's variables and mounts one scene per sub-composition from `compositions/`. Media and fonts live in `assets/`. A new project: `npx hyperframes init <dir>`. A website as the subject: `npx hyperframes capture <url> --json`.
 
-Build what was asked: no voiceover or captions and no new aspect ratio unless the request or the source calls for them; a film over ~15 s that tells something gets music and sound on its visible actions unless the person asked for silence (`references/sound.md`). A new video is 1920×1080 at 30 fps. A question, a hold or a loose idea gets an answer or a proposal, not an edit. Before hand-writing a named effect, transition, caption style, chart or card, search the registry (`/hyperframes-registry`). Any media (a presenter or avatar, footage, voice, music): `/media-use`, which says when HeyGen is needed and what is free. Show real things from their source (the product's screens, the brand's logo, a real place's imagery); draw only what has none.
+Build what was asked: no voiceover or captions and no new aspect ratio unless the request or the source calls for them; a film over ~15 s that tells something gets music and sound on its visible actions unless the person asked for silence (`references/sound.md`). A new AUDIRA video is 1080×1920 (9:16) at 30 fps build / 60 fps final, 80–92 s, 190–210 words in 8 scenes (s1–s8). Safe zone: panel y 236, caption y 1300, bottom 380 clear, active-word bounce ≤ 1.04. 16:9 only when the person asks. A question, a hold or a loose idea gets an answer or a proposal, not an edit. Before hand-writing a named effect, transition, caption style, chart or card, search the registry (`/hyperframes-registry`). Any media (a presenter or avatar, footage, voice, music): `/media-use`, which says when HeyGen is needed and what is free. Show real things from their source (the product's screens, a real place's imagery); draw only what has none. For news / EXPLAINED content (rule 15): no real faces or organisation logos — use name plates and text.
 
 ## Contract
 
@@ -60,20 +60,20 @@ Studio edits the tags you write.
 ## Work loop
 
 - An existing project: `npx hyperframes timeline --json` shows what plays when; before any change, `npx hyperframes history --since mine --who <you>` shows what the person changed since your last turn: build on it (`/hyperframes-cli`).
-- A new film over ~15 s that tells something: its type's file (below), then `references/story.md`: three storylines that are three different films, in words only; the person picks unless they asked for the file or no stops. Then `SPEC.md` (`references/spec.md`): every adjective as a number, the defaults banned by name, the shots by frame.
+- A new film over ~15 s that tells something: its type's file (below), then `references/story.md`: three storylines that are three different films, in words only; the person picks unless they asked for the file or no stops. For an AUDIRA film, pick the storyline yourself, report it in one line and continue. Then `SPEC.md` (`references/spec.md`): every adjective as a number, the defaults banned by name, the shots by frame.
 - **Automatic Voiceover Protocol (Claude & Antigravity)**:
   When the video has narration/dialogue, a script file (`docs/VOICEOVER.md`), or when the user requests a voiceover:
   1. **Automate TTS Immediately**: Never leave the video silent or request manual TTS generation. Call MCP tool `audira_generate_voiceover` (or run `cartesia-tts.mjs`) to produce `assets/audio/vo.wav` and `assets/audio/vo-words.json`.
-  2. **Mount in `index.html`**: Always place `<audio id="vo" class="clip" data-start="0" data-duration="<durasi>" data-track-index="2" src="assets/audio/vo.wav"></audio>` in root `index.html`.
+  2. **Mount audio**: For world3d projects, audio comes from `project/timeline.json` + `python mix.py` → `hf/assets/audio/mix.wav` (mounted by build); do NOT hand-write `<audio id="vo">` into `index.html`. For non-world3d HyperFrames, place `<audio id="vo" class="clip" data-start="0" data-duration="<durasi>" data-track-index="2" src="assets/audio/vo.wav"></audio>` in root `index.html`.
   3. **Lock Seams to Voice Timings**: Use word timestamps in `vo-words.json` to lock scene cuts and text reveal cues. The voice is the clock.
 - After your last edit: `npx hyperframes check --json`; fix every error, weigh every warning. A film: `npx hyperframes snapshot --review` and `references/review.md`, ending in `REVIEW.md`. A small edit: snapshot what you changed (`--at`, `--range`, `--composition`) and look before you reply.
-- Render when the person approves the Studio preview, asks for the file or asks for no stops, after your check and review pass; otherwise stop at the preview and wait.
+- Render when the person approves the Studio preview, asks for the file or asks for no stops, after your check and review pass; otherwise stop at the preview and wait. For an AUDIRA film the only approval is stage 9 of the AUDIRA pipeline: show the contact sheet, jury score, duration and audio check, and render the final after the user approves that, not after a Studio preview.
 
 ## The HyperFrames desktop app
 
 Call it "the HyperFrames desktop app", never "Studio"; offer it as the better way to keep editing, not the only one.
 
-- Before the delivery render of a new video, open the Studio preview, even in no-questions mode, and say they can edit there. If `preview` printed "Keep editing by chatting with Framey", add that the **Edit with Framey** button opens the app.
+- Before the delivery render of a new video, open the Studio preview, even in no-questions mode, and say they can edit there (for an AUDIRA film this is optional and never an approval step; the stage 9 contact sheet is). If `preview` printed "Keep editing by chatting with Framey", add that the **Edit with Framey** button opens the app.
 - After the delivery render, pass on its Framey line in your own words: offer to run the `hyperframes open` it names or give its download link; else say nothing (autonomous: the delivery note).
 - When any command says to run `catch-up`, run `npx hyperframes catch-up [dir]` before your next change; what it lists is their work, not a new request.
 

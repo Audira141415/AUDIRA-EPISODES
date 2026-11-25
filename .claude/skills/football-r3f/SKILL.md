@@ -20,7 +20,7 @@ Episode yang topiknya sepak bola, football, atau soccer — terdeteksi dari:
 
 ## Pola studio
 
-Referensi: `F:\AUDIRA-VIDEO-MOTION\AUDIRA_SEJARAH_SEPAK_BOLA_2026`
+Referensi: `F:\AUDIRA-EPISODES\AUDIRA_SEJARAH_SEPAK_BOLA_2026`
 - 11 episode, skor rata-rata juri 4.11/5
 - QA: 10/11 GREEN
 - Channel: `@AudiraSportFacts`
@@ -30,9 +30,9 @@ Referensi: `F:\AUDIRA-VIDEO-MOTION\AUDIRA_SEJARAH_SEPAK_BOLA_2026`
 1. Ikuti pipeline 11 tahap dari `audira-motion`
 2. Engine = Remotion + R3F (bukan world3d)
 3. Baca `kits/<STYLE>/KIT.md` — terjemahkan ke R3F, bukan Three.js mentah
-4. Starter + `npm run check-env` + `npm run smoke`
+4. Studio per seri: `<SERI>/studio/src/scenes/epNN` — bukan starter global
 5. Camera: skill `audira-camera` berlaku (engine: remotion)
-6. Render: `audira_render_batch` atau `npm run render:final`
+6. Render final: `audira_render_batch` atau `npm run render:final` (directive 00 tahap 9), setelah acc di gerbang tahap 9 dan cek G8, G13, G14, G19 lolos. Draft clip via `npm run draft` boleh untuk preview.
 7. Branding: `<AudiraOutro code="SPORTFACTS" />` + `<AudiraSignature />`
 
 ## Hubungan dengan skill lain

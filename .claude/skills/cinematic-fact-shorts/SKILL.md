@@ -44,7 +44,7 @@ Specialized motion skill for high-retention short-form video (YouTube Shorts, Ti
 
 ## 3. Kinetic Patterns
 
-- **Word Pop Zoom**: Word snaps into view with elastic spring overshoot (`stiffness: 250, damping: 15`).
+- **Word Pop Zoom**: Word snaps into view with a clamped spring (`stiffness: 250, damping: 15, overshootClamping: true`), active-word scale ≤ 1.04.
 - **Circular Time Progress Bar**: Subtle ring around the perimeter or top bar ticking down, locking audience completion instinct.
 - **Side-by-Side Split Comparative**: Top 50% vs Bottom 50% screen comparison (e.g. Earth vs Jupiter scale).
 - **Redaction Reveal**: Black censorship tape peeling or burning off to reveal secret data.
@@ -63,17 +63,17 @@ export const WordPop: React.FC<{
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const scale = spring({
+  const pop = spring({
     frame,
     fps,
-    config: { damping: 12, stiffness: 220, mass: 0.6 },
+    config: { damping: 12, stiffness: 220, mass: 0.6, overshootClamping: true },
   });
 
   return (
     <span
       style={{
         display: 'inline-block',
-        transform: `scale(${isHighlighted ? scale * 1.18 : 1})`,
+        transform: `scale(${isHighlighted ? 1 + 0.04 * pop : 1})`,
         color: isHighlighted ? '#FFDE00' : '#FFFFFF',
         fontFamily: 'Montserrat, Inter, sans-serif',
         fontWeight: 900,
@@ -90,7 +90,7 @@ export const WordPop: React.FC<{
 ```
 
 ## 5. Anti-Slop Enforcement
-- ❌ DILARANG menempatkan teks penting di 300px bagian bawah (akan tertutup caption UI TikTok/Reels).
+- ❌ DILARANG menempatkan teks penting di 380px bagian bawah (akan tertutup caption UI TikTok/Reels).
 - ❌ DILARANG menyajikan blok teks paragraf panjang yang membuat penonton malas membaca.
 - ✅ WAJIB menyertakan efek suara (SFX) risers, whoosh, dan impact braam pada setiap pergantian adegan hook.
 

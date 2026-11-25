@@ -43,7 +43,7 @@ description: "⛔ RULE 15 (aturan mati): konten berita/explained/politik/hukum/b
 
 ## Engine
 
-Channel EXPLAINED: Remotion + R3F tier hybrid (rule 18). Rule 15 standar visual tetap berlaku.
+Mengikuti default: Remotion + R3F, tier hybrid (sejak 2026-11-17). world3d hanya bila pengguna memaksa.
 
 ## Hubungan dengan skill lain
 

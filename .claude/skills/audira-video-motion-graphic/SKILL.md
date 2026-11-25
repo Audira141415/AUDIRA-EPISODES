@@ -1,6 +1,6 @@
 ---
 name: bang-motion
-description: HANYA bila pengguna sendiri meminta engine ini; video AUDIRA default = engine 3D world3d, jangan pilih skill ini atas inisiatif sendiri. Membangun motion graphic sinematik di browser (promo, opener, intro, bumper, kinetic typography, explainer 16:9/9:16) memakai HTML + CSS + GSAP (+ Three.js bila perlu). Untuk verifikasi output motion graphic (freeze frame, contact sheet, ffprobe) gunakan motion-skills; skill ini untuk authoring HTML/GSAP.
+description: HANYA bila pengguna sendiri meminta engine ini; video AUDIRA default = Remotion + R3F 3D (sejak 2026-11-17), jangan pilih skill ini atas inisiatif sendiri. Membangun motion graphic sinematik di browser (promo video, opener, intro, bumper, kinetic typography, explainer 16:9/9:16) memakai HTML + CSS + GSAP (+ Three.js bila perlu). Untuk verifikasi output motion graphic (freeze frame, contact sheet, ffprobe) gunakan motion-skills; skill ini untuk authoring HTML/GSAP.
 license: MIT
 metadata:
   author: Bang Tutorial

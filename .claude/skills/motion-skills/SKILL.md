@@ -1,6 +1,6 @@
 ---
 name: motion-skills
-description: HANYA bila pengguna sendiri meminta engine ini; video AUDIRA default = engine 3D world3d, jangan pilih skill ini atas inisiatif sendiri. Deliver-and-verify loop toolkit & 19-pack motion design system (56 skills) for AI coding agents — HTML/Remotion/Manim motion graphics. Includes seek-shot freeze harness, contact-sheet tiling, ffprobe MP4 assertions, GSAP sizzle reel. Untuk motion graphic 2D HTML/GSAP gunakan bang-motion; skill ini untuk Remotion/Manim motion graphics dan verifikasi output.
+description: HANYA bila pengguna sendiri meminta engine ini; video AUDIRA default = Remotion + R3F 3D (sejak 2026-11-17), jangan pilih skill ini atas inisiatif sendiri. Deliver-and-verify loop toolkit & 19-pack motion design system (56 skills) for AI coding agents — HTML/Remotion/Manim motion graphics. Includes seek-shot freeze harness, contact-sheet tiling, ffprobe MP4 assertions, GSAP sizzle reel. Untuk motion graphic 2D HTML/GSAP gunakan bang-motion; skill ini untuk Remotion/Manim motion graphics dan verifikasi output.
 ---
 
 # Motion Skills: Deliver-and-Verify Loop & Motion Graphics System

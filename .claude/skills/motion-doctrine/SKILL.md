@@ -7,7 +7,7 @@ metadata:
 
 # Motion Doctrine
 
-> Muat setelah BRIEF world3d (`F:/AUDIRA-VIDEO-MOTION/shared/world3d/BRIEF.md`) dan audira-motion; dipakai untuk seam antar-adegan dan kontinuitas gerak, bukan gerbang pertama.
+> Muat setelah BRIEF world3d (`F:/AUDIRA-EPISODES/shared/world3d/BRIEF.md`) dan audira-motion; dipakai untuk seam antar-adegan dan kontinuitas gerak, bukan gerbang pertama.
 
 Read this before composing any animation. It decides WHAT happens at every seam and how
 every scene performs; the technique skills implement it. These rules supersede generic /

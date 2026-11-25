@@ -167,3 +167,93 @@ If a caption has `pageBreakAfter: true`, the current page ends after that captio
 ## White-space preservation
 
 The captions are whitespace sensitive. You should include spaces in the `text` field before each word.
+
+## AUDIRA Caption Style Presets
+
+Tiga preset untuk konten AUDIRA. Semua pakai `createTikTokStyleCaptions()` dari `@remotion/captions`.
+Posisi: **350px dari bawah** (aman di atas UI platform TikTok 320px dan Instagram 340px).
+
+> **AUDIRA bounce cap**: CLAUDE.md mengatur `bounce kata aktif ≤ 1.04`.
+> Bold spring ini menghasilkan overshoot ~1.05 (marginal). Bounce menghasilkan ~1.2 (melanggar).
+> Untuk pipeline AUDIRA: gunakan Clean, atau clamp scale dengan `Math.min(springScale, 1.04)`.
+> Bold/Bounce di bawah ini sebagai referensi atau untuk proyek non-AUDIRA yang tidak punya cap.
+
+### Bold — edukasi, motivasi
+
+```ts
+// Font: Montserrat Bold 800, 72px, UPPERCASE
+// Active word: yellow #FFD700, inactive: white #FFFFFF
+// Shadow: 3px solid black (semua 4 arah)
+// combineTokensWithinMilliseconds: 800
+
+const springRaw = spring({
+  frame: localFrame,
+  fps,
+  config: { mass: 1, damping: 12, stiffness: 200 },
+});
+const springScale = Math.min(springRaw, 1.04); // AUDIRA bounce cap ≤ 1.04
+// Scale 0 → 1.04 (clamped) → 1.0, settle ~0.4s
+```
+
+### Bounce — entertainment, energi tinggi
+
+```ts
+// Font: Bangers, 84px, UPPERCASE
+// Warna rotating per page: cyan #00FFFF → magenta #FF00FF → lime #00FF00
+//   → yellow #FFFF00 → orange #FF6600 → hotpink #FF0066
+// Shadow: 4px solid black
+// combineTokensWithinMilliseconds: 600
+
+const springRaw = spring({
+  frame: localFrame,
+  fps,
+  config: { mass: 1, damping: 8, stiffness: 180 },
+});
+const springScale = Math.min(springRaw, 1.04); // AUDIRA bounce cap ≤ 1.04 (raw ~1.2)
+// Scale 0.7 → 1.04 (clamped) → 1.0 — masih terasa "pop" tapi tidak keluar batas
+```
+
+### Clean — profesional, interview, podcast
+
+```ts
+// Font: Inter Bold 700, 56px, case preserved
+// Active word: #E0E0E0, inactive: white #FFFFFF
+// Shadow: 2px 2px 8px rgba(0,0,0,0.6) — soft shadow
+// combineTokensWithinMilliseconds: 1500
+
+// Bukan spring — gunakan interpolate:
+const opacity = interpolate(localFrame, [0, 6], [0, 1], {
+  extrapolateRight: "clamp",
+});
+// Fade in 6 frame (200ms di 30fps)
+```
+
+### Implementasi `createTikTokStyleCaptions`
+
+```ts
+import { createTikTokStyleCaptions } from "@remotion/captions";
+
+type Caption = {
+  text: string;
+  startMs: number;
+  endMs: number;
+  timestampMs: null;  // selalu null untuk AUDIRA
+  confidence: null;
+};
+
+const { pages } = createTikTokStyleCaptions({
+  captions: remotionCaptions,
+  combineTokensWithinMilliseconds: 800, // sesuaikan per style
+});
+
+// TikTokPage: { text, startMs, durationMs, tokens: [{text, fromMs, toMs}] }
+```
+
+### Hook Overlay — 0–3.5 detik
+
+Hook overlay di top 200px (0–3.5 detik pertama), caption di bottom zone.
+Tidak overlap. Hierarki visual:
+1. Hook text (atas, besar)
+2. Konten video (tengah)
+3. Caption (bawah, word-level)
+4. Progress bar (paling bawah, subtle)

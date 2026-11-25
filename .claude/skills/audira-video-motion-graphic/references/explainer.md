@@ -105,9 +105,9 @@ opener — hampir pasti berujung "section yang di-fade".
 
 ## Default yang sering salah dikira
 
-- **Rasio: default 16:9 (1920×1080) atau mengikuti layar user.** 9:16 HANYA
-  bila user memintanya (Reels/TikTok/Shorts). Jangan berasumsi explainer =
-  vertikal.
+- **Rasio: default 9:16 (1080×1920).** 16:9 HANYA
+  bila user memintanya. Jangan berasumsi explainer =
+  16:9.
 - **Tanpa player.** Autoplay + loop; panel scrub hanya `?debug=1`.
 - **Tanpa subtitle/caption.** Default tidak ada teks pendamping VO di bawah
   layar; caption hanya bila user minta. Informasi dibawa oleh angka besar,
