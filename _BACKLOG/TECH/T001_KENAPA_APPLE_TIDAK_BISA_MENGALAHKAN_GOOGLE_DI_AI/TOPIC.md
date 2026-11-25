@@ -5,7 +5,11 @@ title: "Kenapa Apple Tidak Bisa Mengalahkan Google di AI"
 hook: "Apple punya hardware terbaik tapi AI-nya masih jauh tertinggal — ini alasannya"
 styleCandidates: ["BROADCASTFORGE (2D)", "CYBERFORGE (3D)", "CERDIK (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak   # tidak = fakta cepat basi (rekor, harga, produk)
+risiko: "Hook asli sudah tidak akurat (Siri AI berbasis Gemini rilis 14 Sep 2026); angka CapEx dan pengguna cepat basi; logo Apple/Google dilarang di visual."
 ---
 
 # Kenapa Apple Tidak Bisa Mengalahkan Google di AI

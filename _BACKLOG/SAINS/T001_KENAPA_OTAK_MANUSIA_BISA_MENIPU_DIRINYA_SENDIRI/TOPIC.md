@@ -5,7 +5,11 @@ title: "Kenapa Otak Manusia Bisa Menipu Dirinya Sendiri"
 hook: "Ilusi optik hanya ujung gunung es — otak kamu berbohong setiap detik tanpa kamu sadar"
 styleCandidates: ["ANATOMIX (3D)", "BEDAH (2D)", "INNERWORKS (3D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Choice blindness (13%) diperdebatkan dan angkanya kutipan sekunder; 'otak berbohong' hanya metafora, narasi jangan menyiratkan niat."
 ---
 
 # Kenapa Otak Manusia Bisa Menipu Dirinya Sendiri

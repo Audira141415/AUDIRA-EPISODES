@@ -5,7 +5,11 @@ title: "Pulau yang Dimiliki Satu Orang dan Diakui Dunia"
 hook: "Seorang warga biasa mendirikan negara sendiri di laut Utara — dan berhasil"
 styleCandidates: ["CHRONICLE (2D)", "WORLDFORGE (3D)", "VISUALINVESTIGATION (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul dan hook asli tidak akurat (Sealand tidak diakui negara mana pun dan bukan pulau alami), wajib pakai judul koreksi; sisanya rendah."
 ---
 
 # Pulau yang Dimiliki Satu Orang dan Diakui Dunia

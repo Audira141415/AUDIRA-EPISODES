@@ -5,7 +5,11 @@ title: "5 Kesalahan Fatal Git yang Bikin Tim Berantem"
 hook: "Developer junior sering nggak sadar mereka doing ini sampai production down"
 styleCandidates: ["BONGKAR (2D)", "DEVFORGE (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook asli melebih-lebihkan (Git tidak menjatuhkan production kecuali main di-deploy otomatis); logo GitHub/Git dilarang di visual (rule 15)."
 ---
 
 # 5 Kesalahan Fatal Git yang Bikin Tim Berantem

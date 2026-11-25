@@ -5,7 +5,11 @@ title: "Rekor Gol Ronaldo yang Mustahil Dipecahkan dalam 50 Tahun"
 hook: "900+ gol resmi — angka yang bahkan Messi pun belum bisa sentuh"
 styleCandidates: ["DATAPHYSICAL (2D)", "CHARACTERFLOW (2D)", "PRECISION (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak
+risiko: "Angka gol berubah tiap pekan dan beda antar-penghitung (987 media/IFFHS vs 994 RSSSF); hook asli soal Messi belum 900 sudah salah; judul 50 tahun adalah opini."
 ---
 
 # Rekor Gol Ronaldo yang Mustahil Dipecahkan dalam 50 Tahun
