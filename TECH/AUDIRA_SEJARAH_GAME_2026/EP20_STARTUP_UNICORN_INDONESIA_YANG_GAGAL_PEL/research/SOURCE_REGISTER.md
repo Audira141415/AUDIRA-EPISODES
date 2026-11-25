@@ -1,33 +1,16 @@
-# SOURCE_REGISTER — `Sejarah game yang viral dan jarang diketahui`
+# Source Register — Startup Unicorn Indonesia yang Gagal: Pelajaran dari Ruangguru
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Ruangguru didirikan April 2014 oleh Adamas Belva Syah Devara dan Muhammad Iman Usman; disebut "soonicorn" (calon unicorn), salah satu startup dengan pendanaan terbesar di Indonesia/Asia Tenggara | Ruangguru, Wikipedia (en), diakses 2026 | https://en.wikipedia.org/wiki/Ruangguru | 2026-11-25 | MEDIUM |
+| 2 | Des 2019 Ruangguru meraih US$150 juta dari General Atlantic dan GGV Capital; Apr 2021 meraih US$55 juta dipimpin Tiger Global, total pendanaan > US$200 juta; untung pertama kali pada 2020; melayani > 22 juta siswa; ekspansi Vietnam 2019, Thailand 2020 | "Indonesia's edtech sector remains red-hot as Ruangguru snags another USD 55 million", Khamila Mulia, KrASIA, 19 Apr 2021 | https://kr-asia.com/indonesias-edtech-sector-remains-red-hot-as-ruangguru-snags-another-usd-55-million | 2026-11-25 | HIGH |
+| 3 | Jumat 18 Nov 2022 Ruangguru mem-PHK ratusan karyawan (jumlah persis tidak diumumkan); alasan resmi: pasar global memburuk; pesangon sesuai aturan | "CEO Ungkap Ruangguru Jor-joran Rekrutmen Berujung PHK Ratusan Karyawan", Herdi Alif Al Hikam, detikFinance, 21 Nov 2022 | https://finance.detik.com/berita-ekonomi-bisnis/d-6417495/ceo-ungkap-ruangguru-jor-joran-rekrutmen-berujung-phk-ratusan-karyawan | 2026-11-25 | HIGH |
+| 4 | Belva dan Iman mengaku permintaan melonjak di awal pandemi COVID-19 sehingga rekrutmen "terlalu banyak dan cepat dalam dua tahun terakhir"; juga gagal memprediksi dan mengantisipasi situasi ekonomi; ekonomi global disebut memburuk drastis; mereka meminta maaf | "Bos Ruangguru Akui Kebanyakan Rekrut Karyawan, Kini Terpaksa PHK", Herdi Alif Al Hikam, detikFinance, 22 Nov 2022 | https://finance.detik.com/berita-ekonomi-bisnis/d-6418923/bos-ruangguru-akui-kebanyakan-rekrut-karyawan-kini-terpaksa-phk | 2026-11-25 | HIGH |
+| 5 | GoTo mem-PHK 1.300 karyawan, sekitar 12% karyawan tetap grup, diumumkan Jumat 18 Nov 2022 (hari yang sama dengan Ruangguru) | "Ternyata Ini Alasan GoTo PHK 1.300 Karyawan", Dinar Fitra Maghiszha, Okezone Economy, 18 Nov 2022 | https://economy.okezone.com/read/2022/11/18/278/2710088/ternyata-ini-alasan-goto-phk-1-300-karyawan | 2026-11-25 | MEDIUM |
+| 6 | Okt 2019 Ruangguru belum unicorn; manajemen bilang fokusnya bukan menjadi unicorn; unicorn = valuasi > US$1 miliar | "Bicara soal unicorn, ini jawaban Ruangguru", ANTARA, 31 Okt 2019 | https://www.antaranews.com/berita/1140523/bicara-soal-unicorn-ini-jawaban-ruangguru | 2026-11-25 | HIGH |
+| 7 | Zenius (pesaing edtech) mem-PHK lebih dari 200 karyawan, Mei 2022 | "Startup Zenius PHK Ratusan Karyawan, Ternyata Ini Alasannya", Okezone Economy, 26 Mei 2022 | https://economy.okezone.com/read/2022/05/26/320/2600550/startup-zenius-phk-ratusan-karyawan-ternyata-ini-alasannya?page=all | 2026-11-25 | MEDIUM |
+| 8 | Zenius mengonfirmasi PHK lagi Agustus 2022 (jumlah tidak disebut), alasan kondisi ekonomi makro | "Zenius Benarkan Ada PHK Karyawan, Jumlahnya Beneran Ratusan?", Achmad Dwi Afriyadi, detikFinance, 4 Agu 2022 | https://finance.detik.com/berita-ekonomi-bisnis/d-6216413/zenius-benarkan-ada-phk-karyawan-jumlahnya-beneran-ratusan | 2026-11-25 | HIGH |
+| 9 | Zenius menghentikan operasi untuk sementara pada Januari 2024 karena "tantangan operasional"; total pendanaan sejak berdiri US$40 juta | "Zenius Berhenti Beroperasi, Sebut Tantangan Operasional", Redaksi CNBC Indonesia, 4 Jan 2024 | https://www.cnbcindonesia.com/tech/20240104061424-37-502593/zenius-berhenti-beroperasi-sebut-tantangan-operasional | 2026-11-25 | HIGH |
+| 10 | Zenius kembali beroperasi Juli 2024 (situs zenius.net) | Zenius Education, Wikipedia (id), diakses 2026 (merujuk Radar Semarang, 26 Jul 2024) | https://id.wikipedia.org/wiki/Zenius_Education | 2026-11-25 | MEDIUM |

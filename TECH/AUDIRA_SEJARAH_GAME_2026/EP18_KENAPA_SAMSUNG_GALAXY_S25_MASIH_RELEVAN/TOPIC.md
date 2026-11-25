@@ -5,7 +5,11 @@ title: "Kenapa Samsung Galaxy S25 Masih Relevan di Era AI Phone"
 hook: "AI sudah ada di semua HP — tapi Samsung punya keunggulan yang sering dilupakan"
 styleCandidates: ["SCALEFORGE (3D)", "BROADCASTFORGE (2D)", "BONGKAR (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: tidak
+risiko: "Fakta cepat basi (status update One UI, generasi penerus, biaya Galaxy AI setelah 2025 belum terverifikasi); klaim +40% NPU adalah klaim pabrikan; hindari logo Samsung/The Verge asli."
 ---
 
 # Kenapa Samsung Galaxy S25 Masih Relevan di Era AI Phone

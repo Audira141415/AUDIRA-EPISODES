@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP20`)
+# Naskah — Startup Unicorn Indonesia yang Gagal: Pelajaran dari Ruangguru
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Tumpukan koin emas tumbuh jadi menara di atas meja kantor, lalu kursi-kursi di sekitarnya kosong satu per satu. HUD "> US$200 JUTA" berdenyut, lalu stempel merah "PHK".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Lebih dari dua ratus juta dolar masuk. Lalu dalam satu hari, ratusan karyawan kena PHK. Apa yang salah?
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Ruang kerja kecil 2014: dua siluet tanpa wajah di satu meja dengan laptop, name plate teks "Belva Devara" dan "Iman Usman". Kartu tahun "APRIL 2014". Tanpa logo asli Ruangguru (wordmark teks netral).
 
-> <konteks singkat + "Di Audira, ...">
+> Kita bedah Ruangguru, aplikasi bimbel online yang didirikan Belva Devara dan Iman Usman pada April 2014. Awalnya, situs ini dibuat untuk membantu siswa mencari guru les online.
 
-## c02 — <Judul Bab 1>
+## c02 — Uang besar dan pandemi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Koper uang meluncur ke meja, callout "US$150 JUTA · DES 2019" dengan nama investor sebagai teks. Transisi: kamera pindah ke kamar anak dengan ponsel; grafik permintaan melonjak ke atas.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Desember 2019, General Atlantic dan GGV menyuntik seratus lima puluh juta dolar. Beberapa bulan kemudian pandemi datang, anak-anak belajar dari rumah, dan permintaan melonjak.
 
-## c03 — <Judul Bab 2>
+## c03 — Puncak
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Kantor open-plan penuh meja dan pekerja; counter pengguna berputar ke "22 JUTA SISWA". Callout "UNTUNG PERTAMA · 2020" lalu "US$55 JUTA · APR 2021 · TIGER GLOBAL". Meja baru terus bermunculan.
 
-> <teks narasi>
+> Tahun 2020, Ruangguru untung untuk pertama kalinya. April 2021, Tiger Global memimpin suntikan lima puluh lima juta dolar lagi. Penggunanya tembus dua puluh dua juta siswa.
 
-## c04 — <Judul Bab 3>
+## c04 — Jumat kelabu
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Langit kantor berubah mendung, kalender sobek ke "JUMAT 18 NOV 2022". Kotak kardus muncul di meja-meja, kursi kosong. Panel split: gedung kedua berlabel teks "GoTo" dengan counter "1.300 ORANG · ±12%".
 
-> <teks narasi>
+> Lalu angin berbalik. Jumat, delapan belas November 2022, Ruangguru mem-PHK ratusan karyawan. Di hari yang sama, GoTo memangkas seribu tiga ratus orang.
 
-## c05 — <Judul Bab 4>
+## c05 — Pengakuan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Papan rekrutmen dengan kurva naik terlalu curam selama dua tahun, lalu patah. Kutipan teks besar: "terlalu banyak dan cepat". Globe ekonomi meredup di latar.
 
-> <teks narasi>
+> Pendirinya mengakui kesalahannya. Selama dua tahun pandemi, mereka merekrut terlalu banyak dan terlalu cepat. Mereka juga gagal membaca ekonomi global yang memburuk drastis. Lalu mereka minta maaf.
 
-## c06 — <Judul Bab 5>
+## c06 — Selamat vs babak belur
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **14 dtk**
+- Visual: Timbangan "US$1 MILIAR = UNICORN" dengan label "CALON UNICORN" di sisi Ruangguru. Kamera geser ke gedung pesaing berlabel teks "Zenius": counter "> 200 PHK", lalu lampu gedung padam dengan kartu "BERHENTI SEMENTARA · JAN 2024".
 
-> <teks narasi>
+> Tapi Ruangguru tidak bangkrut. Banyak laporan menyebutnya calon unicorn, bukan unicorn bernilai satu miliar dolar. Pesaingnya, Zenius, lebih babak belur: PHK lebih dari dua ratus orang, lalu sempat berhenti beroperasi Januari 2024.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Grafik lonjakan pandemi berubah jadi garis datar "hari biasa"; meja kantor ditata ulang ke ukuran pas, lampu kantor menyala hangat. HUD pelajaran dua baris. Outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Pelajarannya sederhana. Lonjakan sementara bukan pertumbuhan permanen. Rekrut untuk hari biasa, bukan untuk masa darurat. Ikuti AUDIRA untuk cerita teknologi berikutnya.
+
+## Opsi hook lain
+
+1. Untung di 2020, PHK ratusan orang di 2022. Apa yang terjadi di antaranya?
+2. Satu Jumat di November 2022, dua raksasa teknologi Indonesia memangkas karyawan di hari yang sama.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **197 kata** ≈ **79–88 dtk** @135–150 WPM

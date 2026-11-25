@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP18`)
+# Naskah — Kenapa Samsung Galaxy S25 Masih Relevan di Era AI Phone
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: Siluet HP flagship melayang di ruang gelap; HUD angka besar '2032' menghentak di tengah layar.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Semua HP mengaku punya AI. Tapi satu HP keluaran Januari 2025 masih dijanjikan update sampai 2032. Namanya Samsung Galaxy S25.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Kalender bergerak dari Jan 2025 ke Mar 2026; dua siluet HP berdampingan (S25 vs S26) dengan callout tanggal.
 
-> <konteks singkat + "Di Audira, ...">
+> Samsung memperkenalkannya 22 Januari 2025, dijual 7 Februari. Penggantinya, Galaxy S26, rilis 11 Maret 2026. Jadi wajar bertanya: masih layak, atau sudah basi?
 
-## c02 — <Judul Bab 1>
+## c02 — Bab 1 — Otak chip
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Close-up chip prosesor di papan sirkuit, cutaway lapisan die; callout '3 nm' dan label 'Snapdragon 8 Elite'; peta dunia dengan satu warna chip yang sama.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Model utama S25 memakai Snapdragon 8 Elite for Galaxy, proses 3 nanometer. Satu chip yang sama untuk semua wilayah, tanpa Exynos.
 
-## c03 — <Judul Bab 2>
+## c03 — Bab 2 — Update 7 tahun
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **13 dtk**
+- Visual: Garis waktu 2025 sampai 2032 dengan tujuh blok update menyala satu per satu; callout '7 generasi OS' dan '7 tahun keamanan'; perisai keamanan.
 
-> <teks narasi>
+> Ini bagian yang sering dilupakan. Samsung menjanjikan tujuh generasi update sistem operasi dan tujuh tahun patch keamanan. Artinya dirawat sampai sekitar 2032. Per November 2026, S25 sudah masuk daftar One UI 8.5.
 
-## c04 — <Judul Bab 3>
+## c04 — Bab 3 — Galaxy AI
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **34** · estimasi **14 dtk**
+- Visual: Layar kunci HP dengan kartu Now Brief bermunculan; jari menekan tombol samping memunculkan ikon asisten; kalender 'akhir 2025' dicoret jadi 'gratis'.
 
-> <teks narasi>
+> Soal AI-nya, tombol samping ditekan lama memanggil Gemini. Ada juga Now Brief, ringkasan harian di layar kunci. Awalnya Galaxy AI gratis sampai akhir 2025. Januari 2026, Samsung mengubah catatan kakinya: fitur dasar tetap gratis.
 
-## c05 — <Judul Bab 4>
+## c05 — Bab 4 — Fisik
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Exploded view HP Ultra: lensa 200 MP, sel baterai, lapisan kaca; callout angka 200 MP, 5.000 mAh, 162 g.
 
-> <teks narasi>
+> Versi Ultra punya kamera 200 megapiksel, baterai 5.000 mAh, dan kaca Gorilla Armor 2. Model biasa cuma 162 gram dengan baterai 4.000 mAh.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan — S25 vs S26
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Dua HP sejajar dengan timbangan; bar perbandingan spesifikasi hampir sama panjang; callout 'selisih tipis'.
 
-> <teks narasi>
+> Lalu S26 bedanya apa? Menurut ulasan IGN, S26 Ultra pada dasarnya HP yang sama dengan S25 Ultra, hanya prosesornya sedikit lebih cepat. Selisihnya tipis.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Hero shot HP berdiri di atas tumpukan kalender menuju 2032, cahaya fajar; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi S25 relevan bukan karena AI-nya paling heboh, tapi karena dirawat paling lama. HP dengan update sampai 2032 itu investasi. Ikuti AUDIRA untuk bedah teknologi.
+
+## Opsi hook lain
+
+1. HP ini umurnya hampir dua tahun, tapi Samsung masih menjanjikan update sampai 2032. Kok bisa?
+2. Galaxy S26 sudah rilis, tapi ini alasan Galaxy S25 belum layak kamu tinggalkan.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **202 kata** ≈ **81–90 dtk**

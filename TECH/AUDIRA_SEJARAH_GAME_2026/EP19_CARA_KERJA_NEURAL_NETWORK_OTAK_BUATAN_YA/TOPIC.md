@@ -5,7 +5,11 @@ title: "Cara Kerja Neural Network: Otak Buatan yang Menggerakkan AI"
 hook: "Miliaran parameter yang belajar sendiri — penjelasan paling mudah"
 styleCandidates: ["CIRCUITFORGE (2D)", "NANOFORGE (3D)", "DEVFORGE (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Analogi otak dan klaim parameter belajar sendiri mudah menyesatkan; angka parameter GPT-3 per 2020 bisa terasa usang"
 ---
 
 # Cara Kerja Neural Network: Otak Buatan yang Menggerakkan AI

@@ -5,7 +5,11 @@ title: "Startup Unicorn Indonesia yang Gagal: Pelajaran dari Ruangguru"
 hook: "Valuasi miliaran dolar, lalu ribuan PHK — apa yang salah?"
 styleCandidates: ["BROADCASTFORGE (2D)", "DATAPHYSICAL (2D)", "CHRONICLE (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: tidak
+risiko: "Judul/hook tidak akurat: Ruangguru tidak bangkrut, bukan unicorn resmi, PHK-nya ratusan bukan ribuan; topik bisnis nyata, tanpa wajah/logo asli."
 ---
 
 # Startup Unicorn Indonesia yang Gagal: Pelajaran dari Ruangguru

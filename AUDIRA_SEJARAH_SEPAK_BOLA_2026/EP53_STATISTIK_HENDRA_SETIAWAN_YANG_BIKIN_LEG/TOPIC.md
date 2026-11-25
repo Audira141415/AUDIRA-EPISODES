@@ -5,7 +5,11 @@ title: "Statistik Hendra Setiawan yang Bikin Legenda Dunia Angkat Topi"
 hook: "Pasangan ganda manapun tak bisa menandingi konsistensi 20 tahunnya"
 styleCandidates: ["DATAPHYSICAL (2D)", "CHARACTERFLOW (2D)", "BROADCASTFORGE (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook asli (konsistensi 20 tahun tak tertandingi) tidak terverifikasi dan sudah diganti; klaim juara dunia tertua beda antarsumber; folder salah seri (bulu tangkis di seri sepak bola); tokoh nyata, pakai siluet."
 ---
 
 # Statistik Hendra Setiawan yang Bikin Legenda Dunia Angkat Topi

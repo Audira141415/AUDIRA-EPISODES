@@ -1,33 +1,15 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Statistik Hendra Setiawan yang Bikin Legenda Dunia Angkat Topi
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Emas Olimpiade 2008: Kido/Setiawan kalahkan tuan rumah Cai Yun/Fu Haifeng di final; gim pertama 21-12 untuk China, Indonesia balik menang | Beijing 2008: Indonesian Tradition Continues, Raphael Sachetat, BWF, 2008 | http://olympics.bwfbadminton.com/news-single/2008/08/17/beijing-2008-indonesian-tradition-continues/ | 2026-11-25 | HIGH |
+| 2 | All England 2019: Ahsan/Setiawan menang 11-21 21-14 21-12 atas Aaron Chia/Soh Wooi Yik; gelar All England kedua; Setiawan cedera betis kanan | Vintage Warriors Reclaim Throne - All England: Finals, Dev Sukumar, BWF World Tour, 10 Mar 2019 | https://bwfworldtour.bwfbadminton.com/news-single/2019/03/10/vintage-warriors-reclaim-throne-all-england-finals/ | 2026-11-25 | HIGH |
+| 3 | Final Kejuaraan Dunia 2019 di Basel: menang 25-23, 9-21, 21-15 atas Takuro Hoki/Yugo Kobayashi; gelar dunia ketiga sebagai pasangan | Indonesia's Ahsan, Hendra nail BWF World Championships hat-trick, The Jakarta Post, 26 Agu 2019 | https://www.thejakartapost.com/news/2019/08/26/indonesias-ahsan-hendra-nail-bwf-world-championships-hat-trick.html | 2026-11-25 | HIGH |
+| 4 | Hendra umumkan pensiun awal Des 2024; 35 tahun di dunia badminton; Indonesia Masters 2025 turnamen terakhir; daftar gelar: 1 emas Olimpiade, 4 gelar dunia, 2 All England, 2 Asian Games; belum pernah juara Piala Sudirman | Hendra Setiawan Umumkan Pensiun, Ini Daftar Gelar yang Pernah Diraihnya, Gilang Romadhan, Kompas TV, 4 Des 2024 | https://www.kompas.tv/olahraga/557814/hendra-setiawan-umumkan-pensiun-ini-daftar-gelar-yang-pernah-diraihnya | 2026-11-25 | HIGH |
+| 5 | Piala Thomas 2021: Indonesia akhirnya juara setelah menunggu 19 tahun; Hendra: ini kali pertamanya meraih Thomas Cup | Indonesia's 19-Year Wait for Thomas Cup Ends, Dev Sukumar, BWF, 18 Okt 2021 | https://bwfthomasubercups.bwfbadminton.com/news-single/2021/10/18/indonesias-19-year-wait-for-thomas-cup-ends | 2026-11-25 | HIGH |
+| 6 | Kejuaraan Dunia Senior 2025 (Pattaya, 7-14 Sep): Gunawan/Setiawan juara 40+ (21-18 21-16 atas Ponsana/Thanathiratham); Setiawan/Debby Susanto juara ganda campuran 35+ | World Seniors: Hendra Setiawan clinches double, BWF, 15 Sep 2025 | https://bwfbadminton.com/news-single/2025/09/15/world-seniors-hendra-setiawan-clinches-double/ | 2026-11-25 | HIGH |
+| 7 | Lahir 25 Agu 1984 di Pemalang; mulai badminton umur 7 tahun; juara dunia 2007, 2013, 2015, 2019; emas Olimpiade 2008; nomor 1 dunia 27 Sep 2007 (dengan Kido) dan 21 Nov 2013 (dengan Ahsan); juara dunia tertua (35 th, 2019); aktif 2001-2025 | Hendra Setiawan, Wikipedia (revisi 24 Nov 2026), penyunting komunitas, 2026 | https://en.wikipedia.org/wiki/Hendra_Setiawan | 2026-11-25 | MEDIUM |
+| 8 | Rekor karier 631 menang, 240 kalah (kotak info); All England 2014 dan 2019 bersama Ahsan; Asian Games 2010 dan 2014 | Hendra Setiawan (infobox dan bagian karier), Wikipedia, 2026 | https://en.wikipedia.org/w/index.php?title=Hendra_Setiawan&action=raw | 2026-11-25 | MEDIUM |
+| 9 | Pemenang nomor ganda putra Kejuaraan Dunia 2019: Ahsan/Setiawan; Basel 19-25 Agu 2019 | 2019 BWF World Championships - Men's doubles, Wikipedia, 2026 | https://en.wikipedia.org/wiki/2019_BWF_World_Championships_%E2%80%93_Men%27s_doubles | 2026-11-25 | MEDIUM |
