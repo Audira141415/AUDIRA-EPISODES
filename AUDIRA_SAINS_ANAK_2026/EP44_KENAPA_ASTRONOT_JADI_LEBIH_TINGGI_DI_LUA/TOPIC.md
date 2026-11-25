@@ -5,7 +5,11 @@ title: "Kenapa Astronot Jadi Lebih Tinggi di Luar Angkasa"
 hook: "Tanpa gravitasi, tulang belakang mengembang — dan itu hanya salah satu efek aneh luar angkasa pada tubuh"
 styleCandidates: ["ANATOMIX (3D)", "WORLDFORGE (3D)", "SCALEFORGE (3D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 5
+awet: ya
+risiko: "hook \"tulang belakang mengembang\" harus dikoreksi jadi cakram mengembang + lengkung mendatar; rentang angka tinggi beragam (2,5–7 cm) antar sumber"
 ---
 
 # Kenapa Astronot Jadi Lebih Tinggi di Luar Angkasa

@@ -5,7 +5,11 @@ title: "Teladan Hasan al-Basri: Sufi Besar yang Hidup di Tengah Kemewahan Dunia"
 hook: "Ia tinggal di kota paling mewah di zamannya tapi tidak pernah tersentuh oleh kemewahan itu"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "PAINTERLY (2D)", "CHARACTERFLOW (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "kisah istana Hajjaj di Wasit hanya bersumber MEDIUM tanpa sanad; label sufi dan hagiografi (bertemu Nabi, 70 ahli Badar) tidak dinarasikan"
 ---
 
 # Teladan Hasan al-Basri: Sufi Besar yang Hidup di Tengah Kemewahan Dunia

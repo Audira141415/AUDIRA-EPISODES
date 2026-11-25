@@ -5,7 +5,11 @@ title: "Kisah Imam Bukhari: Penjaga Hadis yang Berjalan Ribuan Kilometer"
 hook: "Ia berjalan lebih dari 160.000 km untuk mengumpulkan hadis — dan menghafal satu juta di antaranya"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "MANUSCRIPT (2D)", "CHRONICLE (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook asli (160.000 km, hafal satu juta hadis) tidak bersumber dan sudah dikoreksi; jumlah hadis beda versi; tanpa wajah tokoh."
 ---
 
 # Kisah Imam Bukhari: Penjaga Hadis yang Berjalan Ribuan Kilometer

@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP53`)
+# Naskah — Kisah Nabi Lut dan Kehancuran Kota yang Paling Terkenal dalam Sejarah
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: siluet kota batu di lembah gurun berputar terbalik 180°, langit merah, batu berpijar mulai jatuh. HUD: "QS Hud 11:82".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Satu negeri dibalik. Yang di atas jadi di bawah, lalu dihujani batu. Ini kisah kaum Nabi Lut.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: gulungan manuskrip terbuka, kaligrafi "al-mu'tafikat" menyala; teks "Sodom" tercoret tipis berlabel "nama dari tradisi". HUD: "QS 9:70 · 53:53".
 
-> <konteks singkat + "Di Audira, ...">
+> Al-Qur'an tidak menyebut nama Sodom. Ia menyebut kaum Lut, dan negeri-negeri yang dijungkirbalikkan, al-mu'tafikat. Nama Sodom datang dari tradisi Ahli Kitab.
 
-## c02 — <Judul Bab 1>
+## c02 — Teguran Nabi Lut
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: pasar kota kuno senja, siluet Nabi Lut (tanpa wajah, cahaya lembut) berdiri di depan kerumunan siluet; kerumunan menunjuk gerbang kota. HUD: "QS Al-A'raf 7:80–82".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Nabi Lut menegur kaumnya. Kalian melakukan perbuatan keji yang belum pernah dilakukan siapa pun sebelum kalian. Jawaban mereka? Usir dia dari kota ini.
 
-## c03 — <Judul Bab 2>
+## c03 — Tamu di malam hari
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: rumah batu berlampu minyak; tiga sosok cahaya putih (malaikat, tanpa wajah) di ambang pintu; obor-obor kaumnya bergerak mendekat di gang. HUD: "QS Hud 11:77–78".
 
-> <teks narasi>
+> Lalu datang tamu. Mereka malaikat, tapi tampak seperti manusia. Kaumnya bergegas mengepung rumah Lut. Lut berkata, jangan permalukan aku di depan tamuku.
 
-## c04 — <Judul Bab 3>
+## c04 — Pelarian sebelum subuh
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: rombongan siluet keluarga berjalan keluar gerbang di bawah bintang; satu siluet (istri) tertinggal dan menoleh ke kota; garis cakrawala mulai terang. HUD: "QS 11:81 · 54:34".
 
-> <teks narasi>
+> Malaikat berkata, pergilah bersama keluargamu di sebagian malam, dan jangan ada yang menoleh. Kecuali istrimu. Waktunya subuh. Bukankah subuh itu sudah dekat?
 
-## c05 — <Judul Bab 4>
+## c05 — Azab saat matahari terbit
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: matahari terbit, gelombang suara memecah kaca udara; tanah kota terangkat dan terbalik; hujan batu sijjil berpijar oranye. HUD: "QS Al-Hijr 15:73" lalu "sijjil".
 
-> <teks narasi>
+> Saat matahari terbit, suara keras menyambar. Negeri itu dibalik, lalu dihujani batu dari tanah yang terbakar, bertubi-tubi. Keluarga Lut sudah selamat sebelum fajar.
 
-## c06 — <Judul Bab 5>
+## c06 — Di mana lokasinya?
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **45** · estimasi **19 dtk**
+- Visual: peta Lembah Yordan dan Laut Mati, pin bertanda tanya di Bab edh-Dhra dan Tall el-Hammam; kartu jurnal "2021" dicap merah "DITARIK 2025". HUD: "−440 m · daratan terendah".
 
-> <teks narasi>
+> Lokasinya? Tradisi menunjuk kawasan Laut Mati, daratan terendah di bumi, sekitar empat ratus empat puluh meter di bawah permukaan laut. Tapi arkeologi belum memastikannya. Studi ledakan meteor di Tall el-Hammam tahun dua ribu dua puluh satu bahkan ditarik jurnalnya pada dua ribu dua puluh lima.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: kamera naik di atas Laut Mati saat fajar, permukaan garam berkilau, kaligrafi QS 29:35 muncul di langit; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Al-Qur'an hanya menegaskan, negeri itu ditinggalkan sebagai tanda yang jelas bagi orang yang berpikir. Bukan untuk ditebak lokasinya, tapi untuk direnungkan. Ikuti kisah para nabi lainnya di AUDIRA.
+
+## Opsi hook lain
+
+1. Malaikat datang sebagai tamu. Besok paginya, satu negeri hilang dibalik.
+2. Satu perintah malam itu: jangan menoleh. Satu orang melanggarnya.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **201 kata** ≈ **80–89 dtk** @135–150 WPM

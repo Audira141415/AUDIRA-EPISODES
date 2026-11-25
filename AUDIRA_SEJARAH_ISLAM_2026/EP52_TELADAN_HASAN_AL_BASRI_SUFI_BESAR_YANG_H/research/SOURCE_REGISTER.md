@@ -1,33 +1,16 @@
-# SOURCE_REGISTER — `Sejarah peradaban Islam yang jarang diketahui`
+# Source Register — Teladan Hasan al-Basri: Sufi Besar yang Hidup di Tengah Kemewahan Dunia
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Hasan bin Yasar (Abu Sa'id); ayahnya Yasar dari tawanan Maisan, ibunya bernama Khairah, maulah (pelayan) Ummu Salamah Ummul Mukminin; lahir di Madinah dua tahun sebelum akhir kekhalifahan Umar (21 H / 642 M). | Siyar A'lam an-Nubala, entri "al-Hasan al-Basri", adz-Dzahabi (w. 748 H), teks Wikisource Arab | https://ar.wikisource.org/wiki/%D8%B3%D9%8A%D8%B1_%D8%A3%D8%B9%D9%84%D8%A7%D9%85_%D8%A7%D9%84%D9%86%D8%A8%D9%84%D8%A7%D8%A1/%D8%A7%D9%84%D8%AD%D8%B3%D9%86_%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D9%8A | 2026-11-25 | HIGH |
+| 2 | Atsar Hasan (riwayat Shalih al-Murri): "Ibnu Adam, innama anta ayyam, kullama dzahaba yaum dzahaba ba'dhuk" (Wahai anak Adam, kamu hanyalah kumpulan hari; setiap satu hari pergi, sebagian dirimu pergi). Juga: "Kematian telah membongkar aib dunia." Atsar (perkataan tabi'in), bukan hadis Nabi. | Siyar A'lam an-Nubala, entri "al-Hasan al-Basri", adz-Dzahabi; juga dikutip Ibnu Rajab, Jami' al-'Ulum wal-Hikam, hadis ke-40 | (URL sama dengan #1) | 2026-11-25 | HIGH |
+| 3 | Ibrahim bin Isa al-Yasykuri: "Aku tidak pernah melihat orang yang lebih panjang sedihnya daripada al-Hasan; setiap melihatnya kukira ia baru tertimpa musibah." | Siyar A'lam an-Nubala, entri "al-Hasan al-Basri", adz-Dzahabi | (URL sama dengan #1) | 2026-11-25 | HIGH |
+| 4 | Wafat awal Rajab 110 H di Basrah (Ibnu 'Ulayyah); disalatkan setelah Jumat, jenazah diiringi begitu banyak orang sampai salat Asar tidak didirikan di masjid jami. Ibnu Sirin wafat sekitar 100 hari sesudahnya. | Siyar A'lam an-Nubala, entri "al-Hasan al-Basri", adz-Dzahabi | (URL sama dengan #1) | 2026-11-25 | HIGH |
+| 5 | Hasan al-Basri adalah perawi hadis dalam Sahih al-Bukhari no. 2704 (perdamaian al-Hasan bin Ali dengan Muawiyah); derajat sahih. Menunjukkan statusnya sebagai perawi tepercaya. | Sahih al-Bukhari no. 2704, Kitab ash-Shulh, Imam al-Bukhari; teks diverifikasi via hadith-api (fawazahmed0) | https://sunnah.com/bukhari:2704 | 2026-11-25 | HIGH |
+| 6 | Kajian akademik: oposisi Hasan al-Basri terhadap penguasa Umayyah berupa nasihat berbasis Qur'an dan sunnah, tidak memicu fitnah atau pemberontakan. | "Bir Zâhidin Örnek Muhalefeti: Hasan Basrî" (An Exemplary Opposition of a Pious), Kotan, Milel ve Nihal, 2018 | https://doi.org/10.17131/milel.505034 | 2026-11-25 | HIGH |
+| 7 | Monografi akademik tentang biografi Hasan dan pembentukan citranya dalam tradisi; memuat bab "His Life and Career" dan bab korespondensi dengan Umar bin Abdul Aziz. | Early Islam between Myth and History: al-Hasan al-Basri, Suleiman A. Mourad, Brill, 2005 | https://doi.org/10.1163/9789047416708 | 2026-11-25 | HIGH |
+| 8 | Lahir 642 M di Madinah, wafat 728 M di Basrah; tabi'in; pindah ke Basrah setelah Perang Shiffin; ikut ekspedisi di Iran timur (±663) dan pernah jadi pedagang permata sebelum hidup zuhud; mengecam pendirian Wasit oleh al-Hajjaj (705) sampai harus bersembunyi; menolak pelamar putrinya karena kekayaannya. | "Hasan al-Basri", Wikipedia (rujukan: Encyclopaedia of Islam, Renard, Knysh) | https://en.wikipedia.org/wiki/Hasan_al-Basri | 2026-11-25 | MEDIUM |
+| 9 | Basrah didirikan 636 M sebagai kamp pasukan (Utbah bin Ghazwan), lalu tumbuh menjadi kota terbesar kedua di Irak, bahkan mungkin di seluruh dunia Islam; gaji tentara dan investasi irigasi membuat ekonominya ramai. | "Basra", Wikipedia | https://en.wikipedia.org/wiki/Basra | 2026-11-25 | MEDIUM |
+| 10 | Saat al-Hajjaj selesai membangun istananya di Wasit dan orang-orang datang mengaguminya, Hasan berkata bahwa Firaun membangun lebih besar dan lebih tinggi, lalu Allah membinasakannya. Juga: perpisahan Washil bin Atha dari halaqah Hasan (awal Muktazilah). Kisah Wasit dikutip tanpa sanad. | "الحسن البصري" (al-Hasan al-Basri), Wikipedia Arab | https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AD%D8%B3%D9%86_%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D9%8A | 2026-11-25 | MEDIUM |

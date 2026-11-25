@@ -5,7 +5,11 @@ title: "Bakteriofag: Virus yang Memangsa Bakteri dan Bisa Menyelamatkan Kita"
 hook: "Di era resistensi antibiotik, ilmuwan kembali ke senjata kuno yang ditemukan 100 tahun lalu"
 styleCandidates: ["NANOFORGE (3D)", "INNERWORKS (3D)", "CERDIK (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah; jaga nuansa: angka WHO = kematian terkait AMR, kasus pasien hanya satu laporan (bukan bukti uji klinis)"
 ---
 
 # Bakteriofag: Virus yang Memangsa Bakteri dan Bisa Menyelamatkan Kita

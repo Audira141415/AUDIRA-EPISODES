@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Sejarah peradaban Islam yang jarang diketahui`
+# Source Register — Kisah Imam Bukhari: Penjaga Hadis yang Berjalan Ribuan Kilometer
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Hadis pertama Sahih al-Bukhari (no. 1, Kitab Bad' al-Wahy, sahih): "Semua perbuatan tergantung niatnya", riwayat Umar bin al-Khattab | Sahih al-Bukhari no. 1, al-Bukhari (w. 256 H); teks terjemahan Indonesia via Hadith API (fawazahmed0) | https://sunnah.com/bukhari:1 · https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/ind-bukhari/1.json | 2026-11-25 | HIGH |
+| 2 | Jumlah hadis Sahih tanpa pengulangan 2.602 (hitungan Ibn Hajar); biografi al-Bukhari, syarat sanad bersambung, dan pemeriksaan kitab oleh gurunya (Hady al-Sari, muqaddimah Fath al-Bari) | Fath al-Bari bi Syarh Sahih al-Bukhari (muqaddimah Hady al-Sari), Ibn Hajar al-Asqalani (w. 852 H), ed. al-Salafiyyah | https://shamela.ws/book/1673 | 2026-11-25 | HIGH |
+| 3 | Lahir di Bukhara 13 Syawal 194 H; mulai belajar hadis sejak kecil (±10 tahun); rihlah ke Hijaz, Syam, Mesir, Basrah, Kufah, Baghdad; wafat di Khartank dekat Samarkand 256 H (biografi al-Bukhari di jilid 12) | Siyar A'lam al-Nubala', al-Dzahabi (w. 748 H), ed. al-Risalah | https://shamela.ws/book/10906 | 2026-11-25 | HIGH |
+| 4 | Lahir 21 Juli 810 M (13 Syawal 194 H) di Bukhara, ayahnya wafat saat ia bayi; mulai belajar hadis usia 10; haji usia 16 bersama ibu dan kakaknya; menemui sekitar seribu syekh; guru antara lain Ahmad bin Hanbal, Ali bin al-Madini, Yahya bin Ma'in, Ishaq bin Rahwayh; wafat 1 September 870 M di Khartank; makam 25 km dari Samarkand | Muhammad al-Bukhari, Wikipedia (en), rev. 2026 | https://en.wikipedia.org/wiki/Muhammad_al-Bukhari | 2026-11-25 | MED |
+| 5 | Sahih diseleksi dari lebih dari 600.000 riwayat; 7.563 hadis termasuk pengulangan (hitungan Muhammad Fu'ad Abd al-Baqi); selesai di Bukhara ±846 M (232 H); dorongan Ishaq bin Rahwayh: "andai kamu menyusun kitab yang hanya berisi hadis sahih"; 4 syarat perawi (adil, hafalan kuat, sanad lengkap, perawi berurutan saling bertemu) | Sahih al-Bukhari, Wikipedia (en), rev. 2026 | https://en.wikipedia.org/wiki/Sahih_al-Bukhari | 2026-11-25 | MED |
+| 6 | Menghabiskan 16 tahun mengunjungi berbagai kota untuk mengumpulkan dan menyeleksi hadis sahih; kutipan: Syam, Mesir, Jazirah masing-masing dua kali, Basrah empat kali, menetap di Hijaz enam tahun; disebut hafal 100.000 hadis sahih dan 200.000 tidak sahih | Muhammad bin Ismail al-Bukhari, Wikipedia (id), rev. 2026 | https://id.wikipedia.org/wiki/Imam_Bukhari | 2026-11-25 | MED |
+| 7 | Sahih al-Bukhari dan Sahih Muslim (Sahihain) dipandang kaum Sunni sebagai kumpulan hadis paling sahih setelah Al-Qur'an | Muhammad al-Bukhari & Sahih al-Bukhari, Wikipedia (en), rev. 2026 | https://en.wikipedia.org/wiki/Sahih_al-Bukhari | 2026-11-25 | MED |

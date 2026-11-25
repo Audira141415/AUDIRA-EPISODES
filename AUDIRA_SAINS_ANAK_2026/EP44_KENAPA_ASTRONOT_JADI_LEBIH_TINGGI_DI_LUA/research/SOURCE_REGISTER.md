@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi`
+# Source Register — Kenapa Astronot Jadi Lebih Tinggi di Luar Angkasa
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Misi panjang di mikrogravitasi memanjangkan tinggi badan sekitar 5 cm; kru NASA punya risiko hernia cakram (IVD) 4,3 kali lebih tinggi dibanding populasi umum/penerbang militer, risiko tertinggi di tahun pertama setelah misi; 6 astronot misi 6 bulan di ISS: massa otot punggung bawah (lean FCSA) turun dari 86% ke 72% | Lumbar Spine Paraspinal Muscle and Intervertebral Disc Height Changes in Astronauts After Long-Duration Spaceflight on the ISS, Chang DG, Hargens AR dkk., Spine 41(24), 2016 | https://pubmed.ncbi.nlm.nih.gov/27779600/ | 2026-11-25 | HIGH |
+| 2 | Tulang belakang memanjang 4–7 cm di mikrogravitasi; 14 dari 19 kru Shuttle mengalami sakit punggung selama penerbangan, kebanyakan di punggung bawah | Back pain during 6 degrees head-down tilt approximates that during actual microgravity, Hutchinson KJ, Hargens AR dkk. (NASA Ames), Aviat Space Environ Med 66(3), 1995 | https://pubmed.ncbi.nlm.nih.gov/7661837/ | 2026-11-25 | HIGH |
+| 3 | Setelah 6 bulan di ISS, lengkung punggung bawah (lordosis lumbal) mendatar rata-rata 11%; otot multifidus/erector spinae menyusut (FCSA rata-rata −20% pada 5 dari 6 astronot); kadar air cakram tidak berubah sistematis | From the international space station to the clinic: how prolonged unloading may disrupt lumbar spine stability, Bailey JF, Lotz JC dkk., Spine J 18(1), 2018 | https://pubmed.ncbi.nlm.nih.gov/28962911/ | 2026-11-25 | HIGH |
+| 4 | Tulang penyangga beban kehilangan rata-rata 1–1,5% kepadatan mineral per bulan di luar angkasa; cairan tubuh bergeser ke kepala; olahraga aerobik dan beban menjaga tulang dan otot | The Human Body in Space, NASA, 2021 (diperbarui) | https://www.nasa.gov/humans-in-space/the-human-body-in-space/ | 2026-11-25 | HIGH |
+| 5 | Program Skylab: tanpa bobot, rangka astronot meregang penuh dan tinggi badan naik sekitar satu inci (±2,5 cm) | From Engineering Science to Big Science (NASA SP-4219), bab "The Human Touch: The History of the Skylab Program", Elder DC, NASA History, 1998 | https://history.nasa.gov/SP-4219/Chapter9.html | 2026-11-25 | HIGH |
+| 6 | Uji darat: 4 jam mengapung (simulasi tanpa beban) menaikkan tinggi +1,6 cm, menebalkan cakram lumbal, memicu sakit punggung; duduk tegak 15 menit atau beban 30 detik mengurangi kembali tambahan tinggi itu | 50% body weight loading reduces stature increases and lumbar disc expansion from 4 h hyper-buoyancy floatation, Marcos-Lorenzo D, Green DA (ESA) dkk., Exp Physiol, 2024 | https://pubmed.ncbi.nlm.nih.gov/39632504/ | 2026-11-25 | HIGH |
+| 7 | Ringkasan efek antariksa: dalam sebulan rangka meregang penuh, tinggi +2,5 cm; wajah sembap ("moon face") akibat pergeseran cairan; sakit punggung dan perut umum saat adaptasi | Effect of spaceflight on the human body, Wikipedia (dengan rujukan NASA SP-4219), 2026 | https://en.wikipedia.org/wiki/Effect_of_spaceflight_on_the_human_body | 2026-11-25 | MEDIUM |

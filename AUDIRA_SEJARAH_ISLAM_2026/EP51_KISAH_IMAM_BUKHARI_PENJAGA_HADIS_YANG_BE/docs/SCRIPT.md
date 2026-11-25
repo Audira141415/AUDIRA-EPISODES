@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP51`)
+# Naskah — Kisah Imam Bukhari: Penjaga Hadis yang Berjalan Ribuan Kilometer
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: tumpukan gulungan naskah raksasa menyusut lewat saringan emas jadi satu kitab; HUD counter "600.000 → 7.563"
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Enam ratus ribu riwayat masuk saringan. Yang lolos cuma tujuh ribuan. Ini kisah penyaring hadis paling ketat, di AUDIRA.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: kota Bukhara abad ke-9 saat fajar, siluet anak kecil tanpa wajah membaca di serambi masjid; HUD "Bukhara · 810 M"
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya Muhammad bin Ismail. Lahir di Bukhara tahun 810, ayahnya wafat saat ia masih bayi. Umur sepuluh, ia sudah sibuk menghafal hadis.
 
-## c02 — <Judul Bab 1>
+## c02 — Rihlah dimulai
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: peta bergerak Asia Tengah–Arab, garis rute emas Bukhara → Makkah → Madinah → Basrah → Kufah → Baghdad → Syam → Mesir; kafilah unta siluet; HUD "Usia 16"
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Umur enam belas, ia berangkat haji bersama ibu dan kakaknya. Tapi ia tidak langsung pulang. Dari Makkah dan Madinah, ia menyusuri Basrah, Kufah, Baghdad, Syam, sampai Mesir.
 
-## c03 — <Judul Bab 2>
+## c03 — Seribu guru
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: halaqah ilmu di masjid berlampu minyak, deretan siluet ulama tanpa wajah; kartu nama melayang "Ahmad bin Hanbal", "Ali bin al-Madini"; HUD "±1.000 guru"
 
-> <teks narasi>
+> Sekitar seribu guru ia datangi, di antaranya Ahmad bin Hanbal dan Ali bin al-Madini. Lalu gurunya, Ishaq bin Rahwayh, berkata: andai ada kitab yang isinya hanya hadis sahih.
 
-## c04 — <Judul Bab 3>
+## c04 — Enam belas tahun menyaring
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: meja tulis malam hari, pena dan tinta, lembar-lembar riwayat bertumpuk lalu tersaring; kalender berputar; HUD "16 tahun" + "600.000 riwayat"
 
-> <teks narasi>
+> Kalimat itu ia pegang. Enam belas tahun ia menyaring sekitar enam ratus ribu riwayat, satu per satu, mulai di Makkah dan Madinah sampai rampung di Bukhara.
 
-## c05 — <Judul Bab 4>
+## c05 — Rantai sanad
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: diagram rantai sanad bercahaya, tiap mata rantai = perawi (ikon tanpa wajah) berlabel syarat: jujur, hafalan kuat, bersambung, bertemu; satu mata rantai retak dan jatuh
 
-> <teks narasi>
+> Syaratnya keras. Perawi harus jujur, hafalannya kuat, sanadnya bersambung, dan tiap perawi terbukti bertemu gurunya. Satu mata rantai saja meragukan, riwayat itu langsung dibuang.
 
-## c06 — <Judul Bab 5>
+## c06 — Hasil saringan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: kitab terbuka dengan halaman pertama berkaligrafi; infografis dua angka "7.563 (dengan pengulangan)" dan "2.602 (tanpa pengulangan)"; HUD "Bukhari no. 1"
 
-> <teks narasi>
+> Hasilnya 7.563 hadis menurut hitungan umum, atau 2.602 tanpa pengulangan. Hadis pertamanya dipilih dengan sengaja: semua perbuatan tergantung niatnya.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: kompleks makam di Khartank dekat Samarkand saat senja (HUD "870 M"), kamera naik ke rak perpustakaan modern penuh Sahih al-Bukhari; outro card AUDIRA
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Ia wafat di Khartank, dekat Samarkand, tahun 870. Tapi kitabnya, Sahih al-Bukhari, sampai hari ini dipegang umat Sunni sebagai rujukan hadis paling sahih setelah Al-Qur'an. Kisah penjaga ilmu lainnya, ikuti terus di AUDIRA.
+
+## Opsi hook lain
+
+1. Satu kitab, enam belas tahun kerja, dan ratusan ribu riwayat yang dibuang. Inilah Imam Bukhari.
+2. Ia keliling dari Bukhara sampai Mesir hanya untuk memastikan satu hal: kalimat ini benar dari Nabi atau tidak.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **198 kata** ≈ **79–88 dtk**

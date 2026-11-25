@@ -5,7 +5,11 @@ title: "Kisah Nabi Lut dan Kehancuran Kota yang Paling Terkenal dalam Sejarah"
 hook: "Apa sebenarnya yang terjadi di kota Sodom, dan mengapa azabnya begitu dahsyat?"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "STORYBOOK (2D)", "CINESTORY (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Isu sensitif: dosa kaum Lut wajib dirujuk dengan bahasa Al-Qur'an tanpa visual eksplisit; nama Sodom dan lokasi bukan dari Al-Qur'an; studi Tall el-Hammam 2021 sudah ditarik."
 ---
 
 # Kisah Nabi Lut dan Kehancuran Kota yang Paling Terkenal dalam Sejarah
