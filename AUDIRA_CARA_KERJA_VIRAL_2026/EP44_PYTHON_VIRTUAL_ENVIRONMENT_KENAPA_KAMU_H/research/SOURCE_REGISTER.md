@@ -1,33 +1,17 @@
-# SOURCE_REGISTER — `Cara kerja benda dan fenomena viral yang jarang diketahui`
+# Source Register — Python Virtual Environment: Kenapa Kamu Harus Berhenti Pakai System Python
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis/penerbit, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Konflik pip vs package manager OS sudah lama jadi masalah: memasang versi paket yang tidak kompatibel lewat pip bisa merusak software bawaan distro; contoh: `pip install` bisa merusak perintah `dnf` di Fedora dan sulit dipulihkan. Berlaku juga untuk `sudo pip install`. | PEP 668 – Marking Python base environments as "externally managed", G. Thomas, M. Klose dkk., dibuat 18 Mei 2021 (Status: Final) | https://peps.python.org/pep-0668/ | 2026-11-25 | HIGH |
+| 2 | PEP 668 memperkenalkan penanda "externally managed" dan opsi baris perintah `--break-system-packages` untuk memaksa pemasangan. | PEP 668, Python Software Foundation, 2021 | https://peps.python.org/pep-0668/ | 2026-11-25 | HIGH |
+| 3 | Virtual environment resmi (modul `venv`, file `pyvenv.cfg`) diusulkan Carl Meyer, dibuat 13 Juni 2011, masuk Python 3.3 (Status: Final). | PEP 405 – Python Virtual Environments, Carl Meyer, 2011 | https://peps.python.org/pep-0405/ | 2026-11-25 | HIGH |
+| 4 | `venv` "Added in version 3.3"; tiap environment punya set paket Python sendiri yang independen; env tidak dimasukkan ke Git, dianggap sekali pakai (mudah dihapus lalu dibuat ulang), tidak dipindah/disalin. Dibuat dengan `python -m venv`. | venv — Creation of virtual environments, Python documentation (PSF), 2026 | https://docs.python.org/3/library/venv.html | 2026-11-25 | HIGH |
+| 5 | Debian 12 "bookworm": interpreter python3.11 dan pypy3 bawaan ditandai externally-managed mengikuti PEP 668; python3-pip menolak install manual kecuali dengan `--break-system-packages`; Debian menyarankan pipx untuk aplikasi dan virtualenv untuk library. | Debian 12 (bookworm) Release Notes, bab 5 "Issues to be aware of", Debian Project, 2023 | https://www.debian.org/releases/bookworm/amd64/release-notes/ch-information.en.html | 2026-11-25 | HIGH |
+| 6 | venv mengelola instalasi paket terpisah untuk tiap project, membuat instalasi Python "virtual" yang terisolasi, sehingga paket tidak mengganggu environment project lain. | Install packages in a virtual environment using pip and venv, Python Packaging User Guide (PyPA), 2026 | https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/ | 2026-11-25 | HIGH |
+| 7 | virtualenv (pendahulu venv) dibuat Ian Bicking; rilis paling awal di PyPI versi 0.8 diunggah 14 September 2007. | virtualenv release history, PyPI JSON API, 2007 | https://pypi.org/pypi/virtualenv/json | 2026-11-25 | MEDIUM |
+| 8 | pip adalah package manager Python yang terhubung ke repositori publik Python Package Index (PyPI). | pip (package manager), Wikipedia, rev. 2026-09-16 | https://en.wikipedia.org/wiki/Pip_(package_manager) | 2026-11-25 | MEDIUM |
+| 9 | Aplikasi A butuh versi 1.0 sebuah modul, aplikasi B butuh 2.0: satu instalasi Python tidak bisa memenuhi keduanya; solusinya virtual environment per aplikasi. | The Python Tutorial, bab Virtual Environments and Packages, Python Software Foundation | https://docs.python.org/3/tutorial/venv.html | 2026-11-25 | HIGH |
+| 10 | Aktivasi: source .venv/bin/activate (Windows: .venv\Scripts\activate); folder venv dikeluarkan dari Git lewat .gitignore; dibuat dengan python3 -m venv .venv. | Install packages in a virtual environment using pip and venv, Python Packaging User Guide (PyPA), 2026 | https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/ | 2026-11-25 | HIGH |
+| 11 | pip freeze mengeluarkan daftar paket terpasang dalam format requirements; pyvenv.cfg dengan kunci home menunjuk ke Python dasar. | pip freeze, pip documentation (PyPA); PEP 405, Carl Meyer, 2011 | https://pip.pypa.io/en/stable/cli/pip_freeze/ | 2026-11-25 | MEDIUM |

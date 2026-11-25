@@ -1,93 +1,69 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP42`)
+# Naskah — SQL Index: Kenapa Query Kamu Lambat Padahal Sudah Benar
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: kursor menekan Enter pada query SELECT sederhana; progress bar merayap, jam pasir berputar; stempel hijau "QUERY BENAR" lalu stempel merah "LAMBAT".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Query kamu benar, hasilnya juga benar, tapi lambatnya minta ampun. Masalahnya bukan di server. Masalahnya di index.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: tabel raksasa memanjang ke kejauhan (baris-baris data sebagai lempengan), satu baris "ID 48213" menyala; sinar pemindai bergerak dari baris pertama ke bawah satu per satu. HUD: "JUTAAN BARIS".
 
-> <konteks singkat + "Di Audira, ...">
+> Bayangin tabel berisi jutaan baris. Kamu cari satu pelanggan pakai ID. Tanpa index, database terpaksa membaca tabel itu baris demi baris, dari atas sampai bawah.
 
-## c02 — <Judul Bab 1>
+## c02 — Seq Scan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: layar terminal generik menampilkan output EXPLAIN; label "Seq Scan" membesar jadi callout merah; counter baris yang dicek naik cepat sementara hasil tetap "1 baris".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Di PostgreSQL, ini muncul sebagai Seq Scan saat kamu jalankan EXPLAIN. Semua baris dicek, padahal yang kamu butuhkan cuma satu.
 
-## c03 — <Judul Bab 2>
+## c03 — Lahirnya B-tree
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: meja arsip 1970-an, kertas makalah dengan judul teks; name plate "R. Bayer · E. M. McCreight" (tanpa wajah), pill tahun "1972"; kartu data menyusun diri jadi pohon bertingkat seperti daftar isi buku.
 
-> <teks narasi>
+> Index mengubah itu. Kebanyakan database memakai B-tree, struktur pohon dari Rudolf Bayer dan Edward McCreight di Boeing, terbit tahun 1972. Datanya diurutkan dan disusun bertingkat, mirip daftar isi buku.
 
-## c04 — <Judul Bab 3>
+## c04 — Lompat, bukan baca
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: kamera turun dari akar pohon ke daun dalam 4–5 lompatan bernomor; di sebelahnya tabel jutaan baris redup. HUD callout besar: "JUTAAN DATA = 4–5 TINGKAT".
 
-> <teks narasi>
+> Hasilnya gila. Index berisi jutaan data biasanya cuma punya empat sampai lima tingkat. Database tinggal lompat beberapa langkah, bukan membaca semuanya.
 
-## c05 — <Judul Bab 4>
+## c05 — Index yang dicuekin
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: pohon index menyala, lalu query `WHERE LOWER(email)` membungkus kolom dengan kotak hitam; jalur ke pohon putus, sinar pemindai tabel menyala lagi. Lalu chip `LIKE '%budi'` dengan tanda persen di depan memotong akar pohon.
 
-> <teks narasi>
+> Masalahnya, index sering sudah ada tapi tidak terpakai. Tulis WHERE LOWER kolom, database melihat ekspresi baru, bukan kolom yang di-index. LIKE yang diawali tanda persen juga tidak bisa menelusuri pohon itu.
 
-## c06 — <Judul Bab 5>
+## c06 — Aturan dan harga index
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: rak kartu index gabungan (kolom A | B | C); query tanpa kolom A ditolak, panah "KOLOM PALING KIRI". Lalu timbangan: tumpukan index menumpuk di satu sisi, ikon INSERT/UPDATE melambat.
 
-> <teks narasi>
+> Index gabungan punya aturan sendiri. MySQL cuma memakainya kalau query menyentuh kolom paling kiri. Tapi jangan pasang index di semua kolom. Tiap insert dan update, index ikut diperbarui, jadi menulis data makin berat.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: EXPLAIN kedua: "Seq Scan" berubah jadi "Index Scan", progress bar langsung penuh; kamera mundur memperlihatkan pohon utuh bercahaya, lalu outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi cek dulu pakai EXPLAIN, lalu buat index yang cocok dengan cara kamu mencari. Ikuti AUDIRA buat cara kerja lain yang jarang dibahas.
+
+## Opsi hook lain
+
+1. Database kamu bisa membaca jutaan baris cuma untuk mencari satu nama.
+2. Satu fungsi kecil di WHERE bisa bikin index kamu dianggap tidak ada.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **199 kata** ≈ **80–88 dtk** @135–150 WPM

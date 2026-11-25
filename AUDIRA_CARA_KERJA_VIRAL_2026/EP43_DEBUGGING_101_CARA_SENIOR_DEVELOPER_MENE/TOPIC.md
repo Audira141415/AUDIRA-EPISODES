@@ -5,7 +5,11 @@ title: "Debugging 101: Cara Senior Developer Menemukan Bug Lebih Cepat"
 hook: "Error message bukan musuh — itu petunjuk yang kamu abaikan"
 styleCandidates: ["BONGKAR (2D)", "VISUALINVESTIGATION (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah; jangan klaim senior X kali lebih cepat (tak ada data), angka NIST 2002 wajib diberi tahun, tanpa wajah Hopper/Kernighan dan logo Python/Git/NIST (rule 15)"
 ---
 
 # Debugging 101: Cara Senior Developer Menemukan Bug Lebih Cepat

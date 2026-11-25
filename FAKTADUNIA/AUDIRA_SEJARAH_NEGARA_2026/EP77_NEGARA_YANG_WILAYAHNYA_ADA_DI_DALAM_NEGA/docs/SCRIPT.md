@@ -1,93 +1,69 @@
-# SCRIPT — `Fakta sejarah unik negara-negara di dunia` (`EP77`)
+# Naskah — Negara yang Wilayahnya Ada di Dalam Negara Lain
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: globe berputar cepat lalu berhenti; tiga titik merah menyala di Italia dan Afrika bagian selatan, masing-masing dikurung lingkaran garis batas yang menutup rapat. HUD: "3 NEGARA · 1 TETANGGA".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Ada tiga negara di dunia yang dikurung penuh oleh satu negara lain. Tanpa pantai, tanpa tetangga kedua.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: diagram peta sederhana: satu blok wilayah kecil di tengah blok besar, label "ENKLAVE" muncul; lalu tiga kartu nama negara meluncur masuk (Vatikan, San Marino, Lesotho).
 
-> <konteks singkat + "Di Audira, ...">
+> Istilahnya enklave: wilayah yang seluruh perbatasannya cuma bersentuhan dengan satu negara. Hanya tiga negara berdaulat yang seperti ini: Vatikan, San Marino, dan Lesotho.
 
-## c02 — <Judul Bab 1>
+## c02 — Vatikan, yang paling mungil
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: zoom dari peta Roma ke kompleks berkubah dan lapangan oval; garis batas 3,4 km digambar mengelilinginya. Callout HUD: "0,44 km²", "44 HEKTARE", "BATAS 3,4 KM".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Mulai dari yang paling mungil. Luas Vatikan cuma nol koma empat empat kilometer persegi, di tengah kota Roma. Garis batasnya dengan Italia hanya tiga koma empat kilometer.
 
-## c03 — <Judul Bab 2>
+## c03 — Lahir dari perjanjian
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: timeline horizontal: penanda "1870" (wilayah kepausan menyusut di peta Italia, Roma ikut dicaplok), lalu meja perjanjian dengan dokumen bersegel dan tanggal "11·02·1929". Tanpa wajah tokoh nyata.
 
-> <teks narasi>
+> Kenapa bisa begitu? Tahun 1870, Kerajaan Italia mencaplok Roma, dan paus kehilangan wilayahnya. Sengketa itu baru selesai lewat Perjanjian Lateran, sebelas Februari 1929, yang melahirkan negara Vatikan.
 
-## c04 — <Judul Bab 3>
+## c04 — San Marino, republik di atas bukit
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **37** · estimasi **16 dtk**
+- Visual: kamera naik ke bukit batu terjal bermenara (Monte Titano), batas 37 km menyala di sekeliling; dua kursi kepala negara berdampingan dengan jam pasir berputar "6 BULAN". Callout: "61 km²", "301 M", "2 KEPALA NEGARA".
 
-> <teks narasi>
+> Lalu San Marino, enam puluh satu kilometer persegi, dikelilingi Italia sepanjang tiga puluh tujuh kilometer. Menurut tradisi, negara ini berdiri tahun 301, dan mengaku republik tertua di dunia. Kepala negaranya dua orang sekaligus, diganti tiap enam bulan.
 
-## c05 — <Judul Bab 4>
+## c05 — Lesotho, si raksasa enklave
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: peta pindah ke Afrika bagian selatan; Afrika Selatan berwarna abu, Lesotho menyala di tengahnya, garis batas 1.106 km berjalan. Callout: "30.355 km²", "MERDEKA 1966".
 
-> <teks narasi>
+> Yang paling besar ada di Afrika. Lesotho, 30.355 kilometer persegi, dikepung Afrika Selatan sepanjang 1.106 kilometer. Merdeka dari Inggris pada 1966.
 
-## c06 — <Judul Bab 5>
+## c06 — Negeri yang tak pernah rendah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: penampang medan 3D Lesotho; garis permukaan laut di bawah, penggaris ketinggian naik ke 1.400 m (titik terendah) lalu ke puncak 3.482 m. Callout: "TITIK TERENDAH 1.400 M", "PUNCAK 3.482 M".
 
-> <teks narasi>
+> Yang bikin unik, titik terendah Lesotho ada di ketinggian 1.400 meter. Artinya seluruh negeri ini berada di atas 1.400 meter, dengan puncak Thabana Ntlenyana setinggi 3.482 meter.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: tiga diorama berjajar (kubah Vatikan, menara San Marino, pegunungan Lesotho), masing-masing di dalam peta negara pengurungnya; kamera mundur, lalu kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Tiga negara, tiga cerita: satu lahir dari perjanjian, satu dari legenda tukang batu, satu dari pegunungan. Semuanya hidup di dalam peta negara lain. Ikuti AUDIRA untuk fakta dunia berikutnya.
+
+## Opsi hook lain
+
+1. Ada negara yang bisa kamu kelilingi batasnya cuma tiga koma empat kilometer. Dan dia tinggal di dalam kota negara lain.
+2. Satu negara di Afrika ini titik paling rendahnya saja 1.400 meter. Dan seluruhnya dikurung satu tetangga.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **208 kata** ≈ **83–92 dtk** @135–150 WPM

@@ -5,7 +5,11 @@ title: "SQL Index: Kenapa Query Kamu Lambat Padahal Sudah Benar"
 hook: "Tanpa index yang tepat, database kamu kerja 100x lebih keras"
 styleCandidates: ["DATAPHYSICAL (2D)", "PRECISION (2D)", "DEVFORGE (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Hook '100x' tidak terverifikasi (dikoreksi di naskah); topik teknis butuh visual diagram kuat agar tidak jadi slide; rule 15 untuk nama Boeing/Bayer/McCreight dan logo DB."
 ---
 
 # SQL Index: Kenapa Query Kamu Lambat Padahal Sudah Benar

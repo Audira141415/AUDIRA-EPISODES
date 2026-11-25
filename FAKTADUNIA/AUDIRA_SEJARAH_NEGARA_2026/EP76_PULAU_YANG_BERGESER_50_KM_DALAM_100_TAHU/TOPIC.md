@@ -5,7 +5,11 @@ title: "Pulau yang Bergeser 50 Km dalam 100 Tahun"
 hook: "Kepulauan Surtsey baru lahir 1963 — dan terus berubah bentuk"
 styleCandidates: ["WORLDFORGE (3D)", "SCALEFORGE (3D)", "HISTORYMAP (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul '50 km dalam 100 tahun' tidak didukung sumber (pulau menyusut, bukan bergeser); judul wajib direvisi di tahap 4."
 ---
 
 # Pulau yang Bergeser 50 Km dalam 100 Tahun

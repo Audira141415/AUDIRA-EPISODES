@@ -5,7 +5,11 @@ title: "Jembatan yang Menghubungkan Dua Benua"
 hook: "Selat Bosphorus: satu kaki di Eropa, satu kaki di Asia"
 styleCandidates: ["BUILDFORGE (3D)", "WORLDFORGE (3D)", "SCALEFORGE (3D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Rendah; nama resmi jembatan terkait kudeta 2016 (hindari), angka Herodotus dilebih-lebihkan (tidak dipakai), peringkat #4 dunia hanya sumber MEDIUM."
 ---
 
 # Jembatan yang Menghubungkan Dua Benua

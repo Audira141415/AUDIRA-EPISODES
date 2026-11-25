@@ -1,33 +1,18 @@
-# SOURCE_REGISTER — `Fakta sejarah unik negara-negara di dunia`
+# Source Register — Jembatan yang Menghubungkan Dua Benua
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
+| 1 | Selat Bosphorus panjang 31 km, lebar tersempit 700 m (Kandilli–Aşiyan); menghubungkan Laut Hitam dan Laut Marmara; selat tersempit di dunia untuk pelayaran internasional; salah satu batas benua Asia–Eropa | "Bosporus", Wikipedia (dengan kutipan), 2026 | https://en.wikipedia.org/wiki/Bosporus | 2026-11-25 | MEDIUM |
+| 2 | Darius menyeberangi Bosphorus lewat jembatan kapal (bridge of boats) rancangan arsitek Mandrocles dari Samos; Herodotus menyebut 700.000 orang dan 600 kapal | Herodotus, *Histories* 4.87–88, terj. A. D. Godley (Harvard UP, 1920), Perseus Digital Library | https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0126%3Abook%3D4%3Achapter%3D87 | 2026-11-25 | HIGH |
+| 3 | Darius I berkuasa 522–486 SM; jembatan kapalnya membentang sekitar 1.000 m air terbuka | "Bosporus" §History, Wikipedia, 2026 | https://en.wikipedia.org/wiki/Bosporus | 2026-11-25 | MEDIUM |
+| 4 | Jembatan Bosphorus (Boğaziçi Köprüsü): panjang total 1.560 m, bentang utama 1.074 m, menara 165 m, lebar lantai 33,40 m, ruang bebas di atas laut 64 m, bentang samping 231 m dan 255 m | "Boğaziçi Köprüsü Proje Bilgileri", Karayolları Genel Müdürlüğü (KGM, Ditjen Jalan Raya Turki), arsip 2012 | https://web.archive.org/web/20120609163557/http://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Bolgeler/17Bolge/BogaziciKoprusuProjeBilgileri.pdf | 2026-11-25 | HIGH |
+| 5 | Pembangunan mulai 20 Feb 1970; dibuka 30 Okt 1973, sehari setelah HUT ke-50 Republik Turki; menghubungkan Ortaköy (Eropa) dan Beylerbeyi (Asia); saat dibuka bentang terpanjang ke-4 dunia; desain Freeman Fox & Partners; pejalan kaki boleh melintas hanya 3 tahun pertama | "Bosphorus Bridge", Wikipedia (kutipan KGM, g20.org.tr), 2026 | https://en.wikipedia.org/wiki/Bosphorus_Bridge | 2026-11-25 | MEDIUM |
+| 6 | Jembatan Fatih Sultan Mehmet (jembatan kedua): bentang utama 1.090 m, panjang 1.510 m, ruang bebas 64 m, dibuka 3 Juli 1988 | "Fatih Sultan Mehmet Köprüsü Tarihçe", KGM, arsip 2013 | https://web.archive.org/web/20130612123943/https://www.kgm.gov.tr/SiteCollectionDocuments/KGMdocuments/Bolgeler/1Bolge/FatihSultanMehmetTarihce.pdf | 2026-11-25 | HIGH |
+| 7 | Jembatan Yavuz Sultan Selim (jembatan ketiga) dibuka 26 Agt 2016; bentang utama 1.408 m; menara 322 m; jembatan gabungan jalan + rel; dekat mulut Laut Hitam (Garipçe–Poyrazköy) | "Yavuz Sultan Selim Bridge", Wikipedia (kutipan Reuters, A. Yackley, 26 Agt 2016), 2026 | https://en.wikipedia.org/wiki/Yavuz_Sultan_Selim_Bridge | 2026-11-25 | MEDIUM |
+| 8 | Marmaray dibuka 29 Okt 2013; terowongan immersed tube di bawah Bosphorus; sambungan rel standard gauge pertama Eropa–Asia; immersed tube bawah laut terdalam di dunia | "Marmaray", Wikipedia (kutipan *Trains* Magazine 29 Okt 2013, *Teknisk Ukeblad* 2013), 2026 | https://en.wikipedia.org/wiki/Marmaray | 2026-11-25 | MEDIUM |
+| 9 | Jembatan Bosphorus resmi berganti nama "15 Temmuz Şehitler Köprüsü" lewat keputusan kabinet 25 Juli 2016, pasca percobaan kudeta 15 Juli 2016 | "Bosphorus Bridge", Wikipedia (kutipan TRT World & Hürriyet Daily News, Juli 2016), 2026 | https://en.wikipedia.org/wiki/Bosphorus_Bridge | 2026-11-25 | MEDIUM |
+| 10 | Jembatan 1915 Çanakkale (Selat Dardanella) dibuka 18 Mar 2022, bentang utama 2.023 m, bentang gantung terpanjang di dunia | "1915 Çanakkale Bridge", Wikipedia, 2026 | https://en.wikipedia.org/wiki/1915_%C3%87anakkale_Bridge | 2026-11-25 | MEDIUM |
 
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+Catatan: WebSearch error di sesi ini; riset via curl ke Wikipedia REST/API, Perseus, dan PDF KGM arsip Wayback (teks diekstrak langsung dari PDF). Britannica dan Reuters menolak akses otomatis (403/401), jadi tidak dicatat sebagai sumber yang dibaca.

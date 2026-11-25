@@ -1,93 +1,69 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP44`)
+# Naskah — Python Virtual Environment: Kenapa Kamu Harus Berhenti Pakai System Python
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: terminal gelap, kursor mengetik `pip install`, Enter; layar retak merah, ikon folder project lain dan ikon alat sistem ikut padam. HUD: `pip install`.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Satu perintah pip install bisa bikin project lain kamu rusak, bahkan alat bawaan sistem operasi. Ini AUDIRA, kita bongkar kenapa.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: diagram laptop terbuka; di dalamnya satu blok "Python bawaan" yang disambung kabel ke ikon alat sistem (updater, installer). Label HUD "system Python".
 
-> <konteks singkat + "Di Audira, ...">
+> Di Linux, Python biasanya sudah terpasang dari awal. Itu system Python. Masalahnya, sistem operasi juga memakainya untuk menjalankan alat-alatnya sendiri.
 
-## c02 — <Judul Bab 1>
+## c02 — Satu lemari paket
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: satu lemari rak berisi kotak paket; dua folder project (A, B) menarik kotak yang sama. Kotak "v1" diganti "v2", folder A retak. Callout HUD "v1 vs v2".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Misalnya project A butuh library versi satu, project B butuh versi dua. Di system Python cuma ada satu lemari paket. Begitu versi dua masuk, project A langsung patah.
 
-## c03 — <Judul Bab 2>
+## c03 — Kasus Fedora
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: kartu dokumen PEP bergaya kertas teknis (tanpa logo) bertuliskan "PEP 668"; zoom ke terminal `dnf` yang menampilkan error. HUD: `PEP 668`, `dnf`.
 
-> <teks narasi>
+> Ini bukan teori. Dokumen resmi Python, PEP 668, mencatat contohnya: pip install bisa merusak perintah dnf di Fedora, alat untuk memperbarui sistem itu sendiri. Memulihkannya juga susah.
 
-## c04 — <Judul Bab 3>
+## c04 — Distro mulai menolak
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: gerbang/palang pintu menutup di depan kotak paket; terminal menampilkan teks error externally-managed (teks generik, tanpa logo distro). HUD: "Debian 12", chip `--break-system-packages` berkedip kuning.
 
-> <teks narasi>
+> Makanya sejak Debian 12, Python bawaan ditandai externally managed. Pip langsung menolak memasang paket ke situ. Jalan pintasnya ada, flag break system packages. Namanya saja sudah peringatan.
 
-## c05 — <Judul Bab 4>
+## c05 — Sejarah solusi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: garis waktu horizontal: titik 2007 (kotak "virtualenv 0.8", name plate teks "Ian Bicking", tanpa foto) bergeser ke titik "Python 3.3" (kotak berubah jadi modul "venv"). HUD: "2007", "Python 3.3".
 
-> <teks narasi>
+> Solusinya sudah lama ada. Tahun 2007, Ian Bicking merilis virtualenv. Lalu lewat PEP 405, Python 3.3 menjadikannya modul bawaan bernama venv.
 
-## c06 — <Judul Bab 5>
+## c06 — Cara kerja venv
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: terminal mengetik `python -m venv .venv`; dari satu lemari besar muncul beberapa lemari kecil terpisah, satu per folder project. Satu lemari dibuang ke tempat sampah lalu muncul lagi utuh. Ikon Git dengan tanda silang di atas folder `.venv`. HUD: `python -m venv`.
 
-> <teks narasi>
+> Caranya cuma satu baris: python minus m venv, lalu aktifkan. Setiap project dapat lemari sendiri, paketnya tidak saling ganggu. Rusak? Hapus foldernya, bikin lagi. Dan jangan dimasukkan ke Git.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: kamera mundur memperlihatkan deretan lemari kecil rapi, system Python di tengah utuh dan bersinar hijau; teks kinetik "1 project = 1 venv"; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi aturannya gampang: satu project, satu venv. System Python biar dipakai sistem operasi. Simpan video ini sebelum pip install berikutnya, dan ikuti AUDIRA buat cara kerja lainnya.
+
+## Opsi hook lain
+
+1. Error externally managed environment itu bukan bug. Itu Python yang lagi nyelametin laptop kamu.
+2. Ada flag pip yang namanya break system packages. Dan orang tetap memakainya.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **199 kata** ≈ **80–88 dtk** (@135–150 WPM)

@@ -5,7 +5,11 @@ title: "VS Code Extension yang Mengubah Cara Aku Coding"
 hook: "Bukan yang populer — yang benar-benar mengubah workflow"
 styleCandidates: ["DEVFORGE (2D)", "ARCADECRT (2D)", "PIXELSTORY (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: tidak   # tidak = fakta cepat basi (rekor, harga, produk)
+risiko: "Angka install Marketplace berubah harian dan klaim 'mengubah workflow' opini personal; rule 15 larang logo VS Code/Microsoft/Git/Prettier."
 ---
 
 # VS Code Extension yang Mengubah Cara Aku Coding

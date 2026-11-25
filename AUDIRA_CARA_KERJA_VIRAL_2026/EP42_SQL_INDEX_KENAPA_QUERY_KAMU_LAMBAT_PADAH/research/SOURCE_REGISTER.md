@@ -1,33 +1,16 @@
-# SOURCE_REGISTER — `Cara kerja benda dan fenomena viral yang jarang diketahui`
+# Source Register — SQL Index: Kenapa Query Kamu Lambat Padahal Sudah Benar
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Tanpa index, sistem harus memindai seluruh tabel baris demi baris; dengan index cukup menelusuri beberapa tingkat pohon pencarian | PostgreSQL Documentation §11.1 Indexes — Introduction, PostgreSQL Global Development Group, 2025 (current) | https://www.postgresql.org/docs/current/indexes-intro.html | 2026-11-25 | HIGH |
+| 2 | Index harus disinkronkan dengan tabel sehingga menambah beban pada operasi ubah data; index yang jarang dipakai sebaiknya dihapus | PostgreSQL Documentation §11.1 Indexes — Introduction, PostgreSQL Global Development Group, 2025 (current) | https://www.postgresql.org/docs/current/indexes-intro.html | 2026-11-25 | HIGH |
+| 3 | `WHERE lower(col1) = 'value'` hanya bisa memakai index bila ada index pada ekspresi `lower(col1)` | PostgreSQL Documentation §11.7 Indexes on Expressions, PostgreSQL Global Development Group, 2025 (current) | https://www.postgresql.org/docs/current/indexes-expressional.html | 2026-11-25 | HIGH |
+| 4 | EXPLAIN menampilkan rencana eksekusi: "Seq Scan" (pindai seluruh tabel) vs "Index Scan" | PostgreSQL Documentation §14.1 Using EXPLAIN, PostgreSQL Global Development Group, 2025 (current) | https://www.postgresql.org/docs/current/using-explain.html | 2026-11-25 | HIGH |
+| 5 | MySQL tidak bisa memakai index multi-kolom untuk lookup bila kolom di query tidak membentuk leftmost prefix index | MySQL 8.0 Reference Manual §10.3.6 Multiple-Column Indexes, Oracle, 2024 | https://dev.mysql.com/doc/refman/8.0/en/multiple-column-indexes.html | 2026-11-25 | HIGH |
+| 6 | B-tree diperkenalkan R. Bayer & E. M. McCreight, "Organization and maintenance of large ordered indexes", Acta Informatica, 1972 | Bayer & McCreight, Acta Informatica 1(3), 1972 (DOI 10.1007/BF00288683, metadata Crossref) | https://doi.org/10.1007/BF00288683 | 2026-11-25 | HIGH |
+| 7 | Bayer dan McCreight menemukan B-tree saat bekerja di Boeing Scientific Research Labs; makalah pertama beredar Juli 1970 | B-tree, Wikipedia (rujuk Bayer & McCreight 1970, SIGFIDET), 2026 | https://en.wikipedia.org/wiki/B-tree | 2026-11-25 | MEDIUM |
+| 8 | Index nyata berisi jutaan record punya kedalaman pohon 4–5; kedalaman 6 hampir tidak pernah terlihat; kedalaman tumbuh logaritmik | Use The Index, Luke — The Search Tree (B-tree), Markus Winand, 2011–2026 | https://use-the-index-luke.com/sql/anatomy/the-tree | 2026-11-25 | MEDIUM |
+| 9 | Fungsi seperti UPPER(last_name) di WHERE membuat index pada last_name tidak terpakai sehingga terjadi full table scan | Use The Index, Luke — Case-Insensitive Search, Markus Winand, 2011–2026 | https://use-the-index-luke.com/sql/where-clause/functions/case-insensitive-search | 2026-11-25 | MEDIUM |
+| 10 | LIKE hanya bisa memakai karakter sebelum wildcard pertama untuk menelusuri pohon index | Use The Index, Luke — LIKE performance, Markus Winand, 2011–2026 | https://use-the-index-luke.com/sql/where-clause/searching-for-ranges/like-performance-tuning | 2026-11-25 | MEDIUM |

@@ -5,7 +5,11 @@ title: "Negara yang Wilayahnya Ada di Dalam Negara Lain"
 hook: "San Marino, Vatikan, Lesotho — negara enklave yang terkurung total"
 styleCandidates: ["HISTORYMAP (2D)", "NEGERI (3D)", "SATELLITEBRIEFING (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah; tahun 301 San Marino hanya tradisi, visual Vatikan tanpa wajah paus atau tokoh nyata"
 ---
 
 # Negara yang Wilayahnya Ada di Dalam Negara Lain

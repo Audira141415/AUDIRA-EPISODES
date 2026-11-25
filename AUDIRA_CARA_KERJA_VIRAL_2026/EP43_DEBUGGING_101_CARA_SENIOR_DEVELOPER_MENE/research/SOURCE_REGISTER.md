@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Cara kerja benda dan fenomena viral yang jarang diketahui`
+# Source Register — Debugging 101: Cara Senior Developer Menemukan Bug Lebih Cepat
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | 9 September 1947: tim Harvard Mark II menemukan ngengat terjepit di kontak relay, ditempel di logbook dengan catatan "First actual case of bug being found"; Grace Hopper hadir dan kemudian mempopulerkan kisahnya | "This Day in History: September 9", Computer History Museum | https://www.computerhistory.org/tdih/september/9/ | 2026-11-25 | HIGH |
+| 2 | Istilah "bug" untuk cacat teknis sudah jadi jargon teknik sejak 1870-an; Thomas Edison memakainya dalam surat tahun 1878 | "Software bug", Wikipedia (dengan kutipan) | https://en.wikipedia.org/wiki/Software_bug | 2026-11-25 | MEDIUM |
+| 3 | Python: "The last line of the error message indicates what happened"; traceback ("most recent call last") menunjukkan konteks/jalur pemanggilan sebelum error | "Errors and Exceptions", The Python Tutorial, Python Software Foundation (Python 3 docs) | https://docs.python.org/3/tutorial/errors.html | 2026-11-25 | HIGH |
+| 4 | `git bisect` memakai algoritma pencarian biner untuk menemukan commit yang memasukkan bug; contoh di dokumentasi: "675 revisions left to test after this (roughly 10 steps)" | "git-bisect Documentation", Git project (git-scm.com) | https://git-scm.com/docs/git-bisect | 2026-11-25 | HIGH |
+| 5 | Rubber duck debugging: menjelaskan kode langkah demi langkah ke objek (bebek karet) untuk menemukan kesalahan; nama dari anekdot di buku The Pragmatic Programmer (Andrew Hunt & David Thomas, terbit Oktober 1999) | "Rubber duck debugging" dan "The Pragmatic Programmer", Wikipedia | https://en.wikipedia.org/wiki/Rubber_duck_debugging | 2026-11-25 | MEDIUM |
+| 6 | Biaya nasional AS akibat infrastruktur pengujian software yang kurang memadai diperkirakan US$22,2–59,5 miliar per tahun; potensi penghematan US$22,2 miliar | "The Economic Impacts of Inadequate Infrastructure for Software Testing", Planning Report 02-3, RTI untuk NIST, 2002 | https://www.nist.gov/system/files/documents/director/planning/report02-3.pdf | 2026-11-25 | HIGH |
+| 7 | Brian Kernighan: "The most effective debugging tool is still careful thought, coupled with judiciously placed print statements" ("Unix for Beginners", 1979); juga "debugging is twice as hard as writing a program" (The Elements of Programming Style, ed. 2) | "Brian Kernighan", Wikiquote | https://en.wikiquote.org/wiki/Brian_Kernighan | 2026-11-25 | MEDIUM |
