@@ -1,33 +1,15 @@
-# SOURCE_REGISTER — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi`
+# Source Register — Cara Kerja Fotosintesis di Level Kuantum
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | 2007: spektroskopi elektronik 2D (pulsa laser ultracepat) pada protein FMO bakteri belerang hijau *Chlorobium tepidum* menunjukkan transfer energi seperti gelombang (quantum beating) pada 77 K (−196 °C); tim UC Berkeley (Engel … Fleming); sifat gelombang diduga membantu mencari jalur paling efisien | Evidence for wavelike energy transfer through quantum coherence in photosynthetic systems, Engel GS … Fleming GR, Nature 446:782, 2007 | https://doi.org/10.1038/nature05678 | 2026-11-25 | HIGH |
+| 2 | 2010: koherensi kuantum di FMO tetap teramati pada suhu fisiologis 277 K (≈ 4 °C) selama setidaknya 300 femtodetik; transfer eksitasi antena ke pusat reaksi berefisiensi kuantum hampir sempurna | Long-lived quantum coherence in photosynthetic complexes at physiological temperature, Panitchayangkoon G … Engel GS, PNAS 107:12766, 2010 | https://doi.org/10.1073/pnas.1005484107 | 2026-11-25 | HIGH |
+| 3 | 2017: analisis ulang data 2D FMO menunjukkan dekoherensi elektronik terjadi dalam 60 femtodetik (bukan hingga 1,5 ps); kontribusi transport kuantum koheren yang berarti dipertanyakan | Nature does not rely on long-lived electronic quantum coherence for photosynthetic energy transfer, Duan H-G et al., PNAS, 2017 | https://doi.org/10.1073/pnas.1702261114 | 2026-11-25 | HIGH |
+| 4 | 2020: tinjauan ulang interpretasi sinyal koherensi di sistem fotosintesis dan apa artinya bagi pemanenan cahaya | Quantum biology revisited, Cao J et al., Science Advances 6:eaaz4888, 2020 | https://doi.org/10.1126/sciadv.aaz4888 | 2026-11-25 | HIGH |
+| 5 | Efisiensi fotosintesis tanaman jauh di bawah sel surya; konversi tahunan energi matahari ke biomassa umumnya ≤ 1–2 % | Comparing Photosynthetic and Photovoltaic Efficiencies and Recognizing the Potential for Improvement, Blankenship RE et al., Science 332:805, 2011 | https://doi.org/10.1126/science.1200165 | 2026-11-25 | HIGH |
+| 6 | Tanaman pangan tipikal: efisiensi fotosintesis 1–2 % energi matahari; maksimum teoretis ≈ 11 %, praktik maksimum 3–6 % | Photosynthetic efficiency, Wikipedia (mengutip Govindjee; FAO 1997; Blankenship 2011) | https://en.wikipedia.org/wiki/Photosynthetic_efficiency | 2026-11-25 | MEDIUM |
+| 7 | Kompleks FMO ada di bakteri belerang hijau, menyalurkan energi eksitasi dari klorosom ke pusat reaksi; trimer, tiap monomer berisi 8 bakterioklorofil a | Fenna–Matthews–Olson complex, Wikipedia | https://en.wikipedia.org/wiki/Fenna%E2%80%93Matthews%E2%80%93Olson_complex | 2026-11-25 | MEDIUM |
+| 8 | Fotosintesis = pembentukan karbohidrat dari bahan anorganik oleh tumbuhan berklorofil (zat hijau daun) dengan bantuan energi cahaya matahari | Fotosintesis, Wikipedia bahasa Indonesia | https://id.wikipedia.org/wiki/Fotosintesis | 2026-11-25 | MEDIUM |
+| 9 | Prefiks SI femto (f) = 10⁻¹⁵ (sepersejuta miliar) | Metric (SI) Prefixes, NIST | https://www.nist.gov/pml/owm/metric-si-prefixes | 2026-11-25 | HIGH |

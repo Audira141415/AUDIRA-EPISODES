@@ -5,7 +5,11 @@ title: "Kenapa Kita Punya Dua Ginjal tapi Bisa Hidup dengan Satu"
 hook: "Redundansi organ yang ternyata bukan kebetulan evolusi — dan apa artinya bagi transplantasi"
 styleCandidates: ["ANATOMIX (3D)", "INNERWORKS (3D)", "BEDAH (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook awal menyiratkan dua ginjal adalah cadangan yang direncanakan evolusi (dikoreksi di naskah); jangan janjikan donor ginjal nol risiko."
 ---
 
 # Kenapa Kita Punya Dua Ginjal tapi Bisa Hidup dengan Satu

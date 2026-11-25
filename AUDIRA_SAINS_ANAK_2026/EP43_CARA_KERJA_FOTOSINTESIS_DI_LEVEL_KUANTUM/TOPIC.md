@@ -5,7 +5,11 @@ title: "Cara Kerja Fotosintesis di Level Kuantum"
 hook: "Tanaman menggunakan efek terowongan kuantum untuk mentransfer energi cahaya dengan efisiensi sempurna"
 styleCandidates: ["NANOFORGE (3D)", "CHAINREACTION (2D)", "POLYVERSE (3D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Hook asli keliru (bukan terowongan kuantum, bukan efisiensi sempurna, temuan di bakteri bukan tanaman); peran koherensi masih diperdebatkan, wajib dinarasikan netral"
 ---
 
 # Cara Kerja Fotosintesis di Level Kuantum

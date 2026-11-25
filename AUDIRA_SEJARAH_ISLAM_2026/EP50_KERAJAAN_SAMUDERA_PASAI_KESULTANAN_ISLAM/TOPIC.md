@@ -5,7 +5,11 @@ title: "Kerajaan Samudera Pasai: Kesultanan Islam Pertama di Nusantara"
 hook: "Siapa yang membawa Islam ke ujung utara Sumatera dan bagaimana kerajaan ini berpengaruh ke seluruh Asia Tenggara?"
 styleCandidates: ["NEGERI (3D)", "HISTORYMAP (2D)", "ISLAMICDOCUMENTARY (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Klaim 'pertama' dan 'siapa pembawa Islam' diperdebatkan; tokoh Syekh Ismail dan mimpi Merah Silu hanya tradisi hikayat; sultan dan musafir wajib siluet tanpa wajah."
 ---
 
 # Kerajaan Samudera Pasai: Kesultanan Islam Pertama di Nusantara

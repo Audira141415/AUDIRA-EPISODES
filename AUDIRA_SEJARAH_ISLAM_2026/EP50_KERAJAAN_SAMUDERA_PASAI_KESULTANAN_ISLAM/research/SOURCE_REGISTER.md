@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sejarah peradaban Islam yang jarang diketahui`
+# Source Register — Kerajaan Samudera Pasai: Kesultanan Islam Pertama di Nusantara
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Makam raja di Samudra-Pasai bertarikh 1297, inskripsinya seluruhnya berbahasa Arab; kerajaan Muslim Samudra-Pasai dan Perlak sudah ada akhir abad ke-13 | Samudra-Pasai, Encyclopaedia Britannica (arsip Wayback 2025-09-14) | http://web.archive.org/web/20250914003148/https://www.britannica.com/place/Samudra-Pasai | 2026-11-25 | HIGH |
+| 2 | Nisan-nisan sultan Samudera Pasai mencantumkan nama, gelar, dan tahun wafat, sehingga urutan sultan bisa disusun dari bukti arkeologi | Analisis Morfologi Nisan Sultan-Sultan Kerajaan Samudera Pasai, Ambo Asse Ajis, PANALUNGTIK 2020 | https://doi.org/10.24164/pnk.v3i2.38 | 2026-11-25 | HIGH |
+| 3 | Deureuham (dirham emas) adalah mata uang resmi Samudera Pasai dalam perdagangan maritim dan mengilhami koin kerajaan Islam di Semenanjung Malaya | Deureuham dan Aktivitas Perdagangan Maritim di Samudera Pasai, Stanov Purnawibowo, Berkala Arkeologi Sangkhakala 2018 | https://doi.org/10.24832/bas.v12i24.220 | 2026-11-25 | HIGH |
+| 4 | Ibnu Battuta (1345–1346) singgah di Samudra sekitar dua pekan sebagai tamu sultan di kota berpagar kayu, lalu diberi kapal jung milik sultan untuk ke Cina; penguasa Samudra masuk Islam akhir abad ke-13 | Ibn Battuta's Trip: Chapter 9, Through the Straits of Malacca to China 1345–1346, UC Berkeley ORIAS (arsip) | https://web.archive.org/web/20130317035650/http://ibnbattuta.berkeley.edu/9china.html | 2026-11-25 | HIGH |
+| 5 | Pendiri Merah Silu bergelar Malik as-Saleh, berdiri ±1267; Ibnu Battuta mencatat mazhab Syafi'i; Hongwu (Ming) mencantumkan Samudera di Huang-Ming Zuxun sebagai 1 dari 14 negeri yang tidak boleh diserang; Portugis menduduki Pasai 1521, mundur 1524, lalu dianeksasi Sultan Aceh Ali Mughayat Syah; runtuhnya Sriwijaya membuat pedagang beralih ke pelabuhan utara Sumatera (emas, hasil hutan, lada) | Samudera Pasai Sultanate, Wikipedia (rujukan: Ricklefs 1991; Farmer 1995; Bassett 1963) | https://en.wikipedia.org/wiki/Samudera_Pasai_Sultanate | 2026-11-25 | MEDIUM |
+| 6 | Dirham Pasai: 70% emas murni, berat 0,60 gram; Malikussaleh memerintah 1267–1297; pusat kegiatan Islam berpindah dari Pasai ke Malaka | Kesultanan Samudera Pasai, Wikipedia bahasa Indonesia | https://id.wikipedia.org/wiki/Kesultanan_Samudera_Pasai | 2026-11-25 | MEDIUM |
+| 7 | Hikayat Raja-raja Pasai (disusun ±abad 14–15): Merah Silu bermimpi masuk Islam, Syekh Ismail diutus dari Makkah; nama Semudera dari semut sebesar kucing, Pasai dari anjing Si Pasai (tradisi/legenda) | Hikayat Raja-raja Pasai, Wikipedia; edisi romanisasi J. P. Mead, JSBRAS no. 66, 1914 | https://en.wikipedia.org/wiki/Hikayat_Raja-raja_Pasai | 2026-11-25 | MEDIUM |
+| 8 | Portugis 1521–1524 dan aneksasi Aceh dirujuk ke kajian pengaruh Eropa di Asia Tenggara | European Influence in South-East Asia, c. 1500–1630, D. K. Bassett, Journal of Southeast Asian History 4(2), 1963 | https://doi.org/10.1017/S0217781100002866 | 2026-11-25 | MEDIUM |

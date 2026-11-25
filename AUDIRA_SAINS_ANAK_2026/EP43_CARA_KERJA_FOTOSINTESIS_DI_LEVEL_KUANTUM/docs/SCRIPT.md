@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP43`)
+# Naskah — Cara Kerja Fotosintesis di Level Kuantum
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **18** · estimasi **7 dtk**
+- Visual: makro daun hijau menyala di bawah sinar matahari, kamera menembus permukaan daun; tanda tanya kuantum berdenyut di atas daun. HUD: "KUANTUM?"
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Daun di depanmu mungkin sedang memakai fisika kuantum. Atau tidak? Ilmuwan masih berdebat, dan AUDIRA akan bedah perdebatannya.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: zoom ke dalam sel daun, kloroplas, lalu molekul klorofil menangkap partikel cahaya; panah energi meluncur ke "pusat reaksi" berlabel.
 
-> <konteks singkat + "Di Audira, ...">
+> Fotosintesis dimulai saat cahaya matahari ditangkap klorofil, zat hijau daun. Energi cahaya itu harus dioper cepat ke pusat reaksi, tempat energi diubah jadi energi kimia.
 
-## c02 — <Judul Bab 1>
+## c02 — Penemuan 2007
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: meja laboratorium optik, pulsa laser menembak protein FMO (bentuk tiga kelopak, 8 klorofil per bagian) dari bakteri belerang hijau. HUD: "2007 · Berkeley", "Protein FMO".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tahun 2007, tim Graham Fleming di Berkeley menembakkan laser super cepat ke protein FMO milik bakteri belerang hijau. Mereka melihat energi bergerak seperti gelombang, bukan melompat satu per satu.
 
-## c03 — <Judul Bab 2>
+## c03 — Gelombang di labirin
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: labirin 3D di atas molekul; satu bola klasik melompat ragu-ragu vs gelombang cahaya menyebar ke semua jalur lalu menyala di jalan keluar.
 
-> <teks narasi>
+> Bayangkan mencari jalan keluar labirin. Gelombang bisa mencoba banyak jalur sekaligus, lalu memilih yang paling efisien. Itulah dugaan awal kenapa transfer energinya hampir tanpa bocor.
 
-## c04 — <Judul Bab 3>
+## c04 — Uji suhu
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **13 dtk**
+- Visual: termometer membeku dengan bunga es (HUD "−196 °C"), lalu mencair ke "4 °C"; jam stopwatch raksasa memecah detik jadi kepingan kecil, HUD "300 femtodetik", "2010".
 
-> <teks narasi>
+> Masalahnya, percobaan itu dilakukan di suhu minus 196 derajat Celsius. Tahun 2010, tim lain mengulanginya di suhu 4 derajat, dan gelombang itu masih bertahan 300 femtodetik. Satu femtodetik itu sepersejuta miliar detik.
 
-## c05 — <Judul Bab 4>
+## c05 — Dibantah 2017
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: grafik gelombang yang meluruh cepat dan padam; stempel "DIHITUNG ULANG" menghantam layar. HUD: "2017", "60 femtodetik".
 
-> <teks narasi>
+> Tapi tahun 2017, tim Duan menghitung ulang datanya. Hasilnya, gelombang kuantum elektronik itu hilang dalam 60 femtodetik, terlalu singkat untuk berperan besar.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan: apa yang benar-benar hampir sempurna
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: dua meter berdampingan: meter "foton diserap → diteruskan" hampir penuh, meter "energi matahari → disimpan tanaman" hanya terisi tipis. HUD: "≈ 100%" vs "1–2%"; ladang padi di latar.
 
-> <teks narasi>
+> Jadi, yang hampir sempurna hanya tahap awal: hampir setiap foton yang diserap berhasil diteruskan. Secara keseluruhan, tanaman pangan cuma menyimpan sekitar 1 sampai 2 persen energi matahari.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: kamera mundur dari molekul ke daun lalu ke pohon besar saat golden hour, paket-paket cahaya berjatuhan; papan kayu bertuliskan AUDIRA di dahan, lalu outro card.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Fisika kuantum tetap bekerja di setiap daun, karena cahaya datang dalam paket bernama foton. Yang masih diperdebatkan, seberapa besar perannya. Ikuti terus AUDIRA untuk sains di balik hal sehari-hari.
+
+## Opsi hook lain
+
+1. Tahun 2007, ilmuwan mengira daun bekerja seperti komputer kuantum. Sepuluh tahun kemudian, ceritanya berubah.
+2. Energi cahaya di daun diduga berjalan seperti gelombang. Benarkah?
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **207 kata** ≈ **83–92 dtk** (@135–150 WPM)

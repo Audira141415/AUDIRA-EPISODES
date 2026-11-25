@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP50`)
+# Naskah — Kerajaan Samudera Pasai: Kesultanan Islam Pertama di Nusantara
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: close-up nisan batu berukir kaligrafi Arab di kompleks makam pesisir, cahaya senja; HUD callout "1297" menghentak di tengah layar.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Di ujung utara Sumatera, ada batu nisan bertahun 1297 yang seluruh tulisannya berbahasa Arab. Ini salah satu bukti tertua raja Muslim di Nusantara.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: kamera naik dari nisan ke peta Sumatera, pin menyala di pesisir Aceh Utara; HUD "± 1267" dan label "Samudera Pasai". Sosok sultan hanya siluet tanpa wajah.
 
-> <konteks singkat + "Di Audira, ...">
+> Nisan itu milik Sultan Malik as-Saleh, pendiri Samudera Pasai. Kerajaan ini diperkirakan berdiri sekitar tahun 1267, di pesisir yang kini masuk Aceh Utara.
 
-## c02 — <Judul Bab 1>
+## c02 — Siapa yang membawa Islam
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **38** · estimasi **16 dtk**
+- Visual: kapal dagang layar dari arah barat (Arab, India) berlabuh, peti rempah diturunkan; lalu gulungan naskah hikayat terbuka dengan cap "TRADISI" di HUD.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Siapa yang membawa Islam ke sini? Tidak ada satu nama pasti. Pedagang Muslim dari Arab dan India sudah lama singgah di jalur ini. Hikayat Raja-raja Pasai menyebut Syekh Ismail dari Makkah, tapi itu kisah tradisi, bukan catatan sejarah.
 
-## c03 — <Judul Bab 2>
+## c03 — Pelabuhan di jalur emas
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: peta Selat Malaka, rute kapal Samudra Hindia berbelok ke utara Sumatera; ikon emas, kayu hutan, dan biji lada muncul bergantian sebagai chip HUD.
 
-> <teks narasi>
+> Kenapa di sini? Sriwijaya melemah, dan kapal dari Samudra Hindia butuh pelabuhan aman di utara Selat Malaka. Pasai menjual emas, hasil hutan, lalu lada.
 
-## c04 — <Judul Bab 3>
+## c04 — Dirham emas Pasai
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: makro koin emas kecil berputar dengan inskripsi Arab; HUD "0,6 gram" dan panah ke peta Semenanjung Malaya.
 
-> <teks narasi>
+> Pasai juga mencetak koin emas sendiri, namanya dirham, beratnya cuma sekitar 0,6 gram. Koin ini jadi ilham mata uang kerajaan Islam di Semenanjung Malaya.
 
-## c05 — <Judul Bab 4>
+## c05 — Kunjungan Ibnu Battuta
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: siluet musafir tanpa wajah turun dari kapal ke kota berpagar kayu; HUD "1345" dan "± 2 pekan"; kapal jung berlayar ke timur menuju Cina.
 
-> <teks narasi>
+> Tahun 1345, penjelajah Ibnu Battuta singgah sekitar dua pekan. Ia mencatat sultannya taat dan bermazhab Syafi'i, lalu sultan memberinya kapal jung untuk berlayar ke Cina.
 
-## c06 — <Judul Bab 5>
+## c06 — Pengaruh ke Asia Tenggara
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: gulungan titah kekaisaran Ming dengan HUD "14 negeri"; lalu peta Asia Tenggara, garis cahaya menyebar dari Pasai ke Malaka.
 
-> <teks narasi>
+> Kaisar pertama Dinasti Ming bahkan mencatat Samudera sebagai satu dari 14 negeri yang tak boleh diserang. Dari pelabuhan inilah pusat dakwah Islam kemudian bergeser ke Malaka.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: kapal Portugis di cakrawala (HUD "1521"), bendera berganti ke Aceh (HUD "1524"); penutup hero shot nisan dan koin emas saat matahari terbit, lalu outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Portugis datang tahun 1521, lalu Aceh mengambil alih pada 1524. Kerajaannya hilang, tapi nisan dan koin emasnya masih bercerita. Ikuti AUDIRA untuk kisah berikutnya.
+
+## Opsi hook lain
+
+1. Koin emas seberat 0,6 gram ini dicetak kerajaan Islam di Sumatera, ratusan tahun sebelum Republik Indonesia ada.
+2. Tahun 1345, penjelajah terkenal dari Maroko berhenti di Sumatera dan menemukan sultan yang menyambutnya seperti tamu agung.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **207 kata** ≈ **83–92 dtk** (135–150 WPM)
