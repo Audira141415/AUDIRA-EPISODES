@@ -1,0 +1,17 @@
+
+> audira-motion-project@4.6.0 draft
+> node scripts/draft.mjs SonDoongPreview --frames=3s,12.5s,26s,41.5s,48s,59s,63.5s,72s
+
+clip render failed (exit 1):
+[31mTimeoutError: waiting for the page to render the React component failed: timeout 33000ms exceeded[39m
+[31m    at new WaitTask (F:\AUDIRA-SKILL-MOTION\node_modules\@remotion\renderer\dist\browser\DOMWorld.js:146:34)[39m
+[31m    at DOMWorld.waitForFunction (F:\AUDIRA-SKILL-MOTION\node_modules\@remotion\renderer\dist\browser\DOMWorld.js:95:16)[39m
+[31m    at F:\AUDIRA-SKILL-MOTION\node_modules\@remotion\renderer\dist\seek-to-frame.js:42:54[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at waitForReady (F:\AUDIRA-SKILL-MOTION\node_modules\@remotion\renderer\dist\seek-to-frame.js:41:30)[39m
+[31m    at seekToFrame (F:\AUDIRA-SKILL-MOTION\node_modules\@remotion\renderer\dist\seek-to-frame.js:129:36)[39m
+[31m    at renderFrameWithOptionToReject (F:\AUDIRA-SKILL-MOTION\node_modules\@remotion\renderer\dist\render-frame-with-option-to-reject.js:50:47)[39m
+[31m    at F:\AUDIRA-SKILL-MOTION\node_modules\@remotion\renderer\dist\render-frame.js:7:80[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at renderFrame (F:\AUDIRA-SKILL-MOTION\node_modules\@remotion\renderer\dist\render-frame.js:6:12)[39m
+
