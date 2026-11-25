@@ -1,93 +1,71 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP48`)
+# Naskah — Superkonduktor: Material yang Menghantarkan Listrik Tanpa Hambatan
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **14** · estimasi **6 dtk**
+- Visual: Magnet kecil melayang di atas keping superkonduktor yang beruap nitrogen cair, close-up dramatis
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Listrik mengalir tanpa hambatan sama sekali. Bukan fiksi ilmiah — material ini nyata, namanya superkonduktor.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **9 dtk**
+- Visual: Diagram kawat biasa vs kawat superkonduktor, elektron bertabrakan vs mengalir mulus; logo AUDIRA muncul di sudut HUD
 
-> <konteks singkat + "Di Audira, ...">
+> Di kabel biasa, elektron bertabrakan dengan atom dan menghasilkan panas. Energi terbuang. Superkonduktor menghapus hambatan itu sepenuhnya. Di AUDIRA, kita bongkar rahasianya.
 
-## c02 — <Judul Bab 1>
+## c02 — Penemuan Pertama
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **22** · estimasi **10 dtk**
+- Visual: Lab Leiden 1911, termometer turun ke {4,2 K|empat koma dua Kelvin}, grafik resistansi jatuh ke nol; callout HUD "1911" dan "{−269 °C|minus dua ratus enam puluh sembilan derajat}"
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tahun 1911, fisikawan Belanda Onnes mendinginkan merkuri sampai minus 269 derajat. Resistansi listriknya jatuh ke nol. Dunia fisika terkejut.
 
-## c03 — <Judul Bab 2>
+## c03 — Efek Meissner
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **11 dtk**
+- Visual: Superkonduktor mengusir garis medan magnet keluar; magnet melayang stabil; animasi partikel medan terpental; callout HUD "Efek Meissner 1933"
 
-> <teks narasi>
+> Bukan cuma soal listrik. Tahun 1933, ditemukan efek Meissner: superkonduktor mengusir medan magnet dari dalamnya. Magnet bisa melayang di atasnya. Itulah kenapa material ini terlihat seperti sihir.
 
-## c04 — <Judul Bab 3>
+## c04 — Pasangan Cooper
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **11 dtk**
+- Visual: Dua elektron bersinar berpasangan melewati kisi atom tanpa benturan; label "Pasangan Cooper"; callout HUD "Teori BCS 1957"
 
-> <teks narasi>
+> Kenapa hambatan hilang? Tahun 1957, Bardeen, Cooper, dan Schrieffer menemukan jawabannya. Di suhu sangat rendah, elektron berpasangan dan bergerak serempak menembus kisi atom tanpa hambatan.
 
-## c05 — <Judul Bab 4>
+## c05 — Terobosan Suhu Tinggi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Kristal YBCO berkilau, termometer naik ke {93 K|sembilan puluh tiga Kelvin}; perbandingan harga helium cair vs nitrogen cair; callout HUD "{93 K|−180 °C}" dan "1987 Nobel"
 
-> <teks narasi>
+> Masalahnya, superkonduktor awal butuh helium cair yang mahal. Tahun 1986, Bednorz dan Müller menemukan keramik superkonduktif di minus 180 derajat. Cukup nitrogen cair yang lebih murah. Penemuan ini memenangkan Nobel.
 
-## c06 — <Judul Bab 5>
+## c06 — Aplikasi Nyata
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **11 dtk**
+- Visual: Mesin MRI memindai pasien; LHC CERN dengan terowongan 27 km; kereta maglev meluncur; callout HUD "MRI", "LHC 27 km", "Maglev"
 
-> <teks narasi>
+> Superkonduktor sudah dipakai hari ini. Mesin MRI di rumah sakit pakai magnet superkonduktor. Akselerator LHC sepanjang 27 kilometer di CERN bergantung padanya. Kereta maglev melayang berkat prinsip yang sama.
 
 ## c07_payoff — Payoff dan Penutup
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **10 dtk**
+- Visual: Montase futuristik — jaringan listrik tanpa rugi, komputer kuantum, kereta supercepat; logo AUDIRA outro card
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Tantangan terbesar? Membuat superkonduktor bekerja di suhu kamar. Kalau tercapai, jaringan listrik tanpa rugi dan komputer kuantum stabil jadi kenyataan. Sains terus berlomba — ikut pahami bersama {AUDIRA|Audira}.
+
+## Opsi hook lain
+
+1. "Material ini membuat magnet melayang dan listrik mengalir selamanya — superkonduktor."
+2. "Nol hambatan. Nol rugi energi. Superkonduktor bukan dongeng, ini sains nyata."
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
+- **195 kata** ≈ **78–87 dtk** @135–150 WPM.
+- 8 blok: hook, intro, 5 chapter, payoff + CTA.
 - End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).

@@ -5,7 +5,11 @@ title: "Superkonduktor: Material yang Menghantarkan Listrik Tanpa Hambatan"
 hook: "Fisika di balik material ajaib yang bisa merevolusi teknologi — jika kita bisa membuatnya di suhu kamar"
 styleCandidates: ["POLYVERSE (3D)", "NANOFORGE (3D)", "CERDIK (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah"
 ---
 
 # Superkonduktor: Material yang Menghantarkan Listrik Tanpa Hambatan

@@ -5,7 +5,11 @@ title: "Kisah Sunan Bonang: Ulama yang Menggubah Musik untuk Dakwah"
 hook: "Ia mengubah gamelan Jawa menjadi instrumen dakwah — dan berhasil menaklukkan hati masyarakat"
 styleCandidates: ["WAYANGFORGE (2D)", "BATIKFORGE (2D)", "NEGERI (3D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "asal-usul ibu diperdebatkan; klaim penambahan instrumen bonang bersumber dari tradisi lisan, belum terkonfirmasi arkeologis; aman selama narasi tetap netral"
 ---
 
 # Kisah Sunan Bonang: Ulama yang Menggubah Musik untuk Dakwah

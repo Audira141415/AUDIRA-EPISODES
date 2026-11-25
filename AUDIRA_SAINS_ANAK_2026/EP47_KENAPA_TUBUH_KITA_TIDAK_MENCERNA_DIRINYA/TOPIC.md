@@ -5,7 +5,11 @@ title: "Kenapa Tubuh Kita Tidak Mencerna Dirinya Sendiri"
 hook: "Lambung penuh asam kuat, tapi ada mekanisme canggih yang melindungi dindingnya setiap detik"
 styleCandidates: ["ANATOMIX (3D)", "NANOFORGE (3D)", "INNERWORKS (3D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah"
 ---
 
 # Kenapa Tubuh Kita Tidak Mencerna Dirinya Sendiri

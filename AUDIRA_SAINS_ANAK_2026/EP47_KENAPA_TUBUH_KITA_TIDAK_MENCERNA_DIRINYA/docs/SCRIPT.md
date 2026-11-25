@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP47`)
+# Naskah — Kenapa Tubuh Kita Tidak Mencerna Dirinya Sendiri
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **15** · estimasi **7 dtk**
+- Visual: Close-up lambung transparan berisi cairan hijau asam; dinding lambung berdenyut, partikel asam menabrak lapisan mukus dan terpental.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Asam lambungmu bisa melarutkan logam. Tapi kenapa lambungmu sendiri tidak hancur? Ini penjelasannya, di {AUDIRA|Audira}.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **11 dtk**
+- Visual: Zoom out memperlihatkan seluruh organ pencernaan; highlight lambung membesar, label "{pH|pe ha} {1|satu} sampai {3|tiga}" muncul sebagai HUD callout.
 
-> <konteks singkat + "Di Audira, ...">
+> Setiap hari, lambungmu memproduksi sekitar satu setengah liter cairan asam dengan {pH|pe ha} {1|satu} sampai {3|tiga}. Itu termasuk asam terkuat di tubuh manusia.
 
-## c02 — <Judul Bab 1>
+## c02 — Ancaman Ganda
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Di dalam lambung, pepsinogen berubah jadi pepsin (animasi transformasi); pepsin menyerang rantai protein yang terapung, memotongnya jadi potongan kecil.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Bukan cuma asam. Di dalam lambung juga ada pepsin, enzim yang tugasnya memotong protein jadi potongan kecil. Protein itu bahan utama dinding lambungmu.
 
-## c03 — <Judul Bab 2>
+## c03 — Tameng Mukus
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **12 dtk**
+- Visual: Cross-section dinding lambung; lapisan mukus gel tebal berwarna biru transparan menutupi sel epitel; label "mukus gel" dan "bikarbonat" muncul.
 
-> <teks narasi>
+> Pertahanan pertama adalah lapisan mukus gel yang menutupi seluruh permukaan lambung. Mukus ini menjebak bikarbonat, zat basa yang langsung menetralkan asam begitu menyentuhnya.
 
-## c04 — <Judul Bab 3>
+## c04 — Gradien Ajaib
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **12 dtk**
+- Visual: Gradien warna merah (pH 1) di lumen ke biru (pH 7) di permukaan sel; HUD callout "{pH|pe ha} {7|tujuh}" di sisi sel, "{pH|pe ha} {1|satu}" di sisi lumen; jarak ditandai "0,5 mm".
 
-> <teks narasi>
+> Hasilnya luar biasa. Dalam jarak cuma setengah milimeter, keasaman berubah drastis, dari {pH|pe ha} {1|satu} di ruang lambung jadi {pH|pe ha} {7|tujuh} di permukaan sel. Gradien ini melindungi sel setiap detik.
 
-## c05 — <Judul Bab 4>
+## c05 — Pasukan Cadangan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **11 dtk**
+- Visual: Stem cell di isthmus kelenjar lambung membelah cepat; sel-sel baru bergerak naik menggantikan sel lama yang luruh ke lumen; counter "3–6 hari" berputar.
 
-> <teks narasi>
+> Tapi mukus tidak sempurna. Sel yang rusak tetap ada. Makanya tubuh punya strategi cadangan: sel-sel lambung diganti total setiap tiga sampai enam hari dari sel induk.
 
-## c06 — <Judul Bab 5>
+## c06 — Kalau Pertahanan Gagal
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **13 dtk**
+- Visual: Bakteri H. pylori berenang menembus mukus dengan flagela spiral; mukus berlubang, asam mengenai sel, sel memerah dan rusak; label "H. pylori" dan "tukak lambung".
 
-> <teks narasi>
+> Kalau sistem ini rusak, bakteri {H. pylori|Helikobakter pilori} bisa menembus lapisan mukus dan melemahkan pertahanan. Lebih dari separuh populasi dunia membawa bakteri ini. Itulah penyebab utama tukak lambung.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **12 dtk**
+- Visual: Pull back ke lambung utuh; tiga lapisan pertahanan menyala berurutan (mukus, bikarbonat, regenerasi sel); outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi lambungmu tidak mencerna dirinya sendiri karena tiga pertahanan bekerja tanpa henti: mukus, bikarbonat, dan regenerasi sel super cepat. Mesin perlindungan yang tidak pernah istirahat. {AUDIRA|Audira}.
+
+## Opsi hook lain
+
+1. Lambungmu penuh asam yang bisa menghancurkan besi. Tapi dindingnya baik-baik saja. Kok bisa?
+2. Kalau isi lambungmu ditumpahkan ke lantai, lantainya bisa rusak. Tapi lambungmu selamat setiap hari.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **210 kata** ≈ **84–93 dtk**

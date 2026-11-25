@@ -1,93 +1,70 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP54`)
+# Naskah — Rahasia Kejayaan Kekaisaran Ottoman: 600 Tahun Tanpa Henti
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **9** · estimasi **4 dtk**
+- Visual: Siluet kubah dan menara di cakrawala, angka "600" muncul besar lalu pecah jadi peta tiga benua.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Enam ratus tahun berdiri. Tiga benua dikuasai. Ini rahasianya.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk** · mulai ±0:04
+- Visual: Peta animasi wilayah Ottoman membentang dari Eropa Tenggara ke Afrika Utara; callout HUD "36 SULTAN · 6 ABAD".
 
-> <konteks singkat + "Di Audira, ...">
+> Kekaisaran Ottoman dipimpin {36|tiga puluh enam} sultan selama lebih dari enam abad. Imperium Muslim terbesar sepanjang sejarah. Di AUDIRA, kita bongkar mesinnya.
 
-## c02 — <Judul Bab 1>
+## c02 — Awal Mula
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **26** · estimasi **11 dtk** · mulai ±0:13
+- Visual: Diorama Anatolia kecil, Osman I berdiri (siluet tanpa wajah). Transisi ke tembok Konstantinopel runtuh; callout HUD "1453".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tahun {1299|seribu dua ratus sembilan puluh sembilan}, Osman {I|Pertama} mendirikan kesultanan kecil di Anatolia. Kurang dari dua abad kemudian, Mehmed {II|Kedua} menaklukkan Konstantinopel dan mengakhiri Kekaisaran Bizantium.
 
-## c03 — <Judul Bab 2>
+## c03 — Pasukan Janissary
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **12 dtk** · mulai ±0:24
+- Visual: Barisan tentara Janissary berbaris rapi; callout HUD "3.000 ANAK/TAHUN". Pedang dan meriam close-up.
 
-> <teks narasi>
+> Rahasia pertama: Janissary. Lewat sistem devshirme, {3.000|tiga ribu} anak Balkan direkrut tiap tahun dan dilatih jadi tentara elit. Loyalitas mereka bukan pada suku, tapi langsung pada sultan.
 
-## c04 — <Judul Bab 3>
+## c04 — Toleransi yang Merekatkan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk** · mulai ±0:36
+- Visual: Tiga simbol agama (bulan sabit, salib, bintang Daud) berdampingan di bawah kubah pengadilan; teks kinetik "SISTEM MILLET".
 
-> <teks narasi>
+> Rahasia kedua: toleransi. Sistem millet memberi minoritas Kristen dan Yahudi kebebasan mengatur urusan agamanya sendiri, dengan pengadilan terpisah. Keberagaman ini justru merekatkan kekaisaran selama berabad-abad.
 
-## c05 — <Judul Bab 4>
+## c05 — Puncak Kejayaan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk** · mulai ±0:47
+- Visual: Peta Ottoman di puncak wilayah, shading tiga benua; Sultan Sulaiman (siluet megah) di singgasana; callout HUD "5,2 JUTA KM² · 32 PROVINSI".
 
-> <teks narasi>
+> Di masa Sultan Sulaiman, wilayah Ottoman membentang {5,2|lima koma dua} juta kilometer persegi. Dari Eropa Tenggara hingga Afrika Utara, {32|tiga puluh dua} provinsi tunduk di bawah satu bendera.
 
-## c06 — <Judul Bab 5>
+## c06 — Keruntuhan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **14 dtk** · mulai ±0:59
+- Visual: Peta menyusut bertahap; bendera-bendera baru bermunculan; callout "1683 WINA"; gerbang kekaisaran retak; ledakan PD I.
 
-> <teks narasi>
+> Tapi roda berputar. Kalah di Wina {1683|seribu enam ratus delapan puluh tiga}, tertinggal dari Revolusi Industri Eropa, dan gelombang nasionalisme merobek wilayah mereka satu per satu. Perang Dunia {I|Pertama} menjadi pukulan terakhir.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + Outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk** · mulai ±0:73
+- Visual: Stempel "1 NOVEMBER 1922" menghantam layar; transisi ke montase warisan (masjid, hukum, arsitektur) di tiga benua; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> {1|Satu} November {1922|seribu sembilan ratus dua puluh dua}, kesultanan resmi dibubarkan. Enam abad runtuh, tapi warisannya hidup: di hukum, arsitektur, dan budaya jutaan manusia di tiga benua. Bersama AUDIRA.
+
+## Opsi hook lain
+
+1. "Tiga puluh enam sultan. Enam ratus tahun. Satu pertanyaan: bagaimana mereka melakukannya?"
+2. "Kekaisaran ini bertahan lebih lama dari Romawi. Dan hampir tidak ada yang tahu rahasianya."
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **198 kata** ≈ **85 dtk** pada 140 WPM (79–88 dtk pada 150–135 WPM).
+- 8 blok: hook, intro, 5 chapter, payoff + outro.

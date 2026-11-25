@@ -5,7 +5,11 @@ title: "Detik-Detik Nabi SAW Menerima Wahyu Pertama: Al-Iqra"
 hook: "Apa yang dirasakan beliau saat malaikat memeluknya dengan keras di Gua Hira itu?"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "STORYBOOK (2D)", "CINESTORY (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 5
+awet: ya
+risiko: "rendah — peristiwa sahih dari Bukhari/Muslim, tidak ada khilafiyah besar; wajah tokoh suci tidak divisualkan"
 ---
 
 # Detik-Detik Nabi SAW Menerima Wahyu Pertama: Al-Iqra

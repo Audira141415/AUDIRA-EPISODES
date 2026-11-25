@@ -1,93 +1,71 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP46`)
+# Naskah — Cara Kerja Radar Cuaca dan Kenapa Prediksi Masih Sering Meleset
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: piringan radar raksasa berputar di tengah badai petir, gelombang mikro terpancar ke awan gelap
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Radar cuaca bisa melihat hujan dari ratusan kilometer. Tapi kenapa prakiraan besok masih sering salah? AUDIRA jelaskan.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **17** · estimasi **8 dtk**
+- Visual: gelombang radio merambat dari antena parabola, memantul dari tetesan hujan, kembali ke penerima — diagram animasi sederhana
 
-> <konteks singkat + "Di Audira, ...">
+> Prinsipnya sederhana. Antena memancarkan pulsa gelombang radio, lalu menunggu pantulannya dari tetesan air di awan.
 
-## c02 — <Judul Bab 1>
+## c02 — Efek Doppler
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: ambulans mendekat lalu menjauh (sirene berubah pitch), lalu transisi ke gelombang radar mengenai hujan yang bergerak — pergeseran frekuensi divisualisasi sebagai warna
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Seperti sirene ambulans yang berubah nada saat mendekat dan menjauh, radar mengukur pergeseran frekuensi pantulan. Dari situ, ia tahu arah dan kecepatan gerakan hujan. Namanya efek Doppler.
 
-## c03 — <Judul Bab 2>
+## c03 — Peta Cuaca Real-Time
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: peta radar warna-warni (hijau-kuning-merah) berputar menunjukkan sebaran hujan; callout HUD "{158|seratus lima puluh delapan} unit radar" di AS
 
-> <teks narasi>
+> Pantulan diolah jadi peta warna di aplikasi cuaca. Hijau gerimis, merah badai. Jaringan {NEXRAD|Neksrad} di Amerika punya {158|seratus lima puluh delapan} unit radar yang saling tumpang tindih.
 
-## c04 — <Judul Bab 3>
+## c04 — Dari Radar ke Prediksi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **11 dtk**
+- Visual: data radar mengalir ke superkomputer, persamaan matematika muncul berlapis-lapis di layar, globe atmosfer disimulasikan
 
-> <teks narasi>
+> Tapi radar cuma melihat cuaca sekarang. Untuk memprediksi besok, data radar dimasukkan ke model matematika raksasa yang dijalankan superkomputer. Namanya prediksi cuaca numerik.
 
-## c05 — <Judul Bab 4>
+## c05 — Teori Chaos dan Efek Kupu-Kupu
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **15 dtk**
+- Visual: kupu-kupu mengepak, lalu efek ripple membesar jadi badai — potret Lorenz muncul sebagai siluet, callout HUD "1963" dan "error ×2 tiap 5 hari"
 
-> <teks narasi>
+> Tahun {1963|sembilan belas enam puluh tiga}, matematikawan Edward Lorenz menemukan sesuatu mengejutkan. Kesalahan sekecil apa pun di data awal akan berlipat ganda setiap lima hari. Seekor kupu-kupu mengepak di Brasil, secara teori, bisa mengubah cuaca di Texas. Ini disebut teori chaos.
 
-## c06 — <Judul Bab 5>
+## c06 — Batas Fundamental
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: grafik akurasi prediksi menurun tajam dari hari ke-1 sampai hari ke-14, garis putus-putus di "batas chaos" — callout HUD "maks ~14 hari"
 
-> <teks narasi>
+> Artinya, prediksi akurat lebih dari dua minggu itu mustahil secara matematika — bukan karena teknologinya kurang canggih. Prakiraan satu sampai tiga hari memang cukup andal. Tapi makin jauh ke depan, makin besar ketidakpastiannya.
 
 ## c07_payoff — Payoff dan Penutup
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: radar berputar di satu sisi, kupu-kupu di sisi lain — keduanya menyatu jadi globe bumi, lalu transisi ke outro card AUDIRA
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi radar itu mata cuaca: melihat sekarang. Model numerik itu otaknya: menebak besok. Dan chaos adalah alasan otak itu punya batas. Alam semesta memang tidak suka ditebak.
+
+## Opsi hook lain
+
+1. "Tahun 1963, seorang matematikawan membuktikan bahwa cuaca tidak bisa diprediksi lebih dari dua minggu. Alasannya? Seekor kupu-kupu."
+2. "Radar cuaca bisa mendeteksi hujan 200 kilometer jauhnya. Tapi menebak hujan besok di kotamu? Itu masalah yang jauh lebih sulit."
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
+- **210 kata** ≈ **84–93 dtk** @135–150 WPM
+- 8 blok: hook, intro, 5 chapter, payoff + outro.
 - End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).

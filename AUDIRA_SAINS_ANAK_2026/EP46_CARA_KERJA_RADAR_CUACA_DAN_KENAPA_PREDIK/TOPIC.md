@@ -5,7 +5,11 @@ title: "Cara Kerja Radar Cuaca dan Kenapa Prediksi Masih Sering Meleset"
 hook: "Fisika gelombang radio yang digunakan untuk melihat awan — dan keterbatasannya yang fundamental"
 styleCandidates: ["DATAPHYSICAL (2D)", "FLUIDFORGE (3D)", "CERDIK (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah"
 ---
 
 # Cara Kerja Radar Cuaca dan Kenapa Prediksi Masih Sering Meleset

@@ -5,7 +5,11 @@ title: "Rahasia Kejayaan Kekaisaran Ottoman: 600 Tahun Tanpa Henti"
 hook: "Apa yang membuat sebuah kerajaan bisa bertahan enam abad, dan apa yang akhirnya menghancurkannya?"
 styleCandidates: ["CHRONICLE (2D)", "WORLDFORGE (3D)", "TIMEFORGE (3D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah"
 ---
 
 # Rahasia Kejayaan Kekaisaran Ottoman: 600 Tahun Tanpa Henti

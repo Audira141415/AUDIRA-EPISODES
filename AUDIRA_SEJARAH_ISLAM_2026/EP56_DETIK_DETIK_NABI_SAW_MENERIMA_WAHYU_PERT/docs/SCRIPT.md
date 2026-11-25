@@ -1,93 +1,70 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP56`)
+# Naskah — Detik-Detik Nabi SAW Menerima Wahyu Pertama: Al-Iqra
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **7** · estimasi **3 dtk**
+- Visual: Siluet gelap seorang pria gemetar di dalam gua sempit, cahaya keemasan menerobos dari luar. HUD: "GUA HIRA · {610|enam ratus sepuluh} M"
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Tubuhnya gemetar hebat setelah pelukan yang menghancurkan.
 
-## c01_intro — Intro
+## c01_intro — Konteks
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **12 dtk**
+- Visual: Pemandangan gurun luas dengan gunung berbatu, zoom ke mulut gua kecil di puncak Jabal Nur. Callout: "JABAL NUR · 6 KM DARI MAKKAH"
 
-> <konteks singkat + "Di Audira, ...">
+> Sebelum malam itu, Muhammad bin Abdullah rutin menyendiri di sebuah gua kecil di puncak Jabal Nur, enam kilometer dari Makkah. Beliau merenungkan keadaan kaumnya yang menyembah berhala.
 
-## c02 — <Judul Bab 1>
+## c02 — Gua Hira
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Interior gua sempit dari batu — dinding berdekatan, langit-langit rendah. Callout HUD: "1,6 M × 3,7 M". Siluet duduk bersila menghadap cahaya.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Gua Hira hanya selebar satu setengah meter dan panjang tiga setengah meter. Di ruang sempit inilah, pada Ramadan tahun {610|enam ratus sepuluh} Masehi, beliau bertahannuts — beribadah selama berhari-hari.
 
-## c03 — <Judul Bab 2>
+## c03 — Jibril Muncul
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Cahaya menyilaukan tiba-tiba memenuhi gua. Siluet tertekan kuat oleh kekuatan tak terlihat. Teks kinetik besar: "اقْرَأْ — BACALAH!"
 
-> <teks narasi>
+> Tiba-tiba cahaya menyilaukan memenuhi gua. Malaikat Jibril muncul dan memerintah, "Bacalah!" Beliau menjawab, "Aku tidak bisa membaca." Jibril memeluknya begitu kuat hingga hampir tak bernapas.
 
-## c04 — <Judul Bab 3>
+## c04 — Tiga Kali Pelukan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Tiga gelombang cahaya berurutan menghantam siluet. Angka "1 · 2 · 3" muncul bergantian. Lalu teks Arab dan Latin ayat pertama bergulir dari atas.
 
-> <teks narasi>
+> Tiga kali dipeluk dengan kekuatan luar biasa. Tiga kali jawaban yang sama. Setelah pelukan ketiga, Jibril membacakan ayat pertama yang turun ke bumi: "Bacalah dengan menyebut nama Tuhanmu yang menciptakan."
 
-## c05 — <Judul Bab 4>
+## c05 — Lima Ayat Pertama
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **13 dtk**
+- Visual: Gulungan perkamen terbuka menampilkan teks Surah Al-Alaq 1–5 dalam kaligrafi Arab. Callout HUD: "SURAH AL-ALAQ · 5 AYAT PERTAMA"
 
-> <teks narasi>
+> Lima ayat Surah Al-Alaq mengajarkan bahwa manusia diciptakan dari segumpal darah, Tuhan mengajar lewat pena, dan mengajarkan apa yang tak diketahui manusia. Perintah pertama bukan soal perang — melainkan membaca.
 
-## c06 — <Judul Bab 5>
+## c06 — Khadijah dan Waraqah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Siluet berlari menuruni gunung gelap. Siluet wanita menyelimuti. Siluet pria tua mengangguk bijak. Callout: "WARAQAH BIN NAUFAL"
 
-> <teks narasi>
+> Beliau pulang gemetar. Khadijah menyelimutinya dan berkata, "Allah tidak akan menghinakanmu." Waraqah bin Naufal, kerabatnya yang mengenal Kitab Injil, langsung mengenali itu Jibril — malaikat yang sama yang datang kepada Musa.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Penutup
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Gua mengecil, zoom out ke pemandangan dunia. Cahaya menyebar ke segala penjuru. Outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Malam di gua kecil itu mengubah sejarah umat manusia selamanya. Wahyu pertama telah turun, dan peradaban baru dimulai dari lima ayat. Ikuti kisah selanjutnya bersama AUDIRA.
+
+## Opsi hook lain
+
+1. "Malam itu, di gua selebar satu setengah meter, sesuatu yang belum pernah terjadi menimpa seorang manusia."
+2. "Dipeluk tiga kali oleh malaikat — dan lima ayat pertama yang mengubah dunia pun turun."
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **202 kata** ≈ **81–90 dtk** @135–150 WPM.
+- 8 blok: hook, konteks, 4 chapter, penjelasan, payoff + CTA.
