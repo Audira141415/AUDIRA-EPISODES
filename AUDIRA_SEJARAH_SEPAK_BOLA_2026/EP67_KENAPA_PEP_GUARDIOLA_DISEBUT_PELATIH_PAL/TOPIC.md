@@ -5,7 +5,11 @@ title: "Kenapa Pep Guardiola Disebut Pelatih Paling Revolusioner Abad 21"
 hook: "Taktik tiki-taka yang mengubah cara seluruh dunia melihat sepak bola"
 styleCandidates: ["TACTICBOARD (2D)", "PRECISION (2D)", "CINESTORY (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 5
+awet: ya
+risiko: "rendah"
 ---
 
 # Kenapa Pep Guardiola Disebut Pelatih Paling Revolusioner Abad 21

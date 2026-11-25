@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris` (`EP67`)
+# Naskah — Kenapa Pep Guardiola Disebut Pelatih Paling Revolusioner Abad 21
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Papan taktik raksasa dengan formasi bergerak, trofi berputar di tengah. HUD kinetik: "41 TROFI · 3 NEGARA"
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Satu pelatih, tiga negara, {41|empat puluh satu} trofi. Pep Guardiola bukan sekadar menang, dia mengubah cara dunia bermain bola.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Akademi La Masia, lapangan latihan hijau, siluet pemain muda berlatih passing pendek. Bayangan Cruyff sebagai mentor di pinggir lapangan
 
-> <konteks singkat + "Di Audira, ...">
+> Lahir di Katalunya tahun {1971|sembilan belas tujuh puluh satu}, Guardiola tumbuh di akademi La Masia Barcelona, ditempa oleh Johan Cruyff dan filosofi Total Football.
 
-## c02 — <Judul Bab 1>
+## c02 — Revolusi di Barcelona
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Camp Nou malam hari penuh lampu, trofi treble berputar masuk frame. HUD flash: "2008-09 TREBLE PERTAMA SPANYOL" lalu "2009: 6 GELAR 1 TAHUN"
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tahun {2008|dua ribu delapan}, dia mengambil alih Barcelona. Musim pertama, treble kontinental, pertama di sejarah Spanyol. Tahun {2009|dua ribu sembilan}, enam gelar dalam satu tahun kalender, belum pernah terjadi sebelumnya.
 
-## c03 — <Judul Bab 2>
+## c03 — Taktik yang Mengubah Segalanya
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **12 dtk**
+- Visual: Diagram taktik bergerak di papan hijau: panah false nine dropping deep, fullback memotong ke tengah, kiper mengoper panjang. Zona lapangan menyala satu per satu
 
-> <teks narasi>
+> Rahasianya? Guardiola merevolusi taktik. False nine, bek yang bermain seperti gelandang, kiper yang ikut mengoper. Dia membagi lapangan jadi zona-zona dan melatih pemain menemukan ruang secara insting.
 
-## c04 — <Judul Bab 3>
+## c04 — Dominasi Tiga Liga
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **12 dtk**
+- Visual: Tiga stadion split-screen (Allianz Arena, Etihad Stadium, Camp Nou) lalu menyatu. HUD: "100 POIN" flash, "4× BERTURUT-TURUT", trofi Liga Champions berkilau
 
-> <teks narasi>
+> Di Bayern, tiga Bundesliga berturut-turut. Di Manchester City, {100|seratus} poin Premier League, empat gelar liga berturut-turut, dan treble kontinental kedua tahun {2023|dua ribu dua puluh tiga}.
 
-## c05 — <Judul Bab 4>
+## c05 — Angka Bicara
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **12 dtk**
+- Visual: Infografis kinetik: angka trofi naik counter-style, peta dunia menyala di 3 negara (Spanyol, Jerman, Inggris), gauge win-rate memutar ke 71,3%
 
-> <teks narasi>
+> Total? {12|Dua belas} gelar liga di tiga negara berbeda, tiga Liga Champions, dan rasio menang {71,3%|tujuh puluh satu koma tiga persen} dari lebih dari seribu pertandingan.
 
-## c06 — <Judul Bab 5>
+## c06 — Warisan Global
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Peta dunia dengan titik-titik menyala di berbagai liga, garis taktik menyebar dari Barcelona ke seluruh dunia. Papan taktik pressing tinggi + build-up dari belakang
 
-> <teks narasi>
+> Guardiola tidak hanya menang. Dia memaksa seluruh dunia sepak bola beradaptasi. Pressing tinggi, bermain dari belakang, dan penguasaan bola kini jadi standar global, dari Liga Inggris sampai Jepang.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Hero shot siluet Guardiola di pinggir lapangan malam hari, golden hour. Logo AUDIRA + outro card
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Pep Guardiola bukan cuma pelatih tersukses. Dia arsitek sepak bola modern. Ikuti kisah-kisah luar biasa lainnya bersama {AUDIRA|Audira}.
+
+## Opsi hook lain
+
+1. Bagaimana seorang pelatih bisa menang di tiga liga terberat dunia dengan satu filosofi yang sama?
+2. Dua belas gelar liga, tiga Liga Champions, satu otak di balik semuanya.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **198 kata** ≈ **79–88 dtk**

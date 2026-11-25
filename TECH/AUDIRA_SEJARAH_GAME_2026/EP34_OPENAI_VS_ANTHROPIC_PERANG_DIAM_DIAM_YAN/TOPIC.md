@@ -5,7 +5,11 @@ title: "OpenAI vs Anthropic: Perang Diam-Diam yang Mengubah AI"
 hook: "Dua perusahaan yang memimpin ras AI paling penting abad ini"
 styleCandidates: ["BROADCASTFORGE (2D)", "DATAPHYSICAL (2D)", "CYBERFORGE (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 5
+awet: ya
+risiko: "rendah"
 ---
 
 # OpenAI vs Anthropic: Perang Diam-Diam yang Mengubah AI

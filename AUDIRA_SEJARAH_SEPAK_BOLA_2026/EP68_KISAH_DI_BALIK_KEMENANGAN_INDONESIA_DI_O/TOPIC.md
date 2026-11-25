@@ -5,7 +5,11 @@ title: "Kisah di Balik Kemenangan Indonesia di Olimpiade Tokyo 2020"
 hook: "Greysia/Apriyani — dua nama yang mengubah sejarah bulu tangkis Indonesia"
 styleCandidates: ["CINESTORY (2D)", "CHARACTERFLOW (2D)", "BROADCASTFORGE (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah"
 ---
 
 # Kisah di Balik Kemenangan Indonesia di Olimpiade Tokyo 2020

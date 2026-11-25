@@ -5,7 +5,11 @@ title: "Kenapa Laptop Gaming Indonesia Sulit Bersaing Global"
 hook: "Pasar gaming RI tumbuh pesat tapi brand lokal hampir tidak ada"
 styleCandidates: ["BROADCASTFORGE (2D)", "SCALEFORGE (3D)", "BONGKAR (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah"
 ---
 
 # Kenapa Laptop Gaming Indonesia Sulit Bersaing Global

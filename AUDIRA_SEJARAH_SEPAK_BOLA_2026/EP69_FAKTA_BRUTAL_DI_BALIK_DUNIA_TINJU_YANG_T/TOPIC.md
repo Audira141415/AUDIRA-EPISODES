@@ -5,7 +5,11 @@ title: "Fakta Brutal di Balik Dunia Tinju yang Tidak Ditampilkan TV"
 hook: "Ratusan tinju ke kepala per ronde — dan dampaknya baru terasa 20 tahun kemudian"
 styleCandidates: ["DATAPHYSICAL (2D)", "CINESTORY (2D)", "FILM16 (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah — fakta historis medis/olahraga, bukan berita terkini; hook awal dikoreksi (bukan 'ratusan per ronde')"
 ---
 
 # Fakta Brutal di Balik Dunia Tinju yang Tidak Ditampilkan TV

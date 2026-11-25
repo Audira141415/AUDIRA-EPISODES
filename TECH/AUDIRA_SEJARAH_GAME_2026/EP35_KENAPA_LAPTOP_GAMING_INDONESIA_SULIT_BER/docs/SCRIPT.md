@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP35`)
+# Naskah — Kenapa Laptop Gaming Indonesia Sulit Bersaing Global
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **13** · estimasi **6 dtk**
+- Visual: Layar penuh titik-titik gamer Indonesia berkedip, angka 43 JUTA muncul besar, lalu transisi ke rak laptop gaming — semua logo merek asing
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> {43|Empat puluh tiga} juta gamer Indonesia. Sebutkan satu laptop gaming lokal kelas dunia.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Peta Indonesia berkilau dengan titik-titik pemain, bendera merah putih memudar ke deretan logo ASUS ROG, Lenovo Legion, MSI
 
-> <konteks singkat + "Di Audira, ...">
+> Pasar gaming kita peringkat {16|enam belas} dunia, tapi laptop lokal hampir tak terlihat. Ini ceritanya di AUDIRA.
 
-## c02 — <Judul Bab 1>
+## c02 — Pasar Besar, Pembeli Impor
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **34** · estimasi **15 dtk**
+- Visual: HUD callout "$879 JUTA" dan badge "RANK #16". Pie chart animasi 52% mobile vs 48% PC/konsol. Deretan laptop ASUS/Lenovo/MSI melintas horizontal
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tahun {2017|dua ribu tujuh belas}, gamer Indonesia habiskan {$879 juta|delapan ratus tujuh puluh sembilan juta dolar} untuk game. {52%|Lima puluh dua persen} main di ponsel. Yang beli laptop gaming, hampir semua pilih ASUS, Lenovo, MSI.
 
-## c03 — <Judul Bab 2>
+## c03 — Brand Lokal yang Berjuang
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Logo Zyrex muncul dengan label "1996", lalu Axioo "2004" di timeline horizontal. Zoom ke 2023: laptop Pongo muncul kecil di antara barisan laptop gaming raksasa
 
-> <teks narasi>
+> Zyrex lahir tahun {1996|sembilan belas sembilan enam}, Axioo menyusul {2004|dua ribu empat}. Fokusnya laptop murah. Axioo baru rilis laptop gaming pertama, Pongo, Maret {2023|dua ribu dua puluh tiga}. Terlambat dua dekade.
 
-## c04 — <Judul Bab 3>
+## c04 — Tembok Chip
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **35** · estimasi **15 dtk**
+- Visual: Pabrik fab raksasa render 3D, HUD "$19,5 MILIAR" berkedip. Tiga logo TSMC/Samsung/Intel berdiri tegak. Chip GPU Nvidia & AMD close-up berputar. Peta Indonesia: ikon fab = 0
 
-> <teks narasi>
+> Alasan utama: chip. Satu pabrik chip canggih telan {$19,5 miliar|sembilan belas koma lima miliar dolar}. Cuma tiga perusahaan di dunia bisa bikin chip tercanggih. GPU laptop gaming dikuasai Nvidia dan AMD. Indonesia tidak punya satu pun.
 
-## c05 — <Judul Bab 4>
+## c05 — Riset Tipis, Impor Tebal
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **12 dtk**
+- Visual: Bar chart vertikal R&D/PDB: Indonesia 0,31% (merah pendek) vs Korea Selatan 4%+ (hijau tinggi). Komponen CPU/GPU/RAM jatuh masuk kotak bertuliskan "IMPOR". Label besar: "RAKIT, BUKAN RANCANG"
 
-> <teks narasi>
+> Belanja riset Indonesia cuma {0,31%|nol koma tiga satu persen} PDB. Korea Selatan lebih dari {4%|empat persen}. Semua prosesor, GPU, RAM diimpor. Brand lokal cuma merakit, bukan merancang.
 
-## c06 — <Judul Bab 5>
+## c06 — Ada Celah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Axioo Pongo terbang ke tengah layar dengan spek tertulis (RTX 3070, upgradeable). Blueprint desain dan ikon servis bercahaya. Cahaya keemasan dari bawah
 
-> <teks narasi>
+> Tapi ada celah. Axioo Pongo buktikan pasar mau coba brand lokal yang speknya bersaing. Kuncinya bukan bikin chip, tapi kuasai desain, firmware, dan layanan purna jual.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **16** · estimasi **7 dtk**
+- Visual: 43 juta titik gamer membentuk siluet peta Indonesia. Zoom out ke hero shot. Logo AUDIRA masuk. Outro card AUDIRA + "Created by Agus Dwi R."
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> {43|Empat puluh tiga} juta gamer Indonesia masih nunggu laptop lokal kelas dunia. Pantau terus di AUDIRA.
+
+## Opsi hook lain
+
+1. "Indonesia pasar game terbesar ke-enam belas di dunia. Tapi tidak satu pun laptop gaming lokal yang masuk daftar global."
+2. "Zyrex, Axioo — pernah dengar? Dua brand laptop Indonesia yang berjuang di antara raksasa asing."
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **199 kata** ≈ **80–88 dtk** @135–150 WPM

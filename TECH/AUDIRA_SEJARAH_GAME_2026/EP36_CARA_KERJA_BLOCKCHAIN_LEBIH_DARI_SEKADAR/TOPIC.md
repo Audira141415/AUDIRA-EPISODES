@@ -5,7 +5,11 @@ title: "Cara Kerja Blockchain: Lebih dari Sekadar Bitcoin"
 hook: "Teknologi yang bisa menggantikan notaris, bank, dan kontrak kertas"
 styleCandidates: ["CIRCUITFORGE (2D)", "DATAPHYSICAL (2D)", "DEVFORGE (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah"
 ---
 
 # Cara Kerja Blockchain: Lebih dari Sekadar Bitcoin
