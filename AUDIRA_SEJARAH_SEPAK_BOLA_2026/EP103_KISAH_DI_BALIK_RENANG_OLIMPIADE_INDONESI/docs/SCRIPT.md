@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris` (`EP103`)
+# Naskah — Kisah di Balik Renang Olimpiade Indonesia yang Hampir Menoreh Sejarah
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **11** · estimasi **5 dtk** · mulai ±0:00
+- Visual: Papan skor gelap, 14 lingkaran kosong menyala satu per satu (satu per edisi Olimpiade renang Indonesia), lalu angka besar 0 di kolom Medali. HUD: 14 edisi, 0 medali.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> 14 kali Indonesia kirim perenang ke Olimpiade. Medali yang pulang? Nol.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk** · mulai ±0:05
+- Visual: Siluet perenang gaya punggung (tanpa wajah) di lintasan kolam, peta Bali dengan titik Klungkung menyala. Name plate: I Gede Siman Sudartawa, lahir 1994.
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya Siman Sudartawa, anak Klungkung, Bali. Di AUDIRA kali ini, kita ikuti kisahnya. Di umur 17 tahun, dia sudah memegang bendera Indonesia di upacara pembukaan Olimpiade London 2012.
 
-## c02 — <Judul Bab 1>
+## c02 — Raja punggung Asia Tenggara
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **27** · estimasi **12 dtk** · mulai ±0:17
+- Visual: Deretan medali emas menumpuk di tepi kolam, kamera sejajar permukaan air. HUD: 4 emas (2011), 8 emas total SEA Games 2011 sampai 2023.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Setahun sebelumnya, 2011, Siman menyapu 4 emas SEA Games lewat gaya punggung. Sampai 2023, total emasnya di ajang itu mencapai 8. Di Asia Tenggara, namanya sulit dilewati.
 
-## c03 — <Judul Bab 2>
+## c03 — London 2012
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk** · mulai ±0:29
+- Visual: Kolam dilihat dari atas, 8 lintasan, siluet start gaya punggung. Papan hasil: Siman 55,99 detik, peringkat 39 dari 43 peserta.
 
-> <teks narasi>
+> Lalu London. Nomor 100 meter gaya punggung. Siman mencatat 55,99 detik, peringkat 39 dari 43 perenang, dan berhenti di babak pertama.
 
-## c04 — <Judul Bab 3>
+## c04 — Jurang 3,83 detik
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk** · mulai ±0:38
+- Visual: Dua garis waktu paralel: 55,99 melawan 52,16, selisih dihitung mundur sampai 3,83. Callout rekor Olimpiade 52,16 atas nama Matt Grevers (name plate saja).
 
-> <teks narasi>
+> Juaranya, Matt Grevers dari Amerika Serikat, finis 52,16 detik, rekor Olimpiade. Selisihnya 3,83 detik. Di renang, itu bukan jarak tipis. Itu jurang.
 
-## c05 — <Judul Bab 4>
+## c05 — Peringkat terbaik dan sunyi setelah London
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk** · mulai ±0:47
+- Visual: Garis waktu 1952 sampai 2024 dengan 14 penanda edisi, peringkat 14 menyala di tahun 1956; lalu 2016, 2020, 2024 muncul dengan daftar nama tanpa Siman.
 
-> <teks narasi>
+> Peringkat terbaik perenang Indonesia di Olimpiade hanya ke-14, atas nama Ria Tobing, tahun 1956. Siman sendiri tak pernah kembali. Rio 2016, Tokyo 2020, dan Paris 2024 berlalu tanpa namanya.
 
-## c06 — <Judul Bab 5>
+## c06 — Medali dari cabang lain
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk** · mulai ±0:59
+- Visual: Empat ikon cabang (raket, barbel, tembok panjat, busur) tersusun dengan angka 40 medali; kolam renang di sebelahnya kosong, angka 0 berdenyut.
 
-> <teks narasi>
+> Medali Indonesia selama ini datang dari empat cabang: bulu tangkis, angkat besi, panjat tebing, dan panahan. Totalnya 40. Renang belum sekali pun.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff dan penutup
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk** · mulai ±1:08
+- Visual: Kolam Dakar dalam siluet remaja butterfly menyentuh dinding, medali perunggu muncul. HUD: 2:14,10. Outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Tapi ada kabar baru. Di Olimpiade Remaja 2026, Michelle Fang merebut perunggu 200 meter kupu-kupu, 2 menit 14,10 detik. Itu medali renang pertama Indonesia di ajang tersebut. Ikuti terus kisah olahraga bersama AUDIRA.
+
+## Opsi hook lain
+
+1. Indonesia 14 kali ke Olimpiade lewat renang. Medali? Belum satu pun.
+2. Dia membawa bendera Indonesia di London umur 17 tahun, lalu tak pernah kembali.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **193 kata** ≈ **83 dtk** pada 140 WPM (77–86 dtk pada 150–135 WPM).

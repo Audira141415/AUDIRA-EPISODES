@@ -5,7 +5,11 @@ title: "Kenapa Big Tech Rebutan Beli Startup AI Seharga Miliaran Dolar"
 hook: "Akuisisi besar 2024-2025 dan apa artinya untuk kompetisi AI"
 styleCandidates: ["BROADCASTFORGE (2D)", "DATAPHYSICAL (2D)", "CHRONICLE (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: tidak
+risiko: "Judul/hook menyiratkan akuisisi penuh padahal mayoritas acquihire+lisensi; angka 2,4 miliar USD Google-Windsurf baru dari sumber MEDIUM; nama perusahaan nyata tanpa logo/wajah (rule 15)."
 ---
 
 # Kenapa Big Tech Rebutan Beli Startup AI Seharga Miliaran Dolar

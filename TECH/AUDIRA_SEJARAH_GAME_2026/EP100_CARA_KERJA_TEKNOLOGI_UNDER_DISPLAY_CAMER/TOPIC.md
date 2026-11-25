@@ -5,7 +5,11 @@ title: "Cara Kerja Teknologi Under-Display Camera: Kamera Tersembunyi di Layar"
 hook: "Kamera yang ada di balik pixel layar — kompromi kualitas yang tersembunyi"
 styleCandidates: ["NANOFORGE (3D)", "PRECISION (2D)", "BONGKAR (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Angka transmisi berasal dari panel uji lab satu paper, bukan semua ponsel; tanpa merek/logo; sumber vendor/paten belum diverifikasi."
 ---
 
 # Cara Kerja Teknologi Under-Display Camera: Kamera Tersembunyi di Layar

@@ -5,7 +5,11 @@ title: "Kisah di Balik Renang Olimpiade Indonesia yang Hampir Menoreh Sejarah"
 hook: "Siman Sudartawa — perjalanan 12 tahun mengejar emas yang belum kesampaian"
 styleCandidates: ["CINESTORY (2D)", "CHARACTERFLOW (2D)", "DATAPHYSICAL (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: tidak
+risiko: "Hook awal (12 tahun mengejar emas) tidak akurat; Siman hanya 1 Olimpiade (2012, peringkat 39); angka per 25 Nov 2026 bisa berubah."
 ---
 
 # Kisah di Balik Renang Olimpiade Indonesia yang Hampir Menoreh Sejarah

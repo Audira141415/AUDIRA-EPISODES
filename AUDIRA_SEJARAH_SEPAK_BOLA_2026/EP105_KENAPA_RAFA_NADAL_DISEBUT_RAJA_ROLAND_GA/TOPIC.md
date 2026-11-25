@@ -5,7 +5,11 @@ title: "Kenapa Rafa Nadal Disebut Raja Roland Garros yang Tak Tergoyahkan"
 hook: "14 gelar di satu turnamen — tidak ada tempat di bumi yang lebih dikuasai satu atlet"
 styleCandidates: ["DATAPHYSICAL (2D)", "CHARACTERFLOW (2D)", "CINESTORY (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah; hook superlatif \"tak ada tempat lebih dikuasai\" tidak bersumber, dipakai versi rekor 14 gelar; tanpa wajah atlet dan logo turnamen."
 ---
 
 # Kenapa Rafa Nadal Disebut Raja Roland Garros yang Tak Tergoyahkan

@@ -5,7 +5,11 @@ title: "Negara dengan Angka Harapan Hidup Tertinggi di Dunia — Bukan Swiss"
 hook: "Monaco, Liechtenstein, Jepang: rahasia di balik umur panjang warganya"
 styleCandidates: ["SATELLITEBRIEFING (2D)", "PAPERWORLD (2D)", "CHRONICLE (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: tidak
+risiko: "Peringkat berubah tiap rilis data dan beda antar sumber; klaim penyebab umur panjang tidak terverifikasi."
 ---
 
 # Negara dengan Angka Harapan Hidup Tertinggi di Dunia — Bukan Swiss

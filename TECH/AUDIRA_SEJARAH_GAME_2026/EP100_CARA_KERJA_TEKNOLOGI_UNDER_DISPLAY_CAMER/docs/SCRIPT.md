@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP100`)
+# Naskah — Cara Kerja Teknologi Under-Display Camera: Kamera Tersembunyi di Layar
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Close-up layar ponsel menyala; zoom ke satu titik, pixel menipis dan lensa kamera muncul di baliknya (HUD: UDC).
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Ada kamera selfie di ponselmu, dan kamu tidak bisa melihatnya. Dia bersembunyi tepat di balik pixel layar.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Potongan ponsel berlubang (punch-hole) lalu notch, bergantian, lalu layar penuh mulus.
 
-> <konteks singkat + "Di Audira, ...">
+> Dulu kamera depan memakan ruang: muncul poni, lalu lubang kecil. Demi layar penuh, kamera dipindahkan ke bawah panel. Namanya under-display camera, atau UDC.
 
-## c02 — <Judul Bab 1>
+## c02 — Panel tembus cahaya
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Model panel OLED berlapis diledakkan: lapisan pixel, area terbuka, kamera di bawahnya. Callout: area terbuka 21%.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Triknya ada di panel OLED. Di area atas kamera, susunan pixel dibuat lebih jarang supaya cahaya bisa lewat. Pada layar transparan yang diuji peneliti, area terbukanya sekitar 21 persen.
 
-## c03 — <Judul Bab 2>
+## c03 — Cahaya yang hilang
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Berkas cahaya masuk panel; sebagian besar redup, bar transmisi turun. Callout: 20% lawan 2,9%.
 
-> <teks narasi>
+> Tapi terbuka bukan berarti terang. Pada layar transparan, cahaya yang lolos sekitar 20 persen. Pada panel ponsel Pentile, hanya 2,9 persen. Foto jadi gelap dan berisik.
 
-## c04 — <Judul Bab 3>
+## c04 — Difraksi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Gelombang cahaya melewati kisi pixel, pecah jadi pola bintang dan kilau; foto kabur di sebelahnya.
 
-> <teks narasi>
+> Masalah kedua lebih rumit. Pixel membentuk kisi kecil, dan cahaya yang melewatinya membelok. Ini disebut difraksi. Hasilnya blur, kabut, dan kilau di sekitar lampu terang.
 
-## c05 — <Judul Bab 4>
+## c05 — Dibereskan software
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Foto rusak masuk blok jaringan saraf, keluar bersih. Callout: PSF, 167 peserta.
 
-> <teks narasi>
+> Karena optik tidak bisa sempurna, software menolong. Peneliti mengukur pola sebaran cahaya, namanya point spread function, lalu melatih jaringan saraf memulihkan gambarnya. Tantangan MIPI 2022 saja diikuti 167 peserta.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Dua foto berdampingan: sebelum dan sesudah restorasi; lalu metasurface berpola nano di atas lensa.
 
-> <teks narasi>
+> Ada jalur lain: metasurface, lapisan nano yang meluruskan gelombang cahaya. Itu masih riset. Intinya, selfie UDC adalah kompromi antara optik dan komputasi.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Layar penuh mulus; kamera tersembunyi berkedip lalu hilang. Kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi, layar mulus itu ada harganya. Kamu menukar sedikit ketajaman dengan tampilan bersih. Itu kompromi yang tersembunyi. Ikuti AUDIRA untuk teknologi lain yang bekerja diam-diam.
+
+## Opsi hook lain
+
+1. Layar ponselmu menyembunyikan sesuatu: sebuah kamera, dan harganya adalah kualitas fotomu.
+2. Hanya 2,9 persen cahaya yang sampai ke kamera ini. Begini cara ponsel menyelamatkannya.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **196 kata** ≈ **82 dtk**

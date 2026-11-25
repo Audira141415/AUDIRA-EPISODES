@@ -5,7 +5,11 @@ title: "Fakta Mengejutkan di Balik Dunia Golf yang Tersembunyi di Balik Kemewaha
 hook: "Tiger Woods bangkrut hampir dua kali tapi tetap menjadi milyarder olahraga"
 styleCandidates: ["CINESTORY (2D)", "FILM16 (2D)", "CHARACTERFLOW (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: tidak
+risiko: "Hook bangkrut di TOPIC.md tidak akurat (Woods tidak pernah bangkrut); angka kekayaan cepat berubah; sumber #4-#7 Wikipedia; nama Woods dipakai tanpa wajah nyata."
 ---
 
 # Fakta Mengejutkan di Balik Dunia Golf yang Tersembunyi di Balik Kemewahan

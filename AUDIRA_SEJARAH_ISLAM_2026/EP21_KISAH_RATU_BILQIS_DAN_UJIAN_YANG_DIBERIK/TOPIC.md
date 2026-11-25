@@ -5,7 +5,11 @@ title: "Kisah Ratu Bilqis dan Ujian yang Diberikan Nabi Sulaiman"
 hook: "Apa sebenarnya yang dilihat Bilqis di istana kaca itu hingga ia langsung bersujud?"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "WORLDFORGE (3D)", "CINESTORY (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Sensitif: nabi dan ratu tanpa wajah; riwayat Israiliyat dan hadis pemimpin perempuan tidak dinarasikan; hook awal (langsung bersujud) tidak akurat dan dikoreksi."
 ---
 
 # Kisah Ratu Bilqis dan Ujian yang Diberikan Nabi Sulaiman

@@ -5,7 +5,11 @@ title: "Python Click vs argparse: Bikin CLI Tool yang Layak Pakai"
 hook: "Script Python kamu bisa jadi tool yang orang lain mau pakai"
 styleCandidates: ["DEVFORGE (2D)", "PIXELSTORY (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Klaim nesting argparse adalah posisi docs Click; atribusi wajib. Bintang GitHub berubah."
 ---
 
 # Python Click vs argparse: Bikin CLI Tool yang Layak Pakai

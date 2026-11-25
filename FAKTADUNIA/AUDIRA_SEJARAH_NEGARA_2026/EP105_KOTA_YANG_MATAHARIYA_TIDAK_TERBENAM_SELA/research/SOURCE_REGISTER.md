@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Fakta sejarah unik negara-negara di dunia`
+# Source Register — Kota yang Matahariya Tidak Terbenam Selama 2 Bulan
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Barrow Atmospheric Baseline Observatory berada di titik paling utara AS, ±8 km dari Utqiaġvik (dulu Barrow); lintang 71,323° N; berdiri 1973 | Barrow Atmospheric Baseline Observatory, NOAA Global Monitoring Laboratory, situs resmi (diakses 2026) | https://gml.noaa.gov/obop/brw/ | 2026-11-25 | HIGH |
+| 2 | Referendum 4 Okt 2016: nama Barrow diganti Utqiaġvik, lolos 381 lawan 375 suara setelah surat suara absen dihitung; diusulkan anggota dewan Qaiyaan Harcharek | Barrow voters narrowly approve ordinance to rename city, Alaska's News Source (KTUU), 2016 | https://www.alaskasnewssource.com/content/news/Barrow-voters-narrowly-approve-ordinance-to-rename-city-to-Utqiagvik-396998551.html | 2026-11-25 | HIGH |
+| 3 | Permafrost = tanah/batuan yang ≤ 0 °C minimal dua tahun; tebal dari < 1 m sampai > 1.500 m | Frozen Ground & Permafrost, National Snow and Ice Data Center (CIRES, Univ. Colorado Boulder), situs resmi | https://nsidc.org/learn/parts-cryosphere/frozen-ground-permafrost | 2026-11-25 | HIGH |
+| 4 | Matahari tidak terbenam ±83 hari (10/11 Mei – 1/2 Agu); malam kutub ±66 hari (terbenam 18 Nov, kembali 23 Jan); senja sipil 3 jam saat titik balik musim dingin; nama Barrow 1825–2016, resmi berubah 1 Des 2016; penduduk 4.927 (Sensus AS 2020), 4.212 (2010); Iñupiat > 1.500 tahun; permafrost hingga 1.300 ft (400 m); jalan tidak diaspal karena permafrost; tidak ada jalan ke luar kota; Nalukataq pekan ketiga Juni | Utqiaġvik, Alaska, Wikipedia (merangkum data NOAA/Sensus AS), revisi 2026-11-25 | https://en.wikipedia.org/wiki/Utqiagvik,_Alaska | 2026-11-25 | MEDIUM |
+| 5 | Matahari musim panas tak terbenam di utara Lingkar Arktik; penyebab: kemiringan sumbu bumi ±23,4° | Midnight sun, Wikipedia | https://en.wikipedia.org/wiki/Midnight_sun | 2026-11-25 | MEDIUM |
+| 6 | Malam kutub di lintang 71° N sekitar 21 Nov – 21 Jan (Utqiaġvik disebut sebagai contoh) | Polar night, Wikipedia | https://en.wikipedia.org/wiki/Polar_night | 2026-11-25 | MEDIUM |
+| 7 | Hitung ulang astronomi lintang 71,29 N: matahari terbit/terbenam normal 1 dan 2 Agu 2026 dan kembali 23 Jan 2027; tidak ada terbit/terbenam 11 Mei 2026 dan 19 Nov 2026 (konsisten dengan #4) | Sunrise-Sunset API, sunrise-sunset.org (kueri tanggal 2026-05-09..11, 08-01..03, 11-17..19, 2027-01-22..23) | https://api.sunrise-sunset.org/json?lat=71.2906&lng=-156.7886&date=2026-08-03&formatted=0 | 2026-11-25 | MEDIUM |

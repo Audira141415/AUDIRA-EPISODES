@@ -5,7 +5,11 @@ title: "Cara Kerja HTTPS: TLS Handshake dalam 2 Menit"
 hook: "Setiap HTTPS request kamu trigger ini — dan ini penting"
 styleCandidates: ["CIRCUITFORGE (2D)", "INNERWORKS (3D)", "CYBERFORGE (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "rendah; judul \"2 Menit\" dan hook \"setiap request\" kurang akurat (handshake per koneksi), dikoreksi di RESEARCH_REPORT.md"
 ---
 
 # Cara Kerja HTTPS: TLS Handshake dalam 2 Menit

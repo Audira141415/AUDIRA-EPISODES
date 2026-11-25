@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi`
+# Source Register — Kenapa Kita Lupa Mimpi Begitu Bangun Tidur
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Neuron MCH di hipotalamus aktif saat tidur REM, menghambat sel hipokampus, dan terlibat dalam "lupa aktif" ingatan bergantung-hipokampus (eksperimen pada tikus) | REM sleep-active MCH neurons are involved in forgetting hippocampus-dependent memories, Izawa dkk., Science 2019 | https://pubmed.ncbi.nlm.nih.gov/31604241/ (doi 10.1126/science.aax9238) | 2026-11-25 | HIGH |
+| 2 | Mimpi muncul tidak hanya di tidur REM, tetapi juga NREM; "zona panas" posterior korteks terkait pengalaman bermimpi | The neural correlates of dreaming, Siclari dkk., Nat Neurosci 2017 | https://pubmed.ncbi.nlm.nih.gov/28394322/ (doi 10.1038/nn.4545) | 2026-11-25 | HIGH |
+| 3 | Konektivitas otak (jaringan default mode) sesaat setelah bangun berbeda pada orang yang sering vs jarang ingat mimpi; sleep inertia = masa transisi setelah bangun dengan perubahan otak/kognisi | Brain functional connectivity upon awakening predicts interindividual differences in dream recall frequency, Vallat, Nicolas, Ruby, Sleep 2020 | https://pubmed.ncbi.nlm.nih.gov/32597973/ (doi 10.1093/sleep/zsaa116) | 2026-11-25 | HIGH |
+| 4 | Pengingat mimpi sering: lebih banyak terbangun lama; durasi bangun minimal ±2 menit diusulkan untuk menyimpan mimpi ke ingatan jangka panjang (usulan, 18 vs 18 orang) | Increased Evoked Potentials to Arousing Auditory Stimuli during Sleep: Implication for Dream Recall, Vallat dkk., Front Hum Neurosci 2017 | https://pubmed.ncbi.nlm.nih.gov/28377708/ (doi 10.3389/fnhum.2017.00132) | 2026-11-25 | HIGH |
+| 5 | Otak pengingat mimpi tinggi bereaksi lebih besar terhadap suara (nama sendiri) saat tidur dan terjaga; model "arousal-retrieval" | Brain reactivity differentiates subjects with high and low dream recall frequencies, Eichenlaub dkk., Cereb Cortex 2014 | https://pubmed.ncbi.nlm.nih.gov/23283685/ (doi 10.1093/cercor/bhs388) | 2026-11-25 | HIGH |
+| 6 | Hipotesis: tidur REM melemahkan, bukan menguatkan, jejak mimpi lewat "reverse learning" (hipotesis 1983) | The function of dream sleep, Crick & Mitchison, Nature 1983 | https://pubmed.ncbi.nlm.nih.gov/6866101/ (doi 10.1038/304111a0) | 2026-11-25 | MEDIUM |
+| 7 | Tinjauan: tidur REM terkait mimpi; replay aktivitas saraf saat tidur diduga berperan dalam neuroplastisitas | The cognitive neuroscience of sleep, Hobson & Pace-Schott, Nat Rev Neurosci 2002 | https://pubmed.ncbi.nlm.nih.gov/12209117/ (doi 10.1038/nrn915) | 2026-11-25 | MEDIUM |

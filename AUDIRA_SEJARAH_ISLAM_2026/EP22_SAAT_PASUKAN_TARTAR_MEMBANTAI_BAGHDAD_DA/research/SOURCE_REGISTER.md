@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Sejarah peradaban Islam yang jarang diketahui`
+# Source Register — Saat Pasukan Tartar Membantai Baghdad dalam 40 Hari
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Al-Qur'an Ali Imran 3:140: masa kejayaan dan kehancuran Kami pergilirkan di antara manusia (terjemah Kemenag) | Al-Qur'an, QS Ali Imran 3:140, terjemah Kemenag via Quran.com API v4 | https://api.quran.com/api/v4/verses/by_key/3:140?translations=33 | 2026-11-25 | HIGH |
+| 2 | Hadis "biarkan Turki selama mereka membiarkan kalian": Sunan Abu Dawud no. 4302, dinilai Hasan (Al-Albani, Zubair Ali Zai), Hasan lighairihi (Shu'aib al-Arna'ut). Tidak dinarasikan di VO | Sunan Abu Dawud, Kitab al-Malahim no. 4302, data Hadith API (fawazahmed0) | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-abudawud/4302.json | 2026-11-25 | HIGH |
+| 3 | Perpustakaan besar Bagdad dibuka kembali dalam 2 tahun setelah 1258; kisah Tigris menghitam adalah gambaran sastra (trope); kota terpinggirkan jangka panjang oleh serbuan Timur 1393/1401 dan Utsmani 1534 | Michal Biran, "Libraries, Books, and Transmission of Knowledge in Ilkhanid Baghdad", Journal of the Economic and Social History of the Orient 62, 2019 (DOI terverifikasi di Crossref; klaim dibaca lewat ringkasan Wikipedia) | https://doi.org/10.1163/15685209-12341485 | 2026-11-25 | HIGH |
+| 4 | Hulagu dikirim Möngke; Al-Musta'sim menolak tunduk, balasan meremehkan, bantuan dunia Islam tidak datang; serbuan tembok 29/30 Jan; menyerah 10 Feb bersama ±3.000 tokoh; penjarahan 13 Feb selama sepekan; Hulagu klaim 2 juta tewas ("jelas dibesar-besarkan"); estimasi penulis Muslim 800.000 sampai 2 juta; eksekusi 20 Feb dalam gulungan karpet; Abbasiyah 500 tahun berakhir | Siege of Baghdad, Wikipedia (daftar pustaka antara lain Peter Jackson, The Mongols and the Islamic World, Yale UP, 2017) | https://en.wikipedia.org/wiki/Siege_of_Baghdad | 2026-11-25 | MEDIUM |
+| 5 | Al-Musta'sim: khalifah Abbasiyah ke-37 dan terakhir di Bagdad, naik 1242, dieksekusi 20 Feb 1258; 29 Jan tanggul Tigris dijebol Mongol, pasukan terjebak; wazir Ibn al-Alqami (tuduhan pengkhianatan diperdebatkan) | Al-Musta'sim, Wikipedia | https://en.wikipedia.org/wiki/Al-Musta%27sim | 2026-11-25 | MEDIUM |
+| 6 | House of Wisdom hancur 1258; buku dibuang ke Tigris (trope menurut Biran); Dimitri Gutas mempertanyakan bentuk/fungsi "Bayt al-Hikma" | House of Wisdom, Wikipedia (rujukan: Gutas 1998; MacKensen, "Four Great Libraries of Medieval Baghdad", Library Quarterly, 1932) | https://en.wikipedia.org/wiki/House_of_Wisdom | 2026-11-25 | MEDIUM |
+| 7 | Penjarahan sebagai keputusan terencana; Doquz Khatun (Kristen) melindungi Kristen Bagdad; wazir Ibn al-Alqami diangkat lagi lalu wafat <3 bulan; Hulagu meninggalkan area 8 Maret | Siege of Baghdad, Wikipedia (bagian Sack and aftermath) | https://en.wikipedia.org/wiki/Siege_of_Baghdad | 2026-11-25 | MEDIUM |

@@ -5,7 +5,11 @@ title: "Saat Pasukan Tartar Membantai Baghdad dalam 40 Hari"
 hook: "1258 M: satu kota yang dulu disebut pusat dunia berubah menjadi lautan darah"
 styleCandidates: ["CHRONICLE (2D)", "CINESTORY (2D)", "WORLDFORGE (3D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Angka 40 hari di judul tidak terverifikasi (sumber: serbuan sekitar 12 hari, penjarahan 1 minggu); korban jiwa tak pasti; mitos tinta Tigris adalah trope sastra"
 ---
 
 # Saat Pasukan Tartar Membantai Baghdad dalam 40 Hari

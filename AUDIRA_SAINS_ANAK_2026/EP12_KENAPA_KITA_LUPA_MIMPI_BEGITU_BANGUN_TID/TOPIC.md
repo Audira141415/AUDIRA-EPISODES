@@ -5,7 +5,11 @@ title: "Kenapa Kita Lupa Mimpi Begitu Bangun Tidur"
 hook: "Otak secara aktif menghapus memori mimpimu — dan ada alasan biologis di baliknya"
 styleCandidates: ["ANATOMIX (3D)", "INNERWORKS (3D)", "BEDAH (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook asli (otak aktif menghapus mimpi) berlebihan; bukti lupa aktif hanya pada tikus, naskah memakai bahasa hati-hati"
 ---
 
 # Kenapa Kita Lupa Mimpi Begitu Bangun Tidur

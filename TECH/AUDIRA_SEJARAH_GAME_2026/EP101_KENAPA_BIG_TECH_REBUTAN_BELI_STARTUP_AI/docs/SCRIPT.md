@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP101`)
+# Naskah — Kenapa Big Tech Rebutan Beli Startup AI Seharga Miliaran Dolar
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **13** · estimasi **5 dtk**
+- Visual: Papan harga HUD '2,4 M USD' menghentak, di belakangnya kotak abstrak 'startup' tetap utuh sementara siluet orang tanpa wajah keluar dari dalamnya.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Google membayar 2,4 miliar dolar untuk startup AI. Tapi startupnya sendiri tidak dibeli.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Diagram dua jalur: panah akuisisi penuh (dicoret) vs jalur baru: siluet tim berpindah ke gedung generik, kertas lisensi mengikuti. Tanpa logo.
 
-> <konteks singkat + "Di Audira, ...">
+> Ini pola baru Big Tech. Mereka merekrut pendiri dan tim intinya, lalu membayar lisensi teknologinya. Perusahaannya tetap berdiri, tapi otaknya pindah. AUDIRA bedah polanya.
 
-## c02 — <Judul Bab 1>
+## c02 — Bab 1 Inflection, Maret 2024
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **30** · estimasi **12 dtk**
+- Visual: Timeline Maret 2024; siluet dua pendiri (tanpa wajah) berjalan ke gedung generik berlabel teks 'Perusahaan A'; HUD '650 juta USD' dan '~70 orang'.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Maret 2024, Microsoft merekrut Mustafa Suleyman dan Karén Simonyan dari Inflection AI, bersama hampir seluruh timnya. Lalu membayar sekitar 650 juta dolar untuk lisensi teknologinya. Karyawannya cuma sekitar 70 orang.
 
-## c03 — <Judul Bab 2>
+## c03 — Bab 2 Scale AI, Juni 2025
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Gelembung valuasi naik dengan counter '> 29 M USD'; siluet satu pendiri pindah ke gedung lain; bar saham minoritas terisi sebagian.
 
-> <teks narasi>
+> Juni 2025, Meta berinvestasi di Scale AI, yang dinilai di atas 29 miliar dolar. Pendirinya, Alexandr Wang, ikut pindah ke Meta. Tapi Meta cuma memegang saham minoritas.
 
-## c04 — <Judul Bab 3>
+## c04 — Bab 3 Windsurf, Juli 2025
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Dua panel: siluet CEO + peneliti keluar ke gedung pembeli, HUD '2,4 M USD'; lalu kotak produk, merek, karyawan diangkut ke gedung ketiga.
 
-> <teks narasi>
+> Juli 2025, giliran Windsurf. Google merekrut CEO dan peneliti seniornya lewat lisensi senilai 2,4 miliar dolar. Beberapa hari kemudian, Cognition membeli sisanya: produk, merek, dan karyawan.
 
-## c05 — <Judul Bab 4>
+## c05 — Bab 4 Apa yang tersisa
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **13 dtk**
+- Visual: Dashboard bergerak: HUD '82 juta USD ARR' dan '350+ pelanggan enterprise' dengan ikon bangunan kecil; lalu sorotan ke deretan kursi dan meja kosong menjadi siluet peneliti.
 
-> <teks narasi>
+> Sisa itu tidak kecil: pendapatan berulang tahunan 82 juta dolar dan lebih dari 350 pelanggan perusahaan. Tapi yang diincar Big Tech bukan angka itu, melainkan orang yang tahu cara membangun model AI.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan regulator
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Timbangan keadilan sederhana + dokumen putusan; kalender menandai 'Sep 2024'; stempel teks 'tidak ada SLC'. Tanpa logo lembaga.
 
-> <teks narasi>
+> Jalur ini menghindari akuisisi formal, tapi regulator tetap melihat. Otoritas persaingan Inggris menilai kasus Inflection sebagai merger. September 2024 mereka memutuskan tidak ada penurunan persaingan yang substansial.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Rak server kecil dan meja kerja, satu per satu kursi kosong berubah transparan; hero shot tulisan AUDIRA lalu outro card.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi rebutan ini soal segelintir orang yang paham melatih model. Startup AI yang kamu pakai hari ini bisa kehilangan otaknya besok. Ikuti AUDIRA untuk bedah teknologi lainnya.
+
+## Opsi hook lain
+
+1. Microsoft bayar 650 juta dolar, dan hampir semua karyawan startup itu pindah. Startupnya? Masih ada.
+2. Yang diperebutkan Big Tech bukan produk AI. Tapi sekitar 70 orang.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **206 kata** ≈ **85 dtk** (145 WPM; rentang 135–150 WPM: 82–92 dtk)

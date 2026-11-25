@@ -5,7 +5,11 @@ title: "Cara Kerja Memori: Kenapa Ingatan Kita Bisa Palsu"
 hook: "Setiap kali kamu mengingat sesuatu, kamu sebenarnya sedang merekonstruksi ulang — dan bisa salah"
 styleCandidates: ["ANATOMIX (3D)", "INNERWORKS (3D)", "BEDAH (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Angka Loftus-Palmer dan studi mal dari ringkasan Wikipedia, bukan paper asli; reconsolidation hanya terbukti pada tikus."
 ---
 
 # Cara Kerja Memori: Kenapa Ingatan Kita Bisa Palsu

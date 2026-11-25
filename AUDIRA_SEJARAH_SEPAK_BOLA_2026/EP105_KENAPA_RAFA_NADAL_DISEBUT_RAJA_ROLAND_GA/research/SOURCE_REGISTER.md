@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Kenapa Rafa Nadal Disebut Raja Roland Garros yang Tak Tergoyahkan
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Final 2022: Nadal kalahkan Casper Ruud 6-3 6-3 6-0; gelar Roland Garros ke-14 dan Grand Slam ke-22; umur 36 | "Rafael Nadal Defeats Casper Ruud For 14th Roland Garros Title", ATP Tour, 2022 (arsip 2023-05-26) | https://web.archive.org/web/20230526185437/https://www.atptour.com/en/news/nadal-ruud-roland-garros-2022-final-sunday | 2026-11-25 | HIGH |
+| 2 | Nadal pensiun setelah Davis Cup Finals Malaga; 14 gelar French Open (rekor); menang 112 dari 116 laga Roland Garros; 22 gelar Grand Slam | "Rafael Nadal retires: 22-time Grand Slam champion confirms retirement from tennis aged 38", Jonathan Jurejko, BBC Sport, 2024-10-10 | https://www.bbc.com/sport/tennis/articles/ckgv9n5jj8jo | 2026-11-25 | HIGH |
+| 3 | Per 2017: rekor 79-2 di French Open; kekalahan hanya dari Söderling (babak 4, 2009) dan Djokovic (perempat final, 2015); mundur sebelum babak 3 tahun 2016 karena cedera pergelangan tangan | "Nadal's quest to reach La Decima" (by the numbers), ESPN UK, 2017-06-11 | https://www.espn.co.uk/tennis/story/_/id/19605999/by-numbers-rafael-nadal-record-breaking-10th-french-open-title | 2026-11-25 | HIGH |
+| 4 | Biodata: gelar French Open 2005-08, 2010-14, 2017-20, 2022; rekor akhir 112-4; kalah R1 2024 dari Zverev; kalah semifinal 2021 dari Djokovic; pensiun 19 Nov 2024; 63 gelar tanah liat | "Rafael Nadal", Wikipedia (merujuk ATP, BBC), diakses 2026-11-25 | https://en.wikipedia.org/wiki/Rafael_Nadal | 2026-11-25 | MEDIUM |
+| 5 | Final 2005: Nadal bungkus Mariano Puerta; juara di debut, umur 19 tahun 2 hari; pria pertama juara di debut sejak Mats Wilander 1982 | "2005 French Open – Men's singles", Wikipedia, diakses 2026-11-25 | https://en.wikipedia.org/wiki/2005_French_Open_–_Men's_singles | 2026-11-25 | MEDIUM |
+| 6 | 2009: kalah dari Söderling babak 4, kekalahan pertama di Paris setelah 31 kemenangan; satu-satunya edisi 2005-2014 yang tidak dimenangkan Nadal | "2009 French Open – Men's singles", Wikipedia, diakses 2026-11-25 | https://en.wikipedia.org/wiki/2009_French_Open_–_Men's_singles | 2026-11-25 | MEDIUM |
+| 7 | Rekor 81 kemenangan beruntun di tanah liat (Apr 2005–Mei 2007); rekor 112-4 | "Rafael Nadal career statistics", Wikipedia, diakses 2026-11-25 | https://en.wikipedia.org/wiki/Rafael_Nadal_career_statistics | 2026-11-25 | MEDIUM |
+| 8 | 25 Mei 2025: upacara penghormatan, plakat marmer 40x30 cm dengan trofi, angka 14, dan replika jejak kaki kanan di tanah liat Court Philippe-Chatrier | "French Open", Wikipedia (merujuk FFT), diakses 2026-11-25 | https://en.wikipedia.org/wiki/French_Open | 2026-11-25 | MEDIUM |

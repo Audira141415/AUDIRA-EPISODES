@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Cara kerja benda dan fenomena viral yang jarang diketahui`
+# Source Register — Kenapa Senior Developer Lebih Suka Boring Technology
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Esai 30 Maret 2015; penulis mantan karyawan awal Etsy; konsep "sekitar tiga innovation token"; Node.js dan MongoDB sebagai contoh yang menghabiskan token; MySQL, Postgres, PHP, Python, cron disebut boring; failure modes dikenal | Choose Boring Technology, Dan McKinley, 2015 | https://mcfunley.com/choose-boring-technology | 2026-11-25 | HIGH |
+| 2 | Boring berarti dipahami baik, bukan membosankan; known unknowns vs unknown unknowns; teknologi baru punya lebih banyak unknown unknowns | Choose Boring Technology (versi ceramah), Dan McKinley, tanpa tahun di halaman | https://boringtechnology.club | 2026-11-25 | HIGH |
+| 3 | Segment: >140 layanan digabung jadi satu layanan monolit; beban on-call; ditulis 10 Juli 2018 | Goodbye Microservices: From 100s of problem children to 1 superstar, Alexandra Noonan (Twilio Segment), 2018 | https://segment.com/blog/goodbye-microservices/ | 2026-11-25 | HIGH |
+| 4 | Hampir semua kisah sukses layanan mikro dimulai dari monolit yang terlalu besar; 3 Juni 2015 | MonolithFirst, Martin Fowler, 2015 | https://martinfowler.com/bliki/MonolithFirst.html | 2026-11-25 | HIGH |
+| 5 | PostgreSQL dipakai 55,6% responden (58,2% developer profesional), teratas di daftar database | Stack Overflow Developer Survey 2025, Technology: Databases, Stack Overflow, 2025 | https://survey.stackoverflow.co/2025/technology | 2026-11-25 | HIGH |
+| 6 | Asal PostgreSQL 1986 di proyek POSTGRES, UC Berkeley; >40 tahun pengembangan; ACID sejak 2001 | About PostgreSQL, PostgreSQL Global Development Group, 2026 | https://www.postgresql.org/about/ | 2026-11-25 | HIGH |
+| 7 | Postgres95 (1994), nama PostgreSQL 1996, rilis 6.0 29 Jan 1997 | PostgreSQL, Wikipedia, diakses 2026 | https://en.wikipedia.org/wiki/PostgreSQL | 2026-11-25 | MEDIUM |

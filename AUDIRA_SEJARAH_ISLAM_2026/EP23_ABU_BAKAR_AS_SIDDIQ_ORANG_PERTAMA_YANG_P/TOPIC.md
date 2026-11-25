@@ -5,7 +5,11 @@ title: "Abu Bakar as-Siddiq: Orang Pertama yang Percaya Tanpa Ragu"
 hook: "Kenapa ia langsung beriman tanpa bertanya satu pun pertanyaan, sementara yang lain ragu?"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "CHARACTERFLOW (2D)", "STORYBOOK (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Frasa 'tanpa ragu' berasal dari sirah Ibnu Ishaq yang tidak terverifikasi di sini; ada isu urutan masuk Islam dan sensitivitas Sunni-Syiah, tokoh tanpa wajah."
 ---
 
 # Abu Bakar as-Siddiq: Orang Pertama yang Percaya Tanpa Ragu

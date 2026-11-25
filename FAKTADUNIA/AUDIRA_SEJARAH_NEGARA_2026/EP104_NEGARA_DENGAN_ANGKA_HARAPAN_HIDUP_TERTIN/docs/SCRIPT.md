@@ -1,93 +1,69 @@
-# SCRIPT — `Fakta sejarah unik negara-negara di dunia` (`EP104`)
+# Naskah — Negara dengan Angka Harapan Hidup Tertinggi di Dunia — Bukan Swiss
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: Peta Eropa zoom ke pinggir Prancis; dua peringkat kartu Swiss vs Monako, selisih umur muncul
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Swiss sering dianggap juara umur panjang. Ternyata bukan. Negara kecil di pinggir Prancis mengalahkannya, dengan selisih lebih dari dua tahun.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Bayi ilustrasi tanpa wajah di tengah garis waktu; callout 'angka harapan hidup'; logo AUDIRA kecil
 
-> <konteks singkat + "Di Audira, ...">
+> Ini AUDIRA. Angka harapan hidup adalah perkiraan umur bayi yang lahir hari ini, kalau pola kematian saat ini tidak berubah sepanjang hidupnya.
 
-## c02 — <Judul Bab 1>
+## c02 — Peringkat Bank Dunia 2023
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Papan peringkat bergerak: bendera Monako, San Marino, Hong Kong, Liechtenstein, Swiss; HUD 86,4 / 85,7 / 85,2 / 84,6 / 84,2
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Menurut Bank Dunia, data 2023, juaranya Monako: 86,4 tahun. Lalu San Marino 85,7, Hong Kong 85,2, Liechtenstein 84,6. Swiss baru kelima, 84,2.
 
-## c03 — <Judul Bab 2>
+## c03 — Negara mungil
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Peta Monako dan Liechtenstein diperbesar dibanding Jepang; callout 39 ribu dan 40 ribu penduduk; grafik naik 85,8 ke 86,4
 
-> <teks narasi>
+> Tapi lihat jumlah penduduknya. Monako hanya sekitar 39 ribu orang, Liechtenstein sekitar 40 ribu. Angka sekecil itu mudah bergeser: Monako 85,8 tahun pada 2022, jadi 86,4 setahun kemudian. Jadi angkanya perlu dibaca hati-hati.
 
-## c04 — <Judul Bab 3>
+## c04 — Kemakmuran
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Siluet kota pelabuhan Monako, tumpukan koin berbanding Swiss dan Jepang; HUD 257 ribu dolar, 2,3 per seribu
 
-> <teks narasi>
+> Kemakmuran Monako luar biasa. Pendapatan per orang sekitar 257 ribu dolar, dan kematian bayi hanya 2,3 per seribu kelahiran. Swiss sekitar 104 ribu dolar.
 
-## c05 — <Judul Bab 4>
+## c05 — Raksasa Jepang
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Peta Jepang membesar, siluet kota padat, callout 124 juta penduduk dan 84,3 tahun
 
-> <teks narasi>
+> Sekarang negara besar. Jepang punya sekitar 124 juta penduduk, dengan harapan hidup 84 tahun. Dalam data WHO tahun 2021, Jepang nomor satu, 84,3 tahun.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan Jepang
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Ikon rumah sakit dan kartu asuransi, kalender 1961 dan 2024; HUD 87,1 perempuan, 81,1 laki-laki
 
-> <teks narasi>
+> Jepang punya asuransi kesehatan universal sejak 1961. Data kementerian kesehatan Jepang tahun 2024: perempuan 87,1 tahun, laki-laki 81,1. Jadi peringkat bergantung sumber dan tahun datanya.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Dua peta berdampingan, mahkota pindah antara Monako dan Jepang; outro card AUDIRA
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Kalau yang dihitung semua negara, Monako menang. Kalau yang dihitung negara besar, Jepang di puncak. Ikuti AUDIRA untuk fakta dunia lainnya.
+
+## Opsi hook lain
+
+1. Negara dengan penduduk 39 ribu orang ini punya umur rata-rata terpanjang di dunia.
+2. Lahir di Monako, rata-rata hidup lebih lama dua tahun daripada lahir di Swiss.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **191 kata** ≈ **80 dtk**

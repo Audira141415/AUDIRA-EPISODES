@@ -5,7 +5,11 @@ title: "Masa Depan AI Agent: Ketika AI Bisa Bertindak Sendiri Tanpa Instruksi"
 hook: "AI yang bisa browsing, booking, dan eksekusi tugas tanpa kamu suruh"
 styleCandidates: ["CYBERFORGE (3D)", "DEVFORGE (2D)", "AUDIRABOT (3D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak
+risiko: "Judul/hook (tanpa instruksi) tidak akurat, diberi framing ulang; skor benchmark cepat usang (per Jan 2025)."
 ---
 
 # Masa Depan AI Agent: Ketika AI Bisa Bertindak Sendiri Tanpa Instruksi

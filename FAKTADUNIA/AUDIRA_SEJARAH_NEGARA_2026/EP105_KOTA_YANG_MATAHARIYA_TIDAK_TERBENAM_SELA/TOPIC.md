@@ -5,7 +5,11 @@ title: "Kota yang Matahariya Tidak Terbenam Selama 2 Bulan"
 hook: "Utqiagvik Alaska — midnight sun dan polar night sebagai realita kehidupan sehari-hari"
 styleCandidates: ["WORLDFORGE (3D)", "PAPERWORLD (2D)", "CHRONICLE (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul bilang 2 bulan padahal matahari tak terbenam ±83 hari (malam kutub ±66 hari); angka sensus bersumber lewat Wikipedia."
 ---
 
 # Kota yang Matahariya Tidak Terbenam Selama 2 Bulan

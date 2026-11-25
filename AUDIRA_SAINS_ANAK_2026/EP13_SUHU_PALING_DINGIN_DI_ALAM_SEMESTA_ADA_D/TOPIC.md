@@ -5,7 +5,11 @@ title: "Suhu Paling Dingin di Alam Semesta Ada di Bumi, Bukan di Luar Angkasa"
 hook: "Para ilmuwan menciptakan tempat lebih dingin dari ruang hampa antariksa di laboratorium"
 styleCandidates: ["POLYVERSE (3D)", "DATAPHYSICAL (2D)", "SCALEFORGE (3D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul terlalu mutlak (nol mutlak belum tercapai, rekor bisa dilampaui); naskah memakai 'yang kita tahu' dan < 50 pK dari paper."
 ---
 
 # Suhu Paling Dingin di Alam Semesta Ada di Bumi, Bukan di Luar Angkasa

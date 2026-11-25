@@ -1,93 +1,69 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP103`)
+# Naskah — Kenapa Senior Developer Lebih Suka Boring Technology
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: Layar hitam, kursor mengetik dua tumpukan alat: satu penuh logo-logo teknologi baru berkedip (ikon generik), satu hanya tiga ikon polos: database, server, cron. Karakter developer senior tanpa wajah memilih yang polos.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Developer senior sengaja memilih teknologi yang membosankan. Bukan karena malas. Mereka sudah pernah kena batunya.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Halaman esai bergaya blueprint dengan judul Choose Boring Technology, callout HUD: 2015, Dan McKinley. Siluet tim kecil di depan papan tulis penuh tren.
 
-> <konteks singkat + "Di Audira, ...">
+> Di AUDIRA kali ini kita bahas esai Choose Boring Technology, tulisan Dan McKinley tahun 2015. Dia karyawan awal Etsy, dan melihat sendiri tim yang tergoda teknologi baru.
 
-## c02 — <Judul Bab 1>
+## c02 — Tiga token inovasi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Tiga koin bertuliskan innovation token di dompet. Node.js dan MongoDB (teks saja) menghabiskan dua koin, HUD: sekitar 3 token.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Idenya sederhana. Setiap perusahaan cuma punya sekitar tiga innovation token. Saat itu, pakai Node.js, satu token habis. Pakai MongoDB, satu lagi. Teknologi baru mahal bukan di harga, tapi di perhatian tim.
 
-## c03 — <Judul Bab 2>
+## c03 — Kegagalan yang sudah dikenal
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Peta bahaya: tumpukan alat lama (MySQL, Postgres, PHP, Python, cron) dengan papan daftar cara rusak lengkap; di sisi lain peta gelap penuh tanda tanya.
 
-> <teks narasi>
+> Kenapa mahal? Karena cara rusak teknologi lama sudah dikenal. MySQL, Postgres, PHP, Python, sampai cron. Teknologi baru membawa banyak unknown unknown, yaitu masalah yang kamu belum tahu akan datang.
 
-## c04 — <Judul Bab 3>
+## c04 — Bukti Postgres
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Pohon silsilah database: dari lab kampus 1986 ke server modern; bar chart 55,6 persen yang tumbuh. Callout HUD: 1986 dan 55,6%.
 
-> <teks narasi>
+> Lihat Postgres. Asalnya proyek POSTGRES di Universitas California Berkeley tahun 1986. Di survei Stack Overflow 2025, 55,6 persen responden memakainya. Nomor satu di antara database.
 
-## c05 — <Judul Bab 4>
+## c05 — Kisah layanan mikro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **34** · estimasi **14 dtk**
+- Visual: Ratusan kotak kecil saling terhubung kabel, lalu runtuh menyatu menjadi satu blok besar. Callout HUD: 140 layanan, 2018.
 
-> <teks narasi>
+> Contoh lain, Segment. Tahun 2018 mereka menulis, layanan mikronya lebih dari 140, timnya kewalahan, lalu digabung jadi satu monolit. Martin Fowler sudah mencatat tahun 2015, hampir semua kisah sukses layanan mikro dimulai dari monolit.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan: biaya tak terlihat
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Timbangan: sisi kiri ikon baru berkilau, sisi kanan tumpukan beban: alarm on-call, bug aneh, anggota tim baru bingung.
 
-> <teks narasi>
+> Senior bukan anti hal baru. Mereka menghitung biaya yang tidak kelihatan: alarm on-call tengah malam, bug yang aneh, dan anggota baru yang harus belajar alat yang asing.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: Tiga koin dilempar ke satu ikon produk yang bersinar, sisanya alat polos di bawahnya. Kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Kuncinya, pakai token inovasimu untuk hal yang membuat produkmu unik. Sisanya, pilih yang membosankan. Ikuti AUDIRA untuk seri teknologi berikutnya.
+
+## Opsi hook lain
+
+1. Kenapa developer paling jago justru pakai alat paling membosankan?
+2. Kamu cuma punya tiga token inovasi. Sudah kamu habiskan untuk apa?
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **208 kata** ≈ **87 dtk**

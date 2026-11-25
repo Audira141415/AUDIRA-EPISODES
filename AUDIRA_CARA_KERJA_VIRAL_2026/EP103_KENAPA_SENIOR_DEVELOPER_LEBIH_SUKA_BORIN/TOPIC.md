@@ -5,7 +5,11 @@ title: "Kenapa Senior Developer Lebih Suka Boring Technology"
 hook: "Hype-driven development vs production-proven choices"
 styleCandidates: ["CHARACTERFLOW (2D)", "BONGKAR (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Klaim senior lebih suka boring adalah generalisasi (bersandar pada esai, bukan survei); contoh Node.js/MongoDB 2015 sudah usang."
 ---
 
 # Kenapa Senior Developer Lebih Suka Boring Technology

@@ -5,7 +5,11 @@ title: "Semenanjung yang Jadi Rebutan 3 Negara Sekaligus"
 hook: "Kashmir, Crimea, Gaza — daratan kecil yang mengubah sejarah dunia"
 styleCandidates: ["SATELLITEBRIEFING (2D)", "HISTORYMAP (2D)", "VISUALINVESTIGATION (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Hook awal (Kashmir, Gaza) bukan semenanjung dan perlu dikoreksi; Krimea konflik aktif dan sensitif, ikuti posisi PBB 68/262."
 ---
 
 # Semenanjung yang Jadi Rebutan 3 Negara Sekaligus

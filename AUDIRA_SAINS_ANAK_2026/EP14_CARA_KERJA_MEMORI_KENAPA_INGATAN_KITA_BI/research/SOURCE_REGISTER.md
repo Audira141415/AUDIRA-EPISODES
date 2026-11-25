@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi`
+# Source Register — Cara Kerja Memori: Kenapa Ingatan Kita Bisa Palsu
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Ingatan yang sudah stabil, saat dipanggil kembali (reaktivasi), kembali labil; infus anisomycin setelah reaktivasi menimbulkan amnesia, tanpa reaktivasi ingatan utuh; butuh sintesis protein baru untuk reconsolidation. Dilakukan pada tikus, 2000 | Fear memories require protein synthesis in the amygdala for reconsolidation after retrieval, Nader, Schafe, Le Doux, Nature 406:722-726, 2000 | https://pubmed.ncbi.nlm.nih.gov/10963596/ (doi:10.1038/35021052) | 2026-11-25 | HIGH |
+| 2 | Kesalahan ingatan dikelompokkan jadi 7 "dosa": transience, absent-mindedness, blocking, misattribution, suggestibility, bias, persistence; misattribution, suggestibility, bias = tiga jenis distorsi; penulis di Harvard | The seven sins of memory: insights from psychology and cognitive neuroscience, Daniel L. Schacter, American Psychologist 54(3):182-203, 1999 | https://pubmed.ncbi.nlm.nih.gov/10199218/ (doi:10.1037/0003-066X.54.3.182) | 2026-11-25 | HIGH |
+| 3 | Tujuh kategori kesalahan ingatan menunjukkan sifat ingatan yang konstruktif sekaligus adaptif; pembaruan dua dekade | The seven sins of memory: an update, Schacter, Memory 30(1):37-42, 2022 (epub 2021) | https://pubmed.ncbi.nlm.nih.gov/33459149/ (PMC8285452) | 2026-11-25 | HIGH |
+| 4 | Imajinasi kejadian masa kecil menaikkan keyakinan bahwa kejadian itu terjadi; 1996 | Imagination inflation: Imagining a childhood event inflates confidence that it occurred, Garry, Manning, Loftus, Sherman, Psychonomic Bulletin & Review 3(2):208-214, 1996 | https://pubmed.ncbi.nlm.nih.gov/24213869/ (doi:10.3758/BF03212420) | 2026-11-25 | HIGH |
+| 5 | Studi 1974: pertanyaan dengan kata kerja berbeda memengaruhi estimasi kecepatan mobil; rekaman tabrakan mobil. Metadata terverifikasi lewat Crossref | Reconstruction of automobile destruction: an example of the interaction between language and memory, Loftus & Palmer, Journal of Verbal Learning and Verbal Behavior, 1974 | https://doi.org/10.1016/s0022-5371(74)80011-3 | 2026-11-25 | HIGH |
+| 6 | Angka rata-rata: "collided" ~32 mph, "hit each other" ~34 mph, "smashed" ~41 mph (dibulatkan) | False memory, Wikipedia (merangkum Loftus & Palmer 1974); angka dibulatkan, bukan teks asli | https://en.wikipedia.org/wiki/False_memory | 2026-11-25 | MEDIUM |
+| 7 | Studi "lost in the mall": 24 peserta, 4 cerita masa kecil (1 palsu), sekitar 25% melaporkan ingat kejadian palsu | The Formation of False Memories, Loftus & Pickrell, Psychiatric Annals 25(12):720-725, 1995 (metadata Crossref doi:10.3928/0048-5713-19951201-07); angka dari ringkasan Wikipedia | https://en.wikipedia.org/wiki/Lost_in_the_mall_technique | 2026-11-25 | MEDIUM |

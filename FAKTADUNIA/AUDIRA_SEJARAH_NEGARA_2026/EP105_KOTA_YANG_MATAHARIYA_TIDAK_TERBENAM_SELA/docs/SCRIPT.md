@@ -1,93 +1,69 @@
-# SCRIPT — `Fakta sejarah unik negara-negara di dunia` (`EP105`)
+# Naskah — Kota yang Matahariya Tidak Terbenam Selama 2 Bulan
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: Matahari menggantung rendah di cakrawala tundra pada tengah malam; peta Alaska zoom ke titik paling utara; HUD angka 83 HARI.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Bayangkan matahari tidak terbenam selama delapan puluh tiga hari. Itu musim panas di Utqiagvik, Alaska, kota paling utara Amerika Serikat.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Globe memutar ke Alaska, pin Utqiagvik di tepi Laut Arktik, garis lintang 71°N; kota tanpa jalan keluar, hanya pesawat kecil di landasan.
 
-> <konteks singkat + "Di Audira, ...">
+> Kita ke ujung utara Amerika, sekitar lintang 71 derajat. Tidak ada jalan yang menyambungkannya ke Alaska lainnya.
 
-## c02 — <Judul Bab 1>
+## c02 — Matahari tak terbenam
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Time-lapse lintasan matahari melingkar di langit (diagram jalur 24 jam); kalender Mei-Agustus terisi bar kuning; HUD 10 MEI > 1 AGU.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Sekitar sepuluh Mei, matahari naik dan tidak turun lagi. Selama delapan puluh tiga hari, ia terus berputar di atas cakrawala, sampai sekitar satu Agustus. Tengah malam pun, langit tetap terang.
 
-## c03 — <Judul Bab 2>
+## c03 — Malam kutub
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Langit biru gelap penuh bintang di atas rumah-rumah salju, jendela menyala hangat; kalender Nov-Jan terisi bar biru; HUD 66 HARI.
 
-> <teks narasi>
+> Lalu berbalik. Matahari terbenam pada delapan belas November dan baru muncul sekitar dua puluh tiga Januari. Itu kira-kira enam puluh enam hari malam kutub.
 
-## c04 — <Judul Bab 3>
+## c04 — Dari Barrow ke Utqiagvik
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Papan nama kota berganti Barrow ke Utqiagvik; kotak suara dan papan skor 381 vs 375; siluet rumah kulit-kayu tradisional dan rangka tulang paus (tanpa wajah).
 
-> <teks narasi>
+> Dulu kota ini bernama Barrow. Pada Oktober 2016 warga memilih nama Iñupiaq, Utqiagvik, dengan selisih tipis: 381 lawan 375. Suku Iñupiat sudah tinggal di sini lebih dari seribu lima ratus tahun.
 
-## c05 — <Judul Bab 4>
+## c05 — Tanah beku
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: Penampang tanah: lapisan aktif lalu permafrost sampai 400 m; jalan kerikil dengan mobil; HUD 400 M dan 4.927 JIWA.
 
-> <teks narasi>
+> Tanah di bawahnya tetap beku sampai sedalam empat ratus meter, jadi jalan-jalan kota tidak diaspal. Sensus 2020 mencatat 4.927 penduduk.
 
-## c06 — <Judul Bab 5>
+## c06 — Kenapa bisa begitu
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Diagram bumi miring 23,4° mengitari matahari, dua posisi musim panas/dingin, kerucut cahaya di kutub; panah tilt.
 
-> <teks narasi>
+> Kenapa bisa begitu? Sumbu bumi miring. Di dekat kutub, saat belahan utara condong ke matahari, matahari tidak pernah turun dari cakrawala. Saat condong menjauh, ia tak kunjung naik.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Cincin tahun terbelah dua warna: 83 hari kuning, 66 hari biru; kota kecil di bawahnya, zoom out ke globe; kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Di sini, hari bukan lagi dua puluh empat jam. Hari adalah musim. Delapan puluh tiga hari terang, enam puluh enam hari gelap. Ikuti AUDIRA untuk fakta dunia berikutnya.
+
+## Opsi hook lain
+
+1. Di kota ini, matahari bisa menghilang 66 hari penuh. Lalu terbit, dan tidak mau pergi 83 hari.
+2. Satu kota Amerika punya hari yang panjangnya dua bulan lebih. Namanya baru diganti 2016.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **198 kata** ≈ **84 dtk**

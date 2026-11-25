@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris` (`EP105`)
+# Naskah — Kenapa Rafa Nadal Disebut Raja Roland Garros yang Tak Tergoyahkan
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **16** · estimasi **7 dtk**
+- Visual: Layar hitam, angka tanah liat oranye: HUD besar 112 lalu 4 menghentak. Siluet pemain tanpa wajah (ilustrasi generik) di baseline lapangan tanah liat.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Seratus dua belas menang, empat kalah. Itu rapor Rafael Nadal di satu turnamen saja: Roland Garros.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Peta Paris menyempit ke lapangan tanah liat oranye, garis putih menyala, HUD teks '14 gelar'. Tanpa logo turnamen.
 
-> <konteks singkat + "Di Audira, ...">
+> Ini AUDIRA. Roland Garros, turnamen tanah liat di Paris, dijuarai Nadal empat belas kali. Rekor di satu turnamen.
 
-## c02 — <Judul Bab 1>
+## c02 — 2005: Debut langsung juara
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **30** · estimasi **12 dtk**
+- Visual: Kalender dibalik ke 2005, kartu data umur '19 tahun 2 hari', trofi (siluet piala generik) naik dari tanah liat. Garis waktu 1982 ke 2005.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Mulai tahun dua ribu lima. Debut di Roland Garros, umur sembilan belas tahun lebih dua hari, dan langsung juara. Terakhir kali ada yang begitu: Mats Wilander, tahun delapan puluh dua.
 
-## c03 — <Judul Bab 2>
+## c03 — 2005 sampai 2014: Dinasti
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Papan skor tahunan 2005 sampai 2014, sembilan kotak menyala dan satu kotak 2009 gelap. HUD '31 menang beruntun' berhenti.
 
-> <teks narasi>
+> Dua ribu lima sampai dua ribu empat belas: sembilan gelar dalam sepuluh tahun. Yang lolos cuma dua ribu sembilan, saat Robin Söderling menang di babak keempat.
 
-## c04 — <Judul Bab 3>
+## c04 — Empat kekalahan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **13 dtk**
+- Visual: Empat kartu berurutan: 2009 R16, 2015 perempat final, 2021 semifinal, 2024 babak pertama, tiap kartu dengan nama lawan. Satu kartu kosong abu-abu 2016.
 
-> <teks narasi>
+> Kalahnya cuma empat. Söderling, dua ribu sembilan. Novak Djokovic, perempat final dua ribu lima belas dan semifinal dua ribu dua puluh satu. Terakhir Alexander Zverev, babak pertama dua ribu dua puluh empat.
 
-## c05 — <Judul Bab 4>
+## c05 — Final 2022
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Papan skor besar 6-3 6-3 6-0, kartu umur 36, lapangan tanah liat dari atas, dua siluet pemain tanpa wajah. HUD '22 Grand Slam'.
 
-> <teks narasi>
+> Final dua ribu dua puluh dua. Umur tiga puluh enam, Nadal menghajar Casper Ruud enam tiga, enam tiga, enam nol. Gelar keempat belas, Grand Slam kedua puluh dua.
 
-## c06 — <Judul Bab 5>
+## c06 — Kenapa disebut raja
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: Bagan donat 112 menang vs 4 kalah, HUD '81 menang beruntun di tanah liat'. Pertandingan jadi titik-titik oranye dan hitam.
 
-> <teks narasi>
+> Kenapa disebut raja? Seratus dua belas dari seratus enam belas laga di sana dia menangkan.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **36** · estimasi **15 dtk**
+- Visual: Plakat marmer putih di tengah lapangan, ukiran trofi dan angka 14, jejak kaki tercetak di tanah liat; kamera naik ke outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> November dua ribu dua puluh empat, Nadal pensiun usai Piala Davis. Mei dua ribu dua puluh lima, Roland Garros menanam plakat marmer di lapangan, berukir angka empat belas dan jejak kakinya di tanah liat. Ikuti AUDIRA.
+
+## Opsi hook lain
+
+1. Empat belas trofi di satu turnamen, dan tanah liat Paris pun punya jejak kaki satu orang.
+2. Hanya empat kali kalah dalam seratus enam belas laga. Begini cara Nadal menguasai Paris.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **201 kata** ≈ **84 dtk** (@~144 WPM)
