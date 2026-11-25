@@ -1,33 +1,18 @@
-# SOURCE_REGISTER — `Sejarah game yang viral dan jarang diketahui`
+# Source Register — Kenapa Elon Musk Beli Twitter dan Hampir Menghancurkannya
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | 14 April 2022 Musk menawar seluruh saham Twitter tunai $54,20/lembar; surat ke ketua dewan: Twitter berpotensi jadi "platform for free speech around the globe" | Schedule 13D/A Amendment No. 2 (Twitter, Inc.), Elon Musk / SEC EDGAR, 2022 | https://www.sec.gov/Archives/edgar/data/0001418091/000110465922045641/tm2212748d1_sc13da.htm | 2026-11-25 | HIGH |
+| 2 | 4 April 2022 Musk mengumumkan memegang 9,2% saham Twitter, senilai $2,64 miliar | "Elon Musk spent $2.64 billion on Twitter shares so far this year", Kolodny & Novet / CNBC, 2022 | https://www.cnbc.com/2022/04/05/elon-musk-spent-2point64-billion-on-twitter-shares-so-far-this-year-new-filing-shows.html | 2026-11-25 | HIGH |
+| 3 | 25 April 2022 dewan Twitter menerima tawaran; nilai akuisisi sekitar $44 miliar | "Elon Musk acquires Twitter for roughly $44 billion", MacMillan dkk. / The Washington Post, 2022 | https://www.washingtonpost.com/technology/2022/04/25/twitter-elon-musk-deal/ | 2026-11-25 | HIGH |
+| 4 | 8 Juli 2022 Musk menyatakan membatalkan kesepakatan, menuduh Twitter "material breach" soal data akun bot; Twitter menggugat di Delaware Court of Chancery | "Elon Musk terminating Twitter deal", Greg Roumeliotis / Reuters, 2022 | https://www.reuters.com/technology/elon-musk-terminating-twitter-deal-2022-07-08/ | 2026-11-25 | HIGH |
+| 5 | Kesepakatan rampung akhir Oktober 2022 (27/28 Okt), sebelum sidang (dijadwalkan pekan 17 Okt); Musk langsung memecat petinggi termasuk CEO Parag Agrawal; Twitter dilebur ke X Corp. | "Acquisition of Twitter by Elon Musk", Wikipedia (rev. diakses 2026-11-25) | https://en.wikipedia.org/wiki/Acquisition_of_Twitter_by_Elon_Musk | 2026-11-25 | MEDIUM |
+| 6 | Pembiayaan: rencana awal $13 miliar utang bank dibebankan ke Twitter, biaya bunga + fee diperkirakan ±$1 miliar per tahun | "Elon Got His Money", Matt Levine / Bloomberg Opinion, 2022 (dirangkum Wikipedia #5) | https://www.bloomberg.com/opinion/articles/2022-04-21/elon-got-his-money | 2026-11-25 | MEDIUM |
+| 7 | 4 November 2022 sekitar separuh karyawan Twitter di-PHK | "Elon Musk's Twitter lays off employees across the company", O'Sullivan & Duffy / CNN, 2022 | https://www.cnn.com/2022/11/03/tech/twitter-layoffs/index.html | 2026-11-25 | HIGH |
+| 8 | Centang biru dijadikan langganan berbayar; akun peniru Eli Lilly menyebar twit palsu, Eli Lilly menghentikan iklan di Twitter | "A fake tweet sparked panic at Eli Lilly and may have cost Twitter millions", Drew Harwell / The Washington Post, 2022 | https://www.washingtonpost.com/technology/2022/11/14/twitter-fake-eli-lilly/ | 2026-11-25 | HIGH |
+| 9 | 4 Sept 2023 Musk sendiri menulis pendapatan iklan X di AS "still down 60%" (klaim pemilik, bukan laporan keuangan) | Posting Elon Musk di X, 4 Sept 2023 (dikutip Wikipedia "Twitter under Elon Musk") | https://x.com/elonmusk/status/1698755938541330907 | 2026-11-25 | MEDIUM |
+| 10 | Fidelity (menyetor ±$300 juta ke akuisisi) menurunkan nilai kepemilikan Twitter/X sebesar 65% (Okt 2023) | "Fidelity has marked down the value of Twitter/X by 65%", Dan Primack / Axios, 2023 | https://www.axios.com/2023/10/29/fidelity-twitter-x-value-elon-musk | 2026-11-25 | HIGH |
+| 11 | Twitter berganti nama jadi X pada 23 Juli 2023; logo burung diganti X keesokan harinya | "Twitter's rebrand to X may actually be happening soon", Wes Davis / The Verge, 2023 | https://www.theverge.com/2023/7/23/23804629/twitters-rebrand-to-x-may-actually-be-happening-soon | 2026-11-25 | HIGH |
+| 12 | 28 Maret 2025 Musk mengumumkan xAI mengakuisisi X lewat transaksi saham; nilai X $45 miliar termasuk utang ($33 miliar ekuitas) | "Elon Musk says he sold X to his AI company", Lisa Eadicicco / CNN, 2025 | https://www.cnn.com/2025/03/28/business/elon-musk-sells-x-to-xai | 2026-11-25 | HIGH |

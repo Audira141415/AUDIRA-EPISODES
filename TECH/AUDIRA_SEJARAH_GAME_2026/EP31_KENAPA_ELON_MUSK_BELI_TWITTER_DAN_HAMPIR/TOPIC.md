@@ -5,7 +5,11 @@ title: "Kenapa Elon Musk Beli Twitter dan Hampir Menghancurkannya"
 hook: "Akuisisi $44 miliar yang mengubah media sosial selamanya"
 styleCandidates: ["BROADCASTFORGE (2D)", "CHRONICLE (2D)", "DATAPHYSICAL (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Tokoh nyata hidup (tanpa wajah/logo asli); angka iklan −60% hanya klaim Musk dan nilai X 2025 adalah transaksi internal, wajib diberi label."
 ---
 
 # Kenapa Elon Musk Beli Twitter dan Hampir Menghancurkannya

@@ -5,7 +5,11 @@ title: "Kenapa Tim Nasional Indonesia Tidak Pernah Lolos Piala Dunia"
 hook: "Analisis jujur 60 tahun kegagalan yang jarang dibahas media"
 styleCandidates: ["TACTICBOARD (2D)", "DATAPHYSICAL (2D)", "PRECISION (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 5
+awet: ya
+risiko: "Judul perlu dipertegas (Hindia Belanda tampil 1938, hook '60 tahun' seharusnya ±68 tahun); isu politik Israel 1958 dan intervensi pemerintah 2015 harus dinarasikan netral; peringkat FIFA cepat berubah."
 ---
 
 # Kenapa Tim Nasional Indonesia Tidak Pernah Lolos Piala Dunia

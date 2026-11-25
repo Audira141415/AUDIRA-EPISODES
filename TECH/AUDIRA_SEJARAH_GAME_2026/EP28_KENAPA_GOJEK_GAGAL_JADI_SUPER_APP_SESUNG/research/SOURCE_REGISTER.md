@@ -1,33 +1,17 @@
-# SOURCE_REGISTER — `Sejarah game yang viral dan jarang diketahui`
+# Source Register — Kenapa Gojek Gagal Jadi Super App Sesungguhnya
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Gojek didirikan 2010 dengan 20 pengemudi ojek (berawal sebagai call center); aplikasi rilis Januari 2015 | Gojek, Wikipedia (en), 2026 | https://en.wikipedia.org/wiki/Gojek | 2026-11-25 | MEDIUM |
+| 2 | Pada 2018 Gojek punya 18 layanan on-demand (GoFood, GoMart, bersih-bersih, styling, pijat, dll.); GoTo dibentuk 17 Mei 2021; IPO 11 April 2022 di Rp338/saham; Gojek Thailand dijual ke AirAsia Juli 2021; GoPlay dijual September 2023; GoTo tersisa 25% Tokopedia; laba bersih kuartalan pertama sejak merger dilaporkan April 2026 (mengutip Reuters) | GoTo (Indonesian company), Wikipedia (en), 2026 | https://en.wikipedia.org/wiki/GoTo_(Indonesian_company) | 2026-11-25 | MEDIUM |
+| 3 | Mei 2018 Go-Jek umumkan investasi ±US$500 juta untuk masuk Vietnam, Thailand, Singapura, Filipina; valuasi saat itu US$5 miliar | Indonesia's ride-hailing firm Go-Jek to invest $500 million in four new markets, Saheli Roy Choudhury / CNBC, 2018 | https://www.cnbc.com/2018/05/23/indonesias-go-jek-announces-500-million-expansion.html | 2026-11-25 | HIGH |
+| 4 | Go-Viet meluncur 1 Agustus 2018 di 12 distrik Ho Chi Minh City; Grab saat itu sudah ada di 39 kota di Vietnam | Go-Jek kicks off Southeast Asia expansion with Vietnam launch, Jon Russell / TechCrunch, 2018 | https://techcrunch.com/2018/08/01/go-jek-vietnam-launch/ | 2026-11-25 | HIGH |
+| 5 | Juni 2020 Gojek PHK 430 karyawan (±9% tenaga kerja) dan menutup GoLife (pijat, bersih-bersih) serta GoFood Festival karena permintaan anjlok saat pandemi | Gojek lays off 430 employees amid pandemic impact, Eisya A. Eloksari / The Jakarta Post, 2020 | https://www.thejakartapost.com/news/2020/06/24/gojek-lays-off-430-employees-amid-pandemic-impact.html | 2026-11-25 | HIGH |
+| 6 | GoLife (cleaning, massage, laundry) ditutup; judul menyebut pandemi "puts brakes on super app" | Gojek to shut GoLife, lay off 430 employees as pandemic puts brakes on super app, Coconuts Jakarta, 2020 | https://coconuts.co/jakarta/news/gojek-to-shut-golife-lay-off-430-employees-as-pandemic-puts-brakes-on-super-app/ | 2026-11-25 | MEDIUM |
+| 7 | Merger Gojek–Tokopedia jadi GoTo (17 Mei 2021): valuasi gabungan lampau US$18 miliar, GTV 2020 > US$22 miliar, > 1,8 miliar transaksi, > 100 juta MAU, klaim > 2% PDB Indonesia | Indonesia's internet start-ups Gojek and Tokopedia announce merger, Saheli Roy Choudhury / CNBC, 2021 | https://www.cnbc.com/2021/05/17/goto-indonesia-internet-start-ups-gojektokopedia-announce-merger.html | 2026-11-25 | HIGH |
+| 8 | GoTo menghimpun US$1,3 miliar pra-IPO (November 2021) | Indonesia's tech startup GoTo raises $1.3 billion ahead of IPO, Yoolim Lee / Bloomberg via Fortune, 2021 | https://fortune.com/2021/11/11/goto-indonesia-tech-giants-gojek-tokopedia-raise-1-3-billion-ahead-of-ipo/ | 2026-11-25 | HIGH |
+| 9 | GOTO listing di BEI 11 April 2022; 16 Oktober 2023 saham sempat ke all-time low Rp54/saham (intraday) | Saham GOTO Babak Belur, Nadiem Makarim Sudah Jual Semua?, CNBC Indonesia, 2023 | https://www.cnbcindonesia.com/market/20231017012921-17-481071/saham-goto-babak-belur-nadiem-makarim-sudah-jual-semua | 2026-11-25 | HIGH |
+| 10 | Desember 2023 ByteDance (induk TikTok) menguasai 75% Tokopedia, investasi US$1,5 miliar (±Rp23,38 triliun); CEO Patrick Walujo menyebutnya pilihan untuk bertahan | Buka-bukaan Bos GoTo Alasan Tokopedia Dilepas ke TikTok, Chandra Dwi / CNBC Indonesia, 2024 | https://www.cnbcindonesia.com/research/20240130015142-128-509991/buka-bukaan-bos-goto-alasan-tokopedia-dilepas-ke-tiktok | 2026-11-25 | HIGH |
+| 11 | Gojek menutup operasi di Vietnam pada 16 September 2024 | Gojek, Wikipedia (vi), 2026 | https://vi.wikipedia.org/wiki/Gojek | 2026-11-25 | MEDIUM |

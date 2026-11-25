@@ -1,33 +1,15 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Statistik Erling Haaland yang Membuat Semua Striker Merasa Tidak Berguna
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Musim debut di City (2022/23) menghasilkan rekor 36 gol Premier League; gol ke-100 Premier League dicetak di laga ke-111 (vs Fulham), memecahkan rekor Alan Shearer (laga ke-124, 1995) | Man City's Erling Haaland breaks Alan Shearer record with 100th goal, ESPN, 2025 | https://www.espn.com/soccer/story/_/id/47051666/manchester-city-erling-haaland-alan-shearer-premier-league-100-goal-record | 2026-11-25 | HIGH |
+| 2 | Haaland mencetak 52 gol di semua kompetisi pada musim debutnya bersama Manchester City; meraih PFA Players' Player of the Year | Haaland wins PFA men's players' player of the year, BBC Sport, 2023 | https://www.bbc.co.uk/sport/football/66650723 | 2026-11-25 | HIGH |
+| 3 | Gol Premier League ke-35 (Mei 2023) memecahkan rekor gol terbanyak semusim liga; FWA Footballer of the Year dengan 82% suara | Haaland and Kerr win Football Writers' awards, BBC Sport, 2023 | https://www.bbc.co.uk/sport/football/65568277 | 2026-11-25 | HIGH |
+| 4 | Sembilan gol dalam lima laga Premier League pertama = terbanyak dalam sejarah kompetisi (rekor lama 8: Mick Quinn, Sergio Agüero); hat-trick di laga beruntun | Haaland voted August EA SPORTS Player of the Month, Premier League, 2022 | https://www.premierleague.com/news/2787350 | 2026-11-25 | HIGH |
+| 5 | 14 gol dalam 8 laga Premier League pertama, termasuk hat-trick di tiga laga kandang beruntun; di satu laga hanya 8 sentuhan di babak pertama | Premier League records beware: Erling Haaland has landed, Richard Foster / The Guardian, 2022 | https://www.theguardian.com/football/2022/oct/06/premier-league-records-erling-haaland-alan-shearer-andy-cole-sergio-aguero | 2026-11-25 | HIGH |
+| 6 | Tercepat mencapai 50 kontribusi gol Premier League: 39 laga (rekor lama Andy Cole, 43 laga) | Haaland makes more Premier League history, Premier League, 2023 | https://www.premierleague.com/news/3666939 | 2026-11-25 | HIGH |
+| 7 | Gol ke-100 untuk City menyamai rekor Cristiano Ronaldo sebagai tercepat 100 gol untuk satu klub Eropa (22 Sep 2024 vs Arsenal) | Erling Haaland nets 100th Man City goal, ties Cristiano Ronaldo record, ESPN, 2024 | https://www.espn.com/soccer/story/_/id/41301639/erling-haaland-100th-man-city-goal-cristiano-ronaldo-record | 2026-11-25 | HIGH |
+| 8 | 36 gol dari 35 laga liga 2022/23; 52 gol dari 53 laga semua kompetisi; melewati rekor bersama Shearer & Cole (34); City treble (liga, Piala FA, Liga Champions), treble kontinental kedua klub Inggris; tercepat 50 gol Liga Champions (49 laga, Sep 2025); gol ke-100 PL 2 Des 2025 | Erling Haaland, Wikipedia (rev. diakses 2026-11-25) | https://en.wikipedia.org/wiki/Erling_Haaland | 2026-11-25 | MEDIUM |
+| 9 | Timnas Norwegia: 50 gol internasional dalam 46 laga (Okt 2025); top skor sepanjang masa Norwegia sejak Okt 2024 | Erling Haaland, Wikipedia (rev. diakses 2026-11-25) | https://en.wikipedia.org/wiki/Erling_Haaland | 2026-11-25 | MEDIUM |

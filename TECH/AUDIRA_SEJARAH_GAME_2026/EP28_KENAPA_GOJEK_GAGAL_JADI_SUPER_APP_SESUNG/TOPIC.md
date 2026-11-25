@@ -5,7 +5,11 @@ title: "Kenapa Gojek Gagal Jadi Super App Sesungguhnya"
 hook: "Visi besar, eksekusi berantakan — apa yang bisa dipelajari"
 styleCandidates: ["BROADCASTFORGE (2D)", "DATAPHYSICAL (2D)", "CHRONICLE (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya   # tidak = fakta cepat basi (rekor, harga, produk)
+risiko: "Judul terlalu mutlak (GoTo laba per April 2026); tanggal keluar Vietnam dan laba 2026 masih sumber MEDIUM; hindari logo merek asli."
 ---
 
 # Kenapa Gojek Gagal Jadi Super App Sesungguhnya

@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris` (`EP63`)
+# Naskah — Kenapa Tim Nasional Indonesia Tidak Pernah Lolos Piala Dunia
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **10** · estimasi **4 dtk**
+- Visual: Close-up bola kulit cokelat tua 1938 berputar di rumput; teks kinetik "PIALA DUNIA" lalu "BUKAN SEBAGAI INDONESIA" menghentak. Tanpa wajah orang nyata.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Indonesia pernah main di Piala Dunia. Tapi bukan sebagai Indonesia.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Peta Eropa 1938, pin menyala di Reims, Prancis; papan skor stadion klasik membalik ke HUD "HINDIA BELANDA 0–6 HUNGARIA"; callout "1938 · TIM ASIA PERTAMA". Siluet pemain berkacamata (kapten) tanpa wajah.
 
-> <konteks singkat + "Di Audira, ...">
+> Tahun 1938, Hindia Belanda jadi tim Asia pertama di Piala Dunia. Di Reims, Prancis, mereka dihajar Hungaria enam-nol. Sejak merdeka, Garuda belum pernah lolos sekali pun. Kenapa?
 
-## c02 — <Judul Bab 1>
+## c02 — 1958: Tiket yang Dilepas
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Bracket kualifikasi 1958 di papan taktik: panah Indonesia lolos melewati Cina, lalu kotak lawan berikutnya tertutup cap merah "MENOLAK BERTANDING"; HUD "1958". Tanpa bendera/logo resmi organisasi.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Peluang pertama datang di kualifikasi 1958. Indonesia menyingkirkan Cina, lalu menolak bertanding melawan Israel karena alasan politik. Tiket lepas tanpa satu pun tendangan.
 
-## c03 — <Judul Bab 2>
+## c03 — Luka Buatan Sendiri
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Lapangan dibelah retakan menjadi dua liga (label generik "LIGA A / LIGA B", HUD "2012"); lalu gembok dan rantai mengunci gawang, cap "DIBEKUKAN" + kalender "30 MEI 2015"; HUD "KUALIFIKASI 2018 HILANG".
 
-> <teks narasi>
+> Luka berikutnya buatan sendiri. Tahun 2012, liga kita terbelah dua. Lalu 30 Mei 2015, FIFA membekukan PSSI karena campur tangan pemerintah. Indonesia terhenti di kualifikasi Piala Dunia 2018.
 
-## c04 — <Judul Bab 3>
+## c04 — Angin Berbalik
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Stadion malam menyala, tangga naik bertuliskan PUTARAN 1–2–3–4 dinaiki bola; callout skor "2–0 ARAB SAUDI" dan "1–0 CINA", HUD "2024: PERTAMA KALI PUTARAN KETIGA".
 
-> <teks narasi>
+> Lalu angin berbalik. Tahun 2024, Garuda tembus putaran ketiga untuk pertama kalinya. Arab Saudi dikalahkan dua-nol. Cina ditekuk satu-nol. Indonesia masuk putaran keempat.
 
-## c05 — <Judul Bab 4>
+## c05 — Dua Laga Terakhir
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Stadion tandang, lampu sorot redup; dua papan skor jatuh berurutan "2–3" dan "0–1"; counter poin turun ke "0 POIN"; bola berhenti tepat di garis pintu yang menutup.
 
-> <teks narasi>
+> Oktober 2025, tinggal dua laga di kandang Arab Saudi. Kalah tiga-dua dari tuan rumah. Kalah satu-nol dari Irak. Nol poin. Mimpi berhenti di langkah terakhir.
 
-## c06 — <Judul Bab 5>
+## c06 — Pola Hampir Tujuh Dekade
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Timeline horizontal 1957–2025 dengan tiga label berulang: POLITIK, KONFLIK PENGURUS, KOMPETISI TIDAK STABIL; kursi pelatih kosong berputar (pintu putar) dengan callout "16 OKT 2025".
 
-> <teks narasi>
+> Masalahnya bukan satu pelatih. Hampir tujuh dekade, polanya sama: politik, konflik pengurus, dan kompetisi yang tidak stabil. Pelatih datang dan pergi, Kluivert dilepas enam belas Oktober.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **12 dtk**
+- Visual: Hero shot: gawang megah di ujung lorong stadion, pintu raksasa setengah terbuka, golden hour; callout "JAN 2026 · JOHN HERDMAN" (name plate teks, tanpa wajah); tulisan AUDIRA di papan stadion; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Tapi kali ini Garuda sudah berdiri tepat di depan pintu. Januari 2026, John Herdman datang. Tinggal satu pertanyaan: pintunya kita dobrak, atau kita ketuk lagi empat tahun? Ikuti terus AUDIRA.
+
+## Opsi hook lain
+
+1. Enam puluh delapan tahun mencoba, dan Garuda belum pernah sekali pun lolos ke Piala Dunia.
+2. Oktober 2025, Indonesia cuma butuh dua laga untuk ke Piala Dunia. Hasilnya nol poin.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **192 kata** ≈ **77–85 dtk**

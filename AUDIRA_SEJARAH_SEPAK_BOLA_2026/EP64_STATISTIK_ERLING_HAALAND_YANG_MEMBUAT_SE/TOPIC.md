@@ -5,7 +5,11 @@ title: "Statistik Erling Haaland yang Membuat Semua Striker Merasa Tidak Berguna
 hook: "50 gol dalam satu musim Premier League — rekor yang dianggap mustahil"
 styleCandidates: ["DATAPHYSICAL (2D)", "BROADCASTFORGE (2D)", "SCALEFORGE (3D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak   # tidak = fakta cepat basi (rekor, harga, produk)
+risiko: "Hook asli salah (50 gol PL; faktanya 36 PL / 52 semua kompetisi), angka karier terus berubah, dan pemain nyata: tanpa wajah asli dan logo klub/liga."
 ---
 
 # Statistik Erling Haaland yang Membuat Semua Striker Merasa Tidak Berguna

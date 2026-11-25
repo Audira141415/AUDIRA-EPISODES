@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP28`)
+# Naskah — Kenapa Gojek Gagal Jadi Super App Sesungguhnya
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **16** · estimasi **7 dtk**
+- Visual: Layar ponsel raksasa penuh 18 ikon layanan; ikon mulai rontok satu per satu, padam jadi abu-abu. HUD: "2018 · 18 LAYANAN".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Tahun 2018, satu aplikasi ojek dari Jakarta punya delapan belas layanan. Kenapa sekarang banyak yang hilang?
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Meja call center kecil dengan telepon, lalu 20 motor ojek berjajar di jalan Jakarta; transisi ke ponsel yang memunculkan app. HUD: "2010 · 20 DRIVER" lalu "2015 · APP RILIS".
 
-> <konteks singkat + "Di Audira, ...">
+> Gojek lahir tahun 2010 sebagai call center ojek dengan dua puluh pengemudi. Aplikasinya baru rilis 2015, lalu meledak.
 
-## c02 — <Judul Bab 1>
+## c02 — Ekspansi regional
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Peta Asia Tenggara; panah hijau dari Jakarta ke Vietnam, Thailand, Singapura, Filipina. Zoom ke Ho Chi Minh City: 12 distrik menyala hijau, di sekitarnya 39 pin kota milik pesaing (warna netral, tanpa logo). HUD: "US$500 JUTA · 4 NEGARA", "12 DISTRIK vs 39 KOTA".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tahun 2018, Gojek siapkan lima ratus juta dolar untuk masuk Vietnam, Thailand, Singapura, dan Filipina. Di Vietnam mereka mulai dari dua belas distrik, padahal Grab sudah di tiga puluh sembilan kota.
 
-## c03 — <Judul Bab 2>
+## c03 — Layanan dipangkas
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Rak ikon layanan seperti etalase toko; ikon pijat dan sapu ditarik keluar, lampu etalase padam. Barisan meja kantor yang kosong. HUD: "JUNI 2020 · GOLIFE TUTUP", "430 PHK".
 
-> <teks narasi>
+> Di rumah sendiri, layanan mulai dipangkas. Juni 2020, GoLife berisi jasa pijat dan bersih-bersih ditutup, dan empat ratus tiga puluh karyawan kena PHK.
 
-## c04 — <Judul Bab 3>
+## c04 — Merger dan IPO
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Dua menara kantor (hijau dan hijau muda, tanpa logo) bergeser dan menyatu jadi satu menara bertuliskan "GoTo"; lonceng bursa, papan harga naik. HUD: "MEI 2021 · US$18 MILIAR", "IPO RP338".
 
-> <teks narasi>
+> Mei 2021, Gojek merger dengan Tokopedia jadi GoTo, nilai gabungannya delapan belas miliar dolar. April 2022 GoTo melantai di bursa, harga tiga ratus tiga puluh delapan rupiah.
 
-## c05 — <Judul Bab 4>
+## c05 — Runtuh dan dilepas
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Grafik saham merah jatuh tajam dari 338 ke 54; menara GoTo retak, potongan 75% lepas dan diangkut keluar frame. Peta kecil: Thailand dan Vietnam padam. HUD: "RP54 · per 16 OKT 2023", "75% TOKOPEDIA → BYTEDANCE", "TH 2021 · VN 2024".
 
-> <teks narasi>
+> Oktober 2023, sahamnya sempat jatuh ke lima puluh empat rupiah. Desember, tujuh puluh lima persen Tokopedia dilepas ke ByteDance, induk TikTok. Thailand dijual 2021, Vietnam ditutup 2024.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Diagram piramida: satu pilar "layanan harian yang untung" menopang balok-balok layanan lain; versi Gojek: balok ditumpuk lebih cepat dari pilar tumbuh, menara miring. Panah uang terbakar ke peta pasar pesaing. HUD: "LAYANAN BERTAMBAH > LABA".
 
-> <teks narasi>
+> Masalahnya bukan visi. Super app butuh satu layanan harian yang untung untuk menopang yang lain. Gojek menambah layanan lebih cepat daripada membuatnya untung, lalu bakar uang di pasar tempat Grab lebih dulu besar.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **34** · estimasi **14 dtk**
+- Visual: Ponsel kembali, kini hanya ikon motor dan dompet yang menyala terang; grafik laba hijau naik tipis. Golden hour di jalan Jakarta, satu motor ojek melaju. Papan HUD "AUDIRA TECH" lalu outro card. HUD: "APRIL 2026 · LABA KUARTALAN PERTAMA".
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Sekarang GoTo fokus ke Gojek dan GoPay, dan baru April 2026 mencatat laba bersih kuartalan pertamanya. Pelajarannya, menang di sedikit hal lebih penting daripada hadir di semua hal. Sejarah teknologi lain, ada di AUDIRA.
+
+## Opsi hook lain
+
+1. Gojek pernah jual jasa pijat, bersih-bersih, sampai film. Sekarang? Hampir semuanya hilang.
+2. Rp338 jadi Rp54. Ini cerita super app Indonesia yang terlalu cepat membesar.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **209 kata** ≈ **84–93 dtk**

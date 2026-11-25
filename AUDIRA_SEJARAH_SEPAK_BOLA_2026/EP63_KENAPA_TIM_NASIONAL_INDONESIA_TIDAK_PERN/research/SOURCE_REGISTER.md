@@ -1,33 +1,18 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Kenapa Tim Nasional Indonesia Tidak Pernah Lolos Piala Dunia
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Hindia Belanda (kini Indonesia) adalah tim Asia pertama yang tampil di Piala Dunia, edisi 1938 di Prancis; debut melawan Hungaria pada 5 Juni 1938 | Dutch East Indies: Asia's first World Cup participants, FIFA (Inside FIFA), 2020 | https://inside.fifa.com/tournaments/mens/worldcup/1938france/news/dutch-east-indies--asias-first-world-cup-participants-3073794 | 2026-11-25 | HIGH |
+| 2 | Di Reims, Hindia Belanda kalah 0–6 dari Hungaria (skor 4–0 saat jeda); kapten Achmad Nawir bermain berkacamata; Hungaria lalu kalah 2–4 dari Italia di final | Asia's World Cup debutants: Dutch East Indies, the-AFC.com (Asian Football Confederation) | https://www.the-afc.com/en/national/fifa_world_cup/news/asias_world_cup_debutants_dutch_east_indies.html | 2026-11-25 | HIGH |
+| 3 | Hindia Belanda digunduli 0–6 oleh Hungaria di Piala Dunia 1938 dan langsung tersingkir karena sistem gugur | Piala Dunia 1938 dan timnas Hindia Belanda: Kakek saya 'mencetak gol' di Piala Dunia 1938, Heyder Affan, BBC News Indonesia, 2018 | https://www.bbc.com/indonesia/indonesia-44479045 | 2026-11-25 | HIGH |
+| 4 | Putaran keempat kualifikasi AFC (Grup B, tuan rumah Arab Saudi): 8 Okt 2025 Indonesia 2–3 Arab Saudi; 11 Okt 2025 Irak 1–0 Indonesia; Indonesia 0 poin, tersingkir | Asian (AFC) 2026 World Cup qualifying schedule, results, table, NBC Sports, 2025 | https://www.nbcsports.com/soccer/news/asian-afc-2026-world-cup-qualifying-schedule-results-table | 2026-11-25 | HIGH |
+| 5 | Putaran ketiga: 19 Nov 2024 Indonesia 2–0 Arab Saudi; 5 Jun 2025 Indonesia 1–0 Cina; Indonesia finis ke-4 Grup C dengan 12 poin | Asian (AFC) 2026 World Cup qualifying schedule, results, table, NBC Sports, 2025 | https://www.nbcsports.com/soccer/news/asian-afc-2026-world-cup-qualifying-schedule-results-table | 2026-11-25 | HIGH |
+| 6 | 16 Oktober 2025: PSSI dan tim kepelatihan timnas (Patrick Kluivert) sepakat mengakhiri kerja sama lebih awal | PSSI dan Tim Kepelatihan Timnas Sepakat Akhiri Kerja Sama Lebih Awal, PSSI, 2025 | https://www.pssi.org/news/pssi-dan-tim-kepelatihan-timnas-sepakat-akhiri-kerja-sama-lebih-awal | 2026-11-25 | HIGH |
+| 7 | 3 Januari 2026: PSSI resmi menunjuk John Herdman sebagai pelatih timnas Indonesia | Resmi! PSSI Tunjuk John Herdman, Arsitek Level Piala Dunia Siap Bawa Garuda Masuki Era Baru, PSSI, 2026 | https://www.pssi.org/news/resmi-pssi-tunjuk-john-herdman-arsitek-level-piala-dunia-siap-bawa-garuda-masuki-era-baru | 2026-11-25 | HIGH |
+| 8 | Kualifikasi Piala Dunia 1958 (dimainkan 1957): Indonesia menyingkirkan Cina, lalu menolak bertanding melawan Israel karena alasan politik | Indonesia national football team, Wikipedia (dengan kutipan), revisi per 2026-11-25 | https://en.wikipedia.org/wiki/Indonesia_national_football_team | 2026-11-25 | MEDIUM |
+| 9 | Maret 2012: sepak bola Indonesia terbelah dua liga (ISL dan IPL); 30 Mei 2015 FIFA membekukan PSSI karena campur tangan pemerintah, Indonesia tak bisa lanjut di kualifikasi Piala Dunia 2018 dan Piala Asia 2019; sanksi dicabut di Kongres FIFA ke-66 (2016) | Indonesia national football team, Wikipedia (dengan kutipan), revisi per 2026-11-25 | https://en.wikipedia.org/wiki/Indonesia_national_football_team | 2026-11-25 | MEDIUM |
+| 10 | Juni 2024: Indonesia runner-up Grup F putaran kedua dan lolos ke putaran ketiga kualifikasi Piala Dunia untuk pertama kali dalam sejarah | Indonesia national football team, Wikipedia (dengan kutipan), revisi per 2026-11-25 | https://en.wikipedia.org/wiki/Indonesia_national_football_team | 2026-11-25 | MEDIUM |
+| 11 | Saat Herdman ditunjuk (Jan 2026) Indonesia peringkat 122 FIFA; per Oktober 2026 naik ke peringkat 116 | Indonesia national football team, Wikipedia (dengan kutipan), revisi per 2026-11-25 | https://en.wikipedia.org/wiki/Indonesia_national_football_team | 2026-11-25 | MEDIUM |
+| 12 | Sebelum Curaçao (2026), Hindia Belanda satu-satunya tim yang lolos Piala Dunia sebelum menjadi negara merdeka | Indonesia national football team, Wikipedia (dengan kutipan), revisi per 2026-11-25 | https://en.wikipedia.org/wiki/Indonesia_national_football_team | 2026-11-25 | MEDIUM |
