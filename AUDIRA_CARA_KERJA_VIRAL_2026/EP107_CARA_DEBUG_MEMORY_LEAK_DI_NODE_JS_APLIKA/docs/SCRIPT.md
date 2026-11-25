@@ -1,93 +1,69 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP107`)
+# Naskah — Cara Debug Memory Leak di Node.js Aplikasi
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: grafik memori server menanjak seperti tangga tanpa pernah turun, lampu merah menyala, lalu layar terminal menulis "heap out of memory".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Aplikasi Node.js kamu makin lambat tiap jam, lalu mati sendiri? Itu hampir pasti memory leak, dan polanya bisa dibaca.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **12 dtk**
+- Visual: tempat sampah (garbage collector) membuang objek tak terhubung; satu objek tertahan oleh tali dari array global bertuliskan "cache".
 
-> <konteks singkat + "Di Audira, ...">
+> Di Node.js, garbage collector membuang objek yang sudah tidak terjangkau. Kalau masih ada satu referensi tersisa, misalnya di cache global yang tak pernah dikosongkan, objek itu hidup terus. Itulah leak.
 
-## c02 — <Judul Bab 1>
+## c02 — Baca polanya dengan trace-gc
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: log terminal bergulir, callout HUD "102 MB → 117 MB", objek berpindah dari young space ke old space setelah dua Scavenge.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Pertama, lihat polanya. Jalankan Node dengan flag trace-gc. Kalau memori setelah GC naik terus, dari sekitar 102 megabita ke 117 dan seterusnya, itu tanda leak.
 
-## c03 — <Judul Bab 2>
+## c03 — Pantau memoryUsage
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: panel HUD tiga meteran: heapUsed, external, arrayBuffers; jarum satu meteran terus naik.
 
-> <teks narasi>
+> Kedua, pantau process memoryUsage. Lihat heapUsed, external, dan arrayBuffers. Yang naik menunjukkan bocornya di heap JavaScript atau di luar heap.
 
-## c04 — <Judul Bab 3>
+## c04 — Ambil heap snapshot
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: kamera memotret isi memori; ikon sinyal SIGUSR2 masuk ke proses; tanda peringatan menyala, jam berputar, balok memori berlipat dua.
 
-> <teks narasi>
+> Ketiga, ambil heap snapshot. Pakai heapsnapshot-signal SIGUSR2, atau panggil writeHeapSnapshot dari modul v8. Hati-hati. Snapshot menghentikan thread utama, bisa lebih dari semenit, dan butuh memori sekitar dua kali heap.
 
-## c05 — <Judul Bab 4>
+## c05 — Bandingkan dua snapshot
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **12 dtk**
+- Visual: dua snapshot berdampingan di DevTools, tampilan Comparison, baris objek bertambah menyala, rantai retainers ditelusuri ke satu referensi.
 
-> <teks narasi>
+> Ambil snapshot pertama, ulangi fitur yang dicurigai, lalu ambil snapshot kedua. Buka di DevTools, pilih Comparison, cari objek yang bertambah. Urutkan dengan retained size, lalu telusuri retainers sampai ketemu referensi penahannya.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan: crash dan perbaikan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **10 dtk**
+- Visual: server mendekati batas heap, kamera otomatis memotret tiga kali sebelum padam; cache bocor diganti WeakMap yang tali-talinya putus saat kunci hilang.
 
-> <teks narasi>
+> Kalau keburu crash, pakai heapsnapshot-near-heap-limit sama dengan tiga. Node menulis snapshot sebelum heap habis. Perbaikannya, putus referensi tak terpakai, misalnya ganti cache tanpa batas dengan WeakMap.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: grafik memori berubah dari tangga menjadi gigi gergaji yang stabil; kartu empat langkah; outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Menaikkan max-old-space-size cuma memperbesar batas, bukan menutup kebocoran. Polanya selalu sama: pantau, snapshot, bandingkan, lepas referensi. Ikuti AUDIRA untuk panduan debugging berikutnya.
+
+## Opsi hook lain
+
+1. Server kamu restart sendiri tiap malam? Memorinya sedang bocor pelan-pelan.
+2. Tiga snapshot dan lima menit bisa menunjukkan objek yang menahan memori server kamu.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **202 kata** ≈ **81 dtk**

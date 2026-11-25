@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris` (`EP108`)
+# Naskah — Fakta Tersembunyi di Balik Sepak Bola Brasil Era Tahun 1970
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Papan skor bergulir enam kali di dataran tinggi Meksiko, tiap kali tertulis kemenangan Brasil; HUD angka besar "6 dari 6" menghentak; siluet tanpa wajah striker menyundul bola.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Brasil 1970 menang enam kali dari enam laga Piala Dunia. Dan pencetak gol di setiap laganya bukan Pelé.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Peta Meksiko, titik lima kota tuan rumah di dataran tinggi, HUD "1.500 m+", termometer "32°C", jam tengah hari di atas stadion.
 
-> <konteks singkat + "Di Audira, ...">
+> Ini AUDIRA. Meksiko, Juni 1970. Stadionnya di atas seribu lima ratus meter dari laut, suhu sering lewat tiga puluh dua derajat, dan banyak laga dimulai tengah hari demi televisi Eropa.
 
-## c02 — <Judul Bab 1>
+## c02 — Pelatih dan susunan pemain
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Papan taktik 3D, lima siluet playmaker berpindah posisi tanpa wajah, HUD "38 tahun" di samping papan.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Pelatihnya Zagallo, tiga puluh delapan tahun, baru ditunjuk menjelang turnamen. Dia juara dunia sebagai pemain pada 1958 dan 1962. Di tangannya, Brasil memainkan lima pemain bertipe nomor sepuluh sekaligus.
 
-## c03 — <Judul Bab 2>
+## c03 — Inggris lawan Brasil
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Stadion Guadalajara, siluet kiper menjatuhkan diri menepis sundulan, bola melayang, HUD "7 Juni 1970 · 1–0".
 
-> <teks narasi>
+> Lawan juara bertahan Inggris, Gordon Banks menepis sundulan Pelé dari jarak dekat. Pelé menyebutnya penyelamatan terbaik dalam kariernya. Brasil tetap menang satu kosong lewat gol Jairzinho.
 
-## c04 — <Judul Bab 3>
+## c04 — Jairzinho dan deretan skor
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Papan hasil enam laga muncul satu per satu, angka Jairzinho bertambah di tiap baris, HUD "7 gol · 6 laga".
 
-> <teks narasi>
+> Jairzinho mencetak tujuh gol, dan selalu menjebol gawang di keenam laga. Brasil menyarangkan sembilan belas gol. Rekor Jairzinho itu sampai kini belum ada yang menyamai.
 
-## c05 — <Judul Bab 4>
+## c05 — Aturan baru dan layar warna
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **14** · estimasi **6 dtk**
+- Visual: Kartu kuning dan merah muncul dari bawah, pemain pengganti masuk lapangan, layar televisi berwarna menyala di ruang tamu tahun 1970.
 
-> <teks narasi>
+> Turnamen ini serba pertama: pergantian pemain, kartu kuning dan merah, serta siaran langsung berwarna.
 
-## c06 — <Judul Bab 5>
+## c06 — Gol Carlos Alberto
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Lapangan taktis dari atas, garis umpan menyambung dari kiri ke kanan lewat siluet pemain, bek sayap kanan menyerbu, HUD "menit ke-87".
 
-> <teks narasi>
+> Final lawan Italia, 21 Juni. Italia menjaga satu lawan satu, jadi Zagallo menyuruh Jairzinho menyeret bek lawan ke kiri. Clodoaldo melewati empat pemain, Pelé menunggu sebentar, lalu kapten Carlos Alberto menyambar dari kanan.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Piala emas di rak kaca, kunci gembok, rak berubah kosong, HUD "1983", kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Empat satu. Tiga gelar membuat Brasil berhak menyimpan Piala Jules Rimet selamanya. Tapi Desember 1983, piala itu dicuri dan tak pernah ditemukan. AUDIRA mencatatnya.
+
+## Opsi hook lain
+
+1. Enam laga, tujuh gol, satu pemain yang selalu mencetak gol. Siapa dia?
+2. Gol terbaik Piala Dunia lahir dari umpan yang sengaja ditunggu.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **199 kata** ≈ **84 dtk**

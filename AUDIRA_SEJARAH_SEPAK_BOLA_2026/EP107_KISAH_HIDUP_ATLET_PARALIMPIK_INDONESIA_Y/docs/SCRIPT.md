@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris` (`EP107`)
+# Naskah — Kisah Hidup Atlet Paralimpik Indonesia yang Meraih Emas Bersejarah
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Siluet atlet tanpa wajah di lapangan bulu tangkis, satu kaki lebih pendek; HUD angka 7 cm menghentak.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Kaki kirinya tujuh sentimeter lebih pendek setelah kecelakaan motor. Sepuluh tahun kemudian, dia pulang dengan dua emas Paralimpiade.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Papan nama teks 'Leani Ratri Oktila', peta Sumatra menyorot Riau, kota Siabu berdenyut; tanpa wajah nyata.
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya Leani Ratri Oktila, atlet para bulu tangkis Indonesia. AUDIRA merangkum kisahnya dari data resmi Komite Paralimpiade Internasional.
 
-## c02 — <Judul Bab 1>
+## c02 — Akar di Siabu
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: Diorama desa di Riau, rumah sederhana, anak kecil siluet memegang raket; HUD '7 tahun' dan 'anak ke-2 dari 10'.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Dia lahir di Siabu, Riau, anak kedua dari sepuluh bersaudara. Orang tuanya mengenalkan bulu tangkis saat dia berumur tujuh tahun.
 
-## c03 — <Judul Bab 2>
+## c03 — Kecelakaan 2011
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Adegan gelap: sepeda motor dan mobil bertabrakan (low-poly, tanpa orang nyata), tempat tidur rumah sakit, HUD '2011' dan 'umur 20'.
 
-> <teks narasi>
+> Tahun 2011, umur dua puluh, motor yang dia tumpangi bertabrakan dengan mobil. Tangan dan kakinya patah. Kaki kirinya jadi tujuh sentimeter lebih pendek. Dia mengira bulu tangkis sudah selesai.
 
-## c04 — <Judul Bab 3>
+## c04 — Bangkit
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Siluet atlet kembali memegang raket di lapangan, kalender berputar satu tahun, medali pertama muncul; HUD '2014 Incheon'.
 
-> <teks narasi>
+> Tepat setahun setelah kecelakaan, dia memulai jalur olahraga para. Dua tahun kemudian, tahun 2014, dia sudah juara ganda campuran di Incheon, Korea Selatan. Lalu datang Paralimpiade.
 
-## c05 — <Judul Bab 4>
+## c05 — Tokyo 2020
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Stadion bulu tangkis 3D, skor besar 21-18 dan 21-12 menghentak, tiga medali berderet emas-emas-perak; HUD '4 Sept 2021'.
 
-> <teks narasi>
+> Bulu tangkis baru masuk Paralimpiade di Tokyo. Pada 4 September 2021, bersama Khalimatus Sadiyah, dia menang ganda putri 21-18, 21-12. Dia menambah emas ganda campuran bersama Hary Susanto, plus perak tunggal.
 
-## c06 — <Judul Bab 5>
+## c06 — Paris 2024 dan rekor dunia
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **37** · estimasi **15 dtk**
+- Visual: Peta dunia ke Thailand lalu Paris; enam piala juara dunia berjajar; HUD '6 gelar dunia' dan '2 Sept 2024'.
 
-> <teks narasi>
+> Februari 2024, dia juara dunia keenam kalinya, terbanyak untuk pemain para bulu tangkis putri. Di Paris, 2 September 2024, bersama Hikmat Ramdani dia menang ganda campuran 21-16, 21-15 atas sesama Indonesia. Dia juga membawa pulang perak tunggal.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Medali 3 emas 2 perak tersusun di rak piala 3D, siluet atlet mengangkat raket, kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Totalnya lima medali Paralimpiade: tiga emas dan dua perak. Kecelakaan itu mengubah jalannya, tapi tidak menghentikannya. Ikuti AUDIRA untuk kisah atlet Indonesia lainnya.
+
+## Opsi hook lain
+
+1. Lima medali Paralimpiade, dan semuanya bermula dari kecelakaan motor di umur dua puluh.
+2. Dia pernah mengira kariernya tamat. Ternyata dia baru mulai.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **202 kata** ≈ **84 dtk**

@@ -5,7 +5,11 @@ title: "Virus Bukan Makhluk Hidup, Tapi Bisa Mati — Ini Paradoksnya"
 hook: "Entitas misterius yang ada di batas antara hidup dan mati, dan sudah mengubah sejarah manusia"
 styleCandidates: ["NANOFORGE (3D)", "CERDIK (2D)", "CHAINREACTION (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul 'bisa mati' kurang tepat ilmiah (virus inaktif, bukan mati); status hidup/tak hidup masih debat; tidak ada GLB virus."
 ---
 
 # Virus Bukan Makhluk Hidup, Tapi Bisa Mati — Ini Paradoksnya

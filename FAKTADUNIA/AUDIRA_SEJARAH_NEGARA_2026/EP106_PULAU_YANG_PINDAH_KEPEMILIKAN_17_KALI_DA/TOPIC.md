@@ -5,7 +5,11 @@ title: "Pulau yang Pindah Kepemilikan 17 Kali dalam 400 Tahun"
 hook: "Pulau Saint Martin/Sint Maarten: direbut Prancis, Belanda, Spanyol, Inggris secara bergantian"
 styleCandidates: ["CHRONICLE (2D)", "HISTORYMAP (2D)", "TIMEFORGE (3D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Judul/hook '17 kali dalam 400 tahun' tidak terverifikasi; sumber bilang 16 perubahan batas 1648-1816, 3 dari 7 sumber HIGH saja."
 ---
 
 # Pulau yang Pindah Kepemilikan 17 Kali dalam 400 Tahun

@@ -5,7 +5,11 @@ title: "Rahasia Bisnis Nvidia: Bagaimana Chip GPU Jadi Raja AI"
 hook: "Perusahaan game chip yang tiba-tiba jadi paling berharga di dunia"
 styleCandidates: ["CIRCUITFORGE (2D)", "NANOFORGE (3D)", "CYBERFORGE (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak
+risiko: "Angka FY2026 dan nilai pasar cepat basi; hook 'tiba-tiba' tidak akurat; tanpa wajah Huang dan logo perusahaan (TECH)."
 ---
 
 # Rahasia Bisnis Nvidia: Bagaimana Chip GPU Jadi Raja AI

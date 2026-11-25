@@ -1,93 +1,69 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP108`)
+# Naskah — Open Source Contribution Pertama Kamu: Panduan Step by Step
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: karakter kartun duduk di laptop; layar menampilkan satu baris typo dengan coretan merah lalu centang hijau, HUD "typo = kontribusi".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Kontribusi open source pertama kamu nggak harus fix bug besar. Typo di dokumentasi pun dihitung. Ini caranya, langkah demi langkah, bareng AUDIRA.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **14 dtk**
+- Visual: tumpukan file kode raksasa menakutkan menyusut jadi satu halaman README; HUD "28%" lalu ikon dokumen, typo, terjemahan.
 
-> <konteks singkat + "Di Audira, ...">
+> Banyak orang mengira harus menulis kode rumit. Padahal panduan Open Source Guides dari GitHub bilang, dokumentasi justru sering terlupakan. Satu studi mencatat 28 persen kontribusi kasual berupa dokumentasi, seperti typo dan terjemahan.
 
-## c02 — <Judul Bab 1>
+## c02 — Langkah 1: pilih proyek
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: rak aplikasi yang dipakai sehari-hari (ikon generik, bukan logo nyata); satu dipilih, lalu daftar centang: LICENSE, commit terbaru, isu dibalas.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Langkah satu, pilih proyek yang sudah kamu pakai. Cek tiga hal: ada file LICENSE, commit terakhirnya masih baru, dan maintainer membalas isu.
 
-## c03 — <Judul Bab 2>
+## c03 — Langkah 2: cari isu pemula
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **34** · estimasi **14 dtk**
+- Visual: bilah alamat URL, di ujungnya diketik "/contribute"; lalu label hijau "good first issue" membesar, HUD angka 476 ribu.
 
-> <teks narasi>
+> Langkah dua, cari isu ramah pemula. Tambahkan garis miring contribute di ujung alamat repositori, atau cari label good first issue. Per 25 November 2026, GitHub mencatat lebih dari 476 ribu isu terbuka berlabel itu.
 
-## c04 — <Judul Bab 3>
+## c04 — Langkah 3: baca aturan main
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: dokumen CONTRIBUTING terbuka, poin aturan menyala satu per satu; balon komentar "saya ambil isu ini" muncul di bawah sebuah isu.
 
-> <teks narasi>
+> Langkah tiga, baca file CONTRIBUTING. Isinya aturan main proyek, dan GitHub menampilkannya saat kamu membuka isu atau pull request. Sebelum mengerjakan, tulis komentar di isunya.
 
-## c05 — <Judul Bab 4>
+## c05 — Langkah 4: fork dan pull request
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: diagram alur: repositori asli, salinan fork, branch baru, tanda panah pull request kembali ke repositori asli.
 
-> <teks narasi>
+> Langkah empat, fork repositorinya, buat branch sendiri, lalu ubah. Push ke fork kamu. Setelah itu buka pull request dari branch tersebut ke branch utama proyek aslinya.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan: komunikasi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: dua kartu bubble chat dibandingkan: pesan panjang berantakan dicoret, pesan singkat berkonteks dicentang; HUD "tetap di ruang publik".
 
-> <teks narasi>
+> Tulis deskripsinya singkat dan jelas: apa yang kamu ubah dan kenapa. Panduan itu juga menyarankan menjaga percakapan tetap publik, supaya orang lain ikut belajar.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: kartu First Contributions dengan HUD 56 ribu bintang; konfeti kecil saat pull request berstatus merged; kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Kalau butuh latihan, ada repositori First Contributions dengan lebih dari 56 ribu bintang. Mulai kecil, satu typo sudah cukup. Follow AUDIRA untuk panduan dev berikutnya.
+
+## Opsi hook lain
+
+1. Takut kontribusi open source karena merasa belum jago? Satu typo pun diterima.
+2. Empat langkah dari nol sampai pull request pertamamu.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **210 kata** ≈ **89 dtk**

@@ -5,7 +5,11 @@ title: "Kenapa Air Laut Asin tapi Air Sungai Tidak"
 hook: "Jawabannya melibatkan proses geologi jutaan tahun yang terjadi setiap hari tanpa kamu sadari"
 styleCandidates: ["FLUIDFORGE (3D)", "WORLDFORGE (3D)", "CERDIK (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Angka umur/waktu tinggal garam tidak diverifikasi; judul perlu nuansa (sungai juga mengandung garam sedikit)."
 ---
 
 # Kenapa Air Laut Asin tapi Air Sungai Tidak

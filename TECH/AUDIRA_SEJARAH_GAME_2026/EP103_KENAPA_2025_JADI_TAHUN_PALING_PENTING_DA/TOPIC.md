@@ -5,7 +5,11 @@ title: "Kenapa 2025 Jadi Tahun Paling Penting dalam Sejarah Teknologi"
 hook: "Konvergensi AI, robotika, dan komputasi kuantum — ini inflection point-nya"
 styleCandidates: ["BROADCASTFORGE (2D)", "DATAPHYSICAL (2D)", "CYBERFORGE (3D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Judul/hook subjektif (konvergensi AI-robotika-kuantum tidak terbukti); klaim kuantum dan Majorana milik vendor; Nvidia US$5T hanya dari Wikipedia."
 ---
 
 # Kenapa 2025 Jadi Tahun Paling Penting dalam Sejarah Teknologi

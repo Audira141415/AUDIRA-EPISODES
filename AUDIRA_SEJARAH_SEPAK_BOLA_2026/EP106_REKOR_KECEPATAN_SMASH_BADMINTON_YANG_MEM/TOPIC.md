@@ -5,7 +5,11 @@ title: "Rekor Kecepatan Smash Badminton yang Membuat Fisikawan Tercengang"
 hook: "493 km/jam — lebih cepat dari mobil balap Formula 1 saat akselerasi"
 styleCandidates: ["DATAPHYSICAL (2D)", "PRECISION (2D)", "SCALEFORGE (3D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak
+risiko: "Rekor bisa pecah; 565 km/jam adalah tes lab sponsor, hook 493 usang, sumber 565 hanya PTI/Indian Express (halaman Guinness tak terbuka)."
 ---
 
 # Rekor Kecepatan Smash Badminton yang Membuat Fisikawan Tercengang

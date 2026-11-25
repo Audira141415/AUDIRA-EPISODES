@@ -5,7 +5,11 @@ title: "Meta Quest 3 vs Apple Vision Pro: Mana yang Layak Dibeli?"
 hook: "Harga berbeda 10x lipat — tapi apakah Vision Pro 10x lebih baik?"
 styleCandidates: ["SCALEFORGE (3D)", "CYBERFORGE (2D)", "VOXELVERSE (3D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak
+risiko: "Hook '10x lipat' keliru (7x vs Quest 3); harga Vision Pro/Quest 3 berubah; tanpa logo Apple/Meta dan tanpa wajah nyata."
 ---
 
 # Meta Quest 3 vs Apple Vision Pro: Mana yang Layak Dibeli?

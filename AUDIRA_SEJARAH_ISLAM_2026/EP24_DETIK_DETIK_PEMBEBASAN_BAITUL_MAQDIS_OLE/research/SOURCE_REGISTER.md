@@ -1,33 +1,18 @@
-# SOURCE_REGISTER — `Sejarah peradaban Islam yang jarang diketahui`
+# Source Register — Detik-Detik Pembebasan Baitul Maqdis oleh Shalahuddin al-Ayyubi
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
+| 1 | Al-Isra 17:1: Masjidil Aqsa disebut dalam Al-Quran (teks Arab dan terjemah Kemenag) | Al-Quran, surah Al-Isra ayat 1 (Quran.com API v4, terjemah Kemenag) | https://api.quran.com/api/v4/verses/by_key/17:1?language=id&translations=33 | 2026-11-25 | HIGH |
+| 2 | "Jangan bersengaja melakukan perjalanan kecuali ke tiga masjid: Masjidil Haram, masjid Rasulullah, dan Masjidil Aqsa" (Abu Hurairah). Sahih | Sahih al-Bukhari no. 1189, Kitab Keutamaan Shalat di Masjid Makkah dan Madinah (Hadith API fawazahmed0, eng-bukhari) | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-bukhari/1189.json | 2026-11-25 | HIGH |
+| 3 | Hadis tiga masjid juga diriwayatkan Muslim (Abu Hurairah), sahih; penomoran API ini 3386 | Sahih Muslim (Hadith API fawazahmed0, eng-muslim, entri 3386) | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-muslim.min.json | 2026-11-25 | HIGH |
+| 4 | Pengepungan 20 Sep–2 Okt 1187; Balian dari Ibelin menyerahkan kota; tembok jebol 29 Sep; kurang dari 14 ksatria, 60 ksatria baru; ancaman Balian (hancurkan tempat suci Muslim, bunuh 5.000 budak Muslim); Saladin awalnya bersumpah menang dengan paksa; tebusan 10 dinar/pria; 30.000 dinar bebaskan 7.000 orang | Siege of Jerusalem (1187), Wikipedia (merujuk Ibn al-Athir, Edbury 1996, Runciman 1952, Maalouf 1984, Gibson & Lewis 2023) | https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(1187) | 2026-11-25 | MED |
+| 5 | Al-Adil minta 1.000 tawanan lalu bebaskan; Heraclius 700, Balian 500; lansia bebas tanpa tebusan; salib emas diturunkan dari Kubah Batu; sekitar 3.000 tawanan Muslim dibebaskan (Ibnu Syaddad); 15.000 yang tak mampu bayar dijual sebagai budak (7.000 pria, 8.000 wanita/anak, menurut Imaduddin al-Isfahani); Gereja Makam Suci ditutup 3 hari lalu tidak dihancurkan; Al-Aqsa disucikan air mawar | Siege of Jerusalem (1187), bagian Aftermath, Wikipedia (merujuk Baha ad-Din ibn Shaddad dan Imad ad-Din al-Isfahani) | https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(1187) | 2026-11-25 | MED |
+| 6 | Pengepungan 7 Juni–15 Juli 1099; Yerusalem direbut 15 Juli 1099; ribuan Muslim dan Yahudi dibantai; estimasi modern 3.000–10.000 korban, klaim 70.000–100.000 tidak realistis; situs Muslim di Bukit Bait Suci dijadikan tempat ibadah Kristen | Siege of Jerusalem (1099), Wikipedia (merujuk Raymond of Aguilers, Albert of Aachen) | https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(1099) | 2026-11-25 | MED |
+| 7 | Pertempuran Hattin 4 Juli 1187; Raja Guy de Lusignan ditawan; Saladin mengeksekusi Raynald de Châtillon, Guy dibebaskan 1188 | Battle of Hattin, Wikipedia (merujuk Baha ad-Din) | https://en.wikipedia.org/wiki/Battle_of_Hattin | 2026-11-25 | MED |
+| 8 | Saladin berasal dari keluarga Kurdi (suku Rawadiya), lahir di Tikrit | Saladin, Wikipedia | https://en.wikipedia.org/wiki/Saladin | 2026-11-25 | MED |
+| 9 | Fungsi Al-Aqsa sebagai masjid dipulihkan 1187; dalam seminggu dibersihkan, diberi karpet, wewangian air mawar dan dupa; Templar bermarkas di Al-Aqsa sejak masa Crusader | Al-Aqsa Mosque, Wikipedia | https://en.wikipedia.org/wiki/Al-Aqsa_Mosque | 2026-11-25 | MED |
+| 10 | Akka, Nablus, Jaffa, Beirut, Ascalon jatuh sebelum pengepungan Yerusalem (mid-September 1187) | Siege of Jerusalem (1187), bagian Background, Wikipedia | https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(1187) | 2026-11-25 | MED |
 
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+Catatan: WebFetch gagal (error model), data diambil lewat curl ke API Wikipedia, Quran.com, dan Hadith API. Britannica diblokir. Kronik primer (Ibnu al-Atsir, Imaduddin, Ibnu Syaddad) belum dibaca langsung, hanya via kutipan Wikipedia; naskah menyebut Imaduddin dengan atribusi.

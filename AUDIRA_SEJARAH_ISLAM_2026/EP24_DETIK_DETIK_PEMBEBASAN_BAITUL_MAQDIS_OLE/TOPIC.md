@@ -5,7 +5,11 @@ title: "Detik-Detik Pembebasan Baitul Maqdis oleh Shalahuddin al-Ayyubi"
 hook: "Setelah 88 tahun dijajah, bagaimana seorang Kurdi berhasil mengembalikan kota suci itu tanpa pembantaian?"
 styleCandidates: ["CHRONICLE (2D)", "CINESTORY (2D)", "WORLDFORGE (3D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Kronik primer belum dibaca langsung (via Wikipedia); hook 'tanpa pembantaian' perlu nuansa: sekitar 15.000 diperbudak; tanpa wajah tokoh."
 ---
 
 # Detik-Detik Pembebasan Baitul Maqdis oleh Shalahuddin al-Ayyubi

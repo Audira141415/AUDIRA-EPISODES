@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Fakta sejarah unik negara-negara di dunia`
+# Source Register — Rekor Gempa Terbesar yang Pernah Tercatat Manusia
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | M 9,5, tercatat sebagai gempa terbesar abad ke-20; 22 Mei 1960 pukul 19:11 UTC (15:11 waktu setempat); empat gempa pendahulu di atas M 7,0 | USGS ComCat, event 1960 Great Chilean Earthquake (Valdivia Earthquake) + teks dampak, USGS, 2026 | https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=official19600522191120_30 | 2026-11-25 | HIGH |
+| 2 | Korban sekitar 1.655 tewas di Chili selatan; tsunami 61 tewas di Hawaii (Hilo, runup 10,6 m), 138 tewas di Jepang; Honshu utara gelombang 5,5 m, lebih dari 1.600 rumah hancur; Puerto Saavedra hancur, gelombang 11,5 m, puing terbawa sampai 3 km ke daratan; rupture sekitar 1.000 km Lebu-Puerto Aisen; angka 5.700 disebut perkiraan awal yang berlebihan | USGS ComCat teks dampak (disarikan dari United States Earthquakes, 1960), USGS | https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventid=official19600522191120_30 | 2026-11-25 | HIGH |
+| 3 | Peringkat gempa M >= 9 sejak 1900: 9,5 Chili 1960; 9,2 Alaska 1964; 9,1 Sumatra 2004; 9,1 Tohoku 2011; 9,0 Kamchatka 1952 | USGS ComCat query magnitudo terbesar sejak 1900, USGS, 2026 | https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&minmagnitude=9&orderby=magnitude&limit=10&starttime=1900-01-01 | 2026-11-25 | HIGH |
+| 4 | Katalog tsunami: M 9,5, tinggi air maksimum 25 m, kedalaman 33 km, 1.279 titik runup; total korban versi NOAA 2.226 (berbeda dari USGS) | Global Historical Tsunami Database, NOAA NCEI/NGDC, 2026 | https://www.ngdc.noaa.gov/hazel/hazard-service/api/v1/tsunamis/events?minYear=1960&maxYear=1960&minEqMagnitude=9 | 2026-11-25 | HIGH |
+| 5 | Runup tsunami 1960 di Hilo, Hawaii berjarak sekitar 10.383 km dari sumber | Tsunami Runups Database, NOAA NCEI/NGDC, 2026 | https://www.ngdc.noaa.gov/hazel/hazard-service/api/v1/tsunamis/runups?year=1960&country=USA | 2026-11-25 | HIGH |
+| 6 | Rentang M 9,4-9,6; guncangan 10 menit; rupture sekitar 800 km; slip rata-rata 11 m; tsunami tercatat di Hawaii, Jepang, Filipina, Selandia Baru; korban perkiraan 1.000-6.000, Chili 5.700 | 1960 Valdivia earthquake, Wikipedia (rujukan Jaramillo & Basso 2013; Rojas Hoppe 2010), 2026 | https://en.wikipedia.org/wiki/1960_Valdivia_earthquake | 2026-11-25 | MEDIUM |
+| 7 | Hilo 61 jiwa; gelombang menyeberangi Pasifik beberapa ratus km/jam; gempa pendahulu Concepcion 21 Mei | 1960 Valdivia earthquake, bagian Tsunamis, Wikipedia, 2026 | https://en.wikipedia.org/wiki/1960_Valdivia_earthquake#Tsunamis | 2026-11-25 | MEDIUM |

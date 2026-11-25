@@ -1,93 +1,69 @@
-# SCRIPT — `Fakta sejarah unik negara-negara di dunia` (`EP106`)
+# Naskah — Pulau yang Pindah Kepemilikan 17 Kali dalam 400 Tahun
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Peta Karibia zoom ke satu pulau kecil, garis perbatasan berkedip dan bergeser; HUD angka 16.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Satu pulau kecil di Karibia. Dua negara. Dan perbatasan yang digeser enam belas kali. Ini kisah Saint Martin.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Peta pulau 87 km persegi, bendera Prancis dan Belanda bergantian muncul; HUD 87 km² dan tahun 1648.
 
-> <konteks singkat + "Di Audira, ...">
+> Luasnya sekitar delapan puluh tujuh kilometer persegi. Sejak tahun seribu enam ratus empat puluh delapan, utara milik Prancis, selatan milik Belanda. AUDIRA ajak kamu lihat bagaimana garis itu terus berubah.
 
-## c02 — <Judul Bab 1>
+## c02 — Pulau garam
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Kapal layar tiba di pantai, tambak garam, benteng kecil Belanda berdiri; HUD 1631.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tahun seribu enam ratus tiga puluh satu, Belanda membangun benteng di sini, dan perusahaan dagangnya mulai menambang garam.
 
-## c03 — <Judul Bab 2>
+## c03 — Spanyol merebut
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Kapal perang Spanyol mendarat, koloni Belanda terusir, benteng batu di tanjung; HUD 1633.
 
-> <teks narasi>
+> Dua tahun kemudian, seribu enam ratus tiga puluh tiga, Spanyol merebut pulau dan mengusir koloni Belanda. Benteng baru dibangun.
 
-## c04 — <Judul Bab 3>
+## c04 — Spanyol pergi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Benteng ditinggalkan, kapal Spanyol berlayar pergi, dua perahu baru merapat dari arah berbeda; HUD 1648.
 
-> <teks narasi>
+> Perang panjang Spanyol dan Belanda selesai tahun seribu enam ratus empat puluh delapan. Spanyol pergi begitu saja. Prancis datang dari Saint Kitts, Belanda dari Sint Eustatius. Tak ada yang mengalah.
 
-## c05 — <Judul Bab 4>
+## c05 — Perjanjian Concordia
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Dua gubernur berjabat tangan di bukit, peta digaris dua; HUD 23 Maret 1648, Concordia.
 
-> <teks narasi>
+> Daripada berperang, dua gubernur menandatangani Perjanjian Concordia pada dua puluh tiga Maret. Prancis dapat bagian lebih luas, konon karena armadanya berlabuh di lepas pantai saat perundingan.
 
-## c06 — <Judul Bab 5>
+## c06 — Enam belas kali
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Peta garis perbatasan bergeser berulang, animasi garis bergelombang 1648 sampai 1816; HUD 16 kali.
 
-> <teks narasi>
+> Tapi kertas tidak menghentikan sengketa. Dari tahun seribu enam ratus empat puluh delapan sampai seribu delapan ratus enam belas, perbatasan berubah enam belas kali. Setelah itu garisnya stabil.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **39** · estimasi **17 dtk**
+- Visual: Dua sisi pulau berdampingan, orang berjalan bebas melewati garis; kapal berlayar pergi; logo AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Cerita rakyat bilang garisnya ditentukan dua orang yang berjalan berlawanan arah, satu minum anggur, satu minum jenewer. Faktanya, perjanjian tahun seribu enam ratus empat puluh delapan itu masih dipakai sampai sekarang. Pulau satu, dua negara, satu garis hasil kompromi.
+
+## Opsi hook lain
+
+1. Pulau seluas 87 kilometer persegi ini punya perbatasan dua negara yang berubah enam belas kali.
+2. Tahun 1648, dua gubernur menggambar garis di pulau Karibia. Garis itu masih dipakai sampai sekarang.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **208 kata** ≈ **90 dtk**

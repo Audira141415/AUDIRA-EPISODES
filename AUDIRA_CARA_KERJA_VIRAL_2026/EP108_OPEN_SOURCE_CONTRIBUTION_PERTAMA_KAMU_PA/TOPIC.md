@@ -5,7 +5,11 @@ title: "Open Source Contribution Pertama Kamu: Panduan Step by Step"
 hook: "Bukan harus fix bug besar — ini cara mulai yang benar"
 styleCandidates: ["CHARACTERFLOW (2D)", "CERDIK (2D)", "PIXELSTORY (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hitungan good first issue dan bintang repo cepat berubah (wajib per tanggal); angka 28% adalah kutipan sekunder; tanpa logo GitHub (rule 15)."
 ---
 
 # Open Source Contribution Pertama Kamu: Panduan Step by Step

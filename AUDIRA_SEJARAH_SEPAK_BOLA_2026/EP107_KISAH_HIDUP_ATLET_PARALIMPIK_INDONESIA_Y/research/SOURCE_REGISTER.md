@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Kisah Hidup Atlet Paralimpik Indonesia yang Meraih Emas Bersejarah
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Leani Ratri Oktila lahir di Siabu, Riau, anak kedua dari 10; mulai bulu tangkis umur 7 tahun lewat dorongan orang tua; kecelakaan motor 2011 umur 20; kaki kiri 7 cm lebih pendek; mulai olahraga para tepat setahun setelah kecelakaan; Tokyo 2020: emas ganda putri, emas ganda campuran, perak tunggal | Paris 2024: Leani Ratri Oktila aims for golden 'double double', Amp Media untuk IPC, 8 Mar 2024 | https://www.paralympic.org/paris-2024/feature/paris-2024-leani-ratri-oktila-aims-golden-double-double | 2026-11-25 | HIGH |
+| 2 | Juara dunia ke-6 di Kejuaraan Dunia Para Bulu Tangkis 2024 (Thailand, 20-25 Feb); pemain putri tersukses sepanjang sejarah para bulu tangkis; ganda campuran bersama Hikmat Ramdani 21-9, 21-16; Tokyo 2020 tiga medali | Indonesia's Oktila makes history at Para Badminton World Championships 2024, BWF/IPC, 27 Feb 2024 | https://www.paralympic.org/feature/indonesia-s-oktila-makes-history-para-badminton-world-championships-2024 | 2026-11-25 | HIGH |
+| 3 | Profil atlet IPC: BWF Female Para Badminton Player of the Year 2018; triple crown di Irish dan Canada International 2018; peringkat 1 dunia tunggal SL4 menjelang 2019 | Leani Ratri Oktila, profil atlet, International Paralympic Committee | https://www.paralympic.org/leani-ratri-oktila | 2026-11-25 | HIGH |
+| 4 | Gelar dunia tunggal pertama di Basel 2019 | Basel 2019: Leani Ratri Oktila conquers the world, IPC/BWF, 25 Aug 2019 | https://www.paralympic.org/news/basel-2019-leani-ratri-oktila-conquers-world | 2026-11-25 | HIGH |
+| 5 | Tokyo 2020: Leani emas ganda putri SL3-SU5 (dengan Khalimatus Sadiyah), perak tunggal SL4 (emas Cheng Hefang, CHN), emas ganda campuran SL3-SU5 (dengan Hary Susanto, perak Prancis Mazur/Noel) | Badminton at the 2020 Summer Paralympics (daftar peraih medali), Wikipedia | https://en.wikipedia.org/wiki/Badminton_at_the_2020_Summer_Paralympics | 2026-11-25 | MEDIUM |
+| 6 | Paris 2024: Leani emas ganda campuran SL3-SU5 (dengan Hikmat Ramdani, perak Setiawan/Sadiyah, sesama Indonesia), perak tunggal SL4 (emas Cheng Hefang, perunggu Helle Sofie Sagoy) | Badminton at the 2024 Summer Paralympics (daftar peraih medali), Wikipedia | https://en.wikipedia.org/wiki/Badminton_at_the_2024_Summer_Paralympics | 2026-11-25 | MEDIUM |
+| 7 | Skor final: ganda putri Tokyo 21-18, 21-12 (4 Sep 2021) atas Cheng Hefang/Ma Huihui; ganda campuran Paris 21-16, 21-15 (2 Sep 2024); kelas SL4 | Leani Ratri Oktila, Wikipedia (merujuk BWF/IPC/media nasional) | https://en.wikipedia.org/wiki/Leani_Ratri_Oktila | 2026-11-25 | MEDIUM |

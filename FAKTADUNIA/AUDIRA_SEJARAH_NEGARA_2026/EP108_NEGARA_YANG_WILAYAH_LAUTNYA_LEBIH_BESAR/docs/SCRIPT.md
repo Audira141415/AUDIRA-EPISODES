@@ -1,93 +1,69 @@
-# SCRIPT — `Fakta sejarah unik negara-negara di dunia` (`EP108`)
+# Naskah — Negara yang Wilayah Lautnya Lebih Besar dari Daratannya 50 Kali
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Peta Pasifik gelap, satu titik kecil di khatulistiwa lalu lingkaran biru raksasa melebar dari titik itu. HUD: 811 km² vs 3,44 juta km².
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Satu negara, daratannya cuma 811 kilometer persegi. Tapi lautnya 3,4 juta kilometer persegi. Itu bukan 50 kali lipat, melainkan lebih dari 4.000 kali.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **10 dtk**
+- Visual: Globe berputar ke Pasifik tengah, kartu nama negara (teks, tanpa logo) dan bendera diganti siluet atol. HUD: 1979, 134 ribu jiwa.
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya Kiribati, negara kepulauan di tengah Pasifik, tepat di garis khatulistiwa. Merdeka dari Inggris tahun 1979. Penduduknya cuma sekitar 134 ribu jiwa.
 
-## c02 — <Judul Bab 1>
+## c02 — Tiga gugus pulau
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Peta animasi: 3 gugus (Gilbert, Phoenix, Line) menyala berurutan, garis tanggal internasional bergeser. HUD: 33 atol dan pulau.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Daratannya tersebar di 33 atol dan pulau, terbagi tiga gugus: Gilbert, Phoenix, dan Line. Negara ini melintasi garis khatulistiwa dan garis bujur 180 derajat.
 
-## c03 — <Judul Bab 2>
+## c03 — Kenapa lautnya sebesar itu
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Lingkaran 200 mil laut mengembang dari tiap pulau kecil, saling tumpang tindih, lalu menyatu jadi satu hamparan biru. HUD: 200 mil laut.
 
-> <teks narasi>
+> Kenapa lautnya sebesar itu? Hukum laut PBB memberi negara pantai zona ekonomi eksklusif sejauh 200 mil laut. Pulau kecil yang tersebar jauh membuat lingkaran 200 mil di tiap pulau menyatu jadi laut raksasa.
 
-## c04 — <Judul Bab 3>
+## c04 — Pulau terbesar
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Close-up atol Kiritimati: cincin pulau dan laguna, diagram lingkaran 70 persen menyala. HUD: 312 km², lebih dari 70%.
 
-> <teks narasi>
+> Pulau terbesarnya Kiritimati, sekitar 312 kilometer persegi. Pulau ini saja menyumbang lebih dari 70 persen seluruh daratan negara.
 
-## c05 — <Judul Bab 4>
+## c05 — Cagar laut Phoenix
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Zoom ke Gugus Phoenix: area biru berpendar diperbandingkan dengan siluet negara bagian California, terumbu karang dan ikan. HUD: 408 ribu km², 2010.
 
-> <teks narasi>
+> Di Gugus Phoenix ada kawasan lindung laut seluas 408 ribu kilometer persegi. Tahun 2010, UNESCO menetapkannya sebagai Warisan Dunia. Daratannya di sana cuma 25 kilometer persegi.
 
-## c06 — <Judul Bab 5>
+## c06 — Laut sebagai uang, laut sebagai ancaman
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **35** · estimasi **15 dtk**
+- Visual: Kapal ikan melintas, kartu lisensi bergulir; lalu air pasang naik menggenangi daratan rendah, peta Fiji dengan petak 20 km². HUD: 2014, 20 km².
 
-> <teks narasi>
+> Laut luas ini jadi sumber uang. Pemerintah sangat bergantung pada biaya lisensi kapal ikan asing. Tapi muka laut naik. Tahun 2014, Presiden Tong membeli 20 kilometer persegi tanah di Fiji, sebagai cadangan kalau negaranya tenggelam.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Zoom-out dramatis: titik daratan nyaris hilang di tengah laut biru, rasio 1 : 4.000 menghentak, lalu outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi bagi Kiribati, laut bukan sekadar pemandangan. Laut adalah wilayah, penghasilan, sekaligus ancaman. Dan lautnya lebih dari 4.000 kali luas daratnya. Ikuti terus fakta dunia lainnya di AUDIRA.
+
+## Opsi hook lain
+
+1. "Negara ini punya laut 4.000 kali lebih luas dari daratannya. Kamu mungkin belum pernah dengar namanya."
+2. "Daratannya hampir tak kelihatan di peta, tapi lautnya membentang lebih dari 3 juta kilometer persegi. Ini Kiribati."
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **209 kata** ≈ **91 dtk**

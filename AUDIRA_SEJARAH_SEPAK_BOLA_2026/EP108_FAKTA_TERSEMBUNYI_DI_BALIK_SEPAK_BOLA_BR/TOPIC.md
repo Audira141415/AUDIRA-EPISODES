@@ -5,7 +5,11 @@ title: "Fakta Tersembunyi di Balik Sepak Bola Brasil Era Tahun 1970"
 hook: "Tim terbaik yang pernah ada di dunia — gaya bermain yang tidak akan pernah terulang"
 styleCandidates: ["CHRONICLE (2D)", "FILM16 (2D)", "CINESTORY (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook 'tim terbaik' adalah opini (ditulis 'sering disebut'); jumlah pemain di gol keempat dan menit gol berbeda antar sumber; wajah dan logo nyata dilarang."
 ---
 
 # Fakta Tersembunyi di Balik Sepak Bola Brasil Era Tahun 1970

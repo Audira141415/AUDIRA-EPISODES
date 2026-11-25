@@ -5,7 +5,11 @@ title: "Misteri Tidur: Kenapa Semua Makhluk Hidup Harus Tidur"
 hook: "Ilmu pengetahuan belum sepenuhnya tahu kenapa tidur ada — dan itu seharusnya menakutkan"
 styleCandidates: ["ANATOMIX (3D)", "INNERWORKS (3D)", "DATAPHYSICAL (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul terlalu luas (tidak semua makhluk hidup terbukti tidur), hook menakutkan tidak ramah anak, percobaan tikus lama yang keras."
 ---
 
 # Misteri Tidur: Kenapa Semua Makhluk Hidup Harus Tidur

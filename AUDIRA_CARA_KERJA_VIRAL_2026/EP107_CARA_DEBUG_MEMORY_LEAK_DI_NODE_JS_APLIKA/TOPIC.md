@@ -5,7 +5,11 @@ title: "Cara Debug Memory Leak di Node.js Aplikasi"
 hook: "Aplikasi yang makin lama makin lambat sampai crash itu punya pola"
 styleCandidates: ["VISUALINVESTIGATION (2D)", "DEVFORGE (2D)", "INNERWORKS (3D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Judul janggal, visual abstrak (butuh 2D kuat); fakta berasal dari dokumentasi Node terbaru, bisa bergeser antarversi."
 ---
 
 # Cara Debug Memory Leak di Node.js Aplikasi

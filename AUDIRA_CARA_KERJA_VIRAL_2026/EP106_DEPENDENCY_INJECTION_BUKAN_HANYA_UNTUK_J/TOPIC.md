@@ -5,7 +5,11 @@ title: "Dependency Injection: Bukan Hanya untuk Java Enterprise"
 hook: "Pattern yang bikin kode Python dan JS kamu jauh lebih testable"
 styleCandidates: ["DEVFORGE (2D)", "PRECISION (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "rendah; klaim testable adalah opini rekayasa, dibingkai sebagai kemudahan mengganti dependensi, dan visual 2D abstrak perlu dijaga agar tidak statis"
 ---
 
 # Dependency Injection: Bukan Hanya untuk Java Enterprise

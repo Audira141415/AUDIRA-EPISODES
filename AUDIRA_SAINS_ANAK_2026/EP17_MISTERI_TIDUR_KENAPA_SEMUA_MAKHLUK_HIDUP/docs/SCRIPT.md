@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP17`)
+# Naskah — Misteri Tidur: Kenapa Semua Makhluk Hidup Harus Tidur
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **13** · estimasi **5 dtk**
+- Visual: Close-up ubur-ubur Cassiopea berdenyut pelan di air gelap, tanda tanya besar muncul di atasnya.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Ubur-ubur tidak punya otak, tapi ia tetap tidur. Kenapa? Sains belum tahu pasti!
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: Anak kartun tertidur di kasur kecil; ikon makan, bermain, dan tanda bahaya memudar. Logo AUDIRA muncul di papan label.
 
-> <konteks singkat + "Di Audira, ...">
+> Halo, ini AUDIRA. Saat tidur, kamu tidak makan, tidak bermain, dan sulit melihat bahaya. Kenapa alam tidak menghapus kebiasaan ini?
 
-## c02 — <Judul Bab 1>
+## c02 — Ubur-ubur dan Hydra
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Ubur-ubur Cassiopea: denyut cepat siang, lambat malam; jari menyentuh, responsnya telat. HUD 2017. Lalu Hydra mini tanpa otak, ikon tidur.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tahun 2017, peneliti mengamati ubur-ubur Cassiopea. Malam hari, ia bergerak pelan dan lambat membalas sentuhan. Kalau malamnya diganggu, siangnya ia lesu. Hydra, hewan kecil tanpa otak, juga punya keadaan mirip tidur.
 
-## c03 — <Judul Bab 2>
+## c03 — Tikus tanpa tidur
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Diorama lab kartun ramah anak (tanpa orang nyata): tikus lesu, tanda jam berputar. HUD 11-32 hari, panah makan naik tapi badan mengecil. Tanpa adegan menyakitkan.
 
-> <teks narasi>
+> Percobaan tahun 1989: tikus yang sama sekali tidak boleh tidur jatuh sakit parah dalam 11 sampai 32 hari. Mereka makan lebih banyak, tapi tubuhnya tetap menyusut.
 
-## c04 — <Judul Bab 3>
+## c04 — Burung setengah otak
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Burung bertengger, satu mata terbuka, otak kartun terbelah: sisi kiri bercahaya, sisi kanan tidur. Bayangan pemangsa mendekat.
 
-> <teks narasi>
+> Beberapa burung punya trik. Mereka tidur dengan satu mata terbuka, dan setengah otaknya tetap terjaga. Makin besar bahayanya, makin sering mereka tidur separuh otak.
 
-## c05 — <Judul Bab 4>
+## c05 — Otak dicuci
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Penampang otak mencit; ruang antar sel melebar 60 persen. HUD 2013 dan 60%. Aliran cairan biru membawa gumpalan limbah beta-amiloid keluar.
 
-> <teks narasi>
+> Petunjuk tahun 2013: saat mencit tidur, ruang di antara sel otaknya melebar sekitar 60 persen. Cairan otak mengalir deras dan membawa pergi limbah, termasuk beta-amiloid.
 
-## c06 — <Judul Bab 5>
+## c06 — Tidur dan ingatan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **46** · estimasi **19 dtk**
+- Visual: Otak memutar ulang film kecil kejadian hari itu, file ingatan masuk rak penyimpanan; lalu daftar teori dicoret satu-satu, kutipan Cirelli dan Tononi 2008 sebagai teks.
 
-> <teks narasi>
+> Tidur juga membantu ingatan. Saat tidur nyenyak, otak memutar ulang kejadian hari itu, lalu menyimpannya jadi ingatan jangka panjang. Tapi belum ada satu teori pun yang menjelaskan semuanya. Pada 2008, peneliti Cirelli dan Tononi menulis bahwa belum ada hipotesis yang bisa menjawab kenapa hewan butuh tidur.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Papan besar bertulisan 'belum ada jawaban lengkap', lalu anak sekolah tidur nyenyak; HUD 9-11 jam; kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi, jawaban lengkapnya belum ada, dan itu seru. Anak usia sekolah disarankan tidur sembilan sampai sebelas jam. Malam ini, biarkan otakmu bersih-bersih.
+
+## Opsi hook lain
+
+1. Hewan tanpa otak pun tidur. Jadi untuk apa tidur sebenarnya?
+2. Tikus yang dilarang tidur jatuh sakit. Tapi kenapa persisnya? Sains belum tahu.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **207 kata** ≈ **83–92 dtk**

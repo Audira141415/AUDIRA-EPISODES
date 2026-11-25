@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP15`)
+# Naskah — Virus Bukan Makhluk Hidup, Tapi Bisa Mati — Ini Paradoksnya
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Layar gelap, satu partikel virus bercahaya berputar di tengah, lalu retak dan padam. Teks besar HUD: HIDUP? MATI?
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Virus itu bukan makhluk hidup. Tapi anehnya, virus bisa mati. Kok bisa? Di AUDIRA Sains, kita bongkar paradoksnya.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Kamera mikroskop zoom dari tangan anak (siluet, tanpa wajah) ke sel, ke bakteri, lalu ke partikel virus yang jauh lebih kecil.
 
-> <konteks singkat + "Di Audira, ...">
+> Bayangkan kamu mengecil sampai lebih kecil dari bakteri. Di sana ada benda aneh. Tidak makan, tidak bernapas, tidak tumbuh.
 
-## c02 — <Judul Bab 1>
+## c02 — Daun tembakau sakit
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Ladang tembakau, daun bercorak belang. Cairan getah menetes ke saringan porselen. Callout HUD: 1892 dan 1898.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Semuanya mulai dari daun tembakau yang belang-belang. Tahun 1892, Ivanovsky menyaring getahnya dengan saringan yang menahan bakteri. Daun sehat tetap tertular. Tahun 1898, Beijerinck menyebutnya cairan hidup yang menular.
 
-## c03 — <Judul Bab 2>
+## c03 — Dikristalkan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Tabung lab, cairan jernih berubah jadi kristal berkilau. Callout HUD: 1935, KRISTAL.
 
-> <teks narasi>
+> Lalu tahun 1935, Stanley memurnikan virus tembakau itu sampai menjadi kristal, seperti garam. Tapi kristal itu masih bisa menulari daun sehat.
 
-## c04 — <Judul Bab 3>
+## c04 — Numpang di sel
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **12 dtk**
+- Visual: Animasi sel besar dengan pabrik protein; partikel virus menempel, menyuntik materi, sel membuat ribuan salinan virus.
 
-> <teks narasi>
+> Kuncinya begini. Virus tidak punya pabrik energi sendiri. Ia baru bekerja kalau masuk ke sel, lalu memaksa sel itu membuat salinannya. Di luar sel, virus hanya diam seperti benda mati.
 
-## c05 — <Judul Bab 4>
+## c05 — Raksasa dan sabun
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Perbandingan ukuran: virus raksasa di samping bakteri, angka 700 nm dan 1,5 µm. Lalu busa sabun menyelimuti partikel virus berselaput, selaputnya pecah.
 
-> <teks narasi>
+> Ada pula virus raksasa. Mimivirus ditemukan tahun 2003, lebarnya sekitar 700 nanometer. Pithovirus malah 1,5 mikrometer. Nah, kenapa sabun ampuh? Sabun merusak selaput lemak pada virus flu, dan virusnya tidak bisa menulari lagi.
 
-## c06 — <Judul Bab 5>
+## c06 — Sejarah yang diubah virus
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Garis waktu bergerak: peta dunia dengan titik merah menyebar 1918, angka 50 juta; lalu titik merah menghilang, 1980 cacar.
 
-> <teks narasi>
+> Walau tidak hidup, virus mengubah sejarah. Flu tahun 1918 menewaskan sekitar 50 juta orang. Tapi vaksin membalikkan keadaan. Tahun 1980, WHO menyatakan cacar sudah hilang dari dunia.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Partikel virus di tengah, lalu terbelah dua sisi: setengah benda mati, setengah sel menyala. Kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi, virus itu di batas hidup dan mati. Ilmuwan masih berdebat sampai sekarang. Satu hal pasti: kecil bukan berarti lemah. Ikuti AUDIRA Sains untuk misteri berikutnya.
+
+## Opsi hook lain
+
+1. Kamu bisa membunuh sesuatu yang sebenarnya tidak pernah hidup. Itulah virus.
+2. Satu benda ini bisa dijadikan kristal, seperti garam, tapi tetap bisa menulari daun.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **203 kata** ≈ **81–90 dtk**

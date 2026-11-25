@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP103`)
+# Naskah — Kenapa 2025 Jadi Tahun Paling Penting dalam Sejarah Teknologi
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Layar split: papan skor soal matematika terisi ke 35/42 dan chip kuantum abstrak berpendar; HUD 35/42.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Dalam satu tahun, AI meraih medali emas olimpiade matematika, dan komputer kuantum menghasilkan jawaban yang bisa diverifikasi. Itulah 2025.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **11** · estimasi **5 dtk**
+- Visual: Judul 2025 mengetik di layar, stempel DICEK: SUMBER PRIMER pada deretan dokumen generik (tanpa logo).
 
-> <konteks singkat + "Di Audira, ...">
+> Judul ini subjektif. AUDIRA mengecek angkanya ke sumber primer. Ini kejadiannya.
 
-## c02 — <Judul Bab 1>
+## c02 — Januari: DeepSeek R1
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Halaman makalah generik arXiv 22 Jan 2025, lalu grafik garis harga saham turun, callout HUD -18%.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Januari 2025. DeepSeek merilis R1, model penalaran yang makalahnya terbit di arXiv pada 22 Januari. Pada 27 Januari, saham Nvidia anjlok sekitar 18 persen dalam sehari.
 
-## c03 — <Judul Bab 2>
+## c03 — Juli: Olimpiade Matematika
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Papan soal 6 kotak, 5 menyala hijau, 1 kosong; bar skor 28 (perak) naik ke 35/42 (emas); medali emas.
 
-> <teks narasi>
+> Juli 2025. Gemini Deep Think milik Google DeepMind menyelesaikan lima dari enam soal Olimpiade Matematika Internasional. Skornya 35 dari 42, setara emas. Setahun sebelumnya baru perak, 28 poin.
 
-## c04 — <Judul Bab 3>
+## c04 — Kuantum: Willow dan Quantum Echoes
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **12 dtk**
+- Visual: Chip kuantum 105 titik qubit menyala; bar 13.000x tumbuh melawan superkomputer; stempel klaim Google.
 
-> <teks narasi>
+> Di sisi kuantum, chip Willow punya 105 qubit. Oktober 2025, Google melaporkan Quantum Echoes di jurnal Nature, diklaim 13.000 kali lebih cepat dari algoritma klasik terbaik. Itu klaim Google sendiri.
 
-## c05 — <Judul Bab 4>
+## c05 — Majorana dan jalan raya
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Chip dengan tanda tanya sinyal, belum bukti; lalu peta kota dengan kendaraan otonom bergerak, counter 150.000/minggu.
 
-> <teks narasi>
+> Februari 2025, Microsoft memperkenalkan Majorana 1, dengan sinyal partikel Majorana yang belum jadi bukti final. Di jalan, Waymo melayani lebih dari 150.000 perjalanan otonom per minggu.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan: biaya jatuh
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **34** · estimasi **14 dtk**
+- Visual: Kurva biaya turun tajam 280x; lalu bar kapitalisasi pasar menembus garis US$5 triliun (ikon chip generik).
 
-> <teks narasi>
+> Jadi apa yang istimewa? Biaya yang jatuh. Menurut Stanford AI Index, biaya inferensi setara GPT-3.5 turun lebih dari 280 kali lipat sejak November 2022. Nvidia pun jadi perusahaan pertama yang menembus lima triliun dolar.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Tiga ikon (AI, robot, kuantum) mendekat tapi belum menyatu, tanda tanya; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Apakah AI, robotika, dan kuantum benar-benar menyatu? Datanya belum sampai sana. Tapi AI makin murah dan makin pintar. Menurutmu, 2025 titik baliknya? Tulis di komentar, dan ikuti AUDIRA.
+
+## Opsi hook lain
+
+1. AI juara matematika, kuantum terbukti benar. Apa yang terjadi di 2025?
+2. Satu tahun, tiga klaim yang dulu mustahil. Mana yang benar-benar terbukti?
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **202 kata** ≈ **84 dtk**

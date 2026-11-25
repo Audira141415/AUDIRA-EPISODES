@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP26`)
+# Naskah — Teladan Fatimah az-Zahra: Putri yang Tidak Pernah Meminta untuk Dirinya Sendiri
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Siluet tanpa wajah di depan batu penggiling (gilingan tangan) di ruang sederhana; callout teks 'GILINGAN BATU'.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Putri Rasulullah menggiling gandum sendiri sampai tangannya mengeras. Lalu ia datang meminta pembantu. Jawaban ayahnya tak terduga.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Kaligrafi nama Fatimah az-Zahra, siluet Madinah awal, rumah sederhana berbata lumpur; HUD '1-2 H'.
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya Fatimah az-Zahra, putri Nabi Muhammad dan Khadijah. Ia menikah dengan Ali bin Abi Thalib di Madinah, sekitar tahun 1 sampai 2 Hijriah, dengan pesta yang sederhana.
 
-## c02 — <Judul Bab 1>
+## c02 — Bab 1 - Tangan yang mengeras
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Close-up tangan siluet memutar alat penggiling, tepung berjatuhan; tulisan 'Sahih Bukhari 5361'.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Ali menceritakan, Fatimah mengadukan tangannya yang mengeras karena menggiling. Riwayat ini ada di Sahih Bukhari, nomor 5361. Derajatnya sahih.
 
-## c03 — <Judul Bab 2>
+## c03 — Bab 2 - Meminta pembantu
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Siluet perempuan berjalan ke arah pintu rumah Nabi, tawanan perang di kejauhan, pintu kosong; dua siluet bicara.
 
-> <teks narasi>
+> Ia mendengar Nabi baru menerima tawanan perang. Ia datang untuk meminta seorang pembantu. Tapi Nabi tidak ada, jadi ia menitipkan keperluannya kepada Aisyah.
 
-## c04 — <Judul Bab 3>
+## c04 — Bab 3 - Jawaban Nabi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **35** · estimasi **15 dtk**
+- Visual: Malam di kamar sederhana, dua siluet berbaring, siluet ketiga duduk di antara mereka, tangan menghitung tasbih; HUD '33 - 33 - 34'.
 
-> <teks narasi>
+> Malamnya Nabi mendatangi mereka yang sudah berbaring. Beliau berkata, ada yang lebih baik dari pembantu. Sebelum tidur, ucapkan subhanallah tiga puluh tiga kali, alhamdulillah tiga puluh tiga kali, dan Allahu akbar tiga puluh empat kali.
 
-## c05 — <Judul Bab 4>
+## c05 — Bab 4 - Dijalani seumur hidup
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Medan Siffin berpasir di malam hari, tenda dan api unggun, siluet berzikir; HUD 'Perang Siffin'.
 
-> <teks narasi>
+> Ali berkata, sejak mendengar itu ia tidak pernah meninggalkannya. Ditanya apakah bahkan pada malam perang Siffin, ia menjawab, bahkan pada malam Siffin. Riwayatnya Sahih Bukhari nomor 5362.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Tiga panel kaligrafi berganti: 'Bagian dariku', 'Pemimpin wanita surga', kalender enam bulan; sumber di HUD.
 
-> <teks narasi>
+> Nabi pernah bersabda, Fatimah bagian dariku, Sahih Bukhari nomor 3714. Di akhir hayatnya, Nabi mengabarkan bahwa Fatimah pemimpin para wanita surga, Sahih Bukhari nomor 3624.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **34** · estimasi **14 dtk**
+- Visual: Matahari terbit di atas kubah dan menara siluet, kartu penutup AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Fatimah wafat enam bulan setelah ayahnya, menurut Aisyah dalam Sahih Bukhari nomor 4241. Judul lama kisah ini keliru: ia pernah meminta. Tapi ia menerima jawaban yang lebih baik, dan menjalaninya. Kisah ini dari AUDIRA.
+
+## Opsi hook lain
+
+1. Ia putri Nabi, tapi tangannya mengeras karena menggiling gandum sendiri.
+2. Fatimah minta pembantu kepada ayahnya. Yang ia dapat justru lebih baik.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **207 kata** ≈ **86 dtk**

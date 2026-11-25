@@ -5,7 +5,11 @@ title: "Rekor Gempa Terbesar yang Pernah Tercatat Manusia"
 hook: "Valdivia 1960: 9,5 SR, tsunami mencapai Jepang dan Hawaii"
 styleCandidates: ["DISASTERSIM (3D)", "SCALEFORGE (3D)", "HISTORYMAP (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak
+risiko: "Rekor bisa dipecahkan; angka korban berbeda antar sumber (USGS 1.655, NOAA 2.226); bencana, tanpa wajah korban."
 ---
 
 # Rekor Gempa Terbesar yang Pernah Tercatat Manusia

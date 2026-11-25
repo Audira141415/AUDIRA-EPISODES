@@ -5,7 +5,11 @@ title: "Teladan Fatimah az-Zahra: Putri yang Tidak Pernah Meminta untuk Dirinya 
 hook: "Hidupnya penuh kekurangan, tapi ia tidak pernah sekali pun mengeluh kepada ayahnya"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "CHARACTERFLOW (2D)", "STORYBOOK (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul/hook tidak akurat (Fatimah pernah mengadu dan meminta pelayan, Bukhari 5361/5362); hindari Fadak dan isu Sunni-Syiah."
 ---
 
 # Teladan Fatimah az-Zahra: Putri yang Tidak Pernah Meminta untuk Dirinya Sendiri

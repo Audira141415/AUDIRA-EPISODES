@@ -5,7 +5,11 @@ title: "Kisah Hidup Atlet Paralimpik Indonesia yang Meraih Emas Bersejarah"
 hook: "Leani Ratri Oktila — sosok yang membuktikan keterbatasan bukan penghalang"
 styleCandidates: ["CINESTORY (2D)", "CHARACTERFLOW (2D)", "BROADCASTFORGE (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Rule SPORTFACTS: tanpa wajah atlet nyata dan tanpa logo organisasi; gelar bertambah seiring waktu, VO dibatasi ke 2021 dan 2024; skor final dari Wikipedia (MEDIUM)."
 ---
 
 # Kisah Hidup Atlet Paralimpik Indonesia yang Meraih Emas Bersejarah

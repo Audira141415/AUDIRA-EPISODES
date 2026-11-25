@@ -5,7 +5,11 @@ title: "Negara yang Wilayah Lautnya Lebih Besar dari Daratannya 50 Kali"
 hook: "Kiribati: ZEE-nya salah satu terbesar, daratannya hampir tidak ada"
 styleCandidates: ["SCALEFORGE (3D)", "HISTORYMAP (2D)", "SATELLITEBRIEFING (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul salah: rasio sebenarnya ±4.200 kali, bukan 50; angka ZEE (3,44 juta km²) baru terverifikasi lewat Wikipedia, UN/UNESCO/CIA tidak terbuka."
 ---
 
 # Negara yang Wilayah Lautnya Lebih Besar dari Daratannya 50 Kali

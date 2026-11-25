@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris` (`EP106`)
+# Naskah — Rekor Kecepatan Smash Badminton yang Membuat Fisikawan Tercengang
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Layar hitam, shuttlecock melesat horizontal; angka 565 km/jam menghentak di tengah, bar F1 (372,6) tertinggal di bawahnya.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Lima ratus enam puluh lima kilometer per jam. Satu pukulan smash bulu tangkis, lebih ngebut dari mobil Formula 1.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Papan data minimalis, label HUD bertuliskan AUDIRA; siluet pemain tanpa wajah mengayun raket.
 
-> <konteks singkat + "Di Audira, ...">
+> Di AUDIRA SportFacts, kita bedah rekornya. Pemegangnya Satwiksairaj Rankireddy dari India. Diukur 14 April 2023 di pabrik Yonex, Soka, Jepang. Jadi ini tes terkontrol, bukan pertandingan resmi.
 
-## c02 — <Judul Bab 1>
+## c02 — Rekor lama
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Garis waktu horizontal 2009, 2013, 2023; tiap titik membesar saat tahunnya disebut, callout 421 lalu 493.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Rekor sebelumnya milik Tan Boon Heong dari Malaysia. Dia mencatat 421 kilometer per jam pada 2009, lalu 493 pada Mei 2013. Rekor itu bertahan sepuluh tahun lebih.
 
-## c03 — <Judul Bab 2>
+## c03 — Di pertandingan asli
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Ilustrasi lapangan dari atas, panah smash melintasi net; callout 426 dan Bangalore, Januari 2017.
 
-> <teks narasi>
+> Bagaimana di pertandingan sungguhan? Rekor kompetisi dipegang Mads Pieler Kolding dari Denmark: 426 kilometer per jam, di Bangalore, 10 Januari 2017.
 
-## c04 — <Judul Bab 3>
+## c04 — Pembanding
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: Tiga bar berdampingan: servis tenis 263, F1 372,6, smash 565 km/jam; bar smash memanjang melewati layar.
 
-> <teks narasi>
+> Servis tenis tercepat tercatat 263 kilometer per jam. Mobil F1 mencapai 372,6. Smash Satwik hampir dua kali lipat servis tenis.
 
-## c05 — <Judul Bab 4>
+## c05 — Anatomi pukulan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Potongan melintang shuttlecock: 16 bulu angsa menancap di gabus; raket menyentuh sepersekian detik.
 
-> <teks narasi>
+> Shuttlecock dibuat dari enam belas bulu angsa yang ditancapkan ke gabus. Raket menyentuhnya sekitar satu milidetik. Lalu shuttlecock berbalik, butuh sekitar dua puluh milidetik sampai gabusnya menghadap depan.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Grafik kecepatan turun curam sepanjang lapangan 13,4 meter; bulu-bulu diberi panah hambatan udara.
 
-> <teks narasi>
+> Kenapa secepat itu tapi masih bisa dikejar? Bulu-bulunya menciptakan hambatan udara besar, jadi shuttlecock melambat jauh lebih cepat daripada bola tenis. Lapangannya cuma tiga belas koma empat meter.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Angka 565 berdenyut, dissolve ke kartu outro AUDIRA, Created by Agus Dwi R.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi pukulan terkencang bulu tangkis lahir di uji coba terkontrol. Angka ini per 2023, dan rekor bisa pecah. Menurutmu, berapa batas smash manusia? Tulis di komentar, dan ikuti AUDIRA untuk fakta olahraga berikutnya.
+
+## Opsi hook lain
+
+1. Servis tenis 263 km/jam. Smash bulu tangkis hampir dua kali lipatnya.
+2. Mobil F1 kalah ngebut dari sebuah shuttlecock. Ini buktinya.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **203 kata** ≈ **85 dtk** (@~144 WPM)

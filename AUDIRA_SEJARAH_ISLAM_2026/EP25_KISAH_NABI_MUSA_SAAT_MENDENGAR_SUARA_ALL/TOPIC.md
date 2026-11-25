@@ -5,7 +5,11 @@ title: "Kisah Nabi Musa Saat Mendengar Suara Allah Langsung"
 hook: "Apa yang dirasakan manusia biasa ketika berhadapan langsung dengan kalam Ilahi?"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "STORYBOOK (2D)", "PAINTERLY (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Quran tidak merinci perasaan Musa; hindari klaim isi hati dan framing Musa melebihi Nabi Muhammad; tanpa wajah dan tanpa wujud Allah."
 ---
 
 # Kisah Nabi Musa Saat Mendengar Suara Allah Langsung
