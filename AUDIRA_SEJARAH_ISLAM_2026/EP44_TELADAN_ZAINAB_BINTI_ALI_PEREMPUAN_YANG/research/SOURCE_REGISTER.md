@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sejarah peradaban Islam yang jarang diketahui`
+# Source Register — Teladan Zainab binti Ali: Perempuan yang Menjadi Suara Keadilan di Istana Tirani
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Di istana Ubaidullah bin Ziyad (Kufah), Zainab duduk menyamar dengan pakaian lusuh; Ibnu Ziyad berkata "Segala puji bagi Allah yang telah menghinakan kalian", Zainab menjawab "Segala puji bagi Allah yang memuliakan kami dengan Muhammad ... Dia hanya menghinakan pendosa besar" (riwayat Abu Mikhnaf) | The History of al-Tabari Vol. 19: The Caliphate of Yazid b. Mu'awiyah, terj. I.K.A. Howard, SUNY Press, 1990, hlm. 165–166 | https://archive.org/details/the-history-of-al-tabari-vol.-19-the-caliphate-of-yazid-b.-muawiyah-a.-d.-680-683-a.-h.-60-64 | 2026-11-25 | HIGH |
+| 2 | Di hadapan Yazid di Damaskus, seorang lelaki Syam meminta seorang gadis tawanan dijadikan budak; Zainab membantah "itu bukan untukmu, bukan pula untuknya"; Yazid membentak, Zainab terus menjawab, hingga Yazid terdiam (riwayat Abu Mikhnaf dari Fatimah binti Ali) | The History of al-Tabari Vol. 19, terj. I.K.A. Howard, SUNY Press, 1990, hlm. 171 | https://archive.org/details/the-history-of-al-tabari-vol.-19-the-caliphate-of-yazid-b.-muawiyah-a.-d.-680-683-a.-h.-60-64 | 2026-11-25 | HIGH |
+| 3 | Pertempuran Karbala: 10 Muharram 61 H / 10 Oktober 680; rombongan Husain berisi 72 lelaki bersenjata plus perempuan dan anak-anak | Encyclopaedia Iranica, "KARBALA", Encyclopaedia Iranica Foundation | https://www.iranicaonline.org/articles/karbala | 2026-11-25 | HIGH |
+| 4 | Jawaban Zainab "memuliakan kami dan menyucikan kami" merujuk QS al-Ahzab 33:33 (catatan kaki 532 terjemahan Tabari) | Al-Qur'an, QS al-Ahzab 33:33, Quran.com | https://quran.com/33/33 | 2026-11-25 | HIGH |
+| 5 | Zainab lahir ±626 M di Madinah, putri Ali bin Abi Thalib dan Fatimah binti Muhammad, istri Abdullah bin Ja'far; wafat 682 M; dua putranya, Aun dan Muhammad, gugur di Karbala; makam dikaitkan ke Damaskus atau Kairo | Wikipedia, "Zaynab bint Ali" (merujuk Qutbuddin 2005, Pinault 2009) | https://en.wikipedia.org/wiki/Zaynab_bint_Ali | 2026-11-25 | MEDIUM |
+| 6 | Khutbah di istana Yazid tercatat di Balaghat al-Nisa' karya Ibnu Abi Thahir Thaifur; khutbah Kufah di kitab itu dinisbatkan ke Ummu Kultsum, penulis Syiah kemudian menisbatkan keduanya ke Zainab | Wikipedia, "Zaynab bint Ali" §Zaynab's speech in Kufa (merujuk Qutbuddin 2019) | https://en.wikipedia.org/wiki/Zaynab_bint_Ali | 2026-11-25 | MEDIUM |
+| 7 | Ibnu Abi Thahir Thaifur hidup 204–280 H / 819–893 M (Baghdad), penulis Balaghat al-Nisa' | Wikipedia, "Ibn Abi Tahir Tayfur" | https://en.wikipedia.org/wiki/Ibn_Abi_Tahir_Tayfur | 2026-11-25 | MEDIUM |
+| 8 | Lahir 5 Jumadil Awal 5 (atau 6) H, wafat 15 Rajab 62 H / 30 Maret 682; tiga riwayat makam: Baqi' (Madinah), Zainabiyah (Damaskus), Kairo | WikiShia, "Lady Zaynab (a)", Ahl al-Bayt World Assembly | https://en.wikishia.net/view/Lady_Zaynab_(a) | 2026-11-25 | MEDIUM |

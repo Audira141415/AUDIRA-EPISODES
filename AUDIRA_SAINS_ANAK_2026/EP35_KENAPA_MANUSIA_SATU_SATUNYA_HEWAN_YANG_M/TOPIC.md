@@ -5,7 +5,11 @@ title: "Kenapa Manusia Satu-Satunya Hewan yang Memasak Makanan"
 hook: "Memasak mengubah evolusi manusia secara dramatis — termasuk ukuran otak kita"
 styleCandidates: ["CHRONICLE (2D)", "PAPERWORLD (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Kaitan memasak-otak masih hipotesis (diperdebatkan); harus disebut hipotesis, bukan fakta"
 ---
 
 # Kenapa Manusia Satu-Satunya Hewan yang Memasak Makanan

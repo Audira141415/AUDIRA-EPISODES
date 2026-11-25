@@ -5,7 +5,11 @@ title: "Cara Kerja Enzim: Robot Nano yang Menjalankan Kimia Tubuhmu"
 hook: "Protein yang bekerja jutaan kali per detik untuk mencerna makanan, menyalin DNA, dan mendetoks racun"
 styleCandidates: ["NANOFORGE (3D)", "INNERWORKS (3D)", "CHAINREACTION (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook asli melebih-lebihkan: hanya enzim tercepat (katalase) bekerja jutaan kali per detik, rata-rata ~10/detik; metafora robot jangan divisualkan sebagai mesin berjalan."
 ---
 
 # Cara Kerja Enzim: Robot Nano yang Menjalankan Kimia Tubuhmu

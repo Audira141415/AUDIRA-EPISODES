@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP39`)
+# Naskah — Letusan Gunung Berapi Terbesar yang Hampir Memusnahkan Manusia
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Gunung Toba purba meledak, kolom abu raksasa; HUD "74.000 TAHUN LALU" menghentak di atas.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> 74.000 tahun lalu, satu gunung di Sumatra meledak begitu dahsyat sampai abunya terbang ke Afrika. Benarkah manusia nyaris punah?
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Peta Sumatra zoom ke Danau Toba hari ini (air biru, Pulau Samosir di tengah); label HUD "DANAU TOBA · AUDIRA".
 
-> <konteks singkat + "Di Audira, ...">
+> Ini AUDIRA. Gunung itu bernama Toba, dan bekasnya masih bisa kamu lihat sekarang, yaitu Danau Toba di Sumatra Utara.
 
-## c02 — <Judul Bab 1>
+## c02 — Skala letusan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **32** · estimasi **14 dtk**
+- Visual: Meteran skala VEI 1–8 naik sampai merah di angka 8; kubus volume "2.800 km³" menumpuk; kolom abu dibandingkan pesawat, callout "32 KM".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Letusannya berskala VEI 8, angka tertinggi di skala letusan gunung api. Material yang dimuntahkan lebih dari 2.800 kilometer kubik, dan kolom abunya menjulang sampai 32 kilometer, jauh lebih tinggi dari jalur pesawat.
 
-## c03 — <Judul Bab 2>
+## c03 — Abu menyebar
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Peta Samudra Hindia, awan abu menyebar ke barat; India tertutup lapisan abu dengan callout "5 CM"; pin di pantai selatan Afrika Selatan.
 
-> <teks narasi>
+> Abu setebal 5 sentimeter menyelimuti India. Serpihan kacanya bahkan ditemukan di pantai selatan Afrika Selatan, ribuan kilometer jauhnya.
 
-## c04 — <Judul Bab 3>
+## c04 — Lahirnya danau
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Potongan melintang: dapur magma kosong, puncak runtuh jadi kaldera, air mengisi; callout "100 × 30 KM".
 
-> <teks narasi>
+> Setelah magmanya habis, gunung itu runtuh ke dalam. Lubang raksasanya terisi air dan jadi danau sepanjang 100 kilometer, selebar 30 kilometer, danau vulkanik terbesar di dunia.
 
-## c05 — <Judul Bab 4>
+## c05 — Teori bencana
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Langit kelabu, salju abu turun di sabana; kelompok manusia purba (siluet) mengecil; kartu teori "1998 · STANLEY AMBROSE".
 
-> <teks narasi>
+> Tahun 1998, antropolog Stanley Ambrose mengajukan teori yang menakutkan. Musim dingin setelah Toba mungkin memangkas manusia sampai tinggal beberapa ribu orang saja.
 
-## c06 — <Judul Bab 5>
+## c06 — Bukti baru
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **34** · estimasi **14 dtk**
+- Visual: Tiga panel bukti bergantian: lapisan tanah India dengan alat batu di bawah dan di atas garis abu; gua pantai Afrika Selatan; inti sedimen Danau Malawi. Stempel "TEORI DIUJI".
 
-> <teks narasi>
+> Tapi bukti baru berkata lain. Di India, alat batu ditemukan di bawah dan di atas lapisan abu, bentuknya mirip. Di Afrika Selatan, manusia justru tetap berkembang. Danau Malawi juga tidak menunjukkan musim dingin panjang.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Golden hour di Danau Toba; jejak kaki manusia purba berjalan menyebar di peta dunia; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi Toba memang letusan raksasa, tapi nenek moyang kita ternyata lebih tangguh dari dugaan. Mereka bertahan, lalu menyebar ke seluruh dunia. Ikuti AUDIRA untuk misteri bumi berikutnya.
+
+## Opsi hook lain
+
+1. Danau Toba yang indah itu dulunya gunung yang meledak paling dahsyat dalam sejarah manusia.
+2. Satu letusan di Sumatra pernah dituduh hampir menghapus manusia dari bumi. Tuduhan itu salah?
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **197 kata** ≈ **79–88 dtk**

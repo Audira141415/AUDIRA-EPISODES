@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP45`)
+# Naskah — Rahasia Perpindahan Ibukota Islam dari Medinah ke Baghdad
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Peta Jazirah Arab–Irak–Syam gaya manuskrip; titik emas Madinah melompat ke Kufah, Damaskus, lalu Baghdad. Tiga tanda tanya berkedip di jalur. HUD: "MADINAH → ? → ? → BAGHDAD".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Ibukota Islam tidak pindah langsung dari Madinah ke Baghdad. Di tengahnya ada Kufah dan Damaskus, dan tiap kepindahan lahir dari krisis.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Kota Madinah abad ke-7 dari udara (rumah bata lumpur, kebun kurma), siluet tanpa wajah di depan Masjid Nabawi awal. Label HUD kecil "AUDIRA · QISSAH".
 
-> <konteks singkat + "Di Audira, ...">
+> Di AUDIRA, kita telusuri jejaknya kota demi kota. Di masa Abu Bakar, Umar, dan Utsman, pusat pemerintahan masih ada di Madinah.
 
-## c02 — <Judul Bab 1>
+## c02 — Kufah, ibukota Ali
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Kamera terbang ke timur menyeberangi gurun ke kota garnisun Kufah di tepi Efrat; tenda dan barak prajurit. Callout HUD: "656 M · KUFAH". Tokoh hanya siluet punggung, tanpa wajah.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tahun 656, Khalifah Utsman terbunuh di Madinah. Ali bin Abi Thalib lalu memilih Kufah di Irak sebagai ibukota, kota garnisun tempat para pendukung terkuatnya tinggal.
 
-## c03 — <Judul Bab 2>
+## c03 — Damaskus dan Umayyah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Peti kas negara bergerak di atas peta dari Kufah ke Damaskus; kota Damaskus berbenteng dengan menara batu. Callout HUD: "661 M · DAMASKUS" dan penghitung "661–750".
 
-> <teks narasi>
+> Tahun 661, Ali wafat di Kufah. Muawiyah menjadi khalifah, lalu kas negara dan pusat politik dibawa ke Damaskus, basisnya di Suriah. Dinasti Umayyah memerintah dari sana hampir sembilan puluh tahun.
 
-## c04 — <Judul Bab 3>
+## c04 — Runtuh di Sungai Zab
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Tepi Sungai Zab Besar saat fajar, panji hitam Abbasiyah dan panji putih Umayyah berhadapan (pasukan siluet jauh, tanpa darah), jembatan runtuh. Callout HUD: "25 JAN 750 · PERTEMPURAN ZAB".
 
-> <teks narasi>
+> Januari 750, pasukan Abbasiyah mengalahkan Marwan Kedua di tepi Sungai Zab. Umayyah runtuh. Khalifah Abbasiyah pertama, as-Saffah, dibaiat di Kufah, tapi tak lama bertahan di sana.
 
-## c05 — <Judul Bab 4>
+## c05 — Mencari tempat aman
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **9 dtk**
+- Visual: Peta Irak close-up; pin ibukota bergeser dari Kufah ke Hirah, garis putus-putus berkelok. HUD: "KUFAH → HIRAH". Tenda istana dibongkar-pasang.
 
-> <teks narasi>
+> Kufah terlalu kuat condong kepada keluarga Ali. Karena itu pusat kekuasaan dipindah ke Hirah, sambil mencari tempat yang lebih aman.
 
-## c06 — <Judul Bab 5>
+## c06 — Kota Bundar al-Mansur
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **40** · estimasi **17 dtk**
+- Visual: Cetak biru lingkaran ditarik di atas tanah tepi barat Tigris, lalu tembok ganda naik; empat gerbang menyala bergantian dengan label Kufah, Syam, Khurasan, Basrah. Callout HUD: "762 M", "± 2,4 KM", "100.000 PEKERJA (menurut kronik)".
 
-> <teks narasi>
+> Tahun 762, al-Mansur mulai membangun kota baru di tepi barat Sungai Tigris. Namanya Madinat as-Salam, Kota Perdamaian. Bentuknya bundar, garis tengahnya sekitar dua koma empat kilometer, dengan empat gerbang: Kufah, Syam, Khurasan, dan Basrah. Kronik Arab mencatat seratus ribu pekerja.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Kamera naik tinggi: kota bundar utuh di tepi Tigris saat golden hour, jalur kafilah dan perahu menuju timur ke arah Persia. HUD "750–1258". Lalu outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Lokasinya di jalur sungai, dekat Persia, tempat pasukan pendukung Abbasiyah berasal. Baghdad menjadi ibukota mereka hampir sepanjang kekuasaannya, sampai 1258. Ikuti AUDIRA untuk kisah berikutnya.
+
+## Opsi hook lain
+
+1. Dalam satu abad, ibukota Islam pindah dari Madinah, ke Kufah, ke Damaskus, sampai berakhir di sebuah kota berbentuk lingkaran sempurna.
+2. Kenapa khalifah Abbasiyah tidak mau tinggal di Damaskus maupun Kufah, dan malah membangun kota baru dari nol?
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **208 kata** ≈ **83–92 dtk** @135–150 WPM

@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP44`)
+# Naskah — Teladan Zainab binti Ali: Perempuan yang Menjadi Suara Keadilan di Istana Tirani
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: Siluet perempuan bercadar (tanpa wajah) di lantai istana batu, bayangan penguasa di singgasana menjulang di depannya; obor bergoyang. Teks kinetik "kepala tegak".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Ia dibawa sebagai tawanan ke istana penguasa. Tapi saat diejek, perempuan ini menjawab dengan kepala tegak. Ini kisahnya, di AUDIRA.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Peta Hijaz, pin Madinah menyala; pohon silsilah kaligrafi (nama saja, tanpa wajah): Rasulullah → Fatimah + Ali → Zainab. HUD "±626 M".
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya Zainab binti Ali. Lahir di Madinah sekitar tahun 626, putri Ali bin Abi Thalib dan Fatimah, cucu Rasulullah.
 
-## c02 — <Judul Bab 1>
+## c02 — Karbala
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Padang pasir Karbala saat senja, deretan tenda kafilah dikepung barisan pasukan dari kejauhan (siluet kecil). Callout HUD "10 Muharram 61 H · 10 Oktober 680" lalu counter "72".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tanggal 10 Muharram 61 Hijriah, atau 10 Oktober 680, rombongan kecil Husain bin Ali dikepung di Karbala. Sekitar 72 lelaki bersenjata gugur, termasuk dua putra Zainab, Aun dan Muhammad.
 
-## c03 — <Judul Bab 2>
+## c03 — Tawanan ke Kufah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: Peta bergerak, garis rute Karbala → Kufah; iring-iringan unta membawa perempuan dan anak (siluet). Interior istana gubernur, sosok bercadar duduk di sudut dengan kain lusuh. Label HUD "Ubaidullah bin Ziyad".
 
-> <teks narasi>
+> Perempuan dan anak-anak yang selamat digiring ke Kufah. Di istana gubernur Ubaidullah bin Ziyad, Zainab duduk diam memakai pakaian lusuh.
 
-## c04 — <Judul Bab 3>
+## c04 — Jawaban di Kufah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Dua panel kutipan berhadapan (gaya manuskrip): kiri ejekan Ibnu Ziyad dengan tinta merah, kanan jawaban Zainab dengan tinta emas; badge "QS 33:33".
 
-> <teks narasi>
+> Ibnu Ziyad mengejek, Allah telah menghinakan kalian. Zainab menjawab, segala puji bagi Allah yang memuliakan kami dengan Muhammad. Yang dihinakan hanyalah pendosa besar.
 
-## c05 — <Judul Bab 4>
+## c05 — Di hadapan Yazid
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Rute peta Kufah → Damaskus; aula istana Damaskus berpilar, singgasana di ujung (tanpa wajah). Siluet Zainab melangkah ke depan, merentangkan tangan melindungi gadis kecil di belakangnya.
 
-> <teks narasi>
+> Rombongan lalu dibawa ke Damaskus, ke hadapan Yazid. Seorang lelaki Syam meminta gadis tawanan dijadikan budak. Zainab langsung membantah, itu bukan hakmu. Yazid membentak, Zainab terus menjawab, sampai Yazid terdiam.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan sumber
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Rak kitab kuno, kitab "Tarikh at-Thabari" terbuka, sorotan baris teks; garis waktu 680 → 893 dengan label "±2 abad" di atas kitab Balaghat al-Nisa'.
 
-> <teks narasi>
+> Dialog ini dicatat sejarawan at-Thabari dari riwayat Abu Mikhnaf. Khutbah panjang Zainab yang populer baru tertulis sekitar dua abad kemudian, jadi para ahli masih menelitinya.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Golden hour, kubah makam di Damaskus dan Kairo berdampingan (split), lalu siluet Zainab di cakrawala dengan teks kinetik "Kebenaran tetap diucapkan". Outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Zainab wafat sekitar tahun 682, dan makamnya diziarahi di Damaskus dan Kairo. Pelajarannya, kebenaran tetap boleh diucapkan, bahkan di depan kekuasaan. Ikuti AUDIRA untuk kisah teladan berikutnya.
+
+## Opsi hook lain
+
+1. Saudaranya gugur di Karbala. Beberapa hari kemudian, ia berdebat dengan penguasa di istananya sendiri.
+2. Seorang tawanan perempuan membuat penguasa Damaskus terdiam. Apa yang ia katakan?
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **193 kata** ≈ **77–86 dtk** @135–150 WPM

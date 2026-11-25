@@ -5,7 +5,11 @@ title: "Letusan Gunung Berapi Terbesar yang Hampir Memusnahkan Manusia"
 hook: "74.000 tahun lalu Toba meletus dan populasi manusia tersisa hanya beberapa ribu jiwa"
 styleCandidates: ["DISASTERSIM (3D)", "WORLDFORGE (3D)", "CHRONICLE (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul/hook menyajikan teori bottleneck Toba (Ambrose 1998) sebagai fakta; naskah harus membingkainya sebagai teori yang kini banyak dibantah"
 ---
 
 # Letusan Gunung Berapi Terbesar yang Hampir Memusnahkan Manusia

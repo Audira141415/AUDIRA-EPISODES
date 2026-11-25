@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi`
+# Source Register — Letusan Gunung Berapi Terbesar yang Hampir Memusnahkan Manusia
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Toba (Sumatra) meletus ±74.000 tahun lalu (Ar-Ar 73.880 ± 320 th); VEI 8, letusan eksplosif terbesar yang diketahui di Kuarter; berlangsung ±9–14 hari; kolom abu ±32 km; material ≥ 2.800 km³ (Rose & Chesner), estimasi terbaru 3.800 km³ DRE; abu 5 cm menyelimuti anak benua India | Youngest Toba eruption, Wikipedia (rev. 2026-11-24, dengan kutipan) | https://en.wikipedia.org/wiki/Youngest_Toba_eruption | 2026-11-25 | MEDIUM |
+| 2 | Danau Toba = kaldera supervolcano Toba; panjang ±100 km, lebar ±30 km, dalam s.d. 505 m; danau terbesar di Indonesia dan danau vulkanik terbesar di dunia; UNESCO Global Geopark sejak Juli 2020 | Lake Toba, Wikipedia (dengan kutipan) | https://en.wikipedia.org/wiki/Lake_Toba | 2026-11-25 | MEDIUM |
+| 3 | Hipotesis: musim dingin vulkanik Toba mungkin memangkas sebagian besar populasi manusia modern (bottleneck), sisa bertahan di refugia tropis | Late Pleistocene human population bottlenecks, volcanic winter, and differentiation of modern humans, Stanley H. Ambrose, Journal of Human Evolution 34:623–651, 1998 | https://doi.org/10.1006/jhev.1998.0219 | 2026-11-25 | HIGH |
+| 4 | Serpihan kaca abu Toba (Youngest Toba Tuff) ditemukan di dua situs arkeologi pantai selatan Afrika Selatan; manusia di sana tetap berkembang melewati letusan ±74 ka | Humans thrived in South Africa through the Toba eruption about 74,000 years ago, Smith E.I. dkk., Nature 555:511–515, 2018 | https://doi.org/10.1038/nature25967 | 2026-11-25 | HIGH |
+| 5 | Abu Toba di endapan Danau Malawi tidak menunjukkan jejak musim dingin vulkanik di Afrika Timur | Ash from the Toba supereruption in Lake Malawi shows no volcanic winter in East Africa at 75 ka, Lane C.S. dkk., PNAS, 2013 | https://doi.org/10.1073/pnas.1301474110 | 2026-11-25 | HIGH |
+| 6 | Alat batu Paleolitik Tengah di Lembah Jurreru (India) ditemukan di bawah dan di atas lapisan abu Toba dengan bentuk sangat mirip; populasi lokal tidak lenyap | Middle Paleolithic Assemblages from the Indian Subcontinent Before and After the Toba Super-Eruption, Petraglia M. dkk., Science 317:114–116, 2007 | https://doi.org/10.1126/science.1141564 | 2026-11-25 | HIGH |
+| 7 | Ringkasan abstrak Smith 2018 (tanggal ±74 ka, lokasi situs, temuan kaca) diverifikasi via PubMed | PubMed PMID 29531318, NCBI | https://pubmed.ncbi.nlm.nih.gov/29531318/ | 2026-11-25 | MEDIUM |

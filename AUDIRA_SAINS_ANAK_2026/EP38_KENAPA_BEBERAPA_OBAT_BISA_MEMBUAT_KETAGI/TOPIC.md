@@ -5,7 +5,11 @@ title: "Kenapa Beberapa Obat Bisa Membuat Ketagihan"
 hook: "Neurobiologi adiksi: bagaimana zat kimia meretas sistem reward otakmu"
 styleCandidates: ["ANATOMIX (3D)", "INNERWORKS (3D)", "BEDAH (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Topik narkoba untuk audiens pelajar: jangan sebut dosis/cara pakai; tegaskan sebagian besar obat aman dan dopamin bukan sekadar rasa senang."
 ---
 
 # Kenapa Beberapa Obat Bisa Membuat Ketagihan

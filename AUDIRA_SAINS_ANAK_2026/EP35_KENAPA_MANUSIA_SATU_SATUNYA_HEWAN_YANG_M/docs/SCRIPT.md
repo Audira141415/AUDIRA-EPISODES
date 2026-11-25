@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP35`)
+# Naskah — Kenapa Manusia Satu-Satunya Hewan yang Memasak Makanan
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **13** · estimasi **5 dtk**
+- Visual: Simpanse menatap dua piring, ubi mentah vs ubi panggang beruap; tangannya meraih yang matang. Teks besar "CUMA MANUSIA YANG MEMASAK".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Simpanse ternyata lebih suka makanan matang. Tapi cuma manusia yang bisa memasaknya. Kenapa?
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Gorila di hutan mengunyah batang tanaman; jam matahari di HUD berputar cepat dari pagi ke sore.
 
-> <konteks singkat + "Di Audira, ...">
+> Bayangkan semua makananmu mentah. Daging alot, umbi keras, daun pahit. Kera besar seperti gorila menghabiskan sebagian besar siang hari cuma untuk mencari makan dan mengunyah.
 
-## c02 — <Judul Bab 1>
+## c02 — Api pertama
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Peta Afrika zoom ke Afrika Selatan, masuk ke mulut Gua Wonderwerk; lapisan tanah dibelah, tulang hangus dan abu menyala. Callout HUD "±1 JUTA TAHUN".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Lalu leluhur kita mulai menguasai api. Di Gua Wonderwerk, Afrika Selatan, ilmuwan menemukan tulang terbakar dan abu tumbuhan berumur sekitar satu juta tahun.
 
-## c03 — <Judul Bab 2>
+## c03 — Tungku tepi danau
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Tepi danau purba di Israel; tumpukan biji jelai dan anggur liar menghitam di sekitar titik api. Callout HUD "±790.000 TAHUN".
 
-> <teks narasi>
+> Di Gesher Benot Yaakov, Israel, ada biji jelai dan anggur liar yang terbakar sekitar tujuh ratus sembilan puluh ribu tahun lalu. Bisa jadi itu salah satu tungku tertua.
 
-## c04 — <Judul Bab 3>
+## c04 — Energi tambahan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Potongan daging mentah vs matang masuk ke dua tikus lab; dua bar energi naik, bar "matang" lebih tinggi.
 
-> <teks narasi>
+> Kenapa memasak penting? Panas melunakkan makanan sehingga lebih mudah dicerna. Percobaan pada tikus menunjukkan daging matang memberi energi lebih banyak daripada daging mentah.
 
-## c05 — <Judul Bab 4>
+## c05 — Otak yang rakus
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **14 dtk**
+- Visual: Siluet tubuh manusia transparan, otak menyala; pie chart "2% berat" vs "20% energi"; jaringan neuron berkelip. Callout HUD "86 MILIAR NEURON".
 
-> <teks narasi>
+> Energi itu diserap organ paling rakus di tubuh kita, yaitu otak. Beratnya cuma sekitar dua persen tubuh, tapi memakai sampai dua puluh persen energi. Isinya lebih dari delapan puluh enam miliar neuron.
 
-## c06 — <Judul Bab 5>
+## c06 — Kenapa memasak mengubah kita
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **35** · estimasi **15 dtk**
+- Visual: Timeline jam: kera mentah (jam penuh warna "makan") vs manusia memasak (jam banyak waktu kosong untuk berburu, membuat alat). Label kecil "HIPOTESIS — masih diperdebatkan".
 
-> <teks narasi>
+> Menurut hitungan ilmuwan, dengan makanan mentah saja, otak sebesar itu butuh waktu makan hampir sepanjang siang. Memasak memangkas waktu itu. Tapi ini masih hipotesis, karena otak leluhur kita sudah mulai membesar sebelum bukti api tertua.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Transisi dari api unggun purba ke kompor dapur modern, telur digoreng; kamera tarik mundur ke kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi tiap kali kamu menggoreng telur, kamu mengulang trik yang mungkin ikut membentuk otak manusia. Ikuti AUDIRA untuk sains seru lainnya.
+
+## Opsi hook lain
+
+1. Otakmu cuma dua persen berat tubuh, tapi makan seperlima energimu. Rahasianya ada di dapur.
+2. Satu juta tahun lalu, di sebuah gua di Afrika, seseorang menyalakan api. Hidup kita berubah sejak itu.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **200 kata** ≈ **80–89 dtk**

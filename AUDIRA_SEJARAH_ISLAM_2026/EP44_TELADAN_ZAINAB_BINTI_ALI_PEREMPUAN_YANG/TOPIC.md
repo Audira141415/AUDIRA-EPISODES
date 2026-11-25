@@ -5,7 +5,11 @@ title: "Teladan Zainab binti Ali: Perempuan yang Menjadi Suara Keadilan di Istan
 hook: "Setelah tragedi Karbala, ia berdiri di depan penguasa dan tidak gentar sedikit pun"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "CHARACTERFLOW (2D)", "CINESTORY (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Sensitif antar-mazhab (Karbala, Yazid); khutbah panjang di istana Yazid baru tercatat ±2 abad kemudian, jadi hanya dialog versi Tabari yang dinarasikan sebagai fakta; wajib tanpa wajah ahlul bait."
 ---
 
 # Teladan Zainab binti Ali: Perempuan yang Menjadi Suara Keadilan di Istana Tirani

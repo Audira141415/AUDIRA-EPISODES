@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi`
+# Source Register — Kenapa Beberapa Obat Bisa Membuat Ketagihan
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Zat seperti heroin/ganja meniru neurotransmiter alami; amfetamin/kokain membuat neuron melepas neurotransmiter berlebihan atau menghalangi daur ulangnya lewat transporter; sinyal dopamin mengajari otak mengulang; analogi bisikan vs teriakan lewat mikrofon; otak mengurangi neurotransmiter atau reseptor; toleransi; amigdala luas (stres/gelisah saat putus zat); korteks prefrontal (kendali diri) | Drugs, Brains, and Behavior: The Science of Addiction — Drugs and the Brain, NIDA (NIH) | https://nida.nih.gov/publications/drugs-brains-behavior-science-addiction/drugs-brain | 2026-11-25 | HIGH |
+| 2 | 1988, Di Chiara & Imperato (Univ. Cagliari, Italia): pada tikus, opiat, etanol, nikotin, amfetamin, kokain menaikkan dopamin ekstraseluler terutama di nucleus accumbens; obat tak disalahgunakan (imipramin, atropin, difenhidramin/antihistamin) tidak mengubah dopamin | Drugs abused by humans preferentially increase synaptic dopamine concentrations in the mesolimbic system of freely moving rats, Di Chiara G & Imperato A, PNAS 1988 | https://pubmed.ncbi.nlm.nih.gov/2899326/ | 2026-11-25 | HIGH |
+| 3 | Adiksi berjalan dalam tiga tahap; karakteristik adiksi paling berat berkembang pada sekitar 10% orang yang terpapar zat adiktif | Neurobiologic Advances from the Brain Disease Model of Addiction, Volkow ND, Koob GF, McLellan AT, NEJM 2016 | https://pmc.ncbi.nlm.nih.gov/articles/PMC6135257/ | 2026-11-25 | HIGH |
+| 4 | Per 2022: 292 juta pengguna narkoba; sekitar 64 juta orang hidup dengan gangguan penggunaan zat, hanya 1 dari 11 yang menjalani perawatan | UNODC World Drug Report 2024 (siaran pers), UNODC, 2024 | https://www.unodc.org/unodc/en/press/releases/2024/June/unodc-world-drug-report-2024_-harms-of-world-drug-problem-continue-to-mount-amid-expansions-in-drug-use-and-markets.html | 2026-11-25 | HIGH |
+| 5 | Sekitar 600.000 kematian terkait penggunaan zat (2019); sekitar 125.000 meninggal akibat overdosis opioid (2019); opioid termasuk obat pereda nyeri resep | Opioid overdose (fact sheet), WHO | https://www.who.int/news-room/fact-sheets/detail/opioid-overdose | 2026-11-25 | HIGH |
+| 6 | Transporter dopamin yang turun pada pengguna metamfetamin naik kembali setelah 12–17 bulan abstinen (kaudatus +19%, putamen +16%; n=5) — tanda otak bisa pulih sebagian | Loss of dopamine transporters in methamphetamine abusers recovers with protracted abstinence, Volkow ND dkk., J Neurosci 2001 | https://pubmed.ncbi.nlm.nih.gov/11717374/ | 2026-11-25 | MEDIUM |
+| 7 | Sistem hadiah otak (mesolimbik, nucleus accumbens) dan peran dopamin dalam motivasi/penguatan | Reward system, Wikipedia (en) | https://en.wikipedia.org/wiki/Reward_system | 2026-11-25 | MEDIUM |

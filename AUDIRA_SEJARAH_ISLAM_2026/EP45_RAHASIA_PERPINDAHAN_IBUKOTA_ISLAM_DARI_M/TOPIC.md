@@ -5,7 +5,11 @@ title: "Rahasia Perpindahan Ibukota Islam dari Medinah ke Baghdad"
 hook: "Keputusan besar yang mengubah wajah peradaban Islam — dan kontroversi di baliknya"
 styleCandidates: ["CHRONICLE (2D)", "WORLDFORGE (3D)", "HISTORYMAP (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Sensitif Sunni-Syiah (Ali vs Muawiyah) wajib netral; tokoh tanpa wajah; judul menyiratkan pindah langsung padahal lewat Kufah dan Damaskus."
 ---
 
 # Rahasia Perpindahan Ibukota Islam dari Medinah ke Baghdad
