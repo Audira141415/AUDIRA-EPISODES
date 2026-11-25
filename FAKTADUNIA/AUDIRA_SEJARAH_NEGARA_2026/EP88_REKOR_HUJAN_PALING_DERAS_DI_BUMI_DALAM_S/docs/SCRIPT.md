@@ -1,93 +1,69 @@
-# SCRIPT — `Fakta sejarah unik negara-negara di dunia` (`EP88`)
+# Naskah — Rekor Hujan Paling Deras di Bumi — Dalam Satu Menit
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: stopwatch raksasa 60 detik berputar di tengah layar, tirai hujan tebal turun di belakangnya; HUD callout "31,2 mm / 60 dtk" menghentak.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Enam puluh detik, 31,2 milimeter air jatuh dari langit. Ini rekor hujan tercepat di Bumi, dan AUDIRA mau tunjukkan seberapa gila angka itu.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: peta AS zoom ke Maryland, pin kota kecil Unionville; kalender sobek "4 Juli 1956"; awan badai gelap menggulung di atas rumah-rumah kayu.
 
-> <konteks singkat + "Di Audira, ...">
+> Tempatnya Unionville, kota kecil di Maryland, Amerika Serikat. Tanggal 4 Juli 1956, pas hari kemerdekaan Amerika, langit di atas kota itu seperti ditumpahkan.
 
-## c02 — <Judul Bab 1>
+## c02 — Satu milimeter itu berapa?
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: close-up satu petak tanah 1×1 m dengan garis ukur; air naik setinggi 31 mm; tiga ember 10 liter dituang bersamaan. HUD: "1 mm = 1 L/m²", "31 liter".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Satu milimeter hujan sama dengan satu liter air di setiap meter persegi tanah. Artinya, dalam semenit, tiap meter persegi di Unionville diguyur 31 liter. Kira-kira tiga ember sepuluh liter, dituang sekaligus.
 
-## c03 — <Judul Bab 2>
+## c03 — Bukan klaim asal
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: meja arsip, alat ukur hujan (rain gauge) lama dan pita grafik, halaman jurnal "Monthly Weather Review 1959" terbuka; stempel "WMO" sebagai badge arsip (teks saja, tanpa logo).
 
-> <teks narasi>
+> Angka ini bukan klaim asal. Biro Cuaca Amerika menelitinya, lalu laporannya terbit di jurnal Monthly Weather Review tahun 1959. Sekarang rekornya tercatat resmi di arsip ekstrem cuaca WMO.
 
-## c04 — <Judul Bab 3>
+## c04 — Rekor-rekor lain
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: globe berputar; pin Holt, Missouri dengan HUD "305 mm · 42 menit · 1947"; lompat ke pulau vulkanik Réunion di Samudra Hindia, siklon berputar, HUD "1.825 mm · 24 jam · 1966".
 
-> <teks narasi>
+> Rekor lainnya juga ngeri. Holt, Missouri, tahun 1947: 305 milimeter hanya dalam 42 menit. Foc-Foc di Pulau Réunion, 1966: 1.825 milimeter dalam 24 jam.
 
-## c05 — <Judul Bab 4>
+## c05 — Setahun di Cherrapunji
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: perbukitan hijau berkabut Meghalaya, India; kolom air setinggi gedung 26 meter naik di samping bangunan; HUD "26.470 mm · 1860–1861".
 
-> <teks narasi>
+> Lalu Cherrapunji di India, yang mengumpulkan 26.470 milimeter hujan dalam setahun, dari 1860 sampai 1861.
 
-## c06 — <Judul Bab 5>
+## c06 — Ada penantang
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: pulau tropis Guadeloupe dari udara; dua papan skor berhadapan "Unionville 31,2 mm" vs "Barot 38 mm?"; tanda tanya berkedip, label "belum diakui WMO".
 
-> <teks narasi>
+> Tapi ada penantang. Barot di Guadeloupe diklaim mencatat 38 milimeter dalam semenit pada 1970. Klaim itu belum masuk daftar resmi WMO, jadi gelarnya masih dipegang Unionville.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: penghitung jam berlari dari 1 ke 60 menit; tabung air tumbuh melewati garis "rekor 24 jam 1.825 mm" dan berhenti di "1.872 mm"; hero shot kota diguyur hujan, lalu outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Sekarang bayangkan hujan Unionville tidak berhenti selama satu jam. Totalnya 1.872 milimeter, lebih banyak dari rekor dunia untuk 24 jam. Cuma dalam enam puluh menit. Menurutmu, kota kamu sanggup menampung air sebanyak itu?
+
+## Opsi hook lain
+
+1. Tiga ember air di setiap meter persegi, cuma dalam satu menit. Ini yang terjadi di Unionville tahun 1956.
+2. Kalau hujan ini turun satu jam saja, rekor hujan 24 jam dunia langsung pecah.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **203 kata** ≈ **81–90 dtk** (@150–135 WPM)
