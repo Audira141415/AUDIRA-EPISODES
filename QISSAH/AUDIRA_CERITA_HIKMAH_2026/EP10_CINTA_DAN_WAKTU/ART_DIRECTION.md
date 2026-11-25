@@ -1,0 +1,7 @@
+# ART DIRECTION — EP10 (STAINEDGLASS)
+
+- **Dunia:** satu dinding nave batu dengan jendela tiga lengkung runcing (lancet kiri, tengah lebih tinggi, kanan), molding batu, ambang dengan plakat kuningan AUDIRA, lantai flagstone, dua kolom depan untuk paralaks, berkas cahaya berwarna, dan debu melayang.
+- **Kaca:** shader SDF sendiri (`glass.ts`). Satu warna per panel dengan variasi tekstur kaca seedy (guratan, gelembung, tepi menebal). Panel besar dipecah Voronoi. Timah hitam di setiap tepi bentuk dan panel. Wajah, lipatan jubah, rambut, janggut, dan kayu memakai cat grisaille. Bingkai panel permata kecil di dalam tiap lancet.
+- **Warna tokoh:** Cinta merah hangat + bros hati emas; Kekayaan emas bermahkota dengan peti dan koin; Kegembiraan oranye, tangan terangkat; Kecantikan merah muda, rambut emas, perahu berbunga; Kesedihan biru tua berkerudung, kepala tertunduk; Waktu jubah perak-abu, kerudung, janggut putih, jam pasir yang pasirnya turun; penduduk pulau jubah hijau zamrud.
+- **Cahaya per adegan:** tenang (biru muda, matahari emas) → badai (kobalt/ungu, petir emas, hujan dilukis) → penyelamatan (matahari menembus kanan) → hikmah (hati dan Waktu paling terang, genangan cahaya di lantai). Kaca selalu objek paling terang; batu tetap redup.
+- **Gerak:** panel menyala dari hati di hook dan saat kilas balik; figur menyala saat disebut atau berbicara; air naik bertahap (kaki, pinggang, dagu); perahu meluncur keluar-masuk lancet; kamera truck sepanjang jendela, dolly ke Cinta di momen emosional, crane turun ke plakat di akhir.

@@ -1,0 +1,165 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#0b0c0f}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.035;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.32) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.55) 42%,rgba(0,0,0,0.55) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:262px;z-index:10;transform-origin:50% 50%}
+.nb{font-variant-numeric:tabular-nums}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Inter,sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#fff;opacity:.82}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:30px;color:#A3E635;letter-spacing:.14em}
+
+.p{font-family:Archivo,sans-serif}
+.k{display:inline-block;font-family:"JetBrains Mono",monospace;font-weight:700;font-size:25px;letter-spacing:.14em;color:#00E5FF;background:rgba(10,11,14,.88);border:1px solid rgba(0,229,255,.35);border-radius:8px;padding:8px 16px;margin-bottom:14px}
+.hero{display:flex;flex-direction:column;background:rgba(10,11,14,.8);border-radius:16px;padding:10px 30px 18px;align-self:flex-start;width:max-content;border:1px solid rgba(255,255,255,.1)}
+.hero b{font-family:Archivo,sans-serif;font-weight:900;font-size:210px;line-height:.92;letter-spacing:-.04em;color:#fff}
+.hero i{font-style:normal;font-family:"JetBrains Mono",monospace;font-weight:800;font-size:64px;letter-spacing:.22em;color:#FFB703;margin-top:2px}
+.tl{font-family:Archivo,sans-serif;font-weight:600;font-size:38px;color:#fff;margin-top:14px;background:rgba(10,11,14,.82);display:inline-block;padding:8px 16px;border-radius:8px}
+.tl span{font-weight:900;color:#00E5FF}
+.card{background:rgba(10,11,14,.86);border:1px solid rgba(255,255,255,.12);border-left:5px solid #00E5FF;padding:14px 24px 16px;width:800px;border-radius:14px;box-shadow:0 20px 44px rgba(0,0,0,.35)}
+.card b{display:block;font-weight:900;color:#fff;line-height:1}
+.card.big b{font-size:150px;letter-spacing:-.03em}
+.card b.mid{font-size:58px;letter-spacing:-.01em}
+.card span{display:block;font-weight:500;font-size:31px;color:#B9C1CC;margin-top:6px}
+.two{display:flex;gap:40px}
+.two small,.relay small,.rp small{display:block;font-family:"JetBrains Mono",monospace;font-weight:700;font-size:22px;letter-spacing:.12em;color:#8FA0B2}
+.two b{font-size:104px;letter-spacing:-.03em;margin-top:4px}
+.am{color:#FFB703!important}.cy{color:#00E5FF!important}.rd{color:#FF5A4E!important}
+.tline{display:flex;gap:12px;width:850px;margin-top:12px}
+.tline div{flex:1;background:rgba(10,11,14,.84);border-top:3px solid rgba(255,255,255,.4);border-radius:10px;padding:10px 14px}
+.tline b{display:block;font-weight:900;font-size:52px;color:#fff;line-height:1}
+.tline span{display:block;font-weight:500;font-size:26px;color:#B9C1CC}
+.row{background:rgba(10,11,14,.86);border-left:5px solid #FFB703;padding:10px 20px;margin-top:12px;width:760px;border-radius:10px}
+.row b{display:block;font-weight:800;font-size:48px;line-height:1.08;color:#fff}
+.row span{display:block;font-weight:500;font-size:29px;line-height:1.2;color:#B9C1CC}
+.chips{display:flex;gap:14px}
+.chips b{font-weight:900;font-size:58px;line-height:1;background:rgba(10,11,14,.88);border:1px solid rgba(255,255,255,.14);padding:14px 22px;border-radius:12px}
+.relay{display:flex;align-items:center;gap:16px;width:870px;background:rgba(10,11,14,.86);border-radius:14px;padding:16px 22px;border:1px solid rgba(255,255,255,.12)}
+.relay b{display:block;font-weight:900;font-size:62px;line-height:1.02;color:#fff;margin-top:4px}
+.relay i{display:block;flex:0 0 70px;height:6px;background:linear-gradient(90deg,#FFB703,#00E5FF);transform-origin:0 50%;border-radius:3px}
+.note{display:inline-block;margin-top:12px;font-weight:600;font-size:32px;color:#fff;background:rgba(10,11,14,.8);padding:8px 16px;border-radius:8px}
+.ropes{display:flex;gap:14px;width:880px}
+.rp{flex:1;background:rgba(10,11,14,.86);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:14px 18px}
+.rp b{display:block;font-weight:900;font-size:52px;line-height:1.05;color:#fff;margin-top:4px}
+.rp span{display:block;font-weight:500;font-size:27px;color:#B9C1CC}
+.card b .ct,.two b .ct{display:inline;font:inherit;color:inherit;margin:0}
+.trio{display:flex;flex-direction:column;gap:10px}
+.trio b{display:inline-block;align-self:flex-start;font-weight:900;font-size:84px;line-height:1;letter-spacing:-.02em;color:#fff;background:rgba(10,11,14,.86);padding:10px 22px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.12)}
+.srcl{font-weight:500;font-size:24px;line-height:1.3;color:#DDE3EA;margin-top:16px;width:780px;background:rgba(10,11,14,.8);padding:10px 14px;border-radius:8px}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="85.9" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="k">CARA KERJA VIRAL &middot; EP 17</div>
+  <div class="hero"><b>1 KM</b><i>KE ATAS</i></div>
+  <div class="tl">Cara membangun gedung <span>satu kilometer</span></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="k">2 NOVEMBER &middot; JEDDAH TOWER</div>
+  <div class="card"><div class="two"><div data-at="s2:menembus" data-fx="up"><small>LANTAI</small><b class="nb am"><span class="ct" data-from="0" data-to="120" data-a="s2:menembus" data-d="1.6">0</span></b></div><div data-at="s2:480" data-fx="up"><small>TINGGI SEKARANG</small><b class="nb">&plusmn; 480 m</b></div></div></div>
+  <div class="tline">
+    <div data-at="s2:mangkrak" data-fx="left"><b>2018</b><span>mangkrak</span></div>
+    <div data-at="s2:dilanjutkan" data-fx="left"><b>2025</b><span>dilanjutkan</span></div>
+    <div data-at="s2:targetnya" data-fx="left"><b class="am">2028</b><span>target selesai</span></div>
+  </div>
+  <div class="row" data-at="s2:kilometer" data-fx="left"><b class="am">&gt; 1 KM</b><span>tinggi akhirnya</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="k">FONDASI &middot; BATU KARANG BERONGGA</div>
+  <div class="card big" data-at="s3:tiang" data-fx="up"><b class="nb am"><span class="ct" data-from="0" data-to="270" data-a="s3:tiang" data-d="1.4">0</span></b><span>tiang bor</span></div>
+  <div class="row" data-at="s3:sedalam" data-fx="left"><b class="nb">45&ndash;105 m</b><span>kedalaman tiang</span></div>
+  <div class="row" data-at="s3:pelat" data-fx="left"><b class="nb">&plusmn; 5 m</b><span>pelat beton pengikat</span></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="k">DENAH HURUF Y</div>
+  <div class="chips"><b class="am" data-at="s4:Inti" data-fx="pop">INTI SEGITIGA</b><b class="cy" data-at="s4:sayap" data-fx="pop">3 SAYAP</b></div>
+  <div class="row" data-at="s4:dinding" data-fx="left"><b>DINDING, TANPA KOLOM</b><span>beban ditahan dinding beton</span></div>
+  <div class="row" data-at="s4:Tiga" data-fx="left"><b><span class="am">3 KAKI</span> = MINIMUM</b><span>agar stabil</span></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="k">BETON ESTAFET &middot; RENCANA</div>
+  <div class="relay" data-at="s5:pertama" data-fx="up">
+    <div data-at="s5:pertama" data-fx="up"><small>POMPA 1</small><b class="nb am">&plusmn; 500 m</b></div>
+    <i data-at="s5:kedua" data-fx="grow"></i>
+    <div data-at="s5:kedua" data-fx="up"><small>POMPA 2</small><b class="cy">MENERUSKAN</b></div>
+  </div>
+  <div class="note" data-at="s5:Satu" data-fx="fade">Satu pompa tidak sanggup</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="k">MUSUH TERBESAR: ANGIN</div>
+  <div class="card" data-at="s6:pusaran" data-fx="up"><b class="mid">PUSARAN BERGANTIAN</b><span>bisa mengayunkan gedung</span></div>
+  <div class="row" data-at="s6:sayapnya" data-fx="left"><b class="cy">SAYAP MAKIN PENDEK</b><span>pusaran tidak sempat kompak</span></div>
+  <div class="row" data-at="s6:terowongan" data-fx="left"><b>DIUJI DI TEROWONGAN ANGIN</b></div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="k">LIFT SATU KILOMETER</div>
+  <div class="ropes">
+    <div class="rp" data-at="s7:baja" data-fx="up"><small>TALI BAJA</small><b class="rd">TERLALU BERAT</b><span>di atas &plusmn; 500 m</span></div>
+    <div class="rp" data-at="s7:karbon" data-fx="up"><small>TALI SERAT KARBON</small><b class="cy nb">&gt; 630 m</b><span>ke dek pengamatan</span></div>
+  </div>
+  <div class="row" data-at="s7:sepuluh" data-fx="left"><b class="nb">10 m/s</b><span>kecepatan lift</span></div>
+  <div class="row" data-at="s7:peredam" data-fx="left"><b class="am">PEREDAM MASSA</b><span>di ujung menara</span></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="trio"><b data-at="s8:Akar" data-fx="pop">AKAR DI KARANG</b><b data-at="s8:kaki" data-fx="pop" class="am">TIGA KAKI</b><b data-at="s8:pengecoh" data-fx="pop" class="cy">PENGECOH ANGIN</b></div>
+  <div class="srcl" data-at="s8:Ikuti" data-fx="fade">Sumber: Kingdom Holding (2 Nov 2026), Newsweek, New Civil Engineer, KONE. Model 3D adalah ilustrasi, bukan gambar proyek asli.</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">CARA KERJA VIRAL &middot; EP 17</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":4.183,"s2":4.343,"s2e":18.103,"s3":18.263,"s3e":26.482,"s4":26.642,"s4e":38.299,"s5":38.459,"s5e":48.465,"s6":48.625,"s6e":60.974,"s7":61.134,"s7e":75.066,"s8":75.226,"s8e":82.896,"end":82.896,"dur":85.9,"outro":83.146},AT={"s1:kilometer":0.422,"s1:Tapi":1.196,"s1:atas":1.583,"s1:Bagaimana":2.542,"s1:berdiri":3.75,"s2:November":4.689,"s2:120":7.4,"s3:Fondasinya":18.263,"s3:berongga":19.485,"s3:Ada":20.15,"s3:105":22.906,"s3:diikat":24.19,"s4:Dari":26.687,"s4:Y":29.225,"s4:Bebannya":32.769,"s4:kolom":34.765,"s4:stabil":37.788,"s5:estafet":42.975,"s5:meneruskan":47.939,"s6:Musuh":48.625,"s6:Angin":50.31,"s6:mengayunkan":52.864,"s6:Karena":54.124,"s6:pendek":56.229,"s6:kompak":58.482,"s6:Semuanya":59.116,"s7:berat":64.136,"s7:Lift":64.747,"s7:630":68.028,"s7:Liftnya":69.444,"s7:ujung":71.887,"s7:goyangan":74.587,"s2:menembus":6.688,"s2:480":8.964,"s2:mangkrak":11.007,"s2:dilanjutkan":13.032,"s2:targetnya":14.797,"s2:kilometer":17.561,"s3:tiang":21.048,"s3:sedalam":21.435,"s3:pelat":24.531,"s4:Inti":29.849,"s4:sayap":31.582,"s4:dinding":33.605,"s4:Tiga":35.451,"s5:pertama":44.834,"s5:kedua":47.614,"s5:Satu":38.459,"s6:pusaran":51.269,"s6:sayapnya":54.82,"s6:terowongan":60.231,"s7:baja":63.471,"s7:karbon":66.605,"s7:sepuluh":70.357,"s7:peredam":72.909,"s8:Akar":75.641,"s8:kaki":77.032,"s8:pengecoh":78.562,"s8:Ikuti":79.762},DUR=85.9,OUT=83.146;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ 
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{clipPath:'polygon(0% 0%,0% 0%,0% 0%,0% 0%)',opacity:1,x:-14},{clipPath:'polygon(0% 0%,220% 0%,0% 220%,0% 0%)',x:0,duration:.55,ease:'expo.out'},a-.16);},POUT=(tl,p,b)=>tl.to(p,{transformOrigin:'50% 0%',scaleY:0.04,opacity:0,duration:.3,ease:'power3.in'},b-.32);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP17_GEDUNG_1KM_JEDDAH")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

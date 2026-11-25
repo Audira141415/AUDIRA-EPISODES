@@ -1,0 +1,730 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+  "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+  "createdAt": "2026-11-22T17:48:34.587Z",
+  "updatedAt": "2026-11-23T10:15:06.078Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:52:16.434Z",
+          "text": "Dibaca: CLAUDE.md, BRIEF_COMMON QISSAH (adab visual), NOTES EP34, memori GLOBAL + PAPERWORLD + ISLAMICDOCUMENTARY."
+        }
+      ],
+      "doneAt": "2026-11-22T17:52:16.434Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:50:57.323Z",
+          "text": "SOURCE_REGISTER: 10 ayat (A), tafsir Ibnu Katsir (B), israiliyat dipisah (C)."
+        }
+      ],
+      "doneAt": "2026-11-22T17:50:57.323Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-23T00:00:17.635Z",
+      "notes": [
+        {
+          "at": "2026-11-22T17:52:12.655Z",
+          "text": "Pengguna memilih PAPERWORLD (dari PAPERWORLD / ISLAMICDOCUMENTARY / MANUSCRIPT)."
+        },
+        {
+          "at": "2026-11-23T00:00:17.635Z",
+          "text": "Gerbang style ulang 2026-11-23: pengguna memilih \"1 MANUSCRIPT\" setelah PAPERWORLD gagal 2 putaran juri. G21: ulang tahap 4 dengan VO tetap."
+        }
+      ],
+      "doneAt": "2026-11-23T00:00:17.635Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T17:58:45.460Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T17:58:34.981Z",
+      "startedAt": "2026-11-22T17:58:34.981Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:54:02.867Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T17:53:56.031Z",
+      "startedAt": "2026-11-22T17:53:56.031Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:00:00.055Z",
+          "text": "docs SCRIPT/STORYBOARD/ASSET_MANIFEST + SHOTLIST (lint 0 red). VO Cartesia speed 1.12, 84.45 s, film 87.5 s. project/SERIES.json -> QISSAH."
+        }
+      ],
+      "doneAt": "2026-11-22T18:00:00.055Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:55:01.942Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T17:54:03.196Z",
+      "startedAt": "2026-11-22T17:54:03.196Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T22:34:38.541Z",
+          "text": "sync: look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-22T22:33:48.698Z",
+      "startedAt": "2026-11-22T22:33:48.698Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T10:14:19.172Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60 5250f: -13.6 LUFS, TP -1.7 dBFS, metadata ok, Ed25519 VALID (ditandatangani ulang dengan await; sign-video.mjs tanpa await -> tag kosong), qa_video PASS, G13 median 0.049. record_score final 3.33 (keputusan pengguna, --skip-memory-gate). --skip-channel: handle salah hanya di file starter PenggantiGibranWapres.tsx."
+        }
+      ],
+      "doneAt": "2026-11-23T10:14:19.172Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:51:09.324Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T10:15:02.683Z",
+          "text": "SOCIAL_CAPTIONS Style→MANUSCRIPT, validator ok; NOTES.md final; lessons MANUSCRIPT fix+failed, GLOBAL fix; scheduled task review-ep08-nabi-ilyas-24h/-72h/-7d; klip draf CHECK dihapus."
+        }
+      ],
+      "doneAt": "2026-11-23T10:15:02.682Z",
+      "startedAt": "2026-11-22T22:39:16.863Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP08",
+    "engine": "remotion",
+    "format": "2D",
+    "channel": "QISSAH",
+    "style": "MANUSCRIPT",
+    "wordCount": 181,
+    "voSeconds": 84.45,
+    "filmSeconds": 87.5,
+    "estimatedDuration": {
+      "wordCount": 181,
+      "minSec": 72,
+      "maxSec": 80
+    },
+    "styleHistory": [
+      "PAPERWORLD (gagal juri 3.17, 3.67)"
+    ],
+    "shortTitle": "Ilyas"
+  },
+  "syncedAt": "2026-11-22T22:51:09.324Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T17:55:02.089Z",
+      "doing": "Tahap 4 naskah selesai sebagian (vo-script.txt, ART_DIRECTION.md); project/ discaffold dari starter + junction node_modules.",
+      "files": [
+        "HANDOFF.md",
+        "docs/vo-script.txt",
+        "docs/ART_DIRECTION.md",
+        "research/SOURCE_REGISTER.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Baca HANDOFF.md: tulis SCRIPT/STORYBOARD/SHOTLIST, VO Cartesia, kode 2D Ilyas.tsx, draft juri, final, delivery.",
+      "snapshot": {
+        "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+        "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP08",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T22:26:29.558Z",
+      "doing": "Tahap 7 animasi: Ilyas.tsx ditulis + komposisi IlyasPreview/IlyasFinal terdaftar, belum typecheck/render. VO 84.45s terkunci, film 87.5s.",
+      "files": [
+        "HANDOFF.md",
+        "project/src/episode/Ilyas.tsx",
+        "project/src/Root.tsx",
+        "SHOTLIST.md",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "Baca HANDOFF.md bagian UPDATE sesi ke-2: typecheck, stills + contact sheet, cover-topic.png, npm run sfx, draft juri, final, delivery.",
+      "snapshot": {
+        "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+        "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP08",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T22:36:59.147Z",
+      "doing": "Draft siap juri (ceilings >=4, camera 5/5). Cover topik, SFX selesai.",
+      "command": "cd project && npm run draft -- IlyasPreview",
+      "files": [
+        "HANDOFF.md",
+        "project/src/episode/Ilyas.tsx",
+        "project/scripts/draft.mjs",
+        "style/cover-topic.png",
+        "project/public/audio/sfx.wav",
+        "draft/DRAFT_SHEET.jpg"
+      ],
+      "next": "Rerun npm run draft -- IlyasPreview, THEME_CHECK.md, record_score self+jury (PAPERWORLD, short-baru-11-23-EP08), lalu render:final, QA, delivery. Lihat HANDOFF.md 'UPDATE sesi ke-3'.",
+      "snapshot": {
+        "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+        "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP08",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T22:42:10.121Z",
+      "doing": "Juri buta draf putaran 2 (putaran 1 = 3.17 gagal; dipoles KeyLight, filter pp 2 lapis, ForeFrame FG, mushaf Al-An'am S2, lentera S8 naik, handle outro 36px). SOCIAL_CAPTIONS.md + SUBTITLES.srt sudah dibuat (validator ok).",
+      "files": [
+        "project/src/episode/Ilyas.tsx",
+        "project/src/brand/AudiraOutro.tsx",
+        "draft/THEME_CHECK.md",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt"
+      ],
+      "next": "Bila juri r2 lolos: record_score jury, update STATUS draft, render:final (lihat HANDOFF sisa no.5), QA, NOTES.md, lesson. Bila gagal: kembali ke gerbang style (G21).",
+      "snapshot": {
+        "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+        "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP08",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T22:43:26.049Z",
+      "doing": "PAPERWORLD gagal juri 2 putaran (3.17, 3.67). Menunggu pengguna memilih style baru dari style/style-options-r2.jpg (MANUSCRIPT utama / STORYBOOK / CHRONICLE).",
+      "files": [
+        "HANDOFF.md",
+        "style/style-options-r2.jpg",
+        "project/src/episode/Ilyas.tsx"
+      ],
+      "next": "Setelah pilihan pengguna: STYLE_DECISION.md, status style approved, ulang tahap 4 (G21) dengan VO tetap, restyle Ilyas.tsx, cover topik, draft+juri, final. Lihat HANDOFF.md 'UPDATE sesi ke-4'.",
+      "snapshot": {
+        "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+        "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP08",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:00:25.552Z",
+      "doing": "Style baru MANUSCRIPT dipilih pengguna (approved). Pindah ke sesi baru (konteks penuh) untuk G21: ulang tahap 4 + restyle Ilyas.tsx.",
+      "files": [
+        "HANDOFF.md",
+        "style/STYLE_DECISION.md",
+        "project/src/episode/Ilyas.tsx",
+        "SOCIAL_CAPTIONS.md"
+      ],
+      "next": "Docs tahap 4 dengan baris Style: MANUSCRIPT, restyle project/src/episode/Ilyas.tsx (VO tetap), cover topik baru, draft + juri (maks 2 putaran), final + QA, delivery. Lihat HANDOFF.md 'UPDATE sesi ke-4'.",
+      "snapshot": {
+        "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+        "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP08",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:07:22.333Z",
+      "doing": "Restyle Ilyas.tsx ke MANUSCRIPT (sebagian: palet, meja/lilin/folio/perkakas, jendela miniatur). Docs G21 selesai.",
+      "files": [
+        "project/src/episode/Ilyas.tsx",
+        "project/out/ms_block.tsx",
+        "docs/ART_DIRECTION.md",
+        "docs/STORYBOARD.md",
+        "SHOTLIST.md",
+        "HANDOFF.md"
+      ],
+      "next": "Lanjut HANDOFF.md 'UPDATE sesi ke-5': Card/caption restyle, hapus lentera S8/S9, goldLeaf sky S3/S8, label >=40px, idol hero; stills; cover topik; sfx; draft + juri; final; delivery.",
+      "snapshot": {
+        "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+        "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP08",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:32:36.677Z",
+      "doing": "Sesi ke-6: restyle MANUSCRIPT selesai (tsc bersih). Jalankan npm run sfx + npm run draft -- IlyasPreview",
+      "command": "cd project && npm run sfx && npm run draft -- IlyasPreview",
+      "files": [
+        "project/src/episode/Ilyas.tsx",
+        "draft/DRAFT_SHEET.jpg"
+      ],
+      "next": "Cek draft/DRAFT_SHEET.jpg, THEME_CHECK, juri buta (maks 2 putaran), lalu final G18",
+      "snapshot": {
+        "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+        "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP08",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:53:01.856Z",
+      "doing": "Sesi ke-6: juri MANUSCRIPT putaran 1 = 3.33; poles putaran 2 sudah diterapkan di Ilyas.tsx (MiniLight, Idol baru, haze/DOF, S2 lemari, S8 lampu). Belum draft ulang.",
+      "command": "cd project && npm run draft -- IlyasPreview",
+      "files": [
+        "project/src/episode/Ilyas.tsx",
+        "HANDOFF.md",
+        "draft/THEME_CHECK.md",
+        "project/out/r2/sheet.jpg"
+      ],
+      "next": "Baca HANDOFF.md 'UPDATE sesi ke-6': cek out/r2/sheet.jpg, npm run draft -- IlyasPreview, juri putaran 2, lalu final G18 (tanpa ganti style), delivery, status review",
+      "snapshot": {
+        "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+        "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP08",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:55:38.949Z",
+      "doing": "Draft MANUSCRIPT selesai 2 putaran juri (3.33, 3.17); diterima atas keputusan pengguna tanpa ganti style. Siap render final.",
+      "command": "cd project && npm run render:final -- --comp=IlyasFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --encoder=nvenc --title=\"Nabi Ilyas dan Berhala Ba'l\" --slug=ep08-nabi-ilyas --ep=EP08",
+      "files": [
+        "HANDOFF.md",
+        "NOTES.md",
+        "project/src/episode/Ilyas.tsx"
+      ],
+      "next": "Baca HANDOFF.md 'UPDATE sesi ke-6': fix kecil chip y196 + kartu MENCIPTA, render:final G18 background (--concurrency=2), ukur LUFS/TP, metadata, record_score final, delivery tahap 10, status review",
+      "snapshot": {
+        "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+        "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP08",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:55:45.590Z",
+      "doing": "Siap render final MANUSCRIPT (juri 3.33/3.17 diterima atas keputusan pengguna)",
+      "next": "Baca HANDOFF.md 'UPDATE sesi ke-6' lalu final + delivery",
+      "snapshot": {
+        "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+        "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP08",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:56:53.676Z",
+      "doing": "render:final IlyasFinal → FINAL_VIDEO.mp4 berjalan di background (log draft/final_run.log), dimulai 2026-11-23 ±10:00Z. Fix QA chip top196 + MENCIPTA 56 sudah.",
+      "command": "cd project && npm run render:final -- --comp=IlyasFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --encoder=nvenc --title=\"Nabi Ilyas dan Berhala Ba'l\" --slug=ep08-nabi-ilyas --ep=EP08",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "draft/final_run.log",
+        "HANDOFF.md",
+        "NOTES.md",
+        "SOCIAL_CAPTIONS.md"
+      ],
+      "next": "Cek tail draft/final_run.log + FINAL_VIDEO.mp4 ada (jangan render ulang bila ada & terkini; bila gagal ulangi perintah, tambah --skip-channel bila SERIES error). Lalu QA: −14 LUFS, TP<−1, ffprobe metadata, record_score final (juri terbaik 3.33). Tahap 10: SOCIAL_CAPTIONS Style→MANUSCRIPT + validator, NOTES, lesson, 3 scheduled task review-ep08-nabi-ilyas-24h/-72h/-7d, hapus perantara, status review. Detail: HANDOFF.md sesi ke-6.",
+      "snapshot": {
+        "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+        "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP08",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:57:08.556Z",
+      "doing": "render:final berjalan di background dengan --skip-memory-gate (gate menolak karena juri 3.33 < 3.8; override atas keputusan pengguna). Log draft/final_run.log.",
+      "command": "cd project && npm run render:final -- --comp=IlyasFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --encoder=nvenc --title=\"Nabi Ilyas dan Berhala Ba'l\" --slug=ep08-nabi-ilyas --ep=EP08 \"--skip-memory-gate=keputusan pengguna 2026-11-23: jgn ganti style langsung render (juri terbaik 3.33 setelah 2 putaran)\"",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "draft/final_run.log",
+        "HANDOFF.md"
+      ],
+      "next": "Bila FINAL_VIDEO.mp4 ada & log sukses: QA −14 LUFS/TP<−1, ffprobe metadata, record_score final; tahap 10 (SOCIAL_CAPTIONS Style→MANUSCRIPT + validator, NOTES, lesson, 3 scheduled task review-ep08-nabi-ilyas-*, hapus perantara, status review). Bila gagal: baca tail log, perbaiki, ulangi perintah (tambah --skip-channel bila SERIES error).",
+      "snapshot": {
+        "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+        "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP08",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:57:21.384Z",
+      "doing": "render:final BELUM jalan: gate G13 kamera gagal (medianSpeed 0.03 < 0.04). Memory gate sudah dilewati dengan --skip-memory-gate (keputusan pengguna). FINAL_VIDEO.mp4 belum ada.",
+      "command": "cd project && npm run render:final -- --comp=IlyasFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --encoder=nvenc --title=\"Nabi Ilyas dan Berhala Ba'l\" --slug=ep08-nabi-ilyas --ep=EP08 \"--skip-memory-gate=keputusan pengguna 2026-11-23: jgn ganti style langsung render (juri terbaik 3.33 setelah 2 putaran)\"",
+      "files": [
+        "project/src/episode/Ilyas.tsx",
+        "draft/final_run.log",
+        "HANDOFF.md"
+      ],
+      "next": "Naikkan gerak kamera di director Ilyas.tsx (dolly per adegan: dz 0.013→0.02, drift dx amplitude 26→40 & frekuensi 0.45→0.6), npm run audit:camera pada klip draft (lihat project/scripts, mis. npm run draft -- IlyasPreview menulis draft/camera.json) sampai medianSpeed ≥ 0.04, lalu render:final dengan flag --skip-memory-gate yang sama (background). Lalu QA LUFS/TP, metadata, record_score final, tahap 10, status review (lihat HANDOFF.md sesi ke-6).",
+      "snapshot": {
+        "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+        "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP08",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:59:54.668Z",
+      "doing": "Pindah ke sesi baru (orkestrasi ulang 17 episode, 2026-11-23). render:final belum jalan: gate G13 kamera gagal (medianSpeed 0.03 < 0.04). Memory gate dilewati dengan --skip-memory-gate (keputusan pengguna).",
+      "command": "cd project && npm run render:final -- --comp=IlyasFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --encoder=nvenc --title=\"Nabi Ilyas dan Berhala Ba'l\" --slug=ep08-nabi-ilyas --ep=EP08 \"--skip-memory-gate=keputusan pengguna 2026-11-23: jgn ganti style langsung render (juri terbaik 3.33 setelah 2 putaran)\"",
+      "files": [
+        "project/src/episode/Ilyas.tsx",
+        "draft/final_run.log",
+        "HANDOFF.md"
+      ],
+      "next": "Naikkan gerak kamera di director Ilyas.tsx (dolly dz 0.013→0.02, drift dx 26→40, frekuensi 0.45→0.6), audit:camera klip draft sampai medianSpeed ≥ 0.04, lalu render:final dengan flag --skip-memory-gate yang sama (background). Lalu QA LUFS/TP, metadata, record_score final, tahap 10 (lihat HANDOFF.md sesi ke-6).",
+      "snapshot": {
+        "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+        "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP08",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:00:47.335Z",
+      "doing": "Pindah ke sesi baru (orkestrasi ulang 17 episode, 2026-11-23). render:final belum jalan: gate G13 kamera gagal (medianSpeed 0.03 < 0.04). Memory gate dilewati dengan --skip-memory-gate (keputusan pengguna).",
+      "command": "cd project && npm run render:final -- --comp=IlyasFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --encoder=nvenc --title=\"Nabi Ilyas dan Berhala Ba'l\" --slug=ep08-nabi-ilyas --ep=EP08 \"--skip-memory-gate=keputusan pengguna 2026-11-23: jgn ganti style langsung render (juri terbaik 3.33 setelah 2 putaran)\"",
+      "files": [
+        "project/src/episode/Ilyas.tsx",
+        "draft/final_run.log",
+        "HANDOFF.md"
+      ],
+      "next": "Naikkan gerak kamera di director Ilyas.tsx (dolly dz 0.013→0.02, drift dx 26→40, frekuensi 0.45→0.6), audit:camera klip draft sampai medianSpeed ≥ 0.04, lalu render:final dengan flag --skip-memory-gate yang sama (background). Lalu QA LUFS/TP, metadata, record_score final, tahap 10 (lihat HANDOFF.md sesi ke-6).",
+      "snapshot": {
+        "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+        "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP08",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:02:32.663Z",
+      "doing": "Sesi ke-7: kamera dinaikkan (dz 0.02, dx 40, f 0.6); render klip 47-65s + audit:camera",
+      "files": [
+        "project/src/episode/Ilyas.tsx",
+        "draft/camera.json"
+      ],
+      "next": "Bila medianSpeed >= 0.04: render:final background dengan --skip-memory-gate, lalu QA + tahap 10",
+      "snapshot": {
+        "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+        "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP08",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:03:24.233Z",
+      "doing": "Sesi ke-7: G13 lolos (median 0.049, dead 0, hold 0). render:final berjalan (background), log draft/final_run.log",
+      "command": "cd project && npm run render:final -- --comp=IlyasFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --encoder=nvenc --title=\"Nabi Ilyas dan Berhala Ba'l\" --slug=ep08-nabi-ilyas --ep=EP08 \"--skip-memory-gate=keputusan pengguna 2026-11-23: jgn ganti style langsung render (juri terbaik 3.33 setelah 2 putaran)\" --log=error",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "draft/final_run.log"
+      ],
+      "next": "Setelah FINAL_VIDEO.mp4: ukur LUFS/TP, metadata ffprobe, verify_signature, qa_video hardOnly, record_score final, lalu tahap 10",
+      "snapshot": {
+        "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+        "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP08",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:03:24.233Z",
+      "doing": "Sesi ke-7: G13 lolos (median 0.049, dead 0, hold 0). render:final berjalan (background), log draft/final_run.log",
+      "command": "cd project && npm run render:final -- --comp=IlyasFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --encoder=nvenc --title=\"Nabi Ilyas dan Berhala Ba'l\" --slug=ep08-nabi-ilyas --ep=EP08 \"--skip-memory-gate=keputusan pengguna 2026-11-23: jgn ganti style langsung render (juri terbaik 3.33 setelah 2 putaran)\" --log=error",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "draft/final_run.log"
+      ],
+      "next": "Setelah FINAL_VIDEO.mp4: ukur LUFS/TP, metadata ffprobe, verify_signature, qa_video hardOnly, record_score final, lalu tahap 10",
+      "snapshot": {
+        "episode": "EP08_NABI_ILYAS_BERHALA_BAAL",
+        "topic": "Nabi Ilyas AS dan kaum penyembah berhala Ba'l (QS As-Saffat 123-132)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP08",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T10:15:06.077Z"
+    }
+  ],
+  "session": 8,
+  "sessionLog": [
+    {
+      "no": 8,
+      "title": "EP08 Ilyas · s8",
+      "at": "2026-11-23T10:00:47.334Z"
+    }
+  ]
+}

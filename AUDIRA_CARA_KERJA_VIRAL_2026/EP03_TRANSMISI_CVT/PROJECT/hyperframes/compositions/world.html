@@ -1,0 +1,140 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#101215}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.035;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.38) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.42) 42%,rgba(0,0,0,0.42) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:190px;z-index:10;transform-origin:50% 50%}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:30px;color:#A3E635;letter-spacing:.14em}
+
+.st{display:inline-block;font-family:Inter,sans-serif;font-weight:800;font-size:25px;letter-spacing:.1em;color:#101215;background:#FF6B2C;padding:6px 12px;margin-bottom:14px}
+.st.cy{background:#38E1FF}
+.h0{font-family:Syne,sans-serif;font-weight:800;font-size:100px;line-height:.95;letter-spacing:-.02em;color:#fff;text-shadow:0 6px 30px rgba(0,0,0,.6)}
+.h0 i{font-style:normal;color:#FF6B2C}
+.h2{font-family:Syne,sans-serif;font-weight:800;font-size:74px;line-height:1;letter-spacing:-.02em;color:#fff;text-shadow:0 4px 26px rgba(0,0,0,.8)}
+.h2 i{font-style:normal;color:#FF6B2C}
+.tl{font-family:Inter,sans-serif;font-weight:700;font-size:40px;color:#E8EAED;margin-top:10px}
+.ro{background:rgba(16,18,21,.78);border-left:6px solid #FF6B2C;padding:10px 18px;margin-top:10px}
+.ro.c{border-color:#38E1FF}
+.ro b{display:block;font-family:Inter,sans-serif;font-weight:900;font-size:52px;letter-spacing:-.01em;line-height:1.04;color:#fff}
+.ro span{display:block;font-family:Inter,sans-serif;font-weight:600;font-size:29px;line-height:1.2;color:#C9CED4}
+.du{display:flex;gap:12px;width:880px}.du>div{flex:1;background:rgba(16,18,21,.78);padding:10px 18px;border-top:8px solid #FF6B2C}
+.du>div.c{border-color:#38E1FF}
+.du b{display:block;font-family:Inter,sans-serif;font-weight:900;font-size:46px;line-height:1.02;color:#fff}
+.du span{display:block;font-family:Inter,sans-serif;font-weight:600;font-size:28px;color:#C9CED4}
+.ch{font-family:Inter,sans-serif;font-weight:700;font-size:32px;line-height:1.2;color:#fff;margin-top:12px;text-shadow:0 2px 10px #000}
+.gw{margin-top:14px;background:rgba(16,18,21,.78);padding:14px 18px;width:760px}
+.ga{display:flex;align-items:center;gap:14px;font-family:Inter,sans-serif;font-weight:800;font-size:24px;letter-spacing:.08em;color:#C9CED4}
+.ga .tr{position:relative;flex:1;height:14px;background:linear-gradient(90deg,#38E1FF,#4a4f57,#FF6B2C)}
+.ga i,.ga em{position:absolute;top:-10px;width:10px;height:34px;margin-left:-5px;background:#fff}
+.ga i{opacity:.25}
+#g2 em{animation:none}
+.cap2{font-family:Inter,sans-serif;font-weight:900;font-size:44px;color:#fff;margin-top:8px}
+.lv{display:flex;align-items:center;gap:12px;margin-top:14px}
+.lv span{font-family:Inter,sans-serif;font-weight:800;font-size:30px;letter-spacing:.1em;color:#38E1FF;margin-right:8px}
+.lv b{display:block;width:76px;height:76px;line-height:76px;text-align:center;font-family:Syne,sans-serif;font-weight:800;font-size:48px;color:#101215;background:#38E1FF}
+.tel{margin-top:12px;background:rgba(16,18,21,.78);padding:10px 18px;width:760px}
+.tel b{display:block;font-family:Syne,sans-serif;font-weight:800;font-size:110px;line-height:1;color:#38E1FF}
+.tel span{display:block;font-family:Inter,sans-serif;font-weight:600;font-size:28px;color:#C9CED4}
+.srcl{font-family:Inter,sans-serif;font-weight:600;font-size:24px;line-height:1.3;color:#fff;margin-top:14px;text-shadow:0 2px 10px #000}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="83.05" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="st">CARA KERJA VIRAL &middot; EP 03</div>
+  <div class="h0">MATIC TANPA<br><i>PINDAH GIGI</i></div>
+  <div class="tl">Dua puli. Satu sabuk.</div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="st">CVT &middot; CONTINUOUSLY VARIABLE TRANSMISSION</div>
+  <div class="ro" data-at="s2:YECVT" data-fx="left"><b>YECVT</b><span>Yamaha NMAX Turbo &middot; puli digerakkan motor listrik</span></div>
+  <div class="ro" data-at="s2:D-CVT" data-fx="left"><b>D-CVT</b><span>Daihatsu, dipakai Avanza &middot; sabuk + roda gigi</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="st">ANATOMI</div>
+  <div class="du"><div data-at="s3:depan" data-fx="pop"><b>PULI DEPAN</b><span>diputar mesin</span></div><div data-at="s3:belakang" data-fx="pop"><b>PULI BELAKANG</b><span>memutar roda</span></div></div>
+  <div class="ch" data-at="s3:kerucut" data-fx="up">2 piringan kerucut per puli &middot; jaraknya bisa berubah</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="st">SAAT BERANGKAT</div>
+  <div class="ro" data-at="s4:renggang" data-fx="left"><b>DEPAN RENGGANG</b><span>sabuk di lingkaran kecil</span></div>
+  <div class="ro" data-at="s4:rapat" data-fx="left"><b>BELAKANG RAPAT</b><span>sabuk di lingkaran besar</span></div>
+  <div class="gw" data-at="s4:satu" data-fx="up"><div class="ga" id="g1"><span>RINGAN</span><div class="tr"><i style="left:88%"></i><em style="left:88%"></em></div><span>BERAT</span></div><div class="cap2">&#8776; GIGI SATU</div></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="st">PUTARAN NAIK</div>
+  <div class="ro" data-at="s5:roller" data-fx="left"><b>ROLLER TERLEMPAR</b><span>gaya sentrifugal mendorong piringan merapat</span></div>
+  <div class="gw" data-at="s5:mulus" data-fx="up"><div class="ga" id="g2"><span>RINGAN</span><div class="tr"><i style="left:88%"></i><em style="left:10%"></em></div><span>BERAT</span></div><div class="cap2">RASIO BERGESER MULUS</div></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="st cy">YECVT &middot; ELEKTRONIK</div>
+  <div class="ro c" data-at="s6:motor" data-fx="left"><b>ROLLER &#8594; MOTOR LISTRIK</b><span>menggeser puli depan</span></div>
+  <div class="ro c" data-at="s6:sensor" data-fx="left"><b>TCU + 2 SENSOR PULI</b><span>T-Mode &middot; S-Mode</span></div>
+  <div class="lv" data-at="s6:tiga" data-fx="pop"><span>Y-SHIFT</span><b>1</b><b>2</b><b>3</b></div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="st">D-CVT &middot; DAIHATSU</div>
+  <div class="du"><div data-at="s7:gigi" data-fx="pop"><b>SABUK</b><span>kecepatan rendah</span></div><div class="c" data-at="s7:dibagi" data-fx="pop"><b>SABUK + GIGI</b><span>kecepatan tinggi</span></div></div>
+  <div class="tel" data-at="s7:persen" data-fx="up"><b>&#8776; +8%</b><span>efisiensi di kecepatan tinggi, klaim Daihatsu</span></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="h2" data-at="s8:Jadi" data-fx="up">BUKAN MEMILIH GIGI.<br><i>MENGGESER LINGKARAN.</i></div>
+  <div class="srcl" data-at="s8:pas" data-fx="fade">Sumber: Yamaha Indonesia; detikOto (YIMM); Daihatsu (rilis Tanto 2019); Toyota Raize; Wikipedia &ldquo;CVT&rdquo;. Model 3D adalah ilustrasi, bukan replika.</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">CARA KERJA VIRAL &middot; EP 03</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":9.294,"s2":9.454,"s2e":19.926,"s3":20.086,"s3e":28.443,"s4":28.603,"s4e":38.935,"s5":39.095,"s5e":50.266,"s6":50.426,"s6e":62.116,"s7":62.276,"s7e":72.39,"s8":72.55,"s8e":80.054,"end":80.054,"dur":83.05,"outro":80.304},AT={"s2:YECVT":16.985,"s2:D-CVT":19.152,"s3:depan":20.612,"s3:belakang":22.021,"s3:kerucut":25.067,"s3:Sabuk":27.267,"s4:renggang":30.134,"s4:rapat":33.261,"s4:satu":36.723,"s5:roller":40.953,"s5:mulus":49.26,"s6:motor":54.172,"s6:sensor":55.849,"s6:mode":58.822,"s6:tiga":60.691,"s7:gigi":65.67,"s7:dibagi":67.599,"s7:persen":72.035,"s8:Jadi":72.639,"s8:pas":79.574},DUR=83.05,OUT=80.304;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ 
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{x:140,skewX:-8,opacity:0},{x:0,skewX:0,opacity:1,duration:.42,ease:'expo.out'},a-.16),POUT=(tl,p,b)=>tl.to(p,{x:-120,skewX:6,opacity:0,duration:.24,ease:'power3.in'},b-.3);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});
+tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

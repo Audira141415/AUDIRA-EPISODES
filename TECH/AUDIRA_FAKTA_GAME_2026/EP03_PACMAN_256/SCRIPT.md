@@ -1,0 +1,24 @@
+# EP 03: Pac-Man Punya Ujung: Level 256
+
+Seri AUDIRA, FAKTA GAME DUNIA. Created by Agus Dwi R. Riset 6 November 2026. Fungsi dalam seri: Teknologi di balik glitch legendaris.
+
+Suara: Cartesia sonic-3, voice `04b567df-2923-4b0c-896b-4b7df0a07e1a`, bahasa id. 231 kata terucap, ujaran 80.193 detik, film 83.19 detik.
+
+**[0:00-0:07]** Pac-Man punya ujung. Di level dua ratus lima puluh enam, separuh layarnya hancur, dan levelnya tidak bisa diselesaikan.
+
+**[0:07-0:16]** Pac-Man rilis tahun 1980. Makan semua titik, hindari empat hantu, lalu naik level. Di bawah layar, ikon buah menunjukkan level kamu.
+
+**[0:16-0:30]** Komputer menyimpan angka dalam bit. Delapan bit, atau satu byte, cuma bisa menampung dua ratus lima puluh enam nilai, dari nol sampai dua ratus lima puluh lima. Lewat dari itu, angkanya kembali ke nol. Namanya integer overflow.
+
+**[0:30-0:43]** Biasanya game cuma menggambar paling banyak tujuh buah. Tapi di level dua ratus lima puluh enam, hitungannya meluap, dan program mencoba menggambar dua ratus lima puluh enam buah. Gambarnya meluber, menimpa sisi kanan labirin dengan simbol acak.
+
+**[0:44-0:50]** Titik di sisi yang rusak tidak bisa dimakan semua, jadi level itu tidak pernah selesai. Para pemain menyebutnya kill screen.
+
+**[0:50-1:01]** Skor sempurnanya tiga juta tiga ratus tiga puluh tiga ribu tiga ratus enam puluh, tanpa mati sekali pun. Billy Mitchell disebut sebagai orang pertama yang mencapainya dengan saksi, tahun 1999.
+
+**[1:01-1:15]** Lucunya, tahun 1982, anak delapan tahun bernama Jeffrey Yee mendapat surat dari Presiden Ronald Reagan, untuk skor lebih dari enam juta. Skor itu hanya mungkin kalau dia melewati level dua ratus lima puluh enam. Tidak ada yang pernah terbukti bisa.
+
+**[1:15-1:20]** Jadi satu byte kecil membatasi game sebesar Pac-Man. Kamu pernah main sampai level berapa?
+
+
+Ejaan fonetik untuk Cartesia ada di `script-lines.json`.

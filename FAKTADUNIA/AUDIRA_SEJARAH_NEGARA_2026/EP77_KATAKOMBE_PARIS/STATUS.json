@@ -3,7 +3,7 @@
   "episode": "EP77",
   "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
   "createdAt": "2026-11-24T18:20:36.605Z",
-  "updatedAt": "2026-11-25T00:37:34.928Z",
+  "updatedAt": "2026-11-25T00:41:19.564Z",
   "currentStage": "review",
   "stages": [
     {
@@ -617,6 +617,30 @@
         "finals": [],
         "draftRounds": 0
       }
+    },
+    {
+      "at": "2026-11-25T00:25:23.764Z",
+      "doing": "s9: pantau render_ep77.sh (winpid 12284) antre _render.lock lalu render KatakombeFinal",
+      "command": "bash render_ep77.sh (orphan)",
+      "next": "Bila skrip mati tanpa FINAL: render sendiri via lock. Lalu QA -14 LUFS/TP, qa_video, tag, record_score final, lesson, caption validator, 3 scheduled task (slot pertama Sabtu 23 Jan 2027 19.00 WIB), NOTES (masih versi CHRONICLE s6, perlu ditulis ulang PAPERWORLD), topik 022, commit EP77",
+      "snapshot": {
+        "episode": "EP77",
+        "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "sejarah-negara-EP77",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-25T00:41:19.564Z"
     }
   ],
   "session": 9,
@@ -661,28 +685,5 @@
       "title": "EP77 Katakombe Paris · s9",
       "at": "2026-11-25T00:24:05.459Z"
     }
-  ],
-  "handover": {
-    "at": "2026-11-25T00:25:23.764Z",
-    "doing": "s9: pantau render_ep77.sh (winpid 12284) antre _render.lock lalu render KatakombeFinal",
-    "command": "bash render_ep77.sh (orphan)",
-    "next": "Bila skrip mati tanpa FINAL: render sendiri via lock. Lalu QA -14 LUFS/TP, qa_video, tag, record_score final, lesson, caption validator, 3 scheduled task (slot pertama Sabtu 23 Jan 2027 19.00 WIB), NOTES (masih versi CHRONICLE s6, perlu ditulis ulang PAPERWORLD), topik 022, commit EP77",
-    "snapshot": {
-      "episode": "EP77",
-      "topic": "Kota yang Dibangun di Atas Jutaan Kerangka — Katakombe Paris",
-      "style": "PAPERWORLD",
-      "memoryEpisode": "sejarah-negara-EP77",
-      "currentStage": "final",
-      "gates": {
-        "final": {
-          "approved": true,
-          "status": "in_progress"
-        }
-      },
-      "voPath": null,
-      "draftScores": [],
-      "finals": [],
-      "draftRounds": 0
-    }
-  }
+  ]
 }

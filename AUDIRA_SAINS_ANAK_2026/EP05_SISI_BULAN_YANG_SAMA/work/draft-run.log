@@ -1,0 +1,21 @@
+[40m Tab 0, node_modules/three/build/three.core.js:2022 [49m [33mTHREE.WebGLProgram: Program Info Log: (62,17-31): warning X3577: value cannot be NaN, isnan() may not be necessary.  /Gis may force isnan() to be performed[39m
+[40m Tab 0, node_modules/three/build/three.core.js:2022 [49m [33mTHREE.WebGLProgram: Program Info Log: (210,91-147): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision[39m
+[33m(209,41-69): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision[39m
+[33m(210,92-120): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision[39m
+[33m(209,41-69): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision[39m
+[33m(210,92-120): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision[39m
+cover: F:\AUDIRA-EPISODES\AUDIRA_SAINS_ANAK_2026\EP05_SISI_BULAN_YANG_SAMA\style\cover-topic.png (MoonPreview frame 72, 540x960)
+meta:  F:\AUDIRA-EPISODES\AUDIRA_SAINS_ANAK_2026\EP05_SISI_BULAN_YANG_SAMA\style\cover.json
+
+> audira-motion-project@4.6.0 draft
+> node scripts/draft.mjs MoonPreview --frames=2.4s,8.5s,19s,30s,37.5s,44.5s,50s,54s,62.5s,67.8s,74.5s,81s --out=../draft
+
+draft MoonPreview · 12 frames at 2.4, 8.5, 19, 30, 37.5, 44.5, 50, 54, 62.5, 67.8, 74.5, 81 s
+ceilings: lighting 3 · material 5 · depth 5 · composition 3 · motion — · readability 2 · diversity 46.1
+  lighting: max 3: 1 frame(s) with tonal range < 70 (washed out, no light shape)
+  composition: max 3: 2 layout fault(s) in 2 frame(s): "terkunci." in the bottom 380 px (platform UI); "+3,8 cm/tahun" overlaps "Bulan menjauh dari Bumi" (95 %) (audit:layout)
+  readability: max 2: 6 unreadable text block(s) in 4 frame(s): "pernah" 1.8:1 vs box (want ≥ 3); "berganti." 1.8:1 vs box (want ≥ 3) (audit:layout); max 4: 2 borderline text block(s): "ilustrasi · skala tida" 35 px < 36; "ilustrasi · skala tida" 35 px < 36 (audit:layout)
+camera: motion 5/5 (gerak kamera kontinu dan halus)
+PERLU POLES: lighting≤3, composition≤3, readability≤2
+look at: F:\AUDIRA-EPISODES\AUDIRA_SAINS_ANAK_2026\EP05_SISI_BULAN_YANG_SAMA\draft\DRAFT_SHEET.jpg  (cover compare: F:\AUDIRA-EPISODES\AUDIRA_SAINS_ANAK_2026\EP05_SISI_BULAN_YANG_SAMA\draft\compare.jpg)
+next: record_score stage=draft (ceilings + camera from F:\AUDIRA-EPISODES\AUDIRA_SAINS_ANAK_2026\EP05_SISI_BULAN_YANG_SAMA\draft\DRAFT_REPORT.json), then blind jury with qa/jury.md + jury_input.json

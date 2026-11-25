@@ -1,0 +1,124 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#3a322b}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.05;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.3) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.12) 42%,rgba(0,0,0,0.12) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#F7F7F9;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.tag{display:table;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:27px;letter-spacing:.16em;color:#FFD56B;background:rgba(20,20,23,.88);padding:8px 18px 7px;margin-bottom:16px;border:1.5px solid #E5A93C;border-radius:3px}
+.card{position:relative;display:table;background:rgba(20,20,23,.9);border:2px solid #E5A93C;border-radius:10px;padding:14px 32px 22px;margin-bottom:16px;box-shadow:0 22px 50px rgba(0,0,0,.45);overflow:hidden}
+.card::after{content:"";position:absolute;right:-10px;top:18px;width:150px;height:3px;background:linear-gradient(90deg,rgba(229,169,60,0),#FFD56B);transform:rotate(-28deg);box-shadow:0 0 10px rgba(255,213,107,.8)}
+.big{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:104px;line-height:.98;color:#F7F7F9;letter-spacing:-.005em}
+.big span{color:#FFD56B}.big span.h{color:#FF8A3A}.big.sm{font-size:74px;line-height:1.04}
+.ln{display:table;font-family:Inter,sans-serif;font-weight:700;font-size:40px;line-height:1.2;color:#F7F7F9;background:rgba(20,20,23,.86);padding:10px 24px 12px 22px;margin-bottom:12px;border-left:8px solid #E5A93C;border-radius:0 8px 8px 0;max-width:880px}
+.ln.c{border-left-color:#9DB6C6}.ln.h{border-left-color:#FF8A3A}
+#chip{font-family:'IBM Plex Mono',monospace;font-size:25px;font-weight:600;color:#F7F7F9;opacity:.8;letter-spacing:.06em;background:rgba(20,20,23,.6);padding:3px 10px}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="84.54" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN CUPLIKAN ASLI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tag">CARA KERJA BENDA &middot; EP 24</div>
+  <div class="card"><div class="big">Garis ini<br><span>pemanas</span></div></div>
+  <div class="ln" data-at="s1:dicetak" data-fx="lit">Dicetak langsung di kaca</div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="tag">DEFOGGER</div>
+  <div class="ln" data-at="s2:embun" data-fx="lit">Menghapus embun</div>
+  <div class="ln" data-at="s2:es" data-fx="lit">dan bunga es</div>
+  <div class="ln c" data-at="s2:spion" data-fx="lit">Pandangan lewat spion tengah</div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tag">KENAPA KACA BURAM</div>
+  <div class="ln c" data-at="s3:dingin" data-fx="lit">Kaca lebih dingin dari titik embun</div>
+  <div class="ln c" data-at="s3:menempel" data-fx="lit">Uap air menempel jadi titik air</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="tag">BAHAN GARIS</div>
+  <div class="ln" data-at="s4:keramik" data-fx="lit">Keramik + perak</div>
+  <div class="ln" data-at="s4:dipanggang" data-fx="lit">Dicetak, lalu dipanggang</div>
+  <div class="ln" data-at="s4:sejajar" data-fx="lit">Sejajar, sisi ke sisi</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="tag">ARUS JADI PANAS</div>
+  <div class="ln" data-at="s5:tombolnya" data-fx="lit">Tombol ditekan, arus mengalir</div>
+  <div class="card" data-at="s5:panas" data-fx="lit"><div class="big sm">Hambatan &rarr; <span class="h">panas</span></div></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="tag">KACA MENGHANGAT</div>
+  <div class="ln" data-at="s6:menguap" data-fx="lit">Embun menguap, es mencair</div>
+  <div class="card" data-at="s6:menit" data-fx="lit"><div class="big sm">Mati sendiri<br><span>&plusmn;10&ndash;15 menit</span></div></div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="card" data-at="s7:watt" data-fx="lit"><div class="big sm"><span>&plusmn;150 W</span> &asymp; lampu depan</div></div>
+  <div class="ln" data-at="s7:Heinz" data-fx="lit">Heinz Kunert &middot; Jerman &middot; awal 1960-an</div>
+  <div class="ln" data-at="s7:paten" data-fx="lit">Lebih dari 50 paten kaca kendaraan</div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="tag">RAWAT GARISNYA</div>
+  <div class="ln h" data-at="s8:tergores" data-fx="lit">Mudah putus kalau tergores</div>
+  <div class="ln" data-at="s8:lembut" data-fx="lit">Bersihkan dengan lembut</div>
+  <div class="ln c" data-at="s8:Episode" data-fx="lit">Berikutnya: bintik hitam di tepi kaca</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">CARA KERJA BENDA &middot; EP 24</div></div>
+<div id="sig">AUDIRA &middot; @AudiraExplained</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":5.772,"s2":5.932,"s2e":13.414,"s3":13.574,"s3e":23.631,"s4":23.791,"s4e":35.229,"s5":35.389,"s5e":46.462,"s6":46.622,"s6e":57.513,"s7":57.673,"s7e":70.188,"s8":70.348,"s8e":81.536,"end":81.536,"dur":84.54,"outro":81.786},AT={"s1:mobil":1.794,"s1:pemanas":3.728,"s2:embun":10.381,"s2:spion":12.78,"s3:dingin":15.811,"s3:menempel":19.854,"s4:perak":27.122,"s4:dicetak":28.663,"s4:dipanggang":30.52,"s4:sejajar":33.046,"s5:tombolnya":36.411,"s5:mengalir":39.157,"s5:Hambatan":43.815,"s6:menguap":48.956,"s6:sepuluh":54.476,"s7:lampu":60.93,"s7:Heinz":62.633,"s7:paten":68.918,"s8:tergores":71.571,"s8:lembut":73.552,"s8:AUDIRA":75.297,"s6:menghangat":46.875,"s2:es":11.077,"s6:es":49.606,"s6:mencair":49.761,"s3:buram":23.306,"s6:mati":53.392,"s5:arus":37.625,"s5:mengubah":44.837,"s5:panas":46.09,"s6:hangat":57.203,"s1:dicetak":4.688,"s3:Uap":18.894,"s2:Tugasnya":9.545,"s6:pandangan":51.139,"s6:Biasanya":52.433,"s6:menit":55.529,"s8:jadi":72.02,"s8:bersihkan":72.237,"s4:lalu":30.257,"s4:menyatu":31.279,"s4:lain":34.935,"s4:sisi#2":34.192,"s7:Dayanya":57.688,"s7:watt":59.329,"s7:setara":60.729,"s7:Jerman":63.423,"s6:jernih":51.804,"s4:keramik":26.163,"s8:Episode":78.58},DUR=84.54,OUT=81.786;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ lit:(e,t)=>tl.fromTo(e,{opacity:.45},{opacity:1,duration:.3,ease:'power2.out'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{opacity:0,y:34,scale:.97,filter:'blur(6px)'},{opacity:1,y:0,scale:1,filter:'blur(0px)',duration:.5,ease:'power3.out'},a-.12);},POUT=(tl,p,b)=>{tl.to(p,{opacity:0,y:-18,filter:'blur(4px)',duration:.3,ease:'power2.in'},b-.3);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0,y:40});tl.to('#outro',{opacity:1,y:0,duration:.45,ease:'power3.out'},OUT-.1);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP24_GARIS_DEFOGGER_KACA_MOBIL")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

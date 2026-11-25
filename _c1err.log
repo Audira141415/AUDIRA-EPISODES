@@ -1,0 +1,167 @@
+[40m Tab 0, ../../../../AUDIRA-SKILL-MOTION/node_modules/three/build/three.core.js:2022 [49m [33mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.[39m
+[40m Tab 0, ../../../../AUDIRA-SKILL-MOTION/node_modules/three/build/three.core.js:2022 [49m [33mTHREE.WebGLProgram: Program Info Log: (210,91-147): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision[39m
+[33m(209,41-69): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision[39m
+[33m(210,92-120): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision[39m
+[33m(209,41-69): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision[39m
+[33m(210,92-120): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision[39m
+[40m Tab 0, ../../../../AUDIRA-SKILL-MOTION/node_modules/three/build/three.core.js:2022 [49m [33mTHREE.WebGLProgram: Program Info Log: (62,17-31): warning X3577: value cannot be NaN, isnan() may not be necessary.  /Gis may force isnan() to be performed[39m
+
+💡 Get help for this issue at https://remotion.dev/docs/timeout
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+SymbolicateableError: A delayRender() "shopper glb" was called but not cleared after 178000ms. See https://remotion.dev/docs/timeout for help. The delayRender was called: 
+    at delayRenderInternal (http://localhost:3002/bundle.js:148299:18)
+    at delayRender (http://localhost:3002/bundle.js:148386:10)
+    at http://localhost:3002/bundle.js:124399:64
+    at gt (http://localhost:3002/bundle.js:85267:19)
+    at Object.useState (http://localhost:3002/bundle.js:88997:17)
+    at exports.useState (http://localhost:3002/bundle.js:142721:33)
+    at Character (http://localhost:3002/bundle.js:124399:38)
+    at cl (http://localhost:3002/bundle.js:85026:160)
+    at tp (http://localhost:3002/bundle.js:85906:27)
+    at ip (http://localhost:3002/bundle.js:86185:20)
+    ... collapsed 10 duplicate lines matching above lines ...
+    at onTimeout (http://localhost:3002/bundle.js:148346:37) {
+  stackFrame: [
+    {
+      columnNumber: 36,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'onTimeout',
+      lineNumber: 148345
+    }
+  ],
+  delayRenderCall: [
+    {
+      columnNumber: 18,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'delayRenderInternal',
+      lineNumber: 148299
+    },
+    {
+      columnNumber: 10,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'delayRender',
+      lineNumber: 148386
+    },
+    {
+      columnNumber: 64,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: null,
+      lineNumber: 124399
+    },
+    {
+      columnNumber: 19,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'gt',
+      lineNumber: 85267
+    },
+    {
+      columnNumber: 17,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'useState',
+      lineNumber: 88997
+    },
+    {
+      columnNumber: 33,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'exports.useState',
+      lineNumber: 142721
+    },
+    {
+      columnNumber: 38,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'Character',
+      lineNumber: 124399
+    },
+    {
+      columnNumber: 160,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'cl',
+      lineNumber: 85026
+    },
+    {
+      columnNumber: 27,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'tp',
+      lineNumber: 85906
+    },
+    {
+      columnNumber: 20,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'ip',
+      lineNumber: 86185
+    },
+    {
+      columnNumber: 18,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'delayRenderInternal',
+      lineNumber: 148299
+    },
+    {
+      columnNumber: 10,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'delayRender',
+      lineNumber: 148386
+    },
+    {
+      columnNumber: 64,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: null,
+      lineNumber: 124399
+    },
+    {
+      columnNumber: 19,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'gt',
+      lineNumber: 85267
+    },
+    {
+      columnNumber: 17,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'useState',
+      lineNumber: 88997
+    },
+    {
+      columnNumber: 33,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'exports.useState',
+      lineNumber: 142721
+    },
+    {
+      columnNumber: 38,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'Character',
+      lineNumber: 124399
+    },
+    {
+      columnNumber: 160,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'cl',
+      lineNumber: 85026
+    },
+    {
+      columnNumber: 27,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'tp',
+      lineNumber: 85906
+    },
+    {
+      columnNumber: 20,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'ip',
+      lineNumber: 86185
+    },
+    {
+      columnNumber: 37,
+      fileName: 'http://localhost:3002/bundle.js',
+      functionName: 'onTimeout',
+      lineNumber: 148346
+    }
+  ],
+  frame: null,
+  chunk: null
+}
+
+Node.js v26.8.1

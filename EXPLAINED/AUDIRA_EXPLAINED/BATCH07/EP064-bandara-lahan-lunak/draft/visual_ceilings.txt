@@ -1,0 +1,27 @@
+
+> audira-motion-project@4.6.0 audit:visual
+> node scripts/visual-audit.mjs ../EP064-bandara-lahan-lunak/draft/stills/_sheet.jpg
+
+2 frames · keyframe diversity 44.4
+
+frame                          range    clipHi   crushLo    detail      flat    sepLum sepDetail saturatio bottomBus
+_sheet.jpg#1                   199.5         0      38.4      18.8      30.4         2      0.93     0.574         1
+_sheet.jpg#2                   213.6         0        13     19.86      15.6       0.8      0.93     0.479      0.59
+AVERAGE                       206.55         0      25.7     19.33        23       1.4      0.93      0.53      0.79
+
+ceiling per aspect (score may not exceed this):
+  lighting     4
+               - max 4: style has no quality-bar cover yet
+  material     4
+               - max 4: style has no quality-bar cover yet
+  depth        4
+               - max 4: style has no quality-bar cover yet
+  composition  4
+               - max 4: style has no quality-bar cover yet
+  motion       —  (not measurable here: judge by eye)
+               - needs --video (stills cannot show motion)
+  readability  —  (not measurable here: judge by eye)
+               - text legibility and Mute Test are judged by eye on the phone-size sheet (visual-audit replaces this with the audit:layout ceiling when the stills carry _layout.json)
+  note: no cover: only hard faults are measured; see references/quality-bar/README.md for kits without a reference
+
+No aspect capped below 4. Score by eye with qa/scoring-rubric.md against the compare sheet.

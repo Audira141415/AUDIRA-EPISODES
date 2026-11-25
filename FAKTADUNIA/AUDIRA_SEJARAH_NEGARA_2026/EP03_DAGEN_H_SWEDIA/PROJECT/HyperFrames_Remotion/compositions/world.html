@@ -1,0 +1,216 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#0D0E10}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.06;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.5) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.72) 42%,rgba(0,0,0,0.72) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Inter,sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#fff;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+
+#lane{position:absolute;right:110px;top:178px;z-index:11;display:flex;align-items:center;gap:10px;font-family:Inter,sans-serif;font-weight:800;font-size:23px;letter-spacing:.06em;color:#fff}
+#lane i{display:block;width:22px;height:22px;background:#fff}
+#lane.kn i{background:#FECC02}#lane.kn b{color:#FECC02}
+.card{background:#F4F2EC;padding:24px 30px 30px;border-top:12px solid #006AA7;box-shadow:0 22px 50px rgba(0,0,0,.5)}
+.k{display:flex;align-items:center;gap:14px;font-family:Inter,sans-serif;font-weight:800;font-size:24px;letter-spacing:.1em;color:#111214;padding-bottom:14px;border-bottom:2px solid #111214;margin-bottom:16px}
+.k em{font-style:normal;background:#006AA7;color:#fff;padding:4px 10px;letter-spacing:.04em}
+.h{font-family:Archivo,sans-serif;font-stretch:75%;font-weight:900;font-size:112px;line-height:.9;color:#111214;letter-spacing:-.01em}
+.h.m{font-size:80px;line-height:.94}
+.ln{display:flex;align-items:center;gap:22px;margin-top:22px}
+.clk0{font-family:Archivo,sans-serif;font-stretch:75%;font-weight:900;font-size:96px;line-height:1;color:#006AA7}
+.lr{display:flex;align-items:center;gap:12px;font-family:Archivo,sans-serif;font-stretch:75%;font-weight:800;font-size:44px}
+.lr .kiri{color:#111214;border:3px solid #111214;padding:2px 12px}.lr .kanan{background:#FECC02;color:#111214;padding:5px 14px}
+.arr{display:block;width:46px;height:6px;background:#111214;position:relative}.arr:after{content:"";position:absolute;right:-6px;top:-9px;border-left:16px solid #111214;border-top:12px solid transparent;border-bottom:12px solid transparent}
+.tb{margin-top:16px}
+.tr{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:10px 0;border-top:2px solid rgba(17,18,20,.18)}
+.tr b{font-family:Archivo,sans-serif;font-stretch:75%;font-weight:800;font-size:50px;line-height:1;color:#111214}.tr b.bl{color:#006AA7;font-size:64px}
+.tr .tx{font-family:Inter,sans-serif;font-weight:600;font-size:30px;color:#111214;text-align:right}
+.tag{font-family:Archivo,sans-serif;font-stretch:75%;font-weight:800;font-size:38px;padding:4px 14px;background:#006AA7;color:#fff}.tag.y{background:#FECC02;color:#111214}
+.note{display:flex;align-items:center;gap:18px;margin-top:16px;padding:14px 16px;background:#FECC02}
+.note b{font-family:Archivo,sans-serif;font-stretch:75%;font-weight:900;font-size:52px;line-height:1;color:#111214;flex:none}
+.note span{font-family:Inter,sans-serif;font-weight:700;font-size:29px;line-height:1.2;color:#111214}
+.big{font-family:Archivo,sans-serif;font-stretch:75%;font-weight:900;font-size:180px;line-height:.9;color:#006AA7;letter-spacing:-.02em}
+.big small{font-size:72px;color:#111214}
+.sub{font-family:Inter,sans-serif;font-weight:700;font-size:32px;line-height:1.25;color:#111214;margin-top:8px}
+.bar{position:relative;height:40px;margin-top:20px;background:#DDD8CC}.bar i{position:absolute;left:0;top:0;bottom:0;background:#006AA7;transform-origin:0 50%}
+.bar span{position:absolute;right:10px;top:4px;font-family:Inter,sans-serif;font-weight:800;font-size:24px;color:#111214}
+.nt{display:flex;align-items:stretch;gap:0;margin-top:20px;background:#fff;box-shadow:0 4px 0 #111214}
+.nt i{width:16px;background:#006AA7}.nt div{padding:14px 18px}.nt b{display:block;font-family:Archivo,sans-serif;font-stretch:75%;font-weight:900;font-size:52px;line-height:1;color:#111214}
+.nt span{display:block;margin-top:6px;font-family:Inter,sans-serif;font-weight:600;font-size:27px;color:#111214}
+.dh{font-family:Archivo,sans-serif;font-stretch:75%;font-weight:900;font-size:150px;line-height:.9;color:#111214;white-space:nowrap}.dh span{display:inline-block;background:#006AA7;color:#FECC02;padding:0 22px}
+.clk{font-family:Archivo,sans-serif;font-stretch:75%;font-weight:900;font-size:200px;line-height:.88;color:#111214;letter-spacing:-.01em}
+.steps{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.steps span{font-family:Archivo,sans-serif;font-stretch:75%;font-weight:800;font-size:38px;padding:6px 14px;border:3px solid #111214;color:#111214}
+.steps span.b{background:#006AA7;border-color:#006AA7;color:#fff}.steps span.y{background:#FECC02;border-color:#FECC02}
+.cmp{margin-top:18px}
+.axis{position:relative;height:36px;background:#E6E2D8}
+.axis .rng{position:absolute;left:65%;width:34%;top:0;bottom:0;background:repeating-linear-gradient(135deg,#9a978f 0 6px,#E6E2D8 6px 12px)}
+.axis .mk{position:absolute;left:0;width:62.5%;top:8px;bottom:8px;background:#006AA7}
+.lbls{position:relative;height:34px;margin-top:6px;font-family:Inter,sans-serif;font-weight:700;font-size:23px;color:#111214}
+.lbls span{position:absolute;top:0}.lbls .r1{left:62.5%;transform:translateX(-100%);color:#006AA7}.lbls .r2{right:0}
+.q{margin-top:22px;font-family:Archivo,sans-serif;font-stretch:75%;font-weight:900;font-size:52px;line-height:1.05;padding:14px 18px;background:#006AA7;color:#fff}
+</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="90.79" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">MAKET ILUSTRASI &middot; STOCKHOLM 1967</div>
+
+<div id="lane" class="kr"><i></i><b>LAJUR KIRI</b></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="card">
+    <div class="k"><em>03</em>FAKTA SEJARAH NEGARA</div>
+    <div class="h">SATU NEGARA<br>PINDAH JALUR</div>
+    <div class="ln"><div class="clk0 nb" data-at="s1:lima" data-fx="popd">05.00</div><div class="lr" data-at="s1:kiri" data-fx="lane"><span class="kiri">KIRI</span><i class="arr"></i><span class="kanan">KANAN</span></div></div>
+  </div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="card">
+    <div class="k"><em>1967</em>SWEDIA, SEBELUM DAGEN H</div>
+    <div class="h m">SETIR DI KIRI,<br>TETANGGA DI KANAN</div>
+    <div class="tb">
+      <div class="tr" data-at="s2:Swedia" data-fx="lane"><b>SWEDIA</b><span class="tag y">KIRI</span></div>
+      <div class="tr" data-at="s2:Norwegia" data-fx="lane"><b>NORWEGIA</b><span class="tag">KANAN</span></div>
+      <div class="tr" data-at="s2:Finlandia" data-fx="lane"><b>FINLANDIA</b><span class="tag">KANAN</span></div>
+    </div>
+    <div class="note" data-at="s2:90" data-fx="lane"><b class="nb">&gt;90%</b><span>mobil di Swedia justru bersetir kiri, cocok untuk lajur kanan</span></div>
+  </div>
+</div>
+<div class="p" data-in="s3" data-out="s3:Tapi">
+  <div class="card">
+    <div class="k"><em>1955</em>REFERENDUM NASIONAL</div>
+    <div class="big nb" data-at="s3:83" data-fx="popd">83%</div>
+    <div class="sub">memilih tetap di lajur kiri</div>
+    <div class="bar" data-at="s3:83" data-fx="lane"><i data-at="s3:83" data-fx="grow" style="width:83%"></i><span>100%</span></div>
+  </div>
+</div>
+<div class="p" data-in="s3:Tapi" data-out="s3:Tahun">
+  <div class="card">
+    <div class="k"><em>MOBIL</em>JUMLAH KENDARAAN DI SWEDIA</div>
+    <div class="big nb"><b class="ct" data-from="0.5" data-to="1.5" data-a="s3:jadi" data-d="1.5" data-dec="1">0,5</b><small> JUTA</small></div>
+    <div class="sub">naik tiga kali lipat, dari setengah juta jadi satu setengah juta</div>
+  </div>
+</div>
+<div class="p" data-in="s3:Tahun" data-out="s4">
+  <div class="card">
+    <div class="k"><em>1963</em>RIKSDAG, 10 MEI 1963</div>
+    <div class="h m">PARLEMEN TETAP<br>MEMUTUSKAN PINDAH</div>
+    <div class="nt" data-at="s3:parlemen" data-fx="lane"><i></i><div><b>TAGE ERLANDER</b><span>Perdana Menteri Swedia, pengusul pindah ke kanan</span></div></div>
+  </div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="card">
+    <div class="k"><em>4 THN</em>PERSIAPAN NASIONAL</div>
+    <div class="big nb" data-at="s4:350.000" data-fx="faded"><b class="ct" data-from="0" data-to="350000" data-a="s4:350.000" data-d="1.4">0</b></div>
+    <div class="sub">rambu lalu lintas diganti (sekitar)</div>
+    <div class="tb">
+      <div class="tr" data-at="s4:plastik" data-fx="lane"><b>LAMPU BARU</b><span class="tx">dibungkus plastik hitam</span></div>
+      <div class="tr" data-at="s4:selotip" data-fx="lane"><b>MARKA BARU</b><span class="tx">dicat, lalu ditutup selotip</span></div>
+    </div>
+  </div>
+</div>
+<div class="p" data-in="s5" data-out="s5:Jam">
+  <div class="card">
+    <div class="k"><em>MINGGU</em>3 SEPTEMBER 1967</div>
+    <div class="dh" data-at="s5:Dagen" data-fx="popd">DAGEN <span>H</span></div>
+    <div class="sub" data-at="s5:disebut" data-fx="lane">H = H&ouml;gertrafik, lalu lintas kanan</div>
+  </div>
+</div>
+<div class="p" data-in="s5:Jam" data-out="s6">
+  <div class="card">
+    <div class="k"><em>JAM</em>SEMUA KENDARAAN, SERENTAK</div>
+    <div class="clk nb" id="clk">04.50</div>
+    <div class="steps">
+      <span data-at="s5:berhenti" data-fx="lane">BERHENTI</span>
+      <span class="b" data-at="s5:kanan" data-fx="lane">PINDAH KANAN</span>
+      <span data-at="s5:berhenti#2" data-fx="lane">BERHENTI</span>
+      <span class="y" data-at="s5:jalan" data-fx="lane">05.00 JALAN</span>
+    </div>
+  </div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="card">
+    <div class="k"><em>HASIL</em>KECELAKAAN LALU LINTAS</div>
+    <div class="tb">
+      <div class="tr" data-at="s6:157" data-fx="lane"><b class="nb bl">157</b><span class="tx">kecelakaan kecil di hari H</span></div>
+      <div class="tr" data-at="s6:125" data-fx="lane"><b class="nb bl">125</b><span class="tx">Senin berikutnya</span></div>
+    </div>
+    <div class="cmp" data-at="s6:sebelumnya" data-fx="faded">
+      <div class="axis"><i class="rng"></i><i class="mk"></i></div>
+      <div class="lbls"><span class="nb">0</span><span class="nb r1">125</span><span class="nb r2">130&ndash;198 Senin sebelumnya</span></div>
+    </div>
+    <div class="note" data-at="s6:ekstra" data-fx="lane"><b>EKSTRA</b><span>orang menyetir jauh lebih hati-hati</span></div>
+  </div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="card">
+    <div class="k"><em>EFEK</em>KEWASPADAAN MEMUDAR</div>
+    <div class="big nb" data-at="s7:1969" data-fx="popd">1969</div>
+    <div class="sub">angka kecelakaan kembali seperti semula</div>
+    <div class="note" data-at="s7:kereta" data-fx="lane"><b>KERETA</b><span>kereta api Swedia sampai sekarang tetap di kiri</span></div>
+  </div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="card">
+    <div class="k"><em>PELAJARAN</em>DAGEN H, 1967</div>
+    <div class="h m">SATU PAGI,<br>PERSIAPAN EMPAT TAHUN</div>
+    <div class="q" data-at="s8:Indonesia" data-fx="lane">INDONESIA PINDAH KE KANAN, KITA SIAP?</div>
+  </div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 03</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":7.325,"s2":7.485,"s2e":17.715,"s3":17.875,"s3e":30.812,"s4":30.972,"s4e":42.46,"s5":42.62,"s5e":55.153,"s6":55.313,"s6e":66.871,"s7":67.031,"s7e":76.753,"s8":76.913,"s8e":87.79,"end":87.79,"dur":90.79,"outro":88.04},AT={"s1:Semua":4.13,"s1:kiri":6.582,"s1:kanan":7.031,"s2:Norwegia":12.912,"s2:Finlandia":13.485,"s3:83":21.56,"s3:Tapi":24.238,"s3:setengah":25.352,"s3:jadi":26.002,"s3:juta#2":27.117,"s3:Tahun":27.748,"s3:parlemen":29.094,"s4:350.000":33.198,"s4:diganti":34.56,"s4:lampu":37.068,"s4:plastik":39.194,"s4:Marka":40.153,"s4:dicat":40.726,"s4:selotip":42.011,"s5:Hari":46.487,"s5:Dagen":47.446,"s5:disebut":47.059,"s5:04.50":48.787,"s5:berhenti":50.892,"s5:pindah":51.558,"s5:kanan":51.945,"s5:berhenti#2":52.719,"s5:lima":53.806,"s5:tepat":54.008,"s5:jalan":54.488,"s6:157":57.776,"s6:125":61.38,"s6:ekstra":65.988,"s7:1969":69.655,"s7:Dan":73.363,"s7:kereta":74.06,"s8:Indonesia":85.32,"s1:lima":0.874,"s2:Swedia":7.724,"s2:90":15.81,"s5:Jam":48.493,"s6:sebelumnya":64.402},DUR=90.79,OUT=88.04;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ lane:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:''},t-.001);tl.fromTo(e,{x:-60,opacity:0,clipPath:'inset(0 100% 0 0)'},{x:0,opacity:1,clipPath:'inset(0 0% 0 0)',duration:.4,ease:'power3.out'},t);},
+ popd:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:''},t-.001);tl.fromTo(e,{scale:.7,opacity:0,transformOrigin:'0% 50%'},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t);},
+ faded:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:''},t-.001);tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{x:-160,opacity:1,clipPath:'inset(0 100% 0 0)'},{x:0,opacity:1,clipPath:'inset(0 0% 0 0)',duration:.42,ease:'power3.out'},a-.12),POUT=(tl,p,b)=>tl.to(p,{x:180,clipPath:'inset(0 0% 0 100%)',duration:.3,ease:'power2.in'},b-.3);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{clipPath:'inset(0 100% 0 0)'});tl.to('#outro',{clipPath:'inset(0 0% 0 0)',duration:.45,ease:'power3.inOut'},OUT-.12);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{const c=q('#clk');if(c){const a=AT['s5:04.50'],b=AT['s5:lima'];const m=t<b?50+Math.min(9,Math.floor(Math.max(0,t-a)/(b-a)*10)):60;c.textContent=m>=60?'05.00':'04.'+m;c.style.color=m>=60?'#006AA7':'#111214';}
+const l=q('#lane');const kn=(t>AT['s1:kanan']&&t<K.s2-0.05)||t>AT['s5:kanan'];l.className=kn?'kn':'kr';l.lastChild.textContent=kn?'LAJUR KANAN':'LAJUR KIRI';l.style.opacity=t>K.outro-.2?0:1;};
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

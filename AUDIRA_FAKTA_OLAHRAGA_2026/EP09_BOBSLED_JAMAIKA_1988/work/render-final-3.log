@@ -1,0 +1,16 @@
+
+> audira-motion-project@4.3.0 render:final
+> node scripts/render-final.mjs --comp=Ep09Final --out=../EP09_BOBSLED_JAMAIKA_1988/FINAL_EP09_BOBSLED_JAMAIKA.mp4 --vo=public/audio/ep09/vo.wav --sfx=public/audio/ep09/sfx.wav --jobs=3 --parts=18 --concurrency=1 --gl=vulkan --encoder=nvenc --title=Jamaika Ikut Bobsled 1988 --slug=bobsled-jamaika --ep=EP09
+
+channel: @AudiraSportFacts
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+Error: Timed out after 30000ms while setting up the headless browser.
+This could be because the you specified takes a long time to load (or network resources that it includes like fonts) or because the browser is not responding.
+    at Timeout.<anonymous> (file:///F:/AUDIRA-EPISODES/_cache/remotion-r3f/node_modules/@remotion/renderer/dist/esm/index.mjs:18790:18)
+    at listOnTimeout (node:internal/timers:685:17)
+    at process.processTimers (node:internal/timers:618:7)
+
+Node.js v26.8.1

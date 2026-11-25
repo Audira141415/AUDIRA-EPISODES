@@ -1,0 +1,773 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP04_PULAU_SENTINEL_UTARA",
+  "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+  "createdAt": "2026-11-22T17:48:47.228Z",
+  "updatedAt": "2026-11-23T09:58:56.248Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:50:56.971Z",
+          "text": "Preflight ok; GLOBAL memory dibaca (VO tulis \"Audira\", Karaoke lebar penuh gap 0.4em, sign await, loudnorm TP); referensi EP67/EP68 Sejarah Negara."
+        }
+      ],
+      "doneAt": "2026-11-22T17:50:56.971Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:50:53.985Z",
+          "text": "19 fakta di research/SOURCE_REGISTER.md (Wikipedia NSI/SEN + Survival International). Engine 2D (Remotion 2D, tanpa R3F)."
+        }
+      ],
+      "doneAt": "2026-11-22T17:50:53.985Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-23T08:34:26.242Z",
+      "notes": [
+        {
+          "at": "2026-11-22T17:51:35.329Z",
+          "text": "Pengguna memilih \"1 PAPERWORLD\" (2026-11-23). Ditolak: HISTORYMAP, SATELLITEBRIEFING."
+        },
+        {
+          "at": "2026-11-22T23:55:07.485Z",
+          "text": "2026-11-23 pengguna memilih CHRONICLE (jawaban langsung \"CHRONICLE\") setelah PAPERWORLD gagal juri 2 putaran. Ditolak: STORYBOOK, SATELLITEBRIEFING."
+        },
+        {
+          "at": "2026-11-23T08:34:26.242Z",
+          "text": "2026-11-23: pengguna memilih PAINTERLY (CHRONICLE gagal jury 3.67 putaran 2)."
+        }
+      ],
+      "startedAt": "2026-11-22T17:51:35.329Z",
+      "doneAt": "2026-11-23T08:34:26.242Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T17:54:02.776Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T17:53:41.081Z",
+      "startedAt": "2026-11-22T17:53:41.081Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:54:02.776Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.000Z",
+      "startedAt": "2026-11-22T06:09:42.000Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:55:01.052Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-22T17:54:57.772Z",
+      "startedAt": "2026-11-22T17:54:57.772Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:54:02.776Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.000Z",
+      "startedAt": "2026-11-22T16:52:30.000Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T18:20:03.300Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        },
+        {
+          "at": "2026-11-22T22:24:02.880Z",
+          "text": "2026-11-23 juri putaran 2: self 4.0, jury 3.83 PERLU POLES (lighting 3: cahaya datar, tanpa key light terarah/cast shadow). Batas 2 putaran habis -> G16/G21 kembali ke gerbang style. Usulan: CHRONICLE (utama), STORYBOOK, SATELLITEBRIEFING. Menunggu pilihan pengguna; setelah pilih ulang tahap 4 (docs Style: <ID>), VO tetap (86.52 dtk) dipakai ulang."
+        },
+        {
+          "at": "2026-11-22T22:24:42.433Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        },
+        {
+          "at": "2026-11-23T09:26:26.615Z",
+          "text": "PAINTERLY putaran 1: self 4.17, jury 4.0 LOLOS (material 3). camera 5/5, ceilings semua 5."
+        }
+      ],
+      "doneAt": "2026-11-23T09:26:26.615Z",
+      "startedAt": "2026-11-22T18:16:43.959Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T09:50:07.356Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-23T09:54:55.747Z",
+          "text": "FINAL_VIDEO.mp4 OK: -13.7 LUFS TP -1.9, metadata+signature VALID, qa_video PASS, self final 4.0. Menunggu jury final. Lihat HANDOFF sesi 11."
+        },
+        {
+          "at": "2026-11-23T09:58:56.248Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        }
+      ],
+      "doneAt": "2026-11-23T09:53:24.659Z",
+      "startedAt": "2026-11-23T09:42:14.494Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:20:03.300Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-22T18:17:57.987Z",
+      "startedAt": "2026-11-22T18:17:57.987Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP04",
+    "engine": "remotion",
+    "engineNote": "Remotion 2D murni (SVG/DOM, tanpa R3F) — permintaan sesi induk",
+    "channel": "FAKTADUNIA",
+    "handle": "@AudiraFaktaDunia",
+    "style": "PAINTERLY",
+    "previousStyle": "CHRONICLE",
+    "failedStyles": [
+      "PAPERWORLD",
+      "CHRONICLE"
+    ],
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-23T09:58:56.248Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T18:09:03.132Z",
+      "doing": "Kode film 2D + cover-topic SELESAI (cover sudah ditampilkan). Contact sheet putaran 0 bagus; 3 perbaikan kecil sudah diterapkan di scenes.tsx (belum dirender ulang). Pindah ke sesi baru karena batas konteks.",
+      "files": [
+        "project/src/ep04/scenes.tsx",
+        "project/src/ep04/Film.tsx",
+        "style/cover-topic.png",
+        "docs/HANDOFF.md"
+      ],
+      "next": "Baca docs/HANDOFF.md bagian UPDATE sesi 2 → render ulang sheet → docs/SHOTLIST.md + npm run sfx → audit:visual + draft/THEME_CHECK.md + juri self & jury → final (--vo --sfx) → QA → delivery.",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T18:17:25.157Z",
+      "doing": "Sesi 3: draft juri (self LOLOS 4.17, jury buta berjalan). SHOTLIST + sfx.wav selesai, poles vignette/kabut/kamera di scenes.tsx, plafon audit semua 5.",
+      "files": [
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "project/src/ep04/scenes.tsx"
+      ],
+      "next": "Bila jury LOLOS: render:final Ep04Final --vo --sfx --jobs=4 --concurrency=2, loudness, metadata, qa_video, record_score final, lalu delivery (caption, SRT, NOTES, lessons, scheduled tasks).",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T18:23:31.384Z",
+      "doing": "Draft putaran 2 siap dinilai: sheet + audit (ceilings ≥4) + camera 4/5 di draft/. Jury putaran 1 = 3.5 (gagal), sudah dipoles.",
+      "files": [
+        "docs/HANDOFF.md",
+        "draft/contact-sheet.jpg",
+        "draft/look-draft.json",
+        "draft/camera.json",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt"
+      ],
+      "next": "record_score self + jury buta putaran 2 (terakhir); bila LOLOS render:final Ep04Final lalu delivery. Detail di docs/HANDOFF.md \"UPDATE sesi 3\".",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T23:55:56.175Z",
+      "doing": "Re-skin project/src/ep04 (pieces/scenes/Film) ke look CHRONICLE 2D: siluet hitam kontur emas (suku) / cyan (orang luar), god rays, haze, peta teal gelap, teks putih+emas tanpa kartu kertas",
+      "files": [
+        "project/src/ep04/pieces.tsx",
+        "project/src/ep04/scenes.tsx",
+        "project/src/ep04/Film.tsx"
+      ],
+      "next": "cover topik (node scripts/stills.mjs out/ep04-cover 0 Ep04Cover), docs tahap 4 Style: CHRONICLE, sheet 16 frame + audit:visual + jury",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T23:59:55.427Z",
+      "doing": "Re-skin CHRONICLE 2D di project/src/ep04 SELESAI (tsc bersih). Belum: cover topik, docs G21, sheet + juri CHRONICLE.",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/ep04/pieces.tsx",
+        "project/src/ep04/scenes.tsx",
+        "project/src/ep04/Film.tsx"
+      ],
+      "next": "Ikuti docs/HANDOFF.md \"UPDATE sesi 5\": cover topik → STYLE_DECISION + docs Style: CHRONICLE → sheet + audit + juri → final → delivery",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:23:44.343Z",
+      "doing": "CHRONICLE draf putaran 2: klip 56–74 dtk perlu render ulang (ENOSPC di C:), lalu juri self + jury buta putaran 2",
+      "command": "TEMP=F:/tmp-remotion TMP=F:/tmp-remotion npx remotion render src/index.ts Ep04Preview out/draft-clip.mp4 --frames=1680-2220",
+      "files": [
+        "project/src/ep04/scenes.tsx",
+        "project/src/ep04/pieces.tsx",
+        "draft/contact-sheet.jpg",
+        "SOCIAL_CAPTIONS.md",
+        "docs/HANDOFF.md"
+      ],
+      "next": "Lihat docs/HANDOFF.md \"UPDATE sesi 6b\": render klip dgn TEMP=F:, audit camera/visual, juri putaran 2; bila lolos render final + QA + delivery",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:26:24.575Z",
+      "doing": "Draf CHRONICLE putaran 2: poles jury putaran 1 (3.83, material/composition 3) sudah di kode src/ep04; sheet belum dirender ulang.",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/ep04/scenes.tsx",
+        "project/src/ep04/pieces.tsx",
+        "project/src/ep04/timing.ts",
+        "project/src/ep04/Film.tsx",
+        "SOCIAL_CAPTIONS.md"
+      ],
+      "next": "cd project; render sheet 16 frame (node scripts/stills.mjs out/ep04-stills 2s,9.8s,13.5s,15.8s,21.5s,24.5s,31s,35.5s,42s,44.5s,53s,61s,66s,72.5s,78.6s,84s Ep04Preview) + klip 56-74 (npx remotion render src/index.ts Ep04Preview out/draft-clip.mp4 --frames=1680-2220) + audit:camera + audit:visual --video, salin ke draft/, juri self + jury buta putaran 2 (TERAKHIR CHRONICLE). Bila LOLOS: render:final (perintah di HANDOFF sesi 3 langkah b) + QA + delivery.",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:32:37.600Z",
+      "doing": "Juri buta CHRONICLE putaran 2 (self 4.17 tercatat; klip+camera 5/5+look ceilings 5 di draft/)",
+      "next": "Catat skor jury; bila >=4 tanpa aspek <3 → render final (TEMP=F:/tmp-remotion), QA, delivery. Gagal → gerbang style.",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:33:56.837Z",
+      "doing": "Menunggu pilihan style baru (CHRONICLE gagal jury 3.67 putaran 2). Kandidat: PAINTERLY, STORYBOOK, SATELLITEBRIEFING.",
+      "next": "Setelah pengguna memilih: STYLE_DECISION, cover topik, ulang tahap 4 (G21), re-skin kode, sheet+juri. Lihat docs/HANDOFF.md sesi 7.",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:36:14.593Z",
+      "doing": "Re-skin PAINTERLY: Film.tsx + pieces.tsx + timing.ts selesai; scenes.tsx (fix juri S2/S6/S8/S9) belum.",
+      "files": [
+        "project/src/ep04/Film.tsx",
+        "project/src/ep04/pieces.tsx",
+        "project/src/ep04/timing.ts",
+        "project/src/ep04/scenes.tsx"
+      ],
+      "next": "Lihat docs/HANDOFF.md \"UPDATE sesi 8\": edit scenes.tsx → tsc → cover topik → STYLE_DECISION + docs G21 → sheet+klip+audit → juri → final → delivery.",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "PAINTERLY",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:44:03.134Z",
+      "doing": "PAINTERLY: scenes.tsx fix juri SELESAI + Strokes di Film.tsx, tsc bersih, cover topik + STYLE_DECISION + docs G21 SELESAI. Sedang render stills 16 frame + klip 1680-2220 untuk sheet juri putaran 1.",
+      "command": "cd project && TEMP=F:/tmp-remotion TMP=F:/tmp-remotion node scripts/stills.mjs out/ep04-stills 2,9.8,13.5,15.8,21.5,24.5,31,35.5,42,44.5,53,61,66,72.5,78.6,84 Ep04Preview ; npx remotion render src/index.ts Ep04Preview out/draft-clip.mp4 --frames=1680-2220",
+      "files": [
+        "project/src/ep04/scenes.tsx",
+        "project/src/ep04/Film.tsx",
+        "style/STYLE_DECISION.md",
+        "docs/ART_DIRECTION.md"
+      ],
+      "next": "audit:camera + audit:visual → salin sheet ke draft/ (+1200px) → record_score self → jury buta subagent (qa/jury.md, cover painterly.jpg) → final bila lolos.",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "PAINTERLY",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:46:23.315Z",
+      "doing": "PAINTERLY sheet putaran 1: ceilings 5 tapi camera 1/5 (tekstur statis). Drift tekstur sudah di Film.tsx, belum dirender.",
+      "command": "cd project && TEMP=F:/tmp-remotion TMP=F:/tmp-remotion npx remotion render src/index.ts Ep04Preview out/draft-clip.mp4 --frames=1680-2220",
+      "files": [
+        "project/src/ep04/Film.tsx",
+        "project/src/ep04/scenes.tsx",
+        "docs/HANDOFF.md"
+      ],
+      "next": "Lihat docs/HANDOFF.md UPDATE sesi 9: render ulang klip+stills, audit camera/visual, juri self+jury buta, final, delivery.",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "PAINTERLY",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:52:10.404Z",
+      "doing": "sesi 10: render klip 1680-2220 + 16 stills + audit camera/visual setelah fix Canvas (weave dihapus, opacity 0.14) + Strokes opacity 0.05/0.07 (uji 4 dtk: camera 4/5)",
+      "command": "cd project && TEMP=F:/tmp-remotion npx remotion render src/index.ts Ep04Preview out/draft-clip.mp4 --frames=1680-2220 ; node scripts/stills.mjs out/ep04-stills ... ; audit:camera ; audit:visual",
+      "files": [
+        "project/src/ep04/Film.tsx"
+      ],
+      "next": "salin sheet/look/camera ke draft/, juri self + jury buta, final, delivery",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "PAINTERLY",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:05:00.998Z",
+      "doing": "sesi 10: draft PAINTERLY siap juri (camera 5/5, ceilings semua 5, sheet di draft/). Belum: record_score self + jury buta.",
+      "files": [
+        "draft/contact-sheet-1200.jpg",
+        "draft/look-draft.json",
+        "draft/camera.json",
+        "docs/HANDOFF.md"
+      ],
+      "next": "Baca docs/HANDOFF.md UPDATE sesi 10: juri self + jury buta putaran 1, lalu render:final, QA, delivery.",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "PAINTERLY",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:09:32.408Z",
+      "doing": "sesi 10c: kode PAINTERLY diubah (tekstur sapuan pindah ke PNG ruang kamera, #paint hanya wobble), BELUM dirender. Camera terakhir 3/5, ceilings 5.",
+      "files": [
+        "project/src/ep04/Film.tsx",
+        "project/src/ep04/scenes.tsx",
+        "project/src/ep04/pieces.tsx",
+        "project/public/paint-strokes.png",
+        "docs/HANDOFF.md"
+      ],
+      "next": "docs/HANDOFF.md UPDATE sesi 10c: render klip+stills+audit, cek sheet (tanpa pita vertikal), juri self+jury, final, delivery.",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "PAINTERLY",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:19:53.431Z",
+      "doing": "s11: render klip 1680-2220 + 16 stills + audit camera/visual (background), salin ke draft/",
+      "command": "HANDOFF UPDATE sesi 10c perintah render",
+      "next": "lihat sheet 1200, record_score self + jury buta putaran 1 PAINTERLY",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "PAINTERLY",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:26:16.836Z",
+      "doing": "s11: draft PAINTERLY LOLOS (self 4.17, jury 4.0). Render final Ep04Final background → out/FINAL.mp4",
+      "command": "cd project && TEMP=F:/tmp-remotion TMP=F:/tmp-remotion npm run render:final -- --comp=Ep04Final --out=out/FINAL.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --title=\"Pulau Sentinel Utara: Suku yang Menolak Dunia Luar\" --slug=sentinel-utara-ep04 --ep=EP04",
+      "next": "cek LUFS/TP + ffprobe metadata, qa_video hardOnly, FINAL_VIDEO.mp4, record_score final self+jury, delivery",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "PAINTERLY",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:45:04.739Z",
+      "doing": "s11: render final ke-3 (fix KEDIP 7.45 dtk: PaintStrokes delayRender sampai PNG decode). Sebelumnya: SFX TARGET_LUFS -28 (G18c), kamera S8/S9 dipercepat (G13), --skip-channel untuk scene starter PenggantiGibran.",
+      "command": "npm run render:final ... --skip-channel=...",
+      "next": "Bila EPERM rename lagi: mv FINAL.tagged.tmp.mp4 FINAL.mp4 + sign manual (scratchpad sign.mjs, await signFile). Lalu cp ke FINAL_VIDEO.mp4 + .sig.json, qa_video hardOnly, record_score final self+jury, delivery.",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "PAINTERLY",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:45:04.739Z",
+      "doing": "s11: render final ke-3 (fix KEDIP 7.45 dtk: PaintStrokes delayRender sampai PNG decode). Sebelumnya: SFX TARGET_LUFS -28 (G18c), kamera S8/S9 dipercepat (G13), --skip-channel untuk scene starter PenggantiGibran.",
+      "command": "npm run render:final ... --skip-channel=...",
+      "next": "Bila EPERM rename lagi: mv FINAL.tagged.tmp.mp4 FINAL.mp4 + sign manual (scratchpad sign.mjs, await signFile). Lalu cp ke FINAL_VIDEO.mp4 + .sig.json, qa_video hardOnly, record_score final self+jury, delivery.",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "PAINTERLY",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T09:56:04.937Z"
+    },
+    {
+      "at": "2026-11-23T09:56:20.383Z",
+      "doing": "s11 selesai sampai delivery. FINAL_VIDEO.mp4 teknis OK; jury FINAL 3.5 PERLU POLES (draf jury 4.0 lolos). Stage final dibiarkan in_progress.",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "NOTES.md",
+        "docs/HANDOFF.md",
+        "draft/final-contact-sheet-1200.jpg"
+      ],
+      "next": "Keputusan sesi induk/pengguna: terima final apa adanya, atau poles (overlay sapuan ≤0.1, label peta ≥56 px, perahu S10 lebih besar) lalu render:final ulang + jury final. Lalu tutup stage final & delivery.",
+      "snapshot": {
+        "episode": "EP04_PULAU_SENTINEL_UTARA",
+        "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+        "style": "PAINTERLY",
+        "memoryEpisode": "short-baru-11-23-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    }
+  ],
+  "handover": {
+    "at": "2026-11-23T09:56:20.383Z",
+    "doing": "s11 selesai sampai delivery. FINAL_VIDEO.mp4 teknis OK; jury FINAL 3.5 PERLU POLES (draf jury 4.0 lolos). Stage final dibiarkan in_progress.",
+    "files": [
+      "FINAL_VIDEO.mp4",
+      "NOTES.md",
+      "docs/HANDOFF.md",
+      "draft/final-contact-sheet-1200.jpg"
+    ],
+    "next": "Keputusan sesi induk/pengguna: terima final apa adanya, atau poles (overlay sapuan ≤0.1, label peta ≥56 px, perahu S10 lebih besar) lalu render:final ulang + jury final. Lalu tutup stage final & delivery.",
+    "snapshot": {
+      "episode": "EP04_PULAU_SENTINEL_UTARA",
+      "topic": "Pulau Sentinel Utara — suku yang menolak dunia luar",
+      "style": "PAINTERLY",
+      "memoryEpisode": "short-baru-11-23-EP04",
+      "currentStage": "final",
+      "gates": {
+        "style": {
+          "approved": true,
+          "status": "done"
+        }
+      },
+      "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP04_PULAU_SENTINEL_UTARA/audio/vo.wav",
+      "draftScores": [],
+      "finals": [
+        "FINAL_VIDEO.mp4"
+      ],
+      "draftRounds": 0
+    }
+  }
+}

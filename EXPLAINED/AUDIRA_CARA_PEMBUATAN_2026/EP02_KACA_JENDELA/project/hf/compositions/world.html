@@ -1,0 +1,138 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#05070b}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.05;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.42) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.42) 42%,rgba(0,0,0,0.42) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#EAF4FF;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.tag{display:table;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:27px;letter-spacing:.08em;color:#EAF4FF;background:linear-gradient(135deg,rgba(26,34,48,.72),rgba(10,14,22,.62));backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border:1.5px solid rgba(255,255,255,.28);box-shadow:0 18px 50px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.35);border-radius:999px;padding:10px 24px 9px 18px;margin-bottom:16px}
+.tag i{display:inline-block;width:14px;height:14px;border-radius:50%;background:#FFC56B;box-shadow:0 0 14px #FFC56B;margin-right:14px;vertical-align:1px}
+.card{display:table;background:linear-gradient(135deg,rgba(26,34,48,.72),rgba(10,14,22,.62));backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border:1.5px solid rgba(255,255,255,.28);box-shadow:0 18px 50px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.35);border-radius:34px;padding:16px 34px 20px;margin-bottom:16px}
+.card.hero{background:linear-gradient(135deg,rgba(70,48,22,.72),rgba(14,20,30,.66) 60%,rgba(12,40,48,.66));}
+.big{font-family:Outfit,sans-serif;font-weight:800;font-size:112px;line-height:.95;letter-spacing:-.02em;color:#fff;text-shadow:0 4px 24px rgba(0,0,0,.35)}
+.big span{color:#FFC56B}.big.sm{font-size:74px;line-height:1.02}
+.num small{display:block;font-family:'JetBrains Mono',monospace;font-size:30px;letter-spacing:.12em;color:#2FE6FF;margin-bottom:4px}
+.num .big{font-size:96px;color:#FFC56B}.num.sm .big{font-size:64px}.num.sm{padding:14px 26px 16px;margin-right:14px}
+.ln{display:table;font-family:Inter,sans-serif;font-weight:600;font-size:40px;line-height:1.2;color:#EAF4FF;background:linear-gradient(135deg,rgba(26,34,48,.72),rgba(10,14,22,.62));backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border:1.5px solid rgba(255,255,255,.28);box-shadow:0 18px 50px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.35);border-radius:22px;padding:12px 26px;margin-bottom:12px;max-width:880px}
+.ln b{color:#FFC56B;font-weight:800}.ln.c{border-color:rgba(47,230,255,.6)}
+.row{display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.grid{display:flex;flex-wrap:wrap;gap:10px;max-width:900px;margin-bottom:14px}
+.chip{font-family:Inter,sans-serif;font-weight:600;font-size:34px;color:#EAF4FF;background:linear-gradient(135deg,rgba(26,34,48,.72),rgba(10,14,22,.62));backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border:1.5px solid rgba(255,255,255,.28);box-shadow:0 18px 50px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.35);border-radius:999px;padding:10px 24px}
+.chip em{font-style:normal;font-family:Outfit,sans-serif;font-weight:800;color:#FFC56B;margin-right:12px;font-size:38px}
+#chip{font-family:'JetBrains Mono',monospace;font-size:24px;color:#EAF4FF;opacity:.9;letter-spacing:.06em}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="84.13" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN REKAMAN PABRIK ASLI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tag"><i></i>CARA PEMBUATAN · EP 02</div>
+  <div class="card hero"><div class="big">KACA<br><span>JENDELA</span></div></div>
+  <div class="ln" data-at="s1:mengapung" data-fx="lit">dulu <b>mengapung</b> di atas logam cair</div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="tag"><i></i>PENEMU · INGGRIS</div>
+  <div class="ln" data-at="s2:Alastair" data-fx="lit">Alastair Pilkington</div>
+  <div class="ln" data-at="s2:Kenneth" data-fx="lit">Kenneth Bickerstaff</div>
+  <div class="row"><div class="chip" data-at="s2:1952" data-fx="lit"><em>1952</em>mulai eksperimen</div><div class="chip" data-at="s2:diumumkan" data-fx="lit"><em>1959</em>diumumkan</div></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tag"><i></i>BAHAN BAKU</div>
+  <div class="grid">
+    <div class="chip" data-at="s3:Pasir" data-fx="lit">Pasir</div><div class="chip" data-at="s3:soda" data-fx="lit">Soda abu</div><div class="chip" data-at="s3:dolomit" data-fx="lit">Dolomit</div>
+    <div class="chip" data-at="s3:batu" data-fx="lit">Batu kapur</div><div class="chip" data-at="s3:sodium" data-fx="lit">Sodium sulfat</div><div class="chip" data-at="s3:pecahan" data-fx="lit">Pecahan kaca bekas</div>
+  </div>
+  <div class="card num" data-at="s3:tungku" data-fx="lit"><small>TUNGKU</small><div class="big">±<b class="ct" data-from="0" data-to="1500" data-a="s3:1.500" data-d="1.2">0</b>°C</div></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="tag"><i></i>KOLAM TIMAH CAIR</div>
+  <div class="ln" data-at="s4:seribu" data-fx="lit">Masuk pada <b>seribu derajat lebih</b></div>
+  <div class="ln" data-at="s4:mengapung" data-fx="lit">Mengapung, menyebar, rata sendiri</div>
+  <div class="ln c" data-at="s4:nitrogen" data-fx="lit">Selimut gas nitrogen + hidrogen</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="tag"><i></i>PITA KACA</div>
+  <div class="ln c" data-at="s5:Rol" data-fx="lit">Rol tepi: tarik / tahan = tebal</div>
+  <div class="row"><div class="card num sm" data-at="s5:600" data-fx="lit"><small>KELUAR KOLAM</small><div class="big">±600°C</div></div>
+  <div class="card num sm" data-at="s5:100" data-fx="lit"><small>TEROWONGAN PENDINGIN</small><div class="big">±<b class="ct" data-from="0" data-to="100" data-a="s5:100" data-d=".8">0</b> m</div></div></div>
+  <div class="ln" data-at="s5:dipotong" data-fx="lit">Lalu dipotong mesin</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="tag"><i></i>KENAPA TIMAH?</div>
+  <div class="ln" data-at="s6:rapat" data-fx="lit">Lebih rapat dari kaca</div>
+  <div class="ln" data-at="s6:menempel" data-fx="lit">Tidak menempel pada kaca</div>
+  <div class="ln" data-at="s6:mendidih" data-fx="lit">Mendidih di atas <b>2.000°C</b></div>
+  <div class="ln c" data-at="s6:Hasilnya" data-fx="lit">Dua sisi mulus tanpa digosok</div>
+  <div class="ln" data-at="s6:Pendinginan" data-fx="lit">Dingin pelan = tidak pecah</div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tag"><i></i>TEBAL ALAMI</div>
+  <div class="card num" data-at="s7:7" data-fx="lit"><small>DI ATAS TIMAH</small><div class="big">≈<b class="ct" data-from="0" data-to="7" data-a="s7:7" data-d=".7">0</b> mm</div></div>
+  <div class="ln" data-at="s7:semua" data-fx="lit">Hampir semua kaca datar</div>
+  <div class="ln c" data-at="s7:24" data-fx="lit">Nonstop <b>24 jam</b> sehari</div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="card hero" data-at="s8:jendela" data-fx="lit"><div class="big sm">JENDELAMU<br><span>PERNAH BERLAYAR</span><br>DI ATAS LOGAM</div></div>
+  <div class="ln" data-at="s8:Ikuti" data-fx="lit">Ikuti AUDIRA: cara pembuatan berikutnya</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">AUDIRA Explained &middot; @AudiraExplained</div><div class="sr">CARA PEMBUATAN &middot; EP 02</div></div>
+<div id="sig">AUDIRA &middot; @AudiraExplained</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":3.199,"s2":3.359,"s2e":14.285,"s3":14.445,"s3e":25.875,"s4":26.035,"s4e":36.931,"s5":37.091,"s5e":50.862,"s6":51.022,"s6e":64.629,"s7":64.789,"s7e":74.958,"s8":75.118,"s8e":81.126,"end":81.126,"dur":84.13,"outro":81.376},AT={"s2:Kenneth":6.762,"s2:diumumkan":12.165,"s2:Alastair":4.781,"s3:Pasir":15.744,"s3:soda":16.162,"s3:dolomit":16.843,"s3:batu":17.323,"s3:sodium":18.375,"s3:pecahan":20.001,"s3:tungku":22.098,"s3:meleleh":24.528,"s4:dialirkan":26.916,"s4:mengapung":30.523,"s4:menyebar":31.064,"s4:Selimut":33.464,"s5:Rol":37.091,"s5:pita":39.939,"s5:Saat":42.062,"s5:600":44.489,"s5:terowongan":47.146,"s5:100":49.127,"s5:dipotong":50.18,"s6:rapat":52.742,"s6:menempel":54.604,"s6:mendidih":56.363,"s6:Hasilnya":58.484,"s6:Pendinginan":61.889,"s7:milimeter":69.114,"s7:Kini":70.175,"s7:24":73.611,"s7:7":69.027,"s8:Ikuti":78.989,"s8:jendela":75.553,"s1:mengapung":1.511,"s2:1952":10.059,"s3:1.500":22.733,"s4:seribu":29.191,"s4:nitrogen":34.052,"s7:semua":70.918},DUR=84.13,OUT=81.376;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ lit:(e,t)=>tl.fromTo(e,{opacity:.62},{opacity:1,duration:.3,ease:'power2.out'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{opacity:0,y:40,scale:.97,filter:'blur(14px)'},{opacity:1,y:0,scale:1,filter:'blur(0px)',duration:.5,ease:'power4.out'},a-.14);},POUT=(tl,p,b)=>{tl.to(p,{opacity:0,y:-26,filter:'blur(12px)',duration:.32,ease:'power2.in'},b-.3);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0,filter:'blur(20px)'});tl.to('#outro',{opacity:1,filter:'blur(0px)',duration:.55,ease:'power3.out'},OUT-.1);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP02_KACA_JENDELA")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

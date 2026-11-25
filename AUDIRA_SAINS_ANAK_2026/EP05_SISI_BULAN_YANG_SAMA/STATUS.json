@@ -1,0 +1,731 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP05_SISI_BULAN_YANG_SAMA",
+  "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+  "createdAt": "2026-11-23T14:16:30.162Z",
+  "updatedAt": "2026-11-24T10:06:26.614Z",
+  "currentStage": "final",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:18:15.096Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:16:30.163Z",
+      "startedAt": "2026-11-23T14:16:30.163Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:18:15.096Z",
+          "text": "sync: riset ada"
+        },
+        {
+          "at": "2026-11-23T14:22:17.470Z",
+          "text": "16 fakta (10 HIGH). Rotasi 27,3 hari (bukan 29,5); '21,5 jam' pakai 'sekitar'; 'hampir semua bulan besar' terkunci."
+        }
+      ],
+      "doneAt": "2026-11-23T14:22:17.470Z",
+      "startedAt": "2026-11-23T14:16:30.080Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:16:38.073Z",
+          "text": "SCALEFORGE 3D Remotion dipilih AI (astronomi: Bumi/Bulan/Matahari + HUD ukur). Proyek disalin dari starter (kit project/ scaleforge salah kemas = BONGKAR). Cover topik menunggu kode film."
+        },
+        {
+          "at": "2026-11-23T15:17:20.996Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "startedAt": "2026-11-23T15:16:38.073Z",
+      "doneAt": "2026-11-23T15:16:37.893Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T18:23:24.492Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-23T18:23:03.646Z",
+      "startedAt": "2026-11-23T18:23:03.646Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:16:33.318Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T18:23:24.492Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-23T18:22:24.486Z",
+      "startedAt": "2026-11-23T18:22:24.486Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:16:33.318Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.572Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:20:56.532Z",
+          "text": "sync: look.json PASS"
+        },
+        {
+          "at": "2026-11-24T09:35:22.335Z",
+          "text": "Draf R3 (2026-11-24 s5): juri buta putaran 2 = 3.83 LOLOS (L4 M3 D4 C3 Mo5 R4), self 3.67, THEME_CHECK 12/12. Menunggu acc gerbang 9."
+        }
+      ],
+      "doneAt": "2026-11-24T09:35:22.335Z",
+      "startedAt": "2026-11-24T07:16:03.687Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "in_progress",
+      "approved": true,
+      "approvedAt": "2026-11-24T09:47:06.430Z",
+      "notes": [
+        {
+          "at": "2026-11-24T09:47:06.430Z",
+          "text": "Acc pengguna 2026-11-24 s5: \"Gas render final\""
+        }
+      ],
+      "startedAt": "2026-11-24T09:47:06.430Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sains-anak-EP05",
+    "shortTitle": "Sisi Bulan",
+    "style": "SCALEFORGE",
+    "engine": "remotion"
+  },
+  "syncedAt": "2026-11-24T07:20:56.532Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-23T15:16:38.266Z",
+      "doing": "Tahap 3→4: style SCALEFORGE (remotion) diputuskan, STYLE_DECISION.md terisi. project/ = salinan starter (bukan new-project --kit karena kit project salah kemas); npm ci sedang berjalan di project/ (log work/npm-ci.log).",
+      "command": "cd project && npm ci --prefer-offline",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "project/"
+      ],
+      "next": "Tulis docs/ART_DIRECTION.md, SCRIPT.md (195–210 kata, fakta SOURCE_REGISTER saja, koreksi: rotasi 27,3 hari; 'sekitar 21,5 jam'; 'hampir semua bulan besar'; Bulan tetap berotasi; sisi jauh tidak gelap), STORYBOARD.md, ASSET_MANIFEST.md (Style: SCALEFORGE). Lalu VO Cartesia → project/public/audio/vo.wav, npm run vo, film multi-scene 6 adegan di project/src/episodes/moon/, sfx, npm run draft, juri. Berhenti di gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP05_SISI_BULAN_YANG_SAMA",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP05",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T15:16:53.354Z",
+      "doing": "Tahap 3 selesai sebagian: style SCALEFORGE (remotion) dipilih, STYLE_DECISION.md lengkap. project/ = salinan F:/AUDIRA-SKILL-MOTION/starter (tanpa node_modules/out), npm ci SELESAI exit 0. Belum ada docs naskah, VO, kode film, cover topik.",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "project/",
+        "research/SOURCE_REGISTER.md"
+      ],
+      "next": "Tahap 4: docs/ART_DIRECTION.md, SCRIPT.md, STORYBOARD.md, ASSET_MANIFEST.md (baris 'Style: SCALEFORGE'). Lalu npm run check-env + smoke, VO Cartesia, film 6 adegan di project/src/episodes/moon/ (kit starter/src/kits/scaleforge: makeEarthTextures, makeSunTexture, makeGlow, Overlay; GLB: comm-satellite-fdc2cd, exploration-rover-7afd91, crater-terrain-blob-bd6af6, regolith-boulder-1f1f14, astronaut-explorer-323482, laser-pointer-ray-a70928, phase-mirror-1a43e9, large-asteroid-391721), cover, sfx, draft, juri, gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP05_SISI_BULAN_YANG_SAMA",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP05",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:23:28.258Z",
+      "doing": "s2: VO selesai (audio/vo.wav 79,04 dtk, 210 kata, vo-words.json; salinan di project/public/audio). Menulis film project/src/episodes/moon/MoonFilm.tsx (6 adegan: hook 0-8.3, konteks 8.3-21, orbit 21-36, rem/lonjong/libration 36-55, payoff sisi jauh+Luna3+Chang'e4+21,5jam+3,8cm 55-73.5, outro 73.5-82). Durasi film 82 dtk.",
+      "files": [
+        "audio/vo.txt",
+        "audio/vo.wav",
+        "audio/vo-words.json",
+        "project/src/episodes/moon/MoonFilm.tsx"
+      ],
+      "next": "Daftarkan MoonPreview/MoonFinal di Root.tsx, typecheck, stills, cover topik, docs (SCRIPT/STORYBOARD/ART_DIRECTION/ASSET_MANIFEST/SHOTLIST), sfx, contact sheet, juri, gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP05_SISI_BULAN_YANG_SAMA",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP05",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP05_SISI_BULAN_YANG_SAMA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:23:45.738Z",
+      "doing": "Tahap 4 docs selesai (SCRIPT 201 kata, ART_DIRECTION, STORYBOARD 7 adegan, ASSET_MANIFEST). check-env+smoke OK. Membuat VO Cartesia dari audio/vo-tts.txt ke project/public/audio/vo.wav",
+      "files": [
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "audio/vo-tts.txt",
+        "project/public/audio/vo.wav"
+      ],
+      "next": "npm run vo -- public/audio/vo.wav, lalu kode film src/episodes/moon/ (7 adegan), daftar Root.tsx",
+      "snapshot": {
+        "episode": "EP05_SISI_BULAN_YANG_SAMA",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP05",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP05_SISI_BULAN_YANG_SAMA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:26:22.369Z",
+      "doing": "s2 selesai sebagian. VO FINAL terkunci: audio/vo.wav 79,04 dtk (210 kata, teks audio/vo.txt, kata audio/vo-words.json; salinan project/public/audio/). Kode film DITULIS tapi BELUM typecheck/render: project/src/episodes/moon/MoonFilm.tsx (export MoonFilm, MOON_SECONDS=82; 6 babak S1 0-8.3, S2 8.3-20.9, S3 orbit 20.9-36, S4 rem+librasi 36-55, S5 55-73.5 (sisi jauh, Luna3 GLB satelit, Chang'e4 rover+kawah GLB, jam pasir 21,5 jam, laser+cermin 3,8 cm), S6 73.5-79 + AudiraOutro 3 dtk code SAINS) dan moonAssets.ts (tekstur Bulan/bintang prosedural). GLB via staticFile models/polyfork/<sub>/<id>.glb. Docs naskah (SCRIPT/STORYBOARD/ART_DIRECTION/ASSET_MANIFEST) masih TEMPLATE, belum ditulis.",
+      "files": [
+        "audio/vo.txt",
+        "audio/vo.wav",
+        "audio/vo-words.json",
+        "project/src/episodes/moon/MoonFilm.tsx",
+        "project/src/episodes/moon/moonAssets.ts"
+      ],
+      "next": "1) Daftarkan MoonPreview (540x960@30) + MoonFinal (1080x1920@60) di project/src/Root.tsx (durasi MOON_SECONDS). 2) npm run typecheck, perbaiki error. 3) npm run stills ke out/ di detik 3,13,19.8,28,42,53,57,61,65,69,72,76 → cek visual. 4) cover topik style/cover-topic.png. 5) Tulis docs/SCRIPT.md (teks audio/vo.txt + tampilan angka), STORYBOARD.md (≥6 baris, kolom Audio), ART_DIRECTION.md (baris 'Style: SCALEFORGE'), ASSET_MANIFEST.md, SHOTLIST.md. 6) npm run sfx, contact sheet draft/contact-sheet.jpg, audit:visual, THEME_CHECK.md, juri buta record_score. 7) BERHENTI di gerbang tahap 9 (contact sheet, skor juri, durasi 82 dtk, G18c).",
+      "snapshot": {
+        "episode": "EP05_SISI_BULAN_YANG_SAMA",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP05",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP05_SISI_BULAN_YANG_SAMA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:29:00.199Z",
+      "doing": "Tahap 4 docs selesai; VO 84,10 dtk terkunci (project/public/audio/vo.wav + vo-words.json); 8 GLB disalin ke public/models/polyfork; kode film baru sebagian: src/episodes/moon/timeline.ts + bodies.tsx. Rencana lengkap adegan, HUD, dan langkah sisa ada di work/FILM_PLAN.md.",
+      "files": [
+        "work/FILM_PLAN.md",
+        "project/src/episodes/moon/timeline.ts",
+        "project/src/episodes/moon/bodies.tsx",
+        "project/public/audio/vo.wav",
+        "docs/SCRIPT.md"
+      ],
+      "next": "Baca work/FILM_PLAN.md. Tulis scenes.tsx, Hud.tsx, MoonFilm.tsx, daftar MoonPreview/MoonFinal di Root.tsx, docs/SHOTLIST.md, npm run sfx, cover, draft, THEME_CHECK, juri, berhenti di gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP05_SISI_BULAN_YANG_SAMA",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP05",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP05_SISI_BULAN_YANG_SAMA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:29:16.692Z",
+      "doing": "Pindah sesi (batas konteks). Kode film sebagian: timeline.ts + bodies.tsx. Rencana lengkap: work/FILM_PLAN.md.",
+      "files": [
+        "work/FILM_PLAN.md",
+        "project/src/episodes/moon/timeline.ts",
+        "project/src/episodes/moon/bodies.tsx"
+      ],
+      "next": "Baca work/FILM_PLAN.md lalu tulis scenes.tsx, Hud.tsx, MoonFilm.tsx, Root.tsx, SHOTLIST, sfx, cover, draft, juri, gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP05_SISI_BULAN_YANG_SAMA",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP05",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP05_SISI_BULAN_YANG_SAMA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:30:23.452Z",
+      "doing": "Pindah sesi (batas konteks s2). File sesi dobel dipindah ke work/_dup/. VO resmi project/public/audio/vo.wav 84,10 dtk. Kode film sebagian: timeline.ts + bodies.tsx.",
+      "files": [
+        "work/FILM_PLAN.md",
+        "project/src/episodes/moon/timeline.ts",
+        "project/src/episodes/moon/bodies.tsx"
+      ],
+      "next": "Baca work/FILM_PLAN.md lalu tulis scenes.tsx, Hud.tsx, MoonFilm.tsx, Root.tsx, SHOTLIST, sfx, cover, draft, juri, gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP05_SISI_BULAN_YANG_SAMA",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP05",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:07:19.180Z",
+      "doing": "s3: menulis scenes.tsx, Hud.tsx, MoonFilm.tsx (Root.tsx sudah mendaftarkan MoonPreview/MoonFinal)",
+      "files": [
+        "project/src/episodes/moon/scenes.tsx",
+        "project/src/episodes/moon/Hud.tsx",
+        "project/src/episodes/moon/MoonFilm.tsx"
+      ],
+      "next": "npm run typecheck → SHOTLIST → sfx → cover → draft → juri → gerbang 9",
+      "snapshot": {
+        "episode": "EP05_SISI_BULAN_YANG_SAMA",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP05",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:12:14.946Z",
+      "doing": "s3: kode film selesai + typecheck OK, SHOTLIST lint 0 red, sfx.wav −26 LUFS. Render cover (2.4s) + draft contact sheet",
+      "command": "npm run cover -- MoonPreview --episode=.. --at=2.4s ; npm run draft -- MoonPreview --frames=2.4s,8.5s,19s,30s,37.5s,44.5s,50s,54s,62.5s,67.8s,74.5s,81s --out=../draft",
+      "files": [
+        "style/cover-topic.png",
+        "draft/DRAFT_SHEET.jpg"
+      ],
+      "next": "isi draft/THEME_CHECK.md, skor self + juri buta, lalu gerbang 9",
+      "snapshot": {
+        "episode": "EP05_SISI_BULAN_YANG_SAMA",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP05",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:17:48.973Z",
+      "doing": "s3 selesai: kode film + SHOTLIST + sfx + cover + draf putaran 1 (PERLU POLES, belum diskor). Pindah sesi (batas konteks).",
+      "files": [
+        "work/POLISH_R1.md",
+        "draft/DRAFT_SHEET.jpg",
+        "project/src/episodes/moon/scenes.tsx",
+        "project/src/episodes/moon/Hud.tsx",
+        "project/src/episodes/moon/MoonFilm.tsx"
+      ],
+      "next": "Baca work/POLISH_R1.md, kerjakan 7 poles, render draf lagi, THEME_CHECK, skor self + juri, berhenti di gerbang 9.",
+      "snapshot": {
+        "episode": "EP05_SISI_BULAN_YANG_SAMA",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP05",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:38:35.926Z",
+      "doing": "s4: poles R1 #1-#5 selesai di kode (Karaoke baru di MoonFilm, Hud y, Ground tanpa crater GLB + kawah prosedural, kamera missions naik, astronot 1.25 mundur, label Malam). Render draf putaran 2.",
+      "command": "cd project && npm run draft -- MoonPreview --frames=2.4s,8.5s,19s,30s,37.5s,44.5s,50s,54s,62.5s,67.8s,74.5s,81s --out=../draft",
+      "files": [
+        "project/src/episodes/moon/MoonFilm.tsx",
+        "project/src/episodes/moon/Hud.tsx",
+        "project/src/episodes/moon/scenes.tsx"
+      ],
+      "next": "THEME_CHECK, self record_score, juri buta, gerbang 9",
+      "snapshot": {
+        "episode": "EP05_SISI_BULAN_YANG_SAMA",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP05",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:56:00.675Z",
+      "doing": "s4: draf putaran 2 sudah dijuri (3.17, PERLU POLES, sisa 1 putaran juri). G18c lolos 12.9 LU setelah SFX −29. Poles putaran 2 sedang dikerjakan.",
+      "files": [
+        "work/POLISH_R2.md",
+        "project/src/episodes/moon/scenes.tsx",
+        "project/src/episodes/moon/Hud.tsx",
+        "project/src/episodes/moon/bodies.tsx",
+        "draft/THEME_CHECK.md",
+        "project/sfx/cues/auto.py"
+      ],
+      "next": "Kerjakan work/POLISH_R2.md poin 1–6, render draf, THEME_CHECK, self + juri buta (putaran terakhir), gerbang 9",
+      "snapshot": {
+        "episode": "EP05_SISI_BULAN_YANG_SAMA",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP05",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:56:42.405Z",
+      "doing": "s4 selesai: poles R2 poin 1–6 (work/POLISH_R2.md) SUDAH diterapkan di kode, typecheck OK. Draf putaran 3 BELUM dirender.",
+      "command": "cd project && npm run draft -- MoonPreview --frames=2.4s,8.5s,19s,30s,37.5s,44.5s,50s,54s,62.5s,67.8s,74.5s,81s --out=../draft",
+      "files": [
+        "work/POLISH_R2.md",
+        "project/src/episodes/moon/scenes.tsx",
+        "project/src/episodes/moon/Hud.tsx",
+        "project/src/episodes/moon/bodies.tsx",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Render draf, cek sheet, perbarui THEME_CHECK, self + juri buta (putaran juri ke-2 = terakhir), append_lesson failed, gerbang 9 (G18c 12.9 LU, durasi 87,5 dtk)",
+      "snapshot": {
+        "episode": "EP05_SISI_BULAN_YANG_SAMA",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP05",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:31:35.460Z",
+      "doing": "s5: render draf putaran 3 (contact sheet)",
+      "command": "cd project && npm run draft -- MoonPreview --frames=2.4s,8.5s,19s,30s,37.5s,44.5s,50s,54s,62.5s,67.8s,74.5s,81s --out=../draft",
+      "next": "THEME_CHECK, self + juri buta (putaran juri ke-2 = terakhir), gerbang 9",
+      "snapshot": {
+        "episode": "EP05_SISI_BULAN_YANG_SAMA",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP05",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:34:48.547Z",
+      "doing": "s5: draf R3 dirender (diversity 43.1, camera 5/5), THEME_CHECK 12/12 ya, self 3.67 tercatat; juri buta putaran 2 (terakhir) berjalan",
+      "next": "record_score jury; juri ≥3.5 → gerbang 9 (sheet, skor, 87,5 dtk, G18c 12.9 LU); <3.5 → G21 ganti style",
+      "snapshot": {
+        "episode": "EP05_SISI_BULAN_YANG_SAMA",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP05",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:35:29.247Z",
+      "doing": "s5: gerbang 9 — juri R2 3.83 LOLOS, sheet dikirim, menunggu acc pengguna untuk render final",
+      "next": "Setelah acc: update final approved true, lalu npm run render:final -- ... --sfx=public/audio/sfx.wav --vo=public/audio/vo.wav (setelan PC rule 07 §4 p9), QA, tahap 10",
+      "snapshot": {
+        "episode": "EP05_SISI_BULAN_YANG_SAMA",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP05",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:47:43.492Z",
+      "doing": "s5: render final MoonFinal (acc pengguna sudah) — log work/render-final.log",
+      "command": "cd project && npm run render:final -- --comp=MoonFinal --out=../FINAL_EP05_SISI_BULAN.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Kenapa Kita Selalu Melihat Sisi Bulan yang Sama\" --slug=sisi-bulan-yang-sama --ep=EP05 --log=error",
+      "next": "QA: ffprobe metadata, LUFS -14 TP<-1, frame cek, verify_signature, record_score final juri, lalu tahap 10",
+      "snapshot": {
+        "episode": "EP05_SISI_BULAN_YANG_SAMA",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP05",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T10:06:26.614Z",
+      "doing": "s5: FINAL_EP05_SISI_BULAN.mp4 selesai (87,5 dtk, 1080x1920@60, -13.7 LUFS TP -1.8, metadata + Ed25519/C2PA VALID, kanal @AudiraSains setelah fix project/SERIES.json). Juri final 3.33 (L3 M3 D3 C3 Mo5 R3), draf 3.83. Menunggu keputusan pengguna: terima final → tahap 10, atau poles tanah Bulan + render ulang.",
+      "files": [
+        "FINAL_EP05_SISI_BULAN.mp4",
+        "work/qa_final/final_sheet.jpg",
+        "project/SERIES.json"
+      ],
+      "next": "Bila terima: update final done, tahap 10 (SOCIAL_CAPTIONS validator, NOTES, jadwal review). Bila poles: tekstur regolith + kawah beragam + hapus fragmen AKAN F1, draf → juri → render ulang.",
+      "snapshot": {
+        "episode": "EP05_SISI_BULAN_YANG_SAMA",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "SCALEFORGE",
+        "memoryEpisode": "sains-anak-EP05",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    }
+  ],
+  "session": 5,
+  "handover": {
+    "at": "2026-11-24T10:06:26.614Z",
+    "doing": "s5: FINAL_EP05_SISI_BULAN.mp4 selesai (87,5 dtk, 1080x1920@60, -13.7 LUFS TP -1.8, metadata + Ed25519/C2PA VALID, kanal @AudiraSains setelah fix project/SERIES.json). Juri final 3.33 (L3 M3 D3 C3 Mo5 R3), draf 3.83. Menunggu keputusan pengguna: terima final → tahap 10, atau poles tanah Bulan + render ulang.",
+    "files": [
+      "FINAL_EP05_SISI_BULAN.mp4",
+      "work/qa_final/final_sheet.jpg",
+      "project/SERIES.json"
+    ],
+    "next": "Bila terima: update final done, tahap 10 (SOCIAL_CAPTIONS validator, NOTES, jadwal review). Bila poles: tekstur regolith + kawah beragam + hapus fragmen AKAN F1, draf → juri → render ulang.",
+    "snapshot": {
+      "episode": "EP05_SISI_BULAN_YANG_SAMA",
+      "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+      "style": "SCALEFORGE",
+      "memoryEpisode": "sains-anak-EP05",
+      "currentStage": "final",
+      "gates": {
+        "final": {
+          "approved": true,
+          "status": "in_progress"
+        }
+      },
+      "voPath": null,
+      "draftScores": [],
+      "finals": [],
+      "draftRounds": 0
+    }
+  },
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP05 Sisi Bulan · s2",
+      "at": "2026-11-23T15:16:53.354Z"
+    },
+    {
+      "no": 3,
+      "title": "EP05 Sisi Bulan · s3",
+      "at": "2026-11-23T18:26:22.369Z"
+    },
+    {
+      "no": 4,
+      "title": "EP05 Sisi Bulan · s4",
+      "at": "2026-11-23T18:29:16.692Z"
+    },
+    {
+      "no": 3,
+      "title": "EP05 Sisi Bulan · s3",
+      "at": "2026-11-23T18:30:23.452Z"
+    },
+    {
+      "no": 4,
+      "title": "EP05 Sisi Bulan · s4",
+      "at": "2026-11-24T07:17:48.973Z"
+    },
+    {
+      "no": 5,
+      "title": "EP05 Sisi Bulan · s5",
+      "at": "2026-11-24T07:56:42.405Z"
+    }
+  ]
+}

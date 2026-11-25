@@ -1,0 +1,157 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#0B0F14}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.05;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.5) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.5) 42%,rgba(0,0,0,0.5) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:IBM Plex Mono,monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#E8EEF2;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#sig{position:absolute;z-index:19;opacity:0;font-family:Outfit,sans-serif;color:#fff;line-height:1.05;pointer-events:none;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+#sig b{display:block;font-weight:700;font-size:28px;letter-spacing:.14em}
+#sig i{display:block;font-style:normal;font-weight:500;font-size:17px;letter-spacing:.04em}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+
+#capfloor{background:linear-gradient(180deg,rgba(11,15,20,0),rgba(11,15,20,.5) 45%,rgba(11,15,20,.5) 70%,rgba(11,15,20,0))}
+#chip{background:rgba(8,14,19,.78);padding:5px 12px 4px;border:1px solid rgba(95,211,224,.55);font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:18px;letter-spacing:.05em;opacity:1}
+#hud{position:absolute;right:56px;top:188px;z-index:11;display:flex;align-items:center;gap:10px;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:17px;letter-spacing:.08em;color:#5FD3E0;opacity:.85}
+#hud i{display:block;width:10px;height:10px;border-radius:50%;background:#5FD3E0;box-shadow:0 0 8px #5FD3E0}
+#hud b{color:#E8EEF2;font-weight:600}
+#sline{position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,rgba(95,211,224,0),rgba(95,211,224,.55),rgba(95,211,224,0));opacity:.12;z-index:6;pointer-events:none}
+.p{padding:0}
+.card{position:relative;display:inline-block;max-width:100%;box-sizing:border-box;background:rgba(8,14,19,.9);padding:24px 32px 26px;border:1px solid rgba(95,211,224,.45);transform-origin:50% 50%;
+ box-shadow:0 22px 46px rgba(0,0,0,.5);
+ background-image:linear-gradient(#5FD3E0,#5FD3E0),linear-gradient(#5FD3E0,#5FD3E0),linear-gradient(#5FD3E0,#5FD3E0),linear-gradient(#5FD3E0,#5FD3E0),linear-gradient(#5FD3E0,#5FD3E0),linear-gradient(#5FD3E0,#5FD3E0),linear-gradient(#5FD3E0,#5FD3E0),linear-gradient(#5FD3E0,#5FD3E0);
+ background-size:26px 3px,3px 26px,26px 3px,3px 26px,26px 3px,3px 26px,26px 3px,3px 26px;
+ background-position:0 0,0 0,100% 0,100% 0,0 100%,0 100%,100% 100%,100% 100%;background-repeat:no-repeat;background-color:rgba(8,14,19,.9)}
+.k{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:24px;letter-spacing:.12em;color:#5FD3E0;margin-bottom:8px}
+.k.a{color:#F2A93B}.k.r{color:#E07470}
+.h{font-family:Manrope,sans-serif;font-weight:800;font-size:76px;line-height:1.02;color:#E8EEF2;letter-spacing:-.01em}
+.h.m{font-size:48px;line-height:1.15;letter-spacing:0}
+.c{text-align:center}
+.sub{font-family:Manrope,sans-serif;font-weight:600;font-size:36px;line-height:1.24;color:#BFD3DA;margin-top:10px}
+.sub.b{margin-top:0}
+.ar{font-family:Amiri,serif;direction:rtl;text-align:right;font-size:56px;line-height:1.72;color:#BDEFF5;text-shadow:0 0 14px rgba(95,211,224,.3)}
+.ar.c{text-align:center}
+.tr{font-family:Manrope,sans-serif;font-weight:600;font-style:italic;font-size:31px;line-height:1.3;color:#C9D8DE;margin-top:2px}
+.q{font-family:Manrope,sans-serif;font-weight:700;font-size:38px;line-height:1.2;color:#E8EEF2;margin-top:8px;padding-left:18px;border-left:3px solid rgba(224,116,112,.7)}
+.q.r{color:#F08A85}.q.a{color:#FFD08A;border-left-color:#F2A93B;font-size:40px}
+.rf{display:inline-block;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:20px;letter-spacing:.04em;color:#0B0F14;background:#5FD3E0;padding:4px 10px 3px;white-space:nowrap}
+.ln{font-family:Manrope,sans-serif;font-weight:700;font-size:34px;line-height:1.22;color:#D7EEF2;margin-top:14px;padding-top:12px;border-top:1px solid rgba(95,211,224,.4)}
+.ln.a{color:#FFD08A}
+.ln .rf{font-size:17px;vertical-align:middle}
+.steps{display:flex;gap:14px;flex-wrap:wrap;margin-top:16px}
+.steps span{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:28px;letter-spacing:.08em;color:#0B0F14;background:#5FD3E0;padding:7px 14px 6px}
+.steps span.r{background:#C0504D;color:#fff}
+.src{margin-top:14px;font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:21px;letter-spacing:.03em;color:rgba(191,211,218,.85)}
+.blk{margin-top:8px;padding-top:6px;border-top:1px solid rgba(255,227,176,.4)}
+.blk .ar{color:#FFE3B0;text-shadow:0 0 16px rgba(255,200,120,.35)}
+.ask{display:inline-block;margin-top:16px;font-family:Manrope,sans-serif;font-weight:800;font-size:37px;line-height:1.18;color:#0B0F14;background:#F2A93B;padding:10px 18px}
+</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="88.45" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI &middot; TANPA MENGGAMBARKAN SOSOK NABI</div>
+<div class="p" data-first="1" data-in="@0" data-out="s2"><div class="card"><div class="k">KISAH DALAM AL-QUR'AN &middot; 34</div>
+    <div class="h">LELAKI DARI UJUNG KOTA</div>
+    <div class="sub">Bukan nabi, bukan pula utusan.</div>
+    <div class="ln a" data-at="s1:Al-Qur'an" data-fx="rise">Al-Qur'an mengabadikan kata-katanya.</div></div></div>
+<div class="p" data-in="s2" data-out="s2:Sebuah"><div class="card"><div class="k">SURAH YASIN <span class="rf">QS 36:13</span></div>
+    <div class="ar">وَٱضْرِبْ لَهُم مَّثَلًا أَصْحَـٰبَ ٱلْقَرْيَةِ إِذْ جَآءَهَا ٱلْمُرْسَلُونَ</div>
+    <div class="tr">&ldquo;Buatlah suatu perumpamaan bagi mereka, yaitu penduduk suatu negeri, ketika utusan-utusan datang kepada mereka.&rdquo;</div></div></div>
+<div class="p" data-in="s2:Sebuah" data-out="s3"><div class="card"><div class="k">SEBUAH NEGERI <span class="rf">QS 36:14</span></div>
+    <div class="h m">Dua utusan datang, lalu yang ketiga.</div>
+    <div class="steps"><span data-at="s2:mendustakan" data-fx="rise">DIDUSTAKAN</span><span class="r" data-at="s2:menolak" data-fx="rise">TETAP MENOLAK</span></div></div></div>
+<div class="p" data-in="s3" data-out="s4"><div class="card"><div class="k r">KATA PENDUDUK <span class="rf">QS 36:15&ndash;18</span></div>
+    <div class="q">&ldquo;Kalian hanyalah manusia seperti kami.&rdquo;</div>
+    <div class="q" data-at="s3:Kami" data-fx="rise">&ldquo;Kami malah sial karena kalian.&rdquo;</div>
+    <div class="q r" data-at="s3:Jika" data-fx="rise">&ldquo;Jika tidak berhenti, kami rajam kalian.&rdquo;</div></div></div>
+<div class="p" data-in="s4" data-out="s4:Ia"><div class="card"><div class="k a">DARI UJUNG KOTA <span class="rf">QS 36:20</span></div>
+    <div class="ar">وَجَآءَ مِنْ أَقْصَا ٱلْمَدِينَةِ رَجُلٌ يَسْعَىٰ</div>
+    <div class="tr">&ldquo;Dan datanglah dari ujung kota, seorang laki-laki dengan bergegas.&rdquo;</div></div></div>
+<div class="p" data-in="s4:Ia" data-out="s5"><div class="card"><div class="k a">IA BERKATA <span class="rf">QS 36:20&ndash;21</span></div>
+    <div class="ar">يَـٰقَوْمِ ٱتَّبِعُوا۟ ٱلْمُرْسَلِينَ</div>
+    <div class="tr">&ldquo;Wahai kaumku! Ikutilah utusan-utusan itu.&rdquo;</div>
+    <div class="ln a" data-at="s4:Ikutilah" data-fx="rise">Ikutilah orang yang tidak meminta imbalan darimu.</div></div></div>
+<div class="p" data-in="s5" data-out="s5:Sungguh"><div class="card"><div class="k a">IA BERKATA <span class="rf">QS 36:22</span></div>
+    <div class="ar">وَمَا لِىَ لَآ أَعْبُدُ ٱلَّذِى فَطَرَنِى وَإِلَيْهِ تُرْجَعُونَ</div>
+    <div class="tr">&ldquo;Mengapa aku tidak menyembah Dia yang telah menciptakanku?&rdquo;</div>
+    <div class="ln" data-at="s5:Mengapa" data-fx="rise">&ldquo;Mengapa aku menyembah tuhan lain, yang tak bisa menolongku sedikit pun?&rdquo; <span class="rf">QS 36:23</span></div></div></div>
+<div class="p" data-in="s5:Sungguh" data-out="s6"><div class="card"><div class="k a">PENGAKUANNYA <span class="rf">QS 36:25</span></div>
+    <div class="ar c">إِنِّىٓ ءَامَنتُ بِرَبِّكُمْ فَٱسْمَعُونِ</div>
+    <div class="tr c">&ldquo;Sungguh, aku telah beriman kepada Tuhanmu, maka dengarkanlah aku.&rdquo;</div></div></div>
+<div class="p" data-in="s6" data-out="s6:Qatadah"><div class="card"><div class="k">MENURUT RIWAYAT</div>
+    <div class="h m">Kaumnya membunuhnya saat itu juga.</div>
+    <div class="src">Tafsir Ibnu Katsir, QS 36:20 &middot; riwayat Ibnu Ishaq</div></div></div>
+<div class="p" data-in="s6:Qatadah" data-out="s6:Al-Qur'an"><div class="card"><div class="k a">DOANYA &middot; RIWAYAT QATADAH</div>
+    <div class="q a">&ldquo;Ya Allah, berilah petunjuk kepada kaumku, karena mereka tidak mengetahui.&rdquo;</div>
+    <div class="src">Tafsir Ibnu Katsir, QS 36:20</div></div></div>
+<div class="p" data-in="s6:Al-Qur'an" data-out="s7"><div class="card"><div class="k">AYAT BERIKUTNYA <span class="rf">QS 36:26</span></div>
+    <div class="sub b">Al-Qur'an tidak merinci kematiannya.</div>
+    <div class="blk" data-at="s6:masuklah" data-fx="rise"><div class="ar c">قِيلَ ٱدْخُلِ ٱلْجَنَّةَ</div><div class="tr c">&ldquo;Masuklah ke surga.&rdquo;</div></div></div></div>
+<div class="p" data-in="s7" data-out="s8"><div class="card"><div class="k a">KALIMAT PERTAMANYA <span class="rf">QS 36:26&ndash;27</span></div>
+    <div class="ar c" data-at="s7:alangkah" data-fx="rise">يَـٰلَيْتَ قَوْمِى يَعْلَمُونَ</div>
+    <div class="tr c">&ldquo;Alangkah baiknya sekiranya kaumku mengetahui, apa yang membuat Tuhanku mengampuniku.&rdquo;</div></div></div>
+<div class="p" data-in="s8" data-out="@END"><div class="card"><div class="k a">RENUNGAN</div>
+    <div class="h m">Bahkan setelah disakiti, yang ia pikirkan tetap kaumnya.</div>
+    <div class="ask" data-at="s8:Siapa" data-fx="rise">Siapa yang paling ingin kamu ajak pada kebaikan?</div></div></div>
+<div id="hud"><i></i><span>PINDAI LIDAR</span><b id="sec">SEKTOR UTARA</b></div>
+<div id="sline"></div>
+<div id="sig"><b>AUDIRA</b><i>audira.my.id</i></div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">KISAH DALAM AL-QUR&#39;AN &middot; EP 34</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":7.125,"s2":7.285,"s2e":18.954,"s3":19.114,"s3e":27.479,"s4":27.639,"s4e":38.466,"s5":38.626,"s5e":50.592,"s6":50.752,"s6e":66.239,"s7":66.399,"s7e":77.004,"s8":77.164,"s8e":85.454,"end":85.454,"dur":88.45,"outro":85.704},AT={"s1:lelaki":3.17,"s1:bergegas":3.65,"s2:dua":13.696,"s2:mendustakan":15.298,"s2:ketiga":17.443,"s2:menolak":18.552,"s3:penduduk":19.416,"s3:sial":23.794,"s3:rajam":26.751,"s4:datanglah":28.497,"s4:wahai":33.197,"s4:ikutilah":34.356,"s4:imbalan":37.63,"s5:menciptakanku":41.563,"s5:tuhan":43.914,"s5:menolongku":45.23,"s5:beriman":47.753,"s5:dengarkanlah":49.771,"s6:membunuhnya":53.416,"s6:berdoa":57.42,"s6:mengetahui":61.649,"s6:kematiannya":63.329,"s6:masuklah":65.311,"s7:kaumku":72.672,"s8:kaumnya":80.213,"s8:Kisah":83.352,"s1:Al-Qur'an":5.261,"s2:Sebuah":12.225,"s3:Kami":23.205,"s3:Jika":25.095,"s4:Ia":32.147,"s4:Ikutilah":36.005,"s5:Sungguh":46.436,"s5:Mengapa":42.599,"s6:Qatadah":54.945,"s6:Al-Qur'an":62.401,"s7:alangkah":71.449,"s8:Siapa":80.965},DUR=88.45,OUT=85.704;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ rise:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:''},t-.001);tl.fromTo(e,{opacity:0,y:10},{opacity:1,y:0,duration:.26,ease:'power3.out'},t);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{const c=p.querySelector('.card');tl.set(c,{scaleX:.5,scaleY:.02,filter:'brightness(2.4)'},a-.001);tl.set(p,{opacity:1},a);tl.to(c,{scaleX:1,duration:.1,ease:'power2.out'},a);tl.to(c,{scaleY:1,filter:'brightness(1)',duration:.16,ease:'power3.out'},a+.09);},POUT=(tl,p,b)=>{const c=p.querySelector('.card');tl.to(c,{scaleY:.02,filter:'brightness(2.4)',duration:.13,ease:'power2.in'},b-.3);tl.to(c,{scaleX:0,duration:.1,ease:'power2.in'},b-.17);tl.set(p,{opacity:0},b-.06);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+// AUDIRA moving signature (port of AudiraSignature.tsx): 32% opacity, 4 safe-zone anchors, jumps every 18 s in a seeded order, hidden at the outro.
+(function(){const A=[[1015,221,'r'],[65,1190,'l'],[1015,864,'r'],[65,221,'l']];let h=2166136261;const sd="EP34_LELAKI_UJUNG_KOTA";for(let i=0;i<sd.length;i++)h=Math.imul(h^sd.charCodeAt(i),16777619)>>>0;const ord=[0,1,2,3];for(let i=3;i>0;i--){h=Math.imul(h^(h>>>15),2246822507)>>>0;const j=h%(i+1);[ord[i],ord[j]]=[ord[j],ord[i]];}
+const s=q('#sig');const C=18,OP=.32;for(let c=0;c*C<OUT;c++){const [x,y,al]=A[ord[c%4]];const t0=c*C,t1=Math.min((c+1)*C,OUT-.2);tl.set(s,{left:al==='l'?x:'auto',right:al==='r'?1080-x:'auto',top:y,textAlign:al==='l'?'left':'right'},t0);tl.fromTo(s,{opacity:0},{opacity:OP,duration:.5,ease:'none'},t0);tl.to(s,{opacity:0,duration:.4,ease:'none'},Math.max(t0+.6,t1-.4));}})();
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(()=>{const S=[["s1","SEKTOR UTARA"],["s2","GERBANG SELATAN"],["s3","ALUN-ALUN"],["s4","JALUR UTARA"],["s5","ALUN-ALUN"],["s6","ALUN-ALUN"],["s6:masuklah","GERBANG CAHAYA"],["s7","GERBANG CAHAYA"],["s8","SELURUH KOTA"]].map(([k,v])=>[AT[k]??K[k],v]);const e=q('#sec'),d=q('#hud i'),sl=q('#sline');return (t)=>{let v=S[0][1];for(const [a,s] of S)if(t>=a-.2)v=s;if(e.textContent!==v)e.textContent=v;d.style.opacity=(Math.floor(t*2)%2)?'.35':'1';const y=((t*260)%2300)-100;sl.style.transform='translateY('+y+'px)';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

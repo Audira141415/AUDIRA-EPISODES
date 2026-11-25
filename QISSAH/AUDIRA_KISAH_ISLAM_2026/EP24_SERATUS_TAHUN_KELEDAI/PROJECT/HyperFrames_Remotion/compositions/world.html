@@ -1,0 +1,223 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#2b2c33}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.05;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.4) 42%,rgba(0,0,0,0.4) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Work Sans,sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#F4ECDA;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#sig{position:absolute;z-index:19;opacity:0;font-family:Outfit,sans-serif;color:#fff;line-height:1.05;pointer-events:none;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+#sig b{display:block;font-weight:700;font-size:28px;letter-spacing:.14em}
+#sig i{display:block;font-style:normal;font-weight:500;font-size:17px;letter-spacing:.04em}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+
+#capfloor{background:linear-gradient(180deg,rgba(15,19,27,0),rgba(15,19,27,.4) 45%,rgba(15,19,27,.4) 70%,rgba(15,19,27,0))}
+#chip{background:rgba(15,19,27,.72);padding:5px 12px 4px;border:1px solid rgba(210,170,85,.65);font-size:19px;letter-spacing:.07em}
+.p{--a:360;overflow:hidden;padding:4px}
+.hand{position:absolute;left:50%;top:50%;width:5px;height:620px;margin:-620px 0 0 -2.5px;transform-origin:50% 100%;z-index:3;
+ background:linear-gradient(0deg,#F0D58E,rgba(240,213,142,.15));box-shadow:0 0 14px rgba(240,213,142,.8);opacity:0;pointer-events:none}
+.card{position:relative;background:rgba(15,19,27,.9);padding:34px 34px 28px;border:1.5px solid #D2AA55;box-shadow:inset 0 0 0 6px rgba(15,19,27,0),inset 0 0 0 7.5px rgba(210,170,85,.35),0 22px 46px rgba(0,0,0,.45);
+ -webkit-mask-image:conic-gradient(from 0deg at 50% 50%,#000 calc(var(--a) * 1deg),transparent calc(var(--a) * 1deg));mask-image:conic-gradient(from 0deg at 50% 50%,#000 calc(var(--a) * 1deg),transparent calc(var(--a) * 1deg))}
+.card:before{content:"";position:absolute;left:12px;right:12px;top:8px;height:14px;
+ background:repeating-linear-gradient(90deg,#D2AA55 0 2px,transparent 2px 12px),repeating-linear-gradient(90deg,#D2AA55 0 3px,transparent 3px 60px);background-size:100% 8px,100% 14px;background-repeat:no-repeat;opacity:.75}
+.k{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-family:"Work Sans",sans-serif;font-weight:600;font-size:24px;letter-spacing:.18em;color:#D2AA55;margin-bottom:10px}
+.h{font-family:Cinzel,serif;font-weight:700;font-size:76px;line-height:1.04;color:#F4ECDA;letter-spacing:.03em}
+.h.m{font-size:50px;line-height:1.14;letter-spacing:.01em}
+.c{text-align:center}
+.sub{font-family:"Work Sans",sans-serif;font-weight:500;font-size:36px;line-height:1.22;color:#E6D9BC;margin-top:12px}
+.sub.b{margin-top:0;font-style:italic}
+.yr{font-family:"Work Sans",sans-serif;font-weight:600;font-size:38px;color:#F4ECDA;margin-top:10px}
+.yr b{font-family:Cinzel,serif;font-weight:700;font-size:56px;color:#F0D58E;display:inline-block;min-width:1.9em;text-align:center}
+.qt{font-family:Cinzel,serif;font-weight:600;font-size:46px;line-height:1.18;color:#F4ECDA;margin-top:8px}
+.ans{display:inline-block;margin-top:16px;font-family:"Work Sans",sans-serif;font-weight:700;font-size:40px;color:#17120A;background:#D2AA55;padding:8px 18px}
+.tr{font-family:"Work Sans",sans-serif;font-weight:500;font-style:italic;font-size:31px;line-height:1.3;color:#E6D9BC;margin-top:4px}
+.ar{font-family:Amiri,serif;direction:rtl;text-align:right;font-size:60px;line-height:1.7;color:#F0D58E}
+.ar.c{text-align:center}
+.rf{display:inline-block;font-family:"Work Sans",sans-serif;font-weight:700;font-size:22px;letter-spacing:.06em;color:#17120A;background:#D2AA55;padding:4px 12px 3px;white-space:nowrap}
+.ln{font-family:"Work Sans",sans-serif;font-weight:700;font-size:38px;color:#F4ECDA;margin-top:14px;padding-top:12px;border-top:1px solid rgba(210,170,85,.45)}
+.big{display:flex;align-items:baseline;gap:16px}
+.big b{font-family:Cinzel,serif;font-weight:700;font-size:150px;line-height:1;color:#F0D58E;min-width:1.95em}
+.big span{font-family:Cinzel,serif;font-weight:700;font-size:58px;letter-spacing:.12em;color:#F4ECDA}
+.split{display:flex;gap:16px;margin-top:8px}
+.half{flex:1;display:flex;flex-direction:column;align-items:center;border:1px solid rgba(210,170,85,.5);padding:12px 8px 14px;background:rgba(210,170,85,.06)}
+.half.on{background:rgba(210,170,85,.16);border-color:#D2AA55}
+.half .ic{width:150px;height:88px}
+.half i{font-style:normal;font-family:"Work Sans",sans-serif;font-weight:600;font-size:23px;letter-spacing:.16em;color:#D2AA55}
+.half b{font-family:Cinzel,serif;font-weight:700;font-size:72px;line-height:1.1;color:#F4ECDA}
+.half.on b{color:#F0D58E;font-size:96px;line-height:1}
+.half span{font-family:"Work Sans",sans-serif;font-weight:600;font-size:30px;color:#E6D9BC}
+.steps{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px}
+.steps span{font-family:"Work Sans",sans-serif;font-weight:700;font-size:30px;letter-spacing:.06em;color:#17120A;background:#D2AA55;padding:7px 14px 6px}
+.note{margin-top:14px;padding-top:12px;border-top:1px solid rgba(210,170,85,.45);font-family:"Work Sans",sans-serif;font-weight:500;font-size:34px;line-height:1.25;color:#E6D9BC}
+.note i{display:inline-block;font-style:normal;font-weight:700;font-size:21px;letter-spacing:.14em;color:#17120A;background:#D2AA55;padding:3px 10px 2px;margin-right:12px;vertical-align:5px}
+.note b{color:#F0D58E;font-weight:700}
+.ask{display:inline-block;margin-top:16px;font-family:"Work Sans",sans-serif;font-weight:700;font-size:38px;line-height:1.18;color:#17120A;background:#D2AA55;padding:10px 18px}
+#outro{--a:0;-webkit-mask-image:conic-gradient(from 0deg at 50% 50%,#000 calc(var(--a) * 1deg),transparent calc(var(--a) * 1deg));mask-image:conic-gradient(from 0deg at 50% 50%,#000 calc(var(--a) * 1deg),transparent calc(var(--a) * 1deg))}
+</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="77.67" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI &middot; TANPA MENGGAMBARKAN SOSOK NABI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="hand"></div><div class="card">
+    <div class="k">KISAH DALAM AL-QUR'AN &middot; 24</div>
+    <div class="h">SERATUS TAHUN</div>
+    <div class="sub" data-at="s1:mengira" data-fx="rise">Ia mengira baru sehari.</div>
+    <div class="yr" data-at="s1:seratus" data-fx="rise">Padahal <b class="ct nb" data-from="0" data-to="100" data-a="s1:seratus" data-d="1.6">0</b> tahun berlalu</div>
+  </div>
+</div>
+<div class="p" data-in="s2" data-out="s2:Seorang">
+  <div class="hand"></div><div class="card">
+    <div class="k">SURAH AL-BAQARAH <span class="rf">QS 2:259</span></div>
+    <div class="h">AYAT 259</div>
+    <div class="sub">Seorang laki-laki dan negeri yang runtuh</div>
+  </div>
+</div>
+<div class="p" data-in="s2:Seorang" data-out="s3">
+  <div class="hand"></div><div class="card">
+    <div class="k">NEGERI YANG RUNTUH <span class="rf">QS AL-BAQARAH 2:259</span></div>
+    <div class="ar">وَهِىَ خَاوِيَةٌ عَلَىٰ عُرُوشِهَا</div>
+    <div class="tr">&ldquo;(bangunan-bangunannya) telah runtuh hingga menutupi (puing-puing) atap-atapnya&rdquo;</div>
+    <div class="ln" data-at="s2:penghuni" data-fx="rise">Tak ada satu penghuni pun</div>
+  </div>
+</div>
+<div class="p" data-in="s3" data-out="s3:Lalu">
+  <div class="hand"></div><div class="card">
+    <div class="k">IA BERGUMAM <span class="rf">QS 2:259</span></div>
+    <div class="sub b">Bukan karena ragu, tapi ingin melihat:</div>
+    <div class="qt" data-at="s3:bagaimana" data-fx="rise">&ldquo;Bagaimana Allah menghidupkan kembali negeri ini setelah hancur?&rdquo;</div>
+  </div>
+</div>
+<div class="p" data-in="s3:Lalu" data-out="s4">
+  <div class="hand"></div><div class="card row">
+    <div class="col">
+      <div class="k">DIMATIKAN <span class="rf">QS 2:259</span></div>
+      <div class="big"><b class="ct nb" data-from="0" data-to="100" data-a="s3:mematikannya-0.2" data-d="3.4">0</b><span>TAHUN</span></div>
+      <div class="ln" data-at="s3:membangkitkannya" data-fx="rise">lalu dibangkitkan kembali</div>
+    </div>
+  </div>
+</div>
+<div class="p" data-in="s4" data-out="s4:Tidak">
+  <div class="hand"></div><div class="card">
+    <div class="k">DITANYAKAN KEPADANYA <span class="rf">QS 2:259</span></div>
+    <div class="qt">&ldquo;Berapa lama engkau tinggal di sini?&rdquo;</div>
+    <div class="ans" data-at="s4:sehari" data-fx="rise">&ldquo;Sehari, atau setengah hari.&rdquo;</div>
+  </div>
+</div>
+<div class="p" data-in="s4:Tidak" data-out="s5">
+  <div class="hand"></div><div class="card">
+    <div class="k">TIDAK! <span class="rf">QS 2:259</span></div>
+    <div class="split">
+      <div class="half"><svg class="ic" viewBox="0 0 120 70"><path d="M10 62H110" stroke="#D2AA55" stroke-width="3"/><path d="M18 62A42 42 0 0 1 102 62" fill="none" stroke="#D2AA55" stroke-width="3" stroke-dasharray="6 6"/><circle cx="60" cy="20" r="11" fill="#F0D58E"/></svg><i>MENURUTNYA</i><b>SEHARI</b><span>atau setengah hari</span></div>
+      <div class="half on"><svg class="ic" viewBox="0 0 120 70"><circle cx="60" cy="36" r="30" fill="none" stroke="#D2AA55" stroke-width="3"/><path d="M60.0 10.0L60.0 6.0" stroke="#D2AA55" stroke-width="2"/><path d="M68.0 11.3L69.3 7.5" stroke="#D2AA55" stroke-width="2"/><path d="M75.3 15.0L77.6 11.7" stroke="#D2AA55" stroke-width="2"/><path d="M81.0 20.7L84.3 18.4" stroke="#D2AA55" stroke-width="2"/><path d="M84.7 28.0L88.5 26.7" stroke="#D2AA55" stroke-width="2"/><path d="M86.0 36.0L90.0 36.0" stroke="#D2AA55" stroke-width="2"/><path d="M84.7 44.0L88.5 45.3" stroke="#D2AA55" stroke-width="2"/><path d="M81.0 51.3L84.3 53.6" stroke="#D2AA55" stroke-width="2"/><path d="M75.3 57.0L77.6 60.3" stroke="#D2AA55" stroke-width="2"/><path d="M68.0 60.7L69.3 64.5" stroke="#D2AA55" stroke-width="2"/><path d="M60.0 62.0L60.0 66.0" stroke="#D2AA55" stroke-width="2"/><path d="M52.0 60.7L50.7 64.5" stroke="#D2AA55" stroke-width="2"/><path d="M44.7 57.0L42.4 60.3" stroke="#D2AA55" stroke-width="2"/><path d="M39.0 51.3L35.7 53.6" stroke="#D2AA55" stroke-width="2"/><path d="M35.3 44.0L31.5 45.3" stroke="#D2AA55" stroke-width="2"/><path d="M34.0 36.0L30.0 36.0" stroke="#D2AA55" stroke-width="2"/><path d="M35.3 28.0L31.5 26.7" stroke="#D2AA55" stroke-width="2"/><path d="M39.0 20.7L35.7 18.4" stroke="#D2AA55" stroke-width="2"/><path d="M44.7 15.0L42.4 11.7" stroke="#D2AA55" stroke-width="2"/><path d="M52.0 11.3L50.7 7.5" stroke="#D2AA55" stroke-width="2"/><path d="M60 36L60 12" stroke="#F0D58E" stroke-width="4" stroke-linecap="round"/><circle cx="60" cy="36" r="4" fill="#F0D58E"/></svg><i>SEBENARNYA</i><b data-at="s4:Tidak+0.3" data-fx="pop">100</b><span>TAHUN</span></div>
+    </div>
+  </div>
+</div>
+<div class="p" data-in="s5" data-out="s5:Tapi">
+  <div class="hand"></div><div class="card">
+    <div class="k">LIHATLAH <span class="rf">QS 2:259</span></div>
+    <div class="h m">Makanan dan minumanmu belum berubah</div>
+  </div>
+</div>
+<div class="p" data-in="s5:Tapi" data-out="s6">
+  <div class="hand"></div><div class="card">
+    <div class="k">TAPI LIHATLAH <span class="rf">QS 2:259</span></div>
+    <div class="h m">Keledaimu sudah menjadi tulang belulang</div>
+  </div>
+</div>
+<div class="p" data-in="s6" data-out="s6:Agar">
+  <div class="hand"></div><div class="card">
+    <div class="k">DI DEPAN MATANYA <span class="rf">QS 2:259</span></div>
+    <div class="ar">وَٱنظُرْ إِلَى ٱلْعِظَامِ كَيْفَ نُنشِزُهَا ثُمَّ نَكْسُوهَا لَحْمًا</div>
+    <div class="tr">&ldquo;Lihatlah tulang belulang (keledai itu), bagaimana Kami menyusunnya kembali, kemudian Kami membalutnya dengan daging.&rdquo;</div>
+    <div class="steps"><span data-at="s6:disusun" data-fx="rise">1 &middot; DISUSUN KEMBALI</span><span data-at="s6:dibalut" data-fx="rise">2 &middot; DIBALUT DAGING</span></div>
+  </div>
+</div>
+<div class="p" data-in="s6:Agar" data-out="s7">
+  <div class="hand"></div><div class="card">
+    <div class="k">AGAR MENJADI TANDA <span class="rf">QS 2:259</span></div>
+    <div class="h m">Tanda kekuasaan Allah bagi manusia</div>
+  </div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Al-Qur'an">
+  <div class="hand"></div><div class="card">
+    <div class="k">IA BERKATA <span class="rf">QS 2:259</span></div>
+    <div class="ar c">أَعْلَمُ أَنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ</div>
+    <div class="h m c">Allah Mahakuasa atas segala sesuatu</div>
+    <div class="tr c">&ldquo;Saya mengetahui (yakin) bahwa Allah Mahakuasa atas segala sesuatu.&rdquo;</div>
+  </div>
+</div>
+<div class="p" data-in="s7:Al-Qur'an" data-out="s8">
+  <div class="hand"></div><div class="card">
+    <div class="k">SIAPA DIA?</div>
+    <div class="h m">Al-Qur'an tidak menyebut namanya</div>
+    <div class="note" data-at="s7:Menurut" data-fx="rise"><i>RIWAYAT</i>Menurut riwayat Ibnu Abbas (Ibnu Katsir): <b>Uzair</b></div>
+  </div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="hand"></div><div class="card">
+    <div class="k">PELAJARAN</div>
+    <div class="h m">Pertanyaan yang jujur bisa dijawab dengan cara yang tak terduga.</div>
+    <div class="ask" data-at="s8:Pertanyaan#2" data-fx="rise">Pertanyaan apa yang sedang kamu bawa?</div>
+  </div>
+</div>
+<div id="sig"><b>AUDIRA</b><i>audira.my.id</i></div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">KISAH DALAM AL-QUR&#39;AN &middot; EP 24</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":9.047,"s2":9.207,"s2e":18.647,"s3":18.807,"s3e":29.672,"s4":29.832,"s4e":38.186,"s5":38.346,"s5e":45.659,"s6":45.819,"s6e":54.915,"s7":55.075,"s7e":64.841,"s8":65.001,"s8e":74.668,"end":74.668,"dur":77.67,"outro":74.918},AT={"s1:seratus":4.657,"s1:makanannya":6.322,"s1:keledainya":7.948,"s1:tulang":8.691,"s2:runtuh":14.762,"s2:atap-atapnya":15.582,"s3:bagaimana":22.96,"s3:mematikannya-0.2":25.974,"s3:membangkitkannya":28.681,"s4:sehari":34.262,"s4:Tidak":36.078,"s4:seratus":37.489,"s5:Tapi":42.471,"s5:keledaimu":43.384,"s6:tulang-tulang":47.42,"s6:disusun":49.206,"s6:dibalut":51.063,"s6:Agar":52.299,"s7:Mahakuasa":57.947,"s7:Uzair":64.391,"s8:Pertanyaan#2":70.403,"s8:Kisah":72.343,"s8:AUDIRA":74.235,"s1:mengira":2.717,"s2:Seorang":12.223,"s2:penghuni":18.136,"s3:Lalu":25.725,"s4:Tidak+0.3":36.378,"s7:Al-Qur'an":59.702,"s7:Menurut":61.543},DUR=77.67,OUT=74.918;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ rise:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:''},t-.001);tl.fromTo(e,{opacity:0,y:16},{opacity:1,y:0,duration:.4,ease:'power3.out'},t);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{const h=p.querySelector('.hand');tl.set(p,{'--a':0,opacity:1},a-.16);tl.to(p,{'--a':360,duration:.6,ease:'power1.inOut'},a-.16);tl.set(h,{opacity:1},a-.16);tl.fromTo(h,{rotation:0},{rotation:360,duration:.6,ease:'power1.inOut'},a-.16);tl.set(h,{opacity:0},a+.46);},POUT=(tl,p,b)=>{const h=p.querySelector('.hand');tl.set(h,{opacity:1},b-.42);tl.fromTo(h,{rotation:360},{rotation:0,duration:.4,ease:'power1.in'},b-.42);tl.to(p,{'--a':0,duration:.4,ease:'power1.in'},b-.42);tl.set(h,{opacity:0},b-.01);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+// AUDIRA moving signature (port of AudiraSignature.tsx): 32% opacity, 4 safe-zone anchors, jumps every 18 s in a seeded order, hidden at the outro.
+(function(){const A=[[1015,221,'r'],[65,1190,'l'],[1015,864,'r'],[65,221,'l']];let h=2166136261;const sd="EP24_SERATUS_TAHUN_KELEDAI";for(let i=0;i<sd.length;i++)h=Math.imul(h^sd.charCodeAt(i),16777619)>>>0;const ord=[0,1,2,3];for(let i=3;i>0;i--){h=Math.imul(h^(h>>>15),2246822507)>>>0;const j=h%(i+1);[ord[i],ord[j]]=[ord[j],ord[i]];}
+const s=q('#sig');const C=18,OP=.32;for(let c=0;c*C<OUT;c++){const [x,y,al]=A[ord[c%4]];const t0=c*C,t1=Math.min((c+1)*C,OUT-.2);tl.set(s,{left:al==='l'?x:'auto',right:al==='r'?1080-x:'auto',top:y,textAlign:al==='l'?'left':'right'},t0);tl.fromTo(s,{opacity:0},{opacity:OP,duration:.5,ease:'none'},t0);tl.to(s,{opacity:0,duration:.4,ease:'none'},Math.max(t0+.6,t1-.4));}})();
+gsap.set('#outro',{visibility:'hidden'});tl.set('#outro',{'--a':0},0);tl.set('#outro',{visibility:'visible'},OUT-.2);tl.to('#outro',{'--a':360,duration:.9,ease:'power1.inOut'},OUT-.2);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

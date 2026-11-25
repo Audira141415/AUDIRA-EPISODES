@@ -1,0 +1,715 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP05_RUMBLE_IN_THE_JUNGLE_1974",
+  "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+  "createdAt": "2026-11-22T06:26:14.178Z",
+  "updatedAt": "2026-11-23T09:03:25.515Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T06:29:39.193Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-22T06:26:14.178Z",
+      "startedAt": "2026-11-22T06:26:14.178Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T06:29:39.193Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-22T06:26:14.091Z",
+      "startedAt": "2026-11-22T06:26:14.091Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T07:16:18.183Z",
+      "notes": [
+        {
+          "at": "2026-11-22T07:04:43.083Z",
+          "text": "Rekomendasi: CHRONICLE (utama), PANELVERSE, FILM16. DISASTERSIM ditolak (cocok kata 'badai' saja). Menunggu pilihan pengguna."
+        },
+        {
+          "at": "2026-11-22T07:14:06.415Z",
+          "text": "Pengguna pilih CHRONICLE. Cover topik A (KO) dan B (rope-a-dope) dirender (Ep05CoverA/B) di style/. Menunggu pilihan + acc cover."
+        },
+        {
+          "at": "2026-11-22T07:16:18.183Z",
+          "text": "Pengguna: \"Cover A\". cover-topic.png = Ep05CoverA (KO ronde 8, Ali amber + Foreman merah, PREDAWN look)."
+        }
+      ],
+      "startedAt": "2026-11-22T07:04:43.083Z",
+      "doneAt": "2026-11-22T07:16:18.183Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T07:31:11.991Z",
+      "notes": [
+        {
+          "at": "2026-11-22T07:26:10.565Z",
+          "text": "Docs tahap 4 ditulis (ART_DIRECTION, SCRIPT 201 kata, STORYBOARD 8 baris, ASSET_MANIFEST). Menunggu acc pengguna."
+        },
+        {
+          "at": "2026-11-22T07:31:11.991Z",
+          "text": "Pengguna: \"Acc semua\" (2026-11-22) untuk naskah + storyboard + art direction."
+        }
+      ],
+      "startedAt": "2026-11-22T07:26:10.565Z",
+      "doneAt": "2026-11-22T07:31:11.991Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T07:31:55.731Z",
+          "text": "Studio seri bersama sudah ada; check-env Ready; render cover Ep05CoverA/B sebelumnya = bukti smoke 3D. Kode di studio/src/scenes/ep05/."
+        }
+      ],
+      "doneAt": "2026-11-22T07:31:55.731Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T07:34:35.921Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-22T07:32:19.638Z",
+      "startedAt": "2026-11-22T07:32:19.638Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T07:50:58.594Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T07:47:30.751Z",
+      "startedAt": "2026-11-22T07:47:30.751Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T07:50:58.594Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-22T13:07:56.316Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        },
+        {
+          "at": "2026-11-23T08:27:19.221Z",
+          "text": "Juri buta r9 LOLOS 4/4/4/4/4 + motion 5 (avg 4.17), record_score tersimpan. Menunggu acc draf dari pengguna; belum approved."
+        },
+        {
+          "at": "2026-11-23T08:27:32.297Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        },
+        {
+          "at": "2026-11-23T08:35:09.298Z",
+          "text": "Pengguna acc draf 2026-11-23: \"Approve, go final\". Juri buta r9 LOLOS 4/4/4/4/4 + motion 5 (avg 4.17). Lanjut tahap 9."
+        }
+      ],
+      "startedAt": "2026-11-22T07:49:16.724Z",
+      "doneAt": "2026-11-23T08:35:09.298Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T08:44:42.354Z",
+          "text": "FINAL_EP05_RUMBLE_IN_THE_JUNGLE.mp4 1080x1920@60 85.40s, -13.6 LUFS TP -2.1, VO 13.7 LU di atas SFX, metadata+signature VALID, qa-video PASS (7 efek sengaja di-allow), audit:camera final 5. Juri buta final LOLOS 4/4/4/4/4 motion 5 (avg 4.17), gold diarsipkan."
+        }
+      ],
+      "doneAt": "2026-11-23T08:44:42.354Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T08:40:20.861Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T09:03:19.448Z",
+          "text": "Caption ditampilkan di chat. Upload dikonfirmasi Jumat 27 Nov 2026 19.00 WIB. 3 task review dibuat: review-rumble-in-the-jungle-1974-24h/-72h/-7d (28 Nov, 30 Nov, 4 Des 19.00 WIB), dicatat di NOTES.md."
+        }
+      ],
+      "doneAt": "2026-11-23T09:03:19.448Z",
+      "startedAt": "2026-11-23T08:39:31.962Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "fakta-olahraga-EP05",
+    "style": "CHRONICLE",
+    "engine": "remotion",
+    "wordCount": 201,
+    "estimatedDuration": {
+      "wordCount": 201,
+      "minSec": 80,
+      "maxSec": 89
+    }
+  },
+  "syncedAt": "2026-11-23T08:40:20.861Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T07:14:24.029Z",
+      "doing": "Gerbang style: CHRONICLE dipilih pengguna; cover topik A (KO, Ep05CoverA) dan B (rope-a-dope, Ep05CoverB) di style/, menunggu pilihan + acc cover.",
+      "files": [
+        "studio/src/scenes/ep05/Cover.tsx",
+        "studio/src/scenes/ep05/RingSet.tsx",
+        "studio/src/scenes/ep05/chronicle/",
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/style/STYLE_DECISION.md"
+      ],
+      "next": "Setelah acc: salin cover terpilih ke style/cover-topic.png, set approved yes di STYLE_DECISION + update stage style approved. Lalu tahap 4 naskah (caveat riset di brief). Tahap 9: JANGAN pakai audira_render_batch (bug, lihat side-session-notes/local_63bae0fe.../ep01-render-batch-blockers.md); pakai npm run render:final langsung dari studio dengan --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --sfx=public/audio/sfx.wav --cuts=...; sebelum render cek GPU_LOCK.md di side-session-notes/local_1284e608.../ — ada = tunggu, tidak ada = buat (EP, waktu, perintah) lalu hapus setelah selesai/gagal.",
+      "snapshot": {
+        "episode": "EP05_RUMBLE_IN_THE_JUNGLE_1974",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP05",
+        "currentStage": "style",
+        "gates": {
+          "style": {
+            "approved": false,
+            "status": "in_progress"
+          },
+          "script": {
+            "approved": false,
+            "status": "pending"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T07:16:26.108Z",
+      "doing": "Gerbang style selesai (CHRONICLE, cover A KO di-acc). Belum mulai tahap 4.",
+      "files": [
+        "studio/src/scenes/ep05/Cover.tsx",
+        "studio/src/scenes/ep05/RingSet.tsx",
+        "studio/src/scenes/ep05/chronicle/",
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/style/"
+      ],
+      "next": "Tahap 4: docs/ART_DIRECTION.md → SCRIPT.md + STORYBOARD.md (≥6 baris, kolom Audio) → ASSET_MANIFEST.md; 195–210 kata; VO sebut AUDIRA; outro teaser 'episode berikutnya'. Caveat riset: tanpa '1 miliar'; '4 banding 1 menurut NYT'; 'menjelang subuh'; 'lebih dari sebulan'; jangan sebut jumlah KO Ali; boleh: Foreman 40-0 37 KO, KO ronde 8 detik 2:58, 'Ali, bomaye!', badai hujan setelah KO, 50 juta closed-circuit (atribusi). Film harus buka di frame cover (Ep05CoverA, RingSet + PREDAWN). Multi-scene ≥5 set berbeda (bukan ring terus): peta/perjalanan ke Kinshasa, kamp latihan/sparing Foreman (penundaan), stadion penonton 'Ali bomaye', rope-a-dope, KO, badai hujan subuh. Set yang sama ≤2 frame contact sheet. Tahap 9: render:final langsung + GPU_LOCK.md (lihat handover sebelumnya).",
+      "snapshot": {
+        "episode": "EP05_RUMBLE_IN_THE_JUNGLE_1974",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP05",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": false,
+            "status": "pending"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T07:26:16.363Z",
+      "doing": "Tahap 4 docs selesai, menunggu acc pengguna (naskah 201 kata + storyboard + AD + manifest)",
+      "files": [
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/docs/ART_DIRECTION.md",
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/docs/SCRIPT.md",
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/docs/STORYBOARD.md",
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/docs/ASSET_MANIFEST.md"
+      ],
+      "next": "Setelah acc: update script approved:true, set 'approved: yes' di SCRIPT.md, lalu tahap 5 (check-env/smoke di studio bersama), tahap 6 VO Cartesia (teks 'Audira'). Set baru: MapSet, CampSet, StadiumSet, hud.tsx di ep05/; GLB widebody-airliner-ae0a5a + comms-dish-7b129a. Render final: render:final langsung + GPU_LOCK.md.",
+      "snapshot": {
+        "episode": "EP05_RUMBLE_IN_THE_JUNGLE_1974",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP05",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": false,
+            "status": "in_progress"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T07:54:51.193Z",
+      "doing": "Tahap 8 draf: contact sheet draft/contact-sheet.jpg siap (audit visual ceiling 5/5/5/5, motion klip KO 5/5). Juri buta sedang menilai. VO+SFX terkunci (film 85,37 dtk).",
+      "files": [
+        "studio/src/scenes/ep05/Film.tsx",
+        "studio/src/scenes/ep05/sets.tsx",
+        "studio/src/scenes/ep05/hud.tsx",
+        "studio/src/scenes/ep05/timing.ts",
+        "studio/src/scenes/ep05/Model.tsx",
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/draft/contact-sheet.jpg"
+      ],
+      "next": "record_score draft (style CHRONICLE, episode fakta-olahraga-EP05) → minta acc draf pengguna → tahap 9: GPU_LOCK.md lalu npm run render:final -- --comp=Ep05Final --out=../EP05_RUMBLE_IN_THE_JUNGLE_1974/FINAL_EP05_RUMBLE_IN_THE_JUNGLE.mp4 --vo=public/audio/ep05/vo.wav --sfx=public/audio/ep05/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error + --title/--slug/--ep.",
+      "snapshot": {
+        "episode": "EP05_RUMBLE_IN_THE_JUNGLE_1974",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP05",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP05_RUMBLE_IN_THE_JUNGLE_1974/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T07:55:19.982Z",
+      "doing": "Tahap 8: juri buta draf = PERLU POLES (lighting 4, material 3, depth 3, composition 3, readability 3). Daftar cacat lengkap di side-session-notes/local_5b47dde3-efb1-48c6-b2fc-e93db268d200/EP05-handover-draft-polish.md. Sesi berhenti karena batas konteks.",
+      "files": [
+        "studio/src/scenes/ep05/Film.tsx",
+        "studio/src/scenes/ep05/sets.tsx",
+        "studio/src/scenes/ep05/hud.tsx",
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/draft/contact-sheet.jpg"
+      ],
+      "next": "Poles cacat juri (set ring berulang, caption tutup subjek, label <34px, framing stadion/KO/dawn, material datar) → stills 8 frame → audit:visual → juri buta → record_score draft → acc draf pengguna → tahap 9 render:final (GPU_LOCK.md, --comp=Ep05Final --vo=public/audio/ep05/vo.wav --sfx=public/audio/ep05/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error).",
+      "snapshot": {
+        "episode": "EP05_RUMBLE_IN_THE_JUNGLE_1974",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP05",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP05_RUMBLE_IN_THE_JUNGLE_1974/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T08:42:24.957Z",
+      "doing": "Tahap 8: poles selesai (label≥40, tekstur kanvas/tanah/peta, kamera C1/C2/D/E1/E2/OUT, look D biru high-angle, E1 amber, C2 haze). Sheet baru di draft/contact-sheet.jpg, audit ceiling 5/5/5/5. Juri buta ronde 2 sedang jalan.",
+      "files": [
+        "studio/src/scenes/ep05/Film.tsx",
+        "studio/src/scenes/ep05/RingSet.tsx",
+        "studio/src/scenes/ep05/sets.tsx",
+        "studio/src/scenes/ep05/hud.tsx",
+        "studio/src/scenes/ep05/chronicle/Overlay.tsx"
+      ],
+      "next": "Bila juri LOLOS: record_score draft (jury) + camera dari out/ep05-clip-ko.mp4 → minta acc draf. Bila PERLU POLES: poles cacat juri, render ulang sheet.",
+      "snapshot": {
+        "episode": "EP05_RUMBLE_IN_THE_JUNGLE_1974",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP05",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP05_RUMBLE_IN_THE_JUNGLE_1974/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T08:44:35.943Z",
+      "doing": "Tahap 8 poles ronde 2: juri buta ronde 2 PERLU POLES (komposisi 3, keterbacaan 3, lain 4). Fix caption plate, label 48-50, D hangat, E1 lebih lebar sudah masuk; sisa cacat f7 crop kiri, f6 kepala vs EnergyBar, f3 kaki di caption, tirai flat. Detail: side-session-notes/local_097d51ed-7825-4f60-bc23-ec8f2559a76a/EP05-handover-draft-polish-r2.md",
+      "files": [
+        "studio/src/scenes/ep05/Film.tsx",
+        "studio/src/scenes/ep05/hud.tsx",
+        "studio/src/scenes/ep05/sets.tsx",
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/draft/contact-sheet.jpg"
+      ],
+      "next": "Fix 4 cacat sisa → stills → audit:visual → juri buta → record_score draft (camera: studio/out/ep05-camera.json) → acc draf pengguna → tahap 9.",
+      "snapshot": {
+        "episode": "EP05_RUMBLE_IN_THE_JUNGLE_1974",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP05",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP05_RUMBLE_IN_THE_JUNGLE_1974/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T08:47:29.741Z",
+      "doing": "Tahap 8 poles ronde 3 selesai; juri buta ronde 3 PERLU POLES (lighting 4, material 3, depth 4, composition 3, readability 3). 9 cacat terdaftar di side-session-notes/local_097d51ed-7825-4f60-bc23-ec8f2559a76a/EP05-handover-draft-polish-r2.md (bagian Ronde 3).",
+      "files": [
+        "studio/src/scenes/ep05/Film.tsx",
+        "studio/src/scenes/ep05/sets.tsx",
+        "studio/src/scenes/ep05/hud.tsx",
+        "studio/src/scenes/ep05/chronicle/Overlay.tsx"
+      ],
+      "next": "Sesi baru: fix 9 cacat ronde 3 → stills (GPU_LOCK.md) → audit:visual → juri buta → record_score draft (camera studio/out/ep05-camera.json) → acc draf → tahap 9.",
+      "snapshot": {
+        "episode": "EP05_RUMBLE_IN_THE_JUNGLE_1974",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP05",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP05_RUMBLE_IN_THE_JUNGLE_1974/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T13:33:24.986Z",
+      "doing": "Tahap 8 poles ronde 6: juri buta ronde 6 sedang berjalan. Ronde 5 = L4 M4 D4 C4 R3; fix R3 (f5 teks dipangkas, 60.000 tanpa ±, partner kontur biru-abu, HUD y 292, label pin 54). Sheet: draft/contact-sheet.jpg (frame 0,12.8,25.2,30,38.2,52.5,65.5,68.4 s).",
+      "files": [
+        "studio/src/scenes/ep05/Film.tsx",
+        "studio/src/scenes/ep05/sets.tsx",
+        "studio/src/scenes/ep05/hud.tsx",
+        "studio/src/scenes/ep05/RingSet.tsx",
+        "studio/src/scenes/ep05/chronicle/Overlay.tsx"
+      ],
+      "next": "Jika LOLOS: record_score draft judge jury (camera studio/out/ep05-camera.json, ceilings 5/5/5/5) → tampilkan sheet → minta acc draf → tahap 9. Jika PERLU POLES: fix cacat → stills (tunggu GPU_LOCK.md kosong!) → audit → juri.",
+      "snapshot": {
+        "episode": "EP05_RUMBLE_IN_THE_JUNGLE_1974",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP05",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP05_RUMBLE_IN_THE_JUNGLE_1974/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T13:36:59.174Z",
+      "doing": "Tahap 8 poles ronde 7 selesai; juri buta r7 PERLU POLES (L4 M4 D4 C3 R4). 6 cacat komposisi tercatat di side-session-notes/local_eb1d0985-357a-4e28-a344-417719eb8faa/EP05-handover-draft-polish-r6.md (bagian Ronde 7). Draf BELUM di-acc pengguna (STATUS tampil ✓ tahap 8 secara keliru).",
+      "files": [
+        "studio/src/scenes/ep05/Film.tsx",
+        "studio/src/scenes/ep05/sets.tsx"
+      ],
+      "next": "Sesi baru: fix cacat r7 (kaki ≤ y1290 di f3/f4, KO f7 lebih dekat + kontur lebih terang) → stills 0,12.8,17.2,30,33,52.5,65.5,68.4 (tunggu GPU_LOCK.md hilang) → audit → juri buta → record_score draft jury (camera studio/out/ep05-camera.json) → minta acc draf.",
+      "snapshot": {
+        "episode": "EP05_RUMBLE_IN_THE_JUNGLE_1974",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP05",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP05_RUMBLE_IN_THE_JUNGLE_1974/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:20:07.064Z",
+      "doing": "Tahap 8 ronde 8: fix r7 sudah diterapkan (faceShot target y 0.98 + pull back 0.3; CampScene target y 1.18; E1 KO kamera z1.4 F+0.95 fov58; KO_LOOK outline gain 2.2 halo 0.45, fog 0.016; NameTag role IVORY). Render stills sedang jalan.",
+      "command": "node scripts/stills.mjs out/ep05-draft 0s,12.8s,17.2s,30s,33s,52.5s,65.5s,68.4s Ep05Preview (GPU_LOCK milik local_130ba4c8)",
+      "files": [
+        "studio/src/scenes/ep05/Film.tsx",
+        "studio/src/scenes/ep05/chronicle/Overlay.tsx"
+      ],
+      "next": "copy _sheet.jpg → draft/contact-sheet.jpg → visual-audit → THEME_CHECK.md → juri buta → record_score. Draf BELUM di-acc pengguna.",
+      "snapshot": {
+        "episode": "EP05_RUMBLE_IN_THE_JUNGLE_1974",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP05",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP05_RUMBLE_IN_THE_JUNGLE_1974/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:26:04.254Z",
+      "doing": "Tahap 8 ronde 9. Juri r8: L4 M4 D4 C4, R2 (cap G22: hook f1 menampilkan KO saat VO menyebut rekor 40-0). Sudah diperbaiki: hook Foreman tegak (guard) sampai kata \"subuh\" lalu KO; chip \"40 LAGA · 40 MENANG\"; kamera hook di dalam ring (z 3.0, fov 65–67, kaki ≤1290). Fix r7 juga selesai: f3 kamera faceShot d≈7 fov42 target y0.89 (kaki y≈1264); f4 camp target y1.18; f7 KO kamera z1.4 fov58; KO_LOOK outline gain 2.2; NameTag role IVORY. Sheet r9 sudah dirender ke draft/contact-sheet.jpg, audit 5/5/5/5, THEME_CHECK.md r9 semua ya. Juri buta r9 sedang dijalankan.",
+      "files": [
+        "studio/src/scenes/ep05/Film.tsx",
+        "studio/src/scenes/ep05/chronicle/Overlay.tsx",
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/draft/THEME_CHECK.md",
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/draft/contact-sheet.jpg"
+      ],
+      "next": "Bila juri r9 LOLOS (semua ≥4): record_score draft jury CHRONICLE fakta-olahraga-EP05 dengan camera studio/out/ep05-camera.json dan ceilings 5/5/5/5. Lalu tampilkan sheet dan minta acc draf. Bila PERLU POLES: perbaiki cacat dari juri, render ulang stills (tunggu GPU_LOCK.md hilang), lalu juri lagi. Draf BELUM di-acc pengguna.",
+      "snapshot": {
+        "episode": "EP05_RUMBLE_IN_THE_JUNGLE_1974",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP05",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP05_RUMBLE_IN_THE_JUNGLE_1974/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:38:38.561Z",
+      "doing": "Tahap 9: render final Ep05Final berjalan (GPU_LOCK.md milik sesi ini). qa-scene MCP macet (studio tanpa qa-scene.mjs/Solid) → G19 diganti qa-video hardOnly pada final + audit:camera.",
+      "command": "npm run render:final -- --comp=Ep05Final --out=../EP05_RUMBLE_IN_THE_JUNGLE_1974/FINAL_EP05_RUMBLE_IN_THE_JUNGLE.mp4 --vo=public/audio/ep05/vo.wav --sfx=public/audio/ep05/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Rumble in the Jungle 1974\" --slug=rumble-in-the-jungle-1974 --ep=EP05",
+      "files": [
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/FINAL_EP05_RUMBLE_IN_THE_JUNGLE.mp4"
+      ],
+      "next": "Hapus GPU_LOCK.md → ukur LUFS/TP, VO vs SFX → ffprobe metadata → qa-video cuts 8.94,13.80,27.22,31.72,43.10,56.58,66.76,71.16 → frame check → juri buta final → tahap 10 caption/NOTES/memory.",
+      "snapshot": {
+        "episode": "EP05_RUMBLE_IN_THE_JUNGLE_1974",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP05",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP05_RUMBLE_IN_THE_JUNGLE_1974/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 1
+      }
+    },
+    {
+      "at": "2026-11-23T08:43:21.802Z",
+      "doing": "Tahap 9 QA. FINAL_EP05_RUMBLE_IN_THE_JUNGLE.mp4 sudah dirender (1080x1920@60, 85.40 s, -13.6 LUFS, TP -2.1, metadata ffprobe OK, signature Ed25519 VALID + C2PA, GPU_LOCK dihapus). VO -16.3 vs SFX stem -30.0 = 13.7 LU. qa-video: 7 LONCAT = efek sengaja (Flash 0.02/subuh/roboh, RedPulse robek, jolt bomaye, kilat 69.38 & 77.78), dijalankan ulang dengan --allow. Contact sheet frame MP4: EP05_RUMBLE_IN_THE_JUNGLE_1974/out/final-contact.jpg. SOCIAL_CAPTIONS.md LOLOS validator, SUBTITLES.srt 45 cue, NOTES.md ditulis (bagian QA final belum diisi), memory: 3 lesson + set_best sudah.",
+      "files": [
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/FINAL_EP05_RUMBLE_IN_THE_JUNGLE.mp4",
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/SOCIAL_CAPTIONS.md",
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/NOTES.md",
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/SUBTITLES.srt",
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/out/final-contact.jpg"
+      ],
+      "next": "Lihat out/final-contact.jpg (outro AUDIRA + signature) → juri buta final (subagent, sheet + cover style/cover-reference) → record_score stage final judge jury CHRONICLE fakta-olahraga-EP05 → isi NOTES QA final → update STATUS final done + delivery → hapus out/final-frames → tampilkan caption lengkap → tanya jam upload → 3 scheduled task review-rumble-in-the-jungle-1974-24h/-72h/-7d.",
+      "snapshot": {
+        "episode": "EP05_RUMBLE_IN_THE_JUNGLE_1974",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP05",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP05_RUMBLE_IN_THE_JUNGLE_1974/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 1
+      }
+    },
+    {
+      "at": "2026-11-23T08:44:42.505Z",
+      "doing": "Tahap 9 SELESAI (final LOLOS 4.17, record_score final tersimpan, gold diarsipkan). Tahap 10 hampir selesai: SOCIAL_CAPTIONS.md LOLOS validator, SUBTITLES.srt 45 cue, NOTES.md lengkap (QA final terisi), memory 3 lesson + set_best. Sisa: tampilkan caption lengkap di chat, tanya jam upload, buat 3 scheduled task.",
+      "files": [
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/SOCIAL_CAPTIONS.md",
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/NOTES.md",
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/FINAL_EP05_RUMBLE_IN_THE_JUNGLE.mp4"
+      ],
+      "next": "1) Tampilkan isi SOCIAL_CAPTIONS.md lengkap (6 platform + Jadwal Upload + Label AI) di chat. 2) Tanya pengguna jam upload sebenarnya (default Jumat 27 Nov 2026 19.00 WIB). 3) Buat 3 scheduled task sekali jalan (fireAt +07:00): review-rumble-in-the-jungle-1974-24h / -72h / -7d, prompt mandiri (path episode, slug, judul, 6 platform, metrik views/retensi/hook/komentar, catat di NOTES.md + audira_style_memory scope channel append_lesson). 4) Catat taskId di NOTES.md bagian Review terjadwal. 5) update stage delivery done.",
+      "snapshot": {
+        "episode": "EP05_RUMBLE_IN_THE_JUNGLE_1974",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP05",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP05_RUMBLE_IN_THE_JUNGLE_1974/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 1
+      }
+    },
+    {
+      "at": "2026-11-23T08:44:42.505Z",
+      "doing": "Tahap 9 SELESAI (final LOLOS 4.17, record_score final tersimpan, gold diarsipkan). Tahap 10 hampir selesai: SOCIAL_CAPTIONS.md LOLOS validator, SUBTITLES.srt 45 cue, NOTES.md lengkap (QA final terisi), memory 3 lesson + set_best. Sisa: tampilkan caption lengkap di chat, tanya jam upload, buat 3 scheduled task.",
+      "files": [
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/SOCIAL_CAPTIONS.md",
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/NOTES.md",
+        "EP05_RUMBLE_IN_THE_JUNGLE_1974/FINAL_EP05_RUMBLE_IN_THE_JUNGLE.mp4"
+      ],
+      "next": "1) Tampilkan isi SOCIAL_CAPTIONS.md lengkap (6 platform + Jadwal Upload + Label AI) di chat. 2) Tanya pengguna jam upload sebenarnya (default Jumat 27 Nov 2026 19.00 WIB). 3) Buat 3 scheduled task sekali jalan (fireAt +07:00): review-rumble-in-the-jungle-1974-24h / -72h / -7d, prompt mandiri (path episode, slug, judul, 6 platform, metrik views/retensi/hook/komentar, catat di NOTES.md + audira_style_memory scope channel append_lesson). 4) Catat taskId di NOTES.md bagian Review terjadwal. 5) update stage delivery done.",
+      "snapshot": {
+        "episode": "EP05_RUMBLE_IN_THE_JUNGLE_1974",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP05",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP05_RUMBLE_IN_THE_JUNGLE_1974/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 1
+      },
+      "finishedAt": "2026-11-23T09:03:25.515Z"
+    }
+  ]
+}

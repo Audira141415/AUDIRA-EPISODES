@@ -1,0 +1,512 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP26_PEMBUNUH_100_JIWA_BERTAUBAT",
+  "topic": "Lelaki yang membunuh 100 jiwa lalu bertaubat (HR Bukhari & Muslim, Abu Sa'id Al-Khudri)",
+  "createdAt": "2026-11-22T18:00:42.107Z",
+  "updatedAt": "2026-11-23T12:39:19.457Z",
+  "currentStage": "complete",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:05:04.890Z",
+          "text": "Dibaca: CLAUDE.md, BRIEF_COMMON QISSAH (adab), memori GLOBAL, HANDOFF+STYLE_DECISION EP08 (pola Remotion 2D). Rekomender MCP/2D meleset (NEGERI/stickman), dipilih manual 3 style khidmat."
+        }
+      ],
+      "doneAt": "2026-11-22T18:05:04.890Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:04:48.461Z",
+          "text": "SOURCE_REGISTER: HR Bukhari 3470 + HR Muslim 2766 (a-c) teks Arab/Inggris/Indonesia di research/raw, QS 39:53. Konteks dibaca: CLAUDE.md, BRIEF_COMMON QISSAH, memori GLOBAL, HANDOFF EP08."
+        }
+      ],
+      "doneAt": "2026-11-22T18:04:48.461Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T22:20:15.911Z",
+      "notes": [
+        {
+          "at": "2026-11-22T22:20:15.911Z",
+          "text": "Pengguna memilih Paper Lightbox (adrisepta:paper-lantern, ID memori PAPERLANTERN) dari Paper Lightbox / HIKAYAT / Ink Wash."
+        }
+      ],
+      "startedAt": "2026-11-22T22:20:15.911Z",
+      "doneAt": "2026-11-22T22:21:26.157Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T22:23:55.605Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T22:23:39.716Z",
+      "startedAt": "2026-11-22T22:23:39.716Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:20:47.172Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.000Z",
+      "startedAt": "2026-11-22T06:09:42.000Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:24:45.681Z",
+          "text": "VO Cartesia 83,22 dtk, 191 kata, vo-words.json + vo.timing.json. Docs rule 12 lengkap."
+        }
+      ],
+      "doneAt": "2026-11-22T22:24:45.681Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:20:47.172Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.000Z",
+      "startedAt": "2026-11-22T16:52:30.000Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T00:01:56.160Z",
+          "text": "sync: look.json PASS"
+        },
+        {
+          "at": "2026-11-23T12:24:00.794Z",
+          "text": "Juri r1 3.33, r2 3.50 -> diterima 3.50 setelah 2 putaran (aturan 2026-11-23), langsung final"
+        }
+      ],
+      "doneAt": "2026-11-23T12:24:00.794Z",
+      "startedAt": "2026-11-23T00:01:49.949Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:39:05.144Z",
+          "text": "FINAL_EP26_PEMBUNUH_100_JIWA_BERTAUBAT.mp4 1080x1920@60, -13.7 LUFS TP -1.9, metadata + Ed25519 VALID; skor final self 3.67 / juri 3.67; G13 lolos medianSpeed 0.041"
+        }
+      ],
+      "doneAt": "2026-11-23T12:39:05.144Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:19:23.311Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T12:39:19.312Z",
+          "text": "SOCIAL_CAPTIONS.md lolos validator (6 platform, jadwal WIB, label AI); NOTES.md diperbarui; lesson PAPERLANTERN + GLOBAL dicatat. Review pasca-tayang belum dijadwalkan."
+        }
+      ],
+      "doneAt": "2026-11-23T12:39:19.312Z",
+      "startedAt": "2026-11-23T12:19:14.179Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:26:45.315Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-23T12:24:30.078Z",
+      "startedAt": "2026-11-23T12:24:30.078Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP26",
+    "engine": "remotion",
+    "engineNote": "Remotion 2D (SVG/CSS, tanpa R3F), skill audira-2d-motion",
+    "style": "PAPERLANTERN",
+    "wordCount": 191,
+    "voSeconds": 83.22,
+    "filmSeconds": 86.5,
+    "estimatedDuration": {
+      "wordCount": 191,
+      "minSec": 76,
+      "maxSec": 85
+    },
+    "shortTitle": "Pembunuh 100"
+  },
+  "syncedAt": "2026-11-23T12:26:45.315Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T22:21:56.642Z",
+      "doing": "Style PAPERLANTERN approved; vo-script.txt final (191 kata); project/ scaffold + preflight OK. Belum: docs naskah/storyboard, VO, kode, cover topik.",
+      "files": [
+        "HANDOFF.md",
+        "docs/vo-script.txt",
+        "style/STYLE_DECISION.md",
+        "research/SOURCE_REGISTER.md",
+        "project/SERIES.json"
+      ],
+      "next": "Baca HANDOFF.md di folder episode, lalu docs (ART_DIRECTION/SCRIPT/STORYBOARD/ASSET_MANIFEST/SHOTLIST) → VO Cartesia → kode Taubat.tsx → cover topik → draf juri → final → delivery.",
+      "snapshot": {
+        "episode": "EP26_PEMBUNUH_100_JIWA_BERTAUBAT",
+        "topic": "Lelaki yang membunuh 100 jiwa lalu bertaubat (HR Bukhari & Muslim, Abu Sa'id Al-Khudri)",
+        "style": "PAPERLANTERN",
+        "memoryEpisode": "short-baru-11-23-EP26",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T22:24:43.548Z",
+      "doing": "Docs naskah/storyboard/shotlist selesai; VO Cartesia dikunci 83,22 dtk (project/public/audio/vo.wav). Belum: perbaiki 4 RED lint shotlist, kode Taubat.tsx, cover topik, sfx, draf juri, final, delivery.",
+      "files": [
+        "HANDOFF.md",
+        "project/SHOTLIST.md",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "docs/STORYBOARD.md",
+        "docs/SCRIPT.md",
+        "docs/ART_DIRECTION.md"
+      ],
+      "next": "Baca HANDOFF.md bagian \"Update sesi 1\": fix lint SHOTLIST → kode Remotion 2D Taubat.tsx → cover topik → npm run sfx → draf juri → render:final → delivery.",
+      "snapshot": {
+        "episode": "EP26_PEMBUNUH_100_JIWA_BERTAUBAT",
+        "topic": "Lelaki yang membunuh 100 jiwa lalu bertaubat (HR Bukhari & Muslim, Abu Sa'id Al-Khudri)",
+        "style": "PAPERLANTERN",
+        "memoryEpisode": "short-baru-11-23-EP26",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:03:13.179Z",
+      "doing": "Taubat.tsx selesai + draf putaran 0 (readability 2); fix keterbacaan sudah di kode, belum dirender ulang",
+      "command": "cd project && npm run draft -- TaubatPreview --frames=1.2s,3.8s,9.8s,13.8s,24.9s,28.6s,37.6s,45.2s,52.6s,60.5s,65.5s,73.6s,76.0s,79.8s --clip=off",
+      "files": [
+        "project/src/episode/Taubat.tsx",
+        "project/src/Root.tsx",
+        "project/SHOTLIST.md",
+        "project/scripts/draft.mjs",
+        "HANDOFF.md"
+      ],
+      "next": "Render ulang draf, cover-topic.png, npm run sfx, THEME_CHECK, skor self+juri, final, delivery (lihat HANDOFF.md \"Update sesi 2\")",
+      "snapshot": {
+        "episode": "EP26_PEMBUNUH_100_JIWA_BERTAUBAT",
+        "topic": "Lelaki yang membunuh 100 jiwa lalu bertaubat (HR Bukhari & Muslim, Abu Sa'id Al-Khudri)",
+        "style": "PAPERLANTERN",
+        "memoryEpisode": "short-baru-11-23-EP26",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:08:35.867Z",
+      "doing": "Draf putaran 1: readability 3 (label SVG AUDIRA & NEGERI SALEH dinilai kontras rendah oleh audit), camera 5/5",
+      "command": "cd project && npm run draft -- TaubatPreview --frames=1.2s,3.8s,9.8s,13.8s,24.9s,28.6s,37.6s,45.2s,52.6s,60.5s,65.5s,73.6s,76.0s,79.8s",
+      "files": [
+        "project/src/episode/Taubat.tsx",
+        "HANDOFF.md"
+      ],
+      "next": "Lihat HANDOFF.md \"Update sesi 2b\": cek audit label SVG, rerun draf, cover-topic, sfx, THEME_CHECK, juri, final, delivery",
+      "snapshot": {
+        "episode": "EP26_PEMBUNUH_100_JIWA_BERTAUBAT",
+        "topic": "Lelaki yang membunuh 100 jiwa lalu bertaubat (HR Bukhari & Muslim, Abu Sa'id Al-Khudri)",
+        "style": "PAPERLANTERN",
+        "memoryEpisode": "short-baru-11-23-EP26",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:14:00.842Z",
+      "doing": "Draf putaran 1: readability 3 (label SVG AUDIRA & NEGERI SALEH dinilai kontras rendah oleh audit), camera 5/5",
+      "command": "cd project && npm run draft -- TaubatPreview --frames=1.2s,3.8s,9.8s,13.8s,24.9s,28.6s,37.6s,45.2s,52.6s,60.5s,65.5s,73.6s,76.0s,79.8s",
+      "files": [
+        "project/src/episode/Taubat.tsx",
+        "HANDOFF.md"
+      ],
+      "next": "Lihat HANDOFF.md \"Update sesi 2b\": cek audit label SVG, rerun draf, cover-topic, sfx, THEME_CHECK, juri, final, delivery",
+      "snapshot": {
+        "episode": "EP26_PEMBUNUH_100_JIWA_BERTAUBAT",
+        "topic": "Lelaki yang membunuh 100 jiwa lalu bertaubat (HR Bukhari & Muslim, Abu Sa'id Al-Khudri)",
+        "style": "PAPERLANTERN",
+        "memoryEpisode": "short-baru-11-23-EP26",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:14:58.132Z",
+      "doing": "s4: rerun draf (Taubat.tsx diubah setelah sheet terakhir) lalu juri",
+      "command": "cd project && npm run draft -- TaubatPreview --frames=1.2s,3.8s,9.8s,13.8s,24.9s,28.6s,37.6s,45.2s,52.6s,60.5s,65.5s,73.6s,76.0s,79.8s",
+      "next": "juri draf (record_score draft jury), lalu render:final --vo --sfx jobs<=4, QA, metadata, delivery",
+      "snapshot": {
+        "episode": "EP26_PEMBUNUH_100_JIWA_BERTAUBAT",
+        "topic": "Lelaki yang membunuh 100 jiwa lalu bertaubat (HR Bukhari & Muslim, Abu Sa'id Al-Khudri)",
+        "style": "PAPERLANTERN",
+        "memoryEpisode": "short-baru-11-23-EP26",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:20:48.107Z",
+      "doing": "s4: draf putaran 2 (juri r1 3.33: S2 jadi ilustrasi lentera+rehal+2 kitab, S6 kota asal naik, S7 FG naik 250px). SOCIAL_CAPTIONS.md sudah ditulis.",
+      "command": "cd project && npm run draft -- TaubatPreview --frames=1.2s,3.8s,9.8s,13.8s,24.9s,28.6s,37.6s,45.2s,52.6s,60.5s,65.5s,73.6s,76.0s,79.8s",
+      "files": [
+        "project/src/episode/Taubat.tsx",
+        "SOCIAL_CAPTIONS.md",
+        "F:/temp/render/Taubat.before-r2.tsx"
+      ],
+      "next": "juri putaran 2 (terakhir): >=3.8 lolos; >=3.5 terbaik langsung final; lalu render:final --vo --sfx jobs<=4",
+      "snapshot": {
+        "episode": "EP26_PEMBUNUH_100_JIWA_BERTAUBAT",
+        "topic": "Lelaki yang membunuh 100 jiwa lalu bertaubat (HR Bukhari & Muslim, Abu Sa'id Al-Khudri)",
+        "style": "PAPERLANTERN",
+        "memoryEpisode": "short-baru-11-23-EP26",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:24:00.933Z",
+      "doing": "s4: render final TaubatFinal 1080x1920@60 (draf diterima 3.50 setelah 2 putaran)",
+      "command": "cd project && npm run render:final -- --comp=TaubatFinal --out=../FINAL_EP26_PEMBUNUH_100_JIWA_BERTAUBAT.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --title=... --slug=pembunuh-100-jiwa-bertaubat --ep=EP26",
+      "files": [
+        "FINAL_EP26_PEMBUNUH_100_JIWA_BERTAUBAT.mp4",
+        "SOCIAL_CAPTIONS.md"
+      ],
+      "next": "QA loudness -14 LUFS / TP < -1, ffprobe metadata, cek frame, record_score final (jury), validate captions, NOTES.md, lessons",
+      "snapshot": {
+        "episode": "EP26_PEMBUNUH_100_JIWA_BERTAUBAT",
+        "topic": "Lelaki yang membunuh 100 jiwa lalu bertaubat (HR Bukhari & Muslim, Abu Sa'id Al-Khudri)",
+        "style": "PAPERLANTERN",
+        "memoryEpisode": "short-baru-11-23-EP26",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:24:47.279Z",
+      "doing": "BLOCKER render final: G13 camera gate FAIL medianSpeed 0.015 < 0.04 (draft/camera.json dari klip lama CHECK_46-64s). Draf juri diterima 3.50 setelah 2 putaran; render:final perlu --skip-memory-gate=\"juri draf diterima 3.50 setelah 2 putaran (aturan pengguna 2026-11-23)\". SOCIAL_CAPTIONS.md + NOTES.md sudah ditulis; lesson PAPERLANTERN+GLOBAL sudah dicatat.",
+      "command": "cd project && npm run render:final -- --comp=TaubatFinal --out=../FINAL_EP26_PEMBUNUH_100_JIWA_BERTAUBAT.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Pembunuh 100 Jiwa yang Bertaubat\" --slug=pembunuh-100-jiwa-bertaubat --ep=EP26 --skip-memory-gate=\"...\"",
+      "files": [
+        "project/src/episode/Taubat.tsx",
+        "draft/camera.json",
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Naikkan gerak kamera (Cam z/x/y per adegan di Taubat.tsx, terutama adegan lambat) sampai medianSpeed >= 0.04; render klip cek 540x960 15-20 dtk + npm run audit:camera -- <clip> --json=../draft/camera.json; lalu render:final, QA -14 LUFS/TP<-1, ffprobe metadata, record_score final (self+jury), validate captions, update STATUS final+delivery, tampilkan caption.",
+      "snapshot": {
+        "episode": "EP26_PEMBUNUH_100_JIWA_BERTAUBAT",
+        "topic": "Lelaki yang membunuh 100 jiwa lalu bertaubat (HR Bukhari & Muslim, Abu Sa'id Al-Khudri)",
+        "style": "PAPERLANTERN",
+        "memoryEpisode": "short-baru-11-23-EP26",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:31:25.551Z",
+      "doing": "render final TaubatFinal (G13 kini lolos: medianSpeed 0.041 dari draft/CHECK2_46-64s.mp4; director drift Taubat.tsx dz 1.12+0.014*lt, orbit pan 55px)",
+      "command": "cd project && npm run render:final -- --comp=TaubatFinal --out=../FINAL_EP26_PEMBUNUH_100_JIWA_BERTAUBAT.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Pembunuh 100 Jiwa yang Bertaubat\" --slug=pembunuh-100-jiwa-bertaubat --ep=EP26 --skip-memory-gate=\"juri draf diterima 3.50 setelah 2 putaran (aturan pengguna 2026-11-23)\"",
+      "files": [
+        "project/src/episode/Taubat.tsx",
+        "draft/camera.json",
+        "draft/CHECK2_46-64s.mp4"
+      ],
+      "next": "QA -14 LUFS/TP<-1, ffprobe metadata, cek frame, record_score final self+jury, validate captions, update NOTES + STATUS final+delivery, tampilkan caption",
+      "snapshot": {
+        "episode": "EP26_PEMBUNUH_100_JIWA_BERTAUBAT",
+        "topic": "Lelaki yang membunuh 100 jiwa lalu bertaubat (HR Bukhari & Muslim, Abu Sa'id Al-Khudri)",
+        "style": "PAPERLANTERN",
+        "memoryEpisode": "short-baru-11-23-EP26",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:31:25.551Z",
+      "doing": "render final TaubatFinal (G13 kini lolos: medianSpeed 0.041 dari draft/CHECK2_46-64s.mp4; director drift Taubat.tsx dz 1.12+0.014*lt, orbit pan 55px)",
+      "command": "cd project && npm run render:final -- --comp=TaubatFinal --out=../FINAL_EP26_PEMBUNUH_100_JIWA_BERTAUBAT.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Pembunuh 100 Jiwa yang Bertaubat\" --slug=pembunuh-100-jiwa-bertaubat --ep=EP26 --skip-memory-gate=\"juri draf diterima 3.50 setelah 2 putaran (aturan pengguna 2026-11-23)\"",
+      "files": [
+        "project/src/episode/Taubat.tsx",
+        "draft/camera.json",
+        "draft/CHECK2_46-64s.mp4"
+      ],
+      "next": "QA -14 LUFS/TP<-1, ffprobe metadata, cek frame, record_score final self+jury, validate captions, update NOTES + STATUS final+delivery, tampilkan caption",
+      "snapshot": {
+        "episode": "EP26_PEMBUNUH_100_JIWA_BERTAUBAT",
+        "topic": "Lelaki yang membunuh 100 jiwa lalu bertaubat (HR Bukhari & Muslim, Abu Sa'id Al-Khudri)",
+        "style": "PAPERLANTERN",
+        "memoryEpisode": "short-baru-11-23-EP26",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T12:39:19.457Z"
+    }
+  ],
+  "session": 5,
+  "sessionLog": [
+    {
+      "no": 4,
+      "title": "EP26 Pembunuh 100 · s4",
+      "at": "2026-11-23T12:14:00.840Z"
+    },
+    {
+      "no": 5,
+      "title": "EP26 Pembunuh 100 · s5",
+      "at": "2026-11-23T12:24:47.279Z"
+    }
+  ]
+}

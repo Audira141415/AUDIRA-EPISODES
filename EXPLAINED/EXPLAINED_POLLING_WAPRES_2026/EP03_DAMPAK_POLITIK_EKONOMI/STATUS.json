@@ -1,0 +1,296 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP03_DAMPAK_POLITIK_EKONOMI",
+  "topic": "Polling dan proses penggantian wakil presiden Indonesia 2026 - kandidat, mekanisme MPR, dampak politik ekonomi",
+  "createdAt": "2026-11-16T17:53:19.946Z",
+  "updatedAt": "2026-11-17T01:29:20.391Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-16T17:53:33.182Z",
+          "text": "Channel EXPLAINED, style DATAPHYSICAL (pending approval), world3d engine"
+        }
+      ],
+      "doneAt": "2026-11-16T17:53:33.182Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-16T17:56:16.241Z",
+          "text": "shared report in _research/"
+        }
+      ],
+      "doneAt": "2026-11-16T17:56:16.241Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-16T18:00:14.391Z",
+      "notes": [
+        {
+          "at": "2026-11-16T18:00:14.391Z",
+          "text": "DATAPHYSICAL, user acc 2026-11-17"
+        }
+      ],
+      "doneAt": "2026-11-16T18:00:14.391Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-16T18:00:25.288Z",
+      "notes": [
+        {
+          "at": "2026-11-16T17:59:39.757Z",
+          "text": "sync: naskah ada; menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-16T18:00:25.288Z",
+          "text": "190 spoken words, user acc 2026-11-17"
+        }
+      ],
+      "startedAt": "2026-11-16T17:58:21.001Z",
+      "doneAt": "2026-11-16T18:00:25.288Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-16T22:16:48.898Z",
+          "text": "sync: dunia world3d disiapkan (project/world3d.js + project/hf/hyperframes.json)"
+        }
+      ],
+      "doneAt": "2026-11-16T18:30:52.047Z",
+      "startedAt": "2026-11-16T18:30:52.047Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-16T22:22:38.989Z",
+          "text": "VO 88.00s, Galang, 3 takes best, -16 LUFS"
+        }
+      ],
+      "doneAt": "2026-11-16T22:22:38.989Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-16T22:16:48.898Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-16T18:21:43.843Z",
+      "startedAt": "2026-11-16T18:21:43.843Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-16T23:16:20.253Z",
+      "notes": [
+        {
+          "at": "2026-11-16T18:38:50.001Z",
+          "text": "Jury 3.83 PERLU POLES (composition 3). look.json PASS. Balance scale concept strongest spatial idea."
+        },
+        {
+          "at": "2026-11-16T23:16:20.253Z",
+          "text": "User override: Acc, render final"
+        }
+      ],
+      "startedAt": "2026-11-16T18:38:50.001Z",
+      "doneAt": "2026-11-16T23:16:20.253Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-16T23:16:20.253Z",
+          "text": "FINAL_VIDEO.mp4 60fps, loudnorm -14 LUFS"
+        }
+      ],
+      "doneAt": "2026-11-16T23:16:20.253Z",
+      "startedAt": "2026-11-16T23:16:20.253Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-16T23:21:09.531Z",
+          "text": "SOCIAL_CAPTIONS.md validated, 6 platforms, jadwal upload 18-20 Nov 2026"
+        },
+        {
+          "at": "2026-11-17T01:29:20.391Z",
+          "text": "YouTube scheduled 18 Nov 2026 21:00 WIB (VMV5jt7eams). Title, desc, tags, AI label, chapters filled via Chrome."
+        }
+      ],
+      "startedAt": "2026-11-16T23:16:20.253Z",
+      "doneAt": "2026-11-17T01:29:20.391Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "polling-wapres-EP03",
+    "channel": "EXPLAINED",
+    "engine": "world3d",
+    "style": "DATAPHYSICAL",
+    "wordCount": 190,
+    "estimatedDuration": {
+      "wordCount": 190,
+      "minSec": 76,
+      "maxSec": 84
+    },
+    "voDuration": 88,
+    "voWords": 199
+  },
+  "syncedAt": "2026-11-16T22:16:48.898Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-16T18:05:20.407Z",
+      "doing": "Subagent builds world3d silent draft. Docs approved 2026-11-17. Net buy fixed to Rp 443,5 M after verification.",
+      "files": [
+        "project/world3d.js",
+        "project/build-video.mjs",
+        "project/mix.py",
+        "style/cover-topic.png",
+        "draft/contact-sheet.jpg",
+        "draft/look.json"
+      ],
+      "next": "Check draft/contact-sheet.jpg + draft/look.json, blind jury, then draft gate with user. No VO before draft approval.",
+      "snapshot": {
+        "episode": "EP03_DAMPAK_POLITIK_EKONOMI",
+        "topic": "Polling dan proses penggantian wakil presiden Indonesia 2026 - kandidat, mekanisme MPR, dampak politik ekonomi",
+        "style": "DATAPHYSICAL",
+        "memoryEpisode": "polling-wapres-EP03",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-16T18:38:50.086Z",
+      "doing": "Draft gate — awaiting user review of contact sheet and jury scores",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/look.json",
+        "style/cover-topic.png"
+      ],
+      "next": "If approved: VO, voice-lock, final 60fps, captions. If not: fix composition (s2 FG party blocks, s5 frame edge cut), re-sheet, re-jury.",
+      "snapshot": {
+        "episode": "EP03_DAMPAK_POLITIK_EKONOMI",
+        "topic": "Polling dan proses penggantian wakil presiden Indonesia 2026 - kandidat, mekanisme MPR, dampak politik ekonomi",
+        "style": "DATAPHYSICAL",
+        "memoryEpisode": "polling-wapres-EP03",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-16T18:38:50.086Z",
+      "doing": "Draft gate — awaiting user review of contact sheet and jury scores",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/look.json",
+        "style/cover-topic.png"
+      ],
+      "next": "If approved: VO, voice-lock, final 60fps, captions. If not: fix composition (s2 FG party blocks, s5 frame edge cut), re-sheet, re-jury.",
+      "snapshot": {
+        "episode": "EP03_DAMPAK_POLITIK_EKONOMI",
+        "topic": "Polling dan proses penggantian wakil presiden Indonesia 2026 - kandidat, mekanisme MPR, dampak politik ekonomi",
+        "style": "DATAPHYSICAL",
+        "memoryEpisode": "polling-wapres-EP03",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-16T22:10:32.475Z"
+    }
+  ]
+}

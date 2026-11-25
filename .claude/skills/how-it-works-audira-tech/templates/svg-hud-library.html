@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUDIRA TECH — Master Engineering HUD Overlays Library</title>
+  <style>
+    :root {
+      --cyan: #00F2FE;
+      --cyan-glow: rgba(0, 242, 254, 0.4);
+      --amber: #FFAA00;
+      --dark-bg: #0A0D14;
+      --panel-bg: rgba(16, 21, 32, 0.85);
+      --font-mono: 'JetBrains Mono', 'Consolas', monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--dark-bg);
+      color: #FFFFFF;
+      font-family: var(--font-mono);
+      padding: 40px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: var(--cyan);
+      font-size: 28px;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    p.subtitle {
+      color: #8892B0;
+      margin-bottom: 40px;
+      font-size: 14px;
+    }
+    .hud-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+      gap: 30px;
+    }
+    .hud-card {
+      background: var(--panel-bg);
+      border: 1px solid rgba(0, 242, 254, 0.2);
+      border-radius: 8px;
+      padding: 24px;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+    }
+    .hud-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+    }
+    .card-title {
+      font-size: 14px;
+      color: var(--cyan);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .preview-box {
+      width: 100%;
+      height: 220px;
+      background: #05070B;
+      border: 1px dashed rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    /* Glow Filter */
+    .glow-effect {
+      filter: drop-shadow(0 0 6px var(--cyan));
+    }
+    /* Rotating Crosshair Animation */
+    @keyframes spin-cw {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes spin-ccw {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(-360deg); }
+    }
+    .spin-cw {
+      transform-origin: center;
+      animation: spin-cw 12s linear infinite;
+    }
+    .spin-ccw {
+      transform-origin: center;
+      animation: spin-ccw 8s linear infinite;
+    }
+    /* Pulse Line Animation */
+    @keyframes line-dash {
+      to { stroke-dashoffset: -40; }
+    }
+    .flow-line {
+      stroke-dasharray: 8 6;
+      animation: line-dash 1.2s linear infinite;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>AUDIRA TECH // Engineering HUD Component Suite</h1>
+  <p class="subtitle">Katalog komponen grafis vektor & CSS animasi untuk layer compositing video teknik fotorealistik.</p>
+
+  <div class="hud-grid">
+
+    <!-- 01. Leader Line & Tech Pin -->
+    <div class="hud-card">
+      <div class="card-title">
+        <span>01. Leader Line & Pin</span>
+        <span style="color: #8892B0;">SVG Vector</span>
+      </div>
+      <div class="preview-box">
+        <svg width="380" height="150" viewBox="0 0 380 150">
+          <circle cx="40" cy="110" r="5" fill="#00F2FE" class="glow-effect" />
+          <circle cx="40" cy="110" r="10" fill="none" stroke="#00F2FE" stroke-width="1.5" opacity="0.6" />
+          <polyline points="40,110 110,40 340,40" fill="none" stroke="#00F2FE" stroke-width="2" class="glow-effect" />
+          <text x="120" y="32" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700">OPTICAL LENS ELEMENT</text>
+          <text x="120" y="55" fill="#00F2FE" font-family="'JetBrains Mono', monospace" font-size="11" opacity="0.8">TOLERANCE ±0.05 µm</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 02. Caliper & Dimension Gauge -->
+    <div class="hud-card">
+      <div class="card-title">
+        <span>02. Caliper Dimension Ruler</span>
+        <span style="color: #8892B0;">CAD Overlay</span>
+      </div>
+      <div class="preview-box">
+        <svg width="380" height="120" viewBox="0 0 380 120">
+          <!-- Caliper Horizontal Line -->
+          <line x1="60" y1="60" x2="320" y2="60" stroke="#00F2FE" stroke-width="1.5" />
+          <!-- Caliper Ticks -->
+          <line x1="60" y1="45" x2="60" y2="75" stroke="#00F2FE" stroke-width="3" />
+          <line x1="320" y1="45" x2="320" y2="75" stroke="#00F2FE" stroke-width="3" />
+          <!-- Measurement Label -->
+          <rect x="140" y="45" width="100" height="30" fill="#0A0D14" stroke="#00F2FE" stroke-width="1" />
+          <text x="190" y="65" fill="#00F2FE" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" text-anchor="middle">24.50 mm</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 03. Rotating Target Lock HUD -->
+    <div class="hud-card">
+      <div class="card-title">
+        <span>03. Rotating Target Lock</span>
+        <span style="color: #8892B0;">Microscopic Focal</span>
+      </div>
+      <div class="preview-box">
+        <svg width="180" height="180" viewBox="0 0 180 180">
+          <!-- Outer Dashed Ring -->
+          <circle cx="90" cy="90" r="70" fill="none" stroke="#00F2FE" stroke-width="1" stroke-dasharray="12 8" opacity="0.4" class="spin-cw" />
+          <!-- Inner Segmented Ring -->
+          <circle cx="90" cy="90" r="45" fill="none" stroke="#00F2FE" stroke-width="2" stroke-dasharray="40 30" class="spin-ccw glow-effect" />
+          <!-- Center Reticle -->
+          <line x1="90" y1="70" x2="90" y2="110" stroke="#FFAA00" stroke-width="1.5" />
+          <line x1="70" y1="90" x2="110" y2="90" stroke="#FFAA00" stroke-width="1.5" />
+          <circle cx="90" cy="90" r="3" fill="#FFAA00" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- 04. Fluid & Electrical Flow Vector -->
+    <div class="hud-card">
+      <div class="card-title">
+        <span>04. Vector Flow Direction</span>
+        <span style="color: #8892B0;">Kinematic Line</span>
+      </div>
+      <div class="preview-box">
+        <svg width="380" height="120" viewBox="0 0 380 120">
+          <path d="M 40,60 C 140,10 240,110 340,60" fill="none" stroke="#00F2FE" stroke-width="3" class="flow-line glow-effect" />
+          <text x="190" y="105" fill="#8892B0" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">REFRIGERANT VAPOR FLOW [R600a]</text>
+        </svg>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+

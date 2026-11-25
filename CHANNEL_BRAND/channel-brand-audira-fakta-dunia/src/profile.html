@@ -1,0 +1,25 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0}
+html,body{width:800px;height:800px;overflow:hidden;background:#0B3D2E}
+body{position:relative;background:radial-gradient(circle at 50% 45%,#0f4a38 0%,#0B3D2E 60%)}
+svg{position:absolute;inset:0}
+img{position:absolute;width:340px;left:236px;top:285px}
+</style></head><body>
+<!-- wireframe globe behind the Monolit symbol; kept inside the 640px circle crop -->
+<svg width="800" height="800" viewBox="-400 -400 800 800" fill="none">
+  <circle r="285" stroke="#00B894" stroke-opacity=".6" stroke-width="6"/>
+  <g transform="rotate(-18)" stroke="#00B894" stroke-opacity=".32" stroke-width="4">
+    <ellipse rx="95" ry="285"/>
+    <ellipse rx="200" ry="285"/>
+    <line y1="-285" y2="285"/>
+    <line x1="-247" x2="247" y1="-142" y2="-142"/>
+    <line x1="-285" x2="285" y1="0" y2="0"/>
+    <line x1="-247" x2="247" y1="142" y2="142"/>
+  </g>
+  <path d="M-230 150 Q -40 -330 215 -160" stroke="#FF6A3D" stroke-width="7" stroke-dasharray="20 16"/>
+  <circle cx="-230" cy="150" r="14" fill="#FF6A3D"/>
+  <circle cx="215" cy="-160" r="14" fill="#A3E635"/>
+</svg>
+<img src="symbol-reversed.svg" alt="AUDIRA">
+</body></html>

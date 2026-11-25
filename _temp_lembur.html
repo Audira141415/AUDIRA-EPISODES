@@ -1,0 +1,1067 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bedah Teknik Kit</title>
+<meta name="description" content="Starter kit Claude Code buat bikin video 3D cara kerja benda pakai brand channel kamu sendiri. Kamu yang ngarahin, Claude yang bikin.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+/* OPSI A "Studio Claude": halamannya kayak aplikasi. Semua gelap, isi tiap bagian = jendela/panel kerja.
+   Kuning cuma buat yang kamu putusin (pilihan di kotak tanya, tombol beli). Warna ditulis eksplisit, satu tampilan. */
+:root{
+  --bg:#0B0B0D; --p1:#121216; --p2:#18181D; --p3:#202027; --line:#2A2A32; --line2:#36363F;
+  --text:#F2F2F4; --mute:#A2A2AC; --dim:#6E6E78;
+  --amber:#FFC83D; --amber-d:#B98E14; --amber-bg:rgba(255,200,61,.10); --ok:#7EE29A; --warn:#FFB86B;
+  --sans:'Plus Jakarta Sans','Segoe UI',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,'Cascadia Mono',Consolas,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(rgba(255,255,255,.035) 1px, transparent 1px);background-size:22px 22px}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;text-wrap:balance;letter-spacing:-.02em}
+p{margin:0}
+code,.mono{font-family:var(--mono)}
+code{font-size:.88em;background:#24210F;color:var(--amber);padding:1px 6px;border-radius:5px;white-space:nowrap}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+section{padding-block:96px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--mute);text-transform:uppercase;display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:18px;height:2px;background:var(--amber);display:block}
+h2{font-size:clamp(28px,4vw,46px);font-weight:800;line-height:1.08;margin-top:14px;max-width:22ch}
+.lead{font-size:18px;color:#C4C4CC;max-width:60ch;margin-top:14px}
+.btn{display:inline-flex;align-items:center;gap:10px;font:800 16px/1 var(--sans);text-decoration:none;border:0;cursor:pointer;
+  background:var(--amber);color:#111;padding:16px 24px;border-radius:12px;box-shadow:0 5px 0 var(--amber-d);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 7px 0 var(--amber-d)}
+.btn:active{transform:translateY(3px);box-shadow:0 2px 0 var(--amber-d)}
+.btn.line{background:transparent;color:var(--text);box-shadow:inset 0 0 0 1.5px var(--line2)}
+.btn.line:hover{box-shadow:inset 0 0 0 1.5px var(--amber);color:var(--amber)}
+/* ISI = masih harus diputusin Aldy (hapus class sebelum tayang) */
+.isi{outline:2px dashed var(--amber);outline-offset:4px;border-radius:6px;position:relative}
+.isi::after{content:"ISI";position:absolute;top:-12px;right:-6px;font:700 10px/1 var(--mono);letter-spacing:.12em;background:var(--amber);color:#111;padding:3px 5px;border-radius:4px}
+
+/* jendela aplikasi (dipakai berulang) */
+.win{background:var(--p1);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 40px 80px -40px #000;min-width:0}
+.win-h{display:flex;align-items:center;gap:10px;height:42px;padding:0 14px;border-bottom:1px solid var(--line);background:var(--p2);font-family:var(--mono);font-size:12px;color:var(--mute)}
+.win-h .ico{width:10px;height:10px;border-radius:3px;background:var(--amber)}
+.win-h .ctl{margin-left:auto;display:flex;gap:14px;color:var(--dim);letter-spacing:.1em}
+.win-h .live{display:inline-flex;align-items:center;gap:6px;color:var(--ok)}
+.win-h .live::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ok)}
+
+/* chat */
+.chat{display:flex;flex-direction:column;gap:12px;padding:18px}
+.m{max-width:94%;font-size:14.5px;line-height:1.55}
+.m.u{align-self:flex-end;background:var(--p3);border:1px solid var(--line2);border-radius:14px 14px 4px 14px;padding:10px 14px}
+.m.a{align-self:flex-start}
+.m .by{display:block;font:700 10.5px/1 var(--mono);letter-spacing:.14em;color:var(--dim);margin-bottom:6px}
+.st{font-family:var(--mono);font-size:12.5px;color:var(--mute);display:grid;gap:4px}
+.st b{color:var(--ok);font-weight:700}
+.ask{border:1.5px solid var(--amber);border-radius:12px;background:var(--amber-bg);padding:12px;display:grid;gap:8px;width:100%}
+.ask .q{font-weight:800;font-size:14.5px}
+.ask .q small{display:block;font:500 11.5px/1.4 var(--mono);color:var(--mute);margin-top:2px}
+.ask blockquote{margin:0;background:var(--bg);border-radius:8px;padding:10px 12px;font-size:13.5px;color:#D8D8DE;line-height:1.55}
+.opt{display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px;align-items:start;font-size:13.5px;padding:7px 10px;border-radius:8px;border:1px solid var(--line2);background:var(--p1)}
+.opt i{font:700 11px/20px var(--mono);font-style:normal;color:var(--mute);text-align:center;border-radius:5px;background:var(--p3);height:20px}
+.opt.on{border-color:var(--amber);background:#2A2412}
+.opt.on i{background:var(--amber);color:#111}
+.opt em{font-style:normal;color:var(--mute);font-size:12px}
+
+/* app bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(11,11,13,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:21;background:var(--bg)}
+.bar .wrap{display:flex;align-items:center;gap:22px;height:60px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none}
+.logo i{width:22px;height:22px;border-radius:6px;background:var(--amber);display:grid;place-items:center;color:#111;font:800 11px/1 var(--mono);font-style:normal}
+.tabs{display:flex;gap:4px;margin-left:12px}
+.tabs a{font-family:var(--mono);font-size:12.5px;color:var(--mute);text-decoration:none;padding:7px 11px;border-radius:8px}
+.tabs a:hover{background:var(--p2);color:var(--text)}
+.bar .btn{margin-left:auto;padding:10px 16px;font-size:14px;box-shadow:0 4px 0 var(--amber-d)}
+
+/* hero */
+.hero{padding-block:64px 88px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:center}
+.tag{display:inline-flex;gap:8px;align-items:center;font:500 12px/1 var(--mono);letter-spacing:.08em;color:var(--mute);border:1px solid var(--line2);border-radius:999px;padding:8px 12px;background:var(--p1)}
+.tag b{color:var(--amber);font-weight:700}
+.hero h1{font-size:clamp(40px,5.6vw,66px);line-height:1.02;font-weight:800;letter-spacing:-.035em;margin-top:22px}
+.hero h1 span{color:var(--amber)}
+.hero .sub{font-size:18.5px;color:#C9C9D1;margin-top:20px;max-width:40ch}
+.buyrow{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:30px}
+.price{font-size:40px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.price small{display:block;font:500 12px/1.3 var(--mono);color:var(--mute);letter-spacing:.02em;margin-top:8px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.three{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px}
+.three span{font:500 12px/1 var(--mono);color:#D7D7DE;border:1px solid var(--line2);border-radius:8px;padding:8px 10px;background:var(--p1)}
+.three span b{color:var(--amber)}
+/* hero = rekaman sesi Claude: diketik → Claude bales → kursor milih jawaban → render → video diputar, lalu diulang */
+.studio{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 210px}
+.cpane{display:flex;flex-direction:column;min-width:0}
+.studio .chat{height:468px;overflow:hidden;padding:18px 18px 10px}
+.chat>.pop{animation:pop .35s ease both}
+@keyframes pop{from{opacity:0;transform:translateY(8px)}}
+.st1{font:500 12.5px/1.5 var(--mono);color:var(--mute);display:flex;gap:8px;align-items:center}
+.st1 b{color:var(--ok)}
+.sp{width:12px;height:12px;border-radius:50%;border:2px solid var(--line2);border-top-color:var(--amber);animation:spin .8s linear infinite;flex:none}
+.dots{display:inline-flex;gap:5px;padding:6px 2px}
+.dots i{width:7px;height:7px;border-radius:50%;background:var(--mute);animation:dot 1s infinite ease-in-out}
+.dots i:nth-child(2){animation-delay:.15s}.dots i:nth-child(3){animation-delay:.3s}
+@keyframes dot{0%,80%,100%{opacity:.25;transform:none}40%{opacity:1;transform:translateY(-3px)}}
+.opt{transition:border-color .2s,background .2s,opacity .3s}
+.opt.hov{border-color:var(--amber)}
+.ask.done .opt:not(.on){opacity:.3}
+.composer{display:flex;gap:10px;align-items:flex-end;margin:0 14px 14px;padding:10px 10px 10px 14px;border:1px solid var(--line2);border-radius:14px;background:var(--bg)}
+.cin{flex:1;min-width:0;min-height:22px;font-size:14px;line-height:1.5;color:var(--text);padding-bottom:4px}
+.cin .ph{color:var(--dim)}
+.cin .car{display:inline-block;width:2px;height:1.05em;background:var(--amber);vertical-align:-2px;margin-left:1px;animation:blink 1s steps(1) infinite}
+.send{width:32px;height:32px;border-radius:9px;background:var(--p3);color:var(--dim);display:grid;place-items:center;font:800 15px/1 var(--sans);flex:none;transition:background .2s,color .2s,transform .15s}
+.send.on{background:var(--amber);color:#111}
+.send.hit{transform:scale(.86)}
+.ptr{position:absolute;left:0;top:0;z-index:6;pointer-events:none;opacity:0;transition:transform .8s cubic-bezier(.45,0,.2,1),opacity .3s}
+.ptr.show{opacity:1}
+.ptr svg{display:block;transition:transform .12s;transform-origin:4px 3px;filter:drop-shadow(0 2px 3px rgba(0,0,0,.6))}
+.ptr.click svg{transform:scale(.8)}
+.ptr::after{content:"";position:absolute;left:-11px;top:-12px;width:28px;height:28px;border-radius:50%;border:2px solid var(--amber);opacity:0}
+.ptr.click::after{animation:ring .5s ease-out}
+@keyframes ring{from{opacity:.9;transform:scale(.3)}to{opacity:0;transform:scale(1.3)}}
+.pv{border-left:1px solid var(--line);background:#0E0E11;padding:14px;display:flex;flex-direction:column;gap:10px}
+.pv .lbl{font:500 11px/1 var(--mono);letter-spacing:.12em;color:var(--dim)}
+.screen{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:9/16;background:#141418;box-shadow:0 0 0 1px var(--line2)}
+.screen video{width:100%;height:100%;object-fit:cover;transition:opacity .6s}
+.screen .idle,.screen .wait{position:absolute;inset:0;display:grid;place-content:center;gap:10px;text-align:center;font:500 12px/1.4 var(--mono);color:var(--mute);transition:opacity .5s;pointer-events:none}
+.screen .idle{background:#141418;color:var(--dim)}
+.screen .wait{background:rgba(14,14,17,.9);opacity:0}
+.screen .wait i{width:28px;height:28px;border-radius:50%;border:3px solid var(--line2);border-top-color:var(--amber);margin:0 auto;animation:spin 1s linear infinite}
+.pbar{width:110px;max-width:80%;height:4px;border-radius:9px;background:var(--line2);overflow:hidden;margin:0 auto}
+.pbar b{display:block;height:100%;width:0;background:var(--amber);transition:width .1s linear}
+.studio.s-render .screen .wait{opacity:1}
+.studio.s-render .screen .idle,.studio.s-done .screen .idle{opacity:0}
+.studio:not(.s-done) .screen video{opacity:0}
+.pv .meta{font:500 11.5px/1.5 var(--mono);color:var(--mute);transition:opacity .4s}
+.pv .meta b{color:var(--ok)}
+.studio:not(.s-done) .pv .meta{opacity:.2}
+.replay{align-self:flex-start;margin-top:auto;font:600 12px/1 var(--mono);color:var(--mute);background:transparent;border:1px solid var(--line2);border-radius:999px;padding:8px 11px;cursor:pointer}
+.replay:hover{color:var(--amber);border-color:var(--amber)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.studio.boot *{transition:none!important}
+/* elemen khusus HP (disembunyiin di desktop) */
+.sum,.chev,.hint-m,.cmp-mini{display:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+.cap{margin-top:12px;font:500 12px/1.5 var(--mono);color:var(--dim)}
+
+/* log produksi */
+.log{list-style:none;margin:56px 0 0;padding:0;position:relative}
+.log::before{content:"";position:absolute;left:96px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--line2),var(--line2) 60%,transparent)}
+.ent{display:grid;grid-template-columns:76px 40px minmax(0,1fr);align-items:start;margin-bottom:28px}
+.ent time{font:700 15px/1 var(--mono);color:var(--mute);padding-top:20px;text-align:right}
+.ent .dot{width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--line2);margin:21px 0 0 13px;position:relative;z-index:1}
+.ent.you .dot{background:var(--amber);border-color:var(--amber);box-shadow:0 0 0 5px rgba(255,200,61,.18)}
+.ent.you time{color:var(--amber)}
+.card{background:var(--p1);border:1px solid var(--line);border-radius:16px;padding:20px 22px;min-width:0}
+.ent.you .card{border-color:rgba(255,200,61,.55)}
+.card-h{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.who{font:700 10.5px/1 var(--mono);letter-spacing:.14em;padding:5px 8px;border-radius:6px;background:var(--p3);color:var(--mute)}
+.ent.you .who{background:var(--amber);color:#111}
+.card h3{font-size:19px}
+.card .d{color:var(--mute);font-size:14.5px;margin-top:6px;max-width:70ch}
+.card .body{margin-top:16px}
+.card .ask{max-width:780px}
+.card .sub{display:block;font:700 10.5px/1 var(--mono);letter-spacing:.14em;color:var(--dim);margin:22px 0 10px}
+.card .body>.sub:first-child{margin-top:0}
+.twoask{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:14px;align-items:start}
+.stills.s4{grid-template-columns:repeat(4,minmax(0,1fr));max-width:440px}
+.stack{display:grid;gap:14px;min-width:0}
+.srcs{display:grid;gap:8px;list-style:none;margin:0;padding:0}
+.srcs li{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;font-size:14px;padding:9px 12px;background:var(--bg);border-radius:9px}
+.srcs .pub{font:600 12px/1.5 var(--mono);color:var(--text)}
+.srcs .pub small{display:block;color:var(--dim);font-weight:500}
+.srcs .more{display:block;font:500 12.5px/1.5 var(--mono);color:var(--mute);background:transparent;padding:4px 12px}
+.facts{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.fact{display:flex;align-items:center;gap:10px;font-size:14px;border:1px solid var(--line2);border-radius:10px;padding:8px 12px}
+.pill{font:700 10.5px/1 var(--mono);letter-spacing:.1em;padding:4px 7px;border-radius:5px}
+.pill.k{background:rgba(126,226,154,.15);color:var(--ok)}
+.pill.s{background:rgba(255,184,107,.15);color:var(--warn)}
+.wave{width:100%;height:84px;display:block}
+.wmeta{display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font:500 12.5px/1.4 var(--mono);color:var(--mute)}
+.wmeta b{color:var(--text)}
+.subs{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.subs span{background:#1E2A32;color:#fff;font-weight:700;font-size:14px;padding:6px 10px;border-radius:8px}
+.subs span u{text-decoration:none;color:var(--amber)}
+.stills{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:8px}
+.stills figure{margin:0}
+.stills img{border-radius:8px;aspect-ratio:9/16;object-fit:cover;width:100%}
+.stills figcaption{font:500 11px/1 var(--mono);color:var(--dim);margin-top:6px;text-align:center}
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-family:var(--mono);font-size:13px}
+.checks li{display:grid;grid-template-columns:22px 120px minmax(0,1fr);gap:8px;padding:8px 12px;background:var(--bg);border-radius:8px;color:#D4D4DB}
+.checks li::before{content:"✓";color:var(--ok);font-weight:700}
+.checks li.w::before{content:"!";color:var(--warn)}
+.checks span{color:var(--mute)}
+.draft{display:grid;grid-template-columns:220px minmax(0,1fr);gap:22px;align-items:start}
+.draft video{width:100%;aspect-ratio:9/16;border-radius:12px;background:#111}
+.final{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:22px;align-items:start}
+.tree{margin:0;background:var(--bg);border-radius:10px;padding:14px 16px;font:500 13px/1.85 var(--mono);color:#D4D4DB;overflow-x:auto;white-space:pre}
+.tree .f{color:var(--amber)}
+.tree .c{color:var(--dim)}
+.covers{display:flex;gap:10px;align-items:flex-end}
+.covers img{border-radius:8px;box-shadow:0 0 0 1px var(--line2)}
+.covers figure{margin:0}
+.covers figcaption{font:500 11px/1 var(--mono);color:var(--dim);margin-top:6px}
+.note{margin-top:14px;font-size:13.5px;color:var(--mute)}
+
+/* banding cara lain (diambil dari opsi B, gaya panel) */
+.cmp{margin-top:48px}
+.cmp .tw{overflow-x:auto}
+.cmp table{width:100%;border-collapse:collapse;min-width:860px;color:var(--text);font-size:14.5px}
+.cmp th{text-align:left;font:700 11.5px/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mute);padding:14px 18px;border-bottom:1px solid var(--line)}
+.cmp td{padding:16px 18px;border-bottom:1px solid var(--line);vertical-align:top;color:#C9C9D1}
+.cmp tbody tr:last-child td{border-bottom:0}
+.cmp td:first-child{font-weight:800;color:var(--text);width:22%}
+.cmp tr.us td{background:#1F1B0E;color:var(--text)}
+.cmp tr.us td:first-child{box-shadow:inset 4px 0 0 var(--amber)}
+.cmp .x{color:var(--warn)}
+.cmp .v{color:var(--ok)}
+.cmp .sm{display:block;font-size:12.5px;color:var(--dim);font-weight:500;margin-top:2px}
+
+/* brand: cukup baris info + 3 sampul mini */
+section.slim{padding-block:0 48px}
+.brandrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;border:1px solid var(--line);border-radius:18px;background:var(--p1);padding:22px 26px}
+.brandrow .bh{font-size:clamp(19px,2.2vw,24px);font-weight:800;line-height:1.25;margin-top:10px}
+.brandrow .bt{color:var(--mute);font-size:15px;margin-top:6px;max-width:58ch}
+.thumbs{display:flex;gap:8px}
+.thumbs img{width:66px;aspect-ratio:9/16;object-fit:cover;border-radius:8px;box-shadow:0 0 0 1px var(--line2)}
+.brandrow .bx{grid-column:1/-1;margin:0;padding-top:14px;border-top:1px solid var(--line);font-size:14.5px;color:#D7D7DE}
+.brandrow .bx b{color:var(--amber)}
+
+/* setup */
+.setup{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:28px;margin-top:48px;align-items:start}
+.term{margin:0;background:var(--bg);border-radius:10px;padding:12px 14px;font:500 12.5px/1.75 var(--mono);color:#D4D4DB;white-space:pre;overflow-x:auto}
+.term .ok{color:var(--ok)}.term .y{color:var(--amber);font-weight:700}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.steps li{display:grid;grid-template-columns:40px minmax(0,1fr);gap:14px;padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--p1)}
+.steps .no{width:40px;height:40px;border-radius:10px;border:1.5px solid var(--amber);color:var(--amber);display:grid;place-items:center;font:700 16px/1 var(--mono)}
+.steps h3{font-size:17px}
+.steps p{font-size:14.5px;color:var(--mute);margin-top:4px}
+
+/* explorer */
+.exp{display:grid;grid-template-columns:330px minmax(0,1fr);margin-top:48px}
+.ft{list-style:none;margin:0;padding:10px;border-right:1px solid var(--line);font:500 13.5px/1 var(--mono)}
+.ft button{display:flex;align-items:center;gap:8px;width:100%;text-align:left;background:transparent;border:0;color:#D4D4DB;font:inherit;padding:9px 10px;border-radius:8px;cursor:pointer}
+.ft button:hover{background:var(--p2)}
+.ft button[aria-selected="true"]{background:#2A2412;color:var(--amber)}
+.ft .l1{padding-left:28px}.ft .l2{padding-left:46px}
+.ft .dir{color:var(--mute);padding:9px 10px;display:block}
+.ft .l1.dir{padding-left:28px}
+.ft i{font-style:normal;color:var(--dim);width:14px;text-align:center}
+.fp{padding:26px 28px;min-height:420px}
+.fp .path{font:500 12.5px/1 var(--mono);color:var(--dim)}
+.fp h3{font-size:24px;margin-top:10px}
+.fp p{color:#C4C4CC;margin-top:10px;max-width:56ch}
+.fp ul{margin:14px 0 0;padding-left:18px;color:#C4C4CC}
+.fp .imgs{display:flex;gap:14px;margin-top:20px;align-items:flex-end}
+.fp .imgs img{width:min(200px,44%);border-radius:8px;box-shadow:0 20px 40px -20px #000}
+.counts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:20px}
+.counts div{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--p1)}
+.counts b{display:block;font-size:26px;font-weight:800;color:var(--amber);line-height:1.1}
+.counts span{font-size:13.5px;color:var(--mute)}
+
+/* harga */
+.dlg{margin-top:48px;border:1.5px solid var(--amber);border-radius:20px;background:var(--p1);overflow:hidden}
+.dlg-h{display:flex;align-items:center;gap:12px;padding:14px 20px;background:#1F1B0E;border-bottom:1px solid rgba(255,200,61,.3);font:700 12px/1 var(--mono);letter-spacing:.12em;color:var(--amber)}
+.dlg-b{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0}
+.offer{padding:30px;border-right:1px solid var(--line)}
+.offer .was{display:inline-block;margin-bottom:6px;font:500 14px/1 var(--mono);color:var(--mute);text-decoration:line-through}
+.offer .now{font-size:54px;font-weight:800;letter-spacing:-.03em;line-height:1.05;margin-top:8px}
+.offer .per{color:var(--mute);font-size:14px;margin-top:6px}
+.offer ul{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:10px}
+.offer li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:10px;font-size:15px}
+.offer li::before{content:"✓";color:var(--amber);font-weight:800}
+.quota{margin-top:22px;background:var(--bg);border-radius:12px;padding:14px 16px}
+.quota .t{font:700 11px/1 var(--mono);letter-spacing:.12em;color:var(--mute)}
+.quota .barx{height:8px;background:#2C2C34;border-radius:99px;margin-top:10px;overflow:hidden}
+.quota .barx i{display:block;height:100%;width:64%;background:var(--amber)}
+.form{padding:30px}
+.form h3{font-size:19px}
+.field{display:grid;gap:6px;margin-top:14px}
+.field label{font-weight:700;font-size:14px}
+.field input{font:inherit;font-size:16px;padding:13px 14px;border:1.5px solid var(--line2);border-radius:10px;background:var(--bg);color:var(--text);width:100%}
+.field input::placeholder{color:var(--dim)}
+.field input:focus{outline:none;border-color:var(--amber);box-shadow:0 0 0 3px rgba(255,200,61,.25)}
+.field small{color:var(--mute);font-size:12.5px}
+.paylbl{display:block;margin-top:20px;font:700 11px/1 var(--mono);letter-spacing:.12em;color:var(--mute)}
+.pay{display:grid;gap:8px;margin-top:10px}
+.pay label{display:grid;grid-template-columns:24px minmax(0,1fr);gap:10px;align-items:center;border:1.5px solid var(--line2);border-radius:10px;padding:11px 12px;cursor:pointer;background:var(--bg)}
+.pay input{accent-color:#FFC83D;margin:0}
+.pay label:has(input:checked){border-color:var(--amber);background:#2A2412}
+.pay b{display:block;font-size:14.5px}.pay span{font-size:12.5px;color:var(--mute)}
+.total{display:flex;justify-content:space-between;align-items:center;margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-weight:800}
+.form .btn{width:100%;justify-content:center;margin-top:16px}
+.fine{font-size:12.5px;color:var(--mute);margin-top:12px;text-align:center}
+.msg{margin-top:12px;font-size:14px;background:#2A2412;color:var(--amber);border-radius:10px;padding:10px 12px}
+.req{margin-top:22px;border:1px solid var(--line);border-radius:16px;background:var(--p1);overflow:hidden}
+.req h3{font:700 12px/1 var(--mono);letter-spacing:.12em;color:var(--mute);padding:14px 20px;border-bottom:1px solid var(--line)}
+.req dl{margin:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.req dl div{padding:16px 20px;border-left:1px solid var(--line)}
+.req dl div:first-child{border-left:0}
+.req dt{font-weight:800;font-size:15px}
+.req dd{margin:4px 0 0;font-size:13.5px;color:var(--mute)}
+
+/* tanya */
+.qa{margin-top:36px;max-width:860px;border-top:1px solid var(--line)}
+.qa details{border-bottom:1px solid var(--line)}
+.qa summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 2px;font-weight:700;font-size:16.5px}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"+";flex:none;width:28px;height:28px;border-radius:50%;border:1.5px solid var(--line2);display:grid;place-items:center;font:600 16px/1 var(--mono);color:var(--amber)}
+.qa summary:hover::after{border-color:var(--amber)}
+.qa details[open] summary::after{content:"–";border-color:var(--amber)}
+.qa .ans{margin:0;padding:0 2px 18px;color:#C4C4CC;font-size:15.5px;max-width:70ch}
+
+/* akhir: palet perintah */
+.cmdk{margin-top:8px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--p1);border:1.5px solid var(--line2);border-radius:18px;padding:14px 14px 14px 22px}
+.cmdk .in{flex:1;min-width:240px;font:500 clamp(16px,2.2vw,22px)/1.3 var(--mono);color:var(--text)}
+.cmdk .in span{color:var(--mute)}
+.cmdk .in i{display:inline-block;width:10px;height:1.1em;background:var(--amber);vertical-align:-3px;margin-left:4px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.endh{font-size:clamp(28px,4vw,44px);font-weight:800;line-height:1.1;margin-bottom:26px;max-width:22ch}
+.mail{font-family:var(--mono);user-select:all}
+footer{padding-block:32px 110px;color:var(--mute);font-size:13.5px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:14px 28px}
+
+.mbar{display:none}
+@media (max-width:980px){
+  .hero .wrap,.setup,.dlg-b{grid-template-columns:minmax(0,1fr)}
+  .studio{grid-template-columns:minmax(0,1fr) 150px}
+  .offer{border-right:0;border-bottom:1px solid var(--line)}
+  .req dl{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .req dl div:nth-child(3){border-left:0}
+  .req dl div:nth-child(n+3){border-top:1px solid var(--line)}
+  .stills{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .tabs{display:none}
+}
+@media (max-width:720px){
+  section{padding-block:68px}
+  .term{font-size:11px}
+  .hero{padding-block:36px 64px}
+  .studio{grid-template-columns:minmax(0,1fr)}
+  .studio .chat{height:400px}
+  .replay{margin-top:0}
+  .pv{border-left:0;border-top:1px solid var(--line);flex-direction:row;align-items:flex-start}
+  .pv .screen{width:130px;flex:none}
+  /* HP: garis + titik di kolom kiri sendiri, jam & kartu di kanan garis (garis nggak lewat di belakang kartu) */
+  .log::before{left:10px}
+  .ent{grid-template-columns:22px minmax(0,1fr);column-gap:12px}
+  .ent time{grid-column:2;grid-row:1;text-align:left;padding:0 0 8px}
+  .ent .dot{grid-column:1;grid-row:1;margin:1px 0 0 4px}
+  .ent .card{grid-column:2;grid-row:2;padding:16px}
+  .srcs li{grid-template-columns:minmax(0,1fr);gap:4px}
+  .checks li{grid-template-columns:22px minmax(0,1fr)}
+  .checks li span{grid-column:2}
+  .draft,.final,.twoask{grid-template-columns:minmax(0,1fr)}
+  .draft video{max-width:240px}
+  .exp{grid-template-columns:minmax(0,1fr)}
+  .ft{border-right:0;border-bottom:1px solid var(--line)}
+  .fp{min-height:0;padding:22px}
+  .counts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .req dl{grid-template-columns:minmax(0,1fr)}
+  .req dl div{border-left:0!important;border-top:1px solid var(--line)}
+  .req dl div:first-child{border-top:0}
+  .qa summary{font-size:15.5px;padding:16px 0}
+  /* HP: tabel banding besar diganti tabel mini pakai tanda (Aldy 2/11) */
+  .cmp{display:none}
+  .cmp-mini{display:block;margin-top:28px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--p1)}
+  .cmp-mini table{width:100%;border-collapse:collapse;table-layout:fixed;color:var(--text);font-size:12px;line-height:1.3}
+  .cmp-mini th,.cmp-mini td{padding:10px 4px;text-align:center;vertical-align:top;border-bottom:1px solid var(--line)}
+  .cmp-mini tbody tr:last-child th,.cmp-mini tbody tr:last-child td{border-bottom:0}
+  .cmp-mini thead th{font:700 9.5px/1.25 var(--mono);letter-spacing:.03em;text-transform:uppercase;color:var(--mute);padding:12px 3px}
+  .cmp-mini tbody th{text-align:left;padding-left:12px;font:700 9.5px/1.3 var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--dim)}
+  .cmp-mini col.k{width:64px}
+  .cmp-mini .us{background:#1F1B0E}
+  .cmp-mini thead .us{color:var(--amber)}
+  .cmp-mini b{display:block;font:800 15px/1 var(--sans);margin-bottom:4px}
+  .cmp-mini .y b{color:var(--ok)}.cmp-mini .t b{color:var(--mute)}.cmp-mini .n b{color:var(--warn)}
+  .cmp-mini .t b{font-size:24px;line-height:15px}
+  .cmp-mini td span{color:#C9C9D1}
+  .cmp-mini .leg{margin:0;padding:10px 12px;border-top:1px solid var(--line);font:500 11px/1.4 var(--mono);color:var(--dim)}
+  /* HP: kartu log dilipat jadi judul + 1 baris, ketuk buat buka (Aldy 2/11) */
+  .log{margin-top:28px}
+  .ent{margin-bottom:16px}
+  .ent .card .d,.ent .card .body{display:none}
+  .ent .card.open .d,.ent .card.open .body{display:block}
+  .ent .card.open .body.draft,.ent .card.open .body.twoask{display:grid}
+  .card-h{cursor:pointer;position:relative;padding-right:26px;-webkit-tap-highlight-color:transparent}
+  .card-h h3{font-size:17px}
+  .sum{display:block;margin-top:6px;font:500 12.5px/1.45 var(--mono);color:var(--mute);cursor:pointer}
+  .ent .card.open .sum{display:none}
+  .chev{display:block;position:absolute;right:0;top:50%;transform:translateY(-50%);font:700 18px/1 var(--mono);color:var(--amber);transition:transform .2s}
+  .card.open .chev{transform:translateY(-50%) rotate(90deg)}
+  .hint-m{display:block;margin-top:10px;font:500 12.5px/1.4 var(--mono);color:var(--amber)}
+  /* HP: pasang = cek PC + 1 pertanyaan, langkah jadi baris kecil (Aldy 2/11) */
+  .m-hide{display:none!important}
+  .setup{gap:14px;margin-top:28px}
+  .steps{gap:8px}
+  .steps li{grid-template-columns:30px minmax(0,1fr);gap:10px;padding:11px 14px;align-items:center}
+  .steps .no{width:30px;height:30px;font-size:13px;border-radius:8px}
+  .steps h3{font-size:15px}
+  .steps p{display:none}
+  /* HP: baris brand jadi tumpuk, sampul mini dipotong 3:4 */
+  .brandrow{grid-template-columns:minmax(0,1fr);gap:14px;padding:18px}
+  .thumbs img{flex:1;width:auto;min-width:0;aspect-ratio:3/4;object-position:50% 20%}
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;align-items:center;gap:14px;background:rgba(11,11,13,.96);border-top:1px solid var(--line);
+    padding:12px max(16px,env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+  .mbar .p{font-weight:800;font-size:20px;line-height:1.1}
+  .mbar .p small{display:block;font:500 11px/1.3 var(--mono);color:var(--mute)}
+  .mbar .btn{margin-left:auto;padding:12px 20px;box-shadow:0 4px 0 var(--amber-d)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+<style>.lembur-tombol-bayar{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:48px;padding:14px 26px;border-radius:999px;background:#C9A15A;color:#0A1222;font-family:inherit;font-weight:700;font-size:16px;line-height:1.2;text-decoration:none;box-shadow:0 8px 24px rgba(201,161,90,.25)}.lembur-tombol-bayar:hover{filter:brightness(1.06)}.lembur-tombol-bayar:focus-visible{outline:3px solid #F4EFE6;outline-offset:3px}</style><script>(function(w,d,id){w.dataLayer=w.dataLayer||[];w.dataLayer.push({event:'klipdong_page_view',page_path:location.pathname,page_type:'skill'});w.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});var s=d.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id='+id;d.head.appendChild(s);})(window,document,"GTM-NWBXN4VF");</script></head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="#top"><i>BT</i>Bedah Teknik Kit</a>
+    <nav class="tabs" aria-label="Bagian halaman">
+      <a href="#log">Produksi</a><a href="#banding">Dibanding</a><a href="#brand">Brand</a><a href="#mulai">Pasang</a><a href="#isi">Isi zip</a><a href="#tanya">Tanya</a>
+    </nav>
+    <a class="btn" href="#beli" data-cta="topbar">Beli kit</a>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO: sesi Claude beneran (pesan muncul satu-satu), panel kanan = draf video yang jadi -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="tag"><b>●</b> STARTER KIT CLAUDE CODE · WINDOWS <span data-isi="mac">&amp; MAC</span></span>
+      <h1>Kamu yang ngarahin. <span>Claude yang bikin videonya.</span></h1>
+      <p class="sub">Kit buat bikin video 3D "cara kerja benda" pakai nama, logo, dan suara channel kamu sendiri. Langsung jadi format MP4, siap upload.</p>
+      <div class="buyrow">
+        <div class="price" data-price="utama">Rp 249.000</div>
+        <span class="price-note" style="display:block;font:500 13px/1.45 var(--mono);color:var(--mute);margin-top:8px"><s data-price="coret">Rp 500.000</s><br><strong style="color:var(--text)">Harga perkenalan</strong> · sisa <span data-isi="sisa-slot">68</span> slot</span>
+      </div>
+      <div class="ctas">
+        <a class="btn" href="#beli" data-cta="hero">Beli kit <span aria-hidden="true">→</span></a>
+        <a class="btn line" href="#log">Liat cara bikinnya</a>
+      </div>
+      <div class="three" aria-label="Tiga hal yang kamu putusin">
+        <span><b>1</b> acc naskah</span><span><b>2</b> izinin biaya suara</span><span><b>3</b> acc draf</span>
+      </div>
+    </div>
+
+    <div>
+      <!-- tanpa JS: tampil keadaan akhir (s-done + isi statis); dengan JS: diputar ulang sebagai rekaman sesi -->
+      <div class="win studio s-done" id="studio">
+        <div style="grid-column:1/-1" class="win-h"><span class="ico"></span>Claude · bedah-teknik-kit<span class="ctl"><span class="live">sesi jalan</span></span></div>
+        <p class="sr">Contoh sesi: kamu ketik /bikin-video menara SUTET, Claude riset dan nulis naskah, kamu acc naskah dan izinin biaya suara, Claude rekam suara, bikin animasi 3D, render, lalu draf video siap ditonton dan kamu pilih lanjut final.</p>
+        <div class="cpane" aria-hidden="true">
+          <div class="chat" id="chat">
+            <div class="m u"><span class="by">KAMU</span><code>/bikin-video</code> menara SUTET di puncak bukit, gimana bangunnya?</div>
+            <div class="m a st1"><b>✓</b>Riset: 16 tautan sumber, 2 angka dipakai</div>
+            <div class="m a st1"><b>✓</b>Naskah 197 kata: hook → langkah → payoff</div>
+            <div class="m a ask done">
+              <div class="q">Naskah siap. Acc?<small>197 kata · ±77 detik</small></div>
+              <blockquote>"Menara listrik raksasa ini berdiri di puncak bukit. Nggak ada jalan, truk sama crane nggak bisa naik. …"</blockquote>
+              <div class="opt on"><i>a</i><span>Oke, rekam <em>(rekomendasi)</em></span></div>
+              <div class="opt"><i>b</i><span>Revisi</span></div>
+              <div class="opt"><i>c</i><span>Ganti sudut</span></div>
+            </div>
+            <div class="m a st1"><b>✓</b>Suara, animasi 3D, render + cek kualitas: lolos</div>
+          </div>
+          <div class="composer"><div class="cin" id="cin"><span class="ph">Ketik pesan ke Claude…</span></div><span class="send" id="csend">↑</span></div>
+        </div>
+        <div class="pv">
+          <span class="lbl" id="pvLbl">DRAF 1</span>
+          <div class="screen">
+            <video id="heroVid" src="/api/kit/skill/aset/bedah/contoh-sutet.mp4?v=47130273ff" poster="/api/kit/skill/aset/bedah/poster.jpg?v=47130273ff" muted loop playsinline preload="metadata" aria-label="Contoh video dari kit: menara SUTET"></video>
+            <div class="idle" aria-hidden="true">belum ada draf</div>
+            <div class="wait" aria-hidden="true"><i></i><span id="pct">render 0%</span><div class="pbar"><b id="pbar"></b></div></div>
+          </div>
+          <div class="meta"><b>✓</b> 1080×1920<br><b>✓</b> 76,8 dtk<br><b>✓</b> 2 sampul</div>
+          <button class="replay" id="replay" type="button" hidden>↻ putar ulang</button>
+        </div>
+        <div class="ptr" id="ptr" aria-hidden="true"><svg width="22" height="26" viewBox="0 0 22 26"><path d="M3 2l15 12.6-6.7.9 3.9 7.9-3.1 1.5-3.9-8L3 21z" fill="#fff" stroke="#111" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+      </div>
+      <p class="cap">Video di panel kanan = contoh asli yang ikut di dalam kit (masih pakai brand bawaan).</p>
+    </div>
+  </div>
+</section>
+
+<!-- LOG PRODUKSI: 5 kartu, isi dari file asli contoh SUTET; jam cuma ilustrasi (Aldy 2/11: mulai 08.00, beres 12.00) -->
+<section id="log">
+  <div class="wrap">
+    <span class="eyebrow">Dari topik ke MP4</span>
+    <h2>Jam 8 kasih topik, jam 12 videonya siap upload.</h2>
+    <p class="lead">Isi kartunya dari file asli contoh SUTET di kit. Jamnya ilustrasi, tergantung PC dan topik. Titik kuning = giliran kamu.</p>
+    <p class="hint-m">Ketuk kartu buat liat isi aslinya ›</p>
+
+    <ol class="log">
+      <li class="ent you"><time>08.00</time><span class="dot"></span>
+        <div class="card"><div class="card-h"><span class="who">KAMU</span><h3>Kasih topik</h3></div><p class="sum">"/bikin-video menara SUTET di puncak bukit…"</p>
+          <p class="d">Satu kalimat, atau biarin Claude ngambil dari bank topik kamu.</p>
+          <div class="body"><div class="m u" style="display:inline-block;max-width:100%"><code>/bikin-video</code> menara SUTET di puncak bukit, gimana bangunnya?</div></div>
+        </div></li>
+
+      <li class="ent"><time>08.05</time><span class="dot"></span>
+        <div class="card"><div class="card-h"><span class="who">CLAUDE</span><h3>Riset + naskah</h3></div><p class="sum">16 tautan sumber · naskah 197 kata</p>
+          <p class="d">Tiap angka dicatat sama alamat dan tanggalnya. Yang buktinya lemah ditandain, nggak dipaksa masuk naskah.</p>
+          <div class="body">
+            <ul class="srcs">
+              <li><span class="pub">CNBC Indonesia<small>9 Des 2025</small></span><span>Material 35 ton diangkut helikopter satu per satu ke lokasi menara.</span></li>
+              <li><span class="pub">Kontan<small>31 Jul 2015</small></span><span>Jalur 500 kV: 2 menara per km, 80 ton baja per km.</span></li>
+              <li><span class="pub">EVN<small>Apr 2025</small></span><span>Menara 500 kV setinggi 59 m, 50 ton, crane nggak bisa masuk.</span></li>
+              <li class="more">+ 13 tautan lain di sumber.md</li>
+            </ul>
+            <div class="facts">
+              <span class="fact">"puluhan ton baja" per menara <span class="pill k">KUAT</span></span>
+              <span class="fact">"sampai enam puluh meter" <span class="pill s">SEDANG</span></span>
+            </div>
+          </div>
+        </div></li>
+
+      <li class="ent you"><time>08.30</time><span class="dot"></span>
+        <div class="card"><div class="card-h"><span class="who">KAMU</span><h3>Acc naskah &amp; biaya suara</h3></div><p class="sum">kamu acc naskah + izinin biaya suara</p>
+          <p class="d">Naskah lengkap dan perkiraan biaya muncul di kotak tanya. Belum kamu izinin, belum direkam.</p>
+          <div class="body twoask">
+            <div class="ask">
+              <div class="q">Naskah siap. Acc?<small>197 kata · ±77 detik</small></div>
+              <blockquote>"Menara listrik raksasa ini berdiri di puncak bukit. Nggak ada jalan, truk sama crane nggak bisa naik. Terus, bangunnya gimana? …"</blockquote>
+              <div class="opt on"><i>a</i><span>Oke, rekam <em>(rekomendasi)</em></span></div>
+              <div class="opt"><i>b</i><span>Revisi</span></div>
+              <div class="opt"><i>c</i><span>Ganti sudut</span></div>
+            </div>
+            <div class="ask">
+              <div class="q">Rekam narasi 1.319 huruf?<small>perkiraan biaya disebut dulu, belum direkam sebelum kamu izinin</small></div>
+              <div class="opt on"><i>a</i><span>Rekam sekarang <em>(rekomendasi)</em></span></div>
+              <div class="opt"><i>b</i><span>Uji kalimat pembuka dulu</span></div>
+            </div>
+          </div>
+        </div></li>
+
+      <li class="ent"><time>08.35</time><span class="dot"></span>
+        <div class="card"><div class="card-h"><span class="who">CLAUDE</span><h3>Suara, animasi 3D, render</h3></div><p class="sum">76,9 dtk · −16,3 LUFS · 4 cek lolos</p>
+          <p class="d">±3 jam Claude kerja sendiri, kamu bebas ngerjain yang lain. Hasilnya dicek otomatis, laporannya jujur.</p>
+          <div class="body">
+            <span class="sub">NARASI + SUBTITLE</span>
+            <svg class="wave" id="wave" viewBox="0 0 700 84" preserveAspectRatio="none" role="img" aria-label="Gelombang suara narasi contoh SUTET, 76,9 detik"></svg>
+            <div class="wmeta"><span style="color:var(--amber)">■ hook 8,7 dtk</span><span><b>76,9</b> detik</span><span><b>−16,3</b> LUFS</span><span><b>36</b> baris subtitle</span></div>
+            <span class="sub">ANIMASI 3D · STILL DICEK SATU-SATU</span>
+            <div class="stills s4">
+              <figure><img src="/api/kit/skill/aset/bedah/beat-01.jpg?v=47130273ff" alt="" loading="lazy"><figcaption>0:00</figcaption></figure>
+              <figure><img src="/api/kit/skill/aset/bedah/beat-05.jpg?v=47130273ff" alt="" loading="lazy"><figcaption>0:10</figcaption></figure>
+              <figure><img src="/api/kit/skill/aset/bedah/beat-08.jpg?v=47130273ff" alt="" loading="lazy"><figcaption>0:51</figcaption></figure>
+              <figure><img src="/api/kit/skill/aset/bedah/beat-10.jpg?v=47130273ff" alt="" loading="lazy"><figcaption>1:12</figcaption></figure>
+            </div>
+            <span class="sub">RENDER ±1,5 MENIT (RTX 3080 TI) + CEK OTOMATIS</span>
+            <ul class="checks">
+              <li>Format<span>1080×1920 · 30 fps · 76,8 dtk</span></li>
+              <li>Suara<span>−16,3 LUFS</span></li>
+              <li>Kamera &amp; kedip<span>lolos cek otomatis</span></li>
+              <li>Sampul<span>kebaca di potongan grid 3:4</span></li>
+              <li class="w">Catatan<span>audio baru diukur, belum didengar manusia. Itu tugas kamu pas nonton draf.</span></li>
+            </ul>
+          </div>
+        </div></li>
+
+      <li class="ent you"><time>12.00</time><span class="dot"></span>
+        <div class="card"><div class="card-h"><span class="who">KAMU</span><h3>Acc draf, folder siap upload</h3></div><p class="sum">kamu pilih "Lanjut final" → MP4 + 2 sampul</p>
+          <p class="d">Tonton drafnya, pilih lanjut. Upload-nya tetap kamu yang pencet.</p>
+          <div class="body draft">
+            <video src="/api/kit/skill/aset/bedah/contoh-sutet.mp4?v=47130273ff" poster="/api/kit/skill/aset/bedah/poster.jpg?v=47130273ff" controls playsinline preload="none"></video>
+            <div class="stack">
+              <div class="ask">
+                <div class="q">Draf 1 siap. Lanjut final?<small>revisi selalu jadi draf baru, yang lama nggak ditimpa</small></div>
+                <div class="opt on"><i>a</i><span>Lanjut final <em>(rekomendasi)</em></span></div>
+                <div class="opt"><i>b</i><span>Revisi</span></div>
+              </div>
+<pre class="tree"><span class="f">Eps.1 - Menara SUTET - Bangunnya gimana/</span>
+├─ ep01_menara-sutet_1080x1920.mp4
+├─ cover_1080x1920.png
+├─ cover_1080x1350.png
+└─ ep01_judul-caption-hashtag.txt</pre>
+            </div>
+          </div>
+        </div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- BANDING: perbandingan umum sama cara lain (dari opsi B, permintaan Aldy); harga animator diisi Aldy -->
+<section id="banding">
+  <div class="wrap">
+    <span class="eyebrow">Dibanding cara lain</span>
+    <h2>Video kayak gini biasanya dibikin gimana?</h2>
+    <div class="win cmp">
+      <div class="win-h"><span class="ico"></span>4 cara bikin video 3D cara kerja benda</div>
+      <div class="tw"><table>
+        <thead><tr><th>Cara</th><th>Biaya per video</th><th>Waktu per video</th><th>Brand konsisten</th><th>Mekanisme bener &amp; bersumber</th></tr></thead>
+        <tbody>
+          <tr><td data-k="Cara">Belajar animasi 3D sendiri</td><td data-k="Biaya"><div>Software bisa gratis<span class="sm">tapi belajarnya berbulan-bulan</span></div></td><td data-k="Waktu"><div>Hitungan hari</div></td><td data-k="Brand"><div>Tergantung disiplin kamu</div></td><td data-k="Sumber"><div>Tergantung riset kamu</div></td></tr>
+          <tr><td data-k="Cara">Sewa animator 3D</td><td data-k="Biaya"><div><span data-isi="harga-animator">Jutaan</span></div></td><td data-k="Waktu"><div>Hitungan hari, ikut antrean</div></td><td data-k="Brand"><div>Bisa, kalau orangnya tetap</div></td><td data-k="Sumber"><div>Tergantung brief kamu</div></td></tr>
+          <tr><td data-k="Cara">Generator video AI dari prompt</td><td data-k="Biaya"><div>Langganan bulanan</div></td><td data-k="Waktu"><div>Menit</div></td><td data-k="Brand"><div><span class="x">Susah</span><span class="sm">bentuk benda sering berubah antar klip</span></div></td><td data-k="Sumber"><div><span class="x">Nggak ada jaminan</span><span class="sm">gerak mesin bisa ngarang</span></div></td></tr>
+          <tr class="us"><td data-k="Cara">Bedah Teknik Kit</td><td data-k="Biaya"><div>Langganan Claude + suara<span class="sm">perkiraan biaya suara disebut dulu</span></div></td><td data-k="Waktu"><div>Beberapa jam<span class="sm">kamu cuma nongol 3 kali</span></div></td><td data-k="Brand"><div><span class="v">Otomatis</span><span class="sm">dari satu file brand.json</span></div></td><td data-k="Sumber"><div><span class="v">Riset bersumber</span><span class="sm">tiap angka ada alamat + tanggal</span></div></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <!-- versi HP: tabel mini pakai tanda (tabel besar disembunyiin di HP) -->
+    <div class="cmp-mini">
+      <table>
+        <colgroup><col class="k"><col><col><col><col></colgroup>
+        <thead><tr><th></th><th>Sendiri</th><th>Animator</th><th>AI prompt</th><th class="us">Kit ini</th></tr></thead>
+        <tbody>
+          <tr><th>Biaya</th><td class="y"><b>✓</b><span>gratis</span></td><td class="n"><b>✗</b><span data-isi="harga-animator">Jutaan</span></td><td class="t"><b>~</b><span>langganan</span></td><td class="us y"><b>✓</b><span>Claude + suara</span></td></tr>
+          <tr><th>Waktu</th><td class="n"><b>✗</b><span>hari + belajar</span></td><td class="t"><b>~</b><span>hari, antre</span></td><td class="y"><b>✓</b><span>menit</span></td><td class="us y"><b>✓</b><span>beberapa jam</span></td></tr>
+          <tr><th>Brand</th><td class="t"><b>~</b><span>tergantung kamu</span></td><td class="t"><b>~</b><span>kalau orangnya tetap</span></td><td class="n"><b>✗</b><span>susah</span></td><td class="us y"><b>✓</b><span>otomatis</span></td></tr>
+          <tr><th>Akurasi</th><td class="t"><b>~</b><span>tergantung riset</span></td><td class="t"><b>~</b><span>tergantung brief</span></td><td class="n"><b>✗</b><span>nggak dijamin</span></td><td class="us y"><b>✓</b><span>bersumber</span></td></tr>
+        </tbody>
+      </table>
+      <p class="leg">✓ unggul · ~ tergantung · ✗ lemah</p>
+    </div>
+    <p class="note">Perbandingan umum, bukan hasil uji produk tertentu. Biaya Claude &amp; suara di luar harga kit.</p>
+  </div>
+</section>
+
+<!-- BRAND: cukup info singkat (Aldy 2/11); sampul = render asli kit, 2 terakhir brand fiktif -->
+<section id="brand" class="slim">
+  <div class="wrap">
+    <div class="brandrow">
+      <div>
+        <span class="eyebrow">Brand kamu</span>
+        <p class="bh">Kamu bisa ubah sesuai tema warna channel kamu.</p>
+        <p class="bt">Nama, logo, warna, dan suara narator diisi sekali pas <code>/setup-channel</code>. Subtitle, judul, sampul, dan watermark ikut otomatis.</p>
+      </div>
+      <div class="thumbs">
+        <img src="/api/kit/skill/aset/bedah/brand-default-cover.jpg?v=47130273ff" alt="Sampul contoh dengan tema kuning bawaan" loading="lazy">
+        <img src="/api/kit/skill/aset/bedah/brand-mesin-cover.jpg?v=47130273ff" alt="Sampul yang sama dengan tema biru (brand fiktif)" loading="lazy">
+        <img src="/api/kit/skill/aset/bedah/brand-jeroan-cover.jpg?v=47130273ff" alt="Sampul yang sama dengan tema hijau (brand fiktif)" loading="lazy">
+      </div>
+      <p class="bx"><b>Bisa dicustom sesuai yang kamu mau</b>, tinggal ngobrol sama Claude-nya. Skill di kit ini juga masih bisa kamu modifikasi.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PASANG: setup juga lewat ngobrol; hasil cek PC = format keluaran asli alat/pasang.ps1 -->
+<section id="mulai">
+  <div class="wrap">
+    <span class="eyebrow">Pasang</span>
+    <h2>Pasangnya juga lewat ngobrol.</h2>
+    <p class="lead">Node.js, Python, dan bahan 3D dipasangin sendiri. Kamu cuma klik izinkan kalau komputer minta izin.</p>
+    <div class="setup">
+      <div class="win">
+        <div class="win-h"><span class="ico"></span>Claude · D:\bedah-teknik-kit</div>
+        <div class="chat">
+          <div class="m u"><span class="by">KAMU</span><code>/setup-channel</code></div>
+          <div class="m a" style="width:100%"><span class="by">CLAUDE</span>Cek PC dulu, yang kurang langsung aku pasang.
+<pre class="term" style="margin-top:8px"><span class="ok">[OK]</span> Panjang alamat folder kit   22 huruf
+<span class="ok">[OK]</span> Node.js 20+                 v24
+<span class="ok">[OK]</span> Python 3.11+                Python312
+<span class="ok">[OK]</span> Dependensi 3D + browser     ada
+<span class="ok">[OK]</span> Kartu grafis                NVIDIA GeForce RTX
+<span class="y">SEMUA SIAP</span></pre></div>
+          <div class="m a ask m-hide"><div class="q">Penutup video mau gimana?</div>
+            <div class="opt on"><i>a</i><span>Selamat + ajakan komen <em>(rekomendasi)</em></span></div>
+            <div class="opt"><i>b</i><span>Loop nyambung ke detik pertama <em>(eksperimen)</em></span></div></div>
+          <div class="m a ask"><div class="q">Suara narator lewat mana?</div>
+            <div class="opt on"><i>a</i><span>Konektor ElevenLabs di Claude <em>(rekomendasi, paling gampang)</em></span></div>
+            <div class="opt"><i>b</i><span>fal.ai <em>(isi kunci sendiri, dituntun)</em></span></div></div>
+          <div class="m a st"><span><b>✓</b> Render uji pakai brand kamu: lolos</span></div>
+        </div>
+      </div>
+      <ol class="steps">
+        <li><span class="no">1</span><div><h3>Ekstrak zip ke folder pendek</h3><p>Misalnya <code>D:\bedah-teknik-kit</code>. Alamat yang kepanjangan bisa bikin render gagal.</p></div></li>
+        <li><span class="no">2</span><div><h3>Buka Claude di folder itu</h3><p>Aplikasi Claude → tab Code → pilih folder kit, percayai sekali.</p></div></li>
+        <li><span class="no">3</span><div><h3>Ketik <code>/setup-channel</code></h3><p>Sisanya kayak percakapan di samping. Abis itu tinggal <code>/bikin-video</code>.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ISI ZIP: pohon folder asli kit v1.0 -->
+<section id="isi">
+  <div class="wrap">
+    <span class="eyebrow">Isi zip</span>
+    <h2>Buka zip-nya, ini isinya.</h2>
+    <div class="win exp">
+      <ul class="ft" role="tablist" aria-label="Isi folder kit">
+        <li><span class="dir"><i>▾</i>bedah-teknik-kit/</span></li>
+        <li><button class="l1" role="tab" data-f="panduan" aria-selected="true"><i>▤</i>PANDUAN-MEMBER.pdf</button></li>
+        <li><button class="l1" role="tab" data-f="mulai" aria-selected="false"><i>▤</i>MULAI-DI-SINI.md</button></li>
+        <li><button class="l1" role="tab" data-f="claude" aria-selected="false"><i>▤</i>CLAUDE.md</button></li>
+        <li><button class="l1" role="tab" data-f="channel" aria-selected="false"><i>▸</i>channel/</button></li>
+        <li><button class="l1" role="tab" data-f="alat" aria-selected="false"><i>▸</i>alat/</button></li>
+        <li><span class="l1 dir"><i>▾</i>.claude/skills/</span></li>
+        <li><button class="l2" role="tab" data-f="setup" aria-selected="false"><i>▸</i>setup-channel/</button></li>
+        <li><button class="l2" role="tab" data-f="bikin" aria-selected="false"><i>▸</i>bikin-video/</button></li>
+        <li><span class="l1 dir"><i>▾</i>studio/</span></li>
+        <li><button class="l2" role="tab" data-f="contoh" aria-selected="false"><i>▸</i>contoh-sutet/</button></li>
+      </ul>
+      <div class="fp" id="fp" role="tabpanel" aria-live="polite"></div>
+    </div>
+    <div class="counts">
+      <div><b>2</b><span>skill: <code>/setup-channel</code> &amp; <code>/bikin-video</code></span></div>
+      <div><b>9</b><span>resep produksi, dari naskah sampai QA</span></div>
+      <div><b>7</b><span>alat cek otomatis</span></div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- HARGA + CHECKOUT: kotak keputusan terakhir; form dipasang ke payment gateway oleh Claude di server -->
+<section id="beli">
+  <div class="wrap">
+    <span class="eyebrow">Harga</span>
+    <h2>Mulai channel kamu sendiri?</h2>
+    <div class="dlg">
+      <div class="dlg-h">KEPUTUSAN KAMU · SEKALI BAYAR</div>
+      <div class="dlg-b">
+        <div class="offer">
+          <div class="was" data-price="coret">Rp 500.000</div>
+          <div class="now" data-price="utama">Rp 249.000</div>
+          <p class="per">sekali bayar · buat 1 channel · dikirim ke email</p>
+          <ul>
+            <li>Bedah Teknik Kit: 2 skill, alat, 1 contoh episode lengkap</li>
+            <li>Panduan Member PDF, 13 halaman</li>
+            <li>Pemasang otomatis Node.js, Python, bahan 3D</li>
+            <li>Video yang kamu bikin 100% punya kamu</li>
+            
+          </ul>
+          <div class="quota" data-isi="kuota"><span class="t">Harga perkenalan, 100 pembeli pertama</span><div style="font-weight:700;margin-top:6px">Sisa 68 dari 100</div><div class="barx"><i style="width:68%"></i></div></div>
+        </div>
+        <!-- data-checkout-*: titik sambung buat Claude di server (bikin order → QRIS / VA dari payment gateway) -->
+        <form class="form" id="checkout" novalidate action="/bedah-kit/bayar/#beli" method="get" data-checkout-endpoint="/api/kit/skill/checkout/">
+          <h3>Data pembeli</h3>
+          <div class="field"><label for="nama">Nama</label><input id="nama" name="nama" autocomplete="name" required placeholder="Nama kamu"></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="nama@email.com"><small>Link unduh kit + panduan dikirim ke sini.</small></div>
+          <div class="field"><label for="wa">WhatsApp <span style="font-weight:500;color:var(--mute)">(opsional)</span></label><input id="wa" name="wa" type="tel" autocomplete="tel" placeholder="08xx"><small>Buat ngabarin kalau pembayaran nyangkut.</small></div>
+          <span class="paylbl">BAYAR PAKAI</span>
+          <div class="pay">
+            <label><input type="radio" name="metode" value="qris" checked><span><b>QRIS</b><span>GoPay, OVO, DANA, m-banking</span></span></label>
+            <label><input type="radio" name="metode" value="va"><span><b>Virtual Account</b><span>Mandiri, BNI, BRI, dll.</span></span></label>
+          </div>
+          <div class="total"><span>Total</span><span data-price="utama">Rp 249.000</span></div>
+          <button class="btn" type="submit">Bayar sekarang</button>
+          <p class="fine">Pembayaran diproses lewat payment gateway.</p>
+          <p class="msg" id="msg" hidden></p>
+        </form>
+      </div>
+    </div>
+    <div class="req">
+      <h3>KEBUTUHAN SISTEM &amp; BIAYA LANJUTAN</h3>
+      <dl>
+        <div><dt>Windows 10/11 <span data-isi="mac">atau Mac</span></dt><dd>Windows: kartu grafis bikin render beberapa menit, tanpa itu tetap jalan, 1–2 jam per video. <span data-isi="mac">Punya Kit Kantor AI? Bisa juga dipasang di kantor VPS lewat Builder.</span></dd></div>
+        <div><dt>Claude Code</dt><dd>Aplikasi Claude desktop + langganan berbayar.</dd></div>
+        <div><dt>Suara narator</dt><dd>ElevenLabs (rekomendasi) atau fal.ai. Perkiraan biaya disebut dulu sebelum rekam.</dd></div>
+        <div><dt>Remotion</dt><dd>Mesin render. Gratis buat perorangan &amp; usaha ≤3 orang.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- TANYA: FAQ daftar biasa (Aldy 2/11) -->
+<section id="tanya">
+  <div class="wrap">
+    <span class="eyebrow">Tanya</span>
+    <h2>Masih ragu? Tanya aja.</h2>
+    <div class="qa">
+      <details><summary>Aku nggak bisa ngoding sama sekali. Aman?</summary><p class="ans">Aman. Kamu ngobrol pakai bahasa biasa. Semua perintah, kode animasi, sampai pemasangan program dijalanin Claude sendiri.</p></details>
+      <details><summary>Bisa di Mac? Atau cuma pakai HP?</summary><p class="ans"><span data-isi="mac">Bisa di Mac dan Windows 10/11, juga di Kit Kantor AI (VPS) lewat Builder.</span> HP cuma buat nonton draf dan upload, bikinnya tetap di komputer.</p></details>
+      <details><summary>Selain harga kit, keluar duit buat apa lagi?</summary><p class="ans">Langganan Claude, sama biaya suara narator (ElevenLabs atau fal.ai). Sebelum rekam, Claude selalu nyebut perkiraan biayanya dan nunggu kamu bilang iya.</p></details>
+      <details><summary>Topiknya harus menara?</summary><p class="ans">Nggak. Menara SUTET cuma contoh yang ikut di kit. Tiap topik baru, Claude bikin dunia 3D-nya dari template contoh itu. Paling cocok buat "gimana benda raksasa dibikin" atau "cara kerja benda sehari-hari".</p></details>
+      <details><summary>Suaranya bakal sama kayak channel lain?</summary><p class="ans">Nggak harus. Kamu pilih sendiri suara narator dari ElevenLabs, jadi channel kamu punya suara sendiri.</p></details>
+      <details><summary>Kalau drafnya jelek?</summary><p class="ans">Bilang aja apa yang kurang. Revisi selalu jadi draf baru, draf lama nggak ditimpa. Keputusan kamu yang berlaku buat episode berikutnya dicatat Claude di aturan channel.</p></details>
+      <details><summary>Boleh dimonetisasi?</summary><p class="ans">Boleh, videonya punya kamu. Syarat layanan suara tetap berlaku (ElevenLabs: pakai paket berbayar buat konten yang dimonetisasi).</p></details>
+      <details><summary>Bisa bikin viral?</summary><p class="ans">Nggak ada yang bisa janji itu. Yang kamu dapet: cara produksi yang konsisten dan udah dipakai di channel beneran. Views tetap tergantung topik, rutin posting, dan platformnya.</p></details>
+      <details><summary>Abis bayar, filenya dapet dari mana?</summary><p class="ans" data-isi="pengiriman">Link unduh kit + PDF panduan dikirim ke email kamu begitu pembayaran masuk. Link-nya berlaku 7 hari. Kalau kedaluwarsa, minta link baru kapan aja di <a href="/skill/unduh/">lembur.id/skill/unduh</a> pakai kode beli dan email kamu.</p></details>
+      
+      <details><summary>Kalau mentok, nanya ke siapa?</summary><p class="ans">Email <span class="mail">satpam@lembur.id</span>. Sertain screenshot pesan error sama langkah terakhir yang kamu jalanin.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="akhir" style="padding-top:24px">
+  <div class="wrap">
+    <p class="endh">Episode pertama kamu tinggal satu perintah.</p>
+    <div class="cmdk">
+      <div class="in" aria-hidden="true">› /bikin-video <span>topik kamu</span><i></i></div>
+      <a class="btn" href="#beli" data-cta="akhir">Beli Bedah Teknik Kit <span aria-hidden="true">→</span></a>
+    </div>
+    <p class="note">Ada pertanyaan dulu? <span class="mail">satpam@lembur.id</span></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Bedah Teknik Kit</span>
+    <span class="mail">satpam@lembur.id</span>
+    <span data-isi="legal"><a href="/kebijakan-privasi/">Kebijakan Privasi</a></span>
+  </div>
+</footer>
+
+<div class="mbar" aria-label="Beli">
+  <div class="p" data-price="utama">Rp 249.000<small>sekali bayar</small></div>
+  <a class="btn" href="#beli" data-cta="bar-hp">Beli kit</a>
+</div>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Hero: rekaman sesi Claude (ngetik → Claude bales → kursor milih → render → video), diulang terus
+  const $ = (id) => document.getElementById(id);
+  const studio = $('studio'), chat = $('chat'), cin = $('cin'), csend = $('csend'), ptr = $('ptr');
+  const vid = $('heroVid'), pct = $('pct'), pbar = $('pbar'), lbl = $('pvLbl'), replay = $('replay');
+  const PH = '<span class="ph">Ketik pesan ke Claude…</span>';
+  let run = 0;
+  // tiap jeda ngecek putarannya masih yang aktif; kalau udah diganti putaran baru, berhenti diam-diam
+  const sleep = (ms, id) => new Promise((ok, no) => setTimeout(() => (id === run ? ok() : no('ganti')), reduce ? 0 : ms));
+  const toEnd = () => chat.scrollTo({top: chat.scrollHeight, behavior: reduce ? 'auto' : 'smooth'});
+  const add = (cls, html) => {
+    const el = document.createElement('div');
+    el.className = cls + ' pop'; el.innerHTML = html; chat.append(el); toEnd();
+    return el;
+  };
+  const state = (s) => { studio.classList.remove('s-idle', 's-render', 's-done'); studio.classList.add(s); };
+  const ptrTo = (el, dx, dy) => {
+    const a = studio.getBoundingClientRect(), b = el.getBoundingClientRect();
+    ptr.style.transform = `translate(${b.left - a.left + dx}px, ${b.top - a.top + dy}px)`;
+  };
+  const typeIn = async (txt, id) => {
+    cin.innerHTML = '<span></span><i class="car"></i>';
+    csend.classList.add('on');
+    for (const ch of txt) { cin.firstChild.textContent += ch; await sleep(34, id); }
+  };
+  const think = async (ms, id) => {
+    const el = add('m a', '<span class="dots"><i></i><i></i><i></i></span>');
+    await sleep(ms, id); el.remove();
+  };
+  const status = async (doing, done, ms, id) => {
+    const el = add('m a st1', `<span class="sp"></span>${doing}`);
+    await sleep(ms, id);
+    el.innerHTML = `<b>✓</b>${done}`; toEnd();
+  };
+  const ask = (q, small, opts, quote = '') => add('m a ask', `<div class="q">${q}<small>${small}</small></div>` +
+    (quote ? `<blockquote>${quote}</blockquote>` : '') +
+    opts.map(([t, e], i) => `<div class="opt"><i>${'abc'[i]}</i><span>${t}${e ? ` <em>(${e})</em>` : ''}</span></div>`).join(''));
+  const pick = async (box, n, id) => {
+    const o = box.querySelectorAll('.opt')[n];
+    chat.scrollTop = chat.scrollHeight; // pastiin scroll udah mentok sebelum ngukur posisi pilihan
+    if (!reduce) { ptr.classList.add('show'); ptrTo(o, 26, 14); await sleep(850, id); }
+    o.classList.add('hov'); await sleep(260, id);
+    ptr.classList.add('click'); o.classList.add('on'); await sleep(320, id);
+    ptr.classList.remove('click'); await sleep(350, id);
+    box.classList.add('done');
+  };
+  const prep = () => {
+    chat.innerHTML = ''; cin.innerHTML = PH; csend.className = 'send'; replay.hidden = true;
+    state('s-idle'); lbl.textContent = 'DRAF'; vid.pause(); pbar.style.width = '0'; pct.textContent = 'render 0%';
+    ptr.classList.remove('show', 'click'); ptrTo(csend, 6, 6);
+  };
+  const play = async () => {
+    const id = ++run;
+    try {
+      prep();
+      await sleep(700, id);
+      await typeIn('/bikin-video menara SUTET di puncak bukit, gimana bangunnya?', id);
+      await sleep(450, id);
+      csend.classList.add('hit'); await sleep(160, id);
+      cin.innerHTML = PH; csend.className = 'send';
+      add('m u', '<span class="by">KAMU</span><code>/bikin-video</code> menara SUTET di puncak bukit, gimana bangunnya?');
+      await sleep(400, id); await think(900, id);
+      await status('Riset bersumber…', 'Riset: 16 tautan sumber, 2 angka dipakai', 1300, id);
+      await status('Nulis naskah…', 'Naskah 197 kata: hook → langkah → payoff', 1100, id);
+      const a1 = ask('Naskah siap. Acc?', '197 kata · ±77 detik', [['Oke, rekam', 'rekomendasi'], ['Revisi'], ['Ganti sudut']],
+        '"Menara listrik raksasa ini berdiri di puncak bukit. Nggak ada jalan, truk sama crane nggak bisa naik. …"');
+      await sleep(1600, id); await pick(a1, 0, id);
+      await think(700, id);
+      const a2 = ask('Rekam narasi 1.319 huruf?', 'perkiraan biaya disebut dulu sebelum rekam', [['Rekam sekarang', 'rekomendasi'], ['Uji kalimat pembuka dulu']]);
+      await sleep(1300, id); await pick(a2, 0, id);
+      ptr.classList.remove('show');
+      await status('Rekam suara…', 'Suara direkam: 76,9 dtk, −16,3 LUFS', 1200, id);
+      await status('Ngerakit animasi 3D…', 'Animasi 3D: still dicek satu-satu', 1300, id);
+      const r = add('m a st1', '<span class="sp"></span>Render + cek kualitas…');
+      state('s-render');
+      for (let p = 0; p <= 100; p += 5) { pct.textContent = `render ${p}%`; pbar.style.width = p + '%'; await sleep(110, id); }
+      r.innerHTML = '<b>✓</b>Render + cek kualitas: lolos'; toEnd();
+      state('s-done'); lbl.textContent = 'DRAF 1';
+      vid.currentTime = 0;
+      if (!reduce) vid.play().catch(() => {});
+      await sleep(1000, id);
+      const a3 = ask('Draf 1 siap. Lanjut final?', 'tonton dulu di panel draf', [['Lanjut final', 'rekomendasi'], ['Revisi', 'jadi draf 2'], ['Nanti dulu']]);
+      await sleep(2400, id); await pick(a3, 0, id);
+      ptr.classList.remove('show');
+      await status('Nyusun folder final…', 'Folder final: video, 2 sampul, judul-caption-hashtag', 900, id);
+      replay.hidden = false;
+      if (!reduce) { await sleep(9000, id); play(); }
+    } catch (e) { /* putaran ini diganti putaran baru */ }
+  };
+  replay.addEventListener('click', play);
+  if (reduce) vid.controls = true;
+  else {
+    // langsung kosongin (tanpa transisi) biar keadaan akhir nggak keliatan sekilas sebelum mulai
+    studio.classList.add('boot'); prep();
+    requestAnimationFrame(() => requestAnimationFrame(() => studio.classList.remove('boot')));
+  }
+  // mulai pas jendelanya kelihatan
+  new IntersectionObserver((es, ob) => { if (es[0].isIntersecting) { ob.disconnect(); play(); } }, {threshold: 0.3}).observe(studio);
+
+  // Log produksi di HP: kartu dilipat, ketuk judul/ringkasannya buat buka isi aslinya (desktop selalu kebuka)
+  const mq = matchMedia('(max-width:720px)');
+  const heads = [...document.querySelectorAll('.ent .card-h')];
+  heads.forEach((h) => {
+    h.insertAdjacentHTML('beforeend', '<span class="chev" aria-hidden="true">›</span>');
+    const toggle = () => {
+      if (!mq.matches) return;
+      const open = h.parentElement.classList.toggle('open');
+      h.setAttribute('aria-expanded', String(open));
+    };
+    h.addEventListener('click', toggle);
+    h.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+    const sum = h.nextElementSibling;
+    if (sum && sum.classList.contains('sum')) sum.addEventListener('click', toggle);
+  });
+  const a11y = () => heads.forEach((h) => {
+    if (mq.matches) { h.setAttribute('role', 'button'); h.tabIndex = 0; h.setAttribute('aria-expanded', String(h.parentElement.classList.contains('open'))); }
+    else { h.removeAttribute('role'); h.removeAttribute('tabindex'); h.removeAttribute('aria-expanded'); }
+  });
+  a11y(); mq.addEventListener('change', a11y);
+
+  // Gelombang suara asli narasi contoh SUTET (140 titik RMS, dinormalisasi)
+  const W = '0.85,0.72,0.98,0.92,0.48,0.39,0.86,0.43,0.75,0.79,0.43,0.71,0.65,0.7,0.69,0.55,0.67,0.59,0.74,0.9,0.78,0.64,0.36,0.59,0.67,0.58,0.61,0.78,0.84,0.72,0.54,0.78,0.51,0.73,0.7,0.61,0.69,0.72,0.78,0.46,0.69,0.64,0.71,0.69,0.73,0.43,0.75,0.84,0.94,0.7,0.59,0.64,0.26,0.92,0.46,0.75,0.74,0.73,0.79,0.83,0.84,0.56,0.59,0.52,0.61,0.46,0.39,1.0,0.98,0.6,0.69,0.7,0.65,0.66,0.57,0.57,0.53,0.78,0.64,0.67,0.58,0.69,0.54,0.86,0.4,0.51,0.26,0.81,0.81,0.94,0.76,0.78,0.84,0.5,0.76,0.68,0.61,0.65,0.58,0.74,0.38,0.68,0.89,0.86,0.76,0.35,0.67,0.5,0.53,0.51,0.8,0.59,0.87,0.96,0.62,0.81,0.53,0.71,0.65,0.56,0.55,0.8,0.62,0.8,0.51,0.47,0.54,0.3,0.8,0.84,0.88,0.63,0.67,0.81,0.78,0.43,0.7,0.48,0.7,0.45'.split(',').map(Number);
+  const svg = document.getElementById('wave');
+  const step = 700 / W.length;
+  svg.innerHTML = W.map((v, i) => {
+    const h = Math.max(4, v * 76);
+    return `<rect x="${(i * step + 1).toFixed(1)}" y="${(42 - h / 2).toFixed(1)}" width="${(step - 2).toFixed(1)}" height="${h.toFixed(1)}" rx="1.5" fill="${i < 16 ? '#FFC83D' : '#5A5A66'}"/>`;
+  }).join('');
+
+  // Isi zip: klik file → keterangan
+  const F = {
+    panduan: ['bedah-teknik-kit/PANDUAN-MEMBER.pdf', 'Panduan Member, 13 halaman', '<p>Dari pasang sampai upload, pakai bahasa sehari-hari. Bisa dibaca di HP sambil PC-nya kerja.</p><div class="imgs"><img src="/api/kit/skill/aset/bedah/pdf-sampul.jpg?v=47130273ff" alt="Sampul Panduan Member"><img src="/api/kit/skill/aset/bedah/pdf-hal7.jpg?v=47130273ff" alt="Halaman 7: alur satu episode"></div>'],
+    mulai: ['bedah-teknik-kit/MULAI-DI-SINI.md', 'Tiga langkah pertama', '<p>Ekstrak, buka Claude di folder kit, ketik <code>/setup-channel</code>. Plus tabel "kalau mentok" buat masalah yang paling sering.</p>'],
+    claude: ['bedah-teknik-kit/CLAUDE.md', 'Aturan kerja Claude di folder ini', '<p>Claude jadi produser channel kamu: kapan wajib nanya kamu, apa yang nggak boleh dilakuin tanpa izin (posting, biaya baru, nyetak kunci API), dan urutan kerja tiap episode.</p>'],
+    channel: ['bedah-teknik-kit/channel/', 'Identitas channel kamu', '<ul><li><code>brand.json</code> nama, logo, warna, gaya ngobrol, penutup, suara</li><li><code>topik.md</code> bank topik, Claude ngambil dari sini</li><li><code>aturan-channel.md</code> keputusan kamu, menang di atas aturan bawaan</li><li><code>status-episode.md</code> catatan episode yang udah jadi</li></ul>'],
+    alat: ['bedah-teknik-kit/alat/', 'Alat bantu', '<ul><li><code>pasang.ps1</code> masang Node.js, Python, bahan 3D, browser render</li><li><code>suara.py</code> rekam narasi lewat ElevenLabs atau fal.ai, ngitung biaya dulu</li><li><code>episode_baru.py</code> bikin folder episode dari template + salin brand</li></ul>'],
+    setup: ['bedah-teknik-kit/.claude/skills/setup-channel/', 'Skill /setup-channel', '<p>Cek PC, pasang yang kurang, tanya brand kamu, sambungin suara, pilih narator, render uji. Bisa dijalanin ulang kapan aja buat ganti logo, warna, atau suara.</p>'],
+    bikin: ['bedah-teknik-kit/.claude/skills/bikin-video/', 'Skill /bikin-video + 9 resep', '<p>Produksi satu episode dari topik sampai folder final. Resepnya: format naskah, contoh naskah, riset, suara &amp; audio, visual 3D, kamera tenang, kode template, sampul &amp; caption, cek kualitas.</p>'],
+    contoh: ['bedah-teknik-kit/studio/contoh-sutet/', 'Contoh episode lengkap: menara SUTET', '<p>Semua yang dipakai buat bikin video di atas: riset, sumber, naskah, audio, animasi three.js, sampul, laporan QA. Episode baru kamu = salinan folder ini.</p>'],
+  };
+  const fp = document.getElementById('fp');
+  const tabs = [...document.querySelectorAll('.ft button')];
+  const open = (k) => {
+    const [p, h, b] = F[k];
+    fp.innerHTML = `<span class="path">${p}</span><h3>${h}</h3>${b}`;
+    tabs.forEach(t => t.setAttribute('aria-selected', String(t.dataset.f === k)));
+  };
+  tabs.forEach(t => t.addEventListener('click', () => open(t.dataset.f)));
+  open('panduan');
+
+  // Checkout: belum nyambung ke payment gateway (dipasang Claude di server lewat data-checkout-endpoint)
+  const f = document.getElementById('checkout');
+  const msg = document.getElementById('msg');
+  f.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const nama = f.nama.value.trim(), email = f.email.value.trim();
+    msg.hidden = false;
+    if (!nama || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      msg.textContent = 'Isi nama dan email yang bener dulu ya.';
+      (nama ? f.email : f.nama).focus();
+      return;
+    }
+    msg.hidden = true; f.submit();
+  });
+})();
+</script>
+<style>
+.lb-bank[hidden]{display:none}
+.lb-bank select{font:inherit;font-size:16px;width:100%;min-height:48px;padding:0 14px;border-radius:10px;border:1.5px solid rgba(127,127,127,.45);background:transparent;color:inherit}
+.lb-panel{display:grid;gap:14px}
+.lb-panel h3{margin:0}
+.lb-jml{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-weight:800;padding-bottom:12px;border-bottom:1px solid rgba(127,127,127,.3)}
+.lb-jml b{font-size:24px}
+.lb-qr{justify-self:center;width:min(100%,280px);background:#fff;border-radius:14px;padding:12px;border:1px solid rgba(127,127,127,.25)}
+.lb-qr img{display:block;width:100%;height:auto;image-rendering:pixelated}
+.lb-label{font:700 11px/1 var(--mono,ui-monospace,monospace);letter-spacing:.12em;opacity:.75}
+.lb-va{font:700 26px/1.25 var(--mono,ui-monospace,monospace);letter-spacing:.04em;word-break:break-word;margin-top:6px}
+.lb-panel .btn{width:100%;justify-content:center;text-align:center}
+.lb-panel .lb-btn2{background:transparent!important;color:inherit!important;box-shadow:inset 0 0 0 1.5px currentColor!important;border:0}
+.lb-kecil{margin:0;font-size:13px;line-height:1.5;opacity:.8;text-align:center}
+.lb-langkah{margin:0;padding-left:22px;display:grid;gap:8px}
+.lb-langkah code{font-family:var(--mono,ui-monospace,monospace)}
+.lb-panel .lb-msg{margin:0}
+.lb-panel a:not(.btn){color:inherit;font-weight:700;text-decoration:underline}
+</style><script>(function(){
+var K={"endpoint":"/api/kit/skill/checkout/","produk":"bedah","bayarUrl":"/bedah-kit/bayar/","unduhUrl":"/skill/unduh/","buka":true,"bankVa":[{"code":"va/bni","name":"BNI"},{"code":"va/bri","name":"BRI"},{"code":"va/mandiri","name":"Mandiri"},{"code":"va/permata","name":"Permata"},{"code":"va/bsi","name":"BSI"},{"code":"va/cimb","name":"CIMB Niaga"}],"langkah":["\u003cb\u003eEkstrak\u003c/b\u003e zip kit dari email.","\u003cb\u003eBuka Claude\u003c/b\u003e di folder kit.","Ketik \u003ccode\u003e/setup-channel\u003c/code\u003e, sisanya Claude yang nuntun."],"event":{"currency":"IDR","product_type":"license","content_type":"product","content_id":"license-skill-bedah","content_ids":["license-skill-bedah"],"pack_code":"skill-bedah","value":249000}};
+var f=document.getElementById('checkout');if(!f)return;
+var dl=window.dataLayer=window.dataLayer||[];
+function ev(nama,x){var o={event:nama},i;for(i in K.event)o[i]=K.event[i];for(i in (x||{}))o[i]=x[i];dl.push(o);}
+ev('view_content_kit');
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('[data-cta]'):null;if(a)dl.push({event:'klik_cta_skill',cta:a.getAttribute('data-cta'),content_id:K.event.content_id});},true);
+var esc=function(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});};
+var KUNCI='lembur-skill-pesanan:'+K.produk,emailKu='',timer=null,mulai=0;
+var isian=function(n){return f.querySelector('[name="'+n+'"]');};
+var waEl=isian('wa')||isian('whatsapp');
+var radios=f.querySelectorAll('input[name=metode]'),bank=null;
+if(K.bankVa.length&&radios.length){bank=document.createElement('div');bank.className='field lb-bank';bank.hidden=true;
+bank.innerHTML='<label for="lb-bank">Bank Virtual Account</label><select id="lb-bank" name="bank"></select>';
+var sel=bank.querySelector('select');K.bankVa.forEach(function(b){var o=document.createElement('option');o.value=b.code;o.textContent=b.name;sel.appendChild(o);});
+var contoh=isian('email')||isian('nama');
+if(contoh&&window.getComputedStyle){var cs=getComputedStyle(contoh);['backgroundColor','color','borderTopWidth','borderTopStyle','borderTopColor','borderRadius','fontSize','fontFamily','minHeight'].forEach(function(p){sel.style[p]=cs[p];});sel.style.borderStyle=cs.borderTopStyle;sel.style.borderWidth=cs.borderTopWidth;sel.style.borderColor=cs.borderTopColor;}
+var akhir=radios[radios.length-1],wadah=(akhir.closest&&akhir.closest('label'))||akhir;wadah.parentNode.insertBefore(bank,wadah.nextSibling);
+var sinkron=function(){var v=f.querySelector('input[name=metode]:checked');bank.hidden=!(v&&v.value==='va');};f.addEventListener('change',sinkron);sinkron();}
+var msgEl=f.querySelector('#msg');
+if(!msgEl){msgEl=document.createElement('p');msgEl.className='msg lb-msg';msgEl.setAttribute('role','alert');msgEl.hidden=true;var tb=f.querySelector('button[type=submit]');f.insertBefore(msgEl,tb||null);}
+function pesan(t){msgEl.hidden=false;msgEl.textContent=t;}
+function ingat(id){try{localStorage.setItem(KUNCI,JSON.stringify({id:id,t:Date.now()}));}catch(e){}}
+function lupa(){try{localStorage.removeItem(KUNCI);}catch(e){}}
+function panel(h){f.removeAttribute('action');f.innerHTML='<div class="lb-panel" aria-live="polite">'+h+'</div>';}
+function tampilBayar(p){
+var h='<h3>Selesaikan pembayaran</h3><div class="lb-jml"><span>Total</span><b>'+esc(p.jumlahTampil)+'</b></div>';
+if(p.jenis==='qris'&&p.qrPng){h+='<div class="lb-qr"><img src="'+esc(p.qrPng)+'" alt="Kode QRIS pembayaran" width="280" height="280"></div>'+
+'<a class="btn lb-btn2" href="'+esc(p.qrPng)+'" download="qris-'+esc(p.ref)+'.png">Simpan gambar QR</a>'+
+'<p class="lb-kecil">Scan pakai GoPay, OVO, DANA, atau m-banking. Kalau bayarnya dari HP ini, simpan gambar QR-nya lalu buka dari aplikasi pembayaran.</p>';}
+else if(p.jenis==='va'&&p.kodeBayar){h+='<div><span class="lb-label">VIRTUAL ACCOUNT '+esc(p.bank)+'</span><div class="lb-va">'+esc(String(p.kodeBayar).replace(/(.{4})/g,'$1 ').trim())+'</div></div>'+
+'<button type="button" class="btn lb-btn2" data-salin="'+esc(p.kodeBayar)+'">Salin nomor</button>'+
+'<p class="lb-kecil">Transfer tepat sesuai nominal dari aplikasi '+esc(p.bank)+'.</p>';}
+else if(p.checkoutUrl){h+='<a class="btn" href="'+esc(p.checkoutUrl)+'" target="_blank" rel="noopener">Lanjutkan pembayaran</a>';}
+if(p.kedaluwarsaTampil)h+='<p class="lb-kecil">Bayar sebelum '+esc(p.kedaluwarsaTampil)+'.</p>';
+h+='<p class="msg lb-msg">Halaman ini ngecek sendiri. Begitu lunas, link unduh dikirim ke email kamu.</p>';
+panel(h);
+var s=f.querySelector('[data-salin]');if(s)s.addEventListener('click',function(){try{navigator.clipboard.writeText(s.getAttribute('data-salin'));s.textContent='Nomor tersalin';}catch(e){}});}
+function tampilLunas(p,baru){
+var unduh='';if(p.unduh&&p.unduh.length){unduh=p.unduh.map(function(u){return '<a class="btn" href="'+esc(u.url)+'" rel="nofollow noreferrer">'+esc(u.label)+'</a>';}).join('');}
+panel('<h3>Pembayaran masuk. Makasih!</h3><p class="msg lb-msg">Cek email kamu: link unduh + PDF panduan udah dikirim ke '+(emailKu?'<b>'+esc(emailKu)+'</b>':'email kamu')+'. Cek juga folder spam/promosi.</p>'+unduh+
+'<ol class="lb-langkah">'+K.langkah.map(function(l){return '<li>'+l+'</li>';}).join('')+'</ol>'+
+'<p class="lb-kecil">Link unduh berlaku 7 hari. Kalau kedaluwarsa, minta lagi di <a href="'+esc(K.unduhUrl)+'">lembur.id/skill/unduh</a> pakai kode beli dan email kamu.</p>');
+var kunci='lembur-purchase-sent:license:'+p.id;
+try{if(localStorage.getItem(kunci))return;localStorage.setItem(kunci,'1');}catch(e){}
+if(baru)ev('purchase_kit',{transaction_id:p.ref,event_id:p.ref,value:p.jumlah,payment_method:p.metode});}
+function tampilGagal(){lupa();panel('<h3>Pembayaran belum masuk</h3><p class="msg lb-msg">Waktu bayarnya udah habis atau pembayarannya gagal. Bikin pesanan baru ya.</p><button type="button" class="btn" data-ulang>Pesan lagi</button>');
+f.querySelector('[data-ulang]').addEventListener('click',function(){location.reload();});}
+function cek(id,baru){fetch(K.endpoint+'?produk='+encodeURIComponent(K.produk)+'&pesanan='+encodeURIComponent(id),{credentials:'same-origin',cache:'no-store'})
+.then(function(r){return r.json();}).then(function(j){if(!j||!j.ok){if(!baru){lupa();}return;}var p=j.pesanan;
+if(p.status==='settled'){berhenti();lupa();tampilLunas(p,baru);}
+else if(p.status==='pending'){if(!timer){tampilBayar(p);pantau(id);}}
+else{berhenti();tampilGagal();}}).catch(function(){});}
+function berhenti(){if(timer){clearTimeout(timer);timer=null;}}
+function pantau(id){mulai=mulai||Date.now();var umur=Date.now()-mulai;if(umur>3*3600e3)return;
+timer=setTimeout(function(){timer=null;cek(id,true);if(!timer)pantau(id);},umur>15*60e3?15e3:5e3);}
+window.addEventListener('submit',function(e){if(e.target!==f)return;e.preventDefault();e.stopImmediatePropagation();
+var nama=((isian('nama')||{}).value||'').trim(),email=((isian('email')||{}).value||'').trim(),wa=((waEl||{}).value||'').trim();
+var pil=f.querySelector('input[name=metode]:checked'),metode=pil?pil.value:'qris';
+if(!nama||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){pesan('Isi nama dan email yang bener dulu ya.');(nama?isian('email'):isian('nama')).focus();return;}
+if(!K.buka){pesan('Penjualan belum dibuka. Coba lagi nanti ya.');return;}
+if(metode==='va'&&bank)metode=bank.querySelector('select').value;
+var tombol=f.querySelector('button[type=submit]');if(tombol){tombol.disabled=true;tombol.dataset.teks=tombol.textContent;tombol.textContent='Sebentar…';}
+emailKu=email;
+fetch(K.endpoint,{method:'POST',headers:{'content-type':'application/json'},credentials:'same-origin',
+body:JSON.stringify({produk:K.produk,nama:nama,email:email,wa:wa,metode:metode})})
+.then(function(r){return r.json().catch(function(){return{ok:false,galat:'Server lagi nggak bisa dihubungi. Coba lagi sebentar.'};});})
+.then(function(j){if(!j.ok){pesan(j.galat||'Pesanan belum bisa dibuat. Coba lagi sebentar.');if(tombol){tombol.disabled=false;tombol.textContent=tombol.dataset.teks;}return;}
+var p=j.pesanan;if(p.baru)ev('begin_checkout_kit',{transaction_id:p.ref,event_id:p.ref,value:p.jumlah,payment_method:p.metode});
+ingat(p.id);if(p.status==='settled'){tampilLunas(p,true);return;}tampilBayar(p);pantau(p.id);})
+.catch(function(){pesan('Koneksi putus. Coba lagi ya.');if(tombol){tombol.disabled=false;tombol.textContent=tombol.dataset.teks;}});},true);
+try{var lama=JSON.parse(localStorage.getItem(KUNCI)||'null');if(lama&&lama.id&&Date.now()-lama.t<864e5)cek(lama.id,false);else lupa();}catch(e){}
+})();</script><script>(function(){var tujuan="/bedah-kit/bayar/";function url(){var u=new URL(tujuan,location.href),q=new URLSearchParams(location.search);q.forEach(function(v,k){if(/^utm_/.test(k)||k==='fbclid')u.searchParams.set(k,v)});u.hash='beli';return u.href}function pasang(){document.querySelectorAll('[data-bayar]').forEach(function(el){if(el.tagName==='A'){el.setAttribute('href',url())}else{el.addEventListener('click',function(){location.href=url()})}})}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',pasang)}else{pasang()}})();</script></body>
+</html>

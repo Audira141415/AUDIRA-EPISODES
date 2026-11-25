@@ -1,0 +1,144 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#BFE3FF}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.03;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.16) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0) 42%,rgba(0,0,0,0) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:JetBrains Mono;font-weight:700;font-size:23px;letter-spacing:.04em;color:#1E2A4A;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+
+.p{display:flex;flex-direction:column;align-items:flex-start;gap:14px;transform-origin:50% 100%}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:25px;letter-spacing:.04em;color:#fff;background:#1E2A4A;padding:7px 16px;border-radius:10px}
+.cd{display:inline-block;background:#FFFDF7;color:#1E2A4A;border:5px solid #1E2A4A;border-radius:24px;box-shadow:0 10px 0 #1E2A4A;font-family:Syne,sans-serif;font-weight:800;transform-origin:50% 100%}
+.big{font-size:92px;line-height:1.02;padding:12px 26px 16px;letter-spacing:-.01em}.big span{color:#E0457B}
+.h{font-size:52px;line-height:1.08;padding:12px 22px 14px}.h span{color:#E0457B}
+.mono{font-family:'JetBrains Mono',monospace;font-weight:800;letter-spacing:-.02em}
+.big.mono{font-size:84px}
+span.o{color:#FF8A3D}
+.cd.m{background:#E0457B;color:#fff}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:14px;transform-origin:50% 100%}
+.chip{display:inline-flex;white-space:nowrap;align-items:center;gap:10px;font-family:Syne,sans-serif;font-weight:800;font-size:36px;line-height:1;padding:12px 20px 14px;border-radius:18px;border:4px solid #1E2A4A;box-shadow:0 7px 0 #1E2A4A;transform-origin:50% 100%}
+.chip.mono{font-family:'JetBrains Mono',monospace}
+.chip.b{background:#3B82F6;color:#fff}.chip.m{background:#E0457B;color:#fff}.chip.o{background:#FF8A3D;color:#1E2A4A}.chip.w{background:#FFFDF7;color:#1E2A4A}
+.sw{display:inline-block;width:30px;height:30px;border:5px solid currentColor;border-radius:50%;position:relative;box-sizing:border-box}
+.sw:after{content:'';position:absolute;left:50%;top:3px;width:4px;height:9px;margin-left:-2px;background:currentColor;border-radius:2px}
+.swc{font-variant-numeric:tabular-nums}
+.gauge{position:relative;width:200px;height:112px;background:#FFFDF7;border:4px solid #1E2A4A;border-radius:110px 110px 18px 18px;box-shadow:0 7px 0 #1E2A4A;overflow:hidden}
+.gauge .arc{position:absolute;left:18px;top:18px;width:156px;height:156px;border-radius:50%;background:conic-gradient(from -90deg,#E0457B 0deg,#FF8A3D 90deg,#BFE3FF 180deg,transparent 180deg);-webkit-mask:radial-gradient(circle,transparent 52px,#000 53px);mask:radial-gradient(circle,transparent 52px,#000 53px)}
+.gauge .needle{position:absolute;left:98px;bottom:8px;width:7px;height:76px;margin-left:-3px;background:#1E2A4A;border-radius:4px;transform-origin:50% 100%}
+.gauge .hub{position:absolute;left:84px;bottom:-8px;width:30px;height:30px;border-radius:50%;background:#1E2A4A}
+#chip{font-family:'JetBrains Mono',monospace;font-weight:800;color:#1E2A4A;background:rgba(255,253,247,.85);padding:3px 12px;border-radius:8px;top:176px;font-size:20px;opacity:1}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="81.76" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN CUPLIKAN ROBLOX</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tag">FAKTA ROBLOX #04 &middot; LAB UJI LOMPAT</div>
+  <div class="cd h">Gravitasi Roblox</div>
+  <div class="row"><b class="chip b mono" data-at="s1:gravitasinya" data-fx="drop">BUMI 9,8 m/s²</b><b class="chip m mono" data-at="s1:hampir" data-fx="drop">ROBLOX 54,9 m/s²</b></div>
+  <div class="cd big" data-at="s1:enam" data-fx="drop">&asymp; 6&times; <span>BUMI</span></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="tag">SATUAN RESMI ROBLOX</div>
+  <div class="cd big mono" data-at="s2:satu" data-fx="drop">1 stud <span class="o">= 28 cm</span></div>
+  <div class="chip w" data-at="s2:Dari" data-fx="drop">semua angka bisa diubah ke meter</div>
+</div>
+<div class="p" data-in="s3" data-out="s3:Bumi">
+  <div class="tag">GRAVITASI BAWAAN ROBLOX</div>
+  <div class="cd h mono" data-at="s3:seratus" data-fx="drop">196,2 stud/s²</div>
+  <div class="cd h mono m" data-at="s3:lima" data-fx="drop">= 54,9 m/s²</div>
+</div>
+<div class="p" data-in="s3:Bumi" data-out="s4">
+  <div class="tag">BUMI CUMA 9,8 m/s²</div>
+  <div class="cd big" data-at="s3:Hampir" data-fx="drop">&asymp; 6&times; <span>LIPAT</span></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="tag">DOKUMEN YANG SAMA</div>
+  <div class="chip w" data-at="s4:realistis" data-fx="drop">Gravitasi realistis:</div>
+  <div class="cd big mono" data-at="s4:tiga" data-fx="drop"><span class="o">35</span> stud/s²</div>
+  <div class="chip w" data-at="s4:Jadi" data-fx="drop">bawaan jauh dari dunia nyata</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="tag">LOMPATAN BAWAAN</div>
+  <div class="cd h mono" data-at="s5:tujuh" data-fx="drop">7,2 stud <span class="o">&asymp; 2 m</span></div>
+  <div class="row"><b class="chip w" data-at="s5:pintu" data-fx="drop">setinggi pintu</b><b class="chip m mono" data-at="s5:setengah" data-fx="drop"><i class="sw"></i><b class="swc" data-a="s5:setengah" data-d="0.5418" data-dec="2">0,00 dtk</b></b></div>
+</div>
+<div class="p" data-in="s6" data-out="s6:Hitungan">
+  <div class="tag">GRAVITASI DIGANTI REALISTIS</div>
+  <div class="row"><b class="chip o mono" data-at="s6:realistis" data-fx="drop">g = 35 stud/s²</b><b class="chip w" data-at="s6:tetap" data-fx="drop">tenaga lompat tetap</b></div>
+</div>
+<div class="p" data-in="s6:Hitungan" data-out="s7">
+  <div class="tag">HITUNGAN KAMI</div>
+  <div class="cd big mono" data-at="s6:empat" data-fx="drop">&asymp; 40 stud</div>
+  <div class="row"><b class="chip o mono" data-at="s6:sebelas" data-fx="drop">&asymp; 11 m</b><b class="chip m mono" data-at="s6:melambung" data-fx="drop"><i class="sw"></i><b class="swc" data-a="s6:melambung-0.3" data-d="3.0373" data-dec="1">0,0 dtk</b></b></div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tag">KECEPATAN JALAN BAWAAN</div>
+  <div class="cd h mono" data-at="s7:enam" data-fx="drop">16 stud/dtk</div>
+  <div class="row" data-at="s7:kilometer" data-fx="drop"><div class="gauge"><div class="arc"></div><div class="needle" data-at="s7:kilometer+0.2" data-fx="needle"></div><div class="hub"></div></div><b class="chip o mono">&asymp; 16 km/jam</b></div>
+  <div class="chip w" data-at="s7:berlari" data-fx="drop">setara lari cukup kencang</div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="tag">DEVELOPER BEBAS MENGUBAH</div>
+  <div class="chip w" data-at="s8:bulan" data-fx="drop">misalnya level di bulan</div>
+  <div class="cd h" data-at="s8:Kalau" data-fx="drop">Kamu pilih gravitasi <span>berapa?</span></div>
+  <div class="row"><b class="chip m mono" data-at="s8:berapa" data-fx="drop">196,2</b><b class="chip o mono" data-at="s8:yang" data-fx="drop">35</b><b class="chip w mono" data-at="s8:pilih" data-fx="drop">?</b></div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA ROBLOX &middot; EP 04</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":5.659,"s2":5.819,"s2e":18.176,"s3":18.336,"s3e":30.416,"s4":30.576,"s4e":39.972,"s5":40.132,"s5e":50.767,"s6":50.927,"s6e":63.853,"s7":64.013,"s7e":71.048,"s8":71.208,"s8e":78.761,"end":78.761,"dur":81.76,"outro":79.011,"X":[[0,0],[0.3,0],[0.842,1.6],[1.1,1.6],[1.642,0],[1.9,0],[2.442,1.6],[2.7,1.6],[3.242,0],[3.566,0],[4.108,1.6],[5.188,1.6],[5.73,0],[5.75,0],[8.063,37],[17.3,37],[19.8,77],[29.235,77],[29.777,77],[39.532,77],[40.074,77],[41.75,77],[44.25,117],[43.999,117],[44.541,121],[47.44,121],[47.982,117],[49.684,117],[50.226,121],[54.75,121],[57.188,160],[57.225,160],[60.262,161.8],[64.6,161.8],[67.637,160],[67.9,160],[79.9,352],[80.25,352],[83.704,353.5]],"J":[[0.3,53.153,196.2,0,6.419,0.842],[1.1,53.153,196.2,0,6.419,1.642],[1.9,53.153,196.2,0,6.419,2.442],[2.7,53.153,196.2,0,6.419,3.242],[3.566,53.153,196.2,0,6.419,4.108],[5.188,53.153,196.2,0,6.419,5.73],[29.235,53.153,196.2,0,30.876,29.777],[39.532,53.153,196.2,0,40.132,40.074],[43.999,53.153,196.2,0,51.327,44.541],[47.44,53.153,196.2,0,51.327,47.982],[49.684,53.153,196.2,0,51.327,50.226],[57.225,53.153,35,1,64.413,60.262],[64.6,53.153,35,1,64.413,67.637],[80.25,10,5.79,2,99,83.704]]},AT={"s1:gravitasinya":2.408,"s1:enam":3.616,"s1:bumi":5.288,"s2:satu":11.334,"s2:dua":12.154,"s2:Dari":13.501,"s3:seratus":20.372,"s3:lima":24.718,"s3:Bumi":27.659,"s3:Hampir":29.285,"s4:Dokumen":30.596,"s4:tiga":34.572,"s4:nyata":39.632,"s5:tujuh":44.897,"s5:Tinggi":43.999,"s5:pintu":47.59,"s5:setengah":49.684,"s6:realistis":53.256,"s6:melambung":57.525,"s6:empat":58.206,"s6:Hitungan":55.827,"s7:enam":65.518,"s7:kilometer":68.246,"s8:bulan":75.138,"s1:hampir":3.275,"s4:realistis":33.661,"s4:Jadi":36.938,"s6:tetap":55.083,"s6:sebelas":59.946,"s6:melambung-0.3":57.225,"s7:kilometer+0.2":68.446,"s7:berlari":69.933,"s8:Kalau":76.005,"s8:berapa":77.832,"s8:yang":78.141,"s8:pilih":78.436},DUR=81.76,OUT=79.011;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ drop:(e,t)=>{tl.fromTo(e,{y:-220,opacity:0},{y:0,opacity:1,duration:.26,ease:'power2.in'},t-.2);tl.fromTo(e,{scaleY:.72,scaleX:1.1},{scaleY:1,scaleX:1,duration:.45,ease:'elastic.out(1,.4)',immediateRender:false},t+.06);},
+ needle:(e,t)=>{tl.fromTo(e,{rotation:-90,opacity:1},{rotation:-18,duration:.9,ease:'back.out(2.2)'},t);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{y:-1000,opacity:1},{y:0,duration:.32,ease:'power2.in'},a-.32);tl.fromTo(p,{scaleY:.8,scaleX:1.07},{scaleY:1,scaleX:1,duration:.5,ease:'elastic.out(1,.42)',immediateRender:false},a);},POUT=(tl,p,b)=>{tl.to(p,{scaleY:.84,scaleX:1.06,duration:.09,ease:'power1.out'},b-.42);tl.to(p,{y:-1100,scaleY:1.1,scaleX:.95,duration:.3,ease:'power2.out'},b-.32);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{yPercent:-102});tl.to('#outro',{yPercent:0,duration:.7,ease:'bounce.out'},OUT-.3);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{document.querySelectorAll('.swc').forEach(e=>{const a=AT[e.dataset.a],d=+e.dataset.d,dec=+e.dataset.dec,v=Math.min(Math.max(t-a,0),d);e.textContent=v.toLocaleString('de-DE',{minimumFractionDigits:dec,maximumFractionDigits:dec})+' dtk';});};
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

@@ -1,0 +1,410 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP28_DEREK_REDMOND_BARCELONA_1992",
+  "topic": "Derek Redmond — hamstring putus di semifinal 400 m Barcelona 1992, ayahnya membantunya finis (AUDIRA Sport Facts)",
+  "createdAt": "2026-11-22T18:01:00.783Z",
+  "updatedAt": "2026-11-23T12:33:19.005Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:02:15.586Z",
+          "text": "Preflight: proyek npm per-episode dibuat di tahap 5 (salin pola EP sebelumnya). Memory GLOBAL: tulis 'Audira' di VO, loudnorm 2-pass TP -1.5, sign lewat skrip await, qa_video hardOnly, Karaoke lebar penuh gap 0.4em."
+        }
+      ],
+      "doneAt": "2026-11-22T18:02:15.586Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:09:56.136Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-22T18:09:31.942Z",
+      "startedAt": "2026-11-22T18:09:31.942Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T22:20:40.054Z",
+      "notes": [
+        {
+          "at": "2026-11-22T18:02:13.335Z",
+          "text": "Konteks dibaca (GLOBAL+channel memory, ref FAKTA_OLAHRAGA EP05 CHRONICLE). Engine: Remotion 2D (skill audira-2d-motion). Kandidat: CHRONICLE (utama), CINESTORY, FILM16. Recommender menyarankan PLUSHFORGE/WATERCOLOR karena salah tangkap kata 'anak' (ayah-anak) — ditolak, nada topik dramatis dewasa. Riset jalan paralel (subagen). Menunggu pilihan pengguna."
+        },
+        {
+          "at": "2026-11-22T22:20:40.054Z",
+          "text": "Pengguna memilih CHRONICLE (2026-11-23). Lanjut cover topik."
+        },
+        {
+          "at": "2026-11-22T22:24:40.234Z",
+          "text": "Cover topik dirender: style/cover-topic.png (Ep28Cover). STYLE_DECISION.md lengkap."
+        }
+      ],
+      "startedAt": "2026-11-22T18:02:13.335Z",
+      "doneAt": "2026-11-22T22:24:40.234Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T22:26:54.011Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T22:25:11.802Z",
+      "startedAt": "2026-11-22T22:25:11.802Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:21:15.658Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T22:21:11.404Z",
+      "startedAt": "2026-11-22T22:21:11.404Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:22:07.256Z",
+          "text": "VO Cartesia 193 kata, dipadatkan 72,8 dtk (public/audio/vo.wav + vo-words.json + vo.timing.json); offset film 0,3"
+        }
+      ],
+      "doneAt": "2026-11-23T12:22:07.256Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:23:55.685Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-23T12:22:23.680Z",
+          "text": "Film.tsx Ep28Final ditulis (16 shot/8 adegan, tsc lolos); belum still check, SHOTLIST, sfx. Draf (contact sheet + juri) BELUM dibuat walau checklist menandai."
+        },
+        {
+          "at": "2026-11-23T12:26:45.349Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-23T12:28:00.938Z",
+          "text": "Still 16 beat dicek, tabrakan DNF/quote diperbaiki; docs/SHOTLIST.md 17 shot; sfx.wav −20 LUFS 36 sound."
+        }
+      ],
+      "doneAt": "2026-11-23T12:28:00.938Z",
+      "startedAt": "2026-11-22T22:23:45.718Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T22:23:55.686Z",
+          "text": "sync: 1 gambar draf (bukan contact-sheet.jpg; buat dulu: bash sheet.sh <EP>)"
+        },
+        {
+          "at": "2026-11-23T12:28:00.783Z",
+          "text": "Contact sheet draft/contact-sheet.jpg, THEME_CHECK ya semua, audit:visual tanpa cap, camera 5/5. Self 4.0, juri buta putaran 1 = 3.83 LOLOS. Tambalan pra-final: karaoke 1 baris (≤24 char), NameTag Jim y380, Jim mundur saat melepas."
+        }
+      ],
+      "doneAt": "2026-11-23T12:28:00.783Z",
+      "startedAt": "2026-11-22T22:23:45.720Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:33:14.276Z",
+          "text": "FINAL_VIDEO.mp4 76 dtk, -13.6 LUFS TP -2, metadata + signature VALID, qa_video PASS, record_score final 3.83"
+        }
+      ],
+      "doneAt": "2026-11-23T12:33:14.276Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:26:45.349Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T12:33:14.498Z",
+          "text": "SOCIAL_CAPTIONS valid (validator ok), SUBTITLES.srt +0.3, NOTES.md, 3 lessons CHRONICLE, task review 24h/72h/7d (upload Sabtu 28 Nov 19.00)"
+        }
+      ],
+      "doneAt": "2026-11-23T12:33:14.498Z",
+      "startedAt": "2026-11-23T12:26:29.856Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP28",
+    "engine": "remotion",
+    "engine2d": "audira-2d-motion",
+    "channel": "SPORTFACTS",
+    "handle": "@AudiraSportFacts",
+    "style": "CHRONICLE",
+    "shortTitle": "Derek Redmond"
+  },
+  "syncedAt": "2026-11-23T12:26:45.349Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T22:25:33.201Z",
+      "doing": "Tahap 4 naskah: SCRIPT.md + script-lines.json selesai (193 kata); storyboard/art direction/asset manifest belum",
+      "files": [
+        "docs/HANDOFF.md",
+        "docs/SCRIPT.md",
+        "docs/script-lines.json",
+        "project/src/Cover.tsx",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Tulis ART_DIRECTION, STORYBOARD, ASSET_MANIFEST → VO Cartesia → film Ep28Final multi-scene → contact sheet juri → final. Baca docs/HANDOFF.md dulu.",
+      "snapshot": {
+        "episode": "EP28_DEREK_REDMOND_BARCELONA_1992",
+        "topic": "Derek Redmond — hamstring putus di semifinal 400 m Barcelona 1992, ayahnya membantunya finis (AUDIRA Sport Facts)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP28",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:15:52.757Z",
+      "doing": "Tahap 4 naskah: SCRIPT.md + script-lines.json selesai (193 kata); storyboard/art direction/asset manifest belum",
+      "files": [
+        "docs/HANDOFF.md",
+        "docs/SCRIPT.md",
+        "docs/script-lines.json",
+        "project/src/Cover.tsx",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Tulis ART_DIRECTION, STORYBOARD, ASSET_MANIFEST → VO Cartesia → film Ep28Final multi-scene → contact sheet juri → final. Baca docs/HANDOFF.md dulu.",
+      "snapshot": {
+        "episode": "EP28_DEREK_REDMOND_BARCELONA_1992",
+        "topic": "Derek Redmond — hamstring putus di semifinal 400 m Barcelona 1992, ayahnya membantunya finis (AUDIRA Sport Facts)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP28",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:18:06.174Z",
+      "doing": "Tahap 6 VO Cartesia (docs tahap 4 selesai; lib set/hud disalin dari EP10 versi poles)",
+      "files": [
+        "docs/ART_DIRECTION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "project/public/audio/vo.wav"
+      ],
+      "next": "npm run vo, lalu Film.tsx Ep28Final mengikuti pola EP10 Film.tsx",
+      "snapshot": {
+        "episode": "EP28_DEREK_REDMOND_BARCELONA_1992",
+        "topic": "Derek Redmond — hamstring putus di semifinal 400 m Barcelona 1992, ayahnya membantunya finis (AUDIRA Sport Facts)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP28",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:22:27.709Z",
+      "doing": "Tahap 7: Film.tsx Ep28Final selesai ditulis (tsc lolos), belum still check/SHOTLIST/sfx",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/Film.tsx",
+        "project/src/Root.tsx",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "Baca docs/HANDOFF.md. Still per beat → SHOTLIST.md + npm run sfx → contact sheet + THEME_CHECK + juri → final → delivery",
+      "snapshot": {
+        "episode": "EP28_DEREK_REDMOND_BARCELONA_1992",
+        "topic": "Derek Redmond — hamstring putus di semifinal 400 m Barcelona 1992, ayahnya membantunya finis (AUDIRA Sport Facts)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP28",
+        "currentStage": "animation",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:23:24.885Z",
+      "doing": "Sesi 3: render 16 still per beat (out/beats) untuk cek tabrakan",
+      "command": "node scripts/stills.mjs out/beats <16 times> Ep28Final 0.5",
+      "next": "Perbaiki tabrakan → docs/SHOTLIST.md + npm run sfx → contact sheet + juri",
+      "snapshot": {
+        "episode": "EP28_DEREK_REDMOND_BARCELONA_1992",
+        "topic": "Derek Redmond — hamstring putus di semifinal 400 m Barcelona 1992, ayahnya membantunya finis (AUDIRA Sport Facts)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP28",
+        "currentStage": "animation",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:28:08.072Z",
+      "doing": "Render final FINAL_VIDEO.mp4 1080x1920@60 (juri draf 3.83 LOLOS); SOCIAL_CAPTIONS.md sudah valid",
+      "command": "cd project; node scripts/render-final.mjs --comp=Ep28Final --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --encoder=nvenc --title=\"Derek Redmond: Barcelona 1992\" --slug=derek-redmond-barcelona-1992 --ep=EP28 --skip-channel (env TEMP/TMP/RENDER_TMPDIR=F:\\temp\\render)",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "QA loudness/TP + ffprobe metadata + audira_qa_video hardOnly + record_score final → NOTES.md, append_lesson, 3 scheduled task review, SUBTITLES.srt",
+      "snapshot": {
+        "episode": "EP28_DEREK_REDMOND_BARCELONA_1992",
+        "topic": "Derek Redmond — hamstring putus di semifinal 400 m Barcelona 1992, ayahnya membantunya finis (AUDIRA Sport Facts)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP28",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:28:08.072Z",
+      "doing": "Render final FINAL_VIDEO.mp4 1080x1920@60 (juri draf 3.83 LOLOS); SOCIAL_CAPTIONS.md sudah valid",
+      "command": "cd project; node scripts/render-final.mjs --comp=Ep28Final --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --encoder=nvenc --title=\"Derek Redmond: Barcelona 1992\" --slug=derek-redmond-barcelona-1992 --ep=EP28 --skip-channel (env TEMP/TMP/RENDER_TMPDIR=F:\\temp\\render)",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "QA loudness/TP + ffprobe metadata + audira_qa_video hardOnly + record_score final → NOTES.md, append_lesson, 3 scheduled task review, SUBTITLES.srt",
+      "snapshot": {
+        "episode": "EP28_DEREK_REDMOND_BARCELONA_1992",
+        "topic": "Derek Redmond — hamstring putus di semifinal 400 m Barcelona 1992, ayahnya membantunya finis (AUDIRA Sport Facts)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP28",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T12:33:19.005Z"
+    }
+  ],
+  "session": 3,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP28 Derek Redmond · s2",
+      "at": "2026-11-23T12:15:52.755Z"
+    },
+    {
+      "no": 3,
+      "title": "EP28 Derek Redmond · s3",
+      "at": "2026-11-23T12:22:27.709Z"
+    }
+  ]
+}

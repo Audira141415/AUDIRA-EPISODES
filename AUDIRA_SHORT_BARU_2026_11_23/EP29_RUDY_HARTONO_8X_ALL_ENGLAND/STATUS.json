@@ -1,0 +1,383 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP29_RUDY_HARTONO_8X_ALL_ENGLAND",
+  "topic": "Rudy Hartono — 8 gelar All England, 7 beruntun 1968–1974 + 1976 — AUDIRA Sport Facts",
+  "createdAt": "2026-11-22T22:23:36.858Z",
+  "updatedAt": "2026-11-23T00:59:52.225Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:23:55.762Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-22T22:23:36.862Z",
+      "startedAt": "2026-11-22T22:23:36.862Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:26:54.028Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-22T22:26:44.595Z",
+      "startedAt": "2026-11-22T22:26:44.595Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T23:55:08.572Z",
+      "notes": [
+        {
+          "at": "2026-11-22T22:24:23.724Z",
+          "text": "Konteks dibaca (GLOBAL memory, EP10 handoff + library 2D siluet). Riset jalan di subagen. Opsi 2D: CHRONICLE (utama), TACTICBOARD, FILM16 → style/style-options.jpg. Menunggu pilihan pengguna."
+        },
+        {
+          "at": "2026-11-22T23:55:08.572Z",
+          "text": "Pengguna memilih CHRONICLE (Recommended) 2026-11-23. Lanjut cover topik."
+        },
+        {
+          "at": "2026-11-23T00:00:15.528Z",
+          "text": "STYLE_DECISION.md + cover-reference.jpg + cover-topic.png (Ep29Cover) selesai"
+        }
+      ],
+      "startedAt": "2026-11-22T22:24:23.724Z",
+      "doneAt": "2026-11-23T00:00:15.527Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T00:00:59.791Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-23T00:00:57.869Z",
+      "startedAt": "2026-11-23T00:00:57.869Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:23:55.762Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T22:23:28.666Z",
+      "startedAt": "2026-11-22T22:23:28.666Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T00:08:57.047Z",
+          "text": "VO Cartesia 79,55 dtk + vo-words.json; offset 0.3"
+        }
+      ],
+      "doneAt": "2026-11-23T00:08:57.047Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T00:00:53.543Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-23T00:08:51.195Z",
+          "text": "Film.tsx dirender ke contact sheet; dipoles: skyline Surabaya rendah, stempel JUARA TERMUDA, kartu payoff. SHOTLIST + sfx.wav selesai."
+        }
+      ],
+      "doneAt": "2026-11-23T00:08:51.195Z",
+      "startedAt": "2026-11-23T00:00:02.719Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T00:00:53.543Z",
+          "text": "sync: 1 gambar draf (bukan contact-sheet.jpg; buat dulu: bash sheet.sh <EP>)"
+        }
+      ],
+      "doneAt": "2026-11-23T00:00:02.720Z",
+      "startedAt": "2026-11-23T00:00:02.720Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T00:55:02.326Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60, 83.3 s, -14.2 LUFS TP -1.4, metadata ok, Ed25519+C2PA VALID, qa_video PASS, jury draft r2 4.0, final score 4.0 (gold archived)"
+        }
+      ],
+      "doneAt": "2026-11-23T00:55:02.326Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T00:50:44.925Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-23T00:49:36.545Z",
+      "startedAt": "2026-11-23T00:49:36.545Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP29",
+    "engine": "remotion",
+    "channel": "SPORTFACTS",
+    "handle": "@AudiraSportFacts",
+    "style": "CHRONICLE"
+  },
+  "syncedAt": "2026-11-23T00:50:44.925Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T23:56:22.549Z",
+      "doing": "Style CHRONICLE terpilih; library 2D EP10 disalin ke project/src/lib. Belum: STYLE_DECISION.md, cover-topic.png, docs, VO, film.",
+      "files": [
+        "HANDOFF.md",
+        "research/SOURCE_REGISTER.md",
+        "project/src/lib/fig.tsx",
+        "project/src/lib/set.tsx",
+        "project/src/lib/hud.tsx"
+      ],
+      "next": "Baca HANDOFF.md di folder episode, tutup tahap 3 (STYLE_DECISION + cover topik), lalu tahap 4 docs → VO → film → draf juri → final → caption.",
+      "snapshot": {
+        "episode": "EP29_RUDY_HARTONO_8X_ALL_ENGLAND",
+        "topic": "Rudy Hartono — 8 gelar All England, 7 beruntun 1968–1974 + 1976 — AUDIRA Sport Facts",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP29",
+        "currentStage": "style",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:04:01.956Z",
+      "doing": "Tahap 7: Film.tsx (Ep29Final, 12 shot) + badminton.tsx ditulis, tsc bersih, belum dirender. VO selesai (79,55 dtk). Docs tahap 4 selesai.",
+      "files": [
+        "HANDOFF.md",
+        "project/src/Film.tsx",
+        "project/src/lib/badminton.tsx",
+        "project/src/lib/fig.tsx",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "Baca HANDOFF.md: SHOTLIST.md + sfx.mjs → contact sheet + THEME_CHECK + skor self + juri → final → caption.",
+      "snapshot": {
+        "episode": "EP29_RUDY_HARTONO_8X_ALL_ENGLAND",
+        "topic": "Rudy Hartono — 8 gelar All England, 7 beruntun 1968–1974 + 1976 — AUDIRA Sport Facts",
+        "style": "CHRONICLE",
+        "memoryEpisode": "AUDIRA_SHORT_BARU_2026_11_23-EP29",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:27:44.648Z",
+      "doing": "Tahap 8 draf: poles putaran 2 selesai, contact sheet baru dirender belum dilihat; juri putaran 1 = 3.67 PERLU POLES",
+      "files": [
+        "HANDOFF.md",
+        "project/src/Film.tsx",
+        "project/src/lib/hud.tsx",
+        "project/src/lib/badminton.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/camera.json",
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "Baca HANDOFF.md: lihat sheet-view, juri buta putaran 2, render final, delivery. C: penuh: set TEMP ke F:.",
+      "snapshot": {
+        "episode": "EP29_RUDY_HARTONO_8X_ALL_ENGLAND",
+        "topic": "Rudy Hartono — 8 gelar All England, 7 beruntun 1968–1974 + 1976 — AUDIRA Sport Facts",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP29",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:49:49.091Z",
+      "doing": "render final FINAL_VIDEO.mp4 (juri putaran 2 LOLOS 4.0)",
+      "command": "cd project; node scripts/render-final.mjs --comp=Ep29Final --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=3 --concurrency=2 --encoder=nvenc --title=\"Rudy Hartono: 8x Juara All England\" --slug=rudy-hartono-8x-all-england --ep=EP29 (TEMP=draft\\.tmp)",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "SOCIAL_CAPTIONS.md"
+      ],
+      "next": "QA loudness/metadata/qa_video/verify_signature, record_score final, tahap 10 (SOCIAL_CAPTIONS.md sudah ditulis)",
+      "snapshot": {
+        "episode": "EP29_RUDY_HARTONO_8X_ALL_ENGLAND",
+        "topic": "Rudy Hartono — 8 gelar All England, 7 beruntun 1968–1974 + 1976 — AUDIRA Sport Facts",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP29",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:49:49.091Z",
+      "doing": "render final FINAL_VIDEO.mp4 (juri putaran 2 LOLOS 4.0)",
+      "command": "cd project; node scripts/render-final.mjs --comp=Ep29Final --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=3 --concurrency=2 --encoder=nvenc --title=\"Rudy Hartono: 8x Juara All England\" --slug=rudy-hartono-8x-all-england --ep=EP29 (TEMP=draft\\.tmp)",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "SOCIAL_CAPTIONS.md"
+      ],
+      "next": "QA loudness/metadata/qa_video/verify_signature, record_score final, tahap 10 (SOCIAL_CAPTIONS.md sudah ditulis)",
+      "snapshot": {
+        "episode": "EP29_RUDY_HARTONO_8X_ALL_ENGLAND",
+        "topic": "Rudy Hartono — 8 gelar All England, 7 beruntun 1968–1974 + 1976 — AUDIRA Sport Facts",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP29",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T00:55:35.217Z"
+    },
+    {
+      "at": "2026-11-23T00:58:56.713Z",
+      "doing": "remix audio final (keluhan pengguna: VO terlalu kecil, SFX/noise terlalu keras). render-final.mjs memakai mix lama (tanpa loudnorm VO, SFX tanpa -10dB, duck ratio 2.5)",
+      "command": "powershell -File draft/remix.ps1 (VO adelay 300 + loudnorm I=-16, SFX volume=-10dB + sidechain ratio 8 thr 0.015 atk 5 rel 350, master loudnorm I=-14 TP=-1.5, video copy dari FINAL_VIDEO.mp4, lalu sign-video.mjs --c2pa)",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "draft/remix.ps1"
+      ],
+      "next": "ukur LUFS/TP, verify signature, qa_video, update NOTES + lesson GLOBAL (render-final mix tidak sesuai G18)",
+      "snapshot": {
+        "episode": "EP29_RUDY_HARTONO_8X_ALL_ENGLAND",
+        "topic": "Rudy Hartono — 8 gelar All England, 7 beruntun 1968–1974 + 1976 — AUDIRA Sport Facts",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP29",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:58:56.713Z",
+      "doing": "remix audio final (keluhan pengguna: VO terlalu kecil, SFX/noise terlalu keras). render-final.mjs memakai mix lama (tanpa loudnorm VO, SFX tanpa -10dB, duck ratio 2.5)",
+      "command": "powershell -File draft/remix.ps1 (VO adelay 300 + loudnorm I=-16, SFX volume=-10dB + sidechain ratio 8 thr 0.015 atk 5 rel 350, master loudnorm I=-14 TP=-1.5, video copy dari FINAL_VIDEO.mp4, lalu sign-video.mjs --c2pa)",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "draft/remix.ps1"
+      ],
+      "next": "ukur LUFS/TP, verify signature, qa_video, update NOTES + lesson GLOBAL (render-final mix tidak sesuai G18)",
+      "snapshot": {
+        "episode": "EP29_RUDY_HARTONO_8X_ALL_ENGLAND",
+        "topic": "Rudy Hartono — 8 gelar All England, 7 beruntun 1968–1974 + 1976 — AUDIRA Sport Facts",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP29",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T00:59:52.225Z"
+    }
+  ]
+}

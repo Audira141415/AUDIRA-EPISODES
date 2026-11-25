@@ -1,0 +1,678 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP03_TENIS_11_JAM_ISNER_MAHUT",
+  "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+  "createdAt": "2026-11-22T06:26:14.138Z",
+  "updatedAt": "2026-11-23T08:26:50.258Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T06:29:39.156Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-22T06:26:14.139Z",
+      "startedAt": "2026-11-22T06:26:14.139Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T06:29:39.156Z",
+          "text": "sync: riset ada"
+        },
+        {
+          "at": "2026-11-22T07:04:25.159Z",
+          "text": "SOURCE_REGISTER 15 fakta, 11 HIGH. Caveat: ace Isner 113, Mahut 103; papan skor macet 47-47; tanpa 'rekor Guinness'."
+        }
+      ],
+      "doneAt": "2026-11-22T07:04:25.159Z",
+      "startedAt": "2026-11-22T06:26:14.091Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T07:23:16.519Z",
+      "notes": [
+        {
+          "at": "2026-11-22T07:18:54.638Z",
+          "text": "Pengguna pilih BROADCASTFORGE. Cover topik A/B dirender (style/cover-topic-A.png, -B.png), menunggu pilihan + acc."
+        },
+        {
+          "at": "2026-11-22T07:23:16.519Z",
+          "text": "Pengguna acc cover A (\"11 JAM\", Isner servis dari belakang) 2026-11-22. cover-topic.png + cover.json dari Ep03CoverA frame 10."
+        }
+      ],
+      "startedAt": "2026-11-22T07:18:54.638Z",
+      "doneAt": "2026-11-22T07:23:16.519Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T07:42:05.744Z",
+      "notes": [
+        {
+          "at": "2026-11-22T07:33:49.746Z",
+          "text": "ART_DIRECTION, SCRIPT (205 kata, script:check OK), STORYBOARD (8 scene), ASSET_MANIFEST ditulis. Menunggu acc pengguna."
+        },
+        {
+          "at": "2026-11-22T07:42:05.744Z",
+          "text": "Pengguna: \"Acc semua\" (naskah 205 kata + storyboard 8 scene + art direction) 2026-11-22."
+        }
+      ],
+      "startedAt": "2026-11-22T07:33:49.746Z",
+      "doneAt": "2026-11-22T07:42:05.744Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T08:22:23.829Z",
+          "text": "Studio Remotion bersama AUDIRA_FAKTA_OLAHRAGA_2026/studio (sudah ada, check-env/smoke dilakukan sesi induk); kode EP03 di studio/src/scenes/ep03."
+        }
+      ],
+      "doneAt": "2026-11-22T08:22:23.829Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T07:53:25.160Z",
+          "text": "VO Cartesia 1 take (MCP) -> vo_tighten -> audio/vo.wav; voEnd 80.717, total 84.717; studio/src/scenes/ep03/timeline.json + public/audio/ep03/vo.wav. Setup: studio bersama sudah ada."
+        }
+      ],
+      "doneAt": "2026-11-22T07:53:25.160Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T08:11:54.341Z",
+          "text": "Film.tsx 8 scene (10 sub-shot) di studio/src/scenes/ep03 (Film, studio, overlays, timing); Root Ep03Preview/Ep03Final signed seed olahraga-EP03; docs/SHOTLIST.md; sfx public/audio/ep03/sfx.wav (-20 LUFS, impact 60.4 s)."
+        }
+      ],
+      "doneAt": "2026-11-22T08:11:54.341Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T08:30:44.155Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json PASS; menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-22T13:07:56.279Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json PASS"
+        }
+      ],
+      "startedAt": "2026-11-22T08:24:35.909Z",
+      "doneAt": "2026-11-22T08:24:35.909Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T08:25:39.703Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-23T08:26:50.258Z",
+          "text": "2026-11-23 audio remix G18 tanpa render video (VO -16.6, SFX duck -35.3, master -13.6 LUFS TP -2), metadata + sign VALID, FINAL_VIDEO.mp4. Skor final self 3.83."
+        }
+      ],
+      "doneAt": "2026-11-23T08:26:50.258Z",
+      "startedAt": "2026-11-23T08:25:29.267Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T08:26:25.627Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-23T08:26:12.103Z",
+      "startedAt": "2026-11-23T08:26:12.103Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "fakta-olahraga-EP03",
+    "style": "BROADCASTFORGE",
+    "engine": "remotion",
+    "wordCount": 205,
+    "estimatedDuration": {
+      "wordCount": 205,
+      "minSec": 82,
+      "maxSec": 91
+    },
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-23T08:26:25.627Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T07:19:18.002Z",
+      "doing": "Gerbang style tahap 3: BROADCASTFORGE dipilih pengguna; menunggu acc cover topik A (\"11 JAM\", Isner servis dari belakang) atau B (\"70–68\", wide telephoto).",
+      "files": [
+        "style/cover-topic-A.png",
+        "style/cover-topic-B.png",
+        "style/STYLE_DECISION.md",
+        "studio/src/scenes/ep03/{Cover,court,hud,fonts,palette,index}.tsx",
+        "studio/src/Root.tsx (Ep03CoverA/B)"
+      ],
+      "next": "Setelah acc: salin cover terpilih ke cover-topic.png (atau npm run cover -- Ep03Cover<X> --episode=../EP03_TENIS_11_JAM_ISNER_MAHUT --at=10 --force), set STYLE_DECISION approved: yes, lalu update style approved. Lanjut tahap 4 naskah (caveat: ace 113/103, papan skor 47-47, tanpa Guinness; teaser outro \"Pit Stop 1,8 Detik\"). Tahap 9: JANGAN pakai audira_render_batch (bug, lihat side-session-notes/.../ep01-render-batch-blockers.md); pakai npm run render:final dari studio dengan --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --sfx=public/audio/sfx.wav --cuts=...; satu render saja, cek/buat GPU_LOCK.md di side-session-notes/local_1284e608-.../ dan hapus setelah selesai/gagal.",
+      "snapshot": {
+        "episode": "EP03_TENIS_11_JAM_ISNER_MAHUT",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "BROADCASTFORGE",
+        "memoryEpisode": "fakta-olahraga-EP03",
+        "currentStage": "style",
+        "gates": {
+          "style": {
+            "approved": false,
+            "status": "in_progress"
+          },
+          "script": {
+            "approved": false,
+            "status": "pending"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T07:23:25.312Z",
+      "doing": "Tahap 3 selesai (BROADCASTFORGE, cover A \"11 JAM\" acc). Berikutnya tahap 4 naskah; belum dimulai.",
+      "files": [
+        "style/cover-topic.png",
+        "style/cover.json",
+        "style/STYLE_DECISION.md",
+        "studio/src/scenes/ep03/ (Cover.tsx SHOT_A, court.tsx set lapangan senja + servePose/readyPose, hud.tsx LiveBug/DurationClock/ScoreBug/Ticker/Headline)"
+      ],
+      "next": "Tahap 4: tulis docs/ART_DIRECTION.md → docs/SCRIPT.md + docs/STORYBOARD.md (≥6 baris Scene|Waktu|BG/MG/FG/HUD|Kamera|Audio) → docs/ASSET_MANIFEST.md. Naskah 195–210 kata, hook dari 8 jam 11 menit / 502 vs 478 poin / kalah 74 menit tanpa ace; ace 113 vs 103; papan skor macet 47-47; tanpa 'Guinness'; sebut AUDIRA; teaser outro 'Pit Stop 1,8 Detik'. Film dibuka tepat di frame cover (SHOT_A). Minta acc naskah+storyboard+AD. Tahap 9: npm run render:final langsung + GPU_LOCK.md (bukan audira_render_batch).",
+      "snapshot": {
+        "episode": "EP03_TENIS_11_JAM_ISNER_MAHUT",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "BROADCASTFORGE",
+        "memoryEpisode": "fakta-olahraga-EP03",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": false,
+            "status": "pending"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T07:33:49.785Z",
+      "doing": "Tahap 4: docs naskah/storyboard/AD/manifest selesai, menunggu acc pengguna.",
+      "files": [
+        "docs/ART_DIRECTION.md",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md"
+      ],
+      "next": "Bila acc: set SCRIPT.md 'Status: approved: yes', update stage script approved true. Tahap 5 setup (studio bersama sudah ada; kode di studio/src/scenes/ep03/), tahap 6 VO Cartesia dari teks SCRIPT.md lalu npm run vo, tahap 7 Film multi-scene 8 scene (S1 mulai di SHOT_A). Render final: npm run render:final langsung + GPU_LOCK.md (bukan audira_render_batch).",
+      "snapshot": {
+        "episode": "EP03_TENIS_11_JAM_ISNER_MAHUT",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "BROADCASTFORGE",
+        "memoryEpisode": "fakta-olahraga-EP03",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": false,
+            "status": "in_progress"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T07:42:13.825Z",
+      "doing": "Tahap 4 acc (naskah 205 kata). Berikutnya tahap 5 setup + tahap 6 VO; belum dimulai.",
+      "files": [
+        "docs/SCRIPT.md (approved yes)",
+        "docs/STORYBOARD.md",
+        "docs/ART_DIRECTION.md",
+        "docs/ASSET_MANIFEST.md",
+        "studio/src/scenes/ep03/*"
+      ],
+      "next": "Tahap 5: studio bersama sudah ada (Root.tsx dibagi 4 sesi: Read dulu, Edit kecil saja). Tahap 6: audira_generate_voiceover dari teks terucap SCRIPT.md (tulis 'Audira' bukan AUDIRA di teks TTS), simpan ke EP03/audio, lalu npm run vo; kunci timeline. Tahap 7: Film.tsx multi-scene 8 scene per STORYBOARD, S1 mulai tepat di SHOT_A cover; Ep03Preview/Ep03Final pakai signed('Ep03', ...). Draf = contact sheet + juri buta LOLOS. Final: npm run render:final langsung + GPU_LOCK.md (bukan audira_render_batch).",
+      "snapshot": {
+        "episode": "EP03_TENIS_11_JAM_ISNER_MAHUT",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "BROADCASTFORGE",
+        "memoryEpisode": "fakta-olahraga-EP03",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T07:52:45.333Z",
+      "doing": "Tahap 6 VO: audira_generate_voiceover dari audio/work/vo-spoken.txt -> audio/work/vo-raw.wav + vo-raw-words.json",
+      "files": [
+        "docs/script-lines.json",
+        "audio/work/vo-spoken.txt"
+      ],
+      "next": "python _tools/vo_tighten.py EP03_TENIS_11_JAM_ISNER_MAHUT lalu python _tools/make-timeline.py EP03_TENIS_11_JAM_ISNER_MAHUT, npm run vo, tulis timing.ts",
+      "snapshot": {
+        "episode": "EP03_TENIS_11_JAM_ISNER_MAHUT",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "BROADCASTFORGE",
+        "memoryEpisode": "fakta-olahraga-EP03",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T08:03:28.859Z",
+      "doing": "Tahap 7: Film.tsx 8 scene ditulis (ep03/Film.tsx, studio.tsx, overlays.tsx, timing.ts), Root Ep03Preview/Final ditambah; render stills beat out/ep03-beats",
+      "command": "npm run stills -- out/ep03-beats <times> Ep03Preview",
+      "next": "periksa contact sheet stills, poles, tulis docs/SHOTLIST.md, npm run sfx, lalu tahap 8 draf",
+      "snapshot": {
+        "episode": "EP03_TENIS_11_JAM_ISNER_MAHUT",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "BROADCASTFORGE",
+        "memoryEpisode": "fakta-olahraga-EP03",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP03_TENIS_11_JAM_ISNER_MAHUT/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T08:22:20.710Z",
+      "doing": "Tahap 8: draf contact sheet (draft/contact-sheet.jpg) + audit:visual LOLOS ceilings + audit:camera 5 (clip 43-61 s) + skor self 4.17 tercatat; juri buta berjalan",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/look.json",
+        "draft/camera.json",
+        "draft/clip-43-61s.mp4"
+      ],
+      "next": "catat skor juri (record_score judge jury); bila LOLOS minta acc draf pengguna; lalu tahap 9 render:final dengan GPU_LOCK",
+      "snapshot": {
+        "episode": "EP03_TENIS_11_JAM_ISNER_MAHUT",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "BROADCASTFORGE",
+        "memoryEpisode": "fakta-olahraga-EP03",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP03_TENIS_11_JAM_ISNER_MAHUT/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T08:23:18.616Z",
+      "doing": "Tahap 8 putaran 2: juri draf 1 = 3.83 PERLU POLES (material 3, composition 3; weakest: frame 7 kartu 74 MENIT menimpa kepala Isner, close-up memotong wajah; frame 4 & 1 pemain terpotong tepi; HUD flat tanpa glass/glow; kata caption nonaktif kontras rendah). Poles di ep03/Film.tsx (s7Keys, s5aShot, s1Shot) + overlays.tsx (glass/glow, caption kontras).",
+      "files": [
+        "studio/src/scenes/ep03/Film.tsx",
+        "studio/src/scenes/ep03/overlays.tsx"
+      ],
+      "next": "render ulang stills 2.3,12.8,34.9,49.4,56.2,61.5,67.5,77.5 -> out/ep03-draft, audit:visual, susun draft/contact-sheet.jpg, skor self + juri buta (qa/jury.md), bila LOLOS minta acc draf; lalu tahap 9 render:final + GPU_LOCK",
+      "snapshot": {
+        "episode": "EP03_TENIS_11_JAM_ISNER_MAHUT",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "BROADCASTFORGE",
+        "memoryEpisode": "fakta-olahraga-EP03",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP03_TENIS_11_JAM_ISNER_MAHUT/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T08:25:32.838Z",
+      "doing": "Tahap 8 putaran 3 (belum dimulai). Juri draf r1 3.83, r2 3.83 (material 3, composition 3). Keluhan r2: figur bertabrakan dengan kartu HUD/ticker (frame 2 kaki di belakang ticker @12.8s S2 pedestal; frame 4 raket menabrak kartu MAHUT 103 @49.4s S5a; frame 7 kaki terpotong ticker @67.5s S7); figur ToyPerson terlihat plastik matte tanpa kesan kain; plakat S8 tak terbaca; ticker kecil.",
+      "command": "cd studio && npm run stills -- out/ep03-draft 2.3s,12.8s,34.9s,49.4s,56.2s,61.5s,67.5s,77.5s Ep03Preview",
+      "files": [
+        "studio/src/scenes/ep03/Film.tsx",
+        "studio/src/scenes/ep03/studio.tsx",
+        "studio/src/scenes/ep03/overlays.tsx",
+        "studio/src/scenes/ep03/timing.ts",
+        "studio/src/scenes/ep03/court.tsx",
+        "docs/SHOTLIST.md",
+        "docs/script-lines.json",
+        "draft/contact-sheet.jpg",
+        "draft/look.json",
+        "draft/camera.json",
+        "draft/clip-43-61s.mp4",
+        "studio/public/audio/ep03/vo.wav",
+        "studio/public/audio/ep03/sfx.wav"
+      ],
+      "next": "Poles: (a) bingkai ulang S2 (s2Keys Isner/Mahut: kamera lebih jauh, figur utuh di y 620-1440), S5a (s5aShot: subjek lebih rendah/kiri, jauh dari Counter kanan atas atau pindah Counter ke y ~1050), S7 (s7Keys: figur utuh di atas ticker); (b) material: beri kain pada baju (roughness/sheen via look atau overlay tekstur) bila ToyPerson mendukung, plakat S8: dorong kamera lebih dekat atau tambah Chip HUD berisi teks plakat; (c) render stills 2.3,12.8,34.9,49.4,56.2,61.5,67.5,77.5 -> studio/out/ep03-draft, npm run audit:visual, susun draft/contact-sheet.jpg (4x2, 540x960), record_score self lalu juri buta baru (prompt qa/jury.md). Bila LOLOS: tampilkan sheet ke pengguna, minta acc draf. Lalu tahap 9: cek GPU_LOCK.md, npm run render:final -- --comp=Ep03Final --out=out/ep03/FINAL_EP03.mp4 --vo=public/audio/ep03/vo.wav --sfx=public/audio/ep03/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --slug=tenis-11-jam-isner-mahut --ep=EP03; tahap 10 SOCIAL_CAPTIONS.md.",
+      "snapshot": {
+        "episode": "EP03_TENIS_11_JAM_ISNER_MAHUT",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "BROADCASTFORGE",
+        "memoryEpisode": "fakta-olahraga-EP03",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP03_TENIS_11_JAM_ISNER_MAHUT/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T08:25:42.397Z",
+      "doing": "Tahap 8 BERHENTI di gerbang: juri draf 2 putaran = 3.83 (material 3, composition 3). audira_style_memory menyatakan BATAS 2x DRAF TERCAPAI untuk BROADCASTFORGE, rule 6c: wajib ganti style lewat persetujuan pengguna. Lesson failed sudah dicatat.",
+      "files": [
+        "studio/src/scenes/ep03/Film.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/look.json",
+        "draft/camera.json"
+      ],
+      "next": "TANYA PENGGUNA DULU: (A) ganti style: audira_recommend_style / audira_recommend_fallback_style dengan failedStyles [\"BROADCASTFORGE\"], tawarkan 2-3 alternatif + cover, render cover topik baru, lanjut dari tahap 4 (VO 84.7 s tetap dipakai: studio/public/audio/ep03/vo.wav, timeline.json); atau (B) bila pengguna eksplisit memilih tetap BROADCASTFORGE: putaran poles ke-3 sesuai catatan handover sebelumnya (bingkai figur di y 620-1440 jauh dari kartu HUD/ticker pada S2 12.8s, S5a 49.4s, S7 67.5s; kesan kain pada baju; plakat S8 terbaca), lalu juri buta lagi. Jangan render final sebelum juri LOLOS + acc draf.",
+      "snapshot": {
+        "episode": "EP03_TENIS_11_JAM_ISNER_MAHUT",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "BROADCASTFORGE",
+        "memoryEpisode": "fakta-olahraga-EP03",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP03_TENIS_11_JAM_ISNER_MAHUT/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T08:30:10.437Z",
+      "doing": "Tahap 9 render final berjalan di background (sesi lama). Pengguna 2026-11-22: \"langsung render\" setelah juri draf 3.83 x2 -> render dengan --skip-memory-gate. GPU_LOCK.md dibuat; perintah menghapusnya sendiri setelah selesai/gagal. Log: studio/out/ep03/render-final.log (baris terakhir \"exit N\").",
+      "command": "cd studio && npm run render:final -- --comp=Ep03Final --out=out/ep03/FINAL_EP03.mp4 --vo=public/audio/ep03/vo.wav --sfx=public/audio/ep03/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Tenis 11 Jam: Isner vs Mahut\" --slug=tenis-11-jam-isner-mahut --ep=EP03 --skip-memory-gate=\"pengguna minta langsung render\"",
+      "files": [
+        "studio/out/ep03/FINAL_EP03.mp4",
+        "studio/out/ep03/render-final.log",
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "Cek tail studio/out/ep03/render-final.log. Bila exit 0: pastikan GPU_LOCK.md sudah hilang; ffprobe 1080x1920@60 + metadata (artist AUDIRA (Agus Dwi R.), copyright, comment AUDIRA-tenis-11-jam-isner-mahut-EP03); cek LUFS -14 / TP < -1; contact sheet dari MP4 -> draft/final-contact-sheet.jpg; salin ke EP03/FINAL_VIDEO.mp4 (+.sig.json); record_score stage final (self + juri); catat acc draf pengguna (\"langsung render\") di status. Bila gagal: baca error, hapus GPU_LOCK bila masih ada, render ulang. Lalu tahap 10: SOCIAL_CAPTIONS.md 6 platform + Jadwal Upload (WIB) + Label Konten AI, validasi audira_validate_social_captions (keywords: Isner, Mahut, Wimbledon), SUBTITLES.srt dari timeline.json, NOTES.md, append_lesson, tampilkan caption di chat, jadwalkan 3 review task. Juga: dengarkan lafal VO (Audira, Mahu, tai brek, eis, gem).",
+      "snapshot": {
+        "episode": "EP03_TENIS_11_JAM_ISNER_MAHUT",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "BROADCASTFORGE",
+        "memoryEpisode": "fakta-olahraga-EP03",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP03_TENIS_11_JAM_ISNER_MAHUT/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T08:32:33.661Z",
+      "doing": "Tahap 9: render final SELESAI (exit 0): studio/out/ep03/FINAL_EP03.mp4, 5084 frame 1080x1920@60, -13.7 LUFS, TP -1.5 dBFS, metadata title/artist/copyright/comment/date tertulis, signature Ed25519 VALID + C2PA. GPU_LOCK.md sudah terhapus. Render melewati gerbang juri (--skip-memory-gate) atas perintah pengguna \"langsung render\".",
+      "files": [
+        "studio/out/ep03/FINAL_EP03.mp4",
+        "studio/out/ep03/render-final.log"
+      ],
+      "next": "Sesi baru: salin FINAL_EP03.mp4 (+.sig.json) ke EP03/FINAL_VIDEO.mp4; ffprobe cek metadata; contact sheet dari MP4 -> draft/final-contact-sheet.jpg; record_score stage final (self + juri buta); update status final done (catat acc pengguna \"langsung render\"); tahap 10: SUBTITLES.srt dari studio/src/scenes/ep03/timeline.json, SOCIAL_CAPTIONS.md 6 platform + Jadwal Upload (WIB) + Label Konten AI, audira_validate_social_captions (keywords Isner, Mahut, Wimbledon), NOTES.md, append_lesson, tampilkan caption di chat, 3 scheduled review task. Cek lafal VO (Audira, Mahu, tai brek, eis, gem).",
+      "snapshot": {
+        "episode": "EP03_TENIS_11_JAM_ISNER_MAHUT",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "BROADCASTFORGE",
+        "memoryEpisode": "fakta-olahraga-EP03",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP03_TENIS_11_JAM_ISNER_MAHUT/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:22:49.223Z",
+      "doing": "Keluhan pengguna 2026-11-23 pada FINAL_EP03.mp4: \"suara noise sangat kencang, perbaiki\". Final dirender dengan render-final.mjs lama (sidechain ratio 2.5 attack 15 release 350, VO tanpa loudnorm, stem SFX tanpa trim) = melanggar G18 revisi 2026-11-22 (SFX bisa lebih keras dari VO).",
+      "files": [
+        "studio/out/ep03/FINAL_EP03.mp4",
+        "studio/public/audio/ep03/vo.wav",
+        "studio/public/audio/ep03/sfx.wav",
+        "studio/scripts/render-final.mjs",
+        "studio/out/ep03/render-final.log"
+      ],
+      "next": "1) Ukur: ffmpeg ebur128 terpisah untuk studio/public/audio/ep03/vo.wav, sfx.wav (-20 LUFS), dan audio FINAL_EP03.mp4; cek apakah 'noise' = SFX (riser/whoosh/ambience) atau hiss di VO (spektrum/noise floor saat jeda VO). 2) Remix tanpa render ulang video: ambil video stream FINAL_EP03.mp4 (-c:v copy), audio baru = VO loudnorm I=-16 + SFX volume=-10dB, sidechaincompress ratio=8 attack=5 release=350 threshold=0.015 (G18), master -14 LUFS TP < -1 dBFS; VO harus >= 12 LU di atas SFX (G18c). Bila noise dari VO: highpass 80 Hz + afftdn ringan. Atau perbarui scripts/render-final.mjs ke graph G18 (cek preflight blocker G18d) lalu render:final --force. 3) Tulis ulang metadata (title \"Tenis 11 Jam: Isner vs Mahut\", artist \"AUDIRA (Agus Dwi R.)\", copyright \"© 2026 AUDIRA - Agus Dwi R. All rights reserved.\", comment \"AUDIRA-tenis-11-jam-isner-mahut-EP03 | audira.my.id\", date) + npm run sign; ffprobe verifikasi. 4) Lanjut sisa tahap 9-10 di handover sebelumnya (salin FINAL_VIDEO.mp4, contact sheet final, record_score final, SOCIAL_CAPTIONS.md + validator, SUBTITLES.srt, NOTES.md, lessons).",
+      "snapshot": {
+        "episode": "EP03_TENIS_11_JAM_ISNER_MAHUT",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "BROADCASTFORGE",
+        "memoryEpisode": "fakta-olahraga-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP03_TENIS_11_JAM_ISNER_MAHUT/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:22:49.223Z",
+      "doing": "Keluhan pengguna 2026-11-23 pada FINAL_EP03.mp4: \"suara noise sangat kencang, perbaiki\". Final dirender dengan render-final.mjs lama (sidechain ratio 2.5 attack 15 release 350, VO tanpa loudnorm, stem SFX tanpa trim) = melanggar G18 revisi 2026-11-22 (SFX bisa lebih keras dari VO).",
+      "files": [
+        "studio/out/ep03/FINAL_EP03.mp4",
+        "studio/public/audio/ep03/vo.wav",
+        "studio/public/audio/ep03/sfx.wav",
+        "studio/scripts/render-final.mjs",
+        "studio/out/ep03/render-final.log"
+      ],
+      "next": "1) Ukur: ffmpeg ebur128 terpisah untuk studio/public/audio/ep03/vo.wav, sfx.wav (-20 LUFS), dan audio FINAL_EP03.mp4; cek apakah 'noise' = SFX (riser/whoosh/ambience) atau hiss di VO (spektrum/noise floor saat jeda VO). 2) Remix tanpa render ulang video: ambil video stream FINAL_EP03.mp4 (-c:v copy), audio baru = VO loudnorm I=-16 + SFX volume=-10dB, sidechaincompress ratio=8 attack=5 release=350 threshold=0.015 (G18), master -14 LUFS TP < -1 dBFS; VO harus >= 12 LU di atas SFX (G18c). Bila noise dari VO: highpass 80 Hz + afftdn ringan. Atau perbarui scripts/render-final.mjs ke graph G18 (cek preflight blocker G18d) lalu render:final --force. 3) Tulis ulang metadata (title \"Tenis 11 Jam: Isner vs Mahut\", artist \"AUDIRA (Agus Dwi R.)\", copyright \"© 2026 AUDIRA - Agus Dwi R. All rights reserved.\", comment \"AUDIRA-tenis-11-jam-isner-mahut-EP03 | audira.my.id\", date) + npm run sign; ffprobe verifikasi. 4) Lanjut sisa tahap 9-10 di handover sebelumnya (salin FINAL_VIDEO.mp4, contact sheet final, record_score final, SOCIAL_CAPTIONS.md + validator, SUBTITLES.srt, NOTES.md, lessons).",
+      "snapshot": {
+        "episode": "EP03_TENIS_11_JAM_ISNER_MAHUT",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "BROADCASTFORGE",
+        "memoryEpisode": "fakta-olahraga-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP03_TENIS_11_JAM_ISNER_MAHUT/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T08:26:50.090Z"
+    }
+  ]
+}

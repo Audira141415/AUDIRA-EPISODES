@@ -1,0 +1,163 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP01_MICROWAVE",
+  "topic": "Judul Episode",
+  "createdAt": "2026-11-12T10:06:29.692Z",
+  "updatedAt": "2026-11-12T12:03:36.785Z",
+  "currentStage": "complete",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.692Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.692Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T10:06:29.692Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T10:06:29.692Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit (EP04 Standard)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.692Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:56.268Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-12T01:28:02.167Z",
+      "startedAt": "2026-11-12T01:28:02.167Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:56.268Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-12T01:14:21.413Z",
+      "startedAt": "2026-11-12T01:14:21.413Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci + visual audit",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:56.268Z",
+          "text": "sync: 1 gambar draf/contact sheet; acc tidak tercatat, disimpulkan karena tahap sesudahnya sudah ada"
+        }
+      ],
+      "approved": true,
+      "approvedAt": null,
+      "approvalSource": "inferred",
+      "doneAt": "2026-11-12T06:39:49.100Z",
+      "startedAt": "2026-11-12T06:39:49.100Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:56.268Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-12T11:22:47.714Z",
+          "text": "FINAL_VIDEO.mp4 81.7 s 60 fps, -14.0 LUFS, TP -1.8; metadata ok"
+        }
+      ],
+      "doneAt": "2026-11-12T11:22:47.714Z",
+      "startedAt": "2026-11-12T06:49:40.879Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:56.269Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-12T11:22:47.714Z",
+          "text": "SOCIAL_CAPTIONS.md validator ok; NOTES.md; lessons in motion memory"
+        }
+      ],
+      "doneAt": "2026-11-12T11:22:47.714Z",
+      "startedAt": "2026-11-12T10:06:29.692Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T12:03:36.785Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-12T11:22:47.714Z",
+      "startedAt": "2026-11-12T11:22:47.714Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "cara-kerja-benda-EP01",
+    "style": "ISOCRAFT",
+    "wordCount": 197,
+    "estimatedDuration": {
+      "wordCount": 197,
+      "minSec": 79,
+      "maxSec": 88
+    },
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ],
+    "title": "Microwave Tidak Memanaskan Piring"
+  },
+  "syncedAt": "2026-11-12T12:03:36.785Z",
+  "notes": [
+    {
+      "at": "2026-11-12T11:22:47.604Z",
+      "text": "data restored (style/title/wordCount had been overwritten by another session as precision-cgi/202)"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#CDB48C}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.06;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.3) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.18) 42%,rgba(0,0,0,0.18) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#2B2B2B;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+
+.p{left:70px;right:120px}
+.tag{display:inline-block;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:26px;letter-spacing:.06em;color:#F4EEDC;background:#C65D3B;padding:8px 18px 7px;margin:0 0 -4px 22px;border-radius:4px 4px 0 0;position:relative;z-index:2}
+.pc{position:relative;background:#F4EEDC;color:#2B2B2B;border:3px solid #2B2B2B;border-radius:8px;padding:22px 30px 24px;box-shadow:0 3px 0 #b9a880,0 14px 26px rgba(43,31,15,.35);background-image:linear-gradient(180deg,rgba(0,0,0,0) 49.4%,rgba(43,43,43,.10) 50%,rgba(255,255,255,.35) 50.6%,rgba(0,0,0,0) 52%)}
+.pc.code{background-color:#1f5f5b;color:#F4EEDC;border-color:#2B2B2B;background-image:repeating-linear-gradient(0deg,rgba(244,238,220,.09) 0 2px,transparent 2px 32px),repeating-linear-gradient(90deg,rgba(244,238,220,.09) 0 2px,transparent 2px 32px)}
+.big{font-family:Fraunces,serif;font-weight:800;font-size:118px;line-height:.96;letter-spacing:-.01em}.big span{color:#D33A2C}
+.sub{font-family:Fraunces,serif;font-style:italic;font-weight:500;font-size:38px;margin-top:10px;color:#5a4f44}
+.ln{font-family:Fraunces,serif;font-weight:700;font-size:50px;line-height:1.16;margin:6px 0}
+.mono{font-family:'IBM Plex Mono',monospace;font-weight:700}
+.big2{font-size:62px;background:#F4EEDC;border:3px solid #2B2B2B;border-radius:8px;padding:0 16px;display:inline-block}
+.eq{font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:78px;line-height:1.1;margin:6px 0}.eq.sm{font-size:56px}
+.r{color:#D33A2C}.y{color:#F2A541}.g{color:#2A7F7A}.code .ln{color:#F4EEDC}
+.y2{background:#F2A541;padding:0 10px;border-radius:4px}
+.chip{display:inline-block;font-family:Fraunces,serif;font-weight:700;font-size:44px;padding:8px 22px;border-radius:6px;border:3px solid #2B2B2B;margin:10px 0}.chip.t{background:#2A7F7A;color:#F4EEDC}.chip .mono{color:#F2A541}
+.cd{display:inline-block;font-size:40px;font-weight:600;background:#2B2B2B;color:#F4EEDC;padding:10px 20px;border-radius:6px;margin:10px 0}.cd .g{color:#8fd3c9}
+.stamp{position:absolute;right:-6px;top:58px;font-family:Fraunces,serif;font-weight:900;font-size:76px;line-height:1;color:#D33A2C;border:7px solid #D33A2C;border-radius:10px;padding:8px 18px;background:rgba(244,238,220,.55);transform-origin:50% 50%;z-index:3;mix-blend-mode:multiply}
+.stamp.s2{top:auto;bottom:-40px;right:10px;font-size:58px}
+.stamp.s3{top:auto;bottom:-150px;right:-10px;font-size:58px;text-align:center;color:#2A7F7A;border-color:#2A7F7A}
+.old{font-family:Fraunces,serif;font-weight:900;font-size:70px;color:#D33A2C;text-decoration:line-through;text-decoration-thickness:7px;opacity:.75}
+.q{font-size:54px}
+#chip{font-family:'IBM Plex Mono',monospace;font-weight:600;color:#2B2B2B;background:#F4EEDC;padding:3px 12px;border-radius:4px;top:176px;font-size:20px;border:2px solid #2B2B2B}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="94.47" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN CUPLIKAN GAME</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tag">FAKTA GAME &middot; EP 04</div>
+  <div class="pc"><div class="big">Gandhi<br><span>Nuklir</span></div><div class="sub">katanya, gara-gara bug</div></div>
+  <div class="stamp" data-at="s1:mitos" data-fx="stamp">MITOS?</div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="tag">VERSI CERITANYA</div>
+  <div class="pc"><div class="ln">Agresi Gandhi <b class="mono big2" data-at="s2:satu" data-fx="pop">1</b></div>
+  <div class="chip t" data-at="s2:demokrasi" data-fx="left">DEMOKRASI <span class="mono">&minus;2</span></div>
+  <div class="eq mono" data-at="s2:minus" data-fx="pop">1 &minus; 2 = <span class="r">&minus;1</span></div></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tag">8 BIT TANPA TANDA</div>
+  <div class="pc code"><div class="ln mono">1 &minus; 2 = ?</div><div class="eq mono" data-at="s3:meluap" data-fx="pop">&minus;1 &rarr; <span class="y">255</span></div>
+  <div class="ln" data-at="s3:sekitar" data-fx="pop"><b class="mono r">&plusmn;25&times;</b> lebih agresif</div></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="tag">ASAL CERITANYA</div>
+  <div class="pc"><div class="eq mono sm" data-at="s4:wiki" data-fx="pop">TV TROPES &middot; 2012</div>
+  <div class="ln" data-at="s4:dua" data-fx="pop"><b class="mono">21</b> tahun setelah rilis</div></div>
+  <div class="stamp s2" data-at="s4:bukti" data-fx="stamp">TANPA BUKTI</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="tag">BANTAHAN 1 &middot; DESAINER CIV II</div>
+  <div class="pc"><div class="ln">Brian Reynolds membantah</div><div class="ln" data-at="s5:tiga" data-fx="pop">Cuma <b class="mono">3</b> tingkat agresi</div>
+  <div class="ln" data-at="s5:sepertiga" data-fx="pop"><b class="y2">Sepertiga</b> pemimpin setara Gandhi</div>
+  <div class="cd mono" data-at="s5:variabel" data-fx="left">// tidak ada unsigned</div></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="tag">BANTAHAN 2 &middot; SID MEIER</div>
+  <div class="pc"><div class="ln" data-at="s6:memoarnya" data-fx="pop">Memoar <b class="mono">2020</b> menegaskan</div><div class="cd mono" data-at="s6:bahasa" data-fx="left">int x = &minus;1; <span class="g">// signed</span></div>
+  <div class="ln" data-at="s6:tetap" data-fx="pop"><b class="mono">&minus;1</b> tetap <b class="mono">&minus;1</b></div>
+  <div class="ln" data-at="s6:tidak" data-fx="pop">Pemerintahan <b class="r">&#10005;</b> agresi AI</div></div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tag">PLOT TWIST &middot; CIV V &middot; 2010</div>
+  <div class="pc"><div class="ln" data-at="s7:Desainer" data-fx="pop">Gandhi diberi nilai tertinggi</div><div class="eq mono" data-at="s7:dua" data-fx="pop">NUKE = <span class="r">12</span></div>
+  <div class="ln" data-at="s7:lelucon" data-fx="pop">Jon Shafer: <b class="y2">sengaja, lelucon</b></div>
+  <div class="sub" data-at="s7:Bisa" data-fx="fade">mungkin dari sinilah mitosnya</div></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="tag">JADI</div>
+  <div class="pc"><div class="old">MITOS?</div>
+  <div class="ln q" data-at="s8:Kamu" data-fx="pop">Kamu dulu percaya?</div></div>
+  <div class="stamp s3" data-at="s8:bukan" data-fx="stamp">LELUCON,<br>BUKAN BUG</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA GAME &middot; EP 04</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":8.473,"s2":8.633,"s2e":18.961,"s3":19.121,"s3e":31.949,"s4":32.109,"s4e":43.408,"s5":43.568,"s5e":56.006,"s6":56.166,"s6e":70.854,"s7":71.014,"s7e":85.648,"s8":85.808,"s8e":91.467,"end":91.467,"dur":94.47,"outro":91.717},AT={"s1:mitos":7.978,"s2:demokrasi":14.951,"s2:minus":18.497,"s2:Satu":17.243,"s2:Gandhi":12.196,"s3:minus#2":23.504,"s3:meluap":24.201,"s3:Gandhi":26.123,"s3:menembakkan":31.082,"s3:dua":24.742,"s4:menyebar":33.998,"s4:Klaim":35.762,"s5:tiga":49.1,"s5:sepertiga":50.818,"s5:Brian":45.447,"s6:memoarnya":58.871,"s6:tidak":69.229,"s6:pemerintahan":68.006,"s6:Sid":57.525,"s7:Plot":71.433,"s7:2010":74.793,"s7:dua":78.73,"s7:lelucon":81.592,"s7:membangun":79.566,"s7:memakai":80.201,"s8:bukan":87.148,"s8:Kamu":89.965,"s2:satu":13.403,"s3:sekitar":26.975,"s4:wiki":37.202,"s4:dua":39.447,"s4:bukti":42.449,"s5:variabel":54.876,"s6:bahasa":62.563,"s6:tetap":65.628,"s7:Desainer":75.897,"s7:Bisa":82.397},DUR=94.47,OUT=91.717;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ pop:(e,t)=>tl.fromTo(e,{rotationX:-80,transformPerspective:800,transformOrigin:'50% 0%',opacity:0},{rotationX:0,opacity:1,duration:.38,ease:'back.out(1.6)'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:2.2,rotation:-12,opacity:0},{scale:1,rotation:-7,opacity:1,duration:.18,ease:'power4.in'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{rotationX:-96,transformPerspective:1300,transformOrigin:'50% 0%',opacity:1,y:-10},{rotationX:0,y:0,opacity:1,duration:.55,ease:'back.out(1.25)'},a-.12);},POUT=(tl,p,b)=>{tl.to(p,{rotationX:94,transformPerspective:1300,transformOrigin:'50% 100%',y:30,opacity:0,duration:.3,ease:'power2.in'},b-.3);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0,rotationX:-90,transformPerspective:1600,transformOrigin:'50% 0%'});tl.to('#outro',{opacity:1,rotationX:0,duration:.6,ease:'power3.out'},OUT-.3);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

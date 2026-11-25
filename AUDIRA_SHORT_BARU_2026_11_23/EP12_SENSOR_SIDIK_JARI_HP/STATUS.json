@@ -1,0 +1,404 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP12_SENSOR_SIDIK_JARI_HP",
+  "topic": "Cara kerja sensor sidik jari di HP (kapasitif, optik, ultrasonik)",
+  "createdAt": "2026-11-22T17:57:11.883Z",
+  "updatedAt": "2026-11-23T01:10:18.882Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:57:27.227Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        },
+        {
+          "at": "2026-11-22T17:58:30.551Z",
+          "text": "Preflight ok (node_modules junction -> F:/AUDIRA-SKILL-MOTION/node_modules). GLOBAL + channel memory dibaca; template EP04 (Remotion 2D murni). Engine: Remotion 2D (SVG/DOM, tanpa R3F)."
+        }
+      ],
+      "doneAt": "2026-11-22T17:58:30.551Z",
+      "startedAt": "2026-11-22T17:57:11.884Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:22:21.719Z",
+          "text": "23 baris di research/SOURCE_REGISTER.md (Apple Platform Security, AOSP, Qualcomm arsip, Android Authority, Wikipedia); 3 fakta lemah ditandai tidak dipakai."
+        }
+      ],
+      "doneAt": "2026-11-22T22:22:21.718Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T22:22:26.394Z",
+      "notes": [
+        {
+          "at": "2026-11-22T22:22:26.394Z",
+          "text": "Pengguna memilih \"BONGKAR (Recommended)\" (2026-11-23). Ditolak: CIRCUITFORGE, LIDARFORGE. Cover topik menyusul dari frame hook."
+        }
+      ],
+      "startedAt": "2026-11-22T22:22:26.394Z",
+      "doneAt": "2026-11-22T22:22:20.917Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T22:24:42.573Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T22:24:33.227Z",
+      "startedAt": "2026-11-22T22:24:33.227Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:57:27.227Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.000Z",
+      "startedAt": "2026-11-22T06:09:42.000Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T23:55:15.454Z",
+          "text": "sync: VO sudah dibuat"
+        },
+        {
+          "at": "2026-11-22T23:55:21.673Z",
+          "text": "VO dikunci 85,58 dtk: take1 99,38 → jeda maks 0,40 dtk + atempo 1,03 (scripts/tighten_vo.py), words diremap. Take1 disimpan vo-take1.wav."
+        }
+      ],
+      "doneAt": "2026-11-22T23:55:21.673Z",
+      "startedAt": "2026-11-22T23:55:12.547Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:57:27.227Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.000Z",
+      "startedAt": "2026-11-22T16:52:30.000Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T00:57:25.931Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-23T00:57:15.022Z",
+      "startedAt": "2026-11-23T00:57:15.022Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T01:10:05.158Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60 88.62s, -13.7 LUFS TP -1.8, metadata ok, signature VALID + C2PA, qa_video hardOnly PASS, skor final self 4.0 + juri 4.0 LOLOS."
+        }
+      ],
+      "doneAt": "2026-11-23T01:10:05.158Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T00:59:50.656Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T01:10:18.882Z",
+          "text": "Validator ok, SUBTITLES.srt, NOTES.md, lessons BONGKAR+GLOBAL, scheduled review-sensor-sidik-jari-hp-24h/-72h/-7d (27 Nov, 29 Nov, 3 Des 2026 19.00 WIB), file perantara dihapus. Produksi selesai; sisa hanya tahap 11 (scheduled)."
+        }
+      ],
+      "doneAt": "2026-11-23T01:10:18.882Z",
+      "startedAt": "2026-11-23T00:58:31.129Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP12",
+    "engine": "remotion",
+    "channel": "EXPLAINED",
+    "handle": "@AudiraExplained",
+    "style": "BONGKAR"
+  },
+  "syncedAt": "2026-11-23T00:59:50.656Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T22:24:53.199Z",
+      "doing": "VO Cartesia dari audio/vo.txt (210 kata)",
+      "command": "audira_generate_voiceover scriptPath=audio/vo.txt -> project/public/audio/vo.wav + vo-words.json",
+      "files": [
+        "audio/vo.txt",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md"
+      ],
+      "next": "npm run vo, lalu tulis project/src/ep12 (timing/pieces/scenes/Film) mengikuti template EP04",
+      "snapshot": {
+        "episode": "EP12_SENSOR_SIDIK_JARI_HP",
+        "topic": "Cara kerja sensor sidik jari di HP (kapasitif, optik, ultrasonik)",
+        "style": "BONGKAR",
+        "memoryEpisode": "short-baru-11-23-EP12",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T22:25:49.591Z",
+      "doing": "VO take 1 selesai tapi 99,38 dtk (terlalu panjang); belum dikunci. Pindah ke sesi baru (context guard).",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "audio/vo.txt"
+      ],
+      "next": "Baca docs/HANDOFF.md; pendekkan VO ≤90 dtk, npm run vo, tulis project/src/ep12 ala EP04, cover topik, sfx, draf juri, final, delivery.",
+      "snapshot": {
+        "episode": "EP12_SENSOR_SIDIK_JARI_HP",
+        "topic": "Cara kerja sensor sidik jari di HP (kapasitif, optik, ultrasonik)",
+        "style": "BONGKAR",
+        "memoryEpisode": "short-baru-11-23-EP12",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:02:39.956Z",
+      "doing": "VO dikunci 85,58 dtk; kode project/src/ep12 selesai + typecheck bersih; berikutnya cek still layout.",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/ep12/scenes.tsx",
+        "project/src/ep12/Film.tsx",
+        "project/src/ep12/timing.ts",
+        "project/public/audio/vo.wav"
+      ],
+      "next": "node scripts/stills.mjs out/ep12-stills <detik> Ep12Preview → perbaiki layout → cover topik → SHOTLIST + sfx → draf juri → final → delivery (lihat docs/HANDOFF.md UPDATE).",
+      "snapshot": {
+        "episode": "EP12_SENSOR_SIDIK_JARI_HP",
+        "topic": "Cara kerja sensor sidik jari di HP (kapasitif, optik, ultrasonik)",
+        "style": "BONGKAR",
+        "memoryEpisode": "short-baru-11-23-EP12",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP12_SENSOR_SIDIK_JARI_HP/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:10:50.369Z",
+      "doing": "Kode ep12 dipoles dari still; cover topik style/cover-topic.png dirender. Pindah sesi (context guard 215k).",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/ep12/scenes.tsx",
+        "style/cover-topic.png",
+        "project/out/ep12-stills/_sheet.jpg"
+      ],
+      "next": "Baca docs/HANDOFF.md UPDATE 2: stills ulang → SHOTLIST + npm run sfx → draf juri → final → delivery.",
+      "snapshot": {
+        "episode": "EP12_SENSOR_SIDIK_JARI_HP",
+        "topic": "Cara kerja sensor sidik jari di HP (kapasitif, optik, ultrasonik)",
+        "style": "BONGKAR",
+        "memoryEpisode": "short-baru-11-23-EP12",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP12_SENSOR_SIDIK_JARI_HP/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:58:01.373Z",
+      "doing": "Draf: contact-sheet + THEME_CHECK + camera 5/5 selesai, self 4.17 tercatat, menunggu juri buta",
+      "files": [
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/camera.json",
+        "project/src/ep12/Film.tsx"
+      ],
+      "next": "Bila juri LOLOS: record_score jury → render:final Ep12Final 1080x1920@60 --vo --sfx --jobs=4 --concurrency=2 --title/--slug=sensor-sidik-jari-hp --ep=EP12 → FINAL_VIDEO.mp4 → qa_video → delivery",
+      "snapshot": {
+        "episode": "EP12_SENSOR_SIDIK_JARI_HP",
+        "topic": "Cara kerja sensor sidik jari di HP (kapasitif, optik, ultrasonik)",
+        "style": "BONGKAR",
+        "memoryEpisode": "short-baru-11-23-EP12",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP12_SENSOR_SIDIK_JARI_HP/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T01:00:25.228Z",
+      "doing": "Draf LOLOS juri 4.00; polesan S8 pasca-juri belum diverifikasi; pindah sesi (context guard)",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/ep12/scenes.tsx",
+        "project/src/ep12/Film.tsx",
+        "SOCIAL_CAPTIONS.md",
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "Baca docs/HANDOFF.md UPDATE 3: verifikasi S8 still → render:final Ep12Final → FINAL_VIDEO.mp4 + QA + score final → delivery",
+      "snapshot": {
+        "episode": "EP12_SENSOR_SIDIK_JARI_HP",
+        "topic": "Cara kerja sensor sidik jari di HP (kapasitif, optik, ultrasonik)",
+        "style": "BONGKAR",
+        "memoryEpisode": "short-baru-11-23-EP12",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP12_SENSOR_SIDIK_JARI_HP/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T01:01:27.363Z",
+      "doing": "render:final Ep12Final 1080x1920@60 (background) — S8 sudah diverifikasi OK (out/ep12-s8b)",
+      "command": "cd project; npm run render:final -- --comp=Ep12Final --out=out/FINAL.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Cara Kerja Sensor Sidik Jari di HP\" --slug=sensor-sidik-jari-hp --ep=EP12 --log=error",
+      "files": [
+        "project/out/FINAL.mp4"
+      ],
+      "next": "Cek LUFS/metadata ffprobe, verify signature, qa_video hardOnly, salin FINAL_VIDEO.mp4, record_score final self+jury, lalu delivery",
+      "snapshot": {
+        "episode": "EP12_SENSOR_SIDIK_JARI_HP",
+        "topic": "Cara kerja sensor sidik jari di HP (kapasitif, optik, ultrasonik)",
+        "style": "BONGKAR",
+        "memoryEpisode": "short-baru-11-23-EP12",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP12_SENSOR_SIDIK_JARI_HP/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T01:01:27.363Z",
+      "doing": "render:final Ep12Final 1080x1920@60 (background) — S8 sudah diverifikasi OK (out/ep12-s8b)",
+      "command": "cd project; npm run render:final -- --comp=Ep12Final --out=out/FINAL.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Cara Kerja Sensor Sidik Jari di HP\" --slug=sensor-sidik-jari-hp --ep=EP12 --log=error",
+      "files": [
+        "project/out/FINAL.mp4"
+      ],
+      "next": "Cek LUFS/metadata ffprobe, verify signature, qa_video hardOnly, salin FINAL_VIDEO.mp4, record_score final self+jury, lalu delivery",
+      "snapshot": {
+        "episode": "EP12_SENSOR_SIDIK_JARI_HP",
+        "topic": "Cara kerja sensor sidik jari di HP (kapasitif, optik, ultrasonik)",
+        "style": "BONGKAR",
+        "memoryEpisode": "short-baru-11-23-EP12",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP12_SENSOR_SIDIK_JARI_HP/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T01:10:08.453Z"
+    }
+  ]
+}

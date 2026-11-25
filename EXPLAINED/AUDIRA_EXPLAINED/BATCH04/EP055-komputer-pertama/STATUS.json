@@ -1,0 +1,175 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "AE-055",
+  "topic": "Bagaimana Komputer Pertama Bisa Melakukan Perhitungan?",
+  "createdAt": "2026-11-08T00:34:28.761Z",
+  "updatedAt": "2026-11-11T02:02:12.419Z",
+  "currentStage": "complete",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T01:48:41.047775+00:00",
+          "text": "CLAUDE.md, motion memory GLOBAL+channel, NOTES/STYLE_DECISION Batch 1-3 dibaca"
+        }
+      ],
+      "doneAt": "2026-11-08T01:48:41.047775+00:00"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T01:11:20.271Z",
+          "text": "SOURCE_REGISTER + RESEARCH_REPORT. Koreksi: ENIAC desimal (ring counter 10 posisi), bukan biner; Colossus bukan desain Turing."
+        }
+      ],
+      "doneAt": "2026-11-08T01:11:20.267Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-08T01:39:53.350Z",
+      "notes": [
+        {
+          "at": "2026-11-08T01:39:53.350Z",
+          "text": "Pengguna: \"Ya, semua no. 1\" (FILMNOIR) lalu \"Setuju semua\" (cover topik)"
+        }
+      ],
+      "doneAt": "2026-11-08T01:39:53.350Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-08T01:48:41.047775+00:00",
+      "notes": [
+        {
+          "at": "2026-11-08T01:48:41.047775+00:00",
+          "text": "Pengguna: Setuju, lanjut"
+        }
+      ],
+      "doneAt": "2026-11-08T01:48:41.047775+00:00"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T01:48:41.047775+00:00",
+          "text": "Studio BATCH04 dari starter terbaru (Finish, Polish, Person), smoke OK"
+        }
+      ],
+      "doneAt": "2026-11-08T01:48:41.047775+00:00"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T01:48:41.047775+00:00",
+          "text": "VO Galang; sync whisper 93-99%; ejaan fonetik Audira/Eniak/ii-sim/kiu-ar/hape"
+        }
+      ],
+      "doneAt": "2026-11-08T01:48:41.047775+00:00"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T06:06:11.352294+00:00",
+          "text": "Film + STORYBOARD + sfx-cues; skor draf 4,0 LOLOS di motion memory"
+        }
+      ],
+      "doneAt": "2026-11-08T06:06:11.352294+00:00"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-08T06:06:37.992454+00:00",
+      "notes": [
+        {
+          "at": "2026-11-08T06:06:11.352294+00:00",
+          "text": "draft/stills/_sheet.jpg + draft/RISK_CLIP.mp4 (dengan mix), menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-08T06:06:37.992454+00:00",
+          "text": "Pengguna: Setuju, render final"
+        }
+      ],
+      "doneAt": "2026-11-08T06:06:37.992454+00:00"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T06:22:42.651932+00:00",
+          "text": "FINAL 1080x1920@60, -13,6/-13,7 LUFS, TP <= -1,6 dBFS, metadata + arsip + QA_REPORT; frame dari MP4 dicek"
+        }
+      ],
+      "doneAt": "2026-11-08T06:22:42.651932+00:00"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T06:22:42.651932+00:00",
+          "text": "SOCIAL_CAPTIONS ok:true; NOTES; memori style diperbarui (skor final 4,0)"
+        },
+        {
+          "at": "2026-11-08T06:25:33.014415+00:00",
+          "text": "Final disetujui pengguna 2026-11-08; perantara dihapus (risk clip, stills PNG, _cover). Review pasca-tayang menunggu upload 22 Nov 2026."
+        }
+      ],
+      "doneAt": "2026-11-08T06:22:42.651932+00:00"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T02:02:12.419Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-08T06:22:02.698Z",
+      "startedAt": "2026-11-08T06:22:02.698Z"
+    }
+  ],
+  "data": {
+    "style": "FILMNOIR",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-11T02:02:12.419Z"
+}

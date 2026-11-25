@@ -1,0 +1,175 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#070B14}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.04;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.34) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0) 42%,rgba(0,0,0,0) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#BFD3E6;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.pre{position:absolute;left:-2000px;top:0;opacity:0}
+.p{transform-origin:0% 0%}
+.cd{position:relative;background:rgba(7,16,30,.88);border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,.45)}
+.kk{display:inline-flex;align-items:center;gap:16px;font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-size:25px;letter-spacing:.06em;color:#E8F0F8;margin-bottom:16px;padding:7px 18px 7px 7px;background:rgba(7,16,30,.86);border:2px solid #FFE27A;border-radius:8px}
+.kk i{font-style:normal;background:#FFE27A;color:#07101E;padding:3px 10px;border-radius:4px}
+.h1{font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:132px;line-height:.96;letter-spacing:.01em;color:#fff;text-shadow:0 6px 24px rgba(0,0,0,.75)}
+.h1 em{font-style:normal;color:#FFE27A}
+.vs{display:flex;align-items:center;gap:12px;margin-top:14px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:44px;color:#fff}
+.vs i{font-style:normal;padding:4px 16px;border-radius:6px;background:#1B3C8C}
+.vs .es{box-shadow:inset 0 -9px 0 #2FD6C3}.vs .hn{box-shadow:inset 0 -9px 0 #FFB23E}
+.vs b{font-size:32px;color:#C9D6E2}.vs span{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:30px;color:#FFE27A;margin-left:6px;background:rgba(7,16,30,.86);padding:6px 12px;border-radius:6px}
+.chips{display:flex;flex-wrap:wrap;gap:16px;margin-top:20px;align-items:center}
+.ch,.ch2{font-style:normal;font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:46px;line-height:1;letter-spacing:.03em;padding:12px 22px 10px;border-radius:8px;transform:rotate(-3deg);box-shadow:0 10px 26px rgba(0,0,0,.5)}
+.ch{color:#fff;background:#FF6B4A}.ch2{color:#07101E;background:#FFE27A}
+.row{flex-direction:column;margin-top:14px;padding:9px 24px 11px 24px;border-left:14px solid #FFE27A;max-width:900px;width:max-content;box-sizing:border-box}
+.row b{display:block;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:54px;line-height:1.02;letter-spacing:.015em;color:#fff}
+.row span{display:block;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:600;font-size:31px;line-height:1.2;color:#BFD3E6}
+.row b span{display:inline;font:inherit;color:inherit}
+.row.es{border-left-color:#2FD6C3}.row.hn{border-left-color:#FFB23E}.row.am{border-left-color:#FFC94A}.row.am b{color:#FFD27A}
+.row.rd{border-left-color:#FF5A48}.row.rd b{color:#FF8E7E}.row.wh{border-left-color:#F4F7F2}.row.gy{border-left-color:#8D99A6}.row.gy b{color:#DCE3EA}
+.row.yl{border-left-color:#FFE27A}.row.yl b{color:#FFE27A}
+.q{margin-top:20px;padding:16px 26px 14px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:58px;line-height:1.04;color:#fff;border-left:14px solid #FFE27A;max-width:860px}
+#chain.p{top:1070px;left:48px;right:40px}
+.cap6{display:inline-block;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:20px;letter-spacing:.1em;color:#FFE27A;background:rgba(7,16,30,.86);padding:4px 10px;border-radius:5px;margin-bottom:8px}
+.row6{display:flex;align-items:flex-start}
+.tk{position:relative;width:140px;display:flex;flex-direction:column;align-items:center}
+.ck{position:relative;width:92px;height:92px;border-radius:50%;box-sizing:border-box;background:#1B3C8C;border:6px solid #EEF1F4;box-shadow:0 7px 0 #9AA5B4,0 12px 18px rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;font-style:normal;font-family:'Anton',Impact,sans-serif;font-size:46px;color:#fff}
+.tk.war .ck{border-color:#FF8E7E;background:#6E1C1C}
+.tk.ball .ck{background:#0E1B30;border-color:#FFE27A}.tk.ball .ck svg{width:70px;height:70px}
+.tk span{margin-top:12px;font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:26px;line-height:1.0;letter-spacing:.03em;color:#fff;text-align:center;background:rgba(7,16,30,.86);padding:4px 8px;border-radius:5px}
+.rp{position:absolute;left:24px;top:0;width:92px;height:92px;border-radius:50%;border:5px solid #FFC94A;box-sizing:border-box;opacity:0;font-style:normal;margin:0}
+.ar{width:22px;height:92px;flex:none;font-style:normal;background:no-repeat center/22px 22px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Cpath d='M3 4l12 7-12 7' fill='none' stroke='%23FFE27A' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");margin:0 -6px}
+.pm{position:absolute;top:-26px;left:6px;font-style:normal;font-family:'Anton',Impact,sans-serif;font-size:26px;line-height:1;color:#07101E;background:#FFE27A;padding:5px 10px 3px;border-radius:5px;transform:rotate(-6deg)}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="94.48" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI TAKTIS &middot; BIDAK, BUKAN FOTO ASLI</div>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@700&display=block">
+<div class="pre"><span style="font-family:'Anton',sans-serif">HONDURAS 1969</span><span style="font-family:'Barlow Condensed',sans-serif;font-weight:700">AUDIRA</span><span style="font-family:'Barlow Condensed',sans-serif;font-weight:600">honduras</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700">AUDIRA 1</span></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2:Tahun">
+  <div class="kk"><i>EP 44</i>FAKTA SEJARAH NEGARA</div>
+  <div class="h1">PERANG<br><em>SEPAK BOLA</em></div>
+  <div class="vs"><i class="es">EL SALVADOR</i><b>vs</b><i class="hn">HONDURAS</i><span>1969</span></div>
+  <div class="chips"><i class="ch" data-at="s1:berperang" data-fx="stampc">3 LAGA → PERANG</i><i class="ch2" data-at="s1:korek" data-fx="stampc">BOLA = KOREK API</i></div>
+</div>
+<div class="p" data-in="s2:Tahun" data-out="s3">
+  <div class="kk"><i>01</i>AMERIKA TENGAH · 1969</div>
+  <div class="cd row es" data-at="s2:kecil" data-fx="card"><b>EL SALVADOR: KECIL, PADAT</b></div>
+  <div class="cd row hn" data-at="s2:lima" data-fx="card"><b>HONDURAS: 5× LEBIH LUAS</b></div>
+  <div class="cd row es" data-at="s2:Lebih" data-fx="card"><b>&gt; <span class="ct" data-from="0" data-to="300000" data-a="s2:tiga" data-d="1.0">300.000</span> WARGA EL SALVADOR</b><span>pindah ke Honduras untuk bertani dan bekerja</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="kk"><i>02</i>REFORMA AGRARIA HONDURAS</div>
+  <div class="cd row hn" data-at="s3:diambil" data-fx="card"><b>TANAH PENDATANG DIAMBIL</b><span>dibagikan ke warga asli</span></div>
+  <div class="cd row rd" data-at="s3:Ribuan" data-fx="card"><b>RIBUAN KELUARGA TERUSIR</b></div>
+  <div class="cd row rd" data-at="s3:Ketegangan" data-fx="card"><b>KETEGANGAN MEMUNCAK</b></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="kk"><i>03</i>KUALIFIKASI PIALA DUNIA</div>
+  <div class="cd row hn" data-at="s4:satu" data-fx="card"><b>LAGA 1 · HONDURAS MENANG 1–0</b><span>di kandang, Tegucigalpa</span></div>
+  <div class="cd row es" data-at="s4:tiga" data-fx="card"><b>LAGA 2 · EL SALVADOR MENANG 3–0</b><span>di San Salvador</span></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="kk"><i>04</i>LAGA PENENTU · MEKSIKO</div>
+  <div class="cd row es" data-at="s5:dua" data-fx="card"><b>EL SALVADOR MENANG 3–2</b><span>lewat perpanjangan waktu</span></div>
+  <div class="cd row rd" data-at="s5:memutus" data-fx="card"><b>HUBUNGAN DIPLOMATIK PUTUS</b><span>di hari yang sama</span></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="kk"><i>05</i>14 JULI 1969 · PERANG</div>
+  <div class="cd row rd" data-at="s6:menyerang" data-fx="card"><b>PESAWAT MENYERANG BANDARA</b><span>pasukan El Salvador masuk ke Honduras</span></div>
+  <div class="cd row am" data-at="s6:terakhir" data-fx="card"><b>PERTEMPURAN UDARA TERAKHIR</b><span>antar pesawat tempur baling-baling</span></div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="kk"><i>06</i>PERANG ±100 JAM</div>
+  <div class="cd row wh" data-at="s7:gencatan" data-fx="card"><b>GENCATAN SENJATA</b><span>Organisasi Negara-Negara Amerika (OAS)</span></div>
+  <div class="cd row gy" data-at="s7:ratusan" data-fx="card"><b>RATUSAN SAMPAI RIBUAN TEWAS</b><span>kebanyakan warga sipil</span></div>
+  <div class="cd row rd" data-at="s7:Puluhan" data-fx="card"><b>PULUHAN RIBU TERUSIR PULANG</b><span>satu dekade kemudian: perang saudara</span></div>
+</div>
+<div class="p" data-in="s8" data-out="s8:Menurut">
+  <div class="kk"><i>07</i>DAMAI BARU TAHUN 1980</div>
+  <div class="cd row yl" data-at="s8:Bolanya" data-fx="card"><b>BOLA HANYA PEMICU</b></div>
+  <div class="cd row rd" data-at="s8:Bensinnya" data-fx="card"><b>BENSINNYA: TANAH · KEMISKINAN · MIGRASI</b></div>
+</div>
+<div class="p" data-in="s8:Menurut" data-out="@END">
+  <div class="cd q">Kenapa rivalitas olahraga bisa sepanas itu? Tulis di komentar!</div>
+</div>
+<div class="p" id="chain" data-in="s4:kualifikasi" data-out="s8:Menurut">
+  <div class="cap6">RIAK DARI SATU BOLA</div>
+  <div class="row6">
+    <div class="tk ball" id="t0" data-at="s4:kualifikasi" data-fx="tok"><i class="rp" data-at="s4:kualifikasi" data-fx="rip"></i><i class="ck"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="#F6F7F8" stroke="#15181D" stroke-width="2"/><path d="M20 12l7 5-3 8h-8l-3-8z" fill="#15181D"/><path d="M20 12V3M27 17l8-3M24 25l5 8M16 25l-5 8M13 17l-8-3" stroke="#15181D" stroke-width="2"/></svg></i><span>BOLA<br>3 LAGA</span><i class="pm" data-at="s8:pemicu" data-fx="stampc">PEMICU</i></div>
+    <i class="ar" data-at="s4:Kerusuhan" data-fx="arw"></i>
+    <div class="tk " id="t1" data-at="s4:Kerusuhan" data-fx="tok"><i class="rp" data-at="s4:Kerusuhan" data-fx="rip"></i><i class="ck">1</i><span>KERUSUHAN</span></div>
+    <i class="ar" data-at="s5:memutus" data-fx="arw"></i>
+    <div class="tk " id="t2" data-at="s5:memutus" data-fx="tok"><i class="rp" data-at="s5:memutus" data-fx="rip"></i><i class="ck">2</i><span>HUBUNGAN<br>PUTUS</span></div>
+    <i class="ar" data-at="s6:menyerang" data-fx="arw"></i>
+    <div class="tk war" id="t3" data-at="s6:menyerang" data-fx="tok"><i class="rp" data-at="s6:menyerang" data-fx="rip"></i><i class="ck">3</i><span>PERANG<br>100 JAM</span></div>
+    <i class="ar" data-at="s7:terusir" data-fx="arw"></i>
+    <div class="tk " id="t4" data-at="s7:terusir" data-fx="tok"><i class="rp" data-at="s7:terusir" data-fx="rip"></i><i class="ck">4</i><span>PENGUNGSI<br>PULANG</span></div>
+    <i class="ar" data-at="s7:saudara" data-fx="arw"></i>
+    <div class="tk war" id="t5" data-at="s7:saudara" data-fx="tok"><i class="rp" data-at="s7:saudara" data-fx="rip"></i><i class="ck">5</i><span>PERANG<br>SAUDARA</span></div>
+  </div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 44</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":6.64,"s2":6.8,"s2e":17.245,"s3":17.405,"s3e":27.491,"s4":27.651,"s4e":40.134,"s5":40.294,"s5e":49.994,"s6":50.154,"s6e":62.26,"s7":62.42,"s7e":78.633,"s8":78.793,"s8e":91.485,"end":91.485,"dur":94.48,"outro":91.735},AT={"s1:Tiga":0.105,"s1:pertandingan":0.462,"s1:bola":1.39,"s1:dua":2.985,"s1:negara":3.248,"s1:berperang":3.883,"s1:korek":5.943,"s1:apinya":6.237,"s2:Amerika":8.453,"s2:El":9.289,"s2:kecil":9.8,"s2:Honduras":11.595,"s2:lima":12.013,"s2:kali":12.23,"s2:Lebih":13.221,"s2:tiga":13.608,"s2:bertani":16.255,"s3:diambil":21.72,"s3:terusir":25.683,"s3:Ketegangan":26.5,"s4:kualifikasi":32.138,"s4:Honduras":33.681,"s4:satu":34.54,"s4:El":35.806,"s4:tiga":37.014,"s4:membalas":36.627,"s4:Kerusuhan":38.137,"s5:digelar":41.472,"s5:Meksiko":41.998,"s5:dua":44.251,"s5:Di":45.876,"s5:memutus":47.316,"s5:diplomatik":48.43,"s6:pesawat":51.306,"s6:menyerang":53.225,"s6:bandara":53.86,"s6:pasukan":56.06,"s6:Ini":57.399,"s6:terakhir":58.839,"s7:seratus":63.891,"s7:gencatan":65.548,"s7:ratusan":69.897,"s7:Puluhan":72.882,"s7:terusir":74.523,"s7:memicu":76.62,"s7:saudara":77.271,"s8:Perjanjian":78.793,"s8:Bolanya":82.125,"s8:pemicu":82.806,"s8:Bensinnya":83.707,"s8:tanah":84.466,"s8:kemiskinan":84.822,"s8:migrasi":85.658,"s8:Menurut":86.562,"s8:AUDIRA":89.921,"s2:Tahun":6.8,"s3:Ribuan":24.352},DUR=94.48,OUT=91.735;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ card:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:'flex'},t);tl.fromTo(e,{opacity:0,x:-50},{opacity:1,x:0,duration:.36,ease:'power3.out',immediateRender:false},t);},
+ stampc:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:'inline-block'},t);tl.fromTo(e,{scale:1.8,opacity:0,rotation:-9},{scale:1,opacity:1,rotation:-3,duration:.2,ease:'power4.in',immediateRender:false},t);},
+ tok:(e,t)=>{tl.fromTo(e,{opacity:0,y:-60,scale:.6},{opacity:1,y:0,scale:1,duration:.38,ease:'back.out(2)',immediateRender:false},t);},
+ rip:(e,t)=>{for(let k=0;k<2;k++)tl.fromTo(e,{opacity:.95,scale:.9},{opacity:0,scale:2.3,duration:.8,ease:'power2.out',immediateRender:false},t+.12+k*.32);},
+ arw:(e,t)=>{tl.fromTo(e,{opacity:0,x:-14},{opacity:1,x:0,duration:.25,ease:'power2.out',immediateRender:false},t-.15);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{opacity:0,y:-30},{opacity:1,y:0,duration:.36,ease:'power3.out'},a-.02),POUT=(tl,p,b)=>tl.to(p,{opacity:0,y:-24,duration:.22,ease:'power2.in'},b-.24);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP44_PERANG_SEPAK_BOLA_1969")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

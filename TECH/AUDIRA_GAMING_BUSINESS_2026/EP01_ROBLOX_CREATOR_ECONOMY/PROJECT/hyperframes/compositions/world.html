@@ -1,0 +1,140 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#3FB4FF}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.03;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.1) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0) 42%,rgba(0,0,0,0) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:190px;z-index:10;transform-origin:50% 50%}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:30px;color:#A3E635;letter-spacing:.14em}
+
+.chip{display:inline-block;font-family:"Archivo Black",sans-serif;font-size:27px;color:#16181D;background:#fff;padding:10px 18px;border:5px solid #16181D;border-radius:14px;margin-bottom:20px}
+.hk,.hk2{font-family:"Archivo Black",sans-serif;color:#fff;font-size:74px;line-height:1.03;letter-spacing:-.01em;text-shadow:0 7px 0 #16181D,4px 0 0 #16181D,-4px 0 0 #16181D,0 -4px 0 #16181D}
+.hk span,.hk2 span{color:#FFD21F}
+.hk2{font-size:92px}
+.tag{display:inline-block;font-family:"Archivo Black",sans-serif;font-size:38px;background:#FFD21F;color:#16181D;padding:9px 20px;border:6px solid #16181D;border-radius:16px;margin-bottom:20px;box-shadow:0 8px 0 #16181D}
+.tag.dark{background:#fff}
+.card{background:#fff;border:7px solid #16181D;border-radius:30px;box-shadow:0 12px 0 #16181D;padding:24px 30px;margin-top:22px}
+.tilt{transform:rotate(-1.5deg)}.tilt2{transform:rotate(1.2deg)}
+.big{font-family:"Archivo Black",sans-serif;font-size:100px;line-height:1;color:#16181D}
+.big.b2{font-size:78px}.big.grn{color:#1FA34A}.big.red{color:#E5322D}
+.sm{font-family:Nunito,sans-serif;font-weight:800;font-size:33px;line-height:1.2;color:#333A45;margin-top:12px}
+.row{display:flex;gap:18px;margin-top:6px}
+.mini{flex:1;border:6px solid #16181D;border-radius:22px;box-shadow:0 8px 0 #16181D;padding:18px 18px;background:#fff}
+.mini b{display:block;font-family:"Archivo Black",sans-serif;font-weight:400;font-size:40px;line-height:1.05;color:#16181D}
+.mini i{display:block;font-family:Nunito,sans-serif;font-style:normal;font-weight:800;font-size:29px;line-height:1.14;color:#2F3640;margin-top:8px}
+.mini.blu{background:#1F7FE0}.mini.blu b,.mini.blu i{color:#fff}
+.mini.org{background:#FF8A1F}
+.mini.grnb{background:#37D36A}.mini.redb{background:#E5322D}.mini.redb b,.mini.redb i{color:#fff}.mini.redb b{font-size:78px}
+.mini.grnb b{font-size:78px}.mini.wide{margin-top:24px}.mini.wide b{font-size:56px;color:#E5322D}
+.split{display:flex;height:112px;border:6px solid #16181D;border-radius:20px;overflow:hidden;font-family:"Archivo Black",sans-serif;font-size:66px;line-height:100px;text-align:center}
+.sa{width:70%;background:#FFD21F;color:#16181D}.sb{width:30%;background:#8B95A1;color:#fff;font-size:44px}
+.bars{margin-top:20px}
+.bl{display:flex;justify-content:space-between;align-items:baseline;background:rgba(255,255,255,.96);border:5px solid #16181D;border-radius:18px;padding:10px 20px;margin-top:10px}
+.nm{font-family:Nunito,sans-serif;font-weight:900;font-size:38px;color:#16181D}.vv{font-family:"Archivo Black",sans-serif;font-size:46px;color:#16181D}
+.note{font-family:Nunito,sans-serif;font-weight:800;font-size:29px;color:#fff;text-shadow:0 2px 0 #16181D,2px 0 0 #16181D,-2px 0 0 #16181D,0 -2px 0 #16181D;margin-top:14px}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="87.85" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="chip">DARI GAMER MENJADI PENGHASIL UANG &middot; EP 01</div>
+  <div class="hk">GAME ANAK-ANAK,<br><span>UANG SUNGGUHAN</span></div>
+  <div class="card tilt" data-at="s1:Puncaknya" data-fx="pop"><div class="big nb"><b class="ct" data-from="0" data-to="22.3" data-a="s1:Puncaknya" data-d="3.2" data-dec="1">0</b> JUTA</div><div class="sm">pemain serentak, Grow a Garden, 23 Agustus 2025</div></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="tag">EKONOMI ROBUX</div>
+  <div class="row"><div class="mini blu" data-at="s2:Game" data-fx="pop"><b>GAME PASS</b><i>akses permanen</i></div><div class="mini org" data-at="s2:Developer" data-fx="pop"><b>DEVELOPER PRODUCT</b><i>bisa dibeli berulang</i></div></div>
+  <div class="card" data-at="s2:70" data-fx="pop"><div class="split"><span class="sa">70%</span><span class="sb">30%</span></div><div class="sm">bagian umum penjualan Robux di dalam game. Belum jadi dolar.</div></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tag">DEVELOPER EXCHANGE</div>
+  <div class="row"><div class="mini wht" data-at="s3:13" data-fx="pop"><b>13+ TAHUN</b><i>minimal usia</i></div><div class="mini wht" data-at="s3:30.000" data-fx="pop"><b>30.000</b><i>Earned Robux minimal</i></div></div>
+  <div class="card tilt2" data-at="s3:114" data-fx="pop"><div class="big grn nb">US$114</div><div class="sm">untuk 30.000 Earned Robux. Kurs standar 0,0038, dokumen resmi Roblox.</div></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="card" data-at="s4:1,5" data-fx="pop"><div class="big b2 nb">US$1,5 MILIAR+</div><div class="sm">diperoleh kreator sepanjang 2025, klaim Roblox</div></div>
+  <div class="bars">
+   <div class="bl" data-at="s4:Steal" data-fx="left"><span class="nm">Steal a Brainrot</span><span class="vv">74,3 miliar</span></div>
+   <div class="bl" data-at="s4:Grow" data-fx="left"><span class="nm">Grow a Garden</span><span class="vv">36,0 miliar</span></div>
+   <div class="bl" data-at="s4:Fisch" data-fx="left"><span class="nm">Fisch</span><span class="vv">5,1 miliar</span></div>
+  </div>
+  <div class="note" data-at="s4:Steal" data-fx="fade">kunjungan, dibaca dari data Roblox, 4 Nov 2026</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="hk2">KUNJUNGAN<br><span>&ne; PENDAPATAN</span></div>
+  <div class="row"><div class="mini wht" data-at="s5:menolak" data-fx="pop"><b>TIDAK DIBUKA</b><i>pendapatan Grow a Garden</i></div><div class="mini grnb" data-at="s5:separuh" data-fx="pop"><b>50%</b><i>saham pembuat asli, dilaporkan</i></div></div>
+</div>
+<div class="p" data-in="s6" data-out="s6:Tapi">
+  <div class="tag gold">PUNCAK PIRAMIDA</div>
+  <div class="card" data-at="s6:1.000" data-fx="pop"><div class="big nb">US$1,3 JUTA</div><div class="sm">rata-rata 1.000 kreator teratas, 2025</div></div>
+</div>
+<div class="p" data-in="s6:Tapi" data-out="s7">
+  <div class="tag">DASAR PIRAMIDA</div>
+  <div class="card tilt" data-at="s6:1.440" data-fx="pop"><div class="big red nb">US$1.440</div><div class="sm">median setahun, 29.000+ peserta DevEx, 12 bulan sampai 30 Juni 2025</div></div>
+  <div class="mini wht wide" data-at="s6:120" data-fx="pop"><b>US$120 per bulan</b></div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tag dark">KUARTAL III 2026</div>
+  <div class="row"><div class="mini redb" data-at="s7:turun" data-fx="pop"><b>-12%</b><i>bookings, US$1,7 miliar</i></div><div class="mini redb" data-at="s7:pengguna" data-fx="pop"><b>-9%</b><i>pengguna harian</i></div></div>
+  <div class="note lt" data-at="s7:pengguna" data-fx="fade">Roblox menyebut pembanding 2025 sangat tinggi</div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="hk2" data-at="s8:Jadi" data-fx="up">NYATA,<br><span>TAPI TIDAK RATA</span></div>
+  <div class="row"><div class="mini blu" data-at="s8:garap" data-fx="pop"><b>GARAP SENDIRI?</b></div><div class="mini org" data-at="s8:jual" data-fx="pop"><b>JUAL KE STUDIO?</b></div></div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">GAMING BUSINESS &middot; EP 01</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.105,"s1e":7.334,"s2":7.502,"s2e":17.337,"s3":17.505,"s3e":27.019,"s4":27.188,"s4e":41.613,"s5":41.781,"s5e":52.859,"s6":53.027,"s6e":67.68,"s7":67.849,"s7e":76.321,"s8":76.489,"s8e":84.446,"end":84.446,"dur":87.85,"outro":84.696},AT={"s2:Pemain":8.902,"s1:Puncaknya":4.078,"s2:Game":9.733,"s2:Developer":11.084,"s2:70":14.423,"s3:13":21.913,"s3:30.000":22.89,"s3:114":25.554,"s4:1,5":33.313,"s4:Steal":35.169,"s4:Grow":38.519,"s4:Fisch":40.538,"s5:menolak":46.839,"s5:separuh":50.905,"s6:Tapi":61.298,"s6:1.000":55.015,"s6:1.440":63.897,"s6:120":66.345,"s7:turun":72.527,"s7:pengguna":74.172,"s8:Jadi":76.512,"s8:garap":82.183,"s8:jual":83.485},DUR=87.85,OUT=84.696;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ 
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{x:1000,opacity:1,rotation:2},{x:0,opacity:1,rotation:0,duration:.52,ease:'power4.out'},a-.14),POUT=(tl,p,b)=>tl.to(p,{x:-1100,rotation:-2,duration:.34,ease:'power3.in'},b-.3);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});
+tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

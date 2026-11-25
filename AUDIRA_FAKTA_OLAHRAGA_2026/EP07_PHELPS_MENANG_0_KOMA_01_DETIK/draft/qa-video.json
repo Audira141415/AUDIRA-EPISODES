@@ -1,0 +1,85 @@
+{
+  "file": "F:\\AUDIRA-EPISODES\\AUDIRA_FAKTA_OLAHRAGA_2026\\EP07_PHELPS_MENANG_0_KOMA_01_DETIK\\draft\\qa3d.mp4",
+  "size": "257x456",
+  "fps": 30,
+  "frames": 2746,
+  "cuts": {
+    "planned": [
+      9.52,
+      27.52,
+      44.44,
+      51.99,
+      56.96,
+      67.13,
+      79.47
+    ],
+    "detected": [
+      56.967
+    ],
+    "unplanned": []
+  },
+  "ignore": [
+    [
+      0,
+      0.62,
+      1,
+      0.76
+    ]
+  ],
+  "ignoredAsMotion": 0,
+  "ignoredAsParticles": 8,
+  "ignoredAsFaint": 3,
+  "ignoredAtEdge": 6,
+  "allowed": [],
+  "findings": [
+    {
+      "id": "FLICKER@27.60",
+      "tier": "OK",
+      "type": "FLICKER",
+      "from": 27.6,
+      "to": 30.167,
+      "frames": [
+        828,
+        905
+      ],
+      "where": "x 0–89 %, y 28–88 %",
+      "size": 34,
+      "strength": 24,
+      "strip": "qa-video_01.jpg",
+      "verdict": "ok: S3 opens with a designed stadium-light ramp (exposure rises over 2.5 s on the start shot), not shimmer"
+    },
+    {
+      "id": "LONCAT@47.47",
+      "tier": "OK",
+      "type": "LONCAT",
+      "from": 47.467,
+      "to": 47.467,
+      "frames": [
+        1424,
+        1424
+      ],
+      "where": "x 78–83 %, y 50–56 %",
+      "size": 2,
+      "strength": 14.5,
+      "strip": "qa-video_02.jpg",
+      "verdict": "ok: toy hand slides into the touchpad macro (eased press), the box is the hand edge passing the signature text"
+    },
+    {
+      "id": "KEDIP@50.13",
+      "tier": "OK",
+      "type": "KEDIP",
+      "from": 50.133,
+      "to": 50.133,
+      "frames": [
+        1504,
+        1504
+      ],
+      "where": "x 44–56 %, y 88–91 %",
+      "size": 2,
+      "strength": 12.5,
+      "strip": "qa-video_03.jpg",
+      "verdict": "ok: hand retracts out of frame along an eased path after the press (snap removed in s4)"
+    }
+  ],
+  "result": "PASS"
+}

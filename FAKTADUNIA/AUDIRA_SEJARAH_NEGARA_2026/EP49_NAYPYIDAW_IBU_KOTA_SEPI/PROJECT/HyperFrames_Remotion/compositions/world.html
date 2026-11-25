@@ -1,0 +1,163 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#0D1118}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.04;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.5) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.68) 42%,rgba(0,0,0,0.68) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#3FD8EA;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.p{transform-origin:0% 0%}
+.cd{position:relative;background:rgba(11,14,19,.86);border:1px solid rgba(255,255,255,.13);border-radius:14px;box-shadow:0 18px 44px rgba(0,0,0,.45);backdrop-filter:blur(6px)}
+.kk{display:inline-flex;align-items:center;gap:16px;font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-size:25px;line-height:1;letter-spacing:.16em;color:#3FD8EA;background:rgba(11,14,19,.86);border:1px solid rgba(63,216,234,.35);padding:13px 22px 12px;border-radius:10px;margin-bottom:18px}
+.kk i{font-style:normal;color:#FFB627;border-right:2px solid rgba(255,182,39,.5);padding-right:16px}
+.h1{display:inline-block;padding:20px 36px 26px;font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;font-size:92px;line-height:.98;letter-spacing:-.02em;color:#F4F2ED;max-width:900px;box-sizing:border-box}
+.h1 em,.h2 em{font-style:normal;color:#FFB627}
+.h2{display:inline-block;padding:20px 34px 24px;font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;font-size:66px;line-height:1.04;color:#F4F2ED}
+.row{flex-direction:column;margin-top:14px;padding:16px 30px 18px;max-width:880px;box-sizing:border-box;border-left:10px solid #3FD8EA}
+.row b{display:block;font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;font-size:48px;line-height:1.06;letter-spacing:.01em;color:#F4F2ED}
+.row span{display:block;margin-top:6px;font-family:'Space Grotesk',Arial,sans-serif;font-weight:500;font-size:36px;line-height:1.12;color:#A9B4C4}
+.row.am{border-left-color:#FFB627}.row.am span{color:#FFD27A}.row.rd{border-left-color:#C0392B}
+.row.off b{display:flex;align-items:center;gap:18px;font-size:44px}
+.tg{font-style:normal;font-family:'JetBrains Mono',Consolas,monospace;font-size:24px;letter-spacing:.14em;color:#0B0E13;background:#F4F2ED;padding:7px 12px 5px;border-radius:6px}
+.sub{display:table;margin-top:18px;margin-bottom:2px;font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-size:26px;letter-spacing:.18em;color:#FFB627;background:rgba(11,14,19,.9);border:1px solid rgba(255,182,39,.45);padding:11px 18px 10px;border-radius:10px}
+.mini{display:block;width:max-content;margin-top:10px;padding:12px 24px 13px;font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;font-size:38px;line-height:1.1;color:#F4F2ED;border:2px dashed rgba(63,216,234,.6);white-space:nowrap}
+.mini.am{border-color:rgba(255,182,39,.7)}
+.mega,.stat{display:flex;align-items:baseline;gap:22px;width:max-content;max-width:920px;box-sizing:border-box;margin-top:14px;padding:6px 32px 12px;border-left:10px solid #3FD8EA}
+.mega b,.stat b{font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-variant-numeric:tabular-nums;font-size:84px;line-height:1.08;color:#F4F2ED;white-space:nowrap}
+.mega b{font-size:76px;color:#FFB627}
+.stat b small{font-size:.5em;color:#A9B4C4;font-weight:500}
+.stat.am{border-left-color:#FFB627}.stat.am b{color:#FFB627}
+.stat.rd{border-left-color:#C0392B}.stat.rd b{color:#FF6B5B}
+.stat span{font-family:'Space Grotesk',Arial,sans-serif;font-weight:500;font-size:36px;color:#A9B4C4;max-width:380px;line-height:1.1}
+.stamp{display:inline-block;margin-top:18px;font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-size:36px;letter-spacing:.12em;color:#fff;background:#C0392B;padding:13px 26px 11px;border-radius:8px;transform:rotate(-2deg);box-shadow:0 12px 28px rgba(0,0,0,.5)}
+.q{margin-top:18px;padding:20px 30px 22px;font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;font-size:42px;line-height:1.2;color:#F4F2ED;border-left:10px solid #FFB627;max-width:880px;box-sizing:border-box}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="80.51" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI &middot; MAKET REKA ULANG</div>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@500;700&display=block">
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="kk"><i>EP 49</i>FAKTA SEJARAH NEGARA</div>
+  <div class="cd h1">Ibu kota yang <em>sepi</em></div>
+  <div class="cd stat" data-at="s1:dua-0.4" data-fx="card"><b><b class="ct nb" data-from="0" data-to="20" data-a="s1:dua-0.4" data-d="0.5" >0</b></b><span>lajur jalan raya</span></div>
+  <div class="stamp" data-at="s1:kosong" data-fx="stampc">HAMPIR SELALU KOSONG</div>
+</div>
+<div class="p" data-in="s2" data-out="s2:Kota">
+  <div class="kk"><i>No. 02</i>IBU KOTA MYANMAR</div>
+  <div class="cd row " data-at="s2:Naypyidaw" data-fx="card"><b>NAYPYIDAW</b></div>
+  <div class="cd row am" data-at="s2:kediaman" data-fx="card"><b>ARTI NAMANYA</b><span>&ldquo;kediaman raja&rdquo;</span></div>
+</div>
+<div class="p" data-in="s2:Kota" data-out="s3">
+  <div class="kk"><i>No. 02</i>DIBANGUN DARI NOL</div>
+  <div class="cd row " data-at="s2:dibangun" data-fx="card"><b>DEKAT PYINMANA</b><span>lahan kosong</span></div>
+  <div class="cd stat" data-at="s2:tiga-0.5" data-fx="card"><b><b class="ct nb" data-from="0" data-to="320" data-a="s2:tiga-0.5" data-d="0.5" >0</b><small> km</small></b><span>di utara Yangon</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="kk"><i>No. 03</i>PEMBANGUNAN</div>
+  <div class="cd stat" data-at="s3:2002" data-fx="card"><b>2002</b><span>mulai dibangun</span></div>
+  <div class="cd stat am" data-at="s3:empat-0.4" data-fx="card"><b>US$<b class="ct nb" data-from="0" data-to="4" data-a="s3:empat-0.4" data-d="0.4" >0</b><small> MILIAR</small></b><span>perkiraan biaya</span></div>
+  <div class="stamp" data-at="s3:korupsi" data-fx="stampc">KORUPSI &amp; NEPOTISME</div>
+</div>
+<div class="p" data-in="s4" data-out="s4:Namanya">
+  <div class="kk"><i>No. 04</i>IBU KOTA PINDAH</div>
+  <div class="cd mega" data-at="s4:Enam" data-fx="card"><b>6 NOVEMBER 2005</b></div>
+  <div class="cd row " data-at="s4:memindahkan" data-fx="card"><b>YANGON &rarr; NAYPYIDAW</b><span>dipindah pemerintahan militer</span></div>
+</div>
+<div class="p" data-in="s4:Namanya" data-out="s5">
+  <div class="kk"><i>No. 04</i>27 MARET 2006</div>
+  <div class="cd row " data-at="s4:diumumkan" data-fx="card"><b>NAMA DIUMUMKAN</b><span>beberapa bulan kemudian</span></div>
+  <div class="cd stat am" data-at="s4:dua-0.5" data-fx="card"><b><b class="ct nb" data-from="0" data-to="12000" data-a="s4:dua-0.5" data-d="0.6" >0</b><small>+</small></b><span>tentara dalam parade</span></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="kk"><i>No. 05</i>KENAPA PINDAH?</div>
+  <div class="cd row off" data-at="s5:Alasan" data-fx="card"><b><i class="tg">RESMI</i>YANGON TERLALU PADAT</b></div>
+  <div class="sub" data-at="s5:dugaan" data-fx="fade">DUGAAN LAIN</div>
+  <div class="cd mini cy" data-at="s5:tengah" data-fx="card">Lokasi lebih di tengah</div>
+  <div class="cd mini am" data-at="s5:bergolak" data-fx="card">Dekat wilayah yang bergolak</div>
+  <div class="cd mini cy" data-at="s5:benteng" data-fx="card">Dirancang seperti benteng</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="kk"><i>No. 06</i>SKALA KOTA</div>
+  <div class="cd stat" data-at="s6:tujuh-0.5" data-fx="card"><b><b class="ct nb" data-from="0" data-to="7054" data-a="s6:tujuh-0.5" data-d="0.5" >0</b><small> km&sup2;</small></b><span>luas wilayah</span></div>
+  <div class="cd stat am" data-at="s6:sembilan-0.5" data-fx="card"><b><b class="ct nb" data-from="0" data-to="924608" data-a="s6:sembilan-0.5" data-d="0.5" >0</b></b><span>penduduk resmi</span></div>
+  <div class="stamp" data-at="s6:tapi" data-fx="stampc">JALANNYA LENGANG</div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Lalu">
+  <div class="kk"><i>No. 07</i>KOMPLEKS MILITER</div>
+  <div class="cd stat am" data-at="s7:sebelas-0.4" data-fx="card"><b><b class="ct nb" data-from="0" data-to="11" data-a="s7:sebelas-0.4" data-d="0.4" >0</b><small> km</small></b><span>dari pegawai biasa</span></div>
+  <div class="cd row rd" data-at="s7:tertutup" data-fx="card"><b>TERTUTUP UNTUK PUBLIK</b><span>konon ada terowongan dan bunker</span></div>
+</div>
+<div class="p" data-in="s7:Lalu" data-out="s8">
+  <div class="kk"><i>No. 07</i>28 MARET 2025</div>
+  <div class="cd row rd" data-at="s7:gempa" data-fx="card"><b>GEMPA BESAR</b></div>
+  <div class="cd stat rd" data-at="s7:delapan-0.5" data-fx="card"><b><b class="ct nb" data-from="0" data-to="80" data-a="s7:delapan-0.5" data-d="0.5" >0</b><small>%</small></b><span>gedung pemerintahan rusak</span></div>
+</div>
+<div class="p" data-in="s8" data-out="s8:Menurut">
+  <div class="kk"><i>No. 08</i>MAKET AUDIRA</div>
+  <div class="cd h2">Dibangun untuk bertahan,<br><em>tapi sepi</em></div>
+</div>
+<div class="p" data-in="s8:Menurut" data-out="@END">
+  <div class="kk"><i>No. 08</i>PERTANYAAN</div>
+  <div class="cd q">Menurut kamu, kenapa pemerintah mau membangun kota sebesar ini? Tulis di komentar.</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 49</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":4.286,"s2":4.446,"s2e":12.829,"s3":12.989,"s3e":19.772,"s4":19.932,"s4e":31.807,"s5":31.967,"s5e":44.424,"s6":44.584,"s6e":54.975,"s7":55.135,"s7e":67.564,"s8":67.724,"s8e":77.511,"end":77.511,"dur":80.51,"outro":77.761},AT={"s1:dua":1.732,"s1:lajur":2.103,"s1:kosong":3.868,"s2:Naypyidaw":4.774,"s2:kediaman":7.359,"s2:Kota":8.448,"s2:dibangun":8.897,"s2:tiga":10.971,"s2:Yangon":12.442,"s3:dimulai":13.627,"s3:2002":14.354,"s3:empat":16.305,"s3:miliar":16.506,"s3:korupsi":18.58,"s3:nepotisme":19.184,"s4:Enam":19.965,"s4:memindahkan":22.844,"s4:baru":25.367,"s4:Namanya":26.436,"s4:diumumkan":27.039,"s4:parade":29.624,"s4:dua":30.646,"s4:ribu":31.064,"s5:Alasan":31.998,"s5:dugaan":35.992,"s5:tengah":37.785,"s5:bergolak":38.869,"s5:benteng":40.767,"s5:diserbu":41.494,"s5:rakyat":43.681,"s6:Wilayahnya":44.586,"s6:tujuh":45.097,"s6:sembilan":48.905,"s6:Gedungnya":51.39,"s6:tapi":53.443,"s6:lengang":54.666,"s7:sebelas":56.511,"s7:kompleks":59.437,"s7:tertutup":59.948,"s7:terowongan":61.155,"s7:bunker":61.759,"s7:Lalu":62.889,"s7:Maret":63.229,"s7:gempa":64.576,"s7:delapan":65.536,"s8:megah":68.245,"s8:Menurut":71.93,"s8:AUDIRA":75.793,"s1:dua-0.4":1.332,"s2:tiga-0.5":10.471,"s3:empat-0.4":15.905,"s4:dua-0.5":30.146,"s6:tujuh-0.5":44.597,"s6:sembilan-0.5":48.405,"s7:sebelas-0.4":56.111,"s7:delapan-0.5":65.036},DUR=80.51,OUT=77.761;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ card:(e,t)=>{const d=e.dataset.d||(e.matches('.row,.mega,.stat')?'flex':'block');gsap.set(e,{display:'none'});tl.set(e,{display:d},t);tl.fromTo(e,{opacity:0,y:22},{opacity:1,y:0,duration:.5,ease:'power2.out',immediateRender:false},t);},
+ stampc:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:'inline-block'},t);tl.fromTo(e,{scale:1.35,opacity:0},{scale:1,opacity:1,duration:.32,ease:'power3.out',immediateRender:false},t);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{opacity:0,y:18},{opacity:1,y:0,duration:.55,ease:'power2.out'},a-.1),POUT=(tl,p,b)=>tl.to(p,{opacity:0,y:-14,duration:.32,ease:'power2.in'},b-.32);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP49_NAYPYIDAW_IBU_KOTA_SEPI")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

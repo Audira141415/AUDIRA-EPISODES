@@ -1,0 +1,134 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#EEF1EA}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.04;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.18) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0) 42%,rgba(0,0,0,0) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#0F172A;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.tag{display:table;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:28px;letter-spacing:.1em;color:#fff;background:#0F172A;padding:11px 22px 9px;border-radius:40px;margin-bottom:16px;box-shadow:0 10px 24px rgba(15,23,42,.18)}
+.tag i{display:inline-block;width:14px;height:14px;border-radius:50%;background:#10B981;box-shadow:0 0 0 4px rgba(16,185,129,.25);margin-right:14px;vertical-align:1px}
+.card{display:table;background:rgba(255,255,255,.94);border-left:10px solid #10B981;padding:14px 30px 18px 26px;margin-bottom:14px;border-radius:6px 22px 22px 6px;box-shadow:0 18px 40px rgba(15,23,42,.14)}
+.big{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:104px;line-height:.98;letter-spacing:-.02em;color:#0F172A}
+.big span{color:#F97316}.big.sm{font-size:70px;line-height:1.02}.big small{font-size:52px;letter-spacing:.02em;color:#0F766E}
+.sub{font-family:'JetBrains Mono',monospace;font-size:26px;color:#0F766E;margin-top:6px;letter-spacing:.04em}
+.ln{display:table;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:38px;line-height:1.18;color:#0F172A;background:rgba(255,255,255,.92);padding:10px 22px 10px 18px;margin-bottom:10px;border-radius:40px;max-width:880px;box-shadow:0 8px 22px rgba(15,23,42,.12)}
+.ln .d{display:inline-block;width:16px;height:16px;border-radius:50%;background:#10B981;margin-right:14px;vertical-align:3px}
+.ln.o .d{background:#F97316}
+#chip{font-family:'JetBrains Mono',monospace;font-size:20px;color:#0F172A;opacity:.6;letter-spacing:.06em}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="88.37" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN REKAMAN PABRIK ASLI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tag"><i></i>CARA PEMBUATAN &middot; EP 05</div>
+  <div class="card"><div class="big">BOLA <span>GOLF</span></div></div>
+  <div class="ln" data-at="s1:lubang" data-fx="lit"><b class="d"></b>Ratusan lubang kecil</div>
+  <div class="ln o" data-at="s1:dua" data-fx="lit"><b class="d"></b>Terbang hampir 2&times; lebih jauh</div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="tag"><i></i>SEJARAH SINGKAT</div>
+  <div class="card" data-at="s2:pertengahan" data-fx="lit"><div class="big sm">PERTENGAHAN<br><span>ABAD KE-19</span></div></div>
+  <div class="ln" data-at="s2:mulus" data-fx="lit"><b class="d"></b>Bola getah: awalnya mulus</div>
+  <div class="ln" data-at="s2:tergores" data-fx="lit"><b class="d"></b>Bola tergores terbang lebih jauh</div>
+  <div class="ln o" data-at="s2:dicetak" data-fx="lit"><b class="d"></b>Kini polanya dicetak di pabrik</div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tag"><i></i>LANGKAH 1 &middot; INTI</div>
+  <div class="ln" data-at="s3:Karet" data-fx="lit"><b class="d"></b>Karet sintetis polybutadiene</div>
+  <div class="ln" data-at="s3:zinc" data-fx="lit"><b class="d"></b>+ zinc diacrylate &rarr; kuat &amp; memantul</div>
+  <div class="ln" data-at="s3:dipotong" data-fx="lit"><b class="d"></b>Adonan dipotong</div>
+  <div class="ln o" data-at="s3:dipanggang" data-fx="lit"><b class="d"></b>Dipanggang di cetakan panas bertekanan</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="tag"><i></i>LANGKAH 2 &middot; LAPISAN &amp; KULIT</div>
+  <div class="ln" data-at="s4:lapisan" data-fx="lit"><b class="d"></b>Lapisan tengah: plastik kaku</div>
+  <div class="ln" data-at="s4:setengah" data-fx="lit"><b class="d"></b>Inti di antara dua setengah cetakan</div>
+  <div class="ln" data-at="s4:keras" data-fx="lit"><b class="d"></b>Plastik keras atau urethane mengisi rongga</div>
+  <div class="card" data-at="s4:tiga" data-fx="lit"><div class="big sm"><span>300&ndash;500</span> DIMPLE</div><div class="sub">sekaligus, dari rongga cetakan</div></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="tag"><i></i>LANGKAH 3 &middot; RAPIKAN &amp; UJI</div>
+  <div class="ln" data-at="s5:dibuang" data-fx="lit"><b class="d"></b>Sisa plastik sambungan dibuang</div>
+  <div class="ln" data-at="s5:dicat" data-fx="lit"><b class="d"></b>Dicat sambil diputar</div>
+  <div class="ln" data-at="s5:logo" data-fx="lit"><b class="d"></b>Logo dicetak, lalu pernis bening</div>
+  <div class="ln" data-at="s5:memastikan" data-fx="lit"><b class="d"></b>Sinar-X: inti di tengah</div>
+  <div class="ln o" data-at="s5:robot" data-fx="lit"><b class="d"></b>Robot pemukul menguji jarak</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="tag"><i></i>KENAPA ADA DIMPLE?</div>
+  <div class="ln" data-at="s6:pusaran" data-fx="lit"><b class="d"></b>Mulus: pusaran besar, bola ditarik mundur</div>
+  <div class="ln" data-at="s6:bergolak" data-fx="lit"><b class="d"></b>Dimple: udara bergolak, menempel lama</div>
+  <div class="card" data-at="s6:separuh" data-fx="lit"><div class="big sm">HAMBATAN <span>&asymp; &frac12;</span></div></div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tag"><i></i>HASILNYA</div>
+  <div class="ln" data-at="s7:setengah" data-fx="lit"><b class="d"></b>Bola mulus: kira-kira setengah jarak</div>
+  <div class="ln" data-at="s7:kecepatan" data-fx="lit"><b class="d"></b>Batas kecepatan awal resmi</div>
+  <div class="card" data-at="s7:sekitar" data-fx="lit"><div class="big"><span>&plusmn;<b class="ct nb" data-from="200" data-to="280" data-a="s7:sekitar" data-d="1.4">280</b></span> <small>KM/JAM</small></div></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="card" data-at="s8:Jadi" data-fx="lit"><div class="big sm">LUBANG KECIL,<br><span>BUKAN HIASAN</span></div></div>
+  <div class="ln" data-at="s8:Ikuti" data-fx="lit"><b class="d"></b>Ikuti AUDIRA: cara pembuatan berikutnya</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">AUDIRA Explained &middot; @AudiraExplained</div><div class="sr">CARA PEMBUATAN &middot; EP 05</div></div>
+<div id="sig">AUDIRA &middot; @AudiraExplained</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":4.793,"s2":4.953,"s2e":15.504,"s3":15.664,"s3e":26.84,"s4":27,"s4e":41.921,"s5":42.081,"s5e":54.392,"s6":54.552,"s6e":69.911,"s7":70.071,"s7e":80.142,"s8":80.302,"s8e":85.373,"end":85.373,"dur":88.37,"outro":85.623},AT={"s2:tergores":11.33,"s2:dicetak":14.59,"s3:dicampur":18.584,"s3:memantul":22.067,"s3:dipotong":23.837,"s3:dipanggang":24.642,"s4:lapisan":28.007,"s4:kulit":30.407,"s4:ditaruh":31.725,"s4:menutup":34.388,"s4:rongganya":37.206,"s4:Rongga":38.05,"s5:dibuang":43.934,"s5:dicat":45.008,"s5:logo":46.262,"s5:pernis":48.093,"s5:memastikan":50.951,"s5:robot":52.596,"s5:jaraknya":53.881,"s6:mulus":57.242,"s6:pusaran":58.202,"s6:Dimple":62.238,"s6:bergolak":64.544,"s6:Pusarannya":66.552,"s7:Hasilnya":70.104,"s7:setengah":73.158,"s7:berdimple":74.118,"s7:kecepatan":76.553,"s8:hiasan":82.401,"s8:AUDIRA":83.593,"s1:lubang":1.094,"s1:golf":2.781,"s7:280":78.408,"s1:dua":3.679,"s2:pertengahan":6.361,"s2:mulus":8.281,"s3:Karet":17.175,"s3:zinc":19.033,"s4:setengah":32.871,"s4:keras":35.224,"s4:tiga":39.351,"s6:separuh":69.478,"s7:sekitar":77.835,"s8:Jadi":80.311,"s8:Ikuti":83.267},DUR=88.37,OUT=85.623;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ lit:(e,t)=>tl.fromTo(e,{opacity:.38},{opacity:1,duration:.3,ease:'power2.out'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{opacity:0,x:-60,clipPath:'inset(0% 100% 0% 0%)'},{opacity:1,x:0,clipPath:'inset(0% 0% 0% 0%)',duration:.5,ease:'power3.out'},a-.12);},POUT=(tl,p,b)=>{tl.to(p,{opacity:0,x:50,clipPath:'inset(0% 0% 0% 100%)',duration:.32,ease:'power2.in'},b-.32);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0,clipPath:'inset(0% 100% 0% 0%)'});tl.to('#outro',{opacity:1,clipPath:'inset(0% 0% 0% 0%)',duration:.55,ease:'power3.out'},OUT-.1);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP05_BOLA_GOLF")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;const w=e.offsetWidth||520,hh=e.offsetHeight||34;const x=Math.max(40,Math.min(ord[k][0],1080-40-w));const y=Math.max(190,Math.min(ord[k][1],1540-hh));e.style.transform='translate('+x+'px,'+y+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

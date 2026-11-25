@@ -1,0 +1,163 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#07090A}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.035;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.45) 42%,rgba(0,0,0,0.45) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:262px;z-index:10;transform-origin:50% 50%}
+.nb{font-variant-numeric:tabular-nums}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Inter,sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#fff;opacity:.82}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:30px;color:#A3E635;letter-spacing:.14em}
+
+.st{display:inline-block;font-family:"DM Mono",monospace;font-weight:500;font-size:25px;letter-spacing:.14em;color:#07090A;background:#FFB347;padding:6px 14px;margin-bottom:14px}
+.h0{font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:118px;line-height:.98;color:#fff;text-shadow:0 6px 30px rgba(0,0,0,.65)}
+.h0 i{font-style:normal;color:#FFB347;font-size:84px}
+.vs{margin-top:16px;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.vs span{font-family:"DM Mono",monospace;font-weight:500;font-size:31px;padding:6px 14px;background:rgba(7,9,10,.78)}
+.vs .a{color:#7EE081;border-left:5px solid #7EE081}.vs .b{color:#FFB347;border-left:5px solid #FFB347}
+.ro{background:rgba(7,9,10,.8);border-left:5px solid #FFB347;padding:10px 18px;margin-top:10px;width:max-content;max-width:880px}
+.ro b{display:block;font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:50px;line-height:1.05;color:#fff}
+.ro span{display:block;font-family:"DM Mono",monospace;font-weight:400;font-size:28px;line-height:1.25;color:#F3E6C8}
+.du{display:flex;gap:12px;width:780px;margin-top:12px}.du>div{flex:1;background:rgba(7,9,10,.82);padding:8px 16px;border-top:5px solid #FFB347;text-align:center}
+.du .kn{border-top-color:#fff}
+.du b{display:block;font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:104px;line-height:1;color:#FFB347}.du .kn b{color:#fff}
+.du span{display:block;font-family:"DM Mono",monospace;font-size:27px;color:#F3E6C8}
+.tel{background:rgba(7,9,10,.8);border-top:3px solid #FFB347;border-bottom:3px solid #FFB347;padding:8px 22px;width:660px;margin-top:10px}
+.tel b{display:block;font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:100px;line-height:1;color:#FFB347}
+.tel span{display:block;font-family:"DM Mono",monospace;font-size:28px;color:#F3E6C8}
+.tel.big{width:820px}.tel.big b{font-size:96px}
+.ch{font-family:"Chakra Petch",sans-serif;font-weight:600;font-size:36px;line-height:1.2;color:#fff;margin-top:12px;text-shadow:0 2px 10px #000,0 0 3px #000}
+.ch.co{color:#FF6B4A}
+.card{background:rgba(7,9,10,.82);border:2px solid #3b3324;padding:10px 4px;width:870px}
+.wl{font-family:"DM Mono",monospace;font-size:26px;font-weight:500}
+.bars{display:flex;gap:10px;margin-top:8px}.bars i{display:block;height:12px;width:150px;background:linear-gradient(90deg,#FF6B4A,#FFB347);transform-origin:0 50%}
+.stamp{display:inline-block;margin-top:26px;font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:44px;color:#7EE081;border:4px solid #7EE081;padding:6px 16px;background:rgba(7,9,10,.7)}
+.h2{display:inline-block;background:rgba(7,9,10,.62);padding:8px 18px;font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:86px;line-height:1.02;color:#fff;text-shadow:0 4px 26px rgba(0,0,0,.8)}
+.h3{display:inline-block;background:rgba(7,9,10,.62);padding:6px 18px;font-family:"Chakra Petch",sans-serif;font-weight:600;font-size:46px;color:#FFB347;margin-top:12px;text-shadow:0 3px 14px #000}
+.srcl{background:rgba(7,9,10,.5);padding:8px 14px;font-family:"DM Mono",monospace;font-size:22px;line-height:1.35;color:#fff;margin-top:16px;text-shadow:0 2px 10px #000;max-width:860px}
+#hud{position:absolute;left:56px;right:110px;top:226px;height:30px;z-index:11;display:flex;justify-content:space-between;font-family:"DM Mono",monospace;font-size:22px;letter-spacing:.08em;color:#FFB347;opacity:.85}
+#chip{left:auto!important;right:110px;top:186px!important;font-family:"DM Mono",monospace!important;color:#F3E6C8!important}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="83.37" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="st">CARA KERJA VIRAL &middot; EP 13</div>
+  <div class="h0">LASER<br><i>DI BAWAH HUTAN</i></div>
+  <div class="vs"><span class="a">FOTO SATELIT: HIJAU</span><span class="b" data-at="s1:laser" data-fx="left">LASER: RATUSAN LINGKARAN</span></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="st">STUDI NATURE &middot; JULI LALU</div>
+  <div class="ro" data-at="s2:BBC" data-fx="left"><b>BBC INDONESIA</b><span>mengangkatnya pekan ini</span></div>
+  <div class="ro" data-at="s2:Acre" data-fx="left"><b>ACRE &amp; AMAZONAS</b><span>Brasil &middot; survei pesawat 2024</span></div>
+  <div class="du"><div data-at="s2:432" data-fx="pop"><b class="ct" data-from="0" data-to="432" data-a="s2:432" data-d="1.4">0</b><span>struktur tanah</span></div><div class="kn" data-at="s2:36" data-fx="pop"><b>36</b><span>sudah dikenal</span></div></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="st">PESAWAT SURVEI</div>
+  <div class="tel" data-at="s3:1,1" data-fx="up"><b>1,1 km</b><span>di atas hutan, bolak-balik</span></div>
+  <div class="tel" data-at="s3:1,6" data-fx="up"><b>1,6 juta</b><span>pulsa laser per detik</span></div>
+  <div class="ch" data-at="s3:kiri" data-fx="up">disapu ke kiri &amp; kanan</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="st">SATU PULSA, BANYAK PANTULAN</div>
+  <div class="card"><svg class="wv" viewBox="0 0 860 200" width="860" height="200">
+  <line x1="20" y1="170" x2="840" y2="170" stroke="#5a4a30" stroke-width="3"/>
+  <path d="M20 170 L140 170 Q170 170 185 60 Q200 170 230 170 L360 170 Q385 170 400 104 Q415 170 440 170 L640 170 Q660 170 675 128 Q690 170 710 170 L840 170" fill="none" stroke="#3b3324" stroke-width="5"/>
+  <path class="pk" data-at="s4:puncak" data-fx="fade" d="M140 170 Q170 170 185 60 Q200 170 230 170" fill="none" stroke="#7EE081" stroke-width="7"/>
+  <path class="pk" data-at="s4:ranting" data-fx="fade" d="M360 170 Q385 170 400 104 Q415 170 440 170" fill="none" stroke="#FFB347" stroke-width="7"/>
+  <path class="pk" data-at="s4:tanah" data-fx="fade" d="M640 170 Q660 170 675 128 Q690 170 710 170" fill="none" stroke="#FF6B4A" stroke-width="7"/>
+  <text x="185" y="40" text-anchor="middle" class="wl" fill="#7EE081" data-at="s4:puncak" data-fx="fade">PUNCAK DAUN</text>
+  <text x="400" y="86" text-anchor="middle" class="wl" fill="#FFB347" data-at="s4:ranting" data-fx="fade">RANTING</text>
+  <text x="675" y="110" text-anchor="middle" class="wl" fill="#FF6B4A" data-at="s4:tanah" data-fx="fade">TANAH</text>
+</svg></div>
+  <div class="ch" data-at="s4:celah" data-fx="up">lewat celah daun, bukan menembus daun</div>
+  <div class="ch" data-at="s4:Waktu" data-fx="up">waktu pantul &rarr; jarak</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="st">TIAP TITIK PUNYA ALAMAT</div>
+  <div class="ro" data-at="s5:GNSS" data-fx="left"><b>GNSS</b><span>posisi pesawat</span></div>
+  <div class="ro" data-at="s5:IMU" data-fx="left"><b>IMU</b><span>kemiringan: roll &middot; pitch &middot; yaw</span><div class="bars"><i id="b0"></i><i id="b1"></i><i id="b2"></i></div></div>
+  <div class="tel" data-at="s5:31" data-fx="up"><b>31 titik</b><span>per m&sup2;, rata-rata</span></div>
+  <div class="stamp" data-at="s5:dibuang" data-fx="stamp">TITIK POHON DIBUANG</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="st">KENAPA SATELIT TAK MELIHAT?</div>
+  <div class="ro" data-at="s6:atap" data-fx="left"><b>FOTO SATELIT</b><span>hanya atap hutan</span></div>
+  <div class="ro" data-at="s6:temuan" data-fx="left"><b>TEMUAN LAMA</b><span>hampir semua di lahan gundul</span></div>
+  <div class="ch" data-at="s6:Laser" data-fx="up">laser: cukup segelintir pulsa sampai tanah</div>
+  <div class="ch co" data-at="s6:terlewat" data-fx="up">sebagian tetap terlewat</div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="st">MODEL TANAH TELANJANG</div>
+  <div class="ro" data-at="s7:matahari" data-fx="left"><b>BAYANGAN MATAHARI BUATAN</b><span>hillshade membuat parit menonjol</span></div>
+  <div class="tel" data-at="s7:Parit" data-fx="up"><b>9&ndash;13 m</b><span>lebar parit</span></div>
+  <div class="tel big" data-at="s7:Totalnya" data-fx="up"><b>24.000&ndash;30.000</b><span>struktur, diperkirakan</span></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="h2" data-at="s8:Tersembunyi" data-fx="up">TERSEMBUNYI<br>DARI PETA ILMUWAN</div>
+  <div class="h3" data-at="s8:bukan" data-fx="up">bukan dari ingatan masyarakat adat</div>
+  <div class="srcl" data-at="s8:adat" data-fx="fade">Sumber: P&auml;rssinen dkk., Nature (Juli 2026); BBC News Indonesia; NEON; NOAA. Visual 3D adalah ilustrasi, bukan data survei asli.</div>
+</div>
+<div id="hud"><div class="hl">AUDIRA &middot; LIDAR SURVEY</div><div class="hr" id="hudpts">TITIK 0</div></div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">CARA KERJA VIRAL &middot; EP 13</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":6.62,"s2":6.78,"s2e":21.071,"s3":21.231,"s3e":29.977,"s4":30.137,"s4e":38.311,"s5":38.471,"s5e":50.814,"s6":50.974,"s6e":61.83,"s7":61.99,"s7e":73.751,"s8":73.911,"s8e":80.372,"end":80.372,"dur":83.37,"outro":80.622},AT={"s1:laser":3.696,"s1:lingkaran":5.614,"s2:Acre":12.972,"s2:Ditemukan":16.13,"s2:432":16.703,"s2:36":19.694,"s3:terbang":21.528,"s3:kilometer":23.153,"s3:juta":27.67,"s3:kiri":29.048,"s4:pulsa":30.383,"s4:puncak":32.617,"s4:ranting":33.345,"s4:celah":35.589,"s4:tanah":36.162,"s4:Waktu":36.794,"s5:GNSS":38.486,"s5:mencatat":39.833,"s5:IMU":41.517,"s5:pantulan":44.862,"s5:31":48.097,"s5:pohon":50.256,"s6:Kenapa":50.974,"s6:atap":54.074,"s6:gundul":56.582,"s6:Laser":57.572,"s6:tanah":59.77,"s6:terlewat":61.381,"s7:matahari":63.291,"s7:Parit":64.614,"s7:lingkaran":67.674,"s7:persegi":68.216,"s7:Totalnya":69.494,"s8:adat":77.103,"s2:BBC":7.43,"s3:1,1":22.488,"s3:1,6":26.834,"s5:dibuang":50.488,"s6:temuan":54.91,"s8:Tersembunyi":73.929,"s8:bukan":75.57},DUR=83.37,OUT=80.622;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ 
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{clipPath:'inset(0 100% 0 0)',opacity:1,filter:'brightness(2.2)'},{clipPath:'inset(0 0% 0 0)',duration:.42,ease:'power2.out'},a-.16);tl.to(p,{filter:'brightness(1)',duration:.3},a+.2);},POUT=(tl,p,b)=>tl.to(p,{clipPath:'inset(48% 0 48% 0)',opacity:0,duration:.26,ease:'power3.in'},b-.32);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{const s=K,A=AT;const pe=document.getElementById('hudpts');if(pe){let n=0;const r=(x,a,b)=>Math.max(0,Math.min(1,(x-a)/(b-a)));
+    n=Math.round(1e6*(r(t,.8,5.3)*0.4+r(t,s.s3,s.s4)*0.6+r(t,s.s5,s.s6)*1.5+r(t,s.s6,s.s7)*0.5));pe.textContent='TITIK '+n.toLocaleString('de-DE');}
+    const rl=0.035*Math.sin(t*0.7)+(t>=s.s5&&t<s.s6?0.1*Math.sin((t-A['s5:IMU'])*2.1):0);
+    const b=[Math.abs(rl)*6,Math.abs(0.02*Math.sin(t*0.9))*20,0.4+0.3*Math.sin(t*0.5)];
+    for(let i=0;i<3;i++){const e=document.getElementById('b'+i);if(e)e.style.transform='scaleX('+Math.max(.08,Math.min(1,b[i])).toFixed(3)+')';}};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP13_LIDAR_AMAZON")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

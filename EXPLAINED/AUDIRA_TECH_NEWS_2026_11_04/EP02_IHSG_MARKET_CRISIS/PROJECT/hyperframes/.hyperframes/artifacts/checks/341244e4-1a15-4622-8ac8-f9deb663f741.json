@@ -1,0 +1,187 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 330 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "F:\\AUDIRA-VIDEO-MOTION\\EXPLAINED\\AUDIRA_TECH_NEWS_2026_11_04\\EP02_IHSG_MARKET_CRISIS\\PROJECT\\hyperframes\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split this sub-composition further into smaller .html files, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "Track 2 has 66 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "F:\\AUDIRA-VIDEO-MOTION\\EXPLAINED\\AUDIRA_TECH_NEWS_2026_11_04\\EP02_IHSG_MARKET_CRISIS\\PROJECT\\hyperframes\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      }
+    ],
+    "filesScanned": 3
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 86.039,
+        "selector": "div.stamp",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 156.31,
+          "top": 1038.08,
+          "right": 897.35,
+          "bottom": 1109.08,
+          "width": 741.04,
+          "height": 71
+        },
+        "containerSelector": "div.cred",
+        "text": "BUKAN REKOMENDASI BELI ATAU JUAL",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {
+          "data-at": "s8:bukan",
+          "data-fx": "stamp"
+        },
+        "sourceFile": "compositions/world.html",
+        "bbox": {
+          "x": 156.31,
+          "y": 1038.08,
+          "width": 741.04,
+          "height": 71
+        },
+        "firstSeen": 86.039,
+        "lastSeen": 86.039,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          86.039
+        ]
+      }
+    ],
+    "duration": 88.57,
+    "samples": [
+      4.921,
+      14.762,
+      24.603,
+      34.444,
+      44.285,
+      54.126,
+      63.967,
+      73.808,
+      83.649
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 1,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      4.921,
+      24.603,
+      44.285,
+      63.967,
+      83.649
+    ],
+    "checked": 61,
+    "passed": 61
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "The film's last line \"Sumber: BEI via Katadata & Kompas, CNN Indonesia, Infoban...\" (15 words) is on screen 2.67 s (±0.01 s), under the 3.75 s a closing line needs: hold it about 0.5 s + 0.3 s a word and at least 2 s before the film ends; see references/motion.md.",
+        "text": "Sumber: BEI via Katadata & Kompas, CNN Indonesia, Infobank, Bloomberg Technoz, CNBC Indonesia. Bukan nasihat investasi.",
+        "selector": "div.cred",
+        "dataAttributes": {},
+        "sourceFile": "compositions/world.html",
+        "bbox": {
+          "x": 128.39,
+          "y": 1025.59,
+          "width": 823.2,
+          "height": 121
+        },
+        "time": 85.908,
+        "words": 15,
+        "seconds": 2.667,
+        "floorSeconds": 3.75
+      }
+    ],
+    "enabled": true,
+    "step": 0.1479999999999997,
+    "samples": 599
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

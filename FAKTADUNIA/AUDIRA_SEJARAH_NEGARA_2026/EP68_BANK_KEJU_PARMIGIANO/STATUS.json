@@ -1,0 +1,585 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP68_BANK_KEJU_PARMIGIANO",
+  "topic": "Bank keju Credem: Parmigiano Reggiano jadi jaminan pinjaman — brankas ±500.000 roda senilai €325 juta",
+  "createdAt": "2026-11-24T15:08:29.702Z",
+  "updatedAt": "2026-11-25T00:10:58.003Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:08:54.622Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "startedAt": "2026-11-24T15:08:33.902Z",
+      "doneAt": "2026-11-24T15:08:29.704Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:08:54.622Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-23T18:28:37.279Z",
+      "startedAt": "2026-11-23T18:28:37.279Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:10:43.806Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T15:10:42.072Z",
+      "startedAt": "2026-11-24T15:10:42.072Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:11:52.443Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-24T15:11:03.792Z",
+      "startedAt": "2026-11-24T15:11:03.792Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:46:59.696Z",
+          "text": "Sesi B mulai: salin starter + kit foodforge ke project/"
+        },
+        {
+          "at": "2026-11-24T15:47:08.852Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "startedAt": "2026-11-24T15:46:59.696Z",
+      "doneAt": "2026-11-22T06:09:42.000Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:52:02.721Z",
+          "text": "VO Cartesia 73.51 dtk, 199 kata, vo-words.json + vo.timing.json. FILM 75.5 dtk (outro 72.5–75.5)."
+        }
+      ],
+      "doneAt": "2026-11-24T15:52:02.721Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:47:08.852Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-24T15:52:13.467Z",
+          "text": "Belum ada kode film/SHOTLIST/sfx. Hanya helper EP59 + 21 GLB + Gallery dev. Lihat docs/HANDOFF.md."
+        },
+        {
+          "at": "2026-11-24T15:52:45.778Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.000Z",
+      "startedAt": "2026-11-22T16:52:30.000Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T17:59:27.206Z",
+          "text": "sync: look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-24T17:51:22.945Z",
+      "startedAt": "2026-11-24T17:51:22.945Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T23:32:36.979Z",
+      "notes": [
+        {
+          "at": "2026-11-24T23:32:36.979Z",
+          "text": "Acc pengguna 2026-11-25: \"Gas render\""
+        },
+        {
+          "at": "2026-11-25T00:10:53.201Z",
+          "text": "FINAL_EP68_BANK_KEJU.mp4 1080x1920@60, -13.7 LUFS TP -1.9, metadata + Ed25519/C2PA ok, juri buta final 4.0 LOLOS (C3), gold diarsipkan."
+        }
+      ],
+      "startedAt": "2026-11-24T23:32:36.979Z",
+      "doneAt": "2026-11-25T00:10:53.201Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:34:22.999Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T23:33:54.183Z",
+      "startedAt": "2026-11-24T23:33:54.183Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-negara-EP68",
+    "style": "FOODFORGE",
+    "engine": "remotion",
+    "shortTitle": "Bank Keju",
+    "sessionNo": 1,
+    "voSeconds": 73.51,
+    "filmSeconds": 75.5
+  },
+  "syncedAt": "2026-11-24T23:34:22.999Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-24T15:12:48.135Z",
+      "doing": "Sesi A selesai (tahap 0–4). Style FOODFORGE, 3D Remotion + R3F (alt VINTAGEFORGE ditolak). Naskah 199 kata ≈ 80–88 dtk, 6 adegan: A brankas €325 juta, B bank Credem Reggio Emilia 1953, C susu→roda (±38–40 kg, ±550 L, min 12 bln), D meja kredit (80%, tenor 24 bln, no. seri, prosciutto/minyak ditolak), E terowongan 2009 570 roda tertangkap, F katedral rak ±500.000 roda + uji palu + cap bakar + €0 rugi. Fakta berat: sumber bilang 38 kg → VO 'hampir empat puluh kilogram', layar ±38–40 KG. CNN26 tidak bisa di-fetch ulang (HTTP 451). Belum ada: project/, cover-topic.png, preflight (dijalankan setelah scaffold). Motion memory FOODFORGE mustApply: clearcoat 0.9, exposure 0.9, envIntensity 0.45, AO on, DOCUMENTARY_WARM, FG bawah 20% penuh prop, tokoh rambut+wajah+celemek, label tidak terpotong.",
+      "files": [
+        "STATUS.json",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/ART_DIRECTION.md",
+        "docs/VO_TTS.txt",
+        "docs/SCRIPT.md (teks VO saja)",
+        "research/SOURCE_REGISTER.md"
+      ],
+      "next": "Sesi B (tahap 5–8): scaffold Remotion R3F (node F:/AUDIRA-EPISODES/scripts/scaffold-episode.mjs atau audira_init_motion_project ke project/, kit foodforge) + npm run preflight -- --episode=<dir> + check-env + smoke; render cover-topic.png 1080×1920 (adegan F katedral keju) ke style/; VO Cartesia dari docs/VO_TTS.txt (voice 04b567df-2923-4b0c-896b-4b7df0a07e1a), npm run vo, retime STORYBOARD ke detik VO; SHOTLIST + animasi 6 adegan + npm run sfx; draft/THEME_CHECK.md + contact sheet + audit:visual + juri buta (LOLOS ≥3.8, maks 2 putaran; terbaik ≥3.5 → lanjut). Akhir B: handover newSession ke Sesi C.",
+      "snapshot": {
+        "episode": "EP68_BANK_KEJU_PARMIGIANO",
+        "topic": "Bank keju Credem: Parmigiano Reggiano jadi jaminan pinjaman — brankas ±500.000 roda senilai €325 juta",
+        "style": "FOODFORGE",
+        "memoryEpisode": "sejarah-negara-EP68",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:48:18.160Z",
+      "doing": "Sesi B tahap 5–6: project/ = salinan starter + kit foodforge, node_modules junction ke F:/AUDIRA-SKILL-MOTION/node_modules, channel.json @AudiraFaktaDunia, preflight no blockers. Smoke jalan. Generate VO Cartesia.",
+      "command": "audira_generate_voiceover scriptPath docs/VO_TTS.txt -> project/public/audio/vo.wav",
+      "files": [
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "npm run vo -- public/audio/vo.wav, retime STORYBOARD, tulis kode film",
+      "snapshot": {
+        "episode": "EP68_BANK_KEJU_PARMIGIANO",
+        "topic": "Bank keju Credem: Parmigiano Reggiano jadi jaminan pinjaman — brankas ±500.000 roda senilai €325 juta",
+        "style": "FOODFORGE",
+        "memoryEpisode": "sejarah-negara-EP68",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:52:13.733Z",
+      "doing": "Sesi B s2 selesai tahap 5–6: project/ starter + kit foodforge, preflight no blockers, smoke OK, VO 73.51 dtk (FILM 75.5, outro 72.5–75.5), 21 GLB di public/models/polyfork, helper EP59 disalin (materials.ts, parts.tsx, AssetModel grain, Subtitle). Timing kata kunci per adegan A–F ada di docs/HANDOFF.md.",
+      "files": [
+        "docs/HANDOFF.md",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/ART_DIRECTION.md",
+        "project/public/audio/vo-words.json",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/materials.ts",
+        "project/src/episode/Gallery.tsx"
+      ],
+      "next": "Sesi B lanjut tahap 7–8: baca docs/HANDOFF.md, lihat out/gal/f0000.png, tulis timeline.ts + cheese.tsx + scenes.tsx + KejuFilm.tsx + Root (KejuPreview/KejuFinal), stills + poles, cover-topic.png, retime STORYBOARD + SHOTLIST + npm run sfx, THEME_CHECK, npm run draft, juri buta. Lalu handover ke Sesi C.",
+      "snapshot": {
+        "episode": "EP68_BANK_KEJU_PARMIGIANO",
+        "topic": "Bank keju Credem: Parmigiano Reggiano jadi jaminan pinjaman — brankas ±500.000 roda senilai €325 juta",
+        "style": "FOODFORGE",
+        "memoryEpisode": "sejarah-negara-EP68",
+        "currentStage": "animation",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T16:01:56.741Z",
+      "doing": "Sesi B s3: kode adegan A–F selesai (timeline.ts, cheese.tsx, scenes.tsx, KejuFilm.tsx, Root KejuPreview/KejuFinal), typecheck bersih, AssetModel pakai SkeletonUtils. Belum ada still yang dirender.",
+      "command": "cd project && npm run stills -- out/s 2s,9s,13s,17s,24s,30s,38s,46s,52s,56s,61s,66s,70s KejuPreview",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/episode/timeline.ts",
+        "project/src/episode/cheese.tsx",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/KejuFilm.tsx",
+        "project/src/episode/parts.tsx",
+        "project/src/Root.tsx",
+        "project/src/core/assets/AssetModel.tsx"
+      ],
+      "next": "Sesi B lanjutan: stills KejuPreview + poles, cover topik, retime STORYBOARD, SHOTLIST + lint, npm run sfx, THEME_CHECK, draft + juri buta. Detail di docs/HANDOFF.md. JANGAN render final.",
+      "snapshot": {
+        "episode": "EP68_BANK_KEJU_PARMIGIANO",
+        "topic": "Bank keju Credem: Parmigiano Reggiano jadi jaminan pinjaman — brankas ±500.000 roda senilai €325 juta",
+        "style": "FOODFORGE",
+        "memoryEpisode": "sejarah-negara-EP68",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T17:39:11.572Z",
+      "doing": "Tahap 0–6 selesai (VO terkunci); sesi B lanjutan dimulai dari sesi induk atas perintah pengguna 2026-11-25",
+      "files": [
+        "docs/HANDOFF.md"
+      ],
+      "next": "Sesi B lanjutan: stills KejuPreview + poles, cover topik, retime STORYBOARD, SHOTLIST + lint, npm run sfx, THEME_CHECK, draft + juri buta. Detail di docs/HANDOFF.md. JANGAN render final.",
+      "snapshot": {
+        "episode": "EP68_BANK_KEJU_PARMIGIANO",
+        "topic": "Bank keju Credem: Parmigiano Reggiano jadi jaminan pinjaman — brankas ±500.000 roda senilai €325 juta",
+        "style": "FOODFORGE",
+        "memoryEpisode": "sejarah-negara-EP68",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T17:49:39.188Z",
+      "doing": "Sesi B s5: stills + poles E/F selesai, cover topik, STORYBOARD retime, SHOTLIST lint ok, sfx.wav -26 LUFS; sedang npm run draft r1",
+      "command": "npm run draft -- KejuPreview --frames=2s,9.5s,17s,24s,38s,47s,55s,61s,66s,70.5s",
+      "files": [
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/KejuFilm.tsx",
+        "project/src/episode/timeline.ts",
+        "docs/SHOTLIST.md",
+        "docs/STORYBOARD.md",
+        "style/cover-topic.png"
+      ],
+      "next": "THEME_CHECK, record_score self + juri buta r1; maks 2 putaran; lalu handover Sesi C",
+      "snapshot": {
+        "episode": "EP68_BANK_KEJU_PARMIGIANO",
+        "topic": "Bank keju Credem: Parmigiano Reggiano jadi jaminan pinjaman — brankas ±500.000 roda senilai €325 juta",
+        "style": "FOODFORGE",
+        "memoryEpisode": "sejarah-negara-EP68",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T17:52:24.512Z",
+      "doing": "Sesi B s5 selesai sampai draf r1: draft/DRAFT_SHEET.jpg + look.json (semua ceiling 5, reasons kosong), THEME_CHECK.md 10 frame ya. Klip kamera draft GAGAL (Remotion waitForReady timeout) → camera.json belum ada.",
+      "command": "npm run draft -- KejuPreview --frames=2s,9.5s,17s,24s,38s,47s,55s,61s,66s,70.5s",
+      "files": [
+        "docs/HANDOFF.md",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/look.json",
+        "draft/THEME_CHECK.md",
+        "style/cover-reference.png"
+      ],
+      "next": "Sesi B lanjutan: ulang klip kamera saja (npm run audit:camera atau npm run draft -- KejuPreview --frames=2s,9.5s,17s,24s,38s,47s,55s,61s,66s,70.5s --clip=56-74; bila timeout lagi coba --clip=58-74 atau naikkan timeout), record_score self lalu juri buta (qa/jury.md) → record_score jury. Maks 2 putaran. Lalu handover newSession ke Sesi C.",
+      "snapshot": {
+        "episode": "EP68_BANK_KEJU_PARMIGIANO",
+        "topic": "Bank keju Credem: Parmigiano Reggiano jadi jaminan pinjaman — brankas ±500.000 roda senilai €325 juta",
+        "style": "FOODFORGE",
+        "memoryEpisode": "sejarah-negara-EP68",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:19:36.604Z",
+      "doing": "Sesi B s6: draf r2 setelah poles juri r1 (juri 3.67 PERLU POLES: F4 kamera ke timbangan + roda, LOOK C hangat, timbangan kayu; F7 kamera E ke terowongan + fill light; frame 24.6/47.5/55.8). Klip kamera r1 56-74 = 5/5 (camera.json).",
+      "command": "npm run draft -- KejuPreview --frames=2s,9.5s,17s,24.6s,38s,47.5s,55.8s,61s,66s,70.5s --clip=56-74",
+      "files": [
+        "project/src/episode/timeline.ts",
+        "project/src/episode/KejuFilm.tsx",
+        "project/src/episode/scenes.tsx",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "record_score self r2 → juri buta r2 → record_score jury; lalu handover newSession ke Sesi C",
+      "snapshot": {
+        "episode": "EP68_BANK_KEJU_PARMIGIANO",
+        "topic": "Bank keju Credem: Parmigiano Reggiano jadi jaminan pinjaman — brankas ±500.000 roda senilai €325 juta",
+        "style": "FOODFORGE",
+        "memoryEpisode": "sejarah-negara-EP68",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T18:32:57.989Z",
+      "doing": "Sesi B s6: draf r2 selesai (DRAFT_SHEET frames 2,9.5,17,24.6,38,47.5,55.8,61,66,70.5; ceilings semua 5; camera.json klip 56-74 = 5/5). Self r2 = 4.17. Juri buta r2 sedang jalan (r1 juri 3.67 PERLU POLES: readability 2, composition 3).",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/look.json",
+        "draft/camera.json",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "record_score jury r2. LOLOS (>=3.8, tak ada <3) → handover newSession → Sesi C. Bila gagal: ini putaran ke-2 → terbaik >=3.5 lanjut ke Sesi C (catat NOTES.md + append_lesson failed).",
+      "snapshot": {
+        "episode": "EP68_BANK_KEJU_PARMIGIANO",
+        "topic": "Bank keju Credem: Parmigiano Reggiano jadi jaminan pinjaman — brankas ±500.000 roda senilai €325 juta",
+        "style": "FOODFORGE",
+        "memoryEpisode": "sejarah-negara-EP68",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T18:33:35.340Z",
+      "doing": "Sesi B selesai: draf r2 juri buta LOLOS 4.0 (L4 M4 D4 C3 Mo5 R4; r1 3.67). Style FOODFORGE, Remotion + R3F. VO 73.51 dtk, film 75.5 dtk (outro 73.5-75.5). Sheet draft/DRAFT_SHEET.jpg (frames 2,9.5,17,24.6,38,47.5,55.8,61,66,70.5), camera 5/5 (klip 56-74), ceilings semua 5, THEME_CHECK 10/10 ya. SFX public/audio/sfx.wav -26 LUFS (36 bunyi). Fix s6: GLB mobil polisi pakai assetType=\"vehicle\" (404 di flat folder). Catatan render: draft.mjs klip default timeout 30 dtk gagal; render manual pakai --timeout=240000 --concurrency=2.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/look.json",
+        "draft/camera.json",
+        "draft/THEME_CHECK.md",
+        "public/audio/sfx.wav",
+        "docs/SCRIPT.md",
+        "research/SOURCE_REGISTER.md"
+      ],
+      "next": "Sesi C tahap 9: cek audio G18c (VO ≥12 LU di atas SFX), tampilkan contact sheet + skor juri 4.0 + durasi 75.5 dtk + G18c, tunggu acc pengguna. Setelah acc: npm run render:final (KejuFinal 1080x1920@60, --sfx=public/audio/sfx.wav --vo=public/audio/vo.wav, --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc, tambahkan --timeout besar bila perlu), QA -14 LUFS TP<-1, metadata, record_score final; lalu tahap 10 delivery.",
+      "snapshot": {
+        "episode": "EP68_BANK_KEJU_PARMIGIANO",
+        "topic": "Bank keju Credem: Parmigiano Reggiano jadi jaminan pinjaman — brankas ±500.000 roda senilai €325 juta",
+        "style": "FOODFORGE",
+        "memoryEpisode": "sejarah-negara-EP68",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:05:25.386Z",
+      "doing": "Sesi C tahap 9: G18c LOLOS setelah SFX stem diturunkan -26 -> -28.5 LUFS (sfx/cues/auto.py, npm run sfx; gap 10.3 -> 12.8 LU; backup draft/_sfx_-26_backup.wav). Menunggu acc pengguna untuk render final.",
+      "files": [
+        "project/sfx/cues/auto.py",
+        "project/public/audio/sfx.wav",
+        "draft/DRAFT_SHEET.jpg"
+      ],
+      "next": "Setelah acc: update stage final approved true, lalu npm run render:final (KejuFinal, --sfx=public/audio/sfx.wav --vo=public/audio/vo.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --timeout=240000), QA, metadata, record_score final, tahap 10.",
+      "snapshot": {
+        "episode": "EP68_BANK_KEJU_PARMIGIANO",
+        "topic": "Bank keju Credem: Parmigiano Reggiano jadi jaminan pinjaman — brankas ±500.000 roda senilai €325 juta",
+        "style": "FOODFORGE",
+        "memoryEpisode": "sejarah-negara-EP68",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:32:56.491Z",
+      "doing": "Render final KejuFinal (acc diberikan 2026-11-25) ke project/out/FINAL_EP68_BANK_KEJU.mp4, log out/render-final.log",
+      "command": "node scripts/render-final.mjs --comp=KejuFinal --out=out/FINAL_EP68_BANK_KEJU.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Bank Italia Terima Keju sebagai Jaminan\" --slug=bank-keju-parmigiano --ep=EP68",
+      "next": "QA -14 LUFS/TP, ffprobe metadata, cek frame, salin final ke folder episode, record_score final (self+jury), tahap 10.",
+      "snapshot": {
+        "episode": "EP68_BANK_KEJU_PARMIGIANO",
+        "topic": "Bank keju Credem: Parmigiano Reggiano jadi jaminan pinjaman — brankas ±500.000 roda senilai €325 juta",
+        "style": "FOODFORGE",
+        "memoryEpisode": "sejarah-negara-EP68",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:32:56.491Z",
+      "doing": "Render final KejuFinal (acc diberikan 2026-11-25) ke project/out/FINAL_EP68_BANK_KEJU.mp4, log out/render-final.log",
+      "command": "node scripts/render-final.mjs --comp=KejuFinal --out=out/FINAL_EP68_BANK_KEJU.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Bank Italia Terima Keju sebagai Jaminan\" --slug=bank-keju-parmigiano --ep=EP68",
+      "next": "QA -14 LUFS/TP, ffprobe metadata, cek frame, salin final ke folder episode, record_score final (self+jury), tahap 10.",
+      "snapshot": {
+        "episode": "EP68_BANK_KEJU_PARMIGIANO",
+        "topic": "Bank keju Credem: Parmigiano Reggiano jadi jaminan pinjaman — brankas ±500.000 roda senilai €325 juta",
+        "style": "FOODFORGE",
+        "memoryEpisode": "sejarah-negara-EP68",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-25T00:10:58.003Z"
+    }
+  ],
+  "session": 7,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP68 Bank Keju · s2",
+      "at": "2026-11-24T15:12:48.135Z"
+    },
+    {
+      "no": 3,
+      "title": "EP68 Bank Keju · s3",
+      "at": "2026-11-24T15:52:13.733Z"
+    },
+    {
+      "no": 4,
+      "title": "EP68 Bank Keju · s4",
+      "at": "2026-11-24T16:01:56.741Z"
+    },
+    {
+      "no": 5,
+      "title": "EP68 Bank Keju · s5",
+      "at": "2026-11-24T17:39:11.572Z"
+    },
+    {
+      "no": 6,
+      "title": "EP68 Bank Keju · s6",
+      "at": "2026-11-24T17:52:24.512Z"
+    },
+    {
+      "no": 7,
+      "title": "EP68 Bank Keju · s7",
+      "at": "2026-11-24T18:33:35.340Z"
+    }
+  ]
+}

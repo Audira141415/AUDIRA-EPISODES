@@ -1,0 +1,534 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP17_UANG_BATU_PULAU_YAP",
+  "topic": "Uang batu raksasa Pulau Yap (Rai) — uang yang tak pernah dipindah, buku besar dari ingatan bersama",
+  "createdAt": "2026-11-22T17:57:38.649Z",
+  "updatedAt": "2026-11-23T12:17:01.092Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:59:07.333Z",
+          "text": "GLOBAL + channel memory dibaca (tulis \"Audira\" di VO, sign await, TP limiter, jobs≤4 saat paralel). Sibling batch EP01/EP03 Remotion 2D SVG + starter AUDIRA-SKILL-MOTION. Engine: Remotion 2D (skill audira-2d-motion)."
+        }
+      ],
+      "doneAt": "2026-11-22T17:59:07.333Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:00:01.727Z",
+          "text": "14 fakta di research/SOURCE_REGISTER.md (Wikipedia Rai stones, NPR Planet Money 2010, Friedman 1991). Blockchain = analogi, kata \"mirip\"."
+        }
+      ],
+      "doneAt": "2026-11-22T18:00:01.727Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T22:21:17.763Z",
+      "notes": [
+        {
+          "at": "2026-11-22T22:21:17.763Z",
+          "text": "Pengguna memilih PAPERWORLD (2026-11-23, jawaban \"PAPERWORLD (Recommended)\"). Alternatif: STORYBOOK, HISTORYMAP. Engine Remotion 2D SVG. Cover topik menyusul dari still hook."
+        }
+      ],
+      "startedAt": "2026-11-22T22:21:17.763Z",
+      "doneAt": "2026-11-22T22:21:17.088Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T22:25:08.470Z",
+          "text": "199 kata, VO 81,6 dtk (speed 1.05), film 85 dtk. docs/ART_DIRECTION, SCRIPT, STORYBOARD (14 baris), ASSET_MANIFEST."
+        }
+      ],
+      "doneAt": "2026-11-22T22:25:08.470Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:21:53.756Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:27:51.696Z",
+          "text": "VO Cartesia 81,59 dtk, 199 kata, vo.timing.json via npm run vo. Cut shotlist digeser ke jeda VO (lint 0 merah)."
+        }
+      ],
+      "doneAt": "2026-11-22T22:27:51.696Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:23:26.051Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-23T00:01:05.961Z",
+          "text": "Yap.tsx 14 adegan + YapPreview/YapFinal; still uji audit no cap <4; style/cover-topic.png (4.4 dtk). SFX belum."
+        },
+        {
+          "at": "2026-11-23T00:01:14.821Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-23T00:01:36.754Z",
+          "text": "SFX: public/audio/sfx.wav 85 dtk, 32 bunyi, -26.0 LUFS, TP -4.9 (script default; render-final men-duck). Cover topik ditampilkan ke pengguna."
+        }
+      ],
+      "doneAt": "2026-11-23T00:01:36.754Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T00:19:53.712Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-23T00:17:19.330Z",
+      "startedAt": "2026-11-23T00:17:19.330Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:10:25.872Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-23T12:15:53.492Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60, 85,0 dtk, 5100 frame. −13,9 LUFS, TP −1,9 dBFS. Metadata ffprobe OK (comment AUDIRA-uang-batu-yap-EP17 | audira.my.id). Signature VALID key 498c3302271aadce. qa_video hardOnly PASS (allow 33.0/33.18 = kilat petir S8 disengaja). G13 lolos (clip2 parked 0%, median 0.049). record_score final self 3.83. Diterima juri 3.67 setelah 2 putaran."
+        }
+      ],
+      "doneAt": "2026-11-23T12:15:53.492Z",
+      "startedAt": "2026-11-23T10:56:08.149Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:10:25.872Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T12:16:57.017Z",
+          "text": "SOCIAL_CAPTIONS.md 6 platform + Jadwal WIB (Rabu 25 Nov 2026 19.00–20.40) + Label AI, validator OK (Yap, rai, batu). SUBTITLES.srt 28 cue. NOTES.md ditulis. Lesson: PAPERWORLD fix (kamera orbit elips), GLOBAL failed (tool: channel gate, metadata/sign manual, sign await). Scheduled task: review-uang-batu-yap-24h (26 Nov 19.00), -72h (28 Nov 19.00), -7d (2 Des 19.00)."
+        }
+      ],
+      "doneAt": "2026-11-23T12:16:57.017Z",
+      "startedAt": "2026-11-23T10:50:35.565Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP17",
+    "engine": "remotion",
+    "account": "FAKTADUNIA",
+    "style": "PAPERWORLD",
+    "wordCount": 199,
+    "estimatedDuration": {
+      "wordCount": 199,
+      "minSec": 80,
+      "maxSec": 88
+    },
+    "shortTitle": "Uang Batu Yap",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-23T12:10:25.872Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T22:27:50.019Z",
+      "doing": "Menulis kode adegan 2D PAPERWORLD: kit.tsx selesai, Yap.tsx (14 adegan) belum",
+      "files": [
+        "project/src/ep17/kit.tsx",
+        "project/src/ep17/words.json",
+        "docs/SHOTLIST.md",
+        "docs/HANDOFF.md"
+      ],
+      "next": "Lihat docs/HANDOFF.md langkah 1–7: Yap.tsx + Root.tsx, cover topik, sfx, contact sheet + juri, render final, caption.",
+      "snapshot": {
+        "episode": "EP17_UANG_BATU_PULAU_YAP",
+        "topic": "Uang batu raksasa Pulau Yap (Rai) — uang yang tak pernah dipindah, buku besar dari ingatan bersama",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP17",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:01:04.370Z",
+      "doing": "Yap.tsx + Root selesai, still uji lolos audit (no cap <4), cover-topic.png dibuat. Sesi baru karena batas konteks.",
+      "command": "cd project && npm run sfx -- --shotlist=../docs/SHOTLIST.md",
+      "files": [
+        "project/src/ep17/Yap.tsx",
+        "project/src/Root.tsx",
+        "style/cover-topic.png",
+        "docs/HANDOFF.md",
+        "project/sheet.mjs"
+      ],
+      "next": "npm run sfx -- --shotlist=../docs/SHOTLIST.md; contact sheet 8 frame + juri; render final; delivery (lihat docs/HANDOFF.md bagian Update 2026-11-23 sesi lanjutan #2)",
+      "snapshot": {
+        "episode": "EP17_UANG_BATU_PULAU_YAP",
+        "topic": "Uang batu raksasa Pulau Yap (Rai) — uang yang tak pernah dipindah, buku besar dari ingatan bersama",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP17",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:01:39.827Z",
+      "doing": "Tahap 7 selesai (Yap.tsx, cover, SFX). Pindah ke sesi baru karena konteks.",
+      "command": "cd project && node scripts/stills.mjs out/draft 4.4s,8.4s,17.9s,24.8s,43.5s,60.3s,74.4s,79.9s YapPreview",
+      "files": [
+        "project/src/ep17/Yap.tsx",
+        "project/public/audio/sfx.wav",
+        "docs/HANDOFF.md"
+      ],
+      "next": "Tahap 8 draf: node scripts/stills.mjs out/draft 4.4s,8.4s,17.9s,24.8s,43.5s,60.3s,74.4s,79.9s YapPreview → draft/contact-sheet.jpg, THEME_CHECK.md, juri; lalu final + delivery.",
+      "snapshot": {
+        "episode": "EP17_UANG_BATU_PULAU_YAP",
+        "topic": "Uang batu raksasa Pulau Yap (Rai) — uang yang tak pernah dipindah, buku besar dari ingatan bersama",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP17",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:18:42.755Z",
+      "doing": "Tahap 8: material dipoles (mottle 0.26 + 1100 fibres + grain 0.2) → audit no cap <4; draft/contact-sheet.jpg + look.json tersalin. Terhenti: C: 0 MB free.",
+      "files": [
+        "project/src/ep17/Yap.tsx",
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "Tulis draft/THEME_CHECK.md, record_score self + juri buta, lalu render final (set TEMP/TMP ke F: untuk render).",
+      "snapshot": {
+        "episode": "EP17_UANG_BATU_PULAU_YAP",
+        "topic": "Uang batu raksasa Pulau Yap (Rai) — uang yang tak pernah dipindah, buku besar dari ingatan bersama",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP17",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T09:59:54.866Z",
+      "doing": "Pindah ke sesi baru (orkestrasi ulang 17 episode, 2026-11-23). Tahap 8: material dipoles, draft/contact-sheet.jpg + look.json ada. Sesi lama terhenti karena C: penuh.",
+      "files": [
+        "project/src/ep17/Yap.tsx",
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "Tulis draft/THEME_CHECK.md, record_score self + juri buta, lalu render final (set TEMP/TMP ke F: untuk render), QA, metadata, record_score final, tahap 10.",
+      "snapshot": {
+        "episode": "EP17_UANG_BATU_PULAU_YAP",
+        "topic": "Uang batu raksasa Pulau Yap (Rai) — uang yang tak pernah dipindah, buku besar dari ingatan bersama",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP17",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:00:47.482Z",
+      "doing": "Pindah ke sesi baru (orkestrasi ulang 17 episode, 2026-11-23). Tahap 8: material dipoles, draft/contact-sheet.jpg + look.json ada. Sesi lama terhenti karena C: penuh.",
+      "files": [
+        "project/src/ep17/Yap.tsx",
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "Tulis draft/THEME_CHECK.md, record_score self + juri buta, lalu render final (set TEMP/TMP ke F: untuk render), QA, metadata, record_score final, tahap 10.",
+      "snapshot": {
+        "episode": "EP17_UANG_BATU_PULAU_YAP",
+        "topic": "Uang batu raksasa Pulau Yap (Rai) — uang yang tak pernah dipindah, buku besar dari ingatan bersama",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP17",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:11:21.580Z",
+      "doing": "Tahap 8 putaran 2: draf dipoles (key light, bayangan kontak, haze BG, FG blur bawah, S10 papan AUDIRA dipindah, S11 slip BAYAR A→B, S13 ledger masuk frame). Juri putaran 1 = 3.17. Juri buta putaran 2 berjalan.",
+      "files": [
+        "project/src/ep17/Yap.tsx",
+        "project/src/ep17/kit.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Bila juri2 ≥3.8 (atau terbaik ≥3.5 setelah 2 putaran) → render final: cd project; TEMP/TMP=F:/temp; npm run render:final -- --comp=YapFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --log=error. <3.5 → kembali ke gerbang style.",
+      "snapshot": {
+        "episode": "EP17_UANG_BATU_PULAU_YAP",
+        "topic": "Uang batu raksasa Pulau Yap (Rai) — uang yang tak pernah dipindah, buku besar dari ingatan bersama",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP17",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:12:06.601Z",
+      "doing": "Render final YapFinal → FINAL_VIDEO.mp4 (background, log F:/temp/ep17-final.log). Draf diterima juri 3.67 setelah 2 putaran (aturan ≥3.5).",
+      "command": "cd project; TEMP=TMP=F:/temp; npm run render:final -- --comp=YapFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --log=error",
+      "files": [
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "QA −14 LUFS/TP<−1, metadata ffmpeg, sign+verify, qa_video hardOnly, record_score final, tahap 10 (SOCIAL_CAPTIONS, NOTES: 'diterima 3.67 setelah 2 putaran', 3 scheduled task).",
+      "snapshot": {
+        "episode": "EP17_UANG_BATU_PULAU_YAP",
+        "topic": "Uang batu raksasa Pulau Yap (Rai) — uang yang tak pernah dipindah, buku besar dari ingatan bersama",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP17",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:12:51.528Z",
+      "doing": "Render final YapFinal → FINAL_VIDEO.mp4 (background, log F:/temp/ep17-final.log). Percobaan 1 gagal G18c (gap 10.9 LU); stem SFX diturunkan −3 dB ke −29 LUFS (backup public/audio/sfx.orig-26lufs.wav), render diulang. Draf diterima juri 3.67 setelah 2 putaran (r1 3.17). Lesson failed+fix PAPERWORLD sudah dicatat.",
+      "command": "cd project; TEMP=TMP=F:/temp; npm run render:final -- --comp=YapFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --log=error",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "project/public/audio/sfx.wav",
+        "project/src/ep17/Yap.tsx",
+        "project/src/ep17/kit.tsx"
+      ],
+      "next": "Cek log + FINAL_VIDEO.mp4; ukur −14 LUFS/TP<−1 (ebur128); metadata ffmpeg (title 'Uang Batu Raksasa Pulau Yap', artist 'AUDIRA (Agus Dwi R.)', comment 'AUDIRA-uang-batu-yap-EP17 | audira.my.id'); npm run sign + audira_verify_signature; audira_qa_video hardOnly; record_score final (jury); tahap 10: SOCIAL_CAPTIONS.md (6 platform, Jadwal Upload WIB, Label Konten AI, keywords Yap/rai/batu), validator, NOTES.md ('diterima 3.67 setelah 2 putaran', G18c fix SFX −29), 3 scheduled task review-uang-batu-yap-24h/-72h/-7d, update STATUS final+delivery done.",
+      "snapshot": {
+        "episode": "EP17_UANG_BATU_PULAU_YAP",
+        "topic": "Uang batu raksasa Pulau Yap (Rai) — uang yang tak pernah dipindah, buku besar dari ingatan bersama",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP17",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:13:40.171Z",
+      "doing": "Final belum ada. render:final berhenti di G13 camera gate: draft/camera.json (klip lama out/draft/clip.mp4) deadPct 13% > 5%, medianSpeed 0.022 < 0.04. G18c sudah lolos (SFX stem −29 LUFS, gap 13.9 LU). Memory gate di-override dengan --skip-memory-gate (juri 3.67 setelah 2 putaran, aturan ≥3.5).",
+      "command": "cd project; TEMP=TMP=F:/temp; npm run render:final -- --comp=YapFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --log=error \"--skip-memory-gate=aturan pengguna 2026-11-23: 2 putaran juri, terbaik 3.67 >= 3.5, final langsung\"",
+      "files": [
+        "project/src/ep17/Yap.tsx",
+        "draft/camera.json",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "1) Perkuat drift kamera di director Yap.tsx (dz/dx/dy per adegan, baris 'drift kontinu tambahan') supaya medianSpeed ≥0.04 dan deadPct ≤5% tanpa mengubah komposisi. 2) Render klip 15 dtk 540×960 YapPreview bagian paling diam, npm run audit:camera -- <clip> --json=../draft/camera.json. 3) Render final (perintah di atas). 4) QA −14 LUFS/TP<−1, metadata ffmpeg, sign + audira_verify_signature, audira_qa_video hardOnly, record_score final. 5) Tahap 10 lengkap.",
+      "snapshot": {
+        "episode": "EP17_UANG_BATU_PULAU_YAP",
+        "topic": "Uang batu raksasa Pulau Yap (Rai) — uang yang tak pernah dipindah, buku besar dari ingatan bersama",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP17",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:49:30.828Z",
+      "doing": "Render final YapFinal berjalan (background). G13 lolos: drift orbit elips dz 1.05+0.012lt, dx sin*24, dy cos*28; klip out/draft/clip2.mp4 (50–65 dtk) parked 0%, median 0.049 → draft/camera.json.",
+      "command": "cd project; TEMP=TMP=F:/temp; npm run render:final -- --comp=YapFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --log=error \"--skip-memory-gate=aturan pengguna 2026-11-23: 2 putaran juri, terbaik 3.67 >= 3.5, final langsung\"",
+      "files": [
+        "project/src/ep17/Yap.tsx",
+        "draft/camera.json",
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "QA −14 LUFS/TP<−1, metadata ffmpeg, npm run sign + audira_verify_signature, audira_qa_video hardOnly, record_score final; lalu tahap 10.",
+      "snapshot": {
+        "episode": "EP17_UANG_BATU_PULAU_YAP",
+        "topic": "Uang batu raksasa Pulau Yap (Rai) — uang yang tak pernah dipindah, buku besar dari ingatan bersama",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP17",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:49:30.828Z",
+      "doing": "Render final YapFinal berjalan (background). G13 lolos: drift orbit elips dz 1.05+0.012lt, dx sin*24, dy cos*28; klip out/draft/clip2.mp4 (50–65 dtk) parked 0%, median 0.049 → draft/camera.json.",
+      "command": "cd project; TEMP=TMP=F:/temp; npm run render:final -- --comp=YapFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --log=error \"--skip-memory-gate=aturan pengguna 2026-11-23: 2 putaran juri, terbaik 3.67 >= 3.5, final langsung\"",
+      "files": [
+        "project/src/ep17/Yap.tsx",
+        "draft/camera.json",
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "QA −14 LUFS/TP<−1, metadata ffmpeg, npm run sign + audira_verify_signature, audira_qa_video hardOnly, record_score final; lalu tahap 10.",
+      "snapshot": {
+        "episode": "EP17_UANG_BATU_PULAU_YAP",
+        "topic": "Uang batu raksasa Pulau Yap (Rai) — uang yang tak pernah dipindah, buku besar dari ingatan bersama",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP17",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T12:17:01.092Z"
+    }
+  ],
+  "session": 4,
+  "sessionLog": [
+    {
+      "no": 4,
+      "title": "EP17 Uang Batu Yap · s4",
+      "at": "2026-11-23T10:00:47.479Z"
+    }
+  ]
+}

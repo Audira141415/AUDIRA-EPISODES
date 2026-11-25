@@ -1,0 +1,145 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#2A2826}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.07;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.32) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.5) 42%,rgba(0,0,0,0.5) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#F3EBDD;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.p{transform:rotate(-1.2deg)}
+.tag{display:table;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:26px;letter-spacing:.12em;color:#F3EBDD;background:#2F3034;padding:9px 18px 8px;margin-bottom:12px;border-left:8px solid #F2B31B}
+.card{display:table;position:relative;background:#FBF7EF;padding:6px 30px 12px;margin-bottom:14px;box-shadow:0 14px 34px rgba(30,25,20,.35);border:2px solid #2F3034}
+.card:before{content:"";position:absolute;left:38%;top:-16px;width:120px;height:30px;background:rgba(242,179,27,.72);transform:rotate(-3deg)}
+.big{font-family:Caveat,cursive;font-weight:700;font-size:150px;line-height:1;color:#2F3034;letter-spacing:.01em}
+.big.md{font-size:92px;line-height:1.02}.big.sm{font-size:80px;line-height:1.02}
+.sub{font-family:Kalam,cursive;font-weight:700;font-size:44px;color:#2F3034;margin-top:-4px}
+.hl{background:linear-gradient(transparent 55%,rgba(242,179,27,.85) 55%);padding:0 6px}
+.ln{display:table;font-family:Kalam,cursive;font-weight:700;font-size:42px;line-height:1.2;color:#1d1e21;background:rgba(251,247,239,.97);padding:8px 20px 8px 18px;margin-bottom:9px;border-left:6px solid #2F3034;max-width:880px;box-shadow:0 6px 16px rgba(30,25,20,.22)}
+.ln.y{border-left-color:#F2B31B;background:linear-gradient(90deg,rgba(242,179,27,.42),rgba(251,247,239,.93) 60%)}
+.ln b{font-family:'JetBrains Mono',monospace;font-size:42px}
+.stp{display:table;margin-top:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:46px;letter-spacing:.08em;color:#2F3034;border:6px solid #2F3034;padding:6px 20px;background:rgba(242,179,27,.92)}
+.row{display:flex;gap:16px}
+.hb{flex:1;background:#FBF7EF;border:3px solid #2F3034;padding:10px 18px 14px;box-shadow:0 10px 24px rgba(30,25,20,.3)}
+.hb b{display:block;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:96px;line-height:1;color:#9a9ba1}
+.hb.dk b{color:#1d1e21}
+.hb span{display:block;font-family:Kalam,cursive;font-weight:700;font-size:36px;line-height:1.2;color:#2F3034}
+#chip{background:rgba(47,48,52,.82);color:#F3EBDD;padding:5px 12px;opacity:.9}
+#capfloor{background:linear-gradient(180deg,rgba(243,235,221,0),rgba(243,235,221,.62) 40%,rgba(243,235,221,.62) 70%,rgba(243,235,221,0))}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="86.82" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN REKAMAN PABRIK ASLI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tag">CARA PEMBUATAN · EP 01</div>
+  <div class="card"><div class="big">PENSIL</div><div class="sub">isinya tidak pernah <span class="hl">timbal</span></div></div>
+  <div class="ln" data-at="s1:Sama" data-fx="lit">Sama sekali.</div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="tag">ABAD KE-16 · INGGRIS</div>
+  <div class="card"><div class="big md">Grafit dikira timbal</div></div>
+  <div class="ln" data-at="s2:keliru" data-fx="lit">Namanya keliru sampai sekarang</div>
+  <div class="ln y" data-at="s2:cat" data-fx="lit">Yang dulu bisa mengandung timbal: catnya</div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tag">LANGKAH 1 · ISI PENSIL</div>
+  <div class="card"><div class="big sm">Grafit + tanah liat + air</div></div>
+  <div class="ln" data-at="s3:didorong" data-fx="lit">Dipres lewat lubang kecil</div>
+  <div class="ln" data-at="s3:spageti" data-fx="lit">Jadi batang seperti spageti</div>
+  <div class="ln" data-at="s3:dipotong" data-fx="lit">Dipotong, lalu dikeringkan</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="tag">LANGKAH 2 · BAKAR</div>
+  <div class="card"><div class="big md">Dibakar seperti keramik</div></div>
+  <div class="ln y" data-at="s4:derajat" data-fx="lit">Sekitar 1.000 derajat</div>
+  <div class="ln" data-at="s4:oksigen" data-fx="lit">Tanpa oksigen</div>
+  <div class="ln" data-at="s4:direndam" data-fx="lit">Direndam lilin panas</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="tag">LANGKAH 3 · KAYU</div>
+  <div class="card"><div class="big md">Roti lapis kayu</div></div>
+  <div class="ln" data-at="s5:diletakkan" data-fx="lit">Papan cedar beralur: lem + isi</div>
+  <div class="ln" data-at="s5:ditutup" data-fx="lit">Ditutup papan kedua, dipres</div>
+  <div class="ln y" data-at="s5:pisau" data-fx="lit">Dipotong jadi beberapa pensil</div>
+  <div class="stp" data-at="s5:dibor" data-fx="stamp">TIDAK DIBOR</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="tag">KERAS ATAU LUNAK?</div>
+  <div class="card"><div class="big md">Kuncinya rasio</div></div>
+  <div class="row">
+    <div class="hb" data-at="s6:H" data-fx="lit"><b>H</b><span>lebih banyak tanah liat</span><span>keras, terang</span></div>
+    <div class="hb dk" data-at="s6:B" data-fx="lit"><b>B</b><span>lebih banyak grafit</span><span>lunak, hitam</span></div>
+  </div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tag">LANGKAH 4 · CAT</div>
+  <div class="card"><div class="big md">Diampelas, dicat berlapis</div></div>
+  <div class="ln y" data-at="s7:dicat" data-fx="lit">Sampai <b class="ct nb" data-from="0" data-to="8" data-a="s7:dicat" data-d="1.4">0</b> lapis, bahkan lebih</div>
+  <div class="ln" data-at="s7:cincin" data-fx="lit">Cincin logam + karet penghapus</div>
+  <div class="ln" data-at="s7:miliar" data-fx="lit">Lebih dari 2 miliar pensil/tahun</div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="tag">JADI...</div>
+  <div class="card"><div class="big md">Keramik di dalam kayu</div></div>
+  <div class="ln y" data-at="s8:Ikuti" data-fx="lit">Ikuti AUDIRA untuk cara pembuatan berikutnya</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">AUDIRA Explained &middot; @AudiraExplained</div><div class="sr">CARA PEMBUATAN &middot; EP 01</div></div>
+<div id="sig">AUDIRA &middot; @AudiraExplained</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":3.087,"s2":3.247,"s2e":13.558,"s3":13.718,"s3e":24.134,"s4":24.294,"s4e":34.901,"s5":35.061,"s5e":50.766,"s6":50.926,"s6e":63.69,"s7":63.85,"s7e":76.91,"s8":77.07,"s8e":83.821,"end":83.821,"dur":86.82,"outro":84.071},AT={"s1:mengandung":1.196,"s1:timbal":1.583,"s2:abad":3.852,"s2:Inggris":5.477,"s2:menemukan":5.833,"s2:grafit":6.406,"s2:orang":5.168,"s2:cat":11.344,"s2:dulu":12.149,"s3:grafit":14.893,"s3:tanah":15.497,"s3:air":16.333,"s3:campuran":14.134,"s3:Adonan":16.72,"s3:dipres":17.261,"s3:lalu":17.679,"s3:didorong":18.004,"s3:dikeringkan":23.438,"s4:dibakar":25.839,"s4:keramik":27.79,"s4:suhu":28.889,"s4:tanpa":30.267,"s4:oksigen":30.607,"s4:Lalu":31.449,"s4:isinya":31.774,"s5:Papan":36.374,"s5:cedar":37.365,"s5:kayunya":35.46,"s5:lalu":42.032,"s5:ditutup":42.296,"s5:Pensil":49.527,"s5:tidak":50.038,"s5:pernah":50.27,"s5:dibor":50.487,"s6:tanah":55.183,"s6:keras":51.916,"s6:grafit":60.539,"s6:lunak":52.365,"s6:H":59.471,"s6:B":63.659,"s6:goresannya":56.932,"s6:terang":57.644,"s6:hitam":62.227,"s7:pensil":65.186,"s7:miliar":74.855,"s2:keliru":9.562,"s3:dipotong":21.967,"s4:derajat":29.862,"s5:Lem":39.222,"s5:pisau":46.809,"s5:sekaligus":48.729,"s6:kode":59.176,"s6:kode#2":63.411,"s7:cincin":70.264,"s7:pabrik":72.56,"s7:tahun":76.523,"s1:Sama":2.406,"s1:sekali":2.669,"s2:mengira":7.118,"s3:lewat":18.453,"s3:kecil":19.026,"s3:spageti":21.007,"s3:sepanjang":22.354,"s3:pensil":22.757,"s4:direndam":32.316,"s4:lilin":32.765,"s4:goresannya":33.91,"s4:halus":34.437,"s5:diberi":37.659,"s5:sejajar":38.262,"s5:dioles":39.423,"s5:memotongnya":47.165,"s5:beberapa":47.955,"s5:isi":40.244,"s5:kedua":42.992,"s5:dipres":45.294,"s5:kering":46.192,"s5:Setelah":44.969,"s5:jadi":47.707,"s6:Itu":58.31,"s6:Itu#2":63.21,"s7:diampelas":65.558,"s7:dicat":66.115,"s7:lebih":68.545,"s7:logam":70.558,"s7:karet":71.068,"s7:penghapus":71.316,"s5:diletakkan":40.476,"s8:Ikuti":81.143},DUR=86.82,OUT=84.071;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ lit:(e,t)=>tl.fromTo(e,{opacity:.64},{opacity:1,duration:.3,ease:'power2.out'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{opacity:0,x:-30,clipPath:'inset(0% 100% 0% 0%)'},{opacity:1,x:0,clipPath:'inset(0% 0% 0% 0%)',duration:.5,ease:'power3.out'},a-.12);},POUT=(tl,p,b)=>{tl.to(p,{opacity:0,x:40,clipPath:'inset(0% 0% 0% 100%)',duration:.32,ease:'power2.in'},b-.32);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP01_PENSIL")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;const w=e.offsetWidth||520,hh=e.offsetHeight||34;const x=Math.max(40,Math.min(ord[k][0],1080-40-w));const y=Math.max(190,Math.min(ord[k][1],1540-hh));e.style.transform='translate('+x+'px,'+y+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

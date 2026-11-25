@@ -1,0 +1,441 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP21_BUG_Y2K_TAHUN_2000",
+  "topic": "Bug Y2K — kenapa dunia panik komputer kiamat di tahun 2000 (channel AUDIRA TECH)",
+  "createdAt": "2026-11-22T18:00:53.799Z",
+  "updatedAt": "2026-11-23T09:27:52.997Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:01:58.231Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-22T18:00:53.799Z",
+      "startedAt": "2026-11-22T18:00:53.799Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:05:31.781Z",
+          "text": "17 fakta, sumber BBC/Computerworld/WaPo/Wikipedia. Biaya global >US$300 mlr (IDC 308), 2038: 19 Jan 2038 03:14:07 UTC -> 1901. Engine: audira-2d-motion (Remotion 2D, mograph look), project dari starter AUDIRA-SKILL-MOTION (script sfx/render:final)."
+        }
+      ],
+      "doneAt": "2026-11-22T18:05:31.781Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T22:20:04.247Z",
+      "notes": [
+        {
+          "at": "2026-11-22T18:05:33.633Z",
+          "text": "Ditawarkan (2D mograph): TERMINAL (utama), KLIPING, PIKSEL. Sheet style/_style_options.jpg (ARSIP ikut sebagai cadangan). Menunggu pilihan pengguna."
+        },
+        {
+          "at": "2026-11-22T22:20:04.247Z",
+          "text": "Pengguna memilih \"TERMINAL (Recommended)\" 2026-11-23. Engine Remotion 2D (mograph TERMINAL dari audira-2d-motion)."
+        }
+      ],
+      "startedAt": "2026-11-22T18:05:33.633Z",
+      "doneAt": "2026-11-22T23:56:34.901Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T23:57:03.916Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T23:56:53.589Z",
+      "startedAt": "2026-11-22T23:56:53.589Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:01:58.231Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.000Z",
+      "startedAt": "2026-11-22T06:09:42.000Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:21:14.052Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-22T22:21:10.909Z",
+      "startedAt": "2026-11-22T22:21:10.909Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:01:58.231Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.000Z",
+      "startedAt": "2026-11-22T16:52:30.000Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T00:28:56.547Z",
+          "text": "sync: look.json FAIL (perlu perbaikan sebelum final)"
+        }
+      ],
+      "doneAt": "2026-11-23T00:24:08.192Z",
+      "startedAt": "2026-11-23T00:24:08.192Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T08:18:42.266Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-23T09:27:47.351Z",
+          "text": "Final v2 (judul S4 36px): 87,6 dtk 1080x1920@60, -13,7 LUFS, TP -1,8 dBFS, metadata OK, Ed25519+C2PA VALID. Skor final self 3,83 / juri 3,50 (komposisi/depth). Final lama dihapus."
+        }
+      ],
+      "doneAt": "2026-11-23T09:27:47.351Z",
+      "startedAt": "2026-11-23T07:30:04.133Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T07:15:19.915Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T09:27:49.234Z",
+          "text": "Caption validator OK, NOTES.md, lesson TERMINAL+GLOBAL, scheduled task review-ep21-bug-y2k-24h/-72h/-7d (28 Nov, 30 Nov, 4 Des 2026 19.00 WIB). Perantara dihapus."
+        }
+      ],
+      "doneAt": "2026-11-23T09:27:49.234Z",
+      "startedAt": "2026-11-23T01:47:37.511Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "in_progress",
+      "notes": [
+        {
+          "at": "2026-11-23T09:27:51.109Z",
+          "text": "Menunggu upload Jumat 27 Nov 2026 19.00 WIB; review dipicu scheduled task."
+        }
+      ],
+      "startedAt": "2026-11-23T09:27:51.109Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP21",
+    "engine": "remotion",
+    "channel": "TECH",
+    "handle": "@AudiraTECH",
+    "style": "TERMINAL",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-23T08:18:42.266Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T22:20:56.028Z",
+      "doing": "Tahap 6 VO Cartesia dari audio/vo-timed.txt (233 kata, angka dieja)",
+      "command": "audira_generate_voiceover scriptPath=audio/vo-timed.txt outputPath=audio/vo.wav wordsPath=audio/vo-words.json speed=1.05",
+      "files": [
+        "audio/vo-timed.txt"
+      ],
+      "next": "Tighten pauses bila >90 dtk, salin ke project/public/audio/vo.wav, npm run vo; tulis docs (SCRIPT/STORYBOARD/ART_DIRECTION/ASSET_MANIFEST/SHOTLIST) dan film src/y2k/ pakai kit TERMINAL (disalin dari F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/styles/terminal).",
+      "snapshot": {
+        "episode": "EP21_BUG_Y2K_TAHUN_2000",
+        "topic": "Bug Y2K — kenapa dunia panik komputer kiamat di tahun 2000 (channel AUDIRA TECH)",
+        "style": "TERMINAL",
+        "memoryEpisode": "short-baru-11-23-EP21",
+        "currentStage": "style",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T22:20:56.028Z",
+      "doing": "Tahap 6 VO Cartesia dari audio/vo-timed.txt (233 kata, angka dieja)",
+      "command": "audira_generate_voiceover scriptPath=audio/vo-timed.txt outputPath=audio/vo.wav wordsPath=audio/vo-words.json speed=1.05",
+      "files": [
+        "audio/vo-timed.txt"
+      ],
+      "next": "Tighten pauses bila >90 dtk, salin ke project/public/audio/vo.wav, npm run vo; tulis docs (SCRIPT/STORYBOARD/ART_DIRECTION/ASSET_MANIFEST/SHOTLIST) dan film src/y2k/ pakai kit TERMINAL (disalin dari F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/styles/terminal).",
+      "snapshot": {
+        "episode": "EP21_BUG_Y2K_TAHUN_2000",
+        "topic": "Bug Y2K — kenapa dunia panik komputer kiamat di tahun 2000 (channel AUDIRA TECH)",
+        "style": "TERMINAL",
+        "memoryEpisode": "short-baru-11-23-EP21",
+        "currentStage": "style",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      },
+      "finishedAt": "2026-11-22T22:23:47.775Z"
+    },
+    {
+      "at": "2026-11-23T00:00:54.379Z",
+      "doing": "Film Y2K.tsx sudah ditulis (belum pernah dirender); docs rule 12 + STYLE_DECISION selesai",
+      "files": [
+        "project/src/y2k/Y2K.tsx",
+        "project/src/Root.tsx",
+        "docs/SHOTLIST.md",
+        "docs/HANDOFF.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Stills Y2KPreview → contact sheet → perbaiki layout → cover-topic.png → npm run sfx → draft + juri → final (lihat docs/HANDOFF.md bagian atas)",
+      "snapshot": {
+        "episode": "EP21_BUG_Y2K_TAHUN_2000",
+        "topic": "Bug Y2K — kenapa dunia panik komputer kiamat di tahun 2000 (channel AUDIRA TECH)",
+        "style": "TERMINAL",
+        "memoryEpisode": "short-baru-11-23-EP21",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP21_BUG_Y2K_TAHUN_2000/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:27:24.779Z",
+      "doing": "Draf r1 selesai (sheet, THEME_CHECK, self 4.17); juri buta belum dijalankan",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/jury_input.json",
+        "draft/THEME_CHECK.md",
+        "style/cover-topic.png",
+        "project/public/audio/sfx.wav",
+        "project/src/y2k/Y2K.tsx"
+      ],
+      "next": "Juri buta → record_score jury draft → render:final Y2KFinal → QA/metadata/signature → captions, NOTES, lesson, 3 scheduled task. Lihat docs/HANDOFF.md UPDATE sesi ke-3. C: penuh: set RENDER_TMPDIR ke F:\\AUDIRA-EPISODES\\_tmp\\ep21.",
+      "snapshot": {
+        "episode": "EP21_BUG_Y2K_TAHUN_2000",
+        "topic": "Bug Y2K — kenapa dunia panik komputer kiamat di tahun 2000 (channel AUDIRA TECH)",
+        "style": "TERMINAL",
+        "memoryEpisode": "short-baru-11-23-EP21",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP21_BUG_Y2K_TAHUN_2000/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T01:48:06.529Z",
+      "doing": "Draf lolos juri buta putaran 2 (3,83). Siap render final; captions ditulis belum divalidasi.",
+      "command": "npm run render:final -- --comp=Y2KFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Bug Y2K: Tahun 2000 Dibaca 1900\" --slug=bug-y2k --ep=EP21",
+      "files": [
+        "project/src/y2k/Y2K.tsx",
+        "draft/DRAFT_SHEET.jpg",
+        "SOCIAL_CAPTIONS.md",
+        "docs/HANDOFF.md"
+      ],
+      "next": "render:final Y2KFinal dengan --title/--slug/--ep, cek loudness, qa_video, skor final self+juri, validasi caption, NOTES, lessons, 3 scheduled task. Detail di docs/HANDOFF.md sesi lanjutan ke-4.",
+      "snapshot": {
+        "episode": "EP21_BUG_Y2K_TAHUN_2000",
+        "topic": "Bug Y2K — kenapa dunia panik komputer kiamat di tahun 2000 (channel AUDIRA TECH)",
+        "style": "TERMINAL",
+        "memoryEpisode": "short-baru-11-23-EP21",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP21_BUG_Y2K_TAHUN_2000/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T07:15:28.825Z",
+      "doing": "render final Y2KFinal ke FINAL_VIDEO.mp4",
+      "command": "npm run render:final -- --comp=Y2KFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Bug Y2K: Tahun 2000 Dibaca 1900\" --slug=bug-y2k --ep=EP21",
+      "files": [
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "ukur LUFS/TP, QA hardOnly, skor final, validasi caption, NOTES, lesson, 3 task",
+      "snapshot": {
+        "episode": "EP21_BUG_Y2K_TAHUN_2000",
+        "topic": "Bug Y2K — kenapa dunia panik komputer kiamat di tahun 2000 (channel AUDIRA TECH)",
+        "style": "TERMINAL",
+        "memoryEpisode": "short-baru-11-23-EP21",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP21_BUG_Y2K_TAHUN_2000/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T07:32:15.738Z",
+      "doing": "final ada tapi perlu render ulang: judul S4 dikecilkan (crop akibat sway kamera baru)",
+      "files": [
+        "project/src/y2k/Y2K.tsx",
+        "FINAL_VIDEO.mp4",
+        "SUBTITLES.srt",
+        "project/scripts/_finish-ep21.mjs"
+      ],
+      "next": "lihat docs/HANDOFF.md 'sesi lanjutan ke-5' langkah 1-7",
+      "snapshot": {
+        "episode": "EP21_BUG_Y2K_TAHUN_2000",
+        "topic": "Bug Y2K — kenapa dunia panik komputer kiamat di tahun 2000 (channel AUDIRA TECH)",
+        "style": "TERMINAL",
+        "memoryEpisode": "short-baru-11-23-EP21",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP21_BUG_Y2K_TAHUN_2000/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:10:32.648Z",
+      "doing": "render final ulang (judul S4 36px terverifikasi still 24.2s) ke FINAL_VIDEO_v2.mp4",
+      "command": "cd project; npm run render:final -- --comp=Y2KFinal --out=../FINAL_VIDEO_v2.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Bug Y2K: Tahun 2000 Dibaca 1900\" --slug=bug-y2k --ep=EP21",
+      "files": [
+        "FINAL_VIDEO_v2.mp4"
+      ],
+      "next": "QA LUFS/TP, ffprobe, verify_signature; ganti FINAL_VIDEO.mp4 lama; HANDOFF langkah 3-7",
+      "snapshot": {
+        "episode": "EP21_BUG_Y2K_TAHUN_2000",
+        "topic": "Bug Y2K — kenapa dunia panik komputer kiamat di tahun 2000 (channel AUDIRA TECH)",
+        "style": "TERMINAL",
+        "memoryEpisode": "short-baru-11-23-EP21",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP21_BUG_Y2K_TAHUN_2000/audio/vo.wav",
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:10:32.648Z",
+      "doing": "render final ulang (judul S4 36px terverifikasi still 24.2s) ke FINAL_VIDEO_v2.mp4",
+      "command": "cd project; npm run render:final -- --comp=Y2KFinal --out=../FINAL_VIDEO_v2.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Bug Y2K: Tahun 2000 Dibaca 1900\" --slug=bug-y2k --ep=EP21",
+      "files": [
+        "FINAL_VIDEO_v2.mp4"
+      ],
+      "next": "QA LUFS/TP, ffprobe, verify_signature; ganti FINAL_VIDEO.mp4 lama; HANDOFF langkah 3-7",
+      "snapshot": {
+        "episode": "EP21_BUG_Y2K_TAHUN_2000",
+        "topic": "Bug Y2K — kenapa dunia panik komputer kiamat di tahun 2000 (channel AUDIRA TECH)",
+        "style": "TERMINAL",
+        "memoryEpisode": "short-baru-11-23-EP21",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP21_BUG_Y2K_TAHUN_2000/audio/vo.wav",
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T09:27:52.997Z"
+    }
+  ]
+}

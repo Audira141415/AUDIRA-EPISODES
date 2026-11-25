@@ -1,0 +1,781 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+  "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+  "createdAt": "2026-11-23T14:14:17.850Z",
+  "updatedAt": "2026-11-24T15:49:23.308Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:38.409Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:14:17.850Z",
+      "startedAt": "2026-11-23T14:14:17.850Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:38.409Z",
+          "text": "sync: riset ada"
+        },
+        {
+          "at": "2026-11-23T14:28:50.967Z",
+          "text": "30 fakta, 6 HIGH. 17 shuttle hanya Kompas (MED); jam lokal Rio LOW — hindari jam pasti selain 23.57 WIB."
+        }
+      ],
+      "doneAt": "2026-11-23T14:28:50.967Z",
+      "startedAt": "2026-11-22T06:26:14.091Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:16:46.337Z",
+          "text": "Preflight lolos (no blockers). PIXELSTORY 2D pixel 2.5D dipilih AI (alasan + rencana set di style/STYLE_DECISION.md). Cover topik belum dirender. Naskah draf 211 kata di docs/script-lines.json (format {display|spoken} untuk vo_tighten.py)."
+        },
+        {
+          "at": "2026-11-23T15:17:20.859Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "startedAt": "2026-11-23T15:16:46.337Z",
+      "doneAt": "2026-11-23T15:16:35.139Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:29:25.448Z",
+          "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-24T14:43:00.203Z",
+          "text": "G21: ulang tahap 4 untuk HD2D (VO tetap)"
+        },
+        {
+          "at": "2026-11-24T14:44:09.850Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-24T09:39:06.318Z",
+      "startedAt": "2026-11-24T07:26:00.048Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:03:43.612Z",
+          "text": "s8: ep08hd dirender tanpa error; framing B/C/OUT diperbaiki; docs rule 12 HD2D ditulis ulang"
+        }
+      ],
+      "doneAt": "2026-11-24T15:03:43.612Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T18:20:31.853Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-23T18:20:26.626Z",
+      "startedAt": "2026-11-23T18:20:26.626Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:35:20.981Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-24T07:31:27.522Z",
+      "startedAt": "2026-11-24T07:31:27.522Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:35:20.981Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        }
+      ],
+      "doneAt": "2026-11-24T07:31:23.986Z",
+      "startedAt": "2026-11-24T07:31:23.986Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T15:42:45.334Z",
+      "notes": [
+        {
+          "at": "2026-11-24T15:42:45.334Z",
+          "text": "acc pengguna 2026-11-24: \"Gas, SUSY SUSANTI\" — render final disetujui, plakat penutup tetap SUSY SUSANTI (ikut VO). Juri draf putaran 2 = 4,17 LOLOS."
+        },
+        {
+          "at": "2026-11-24T15:49:19.266Z",
+          "text": "FINAL_EP08.mp4 1080x1920@60 81,6 dtk; -13,6 LUFS TP -1,9; metadata+Ed25519+C2PA VALID; qa-video PASS; juri buta final 3,67 (C3 R2 via G22 teaser outro), tidak dipoles (final sudah acc)."
+        }
+      ],
+      "startedAt": "2026-11-24T15:42:45.334Z",
+      "doneAt": "2026-11-24T15:49:19.266Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:45:35.078Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T15:44:27.262Z",
+      "startedAt": "2026-11-24T15:44:27.262Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "fakta-olahraga-EP08",
+    "shortTitle": "Owi Butet 17 Agustus",
+    "style": "HD2D",
+    "engine": "remotion",
+    "wordCount": 211,
+    "estimatedDuration": {
+      "wordCount": 211,
+      "minSec": 84,
+      "maxSec": 94
+    }
+  },
+  "syncedAt": "2026-11-24T15:45:35.078Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-23T15:16:54.074Z",
+      "doing": "Tahap 3 selesai sebagian: style PIXELSTORY dipilih, naskah draf 211 kata di docs/script-lines.json. Belum ada kode ep08, belum cover, belum VO.",
+      "files": [
+        "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/style/STYLE_DECISION.md",
+        "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/docs/script-lines.json"
+      ],
+      "next": "1) Salin studio/src/scenes/ep01 → ep08 (arena.ts, sprites.ts, sets.ts, hud.tsx, timing.ts, ArenaShot, Cover) dan adaptasi: 2 pemain Indonesia ganda campuran, set malam HUT RI. Daftarkan Ep08Cover/Ep08Preview/Ep08Final + SLUG Ep08 di studio/src/Root.tsx (file bersama 5 sesi: edit kecil saja). Render cover → style/cover-topic.png. 2) Tulis docs ART_DIRECTION, SCRIPT (dari script-lines.json), STORYBOARD (≥6 baris + kolom Audio), ASSET_MANIFEST. 3) VO: audira_generate_voiceover teks spoken (versi |spoken) → audio/work/vo-raw.wav + vo-raw-words.json, lalu python _tools/vo_tighten.py EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016 dan python _tools/make-timeline.py EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016 (dari folder seri). 4) Film multi-scene + HUD callout, npm run sfx, contact sheet + juri. Berhenti di gerbang render final.",
+      "snapshot": {
+        "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP08",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:20:47.718Z",
+      "doing": "VO terkunci (audio/vo.wav, timeline 81.6 dtk, speech 77.6). ep01 disalin ke studio/src/scenes/ep08 (timeline.json baru). Sedang adaptasi kode ep08.",
+      "files": [
+        "studio/src/scenes/ep08/"
+      ],
+      "next": "Adaptasi timing.ts/sets/hud/Film ep08 ke kata VO (indeks di studio/src/scenes/ep08/timeline.json), daftarkan Root.tsx, render cover, docs, sfx, contact sheet, juri.",
+      "snapshot": {
+        "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP08",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:23:00.976Z",
+      "doing": "VO terkunci + timing.ts/sets.ts ep08 diadaptasi; Film.tsx/ArenaShot/sprites/Root belum. Rencana lengkap scene + HUD di work/BUILD_PLAN_s3.md.",
+      "files": [
+        "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/work/BUILD_PLAN_s3.md",
+        "studio/src/scenes/ep08/timing.ts",
+        "studio/src/scenes/ep08/sets.ts",
+        "studio/src/scenes/ep08/Film.tsx"
+      ],
+      "next": "Baca work/BUILD_PLAN_s3.md, tulis ulang studio/src/scenes/ep08/Film.tsx + ArenaShot CoverText + heroSmash celana, daftarkan Root.tsx, tsc, cover, docs rule 12, sfx, contact sheet, juri, gerbang acc.",
+      "snapshot": {
+        "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP08",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:20:28.449Z",
+      "doing": "s3: Film.tsx EP08 (8 adegan A–OUT), ArenaShot (Owi celana pendek, Butet di net, 2 lawan MAS, CoverText EP08), sprites heroSmash/standBack param skirt, Root.tsx Ep08Cover/Preview/Final terdaftar. tsc ep08 bersih.",
+      "files": [
+        "studio/src/scenes/ep08/Film.tsx",
+        "studio/src/scenes/ep08/ArenaShot.tsx",
+        "studio/src/scenes/ep08/sprites.ts",
+        "studio/src/scenes/ep08/Cover.tsx",
+        "studio/src/Root.tsx"
+      ],
+      "next": "still per adegan (npm run stills -- <dir> 5s,17s,30s,35.5s,45s,53.4s,62s,73s Ep08Preview 0.5) → cover style/cover-topic.png (Ep08Cover) → docs rule 12 → npm run sfx → contact sheet + audit:visual → THEME_CHECK → juri record_score draft → gerbang render final",
+      "snapshot": {
+        "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP08",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:23:12.236Z",
+      "doing": "s3 selesai sampai: Film.tsx EP08 lengkap + still dicek & dipoles + style/cover-topic.png. Lihat work/BUILD_PLAN_s3.md bagian \"Selesai di s3\".",
+      "files": [
+        "work/BUILD_PLAN_s3.md",
+        "studio/src/scenes/ep08/Film.tsx",
+        "style/cover-topic.png"
+      ],
+      "next": "docs rule 12 → npm run sfx → contact sheet draf + audit:visual → draft/THEME_CHECK.md → juri record_score draft → gerbang acc render final",
+      "snapshot": {
+        "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP08",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:33:19.988Z",
+      "doing": "Tahap 8 draf: juri buta putaran 1 = 3,42 PERLU POLES; poles putaran 2 belum dimulai",
+      "files": [
+        "work/BUILD_PLAN_s3.md",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "docs/SHOTLIST.md",
+        "docs/STORYBOARD.md",
+        "../studio/src/scenes/ep08/Film.tsx",
+        "../studio/public/audio/ep08/sfx.wav"
+      ],
+      "next": "Poles 5 saran juri di Film.tsx ep08 (lihat work/BUILD_PLAN_s3.md bagian \"Sisa untuk s5\"), render ulang contact sheet, juri putaran 2, lalu gerbang acc render final",
+      "snapshot": {
+        "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP08",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T09:36:53.017Z",
+      "doing": "s5: 5 poles juri sudah diterapkan di Film.tsx/ArenaShot.tsx ep08, contact sheet putaran 2 dirender (draft/contact-sheet.jpg, stills draft/stills_r2), THEME_CHECK diperbarui; juri buta putaran 2 sedang berjalan",
+      "files": [
+        "../studio/src/scenes/ep08/Film.tsx",
+        "../studio/src/scenes/ep08/ArenaShot.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/look.json"
+      ],
+      "next": "record_score jury putaran 2 (ceilings draft/look.json). Skor terbaik >= 3,5 -> gerbang tahap 9 (contact sheet, skor, durasi 81,6 dtk, G18c 19,3 LU) + tanya SUSY vs Susi; < 3,5 -> G21 ganti style.",
+      "snapshot": {
+        "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP08",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:39:12.649Z",
+      "doing": "G21: PIXELSTORY gagal juri 2 putaran (3,42/3,42), style baru HD2D dipilih (style/STYLE_DECISION.md). Ulang tahap 4 untuk HD2D belum dimulai.",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "work/BUILD_PLAN_s3.md",
+        "NOTES.md",
+        "../studio/src/scenes/ep08/timing.ts",
+        "../studio/src/kits/hd2d/"
+      ],
+      "next": "Ikuti work/BUILD_PLAN_s3.md bagian \"Sisa untuk s6\": docs rule 12 HD2D + perbaikan G22, bangun studio/src/scenes/ep08hd/ (R3F diorama, 8 adegan, timing.ts sama), cover, contact sheet, juri (maks 2 putaran), gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP08",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T14:42:56.665Z",
+      "doing": "s6: build studio/src/scenes/ep08hd (HD2D R3F). figures.ts selesai; HUD ep08 diekspor + teks ≥40px. Docs rule 12 HD2D belum diulang.",
+      "files": [
+        "studio/src/scenes/ep08hd/PLAN.md",
+        "studio/src/scenes/ep08hd/figures.ts",
+        "studio/src/scenes/ep08/Film.tsx",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Lanjut sesuai studio/src/scenes/ep08hd/PLAN.md: slab.tsx, tex.ts, sets.tsx, Film.tsx, Cover.tsx, index.ts, daftar Root.tsx; lalu docs rule 12 HD2D, cover, contact sheet, juri, gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP08",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T14:43:25.691Z",
+      "doing": "s6 selesai sebagian: style HD2D tercatat (data.style), HUD ep08 diekspor + teks ≥40px, studio/src/scenes/ep08hd/figures.ts (sprite + palet + cheer/prayer/carrier) dan PLAN.md (desain 8 adegan + detail teknis).",
+      "files": [
+        "studio/src/scenes/ep08hd/PLAN.md",
+        "studio/src/scenes/ep08hd/figures.ts",
+        "style/STYLE_DECISION.md",
+        "studio/src/scenes/ep08/timing.ts",
+        "studio/src/scenes/ep08/Film.tsx"
+      ],
+      "next": "s7: bangun ep08hd sesuai PLAN.md (slab.tsx, tex.ts, sets.tsx, Film.tsx, Cover.tsx, index.ts, Root.tsx), ulang docs rule 12 HD2D (ART_DIRECTION, STORYBOARD 8 adegan waktu dari timing.ts, ASSET_MANIFEST, SHOTLIST, THEME_CHECK), cover topik, contact sheet 8 frame, audit:visual, juri buta maks 2 putaran (label fakta-olahraga-EP08), lalu gerbang tahap 9 (durasi 81,6 dtk; G18c 19,3 LU; tanya plakat SUSY vs Susi).",
+      "snapshot": {
+        "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "HD2D",
+        "memoryEpisode": "fakta-olahraga-EP08",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T14:52:49.069Z",
+      "doing": "s7 selesai: kode HD2D ep08hd dibangun (tex.ts, slab.tsx, sets.tsx 8 diorama + kamera per adegan, Film.tsx Stage+overlay HUD ep08, Cover.tsx, index.ts) dan Ep08HdCover/Ep08HdPreview/Ep08HdFinal terdaftar di Root.tsx via signed(\"Ep08\"). tsc tanpa error di ep08hd/Root. BELUM pernah dirender: still pertama bisa memunculkan masalah GLB/tekstur/skala/framing.",
+      "files": [
+        "studio/src/scenes/ep08hd/sets.tsx",
+        "studio/src/scenes/ep08hd/Film.tsx",
+        "studio/src/scenes/ep08hd/slab.tsx",
+        "studio/src/scenes/ep08hd/tex.ts",
+        "studio/src/scenes/ep08hd/Cover.tsx",
+        "studio/src/scenes/ep08hd/figures.ts",
+        "studio/src/scenes/ep08hd/PLAN.md",
+        "studio/src/scenes/ep08/timing.ts",
+        "style/STYLE_DECISION.md",
+        "studio/src/Root.tsx"
+      ],
+      "next": "s8: (1) render still uji tiap adegan (npm run stills -- out/ep08hd <detik> Ep08HdPreview; waktu tengah adegan: A 9.6, B 14, C 30, C2 36, D 43, E1 53.6, E2 61, OUT 71) lalu perbaiki framing (subjek di y 700–1300, kamera y≥3.8 jarak≥9) dan bug; (2) ulang docs rule 12 dengan baris 'Style: HD2D' (ART_DIRECTION, STORYBOARD 8 adegan waktu dari CUT/T, ASSET_MANIFEST, SHOTLIST); (3) cover style/cover-topic.png dari Ep08HdCover, contact sheet 8 frame 540×960 draft/contact-sheet.jpg, npm run audit:visual, draft/THEME_CHECK.md (G22), juri buta subagent (F:/AUDIRA-SKILL-MOTION/qa/jury.md) + record_score judge jury style HD2D episode fakta-olahraga-EP08, maks 2 putaran; (4) gerbang tahap 9: contact sheet, skor, durasi 81,6 dtk, G18c (VO −16,6 vs SFX duck −35,9 = 19,3 LU), tanya plakat SUSY SUSANTI vs Susi Susanti; tunggu acc.",
+      "snapshot": {
+        "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "HD2D",
+        "memoryEpisode": "fakta-olahraga-EP08",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:03:51.630Z",
+      "doing": "s8: draf HD2D putaran 1 selesai: still diperbaiki (B lampu, C kamera dekat, OUT panggung 1,4 + kamera dekat), docs rule 12 HD2D, cover-topic.png, draft/contact-sheet.jpg (8 frame 9.6/19.5/30/36/45/53.6/61/71), look.json (ceiling 4), camera.json (klip E1E2 50–65 dtk motion 5/5), THEME_CHECK.md, self score 3,83. Juri buta putaran 1 sedang berjalan (subagent).",
+      "command": "node scripts/stills.mjs ../EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/draft/stills 9.6s,19.5s,30s,36s,45s,53.6s,61s,71s Ep08HdPreview",
+      "files": [
+        "studio/src/scenes/ep08hd/sets.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/look.json",
+        "draft/camera.json",
+        "draft/THEME_CHECK.md",
+        "docs/STORYBOARD.md"
+      ],
+      "next": "Bila juri belum tercatat: jalankan juri buta (qa/jury.md) pada draft/contact-sheet.jpg + F:/AUDIRA-ALL-SKILL/assets/style-covers/hd2d.png, ceilings look.json, camera 5/5, kolom VO THEME_CHECK; record_score judge jury HD2D fakta-olahraga-EP08 draft. Lolos (≥3,8, tak ada <3) → gerbang tahap 9: SendUserFile contact sheet + skor + durasi 81,6 dtk + G18c 19,3 LU (cut tak berubah) + tanya plakat SUSY SUSANTI vs Susi Susanti; tunggu acc. Gagal → poles aspek lemah (catatan: C bawah gelap kosong, caption menutupi kaki sprite E2/OUT, papan belakang hitam di bawah D), render stills ulang, juri putaran 2.",
+      "snapshot": {
+        "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "HD2D",
+        "memoryEpisode": "fakta-olahraga-EP08",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:04:34.381Z",
+      "doing": "s8 selesai: draf HD2D putaran 1 dijuri buta = 3,33 PERLU POLES (lighting 3, material 3, depth 4, composition 2, motion 5, readability 3); self 3,83. Tercatat di motion memory (record_score jury). Contact sheet draft/contact-sheet.jpg (8 frame 9.6/19.5/30/36/45/53.6/61/71 dtk, Ep08HdPreview), look.json ceiling 4, camera.json 5/5 (klip draft/clip-E1E2.mp4), THEME_CHECK.md semua ya, docs rule 12 HD2D sudah ditulis ulang, cover style/cover-topic.png (Ep08HdCover). Arsip PIXELSTORY di draft/_pixelstory/.",
+      "files": [
+        "studio/src/scenes/ep08hd/sets.tsx",
+        "studio/src/scenes/ep08/Film.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/look.json",
+        "draft/camera.json",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "s9 = juri putaran 2 (terakhir untuk HD2D). Poles di studio/src/scenes/ep08hd/sets.tsx + overlay ep08: (1) F5/D 45 dtk: setengah bawah lantai biru kosong + persegi hitam (punggung Board dekat kamera di Arena rot; sembunyikan board sisi kamera) → kamera D lebih rendah/dekat atau tg z ke arah kamera supaya lapangan isi bawah; (2) F3/C: chip nama 'ZHANG NAN / ZHAO YUNLEI · CHINA · UNGGULAN 1 · JUARA BERTAHAN' terpotong kanan (SideHud di scenes/ep08/Film.tsx: perkecil/bungkus) + bawah gelap kosong; (3) F7/E2: caption menutup pemain nomor 1 dan kartu HUD menutup bendera tengah → kamera E2 turunkan tg y supaya podium naik ke y 700–1100, HUD tidak menutup bendera; (4) sub-teks piksel kecil (DOA UNTUK OWI/BUTET, SUSY SUSANTI) perbesar ≥ 44 px dan kontras; (5) lapangan hijau datar: tambah variasi roughness/tekstur court, cahaya lebih berarah (spot) di D/E1 supaya tidak flat. Lalu render ulang: cd studio; node scripts/stills.mjs ../EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/draft/stills 9.6s,19.5s,30s,36s,45s,53.6s,61s,71s Ep08HdPreview; cp _sheet.jpg ke draft/contact-sheet.jpg; node scripts/visual-audit.mjs ../EP08.../draft/stills --comp=Ep08HdPreview --json=draft/look.json --sheet=draft/compare.jpg; juri buta subagent (F:/AUDIRA-SKILL-MOTION/qa/jury.md, cover F:/AUDIRA-ALL-SKILL/assets/style-covers/hd2d.png, camera 5/5, kolom VO THEME_CHECK); record_score judge jury. Lolos ≥3,8 atau terbaik ≥3,5 setelah 2 putaran → gerbang tahap 9: SendUserFile contact sheet, skor, durasi 81,6 dtk, G18c 19,3 LU (VO −16,6 vs SFX duck −35,9; cut VO tidak berubah), tanya plakat SUSY SUSANTI vs EP01 'Susi Susanti'; tunggu acc. Terbaik < 3,5 → G21 style baru. Jangan render final tanpa acc; jangan commit.",
+      "snapshot": {
+        "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "HD2D",
+        "memoryEpisode": "fakta-olahraga-EP08",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:10:13.717Z",
+      "doing": "s9: poles putaran 2 sudah ditulis (tex.ts apronTex/courtRoughTex; sets.tsx Arena open, camC/camD/camE2, flag E2 z -3.2 lebih pendek, spot D/E1; hud.tsx Chip sub ≥48, NameCard wrap; Film.tsx Plaque 50px). Render stills putaran 2.",
+      "command": "cd studio; node scripts/stills.mjs ../EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/draft/stills 9.6s,19.5s,30s,36s,45s,53.6s,61s,71s Ep08HdPreview",
+      "files": [
+        "studio/src/scenes/ep08hd/sets.tsx",
+        "studio/src/scenes/ep08hd/tex.ts",
+        "studio/src/scenes/ep08/hud.tsx",
+        "studio/src/scenes/ep08/Film.tsx"
+      ],
+      "next": "contact sheet + visual-audit + THEME_CHECK + juri buta putaran 2 + record_score; lalu gerbang tahap 9",
+      "snapshot": {
+        "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "HD2D",
+        "memoryEpisode": "fakta-olahraga-EP08",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:12:33.673Z",
+      "doing": "s9: putaran 2 dirender (draft/contact-sheet.jpg baru, look.json ceiling 4, THEME_CHECK diperbarui), self 4,17 tercatat. Juri buta putaran 2 sedang jalan (subagent).",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/look.json",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "record_score judge jury dari hasil subagent; ≥3,8 lolos atau terbaik ≥3,5 → gerbang tahap 9 (SendUserFile contact sheet, skor, durasi 81,6 dtk, G18c 19,3 LU, tanya plakat SUSY vs Susi); <3,5 → G21",
+      "snapshot": {
+        "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "HD2D",
+        "memoryEpisode": "fakta-olahraga-EP08",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:13:06.556Z",
+      "doing": "s9 selesai: HD2D draf putaran 2 juri buta LOLOS 4,17 (lighting 4, material 4, depth 4, composition 4, motion 5, readability 4), self 4,17. Catatan juri: F5 lawan Malaysia tidak terlihat (hanya pasangan putih), F2 kamar = aftermath. Gerbang tahap 9 dikirim ke pengguna, menunggu acc + pilihan plakat SUSY SUSANTI vs Susi Susanti.",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/look.json",
+        "draft/THEME_CHECK.md",
+        "studio/src/scenes/ep08hd/sets.tsx",
+        "studio/src/scenes/ep08hd/tex.ts",
+        "studio/src/scenes/ep08/hud.tsx",
+        "studio/src/scenes/ep08/Film.tsx"
+      ],
+      "next": "Setelah acc pengguna: update stage final approved true, render final 1080×1920@60 (render:final --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav, setelan rule 07 §4.9), QA −14 LUFS/TP<−1, metadata, lalu sesi C tahap 10.",
+      "snapshot": {
+        "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "HD2D",
+        "memoryEpisode": "fakta-olahraga-EP08",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:42:52.565Z",
+      "doing": "Sesi B selesai (s9): HD2D draf putaran 2 juri buta LOLOS 4,17 (lighting 4, material 4, depth 4, composition 4, motion 5, readability 4). ACC pengguna 2026-11-24 \"Gas, SUSY SUSANTI\": stage final approved true, plakat penutup tetap SUSY SUSANTI. Durasi 81,6 dtk; G18c VO −16,6 LUFS vs SFX duck −35,9 = 19,3 LU. Kode: studio/src/scenes/ep08hd (comp Ep08HdPreview untuk draf; cari comp final HD2D di Root).",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/look.json",
+        "draft/camera.json",
+        "style/STYLE_DECISION.md",
+        "studio/src/scenes/ep08hd/sets.tsx"
+      ],
+      "next": "Sesi C: tahap 9 render final 1080×1920@60 (sudah acc) dari studio: npm run render:final dengan comp final HD2D EP08, --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav, --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc (G18 graph); QA −14 LUFS, TP < −1 dBFS, ffprobe metadata kepemilikan, cek frame, record_score stage final (judge jury). Lalu tahap 10 delivery (SOCIAL_CAPTIONS 6 platform + jadwal + label AI, validator, NOTES.md, lessons, 3 scheduled task review).",
+      "snapshot": {
+        "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "HD2D",
+        "memoryEpisode": "fakta-olahraga-EP08",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:43:44.949Z",
+      "doing": "Sesi C s10: render final Ep08HdFinal 1080x1920@60 (acc sudah)",
+      "command": "cd studio && npm run render:final -- --comp=Ep08HdFinal --out=out/ep08/FINAL_EP08.mp4 --vo=public/audio/ep08/vo.wav --sfx=public/audio/ep08/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Owi/Butet Emas Rio 17 Agustus 2016\" --slug=owi-butet-emas-17-agustus-2016 --ep=EP08",
+      "files": [
+        "studio/out/ep08/FINAL_EP08.mp4"
+      ],
+      "next": "QA (-14 LUFS, TP<-1, ffprobe metadata, frame check), salin FINAL ke folder episode, juri buta final + record_score, lalu tahap 10 delivery",
+      "snapshot": {
+        "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "HD2D",
+        "memoryEpisode": "fakta-olahraga-EP08",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:43:44.949Z",
+      "doing": "Sesi C s10: render final Ep08HdFinal 1080x1920@60 (acc sudah)",
+      "command": "cd studio && npm run render:final -- --comp=Ep08HdFinal --out=out/ep08/FINAL_EP08.mp4 --vo=public/audio/ep08/vo.wav --sfx=public/audio/ep08/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Owi/Butet Emas Rio 17 Agustus 2016\" --slug=owi-butet-emas-17-agustus-2016 --ep=EP08",
+      "files": [
+        "studio/out/ep08/FINAL_EP08.mp4"
+      ],
+      "next": "QA (-14 LUFS, TP<-1, ffprobe metadata, frame check), salin FINAL ke folder episode, juri buta final + record_score, lalu tahap 10 delivery",
+      "snapshot": {
+        "episode": "EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "HD2D",
+        "memoryEpisode": "fakta-olahraga-EP08",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP08_OWI_BUTET_EMAS_17_AGUSTUS_2016/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T15:49:23.308Z"
+    }
+  ],
+  "session": 10,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP08 Owi Butet 17 Agustus · s2",
+      "at": "2026-11-23T15:16:54.074Z"
+    },
+    {
+      "no": 3,
+      "title": "EP08 Owi Butet 17 Agustus · s3",
+      "at": "2026-11-23T18:23:00.976Z"
+    },
+    {
+      "no": 4,
+      "title": "EP08 Owi Butet 17 Agustus · s4",
+      "at": "2026-11-24T07:23:12.236Z"
+    },
+    {
+      "no": 5,
+      "title": "EP08 Owi Butet 17 Agustus · s5",
+      "at": "2026-11-24T07:33:19.988Z"
+    },
+    {
+      "no": 6,
+      "title": "EP08 Owi Butet 17 Agustus · s6",
+      "at": "2026-11-24T09:39:12.649Z"
+    },
+    {
+      "no": 7,
+      "title": "EP08 Owi Butet 17 Agustus · s7",
+      "at": "2026-11-24T14:43:25.691Z"
+    },
+    {
+      "no": 8,
+      "title": "EP08 Owi Butet 17 Agustus · s8",
+      "at": "2026-11-24T14:52:49.069Z"
+    },
+    {
+      "no": 9,
+      "title": "EP08 Owi Butet 17 Agustus · s9",
+      "at": "2026-11-24T15:04:34.381Z"
+    },
+    {
+      "no": 10,
+      "title": "EP08 Owi Butet 17 Agustus · s10",
+      "at": "2026-11-24T15:42:52.565Z"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "name": "audira-motion-project",
+  "version": "4.3.0",
+  "private": true,
+  "homepage": "https://audira.my.id/",
+  "description": "Audira Skill Motion 3D project (Remotion + React Three Fiber). By AUDIRA (Agus Dwi R).",
+  "author": "AUDIRA (Agus Dwi R) <info@audira.my.id>",
+  "license": "Proprietary",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "typecheck": "tsc --noEmit",
+    "check-env": "node scripts/check-env.mjs",
+    "smoke": "node scripts/stills.mjs out/smoke 0.5s,3s,5.5s ShowcasePreview",
+    "stills": "node scripts/stills.mjs",
+    "vo": "node scripts/vo-analyze.mjs",
+    "lint:shotlist": "node scripts/shotlist-lint.mjs",
+    "audit:visual": "node scripts/visual-audit.mjs",
+    "audit:camera": "node scripts/camera-audit.mjs",
+    "audit:rig": "node scripts/rig-audit.mjs",
+    "audit:cover": "node scripts/cover-audit.mjs",
+    "cover": "node scripts/cover-still.mjs",
+    "thumbs": "node scripts/thumbs.mjs",
+    "kit:covers": "node scripts/kit-covers.mjs",
+    "script:check": "node scripts/script-check.mjs",
+    "vo:join": "node scripts/vo-join.mjs",
+    "qa:sync": "node scripts/sync-check.mjs",
+    "qa:gate": "node scripts/qa-gate.mjs",
+    "render:final": "node scripts/render-final.mjs",
+    "audit:kits": "node scripts/audit-kits.mjs",
+    "kits:check": "node scripts/kits-check.mjs",
+    "check:det": "node scripts/determinism-check.mjs",
+    "sign": "node scripts/sign-video.mjs",
+    "verify": "node scripts/sign-video.mjs --verify",
+    "memory:backfill": "node scripts/memory-backfill.mjs",
+    "sfx": "node scripts/sfx.mjs",
+    "draft": "node scripts/draft.mjs",
+    "deliver": "node scripts/deliver-check.mjs",
+    "audit:layout": "node scripts/layout-audit.mjs",
+    "channel": "node scripts/channel.mjs"
+  },
+  "dependencies": {
+    "@react-three/drei": "10.7.9",
+    "@react-three/fiber": "9.8.2",
+    "@remotion/cli": "4.0.539",
+    "@remotion/google-fonts": "4.0.539",
+    "@remotion/three": "4.0.539",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.539",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "4.0.539",
+    "@remotion/renderer": "4.0.539",
+    "@types/react": "19.2.7",
+    "@types/three": "0.186.0",
+    "typescript": "5.9.3"
+  }
+}

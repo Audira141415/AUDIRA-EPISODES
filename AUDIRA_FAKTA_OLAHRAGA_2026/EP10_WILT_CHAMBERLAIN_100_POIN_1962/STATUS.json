@@ -1,0 +1,570 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP10_WILT_CHAMBERLAIN_100_POIN_1962",
+  "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+  "createdAt": "2026-11-23T14:14:18.182Z",
+  "updatedAt": "2026-11-24T09:34:59.614Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:38.444Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:14:18.183Z",
+      "startedAt": "2026-11-23T14:14:18.183Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:38.445Z",
+          "text": "sync: riset ada"
+        },
+        {
+          "at": "2026-11-23T14:22:12.840Z",
+          "text": "30 fakta, 7 HIGH. Klaim baru: Bam Adebayo 83 poin 10 Mar 2026 (Kobe 81 jadi #3) — cek ulang di Basketball-Reference sebelum masuk naskah."
+        }
+      ],
+      "doneAt": "2026-11-23T14:22:12.840Z",
+      "startedAt": "2026-11-22T06:26:14.091Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:16:04.509Z",
+          "text": "Preflight OK. Style VINTAGEFORGE 3D dipilih AI (style/STYLE_DECISION.md). Adebayo 83 diverifikasi ulang di BREF. Cover topik belum."
+        },
+        {
+          "at": "2026-11-23T15:16:33.208Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "startedAt": "2026-11-23T15:16:04.509Z",
+      "doneAt": "2026-11-23T15:16:04.336Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:20:56.069Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-24T07:17:31.472Z",
+      "startedAt": "2026-11-24T07:17:31.472Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:22:43.542Z",
+          "text": "Studio seri bersama AUDIRA_FAKTA_OLAHRAGA_2026/studio (kit terpasang sejak EP01); scenes ep10 + Root Ep10*."
+        }
+      ],
+      "doneAt": "2026-11-24T07:22:43.542Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T18:23:24.406Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-23T18:22:32.856Z",
+      "startedAt": "2026-11-23T18:22:32.856Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:20:56.070Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-24T07:22:40.149Z",
+          "text": "Film.tsx 11 scene; still s2–s4 dicek; SFX public/audio/ep10/sfx.wav; docs rule 12 lengkap."
+        }
+      ],
+      "doneAt": "2026-11-24T07:22:40.149Z",
+      "startedAt": "2026-11-24T07:19:27.067Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:20:56.070Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        }
+      ],
+      "doneAt": "2026-11-24T07:20:44.885Z",
+      "startedAt": "2026-11-24T07:20:44.885Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T09:28:36.807Z",
+      "notes": [
+        {
+          "at": "2026-11-24T09:28:36.807Z",
+          "text": "Acc pengguna 2026-11-24: \"Gas render final\" (juri putaran 2 3.83)"
+        },
+        {
+          "at": "2026-11-24T09:34:43.910Z",
+          "text": "FINAL_EP10_WILT_100_POIN.mp4 1080x1920@60, 80.43 s, -13.6 LUFS, TP -2.1 dBFS, metadata + Ed25519/C2PA valid"
+        }
+      ],
+      "startedAt": "2026-11-24T09:28:36.807Z",
+      "doneAt": "2026-11-24T09:34:43.910Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T09:30:31.870Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T09:29:39.398Z",
+      "startedAt": "2026-11-24T09:29:39.398Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "fakta-olahraga-EP10",
+    "shortTitle": "Wilt 100 Poin",
+    "style": "VINTAGEFORGE",
+    "engine": "remotion",
+    "preflight": "ok 2026-11-23",
+    "adebayoVerified": true
+  },
+  "syncedAt": "2026-11-24T09:30:31.870Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-23T15:16:10.798Z",
+      "doing": "Tahap 3 selesai sebagian: style VINTAGEFORGE 3D dipilih, preflight OK, Adebayo 83 terverifikasi (BREF). Belum ada kode/cover/naskah.",
+      "files": [
+        "EP10_WILT_CHAMBERLAIN_100_POIN_1962/style/STYLE_DECISION.md",
+        "EP10_WILT_CHAMBERLAIN_100_POIN_1962/research/SOURCE_REGISTER.md"
+      ],
+      "next": "Cover topik (studio/src/scenes/ep10/Cover.tsx, pola ep02/Cover.tsx) → docs rule 12 (ART_DIRECTION, SCRIPT+STORYBOARD, ASSET_MANIFEST, docs/script-lines.json 6 bagian 195–210 kata) → VO via audira_generate_voiceover ke audio/work/vo-raw.wav + vo-raw-words.json → python _tools/vo_tighten.py EP10_... → python _tools/make-timeline.py EP10_... → ep10 Film/timing/hud/sets (impor ulang dari ../ep02/sets.tsx & hud.tsx) → Root.tsx baris Ep10 → npm run sfx → contact sheet + juri → gerbang acc render final.",
+      "snapshot": {
+        "episode": "EP10_WILT_CHAMBERLAIN_100_POIN_1962",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP10",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:21:09.276Z",
+      "doing": "Naskah 199 kata (docs/script-lines.json) selesai; generate VO Cartesia ke audio/work/vo-raw.wav",
+      "files": [
+        "docs/script-lines.json",
+        "audio/work/vo-raw.wav"
+      ],
+      "next": "python _tools/vo_tighten.py EP10_... → make-timeline.py → cover + docs rule 12 → scenes ep10",
+      "snapshot": {
+        "episode": "EP10_WILT_CHAMBERLAIN_100_POIN_1962",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP10",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:22:13.502Z",
+      "doing": "VO Cartesia dari audio/work/vo-timed.txt (script-lines.json final 203 kata ucap, ejaan fonetik)",
+      "command": "audira_generate_voiceover scriptPath=audio/work/vo-timed.txt out=audio/work/vo-raw.wav words=audio/work/vo-raw-words.json",
+      "files": [
+        "docs/script-lines.json",
+        "audio/work/vo-timed.txt"
+      ],
+      "next": "python _tools/vo_tighten.py EP10_... → make-timeline.py → docs → kode studio/src/scenes/ep10",
+      "snapshot": {
+        "episode": "EP10_WILT_CHAMBERLAIN_100_POIN_1962",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP10",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP10_WILT_CHAMBERLAIN_100_POIN_1962/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:23:36.108Z",
+      "doing": "VO terkunci (76,40 dtk ucap, film 80,40 dtk), timeline ep10 dibuat, rencana scene + GLB di docs/TIMING.md. Belum: cover, docs ART_DIRECTION/SCRIPT/STORYBOARD/ASSET_MANIFEST (masih template), kode ep10, Root.tsx.",
+      "files": [
+        "docs/script-lines.json",
+        "docs/TIMING.md",
+        "audio/vo.wav",
+        "audio/timeline.json",
+        "../studio/src/scenes/ep10/timeline.json",
+        "../studio/public/audio/ep10/vo.wav"
+      ],
+      "next": "Tulis studio/src/scenes/ep10 (timing.ts W()/T/CUT dari docs/TIMING.md, sets.tsx, Film.tsx, Cover.tsx, index.ts), salin GLB ke studio/public/glb, tambah baris Ep10 di Root.tsx (SLUG olahraga-EP10, Preview/Final/Cover), render cover → style/cover-topic.png, isi 4 docs rule 12, npm run sfx, contact sheet + audit:visual + THEME_CHECK + juri buta, lalu gerbang acc render final.",
+      "snapshot": {
+        "episode": "EP10_WILT_CHAMBERLAIN_100_POIN_1962",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP10",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP10_WILT_CHAMBERLAIN_100_POIN_1962/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:02:36.670Z",
+      "doing": "s3: kode ep10 sebagian ditulis (timing.ts, sets.tsx, hud.tsx) + GLB disalin; rencana Film/kamera lengkap di docs/CODE_PLAN.md",
+      "files": [
+        "docs/CODE_PLAN.md",
+        "../studio/src/scenes/ep10/timing.ts",
+        "../studio/src/scenes/ep10/sets.tsx",
+        "../studio/src/scenes/ep10/hud.tsx",
+        "../studio/public/glb/"
+      ],
+      "next": "Baca docs/CODE_PLAN.md, tulis studio/src/scenes/ep10/Film.tsx + Cover.tsx + index.ts, Edit kecil Root.tsx (baris Ep10), npm run typecheck, still per scene & perbaiki, cover → style/cover-topic.png, isi docs rule 12, npm run sfx, contact sheet + audit:visual + THEME_CHECK + juri buta, gerbang acc render final.",
+      "snapshot": {
+        "episode": "EP10_WILT_CHAMBERLAIN_100_POIN_1962",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP10",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP10_WILT_CHAMBERLAIN_100_POIN_1962/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:10:27.498Z",
+      "doing": "s4: Film.tsx + Cover.tsx (CoverA) + index.ts ditulis, Root.tsx baris Ep10 ditambah (EP10 import, SLUG, Ep10CoverA/Preview/Final), typecheck ep10 bersih. Still putaran 1 (out/ep10-s1/_sheet.jpg) terbaca bagus; perbaikan kamera sudah diterapkan (B2 radio dari sisi lapangan, C2 tribun fov 48 + crowd 80, D1 lemparan bebas dari samping [4.6,0.85,2.7], OUT museum lebih lebar [0,1.45,4.6]→[0,1.3,3.7] fov 44). Belum dicek ulang.",
+      "files": [
+        "../studio/src/scenes/ep10/Film.tsx",
+        "../studio/src/scenes/ep10/Cover.tsx",
+        "../studio/src/scenes/ep10/index.ts",
+        "../studio/src/Root.tsx",
+        "../studio/out/ep10-s1/_sheet.jpg"
+      ],
+      "next": "Cek ulang still: node scripts/stills.mjs out/ep10-s2 17.5s,18.8s,30.8s,38s,56s,70s,72.5s Ep10Preview (dari studio/). Lalu cover: render Ep10CoverA → EP10/style/cover-topic.png; isi/cek docs rule 12 (ART_DIRECTION/SCRIPT/STORYBOARD sudah ada — verifikasi isi; tambah ASSET_MANIFEST.md + SHOTLIST.md, format ../EP05_RUMBLE_IN_THE_JUNGLE_1974/docs/); npm run sfx; contact sheet 6–8 frame 540×960 ke EP10/draft/; npm run audit:visual; draft/THEME_CHECK.md (sudah ada, verifikasi); juri buta subagent record_score (episode fakta-olahraga-EP10, VINTAGEFORGE); gerbang acc render final.",
+      "snapshot": {
+        "episode": "EP10_WILT_CHAMBERLAIN_100_POIN_1962",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP10",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP10_WILT_CHAMBERLAIN_100_POIN_1962/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:22:39.962Z",
+      "doing": "s5: kamera D1 (sisi tengah Wilt+ring, fov 50) & museum (wide→83→100) diperbaiki di Film.tsx; cover-topic.png dirender; docs SCRIPT/ART_DIRECTION/STORYBOARD ditulis ulang + ASSET_MANIFEST/SHOTLIST baru; SFX public/audio/ep10/sfx.wav (-20 LUFS, render-final pakai volume=-10dB); draft/contact-sheet.jpg (out/ep10-draft2) audit:visual semua ceiling >=4; camera.json motion 5; THEME_CHECK 8 baris ya; G18c 14 LU. Juri buta putaran 1 berjalan.",
+      "files": [
+        "studio/src/scenes/ep10/Film.tsx",
+        "EP10/docs/*.md",
+        "EP10/draft/contact-sheet.jpg",
+        "EP10/draft/THEME_CHECK.md",
+        "studio/public/audio/ep10/sfx.wav"
+      ],
+      "next": "Baca skor juri (record_score fakta-olahraga-EP10). LOLOS → gerbang acc render final: tampilkan draft/contact-sheet.jpg, skor, durasi 80,40 dtk, G18c. Setelah acc: render final Ep10Final --concurrency=2 background dengan --vo=public/audio/ep10/vo.wav --sfx=public/audio/ep10/sfx.wav.",
+      "snapshot": {
+        "episode": "EP10_WILT_CHAMBERLAIN_100_POIN_1962",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP10",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP10_WILT_CHAMBERLAIN_100_POIN_1962/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:23:43.121Z",
+      "doing": "Juri buta putaran 1 (draft, fakta-olahraga-EP10, VINTAGEFORGE): 3.67 PERLU POLES — lighting 4, material 4, depth 4, composition 3, motion 4, readability 3. Kelemahan: papan teks 3D terpotong di tepi frame (hook 0.15s 'HERSHEY AREN', B1 9s 'ARENA MALAM IN', B2 17.5s 'RADIO', C1 24.2s 'SHEY ARENA'); caption karaoke putih kurang kontras di area terang (lantai B1, kertas E3); E3 arsip 63s overexposed (foto '100' pucat, tidak terbaca Perpustakaan Kongres); F8 73s caption patah 'Angka 100 masih belum'; saturasi 0.68 vs cover 0.33 (bisa turunkan sedikit). Saran tool: baca GOLD.json sejarah-negara-EP56 (VINTAGEFORGE 4.17) sebelum poles.",
+      "files": [
+        "studio/src/scenes/ep10/Film.tsx",
+        "studio/src/scenes/ep10/sets.tsx",
+        "EP10/draft/contact-sheet.jpg",
+        "EP10/draft/THEME_CHECK.md",
+        "EP10/draft/camera.json",
+        "studio/out/ep10-draft2/"
+      ],
+      "next": "Poles putaran 2 (Film.tsx/sets.tsx ep10 saja): geser/perkecil Sign agar utuh di frame atau keluarkan penuh; turunkan exposure E3 + beri label kecil 'LIBRARY OF CONGRESS' tidak — pakai kartu yang ada; pilih frame F8 saat kalimat utuh (±74.5s). Render ulang: node scripts/stills.mjs out/ep10-draft3 0.15s,9s,17.5s,24.2s,41s,55.9s,63s,74.5s Ep10Preview 0.5 → npm run audit:visual -- out/ep10-draft3 --style=VINTAGEFORGE → salin _sheet.jpg ke EP10/draft/contact-sheet.jpg → perbarui THEME_CHECK → record_score self lalu juri buta subagent baru (putaran 2 terakhir; camera.json sudah ada, motion 5). Skor terbaik ≥3.5 → gerbang acc render final (durasi 80,40 dtk, G18c 14 LU lolos: VO loudnorm -16 vs SFX -20 stem @-10dB = -30). Setelah acc: render final Ep10Final --concurrency=2 background, --vo=public/audio/ep10/vo.wav --sfx=public/audio/ep10/sfx.wav, lalu QA + tahap 10.",
+      "snapshot": {
+        "episode": "EP10_WILT_CHAMBERLAIN_100_POIN_1962",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP10",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP10_WILT_CHAMBERLAIN_100_POIN_1962/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:38:26.022Z",
+      "doing": "s6 poles putaran 2 selesai di kode (serifBoard auto-fit, hoarding HERSHEY w1.6, RADIO card geser, C1 target naik, E3 pool off exposure 0.7, pita gelap caption); render contact sheet draft3",
+      "command": "node scripts/stills.mjs out/ep10-draft3 0.15s,9s,17.5s,24.2s,41s,55.9s,63s,74.5s Ep10Preview 0.5",
+      "files": [
+        "studio/src/scenes/ep10/Film.tsx",
+        "studio/src/scenes/ep10/sets.tsx"
+      ],
+      "next": "audit:visual out/ep10-draft3 → salin _sheet ke EP10/draft/contact-sheet.jpg → THEME_CHECK → record_score self + juri buta putaran 2 → gerbang acc final",
+      "snapshot": {
+        "episode": "EP10_WILT_CHAMBERLAIN_100_POIN_1962",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP10",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP10_WILT_CHAMBERLAIN_100_POIN_1962/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:45:34.631Z",
+      "doing": "Menunggu acc pengguna di gerbang render final (juri putaran 2 LOLOS 3.83: L4 M3 D3 C4 Mo5 R4)",
+      "files": [
+        "EP10/draft/contact-sheet.jpg",
+        "EP10/draft/THEME_CHECK.md",
+        "studio/src/scenes/ep10/Film.tsx",
+        "studio/src/scenes/ep10/sets.tsx"
+      ],
+      "next": "Setelah acc: update stage final approved true, render final Ep10Final 1080x1920@60 --concurrency=2 background dengan --vo=public/audio/ep10/vo.wav --sfx=public/audio/ep10/sfx.wav, lalu QA (-14 LUFS, TP<-1), metadata, record_score final, tahap 10.",
+      "snapshot": {
+        "episode": "EP10_WILT_CHAMBERLAIN_100_POIN_1962",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP10",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP10_WILT_CHAMBERLAIN_100_POIN_1962/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:28:51.133Z",
+      "doing": "Render final Ep10Final 1080x1920@60 (acc diberikan)",
+      "command": "cd studio && npm run render:final -- --comp=Ep10Final --out=../EP10_WILT_CHAMBERLAIN_100_POIN_1962/FINAL_EP10_WILT_100_POIN.mp4 --vo=public/audio/ep10/vo.wav --sfx=public/audio/ep10/sfx.wav --jobs=2 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Wilt Chamberlain 100 Poin dalam Satu Laga\" --slug=wilt-chamberlain-100-poin --ep=EP10",
+      "files": [
+        "EP10/FINAL_EP10_WILT_100_POIN.mp4"
+      ],
+      "next": "QA: loudness -14 LUFS TP<-1, ffprobe metadata, cek frame, record_score final, tahap 10 (caption 6 platform, NOTES, scheduled review)",
+      "snapshot": {
+        "episode": "EP10_WILT_CHAMBERLAIN_100_POIN_1962",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP10",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP10_WILT_CHAMBERLAIN_100_POIN_1962/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:34:59.614Z",
+      "doing": "Final + tahap 10 selesai (FINAL_EP10_WILT_100_POIN.mp4, SOCIAL_CAPTIONS validator ok, SUBTITLES.srt, NOTES.md). Tinggal 3 scheduled task review.",
+      "files": [
+        "EP10/FINAL_EP10_WILT_100_POIN.mp4",
+        "EP10/SOCIAL_CAPTIONS.md",
+        "EP10/NOTES.md",
+        "EP10/SUBTITLES.srt"
+      ],
+      "next": "Tanya jam upload sebenarnya (default Rabu 2 Des 2026 19.00 WIB), lalu buat scheduled task review-wilt-chamberlain-100-poin-24h/-72h/-7d (fireAt +07:00), catat taskId di NOTES.md. Setelah itu arsipkan sesi lama EP10 (s1–s5) sesuai sessionCleanup.",
+      "snapshot": {
+        "episode": "EP10_WILT_CHAMBERLAIN_100_POIN_1962",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP10",
+        "currentStage": "review",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP10_WILT_CHAMBERLAIN_100_POIN_1962/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    }
+  ],
+  "session": 6,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP10 Wilt 100 Poin · s2",
+      "at": "2026-11-23T15:16:10.798Z"
+    },
+    {
+      "no": 3,
+      "title": "EP10 Wilt 100 Poin · s3",
+      "at": "2026-11-23T18:23:36.108Z"
+    },
+    {
+      "no": 4,
+      "title": "EP10 Wilt 100 Poin · s4",
+      "at": "2026-11-24T07:02:36.669Z"
+    },
+    {
+      "no": 5,
+      "title": "EP10 Wilt 100 Poin · s5",
+      "at": "2026-11-24T07:10:27.498Z"
+    },
+    {
+      "no": 6,
+      "title": "EP10 Wilt 100 Poin · s6",
+      "at": "2026-11-24T07:23:43.121Z"
+    }
+  ],
+  "handover": {
+    "at": "2026-11-24T09:34:59.614Z",
+    "doing": "Final + tahap 10 selesai (FINAL_EP10_WILT_100_POIN.mp4, SOCIAL_CAPTIONS validator ok, SUBTITLES.srt, NOTES.md). Tinggal 3 scheduled task review.",
+    "files": [
+      "EP10/FINAL_EP10_WILT_100_POIN.mp4",
+      "EP10/SOCIAL_CAPTIONS.md",
+      "EP10/NOTES.md",
+      "EP10/SUBTITLES.srt"
+    ],
+    "next": "Tanya jam upload sebenarnya (default Rabu 2 Des 2026 19.00 WIB), lalu buat scheduled task review-wilt-chamberlain-100-poin-24h/-72h/-7d (fireAt +07:00), catat taskId di NOTES.md. Setelah itu arsipkan sesi lama EP10 (s1–s5) sesuai sessionCleanup.",
+    "snapshot": {
+      "episode": "EP10_WILT_CHAMBERLAIN_100_POIN_1962",
+      "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+      "style": "VINTAGEFORGE",
+      "memoryEpisode": "fakta-olahraga-EP10",
+      "currentStage": "review",
+      "gates": {
+        "final": {
+          "approved": true,
+          "status": "done"
+        }
+      },
+      "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP10_WILT_CHAMBERLAIN_100_POIN_1962/audio/vo.wav",
+      "draftScores": [],
+      "finals": [],
+      "draftRounds": 0
+    }
+  }
+}

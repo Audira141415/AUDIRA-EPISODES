@@ -1,0 +1,2075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link type="image/x-icon" href="https://partner.steamgames.com/public/favicon.ico" rel="shortcut icon"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Steam Workshop Implementation Guide (Steamworks Documentation)</title>
+		<link href="https://partner.steamgames.com/public/shared/css/motiva_sans.css?v=KTK74ReHHKmw&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://partner.steamgames.com/public/shared/css/shared_responsive.css?v=yGCGFQVEkYi6&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://partner.steamgames.com/public/shared/css/shared_global.css?v=OpVY20aLmEsk&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://partner.steamgames.com/public/shared/css/buttons.css?v=2sBDtpw6TQk_&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://partner.steamgames.com/public/css/styles_global.css?v=c1zwuLqYwx85&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://partner.steamgames.com/public/css/header.css?v=_ew63an-mUEs&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://partner.steamgames.com/public/css/styles_admin.css?v=Yi3JwcTAA4RL&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://partner.steamgames.com/public/css/styles_marketing.css?v=eOQWOuSxu72z&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://partner.steamgames.com/public/css/styles_landing.css?v=RHZLv120SrWg&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<!--[if lte IE 7]> <style type="text/css"> .iepopupfix{ display: block; } </style> <![endif]-->
+	<link href="https://partner.steamgames.com/public/css/styles_print.css?v=tVP8-D1reM_K&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css"media="print">
+	<link href="https://partner.steamgames.com/public/shared/css/motiva_sans.css?v=KTK74ReHHKmw&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+	<link href="https://partner.steamgames.com/public/css/doc.css?v=fD9jksCq6k3p&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+	<link href="https://partner.steamgames.com/public/css/highlight/railscasts.css?v=AzzNew3Q3FPD&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript">Object.seal && [ Object, Array, String, Number ].map( function( builtin ) { Object.seal( builtin.prototype ); } );</script><script type="text/javascript" src="https://partner.steamgames.com/public/javascript/marketing.js?v=bVOjbRaMAoft&amp;l=english&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://partner.steamgames.com/public/javascript/storeadmin.js?v=Se20y3-xsTJy&amp;l=english&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://partner.steamgames.com/public/javascript/admin.js?v=OHpkTbYobSuv&amp;l=english&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://partner.steamgames.com/public/javascript/webtoolkit.aim.js?v=ZQ03s8ex0ABq&amp;l=english&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://partner.steamgames.com/public/javascript/newsadmin.js?v=NjOKBxht9KvZ&amp;l=english&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://partner.steamgames.com/public/javascript/jquery-1.8.3.js?v=hslOGuAZoPRK&amp;l=english&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://partner.steamgames.com/public/shared/javascript/tooltip.js?v=a9q1REOJMDBo&amp;l=english&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://partner.steamgames.com/public/shared/javascript/shared_global.js?v=LKHHGyvATtqM&amp;l=english&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://partner.steamgames.com/public/shared/javascript/shared_responsive_adapter.js?v=asNZNxt9kVQn&amp;l=english&amp;_cdn=fastly"></script>
+
+<script type="text/javascript">$J = jQuery.noConflict();$ = $J;
+			document.addEventListener('DOMContentLoaded', function(event) {
+				SetupTooltips( { tooltipCSSClass: 'jsTooltip'} );
+			});</script>	<script type="text/javascript" src="https://partner.steamgames.com/public/javascript/highlight/highlight.pack.js?v=DlEoyLO3J4Uc&amp;l=english&amp;_cdn=fastly"></script>
+	<script type="text/javascript" src="https://partner.steamgames.com/public/javascript/doc.js?v=adtkrLV6qo8m&amp;l=english&amp;_cdn=fastly"></script>
+		<script type="application/javascript">
+		$J( document ).ready( function() {
+			appendRenderedSectionsToNavTree();
+			bindCollapseToggles();
+			updateSelectedSection();
+			HideDocMenuOnMobile();
+
+			window.addEventListener("hashchange", updateSelectedSection );
+		} );
+	</script>
+		<noscript>
+		<style type="text/css">
+			body {
+				overflow: auto;
+			}
+			#docTocHideControl {
+				background: none;
+			}
+			#docTocHideContainer:hover {
+				background-color: #354257;
+				cursor: initial;
+			}
+		</style>
+	</noscript></head>
+<body>
+<script type="text/javascript">
+	$J( InitMiniprofileHovers( 'https%3A%2F%2Fpartner.steamgames.com' ) );
+    	g_sessionID = "e190f6a719956f693675b49d";
+</script>
+<!-- anyone using landing_header needs to ensure jquery is loaded prior -->
+<script type="text/javascript" src="https://partner.steamgames.com/public/javascript/jquery.cookie.js?v=ND_3CW4DxZHp&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript">
+	g_sessionID = "e190f6a719956f693675b49d";
+	g_rgAllAffiliatedPublishers = [];
+	g_nPrimaryPublisher = 0;
+
+	function GoToEditPage( page, id )
+	{
+		if ( checkNumeric( id ) )
+		{
+			window.location.href = "https://partner.steamgames.com/apps/" + page + "/" + id;
+		}
+	}
+
+	function checkNumeric( value )
+	{
+		var anum=/(^\d+$)|(^\d+\.\d+$)/
+		if (anum.test(value))
+			return true;
+		return false;
+	}
+</script>
+	<div id="headerContainer" data-config="{&quot;EUNIVERSE&quot;:1,&quot;WEB_UNIVERSE&quot;:&quot;public&quot;,&quot;LANGUAGE&quot;:&quot;english&quot;,&quot;COUNTRY&quot;:&quot;ID&quot;,&quot;MEDIA_CDN_COMMUNITY_URL&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/community_assets\/&quot;,&quot;MEDIA_CDN_URL&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/&quot;,&quot;VIDEO_CDN_URL&quot;:&quot;https:\/\/video.fastly.steamstatic.com\/&quot;,&quot;COMMUNITY_CDN_URL&quot;:&quot;https:\/\/community.fastly.steamstatic.com\/&quot;,&quot;COMMUNITY_CDN_ASSET_URL&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/appmgmt\/&quot;,&quot;STORE_CDN_URL&quot;:&quot;https:\/\/store.fastly.steamstatic.com\/&quot;,&quot;PUBLIC_SHARED_URL&quot;:&quot;https:\/\/store.fastly.steamstatic.com\/public\/shared\/&quot;,&quot;COMMUNITY_BASE_URL&quot;:&quot;https:\/\/steamcommunity.com\/&quot;,&quot;CHAT_BASE_URL&quot;:&quot;https:\/\/steamcommunity.com\/&quot;,&quot;STORE_BASE_URL&quot;:&quot;https:\/\/store.steampowered.com\/&quot;,&quot;STORE_CHECKOUT_BASE_URL&quot;:&quot;https:\/\/checkout.steampowered.com\/&quot;,&quot;IMG_URL&quot;:&quot;https:\/\/partner.steamgames.com\/public\/images\/&quot;,&quot;STEAMTV_BASE_URL&quot;:&quot;https:\/\/steam.tv\/&quot;,&quot;HELP_BASE_URL&quot;:&quot;https:\/\/help.steampowered.com\/&quot;,&quot;PARTNER_BASE_URL&quot;:&quot;https:\/\/partner.steamgames.com\/&quot;,&quot;STATS_BASE_URL&quot;:&quot;https:\/\/partner.steampowered.com\/&quot;,&quot;INTERNAL_STATS_BASE_URL&quot;:&quot;https:\/\/steamstats.valve.org\/&quot;,&quot;IN_CLIENT&quot;:false,&quot;STORE_ITEM_BASE_URL&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/&quot;,&quot;WEBAPI_BASE_URL&quot;:&quot;https:\/\/api.steampowered.com\/&quot;,&quot;TOKEN_URL&quot;:&quot;https:\/\/partner.steamgames.com\/chat\/clientjstoken&quot;,&quot;BUILD_TIMESTAMP&quot;:1793747348,&quot;PAGE_TIMESTAMP&quot;:1793780447,&quot;IN_MOBILE_WEBVIEW&quot;:false,&quot;PLATFORM&quot;:&quot;windows&quot;,&quot;EREALM&quot;:1,&quot;LOGIN_BASE_URL&quot;:&quot;https:\/\/login.steampowered.com\/&quot;,&quot;AVATAR_BASE_URL&quot;:&quot;https:\/\/avatars.fastly.steamstatic.com\/&quot;,&quot;FROM_WEB&quot;:true,&quot;WEBSITE_ID&quot;:&quot;Partner&quot;,&quot;BASE_URL_SHARED_CDN&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/&quot;,&quot;CLAN_CDN_ASSET_URL&quot;:&quot;https:\/\/clan.fastly.steamstatic.com\/&quot;,&quot;NOW&quot;:1793780447,&quot;SUPPORT_BASE_URL&quot;:&quot;https:\/\/steamsupport.valvesoftware.com\/&quot;,&quot;SNR&quot;:&quot;100600_doc_view_&quot;}" data-headerdata="{&quot;menu&quot;:{&quot;mainNav&quot;:[{&quot;label&quot;:&quot;Documentation&quot;,&quot;children&quot;:[{&quot;href&quot;:&quot;https://partner.steamgames.com/doc&quot;,&quot;label&quot;:&quot;Home&quot;},{&quot;href&quot;:&quot;https://partner.steamgames.com/doc/gettingstarted&quot;,&quot;label&quot;:&quot;Getting Started&quot;},{&quot;href&quot;:&quot;https://partner.steamgames.com/doc/store&quot;,&quot;label&quot;:&quot;Store Presence&quot;},{&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features&quot;,&quot;label&quot;:&quot;Features&quot;},{&quot;href&quot;:&quot;https://partner.steamgames.com/doc/finance&quot;,&quot;label&quot;:&quot;Finance&quot;},{&quot;href&quot;:&quot;https://partner.steamgames.com/doc/marketing&quot;,&quot;label&quot;:&quot;Sales &amp; Marketing&quot;},{&quot;href&quot;:&quot;https://partner.steamgames.com/doc/sdk&quot;,&quot;label&quot;:&quot;Steamworks SDK&quot;},{&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/steamvr/info&quot;,&quot;label&quot;:&quot;Steam VR&quot;}]},{&quot;label&quot;:&quot;Resources&quot;,&quot;children&quot;:[{&quot;href&quot;:&quot;https://partner.steamgames.com/vrlicensing&quot;,&quot;label&quot;:&quot;Steam VR&quot;},{&quot;href&quot;:&quot;https://partner.steamgames.com/pccafe&quot;,&quot;label&quot;:&quot;Steam PC Café Program&quot;},{&quot;separator&quot;:true},{&quot;href&quot;:&quot;https://steamcommunity.com/groups/steamworks/discussions&quot;,&quot;label&quot;:&quot;Steamworks Discussions&quot;},{&quot;href&quot;:&quot;https://www.youtube.com/user/SteamworksDev&quot;,&quot;label&quot;:&quot;Steamworks Video Tutorials&quot;}]},{&quot;label&quot;:&quot;News &amp; Updates&quot;,&quot;children&quot;:[{&quot;href&quot;:&quot;https://store.steampowered.com/news/group/4145017&quot;,&quot;label&quot;:&quot;Steamworks Blog&quot;},{&quot;href&quot;:&quot;https://store.steampowered.com/news/app/593110&quot;,&quot;label&quot;:&quot;Steam Blog&quot;},{&quot;href&quot;:&quot;https://store.steampowered.com/news/app/250820&quot;,&quot;label&quot;:&quot;Steam VR Blog&quot;},{&quot;href&quot;:&quot;https://store.steampowered.com/news/app/1675200&quot;,&quot;label&quot;:&quot;Steam Deck Blog&quot;},{&quot;href&quot;:&quot;https://store.steampowered.com/news/app/4165890&quot;,&quot;label&quot;:&quot;Steam Frame Blog&quot;}]},{&quot;label&quot;:&quot;Support&quot;,&quot;href&quot;:&quot;https://help.steampowered.com/wizard/HelpWithPublishing?issueid=923&quot;}],&quot;partnerNav&quot;:[{&quot;label&quot;:&quot;Dashboard&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/dashboard&quot;,&quot;active&quot;:false}],&quot;globalActions&quot;:[{&quot;id&quot;:&quot;language&quot;,&quot;label&quot;:&quot;language&quot;,&quot;children&quot;:[{&quot;label&quot;:&quot;简体中文 (Simplified Chinese)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=schinese&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;schinese&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;繁體中文 (Traditional Chinese)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=tchinese&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;tchinese&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;日本語 (Japanese)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=japanese&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;japanese&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;한국어 (Korean)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=koreana&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;koreana&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;ไทย (Thai)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=thai&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;thai&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;العربية (Arabic)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=arabic&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;arabic&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Bahasa Indonesia (Indonesian)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=indonesian&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;indonesian&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Bahasa Melayu (Malay)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=malay&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;malay&quot;},&quot;beta&quot;:true},{&quot;label&quot;:&quot;Български (Bulgarian)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=bulgarian&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;bulgarian&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Čeština (Czech)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=czech&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;czech&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Dansk (Danish)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=danish&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;danish&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Deutsch (German)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=german&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;german&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;English&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=english&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;english&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Español - España (Spanish - Spain)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=spanish&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;spanish&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Español - Latinoamérica (Spanish - Latin America)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=latam&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;latam&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Ελληνικά (Greek)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=greek&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;greek&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Français (French)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=french&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;french&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Italiano (Italian)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=italian&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;italian&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Magyar (Hungarian)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=hungarian&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;hungarian&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Nederlands (Dutch)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=dutch&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;dutch&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Norsk (Norwegian)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=norwegian&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;norwegian&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Polski (Polish)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=polish&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;polish&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Português - Portugal (Portuguese - Portugal)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=portuguese&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;portuguese&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Português - Brasil (Portuguese - Brazil)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=brazilian&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;brazilian&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Română (Romanian)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=romanian&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;romanian&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Русский (Russian)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=russian&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;russian&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Suomi (Finnish)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=finnish&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;finnish&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Svenska (Swedish)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=swedish&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;swedish&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Türkçe (Turkish)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=turkish&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;turkish&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Tiếng Việt (Vietnamese)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=vietnamese&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;vietnamese&quot;},&quot;beta&quot;:false},{&quot;label&quot;:&quot;Українська (Ukrainian)&quot;,&quot;href&quot;:&quot;https://partner.steamgames.com/doc/features/workshop/implementation?l=ukrainian&quot;,&quot;action&quot;:2,&quot;action_parameters&quot;:{&quot;language&quot;:&quot;ukrainian&quot;},&quot;beta&quot;:false}]}],&quot;bIsAdmin&quot;:false,&quot;disableLoginButton&quot;:false}}"></div>
+	<link href="https://partner.steamgames.com/public/css/../javascript/partnermenu/partnermenu.css?v=aMaaA40l_j5i&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="https://partner.steamgames.com/public/javascript/partnermenu/partnermenu.js?v=-GnCLOfcuPoX&amp;l=english&amp;_cdn=fastly"></script>
+
+<div id="pageContainer" class="docNavFrame">
+	<!-- header -->
+	<!-- main content area -->
+	<div class="AdminPageContent" style="padding: 0 0 20px;">
+		<div class="doc_header_container" id="landingWelcome">
+			Steamworks Documentation			<div class="doc_search_ctn">
+								<form class="docSearchArea" action="https://partner.steamgames.com/doc">
+					<input name="q" type="text" placeholder="Search Steamworks Documentation…" title="Search Steamworks Documentation…" value="">
+					<input type="image" src="https://partner.steamgames.com/public/images/ico_search.gif">
+				</form>
+			</div>
+					</div>
+		<div id="docContentArea">
+			<div id="docToc" class="docScrollColumn ">
+				<div id="docTocArea">
+					<div id="docNavigation">
+			<ul style="">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/home">
+											<span class="icon icon_page"></span>						<span>
+							Documentation Home Page													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/gettingstarted">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Getting Started													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/gettingstarted/onboarding">
+											<span class="icon icon_page"></span>						<span>
+							Onboarding													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/gettingstarted/appfee">
+											<span class="icon icon_page"></span>						<span>
+							Steam Direct Fee													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/gettingstarted/managing_users">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Managing Your Steamworks Account													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/gettingstarted/managing_users/communication">
+											<span class="icon icon_page"></span>						<span>
+							User Permission: Receive Steamworks Communication													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/gettingstarted/managing_apps">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Managing Applications													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/gettingstarted/managing_apps/sharing">
+											<span class="icon icon_page"></span>						<span>
+							Application Management Sharing													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/gettingstarted/managing_apps/transfer">
+											<span class="icon icon_page"></span>						<span>
+							Transferring Applications													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/gettingstarted/mobile">
+											<span class="icon icon_page"></span>						<span>
+							Bringing Mobile Games to Steam													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/gettingstarted/contentsurvey">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Content Survey													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/gettingstarted/contentsurvey/indonesia">
+											<span class="icon icon_page"></span>						<span>
+							Age Ratings in Indonesia													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/gettingstarted/contentsurvey/germany">
+											<span class="icon icon_page"></span>						<span>
+							Age Ratings Mandatory in Germany													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/gettingstarted/faq">
+											<span class="icon icon_page"></span>						<span>
+							Onboarding - Frequently Asked Questions													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/gettingstarted/documents">
+											<span class="icon icon_page"></span>						<span>
+							Onboarding - Identification Documents Best Practices													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/store">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Store Presence													</span>
+					</a>							<ul style="display: none;">
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/store/application">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Applications													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/application/branches">
+											<span class="icon icon_page"></span>						<span>
+							Branches (Betas)													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/application/builds">
+											<span class="icon icon_page"></span>						<span>
+							Builds													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/store/application/bundles">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Bundles													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/application/bundles/collaborative">
+											<span class="icon icon_page"></span>						<span>
+							Creating Bundles Across Multiple Developers/Publishers													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/application/demos">
+											<span class="icon icon_page"></span>						<span>
+							Demos													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/application/depots">
+											<span class="icon icon_page"></span>						<span>
+							Depots													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/store/application/dlc">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Downloadable Content (DLC)													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/application/dlc/browse">
+											<span class="icon icon_page"></span>						<span>
+							DLC Visibility													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/application/soundtrackapp">
+											<span class="icon icon_page"></span>						<span>
+							Game Soundtracks on Steam													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/store/application/packages">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Packages													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/application/packages/autogrants">
+											<span class="icon icon_page"></span>						<span>
+							Autogrant Packages													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/application/packages/deluxe">
+											<span class="icon icon_page"></span>						<span>
+							Creating and Configuring Deluxe Packs													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/store/application/platforms">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Platforms													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/application/platforms/linux">
+											<span class="icon icon_page"></span>						<span>
+							Developing for SteamOS and Linux													</span>
+					</a>									</li>
+					</ul>
+						</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/coming_soon">
+											<span class="icon icon_page"></span>						<span>
+							Coming Soon													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/store/creator_homepage">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Developer And Publisher Homepages													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/creator_homepage/example">
+											<span class="icon icon_page"></span>						<span>
+							Homepage Example													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/earlyaccess">
+											<span class="icon icon_page"></span>						<span>
+							Early Access													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/manageeditions">
+											<span class="icon icon_page"></span>						<span>
+							Explain Your Editions													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/franchise_pages">
+											<span class="icon icon_page"></span>						<span>
+							Franchise Pages													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/freetoplay">
+											<span class="icon icon_page"></span>						<span>
+							Free To Play Games													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/store/assets">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Graphical Assets - Overview													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/assets/overrides">
+											<span class="icon icon_page"></span>						<span>
+							Artwork Overrides													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/assets/community">
+											<span class="icon icon_page"></span>						<span>
+							Community and Client Icons													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/assets/eventassets">
+											<span class="icon icon_page"></span>						<span>
+							Event Graphical Assets													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/assets/rules">
+											<span class="icon icon_page"></span>						<span>
+							Graphical Asset Rules													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/assets/libraryassets">
+											<span class="icon icon_page"></span>						<span>
+							Library Assets													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/assets/standard">
+											<span class="icon icon_page"></span>						<span>
+							Store Graphical Assets													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/store/broadcast">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Livestreaming													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/broadcast/setting_up">
+											<span class="icon icon_page"></span>						<span>
+							Setting Up A Stream													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/broadcast/faq">
+											<span class="icon icon_page"></span>						<span>
+							Frequently Asked Questions													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/broadcast/moderation">
+											<span class="icon icon_page"></span>						<span>
+							Broadcast Moderation and Adding Moderators													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/broadcast/stats">
+											<span class="icon icon_page"></span>						<span>
+							Broadcast Viewership Statistics													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/broadcast/demo">
+											<span class="icon icon_page"></span>						<span>
+							Livestreaming a Game Demo to the Steam Store													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/store/localization">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Localization and Languages													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/localization/languages">
+											<span class="icon icon_page"></span>						<span>
+							Languages Supported on Steam													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/prepurchase">
+											<span class="icon icon_page"></span>						<span>
+							Pre-Purchasing on Steam													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/store/pricing">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Pricing													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/pricing/new_currency">
+											<span class="icon icon_page"></span>						<span>
+							Adding A New Currency													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/pricing/csv">
+											<span class="icon icon_page"></span>						<span>
+							Package Pricing CSV Import/Export													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/store/pricing/subscriptions">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Recurring Subscriptions													</span>
+					</a>							<ul style="display: none;">
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/pricing/currencies">
+											<span class="icon icon_page"></span>						<span>
+							Supported Currencies													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/store/promo">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Promo Event Tools, Rules, and Guidelines													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/promo/thirdpartyevents">
+											<span class="icon icon_page"></span>						<span>
+							Participating in Third-Party Sales Events													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/promo/creatorpages">
+											<span class="icon icon_page"></span>						<span>
+							Developer, Publisher, and Franchise Sale Pages													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/promo/organizers">
+											<span class="icon icon_page"></span>						<span>
+							Hosting Third-Party Sales Events													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/release_dates">
+											<span class="icon icon_page"></span>						<span>
+							Release Dates													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/types">
+											<span class="icon icon_page"></span>						<span>
+							Release Options													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/releasing">
+											<span class="icon icon_page"></span>						<span>
+							Release Process													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/retire_app">
+											<span class="icon icon_page"></span>						<span>
+							Removing a product from Steam													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/review_process">
+											<span class="icon icon_page"></span>						<span>
+							Review Process													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/roadmap">
+											<span class="icon icon_page"></span>						<span>
+							Roadmaps													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/seasonpass">
+											<span class="icon icon_page"></span>						<span>
+							Season Passes													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/store/china">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Steam China													</span>
+					</a>							<ul style="display: none;">
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/tags">
+											<span class="icon icon_page"></span>						<span>
+							Steam Tags													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/store/page">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Store Page, Building and Editing													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/page/accolades">
+											<span class="icon icon_page"></span>						<span>
+							Store Page Accolades													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/page/assets">
+											<span class="icon icon_page"></span>						<span>
+							Store Page Extra Asset Management													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/page/description">
+											<span class="icon icon_page"></span>						<span>
+							Store Page Written Description													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/testing">
+											<span class="icon icon_page"></span>						<span>
+							Testing On Steam													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/top_sellers">
+											<span class="icon icon_page"></span>						<span>
+							Top Sellers Lists													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/trailer">
+											<span class="icon icon_page"></span>						<span>
+							Trailers													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/updates">
+											<span class="icon icon_page"></span>						<span>
+							Updating Your Game - Best Practices													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/store/reviews">
+											<span class="icon icon_page"></span>						<span>
+							User Reviews													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf currentpath">
+											<a href="https://partner.steamgames.com/doc/features">
+											<span class="icon icon_shift_right collapse_toggle "></span>						<span>
+							Features													</span>
+					</a>							<ul style="">
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/features/anticheat">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Anti-cheat and Game Bans													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/anticheat/vac_integration">
+											<span class="icon icon_page"></span>						<span>
+							Anti-Cheat Integration													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/common_redist">
+											<span class="icon icon_page"></span>						<span>
+							Common Redistributables													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/enhancedrichpresence">
+											<span class="icon icon_page"></span>						<span>
+							Enhanced Rich Presence													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/game_notifications">
+											<span class="icon icon_page"></span>						<span>
+							Game Notifications													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/features/microtransactions">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Microtransactions (In-Game Purchases)													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/microtransactions/implementation">
+											<span class="icon icon_page"></span>						<span>
+							Microtransactions Implementation Guide													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/microtransactions/recurring_billing">
+											<span class="icon icon_page"></span>						<span>
+							Recurring In-Game Billing													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/features/multiplayer">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Multiplayer													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/multiplayer/game_servers">
+											<span class="icon icon_page"></span>						<span>
+							Game Servers													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/multiplayer/steamdatagramrelay">
+											<span class="icon icon_page"></span>						<span>
+							Steam Datagram Relay													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/features/multiplayer/matchmaking">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Steam Matchmaking &amp; Lobbies													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/multiplayer/matchmaking/skill">
+											<span class="icon icon_page"></span>						<span>
+							Matchmaking based on skill													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/multiplayer/networking">
+											<span class="icon icon_page"></span>						<span>
+							Steam Networking													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/features/achievements">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Stats and Achievements													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/achievements/ach_guide">
+											<span class="icon icon_page"></span>						<span>
+							Step by Step: Achievements													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/achievements/stats_guide">
+											<span class="icon icon_page"></span>						<span>
+							Step by Step: Stats													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_audio">
+											<span class="icon icon_page"></span>						<span>
+							Steam Audio													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/cloud">
+											<span class="icon icon_page"></span>						<span>
+							Steam Cloud													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/cloudgaming">
+											<span class="icon icon_page"></span>						<span>
+							Steam Cloud Play (Beta)													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/community">
+											<span class="icon icon_page"></span>						<span>
+							Steam Community													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/drm">
+											<span class="icon icon_page"></span>						<span>
+							Steam DRM													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/error_reporting">
+											<span class="icon icon_page"></span>						<span>
+							Steam Error Reporting													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/families">
+											<span class="icon icon_page"></span>						<span>
+							Steam Families													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/html_surface">
+											<span class="icon icon_page"></span>						<span>
+							Steam HTML Surface													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Steam Input													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/action_manifest_file">
+											<span class="icon icon_page"></span>						<span>
+							Action Manifest Files													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/action_set_layers">
+											<span class="icon icon_page"></span>						<span>
+							Action Set Layers													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/activators">
+											<span class="icon icon_page"></span>						<span>
+							Activators													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/browse_configs">
+											<span class="icon icon_page"></span>						<span>
+							Browsing Configurations													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/concepts">
+											<span class="icon icon_page"></span>						<span>
+							General Concepts													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/getting_started_for_devs">
+											<span class="icon icon_page"></span>						<span>
+							Getting Started for Developers													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/getting_started_for_players">
+											<span class="icon icon_page"></span>						<span>
+							Getting Started for Players													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/iga_file">
+											<span class="icon icon_page"></span>						<span>
+							In-Game Actions File													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/input_source_modes">
+											<span class="icon icon_page"></span>						<span>
+							Input Source Modes													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/input_source">
+											<span class="icon icon_page"></span>						<span>
+							Input Sources													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/legacy_mode">
+											<span class="icon icon_page"></span>						<span>
+							Legacy Mode Bindings													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/mode_shifting">
+											<span class="icon icon_page"></span>						<span>
+							Mode Shifting													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/mouse_regions">
+											<span class="icon icon_page"></span>						<span>
+							Mouse Regions													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/radial_menus">
+											<span class="icon icon_page"></span>						<span>
+							Radial Menus													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/device">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Steam Input Devices													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/device/x360_controller">
+											<span class="icon icon_page"></span>						<span>
+							Microsoft Xbox 360 Controller													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/device/xb1_controller">
+											<span class="icon icon_page"></span>						<span>
+							Microsoft Xbox One Controller													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/device/ps4_controller">
+											<span class="icon icon_page"></span>						<span>
+							Sony PlayStation 4 Controller													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/device/steam_controller">
+											<span class="icon icon_page"></span>						<span>
+							Steam Controller (2015)													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/steam_input_gamepad_emulation_bestpractices">
+											<span class="icon icon_page"></span>						<span>
+							Steam Input Gamepad Emulation - Best Practices													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/iga_examples">
+											<span class="icon icon_page"></span>						<span>
+							Templates for In-Game Actions Files													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/touch_menus">
+											<span class="icon icon_page"></span>						<span>
+							Touch Menus													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steam_controller/workshop_uploaded_configs">
+											<span class="icon icon_page"></span>						<span>
+							Uploading Steam Input Configs to Steam Workshop													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/features/inventory">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Steam Inventory Service													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/inventory/accessories">
+											<span class="icon icon_page"></span>						<span>
+							Steam Inventory Item Accessories													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/inventory/dynamicproperties">
+											<span class="icon icon_page"></span>						<span>
+							Steam Inventory Item Dynamic Properties													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/inventory/itemstore">
+											<span class="icon icon_page"></span>						<span>
+							Steam Inventory Item Store													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/inventory/itemtags">
+											<span class="icon icon_page"></span>						<span>
+							Steam Inventory Item Tags													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/inventory/tools">
+											<span class="icon icon_page"></span>						<span>
+							Steam Inventory Item Tools													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/inventory/schema">
+											<span class="icon icon_page"></span>						<span>
+							Steam Inventory Schema													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/inventory/webfunctions">
+											<span class="icon icon_page"></span>						<span>
+							Steam Inventory Web Functions													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/keys">
+											<span class="icon icon_page"></span>						<span>
+							Steam Keys													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/features/leaderboards">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Steam Leaderboards													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/leaderboards/guide">
+											<span class="icon icon_page"></span>						<span>
+							Step by Step: Leaderboards													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/overlay">
+											<span class="icon icon_page"></span>						<span>
+							Steam Overlay													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/playtest">
+											<span class="icon icon_page"></span>						<span>
+							Steam Playtest													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/remoteplay">
+											<span class="icon icon_page"></span>						<span>
+							Steam Remote Play													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/screenshots">
+											<span class="icon icon_page"></span>						<span>
+							Steam Screenshots													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/timeline">
+											<span class="icon icon_page"></span>						<span>
+							Steam Timelines													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/voice">
+											<span class="icon icon_page"></span>						<span>
+							Steam Voice													</span>
+					</a>									</li>
+							<li class="nonleaf currentpath">
+											<a href="https://partner.steamgames.com/doc/features/workshop">
+											<span class="icon icon_shift_right collapse_toggle "></span>						<span>
+							Steam Workshop													</span>
+					</a>							<ul style="">
+							<li class="leaf currentpath current">
+											<a href="https://partner.steamgames.com/doc/features/workshop/implementation">
+											<span class="icon icon_page"></span>						<span>
+							Steam Workshop Implementation Guide													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/workshop/tags">
+											<span class="icon icon_page"></span>						<span>
+							Steam Workshop Item Tags													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/workshop/itemversioning">
+											<span class="icon icon_page"></span>						<span>
+							Steam Workshop Item Versioning													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/auth">
+											<span class="icon icon_page"></span>						<span>
+							User Authentication and Ownership													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/features/steamvr">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Virtual Reality													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steamvr/info">
+											<span class="icon icon_page"></span>						<span>
+							SteamVR													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steamvr/settings">
+											<span class="icon icon_page"></span>						<span>
+							Application Settings for Virtual Reality													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steamvr/input">
+											<span class="icon icon_page"></span>						<span>
+							SteamVR Input													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steamvr/openvr">
+											<span class="icon icon_page"></span>						<span>
+							OpenVR													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/features/steamvr/enterprise">
+											<span class="icon icon_page"></span>						<span>
+							SteamVR for Enterprise / Government Use													</span>
+					</a>									</li>
+					</ul>
+						</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/finance">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Finance													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/finance/refunds">
+											<span class="icon icon_page"></span>						<span>
+							Developer Refund Reporting													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/finance/payments_salesreporting">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Reporting and Payments													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/finance/payments_salesreporting/faq">
+											<span class="icon icon_page"></span>						<span>
+							Reporting and Payments FAQ													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/finance/taxfaq">
+											<span class="icon icon_page"></span>						<span>
+							Taxes FAQ													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/marketing">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Sales and Marketing													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/advertising">
+											<span class="icon icon_page"></span>						<span>
+							Advertising on Steam													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/bestpractices">
+											<span class="icon icon_page"></span>						<span>
+							Best Practices, Marketing													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/marketing/community_moderation">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Community Moderation													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/community_moderation/adding_moderators">
+											<span class="icon icon_page"></span>						<span>
+							Adding Community Moderators													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/curators">
+											<span class="icon icon_page"></span>						<span>
+							Curators and Curator Connect													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/marketing/discounts">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Discounting													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/discounts/dailydeal">
+											<span class="icon icon_page"></span>						<span>
+							Daily Deals													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/discounts/freetokeep">
+											<span class="icon icon_page"></span>						<span>
+							Free to Keep (100% Discount)													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/discounts/freeweekends">
+											<span class="icon icon_page"></span>						<span>
+							Free Weekends													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/discounts/seasonalsales">
+											<span class="icon icon_page"></span>						<span>
+							Seasonal Sales													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/marketing/event_tools">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Events and Announcements Tools													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/event_tools/event_examples">
+											<span class="icon icon_page"></span>						<span>
+							Events and Announcements Examples													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/event_tools/embed">
+											<span class="icon icon_page"></span>						<span>
+							Embeddable Widgets													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/event_tools/moderation">
+											<span class="icon icon_page"></span>						<span>
+							Events and Announcements Review Step													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/event_tools/visibility">
+											<span class="icon icon_page"></span>						<span>
+							Events and Announcements Visibility													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/event_tools/stats">
+											<span class="icon icon_page"></span>						<span>
+							Events and Announcements Visibility Stats Reporting													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/event_tools/type_majorupdate">
+											<span class="icon icon_page"></span>						<span>
+							Event Type: Major Update													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/event_tools/type_patchnotes">
+											<span class="icon icon_page"></span>						<span>
+							Event Type: Small Update / Patch Notes													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/event_tools/import">
+											<span class="icon icon_page"></span>						<span>
+							Importing HTML													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/marketing/event_tools/sales">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Sale Page Tools													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/event_tools/sales/tools">
+											<span class="icon icon_page"></span>						<span>
+							Sale Page Tools -- Information for Partners													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/event_tools/sales/groups">
+											<span class="icon icon_page"></span>						<span>
+							Sale Page Tools - Background Groupings													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/event_tools/sales/livestream">
+											<span class="icon icon_page"></span>						<span>
+							Sale Page Tools - Livestreaming (Broadcasting)													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/event_tools/sales/minimum">
+											<span class="icon icon_page"></span>						<span>
+							Sale Page Tools - Minimum Requirements													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/marketing/event_tools/sales/sections">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Sale Page Tools - Section Types													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/event_tools/sales/sections/apps">
+											<span class="icon icon_page"></span>						<span>
+							Sale Page Section: Apps And Bundles													</span>
+					</a>									</li>
+					</ul>
+						</li>
+					</ul>
+						</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/tools">
+											<span class="icon icon_page"></span>						<span>
+							Features And Tools, Marketing													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/followers">
+											<span class="icon icon_page"></span>						<span>
+							Followers													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/google_analytics">
+											<span class="icon icon_page"></span>						<span>
+							Google Analytics													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/pointsshopitems">
+											<span class="icon icon_page"></span>						<span>
+							Points Shop Items													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/profile">
+											<span class="icon icon_page"></span>						<span>
+							Profile Features													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/branding">
+											<span class="icon icon_page"></span>						<span>
+							Steam Branding Guidelines													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/tradingcards">
+											<span class="icon icon_page"></span>						<span>
+							Steam Community Items													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/traffic_reporting">
+											<span class="icon icon_page"></span>						<span>
+							Store and Platform Traffic Reporting													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/widget">
+											<span class="icon icon_page"></span>						<span>
+							Store Widget													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Upcoming Steam Events													</span>
+					</a>							<ul style="display: none;">
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Steam Next Fest													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/tips">
+											<span class="icon icon_page"></span>						<span>
+							Steam Next Fest - Tips													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/feb_2027">
+											<span class="icon icon_page"></span>						<span>
+							Steam Next Fest: February 2027													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/june_2027">
+											<span class="icon icon_page"></span>						<span>
+							Steam Next Fest: June 2027													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Steam Themed Sale Events													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/auto_battler_rpg_2026">
+											<span class="icon icon_page"></span>						<span>
+							Steam Auto Battler RPG Fest 2026													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/couch_coop_2027">
+											<span class="icon icon_page"></span>						<span>
+							Steam Couch Co-Op Fest 2027													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/desktop_companion_2027">
+											<span class="icon icon_page"></span>						<span>
+							Steam Desktop Companion Fest 2027													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/dinos_robots_2027">
+											<span class="icon icon_page"></span>						<span>
+							Steam Dinos vs. Robots Fest 2027													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/fighting_2027">
+											<span class="icon icon_page"></span>						<span>
+							Steam Fighting Fest 2027													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/medieval_2026">
+											<span class="icon icon_page"></span>						<span>
+							Steam Medieval Fest 2026													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/mountaineering_2027">
+											<span class="icon icon_page"></span>						<span>
+							Steam Mountaineering Fest 2027													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/racing_2027">
+											<span class="icon icon_page"></span>						<span>
+							Steam Racing Fest 2027													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/rts_2027">
+											<span class="icon icon_page"></span>						<span>
+							Steam Real-Time Strategy Fest 2027													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/rhythm_2027">
+											<span class="icon icon_page"></span>						<span>
+							Steam Rhythm Fest 2027													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/sheep_2027">
+											<span class="icon icon_page"></span>						<span>
+							Steam Sheep Fest 2027													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/shop_keep_2027">
+											<span class="icon icon_page"></span>						<span>
+							Steam Shop Keeper Fest 2027													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales/witch_2027">
+											<span class="icon icon_page"></span>						<span>
+							Steam Witch Fest 2027													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/upcoming_events/2026_winter_sale">
+											<span class="icon icon_page"></span>						<span>
+							Steam Winter Sale 2026													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/utm_analytics">
+											<span class="icon icon_page"></span>						<span>
+							UTM Analytics													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/marketing/visibility">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Visibility on Steam													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/visibility/personalcalendar">
+											<span class="icon icon_page"></span>						<span>
+							Steam Personal Calendar													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/visibility/update_rounds">
+											<span class="icon icon_page"></span>						<span>
+							Update Visibility Rounds													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/marketing/wishlist">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Wishlists													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/marketing/wishlist/reporting">
+											<span class="icon icon_page"></span>						<span>
+							Wishlist Reporting													</span>
+					</a>									</li>
+					</ul>
+						</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/sdk">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Steamworks SDK													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/sdk/installscripts">
+											<span class="icon icon_page"></span>						<span>
+							Creating and using InstallScripts													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/sdk/goldmaster">
+											<span class="icon icon_page"></span>						<span>
+							Creating a retail and &quot;Gold Master&quot; disk													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/sdk/api">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Steamworks API Overview													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/sdk/api/debugging">
+											<span class="icon icon_page"></span>						<span>
+							Debugging the Steamworks API													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/sdk/api/example">
+											<span class="icon icon_page"></span>						<span>
+							Steamworks API Example Application (SpaceWar)													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/sdk/updating">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Updating Game Build													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/sdk/updating/partial_depot">
+											<span class="icon icon_page"></span>						<span>
+							Partial Depot Update Instructions													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/sdk/updating/rename_exe">
+											<span class="icon icon_page"></span>						<span>
+							Tip - Renaming a live exe													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/sdk/uploading">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Uploading to Steam													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/sdk/uploading/distributing_opensource">
+											<span class="icon icon_page"></span>						<span>
+							Distributing Open Source Applications on Steam													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/sdk/uploading/distributing_source_engine">
+											<span class="icon icon_page"></span>						<span>
+							Distributing Source Engine Games / Mods													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/sdk/uploading/distributing_gs">
+											<span class="icon icon_page"></span>						<span>
+							Distributing Your Dedicated Game Server													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/sdk/uploading/local_content_server">
+											<span class="icon icon_page"></span>						<span>
+							SteamPipe Local Content Server													</span>
+					</a>									</li>
+					</ul>
+						</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/webapi_overview">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Web API Overview													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi_overview/auth">
+											<span class="icon icon_page"></span>						<span>
+							Authentication using Web API Keys													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi_overview/responses">
+											<span class="icon icon_page"></span>						<span>
+							Error Codes &amp;amp;amp; Responses													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi_overview/oauth">
+											<span class="icon icon_page"></span>						<span>
+							OAuth													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/accessibility_features">
+											<span class="icon icon_page"></span>						<span>
+							Accessibility Features													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Steam Hardware													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/recommendations">
+											<span class="icon icon_page"></span>						<span>
+							Getting your game ready for Steam Deck and Steam Machine													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/debugging">
+											<span class="icon icon_page"></span>						<span>
+							How to debug Windows games on Steam Deck and Steam Machine													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/loadgames">
+											<span class="icon icon_page"></span>						<span>
+							How to load and run games on Steam Deck and Steam Machine													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamdeck">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Steam Deck													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamdeck/templates">
+											<span class="icon icon_page"></span>						<span>
+							Social Media Templates													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamdeck/brandguidelines">
+											<span class="icon icon_page"></span>						<span>
+							Steam Deck Brand Guidelines and Logos													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamdeck/devkits">
+											<span class="icon icon_page"></span>						<span>
+							Steam Deck Developer Kits													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamdeck/faq">
+											<span class="icon icon_page"></span>						<span>
+							Steam Deck FAQ													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamdeck/svg">
+											<span class="icon icon_page"></span>						<span>
+							Steam Deck SVG Line Art													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamdeck/virtual-conference">
+											<span class="icon icon_page"></span>						<span>
+							Steamworks Virtual Conference: Steam Deck - Nov 12th 2021													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/compat">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Steam Deck and Steam Machine Compatibility Review													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/compat/verified">
+											<span class="icon icon_page"></span>						<span>
+							Steam Deck Verified Landing Pages													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamframe">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Steam Frame													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamframe/adb_lepton">
+											<span class="icon icon_page"></span>						<span>
+							Connecting adb to Lepton													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamframe/loadgames">
+											<span class="icon icon_page"></span>						<span>
+							How to load and run games on Steam Frame													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamframe/apk_upload">
+											<span class="icon icon_page"></span>						<span>
+							How to upload Android APKs to Steam													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamframe/engines">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							OpenXR Game Engine Integrations													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamframe/engines/custom">
+											<span class="icon icon_page"></span>						<span>
+							Custom Engines													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamframe/engines/godot">
+											<span class="icon icon_page"></span>						<span>
+							Godot													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamframe/engines/unity">
+											<span class="icon icon_page"></span>						<span>
+							Unity													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamframe/engines/unreal">
+											<span class="icon icon_page"></span>						<span>
+							Unreal Engine													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamframe/setup">
+											<span class="icon icon_page"></span>						<span>
+							Setting up your Steam Frame for development													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamframe/debugging">
+											<span class="icon icon_page"></span>						<span>
+							Steam Frame Debugging													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamframe/input">
+											<span class="icon icon_page"></span>						<span>
+							Steam Frame Input													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamframe/compat">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Steam Frame Standalone Compatibility Review Process													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamframe/compat/perf_criteria">
+											<span class="icon icon_page"></span>						<span>
+							Performance Assessment Overlay (VR titles)													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamframe/vrpreferences">
+											<span class="icon icon_page"></span>						<span>
+							Suggesting default user settings for your game													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steamframe/compatibility">
+											<span class="icon icon_page"></span>						<span>
+							What games can run standalone on Steam Frame													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/proton">
+											<span class="icon icon_page"></span>						<span>
+							Steam Hardware and Proton													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/steamhardware/steammachine">
+											<span class="icon icon_page"></span>						<span>
+							Steam Machine													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/sitelicense">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Steam PC Café Program													</span>
+					</a>							<ul style="display: none;">
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/sitelicense/licensees">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Licensees													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/sitelicense/licensees/signup">
+											<span class="icon icon_page"></span>						<span>
+							PC Café Requirements and Sign Up Instructions													</span>
+					</a>									</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/sitelicense/licensees/gettingstarted">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Getting Started													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/sitelicense/licensees/gettingstarted/licensemodelpc">
+											<span class="icon icon_page"></span>						<span>
+							Setup instructions for the PC Café model (incl. PC Café Server and Content Cache)													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/sitelicense/licensees/gettingstarted/licensemodelvr">
+											<span class="icon icon_page"></span>						<span>
+							Setup instructions for the VR arcade model													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/sitelicense/licensees/faq">
+											<span class="icon icon_page"></span>						<span>
+							Frequently Asked Questions													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/sitelicense/publisher">
+											<span class="icon icon_page"></span>						<span>
+							Publishers													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/sitelicense/users">
+											<span class="icon icon_page"></span>						<span>
+							Steam Users													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/api">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Steamworks API Reference													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamApps">
+											<span class="icon icon_page"></span>						<span>
+							ISteamApps Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamClient">
+											<span class="icon icon_page"></span>						<span>
+							ISteamClient Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamController">
+											<span class="icon icon_page"></span>						<span>
+							ISteamController Interface (Deprecated)													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamFriends">
+											<span class="icon icon_page"></span>						<span>
+							ISteamFriends Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamGameCoordinator">
+											<span class="icon icon_page"></span>						<span>
+							ISteamGameCoordinator Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamGameServer">
+											<span class="icon icon_page"></span>						<span>
+							ISteamGameServer Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamGameServerStats">
+											<span class="icon icon_page"></span>						<span>
+							ISteamGameServerStats Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamHTMLSurface">
+											<span class="icon icon_page"></span>						<span>
+							ISteamHTMLSurface Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamHTTP">
+											<span class="icon icon_page"></span>						<span>
+							ISteamHTTP Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/isteaminput">
+											<span class="icon icon_page"></span>						<span>
+							ISteamInput Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamInventory">
+											<span class="icon icon_page"></span>						<span>
+							ISteamInventory Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamMatchmaking">
+											<span class="icon icon_page"></span>						<span>
+							ISteamMatchmaking Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamMatchmakingServers">
+											<span class="icon icon_page"></span>						<span>
+							ISteamMatchmakingServers Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamMusic">
+											<span class="icon icon_page"></span>						<span>
+							ISteamMusic Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamNetworking">
+											<span class="icon icon_page"></span>						<span>
+							ISteamNetworking Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamNetworkingMessages">
+											<span class="icon icon_page"></span>						<span>
+							ISteamNetworkingMessages Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamNetworkingSockets">
+											<span class="icon icon_page"></span>						<span>
+							ISteamNetworkingSockets Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamNetworkingUtils">
+											<span class="icon icon_page"></span>						<span>
+							ISteamNetworkingUtils Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/isteamparties">
+											<span class="icon icon_page"></span>						<span>
+							ISteamParties Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamRemotePlay">
+											<span class="icon icon_page"></span>						<span>
+							ISteamRemotePlay Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamRemoteStorage">
+											<span class="icon icon_page"></span>						<span>
+							ISteamRemoteStorage Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamScreenshots">
+											<span class="icon icon_page"></span>						<span>
+							ISteamScreenshots Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamTimeline">
+											<span class="icon icon_page"></span>						<span>
+							ISteamTimeline													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamUGC">
+											<span class="icon icon_page"></span>						<span>
+							ISteamUGC Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamUser">
+											<span class="icon icon_page"></span>						<span>
+							ISteamUser Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamUserStats">
+											<span class="icon icon_page"></span>						<span>
+							ISteamUserStats Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamUtils">
+											<span class="icon icon_page"></span>						<span>
+							ISteamUtils Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/ISteamVideo">
+											<span class="icon icon_page"></span>						<span>
+							ISteamVideo Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/SteamEncryptedAppTicket">
+											<span class="icon icon_page"></span>						<span>
+							SteamEncryptedAppTicket													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/steamnetworkingtypes">
+											<span class="icon icon_page"></span>						<span>
+							steamnetworkingtypes.h													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/steam_api">
+											<span class="icon icon_page"></span>						<span>
+							steam_api.h													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/api/steam_gameserver">
+											<span class="icon icon_page"></span>						<span>
+							steam_gameserver.h													</span>
+					</a>									</li>
+					</ul>
+						</li>
+							<li class="nonleaf">
+											<a href="https://partner.steamgames.com/doc/webapi">
+											<span class="icon icon_shift_right collapse_toggle closed"></span>						<span>
+							Steamworks Web API Reference													</span>
+					</a>							<ul style="display: none;">
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/IBroadcastService">
+											<span class="icon icon_page"></span>						<span>
+							IBroadcastService Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/ICheatReportingService">
+											<span class="icon icon_page"></span>						<span>
+							ICheatReportingService Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/icloudservice">
+											<span class="icon icon_page"></span>						<span>
+							ICloudService Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/IEconMarketService">
+											<span class="icon icon_page"></span>						<span>
+							IEconMarketService Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/IEconService">
+											<span class="icon icon_page"></span>						<span>
+							IEconService Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/IGameInventory">
+											<span class="icon icon_page"></span>						<span>
+							IGameInventory Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/IGameNotificationsService">
+											<span class="icon icon_page"></span>						<span>
+							IGameNotificationsService Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/IGameServersService">
+											<span class="icon icon_page"></span>						<span>
+							IGameServersService Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/IInventoryService">
+											<span class="icon icon_page"></span>						<span>
+							IInventoryService Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/ILobbyMatchmakingService">
+											<span class="icon icon_page"></span>						<span>
+							ILobbyMatchmakingService Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/IPartnerFinancialsService">
+											<span class="icon icon_page"></span>						<span>
+							IPartnerFinancialsService Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/IPlayerService">
+											<span class="icon icon_page"></span>						<span>
+							IPlayerService Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/IPublishedFileModerationService">
+											<span class="icon icon_page"></span>						<span>
+							IPublishedFileModerationService Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/IPublishedFileService">
+											<span class="icon icon_page"></span>						<span>
+							IPublishedFileService Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/isitelicenseservice">
+											<span class="icon icon_page"></span>						<span>
+							ISiteLicenseService Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/ISteamApps">
+											<span class="icon icon_page"></span>						<span>
+							ISteamApps Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/ISteamCommunity">
+											<span class="icon icon_page"></span>						<span>
+							ISteamCommunity Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/ISteamEconomy">
+											<span class="icon icon_page"></span>						<span>
+							ISteamEconomy Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/ISteamGameServerStats">
+											<span class="icon icon_page"></span>						<span>
+							ISteamGameServerStats Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/ISteamLeaderboards">
+											<span class="icon icon_page"></span>						<span>
+							ISteamLeaderboards Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/ISteamMicroTxn">
+											<span class="icon icon_page"></span>						<span>
+							ISteamMicroTxn Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/ISteamMicroTxnSandbox">
+											<span class="icon icon_page"></span>						<span>
+							ISteamMicroTxnSandbox Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/ISteamNews">
+											<span class="icon icon_page"></span>						<span>
+							ISteamNews Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/ISteamPublishedItemSearch">
+											<span class="icon icon_page"></span>						<span>
+							ISteamPublishedItemSearch Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/ISteamPublishedItemVoting">
+											<span class="icon icon_page"></span>						<span>
+							ISteamPublishedItemVoting Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/ISteamRemoteStorage">
+											<span class="icon icon_page"></span>						<span>
+							ISteamRemoteStorage Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/ISteamUserAuth">
+											<span class="icon icon_page"></span>						<span>
+							ISteamUserAuth Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/ISteamUser">
+											<span class="icon icon_page"></span>						<span>
+							ISteamUser Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/ISteamUserStats">
+											<span class="icon icon_page"></span>						<span>
+							ISteamUserStats Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/ISteamWebAPIUtil">
+											<span class="icon icon_page"></span>						<span>
+							ISteamWebAPIUtil Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/IStoreService">
+											<span class="icon icon_page"></span>						<span>
+							IStoreService Interface													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/IUserReviewsService">
+											<span class="icon icon_page"></span>						<span>
+							IUserReviewsService													</span>
+					</a>									</li>
+							<li class="leaf">
+											<a href="https://partner.steamgames.com/doc/webapi/IWorkshopService">
+											<span class="icon icon_page"></span>						<span>
+							IWorkshopService Interface													</span>
+					</a>									</li>
+					</ul>
+						</li>
+					</ul>
+		</div>
+									</div>
+			</div>
+			<div id="docTocHideContainer">
+				<div id="docTocHideControl" class=""></div>
+			</div>
+			<div id="docMainContentArea" class="docScrollColumn">
+					<div class="docPageTitle">Steam Workshop Implementation Guide</div>
+	<div class="landingBreadcrumbs">
+		<a href="https://partner.steamgames.com/doc/">Steamworks Documentation</a> &gt; <a href="https://partner.steamgames.com/doc/features">Features</a> &gt; <a href="https://partner.steamgames.com/doc/features/workshop">Steam Workshop</a> &gt; <a href="https://partner.steamgames.com/doc/features/workshop/implementation">Steam Workshop Implementation Guide</a>	</div>
+	<div class="grayRule"></div>
+		<div class="documentation_bbcode"><h2 class="bb_section"><a name="1"></a>Introduction</h2>Steam Workshop is a system of back-end storage and front-end web pages that make it easy to store, organize, sort, rate, and download content for your game or application.<br><br>This page contains technical details on implementing Steam Workshop with your title. For information and definitions of the various types of Workshop integration you can utilize and how to make the best out of the tools provided by Steam please see the <a href="https://partner.steamgames.com/doc/features/workshop" class="bb_doclink">Steam Workshop Overview</a> before getting started integrating the steam workshop with your game.<br><br>In a typical set-up, customers of your game would use tools provided by you with purchase of your game to create modifications or entirely new content. Those customers would then submit that content through a form built into your tool to the Steam Workshop. Other customers would then be able to browse, sort, rate, and subscribe to items they wish to add to their game by going to the <a href="http://steamcommunity.com/workshop/" target="_blank" rel="noreferrer"  >Steam Workshop</a> in the Steam Community. Those items would then download through Steam. If you've registered for the <a href="https://partner.steamgames.com/doc/api/ISteamUGC#ItemInstalled_t" class="bb_apilink">ISteamUGC::ItemInstalled_t</a> callback within your game, you can then call <a href="https://partner.steamgames.com/doc/api/ISteamUGC#GetItemInstallInfo" class="bb_apilink">ISteamUGC::GetItemInstallInfo</a> to get the installed location and read the data directly from that folder. That new content would then be recognized by the game in whatever capacity makes sense for your game and the content created.<h2 class="bb_subsection"><a name="2"></a>Steam Workshop Types, Monetization, &amp; Best Practices</h2>For more information and definitions of the various types of Workshop integration you can utilize and how to make the best out of the tools provided by Steam, please see the <a href="https://partner.steamgames.com/doc/features/workshop" class="bb_doclink">Steam Workshop</a> documentation.<h2 class="bb_subsection"><a name="WorkshopVisibility"></a>Managing Steam Workshop Visibility</h2>The Steam Workshop is the website hosted through Steam that enumerates shared content and allows users to vote and comment on the content visible through the community. By default, applications are not enabled to be publicly visible in the Workshop. This prevents content not intended to be shared through the Steam Workshop portal from being visible unless the workshop is set to public.<br>Set the visibility state of the workshop through the following steps:<br><ol class="bb_ol ">	<li> Browse to the application landing page on the Steamworks website<br>	</li><li> Click <strong>Edit Steamworks Settings</strong><br>	</li><li> From the <strong>Workshop</strong> Tab, select <strong>General</strong><br>	</li><li> On the right-hand side of the page, find the <strong>Visibility State</strong> section.<br>	</li><li> Use the radio buttons to select the desired level of visibility which can include Developers Only, Developers &amp; Testers, Customers &amp; Developers and Everyone.<br>	</li><li> From the <strong>Publish</strong> tab, click <strong>Prepare for Publishing</strong><br>	</li><li> Click <strong>Publish to Steam</strong> and complete the process to publish the change.</li></ol>Note: To change the visibility state to Everyone, the Workshop checklist must be complete which includes branding, title, description and at least one item of content publicly visible.<h2 class="bb_section"><a name="TechOverview"></a>Tech Overview</h2>The process to share and consume User Generated Content is by using the <a href="https://partner.steamgames.com/doc/api/ISteamUGC" class="bb_apilink">ISteamUGC</a> API which can be found in the <a href="https://partner.steamgames.com/doc/sdk" class="bb_doclink">Steamworks SDK</a>. The methods exposed provide a way to share workshop item content which can then be discovered through the Steam Workshop or an in-app experience.<br><br>The Workshop API must be accessed through the pointer that is returned from <code class="bb_code bb_code_inline nohighlight">SteamUGC()</code>.<br><br>For example:<br><div class="bb_code ">SteamAPICall_t hSteamAPICall = SteamUGC()-&gt;CreateItem( SteamUtils()-&gt;GetAppID(), k_EWorkshopFileTypeMicrotransaction );</div><h2 class="bb_subsection"><a name="EnableISteamUGC"></a>Enabling ISteamUGC for a Game or Application</h2>Before workshop items can be uploaded to the Steamworks backend there are two configuration settings that must be made, Configuring Steam Cloud Quotas and Enabling the <a href="https://partner.steamgames.com/doc/api/ISteamUGC" class="bb_apilink">ISteamUGC</a> API.<br><br>The Steam Cloud feature is used to store the preview images associated to workshop items. The Steam Cloud Quota can be configured with the following steps:<br><ol class="bb_ol ">	<li> Navigate to the <a href="https://partner.steamgames.com/apps/cloud/" target="_blank" rel="noreferrer"  >Steam Cloud Settings</a> page in the App Admin panel.<br>	</li><li> Set the <strong>Byte quota per user</strong> and <strong>Number of files allowed per user</strong> to appropriate values for preview image storage<br>	</li><li> Click Save<br>	</li><li> From the <strong>Publish</strong> tab, click <strong>Prepare for Publishing</strong><br>	</li><li> Click <strong>Publish to Steam</strong> and complete the process to publish the change.</li></ol><br>Enabling the <a href="https://partner.steamgames.com/doc/api/ISteamUGC" class="bb_apilink">ISteamUGC</a> API can be accomplished with the following steps:<br><ol class="bb_ol ">	<li> Navigate to the <a href="https://partner.steamgames.com/apps/workshop/" target="_blank" rel="noreferrer"  >Steam Workshop Configuration</a> page in the App Admin panel.<br>	</li><li> Find the <strong>Additional Configuration Options</strong> section.<br>	</li><li> Check <strong>Enable ISteamUGC for file transfer</strong>.<br>	</li><li> Click <strong>Save</strong>.<br>	</li><li> From the <strong>Publish</strong> tab, click <strong>Prepare for Publishing</strong>.<br>	</li><li> Click <strong>Publish to Steam</strong> and complete the process to publish the change.</li></ol>Once these settings are in place workshop content can be uploaded via the API.<h2 class="bb_section"><a name="CreateUploadContent"></a>Creating and Uploading Content</h2>The process of creating and uploading workshop content is a simple and repeatable process as shown in the flow chart below.<br><br><img src="https://shared.fastly.steamstatic.com/community_assets/images/steamworks_docs/english/ISteamUGCFlow-CreateUpload-Web2.png" alt="ISteamUGCFlow-CreateUpload-Web2.png" title="ISteamUGCFlow-CreateUpload-Web2.png"><h2 class="bb_subsection"><a name="creating_a_workshop_item"></a>Creating a Workshop Item</h2><ol class="bb_ol ">	<li> All workshop items begin their existence with a call to <a href="https://partner.steamgames.com/doc/api/ISteamUGC#CreateItem" class="bb_apilink">ISteamUGC::CreateItem</a><br>	<ul class="bb_ul ">		<li> The <code class="bb_code bb_code_inline nohighlight">nConsumerAppId</code> variable should contain the App ID for the game or application. Do not pass the App ID of the workshop item creation tool if that is a separate App ID.<br>		</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamRemoteStorage#EWorkshopFileType" class="bb_apilink">EWorkshopFileType</a> is an enumeration type that defines how the shared file will be shared with the community. The valid values are:<br>		<ul class="bb_ul ">			<li> <a href="https://partner.steamgames.com/doc/api/ISteamRemoteStorage#k_EWorkshopFileTypeCommunity" class="bb_apilink">k_EWorkshopFileTypeCommunity</a> - This file type is used to describe files that will be uploaded by users and made available to download by anyone in the community. Common usage of this would be to share user created mods.<br>			</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamRemoteStorage#k_EWorkshopFileTypeMicrotransaction" class="bb_apilink">k_EWorkshopFileTypeMicrotransaction</a> - This file type is used to describe files that are uploaded by users, but intended only for the game to consider adding as official content. These files will not be downloaded by users through the Workshop, but will be viewable by the community to rate.<br>			This is the implementation that Team Fortress 2 uses.<br>		</li></ul>	</li></ul>	</li><li> Register a call result handler for <a href="https://partner.steamgames.com/doc/api/ISteamUGC#CreateItemResult_t" class="bb_apilink">CreateItemResult_t</a><br>	</li><li> First check the <code class="bb_code bb_code_inline nohighlight">m_eResult</code> to ensure that the item was created successfully.<br>	</li><li> When the call result handler is executed, read the <code class="bb_code bb_code_inline nohighlight">m_nPublishedFileId</code> value and store for future updates to the workshop item (e.g. in a project file associated with the creation tool).<br>	</li><li> The <code class="bb_code bb_code_inline nohighlight">m_bUserNeedsToAcceptWorkshopLegalAgreement</code> variable should also be checked and if it's <strong>true</strong>, the user should be redirected to accept the legal agreement. See the <a href="#Legal" class="bb_doclink">Workshop Legal Agreement</a> section for more details.</li></ol><h2 class="bb_subsection"><a name="uploading_a_workshop_item"></a>Uploading a Workshop Item</h2><ol class="bb_ol ">	<li> Once a workshop item has been created and a <a href="https://partner.steamgames.com/doc/api/ISteamRemoteStorage#PublishedFileId_t" class="bb_apilink">PublishedFileId_t</a> value has been returned, the content of the workshop item can be populated and uploaded to the Steam Workshop.<br>	</li><li> An item update begins with a call to <a href="https://partner.steamgames.com/doc/api/ISteamUGC#StartItemUpdate" class="bb_apilink">ISteamUGC::StartItemUpdate</a><br>	</li><li> Using the <a href="https://partner.steamgames.com/doc/api/ISteamUGC#UGCUpdateHandle_t" class="bb_apilink">UGCUpdateHandle_t</a> that is returned from <a href="https://partner.steamgames.com/doc/api/ISteamUGC#StartItemUpdate" class="bb_apilink">ISteamUGC::StartItemUpdate</a>, calls can be made to update the Title, Description, Visibility, Tags, Item Content and Item Preview Image through the various ISteamUGC::SetItem[...] methods.<br>	<ul class="bb_ul ">		<li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetItemTitle" class="bb_apilink">ISteamUGC::SetItemTitle</a> - Sets a new title for an item.<br>		</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetItemDescription" class="bb_apilink">ISteamUGC::SetItemDescription</a> - Sets a new description for an item.<br>		</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetItemUpdateLanguage" class="bb_apilink">ISteamUGC::SetItemUpdateLanguage</a> - Sets the language of the title and description that will be set in this item update.<br>		</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetItemMetadata" class="bb_apilink">ISteamUGC::SetItemMetadata</a> - Sets arbitrary metadata for an item. This metadata can be returned from queries without having to download and install the actual content.<br>		</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetItemVisibility" class="bb_apilink">ISteamUGC::SetItemVisibility</a> - Sets the visibility of an item.<br>		</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetItemTags" class="bb_apilink">ISteamUGC::SetItemTags</a> - Sets arbitrary developer specified tags on an item.<br>		</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#AddItemKeyValueTag" class="bb_apilink">ISteamUGC::AddItemKeyValueTag</a> - Adds a key-value tag pair to an item. Keys can map to multiple different values (1-to-many relationship).<br>		</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#RemoveItemKeyValueTags" class="bb_apilink">ISteamUGC::RemoveItemKeyValueTags</a> - Removes an existing key value tag from an item.<br>		</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetItemContent" class="bb_apilink">ISteamUGC::SetItemContent</a> - Sets the folder that will be stored as the content for an item.<br>		</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetItemPreview" class="bb_apilink">ISteamUGC::SetItemPreview</a> -Sets the primary preview image for the item.	</li></ul>	</li><li> Once the update calls have been completed, calling <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SubmitItemUpdate" class="bb_apilink">ISteamUGC::SubmitItemUpdate</a> will initiate the upload process to the Steam Workshop.<br>	<ul class="bb_ul ">		<li> Register a call result handler for <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SubmitItemUpdateResult_t" class="bb_apilink">SubmitItemUpdateResult_t</a><br>		</li><li> When the call result handler is executed, check the <code class="bb_code bb_code_inline nohighlight">m_eResult</code> to confirm the upload completed successfully.<br>		</li><li> Note: There is no method to cancel the item update and upload once it's been called.	</li></ul>	</li><li> If desired, the progress of the upload can be tracked using <a href="https://partner.steamgames.com/doc/api/ISteamUGC#GetItemUpdateProgress" class="bb_apilink">ISteamUGC::GetItemUpdateProgress</a><br>	<ul class="bb_ul ">		<li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#EItemUpdateStatus" class="bb_apilink">EItemUpdateStatus</a> defines the upload and update progress.<br>		</li><li> <code class="bb_code bb_code_inline nohighlight">punBytesProcessed</code> and <code class="bb_code bb_code_inline nohighlight">punBytesTotal</code> can be used to provide input for a user interface control such as a progress bar to indicate progress of the upload.<br>		</li><li> <code class="bb_code bb_code_inline nohighlight">punBytesTotal</code> may update during the upload process based upon the stage of the item update.	</li></ul>	</li><li> In the same way as Creating a Workshop Item, confirm the user has accepted the legal agreement. This is necessary in case where the user didn't initially create the item but is editing an existing item.</li></ol><h4>Additional Notes</h4><ul class="bb_ul ">	<li> Workshop items were previously designated as single files. With <a href="https://partner.steamgames.com/doc/api/ISteamUGC" class="bb_apilink">ISteamUGC</a>, a workshop item is a representation of a folder of files.<br>	</li><li> If a workshop item requires additional metadata for use by the consuming application, you can attach metadata to your item using the <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetItemMetadata" class="bb_apilink">ISteamUGC::SetItemMetadata</a> call. This metadata can be returned in queries without having to download and install the item content.<br>		Previously we suggested that you save this metadata to a file inside the workshop item folder, which of course you can still do.</li></ul><h2 class="bb_section"><a name="ConsumeContent"></a>Consuming Content</h2>Consuming workshop content falls into two categories, Item Subscription and Item Installation.<h2 class="bb_subsection"><a name="item_subscription"></a>Item Subscription</h2>The majority of subscriptions to a workshop item will happen through the Steam Workshop portal. It is a known location, common to all games and applications, and as such, users are likely to find and subscribe to items regularly on the workshop site.<br><br>However, ISteamUGC provides two methods for programmatically subscribing and unsubscribing to workshop items to support in-game item subscription management.<br><ul class="bb_ul ">	<li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SubscribeItem" class="bb_apilink">ISteamUGC::SubscribeItem</a> - Subscribe to a workshop item. It will be downloaded and installed as soon as possible.<br>	</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#UnsubscribeItem" class="bb_apilink">ISteamUGC::UnsubscribeItem</a> - Unsubscribe from a workshop item. This will result in the item being removed after the game quits.</li></ul><br>Two additional methods exist for enumerating through a user's subscribed items.<br><ul class="bb_ul ">	<li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#GetNumSubscribedItems" class="bb_apilink">ISteamUGC::GetNumSubscribedItems</a>	- Gets the total number of items the current user is subscribed to for the game or application.<br>	</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#GetSubscribedItems" class="bb_apilink">ISteamUGC::GetSubscribedItems</a> - Gets a list of all of the items the current user is subscribed to for the current game.</li></ul><h4>Receiving Notifications for External Subscription Actions</h4>In-game notifications can be received when a user has subscribed or unsubscribed from a file through any mechanism (e.g. ISteamUGC, Steam Workshop Website):<br><ul class="bb_ul ">	<li> Register a callback handler for <a href="https://partner.steamgames.com/doc/api/ISteamRemoteStorage#RemoteStoragePublishedFileSubscribed_t" class="bb_apilink">RemoteStoragePublishedFileSubscribed_t</a> and <a href="https://partner.steamgames.com/doc/api/ISteamRemoteStorage#RemoteStoragePublishedFileUnsubscribed_t" class="bb_apilink">RemoteStoragePublishedFileUnsubscribed_t</a><br>	</li><li> The structs will be populated with the <a href="https://partner.steamgames.com/doc/api/ISteamRemoteStorage#PublishedFileId_t" class="bb_apilink">ISteamRemoteStorage::PublishedFileId_t</a> which can then be used to access the information about the workshop item.<br>	</li><li> The structs also contain the application ID (<code class="bb_code bb_code_inline nohighlight">m_unAppID</code>) associated with the workshop item. It should be compared against the running application ID as the handler will be called for all item subscriptions regardless of the running application.</li></ul><h2 class="bb_subsection"><a name="item_installation"></a>Item Installation</h2>Once Item Subscription information is known, the remaining consumption methods can be utilized. These methods provide information back to the game about the state of the item download and installation. Workshop item downloads are executed via the Steam Client and happen automatically, based on the following rules:<br><ol class="bb_ol ">	<li> When the Steam Client indicates a game or application is to launch, all app depots that have been updated will be downloaded and installed.<br>	</li><li> Any existing installed workshop items are updated if needed<br>	</li><li> Game or application then launches<br>	</li><li> Newly subscribed workshop items that are not downloaded will then download and be installed in the background.<br>	<ul class="bb_ul ">		<li> Subscribed files will be downloaded to the client in the order they were subscribed in.<br>		</li><li> The Steam download page will show workshop item downloads with a specific banner to indicate a workshop item download is occurring.	</li></ul></li></ol>Note: Using the &quot;Verify Integrity of Game Files&quot; feature in the Steam Client will also cause workshop items to be downloaded.<br><br>As the game will start before newly subscribed content is downloaded and installed, the remaining consumption methods exist to aid in monitoring and managing the install progress. They can also be used when items are subscribed in-game to provide status of installation in real time.<h4>Status of a Workshop Item</h4><ul class="bb_ul ">	<li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#GetItemState" class="bb_apilink">ISteamUGC::GetItemState</a> - Gets the current state of a workshop item on this client.</li></ul><h4>Download Progress of a Workshop Item</h4><ul class="bb_ul ">	<li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#GetItemDownloadInfo" class="bb_apilink">ISteamUGC::GetItemDownloadInfo</a> - Get info about a pending download of a workshop item that has <a href="https://partner.steamgames.com/doc/api/ISteamUGC#k_EItemStateNeedsUpdate" class="bb_apilink">k_EItemStateNeedsUpdate</a> set.</li></ul><h4>Initiate or Increase the Priority of Downloading a Workshop Item</h4><ul class="bb_ul ">	<li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#DownloadItem" class="bb_apilink">ISteamUGC::DownloadItem</a><br>	<ul class="bb_ul ">		<li> Set <code class="bb_code bb_code_inline nohighlight">bHighPriority</code> to <code class="bb_code bb_code_inline nohighlight">true</code> to pause any existing in-progress downloads and immediately begin downloading this workshop item.<br>		</li><li> If the return value is <code class="bb_code bb_code_inline nohighlight">true</code> then register and wait for the callback <a href="https://partner.steamgames.com/doc/api/ISteamUGC#DownloadItemResult_t" class="bb_apilink">ISteamUGC::DownloadItemResult_t</a> before calling <a href="https://partner.steamgames.com/doc/api/ISteamUGC#GetItemInstallInfo" class="bb_apilink">ISteamUGC::GetItemInstallInfo</a> or accessing the workshop item on disk.<br>		</li><li> If the user is not subscribed to the item (e.g. a Game Server using anonymous login), the workshop item will be downloaded and cached temporarily.<br>		</li><li> If the workshop item has an <a href="https://partner.steamgames.com/doc/api/ISteamUGC#EItemState" class="bb_apilink">ISteamUGC::EItemState</a> of <code class="bb_code bb_code_inline nohighlight">k_EItemStateNeedsUpdate</code>, <a href="https://partner.steamgames.com/doc/api/ISteamUGC#DownloadItem" class="bb_apilink">ISteamUGC::DownloadItem</a> can be called to initiate the update. Do not access the workshop item on disk until the callback <a href="https://partner.steamgames.com/doc/api/ISteamUGC#DownloadItemResult_t" class="bb_apilink">ISteamUGC::DownloadItemResult_t</a> is called.<br>		</li><li> This method only works with <a href="https://partner.steamgames.com/doc/api/ISteamUGC" class="bb_apilink">ISteamUGC</a> created workshop items. It will not work with legacy <a href="https://partner.steamgames.com/doc/api/ISteamRemoteStorage" class="bb_apilink">ISteamRemoteStorage</a> workshop items.<br>		</li><li> The <a href="https://partner.steamgames.com/doc/api/ISteamUGC#DownloadItemResult_t" class="bb_apilink">ISteamUGC::DownloadItemResult_t</a> callback struct contains the application ID (<code class="bb_code bb_code_inline nohighlight">m_unAppID</code>) associated with the workshop item. It should be compared against the running application ID as the handler will be called for all item downloads regardless of the running application.	</li></ul></li></ul><h4>Retrieving information about the local copy of the Workshop Item</h4><ul class="bb_ul ">	<li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#GetItemInstallInfo" class="bb_apilink">ISteamUGC::GetItemInstallInfo</a> - Gets info about currently installed content on the disc for workshop items that have <a href="https://partner.steamgames.com/doc/api/ISteamUGC#k_EItemStateInstalled" class="bb_apilink">k_EItemStateInstalled</a> set.</li></ul><h4>Notification when a Workshop Item is Installed or Updated</h4><ul class="bb_ul ">	<li> Register a callback handler for <a href="https://partner.steamgames.com/doc/api/ISteamUGC#ItemInstalled_t" class="bb_apilink">ISteamUGC::ItemInstalled_t</a>.</li></ul><h2 class="bb_section"><a name="QueryContent"></a>Querying Content</h2>The <a href="https://partner.steamgames.com/doc/api/ISteamUGC" class="bb_apilink">ISteamUGC</a> interface provides a flexible way to enumerate the various kinds of UGC in Steam (e.g. Workshop items, screenshots, videos, etc.).<br><br><img src="https://shared.fastly.steamstatic.com/community_assets/images/steamworks_docs/english/ISteamUGCFlows-QueryingContent-web2.png" alt="ISteamUGCFlows-QueryingContent-web2.png" title="ISteamUGCFlows-QueryingContent-web2.png"><br><br><ol class="bb_ol ">	<li> Register a call result handler for <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SteamUGCQueryCompleted_t" class="bb_apilink">SteamUGCQueryCompleted_t</a>.<br>	</li><li> There are a few methods available for creating the query depending upon the required scenario, Querying by Content Associated to a User or Querying All Content or getting the details of content you have ids for.<br>		<ul class="bb_ul ">			<li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#CreateQueryUserUGCRequest" class="bb_apilink">ISteamUGC::CreateQueryUserUGCRequest</a> - Query UGC associated with a user. You can use this to list the UGC the user is subscribed to amongst other things.<br>			</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#CreateQueryAllUGCRequest" class="bb_apilink">ISteamUGC::CreateQueryAllUGCRequest</a> - Query for all matching UGC. You can use this to list all of the available UGC for your app.<br>			</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#CreateQueryUGCDetailsRequest" class="bb_apilink">ISteamUGC::CreateQueryUGCDetailsRequest</a> - Query for the details of specific workshop items.<br>		</li></ul>	</li><li> Customize the query as appropriate by calling the option setting methods:<br>		<ul class="bb_ul ">			<li> When querying for User UGC<br>				<ul class="bb_ul ">					<li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetCloudFileNameFilter" class="bb_apilink">ISteamUGC::SetCloudFileNameFilter</a> - Sets to only return items that have a specific filename on a pending UGC Query.<br>				</li></ul>			</li><li> When querying for All UGC<br>				<ul class="bb_ul ">					<li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetMatchAnyTag" class="bb_apilink">ISteamUGC::SetMatchAnyTag</a> - Sets whether workshop items will be returned if they have one or more matching tag, or if all tags need to match on a pending UGC Query.<br>					</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetSearchText" class="bb_apilink">ISteamUGC::SetSearchText</a> - Sets a string to that items need to match in either the title or the description on a pending UGC Query.<br>					</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetRankedByTrendDays" class="bb_apilink">ISteamUGC::SetRankedByTrendDays</a> - Sets whether the order of the results will be updated based on the rank of items over a number of days on a pending UGC Query.<br>				</li></ul>			</li><li> When querying for either type of UGC<br>				<ul class="bb_ul ">					<li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#AddRequiredTag" class="bb_apilink">ISteamUGC::AddRequiredTag</a> - Adds a required tag to a pending UGC Query. This will only return UGC with the specified tag.<br>					</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#AddExcludedTag" class="bb_apilink">ISteamUGC::AddExcludedTag</a> - Adds a excluded tag to a pending UGC Query. This will only return UGC without the specified tag.<br>					</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#AddRequiredKeyValueTag" class="bb_apilink">ISteamUGC::AddRequiredKeyValueTag</a> - Adds a required key-value tag to a pending UGC Query. This will only return workshop items that have a key = [param]pKey[/param] and a value = [param]pValue[/param].<br>					</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetReturnOnlyIDs" class="bb_apilink">ISteamUGC::SetReturnOnlyIDs</a> - Sets whether to only return IDs instead of all the details on a pending UGC Query. This is useful for when you don't need all the information (e.g. you just want to get the IDs of the items a user has in their favorites list.)<br>					</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetReturnKeyValueTags" class="bb_apilink">ISteamUGC::SetReturnKeyValueTags</a> - Sets whether to return any key-value tags for the items on a pending UGC Query.<br>					</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetReturnLongDescription" class="bb_apilink">ISteamUGC::SetReturnLongDescription</a> - Sets whether to return the full description for the items on a pending UGC Query.<br>					</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetReturnMetadata" class="bb_apilink">ISteamUGC::SetReturnMetadata</a> - Sets whether to return the developer specified metadata for the items on a pending UGC Query.<br>					</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetReturnChildren" class="bb_apilink">ISteamUGC::SetReturnChildren</a> - Sets whether to return the IDs of the child items of the items on a pending UGC Query.<br>					</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetReturnAdditionalPreviews" class="bb_apilink">ISteamUGC::SetReturnAdditionalPreviews</a> - Sets whether to return any additional images/videos attached to the items on a pending UGC Query.<br>					</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetReturnTotalOnly" class="bb_apilink">ISteamUGC::SetReturnTotalOnly</a> - Sets whether to only return the total number of matching items on a pending UGC Query. -- The actual items will not be returned when <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SteamUGCQueryCompleted_t" class="bb_apilink">ISteamUGC::SteamUGCQueryCompleted_t</a> is called.<br>					</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetLanguage" class="bb_apilink">ISteamUGC::SetLanguage</a> - Sets the language to return the title and description in for the items on a pending UGC Query.<br>					</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetAllowCachedResponse" class="bb_apilink">ISteamUGC::SetAllowCachedResponse</a> - Sets whether results to be will be returned from the cache for the specific period of time on a pending UGC Query.<br>				</li></ul>		</li></ul>	</li><li> Send the query to Steam using <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SendQueryUGCRequest" class="bb_apilink">ISteamUGC::SendQueryUGCRequest</a> which will invoke the <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SteamUGCQueryCompleted_t" class="bb_apilink">ISteamUGC::SteamUGCQueryCompleted_t</a> call result handler registered in step 1.<br>	</li><li> In the call result handler for <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SteamUGCQueryCompleted_t" class="bb_apilink">ISteamUGC::SteamUGCQueryCompleted_t</a>, call <a href="https://partner.steamgames.com/doc/api/ISteamUGC#GetQueryUGCResult" class="bb_apilink">ISteamUGC::GetQueryUGCResult</a> to retrieve the details for each item returned.<br><br>	</li><li> You can also call these functions to retrieve additional information for each item (some of this data is not returned by default, so you need to configure your query appropriately):<br>		<ul class="bb_ul ">			<li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#GetQueryUGCPreviewURL" class="bb_apilink">ISteamUGC::GetQueryUGCPreviewURL</a> - Retrieve the URL to the preview image of an individual workshop item after receiving a querying UGC call result.<br>			</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#GetQueryUGCMetadata" class="bb_apilink">ISteamUGC::GetQueryUGCMetadata</a> - Retrieve the developer set metadata of an individual workshop item after receiving a querying UGC call result.<br>			</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#GetQueryUGCChildren" class="bb_apilink">ISteamUGC::GetQueryUGCChildren</a> - Retrieve the ids of any child items of an individual workshop item after receiving a querying UGC call result.<br>			</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#GetQueryUGCStatistic" class="bb_apilink">ISteamUGC::GetQueryUGCStatistic</a> - Retrieve various statistics of an individual workshop item after receiving a querying UGC call result.<br>			</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#GetQueryUGCNumAdditionalPreviews" class="bb_apilink">ISteamUGC::GetQueryUGCNumAdditionalPreviews</a> and <a href="https://partner.steamgames.com/doc/api/ISteamUGC#GetQueryUGCAdditionalPreview" class="bb_apilink">ISteamUGC::GetQueryUGCAdditionalPreview</a> - Retrieve the details of an additional preview associated with an individual workshop item after receiving a querying UGC call result.<br>			</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#GetQueryUGCNumKeyValueTags" class="bb_apilink">ISteamUGC::GetQueryUGCNumKeyValueTags</a> and <a href="https://partner.steamgames.com/doc/api/ISteamUGC#GetQueryUGCKeyValueTag" class="bb_apilink">ISteamUGC::GetQueryUGCKeyValueTag</a> - Retrieve the details of a key-value tag associated with an individual workshop item after receiving a querying UGC call result.<br>		</li></ul>	</li><li> Call <a href="https://partner.steamgames.com/doc/api/ISteamUGC#ReleaseQueryUGCRequest" class="bb_apilink">ISteamUGC::ReleaseQueryUGCRequest</a> to free up any memory allocated while querying or retrieving the results.</li></ol><h4>Paging Results</h4>Up to 50 results will be returned from each query. Paging through more results can be achieved by creating a query that increments the <code class="bb_code bb_code_inline nohighlight">unPage</code> parameter (which should start at 1).<h2 class="bb_section"><a name="PlaytimeTracking"></a>Playtime Tracking</h2>To track the playtime of Workshop items simply call <a href="https://partner.steamgames.com/doc/api/ISteamUGC#StartPlaytimeTracking" class="bb_apilink">ISteamUGC::StartPlaytimeTracking</a> with the ids of the items you want to track. Then when the items are removed from play call <a href="https://partner.steamgames.com/doc/api/ISteamUGC#StopPlaytimeTracking" class="bb_apilink">ISteamUGC::StopPlaytimeTracking</a> with the ids you want to stop tracking or call <a href="https://partner.steamgames.com/doc/api/ISteamUGC#StopPlaytimeTrackingForAllItems" class="bb_apilink">ISteamUGC::StopPlaytimeTrackingForAllItems</a> to stop tracking playtime for all items at once.<br>When your app shuts down, playtime tracking will automatically stop.<br><br>You will also be able to sort items by various playtime metrics in <a href="https://partner.steamgames.com/doc/api/ISteamUGC#CreateQueryAllUGCRequest" class="bb_apilink">ISteamUGC::CreateQueryAllUGCRequest</a> queries. Here are the playtime based query types you can use:<br><ul class="bb_ul ">	<li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#k_EUGCQuery_RankedByPlaytimeTrend" class="bb_apilink">k_EUGCQuery_RankedByPlaytimeTrend</a> - Sort by total playtime in the &quot;trend&quot; period descending (set with <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetRankedByTrendDays" class="bb_apilink">ISteamUGC::SetRankedByTrendDays</a>)<br>	</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#k_EUGCQuery_RankedByTotalPlaytime" class="bb_apilink">k_EUGCQuery_RankedByTotalPlaytime</a> - Sort by total lifetime playtime descending.<br>	</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#k_EUGCQuery_RankedByAveragePlaytimeTrend" class="bb_apilink">k_EUGCQuery_RankedByAveragePlaytimeTrend</a> - Sort by average playtime in the &quot;trend&quot; period descending (set with <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetRankedByTrendDays" class="bb_apilink">ISteamUGC::SetRankedByTrendDays</a>)<br>	</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#k_EUGCQuery_RankedByLifetimeAveragePlaytime" class="bb_apilink">k_EUGCQuery_RankedByLifetimeAveragePlaytime</a> - Sort by lifetime average playtime descending<br>	</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#k_EUGCQuery_RankedByPlaytimeSessionsTrend" class="bb_apilink">k_EUGCQuery_RankedByPlaytimeSessionsTrend</a> - Sort by number of play sessions in the &quot;trend&quot; period descending (set in <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SetRankedByTrendDays" class="bb_apilink">ISteamUGC::SetRankedByTrendDays</a>)<br>	</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#k_EUGCQuery_RankedByLifetimePlaytimeSessions" class="bb_apilink">k_EUGCQuery_RankedByLifetimePlaytimeSessions</a> - Sort by number of lifetime play sessions descending</li></ul><h2 class="bb_section"><a name="DeletingContent"></a>Deleting Workshop Item Content</h2>To delete a Workshop item, you can call <a href="https://partner.steamgames.com/doc/api/ISteamUGC#DeleteItem" class="bb_apilink">ISteamUGC::DeleteItem</a>.  Please note that this does not prompt the user and cannot be undone.<h2 class="bb_section"><a name="SteamworksExample"></a>Steamworks Example – SpaceWar Integration</h2>The <a href="https://partner.steamgames.com/doc/sdk/api/example" class="bb_doclink">Steamworks API Example Application (SpaceWar)</a> that comes with the Steamworks SDK demonstrates a subset of the <a href="https://partner.steamgames.com/doc/api/ISteamUGC" class="bb_apilink">ISteamUGC</a> API.<br><ul class="bb_ul ">	<li> <code class="bb_code bb_code_inline nohighlight">CSpaceWarClient::LoadWorkshopItem</code> demonstrates checking if a workshop item is downloaded and installed on disk as well as requesting information about a workshop item by <a href="https://partner.steamgames.com/doc/api/ISteamRemoteStorage#PublishedFileId_t" class="bb_apilink">ISteamRemoteStorage::PublishedFileId_t</a><br>	</li><li> <code class="bb_code bb_code_inline nohighlight">CSpaceWarClient::LoadWorkshopItems</code> demonstrates retrieving the list of subscribed workshop items for the current user for the SpaceWar application<br>	</li><li> <code class="bb_code bb_code_inline nohighlight">CSpaceWarClient::OnWorkshopItemInstalled</code> demonstrates a callback handler for <a href="https://partner.steamgames.com/doc/api/ISteamUGC#ItemInstalled_t" class="bb_apilink">ISteamUGC::ItemInstalled_t</a></li></ul><h2 class="bb_section"><a name="Legal"></a>Workshop Legal Agreement</h2>Workshop items will be hidden by default until the contributor agrees to the Steam Workshop Legal Agreement. In order to make it easy for the contributor to make the item publicly visible, please do the following.<br><ol class="bb_ol ">	<li> Include text next to the button that submits an item to the workshop, something to the effect of: &quot;By submitting this item, you agree to the <a href="http://steamcommunity.com/sharedfiles/workshoplegalagreement" target="_blank" rel="noreferrer"  >workshop terms of service</a>&quot; (including the link)<br>	</li><li> After a user submits an item, open a browser window to the Steam Workshop page for that item by calling <a href="https://partner.steamgames.com/doc/api/ISteamFriends#ActivateGameOverlayToWebPage" class="bb_apilink">ISteamFriends::ActivateGameOverlayToWebPage</a> with <code class="bb_code bb_code_inline nohighlight">pchURL</code> set to <code class="bb_code bb_code_inline nohighlight">steam://url/CommunityFilePage/&lt;PublishedFileId_t&gt;</code> replacing &lt;PublishedFileId_t&gt; with the workshop item id.</li></ol>This has the benefit of directing the author to the workshop page so that they can see the item and configure it further if necessary and will make it easy for the user to read and accept the Steam Workshop Legal Agreement.<h2 class="bb_section"><a name="WebAPI"></a>Web API</h2>In addition to these methods, there are a set of Web API interface that provides similar functionality along with community-based filtering APIs to list all shared content. Please consult the documentation for the <a href="https://partner.steamgames.com/doc/webapi/ISteamRemoteStorage" class="bb_apilink">ISteamRemoteStorage</a> interface in the Web API list.<h2 class="bb_section"><a name="DedicatedGameServers"></a>Dedicated Game Servers</h2>Game servers can also download and install items.<br><ul class="bb_ul ">	<li> The Game Server will need to know the <a href="https://partner.steamgames.com/doc/api/ISteamRemoteStorage#PublishedFileId_t" class="bb_apilink">PublishedFileId_t</a> to request a workshop item, this could be supplied by the game clients or set by the server operator. Then call <a href="https://partner.steamgames.com/doc/api/ISteamUGC#DownloadItem" class="bb_apilink">ISteamUGC::DownloadItem</a> to retrieve a temporary copy of the workshop item.<br>	</li><li> A call can then be made to <a href="https://partner.steamgames.com/doc/api/ISteamUGC#GetItemInstallInfo" class="bb_apilink">ISteamUGC::GetItemInstallInfo</a> to retrieve information to locate and use the workshop item.<br>	</li><li> See the <strong>Item Installation</strong> section above for more information on these API methods.</li></ul><h2 class="bb_section"><a name="SteamCmd"></a>SteamCmd Integration</h2>Along with the <a href="https://partner.steamgames.com/doc/api/ISteamUGC" class="bb_apilink">ISteamUGC</a> API, the steamcmd.exe command line tool can be used to create and update workshop items for testing purposes. This should only be used for testing purposes, as the tool requires the user to enter their Steam credentials (something we don't want customers to have to do).<br><br>To create a new Steam Workshop item using steamcmd.exe a VDF file must first be created. The VDF is a plain text file that should contain the following keys.<br><div class="bb_code cpp">&quot;workshopitem&quot;
+{
+ &quot;appid&quot; &quot;480&quot;
+ &quot;publishedfileid&quot; &quot;5674&quot;
+ &quot;contentfolder&quot; &quot;D:\\Content\\workshopitem&quot;
+ &quot;previewfile&quot; &quot;D:\\Content\\preview.jpg&quot;
+ &quot;visibility&quot; &quot;0&quot;
+ &quot;title&quot; &quot;Team Fortress Green Hat&quot;
+ &quot;description&quot; &quot;A green hat for Team Fortress&quot;
+ &quot;changenote&quot; &quot;Version 1.2&quot;
+}
+</div><br>Notes:<br><ul class="bb_ul ">	<li> The keys map to the various ISteamUGC::SetItem[...] methods. See the documentation above for more details.<br>	</li><li> The values shown are examples only and should be updated appropriately.<br>	</li><li> To create a new item, <code class="bb_code bb_code_inline nohighlight">appid</code> must be set and <code class="bb_code bb_code_inline nohighlight">publishedfileid</code> must be unset or set to <code class="bb_code bb_code_inline nohighlight">0</code>.<br>	</li><li> To update an existing item, <code class="bb_code bb_code_inline nohighlight">appid</code> and <code class="bb_code bb_code_inline nohighlight">publishedfileid</code> must both be set.<br>	</li><li> The remaining key/value pairs should be included in the VDF if the key should be updated.</li></ul>Once the VDF has been created, steamcmd.exe can be run with the <code class="bb_code bb_code_inline nohighlight">workshop_build_item &lt;build config filename&gt;</code> file parameter. For example:<br><div class="bb_code cpp">steamcmd.exe +login myLoginName myPassword +workshop_build_item workshop_green_hat.vdf +quit</div>If the command is successful, the <code class="bb_code bb_code_inline nohighlight">publishedfileid</code> value in the VDF will be automatically updated to contain the ID of the workshop item. In this way, subsequent calls with steamcmd.exe for the same VDF will result in	an update rather than creation of a new item.<h2 class="bb_section"><a name="ErrorsLogging"></a>Errors and Logging</h2>The majority of <a href="https://partner.steamgames.com/doc/api/ISteamUGC" class="bb_apilink">ISteamUGC</a> methods return boolean values. For additional information on specific errors, there are a number of places to review:<br><ul class="bb_ul ">	<li> <code class="bb_code bb_code_inline nohighlight">Steam\logs\Workshop_log.txt</code> is a log for all transfers that occur during workshop item downloading and installation.<br>	</li><li> <code class="bb_code bb_code_inline nohighlight">Steam\workshopbuilds\depot_build_&lt;appid&gt;.log</code> is a log for all actions during the upload and update of a workshop item.<br>	</li><li> <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SteamUGCQueryCompleted_t" class="bb_apilink">ISteamUGC::SteamUGCQueryCompleted_t</a>, <a href="https://partner.steamgames.com/doc/api/ISteamUGC#CreateItemResult_t" class="bb_apilink">ISteamUGC::CreateItemResult_t</a> and <a href="https://partner.steamgames.com/doc/api/ISteamUGC#SubmitItemUpdateResult_t" class="bb_apilink">ISteamUGC::SubmitItemUpdateResult_t</a> contain <a href="https://partner.steamgames.com/doc/api/steam_api#EResult" class="bb_apilink">EResult</a> variables that can be checked.</li></ul><h2 class="bb_section"><a name="FAQ"></a>Frequently Asked Questions</h2><h4>Q: Can a separate application publish content to my game's Workshop?</h4>Yes. A separate application for editing or publishing tools can be configured with base application's workshop to accept content from that editing application.<br><br>To configure this, go to the Workshop Configuration section for the base application and scroll to the bottom of the page. Enter the separate application's App ID in the field under &quot;App Publish Permissions&quot; and hit &quot;Add&quot;.<br><br>NOTE: Both AppID's will need to have a cloud quota enabled to store the workshop preview images.  <br><br>Once the Steamworks settings are published, the editing application will be able to publish content to the base application's workshop.</div>	<div id="hashLocationHighlight"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Footer -->
+<div class="responsive_footer_ctn">
+		<div class="responsive_footer_content" >
+		<div class="footer_content_left">
+			<img src="https://partner.steamgames.com/public/images/steamworks_logo_white.png" class="logo" />
+			<div class="steamworks_desc" >Steamworks is the set of tools and services built by <a href="https://www.valvesoftware.com">Valve</a> that help you configure, manage, and operate your game on <a href="https://store.steampowered.com/">Steam</a>.</div>
+			<div class="corporate">
+				<a href="http://www.valvesoftware.com"><img src="https://partner.steamgames.com/public/images/valve_logo_white_small.png" /></a><span class="vr"></span><a href="https://store.steampowered.com/"><img src="https://partner.steamgames.com/public/images/steam_logo_white_small.png" /></a>
+			</div>
+		</div>
+
+		<div class="footer_content_right">
+			<ul>
+				<li><em>Documentation</em></li>
+				<li><a href="https://partner.steamgames.com/doc/">Home</a></li>
+				<li><a href="https://partner.steamgames.com/doc/gettingstarted">Getting Started</a></li>
+				<li><a href="https://partner.steamgames.com/doc/store">Store Presence</a></li>
+				<li><a href="https://partner.steamgames.com/doc/features">Features</a></li>
+				<li><a href="https://partner.steamgames.com/doc/finance">Finance</a></li>
+				<li><a href="https://partner.steamgames.com/doc/marketing">Sales & Marketing</a></li>
+				<li><a href="https://partner.steamgames.com/doc/sdk">Steamworks SDK</a></li>
+				<li><a href="https://partner.steamgames.com/pccafe">Café Licensing</a></li>
+				<li><a href="https://partner.steamgames.com/doc/features/steamvr/info">Steam VR</a></li>
+			</ul>
+			<ul>
+				<li><em>Resources</em></li>
+				<li><a href="https://partner.steamgames.com/vrlicensing">Steam VR</a></li>
+				<li><a href="https://partner.steamgames.com/pccafe">Steam PC Café Program</a></li>
+				<li><a href="https://steamcommunity.com/groups/steamworks/discussions">Steamworks Discussions <i class="icoExternal"></i></a></li>
+									<li><a href="https://www.youtube.com/user/SteamworksDev">Steamworks Video Tutorials <i class="icoExternal"></i></a></li>
+								<li> <a href="http://twitter.com/Steamworks" target="_blank" rel="noreferrer"><img src="https://store.fastly.steamstatic.com//public/shared/images/ico/ico_twitter.png" alt="X: @Steamworks"></a>
+					<span aria-hidden="true">|</span><a href="https://bsky.app/profile/partner.steamgames.com" target="_blank" rel="noreferrer"><img src="https://store.fastly.steamstatic.com//public/shared/images/ico/ico_bsky.png" alt="Bluesky: Steamworks"></a></li>
+			    <li> <a class="header_login_btn footerbtn" href="https://help.steampowered.com/en/wizard/HelpWithPublishing"><span>Contact Support </span></a></li>
+            </ul>
+			<ul>
+				<li><em>News & Updates</em></li>
+				<li><a href="https://store.steampowered.com/news/group/4145017">Steamworks Blog <i class="icoExternal"></i></a></li>
+				<li><a href="https://store.steampowered.com/news/app/593110">Steam Blog <i class="icoExternal"></i></a></li>
+				<li><a href="https://store.steampowered.com/news/app/250820">Steam VR Blog <i class="icoExternal"></i></a></li>
+				<li><a href="https://store.steampowered.com/news/app/1675200">Steam Deck Blog <i class="icoExternal"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	</script>
+<!-- End Footer -->
+</body>
+</html>

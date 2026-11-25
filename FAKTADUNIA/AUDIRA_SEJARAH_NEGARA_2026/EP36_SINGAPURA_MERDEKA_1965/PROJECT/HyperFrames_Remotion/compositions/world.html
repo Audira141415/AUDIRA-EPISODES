@@ -1,0 +1,155 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#120C08}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.05;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.42) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.45) 42%,rgba(0,0,0,0.45) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'IBM Plex Mono',Consolas,monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#F0E0B8;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.p{transform-origin:0% 0%}
+.cd{position:relative;background:#F3EAD4;border:1px solid rgba(31,26,20,.2);border-radius:3px;box-shadow:0 22px 46px rgba(0,0,0,.55),0 2px 0 rgba(255,255,255,.5) inset}
+.kk{display:inline-flex;align-items:center;gap:16px;font-family:'IBM Plex Mono',Consolas,monospace;font-weight:600;font-size:26px;line-height:1;letter-spacing:.14em;color:#F0E0B8;background:#1F1A14;padding:13px 22px 12px;border:1px solid #E0B85A;margin-top:26px;margin-bottom:20px;box-shadow:0 10px 24px rgba(0,0,0,.5)}
+.kk i{font-style:normal;color:#E0B85A;border-right:1px solid #E0B85A;padding-right:16px}
+.h1{display:inline-block;padding:18px 34px 22px;border-left:12px solid #D7263D;font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:92px;line-height:1.02;color:#1F1A14}
+.h1 em,.h2 em{font-style:italic;color:#D7263D}
+.h2{display:inline-block;padding:16px 32px 20px;border-left:12px solid #E0B85A;font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:70px;line-height:1.06;color:#1F1A14}
+.date{display:inline-block;margin-top:18px;padding:12px 28px 10px;font-family:'IBM Plex Mono',Consolas,monospace;font-weight:600;font-size:56px;letter-spacing:.08em;color:#1F1A14;border-left:12px solid #E0B85A}
+.row{flex-direction:column;margin-top:16px;padding:14px 28px 16px;border-left:12px solid #E0B85A;max-width:880px;box-sizing:border-box}
+.row b{display:block;font-family:'IBM Plex Sans',Arial,sans-serif;font-weight:700;font-size:44px;line-height:1.1;letter-spacing:.03em;color:#1F1A14}
+.row span{display:block;margin-top:6px;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:700;font-size:40px;line-height:1.15;color:#4a3a28}
+.row.rd{border-left-color:#D7263D}.row.bl{border-left-color:#2A4D8F}.row.gd{border-left-color:#E0B85A}
+.stat{display:flex;align-items:baseline;gap:18px;width:max-content;max-width:900px;box-sizing:border-box;margin-top:16px;padding:2px 30px 8px;border-left:12px solid #E0B85A}
+.stat b{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-variant-numeric:lining-nums tabular-nums;font-size:120px;line-height:1.04;color:#1F1A14}
+.stat b.sm{font-size:96px}
+.stat.bl{border-left-color:#2A4D8F}.stat.bl b{color:#2A4D8F}
+.stat.rd{border-left-color:#D7263D}.stat.rd b{color:#D7263D}
+.stat small,.stat span{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:700;font-size:42px;color:#4a3a28}
+.chips{display:flex;gap:14px;width:max-content;margin-top:16px;padding:0;background:none;border:0;box-shadow:none}
+.chips i{font-style:normal;font-family:'IBM Plex Mono',Consolas,monospace;font-weight:600;font-size:38px;color:#F0E0B8;background:rgba(215,38,61,.85);padding:8px 18px}
+.vote{display:flex;align-items:baseline;gap:22px;width:max-content;margin-top:16px;padding:0 32px 10px;border-left:12px solid #E0B85A;flex-wrap:wrap;max-width:880px}
+.vote b{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-variant-numeric:lining-nums tabular-nums;font-size:150px;line-height:1.04;color:#1F1A14}
+.vote em{font-style:normal;font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:110px;color:#D7263D}
+.vote span{flex-basis:100%;margin-top:-12px;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:700;font-size:40px;color:#4a3a28}
+.note{display:inline-block;margin-top:16px;font-family:'IBM Plex Sans',Arial,sans-serif;font-weight:500;font-size:32px;line-height:1.25;color:#F0E4C8;background:rgba(20,15,10,.86);border-left:4px solid #E0B85A;padding:10px 20px;max-width:840px}
+.stamp{display:inline-block;margin-top:20px;font-family:'IBM Plex Sans',Arial,sans-serif;font-weight:700;font-size:44px;letter-spacing:.12em;color:#FBEFDC;background:#D7263D;padding:12px 28px 10px;border:3px solid #F0E0B8;transform:rotate(-2deg);box-shadow:0 12px 28px rgba(0,0,0,.55)}
+.q{margin-top:18px;padding:16px 30px 20px;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:700;font-size:58px;line-height:1.12;color:#F4EEE2;background:#1F1A14;border-left:12px solid #D7263D;max-width:860px;box-sizing:border-box}
+.q small{display:block;margin-top:8px;font-family:'IBM Plex Mono',Consolas,monospace;font-style:normal;font-weight:500;font-size:28px;color:#E0B85A}
+.myth{position:relative;display:inline-block;margin-top:16px;padding:6px 34px 10px;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:800;font-size:96px;color:#1F1A14;background:#F2D45C;border-left:12px solid #1F1A14}
+.myth .x{position:absolute;left:24px;right:20px;top:54%;height:10px;background:#D7263D;transform-origin:0% 50%}
+.q2{margin-top:22px;padding:18px 30px 20px;font-family:'IBM Plex Sans',Arial,sans-serif;font-weight:600;font-size:42px;line-height:1.22;color:#F4EEE2;background:#1F1A14;border-left:12px solid #D7263D;max-width:860px;box-sizing:border-box}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="86.69" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI &middot; PETA ARSIP REKA ULANG</div>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@500;600;700&display=block">
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="kk"><i>EP 36</i>FAKTA SEJARAH NEGARA</div>
+  <div class="cd h1">Merdeka sambil<br><em>menahan tangis</em></div>
+  <div class="cd date" data-at="s1:sembilan" data-fx="card">9 AGUSTUS 1965</div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="kk"><i>1963</i>PERSEKUTUAN MALAYSIA</div>
+  <div class="cd row bl" data-at="s2:bergabung" data-fx="card"><b>SINGAPURA BERGABUNG</b><span>dengan Malaysia</span></div>
+  <div class="cd stat bl" data-at="s2:Malaysia" data-fx="card"><b><b class="ct nb" data-from="0" data-to="14" data-a="s2:Malaysia" data-d="1" data-dec="0">0</b></b><span>negara bagian</span></div>
+  <div class="cd stat rd" data-at="s2:terkecil" data-fx="card"><small>terkecil</small><b class="sm">581,5</b><span>km²</span></div>
+  <div class="cd stat rd" data-at="s2:penduduknya" data-fx="card"><small>penduduk terbanyak</small><b class="sm"><b class="ct nb" data-from="0" data-to="1.82" data-a="s2:penduduknya" data-d="2.4" data-dec="2">0</b></b><span>juta</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="kk"><i>1963–1965</i>HUBUNGAN MEMBURUK</div>
+  <div class="cd row rd" data-at="s3:Partai" data-fx="card"><b>PAP &middot; LEE KUAN YEW</b><span>vs pemerintah federal</span></div>
+  <div class="cd chips" data-at="s3:soal" data-fx="card"><i data-at="s3:politik" data-fx="fade">politik</i><i data-at="s3:ekonomi" data-fx="fade">ekonomi</i><i data-at="s3:ras" data-fx="fade">ras</i></div>
+  <div class="stamp" data-at="s3:kerusuhan" data-fx="stampc">KERUSUHAN RAS 1964</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="kk"><i>KUALA LUMPUR</i>PERUNDINGAN RAHASIA</div>
+  <div class="cd date" data-at="s4:Lima" data-fx="card">15 JULI 1965</div>
+  <div class="cd row rd" data-at="s4:Goh" data-fx="card"><b>GOH KENG SWEE</b><span>menteri Singapura, menemui Tun Razak</span></div>
+  <div class="stamp" data-at="s4:dirahasiakan" data-fx="stampc">RAHASIA</div>
+  <div class="note" data-at="s4:sebagian" data-fx="fade">Dua menteri Singapura baru diberi tahu 7 Agustus</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="kk"><i>9 AGUSTUS 1965</i>PARLEMEN MALAYSIA</div>
+  <div class="cd vote" data-at="s5:seratus" data-fx="card"><b><b class="ct nb" data-from="0" data-to="126" data-a="s5:seratus-0.4" data-d="0.85" data-dec="0">0</b></b><em>&ndash;</em><b class="z" data-at="s5:nol-0.1" data-fx="fade">0</b><span>setuju pemisahan</span></div>
+  <div class="cd row gd" data-at="s5:Proklamasi" data-fx="card"><b>PROKLAMASI</b><span>dibacakan di Radio Singapura, pukul 10.00</span></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="kk"><i>KONFERENSI PERS TV</i>9 AGUSTUS 1965</div>
+  <div class="cd row " data-at="s6:Lee" data-fx="card"><b>LEE KUAN YEW</b><span>menahan tangis dan sempat terdiam</span></div>
+  <div class="cd q" data-at="s6:sangat" data-fx="card">&ldquo;saat yang sangat pedih&rdquo;<small>&ldquo;a moment of anguish&rdquo;</small></div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Malaysia">
+  <div class="kk"><i>ARSIP DIBUKA</i>DIUSIR ATAU DIRUNDINGKAN?</div>
+  <div class="cd myth" data-at="s7:mengira" data-fx="card"><s class="x" data-at="s7:Tapi" data-fx="grow"></s>DIUSIR?</div>
+  <div class="stamp" data-at="s7:dirundingkan" data-fx="stampc">DIRUNDINGKAN KEDUA PIHAK</div>
+  <div class="note" data-at="s7:dibuka" data-fx="fade">Albatross File (Goh Keng Swee), dibuka penuh 2023</div>
+</div>
+<div class="p" data-in="s7:Malaysia" data-out="s8">
+  <div class="kk"><i>9 AGUSTUS 1965</i>PENGAKUAN</div>
+  <div class="cd row bl" data-at="s7:Malaysia" data-fx="card"><b>MALAYSIA</b><span>negara pertama yang mengakui Singapura</span></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="kk"><i>No. 36</i>ARSIP AUDIRA</div>
+  <div class="cd h2">Lahir dari perpisahan<br>yang <em>dirundingkan</em></div>
+  <div class="cd q2" data-at="s8:Menurut" data-fx="card">Menurut kamu, apakah perpisahan bisa menjadi awal yang baik?</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 36</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":8.635,"s2":8.795,"s2e":18.166,"s3":18.326,"s3e":29.213,"s4":29.373,"s4e":42.237,"s5":42.397,"s5e":50.282,"s6":50.442,"s6e":62.966,"s7":63.126,"s7e":74.121,"s8":74.281,"s8e":83.688,"end":83.688,"dur":86.69,"outro":83.938},AT={"s1:merdeka":0.818,"s1:Ini":5.106,"s1:Singapura":5.384,"s2:Malaysia":12.25,"s2:Singapura":11.058,"s2:bergabung":11.631,"s2:bagian":13.79,"s2:terkecil":14.099,"s2:penduduknya":15.29,"s3:memburuk":19.143,"s3:Partai":20.168,"s3:federal":21.747,"s3:berselisih":22.288,"s3:1964":26.225,"s3:kerusuhan":27.433,"s4:Lima":29.373,"s4:1965":30.116,"s4:menteri":31.71,"s4:Goh":32.608,"s4:Tun":34.729,"s4:menemui":34.249,"s4:Kuala":35.488,"s4:perpisahan":37.577,"s4:Perundingan":38.367,"s4:dirahasiakan":38.847,"s5:pemisahan":44.686,"s5:suara":45.321,"s5:seratus":45.584,"s5:enam":46.095,"s5:nol":46.544,"s5:Proklamasi":47.187,"s5:kemerdekaan":47.697,"s5:Singapura":48.146,"s5:radio":49.385,"s5:sepuluh":49.865,"s6:televisi":52.052,"s6:Lee":52.95,"s6:menahan":53.43,"s6:terdiam":55.102,"s7:diusir":66.025,"s7:Tapi":66.505,"s7:arsip":66.83,"s7:dibuka":67.79,"s7:dirundingkan":69.74,"s7:Malaysia":71.629,"s7:pertama":72.774,"s7:mengakui":73.254,"s8:lahir":75.02,"s8:perpisahan":75.546,"s8:minggu":77.62,"s8:AUDIRA":81.939,"s1:sembilan":6.127,"s3:soal":22.861,"s3:politik":23.186,"s3:ekonomi":23.956,"s3:ras":25.164,"s4:sebagian":40.611,"s5:seratus-0.4":45.184,"s5:nol-0.1":46.444,"s6:sangat":58.37,"s7:mengira":65.235,"s8:Menurut":78.549},DUR=86.69,OUT=83.938;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ card:(e,t)=>{const d=e.dataset.d||(e.matches('.row,.stat,.vote,.chips')?'flex':'block');gsap.set(e,{display:'none'});tl.set(e,{display:d},t);tl.fromTo(e,{opacity:0,y:22},{opacity:1,y:0,duration:.5,ease:'power2.out',immediateRender:false},t);},
+ stampc:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:'inline-block'},t);tl.fromTo(e,{scale:1.35,opacity:0},{scale:1,opacity:1,duration:.32,ease:'power3.out',immediateRender:false},t);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{opacity:0,y:18},{opacity:1,y:0,duration:.55,ease:'power2.out'},a-.1),POUT=(tl,p,b)=>tl.to(p,{opacity:0,y:-14,duration:.32,ease:'power2.in'},b-.32);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP36_SINGAPURA_MERDEKA_1965")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

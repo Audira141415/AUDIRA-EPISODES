@@ -1,0 +1,277 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP01_PENSIL",
+  "topic": "Cara pembuatan benda sehari-hari yang jarang diketahui",
+  "createdAt": "2026-11-11T08:10:25.572Z",
+  "updatedAt": "2026-11-16T15:16:44.978Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T08:15:54.411Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-11T08:10:25.573Z",
+      "startedAt": "2026-11-11T08:10:25.573Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T08:15:54.411Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-11T08:10:25.572Z",
+      "startedAt": "2026-11-11T08:10:25.572Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-11T23:51:24.466Z",
+      "notes": [
+        {
+          "at": "2026-11-11T23:51:37.230Z",
+          "text": "Style dipilih pengguna: \"Ya, semua utama\" (2026-11-12). Cover topik pending."
+        },
+        {
+          "at": "2026-11-12T00:00:13.169Z",
+          "text": "sync: STYLE_DECISION.md ada; acc tercatat di file"
+        }
+      ],
+      "startedAt": "2026-11-11T23:51:37.230Z",
+      "approvalSource": "file",
+      "doneAt": "2026-11-11T23:51:24.466Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T00:59:05.647Z",
+      "notes": [
+        {
+          "at": "2026-11-11T08:15:54.411Z",
+          "text": "sync: naskah ada; menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-12T00:59:05.647Z",
+          "text": "Cover topik + naskah disetujui pengguna: \"Setuju semua\" (2026-11-12)."
+        }
+      ],
+      "startedAt": "2026-11-11T08:10:25.572Z",
+      "doneAt": "2026-11-12T00:59:05.647Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-16T15:16:44.978Z",
+          "text": "sync: dunia world3d disiapkan (project/world3d.js + project/hf/hyperframes.json)"
+        }
+      ],
+      "doneAt": "2026-11-13T17:16:56.640Z",
+      "startedAt": "2026-11-13T17:16:56.640Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T00:59:28.109Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-12T00:58:56.159Z",
+      "startedAt": "2026-11-12T00:58:56.159Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T00:59:28.109Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-12T00:20:53.993Z",
+      "startedAt": "2026-11-12T00:20:53.993Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-13T17:21:14.647Z",
+      "notes": [
+        {
+          "at": "2026-11-12T00:59:28.109Z",
+          "text": "sync: 1 gambar draf/contact sheet; menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-12T12:46:13.459Z",
+          "text": "sync: 1 gambar draf/contact sheet; acc tidak tercatat, disimpulkan karena tahap sesudahnya sudah ada"
+        },
+        {
+          "at": "2026-11-13T17:21:14.647Z",
+          "text": "User acc draf 2026-11-14 (jury blind LOLOS 4.0, poles ore+hook done)"
+        }
+      ],
+      "startedAt": "2026-11-12T00:20:53.993Z",
+      "approvalSource": "inferred",
+      "doneAt": "2026-11-13T17:21:14.647Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T17:36:35.753Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60, -14 LUFS TP-1.7, metadata+Ed25519+C2PA VALID, FINAL_CHECK 0 black/freeze; final score 4.0"
+        }
+      ],
+      "doneAt": "2026-11-13T17:36:35.753Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T12:46:13.459Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-13T17:37:26.682Z",
+          "text": "Caption 6 platform validator ok; lessons saved (ore oreT fix, sig clamp GLOBAL); intermediates cleaned"
+        }
+      ],
+      "doneAt": "2026-11-13T17:37:26.682Z",
+      "startedAt": "2026-11-12T12:42:35.946Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "cara-pembuatan-EP01",
+    "style": "SKETCHFORGE",
+    "title": "Cara Pembuatan Pensil",
+    "wordCount": 201,
+    "estimatedDuration": {
+      "wordCount": 201,
+      "minSec": 80,
+      "maxSec": 89
+    },
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-16T15:16:44.978Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-12T00:58:55.302Z",
+      "doing": "voice-draft.sh EP01-05: Cartesia TTS, word lock, rebuild, mix, SRT, contact sheet (no MP4)",
+      "command": "bash _tools/voice-draft.sh > _tools/voice-draft-0105.log 2>&1",
+      "next": "Read voice-draft-0105.log, check 5 draft/contact-sheet.jpg, score drafts, polish, blind jury, draft gate"
+    },
+    {
+      "at": "2026-11-12T00:58:55.302Z",
+      "doing": "voice-draft.sh EP01-05: Cartesia TTS, word lock, rebuild, mix, SRT, contact sheet (no MP4)",
+      "command": "bash _tools/voice-draft.sh > _tools/voice-draft-0105.log 2>&1",
+      "next": "Read voice-draft-0105.log, check 5 draft/contact-sheet.jpg, score drafts, polish, blind jury, draft gate",
+      "finishedAt": "2026-11-12T12:35:51.366Z"
+    },
+    {
+      "at": "2026-11-12T12:36:00.198Z",
+      "doing": "Batch EP01-05 at the draft stage. VO Cartesia locked for all 5 (films 83.7-88.4 s); voiced draft/contact-sheet.jpg exists per EP (_tools/voice-draft.sh, log voice-draft-0105.log). No MP4. Next is polish + scoring + jury + draft gate.",
+      "command": "cd F:/AUDIRA-VIDEO-MOTION/AUDIRA_CARA_PEMBUATAN_2026; per EP: cd <EP>/project && node build-video.mjs && python mix.py",
+      "files": [
+        "_tools/voice-draft-0105.log",
+        "EP01_PENSIL/draft/contact-sheet.jpg",
+        "EP02_KACA_JENDELA/draft/contact-sheet.jpg",
+        "EP03_KALENG_MINUMAN/draft/contact-sheet.jpg",
+        "EP04_KOREK_API/draft/contact-sheet.jpg",
+        "EP05_BOLA_GOLF/draft/contact-sheet.jpg"
+      ],
+      "next": "(1) Read the 5 draft/contact-sheet.jpg and fix weak spots per EP in project/world3d.js / build-video.mjs (brief _tools/BRIEF_COMMON.md). VO is locked: do NOT run voice-draft.sh again (it re-calls Cartesia TTS). Rebuild from <EP>/project with `node build-video.mjs && python mix.py`, check with `bash ../../_tools/snap.sh <EP> \"<times>\"`. Weak spots: EP01 knife too big s3, miner card dark s2, AUDIRA note cut s1; EP02 tin bath = orange slab, hook glare, ±100 m label cut ~54 s, magenta tint on pane; EP03 CINCIN TARIK tag behind panel, can bottom near captions ~33 s, milky lower frame; EP04 log/bin cut s3, coater sliver s1/s8; EP05 plain mill/press, faint KULIT label, spray mist invisible. (2) record_score stage draft per EP. (3) Blind jury subagent, record_score judge jury. (4) Draft gate with user. Then _tools/final.sh, captions + docs (adapt TECH/AUDIRA_SEJARAH_GAME_2026/_tools/write-captions.py, write-docs.py), channel EXPLAINED @AudiraExplained."
+    },
+    {
+      "at": "2026-11-12T12:40:28.692Z",
+      "doing": "5 subagent poles draf EP01-05 paralel (world3d.js/build-video.mjs per EP), lalu sheet baru via _tools/sheet.sh",
+      "command": "bash _tools/sheet.sh <EP> (rebuild tanpa TTS + contact sheet)",
+      "next": "record_score draft per EP, juri buta, gerbang draf dengan pengguna"
+    },
+    {
+      "at": "2026-11-13T16:57:05.109Z",
+      "doing": "render 16s draft clip s3-s4 (18-34s) 540-ish for motion audit",
+      "command": "npx hyperframes render -o ../out/clip.mp4 --start 18 --end 34 -q draft -w 4",
+      "next": "sample frames, score motion, full draft self-score, blind jury, draft gate"
+    },
+    {
+      "at": "2026-11-13T17:17:38.012Z",
+      "doing": "poles material(ore F2)+composition(stray text F1, sig clamp); rebuild contact sheet",
+      "command": "bash _tools/sheet.sh EP01_PENSIL",
+      "files": [
+        "project/world3d.js",
+        "_tools/shell.mjs"
+      ],
+      "next": "view sheet F1/F2, re-score self draft, re-jury, draft gate"
+    },
+    {
+      "at": "2026-11-13T17:21:45.977Z",
+      "doing": "render final EP01 1080x1920@60 via audira_render_batch (hyperframes hf-render)",
+      "command": "audira_render_batch start hyperframes project/hf fps60",
+      "next": "verify FINAL_CHECK.jpg from MP4, npm run deliver, final score, captions"
+    },
+    {
+      "at": "2026-11-13T17:21:46.022Z",
+      "doing": "render final (hyperframes)",
+      "command": "audira_render_batch start",
+      "batchId": "20261113-172146",
+      "files": [
+        "../../FINAL_VIDEO.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261113-172146); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang."
+    },
+    {
+      "at": "2026-11-13T17:21:46.022Z",
+      "doing": "render final (hyperframes)",
+      "command": "audira_render_batch start",
+      "batchId": "20261113-172146",
+      "files": [
+        "../../FINAL_VIDEO.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261113-172146); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang.",
+      "finishedAt": "2026-11-13T17:37:26.711Z"
+    }
+  ]
+}

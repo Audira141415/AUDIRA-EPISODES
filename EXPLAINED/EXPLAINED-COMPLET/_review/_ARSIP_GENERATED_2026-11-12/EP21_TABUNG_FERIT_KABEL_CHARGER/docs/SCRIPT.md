@@ -1,0 +1,13 @@
+EP21 Tabung Ferit di Kabel Charger (COMICFORGE): 198 kata, 83–91 dtk
+
+Hook: Tonjolan silinder hitam aneh di ujung kabel casan laptop Anda. Apa sebenarnya isi di dalamnya?
+
+Konteks: Hampir setiap kabel charger laptop, kabel kamera, dan kabel monitor komputer memiliki tonjolan tabung plastik tebal di dekat ujung colokannya. Banyak pengguna mengira tonjolan ini hanyalah cetakan plastik pemberat atau penguat sambungan kabel agar tidak mudah putus.
+
+Pengembangan: Jika tabung plastik tersebut dibelah, di dalamnya tersimpan sebuah cincin silinder keramik hitam padat berbahan ferit, yaitu campuran besi oksida dan logam nikel seng. Benda ini dinamakan Ferrite Bead atau inti ferit, dan tidak terhubung ke kabel tembaga dengan solderan listrik sama sekali.
+
+Penjelasan: Arus listrik bolak-balik berkecepatan tinggi di dalam laptop memancarkan gelombang elektromagnetik tak kasat mata. Tanpa cincin ferit, kabel tembaga panjang akan bertindak liar seperti antena pemancar radio yang memancarkan gangguan frekuensi radio ke perangkat lain. Cincin ferit bekerja menyerap kebisingan frekuensi tinggi tersebut dan mengubahnya menjadi panas mikro yang aman.
+
+Payoff: Komponen magnetik pasif berharga murah ini adalah pahlawan tanpa tanda jasa yang menjaga sinyal data tetap bersih, mencegah monitor Anda bergaris-garis, dan meloloskan sertifikasi radiasi elektronik di seluruh dunia.
+
+Outro: Ini AUDIRA, Cara Kerja Benda. Episode berikutnya: bola raksasa di kabel listrik tegangan tinggi.

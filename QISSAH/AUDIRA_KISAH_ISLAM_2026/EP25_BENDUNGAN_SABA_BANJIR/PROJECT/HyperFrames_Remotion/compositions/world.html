@@ -1,0 +1,201 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#0a141a}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.045;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.32) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.42) 42%,rgba(0,0,0,0.42) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:IBM Plex Mono,monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#EEF6F2;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#sig{position:absolute;z-index:19;opacity:0;font-family:Outfit,sans-serif;color:#fff;line-height:1.05;pointer-events:none;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+#sig b{display:block;font-weight:700;font-size:28px;letter-spacing:.14em}
+#sig i{display:block;font-style:normal;font-weight:500;font-size:17px;letter-spacing:.04em}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+
+#hud{position:absolute;left:0;top:0;width:1080px;height:1920px;z-index:9;pointer-events:none}
+#capfloor{background:linear-gradient(180deg,rgba(5,14,19,0),rgba(5,14,19,.42) 45%,rgba(5,14,19,.42) 70%,rgba(5,14,19,0))}
+#chip{background:rgba(5,14,19,.78);padding:5px 12px 4px;border-left:3px solid #7CF3C8;font-size:19px;letter-spacing:.06em}
+.p{--r:100;clip-path:inset(0 0 calc(100% - var(--r) * 1%) 0)}
+.p:after{content:"";position:absolute;left:0;right:0;height:4px;top:calc(var(--r) * 1% - 4px);background:#C8FFE9;box-shadow:0 0 22px 4px rgba(124,243,200,.85);opacity:calc((100 - var(--r)) / 8)}
+.card{position:relative;display:inline-block;max-width:100%;box-sizing:border-box;background:rgba(5,14,19,.9);padding:24px 32px 26px;border:1px solid rgba(124,243,200,.42);box-shadow:0 20px 44px rgba(0,0,0,.45)}
+.card:before,.card:after{content:"";position:absolute;width:30px;height:30px;background:url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2030%2030%22%3E%3Cpath%20d%3D%22M2%2028V2h26%22%20fill%3D%22none%22%20stroke%3D%22%237CF3C8%22%20stroke-width%3D%223%22%2F%3E%3C%2Fsvg%3E") center/contain no-repeat}
+.card:before{left:-7px;top:-7px}.card:after{right:-7px;bottom:-7px;transform:rotate(180deg)}
+.k{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:24px;letter-spacing:.12em;color:#7CF3C8;margin-bottom:10px}
+.h{font-family:"IBM Plex Sans",sans-serif;font-weight:700;font-size:76px;line-height:1.02;color:#EEF6F2;letter-spacing:.01em}
+.h.m{font-size:52px;line-height:1.12;letter-spacing:0}
+.sub{font-family:"IBM Plex Sans",sans-serif;font-weight:500;font-size:37px;line-height:1.22;color:#C4DDD4;margin-top:12px}
+.sub.b{color:#F2DFB0;font-weight:600;margin-top:6px}
+.tr{font-family:"IBM Plex Sans",sans-serif;font-weight:500;font-style:italic;font-size:34px;line-height:1.3;color:#D5E8E0;margin-top:6px}
+.ar{font-family:Amiri,serif;direction:rtl;text-align:right;font-size:58px;line-height:1.75;color:#F2DFB0}
+.ar.sm{font-size:52px;margin-top:8px}
+.rf{display:inline-block;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:21px;letter-spacing:.04em;color:#06121A;background:#7CF3C8;padding:4px 11px 3px;white-space:nowrap}
+.ls{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.ls span{font-family:"IBM Plex Sans",sans-serif;font-weight:600;font-size:44px;line-height:1.12;color:#EEF6F2;padding-left:46px;position:relative}
+.ls span:before{content:"";position:absolute;left:4px;top:.32em;width:22px;height:22px;border:3px solid #FFB347;box-sizing:border-box}
+.kb{margin-bottom:2px}
+.ln{font-family:"IBM Plex Sans",sans-serif;font-weight:700;font-size:38px;color:#FFB347;margin-top:12px;padding-top:10px;border-top:1px solid rgba(124,243,200,.4)}
+.row{display:flex;flex-direction:column;margin-top:14px;padding:10px 0 0 18px;border-left:4px solid #7CF3C8}
+.row b{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:22px;letter-spacing:.1em;color:#7CF3C8}
+.row span{font-family:"IBM Plex Sans",sans-serif;font-weight:700;font-size:44px;line-height:1.1;color:#EEF6F2}
+.duo{display:flex;align-items:center;gap:18px;margin-top:16px}
+.duo span{font-family:"IBM Plex Mono",monospace;font-weight:700;font-size:40px;letter-spacing:.08em;color:#06121A;background:#7CF3C8;padding:8px 18px 6px}
+.duo i{font-family:"IBM Plex Sans",sans-serif;font-style:italic;font-size:34px;color:#C4DDD4}
+.ask{display:inline-block;margin-top:16px;font-family:"IBM Plex Sans",sans-serif;font-weight:700;font-size:38px;line-height:1.2;color:#06121A;background:#7CF3C8;padding:10px 18px}
+#outro{--r:0;clip-path:inset(0 0 calc(100% - var(--r) * 1%) 0)}
+</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="80.59" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI &middot; TANPA MENGGAMBARKAN SOSOK NABI</div>
+
+<canvas id="hud" width="1080" height="1920"></canvas>
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="card">
+    <div class="k">KISAH DALAM AL-QUR'AN &middot; 25</div>
+    <div class="h">BENDUNGAN SABA'</div>
+    <div class="sub" data-at="s1:banjir" data-fx="rise">Satu banjir besar mengubah semuanya</div>
+    <div class="sub b" data-at="s1:berhenti" data-fx="rise">karena mereka berhenti bersyukur</div>
+  </div>
+</div>
+<div class="p" data-in="s2" data-out="s2:Makanlah">
+  <div class="card">
+    <div class="k">SURAH SABA' <span class="rf">QS 34:15</span></div>
+    <div class="ar">لَقَدْ كَانَ لِسَبَإٍ فِى مَسْكَنِهِمْ ءَايَةٌ ۖ جَنَّتَانِ عَن يَمِينٍ وَشِمَالٍ</div>
+    <div class="tr">&ldquo;Bagi kaum Saba' ada tanda di tempat tinggal mereka: dua kebun, di kanan dan di kiri.&rdquo;</div>
+  </div>
+</div>
+<div class="p" data-in="s2:Makanlah" data-out="s3">
+  <div class="card">
+    <div class="k">PERINTAH <span class="rf">QS 34:15</span></div>
+    <div class="ar">كُلُوا۟ مِن رِّزْقِ رَبِّكُمْ وَٱشْكُرُوا۟ لَهُۥ</div>
+    <div class="tr">&ldquo;Makanlah dari rezeki Tuhanmu, dan bersyukurlah.&rdquo;</div>
+  </div>
+</div>
+<div class="p" data-in="s3" data-out="s3:Mereka">
+  <div class="card">
+    <div class="k">NEGERI SABA' <span class="rf">QS 34:15</span></div>
+    <div class="ar">بَلْدَةٌ طَيِّبَةٌ وَرَبٌّ غَفُورٌ</div>
+    <div class="tr">&ldquo;Negeri yang baik, dan Tuhan Yang Maha Pengampun.&rdquo;</div>
+  </div>
+</div>
+<div class="p" data-in="s3:Mereka" data-out="s4">
+  <div class="card">
+    <div class="k">JALUR PERJALANAN AMAN <span class="rf">QS 34:18</span></div>
+    <div class="h m">Kampung-kampung yang berdekatan</div>
+    <div class="sub" data-at="s3:sampai" data-fx="rise">sampai ke negeri yang diberkahi</div>
+  </div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="card">
+    <div class="k">MEREKA BERPALING <span class="rf">QS 34:19</span></div>
+    <div class="h m">Tapi mereka berpaling.</div>
+    <div class="ar sm" data-at="s4:berdoa" data-fx="rise">رَبَّنَا بَـٰعِدْ بَيْنَ أَسْفَارِنَا</div>
+    <div class="tr" data-at="s4:berdoa" data-fx="rise">&ldquo;Ya Tuhan kami, jauhkanlah jarak perjalanan kami.&rdquo;</div>
+    <div class="ln" data-at="s4:bosan" data-fx="rise">Bosan dengan kemudahan</div>
+  </div>
+</div>
+<div class="p" data-in="s5" data-out="s5:Kebun">
+  <div class="card">
+    <div class="k">SAIL AL-'ARIM <span class="rf">QS 34:16</span></div>
+    <div class="h m">Maka datanglah banjir besar</div>
+  </div>
+</div>
+<div class="p" data-in="s5:Kebun" data-out="s6">
+  <div class="card">
+    <div class="k">KEBUN DIGANTI <span class="rf">QS 34:16</span></div>
+    <div class="h m kb">Kebun mereka diganti</div>
+    <div class="ls">
+      <span data-at="s5:pahit" data-fx="rise">pohon berbuah pahit</span>
+      <span data-at="s5:atsl" data-fx="rise">pohon atsl</span>
+      <span data-at="s5:sidr" data-fx="rise">sedikit pohon sidr</span>
+    </div>
+  </div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="card">
+    <div class="k">CITRA HARI INI &middot; MA'RIB, YAMAN</div>
+    <div class="h m">Reruntuhan bendungan kuno itu masih ada</div>
+    <div class="row" data-at="s6:abad" data-fx="rise"><b>DIBANGUN PERTAMA</b><span>sekitar abad ke-8 SM</span></div>
+    <div class="row" data-at="s6:2023" data-fx="rise"><b>WARISAN DUNIA UNESCO</b><span>sejak 2023</span></div>
+  </div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Tapi">
+  <div class="card">
+    <div class="k">CATATAN SEJARAH</div>
+    <div class="h m">Sejarawan berbeda pendapat:</div>
+    <div class="sub" data-at="s7:jebolan" data-fx="rise">jebolan yang mana yang dimaksud ayat ini?</div>
+  </div>
+</div>
+<div class="p" data-in="s7:Tapi" data-out="s8">
+  <div class="card">
+    <div class="k">PESAN AYAT <span class="rf">QS 34:19</span></div>
+    <div class="ar">إِنَّ فِى ذَٰلِكَ لَـَٔايَـٰتٍ لِّكُلِّ صَبَّارٍ شَكُورٍ</div>
+    <div class="tr">&ldquo;Semua itu tanda, bagi setiap orang yang sabar dan bersyukur.&rdquo;</div>
+    <div class="duo" data-at="s7:sabar" data-fx="rise"><span>SABAR</span><i>dan</i><span>BERSYUKUR</span></div>
+  </div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="card">
+    <div class="k">RENUNGAN</div>
+    <div class="h m">Nikmat yang terlalu biasa sering lupa disyukuri.</div>
+    <div class="ask" data-at="s8:Nikmat#2" data-fx="rise">Nikmat apa yang hari ini kamu anggap biasa?</div>
+  </div>
+</div>
+<div id="sig"><b>AUDIRA</b><i>audira.my.id</i></div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">KISAH DALAM AL-QUR&#39;AN &middot; EP 25</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":8.799,"s2":8.959,"s2e":18.483,"s3":18.643,"s3e":28.576,"s4":28.736,"s4e":39.544,"s5":39.704,"s5e":49.358,"s6":49.518,"s6e":60.385,"s7":60.545,"s7e":69.627,"s8":69.787,"s8e":77.595,"end":77.595,"dur":80.59,"outro":77.845},AT={"s1:kanan":1.94,"s1:kiri":2.605,"s1:banjir":4.602,"s1:bersyukur":8.288,"s2:tanda":11.467,"s2:Dua":13.556,"s2:kanan":14.191,"s2:kiri":15.027,"s2:Makanlah":15.697,"s3:Negeri":18.643,"s3:Mereka":22.4,"s3:jalur":23.732,"s3:aman":24.8,"s3:kampung-kampung":25.852,"s3:diberkahi":27.958,"s4:berpaling":29.71,"s4:jauhkanlah":33.496,"s4:bosan":36.155,"s5:banjir":41.03,"s5:al-arim":42.563,"s5:Kebun":43.63,"s5:pahit":46.092,"s5:atsl":46.989,"s5:sidr":49.002,"s6:Ma'rib":49.75,"s6:abad":55.153,"s6:2023":57.939,"s7:jebolan":62.212,"s7:tanda":66.655,"s7:sabar":68.482,"s8:Nikmat#2":72.952,"s8:Kisah":75.135,"s8:AUDIRA":77.161,"s1:berhenti":7.87,"s3:sampai":27.292,"s4:berdoa":31.444,"s7:Tapi":64.333},DUR=80.59,OUT=77.845;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ rise:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:''},t-.001);tl.fromTo(e,{opacity:0,y:14},{opacity:1,y:0,duration:.32,ease:'power3.out'},t);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{'--r':0,opacity:1},{'--r':100,duration:.5,ease:'power1.inOut'},a-.16);},POUT=(tl,p,b)=>{tl.to(p,{'--r':0,duration:.2,ease:'power1.in'},b-.12);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+// AUDIRA moving signature (port of AudiraSignature.tsx): 32% opacity, 4 safe-zone anchors, jumps every 18 s in a seeded order, hidden at the outro.
+(function(){const A=[[1015,221,'r'],[65,1190,'l'],[1015,864,'r'],[65,221,'l']];let h=2166136261;const sd="EP25_BENDUNGAN_SABA_BANJIR";for(let i=0;i<sd.length;i++)h=Math.imul(h^sd.charCodeAt(i),16777619)>>>0;const ord=[0,1,2,3];for(let i=3;i>0;i--){h=Math.imul(h^(h>>>15),2246822507)>>>0;const j=h%(i+1);[ord[i],ord[j]]=[ord[j],ord[i]];}
+const s=q('#sig');const C=18,OP=.32;for(let c=0;c*C<OUT;c++){const [x,y,al]=A[ord[c%4]];const t0=c*C,t1=Math.min((c+1)*C,OUT-.2);tl.set(s,{left:al==='l'?x:'auto',right:al==='r'?1080-x:'auto',top:y,textAlign:al==='l'?'left':'right'},t0);tl.fromTo(s,{opacity:0},{opacity:OP,duration:.5,ease:'none'},t0);tl.to(s,{opacity:0,duration:.4,ease:'none'},Math.max(t0+.6,t1-.4));}})();
+tl.fromTo('#outro',{'--r':0},{'--r':100,duration:.7,ease:'power1.inOut'},OUT-.15);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

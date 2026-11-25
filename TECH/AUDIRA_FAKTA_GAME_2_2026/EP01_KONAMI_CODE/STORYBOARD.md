@@ -1,0 +1,17 @@
+# EP 01: Konami Code lahir dari alat uji yang lupa dihapus
+
+Seri AUDIRA, FAKTA GAME DUNIA 2. Created by Agus Dwi R. Riset 8 November 2026. Style: ARCADECRT.
+
+Storyboard visual per adegan tercatat di laporan build dan terlihat di `style/draft-contact-sheet.jpg` (8 frame pada timing suara asli) serta `PROJECT/qc/final-row.jpg` (frame dari MP4 final).
+
+| Waktu | Narasi |
+| --- | --- |
+| 0:00-0:06 | Atas, atas, bawah, bawah, kiri, kanan, kiri, kanan, B, A. Kode cheat paling terkenal di dunia ini sebenarnya lupa dihapus. |
+| 0:06-0:18 | Pembuatnya Kazuhisa Hashimoto dari Konami. Pertengahan tahun delapan puluhan, dia ditugaskan memindahkan game arkade Gradius, buatan 1985, ke konsol Nintendo, NES. |
+| 0:19-0:27 | Masalahnya, Gradius sangat sulit. Saat pengujian, Hashimoto sendiri tidak sanggup memainkannya sampai tamat. Padahal tim harus bisa memeriksa setiap bagian game. |
+| 0:28-0:38 | Jadi dia membuat jalan pintas: sebuah kode yang dimasukkan saat game dijeda. Hasilnya, semua power-up langsung didapat, padahal biasanya dikumpulkan sedikit demi sedikit. |
+| 0:38-0:45 | Urutannya dipilih dengan cermat. Cukup mudah diingat penguji, tapi sulit ditekan tanpa sengaja oleh pemain biasa. |
+| 0:45-0:58 | Rencananya, kode itu dihapus sebelum rilis. Tapi terlewat, dan baru ketahuan saat game hampir diproduksi massal. Tim memilih membiarkannya, karena menghapusnya bisa memunculkan bug baru. |
+| 0:58-1:15 | Gradius versi NES rilis tahun 1986, lengkap dengan kode itu. Di Amerika, kode ini makin terkenal lewat Contra, karena memberi tiga puluh nyawa. Sekarang kode yang sama jadi kejutan rahasia di banyak game dan situs, termasuk situs uang kertas Bank Kanada. |
+| 1:16-1:22 | Hashimoto meninggal tahun 2020, tapi kodenya masih hidup. Kamu pernah mencobanya di game apa? Ikuti AUDIRA untuk fakta game berikutnya. |
+| 1:22-1:25 | Outro: logo AUDIRA, Created by Agus Dwi R. |

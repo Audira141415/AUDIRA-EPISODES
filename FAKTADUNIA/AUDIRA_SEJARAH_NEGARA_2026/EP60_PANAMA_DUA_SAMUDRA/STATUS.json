@@ -1,0 +1,547 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP60_PANAMA_DUA_SAMUDRA",
+  "topic": "Kanal Panama: kanal 82 km yang menyatukan dua samudra",
+  "createdAt": "2026-11-23T14:20:56.148Z",
+  "updatedAt": "2026-11-24T07:07:29.752Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.118Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:20:56.149Z",
+      "startedAt": "2026-11-23T14:20:56.149Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.118Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:20:09.819Z",
+      "startedAt": "2026-11-23T14:20:09.819Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.118Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:23:35.333Z",
+      "startedAt": "2026-11-23T14:23:35.333Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.118Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:23:35.732Z",
+      "startedAt": "2026-11-23T14:23:35.732Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.118Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T22:20:20.000Z",
+      "startedAt": "2026-11-22T22:20:20.000Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.118Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-23T14:21:59.430Z",
+      "startedAt": "2026-11-23T14:21:59.430Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.118Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T22:20:20.000Z",
+      "startedAt": "2026-11-22T22:20:20.000Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:10:13.452Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json PASS"
+        },
+        {
+          "at": "2026-11-23T15:17:32.150Z",
+          "text": "Juri buta r2 = 4.0 LOLOS (lighting 4, material 4, depth 4, composition 3, motion 5, readability 4). audit:visual plafon 5, audit:camera 5/5. Menunggu acc gerbang render final."
+        }
+      ],
+      "doneAt": "2026-11-23T15:17:32.150Z",
+      "startedAt": "2026-11-23T14:45:02.896Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-23T18:21:16.038Z",
+      "notes": [
+        {
+          "at": "2026-11-23T18:21:16.038Z",
+          "text": "Acc pengguna di gerbang render final: \"Gas, render final\" (2026-11-24)."
+        }
+      ],
+      "startedAt": "2026-11-23T18:21:16.038Z",
+      "doneAt": "2026-11-23T18:30:19.436Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T18:24:49.049Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-24T07:07:29.752Z",
+          "text": "Caption ok, SRT, NOTES, arsip, 3 scheduled review (upload 6 Jan 2027 19.00 WIB), dofBlur dipromosikan (AUDIRA-SKILL-MOTION adc8d78)."
+        }
+      ],
+      "doneAt": "2026-11-24T07:07:29.752Z",
+      "startedAt": "2026-11-23T18:23:51.593Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-negara-EP60",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ],
+    "style": "PAPERWORLD",
+    "engine": "remotion",
+    "shortTitle": "Kanal Panama"
+  },
+  "handoverLog": [
+    {
+      "at": "2026-11-23T14:21:38.102Z",
+      "doing": "VO mentah selesai (85.4 dtk); berikutnya tighten-pauses + timing + kode ep60 PAPERWORLD 2D",
+      "files": [
+        "docs/HANDOFF.md",
+        "audio/vo.txt",
+        "audio/vo-raw.wav",
+        "audio/vo-raw-words.json",
+        "research/SOURCE_REGISTER.md"
+      ],
+      "next": "Baca docs/HANDOFF.md. Tighten VO → public/audio, tulis docs rule 12, kode src/ep60 meniru EP18 Svalbard, cover, sfx, draf+juri, gerbang acc final.",
+      "snapshot": {
+        "episode": "EP60_PANAMA_DUA_SAMUDRA",
+        "topic": "Kanal Panama: kanal 82 km yang menyatukan dua samudra",
+        "style": null,
+        "memoryEpisode": "sejarah-negara-EP60",
+        "currentStage": "context",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T14:24:00.355Z",
+      "doing": "Tahap 1–6 selesai (style PAPERWORLD 2D, docs rule 12, VO 85.4 dtk, timing.ts). Berikutnya kode src/ep60.",
+      "files": [
+        "docs/HANDOFF.md",
+        "docs/STORYBOARD.md",
+        "project/src/ep60/timing.ts",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "Baca docs/HANDOFF.md + docs/STORYBOARD.md + src/ep60/timing.ts. Tulis SHOTLIST.md, src/ep60/{pieces,scenes,Film}.tsx meniru EP18, ganti Root.tsx, cover topik, npm run sfx, contact sheet + juri buta, THEME_CHECK, lalu gerbang acc final.",
+      "snapshot": {
+        "episode": "EP60_PANAMA_DUA_SAMUDRA",
+        "topic": "Kanal Panama: kanal 82 km yang menyatukan dua samudra",
+        "style": null,
+        "memoryEpisode": "sejarah-negara-EP60",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/FAKTADUNIA/AUDIRA_SEJARAH_NEGARA_2026/EP60_PANAMA_DUA_SAMUDRA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T14:32:21.193Z",
+      "doing": "Tahap 7 animasi: kode ep60 (pieces/scenes/Film) ditulis, Root.tsx sudah Ep60Preview/Ep60Final/Ep60Cover, tsc bersih untuk src/ep60. BELUM dirender/dicek visual.",
+      "files": [
+        "docs/SHOTLIST.md",
+        "project/src/ep60/pieces.tsx",
+        "project/src/ep60/scenes.tsx",
+        "project/src/ep60/Film.tsx",
+        "project/src/ep60/timing.ts",
+        "project/src/Root.tsx"
+      ],
+      "next": "1) render still per adegan (npm run stills -- out/s 3s,12s,20s,30s,40s,47s,55s,63s,69s,76s,84s Ep60Preview) dan perbaiki layout (S7 penampang pintu air paling berisiko: dinding/kolam/kapal; S2 peta; S10 timbangan). 2) cover: npm run cover / still Ep60Cover → style/cover-topic.png. 3) npm run sfx (docs/SHOTLIST.md sudah ada) → public/audio/sfx.wav. 4) contact sheet 8 frame + audit:visual/audit:camera + draft/THEME_CHECK.md + juri buta + record_score. 5) gerbang acc render final.",
+      "snapshot": {
+        "episode": "EP60_PANAMA_DUA_SAMUDRA",
+        "topic": "Kanal Panama: kanal 82 km yang menyatukan dua samudra",
+        "style": null,
+        "memoryEpisode": "sejarah-negara-EP60",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/FAKTADUNIA/AUDIRA_SEJARAH_NEGARA_2026/EP60_PANAMA_DUA_SAMUDRA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T14:38:40.362Z",
+      "doing": "Tahap 8 draf: still sudah dicek & dipoles (S7 label clamp + danau dalam + penggaris, label UAP dihapus, S10 timbangan 1.5x), cover-topic.png + sfx.wav selesai. Sedang render klip 540x960 47–65 dtk untuk audit:camera.",
+      "files": [
+        "project/src/ep60/scenes.tsx",
+        "project/src/ep60/pieces.tsx",
+        "style/cover-topic.png",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "contact sheet 8 frame → draft/contact-sheet.jpg, audit:visual + audit:camera, draft/THEME_CHECK.md, record_score self + juri buta, lalu gerbang acc render final",
+      "snapshot": {
+        "episode": "EP60_PANAMA_DUA_SAMUDRA",
+        "topic": "Kanal Panama: kanal 82 km yang menyatukan dua samudra",
+        "style": null,
+        "memoryEpisode": "sejarah-negara-EP60",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/FAKTADUNIA/AUDIRA_SEJARAH_NEGARA_2026/EP60_PANAMA_DUA_SAMUDRA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T14:45:40.492Z",
+      "doing": "Tahap 8: contact sheet draft/contact-sheet.jpg (8 frame) + contact-sheet-gate.jpg (dengan outro), audit:visual semua plafon 5, audit:camera klip 47-65 = 5/5 parked 0% median 0.049, THEME_CHECK.md 9/9 ya, self 4.17. Juri buta r1 sedang berjalan. G18c: VO −16 vs SFX −30 = 14 LU.",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/contact-sheet-gate.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/camera.json",
+        "draft/look.json"
+      ],
+      "next": "record_score jury; bila LOLOS → gerbang acc render final (tampilkan contact-sheet-gate, skor, durasi 88.6 dtk, G18c). Setelah acc: render:final --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --concurrency=2 TEMP=F:/tmp-remotion.",
+      "snapshot": {
+        "episode": "EP60_PANAMA_DUA_SAMUDRA",
+        "topic": "Kanal Panama: kanal 82 km yang menyatukan dua samudra",
+        "style": null,
+        "memoryEpisode": "sejarah-negara-EP60",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/FAKTADUNIA/AUDIRA_SEJARAH_NEGARA_2026/EP60_PANAMA_DUA_SAMUDRA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T14:46:20.218Z",
+      "doing": "Tahap 8 draf: juri buta r1 = 3.5 PERLU POLES (lighting 3, material 3, depth 3, composition 4, motion 4, readability 4; self 4.17). Contact sheet r1: draft/contact-sheet.jpg (frame 3,12,20,30,41,56.5,76,84 dtk). audit:visual plafon semua 5, audit:camera klip 47-65 5/5 (draft/camera.json). THEME_CHECK 9/9 ya. sfx.wav + cover-topic.png selesai. G18c: VO −16 vs SFX −30 = 14 LU.",
+      "files": [
+        "project/src/ep60/scenes.tsx",
+        "project/src/ep60/pieces.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/contact-sheet-gate.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/camera.json",
+        "draft/look.json"
+      ],
+      "next": "Putaran poles 2 (terakhir): terapkan gold EP18 Svalbard (GOLD.json di AUDIRA-SKILL-MOTION kits/paperworld/gold/short-baru-11-23-EP18). Catatan juri: (1) key light berarah dengan bayangan jatuh panjang searah 30-40px + rim highlight, bukan drop shadow seragam; (2) ketebalan tepi kartu + tekstur serat; (3) 3-4 bidang parallax/perspektif, haze di belakang, DOF blur FG; (4) label kecil: AMERIKA SELATAN (S2) dan 'pemberantas nyamuk' (S5) perbesar ≥40px; DANAU GATUN jangan menempel dinding (S7); (5) S1 3 dtk: tambahkan gunung/bukit di belakang pintu air (VO 'melintasi pegunungan'). Lalu render ulang contact sheet frame sama, audit:visual, audit:camera klip, juri buta r2. Skor juri ≥3.8 → gerbang; setelah 2 putaran skor terbaik ≥3.5 → langsung gerbang render final (catat 'diterima'). Gerbang: tampilkan contact sheet + skor + durasi 88.6 dtk + G18c, tunggu acc pengguna.",
+      "snapshot": {
+        "episode": "EP60_PANAMA_DUA_SAMUDRA",
+        "topic": "Kanal Panama: kanal 82 km yang menyatukan dua samudra",
+        "style": null,
+        "memoryEpisode": "sejarah-negara-EP60",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/FAKTADUNIA/AUDIRA_SEJARAH_NEGARA_2026/EP60_PANAMA_DUA_SAMUDRA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T15:13:40.842Z",
+      "doing": "Poles r2 diterapkan (pieces.tsx P/Layered: tepi tebal + serat + bayangan lebih panjang; scenes.tsx: Mountains+Haze di S1/S3/S5/S8, FGFoliage DOF di S1/S3/S5/S7/S8, AMERIKA SELATAN 48px, NameCard role 42px, label DANAU GATUN margin; Film.tsx key light lebih kuat). Sedang render still r2.",
+      "files": [
+        "project/src/ep60/pieces.tsx",
+        "project/src/ep60/scenes.tsx",
+        "project/src/ep60/Film.tsx"
+      ],
+      "next": "npm run stills -- out/d 3s,12s,20s,30s,41s,56.5s,76s,84s Ep60Preview → audit:visual → contact sheet → juri buta r2 → gerbang render final.",
+      "snapshot": {
+        "episode": "EP60_PANAMA_DUA_SAMUDRA",
+        "topic": "Kanal Panama: kanal 82 km yang menyatukan dua samudra",
+        "style": null,
+        "memoryEpisode": "sejarah-negara-EP60",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/FAKTADUNIA/AUDIRA_SEJARAH_NEGARA_2026/EP60_PANAMA_DUA_SAMUDRA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T15:16:57.485Z",
+      "doing": "Poles r2 selesai; still r2 di project/out/d, contact sheet r2 di draft/contact-sheet.jpg + contact-sheet-gate.jpg (3x3 dengan outro), audit:visual plafon semua 5, audit:camera klip 47-65 5/5 (parked 0%). Juri buta r2 subagent sedang menilai.",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/contact-sheet-gate.jpg",
+        "draft/look.json",
+        "draft/camera.json"
+      ],
+      "next": "record_score judge jury r2 (episode sejarah-negara-EP60, stage draft). ≥3.8 lolos; bila tidak, skor terbaik ≥3.5 → diterima (NOTES.md + append_lesson failed). Lalu gerbang render final: tampilkan contact-sheet-gate.jpg, skor, durasi 88,6 dtk, G18c 14 LU, tunggu acc.",
+      "snapshot": {
+        "episode": "EP60_PANAMA_DUA_SAMUDRA",
+        "topic": "Kanal Panama: kanal 82 km yang menyatukan dua samudra",
+        "style": null,
+        "memoryEpisode": "sejarah-negara-EP60",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/FAKTADUNIA/AUDIRA_SEJARAH_NEGARA_2026/EP60_PANAMA_DUA_SAMUDRA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T18:21:30.308Z",
+      "doing": "Acc pengguna gerbang render final SUDAH diterima 2026-11-24 (\"Gas, render final\"; STATUS final approved true). Draf juri buta r2 = 4.0 LOLOS. Render final BELUM dimulai.",
+      "command": "cd project; TEMP=F:/tmp-remotion npm run render:final -- --comp=Ep60Final --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Kanal Panama: Dua Samudra\" --slug=panama-dua-samudra --ep=EP60 (lihat header scripts/render-final.mjs untuk flag)",
+      "files": [
+        "project/src/ep60/pieces.tsx",
+        "project/src/ep60/scenes.tsx",
+        "project/src/ep60/Film.tsx",
+        "draft/contact-sheet-gate.jpg",
+        "draft/look.json",
+        "draft/camera.json"
+      ],
+      "next": "Render final (background) → QA: −14 LUFS, TP < −1 dBFS, cek frame dari MP4, metadata ffprobe (artist \"AUDIRA (Agus Dwi R.)\"), audira_verify_signature (handle @AudiraFaktaDunia, seed panama-ep60) → record_score stage final (judge jury, subagent blind) → SOCIAL_CAPTIONS.md 6 platform + Jadwal Upload (WIB) + Label Konten AI, audira_validate_social_captions, tampilkan di chat → NOTES.md (pelajaran r1→r2, composition 3) → append_lesson/set_best PAPERWORLD → hapus perantara (project/out/d_r1, out/s*, draft clip bila final ok) → 3 scheduled task review-panama-dua-samudra-24h/-72h/-7d.",
+      "snapshot": {
+        "episode": "EP60_PANAMA_DUA_SAMUDRA",
+        "topic": "Kanal Panama: kanal 82 km yang menyatukan dua samudra",
+        "style": null,
+        "memoryEpisode": "sejarah-negara-EP60",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/FAKTADUNIA/AUDIRA_SEJARAH_NEGARA_2026/EP60_PANAMA_DUA_SAMUDRA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T18:22:23.315Z",
+      "doing": "s5: render final Ep60Final 1080x1920@60 sedang berjalan (background)",
+      "command": "cd project; TEMP=F:/tmp-remotion npm run render:final -- --comp=Ep60Final --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Kanal Panama: Dua Samudra\" --slug=panama-dua-samudra --ep=EP60",
+      "files": [
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "Bila terputus: jalankan ulang perintah (segmen jadi di-resume). Lalu QA LUFS/TP, frame sheet, ffprobe, verify_signature → juri final → caption/NOTES/memory → hapus perantara → 3 scheduled review.",
+      "snapshot": {
+        "episode": "EP60_PANAMA_DUA_SAMUDRA",
+        "topic": "Kanal Panama: kanal 82 km yang menyatukan dua samudra",
+        "style": null,
+        "memoryEpisode": "sejarah-negara-EP60",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/FAKTADUNIA/AUDIRA_SEJARAH_NEGARA_2026/EP60_PANAMA_DUA_SAMUDRA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:03:58.362Z",
+      "doing": "s5: FINAL_VIDEO.mp4 SELESAI + QA lolos (−13.6 LUFS, TP −1.9, metadata ok, Ed25519 VALID, outro ok). SOCIAL_CAPTIONS.md lolos validator, SUBTITLES.srt dibuat. Juri buta final sedang jalan.",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "FINAL_VIDEO.mp4.sig.json",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt",
+        "draft/contact-sheet-final.jpg"
+      ],
+      "next": "record_score final (draft/contact-sheet-final.jpg, ceilings draft/look-final.json) → NOTES.md → append_lesson/set_best PAPERWORLD → hapus project/out/{d,d_r1,s,s7,s10} → tanya jam upload → 3 scheduled task review-panama-dua-samudra-24h/-72h/-7d.",
+      "snapshot": {
+        "episode": "EP60_PANAMA_DUA_SAMUDRA",
+        "topic": "Kanal Panama: kanal 82 km yang menyatukan dua samudra",
+        "style": null,
+        "memoryEpisode": "sejarah-negara-EP60",
+        "currentStage": "review",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/FAKTADUNIA/AUDIRA_SEJARAH_NEGARA_2026/EP60_PANAMA_DUA_SAMUDRA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:03:58.362Z",
+      "doing": "s5: FINAL_VIDEO.mp4 SELESAI + QA lolos (−13.6 LUFS, TP −1.9, metadata ok, Ed25519 VALID, outro ok). SOCIAL_CAPTIONS.md lolos validator, SUBTITLES.srt dibuat. Juri buta final sedang jalan.",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "FINAL_VIDEO.mp4.sig.json",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt",
+        "draft/contact-sheet-final.jpg"
+      ],
+      "next": "record_score final (draft/contact-sheet-final.jpg, ceilings draft/look-final.json) → NOTES.md → append_lesson/set_best PAPERWORLD → hapus project/out/{d,d_r1,s,s7,s10} → tanya jam upload → 3 scheduled task review-panama-dua-samudra-24h/-72h/-7d.",
+      "snapshot": {
+        "episode": "EP60_PANAMA_DUA_SAMUDRA",
+        "topic": "Kanal Panama: kanal 82 km yang menyatukan dua samudra",
+        "style": null,
+        "memoryEpisode": "sejarah-negara-EP60",
+        "currentStage": "review",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/FAKTADUNIA/AUDIRA_SEJARAH_NEGARA_2026/EP60_PANAMA_DUA_SAMUDRA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T07:07:22.698Z"
+    }
+  ],
+  "session": 5,
+  "syncedAt": "2026-11-23T18:30:50.161Z",
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP60 Kanal Panama: kanal 82 km yang menyatukan dua samudra · s2",
+      "at": "2026-11-23T14:24:00.355Z"
+    },
+    {
+      "no": 3,
+      "title": "EP60 Kanal Panama: kanal 82 km yang menyatukan dua samudra · s3",
+      "at": "2026-11-23T14:32:21.193Z"
+    },
+    {
+      "no": 4,
+      "title": "EP60 Kanal Panama: kanal 82 km yang menyatukan dua samudra · s4",
+      "at": "2026-11-23T14:46:20.218Z"
+    },
+    {
+      "no": 5,
+      "title": "EP60 Kanal Panama: kanal 82 km yang menyatukan dua samudra · s5",
+      "at": "2026-11-23T18:21:30.308Z"
+    }
+  ]
+}

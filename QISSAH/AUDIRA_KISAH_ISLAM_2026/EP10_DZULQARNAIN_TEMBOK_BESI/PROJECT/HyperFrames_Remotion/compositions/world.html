@@ -1,0 +1,235 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#0D1626}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.06;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.5) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.55) 42%,rgba(0,0,0,0.55) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Rajdhani,sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#9FC3E6;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+
+#capfloor{background:linear-gradient(180deg,rgba(6,9,16,0),rgba(6,9,16,.62) 40%,rgba(6,9,16,.62) 72%,rgba(6,9,16,0))}
+.p{--cp:100}
+.p[data-first="1"]{--cp:0}
+.card{position:relative;background:linear-gradient(160deg,rgba(18,22,30,.9),rgba(10,13,19,.86));padding:22px 30px 26px;border-radius:6px;
+ box-shadow:0 18px 40px rgba(0,0,0,.45),inset 0 0 0 1px rgba(224,137,74,.55),inset 0 1px 0 rgba(255,200,140,.35);
+ clip-path:inset(0 0 calc(var(--cp) * 1%) 0)}
+.card:after{content:"";position:absolute;left:0;right:0;top:calc((100 - var(--cp)) * 1% - 3px);height:6px;background:linear-gradient(90deg,rgba(255,181,92,0),#FFB55C 18%,#FFF1C8 50%,#FFB55C 82%,rgba(255,181,92,0));box-shadow:0 0 18px 4px rgba(255,140,50,.75);opacity:calc(var(--cp) / 100 * 8);pointer-events:none}
+.card:before{content:"";position:absolute;left:30px;right:30px;bottom:0;height:3px;background:linear-gradient(90deg,#E0894A,#FFB55C,#7FB6E0,#E0894A);opacity:.85}
+.k{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-family:Rajdhani,sans-serif;font-weight:700;font-size:27px;letter-spacing:.16em;color:#9FC3E6;margin-bottom:10px}
+.k i{display:block;width:14px;height:14px;background:#FFB55C;box-shadow:0 0 10px #FFB55C;transform:rotate(45deg)}
+.h{font-family:"Cinzel Decorative",serif;font-weight:900;font-size:64px;line-height:1.08;color:#F6E6D0;text-shadow:0 0 22px rgba(255,140,60,.35)}
+.h.m{font-size:56px}
+.h.s{font-family:Rajdhani,sans-serif;font-weight:700;font-size:50px;line-height:1.1;color:#F6E6D0}
+.sub{font-family:Rajdhani,sans-serif;font-weight:600;font-size:40px;line-height:1.2;color:#FFB55C;margin-top:8px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.sub.sm{font-size:34px;color:#D9C6B0}
+.dim{color:#9fb0c4;font-size:30px}
+.qt{font-family:Rajdhani,sans-serif;font-weight:600;font-style:italic;font-size:46px;line-height:1.15;color:#F6E6D0;margin-top:6px}
+.qt.big{font-size:56px}
+.rf{display:inline-block;font-family:Rajdhani,sans-serif;font-weight:700;font-size:24px;letter-spacing:.08em;color:#0B0F17;background:linear-gradient(180deg,#FFD08A,#E0894A);padding:4px 12px 3px;border-radius:3px;white-space:nowrap}
+.row{display:flex;align-items:center;gap:18px;margin-top:14px;flex-wrap:wrap}
+.tag{font-family:Rajdhani,sans-serif;font-weight:700;font-size:36px;letter-spacing:.06em;color:#FFB55C}
+.tag2{display:inline-block;margin-top:14px;font-family:Rajdhani,sans-serif;font-weight:700;font-size:38px;color:#0B0F17;background:#FFB55C;padding:6px 16px}
+.ar{font-family:Amiri,serif;direction:rtl;text-align:right;font-size:66px;line-height:1.5;color:#FFD9A8;text-shadow:0 0 16px rgba(255,140,60,.45)}
+.ar.v{font-size:33px;line-height:1.75;color:#F2D2AA;margin:2px 0 8px}
+.ar.big{font-size:74px}
+.name .h{font-size:70px}
+.horns{width:96px;height:48px;filter:drop-shadow(0 0 8px rgba(255,160,60,.7))}
+.two{display:flex;gap:18px;margin-top:4px}
+.op{flex:1;border:1px solid rgba(159,195,230,.4);border-radius:5px;padding:12px 16px;background:rgba(159,195,230,.06)}
+.op em{display:block;font-family:Rajdhani,sans-serif;font-style:normal;font-weight:600;font-size:24px;letter-spacing:.12em;color:#9FC3E6;text-transform:uppercase}
+.op b{display:block;font-family:"Cinzel Decorative",serif;font-weight:900;font-size:44px;color:#F6E6D0}
+.op small{display:block;font-family:Rajdhani,sans-serif;font-weight:600;font-size:30px;color:#D9C6B0}
+.note{display:inline-block;margin-top:16px;font-family:Rajdhani,sans-serif;font-weight:700;font-size:36px;color:#0B0F17;background:linear-gradient(90deg,#FFB55C,#FFE0A8);padding:8px 16px;border-radius:3px}
+.just{display:flex;align-items:center;gap:24px}
+.scale{flex:none;width:150px;height:138px;filter:drop-shadow(0 0 10px rgba(255,150,60,.55))}
+.jr{flex:1}
+.ln{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:10px 0;border-top:1px solid rgba(159,195,230,.25)}
+.ln span{font-family:Rajdhani,sans-serif;font-weight:600;font-size:34px;color:#D9C6B0}
+.ln b{font-family:Rajdhani,sans-serif;font-weight:700;font-size:40px;letter-spacing:.06em;color:#FFB55C}
+.build{padding-bottom:18px}
+.st{display:grid;grid-template-columns:44px 1fr 200px;grid-template-rows:auto auto;column-gap:14px;align-items:center;padding:7px 0;border-top:1px solid rgba(159,195,230,.22)}
+.st b{grid-row:1/3;font-family:"Cinzel Decorative",serif;font-weight:900;font-size:40px;color:#FFB55C;text-align:center}
+.st span{font-family:Rajdhani,sans-serif;font-weight:700;font-size:30px;letter-spacing:.08em;color:#F6E6D0}
+.st .bar{grid-column:2;height:10px;background:rgba(159,195,230,.18);border-radius:5px;overflow:hidden}
+.st .bar i{display:block;height:100%;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,#7a2a10,#E0894A,#FFB55C,#FFF0C0);box-shadow:0 0 10px #FFB55C}
+.st em{grid-column:3;grid-row:1/3;font-family:Rajdhani,sans-serif;font-style:normal;font-weight:700;font-size:28px;color:#9FC3E6;text-align:right}
+.ln2{display:flex;align-items:center;gap:18px;padding:10px 0}
+.ln2 .xm{width:46px;height:46px;flex:none}
+.ln2 b{font-family:"Cinzel Decorative",serif;font-weight:900;font-size:46px;color:#F6E6D0}
+.ls{display:flex;flex-direction:column;gap:6px}
+.ls span{font-family:Rajdhani,sans-serif;font-weight:700;font-size:40px;color:#F6E6D0;padding-left:26px;position:relative}
+.ls span:before{content:"";position:absolute;left:0;top:.5em;width:12px;height:12px;background:#FFB55C;transform:rotate(45deg);box-shadow:0 0 8px #FFB55C}
+.ask{margin-top:14px;font-family:Rajdhani,sans-serif;font-weight:700;font-size:42px;line-height:1.15;color:#0B0F17;background:linear-gradient(90deg,#FFB55C,#FFE0A8);padding:10px 18px;display:inline-block}
+</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="85.87" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI &middot; TANPA MENGGAMBARKAN SOSOK NABI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="card">
+    <div class="k"><i></i>KISAH DALAM AL-QUR'AN &middot; 10</div>
+    <div class="h">TEMBOK BESI<br>DI ANTARA DUA GUNUNG</div>
+    <div class="row" data-at="s1:Pembangunnya" data-fx="melt"><b class="tag">PEMBANGUNNYA MENOLAK DIBAYAR</b><span class="rf">QS 18:95</span></div>
+  </div>
+</div>
+<div class="p" data-in="s2" data-out="s2:Siapa">
+  <div class="card name">
+    <div class="k"><i></i>SURAH AL-KAHF <span class="rf" data-at="s2:Al-Kahfi" data-fx="pop">QS 18:83</span></div>
+    <div class="ar" data-at="s2:menyebutnya" data-fx="melt">ذِى ٱلْقَرْنَيْنِ</div>
+    <div class="h">DZULQARNAIN</div>
+    <div class="sub" data-at="s2:pemilik" data-fx="melt"><svg class="horns" viewBox="0 0 120 60"><path d="M38 6a26 26 0 1 0 0 48a21 21 0 1 1 0-48z" fill="#FFB55C"/><path d="M82 6a26 26 0 1 1 0 48a21 21 0 1 0 0-48z" fill="#FFB55C"/></svg><span>pemilik dua tanduk</span></div>
+  </div>
+</div>
+<div class="p" data-in="s2:Siapa" data-out="s3">
+  <div class="card">
+    <div class="k"><i></i>SIAPA DIA?</div>
+    <div class="two">
+      <div class="op" data-at="s2:Iskandar" data-fx="melt"><em>pendapat 1</em><b>ISKANDAR?</b></div>
+      <div class="op" data-at="s2:Koresh" data-fx="melt"><em>pendapat 2</em><b>KORESH</b><small>dari Persia?</small></div>
+    </div>
+    <div class="note" data-at="s2:Al-Qur'an" data-fx="stamp">Al-Qur'an tidak menyebut nama aslinya</div>
+  </div>
+</div>
+<div class="p" data-in="s3" data-out="s3:Ia">
+  <div class="card">
+    <div class="k"><i></i>DIBERI KEDUDUKAN <span class="rf" data-at="s3:kedudukan" data-fx="pop">QS 18:84</span></div>
+    <div class="h m">KEDUDUKAN DI BUMI</div>
+    <div class="sub" data-at="s3:jalan" data-fx="melt">dan jalan untuk mencapai segala sesuatu</div>
+  </div>
+</div>
+<div class="p" data-in="s3:Ia" data-out="s4">
+  <div class="card">
+    <div class="k"><i></i>PERJALANAN 1 &middot; KE BARAT <span class="rf" data-at="s3:matahari" data-fx="pop">QS 18:86</span></div>
+    <div class="h m">TEMPAT MATAHARI TERBENAM</div>
+    <div class="sub" data-at="s3:laut" data-fx="melt">terbenam di laut berlumpur hitam <span class="dim">(menurut penglihatannya)</span></div>
+  </div>
+</div>
+<div class="p" data-in="s4" data-out="s4:Di">
+  <div class="card">
+    <div class="k"><i></i>PERJALANAN 2 &middot; KE TIMUR <span class="rf" data-at="s4:terbit" data-fx="pop">QS 18:90</span></div>
+    <div class="h m">TEMPAT MATAHARI TERBIT</div>
+    <div class="sub" data-at="s4:pelindung" data-fx="melt">kaum tanpa pelindung dari sinarnya</div>
+  </div>
+</div>
+<div class="p" data-in="s4:Di" data-out="s5">
+  <div class="card just">
+    <svg class="scale" viewBox="0 0 120 110"><g stroke="#FFB55C" stroke-width="4" fill="none" stroke-linecap="round"><path d="M60 8v86M36 98h48M14 30h92"/><path d="M14 30l-12 30h24zM106 30l-12 30h24z"/></g><path d="M2 60a12 6 0 0 0 24 0zM94 60a12 6 0 0 0 24 0z" fill="#FFB55C"/><circle cx="60" cy="8" r="6" fill="#FFB55C"/></svg>
+    <div class="jr">
+      <div class="k"><i></i>ADIL DI SETIAP TEMPAT <span class="rf">QS 18:87-88</span></div>
+      <div class="ln" data-at="s4:zalim" data-fx="melt"><span>yang zalim</span><b>DIHUKUM</b></div>
+      <div class="ln" data-at="s4:berbuat" data-fx="melt"><span>yang berbuat baik</span><b>DIMUDAHKAN</b></div>
+    </div>
+  </div>
+</div>
+<div class="p" data-in="s5" data-out="s5:Sebuah">
+  <div class="card">
+    <div class="k"><i></i>PERJALANAN 3 <span class="rf" data-at="s5:antara" data-fx="pop">QS 18:93</span></div>
+    <div class="h m">ANTARA DUA GUNUNG</div>
+  </div>
+</div>
+<div class="p" data-in="s5:Sebuah" data-out="s6">
+  <div class="card">
+    <div class="k"><i></i>KAUM ITU MENGADU <span class="rf" data-at="s5:mengadu" data-fx="pop">QS 18:94</span></div>
+    <div class="h s" data-at="s5:Ya'juj" data-fx="melt">Ya'juj dan Ma'juj berbuat kerusakan</div>
+    <div class="qt" data-at="s5:Bolehkah" data-fx="melt">&ldquo;Bolehkah kami membayarmu?&rdquo;</div>
+  </div>
+</div>
+<div class="p" data-in="s6" data-out="s6:Bawakan">
+  <div class="card">
+    <div class="k"><i></i>JAWABANNYA <span class="rf" data-at="s6:menjawab" data-fx="pop">QS 18:95</span></div>
+    <div class="qt big">&ldquo;Yang Tuhan berikan kepadaku lebih baik.&rdquo;</div>
+    <div class="tag2" data-at="s6:Bantu" data-fx="melt">Bantu aku dengan tenaga</div>
+  </div>
+</div>
+<div class="p" data-in="s6:Bawakan" data-out="s7">
+  <div class="card build">
+    <div class="k"><i></i>MEMBANGUN DINDING <span class="rf">QS 18:96</span></div>
+    <div class="ar v">ءَاتُونِى زُبَرَ ٱلْحَدِيدِ ۖ حَتَّىٰٓ إِذَا سَاوَىٰ بَيْنَ ٱلصَّدَفَيْنِ قَالَ ٱنفُخُوا۟ ۖ حَتَّىٰٓ إِذَا جَعَلَهُۥ نَارًا قَالَ ءَاتُونِىٓ أُفْرِغْ عَلَيْهِ قِطْرًا</div>
+    <div class="st" data-at="s6:Bawakan" data-fx="melt"><b>1</b><span>POTONGAN BESI</span><div class="bar"><i id="bIron"></i></div><em data-at="s6:gunung" data-fx="pop">rata puncak</em></div>
+    <div class="st" data-at="s6:Tiuplah" data-fx="melt"><b>2</b><span>TIUP API</span><div class="bar"><i id="bHeat"></i></div><em data-at="s6:menyala" data-fx="pop">merah menyala</em></div>
+    <div class="st" data-at="s6:Lalu" data-fx="melt"><b>3</b><span>TEMBAGA MENDIDIH</span><div class="bar"><i id="bCu"></i></div><em data-at="s6:atasnya" data-fx="pop">dituang</em></div>
+  </div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Tapi">
+  <div class="card">
+    <div class="k"><i></i>HASILNYA <span class="rf" data-at="s7:Hasilnya" data-fx="pop">QS 18:97</span></div>
+    <div class="ln2" data-at="s7:mendakinya" data-fx="melt"><svg class="xm" viewBox="0 0 40 40"><path d="M8 8l24 24M32 8L8 32" stroke="#FFB55C" stroke-width="6" stroke-linecap="round"/></svg><b>TIDAK BISA DIDAKI</b></div>
+    <div class="ln2" data-at="s7:melubanginya" data-fx="melt"><svg class="xm" viewBox="0 0 40 40"><path d="M8 8l24 24M32 8L8 32" stroke="#FFB55C" stroke-width="6" stroke-linecap="round"/></svg><b>TIDAK BISA DILUBANGI</b></div>
+  </div>
+</div>
+<div class="p" data-in="s7:Tapi" data-out="s8">
+  <div class="card">
+    <div class="k"><i></i>TIDAK MENYOMBONGKANNYA <span class="rf" data-at="s7:ini" data-fx="pop">QS 18:98</span></div>
+    <div class="ar big">هَـٰذَا رَحْمَةٌ مِّن رَّبِّى</div>
+    <div class="qt" data-at="s7:rahmat" data-fx="melt">&ldquo;Ini rahmat dari Tuhanku.&rdquo;</div>
+    <div class="sub sm" data-at="s7:Bila" data-fx="melt">Bila janji-Nya datang, tembok ini akan dihancurkan.</div>
+  </div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="card">
+    <div class="k"><i></i>TIGA PELAJARAN</div>
+    <div class="ls"><span data-at="s8:Membangun" data-fx="melt">Membangun dengan kuat</span><span data-at="s8:menolak" data-fx="melt">Menolak upah</span><span data-at="s8:mengembalikan" data-fx="melt">Pujian kembali kepada Allah</span></div>
+    <div class="ask" data-at="s8:Menurut" data-fx="melt">Tembok apa yang sedang kamu bangun hari ini?</div>
+  </div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">KISAH DALAM AL-QUR&#39;AN &middot; EP 10</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":5.917,"s2":6.077,"s2e":17.524,"s3":17.684,"s3e":28.387,"s4":28.547,"s4e":39.542,"s5":39.702,"s5e":49.257,"s6":49.417,"s6e":63.583,"s7":63.743,"s7e":74.671,"s8":74.831,"s8e":82.866,"end":82.866,"dur":85.87,"outro":83.116},AT={"s1:mendidih":2.117,"s1:dibangun":2.882,"s1:gunung":3.904,"s1:Pembangunnya":4.446,"s2:Dzulqarnain":7.761,"s2:tanduk":9.866,"s2:Siapa":10.346,"s2:Koresh":14.198,"s3:jalan":19.867,"s3:Ia":22.241,"s3:matahari":24.919,"s3:terbenam":25.368,"s3:terbenam#2":26.746,"s4:terbit":30.883,"s4:kaum":31.626,"s4:sinarnya":33.437,"s4:Di":34.211,"s5:gunung":41.798,"s5:Sebuah":42.51,"s5:Ya'juj":43.842,"s5:kerusakan":45.312,"s5:Bolehkah":46.108,"s5:membayarmu":46.681,"s6:lebih":52.305,"s6:Bantu":53.062,"s6:Bawakan":54.631,"s6:Besi":56.07,"s6:gunung":58.438,"s6:Tiuplah":59.026,"s6:merah":60.504,"s6:menyala":60.86,"s6:Lalu":61.587,"s6:tembaga":61.819,"s6:dituangkan":62.608,"s6:atasnya":63.166,"s7:mendakinya":65.603,"s7:melubanginya":67.197,"s7:Tapi":68.465,"s7:menyombongkannya":69.518,"s7:rahmat":70.509,"s7:Bila":71.86,"s8:Menurut":79.595,"s2:Al-Kahfi":6.832,"s2:menyebutnya":7.312,"s2:pemilik":9.355,"s2:Iskandar":12.584,"s2:Al-Qur'an":15.435,"s3:kedudukan":18.504,"s3:laut":27.319,"s4:pelindung":32.648,"s4:zalim":36.632,"s4:berbuat":38.133,"s5:antara":41.287,"s5:mengadu":43.114,"s6:menjawab":49.605,"s7:Hasilnya":64.086,"s7:ini":70.261,"s8:Membangun":74.837,"s8:menolak":76.214,"s8:mengembalikan":77.623},DUR=85.87,OUT=83.116;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ melt:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:''},t-.001);tl.fromTo(e,{opacity:0,y:-14,filter:'blur(6px) brightness(2.2) sepia(1)'},{opacity:1,y:0,filter:'blur(0px) brightness(1) sepia(0)',duration:.5,ease:'power3.out'},t);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{'--cp':100,opacity:1},{'--cp':0,duration:.62,ease:'power2.inOut'},a-.2);tl.fromTo(p,{filter:'brightness(1.8) saturate(1.4)'},{filter:'brightness(1) saturate(1)',duration:.7,ease:'power2.out'},a-.2);},POUT=(tl,p,b)=>{tl.to(p,{keyframes:[{skewX:1.6,scaleY:1.01,filter:'blur(1.5px) brightness(1.25)',duration:.09},{skewX:-1.8,filter:'blur(3px) brightness(1.45)',duration:.09},{skewX:1.2,filter:'blur(5px) brightness(1.7)',duration:.08},{skewX:0,y:-26,opacity:0,filter:'blur(12px) brightness(2)',duration:.12}],ease:'none'},b-.38);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{clipPath:'inset(0 0 100% 0)'});tl.to('#outro',{clipPath:'inset(0 0 0% 0)',duration:.75,ease:'power2.inOut'},OUT-.15);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{const sm=(a,b)=>{const x=Math.min(1,Math.max(0,(t-a)/(b-a)));return x*x*(3-2*x);};
+const bi=document.getElementById('bIron'),bh=document.getElementById('bHeat'),bc=document.getElementById('bCu');if(!bi)return;
+bi.style.transform='scaleX('+sm(AT['s6:Bawakan']+.3,AT['s6:gunung']+.25)+')';
+bh.style.transform='scaleX('+sm(AT['s6:Tiuplah'],AT['s6:menyala']+.4)+')';
+bc.style.transform='scaleX('+sm(AT['s6:tembaga']-.1,K.s7+1.8)+')';};
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

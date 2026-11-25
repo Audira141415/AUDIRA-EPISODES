@@ -1,0 +1,32 @@
+
+> audira-motion-project@4.6.0 check-env
+> node scripts/check-env.mjs
+
+✓ Node.js ≥ 22.13: found 26.8.1
+✓ npm: 11.19.0
+✓ ffmpeg (audio analysis, contact sheets, final audio): ffmpeg version 8.1.1-full_build-www.gyan.dev Copyright (c) 2
+✓ ffprobe: ok
+✓ Free disk ≥ 5 GB: 346.8 GB free
+✓ RAM: 69 GB total
+✓ Platform: Windows: run npm run smoke to confirm 3D rendering
+✓ Project packages installed (npm ci): ok
+! Remotion headless browser downloaded: downloads automatically on first render (~100–200 MB)
+✓ Channel handle (src/brand/channel.json): AUDIRA Explained @AudiraExplained from SERIES.json account.handle
+
+Ready.
+===SMOKE
+Downloading Chrome Headless Shell - 124.1 Mb/131.1 Mb
+Downloading Chrome Headless Shell - 131.1 Mb/131.1 Mb
+[40m Tab 0, node_modules/three/build/three.core.js:2022 [49m [33mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.[39m
+[40m Tab 0, node_modules/three/build/three.core.js:2022 [49m [33mTHREE.WebGLProgram: Program Info Log: (210,91-147): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision[39m
+[33m(209,41-69): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision[39m
+[33m(210,92-120): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision[39m
+[33m(209,41-69): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision[39m
+[33m(210,92-120): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision[39m
+[40m Tab 0, node_modules/three/build/three.core.js:2022 [49m [33mTHREE.WebGLProgram: Program Info Log: (62,17-31): warning X3577: value cannot be NaN, isnan() may not be necessary.  /Gis may force isnan() to be performed[39m
+15 [40m Tab 0, node_modules/three/build/three.core.js:2022 [49m [33mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.[39m
+90 [40m Tab 0, node_modules/three/build/three.core.js:2022 [49m [33mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.[39m
+165 
+layout: 3/3 frame(s) measured, 6 text block(s) (out\smoke\_layout.json)
+sheet: out\smoke\_sheet.jpg
+audit: SCALEFORGE PERLU POLES: material, composition, readability capped at 3 or lower. Fix these before scoring. (out\smoke\look.json)

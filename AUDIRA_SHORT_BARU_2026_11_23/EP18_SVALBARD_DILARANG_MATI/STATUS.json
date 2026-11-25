@@ -1,0 +1,554 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP18_SVALBARD_DILARANG_MATI",
+  "topic": "Longyearbyen, Svalbard — kota tempat orang \"dilarang mati\"",
+  "createdAt": "2026-11-22T17:59:52.796Z",
+  "updatedAt": "2026-11-23T13:08:16.257Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:00:27.075Z",
+          "text": "Preflight lolos tanpa blocker. Memori GLOBAL: VO tulis \"Audira\", tighten-pauses, sign await workaround, TP loudnorm, Karaoke lebar penuh gap 0.4em, jobs 4 saat studio ramai. Channel FAKTADUNIA @AudiraFaktaDunia, slot malam 19-22 WIB. Engine 2D Remotion (SVG/DOM, tanpa R3F) via starter AUDIRA-SKILL-MOTION + skill audira-2d-motion."
+        }
+      ],
+      "doneAt": "2026-11-22T18:00:27.075Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:05:27.320Z",
+          "text": "26 fakta, 12 HIGH. Koreksi: \"dilarang mati\" = UU pemakaman tak berlaku (gravplassloven §31), bukan pidana; virus 1918 tidak hidup; bukan wajib senapan tapi wajib alat pengusir beruang."
+        }
+      ],
+      "doneAt": "2026-11-22T18:05:27.320Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T22:20:06.321Z",
+      "notes": [
+        {
+          "at": "2026-11-22T18:01:19.356Z",
+          "text": "Ditawarkan: PAPERWORLD (utama, diorama kertas Arktik berlapis + potongan tanah permafrost), STORYBOOK (ilustrasi buku cerita malam kutub), VISUALINVESTIGATION (berkas investigasi \"mitos vs fakta\"). Sheet: style/_style_options.jpg. Menunggu pilihan pengguna."
+        },
+        {
+          "at": "2026-11-22T22:20:06.321Z",
+          "text": "Pengguna memilih \"1 PAPERWORLD\" (2026-11-23). Engine Remotion 2D (SVG/DOM kertas berlapis, tanpa R3F)."
+        },
+        {
+          "at": "2026-11-23T12:39:34.765Z",
+          "text": "cover-topic.png PAPERWORLD dirender sesi 5"
+        }
+      ],
+      "startedAt": "2026-11-22T18:01:19.356Z",
+      "doneAt": "2026-11-23T12:39:34.765Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T23:57:39.112Z",
+          "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-22T23:57:55.968Z",
+          "text": "Docs rule 12 ditulis (ART_DIRECTION, SCRIPT, STORYBOARD, ASSET_MANIFEST, Style: PAPERWORLD). audio/vo.txt."
+        }
+      ],
+      "doneAt": "2026-11-22T23:57:55.968Z",
+      "startedAt": "2026-11-22T23:57:27.092Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:20:46.455Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T22:20:20.289Z",
+      "startedAt": "2026-11-22T22:20:20.289Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T23:59:09.147Z",
+          "text": "sync: VO sudah dibuat"
+        },
+        {
+          "at": "2026-11-23T00:02:52.188Z",
+          "text": "VO 88.72 dtk (jeda ≤0.45 dtk via tighten-pauses), vo-words.json + vo.timing.json; timing.ts terkunci (FILM 91.8)."
+        }
+      ],
+      "doneAt": "2026-11-23T00:02:52.188Z",
+      "startedAt": "2026-11-22T23:58:56.332Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:20:46.455Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T22:20:20.989Z",
+      "startedAt": "2026-11-22T22:20:20.989Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T12:45:30.088Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        },
+        {
+          "at": "2026-11-23T12:52:59.615Z",
+          "text": "Putaran 1b (fix '?' S6 jadi path): ceilings semua 5, self 4.33, juri buta 3.83 LOLOS (composition 3, readability 3). THEME_CHECK 16/16 ya."
+        }
+      ],
+      "doneAt": "2026-11-23T12:52:59.615Z",
+      "startedAt": "2026-11-23T12:42:06.505Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T13:08:09.998Z",
+          "text": "FINAL_VIDEO.mp4 91.82 dtk, −13.7 LUFS/TP −1.8, Ed25519 VALID + C2PA, qa_video PASS, juri final 4.17 GOLD."
+        }
+      ],
+      "doneAt": "2026-11-23T13:08:09.998Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:55:24.888Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T13:08:16.257Z",
+          "text": "SOCIAL_CAPTIONS validator ok, SUBTITLES.srt, NOTES.md, lessons PAPERWORLD+GLOBAL, scheduled task review-svalbard-ep18-24h/-72h/-7d."
+        }
+      ],
+      "doneAt": "2026-11-23T13:08:16.257Z",
+      "startedAt": "2026-11-23T12:52:34.994Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP18",
+    "engine": "remotion",
+    "channel": "FAKTADUNIA",
+    "handle": "@AudiraFaktaDunia",
+    "mode": "2D",
+    "style": "PAPERWORLD",
+    "wordCount": 205,
+    "estimatedDuration": {
+      "wordCount": 205,
+      "minSec": 82,
+      "maxSec": 91
+    },
+    "shortTitle": "Svalbard"
+  },
+  "syncedAt": "2026-11-23T12:55:24.888Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T22:21:33.452Z",
+      "doing": "Style PAPERWORLD acc; project scaffold + kode base EP04 disalin ke project/src/ep18 (belum diadaptasi). Draf naskah ada di docs/HANDOFF.md.",
+      "files": [
+        "docs/HANDOFF.md",
+        "research/SOURCE_REGISTER.md",
+        "style/STYLE_DECISION.md",
+        "project/src/ep18/"
+      ],
+      "next": "Tulis docs rule 12 + vo.txt → VO Cartesia → kode ep18 → cover topik → draf/juri → final → delivery. Baca docs/HANDOFF.md dulu.",
+      "snapshot": {
+        "episode": "EP18_SVALBARD_DILARANG_MATI",
+        "topic": "Longyearbyen, Svalbard — kota tempat orang \"dilarang mati\"",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP18",
+        "currentStage": "style",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:02:56.950Z",
+      "doing": "Kode ep18: timing.ts + pieces.tsx baru selesai; scenes.tsx (masih Sentinel) + Film.tsx (masih Ep04*) BELUM ditulis ulang. Tahap 7 (animation) sebenarnya belum selesai meski tercentang.",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/ep18/timing.ts",
+        "project/src/ep18/pieces.tsx",
+        "project/src/ep18/scenes.tsx",
+        "project/src/ep18/Film.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "Baca docs/HANDOFF.md UPDATE sesi 2 → tulis scenes.tsx S1–S10 + Film.tsx Ep18* → tsc → cover topik → SHOTLIST+sfx → sheet+juri → final → delivery.",
+      "snapshot": {
+        "episode": "EP18_SVALBARD_DILARANG_MATI",
+        "topic": "Longyearbyen, Svalbard — kota tempat orang \"dilarang mati\"",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP18",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP18_SVALBARD_DILARANG_MATI/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:34:51.074Z",
+      "doing": "Kode ep18: timing.ts + pieces.tsx baru selesai; scenes.tsx (masih Sentinel) + Film.tsx (masih Ep04*) BELUM ditulis ulang. Tahap 7 (animation) sebenarnya belum selesai meski tercentang.",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/ep18/timing.ts",
+        "project/src/ep18/pieces.tsx",
+        "project/src/ep18/scenes.tsx",
+        "project/src/ep18/Film.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "Baca docs/HANDOFF.md UPDATE sesi 2 → tulis scenes.tsx S1–S10 + Film.tsx Ep18* → tsc → cover topik → SHOTLIST+sfx → sheet+juri → final → delivery.",
+      "snapshot": {
+        "episode": "EP18_SVALBARD_DILARANG_MATI",
+        "topic": "Longyearbyen, Svalbard — kota tempat orang \"dilarang mati\"",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP18",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP18_SVALBARD_DILARANG_MATI/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:36:23.680Z",
+      "doing": "Kode ep18: timing.ts + pieces.tsx baru selesai; scenes.tsx (masih Sentinel) + Film.tsx (masih Ep04*) BELUM ditulis ulang. Tahap 7 (animation) sebenarnya belum selesai meski tercentang.",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/ep18/timing.ts",
+        "project/src/ep18/pieces.tsx",
+        "project/src/ep18/scenes.tsx",
+        "project/src/ep18/Film.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "Baca docs/HANDOFF.md UPDATE sesi 2 → tulis scenes.tsx S1–S10 + Film.tsx Ep18* → tsc → cover topik → SHOTLIST+sfx → sheet+juri → final → delivery.",
+      "snapshot": {
+        "episode": "EP18_SVALBARD_DILARANG_MATI",
+        "topic": "Longyearbyen, Svalbard — kota tempat orang \"dilarang mati\"",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP18",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP18_SVALBARD_DILARANG_MATI/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:41:02.379Z",
+      "doing": "Sesi 5: scenes/Film ep18 SUDAH lengkap (tsc bersih), cover topik style/cover-topic.png, docs/SHOTLIST.md lint tanpa RED, public/audio/sfx.wav. Sedang render sheet draf 16 frame + klip 44–62 dtk.",
+      "command": "cd project; TEMP=F:/tmp-remotion node scripts/stills.mjs out/ep18-stills 3.5s,9s,14s,20s,27s,33s,40s,44s,46.5s,52s,57.5s,63s,68s,74s,80s,86s Ep18Preview; npx remotion render src/index.ts Ep18Preview out/draft-clip.mp4 --frames=1320-1860 --concurrency=4",
+      "files": [
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav",
+        "style/cover-topic.png"
+      ],
+      "next": "audit:camera + audit:visual → draft/ → THEME_CHECK → juri self + jury buta (maks 2) → render:final",
+      "snapshot": {
+        "episode": "EP18_SVALBARD_DILARANG_MATI",
+        "topic": "Longyearbyen, Svalbard — kota tempat orang \"dilarang mati\"",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP18",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP18_SVALBARD_DILARANG_MATI/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:41:35.786Z",
+      "doing": "Sesi 5: render sheet draf 16 frame + klip 1320–1860 + audit camera/visual (background). Kode, cover topik, SHOTLIST, sfx.wav selesai. THEME_CHECK, SOCIAL_CAPTIONS, NOTES masih template.",
+      "files": [
+        "docs/HANDOFF.md",
+        "docs/SHOTLIST.md",
+        "style/cover-topic.png",
+        "project/out/ep18-stills/_sheet.jpg"
+      ],
+      "next": "Baca docs/HANDOFF.md UPDATE sesi 5 → sheet ke draft/ → THEME_CHECK → juri self + jury buta → render:final → QA → delivery",
+      "snapshot": {
+        "episode": "EP18_SVALBARD_DILARANG_MATI",
+        "topic": "Longyearbyen, Svalbard — kota tempat orang \"dilarang mati\"",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP18",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP18_SVALBARD_DILARANG_MATI/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:42:17.515Z",
+      "doing": "Sheet draf putaran 1 dirender: draft/contact-sheet.jpg (+1200), draft/look-draft.json (ceilings semua 5 kecuali composition 3: audit:layout frame 1395 = S6 46.5 dtk, tanda \"?\" besar bertumpuk 6× — kemungkinan <text> \"?\" digambar di tiap pass Layered/shadow; ganti jadi path atau satu <text> + bayangan filter), draft/camera.json motion 5. Belum record_score.",
+      "files": [
+        "draft/contact-sheet-1200.jpg",
+        "draft/look-draft.json",
+        "draft/camera.json",
+        "project/src/ep18/scenes.tsx",
+        "docs/HANDOFF.md"
+      ],
+      "next": "Fix \"?\" S6 di scenes.tsx → render ulang stills+audit:visual (klip tak perlu) → isi draft/THEME_CHECK.md → juri self+jury buta → render:final → QA → delivery (SOCIAL_CAPTIONS/NOTES masih template, SUBTITLES.srt belum). Detail di docs/HANDOFF.md UPDATE sesi 5.",
+      "snapshot": {
+        "episode": "EP18_SVALBARD_DILARANG_MATI",
+        "topic": "Longyearbyen, Svalbard — kota tempat orang \"dilarang mati\"",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP18",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP18_SVALBARD_DILARANG_MATI/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:50:40.820Z",
+      "doing": "S6 \"?\" diganti path (scenes.tsx ~418, tsc ok). Render ulang stills sheet + audit:visual putaran 1b.",
+      "command": "node scripts/stills.mjs out/ep18-stills 3.5s,9s,14s,20s,27s,33s,40s,44s,46.5s,52s,57.5s,63s,68s,74s,80s,86s Ep18Preview",
+      "files": [
+        "project/src/ep18/scenes.tsx",
+        "project/out/ep18-stills"
+      ],
+      "next": "audit:visual → salin ke draft/ → THEME_CHECK → juri self+jury → render:final",
+      "snapshot": {
+        "episode": "EP18_SVALBARD_DILARANG_MATI",
+        "topic": "Longyearbyen, Svalbard — kota tempat orang \"dilarang mati\"",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP18",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP18_SVALBARD_DILARANG_MATI/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:52:59.969Z",
+      "doing": "Render final Ep18Final 1080x1920@60 (draf juri lolos 3.83). SOCIAL_CAPTIONS.md + SUBTITLES.srt sudah ditulis; NOTES.md belum.",
+      "command": "npm run render:final -- --comp=Ep18Final --out=out/FINAL.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --title=\"Longyearbyen: Kota Tempat Orang Dilarang Mati\" --slug=svalbard-ep18 --ep=EP18 (TEMP=F:/tmp-remotion, log out/render-final.log)",
+      "files": [
+        "project/out/FINAL.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt"
+      ],
+      "next": "QA LUFS/TP, ffprobe metadata, verify_signature, qa_video hardOnly, FINAL_VIDEO.mp4, record_score final (jury), NOTES.md, validator, lessons, 3 scheduled task",
+      "snapshot": {
+        "episode": "EP18_SVALBARD_DILARANG_MATI",
+        "topic": "Longyearbyen, Svalbard — kota tempat orang \"dilarang mati\"",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP18",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP18_SVALBARD_DILARANG_MATI/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:59:44.464Z",
+      "doing": "render:final Ep18Final (percobaan ke-2 setelah fix kamera G13 S5–S7; draf juri 3.83 lolos). Caption + SRT sudah ada.",
+      "command": "cd project && TEMP=F:/tmp-remotion npm run render:final -- --comp=Ep18Final --out=out/FINAL.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --title=\"Longyearbyen: Kota Tempat Orang Dilarang Mati\" --slug=svalbard-ep18 --ep=EP18 > out/render-final.log",
+      "files": [
+        "project/src/ep18/scenes.tsx",
+        "project/out/FINAL.mp4",
+        "docs/HANDOFF.md"
+      ],
+      "next": "QA final + NOTES.md + lessons + 3 scheduled task; detail docs/HANDOFF.md UPDATE sesi 6",
+      "snapshot": {
+        "episode": "EP18_SVALBARD_DILARANG_MATI",
+        "topic": "Longyearbyen, Svalbard — kota tempat orang \"dilarang mati\"",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP18",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP18_SVALBARD_DILARANG_MATI/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T13:07:21.978Z",
+      "doing": "FINAL selesai: FINAL_VIDEO.mp4 (=project/out/FINAL.mp4) 1080x1920@60, 91.82 dtk, −13.7 LUFS, TP −1.8, metadata ok, Ed25519 VALID + C2PA (EPERM rename dipulihkan mv + sign manual), qa_video PASS, audit final ceilings 5. Juri buta FINAL sedang berjalan (sheet draft/final-contact-sheet.jpg). 3 scheduled task review-svalbard-ep18-* SUDAH dibuat. SOCIAL_CAPTIONS (validator ok) + SUBTITLES.srt ada. Lessons PAPERWORLD+GLOBAL dicatat.",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "draft/final-contact-sheet.jpg",
+        "NOTES.md"
+      ],
+      "next": "record_score final self+jury (PAPERWORLD, short-baru-11-23-EP18, still draft/final-contact-sheet.jpg, ceilings project/out/FINAL.look.json, camera draft/camera.json) → tulis NOTES.md (format EP04 NOTES.md; isi angka di atas, juri draf 3.83, fix G13, review task fireAt 27 Nov/29 Nov/3 Des 19.00 WIB) → STATUS final+delivery done → hapus project/out/draft-clip.mp4, out/ep18-stills, F:/tmp-remotion/ep18ff → tampilkan caption di chat.",
+      "snapshot": {
+        "episode": "EP18_SVALBARD_DILARANG_MATI",
+        "topic": "Longyearbyen, Svalbard — kota tempat orang \"dilarang mati\"",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP18",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP18_SVALBARD_DILARANG_MATI/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T13:07:21.978Z",
+      "doing": "FINAL selesai: FINAL_VIDEO.mp4 (=project/out/FINAL.mp4) 1080x1920@60, 91.82 dtk, −13.7 LUFS, TP −1.8, metadata ok, Ed25519 VALID + C2PA (EPERM rename dipulihkan mv + sign manual), qa_video PASS, audit final ceilings 5. Juri buta FINAL sedang berjalan (sheet draft/final-contact-sheet.jpg). 3 scheduled task review-svalbard-ep18-* SUDAH dibuat. SOCIAL_CAPTIONS (validator ok) + SUBTITLES.srt ada. Lessons PAPERWORLD+GLOBAL dicatat.",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "draft/final-contact-sheet.jpg",
+        "NOTES.md"
+      ],
+      "next": "record_score final self+jury (PAPERWORLD, short-baru-11-23-EP18, still draft/final-contact-sheet.jpg, ceilings project/out/FINAL.look.json, camera draft/camera.json) → tulis NOTES.md (format EP04 NOTES.md; isi angka di atas, juri draf 3.83, fix G13, review task fireAt 27 Nov/29 Nov/3 Des 19.00 WIB) → STATUS final+delivery done → hapus project/out/draft-clip.mp4, out/ep18-stills, F:/tmp-remotion/ep18ff → tampilkan caption di chat.",
+      "snapshot": {
+        "episode": "EP18_SVALBARD_DILARANG_MATI",
+        "topic": "Longyearbyen, Svalbard — kota tempat orang \"dilarang mati\"",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP18",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP18_SVALBARD_DILARANG_MATI/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T13:08:10.282Z"
+    }
+  ],
+  "session": 6,
+  "sessionLog": [
+    {
+      "no": 4,
+      "title": "EP18 Svalbard · s4",
+      "at": "2026-11-23T12:34:51.072Z"
+    },
+    {
+      "no": 5,
+      "title": "EP18 Svalbard · s5",
+      "at": "2026-11-23T12:36:23.679Z"
+    },
+    {
+      "no": 6,
+      "title": "EP18 Svalbard · s6",
+      "at": "2026-11-23T12:42:17.515Z"
+    }
+  ]
+}

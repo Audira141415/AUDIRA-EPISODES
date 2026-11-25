@@ -1,0 +1,571 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP72",
+  "topic": "Gempa Lisbon 1 November 1755: gempa, tsunami, lalu api dalam satu pagi; Pombal membangun Baixa dengan gaiola",
+  "createdAt": "2026-11-24T15:08:31.339Z",
+  "updatedAt": "2026-11-24T15:56:19.349Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:08:54.700Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        },
+        {
+          "at": "2026-11-24T15:12:08.828Z",
+          "text": "Preflight lolos tanpa blocker. Memory MOSAICFORGE + GLOBAL dibaca; EP42 Tambora & EP46 Portugal dicek (tanpa pengulangan)."
+        }
+      ],
+      "doneAt": "2026-11-24T15:12:08.828Z",
+      "startedAt": "2026-11-24T15:08:44.828Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:08:54.700Z",
+          "text": "sync: riset ada"
+        },
+        {
+          "at": "2026-11-24T15:12:09.017Z",
+          "text": "research/SOURCE_REGISTER.md: 13 fakta, sumber W-LX + W-PC; magnitudo rentang, api berjam-jam (bukan 5 hari), kutipan Pombal 'konon'."
+        }
+      ],
+      "doneAt": "2026-11-24T15:12:09.017Z",
+      "startedAt": "2026-11-23T18:28:37.279Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:10:43.872Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        },
+        {
+          "at": "2026-11-24T15:12:09.167Z",
+          "text": "MOSAICFORGE 3D R3F (alt: VINTAGEFORGE, DISASTERSIM ditolak). style/STYLE_DECISION.md + cover-reference.png. cover-topic.png dirender di Sesi B setelah scaffold."
+        }
+      ],
+      "doneAt": "2026-11-24T15:12:09.167Z",
+      "startedAt": "2026-11-24T15:10:35.657Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:11:52.515Z",
+          "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-24T15:12:09.312Z",
+          "text": "docs/ART_DIRECTION, SCRIPT (209 kata, 11 baris, ±84–93 dtk), STORYBOARD (11 scene, 6 babak), ASSET_MANIFEST (11 GLB)."
+        }
+      ],
+      "doneAt": "2026-11-24T15:12:09.312Z",
+      "startedAt": "2026-11-24T15:11:18.159Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:14:09.559Z",
+          "text": "sync: proyek render sudah disiapkan"
+        },
+        {
+          "at": "2026-11-24T15:15:57.993Z",
+          "text": "project/ = starter v4.6 (robocopy) + node_modules junction + polyfork junctions; check-env Ready, smoke OK; 11 GLB manifest ada lokal."
+        }
+      ],
+      "doneAt": "2026-11-24T15:15:57.993Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:18:13.899Z",
+          "text": "VO Cartesia 86,24 dtk terkunci (213 kata, 1 segmen, speed 1). Lafal dicek faster-whisper: Markis, Baisha, Gaiola, Audira OK. Film 89,5 dtk (outro 86,5–89,5). project/public/audio/vo.wav + vo-words.json + vo.timing.json."
+        }
+      ],
+      "doneAt": "2026-11-24T15:18:13.899Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:15:38.931Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-24T15:18:47.634Z",
+          "text": "Belum dikerjakan: auto-sync salah tandai ✓ karena file starter. Scene code episode belum ditulis (src/episode/ belum ada), SFX belum."
+        },
+        {
+          "at": "2026-11-24T15:19:26.654Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-24T15:34:32.402Z",
+          "text": "s4: scenes.tsx 11 adegan + LisbonFilm.tsx + Root; stills out/s4; cover-topic.png dari film; SHOTLIST lint 0 red; sfx.wav -26 LUFS 48 suara"
+        }
+      ],
+      "doneAt": "2026-11-24T15:34:32.402Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:42:54.800Z",
+          "text": "Juri buta putaran 2 LOLOS 3.83 (L4 M3 D4 C3 Mo5 R4); putaran 1 3.33. draft/DRAFT_SHEET.jpg, THEME_CHECK semua ya, camera 5/5."
+        }
+      ],
+      "doneAt": "2026-11-24T15:42:54.800Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T15:47:40.365Z",
+      "notes": [
+        {
+          "at": "2026-11-24T15:47:40.365Z",
+          "text": "Acc pengguna 2026-11-24: \"Gas render\" (juri 3.83, 89.5 dtk, G18c VO 14 LU di atas SFX)."
+        },
+        {
+          "at": "2026-11-24T15:55:55.038Z",
+          "text": "FINAL_EP72_GEMPA_LISBON.mp4 1080x1920@60 89.51 dtk, -13.6 LUFS TP -1.8, metadata+signature VALID, juri final 3.83 LOLOS."
+        }
+      ],
+      "startedAt": "2026-11-24T15:47:40.365Z",
+      "doneAt": "2026-11-24T15:55:55.038Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:50:59.750Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-24T15:55:55.287Z",
+          "text": "SOCIAL_CAPTIONS.md validator ok, SUBTITLES.srt, NOTES.md, lessons, 3 review task (19/21/25 Jan 2027 19.00 WIB)."
+        }
+      ],
+      "doneAt": "2026-11-24T15:55:55.287Z",
+      "startedAt": "2026-11-24T15:49:29.730Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-negara-EP72",
+    "style": "MOSAICFORGE",
+    "engine": "remotion",
+    "shortTitle": "Gempa Lisbon",
+    "wordCount": 209,
+    "channel": "FAKTADUNIA",
+    "estimatedDuration": {
+      "wordCount": 209,
+      "minSec": 84,
+      "maxSec": 93
+    }
+  },
+  "syncedAt": "2026-11-24T15:50:59.750Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-24T15:12:19.011Z",
+      "doing": "Sesi A (tahap 0–4) SELESAI: preflight lolos, SOURCE_REGISTER 13 fakta (W-LX, W-PC), STYLE_DECISION MOSAICFORGE 3D Remotion+R3F, docs ART_DIRECTION/SCRIPT/STORYBOARD/ASSET_MANIFEST.",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/SCRIPT.md",
+        "docs/ART_DIRECTION.md",
+        "research/SOURCE_REGISTER.md",
+        "style/cover-reference.png"
+      ],
+      "next": "Sesi B · Produksi, mulai tahap 5 (scaffold project/ dari starter AUDIRA-SKILL-MOTION + kit mosaicforge, check-env, smoke), lalu render style/cover-topic.png (belum ada), tahap 6 VO Cartesia dari teks fonetik SCRIPT.md (cek lafal Baisya/gayola/Markis/Audira), tahap 7 animasi 11 scene + npm run sfx, tahap 8 contact sheet + THEME_CHECK + juri blind. Keputusan: style MOSAICFORGE (alt VINTAGEFORGE/DISASTERSIM ditolak), engine remotion R3F, 209 kata ≈ 84–93 dtk VO, film ±95 dtk. Memory wajib: azulejo grid 3D per ubin (tilt/tone seeded, nat #8F806B), exposure 0.84, envIntensity 0.4, DOCUMENTARY_WARM, FilmScene post={false}+MosaicPost; teks di kartu solid kobalt #13306F 88%, tidak emisif, ≥34 px; tokoh tanpa wajah kain kepala bulat. GLB: brick-church-322885, table-candle-lantern-a7b5af, dock-lantern-post-5e58a4, ship-anchor-c2b4f1, ship-s-longboat-f159fd, two-story-house-40f6dc, brick-tenement-7d2014, corner-tenement-92fb62, classical-bank-04954e, village-well-f8e361, timber-barn-90b3ce. Signature seed gempa-lisbon-ep72 handle @AudiraFaktaDunia. Shared folder dengan 4 sesi episode lain: sentuh hanya folder EP72, jangan commit, jangan edit SERIES.json/MASTER_INDEX.md. Render final hanya setelah acc pengguna (Sesi C).",
+      "snapshot": {
+        "episode": "EP72",
+        "topic": "Gempa Lisbon 1 November 1755: gempa, tsunami, lalu api dalam satu pagi; Pombal membangun Baixa dengan gaiola",
+        "style": "MOSAICFORGE",
+        "memoryEpisode": "sejarah-negara-EP72",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:18:56.307Z",
+      "doing": "Sesi B bagian 1 selesai (s2): tahap 5 scaffold project/ (starter v4.6 robocopy, node_modules + polyfork junction, SERIES.json FAKTADUNIA, check-env Ready, smoke OK) dan tahap 6 VO terkunci 86,24 dtk (lafal dicek whisper OK). Pindah sesi karena context guard ±191k.",
+      "files": [
+        "draft/TIMING_LOCK.md",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "project/public/audio/vo.timing.json",
+        "project/src/Root.tsx",
+        "project/src/kits/mosaicforge/"
+      ],
+      "next": "Lanjut Sesi B (s3): tahap 7 — tulis project/src/episode/ (LisbonFilm.tsx, timeline.ts, scenes.tsx, parts.tsx) pola EP59 Sauna, 11 scene sesuai draft/TIMING_LOCK.md + docs/STORYBOARD.md, daftarkan LisbonPreview/LisbonFinal di src/Root.tsx (FILM_SECONDS 89.5, outro 3); azulejo grid 3D per ubin (instanced, tilt/tone seeded, nat #8F806B), FilmScene post={false} + MosaicCameraRig + MosaicPost, exposure 0.84, envIntensity 0.4, DOCUMENTARY_WARM; kartu HUD kobalt #13306F 88% tidak emisif ≥34 px; ToyPerson kain kepala bulat; 11 GLB manifest via AssetModel; AudiraSignature seed gempa-lisbon-ep72 + AudiraOutro; subtitle display map Baisya→Baixa, gayola→gaiola, Markis→Marquis, Audira→AUDIRA. Lalu render style/cover-topic.png (npm run cover), SHOTLIST + npm run sfx. Tahap 8: contact sheet 6–8 frame, npm run audit:visual, draft/THEME_CHECK.md, record_score self + juri blind (maks 2 putaran). Lalu handover ke Sesi C. JANGAN render final.",
+      "snapshot": {
+        "episode": "EP72",
+        "topic": "Gempa Lisbon 1 November 1755: gempa, tsunami, lalu api dalam satu pagi; Pombal membangun Baixa dengan gaiola",
+        "style": "MOSAICFORGE",
+        "memoryEpisode": "sejarah-negara-EP72",
+        "currentStage": "animation",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:21:07.993Z",
+      "doing": "s3: tahap 7 — menulis project/src/episode/ (timeline.ts, parts.tsx, scenes.tsx, LisbonFilm.tsx) + Root.tsx LisbonPreview/LisbonFinal",
+      "files": [
+        "project/src/episode/timeline.ts",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/LisbonFilm.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "typecheck, stills cek, npm run cover -- LisbonFinal --episode=.., SHOTLIST + npm run sfx, lalu npm run draft -- LisbonPreview",
+      "snapshot": {
+        "episode": "EP72",
+        "topic": "Gempa Lisbon 1 November 1755: gempa, tsunami, lalu api dalam satu pagi; Pombal membangun Baixa dengan gaiola",
+        "style": "MOSAICFORGE",
+        "memoryEpisode": "sejarah-negara-EP72",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:25:55.565Z",
+      "doing": "s3 selesai sebagian tahap 7: ditulis project/src/episode/timeline.ts (SHOTS 11 adegan + shake + 37 CARDS) dan parts.tsx (Azulejo instanced grid, lukisan, peta Iberia/Portugal, Plaque, Figure tanpa wajah, Flame, Smoke, Candle, Haze, Beam). Rencana tata letak per adegan lengkap di draft/SCENE_PLAN.md. Pindah sesi karena context guard ±195k.",
+      "files": [
+        "draft/SCENE_PLAN.md",
+        "draft/TIMING_LOCK.md",
+        "project/src/episode/timeline.ts",
+        "project/src/episode/parts.tsx",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md"
+      ],
+      "next": "Sesi B lanjutan (s4): baca draft/SCENE_PLAN.md + timeline.ts + parts.tsx; tulis project/src/episode/scenes.tsx + LisbonFilm.tsx, daftarkan LisbonPreview/LisbonFinal di src/Root.tsx; npm run typecheck; cek still (npm run stills); npm run cover -- LisbonFinal --episode=..; docs/SHOTLIST.md + npm run sfx; tahap 8: npm run draft -- LisbonPreview, draft/THEME_CHECK.md, record_score self + juri blind (maks 2 putaran); lalu handover ke Sesi C. JANGAN render final.",
+      "snapshot": {
+        "episode": "EP72",
+        "topic": "Gempa Lisbon 1 November 1755: gempa, tsunami, lalu api dalam satu pagi; Pombal membangun Baixa dengan gaiola",
+        "style": "MOSAICFORGE",
+        "memoryEpisode": "sejarah-negara-EP72",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:31:40.883Z",
+      "doing": "s4 tahap 7: scenes.tsx (11 adegan, 11 GLB) + LisbonFilm.tsx (post=false, MosaicCameraRig exp 0.84, MosaicPost, HUD kobalt, Subtitle display map, outro, signature) ditulis; Root.tsx daftar LisbonPreview/LisbonFinal; typecheck OK (3 error lama di scene-qa.tsx & PenggantiGibran bukan EP72). Stills 20 frame di project/out/s4/_sheet.jpg; audit: PERLU POLES material + readability ≤3 (out/s4/look.json).",
+      "command": "node scripts/stills.mjs out/s4 3s,6.6s,12.8s,16s,19.5s,23s,27s,30.8s,34.6s,39.8s,43.6s,48s,53s,59s,61.5s,66s,73.5s,76s,80s,84s LisbonPreview",
+      "files": [
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/LisbonFilm.tsx",
+        "project/src/Root.tsx",
+        "project/out/s4/_sheet.jpg",
+        "project/out/s4/look.json"
+      ],
+      "next": "Lihat project/out/s4/_sheet.jpg (kecil), poles material/readability di scenes.tsx/LisbonFilm.tsx, stills ulang; lalu npm run cover -- LisbonFinal --episode=.., docs/SHOTLIST.md (format EP59) + npm run sfx; tahap 8 npm run draft -- LisbonPreview, draft/THEME_CHECK.md, record_score self + juri blind; handover Sesi C. JANGAN render final.",
+      "snapshot": {
+        "episode": "EP72",
+        "topic": "Gempa Lisbon 1 November 1755: gempa, tsunami, lalu api dalam satu pagi; Pombal membangun Baixa dengan gaiola",
+        "style": "MOSAICFORGE",
+        "memoryEpisode": "sejarah-negara-EP72",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:34:46.541Z",
+      "doing": "s4 selesai tahap 7: project/src/episode/scenes.tsx (S1–S11, 11 GLB, foreshock ubin 1 dtk di hook, laut azulejo surut + tsunami, kota terbakar/reruntuhan, denah Baixa, gaiola + serdadu, surat kuesioner ke PARISHES, fasad Pombalina + plakat AUDIRA) dan LisbonFilm.tsx (FilmScene post=false, MosaicCameraRig exp 0.84, MosaicPost 0.22/0.35/0.95/0.4/0.01, envIntensity 0.4, DOCUMENTARY_WARM, ao, LOOK per adegan, HUD kartu kobalt rgba(19,48,111,0.88) non-emisif, lantai caption gelap, Subtitle display map, AudiraOutro 3 dtk, AudiraSignature seed gempa-lisbon-ep72 handle dari channel.json = @AudiraFaktaDunia). Root.tsx: LisbonPreview/LisbonFinal. typecheck OK (3 error lama di core/qa/scene-qa.tsx + PenggantiGibranWapres.tsx, bukan EP72). core/hud/Subtitle.tsx (salinan EP72) diubah: gap kata 0.4em, opacity kata berikut 0.72 (readability). Stills 20 frame out/s4 (ceilings lighting5 material3 depth5 composition5 readability3 sebelum fix subtitle); poles: Ground dermaga yang menutupi laut dihapus, lumpur lebih terang, Pombal robe #3E4A6A kain kepala krem, puncak tsunami 2.1. style/cover-topic.png dirender ulang dari film (--force, 0.3 dtk). docs/SHOTLIST.md 23 baris lint 0 red. public/audio/sfx.wav -26 LUFS 48 suara.",
+      "command": "cd project && npm run draft -- LisbonPreview",
+      "files": [
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/LisbonFilm.tsx",
+        "project/src/episode/timeline.ts",
+        "project/src/episode/parts.tsx",
+        "project/src/Root.tsx",
+        "project/src/core/hud/Subtitle.tsx",
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav",
+        "style/cover-topic.png",
+        "project/out/s4/_sheet.jpg",
+        "draft/SCENE_PLAN.md",
+        "draft/TIMING_LOCK.md"
+      ],
+      "next": "Sesi B lanjutan (s5) tahap 8: di project/ jalankan `npm run draft -- LisbonPreview` (DRAFT_SHEET.jpg ±1200px di draft/, look.json, camera.json, jury_input.json); bila PERLU POLES, poles aspek lemah (material = permukaan datar: lantai/latar polos; depth = haze/pemisahan subjek), maks 2 putaran juri. Isi draft/THEME_CHECK.md (G22: tiap frame subjek = kata VO, semua ya). record_score self (stage draft, ceilings dari look.json, camera dari camera.json) lalu juri blind via subagent (qa/jury.md, lihat DRAFT_SHEET + cover quality-bar F:/AUDIRA-SKILL-MOTION/references/quality-bar/mosaicforge.png) judge jury. LOLOS ≥3.8 tanpa aspek <3; setelah 2 putaran terima terbaik ≥3.5. Update stage draft done, lalu handover newSession ke Sesi C (detach, pindah grup FAKTADUNIA, arsip). JANGAN render final. Sentuh hanya folder EP72, jangan commit.",
+      "snapshot": {
+        "episode": "EP72",
+        "topic": "Gempa Lisbon 1 November 1755: gempa, tsunami, lalu api dalam satu pagi; Pombal membangun Baixa dengan gaiola",
+        "style": "MOSAICFORGE",
+        "memoryEpisode": "sejarah-negara-EP72",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:43:04.148Z",
+      "doing": "Sesi B selesai (s5, tahap 8). Draf juri buta putaran 2 LOLOS 3.83 (lighting 4, material 3, depth 4, composition 3, motion 5, readability 4); putaran 1 = 3.33 (G22 F1/F4). Self 3.67. Poles s5: backdrop tessera menghadap kamera (Backdrop di LisbonFilm.tsx), hook S1 kamera miring + 3 rumah GLB miniatur bergetar (S1_CITY di scenes.tsx), api atap size 1.05 menyebar 39.3+0.12 dtk, fasad S11 lengkap 78.2 dtk, LOOK S8/S11 hemi 0.45 key raking. Style MOSAICFORGE, engine Remotion + R3F, durasi film 89.5 dtk (VO 86.24 + outro 3). draft/THEME_CHECK.md semua ya. NOTES.md ditulis. Lesson failed+fix dicatat di motion memory.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/jury_input.json",
+        "draft/THEME_CHECK.md",
+        "NOTES.md",
+        "project/public/audio/vo.wav",
+        "project/public/audio/sfx.wav",
+        "project/scripts/render-final.mjs",
+        "project/src/episode/LisbonFilm.tsx",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/timeline.ts"
+      ],
+      "next": "Sesi C tahap 9: buka dengan contact sheet draft/DRAFT_SHEET.jpg, skor juri 3.83, durasi 89.5 dtk, dan cek audio G18c (VO >= 12 LU di atas SFX; sfx.wav -26 LUFS), lalu TUNGGU acc pengguna. Setelah acc: update stage final approved:true, lalu di project/: `npm run render:final -- --comp=LisbonFinal --out=out/FINAL_EP72_GEMPA_LISBON.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc` (concurrency=1 bila GPU dipakai sesi EP68-71). QA -14 LUFS TP < -1, metadata kepemilikan ffprobe, record_score final (judge self + jury). Tahap 10: SOCIAL_CAPTIONS.md 6 platform + Jadwal Upload (WIB) + Label Konten AI, validator, 3 scheduled task review. Sentuh hanya folder EP72, jangan commit, jangan edit SERIES.json/MASTER_INDEX.md.",
+      "snapshot": {
+        "episode": "EP72",
+        "topic": "Gempa Lisbon 1 November 1755: gempa, tsunami, lalu api dalam satu pagi; Pombal membangun Baixa dengan gaiola",
+        "style": "MOSAICFORGE",
+        "memoryEpisode": "sejarah-negara-EP72",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:47:48.360Z",
+      "doing": "Sesi C s6: render final 1080x1920 (acc pengguna \"Gas render\" 2026-11-24)",
+      "command": "cd project && npm run render:final -- --comp=LisbonFinal --out=out/FINAL_EP72_GEMPA_LISBON.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc",
+      "files": [
+        "project/out/FINAL_EP72_GEMPA_LISBON.mp4"
+      ],
+      "next": "QA -14 LUFS TP<-1, metadata ffprobe, cek frame, record_score final; tahap 10 caption + NOTES + lessons + 3 scheduled task",
+      "snapshot": {
+        "episode": "EP72",
+        "topic": "Gempa Lisbon 1 November 1755: gempa, tsunami, lalu api dalam satu pagi; Pombal membangun Baixa dengan gaiola",
+        "style": "MOSAICFORGE",
+        "memoryEpisode": "sejarah-negara-EP72",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:47:48.360Z",
+      "doing": "Sesi C s6: render final 1080x1920 (acc pengguna \"Gas render\" 2026-11-24)",
+      "command": "cd project && npm run render:final -- --comp=LisbonFinal --out=out/FINAL_EP72_GEMPA_LISBON.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc",
+      "files": [
+        "project/out/FINAL_EP72_GEMPA_LISBON.mp4"
+      ],
+      "next": "QA -14 LUFS TP<-1, metadata ffprobe, cek frame, record_score final; tahap 10 caption + NOTES + lessons + 3 scheduled task",
+      "snapshot": {
+        "episode": "EP72",
+        "topic": "Gempa Lisbon 1 November 1755: gempa, tsunami, lalu api dalam satu pagi; Pombal membangun Baixa dengan gaiola",
+        "style": "MOSAICFORGE",
+        "memoryEpisode": "sejarah-negara-EP72",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T15:55:55.513Z"
+    },
+    {
+      "at": "2026-11-24T15:56:19.349Z",
+      "doing": "Sesi C s6 selesai: final FINAL_EP72_GEMPA_LISBON.mp4 (juri final 3.83 LOLOS, -13.6 LUFS, TP -1.8, signature VALID), delivery tahap 10 lengkap.",
+      "files": [
+        "FINAL_EP72_GEMPA_LISBON.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt",
+        "NOTES.md",
+        "draft/FINAL_SHEET.jpg"
+      ],
+      "next": "Tahap 11 lewat 3 scheduled task review-gempa-lisbon-1755-24h/72h/7d (19/21/25 Jan 2027 19.00 WIB). Tidak ada pekerjaan produksi tersisa.",
+      "snapshot": {
+        "episode": "EP72",
+        "topic": "Gempa Lisbon 1 November 1755: gempa, tsunami, lalu api dalam satu pagi; Pombal membangun Baixa dengan gaiola",
+        "style": "MOSAICFORGE",
+        "memoryEpisode": "sejarah-negara-EP72",
+        "currentStage": "review",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    }
+  ],
+  "session": 6,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP72 Gempa Lisbon · s2",
+      "at": "2026-11-24T15:12:19.011Z"
+    },
+    {
+      "no": 3,
+      "title": "EP72 Gempa Lisbon · s3",
+      "at": "2026-11-24T15:18:56.307Z"
+    },
+    {
+      "no": 4,
+      "title": "EP72 Gempa Lisbon · s4",
+      "at": "2026-11-24T15:25:55.565Z"
+    },
+    {
+      "no": 5,
+      "title": "EP72 Gempa Lisbon · s5",
+      "at": "2026-11-24T15:34:46.541Z"
+    },
+    {
+      "no": 6,
+      "title": "EP72 Gempa Lisbon · s6",
+      "at": "2026-11-24T15:43:04.148Z"
+    }
+  ],
+  "handover": {
+    "at": "2026-11-24T15:56:19.349Z",
+    "doing": "Sesi C s6 selesai: final FINAL_EP72_GEMPA_LISBON.mp4 (juri final 3.83 LOLOS, -13.6 LUFS, TP -1.8, signature VALID), delivery tahap 10 lengkap.",
+    "files": [
+      "FINAL_EP72_GEMPA_LISBON.mp4",
+      "SOCIAL_CAPTIONS.md",
+      "SUBTITLES.srt",
+      "NOTES.md",
+      "draft/FINAL_SHEET.jpg"
+    ],
+    "next": "Tahap 11 lewat 3 scheduled task review-gempa-lisbon-1755-24h/72h/7d (19/21/25 Jan 2027 19.00 WIB). Tidak ada pekerjaan produksi tersisa.",
+    "snapshot": {
+      "episode": "EP72",
+      "topic": "Gempa Lisbon 1 November 1755: gempa, tsunami, lalu api dalam satu pagi; Pombal membangun Baixa dengan gaiola",
+      "style": "MOSAICFORGE",
+      "memoryEpisode": "sejarah-negara-EP72",
+      "currentStage": "review",
+      "gates": {
+        "final": {
+          "approved": true,
+          "status": "done"
+        }
+      },
+      "voPath": null,
+      "draftScores": [],
+      "finals": [],
+      "draftRounds": 0
+    }
+  }
+}

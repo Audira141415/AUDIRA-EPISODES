@@ -1,0 +1,175 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "AE-041",
+  "topic": "Bagaimana Air dan Limbah dari Lantai 50 Bisa Turun?",
+  "createdAt": "2026-11-07T14:51:04.122610+00:00",
+  "updatedAt": "2026-11-11T02:02:12.402Z",
+  "currentStage": "complete",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-07T14:51:04.122610+00:00",
+          "text": "CLAUDE.md (11 tahap), motion memory GLOBAL+channel, NOTES/STYLE_DECISION Batch 1-2 dibaca"
+        }
+      ],
+      "doneAt": "2026-11-07T14:51:04.122610+00:00"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-07T15:04:49.342960+00:00",
+          "text": "research/SOURCE_REGISTER.md + RESEARCH_REPORT.md"
+        }
+      ],
+      "doneAt": "2026-11-07T15:04:49.342960+00:00"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-07T14:53:57.654175+00:00",
+          "text": "Pengguna: Ya, semua no. 1; cover topik dirender"
+        },
+        {
+          "at": "2026-11-07T15:10:38.973180+00:00",
+          "text": "Pengguna: Setuju semua (cover topik)"
+        }
+      ],
+      "approved": true,
+      "approvedAt": "2026-11-07T15:10:38.973180+00:00",
+      "doneAt": "2026-11-07T15:10:38.973180+00:00"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-07T15:11:16.424597+00:00",
+          "text": "Pengguna: Setuju, lanjut"
+        }
+      ],
+      "approved": true,
+      "approvedAt": "2026-11-07T15:11:16.424597+00:00",
+      "doneAt": "2026-11-07T15:11:16.424597+00:00"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-07T15:11:16.424597+00:00",
+          "text": "Studio BATCH03 dari starter v4.2 (Finish), smoke OK"
+        }
+      ],
+      "doneAt": "2026-11-07T15:11:16.424597+00:00"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-07T15:13:51.134432+00:00",
+          "text": "VO Galang tempo x1.0, sync 93-99%, brand line ok"
+        }
+      ],
+      "doneAt": "2026-11-07T15:13:51.134432+00:00"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-07T20:21:42.382803+00:00",
+          "text": "Film + STORYBOARD + sfx-cues; skor rubrik tercatat di motion memory"
+        }
+      ],
+      "doneAt": "2026-11-07T20:21:42.382803+00:00"
+    },
+    {
+      "id": "draft",
+      "name": "Render draf 540×960 + audit visual + contact sheet",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-07T20:27:03.568576+00:00",
+          "text": "Pengguna: Setuju, render final (EP048 skor 3.8 diterima pengguna)"
+        }
+      ],
+      "approved": true,
+      "approvedAt": "2026-11-07T20:27:03.568576+00:00",
+      "doneAt": "2026-11-07T20:27:03.568576+00:00"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-07T20:44:11.120783+00:00",
+          "text": "FINAL tagged + archive + QA_REPORT"
+        }
+      ],
+      "doneAt": "2026-11-07T20:44:11.120783+00:00"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-07T20:44:11.120783+00:00",
+          "text": "SOCIAL_CAPTIONS ok:true; NOTES; memori style diperbarui"
+        },
+        {
+          "at": "2026-11-07T23:46:20.088Z",
+          "text": "Final disetujui pengguna 2026-11-08; perantara dihapus (risk clip, stills PNG, _cover). Review pasca-tayang menunggu upload 13 Nov 2026."
+        }
+      ],
+      "doneAt": "2026-11-07T23:46:20.088Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T02:02:12.402Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-07T20:44:09.429Z",
+      "startedAt": "2026-11-07T20:44:09.429Z"
+    }
+  ],
+  "data": {
+    "style": "ISOCRAFT",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-11T02:02:12.402Z"
+}

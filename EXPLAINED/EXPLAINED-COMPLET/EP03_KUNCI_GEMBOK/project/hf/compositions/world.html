@@ -1,0 +1,134 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#06080b}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.06;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.5) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.5) 42%,rgba(0,0,0,0.5) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'Chakra Petch',monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#FFFFFF;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.tag{display:table;font-family:'Chakra Petch',monospace;font-weight:600;font-size:29px;letter-spacing:.12em;color:#5CF2E3;background:rgba(6,12,15,.82);padding:10px 22px 9px;margin-bottom:14px;position:relative;border:1.5px solid rgba(92,242,227,.45)}
+.tag:before,.tag:after{content:"";position:absolute;width:14px;height:14px;border:3px solid #5CF2E3}
+.tag:before{left:-6px;top:-6px;border-right:0;border-bottom:0}.tag:after{right:-6px;bottom:-6px;border-left:0;border-top:0}
+.tag i{display:inline-block;width:12px;height:12px;background:#E8B85C;margin-right:14px;transform:rotate(45deg);vertical-align:2px}
+.tag.r{color:#FF5A48;border-color:rgba(255,90,72,.5)}.tag.r:before,.tag.r:after{border-color:#FF5A48}.tag.r i{background:#FF5A48}
+.card{display:table;background:linear-gradient(180deg,rgba(14,20,24,.86),rgba(6,10,12,.86));border-top:5px solid #E8B85C;padding:14px 30px 20px;margin-bottom:14px;box-shadow:0 24px 60px rgba(0,0,0,.65),inset 0 1px 0 rgba(255,255,255,.08)}
+.big{font-family:'Saira Condensed',sans-serif;font-weight:800;font-size:108px;line-height:.92;letter-spacing:.005em;color:#FFFFFF;text-transform:uppercase}
+.big span{color:#E8B85C}.big.md{font-size:96px}.big.sm{font-size:80px;line-height:.96}
+.ln{display:table;font-family:'Chakra Petch',monospace;font-weight:500;font-size:37px;line-height:1.2;color:#FFFFFF;background:rgba(4,7,9,.9);padding:10px 22px 10px 20px;margin-bottom:10px;border-left:6px solid #5CF2E3;max-width:880px}
+.ln.b{border-left-color:#E8B85C}.ln.r{border-left-color:#FF5A48}
+.row3{display:flex;align-items:center;gap:20px;background:rgba(4,7,9,.92);border-left:6px solid #E8B85C;padding:10px 22px;margin-bottom:10px;max-width:900px}
+.row3 b{font-family:'Saira Condensed',sans-serif;font-weight:800;font-size:64px;line-height:1;color:#E8B85C;min-width:250px}
+.row3 em{font-family:'Chakra Petch',monospace;font-style:normal;font-weight:600;font-size:34px;line-height:1.2;color:#FFFFFF}
+.stamp{display:inline-block;margin-top:12px;font-family:'Saira Condensed',sans-serif;font-weight:800;font-size:92px;letter-spacing:.06em;color:#FF5A48;border:7px solid #FF5A48;padding:2px 30px 0;background:rgba(20,4,2,.55)}
+.stamp.t{color:#5CF2E3;border-color:#5CF2E3;background:rgba(2,18,16,.55)}
+#chip{font-family:'Chakra Petch',monospace;font-size:21px;color:#FFFFFF;opacity:.72;letter-spacing:.08em}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="75" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN CUPLIKAN ASLI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tag"><i></i>CARA KERJA BENDA / EP 03</div>
+  <div class="card"><div class="big">GERIGI KUNCI<br><span>ADALAH KODE</span></div></div>
+  <div class="ln" data-at="s1:lekuknya" data-fx="lit">Setiap lekuk = satu kode rahasia</div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="tag"><i></i>KUNCI SILINDER</div>
+  <div class="card" data-at="s2:pin" data-fx="lit"><div class="big md">PIN TUMBLER</div></div>
+  <div class="ln" data-at="s2:Yale" data-fx="lit">Disebut juga kunci Yale</div>
+  <div class="ln b" data-at="s2:Linus" data-fx="lit">Dari nama Linus Yale Jr.</div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tag"><i></i>BAGIAN DALAM</div>
+  <div class="card" data-at="s3:plug" data-fx="lit"><div class="big">PLUG</div></div>
+  <div class="ln" data-at="s3:tempat" data-fx="lit">Silinder kecil, tempat kunci dimasukkan</div>
+  <div class="ln b" data-at="s3:berputar" data-fx="lit">Harus berputar supaya pintu terbuka</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="tag"><i></i>DERETAN LUBANG</div>
+  <div class="card" data-at="s4:lima" data-fx="lit"><div class="big md">5 ATAU 6 PIN</div></div>
+  <div class="ln" data-at="s4:pegas" data-fx="lit">Tiap pin didorong pegas</div>
+  <div class="ln b" data-at="s4:panjang" data-fx="lit">Panjang pin berbeda-beda</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="tag r"><i></i>TANPA KUNCI / KUNCI SALAH</div>
+  <div class="ln r" data-at="s5:menahan" data-fx="lit">Pin menahan plug: tidak bisa berputar</div>
+  <div class="ln r" data-at="s5:sejajar" data-fx="lit">Kunci salah: pin tidak sejajar</div>
+  <div class="stamp" data-at="s5:tertahan" data-fx="stamp">TERTAHAN</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="tag"><i></i>KUNCI YANG BENAR</div>
+  <div class="ln" data-at="s6:gerigi" data-fx="lit">Tiap gerigi mengangkat satu pin</div>
+  <div class="ln b" data-at="s6:sejajar" data-fx="lit">Semua pin sejajar di garis batas plug</div>
+  <div class="stamp t" data-at="s6:Klik" data-fx="stamp">KLIK!</div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tag"><i></i>IDE YANG SANGAT TUA</div>
+  <div class="row3" data-at="s7:dua" data-fx="lit"><b>± 2000 SM</b><em>Mesir: kunci kayu, baut geser</em></div>
+  <div class="row3" data-at="s7:Linus" data-fx="lit"><b>1848</b><em>Linus Yale Sr. mengembangkannya</em></div>
+  <div class="row3" data-at="s7:menyempurnakannya" data-fx="lit"><b>1861</b><em>Anaknya menyempurnakannya</em></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="card" data-at="s8:Jadi" data-fx="lit"><div class="big sm">SETIAP KUNCI<br><span>POLA PIN SENDIRI</span></div></div>
+  <div class="ln" data-at="s8:Kamu" data-fx="lit">Pernah salah coba kunci di rumah sendiri?</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">CARA KERJA BENDA &middot; EP 03</div></div>
+<div id="sig">AUDIRA &middot; @AudiraExplained</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":4.276,"s2":4.436,"s2e":12.047,"s3":12.207,"s3e":19.176,"s4":19.336,"s4e":26.892,"s5":27.052,"s5e":36.455,"s6":36.615,"s6e":46.246,"s7":46.406,"s7e":61.777,"s8":61.937,"s8e":72.003,"end":72.003,"dur":75,"outro":72.253},AT={"s1:kode":3.595,"s2:Linus":11.041,"s3:silinder":12.792,"s3:Plug":16.575,"s3:dimasukkan":15.385,"s4:deretan":20.017,"s4:didorong":24.338,"s4:pin":23.966,"s5:Tanpa":27.055,"s5:tidak":29.984,"s5:Kalau":31.037,"s5:salah":31.578,"s5:tetap":35.681,"s6:Begitu":36.641,"s6:kunci":36.966,"s6:masuk":37.476,"s6:ketinggian":39.783,"s6:Semua":41.176,"s6:garis":42.492,"s6:berputar":44.537,"s6:Klik":45.317,"s7:Idenya":46.623,"s7:berupa":51.994,"s7:kayu":52.691,"s7:dengan":52.985,"s7:baut":53.248,"s7:geser":53.434,"s7:anaknya":58.867,"s7:Mesir":51.514,"s8:pola":63.949,"s8:AUDIRA":69.82,"s8:Ikuti":69.341,"s1:lekuknya":2.852,"s2:pin":7.215,"s2:Yale":9.166,"s3:plug":13.813,"s3:tempat":14.781,"s3:berputar":17.535,"s4:lima":21.751,"s4:pegas":24.694,"s4:panjang":25.391,"s5:menahan":28.712,"s5:sejajar":33.312,"s5:tertahan":35.975,"s6:gerigi":38.343,"s6:sejajar":41.718,"s7:dua":49.595,"s7:Linus":54.239,"s7:menyempurnakannya":59.285,"s8:Jadi":61.952,"s8:Kamu":66.055},DUR=75,OUT=72.253;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ lit:(e,t)=>tl.fromTo(e,{opacity:.86},{opacity:1,duration:.3,ease:'power2.out'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{opacity:0,x:-60,clipPath:'inset(0% 100% 0% 0%)'},{opacity:1,x:0,clipPath:'inset(0% 0% 0% 0%)',duration:.45,ease:'power3.out'},a-.12);},POUT=(tl,p,b)=>{tl.to(p,{opacity:0,x:50,clipPath:'inset(0% 0% 0% 100%)',duration:.3,ease:'power2.in'},b-.3);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0,clipPath:'inset(0% 50% 0% 50%)'});tl.to('#outro',{opacity:1,clipPath:'inset(0% 0% 0% 0%)',duration:.5,ease:'power3.out'},OUT-.1);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP03_KUNCI_GEMBOK")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

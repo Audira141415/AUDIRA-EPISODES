@@ -1,0 +1,378 @@
+// EP71 Baarle — scenes S1..S6. Positions match the camera keys in timeline.ts. t = film seconds.
+import React, { useMemo } from "react";
+import * as THREE from "three";
+import { AssetModel } from "../core/assets/AssetModel.tsx";
+import { SceneText } from "../core/polish/Drei.tsx";
+import { C, clamp01, ease, rng, Ground, Grid, BackPanel, HazeBand, ScanLine, Silhouette, BorderLine, Patch, WorldLabel, Reticle, Building } from "./parts.tsx";
+import type { SceneId, V3 } from "./timeline.ts";
+
+type SP = { t: number };
+const win = (t: number, a: number, b: number) => ease((t - a) / (b - a));
+
+const canvasTex = (w: number, h: number, draw: (g: CanvasRenderingContext2D) => void) => {
+  const c = document.createElement("canvas");
+  c.width = w;
+  c.height = h;
+  draw(c.getContext("2d")!);
+  const tx = new THREE.CanvasTexture(c);
+  tx.colorSpace = THREE.SRGBColorSpace;
+  tx.anisotropy = 8;
+  return tx;
+};
+
+/** Shared briefing set: textured ground, emissive grid, back panel, haze, scan line, FG silhouettes. */
+const Briefing: React.FC<{ t: number; roads?: boolean; ground?: string; board?: boolean; sil?: [V3, V3]; panelZ?: number }> = ({ t, roads = true, ground, board = true, sil, panelZ = -9 }) => {
+  const s = sil ?? ([[-3.4, 0, 2.2], [3.6, 0, 1.6]] as [V3, V3]);
+  return (
+    <group>
+      <Ground roads={roads} color={ground} />
+      <Grid />
+      <BackPanel t={t} position={[0, 2.6, panelZ]} />
+      <HazeBand />
+      <ScanLine t={t} />
+      <Silhouette position={s[0]} size={3.0} board={board} t={t} />
+      <Silhouette position={s[1]} size={2.6} t={t + 1.3} />
+    </group>
+  );
+};
+
+/** Glowing front door (emissive slab) that marks "the door decides". */
+const DoorGlow: React.FC<{ position: V3; on: number; color?: string; w?: number; h?: number; rotY?: number }> = ({ position, on, color = C.amber, w = 0.13, h = 0.24, rotY = 0 }) =>
+  on <= 0.01 ? null : (
+    <group position={position} rotation={[0, rotY, 0]}>
+      <mesh position={[0, h / 2, 0]}>
+        <planeGeometry args={[w, h]} />
+        <meshStandardMaterial color={color} emissive={color} emissiveIntensity={2.6 * on} toneMapped={false} side={THREE.DoubleSide} />
+      </mesh>
+      <mesh position={[0, 0.003, w * 0.9]} rotation={[-Math.PI / 2, 0, 0]}>
+        <planeGeometry args={[w * 2.4, w * 1.8]} />
+        <meshBasicMaterial color={color} transparent opacity={0.28 * on} depthWrite={false} />
+      </mesh>
+    </group>
+  );
+
+/** Flat tinted ground half (country side). */
+const Side: React.FC<{ x: number; z: number; w: number; d: number; color: string; on: number }> = ({ x, z, w, d, color, on }) =>
+  on <= 0.01 ? null : (
+    <mesh position={[x, 0.008, z]} rotation={[-Math.PI / 2, 0, 0]}>
+      <planeGeometry args={[w, d]} />
+      <meshStandardMaterial color={color} emissive={color} emissiveIntensity={0.35 * on} transparent opacity={0.22 * on} depthWrite={false} />
+    </mesh>
+  );
+
+/** Small canvas plate (house number, shop sign, badge). */
+const Plate: React.FC<{ text: string; sub?: string; position: V3; color: string; w?: number; on: number; rotY?: number }> = ({ text, sub, position, color, w = 0.34, on, rotY = 0 }) => {
+  const tex = useMemo(
+    () =>
+      canvasTex(512, 256, (g) => {
+        g.fillStyle = "#071014";
+        g.fillRect(0, 0, 512, 256);
+        g.strokeStyle = color;
+        g.lineWidth = 14;
+        g.strokeRect(7, 7, 498, 242);
+        g.fillStyle = color;
+        g.textAlign = "center";
+        g.font = "900 120px Arial";
+        g.fillText(text, 256, sub ? 140 : 170);
+        if (sub) {
+          g.font = "700 54px Arial";
+          g.fillText(sub, 256, 215);
+        }
+      }),
+    [text, sub, color],
+  );
+  if (on <= 0.01) return null;
+  return (
+    <mesh position={position} rotation={[0, rotY, 0]} scale={0.6 + 0.4 * ease(on)}>
+      <planeGeometry args={[w, w / 2]} />
+      <meshStandardMaterial map={tex} emissiveMap={tex} emissive="#ffffff" emissiveIntensity={1.4} toneMapped={false} transparent opacity={on} side={THREE.DoubleSide} />
+    </mesh>
+  );
+};
+
+// ---------------- Town (S1, S2, S6) ----------------
+const TOWN_IDS = ["brownstone-row-house-1b84fd", "brick-tenement-7d2014", "corner-tenement-92fb62", "townhouse-row-unit-b9544b"];
+const BX = [-3.1, -1.63, -0.13, 1.37, 2.87];
+const BZ = [-4.25, -1.85, 0.55];
+const TOWN: { id: string; p: V3; r: number; s: number }[] = (() => {
+  const r = rng(71);
+  const out: { id: string; p: V3; r: number; s: number }[] = [];
+  BZ.forEach((z) =>
+    BX.forEach((x) => {
+      if (x === -1.63 && z === -4.25) return; // church block
+      [-0.32, 0.32].forEach((dx, j) => {
+        if (z === 0.55 && x === -0.13 && j === 1) return; // hero slot
+        const id = TOWN_IDS[Math.floor(r() * TOWN_IDS.length)];
+        out.push({ id, p: [x + dx + (r() - 0.5) * 0.1, 0, z + (r() - 0.5) * 0.5], r: r() > 0.5 ? 0 : Math.PI / 2, s: 0.5 + r() * 0.18 });
+      });
+    }),
+  );
+  return out;
+})();
+const HERO: V3 = [0.25, 0, 0.55];
+const HERO_SIZE = 1.0; // townhouse 4 × 7.5 × 8: depth 1.0, width 0.5, height 0.94 → door at z ≈ 1.05
+const DOOR: V3 = [HERO[0], 0, HERO[2] + 0.505];
+
+const PATCHES = (() => {
+  const r = rng(2026);
+  return Array.from({ length: 22 }, (_, i) => ({ x: -3.2 + r() * 6.4, z: -5.6 + r() * 7.0, r: 0.22 + r() * 0.28, seed: i + 1 }));
+})();
+const NL_IN = [1, 4, 7, 10, 13, 16, 19];
+
+const Town: React.FC<{ t: number; mode: "S1" | "S2" | "S6" }> = ({ t, mode }) => {
+  const all = mode === "S6";
+  const amb = (i: number) => (all ? 1 : mode === "S2" ? clamp01((t - (13.7 + i * 0.13)) / 0.35) : 0);
+  const blu = (i: number) => (all ? 1 : mode === "S2" ? clamp01((t - (17.7 + i * 0.37)) / 0.35) : 0);
+  const gin = all ? 1 : mode === "S2" ? clamp01((t - 21.3) / 0.4) : 0;
+  const s1 = mode === "S1";
+  const glow = s1 ? win(t, 0.6, 1.6) : all ? 1 : 0.6;
+  const border = s1 ? win(t, 2.0, 4.6) : 1;
+  const ret = s1 ? win(t, 0.9, 1.8) * (1 - win(t, 5.2, 6.4)) : 0;
+  const band = mode === "S1" ? 0 : mode === "S2" ? win(t, 8.0, 9.6) : 1;
+  const pulse = all ? 0.85 + 0.15 * Math.sin(t * 4) : 1;
+  return (
+    <group>
+      <Briefing t={t} />
+      {TOWN.map((b, i) => (
+        <Building key={i} id={b.id} position={b.p} size={b.s} rot={b.r} />
+      ))}
+      <Building id="brick-church-322885" position={[-1.63, 0, -4.25]} size={1.3} />
+      <Building id="townhouse-row-unit-b9544b" position={HERO} size={HERO_SIZE} />
+      <DoorGlow position={DOOR} on={glow} />
+      <Reticle position={[DOOR[0], 0.02, DOOR[2] + 0.15]} r={0.42} on={ret} t={t} />
+      {/* Border runs north–south straight through the hero's front door */}
+      <BorderLine a={[DOOR[0], -6]} b={[DOOR[0], 3.6]} p={border} />
+      {/* Belgian mainland band (south) vs Dutch town (north) */}
+      <Side x={0} z={3.45} w={14} d={1.3} color={C.amber} on={band} />
+      <BorderLine a={[-6, 2.8]} b={[6, 2.8]} p={band} color={C.amber} thick={0.04} />
+      <WorldLabel text="BELGIA" position={[-1.6, 0.25, 3.4]} color={C.amber} size={0.26} on={band} />
+      <WorldLabel text="BELANDA" position={[1.9, 0.25, -5.2]} color={C.blue} size={0.26} on={band} />
+      {PATCHES.map((p, i) => (
+        <Patch key={`a${i}`} x={p.x} z={p.z} r={p.r} seed={p.seed} color={C.amber} on={amb(i) * pulse} />
+      ))}
+      {NL_IN.map((k, i) => (
+        <Patch key={`b${i}`} x={PATCHES[k].x + 0.05} z={PATCHES[k].z} r={PATCHES[k].r * 0.42} seed={k + 50} color={C.blue} on={blu(i)} y={0.03} />
+      ))}
+      <Patch x={-2.2} z={3.4} r={0.3} seed={99} color={C.blue} on={gin} y={0.03} />
+      <WorldLabel text="GINHOVEN" position={[-2.2, 0.35, 3.0]} color={C.blue} size={0.16} on={mode === "S2" ? gin * (1 - win(t, 22.7, 22.9)) : 0} />
+    </group>
+  );
+};
+
+const S1: React.FC<SP> = ({ t }) => <Town t={t} mode="S1" />;
+const S2: React.FC<SP> = ({ t }) => <Town t={t} mode="S2" />;
+const S6: React.FC<SP> = ({ t }) => (
+  <group>
+    <Town t={t} mode="S6" />
+      </group>
+);
+
+// ---------------- S3: medieval fields 1198 → treaty 1843 → neutral meadow 1995 ----------------
+const FX = [-1.7, 0, 1.7];
+const FZ = [-2.6, -1.0, 0.6];
+const RENT = new Set([0, 2, 4, 6, 8]); // fields that kept paying rent to the duke (later Belgium)
+const TreatyCard: React.FC<{ t: number }> = ({ t }) => {
+  const tex = useMemo(
+    () =>
+      canvasTex(768, 512, (g) => {
+        g.fillStyle = "#E9DFC6";
+        g.fillRect(0, 0, 768, 512);
+        g.strokeStyle = "#6B5A3A";
+        g.lineWidth = 10;
+        g.strokeRect(18, 18, 732, 476);
+        g.fillStyle = "#2B2217";
+        g.textAlign = "center";
+        g.font = "800 58px Georgia";
+        g.fillText("TRAKTAT", 384, 120);
+        g.fillText("MAASTRICHT", 384, 190);
+        g.font = "900 120px Georgia";
+        g.fillText("1843", 384, 330);
+        g.strokeStyle = "#B3261E";
+        g.lineWidth = 9;
+        g.beginPath();
+        g.arc(610, 410, 62, 0, Math.PI * 2);
+        g.stroke();
+        g.fillStyle = "#B3261E";
+        g.font = "800 30px Arial";
+        g.fillText("SAH", 610, 421);
+        for (let i = 0; i < 5; i++) {
+          g.fillStyle = "#8C7B5C";
+          g.fillRect(80, 380 + i * 18, 380 - i * 40, 5);
+        }
+      }),
+    [],
+  );
+  const a = win(t, 36.3, 38.6);
+  if (t < 36.3) return null;
+  const y = 0.08 + (1 - a) * 2.4;
+  return (
+    <mesh position={[0, y, 0.9]} rotation={[-Math.PI / 2 + (1 - a) * 0.9, 0, (1 - a) * 0.5]}>
+      <planeGeometry args={[1.35, 0.9]} />
+      <meshStandardMaterial map={tex} emissiveMap={tex} emissive="#ffffff" emissiveIntensity={0.35} roughness={0.85} side={THREE.DoubleSide} />
+    </mesh>
+  );
+};
+
+const S3: React.FC<SP> = ({ t }) => {
+  const rent = win(t, 30.0, 32.0);
+  const rest = win(t, 33.0, 35.0);
+  const meadowBlink = t >= 40.3 && t < 43.9 ? 0.5 + 0.5 * Math.sin(t * 9) : 0;
+  const meadowB = win(t, 43.9, 44.5);
+  return (
+    <group>
+      <Briefing t={t} roads={false} ground="#2C3A2E" sil={[[-3.4, 0, 2.0], [3.6, 0, 1.4]]} />
+      <Building id="gabled-farmhouse-c7534f" position={[-1.7, 0, -2.6]} size={1.1} rot={0.3} />
+      <Building id="gabled-farmhouse-c7534f" position={[1.7, 0, -1.0]} size={0.9} rot={-0.4} />
+      {[-0.85, 0.85].map((x) =>
+        FZ.map((z) => (
+          <group key={`hx${x}${z}`} position={[x, 0, z]} rotation={[0, Math.PI / 2, 0]}>
+            <AssetModel id="bocage-hedgerow-section-4c3126" assetType="prop" size={1.45} ground scale={[1, 0.45, 0.6]} />
+          </group>
+        )),
+      )}
+      {[-1.8, -0.2].map((z) =>
+        FX.map((x) => (
+          <group key={`hz${x}${z}`} position={[x, 0, z]}>
+            <AssetModel id="bocage-hedgerow-section-4c3126" assetType="prop" size={1.45} ground scale={[1, 0.45, 0.6]} />
+          </group>
+        )),
+      )}
+      <group position={[-3.0, 0, -3.6]}>
+        <AssetModel id="poplar-row-run-cdc69f" assetType="prop" size={2.6} ground />
+      </group>
+      <group position={[3.0, 0, -3.8]}>
+        <AssetModel id="poplar-row-run-cdc69f" assetType="prop" size={2.4} ground />
+      </group>
+      {FX.map((x, i) =>
+        FZ.map((z, j) => {
+          const k = j * 3 + i;
+          const isRent = RENT.has(k);
+          return <Side key={`f${k}`} x={x} z={z} w={1.5} d={1.45} color={isRent ? C.amber : C.blue} on={isRent ? rent * 2.2 : rest * 2.2} />;
+        }),
+      )}
+      <WorldLabel text="ADIPATI BRABANT" position={[-1.7, 0.35, 0.0]} color={C.amber} size={0.17} on={win(t, 24.2, 25.0) * (1 - win(t, 35.6, 36.2))} />
+      <WorldLabel text="BREDA" position={[1.7, 0.35, 0.2]} color={C.blue} size={0.17} on={win(t, 26.5, 27.3) * (1 - win(t, 35.6, 36.2))} />
+      <TreatyCard t={t} />
+      <BorderLine a={[-2.6, 1.6]} b={[2.6, 1.6]} p={win(t, 38.0, 39.6)} />
+      {/* neutral meadow, settled 1995 */}
+      <Side x={1.8} z={-2.4} w={1.0} d={0.9} color={C.white} on={meadowBlink * (1 - meadowB)} />
+      <Patch x={1.8} z={-2.4} r={0.42} seed={95} color={C.amber} on={meadowB} />
+      <Reticle position={[1.8, 0.02, -2.4]} r={0.6} on={win(t, 40.5, 41.2)} t={t} />
+      <WorldLabel text="TANPA NEGARA" position={[1.8, 0.4, -1.75]} color={C.white} size={0.14} on={win(t, 40.6, 41.2) * (1 - meadowB)} face={-0.6} />
+    </group>
+  );
+};
+
+// ---------------- S4: Jalan Loveren — the border through one front door ----------------
+const LOV_X = [-1.4, -0.7, 0, 0.7, 1.4];
+const LOV_SIZE = 1.4; // depth 1.4, width 0.7, height 1.31 → front at z ≈ 0.7
+const S4: React.FC<SP> = ({ t }) => {
+  const halves = win(t, 46.0, 47.5);
+  const line = win(t, 48.2, 50.0);
+  return (
+    <group>
+      <Briefing t={t} roads={false} sil={[[-3.2, 0, 2.6], [3.4, 0, 2.2]]} />
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.005, 1.35]}>
+        <planeGeometry args={[9, 1.0]} />
+        <meshStandardMaterial color={C.road} roughness={0.8} />
+      </mesh>
+      <group position={[0, 0, 0.92]}>
+        <AssetModel id="curb-strip-28e992" assetType="prop" size={3.5} ground />
+      </group>
+      {LOV_X.map((x, i) => (
+        <Building key={i} id="townhouse-row-unit-b9544b" position={[x, 0, 0]} size={LOV_SIZE} />
+      ))}
+      <Side x={-2.25} z={0.5} w={4.5} d={5} color={C.amber} on={halves} />
+      <Side x={2.25} z={0.5} w={4.5} d={5} color={C.blue} on={halves} />
+      <WorldLabel text="BELGIA" position={[-1.9, 0.25, 2.2]} color={C.amber} size={0.24} on={halves} />
+      <WorldLabel text="BELANDA" position={[1.9, 0.25, 2.2]} color={C.blue} size={0.24} on={halves} />
+      <BorderLine a={[0, -2.5]} b={[0, 3.2]} p={line} />
+      <DoorGlow position={[-0.08, 0, 0.8]} on={win(t, 48.5, 49.5)} color={C.amber} w={0.11} h={0.3} />
+      <DoorGlow position={[0.08, 0, 0.8]} on={win(t, 48.5, 49.5)} color={C.blue} w={0.11} h={0.3} />
+      <Reticle position={[0, 0.02, 0.9]} r={0.32} on={win(t, 54.4, 55.2)} t={t} color={C.white} />
+      <Plate text="B · 2" position={[-0.2, 0.55, 0.82]} color={C.amber} w={0.26} on={win(t, 59.1, 59.6)} />
+      <Plate text="NL · 19" position={[0.2, 0.55, 0.82]} color={C.blue} w={0.26} on={win(t, 60.9, 61.4)} />
+    </group>
+  );
+};
+
+// ---------------- S5A: café table crosses the border ----------------
+const S5A: React.FC<SP> = ({ t }) => {
+  const mv = win(t, 69.0, 70.4);
+  const tx = 0.9 - 1.8 * mv;
+  const close = win(t, 63.8, 64.6);
+  return (
+    <group>
+      <Briefing t={t} roads={false} sil={[[-3.3, 0, 2.4], [3.5, 0, 2.0]]} />
+      <Building id="townhouse-row-unit-b9544b" position={[0.9, 0, -1.0]} size={1.6} />
+      <Building id="townhouse-row-unit-b9544b" position={[-0.9, 0, -1.0]} size={1.6} />
+      <group position={[0.9, 0.95, -0.15]}>
+        <AssetModel id="retractable-box-awning-85d8dd" assetType="prop" size={0.85} ground />
+      </group>
+      <group position={[1.55, 0, 0.1]} rotation={[0, -0.5, 0]}>
+        <AssetModel id="chalkboard-menu-board-a24d9d" assetType="prop" size={0.45} ground />
+      </group>
+      <Side x={-2.25} z={0.5} w={4.5} d={5} color={C.amber} on={1} />
+      <Side x={2.25} z={0.5} w={4.5} d={5} color={C.blue} on={1} />
+      <BorderLine a={[0, -1.8]} b={[0, 2.8]} />
+      <WorldLabel text="BELGIA" position={[-1.5, 0.25, 1.6]} color={C.amber} size={0.2} />
+      <WorldLabel text="BELANDA" position={[1.5, 0.25, 1.6]} color={C.blue} size={0.2} />
+      {/* fixed table (stays in NL) */}
+      <group position={[1.2, 0, 0.85]}>
+        <AssetModel id="bistro-table-877a6d" assetType="prop" size={0.42} ground />
+        <group position={[0.28, 0, 0]} rotation={[0, -Math.PI / 2, 0]}>
+          <AssetModel id="bistro-chair-7c354d" assetType="prop" size={0.4} ground />
+        </group>
+      </group>
+      {/* the table that moves across the line */}
+      <group position={[tx, 0, 0.55]}>
+        <AssetModel id="bistro-table-877a6d" assetType="prop" size={0.42} ground />
+        <group position={[-0.28, 0, 0]} rotation={[0, Math.PI / 2, 0]}>
+          <AssetModel id="bistro-chair-7c354d" assetType="prop" size={0.4} ground />
+        </group>
+        <group position={[0.28, 0, 0]} rotation={[0, -Math.PI / 2, 0]}>
+          <AssetModel id="bistro-chair-7c354d" assetType="prop" size={0.4} ground />
+        </group>
+        <Reticle position={[0, 0.02, 0]} r={0.42} on={win(t, 68.9, 69.4)} t={t} color={mv > 0.55 ? C.amber : C.blue} />
+      </group>
+      <Plate text="TUTUP" sub="BELANDA" position={[0.9, 0.62, -0.18]} color={C.blue} w={0.36} on={close} />
+      <Plate text="BUKA" sub="BELGIA" position={[-0.9, 0.62, -0.18]} color={C.amber} w={0.36} on={win(t, 68.9, 69.6)} />
+    </group>
+  );
+};
+
+// ---------------- S5B: the shop split in half + the shop that turned its door ----------------
+const S5B: React.FC<SP> = ({ t }) => {
+  const hatch = win(t, 80.0, 80.8);
+  const turn = win(t, 81.9, 83.9);
+  const open = t >= 83.4;
+  return (
+    <group>
+      <Briefing t={t} roads={false} sil={[[-3.4, 0, 2.4], [4.6, 0, 1.4]]} />
+      <Side x={0.5} z={1.6} w={9} d={3.2} color={C.blue} on={1} />
+      <Side x={0.5} z={-1.6} w={9} d={3.2} color={C.amber} on={1} />
+      <BorderLine a={[-3.2, 0]} b={[4.2, 0]} />
+      <WorldLabel text="BELANDA" position={[-2.3, 0.25, 1.5]} color={C.blue} size={0.2} />
+      <WorldLabel text="BELGIA" position={[-2.3, 0.25, -1.4]} color={C.amber} size={0.2} />
+      <Building id="corner-shop-5aec8c" position={[-0.6, 0, 0]} size={1.1} />
+      <DoorGlow position={[-0.6, 0, 0.6]} on={win(t, 76.0, 76.8)} color={C.blue} w={0.18} h={0.3} />
+      {hatch > 0.01 ? (
+        <mesh position={[-0.6, 0.47, -0.3]}>
+          <boxGeometry args={[1.25, 0.95, 0.62]} />
+          <meshStandardMaterial color={C.red} emissive={C.red} emissiveIntensity={0.8 * hatch} transparent opacity={0.55 * hatch} depthWrite={false} />
+        </mesh>
+      ) : null}
+      <Plate text="DITUTUP" position={[-0.6, 1.2, -0.3]} color={C.red} w={0.7} on={hatch} rotY={0} />
+      <group position={[2.6, 0, 0]} rotation={[0, Math.PI * (1 - turn), 0]}>
+        <Building id="corner-shop-5aec8c" position={[0, 0, 0]} size={0.9} />
+        <DoorGlow position={[0, 0, 0.5]} on={win(t, 81.9, 82.4)} color={open ? C.blue : C.red} w={0.16} h={0.26} />
+      </group>
+      <Plate text={open ? "BUKA" : "TUTUP"} position={[2.6, 1.0, 0.1]} color={open ? C.amber : C.red} w={0.5} on={win(t, 81.9, 82.4)} />
+      <SceneText font="sans" fontSize={0.11} letterSpacing={0.1} color={C.white} anchorX="center" anchorY="middle" position={[-0.6, 0.92, 0.6]}>
+        TOKO
+      </SceneText>
+    </group>
+  );
+};
+
+export const SCENES: Record<SceneId, React.FC<SP>> = { S1, S2, S3, S4, S5A, S5B, S6 };

@@ -1,0 +1,190 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#E9CFA2}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.04;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.28) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.28) 42%,rgba(0,0,0,0.28) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'Space Mono','Courier New',monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#FFFFFF;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.pre{position:absolute;left:-2000px;top:0;opacity:0}
+.p{transform-origin:0% 0%}
+.cd{position:relative;background:#FFF8EA;border:5px solid #22324A;border-radius:18px;box-shadow:0 8px 0 rgba(34,50,74,.85),0 14px 26px rgba(60,40,10,.35)}
+.kk{display:inline-flex;align-items:center;gap:14px;font-family:'Space Mono','Courier New',monospace;font-weight:700;font-size:26px;letter-spacing:.08em;color:#fff;margin-bottom:14px;padding:6px 18px 6px 6px;background:#22324A;border-radius:999px}
+.kk i{font-style:normal;font-family:'Titan One','Arial Black',sans-serif;font-weight:400;letter-spacing:.03em;background:#F2B51E;color:#22324A;padding:3px 14px;border-radius:999px}
+.ttl{display:inline-block;padding:18px 30px 22px 34px;border-left:22px solid #C2462F}
+.ttl small{display:block;font-family:'Space Mono','Courier New',monospace;font-weight:700;font-size:26px;letter-spacing:.06em;color:#C2462F;margin-bottom:6px}
+.ttl b{display:block;font-family:'Titan One','Arial Black',sans-serif;font-weight:400;font-size:104px;line-height:.98;color:#22324A}
+.ttl b em{font-style:normal;color:#C2462F;font-size:96px}
+.ttl .bc{margin-top:12px;height:22px;width:380px;background:repeating-linear-gradient(90deg,#22324A 0 4px,transparent 4px 7px,#22324A 7px 9px,transparent 9px 14px,#22324A 14px 20px,transparent 20px 23px)}
+.stk{display:inline-block;margin-top:18px;font-family:'Titan One','Arial Black',sans-serif;font-size:64px;line-height:1;color:#fff;background:#C2462F;border:5px solid #22324A;border-radius:999px;padding:12px 30px 10px;transform:rotate(-3deg);box-shadow:0 7px 0 #22324A}
+.stk.gn{background:#2A9D8F;font-size:84px}
+.row{display:flex;flex-direction:column;margin-top:16px;padding:10px 26px 12px;border-left:20px solid #F2B51E;max-width:880px;width:max-content;box-sizing:border-box}
+.row b{display:block;font-family:'Titan One','Arial Black',sans-serif;font-weight:400;font-size:52px;line-height:1.06;color:#22324A}
+.row span{display:block;font-family:'Space Mono','Courier New',monospace;font-weight:400;font-size:28px;line-height:1.25;color:#4D5566;max-width:800px}
+.row.rd{border-left-color:#C2462F}.row.rd b{color:#C2462F}
+.row.or{border-left-color:#F08A2E}.row.bl{border-left-color:#2F6DB5}
+.row.sm b{font-size:58px}
+.big{display:flex;align-items:center;gap:20px;margin-top:16px;padding:10px 28px 12px 24px;border-left:20px solid #F2B51E;width:max-content;max-width:880px;box-sizing:border-box}
+.big>b{font-family:'Titan One','Arial Black',sans-serif;font-weight:400;font-size:104px;line-height:1;color:#22324A;font-variant-numeric:tabular-nums}
+.big em{display:block;font-style:normal;font-family:'Titan One','Arial Black',sans-serif;font-size:44px;line-height:1;color:#22324A}
+.big>div>span{display:block;font-family:'Space Mono','Courier New',monospace;font-size:26px;line-height:1.2;color:#4D5566;margin-top:6px}
+.big.rd{border-left-color:#C2462F}.big.rd>b{color:#C2462F}
+.big.or{border-left-color:#F08A2E}.big.or>b{color:#D06A12}
+.big.bl{border-left-color:#2F6DB5}.big.bl>b{color:#2F6DB5}
+.q{margin-top:20px;padding:20px 28px 18px;font-family:'Titan One','Arial Black',sans-serif;font-size:60px;line-height:1.1;color:#22324A;border-left:22px solid #C2462F;max-width:880px}
+#ripple{position:absolute;left:44px;top:1098px;width:960px;height:170px;z-index:10}
+#ripple .arcs{position:absolute;left:0;top:0;width:960px;height:170px;overflow:hidden}
+#ripple .rg{fill:none;stroke:#FFF8EA;stroke-width:5;stroke-dasharray:4 12;stroke-linecap:round;opacity:.9;transform-origin:62px 82px;filter:drop-shadow(0 2px 0 rgba(34,50,74,.6))}
+#ripple .row6{position:absolute;left:0;top:14px;display:flex;align-items:center;gap:22px}
+.tk{position:relative;width:132px;height:132px;box-sizing:border-box;background:#FFF8EA;border:5px solid #22324A;border-radius:50%;box-shadow:0 7px 0 #22324A;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.tk .ic{width:58px;height:58px;margin-top:-6px}.tk .ic svg{width:58px;height:58px;display:block}
+.tk .tl{font-family:'Titan One','Arial Black',sans-serif;font-size:19px;line-height:.98;color:#22324A;text-align:center;width:112px;margin-top:2px}
+.tk.hero{background:#F2B51E}
+.tk .pz{position:absolute;inset:-12px;border:6px solid #F08A2E;border-radius:50%;opacity:0;font-style:normal}
+.wave{position:absolute;left:0;top:14px;width:132px;height:132px;border-radius:50%;border:6px solid #F08A2E;opacity:0;box-sizing:border-box}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="89.56" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">DIORAMA MAINAN &middot; ILUSTRASI, BUKAN CUPLIKAN ASLI</div>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titan+One&family=Space+Mono:wght@400;700&family=Outfit:wght@400;600&display=block">
+<div class="pre"><span style="font-family:'Titan One',sans-serif">EVER GIVEN</span><span style="font-family:'Space Mono',monospace;font-weight:700">2021</span><span style="font-family:'Space Mono',monospace;font-weight:400">suez</span><span style="font-family:Outfit,sans-serif;font-weight:600">AUDIRA</span></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="kk"><i>EP 41</i>FAKTA SEJARAH NEGARA</div>
+  <div class="cd ttl"><small>TERUSAN SUEZ &middot; MESIR &middot; 2021</small><b>1 KAPAL<br><em>MENYUMBAT</em><br>DUNIA</b><div class="bc"></div></div>
+  <div class="stk" data-at="s1:enam" data-fx="stampc"><span class="ct" data-from="0" data-to="6" data-a="s1:enam" data-d="0.5" data-dec="0" data-pre="" data-suf="">0</span> HARI MACET</div>
+</div>
+<div class="p" data-in="s2" data-out="s2:dan">
+  <div class="kk"><i>01</i>MARET 2021</div>
+  <div class="cd row bl" data-at="s2:Terusan" data-fx="card"><b>TERUSAN SUEZ, MESIR</b><span>jalan pintas Laut Mediterania &ndash; Laut Merah</span></div>
+  <div class="cd big or" data-at="s2:dua" data-fx="card"><b>&plusmn;<span class="ct" data-from="0" data-to="12" data-a="s2:dua" data-d="0.8" data-dec="0" data-pre="" data-suf="">0</span>%</b><div><em>PERDAGANGAN</em><span>dunia lewat sini</span></div></div>
+</div>
+<div class="p" data-in="s2:dan" data-out="s3">
+  <div class="kk"><i>01</i>JALUR SEMPIT</div>
+  <div class="cd row bl" data-at="s2:hanya" data-fx="card"><b>BANYAK RUAS CUMA 1 JALUR</b><span>hanya muat satu kapal</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s3:Badai">
+  <div class="kk"><i>02</i>23 MARET 2021 &middot; PAGI</div>
+  <div class="cd row rd" data-at="s3:Ever" data-fx="card"><b>EVER GIVEN</b><span>kapal kontainer raksasa</span></div>
+  <div class="cd big rd" data-at="s3:empat" data-fx="card"><b><span class="ct" data-from="0" data-to="400" data-a="s3:empat" data-d="0.9" data-dec="0" data-pre="" data-suf="">0</span> m</b><div><em>PANJANG</em><span>&asymp; 4 lapangan bola</span></div></div>
+</div>
+<div class="p" data-in="s3:Badai" data-out="s4">
+  <div class="kk"><i>02</i>BADAI PASIR</div>
+  <div class="cd big or" data-at="s3:tujuh" data-fx="card"><b>&gt;<span class="ct" data-from="0" data-to="70" data-a="s3:tujuh" data-d="0.9" data-dec="0" data-pre="" data-suf="">0</span></b><div><em>KM/JAM</em><span>kecepatan angin</span></div></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="kk"><i>03</i>KANDAS</div>
+  <div class="cd row or" data-at="s4:menangkap" data-fx="card"><b>KONTAINER = LAYAR</b><span>tumpukan kontainer menangkap angin</span></div>
+  <div class="cd row rd" data-at="s4:kandas" data-fx="card"><b>KANDAS MELINTANG</b><span>haluan dan buritan menancap di dua tepi</span></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="kk"><i>04</i>ANTREAN</div>
+  <div class="cd big bl" data-at="s5:tiga" data-fx="card"><b><span class="ct" data-from="0" data-to="369" data-a="s5:tiga" data-d="1.6" data-dec="0" data-pre="" data-suf="">0</span></b><div><em>KAPAL</em><span>menunggu (per 28 Maret)</span></div></div>
+  <div class="cd big rd" data-at="s5:sembilan#2" data-fx="card"><b>US$<span class="ct" data-from="0" data-to="9.6" data-a="s5:sembilan#2" data-d="0.9" data-dec="1" data-pre="" data-suf="">0</span></b><div><em>MILIAR</em><span>barang tertahan setiap hari</span></div></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="kk"><i>05</i>EFEK RIAK</div>
+  <div class="cd row or" data-at="s6:merambat" data-fx="card"><b>MERAMBAT KE MANA-MANA</b><span>dari satu kanal ke seluruh dunia</span></div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Dua">
+  <div class="kk"><i>06</i>PENYELAMATAN</div>
+  <div class="cd row bl" data-at="s7:keruk" data-fx="card"><b>KAPAL KERUK</b><span>mengisap pasir di bawah haluan</span></div>
+  <div class="cd row bl" data-at="s7:ribuan" data-fx="card"><b>RIBUAN TON AIR PEMBERAT</b><span>dibuang agar kapal lebih ringan</span></div>
+  <div class="cd row or" data-at="s7:ekskavator" data-fx="card"><b>1 EKSKAVATOR KECIL</b><span>menggali haluan</span></div>
+</div>
+<div class="p" data-in="s7:Dua" data-out="s8">
+  <div class="kk"><i>06</i>29 MARET 2021</div>
+  <div class="cd big bl" data-at="s7:empat" data-fx="card"><b><span class="ct" data-from="0" data-to="14" data-a="s7:empat" data-d="0.7" data-dec="0" data-pre="" data-suf="">0</span></b><div><em>KAPAL TUNDA</em><span>menarik bersama</span></div></div>
+  <div class="stk gn" data-at="s7:lepas" data-fx="stampc">LEPAS!</div>
+</div>
+<div class="p" data-in="s8" data-out="s8:Satu">
+  <div class="kk"><i>07</i>SETELAH LEPAS</div>
+  <div class="cd big rd" data-at="s8:seratus" data-fx="card"><b>&gt;<span class="ct" data-from="0" data-to="100" data-a="s8:seratus" data-d="0.9" data-dec="0" data-pre="" data-suf="">0</span></b><div><em>HARI</em><span>kapal ditahan Mesir</span></div></div>
+  <div class="cd big or" data-at="s8:lima" data-fx="card"><b>US$<span class="ct" data-from="0" data-to="540" data-a="s8:lima" data-d="0.9" data-dec="0" data-pre="" data-suf="">0</span></b><div><em>JUTA</em><span>ganti rugi yang disepakati</span></div></div>
+</div>
+<div class="p" data-in="s8:Satu" data-out="s8:Menurut">
+  <div class="kk"><i>07</i>PEMICU KECIL, DAMPAK RAKSASA</div>
+  <div class="cd row bl sm" data-at="s8:Satu" data-fx="card"><b>1 KAPAL</b></div>
+  <div class="cd row or sm" data-at="s8:satu" data-fx="card"><b>1 EMBUSAN ANGIN</b></div>
+  <div class="cd row rd sm" data-at="s8:satu#2" data-fx="card"><b>1 DUNIA IKUT BERHENTI</b></div>
+</div>
+<div class="p" data-in="s8:Menurut" data-out="@END">
+  <div class="cd q">Barang apa di rumahmu yang mungkin pernah lewat Suez? Tulis di komentar!</div>
+</div>
+<div id="ripple" data-at="s4:angin" data-fx="fade">
+  <svg class="arcs" viewBox="0 0 960 170"><circle class="rg" cx="62" cy="82" r="140" data-at="s4:kandas" data-fx="ring"/><circle class="rg" cx="62" cy="82" r="280" data-at="s5:menunggu" data-fx="ring"/><circle class="rg" cx="62" cy="82" r="420" data-at="s6:cip" data-fx="ring"/><circle class="rg" cx="62" cy="82" r="560" data-at="s6:domba" data-fx="ring"/><circle class="rg" cx="62" cy="82" r="700" data-at="s6:kurcaci" data-fx="ring"/><circle class="rg" cx="62" cy="82" r="840" data-at="s8:Satu" data-fx="ring"/></svg>
+  <div class="row6">
+    <div class="tk hero" id="t0" data-at="s4:angin" data-fx="tok"><div class="ic"><svg viewBox="0 0 64 64"><path d="M6 22h30c8 0 10-12 2-12-4 0-6 3-6 6" fill="none" stroke="#22324A" stroke-width="5" stroke-linecap="round"/><path d="M6 34h40c9 0 11 13 2 13-5 0-7-3-7-6" fill="none" stroke="#22324A" stroke-width="5" stroke-linecap="round"/><path d="M10 46h16" stroke="#22324A" stroke-width="5" stroke-linecap="round"/></svg></div><div class="tl">ANGIN</div><i class="pz" data-at="s4:angin" data-fx="puls"></i></div>
+    <div class="tk " id="t1" data-at="s4:kandas" data-fx="tok"><div class="ic"><svg viewBox="0 0 64 64"><path d="M6 40l6 12h40l6-12z" fill="#22324A"/><rect x="14" y="26" width="8" height="12" fill="#C2462F"/><rect x="23" y="22" width="8" height="16" fill="#2F6DB5"/><rect x="32" y="26" width="8" height="12" fill="#F2B51E"/><rect x="41" y="18" width="8" height="20" fill="#fff" stroke="#22324A" stroke-width="2"/><path d="M4 46l56-26" stroke="#C2462F" stroke-width="4" stroke-dasharray="5 4"/></svg></div><div class="tl">KANDAS</div><i class="pz" data-at="s4:kandas" data-fx="puls"></i></div>
+    <div class="tk " id="t2" data-at="s5:menunggu" data-fx="tok"><div class="ic"><svg viewBox="0 0 64 64"><path d="M4 26l3 6h18l3-6zM34 26l3 6h18l3-6zM14 46l3 6h18l3-6z" fill="#22324A"/><rect x="9" y="19" width="12" height="7" fill="#C2462F"/><rect x="39" y="19" width="12" height="7" fill="#2A9D8F"/><rect x="19" y="39" width="12" height="7" fill="#F08A2E"/></svg></div><div class="tl">369 KAPAL</div><i class="pz" data-at="s5:menunggu" data-fx="puls"></i></div>
+    <div class="tk " id="t3" data-at="s6:cip" data-fx="tok"><div class="ic"><svg viewBox="0 0 64 64"><rect x="16" y="16" width="32" height="32" rx="4" fill="#22324A"/><rect x="25" y="25" width="14" height="14" fill="#F2B51E"/><path d="M22 10v6M30 10v6M38 10v6M22 48v6M30 48v6M38 48v6M10 22h6M10 30h6M10 38h6M48 22h6M48 30h6M48 38h6" stroke="#8A939C" stroke-width="3"/></svg></div><div class="tl">CIP</div><i class="pz" data-at="s6:cip" data-fx="puls"></i></div>
+    <div class="tk " id="t4" data-at="s6:domba" data-fx="tok"><div class="ic"><svg viewBox="0 0 64 64"><g fill="#fff" stroke="#22324A" stroke-width="3"><circle cx="24" cy="30" r="9"/><circle cx="34" cy="26" r="9"/><circle cx="42" cy="32" r="8"/><circle cx="30" cy="36" r="9"/></g><rect x="46" y="22" width="11" height="13" rx="4" fill="#22324A"/><path d="M24 44v8M34 44v8M42 40v10" stroke="#22324A" stroke-width="4"/><path d="M4 54h56" stroke="#2F6DB5" stroke-width="5"/></svg></div><div class="tl">130.000 DOMBA</div><i class="pz" data-at="s6:domba" data-fx="puls"></i></div>
+    <div class="tk " id="t5" data-at="s6:kurcaci" data-fx="tok"><div class="ic"><svg viewBox="0 0 64 64"><path d="M32 4L20 26h24z" fill="#C2462F" stroke="#22324A" stroke-width="3" stroke-linejoin="round"/><circle cx="32" cy="30" r="8" fill="#F3C6A0" stroke="#22324A" stroke-width="3"/><path d="M24 33c2 12 14 12 16 0l-8 10z" fill="#fff" stroke="#22324A" stroke-width="3" stroke-linejoin="round"/><path d="M20 58l4-16h16l4 16z" fill="#2F6DB5" stroke="#22324A" stroke-width="3" stroke-linejoin="round"/></svg></div><div class="tl">KURCACI TAMAN</div><i class="pz" data-at="s6:kurcaci" data-fx="puls"></i></div>
+  </div>
+  <div class="wave" data-at="s8:Satu" data-fx="wave"></div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 41</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":5.987,"s2":6.147,"s2e":16.117,"s3":16.277,"s3e":27.812,"s4":27.972,"s4e":36.653,"s5":36.813,"s5e":45.029,"s6":45.189,"s6e":56.074,"s7":56.234,"s7e":69.117,"s8":69.277,"s8e":86.558,"end":86.558,"dur":89.56,"outro":86.808},AT={"s1:Selama":3.51,"s2:Terusan":7.665,"s2:dan":13.656,"s2:hanya":14.972,"s3:Ever":18.86,"s3:Panjangnya":20.237,"s3:empat#2":22.575,"s3:Badai":23.844,"s3:tujuh":26.512,"s4:Tumpukan":28.047,"s4:angin":29.58,"s4:kehilangan":31.233,"s4:kandas":32.58,"s4:Haluannya":33.613,"s4:buritannya":35.662,"s5:antrean":37.247,"s5:tiga":39.429,"s5:menunggu":40.776,"s5:Barang":41.423,"s6:Efeknya":45.23,"s6:cip":47.899,"s6:domba":51.192,"s6:kurcaci":54.108,"s6:Seratus":50.108,"s7:keruk":57.264,"s7:air":59.725,"s7:ekskavator":62.605,"s7:Dua":64.813,"s7:empat":66.083,"s7:menarik":67.692,"s7:lepas":68.683,"s8:menahan":70.172,"s2:Mesir":8.919,"s8:ganti":73.237,"s8:Satu":76.267,"s8:Menurut":79.992,"s8:AUDIRA":84.778,"s1:enam":3.897,"s2:dua":10.39,"s3:empat":20.934,"s4:menangkap":29.1,"s5:sembilan#2":42.537,"s6:merambat":45.942,"s7:ribuan":59.091,"s8:seratus":71.58,"s8:lima":74.336,"s8:satu":77.196,"s8:satu#2":78.414},DUR=89.56,OUT=86.808;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ card:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:e.classList.contains('big')||e.classList.contains('row')?'flex':'block'},t);tl.fromTo(e,{opacity:0,y:-40,rotation:-2},{opacity:1,y:0,rotation:0,duration:.42,ease:'back.out(1.7)',immediateRender:false},t);},
+ stampc:(e,t)=>{tl.fromTo(e,{scale:1.8,opacity:0},{scale:1,opacity:1,duration:.22,ease:'power4.in',immediateRender:false},t);},
+ tok:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:'flex'},t-.01);tl.fromTo(e,{opacity:0,scale:.3,y:40},{opacity:1,scale:1,y:0,duration:.45,ease:'back.out(2.2)',immediateRender:false},t);},
+ puls:(e,t)=>{tl.fromTo(e,{opacity:1,scale:.85},{opacity:0,scale:1.5,duration:.7,ease:'power2.out',immediateRender:false},t+.05);},
+ ring:(e,t)=>{tl.fromTo(e,{opacity:0,scale:.2},{opacity:.9,scale:1,duration:.8,ease:'power3.out',immediateRender:false},t);},
+ wave:(e,t)=>{document.querySelectorAll('#ripple .tk').forEach((k,i)=>{tl.fromTo(k,{y:0},{y:-24,duration:.16,yoyo:true,repeat:1,ease:'power2.out',immediateRender:false},t+i*.1);});},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{opacity:0,y:-60},{opacity:1,y:0,duration:.4,ease:'back.out(1.5)'},a-.02),POUT=(tl,p,b)=>tl.to(p,{opacity:0,y:-40,duration:.2,ease:'power2.in'},b-.22);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP41_EVER_GIVEN_SUEZ_2021")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

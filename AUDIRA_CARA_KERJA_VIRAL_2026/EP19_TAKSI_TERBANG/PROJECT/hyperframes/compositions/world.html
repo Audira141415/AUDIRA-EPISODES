@@ -1,0 +1,152 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#BFDDEB}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.03;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.2) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.36) 42%,rgba(0,0,0,0.36) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:262px;z-index:10;transform-origin:50% 50%}
+.nb{font-variant-numeric:tabular-nums}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Inter,sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#fff;opacity:.82}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:30px;color:#A3E635;letter-spacing:.14em}
+
+#gl{filter:contrast(1.07) saturate(1.12)}
+.st{display:inline-block;font-family:"DM Mono",monospace;font-weight:500;font-size:25px;letter-spacing:.1em;color:#fff;background:#2BB5A6;padding:8px 18px;border-radius:999px;margin-bottom:14px;box-shadow:0 6px 16px rgba(42,51,66,.18)}
+.hero{display:flex;flex-direction:column;margin-top:2px}
+.hero i{font-style:normal;font-family:Sora,sans-serif;font-weight:700;font-size:44px;color:#2A3342;background:#FFF8EE;align-self:flex-start;padding:2px 16px;border-radius:14px 14px 0 0}
+.hero b{font-family:Sora,sans-serif;font-weight:800;font-size:196px;line-height:.92;letter-spacing:-.05em;color:#2A3342;background:#FFF8EE;align-self:flex-start;padding:4px 26px 14px 20px;border-radius:0 26px 26px 26px;box-shadow:0 18px 40px rgba(42,51,66,.2);position:relative}
+.hero b small{font-size:70px;letter-spacing:-.01em;color:#FF7A6B;margin-left:14px}
+.chips{display:flex;gap:14px;margin-top:14px}
+.chips span{font-family:Sora,sans-serif;font-weight:800;font-size:46px;padding:6px 22px;border-radius:16px;color:#fff}
+.chips .c1{background:#2A3342}
+.chips .c2{background:#FF7A6B;box-shadow:0 0 0 4px #FFF8EE}
+.tl{font-family:Sora,sans-serif;font-weight:600;font-size:36px;color:#2A3342;margin-top:16px;background:rgba(255,248,238,.9);display:inline-block;padding:8px 18px;border-radius:14px}
+.tl span{font-weight:800;color:#2BB5A6}
+.card{position:relative;background:#FFF8EE;padding:16px 26px 18px;width:780px;border-radius:26px;box-shadow:0 18px 40px rgba(42,51,66,.2)}
+.card:after,.row:after{content:"";position:absolute;right:0;top:0;width:54px;height:54px;background:#FF7A6B;clip-path:polygon(0 0,100% 0,100% 100%);border-top-right-radius:22px}
+.card b{display:block;font-family:Sora,sans-serif;font-weight:800;font-size:92px;line-height:1;letter-spacing:-.03em;color:#2A3342}
+.card.sm b{font-size:54px;letter-spacing:-.01em}
+.card span{display:block;font-family:Sora,sans-serif;font-weight:500;font-size:30px;color:#5d6676;margin-top:6px}
+.row{position:relative;background:rgba(255,248,238,.95);border-left:10px solid #F4C55A;padding:12px 70px 14px 20px;margin-top:12px;width:700px;border-radius:20px;box-shadow:0 12px 28px rgba(42,51,66,.16)}
+.row:after{width:40px;height:40px;background:#F4C55A;border-top-right-radius:18px}
+.row.tea{border-left-color:#2BB5A6}.row.tea:after{background:#2BB5A6}
+.row.red{border-left-color:#E8574A}.row.red:after{background:#E8574A}
+.row b{display:block;font-family:Sora,sans-serif;font-weight:800;font-size:48px;line-height:1.08;color:#2A3342}
+.row span{display:block;font-family:Sora,sans-serif;font-weight:500;font-size:29px;line-height:1.25;color:#5d6676}
+.card b .ct,.row b .ct{display:inline;font:inherit;color:inherit;margin:0;padding:0;border:0}
+.stamp{display:inline-block;margin-top:16px;background:#FF7A6B;color:#fff;padding:12px 24px 14px;border-radius:20px;border:4px dashed rgba(255,255,255,.85);box-shadow:0 14px 30px rgba(232,87,74,.35)}
+.stamp b{display:block;font-family:Sora,sans-serif;font-weight:800;font-size:46px;letter-spacing:.02em;line-height:1.05}
+.stamp span{display:block;font-family:"DM Mono",monospace;font-weight:500;font-size:27px;margin-top:4px}
+.trio{display:flex;flex-direction:column;gap:12px}
+.trio b{display:inline-block;align-self:flex-start;font-family:Sora,sans-serif;font-weight:800;font-size:96px;line-height:1;letter-spacing:-.03em;color:#2A3342;background:#FFF8EE;padding:10px 26px 14px;border-radius:24px;box-shadow:0 14px 30px rgba(42,51,66,.18)}
+.trio b small{display:block;font-size:30px;font-weight:600;letter-spacing:0;color:#5d6676;margin-bottom:4px}
+.trio b.cor{background:#FF7A6B;color:#fff}.trio b.cor small{color:#ffe9e4}
+.srcl{font-family:Sora,sans-serif;font-weight:500;font-size:23px;line-height:1.35;color:#2A3342;margin-top:18px;width:780px;background:rgba(255,248,238,.88);padding:10px 16px;border-radius:14px}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="86.32" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="st">CARA KERJA VIRAL &middot; EP 19</div>
+  <div class="hero"><i>lebih dari</i><b class="nb">133<small>km</small></b></div>
+  <div class="chips"><span class="c1">5 PESAWAT</span><span class="c2" data-at="s1:Tanpa" data-fx="stamp">0 PILOT</span></div>
+  <div class="tl">Cara kerja pesawat listrik <span>lepas landas tegak</span></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="st">31 OKT &amp; 1 NOV &middot; KUNSHAN, TIONGKOK</div>
+  <div class="card" data-at="s2:menerbangkan" data-fx="up"><b>5 eVTOL</b><span>pesawat listrik lepas landas tegak</span></div>
+  <div class="row" data-at="s2:Empat" data-fx="left"><b class="nb"><span class="ct" data-from="0" data-to="47" data-a="s2:Empat" data-d="1.3">0</span> MENIT</b><span>sepenuhnya otomatis</span></div>
+  <div class="row" data-at="s2:Pesawatnya" data-fx="left"><b>KARGO &amp; PEMADAM</b><span>bukan taksi penumpang</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="st">2 SISTEM DORONG &middot; 1: ROTOR ANGKAT</div>
+  <div class="row" data-at="s3:diputar" data-fx="left"><b>1 ROTOR = 1 MOTOR</b><span>masing-masing motor listrik sendiri</span></div>
+  <div class="row" data-at="s3:Udara" data-fx="left"><b>NAIK TEGAK</b><span>udara ditiup ke bawah</span></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="st">2: BALING-BALING PENDORONG</div>
+  <div class="row" data-at="s4:melaju" data-fx="left"><b>PESAWAT MELAJU</b><span>udara mengalir di atas sayap</span></div>
+  <div class="row tea" data-at="s4:berhenti" data-fx="left"><b>ROTOR ANGKAT BERHENTI</b><span>sayap jauh lebih hemat</span></div>
+</div>
+<div class="p" data-in="s5" data-out="s5:Navigasi">
+  <div class="st">OTAK: KOMPUTER KENDALI</div>
+  <div class="row" data-at="s5:mengatur" data-fx="left"><b>ATUR PUTARAN TIAP MOTOR</b><span>terus-menerus, otomatis</span></div>
+  <div class="row red" data-at="s5:mati" data-fx="left"><b>1 MOTOR MATI</b><span>yang lain menambah dorongan</span></div>
+</div>
+<div class="p" data-in="s5:Navigasi" data-out="s6">
+  <div class="st">NAVIGASI FORMASI</div>
+  <div class="card sm" data-at="s5:Navigasi" data-fx="up"><b>TIDAK DIPUBLIKASIKAN</b><span>penjelasan umum, bukan data AutoFlight</span></div>
+  <div class="row" data-at="s5:satelit" data-fx="left"><b>SATELIT + RADIO</b><span>posisi dibagi antarpesawat</span></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="st">BATAS: BATERAI</div>
+  <div class="card" data-at="s6:puluhan" data-fx="up"><b>PULUHAN &times;</b><span>energi per kilo: bahan bakar jet vs baterai</span></div>
+  <div class="row" data-at="s6:Jangkauan" data-fx="left"><b class="nb">&plusmn; 200 km</b><span>jangkauan maksimal CarryAll</span></div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="st">KUNSHAN &middot; RUTE ILUSTRASI</div>
+  <div class="row" data-at="s7:Kunshan" data-fx="left"><b class="nb">&gt;133 km &middot; 47 MENIT</b><span>lima pesawat, satu formasi</span></div>
+  <div class="row" data-at="s7:memimpin" data-fx="left"><b class="nb">1 &times; 5 TON</b><span>memimpin 4 pesawat &times; 2 ton</span></div>
+  <div class="stamp" data-at="s7:Indonesia" data-fx="stamp"><b>VALIDASI INDONESIA</b><span>sertifikat tipe CarryAll &middot; 3 Juni</span></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="trio"><b data-at="s8:Naik" data-fx="pop"><small>naik seperti</small>HELIKOPTER</b><b data-at="s8:terbang" data-fx="pop"><small>terbang seperti</small>PESAWAT</b><b data-at="s8:komputer" data-fx="pop" class="cor"><small>dikemudikan</small>KOMPUTER</b></div>
+  <div class="srcl" data-at="s8:Naik" data-fx="fade">Sumber: rilis AutoFlight (5 Nov 2026), Xinhua, AeroTime, sUAS News, China Daily. Pesawat 3D adalah ilustrasi generik, bukan model aslinya.</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">CARA KERJA VIRAL &middot; EP 19</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":6.058,"s2":6.218,"s2e":20.26,"s3":20.42,"s3e":32.242,"s4":32.402,"s4e":45.388,"s5":45.548,"s5e":57.761,"s6":57.921,"s6e":67.443,"s7":67.603,"s7e":77.06,"s8":77.22,"s8e":83.32,"end":83.32,"dur":86.32,"outro":83.57},AT={"s1:pilot":5.393,"s2:menerbangkan":9.55,"s2:eVTOL":12.728,"s2:otomatis":17.504,"s2:bukan":19.269,"s3:Kuncinya":20.42,"s3:rotor":23.511,"s3:naik":30.121,"s4:Kedua":32.728,"s4:pendorong":34.74,"s4:udara":37.607,"s4:mengangkat":40.004,"s4:Begitu":40.753,"s4:hemat":45.078,"s5:Otaknya":45.548,"s5:menambah":51.032,"s5:radio":57.25,"s6:Kenapa":57.921,"s6:Baterai":59.704,"s6:kilo":60.626,"s6:energi":63.861,"s6:dua":66.669,"s7:empat":71.601,"s7:CarryAll":72.943,"s7:Indonesia":75.698,"s8:terbang":78.521,"s8:komputer":80.332,"s1:Tanpa":4.851,"s2:Empat":16.281,"s2:Pesawatnya":17.984,"s3:diputar":25.493,"s3:Udara":28.372,"s4:melaju":36.617,"s4:berhenti":43.252,"s5:Navigasi":52.185,"s5:mengatur":48.007,"s5:mati":50.104,"s5:satelit":55.563,"s6:puluhan":62.359,"s6:Jangkauan":64.657,"s7:Kunshan":68.239,"s7:memimpin":70.935,"s8:Naik":77.236},DUR=86.32,OUT=83.57;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ 
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{clipPath:'polygon(0% 0%, 16% 0%, 0% 20%, 0% 20%)',opacity:1,y:16,rotation:-1.5},{clipPath:'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',y:0,rotation:0,duration:.55,ease:'expo.out'},a-.16);tl.set(p,{clipPath:'none'},a+.42);},POUT=(tl,p,b)=>{tl.set(p,{clipPath:'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)'},b-.36);tl.to(p,{clipPath:'polygon(100% 100%, 100% 100%, 100% 82%, 84% 100%)',y:-8,rotation:1.2,duration:.32,ease:'power2.in'},b-.35);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP19_TAKSI_TERBANG")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

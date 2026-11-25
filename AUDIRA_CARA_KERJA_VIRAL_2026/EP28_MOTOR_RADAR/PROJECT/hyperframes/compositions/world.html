@@ -1,0 +1,159 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#8CCAFF}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.04;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.22) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.34) 42%,rgba(0,0,0,0.34) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:262px;z-index:10;transform-origin:50% 50%}
+.nb{font-variant-numeric:tabular-nums}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Inter,sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#fff;opacity:.82}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:30px;color:#A3E635;letter-spacing:.14em}
+
+.p{filter:drop-shadow(0 10px 0 rgba(17,17,22,.28))}
+.kick{display:inline-block;font-family:"Dela Gothic One",sans-serif;font-size:30px;letter-spacing:.06em;color:#fff;background:#111116;padding:8px 22px 6px;transform:skewX(-14deg);box-shadow:8px 8px 0 #45B6FE;margin-bottom:18px}
+.h0{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.h0 span{font-family:"Dela Gothic One",sans-serif;font-size:106px;line-height:1;color:#fff;background:#111116;padding:10px 30px 14px;transform:skewX(-12deg);box-shadow:12px 12px 0 #FF7597}
+.h0 .ln2{background:#45B6FE;color:#111116;box-shadow:12px 12px 0 #111116;margin-left:40px}
+.h0.sm span{font-size:72px}.h0.sm .ln2{background:#FFD23F}
+.tag2{display:flex;gap:16px;margin-top:22px}
+.tag2 i{font-style:normal;font-family:"Kanit",sans-serif;font-weight:800;font-size:34px;letter-spacing:.04em;padding:6px 18px;border:5px solid #111116;transform:skewX(-12deg);box-shadow:6px 6px 0 #111116}
+.tag2 .dc{background:#45B6FE;color:#111116}.tag2 .dp{background:#FF7597;color:#fff}
+.slam{display:inline-block;margin-top:22px;font-family:"Dela Gothic One",sans-serif;font-size:54px;line-height:1.08;color:#fff;background:#E63946;padding:12px 26px 14px;border:6px solid #111116;transform:rotate(-2.5deg) skewX(-8deg);box-shadow:10px 10px 0 #111116;max-width:860px}
+.ban{position:relative;background:#fff;border:6px solid #111116;box-shadow:10px 10px 0 #111116;padding:12px 24px 14px;width:820px;margin-top:16px;transform:skewX(-6deg)}
+.ban.cy{background:#D7F0FF}.ban.yl{background:#FFD23F}
+.ban b{display:block;font-family:"Dela Gothic One",sans-serif;font-size:66px;line-height:1.02;color:#111116}
+.ban b.m{font-size:50px}
+.ban span{display:block;font-family:"Kanit",sans-serif;font-weight:600;font-size:34px;line-height:1.2;color:#2B2D3A;margin-top:6px}
+.note{display:inline-block;margin-top:16px;font-family:"Kanit",sans-serif;font-weight:600;font-size:40px;line-height:1.15;color:#fff;background:#111116;padding:10px 22px;transform:skewX(-10deg);box-shadow:8px 8px 0 #45B6FE;max-width:860px}
+.note.pk{box-shadow:8px 8px 0 #FF7597}
+.note b{font-weight:800;color:#FFD23F}
+.eq{display:inline-block;margin-top:18px;font-family:"Dela Gothic One",sans-serif;font-size:52px;color:#111116;background:#45B6FE;padding:8px 24px 10px;border:6px solid #111116;box-shadow:8px 8px 0 #111116;transform:skewX(-10deg)}
+.wv{width:840px;background:#fff;border:6px solid #111116;box-shadow:10px 10px 0 #111116;padding:10px 20px;transform:skewX(-5deg)}
+.wr{display:flex;align-items:center;gap:14px;margin:6px 0}
+.wr em{font-style:normal;width:210px;font-family:"Kanit",sans-serif;font-weight:800;font-size:34px;color:#111116}
+.wr em.r{color:#E63946}
+.wr svg{flex:1;height:70px}
+.li{display:flex;align-items:center;gap:18px;width:840px;background:#fff;border:6px solid #111116;box-shadow:9px 9px 0 #111116;padding:10px 18px;margin-top:14px;transform:skewX(-6deg)}
+.li>i{flex:none;font-style:normal;width:70px;height:70px;line-height:74px;text-align:center;font-family:"Dela Gothic One",sans-serif;font-size:44px;border:5px solid #111116;color:#111116}
+.li>i.c{background:#45B6FE}.li>i.y{background:#FFD23F}.li>i.o{background:#FF9F1C}.li>i.p{background:#FF7597;color:#fff}
+.li b{display:block;font-family:"Dela Gothic One",sans-serif;font-size:42px;line-height:1.05;color:#111116}
+.li span{display:block;font-family:"Kanit",sans-serif;font-weight:600;font-size:32px;line-height:1.15;color:#2B2D3A}
+.srcl{font-family:"Kanit",sans-serif;font-weight:500;font-size:25px;line-height:1.3;color:#111116;margin-top:22px;width:800px;background:#fff;border:4px solid #111116;padding:8px 14px}
+#chip{color:#fff!important;background:#111116;padding:4px 12px;opacity:.92!important;font-family:"Kanit",sans-serif!important;font-weight:700!important;font-size:22px!important;transform:skewX(-10deg)}
+#hud{position:absolute;right:56px;top:180px;z-index:11;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+#hud b{font-family:"Kanit",sans-serif;font-weight:800;font-size:26px;letter-spacing:.06em;padding:3px 12px;border:4px solid #111116;transform:skewX(-10deg);box-shadow:4px 4px 0 #111116;transition:none}
+#hudf{background:#45B6FE;color:#111116}#hudb{background:#FF7597;color:#fff}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="87.85" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="kick">CARA KERJA VIRAL &middot; EP 28</div>
+  <div class="h0"><span>MOTOR INI</span><span class="ln2">BISA MELIHAT</span></div>
+  <div class="tag2"><i class="dc">RADAR DEPAN</i><i class="dp">RADAR BELAKANG</i></div>
+  <div class="slam" data-at="s1:pertama" data-fx="slam">BUKAN YANG PERTAMA DI DUNIA</div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="kick">3 NOVEMBER &middot; EICMA, MILAN</div>
+  <div class="ban"><b>HONDA SENSING RIDE</b><span>diperkenalkan di pameran motor Milan</span></div>
+  <div class="note pk" data-at="s2:Ducati" data-fx="whip"><b>DUCATI</b> sudah memakai radar sejak <b>2020</b></div>
+  <div class="ban cy" data-at="s2:Africa" data-fx="whip"><b class="m">MOTOR HONDA PERTAMA DENGAN RADAR</b><span>Africa Twin Adventure Sports, versi DCT</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="kick">MATA #1 &middot; WAKTU PANTUL</div>
+  <div class="tag2" data-at="s3:Matanya" data-fx="whip"><i class="dc">RADAR DEPAN</i><i class="dp">RADAR BELAKANG</i></div>
+  <div class="note" data-at="s3:menembakkan" data-fx="whip">gelombang radio <b>keluar</b> &rarr; tunggu <b>pantulan</b></div>
+  <div class="ban yl" data-at="s3:sepertiga" data-fx="slam"><b class="m">&frac13; SEPERSEJUTA DETIK</b><span>waktu gema dari mobil 50 m di depan</span></div>
+  <div class="eq" data-at="s3:situ" data-fx="pop">WAKTU = JARAK</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="kick">MATA #2 &middot; FREKUENSI BERGESER</div>
+  <div class="wv">
+    <div class="wr"><em>DIKIRIM</em><svg viewBox="0 0 560 70"><path d="M0 35 Q 35 0 70 35 T 140 35 T 210 35 T 280 35 T 350 35 T 420 35 T 490 35 T 560 35" fill="none" stroke="#45B6FE" stroke-width="9"/></svg></div>
+    <div class="wr" data-at="s4:terjepit" data-fx="whip"><em class="r">PANTULAN</em><svg viewBox="0 0 560 70"><path d="M0 35 Q 20 0 40 35 T 80 35 T 120 35 T 160 35 T 200 35 T 240 35 T 280 35 T 320 35 T 360 35 T 400 35 T 440 35 T 480 35 T 520 35 T 560 35" fill="none" stroke="#E63946" stroke-width="9"/></svg></div>
+  </div>
+  <div class="note pk" data-at="s4:sirene" data-fx="whip">seperti <b>sirene ambulans</b> yang mendekat</div>
+  <div class="eq" data-at="s4:selisih" data-fx="pop">SELISIH = LAJU MENDEKAT</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="kick">DATA RADAR DIPAKAI UNTUK&hellip;</div>
+  <div class="li" data-at="s5:cruise" data-fx="whip"><i class="c">1</i><div><b>CRUISE CONTROL ADAPTIF</b><span>menjaga jarak</span></div></div>
+  <div class="li" data-at="s5:spion" data-fx="whip"><i class="y">2</i><div><b>LAMPU SPION</b><span>kendaraan di titik buta</span></div></div>
+  <div class="li" data-at="s5:mengedipkan" data-fx="whip"><i class="o">3</i><div><b>SEIN BERKEDIP</b><span>peringatkan pengemudi di belakang</span></div></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="kick">KENAPA HARUS DCT?</div>
+  <div class="li" data-at="s6:macet" data-fx="whip"><i class="c">1</i><div><b>STOP &amp; GO</b><span>melambat sampai berhenti</span></div></div>
+  <div class="li" data-at="s6:Transmisi" data-fx="whip"><i class="p">2</i><div><b>KOPLING GANDA</b><span>lepas kopling sendiri, tanpa tuas</span></div></div>
+  <div class="li" data-at="s6:jalan" data-fx="whip"><i class="y">3</i><div><b>JALAN LAGI?</b><span>pengendara yang memberi perintah</span></div></div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="kick">SAAT BAHAYA DI DEPAN</div>
+  <div class="note" data-at="s7:layar" data-fx="whip"><b>LAYAR</b> memberi peringatan</div>
+  <div class="note pk" data-at="s7:mengerem" data-fx="whip">kamu <b>mengerem</b>,<br>sistem <b>menambah tenaga rem</b></div>
+  <div class="slam" data-at="s7:sendiri" data-fx="slam">MOTOR TIDAK MENGEREM DARURAT SENDIRI</div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="h0 sm"><span>KEMAMPUANNYA</span><span class="ln2">TERBATAS</span></div>
+  <div class="ban" data-at="s8:menyetir" data-fx="whip"><b class="m">YANG MENYETIR TETAP KAMU</b><span>radar membantu melihat</span></div>
+  <div class="srcl" data-at="s8:Ikuti" data-fx="fade">Sumber: Honda Global (3 Nov 2026), CNN Indonesia (5 Nov 2026), rilis Ducati 2020. Motor, pengendara &amp; mobil 3D adalah ilustrasi generik, bukan motor asli.</div>
+</div><div id="hud"><b id="hudf">&#9679; MATA DEPAN</b><b id="hudb">&#9679; MATA BELAKANG</b></div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">CARA KERJA VIRAL &middot; EP 28</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":7.321,"s2":7.481,"s2e":20.182,"s3":20.342,"s3e":33.695,"s4":33.855,"s4e":43.528,"s5":43.688,"s5e":54.172,"s6":54.332,"s6e":67.874,"s7":68.034,"s7e":76.67,"s8":76.83,"s8e":84.853,"end":84.853,"dur":87.85,"outro":85.103},AT={"s1:melihat":1.094,"s1:macet":4.312,"s1:pertama":6.423,"s2:EICMA":9.064,"s2:Ducati":12.559,"s2:Africa":17.999,"s3:Matanya":20.364,"s3:menembakkan":24.888,"s3:lima":28.499,"s3:gema":29.977,"s3:sepertiga":30.968,"s3:situ":32.58,"s4:melambat":34.888,"s4:terjepit":36.374,"s4:sirene":39.247,"s4:selisih":41.162,"s5:cruise":44.837,"s5:Radar":47.407,"s5:spion":48.986,"s5:titik":50.349,"s5:mengedipkan":51.633,"s5:pengemudi":53.197,"s6:kenapa":54.657,"s6:macet":56.945,"s6:berhenti":60.211,"s6:Transmisi":61.03,"s6:melepas":62.686,"s6:tuas":64.586,"s6:jalan":65.623,"s6:perintah":67.425,"s7:bahaya":68.331,"s7:layar":69.182,"s7:mengerem":71.071,"s7:menambah":73.032,"s7:Tapi":74.317,"s7:sendiri":76.252,"s8:Kemampuannya":76.831,"s8:menyetir":80.872,"s8:Ikuti":82.593},DUR=87.85,OUT=85.103;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ whip:(e,t)=>tl.fromTo(e,{x:-140,skewX:-30,opacity:0},{x:0,skewX:0,opacity:1,duration:.26,ease:'expo.out'},t),
+ slam:(e,t)=>tl.fromTo(e,{scale:2.2,rotation:-9,opacity:0},{scale:1,rotation:0,opacity:1,duration:.16,ease:'power4.in'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{opacity:0,x:-260,skewX:-28,scale:1.12},{opacity:1,x:0,skewX:0,scale:1,duration:.3,ease:'back.out(2.2)'},a-.1);},POUT=(tl,p,b)=>tl.fromTo(p,{clipPath:'polygon(0% 0%,100% 0%,100% 100%,0% 100%)'},{clipPath:'polygon(100% 0%,100% 0%,100% 100%,100% 100%)',x:180,skewX:22,opacity:0,duration:.26,ease:'power3.in'},b-.26);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(function(){const hf=q('#hudf'),hb=q('#hudb');const sc=[K.s1,K.s2,K.s3,K.s4,K.s5,AT['s5:Radar'],K.s6,K.s7,K.s8];const st=[[1,1],[.35,.35],[1,.35],[1,.35],[1,.35],[.35,1],[1,.35],[1,.35],[1,1]];const blink=(a,b)=>{};return (t)=>{let k=0;for(let i=0;i<sc.length;i++)if(t>=sc[i]-.05)k=i;let f=st[k][0],b=st[k][1];if(t>=AT['s5:Radar']&&t<K.s6){b=(Math.floor(t*4)%2)?1:.55;}hf.style.opacity=f;hb.style.opacity=b;hf.parentNode.style.visibility=t>=K.s8-.1?'hidden':'visible';};})();
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP28_MOTOR_RADAR")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

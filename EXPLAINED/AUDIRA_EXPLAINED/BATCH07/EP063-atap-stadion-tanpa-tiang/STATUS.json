@@ -1,0 +1,161 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "AE-063",
+  "topic": "Bagaimana Atap Stadion Raksasa Bisa Membentang Tanpa Banyak Tiang?",
+  "createdAt": "2026-11-23T14:14:11.713Z",
+  "updatedAt": "2026-11-24T13:08:05.989Z",
+  "currentStage": "script",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:40.054Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:14:11.714Z",
+      "startedAt": "2026-11-23T14:14:11.714Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:18:16.791Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:18:00.484Z",
+      "startedAt": "2026-11-23T14:18:00.484Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:40.055Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:14:00.402Z",
+      "startedAt": "2026-11-23T14:14:00.402Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:17:52.994Z",
+          "text": "Cartesia sonic-3, build_vo.py: VO ends 59.86s, film 63.86s"
+        }
+      ],
+      "doneAt": "2026-11-23T15:17:52.994Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:22:20.178Z",
+          "text": "Film 6 adegan (studio/src/scenes/ep063), cover-topic.png, STORYBOARD.md, sfx-cues.json; draf sheet draft/stills/_sheet.jpg + RISK_CLIP 15-33s (camera 5/5). Menunggu juri lead."
+        }
+      ],
+      "startedAt": "2026-11-24T07:21:53.278Z",
+      "doneAt": "2026-11-24T07:22:20.178Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T10:06:08.015Z",
+          "text": "sync: look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-24T10:05:43.997Z",
+      "startedAt": "2026-11-24T10:05:43.997Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T12:57:14.635Z",
+      "notes": [
+        {
+          "at": "2026-11-24T12:57:46.497Z",
+          "text": "sync: final: FINAL_VIDEO.mp4; acc tercatat di file"
+        }
+      ],
+      "approvalSource": "file",
+      "doneAt": "2026-11-24T12:57:14.635Z",
+      "startedAt": "2026-11-24T12:57:14.635Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T12:21:45.893Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T12:17:54.769Z",
+      "startedAt": "2026-11-24T12:17:54.769Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T13:08:05.989Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-24T13:04:27.844Z",
+      "startedAt": "2026-11-24T13:04:27.844Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "batch07-EP63",
+    "engine": "remotion",
+    "style": "BUILDFORGE",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-24T13:08:05.989Z"
+}

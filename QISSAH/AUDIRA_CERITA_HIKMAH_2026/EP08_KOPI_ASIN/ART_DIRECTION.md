@@ -1,0 +1,7 @@
+# ART DIRECTION — EP08 (FELTCRAFT)
+
+- **Material:** semua permukaan tekstil: flanel bertekstur serat (feltMaterial kit, sheen kain, tanpa kilap tanah liat), cangkang bulu di boneka, benang wol, jahitan feston dan jelujur, kayu, manik. Garam = manik putih, air mata = manik biru bening, uap kopi = ikal benang putih.
+- **Boneka:** kepala besar berwajah (mata manik dengan pantulan, alis benang, pipi flanel, mulut sulaman), bahu lebih lebar dari pinggang, siku menekuk, kulit beda warna dengan baju. Rambut pria = ikal benang wol (perbaikan dari bentuk "helm" di cover). Penuaan 4 tahap: rambut memutih, warna baju melembut, kacamata untuk suami.
+- **Set:** kedai terakota malam (jendela ke laut flanel dengan bulan kancing, lampu untai pompom, papan sulaman "Kedai AUDIRA"); pesta taman senja (tenda teal, bunting, lantai dansa berjahit); pantai siang (lapisan ombak flanel, matahari kancing, rumah nelayan, palem benang); dapur krem-hijau (rak toples "gula" dan "garam", kalender "tahun ke-N", sulaman "Rumah").
+- **Cahaya:** key hangat #FFE4BC, rim hangat dari belakang untuk tepi bulu, point light lampu meja; dapur meredup saat sang istri sendirian. Grade DOCUMENTARY_WARM, PBR Neutral, bloom lembut (Finish). Kenangan: filter sepia, vinyet lebih kuat, label "KENANGAN".
+- **Komposisi 16:9:** two-shot meja dengan tokoh di sepertiga kiri dan kanan, kepala di 2/3 atas frame, pita caption 22% bawah bebas dari wajah; close-up 3/4 dari sisi lawan bicara. Two-shot dibingkai lebih rapat dari cover agar kaki kursi dan lantai berkurang.

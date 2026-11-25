@@ -1,0 +1,158 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#E9C9C4}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.04;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.3) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.55) 42%,rgba(0,0,0,0.55) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#F3E9F7;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+#gl{filter:contrast(1.07) saturate(1.12)}
+#cw{position:absolute;inset:0;z-index:6;pointer-events:none;opacity:0;background:radial-gradient(ellipse at 50% 55%,#FFFFFF 0%,#F7EEF4 45%,#EBDCEA 100%)}
+.p{transform-origin:0% 0%}
+.cd{position:relative;background:#FFF8F0;border-radius:18px;box-shadow:0 16px 36px rgba(60,40,80,.28),0 2px 0 rgba(255,255,255,.9) inset}
+.kk{display:inline-flex;align-items:center;gap:16px;font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-size:25px;line-height:1;letter-spacing:.14em;color:#FFF8F0;background:#2B2540;padding:14px 24px 13px;border-radius:12px;margin-bottom:18px;box-shadow:0 10px 24px rgba(40,30,70,.35)}
+.kk i{font-style:normal;color:#F6C7A1;border-right:2px solid rgba(246,199,161,.5);padding-right:16px}
+.h1{display:inline-block;padding:22px 36px 26px;font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;font-size:74px;line-height:1.02;letter-spacing:-.01em;color:#2B2540;max-width:900px;box-sizing:border-box}
+.h1 em{display:inline-block;margin-top:6px;font-style:normal;font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-size:128px;letter-spacing:-.03em;color:#00209F}
+.h2{display:inline-block;padding:22px 34px 24px;font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;font-size:62px;line-height:1.06;color:#2B2540}
+.h2 em{font-style:normal;color:#009543}
+.row{flex-direction:column;margin-top:14px;padding:16px 30px 18px;max-width:880px;box-sizing:border-box;border-left:14px solid #5E8C4A}
+.row b{display:block;font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;font-size:44px;line-height:1.08;color:#2B2540}
+.row span{display:block;margin-top:6px;font-family:'Space Grotesk',Arial,sans-serif;font-weight:500;font-size:34px;line-height:1.14;color:#5D5675}
+.row.bl{border-left-color:#00209F}.row.gr{border-left-color:#009543}.row.lv{border-left-color:#9C8FB8}.row.or{border-left-color:#E08A3C}
+.mega,.stat{display:flex;align-items:baseline;gap:22px;width:max-content;max-width:900px;box-sizing:border-box;margin-top:14px;padding:4px 32px 12px;border-left:14px solid #00209F}
+.mega b,.stat b{font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-variant-numeric:tabular-nums;font-size:118px;line-height:1.05;letter-spacing:-.03em;color:#00209F}
+.stat b{font-size:96px}
+.stat.gd{border-left-color:#D9A13B}.stat.gd b{color:#B9791C}
+.mega.rd{border-left-color:#C8463A}.mega.rd b{color:#C8463A}
+.mega small,.stat span{font-family:'Space Grotesk',Arial,sans-serif;font-weight:600;font-size:38px;color:#5D5675;max-width:420px;line-height:1.08}
+.date{display:inline-block;margin-top:4px;padding:16px 32px 18px;border-left:14px solid #009543}
+.date b{font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-size:78px;letter-spacing:-.02em;color:#00209F}
+.name{display:inline-block;margin-top:4px;padding:16px 34px 20px;border-left:14px solid #9C8FB8}
+.name small{display:block;font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-size:28px;letter-spacing:.2em;color:#8A7FA6}
+.name b{display:block;font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;font-size:70px;line-height:1.02;color:#2B2540}
+.name span{display:block;margin-top:6px;font-family:'Space Grotesk',Arial,sans-serif;font-weight:500;font-size:34px;color:#5D5675}
+.stamp{display:inline-block;margin-top:18px;font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-size:36px;letter-spacing:.1em;color:#FFF8F0;background:#C8463A;padding:14px 28px 12px;border-radius:12px;transform:rotate(-2deg);box-shadow:0 12px 26px rgba(80,30,30,.35)}
+.q{margin-top:18px;padding:22px 32px 24px;font-family:'Space Grotesk',Arial,sans-serif;font-weight:600;font-size:42px;line-height:1.2;color:#FFF8F0;background:#2B2540;border-left:14px solid #F6C7A1;border-radius:18px;max-width:880px;box-sizing:border-box}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="83.64" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI &middot; TIDAK SESUAI SKALA</div>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;700&display=block">
+<div id="cw"></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="kk"><i>EP 47</i>NEGARA DI ATAS AWAN</div>
+  <div class="cd h1">Titik terendahnya saja<br><em>1.400 m</em></div>
+  <div class="stamp" data-at="s1:permukaan" data-fx="stampc">DI ATAS PERMUKAAN LAUT</div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="kk"><i>No. 02</i>KERAJAAN LESOTHO</div>
+  <div class="cd row " data-at="s2:Afrika" data-fx="card"><b>AFRIKA BAGIAN SELATAN</b><span>ibu kota Maseru</span></div>
+  <div class="cd row bl" data-at="s2:satu" data-fx="card"><b>DIKELILINGI PENUH</b><span>oleh satu negara: Afrika Selatan</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="kk"><i>No. 03</i>NEGARA TERKURUNG</div>
+  <div class="cd stat" data-at="s3:tiga" data-fx="card"><b>3</b><span>negara merdeka dikelilingi penuh satu negara</span></div>
+  <div class="cd row lv" data-at="s3:Vatikan" data-fx="card"><b>VATIKAN &middot; SAN MARINO</b><span>keduanya di dalam Italia</span></div>
+  <div class="cd row gr" data-at="s3:terbesar" data-fx="card"><b>LESOTHO TERBESAR</b><span>satu-satunya di luar Eropa</span></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="kk"><i>No. 04</i>SERBA TINGGI</div>
+  <div class="cd stat" data-at="s4:tiga-0.2" data-fx="card"><b><b class="ct nb" data-from="0" data-to="30355" data-a="s4:tiga-0.2" data-d="2.31" data-pre="" data-suf="">0</b></b><span>km&sup2;</span></div>
+  <div class="cd row gr" data-at="s4:seribu" data-fx="card"><b>SELURUHNYA DI ATAS 1.000 m</b></div>
+  <div class="cd stat gd" data-at="s4:delapan-0.3" data-fx="card"><b><b class="ct nb" data-from="0" data-to="80" data-a="s4:delapan-0.3" data-d="0.75" data-pre="&gt;" data-suf="%">&gt;0%</b></b><span>di atas 1.800 m</span></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="kk"><i>&plusmn; 1822&ndash;1824</i>LAHIR DI GUNUNG</div>
+  <div class="cd name" data-at="s5:Raja" data-fx="card"><small>RAJA</small><b>MOSHOESHOE I</b><span>menyatukan suku Basotho</span></div>
+  <div class="cd row lv" data-at="s5:puncak" data-fx="card"><b>BERTAHAN DI PUNCAK GUNUNG</b><span>dari serangan musuh</span></div>
+</div>
+<div class="p" data-in="s6" data-out="s6:Setahun">
+  <div class="kk"><i>No. 06</i>DIDESAK</div>
+  <div class="cd row or" data-at="s6:Pemukim" data-fx="card"><b>PEMUKIM BELANDA (BOER)</b><span>terus mendesak</span></div>
+  <div class="cd mega" data-at="s6:1868" data-fx="card"><b>1868</b><small>meminta perlindungan Inggris</small></div>
+</div>
+<div class="p" data-in="s6:Setahun" data-out="s7">
+  <div class="kk"><i>No. 06</i>PERJANJIAN ALIWAL NORTH</div>
+  <div class="cd mega rd" data-at="s6:Setahun" data-fx="card"><b>1869</b><small>batas Inggris &ndash; Boer</small></div>
+  <div class="stamp" data-at="s6:memotong" data-fx="stampc">KERAJAAN DIPOTONG SEPARUH</div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Kini">
+  <div class="kk"><i>No. 07</i>KEMERDEKAAN</div>
+  <div class="cd date" data-at="s7:Empat" data-fx="card"><b>4 OKTOBER 1966</b></div>
+  <div class="cd row bl" data-at="s7:merdeka" data-fx="card"><b>KERAJAAN LESOTHO MERDEKA</b></div>
+</div>
+<div class="p" data-in="s7:Kini" data-out="s8">
+  <div class="kk"><i>No. 07</i>KEKAYAAN UTAMA</div>
+  <div class="cd row bl" data-at="s7:air" data-fx="card"><b>AIR PEGUNUNGAN</b><span>Proyek Air Dataran Tinggi Lesotho</span></div>
+  <div class="cd row or" data-at="s7:selimut" data-fx="card"><b>SELIMUT BASOTHO</b><span>dipakai sebagai pakaian adat</span></div>
+</div>
+<div class="p" data-in="s8" data-out="s8:Menurut">
+  <div class="kk"><i>No. 08</i>AUDIRA</div>
+  <div class="cd h2">Kerajaan di atas awan,<br><em>di tengah negara lain</em></div>
+</div>
+<div class="p" data-in="s8:Menurut" data-out="@END">
+  <div class="kk"><i>No. 08</i>PERTANYAAN</div>
+  <div class="cd q">Enak tidak tinggal di negara yang seluruhnya pegunungan? Tulis di komentar.</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 47</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":5.861,"s2":6.021,"s2e":14.429,"s3":14.589,"s3e":27.453,"s4":27.613,"s4e":37.819,"s5":37.979,"s5e":48.307,"s6":48.467,"s6e":60.661,"s7":60.821,"s7e":71.671,"s8":71.831,"s8e":80.641,"end":80.641,"dur":83.64,"outro":80.891},AT={"s1:titik":1.316,"s1:rendahnya":2.239,"s1:seribu":3.291,"s1:meter":4.189,"s1:permukaan":5.149,"s2:Lesotho":6.318,"s2:Afrika":8.098,"s2:Seluruh":9.801,"s2:perbatasannya":10.312,"s2:Afrika#2":12.262,"s2:satu":11.566,"s2:Lesotho#2":12.99,"s2:dikelilingi":13.888,"s3:tiga":16.102,"s3:Vatikan":21.925,"s3:San":22.56,"s3:Italia":23.628,"s3:Lesotho":24.655,"s3:terbesar":25.166,"s3:Eropa":27.003,"s4:Luasnya":28.06,"s4:tiga":28.478,"s4:kilometer":30.584,"s4:seluruh":32.209,"s4:seribu":33.881,"s4:Lebih":34.909,"s4:delapan":35.358,"s4:seribu#2":36.674,"s4:meter#2":37.479,"s5:Kerajaan":37.979,"s5:gunung":39.329,"s5:Sekitar":40.227,"s5:Raja":41.728,"s5:Basotho":44.375,"s5:membawa":45.149,"s5:puncak":46.713,"s5:serangan":47.518,"s6:Pemukim":48.467,"s6:mendesak":49.599,"s6:1868":51.452,"s6:perlindungan":53.542,"s6:Setahun":54.732,"s6:perjanjian":56.079,"s6:Boer":58.416,"s6:memotong":58.803,"s6:separuh":60.212,"s7:Empat":60.836,"s7:1966":61.95,"s7:merdeka":63.777,"s7:Kini":64.545,"s7:air":66.65,"s7:selimut":68.977,"s7:Basotho":69.272,"s8:Kerajaan":72.297,"s8:awan":73.319,"s8:tengah":73.799,"s8:Menurut":75.455,"s8:AUDIRA":78.892,"s4:tiga-0.2":28.278,"s4:delapan-0.3":35.058},DUR=83.64,OUT=80.891;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ card:(e,t)=>{const d=e.dataset.d||(e.matches('.row,.mega,.stat')?'flex':'block');gsap.set(e,{display:'none'});tl.set(e,{display:d},t);tl.fromTo(e,{opacity:0,y:22},{opacity:1,y:0,duration:.5,ease:'power2.out',immediateRender:false},t);},
+ stampc:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:'inline-block'},t);tl.fromTo(e,{scale:1.3,opacity:0},{scale:1,opacity:1,duration:.32,ease:'power3.out',immediateRender:false},t);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{opacity:0,y:18},{opacity:1,y:0,duration:.55,ease:'power2.out'},a-.1),POUT=(tl,p,b)=>tl.to(p,{opacity:0,y:-14,duration:.32,ease:'power2.in'},b-.32);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{const C=[K.s2,K.s3,K.s4,K.s6,K.s7];let o=0;for(const c of C){o=Math.max(o,1-Math.abs(t-(c-0.1))/0.32);}q('#cw').style.opacity=(0.92*Math.max(0,o)).toFixed(3);};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP47_LESOTHO_NEGARA_DI_ATAS_AWAN")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

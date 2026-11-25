@@ -1,0 +1,754 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+  "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+  "createdAt": "2026-11-22T17:49:15.170Z",
+  "updatedAt": "2026-11-23T10:16:03.865Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:52:59.290Z",
+          "text": "GLOBAL + channel memory dibaca; referensi EP33 vaksin (2D gagal juri TUBUH → pelajaran: hindari visual datar), memori VISUALINVESTIGATION (hindari dark desk)."
+        }
+      ],
+      "doneAt": "2026-11-22T17:52:59.290Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:50:41.217Z",
+          "text": "16 fakta di research/SOURCE_REGISTER.md (Wikipedia Sealand + Regina v Bates 1968 + sealandgov.org harga gelar 23-11-2026). Konteks: GLOBAL memory dibaca (tulis \"Audira\" di VO, TP limiter, sign await)."
+        }
+      ],
+      "doneAt": "2026-11-22T17:50:41.217Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-23T08:57:55.852Z",
+      "notes": [
+        {
+          "at": "2026-11-22T17:52:51.885Z",
+          "text": "Pengguna memilih VISUALINVESTIGATION (2026-11-23, jawaban \"VISUALINVESTIGATION (Recommended)\"). Alternatif: HISTORYMAP, COMICFORGE. Engine: Remotion 2D (SVG, tanpa R3F)."
+        },
+        {
+          "at": "2026-11-22T22:22:28.745Z",
+          "text": "2026-11-23 ganti style (G16): pengguna memilih \"CHRONICLE (Recommended)\" (diteruskan sesi induk). VISUALINVESTIGATION ditolak: juri 3,83 / 3,67."
+        },
+        {
+          "at": "2026-11-23T08:57:55.852Z",
+          "text": "2026-11-23: pengguna memilih \\\"HISTORYMAP (Recommended)\\\" (gerbang style r3). Ditolak juri: VISUALINVESTIGATION, CHRONICLE. Alternatif tidak dipilih: CINESTORY, FILM16."
+        }
+      ],
+      "doneAt": "2026-11-23T08:57:55.852Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T18:19:15.233Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T18:17:01.247Z",
+      "startedAt": "2026-11-22T18:17:01.247Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:54:02.752Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.000Z",
+      "startedAt": "2026-11-22T06:09:42.000Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:55:24.156Z",
+          "text": "Cartesia VO 88.28s, 202 kata, speed 1.05 -> project/public/audio/vo.wav + vo-words.json + vo.timing.json"
+        }
+      ],
+      "doneAt": "2026-11-22T17:55:24.156Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:54:02.752Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.000Z",
+      "startedAt": "2026-11-22T16:52:30.000Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T18:19:15.233Z",
+          "text": "sync: look.json PASS"
+        },
+        {
+          "at": "2026-11-23T08:54:55.766Z",
+          "text": "Juri CHRONICLE r2 gagal 3,33 → G16 ganti style; CHRONICLE ditolak"
+        },
+        {
+          "at": "2026-11-23T08:54:55.922Z",
+          "text": "sync: look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-23T08:49:52.457Z",
+      "startedAt": "2026-11-22T18:18:49.603Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T10:15:58.134Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60 91s, -13.7 LUFS TP -1.8, qa_video PASS, signature VALID, metadata ok, final self 4.17 (jury draft 4.0)"
+        }
+      ],
+      "doneAt": "2026-11-23T10:15:58.134Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:19:52.857Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T10:16:00.807Z",
+          "text": "Captions validated (6 platforms), NOTES.md written, lessons HISTORYMAP+GLOBAL, scheduled tasks review-sealand-ep03-24h/-72h/-7d, intermediates removed"
+        }
+      ],
+      "doneAt": "2026-11-23T10:16:00.807Z",
+      "startedAt": "2026-11-22T18:25:37.673Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP03",
+    "engine": "remotion",
+    "channel": "FAKTADUNIA",
+    "handle": "@AudiraFaktaDunia",
+    "style": "HISTORYMAP",
+    "render2d": true,
+    "wordCount": 202,
+    "estimatedDuration": {
+      "wordCount": 202,
+      "minSec": 81,
+      "maxSec": 90
+    },
+    "rejectedStyles": [
+      "VISUALINVESTIGATION",
+      "CHRONICLE"
+    ],
+    "shortTitle": "Sealand"
+  },
+  "handoverLog": [
+    {
+      "at": "2026-11-22T22:23:02.858Z",
+      "doing": "Style baru CHRONICLE di-acc; belum mulai cover/docs/scene. Sesi 4 berhenti (context guard).",
+      "files": [
+        "docs/HANDOFF.md",
+        "style/STYLE_DECISION.md",
+        "project/src/scenes/sealand/Sealand.tsx"
+      ],
+      "next": "Ikuti docs/HANDOFF.md bagian \"Sesi 4 lanjutan\": cover topik CHRONICLE → ulang tahap 4 (G21) → scene → draf + juri → final → delivery.",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T07:18:52.799Z",
+      "doing": "Sesi 5: bangun scene CHRONICLE baru project/src/scenes/sealand/Chronicle.tsx (13 adegan, 91 dtk), komposisi SealandPreview/SealandFinal/SealandCover diarahkan ke Chronicle",
+      "files": [
+        "project/src/scenes/sealand/Chronicle.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "cover topik dari SealandCover → docs G21 → SHOTLIST + sfx → draf + juri",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T07:23:43.462Z",
+      "doing": "Chronicle.tsx selesai ditulis (typecheck bersih), Root.tsx diarahkan ke Chronicle. Belum ada render.",
+      "files": [
+        "project/src/scenes/sealand/Chronicle.tsx",
+        "project/src/Root.tsx",
+        "docs/HANDOFF.md"
+      ],
+      "next": "docs/HANDOFF.md bagian \"Sesi 5\": stills cek → cover topik → docs G21 + SHOTLIST + sfx → draf + juri → final → delivery",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:35:40.473Z",
+      "doing": "CHRONICLE: stills dipoles, cover topik, docs G21, SHOTLIST lint 0 red, sfx; draf terakhir hanya gagal label \"12 MIL\" (sudah diperbaiki, belum dirender ulang)",
+      "command": "cd project && npm run draft -- SealandPreview --frames=2.5s,9s,15s,21s,25.5s,34s,41s,46s,53s,59s,62s,74.5s,80s,85s",
+      "files": [
+        "project/src/scenes/sealand/Chronicle.tsx",
+        "project/SHOTLIST.md",
+        "docs/HANDOFF.md",
+        "style/cover-topic.png"
+      ],
+      "next": "Render ulang draf, THEME_CHECK, record_score self, juri buta, final, delivery — detail di docs/HANDOFF.md \"Sesi 6\"",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:37:49.781Z",
+      "doing": "Juri CHRONICLE r1 gagal 3,33; poles putaran 2 belum dimulai",
+      "files": [
+        "project/src/scenes/sealand/Chronicle.tsx",
+        "docs/HANDOFF.md",
+        "draft/THEME_CHECK.md",
+        "draft/jury_vo.md"
+      ],
+      "next": "Poles 8 poin di docs/HANDOFF.md \"Sesi 6 lanjutan\" → draf ulang → juri r2 → final/delivery",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:46:18.476Z",
+      "doing": "Poles r2 CHRONICLE sudah diterapkan di Chronicle.tsx (lihat HANDOFF Sesi 7); belum dirender",
+      "files": [
+        "project/src/scenes/sealand/Chronicle.tsx",
+        "docs/HANDOFF.md"
+      ],
+      "next": "stills cek → npm run draft frames (F2 10.1s, F9 53.7s) → THEME_CHECK/jury_vo → record_score self → juri buta r2 → final/delivery",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:51:56.751Z",
+      "doing": "Draf r2 CHRONICLE dirender (ceilings 5/5/5/5/4, camera 5), THEME_CHECK + jury_vo diperbarui (F2 10,1 / F9 53,7), self 4,17 tercatat; juri buta r2 sedang berjalan",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/jury_vo.md"
+      ],
+      "next": "record_score jury r2. LOLOS ≥3.8 tanpa aspek <3 → render:final (HANDOFF Sesi 4 langkah 6) + delivery. Gagal → G16 kembali ke gerbang style, laporkan ke pengguna.",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:54:35.556Z",
+      "doing": "Juri CHRONICLE r2 gagal 3,33 (2 putaran habis). G16: ganti style. Menunggu pilihan style pengguna.",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/scenes/sealand/Chronicle.tsx"
+      ],
+      "next": "audira_recommend_fallback_style failedStyles [VISUALINVESTIGATION, CHRONICLE] → tawarkan 2–3 style + cover → acc pengguna → cover topik → ulang tahap 4 (G21) → animasi → draf → juri → final. Detail: docs/HANDOFF.md \"Sesi 7 lanjutan\".",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:59:58.333Z",
+      "doing": "Style baru HISTORYMAP di-acc pengguna (r3). Menulis scene baru project/src/scenes/sealand/Historymap.tsx + hmGeo.ts + hmPieces.tsx berpola gold EP16 (F:/AUDIRA-SKILL-MOTION/kits/historymap/gold/short-baru-11-23-EP16, kode di EP16_TRISTAN_DA_CUNHA/project/src/ep16).",
+      "files": [
+        "project/src/scenes/sealand/Historymap.tsx",
+        "project/src/scenes/sealand/hmPieces.tsx",
+        "project/src/scenes/sealand/hmGeo.ts",
+        "project/src/Root.tsx"
+      ],
+      "next": "Sambungkan di Root.tsx (SealandPreview/Final/Cover) → cover topik (rename lama → cover-topic-chronicle.png) → STYLE_DECISION → docs G21 + SHOTLIST lint → draft → THEME_CHECK/jury_vo → juri buta (maks 2) → final + delivery.",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:05:47.962Z",
+      "doing": "HISTORYMAP di-acc. hmGeo.ts + hmPieces.tsx ditulis (tsc belum). Historymap.tsx (film+cover) BELUM ditulis. Rencana adegan lengkap S1–S17 di docs/HANDOFF.md \"Sesi 8\".",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/scenes/sealand/hmGeo.ts",
+        "project/src/scenes/sealand/hmPieces.tsx"
+      ],
+      "next": "Tulis project/src/scenes/sealand/Historymap.tsx sesuai rencana Sesi 8 → Root.tsx → tsc → stills → cover → STYLE_DECISION → docs G21 + SHOTLIST + sfx → draft → juri → final → delivery.",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:19:07.892Z",
+      "doing": "Historymap.tsx ditulis + Root disambung; tsc --noEmit belum dibaca hasilnya",
+      "command": "cd project && npx tsc --noEmit",
+      "files": [
+        "project/src/scenes/sealand/Historymap.tsx",
+        "project/src/Root.tsx",
+        "docs/HANDOFF.md"
+      ],
+      "next": "Baca docs/HANDOFF.md \"Sesi 9\": tsc bersih → stills cek → cover → STYLE_DECISION → G21 docs → SHOTLIST+sfx → draf+juri → final → delivery",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:30:00.838Z",
+      "doing": "Sesi 10: tsc bersih, stills dicek+poles (S14 flag, S16 sertifikat), cover-topic.png HISTORYMAP, STYLE_DECISION, docs G21, SHOTLIST (cut 4.97/15.77) + sfx selesai; draf HISTORYMAP sedang render",
+      "command": "cd project && npm run draft -- SealandPreview --frames=2.5s,6.2s,10.1s,13.5s,17.3s,21.5s,23.5s,26.6s,28.8s,34s,37.8s,40.6s,45s,47.9s,55.5s,58s,61s,63.5s,66s,72.6s,75.6s,80.9s,84s",
+      "files": [
+        "draft/THEME_CHECK.md",
+        "draft/jury_vo.md",
+        "project/SHOTLIST.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "record_score self + juri buta (jury.md + DRAFT_SHEET + quality-bar/historymap.png + draft/jury_vo.md) → final → delivery",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:32:07.232Z",
+      "doing": "Sesi 10 selesai sampai draf r0 HISTORYMAP: PERLU POLES (composition 3, readability 2, camera 3). Belum juri.",
+      "command": "cd project && npm run draft -- SealandPreview --frames=2.5s,6.2s,10.1s,13.5s,17.3s,21.5s,23.5s,26.6s,28.8s,34s,37.8s,40.6s,45s,47.9s,55.5s,58s,61s,63.5s,66s,72.6s,75.6s,80.9s,84s",
+      "files": [
+        "project/src/scenes/sealand/Historymap.tsx",
+        "project/src/scenes/sealand/hmPieces.tsx",
+        "docs/HANDOFF.md"
+      ],
+      "next": "Baca docs/HANDOFF.md \"Sesi 10\": 5 poin poles (sub 34→38px, H helipad kontras, label 3/12 MIL, ESSEX vs stamp, kamera S10/S13) → draft ulang → self score → juri buta → final → delivery",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:40:35.028Z",
+      "doing": "Draf r1 HISTORYMAP: semua ceiling 5, kamera 5; self score 4.17 LOLOS tercatat. Juri buta putaran 1 sedang berjalan (subagent).",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/jury_vo.md"
+      ],
+      "next": "record_score judge jury. Bila LOLOS: cd project && npm run render:final -- --comp=SealandFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 (background) → LUFS/TP → metadata → qa_video → record_score final → delivery (HANDOFF Sesi 10). Bila gagal: poles 1x, juri r2.",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:41:35.125Z",
+      "doing": "Juri buta r1 LOLOS 4.0 (readability 3) tercatat. Render final berjalan.",
+      "command": "cd project && npm run render:final -- --comp=SealandFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2",
+      "files": [
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "LUFS −14/TP<−1 cek → metadata ffmpeg (HANDOFF Sesi 3) → audira_qa_video hardOnly → record_score final → delivery: validator captions (keywords Sealand, Roy Bates), NOTES.md, append_lesson, 3 scheduled task review-sealand-ep03-24h/-72h/-7d (24 Nov 2026 19.00 WIB), cleanup out/hm1 draft/_stills",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:42:11.767Z",
+      "doing": "Juri r1 LOLOS 4.0. Render final GAGAL G18c (gap VO-SFX 11.4 LU < 12). Sesi 10 berhenti (batas konteks).",
+      "command": "cd project && npm run render:final -- --comp=SealandFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/sfx/cues"
+      ],
+      "next": "Baca docs/HANDOFF.md Sesi 10 (akhir): turunkan TARGET_LUFS SFX → npm run sfx → render final ulang → LUFS/TP → metadata → qa_video → record_score final → delivery + 3 scheduled task + caption di chat",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:59:54.173Z",
+      "doing": "Pindah ke sesi baru (orkestrasi ulang 17 episode, 2026-11-23). Render final belum ada: gagal G18c (gap VO-SFX 11.4 LU < 12).",
+      "command": "cd project && npm run render:final -- --comp=SealandFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/sfx/cues"
+      ],
+      "next": "Baca docs/HANDOFF.md Sesi 10 (akhir): turunkan TARGET_LUFS SFX → npm run sfx → render final ulang → LUFS/TP → metadata → qa_video → record_score final → delivery + 3 scheduled task + caption di chat",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:00:47.060Z",
+      "doing": "Pindah ke sesi baru (orkestrasi ulang 17 episode, 2026-11-23). Render final belum ada: gagal G18c (gap VO-SFX 11.4 LU < 12).",
+      "command": "cd project && npm run render:final -- --comp=SealandFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/sfx/cues"
+      ],
+      "next": "Baca docs/HANDOFF.md Sesi 10 (akhir): turunkan TARGET_LUFS SFX → npm run sfx → render final ulang → LUFS/TP → metadata → qa_video → record_score final → delivery + 3 scheduled task + caption di chat",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:02:20.747Z",
+      "doing": "Render final SealandFinal (SFX stem diturunkan ke -28 LUFS untuk G18c)",
+      "command": "cd project && npm run render:final -- --comp=SealandFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --log=error",
+      "files": [
+        "project/sfx/cues/auto.py",
+        "project/public/audio/sfx.wav",
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "QA LUFS/TP → metadata → qa_video → verify_signature → record_score final → validate captions → NOTES.md → append_lesson → 3 scheduled task → caption di chat",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:02:20.747Z",
+      "doing": "Render final SealandFinal (SFX stem diturunkan ke -28 LUFS untuk G18c)",
+      "command": "cd project && npm run render:final -- --comp=SealandFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --log=error",
+      "files": [
+        "project/sfx/cues/auto.py",
+        "project/public/audio/sfx.wav",
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "QA LUFS/TP → metadata → qa_video → verify_signature → record_score final → validate captions → NOTES.md → append_lesson → 3 scheduled task → caption di chat",
+      "snapshot": {
+        "episode": "EP03_SEALAND_NEGARA_BENTENG_LAUT",
+        "topic": "Sealand — negara di atas benteng laut bekas Perang Dunia II",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP03",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T10:16:03.865Z"
+    }
+  ],
+  "syncedAt": "2026-11-23T08:54:55.922Z",
+  "session": 11,
+  "sessionLog": [
+    {
+      "no": 11,
+      "title": "EP03 Sealand · s11",
+      "at": "2026-11-23T10:00:47.059Z"
+    }
+  ]
+}

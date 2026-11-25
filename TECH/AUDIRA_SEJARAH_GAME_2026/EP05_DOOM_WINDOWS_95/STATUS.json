@@ -1,0 +1,179 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP05_DOOM_WINDOWS_95",
+  "topic": "Sejarah game yang viral dan jarang diketahui",
+  "createdAt": "2026-11-10T06:19:24.149Z",
+  "updatedAt": "2026-11-11T02:02:12.462Z",
+  "currentStage": "complete",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T06:24:05.424Z",
+          "text": "Read CLAUDE.md, rule 07/08/09, motion brain, GLOBAL + channel memory, FG1/FG2 topics and styles"
+        }
+      ],
+      "doneAt": "2026-11-10T06:24:05.424Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T06:23:58.708Z",
+          "text": "research/RESEARCH_REPORT.md + SOURCE_REGISTER.md; format: 9:16 short ~90 s (user choice 2026-11-10)"
+        }
+      ],
+      "doneAt": "2026-11-10T06:23:58.708Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-10T10:05:31.312Z",
+      "notes": [
+        {
+          "at": "2026-11-10T06:24:05.424Z",
+          "text": "STYLE_OPTIONS.jpg shown; waiting for user choice"
+        },
+        {
+          "at": "2026-11-10",
+          "text": "User picked main style Y2KCHROME ('Yes, main styles'); topic cover pending"
+        },
+        {
+          "at": "2026-11-10T10:04:21.433Z",
+          "text": "style/cover-topic.png built; _review/COVERS_TOPIK.jpg shown; waiting for cover approval"
+        },
+        {
+          "at": "2026-11-10T10:05:31.312Z",
+          "text": "User approved covers + scripts: 'Approved, voice them'"
+        }
+      ],
+      "doneAt": "2026-11-10T10:05:31.312Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-10T10:05:31.312Z",
+      "notes": [
+        {
+          "at": "2026-11-10T10:04:21.433Z",
+          "text": "docs/SCRIPT.md + _review/REVIEW_SCRIPTS.md shown; waiting for approval"
+        },
+        {
+          "at": "2026-11-10T10:05:31.312Z",
+          "text": "User approved covers + scripts: 'Approved, voice them'"
+        }
+      ],
+      "doneAt": "2026-11-10T10:05:31.312Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [],
+      "doneAt": "2026-11-10T10:05:31.312Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T10:12:59.312Z",
+          "text": "Cartesia VO locked: speech 76.5 s, film 79.5 s"
+        }
+      ],
+      "doneAt": "2026-11-10T10:12:59.312Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [],
+      "doneAt": "2026-11-10T10:05:31.312Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-10T10:13:32.944Z",
+      "notes": [
+        {
+          "at": "2026-11-10T10:12:59.312Z",
+          "text": "draft/contact-sheet.jpg scored LOLOS; waiting for user approval"
+        },
+        {
+          "at": "2026-11-10T10:13:32.944Z",
+          "text": "User approved drafts: 'Approved, render final'"
+        }
+      ],
+      "doneAt": "2026-11-10T10:13:32.944Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T15:58:01.524Z",
+          "text": "FINAL_VIDEO.mp4 79.5 s 60 fps, -14.0 LUFS, TP -1.9; metadata ok"
+        }
+      ],
+      "doneAt": "2026-11-10T15:58:01.524Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T15:58:01.524Z",
+          "text": "SOCIAL_CAPTIONS.md validator ok; NOTES.md; lessons in motion memory"
+        }
+      ],
+      "doneAt": "2026-11-10T15:58:01.524Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T02:02:12.462Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-10T15:58:01.524Z",
+      "startedAt": "2026-11-10T15:58:01.524Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-game-EP05",
+    "style": "Y2KCHROME",
+    "title": "Doom Pernah Mengalahkan Windows 95",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-11T02:02:12.462Z"
+}

@@ -1,0 +1,40 @@
+G18c audio: VO -16.6 LUFS, ducked SFX -30.9 LUFS, gap 14.3 LU (min 12)
+channel: @AUDIRAQISSAH
+4 old segment(s) discarded (source changed since they were rendered)
+preflight: 8 stills ok in 21.2 s
+5196 frames, 9 parts, 9 to render: 3 at a time, concurrency 2, gl vulkan, x264
+
+rendered 5196 frames in 1123.6 s
+in : -16.7 LUFS, true peak -4.3 dBFS
+out: -13.7 LUFS, true peak -1.8 dBFS (gain 3.10 dB)
+video: h264,1080,1920,60/1,5196
+node:fs:1331
+
+  binding.rename(
+
+          ^
+
+
+
+Error: EPERM: operation not permitted, rename 'F:\AUDIRA-EPISODES\QISSAH\AUDIRA_KISAH_ISLAM_2026\EP43_PEMILIK_DUA_KEBUN\project\out\Ep43Final.tagged.tmp.mp4' -> 'F:\AUDIRA-EPISODES\QISSAH\AUDIRA_KISAH_ISLAM_2026\EP43_PEMILIK_DUA_KEBUN\project\out\Ep43Final.mp4'
+
+    at Object.renameSync (node:fs:1331:11)
+
+    at file:///F:/AUDIRA-EPISODES/QISSAH/AUDIRA_KISAH_ISLAM_2026/EP43_PEMILIK_DUA_KEBUN/project/scripts/render-final.mjs:404:6 {
+
+  errno: -4048,
+
+  code: 'EPERM',
+
+  syscall: 'rename',
+
+  path: 'F:\\AUDIRA-EPISODES\\QISSAH\\AUDIRA_KISAH_ISLAM_2026\\EP43_PEMILIK_DUA_KEBUN\\project\\out\\Ep43Final.tagged.tmp.mp4',
+
+  dest: 'F:\\AUDIRA-EPISODES\\QISSAH\\AUDIRA_KISAH_ISLAM_2026\\EP43_PEMILIK_DUA_KEBUN\\project\\out\\Ep43Final.mp4'
+
+}
+
+
+
+Node.js v26.8.1
+

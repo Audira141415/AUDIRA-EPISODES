@@ -1,0 +1,614 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP13_PEDANG_CURANG_MONTREAL_1976",
+  "topic": "Pedang curang Boris Onishchenko, Montreal 1976",
+  "createdAt": "2026-11-24T11:21:06.954Z",
+  "updatedAt": "2026-11-24T17:34:04.852Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T11:22:36.504Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-24T11:21:47.655Z",
+      "startedAt": "2026-11-24T11:21:47.655Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [],
+      "doneAt": "2026-11-24T11:22:08.019Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T11:22:36.504Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T11:21:47.655Z",
+      "startedAt": "2026-11-24T11:21:47.655Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T11:22:36.504Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-24T11:21:47.655Z",
+      "startedAt": "2026-11-24T11:21:47.655Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T16:56:16.349Z",
+          "text": "Studio seri bersama; script preflight tidak ada di package.json studio, dilewati."
+        }
+      ],
+      "doneAt": "2026-11-24T16:56:16.349Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T11:25:52.473Z",
+          "text": "VO terkunci 80,1 dtk, film 84,1 dtk"
+        }
+      ],
+      "doneAt": "2026-11-24T11:25:52.473Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T16:54:37.836Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-24T16:56:16.521Z",
+          "text": "23 shot, G13 motion 5/5 dari klip 18 dtk (sebelum koreksi cahaya terakhir; kamera tetap)."
+        }
+      ],
+      "doneAt": "2026-11-24T16:56:16.521Z",
+      "startedAt": "2026-11-24T16:52:21.815Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T16:54:37.836Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json PASS"
+        },
+        {
+          "at": "2026-11-24T16:56:16.692Z",
+          "text": "Juri buta ronde 1 LOLOS 4,17 (4/4/4/4/5/4), THEME_CHECK 8/8. Menunggu acc pengguna untuk render final."
+        }
+      ],
+      "doneAt": "2026-11-24T16:56:16.692Z",
+      "startedAt": "2026-11-24T16:53:46.207Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T16:56:51.014Z",
+      "notes": [
+        {
+          "at": "2026-11-24T16:56:51.014Z",
+          "text": "Acc pengguna 2026-11-24: \"Gas, render final\""
+        },
+        {
+          "at": "2026-11-24T17:00:34.460Z",
+          "text": "Pengguna 2026-11-25: \"Ya, render langsung\" (render:final tanpa G14 dan G19; film 2D FILMNOIR, pengganti audira_qa_video pada final)."
+        },
+        {
+          "at": "2026-11-24T17:20:45.023Z",
+          "text": "Render ulang angle 3x1: flicker hilang, qa_video PASS, -13,6 LUFS TP -1,9, Ed25519 VALID, juri buta final 4,00 LOLOS. FINAL_EP13.mp4."
+        },
+        {
+          "at": "2026-11-24T17:34:04.852Z",
+          "text": "Pengguna menyetujui final 2026-11-25: \"Setuju, hapus\". File perantara dihapus (F:/temp/ep13*, studio/out/ep13, final lama yang cacat)."
+        }
+      ],
+      "startedAt": "2026-11-24T16:56:51.014Z",
+      "doneAt": "2026-11-24T17:34:04.852Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T17:01:37.503Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-24T17:06:06.933Z",
+          "text": "Tercentang otomatis dari SOCIAL_CAPTIONS.md; NOTES dan 3 scheduled task belum ada, final ada flicker."
+        },
+        {
+          "at": "2026-11-24T17:07:45.501Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-24T17:20:45.196Z",
+          "text": "NOTES.md, caption valid, SUBTITLES.srt, 3 scheduled task, lesson FILMNOIR tercatat."
+        }
+      ],
+      "doneAt": "2026-11-24T17:20:45.196Z",
+      "startedAt": "2026-11-24T17:01:12.516Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": [
+        {
+          "at": "2026-11-24T17:21:00.255Z",
+          "text": "Menunggu upload (asumsi 5 Des 2026 19.00 WIB). Scheduled task review-pedang-curang-montreal-1976-24h/-72h/-7d. Final lama cacat di F:/temp/ep13q/old; file perantara belum dihapus, tunggu persetujuan pengguna atas final."
+        }
+      ]
+    }
+  ],
+  "data": {
+    "memoryEpisode": "fakta-olahraga-EP13",
+    "style": "FILMNOIR",
+    "engine": "remotion",
+    "shortTitle": "Pedang Curang",
+    "wordCount": 191,
+    "estimatedDuration": {
+      "wordCount": 191,
+      "minSec": 76,
+      "maxSec": 85
+    }
+  },
+  "handoverLog": [
+    {
+      "at": "2026-11-24T11:21:58.472Z",
+      "doing": "Riset, STYLE_DECISION (FILMNOIR 2D), naskah 191 kata selesai; belum ada docs lain, VO, kode",
+      "files": [
+        "docs/SCRIPT.md",
+        "docs/vo-script.txt",
+        "research/SOURCE_REGISTER.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Setelah EP12 sampai draf: ART_DIRECTION, STORYBOARD, ASSET_MANIFEST, cover topik, VO",
+      "snapshot": {
+        "episode": "EP13_PEDANG_CURANG_MONTREAL_1976",
+        "topic": "Pedang curang Boris Onishchenko, Montreal 1976",
+        "style": null,
+        "memoryEpisode": "fakta-olahraga-EP13",
+        "currentStage": "context",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T11:29:16.032Z",
+      "doing": "Riset, STYLE_DECISION (FILMNOIR 2D), naskah 191 kata selesai. Pengguna 2026-11-24: \"jalnakna ep 12 dan 13 sekaligus\" (paralel dengan EP11, sesi sendiri)",
+      "files": [
+        "docs/SCRIPT.md",
+        "docs/vo-script.txt",
+        "research/SOURCE_REGISTER.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "ART_DIRECTION, STORYBOARD, ASSET_MANIFEST, cover topik, VO, kode studio/src/scenes/ep13, draf, juri, gerbang acc",
+      "snapshot": {
+        "episode": "EP13_PEDANG_CURANG_MONTREAL_1976",
+        "topic": "Pedang curang Boris Onishchenko, Montreal 1976",
+        "style": "FILMNOIR",
+        "memoryEpisode": "fakta-olahraga-EP13",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP13_PEDANG_CURANG_MONTREAL_1976/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T11:32:45.614Z",
+      "doing": "Docs (ART_DIRECTION, STORYBOARD, SHOTLIST, ASSET_MANIFEST) dan cover-reference selesai; menulis kode 2D SVG noir di studio/src/scenes/ep13",
+      "files": [
+        "docs/*",
+        "studio/src/scenes/ep13/*"
+      ],
+      "next": "tekstur tex/, Film.tsx, cover-topic, SFX, draf, juri",
+      "snapshot": {
+        "episode": "EP13_PEDANG_CURANG_MONTREAL_1976",
+        "topic": "Pedang curang Boris Onishchenko, Montreal 1976",
+        "style": "FILMNOIR",
+        "memoryEpisode": "fakta-olahraga-EP13",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP13_PEDANG_CURANG_MONTREAL_1976/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T11:35:55.082Z",
+      "doing": "4 docs + cover-reference.png selesai. Tekstur + sprite prop 2D selesai di studio/src/scenes/ep13/tex (make_tex.py, make_props.py). Belum ada kode TSX",
+      "files": [
+        "docs/ART_DIRECTION.md",
+        "docs/STORYBOARD.md",
+        "docs/SHOTLIST.md",
+        "docs/ASSET_MANIFEST.md",
+        "studio/src/scenes/ep13/tex/*"
+      ],
+      "next": "Tulis Film.tsx/timing.ts/Cover.tsx/index.ts + dev entry, cover-topic, Root.tsx, SFX, draf, juri",
+      "snapshot": {
+        "episode": "EP13_PEDANG_CURANG_MONTREAL_1976",
+        "topic": "Pedang curang Boris Onishchenko, Montreal 1976",
+        "style": "FILMNOIR",
+        "memoryEpisode": "fakta-olahraga-EP13",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP13_PEDANG_CURANG_MONTREAL_1976/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T11:37:33.522Z",
+      "doing": "Docs 4 + cover-reference + tekstur/sprite + lib.tsx selesai (lib belum dikompilasi). Rencana lengkap di docs/CODE_PLAN.md",
+      "files": [
+        "docs/CODE_PLAN.md",
+        "docs/SHOTLIST.md",
+        "studio/src/scenes/ep13/lib.tsx",
+        "studio/src/scenes/ep13/tex/*"
+      ],
+      "next": "Baca docs/CODE_PLAN.md + SHOTLIST, tulis Film.tsx/Cover.tsx/index.ts/dev.ts, still per beat, cover-topic, Root.tsx, SFX, draf, juri, gerbang acc",
+      "snapshot": {
+        "episode": "EP13_PEDANG_CURANG_MONTREAL_1976",
+        "topic": "Pedang curang Boris Onishchenko, Montreal 1976",
+        "style": "FILMNOIR",
+        "memoryEpisode": "fakta-olahraga-EP13",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP13_PEDANG_CURANG_MONTREAL_1976/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T16:44:24.453Z",
+      "doing": "s3 selesai: kode lengkap 23 shot di studio/src/scenes/ep13 (kit.tsx, sets1.tsx shot 1-11, sets2.tsx shot 12-20, Film.tsx HUD + audio, Cover.tsx, index.ts, dev.ts, assets.d.ts); tsc ep13 bersih. 10 still pertama sudah dirender ke studio/out/ep13/st dan disusun di studio/out/ep13/a.jpg, tetapi BELUM dilihat. Belum ada penilaian visual apa pun.",
+      "command": "cd studio && TMP=F:/temp TEMP=F:/temp node out/ep13/stills.mjs Ep13Preview 1 <t1,t2,..> ; python out/ep13/sheet.py out/ep13/a.jpg 5 300 <t1,t2,..>",
+      "files": [
+        "studio/src/scenes/ep13/kit.tsx",
+        "studio/src/scenes/ep13/sets1.tsx",
+        "studio/src/scenes/ep13/sets2.tsx",
+        "studio/src/scenes/ep13/Film.tsx",
+        "studio/src/scenes/ep13/Cover.tsx",
+        "studio/src/scenes/ep13/lib.tsx",
+        "studio/out/ep13/stills.mjs",
+        "studio/out/ep13/sheet.py"
+      ],
+      "next": "Lanjut sesi B tahap 7: lihat studio/out/ep13/a.jpg, perbaiki shot, lalu still shot 10-20 (t 39.8,41.9,45.2,46.9,49.4,53.3,55.2,58.6,61.4,63.9,66.9,69.3,72.5,75.9,79.0). Lalu cover-topic, Root.tsx, SFX + G18c, preflight, G13, contact sheet, THEME_CHECK, juri.",
+      "snapshot": {
+        "episode": "EP13_PEDANG_CURANG_MONTREAL_1976",
+        "topic": "Pedang curang Boris Onishchenko, Montreal 1976",
+        "style": "FILMNOIR",
+        "memoryEpisode": "fakta-olahraga-EP13",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP13_PEDANG_CURANG_MONTREAL_1976/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T16:50:42.093Z",
+      "doing": "s4: poles visual semua shot selesai (Fig/Fencer dengan filter cahaya kain + MaskG vektor baru di lib.tsx, judul tidak menutupi kepala, jari S7/S13/S13b dirapikan). 23 shot sudah dilihat per still dan rapi. cover-topic.png sudah dibuat. tsc ep13 bersih.",
+      "next": "Ubah baris cover di STYLE_DECISION.md bila belum; baris EP13 di Root.tsx; SFX + G18c; preflight; G13 dari klip preview; contact sheet + THEME_CHECK + juri; lalu handover batas Sesi B ke C dan minta acc render final.",
+      "snapshot": {
+        "episode": "EP13_PEDANG_CURANG_MONTREAL_1976",
+        "topic": "Pedang curang Boris Onishchenko, Montreal 1976",
+        "style": "FILMNOIR",
+        "memoryEpisode": "fakta-olahraga-EP13",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP13_PEDANG_CURANG_MONTREAL_1976/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T16:54:11.129Z",
+      "doing": "s4 selesai: poles visual 23 shot, cover-topic.png, STYLE_DECISION, baris EP13 di Root.tsx, SHOTLIST disamakan, SFX stem studio/public/audio/ep13/sfx.wav (-20.0 LUFS, TP -4.7), G13 LOLOS dari klip 18 dtk (draft/camera.json: motion 5/5, parked 0%, longest hold 0, median 0.061), draft/look.json diversity sekitar 40, draft/contact-sheet.jpg 8 frame 4x2 (t 1.2,8.8,34.3,41.9,49.4,52.2,55.2,73.0). npm run preflight tidak ada di package.json. Stem out/sfx-timeline.json (file antara bersama) tertimpa oleh EP13.",
+      "command": "npm run render:final -- --comp=Ep13Final --out=../EP13_PEDANG_CURANG_MONTREAL_1976/FINAL_EP13.mp4 --vo=public/audio/ep13/vo.wav --sfx=public/audio/ep13/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Pedang Curang Montreal 1976\" --slug=olahraga-EP13 --ep=EP13",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/camera.json",
+        "draft/look.json",
+        "docs/SHOTLIST.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Lihat draft/contact-sheet.jpg (belum dilihat setelah koreksi Pool), isi draft/THEME_CHECK.md dari gambar, juri buta subagen (qa/jury.md), record_score self lalu jury (stage draft, camera + ceilings), maks 2 putaran; lalu tampilkan contact sheet + skor + durasi 84,1 dtk + G18c dan minta acc render final.",
+      "snapshot": {
+        "episode": "EP13_PEDANG_CURANG_MONTREAL_1976",
+        "topic": "Pedang curang Boris Onishchenko, Montreal 1976",
+        "style": "FILMNOIR",
+        "memoryEpisode": "fakta-olahraga-EP13",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP13_PEDANG_CURANG_MONTREAL_1976/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T16:56:16.878Z",
+      "doing": "s5: draf selesai, juri buta LOLOS 4,17; THEME_CHECK 8/8; film 84,085 dtk; G18c 13,5 LU (VO -16,5, SFX efektif -30,0). Menunggu acc render final dari pengguna. Kelemahan juri: jari F6/F7 seperti kapsul, F7 ramai dan merah pudar.",
+      "command": "npm run render:final -- --comp=Ep13Final --out=../EP13_PEDANG_CURANG_MONTREAL_1976/FINAL_EP13.mp4 --vo=public/audio/ep13/vo.wav --sfx=public/audio/ep13/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Pedang Curang Montreal 1976\" --slug=olahraga-EP13 --ep=EP13",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/camera.json",
+        "draft/look.json"
+      ],
+      "next": "Setelah acc pengguna: update final approved true, audira_render_batch start (comp Ep13Final), QA -14 LUFS/TP < -1, tanda tangan, metadata, delivery, 3 scheduled task.",
+      "snapshot": {
+        "episode": "EP13_PEDANG_CURANG_MONTREAL_1976",
+        "topic": "Pedang curang Boris Onishchenko, Montreal 1976",
+        "style": "FILMNOIR",
+        "memoryEpisode": "fakta-olahraga-EP13",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP13_PEDANG_CURANG_MONTREAL_1976/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T16:57:45.771Z",
+      "doing": "s5: acc render final DITERIMA dari pengguna (\"Gas, render final\", 2026-11-24). Belum ada render. audira_render_batch plan menolak: (a) G18 mix dideteksi dari penanda teks G18b yang tidak ada di studio/scripts/render-final.mjs, padahal graph baris 304-306 sudah sesuai G18 (loudnorm -16, volume=-10dB, ratio 8, threshold 0.015); (b) G14 rig-audit.json tidak ada, film ini 2D FILMNOIR dan CAMERA_2D_KITS hanya berisi PIXELSTORY. G19 qa-scene belum dijalankan. Gate tidak dilewati, menunggu pilihan jalur dari pengguna.",
+      "command": "npm run render:final -- --comp=Ep13Final --out=../EP13_PEDANG_CURANG_MONTREAL_1976/FINAL_EP13.mp4 --vo=public/audio/ep13/vo.wav --sfx=public/audio/ep13/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Pedang Curang Montreal 1976\" --slug=olahraga-EP13 --ep=EP13",
+      "next": "Jawaban pengguna: boleh render:final langsung (seperti EP01-EP10) atau perbaiki gate dulu. Lalu QA -14 LUFS/TP < -1, tanda tangan, metadata, record_score final, delivery, 3 scheduled task.",
+      "snapshot": {
+        "episode": "EP13_PEDANG_CURANG_MONTREAL_1976",
+        "topic": "Pedang curang Boris Onishchenko, Montreal 1976",
+        "style": "FILMNOIR",
+        "memoryEpisode": "fakta-olahraga-EP13",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP13_PEDANG_CURANG_MONTREAL_1976/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:01:41.168Z",
+      "doing": "s5: render:final langsung BERJALAN di background (izin pengguna \"Ya, render langsung\" 2026-11-25, tanpa G14/G19; log F:/temp/ep13-final.log). SOCIAL_CAPTIONS.md selesai dan lolos validator (slot Sabtu 5 Des 2026 19.00 WIB, asumsi); SUBTITLES.srt selesai (37 cue).",
+      "command": "npm run render:final -- --comp=Ep13Final --out=../EP13_PEDANG_CURANG_MONTREAL_1976/FINAL_EP13.mp4 --vo=public/audio/ep13/vo.wav --sfx=public/audio/ep13/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Pedang Curang Montreal 1976\" --slug=olahraga-EP13 --ep=EP13 (cwd studio, TMP/TEMP=F:/temp)",
+      "files": [
+        "FINAL_EP13.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt"
+      ],
+      "next": "1) Pastikan FINAL_EP13.mp4 jadi (exit 0). 2) QA: audira_qa_video hardOnly dengan cuts, ebur128 -14 LUFS (toleransi 0,5) TP < -1, ffprobe metadata, audira_verify_signature, cek frame contact sheet final + outro. 3) record_score final self + jury (juri buta subagen, qa/jury.md). 4) append_lesson FILMNOIR (worked: 8/8 subjek cocok VO; failed: jari kapsul tanpa telapak F6/F7, F7 ramai merah pudar) + set_best. 5) NOTES.md (format EP10, catat G14/G19 dilewati atas izin pengguna, preflight tidak ada). 6) STATUS final+delivery done, MASTER_INDEX baris 13 dan SERIES.json baca ulang dulu. 7) 3 scheduled task review-pedang-curang-montreal-1976-24h/-72h/-7d dari 5 Des 2026 19.00 +07:00; taskId ke NOTES. 8) Tampilkan caption lengkap di chat, arsipkan sesi lama EP13 (s1-s4).",
+      "snapshot": {
+        "episode": "EP13_PEDANG_CURANG_MONTREAL_1976",
+        "topic": "Pedang curang Boris Onishchenko, Montreal 1976",
+        "style": "FILMNOIR",
+        "memoryEpisode": "fakta-olahraga-EP13",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP13_PEDANG_CURANG_MONTREAL_1976/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:05:20.696Z",
+      "doing": "s5 selesai: pengguna acc \"Gas, render final\" lalu \"Ya, render langsung\" (render:final tanpa G14/G19). FINAL_EP13.mp4 jadi (1080x1920@60, 84,118 dtk, -13,6 LUFS, TP -1,9, metadata OK, Ed25519 VALID + C2PA embedded). TAPI ADA CACAT: flicker kompositing antar frame (selang-seling per tab render): (a) 34,03-34,65 dtk, bercak putih setengah lingkaran di kanan bawah (x 700-840, y 1580-1660); (b) 34,98-35,07 dtk, strip tirai kanan (x 900-1080, y 520-1020) muncul/hilang; (c) kemungkinan 31,533 dan 63,55 dtk (lemah). Pemindai F:/temp/ep13q/scan.py (membuat F.npy dari FINAL) lalu scan2.py hanya menilai area tenang, jadi cacat di area bergerak belum terperiksa. out/seg Ep13 sudah tidak ada (segmen dihapus setelah render). qa_video hardOnly FAIL 4 LONCAT (18,95; 47,52; 52,65; 77,73): strip qa menunjukkan empat-empatnya pergantian shot nyata, bukan cacat (SHOTLIST 21 baris, kode 23 shot; daftar cuts harus ditambah 18.95,47.517,52.65,77.733). SOCIAL_CAPTIONS.md lolos validator (slot asumsi Sabtu 5 Des 2026 19.00 WIB). SUBTITLES.srt selesai. STATUS delivery tercentang otomatis dari file, BELUM selesai (NOTES dan scheduled task belum ada). Final BELUM boleh dikirim.",
+      "command": "cd studio; TMP=F:/temp TEMP=F:/temp npm run render:final -- --comp=Ep13Final --out=../EP13_PEDANG_CURANG_MONTREAL_1976/FINAL_EP13.mp4 --vo=public/audio/ep13/vo.wav --sfx=public/audio/ep13/sfx.wav --jobs=6 --concurrency=1 --gl=vulkan --encoder=nvenc --log=error --title=\"Pedang Curang Montreal 1976\" --slug=pedang-curang-montreal-1976 --ep=EP13",
+      "files": [
+        "FINAL_EP13.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt",
+        "F:/temp/ep13q/scan.py",
+        "F:/temp/ep13q/scan2.py"
+      ],
+      "next": "1) Cek apakah cacat deterministik: still Ep13Preview/dev comp di t 34.30 dan 35.0 (stills.mjs). Bila still bersih = glitch tab vulkan. 2) Render ulang final (cacat QA, acc tetap berlaku, film sama) dengan setelan yang menghindari glitch: --concurrency=1 atau --gl=angle, --force bila script melewati final terkini; simpan FINAL lama sampai yang baru lolos. 3) Ulang scan.py+scan2.py, qa_video hardOnly dengan cuts lengkap, ebur128, ffprobe, verify. Slug: pakai pedang-curang-montreal-1976 supaya comment tidak ganda (sekarang AUDIRA-olahraga-EP13-EP13). 4) Contact sheet final draft/contact-sheet-final.jpg, record_score final self + juri buta. 5) append_lesson FILMNOIR + GLOBAL (flicker vulkan concurrency 2 pada film 2D), set_best. 6) NOTES.md (format EP10; G14/G19 dilewati atas izin pengguna, preflight tidak ada). 7) STATUS final+delivery done; MASTER_INDEX dan SERIES.json baca ulang dulu. 8) 3 scheduled task review-pedang-curang-montreal-1976-24h/-72h/-7d dari 5 Des 2026 19.00 +07:00, taskId ke NOTES. 9) Tampilkan caption lengkap di chat; arsipkan sesi EP13 lama setelah final bersih.",
+      "snapshot": {
+        "episode": "EP13_PEDANG_CURANG_MONTREAL_1976",
+        "topic": "Pedang curang Boris Onishchenko, Montreal 1976",
+        "style": "FILMNOIR",
+        "memoryEpisode": "fakta-olahraga-EP13",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP13_PEDANG_CURANG_MONTREAL_1976/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:11:42.473Z",
+      "doing": "s6: render ulang final. Sebab flicker: BUKAN kode. Frame 2042-2078 comp Ep13Full 1080x1920@60 (out/ep13/dev2.ts + glt.mjs) bersih di vulkan c2, vulkan c1, angle c1, swangle c1 (satu proses, 1-2 tab). Cacat hanya muncul saat render final 6 proses x 2 tab. Render ulang ke FINAL_EP13_v2.mp4 dengan angle, jobs 3, concurrency 1.",
+      "command": "cd studio; TMP=F:/temp TEMP=F:/temp npm run render:final -- --comp=Ep13Final --out=../EP13_PEDANG_CURANG_MONTREAL_1976/FINAL_EP13_v2.mp4 --vo=public/audio/ep13/vo.wav --sfx=public/audio/ep13/sfx.wav --jobs=3 --concurrency=1 --gl=angle --encoder=nvenc --log=error --title=\"Pedang Curang Montreal 1976\" --slug=pedang-curang-montreal-1976 --ep=EP13",
+      "files": [
+        "FINAL_EP13_v2.mp4",
+        "studio/out/ep13/dev2.ts",
+        "studio/out/ep13/glt.mjs"
+      ],
+      "next": "Bandingkan v2 dengan FINAL lama blok demi blok (beda = glitch salah satu, juga di area bergerak), lalu QA ulang, ganti FINAL_EP13.mp4, skor, NOTES, scheduled task. Cuts lengkap: 3.6,6.5,10,12.5,18.95,24.7,27.4,30.7,34.9,40.1,42.5,47.517,49.7,52.65,55.9,59,62.2,64.4,67.3,69.7,73.5,77.733,80.3",
+      "snapshot": {
+        "episode": "EP13_PEDANG_CURANG_MONTREAL_1976",
+        "topic": "Pedang curang Boris Onishchenko, Montreal 1976",
+        "style": "FILMNOIR",
+        "memoryEpisode": "fakta-olahraga-EP13",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP13_PEDANG_CURANG_MONTREAL_1976/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:11:42.473Z",
+      "doing": "s6: render ulang final. Sebab flicker: BUKAN kode. Frame 2042-2078 comp Ep13Full 1080x1920@60 (out/ep13/dev2.ts + glt.mjs) bersih di vulkan c2, vulkan c1, angle c1, swangle c1 (satu proses, 1-2 tab). Cacat hanya muncul saat render final 6 proses x 2 tab. Render ulang ke FINAL_EP13_v2.mp4 dengan angle, jobs 3, concurrency 1.",
+      "command": "cd studio; TMP=F:/temp TEMP=F:/temp npm run render:final -- --comp=Ep13Final --out=../EP13_PEDANG_CURANG_MONTREAL_1976/FINAL_EP13_v2.mp4 --vo=public/audio/ep13/vo.wav --sfx=public/audio/ep13/sfx.wav --jobs=3 --concurrency=1 --gl=angle --encoder=nvenc --log=error --title=\"Pedang Curang Montreal 1976\" --slug=pedang-curang-montreal-1976 --ep=EP13",
+      "files": [
+        "FINAL_EP13_v2.mp4",
+        "studio/out/ep13/dev2.ts",
+        "studio/out/ep13/glt.mjs"
+      ],
+      "next": "Bandingkan v2 dengan FINAL lama blok demi blok (beda = glitch salah satu, juga di area bergerak), lalu QA ulang, ganti FINAL_EP13.mp4, skor, NOTES, scheduled task. Cuts lengkap: 3.6,6.5,10,12.5,18.95,24.7,27.4,30.7,34.9,40.1,42.5,47.517,49.7,52.65,55.9,59,62.2,64.4,67.3,69.7,73.5,77.733,80.3",
+      "snapshot": {
+        "episode": "EP13_PEDANG_CURANG_MONTREAL_1976",
+        "topic": "Pedang curang Boris Onishchenko, Montreal 1976",
+        "style": "FILMNOIR",
+        "memoryEpisode": "fakta-olahraga-EP13",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP13_PEDANG_CURANG_MONTREAL_1976/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T17:20:45.365Z"
+    }
+  ],
+  "session": 6,
+  "syncedAt": "2026-11-24T17:07:45.502Z",
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP13 Pedang Curang · s2",
+      "at": "2026-11-24T11:29:16.032Z"
+    },
+    {
+      "no": 3,
+      "title": "EP13 Pedang Curang · s3",
+      "at": "2026-11-24T11:37:33.522Z"
+    },
+    {
+      "no": 4,
+      "title": "EP13 Pedang Curang · s4",
+      "at": "2026-11-24T16:44:24.453Z"
+    },
+    {
+      "no": 5,
+      "title": "EP13 Pedang Curang · s5",
+      "at": "2026-11-24T16:54:11.129Z"
+    },
+    {
+      "no": 6,
+      "title": "EP13 Pedang Curang · s6",
+      "at": "2026-11-24T17:05:20.695Z"
+    }
+  ]
+}

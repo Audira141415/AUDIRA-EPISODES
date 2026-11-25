@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<!-- AUDIRA TECH - HOW IT WORKS NLE TIMELINE TEMPLATE -->
+<fcpxml version="1.9">
+  <resources>
+    <format id="r1" name="FFVideoFormat1080x1920p60" frameDuration="1/60s" width="1080" height="1920"/>
+  </resources>
+  <library>
+    <event name="AUDIRA_TECH_PRODUCTION">
+      <project name="HOW_IT_WORKS_EPISODE">
+        <sequence format="r1" duration="4500/60s">
+          <spine>
+            <!-- Scene Clips will be inserted here dynamically -->
+            <clip name="Scene_01_Intro" offset="0s" duration="360/60s" start="0s">
+              <video offset="0s" ref="r1" duration="360/60s"/>
+            </clip>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>
+

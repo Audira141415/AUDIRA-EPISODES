@@ -1,0 +1,148 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "AE-068",
+  "topic": "Bagaimana Pipa Raksasa Dipasang di Bawah Jalan?",
+  "createdAt": "2026-11-23T14:14:12.148Z",
+  "updatedAt": "2026-11-24T13:08:06.061Z",
+  "currentStage": "script",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:40.105Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:14:12.149Z",
+      "startedAt": "2026-11-23T14:14:12.149Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:25:50.300Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:24:29.277Z",
+      "startedAt": "2026-11-23T14:24:29.277Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:40.105Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:14:00.403Z",
+      "startedAt": "2026-11-23T14:14:00.403Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:17:53.597Z",
+          "text": "Cartesia sonic-3, tempo x1.007: VO ends 61.00s, film 65.00s"
+        }
+      ],
+      "doneAt": "2026-11-23T15:17:53.597Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "in_progress",
+      "notes": [],
+      "startedAt": "2026-11-24T07:21:53.758Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T13:00:28.988Z",
+      "notes": [
+        {
+          "at": "2026-11-24T13:08:06.060Z",
+          "text": "sync: final: FINAL_VIDEO.mp4; acc tercatat di file"
+        }
+      ],
+      "approvalSource": "file",
+      "doneAt": "2026-11-24T13:00:28.988Z",
+      "startedAt": "2026-11-24T13:00:28.988Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T12:21:45.968Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T12:17:54.771Z",
+      "startedAt": "2026-11-24T12:17:54.771Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T13:08:06.060Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-24T13:04:28.833Z",
+      "startedAt": "2026-11-24T13:04:28.833Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "batch07-EP68",
+    "engine": "remotion",
+    "style": "URBANFORGE",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-24T13:08:06.061Z"
+}

@@ -1,0 +1,382 @@
+// EP17 Uang Batu Pulau Yap — PAPERWORLD 2D kit (SVG paper cut-outs). AUDIRA (Agus Dwi R.)
+import React from "react";
+import { continueRender, delayRender, staticFile } from "remotion";
+
+export const W = 1080;
+export const H = 1920;
+
+export const C = {
+  cream: "#f4ead5",
+  sand: "#e9c98f",
+  sandDark: "#d4a964",
+  stone: "#ece6d8",
+  stoneMid: "#d8cfbd",
+  stoneSide: "#b9ae98",
+  stoneDeep: "#8d7f66",
+  sea1: "#6dbccb",
+  sea2: "#4fa3b8",
+  sea3: "#2f7f99",
+  sea4: "#1f5f7a",
+  sea5: "#174a63",
+  leaf: "#4f9a5a",
+  leafDark: "#3b7d48",
+  leafLight: "#7bbf6a",
+  coral: "#e2683c",
+  yellow: "#f2c14e",
+  ink: "#2b2622",
+  wood: "#a8703f",
+  woodDark: "#7a4e2a",
+  skin: "#b9774a",
+  skinDark: "#94593a",
+  red: "#d2412f",
+  paper: "#fffaf0",
+  gold: "#f2c14e",
+  goldDark: "#c9952c",
+};
+
+// ---------- math ----------
+export const clamp01 = (v: number) => Math.min(1, Math.max(0, v));
+export const lerp = (a: number, b: number, p: number) => a + (b - a) * p;
+export const easeOut = (p: number) => 1 - Math.pow(1 - clamp01(p), 3);
+export const easeInOut = (p: number) => {
+  const x = clamp01(p);
+  return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+};
+export const expoOut = (p: number) => (clamp01(p) >= 1 ? 1 : 1 - Math.pow(2, -10 * clamp01(p)));
+export const backOut = (p: number) => {
+  const x = clamp01(p);
+  const c1 = 1.4;
+  const c3 = c1 + 1;
+  return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2);
+};
+/** 0→1 progress of t over [a, a+d] with ease. */
+export const prog = (t: number, a: number, d: number, f: (p: number) => number = easeOut) => f((t - a) / d);
+/** overshoot pop: 0 before `at`, ~1.08 peak, then 1. */
+export const pop = (t: number, at: number, d = 0.45) => (t < at ? 0 : backOut((t - at) / d));
+export const mulberry = (seed: number) => () => {
+  seed |= 0;
+  seed = (seed + 0x6d2b79f5) | 0;
+  let r = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+  r = (r + Math.imul(r ^ (r >>> 7), 61 | r)) ^ r;
+  return ((r ^ (r >>> 14)) >>> 0) / 4294967296;
+};
+
+// ---------- fonts ----------
+let fontsReady: Promise<void> | null = null;
+export const useFonts = () => {
+  if (fontsReady || typeof document === "undefined") return;
+  const h = delayRender("ep17 fonts");
+  const faces = [
+    new FontFace("Anton", `url(${staticFile("fonts/Anton-Regular.ttf")})`),
+    new FontFace("Grotesk", `url(${staticFile("fonts/SpaceGrotesk-Variable.ttf")})`, { weight: "300 700" }),
+  ];
+  fontsReady = Promise.all(faces.map((f) => f.load().then((ff) => (document.fonts as unknown as { add(f: FontFace): void }).add(ff)))).then(
+    () => continueRender(h),
+    () => continueRender(h),
+  );
+};
+export const HEAD = "Anton, Impact, sans-serif";
+export const BODY = "Grotesk, Arial, sans-serif";
+
+// ---------- defs ----------
+export const Defs: React.FC = () => (
+  <defs>
+    <filter id="ps" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="7" stdDeviation="5" floodColor="#4a3422" floodOpacity="0.32" />
+    </filter>
+    <filter id="psS" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.5" floodColor="#4a3422" floodOpacity="0.35" />
+    </filter>
+    <filter id="psL" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="10" floodColor="#3a2818" floodOpacity="0.35" />
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="17" result="n" />
+      <feColorMatrix type="saturate" values="0" />
+    </filter>
+    <radialGradient id="stoneFace" cx="0.38" cy="0.32" r="0.8">
+      <stop offset="0" stopColor="#fbf8f1" />
+      <stop offset="0.55" stopColor={C.stone} />
+      <stop offset="1" stopColor={C.stoneMid} />
+    </radialGradient>
+    <linearGradient id="goldBar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stopColor="#ffe08a" />
+      <stop offset="1" stopColor={C.goldDark} />
+    </linearGradient>
+  </defs>
+);
+
+/** Full-frame paper fibre overlay (static seed, no flicker). */
+export const Grain: React.FC<{ opacity?: number }> = ({ opacity = 0.07 }) => (
+  <rect x={0} y={0} width={W} height={H} filter="url(#grain)" opacity={opacity} style={{ mixBlendMode: "multiply" }} />
+);
+
+export const Sky: React.FC<{ top: string; bottom: string; id: string; h?: number }> = ({ top, bottom, id, h = H }) => (
+  <>
+    <defs>
+      <linearGradient id={id} x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stopColor={top} />
+        <stop offset="1" stopColor={bottom} />
+      </linearGradient>
+    </defs>
+    <rect x={-200} y={-400} width={W + 400} height={h + 800} fill={`url(#${id})`} />
+  </>
+);
+
+/** Sine wave band filled to the bottom. */
+export const wave = (y: number, amp: number, len: number, ph: number, x0 = -200, w = W + 400, bottom = 4000) => {
+  let d = `M${x0} ${bottom} L${x0} ${y.toFixed(1)}`;
+  for (let x = x0; x <= x0 + w; x += 24) d += ` L${x} ${(y + Math.sin((x / len) * Math.PI * 2 + ph) * amp).toFixed(1)}`;
+  return d + ` L${x0 + w} ${bottom} Z`;
+};
+
+export const Wave: React.FC<{ y: number; amp: number; len: number; ph: number; fill: string; crest?: boolean }> = ({ y, amp, len, ph, fill, crest = true }) => (
+  <g filter="url(#ps)">
+    <path d={wave(y, amp, len, ph)} fill={fill} />
+    {crest ? <path d={wave(y, amp, len, ph)} fill="none" stroke="#ffffff" strokeOpacity={0.45} strokeWidth={4} /> : null}
+  </g>
+);
+
+export const Cloud: React.FC<{ x: number; y: number; s?: number; fill?: string }> = ({ x, y, s = 1, fill = "#fff6e6" }) => (
+  <g transform={`translate(${x} ${y}) scale(${s})`} filter="url(#ps)">
+    <path d="M-120 30 Q-120 -10 -80 -12 Q-70 -60 -20 -55 Q10 -90 55 -60 Q100 -70 105 -25 Q140 -20 135 30 Z" fill={fill} />
+  </g>
+);
+
+export const Sun: React.FC<{ x: number; y: number; r: number; color?: string }> = ({ x, y, r, color = "#ffd98a" }) => (
+  <g filter="url(#ps)">
+    <circle cx={x} cy={y} r={r * 1.35} fill={color} opacity={0.35} />
+    <circle cx={x} cy={y} r={r} fill={color} />
+  </g>
+);
+
+/** Rai stone, front view with thickness. r = radius px. */
+export const Rai: React.FC<{ x: number; y: number; r: number; rot?: number; glow?: number; thick?: number }> = ({ x, y, r, rot = 0, glow = 0, thick }) => {
+  const th = thick ?? r * 0.14;
+  const hole = r / 6;
+  return (
+    <g transform={`translate(${x} ${y}) rotate(${rot})`} filter="url(#psL)">
+      {glow > 0 ? <circle r={r * 1.25} fill="#fff3c4" opacity={0.45 * glow} /> : null}
+      <circle cx={th * 0.55} cy={th} r={r} fill={C.stoneSide} />
+      <circle r={r} fill="url(#stoneFace)" />
+      <circle r={r * 0.97} fill="none" stroke="#ffffff" strokeOpacity={0.6} strokeWidth={3} />
+      <circle r={r * 0.72} fill="none" stroke={C.stoneMid} strokeWidth={r * 0.03} opacity={0.8} />
+      <circle r={r * 0.42} fill="none" stroke={C.stoneMid} strokeWidth={r * 0.02} opacity={0.7} />
+      {/* brown streaks (prized) */}
+      <path d={`M${-r * 0.8} ${-r * 0.25} Q${-r * 0.3} ${-r * 0.45} ${r * 0.15} ${-r * 0.2}`} stroke="#c49a6c" strokeWidth={r * 0.025} fill="none" opacity={0.7} />
+      <path d={`M${r * 0.25} ${r * 0.55} Q${r * 0.55} ${r * 0.3} ${r * 0.82} ${r * 0.35}`} stroke="#c49a6c" strokeWidth={r * 0.02} fill="none" opacity={0.6} />
+      <path d={`M${-r * 0.55} ${r * 0.5} l${r * 0.1} ${r * 0.12} l${r * 0.08} ${-r * 0.05}`} stroke={C.stoneDeep} strokeWidth={2} fill="none" opacity={0.5} />
+      {/* hole */}
+      <circle r={hole * 1.18} fill={C.stoneMid} />
+      <circle r={hole} fill="#5d4c36" />
+      <circle cx={hole * 0.25} cy={hole * 0.3} r={hole * 0.75} fill="#3e3122" />
+    </g>
+  );
+};
+
+/** Paper person. h = total height; facing 1 or -1. */
+export const Person: React.FC<{ x: number; y: number; h: number; shirt?: string; skirt?: string; face?: number; arm?: number; arm2?: number; bob?: number }> = ({
+  x,
+  y,
+  h,
+  shirt = C.coral,
+  skirt = "#c9a24a",
+  face = 1,
+  arm = 20,
+  arm2 = -20,
+  bob = 0,
+}) => {
+  const s = h / 200;
+  return (
+    <g transform={`translate(${x} ${y + bob}) scale(${s * face} ${s})`} filter="url(#psS)">
+      {/* legs */}
+      <rect x={-16} y={-70} width={13} height={70} rx={6} fill={C.skinDark} />
+      <rect x={4} y={-70} width={13} height={70} rx={6} fill={C.skinDark} />
+      {/* grass skirt */}
+      <path d="M-30 -95 L30 -95 L36 -48 L-36 -48 Z" fill={skirt} />
+      <path d="M-30 -60 l6 14 M-18 -60 l4 14 M-6 -60 l2 14 M6 -60 l-2 14 M18 -60 l-4 14 M30 -60 l-6 14" stroke="#8a6a2a" strokeWidth={3} />
+      {/* torso */}
+      <path d="M-26 -150 Q0 -160 26 -150 L22 -92 L-22 -92 Z" fill={shirt} />
+      {/* arms */}
+      <g transform={`translate(-22 -142) rotate(${arm})`}>
+        <rect x={-7} y={0} width={13} height={58} rx={6} fill={C.skin} />
+      </g>
+      <g transform={`translate(22 -142) rotate(${arm2})`}>
+        <rect x={-6} y={0} width={13} height={58} rx={6} fill={C.skin} />
+      </g>
+      {/* head */}
+      <circle cx={0} cy={-176} r={24} fill={C.skin} />
+      <path d="M-24 -182 Q-20 -206 2 -204 Q24 -204 25 -180 Q12 -192 -24 -182 Z" fill={C.ink} />
+      <circle cx={9} cy={-176} r={3} fill={C.ink} />
+      <path d="M8 -164 q6 3 11 -1" stroke={C.ink} strokeWidth={2.5} fill="none" />
+    </g>
+  );
+};
+
+export const Palm: React.FC<{ x: number; y: number; s?: number; sway?: number; flip?: boolean }> = ({ x, y, s = 1, sway = 0, flip = false }) => (
+  <g transform={`translate(${x} ${y}) scale(${flip ? -s : s} ${s})`} filter="url(#ps)">
+    <path d="M-10 0 Q-20 -180 30 -360 L46 -356 Q2 -180 12 0 Z" fill={C.wood} />
+    {[0, 1, 2, 3, 4, 5].map((i) => (
+      <path d="M-10 0 Q-20 -180 30 -360" key={`r${i}`} transform={`translate(0 ${-50 - i * 55})`} stroke={C.woodDark} strokeWidth={0} />
+    ))}
+    {[0, 1, 2, 3, 4, 5].map((i) => (
+      <line key={`b${i}`} x1={-14 + i * 4.5} y1={-40 - i * 55} x2={14 + i * 5.5} y2={-46 - i * 55} stroke={C.woodDark} strokeWidth={4} />
+    ))}
+    <g transform={`translate(38 -358) rotate(${sway})`}>
+      {[-150, -110, -60, -20, 20, 60].map((a, i) => (
+        <g key={i} transform={`rotate(${a + Math.sin(sway * 0.2 + i) * 4})`}>
+          <path d="M0 0 Q90 -40 190 10 Q100 -5 0 14 Z" fill={i % 2 ? C.leaf : C.leafDark} />
+          <path d="M0 6 Q90 -20 185 10" stroke={C.leafLight} strokeWidth={3} fill="none" opacity={0.7} />
+        </g>
+      ))}
+      <circle cx={-6} cy={14} r={13} fill="#7a5a2a" />
+      <circle cx={12} cy={18} r={12} fill="#8a6a32" />
+    </g>
+  </g>
+);
+
+/** Island blob: sand rim + green hill. */
+export const Island: React.FC<{ x: number; y: number; w: number; h: number; label?: string; labelSize?: number }> = ({ x, y, w, h, label, labelSize = 34 }) => (
+  <g transform={`translate(${x} ${y})`}>
+    <g filter="url(#ps)">
+      <ellipse cx={0} cy={h * 0.15} rx={w * 0.55} ry={h * 0.42} fill={C.sand} />
+      <path d={`M${-w * 0.45} ${h * 0.1} Q${-w * 0.3} ${-h * 0.75} ${-w * 0.02} ${-h * 0.55} Q${w * 0.2} ${-h * 0.95} ${w * 0.45} ${h * 0.08} Z`} fill={C.leaf} />
+      <path d={`M${-w * 0.25} ${h * 0.02} Q${-w * 0.1} ${-h * 0.45} ${w * 0.1} ${-h * 0.3} Q${w * 0.25} ${-h * 0.5} ${w * 0.35} ${h * 0.05} Z`} fill={C.leafDark} opacity={0.8} />
+    </g>
+    {label ? (
+      <text x={0} y={h * 0.95} textAnchor="middle" fontFamily={HEAD} fontSize={labelSize} fill={C.ink} letterSpacing={2}>
+        {label}
+      </text>
+    ) : null}
+  </g>
+);
+
+/** HUD paper card with yellow tape. Scales in with pop(). */
+export const Card: React.FC<{ x: number; y: number; t: number; at: number; title: string; sub?: string; w?: number; size?: number; rot?: number; accent?: string; out?: number }> = ({
+  x,
+  y,
+  t,
+  at,
+  title,
+  sub,
+  w = 620,
+  size = 96,
+  rot = -2,
+  accent = C.yellow,
+  out,
+}) => {
+  const p = pop(t, at, 0.5);
+  if (p <= 0) return null;
+  const o = out !== undefined ? 1 - clamp01((t - out) / 0.3) : 1;
+  if (o <= 0) return null;
+  const hh = size * 1.25 + (sub ? size * 0.55 : 0) + 40;
+  return (
+    <g transform={`translate(${x} ${y}) rotate(${rot}) scale(${p})`} opacity={o}>
+      <g filter="url(#ps)">
+        <rect x={-w / 2} y={-hh / 2} width={w} height={hh} rx={10} fill={C.paper} />
+      </g>
+      <rect x={-w / 2} y={-hh / 2} width={w} height={hh} rx={10} fill="none" stroke={C.ink} strokeWidth={4} />
+      <rect x={-70} y={-hh / 2 - 22} width={140} height={40} fill={accent} opacity={0.88} transform="rotate(3)" />
+      <text x={0} y={-hh / 2 + 20 + size * 0.95} textAnchor="middle" fontFamily={HEAD} fontSize={size} fill={C.ink} letterSpacing={2}>
+        {title}
+      </text>
+      {sub ? (
+        <text x={0} y={-hh / 2 + 20 + size * 1.0 + size * 0.55} textAnchor="middle" fontFamily={BODY} fontWeight={700} fontSize={size * 0.38} fill={C.coral} letterSpacing={3}>
+          {sub}
+        </text>
+      ) : null}
+    </g>
+  );
+};
+
+/** Red ink stamp slamming in. */
+export const Stamp: React.FC<{ x: number; y: number; t: number; at: number; text: string; size?: number; rot?: number; color?: string }> = ({ x, y, t, at, text, size = 110, rot = -9, color = C.red }) => {
+  if (t < at) return null;
+  const p = clamp01((t - at) / 0.22);
+  const s = lerp(1.7, 1, easeOut(p));
+  const w = text.length * size * 0.52 + 80;
+  return (
+    <g transform={`translate(${x} ${y}) rotate(${rot}) scale(${s})`} opacity={lerp(0, 0.95, Math.min(1, p * 2))}>
+      <rect x={-w / 2} y={-size * 0.78} width={w} height={size * 1.4} rx={18} fill="#fffaf0" opacity={0.75} />
+      <rect x={-w / 2} y={-size * 0.78} width={w} height={size * 1.4} rx={18} fill="none" stroke={color} strokeWidth={12} />
+      <rect x={-w / 2 + 16} y={-size * 0.78 + 16} width={w - 32} height={size * 1.4 - 32} rx={10} fill="none" stroke={color} strokeWidth={4} />
+      <text x={0} y={size * 0.35} textAnchor="middle" fontFamily={HEAD} fontSize={size} fill={color} letterSpacing={4}>
+        {text}
+      </text>
+    </g>
+  );
+};
+
+/** Canoe with outrigger and sail. */
+export const Canoe: React.FC<{ x: number; y: number; s?: number; rock?: number; sail?: boolean }> = ({ x, y, s = 1, rock = 0, sail = true }) => (
+  <g transform={`translate(${x} ${y}) rotate(${rock}) scale(${s})`} filter="url(#ps)">
+    {sail ? (
+      <>
+        <line x1={0} y1={-10} x2={10} y2={-230} stroke={C.woodDark} strokeWidth={8} />
+        <path d="M14 -225 Q110 -120 80 -30 L14 -30 Z" fill="#f3e3bf" />
+        <path d="M14 -225 Q110 -120 80 -30" stroke="#d8c090" strokeWidth={4} fill="none" />
+      </>
+    ) : null}
+    <path d="M-170 -10 Q0 40 170 -10 L150 20 Q0 60 -150 20 Z" fill={C.wood} />
+    <path d="M-160 -8 Q0 34 160 -8" stroke={C.woodDark} strokeWidth={4} fill="none" />
+    <line x1={-60} y1={0} x2={-60} y2={-60} stroke={C.woodDark} strokeWidth={6} />
+    <line x1={60} y1={0} x2={60} y2={-60} stroke={C.woodDark} strokeWidth={6} />
+    <line x1={-90} y1={-60} x2={90} y2={-60} stroke={C.woodDark} strokeWidth={7} />
+  </g>
+);
+
+/** Bamboo raft carrying a stone. */
+export const Raft: React.FC<{ x: number; y: number; s?: number; rock?: number; stone?: boolean; stoneRot?: number }> = ({ x, y, s = 1, rock = 0, stone = true, stoneRot = 0 }) => (
+  <g transform={`translate(${x} ${y}) rotate(${rock}) scale(${s})`}>
+    {stone ? <Rai x={0} y={-118} r={110} thick={18} rot={stoneRot} /> : null}
+    <g filter="url(#ps)">
+      {[0, 1, 2, 3, 4, 5, 6].map((i) => (
+        <rect key={i} x={-190 + i * 54} y={-14} width={52} height={30} rx={14} fill={i % 2 ? "#c9a24a" : "#b89038"} />
+      ))}
+      <line x1={-195} y1={-2} x2={195} y2={-2} stroke={C.woodDark} strokeWidth={5} />
+    </g>
+  </g>
+);
+
+export const Hut: React.FC<{ x: number; y: number; s?: number; tint?: string }> = ({ x, y, s = 1, tint = "#c58a4a" }) => (
+  <g transform={`translate(${x} ${y}) scale(${s})`} filter="url(#ps)">
+    <rect x={-120} y={-30} width={240} height={34} fill="#9a9184" />
+    <rect x={-95} y={-140} width={190} height={115} fill="#d8b27a" />
+    <rect x={-25} y={-100} width={50} height={75} fill="#6b4a2a" />
+    {/* tall saddle roof */}
+    <path d="M-170 -120 Q-150 -300 -120 -330 L0 -250 L120 -330 Q150 -300 170 -120 Z" fill={tint} />
+    <path d="M-150 -150 L150 -150 M-140 -190 L140 -190 M-128 -235 L128 -235" stroke="#9a6a35" strokeWidth={5} opacity={0.7} />
+  </g>
+);
+
+export const Fish: React.FC<{ x: number; y: number; s?: number; color?: string; flip?: boolean }> = ({ x, y, s = 1, color = C.coral, flip }) => (
+  <g transform={`translate(${x} ${y}) scale(${flip ? -s : s} ${s})`} filter="url(#psS)">
+    <path d="M-40 0 Q0 -28 40 0 Q0 28 -40 0 Z" fill={color} />
+    <path d="M38 0 L62 -18 L62 18 Z" fill={color} />
+    <circle cx={-22} cy={-5} r={4.5} fill={C.ink} />
+  </g>
+);
+
+export const Seaweed: React.FC<{ x: number; y: number; h: number; t: number; color?: string }> = ({ x, y, h, t, color = C.leafDark }) => {
+  const sw = Math.sin(t * 1.6 + x * 0.01) * 14;
+  return (
+    <g filter="url(#psS)">
+      <path d={`M${x - 14} ${y} Q${x + sw - 20} ${y - h * 0.5} ${x + sw} ${y - h} Q${x + sw + 10} ${y - h * 0.5} ${x + 14} ${y} Z`} fill={color} />
+    </g>
+  );
+};
+
+/** Text label sitting on a paper tag. */
+export const Tag: React.FC<{ x: number; y: number; text: string; size?: number; fill?: string; color?: string; rot?: number; o?: number }> = ({ x, y, text, size = 40, fill = C.paper, color = C.ink, rot = 0, o = 1 }) => {
+  const w = text.length * size * 0.56 + 44;
+  return (
+    <g transform={`translate(${x} ${y}) rotate(${rot})`} opacity={o}>
+      <g filter="url(#psS)">
+        <rect x={-w / 2} y={-size * 0.85} width={w} height={size * 1.35} rx={8} fill={fill} />
+      </g>
+      <text x={0} y={size * 0.2} textAnchor="middle" fontFamily={BODY} fontWeight={700} fontSize={size} fill={color}>
+        {text}
+      </text>
+    </g>
+  );
+};

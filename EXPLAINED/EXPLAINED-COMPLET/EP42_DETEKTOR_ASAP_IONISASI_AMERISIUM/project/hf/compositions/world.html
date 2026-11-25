@@ -1,0 +1,120 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#B8E8FF}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.04;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.22) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.1) 42%,rgba(0,0,0,0.1) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'Arial Black', Arial, Helvetica, sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#2D1B4E;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.tag{display:table;font-family:'Arial Black', Arial, Helvetica, sans-serif;font-weight:900;font-size:28px;letter-spacing:.1em;color:#FFF4F8;background:#2D1B4E;padding:9px 20px 8px;margin-bottom:14px;border-radius:20px;box-shadow:6px 6px 0 rgba(139,92,246,.5)}
+.card{display:table;background:#FFF4F8;border-radius:20px;padding:14px 28px 20px;margin-bottom:14px;box-shadow:8px 8px 0 #7EEDC6,0 16px 40px rgba(45,27,78,.3)}
+.big{font-family:'Arial Black', Arial, Helvetica, sans-serif;font-weight:900;font-size:96px;line-height:1.0;color:#2D1B4E}
+.big span{color:#FF6B8A}.big .sm{font-size:56px;color:#2D1B4E;line-height:1.1}
+.ln{display:table;font-family:'Arial Black', Arial, Helvetica, sans-serif;font-weight:800;font-size:39px;line-height:1.2;color:#2D1B4E;background:#FFF4F8;padding:10px 22px 12px 20px;margin-bottom:10px;border-left:12px solid #7EEDC6;border-radius:0 16px 16px 0;box-shadow:6px 6px 0 rgba(45,27,78,.2);max-width:880px}
+.ln.c{border-left-color:#FF6B8A}.ln.v{border-left-color:#8b5cf6}.ln.m{border-left-color:#7EEDC6}.ln.y{border-left-color:#FFD166}
+#chip{font-family:'Arial Black', Arial, Helvetica, sans-serif;font-size:26px;font-weight:900;color:#2D1B4E;opacity:.7;letter-spacing:.06em;background:rgba(255,244,248,.7);padding:3px 10px;border-radius:8px}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="90.22" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN CUPLIKAN ASLI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tag">CARA KERJA BENDA &middot; EP 42</div>
+  <div class="card"><div class="big">ASAP?<br><span class="sm">Bukan dicium, tapi diukur arusnya</span></div></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="tag">RUANG IONISASI</div>
+  <div class="ln m" data-at="s2:ruang" data-fx="lit">Ruang kecil berisi udara</div>
+  <div class="ln v" data-at="s2:pelat" data-fx="lit">Dua pelat logam + tegangan baterai</div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tag">AMERISIUM-241</div>
+  <div class="ln c" data-at="s3:amerisium" data-fx="lit">Sumber Am-241 &lt; 1 mikrogram</div>
+  <div class="ln v" data-at="s3:paruhnya" data-fx="lit">Waktu paruh &plusmn;432 tahun</div>
+  <div class="ln y" data-at="s3:aktif" data-fx="lit">Aktif sepanjang umur detektor</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="tag">PARTIKEL ALFA</div>
+  <div class="ln c" data-at="s4:alfa" data-fx="lit">Memancarkan partikel alfa</div>
+  <div class="ln m" data-at="s4:menabrak" data-fx="lit">Menabrak O&#8322; &amp; N&#8322;</div>
+  <div class="ln v" data-at="s4:ion" data-fx="lit">Udara berubah jadi ion bermuatan</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="tag">ARUS TETAP</div>
+  <div class="ln c" data-at="s5:positif" data-fx="lit">Ion &oplus; &rarr; pelat &ominus;</div>
+  <div class="ln m" data-at="s5:mengalir" data-fx="lit">Arus kecil mengalir siang &amp; malam</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="tag">ALARM!</div>
+  <div class="ln c" data-at="s6:asap" data-fx="lit">Asap menyerap partikel alfa</div>
+  <div class="ln v" data-at="s6:turun" data-fx="lit">Arus turun &rarr; alarm berbunyi</div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tag">AMANKAH?</div>
+  <div class="ln m" data-at="s7:alfa" data-fx="lit">Alfa hanya beberapa cm di udara</div>
+  <div class="ln v" data-at="s7:dosis" data-fx="lit">2 detektor &asymp; radiasi alam 12 jam</div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="card" data-at="s8:detektormu" data-fx="lit"><div class="big sm">Biarkan utuh <span>&amp; terpasang</span></div></div>
+  <div class="ln y" data-at="s8:Episode" data-fx="lit">Berikutnya: kabel internet bawah laut</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">CARA KERJA BENDA &middot; EP 42</div></div>
+<div id="sig">AUDIRA &middot; @AudiraExplained</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":7.682,"s2":7.842,"s2e":15.599,"s3":15.759,"s3e":32.875,"s4":33.035,"s4e":41.798,"s5":41.958,"s5e":49.51,"s6":49.67,"s6e":60.018,"s7":60.178,"s7e":75.053,"s8":75.213,"s8e":87.223,"end":87.223,"dur":90.22,"outro":87.473},AT={"s1:Detektor":0.1,"s1:ionisasi":1.371,"s1:arus":4.126,"s1:melemah":7.326,"s2:Kuncinya":7.842,"s2:kecil":9.36,"s2:ionisasi":11.512,"s2:logam":13.71,"s2:baterai":15.088,"s3:amerisium":18.959,"s3:mikrogram":22.702,"s3:logam":24.591,"s3:aktif":31.002,"s3:detektor":32.302,"s4:Amerisium":33.061,"s4:partikel":34.145,"s4:oksigen":36.737,"s4:merebut":38.532,"s4:bermuatan":41.21,"s5:Ion":41.958,"s5:negatif":43.674,"s5:Hasilnya":46.073,"s5:terus":47.993,"s5:malam":49.061,"s6:Saat":49.713,"s6:partikel":51.029,"s6:mengikat":53.103,"s6:Arus":54.537,"s6:alarm":58.903,"s7:Lalu":60.215,"s7:Partikel":62.117,"s7:sentimeter":64.842,"s7:Menurut":68,"s7:radiasi":72.22,"s7:jam":74.697,"s8:Jadi":75.226,"s8:utuh":77.997,"s8:AUDIRA":80.221,"s8:Cara":82.776,"s8:berikutnya":84.742,"s2:ruang":9.112,"s2:pelat":13.416,"s3:paruhnya":27.001,"s4:alfa":34.47,"s4:menabrak":35.963,"s4:ion":41.056,"s5:positif":42.312,"s5:mengalir":47.606,"s6:asap":50.131,"s6:turun":55.079,"s7:alfa":62.597,"s7:dosis":70.146,"s8:detektormu":77.114,"s8:Episode":84.416},DUR=90.22,OUT=87.473;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ lit:(e,t)=>tl.fromTo(e,{opacity:.78,scale:0.96},{opacity:1,scale:1,duration:.25,ease:'back.out(1.3)'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{opacity:0,scale:0.6,y:30},{opacity:1,scale:1,y:0,duration:.5,ease:'back.out(1.6)'},a-.1);},POUT=(tl,p,b)=>{tl.to(p,{opacity:0,scale:0.85,y:-20,duration:.3,ease:'power2.in'},b-.3);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0,scale:0.7});tl.to('#outro',{opacity:1,scale:1,duration:.5,ease:'back.out(1.5)'},OUT-.1);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP42_DETEKTOR_ASAP_IONISASI_AMERISIUM")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

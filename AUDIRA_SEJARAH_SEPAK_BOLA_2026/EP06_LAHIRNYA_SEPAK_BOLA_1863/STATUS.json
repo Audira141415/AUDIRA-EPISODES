@@ -1,0 +1,251 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP06_LAHIRNYA_SEPAK_BOLA_1863",
+  "topic": "Judul Episode",
+  "createdAt": "2026-11-12T10:06:29.473Z",
+  "updatedAt": "2026-11-22T13:07:56.798Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.473Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.473Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T10:06:29.473Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T10:06:29.473Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit (EP04 Standard)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.473Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:55.853Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-12T05:09:28.763Z",
+      "startedAt": "2026-11-12T05:09:28.763Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T23:49:58.470Z",
+          "text": "Shotlist + FilmScene/Film ep06 selesai; motion fix 3->4 (jerk 8.9->3.9). Still per beat sheet 8-frame."
+        }
+      ],
+      "doneAt": "2026-11-13T23:49:58.470Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci + visual audit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-17T06:05:27.404Z",
+          "text": "sync: look.json PASS; menunggu acc pengguna (tahap sesudahnya sudah ada, acc tetap wajib dicatat)"
+        },
+        {
+          "at": "2026-11-22T13:07:56.798Z",
+          "text": "sync: look.json PASS"
+        }
+      ],
+      "startedAt": "2026-11-13T18:25:52.853Z",
+      "doneAt": "2026-11-13T18:25:52.853Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T23:50:48.147Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        }
+      ],
+      "doneAt": "2026-11-13T23:46:16.863Z",
+      "startedAt": "2026-11-13T23:46:16.863Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:55.853Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-12T12:40:30.098Z",
+          "text": "Restored after outside script (_tools_produce_video.js, 17:06) overwrote STATUS with boilerplate; delivery was never done."
+        },
+        {
+          "at": "2026-11-13T23:40:37.584Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-13T23:39:35.876Z",
+      "startedAt": "2026-11-12T10:06:29.473Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-sepak-bola-EP06",
+    "style": "VINTAGEFORGE",
+    "wordCount": 217,
+    "estimatedDuration": {
+      "wordCount": 217,
+      "minSec": 87,
+      "maxSec": 96
+    },
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-22T13:07:56.798Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-12T12:35:23.213Z",
+      "doing": "Batch 2 films (EP06-10) in polish/draft stage. State 19:35: EP06 film code+storyboard, no sheet yet; EP07 sheet ok but audit depth=3, polishing; EP08 sheet+clip done, audit pending; EP09 film+clip, no sheet; EP10 sheet done, self 3.83 (composition 3), polishing.",
+      "files": [
+        "studio/src/scenes/ep06..ep10",
+        "EP06-10/draft/stills/_sheet.jpg"
+      ],
+      "next": "Each EP: audit:visual no aspect <=3 → record_score draft (self) → blind jury per F:/AUDIRA-SKILL-MOTION/qa/jury.md → record_score judge jury → show 5 sheets to user for draft approval. Brief: _style/FILM_BRIEF.md. Root already registers Ep06-10 Preview/Final."
+    },
+    {
+      "at": "2026-11-12T12:36:17.152Z",
+      "doing": "PAUSED: at 17:06-17:08 an outside script (F:/AUDIRA-VIDEO-MOTION/_tools_produce_video.js + PRODUCE_VIDEO.md, \"EP04 Standard\") overwrote EP01-10 NOTES.md, QA_REPORT.md (fake COMPLIANT), SOCIAL_CAPTIONS.md, STATUS.json (style=sports-tactic-board), docs/STORYBOARD.md, docs/script-lines.json, research/SOURCE_REGISTER.md, style/STYLE_DECISION.md with boilerplate; also created BOLA_EP21+ folders. SCRIPT.md, RESEARCH_REPORT.md, audio, FINAL_VIDEO.mp4, studio code intact. Film agents: EP08 done (audit ok, self 4.0); EP06/07/09/10 still running.",
+      "next": "Wait for user decision on the outside script. Then restore: script-lines (python -X utf8 _tools/write_lines.py and ... scripts_batch2), batch-1 captions (_tools/write_captions.py), STYLE_DECISION/SOURCE_REGISTER/STORYBOARD/NOTES/QA from subagent transcripts in ~/.claude/projects/F--AUDIRA-VIDEO-MOTION/2b8ce98c-0755-4c90-a3e1-ed356bcc9d2d/subagents/*.jsonl, STATUS styles via update. Then draft gate: record_score + blind jury for EP06-10."
+    },
+    {
+      "at": "2026-11-12T12:37:59.747Z",
+      "doing": "PAUSED on outside-script overwrite (see previous handover). Film agents: EP08 done (audit pass, self 4.0, STORYBOARD rewritten); EP09 done (audit pass after depth polish, self 4.0, STORYBOARD rewritten); EP06/07/10 still running.",
+      "next": "User decision on restore; then restore docs; draft gate (record_score self + blind jury) for EP06-10."
+    },
+    {
+      "at": "2026-11-12T12:41:09.345Z",
+      "doing": "Restore after outside script (_tools_produce_video.js, 17:06) mostly DONE: STORYBOARD + SOURCE_REGISTER (EP01-10 from transcripts), STYLE_DECISION (regenerated + approvals), NOTES EP01-05, script-lines (write_lines.py both batches), captions EP01-05 (write_captions.py), QA_REPORT EP01-04 via qa-gate GREEN; boilerplate NOTES/QA/CAPTIONS removed from EP06-10; STATUS data fixed EP06-10. Drafts: EP07, EP08, EP09, EP10 done (audit:visual no aspect <=3, self 4.0 each). EP06 film agent still running (no sheet yet; its STORYBOARD is still boilerplate, agent will rewrite).",
+      "files": [
+        "EP06-10/draft/stills/_sheet.jpg",
+        "studio/src/scenes/ep06..ep10",
+        "_style/FILM_BRIEF.md"
+      ],
+      "next": "1) Check EP05 QA_REPORT exists and GREEN (node studio/scripts/qa-gate.mjs EP05_KLUB_RAJA_LIGA/FINAL_VIDEO.mp4). 2) EP01-05 STATUS.json still boilerplate data (style sports-tactic-board, draft gate lost); update refuses closing delivery without draft approval - leave or fix by hand. 3) Finish EP06 (sheet + RISK_CLIP + STORYBOARD + audit). 4) Draft gate EP06-10: record_score draft self (6x4 for EP07-10), blind jury per F:/AUDIRA-SKILL-MOTION/qa/jury.md on each draft/stills/_sheet.jpg vs style/cover-reference, record_score judge jury, then show sheets to user for approval. 5) Ask user about stopping F:/AUDIRA-VIDEO-MOTION/_tools_produce_video.js and the BOLA_EP21+ folders it made."
+    },
+    {
+      "at": "2026-11-12T12:44:37.718Z",
+      "doing": "All 5 batch-2 drafts built: EP06-EP10 each have draft/stills/_sheet.jpg + RISK_CLIP_silent.mp4 + STORYBOARD.md + audio/sfx-cues.json; audit:visual no aspect <=3; self-score 4.0 each (6x4). Restore after outside script done (EP01-05 QA GREEN, captions back). Blank episode template at _template/EP00_JUDUL.",
+      "files": [
+        "EP06-10/draft/stills/_sheet.jpg",
+        "studio/src/scenes/ep06..ep10"
+      ],
+      "next": "New session: 1) record_score draft self (judge self, 6x4) for sejarah-sepak-bola-EP06..EP10. 2) Blind jury subagent per F:/AUDIRA-SKILL-MOTION/qa/jury.md for each sheet vs style/cover-reference; record_score judge jury. EP06 check: 8-yard ruler readable at ~63.9 s, audit:cover. 3) Show 5 sheets to user, ask draft approval. 4) Then mix (_tools/synth_bgm.py THEMES ep06-10 + mix.py), render finals in one audira_render_batch, qa:gate, captions (write_captions.py extended for EP06-10, upload after 17 Nov). 5) Ask user about _tools_produce_video.js and BOLA_EP21+ folders. EP01-05 STATUS.json data still boilerplate."
+    },
+    {
+      "at": "2026-11-12T13:09:04.528Z",
+      "doing": "Folder EP11-44 dikembalikan dari arsip & dinamai ulang (tanpa BOLA_ dan _[PENDING]). Isi EP11-44 masih BOILERPLATE palsu: SOURCE_REGISTER sumber placeholder, STYLE_DECISION style 'sports-tactic-board' tak ada + APPROVED palsu. EP06-10 draf nyata: EP07-10 lolos skor-sendiri (motion 5/5/5/4), EP06 motion 3 (klip risiko 8.9 jerk/10s, 28% fast) belum dipoles. Juri buta EP07-10 BELUM.",
+      "files": [
+        "EP11-44/research/SOURCE_REGISTER.md",
+        "EP11-44/research/RESEARCH_REPORT.md",
+        "EP11-44/docs/SCRIPT.md",
+        "EP11-44/style/STYLE_DECISION.md"
+      ],
+      "next": "Tujuan pengguna: 44 folder berisi riset+naskah+style NYATA siap produksi, TANPA render oleh agen. Sesi baru per batch (+-3 ep). Tiap ep EP11-44: (1) hapus boilerplate palsu, (2) riset bersumber nyata, (3) naskah 6 tahap + estimasi kata lalu acc, (4) gerbang style audira_recommend_style + cover lalu acc, (5) STORYBOARD + SOCIAL_CAPTIONS. EP06: poles kamera lalu render KLIP 18 dtk saja utk verifikasi motion>=4. EP07-10: juri buta lalu acc draf. EP01-05: pulihkan NOTES/QA/SOCIAL/STYLE yang ditimpa boilerplate."
+    },
+    {
+      "at": "2026-11-13T18:16:37.773Z",
+      "doing": "Poles kamera EP06 (table even-descent, schools retime, shake soften) + render klip 18s verifikasi motion",
+      "command": "npx remotion render src/index.ts Ep06Preview draft/RISK_CLIP_silent.mp4 --frames=0-539 (TMP di F:)",
+      "files": [
+        "studio/src/scenes/ep06/FilmScene.tsx"
+      ],
+      "next": "audit:camera klip; motion>=4 -> stills penuh + record_score draft + juri. Jika <4 poles lagi."
+    },
+    {
+      "at": "2026-11-13T18:38:44.441Z",
+      "doing": "Gerbang draf: motion FIXED 3->4 (jerk 8.9->3.9) via kamera (FilmScene.tsx table even-descent 0-3.6s, schools retime 8.2/9.7, shake soften, Film.tsx coverO dissolve seg 1.1-2.75). Composition masih 3: kepala debater kecrop di tepi frame.",
+      "command": "cd studio; node scripts/stills.mjs ../EP06_LAHIRNYA_SEPAK_BOLA_1863/draft/stills 36s,42.3s Ep06Preview (verif crop); lalu sheet 8-beat: 3.4s,10.2s,26.5s,36s,42.3s,59.4s,68.2s,75s",
+      "files": [
+        "studio/src/scenes/ep06/FilmScene.tsx",
+        "studio/src/scenes/ep06/Film.tsx"
+      ],
+      "next": "1 putaran poles composition (rule 6c: ini putaran ke-3, terakhir). Pelaku crop BUKAN SEATS i4/i5 (sudah difade, crop tetap ada) -> cek gent lain di RoomSet FilmScene.tsx: KUBU 36s tepi-KANAN = kemungkinan Morley [1.2,0,-0.35] atau back-row i2 [0.25,-0.8]; RESMI 42.3s BAWAH = seat dekat kamera. Render stills 36s,42.3s saja utk verif (TMP F:), rebuild sheet, record_score. Lalu JURI BUTA (subagent, qa/jury.md + sheet+cover+jury_input.json), record_score judge:jury. Jika juri <target DAN sudah 3x poles -> rule 6c: finalisasi draf terbaik tanpa poss lagi (override berdiri, tak perlu acc ulang utk lewati juri). Lalu acc pengguna -> render final."
+    },
+    {
+      "at": "2026-11-13T18:46:36.262Z",
+      "doing": "Gerbang draf SELESAI di cap 3x. Motion fixed 3->4 (jerk 3.9). Self draf 4.0 LOLOS. Juri buta 3.83 (composition 3: figur tepi beat4/5 + hook legs-only + top-down beat7, semua tak-naik tanpa redesign; tak ada aspek <3). RULE 6c cap 3x -> finalisasi draf terbaik.",
+      "files": [
+        "studio/src/scenes/ep06/FilmScene.tsx",
+        "studio/src/scenes/ep06/Film.tsx"
+      ],
+      "next": "MENUNGGU acc pengguna utk finalisasi (rule 6c: override berdiri melewati syarat juri-LOLOS, TAPI tetap tunjukkan+minta acc draf ke pengguna sbg gerbang). Setelah acc: render final via audira_render_batch (cek status dulu; antre otomatis bila ada batch hidup; comp Ep06Final, project studio, TMP F:, parallel=1, jangan hapus out/seg, beri --title/--slug/--ep). Verif FINAL_CHECK.jpg. Lalu npm run deliver -- ../FINAL_VIDEO.mp4 (RED/YELLOW), cek Ed25519+C2PA+outro+metadata, record_score stage:final. Lalu SOCIAL_CAPTIONS.md 6 platform + jadwal WIB + label AI, audira_validate_social_captions, caption di chat. Edit HANYA file ep06/ di shared studio, jangan commit. Sesi ini konteks ~310k -> lanjut di sesi baru."
+    },
+    {
+      "at": "2026-11-13T23:36:44.143Z",
+      "doing": "Pengguna ACC finalisasi (rule 6c cap 3x, juri 3.83 comp 3). Render final Ep06Final DIANTRE (batch posisi #2 di belakang batch hidup sesi lain 20261113-233505; auto-start ~06:43 WIB). VO=audio/vo.wav offset 0, no music/sfx. STATUS draft approve ditolak tool (butuh juri LOLOS) -> override rule 6c, catat via note bukan flag.",
+      "batchId": "queued-Ep06Final",
+      "files": [
+        "EP06_LAHIRNYA_SEPAK_BOLA_1863/FINAL_VIDEO.mp4",
+        "studio/src/scenes/ep06/"
+      ],
+      "next": "Sesi baru: 1) audira_render_batch status sampai Ep06Final done (jika antre belum auto-mulai saat batch lain kelar, panggil start lagi: job project studio, comp Ep06Final, out ../EP06.../FINAL_VIDEO.mp4, vo ../EP06.../audio/vo.wav offset 0, title 'Lahirnya Sepak Bola 1863' slug lahirnya-sepak-bola-1863 ep EP06; TMP auto-F:, parallel=1, jangan hapus out/seg). 2) Verif FINAL_CHECK.jpg dari MP4 (jebakan black-frame). 3) cd studio; npm run deliver -- ../EP06.../FINAL_VIDEO.mp4 (hanya RED/YELLOW); cek Ed25519+C2PA (.sig.json), AudiraOutro channel SPORTFACTS, metadata title/slug. 4) record_score VINTAGEFORGE stage:final (ceilings all 4, motion dari audit:camera final). 5) SOCIAL_CAPTIONS.md 6 platform (TikTok/IG Reels/YT Shorts/FB Reels/X/Threads) + ## Jadwal Upload (WIB) + ## Label Konten AI; audira_validate_social_captions; tampilkan caption lengkap di chat. 6) append_lesson/set_best; hapus file perantara (draf/raw), sisakan FINAL+sheet+VO+docs. Edit HANYA file ep06/, jangan commit."
+    },
+    {
+      "at": "2026-11-13T23:44:06.806Z",
+      "doing": "Render final Ep06Final (batch dimulai)",
+      "command": "audira_render_batch start Ep06Final",
+      "next": "Verif FINAL_CHECK.jpg, npm run deliver, record_score final, append_lesson, NOTES.md, update STATUS"
+    },
+    {
+      "at": "2026-11-13T23:44:06.806Z",
+      "doing": "Render final Ep06Final (batch dimulai)",
+      "command": "audira_render_batch start Ep06Final",
+      "next": "Verif FINAL_CHECK.jpg, npm run deliver, record_score final, append_lesson, NOTES.md, update STATUS",
+      "finishedAt": "2026-11-13T23:50:30.903Z"
+    }
+  ]
+}

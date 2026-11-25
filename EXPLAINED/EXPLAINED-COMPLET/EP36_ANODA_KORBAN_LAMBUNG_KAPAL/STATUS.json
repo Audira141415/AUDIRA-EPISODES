@@ -1,0 +1,145 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP36_ANODA_KORBAN_LAMBUNG_KAPAL",
+  "topic": "EP36 Anoda Korban di Lambung Kapal",
+  "createdAt": "2026-11-12T10:06:29.773Z",
+  "updatedAt": "2026-11-14T13:44:01.818Z",
+  "currentStage": "style",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.773Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T23:54:13.079Z",
+      "note": "Riset bersumber: research/SOURCE_REGISTER.md + RESEARCH_REPORT.md"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover topik",
+      "gate": true,
+      "status": "pending"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T23:54:13.079Z",
+      "doneAt": "2026-11-12T23:54:13.079Z",
+      "note": "Disetujui pengguna 2026-11-13 (acc menyeluruh di chat: \"langsung saja approve\"). Gaya belum dipilih. 212 kata."
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit (EP04 Standard)",
+      "gate": false,
+      "status": "pending"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci + visual audit",
+      "gate": true,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI",
+      "gate": false,
+      "status": "pending",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:56.542Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "startedAt": "2026-11-12T10:06:29.772Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "ep36_anoda_korban_lambung_kapal",
+    "wordCount": 212,
+    "title": "Logam yang Sengaja Dibiarkan Habis di Lambung Kapal",
+    "estimateSec": "85–94"
+  },
+  "syncedAt": "2026-11-12T10:07:56.542Z",
+  "resetNote": "2026-11-13: riset/naskah/style/QA lama hasil skrip luar (placeholder) diarsipkan ke _review/_ARSIP_GENERATED_2026-11-12/; mulai ulang dari riset. 2026-11-13: riset + naskah baru selesai, naskah di-acc; berikutnya gerbang style.",
+  "handoverLog": [
+    {
+      "at": "2026-11-14T05:54:02.345Z",
+      "doing": "Menuju SIAP RENDER: scaffold project/ selesai, VO Cartesia (vo.py tts+build) berjalan untuk EP36-38",
+      "command": "python _tools/vo.py EP36_ANODA_KORBAN_LAMBUNG_KAPAL tts && build",
+      "next": "gaya (recommend_style) -> world3d.js/build-video.mjs/mix.py -> build+mix -> READY_TO_RENDER.md"
+    },
+    {
+      "at": "2026-11-14T06:04:41.792Z",
+      "doing": "SIAP RENDER, berhenti di depan gerbang render",
+      "command": "cd project && node build-video.mjs && python mix.py",
+      "files": [
+        "docs/READY_TO_RENDER.md",
+        "style/STYLE_DECISION.md",
+        "project/world3d.js",
+        "project/build-video.mjs",
+        "project/mix.py",
+        "audio/VO_MASTER.wav"
+      ],
+      "next": "Hanya atas perintah pengguna: cover topik (still 1080x1920, gaya ABYSSFORGE) -> konfirmasi gaya -> draf contact sheet + record_score + juri buta (maks 3x) -> final sekali via audira_render_batch -> npm run deliver -> caption 6 platform"
+    },
+    {
+      "at": "2026-11-14T13:44:01.818Z",
+      "doing": "render final (hyperframes)",
+      "command": "audira_render_batch start",
+      "batchId": "20261114-134401",
+      "files": [
+        "F:\\AUDIRA-VIDEO-MOTION\\EXPLAINED_CARA_KERJA_BENDA_2026\\EP36_ANODA_KORBAN_LAMBUNG_KAPAL\\FINAL_VIDEO.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261114-134401); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang."
+    }
+  ],
+  "handover": {
+    "at": "2026-11-14T13:44:01.818Z",
+    "doing": "render final (hyperframes)",
+    "command": "audira_render_batch start",
+    "batchId": "20261114-134401",
+    "files": [
+      "F:\\AUDIRA-VIDEO-MOTION\\EXPLAINED_CARA_KERJA_BENDA_2026\\EP36_ANODA_KORBAN_LAMBUNG_KAPAL\\FINAL_VIDEO.mp4"
+    ],
+    "next": "cek audira_render_batch status (batch 20261114-134401); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang."
+  }
+}

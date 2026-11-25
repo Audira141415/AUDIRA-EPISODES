@@ -1,0 +1,163 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#0B0C0E}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.06;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.5) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.45) 42%,rgba(0,0,0,0.45) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:IBM Plex Mono,monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#F1EBDD;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.card{background:rgba(13,14,16,.9);border:2px solid #2E3238;border-left:9px solid #FF4A2E;padding:22px 30px 26px;box-shadow:0 22px 44px rgba(0,0,0,.5)}
+.card.paper{background:#E9DFC8;border-color:#b9ad92;border-left-color:#1D1D1B}
+.meta{font-family:IBM Plex Mono,monospace;font-weight:600;font-size:25px;letter-spacing:.05em;color:#FF4A2E;margin-bottom:12px}
+.meta.k{color:#7a2a1c}
+.h{font-family:Archivo,sans-serif;font-weight:800;font-size:72px;line-height:1.0;color:#F1EBDD;text-transform:uppercase;letter-spacing:-.01em}
+.h.sm{font-size:50px;margin-bottom:6px}.h.sm2{font-size:56px;line-height:1.04}.rdt{color:#FF4A2E}
+.h.big{font-size:104px;line-height:.92;color:#F1EBDD;white-space:nowrap}
+.h.big2{font-size:112px;color:#FF4A2E;margin-top:4px}
+.ink{color:#1D1D1B}
+.row{display:flex;align-items:flex-end;gap:22px;margin:8px 0 4px}
+.mini{font-family:IBM Plex Mono,monospace;font-weight:600;font-size:30px;line-height:1.2;color:#cfc6b4;padding-bottom:12px}
+.mini.ink{color:#1D1D1B;padding-bottom:0;margin-top:8px}
+.chip{display:inline-block;font-family:IBM Plex Mono,monospace;font-weight:700;font-size:30px;color:#fff;background:#FF4A2E;padding:7px 16px;margin:14px 12px 0 0}
+.chip.k{background:#F1EBDD;color:#1D1D1B}.chip.g{background:#10B981;color:#0B0C0E}
+.stamp{display:inline-block;border:7px solid #FF4A2E;color:#FF4A2E;font-family:Archivo,sans-serif;font-weight:900;font-size:80px;line-height:1;padding:10px 22px 12px;background:rgba(255,74,46,.08);margin:6px 0 4px}
+.br{display:flex;align-items:center;gap:18px;margin-top:16px}.bl{font-family:IBM Plex Mono,monospace;font-weight:600;font-size:27px;color:#cfc6b4;width:150px}
+.bt{display:block;height:40px;background:#E9DFC8;transform-origin:0 50%}.bt.r{background:#FF4A2E}.bv{font-family:Archivo,sans-serif;font-weight:800;font-size:46px;color:#F1EBDD}
+.cnt{display:flex;align-items:center;gap:20px;margin-top:14px}.cnt>b{font-family:Archivo,sans-serif;font-weight:900;font-size:70px;color:#F1EBDD;font-variant-numeric:tabular-nums;min-width:330px}.cnt>b.rd{color:#FF4A2E}
+.cnt span{font-family:IBM Plex Mono,monospace;font-weight:600;font-size:27px;line-height:1.2;color:#cfc6b4}.cnt i{font-style:normal;color:#8d8678;font-size:23px}
+#tc{position:absolute;right:56px;top:186px;z-index:11;font-family:IBM Plex Mono,monospace;font-weight:600;font-size:23px;letter-spacing:.04em;color:#FF4A2E;opacity:.9}
+#chip{font-family:IBM Plex Mono,monospace;font-weight:600;color:#F1EBDD;top:186px;font-size:21px}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="96.22" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN CUPLIKAN GAME</div>
+
+<div id="tc">TC 00:00:00:00</div>
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="card">
+    <div class="meta">&#9679; CASE FILE // FAKTA GAME EP 02</div>
+    <div class="h">EXHIBIT:<br>ALAMOGORDO 1983</div>
+    <div><b class="chip" data-at="s1:belasan" data-fx="snap">BELASAN TRUK</b><b class="chip k" data-at="s1:beton" data-fx="stamp">DITUTUP BETON</b></div>
+  </div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="card">
+    <div class="meta">&#9679; KRONOLOGI // GAME E.T. (1982)</div>
+    <div class="h sm" data-at="s2:dijadikan" data-fx="up">Film &rarr; game Atari</div>
+    <div class="row"><div class="h big" data-at="s2:lima" data-fx="snap">5 MINGGU</div><div class="mini" data-at="s2:lima" data-fx="up">waktu<br>pembuatan</div></div>
+    <b class="chip" data-at="s2:liburan" data-fx="snap">TARGET: LIBURAN AKHIR 1982</b>
+  </div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="card">
+    <div class="meta">&#9679; HASIL // PRODUKSI VS PENJUALAN</div>
+    <div class="h sm">Hasilnya terburu-buru</div>
+    <b class="chip" data-at="s3:terburuk" data-fx="stamp">&ldquo;SALAH SATU GAME TERBURUK&rdquo;</b>
+    <div class="br" data-at="s3:lima" data-fx="up"><span class="bl">DIBUAT</span><span class="bt" style="width:440px" data-at="s3:lima" data-fx="grow"></span><span class="bv">5 juta</span></div>
+    <div class="br" data-at="s3:satu#2" data-fx="up"><span class="bl">TERJUAL</span><span class="bt r" style="width:132px" data-at="s3:satu#2" data-fx="grow"></span><span class="bv">1,5 juta</span></div>
+  </div>
+</div>
+<div class="p" data-in="s4" data-out="s4:Mulai">
+  <div class="card paper">
+    <div class="meta k">&#9679; KLIPING // KORAN LOKAL ALAMOGORDO, NEW MEXICO</div>
+    <div class="h ink">SEPTEMBER 1983</div>
+    <div class="h ink big2" data-at="s4:sepuluh" data-fx="snap">10&ndash;20 TRUK</div>
+    <div class="mini ink" data-at="s4:El" data-fx="up">dari gudang El Paso &rarr; TPA kota</div>
+  </div>
+</div>
+<div class="p" data-in="s4:Mulai" data-out="s5">
+  <div class="card">
+    <div class="meta">&#9679; REKONSTRUKSI // PENUTUPAN</div>
+    <div class="stamp" data-at="s4:Mulai" data-fx="stamp">29 SEP 1983: BETON</div>
+    <div class="mini" data-at="s4:jarang" data-fx="up">jarang dilakukan untuk sampah</div>
+  </div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="card">
+    <div class="meta">&#9679; STATUS KASUS // BERTAHUN-TAHUN</div>
+    <div class="stamp" data-at="s5:legenda" data-fx="stamp">LEGENDA URBAN?</div>
+    <b class="chip k" data-at="s5:jutaan" data-fx="snap">RUMOR: JUTAAN COPY E.T.</b>
+  </div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="card">
+    <div class="meta">&#9679; PENGGALIAN // 26.04.2014</div>
+    <div class="h sm">Tim film dokumenter menggali</div>
+    <b class="chip g" data-at="s6:Gamenya" data-fx="stamp">TERBUKTI ADA</b>
+    <div class="cnt" data-at="s6:Sekitar" data-fx="up"><b>&plusmn;<b class="ct" data-from="0" data-to="1300" data-a="s6:Sekitar" data-d="1.6">0</b></b><span>cartridge diangkat</span></div>
+    <div class="cnt" data-at="s6:total" data-fx="up"><b class="rd">&plusmn;<b class="ct" data-from="0" data-to="700000" data-a="s6:total" data-d="1.8">0</b></b><span>dikubur, berbagai game<br><i>menurut pejabat Atari</i></span></div>
+  </div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="card">
+    <div class="meta">&#9679; LELANG // KOTA ALAMOGORDO</div>
+    <div class="h sm">Hasil galian dilelang</div>
+  </div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="card">
+    <div class="meta">&#9679; KESIMPULAN KASUS</div>
+    <div class="h sm2" data-at="s8:Jadi" data-fx="snap">Dibuang sebagai sampah,<br><span class="rdt">kini benda bersejarah</span></div>
+    <b class="chip" data-at="s8:Kamu" data-fx="snap">KAMU MAU PUNYA SATU?</b>
+  </div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA GAME &middot; EP 02</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":8.102,"s2":8.262,"s2e":23.699,"s3":23.859,"s3e":33.033,"s4":33.193,"s4e":51.963,"s5":52.123,"s5e":59.609,"s6":59.769,"s6e":73.352,"s7":73.512,"s7e":84.282,"s8":84.442,"s8e":93.215,"end":93.215,"dur":96.22,"outro":93.465},AT={"s1:Atari":2.623,"s2:Steven":11.57,"s2:Howard":16.276,"s2:lima":17.84,"s2:liburan":21.377,"s3:lima":29.882,"s3:satu#2":32.182,"s4:sepuluh":39.858,"s4:El":42.521,"s4:Mulai":46.656,"s4:dicor":49.102,"s5:legenda":55.615,"s5:Rumornya":56.716,"s5:jutaan":57.767,"s6:Sekitar":65.693,"s6:Menurut":68.252,"s6:total":69.491,"s6:berbagai":71.735,"s7:melelang":75.297,"s7:delapan":76.427,"s7:seratus":79.43,"s7:dolar":80.266,"s7:dolar#2":83.926,"s7:Satu":80.83,"s8:Jadi":84.442,"s1:belasan":3.458,"s1:beton":7.746,"s2:dijadikan":12.53,"s3:terburuk":27.993,"s4:jarang":50.492,"s6:Gamenya":64.296,"s8:Kamu":89.642},DUR=96.22,OUT=93.465;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ snap:(e,t)=>tl.fromTo(e,{opacity:0,scale:1.06,filter:'brightness(3.2)'},{opacity:1,scale:1,filter:'brightness(1)',duration:.32,ease:'power2.out'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{clipPath:'inset(0% 100% 0% 0%)',opacity:1,x:-24},{clipPath:'inset(0% 0% 0% 0%)',x:0,duration:.42,ease:'power3.out'},a-.06),POUT=(tl,p,b)=>tl.to(p,{clipPath:'inset(0% 0% 100% 0%)',y:-20,duration:.18,ease:'power2.in'},b-.18);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{clipPath:'inset(50% 0% 50% 0%)'});tl.to('#outro',{clipPath:'inset(0% 0% 0% 0%)',duration:.5,ease:'power3.inOut'},OUT-.2);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{const e=q('#tc');if(!e)return;const f=Math.floor(t*30)%30,s=Math.floor(t)%60,m=Math.floor(t/60);e.textContent='TC 00:'+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')+':'+String(f).padStart(2,'0');};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP02_KUBURAN_ET")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

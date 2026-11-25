@@ -1,0 +1,659 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP33_CARA_KERJA_VAKSIN",
+  "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+  "createdAt": "2026-11-22T17:08:52.729Z",
+  "updatedAt": "2026-11-23T08:27:32.214Z",
+  "currentStage": "complete",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:09:10.828Z",
+          "text": "Dibaca: GLOBAL memory (tulis \"Audira\" di VO, true peak, sign await), NOTES EP31, STYLE_DECISION EP30-32."
+        }
+      ],
+      "doneAt": "2026-11-22T17:09:10.828Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:19:17.910Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-22T17:10:08.094Z",
+      "startedAt": "2026-11-22T17:10:08.094Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T17:39:38.501Z",
+      "notes": [
+        {
+          "at": "2026-11-22T17:09:07.330Z",
+          "text": "Pengguna memilih TUBUH (2026-11-23, jawaban \"TUBUH\"). Alternatif: BLUEPRINT, SKETSA. Engine: Remotion 2D (mograph kit)."
+        },
+        {
+          "at": "2026-11-22T17:39:38.501Z",
+          "text": "Ganti style: TUBUH gagal juri 2 putaran (3.6/3.5). Pengguna memilih NANOFORGE 2026-11-23 (jawaban \"NANOFORGE\")."
+        }
+      ],
+      "doneAt": "2026-11-22T17:39:38.501Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T17:19:17.910Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T17:10:57.689Z",
+      "startedAt": "2026-11-22T17:10:57.689Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:37:56.746Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:19:17.910Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-22T17:11:25.899Z",
+      "startedAt": "2026-11-22T17:11:25.899Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:19:17.910Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T17:17:48.211Z",
+      "startedAt": "2026-11-22T17:17:48.211Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T17:19:17.910Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        }
+      ],
+      "doneAt": "2026-11-22T17:17:48.211Z",
+      "startedAt": "2026-11-22T17:17:48.211Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T08:25:29.298Z",
+          "text": "FINAL_EP33_CARA_KERJA_VAKSIN.mp4: -14.0 LUFS, TP -1.5, metadata ok (ffprobe). qa-video hardOnly 3 BLACK = false positive (latar gelap NANOFORGE, dicek strip). Juri final 3.83 LOLOS."
+        }
+      ],
+      "doneAt": "2026-11-23T08:25:29.298Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:53:59.192Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T08:27:21.304Z",
+          "text": "NOTES.md terisi, append_lesson NANOFORGE+GLOBAL, caption tampil di chat, upload Selasa 24 Nov 2026 19:00 WIB, 3 scheduled task review-cara-kerja-vaksin-24h/-72h/-7d, perantara dihapus (project/out, draft/_stills, CHECK clip, F:/tmp/remotion)."
+        }
+      ],
+      "doneAt": "2026-11-23T08:27:21.304Z",
+      "startedAt": "2026-11-22T17:50:21.330Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T08:27:32.214Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-23T08:27:18.985Z",
+      "startedAt": "2026-11-23T08:27:18.985Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "cara-kerja-viral-EP33",
+    "style": "NANOFORGE",
+    "engine": "remotion",
+    "engineDetail": "remotion-r3f",
+    "topic": "Cara kerja vaksin",
+    "rejectedStyles": [
+      "TUBUH"
+    ]
+  },
+  "handoverLog": [
+    {
+      "at": "2026-11-22T17:11:01.346Z",
+      "doing": "Generate VO Cartesia dari audio/vo-script.txt",
+      "files": [
+        "audio/vo.wav",
+        "audio/vo-words.json",
+        "docs/SCRIPT.md",
+        "research/SOURCE_REGISTER.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Bangun komposisi VaksinEP33 di F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/vaksin dari kit TUBUH, timing dari audio/vo-words.json",
+      "snapshot": {
+        "episode": "EP33_CARA_KERJA_VAKSIN",
+        "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+        "style": "TUBUH",
+        "memoryEpisode": "cara-kerja-viral-EP33",
+        "currentStage": "research",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": false,
+            "status": "pending"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T17:18:47.605Z",
+      "doing": "Draf juri putaran 1 = PERLU POLES (lighting4 material4 depth3 composition3 readability4, avg 3.6). Skor belum tercatat: record_score menolak tanpa motion (butuh klip 540x960 15-20 dtk + audit kamera atau skor motion juri).",
+      "files": [
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/vaksin/Vaksin.tsx",
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/vaksin/parts.tsx",
+        "F:/AUDIRA-2D-SKILL-MOTION/tools/ep/stills.mjs",
+        "F:/AUDIRA-2D-SKILL-MOTION/tools/ep/sheet.py",
+        "F:/AUDIRA-2D-SKILL-MOTION/tools/ep/sfx_ep33.py",
+        "audio/vo.wav",
+        "audio/sfx.wav",
+        "draft/contact-sheet.jpg",
+        "style/cover-topic.png"
+      ],
+      "next": "Poles: (1) VesselSet tambah lapisan MG/FG (dinding berlapis, sel darah besar FG, parallax); (2) isi ruang kosong 36.9s (vial jadi hero tengah) dan 48.6s (antibodi lebih besar/banyak, hero sel); (3) S7-S9 caption menimpa kerumunan: geser kerumunan naik/caption, hapus label IKUTI/AUDIRA EXPLAINED dobel atau ganti kartu kanal; (4) 10.5s sel merah terpotong; (5) 23.6s kuman sesak di sekitar detektif. Lalu render ulang 8 frame contact sheet (node tools/ep/stills.mjs ... VaksinEP33-Draft out/ep33/key 02.0,10.5,23.6,36.9,48.6,60.6,77.8,82.6 ; python tools/ep/sheet.py out/ep33/key out/ep33/contact-sheet.jpg 4 270), juri putaran 2 (blind subagent, termasuk motion dari klip), record_score draft, lalu final 60fps + mix VO/SFX + metadata + delivery.",
+      "snapshot": {
+        "episode": "EP33_CARA_KERJA_VAKSIN",
+        "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+        "style": "TUBUH",
+        "memoryEpisode": "cara-kerja-viral-EP33",
+        "currentStage": "research",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": false,
+            "status": "pending"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T17:23:20.647Z",
+      "doing": "Draf juri putaran 2 berjalan (subagent). Poles 1–5 sudah diterapkan di parts.tsx/Vaksin.tsx; contact sheet baru draft/contact-sheet.jpg; klip out/ep33/clip-40-58.mp4 motion 4/5 (draft/camera.json).",
+      "files": [
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/vaksin/Vaksin.tsx",
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/vaksin/parts.tsx"
+      ],
+      "next": "record_score draft jury (TUBUH, cara-kerja-viral-EP33, camera=draft/camera.json). Lolos → render final 60fps silent + mix ffmpeg + metadata + qa_video + delivery.",
+      "snapshot": {
+        "episode": "EP33_CARA_KERJA_VAKSIN",
+        "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+        "style": "TUBUH",
+        "memoryEpisode": "cara-kerja-viral-EP33",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T17:24:50.070Z",
+      "doing": "TUBUH gagal juri 2 putaran (r1 3.6, r2 3.5; tercatat record_score draft jury + append_lesson). Kembali ke gerbang style (G16/G21). Kandidat ditawarkan: NANOFORGE (utama, juri 4.0 lolos sebelumnya), ANATOMIX, CERDIK. Sheet cover: F:/AUDIRA-2D-SKILL-MOTION/out/ep33/style-fallback-covers.jpg. Menunggu pilihan pengguna.",
+      "files": [
+        "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/draft/contact-sheet.jpg",
+        "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/draft/camera.json"
+      ],
+      "next": "Setelah pilih: render cover-topic style baru, update style/STYLE_DECISION.md (Style: <ID>, TUBUH ditolak juri), ulang tahap 4 docs (G21) dengan VO yang sudah terkunci (audio/vo.wav 84.2 s, vo-words.json), animasi, draf juri, final, delivery.",
+      "snapshot": {
+        "episode": "EP33_CARA_KERJA_VAKSIN",
+        "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+        "style": "TUBUH",
+        "memoryEpisode": "cara-kerja-viral-EP33",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T17:39:51.026Z",
+      "doing": "NANOFORGE dipilih pengguna (STYLE_DECISION.md diperbarui). Proyek R3F di project/ (salinan starter, node_modules junction ke F:/AUDIRA-SKILL-MOTION/node_modules, tsc bersih untuk vaksin). Film v1 ditulis: project/src/scenes/vaksin/Vaksin3D.tsx (7 adegan, kamera per adegan, HUD, Subtitle, Outro, Signature; render silent), komposisi VaksinPreview/VaksinFinal di src/Root.tsx. Still v1 dirender: project/out/key/_sheet.jpg, audit look.json = PERLU POLES (composition, readability ≤3) — BELUM dilihat/diperbaiki. PERHATIAN: checklist tahap 7/8 tampil ✓ karena file draf TUBUH lama; draf NANOFORGE belum lolos juri.",
+      "command": "cd project && npm run stills -- out/key 2s,10.5s,23.6s,36.9s,48.6s,60.6s,70.5s,77.8s VaksinPreview",
+      "files": [
+        "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/project/src/scenes/vaksin/Vaksin3D.tsx",
+        "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/project/src/Root.tsx",
+        "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/style/STYLE_DECISION.md",
+        "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/project/out/key/_sheet.jpg"
+      ],
+      "next": "1) Lihat project/out/key/_sheet.jpg + look.json, poles komposisi/keterbacaan. 2) Render cover-topic.png (frame hook VaksinFinal) ke style/. 3) Tulis ulang docs tahap 4 untuk NANOFORGE (ART_DIRECTION, STORYBOARD, ASSET_MANIFEST; baris \"Style: NANOFORGE\") + THEME_CHECK. 4) npm run draft -- VaksinPreview (sheet + audit:visual + klip kamera), juri buta (qa/jury.md, ref quality-bar/nanoforge.png), record_score draft jury dengan ceilings+camera; maks 2 putaran. 5) Retime SFX bila perlu (F:/AUDIRA-2D-SKILL-MOTION/tools/ep/sfx_ep33.py → audio/sfx.wav). 6) Final 1080x1920@60 silent, mix ffmpeg (VO loudnorm -16, SFX -10dB sidechain ratio8 att5 rel350 thr0.015, master -14 LUFS TP<-1), metadata, qa_video, record_score final. 7) Delivery tahap 10.",
+      "snapshot": {
+        "episode": "EP33_CARA_KERJA_VAKSIN",
+        "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+        "style": "NANOFORGE",
+        "memoryEpisode": "cara-kerja-viral-EP33",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T17:42:32.732Z",
+      "doing": "Poles v2 selesai (HUD/subtitle double-scale fix, audit look ceilings semua 5). Render cover-topic (VaksinFinal @2s) + npm run draft -- VaksinPreview",
+      "command": "cd project && npm run cover -- VaksinFinal --episode=.. --at=2s --force && npm run draft -- VaksinPreview",
+      "files": [
+        "project/src/scenes/vaksin/Vaksin3D.tsx",
+        "project/src/core/hud/Subtitle.tsx"
+      ],
+      "next": "Tulis docs NANOFORGE (ART_DIRECTION, STORYBOARD, ASSET_MANIFEST, THEME_CHECK), juri buta, record_score draft jury",
+      "snapshot": {
+        "episode": "EP33_CARA_KERJA_VAKSIN",
+        "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+        "style": "NANOFORGE",
+        "memoryEpisode": "cara-kerja-viral-EP33",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T17:45:41.587Z",
+      "doing": "NANOFORGE poles v3 selesai: (1) HUD/Subtitle double-scale preview fix (overlay → Hud s=1; Subtitle dipindah keluar FilmScene, position 1290, gap 0.4em, width max-content, future opacity 0.8, di project/src/core/hud/Subtitle.tsx); (2) vial/suntikan kaca transmission=0 (tidak hitam lagi), vial lebih kecil; (3) mRNA ISI[2] y=-0.5, skala 1.0. Docs NANOFORGE ditulis (ART_DIRECTION, STORYBOARD, ASSET_MANIFEST, SCRIPT Style: NANOFORGE). SUBTITLES.srt dibuat (mRNA/AUDIRA dikoreksi). cover-topic.png dirender dari v2 (vial hitam) → PERLU render ulang --force. scripts/draft.mjs episode diperbaiki (await di fungsi non-async; bug sama ada di F:/AUDIRA-SKILL-MOTION/starter/scripts/draft.mjs = follow-up). Draft v2 sudah: ceilings 5/5/5/5/·/4, camera 5, frame 1.73,13.13,26.23,39.37,52.47,65.6,76.97,86.17.",
+      "command": "cd project && npm run cover -- VaksinFinal --episode=.. --at=2s --force && npm run draft -- VaksinPreview",
+      "files": [
+        "project/src/scenes/vaksin/Vaksin3D.tsx",
+        "project/src/core/hud/Subtitle.tsx",
+        "project/scripts/draft.mjs",
+        "docs/ART_DIRECTION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "SUBTITLES.srt"
+      ],
+      "next": "1) Lihat project/out/fix/_sheet.jpg (cek mRNA 37.5/39.37s). 2) Render ulang cover + draft (perintah di atas). 3) Tulis draft/THEME_CHECK.md untuk 8 frame draft (kolom Frame|Detik|Kata VO|Subjek|Cocok, ambil kata VO dari audio/vo-words.json). 4) Juri buta subagent (F:/AUDIRA-SKILL-MOTION/qa/jury.md prompt; DRAFT_SHEET.jpg + quality-bar/nanoforge.png + ceilings/reasons dari draft/look.json + draft/camera.json + kolom VO THEME_CHECK), record_score draft judge jury (episode cara-kerja-viral-EP33, ceilings+camera). 5) Retime SFX bila perlu (cue timing tak berubah → audio/sfx.wav tetap). 6) render:final VaksinFinal silent, mix ffmpeg (VO loudnorm I=-16, SFX volume=-10dB sidechain ratio8 attack5 release350 threshold0.015, master -14 LUFS TP<-1), metadata, FINAL_EP33_CARA_KERJA_VAKSIN.mp4, qa_video hardOnly, record_score final. 7) Delivery: SOCIAL_CAPTIONS.md (masih template), NOTES.md, append_lesson NANOFORGE, tanya jam upload, 3 scheduled task review-cara-kerja-vaksin-24h/72h/7d, hapus perantara.",
+      "snapshot": {
+        "episode": "EP33_CARA_KERJA_VAKSIN",
+        "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+        "style": "NANOFORGE",
+        "memoryEpisode": "cara-kerja-viral-EP33",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T17:45:48.699Z",
+      "doing": "Poles v3 selesai dan dicek (mRNA 37.5/39.37s bagus, vial/suntikan tidak hitam). Belum: cover ulang + draft ulang + juri.",
+      "command": "cd project && npm run cover -- VaksinFinal --episode=.. --at=2s --force && npm run draft -- VaksinPreview",
+      "files": [
+        "project/src/scenes/vaksin/Vaksin3D.tsx",
+        "project/src/core/hud/Subtitle.tsx",
+        "project/scripts/draft.mjs"
+      ],
+      "next": "Jalankan perintah di atas (background), lalu THEME_CHECK untuk 8 frame draft → juri buta subagent (qa/jury.md) → record_score draft jury → final + mix + metadata + qa_video → delivery tahap 10 (lihat handover sebelumnya untuk detail angka mix).",
+      "snapshot": {
+        "episode": "EP33_CARA_KERJA_VAKSIN",
+        "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+        "style": "NANOFORGE",
+        "memoryEpisode": "cara-kerja-viral-EP33",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T17:48:12.899Z",
+      "doing": "Render ulang cover + draft v3 (sesi ep33-final)",
+      "command": "cd project && npm run cover -- VaksinFinal --episode=.. --at=2s --force && npm run draft -- VaksinPreview",
+      "files": [
+        "style/cover-topic.png",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/look.json",
+        "draft/camera.json"
+      ],
+      "next": "THEME_CHECK → juri buta → record_score → final + mix + metadata → delivery",
+      "snapshot": {
+        "episode": "EP33_CARA_KERJA_VAKSIN",
+        "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+        "style": "NANOFORGE",
+        "memoryEpisode": "cara-kerja-viral-EP33",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T17:56:04.061Z",
+      "doing": "Juri buta putaran 2 atas draf v4 (poles F4 mRNA tengah, F7 penghitung 154 + orang di kisi). Juri r1 = 3.83 PERLU POLES. SOCIAL_CAPTIONS.md sudah lolos validator.",
+      "files": [
+        "project/src/scenes/vaksin/Vaksin3D.tsx",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "SOCIAL_CAPTIONS.md"
+      ],
+      "next": "record_score jury r2 → bila LOLOS: render:final silent (--no-vo --no-sfx) → mix ffmpeg (VO loudnorm -16, SFX -10dB duck 8/5/350/0.015, master -14 LUFS TP<-1) → metadata → qa_video → NOTES + lessons → scheduled tasks",
+      "snapshot": {
+        "episode": "EP33_CARA_KERJA_VAKSIN",
+        "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+        "style": "NANOFORGE",
+        "memoryEpisode": "cara-kerja-viral-EP33",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T17:56:34.858Z",
+      "doing": "Draf NANOFORGE LOLOS juri r2 (4.0). Render final silent VaksinFinal.",
+      "command": "cd project && node scripts/render-final.mjs --comp=VaksinFinal --out=out/final_silent.mp4 --no-vo --no-sfx --no-sign --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc",
+      "files": [
+        "project/out/final_silent.mp4"
+      ],
+      "next": "mix ffmpeg (VO loudnorm -16, SFX -10dB duck 8/5/350/0.015, master -14 LUFS TP<-1) → metadata → FINAL_EP33_CARA_KERJA_VAKSIN.mp4 → qa_video → record_score final → NOTES + lessons → scheduled tasks",
+      "snapshot": {
+        "episode": "EP33_CARA_KERJA_VAKSIN",
+        "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+        "style": "NANOFORGE",
+        "memoryEpisode": "cara-kerja-viral-EP33",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T17:57:09.935Z",
+      "doing": "Draf NANOFORGE LOLOS juri r2 (4.0, tercatat). Render final silent berjalan (percobaan 1 ditolak channel gate karena file starter lain src/scenes/news/PenggantiGibranWapres.tsx, ulang dengan --skip-channel). Premix audio SUDAH: audio/mix/premix.wav (VO loudnorm -16, SFX -10dB duck ratio8/att5/rel350/thr0.015; terukur -16.89 LUFS, TP -4.48). SOCIAL_CAPTIONS.md lolos validator.",
+      "command": "cd project && node scripts/render-final.mjs --comp=VaksinFinal --out=out/final_silent.mp4 --no-vo --no-sfx --no-sign --skip-channel=\"file news starter tak terkait EP33\" --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc",
+      "files": [
+        "project/out/final_silent.mp4",
+        "audio/mix/premix.wav",
+        "SOCIAL_CAPTIONS.md",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "1) master: ffmpeg -i project/out/final_silent.mp4 -i audio/mix/premix.wav, audio loudnorm 2-pass I=-14 TP=-1.5 (measured_I=-16.89 measured_TP=-4.48 measured_LRA=2.40 measured_thresh=-27.46 offset=0.33 linear=true), -c:v copy -c:a aac 320k, -shortest TIDAK (video ±88s > audio 84.2s, pad audio apad), metadata title/artist \"AUDIRA (Agus Dwi R.)\"/copyright \"© 2026 AUDIRA - Agus Dwi R. All rights reserved.\"/comment \"AUDIRA-cara-kerja-vaksin-EP33 | audira.my.id\"/date 2026-11-23, -movflags +faststart+use_metadata_tags → FINAL_EP33_CARA_KERJA_VAKSIN.mp4; ffprobe cek + ebur128 cek. 2) audira_qa_video hardOnly. 3) record_score final jury (subagent atas sheet frame dari MP4). 4) NOTES.md (pelajaran: TUBUH gagal juri lighting datar kamera diam 33%; VO tool butuh param text; deps starter ter-hoist ke root node_modules; output draft ke draft/; bug await sizeOf di hfStills F:/AUDIRA-SKILL-MOTION/starter/scripts/draft.mjs; juri r1 NANOFORGE 3.83: counter 139 vs VO 154 → selesaikan counter sebelum kata angka; channel gate tersandung file starter lain) + append_lesson NANOFORGE. 5) tampilkan caption, tanya jam upload, 3 scheduled task review-cara-kerja-vaksin-24h/72h/7d. 6) hapus perantara (project/out/seg, work/chk, draft/_stills, CHECK mp4).",
+      "snapshot": {
+        "episode": "EP33_CARA_KERJA_VAKSIN",
+        "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+        "style": "NANOFORGE",
+        "memoryEpisode": "cara-kerja-viral-EP33",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T17:59:35.991Z",
+      "doing": "Render final silent berjalan dengan --jobs=3 (jobs=6 gagal 2x: write EOF lalu Chrome OOM karena 20 ToyPerson di adegan Herd). Selesai bila work/final3.log berakhir baris EXIT=0 dan project/out/final_silent.mp4 ada. Draf LOLOS juri r2 4.0 (tercatat). Premix siap audio/mix/premix.wav. SOCIAL_CAPTIONS.md lolos validator.",
+      "command": "cd project && node scripts/render-final.mjs --comp=VaksinFinal --out=out/final_silent.mp4 --no-vo --no-sfx --no-sign --skip-channel=\"file news starter tak terkait EP33\" --jobs=3 --concurrency=2 --gl=vulkan --encoder=nvenc  (log: work/final3.log)",
+      "files": [
+        "project/out/final_silent.mp4",
+        "work/final3.log",
+        "audio/mix/premix.wav"
+      ],
+      "next": "Jangan jalankan render lagi bila final3.log belum ada EXIT=. Bila EXIT≠0 dan OOM: ulang dengan --jobs=2 --concurrency=1. Lalu langkah 1–6 dari handover sebelumnya (master loudnorm 2-pass ke -14 LUFS TP<-1 dari premix.wav, metadata, FINAL_EP33_CARA_KERJA_VAKSIN.mp4, ffprobe, audira_qa_video hardOnly, record_score final jury, NOTES.md + append_lesson NANOFORGE (tambah: jobs=6 OOM dengan banyak ToyPerson → jobs=3), caption di chat, tanya jam upload, 3 scheduled task review-cara-kerja-vaksin-24h/72h/7d, hapus perantara).",
+      "snapshot": {
+        "episode": "EP33_CARA_KERJA_VAKSIN",
+        "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+        "style": "NANOFORGE",
+        "memoryEpisode": "cara-kerja-viral-EP33",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T18:03:21.174Z",
+      "doing": "Render final silent ke-4 berjalan dengan TEMP/TMP=F:/tmp/remotion, --jobs=3 --concurrency=2 (log work/final4.log, selesai bila baris terakhir EXIT=). Penyebab gagal sebelumnya: drive C: penuh (422 MB bebas) → Chrome \"out of memory or disk space\". Draf LOLOS juri r2 4.0 tercatat. Premix audio/mix/premix.wav siap. SOCIAL_CAPTIONS.md lolos validator.",
+      "command": "export TEMP=F:/tmp/remotion TMP=F:/tmp/remotion; cd project && node scripts/render-final.mjs --comp=VaksinFinal --out=out/final_silent.mp4 --no-vo --no-sfx --no-sign --skip-channel=\"file news starter tak terkait EP33\" --jobs=3 --concurrency=2 --gl=vulkan --encoder=nvenc",
+      "files": [
+        "work/final4.log",
+        "project/out/final_silent.mp4",
+        "audio/mix/premix.wav"
+      ],
+      "next": "Tunggu EXIT di work/final4.log (jangan render paralel). Bila gagal lagi: ulang perintah sama dengan TEMP di F: (segmen selesai dipakai ulang), opsi --jobs=2 --concurrency=1. Lalu: master dari premix.wav (loudnorm 2-pass I=-14 TP=-1.5, measured_I=-16.89 TP=-4.48 LRA=2.40 thresh=-27.46 offset=0.33), metadata kepemilikan, FINAL_EP33_CARA_KERJA_VAKSIN.mp4, ffprobe, audira_qa_video hardOnly, record_score final jury, NOTES.md + append_lesson NANOFORGE, caption di chat, tanya jam upload, 3 scheduled task, hapus perantara + F:/tmp/remotion. Beri tahu pengguna C: penuh.",
+      "snapshot": {
+        "episode": "EP33_CARA_KERJA_VAKSIN",
+        "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+        "style": "NANOFORGE",
+        "memoryEpisode": "cara-kerja-viral-EP33",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T18:05:14.433Z",
+      "doing": "Render final silent SELESAI: project/out/final_silent.mp4 (1080x1920, 60fps, 87.5 s, EXIT=0). Draf LOLOS juri r2 4.0 tercatat. Premix siap audio/mix/premix.wav (84.2 s). SOCIAL_CAPTIONS.md lolos validator. NOTES.md masih template.",
+      "command": "-",
+      "files": [
+        "project/out/final_silent.mp4",
+        "audio/mix/premix.wav",
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md"
+      ],
+      "next": "JANGAN render ulang. 1) Master: ffmpeg -i project/out/final_silent.mp4 -i audio/mix/premix.wav, audio \"apad,loudnorm=I=-14:TP=-1.5:LRA=11:measured_I=-16.89:measured_TP=-4.48:measured_LRA=2.40:measured_thresh=-27.46:offset=0.33:linear=true\", -t 87.5, -c:v copy -c:a aac -b:a 320k, -map_metadata -1, metadata title=\"Cara Kerja Vaksin\" artist=\"AUDIRA (Agus Dwi R.)\" copyright=\"© 2026 AUDIRA - Agus Dwi R. All rights reserved.\" comment=\"AUDIRA-cara-kerja-vaksin-EP33 | audira.my.id\" date=\"2026-11-23\", -movflags +faststart+use_metadata_tags → FINAL_EP33_CARA_KERJA_VAKSIN.mp4 (root episode); ffprobe tag + ebur128 (≈-14 LUFS, TP<-1). 2) audira_qa_video hardOnly; juri buta subagent atas 8 frame dari MP4 vs F:/AUDIRA-SKILL-MOTION/references/quality-bar/nanoforge.png → record_score final jury (cara-kerja-viral-EP33). 3) NOTES.md (format ../EP31_CARA_KERJA_INTERNET/NOTES.md) pelajaran: TUBUH gagal juri (lighting datar, kamera diam 33%); VO tool butuh param text; deps starter ter-hoist ke root node_modules; output draf ke draft/; bug await sizeOf hfStills di F:/AUDIRA-SKILL-MOTION/starter/scripts/draft.mjs; juri r1 3.83 karena penghitung 139 vs VO 154 → penghitung selesai sebelum kata angka; F7 kisi sel diganti ToyPerson (readability 3→4); channel gate tersandung src/scenes/news/PenggantiGibranWapres.tsx → --skip-channel; C: penuh → Chrome OOM, set TEMP=F:/tmp/remotion, jobs=3. Lalu append_lesson NANOFORGE. 4) caption lengkap di chat, tanya jam upload (default Selasa 24 Nov 2026 19:00 WIB), 3 scheduled task review-cara-kerja-vaksin-24h/-72h/-7d (fireAt +07:00, prompt mandiri), catat di NOTES. 5) hapus perantara: project/out/, work/chk, draft/_stills, draft/CHECK_47-65s.mp4, F:/tmp/remotion. 6) status final+delivery done. Beri tahu pengguna C: penuh.",
+      "snapshot": {
+        "episode": "EP33_CARA_KERJA_VAKSIN",
+        "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+        "style": "NANOFORGE",
+        "memoryEpisode": "cara-kerja-viral-EP33",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T18:05:14.433Z",
+      "doing": "Render final silent SELESAI: project/out/final_silent.mp4 (1080x1920, 60fps, 87.5 s, EXIT=0). Draf LOLOS juri r2 4.0 tercatat. Premix siap audio/mix/premix.wav (84.2 s). SOCIAL_CAPTIONS.md lolos validator. NOTES.md masih template.",
+      "command": "-",
+      "files": [
+        "project/out/final_silent.mp4",
+        "audio/mix/premix.wav",
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md"
+      ],
+      "next": "JANGAN render ulang. 1) Master: ffmpeg -i project/out/final_silent.mp4 -i audio/mix/premix.wav, audio \"apad,loudnorm=I=-14:TP=-1.5:LRA=11:measured_I=-16.89:measured_TP=-4.48:measured_LRA=2.40:measured_thresh=-27.46:offset=0.33:linear=true\", -t 87.5, -c:v copy -c:a aac -b:a 320k, -map_metadata -1, metadata title=\"Cara Kerja Vaksin\" artist=\"AUDIRA (Agus Dwi R.)\" copyright=\"© 2026 AUDIRA - Agus Dwi R. All rights reserved.\" comment=\"AUDIRA-cara-kerja-vaksin-EP33 | audira.my.id\" date=\"2026-11-23\", -movflags +faststart+use_metadata_tags → FINAL_EP33_CARA_KERJA_VAKSIN.mp4 (root episode); ffprobe tag + ebur128 (≈-14 LUFS, TP<-1). 2) audira_qa_video hardOnly; juri buta subagent atas 8 frame dari MP4 vs F:/AUDIRA-SKILL-MOTION/references/quality-bar/nanoforge.png → record_score final jury (cara-kerja-viral-EP33). 3) NOTES.md (format ../EP31_CARA_KERJA_INTERNET/NOTES.md) pelajaran: TUBUH gagal juri (lighting datar, kamera diam 33%); VO tool butuh param text; deps starter ter-hoist ke root node_modules; output draf ke draft/; bug await sizeOf hfStills di F:/AUDIRA-SKILL-MOTION/starter/scripts/draft.mjs; juri r1 3.83 karena penghitung 139 vs VO 154 → penghitung selesai sebelum kata angka; F7 kisi sel diganti ToyPerson (readability 3→4); channel gate tersandung src/scenes/news/PenggantiGibranWapres.tsx → --skip-channel; C: penuh → Chrome OOM, set TEMP=F:/tmp/remotion, jobs=3. Lalu append_lesson NANOFORGE. 4) caption lengkap di chat, tanya jam upload (default Selasa 24 Nov 2026 19:00 WIB), 3 scheduled task review-cara-kerja-vaksin-24h/-72h/-7d (fireAt +07:00, prompt mandiri), catat di NOTES. 5) hapus perantara: project/out/, work/chk, draft/_stills, draft/CHECK_47-65s.mp4, F:/tmp/remotion. 6) status final+delivery done. Beri tahu pengguna C: penuh.",
+      "snapshot": {
+        "episode": "EP33_CARA_KERJA_VAKSIN",
+        "topic": "Cara kerja benda dan fenomena viral yang jarang diketahui",
+        "style": "NANOFORGE",
+        "memoryEpisode": "cara-kerja-viral-EP33",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP33_CARA_KERJA_VAKSIN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T08:27:22.170Z"
+    }
+  ],
+  "syncedAt": "2026-11-23T08:27:32.214Z"
+}

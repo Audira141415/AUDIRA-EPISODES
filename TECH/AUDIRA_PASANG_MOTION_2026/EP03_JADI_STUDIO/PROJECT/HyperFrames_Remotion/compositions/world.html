@@ -1,0 +1,131 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#F0E6D2}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.04;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.16) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0) 42%,rgba(0,0,0,0) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'DM Mono',monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#1C1A17;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+
+#chip{color:#1C1A17;font-size:24px;letter-spacing:.06em;opacity:.8}
+.p.w60{right:110px}
+.k{display:inline-block;font-family:'DM Mono',monospace;font-weight:500;font-size:29px;background:#1C1A17;color:#FFFAF0;padding:7px 14px;margin-bottom:14px}.k.or{background:#FF6A3D;color:#fff}
+.card{background:#FFFAF0;box-shadow:0 8px 20px rgba(50,35,15,.2);padding:14px 20px;font-family:'DM Mono',monospace;font-weight:500;font-size:38px;color:#1C1A17}
+.h{font-family:'Fraunces',serif;font-weight:700;font-size:92px;line-height:1.05;letter-spacing:-.02em;color:#1C1A17;margin-top:14px}.h em{font-style:italic;color:#FF6A3D}
+.r{display:flex;justify-content:space-between;align-items:baseline;gap:18px;background:#FFFAF0;padding:13px 18px;margin-bottom:8px;box-shadow:0 5px 14px rgba(50,35,15,.14)}
+.r b{font-family:'DM Mono',monospace;font-weight:500;font-size:37px;color:#0B3D2E;flex:none}.r b.or{color:#D9481F}.r b.to{color:#008a6e}.r span{font-family:'Fraunces',serif;font-weight:500;font-size:40px;color:#1C1A17;text-align:right}
+.term{background:#1C1A17;padding:16px 20px;margin-top:10px;font-family:'DM Mono',monospace;font-size:36px;line-height:1.3;color:#FDE9C8;overflow-wrap:anywhere;box-shadow:0 8px 20px rgba(50,35,15,.25)}
+.term i{display:block;font-style:normal;font-family:'Fraunces',serif;font-weight:500;font-size:30px;color:#FF9D7C;margin-bottom:8px}
+.n{font-family:'Fraunces',serif;font-weight:600;font-size:43px;line-height:1.14;color:#1C1A17;background:rgba(255,250,240,.9);padding:10px 16px;margin-top:10px}.n b{font-family:'DM Mono',monospace;font-weight:500;font-size:37px;color:#D9481F}.n.big{font-size:52px}
+.bub{display:block;font-family:'Fraunces',serif;font-style:italic;font-weight:600;font-size:45px;line-height:1.1;color:#1C1A17;background:#FFFAF0;padding:11px 17px;margin-bottom:8px;box-shadow:0 5px 14px rgba(50,35,15,.14)}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="90.88" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">AUDIRA MOTION &middot; EP 3/3</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="card ty1"><span class="ty" data-t="s1:Cara" data-c="32">/audira-motion ...</span></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="k">TIGA PEMAIN</div>
+  <div class="r" data-at="s2:Claude"><b>Claude Code</b><span>yang mengerjakan</span></div>
+  <div class="r" data-at="s2:audira-motion"><b class="or">audira-motion</b><span>menyutradarai 3D</span></div>
+  <div class="r" data-at="s2:Mesh"><b class="to">mesh</b><span>alat + suara</span></div>
+  <div class="h" data-at="s2:produsernya" data-fx="pop">Kamu: <em>produser.</em></div>
+</div>
+<div class="p w60" data-in="s3" data-out="s4">
+  <div class="k">1. CERITAKAN</div>
+  <div class="term"><span class="ty" data-t="s3:Ketik" data-c="34">/audira-motion cara kerja kotak musik, casing terbuka, pin memetik sisir baja</span></div>
+  <div class="n" data-at="s3:Nama" data-fx="up">Tak perlu hafal gaya. Ada 29.</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="k">2. SUARA</div>
+  <div class="r" data-at="s4:Sudah"><b>Punya rekaman</b><span>kirim file-nya</span></div>
+  <div class="term" data-at="s4:Belum"><i>Belum punya, minta ke Claude</i><span class="ty" data-t="s4:Minta" data-c="30">Buat suara dari naskah ini dengan audira_generate_voiceover</span></div>
+  <div class="n" data-at="s4:Ini" data-fx="up">Hasil: file suara + waktu tiap kata. Butuh kunci Cartesia.</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="k">3. PREVIEW 540&times;960</div>
+  <div class="bub" data-at="s5:kameranya" data-fx="up">"Kameranya perlambat di detik 5."</div>
+  <div class="bub" data-at="s5:Warnanya" data-fx="up">"Warnanya lebih cerah."</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="k or">4. FINAL 1080&times;1920, 60 FPS</div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="k">DI LUAR 3D</div>
+  <div class="n big" data-at="s7:khusus" data-fx="up">audira-motion khusus film 3D.</div>
+  <div class="term" data-at="s7:Minta"><i>Explainer datar, teks bergerak</i><span class="ty" data-t="s7:Minta" data-c="28">Pakai audira_auto_orchestrate untuk tugas ini</span></div>
+  <div class="n" data-at="s7:HyperFrames" data-fx="up">Lalu minta Claude memuat skill <b>hyperframes</b>.</div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="h" data-at="s8:giliranmu" data-fx="pop"><em>Giliranmu.</em></div>
+</div>
+<video id="v0" class="clip" muted playsinline data-start="0.00" data-duration="5.07" data-track-index="6" src="assets/video/01-pixelstory.mp4" style="position:absolute;left:56px;top:330px;width:300px;height:533px;z-index:12;object-fit:cover;outline:7px solid #FFFAF0;box-shadow:0 18px 34px rgba(50,35,15,.34);transform:rotate(-2.5deg)"></video>
+<video id="v1" class="clip" muted playsinline data-start="0.00" data-duration="5.07" data-track-index="7" src="assets/video/27-retrowave.mp4" style="position:absolute;left:390px;top:310px;width:300px;height:533px;z-index:12;object-fit:cover;outline:7px solid #FFFAF0;box-shadow:0 18px 34px rgba(50,35,15,.34);transform:rotate(1.8deg)"></video>
+<video id="v2" class="clip" muted playsinline data-start="0.00" data-duration="5.07" data-track-index="8" src="assets/video/11-clayworld.mp4" style="position:absolute;left:724px;top:350px;width:300px;height:533px;z-index:12;object-fit:cover;outline:7px solid #FFFAF0;box-shadow:0 18px 34px rgba(50,35,15,.34);transform:rotate(-1.6deg)"></video>
+<video id="v3" class="clip" muted playsinline data-start="21.02" data-duration="4.35" data-track-index="9" src="assets/video/05-innerworks.mp4" style="position:absolute;left:610px;top:600px;width:370px;height:658px;z-index:12;object-fit:cover;outline:7px solid #FFFAF0;box-shadow:0 18px 34px rgba(50,35,15,.34);transform:rotate(1.5deg)"></video>
+<video id="v4" class="clip" muted playsinline data-start="25.42" data-duration="3.00" data-track-index="10" src="assets/video/09-cyberforge.mp4" style="position:absolute;left:610px;top:600px;width:370px;height:658px;z-index:12;object-fit:cover;outline:7px solid #FFFAF0;box-shadow:0 18px 34px rgba(50,35,15,.34);transform:rotate(1.5deg)"></video>
+<video id="v5" class="clip" muted playsinline data-start="28.42" data-duration="2.16" data-track-index="11" src="assets/video/27-retrowave.mp4" style="position:absolute;left:610px;top:600px;width:370px;height:658px;z-index:12;object-fit:cover;outline:7px solid #FFFAF0;box-shadow:0 18px 34px rgba(50,35,15,.34);transform:rotate(1.5deg)"></video>
+<video id="v6" class="clip" muted playsinline data-start="49.64" data-duration="7.00" data-track-index="12" src="assets/video/05-innerworks.mp4" style="position:absolute;left:380px;top:620px;width:320px;height:569px;z-index:12;object-fit:cover;outline:7px solid #FFFAF0;box-shadow:0 18px 34px rgba(50,35,15,.34);transform:rotate(0deg)"></video><video id="v7" class="clip" muted playsinline data-start="56.64" data-duration="0.39" data-track-index="13" src="assets/video/05-innerworks.mp4" style="position:absolute;left:380px;top:620px;width:320px;height:569px;z-index:12;object-fit:cover;outline:7px solid #FFFAF0;box-shadow:0 18px 34px rgba(50,35,15,.34);transform:rotate(0deg)"></video>
+<video id="v8" class="clip" muted playsinline data-start="57.24" data-duration="7.00" data-track-index="14" src="assets/video/05-innerworks.mp4" style="position:absolute;left:250px;top:330px;width:540px;height:960px;z-index:12;object-fit:cover;outline:7px solid #FFFAF0;box-shadow:0 18px 34px rgba(50,35,15,.34);transform:rotate(0deg)"></video><video id="v9" class="clip" muted playsinline data-start="64.24" data-duration="3.30" data-track-index="15" src="assets/video/05-innerworks.mp4" style="position:absolute;left:250px;top:330px;width:540px;height:960px;z-index:12;object-fit:cover;outline:7px solid #FFFAF0;box-shadow:0 18px 34px rgba(50,35,15,.34);transform:rotate(0deg)"></video>
+<video id="v10" class="clip" muted playsinline data-start="81.47" data-duration="3.20" data-track-index="16" src="assets/video/04-paperworld.mp4" style="position:absolute;left:56px;top:400px;width:300px;height:533px;z-index:12;object-fit:cover;outline:7px solid #FFFAF0;box-shadow:0 18px 34px rgba(50,35,15,.34);transform:rotate(-2deg)"></video>
+<video id="v11" class="clip" muted playsinline data-start="81.81" data-duration="3.00" data-track-index="17" src="assets/video/09-cyberforge.mp4" style="position:absolute;left:390px;top:340px;width:300px;height:533px;z-index:12;object-fit:cover;outline:7px solid #FFFAF0;box-shadow:0 18px 34px rgba(50,35,15,.34);transform:rotate(1.5deg)"></video>
+<video id="v12" class="clip" muted playsinline data-start="82.17" data-duration="2.70" data-track-index="18" src="assets/video/18-circuitforge.mp4" style="position:absolute;left:724px;top:400px;width:300px;height:533px;z-index:12;object-fit:cover;outline:7px solid #FFFAF0;box-shadow:0 18px 34px rgba(50,35,15,.34);transform:rotate(-1.2deg)"></video>
+
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">PASANG AUDIRA &middot; EP 3 DARI 3</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":5.085,"s2":5.245,"s2e":15.455,"s3":15.615,"s3e":30.729,"s4":30.889,"s4e":46.573,"s5":46.733,"s5e":57.084,"s6":57.244,"s6e":67.598,"s7":67.758,"s7e":81.305,"s8":81.465,"s8e":87.876,"end":87.876,"dur":90.88,"outro":88.126},AT={"s2:Claude":6.377,"s2:audira-motion":8.223,"s2:Mesh":11.395,"s4:Mesh":41.104,"s3:Ketik":17.975,"s1:Cara":2.995,"s2:produsernya":14.82,"s3:Nama":25.423,"s4:Sudah":33.533,"s4:Belum":35.975,"s4:Minta":36.611,"s4:Ini":44.592,"s5:kameranya":52.5,"s5:Warnanya":54.421,"s7:khusus":70.428,"s7:Minta":74.952,"s7:HyperFrames":78.749,"s8:giliranmu":84.456},DUR=90.88,OUT=88.126;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ 
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{opacity:0,y:-46,rotation:-1.6},{opacity:1,y:0,rotation:0,duration:.42,ease:'back.out(1.5)'},a-.08);},POUT=(tl,p,b)=>tl.to(p,{opacity:0,y:36,rotation:1.2,duration:.2,ease:'power2.in'},b-.2);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0,y:50});tl.to('#outro',{opacity:1,y:0,duration:.4,ease:'power3.out'},OUT-.05);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(()=>{const E=[...document.querySelectorAll('.ty')].map(e=>{const s=e.textContent;e.textContent='';const a=document.createElement('span'),b=document.createElement('span');b.style.visibility='hidden';e.append(a,b);return{a,b,s,t:AT[e.dataset.t],c:+e.dataset.c||42}});return (t)=>{for(const x of E){const n=Math.max(0,Math.min(x.s.length,Math.floor((t-x.t)*x.c)));x.a.textContent=x.s.slice(0,n);x.b.textContent=x.s.slice(n);}}})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

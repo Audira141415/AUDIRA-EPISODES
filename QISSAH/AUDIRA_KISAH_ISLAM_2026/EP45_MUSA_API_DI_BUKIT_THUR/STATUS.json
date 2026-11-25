@@ -1,0 +1,699 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP45_MUSA_API_DI_BUKIT_THUR",
+  "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+  "createdAt": "2026-11-24T14:50:50.631Z",
+  "updatedAt": "2026-11-24T18:39:38.819Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:53:49.807Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-24T14:50:50.632Z",
+      "startedAt": "2026-11-24T14:50:50.632Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:52:44.768Z",
+          "text": "SOURCE_REGISTER: QS 20:9-32, 28:29-35, 27:7-12 + Ibnu Katsir. 8 fakta."
+        }
+      ],
+      "doneAt": "2026-11-24T14:52:44.768Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:56:30.101Z",
+          "text": "PAPERWORLD 3D R3F (diorama kertas malam diterangi api; alt CHRONICLE 2D, HD2D). Dipilih AI tanpa acc (aturan 2026-11-23). Cover topik dirender di sesi B setelah scaffold."
+        },
+        {
+          "at": "2026-11-24T14:58:03.272Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "startedAt": "2026-11-24T14:56:30.101Z",
+      "doneAt": "2026-11-24T14:57:14.124Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:58:03.272Z",
+          "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-24T14:58:20.568Z",
+          "text": "Docs rule 12 lengkap: ART_DIRECTION, SCRIPT (198 kata, 79–88 dtk), STORYBOARD 8 baris, ASSET_MANIFEST. VO polos di work/vo.txt."
+        }
+      ],
+      "doneAt": "2026-11-24T14:58:20.568Z",
+      "startedAt": "2026-11-24T14:57:38.527Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:05:42.141Z",
+          "text": "project/ = starter via robocopy + junction node_modules & polyfork; check-env + smoke ok. Cover topik belum (butuh scene S1)."
+        }
+      ],
+      "doneAt": "2026-11-24T15:05:42.141Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:05:33.015Z",
+          "text": "VO Cartesia Galang 91.30 s, 199 kata, project/public/audio/vo.wav + vo-words.json + vo.timing.json; cut di src/ep45/timing.ts"
+        }
+      ],
+      "doneAt": "2026-11-24T15:05:33.015Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:06:06.682Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.572Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:25:54.350Z",
+          "text": "sync: 1 gambar draf (bukan contact-sheet.jpg; buat dulu: bash sheet.sh <EP>)"
+        }
+      ],
+      "doneAt": "2026-11-24T15:23:49.578Z",
+      "startedAt": "2026-11-24T15:23:49.578Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T17:43:13.052Z",
+      "notes": [
+        {
+          "at": "2026-11-24T17:43:13.052Z",
+          "text": "Acc pengguna 2026-11-25: \"Gas render\""
+        },
+        {
+          "at": "2026-11-24T18:38:48.499Z",
+          "text": "FINAL_EP45_MUSA_API_DI_BUKIT_THUR.mp4: 1080x1920@60, 94.6 s, -13.7 LUFS TP -1.8 dBFS, metadata + Ed25519/C2PA, qa_video hardOnly PASS. SFX stem -2 dB (G18c 11.5 -> 13.5 LU). --skip-channel (handle QISSAH benar)."
+        }
+      ],
+      "startedAt": "2026-11-24T17:43:13.052Z",
+      "doneAt": "2026-11-24T18:38:48.499Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T17:48:07.349Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T17:44:58.518Z",
+      "startedAt": "2026-11-24T17:44:58.518Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "kisah-islam-EP45",
+    "shortTitle": "Api Thur",
+    "style": "PAPERWORLD",
+    "engine": "remotion",
+    "wordCount": 198,
+    "estimatedDuration": {
+      "wordCount": 198,
+      "minSec": 79,
+      "maxSec": 88
+    }
+  },
+  "syncedAt": "2026-11-24T17:48:07.349Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-24T14:58:31.955Z",
+      "doing": "Sesi A selesai (tahap 0–4). Pre-flight lolos tanpa blocker. Style PAPERWORLD, engine Remotion + R3F 3D (kit paperworld: Stage/Cut/ShearPop/PaperTree/PaperHill/PaperCharacter + GLB nyata diberi paperFace). Alternatif ditolak: CHRONICLE (2D material datar), HD2D, ISLAMICDOCUMENTARY (juri 3,67). Naskah 198 kata (est. 79–88 dtk), 7 chapter c01–c07, teks VO polos di work/vo.txt (spoken: Thuwa→Tuwa, Al-Quran→Al Quran, brand \"Audira\"). Storyboard 8 set: S1 api titik di lereng malam, S2 perkemahan+ternak (sheep/goat/camel GLB, tenda), S3 pendakian+lentera, S4 pohon bercahaya+terompah (Thuwa), S5 tongkat→ular kertas, S6 makro tangan bercahaya + stempel 9 MUKJIZAT, S7 fajar+istana Mesir+siluet Harun (riser+impact), S8 wide outro + papan AUDIRA QISSAH. Adab: Musa tanpa wajah bertudung dari belakang, panggilan Allah hanya cahaya pohon + pita ayat, Firaun tidak digambar. Memori PAPERWORLD: DOCUMENTARY_WARM, exposure 0.9–1.0 (latar malam), envIntensity 0.25, AO on, bayangan panjang searah api, FG DOF blur ~9px, haze hanya BG/MG, figur berlipatan (bukan kerucut halus), variasi skala shot, label ≥40px; gold acuan kits/paperworld/gold/short-baru-11-23-EP18. Cover topik BELUM dirender (butuh scaffold).",
+      "files": [
+        "STATUS.json",
+        "style/STYLE_DECISION.md",
+        "docs/ART_DIRECTION.md",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "work/vo.txt",
+        "research/SOURCE_REGISTER.md",
+        "style/cover-reference.jpg"
+      ],
+      "next": "Sesi B tahap 5: scaffold Remotion di <EP>/project (audira_init_motion_project / new-project.mjs --kit=paperworld), check-env + smoke, render cover-topic.png (frame hook S1) ke style/. Tahap 6: audira_generate_voiceover dari work/vo.txt (Galang 04b567df…, id) lalu npm run vo, kunci timing. Tahap 7: multi-scene 8 set sesuai STORYBOARD, HUD pita ayat, AudiraSignature seed kisah-islam-EP45, npm run sfx. Tahap 8: draft/THEME_CHECK.md + contact sheet 540×960 + audit:visual + record_score self lalu juri buta (maks 2 putaran). Render berat lewat audira_render_batch (4 sesi lain render paralel di PC sama). Kerja HANYA di folder EP45, jangan commit.",
+      "snapshot": {
+        "episode": "EP45_MUSA_API_DI_BUKIT_THUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP45",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:02:34.268Z",
+      "doing": "Sesi B: scaffold selesai (starter via robocopy + junction node_modules & polyfork; check-env ok, smoke ok; channel.json manual @AUDIRAQISSAH). Sekarang VO Cartesia dari work/vo-spoken.txt",
+      "files": [
+        "project/",
+        "work/vo-spoken.txt"
+      ],
+      "next": "npm run vo -- public/audio/vo.wav, kunci timing, bangun 8 set R3F src/ep45",
+      "snapshot": {
+        "episode": "EP45_MUSA_API_DI_BUKIT_THUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP45",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:05:42.280Z",
+      "doing": "Sesi B lanjutan (s2 kena context guard 191k). Tahap 5 selesai (scaffold, check-env, smoke), tahap 6 selesai (VO Galang 91,30 dtk dikunci, timing di project/src/ep45/timing.ts). Tahap 7 belum mulai menulis scene: rencana lengkap 8 set, API kit, adab figur Robed, GLB terkonfirmasi, HUD per anchor, channel QISSAH ada di work/SESSION_B_PLAN.md.",
+      "files": [
+        "work/SESSION_B_PLAN.md",
+        "project/src/ep45/timing.ts",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "project/src/brand/channel.json"
+      ],
+      "next": "Sesi B lanjutan: baca work/SESSION_B_PLAN.md (satu-satunya bacaan wajib + style/STYLE_DECISION.md bila perlu), tulis project/src/ep45/* (PaperGlb, Robed, 8 set, HUD pita, transisi, Subtitle y1300, AudiraSignature seed kisah-islam-EP45 code QISSAH, AudiraOutro), daftarkan Ep45Preview/Ep45Final di src/Root.tsx, render cover-topic.png, SHOTLIST.md + npm run sfx, qa-scene, THEME_CHECK, npm run draft, juri buta maks 2 putaran. Lalu handover newSession ke Sesi C.",
+      "snapshot": {
+        "episode": "EP45_MUSA_API_DI_BUKIT_THUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP45",
+        "currentStage": "animation",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:15:14.328Z",
+      "doing": "Sesi B s3: tahap 7 setengah jalan. Ditulis project/src/ep45/parts.tsx (PaperGlb, Robed tanpa wajah, Flame, Glow, TextBoard AUDIRA, SkyCard, NightMobile, Sandal, StaffSnake, GlowTree, Beam, Flecks) dan project/src/ep45/sets.tsx (8 set S1–S8 + pickSet director). Belum typecheck, belum still, belum Hud/Ep45/Root. Style PAPERWORLD, engine remotion, VO 91,30 dtk dikunci.",
+      "files": [
+        "work/SESSION_B_PLAN.md",
+        "project/src/ep45/parts.tsx",
+        "project/src/ep45/sets.tsx",
+        "project/src/ep45/timing.ts"
+      ],
+      "next": "Sesi B lanjutan (s4): baca work/SESSION_B_PLAN.md bagian \"Progres s3\" + \"Sisa (mulai di sini)\": tulis Hud.tsx (daftar HUD lengkap ada di sana) + Tears, Ep45.tsx, daftarkan Ep45Preview/Ep45Final di Root.tsx, typecheck, still per beat (kalibrasi pointLight/kamera), cover-topic.png frame 5.6s, SHOTLIST + npm run sfx, qa-scene, THEME_CHECK, npm run draft -- Ep45Preview, juri buta maks 2 putaran; lalu handover newSession ke Sesi C.",
+      "snapshot": {
+        "episode": "EP45_MUSA_API_DI_BUKIT_THUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP45",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:24:01.943Z",
+      "doing": "Sesi B s4: Hud/Ep45/Root selesai, stills lolos audit (ceilings 5), cover-topic.png dirender. Lanjut SHOTLIST + sfx.",
+      "files": [
+        "work/SESSION_B_PLAN.md",
+        "project/src/ep45/Hud.tsx",
+        "project/src/ep45/Ep45.tsx",
+        "project/src/ep45/sets.tsx",
+        "project/src/ep45/parts.tsx",
+        "project/src/Root.tsx",
+        "style/cover-topic.png"
+      ],
+      "next": "Baca work/SESSION_B_PLAN.md bagian \"Progres s4\": SHOTLIST.md + npm run sfx, qa-scene, draft/THEME_CHECK.md, npm run draft -- Ep45Preview, record_score self + juri buta (maks 2 putaran), lalu handover newSession ke Sesi C.",
+      "snapshot": {
+        "episode": "EP45_MUSA_API_DI_BUKIT_THUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP45",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:25:29.568Z",
+      "doing": "Sesi B s4 selesai sampai SFX: Hud/Ep45/Root, stills lolos audit (ceilings 5), cover-topic.png, SHOTLIST lint OK, sfx.wav −26 LUFS. Belum: qa-scene, THEME_CHECK, draft, juri.",
+      "files": [
+        "work/SESSION_B_PLAN.md",
+        "project/SHOTLIST.md",
+        "project/public/audio/sfx.wav",
+        "project/src/ep45/Ep45.tsx",
+        "project/src/ep45/Hud.tsx",
+        "project/src/ep45/sets.tsx",
+        "project/src/ep45/parts.tsx",
+        "style/cover-topic.png",
+        "draft/stills/_sheet.jpg"
+      ],
+      "next": "Sesi B lanjutan (tahap 8): baca work/SESSION_B_PLAN.md bagian \"Progres s4\" → audira_qa_scene (Ep45Preview, cuts 8.2,23.1,37.1,41.7,46,57.9,67.6,82.8,91.6), draft/THEME_CHECK.md, npm run draft -- Ep45Preview, record_score self + juri buta (maks 2 putaran; LOLOS ≥3.8 tanpa aspek <3, atau terbaik ≥3.5 diterima), lalu handover newSession ke Sesi C.",
+      "snapshot": {
+        "episode": "EP45_MUSA_API_DI_BUKIT_THUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP45",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:26:06.874Z",
+      "doing": "Sesi B s5 tahap 8: audira_qa_scene Ep45Preview",
+      "command": "audira_qa_scene project=<EP45>/project comp=Ep45Preview cuts=8.2,23.1,37.1,41.7,46,57.9,67.6,82.8,91.6",
+      "next": "THEME_CHECK.md → npm run draft -- Ep45Preview → record_score self + juri buta",
+      "snapshot": {
+        "episode": "EP45_MUSA_API_DI_BUKIT_THUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP45",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:41:49.179Z",
+      "doing": "Sesi B s5: qa-scene PASS (fix S4a batu, S5 lengan, S7 tongkat; jalankan --concurrency=1, id mesh beda antar tab = flick palsu). Render draf.",
+      "command": "cd project && npm run draft -- Ep45Preview --frames=2s,12s,26s,39s,50s,61s,72s,89s",
+      "files": [
+        "project/src/ep45/sets.tsx",
+        "draft/qa-scene.json",
+        "draft/qa-video.review.json"
+      ],
+      "next": "THEME_CHECK.md (frame 2,12,26,39,50,61,72,89) → record_score self + juri buta",
+      "snapshot": {
+        "episode": "EP45_MUSA_API_DI_BUKIT_THUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP45",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:43:11.349Z",
+      "doing": "Sesi B s5 tahap 8: qa-scene+qa-video PASS (--concurrency=1; fix S4a batu, S5 lengan lift, S7 tongkat tetap). Draft r1 DRAFT_SHEET.jpg frame 2,12,26,39,50,61,72,89; ceilings semua 5, camera 5. THEME_CHECK 8 baris ya. Self r1 = 4.0 (composition 3). Juri buta r1 sedang jalan.",
+      "command": "cd project && npm run draft -- Ep45Preview --frames=2s,12s,26s,39s,50s,61s,72s,89s",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/jury_input.json",
+        "project/src/ep45/sets.tsx"
+      ],
+      "next": "record_score jury r1 (still draft/DRAFT_SHEET.jpg, ceilings+camera dari draft/jury_input.json). LOLOS (≥3.8, tak ada <3) → handover newSession ke Sesi C. Gagal → poles (F5 ular manik, F6 tangan bloom, F2 unta dominan, F7 istana kecil) lalu npm run draft r2 + juri r2.",
+      "snapshot": {
+        "episode": "EP45_MUSA_API_DI_BUKIT_THUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP45",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:43:58.324Z",
+      "doing": "Sesi B s5 selesai: qa PASS, draft r1 dirender, self 4.0, juri r1 3.17 PERLU POLES (composition 2, readability 2: F5 ular bola, F7 tanpa istana).",
+      "files": [
+        "work/SESSION_B_PLAN.md",
+        "project/src/ep45/sets.tsx",
+        "project/src/ep45/parts.tsx",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/jury_input.json"
+      ],
+      "next": "Sesi B lanjutan s6 (tahap 8, putaran juri 2/2): baca work/SESSION_B_PLAN.md bagian \"Progres s5\" → poles 6 poin di sets.tsx/parts.tsx → qa-scene --concurrency=1 → npm run draft -- Ep45Preview --frames=2s,12s,26s,39s,50s,61s,72s,89s → THEME_CHECK → self + juri buta r2 → handover newSession ke Sesi C.",
+      "snapshot": {
+        "episode": "EP45_MUSA_API_DI_BUKIT_THUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP45",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:55:41.835Z",
+      "doing": "s6 poles r2 di sets.tsx/parts.tsx SELESAI (belum qa): ular kertas hijau TubeGeometry (StaffSnake baru, size 1.35, Musa profil di belakang kiri S5), F7 kamera over-shoulder ke istana besar (scale 2.3, toPalace sampai berdoa), F3 kamera mundur, bloom pohon/tangan diredam (GlowTree ei 0.1+0.32g, glow 0.1), MUSA robe lebih terang + edge pale, domba krem #d6c19a, F1 Musa [-1.1,0,3], F8 papan AUDIRA x 5.2. Backup r1: work/sets.r1.bak.tsx, work/parts.r1.bak.tsx. Still cek: work/r2s/_sheet.jpg.",
+      "files": [
+        "project/src/ep45/sets.tsx",
+        "project/src/ep45/parts.tsx",
+        "work/r2s/_sheet.jpg",
+        "work/SESSION_B_PLAN.md"
+      ],
+      "next": "Cek work/r2s/_sheet.jpg (39s pohon, 50s ular) → qa-scene dari project/: node scripts/qa-scene.mjs --comp=Ep45Preview --cuts=8.2,23.1,37.1,41.7,46,57.9,67.6,82.8,91.6 --every=3 --concurrency=1 --out=../draft → npm run draft -- Ep45Preview --frames=2s,12s,26s,39s,50s,61s,72s,89s → THEME_CHECK → self + juri buta r2 (putaran terakhir; r1 juri 3.17) → handover newSession ke Sesi C.",
+      "snapshot": {
+        "episode": "EP45_MUSA_API_DI_BUKIT_THUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP45",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T16:25:35.163Z",
+      "doing": "s6: poles r2 selesai, qa-scene PASS (qa-video CHECK/FAIL semua verdict ok desain di draft/qa-video.review.json), draft r2 dirender (draft/DRAFT_SHEET.jpg, ceilings semua 5, camera 5), THEME_CHECK.md diisi ulang semua ya, self r2 4.17 dicatat. Juri buta r2 subagen sedang berjalan.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/jury_input.json",
+        "draft/qa-video.review.json",
+        "project/src/ep45/sets.tsx",
+        "project/src/ep45/parts.tsx"
+      ],
+      "next": "Bila juri r2 belum tercatat di motion memory (audira_style_memory get PAPERWORLD): jalankan juri buta r2 (qa/jury.md; hanya DRAFT_SHEET + paperworld.jpg + ceilings + camera dari draft/jury_input.json + kolom Kata VO THEME_CHECK) → record_score judge jury. LOLOS ≥3.8 tanpa <3 → Sesi C. Gagal: terbaik ≥3.5 → NOTES.md \"diterima <skor> setelah 2 putaran\" + append_lesson failed → Sesi C; <3.5 → style baru (G21). Dilarang putaran 3. Sesi C: tahap 9 gerbang acc (contact sheet, skor juri, durasi film 94,6 dtk, G18c).",
+      "snapshot": {
+        "episode": "EP45_MUSA_API_DI_BUKIT_THUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP45",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T16:26:21.246Z",
+      "doing": "Sesi B selesai (s6): draf r2 juri buta 3.83 LOLOS (lighting 4, material 3, depth 4, composition 3, motion 5, readability 4; self 4.17). qa-scene PASS, qa-video verdict desain di draft/qa-video.review.json, THEME_CHECK semua ya. Style PAPERWORLD, Remotion+R3F 3D. VO 91,30 dtk dikunci, film 94,6 dtk. Lesson failed material/komposisi sudah ditulis.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/jury_input.json",
+        "draft/THEME_CHECK.md",
+        "project/src/ep45/sets.tsx",
+        "project/src/ep45/parts.tsx"
+      ],
+      "next": "Sesi C tahap 9: cek audio G18c (VO ≥12 LU di atas SFX), tampilkan draft/DRAFT_SHEET.jpg + skor juri 3.83 + durasi 94,6 dtk + G18c ke pengguna, tunggu acc. Setelah acc: audira_episode_status update stage final approved true, lalu audira_render_batch start {project: <EP>/project, comp: final comp Ep45 (cek Root), vo: public/audio/vo.wav, sfx: public/audio/sfx.wav, ep: EP45, slug, title} → QA −14 LUFS TP<−1, metadata, record_score final. Tahap 10: SOCIAL_CAPTIONS 6 platform + jadwal + label AI, NOTES.md, append_lesson, 3 scheduled task review.",
+      "snapshot": {
+        "episode": "EP45_MUSA_API_DI_BUKIT_THUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP45",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:39:34.608Z",
+      "doing": "Sesi C tahap 9: G18c diukur 2026-11-25 — vo.wav -27.8 LUFS → loudnorm -16; sfx.wav stem -26.0 LUFS, SFX_TRIM volume=-4dB → -30 LUFS; selisih 14 LU, LOLOS. render-final.mjs sudah graph G18 (loudnorm I=-16, ratio=8, threshold=0.015, attack=5, release=350). Draf r2 juri 3.83 LOLOS, film 94.6 s. Gerbang acc belum dijawab pengguna.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "project/scripts/render-final.mjs",
+        "project/src/Root.tsx"
+      ],
+      "next": "Tampilkan draft/DRAFT_SHEET.jpg + juri 3.83 + 94.6 s + G18c 14 LU, tunggu acc pengguna. Setelah acc: update stage final approved true; audira_render_batch start {project: <EP>/project, comp: cek Root.tsx (Ep45Final), vo: public/audio/vo.wav, sfx: public/audio/sfx.wav, ep: EP45, slug: musa-api-di-bukit-thur, title: Musa dan Api di Bukit Thur}. Bila exit 1 di rename (EPERM, seperti EP44/46) cek out/*.mp4 utuh dulu, jangan render ulang. Lalu QA, record_score final, tahap 10 (SOCIAL_CAPTIONS, NOTES, append_lesson, 3 scheduled task).",
+      "snapshot": {
+        "episode": "EP45_MUSA_API_DI_BUKIT_THUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP45",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:41:35.122Z",
+      "doing": "Sesi C tahap 9: G18c LOLOS 14 LU (VO loudnorm -16, SFX stem -26 + volume=-4dB = -30). draft/DRAFT_SHEET.jpg sudah dikirim ke pengguna 2026-11-25, acc render final belum dijawab.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "project/src/Root.tsx",
+        "project/scripts/render-final.mjs"
+      ],
+      "next": "Tunggu acc pengguna (tampilkan ulang DRAFT_SHEET.jpg + juri 3.83 + 94.6 s + G18c 14 LU). Setelah acc: update stage final approved true; render via audira_render_batch (comp final di project/src/Root.tsx, vo public/audio/vo.wav, sfx public/audio/sfx.wav, ep EP45, slug musa-api-di-bukit-thur, title \"Musa dan Api di Bukit Thur\"); bila G14 menolak kit SVG 2D, pakai npm run render:final langsung dengan --jobs=4. Exit 1 di rename (EPERM) = cek out/*.mp4 dulu, jangan render ulang. Lalu salin ke FINAL_EP45_MUSA_API_DI_BUKIT_THUR.mp4, qa_video hardOnly, record_score final, tahap 10 (SOCIAL_CAPTIONS validator, NOTES, append_lesson, 3 scheduled task review-musa-api-di-bukit-thur-24h/-72h/-7d).",
+      "snapshot": {
+        "episode": "EP45_MUSA_API_DI_BUKIT_THUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP45",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:43:37.261Z",
+      "doing": "Sesi C: render final Ep45Final (acc pengguna 2026-11-25 \"Gas render\")",
+      "command": "cd project && npm run render:final -- --comp=Ep45Final --out=out/EP45_final.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Musa dan Api di Bukit Thur\" --slug=musa-api-di-bukit-thur --ep=EP45 --log=error",
+      "files": [
+        "project/out/EP45_final.mp4"
+      ],
+      "next": "Exit 1 EPERM rename = ffprobe out/*.mp4 dulu. Salin ke FINAL_EP45_MUSA_API_DI_BUKIT_THUR.mp4, cek LUFS/TP/metadata, qa_video hardOnly, record_score final, tahap 10.",
+      "snapshot": {
+        "episode": "EP45_MUSA_API_DI_BUKIT_THUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP45",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:43:37.261Z",
+      "doing": "Sesi C: render final Ep45Final (acc pengguna 2026-11-25 \"Gas render\")",
+      "command": "cd project && npm run render:final -- --comp=Ep45Final --out=out/EP45_final.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Musa dan Api di Bukit Thur\" --slug=musa-api-di-bukit-thur --ep=EP45 --log=error",
+      "files": [
+        "project/out/EP45_final.mp4"
+      ],
+      "next": "Exit 1 EPERM rename = ffprobe out/*.mp4 dulu. Salin ke FINAL_EP45_MUSA_API_DI_BUKIT_THUR.mp4, cek LUFS/TP/metadata, qa_video hardOnly, record_score final, tahap 10.",
+      "snapshot": {
+        "episode": "EP45_MUSA_API_DI_BUKIT_THUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP45",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T18:39:38.819Z"
+    }
+  ],
+  "session": 8,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP45 Api Thur · s2",
+      "at": "2026-11-24T14:58:31.955Z"
+    },
+    {
+      "no": 3,
+      "title": "EP45 Api Thur · s3",
+      "at": "2026-11-24T15:05:42.280Z"
+    },
+    {
+      "no": 4,
+      "title": "EP45 Api Thur · s4",
+      "at": "2026-11-24T15:15:14.328Z"
+    },
+    {
+      "no": 5,
+      "title": "EP45 Api Thur · s5",
+      "at": "2026-11-24T15:25:29.568Z"
+    },
+    {
+      "no": 6,
+      "title": "EP45 Api Thur · s6",
+      "at": "2026-11-24T15:43:58.324Z"
+    },
+    {
+      "no": 7,
+      "title": "EP45 Api Thur · s7",
+      "at": "2026-11-24T16:26:21.246Z"
+    },
+    {
+      "no": 8,
+      "title": "EP45 Api Thur · s8",
+      "at": "2026-11-24T17:41:35.122Z"
+    }
+  ]
+}

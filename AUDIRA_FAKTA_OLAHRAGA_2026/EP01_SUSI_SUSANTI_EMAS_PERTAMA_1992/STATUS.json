@@ -1,0 +1,754 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992",
+  "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+  "createdAt": "2026-11-22T06:26:14.096Z",
+  "updatedAt": "2026-11-23T08:23:32.322Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T06:28:02.333Z",
+          "text": "Pre-flight lolos (no blockers). Memori GLOBAL + channel dibaca; pelajaran EP45-47: label >=34px, stamp/caption tidak menutupi subjek. Seri baru, belum ada episode sebelumnya."
+        }
+      ],
+      "doneAt": "2026-11-22T06:28:02.333Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T06:29:39.120Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-22T06:26:14.091Z",
+      "startedAt": "2026-11-22T06:26:14.091Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T06:34:38.669Z",
+      "notes": [
+        {
+          "at": "2026-11-22T06:34:38.669Z",
+          "text": "PIXELSTORY dipilih pengguna; cover topik style/cover-topic.png di-acc pengguna (\"Acc cover\") 2026-11-22."
+        }
+      ],
+      "doneAt": "2026-11-22T06:34:38.669Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T06:38:59.401Z",
+      "notes": [
+        {
+          "at": "2026-11-22T06:37:35.962Z",
+          "text": "4 docs tertulis (ART_DIRECTION, SCRIPT 200 kata, STORYBOARD 8 baris/6 set, ASSET_MANIFEST). Menunggu acc pengguna."
+        },
+        {
+          "at": "2026-11-22T06:38:59.401Z",
+          "text": "Pengguna: \"Acc semua\" (2026-11-22) — naskah 200 kata + storyboard + art direction + asset manifest disetujui."
+        }
+      ],
+      "startedAt": "2026-11-22T06:37:35.962Z",
+      "doneAt": "2026-11-22T06:38:59.401Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T06:43:23.732Z",
+          "text": "Studio seri dipakai: check-env Ready, smoke sheet out/smoke/_sheet.jpg OK."
+        }
+      ],
+      "doneAt": "2026-11-22T06:43:23.732Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T06:43:23.760Z",
+          "text": "VO terkunci: MCP audira_generate_voiceover + _tools/vo_tighten.py; 85,72 dtk ucapan, 140 WPM, -16,3 LUFS. Timeline studio/src/scenes/ep01/timeline.json, docs/TIMING.md berisi peta potongan."
+        }
+      ],
+      "doneAt": "2026-11-22T06:43:23.760Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T06:55:54.054Z",
+          "text": "Film.tsx 6 set (arena cover, kamar, arena samping, net close-up, podium, Jakarta) + OUT; Ep01Preview/Ep01Final di Root.tsx; SHOTLIST.md; sfx public/audio/ep01/sfx.wav -20 LUFS 44 suara."
+        }
+      ],
+      "doneAt": "2026-11-22T06:55:54.054Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T07:00:24.778Z",
+      "notes": [
+        {
+          "at": "2026-11-22T07:00:24.778Z",
+          "text": "Pengguna: \"Acc draf\" (2026-11-22). Juri buta putaran 2: 4.00 LOLOS."
+        }
+      ],
+      "doneAt": "2026-11-22T07:00:24.778Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T07:11:22.011Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-22T07:13:40.358Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60, 89.75 dtk, -13.6 LUFS TP -1.8, metadata + Ed25519/C2PA VALID, qa_video PASS (flash authored di-allow), juri final 4.0 LOLOS (self 4.17), gold diarsipkan."
+        }
+      ],
+      "doneAt": "2026-11-22T07:13:40.358Z",
+      "startedAt": "2026-11-22T07:11:05.915Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T07:10:10.804Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-22T07:09:09.315Z",
+      "startedAt": "2026-11-22T07:09:09.315Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "fakta-olahraga-EP01",
+    "engine": "remotion",
+    "style": "PIXELSTORY",
+    "wordCount": 200,
+    "estimatedDuration": {
+      "wordCount": 200,
+      "minSec": 80,
+      "maxSec": 89
+    },
+    "voEnd": 85.718,
+    "filmTotal": 89.718,
+    "wpm": 140,
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-22T07:11:22.012Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T06:33:44.976Z",
+      "doing": "Gerbang style EP01: PIXELSTORY dipilih pengguna; cover topik dirender, menunggu acc cover. Riset 5 EP via subagen (EP03 selesai: 15 fakta, 10 sumber; EP01/02/04/05 masih jalan atau cek SOURCE_REGISTER).",
+      "command": "cd studio && npx remotion still src/index.ts Ep01Cover ../EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992/style/cover-topic.png --frame=0",
+      "files": [
+        "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/studio/src/scenes/ep01/arena.ts",
+        "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/studio/src/scenes/ep01/sprites.ts",
+        "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/studio/src/scenes/ep01/ArenaShot.tsx",
+        "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/studio/src/scenes/ep01/Cover.tsx",
+        "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/studio/src/Root.tsx",
+        "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992/style/STYLE_DECISION.md"
+      ],
+      "next": "Setelah acc cover: STYLE_DECISION approved yes + episode_status update style approved; lalu tahap 4 docs rule 12 (ART_DIRECTION, SCRIPT 6 tahap 195-210 kata + STORYBOARD >=6 baris, ASSET_MANIFEST) dari research/SOURCE_REGISTER.md. Studio seri: AUDIRA_FAKTA_OLAHRAGA_2026/studio (node_modules = junction ke studio sepak bola; Root.tsx punya SLUG olahraga-EPNN + signed()).",
+      "snapshot": {
+        "episode": "EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": null,
+        "memoryEpisode": "fakta-olahraga-EP01",
+        "currentStage": "style",
+        "gates": {
+          "style": {
+            "approved": false,
+            "status": "pending"
+          },
+          "script": {
+            "approved": false,
+            "status": "pending"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T06:34:38.717Z",
+      "doing": "Gerbang style EP01 selesai (PIXELSTORY, cover di-acc). Riset: EP02, EP03, EP05 SOURCE_REGISTER selesai; EP01 dan EP04 masih dikerjakan subagen di sesi lama (cek file SOURCE_REGISTER; bila masih template, ulang riset).",
+      "next": "Tahap 4 EP01: docs/ART_DIRECTION.md -> docs/SCRIPT.md + docs/STORYBOARD.md (6 tahap, 195-210 kata, tabel >=6 baris Scene|Waktu|BG/MG/FG/HUD|Kamera|Audio, multi-scene 4-6 set: arena final, gim 1 kalah 5-11, reli panjang bertahan, comeback 11-5 11-3, podium + Indonesia Raya, Alan Budikusuma emas hari sama) -> docs/ASSET_MANIFEST.md; VO sebut AUDIRA; outro teaser EP02 Maraton Paling Kacau 1904. Minta acc naskah+storyboard+art direction. Studio: AUDIRA_FAKTA_OLAHRAGA_2026/studio, scene ep01 (ArenaShot.tsx = frame pembuka).",
+      "snapshot": {
+        "episode": "EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP01",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": false,
+            "status": "pending"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T06:37:41.786Z",
+      "doing": "Gerbang tahap 4 EP01: 4 docs selesai, menunggu acc naskah+storyboard+art direction",
+      "files": [
+        "docs/ART_DIRECTION.md",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md"
+      ],
+      "next": "Setelah acc: update script approved=true, tahap 5 setup (studio sudah ada), tahap 6 VO Cartesia dari docs/SCRIPT.md",
+      "snapshot": {
+        "episode": "EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP01",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": false,
+            "status": "in_progress"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T06:39:05.266Z",
+      "doing": "Tahap 4 EP01 di-acc (\"Acc semua\"); naskah terkunci",
+      "next": "Tahap 5 setup (studio seri sudah ada: check-env + smoke), lalu tahap 6 VO Cartesia dari docs/SCRIPT.md + npm run vo",
+      "snapshot": {
+        "episode": "EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP01",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T06:41:11.622Z",
+      "doing": "Tahap 6 VO: TTS Cartesia per bagian via _tools/vo.py tts (docs/script-lines.json)",
+      "command": "cd F:/AUDIRA-EPISODES && python AUDIRA_FAKTA_OLAHRAGA_2026/_tools/vo.py EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992 tts",
+      "next": "vo.py build -> make-timeline.py EP01 -> npm run vo -- public/audio/ep01/vo.wav -> docs/TIMING.md",
+      "snapshot": {
+        "episode": "EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP01",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T06:41:11.622Z",
+      "doing": "Tahap 6 VO: TTS Cartesia per bagian via _tools/vo.py tts (docs/script-lines.json)",
+      "command": "cd F:/AUDIRA-EPISODES && python AUDIRA_FAKTA_OLAHRAGA_2026/_tools/vo.py EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992 tts",
+      "next": "vo.py build -> make-timeline.py EP01 -> npm run vo -- public/audio/ep01/vo.wav -> docs/TIMING.md",
+      "snapshot": {
+        "episode": "EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP01",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      },
+      "finishedAt": "2026-11-22T06:43:23.788Z"
+    },
+    {
+      "at": "2026-11-22T06:55:50.872Z",
+      "doing": "Tahap 7 selesai (Film.tsx 6 set, SHOTLIST, sfx public/audio/ep01/sfx.wav). Tahap 8: contact sheet draft/contact-sheet.jpg, audit:visual ceilings 5, camera 5/5, skor self 4.17; menunggu juri buta",
+      "files": [
+        "studio/src/scenes/ep01/Film.tsx",
+        "studio/src/scenes/ep01/sets.ts",
+        "studio/src/scenes/ep01/sprites.ts",
+        "studio/src/scenes/ep01/hud.tsx",
+        "studio/src/scenes/ep01/timing.ts",
+        "docs/SHOTLIST.md"
+      ],
+      "next": "Catat skor juri (record_score judge jury); bila LOLOS tunjukkan contact sheet + minta acc draf; lalu final render:final Ep01Final --sfx=public/audio/ep01/sfx.wav",
+      "snapshot": {
+        "episode": "EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP01",
+        "currentStage": "animation",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T06:56:35.318Z",
+      "doing": "Tahap 8 draf: juri buta 3.67 PERLU POLES (self 4.17). Poles belum dimulai.",
+      "files": [
+        "studio/src/scenes/ep01/Film.tsx",
+        "studio/src/scenes/ep01/sets.ts",
+        "studio/src/scenes/ep01/hud.tsx",
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "Poles di studio/src/scenes/ep01 lalu render ulang contact sheet (node scripts/stills.mjs out/ep01-draft 1s,18.5s,39.9s,49.3s,59s,66.5s,73s,80s Ep01Preview; salin ke draft/contact-sheet.jpg), audit:visual, record_score self + juri buta baru (qa/jury.md). Daftar poles: (1) E2 Alan 66.5s: ganti framing beda dari C, mis. wide/low angle Alan di podium kecil dengan dua bendera, atau sideCourt dengan kamera jauh (z negatif) + low angle; (2) C 39.9s: kamera lebih dekat/low over-shoulder Susi, isi sepertiga bawah, hilangkan bar merah Glitch di bawah (Glitch hanya di area atas atau opacity lebih kecil); (3) D 49.3s: pemain depan (Susi, x=34) terpotong kiri -> geser x ke 42 atau camX offset; (4) Hook 1s: kurangi teks, Scoreboard 5-11 muncul setelah CoverText pudar (>=2.8s) dan chip USIA/EMAS satu per satu; (5) OUT 80s: panel skor AUDIRA lalu teaser EP02 bergantian (skor sampai T.berikutnya, teaser sesudahnya); (6) semua chip/label >=36 px (Chip min 40 sudah; LifeBar label 34, NameCard role 34, LevelBanner label -> 36+); (7) tekstur lantai: sideCourt mid lantai wood dengan vline serat tiap 9 px + jitter lebih besar, matras hijau dither, netClose lantai sama; arena.ts sudah punya pola serat (vline tiap 9).",
+      "snapshot": {
+        "episode": "EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP01",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T06:58:55.446Z",
+      "doing": "Tahap 8 poles putaran 1 selesai (7 perbaikan juri: AlanScene di arena cover wide, side court lebih dekat + bangku FG, Susi D x46, hook/outro 1 blok teks, label >=36 px, serat lantai + dither matras, glitch hanya di band atas). Contact sheet baru di draft/contact-sheet.jpg, audit:visual plafon 5, self 4.17; menunggu juri buta putaran 2",
+      "next": "Catat skor juri putaran 2. LOLOS -> tunjukkan contact sheet + minta acc draf (jangan render final sebelum acc). Gagal -> poles putaran 2; bila tetap gagal karena plafon struktural, lapor dan tawarkan ganti style.",
+      "snapshot": {
+        "episode": "EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP01",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T06:59:40.996Z",
+      "doing": "Gerbang draf tahap 8: juri buta putaran 2 LOLOS 4.00 (komposisi 3). Contact sheet draft/contact-sheet.jpg sudah diminta acc ke pengguna; acc BELUM diberikan.",
+      "files": [
+        "studio/src/scenes/ep01/Film.tsx",
+        "draft/contact-sheet.jpg",
+        "studio/public/audio/ep01/vo.wav",
+        "studio/public/audio/ep01/sfx.wav"
+      ],
+      "next": "Tunggu acc draf dari pengguna (update stage draft approved hanya dari jawaban pengguna). Sebelum final, poles kecil murah di studio/src/scenes/ep01/Film.tsx: TimelinePanel label tengah tampilkan tahun berjalan tanpa duplikat 1992 (sembunyikan label kanan saat year==1992 atau ganti label tengah jadi 'TAHUN <year>'); AlanHud chip jadi dua baris '2 EMAS · 1 HARI' / '4 AGUSTUS 1992'; opsional ganti E2 jadi dua medali/podium. Lalu final: npm run render:final -- Ep01Final ... --vo=public/audio/ep01/vo.wav --sfx=public/audio/ep01/sfx.wav (setelan rule 07 §4 poin 9), QA, metadata, record_score final.",
+      "snapshot": {
+        "episode": "EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP01",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T07:00:24.811Z",
+      "doing": "Draf EP01 di-acc pengguna (\"Acc draf\"). Tahap 9 final belum dimulai.",
+      "files": [
+        "studio/src/scenes/ep01/Film.tsx",
+        "studio/public/audio/ep01/vo.wav",
+        "studio/public/audio/ep01/sfx.wav",
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "Poles kecil dulu di studio/src/scenes/ep01/Film.tsx: TimelinePanel tanpa label 1992 ganda; chip AlanHud dua baris '2 EMAS · 1 HARI' / '4 AGUSTUS 1992'. Lalu tahap 9: npm run render:final -- Ep01Final (cek argumen di scripts/render-final.mjs) --vo=public/audio/ep01/vo.wav --sfx=public/audio/ep01/sfx.wav, setelan rule 07 §4 poin 9 (--jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc), -14 LUFS TP<-1, outro + AudiraSignature, metadata ffmpeg, ffprobe, record_score final (self + juri), arsip master.",
+      "snapshot": {
+        "episode": "EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP01",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T07:07:21.179Z",
+      "doing": "Poles teks selesai (TimelinePanel tanpa 1992 ganda; chip AlanHud 2 baris via Chip sub). Final belum dirender: audira_render_batch tidak bisa untuk studio bersama (null path, gate G14 rig-audit.json, tanpa --sfx).",
+      "files": [
+        "studio/src/scenes/ep01/Film.tsx",
+        "studio/src/scenes/ep01/hud.tsx"
+      ],
+      "next": "Bila diizinkan: cd studio; npm run render:final -- --comp=Ep01Final --out=out/ep01/FINAL_EP01.mp4 --vo=public/audio/ep01/vo.wav --sfx=public/audio/ep01/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"...\" --slug=susi-susanti-emas-pertama-1992 --ep=EP01 (saat antrean kosong). Detail blocker: side-session-notes ep01-render-batch-blockers.md",
+      "snapshot": {
+        "episode": "EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP01",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T07:08:13.795Z",
+      "doing": "Render final EP01 langsung (izin sesi induk, G15) dengan GPU_LOCK.md di side-session-notes/local_1284e608.../",
+      "command": "cd studio; npm run render:final -- --comp=Ep01Final --out=out/ep01/FINAL_EP01.mp4 --vo=public/audio/ep01/vo.wav --sfx=public/audio/ep01/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Susi Susanti, Emas Pertama Indonesia 1992\" --slug=susi-susanti-emas-pertama-1992 --ep=EP01",
+      "files": [
+        "studio/out/ep01/FINAL_EP01.mp4"
+      ],
+      "next": "Hapus GPU_LOCK.md; ffprobe metadata + loudness; qa_video hardOnly; copy ke episode FINAL_VIDEO.mp4; record_score final self+jury; tahap 10.",
+      "snapshot": {
+        "episode": "EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP01",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T07:13:56.065Z",
+      "doing": "Final + caption + NOTES + pelajaran selesai. Tersisa: jam upload sebenarnya dari pengguna, lalu 3 scheduled task review-susi-susanti-emas-pertama-1992-24h/-72h/-7d (fireAt +07:00), catat taskId di NOTES.md.",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt",
+        "NOTES.md"
+      ],
+      "next": "Tanya jam upload (default Senin 23 Nov 2026 19.00 WIB TikTok), buat 3 scheduled task; prompt mandiri: path episode, slug, judul, 6 platform, metrik views/retensi/hook/komentar, langkah tahap 11 (on-demand/phase-d-deliver.md).",
+      "snapshot": {
+        "episode": "EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP01",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992/audio/vo.wav",
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T07:13:56.065Z",
+      "doing": "Final + caption + NOTES + pelajaran selesai. Tersisa: jam upload sebenarnya dari pengguna, lalu 3 scheduled task review-susi-susanti-emas-pertama-1992-24h/-72h/-7d (fireAt +07:00), catat taskId di NOTES.md.",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt",
+        "NOTES.md"
+      ],
+      "next": "Tanya jam upload (default Senin 23 Nov 2026 19.00 WIB TikTok), buat 3 scheduled task; prompt mandiri: path episode, slug, judul, 6 platform, metrik views/retensi/hook/komentar, langkah tahap 11 (on-demand/phase-d-deliver.md).",
+      "snapshot": {
+        "episode": "EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP01",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992/audio/vo.wav",
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-22T07:17:01.324Z"
+    },
+    {
+      "at": "2026-11-23T08:23:32.322Z",
+      "doing": "Pengguna (2026-11-23): \"perbaiki suara noice sangat keras\" pada FINAL_VIDEO.mp4. Dugaan: studio/scripts/render-final.mjs masih graph lama (sidechaincompress ratio=2.5 attack=15 release=350 threshold=0.1, VO tanpa loudnorm, SFX tanpa trim volume) = blocker G18d; SFX/noise terlalu keras dibanding VO.",
+      "files": [
+        "studio/scripts/render-final.mjs",
+        "studio/public/audio/ep01/sfx.wav",
+        "studio/public/audio/ep01/vo.wav",
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "1) Ukur: loudness VO vs SFX stem (ebur128), cek noise/hiss di vo.wav & sfx.wav. 2) Ganti graph render-final.mjs ke G18 (VO loudnorm I=-16, SFX volume=-10dB untuk stem -20 LUFS, sidechain ratio=8 attack=5 release=350 threshold=0.015; VO >= 12 LU di atas SFX) — koordinasi studio bersama EP02-05 (Edit kecil). 3) Remix audio saja di atas video final (video copy), deliver.mjs -14 LUFS TP<-1, metadata + npm run sign, verify. Bila perlu render ulang penuh: GPU_LOCK.md di side-session-notes/local_1284e608.../. 4) Ganti FINAL_VIDEO.mp4, catat di NOTES.md + motion memory.",
+      "snapshot": {
+        "episode": "EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP01",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992/audio/vo.wav",
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    }
+  ],
+  "handover": {
+    "at": "2026-11-23T08:23:32.322Z",
+    "doing": "Pengguna (2026-11-23): \"perbaiki suara noice sangat keras\" pada FINAL_VIDEO.mp4. Dugaan: studio/scripts/render-final.mjs masih graph lama (sidechaincompress ratio=2.5 attack=15 release=350 threshold=0.1, VO tanpa loudnorm, SFX tanpa trim volume) = blocker G18d; SFX/noise terlalu keras dibanding VO.",
+    "files": [
+      "studio/scripts/render-final.mjs",
+      "studio/public/audio/ep01/sfx.wav",
+      "studio/public/audio/ep01/vo.wav",
+      "FINAL_VIDEO.mp4"
+    ],
+    "next": "1) Ukur: loudness VO vs SFX stem (ebur128), cek noise/hiss di vo.wav & sfx.wav. 2) Ganti graph render-final.mjs ke G18 (VO loudnorm I=-16, SFX volume=-10dB untuk stem -20 LUFS, sidechain ratio=8 attack=5 release=350 threshold=0.015; VO >= 12 LU di atas SFX) — koordinasi studio bersama EP02-05 (Edit kecil). 3) Remix audio saja di atas video final (video copy), deliver.mjs -14 LUFS TP<-1, metadata + npm run sign, verify. Bila perlu render ulang penuh: GPU_LOCK.md di side-session-notes/local_1284e608.../. 4) Ganti FINAL_VIDEO.mp4, catat di NOTES.md + motion memory.",
+    "snapshot": {
+      "episode": "EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992",
+      "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+      "style": "PIXELSTORY",
+      "memoryEpisode": "fakta-olahraga-EP01",
+      "currentStage": "review",
+      "gates": {
+        "style": {
+          "approved": true,
+          "status": "done"
+        }
+      },
+      "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP01_SUSI_SUSANTI_EMAS_PERTAMA_1992/audio/vo.wav",
+      "draftScores": [],
+      "finals": [
+        "FINAL_VIDEO.mp4"
+      ],
+      "draftRounds": 0
+    }
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "AE-067",
+  "topic": "Bagaimana Terowongan Air Membawa Air Antarwilayah?",
+  "createdAt": "2026-11-23T14:14:12.001Z",
+  "updatedAt": "2026-11-24T13:08:06.038Z",
+  "currentStage": "script",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:40.088Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:14:12.000Z",
+      "startedAt": "2026-11-23T14:14:12.000Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:18:16.825Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:16:06.255Z",
+      "startedAt": "2026-11-23T14:16:06.255Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:40.088Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:14:00.403Z",
+      "startedAt": "2026-11-23T14:14:00.403Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:17:53.419Z",
+          "text": "Cartesia sonic-3, tempo x1.002: VO ends 61.00s, film 65.00s"
+        }
+      ],
+      "doneAt": "2026-11-23T15:17:53.419Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "in_progress",
+      "notes": [
+        {
+          "at": "2026-11-24T07:21:52.778Z",
+          "text": "Juri r1 3.17 PERLU POLES (penampang datar, counter 136 mid-ramp, konteks Sodetan). Poles r1 berjalan."
+        }
+      ],
+      "startedAt": "2026-11-24T07:21:52.778Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T12:37:34.120Z",
+      "notes": [
+        {
+          "at": "2026-11-24T12:43:51.964Z",
+          "text": "sync: final: FINAL_VIDEO.mp4; acc tercatat di file"
+        }
+      ],
+      "approvalSource": "file",
+      "doneAt": "2026-11-24T12:37:34.120Z",
+      "startedAt": "2026-11-24T12:37:34.120Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T12:21:45.944Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T12:17:54.770Z",
+      "startedAt": "2026-11-24T12:17:54.770Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T13:08:06.038Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-24T13:04:28.507Z",
+      "startedAt": "2026-11-24T13:04:28.507Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "batch07-EP67",
+    "engine": "remotion",
+    "style": "WORLDFORGE",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-24T13:08:06.038Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-23T18:21:11.518Z",
+      "doing": "Menulis scene ep067 (studio/src/scenes/ep067: world.tsx, Film.tsx, Cover.tsx); GLB sudah disalin ke public/models/polyfork",
+      "files": [
+        "studio/src/scenes/ep067/index.ts",
+        "studio/src/scenes/ep067/Film.tsx",
+        "studio/src/scenes/ep067/Cover.tsx",
+        "studio/src/scenes/ep067/world.tsx"
+      ],
+      "next": "Render cover still, contact sheet 8 frame, risk clip, audit camera/visual, STORYBOARD.md, sfx-cues.json, THEME_CHECK.md",
+      "snapshot": {
+        "episode": "AE-067",
+        "topic": "Bagaimana Terowongan Air Membawa Air Antarwilayah?",
+        "style": null,
+        "memoryEpisode": "batch07-EP67",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:14:34.930Z",
+      "doing": "Scene ep067 selesai (world.tsx, sets.tsx, Film.tsx, Cover.tsx); cover-topic.png tersimpan. Render ulang sheet draft/stills + RISK_CLIP 18.2–33.3 dtk (frame 546-1000)",
+      "command": "npx remotion render Ep067Preview ../EP067-terowongan-air/draft/RISK_CLIP_silent.mp4 --frames=546-1000 --concurrency=4 --log=error",
+      "next": "audit:camera, audit:visual, STORYBOARD.md, sfx-cues.json, draft/THEME_CHECK.md, hapus draft/_iter, lapor",
+      "snapshot": {
+        "episode": "AE-067",
+        "topic": "Bagaimana Terowongan Air Membawa Air Antarwilayah?",
+        "style": null,
+        "memoryEpisode": "batch07-EP67",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:14:34.930Z",
+      "doing": "Scene ep067 selesai (world.tsx, sets.tsx, Film.tsx, Cover.tsx); cover-topic.png tersimpan. Render ulang sheet draft/stills + RISK_CLIP 18.2–33.3 dtk (frame 546-1000)",
+      "command": "npx remotion render Ep067Preview ../EP067-terowongan-air/draft/RISK_CLIP_silent.mp4 --frames=546-1000 --concurrency=4 --log=error",
+      "next": "audit:camera, audit:visual, STORYBOARD.md, sfx-cues.json, draft/THEME_CHECK.md, hapus draft/_iter, lapor",
+      "snapshot": {
+        "episode": "AE-067",
+        "topic": "Bagaimana Terowongan Air Membawa Air Antarwilayah?",
+        "style": null,
+        "memoryEpisode": "batch07-EP67",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      },
+      "finishedAt": "2026-11-24T07:20:14.267Z"
+    },
+    {
+      "at": "2026-11-24T07:26:35.562Z",
+      "doing": "Poles putaran 1 selesai (sheet baru, audit:visual, THEME_CHECK). Render ulang RISK_CLIP 546-1000 + audit:camera berjalan",
+      "next": "Cek camera.json lalu lapor ke lead",
+      "snapshot": {
+        "episode": "AE-067",
+        "topic": "Bagaimana Terowongan Air Membawa Air Antarwilayah?",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "batch07-EP67",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:26:35.562Z",
+      "doing": "Poles putaran 1 selesai (sheet baru, audit:visual, THEME_CHECK). Render ulang RISK_CLIP 546-1000 + audit:camera berjalan",
+      "next": "Cek camera.json lalu lapor ke lead",
+      "snapshot": {
+        "episode": "AE-067",
+        "topic": "Bagaimana Terowongan Air Membawa Air Antarwilayah?",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "batch07-EP67",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T07:27:08.458Z"
+    }
+  ],
+  "session": 1
+}

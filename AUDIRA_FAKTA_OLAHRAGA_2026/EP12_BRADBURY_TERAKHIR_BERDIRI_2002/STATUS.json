@@ -1,0 +1,491 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP12_BRADBURY_TERAKHIR_BERDIRI_2002",
+  "topic": "Steven Bradbury, emas 2002 karena semua lawan jatuh",
+  "createdAt": "2026-11-24T11:21:06.801Z",
+  "updatedAt": "2026-11-24T17:35:28.871Z",
+  "currentStage": "complete",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T11:22:36.485Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-24T11:21:47.654Z",
+      "startedAt": "2026-11-24T11:21:47.654Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [],
+      "doneAt": "2026-11-24T11:22:07.865Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T11:22:36.485Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T11:21:47.654Z",
+      "startedAt": "2026-11-24T11:21:47.654Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T11:22:36.485Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-24T11:21:47.654Z",
+      "startedAt": "2026-11-24T11:21:47.654Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [],
+      "doneAt": "2026-11-24T16:58:07.250Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T11:25:52.317Z",
+          "text": "VO terkunci 78,4 dtk, film 82,4 dtk"
+        }
+      ],
+      "doneAt": "2026-11-24T11:25:52.317Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T16:56:58.669Z",
+          "text": "s5: 16 scene diperiksa per still, SFX 56 bunyi -20 LUFS, camera 5/5 (dead 0%, hold 0, median 0.078), diversity 59.4, G18c 19.2 LU"
+        }
+      ],
+      "doneAt": "2026-11-24T16:56:58.669Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T16:58:07.421Z",
+          "text": "Juri buta putaran 1 LOLOS 4.0 (comp 3, juri 3.5 dibulatkan ke bawah; motion 5, lain 4). Sesudah juri: penanda hijau scene G dipisah dari gerombolan, contact sheet frame 6 diperbarui."
+        }
+      ],
+      "doneAt": "2026-11-24T16:58:07.421Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T17:00:22.649Z",
+      "notes": [
+        {
+          "at": "2026-11-24T17:00:22.649Z",
+          "text": "Acc pengguna 2026-11-25: \"Acc, render\""
+        },
+        {
+          "at": "2026-11-24T17:07:38.710Z",
+          "text": "Pengguna 2026-11-25 memilih \"Render langsung\" (npm run render:final tanpa audira_render_batch, hanya EP12): batch menolak karena render-final.mjs studio tidak memuat penanda teks \"G18b\", padahal graph G18 benar. look.json: clipHi 0 di 8 frame setelah brightness(0.96) pada wrapper Picture, diversity 57."
+        },
+        {
+          "at": "2026-11-24T17:34:07.613Z",
+          "text": "FINAL_EP12.mp4: juri buta final 4,0 LOLOS, -13,6 LUFS, TP -1,8 dBFS, qa_video PASS (getaran benturan di allow), tanda tangan VALID."
+        }
+      ],
+      "startedAt": "2026-11-24T17:00:22.649Z",
+      "doneAt": "2026-11-24T17:34:07.613Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T17:13:47.157Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T17:08:47.547Z",
+      "startedAt": "2026-11-24T17:08:47.547Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T17:35:28.871Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-24T17:34:08.090Z",
+      "startedAt": "2026-11-24T17:34:08.090Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "fakta-olahraga-EP12",
+    "style": "PIXELSTORY",
+    "engine": "remotion",
+    "shortTitle": "Bradbury",
+    "wordCount": 191,
+    "estimatedDuration": {
+      "wordCount": 191,
+      "minSec": 76,
+      "maxSec": 85
+    }
+  },
+  "handoverLog": [
+    {
+      "at": "2026-11-24T11:21:58.319Z",
+      "doing": "Riset, STYLE_DECISION (PIXELSTORY 2D), naskah 191 kata selesai; belum ada docs lain, VO, kode",
+      "files": [
+        "docs/SCRIPT.md",
+        "docs/vo-script.txt",
+        "research/SOURCE_REGISTER.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Setelah EP11 sampai draf: ART_DIRECTION, STORYBOARD, ASSET_MANIFEST, cover topik, VO",
+      "snapshot": {
+        "episode": "EP12_BRADBURY_TERAKHIR_BERDIRI_2002",
+        "topic": "Steven Bradbury, emas 2002 karena semua lawan jatuh",
+        "style": null,
+        "memoryEpisode": "fakta-olahraga-EP12",
+        "currentStage": "context",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T11:29:15.883Z",
+      "doing": "Riset, STYLE_DECISION (PIXELSTORY 2D), naskah 191 kata selesai. Pengguna 2026-11-24: \"jalnakna ep 12 dan 13 sekaligus\" (paralel dengan EP11, sesi sendiri)",
+      "files": [
+        "docs/SCRIPT.md",
+        "docs/vo-script.txt",
+        "research/SOURCE_REGISTER.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "ART_DIRECTION, STORYBOARD, ASSET_MANIFEST, cover topik, VO, kode studio/src/scenes/ep12, draf, juri, gerbang acc",
+      "snapshot": {
+        "episode": "EP12_BRADBURY_TERAKHIR_BERDIRI_2002",
+        "topic": "Steven Bradbury, emas 2002 karena semua lawan jatuh",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP12",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP12_BRADBURY_TERAKHIR_BERDIRI_2002/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T11:32:42.848Z",
+      "doing": "Docs rule 12 + cover-reference + timing.ts + hud.tsx ep12 selesai; belum ada render",
+      "files": [
+        "docs/BUILD_NOTES.md",
+        "docs/SHOTLIST.md",
+        "docs/STORYBOARD.md",
+        "studio/src/scenes/ep12/timing.ts",
+        "studio/src/scenes/ep12/hud.tsx"
+      ],
+      "next": "Baca docs/BUILD_NOTES.md, tulis sprites.ts, sets.ts, Film.tsx, Cover.tsx, index.ts, baris Root.tsx EP12; cover-topic, SFX, contact sheet, THEME_CHECK, juri, gerbang acc final",
+      "snapshot": {
+        "episode": "EP12_BRADBURY_TERAKHIR_BERDIRI_2002",
+        "topic": "Steven Bradbury, emas 2002 karena semua lawan jatuh",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP12",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP12_BRADBURY_TERAKHIR_BERDIRI_2002/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T11:43:01.037Z",
+      "doing": "Tahap 7 animasi: sprites.ts, sets.ts, stage.tsx selesai dan lolos tsc; Film.tsx belum ditulis",
+      "files": [
+        "docs/BUILD_NOTES.md",
+        "studio/src/scenes/ep12/sprites.ts",
+        "studio/src/scenes/ep12/sets.ts",
+        "studio/src/scenes/ep12/stage.tsx"
+      ],
+      "next": "Tulis Film.tsx, Cover.tsx, index.ts, baris EP12 di Root.tsx memakai API dan rencana scene di docs/BUILD_NOTES.md, lalu still per beat",
+      "snapshot": {
+        "episode": "EP12_BRADBURY_TERAKHIR_BERDIRI_2002",
+        "topic": "Steven Bradbury, emas 2002 karena semua lawan jatuh",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP12",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP12_BRADBURY_TERAKHIR_BERDIRI_2002/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T16:50:30.552Z",
+      "doing": "Sesi B tahap 7: 16 scene EP12 sudah ditulis dan lolos tsc; still A, B, C1, C2 sudah dilihat (4 perbaikan dicatat di BUILD_NOTES STATUS s4); D1 sampai L dan Cover belum dilihat",
+      "command": "npm run stills -- out/ep12 22.6s,23.5s,25.2s,30.5s,34.6s,38.8s,42.0s,47.6s Ep12Preview 1 (cwd studio, TEMP/TMP=F:/temp)",
+      "files": [
+        "docs/BUILD_NOTES.md",
+        "../studio/src/scenes/ep12/shotsA.tsx",
+        "../studio/src/scenes/ep12/shotsB.tsx",
+        "../studio/src/scenes/ep12/themes.ts",
+        "../studio/src/scenes/ep12/Film.tsx",
+        "../studio/src/scenes/ep12/Cover.tsx",
+        "../studio/src/Root.tsx"
+      ],
+      "next": "Kerjakan perbaikan 1-5 di docs/BUILD_NOTES.md, still D1..L, cover-topic, sfx, preflight, contact sheet, audit, THEME_CHECK, juri buta, G18c, gerbang acc",
+      "snapshot": {
+        "episode": "EP12_BRADBURY_TERAKHIR_BERDIRI_2002",
+        "topic": "Steven Bradbury, emas 2002 karena semua lawan jatuh",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP12",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP12_BRADBURY_TERAKHIR_BERDIRI_2002/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T16:58:07.745Z",
+      "doing": "Sesi B selesai (tahap 5-8). Style PIXELSTORY, Remotion 2D, VO 82,37 dtk offset 0, juri buta putaran 1 LOLOS 4.0 (lighting/material/depth/readability 4, composition 3 [juri 3.5], motion 5), self 4.17, diversity 59.4, camera deadPct 0 hold 0 median 0.078, THEME_CHECK semua ya, G18c 19.2 LU (VO -16.5, SFX ter-duck -35.7 LUFS), cover-topic ada",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "style/cover-topic.png",
+        "draft/look.json",
+        "draft/camera.json",
+        "../studio/src/scenes/ep12",
+        "docs/SCRIPT.md (hanya untuk caption)",
+        "research/SOURCE_REGISTER.md (hanya untuk caption)"
+      ],
+      "next": "Sesi C tahap 9: tampilkan contact sheet, skor, durasi, G18c lalu TUNGGU acc pengguna; setelah acc render final lewat audira_render_batch project studio, comp Ep12Final, episode folder EP12, vo public/audio/ep12/vo.wav, sfx public/audio/ep12/sfx.wav, ep EP12; lalu QA dan delivery tahap 10",
+      "snapshot": {
+        "episode": "EP12_BRADBURY_TERAKHIR_BERDIRI_2002",
+        "topic": "Steven Bradbury, emas 2002 karena semua lawan jatuh",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP12",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP12_BRADBURY_TERAKHIR_BERDIRI_2002/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:00:58.965Z",
+      "doing": "Tahap 9: acc pengguna diterima 2026-11-25 (\"Acc, render\"), approved true tercatat. audira_render_batch plan menolak: (a) look.json frame f0090 clipHi 0.1 > 0 (juga f0588 2.9, f0756 0.9, f1038 0.2); clipHi = piksel luminans >= 250; (b) render-final.mjs studio dibaca pre-2026-11-22 mix (feat.mix di F:/AUDIRA-ALL-SKILL/mcp-server/src/render-batch.js:429), padahal graph G18 sudah ada (loudnorm, volume=-10dB, threshold 0.015 ratio 8). Render BELUM dimulai",
+      "files": [
+        "draft/look.json",
+        "draft/contact-sheet.jpg",
+        "../studio/src/scenes/ep12/Film.tsx",
+        "docs/SCRIPT.md (caption)",
+        "research/SOURCE_REGISTER.md (caption)"
+      ],
+      "next": "1) turunkan highlight di ep12/Film.tsx (mis. filter brightness 0.96 pada wrapper picture), render ulang 8 still ke out/ep12/qa, contact-sheet, look.json sampai clipHi 0; 2) tangani (b): scripts/ bersama, jangan ubah tanpa izin, cek fungsi deteksi feat.mix dulu; 3) audira_render_batch start Ep12Final slug bradbury-terakhir-berdiri-2002; 4) QA, record_score final, delivery tahap 10",
+      "snapshot": {
+        "episode": "EP12_BRADBURY_TERAKHIR_BERDIRI_2002",
+        "topic": "Steven Bradbury, emas 2002 karena semua lawan jatuh",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP12",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP12_BRADBURY_TERAKHIR_BERDIRI_2002/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:07:55.634Z",
+      "doing": "s6: render:final langsung berjalan di background (izin pengguna 2026-11-25 \"Render langsung\"), log F:/temp/ep12-final.log. clipHi 0, G18c 19,2 LU.",
+      "command": "cwd studio, TEMP/TMP=F:/temp: npm run render:final -- --comp=Ep12Final --out=../EP12_BRADBURY_TERAKHIR_BERDIRI_2002/FINAL_EP12.mp4 --vo=public/audio/ep12/vo.wav --sfx=public/audio/ep12/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Steven Bradbury: Terakhir Berdiri, Juara Olimpiade 2002\" --slug=bradbury-terakhir-berdiri-2002 --ep=EP12",
+      "files": [
+        "FINAL_EP12.mp4"
+      ],
+      "next": "QA final (LUFS, TP, ffprobe, qa_video hardOnly, verify_signature, sheet frame), record_score final self+juri buta, delivery tahap 10",
+      "snapshot": {
+        "episode": "EP12_BRADBURY_TERAKHIR_BERDIRI_2002",
+        "topic": "Steven Bradbury, emas 2002 karena semua lawan jatuh",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP12",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP12_BRADBURY_TERAKHIR_BERDIRI_2002/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:14:19.485Z",
+      "doing": "s6: FINAL_EP12.mp4 SELESAI (1080x1920@60, 82,40 dtk, -13,6 LUFS, TP -1,8, metadata + tanda tangan VALID + C2PA, clipHi 0). qa_video hardOnly pertama FAIL 23 LONCAT; strip diperiksa: semuanya getaran benturan (fungsi shake di stage.tsx, HUD/caption diam) pada 3,13-3,30 / 15,33-15,57 / 23,43-23,47 / 50,33-50,67 / 59,45-60,12 = sengaja; ulang dengan --allow belum selesai (MCP timeout). camera-final 5/5. Skor self final tercatat 4,0. Juri buta subagen sedang berjalan. SOCIAL_CAPTIONS.md lolos validator, SUBTITLES.srt 39 cue.",
+      "command": "audira_qa_video FINAL_EP12.mp4 cuts=5.83,12.55,16.52,20.16,24.08,28.23,32.06,39.65,47.99,51.85,55.61,60.53,62.67,67.02,73.02,78.57 allow=1.94,2.95,3.13,3.23,3.3,15.13,15.33,15.4,15.47,15.57,22.65,23.12,23.43,23.47,24.85,50.33,50.37,50.43,50.67,57.43,59.45,59.48,59.65,59.85,59.92,59.95,59.98,60.05,60.08,60.12,62.03,63.69 hardOnly out=F:/temp/ep12q",
+      "files": [
+        "FINAL_EP12.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt",
+        "draft/final-sheet.jpg",
+        "draft/camera-final.json",
+        "draft/look-final.json"
+      ],
+      "next": "record_score final jury (sheet draft/final-sheet.jpg, kamera draft/camera-final.json), append_lesson worked/fix PIXELSTORY, NOTES.md, MASTER_INDEX baris 12, STATUS final+delivery done, bersihkan studio/out/ep12 + F:/temp/ep12*, tanya jam upload (default Jumat 4 Des 2026 19.00 WIB) lalu 3 scheduled task review-bradbury-24h/-72h/-7d, caption lengkap di chat, arsip sesi lama EP12 s1-s5",
+      "snapshot": {
+        "episode": "EP12_BRADBURY_TERAKHIR_BERDIRI_2002",
+        "topic": "Steven Bradbury, emas 2002 karena semua lawan jatuh",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP12",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP12_BRADBURY_TERAKHIR_BERDIRI_2002/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:14:19.485Z",
+      "doing": "s6: FINAL_EP12.mp4 SELESAI (1080x1920@60, 82,40 dtk, -13,6 LUFS, TP -1,8, metadata + tanda tangan VALID + C2PA, clipHi 0). qa_video hardOnly pertama FAIL 23 LONCAT; strip diperiksa: semuanya getaran benturan (fungsi shake di stage.tsx, HUD/caption diam) pada 3,13-3,30 / 15,33-15,57 / 23,43-23,47 / 50,33-50,67 / 59,45-60,12 = sengaja; ulang dengan --allow belum selesai (MCP timeout). camera-final 5/5. Skor self final tercatat 4,0. Juri buta subagen sedang berjalan. SOCIAL_CAPTIONS.md lolos validator, SUBTITLES.srt 39 cue.",
+      "command": "audira_qa_video FINAL_EP12.mp4 cuts=5.83,12.55,16.52,20.16,24.08,28.23,32.06,39.65,47.99,51.85,55.61,60.53,62.67,67.02,73.02,78.57 allow=1.94,2.95,3.13,3.23,3.3,15.13,15.33,15.4,15.47,15.57,22.65,23.12,23.43,23.47,24.85,50.33,50.37,50.43,50.67,57.43,59.45,59.48,59.65,59.85,59.92,59.95,59.98,60.05,60.08,60.12,62.03,63.69 hardOnly out=F:/temp/ep12q",
+      "files": [
+        "FINAL_EP12.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt",
+        "draft/final-sheet.jpg",
+        "draft/camera-final.json",
+        "draft/look-final.json"
+      ],
+      "next": "record_score final jury (sheet draft/final-sheet.jpg, kamera draft/camera-final.json), append_lesson worked/fix PIXELSTORY, NOTES.md, MASTER_INDEX baris 12, STATUS final+delivery done, bersihkan studio/out/ep12 + F:/temp/ep12*, tanya jam upload (default Jumat 4 Des 2026 19.00 WIB) lalu 3 scheduled task review-bradbury-24h/-72h/-7d, caption lengkap di chat, arsip sesi lama EP12 s1-s5",
+      "snapshot": {
+        "episode": "EP12_BRADBURY_TERAKHIR_BERDIRI_2002",
+        "topic": "Steven Bradbury, emas 2002 karena semua lawan jatuh",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "fakta-olahraga-EP12",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP12_BRADBURY_TERAKHIR_BERDIRI_2002/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T17:34:15.457Z"
+    }
+  ],
+  "session": 6,
+  "syncedAt": "2026-11-24T17:35:28.871Z",
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP12 Bradbury · s2",
+      "at": "2026-11-24T11:29:15.883Z"
+    },
+    {
+      "no": 3,
+      "title": "EP12 Bradbury · s3",
+      "at": "2026-11-24T11:32:42.847Z"
+    },
+    {
+      "no": 4,
+      "title": "EP12 Bradbury · s4",
+      "at": "2026-11-24T11:43:01.037Z"
+    },
+    {
+      "no": 5,
+      "title": "EP12 Bradbury · s5",
+      "at": "2026-11-24T16:50:30.552Z"
+    },
+    {
+      "no": 6,
+      "title": "EP12 Bradbury · s6",
+      "at": "2026-11-24T16:58:07.745Z"
+    }
+  ]
+}

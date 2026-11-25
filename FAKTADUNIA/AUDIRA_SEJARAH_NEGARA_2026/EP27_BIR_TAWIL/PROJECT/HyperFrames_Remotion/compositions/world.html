@@ -1,0 +1,169 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#DFE4EA}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.045;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.22) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.38) 42%,rgba(0,0,0,0.38) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#1B1F25;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.pre{position:absolute;left:-2000px;top:0;opacity:0}
+.p{transform-origin:0% 0%}
+.cd{position:relative;background:rgba(14,17,22,.88);border:1px solid rgba(255,255,255,.14);border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.kk{display:inline-flex;align-items:center;gap:14px;font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-size:26px;letter-spacing:.1em;color:#F2973A;margin-bottom:16px;padding:12px 22px;background:rgba(14,17,22,.88);border:1px solid rgba(255,255,255,.14);border-radius:12px}
+.kk i{display:block;width:14px;height:14px;border-radius:50%}
+.h1{font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;font-size:84px;line-height:.98;letter-spacing:-.01em;color:#fff;background:rgba(14,17,22,.88);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:20px 28px 22px;width:max-content;max-width:880px}
+.h1 em{font-style:normal;color:#F2973A}
+.h2{font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;font-size:110px;line-height:1;color:#fff;background:rgba(14,17,22,.88);border-radius:12px;padding:14px 28px 18px;width:max-content}
+.chips{display:flex;flex-wrap:wrap;gap:16px;margin-top:18px;align-items:center}
+.ch{font-style:normal;font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;font-size:50px;line-height:1;letter-spacing:.03em;padding:14px 26px 12px;border:5px solid #F2973A;color:#fff;background:rgba(194,65,12,.92);border-radius:8px;transform:rotate(-3deg);box-shadow:0 10px 26px rgba(0,0,0,.35)}
+.ch.pu{background:rgba(110,60,190,.94);border-color:#C9A8FF}
+.row{margin-top:14px;padding:12px 26px 14px 26px;border-left:12px solid #F2973A;max-width:900px;width:max-content;box-sizing:border-box}
+.row b{display:block;font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;font-size:50px;line-height:1.04;color:#fff}
+.row span{display:block;margin-top:4px;font-family:'JetBrains Mono',Consolas,monospace;font-weight:500;font-size:25px;line-height:1.3;color:#C8CED8}
+.row.rd{border-left-color:#E04A3A}.row.rd b{color:#FF7A6B}
+.row.bl{border-left-color:#2D6CDF}.row.bl b{color:#7FA8FF}
+.mega{display:flex;align-items:center;gap:20px;width:max-content;margin-top:16px;padding:6px 30px 8px;border-left:12px solid #F2973A}
+.mega b{font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;font-size:150px;line-height:1.02;color:#fff;font-variant-numeric:tabular-nums}
+.mega small{font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-size:34px;line-height:1.15;color:#F2973A;letter-spacing:.06em}
+.mega.hot b{color:#FF7A6B}
+.yr{display:inline-block;margin-top:4px;font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;font-size:150px;line-height:1;padding:4px 28px 10px;border-radius:12px;color:#fff}
+.yr.rd{background:rgba(196,52,38,.94)}.yr.bl{background:rgba(36,92,200,.94)}
+.note{display:inline-block;margin-top:14px;font-family:'JetBrains Mono',Consolas,monospace;font-weight:500;font-size:23px;color:#E8ECF2;background:rgba(14,17,22,.82);padding:6px 14px;border-radius:8px}
+.lines{display:flex;gap:16px;margin-top:4px}
+.lines span{font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-size:34px;color:#fff;padding:12px 20px;border-radius:10px}
+.lr{background:rgba(196,52,38,.94)}.lb{background:rgba(36,92,200,.94)}
+.q{margin-top:10px;padding:20px 28px 20px;font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;font-size:54px;line-height:1.08;color:#fff;border-left:12px solid #F2973A;max-width:880px}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="77.54" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">PETA DISEDERHANAKAN &middot; PROPERTI TIDAK SESUAI SKALA</div>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@500;700&display=block">
+<div class="pre"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700">BIR TAWIL 2.060 km²</span><span style="font-family:'Space Grotesk',sans-serif;font-weight:500">abc</span><span style="font-family:'JetBrains Mono',monospace;font-weight:500">45 °C</span><span style="font-family:'JetBrains Mono',monospace;font-weight:700">AUDIRA</span></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2:Namanya">
+  <div class="kk"><i style="background:#F2973A"></i>FAKTA SEJARAH NEGARA // EP 27</div>
+  <div class="h1">TANAH YANG <em>TIDAK</em><br>DIINGINKAN SIAPA PUN</div>
+  <div class="cd mega" data-at="s1:lebih" data-fx="card"><small>LUAS</small><b><b class="ct" data-from="0" data-to="2060" data-a="s1:lebih" data-d="0.6">0</b></b><small>km²</small></div>
+</div>
+<div class="p" data-in="s2:Namanya" data-out="s2:Letaknya">
+  <div class="kk"><i style="background:#F2973A"></i>NAMA // ARTI</div>
+  <div class="h2">BIR TAWIL</div>
+  <div class="cd row " data-at="s2:artinya" data-fx="card"><b>BIR = SUMUR</b><span>TAWIL = TINGGI / PANJANG</span></div>
+</div>
+<div class="p" data-in="s2:Letaknya" data-out="s3">
+  <div class="kk"><i style="background:#F2973A"></i>LOKASI // IKLIM</div>
+  <div class="cd row " data-at="s2:Mesir" data-fx="card"><b>ANTARA MESIR &amp; SUDAN</b><span>perbatasan, di tengah gurun</span></div>
+  <div class="cd mega hot" data-at="s2:suhunya" data-fx="card"><small>SUHU HINGGA</small><b><b class="ct" data-from="24" data-to="45" data-a="s2:empat" data-d="0.7">24</b></b><small>°C</small></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="kk"><i style="background:#E04A3A"></i>19 JAN 1899 // PERJANJIAN INGGRIS–MESIR</div>
+  <div class="yr rd" data-at="s3:1899" data-fx="card">1899</div>
+  <div class="cd row rd" data-at="s3:lintang" data-fx="card"><b>GARIS LURUS 22° LU</b><span>batas politik</span></div>
+  <div class="cd row " data-at="s3:selatan" data-fx="card"><b>SELATAN GARIS = SUDAN</b></div>
+</div>
+<div class="p" data-in="s4" data-out="s4:Bir">
+  <div class="kk"><i style="background:#2D6CDF"></i>4 NOV 1902 // GARIS KEDUA</div>
+  <div class="yr bl" data-at="s4:1902" data-fx="card">1902</div>
+  <div class="cd row bl" data-at="s4:batas" data-fx="card"><b>BATAS ADMINISTRASI</b><span>mengikuti wilayah gembala suku</span></div>
+</div>
+<div class="p" data-in="s4:Bir" data-out="s5">
+  <div class="kk"><i style="background:#2D6CDF"></i>1902 // SIAPA MENGURUS</div>
+  <div class="cd row " data-at="s4:Kairo" data-fx="card"><b>BIR TAWIL → DIURUS KAIRO</b></div>
+  <div class="cd row " data-at="s4:Halaib" data-fx="card"><b>HALAIB → DIURUS SUDAN</b></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="kk"><i style="background:#8D5BD8"></i>DUA KLAIM // DUA GARIS</div>
+  <div class="cd row rd" data-at="s5:1899" data-fx="card"><b>MESIR PAKAI GARIS 1899</b><span>Halaib masuk Mesir</span></div>
+  <div class="cd row bl" data-at="s5:1902" data-fx="card"><b>SUDAN PAKAI GARIS 1902</b><span>Halaib masuk Sudan</span></div>
+  <div class="chips"><i class="ch pu" data-at="s5:Sudan#2" data-fx="stampc">HALAIB DIKLAIM KEDUANYA</i></div>
+</div>
+<div class="p" data-in="s6" data-out="s6:Mengklaim">
+  <div class="kk"><i style="background:#F2973A"></i>MASALAHNYA</div>
+  <div class="cd row " data-at="s6:Bir" data-fx="card"><b>BIR TAWIL SELALU JATUH KE PIHAK LAIN</b><span>garis mana pun yang dipakai</span></div>
+</div>
+<div class="p" data-in="s6:Mengklaim" data-out="s7">
+  <div class="kk"><i style="background:#F2973A"></i>TIMBANGAN // SKALA SAMA</div>
+  <div class="cd row " data-at="s6:melepas" data-fx="card"><b>KLAIM BIR TAWIL = LEPAS HALAIB</b></div>
+  <div class="cd mega" data-at="s6:sepuluh" data-fx="card"><small>HALAIB &asymp;</small><b>10&times;</b><small>lebih luas<br>+ pantai</small></div>
+  <div class="chips"><i class="ch" data-at="s6:mau" data-fx="stampc">TIDAK ADA YANG MAU</i></div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Banyak">
+  <div class="kk"><i style="background:#F2973A"></i>KONDISI BIR TAWIL</div>
+  <div class="cd row " data-at="s7:air" data-fx="card"><b>TANPA AIR PERMUKAAN</b></div>
+  <div class="cd row " data-at="s7:permukiman" data-fx="card"><b>TANPA PERMUKIMAN TETAP</b></div>
+  <div class="cd row " data-at="s7:laut" data-fx="card"><b>&ge; 200 km DARI LAUT MERAH</b></div>
+</div>
+<div class="p" data-in="s7:Banyak" data-out="s8">
+  <div class="kk"><i style="background:#F2973A"></i>&quot;NEGARA MIKRO&quot;</div>
+  <div class="cd row " data-at="s7:mendirikan" data-fx="card"><b>BANYAK YANG MENGAKU</b><span>kebanyakan lewat internet, dari jauh</span></div>
+  <div class="chips"><i class="ch" data-at="s7:diakui" data-fx="stampc">TIDAK SATU PUN DIAKUI</i></div>
+  <div class="note" data-at="s7:negara" data-fx="fade">bendera di layar rekaan, bukan bendera asli</div>
+</div>
+<div class="p" data-in="s8" data-out="s8:Menurut+1.4">
+  <div class="kk"><i style="background:#F2973A"></i>TANAH TAK BERTUAN</div>
+  <div class="lines"><span class="lr">GARIS 1899</span><span class="lb">GARIS 1902</span></div>
+</div>
+<div class="p" data-in="s8:Menurut+1.4" data-out="@END">
+  <div class="cd q">Kalau kamu yang mengklaim Bir Tawil, negaramu diberi nama apa? Tulis di komentar!</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 27</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":5.664,"s2":5.824,"s2e":14.295,"s3":14.455,"s3e":23.382,"s4":23.542,"s4e":35.599,"s5":35.759,"s5e":46.363,"s6":46.523,"s6e":56.829,"s7":56.989,"s7e":66.47,"s8":66.63,"s8e":74.544,"end":74.544,"dur":77.54,"outro":74.794},AT={"s1:lebih":2.15,"s1:dua":2.877,"s1:kilometer":3.202,"s1:persegi":3.651,"s1:tidak":4.286,"s2:Bir":6.3,"s2:artinya":6.997,"s2:sumur":7.415,"s2:tinggi":8.019,"s2:Letaknya":8.815,"s2:Mesir":9.682,"s2:Sudan":10.255,"s2:suhunya":11.958,"s2:bisa":12.438,"s2:empat":13.134,"s2:derajat":13.846,"s3:1899":15.377,"s3:Inggris":17.194,"s3:garis":18.758,"s3:lintang":19.625,"s3:derajat":20.383,"s3:selatan":21.493,"s3:Sudan":22.855,"s4:1902":24.779,"s4:garis":26.621,"s4:batas":27.426,"s4:gembala":29.222,"s4:suku":29.47,"s4:setempat":29.64,"s4:Bir":30.801,"s4:Kairo":32.302,"s4:Segitiga":33.092,"s4:Halaib":33.51,"s4:Laut":34.346,"s4:Merah":34.5,"s4:Sudan":35.212,"s5:Mesir":36.239,"s5:memakai":36.858,"s5:1899":37.756,"s5:Halaib":40.248,"s5:Mesir#2":40.697,"s5:Sudan":41.815,"s5:memakai#2":42.171,"s5:1902":43.007,"s5:Halaib#2":45.357,"s5:Sudan#2":45.961,"s6:Bir":48.331,"s6:lain":50.018,"s6:Mengklaim":50.823,"s6:Tawil#2":51.396,"s6:melepas":52.17,"s6:Halaib":52.619,"s6:sepuluh":53.346,"s6:pantai":54.879,"s6:mau":56.489,"s7:air":58.08,"s7:permukiman":59.581,"s7:jauh":60.804,"s7:laut":61.222,"s7:Banyak":61.501,"s7:mendirikan":62.306,"s7:negara":62.724,"s7:internet":64.071,"s7:tidak#3":65.278,"s7:diakui":65.99,"s8:dua":68.116,"s8:garis":68.286,"s8:peta":68.952,"s8:Menurut":69.544,"s8:kalau":70.147,"s8:nama":72.098,"s8:Ikuti":72.64,"s8:AUDIRA":73.027,"s2:Namanya":5.824,"s8:Menurut+1.4":70.944},DUR=77.54,OUT=74.794;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ card:(e,t)=>{const d=e.dataset.d||(e.matches('.mega')?'flex':e.matches('.yr')?'inline-block':'block');gsap.set(e,{display:'none'});tl.set(e,{display:d},t);tl.fromTo(e,{opacity:0,y:30},{opacity:1,y:0,duration:.36,ease:'power3.out',immediateRender:false},t);},
+ stampc:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:'inline-block'},t);tl.fromTo(e,{scale:1.9,opacity:0,rotation:-9},{scale:1,opacity:1,rotation:-3,duration:.2,ease:'power4.in',immediateRender:false},t);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{opacity:0,y:-30},{opacity:1,y:0,duration:.38,ease:'power3.out'},a-.02),POUT=(tl,p,b)=>tl.to(p,{opacity:0,y:-24,duration:.22,ease:'power2.in'},b-.24);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP27_BIR_TAWIL")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

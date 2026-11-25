@@ -1,0 +1,126 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#101826}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.06;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.5) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.3) 42%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'IBM Plex Sans Condensed',sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#E8D9B5;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+
+.tg{display:table;font-family:'IBM Plex Sans Condensed',sans-serif;font-weight:600;font-size:26px;letter-spacing:.14em;color:#36C5F0;background:rgba(16,24,38,.88);border:2px solid #36C5F0;padding:7px 16px 6px;margin-bottom:14px}
+.cd{display:table;background:#E8D9B5;color:#3B2A1A;border:3px solid #3B2A1A;box-shadow:inset 0 0 0 6px #E8D9B5,inset 0 0 0 8px rgba(59,42,26,.5),0 14px 30px rgba(0,0,0,.5);padding:14px 26px 16px;margin-bottom:14px}
+.ti{font-family:Cinzel,serif;font-weight:700;font-size:96px;line-height:1.0}.ti span{color:#D7263D}
+.h{font-family:Cinzel,serif;font-weight:700;font-size:46px;line-height:1.1}
+.h2{font-family:Cinzel,serif;font-weight:700;font-size:58px;line-height:1.08}.h2 span{color:#D7263D}
+.l{font-family:'IBM Plex Sans Condensed',sans-serif;font-weight:600;font-size:40px;line-height:1.15}.sm{font-size:34px}
+.n{font-family:'IBM Plex Sans Condensed',sans-serif;font-weight:700;font-size:100px;color:#D7263D;line-height:1}
+.row{display:flex;gap:14px;align-items:stretch}.row .cd{margin-bottom:14px}
+.g{border-left:16px solid #4FA65A}.o{border-left:16px solid #C99A2E}.r{border-left:16px solid #D7263D}.c{border-left:16px solid #36C5F0}
+.stp{display:table;font-family:'IBM Plex Sans Condensed',sans-serif;font-weight:700;font-size:50px;letter-spacing:.04em;color:#D7263D;background:rgba(232,217,181,.94);border:5px solid #D7263D;box-shadow:inset 0 0 0 4px rgba(232,217,181,.94),inset 0 0 0 6px #D7263D;padding:6px 20px;margin:4px 0 16px 6px}
+#chip{color:#E8D9B5;background:rgba(16,24,38,.7);padding:3px 12px;top:176px;font-size:21px}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="97.62" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN CUPLIKAN GAME</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tg">FAKTA GAME / EP 01 &middot; PETA WABAH</div>
+  <div class="cd"><div class="ti">WABAH<br><span>2005</span></div></div>
+  <div class="cd l" data-at="s1:Sampai" data-fx="ink">Lembaga kesehatan Amerika ikut bertanya</div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="tg">13 SEP 2005 &middot; AREA BARU</div>
+  <div class="row"><div class="cd h" data-at="s2:Zul'Gurub" data-fx="ink">Zul'Gurub</div><div class="cd l" data-at="s2:Hakkar" data-fx="ink">Bos: Hakkar</div></div>
+  <div class="stp" data-at="s2:Corrupted" data-fx="stamp">CORRUPTED BLOOD</div>
+  <div class="cd l" data-at="s2:menular" data-fx="ink">Menular ke pemain yang berdekatan</div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tg">CELAH: HEWAN PELIHARAAN</div>
+  <div class="cd l" data-at="s3:menyimpan" data-fx="ink">Pet disimpan di tengah pertarungan</div>
+  <div class="stp" data-at="s3:lupa" data-fx="stamp">TANPA TOMBOL MATI</div>
+  <div class="cd l" data-at="s3:dikeluarkan" data-fx="ink">Dilepas di kota yang ramai</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="tg">DAMAGE KUTUKAN</div>
+  <div class="cd" data-at="s4:dua" data-fx="ink"><div class="n">263&ndash;337</div><div class="l sm">poin / 2 detik</div></div>
+  <div class="cd l" data-at="s4:Karakter" data-fx="ink">Level tertinggi: mati &le; 30 detik</div>
+  <div class="stp" data-at="s4:NPC" data-fx="stamp">NPC: PEMBAWA TANPA GEJALA</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="tg">REAKSI PEMAIN = DUNIA NYATA</div>
+  <div class="cd l g" data-at="s5:healer" data-fx="ink">Healer jadi relawan</div>
+  <div class="cd l o" data-at="s5:berjaga" data-fx="ink">Penjaga di pinggir kota</div>
+  <div class="cd l r" data-at="s5:sengaja" data-fx="ink">Sengaja menularkan diri</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="tg">RESPON BLIZZARD</div>
+  <div class="row"><div class="cd l" data-at="s6:karantina" data-fx="ink">Karantina</div><div class="cd l" data-at="s6:restart" data-fx="ink">Restart server</div></div>
+  <div class="stp" data-at="s6:muncul" data-fx="stamp">MUNCUL LAGI</div>
+  <div class="cd l" data-at="s6:total" data-fx="ink">Reset total</div>
+  <div class="cd l c" data-at="s6:Oktober" data-fx="ink">8 Okt: patch, pet kebal</div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tg">CDC &middot; PENGENDALIAN PENYAKIT AMERIKA</div>
+  <div class="cd l" data-at="s7:peneliti" data-fx="ink">Peneliti menulisnya di jurnal ilmiah</div>
+  <div class="cd l" data-at="s7:manusia" data-fx="ink">Reaksi pemain = reaksi manusia</div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="cd" data-at="s8:Jadi" data-fx="ink"><div class="h2">Bug game,<br><span>bahan riset wabah</span></div></div>
+  <div class="cd l" data-at="s8:Kalau" data-fx="ink">Kamu: healer, atau kabur?</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA GAME &middot; EP 01</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":6.818,"s2":6.978,"s2e":21.025,"s3":21.185,"s3e":32.453,"s4":32.613,"s4e":46.134,"s5":46.294,"s5e":59.292,"s6":59.452,"s6e":68.892,"s7":69.052,"s7e":84.368,"s8":84.528,"s8e":94.621,"end":94.621,"dur":97.62,"outro":94.871},AT={"s2:Bosnya":12.304,"s2:dikalahkan":20.452,"s3:peliharaan":22.369,"s3:Developer":25.549,"s3:terinfeksi":27.762,"s5:memperingatkan":54.121,"s5:keramaian":58.797,"s6:server#2":64.01,"s7:CDC":69.801,"s7:bug":76.844,"s7:Tapi":78.191,"s7:jurnal":80.714,"s1:Sampai":4.682,"s2:Zul'Gurub":11.558,"s2:Hakkar":13.001,"s2:Corrupted":15.099,"s2:menular":16.866,"s3:menyimpan":23.923,"s3:lupa":25.998,"s3:dikeluarkan":30.286,"s4:dua":33.542,"s4:Karakter":37.977,"s4:NPC":41.394,"s5:healer":50.059,"s5:berjaga":52.867,"s5:sengaja":56.77,"s6:karantina":60.372,"s6:restart":61.068,"s6:muncul":63.019,"s6:total":64.815,"s6:Oktober":66.192,"s7:peneliti":78.516,"s7:manusia":83.531,"s8:Jadi":84.563,"s8:Kalau":90.41},DUR=97.62,OUT=94.871;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ ink:(e,t)=>tl.fromTo(e,{opacity:1,clipPath:'circle(0% at 4% 50%)'},{clipPath:'circle(150% at 4% 50%)',duration:.5,ease:'power2.out'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{opacity:1,clipPath:'circle(0% at 6% 4%)'},{clipPath:'circle(150% at 6% 4%)',duration:.6,ease:'power2.inOut'},a-.1),POUT=(tl,p,b)=>tl.to(p,{opacity:0,filter:'sepia(1) brightness(1.6) blur(3px)',duration:.32,ease:'power1.in'},b-.32);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{clipPath:'circle(0% at 50% 45%)'});tl.to('#outro',{clipPath:'circle(130% at 50% 45%)',duration:.6,ease:'power2.in'},OUT-.3);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

@@ -1,0 +1,182 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#4a3324}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.05;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.3) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0) 42%,rgba(0,0,0,0) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Nunito,sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#2E2C29;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#sig{position:absolute;z-index:19;opacity:0;font-family:Outfit,sans-serif;color:#fff;line-height:1.05;pointer-events:none;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+#sig b{display:block;font-weight:700;font-size:28px;letter-spacing:.14em}
+#sig i{display:block;font-style:normal;font-weight:500;font-size:17px;letter-spacing:.04em}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+
+#capfloor{display:none}
+#chip{background:rgba(251,246,234,.9);padding:5px 12px 4px;border:1.5px solid rgba(58,54,51,.6);font-size:19px;letter-spacing:.07em}
+.p{--r:1;filter:drop-shadow(0 12px 16px rgba(40,24,10,.38))}
+.card{position:relative;display:inline-block;max-width:100%;box-sizing:border-box;background:#FBF6EA;padding:26px 34px 26px;clip-path:polygon(0 0,calc(var(--r) * 116%) 0,calc(var(--r) * 116% - 41px) 7.1%,calc(var(--r) * 116% - 15px) 14.3%,calc(var(--r) * 116% - 37px) 21.4%,calc(var(--r) * 116% - 11px) 28.6%,calc(var(--r) * 116% - 33px) 35.7%,calc(var(--r) * 116% - 7px) 42.9%,calc(var(--r) * 116% - 42px) 50.0%,calc(var(--r) * 116% - 16px) 57.1%,calc(var(--r) * 116% - 38px) 64.3%,calc(var(--r) * 116% - 12px) 71.4%,calc(var(--r) * 116% - 34px) 78.6%,calc(var(--r) * 116% - 8px) 85.7%,calc(var(--r) * 116% - 30px) 92.9%,calc(var(--r) * 116%) 100%,0 100%)}
+.card:before{content:"";position:absolute;inset:9px;border:2.2px solid rgba(58,54,51,.62);border-radius:4px 9px 5px 11px;transform:rotate(-.35deg);pointer-events:none}
+.card:after{content:"";position:absolute;inset:12px 10px 8px 13px;border:1.4px solid rgba(58,54,51,.3);border-radius:8px 3px 10px 4px;transform:rotate(.45deg);pointer-events:none}
+.tape{position:absolute;left:34px;top:-2px;width:120px;height:24px;background:rgba(217,162,92,.55);transform:rotate(-3deg)}
+.scr{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;opacity:0}
+.scr path{fill:none;stroke:#3A3633;stroke-width:6;stroke-linecap:round;stroke-dasharray:1600;stroke-dashoffset:1600}
+.k{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-family:Nunito,sans-serif;font-weight:800;font-size:24px;letter-spacing:.14em;color:#6B5A48;margin:6px 0 8px}
+.rf{display:inline-block;font-family:Nunito,sans-serif;font-weight:800;font-size:22px;letter-spacing:.06em;color:#2E2C29;background:#E7B868;padding:4px 12px 3px;border-radius:3px;white-space:nowrap}
+.h{font-family:Kalam,cursive;font-weight:700;font-size:76px;line-height:1.02;color:#2E2C29}
+.h.m{font-size:54px;line-height:1.12}
+.h s{text-decoration-color:#B9772E;text-decoration-thickness:5px}
+.sub{font-family:Nunito,sans-serif;font-weight:700;font-size:35px;line-height:1.22;color:#4A3F35;margin-top:10px}
+.ar{font-family:Amiri,serif;direction:rtl;text-align:right;font-size:52px;line-height:1.8;color:#3A2F25}
+.tr{font-family:Nunito,sans-serif;font-weight:600;font-style:italic;font-size:31px;line-height:1.3;color:#4A3F35}
+.ls{display:flex;flex-direction:column;gap:6px;margin-top:2px}
+.ls span{font-family:Kalam,cursive;font-weight:700;font-size:44px;line-height:1.15;color:#2E2C29;padding-left:44px;position:relative}
+.ls span:before{content:"";position:absolute;left:4px;top:.42em;width:20px;height:20px;border:3px solid #B9772E;border-radius:50% 45% 55% 48%}
+.big2{font-size:60px;color:#B9772E}
+.chips{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
+.chips span{font-family:Kalam,cursive;font-weight:700;font-size:40px;color:#2E2C29;background:rgba(226,176,74,.35);border:2px solid rgba(58,54,51,.55);border-radius:6px 12px 8px 14px;padding:2px 16px}
+.stamp{display:inline-block;margin-top:12px;font-family:Kalam,cursive;font-weight:700;font-size:38px;color:#B9772E;border:3px solid #B9772E;border-radius:6px;padding:2px 16px}
+.ask{display:inline-block;margin-top:14px;font-family:Nunito,sans-serif;font-weight:800;font-size:36px;line-height:1.2;color:#FBF6EA;background:#2E2C29;padding:10px 18px;border-radius:4px}
+#outro{--r:0;clip-path:polygon(0 0,calc(var(--r) * 116%) 0,calc(var(--r) * 116% - 41px) 7.1%,calc(var(--r) * 116% - 15px) 14.3%,calc(var(--r) * 116% - 37px) 21.4%,calc(var(--r) * 116% - 11px) 28.6%,calc(var(--r) * 116% - 33px) 35.7%,calc(var(--r) * 116% - 7px) 42.9%,calc(var(--r) * 116% - 42px) 50.0%,calc(var(--r) * 116% - 16px) 57.1%,calc(var(--r) * 116% - 38px) 64.3%,calc(var(--r) * 116% - 12px) 71.4%,calc(var(--r) * 116% - 34px) 78.6%,calc(var(--r) * 116% - 8px) 85.7%,calc(var(--r) * 116% - 30px) 92.9%,calc(var(--r) * 116%) 100%,0 100%)}
+</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="78.9" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI &middot; TANPA MENGGAMBARKAN SOSOK NABI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s1:Ia"><div class="card"><i class="tape"></i>
+  <div class="k">KISAH DALAM AL-QUR'AN &middot; 23</div>
+  <div class="h">Nasihat Luqman</div>
+  <div class="sub" data-at="s1:surahnya" data-fx="rise">Surahnya dinamai dengan namanya</div><svg class="scr" viewBox="0 0 600 200" preserveAspectRatio="none"><path d="M10 150 C 80 20, 120 190, 170 80 S 260 10, 290 120 S 380 190, 420 60 S 520 20, 590 140 M30 60 C 120 130, 200 30, 300 90 S 470 160, 580 50"/></svg></div>
+</div>
+<div class="p" data-in="s1:Ia" data-out="s2"><div class="card"><i class="tape"></i>
+  <div class="h m"><s>raja</s> &middot; <s>panglima</s></div>
+  <div class="sub" data-at="s1:hanya" data-fx="rise">hanya seorang ayah yang bijak</div><svg class="scr" viewBox="0 0 600 200" preserveAspectRatio="none"><path d="M10 150 C 80 20, 120 190, 170 80 S 260 10, 290 120 S 380 190, 420 60 S 520 20, 590 140 M30 60 C 120 130, 200 30, 300 90 S 470 160, 580 50"/></svg></div>
+</div>
+<div class="p" data-in="s2" data-out="s3"><div class="card"><i class="tape"></i>
+  <div class="k">HIKMAH LUQMAN <span class="rf">QS LUQMAN 31:12</span></div>
+  <div class="ar">وَلَقَدْ ءَاتَيْنَا لُقْمَـٰنَ ٱلْحِكْمَةَ أَنِ ٱشْكُرْ لِلَّهِ</div>
+  <div class="h m" data-at="s2:bersyukurlah" data-fx="rise">Bersyukurlah kepada Allah</div><svg class="scr" viewBox="0 0 600 200" preserveAspectRatio="none"><path d="M10 150 C 80 20, 120 190, 170 80 S 260 10, 290 120 S 380 190, 420 60 S 520 20, 590 140 M30 60 C 120 130, 200 30, 300 90 S 470 160, 580 50"/></svg></div>
+</div>
+<div class="p" data-in="s3" data-out="s3:Wahai"><div class="card"><i class="tape"></i>
+  <div class="k">NASIHAT PERTAMA</div>
+  <div class="h m">Fondasi segalanya</div><svg class="scr" viewBox="0 0 600 200" preserveAspectRatio="none"><path d="M10 150 C 80 20, 120 190, 170 80 S 260 10, 290 120 S 380 190, 420 60 S 520 20, 590 140 M30 60 C 120 130, 200 30, 300 90 S 470 160, 580 50"/></svg></div>
+</div>
+<div class="p" data-in="s3:Wahai" data-out="s4"><div class="card"><i class="tape"></i>
+  <div class="k">LUQMAN KEPADA ANAKNYA <span class="rf">QS LUQMAN 31:13</span></div>
+  <div class="ar">يَـٰبُنَىَّ لَا تُشْرِكْ بِٱللَّهِ ۖ إِنَّ ٱلشِّرْكَ لَظُلْمٌ عَظِيمٌ</div>
+  <div class="tr">&ldquo;Wahai anakku, jangan mempersekutukan Allah&rdquo;</div>
+  <div class="sub" data-at="s3:kezaliman" data-fx="rise">kezaliman yang besar</div><svg class="scr" viewBox="0 0 600 200" preserveAspectRatio="none"><path d="M10 150 C 80 20, 120 190, 170 80 S 260 10, 290 120 S 380 190, 420 60 S 520 20, 590 140 M30 60 C 120 130, 200 30, 300 90 S 470 160, 580 50"/></svg></div>
+</div>
+<div class="p" data-in="s4" data-out="s4:Bersyukurlah"><div class="card"><i class="tape"></i>
+  <div class="k">PESAN TENTANG ORANG TUA <span class="rf">QS LUQMAN 31:14</span></div>
+  <div class="ls">
+    <span data-at="s4:ibu" data-fx="rise">Ibu mengandung: lemah bertambah-tambah</span>
+    <span data-at="s4:menyapih" data-fx="rise">Menyapih dalam <b class="big2">2 tahun</b></span>
+  </div><svg class="scr" viewBox="0 0 600 200" preserveAspectRatio="none"><path d="M10 150 C 80 20, 120 190, 170 80 S 260 10, 290 120 S 380 190, 420 60 S 520 20, 590 140 M30 60 C 120 130, 200 30, 300 90 S 470 160, 580 50"/></svg></div>
+</div>
+<div class="p" data-in="s4:Bersyukurlah" data-out="s5"><div class="card"><i class="tape"></i>
+  <div class="k"><span class="rf">QS LUQMAN 31:14</span></div>
+  <div class="h m">Bersyukurlah kepada-Ku dan kepada kedua orang tuamu</div><svg class="scr" viewBox="0 0 600 200" preserveAspectRatio="none"><path d="M10 150 C 80 20, 120 190, 170 80 S 260 10, 290 120 S 380 190, 420 60 S 520 20, 590 140 M30 60 C 120 130, 200 30, 300 90 S 470 160, 580 50"/></svg></div>
+</div>
+<div class="p" data-in="s5" data-out="s5:Wahai"><div class="card"><i class="tape"></i>
+  <div class="k">NASIHAT LUQMAN</div>
+  <div class="h m">Tidak ada yang luput</div><svg class="scr" viewBox="0 0 600 200" preserveAspectRatio="none"><path d="M10 150 C 80 20, 120 190, 170 80 S 260 10, 290 120 S 380 190, 420 60 S 520 20, 590 140 M30 60 C 120 130, 200 30, 300 90 S 470 160, 580 50"/></svg></div>
+</div>
+<div class="p" data-in="s5:Wahai" data-out="s6"><div class="card"><i class="tape"></i>
+  <div class="k">SEBERAT BIJI SAWI <span class="rf">QS LUQMAN 31:16</span></div>
+  <div class="h m">Allah akan mendatangkannya</div>
+  <div class="chips">
+    <span data-at="s5:batu" data-fx="rise">dalam batu</span>
+    <span data-at="s5:langit" data-fx="rise">di langit</span>
+    <span data-at="s5:bumi" data-fx="rise">di bumi</span>
+  </div>
+<svg class="scr" viewBox="0 0 600 200" preserveAspectRatio="none"><path d="M10 150 C 80 20, 120 190, 170 80 S 260 10, 290 120 S 380 190, 420 60 S 520 20, 590 140 M30 60 C 120 130, 200 30, 300 90 S 470 160, 580 50"/></svg></div>
+</div>
+<div class="p" data-in="s6" data-out="s7"><div class="card"><i class="tape"></i>
+  <div class="k"><span class="rf">QS LUQMAN 31:17</span></div>
+  <div class="ls two">
+    <span data-at="s6:Dirikan" data-fx="rise">Dirikan salat</span>
+    <span data-at="s6:ajak" data-fx="rise">Ajak kepada kebaikan</span>
+    <span data-at="s6:cegah" data-fx="rise">Cegah kemungkaran</span>
+    <span data-at="s6:bersabarlah" data-fx="rise">Bersabarlah</span>
+  </div>
+  <div class="stamp" data-at="s6:penting" data-fx="rise">perkara yang penting</div><svg class="scr" viewBox="0 0 600 200" preserveAspectRatio="none"><path d="M10 150 C 80 20, 120 190, 170 80 S 260 10, 290 120 S 380 190, 420 60 S 520 20, 590 140 M30 60 C 120 130, 200 30, 300 90 S 470 160, 580 50"/></svg></div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Sederhanakan"><div class="card"><i class="tape"></i>
+  <div class="k">JANGAN <span class="rf">QS LUQMAN 31:18</span></div>
+  <div class="ls">
+    <span data-at="s7:memalingkan" data-fx="rise">memalingkan wajah karena sombong</span>
+    <span data-at="s7:jangan" data-fx="rise">berjalan di bumi dengan angkuh</span>
+  </div><svg class="scr" viewBox="0 0 600 200" preserveAspectRatio="none"><path d="M10 150 C 80 20, 120 190, 170 80 S 260 10, 290 120 S 380 190, 420 60 S 520 20, 590 140 M30 60 C 120 130, 200 30, 300 90 S 470 160, 580 50"/></svg></div>
+</div>
+<div class="p" data-in="s7:Sederhanakan" data-out="s8"><div class="card"><i class="tape"></i>
+  <div class="k"><span class="rf">QS LUQMAN 31:19</span></div>
+  <div class="ls">
+    <span>Sederhanakan langkahmu</span>
+    <span data-at="s7:lunakkan" data-fx="rise">Lunakkan suaramu</span>
+  </div><svg class="scr" viewBox="0 0 600 200" preserveAspectRatio="none"><path d="M10 150 C 80 20, 120 190, 170 80 S 260 10, 290 120 S 380 190, 420 60 S 520 20, 590 140 M30 60 C 120 130, 200 30, 300 90 S 470 160, 580 50"/></svg></div>
+</div>
+<div class="p" data-in="s8" data-out="@END"><div class="card"><i class="tape"></i>
+  <div class="k">WARISAN SEORANG AYAH</div>
+  <div class="h m">Dari tauhid sampai cara berjalan dan berbicara</div>
+  <div class="ask" data-at="s8:Nasihat" data-fx="rise">Nasihat mana yang paling ingin kamu wariskan?</div><svg class="scr" viewBox="0 0 600 200" preserveAspectRatio="none"><path d="M10 150 C 80 20, 120 190, 170 80 S 260 10, 290 120 S 380 190, 420 60 S 520 20, 590 140 M30 60 C 120 130, 200 30, 300 90 S 470 160, 580 50"/></svg></div>
+</div>
+<div id="sig"><b>AUDIRA</b><i>audira.my.id</i></div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">KISAH DALAM AL-QUR&#39;AN &middot; EP 23</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":10.703,"s2":10.863,"s2e":17.364,"s3":17.524,"s3e":25.54,"s4":25.7,"s4e":37.338,"s5":37.498,"s5e":48.935,"s6":49.095,"s6e":58.001,"s7":58.161,"s7e":67.901,"s8":68.061,"s8e":75.903,"end":75.903,"dur":78.9,"outro":76.153},AT={"s1:berharga":2.9,"s1:diabadikan":3.674,"s1:raja":7.732,"s1:panglima":8.676,"s1:bijak":10.378,"s2:hikmah":13.627,"s2:hikmah#2":14.466,"s2:bersyukurlah":16.11,"s3:fondasi":19.354,"s3:Wahai":20.535,"s3:Sesungguhnya":22.691,"s3:kezaliman":24.487,"s4:Allah":27.434,"s4:ibu":29.952,"s4:lemah":31.516,"s4:menyapih":33.002,"s4:dua":33.605,"s4:Bersyukurlah":34.459,"s4:kedua":36.378,"s5:luput":40.653,"s5:Wahai":41.318,"s5:biji":42.959,"s5:tersembunyi":44.244,"s5:batu":45.095,"s5:langit":45.962,"s5:bumi":47.154,"s5:Allah":47.665,"s5:mendatangkannya":48.269,"s6:Dirikan":49.112,"s6:ajak":50.149,"s6:cegah":51.662,"s6:bersabarlah":53.277,"s6:Semua":55.911,"s6:penting":57.583,"s7:memalingkan":58.567,"s7:sombong":60.316,"s7:jangan":60.858,"s7:angkuh":61.988,"s7:Sederhanakan":62.654,"s7:lunakkan":64.186,"s7:Seburuk-buruk":65.022,"s7:keledai":67.421,"s8:tauhid":69.153,"s8:Nasihat":71.459,"s8:Kisah":73.317,"s8:AUDIRA":75.562,"s1:Ia":7.283,"s1:surahnya":5.532,"s1:hanya":9.511},DUR=78.9,OUT=76.153;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ rise:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:''},t-.001);tl.fromTo(e,{opacity:0,y:16},{opacity:1,y:0,duration:.4,ease:'power3.out'},t);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{const sc=p.querySelector('.scr');const sp=p.querySelector('.scr path');tl.fromTo(p,{'--r':0,opacity:1,rotation:-1.4,y:0},{'--r':1,rotation:0,duration:.5,ease:'power2.out'},a-.12);if(sc){tl.fromTo(sc,{opacity:.9},{opacity:0,duration:.28,ease:'none'},a+.26);tl.fromTo(sp,{strokeDashoffset:1600},{strokeDashoffset:0,duration:.4,ease:'power1.inOut'},a-.16);}},POUT=(tl,p,b)=>{tl.to(p,{'--r':0,rotation:1.6,y:-12,duration:.36,ease:'power2.in'},b-.38);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+// AUDIRA moving signature (port of AudiraSignature.tsx): 32% opacity, 4 safe-zone anchors, jumps every 18 s in a seeded order, hidden at the outro.
+(function(){const A=[[1015,221,'r'],[65,1190,'l'],[1015,864,'r'],[65,221,'l']];let h=2166136261;const sd="EP23_LUQMAN_NASIHAT_ANAK";for(let i=0;i<sd.length;i++)h=Math.imul(h^sd.charCodeAt(i),16777619)>>>0;const ord=[0,1,2,3];for(let i=3;i>0;i--){h=Math.imul(h^(h>>>15),2246822507)>>>0;const j=h%(i+1);[ord[i],ord[j]]=[ord[j],ord[i]];}
+const s=q('#sig');const C=18,OP=.32;for(let c=0;c*C<OUT;c++){const [x,y,al]=A[ord[c%4]];const t0=c*C,t1=Math.min((c+1)*C,OUT-.2);tl.set(s,{left:al==='l'?x:'auto',right:al==='r'?1080-x:'auto',top:y,textAlign:al==='l'?'left':'right'},t0);tl.fromTo(s,{opacity:0},{opacity:OP,duration:.5,ease:'none'},t0);tl.to(s,{opacity:0,duration:.4,ease:'none'},Math.max(t0+.6,t1-.4));}})();
+tl.fromTo('#outro',{'--r':0},{'--r':1,duration:.75,ease:'power2.inOut'},OUT-.3);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

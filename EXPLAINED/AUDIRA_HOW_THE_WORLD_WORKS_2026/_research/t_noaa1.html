@@ -1,0 +1,1498 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd"> -->
+<!DOCTYPE html>
+<head>
+
+ 
+<!-- header.inc Start February 11 2025 16:51:46 -->
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<!-- <meta http-equiv="Content-Security-Policy" content= "default-src 'self' 'unsafe-inline' 'unsafe-eval';font-src 'self' data: blob;script-src 'self' 'unsafe-eval' 'unsafe-inline' *.google-analytics.com;connect-src 'self' https://services.arcgisonline.com/ *.arcgis.com/;img-src 'self' *.arcgisonline.com/ *.google-analytics.com www.tsunami.gov;style-src 'self' 'unsafe-inline' *.arcgis.com/;"> -->
+
+<title>U.S. Tsunami Warning Centers</title>
+
+<meta name="DC.title" content="National Weather Service - Tsunami Hazards" />
+<meta name="DC.description" content="Your official U.S. government weather forecasts, warnings, meteorological products for forecasting the weather, tsunami hazards, and information about seismology." />
+<meta name="DC.keywords" content="Weather, Tsunami, Seismic" />
+<meta name="DC.rating" content="General" />
+<meta name='DC.subject' content='Weather, Warnings, National Oceanic Atmospheric Administration, Tsunami, Seismic' />
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US" />
+<meta name="DC.Distribution" content="Global" />
+<meta name="DC.robot" content="all" />
+<meta name="DC.creator" content="National Weather Service" />
+<meta name="DC.contributor" content="Tsunami Program" />
+<meta name="DC.robots" content="index,follow" />
+<!--<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes, width=device-width" />-->
+<meta name="viewport" content="user-scalable=yes, width=device-width" />
+
+<meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<!--<meta http-equiv="refresh" content="30"> -->
+<link href="/images/favicon.ico" rel="shortcut icon" />
+
+<script type="text/javascript" src="/events/js/previous.js"></script>
+
+
+<script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/jquery.tabelizer.js"></script>
+<script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="/js/jquery.metadata.min.js"></script>  
+<!--<script type="text/javascript" src="/events/js/previousBulletins.js"></script>-->
+
+<!-- Required DAP -->
+<script src="//dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&amp;subagency=NOAA" id="_fed_an_ua_tag"></script>
+
+
+<link href="/css/tabelizer.css" rel="stylesheet">
+
+
+  
+   <link rel="stylesheet" type="text/css" href="/css/main.css" />
+   <script type="text/javascript" src="/events/js/tidegauge-min.js"></script>
+   <script type="text/javascript" src="/events/js/ndbcmapstations-min.js"></script>
+
+
+<link href="/css/menu-vertical.css" rel="stylesheet" type="text/css" />
+<script src="/js/menu-vertical.js" type="text/javascript"></script>
+
+
+<!--<script src="https://www.weather.gov/source/nws/govshutdown.js" defer></script> -->
+
+<!-- header.inc End February 11 2025 16:51:46 -->
+
+<!-- TJK toggle courtesy of http://www.tjkdesign.com/articles/toggle_elements.asp -->
+   <script type="text/javascript" src="/TJK_ToggleDL/TJK_ToggleDL.js"></script>
+   <link rel="stylesheet" type="text/css" href="/TJK_ToggleDL/TJK_ToggleDL.css" media="print" />
+   <link rel="stylesheet" type="text/css" href="/TJK_ToggleDL/TJK_ToggleDL_ie5mac.css" media="print" />
+
+
+  
+<!--   <link rel="stylesheet" href="/arcgis_js_api/library/3.46/3.46/esri/css/esri.css">-->
+   <link rel="stylesheet" href="https://js.arcgis.com/3.46/dijit/themes/claro/claro.css">
+   <link rel="stylesheet" href="https://js.arcgis.com/3.46/esri/css/esri.css">
+   <link rel="stylesheet" href="/css/esriPopup.css">
+   <script type="text/javascript" src="/js/timedate.js"></script>
+   <script type="text/javascript" src="/js/PQuakeFL.js"></script>
+<!--   <script type="text/javascript" src="/arcgis_js_api/library/3.46/3.46/init.js"></script>-->
+   <script type="text/javascript" src="https://js.arcgis.com/3.46/"></script>
+   
+   <script type="text/javascript" src="/events/js/previous.js"></script>
+
+
+
+
+
+
+</head>
+<body>
+<div id="maincontainer">
+
+<!-- banner.inc start February 11 2025 16:51:46 -->
+
+<div id="header">
+<img src="../images/nws_914_titlebar_cropped.jpg" alt="Tsunami Warning System" border="0" style="float: left; box-sizing: border-box;">
+<img src="../images/menuBarBackground.jpg" class="menu_bar_filler">
+
+<!--<div class="skiplinks"><a  target="_blank" href="#contents" class="skipnav" accesskey="2">Jump to main content</a>&nbsp;<a  target="_blank" href="http://www.weather.gov" title="Go to the NWS Homepage">weather.gov</a></div>
+-->
+<div id="noaalink">United States Department of Commerce<a  target="_blank" href="http://www.noaa.gov"><img src="/images/noaalink.gif" alt="Go to the NOAA Homepage"width="80" height="84" style="position: absolute; left: 0; top: 0;"/></a>
+
+<span class="title_small">NOAA / National Weather Service<br/></span>
+<span class="title_large">U.S. Tsunami Warning System</span>
+<!--<span class="title_sub">National Tsunami Warning Center and Pacific Tsunami Warning Center</span>-->
+
+<!--<div id="nwslink"><a  target="_blank" href="http://www.weather.gov/"><img src="/images/noaalink.gif" alt="NWS Homepage" width="80" height="80" /></a></div>-->
+</div>
+<a  target="_blank" href="https://www.weather.gov/"><img src="/images/nws_logo_with_bar.jpg" alt="NWS Homepage" style="position: absolute; top:0; right: 0;"/></a>
+<div id="navbar">
+  <div id="navbar_41"><a  href="/" title="Go to NTWC home page">Home</a></div>
+  <div id="navbar_42"><a  target="_blank" href="https://www.weather.gov/contact-media/" title="NWS news of the day">News</a></div>
+  <div id="navbar_43"><a  target="_blank" href="https://www.weather.gov/organization/" title="Links to NWS Offices">Organization</a></div>
+  <div id="navbar_44"><form method="get" action="https://search.usa.gov/search"><div>
+    <label for="query">Search for: <input type="text" id="query" name="query" title="" class="searchinput" size="10"/></label>
+    <input type="hidden" name="utf8" value="&#x2713;" />
+    <input type="radio" name="affiliate" checked="checked" value="nws.noaa.gov" id="nws" />
+    <label for="nws">NWS</label> <input type="radio" name="affiliate" value="noaa.gov" id="noaa" />
+    <label for="noaa">All NOAA</label> <input type="submit" name="commit" class="searchinputgo" value="Search" /></div></form></div>
+  </div>
+</div>
+<!-- banner.inc end February 11 2025 16:51:46 -->
+
+
+
+<!--begin main content-->
+
+<div id="container_2col">
+
+<!-- leftHandMenu.inc start February 11 2025 16:51:46 -->
+
+<div id="left_2col" style="z-index:50;">
+
+<br />
+<br />
+<br />
+<ul class="menu" id="menu-v">  
+
+	  <li><a  href="/"><img src="/images/home.png" border="0" alt="home page" /></a></li>          
+<hr style="width: 90%;">
+	  <li><a  target="_blank" href="javascript:void(0)">Products/Messages</a> 
+	    <ul>
+              <li><a  href="/php/previousEvents.php">Previous Messages</a></li> 
+ 	      <li><a  href="/?page=productRetrieval">Message Subscriptions</a></li>
+	      <li><a  href="/?page=message_definitions">Message Definitions</a></li> 
+              <li><a  href="/?page=product_list">Product List</a></li>
+	      <li><a  target="_blank" href="javascript:void(0)">Warning Criteria</a>
+			<ul>
+				<li><a  href="/images/AtlProcedureChartUpdated2025_final.pdf">Atlantic</a></li>
+				<li><a  href="/images/procChartLargePacific.gif">Pacific</a></li>
+			</ul>
+		  </li>
+	      
+ 	      <li><a  href="/?page=cap">CAP-TSU</a></li>
+ 	      <li><a  href="/?page=tex">Tsunami Event XML (TEX)</a></li>
+	    </ul> 
+	  </li>
+
+<hr style="width: 90%;">
+	  <li><a  target="_blank" href="javascript:void(0)">Tsunami Data</a> 
+	    <ul> 
+	      <li><a  target="_blank" href="javascript:void(0)">Water-Level Data</a> 
+		<ul>
+			<li><a  target="_blank" href="https://www.ndbc.noaa.gov/dart/dart.shtml">DART Systems</a></li> 
+			<li><a  target="_blank" href="https://tidesandcurrents.noaa.gov/tsunami/">NOAA Coastal Water-Level Stations</a></li>
+			<li><a  href="javascript:void(0);" onclick="openNonGovPage('http://www.ioc-sealevelmonitoring.org/map.php');">IOC Sea Level Monitoring Facility</a></li>
+		</ul>
+	      <li><a  target="_blank" href="https://www.ngdc.noaa.gov/hazard/tsu.shtml">Historical Tsunamis</a></li> 
+	      <li><a  href="/recent_tsunamis/">Recent Tsunamis</a></li> 
+	    </ul> 
+	  </li>
+
+<hr style="width: 90%;">
+
+	  <li><a  target="_blank" href="javascript:void(0)">Education/Outreach</a> 
+	    <ul> 
+	      <li><a  href="/?page=tsunamiFAQ">Tsunami FAQ</a></li> 
+	      <li><a  href="https://www.weather.gov/safety/tsunami" target="_blank">Tsunami Safety</a></li>
+	      <li><a  href="https://www.weather.gov/safety/tsunami-outreach" target="_blank">Tsunami Education and Outreach</a></li>
+	    </ul> 
+	  </li>
+
+<hr style="width: 90%;">
+	  <li><a href="/?page=exercises">Exercises</a></li>
+<hr style="width: 90%;">
+	  <li><a  href="/?page=info">NOAA Tsunami Program</a></li>
+<hr style="width: 90%;">
+	  <li><a target="_blank" href="https://www.weather.gov/tsunamiready/">TsunamiReady</a></li>
+<hr style="width: 90%;">
+	  <li><a href="/?page=itic">International Tsunami Information Center (ITIC)</a></li>
+<hr style="width: 90%;">
+	  <li><a target="_blank" href="https://www.weather.gov/itic-car/">ITIC Caribbean Office</a></li>
+<hr style="width: 90%;">
+	  <li><a target="_blank" href="https://nctr.pmel.noaa.gov/">Tsunami Research</a></li>
+<hr style="width: 90%;">
+	  <li><a target="_blank" href="https://nws.weather.gov/nthmp/">National Tsunami Hazard Mitigation Program</a></li>
+<hr style="width: 90%;">
+	  <li><a href="javascript:void(0);" onclick="openNonGovPage('https://tsunami.ioc.unesco.org/en');">UNESCO-IOC Tsunami Programme</a></li>
+<hr style="width: 90%;">
+
+	  <li><a  target="_blank" href="javascript:void(0)">Tsunami Warning Centers</a> 
+	  <ul>
+	  	<li><a href="/?page=history">About the Warning Centers</a></li>
+		<li><a  target="_blank" href="javascript:void(0)">Warning Guides</a>
+	    	<ul> 
+              		<li><a href="/operations/opsmanual.pdf">Canada/US except Hawaii</a></li>
+              		<li><a target="_blank" href="/operations/AmSamoaUserGuide.pdf">American Samoa</a></li>  
+              		<li><a target="_blank" href="/operations/GuamCNMIUserGuide.pdf">Guam/CNMI</a></li>
+              		<li><a target="_blank" href="/operations/PRVIUserGuide.pdf">Puerto Rico/Virgin Islands</a></li>  
+              		<li><a onclick="openNonGovPage('http://itic.ioc-unesco.org/index.php?option=com_content&view=category&layout=blog&id=1303&Itemid=1303&lang=en');" target="_blank">International Pacific</a></li>  
+              	<!--	<li><a onclick="openNonGovPage('http://www.ioc-tsunami.org/index.php?option=com_oe&task=viewDocumentRecord&docID=6354&lang=en');" target="_blank">International Caribbean</a></li>-->    
+              		<li><a href="https://www.weather.gov/media/ctwp/PDF/Users%20guide%202017.pdf" target="_blank">International Caribbean</a></li>    
+	    	</ul>
+	  	</li>
+
+
+          <li><a href="/?page=visit">Visit a Warning Center</a></li>
+
+	  </ul>
+	  </li>
+
+<hr style="width: 90%;">
+
+	  <li><a  target="_blank" href="javascript:void(0)">Follow Us!</a>
+		<ul>
+		<li><a  target="_blank" href="javascript:void(0)" style="width: 220px;">National Tsunami Warning Center</a>
+			<ul>
+			<li><a  target="_blank" href="https://www.twitter.com/NWS_NTWC" style="color:white!important;" target="_blank"><img class="menu-v" border="0" height=20px; width=20px; alt="twitter" style=" vertical-align: text-bottom;" src="/images/twitter.png"/>Twitter</a>
+			</li>
+			<li><a href="https://www.facebook.com/NWSNTWC"  style="color:white!important;" target="_blank"><img class="menu-v" border="0" alt="facebook" height=16px; width=16px; style="vertical-align: middle;" src="/images/facebook.png"/> Facebook</a>
+			</li>
+			<li><a target="_blank" style="color:white!important;" href="/events/xml/PAAQAtom.xml"><img class="Inavup" src="/images/feed-icon-16x16.gif" alt="RSS/Atom Feed" /> Atom</a></li>
+			<li><a  target="_blank"  style="color:white!important;" href="/events/xml/PAAQCAP.xml"><img class="Inavup" src="/images/cap_icon.png" alt="Cap File" height="16"/> CAP File</a></li>
+			</ul>
+		</li>
+		<li><a  target="_blank" href="javascript:void(0)" style="width: 220px;">Pacific Tsunami Warning Center</a>
+			<ul>
+			<li><a  target="_blank" href="https://www.twitter.com/NWS_PTWC" style="color:white!important;" target="_blank"><img class="menu-v" border="0" height=20px; width=20px; alt="twitter" style=" vertical-align: text-bottom;" src="/images/twitter.png"/>Twitter</a>
+			</li>
+			<li><a href="https://www.facebook.com/UsNwsPacificTsunamiWarningCenter"  style="color:white!important;" target="_blank"><img class="menu-v" border="0" alt="facebook" height=16px; width=16px; style="vertical-align: middle;" src="/images/facebook.png"/> Facebook</a>
+			</li>
+			<li><a onclick="openNonGovPage('https://www.youtube.com/user/PacificTWC');" target="_blank"><img class="menu-v" border="0" alt="facebook" height=16px; width=16px; style="vertical-align: middle;" src="/images/youtube.png"/> YouTube</a>
+			</li>
+			<li><a target="_blank" style="color:white!important;" href="/events/xml/PHEBAtom.xml"><img class="Inavup" src="/images/feed-icon-16x16.gif" alt="RSS/Atom Feed" /> Atom</a></li>
+			<li><a  target="_blank"  style="color:white!important;" href="/events/xml/PHEBCAP.xml"><img class="Inavup" src="/images/cap_icon.png" alt="Cap File" height="16"/> CAP File</a></li>
+			</ul>
+		</li>
+		</ul>
+	  </li>
+</ul>
+
+
+<br/> 
+<div style="text-align: left;">
+<!--<a target="_blank" style="color:white!important;" href="/events/xml/PAAQAtom.xml"><img class="Inavup" src="/images/feed-icon-16x16.gif" alt="RSS/Atom Feed" /> Atom</a><br/>
+<a  target="_blank"  style="color:white!important;" href="/events/xml/PAAQCAP.xml"><img class="Inavup" src="/images/xml.gif" alt="CapXML" height="16"/> CapXML</a><br/>
+<p>Follow us!<br/>
+
+NTWC
+<a  target="_blank" href="https://www.twitter.com/NWS_NTWC" style="color:white!important;" target="_blank"><img class="Inavup" border="0" alt="twitter" src="/images/twitter.png"/></a>
+
+
+<a href="https://www.facebook.com/NWSNTWC"  style="color:white!important;" target="_blank"><img class="Inavup" border="0" alt="facebook" src="/images/facebook.png"/> </a>
+
+PTWC
+<a  target="_blank" href="https://www.twitter.com/NWS_NTWC" style="color:white!important;" target="_blank"><img class="Inavup" border="0" alt="twitter" src="/images/twitter.png"/></a>
+
+
+<a href="https://www.facebook.com/NWSNTWC"  style="color:white!important;" target="_blank"><img class="Inavup" border="0" alt="facebook" src="/images/facebook.png"/> </a>
+-->
+</div>
+</div>
+<!--<a name="contents">&nbsp;</a> -->
+<!-- leftHandMenu.inc end February 11 2025 16:51:46 -->
+
+<!-- main_2col is where the map etc will reside -->
+<div id="main_2col"><!--<a name="contents">&nbsp;</a>-->
+<!--<div id="block-block-3"> -->
+<style>
+<!--
+.tab1 {text-indent:40px}
+.hang-indent {text-indent:-22px; margin-left:50px;}
+h2 {margin-left: 0px; margin-top: 20px; font-size: 1.75em; text-align: left;}
+-->
+</style>
+
+<table  border="0" width="80%" style="margin:auto;">
+<tr>
+ <td>
+<!--  <hr/><b>Tsunami Frequently Asked Questions</b><hr/> -->
+  <hr/><h1><b>Tsunami Frequently Asked Questions</b></h1><hr/>
+ </td>
+</tr>
+<tr><td>
+Note: The Tsunami Warning Centers referred to in the text below are the two centers of the
+National Oceanic and Atmospheric Administration’s (NOAA) National Weather Service (NWS).<hr/>
+</td></tr>
+<tr>
+<td>
+
+  <a id="TJK_ToggleON" class="TJK_ToggleOn" name="0" onclick="TJK_ToggleDLopen(event)">Open All</a>
+<a id="TJK_ToggleOFF" class="TJK_ToggleOff" name="0" onclick="TJK_ToggleDLclose(event)">Close All</a>
+    <dl class="TJK" id="TJK_DL">
+<br/>
+<h2><a id="TJK_ToggleON1" class="TJK_SectionToggleOn" name="1" onclick="TJK_ToggleDLopen(event)">&nbsp;&nbsp;</a>
+1. General Tsunami Information</h2>
+
+<!--<a id="TJK_ToggleOFF1" class="TJK_ToggleOff" name="1" onclick="TJK_ToggleDLclose(event)">-</a>-->
+       <dt name="1">1.1 What is a tsunami?</dt>
+         <dd name="1">
+<p>     A tsunami is one of the most powerful and destructive natural forces. It is a series of extremely long waves (multiple waves tens-to-hundreds of miles between crests) caused by a large and sudden displacement of the ocean. Tsunamis radiate outward in all directions from the point of origin and can move across entire ocean basins. When they reach the coast, they can cause dangerous coastal flooding and powerful currents that can last for several hours or days. 
+</p><br/>
+</dd>
+
+<dt name="1">1.2 What is the origin of the word "tsunami"?</dt>
+<dd name="1">
+<p>    “Tsunami” comes from the Japanese characters for harbor (“tsu”) and wave (“name”).
+</p>
+<br/>
+
+</dd>
+
+<dt name="1">1.3 Is a tsunami the same as a seismic sea wave or a tidal wave?</dt>
+<dd name="1">
+<p>     Yes and no. A tsunami is a seismic sea wave if it is generated by an earthquake (“seismic” means relating to an earthquake), but tsunamis can also be generated by nonseismic disturbances. Thus, “tsunami” has been internationally adopted to mean waves caused by any large and sudden displacement of the ocean. Tsunamis are not related to <a href="http://oceanservice.noaa.gov/education/kits/tides/tides01_intro.html" target="_blank">tides</a>, which result from the gravitational attraction of the Sun and Moon on Earth’s oceans. Therefore, it is incorrect to call a tsunami a tidal wave.
+</p>
+<br/>
+
+</dd>
+
+<dt name="1">1.4 Can tsunamis be predicted?</dt>
+<dd name="1">
+<p>     Like the earthquakes that generate most tsunamis, scientists cannot predict when and where the
+next tsunami will strike. But, the Tsunami Warning Centers know which earthquakes are likely
+to generate tsunamis and can issue tsunami messages when they think a tsunami is possible.
+Once a tsunami is detected, the warning centers use tsunami forecast models to forecast wave
+height and arrival times, location and amount of flooding, and how long the tsunami will last. In
+some cases, when the source of a tsunami is close to a coast, there may not be time for the
+warning centers to issue a detailed forecast for all at-risk coastal areas, so people should recognize
+natural warnings and be prepared to respond to them.
+</p>
+<br/>
+
+</dd>
+
+<dt name="1">1.5 How often do tsunamis happen?</dt>
+<dd name="1">
+<p>     According to the <a href="http://www.ngdc.noaa.gov/hazard/tsu_db.shtml" target="_blank">Global Historical Tsunami Database</a>, tsunamis that cause damage or deaths
+near their source occur approximately twice per year. Tsunamis that cause damage or deaths on
+distant shores (more than 1,000 kilometers, 620 miles, away) occur about twice per decade.
+</p>
+<br/>
+
+</dd>
+
+
+<dt name="1">1.6 Where do tsunamis happen?</dt>
+<dd name="1">
+     <p class="tab">Tsunamis can be generated in all of the world’s oceans, inland seas, and in any large body of
+water. They have caused damage and deaths in coastal areas all around the world. However,
+certain areas are particularly prone to tsunamis due to their proximity to tsunami sources, the
+depth and shape of the ocean floor near the coast (bathymetry), and coastal elevation and features
+(topography). Of the 754 confirmed events in the <a href="http://www.ngdc.noaa.gov/hazard/tsu_db.shtml" target="_blank">Global Historical Tsunami Database</a> between
+1900 and 2015, about 78% occurred in the Pacific Ocean (around the geologically active “Ring
+of Fire”), 8% in the Atlantic Ocean and Caribbean Sea, 6% in the Mediterranean Sea, 5% in the
+Indian Ocean, and 1% in other seas.</p>
+<p class="tab">Since 1900, the highest percentage of tsunamis was generated off Japan (21%) followed by
+Russia (8%) and Indonesia (8%). Most tsunamis are small and nondestructive or only affect
+coasts near their source, but some tsunamis can cause damage and deaths on distant shores (more
+than 1,000 kilometers, 620 miles, away). The most significant distant tsunamis since 1900
+originated off Alaska, Chile, Japan, Indonesia, Pakistan, and Russia.</p>
+<p class="tab">To see where tsunamis have happened and learn more about them, visit the <a href="http://maps.ngdc.noaa.gov/viewers/hazards/?layers=0" target="_blank">Natural Hazards
+Interactive Map</a>.</p>
+<br/>
+
+</dd>
+
+<dt name="1">1.7 Where can tsunamis happen in the United States ?</dt>
+<dd name="1"><p>An <a href="http://nws.weather.gov/nthmp/ushazard.html" target="_blank">assessment of the tsunami hazard in the United States</a> shows that a tsunami can strike any
+U.S. coast, but the hazard level varies. These hazard levels are based largely on the historical
+record (through 2014), geological evidence, and location relative to tsunami sources, all of which
+provide clues to what might happen in the future.
+</p><p>
+<table style="border:1px solid black; width:400px; border-collapse: collapse;">
+<thead><tr><th style="border:1px solid black;">Region</th>
+<th style="border:1px solid black;">Hazard Level</th></tr></thead>
+<tbody><tr><td style="border:1px solid black;">U.S. West Coast</td>
+<td style="border:1px solid black;">High to Very High</td></tr>
+<tr><td style="border:1px solid black;">Alaska (Southern Coast)</td>
+<td style="border:1px solid black;">High to Very High</td></tr>
+<tr><td style="border:1px solid black;">Alaska Arctic Coast (includes Western Coast)</td>
+<td style="border:1px solid black;">Very Low</td></tr>
+<tr><td style="border:1px solid black;">Hawaii</td>
+<td style="border:1px solid black;">High to Very High</td></tr>
+<tr><td style="border:1px solid black;">American Samoa</td>
+<td style="border:1px solid black;">High</td></tr>
+<tr><td style="border:1px solid black;">Guam and Northern Mariana Islands</td>
+<td style="border:1px solid black;">High</td></tr>
+<tr><td style="border:1px solid black;">Puerto Rico/U.S. Virgin Islands</td>
+<td style="border:1px solid black;">High</td></tr>
+<tr><td style="border:1px solid black;">U.S. Atlantic Coast</td>
+<td style="border:1px solid black;">Very Low to Low</td></tr>
+<tr><td style="border:1px solid black;">U.S. Gulf Coast</td>
+<td style="border:1px solid black;">Very Low</td></tr></tbody>
+</table>
+</p>
+<p>
+While distant tsunamis pose a threat to all U.S. coasts, the hazard is greatest for coastlines near
+subduction zones, where large earthquakes and associated landslides can produce damaging
+waves that threaten nearby and distant coasts, like those around the Pacific and Caribbean. The
+U.S. East and Gulf Coasts are not near subduction zones, and earthquakes are not as large or as
+frequent as in other regions. The most likely sources of tsunamis on these coasts are underwater
+landslides and meteotsunamis.
+</p><br/>
+
+</dd>
+
+
+<dt style="margin:7px 60px;" name="1">1.7.1 What is the tsunami hazard level for Anchorage and the upper Cook Inlet in Alaska?</dt>
+<dd  name="1" style="margin:7px 60px;">
+<p>     The tsunami hazard level for Anchorage and the upper Cook Inlet is very low when compared to
+the Southern Coast of Alaska. When tsunamis enter the upper Cook Inlet from the Gulf of
+Alaska or the lower Cook Inlet, they are weakened by the relatively shallow water of the upper
+Cook Inlet to a point that they are no longer dangerous.
+</p>
+<br/>
+
+</dd>
+
+<dt name="1">1.8 What are some of the most damaging tsunamis to affect the United States?</dt>
+<dd name="1">
+<p>     According to the <a href="http://www.ngdc.noaa.gov/hazard/tsu_db.shtml" target="_blank">Global Historical Tsunami Database</a>, as of January 2018, 30 reported tsunamis that caused at least
+one death or $1 million in damage (2017 dollars) have affected U.S. states and territories.
+<br/><br/>
+<table style="border:1px solid black; width:500px; border-collapse: collapse;">
+<thead><tr><th style="border:1px solid black; width:170px;">Region</th>
+<th style="border:1px solid black;">Local Tsunami*</th>
+<th style="border:1px solid black;">Distant Tsunami*</th></tr></thead>
+<tbody><tr><td style="border:1px solid black;">U.S. West Coast</td>
+<td style="border:1px solid black;">1820, 1878, 1894, 1930</td>
+<td style="border:1px solid black;">1946, 1952, 1957, 1960, 1964, 1975, 2006, 2010, 2011</td></tr>
+<tr><td style="border:1px solid black;">Alaska</td>
+<td style="border:1px solid black;">1788, 1845, 1853, 1900, 1917, 1946, 1957, 1958, 1964, 1994</td>
+<td style="border:1px solid black;">1960</td></tr>
+<tr><td style="border:1px solid black;">Hawaii</td>
+<td style="border:1px solid black;">1868, 1975</td>
+<td style="border:1px solid black;">1837, 1868, 1877, 1923, 1946, 1952, 1957, 1960, 1964, 2011, 2012</td></tr>
+<tr><td style="border:1px solid black;">American Samoa</td>
+<td style="border:1px solid black;">2009</td>
+<td style="border:1px solid black;">1946, 1960</td></tr>
+<tr><td style="border:1px solid black;">Guam and Northern Mariana Islands</td>
+<td style="border:1px solid black;">1849</td>
+<td style="border:1px solid black;">--</td></tr>
+<tr><td style="border:1px solid black;">Puerto Rico/U.S. Virgin Islands</td>
+<td style="border:1px solid black;">1867, 1918</td>
+<td style="border:1px solid black;">--</td></tr>
+</tbody></table>
+
+* See question below: "What is the difference between a local and a distant tsunami?"
+</br></br>
+To learn more, see the <a href="https://nws.weather.gov/nthmp/documents/tsunamicalendar.pdf" target="_blank">Historic Tsunami Calendar</a>. 
+</p>
+<br/>
+</dd>
+
+
+
+<dt name="1">1.9 When do tsunamis happen?</dt>
+<dd name="1">
+<p>     There is no season for tsunamis. A tsunami can happen any time, any season, and during any
+weather.
+</p>
+<br/>
+</dd>
+
+
+<dt name="1">1.10 Where can I learn more about tsunamis?</dt>
+<dd name="1">
+<p>     There are a number of online resources that can provide more information about tsunamis. Key
+resources include the following:
+</p>
+<li><a href="https://www.meted.ucar.edu/training_course.php?id=38" target="_blank">The COMET Program’s Tsunami Distance Learning Course</a> (six independent modules)</li>
+<li><a href="https://www.weather.gov/jetstream/tsunami_intro" target="_blank">National Weather Service’s JetStream Online Weather School</a> (tsunami module)</li>
+<li><a href="http://www.nws.noaa.gov/om/Tsunami/index.html" target="_blank">National Weather Service’s Tsunami Safety website</a></li>
+<li><a href="http://itic.ioc-unesco.org/" target="_blank">International Tsunami Information Center</a></li>
+<li><a href="http://www.ngdc.noaa.gov/hazard/tsu_db.shtml" target="_blank">Global Historical Tsunami Database</a></li>
+<li><a href="http://tsunamizone.org" target="_blank">The TsunamiZone</a></li>
+<br/>
+
+</dd>
+
+<h2><a id="TJK_ToggleON1" class="TJK_SectionToggleOn" name="2" onclick="TJK_ToggleDLopen(event)">&nbsp;&nbsp;</a>
+2. Causes of a Tsunami</h2>
+<dt name="2">2.1 What causes a tsunami?</dt>
+<dd name="2">
+<p>     A tsunami is caused by a large and sudden displacement of the ocean. Large earthquakes below
+or near the ocean floor are the most common cause, but landslides, volcanic activity, certain
+types of weather, and near earth objects (e.g., asteroids, comets) can also cause tsunamis. Most
+of the tsunamis (88%) in the <a href="http://www.ngdc.noaa.gov/hazard/tsu_db.shtml" target="_blank">Global Historical Tsunami Database</a> were generated by earthquakes
+or landslides caused by earthquakes.
+</p>
+<br/>
+
+</dd>
+
+<dt name="2">2.2 How do earthquakes generate tsunamis?</dt>
+<dd name="2">
+     <p>Earthquakes provide the energy to generate tsunamis through sudden movements to the water
+column. Key earthquake characteristics that contribute to tsunami generation are location,
+magnitude, and depth. Most tsunamis are generated by earthquakes with magnitudes over 7.0
+that occur under or very near the ocean (usually at or near subduction zones, where oceanic and
+continental plates collide) and less than 100 kilometers (62 miles) below the Earth’s surface.
+Generally, an earthquake must exceed magnitude 8.0 to generate a dangerous distant tsunami.
+</p>
+<p>
+An earthquake must be big enough and close enough to the ocean floor to cause the vertical
+movement of the ocean floor that typically sets a tsunami in motion. As the ocean floor rises or
+drops, so too does the water above it. As the water moves up and down, seeking to regain its
+balance, the tsunami radiates out in all directions. The amount of movement of the ocean floor,
+the size of the area over which it occurs (which may be reflected in how long the earthquake
+lasts), and the depth of the water at its source are all important factors in the size of a resulting
+tsunami. Earthquakes can also cause landslides that generate tsunamis.
+</p>
+<p><Strong>Examples of earthquake-generated tsunamis:</Strong></p>
+<li class="hang-indent">
+<a href="http://oceantoday.noaa.gov/tsunamistrikedestruction/" target="_blank">March 11, 2011 Honshu Island, Japan</a> (video)—A magnitude 9.1 earthquake generated a
+tsunami that caused tremendous devastation locally and was observed all over the Pacific.
+In Japan, the earthquake and tsunami displaced more than 500,000 people, caused
+approximately $236 billion (2016 dollars) in damage and resulted in a nuclear accident.
+Most of the 18,457 deaths were due to the tsunami. Along the coast of Japan, tsunamis
+reached 128 feet high and almost five miles inland. Outside Japan there was very little
+loss of life due to warnings and evacuations, but in the United States there was more than
+$91 million in damage and one death. This event is the most expensive natural disaster in
+history.
+</li>
+<li class="hang-indent">
+<a href="https://youtu.be/n1VmbgsM-zE" target="_blank">December 26, 2004 Northern Sumatra, Indonesia</a> (animation)—A magnitude 9.1
+earthquake generated the deadliest tsunami in history. The tsunami was responsible for
+the majority of the impacts, which were observed in 15 countries in Southeastern and Southern
+Asia and Eastern and Southern Africa. Impacts included approximately 230,000 deaths,
+the displacement of 1.7 million people, and roughly $13 billion (2016 dollars) in
+economic losses. On the northern coast of Sumatra, waves reached up to 167 feet high
+and traveled as far as three miles inland. The extent of the losses can be attributed in part
+to the lack of an official tsunami warning system in the Indian Ocean at the time and
+limited knowledge about tsunamis.
+</li>
+<li class="hang-indent">
+<a href="https://www.youtube.com/watch?v=Lac4Zs_CIdw" target="_blank">March 27, 1964 Prince William Sound, Alaska</a> (animation)—A magnitude 9.2
+earthquake (the largest recorded in U.S. history) generated a number of tsunamis that
+devastated coastal communities in Alaska with waves as high as 167 feet (and a 220 foot
+splash mark) and caused damage along the west coasts of the United States and Canada
+and in Hawaii. Tsunami damage was approximately $1 billion (2016 dollars). About 124
+deaths were caused by the tsunami. NOAA’s National Tsunami Warning Center was
+established in response to this tsunami.
+</li>
+<li class="hang-indent">
+<a href="https://www.youtube.com/watch?v=8Bi3o1HK0Ks" target="_blank">April 1, 1946 Aleutian Islands, Alaska</a> (animation)—A magnitude 8.6 earthquake
+generated a tsunami that was destructive across the Pacific. Most of the 167 lives lost and
+$322 million (2016 dollars) in damage were in Hawaii where waves reached as high as
+55 feet. NOAA’s Pacific Tsunami Warning Center was established in response to this
+tsunami.
+</li>
+<li class="hang-indent">
+<a href="https://www.youtube.com/watch?v=_TrTZYfMYhI" target="_blank">November 1, 1755 Lisbon, Portugal</a> (animation)—A magnitude 8.5 (estimated)
+earthquake in the Atlantic Ocean generated a tsunami that affected the coasts of Portugal,
+Spain, North Africa, and the Caribbean. The earthquake and tsunami killed an estimated
+50,000 people and caused widespread destruction.
+</li>
+<li class="hang-indent">
+<a href="https://www.youtube.com/watch?v=4W2iUl0VB8c" target="_blank">January 26, 1700 Cascadia Subduction Zone</a> (animation)—A magnitude 9.0 (estimated)
+earthquake generated a tsunami that inundated the coasts of Cascadia (a region that
+includes northern California, Oregon, Washington, and southern British Columbia) as
+well as coastal villages on the other side of the Pacific Ocean in Japan. Today, the
+Cascadia Subduction Zone is considered one of the largest U.S. tsunami threats.</li>
+
+<p>Source: <a href="http://www.ngdc.noaa.gov/hazard/tsu_db.shtml" target="_blank">Global Historical Tsunami Database</a><br/>
+</p>
+<p>
+To learn more about earthquakes, visit the <a href="http://earthquake.usgs.gov/" target="_blank">U.S. Geological Survey’s Earthquake Hazards Program.</a>
+</p>
+<br/>
+
+</dd>
+
+<dt style="margin:7px 60px;" name="2">2.2.1 What types of earthquakes generate tsunamis?</dt>
+<dd style="margin:7px 60px;" name="2">
+<p>     Most of the earthquakes that generate tsunamis occur on thrust or reverse faults. These
+earthquakes originate mainly where tectonic plates move toward each other in subduction zones.
+But, 10-15 percent of damaging tsunamis are generated by strike-slip earthquakes, where the
+movement of the earth is horizontal. These tsunamis are likely generated by associated
+landslides, movement of a sloping ocean floor, or the presence of seamounts, which are underwater 
+mountains (that can act like paddles and push the water horizontally). Tsunamis generated by strike-slip earthquakes
+normally affect regions near the source only.
+</p>
+<p>
+To learn more about faults, visit the <a href="http://geomaps.wr.usgs.gov/parks/deform/gfaults.html" target="_blank">visual glossary</a> from the U.S. Geology Survey.
+</p>
+<br/>
+
+</dd>
+
+<dt style="margin:7px 60px;" name="2">2.2.2 What was the largest earthquake ever recorded?</dt>
+<dd style="margin:7px 60px;" name="2">
+     <p>The largest earthquake ever recorded was a magnitude 9.5 earthquake off the coast of Southern
+Chile on May 22, 1960. This earthquake and the second largest earthquake, the 1964 magnitude
+9.2 in Prince William Sound, Alaska, both generated devastating tsunamis.</p>
+
+<p>Learn more about <a href="http://earthquake.usgs.gov/earthquakes/browse/" target="_blank">past earthquakes</a> from the U.S. Geological Survey.</p>
+<br/>
+
+</dd>
+
+<dt name="2">2.3 How do landslides generate tsunamis?</dt>
+<dd name="2">
+     <p>Relating to tsunami generation, “landslide” is a general term that incorporates a number of types of ground movement,
+including rock falls, slope failures, debris flows, slumps, ice falls/avalanches, and glacial calving
+(the breaking off of large pieces of ice from a glacier). Tsunamis can be generated when a
+landslide enters the water and displaces it from above (subaerial) or when water is displaced
+ahead of and behind an underwater (submarine) landslide. Tsunami generation depends on the
+amount of landslide material that displaces the water, the speed it is moving, and the depth it
+moves to. Landslide-generated tsunamis may be larger than seismic tsunamis near their source
+and can impact coastlines within minutes with little to no warning, but they usually lose energy
+quickly and rarely affect distant coastlines.
+</p>
+<p>
+Most landslides that generate tsunamis are caused by earthquakes, but other forces (like gravity,
+wind, and increased precipitation) can cause overly steep and otherwise unstable slopes to
+suddenly fail. Earthquakes that are not large enough to directly generate a tsunami may be large
+enough to cause a landslide that in turn can generate a tsunami. A landslide-generated tsunami
+may occur independently or along with a tsunami directly generated by an earthquake, which can
+complicate the warning process and compound the losses.</p>
+
+<p><Strong>Examples of landslide-generated tsunamis:</Strong>
+<li class="hang-indent">
+<Strong>July 17, 1998 Papua New Guinea</Strong>—A moderately sized magnitude 7.0 earthquake
+triggered a large underwater landslide that generated a deadly tsunami. Three waves, the highest measuring roughly 49 feet high, struck the coast within 20 minutes of the
+earthquake, destroying entire villages. Approximately 2,200 lives were lost, and more
+than 10,000 people were displaced.
+</li>
+<li class="hang-indent">
+<Strong>July 10, 1958 Southeast Alaska</Strong>—A magnitude 7.8 earthquake triggered a number of
+submarine landslides, rock falls, and ice falls that generated tsunamis that killed five
+people. A rock fall into Lituya Bay sent water surging over the opposite shore, clearing
+trees around the bay up to a maximum height of 1,720 feet. It is considered the largest
+tsunami ever recorded.
+</li>
+<li class="hang-indent">
+<Strong>November 18, 1929 Grand Banks, Newfoundland, Canada</Strong>—A magnitude 7.3
+earthquake in the Atlantic Ocean triggered a submarine landslide that generated a
+tsunami. Waves up to 43 feet high were responsible for 28 deaths and $14 million (2016
+dollars) in damage along the coast of Newfoundland.
+</li>
+</p>
+<p><p>Source: <a href="http://www.ngdc.noaa.gov/hazard/tsu_db.shtml" target="_blank">Global Historical Tsunami Database</a><br/>
+</p>
+<p>
+To learn more about landslides, visit the  <a href="http://landslides.usgs.gov/" target="_blank">U.S. Geological Survey’s Landslide Hazards Program</a>.</p>
+
+<br/>
+
+</dd>
+
+<dt name="2">2.4 How do volcanoes generate tsunamis?</dt>
+<dd name="2">
+     <p>Tsunamis generated by volcanoes, both above and below water, are infrequent, but several types
+of volcanic activity can displace enough water to generate destructive tsunamis. These include:</p>
+<li class="tab1">Pyroclastic flows (flowing mixtures of rock fragments, gas, and ash)</li>
+<li class="tab1">Submarine explosions relatively near the ocean surface</li>
+<li class="tab1">Caldera formation (volcanic collapse)</li>
+<li class="tab1">Landslides (e.g., flank collapse, debris flows)</li>
+<li class="tab1">Lateral blasts (sideways eruptions)</li>
+<p>
+Like other nonseismic tsunamis, such as those generated by landslides, volcanic tsunamis usually
+lose energy quickly and rarely affect distant coastlines.</p>
+
+<p><Strong>Examples of volcano-generated tsunamis:</Strong></p>
+<li class="hang-indent"><Strong>August 27, 1883 Indonesia</Strong>—The volcano Krakatau (Krakatoa) exploded and collapsed,
+generating one of the largest and most destructive tsunamis ever recorded. Waves
+reaching 135 feet high destroyed coastal towns and villages along the coasts of Java and
+Sumatra and killed more than 34,000 people.</li>
+<li class="hang-indent"><Strong>May 21, 1792 Kyushu Island, Japan</Strong>—At the end of the four-month eruption of the
+Unzen volcano, a flank collapse generated a tsunami with waves reaching 180 feet high
+that caused destruction around the Ariake Sea and more than 14,000 deaths.</li>
+<li class="hang-indent"><Strong>~1610 BC Greece</Strong>—The volcano Santorini (Thera) erupted, generating a tsunami that
+swept the shores of nearby islands and contributed to the end of the Minoan culture on
+the nearby island of Crete.</li>
+<p>
+Source: <a href="http://www.ngdc.noaa.gov/hazard/tsu_db.shtml" target="_blank">Global Historical Tsunami Database</a><br/>
+</p>
+<p>
+To learn more about volcanoes, visit the <a href="http://volcanoes.usgs.gov/index.html" target="_blank">U.S. Geological Survey’s Volcano Hazards Program</a>.
+</p>
+
+<br/>
+
+</dd>
+
+<dt name="2">2.5 How does weather generate tsunamis?</dt>
+<dd name="2">
+     <p>Air pressure disturbances often associated with fast moving weather systems, like squall lines,
+can generate tsunamis. These “meteotsunamis” are similar to tsunamis generated by earthquakes.
+Their development depends on the intensity, direction, and speed of the air pressure disturbance
+as it travels over the ocean as well as the ocean’s depth. Meteotsunamis are regional, and certain
+parts of the world are prone to them due to a combination of factors such as local weather
+patterns and the shape and features of the surface of the Earth, both above and below the ocean.
+</p>
+<p><Strong>Examples of meteotsunamis:</Strong>
+<li class="hang-indent"><a href="https://www.youtube.com/watch?v=ykABRe5Yt3c" target="_blank">June 13, 2013 Northeastern United States</a> (animation)—Tsunami-like waves crashed
+upon the New Jersey and southern Massachusetts coasts, despite clear skies and calm
+weather. In Barnegat Inlet, New Jersey, three people were injured when a six-foot wave
+swept them off a jetty and into the water. After ruling out other sources, scientists
+determined the waves had been generated by a derecho (a high-speed windstorm
+associated with a strong band of thunderstorms) that had passed through the area hours
+earlier.</li>
+<li class="hang-indent"><Strong>June 21, 1978 Vela Luka, Croatia</Strong>—Without warning and during relatively nice weather, flooding waves inundated the port town of Vela Luka. Scientists ultimately
+identified the source as atmospheric and deemed it the strongest meteotsunami on record.
+This event featured 19.5-foot waves, lasted several hours, and caused millions of dollars
+in damage.</li>
+</p>
+
+<p>To learn more about meteotsunamis, read “<a href="http://nws.weather.gov/nthmp/meteotsunamis.html" target="_blank">What Is a Meteotsunami?</a>”</p>
+<br/>
+
+</dd>
+
+<dt name="2">2.6 Can near earth objects generate tsunamis?</dt>
+<dd name="2">
+     <p>It is very rare for a near earth object like an asteroid or comet to reach the earth, and there is still
+a lot of uncertainty about their potential to generate tsunamis and the size and reach of those
+tsunamis if they do. Scientists believe there are two ways near earth objects could generate a
+tsunami. Large objects (approximately 1,000 meters, 0.62 mile, or more in diameter) that make it
+through Earth’s atmosphere without burning up could hit the ocean, displacing water and
+generating an “impact” tsunami. Smaller objects tend to burn up in the atmosphere, exploding
+before they reach the Earth’s surface. If this happens above the ocean, the explosion could
+release energy into the ocean and generate an “airburst” tsunami.
+</p>
+<p>
+<Strong>Example of a near earth object tsunami:</Strong> Evidence suggests that the Chicxulub impact on
+Mexico’s Yucatán Peninsula, which likely caused a mass extinction at the end of the Cretaceous
+period 65 million years ago, may have generated a tsunami that reached hundreds of miles inland
+around the Gulf of America.
+</p>
+<br/>
+
+</dd>
+<h2><a id="TJK_ToggleON1" class="TJK_SectionToggleOn" name="3" onclick="TJK_ToggleDLopen(event)">&nbsp;&nbsp;</a>
+3. Tsunami Characteristics</h2>
+<dt name="3">3.1 How many waves are there in a tsunami?</dt>
+<dd name="3">
+<p>     A tsunami is a series of waves, not just one. These waves are often referred to as the tsunami
+wave train. A large tsunami may continue for days in some locations.
+</p>
+<br/>
+
+</dd>
+
+<dt name="3">3.2 How fast does a tsunami travel?</dt>
+<dd name="3">
+     <p>The speed of a tsunami depends on the depth of the water it is traveling through. The deeper the
+water; the faster the tsunami. In the deep ocean, tsunamis can move as fast as a jet plane, over
+500 mph, and can cross entire oceans in less than a day. As the waves enter shallow water near
+land, they slow to the speed of a car, approximately 20 or 30 mph.
+</p>
+<p>
+Tsunami speed can be computed by taking the square root of the product of the water depth and the
+acceleration of gravity (32.2 feet per second squared). In 15,000 feet of water, this works out to about
+475 miles per hour. At rates like this, a tsunami will travel from the Aleutian Islands to Hawaii in
+about five hours; or from the Portugal coast to North Carolina in eight and a half hours.</p>
+<br/>
+
+</dd>
+<dt name="3">3.3 How big is a tsunami?</dt>
+<dd name="3">
+     <p>In the deep ocean, the wavelength of a tsunami (the distance between waves) may be hundreds of
+miles, but its waves may be barely noticeable and are rarely more than three feet high. Mariners at
+sea will not normally notice tsunamis as they pass beneath their hulls. As the waves enter
+shallow water near land and slow down, their wavelengths decrease, they grow in height, and
+currents intensify. When they strike land, most tsunamis are less than 10 feet high, but in
+extreme cases, can exceed 100 feet when they strike near their source. The first wave may not be the last or the
+largest. A large tsunami can flood low-lying coastal areas more than a mile inland.
+</p>
+<p>
+Not all tsunamis act the same, and an individual tsunami may affect coasts differently due to
+offshore and coastal features. Reefs, bays, entrances to rivers, undersea features, and the slope of
+the beach can all influence the size, appearance, and impact of tsunamis when they strike the
+coast. A small nondestructive tsunami in one place may be very large and violent a few miles
+away.</p>
+<br/>
+
+</dd>
+
+<dt name="3">3.4 What does a tsunami look like when it reaches the coast?</dt>
+<dd name="3">
+     <p>When a tsunami reaches the coast, it may look like a fast-rising flood, or a wall of water (bore). 
+Its appearance may differ at different points along a coast.  It will not look like a normal wind wave.  
+Tsunamis rarely become great towering breaking waves. Sometimes, before the water rushes on land, 
+it will suddenly recede, showing the ocean floor, reefs, and fish like a very low, low tide.
+</p>
+<br/>
+
+</dd>
+
+<dt name="3">3.5 How long does a tsunami last?</dt>
+<dd name="3">
+<p>     Large tsunamis may continue for days in some locations, reaching their peak often a couple of
+hours after arrival and gradually tapering off after that. The time between tsunami crests (the
+tsunami’s period) ranges from approximately five minutes to two hours. Dangerous tsunami
+currents can last for days.
+</p>
+<br/>
+
+</dd>
+
+<dt name="3">3.6 What is the difference between a local and a distant tsunami?</dt>
+<dd name="3">
+<p>     Tsunamis are often referred to as local or distant. The type of tsunami depends on the location of
+the source of the tsunami and where it may strike land. The source of a local tsunami is close to
+the coast and may arrive in less than one hour. The danger is greatest for local tsunamis because
+warning time is limited. A distant tsunami is generated far away from a coast, so there is more
+time to issue and respond to warnings.
+</p>
+<br/>
+
+</dd>
+<dt name="3">3.7 How are tsunamis different from normal ocean waves?</dt>
+<dd name="3">
+     <p>Most ocean waves are generated by wind. Tsunamis are not the same as wind waves. First of all,
+they have different sources. In addition, tsunamis move through the entire water column, from
+the ocean surface to the ocean floor, while wind waves only affect the ocean surface.
+</p>
+<p>
+Waves can also be described based on their wavelength (horizontal distance between wave
+crests), period (time between wave crests), and speed. These characteristics highlight additional
+differences between tsunamis and wind waves. Wavelengths are measured in miles for tsunamis
+and in feet for wind waves. Periods are measured in minutes for tsunamis and in seconds for
+wind waves. Tsunamis are also faster than wind waves, and although they may be smaller in
+height in the deep ocean, tsunamis can grow to much greater heights and cause much more
+destruction than wind waves at the coast.
+</p><br/>
+<p>
+<table style="border:1px solid black; width:500px; border-collapse: collapse;">
+<thead><tr><th style="border:1px solid black; width:170px;">
+</th><th style="border:1px solid black; width:170px;">Tsunami</th>
+<th style="border:1px solid black;">Wind Wave</th></tr></thead>
+
+<tbody><tr><td style="border:1px solid black;">Source</td>
+<td style="border:1px solid black;">Earthquakes, landslides, volcanic activity, certain types of weather, near earth objects
+</td>
+<td style="border:1px solid black;">Winds that blow across the surface of the ocean</td></tr>
+
+<tr><td style="border:1px solid black;">Location of energy
+</td>
+<td style="border:1px solid black;">Entire water column, from the ocean surface to the ocean floor
+</td>
+<td style="border:1px solid black;">Ocean surface</td></tr>
+
+<tr><td style="border:1px solid black;">Wavelength</td>
+<td style="border:1px solid black;">60-300 miles</td>
+<td style="border:1px solid black;">300-600 feet</td></tr>
+
+<tr><td style="border:1px solid black;">Wave Period</td>
+<td style="border:1px solid black;">5 minutes – 2 hours</td>
+<td style="border:1px solid black;">5-20 seconds</td></tr>
+
+<tr><td style="border:1px solid black;">Wave Speed</td>
+<td style="border:1px solid black;">500-600 miles per hour (in deep water) 20-30 miles per hour (near shore)
+</td>
+<td style="border:1px solid black;">5-60 miles per hour</td></tr>
+</tbody>
+</table>
+</p>
+<br/>
+
+</dd>
+
+<h2><a id="TJK_ToggleON1" class="TJK_SectionToggleOn" name="4" onclick="TJK_ToggleDLopen(event)">&nbsp;&nbsp;</a>
+4. Tsunami Detection and Forecasting</h2>
+
+<dt name="4">4.1 What are the responsibilities of the Tsunami Warning Centers?</dt>
+<dd name="4">
+<p>     The NWS operates two Tsunami Warning Centers, which are staffed 24 hours a day, 7 days a
+week. The main mission of the warning centers is to help protect life and property from
+tsunamis. To do this, they monitor observational networks, analyze earthquakes, evaluate water-level information, issue tsunami messages, conduct public outreach, and coordinate with the
+<a href="http://nws.weather.gov/nthmp/" target="_blank">National Tsunami Hazard Mitigation Program</a> and government, academic, and international
+organizations to continually improve their operations.
+</p>
+<br/>
+
+</dd>
+
+<dt name="4">4.2 How are tsunamis detected?</dt>
+<dd name="4">
+     <p>The Tsunami Warning Centers depend on an observation system that includes seismic and water-level networks from around the world to help them determine when and where to issue tsunami messages. These networks are critical to the warning centers’ ability to provide timely and accurate messages:
+<li class="hang-indent"><Strong>Seismic Networks</Strong>—When an earthquake occurs, seismic networks provide information about an earthquake’s location, depth, magnitude, and other source characteristics. The warning centers analyze this information to determine if the earthquake could have
+generated a tsunami and if a tsunami message is necessary.
+<li class="hang-indent"><Strong>Water-Level Networks</Strong>—If an earthquake meets certain criteria, the warning centers turn to water-level information, looking for changes in water-level height that could indicate the existence and size of a tsunami. The primary sources of information about water-level change are a network of <a href="http://www.ndbc.noaa.gov/dart.shtml" target="_blank">Deep-ocean Assessment and Reporting of Tsunami (DART) systems</a> and an extensive array of <a href="http://tidesandcurrents.noaa.gov/tsunami/" target="_blank">coastal water-level stations</a>.
+</p>
+<br/>
+
+</dd>
+
+<dt name="4">4.3 What is a DART system?</dt>
+<dd name="4">
+     <p><a href="http://www.ndbc.noaa.gov/dart.shtml" target="_blank">DART (Deep-ocean Assessment and Reporting of Tsunami)</a> systems were developed by NOAA
+for the early detection, measurement, and real-time reporting of tsunamis in the open ocean. The NWS’s National Data Buoy Center operates and maintains the U.S. network of DART systems, which is part of a larger international network. The U.S. network is composed of 39 systems (as of 2016) strategically located throughout the Pacific and Atlantic Oceans, the Gulf of America, and the Caribbean Sea.
+</p>
+<p>
+Each system consists of a bottom pressure recorder (BPR) anchored on the ocean floor and a
+separately moored companion surface buoy. When a tsunami passes over a BPR, the instrument
+detects and records the changes in the overlying water pressure. An acoustic link transmits
+information from the BPR to the surface buoy, which then relays it via satellite to the warning
+centers where the information is incorporated into tsunami forecast models.
+</p>
+<p><a href="https://youtu.be/2mKbFORiDzg?list=PL3BDBAAAA7D4EB2DA" target="_blank">See how a DART system works</a> (video).
+</p>
+<br/>
+
+</dd>
+<dt name="4">4.4 What is a coastal water-level station?</dt>
+<dd name="4">
+<p>     Coastal water-level stations collect important information about the height of the ocean at
+specific coastal locations. Their primary purpose is to monitor tides for navigation purposes, thus
+they are located on the coast (in contrast to the DART systems, which are in deep water),
+generally on piers in harbors. Information from these stations is relayed via satellite to the
+warning centers where it is used to confirm tsunami arrival time and height and is incorporated
+into tsunami forecast models. Coastal water-level stations are owned and operated by a number
+of national and international organizations. In the United States, most of the <a href="http://tidesandcurrents.noaa.gov/tsunami/" target="_blank">tsunami-capable coastal water-level stations</a> (i.e., data is available in one-minute intervals) are operated and maintained by NOAA’s Center for Operational Oceanographic Products and Services as part of the National Water Level Observation Network.
+</p>
+<br/>
+
+</dd>
+
+<dt name="4">4.5 How are tsunamis forecast?</dt>
+<dd name="4">
+     <p>In most cases, the first sign of a potential tsunami is an earthquake. Seismic waves travel about
+100 times faster than tsunamis, so information about an earthquake is available before
+information about any tsunami it may have generated. Three key pieces of information about an
+earthquake help the Tsunami Warning Centers determine if it was capable of generating a
+tsunami: location, depth, and magnitude. The warning centers use this preliminary seismic
+information to decide if they should issue a tsunami message and at what alert level(s).
+</p>
+<p>
+Once a message is issued, the warning centers conduct additional seismic analysis and run
+tsunami forecast models using information from the seismic and water-level networks as it
+becomes available. These numerical models use the real-time information and pre-established
+scenarios to simulate tsunami movement across the ocean and estimate coastal impacts,
+including wave height and arrival times, the location and extent of coastal flooding, and event
+duration. The resulting forecasts, combined with historic tsunami information and additional
+seismic analysis, help the warning centers decide if they should issue an updated or cancellation
+message.
+</p>
+<p>
+It is more difficult to forecast nonseismic tsunamis (like landslide and volcanic tsunamis and
+meteotsunamis), which can arrive with little to no warning. Even if a nonseismic tsunami is
+detected by a DART system or coastal water-level station, there may not be time to develop a
+detailed forecast. In the case of meteotsunamis, NWS Weather Forecast Offices, with decision
+support from the warning centers, can notify the public of the potential coastal threat given the
+presence of or potential for certain weather conditions along with observed water-level
+measurements.
+</p>
+<br/>
+
+</dd>
+
+<h2><a id="TJK_ToggleON1" class="TJK_SectionToggleOn" name="5" onclick="TJK_ToggleDLopen(event)">&nbsp;&nbsp;</a>
+5. Tsunami Messages</h2>
+
+<dt name="5">5.1 What are tsunami messages?</dt>
+<dd name="5">
+     <p>Tsunami messages are issued by the Tsunami Warning Centers to notify emergency managers
+and other local officials, the public, and other partners about the potential for a tsunami
+following a possible tsunami-generating event. For the United States, Canada, and the British Virgin Islands, 
+these messages include alerts. There are four levels of tsunami alerts: warning, advisory, watch, and information
+statement.
+</p>
+<p>
+Initial tsunami messages include alert level(s), preliminary information about the earthquake, and
+an evaluation of the threat. If a tsunami is already suspected, the message may also include wave
+arrival times, recommended life safety actions, and potential impacts. Subsequent messages, both
+updates and cancellations, are based on additional seismic analysis and results from the tsunami
+forecast models and may feature more refined, detailed, and targeted information.
+</p>
+<p><a href="/?page=product_list" target="_blank">See examples of tsunami messages.</a>
+</p>
+<br/>
+
+</dd>
+<dt style="margin:7px 60px;" name="5">5.1.1 What is a tsunami warning?</dt>
+<dd style="margin:7px 60px;" name="5">
+<p>     A tsunami warning is issued when a tsunami with the potential to generate widespread
+inundation is imminent, expected, or occurring. Warnings alert the public that dangerous coastal
+flooding accompanied by powerful currents is possible and may continue for several hours after
+initial arrival. Warnings alert emergency management officials to take action for the entire
+tsunami hazard zone. Appropriate actions to be taken by local officials may include the
+evacuation of low-lying coastal areas and the repositioning of ships to deep waters when there is
+time to safely do so. Warnings may be updated, adjusted geographically, downgraded, or
+canceled based on updated information and analysis.
+</p>
+<br/>
+
+</dd>
+
+<dt style="margin:7px 60px;" name="5">5.1.2 What is a tsunami advisory?</dt>
+<dd style="margin:7px 60px;" name="5">
+<p>     A tsunami advisory is issued when a tsunami with the potential to generate strong currents or
+waves dangerous to those in or very near the water is imminent, expected, or occurring. The
+threat may continue for several hours after initial arrival, but significant inundation is not
+expected for areas under an advisory. Appropriate actions to be taken by local officials may
+include closing beaches, evacuating harbors and marinas, and the repositioning of ships to deep
+waters when there is time to safely do so. Advisories may be updated, adjusted geographically,
+upgraded to a warning, or canceled based on updated information and analysis.
+</p>
+<br/>
+
+</dd>
+<dt style="margin:7px 60px;" name="5">5.1.3 What is a tsunami watch?</dt>
+<dd style="margin:7px 60px;" name="5">
+<p>     A tsunami watch is issued when a tsunami may later impact the watch area. The watch may be
+upgraded to a warning or advisory or canceled based on updated information and analysis.
+Emergency management officials and the public should prepare to take action.
+</p>
+<br/>
+
+</dd>
+<dt style="margin:7px 60px;" name="5">5.1.4 What is a tsunami information statement?</dt>
+<dd style="margin:7px 60px;" name="5">
+<p>     A tsunami information statement is issued when an earthquake or tsunami has occurred of
+interest to the message recipients. In most cases, information statements are issued to indicate
+there is no threat of a destructive basin-wide tsunami and to prevent unnecessary evacuations.
+Information statements for distant events requiring evaluation may be upgraded to a warning,
+advisory, or watch based on updated information and analysis.
+</p>
+<br/>
+
+</dd>
+
+<dt name="5">5.2 What is a tsunami threat message?</dt>
+<dd name="5">
+<p>     A tsunami threat message is a tsunami message for international partners in the Pacific 
+and Caribbean. The United States does not issue alerts for these partners. The primary purpose of 
+these messages is to help national authorities understand the threat to their coasts so they can 
+determine which alerts to issue for their coastlines, if any. A threat message describes tsunami 
+threats according to the potential hazard and impact to people, structures, and ecosystems on land 
+or in nearshore marine environments. National authorities will determine the appropriate level of 
+alert for each country and may issue additional or more refined information and instructions. A 
+threat message may be updated based on new information, data, and analysis. An information statement 
+may be issued following an earthquake or tsunami of interest to the message recipients if there is 
+little to no threat, but may be upgraded to a tsunami threat message if warranted.
+</p>
+<p>
+<b>U.S. states and territories in the Pacific and Caribbean (American Samoa, Guam, Hawaii, Northern Mariana Islands, Puerto Rico, U.S. Virgin Islands) should refer <u>*ONLY</u></b> to the Pacific Tsunami Warning Center messages for their regions. International tsunami threat messages from the Pacific Tsunami Warning Center may mention U.S. states and territories, but they do not reflect the additional modeling and analysis conducted to fine tune forecasts and set alert levels for the United States and should not to be relied on by U.S. states and territories
+</p>
+<p><a href="/?page=product_list" target="_blank">See examples of tsunami messages.</a>
+</p>
+<br/>
+
+</dd>
+
+<dt name="5">5.3 Who issues tsunami messages?</dt>
+<dd name="5">
+<p>     The Tsunami Warning Centers prepare and issue tsunami messages for their respective 
+designated service areas.  Primary recipients of these messages include NWS Weather Forecast Offices, 
+state emergency operations centers, the U.S. Coast Guard, the U.S. military, and designated 
+international authorities. Each of these recipients is responsible for forwarding the message to its own
+constituents.
+</p>
+<br/>
+
+</dd>
+<dt name="5">5.4 Who cancels tsunami messages?</dt>
+<dd name="5">
+<p>     The Tsunami Warning Centers issue a cancellation after they determine that a destructive
+tsunami will not affect an area under a warning, advisory, or watch or that a tsunami has
+diminished to a level where additional damage is not expected. However, the cancellation of a
+message does not mean the area is safe. The final decision that an area is safe is up to local and
+state emergency management officials.
+</p>
+<br/>
+
+</dd>
+<dt name="5">5.5 What are the designated service areas of the Tsunami Warning Centers?</dt>
+<dd name="5">
+<p>     
+<li style="text-indent:-22px; margin-left:25px;">The National Tsunami Warning Center in Palmer, Alaska, serves the continental United
+States, Alaska and Canada.</li><br/>
+<li style="text-indent:-22px; margin-left:25px;">The Pacific Tsunami Warning Center in Honolulu, Hawaii, directly serves the Hawaiian 
+Islands, the U.S. Pacific and Caribbean territories, and the British Virgin Islands and is the primary international forecast center 
+for the warning systems of the Intergovernmental Oceanographic Commission of the United Nations Educational, Scientific, and Cultural 
+Organization in the Pacific and the Caribbean and Adjacent Regions.</li>
+</p>
+<br/>
+
+</dd>
+<dt name="5">5.6 How do the Tsunami Warning Centers decide what alert levels to include in their messages?</dt>
+<dd name="5">
+     <p>The Tsunami Warning Centers base their initial tsunami messages on the preliminary earthquake
+information (location, depth, and magnitude) received from seismic networks since that is all the
+information available within the first few minutes after an earthquake. They use preset criteria
+(<a href="/images/procChartLargeAtlantic.gif" target="_blank">Atlantic</a>, 
+<a href="/images/procChartLargePacific.gif" target="_blank">Pacific</a>) to 
+decide when to issue a tsunami message and what alert(s) to include.  Subsequent messages and alerts 
+are based on impact estimation resulting from additional seismic analysis, water-level measurements, 
+tsunami forecast model results, and historical tsunami information.
+</p>
+<p>
+Tsunami warnings are typically issued following coastal earthquakes
+magnitude 6.5 or greater for U.S. and Canadian Atlantic and Gulf coasts, and magnitude 7.1 or
+greater for all coasts along the Pacific Ocean and Caribbean Sea. Tsunami
+height also affects alert selection. In general, the warning centers issue a tsunami warning if the
+forecast or observed tsunami height exceeds 1.0 meter (3.3 feet) or the impact is unknown, and a
+tsunami advisory if the forecast height is between 0.3 and 1.0 meter (0.98 and 3.3 feet) or the
+observed height is between 0.5 and 1.0 meter (1.6 and 3.3 feet).
+</p>
+<br/>
+
+</dd>
+
+
+<dt name="5">5.7 How quickly are tsunami messages issued?</dt>
+<dd name="5">
+     <p>The time it takes for a Tsunami Warning Center to issue a tsunami message depends on the
+seismic network density and distribution near the earthquake’s point of origin. In regions of high
+seismic network density, the warning centers can issue messages within five minutes. In areas of
+lower seismic network density, response time increases to 10-15 minutes.
+
+</p>
+<br/>
+
+</dd>
+
+
+<dt name="5">5.8 How can I receive tsunami messages?</dt>
+<dd name="5">
+     <p>In the United States, tsunami messages are broadcast through local radio and television, marine radio, <a href="https://www.weather.gov/media/wrn/WEATsunamiFactSheet.pdf" target="_blank"><u>wireless
+emergency alerts</u></a>, <a href="http://www.nws.noaa.gov/nwr/" target="_blank"><u>NOAA Weather Radio</u></a>, NOAA websites (like <a href="http://www.tsunami.gov/" target="_blank"><u>Tsunami.gov</u></a>), and social media
+accounts (Facebook and Twitter). They may also come through outdoor sirens, local officials,
+emails and text message alerts from state and local opt-in systems, and telephone notifications. In
+some cases, like wireless emergency alerts that only broadcast the first tsunami warning,
+broadcast of a message may depend on the level of alert and/or local circumstances. There may
+not always be enough time for an official warning, so it is important to understand natural
+warnings.
+</p>
+<p>
+<a href="/?page=productRetrieval" target="_blank"><u>Learn how to get alerts from the Tsunami Warning Centers</u></a>.
+</p>
+<br/>
+
+</dd>
+
+<h2><a id="TJK_ToggleON1" class="TJK_SectionToggleOn" name="6" onclick="TJK_ToggleDLopen(event)">&nbsp;&nbsp;</a>
+6. Tsunami Safety</h2>
+<dt name="6">6.1 Why are tsunamis dangerous?</dt>
+<dd name="6">
+     <p>A tsunami is one the most powerful and destructive natural forces. It can produce unusually
+strong currents, rapidly flood land, and devastate coastal communities. Low-lying areas such as
+beaches, bays, lagoons, harbors, river mouths, and areas along rivers and streams leading to the
+ocean are the most vulnerable.
+</p>
+<p>
+Most tsunami damage and destruction is caused by flooding, wave impacts, strong currents,
+erosion, and debris. The water can be just as dangerous as it returns to the sea, taking debris and
+people with it. In addition to loss of life and mass injuries, other potential impacts include
+damage to and destruction of homes and businesses, cultural and natural resources,
+infrastructure, and critical facilities. Flooding and dangerous currents can last for days. Even
+small tsunamis can pose a threat. Strong currents can injure and drown swimmers and damage
+and destroy boats in harbors.
+</p>
+<p>
+Local tsunamis are particularly dangerous. They can strike a coast within minutes of generation
+with little or no warning.<p>
+<br/>
+
+</dd>
+<dt name="6">6.2 How can I prepare for a tsunami?</dt>
+<dd name="6">
+     <p>Although tsunamis cannot be prevented, there are things you can do before a tsunami that could
+save your life and the lives of your family and friends. Importantly, find out if your home,
+school, workplace, or other places you visit often are in a tsunami hazard zone (<a href="http://nws.weather.gov/nthmp/maps.html" target="_blank"><u>U.S. tsunami maps</u></a>).
+</p>
+<p>
+If you live or spend time in a tsunami hazard zone:
+<li class="hang-indent">Educate yourself about tsunami warnings (official and natural) and ensure you have
+multiple ways to receive official warnings. In the United States, get a <a href="http://www.nws.noaa.gov/nwr/" target="_blank"><u>NOAA Weather Radio</u></a>, sign up for text
+message alerts from your local government, and verify that your mobile devices receive <a href="https://www.weather.gov/media/wrn/WEATsunamiFactSheet.pdf" target="_blank"><u>wireless emergency alerts</u></a>.</li>
+<li class="hang-indent">Make an <a href="http://www.ready.gov/" target="_blank"><u>emergency plan</u></a> that includes plans for <a href="http://www.ready.gov/make-a-plan" target="_blank"><u>family communication</u></a> and evacuation.</li>
+<li class="hang-indent">Map out routes from home, work, and other places you visit often to safe places on high
+ground or inland (away from the water) and outside the tsunami hazard zone. Your
+community may already have identified evacuation routes and assembly areas (if they
+have not, identify a safe place at least 100 feet above sea level or 1 mile inland). Plan to
+evacuate on foot if you can; roads may be impassable due to damage, closures, or traffic
+jams.</li>
+<li class="hang-indent">Practice walking your routes, even in darkness and bad weather. This will ease
+evacuation during an emergency.</li>
+<li class="hang-indent">Put together a portable <a href="http://www.ready.gov/build-a-kit" target="_blank"><u>disaster supplies kit</u></a> with items you and your family (including
+pets) may need in an emergency. Prepare kits for work and cars, too.</li>
+<li class="hang-indent">Be a role model. Share your knowledge and plans with others.</li>
+</p>
+<p>
+If you have children in school in a tsunami hazard zone, find out the school’s plans for
+evacuating and keeping children safe. If you are visiting the coast, find out about local tsunami
+safety. Your hotel or campground should have this information.
+</p>
+<p>
+Visit the NWS <a href="http://www.nws.noaa.gov/om/Tsunami/" target="_blank"><u>Tsunami Safety</u></a> and <a href="http://itic.ioc-unesco.org/index.php" target="_blank"><u>International Tsunami Information Center</u></a> websites to learn more.
+</p>
+<br/>
+
+</dd>
+
+<dt name="6">6.3 How will I know if a tsunami is coming?</dt>
+<dd name="6">
+<p>     There are two ways that you may be warned that a tsunami is coming: an official tsunami
+warning and a natural tsunami warning. Both are equally important. You may not get both.
+<li class="hang-indent">In the United States, an <Strong><i>official</i> tsunami warning</Strong> will be broadcast through local radio and television, marine radio, <a href="https://www.weather.gov/media/wrn/WEATsunamiFactSheet.pdf" target="_blank"><u>wireless emergency alerts</u></a>, <a href="http://www.nws.noaa.gov/nwr/" target="_blank"><u>NOAA Weather Radio</u></a>, and NOAA websites (like <a href="http://www.tsunami.gov/" target="_blank"><u>Tsunami.gov</u></a>) and social media accounts (Facebook and Twitter). It may also come
+through outdoor sirens, local officials, emails and text message alerts from state and local
+opt-in systems, and telephone notifications.</li>
+<li class="hang-indent">There may not always be time to wait for an official tsunami warning. A <Strong><i>natural</i> tsunami warning</Strong> may be your first, best, or only warning that a tsunami is on its way. Natural tsunami warnings include strong or long earthquakes, a loud roar (like a train or an
+airplane) from the ocean, and unusual ocean behavior. The ocean could look like a fast-
+rising flood or a wall of water (bore). Or, it could recede suddenly, showing the ocean floor,
+reefs, and fish like a very low, low tide. If you experience any of these warnings, even just
+one, a tsunami could be coming.</li>
+</p>
+<br/>
+
+</dd>
+<dt name="6">6.4 How should I respond to a tsunami warning?</dt>
+<dd name="6">
+     <p>How you should respond to a tsunami warning depends on where you are and the type of
+warning you receive (i.e., official or natural). Be prepared to respond immediately to whatever
+you hear or see first.
+</p>
+<p>
+If you are in a tsunami hazard zone and receive an official tsunami warning:
+<li class="hang-indent">Stay out of the water and away from beaches and waterways.</li>
+<li class="hang-indent">Get more information from radio, television, or your mobile device (text or data) and continue to stay informed throughout the event.</li>
+<li class="hang-indent">If officials ask you to evacuate, implement your emergency plan and move quickly to
+your safe place. If you do not have a safe place or cannot reach it, follow evacuation
+signs to safety or go as high or as far inland (away from the water) as possible (at least
+100 feet above sea level or a mile inland).</li>
+</p>
+<p>
+If you are in a tsunami hazard zone and receive a natural tsunami warning, a tsunami could
+arrive within minutes:
+<li class="hang-indent">In case of an earthquake, protect yourself. Drop, cover, and hold on. Be prepared for
+aftershocks. Each time the earth shakes, drop, cover, and hold on.</li>
+<li class="hang-indent">Take action. Do not wait for an official warning or instructions from officials.
+<li class="hang-indent">As soon as you can move safely, implement your emergency plan and move quickly to
+your safe place. If you do not have a safe place or cannot reach it, follow evacuation
+signs to safety or go as high or as far inland (away from the water) as possible (at least
+100 feet above sea level or a mile inland).</li>
+<li class="hang-indent">If there is earthquake damage, avoid fallen power lines and stay away from weakened
+structures.</li>
+<li class="hang-indent">When you are in a safe place, get more information from radio, television, or your mobile device (text or data).</li>
+</p>
+<p>
+If you are on the beach or near water and feel an earthquake of any size and length, move quickly
+to high ground or inland (away from the water) as soon as you can move safely. Get more
+information from radio, television, or your mobile device (text or data).
+</p>
+<p>
+If you are outside of the tsunami hazard zone and receive a warning, stay where you are unless
+officials tell you otherwise.
+</p>
+<p>
+For your safety and others, always follow instructions from local officials and stay out of the
+tsunami hazard zone until they tell you it is safe.  In the United States, to find out if you are in a tsunami hazard zone, 
+visit the <a href="http://nws.weather.gov/nthmp/maps.html" target="_blank"><u>Tsunami Maps web page</u></a>.
+</p>
+<p>
+Visit the NWS <a href="http://www.nws.noaa.gov/om/Tsunami/" target="_blank"><u>Tsunami Safety</u></a> and <a href="http://itic.ioc-unesco.org/index.php" target="_blank"><u>International Tsunami Information Center</u></a> websites to learn more.
+</p>
+<br/>
+
+</dd>
+<dt name="6">6.5 Who issues tsunami evacuation orders?</dt>
+<dd name="6">
+<p>     For all U.S. states and territories, evacuation requests/instructions are typically issued and
+coordinated by local emergency management officials. In the unique case of a tsunami warning
+issued for local Hawaii earthquakes, the Pacific Tsunami Warning Center decides whether
+evacuations are necessary. When they are, local and state emergency management officials
+coordinate them and are responsible for determining when it is safe for people to return to an evacuated area.
+</p>
+<br/>
+
+</dd>
+
+<dt name="6">6.6 Will I be safe from a tsunami in a tall building?</dt>
+<dd name="6">
+<p>     Most buildings are <Strong><u>not</Strong></u> designed to withstand tsunami impacts. However, the upper stories of some strong (e.g., reinforced concrete) and tall buildings may be able to provide protection if no
+other options are available. If you are concerned that you will not be able to reach a safe place in
+time, ask your local emergency management office or hotel staff about vertical evacuation. Note,
+this type of evacuation is not recommended in all areas.
+</p>
+<br/>
+
+</dd>
+
+<dt name="6">6.7 What do I do if I am in a boat in a harbor or at sea during a tsunami?</dt>
+<dd name="6">
+     <p>If you are on a boat and you get a tsunami warning, your response will depend largely on where
+you are.
+</p>
+<p>
+In the United States, in general, it is recommended that:
+<li class="hang-indent">If you are in a harbor and get a tsunami warning, you should leave your boat and move
+quickly to a safe place on land (high ground or inland, away from the water).</li>
+<li class="hang-indent">If you are at sea and get a tsunami warning, you should move to a safe depth* and stay
+away from harbors under warning until officials tell you the threat has passed.</li>
+</p>
+<p>
+*<a href="https://nws.weather.gov/nthmp/documents/GuidanceforSafeMinimumOffshoreDepthforVesselMovement.pdf" target="_blank"><u>Safe depths vary by region</u></a>, but the minimum safe depth is 30 fathoms (180 feet). Your harbor
+master, port captain, the U.S. Coast Guard, and local and <a href="http://www.fema.gov/emergency-management-agencies" target="_blank"><u>state emergency management offices</u></a> are the best sources for safe depth and other tsunami safety information and regulations
+for boaters in your area.
+</p>
+<p>
+If you are a boat owner or captain, take extra steps to prepare for a tsunami:
+<li class="hang-indent">Make sure you have a way to receive tsunami warnings when you are on the water. The
+U.S. Coast Guard will issue urgent marine information broadcasts on your marine VHF
+radio’s channel 16. Additional information will be available from <a href="http://www.nws.noaa.gov/nwr/" target="_blank"><u>NOAA Weather Radio</u></a>.</li>
+<li class="hang-indent">Make a plan and put together a <a href="http://www.ready.gov/build-a-kit" target="_blank"><u>disaster supplies kit</u></a> to keep on board your boat. Be aware
+that shore facilities may be damaged, so if you are at sea during a tsunami, you may not
+be able to return to the harbor you left. Be prepared to remain at sea for a day or more.</li>
+</p>
+<br/>
+
+</dd>
+
+</dl>
+ 
+<br><br>
+If you have a question regarding tsunamis we would like to <a href="mailto:ntwc@noaa.gov?subject=tsunami question">hear from you</a>.
+</td>
+</tr>
+</table>
+
+<!-- TJK toggle courtesy of http://www.tjkdesign.com/articles/toggle_elements.asp -->
+   <script type="text/javascript" src="/TJK_ToggleDL/TJK_ToggleDL_FAQ.js"></script>
+   <!--<script type="text/javascript" src="/TJK_ToggleDL/TJK_ToggleDL1.js"></script>-->
+   <link rel="stylesheet" type="text/css" href="/TJK_ToggleDL/TJK_ToggleDL_FAQ.css" media="print" />
+   <link rel="stylesheet" type="text/css" href="/TJK_ToggleDL/TJK_ToggleDL_ie5mac.css" media="print" />
+
+   <script type="text/javascript">
+   //<![CDATA[
+   <!-- Hide JavaScript...
+
+      TJK_ToggleDL();
+
+   // End Hiding -->
+   // ]]>
+   </script>
+
+
+<!-- ++++++++++ -->
+
+<!--</div>--> <!-- block-block-3 -->
+</div> <!-- main_2col -->
+
+<!--end main content-->
+
+<div style="clear:both"></div>
+<!-- footer.inc start February 11 2025 16:51:46 -->
+<div id="footer">
+<hr class="footer" />
+ 
+<div id="footer1">
+<a  target="_blank" href="http://www.usa.gov/"><img src="/images/usagov_logo.gif" width="110" height="30" class="img" alt="USAGov.gov is the U.S. government's official web portal" /></a></div>
+
+<div id="footer2">
+<a href="http://www.commerce.gov" target="_blank"><span class="gray">US Dept of Commerce</span></a><br />
+Page Owner: National Tsunami Warning Center<br />
+910 S. Felton St.<br />
+Palmer, AK 99645 USA<br />
+Phone:907-745-4212 / FAX:907-745-6071<br />
+Contact Us: <a  target="_blank" href="mailto:ntwc@noaa.gov?subject=Web site feedback">ntwc@noaa.gov</a>
+<a  target="_blank" href="/?page=privacy_statement"><span class="gray">Privacy Act Statement</span></a><br />
+Page last modified: <span id="lastModified"><script type="text/javascript">document.writeln (document.lastModified);</script></span>
+</div>
+
+<div id="footer3">
+ 
+<ul>
+<li><a  target="_blank" href="http://www.weather.gov/disclaimer"><span class="gray">Disclaimer</span></a></li>
+
+<li><a  target="_blank" href="http://www.cio.noaa.gov/services_programs/info_quality.html"><span class="gray">Information Quality</span></a></li>
+<li><a  target="_blank" href="http://www.weather.gov/credits"><span class="gray">Credits</span></a></li>
+<li><a  target="_blank" href="http://www.weather.gov/glossary/"><span class="gray">Glossary</span></a></li>
+</ul></div>
+<div id="footer4"><ul>
+<li><a  target="_blank" href="http://weather.gov/privacy.php"><span class="gray">Privacy Policy</span></a></li>
+<li><a  target="_blank" href="http://www.noaa.gov/foia-freedom-of-information-act"><span class="gray">Freedom of Information Act</span></a></li>
+<li><a  target="_blank" href="http://www.weather.gov/about"><span class="gray">About Us</span></a></li>
+<li><a  target="_blank" href="http://www.weather.gov/careers/"><span class="gray">Career Opportunities</span></a></li>
+</ul>
+
+</div>
+<div id="tag">Proudly brought to you by NOAA - National Weather Service</div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src="/js/federated-analytics-min.js"></script>
+<script type="text/javascript" src="/js/togglemenu.js"></script>
+
+<!--<script type="text/javascript" src="./events/php/PAAQ.php"></script> -->
+
+
+<script type="text/javascript">
+//<![CDATA[
+<!-- Hide JavaScript...
+
+
+// function to display dialog and send to non Gov Page
+
+function openNonGovPage(nURL) 
+{   
+  alert("Warning: You are now leaving the National Weather Service\n"+          
+        "destination web site ::-- \n" + nURL + "\n\n" +          
+        "This link does not constitute an endorsement by the NWS of any information, products or services on this site.\n\n");      
+  window.open (nURL); 
+}
+
+
+//
+// Functions set color on menu items when the pointer is over a menu item
+//
+
+function setNavMenuElements(node) 
+{  
+    if (node.nodeName == "li") 
+      {
+        node.onmouseover=function(){this.className="over-"+this.className;}
+        node.onmouseout=function(){this.className=this.className.replace("over-", "");}
+      }
+    for(var child=node.firstChild; child!=null; child=child.nextSibling){setNavMenuElements(child);}
+}
+
+/**
+ * Function: initNavList()
+ * Set up handler to change color on mouseover/mouseout
+ * See: leftHandMenu.inc ('nav')
+ *
+ */
+
+/*var initNavList = function() 
+  {  
+    var  navRoot=null;
+
+    if (document.all && document.getElementById)
+     {  
+        navRoot=document.getElementById("nav");
+        if (navRoot)
+          { 
+            for (i=0;i<navRoot.childNodes.length;i++){setNavMenuElements(navRoot.childNodes[i]);}
+          }
+     }
+}*/
+
+//window.onload = function() { startList(); initialize(); }; // moved to end because of Google Chrome
+
+// End Hiding -->
+ //]]>
+</script>
+
+
+
+
+<!-- footer.inc end February 11 2025 16:51:46 -->
+<!-- ARH no support ?php ob_end_flush(); ? -->
+
+
+</div> <!-- container_2col -->
+</div> <!-- maincontainer -->
+
+
+
+</body>
+</html>
+
+
+

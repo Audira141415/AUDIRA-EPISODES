@@ -1,0 +1,135 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP05_KLUB_RAJA_LIGA",
+  "topic": "Judul Episode",
+  "createdAt": "2026-11-12T10:06:29.471Z",
+  "updatedAt": "2026-11-22T13:07:56.772Z",
+  "currentStage": "animation",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.471Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.471Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T10:06:29.471Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T10:06:29.471Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit (EP04 Standard)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.471Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:55.844Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-11T09:59:18.556Z",
+      "startedAt": "2026-11-11T09:59:18.556Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci + visual audit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-17T06:05:27.387Z",
+          "text": "sync: look.json PASS; menunggu acc pengguna (tahap sesudahnya sudah ada, acc tetap wajib dicatat)"
+        },
+        {
+          "at": "2026-11-22T13:07:56.772Z",
+          "text": "sync: look.json PASS"
+        }
+      ],
+      "startedAt": "2026-11-11T13:42:17.377Z",
+      "doneAt": "2026-11-11T13:42:17.377Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:55.844Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        }
+      ],
+      "doneAt": "2026-11-11T23:59:32.268Z",
+      "startedAt": "2026-11-11T23:59:32.268Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:55.844Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-12T10:06:29.470Z",
+      "startedAt": "2026-11-12T10:06:29.470Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "ep05_klub_raja_liga",
+    "style": "sports-tactic-board",
+    "wordCount": 202,
+    "estimatedDuration": {
+      "wordCount": 202,
+      "minSec": 83,
+      "maxSec": 91
+    },
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-22T13:07:56.772Z"
+}

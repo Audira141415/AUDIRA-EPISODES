@@ -1,0 +1,502 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP05_PLAYSTATION_DARI_NINTENDO",
+  "topic": "PlayStation lahir karena Nintendo membatalkan kerja sama dengan Sony",
+  "createdAt": "2026-11-22T17:48:30.972Z",
+  "updatedAt": "2026-11-23T09:44:55.611Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:49:59.996Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-22T17:48:30.975Z",
+      "startedAt": "2026-11-22T17:48:30.975Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:49:59.996Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-22T17:49:32.176Z",
+      "startedAt": "2026-11-22T17:49:32.176Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T22:24:42.580Z",
+      "notes": [
+        {
+          "at": "2026-11-22T17:50:58.107Z",
+          "text": "Pengguna memilih \\\"1 PIXELSTORY\\\" (2026-11-23)"
+        },
+        {
+          "at": "2026-11-22T22:24:42.580Z",
+          "text": "Pengguna memilih ARCADECRT (2026-11-23) setelah PIXELSTORY gagal juri 2 putaran. VO/mix/SRT tetap."
+        }
+      ],
+      "doneAt": "2026-11-22T22:24:42.580Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T17:54:02.797Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T17:52:50.658Z",
+      "startedAt": "2026-11-22T17:52:50.658Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T09:32:14.247Z",
+          "text": "HyperFrames project/ (build-video.mjs, world2d.js, mix.py, lib/) siap"
+        }
+      ],
+      "doneAt": "2026-11-23T09:32:14.247Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:54:02.797Z",
+          "text": "sync: VO sudah dibuat"
+        },
+        {
+          "at": "2026-11-22T17:54:47.666Z",
+          "text": "VO Cartesia per baris speed 0.88, tempo 1.06, audio/VO_MASTER.wav + project/timeline.json"
+        }
+      ],
+      "doneAt": "2026-11-22T17:54:47.666Z",
+      "startedAt": "2026-11-22T17:54:02.229Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:09:18.142Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T18:08:36.455Z",
+      "startedAt": "2026-11-22T18:08:36.455Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T18:09:18.142Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        }
+      ],
+      "doneAt": "2026-11-22T18:08:21.894Z",
+      "startedAt": "2026-11-22T18:08:21.894Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T09:44:50.757Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60, -14.0 LUFS, TP -1.8, qa_video PASS, metadata OK. Juri final 3.5; draf diterima 3.33 setelah 2 putaran (keputusan pengguna, tanpa ganti style)."
+        }
+      ],
+      "doneAt": "2026-11-23T09:44:50.757Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T09:44:52.960Z",
+          "text": "SOCIAL_CAPTIONS.md valid (6 platform, jadwal Minggu 29 Nov 2026 19.00 WIB, label AI); NOTES.md; lessons ARCADECRT/PIXELSTORY/GLOBAL; scheduled review-ep05-playstation-24h/72h/7d."
+        }
+      ],
+      "doneAt": "2026-11-23T09:44:52.960Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "in_progress",
+      "notes": [
+        {
+          "at": "2026-11-23T09:44:54.548Z",
+          "text": "Menunggu scheduled task 2026-11-30, 12-02, 12-06 19.00 WIB"
+        }
+      ],
+      "startedAt": "2026-11-23T09:44:54.548Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP05",
+    "style": "ARCADECRT",
+    "engine": "hyperframes",
+    "wordCount": 205,
+    "speechSec": 85.75,
+    "filmSec": 88.75,
+    "title": "PlayStation Lahir karena Nintendo Membatalkan Kerja Sama",
+    "estimatedDuration": {
+      "wordCount": 205,
+      "minSec": 82,
+      "maxSec": 91
+    }
+  },
+  "handoverLog": [
+    {
+      "at": "2026-11-22T17:49:57.199Z",
+      "doing": "Gerbang style: menunggu pilihan pengguna (PIXELSTORY / PANELVERSE / ARCADECRT), sheet di style/style-options.jpg",
+      "files": [
+        "research/SOURCE_REGISTER.md",
+        "style/style-options.jpg"
+      ],
+      "next": "Setelah pilih: cover topik HyperFrames 2D, docs, VO Cartesia, build, contact sheet, final. Riset sudah di research/SOURCE_REGISTER.md. Referensi pipeline: F:/AUDIRA-EPISODES/TECH/AUDIRA_SEJARAH_GAME_2026/_tools (baca saja)",
+      "snapshot": {
+        "episode": "EP05_PLAYSTATION_DARI_NINTENDO",
+        "topic": "PlayStation lahir karena Nintendo membatalkan kerja sama dengan Sony",
+        "style": null,
+        "memoryEpisode": "short-baru-11-23-EP05",
+        "currentStage": "context",
+        "gates": {
+          "style": {
+            "approved": false,
+            "status": "pending"
+          },
+          "script": {
+            "approved": false,
+            "status": "pending"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T17:54:39.740Z",
+      "doing": "VO dikunci (85.75 s speech, film 88.75 s). Berikutnya docs + world2d.js/build-video.mjs/mix.py (HyperFrames 2D PIXELSTORY)",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/script-lines.json",
+        "project/timeline.json",
+        "audio/VO_MASTER.wav"
+      ],
+      "next": "Baca docs/HANDOFF.md lalu lanjut langkah 1–6 di sana",
+      "snapshot": {
+        "episode": "EP05_PLAYSTATION_DARI_NINTENDO",
+        "topic": "PlayStation lahir karena Nintendo membatalkan kerja sama dengan Sony",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP05",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T18:03:41.049Z",
+      "doing": "Docs rule 12 selesai (docs/ART_DIRECTION, SCRIPT, STORYBOARD, ASSET_MANIFEST). project/world2d.js (8 scene pixel art) + project/build-video.mjs ditulis, node build-video.mjs OK. Belum: mix.py, snapshot pertama belum dicek.",
+      "files": [
+        "project/world2d.js",
+        "project/build-video.mjs",
+        "docs/STORYBOARD.md"
+      ],
+      "next": "Snapshot cek (cd project/hf; TEMP=F:\\hf-render-tmp npx hyperframes snapshot --no-end --at \"3.8,12,19,27,36,40,47,51,58,62,70,73,80,87\") lalu perbaiki framing; tulis project/mix.py (pola DOOM ref + duck fx); cover-topic.png; contact sheet + THEME_CHECK; skor; final (langkah 3–6 di docs/HANDOFF.md).",
+      "snapshot": {
+        "episode": "EP05_PLAYSTATION_DARI_NINTENDO",
+        "topic": "PlayStation lahir karena Nintendo membatalkan kerja sama dengan Sony",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP05",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T18:08:52.871Z",
+      "doing": "Sesi 2 selesai sampai draf: docs rule 12, world2d.js + build-video.mjs (framing sudah dicek & diperbaiki), mix.py ditulis (python mix.py sedang/baru jalan di background, lambat ±2–4 mnt karena loop duck per-sampel; cek hf/assets/audio/mix.wav ada), style/cover-topic.png (frame 6,5 dtk, sudah ditampilkan ke pengguna), draft/contact-sheet.jpg (8 frame: 6.5,21.3,31,35.5,53.2,62.9,74,82.5), draft/THEME_CHECK.md (semua ya). Belum: skor.",
+      "files": [
+        "project/world2d.js",
+        "project/build-video.mjs",
+        "project/mix.py",
+        "style/cover-topic.png",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "1) Pastikan mix.wav ada (bila tidak: cd project && python mix.py, background). 2) record_score self + juri blind subagent (stage draft, style PIXELSTORY, episode short-baru-11-23-EP05, still draft/contact-sheet.jpg) ≥3.8. 3) Final: cd project && python lib/build-srt.py && cd hf && TEMP=F:\\hf-render-tmp npx hyperframes render -o ../out/raw.mp4 -f 60 -q standard -w 6 (background) → python lib/master.py out/raw.mp4 ../FINAL_VIDEO.mp4 → qc.py → metadata ffmpeg (comment AUDIRA-playstation-dari-nintendo-EP05 | audira.my.id) → audira_qa_video hardOnly → record_score final. 4) SOCIAL_CAPTIONS.md + validator, NOTES.md, append_lesson, caption di chat, tanya jam upload.",
+      "snapshot": {
+        "episode": "EP05_PLAYSTATION_DARI_NINTENDO",
+        "topic": "PlayStation lahir karena Nintendo membatalkan kerja sama dengan Sony",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP05",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T18:10:09.455Z",
+      "doing": "Sesi 3: python mix.py jalan (background) + juri blind draft (subagent); self draft score 4.0 tercatat",
+      "command": "cd project && python mix.py",
+      "files": [
+        "project/hf/assets/audio/mix.wav"
+      ],
+      "next": "record_score jury draft → final render 60fps (build-video, build-srt, hyperframes render) → master → qc → metadata → qa_video → score final → captions/NOTES/lesson",
+      "snapshot": {
+        "episode": "EP05_PLAYSTATION_DARI_NINTENDO",
+        "topic": "PlayStation lahir karena Nintendo membatalkan kerja sama dengan Sony",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP05",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T18:15:40.416Z",
+      "doing": "Sesi 3: mix.wav SELESAI (-16.1 LUFS, peak -3). Draft putaran 1 juri 2.67 GAGAL → world2d.js dipoles (pool/cone/rim/vignette/under/FG, s5b papan dalam frame, s6 plate OHGA+KUTARAGI, s7 kembang api besar, tanggal naik), build-video.mjs font tag 34/sm 42/chip 28. Contact sheet baru draft/contact-sheet.jpg (lama: contact-sheet.r1.jpg), THEME_CHECK frame 2=22.3, 3=31.2. Self r2 tercatat 3.83. Juri buta putaran 2 sedang jalan. SUBTITLES.srt sudah dibuat (56 cue).",
+      "files": [
+        "project/world2d.js",
+        "project/build-video.mjs",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "SUBTITLES.srt"
+      ],
+      "next": "record_score jury r2 (integer). Lolos (≥3.8, tak ada <3) → final: cd project && node build-video.mjs; cd hf; TEMP/TMP=F:\\hf-render-tmp npx hyperframes render -o ../out/raw.mp4 -f 60 -q standard -w 6 (background) → python lib/master.py out/raw.mp4 ../FINAL_VIDEO.mp4 → ekstrak ../audio/master_audio.wav → python lib/qc.py → metadata ffmpeg → ffprobe → audira_qa_video hardOnly → record_score final. Gagal r2 → maks 2 putaran: kembali ke gerbang style (tanya pengguna). Lalu SOCIAL_CAPTIONS, NOTES, append_lesson.",
+      "snapshot": {
+        "episode": "EP05_PLAYSTATION_DARI_NINTENDO",
+        "topic": "PlayStation lahir karena Nintendo membatalkan kerja sama dengan Sony",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP05",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T18:16:21.945Z",
+      "doing": "Sesi 3: PIXELSTORY GAGAL batas 2 putaran draf (juri r1 2.67, r2 3.0: hook F1 tak tampilkan 'dipermalukan', dither = noise, panel menumpuk kiri atas, F4 dokumen full-frame, teks kecil). Lesson failed tercatat. Menunggu pengguna memilih style baru (G16/G21): ARCADECRT (utama), FILM16, VOXELVERSE; cadangan HD2D.",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/contact-sheet.r1.jpg",
+        "project/world2d.js"
+      ],
+      "next": "Setelah pengguna pilih: catat STYLE_DECISION.md (PIXELSTORY ditolak + alasan), render cover-topic baru, ulang tahap 4 (docs dengan baris 'Style: <ID>'), tulis ulang world2d.js/build-video untuk style baru. VO/timeline/mix.wav/SUBTITLES.srt TETAP dipakai (VO dikunci). Lalu draf contact sheet + juri, final, captions.",
+      "snapshot": {
+        "episode": "EP05_PLAYSTATION_DARI_NINTENDO",
+        "topic": "PlayStation lahir karena Nintendo membatalkan kerja sama dengan Sony",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP05",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T22:32:56.447Z",
+      "doing": "ARCADECRT draf putaran 1 siap dinilai: world2d.js ditulis ulang (kabinet arcade + layar CRT, cahaya alpha-blend, hook Sony dipermalukan, adegan meja perundingan, static ganti channel), build-video.mjs HUD neon (1 tag + 1 chip). draft/contact-sheet.jpg baru (8 frame 6.5,22.3,31.2,35.5,53.2,62.9,74.0,82.5), THEME_CHECK.md diisi, style/cover-topic.png = frame 6.5, docs baris 'Style: ARCADECRT'. Belum dinilai.",
+      "command": "cd project && node build-video.mjs; cd hf && npx hyperframes snapshot --no-end --at \"6.5,22.3,31.2,35.5,53.2,62.9,74.0,82.5\"",
+      "files": [
+        "project/world2d.js",
+        "project/build-video.mjs",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "style/STYLE_DECISION.md",
+        "style/cover-topic.png"
+      ],
+      "next": "1) record_score self ARCADECRT draft (usulan 4/4/4/4/4/4, episode short-baru-11-23-EP05). 2) Juri buta subagent (F:/AUDIRA-SKILL-MOTION/qa/jury.md, sheet draft/contact-sheet.jpg, cover F:/AUDIRA-ALL-SKILL/assets/style-covers/arcadecrt.png), record_score jury (skor integer). Maks 2 putaran untuk ARCADECRT. 3) Bila LOLOS: render final 60 fps (cd project/hf; TEMP/TMP=F:\\hf-render-tmp; npx hyperframes render -o ../out/raw.mp4 -f 60 -q standard -w 6), mux mix.wav, master -14 LUFS TP<-1, qc.py, metadata ffmpeg, ffprobe, audira_qa_video hardOnly, record_score final self+jury. 4) SOCIAL_CAPTIONS.md 6 platform + Jadwal Upload (WIB) + Label Konten AI, validator; NOTES.md; append_lesson ARCADECRT + PIXELSTORY lessons (ImageData 180x270 + font 3x5 cepat; figur di balik meja kaki ±10 px di bawah tepi meja; alpha-blend bukan dither); tampilkan caption, tanya jam upload untuk 3 scheduled review task.",
+      "snapshot": {
+        "episode": "EP05_PLAYSTATION_DARI_NINTENDO",
+        "topic": "PlayStation lahir karena Nintendo membatalkan kerja sama dengan Sony",
+        "style": "ARCADECRT",
+        "memoryEpisode": "short-baru-11-23-EP05",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:36:13.563Z",
+      "doing": "Render final 60 fps HyperFrames ARCADECRT r2 (juri r1 3.33, r2 sedang dinilai; render tetap jalan sesuai keputusan pengguna tanpa ganti style)",
+      "command": "cd project/hf; TEMP/TMP=F:\\hf-render-tmp; npx hyperframes render -o ../out/raw.mp4 -f 60 -q standard -w 6 > ../out/render.log; lalu python lib/master.py out/raw.mp4 ../FINAL_VIDEO.mp4",
+      "files": [
+        "project/world2d.js",
+        "project/build-video.mjs",
+        "draft/contact-sheet.jpg",
+        "project/out/raw.mp4"
+      ],
+      "next": "master -14 LUFS, qc.py, metadata ffmpeg, audira_qa_video, record_score final self+jury, tahap 10",
+      "snapshot": {
+        "episode": "EP05_PLAYSTATION_DARI_NINTENDO",
+        "topic": "PlayStation lahir karena Nintendo membatalkan kerja sama dengan Sony",
+        "style": "ARCADECRT",
+        "memoryEpisode": "short-baru-11-23-EP05",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:44:29.745Z",
+      "doing": "Final selesai (FINAL_VIDEO.mp4 -14.0 LUFS TP -1.8, juri final 3.5), SOCIAL_CAPTIONS valid, NOTES.md, lessons ditulis. Sisa: 3 scheduled task review + status delivery done/review in_progress.",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md"
+      ],
+      "next": "create_scheduled_task review-ep05-playstation-24h/72h/7d (2026-11-30/12-02/12-06 19:00+07:00); update stage final+delivery done, review in_progress",
+      "snapshot": {
+        "episode": "EP05_PLAYSTATION_DARI_NINTENDO",
+        "topic": "PlayStation lahir karena Nintendo membatalkan kerja sama dengan Sony",
+        "style": "ARCADECRT",
+        "memoryEpisode": "short-baru-11-23-EP05",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:44:29.745Z",
+      "doing": "Final selesai (FINAL_VIDEO.mp4 -14.0 LUFS TP -1.8, juri final 3.5), SOCIAL_CAPTIONS valid, NOTES.md, lessons ditulis. Sisa: 3 scheduled task review + status delivery done/review in_progress.",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md"
+      ],
+      "next": "create_scheduled_task review-ep05-playstation-24h/72h/7d (2026-11-30/12-02/12-06 19:00+07:00); update stage final+delivery done, review in_progress",
+      "snapshot": {
+        "episode": "EP05_PLAYSTATION_DARI_NINTENDO",
+        "topic": "PlayStation lahir karena Nintendo membatalkan kerja sama dengan Sony",
+        "style": "ARCADECRT",
+        "memoryEpisode": "short-baru-11-23-EP05",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T09:44:55.611Z"
+    }
+  ],
+  "syncedAt": "2026-11-22T18:09:18.142Z"
+}

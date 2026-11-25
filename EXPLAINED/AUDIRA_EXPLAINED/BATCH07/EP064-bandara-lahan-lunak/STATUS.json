@@ -1,0 +1,211 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "AE-064",
+  "topic": "Bagaimana Bandara Dibangun di Atas Lahan Lunak?",
+  "createdAt": "2026-11-23T14:14:11.856Z",
+  "updatedAt": "2026-11-24T13:08:06.013Z",
+  "currentStage": "script",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:40.072Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:14:11.856Z",
+      "startedAt": "2026-11-23T14:14:11.856Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:40.907Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:23:13.751Z",
+      "startedAt": "2026-11-23T14:23:13.751Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:40.072Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:14:00.403Z",
+      "startedAt": "2026-11-23T14:14:00.403Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:17:53.208Z",
+          "text": "Cartesia sonic-3, tempo x1.036: VO ends 61.00s, film 65.00s"
+        }
+      ],
+      "doneAt": "2026-11-23T15:17:53.208Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "in_progress",
+      "notes": [],
+      "startedAt": "2026-11-24T07:21:53.525Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "in_progress",
+      "notes": [
+        {
+          "at": "2026-11-24T07:33:50.570Z",
+          "text": "Draft sheet draft/stills/_sheet.jpg (8 frames), RISK_CLIP 18.5-35.5s camera 5/5, self-score avg 3.67 (lighting 3, depth 3) after 2 polish rounds; awaiting blind jury."
+        }
+      ],
+      "startedAt": "2026-11-24T07:33:50.570Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T12:22:01.894Z",
+      "notes": [
+        {
+          "at": "2026-11-24T12:22:09.557Z",
+          "text": "sync: final: FINAL_VIDEO.mp4; acc tercatat di file"
+        }
+      ],
+      "approvalSource": "file",
+      "doneAt": "2026-11-24T12:22:01.894Z",
+      "startedAt": "2026-11-24T12:22:01.894Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T12:21:45.924Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T12:17:54.770Z",
+      "startedAt": "2026-11-24T12:17:54.770Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T13:08:06.013Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-24T13:04:28.171Z",
+      "startedAt": "2026-11-24T13:04:28.171Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "batch07-EP64",
+    "engine": "remotion",
+    "style": "LIDARFORGE",
+    "shortTitle": "Bandara Lahan Lunak",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-24T13:08:06.013Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-23T18:22:59.660Z",
+      "doing": "EP064 film code (studio/src/scenes/ep064/*.tsx) + cover + draft sheet",
+      "files": [
+        "studio/src/scenes/ep064/world.tsx",
+        "studio/src/scenes/ep064/Film.tsx",
+        "studio/src/scenes/ep064/Cover.tsx"
+      ],
+      "next": "render cover, stills sheet, risk clip, audits, STORYBOARD/sfx-cues/THEME_CHECK",
+      "snapshot": {
+        "episode": "AE-064",
+        "topic": "Bagaimana Bandara Dibangun di Atas Lahan Lunak?",
+        "style": null,
+        "memoryEpisode": "batch07-EP64",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:22:59.660Z",
+      "doing": "EP064 film code (studio/src/scenes/ep064/*.tsx) + cover + draft sheet",
+      "files": [
+        "studio/src/scenes/ep064/world.tsx",
+        "studio/src/scenes/ep064/Film.tsx",
+        "studio/src/scenes/ep064/Cover.tsx"
+      ],
+      "next": "render cover, stills sheet, risk clip, audits, STORYBOARD/sfx-cues/THEME_CHECK",
+      "snapshot": {
+        "episode": "AE-064",
+        "topic": "Bagaimana Bandara Dibangun di Atas Lahan Lunak?",
+        "style": null,
+        "memoryEpisode": "batch07-EP64",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      },
+      "finishedAt": "2026-11-24T07:33:50.787Z"
+    }
+  ],
+  "session": 1
+}

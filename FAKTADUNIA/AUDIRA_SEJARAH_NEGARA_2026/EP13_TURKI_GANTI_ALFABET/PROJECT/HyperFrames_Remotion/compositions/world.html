@@ -1,0 +1,195 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#15120F}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.06;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0) 42%,rgba(0,0,0,0) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#EDE7DC;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.pre{position:absolute;left:-3000px;top:0;font-size:40px;opacity:0}
+.wipe{position:absolute;left:0;top:0;width:4000px;height:1920px;display:flex;z-index:14;pointer-events:none;opacity:0}
+.wipe b{flex:none;width:1300px;height:1920px;display:flex;align-items:center;justify-content:center;font-family:"Archivo Black","Arial Black",sans-serif;font-weight:400;font-size:2100px;line-height:1;color:#CBC4B9;-webkit-text-stroke:16px #8A9099;text-shadow:0 0 60px rgba(0,0,0,.6)}
+.wipe i{flex:none;width:1400px;height:1920px;background:linear-gradient(90deg,#8A9099 0 14px,#B9B2A7 14px,#D8D1C6 50%,#B0A99E calc(100% - 14px),#8A9099 calc(100% - 14px))}
+.kk{display:inline-block;font-family:"Archivo Black","Arial Black",sans-serif;font-size:26px;letter-spacing:.14em;color:#EDE7DC;background:#232427;border-left:10px solid #E30A17;padding:9px 18px 8px;margin-bottom:14px;box-shadow:0 18px 36px rgba(0,0,0,.55)}
+.kk.rd{background:#E30A17;border-left-color:#EDE7DC}
+.h1{display:inline-block;background:linear-gradient(170deg,#2E3034,#232427 60%,#1C1D20);border-top:3px solid #9AA0A8;padding:14px 28px 20px;box-shadow:0 18px 36px rgba(0,0,0,.55);font-family:"Archivo Black","Arial Black",sans-serif;font-size:96px;line-height:1.02;color:#EDE7DC;letter-spacing:-.01em}
+.h1 em{font-style:normal;color:#E30A17}
+.h2{display:inline-block;background:linear-gradient(170deg,#2E3034,#232427 60%,#1C1D20);border-top:3px solid #9AA0A8;padding:12px 24px 16px;box-shadow:0 18px 36px rgba(0,0,0,.55);font-family:"Archivo Black","Arial Black",sans-serif;font-size:62px;line-height:1.06;color:#EDE7DC;margin-bottom:4px}
+.sub{display:inline-block;margin-top:12px;background:#EDE7DC;color:#232427;font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-style:italic;font-size:40px;padding:6px 20px 10px;box-shadow:0 18px 36px rgba(0,0,0,.55)}
+.card{display:flex;flex-direction:column;gap:2px;margin-top:14px;padding:12px 24px 15px;background:linear-gradient(170deg,#2E3034,#232427 60%,#1C1D20);border-top:3px solid #9AA0A8;border-left:12px solid #9AA0A8;box-shadow:0 18px 36px rgba(0,0,0,.55)}
+.card b{font-family:"Archivo Black","Arial Black",sans-serif;font-weight:400;font-size:42px;line-height:1.08;color:#EDE7DC}
+.card span{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:34px;line-height:1.2;color:#D2CCC2}
+.card.gd{border-left-color:#D4AF37}.card.gd b{color:#D4AF37}
+.cnt{display:flex;align-items:center;gap:24px;margin-top:16px;padding:4px 28px 10px;background:linear-gradient(170deg,#2E3034,#232427 60%,#1C1D20);border-top:3px solid #9AA0A8;border-left:12px solid #E30A17;box-shadow:0 18px 36px rgba(0,0,0,.55);width:max-content}
+.cnt>b{font-family:"Archivo Black","Arial Black",sans-serif;font-weight:400;font-size:132px;line-height:1.08;color:#EDE7DC}
+.cnt>b .ct{font:inherit;color:inherit}
+.cnt span{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:36px;line-height:1.16;color:#D2CCC2}
+.lb{display:inline-block;margin-top:14px;background:rgba(20,20,22,.88);padding:7px 18px 9px;font-family:"Source Serif 4",Georgia,serif;font-style:italic;font-weight:600;font-size:32px;color:#EDE7DC;border-left:6px solid #D4AF37}
+.lb .ar{font-family:Amiri,serif;font-style:normal;font-weight:700;font-size:40px;color:#D4AF37;margin-right:10px}
+.st{display:inline-block;margin-top:16px;font-family:"Archivo Black","Arial Black",sans-serif;font-size:40px;letter-spacing:.04em;line-height:1.1;padding:10px 22px;color:#fff;background:#E30A17;transform:rotate(-2deg);box-shadow:0 18px 36px rgba(0,0,0,.55);max-width:860px}
+.tag{display:flex;align-items:center;gap:20px;margin-top:14px;padding:12px 26px 12px 12px;background:linear-gradient(170deg,#2E3034,#232427 60%,#1C1D20);border-top:3px solid #9AA0A8;box-shadow:0 18px 36px rgba(0,0,0,.55)}
+.tag .sil{flex:none;width:96px;height:96px;border:3px solid #9AA0A8}
+.tag b{display:block;font-family:"Archivo Black","Arial Black",sans-serif;font-weight:400;font-size:40px;line-height:1.08;color:#EDE7DC}
+.tag span{display:block;font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-style:italic;font-size:31px;line-height:1.18;color:#C9C3B8;margin-top:4px}
+.gold{margin-top:16px;padding:10px 24px 14px;background:linear-gradient(170deg,#2E3034,#232427 60%,#1C1D20);border-top:3px solid #D4AF37;box-shadow:0 18px 36px rgba(0,0,0,.55);width:max-content}
+.gold b{display:block;font-family:"Archivo Black","Arial Black",sans-serif;font-weight:400;font-size:70px;letter-spacing:.06em;color:#D4AF37;line-height:1.1}
+.gold span{display:block;font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:32px;color:#EDE7DC}
+.cd{display:flex;flex-direction:column;gap:14px}
+.cd>div{position:relative;width:max-content;padding:8px 28px 14px;background:linear-gradient(170deg,#2E3034,#232427 60%,#1C1D20);border-top:3px solid #9AA0A8;box-shadow:0 18px 36px rgba(0,0,0,.55)}
+.cd small{display:block;font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-style:italic;font-size:30px;color:#C9C3B8}
+.cd b{display:block;font-family:"Archivo Black","Arial Black",sans-serif;font-weight:400;font-size:100px;line-height:1.05;color:#EDE7DC}
+.cd .new{border-left:12px solid #E30A17}.cd .new b{color:#E30A17}
+.cd .strike{position:absolute;left:18px;right:18px;top:62%;height:12px;background:#E30A17;transform-origin:0 50%}
+.date{margin-top:4px;padding:10px 26px 14px;background:linear-gradient(170deg,#2E3034,#232427 60%,#1C1D20);border-top:3px solid #9AA0A8;border-left:12px solid #D4AF37;box-shadow:0 18px 36px rgba(0,0,0,.55);width:max-content}
+.date b{display:block;font-family:"Archivo Black","Arial Black",sans-serif;font-weight:400;font-size:62px;line-height:1.08;color:#EDE7DC}
+.date span{display:block;font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:32px;color:#C9C3B8}
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}
+.ch{font-style:normal;font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:38px;padding:8px 22px 11px;background:#EDE7DC;color:#232427;box-shadow:0 18px 36px rgba(0,0,0,.55)}
+.ch.r{background:#E30A17;color:#fff}
+.qwx{display:flex;gap:16px}
+.qwx b{width:120px;height:130px;display:inline-flex;align-items:center;justify-content:center;font-family:"Archivo Black","Arial Black",sans-serif;font-weight:400;font-size:96px;color:#EDE7DC;background:linear-gradient(170deg,#2E3034,#232427 60%,#1C1D20);border:4px solid #E30A17;box-shadow:0 18px 36px rgba(0,0,0,.55);background-image:linear-gradient(135deg,transparent 46%,#E30A17 46%,#E30A17 54%,transparent 54%)}
+.q{margin-top:16px;font-family:"Archivo Black","Arial Black",sans-serif;font-weight:400;font-size:46px;line-height:1.14;padding:16px 26px;color:#EDE7DC;background:linear-gradient(170deg,#2E3034,#232427 60%,#1C1D20);border-left:12px solid #E30A17;border-bottom:4px solid #D4AF37;box-shadow:0 18px 36px rgba(0,0,0,.55)}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="82.37" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">TIPOGRAFI 3D &middot; ILUSTRASI SEJARAH</div>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Archivo+Black&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=block">
+<div class="pre"><span style="font-family:Amiri,serif;font-weight:700">&#x643;&#x62A;&#x627;&#x628;</span><span style="font-family:Amiri,serif;font-weight:400">&#x642;&#x644;&#x645;</span><span style="font-family:'Archivo Black',sans-serif">AB</span></div>
+<div class="wipe" data-at="s2:Ini-0.5" data-fx="wipe"><b>&#350;</b><i></i><b>&#286;</b></div>
+<div class="wipe" data-at="s4:Tahun-0.5" data-fx="wipe"><b>&#220;</b><i></i><b>&#199;</b></div>
+<div class="wipe" data-at="s5:Komisi-0.5" data-fx="wipe"><b>&#304;</b><i></i><b>&#214;</b></div>
+<div class="wipe" data-at="s6:Satu-0.5" data-fx="wipe"><b>&#199;</b><i></i><b>&#350;</b></div>
+<div class="wipe" data-at="s7:Aturannya-0.5" data-fx="wipe"><b>&#286;</b><i></i><b>&#220;</b></div>
+<div class="wipe" data-at="s8:Satu-0.5" data-fx="wipe"><b>&#214;</b><i></i><b>&#304;</b></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2:Ini">
+  <div class="kk">FAKTA SEJARAH NEGARA &middot; EP 13</div>
+  <div class="h1">Satu negara<br>ganti <em>semua</em><br>hurufnya</div>
+  <div class="sub" data-at="s1:bulan" data-fx="card" data-d="inline-block">dalam hitungan bulan</div>
+  <div class="chips" data-at="s1:Koran" data-fx="card" data-d="flex"><i class="ch " data-at="s1:Koran" data-fx="card" data-d="inline-block">KORAN</i><i class="ch " data-at="s1:papan" data-fx="card" data-d="inline-block">PAPAN NAMA</i><i class="ch r" data-at="s1:buku" data-fx="card" data-d="inline-block">BUKU</i></div>
+</div>
+<div class="p" data-in="s2:Ini" data-out="s3:Aksara">
+  <div class="kk">TURKI &middot; ERA UTSMANI</div>
+  <div class="h2">Ditulis dengan<br>aksara Arab</div>
+  <div class="cnt" data-at="s2:seribu" data-fx="card"><b>1.000+</b><span>tahun<br>lebih</span></div>
+  <div class="lb" data-at="s2:Utsmani" data-fx="card" data-d="inline-block"><span class="ar">&#x639;&#x62B;&#x645;&#x627;&#x646;&#x644;&#x6CC;&#x62C;&#x647;</span> Osmanl&#305;ca &middot; bahasa Turki Utsmani</div>
+</div>
+<div class="p" data-in="s3:Aksara" data-out="s3:Usulan">
+  <div class="kk">MASALAHNYA</div>
+  <div class="card " data-at="s3:mati" data-fx="card"><b>AKSARA ARAB</b><span>kaya huruf mati (konsonan)</span></div>
+  <div class="card gd" data-at="s3:vokal" data-fx="card"><b>BAHASA TURKI</b><span>kaya huruf vokal</span></div>
+  <div class="lb" data-at="s3:ditebak" data-fx="card" data-d="inline-block">vokal ditebak dari konteks &middot; contoh ilustratif</div>
+</div>
+<div class="p" data-in="s3:Usulan" data-out="s4:Tahun">
+  <div class="kk">SEJAK ABAD KE-19</div>
+  <div class="card " data-at="s3:Usulan" data-fx="card"><b>USULAN HURUF LATIN</b><span>sudah muncul berkali-kali</span></div>
+  <div class="st" data-at="s3:ditentang" data-fx="stamp2">DITENTANG KERAS</div>
+  <div class="lb" data-at="s3:konservatif" data-fx="card" data-d="inline-block">oleh kelompok konservatif dan agama</div>
+</div>
+<div class="p" data-in="s4:Tahun" data-out="s4:Hasilnya">
+  <div class="kk rd">1928</div>
+  <div class="tag" data-at="s4:Presiden" data-fx="card"><svg viewBox="0 0 64 64" class="sil"><rect width="64" height="64" fill="#3A3D43"/><circle cx="32" cy="24" r="11" fill="#9AA0A8"/><path d="M10 64c2-14 11-21 22-21s20 7 22 21z" fill="#9AA0A8"/></svg><div><b>Mustafa Kemal Atat&uuml;rk</b><span>Presiden Turki &middot; umumkan rencana</span></div></div>
+  <div class="card " data-at="s4:Komisi" data-fx="card"><b>KOMISI BAHASA</b><span>dibentuk untuk merancang alfabet baru</span></div>
+</div>
+<div class="p" data-in="s4:Hasilnya" data-out="s5:Komisi">
+  <div class="kk">HASILNYA</div>
+  <div class="cnt" data-at="s4:29" data-fx="card"><b><b class="ct" data-from="0" data-to="29" data-a="s4:29" data-d="1.0">0</b></b><span>huruf<br>alfabet Latin</span></div>
+  <div class="gold" data-at="s4:khusus" data-fx="card"><b>&#199; &#286; I &#304; &#214; &#350; &#220;</b><span>huruf khusus untuk bunyi Turki</span></div>
+</div>
+<div class="p" data-in="s5:Komisi" data-out="s5:berkeliling">
+  <div class="kk">MASA TRANSISI</div>
+  <div class="cd"><div class="old" data-at="s5:lima" data-fx="card"><small>usul komisi</small><b>5 TAHUN</b><i class="strike" data-at="s5:memangkasnya" data-fx="grow"></i></div>
+  <div class="new" data-at="s5:tiga" data-fx="card"><small>keputusan Atat&uuml;rk</small><b>3 BULAN</b></div></div>
+</div>
+<div class="p" data-in="s5:berkeliling" data-out="s6:Satu">
+  <div class="kk">MOBILISASI ALFABET</div>
+  <div class="tag" data-at="s5:berkeliling" data-fx="card"><svg viewBox="0 0 64 64" class="sil"><rect width="64" height="64" fill="#3A3D43"/><circle cx="32" cy="24" r="11" fill="#9AA0A8"/><path d="M10 64c2-14 11-21 22-21s20 7 22 21z" fill="#9AA0A8"/></svg><div><b>Mustafa Kemal Atat&uuml;rk</b><span>berkeliling negeri memperkenalkan huruf baru</span></div></div>
+  <div class="lb" data-at="s5:negeri" data-fx="card" data-d="inline-block">rute di peta: ilustrasi</div>
+</div>
+<div class="p" data-in="s6:Satu" data-out="s6:Mulai">
+  <div class="kk rd">UNDANG-UNDANG</div>
+  <div class="date" data-at="s6:November" data-fx="card"><b>1 November 1928</b><span>UU No. 1353 disahkan</span></div>
+</div>
+<div class="p" data-in="s6:Mulai" data-out="s6:Mulai#2">
+  <div class="kk">WAJIB HURUF BARU</div>
+  <div class="date" data-at="s6:Desember" data-fx="card"><b>1 Desember 1928</b><span>mulai berlaku untuk:</span></div>
+  <div class="chips"><i class="ch " data-at="s6:koran" data-fx="card" data-d="inline-block">koran</i><i class="ch " data-at="s6:iklan" data-fx="card" data-d="inline-block">iklan</i><i class="ch r" data-at="s6:papan" data-fx="card" data-d="inline-block">papan nama</i></div>
+</div>
+<div class="p" data-in="s6:Mulai#2" data-out="s7:Aturannya">
+  <div class="kk">WAJIB HURUF BARU</div>
+  <div class="date" data-at="s6:Januari" data-fx="card"><b>1 Januari 1929</b><span>mulai berlaku untuk:</span></div>
+  <div class="chips"><i class="ch " data-at="s6:komunikasi" data-fx="card" data-d="inline-block">semua komunikasi resmi</i><i class="ch r" data-at="s6:buku" data-fx="card" data-d="inline-block">buku</i></div>
+</div>
+<div class="p" data-in="s7:Aturannya" data-out="s8:Satu">
+  <div class="kk rd">ATURAN KETAT &middot; 1928&ndash;2013</div>
+  <div class="qwx"><b data-at="s7:Q" data-fx="card" data-d="inline-block">Q</b><b data-at="s7:W" data-fx="card" data-d="inline-block">W</b><b data-at="s7:X" data-fx="card" data-d="inline-block">X</b></div>
+  <div class="lb" data-at="s7:tidak" data-fx="card" data-d="inline-block">tidak ada dalam alfabet Turki</div>
+  <div class="st" data-at="s7:dilarang" data-fx="stamp2">DILARANG DI DOKUMEN RESMI &amp; PAPAN NAMA</div>
+</div>
+<div class="p" data-in="s8:Satu" data-out="@END">
+  <div class="kk">SATU KEPUTUSAN</div>
+  <div class="h2">Cara sebuah bangsa<br>menulis berubah</div>
+  <div class="q" data-at="s8:Menurut" data-fx="card">Kalau Indonesia ganti huruf, berapa lama kita terbiasa?</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 13</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":7.053,"s2":7.213,"s2e":13.246,"s3":13.406,"s3e":27.467,"s4":27.627,"s4e":38.075,"s5":38.235,"s5e":46.313,"s6":46.473,"s6e":59.827,"s7":59.987,"s7e":69.623,"s8":69.783,"s8e":79.368,"end":79.368,"dur":82.37,"outro":79.618},AT={"s1:mengganti":2.998,"s2:Ini":7.224,"s2:Utsmani":10.754,"s3:Aksara":13.465,"s3:vokal":17.451,"s3:Usulan":20.903,"s3:ditentang":25.036,"s4:Tahun":27.627,"s4:Presiden":29.19,"s4:Komisi":32.642,"s4:Hasilnya":33.726,"s4:29":35.32,"s4:khusus":36.822,"s5:Komisi":38.611,"s5:memangkasnya":41.65,"s5:tiga":42.44,"s5:berkeliling":43.666,"s6:Satu":46.482,"s6:November":46.792,"s6:undang-undangnya":48.882,"s6:Mulai":50.569,"s6:Mulai#2":55.441,"s6:Desember":51.08,"s6:Januari":55.921,"s6:koran":51.761,"s6:papan":53.03,"s6:buku":59.332,"s6:komunikasi":58.279,"s7:Aturannya":60.01,"s7:2013":62.131,"s7:Q":65.923,"s7:W":66.279,"s7:X":67.533,"s7:dilarang":67.657,"s8:Satu":69.783,"s8:Menurut":72.81,"s2:Ini-0.5":6.724,"s4:Tahun-0.5":27.127,"s5:Komisi-0.5":38.111,"s6:Satu-0.5":45.982,"s7:Aturannya-0.5":59.51,"s8:Satu-0.5":69.283,"s1:bulan":1.48,"s1:Koran":4.623,"s1:papan":5.35,"s1:buku":6.604,"s2:seribu":8.803,"s3:mati":15.47,"s3:ditebak":19.247,"s3:konservatif":26.306,"s5:lima":40.392,"s5:negeri":44.3,"s6:iklan":52.272,"s7:tidak":63.849},DUR=82.37,OUT=79.618;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ card:(e,t)=>{const d=e.dataset.d||(e.classList.contains('card')||e.classList.contains('tag')||e.classList.contains('cnt')?'flex':'block');gsap.set(e,{display:'none'});tl.set(e,{display:d},t);tl.fromTo(e,{opacity:0,y:26,rotationX:-35,transformPerspective:1400,transformOrigin:'50% 100%'},{opacity:1,y:0,rotationX:0,duration:.45,ease:'power3.out',immediateRender:false},t);},
+ stamp2:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:'inline-block'},t);tl.fromTo(e,{scale:1.6,rotation:-6,opacity:0},{scale:1,rotation:-2,opacity:1,duration:.22,ease:'power4.in',immediateRender:false},t);},
+ wipe:(e,t)=>{gsap.set(e,{x:1080});tl.set(e,{opacity:1},t);tl.fromTo(e,{x:1080},{x:-1460,duration:.45,ease:'power3.out',immediateRender:false},t);tl.to(e,{x:-4100,duration:.36,ease:'power3.in'},t+.53);tl.set(e,{opacity:0},t+.9);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{opacity:0,y:30},{opacity:1,y:0,duration:.42,ease:'power3.out'},a+.08),POUT=(tl,p,b)=>tl.to(p,{opacity:0,y:-20,duration:.25,ease:'power2.in'},b-.3);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP13_TURKI_GANTI_ALFABET")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

@@ -1,0 +1,180 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#10131c}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.06;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.42) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.42) 42%,rgba(0,0,0,0.42) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:262px;z-index:10;transform-origin:50% 50%}
+.nb{font-variant-numeric:tabular-nums}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Inter,sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#fff;opacity:.82}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:30px;color:#A3E635;letter-spacing:.14em}
+
+#drL,#drR{position:absolute;top:0;bottom:0;width:70px;z-index:6;filter:blur(3px);pointer-events:none;
+ background:repeating-linear-gradient(90deg,#5e1420 0 10px,#8e2233 10px 22px,#6d1826 22px 30px);box-shadow:0 0 40px rgba(0,0,0,.7)}
+#drL{left:-14px;border-radius:0 0 60px 0}#drR{right:-14px;border-radius:0 0 0 60px}
+.p{filter:drop-shadow(0 12px 22px rgba(0,0,0,.5))}
+.tag{position:relative;background:#F6ECD6;border-radius:14px;padding:22px 30px 22px;width:760px;box-sizing:border-box;border:2px solid rgba(43,33,24,.18)}
+.tag:before{content:"";position:absolute;left:50%;top:-18px;width:190px;height:38px;margin-left:-95px;background:rgba(232,138,110,.72);transform:rotate(-2deg);box-shadow:0 2px 4px rgba(0,0,0,.12)}
+.tag.big{width:800px}
+.st{font-family:"Courier Prime",monospace;font-weight:700;font-size:26px;letter-spacing:.08em;color:#C2512B;margin-bottom:8px}
+.h0{font-family:"Fredoka",sans-serif;font-weight:700;font-size:132px;line-height:.92;color:#2B2118;letter-spacing:-.01em}
+.h0 em{font-style:normal;color:#1E6F8C}
+.h1{font-family:"Fredoka",sans-serif;font-weight:700;font-size:84px;line-height:1;color:#2B2118}
+.h1 .ct{font:inherit;color:inherit}
+.sub{font-family:"Courier Prime",monospace;font-weight:400;font-size:31px;color:#4a3b2e;margin-top:10px}
+.sub b{font-weight:700;color:#C2512B}
+.note{position:relative;background:#E3CFA4;border-radius:10px;padding:10px 20px 12px;margin-top:16px;width:720px;box-sizing:border-box;border-left:10px solid #2B2118;transform:rotate(-.6deg)}
+.note:nth-of-type(even){transform:rotate(.5deg)}
+.note b{display:block;font-family:"Fredoka",sans-serif;font-weight:700;font-size:48px;line-height:1.05;color:#2B2118}
+.note b .ct{display:inline;font:inherit;color:inherit}
+.note span{display:block;font-family:"Courier Prime",monospace;font-weight:700;font-size:27px;line-height:1.25;color:#4a3b2e}
+.note.blue{border-left-color:#3B9EE0}.note.blue b{color:#1E6F8C;font-size:64px}
+.note.rust{border-left-color:#C2512B}
+.note.grn{border-left-color:#2F7A4A}.note.grn b{color:#2F7A4A;font-size:64px}
+.stairs{position:relative;height:230px;width:760px;margin-top:14px}
+.stairs b{position:absolute;font-family:"Fredoka",sans-serif;font-weight:700;font-size:44px;color:#fff;background:#1E6F8C;padding:8px 20px;border-radius:12px;border-bottom:8px solid #134a5e;left:0;top:0}
+.stairs b.s2{left:230px;top:76px;background:#2a86a8}.stairs b.s3{left:440px;top:152px;background:#3B9EE0;border-bottom-color:#1f6aa0}
+.steps>div{font-family:"Fredoka",sans-serif;font-weight:600;font-size:36px;color:#2B2118;padding:6px 0;display:flex;align-items:center}
+.steps i{display:inline-block;font-style:normal;width:50px;height:50px;line-height:50px;text-align:center;background:#C2512B;color:#fff;border-radius:50%;margin-right:16px;font-family:"Fredoka",sans-serif;font-weight:700;flex:none}
+.stamp{display:inline-block;margin-top:18px;font-family:"Fredoka",sans-serif;font-weight:700;font-size:40px;line-height:1.05;color:#C2512B;background:rgba(246,236,214,.95);padding:10px 22px;border:5px solid #C2512B;border-radius:10px;max-width:700px}
+.stamp small{display:block;font-family:"Courier Prime",monospace;font-weight:700;font-size:25px;color:#4a3b2e;margin-top:4px}
+.trio{display:flex;flex-direction:column;gap:12px}
+.trio b{align-self:flex-start;font-family:"Fredoka",sans-serif;font-weight:700;font-size:86px;line-height:1;color:#2B2118;background:#F6ECD6;padding:10px 26px 14px;border-radius:14px;border-bottom:8px solid #E3CFA4}
+.trio b.x{font-size:60px;color:#7a6a5a;text-decoration:line-through;text-decoration-color:#C2512B;text-decoration-thickness:6px}
+.trio b.g{color:#1E6F8C;font-size:70px}
+.srcl{font-family:"Courier Prime",monospace;font-weight:700;font-size:22px;line-height:1.35;color:#3a2e24;margin-top:16px;width:780px;background:rgba(246,236,214,.92);padding:10px 14px;border-radius:8px}
+#hud{position:absolute;right:86px;top:186px;z-index:11;text-align:right;font-family:"Courier Prime",monospace;font-weight:700;font-size:22px;letter-spacing:.08em;color:rgba(255,236,200,.85)}
+#hud b{color:#F4C460}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="77.69" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI</div>
+
+<div id="drL"></div><div id="drR"></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tag big">
+    <div class="st">CARA KERJA VIRAL &middot; EP 24</div>
+    <div class="h0">TURUN<br><em>10 LANTAI</em></div>
+    <div class="sub">kapal 5.000 ton &middot; <b>tanpa satu pompa pun</b></div>
+  </div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="tag">
+    <div class="st">16 SEPTEMBER 2026 &middot; TIONGKOK</div>
+    <div class="h1">TERUSAN PINGLU</div>
+    <div class="sub">dibuka untuk kapal niaga</div>
+  </div>
+  <div class="note" data-at="s2:CGTN" data-fx="left"><b>7 NOVEMBER</b><span>CGTN kembali menyorotnya</span></div>
+  <div class="note blue" data-at="s2:enam" data-fx="left"><b class="nb">&plusmn;<span class="ct" data-from="0" data-to="65" data-a="s2:enam" data-d="1.1">0</span> METER</b><span>total turunan menuju laut</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tag">
+    <div class="st">TANGGA AIR</div>
+    <div class="h1">3 ANAK TANGGA</div>
+  </div>
+  <div class="stairs">
+    <b data-at="s3:Madao" data-fx="pop">MADAO</b>
+    <b class="s2" data-at="s3:Qishi" data-fx="pop">QISHI</b>
+    <b class="s3" data-at="s3:Qingnian" data-fx="pop">QINGNIAN</b>
+  </div>
+  <div class="note" data-at="s3:pintu" data-fx="left"><b>TIAP ANAK TANGGA</b><span>= satu pintu air (kunci kapal)</span></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="tag">
+    <div class="st">MASUK KAMAR</div>
+    <div class="h1"><span class="nb">300</span> METER</div>
+    <div class="sub">panjang kamar pintu air</div>
+  </div>
+  <div class="note" data-at="s4:menutup" data-fx="left"><b>PINTU BELAKANG MENUTUP</b><span>dua daun raksasa</span></div>
+  <div class="note rust" data-at="s4:V" data-fx="left"><b>BENTUK V &rarr; HULU</b><span>tekanan air menekannya makin rapat</span></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="tag">
+    <div class="st">TANPA POMPA</div>
+    <div class="steps">
+      <div data-at="s5:katup" data-fx="left"><i>1</i>Katup di lorong bawah dibuka</div>
+      <div data-at="s5:mengalir" data-fx="left"><i>2</i>Air mengalir sendiri, tinggi &rarr; rendah</div>
+      <div data-at="s5:turun" data-fx="left"><i>3</i>Kapal ikut turun</div>
+    </div>
+  </div>
+  <div class="note blue" data-at="s5:29,6" data-fx="left"><b class="nb"><span class="ct" data-from="0" data-to="29.6" data-dec="1" data-a="s5:29,6" data-d="1.0">0</span> METER</b><span>maksimal satu tahap di Madao</span></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="tag">
+    <div class="st">KOLAM TABUNGAN AIR</div>
+    <div class="h1">3 KOLAM BERTINGKAT</div>
+  </div>
+  <div class="note" data-at="s6:menabungnya" data-fx="left"><b>KAPAL TURUN &darr;</b><span>air kamar ditabung ke kolam</span></div>
+  <div class="note blue" data-at="s6:mengembalikannya" data-fx="left"><b>KAPAL NAIK &uarr;</b><span>air kolam dikembalikan ke kamar</span></div>
+  <div class="note grn" data-at="s6:enam" data-fx="left"><b class="nb">&gt; <span class="ct" data-from="0" data-to="60" data-a="s6:enam" data-d="1.0">0</span>%</b><span>air dipakai ulang</span></div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tag">
+    <div class="st">SATU KAMAR</div>
+    <div class="h1 nb">&plusmn;<span class="ct" data-from="0" data-to="300000" data-a="s7:ribu" data-d="1.2">0</span> m&sup3;</div>
+    <div class="sub" data-at="s7:menit" data-fx="fade">terisi &plusmn;15 menit</div>
+  </div>
+  <div class="note" data-at="s7:sama" data-fx="left"><b>AIR SAMA TINGGI</b><span>pintu depan terbuka, kapal keluar</span></div>
+  <div class="stamp" data-at="s7:rekor" data-fx="stamp">REKOR KELAS PINTU AIR HEMAT AIR<small>klaim media pemerintah Tiongkok</small></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="trio"><b data-at="s8:Bukan" data-fx="pop" class="x">BUKAN POMPA</b><b data-at="s8:gravitasi" data-fx="pop">GRAVITASI</b><b data-at="s8:pintu" data-fx="pop" class="g">+ PINTU YANG TEPAT</b></div>
+  <div class="srcl" data-at="s8:pintu" data-fx="fade">Sumber: CGTN (16 Sep &amp; 7 Nov 2026), Xinhua (7 Jun &amp; 15 Sep 2026), Beijing Daily (8 Mei 2026), The Cover (16 Sep 2026). Rekor = klaim pembangun/media pemerintah Tiongkok. Diorama, kapal &amp; tokoh adalah ilustrasi generik.</div>
+</div><div id="hud"><span>PANGGUNG &middot; </span><b id="hudz">TERUSAN PINGLU</b></div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">CARA KERJA VIRAL &middot; EP 24</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":6.15,"s2":6.31,"s2e":16.006,"s3":16.166,"s3e":25.409,"s4":25.569,"s4e":33.545,"s5":33.705,"s5e":44.713,"s6":44.873,"s6e":54.731,"s7":54.891,"s7e":68.271,"s8":68.431,"s8e":74.686,"end":74.686,"dur":77.69,"outro":74.936},AT={"s1:pompa":5.654,"s2:Terusan":7.889,"s2:CGTN":11.729,"s2:enam":14.536,"s2:laut":15.744,"s3:terjun":17.652,"s3:tangga":19.634,"s3:Madao":20.85,"s3:Qishi":21.722,"s3:Qingnian":22.871,"s3:pintu":24.805,"s4:masuk":25.859,"s4:menutup":28.472,"s4:V":30.531,"s4:Tekanan":31.301,"s4:rapat":33.189,"s5:katup":34.407,"s5:mengalir":37.353,"s5:turun":40.603,"s5:Madao":41.462,"s5:29,6":43.242,"s6:dibuang":45.828,"s6:kolam":47.237,"s6:menabungnya":48.754,"s6:mengembalikannya":50.735,"s6:enam":53.059,"s6:ulang":54.328,"s7:kamar":55.176,"s7:ribu":57.515,"s7:kubik":58.087,"s7:menit":61.005,"s7:sama":62.229,"s7:terbuka":63.787,"s7:rekor":66.6,"s8:Bukan":68.431,"s8:gravitasi":70.289,"s8:pintu":71.419},DUR=77.69,OUT=74.936;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ 
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{transformOrigin:'50% 0%',rotation:-14,y:-70,opacity:0},{rotation:0,y:0,opacity:1,duration:.62,ease:'elastic.out(1,.55)'},a-.18);},POUT=(tl,p,b)=>tl.to(p,{transformOrigin:'0% 0%',rotation:9,y:90,opacity:0,duration:.34,ease:'power2.in'},b-.36);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(function(){const z=q('#hudz');const L=[[0,'SIMPUL MADAO'],[K.s2,'TERUSAN PINGLU'],[K.s4,'SIMPUL MADAO'],[K.s6,'KOLAM HEMAT AIR'],[K.s7,'SIMPUL MADAO'],[K.s8,'TERUSAN PINGLU']];let last='';return (t)=>{let k=0;for(let i=0;i<L.length;i++)if(t>=L[i][0])k=i;if(L[k][1]!==last){z.textContent=L[k][1];last=L[k][1];}};})();
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP24_PINTU_AIR_PINGLU")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

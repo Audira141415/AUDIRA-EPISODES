@@ -1,0 +1,554 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP19_FLAPPY_BIRD_DIHAPUS",
+  "topic": "Flappy Bird — game ±$50.000/hari yang dihapus pembuatnya sendiri (Februari 2014)",
+  "createdAt": "2026-11-22T18:00:57.483Z",
+  "updatedAt": "2026-11-23T13:04:34.662Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:02:58.744Z",
+          "text": "Preflight tanpa blocker (warn VRAM). Memori GLOBAL (Audira di VO, TP ≤ −1.5, sign await, EPERM mv), PIXELSTORY gold fakta-olahraga-EP01 juri 4.0. Engine 2D Remotion (studio salinan pola EP06)."
+        }
+      ],
+      "doneAt": "2026-11-22T18:02:58.744Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:03:35.156Z",
+          "text": "14 fakta (F1–F14). $50k/hari = klaim Nguyen ke The Verge; eBay $90k = tawaran. Tanpa '50 juta unduhan'."
+        }
+      ],
+      "doneAt": "2026-11-22T18:03:35.156Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T22:20:28.221Z",
+      "notes": [
+        {
+          "at": "2026-11-22T18:03:37.087Z",
+          "text": "Ditawarkan: PIXELSTORY (utama, gold 4.0), ARCADECRT (CRT neon), PANELVERSE (komik). Sheet style/_style_options.jpg. Menunggu pilihan pengguna."
+        },
+        {
+          "at": "2026-11-22T22:20:28.221Z",
+          "text": "Pengguna memilih \"1 PIXELSTORY\" (2026-11-23)."
+        }
+      ],
+      "startedAt": "2026-11-22T18:03:37.087Z",
+      "doneAt": "2026-11-23T00:00:07.130Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T00:11:03.370Z",
+          "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-23T00:11:33.520Z",
+          "text": "Docs rule 12 lengkap: ART_DIRECTION, SCRIPT, STORYBOARD, SHOTLIST, ASSET_MANIFEST"
+        }
+      ],
+      "doneAt": "2026-11-23T00:11:33.520Z",
+      "startedAt": "2026-11-23T00:10:57.248Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:21:13.762Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:29:40.000Z",
+      "startedAt": "2026-11-22T06:29:40.000Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T23:58:33.584Z",
+          "text": "sync: VO sudah dibuat"
+        },
+        {
+          "at": "2026-11-22T23:59:58.091Z",
+          "text": "VO Cartesia terkunci: audio/vo.wav + audio/timeline.json, 137 WPM; timeline ep19 dibuat"
+        }
+      ],
+      "doneAt": "2026-11-22T23:59:58.091Z",
+      "startedAt": "2026-11-22T23:58:31.666Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:21:13.762Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T07:08:51.000Z",
+      "startedAt": "2026-11-22T07:08:51.000Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T12:49:29.511Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-23T12:48:31.685Z",
+      "startedAt": "2026-11-23T12:48:31.685Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:55:24.908Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-23T12:55:37.055Z",
+          "text": "FINAL_VIDEO.mp4 (=project/out/ep19/FINAL_EP19.mp4) 1080x1920@60, 89.48s, -13.6 LUFS, TP -1.8 dBFS, metadata ok, signature VALID+C2PA, qa_video PASS (allow 34.62,39.12,39.22,40.30,41.28,42.37,61.03 = tap kick + stamp HILANG). Draf diterima 3.50 setelah 2 putaran juri."
+        }
+      ],
+      "doneAt": "2026-11-23T12:55:37.055Z",
+      "startedAt": "2026-11-23T12:54:59.906Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T13:04:34.662Z",
+          "text": "SUBTITLES.srt (31 cue), SOCIAL_CAPTIONS.md validator ok, NOTES.md, lessons, 3 scheduled task review (4/6/10 Des 2026 19.00 WIB). Upload pertama Kamis 3 Des 2026 19.00 WIB."
+        }
+      ],
+      "doneAt": "2026-11-23T13:04:34.662Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP19",
+    "engine": "remotion",
+    "channel": "TECH",
+    "handle": "@AudiraTECH",
+    "style": "PIXELSTORY",
+    "wordCount": 195,
+    "voSeconds": 85.47,
+    "filmSeconds": 89.47,
+    "estimatedDuration": {
+      "wordCount": 195,
+      "minSec": 78,
+      "maxSec": 87
+    },
+    "shortTitle": "Flappy Bird",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-23T12:55:24.908Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T22:21:53.211Z",
+      "doing": "Style PIXELSTORY disetujui; studio project/ disalin dari studio fakta-olahraga (node_modules junction). Belum ada cover topik, docs, VO.",
+      "files": [
+        "docs/HANDOFF.md",
+        "research/SOURCE_REGISTER.md",
+        "project/src/scenes/ep01",
+        "project/src/Root.tsx"
+      ],
+      "next": "Baca docs/HANDOFF.md → STYLE_DECISION + cover topik → naskah/storyboard → VO → scene ep19 → draf juri → final → delivery.",
+      "snapshot": {
+        "episode": "EP19_FLAPPY_BIRD_DIHAPUS",
+        "topic": "Flappy Bird — game ±$50.000/hari yang dihapus pembuatnya sendiri (Februari 2014)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP19",
+        "currentStage": "style",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T23:57:57.894Z",
+      "doing": "VO Cartesia dari audio/work/spoken.txt (script-lines.json 195 kata tampil)",
+      "files": [
+        "docs/script-lines.json",
+        "audio/work/vo-raw.wav",
+        "audio/work/vo-raw-words.json"
+      ],
+      "next": "python _tools/vo_tighten.py . → python _tools/make_timeline_ep19.py (cwd episode) → scene ep19",
+      "snapshot": {
+        "episode": "EP19_FLAPPY_BIRD_DIHAPUS",
+        "topic": "Flappy Bird — game ±$50.000/hari yang dihapus pembuatnya sendiri (Februari 2014)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP19",
+        "currentStage": "style",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T23:57:57.894Z",
+      "doing": "VO Cartesia dari audio/work/spoken.txt (script-lines.json 195 kata tampil)",
+      "files": [
+        "docs/script-lines.json",
+        "audio/work/vo-raw.wav",
+        "audio/work/vo-raw-words.json"
+      ],
+      "next": "python _tools/vo_tighten.py . → python _tools/make_timeline_ep19.py (cwd episode) → scene ep19",
+      "snapshot": {
+        "episode": "EP19_FLAPPY_BIRD_DIHAPUS",
+        "topic": "Flappy Bird — game ±$50.000/hari yang dihapus pembuatnya sendiri (Februari 2014)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP19",
+        "currentStage": "style",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      },
+      "finishedAt": "2026-11-22T23:59:18.827Z"
+    },
+    {
+      "at": "2026-11-23T00:13:05.802Z",
+      "doing": "Kode scene ep19 (baru hud.tsx tersalin); docs rule 12 selesai",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/scenes/ep19/hud.tsx",
+        "docs/SHOTLIST.md"
+      ],
+      "next": "Tulis ep19 timing/sets/sprites/game/Film/Cover/index + Root.tsx, cover-topic, sfx, draft juri, final, delivery (lihat docs/HANDOFF.md bagian Update sesi ketiga)",
+      "snapshot": {
+        "episode": "EP19_FLAPPY_BIRD_DIHAPUS",
+        "topic": "Flappy Bird — game ±$50.000/hari yang dihapus pembuatnya sendiri (Februari 2014)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP19",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP19_FLAPPY_BIRD_DIHAPUS/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:36:23.819Z",
+      "doing": "Kode scene ep19 (baru hud.tsx tersalin); docs rule 12 selesai",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/scenes/ep19/hud.tsx",
+        "docs/SHOTLIST.md"
+      ],
+      "next": "Tulis ep19 timing/sets/sprites/game/Film/Cover/index + Root.tsx, cover-topic, sfx, draft juri, final, delivery (lihat docs/HANDOFF.md bagian Update sesi ketiga)",
+      "snapshot": {
+        "episode": "EP19_FLAPPY_BIRD_DIHAPUS",
+        "topic": "Flappy Bird — game ±$50.000/hari yang dihapus pembuatnya sendiri (Februari 2014)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP19",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP19_FLAPPY_BIRD_DIHAPUS/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:36:50.900Z",
+      "doing": "Kode scene ep19 (baru hud.tsx tersalin); docs rule 12 selesai",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/scenes/ep19/hud.tsx",
+        "docs/SHOTLIST.md"
+      ],
+      "next": "Tulis ep19 timing/sets/sprites/game/Film/Cover/index + Root.tsx, cover-topic, sfx, draft juri, final, delivery (lihat docs/HANDOFF.md bagian Update sesi ketiga)",
+      "snapshot": {
+        "episode": "EP19_FLAPPY_BIRD_DIHAPUS",
+        "topic": "Flappy Bird — game ±$50.000/hari yang dihapus pembuatnya sendiri (Februari 2014)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP19",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP19_FLAPPY_BIRD_DIHAPUS/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:38:51.196Z",
+      "doing": "s5: menulis kode ep19 (timing/sets/sprites/game/Film/Cover/index) + Root.tsx",
+      "files": [
+        "project/src/scenes/ep19/timing.ts",
+        "project/src/scenes/ep19/sets.ts",
+        "project/src/scenes/ep19/game.tsx",
+        "project/src/scenes/ep19/Film.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "tsc → cover-topic → npm run sfx → contact sheet + juri → final → delivery",
+      "snapshot": {
+        "episode": "EP19_FLAPPY_BIRD_DIHAPUS",
+        "topic": "Flappy Bird — game ±$50.000/hari yang dihapus pembuatnya sendiri (Februari 2014)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP19",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP19_FLAPPY_BIRD_DIHAPUS/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:45:07.611Z",
+      "doing": "Kode ep19 selesai ditulis (timing/game/sets/sprites/Film/Cover/index + Root.tsx), belum tsc/render",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/scenes/ep19/Film.tsx",
+        "project/src/scenes/ep19/game.tsx",
+        "project/src/scenes/ep19/sets.ts",
+        "project/src/Root.tsx"
+      ],
+      "next": "Salin audio/vo.wav ke project/public/audio/ep19/vo.wav; npx tsc --noEmit; cover-topic; npm run sfx; contact sheet + audit + THEME_CHECK + juri; final; delivery (docs/HANDOFF.md bagian \"Update sesi kelima\")",
+      "snapshot": {
+        "episode": "EP19_FLAPPY_BIRD_DIHAPUS",
+        "topic": "Flappy Bird — game ±$50.000/hari yang dihapus pembuatnya sendiri (Februari 2014)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP19",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP19_FLAPPY_BIRD_DIHAPUS/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:51:33.989Z",
+      "doing": "s6: tsc ok, cover, sfx (public/audio/ep19/sfx.wav), contact sheet putaran 2 (juri r1 3.17; poles rim coder, game speed+ground, floor glow, caption 0.82; camera 5/5), menunggu juri r2",
+      "command": "npm run render:final -- --comp=Ep19Final --out=out/ep19/FINAL_EP19.mp4 --vo=public/audio/ep19/vo.wav --sfx=public/audio/ep19/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error",
+      "files": [
+        "project/src/scenes/ep19/Film.tsx",
+        "project/src/scenes/ep19/game.tsx",
+        "project/src/scenes/ep19/hud.tsx",
+        "project/src/Root.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "record_score juri r2 → render:final Ep19Final --jobs=4 → QA → delivery",
+      "snapshot": {
+        "episode": "EP19_FLAPPY_BIRD_DIHAPUS",
+        "topic": "Flappy Bird — game ±$50.000/hari yang dihapus pembuatnya sendiri (Februari 2014)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP19",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP19_FLAPPY_BIRD_DIHAPUS/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:52:18.044Z",
+      "doing": "s6: render final berjalan (log F:/temp/ep19_render.log) → project/out/ep19/FINAL_EP19.mp4. Juri draf r1 3.17, r2 3.50 (motion 5 terukur) = diterima setelah 2 putaran; record_score sudah. Cover-topic dirender ulang. Signature/Outro pakai code=\"TECH\". render-final gate belum kenal auto-accept → --skip-memory-gate dipakai.",
+      "command": "npm run render:final -- --comp=Ep19Final --out=out/ep19/FINAL_EP19.mp4 --vo=public/audio/ep19/vo.wav --sfx=public/audio/ep19/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Flappy Bird Dihapus Pembuatnya\" --slug=flappy-bird-dihapus --ep=EP19 --skip-memory-gate=\"juri 2 putaran, terbaik 3.50\"",
+      "files": [
+        "project/out/ep19/FINAL_EP19.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md"
+      ],
+      "next": "Setelah render: cek tail log (LUFS -14, TP <= -1.5), salin ke FINAL_VIDEO.mp4 di folder episode, ffprobe metadata, audira_verify_signature, audira_qa_video hardOnly, record_score final (jury). Lalu tahap 10: append_lesson failed (material/depth/composition/readability: bawah 30% frame gelap kosong, set datar) + worked (motion 5 setelah kecepatan game turun, rim cyan dihapus); NOTES.md tulis \"diterima 3.50 setelah 2 putaran\"; SUBTITLES.srt (audira_generate_srt atau dari audio/timeline.json); SOCIAL_CAPTIONS.md (sudah ada di episode, cek isi) validator expectedKeywords Flappy Bird, Dong Nguyen; 3 scheduled task review-flappy-bird-dihapus-24h/-72h/-7d; caption tampil di chat.",
+      "snapshot": {
+        "episode": "EP19_FLAPPY_BIRD_DIHAPUS",
+        "topic": "Flappy Bird — game ±$50.000/hari yang dihapus pembuatnya sendiri (Februari 2014)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP19",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP19_FLAPPY_BIRD_DIHAPUS/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:55:44.370Z",
+      "doing": "Final selesai & QA PASS (FINAL_VIDEO.mp4). Sisa: tahap 10 delivery.",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "research/SOURCE_REGISTER.md",
+        "docs/SCRIPT.md",
+        "style/cover-topic.png"
+      ],
+      "next": "Tahap 10: NOTES.md (tulis \"diterima 3.50 setelah 2 putaran\", offset VO 0, pelajaran: bawah frame gelap, rim cyan, game speed, gate render-final butuh --skip-memory-gate & --skip-channel), SUBTITLES.srt (audira_generate_srt, atau dari audio/timeline.json), SOCIAL_CAPTIONS.md di folder episode (6 platform + ## Jadwal Upload (WIB) + ## Label Konten AI) lolos audira_validate_social_captions expectedKeywords [\"Flappy Bird\",\"Dong Nguyen\"], 3 scheduled task review-flappy-bird-dihapus-24h/-72h/-7d, caption tampil di chat. Pelajaran style sudah di-append (failed + fix).",
+      "snapshot": {
+        "episode": "EP19_FLAPPY_BIRD_DIHAPUS",
+        "topic": "Flappy Bird — game ±$50.000/hari yang dihapus pembuatnya sendiri (Februari 2014)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP19",
+        "currentStage": "delivery",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP19_FLAPPY_BIRD_DIHAPUS/audio/vo.wav",
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    }
+  ],
+  "handover": {
+    "at": "2026-11-23T12:55:44.370Z",
+    "doing": "Final selesai & QA PASS (FINAL_VIDEO.mp4). Sisa: tahap 10 delivery.",
+    "files": [
+      "FINAL_VIDEO.mp4",
+      "research/SOURCE_REGISTER.md",
+      "docs/SCRIPT.md",
+      "style/cover-topic.png"
+    ],
+    "next": "Tahap 10: NOTES.md (tulis \"diterima 3.50 setelah 2 putaran\", offset VO 0, pelajaran: bawah frame gelap, rim cyan, game speed, gate render-final butuh --skip-memory-gate & --skip-channel), SUBTITLES.srt (audira_generate_srt, atau dari audio/timeline.json), SOCIAL_CAPTIONS.md di folder episode (6 platform + ## Jadwal Upload (WIB) + ## Label Konten AI) lolos audira_validate_social_captions expectedKeywords [\"Flappy Bird\",\"Dong Nguyen\"], 3 scheduled task review-flappy-bird-dihapus-24h/-72h/-7d, caption tampil di chat. Pelajaran style sudah di-append (failed + fix).",
+    "snapshot": {
+      "episode": "EP19_FLAPPY_BIRD_DIHAPUS",
+      "topic": "Flappy Bird — game ±$50.000/hari yang dihapus pembuatnya sendiri (Februari 2014)",
+      "style": "PIXELSTORY",
+      "memoryEpisode": "short-baru-11-23-EP19",
+      "currentStage": "delivery",
+      "gates": {
+        "style": {
+          "approved": true,
+          "status": "done"
+        }
+      },
+      "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP19_FLAPPY_BIRD_DIHAPUS/audio/vo.wav",
+      "draftScores": [],
+      "finals": [
+        "FINAL_VIDEO.mp4"
+      ],
+      "draftRounds": 0
+    }
+  },
+  "session": 7,
+  "sessionLog": [
+    {
+      "no": 4,
+      "title": "EP19 Flappy Bird · s4",
+      "at": "2026-11-23T12:36:23.818Z"
+    },
+    {
+      "no": 5,
+      "title": "EP19 Flappy Bird · s5",
+      "at": "2026-11-23T12:36:50.899Z"
+    },
+    {
+      "no": 6,
+      "title": "EP19 Flappy Bird · s6",
+      "at": "2026-11-23T12:45:07.611Z"
+    },
+    {
+      "no": 7,
+      "title": "EP19 Flappy Bird · s7",
+      "at": "2026-11-23T12:55:44.370Z"
+    }
+  ]
+}

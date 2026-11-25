@@ -1,0 +1,747 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP02_JARI_KERIPUT_DI_AIR",
+  "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+  "createdAt": "2026-11-23T14:16:30.103Z",
+  "updatedAt": "2026-11-24T13:01:12.330Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:18:15.046Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:16:30.105Z",
+      "startedAt": "2026-11-23T14:16:30.105Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:18:15.046Z",
+          "text": "sync: riset ada"
+        },
+        {
+          "at": "2026-11-23T14:22:17.044Z",
+          "text": "18 fakta (15 HIGH). Binghamton 2025; ~3,5 menit di 40C; fungsi grip masih diperdebatkan (pakai 'diduga')."
+        }
+      ],
+      "doneAt": "2026-11-23T14:22:17.044Z",
+      "startedAt": "2026-11-23T14:16:30.080Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:16:45.970Z",
+          "text": "AI pilih ANATOMIX 3D (alt NANOFORGE, TERRARIUM). Hero GLB base-hand-e3398a. Cover topik dirender setelah scene hook ada."
+        },
+        {
+          "at": "2026-11-23T15:17:20.935Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        },
+        {
+          "at": "2026-11-24T09:36:20.892Z",
+          "text": "G21 2026-11-24: ANATOMIX gagal juri 3.17 setelah 2 putaran → NANOFORGE (3D). Docs tahap 4 ditulis ulang."
+        }
+      ],
+      "startedAt": "2026-11-23T15:16:45.970Z",
+      "doneAt": "2026-11-24T09:36:20.892Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T17:11:46.148Z",
+          "text": "Docs rule 12 ditulis. Teks TTS = audio/vo.txt (angka dieja). 216 kata terucap."
+        }
+      ],
+      "doneAt": "2026-11-23T17:11:46.148Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:16:33.246Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T18:21:02.015Z",
+          "text": "VO Cartesia 84.66s, 216 kata -> project/public/audio/vo.wav + vo-words.json + vo.timing.json. Cuts: S1 0-9.2, S2 9.2-16.4, S3 16.4-31.3, S4 31.3-42.1, S5 42.1-54.9, S6 54.9-70.8, S7 70.8-79.4, S8 79.4-84.7 + outro 3s."
+        }
+      ],
+      "doneAt": "2026-11-23T18:21:02.015Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:16:33.246Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.572Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:20:56.250Z",
+          "text": "sync: look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-24T07:15:45.632Z",
+      "startedAt": "2026-11-24T07:15:45.632Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T12:13:46.323Z",
+      "notes": [
+        {
+          "at": "2026-11-24T12:13:46.323Z",
+          "text": "Acc pengguna 2026-11-24 s6: \"Gas render final\" (setelah lihat contact sheet NANOFORGE, juri terbaik 3.83, 88 dtk, G18c 13.0 LU)."
+        },
+        {
+          "at": "2026-11-24T12:59:32.547Z",
+          "text": "FINAL_EP02_JARI_KERIPUT.mp4 1080x1920@60, -13.7 LUFS, TP -1.8, signature VALID. QA_REPORT.md."
+        }
+      ],
+      "startedAt": "2026-11-24T12:13:46.323Z",
+      "doneAt": "2026-11-24T12:59:32.547Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T12:21:43.268Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T12:17:05.303Z",
+      "startedAt": "2026-11-24T12:17:05.303Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sains-anak-EP02",
+    "shortTitle": "Jari Keriput",
+    "style": "NANOFORGE",
+    "engine": "remotion",
+    "wordCount": 216,
+    "estimatedDuration": {
+      "wordCount": 216,
+      "minSec": 86,
+      "maxSec": 96
+    }
+  },
+  "syncedAt": "2026-11-24T12:21:43.268Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-23T17:11:46.312Z",
+      "doing": "VO Cartesia dari audio/vo.txt ke project/public/audio/vo.wav + voiceover.json",
+      "files": [
+        "audio/vo.txt",
+        "project/public/audio/vo.wav",
+        "docs/SCRIPT.md"
+      ],
+      "next": "npm run vo, lalu bangun scene src/episodes/jari (ANATOMIX, hand GLB base-hand-e3398a), Root composition JariPreview/JariFinal",
+      "snapshot": {
+        "episode": "EP02_JARI_KERIPUT_DI_AIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP02",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T17:11:55.338Z",
+      "doing": "VO belum dibuat: audira_generate_voiceover dengan scriptPath gagal (\"no timed lines\"). Teks satu baris siap di audio/vo-oneline.txt (216 kata).",
+      "files": [
+        "audio/vo-oneline.txt",
+        "audio/vo.txt",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/ART_DIRECTION.md",
+        "style/STYLE_DECISION.md",
+        "project/"
+      ],
+      "next": "Panggil audira_generate_voiceover dengan param text = isi audio/vo-oneline.txt (speed 1, lang id), output project/public/audio/vo.wav + voiceover.json; npm run vo; lalu bangun scene src/episodes/jari (8 scene per docs/STORYBOARD.md), cover topik, sfx, contact sheet, juri; STOP di gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP02_JARI_KERIPUT_DI_AIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP02",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:23:13.350Z",
+      "doing": "VO selesai (84.66s). Menulis scene Remotion src/episodes/jari/ (8 scene, procedural fingertip + GLB hand/tire/marble/microscope dari public/models/polyfork), daftar komposisi JariPreview/JariFinal di Root.tsx. node_modules junction sudah dipindah ke F:/AUDIRA-SKILL-MOTION/node_modules.",
+      "files": [
+        "project/src/episodes/jari/",
+        "project/src/Root.tsx",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "Stills cek orientasi GLB -> docs/SHOTLIST.md + npm run sfx -> npm run draft -- JariPreview -> THEME_CHECK -> juri blind -> STOP gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP02_JARI_KERIPUT_DI_AIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP02",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:03:10.608Z",
+      "doing": "Scene v1 sudah ditulis: project/src/episodes/jari/{timing.ts,parts.tsx,Hud.tsx,JariFilm.tsx}, komposisi JariPreview/JariFinal (88 s) di Root.tsx, tsc bersih. GLB disalin ke project/public/models/ep02/ (hand, tire, marble, microscope), JariFilm pakai src={staticFile(\"models/ep02/<id>.glb\")}. Probe stills: out/probe/_sheet.jpg (v1, sebelum fix path GLB).",
+      "files": [
+        "project/src/episodes/jari/JariFilm.tsx",
+        "project/src/episodes/jari/parts.tsx",
+        "project/src/episodes/jari/Hud.tsx",
+        "project/src/episodes/jari/timing.ts",
+        "project/src/Root.tsx",
+        "project/public/models/ep02/",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "project/out/probe/_sheet.jpg"
+      ],
+      "next": "Perbaiki dari probe v1, lalu render stills ulang (node scripts/stills.mjs out/probe 2s,6s,18s,25s,36s,48s,58s,66s,74s,78s,82s JariPreview): (1) hand GLB rigged (6 skin), mesh ±0.19 unit, jari mengarah +z, telapak datar (y = tebal): cek apakah size={3} di AssetModel berlaku setelah src lokal; kalau masih kecil pakai scale manual (~15) dan set HAND_ROT [-PI/2,0,0] supaya jari ke atas. (2) Subtitle tampil kecil di y≈676: pindahkan <Subtitle> keluar dari overlay FilmScene ke root AbsoluteFill (overlay sudah di-scale, Subtitle ikut scale lagi). (3) Water terlihat abu-abu terang: clearcoat 0.3, metalness 0, warna lebih gelap, opacity 0.9. (4) Kamera terlalu dekat: S1b r 4.2→3.4; S3 dua jari r ≈6.5; S4 tissue r ≈7, y 2.5; S6 ban r ≈5 sudut 3/4 (ban menghadap z, spin di z sudah benar); S7 jari r +1. (5) Hapus strip \"AUDIRA SAINS // LAB TUBUH\" di Hud (tabrakan dengan AudiraSignature). (6) Pertimbangkan RoundedBox drei untuk SkinSlab. Setelah itu: docs/SHOTLIST.md (sfx.mjs butuh) + npm run sfx; npm run draft -- JariPreview; isi draft/THEME_CHECK.md (≥6 baris, semua ya); record_score self lalu juri blind subagent (qa/jury.md); STOP di gerbang tahap 9 (contact sheet, skor juri, durasi 88 s, G18c). Koreksi fakta sudah di VO (Binghamton 2025, 3–5 menit air hangat, \"menduga\"). Aturan: sentuh hanya folder EP02, jangan commit, render --concurrency=2 di background.",
+      "snapshot": {
+        "episode": "EP02_JARI_KERIPUT_DI_AIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP02",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:13:52.608Z",
+      "doing": "npm run draft -- JariPreview (frames 2,6,14,18,25,36,48,58,66,74,78,82s; clip auto). Fix v1 selesai: AssetModel pakai SkeletonUtils.clone (tangan rigged tadinya kecil di origin), Hand scale manual + HAND_ROT [-PI/2,0,0], ukuran 1.6–2.4, Subtitle di root + gap 0.4em + baseColor putih, strip LAB TUBUH dihapus, air meshStandard gelap, kamera dijauhkan, SkinSlab RoundedBox, kicker HUD 38px. SHOTLIST.md + sfx.wav (-26 LUFS) selesai.",
+      "command": "cd project && npm run draft -- JariPreview --frames=2s,6s,14s,18s,25s,36s,48s,58s,66s,74s,78s,82s",
+      "files": [
+        "project/src/episodes/jari/JariFilm.tsx",
+        "project/src/episodes/jari/parts.tsx",
+        "project/src/episodes/jari/Hud.tsx",
+        "project/src/core/assets/AssetModel.tsx",
+        "project/src/core/hud/Subtitle.tsx",
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "Isi draft/THEME_CHECK.md, record_score self, juri blind subagent (qa/jury.md), lalu STOP di gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP02_JARI_KERIPUT_DI_AIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP02",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:18:16.531Z",
+      "doing": "Juri blind subagent untuk draft/DRAFT_SHEET.jpg. Selesai: fix probe v1, draft (ceilings material 3, lainnya 5; camera 5/5), THEME_CHECK 12/12 ya, self score avg 4.0 LOLOS, G18c VO -16.0 vs SFX -29.0 = 13.0 LU lolos, durasi 88 s.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/jury_input.json",
+        "draft/THEME_CHECK.md",
+        "style/cover-reference.png"
+      ],
+      "next": "record_score judge jury (ceilings + camera dari draft/jury_input.json). LOLOS → STOP di gerbang tahap 9: tampilkan DRAFT_SHEET, skor juri, durasi 88 s, G18c 13.0 LU, tunggu acc. PERLU POLES → poles material (tekstur kulit / smooth shading tangan), npm run draft ulang (putaran 2 maks).",
+      "snapshot": {
+        "episode": "EP02_JARI_KERIPUT_DI_AIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP02",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:19:18.110Z",
+      "doing": "Draft putaran 1 selesai: juri blind 3.0 PERLU POLES (lighting 3, material 2, depth 3, composition 3, motion 5, readability 2). Self 4.0. G18c lolos 13.0 LU. Durasi 88 s. Polish putaran 2 belum dimulai.",
+      "files": [
+        "project/src/episodes/jari/JariFilm.tsx",
+        "project/src/episodes/jari/parts.tsx",
+        "project/src/episodes/jari/Hud.tsx",
+        "project/src/core/assets/AssetModel.tsx",
+        "project/src/core/hud/Subtitle.tsx",
+        "docs/SHOTLIST.md",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Putaran juri 2 (terakhir): (1) MATERIAL tangan: GLB base-hand low-poly oranye terbaca plastik. Coba audira_search_assets hand yang lebih realistis; kalau tidak ada, di JariFilm Hand ganti tint ke kulit #E8B4A0, roughness 0.55, dan via AssetModel/polish set flatShading false + computeVertexNormals, sheen. Pertimbangkan Fingertip prosedural (lebih bagus) di lebih banyak beat. SkinSlab F3: tambah rim light/tekstur pori. (2) G22 F4 18s \"1935 Lewis & Pickering\": tampilkan eksperimennya (dua tangan di baskom air, satu jalur saraf terputus, atau silhouet 2 dokter GLB tanpa wajah di lab), bukan tangan generik. (3) Komposisi: F11 kartu DOKTER (Hud CARDS) menimpa kartu Binghamton: sembunyikan Binghamton saat 76.9 atau geser y; F5 plinth AUDIRA LAB tertutup caption y1300: geser plinth; F1 dasar tangan terpotong. (4) Depth: foreground drops/bokeh dekat kamera, focus/aperture FilmScene. (5) Lighting: kontras + rim teal lebih kuat. Lalu npm run draft -- JariPreview --frames=2s,6s,14s,18s,25s,36s,48s,58s,66s,74s,78s,82s (background), isi ulang draft/THEME_CHECK.md, record_score self, juri blind (qa/jury.md). Juri ≥3.8 tanpa aspek <3 → gerbang tahap 9. Setelah 2 putaran: terbaik ≥3.5 → gerbang tahap 9 dengan draf terbaik; <3.5 → AI pilih style baru (G21 ulang tahap 4). STOP di gerbang tahap 9: tampilkan DRAFT_SHEET, skor juri, durasi 88 s, G18c 13.0 LU, tunggu acc pengguna.",
+      "snapshot": {
+        "episode": "EP02_JARI_KERIPUT_DI_AIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP02",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:39:49.269Z",
+      "doing": "s4 putaran juri 2: edit selesai (Hand skin material + smooth weld via AssetModel props material/smooth; beat 16.4-19.5 = eksperimen 1935 dua tangan di baskom, kanan diperban; Binghamton until 77.8; plinth F5 ke [2.4,-2,-3.4]; rim light naik). Render contact sheet draf.",
+      "command": "npm run draft -- JariPreview --frames=2s,6s,14s,18s,25s,36s,48s,58s,66s,74s,78s,82s",
+      "files": [
+        "project/src/core/assets/AssetModel.tsx",
+        "project/src/episodes/jari/JariFilm.tsx",
+        "project/src/episodes/jari/Hud.tsx"
+      ],
+      "next": "Cek sheet, isi THEME_CHECK, record_score self, juri blind putaran 2, lalu gerbang tahap 9 (terbaik >=3.5) atau ganti style (<3.5).",
+      "snapshot": {
+        "episode": "EP02_JARI_KERIPUT_DI_AIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP02",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:51:53.136Z",
+      "doing": "ANATOMIX gagal setelah 2 putaran juri (r1 3.0, r2 3.17: lighting 3, material 2, depth 3, composition 3, motion 5, readability 3; weakest = tangan/ban/mikroskop GLB terbaca plastik matte). Lesson failed dicatat. AI memilih style baru NANOFORGE (3D Remotion; alasan: cerita = perjalanan ke dalam jari, saraf/pembuluh/kulit mikro; juri NANOFORGE 3.88). Alternatif: TERRARIUM (juri 3.93, gold sains-anak-EP04), CLAYWORLD (juri final 3.17).",
+      "files": [
+        "project/src/episodes/jari/JariFilm.tsx",
+        "project/src/episodes/jari/parts.tsx",
+        "project/src/episodes/jari/Hud.tsx",
+        "project/src/core/assets/AssetModel.tsx",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/DRAFT_SHEET_r1.jpg",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "G21 ganti style NANOFORGE: (1) style/STYLE_DECISION.md baru (Style: NANOFORGE, alasan, alternatif ditolak, ANATOMIX gagal 3.17), cover-reference dari F:/AUDIRA-ALL-SKILL/assets/style-covers/nanoforge.jpg, render cover-topic.png; update STATUS data.style=NANOFORGE. (2) Ulang tahap 4: tulis ulang docs/ART_DIRECTION.md, docs/STORYBOARD.md, docs/ASSET_MANIFEST.md dengan baris 'Style: NANOFORGE' (naskah, VO audio/vo.wav, vo-words.json, SFX TETAP; timing CUTS di project/src/episodes/jari/timing.ts tetap). (3) Baca kits/nanoforge/KIT.md + audira_style_memory get NANOFORGE (kelemahan: ruang kosong, label HUD tertutup objek). Bangun ulang visual di project/src/episodes/jari/ dengan resep NANOFORGE: tangan GLB jangan jadi hero (hanya siluet/transisi masuk), fokus makro fingertip prosedural, saraf bercahaya, pembuluh menyempit, lapisan kulit; ban & kelereng & mikroskop boleh tetap tapi dengan material NANOFORGE. Pertahankan perbaikan r2: Hud.tsx Binghamton until 77.8, kartu SARAF UTUH/PUTUS 17.9-19.45 (geser jangan tertutup tangan), LabSign AUDIRA LAB di F5, AssetModel props material/smooth. Satu kartu HUD per beat (F7 terlalu ramai), F11 kartu jangan tabrak mikroskop. (4) npm run draft -- JariPreview --frames=2s,6s,14s,18s,25s,36s,48s,58s,66s,74s,78s,82s, isi ulang draft/THEME_CHECK.md, record_score self, juri buta (F:/AUDIRA-SKILL-MOTION/qa/jury.md, cover nanoforge). Maks 2 putaran untuk NANOFORGE; terbaik >=3.5 -> STOP di gerbang tahap 9 (contact sheet, skor juri, durasi 88 s, G18c 13.0 LU) tunggu acc pengguna. Jangan render final tanpa acc.",
+      "snapshot": {
+        "episode": "EP02_JARI_KERIPUT_DI_AIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP02",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:32:18.431Z",
+      "doing": "s5: G21 ganti style ke NANOFORGE — tulis docs tahap 4 + rebuild visual project/src/episodes/jari (parts.tsx -> nano parts, JariFilm, Hud palette)",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/ART_DIRECTION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "project/src/episodes/jari/JariFilm.tsx",
+        "project/src/episodes/jari/parts.tsx",
+        "project/src/episodes/jari/Hud.tsx"
+      ],
+      "next": "npm run draft -- JariPreview --frames=2s,6s,14s,18s,25s,36s,48s,58s,66s,74s,78s,82s; THEME_CHECK; juri buta NANOFORGE (maks 2 putaran); stop di gerbang tahap 9",
+      "snapshot": {
+        "episode": "EP02_JARI_KERIPUT_DI_AIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP02",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:36:16.223Z",
+      "doing": "s5 selesai: docs tahap 4 NANOFORGE + parts.tsx NANOFORGE ditulis ulang. JariFilm.tsx & Hud.tsx BELUM (masih impor Lab/Plinth/SkinSlab/Drops yang dihapus → typecheck gagal). Rencana rinci di work/HANDOVER_s5.md.",
+      "files": [
+        "work/HANDOVER_s5.md",
+        "project/src/episodes/jari/parts.tsx",
+        "project/src/episodes/jari/JariFilm.tsx",
+        "project/src/episodes/jari/Hud.tsx",
+        "style/STYLE_DECISION.md",
+        "docs/ART_DIRECTION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/SHOTLIST.md"
+      ],
+      "next": "Baca work/HANDOVER_s5.md. Tulis ulang JariFilm.tsx + Hud.tsx ke NANOFORGE, tsc, npm run draft -- JariPreview --frames=2s,6s,14s,18s,25s,36s,48s,58s,66s,74s,78s,82s, cover-topic.png, THEME_CHECK, juri buta (maks 2 putaran), stop di gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP02_JARI_KERIPUT_DI_AIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "ANATOMIX",
+        "memoryEpisode": "sains-anak-EP02",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:38:43.800Z",
+      "doing": "s6: JariFilm.tsx + Hud.tsx sudah NANOFORGE (tsc episode bersih). Render draf contact sheet.",
+      "command": "npm run draft -- JariPreview --frames=2s,6s,14s,18s,25s,36s,48s,58s,66s,74s,78s,82s",
+      "files": [
+        "project/src/episodes/jari/JariFilm.tsx",
+        "project/src/episodes/jari/Hud.tsx"
+      ],
+      "next": "cover-topic.png, THEME_CHECK, record_score self + juri buta, gerbang tahap 9",
+      "snapshot": {
+        "episode": "EP02_JARI_KERIPUT_DI_AIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "NANOFORGE",
+        "memoryEpisode": "sains-anak-EP02",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:38:43.800Z",
+      "doing": "s6: JariFilm.tsx + Hud.tsx sudah NANOFORGE (tsc episode bersih). Render draf contact sheet.",
+      "command": "npm run draft -- JariPreview --frames=2s,6s,14s,18s,25s,36s,48s,58s,66s,74s,78s,82s",
+      "files": [
+        "project/src/episodes/jari/JariFilm.tsx",
+        "project/src/episodes/jari/Hud.tsx"
+      ],
+      "next": "cover-topic.png, THEME_CHECK, record_score self + juri buta, gerbang tahap 9",
+      "snapshot": {
+        "episode": "EP02_JARI_KERIPUT_DI_AIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "NANOFORGE",
+        "memoryEpisode": "sains-anak-EP02",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T10:07:12.486Z"
+    },
+    {
+      "at": "2026-11-24T12:13:46.511Z",
+      "doing": "Sesi B selesai (s6): JariFilm.tsx + Hud.tsx NANOFORGE, draf 2 putaran juri (terbaik 3.83 LOLOS, putaran 2 3.67), cover-topic.png, THEME_CHECK 12/12 ya. Pengguna SUDAH acc render final (\"Gas render final\"), stage final approved true.",
+      "command": "npm run render:final -- JariFinal --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "style/cover-topic.png",
+        "NOTES.md",
+        "project/src/episodes/jari/JariFilm.tsx",
+        "project/src/episodes/jari/Hud.tsx"
+      ],
+      "next": "Sesi C: tahap 9 render final langsung (acc sudah ada, jangan tanya lagi): qa-scene (G19) lalu di project/: npm run render:final -- JariFinal --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc (cek argumen tepat di scripts/render-final.mjs). QA −14 LUFS TP<−1, metadata ffprobe, record_score final, lalu tahap 10 delivery. Style NANOFORGE, Remotion+R3F 3D, VO 84.66 dtk, film 88 dtk, G18c 13.0 LU.",
+      "snapshot": {
+        "episode": "EP02_JARI_KERIPUT_DI_AIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "NANOFORGE",
+        "memoryEpisode": "sains-anak-EP02",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T12:41:42.453Z",
+      "doing": "Sesi C s7: render final JariFinal 1080x1920@60 (background). G19 qa-scene: scene PASS (13 cut terencana); qa-video FAIL putih 39.8-40.2 & hitam 54.9-66.6 hanya di qa-clean.mp4 (still 40s & 58s normal = glitch WebGL render QA) -> wajib cek qa_video hardOnly di final. FilmScene.tsx diberi <QaProbe/>. SOCIAL_CAPTIONS.md sudah lolos validator (jadwal Rabu 25 Nov 2026 19.00 WIB).",
+      "command": "cd project && npm run render:final -- --comp=JariFinal --out=../FINAL_EP02_JARI_KERIPUT.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Kenapa Jari Keriput Saat Lama di Air?\" --slug=jari-keriput-di-air --ep=EP02",
+      "files": [
+        "FINAL_EP02_JARI_KERIPUT.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "project/src/core/scene/FilmScene.tsx",
+        "draft/qa-scene.log"
+      ],
+      "next": "QA final (LUFS -14, TP<-1, outro, signature, ffprobe metadata, qa_video hardOnly), record_score final, NOTES.md + motion memory NANOFORGE, hapus perantara, tanya jam upload, 3 scheduled task review.",
+      "snapshot": {
+        "episode": "EP02_JARI_KERIPUT_DI_AIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "NANOFORGE",
+        "memoryEpisode": "sains-anak-EP02",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T12:50:29.155Z",
+      "doing": "Sesi C s7: render final ulang (percobaan 1 gagal channel gate karena file template PenggantiGibranWapres.tsx; percobaan 2 gagal 'write EOF' part 6 karena GPU dipakai render EP59 & EP060 bersamaan, NVENC 7 sesi). Sekarang --jobs=2 --encoder=x264 di background.",
+      "command": "cd project && npm run render:final -- --comp=JariFinal --out=../FINAL_EP02_JARI_KERIPUT.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=2 --concurrency=2 --gl=vulkan --encoder=x264 --title=\"Kenapa Jari Keriput Saat Lama di Air?\" --slug=jari-keriput-di-air --ep=EP02 --skip-channel=\"PenggantiGibranWapres.tsx sisa template, tidak dipakai JariFinal\"",
+      "files": [
+        "FINAL_EP02_JARI_KERIPUT.mp4",
+        "draft/render-final.log"
+      ],
+      "next": "QA final (LUFS -14, TP<-1, outro, signature, ffprobe metadata, qa_video hardOnly), record_score final, NOTES.md + motion memory NANOFORGE, hapus perantara, tanya jam upload, 3 scheduled task review.",
+      "snapshot": {
+        "episode": "EP02_JARI_KERIPUT_DI_AIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "NANOFORGE",
+        "memoryEpisode": "sains-anak-EP02",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T12:59:32.327Z",
+      "doing": "Sesi C s7: FINAL_EP02_JARI_KERIPUT.mp4 selesai & QA lolos (-13.7 LUFS, TP -1.8, metadata+Ed25519/C2PA VALID, outro, signature; qa-video BLACK 63-69 dtk = false positive latar gelap, lihat QA_REPORT.md). record_score final self 3.83. SOCIAL_CAPTIONS.md lolos validator (jadwal Rabu 25 Nov 2026 19.00 WIB).",
+      "files": [
+        "FINAL_EP02_JARI_KERIPUT.mp4",
+        "QA_REPORT.md",
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md"
+      ],
+      "next": "Tahap 10 sisa: isi NOTES.md (pelajaran), append_lesson NANOFORGE (worked/failed/fix) + GLOBAL (qa-scene cuts harus dari timing.ts CUTS + subtitle ignore; render paralel antar sesi -> jobs 2 x264), hapus perantara (draft/_stills, draft/CHECK_47-65s.mp4, project/out/probe*, project/out/qa-scene/*/qa-clean.mp4, project/out/seg), update stage final+delivery done, tanya jam upload, buat 3 scheduled task review-jari-keriput-24h/-72h/-7d.",
+      "snapshot": {
+        "episode": "EP02_JARI_KERIPUT_DI_AIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "NANOFORGE",
+        "memoryEpisode": "sains-anak-EP02",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T12:59:32.327Z",
+      "doing": "Sesi C s7: FINAL_EP02_JARI_KERIPUT.mp4 selesai & QA lolos (-13.7 LUFS, TP -1.8, metadata+Ed25519/C2PA VALID, outro, signature; qa-video BLACK 63-69 dtk = false positive latar gelap, lihat QA_REPORT.md). record_score final self 3.83. SOCIAL_CAPTIONS.md lolos validator (jadwal Rabu 25 Nov 2026 19.00 WIB).",
+      "files": [
+        "FINAL_EP02_JARI_KERIPUT.mp4",
+        "QA_REPORT.md",
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md"
+      ],
+      "next": "Tahap 10 sisa: isi NOTES.md (pelajaran), append_lesson NANOFORGE (worked/failed/fix) + GLOBAL (qa-scene cuts harus dari timing.ts CUTS + subtitle ignore; render paralel antar sesi -> jobs 2 x264), hapus perantara (draft/_stills, draft/CHECK_47-65s.mp4, project/out/probe*, project/out/qa-scene/*/qa-clean.mp4, project/out/seg), update stage final+delivery done, tanya jam upload, buat 3 scheduled task review-jari-keriput-24h/-72h/-7d.",
+      "snapshot": {
+        "episode": "EP02_JARI_KERIPUT_DI_AIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "NANOFORGE",
+        "memoryEpisode": "sains-anak-EP02",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T13:01:12.330Z"
+    }
+  ],
+  "session": 7,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP02 Jari Keriput · s2",
+      "at": "2026-11-23T17:11:55.338Z"
+    },
+    {
+      "no": 3,
+      "title": "EP02 Jari Keriput · s3",
+      "at": "2026-11-24T07:03:10.608Z"
+    },
+    {
+      "no": 4,
+      "title": "EP02 Jari Keriput · s4",
+      "at": "2026-11-24T07:19:18.109Z"
+    },
+    {
+      "no": 5,
+      "title": "EP02 Jari Keriput · s5",
+      "at": "2026-11-24T07:51:53.136Z"
+    },
+    {
+      "no": 6,
+      "title": "EP02 Jari Keriput · s6",
+      "at": "2026-11-24T09:36:16.222Z"
+    },
+    {
+      "no": 7,
+      "title": "EP02 Jari Keriput · s7",
+      "at": "2026-11-24T12:13:46.511Z"
+    }
+  ]
+}

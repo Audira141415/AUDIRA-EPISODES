@@ -1,0 +1,240 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP02_KACA_JENDELA",
+  "topic": "Cara pembuatan benda sehari-hari yang jarang diketahui",
+  "createdAt": "2026-11-11T08:10:25.576Z",
+  "updatedAt": "2026-11-16T15:16:44.997Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T08:15:54.413Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-11T08:10:25.577Z",
+      "startedAt": "2026-11-11T08:10:25.577Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T08:15:54.413Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-11T08:10:25.576Z",
+      "startedAt": "2026-11-11T08:10:25.576Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-11T23:51:24.467Z",
+      "notes": [
+        {
+          "at": "2026-11-11T23:51:37.255Z",
+          "text": "Style dipilih pengguna: \"Ya, semua utama\" (2026-11-12). Cover topik pending."
+        },
+        {
+          "at": "2026-11-12T00:00:13.184Z",
+          "text": "sync: STYLE_DECISION.md ada; acc tercatat di file"
+        }
+      ],
+      "startedAt": "2026-11-11T23:51:37.255Z",
+      "approvalSource": "file",
+      "doneAt": "2026-11-11T23:51:24.467Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T00:59:05.670Z",
+      "notes": [
+        {
+          "at": "2026-11-11T08:15:54.413Z",
+          "text": "sync: naskah ada; menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-12T00:59:05.670Z",
+          "text": "Cover topik + naskah disetujui pengguna: \"Setuju semua\" (2026-11-12)."
+        }
+      ],
+      "startedAt": "2026-11-11T08:10:25.576Z",
+      "doneAt": "2026-11-12T00:59:05.670Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-16T15:16:44.997Z",
+          "text": "sync: dunia world3d disiapkan (project/world3d.js + project/hf/hyperframes.json)"
+        }
+      ],
+      "doneAt": "2026-11-12T12:50:19.604Z",
+      "startedAt": "2026-11-12T12:50:19.604Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T00:59:57.970Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-12T00:59:35.854Z",
+      "startedAt": "2026-11-12T00:59:35.854Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T00:59:28.116Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-12T00:17:23.066Z",
+      "startedAt": "2026-11-12T00:17:23.066Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-12T00:59:28.116Z",
+          "text": "sync: 1 gambar draf/contact sheet; menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-12T12:46:13.467Z",
+          "text": "sync: 1 gambar draf/contact sheet; acc tidak tercatat, disimpulkan karena tahap sesudahnya sudah ada"
+        }
+      ],
+      "startedAt": "2026-11-12T00:17:23.069Z",
+      "approvalSource": "inferred",
+      "doneAt": "2026-11-12T12:44:55.831Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-14T00:45:14.350Z",
+          "text": "FINAL_KACA_JENDELA.mp4 1080x1920@60, 84.1 s, batch 20261114-004119. User override finalisasi (6c), jury draf 3.33. deliver GREEN, signature VALID, camera-audit 5/5. Yellow: frozen outro hold 81.72-end, src/ n/a HyperFrames."
+        }
+      ],
+      "doneAt": "2026-11-14T00:45:14.350Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T12:46:13.467Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-14T00:45:20.857Z",
+          "text": "Caption 6 platform validator ok, jadwal 22 Nov 2026 19.00-20.40 WIB, label AI ok. Pelajaran GLASSCRAFT dicatat."
+        }
+      ],
+      "doneAt": "2026-11-14T00:45:20.857Z",
+      "startedAt": "2026-11-12T12:42:35.947Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "cara-pembuatan-EP02",
+    "style": "GLASSCRAFT",
+    "title": "Cara Pembuatan Kaca Jendela",
+    "wordCount": 191,
+    "estimatedDuration": {
+      "wordCount": 191,
+      "minSec": 76,
+      "maxSec": 85
+    }
+  },
+  "syncedAt": "2026-11-16T15:16:44.997Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-13T17:45:29.067Z",
+      "doing": "render 18s draft clip (payoff 68-85s) q=draft, TMP on F:, for camera-audit motion score",
+      "command": "npx hyperframes render -q draft --start=68 --end=85 -f 30 (TMP=F:\\render-tmp)",
+      "next": "audit:camera -> record_score draft self -> blind jury -> user acc -> final render"
+    },
+    {
+      "at": "2026-11-13T18:39:43.483Z",
+      "doing": "blind jury on contact-sheet (no clip; motion from continuity). Draft clip render blocked by HF BeginFrame capture bug on sub-range",
+      "next": "record_score jury -> if LOLOS, user acc -> audira_render_batch final (TMP F:, parallel=1)"
+    },
+    {
+      "at": "2026-11-13T18:41:16.228Z",
+      "doing": "DRAF GATE: jury 3.33 TIDAK LOLOS (round 1/3). Gate closed, NO final render.",
+      "files": [
+        "project/world3d.js",
+        "project/build-video.mjs"
+      ],
+      "next": "Polish round in FRESH session: world3d.js glass heroes -> transmissive material (IOR/refraction+thickness, specular edge) not flat emissive panels; add 1 directional key (cut rim-glow bloom); uncrop s2 figure feet. Then re-render contact sheet via audira_render_batch (GPU free + auto-queue, NOT manual hf-render) -> record_score self+jury -> if LOLOS user acc -> final."
+    },
+    {
+      "at": "2026-11-13T23:35:27.408Z",
+      "doing": "FINAL queued (user override jury 3.33). audira_render_batch -> FINAL_KACA_JENDELA.mp4, 60fps, TMP F:, queued #1 behind batch 20261113-233505",
+      "next": "Fresh session (context 240k): audira_render_batch status until done -> npm run deliver -- ../FINAL_KACA_JENDELA.mp4 (RED/YELLOW only) -> verify FINAL_CHECK.jpg + signature/outro/metadata -> record_score stage:final -> show 6-platform captions from SOCIAL_CAPTIONS.md in chat. STATUS tool wont mark draft approved (no passing jury); this is user override 6c, finalize anyway."
+    },
+    {
+      "at": "2026-11-14T00:41:19.592Z",
+      "doing": "render final (hyperframes)",
+      "command": "audira_render_batch start",
+      "batchId": "20261114-004119",
+      "files": [
+        "../../FINAL_KACA_JENDELA.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261114-004119); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang."
+    },
+    {
+      "at": "2026-11-14T00:41:19.592Z",
+      "doing": "render final (hyperframes)",
+      "command": "audira_render_batch start",
+      "batchId": "20261114-004119",
+      "files": [
+        "../../FINAL_KACA_JENDELA.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261114-004119); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang.",
+      "finishedAt": "2026-11-14T00:45:20.881Z"
+    }
+  ]
+}

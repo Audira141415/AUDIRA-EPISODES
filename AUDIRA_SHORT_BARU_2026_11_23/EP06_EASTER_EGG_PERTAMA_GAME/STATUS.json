@@ -1,0 +1,646 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP06_EASTER_EGG_PERTAMA_GAME",
+  "topic": "Easter egg terkenal pertama di game: nama tersembunyi Warren Robinett di Adventure (Atari 2600)",
+  "createdAt": "2026-11-22T17:50:18.177Z",
+  "updatedAt": "2026-11-23T09:54:17.980Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:52:27.461Z",
+          "text": "Engine 2D: Remotion + kit PIXELSTORY (pixel buffer CPU), basis episode gold fakta-olahraga-EP01."
+        }
+      ],
+      "doneAt": "2026-11-22T17:52:27.461Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:50:39.582Z",
+          "text": "13 fakta di research/SOURCE_REGISTER.md (Wikipedia Adventure 1980 + Easter egg (media)); framing: bukan easter egg pertama mutlak, tapi asal istilah."
+        }
+      ],
+      "doneAt": "2026-11-22T17:50:39.582Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-23T00:06:59.222Z",
+      "notes": [
+        {
+          "at": "2026-11-22T17:50:59.915Z",
+          "text": "Pengguna memilih PIXELSTORY (opsi 1) di gerbang style, 2026-11-23."
+        },
+        {
+          "at": "2026-11-23T00:06:59.223Z",
+          "text": "Pengguna memilih ARCADECRT 2026-11-23 menggantikan PIXELSTORY (juri 3.33/3.00/3.33). STYLE_DECISION.md ditulis ulang."
+        }
+      ],
+      "doneAt": "2026-11-23T00:06:59.222Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T22:23:24.636Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T22:22:11.260Z",
+      "startedAt": "2026-11-22T22:22:11.260Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:54:02.818Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T17:51:38.252Z",
+      "startedAt": "2026-11-22T17:51:38.252Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:04:04.585Z",
+          "text": "VO dikunci: audio/vo.wav 77,28 dtk bicara, 148 WPM, film 81,278 dtk; timeline di project/src/scenes/ep06/timeline.json"
+        }
+      ],
+      "doneAt": "2026-11-22T18:04:04.585Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:54:02.818Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T17:51:38.349Z",
+      "startedAt": "2026-11-22T17:51:38.349Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T22:51:09.292Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json FAIL (perlu perbaikan sebelum final)"
+        },
+        {
+          "at": "2026-11-23T00:02:01.306Z",
+          "text": "2026-11-23 sesi ke-6: pengguna memilih \"Poles ke-3 PIXELSTORY\" (izin putaran juri ke-3, pengecualian G16)."
+        },
+        {
+          "at": "2026-11-23T00:02:18.437Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json PASS"
+        },
+        {
+          "at": "2026-11-23T00:02:23.590Z",
+          "text": "KOREKSI sesi local_db9b1efb: catatan \"poles ke-3\" sebelumnya diambil dari pertanyaan yang keliru (dibuat dari HANDOFF sesi ke-5, sebelum terbaca bahwa putaran ke-3 sudah gagal 3.33 dan pengguna memilih ARCADECRT pukul 07:00). Keputusan yang berlaku: ARCADECRT, kecuali pengguna mengubahnya."
+        }
+      ],
+      "doneAt": "2026-11-22T23:58:25.729Z",
+      "startedAt": "2026-11-22T22:43:24.389Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T09:50:07.809Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-23T09:54:13.661Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60, -13.6 LUFS, TP -2.0 dBFS, qa_video PASS, signature VALID+C2PA, metadata ok. Juri draf r1 3.83."
+        }
+      ],
+      "doneAt": "2026-11-23T09:54:13.661Z",
+      "startedAt": "2026-11-23T09:44:55.530Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T09:50:07.809Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-23T09:40:16.250Z",
+      "startedAt": "2026-11-23T09:40:16.250Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP06",
+    "engine": "remotion",
+    "channel": "AUDIRA TECH",
+    "handle": "@AudiraTECH",
+    "title": "Easter Egg Pertama yang Terkenal di Game",
+    "style": "ARCADECRT",
+    "engineNote": "Remotion + R3F (kit ARCADECRT)",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "handoverLog": [
+    {
+      "at": "2026-11-22T17:52:22.848Z",
+      "doing": "Style PIXELSTORY dipilih; studio Remotion disalin ke project/; belum ada cover topik, naskah, VO, scene code.",
+      "files": [
+        "docs/HANDOFF.md",
+        "research/SOURCE_REGISTER.md",
+        "project/src/Root.tsx"
+      ],
+      "next": "Baca docs/HANDOFF.md, lalu STYLE_DECISION + cover topik, naskah, VO, scene ep06, draf, final, caption.",
+      "snapshot": {
+        "episode": "EP06_EASTER_EGG_PERTAMA_GAME",
+        "topic": "Easter egg terkenal pertama di game: nama tersembunyi Warren Robinett di Adventure (Atari 2600)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP06",
+        "currentStage": "context",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": false,
+            "status": "pending"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T18:01:40.817Z",
+      "doing": "VO Cartesia dari audio/work/spoken.txt (script-lines.json 178 kata)",
+      "command": "audira_generate_voiceover scriptPath=audio/work/spoken.txt out audio/work/vo-raw.wav words audio/work/vo-raw-words.json",
+      "files": [
+        "docs/script-lines.json"
+      ],
+      "next": "vo_tighten.py -> make timeline -> scene code ep06",
+      "snapshot": {
+        "episode": "EP06_EASTER_EGG_PERTAMA_GAME",
+        "topic": "Easter egg terkenal pertama di game: nama tersembunyi Warren Robinett di Adventure (Atari 2600)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP06",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T18:04:06.393Z",
+      "doing": "Sesi ke-2 berhenti di batas konteks setelah VO dikunci. Docs (STYLE_DECISION, ART_DIRECTION, SCRIPT, STORYBOARD, ASSET_MANIFEST) dan kode adegan ep06 belum ditulis.",
+      "files": [
+        "docs/HANDOFF.md",
+        "docs/script-lines.json",
+        "audio/vo.wav",
+        "project/src/scenes/ep06/timeline.json"
+      ],
+      "next": "Baca docs/HANDOFF.md bagian 'UPDATE sesi ke-2': tulis docs, kode project/src/scenes/ep06 (gold fakta-olahraga ep01), Root.tsx Ep06, cover, SFX, draf+juri, final, QA, captions.",
+      "snapshot": {
+        "episode": "EP06_EASTER_EGG_PERTAMA_GAME",
+        "topic": "Easter egg terkenal pertama di game: nama tersembunyi Warren Robinett di Adventure (Atari 2600)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP06",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP06_EASTER_EGG_PERTAMA_GAME/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T22:30:11.828Z",
+      "doing": "Kode scene ep06: timing/sets/sprites/hud selesai; Film.tsx, Cover.tsx, index.ts, Root.tsx belum",
+      "files": [
+        "project/src/scenes/ep06/timing.ts",
+        "project/src/scenes/ep06/sets.ts",
+        "project/src/scenes/ep06/sprites.ts",
+        "project/src/scenes/ep06/hud.tsx",
+        "docs/HANDOFF.md",
+        "style/STYLE_DECISION.md",
+        "docs/SHOTLIST.md"
+      ],
+      "next": "Baca docs/HANDOFF.md bagian \"UPDATE sesi ke-3\", tulis Film.tsx sesuai rencana di sana, lalu Root, typecheck, stills, cover, SFX, draft, final, captions",
+      "snapshot": {
+        "episode": "EP06_EASTER_EGG_PERTAMA_GAME",
+        "topic": "Easter egg terkenal pertama di game: nama tersembunyi Warren Robinett di Adventure (Atari 2600)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP06",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP06_EASTER_EGG_PERTAMA_GAME/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T22:36:46.022Z",
+      "doing": "Film.tsx/Cover.tsx/index.ts/Root.tsx written, tsc clean, channel @AudiraTECH via SERIES.json. No renders yet.",
+      "files": [
+        "project/src/scenes/ep06/Film.tsx",
+        "project/src/scenes/ep06/Cover.tsx",
+        "project/src/Root.tsx",
+        "SERIES.json",
+        "docs/HANDOFF.md"
+      ],
+      "next": "npm run stills (see docs/HANDOFF.md UPDATE sesi ke-4), polish, cover-topic.png, SFX, draft jury, final, delivery",
+      "snapshot": {
+        "episode": "EP06_EASTER_EGG_PERTAMA_GAME",
+        "topic": "Easter egg terkenal pertama di game: nama tersembunyi Warren Robinett di Adventure (Atari 2600)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP06",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP06_EASTER_EGG_PERTAMA_GAME/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T22:44:06.557Z",
+      "doing": "Sesi ke-5: Film.tsx/hud.tsx dipoles (cahaya ruang, peta zoom, sub chip font display); cover-topic.png, sfx.wav (+audio/sfx), SUBTITLES.srt, draft/THEME_CHECK.md, camera.json (motion 5) selesai. Juri draf r1 3.33; r2 berjalan.",
+      "files": [
+        "project/src/scenes/ep06/Film.tsx",
+        "project/src/scenes/ep06/hud.tsx",
+        "draft/contact-sheet.jpg",
+        "style/cover-topic.png",
+        "project/public/audio/ep06/sfx.wav",
+        "SUBTITLES.srt"
+      ],
+      "next": "Bila juri r2 LOLOS: record_score draft jury (ceilings draft/look.json, camera draft/camera.json), lalu render:final (perintah HANDOFF sesi ke-3 langkah 7), QA, metadata, delivery.",
+      "snapshot": {
+        "episode": "EP06_EASTER_EGG_PERTAMA_GAME",
+        "topic": "Easter egg terkenal pertama di game: nama tersembunyi Warren Robinett di Adventure (Atari 2600)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP06",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP06_EASTER_EGG_PERTAMA_GAME/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T22:44:42.856Z",
+      "doing": "Draf PIXELSTORY gagal 2 putaran juri (3.33, 3.00). Menunggu keputusan pengguna: style baru (G16/G21) atau izin putaran poles ke-3.",
+      "files": [
+        "docs/HANDOFF.md",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/camera.json"
+      ],
+      "next": "Lihat docs/HANDOFF.md \"UPDATE sesi ke-5\": opsi (a) style baru → ulang tahap 4; (b) poles ke-3 dengan daftar perbaikan r2. Lalu final + delivery.",
+      "snapshot": {
+        "episode": "EP06_EASTER_EGG_PERTAMA_GAME",
+        "topic": "Easter egg terkenal pertama di game: nama tersembunyi Warren Robinett di Adventure (Atari 2600)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP06",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP06_EASTER_EGG_PERTAMA_GAME/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T23:59:27.023Z",
+      "doing": "Menunggu pilihan style baru: PIXELSTORY gagal 3 putaran juri (3.33/3.00/3.33)",
+      "files": [
+        "project/src/scenes/ep06/Film.tsx",
+        "project/src/scenes/ep06/hud.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "docs/HANDOFF.md"
+      ],
+      "next": "Pengguna pilih ARCADECRT / VOXELVERSE / FILM16 → STYLE_DECISION + cover topik → ulang tahap 4 (G21) → draf → juri → final. Lihat docs/HANDOFF.md \"UPDATE sesi ke-6\".",
+      "snapshot": {
+        "episode": "EP06_EASTER_EGG_PERTAMA_GAME",
+        "topic": "Easter egg terkenal pertama di game: nama tersembunyi Warren Robinett di Adventure (Atari 2600)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP06",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP06_EASTER_EGG_PERTAMA_GAME/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:00:31.323Z",
+      "doing": "Pengguna MEMILIH ARCADECRT (2026-11-23) menggantikan PIXELSTORY (gagal juri 3 putaran). Restyle belum dimulai.",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/HANDOFF.md",
+        "project/src/scenes/ep06/"
+      ],
+      "next": "Tulis ulang style/STYLE_DECISION.md (ARCADECRT, approved yes, alasan, PIXELSTORY ditolak karena juri 3.33/3.00/3.33) + cover-reference arcadecrt.png; render cover topik ARCADECRT; ulang tahap 4 docs (Style: ARCADECRT); bangun ulang scene dengan kit ARCADECRT memakai VO/timeline/SFX/SUBTITLES yang ada; draf contact sheet + THEME_CHECK + juri (maks 2 putaran); final + QA + metadata + FINAL_VIDEO.mp4; delivery. Lihat docs/HANDOFF.md sesi ke-6.",
+      "snapshot": {
+        "episode": "EP06_EASTER_EGG_PERTAMA_GAME",
+        "topic": "Easter egg terkenal pertama di game: nama tersembunyi Warren Robinett di Adventure (Atari 2600)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP06",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP06_EASTER_EGG_PERTAMA_GAME/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:02:45.030Z",
+      "doing": "Restyle ARCADECRT: STYLE_DECISION + cover, lalu scene 3D baru project/src/scenes/ep06/FilmCrt.tsx + Arcade.tsx (HUD lama dipakai ulang)",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "project/src/scenes/ep06/FilmCrt.tsx",
+        "project/src/scenes/ep06/Arcade.tsx"
+      ],
+      "next": "Cover topik (npm run cover Ep06Cover --force), docs Style: ARCADECRT, stills draf, juri",
+      "snapshot": {
+        "episode": "EP06_EASTER_EGG_PERTAMA_GAME",
+        "topic": "Easter egg terkenal pertama di game: nama tersembunyi Warren Robinett di Adventure (Atari 2600)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP06",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP06_EASTER_EGG_PERTAMA_GAME/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:06:53.794Z",
+      "doing": "Restyle ARCADECRT: komponen crt/ (Room, Cab, rasters, voxels) selesai; FilmCrt.tsx belum ditulis",
+      "files": [
+        "project/src/scenes/ep06/crt/Room.tsx",
+        "project/src/scenes/ep06/crt/Cab.tsx",
+        "project/src/scenes/ep06/crt/rasters.ts",
+        "project/src/scenes/ep06/crt/voxels.tsx",
+        "docs/HANDOFF.md"
+      ],
+      "next": "Tulis FilmCrt.tsx sesuai rencana docs/HANDOFF.md 'UPDATE sesi ke-7', typecheck, cover topik, docs Style: ARCADECRT, draf+juri, final, delivery",
+      "snapshot": {
+        "episode": "EP06_EASTER_EGG_PERTAMA_GAME",
+        "topic": "Easter egg terkenal pertama di game: nama tersembunyi Warren Robinett di Adventure (Atari 2600)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP06",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP06_EASTER_EGG_PERTAMA_GAME/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:08:46.208Z",
+      "doing": "Restyle ARCADECRT: kode FilmCrt.tsx + crt/ selesai dan lolos typecheck; belum ada render",
+      "command": "npm run stills -- out/ep06/crt1 2s,12s,22s,28s,33s,40s,48s,55s,62s,68s,74s Ep06Preview",
+      "files": [
+        "project/src/scenes/ep06/FilmCrt.tsx",
+        "project/src/scenes/ep06/crt/",
+        "project/src/scenes/ep06/Cover.tsx",
+        "project/src/scenes/ep06/index.ts",
+        "docs/HANDOFF.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Still uji Ep06Preview, poles, cover topik --force, docs Style: ARCADECRT, sfx, draf+juri (maks 2), final, delivery. Lihat docs/HANDOFF.md 'UPDATE sesi ke-7'.",
+      "snapshot": {
+        "episode": "EP06_EASTER_EGG_PERTAMA_GAME",
+        "topic": "Easter egg terkenal pertama di game: nama tersembunyi Warren Robinett di Adventure (Atari 2600)",
+        "style": "ARCADECRT",
+        "memoryEpisode": "short-baru-11-23-EP06",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP06_EASTER_EGG_PERTAMA_GAME/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:31:47.735Z",
+      "doing": "sesi ke-8: still uji ARCADECRT (out/ep06/crt1)",
+      "command": "npm run stills -- out/ep06/crt1 2s,12s,22s,28s,33s,40s,48s,55s,62s,68s,74s Ep06Preview",
+      "next": "poles, cover topik, docs Style ARCADECRT, draf+juri, final, delivery",
+      "snapshot": {
+        "episode": "EP06_EASTER_EGG_PERTAMA_GAME",
+        "topic": "Easter egg terkenal pertama di game: nama tersembunyi Warren Robinett di Adventure (Atari 2600)",
+        "style": "ARCADECRT",
+        "memoryEpisode": "short-baru-11-23-EP06",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP06_EASTER_EGG_PERTAMA_GAME/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:39:07.598Z",
+      "doing": "render final ARCADECRT Ep06Final 1080x1920@60 (juri draf r1 3.83 LOLOS)",
+      "command": "npm run render:final -- --comp=Ep06Final --out=out/ep06/FINAL_EP06.mp4 --vo=public/audio/ep06/vo.wav --sfx=public/audio/ep06/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Easter Egg Pertama yang Terkenal di Game\" --slug=easter-egg-pertama-game --ep=EP06",
+      "files": [
+        "project/out/ep06/FINAL_EP06.mp4",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "docs/*.md"
+      ],
+      "next": "QA LUFS/TP, qa_video, metadata, FINAL_VIDEO.mp4, record_score final, delivery",
+      "snapshot": {
+        "episode": "EP06_EASTER_EGG_PERTAMA_GAME",
+        "topic": "Easter egg terkenal pertama di game: nama tersembunyi Warren Robinett di Adventure (Atari 2600)",
+        "style": "ARCADECRT",
+        "memoryEpisode": "short-baru-11-23-EP06",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP06_EASTER_EGG_PERTAMA_GAME/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:46:54.410Z",
+      "doing": "sesi ke-8: render ulang final setelah fix pelangi halus (rasters.ts rainbow 1.2 step/s; qa_video lama FAIL LONCAT 46.8–51.2 karena dinding D2 strobo 6 Hz). Juri draf r1 3.83 LOLOS (tercatat). SOCIAL_CAPTIONS.md valid (Senin 30 Nov 19.00). Docs G21 ARCADECRT selesai. FINAL_VIDEO.mp4 versi lama sudah ada (akan ditimpa).",
+      "command": "cd project; npm run render:final -- --comp=Ep06Final --out=out/ep06/FINAL_EP06.mp4 --vo=public/audio/ep06/vo.wav --sfx=public/audio/ep06/sfx.wav --jobs=3 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Easter Egg Pertama yang Terkenal di Game\" --slug=easter-egg-pertama-game --ep=EP06",
+      "files": [
+        "project/src/scenes/ep06/crt/rasters.ts",
+        "FINAL_VIDEO.mp4",
+        "SOCIAL_CAPTIONS.md"
+      ],
+      "next": "cp out/ep06/FINAL_EP06.mp4(+.sig.json,.look.json) → FINAL_VIDEO.*; qa_video hardOnly cuts 6.83,12.62,19.42,35.74,46.61,51.32,58.88,66.8,71.19,77.48 allow 0.05,45.46,62.16; ebur128 LUFS/TP; record_score final; NOTES.md; lessons ARCADECRT+GLOBAL; 3 scheduled task review-easter-egg-pertama-game-24h/-72h/-7d (upload Senin 30 Nov 2026 19.00 WIB); hapus out/ep06/draft*, crt1, look*, clip; status delivery done + review.",
+      "snapshot": {
+        "episode": "EP06_EASTER_EGG_PERTAMA_GAME",
+        "topic": "Easter egg terkenal pertama di game: nama tersembunyi Warren Robinett di Adventure (Atari 2600)",
+        "style": "ARCADECRT",
+        "memoryEpisode": "short-baru-11-23-EP06",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP06_EASTER_EGG_PERTAMA_GAME/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:46:54.410Z",
+      "doing": "sesi ke-8: render ulang final setelah fix pelangi halus (rasters.ts rainbow 1.2 step/s; qa_video lama FAIL LONCAT 46.8–51.2 karena dinding D2 strobo 6 Hz). Juri draf r1 3.83 LOLOS (tercatat). SOCIAL_CAPTIONS.md valid (Senin 30 Nov 19.00). Docs G21 ARCADECRT selesai. FINAL_VIDEO.mp4 versi lama sudah ada (akan ditimpa).",
+      "command": "cd project; npm run render:final -- --comp=Ep06Final --out=out/ep06/FINAL_EP06.mp4 --vo=public/audio/ep06/vo.wav --sfx=public/audio/ep06/sfx.wav --jobs=3 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Easter Egg Pertama yang Terkenal di Game\" --slug=easter-egg-pertama-game --ep=EP06",
+      "files": [
+        "project/src/scenes/ep06/crt/rasters.ts",
+        "FINAL_VIDEO.mp4",
+        "SOCIAL_CAPTIONS.md"
+      ],
+      "next": "cp out/ep06/FINAL_EP06.mp4(+.sig.json,.look.json) → FINAL_VIDEO.*; qa_video hardOnly cuts 6.83,12.62,19.42,35.74,46.61,51.32,58.88,66.8,71.19,77.48 allow 0.05,45.46,62.16; ebur128 LUFS/TP; record_score final; NOTES.md; lessons ARCADECRT+GLOBAL; 3 scheduled task review-easter-egg-pertama-game-24h/-72h/-7d (upload Senin 30 Nov 2026 19.00 WIB); hapus out/ep06/draft*, crt1, look*, clip; status delivery done + review.",
+      "snapshot": {
+        "episode": "EP06_EASTER_EGG_PERTAMA_GAME",
+        "topic": "Easter egg terkenal pertama di game: nama tersembunyi Warren Robinett di Adventure (Atari 2600)",
+        "style": "ARCADECRT",
+        "memoryEpisode": "short-baru-11-23-EP06",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP06_EASTER_EGG_PERTAMA_GAME/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T09:54:17.980Z"
+    }
+  ],
+  "syncedAt": "2026-11-23T09:50:07.809Z"
+}

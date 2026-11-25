@@ -1,0 +1,146 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#0A0708}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.05;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.42) 42%,rgba(0,0,0,0.42) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Cinzel,Georgia,serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#F6E9C8;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.g{font-family:'EB Garamond',Georgia,serif;font-weight:700;text-decoration:none;font-style:inherit}
+.cd{position:relative;background:linear-gradient(170deg,rgba(28,22,26,.94),rgba(12,10,14,.94));border:3px solid #15161A;outline:2px solid #E9BE45;outline-offset:-8px;border-radius:6px;box-shadow:0 18px 40px rgba(0,0,0,.6)}
+.kk{display:inline-block;font-family:Cinzel,Georgia,serif;font-weight:700;font-size:29px;line-height:1.1;letter-spacing:.12em;color:#1a1208;background:linear-gradient(180deg,#F6D46A,#D9A42A);padding:10px 22px 8px;border:3px solid #15161A;margin-bottom:22px;box-shadow:0 8px 20px rgba(0,0,0,.55)}
+.h1{display:inline-block;padding:22px 36px 18px;font-family:Cinzel,Georgia,serif;font-weight:700;font-size:96px;line-height:1.02;color:#F6E9C8;text-shadow:0 0 22px rgba(240,190,80,.35)}
+.h2{display:inline-block;padding:20px 32px 16px;font-family:Cinzel,Georgia,serif;font-weight:700;font-size:60px;line-height:1.1;color:#F6E9C8}
+.yr{display:flex;align-items:center;gap:22px;width:max-content;margin-top:20px;padding:4px 34px 6px}
+.yr small{font-family:Cinzel,Georgia,serif;font-weight:700;font-size:34px;line-height:1.1;color:#F6E9C8;width:150px}
+.yr b{font-family:'EB Garamond',Georgia,serif;font-weight:700;font-size:150px;line-height:1.05;color:#FFD86A;text-shadow:0 0 30px rgba(255,200,80,.85),0 0 70px rgba(255,170,40,.5)}
+.chips{display:flex;flex-wrap:wrap;gap:14px;margin-top:20px;align-items:center;max-width:900px}
+.ch{font-style:normal;font-family:Cinzel,Georgia,serif;font-weight:700;font-size:40px;line-height:1.1;letter-spacing:.05em;padding:10px 22px 8px;color:#1a1208;background:linear-gradient(180deg,#F6D46A,#D9A42A);border:3px solid #15161A;box-shadow:0 10px 24px rgba(0,0,0,.55)}
+.ch.rd{color:#F6E9C8;background:linear-gradient(180deg,#D8303D,#9A1022)}
+.row{margin-top:18px;padding:14px 30px 16px;border-left:16px solid #E9BE45;max-width:880px;box-sizing:border-box}
+.row b{display:block;font-family:Cinzel,Georgia,serif;font-weight:700;font-size:48px;line-height:1.1;color:#F6E9C8}
+.row span{display:block;margin-top:4px;font-family:'EB Garamond',Georgia,serif;font-style:italic;font-weight:600;font-size:40px;line-height:1.2;color:#E9D8AE}
+.row.rd{border-left-color:#C0182E}.row.gr{border-left-color:#0F8E3C}.row.gd{border-left-color:#F2C232}
+.mega{display:flex;align-items:baseline;gap:22px;width:max-content;padding:2px 34px 8px;margin-top:18px}
+.mega b{font-family:'EB Garamond',Georgia,serif;font-weight:700;font-size:140px;line-height:1.05;color:#FFD86A;text-shadow:0 0 26px rgba(255,200,80,.6)}
+.mega small{font-family:Cinzel,Georgia,serif;font-weight:700;font-size:46px;color:#F6E9C8}
+.x{display:inline-block;margin-top:16px;padding:10px 28px 8px;font-family:Cinzel,Georgia,serif;font-weight:700;font-size:46px;color:#9a9088;text-decoration:line-through;text-decoration-color:#C0182E;text-decoration-thickness:7px}
+.note{display:inline-block;margin-top:16px;max-width:860px;font-family:'EB Garamond',Georgia,serif;font-style:italic;font-weight:700;font-size:36px;line-height:1.2;color:#F6E9C8;background:rgba(12,10,14,.86);border:2px solid #E9BE45;padding:8px 20px}
+.q{margin-top:24px;padding:18px 30px;font-family:'EB Garamond',Georgia,serif;font-weight:700;font-size:46px;line-height:1.18;color:#F6E9C8;max-width:860px;box-sizing:border-box;border-left:16px solid #2A5CC8}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="87.64" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI &middot; KACA PATRI ORISINAL</div>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,600;1,700&display=block">
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="kk">FAKTA SEJARAH NEGARA &middot; EP <u class="g">29</u></div>
+  <div class="cd h1"><u class="g">13</u> BULAN<br>SETAHUN</div>
+  <div class="cd yr" data-at="s1:2019" data-fx="card" data-d="flex"><small>TAHUN DI SANA</small><b><u class="g">2019</u></b></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="kk">ETIOPIA</div>
+  <div class="cd row " data-at="s2:Kalender" data-fx="card"><b>KALENDER ETIOPIA</b><span>kalender resmi negara</span></div>
+  <div class="chips"><i class="ch rd" data-at="s2:bukan" data-fx="stampc">BUKAN MASEHI</i></div>
+  <div class="cd row gr" data-at="s2:gereja" data-fx="card"><b>GEREJA ORTODOKS</b><span>juga memakainya</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s3:Setiap">
+  <div class="kk">SATU TAHUN</div>
+  <div class="cd mega" data-at="s3:dua" data-fx="card"><b><u class="g">12</u></b><small>BULAN &times; <u class="g">30</u> HARI</small></div>
+  <div class="cd row gd" data-at="s3:Pagumen" data-fx="card"><b>+ PAGUMEN</b><span>bulan ke-<u class="g">13,</u> hanya <u class="g">5</u> hari</span></div>
+</div>
+<div class="p" data-in="s3:Setiap" data-out="s3:Keempat">
+  <div class="kk">SETIAP <u class="g">4</u> TAHUN</div>
+  <div class="cd row rd" data-at="s3:enam" data-fx="card"><b>PAGUMEN <u class="g">6</u> HARI</b><span>satu hari tambahan, tanpa kecuali</span></div>
+</div>
+<div class="p" data-in="s3:Keempat" data-out="s4">
+  <div class="kk">NAMA <u class="g">4</u> TAHUN DALAM SIKLUS</div>
+  <div class="chips"><i class="ch " data-at="s3:Yohanes" data-fx="stampc">YOHANES</i><i class="ch " data-at="s3:Matius" data-fx="stampc">MATIUS</i><i class="ch " data-at="s3:Markus" data-fx="stampc">MARKUS</i><i class="ch rd" data-at="s3:Lukas" data-fx="stampc">LUKAS</i></div>
+  <div class="cd row rd" data-at="s3:kabisatnya" data-fx="card"><b>TAHUN LUKAS = TAHUN KABISAT</b></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="kk">TAHUN BARU</div>
+  <div class="cd x" data-at="s4:Januari" data-fx="card"><u class="g">1</u> JANUARI</div>
+  <div class="cd mega" data-at="s4:sebelas" data-fx="card"><b><u class="g">11</u></b><small>SEPTEMBER</small></div>
+  <div class="cd row gd" data-at="s4:Enkutatash" data-fx="card"><b>ENKUTATASH</b><span>artinya &ldquo;hadiah permata&rdquo;</span></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="kk">ASAL SELISIH</div>
+  <div class="cd h2">Kenapa tahunnya<br>tertinggal?</div>
+  <div class="chips"><i class="ch rd" data-at="s5:delapan" data-fx="stampc"><u class="g">8</u> TAHUN LEBIH AWAL</i></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="kk">TERTINGGAL DARI MASEHI</div>
+  <div class="cd row rd" data-at="s6:delapan" data-fx="card"><b>JANUARI &ndash; SEPTEMBER</b><span>tertinggal <u class="g">8</u> tahun</span></div>
+  <div class="cd row gr" data-at="s6:tujuh" data-fx="card"><b>SETELAH <u class="g">11</u> SEPTEMBER</b><span>tertinggal <u class="g">7</u> tahun</span></div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="kk">MILENIUM ETIOPIA</div>
+  <div class="cd x" data-at="s7:2000" data-fx="card">TAHUN <u class="g">2000</u></div>
+  <div class="cd mega" data-at="s7:2007" data-fx="card"><b><u class="g">2007</u></b><small><u class="g">11</u> SEPTEMBER</small></div>
+  <div class="cd row gr" data-at="s7:Addis" data-fx="card"><b>ADDIS ABABA</b><span>bendera hijau, kuning, merah</span></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="cd h2">Satu planet,<br>banyak cara<br>menghitung waktu</div>
+  <div class="cd q" data-at="s8:Menurut" data-fx="card">Kalau setahun ada <u class="g">13</u> bulan, bulan tambahannya mau dipakai untuk apa? Tulis di komentar!</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 29</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":6.074,"s2":6.234,"s2e":14.259,"s3":14.419,"s3e":33.54,"s4":33.7,"s4e":40.12,"s5":40.28,"s5e":53.011,"s6":53.171,"s6e":61.921,"s7":62.081,"s7e":73.362,"s8":73.522,"s8e":84.64,"end":84.64,"dur":87.64,"outro":84.89},AT={"s1:satu#2":1.138,"s1:bulan":2.222,"s1:tiga":1.819,"s2:Etiopia":6.505,"s2:Etiopia#2":11.1,"s2:Ortodoks":13.438,"s3:dua":16.24,"s3:hari":19.027,"s3:puluh":18.795,"s3:Sisanya":19.336,"s3:lima":19.785,"s3:ketiga":21.256,"s3:Pagumen":22.309,"s3:Pagumen#2":24.242,"s3:enam":24.985,"s3:Keempat":25.806,"s3:Yohanes":29.086,"s3:Matius":29.69,"s3:Markus":30.293,"s3:Lukas":31.284,"s3:kabisatnya":33.123,"s4:sebelas":36.07,"s4:Enkutatash":37.968,"s4:hadiah":39.253,"s4:permata":39.562,"s5:Sekitar":42.284,"s5:Aleksandria":44.746,"s5:Annianus":45.612,"s5:Eropa":48.27,"s5:Dionysius":50.732,"s5:delapan":52.129,"s6:Januari":54.009,"s6:September":54.674,"s6:September#2":59.552,"s6:Setelah":57.756,"s6:delapan":56.761,"s6:tujuh":61.163,"s7:milenium":63.819,"s7:2000":65.181,"s7:tapi":65.661,"s7:2007":66.977,"s7:bendera":68.996,"s7:hijau":69.368,"s7:kuning":70.173,"s7:merah":70.978,"s7:Addis":72.51,"s8:planet":73.844,"s8:Menurut":76.637,"s8:AUDIRA":82.627,"s1:2019":5.13,"s2:Kalender":7.256,"s2:bukan":8.122,"s2:gereja":13.051,"s3:Setiap":23.375,"s4:Januari":35.11},DUR=87.64,OUT=84.89;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ card:(e,t)=>{const d=e.dataset.d||(e.matches('.mega')?'flex':'block');gsap.set(e,{display:'none'});tl.set(e,{display:d},t);tl.fromTo(e,{opacity:0,y:30,filter:'brightness(2.2)'},{opacity:1,y:0,filter:'brightness(1)',duration:.45,ease:'power3.out',immediateRender:false},t);},
+ stampc:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:'inline-block'},t);tl.fromTo(e,{scale:1.6,opacity:0},{scale:1,opacity:1,duration:.22,ease:'power4.in',immediateRender:false},t);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{opacity:0,y:36},{opacity:1,y:0,duration:.42,ease:'power3.out'},a-.08),POUT=(tl,p,b)=>tl.to(p,{opacity:0,y:-24,duration:.24,ease:'power2.in'},b-.24);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP29_KALENDER_ETIOPIA")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

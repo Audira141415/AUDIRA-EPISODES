@@ -1,0 +1,157 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "CARA-KERJA-VIRAL-EP29",
+  "topic": "Drone termal SAR: cara kamera panas mencari orang hilang di Semeru",
+  "createdAt": "2026-11-09T22:10:21.425961+00:00",
+  "updatedAt": "2026-11-11T02:02:12.382Z",
+  "currentStage": "complete",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-09T22:10:21.425961+00:00",
+          "text": "Memori seri, motion brain, GLOBAL dan style memory dibaca."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-09T22:10:21.425961+00:00",
+          "text": "_research/EP29_drone_termal_sar.md"
+        }
+      ]
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-09T22:10:21.425961+00:00",
+          "text": "Style THERMALFORGE dipilih pengguna; cover topik menunggu persetujuan."
+        },
+        {
+          "at": "2026-11-10T08:50:44.991188+00:00",
+          "text": "Disetujui pengguna: \"Setuju semua\" (cover topik + naskah)."
+        }
+      ],
+      "approved": true
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T08:50:44.991188+00:00",
+          "text": "Disetujui pengguna: \"Setuju semua\" (cover topik + naskah)."
+        }
+      ],
+      "approved": true
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": []
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T12:12:00.707484+00:00",
+          "text": "VO Cartesia dikunci, timeline dibangun ulang, mix + SRT."
+        }
+      ]
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": []
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T12:12:00.707484+00:00",
+          "text": "Contact sheet draf bersuara dipoles; record_score draft LOLOS 4,0. Menunggu acc pengguna."
+        },
+        {
+          "at": "2026-11-10T12:13:32.237428+00:00",
+          "text": "Disetujui pengguna: \"Setuju semua\" (draf)."
+        }
+      ],
+      "approved": true
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T12:36:36.753451+00:00",
+          "text": "Final 60 fps, QC lolos, metadata ffprobe ok, skor final 4,0."
+        }
+      ]
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T12:36:36.753451+00:00",
+          "text": "SOCIAL_CAPTIONS.md lolos validator; NOTES.md ditulis. Menunggu acc final untuk bersih-bersih."
+        },
+        {
+          "at": "2026-11-10T12:38:37.108713+00:00",
+          "text": "Final disetujui pengguna: \"Setuju, bersihkan\". raw.mp4, snapshot, render.log, klip VO dihapus."
+        }
+      ]
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T02:02:12.382Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-10T12:36:36.758Z",
+      "startedAt": "2026-11-10T12:36:36.758Z"
+    }
+  ],
+  "data": {
+    "style": "THERMALFORGE",
+    "research": "_research/EP29_drone_termal_sar.md",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-11T02:02:12.382Z"
+}

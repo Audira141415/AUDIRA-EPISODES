@@ -1,0 +1,656 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP46_IBLIS_MENOLAK_SUJUD",
+  "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+  "createdAt": "2026-11-24T14:50:50.800Z",
+  "updatedAt": "2026-11-24T17:41:26.220Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:53:49.826Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-24T14:50:50.800Z",
+      "startedAt": "2026-11-24T14:50:50.800Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:52:44.903Z",
+          "text": "SOURCE_REGISTER: QS 2:30-37, 7:11-18, 18:50, 38:71-85 + Ibnu Katsir. 8 fakta."
+        }
+      ],
+      "doneAt": "2026-11-24T14:52:44.903Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:56:43.191Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        },
+        {
+          "at": "2026-11-24T14:58:14.291Z",
+          "text": "PAPERWORLD 2D SVG (pola gold EP18 Svalbard). cover-topic.png dirender di awal Sesi B setelah scaffold."
+        }
+      ],
+      "doneAt": "2026-11-24T14:58:14.291Z",
+      "startedAt": "2026-11-24T14:56:13.280Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:58:03.288Z",
+          "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-24T14:58:14.437Z",
+          "text": "ART_DIRECTION, SCRIPT (199 kata, audio/vo.txt), STORYBOARD 9 scene, ASSET_MANIFEST."
+        }
+      ],
+      "doneAt": "2026-11-24T14:58:14.437Z",
+      "startedAt": "2026-11-24T14:57:49.537Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:06:06.781Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T22:20:20.289Z",
+      "startedAt": "2026-11-22T22:20:20.289Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:08:38.087Z",
+          "text": "Cartesia voice 04b567df, lang id, 80.76 s, 199 kata; npm run vo → public/audio/vo.timing.json; offset 0."
+        }
+      ],
+      "doneAt": "2026-11-24T15:08:38.087Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:06:06.781Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-24T15:20:57.037Z",
+          "text": "s3: cover-topic.png dirender (judul digeser ke y1340). Poles: caption chunk ≤24 char, timbangan S5 scale 0.86, chip arah S7 bingkai tinta + padding (readability 5), banner S1 di (470,1105). docs/SHOTLIST.md lint tanpa RED; sfx/cues/ep46.py (auto.py + pop per 23 callout) → public/audio/sfx.wav −26 LUFS, payoff 69.24. G18c gap 13.1 LU. scripts/draft.mjs disalin dari starter (bug await)."
+        }
+      ],
+      "doneAt": "2026-11-24T15:20:57.037Z",
+      "startedAt": "2026-11-22T22:20:20.989Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:19:27.449Z",
+          "text": "sync: look.json PASS"
+        },
+        {
+          "at": "2026-11-24T15:21:22.686Z",
+          "text": "Draf r1: self 4.17, juri buta 3.83 LOLOS (lighting 4, material 3, depth 4, composition 3, motion 5, readability 4). Ceilings semua 5, camera 5. THEME_CHECK 8/8 ya. G18c gap 13.1 LU. Sheet draft/DRAFT_SHEET.jpg."
+        }
+      ],
+      "doneAt": "2026-11-24T15:21:22.686Z",
+      "startedAt": "2026-11-24T15:17:26.975Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T15:56:58.924Z",
+      "notes": [
+        {
+          "at": "2026-11-24T15:56:58.924Z",
+          "text": "Acc pengguna 2026-11-24: \"Gas render\" (draf juri 3.83, 83.8 s, G18c 13.1 LU)"
+        },
+        {
+          "at": "2026-11-24T17:40:38.207Z",
+          "text": "FINAL_EP46_IBLIS_MENOLAK_SUJUD.mp4 (salinan project/out/Ep46Final.mp4), 83.8 s, -13.7 LUFS TP -1.8, metadata OK, qa-video hardOnly PASS (draft/qa-final). Skor final self 3.83."
+        }
+      ],
+      "startedAt": "2026-11-24T15:56:58.924Z",
+      "doneAt": "2026-11-24T17:40:38.207Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T16:34:45.450Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T16:18:09.795Z",
+      "startedAt": "2026-11-24T16:18:09.795Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "kisah-islam-EP46",
+    "shortTitle": "Iblis Sujud",
+    "style": "PAPERWORLD",
+    "engine": "remotion",
+    "engineMode": "2d-svg",
+    "alternatives": [
+      "CHRONICLE",
+      "MOSAICFORGE"
+    ],
+    "wordCount": 199,
+    "estimatedDuration": {
+      "wordCount": 199,
+      "minSec": 80,
+      "maxSec": 88
+    },
+    "voSeconds": 80.76,
+    "filmSeconds": 83.8
+  },
+  "syncedAt": "2026-11-24T16:34:45.450Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-24T14:58:25.755Z",
+      "doing": "Sesi A selesai (tahap 0–4): preflight bersih (no blockers); style PAPERWORLD, engine Remotion 2D murni (SVG/DOM kertas berlapis, tanpa R3F) mengikuti pola gold PAPERWORLD EP18 Svalbard (F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP18_SVALBARD_DILARANG_MATI/project, juri final 4.17). Alternatif ditolak: CHRONICLE, MOSAICFORGE. Naskah 199 kata (≈80–88 dtk), teks VO persis di audio/vo.txt (brand diucapkan \"Audira\", channel \"Kissah\"). Storyboard 9 scene: S1 hook api tegak vs barisan cahaya → S2 khalifah/bumi kertas → S3 tanah liat + kartu nama-nama → S4 sujud kecuali satu → S5 timbangan api vs tanah + kutipan QS 7:12 + stempel QIYAS PERTAMA → S6 jam pasir penangguhan → S7 jalan manusia + bayangan 4 arah → S8 tobat Adam fajar (riser+impact) → S9 outro lampu kertas + pita AUDIRA QISSAH. Adab: tanpa wajah/sosok Adam (tanah liat + cahaya), malaikat = pilar cahaya kalkir tanpa wajah, Iblis = api kertas + bayangan, bukan monster. cover-topic.png BELUM dirender (render dari komposisi frame hook S1 setelah scaffold).",
+      "files": [
+        "STATUS.json",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/ART_DIRECTION.md",
+        "docs/SCRIPT.md",
+        "audio/vo.txt",
+        "research/SOURCE_REGISTER.md"
+      ],
+      "next": "Sesi B (tahap 5–8): scaffold project/ (salin pola proyek gold EP18 PAPERWORLD 2D atau audira_init_motion_project, folder src/ep46/), render cover-topic.png dari S1, VO Cartesia dari audio/vo.txt (audira_generate_voiceover, voice 04b567df…, lang id) lalu npm run vo, SHOTLIST + scene SVG multi-scene 9 adegan + HUD callout ayat + AudiraSignature seed kisah-islam-EP46 handle @AUDIRAQISSAH, npm run sfx, contact sheet 6–8 frame + draft/THEME_CHECK.md (G22) + audit:visual + juri buta (record_score self lalu jury). Lolos ≥3.8 atau 2 putaran ≥3.5 → handover Sesi C. Render berat: 4 sesi lain (EP42–45) render di PC sama, pakai audira_render_batch, --concurrency=1 bila VRAM penuh.",
+      "snapshot": {
+        "episode": "EP46_IBLIS_MENOLAK_SUJUD",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP46",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:00:12.313Z",
+      "doing": "Sesi B tahap 5–6: project/ disalin dari pola gold EP18 (tanpa src/ep18), VO Cartesia sedang dibuat ke project/public/audio/vo.wav",
+      "files": [
+        "project/public/audio/vo.wav",
+        "project/src/ep46/"
+      ],
+      "next": "npm run vo, tulis src/ep46 (timing/pieces/scenes/Film), Root.tsx, check-env + smoke, cover-topic",
+      "snapshot": {
+        "episode": "EP46_IBLIS_MENOLAK_SUJUD",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP46",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:04:30.561Z",
+      "doing": "Sesi B tahap 5–7: project/ disalin dari pola gold EP18 (node_modules junction ke F:/AUDIRA-SKILL-MOTION). VO Cartesia SELESAI & DIKUNCI: public/audio/vo.wav 80.76 s, vo-words.json 199 kata, vo.timing.json (npm run vo). src/ep46/timing.ts (9 scene: S1 0–8.85, S2 –20.45, S3 –27.0, S4 –37.5, S5 –49.25, S6 –53.2, S7 –60.8, S8 –75.2, S9 –83.8; film 83.8 s, outro 2.9 s; 23 callout) dan src/ep46/pieces.tsx (Flame, Pillar, ClayMound, IconCard, Balance, Hourglass, Person, CreepShadow, LightRibbon, HeartLantern, Banner, Tree, Haze, FG dof, Cloud) SELESAI.",
+      "files": [
+        "project/src/ep46/timing.ts",
+        "project/src/ep46/pieces.tsx",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "project/public/brand/qissah-wordmark-reversed.svg"
+      ],
+      "next": "Tulis src/ep46/scenes.tsx (S1–S9 sesuai STORYBOARD, kamera orbit elips + zoom 1.05+0.012lt, Haze BG–MG, FG blur 9) dan src/ep46/Film.tsx (pola EP18 Film.tsx: Fiber 0.55, callout card/big/stamp/chip/quote dengan ref, karaoke top 1290, AudiraSignature seed kisah-islam-EP46, AudiraOutro, Ep46Cover), daftarkan Ep46Preview/Ep46Final/Ep46Cover di src/Root.tsx (ganti import ep18), npm run channel + check-env + smoke, render style/cover-topic.png, lalu docs/SHOTLIST.md + npm run sfx, tahap 8 juri.",
+      "snapshot": {
+        "episode": "EP46_IBLIS_MENOLAK_SUJUD",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP46",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:08:29.463Z",
+      "doing": "Sesi B (lanjutan) tahap 5–7, kode film SELESAI & typecheck bersih (belum pernah dirender). project/ = salinan pola gold EP18 (node_modules junction ke F:/AUDIRA-SKILL-MOTION/node_modules). VO DIKUNCI: public/audio/vo.wav 80.76 s, vo-words.json 199 kata, vo.timing.json. src/ep46/timing.ts (9 scene S1 0–8.85 hook api tegak vs pilar sujud, S2 –20.45 khalifah crane turun, S3 –27.0 tanah liat + 5 kartu nama, S4 –37.5 sujud kecuali api, S5 –49.25 timbangan API vs TANAH, S6 –53.2 jam pasir AUDIRA, S7 –60.8 orang + 4 bayangan DEPAN/BELAKANG/KANAN/KIRI, S8 –75.2 dua jalan + pita cahaya tobat (impact 69.5) + api jatuh + cahaya bangkit, S9 –83.8 lentera hati + banner AUDIRA QISSAH; film 83.8 s, outro 2.9 s; 23 callout dengan ref QS), src/ep46/pieces.tsx, src/ep46/scenes.tsx (orbit elips + zoom 1.05+0.012lt, bgCam parallax 0.35, Haze, FG blur 9), src/ep46/Film.tsx (Fiber 0.55, callout card/big/stamp/chip/quote, karaoke top 1290, AudiraSignature seed kisah-islam-EP46 handle @AUDIRAQISSAH, AudiraOutro, Ep46Cover t=6.4). src/Root.tsx mendaftarkan Ep46Preview (540×960@30), Ep46Final (1080×1920@60), Ep46Cover.",
+      "files": [
+        "project/src/ep46/timing.ts",
+        "project/src/ep46/pieces.tsx",
+        "project/src/ep46/scenes.tsx",
+        "project/src/ep46/Film.tsx",
+        "project/src/Root.tsx",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md"
+      ],
+      "next": "Sesi B lanjutan: (1) cd project; npm run channel; npm run check-env; npm run smoke (ganti ke Ep46Preview bila ShowcasePreview tak ada); (2) render cover: npx remotion still Ep46Cover ../style/cover-topic.png, tampilkan; (3) stills cek per scene (npm run stills -- out/chk 4s,15s,24s,33s,44s,51s,57s,70s,79s Ep46Preview), perbaiki visual; (4) tulis docs/SHOTLIST.md (format EP18: header Offset: 0, tabel # | Waktu | Objek | Aksi | Kamera | Teks layar | Beat, + ## Audio cues) lalu npm run sfx; (5) tahap 8: contact sheet 6–8 frame 540×960, draft/THEME_CHECK.md (G22), npm run audit:visual, record_score self lalu juri buta subagen (judge jury). LOLOS ≥3.8 tanpa aspek <3, atau 2 putaran terbaik ≥3.5; (6) handover newSession → Sesi C.",
+      "snapshot": {
+        "episode": "EP46_IBLIS_MENOLAK_SUJUD",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP46",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:21:33.665Z",
+      "doing": "Sesi B SELESAI (tahap 5–8). Style PAPERWORLD, Remotion 2D SVG murni. VO dikunci 80.76 s, film 83.8 s (outro 80.9–83.8). Draf juri buta r1 3.83 LOLOS (lighting 4, material 3, depth 4, composition 3, motion 5, readability 4; self 4.17); ceilings semua 5, camera audit 5; THEME_CHECK 8/8 ya. G18c: VO −16.4 LUFS, SFX ter-duck −29.5 LUFS, gap 13.1 LU (min 12) LOLOS. SFX: sfx/cues/ep46.py → public/audio/sfx.wav −26 LUFS (payoff/impact 69.24). Cover: style/cover-topic.png. scripts/draft.mjs disalin dari starter (bug await diperbaiki).",
+      "command": "audira_render_batch start (Ep46Final, vo public/audio/vo.wav, sfx public/audio/sfx.wav) — HANYA setelah acc pengguna",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/DRAFT_REPORT.json",
+        "draft/THEME_CHECK.md",
+        "style/cover-topic.png",
+        "docs/SHOTLIST.md",
+        "project/public/audio/vo.wav",
+        "project/public/audio/sfx.wav",
+        "project/sfx/cues/ep46.py",
+        "project/src/ep46/scenes.tsx",
+        "project/src/ep46/Film.tsx"
+      ],
+      "next": "Sesi C tahap 9: tampilkan draft/DRAFT_SHEET.jpg + skor juri 3.83 + durasi 83.8 s + G18c gap 13.1 LU, tunggu acc pengguna (JANGAN render sebelum acc). Setelah acc: audira_episode_status update stage final approved true, lalu audira_render_batch start jobs [{project: F:/AUDIRA-EPISODES/QISSAH/AUDIRA_KISAH_ISLAM_2026/EP46_IBLIS_MENOLAK_SUJUD/project, comp: Ep46Final, vo: public/audio/vo.wav, sfx: public/audio/sfx.wav, offset: 0, slug: iblis-menolak-sujud, ep: EP46, title: \"Iblis Menolak Sujud\"}] (concurrency 1 bila VRAM penuh). QA −14 LUFS TP < −1, ffprobe metadata, record_score final (juri), lalu tahap 10 delivery (SOCIAL_CAPTIONS.md 6 platform + validator, NOTES.md, lessons, 3 scheduled task review). Opsional bila pengguna minta poles: lengkung malaikat jadi pita kertas matte (juri material 3), jangan potong api/lengkung di tepi.",
+      "snapshot": {
+        "episode": "EP46_IBLIS_MENOLAK_SUJUD",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP46",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T16:12:10.053Z",
+      "doing": "Sesi C tahap 9: render final Ep46Final 1080x1920@60 (acc pengguna \"Gas render\"). G13 sempat menolak (camera.json deadPct 6, medianSpeed 0.021); diperbaiki dengan orbit elips global per scene di src/ep46/Film.tsx (s 1.045+0.006·lt, x ±22 sin 1.3lt, y 34 cos 1.3lt) → klip 44–62 s median 0.056, parked 0%. Sheet pasca-fix: draft/DRAFT_SHEET_g13.jpg.",
+      "command": "audira_render_batch start jobs [{project: <EP46>/project, comp: Ep46Final, vo: public/audio/vo.wav, sfx: public/audio/sfx.wav, offset 0, slug iblis-menolak-sujud, ep EP46, title \"Iblis Menolak Sujud\"}]",
+      "files": [
+        "project/src/ep46/Film.tsx",
+        "draft/camera.json",
+        "draft/CHECK_44-62s.mp4",
+        "draft/DRAFT_SHEET_g13.jpg"
+      ],
+      "next": "QA final (−14 LUFS, TP < −1, ffprobe metadata, qa_video hardOnly, cek frame), record_score final self + juri buta, lalu tahap 10 delivery.",
+      "snapshot": {
+        "episode": "EP46_IBLIS_MENOLAK_SUJUD",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP46",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T16:15:49.385Z",
+      "doing": "render final (Ep46Final)",
+      "command": "audira_render_batch start",
+      "batchId": "20261124-161549",
+      "files": [
+        "out/Ep46Final.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261124-161549); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang.",
+      "snapshot": {
+        "episode": "EP46_IBLIS_MENOLAK_SUJUD",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP46",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T16:16:08.826Z",
+      "doing": "render final (Ep46Final)",
+      "command": "audira_render_batch start",
+      "batchId": "20261124-161608",
+      "files": [
+        "out/Ep46Final.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261124-161608); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang.",
+      "snapshot": {
+        "episode": "EP46_IBLIS_MENOLAK_SUJUD",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP46",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T16:16:28.731Z",
+      "doing": "Sesi C tahap 9: render final Ep46Final 1080x1920@60 SEDANG JALAN (batch 20261124-161608, acc pengguna \"Gas render\" tercatat). Sebelum render, 4 gate ditambal: (1) G13 camera: orbit elips global per scene di project/src/ep46/camera2d.ts (dipakai Film.tsx; s 1.045+0.006·lt, x ±22 sin1.3lt, y 34 cos1.3lt) → klip 44–62 s median 0.056 parked 0%; (2) G14: draft/rig-audit.json dari `node scripts/rig-audit.mjs src/ep46/camera2d.ts rigPose --frames=864 --fps=60` = 5/5; (3) look.json clipHi: S4 LightPool putih → #FFF4DE op 0.62, S8 beam 0.6→0.45, LightPool 0.35+0.35·impact+0.2·rise, impact circle 0.55→0.42 → clipHi 0 semua, ceilings 5; (4) channel gate: hapus handle=\"@audira\" di src/scenes/news/PenggantiGibranWapres.tsx (file starter sisa). Sheet pasca-fix: draft/DRAFT_SHEET_g13.jpg (komposisi ≈ r1). Catatan: npm run draft stills gagal CancelledError; still dirender manual via remotion still.",
+      "command": "audira_render_batch start jobs [{project: F:/AUDIRA-EPISODES/QISSAH/AUDIRA_KISAH_ISLAM_2026/EP46_IBLIS_MENOLAK_SUJUD/project, comp: Ep46Final, vo: public/audio/vo.wav, sfx: public/audio/sfx.wav, offset: 0, slug: iblis-menolak-sujud, ep: EP46, title: \"Iblis Menolak Sujud\"}]",
+      "batchId": "20261124-161608",
+      "files": [
+        "project/src/ep46/camera2d.ts",
+        "project/src/ep46/Film.tsx",
+        "project/src/ep46/scenes.tsx",
+        "draft/camera.json",
+        "draft/rig-audit.json",
+        "draft/look.json",
+        "draft/DRAFT_SHEET_g13.jpg"
+      ],
+      "next": "Sesi C lanjutan: audira_render_batch status 20261124-161608 (bila gagal: baca log, perbaiki, start ulang job yang sama). QA final: −14 LUFS, TP < −1 dBFS, ffprobe metadata kepemilikan, audira_qa_video hardOnly, cek 4–6 frame dari MP4 (contact sheet kecil), record_score final self + juri buta (subagent qa/jury.md). Lalu tahap 10: SOCIAL_CAPTIONS.md 6 platform + ## Jadwal Upload (WIB) + ## Label Konten AI → audira_validate_social_captions (expectedKeywords: Iblis, sujud, sombong); baca docs/SCRIPT.md + research/SOURCE_REGISTER.md hanya saat itu. NOTES.md (catat 4 gate di atas + lesson), append_lesson PAPERWORLD (failed: draf lolos juri tapi gagal G13 karena kamera hanya di lapisan MG; fix: orbit global camera2d.ts + rig model 2D untuk G14), caption tampil lengkap di chat, 3 scheduled task review-iblis-menolak-sujud-24h/-72h/-7d (tanya jam upload; default slot pertama Jadwal Upload). Hapus file perantara (out/seg, draft CHECK mp4) setelah final OK.",
+      "snapshot": {
+        "episode": "EP46_IBLIS_MENOLAK_SUJUD",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP46",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T16:17:29.847Z",
+      "doing": "Sesi C s5: render final ulang Ep46Final. Batch 20261124-161608 gagal preflight frame 5027 (public/brand/stacked-reversed.svg 404); fix: salin dari F:/AUDIRA-SKILL-MOTION/starter/public/brand/.",
+      "command": "audira_render_batch start jobs [{project: .../EP46_IBLIS_MENOLAK_SUJUD/project, comp: Ep46Final, vo: public/audio/vo.wav, sfx: public/audio/sfx.wav, offset: 0, slug: iblis-menolak-sujud, ep: EP46, title: \"Iblis Menolak Sujud\"}]",
+      "files": [
+        "project/public/brand/stacked-reversed.svg"
+      ],
+      "next": "Status batch baru → QA final (LUFS, TP, metadata, qa_video hardOnly, contact sheet 6 frame) → record_score final self + juri → tahap 10 (caption, NOTES, lesson, 3 scheduled task).",
+      "snapshot": {
+        "episode": "EP46_IBLIS_MENOLAK_SUJUD",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP46",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T16:17:30.114Z",
+      "doing": "render final (Ep46Final)",
+      "command": "audira_render_batch start",
+      "batchId": "20261124-161730",
+      "files": [
+        "out/Ep46Final.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261124-161730); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang.",
+      "snapshot": {
+        "episode": "EP46_IBLIS_MENOLAK_SUJUD",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP46",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T16:19:22.212Z",
+      "doing": "Sesi C s5: batch 20261124-161730 gagal (part 3 write EOF) karena GPU dipakai 3 render lain di luar antrian (EP69 Kiruna, EP43, EP44). Menunggu GPU bebas lalu start ulang job sama. SOCIAL_CAPTIONS.md sudah lolos validator, NOTES.md terisi, 2 lesson PAPERWORLD (failed+fix) tercatat.",
+      "command": "audira_render_batch start jobs [{project: .../EP46_IBLIS_MENOLAK_SUJUD/project, comp: Ep46Final, vo: public/audio/vo.wav, sfx: public/audio/sfx.wav, offset: 0, slug: iblis-menolak-sujud, ep: EP46, title: \"Iblis Menolak Sujud\"}]",
+      "files": [
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md",
+        "project/public/brand/stacked-reversed.svg"
+      ],
+      "next": "Start ulang render Ep46Final (segmen lama dipakai ulang) → QA final (LUFS, TP, metadata, qa_video hardOnly, contact sheet 6 frame) → record_score final self + juri → update stage final/delivery → hapus perantara → tanya jam upload, 3 scheduled task review-iblis-menolak-sujud-24h/-72h/-7d (default Minggu 29 Nov 2026 19.00 WIB).",
+      "snapshot": {
+        "episode": "EP46_IBLIS_MENOLAK_SUJUD",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP46",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T16:31:19.367Z",
+      "doing": "render final (Ep46Final)",
+      "command": "audira_render_batch start",
+      "batchId": "20261124-163119",
+      "files": [
+        "out/Ep46Final.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261124-163119); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang.",
+      "snapshot": {
+        "episode": "EP46_IBLIS_MENOLAK_SUJUD",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP46",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:39:34.288Z",
+      "doing": "Render final selesai: project/out/Ep46Final.mp4 (83.8 s, 1080x1920@60, -13.7 LUFS, peak -1.8 dBFS, metadata title/artist/copyright/comment OK). Batch 20261124-163119 berstatus failed exit 1 hanya di langkah akhir (rename dest, kemungkinan EPERM seperti EP44) — file utuh dan ter-tag. JANGAN render ulang.",
+      "batchId": "20261124-163119",
+      "files": [
+        "project/out/Ep46Final.mp4",
+        "project/src/ep46/timing.ts",
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md"
+      ],
+      "next": "1) Salin project/out/Ep46Final.mp4 ke <EP>/FINAL_EP46_IBLIS_MENOLAK_SUJUD.mp4. 2) audira_qa_video hardOnly, cuts=8.85,20.45,27.0,37.5,49.25,53.2,60.8,75.2 (project/src/ep46/timing.ts). 3) record_score stage final judge self style PAPERWORLD. 4) update stage final done. 5) Cek SOCIAL_CAPTIONS.md dengan audira_validate_social_captions (delivery sudah done), NOTES.md pelajaran, append_lesson PAPERWORLD. 6) 3 scheduled task review-iblis-menolak-sujud-24h/-72h/-7d dari slot pertama ## Jadwal Upload (WIB). 7) Hapus draft/_stills & raw perantara.",
+      "snapshot": {
+        "episode": "EP46_IBLIS_MENOLAK_SUJUD",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP46",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:39:34.288Z",
+      "doing": "Render final selesai: project/out/Ep46Final.mp4 (83.8 s, 1080x1920@60, -13.7 LUFS, peak -1.8 dBFS, metadata title/artist/copyright/comment OK). Batch 20261124-163119 berstatus failed exit 1 hanya di langkah akhir (rename dest, kemungkinan EPERM seperti EP44) — file utuh dan ter-tag. JANGAN render ulang.",
+      "batchId": "20261124-163119",
+      "files": [
+        "project/out/Ep46Final.mp4",
+        "project/src/ep46/timing.ts",
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md"
+      ],
+      "next": "1) Salin project/out/Ep46Final.mp4 ke <EP>/FINAL_EP46_IBLIS_MENOLAK_SUJUD.mp4. 2) audira_qa_video hardOnly, cuts=8.85,20.45,27.0,37.5,49.25,53.2,60.8,75.2 (project/src/ep46/timing.ts). 3) record_score stage final judge self style PAPERWORLD. 4) update stage final done. 5) Cek SOCIAL_CAPTIONS.md dengan audira_validate_social_captions (delivery sudah done), NOTES.md pelajaran, append_lesson PAPERWORLD. 6) 3 scheduled task review-iblis-menolak-sujud-24h/-72h/-7d dari slot pertama ## Jadwal Upload (WIB). 7) Hapus draft/_stills & raw perantara.",
+      "snapshot": {
+        "episode": "EP46_IBLIS_MENOLAK_SUJUD",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP46",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T17:41:26.220Z"
+    }
+  ],
+  "session": 5,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP46 Iblis Sujud · s2",
+      "at": "2026-11-24T14:58:25.754Z"
+    },
+    {
+      "no": 3,
+      "title": "EP46 Iblis Sujud · s3",
+      "at": "2026-11-24T15:08:29.463Z"
+    },
+    {
+      "no": 4,
+      "title": "EP46 Iblis Sujud · s4",
+      "at": "2026-11-24T15:21:33.665Z"
+    },
+    {
+      "no": 5,
+      "title": "EP46 Iblis Sujud · s5",
+      "at": "2026-11-24T16:16:28.731Z"
+    }
+  ]
+}

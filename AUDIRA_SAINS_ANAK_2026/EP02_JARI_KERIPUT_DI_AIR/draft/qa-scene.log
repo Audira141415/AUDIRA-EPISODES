@@ -1,0 +1,35 @@
+  1/2640 frames  21/2640 frames  45/2640 frames  65/2640 frames  89/2640 frames  101/2640 frames  124/2640 frames  152/2640 frames  182/2640 frames  194/2640 frames  206/2640 frames  220/2640 frames  277/2640 frames  285/2640 frames  299/2640 frames  313/2640 frames  323/2640 frames  335/2640 frames  350/2640 frames  365/2640 frames  371/2640 frames  375/2640 frames  382/2640 frames  389/2640 frames  396/2640 frames  403/2640 frames  410/2640 frames  418/2640 frames  427/2640 frames  432/2640 frames  438/2640 frames  446/2640 frames  455/2640 frames  463/2640 frames  471/2640 frames  479/2640 frames  487/2640 frames  495/2640 frames  505/2640 frames  515/2640 frames  525/2640 frames  534/2640 frames  543/2640 frames  551/2640 frames  560/2640 frames  568/2640 frames  577/2640 frames  586/2640 frames  597/2640 frames  607/2640 frames  617/2640 frames  626/2640 frames  635/2640 frames  643/2640 frames  652/2640 frames  661/2640 frames  670/2640 frames  678/2640 frames  687/2640 frames  696/2640 frames  705/2640 frames  713/2640 frames  721/2640 frames  729/2640 frames  736/2640 frames  745/2640 frames  755/2640 frames  762/2640 frames  768/2640 frames  775/2640 frames  783/2640 frames  793/2640 frames  830/2640 frames  850/2640 frames  854/2640 frames  859/2640 frames  872/2640 frames  883/2640 frames  894/2640 frames  906/2640 frames  917/2640 frames  925/2640 frames  934/2640 frames  943/2640 frames  953/2640 frames  966/2640 frames  977/2640 frames  992/2640 frames  1006/2640 frames  1019/2640 frames  1030/2640 frames  1039/2640 frames  1049/2640 frames  1058/2640 frames  1069/2640 frames  1080/2640 frames  1087/2640 frames  1096/2640 frames  1103/2640 frames  1110/2640 frames  1116/2640 frames  1123/2640 frames  1129/2640 frames  1136/2640 frames  1142/2640 frames  1148/2640 frames  1155/2640 frames  1162/2640 frames  1168/2640 frames  1174/2640 frames  1182/2640 frames  1189/2640 frames  1192/2640 frames  1280/2640 frames  1433/2640 frames  1602/2640 frames  1767/2640 frames  1849/2640 frames  1918/2640 frames  2082/2640 frames  2240/2640 frames  2337/2640 frames  2353/2640 frames  2371/2640 frames  2385/2640 frames  2403/2640 frames  2421/2640 frames  2433/2640 frames  2447/2640 frames  2461/2640 frames  2475/2640 frames  2489/2640 frames  2503/2640 frames  2515/2640 frames  2527/2640 frames  2539/2640 frames  2551/2640 frames  2563/2640 frames  2577/2640 frames  2589/2640 frames  2603/2640 frames  2615/2640 frames  2627/2640 frames  2639/2640 frames[31mUnable to close browser tab[39m [31mProtocolError: Protocol error (Target.closeTarget): No target with given id found[39m
+
+qa-scene JariPreview: 2640 frames, 0 tembus checks, 0 tagged solids
+qa-scene: nothing is tagged — wrap every character, held prop and touched furniture in <Solid> (src/core/qa/scene-qa.tsx)
+qa-scene: PASS
+
+— video scan of the 3D alone (captions left out) —
+qa-video qa-clean.mp4: 2640 frames @ 30.00 fps, 13 planned cuts
+  FAIL  LONCAT@39.77    39.77–39.77 s, whole frame, strength 201.4 → out\qa-scene\JariPreview\qa-video_01.jpg
+  FAIL  LONCAT@40.23    40.23–40.23 s, whole frame, strength 192.5 → out\qa-scene\JariPreview\qa-video_02.jpg
+  FAIL  BLACK@54.87     54.87–66.63 s, whole frame, strength 11.8 → out\qa-scene\JariPreview\qa-video_03.jpg
+  FAIL  BLACK@67.73     67.73–70.03 s, whole frame, strength 2.3 → out\qa-scene\JariPreview\qa-video_04.jpg
+  CHECK KEDIP@67.80     67.80–67.80 s, x 83–89 %, y 50–53 %, strength 136 → out\qa-scene\JariPreview\qa-video_05.jpg
+  CHECK KEDIP@18.40     18.40–19.03 s, x 11–22 %, y 6–50 %, strength 55 → out\qa-scene\JariPreview\qa-video_06.jpg
+  CHECK LONCAT@36.70    36.70–36.70 s, x 50–56 %, y 56–59 %, strength 130.7 → out\qa-scene\JariPreview\qa-video_07.jpg
+  CHECK LONCAT@35.00    35.00–35.00 s, x 50–56 %, y 56–59 %, strength 119 → out\qa-scene\JariPreview\qa-video_08.jpg
+  CHECK LONCAT@42.80    42.80–42.93 s, x 78–89 %, y 28–31 %, strength 57.5 → out\qa-scene\JariPreview\qa-video_09.jpg
+  CHECK KEDIP@55.23     55.23–55.87 s, x 11–28 %, y 6–56 %, strength 42.5 → out\qa-scene\JariPreview\qa-video_10.jpg
+  CHECK LONCAT@33.33    33.33–33.33 s, x 50–56 %, y 56–59 %, strength 95.1 → out\qa-scene\JariPreview\qa-video_11.jpg
+  CHECK KEDIP@67.13     67.13–67.27 s, x 17–39 %, y 34–53 %, strength 63.1 → out\qa-scene\JariPreview\qa-video_12.jpg
+  CHECK LONCAT@32.50    32.50–32.50 s, x 50–56 %, y 56–59 %, strength 88.3 → out\qa-scene\JariPreview\qa-video_13.jpg
+  CHECK KEDIP@68.70     68.70–68.70 s, x 17–22 %, y 38–41 %, strength 74.6 → out\qa-scene\JariPreview\qa-video_14.jpg
+  CHECK FLICKER@16.63   16.63–19.00 s, x 6–83 %, y 9–22 %, strength 23 → out\qa-scene\JariPreview\qa-video_15.jpg
+  CHECK LONCAT@22.40    22.40–22.40 s, x 72–78 %, y 41–63 %, strength 48.9 → out\qa-scene\JariPreview\qa-video_16.jpg
+  CHECK FLICKER@33.47   33.47–35.07 s, x 6–94 %, y 50–63 %, strength 18 → out\qa-scene\JariPreview\qa-video_17.jpg
+  CHECK KEDIP@17.17     17.17–17.20 s, x 11–22 %, y 34–38 %, strength 34.4 → out\qa-scene\JariPreview\qa-video_18.jpg
+  CHECK FLICKER@54.73   54.73–55.77 s, x 22–50 %, y 25–41 %, strength 21 → out\qa-scene\JariPreview\qa-video_19.jpg
+  CHECK KEDIP@58.97     58.97–59.00 s, x 61–67 %, y 3–13 %, strength 27.9 → out\qa-scene\JariPreview\qa-video_20.jpg
+  CHECK LONCAT@45.43    45.43–45.43 s, x 78–83 %, y 28–31 %, strength 31.9 → out\qa-scene\JariPreview\qa-video_21.jpg
+  CHECK KEDIP@9.07      9.07–9.07 s, x 44–50 %, y 84–88 %, strength 27.7 → out\qa-scene\JariPreview\qa-video_22.jpg
+  note: 71 changes inside a particle field (rain, sparks…) were left to the eye — look at those shots in the review
+  1 change during fast camera moves not scanned (the scene checks cover them)
+qa-video: FAIL (4) — a real glitch: open the strips, fix the cause, render again
+
+QA gate: FAIL

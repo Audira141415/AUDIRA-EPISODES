@@ -1,0 +1,208 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#07090B}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.05;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.42) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.45) 42%,rgba(0,0,0,0.45) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'IBM Plex Mono',Consolas,monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#F2E8D5;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.pre{position:absolute;left:-2000px;top:0;opacity:0}
+#flash{position:absolute;inset:0;z-index:6;pointer-events:none;opacity:0;background:radial-gradient(ellipse at 50% 50%,rgba(255,59,78,.35),rgba(255,59,78,0) 70%)}
+.cd{position:relative;background:linear-gradient(180deg,rgba(10,12,14,.9),rgba(6,7,9,.9));border:1.5px solid rgba(255,176,0,.5);border-radius:6px;box-shadow:0 18px 40px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,220,150,.12)}
+.kk{display:inline-flex;align-items:center;gap:14px;font-family:'IBM Plex Mono',Consolas,monospace;font-weight:700;font-size:26px;letter-spacing:.06em;color:#FFB000;margin-bottom:16px;padding:6px 18px 6px 6px;background:rgba(6,7,9,.86);border:1.5px solid rgba(255,176,0,.6);border-radius:4px}
+.kk i{font-style:normal;background:#FFB000;color:#07090B;padding:3px 12px;border-radius:2px}
+.h1{display:flex;flex-direction:column;align-items:flex-start}
+.h1 .ln{font-family:'Space Grotesk','Segoe UI',sans-serif;font-weight:700;font-size:104px;line-height:1;letter-spacing:-.02em;color:#F2E8D5;text-shadow:0 6px 24px rgba(0,0,0,.7)}
+.h1 .sm{font-family:'IBM Plex Mono',Consolas,monospace;font-weight:600;font-size:40px;color:#FFB000;margin:8px 0 4px;letter-spacing:.02em}
+.h1 .big{font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:118px;line-height:1.02;letter-spacing:-.01em;background:linear-gradient(180deg,#FFF2C8 0%,#FFC94A 45%,#E08A00 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 0 rgba(40,20,0,.9)) drop-shadow(0 10px 24px rgba(0,0,0,.7))}
+.chips{display:flex;gap:14px;margin-top:22px}
+.ch{font-style:normal;font-family:'IBM Plex Mono',Consolas,monospace;font-weight:700;font-size:40px;line-height:1;padding:14px 22px 12px;border-radius:4px}
+.ch.dn{background:#FF3B4E;color:#fff;box-shadow:0 10px 26px rgba(0,0,0,.5)}
+.ban{display:inline-block;font-family:'IBM Plex Mono',Consolas,monospace;font-weight:700;font-size:64px;line-height:1.05;color:#fff;background:#FF3B4E;padding:16px 26px 14px;border-radius:4px;transform:rotate(-2deg);box-shadow:0 14px 34px rgba(0,0,0,.55);margin-top:18px;max-width:880px}
+.row{display:flex;flex-direction:column;margin-top:14px;padding:14px 26px 16px;border-left:10px solid #FFB000;max-width:900px;width:max-content;box-sizing:border-box}
+.row b{display:block;font-family:'Space Grotesk','Segoe UI',sans-serif;font-weight:700;font-size:54px;line-height:1.05;letter-spacing:-.01em;color:#F2E8D5}
+.row span{display:block;margin-top:6px;font-family:'IBM Plex Mono',Consolas,monospace;font-weight:500;font-size:30px;line-height:1.2;color:#A9A196}
+.row.am b{color:#FFB000}.row.rd{border-left-color:#FF3B4E}.row.rd b{color:#FF8A94}.row.gr{border-left-color:#2BE38A}.row.gr b{color:#2BE38A}.row.vi{border-left-color:#B06CFF}.row.vi b{color:#D8B0FF}
+.row em{font-style:normal}.up{color:#2BE38A}.dn2{color:#FF3B4E}
+.big2 b{font-size:76px}
+.spd b{white-space:nowrap;font-family:'IBM Plex Mono',Consolas,monospace;font-weight:700;font-size:120px;line-height:1;color:#FFB000;letter-spacing:-.02em}
+.spd b .ct{display:inline;margin:0;font:inherit;color:inherit}
+.steps{display:flex;gap:14px;margin-top:14px;align-items:flex-start;height:96px}
+.steps i{display:block;width:150px;height:22px;background:#FF3B4E;border-radius:3px}
+.steps i:nth-child(2){margin-top:36px}.steps i:nth-child(3){margin-top:72px}
+.vs{display:flex;gap:20px;align-items:stretch;margin-top:14px}
+.mm,.ff{display:flex;align-items:center;padding:18px 26px;box-sizing:border-box}
+.mm b,.ff b{font-family:'Space Grotesk','Segoe UI',sans-serif;font-weight:700;font-size:56px;line-height:1.05;color:#F2E8D5}
+.mm b{color:#D4CABB;text-decoration:line-through;text-decoration-thickness:5px;text-decoration-color:#FF3B4E}
+.mm.w2{padding-right:130px;background:rgba(6,7,9,.96)}
+.ff{background:linear-gradient(180deg,#FFD266,#E08A00);border-color:#FFE2A0}.ff b{color:#07090B}
+.stp{position:absolute;right:-26px;top:-30px;font-style:normal;font-family:'IBM Plex Mono',Consolas,monospace;font-weight:700;font-size:52px;line-height:1;color:#fff;background:#FF3B4E;border-radius:4px;padding:10px 16px 8px;transform:rotate(6deg);box-shadow:0 8px 20px rgba(0,0,0,.5)}
+.q{margin-top:10px;padding:22px 30px 24px;font-family:'Space Grotesk','Segoe UI',sans-serif;font-weight:700;font-size:58px;line-height:1.1;color:#F2E8D5;border-left:10px solid #FFB000;max-width:900px}
+.q em{display:block;margin-top:12px;font-style:normal;color:#FFB000;font-size:44px;font-family:'IBM Plex Mono',Consolas,monospace}
+#ob{position:absolute;left:44px;top:1098px;width:992px;height:178px;z-index:10}
+#ob .obh{display:flex;justify-content:space-between;font-family:'IBM Plex Mono',Consolas,monospace;font-weight:700;font-size:20px;letter-spacing:.12em;color:#FFB000;padding:0 6px 6px;border-bottom:2px solid rgba(255,176,0,.55)}
+#ob .lv{color:#2BE38A}
+#ob .obr{position:relative;height:148px;margin-top:8px}
+.tk{position:absolute;top:0;width:152px;height:144px;box-sizing:border-box;padding:8px 8px 0;background:linear-gradient(180deg,rgba(12,14,16,.94),rgba(6,7,9,.94));border:1.5px solid rgba(43,227,138,.6);border-radius:4px;text-align:center;box-shadow:0 10px 22px rgba(0,0,0,.55)}
+.tk.a{border-color:rgba(255,176,0,.8)}.tk.r{border-color:rgba(255,59,78,.85)}
+.tk .tu{width:40px;height:40px;margin:0 auto}
+.tk b{display:block;margin-top:2px;font-family:'IBM Plex Mono',Consolas,monospace;font-weight:700;font-size:21px;line-height:1.05;color:#F2E8D5;white-space:nowrap}
+.tk span{display:block;margin-top:3px;font-family:'IBM Plex Mono',Consolas,monospace;font-weight:500;font-size:16px;line-height:1.1;color:#A9A196}
+.tk .bar{position:absolute;left:8px;right:8px;bottom:8px;height:8px;background:#2BE38A;border-radius:2px;transform-origin:0 50%}
+.tk.a .bar{background:#FFB000}.tk.r .bar{background:#FF3B4E}
+#ob.crash .tk.g .bar{background:#FF3B4E;opacity:.7}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="95.68" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI 3D &middot; BUKAN GAMBAR ASLI</div>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@500;600;700&family=Playfair+Display:wght@700;900&display=block">
+<div class="pre"><span style="font-family:'Space Grotesk';font-weight:700">TULIP 1637</span><span style="font-family:'Space Grotesk';font-weight:500">a</span><span style="font-family:'IBM Plex Mono';font-weight:700">A 1 ƒ</span><span style="font-family:'IBM Plex Mono';font-weight:600">A 1</span><span style="font-family:'IBM Plex Mono';font-weight:500">A 1</span><span style="font-family:'Playfair Display';font-weight:700">AUDIRA</span><span style="font-family:'Playfair Display';font-weight:900">ƒ</span></div>
+<div id="flash"></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="kk"><i>EP 51</i>TULPEN · 1637</div>
+  <div class="h1"><span class="ln">1 UMBI TULIP</span><span class="ln sm">lebih mahal dari</span><span class="ln big">GAJI 10 TAHUN</span></div>
+  <div class="chips"><i class="ch dn" data-at="s1:runtuh" data-fx="stampc">▼ RUNTUH DALAM 1 MINGGU</i></div>
+</div>
+<div class="p" data-in="s2" data-out="s2:Dan">
+  <div class="kk"><i>01</i>BELANDA · ABAD KE-17</div>
+  <div class="cd row am" data-at="s2:Belanda" data-fx="card"><b>REPUBLIK BELANDA</b><span>Zaman Keemasan</span></div>
+  <div class="cd row " data-at="s2:pusat" data-fx="card"><b>PUSAT DAGANG TERKAYA DI DUNIA</b></div>
+</div>
+<div class="p" data-in="s2:Dan" data-out="s3">
+  <div class="kk"><i>02</i>BARANG BARU</div>
+  <div class="cd row am" data-at="s2:tulip" data-fx="card"><b>BUNGA TULIP</b></div>
+  <div class="cd row " data-at="s2:Utsmani" data-fx="card"><b>DARI KESULTANAN UTSMANI</b><span>umbi dikirim ke Wina, 1554</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s3:Tapi">
+  <div class="kk"><i>03</i>TULIP &ldquo;PECAH&rdquo;</div>
+  <div class="cd row am" data-at="s3:bergaris" data-fx="card"><b>KELOPAK BERGARIS API</b><span>merah-putih, paling langka</span></div>
+  <div class="cd row vi" data-at="s3:virus" data-fx="card"><b>PENYEBABNYA: VIRUS</b><span>baru diketahui belakangan</span></div>
+</div>
+<div class="p" data-in="s3:Tapi" data-out="s4">
+  <div class="kk"><i>03</i>SAAT ITU</div>
+  <div class="cd row big2" data-at="s3:garis" data-fx="card"><b>GARIS = HARGA <em class="up">▲</em></b><span>pola langka, harga melambung</span></div>
+</div>
+<div class="p" data-in="s4" data-out="s4:Umbinya">
+  <div class="kk"><i>04</i>MULAI 1634</div>
+  <div class="cd row am" data-at="s4:kedai-kedai" data-fx="card"><b>DIJUAL DI KEDAI MINUM</b></div>
+  <div class="vs">
+    <div class="cd mm" data-at="s4:bukan" data-fx="card"><b>BUNGA</b></div>
+    <div class="cd ff" data-at="s4:kontrak" data-fx="card"><b>KONTRAK</b></div>
+  </div>
+</div>
+<div class="p" data-in="s4:Umbinya" data-out="s5">
+  <div class="kk"><i>04</i>KONTRAK BERJANGKA</div>
+  <div class="cd row am" data-at="s4:tanah" data-fx="card"><b>UMBI MASIH DI DALAM TANAH</b></div>
+  <div class="cd row " data-at="s4:berpindah" data-fx="card"><b>KERTASNYA BERPINDAH TANGAN</b><span>berkali-kali, tanpa ada barang</span></div>
+</div>
+<div class="p" data-in="s5" data-out="s5:Beberapa">
+  <div class="kk"><i>05</i>PUNCAK · FEBRUARI 1637</div>
+  <div class="cd row am" data-at="s5:Semper" data-fx="card"><b>SEMPER AUGUSTUS</b><span>umbi termahal</span></div>
+  <div class="cd row spd" data-at="s5:ditawar" data-fx="card"><b><span class="ct nb" data-from="0" data-to="10000" data-a="s5:ditawar" data-d="1.021" data-pre="ƒ">10000</span></b><span>gulden &middot; &plusmn;€130.000 nilai 2024</span></div>
+</div>
+<div class="p" data-in="s5:Beberapa" data-out="s6">
+  <div class="kk"><i>05</i>UMBI LAIN</div>
+  <div class="cd row spd" data-at="s5:dijual" data-fx="card"><b>&gt;<span class="ct nb" data-from="0" data-to="10" data-a="s5:dijual" data-d="0.820" data-suf="×">10</span></b><span>penghasilan setahun seorang perajin</span></div>
+</div>
+<div class="p" data-in="s6" data-out="s6:Harga">
+  <div class="kk"><i>06</i>HAARLEM · 3 FEBRUARI 1637</div>
+  <div class="cd row am" data-at="s6:lelang" data-fx="card"><b>SEBUAH LELANG DIBUKA</b></div>
+  <div class="ban" data-at="s6:pembeli" data-fx="stampc">TIDAK ADA PEMBELI</div>
+</div>
+<div class="p" data-in="s6:Harga" data-out="s6:Dalam">
+  <div class="kk"><i>06</i>LELANG HAARLEM</div>
+  <div class="cd row thermo" data-at="s6:diturunkan" data-fx="card"><b>HARGA DITURUNKAN <em class="dn2">▼</em></b><div class="steps"><i data-at="s6:diturunkan" data-fx="pop"></i><i data-at="s6:lagi" data-fx="pop"></i><i data-at="s6:lagi#2" data-fx="pop"></i></div></div>
+  <div class="cd row rd" data-at="s6:Tetap" data-fx="card"><b>TETAP TIDAK ADA YANG MAU</b></div>
+</div>
+<div class="p" data-in="s6:Dalam" data-out="s7">
+  <div class="kk"><i>06</i>BEBERAPA HARI KEMUDIAN</div>
+  <div class="ban" data-at="s6:total" data-fx="stampc">PASAR TULIP BERHENTI TOTAL</div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Tapi">
+  <div class="kk"><i>07</i>200 TAHUN KEMUDIAN</div>
+  <div class="cd row am" data-at="s7:buku" data-fx="card"><b>BUKU CHARLES MACKAY, 1841</b><span>versi populer yang terkenal</span></div>
+  <div class="cd row " data-at="s7:bangkrut" data-fx="card"><b>&ldquo;BANYAK ORANG BANGKRUT&rdquo;</b></div>
+</div>
+<div class="p" data-in="s7:Tapi" data-out="s8">
+  <div class="kk"><i>07</i>SEJARAWAN MODERN</div>
+  <div class="vs">
+    <div class="cd mm w2" data-at="s7:Tapi" data-fx="card"><b>BANYAK BANGKRUT?</b><i class="stp" data-at="s7:membantah" data-fx="stampc">DIBANTAH</i></div>
+  </div>
+  <div class="cd row rd" data-at="s7:nyata" data-fx="card"><b>RUGI NYATA BAGI SEBAGIAN PEDAGANG</b></div>
+  <div class="cd row gr" data-at="s7:kuat" data-fx="card"><b>EKONOMI BELANDA TETAP KUAT</b></div>
+</div>
+<div class="p" data-in="s8" data-out="s8:Menurut">
+  <div class="kk"><i>08</i>YANG TERSISA</div>
+  <div class="h1"><span class="ln big" data-at="s8:mania" data-fx="pop">TULIP MANIA</span></div>
+  <div class="cd row am" data-at="s8:yakin" data-fx="card"><b>HARGA NAIK KARENA YAKIN</b><span>besok akan lebih mahal</span></div>
+</div>
+<div class="p" data-in="s8:Menurut" data-out="@END">
+  <div class="cd q">Apa &ldquo;tulip&rdquo; zaman sekarang? <em>Tulis di komentar!</em></div>
+</div>
+<div id="ob" data-at="s2:tulip" data-fx="fade">
+  <div class="obh"><span>ORDER BOOK</span><span class="lv">TULPEN</span></div>
+  <div class="obr"><div class="tk g" style="left:0px" data-at="s2:tulip" data-fx="tick"><div class="tu"><svg viewBox="0 0 40 40"><path d="M20 36V20" stroke="#2f8a3a" stroke-width="3"/><path d="M8 8c0 10 4 14 12 14s12-4 12-14l-6 5-6-8-6 8z" fill="#ff5a6a" stroke="#fff" stroke-width="1.5"/><path d="M14 9l3 10M26 9l-3 10" stroke="#fff" stroke-width="1.6" opacity=".85"/></svg></div><b>BUNGA BARU</b><span>dari Utsmani</span><i class="bar" data-at="s2:tulip+0.15" data-fx="grow"></i></div><div class="tk g" style="left:160px" data-at="s3:virus" data-fx="tick"><div class="tu"><svg viewBox="0 0 40 40"><path d="M20 36V20" stroke="#2f8a3a" stroke-width="3"/><path d="M8 8c0 10 4 14 12 14s12-4 12-14l-6 5-6-8-6 8z" fill="#ff5a6a" stroke="#fff" stroke-width="1.5"/><path d="M14 9l3 10M26 9l-3 10" stroke="#fff" stroke-width="1.6" opacity=".85"/></svg></div><b>GARIS VIRUS</b><span>kelopak api</span><i class="bar" data-at="s3:virus+0.15" data-fx="grow"></i></div><div class="tk g" style="left:320px" data-at="s4:kontrak" data-fx="tick"><div class="tu"><svg viewBox="0 0 40 40"><path d="M20 36V20" stroke="#2f8a3a" stroke-width="3"/><path d="M8 8c0 10 4 14 12 14s12-4 12-14l-6 5-6-8-6 8z" fill="#ff5a6a" stroke="#fff" stroke-width="1.5"/><path d="M14 9l3 10M26 9l-3 10" stroke="#fff" stroke-width="1.6" opacity=".85"/></svg></div><b>KONTRAK</b><span>umbi di tanah</span><i class="bar" data-at="s4:kontrak+0.15" data-fx="grow"></i></div><div class="tk a" style="left:480px" data-at="s5:gulden" data-fx="tick"><div class="tu"><svg viewBox="0 0 40 40"><path d="M20 36V20" stroke="#2f8a3a" stroke-width="3"/><path d="M8 8c0 10 4 14 12 14s12-4 12-14l-6 5-6-8-6 8z" fill="#FFB000" stroke="#fff" stroke-width="1.5"/><path d="M14 9l3 10M26 9l-3 10" stroke="#fff" stroke-width="1.6" opacity=".85"/></svg></div><b>ƒ10.000</b><span>Semper Aug.</span><i class="bar" data-at="s5:gulden+0.15" data-fx="grow"></i></div><div class="tk r" style="left:640px" data-at="s6:pembeli" data-fx="tick"><div class="tu"><svg viewBox="0 0 40 40"><path d="M20 36V20" stroke="#2f8a3a" stroke-width="3"/><path d="M8 8c0 10 4 14 12 14s12-4 12-14l-6 5-6-8-6 8z" fill="#FF3B4E" stroke="#fff" stroke-width="1.5"/><path d="M14 9l3 10M26 9l-3 10" stroke="#fff" stroke-width="1.6" opacity=".85"/></svg></div><b>LELANG GAGAL</b><span>3 Feb 1637</span><i class="bar" data-at="s6:pembeli+0.15" data-fx="grow"></i></div><div class="tk a" style="left:800px" data-at="s8:mania" data-fx="tick"><div class="tu"><svg viewBox="0 0 40 40"><path d="M20 36V20" stroke="#2f8a3a" stroke-width="3"/><path d="M8 8c0 10 4 14 12 14s12-4 12-14l-6 5-6-8-6 8z" fill="#FFB000" stroke="#fff" stroke-width="1.5"/><path d="M14 9l3 10M26 9l-3 10" stroke="#fff" stroke-width="1.6" opacity=".85"/></svg></div><b>TULIP MANIA</b><span>jadi istilah</span><i class="bar" data-at="s8:mania+0.15" data-fx="grow"></i></div></div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 51</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":7.447,"s2":7.607,"s2e":19.379,"s3":19.539,"s3e":29.439,"s4":29.599,"s4e":44.559,"s5":44.719,"s5e":55.226,"s6":55.386,"s6e":67.169,"s7":67.329,"s7e":79.618,"s8":79.778,"s8e":92.683,"end":92.683,"dur":95.68,"outro":92.933},AT={"s1:mahal":1.879,"s1:Lalu":4.526,"s1:tukang":3.566,"s1:minggu":6.054,"s1:runtuh":6.982,"s2:abad":8.666,"s2:pusat":11.183,"s2:Dan":13.192,"s2:tulip":17.149,"s3:bergaris":21.303,"s3:virus":25.355,"s3:Tapi":26.136,"s4:1634":31.976,"s4:berdagang":34.242,"s4:minum":35.775,"s4:bukan":37.609,"s4:kontrak":39.836,"s4:Umbinya":40.627,"s4:tanah":41.679,"s4:sementara":42.02,"s5:Puncaknya":44.719,"s5:Februari":45.195,"s5:Semper":47.966,"s5:gulden":50.504,"s5:Beberapa":51.263,"s5:sepuluh#2":53.043,"s6:Haarlem":56.903,"s6:lelang":58.396,"s6:pembeli":59.526,"s6:diturunkan":60.636,"s6:lagi":61.379,"s6:lagi#2":61.797,"s6:Tetap":62.246,"s6:mau":63.592,"s6:Dalam":64.075,"s6:total":66.751,"s7:buku":69.045,"s7:bangkrut":71.661,"s7:Tapi":73.456,"s7:Kerugiannya":75.655,"s8:mania":83.067,"s8:Menurut":87.91,"s2:Belanda":7.892,"s2:Utsmani":18.976,"s3:garis":26.833,"s4:kedai-kedai":35.357,"s4:berpindah":42.918,"s5:ditawar":49.483,"s5:dijual":52.223,"s6:Harga":60.249,"s7:membantah":74.695,"s7:nyata":76.382,"s7:kuat":79.324,"s8:yakin":86.347,"s2:tulip+0.15":17.299,"s3:virus+0.15":25.505,"s4:kontrak+0.15":39.986,"s5:gulden+0.15":50.654,"s6:pembeli+0.15":59.676,"s8:mania+0.15":83.217},DUR=95.68,OUT=92.933;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ card:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:'flex'},t);tl.fromTo(e,{opacity:0,x:-40,filter:'blur(5px)'},{opacity:1,x:0,filter:'blur(0px)',duration:.36,ease:'power4.out',immediateRender:false},t);},
+ stampc:(e,t)=>{tl.fromTo(e,{scale:1.8,opacity:0},{scale:1,opacity:1,duration:.2,ease:'power4.in',immediateRender:false},t);},
+ tick:(e,t)=>{tl.fromTo(e,{opacity:0,y:-26,scale:.9},{opacity:1,y:0,scale:1,duration:.35,ease:'power3.out',immediateRender:false},t);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{opacity:0,x:60,filter:'blur(8px)'},{opacity:1,x:0,filter:'blur(0px)',duration:.36,ease:'power4.out'},a-.02),POUT=(tl,p,b)=>tl.to(p,{opacity:0,x:-50,filter:'blur(6px)',duration:.22,ease:'power2.in'},b-.22);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{const f=q('#flash');const hits=[AT['s1:runtuh'],AT['s6:pembeli'],AT['s6:total']];let k=0;for(const h of hits){const d=t-h;if(d>0&&d<0.6)k=Math.max(k,1-d/0.6);}f.style.opacity=k*0.8;const ob=q('#ob');if(ob){ob.style.visibility=(t>AT['s8:Menurut']-0.1)?'hidden':'visible';ob.classList.toggle('crash',t>AT['s6:pembeli']&&t<AT['s8:mania']);}};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP51_DEMAM_TULIP_1637")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

@@ -1,0 +1,2 @@
+// Typewriter driven by timeline time. The hidden remainder keeps line wrapping fixed while typing.
+export const TY = `(()=>{const E=[...document.querySelectorAll('.ty')].map(e=>{const s=e.textContent;e.textContent='';const a=document.createElement('span'),b=document.createElement('span');b.style.visibility='hidden';e.append(a,b);return{a,b,s,t:AT[e.dataset.t],c:+e.dataset.c||42}});return (t)=>{for(const x of E){const n=Math.max(0,Math.min(x.s.length,Math.floor((t-x.t)*x.c)));x.a.textContent=x.s.slice(0,n);x.b.textContent=x.s.slice(n);}}})()`;

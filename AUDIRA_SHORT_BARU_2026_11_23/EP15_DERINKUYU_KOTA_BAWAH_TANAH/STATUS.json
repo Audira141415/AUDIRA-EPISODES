@@ -1,0 +1,401 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP15_DERINKUYU_KOTA_BAWAH_TANAH",
+  "topic": "Derinkuyu — kota bawah tanah untuk 20.000 orang, ditemukan karena tembok rumah dirobohkan (1963)",
+  "createdAt": "2026-11-22T17:57:51.469Z",
+  "updatedAt": "2026-11-23T10:10:01.942Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:59:07.257Z",
+          "text": "GLOBAL + channel memory dibaca (Audira lowercase di VO, sign await, TP limiter, Karaoke lokal lebar penuh). Pola EP04 sibling (Remotion 2D murni). INNERWORKS memory: HyperFrames 2D cutaway juri 4.17."
+        }
+      ],
+      "doneAt": "2026-11-22T17:59:07.257Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:09:18.319Z",
+          "text": "sync: riset ada"
+        },
+        {
+          "at": "2026-11-22T22:21:29.696Z",
+          "text": "25 fakta / 12 sumber di research/SOURCE_REGISTER.md. Angka aman: ±85 m, ±20.000 orang, pintu ±500 kg, >50 poros udara, 8 lantai dibuka, 1963 renovasi basement; '18 tingkat' diperdebatkan (pakai 'hingga 18 tingkat menurut sebagian sumber' atau sebut kedalaman)."
+        }
+      ],
+      "doneAt": "2026-11-22T22:21:29.696Z",
+      "startedAt": "2026-11-22T18:03:06.438Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T22:21:31.810Z",
+      "notes": [
+        {
+          "at": "2026-11-22T22:21:31.810Z",
+          "text": "Pengguna memilih INNERWORKS (2026-11-23, jawaban \"INNERWORKS (Recommended)\"). Alternatif ditolak: PAPERWORLD, HISTORYMAP. Engine: Remotion 2D murni (SVG/DOM, tanpa R3F)."
+        },
+        {
+          "at": "2026-11-23T00:16:17.495Z",
+          "text": "cover-topic.png dirender (Ep15Cover t=64.2). node_modules junction diperbaiki ke F:/AUDIRA-SKILL-MOTION/node_modules."
+        }
+      ],
+      "startedAt": "2026-11-22T22:21:31.810Z",
+      "doneAt": "2026-11-23T00:16:17.495Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T22:23:25.801Z",
+          "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-22T23:56:48.630Z",
+          "text": "STYLE_DECISION + ART_DIRECTION + STORYBOARD (9 scene) + ASSET_MANIFEST ditulis, baris Style: INNERWORKS."
+        }
+      ],
+      "doneAt": "2026-11-22T23:56:48.630Z",
+      "startedAt": "2026-11-22T22:23:12.386Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:21:53.589Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:24:42.624Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-22T22:24:31.925Z",
+      "startedAt": "2026-11-22T22:24:31.925Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:21:53.589Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.572Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T00:19:50.369Z",
+          "text": "sync: 1 gambar draf (bukan contact-sheet.jpg; buat dulu: bash sheet.sh <EP>)"
+        }
+      ],
+      "doneAt": "2026-11-23T00:15:29.831Z",
+      "startedAt": "2026-11-23T00:15:29.831Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T10:09:55.441Z",
+          "text": "FINAL_VIDEO.mp4 di folder episode: -13.7 LUFS, TP -1.8, metadata ok, signature VALID (.sig.json), qa_video hardOnly PASS, record_score final jury 4.0 LOLOS (gold)."
+        }
+      ],
+      "doneAt": "2026-11-23T10:09:55.441Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T09:58:56.442Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-23T09:53:10.017Z",
+      "startedAt": "2026-11-23T09:53:10.017Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "in_progress",
+      "notes": [
+        {
+          "at": "2026-11-23T10:10:01.044Z",
+          "text": "Scheduled task review-derinkuyu-24h (2026-11-27 19:00), -72h (2026-11-29 19:00), -7d (2026-12-03 19:00) +07:00. Upload Kamis 26 Nov 2026 19.00 WIB."
+        }
+      ],
+      "startedAt": "2026-11-23T10:10:01.044Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP15",
+    "engine": "remotion",
+    "channel": "FAKTADUNIA",
+    "handle": "@AudiraFaktaDunia",
+    "style": "INNERWORKS",
+    "wordCount": 219,
+    "estimatedDuration": {
+      "wordCount": 219,
+      "minSec": 88,
+      "maxSec": 97
+    }
+  },
+  "syncedAt": "2026-11-23T09:58:56.442Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T22:25:06.520Z",
+      "doing": "VO terkunci (84.75 dtk). Berikutnya docs + kode 2D INNERWORKS src/ep15 + cover-topic.",
+      "files": [
+        "docs/HANDOFF.md",
+        "docs/SCRIPT.md",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "research/SOURCE_REGISTER.md"
+      ],
+      "next": "Baca docs/HANDOFF.md; tulis STYLE_DECISION + docs; kode src/ep15; render cover-topic; lanjut pipeline sampai final.",
+      "snapshot": {
+        "episode": "EP15_DERINKUYU_KOTA_BAWAH_TANAH",
+        "topic": "Derinkuyu — kota bawah tanah untuk 20.000 orang, ditemukan karena tembok rumah dirobohkan (1963)",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP15",
+        "currentStage": "style",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP15_DERINKUYU_KOTA_BAWAH_TANAH/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:06:05.240Z",
+      "doing": "Docs + kode 2D INNERWORKS src/ep15 (9 scene) selesai & tsc bersih; belum dirender/dicek visual.",
+      "command": "cd project && npx remotion still src/index.ts Ep15Cover ../style/cover-topic.png",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/ep15/timing.ts",
+        "project/src/ep15/pieces.tsx",
+        "project/src/ep15/city.tsx",
+        "project/src/ep15/scenes.tsx",
+        "project/src/ep15/Film.tsx",
+        "project/src/Root.tsx",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md"
+      ],
+      "next": "Render Ep15Cover → style/cover-topic.png, cek & poles visual via stills, lalu npm run vo, SHOTLIST, sfx, draf+juri, final, delivery. Lihat docs/HANDOFF.md bagian UPDATE sesi lanjutan #2.",
+      "snapshot": {
+        "episode": "EP15_DERINKUYU_KOTA_BAWAH_TANAH",
+        "topic": "Derinkuyu — kota bawah tanah untuk 20.000 orang, ditemukan karena tembok rumah dirobohkan (1963)",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP15",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP15_DERINKUYU_KOTA_BAWAH_TANAH/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T09:52:34.883Z",
+      "doing": "Draf: SHOTLIST + sfx.wav (-26 LUFS) selesai, contact sheet + THEME_CHECK + self score 4.17; juri buta berjalan",
+      "files": [
+        "docs/SHOTLIST.md",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "project/public/audio/sfx.wav",
+        "project/src/ep15/scenes.tsx"
+      ],
+      "next": "record_score jury → render final: cd project && npm run render:final -- --comp=Ep15Final --out=out/FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --title=... --slug=derinkuyu --ep=EP15",
+      "snapshot": {
+        "episode": "EP15_DERINKUYU_KOTA_BAWAH_TANAH",
+        "topic": "Derinkuyu — kota bawah tanah untuk 20.000 orang, ditemukan karena tembok rumah dirobohkan (1963)",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP15",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP15_DERINKUYU_KOTA_BAWAH_TANAH/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:57:59.808Z",
+      "doing": "Draf putaran poles 1 selesai: juri#1 3.67 (material 3, motion 3) → tekstur tuf (Inclusions/strata), gunung S3, sublabel, keys() Hermite monoton, S7 kamera; audit:camera klip 58–73 = 5/5 parked 0% median 0.044; contact sheet baru di draft/contact-sheet.jpg. SOCIAL_CAPTIONS.md sudah ditulis (Kamis 26 Nov 2026 19.00).",
+      "files": [
+        "project/src/ep15/pieces.tsx",
+        "project/src/ep15/scenes.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "SOCIAL_CAPTIONS.md",
+        "docs/SHOTLIST.md"
+      ],
+      "next": "Juri buta putaran 2 (subagent, qa/jury.md, sheet draft/contact-sheet.jpg, ceilings semua 5, camera 5/parked 0/median 0.044) → record_score jury. ≥3.8 atau ≥3.5 (aturan 2 putaran, jangan ganti style) → render final: cd project && npm run render:final -- --comp=Ep15Final --out=out/FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Derinkuyu: Kota Bawah Tanah\" --slug=derinkuyu --ep=EP15 (run_in_background). Lalu QA, FINAL_VIDEO.mp4 ke folder episode, SUBTITLES.srt, validate captions, NOTES.md, lessons, 3 scheduled task review-derinkuyu-24h/72h/7d (upload Kamis 26 Nov 2026 19.00 WIB), status review.",
+      "snapshot": {
+        "episode": "EP15_DERINKUYU_KOTA_BAWAH_TANAH",
+        "topic": "Derinkuyu — kota bawah tanah untuk 20.000 orang, ditemukan karena tembok rumah dirobohkan (1963)",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP15",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP15_DERINKUYU_KOTA_BAWAH_TANAH/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:58:53.061Z",
+      "doing": "Juri#2 LOLOS 4.0 (tercatat). Render final berjalan (background): out/FINAL_VIDEO.mp4. SUBTITLES.srt + SOCIAL_CAPTIONS.md (validator ok) selesai.",
+      "command": "cd project && npm run render:final -- --comp=Ep15Final --out=out/FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Derinkuyu: Kota Bawah Tanah untuk 20.000 Orang\" --slug=derinkuyu --ep=EP15",
+      "files": [
+        "project/out/FINAL_VIDEO.mp4",
+        "project/out/render-final.log"
+      ],
+      "next": "Cek log out/render-final.log (LUFS/TP), salin ke ../FINAL_VIDEO.mp4 (+ .sig.json), ffprobe metadata, audira_qa_video hardOnly, record_score final, NOTES.md, append_lesson, 3 scheduled task review-derinkuyu-24h/72h/7d (upload Kamis 26 Nov 2026 19.00 WIB), status review.",
+      "snapshot": {
+        "episode": "EP15_DERINKUYU_KOTA_BAWAH_TANAH",
+        "topic": "Derinkuyu — kota bawah tanah untuk 20.000 orang, ditemukan karena tembok rumah dirobohkan (1963)",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP15",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP15_DERINKUYU_KOTA_BAWAH_TANAH/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:02:46.722Z",
+      "doing": "Final selesai: project/out/FINAL_VIDEO.mp4 1080x1920@60 5280 fr, -13.7 LUFS, TP -1.8 dBFS, metadata title/artist/comment ok (rename tagged.tmp gagal EPERM → dipindah manual; signature .sig.json mungkin belum ditulis karena skrip crash setelah tagging). Juri draf putaran 2 = 4.0 LOLOS. SUBTITLES.srt + SOCIAL_CAPTIONS.md (validator ok, Kamis 26 Nov 2026 19.00 WIB) selesai.",
+      "files": [
+        "project/out/FINAL_VIDEO.mp4",
+        "project/out/render-final.log",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt",
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "1) Signature: cek project/out/FINAL_VIDEO.mp4.sig.json; bila tidak ada, jalankan skrip sign (lihat scripts/sign-video.mjs / lib/sign.mjs, await signFile) lalu audira_verify_signature. 2) Salin FINAL_VIDEO.mp4 (+ .sig.json) ke folder episode. 3) audira_qa_video hardOnly pada final. 4) record_score final (judge jury dari draf 4.0 atau self) style INNERWORKS episode short-baru-11-23-EP15. 5) NOTES.md (pelajaran: juri#1 3.67 material/motion → tekstur tuf Inclusions+strata, keys() Hermite monoton → juri#2 4.0; --skip-channel karena scene starter news; EPERM rename), append_lesson INNERWORKS (worked/fix/failed). 6) 3 scheduled task review-derinkuyu-24h/-72h/-7d (fireAt 2026-11-27T19:00+07:00, 2026-11-29T19:00+07:00, 2026-12-03T19:00+07:00), catat di NOTES.md. 7) STATUS final+delivery done, stage review in_progress. 8) Hapus perantara (project/out/seg, out/draft clip). 9) Tampilkan caption lengkap + laporan satu baris.",
+      "snapshot": {
+        "episode": "EP15_DERINKUYU_KOTA_BAWAH_TANAH",
+        "topic": "Derinkuyu — kota bawah tanah untuk 20.000 orang, ditemukan karena tembok rumah dirobohkan (1963)",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP15",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP15_DERINKUYU_KOTA_BAWAH_TANAH/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:02:46.722Z",
+      "doing": "Final selesai: project/out/FINAL_VIDEO.mp4 1080x1920@60 5280 fr, -13.7 LUFS, TP -1.8 dBFS, metadata title/artist/comment ok (rename tagged.tmp gagal EPERM → dipindah manual; signature .sig.json mungkin belum ditulis karena skrip crash setelah tagging). Juri draf putaran 2 = 4.0 LOLOS. SUBTITLES.srt + SOCIAL_CAPTIONS.md (validator ok, Kamis 26 Nov 2026 19.00 WIB) selesai.",
+      "files": [
+        "project/out/FINAL_VIDEO.mp4",
+        "project/out/render-final.log",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt",
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "1) Signature: cek project/out/FINAL_VIDEO.mp4.sig.json; bila tidak ada, jalankan skrip sign (lihat scripts/sign-video.mjs / lib/sign.mjs, await signFile) lalu audira_verify_signature. 2) Salin FINAL_VIDEO.mp4 (+ .sig.json) ke folder episode. 3) audira_qa_video hardOnly pada final. 4) record_score final (judge jury dari draf 4.0 atau self) style INNERWORKS episode short-baru-11-23-EP15. 5) NOTES.md (pelajaran: juri#1 3.67 material/motion → tekstur tuf Inclusions+strata, keys() Hermite monoton → juri#2 4.0; --skip-channel karena scene starter news; EPERM rename), append_lesson INNERWORKS (worked/fix/failed). 6) 3 scheduled task review-derinkuyu-24h/-72h/-7d (fireAt 2026-11-27T19:00+07:00, 2026-11-29T19:00+07:00, 2026-12-03T19:00+07:00), catat di NOTES.md. 7) STATUS final+delivery done, stage review in_progress. 8) Hapus perantara (project/out/seg, out/draft clip). 9) Tampilkan caption lengkap + laporan satu baris.",
+      "snapshot": {
+        "episode": "EP15_DERINKUYU_KOTA_BAWAH_TANAH",
+        "topic": "Derinkuyu — kota bawah tanah untuk 20.000 orang, ditemukan karena tembok rumah dirobohkan (1963)",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP15",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP15_DERINKUYU_KOTA_BAWAH_TANAH/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T10:10:01.942Z"
+    }
+  ]
+}

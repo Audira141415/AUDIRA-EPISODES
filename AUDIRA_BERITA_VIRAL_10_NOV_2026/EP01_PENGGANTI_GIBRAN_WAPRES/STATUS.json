@@ -1,0 +1,258 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP01_PENGGANTI_GIBRAN_WAPRES",
+  "topic": "Berita viral siapa pengganti Gibran Rakabuming sebagai Wapres Indonesia — mekanisme MPR, 10 nama yang beredar, klarifikasi 3 hoaks",
+  "createdAt": "2026-11-21T15:07:48.366Z",
+  "updatedAt": "2026-11-21T16:31:05.805Z",
+  "currentStage": "setup",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-21T15:11:16.592Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-21T15:07:48.366Z",
+      "startedAt": "2026-11-21T15:07:48.366Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-21T15:11:16.592Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-21T15:09:24.130Z",
+      "startedAt": "2026-11-21T15:09:24.130Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-21T15:10:23.593Z",
+      "notes": [
+        {
+          "at": "2026-11-21T15:10:23.593Z",
+          "text": "User pilih BROADCASTFORGE. Alasan: breaking news political content, studio 3D otoritatif."
+        }
+      ],
+      "doneAt": "2026-11-21T15:10:23.593Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-21T15:12:35.449Z",
+      "notes": [
+        {
+          "at": "2026-11-21T15:11:16.592Z",
+          "text": "sync: naskah ada; menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-21T15:11:33.506Z",
+          "text": "Naskah 193 kata, 6 tahap: Hook/Context/Main Dev/Hoaks/Payoff/Outro. Menunggu acc pengguna."
+        },
+        {
+          "at": "2026-11-21T15:12:35.449Z",
+          "text": "User acc naskah + storyboard 2026-11-21."
+        }
+      ],
+      "startedAt": "2026-11-21T15:10:23.883Z",
+      "doneAt": "2026-11-21T15:12:35.449Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-21T15:14:35.120Z",
+          "text": "VO 75.70s speech, padded 90s. SHOTLIST.md ditulis dengan frame cuts per VO timing."
+        }
+      ],
+      "doneAt": "2026-11-21T15:14:35.119Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-21T15:18:10.755Z",
+          "text": "Episode TSX: starter/src/scenes/news/PenggantiGibranWapres.tsx. Compositions: PenggantiGibranPreview + PenggantiGibranFinal. TypeCheck clean."
+        },
+        {
+          "at": "2026-11-21T15:31:02.178Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "startedAt": "2026-11-21T15:18:10.755Z",
+      "doneAt": "2026-11-21T15:30:53.418Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-21T16:20:59.370Z",
+      "notes": [
+        {
+          "at": "2026-11-21T15:31:02.178Z",
+          "text": "sync: 13 gambar draf (bukan contact-sheet.jpg; buat dulu: bash sheet.sh <EP>); menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-21T16:20:59.370Z",
+          "text": "User acc 2026-11-21. Jury R12 LOLOS avg 4.0, semua aspek 4."
+        }
+      ],
+      "startedAt": "2026-11-21T15:20:53.331Z",
+      "doneAt": "2026-11-21T16:20:59.370Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-21T16:27:37.203Z",
+          "text": "FINAL_pengganti-gibran-wapres.mp4 — 19.1MB, 90s, 1080x1920@60fps. ffmpeg metadata tagged. Jury final LOLOS avg 4.0. GOLD archived."
+        }
+      ],
+      "doneAt": "2026-11-21T16:27:37.203Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-21T16:31:05.805Z",
+          "text": "SOCIAL_CAPTIONS.md valid (6 platform). NOTES.md ditulis. 3 scheduled review tasks dibuat: 24h/72h/7d. Lesson disimpan ke style memory."
+        }
+      ],
+      "doneAt": "2026-11-21T16:31:05.805Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "berita-viral-10-nov-EP01",
+    "style": "BROADCASTFORGE",
+    "engine": "remotion",
+    "finishProfile": "CYBER_NEON_VOID",
+    "wordCount": 193,
+    "durationEstimate": "83-86 dtk @ 140-145 WPM",
+    "estimatedDuration": {
+      "wordCount": 193,
+      "minSec": 77,
+      "maxSec": 86
+    },
+    "voPath": "audio/vo.wav",
+    "voWordsPath": "audio/vo-words.json",
+    "voTimingPath": "audio/vo.timing.json",
+    "speechDuration": 75.7,
+    "totalDuration": 90,
+    "phrases": 40
+  },
+  "syncedAt": "2026-11-21T15:31:02.178Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-21T16:21:26.578Z",
+      "doing": "render final PenggantiGibranFinal 1080×1920 @ 60fps, 3 parts, vo=public/audio/vo.wav",
+      "command": "node scripts/render-final.mjs --comp=PenggantiGibranFinal --out=... --vo=public/audio/vo.wav --parts=3 --concurrency=2",
+      "files": [
+        "FINAL_pengganti-gibran-wapres.mp4"
+      ],
+      "next": "ffmpeg metadata tag, record final score, Stage 10 delivery",
+      "snapshot": {
+        "episode": "EP01_PENGGANTI_GIBRAN_WAPRES",
+        "topic": "Berita viral siapa pengganti Gibran Rakabuming sebagai Wapres Indonesia — mekanisme MPR, 10 nama yang beredar, klarifikasi 3 hoaks",
+        "style": "BROADCASTFORGE",
+        "memoryEpisode": "berita-viral-10-nov-EP01",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_BERITA_VIRAL_10_NOV_2026/EP01_PENGGANTI_GIBRAN_WAPRES/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    }
+  ],
+  "handover": {
+    "at": "2026-11-21T16:21:26.578Z",
+    "doing": "render final PenggantiGibranFinal 1080×1920 @ 60fps, 3 parts, vo=public/audio/vo.wav",
+    "command": "node scripts/render-final.mjs --comp=PenggantiGibranFinal --out=... --vo=public/audio/vo.wav --parts=3 --concurrency=2",
+    "files": [
+      "FINAL_pengganti-gibran-wapres.mp4"
+    ],
+    "next": "ffmpeg metadata tag, record final score, Stage 10 delivery",
+    "snapshot": {
+      "episode": "EP01_PENGGANTI_GIBRAN_WAPRES",
+      "topic": "Berita viral siapa pengganti Gibran Rakabuming sebagai Wapres Indonesia — mekanisme MPR, 10 nama yang beredar, klarifikasi 3 hoaks",
+      "style": "BROADCASTFORGE",
+      "memoryEpisode": "berita-viral-10-nov-EP01",
+      "currentStage": "setup",
+      "gates": {
+        "style": {
+          "approved": true,
+          "status": "done"
+        },
+        "script": {
+          "approved": true,
+          "status": "done"
+        },
+        "draft": {
+          "approved": true,
+          "status": "done"
+        }
+      },
+      "voPath": "F:/AUDIRA-EPISODES/AUDIRA_BERITA_VIRAL_10_NOV_2026/EP01_PENGGANTI_GIBRAN_WAPRES/audio/vo.wav",
+      "draftScores": [],
+      "finals": [],
+      "draftRounds": 0
+    }
+  }
+}

@@ -7,26 +7,6 @@ Jalankan ulang script setelah menambah topik; folder yang sudah ada tidak ditimp
 
 | Channel | # | Topik | Folder |
 |---|---|---|---|
-| FAKTADUNIA | 002 | Pulau yang Dimiliki Satu Orang dan Diakui Dunia | FAKTADUNIA/T002_PULAU_YANG_DIMILIKI_SATU_ORANG_DAN_DIAKUI_DUNIA |
-| FAKTADUNIA | 003 | Negara yang Ibukotanya Bukan Kota Terbesar | FAKTADUNIA/T003_NEGARA_YANG_IBUKOTANYA_BUKAN_KOTA_TERBESAR |
-| FAKTADUNIA | 004 | Sungai yang Mengalir ke Dua Samudra Berbeda | FAKTADUNIA/T004_SUNGAI_YANG_MENGALIR_KE_DUA_SAMUDRA_BERBEDA |
-| FAKTADUNIA | 005 | Kota yang Tenggelam Setengah Meter per Tahun — dan Masih Dihuni | FAKTADUNIA/T005_KOTA_YANG_TENGGELAM_SETENGAH_METER_PER_TAHUN_DAN |
-| FAKTADUNIA | 006 | Negara dengan Dua Ibu Kota Resmi yang Berbeda Fungsi | FAKTADUNIA/T006_NEGARA_DENGAN_DUA_IBU_KOTA_RESMI_YANG_BERBEDA_FU |
-| FAKTADUNIA | 007 | Hutan yang Lebih Tua dari Pohon-Pohonnya Sendiri | FAKTADUNIA/T007_HUTAN_YANG_LEBIH_TUA_DARI_POHON_POHONNYA_SENDIRI |
-| FAKTADUNIA | 008 | Danau yang Berubah Warna Jadi Merah Darah Setiap Tahun | FAKTADUNIA/T008_DANAU_YANG_BERUBAH_WARNA_JADI_MERAH_DARAH_SETIAP |
-| FAKTADUNIA | 009 | Pulau yang Bergeser 50 Km dalam 100 Tahun | FAKTADUNIA/T009_PULAU_YANG_BERGESER_50_KM_DALAM_100_TAHUN |
-| FAKTADUNIA | 010 | Negara yang Wilayahnya Ada di Dalam Negara Lain | FAKTADUNIA/T010_NEGARA_YANG_WILAYAHNYA_ADA_DI_DALAM_NEGARA_LAIN |
-| FAKTADUNIA | 011 | Jembatan yang Menghubungkan Dua Benua | FAKTADUNIA/T011_JEMBATAN_YANG_MENGHUBUNGKAN_DUA_BENUA |
-| FAKTADUNIA | 012 | Gurun yang Banjir Setahun Sekali dan Mekar Bunga | FAKTADUNIA/T012_GURUN_YANG_BANJIR_SETAHUN_SEKALI_DAN_MEKAR_BUNGA |
-| FAKTADUNIA | 013 | Negara yang Wilayahnya Lebih Kecil dari Kebun Binatang | FAKTADUNIA/T013_NEGARA_YANG_WILAYAHNYA_LEBIH_KECIL_DARI_KEBUN_BI |
-| FAKTADUNIA | 014 | Pulau yang Tidak Boleh Dikunjungi Manusia — Selamanya | FAKTADUNIA/T014_PULAU_YANG_TIDAK_BOLEH_DIKUNJUNGI_MANUSIA_SELAMA |
-| FAKTADUNIA | 015 | Kota di Bawah Laut yang Ditemukan Utuh | FAKTADUNIA/T015_KOTA_DI_BAWAH_LAUT_YANG_DITEMUKAN_UTUH |
-| FAKTADUNIA | 016 | Negara yang Pindah Ibukota karena Banjir | FAKTADUNIA/T016_NEGARA_YANG_PINDAH_IBUKOTA_KARENA_BANJIR |
-| FAKTADUNIA | 017 | Gunung Berapi yang Aktif tapi Dihuni 300.000 Orang | FAKTADUNIA/T017_GUNUNG_BERAPI_YANG_AKTIF_TAPI_DIHUNI_300_000_ORA |
-| FAKTADUNIA | 018 | Hutan yang Bisa Berjalan — Fenomena Pohon Berjalan Nyata | FAKTADUNIA/T018_HUTAN_YANG_BISA_BERJALAN_FENOMENA_POHON_BERJALAN |
-| FAKTADUNIA | 019 | Negara yang Zona Waktunya Berbeda 3,5 Jam dari Negara Tetangga | FAKTADUNIA/T019_NEGARA_YANG_ZONA_WAKTUNYA_BERBEDA_3_5_JAM_DARI_N |
-| FAKTADUNIA | 020 | Danau Dalam yang Menyimpan Air Tawar 20% Dunia | FAKTADUNIA/T020_DANAU_DALAM_YANG_MENYIMPAN_AIR_TAWAR_20_DUNIA |
-| FAKTADUNIA | 023 | Rekor Hujan Paling Deras di Bumi — Dalam Satu Menit | FAKTADUNIA/T023_REKOR_HUJAN_PALING_DERAS_DI_BUMI_DALAM_SATU_MENI |
 | FAKTADUNIA | 024 | Negara yang Tidak Punya Sungai Sama Sekali | FAKTADUNIA/T024_NEGARA_YANG_TIDAK_PUNYA_SUNGAI_SAMA_SEKALI |
 | FAKTADUNIA | 025 | Pulau yang Dibagi Dua Negara Berbeda | FAKTADUNIA/T025_PULAU_YANG_DIBAGI_DUA_NEGARA_BERBEDA |
 | FAKTADUNIA | 026 | Pohon Tertua di Bumi — Hidup sejak 5.000 Tahun Lalu | FAKTADUNIA/T026_POHON_TERTUA_DI_BUMI_HIDUP_SEJAK_5_000_TAHUN_LAL |
@@ -98,26 +78,6 @@ Jalankan ulang script setelah menambah topik; folder yang sudah ada tidak ditimp
 | FAKTADUNIA | 098 | Kota yang Dibangun Sempurna di Atas Jaringan Terowongan | FAKTADUNIA/T098_KOTA_YANG_DIBANGUN_SEMPURNA_DI_ATAS_JARINGAN_TER |
 | FAKTADUNIA | 099 | Rekor Migrasi Manusia Terbesar dalam Satu Peristiwa | FAKTADUNIA/T099_REKOR_MIGRASI_MANUSIA_TERBESAR_DALAM_SATU_PERIST |
 | FAKTADUNIA | 100 | Negara yang Ibukotanya Ada di Negara dengan Nama Sama | FAKTADUNIA/T100_NEGARA_YANG_IBUKOTANYA_ADA_DI_NEGARA_DENGAN_NAMA |
-| QISSAH | 001 | Saat Umar bin Khattab Menangis Sendirian di Malam Hari | QISSAH/T001_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN_DI_MALA |
-| QISSAH | 004 | Kisah Bilal bin Rabah: Budak yang Suaranya Mengguncang Dunia | QISSAH/T004_KISAH_BILAL_BIN_RABAH_BUDAK_YANG_SUARANYA_MENGGU |
-| QISSAH | 005 | Ketika Khalid bin Walid Memilih Mundur Demi Menyelamatkan Islam | QISSAH/T005_KETIKA_KHALID_BIN_WALID_MEMILIH_MUNDUR_DEMI_MENY |
-| QISSAH | 006 | Detik-Detik Nabi Yusuf Memafkan Saudara-Saudaranya Setelah 40 Tahun | QISSAH/T006_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA_SAUDARAN |
-| QISSAH | 007 | Kisah Ratu Bilqis dan Ujian yang Diberikan Nabi Sulaiman | QISSAH/T007_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIKAN_NABI |
-| QISSAH | 008 | Saat Pasukan Tartar Membantai Baghdad dalam 40 Hari | QISSAH/T008_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DALAM_40_H |
-| QISSAH | 009 | Abu Bakar as-Siddiq: Orang Pertama yang Percaya Tanpa Ragu | QISSAH/T009_ABU_BAKAR_AS_SIDDIQ_ORANG_PERTAMA_YANG_PERCAYA_T |
-| QISSAH | 010 | Detik-Detik Pembebasan Baitul Maqdis oleh Shalahuddin al-Ayyubi | QISSAH/T010_DETIK_DETIK_PEMBEBASAN_BAITUL_MAQDIS_OLEH_SHALAH |
-| QISSAH | 011 | Kisah Nabi Musa Saat Mendengar Suara Allah Langsung | QISSAH/T011_KISAH_NABI_MUSA_SAAT_MENDENGAR_SUARA_ALLAH_LANGS |
-| QISSAH | 012 | Teladan Fatimah az-Zahra: Putri yang Tidak Pernah Meminta untuk Dirinya Sendiri | QISSAH/T012_TELADAN_FATIMAH_AZ_ZAHRA_PUTRI_YANG_TIDAK_PERNAH |
-| QISSAH | 013 | Rahasia di Balik Perang Badar: 313 Melawan 1.000 | QISSAH/T013_RAHASIA_DI_BALIK_PERANG_BADAR_313_MELAWAN_1_000 |
-| QISSAH | 014 | Kisah Imam al-Ghazali: Ilmuwan yang Meninggalkan Segalanya di Puncak Karirnya | QISSAH/T014_KISAH_IMAM_AL_GHAZALI_ILMUWAN_YANG_MENINGGALKAN |
-| QISSAH | 015 | Penyebaran Islam di Tanah Jawa: Kisah Wali Songo yang Jarang Diceritakan | QISSAH/T015_PENYEBARAN_ISLAM_DI_TANAH_JAWA_KISAH_WALI_SONGO |
-| QISSAH | 017 | Kisah Ali bin Abi Thalib: Pemuda yang Tidur di Tempat Tidur Nabi Saat Ancaman Pembunuhan | QISSAH/T017_KISAH_ALI_BIN_ABI_THALIB_PEMUDA_YANG_TIDUR_DI_TE |
-| QISSAH | 018 | Kejayaan Andalusia: 800 Tahun Peradaban Islam di Eropa yang Terlupakan | QISSAH/T018_KEJAYAAN_ANDALUSIA_800_TAHUN_PERADABAN_ISLAM_DI |
-| QISSAH | 020 | Sunan Kalijaga dan Wayang: Cara Paling Cerdas Menyebarkan Islam di Nusantara | QISSAH/T020_SUNAN_KALIJAGA_DAN_WAYANG_CARA_PALING_CERDAS_MEN |
-| QISSAH | 021 | Detik-Detik Hijrah Nabi: Momen Paling Berbahaya dalam Sejarah Islam | QISSAH/T021_DETIK_DETIK_HIJRAH_NABI_MOMEN_PALING_BERBAHAYA_D |
-| QISSAH | 022 | Kisah Khadijah binti Khuwaylid: Perempuan Pertama yang Menjadi Benteng Islam | QISSAH/T022_KISAH_KHADIJAH_BINTI_KHUWAYLID_PEREMPUAN_PERTAMA |
-| QISSAH | 023 | Rahasia Arsitektur Masjid Córdoba yang Masih Membingungkan Arsitek Modern | QISSAH/T023_RAHASIA_ARSITEKTUR_MASJID_CORDOBA_YANG_MASIH_MEM |
-| QISSAH | 024 | Kisah Nabi Isa dan Mukjizat yang Jarang Disebut dalam Ceramah | QISSAH/T024_KISAH_NABI_ISA_DAN_MUKJIZAT_YANG_JARANG_DISEBUT |
 | QISSAH | 025 | Saat Hamzah bin Abdul Muthalib Gugur di Uhud: Duka Terdalam Nabi SAW | QISSAH/T025_SAAT_HAMZAH_BIN_ABDUL_MUTHALIB_GUGUR_DI_UHUD_DUK |
 | QISSAH | 027 | Teladan Uwais al-Qarni: Orang yang Dipuji Nabi tapi Tidak Pernah Bertemu Beliau | QISSAH/T027_TELADAN_UWAIS_AL_QARNI_ORANG_YANG_DIPUJI_NABI_TA |
 | QISSAH | 028 | Pembantaian Karbala: Tragedi yang Mengubah Sejarah Islam Selamanya | QISSAH/T028_PEMBANTAIAN_KARBALA_TRAGEDI_YANG_MENGUBAH_SEJARA |
@@ -176,26 +136,6 @@ Jalankan ulang script setelah menambah topik; folder yang sudah ada tidak ditimp
 | QISSAH | 098 | Detik-Detik Perang Uhud: Kesalahan yang Hampir Menghancurkan Islam Selamanya | QISSAH/T098_DETIK_DETIK_PERANG_UHUD_KESALAHAN_YANG_HAMPIR_ME |
 | QISSAH | 099 | Kisah Sunan Kalijaga dan Sang Hyang Wenang: Dialog Islam dengan Kepercayaan Lokal | QISSAH/T099_KISAH_SUNAN_KALIJAGA_DAN_SANG_HYANG_WENANG_DIALO |
 | QISSAH | 100 | Nabi Muhammad SAW: Satu Momen yang Tidak Pernah Diceritakan tapi Paling Menyentuh | QISSAH/T100_NABI_MUHAMMAD_SAW_SATU_MOMEN_YANG_TIDAK_PERNAH_D |
-| SAINS | 001 | Kenapa Otak Manusia Bisa Menipu Dirinya Sendiri | SAINS/T001_KENAPA_OTAK_MANUSIA_BISA_MENIPU_DIRINYA_SENDIRI |
-| SAINS | 004 | DNA Manusia 99% Sama dengan Simpanse — Lalu 1% Itu Apa? | SAINS/T004_DNA_MANUSIA_99_SAMA_DENGAN_SIMPANSE_LALU_1_ITU_A |
-| SAINS | 005 | Kenapa Kita Lupa Mimpi Begitu Bangun Tidur | SAINS/T005_KENAPA_KITA_LUPA_MIMPI_BEGITU_BANGUN_TIDUR |
-| SAINS | 006 | Suhu Paling Dingin di Alam Semesta Ada di Bumi, Bukan di Luar Angkasa | SAINS/T006_SUHU_PALING_DINGIN_DI_ALAM_SEMESTA_ADA_DI_BUMI_B |
-| SAINS | 007 | Cara Kerja Memori: Kenapa Ingatan Kita Bisa Palsu | SAINS/T007_CARA_KERJA_MEMORI_KENAPA_INGATAN_KITA_BISA_PALSU |
-| SAINS | 008 | Virus Bukan Makhluk Hidup, Tapi Bisa Mati — Ini Paradoksnya | SAINS/T008_VIRUS_BUKAN_MAKHLUK_HIDUP_TAPI_BISA_MATI_INI_PAR |
-| SAINS | 009 | Kenapa Air Laut Asin tapi Air Sungai Tidak | SAINS/T009_KENAPA_AIR_LAUT_ASIN_TAPI_AIR_SUNGAI_TIDAK |
-| SAINS | 010 | Misteri Tidur: Kenapa Semua Makhluk Hidup Harus Tidur | SAINS/T010_MISTERI_TIDUR_KENAPA_SEMUA_MAKHLUK_HIDUP_HARUS_T |
-| SAINS | 011 | Cara Kerja Antibiotik dan Kenapa Bakteri Semakin Kebal | SAINS/T011_CARA_KERJA_ANTIBIOTIK_DAN_KENAPA_BAKTERI_SEMAKIN |
-| SAINS | 012 | Fenomena Deja Vu: Otak Glitch atau Sesuatu yang Lebih Dalam | SAINS/T012_FENOMENA_DEJA_VU_OTAK_GLITCH_ATAU_SESUATU_YANG_L |
-| SAINS | 013 | Bintang yang Kamu Lihat Malam Ini Mungkin Sudah Mati Ribuan Tahun Lalu | SAINS/T013_BINTANG_YANG_KAMU_LIHAT_MALAM_INI_MUNGKIN_SUDAH |
-| SAINS | 016 | Kenapa Kita Menguap Saat Orang Lain Menguap | SAINS/T016_KENAPA_KITA_MENGUAP_SAAT_ORANG_LAIN_MENGUAP |
-| SAINS | 017 | Fosil Tertua di Bumi: Jejak Kehidupan 3,5 Miliar Tahun Lalu | SAINS/T017_FOSIL_TERTUA_DI_BUMI_JEJAK_KEHIDUPAN_3_5_MILIAR |
-| SAINS | 019 | Kenapa Ada Orang yang Tidak Bisa Merasakan Nyeri | SAINS/T019_KENAPA_ADA_ORANG_YANG_TIDAK_BISA_MERASAKAN_NYERI |
-| SAINS | 020 | Plankton: Makhluk Tak Kasat Mata yang Menghasilkan Setengah Oksigen Bumi | SAINS/T020_PLANKTON_MAKHLUK_TAK_KASAT_MATA_YANG_MENGHASILKA |
-| SAINS | 021 | Fisika Kuantum Untuk Pemula: Dunia di Bawah Atom Sangat Aneh | SAINS/T021_FISIKA_KUANTUM_UNTUK_PEMULA_DUNIA_DI_BAWAH_ATOM |
-| SAINS | 022 | Kenapa Manusia Punya Sidik Jari yang Berbeda-Beda | SAINS/T022_KENAPA_MANUSIA_PUNYA_SIDIK_JARI_YANG_BERBEDA_BED |
-| SAINS | 024 | Evolusi Manusia: Nenek Moyangmu Pernah Hidup Bersama Spesies Lain | SAINS/T024_EVOLUSI_MANUSIA_NENEK_MOYANGMU_PERNAH_HIDUP_BERS |
-| SAINS | 026 | Cara Kerja CRISPR: Menggunting dan Menempel DNA Seperti Dokumen | SAINS/T026_CARA_KERJA_CRISPR_MENGGUNTING_DAN_MENEMPEL_DNA_S |
-| SAINS | 027 | Kenapa Es di Kutub Mencair Lebih Cepat dari Prediksi | SAINS/T027_KENAPA_ES_DI_KUTUB_MENCAIR_LEBIH_CEPAT_DARI_PRED |
 | SAINS | 028 | Bagaimana Otak Menyimpan Kenangan Jangka Panjang | SAINS/T028_BAGAIMANA_OTAK_MENYIMPAN_KENANGAN_JANGKA_PANJANG |
 | SAINS | 029 | Neutrino: Partikel Hantu yang Menembus Bumi Tanpa Hambatan | SAINS/T029_NEUTRINO_PARTIKEL_HANTU_YANG_MENEMBUS_BUMI_TANPA |
 | SAINS | 030 | Kenapa Tubuh Kita Butuh Tidur REM | SAINS/T030_KENAPA_TUBUH_KITA_BUTUH_TIDUR_REM |
@@ -268,26 +208,6 @@ Jalankan ulang script setelah menambah topik; folder yang sudah ada tidak ditimp
 | SAINS | 098 | Kenapa Planet Berbentuk Bulat tapi Asteroid Tidak | SAINS/T098_KENAPA_PLANET_BERBENTUK_BULAT_TAPI_ASTEROID_TIDA |
 | SAINS | 099 | Cara Kerja Gen Dominan dan Resesif: Warisan Biologis dari Mendel | SAINS/T099_CARA_KERJA_GEN_DOMINAN_DAN_RESESIF_WARISAN_BIOLO |
 | SAINS | 100 | Kenapa Ilmu Pengetahuan Terus Berubah — dan Itu Bukan Kelemahannya | SAINS/T100_KENAPA_ILMU_PENGETAHUAN_TERUS_BERUBAH_DAN_ITU_BU |
-| SPORTFACTS | 001 | Rekor Gol Ronaldo yang Mustahil Dipecahkan dalam 50 Tahun | SPORTFACTS/T001_REKOR_GOL_RONALDO_YANG_MUSTAHIL_DIPECAHKAN_DALAM |
-| SPORTFACTS | 002 | Fakta Tersembunyi di Balik 8 Balon Emas Messi | SPORTFACTS/T002_FAKTA_TERSEMBUNYI_DI_BALIK_8_BALON_EMAS_MESSI |
-| SPORTFACTS | 003 | Momen Paling Tragis dalam Sejarah Sepak Bola Dunia | SPORTFACTS/T003_MOMEN_PALING_TRAGIS_DALAM_SEJARAH_SEPAK_BOLA_DUN |
-| SPORTFACTS | 004 | Kenapa Kevin Sanjaya Tidak Pernah Terkalahkan di Usia Emas | SPORTFACTS/T004_KENAPA_KEVIN_SANJAYA_TIDAK_PERNAH_TERKALAHKAN_DI |
-| SPORTFACTS | 005 | Statistik Mbappe yang Membuat Para Legenda Terdiam | SPORTFACTS/T005_STATISTIK_MBAPPE_YANG_MEMBUAT_PARA_LEGENDA_TERDI |
-| SPORTFACTS | 006 | Fakta Brutal di Balik Karier Mike Tyson yang Jarang Diceritakan | SPORTFACTS/T006_FAKTA_BRUTAL_DI_BALIK_KARIER_MIKE_TYSON_YANG_JAR |
-| SPORTFACTS | 007 | Rekor Michael Jordan yang Tidak Akan Pernah Disamai Siapapun | SPORTFACTS/T007_REKOR_MICHAEL_JORDAN_YANG_TIDAK_AKAN_PERNAH_DISA |
-| SPORTFACTS | 008 | Kisah di Balik Medali Emas Olimpiade yang Dicuri dari Indonesia | SPORTFACTS/T008_KISAH_DI_BALIK_MEDALI_EMAS_OLIMPIADE_YANG_DICURI |
-| SPORTFACTS | 009 | Statistik Hendra Setiawan yang Bikin Legenda Dunia Angkat Topi | SPORTFACTS/T009_STATISTIK_HENDRA_SETIAWAN_YANG_BIKIN_LEGENDA_DUN |
-| SPORTFACTS | 011 | Fakta Mengejutkan di Balik Final Piala Dunia 2022 yang Paling Dramatis | SPORTFACTS/T011_FAKTA_MENGEJUTKAN_DI_BALIK_FINAL_PIALA_DUNIA_202 |
-| SPORTFACTS | 012 | Rekor Formula 1 Michael Schumacher yang Baru Disamai 15 Tahun Kemudian | SPORTFACTS/T012_REKOR_FORMULA_1_MICHAEL_SCHUMACHER_YANG_BARU_DIS |
-| SPORTFACTS | 013 | Kisah Tragis Atlet Olimpiade yang Menang tapi Tidak Pernah Diakui Negaranya | SPORTFACTS/T013_KISAH_TRAGIS_ATLET_OLIMPIADE_YANG_MENANG_TAPI_TI |
-| SPORTFACTS | 014 | Kenapa Novak Djokovic Dianggap GOAT Tenis Meski Dibenci Separuh Dunia | SPORTFACTS/T014_KENAPA_NOVAK_DJOKOVIC_DIANGGAP_GOAT_TENIS_MESKI |
-| SPORTFACTS | 015 | Fakta Statistik NBA yang Membuat Fans LeBron James Terdiam | SPORTFACTS/T015_FAKTA_STATISTIK_NBA_YANG_MEMBUAT_FANS_LEBRON_JAM |
-| SPORTFACTS | 016 | Momen Paling Mengharukan dalam Sejarah Olimpiade yang Bikin Nangis | SPORTFACTS/T016_MOMEN_PALING_MENGHARUKAN_DALAM_SEJARAH_OLIMPIADE |
-| SPORTFACTS | 017 | Rekor Badminton Indonesia yang Tidak Diketahui Banyak Orang | SPORTFACTS/T017_REKOR_BADMINTON_INDONESIA_YANG_TIDAK_DIKETAHUI_B |
-| SPORTFACTS | 018 | Kisah di Balik Sepatu Botak Ronaldinho yang Mengubah Sepak Bola | SPORTFACTS/T018_KISAH_DI_BALIK_SEPATU_BOTAK_RONALDINHO_YANG_MENG |
-| SPORTFACTS | 019 | Fakta Tersembunyi di Balik Juara UFC Conor McGregor | SPORTFACTS/T019_FAKTA_TERSEMBUNYI_DI_BALIK_JUARA_UFC_CONOR_MCGRE |
-| SPORTFACTS | 020 | Kenapa Tim Nasional Indonesia Tidak Pernah Lolos Piala Dunia | SPORTFACTS/T020_KENAPA_TIM_NASIONAL_INDONESIA_TIDAK_PERNAH_LOLOS |
-| SPORTFACTS | 021 | Statistik Erling Haaland yang Membuat Semua Striker Merasa Tidak Berguna | SPORTFACTS/T021_STATISTIK_ERLING_HAALAND_YANG_MEMBUAT_SEMUA_STRI |
 | SPORTFACTS | 022 | Kisah Hidup Pelari Maraton yang Lari 42 Km Meski Kakinya Patah | SPORTFACTS/T022_KISAH_HIDUP_PELARI_MARATON_YANG_LARI_42_KM_MESKI |
 | SPORTFACTS | 024 | Rekor Steph Curry yang Membuktikan Tinggi Badan Bukan Segalanya | SPORTFACTS/T024_REKOR_STEPH_CURRY_YANG_MEMBUKTIKAN_TINGGI_BADAN |
 | SPORTFACTS | 025 | Kenapa Pep Guardiola Disebut Pelatih Paling Revolusioner Abad 21 | SPORTFACTS/T025_KENAPA_PEP_GUARDIOLA_DISEBUT_PELATIH_PALING_REVO |
@@ -365,26 +285,6 @@ Jalankan ulang script setelah menambah topik; folder yang sudah ada tidak ditimp
 | SPORTFACTS | 098 | Rekor Penguasaan Bola yang Membuktikan Statistik Bisa Berbohong | SPORTFACTS/T098_REKOR_PENGUASAAN_BOLA_YANG_MEMBUKTIKAN_STATISTIK |
 | SPORTFACTS | 099 | Kisah di Balik Sepak Bola Wanita yang Berkembang Pesat di Asia | SPORTFACTS/T099_KISAH_DI_BALIK_SEPAK_BOLA_WANITA_YANG_BERKEMBANG |
 | SPORTFACTS | 100 | Kenapa Generasi Emas Badminton Indonesia 2010-an Mustahil Terulang | SPORTFACTS/T100_KENAPA_GENERASI_EMAS_BADMINTON_INDONESIA_2010_AN |
-| TECH | 001 | Kenapa Apple Tidak Bisa Mengalahkan Google di AI | TECH/T001_KENAPA_APPLE_TIDAK_BISA_MENGALAHKAN_GOOGLE_DI_AI |
-| TECH | 002 | Cara Kerja ChatGPT: Dari Token ke Jawaban | TECH/T002_CARA_KERJA_CHATGPT_DARI_TOKEN_KE_JAWABAN |
-| TECH | 003 | Chip Apple M4 vs Snapdragon X Elite: Siapa Pemenangnya? | TECH/T003_CHIP_APPLE_M4_VS_SNAPDRAGON_X_ELITE_SIAPA_PEMENA |
-| TECH | 004 | Kenapa Startup AI Indonesia Bisa Kalah Sebelum Mulai | TECH/T004_KENAPA_STARTUP_AI_INDONESIA_BISA_KALAH_SEBELUM_M |
-| TECH | 005 | Meta Quest 3 vs Apple Vision Pro: Mana yang Layak Dibeli? | TECH/T005_META_QUEST_3_VS_APPLE_VISION_PRO_MANA_YANG_LAYAK |
-| TECH | 006 | Rahasia Bisnis Nvidia: Bagaimana Chip GPU Jadi Raja AI | TECH/T006_RAHASIA_BISNIS_NVIDIA_BAGAIMANA_CHIP_GPU_JADI_RA |
-| TECH | 007 | Kenapa Google Gemini Belum Bisa Kalahkan ChatGPT | TECH/T007_KENAPA_GOOGLE_GEMINI_BELUM_BISA_KALAHKAN_CHATGPT |
-| TECH | 008 | Masa Depan Baterai: Teknologi Solid-State yang Mengubah EV | TECH/T008_MASA_DEPAN_BATERAI_TEKNOLOGI_SOLID_STATE_YANG_ME |
-| TECH | 009 | Cara Kerja Deepfake dan Kenapa Semakin Sulit Dideteksi | TECH/T009_CARA_KERJA_DEEPFAKE_DAN_KENAPA_SEMAKIN_SULIT_DID |
-| TECH | 010 | Kenapa Xiaomi BYU Ancaman Nyata untuk Tesla di Asia | TECH/T010_KENAPA_XIAOMI_BYU_ANCAMAN_NYATA_UNTUK_TESLA_DI_A |
-| TECH | 011 | Rahasia Algoritma TikTok yang Membuat Kamu Terus Scroll | TECH/T011_RAHASIA_ALGORITMA_TIKTOK_YANG_MEMBUAT_KAMU_TERUS |
-| TECH | 012 | Quantum Computing Explained: Kapan Komputer Kuantum Siap? | TECH/T012_QUANTUM_COMPUTING_EXPLAINED_KAPAN_KOMPUTER_KUANT |
-| TECH | 013 | Kenapa Samsung Galaxy S25 Masih Relevan di Era AI Phone | TECH/T013_KENAPA_SAMSUNG_GALAXY_S25_MASIH_RELEVAN_DI_ERA_A |
-| TECH | 014 | Cara Kerja Neural Network: Otak Buatan yang Menggerakkan AI | TECH/T014_CARA_KERJA_NEURAL_NETWORK_OTAK_BUATAN_YANG_MENGG |
-| TECH | 015 | Startup Unicorn Indonesia yang Gagal: Pelajaran dari Ruangguru | TECH/T015_STARTUP_UNICORN_INDONESIA_YANG_GAGAL_PELAJARAN_D |
-| TECH | 016 | Masa Depan Pekerjaan: 10 Profesi yang Akan Diganti AI 2030 | TECH/T016_MASA_DEPAN_PEKERJAAN_10_PROFESI_YANG_AKAN_DIGANT |
-| TECH | 017 | Kenapa Apple Intelligence Telat Hadir di iPhone | TECH/T017_KENAPA_APPLE_INTELLIGENCE_TELAT_HADIR_DI_IPHONE |
-| TECH | 019 | Robotika Humanoid 2025: Tesla Optimus vs Figure 01 vs Boston Dynamics | TECH/T019_ROBOTIKA_HUMANOID_2025_TESLA_OPTIMUS_VS_FIGURE_0 |
-| TECH | 020 | Kenapa Indonesia Butuh Data Center Sendiri | TECH/T020_KENAPA_INDONESIA_BUTUH_DATA_CENTER_SENDIRI |
-| TECH | 021 | Cara Kerja Rekomendasi Netflix: Kenapa Susah Berhenti Nonton | TECH/T021_CARA_KERJA_REKOMENDASI_NETFLIX_KENAPA_SUSAH_BERH |
 | TECH | 022 | Kebocoran Data Terbesar Indonesia: Siapa yang Bertanggung Jawab? | TECH/T022_KEBOCORAN_DATA_TERBESAR_INDONESIA_SIAPA_YANG_BER |
 | TECH | 023 | AR Glasses 2025: Masa Depan yang Sudah Dekat | TECH/T023_AR_GLASSES_2025_MASA_DEPAN_YANG_SUDAH_DEKAT |
 | TECH | 024 | Kenapa Gojek Gagal Jadi Super App Sesungguhnya | TECH/T024_KENAPA_GOJEK_GAGAL_JADI_SUPER_APP_SESUNGGUHNYA |
@@ -463,26 +363,6 @@ Jalankan ulang script setelah menambah topik; folder yang sudah ada tidak ditimp
 | TECH | 098 | Kenapa Big Tech Rebutan Beli Startup AI Seharga Miliaran Dolar | TECH/T098_KENAPA_BIG_TECH_REBUTAN_BELI_STARTUP_AI_SEHARGA |
 | TECH | 099 | Masa Depan AI Agent: Ketika AI Bisa Bertindak Sendiri Tanpa Instruksi | TECH/T099_MASA_DEPAN_AI_AGENT_KETIKA_AI_BISA_BERTINDAK_SEN |
 | TECH | 100 | Kenapa 2025 Jadi Tahun Paling Penting dalam Sejarah Teknologi | TECH/T100_KENAPA_2025_JADI_TAHUN_PALING_PENTING_DALAM_SEJA |
-| EXPLAINED | 001 | 5 Kesalahan Fatal Git yang Bikin Tim Berantem | EXPLAINED/T001_5_KESALAHAN_FATAL_GIT_YANG_BIKIN_TIM_BERANTEM |
-| EXPLAINED | 002 | Kenapa Kode Kamu Lambat: Profiling Python dari Nol | EXPLAINED/T002_KENAPA_KODE_KAMU_LAMBAT_PROFILING_PYTHON_DARI_NO |
-| EXPLAINED | 003 | Docker Bukan Magic: Cara Kerja Container yang Sebenarnya | EXPLAINED/T003_DOCKER_BUKAN_MAGIC_CARA_KERJA_CONTAINER_YANG_SEB |
-| EXPLAINED | 004 | REST vs GraphQL: Kapan Harus Pakai yang Mana | EXPLAINED/T004_REST_VS_GRAPHQL_KAPAN_HARUS_PAKAI_YANG_MANA |
-| EXPLAINED | 005 | TypeScript Strict Mode: Kenapa Menyakitkan tapi Wajib | EXPLAINED/T005_TYPESCRIPT_STRICT_MODE_KENAPA_MENYAKITKAN_TAPI_W |
-| EXPLAINED | 006 | Git Rebase vs Merge: Mana yang Harus Kamu Pakai | EXPLAINED/T006_GIT_REBASE_VS_MERGE_MANA_YANG_HARUS_KAMU_PAKAI |
-| EXPLAINED | 007 | Cara Kerja JWT Token yang Kebanyakan Developer Salah Pahami | EXPLAINED/T007_CARA_KERJA_JWT_TOKEN_YANG_KEBANYAKAN_DEVELOPER_S |
-| EXPLAINED | 008 | VS Code Extension yang Mengubah Cara Aku Coding | EXPLAINED/T008_VS_CODE_EXTENSION_YANG_MENGUBAH_CARA_AKU_CODING |
-| EXPLAINED | 009 | SQL Index: Kenapa Query Kamu Lambat Padahal Sudah Benar | EXPLAINED/T009_SQL_INDEX_KENAPA_QUERY_KAMU_LAMBAT_PADAHAL_SUDAH |
-| EXPLAINED | 010 | Debugging 101: Cara Senior Developer Menemukan Bug Lebih Cepat | EXPLAINED/T010_DEBUGGING_101_CARA_SENIOR_DEVELOPER_MENEMUKAN_BU |
-| EXPLAINED | 011 | Python Virtual Environment: Kenapa Kamu Harus Berhenti Pakai System Python | EXPLAINED/T011_PYTHON_VIRTUAL_ENVIRONMENT_KENAPA_KAMU_HARUS_BER |
-| EXPLAINED | 012 | Cara Kerja Async/Await di JavaScript yang Sebenarnya | EXPLAINED/T012_CARA_KERJA_ASYNC_AWAIT_DI_JAVASCRIPT_YANG_SEBENA |
-| EXPLAINED | 013 | .env File: Kesalahan Keamanan yang Hampir Semua Junior Developer Lakukan | EXPLAINED/T013_ENV_FILE_KESALAHAN_KEAMANAN_YANG_HAMPIR_SEMUA_JU |
-| EXPLAINED | 014 | Redis Bukan Cuma Cache: Fitur yang Jarang Developer Tahu | EXPLAINED/T014_REDIS_BUKAN_CUMA_CACHE_FITUR_YANG_JARANG_DEVELOP |
-| EXPLAINED | 015 | Cara Deploy ke VPS Tanpa Panik: Panduan Lengkap Nginx + SSL | EXPLAINED/T015_CARA_DEPLOY_KE_VPS_TANPA_PANIK_PANDUAN_LENGKAP_N |
-| EXPLAINED | 016 | Kenapa Code Review Kamu Nggak Efektif (dan Cara Memperbaikinya) | EXPLAINED/T016_KENAPA_CODE_REVIEW_KAMU_NGGAK_EFEKTIF_DAN_CARA_M |
-| EXPLAINED | 017 | Monorepo vs Polyrepo: Mana yang Lebih Baik untuk Tim Kamu | EXPLAINED/T017_MONOREPO_VS_POLYREPO_MANA_YANG_LEBIH_BAIK_UNTUK |
-| EXPLAINED | 018 | HTTP Status Code yang Sering Disalahgunakan Developer | EXPLAINED/T018_HTTP_STATUS_CODE_YANG_SERING_DISALAHGUNAKAN_DEVE |
-| EXPLAINED | 019 | Cara Kerja DNS: Dari Domain ke IP dalam 60 Detik | EXPLAINED/T019_CARA_KERJA_DNS_DARI_DOMAIN_KE_IP_DALAM_60_DETIK |
-| EXPLAINED | 020 | Python Type Hints: Bukan Sekedar Dekorasi | EXPLAINED/T020_PYTHON_TYPE_HINTS_BUKAN_SEKEDAR_DEKORASI |
 | EXPLAINED | 021 | Cursor AI vs GitHub Copilot: Mana yang Lebih Worth It untuk Developer Indonesia | EXPLAINED/T021_CURSOR_AI_VS_GITHUB_COPILOT_MANA_YANG_LEBIH_WORT |
 | EXPLAINED | 022 | Database Transaction: Kenapa ACID Penting dan Kapan Bisa Diabaikan | EXPLAINED/T022_DATABASE_TRANSACTION_KENAPA_ACID_PENTING_DAN_KAP |
 | EXPLAINED | 023 | Cara Baca Error Stack Trace seperti Senior Developer | EXPLAINED/T023_CARA_BACA_ERROR_STACK_TRACE_SEPERTI_SENIOR_DEVEL |

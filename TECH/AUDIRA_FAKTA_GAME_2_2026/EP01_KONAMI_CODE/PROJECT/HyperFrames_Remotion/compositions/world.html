@@ -1,0 +1,127 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#07060F}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.04;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.5) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.35) 42%,rgba(0,0,0,0.35) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:VT323,monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#2EF2FF;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.scan{position:absolute;inset:0;z-index:8;pointer-events:none;background:repeating-linear-gradient(180deg,rgba(0,0,0,0) 0,rgba(0,0,0,0) 3px,rgba(0,0,0,.16) 3px,rgba(0,0,0,.16) 5px)}
+.p{background:rgba(9,6,24,.84);border:3px solid #2EF2FF;border-radius:20px;box-shadow:0 0 0 3px rgba(255,46,136,.55),0 0 34px rgba(46,242,255,.35),inset 0 0 40px rgba(46,242,255,.12);padding:26px 30px 24px;right:120px}
+.tag{display:inline-block;font-family:'Press Start 2P',monospace;font-size:22px;line-height:1;letter-spacing:.04em;color:#07060F;background:#FF2E88;padding:10px 14px 9px;margin-bottom:20px}
+.ttl{font-family:'Press Start 2P',monospace;font-size:62px;line-height:1.18;color:#FFD23F;text-shadow:-3px 0 0 #FF2E88,3px 0 0 #2EF2FF,0 0 22px rgba(255,210,63,.55)}
+.ttl span{color:#F4F1FF;font-size:48px}
+.h{font-family:VT323,monospace;font-size:72px;line-height:.98;color:#F4F1FF;text-shadow:-2px 0 0 #FF2E88,2px 0 0 #2EF2FF;margin-bottom:14px}
+.ln{font-family:VT323,monospace;font-size:62px;line-height:1.02;color:#F4F1FF;text-shadow:-2px 0 0 #FF2E88,2px 0 0 #2EF2FF;margin-top:8px}
+.ln.g{color:#5CFF7A}.ln.m{color:#FF7BB5}.ln.y{color:#FFD23F}
+.row{display:flex;flex-wrap:wrap;gap:16px;margin-top:6px}
+.c{font-family:'Press Start 2P',monospace;font-weight:400;font-size:30px;line-height:1;padding:14px 16px 12px;color:#2EF2FF;border:3px solid #2EF2FF;background:rgba(46,242,255,.1)}
+.c.y{color:#FFD23F;border-color:#FFD23F;background:rgba(255,210,63,.1)}
+.c.m{color:#FF2E88;border-color:#FF2E88;background:rgba(255,46,136,.12)}
+#chip{font-family:VT323,monospace;font-weight:400;font-size:30px;color:#2EF2FF;top:176px;opacity:.9;letter-spacing:.06em}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="85.32" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN CUPLIKAN GAME</div>
+
+<div class="scan"></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tag">FAKTA GAME 2 // EP 01</div>
+  <div class="ttl">KODE CHEAT<br><span>YANG LUPA<br>DIHAPUS</span></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="tag">SIAPA PEMBUATNYA?</div>
+  <div class="h">Kazuhisa Hashimoto, Konami</div>
+  <div class="row"><b class="c y" data-at="s2:Gradius" data-fx="blip">GRADIUS 1985</b><b class="c" data-at="s2:NES" data-fx="blip">&rarr; NES</b></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tag">MASALAHNYA</div>
+  <div class="h">Terlalu sulit, tak tamat saat diuji</div>
+  <div class="row"><b class="c m" data-at="s3:tamat" data-fx="stamp">GAME OVER</b></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="tag">JALAN PINTAS</div>
+  <div class="h" data-at="s4:kode" data-fx="blip">Kode saat game dijeda</div>
+  <div class="row"><b class="c y" data-at="s4:semua" data-fx="blip">SEMUA POWER-UP</b></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="tag">DIPILIH CERMAT</div>
+  <div class="ln g" data-at="s5:mudah" data-fx="blip">&#10003; Mudah diingat penguji</div>
+  <div class="ln m" data-at="s5:sulit" data-fx="blip">&#10007; Sulit ditekan tanpa sengaja</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="tag">RENCANA: DIHAPUS</div>
+  <div class="row"><b class="c m" data-at="s6:terlewat" data-fx="stamp">TERLEWAT</b></div>
+  <div class="ln" data-at="s6:membiarkannya" data-fx="blip">Dibiarkan: takut bug baru</div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tag">NES // 1986</div>
+  <div class="h">Rilis lengkap dengan kode</div>
+  <div class="row"><b class="c y" data-at="s7:Contra" data-fx="blip">CONTRA: 30 NYAWA</b></div>
+  <div class="ln" data-at="s7:Sekarang" data-fx="blip">Kini kejutan di banyak game &amp; situs</div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="tag">KAZUHISA HASHIMOTO // 2020</div>
+  <div class="h" data-at="s8:tapi" data-fx="blip">Kodenya masih hidup</div>
+  <div class="ln y" data-at="s8:Kamu" data-fx="blip">Kamu pernah coba di game apa?</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA GAME &middot; EP 01</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":6.671,"s2":6.831,"s2e":18.848,"s3":19.008,"s3e":27.875,"s4":28.035,"s4e":38.41,"s5":38.57,"s5e":45.147,"s6":45.307,"s6e":58.515,"s7":58.675,"s7e":75.971,"s8":76.131,"s8e":82.324,"end":82.324,"dur":85.32,"outro":82.574},AT={"s1:Atas":0.123,"s1:atas":0.479,"s1:bawah#1":0.835,"s1:bawah#2":1.176,"s1:kiri#1":1.563,"s1:kanan#1":2.011,"s1:kiri#2":2.553,"s1:kanan#2":2.909,"s1:B":3.358,"s1:A":3.482,"s2:Kazuhisa":7.438,"s2:Konami":8.63,"s2:memindahkan":11.726,"s2:Gradius":13.134,"s2:1985":14.311,"s2:Nintendo":16.99,"s2:NES":17.733,"s3:sanggup":23.639,"s4:kode":30.725,"s4:dijeda":32.319,"s4:Hasilnya":33.131,"s4:semua":33.905,"s4:langsung":34.741,"s4:padahal":36.01,"s4:sedikit#2":38.054,"s5:penguji":41.509,"s5:sulit":42.747,"s6:terlewat":49.935,"s6:diproduksi":52.919,"s6:membiarkannya":55.466,"s6:bug":57.927,"s7:Amerika":64.716,"s7:Contra":67.085,"s7:tiga":68.37,"s7:nyawa":68.849,"s7:Sekarang":69.454,"s7:kejutan":71.218,"s7:Bank":75.321,"s8:tapi":77.958,"s8:kodenya":78.144,"s8:AUDIRA":80.682,"s3:tamat":24.8,"s5:mudah":40.936,"s8:Kamu":79.011},DUR=85.32,OUT=82.574;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ blip:(e,t)=>tl.fromTo(e,{opacity:0,x:-36},{opacity:1,x:0,duration:.2,ease:'steps(4)'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{scaleY:.015,scaleX:1.05,opacity:1,filter:'brightness(3.2)'},{scaleY:1,scaleX:1,filter:'brightness(1)',duration:.3,ease:'power3.out'},a-.04),POUT=(tl,p,b)=>{tl.to(p,{scaleY:.015,filter:'brightness(3.2)',duration:.12,ease:'power2.in'},b-.2);tl.to(p,{scaleX:0,opacity:0,duration:.08,ease:'power2.in'},b-.08);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{clipPath:'inset(50% 0% 50% 0%)'});tl.to('#outro',{clipPath:'inset(0% 0% 0% 0%)',duration:.4,ease:'power3.out'},OUT-.1);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP01_KONAMI_CODE")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

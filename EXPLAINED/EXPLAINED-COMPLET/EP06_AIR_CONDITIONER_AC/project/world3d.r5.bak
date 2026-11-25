@@ -1,0 +1,735 @@
+// EP06 AIR CONDITIONER (PAPERWORLD): a warm cut-paper diorama. Every object is extruded cardstock with a paler cut
+// edge, fibre grain and soft contact shadows; air is drawn as moving paper ribbons (mint = cold, coral = warm).
+// Three dioramas on one long paper table (left to right):
+//   SHOP  x=-26  Brooklyn print shop, 1902: press, hanging sheets that swell in humid air, a misregistered print on an
+//                easel, AUDIRA PERCETAKAN sign, the first humidity machine (coil, fan, duct) with a paper engineer + plate
+//   HOUSE x=0    a modern bedroom cutaway: split indoor unit (front panel lifts: evaporator fins, copper tubes, cross-flow
+//                fan, drip tray), drain hose through the wall into a jar, copper pipes to the outdoor unit (fan, compressor,
+//                condenser, AUDIRA plate), an inverter gauge board (room thermometer + compressor speed dial)
+//   PK    x=15   a paper bar chart: 1 PK, 750 W of electricity next to 2.6 kW of heat built from 750 W blocks
+// Generic products only. Every value is a pure function of t.
+import * as THREE from "./three.module.js";
+import { ShaderPass } from "./ShaderPass.js";
+import { mulberry, ramp, back, eout, clamp01, canvasTex, track, stage } from "./lib3d.js";
+
+const P = {
+  ivory: "#f3ead9", ivoryL: "#faf4e8", ivoryS: "#e5d8c1", coral: "#e3806a", coralD: "#c4614f", coralL: "#f0a892",
+  mint: "#9dd1bb", mintD: "#6eaa93", mintL: "#cbe8da", gold: "#e7b54a", goldD: "#c38f2b", goldL: "#f2d58e",
+  cobalt: "#5f7cb6", cobaltD: "#435e95", cobaltL: "#9eb2da", brown: "#7d5843", brownD: "#523729", brownL: "#ae8a70",
+  skin: "#f3d6bf", ink: "#3b2a22", ice: "#c6ecf7", iceD: "#86c9e2", copper: "#c97a45", red: "#d9533c", orange: "#ee8a3a",
+};
+const SERIF = "Georgia, 'Times New Roman', serif", SANS = "'Arial Black', Arial, Helvetica, sans-serif", MONO = "'Courier New', monospace";
+const SHOP = -26, PKX = 15;
+
+const NanGuard = { uniforms: { tDiffuse: { value: null } }, vertexShader: `varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`,
+  fragmentShader: `uniform sampler2D tDiffuse;varying vec2 vUv;void main(){vec4 c=texture2D(tDiffuse,vUv);if(!(c.r==c.r&&c.g==c.g&&c.b==c.b)||c.r>1e4||c.g>1e4||c.b>1e4)c=vec4(0.0,0.0,0.0,1.0);gl_FragColor=max(c,vec4(0.0));}` };
+// Warm documentary paper grade: lifted warm shadows, cream highlights, gentle saturation, cut flash.
+const Grade = { uniforms: { tDiffuse: { value: null }, flash: { value: 0 } }, vertexShader: NanGuard.vertexShader,
+  fragmentShader: `uniform sampler2D tDiffuse;uniform float flash;varying vec2 vUv;void main(){vec3 c=clamp(texture2D(tDiffuse,vUv).rgb,0.0,1.0);
+  float l=dot(c,vec3(0.299,0.587,0.114));c=mix(c,c*vec3(1.04,1.0,0.92),0.6);c+=vec3(0.035,0.022,0.012)*(1.0-l);
+  c=mix(vec3(l),c,1.08);c=(c-0.5)*1.08+0.5;c=mix(c,vec3(1.0,0.97,0.9),flash);gl_FragColor=vec4(clamp(c,0.0,1.0),1.0);}` };
+
+// ---------- paper stock ----------
+let GR = null;
+function grain() {
+  if (GR) return GR;
+  const mk = (seed, bump) => {
+    const R = mulberry(seed);
+    const tx = canvasTex(512, 512, (g, w, h) => {
+      g.fillStyle = bump ? "#808080" : "#f2f2f2"; g.fillRect(0, 0, w, h);
+      for (let i = 0; i < 220; i++) {
+        const x = R() * w, y = R() * h, r = 12 + R() * 46, a = bump ? 0.02 : 0.014;
+        const c = R() < 0.5 ? `rgba(0,0,0,${a})` : `rgba(255,255,255,${a * 1.6})`;
+        for (const ox of [-w, 0, w]) for (const oy of [-h, 0, h]) { const gr = g.createRadialGradient(x + ox, y + oy, 0, x + ox, y + oy, r); gr.addColorStop(0, c); gr.addColorStop(1, "rgba(0,0,0,0)"); g.fillStyle = gr; g.fillRect(x + ox - r, y + oy - r, 2 * r, 2 * r); }
+      }
+      g.lineCap = "round";
+      for (let i = 0; i < 1800; i++) {
+        const x = R() * w, y = R() * h, l = 4 + R() * R() * 28, an = R() * 6.28, al = (bump ? 0.24 : 0.12) * (0.4 + R());
+        g.strokeStyle = R() < 0.6 ? `rgba(255,255,255,${al})` : `rgba(0,0,0,${al * 0.8})`; g.lineWidth = 0.6 + R();
+        g.beginPath(); g.moveTo(x, y); g.quadraticCurveTo(x + Math.cos(an) * l * 0.5 + (R() - 0.5) * 6, y + Math.sin(an) * l * 0.5 + (R() - 0.5) * 6, x + Math.cos(an) * l, y + Math.sin(an) * l); g.stroke();
+      }
+    }, [0.4, 0.4]);
+    if (bump) tx.colorSpace = THREE.NoColorSpace;
+    return tx;
+  };
+  GR = { a: mk(7, false), b: mk(19, true) };
+  return GR;
+}
+const MC = new Map();
+function pm(color, { rough = 0.92, emi = null, ei = 0, ds = false, flat = false, unique = false } = {}) {
+  const k = [color, rough, emi, ei, ds, flat].join("|");
+  if (!unique && MC.has(k)) return MC.get(k);
+  const G = grain();
+  const m = new THREE.MeshStandardMaterial({ color: new THREE.Color(color), map: flat ? null : G.a, bumpMap: flat ? null : G.b, bumpScale: 0.7, roughness: rough, metalness: 0, side: ds ? THREE.DoubleSide : THREE.FrontSide });
+  if (emi) { m.emissive = new THREE.Color(emi); m.emissiveIntensity = ei; }
+  if (!unique) MC.set(k, m);
+  return m;
+}
+const edgeOf = (c) => "#" + new THREE.Color(c).lerp(new THREE.Color(0xfff8ec), 0.5).getHexString();
+const S = {
+  rect: (w, h, cx = 0, cy = 0) => { const s = new THREE.Shape(); s.moveTo(cx - w / 2, cy - h / 2); s.lineTo(cx + w / 2, cy - h / 2); s.lineTo(cx + w / 2, cy + h / 2); s.lineTo(cx - w / 2, cy + h / 2); s.closePath(); return s; },
+  rrect: (w, h, r, cx = 0, cy = 0) => { const s = new THREE.Shape(), x = cx - w / 2, y = cy - h / 2; s.moveTo(x + r, y); s.lineTo(x + w - r, y); s.quadraticCurveTo(x + w, y, x + w, y + r); s.lineTo(x + w, y + h - r); s.quadraticCurveTo(x + w, y + h, x + w - r, y + h); s.lineTo(x + r, y + h); s.quadraticCurveTo(x, y + h, x, y + h - r); s.lineTo(x, y + r); s.quadraticCurveTo(x, y, x + r, y); return s; },
+  circle: (r, cx = 0, cy = 0) => { const s = new THREE.Shape(); s.absarc(cx, cy, r, 0, Math.PI * 2, false); return s; },
+  arch: (w, h, cx = 0, by = 0) => { const s = new THREE.Shape(); s.moveTo(cx - w / 2, by); s.lineTo(cx + w / 2, by); s.lineTo(cx + w / 2, by + h - w / 2); s.absarc(cx, by + h - w / 2, w / 2, 0, Math.PI, false); s.closePath(); return s; },
+  poly: (pts) => { const s = new THREE.Shape(); pts.forEach(([x, y], i) => (i ? s.lineTo(x, y) : s.moveTo(x, y))); s.closePath(); return s; },
+  drop: (r) => { const s = new THREE.Shape(); s.moveTo(0, r * 2.1); s.quadraticCurveTo(r * 1.05, r * 0.6, r, 0); s.absarc(0, 0, r, 0, -Math.PI, true); s.quadraticCurveTo(-r * 1.05, r * 0.6, 0, r * 2.1); return s; },
+};
+function holes(shape, ...hs) { for (const h of hs) { const p = new THREE.Path(); p.setFromPoints(h.getPoints(32)); shape.holes.push(p); } return shape; }
+function mesh(geo, mat, parent, x = 0, y = 0, z = 0) { const m = new THREE.Mesh(geo, mat); m.position.set(x, y, z); m.castShadow = m.receiveShadow = true; if (parent) parent.add(m); return m; }
+function cut(shape, color, parent, x = 0, y = 0, z = 0, d = 0.05, o = {}) {
+  const geo = new THREE.ExtrudeGeometry(shape, { depth: d, bevelEnabled: false, curveSegments: 28 }); geo.translate(0, 0, -d / 2);
+  const m = mesh(geo, [o.mat || pm(color, o), pm(o.edge || edgeOf(color), { flat: true })], parent, x, y, z);
+  return m;
+}
+const card = (w, h, color, parent, x, y, z, d = 0.05, o) => cut(S.rect(w, h), color, parent, x, y, z, d, o);
+const pbox = (w, h, d, color, parent, x, y, z, o) => mesh(new THREE.BoxGeometry(w, h, d), pm(color, o), parent, x, y, z);
+const pcyl = (rt, rb, h, color, parent, x, y, z, seg = 32, o) => mesh(new THREE.CylinderGeometry(rt, rb, h, seg), pm(color, o), parent, x, y, z);
+function inkTex(w, h, draw, bg = null) { return canvasTex(w, h, (g) => { g.clearRect(0, 0, w, h); if (bg) { g.fillStyle = bg; g.fillRect(0, 0, w, h); } draw(g, w, h); }); }
+// Printed text on a plane, lit like the paper it sits on.
+function print(tex, w, h, parent, x, y, z, o = {}) {
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshStandardMaterial({ map: tex, transparent: true, roughness: 0.9, depthWrite: false, emissive: o.emi ? new THREE.Color(o.emi) : new THREE.Color(0), emissiveMap: o.emi ? tex : null, emissiveIntensity: o.ei || 0, side: o.ds ? THREE.DoubleSide : THREE.FrontSide }));
+  m.position.set(x, y, z); m.renderOrder = 2; if (parent) parent.add(m); return m;
+}
+const txt = (g, s, x, y, font, color, align = "center") => { g.font = font; g.fillStyle = color; g.textAlign = align; g.textBaseline = "middle"; g.fillText(s, x, y); };
+
+// ---------- paper puppet: layered card silhouettes, V-folded torso with a centre crease ----------
+function puppet({ coat, pants, shirt = P.ivoryL, skin = P.skin, hair = P.brownD, hat = null, apron = null, tie = P.coralD, fem = false }) {
+  const G = new THREE.Group();
+  const leg = (sx) => {
+    const hip = new THREE.Group(); hip.position.set(sx * 0.1, 0.9, -0.02); G.add(hip);
+    cut(S.rrect(0.16, 0.48, 0.05, 0, -0.2), pants, hip, 0, 0, 0, 0.06);
+    const kn = new THREE.Group(); kn.position.y = -0.43; hip.add(kn);
+    cut(S.rrect(0.14, 0.46, 0.05, 0, -0.2), pants, kn, 0, 0, 0, 0.06);
+    cut(S.rrect(0.22, 0.1, 0.045, sx * 0.03, -0.44), P.ink, kn, 0, 0, 0.01, 0.08);
+    return { hip, kn };
+  };
+  const legL = leg(-1), legR = leg(1);
+  const half = (s, color, z, top = 1.5) => { const sh = S.poly([[0, 0.84], [s * 0.18, 0.84], [s * 0.28, 1.42], [s * 0.12, top], [0, top]]); const m = cut(sh, color, G, 0, 0, z, 0.05); m.rotation.y = -s * 0.32; return m; };
+  half(-1, coat, 0); half(1, coat, 0);
+  // shirt front, tie and lapels: smaller cards layered in front of the folded coat
+  cut(S.poly([[-0.075, 1.5], [0.075, 1.5], [0, 1.18]]), shirt, G, 0, 0, 0.045, 0.02);
+  cut(S.poly([[-0.025, 1.46], [0.025, 1.46], [0.035, 1.24], [0, 1.18], [-0.035, 1.24]]), tie, G, 0, 0, 0.06, 0.02);
+  for (const s of [-1, 1]) { const l = cut(S.poly([[s * 0.075, 1.5], [s * 0.13, 1.47], [s * 0.04, 1.2]]), edgeOf(coat), G, 0, 0, 0.052, 0.02); }
+  for (const yb of [1.1, 0.98]) cut(S.circle(0.018), P.ink, G, 0.05, yb, 0.06, 0.02);
+  if (apron) cut(S.poly([[-0.17, 1.28], [0.17, 1.28], [0.21, 0.72], [-0.21, 0.72]]), apron, G, 0, 0, 0.07, 0.03);
+  cut(S.rrect(0.08, 0.1, 0.02, 0, 1.53), skin, G, 0, 0, -0.01, 0.04);
+  const hp = new THREE.Group(); hp.position.set(0, 1.56, 0); G.add(hp);
+  cut(S.circle(0.15, 0, 0.14), skin, hp, 0, 0, 0, 0.06);
+  for (const s of [-1, 1]) cut(S.circle(0.035, s * 0.15, 0.13), skin, hp, 0, 0, -0.01, 0.04);
+  // printed face + folded nose
+  const face = inkTex(128, 128, (g) => {
+    g.fillStyle = "#3b2a22"; for (const s of [-1, 1]) { g.beginPath(); g.ellipse(64 + s * 24, 62, 6, 8, 0, 0, 7); g.fill(); }
+    g.fillStyle = "rgba(227,128,106,.55)"; for (const s of [-1, 1]) { g.beginPath(); g.ellipse(64 + s * 36, 84, 11, 7, 0, 0, 7); g.fill(); }
+    g.strokeStyle = "#7d5843"; g.lineWidth = 4; g.lineCap = "round"; g.beginPath(); g.arc(64, 88, 13, 0.3, 2.84); g.stroke();
+  });
+  print(face, 0.27, 0.27, hp, 0, 0.13, 0.036);
+  cut(S.poly([[0, 0.17], [0.03, 0.09], [-0.01, 0.1]]), edgeOf(skin), hp, 0, 0, 0.05, 0.02);
+  // hair: a cut cap layered over the head
+  const hs = fem ? S.poly([[-0.17, 0.02], [-0.18, 0.2], [-0.1, 0.3], [0.05, 0.31], [0.16, 0.24], [0.18, 0.05], [0.12, 0.2], [-0.05, 0.22], [-0.12, 0.14]]) : S.poly([[-0.16, 0.12], [-0.15, 0.24], [-0.05, 0.31], [0.08, 0.31], [0.16, 0.23], [0.16, 0.14], [0.1, 0.22], [-0.02, 0.24], [-0.1, 0.2]]);
+  cut(hs, hair, hp, 0, 0, 0.042, 0.03);
+  if (hat) { cut(S.rrect(0.42, 0.05, 0.02, 0, 0.29), hat, hp, 0, 0, 0.05, 0.05); cut(S.arch(0.26, 0.22, 0, 0.3), hat, hp, 0, 0, 0.04, 0.05); cut(S.rect(0.27, 0.035, 0, 0.33), P.coralD, hp, 0, 0, 0.068, 0.02); }
+  const arm = (s) => {
+    const sh = new THREE.Group(); sh.position.set(s * 0.27, 1.43, 0.07); G.add(sh);
+    cut(S.rrect(0.13, 0.4, 0.05, 0, -0.16), coat, sh, 0, 0, 0, 0.05);
+    const el = new THREE.Group(); el.position.y = -0.33; sh.add(el);
+    cut(S.rrect(0.115, 0.34, 0.045, 0, -0.14), coat, el, 0, 0, 0.01, 0.05);
+    cut(S.rect(0.12, 0.04, 0, -0.29), shirt, el, 0, 0, 0.02, 0.03);
+    cut(S.circle(0.055, 0, -0.35), skin, el, 0, 0, 0.02, 0.05);
+    return { sh, el };
+  };
+  return { G, legL, legR, armL: arm(-1), armR: arm(1), head: hp };
+}
+function pose(p, { aL = 0.15, aR = -0.15, eL = 0, eR = 0, hz = 0, sit = 0 }) {
+  p.armL.sh.rotation.z = -aL; p.armR.sh.rotation.z = -aR; p.armL.el.rotation.z = -eL; p.armR.el.rotation.z = -eR;
+  p.head.rotation.z = hz;
+  p.legL.hip.rotation.x = -1.45 * sit; p.legR.hip.rotation.x = -1.45 * sit; p.legL.kn.rotation.x = 1.45 * sit; p.legR.kn.rotation.x = 1.45 * sit;
+}
+
+// ---------- moving paper ribbons (air) ----------
+const _a = new THREE.Vector3(), _b = new THREE.Vector3(), _T = new THREE.Vector3(), _s = new THREE.Vector3(), _n = new THREE.Vector3(), _Z = new THREE.Vector3(0, 0, 1), _Y = new THREE.Vector3(0, 1, 0);
+function ribbon(parent, path, { color, width = 0.12, len = 0.4, n = 30, speed = 0.3, phase = 0, twist = 0.6, ref = _Z }) {
+  const pos = new Float32Array((n + 1) * 6), geo = new THREE.BufferGeometry(), idx = [];
+  geo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+  for (let i = 0; i < n; i++) { const a = 2 * i; idx.push(a, a + 1, a + 2, a + 1, a + 3, a + 2); }
+  geo.setIndex(idx);
+  const m = new THREE.Mesh(geo, pm(color, { ds: true, flat: true, rough: 0.85 })); m.frustumCulled = false; m.castShadow = true; parent.add(m);
+  return (t, amt) => {
+    if (amt <= 0.01) { m.visible = false; return; }
+    m.visible = true;
+    const head = ((t * speed + phase) % 1 + 1) % 1 * (1 + len);
+    for (let i = 0; i <= n; i++) {
+      const u = head - len + (len * i) / n, uc = Math.min(1, Math.max(0, u));
+      path(Math.max(0, uc - 0.01), t, _a); path(Math.min(1, uc + 0.01), t, _b); _T.subVectors(_b, _a).normalize();
+      path(uc, t, _a);
+      _s.crossVectors(_T, ref); if (_s.lengthSq() < 1e-6) _s.crossVectors(_T, _Y); _s.normalize(); _n.crossVectors(_s, _T);
+      const th = twist * Math.sin(u * 9 + t * 2 + phase * 6);
+      const w = (u < 0 || u > 1 ? 0 : 1) * width * amt * Math.sin((Math.PI * i) / n) * 0.5;
+      const sx = (_s.x * Math.cos(th) + _n.x * Math.sin(th)) * w, sy = (_s.y * Math.cos(th) + _n.y * Math.sin(th)) * w, sz = (_s.z * Math.cos(th) + _n.z * Math.sin(th)) * w;
+      pos.set([_a.x + sx, _a.y + sy, _a.z + sz, _a.x - sx, _a.y - sy, _a.z - sz], i * 6);
+    }
+    geo.attributes.position.needsUpdate = true; geo.computeVertexNormals();
+  };
+}
+const curve = (pts) => new THREE.CatmullRomCurve3(pts.map((p) => new THREE.Vector3(...p)), false, "catmullrom", 0.5);
+// a path along a curve with a travelling wave on one axis
+const wavy = (cv, amp, ax = "y", k = 10, w = 3, ph = 0) => (u, t, o) => { cv.getPoint(u, o); o[ax] += amp * Math.sin(u * k - t * w + ph) * Math.sin(Math.PI * u); return o; };
+
+// ---------- flow arrows riding a pipe ----------
+function arrows(parent, cv, n, color, r) {
+  const geo = new THREE.ConeGeometry(r, r * 2.4, 10); geo.rotateX(Math.PI / 2);
+  const im = new THREE.InstancedMesh(geo, pm(color, { flat: true, rough: 0.7, emi: color, ei: 0.25 }), n); im.frustumCulled = false; im.castShadow = true; parent.add(im);
+  const o = new THREE.Object3D(), tg = new THREE.Vector3();
+  return (t, amt, speed = 0.12, dir = 1) => {
+    im.visible = amt > 0.01;
+    for (let i = 0; i < n; i++) {
+      let u = ((i / n + dir * t * speed) % 1 + 1) % 1;
+      cv.getPoint(u, o.position); cv.getTangent(u, tg); if (dir < 0) tg.negate();
+      o.lookAt(o.position.x + tg.x, o.position.y + tg.y, o.position.z + tg.z);
+      o.scale.setScalar(Math.max(0.001, amt * Math.min(1, Math.sin(Math.PI * u) * 4))); o.updateMatrix(); im.setMatrixAt(i, o.matrix);
+    }
+    im.instanceMatrix.needsUpdate = true;
+  };
+}
+
+const REAMC = ["#f6efe0", "#c9a47a", "#cfe0ea"];
+function ream(parent, x, y, z, c, ry = 0) { const g = new THREE.Group(); g.position.set(x, y, z); g.rotation.y = ry; parent.add(g); pbox(0.86, 0.11, 0.58, c, g, 0, -0.01, 0); pbox(0.8, 0.03, 0.54, "#fffaf0", g, 0.02, 0.055, 0.01, { flat: true }); card(0.86, 0.012, edgeOf(c), g, 0, 0.03, 0.292, 0.004); return g; }
+// ---------- backdrop pieces ----------
+function bush(parent, x, z, s, c1, c2, seed) {
+  const R = mulberry(seed), g = new THREE.Group(); g.position.set(x, 0, z); g.scale.setScalar(s); parent.add(g);
+  for (let i = 0; i < 4; i++) cut(S.circle(0.28 + R() * 0.16), i % 2 ? c1 : c2, g, (R() - 0.5) * 0.7, 0.2 + R() * 0.2, (i - 2) * 0.05, 0.05);
+  return g;
+}
+function tree(parent, x, z, h, c1, c2, trunk = P.brown) {
+  const g = new THREE.Group(); g.position.set(x, 0, z); parent.add(g);
+  card(0.14, h * 0.5, trunk, g, 0, h * 0.25, 0, 0.06);
+  cut(S.circle(h * 0.28), c1, g, 0, h * 0.62, 0.05, 0.06); cut(S.circle(h * 0.2), c2, g, h * 0.16, h * 0.5, 0.1, 0.06); cut(S.circle(h * 0.18), c2, g, -h * 0.15, h * 0.72, 0.1, 0.06);
+  return g;
+}
+function cloud(parent, x, y, z, s, c = P.ivoryL) {
+  const g = new THREE.Group(); g.position.set(x, y, z); g.scale.setScalar(s); parent.add(g);
+  cut(S.circle(0.5), c, g, 0, 0, 0, 0.06); cut(S.circle(0.38), c, g, -0.55, -0.12, 0.02, 0.06); cut(S.circle(0.4), c, g, 0.55, -0.1, 0.02, 0.06); card(1.7, 0.36, c, g, 0, -0.32, 0.03, 0.06);
+  const th = new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.006, 6, 4), pm(P.ink, { flat: true })); th.position.y = 3.3; g.add(th);
+  return g;
+}
+const planks = (base, line) => canvasTex(512, 512, (g, w, h) => { g.fillStyle = base; g.fillRect(0, 0, w, h); for (let i = 0; i < 8; i++) { g.fillStyle = i % 2 ? "rgba(0,0,0,.05)" : "rgba(255,255,255,.05)"; g.fillRect(0, i * 64, w, 64); g.fillStyle = line; g.fillRect(0, i * 64, w, 3); g.fillRect(((i * 197) % 400) + 40, i * 64, 3, 64); } }, [3, 3]);
+
+export function create(canvas, K, AT) {
+  const { r, scene, cam, comp, bp } = stage(canvas, { bg: 0xeadcc3, fog: 0.016, exp: 0.82, bloom: [0.1, 0.45, 0.97] });
+  r.toneMapping = THREE.NeutralToneMapping; r.toneMappingExposure = 0.86;
+  r.shadowMap.type = THREE.PCFSoftShadowMap;
+  comp.insertPass(new ShaderPass(NanGuard), 1);
+  const gradeP = new ShaderPass(Grade); comp.addPass(gradeP);
+  {
+    const pmg = new THREE.PMREMGenerator(r), s = new THREE.Scene(); s.background = new THREE.Color(0x6a5a48);
+    for (const [w, h, c, i, x, y, z] of [[6, 3, 0xfff1dc, 1.6, -3, 4, 3], [4, 4, 0xe9eef6, 0.8, 4, 2, 2], [8, 2, 0xcdb08f, 0.6, 0, -3, 0]]) { const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshBasicMaterial({ color: new THREE.Color(c).multiplyScalar(i), side: THREE.DoubleSide })); m.position.set(x, y, z); m.lookAt(0, 0, 0); s.add(m); }
+    scene.environment = pmg.fromScene(s, 0.04).texture; pmg.dispose();
+  }
+  scene.environmentIntensity = 0.25;
+  const A = (k) => AT[k];
+  const hemi = new THREE.HemisphereLight(0xfdf6ea, 0xcdb08f, 1.45); scene.add(hemi);
+  const key = new THREE.DirectionalLight(0xfff1dc, 3.3); key.castShadow = true; key.shadow.mapSize.set(2048, 2048);
+  Object.assign(key.shadow.camera, { left: -9, right: 9, top: 9, bottom: -9, near: 1, far: 60 }); key.shadow.bias = -0.0006; key.shadow.normalBias = 0.02; key.shadow.radius = 5;
+  scene.add(key); scene.add(key.target);
+  const fill = new THREE.DirectionalLight(0xe9eef6, 0.5); fill.position.set(10, 6, 8); scene.add(fill);
+
+  // long paper table under everything
+  pbox(80, 0.4, 14, P.brownL, scene, -5, -0.5, 0);
+
+  // =============================== SHOP (1902) ===============================
+  const SH = new THREE.Group(); SH.position.x = SHOP; scene.add(SH);
+  pbox(9.6, 0.3, 6.8, P.brownD, SH, 0, -0.15, 0);
+  const fl = new THREE.Mesh(new THREE.PlaneGeometry(9.4, 6.6), new THREE.MeshStandardMaterial({ map: planks("#b58a62", "rgba(82,55,41,.55)"), roughness: 0.9 })); fl.rotation.x = -Math.PI / 2; fl.position.y = 0.005; fl.receiveShadow = true; SH.add(fl);
+  // back wall with two arched windows onto a paper Brooklyn
+  const wall = holes(S.rect(9.6, 4.8, 0, 2.4), S.arch(1.2, 2.0, 0.2, 1.5), S.arch(1.2, 2.0, 2.6, 1.5));
+  cut(wall, P.goldL, SH, 0, 0, -3.1, 0.16);
+  cut(S.rect(9.6, 1.0, 0, 0.5), P.brownL, SH, 0, 0, -3.0, 0.04);
+  for (let i = 0; i < 13; i++) card(0.05, 3.6, P.goldD, SH, -4.5 + i * 0.75, 3.0, -3.01, 0.01);
+  for (const wx of [0.2, 2.6]) { const fr = holes(S.arch(1.42, 2.12, wx, 1.44), S.arch(1.2, 2.0, wx, 1.5)); cut(fr, P.brownD, SH, 0, 0, -3.0, 0.06); card(1.2, 0.05, P.brownD, SH, wx, 2.2, -3.04, 0.04); card(0.05, 2.0, P.brownD, SH, wx, 2.5, -3.04, 0.04); }
+  card(12, 6, "#f6c879", SH, 1.4, 2.6, -4.2, 0.04, { emi: "#ffb860", ei: 0.9 });
+  { const R = mulberry(3); for (let i = 0; i < 9; i++) { const w = 0.6 + R() * 0.6, h = 1.4 + R() * 2.2, x = -1.6 + i * 0.62; const b = cut(S.rect(w, h, 0, h / 2), i % 3 ? P.coralD : P.brown, SH, x, 0.8, -3.9 + (i % 2) * 0.12, 0.05); for (let k = 0; k < 4; k++) card(0.1, 0.14, P.goldL, SH, x - 0.12 + (k % 2) * 0.24, 1.4 + Math.floor(k / 2) * 0.4 + R() * 0.6, -3.84 + (i % 2) * 0.12, 0.01); } }
+  // a generic suspension bridge silhouette across the right window
+  { const bs = new THREE.Shape(); bs.moveTo(1.2, 2.2); bs.lineTo(4.2, 2.2); bs.lineTo(4.2, 2.3); bs.lineTo(1.2, 2.3); bs.closePath(); cut(bs, P.cobaltD, SH, 0, 0, -3.7, 0.03);
+    for (const tx of [2.0, 3.3]) { cut(S.poly([[tx - 0.09, 2.2], [tx + 0.09, 2.2], [tx + 0.07, 3.3], [tx - 0.07, 3.3]]), P.cobaltD, SH, 0, 0, -3.7, 0.04); }
+    for (let i = 0; i < 14; i++) card(0.015, 0.2 + Math.abs(Math.sin(i * 0.45)) * 0.8, P.cobaltD, SH, 1.3 + i * 0.21, 2.5 + Math.abs(Math.sin(i * 0.45)) * 0.4, -3.72, 0.01); }
+  cut(S.rect(9.6, 4.8, 0, 2.4), P.coralD, SH, -4.75, 0, -0.6, 0.16).rotation.y = Math.PI / 2;
+  // sign: AUDIRA PERCETAKAN, BROOKLYN 1902
+  cut(S.rrect(3.5, 0.78, 0.1), P.brownD, SH, 1.4, 4.0, -2.95, 0.12);
+  cut(S.rrect(3.36, 0.64, 0.08), P.goldL, SH, 1.4, 4.0, -2.87, 0.04);
+  print(inkTex(1024, 192, (g, w, h) => { txt(g, "AUDIRA · PERCETAKAN", w / 2, 78, `700 80px ${SERIF}`, P.brownD); txt(g, "BROOKLYN, NEW YORK · 1902", w / 2, 160, `700 46px ${MONO}`, P.coralD); }), 3.28, 0.615, SH, 1.4, 4.0, -2.84);
+  // hanging lamp
+  const lampG = new THREE.Group(); lampG.position.set(1.0, 4.45, 0.2); SH.add(lampG);
+  mesh(new THREE.CylinderGeometry(0.006, 0.006, 2, 4), pm(P.ink, { flat: true }), lampG, 0, 1, 0);
+  mesh(new THREE.ConeGeometry(0.42, 0.34, 28, 1, true), pm(P.goldD, { ds: true }), lampG, 0, -0.1, 0);
+  mesh(new THREE.SphereGeometry(0.11, 16, 12), new THREE.MeshStandardMaterial({ color: 0xfff1c8, emissive: 0xffd88a, emissiveIntensity: 2.2 }), lampG, 0, -0.26, 0);
+  const shopLamp = new THREE.PointLight(0xffc98a, 6, 9, 1.6); shopLamp.position.set(1.0, 3.9, 0.4); SH.add(shopLamp);
+
+  // ---- printing press (right) ----
+  const PR = new THREE.Group(); PR.position.set(3.25, 0, -1.5); SH.add(PR);
+  for (const s of [-1, 1]) { const pl = holes(S.poly([[-0.8, 0], [0.8, 0], [0.62, 1.7], [-0.62, 1.7]]), S.circle(0.22, 0, 1.15), S.circle(0.16, -0.32, 0.5), S.circle(0.16, 0.32, 0.5)); cut(pl, P.cobaltD, PR, 0, 0, s * 0.62, 0.08); }
+  const rollers = [];
+  for (const [y, c, rr] of [[1.15, P.ivoryS, 0.2], [0.8, P.ink, 0.13], [1.5, P.coral, 0.1]]) { const ro = pcyl(rr, rr, 1.3, c, PR, 0, y, 0, 24); ro.rotation.x = Math.PI / 2; rollers.push(ro); }
+  const fly = new THREE.Group(); fly.position.set(0, 1.15, 0.72); PR.add(fly);
+  cut(holes(S.circle(0.55), S.circle(0.47)), P.ink, fly, 0, 0, 0, 0.06);
+  for (let i = 0; i < 5; i++) { const sp = card(0.05, 0.94, P.ink, fly, 0, 0, 0, 0.05); sp.rotation.z = (i * Math.PI) / 5; }
+  cut(S.circle(0.08), P.goldD, fly, 0, 0, 0.04, 0.06);
+  pbox(1.2, 0.05, 1.0, P.brown, PR, -0.95, 0.9, 0); pbox(0.06, 0.9, 0.06, P.brown, PR, -1.45, 0.45, 0.4); pbox(0.06, 0.9, 0.06, P.brown, PR, -1.45, 0.45, -0.4);
+  const outSheet = new THREE.Mesh(new THREE.PlaneGeometry(0.9, 0.7), pm(P.ivoryL, { ds: true })); outSheet.rotation.x = -Math.PI / 2; outSheet.castShadow = true; PR.add(outSheet);
+  for (let i = 0; i < 6; i++) pbox(0.9, 0.012, 0.7, i % 2 ? P.ivoryL : P.ivory, PR, -0.95, 0.94 + i * 0.012, 0);
+  // reams and crates along the front edge for texture
+  { const R = mulberry(5); for (let i = 0; i < 6; i++) { const x = -4.2 + i * 1.6 + R() * 0.3; if (x > -2 && x < 2.2) continue; for (let k = 0; k < 3 + (i % 2); k++) ream(SH, x + (R() - 0.5) * 0.08, 0.07 + k * 0.14, 2.75 + (R() - 0.5) * 0.08, REAMC[(i + k) % 3], (R() - 0.5) * 0.12); } }
+  pbox(0.9, 0.6, 0.7, P.brown, SH, -3.2, 0.3, 2.5); card(0.7, 0.08, P.brownD, SH, -3.2, 0.42, 2.86, 0.02);
+  for (const [x, c] of [[3.3, P.cobalt], [3.65, P.coral], [4.0, P.gold]]) pcyl(0.14, 0.14, 0.3, c, SH, x, 0.15, 2.7, 20);
+
+  // ---- hanging sheets on a line: they swell and shrink in humid air ----
+  const artTex = (scale) => canvasTex(256, 340, (g, w, h) => {
+    g.fillStyle = "#faf4e8"; g.fillRect(0, 0, w, h);
+    g.globalAlpha = 0.85; g.fillStyle = "#e7b54a"; g.beginPath(); g.arc(w / 2, h * 0.38, 70, 0, 7); g.fill();
+    g.fillStyle = "#5fb7c9"; g.beginPath(); g.arc(w / 2 - 34, h * 0.45, 58, 0, 7); g.fill();
+    g.fillStyle = "#e3806a"; g.beginPath(); g.arc(w / 2 + 34, h * 0.45, 58, 0, 7); g.fill();
+    g.globalAlpha = 1; g.fillStyle = "#3b2a22"; g.fillRect(30, h * 0.78, w - 60, 14); g.fillRect(30, h * 0.86, w - 110, 10);
+  });
+  const sheetT = artTex(1);
+  const line = mesh(new THREE.CylinderGeometry(0.008, 0.008, 4.2, 4), pm(P.ink, { flat: true }), SH, 0.4, 2.85, -0.6); line.rotation.z = Math.PI / 2;
+  const sheets = [-1.0, -0.05, 0.9, 1.85].map((x, i) => {
+    const geo = new THREE.PlaneGeometry(0.78, 1.04, 10, 12); geo.translate(0, -0.52, 0);
+    const base = geo.attributes.position.array.slice();
+    const m = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({ map: sheetT, roughness: 0.9, side: THREE.DoubleSide, bumpMap: grain().b, bumpScale: 0.6 }));
+    m.position.set(x, 2.84, -0.6); m.castShadow = m.receiveShadow = true; SH.add(m);
+    for (const s of [-1, 1]) pbox(0.04, 0.12, 0.04, P.brownL, SH, x + s * 0.28, 2.84, -0.58);
+    return { m, geo, base, i };
+  });
+  // ---- inspection easel with the hero print (four ink layers; misregistered later) ----
+  const EZ = new THREE.Group(); EZ.position.set(1.95, 0, 1.3); EZ.rotation.y = -0.22; SH.add(EZ);
+  for (const s of [-1, 1]) { const lg = pbox(0.07, 2.7, 0.07, P.brown, EZ, s * 0.62, 1.3, -0.1); lg.rotation.z = -s * 0.1; }
+  pbox(1.6, 0.08, 0.2, P.brown, EZ, 0, 0.82, 0.02);
+  card(1.42, 1.86, P.ivoryL, EZ, 0, 1.78, 0.03, 0.03);
+  const layer = (draw) => print(inkTex(512, 672, draw), 1.32, 1.73, EZ, 0, 1.79, 0.05);
+  const L_Y = layer((g, w, h) => { g.fillStyle = "rgba(231,181,74,.9)"; g.beginPath(); g.arc(w / 2, 250, 150, 0, 7); g.fill(); g.fillRect(60, 470, 390, 46); });
+  const L_C = layer((g, w, h) => { g.fillStyle = "rgba(70,170,200,.78)"; g.beginPath(); g.arc(w / 2 - 62, 290, 118, 0, 7); g.fill(); g.fillRect(60, 530, 300, 34); });
+  const L_M = layer((g, w, h) => { g.fillStyle = "rgba(214,70,110,.72)"; g.beginPath(); g.arc(w / 2 + 62, 290, 118, 0, 7); g.fill(); g.fillRect(150, 470, 300, 46); });
+  const L_K = layer((g, w, h) => { g.strokeStyle = "#3b2a22"; g.lineWidth = 8; g.strokeRect(30, 30, w - 60, h - 60); txt(g, "1902", w / 2, 610, `700 64px ${SERIF}`, "#3b2a22"); g.lineWidth = 3; for (const [x, y] of [[50, 50], [w - 50, 50]]) { g.beginPath(); g.arc(x, y, 14, 0, 7); g.moveTo(x - 24, y); g.lineTo(x + 24, y); g.moveTo(x, y - 24); g.lineTo(x, y + 24); g.stroke(); } });
+  L_C.position.z = 0.056; L_M.position.z = 0.062; L_K.position.z = 0.068;
+
+  // ---- humidity: paper droplets drifting in the shop air ----
+  const dropGeo = new THREE.ExtrudeGeometry(S.drop(0.05), { depth: 0.02, bevelEnabled: false, curveSegments: 10 });
+  const hum = new THREE.InstancedMesh(dropGeo, pm(P.iceD, { flat: true, rough: 0.6 }), 60); hum.frustumCulled = false; SH.add(hum);
+  const humS = (() => { const R = mulberry(77); return Array.from({ length: 60 }, () => [-3.6 + R() * 7.6, 0.6 + R() * 3.4, -2.4 + R() * 4.6, R() * 6.28, 0.6 + R() * 0.8, 0.7 + R() * 0.7]); })();
+
+  // ---- the 1902 machine: cabinet, cold coil, fan wheel, drip tray, duct to the sheets ----
+  const MA = new THREE.Group(); MA.position.set(-3.0, 0, -1.6); SH.add(MA);
+  const maBody = new THREE.Group(); MA.add(maBody);
+  pbox(1.5, 2.1, 1.0, P.cobalt, maBody, 0, 1.05, 0);
+  cut(S.rrect(1.6, 0.16, 0.04), P.cobaltD, maBody, 0, 2.15, 0.02, 1.04);
+  const maWin = holes(S.rect(1.5, 2.1, 0, 1.05), S.rrect(1.1, 1.05, 0.08, 0, 1.25));
+  cut(maWin, P.cobaltD, maBody, 0, 0, 0.68, 0.04);
+  pbox(1.1, 1.05, 0.04, P.ice, maBody, 0, 1.25, 0.51);
+  for (const s of [-1, 1]) pbox(0.2, 1.05, 0.18, P.cobaltD, maBody, s * 0.65, 1.25, 0.6);
+  const coilCv = curve([[-0.42, 1.68, 0.38], [0.42, 1.62, 0.38], [0.42, 1.42, 0.38], [-0.42, 1.38, 0.38], [-0.42, 1.18, 0.38], [0.42, 1.14, 0.38], [0.42, 0.94, 0.38], [-0.4, 0.9, 0.38]].map(([x, y, z]) => [x, y, 0.58]));
+  const coilM = new THREE.MeshStandardMaterial({ color: P.ice, roughness: 0.35, metalness: 0.2, emissive: new THREE.Color(P.iceD), emissiveIntensity: 0 });
+  mesh(new THREE.TubeGeometry(coilCv, 160, 0.045, 10), coilM, maBody);
+  pbox(1.0, 0.06, 0.3, P.ivoryS, maBody, 0, 0.78, 0.6);
+  const tray = pbox(1.15, 0.12, 0.36, P.mintD, maBody, 0, 0.66, 0.62);
+  // fan wheel on the side
+  const maFan = new THREE.Group(); maFan.position.set(0.77, 1.5, 0.1); maFan.rotation.y = Math.PI / 2; maBody.add(maFan);
+  cut(holes(S.circle(0.42), S.circle(0.36)), P.ink, maFan, 0, 0, 0.0, 0.06);
+  const maBl = new THREE.Group(); maFan.add(maBl);
+  for (let i = 0; i < 6; i++) { const b = cut(S.poly([[0, 0.03], [0.34, 0.1], [0.34, -0.06], [0, -0.03]]), P.goldL, maBl, 0, 0, 0, 0.03); b.rotation.z = (i * Math.PI) / 3; }
+  cut(S.circle(0.07), P.coralD, maBl, 0, 0, 0.03, 0.05);
+  // gauges on the front: thermometer + humidity dial
+  const dialTex = (title, c1, c2) => inkTex(256, 256, (g, w, h) => { g.fillStyle = "#faf4e8"; g.beginPath(); g.arc(128, 128, 124, 0, 7); g.fill(); g.lineWidth = 22; g.strokeStyle = c1; g.beginPath(); g.arc(128, 140, 92, Math.PI * 1.1, Math.PI * 1.5); g.stroke(); g.strokeStyle = c2; g.beginPath(); g.arc(128, 140, 92, Math.PI * 1.5, Math.PI * 1.9); g.stroke(); txt(g, title, 128, 200, `700 30px ${MONO}`, "#3b2a22"); });
+  const gA = new THREE.Group(); gA.position.set(-0.36, 0.42, 0.55); maBody.add(gA); gA.position.z = 0.71; print(dialTex("SUHU", P.mint, P.coral), 0.36, 0.36, gA, 0, 0, 0);
+  const gB = new THREE.Group(); gB.position.set(0.36, 0.42, 0.55); maBody.add(gB); gB.position.z = 0.71; print(dialTex("LEMBAP", P.mint, P.cobalt), 0.36, 0.36, gB, 0, 0, 0);
+  const needles = [gA, gB].map((g) => { const n = cut(S.poly([[-0.012, 0], [0.012, 0], [0, 0.13]]), P.red, g, 0, -0.02, 0.012, 0.01); return n; });
+  // duct: up from the cabinet, along under the ceiling, vent over the sheets
+  pbox(0.6, 1.5, 0.6, P.ivoryS, MA, 0, 2.9, 0);
+  pbox(4.0, 0.55, 0.6, P.ivoryS, MA, 1.75, 3.65, 0.0);
+  pbox(0.62, 0.62, 0.62, P.ivoryS, MA, 0, 3.65, 0);
+  for (let i = 0; i < 6; i++) card(0.04, 0.55, P.goldD, MA, 0.6 + i * 0.6, 3.65, 0.31, 0.02);
+  const vent = pbox(1.1, 0.3, 0.7, P.ivoryS, MA, 3.1, 3.3, 0.35);
+  // the engineer + name plate
+  const wil = puppet({ coat: P.brownD, pants: P.ink, hat: P.ink, hair: P.brownD, tie: P.coralD });
+  wil.G.position.set(-1.15, 0, 0.15); wil.G.rotation.y = 0.35; wil.G.scale.setScalar(1.1); SH.add(wil.G);
+  const bp1 = new THREE.Group(); wil.armR.el.add(bp1); bp1.position.set(0.02, -0.38, 0.06);
+  const blue = cut(S.rect(0.55, 0.4), P.cobaltD, bp1, 0.16, -0.05, 0, 0.02);
+  print(inkTex(256, 190, (g, w, h) => { g.strokeStyle = "rgba(255,255,255,.85)"; g.lineWidth = 3; g.strokeRect(14, 14, w - 28, h - 28); g.strokeRect(50, 50, 70, 90); g.beginPath(); g.arc(180, 90, 36, 0, 7); g.stroke(); g.beginPath(); g.moveTo(120, 70); g.lineTo(150, 70); g.stroke(); for (let i = 0; i < 4; i++) { g.beginPath(); g.moveTo(58, 62 + i * 20); g.lineTo(112, 62 + i * 20); g.stroke(); } }), 0.53, 0.38, bp1, 0.16, -0.05, 0.015);
+  const plate = new THREE.Group(); plate.position.set(-2.15, 0.95, 0.95); plate.rotation.y = 0.3; SH.add(plate);
+  card(0.06, 1.0, P.brown, plate, 0, -0.45, -0.03, 0.06);
+  cut(S.rrect(1.5, 0.42, 0.06), P.ivoryL, plate, 0, 0.68, 0.03, 0.05).rotation.x = -0.25;
+  print(inkTex(768, 216, (g, w, h) => { txt(g, "WILLIS CARRIER", w / 2, 82, `900 84px ${SANS}`, P.ink); txt(g, "INSINYUR MUDA · 1902", w / 2, 168, `700 50px ${MONO}`, P.coralD); }), 1.44, 0.405, plate, 0, 0.68, 0.06).rotation.x = -0.25;
+  // a printer at the press
+  const wk = puppet({ coat: P.cobaltD, pants: P.brown, apron: P.ivoryS, hair: P.ink, tie: P.gold });
+  wk.G.position.set(4.55, 0, -0.55); wk.G.rotation.y = -0.6; SH.add(wk.G);
+  // cool ribbons from the vent down over the sheets (s1 + s3), warm humid ribbons (s2)
+  const shopCold = [0, 1, 2, 3, 4].map((i) => ribbon(SH, wavy(curve([[-0.3 + i * 0.5, 3.3, -0.25], [-0.5 + i * 0.55, 2.6, 0.2], [-0.8 + i * 0.6, 1.6, 0.7], [-1.2 + i * 0.6, 0.6, 1.4]]), 0.12, "x", 9, 3, i), { color: i % 2 ? P.mint : P.mintL, width: 0.16, len: 0.45, speed: 0.32, phase: i * 0.21 }));
+  const shopWarm = [0, 1, 2].map((i) => ribbon(SH, wavy(curve([[-3.6, 0.8 + i * 0.7, 1.4], [-1.5, 1.4 + i * 0.6, 0.6], [1.0, 1.2 + i * 0.7, 0.2], [3.6, 1.6 + i * 0.5, 0.4]]), 0.25, "y", 7, 2.2, i * 2), { color: i % 2 ? P.coralL : P.goldL, width: 0.16, len: 0.4, speed: 0.18, phase: i * 0.33 }));
+  const maOut = [0, 1, 2, 3].map((i) => ribbon(SH, wavy(curve([[-2.6, 1.0 + i * 0.22, -0.95], [-2.0, 1.3 + i * 0.25, -0.7], [-1.3, 1.8 + i * 0.2, -0.5], [-0.3, 2.2 + i * 0.12, -0.3]]), 0.1, "y", 9, 3, i), { color: i % 2 ? P.mint : P.mintL, width: 0.18, len: 0.5, speed: 0.4, phase: i * 0.24 }));
+  const maDrips = new THREE.InstancedMesh(new THREE.SphereGeometry(1, 12, 10), new THREE.MeshPhysicalMaterial({ color: 0xf2fbff, roughness: 0.05, clearcoat: 1, transparent: true, opacity: 0.92 }), 10); maDrips.frustumCulled = false; maBody.add(maDrips);
+
+  // =============================== HOUSE (today) ===============================
+  const HO = new THREE.Group(); scene.add(HO);
+  pbox(12.2, 0.3, 6.6, P.brownD, HO, 1.8, -0.15, 0);
+  const hfl = new THREE.Mesh(new THREE.PlaneGeometry(6.3, 6.4), new THREE.MeshStandardMaterial({ map: planks("#caa27a", "rgba(82,55,41,.45)"), roughness: 0.9 })); hfl.rotation.x = -Math.PI / 2; hfl.position.set(-0.65, 0.005, 0); hfl.receiveShadow = true; HO.add(hfl);
+  card(3.2, 2.2, P.coralL, HO, -1.4, 0.01, 0.6, 0.02).rotation.x = -Math.PI / 2;
+  // back wall with a window onto a hot day
+  cut(holes(S.rect(6.4, 4.5, 0, 2.25), S.arch(1.3, 1.9, -2.4, 1.5)), "#2f5a5c", HO, -0.6, 0, -2.6, 0.18);
+  cut(holes(S.rect(6.4, 1.0, 0, 0.5), S.rect(1.3, 0.2, -2.4, 1.3)), P.mintD, HO, -0.6, 0, -2.49, 0.03);
+  cut(holes(S.arch(1.5, 2.05, -2.4, 1.42), S.arch(1.3, 1.9, -2.4, 1.5)), P.ivoryL, HO, -0.6, 0, -2.48, 0.06);
+  card(3, 3, "#f8cf86", HO, -3.0, 2.6, -3.1, 0.03, { emi: "#ffb860", ei: 1.0 });
+  card(3.3, 4.5, "#2f5a5c", HO, 4.35, 2.25, -2.78, 0.05); for (let i = 0; i < 10; i++) card(3.3, 0.025, "#244849", HO, 4.35, 0.25 + i * 0.45, -2.75, 0.01);
+  cut(S.circle(0.4), P.coral, HO, -2.75, 3.0, -3.0, 0.05);
+  for (const s of [-1, 1]) cut(S.poly([[0, 0], [0.42, 0], [0.32, -2.0], [0.05, -2.1]]), P.coralD, HO, -3.0 + s * 0.78 - (s > 0 ? 0.37 : 0), 3.55, -2.4, 0.03);
+  // right wall: interior ivory, exterior brick coral, cut cross-section facing the camera
+  pbox(0.22, 4.5, 0.8, "#efe0c4", HO, 2.6, 2.25, -2.2);
+  card(0.8, 4.5, P.coralL, HO, 2.72, 2.25, -2.2, 0.02).rotation.y = Math.PI / 2;
+  for (let i = 0; i < 9; i++) card(0.8, 0.03, P.coralD, HO, 2.735, 0.3 + i * 0.48, -2.2, 0.01).rotation.y = Math.PI / 2;
+  // bed + a person reading
+  pbox(1.9, 0.42, 2.7, P.brown, HO, -2.55, 0.21, -1.2); pbox(1.8, 0.2, 2.6, P.ivoryL, HO, -2.55, 0.52, -1.2);
+  cut(S.rrect(1.84, 0.2, 0.05), P.coral, HO, -2.55, 0.63, -0.85, 1.9).rotation.x = 0;
+  pbox(0.9, 0.18, 0.45, P.ivoryL, HO, -2.55, 0.72, -2.25);
+  cut(S.rrect(2.0, 1.2, 0.2, 0, 0.6), P.brownD, HO, -2.55, 0.3, -2.55, 0.08);
+  const kid = puppet({ coat: P.mintD, pants: P.cobaltD, shirt: P.ivoryL, hair: P.ink, tie: P.mintD, fem: true });
+  kid.G.position.set(-2.1, 0.52, 0.05); kid.G.rotation.y = 0.25; HO.add(kid.G);
+  const book = new THREE.Group(); kid.G.add(book); book.position.set(0, 1.08, 0.45);
+  cut(S.rect(0.24, 0.32), P.coralD, book, -0.12, 0, 0, 0.03).rotation.y = 0.35; cut(S.rect(0.24, 0.32), P.coralD, book, 0.12, 0, 0, 0.03).rotation.y = -0.35;
+  // plant + wall thermometer
+  pcyl(0.22, 0.17, 0.4, P.coralD, HO, 1.85, 0.2, -2.0, 24);
+  for (let i = 0; i < 6; i++) { const lf = cut(S.poly([[0, 0], [0.12, 0.3], [0, 0.75], [-0.12, 0.3]]), i % 2 ? P.mint : P.mintD, HO, 1.85, 0.38, -2.0, 0.03); lf.rotation.set(0, i * 0.52, (i - 2.5) * 0.25); }
+  const TH = new THREE.Group(); TH.position.set(1.45, 2.05, -2.48); HO.add(TH);
+  cut(S.rrect(0.3, 1.0, 0.1), P.ivoryL, TH, 0, 0, 0, 0.03); cut(S.rrect(0.08, 0.72, 0.04, 0, 0.06), P.ivoryS, TH, 0, 0, 0.02, 0.02); cut(S.circle(0.09, 0, -0.34), P.red, TH, 0, 0, 0.025, 0.03);
+  const thFill = card(0.06, 0.7, P.red, TH, 0, -0.29, 0.03, 0.02); thFill.geometry.translate(0, 0.35, 0);
+
+  // ---- indoor split unit ----
+  const IU = new THREE.Group(); IU.position.set(-0.3, 3.25, -2.25); HO.add(IU);
+  pbox(2.4, 0.8, 0.1, P.ivoryS, IU, 0, 0, -0.2);
+  pbox(2.4, 0.12, 0.5, P.ivoryL, IU, 0, 0.34, 0);
+  for (const s of [-1, 1]) pbox(0.1, 0.8, 0.5, P.ivoryL, IU, s * 1.15, 0, 0);
+  pbox(2.4, 0.08, 0.32, P.ivoryL, IU, 0, -0.36, -0.08);
+  for (let i = 0; i < 14; i++) card(0.07, 0.012, P.ivoryS, IU, -0.95 + i * 0.146, 0.405, 0.05, 0.3).rotation.x = -Math.PI / 2;
+  const fins = new THREE.InstancedMesh(new THREE.BoxGeometry(0.012, 0.44, 0.26), new THREE.MeshStandardMaterial({ color: "#8cc6da", roughness: 0.45, metalness: 0.3, emissive: new THREE.Color(P.iceD), emissiveIntensity: 0 }), 70); fins.castShadow = true; IU.add(fins);
+  { const o = new THREE.Object3D(); for (let i = 0; i < 70; i++) { o.position.set(-1.04 + i * 0.03, 0.06, 0.0); o.updateMatrix(); fins.setMatrixAt(i, o.matrix); } }
+  const finM = fins.material;
+  card(2.12, 0.44, "#2c4f5a", IU, 0, 0.06, -0.14, 0.01);
+  for (const [y, z] of [[0.22, 0.0], [0.06, 0.0], [-0.1, 0.0]]) { const tb = mesh(new THREE.CylinderGeometry(0.022, 0.022, 2.12, 12), new THREE.MeshStandardMaterial({ color: P.copper, roughness: 0.35, metalness: 0.7 }), IU, 0, y, z); tb.rotation.z = Math.PI / 2; }
+  for (const [sx, cy] of [[1, 0.14], [-1, -0.02]]) { const ub = mesh(new THREE.TorusGeometry(0.08, 0.022, 10, 20, Math.PI), new THREE.MeshStandardMaterial({ color: P.copper, roughness: 0.3, metalness: 0.75 }), IU, sx * 1.07, cy, 0.0); ub.rotation.z = -sx * Math.PI / 2; }
+  const frost = pbox(2.12, 0.025, 0.27, "#ffffff", IU, 0, 0.29, 0, { flat: true, emi: "#dff6ff", ei: 0, unique: true });
+  const cff = new THREE.Group(); cff.position.set(0, -0.22, 0.05); IU.add(cff);
+  for (let i = 0; i < 16; i++) { const a = (i / 16) * Math.PI * 2; const bl = pbox(2.0, 0.012, 0.06, P.cobaltL, cff, 0, Math.cos(a) * 0.08, Math.sin(a) * 0.08, { flat: true }); bl.rotation.x = a + 0.5; }
+  const iuTray = pbox(2.1, 0.05, 0.12, P.mintD, IU, 0, -0.15, 0.18);
+  const louver = new THREE.Group(); louver.position.set(0, -0.36, 0.17); IU.add(louver);
+  card(2.2, 0.12, P.ivoryS, louver, 0, -0.06, 0, 0.02).rotation.x = -Math.PI / 2 + 0.2;
+  const hinge = new THREE.Group(); hinge.position.set(0, 0.4, 0.25); IU.add(hinge);
+  cut(S.rrect(2.4, 0.62, 0.05, 0, -0.31), P.ivoryL, hinge, 0, 0, 0, 0.05);
+  cut(S.rect(2.2, 0.02, 0, -0.1), P.ivoryS, hinge, 0, 0, 0.03, 0.01);
+  const led = mesh(new THREE.SphereGeometry(0.02, 10, 8), new THREE.MeshStandardMaterial({ color: 0x9dd1bb, emissive: 0x6effc8, emissiveIntensity: 2 }), hinge, 0.9, -0.48, 0.03);
+  const iuDrops = new THREE.InstancedMesh(new THREE.SphereGeometry(1, 14, 10), new THREE.MeshPhysicalMaterial({ color: 0xf6fcff, roughness: 0.04, clearcoat: 1, emissive: 0xffffff, emissiveIntensity: 0.45 }), 48); iuDrops.frustumCulled = false; IU.add(iuDrops);
+  const iuDS = (() => { const R = mulberry(41); return Array.from({ length: 48 }, () => [-1.0 + R() * 2.0, R(), 1.2 + R() * 1.6, R() * 0.18]); })();
+  // room air: warm ribbons drawn into the top grille, cold ribbons out of the louver
+  const roomWarm = [0, 2].map((i) => ribbon(HO, wavy(curve([[-2.2 + i * 0.6, 1.4 + i * 0.15, 0.8], [-1.6 + i * 0.5, 2.6, 0.2], [-0.9 + i * 0.45, 3.6, -1.6], [-0.95 + i * 0.5, 3.72, -2.2]]), 0.15, "x", 8, 2.6, i), { color: i % 2 ? P.coral : P.coralL, width: 0.26, twist: 1.3, len: 0.4, speed: 0.3, phase: i * 0.27 }));
+  const roomCold = [0, 2, 4].map((i) => ribbon(HO, wavy(curve([[-0.95 + i * 0.4, 2.85, -1.95], [-1.0 + i * 0.42, 2.5, -1.2], [-1.5 + i * 0.35, 1.8, -0.2], [-2.3 + i * 0.3, 1.2, 0.7]]), 0.12, "x", 9, 3, i * 1.3), { color: i % 2 ? P.mint : P.mintL, width: 0.26, twist: 1.3, len: 0.42, speed: 0.34, phase: i * 0.19 }));
+  // drain hose through the wall into a jar
+  const hoseCv = curve([[0.95, 3.06, -2.12], [1.6, 3.0, -2.35], [2.3, 2.85, -2.35], [2.95, 2.8, -2.3], [3.15, 2.2, -2.2], [3.18, 1.0, -2.12], [3.2, 0.62, -2.05]]);
+  const hoseTex = canvasTex(64, 64, (g, w, h) => { g.fillStyle = "#efe6d6"; g.fillRect(0, 0, w, h); g.fillStyle = "rgba(0,0,0,.12)"; for (let i = 0; i < 4; i++) g.fillRect(i * 16, 0, 6, h); }, [40, 1]);
+  mesh(new THREE.TubeGeometry(hoseCv, 120, 0.045, 10), new THREE.MeshStandardMaterial({ map: hoseTex, roughness: 0.7 }), HO);
+  const jar = new THREE.Group(); jar.position.set(3.2, 0, -2.05); HO.add(jar);
+  mesh(new THREE.CylinderGeometry(0.24, 0.22, 0.5, 28, 1, true), new THREE.MeshPhysicalMaterial({ color: 0xe8f4f8, roughness: 0.1, transparent: true, opacity: 0.35, side: THREE.DoubleSide }), jar, 0, 0.25, 0);
+  const water = mesh(new THREE.CylinderGeometry(0.215, 0.205, 1, 28), new THREE.MeshPhysicalMaterial({ color: P.iceD, roughness: 0.1, clearcoat: 1, emissive: new THREE.Color(P.iceD), emissiveIntensity: 0.2 }), jar, 0, 0, 0);
+  pcyl(0.25, 0.25, 0.03, P.cobaltD, jar, 0, 0.51, 0, 28).scale.set(1, 1, 1);
+  const hoseDrops = new THREE.InstancedMesh(new THREE.SphereGeometry(1, 12, 10), iuDrops.material, 4); hoseDrops.frustumCulled = false; HO.add(hoseDrops);
+  // copper pipes indoor -> outdoor with refrigerant arrows
+  const pipeA = curve([[0.95, 3.2, -2.3], [1.8, 3.25, -2.42], [2.6, 3.25, -2.42], [3.3, 3.15, -2.3], [3.75, 2.4, -2.0], [3.85, 1.3, -1.8], [4.0, 1.0, -1.55]]);
+  const pipeB = curve([[0.95, 3.36, -2.3], [1.8, 3.42, -2.42], [2.6, 3.42, -2.42], [3.45, 3.3, -2.25], [3.95, 2.4, -1.95], [4.05, 1.5, -1.75], [4.0, 1.22, -1.5]]);
+  const copM = new THREE.MeshStandardMaterial({ color: P.copper, roughness: 0.32, metalness: 0.75 });
+  mesh(new THREE.TubeGeometry(pipeA, 140, 0.05, 12), copM, HO); mesh(new THREE.TubeGeometry(pipeB, 140, 0.05, 12), copM, HO);
+  const arrHot = arrows(HO, pipeB, 7, P.red, 0.085), arrCold = arrows(HO, pipeA, 7, P.cobalt, 0.085);
+  // ---- outdoor unit ----
+  const OU = new THREE.Group(); OU.position.set(4.95, 0.12, -1.45); HO.add(OU);
+  for (const s of [-1, 1]) pbox(0.14, 0.12, 0.8, P.ink, OU, s * 0.7, 0.06, 0);
+  const ouB = new THREE.Group(); ouB.position.y = 0.82; OU.add(ouB);
+  pbox(1.95, 1.36, 0.08, P.ivoryS, ouB, 0, 0, -0.33);
+  pbox(1.95, 0.08, 0.74, P.ivoryL, ouB, 0, 0.66, 0); pbox(1.95, 0.08, 0.74, P.ivoryL, ouB, 0, -0.66, 0);
+  for (const s of [-1, 1]) pbox(0.08, 1.36, 0.74, P.ivoryL, ouB, s * 0.94, 0, 0);
+  cut(holes(S.rect(1.3, 1.24, -0.29, 0), S.circle(0.5, -0.33, 0)), P.ivoryL, ouB, 0, 0, 0.35, 0.05);
+  pbox(0.05, 1.24, 0.7, P.ivoryS, ouB, 0.37, 0, 0);
+  const condCv = curve(Array.from({ length: 11 }, (_, i) => [-0.85 + i * 0.12, i % 2 ? -0.5 : 0.5, -0.24]));
+  const condM = new THREE.MeshStandardMaterial({ color: P.copper, roughness: 0.35, metalness: 0.7, emissive: new THREE.Color(P.orange), emissiveIntensity: 0 });
+  mesh(new THREE.TubeGeometry(condCv, 200, 0.03, 8), condM, ouB);
+  const ouFan = new THREE.Group(); ouFan.position.set(-0.33, 0, 0.12); ouB.add(ouFan);
+  for (let i = 0; i < 3; i++) { const b = cut(S.poly([[0.05, -0.06], [0.44, -0.16], [0.47, 0.08], [0.05, 0.06]]), P.cobaltL, ouFan, 0, 0, 0, 0.03); b.rotation.set(0.25, 0, (i * Math.PI * 2) / 3); }
+  cut(S.circle(0.09), P.cobaltD, ouFan, 0, 0, 0.03, 0.06);
+  const grille = new THREE.Group(); grille.position.set(-0.33, 0, 0.39); ouB.add(grille);
+  for (const rr of [0.18, 0.33, 0.48]) cut(holes(S.circle(rr + 0.015), S.circle(rr - 0.015)), P.ink, grille, 0, 0, 0, 0.02);
+  for (let i = 0; i < 4; i++) card(0.025, 1.0, P.ink, grille, 0, 0, 0, 0.02).rotation.z = (i * Math.PI) / 4;
+  const comp3 = new THREE.Group(); comp3.position.set(0.66, -0.22, 0.02); ouB.add(comp3);
+  pcyl(0.2, 0.2, 0.62, P.gold, comp3, 0, 0, 0, 32, { rough: 0.5 });
+  mesh(new THREE.SphereGeometry(0.2, 24, 12, 0, Math.PI * 2, 0, Math.PI / 2), pm(P.gold, { rough: 0.5 }), comp3, 0, 0.31, 0);
+  cut(S.rrect(0.3, 0.14, 0.03), P.goldD, comp3, 0, -0.05, 0.2, 0.02);
+  const cpTube = curve([[0.66, 0.1, 0.0], [0.66, 0.4, 0.05], [0.4, 0.5, 0.1], [0.0, 0.5, -0.1], [-0.6, 0.45, -0.22]]);
+  mesh(new THREE.TubeGeometry(cpTube, 60, 0.03, 8), copM, ouB);
+  cut(S.rrect(0.5, 0.2, 0.04), P.goldL, ouB, 0.64, 0.48, 0.38, 0.02);
+  print(inkTex(512, 180, (g, w, h) => txt(g, "AUDIRA", w / 2, 96, `900 120px ${SANS}`, P.ink)), 0.47, 0.17, ouB, 0.64, 0.48, 0.395);
+  const heatOut = [1, 2, 3].map((i) => ribbon(HO, wavy(curve([[4.62 + (i - 2) * 0.12, 0.94 + (i - 2) * 0.1, -1.0], [4.5 + (i - 2) * 0.3, 1.2 + (i - 2) * 0.12, 0.0], [4.7 + (i - 2) * 0.4, 1.9 + (i - 2) * 0.15, 0.6], [5.1 + (i - 2) * 0.5, 3.2, 1.2]]), 0.12, "x", 9, 3.4, i), { color: i % 2 ? P.orange : P.red, width: 0.26, twist: 1.3, len: 0.42, speed: 0.36, phase: i * 0.2 }));
+  // ---- inverter board: room thermometer + compressor speed dial ----
+  const IB = new THREE.Group(); IB.position.set(7.35, 0, -0.75); IB.rotation.y = -0.38; HO.add(IB);
+  card(0.07, 1.3, P.brown, IB, 0, 0.65, -0.06, 0.07);
+  cut(S.rrect(1.4, 1.75, 0.1), P.ivoryL, IB, 0, 2.0, 0, 0.06);
+  cut(S.rrect(1.48, 1.83, 0.12), P.cobaltD, IB, 0, 2.0, -0.04, 0.03);
+  print(inkTex(640, 800, (g, w, h) => {
+    txt(g, "INVERTER", w / 2, 60, `900 64px ${SANS}`, P.ink);
+    g.lineWidth = 44; for (const [a0, a1, c] of [[1.0, 1.33, P.mint], [1.33, 1.67, P.gold], [1.67, 2.0, P.coral]]) { g.strokeStyle = c; g.beginPath(); g.arc(w / 2, 360, 200, Math.PI * a0, Math.PI * a1); g.stroke(); }
+    txt(g, "KECEPATAN", w / 2, 420, `700 44px ${MONO}`, P.ink); txt(g, "KOMPRESOR", w / 2, 468, `700 44px ${MONO}`, P.ink);
+    g.fillStyle = "#e5d8c1"; g.fillRect(70, 560, 500, 54); txt(g, "SUHU RUANGAN", w / 2, 680, `700 44px ${MONO}`, P.ink);
+  }), 1.36, 1.7, IB, 0, 2.0, 0.035);
+  const ibNeedle = cut(S.poly([[-0.03, 0], [0.03, 0], [0.008, 0.4], [-0.008, 0.4]]), P.ink, IB, 0, 0, 0.05, 0.02); ibNeedle.position.set(0, 2.085, 0.05);
+  cut(S.circle(0.05), P.ink, IB, 0, 2.085, 0.06, 0.02);
+  const ibBar = card(1.0, 0.1, P.red, IB, -0.53, 1.6, 0.045, 0.02); ibBar.geometry.translate(0.5, 0, 0);
+  // garden: hills, trees, sun, clouds, bushes along the front edge
+  card(30, 14, "#f6dfb4", HO, 2, 6, -6.5, 0.05);
+  cut(S.circle(1.1), P.coral, HO, 6.6, 7.6, -6.3, 0.06, { emi: "#ff9a5a", ei: 0.8 }); cut(holes(S.circle(1.6), S.circle(1.3)), P.coralL, HO, 6.6, 7.6, -6.35, 0.04);
+  for (const [x, w, h, c, z] of [[-3, 12, 3.2, P.mintL, -5.6], [7, 10, 2.6, P.mint, -5.2], [1, 9, 1.8, P.mintD, -4.6]]) cut(S.arch(w, h * 2, 0, -h), c, HO, x, 0, z, 0.06);
+  tree(HO, 6.3, -3.2, 3.6, P.mint, P.mintD); tree(HO, 8.0, -2.4, 2.8, P.mintD, P.mint);
+  cloud(HO, -1.6, 6.6, -5.5, 1.2); cloud(HO, 4.0, 5.6, -5.2, 0.9);
+  card(4.6, 0.02, P.mint, HO, 5.2, 0.01, 0.4, 6.0).rotation.x = 0;
+  const grass = new THREE.Mesh(new THREE.PlaneGeometry(5.0, 6.4), pm(P.mintL)); grass.rotation.x = -Math.PI / 2; grass.position.set(5.2, 0.006, 0); grass.receiveShadow = true; HO.add(grass);
+  [[3.2, 2.7, 0.9, 1], [4.4, 2.9, 1.1, 2], [5.6, 2.75, 0.8, 3], [6.9, 2.8, 1.2, 4], [7.6, 1.5, 0.9, 5], [-3.6, 2.9, 0.8, 6], [-2.4, 3.0, 0.7, 7]].forEach(([x, z, s, sd]) => bush(HO, x, z, s, P.mint, P.mintD, sd));
+  for (let i = 0; i < 6; i++) { const fx = 3.0 + i * 0.85; card(0.1, 0.9, P.ivoryL, HO, fx, 0.45, -3.0, 0.05); }
+  card(5.2, 0.08, P.ivoryL, HO, 5.1, 0.7, -3.0, 0.05);
+
+  // =============================== PK BOARD ===============================
+  const PK = new THREE.Group(); PK.position.x = PKX; scene.add(PK);
+  pbox(6.4, 0.3, 4.2, P.brownD, PK, 0, -0.15, 0);
+  card(9, 9, "#f4e4c4", PK, 0, 3.4, -2.6, 0.05);
+  cut(S.rrect(5.4, 4.9, 0.18), P.cobaltL, PK, 0, 3.0, -1.55, 0.06); cut(S.rrect(5.2, 4.7, 0.16), P.ivoryL, PK, 0, 3.0, -1.5, 0.05);
+  const stampG = new THREE.Group(); stampG.position.set(-1.25, 2.35, -0.2); PK.add(stampG);
+  cut(S.circle(0.55), P.coralD, stampG, 0, 0, 0, 0.06); cut(holes(S.circle(0.5), S.circle(0.45)), P.ivoryL, stampG, 0, 0, 0.04, 0.02);
+  print(inkTex(256, 256, (g, w, h) => { txt(g, "1", w / 2, 100, `900 120px ${SANS}`, "#faf4e8"); txt(g, "PK", w / 2, 196, `900 64px ${SANS}`, "#faf4e8"); }), 0.9, 0.9, stampG, 0, 0, 0.06);
+  const pkCold = [0, 1, 2].map((i) => ribbon(PK, wavy(curve([[1.4, 0.4 + i * 0.8, 0.3], [2.0, 0.9 + i * 0.8, 0.5], [2.8, 1.2 + i * 0.8, 0.9]]), 0.08, "y", 8, 3, i), { color: i % 2 ? P.orange : P.red, width: 0.12, len: 0.5, speed: 0.4, phase: i * 0.3 }));
+  const BH = 0.75; // one block = 750 W
+  const elec = new THREE.Group(); elec.position.set(-1.25, 0, 0); PK.add(elec);
+  const RS = mulberry(99); const stack = (parent, h, n, c1, c2) => { for (let j = 0; j < n; j++) { const hh = h / n; const sh = pbox(1.1, hh - 0.012, 0.5, j % 2 ? c1 : c2, parent, (RS() - 0.5) * 0.05, hh * j + hh / 2, (RS() - 0.5) * 0.05); sh.rotation.y = (RS() - 0.5) * 0.06; card(1.12, 0.006, edgeOf(c1), parent, sh.position.x, hh * j + hh - 0.004, sh.position.z + 0.252, 0.004); } };
+  stack(elec, BH, 5, P.gold, P.goldL);
+  const heat = new THREE.Group(); heat.position.set(0.55, 0, 0); PK.add(heat);
+  const fr = [1, 1, 1, 0.52];
+  let acc = 0;
+  const blocks = fr.map((f, i) => { const g = new THREE.Group(); g.position.y = acc; acc += f * BH; heat.add(g); stack(g, f * BH - 0.01, Math.max(2, Math.round(f * 5)), i % 2 ? P.coral : P.coralD, P.coralL); return g; });
+  const numTex = (s) => inkTex(256, 160, (g, w, h) => txt(g, s, w / 2, 86, `900 110px ${SANS}`, "#faf4e8"));
+  const nums = ["1×", "2×", "3×"].map((s, i) => { const m = print(numTex(s), 0.62, 0.39, blocks[i], 0, BH / 2, 0.27); return m; });
+  const valTex = (top, a, b, c) => inkTex(640, 300, (g, w, h) => { txt(g, top, w / 2, 40, `900 62px ${SANS}`, P.ink); txt(g, a, w / 2, 136, `900 108px ${SANS}`, c); if (b) txt(g, b, w / 2, 244, `700 78px ${MONO}`, P.ink); });
+  const vHeat = print(valTex("PANAS DIPINDAH", "± 2,6 kW", "9.000 BTU/jam", P.coralD), 2.4, 1.125, PK, 0.75, BH * 3.52 + 0.62, 0.1);
+  const vElec = print(valTex("LISTRIK", "± 750 W", "", P.goldD), 1.9, 0.89, PK, -1.35, BH + 0.5, 0.1);
+  const labTex = (s) => inkTex(512, 110, (g, w, h) => txt(g, s, w / 2, 58, `900 58px ${SANS}`, P.ink));
+  card(5.6, 0.02, P.ivoryL, PK, 0, 0.002, 1.2, 1.4).rotation.x = 0;
+  bush(PK, -2.6, 1.7, 0.7, P.mint, P.mintD, 11); bush(PK, 2.7, 1.6, 0.8, P.mintD, P.mint, 12);
+  bush(PK, -2.9, 3.6, 1.5, P.mintD, P.mint, 13); bush(PK, 2.6, 3.9, 1.6, P.mint, P.mintD, 14); for (let i = 0; i < 4; i++) pbox(0.9, 0.13, 0.6, i % 2 ? P.ivoryL : P.ivoryS, PK, -1.9 + (i % 2) * 0.05, 0.065 + i * 0.13, 3.3);
+
+
+  // ---- bedroom key / rim / cold fill so the unit and droplets read with contrast ----
+  const roomKey = new THREE.SpotLight(0xffe0b0, 9, 16, 0.4, 0.7, 1.4); roomKey.position.set(-3.2, 6.5, 4.5); roomKey.castShadow = true; roomKey.shadow.mapSize.set(1024, 1024); roomKey.shadow.bias = -0.0008; roomKey.target.position.set(-0.3, 3.0, -2.2); HO.add(roomKey); HO.add(roomKey.target);
+  const roomRim = new THREE.PointLight(0xfff0d8, 4, 4, 1.6); roomRim.position.set(1.4, 4.4, -1.4); HO.add(roomRim);
+  const coldL = new THREE.PointLight(0x8fe3ff, 0, 3.2, 1.5); coldL.position.set(-0.3, 2.8, -1.4); HO.add(coldL);
+  const hoseKey = new THREE.SpotLight(0xffe6c0, 14, 10, 0.35, 0.6, 1.4); hoseKey.position.set(5.5, 4.5, 2.5); hoseKey.target.position.set(3.15, 0.8, -2.05); HO.add(hoseKey); HO.add(hoseKey.target);
+  // foreground paper layers (depth): shop crates + curling sheet, room fern + chair
+  { const fg = new THREE.Group(); fg.position.set(-3.6, 0, 5.2); SH.add(fg);
+    pbox(1.1, 0.8, 0.8, P.brown, fg, 0, 0.4, 0); card(0.9, 0.1, P.brownD, fg, 0, 0.55, 0.41, 0.02);
+    for (let i = 0; i < 3; i++) ream(fg, 0.05 * i, 0.86 + i * 0.12, 0, REAMC[i % 3], (i - 1) * 0.06);
+    const fg2 = new THREE.Group(); fg2.position.set(-0.4, 0, 5.6); SH.add(fg2);
+    for (let i = 0; i < 4; i++) pbox(0.8, 0.14, 0.55, i % 2 ? P.ivoryS : P.ivoryL, fg2, (i % 2) * 0.05, 0.07 + i * 0.14, 0); pcyl(0.16, 0.16, 0.34, P.cobalt, fg2, 0.7, 0.17, 0.1, 20); }
+  { const fern = new THREE.Group(); fern.position.set(-3.3, 0, 3.6); HO.add(fern);
+    pcyl(0.3, 0.24, 0.5, P.coralD, fern, 0, 0.25, 0, 24);
+    for (let i = 0; i < 8; i++) { const lf = cut(S.poly([[0, 0], [0.16, 0.5], [0, 1.4], [-0.16, 0.5]]), i % 2 ? P.mint : P.mintD, fern, 0, 0.45, 0, 0.03); lf.rotation.set(0.2 * Math.sin(i), i * 0.7, (i - 3.5) * 0.22); }
+    const ch = new THREE.Group(); ch.position.set(1.7, 0, 3.0); ch.rotation.y = -0.5; HO.add(ch);
+    pbox(0.9, 0.08, 0.9, P.gold, ch, 0, 0.75, 0); pbox(0.9, 0.9, 0.08, P.gold, ch, 0, 1.2, -0.42); for (const [x, z] of [[-0.4, -0.4], [0.4, -0.4], [-0.4, 0.4], [0.4, 0.4]]) pbox(0.07, 0.75, 0.07, P.goldD, ch, x, 0.375, z); }
+  // paper fold between 1902 and today: a card swings shut over the lens, then swings open on the other side
+  scene.add(cam);
+  const foldMat = (c) => new THREE.MeshBasicMaterial({ color: new THREE.Color(c), map: grain().a, depthTest: false, depthWrite: false, side: THREE.DoubleSide, fog: false, toneMapped: false, transparent: true });
+  const foldA = new THREE.Group(), foldB = new THREE.Group(); foldA.position.set(-0.125, 0, -0.5); foldB.position.set(0.125, 0, -0.5); cam.add(foldA); cam.add(foldB);
+  const fA = new THREE.Mesh(new THREE.PlaneGeometry(0.25, 0.42).translate(0.125, 0, 0), foldMat(P.mintL)); fA.renderOrder = 60; foldA.add(fA);
+  const fB = new THREE.Mesh(new THREE.PlaneGeometry(0.25, 0.42).translate(-0.125, 0, 0), foldMat(P.mintL)); fB.renderOrder = 60; foldB.add(fB);
+  for (const [g, x] of [[foldA, 0.125], [foldB, -0.125]]) { const st = new THREE.Mesh(new THREE.PlaneGeometry(0.25, 0.012).translate(x, -0.06, 0.0005), foldMat(P.coralD)); st.renderOrder = 61; g.add(st); }
+  const LTS = []; for (const [g, x] of [[foldA, 0.125], [foldB, -0.125]]) { const lt = LTS[LTS.length] = new THREE.Mesh(new THREE.PlaneGeometry(0.2, 0.1).translate(x, 0.02, 0.001), new THREE.MeshBasicMaterial({ map: inkTex(512, 256, (g2, w, h) => { txt(g2, "1902 →", w / 2, 70, `900 96px ${SANS}`, P.coralD); txt(g2, "HARI INI", w / 2, 180, `900 96px ${SANS}`, P.ink); }), transparent: true, depthTest: false, depthWrite: false, toneMapped: false, fog: false, side: THREE.DoubleSide })); lt.renderOrder = 62; g.add(lt); }
+  // bedroom diorama corner: left side wall, warm sconce, shelf with books, a paper mobile in the foreground, creased front panel
+  card(3.2, 4.5, "#264c4d", HO, -3.85, 2.25, -1.0, 0.06).rotation.y = Math.PI / 2;
+  { const sc = new THREE.Group(); sc.position.set(-1.95, 3.25, -2.47); HO.add(sc); cut(S.arch(0.3, 0.42, 0, -0.21), P.goldL, sc, 0, 0, 0.02, 0.04, { emi: "#ffc070", ei: 0.6 }); const sl = new THREE.PointLight(0xffc27a, 2.2, 4, 1.5); sl.position.set(0, 0, 0.35); sc.add(sl); }
+  { const sh = new THREE.Group(); sh.position.set(1.35, 2.2, -2.35); HO.add(sh); pbox(1.0, 0.06, 0.3, P.brownL, sh, 0, 0, 0); const RB = mulberry(21); for (let i = 0; i < 6; i++) { const bh = 0.25 + RB() * 0.12; const bk = pbox(0.09, bh, 0.22, [P.coral, P.cobalt, P.gold, P.mintD][i % 4], sh, -0.4 + i * 0.12, 0.03 + bh / 2, 0); bk.rotation.z = i === 5 ? -0.3 : 0; } }
+  { const mob = new THREE.Group(); mob.position.set(-1.0, 4.3, 1.9); HO.add(mob); mesh(new THREE.CylinderGeometry(0.006, 0.006, 1.4, 4), pm(P.ink, { flat: true }), mob, 0, 0.7, 0); const bar = card(1.1, 0.03, P.brown, mob, 0, 0, 0, 0.03);
+    for (const [x, c] of [[-0.5, P.coralL], [0, P.goldL], [0.5, P.mint]]) { mesh(new THREE.CylinderGeometry(0.004, 0.004, 0.5, 4), pm(P.ink, { flat: true }), mob, x, -0.25, 0); cloud(mob, x, -0.6, 0, 0.22, c); } }
+  print(inkTex(512, 128, (g, w, h) => { g.strokeStyle = "rgba(125,88,67,.35)"; g.lineWidth = 3; for (const x of [128, 256, 384]) { g.beginPath(); g.moveTo(x, 6); g.lineTo(x, h - 6); g.stroke(); } g.strokeStyle = "rgba(255,255,255,.7)"; for (const x of [131, 259, 387]) { g.beginPath(); g.moveTo(x, 6); g.lineTo(x, h - 6); g.stroke(); } }), 2.36, 0.58, hinge, 0, -0.31, 0.03);
+  // cut flash overlay is in the grade pass
+  const cuts = [K.s2, K.s7];
+
+  // ---------- camera: one shot per station group, hard cuts between dioramas ----------
+  const k = (t, p, l, ox = 0) => [t, p[0] + ox, p[1], p[2], l[0] + ox, l[1], l[2]];
+  const S1 = track([
+    k(-0.1, [-2.35, 1.45, 8.8], [-2.45, 1.7, -1.0], SHOP),
+    k(K.s1e + 0.3, [-2.25, 1.4, 8.3], [-2.4, 1.7, -1.0], SHOP),
+  ]);
+  const S2 = track([
+    k(K.s2, [2.4, 3.9, 7.0], [1.9, 1.85, 1.0], SHOP),
+    k(A("s2:Udaranya"), [2.2, 3.8, 6.6], [1.75, 1.85, 0.8], SHOP),
+    k(A("s2:Kertasnya") + 0.2, [0.45, 2.35, 4.8], [0.45, 2.15, -0.6], SHOP),
+    k(A("s2:warna") - 0.2, [0.9, 2.2, 4.6], [0.9, 2.1, -0.4], SHOP),
+    k(A("s2:meleset") + 0.2, [2.45, 1.85, 4.5], [1.95, 1.8, 1.1], SHOP),
+    k(K.s2e + 0.1, [2.4, 1.85, 4.3], [1.95, 1.8, 1.1], SHOP),
+    k(K.s3 + 1.4, [1.3, 1.1, 9.4], [-1.95, 0.95, -0.8], SHOP),
+    k(A("s3:mendinginkan"), [1.0, 1.1, 9.1], [-2.0, 0.95, -0.9], SHOP),
+    k(K.s3e + 0.3, [0.8, 1.15, 8.9], [-2.05, 1.0, -0.9], SHOP),
+  ]);
+  const S4 = track([
+    k(K.s4, [0.2, 2.6, 13.5], [-0.8, 2.1, -1.0]),
+    k(A("s4:unit"), [0.0, 2.75, 10.6], [-0.6, 2.35, -1.3]),
+    k(A("s4:evaporator"), [1.6, 2.55, 5.4], [-0.35, 2.9, -2.1]),
+    k(A("s4:Kipas"), [1.4, 2.45, 5.1], [-0.35, 2.85, -2.1]),
+    k(K.s4e, [-0.4, 2.7, 5.3], [-0.6, 2.55, -1.6]),
+    k(A("s5:menyentuh"), [0.15, 2.45, 2.6], [-0.05, 3.0, -2.15]),
+    k(A("s5:tetesan"), [0.4, 2.55, 2.1], [0.1, 3.05, -2.2]),
+    k(A("s5:ditampung"), [0.6, 2.55, 2.4], [0.4, 3.0, -2.2]),
+    k(A("s5:selang") + 0.2, [3.95, 1.6, 2.9], [3.1, 1.15, -2.1]),
+    k(A("s5:menetes"), [3.85, 1.25, 2.5], [3.15, 0.85, -2.05]),
+    k(K.s5e, [3.8, 1.25, 2.4], [3.15, 0.85, -2.05]),
+    k(A("s6:refrigeran"), [2.4, 5.6, 4.0], [2.6, 2.7, -2.1]),
+    k(A("s6:tembaga") + 0.4, [3.3, 5.0, 4.6], [3.5, 2.2, -1.9]),
+    k(A("s6:kompresor"), [5.4, 1.6, 5.6], [4.9, 1.2, -1.4]),
+    k(A("s6:kipasnya") + 0.3, [5.2, 1.75, 6.2], [4.8, 1.4, -1.2]),
+    k(A("s6:inverter"), [6.2, 1.9, 7.4], [6.2, 1.5, -1.0]),
+    k(A("s6:Kecepatannya"), [6.9, 1.9, 6.4], [6.9, 1.75, -0.9]),
+    k(K.s6e + 0.2, [7.0, 1.95, 6.1], [7.0, 1.8, -0.9]),
+  ]);
+  const S7 = track([
+    k(K.s7, [-0.4, 2.0, 16.6], [-0.4, 1.72, -0.3], PKX),
+    k(A("s7:sembilan"), [-0.3, 1.95, 15.9], [-0.3, 1.7, -0.3], PKX),
+    k(A("s7:tiga"), [-0.1, 1.95, 15.3], [-0.2, 1.68, -0.3], PKX),
+    k(K.s7e + 0.3, [-0.05, 1.95, 15.1], [-0.2, 1.68, -0.3], PKX),
+  ]);
+  const S8 = track([
+    k(K.s8, [-6.5, 16.5, 19.5], [1.6, 0.6, -0.6]),
+    k(K.end, [-4.6, 14.8, 18.0], [1.8, 0.8, -0.7]),
+    k(K.dur, [-4.4, 14.7, 17.9], [1.8, 0.8, -0.7]),
+  ]);
+  const look = new THREE.Vector3();
+  const camAt = (t) => (t < K.s2 ? S1(t) : t < K.s4 ? S2(t) : t < K.s7 ? S4(t) : t < K.s8 ? S7(t) : S8(t));
+  const stationX = (t) => (t < K.s4 ? SHOP : t < K.s7 ? 1.5 : t < K.s8 ? PKX : 1.5);
+  const win = (t, a, b, f = 0.3) => ramp(t, a - f, a) * (1 - ramp(t, b, b + f));
+  const o3 = new THREE.Object3D();
+
+  return (t) => {
+    const c = camAt(t);
+    const hx = 0.05 * Math.sin(t * 0.37), hy = 0.035 * Math.sin(t * 0.53 + 1);
+    cam.position.set(c[0] + hx, c[1] + hy, c[2]); look.set(c[3], c[4], c[5]); cam.lookAt(look);
+    let fl = 0; for (const ct of cuts) { const d = t - ct; if (d >= 0 && d < 0.14) fl = Math.max(fl, 0.32 * (1 - d / 0.14)); }
+    gradeP.uniforms.flash.value = fl;
+    // paper fold over the 1902 -> today cut
+    { const tc = Math.abs(t - K.s8) < 0.5 ? K.s8 : K.s4, fc = tc === K.s8 ? P.coralL : P.mintL;
+      const a = clamp01((t - (tc - 0.42)) / 0.42), b = clamp01((t - tc) / 0.42);
+      foldA.visible = t > tc - 0.42 && t < tc; foldB.visible = t >= tc && t < tc + 0.42; LTS.forEach((m) => (m.visible = tc === K.s4));
+      foldA.rotation.y = (Math.PI / 2) * (1 - eout(a)); fA.material.color.set(fc).multiplyScalar(0.75 + 0.25 * eout(a));
+      foldB.rotation.y = -(Math.PI / 2) * (b * b); fB.material.color.set(fc).multiplyScalar(1 - 0.25 * b); }
+    const sx = stationX(t);
+    key.position.set(sx - 7, 12, 9); key.target.position.set(sx, 0, -0.5);
+    SH.visible = t < K.s4 + 0.1; PK.visible = t > K.s7 - 0.1 && t < K.s8 + 0.1; HO.visible = t > K.s4 - 0.1;
+
+    PR.visible = !(t >= K.s2 && t < K.s3);
+    // ================= SHOP =================
+    if (SH.visible) {
+      const humid = t < K.s3 ? 0.35 + 0.65 * ramp(t, A("s2:Udaranya") - 0.3, A("s2:lembap")) : 1 - 0.85 * ramp(t, A("s3:mendinginkan"), A("s3:mengatur") + 0.6);
+      const hook = t < K.s2 ? 1 : 0;
+      const hu = Math.max(hook ? 0.15 : humid, 0);
+      humS.forEach((d, i) => { const yy = d[1] + 0.25 * Math.sin(t * d[4] * 0.6 + d[3]); o3.position.set(d[0] + 0.3 * Math.sin(t * 0.3 * d[5] + d[3]), yy, d[2]); o3.rotation.set(0, 0, 0.3 * Math.sin(t + d[3])); o3.scale.setScalar(Math.max(0.001, hu * d[5] * (0.8 + 0.2 * Math.sin(t * 2 + i)))); o3.updateMatrix(); hum.setMatrixAt(i, o3.matrix); });
+      hum.instanceMatrix.needsUpdate = true;
+      // sheets swell and shrink (stronger with humidity), sway in the cold air in the hook
+      const sw = (t < K.s2 ? 0.4 : humid) * (t > A("s2:Kertasnya") - 0.5 || t < K.s2 ? 1 : 0.5);
+      sheets.forEach(({ m, geo, base, i }) => {
+        const p = geo.attributes.position.array;
+        for (let v = 0; v < p.length; v += 3) { const x = base[v], y = base[v + 1]; p[v] = x * (1 + 0.06 * sw * Math.sin(t * 1.7 + i)); p[v + 1] = y * (1 + 0.04 * sw * Math.sin(t * 1.7 + i + 1)); p[v + 2] = (0.05 + 0.09 * sw) * Math.sin(x * 7 + t * 2.4 + i) * (-y) + (t < K.s2 ? 0.12 * Math.sin(t * 3 + i) * -y : 0); }
+        geo.attributes.position.needsUpdate = true; geo.computeVertexNormals();
+      });
+      // misregistration: offsets grow on "meleset"; back in register after the machine runs
+      const mis = (t < K.s3 ? ramp(t, A("s2:warna") - 0.2, A("s2:meleset") + 0.3) : 1 - ramp(t, A("s3:mengatur"), A("s3:mengatur") + 0.8)) * (t < K.s2 ? 0 : 1);
+      const wob = 1 + 0.15 * Math.sin(t * 2.2);
+      L_C.position.x = 0.075 * mis * wob; L_C.position.y = 1.79 + 0.04 * mis; L_M.position.x = -0.06 * mis * wob; L_M.position.y = 1.79 - 0.05 * mis; L_K.position.x = 0.02 * mis; L_K.rotation.z = 0.015 * mis;
+      // press runs
+      const pr = t * 2.2; rollers[0].rotation.y = pr; rollers[1].rotation.y = -pr * 1.5; rollers[2].rotation.y = -pr * 2; fly.rotation.z = -pr * 0.6;
+      const su = ((t * 0.45) % 1); outSheet.position.set(0.1 - 1.05 * eout(su), 1.0 - 0.05 * su, 0); outSheet.visible = su < 0.92;
+      // machine: present in the hook, gone during s2, pops up on "merancang"
+      const pop = t < K.s2 ? 1 : back(clamp01((t - A("s3:merancang") + 0.1) / 0.6), 1.2);
+      MA.visible = pop > 0.002; MA.scale.set(1, Math.max(0.001, pop), 1);
+      const on = t < K.s2 ? 1 : ramp(t, A("s3:mendinginkan") - 0.3, A("s3:mendinginkan") + 0.3);
+      maBl.rotation.z = -t * 9 * on;
+      coilM.emissiveIntensity = 0.5 * on;
+      needles[0].rotation.z = 0.9 - 1.5 * on * ramp(t, A("s3:mendinginkan") - 2, A("s3:udara")); needles[1].rotation.z = 0.9 - 1.6 * (t < K.s2 ? 1 : ramp(t, A("s3:mengatur"), A("s3:kelembapannya") + 0.4));
+      shopCold.forEach((f) => f(t, on * pop)); maOut.forEach((f) => f(t, on * pop));
+      shopWarm.forEach((f) => f(t, t > K.s2 && t < K.s3 + 1 ? ramp(t, A("s2:Udaranya") - 0.4, A("s2:lembap")) * (1 - ramp(t, K.s3 - 0.2, K.s3 + 0.8)) : 0));
+      for (let i = 0; i < 10; i++) { const u = ((t * 0.7 + i / 10) % 1); const x = -0.38 + (i * 0.083); o3.position.set(x, 0.9 - 0.2 * u * u, 0.6 + 0.02 * (i % 2)); o3.scale.setScalar(on * pop > 0.1 ? 0.026 * (u < 0.15 ? u / 0.15 : 1) : 0.0001); o3.rotation.set(0, 0, 0); o3.updateMatrix(); maDrips.setMatrixAt(i, o3.matrix); }
+      maDrips.instanceMatrix.needsUpdate = true;
+      // figures
+      const wv = ramp(t, A("s3:Willis") - 0.2, A("s3:Willis") + 0.4) * (1 - ramp(t, A("s3:merancang") - 0.2, A("s3:merancang") + 0.4));
+      pose(wil, { aL: 0.2 + 2.2 * ramp(t, A("s3:merancang") - 0.1, A("s3:merancang") + 0.5) * (t > K.s3 ? 1 : 0) - 0.0, eL: 0.5, aR: -0.35 - 0.4 * wv * (1 + 0.3 * Math.sin(t * 9)), eR: -1.1 + 0.4 * wv, hz: 0.06 * Math.sin(t * 0.8) });
+      wil.armL.sh.rotation.z = -(0.2 + 1.1 * ramp(t, A("s3:merancang"), A("s3:merancang") + 0.5) * (t > K.s3 ? 1 : 0));
+      wil.G.visible = t >= K.s3 - 0.1; plate.visible = t >= K.s3 - 0.1;
+      pose(wk, { aL: 0.5 + 0.2 * Math.sin(t * 4.4), eL: -1.0, aR: -0.6 - 0.2 * Math.sin(t * 4.4), eR: 1.0, hz: -0.1 });
+    }
+
+    // ================= HOUSE =================
+    if (HO.visible) {
+      const s8 = t > K.s8;
+      const open = s8 ? 1 : ramp(t, A("s4:unit") - 0.2, A("s4:unit") + 0.7);
+      hinge.rotation.x = -0.95 * back(open, 0.8);
+      const cold = s8 ? 1 : ramp(t, A("s4:evaporator") - 0.3, A("s4:dingin"));
+      coldL.intensity = 5 * cold * open;
+      frost.material.emissiveIntensity = 0.22 * cold;
+      finM.emissiveIntensity = 0.16 * cold + 0.05 * cold * Math.sin(t * 3);
+      const fan = s8 ? 1 : ramp(t, A("s4:Kipas") - 0.4, A("s4:Kipas") + 0.3);
+      cff.rotation.x = t * 14 * Math.max(0.2, fan);
+      louver.rotation.x = 0.25 * Math.sin(t * 0.9) * fan;
+      led.material.emissiveIntensity = 1.2 + 0.8 * Math.sin(t * 4);
+      roomCold.forEach((f) => f(t, (t > K.s5 + 0.4 && !s8 ? 0 : 1) * Math.max(fan, ramp(t, K.s4, K.s4 + 0.6) * 0.6)));
+      roomWarm.forEach((f) => f(t, (t < A("s4:evaporator") - 0.5 || s8 ? 1 : 0) * Math.max(fan, ramp(t, K.s4, K.s4 + 0.6) * 0.6)));
+      // condensation on the fins: drops grow, slide down, fall into the tray
+      const cond = s8 ? 1 : ramp(t, A("s5:menyentuh"), A("s5:mengembun") + 0.3);
+      iuDS.forEach((d, i) => {
+        const u = ((t / d[2] + d[1]) % 1);
+        const grow = clamp01(u / 0.45), slide = clamp01((u - 0.45) / 0.45);
+        o3.position.set(d[0], 0.27 - d[3] - (0.3 - d[3] * 0.5) * slide * slide, 0.142);
+        o3.scale.set(0.018 + 0.014 * grow, (0.018 + 0.014 * grow) * (1 + 0.5 * slide), 0.02);
+        if (cond < 0.02 || u > 0.92) o3.scale.setScalar(0.0001); else o3.scale.multiplyScalar(cond);
+        o3.updateMatrix(); iuDrops.setMatrixAt(i, o3.matrix);
+      });
+      iuDrops.instanceMatrix.needsUpdate = true;
+      // hose drips into the jar; the jar fills through the film
+      const drip = s8 || t > A("s5:selang") - 0.5;
+      for (let i = 0; i < 4; i++) { const u = ((t * 0.9 + i / 4) % 1); o3.position.set(3.2, 0.58 - 0.5 * u * u * 1.6, -2.05); const sc = drip ? 0.035 * (u < 0.1 ? u / 0.1 : 1) : 0.0001; o3.scale.set(sc, sc * 1.3, sc); o3.updateMatrix(); hoseDrops.setMatrixAt(i, o3.matrix); }
+      hoseDrops.instanceMatrix.needsUpdate = true;
+      const lvl = 0.06 + 0.16 * ramp(t, A("s5:selang"), K.s6) + 0.2 * ramp(t, K.s8, A("s8:pengering") + 1.5);
+      water.scale.y = lvl; water.position.y = lvl / 2 + 0.01;
+      // room thermometer drops once the unit runs
+      thFill.scale.y = 0.85 - 0.45 * ramp(t, A("s4:Kipas"), K.s5e);
+      // refrigerant + outdoor unit
+      const ref = s8 ? 1 : ramp(t, A("s6:Panas") - 0.4, A("s6:refrigeran"));
+      const inv = t > A("s6:inverter") - 0.3 && !s8;
+      const tmp = (x) => 0.5 + 0.32 * Math.sin(x * 1.1) + 0.12 * Math.sin(x * 2.3 + 1);
+      const spd = inv ? tmp(t - 0.35) : 0.85;
+      arrHot(t, ref, 0.1 + 0.08 * spd, -1); arrCold(t, ref, 0.1 + 0.08 * spd, 1);
+      const fanAng = inv ? (0.5 * t - 0.32 / 1.1 * Math.cos((t - 0.35) * 1.1) - 0.12 / 2.3 * Math.cos((t - 0.35) * 2.3 + 1)) * 16 : t * 13.6;
+      ouFan.rotation.z = -(t < K.s6 - 1 && !s8 ? t * 3 : fanAng);
+      comp3.position.x = 0.66 + 0.006 * Math.sin(t * 60) * spd * ref; comp3.rotation.y = 0.04 * Math.sin(t * 37) * spd * ref;
+      condM.emissiveIntensity = 0.6 * ref * (0.6 + 0.4 * spd);
+      const ho = s8 ? 1 : ramp(t, A("s6:kipasnya") - 0.5, A("s6:membuang"));
+      heatOut.forEach((f) => f(t, ho * (0.5 + 0.5 * spd)));
+      ibNeedle.rotation.z = Math.PI / 2 - Math.PI * (0.08 + 0.84 * spd);
+      ibBar.scale.x = Math.max(0.02, inv ? tmp(t) : 0.85);
+      const kp = s8 ? 0 : 1; kid.G.rotation.y = 0.25; pose(kid, { aL: 0.7, eL: -1.4, aR: -0.7, eR: 1.4, sit: 1, hz: 0.05 * Math.sin(t * 0.7) });
+      kid.head.rotation.z = 0.05 * Math.sin(t * 0.7) + 0.08 * kp * ramp(t, A("s4:Kipas"), A("s4:Kipas") + 1);
+    }
+
+    // ================= PK =================
+    if (PK.visible) {
+      const tq = A("s7:PK"), t9 = A("s7:sembilan"), t2 = A("s7:dua"), t7 = A("s7:tujuh"), t3 = A("s7:tiga");
+      stampG.scale.setScalar(Math.max(0.001, back(clamp01((t - tq + 0.1) / 0.4)))); stampG.rotation.z = -0.12;
+      blocks.forEach((b, i) => { const p = back(clamp01((t - t9 + 0.1 - i * 0.18) / 0.4), 1.4); b.scale.set(1, Math.max(0.001, p), 1); });
+      vHeat.material.opacity = 0.25 + 0.75 * ramp(t, t9, t9 + 0.3); vHeat.scale.setScalar(1 + 0.08 * win(t, t2, t2 + 0.6, 0.15));
+      elec.scale.set(1, Math.max(0.001, back(clamp01((t - t7 + 0.1) / 0.45), 1.4)), 1);
+      vElec.material.opacity = ramp(t, t7, t7 + 0.3);
+      nums.forEach((m, i) => { const p = ramp(t, t3 - 0.1 + i * 0.22, t3 + 0.15 + i * 0.22); m.material.opacity = p; m.scale.setScalar(0.6 + 0.4 * back(p)); });
+      pkCold.forEach((f) => f(t, ramp(t, A("s7:split") - 0.3, A("s7:split") + 0.3)));
+    }
+    comp.render();
+  };
+}

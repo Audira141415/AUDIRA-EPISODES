@@ -1,0 +1,425 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP57_PARAGUAY_PERANG_3_NEGARA",
+  "topic": "Paraguay melawan Argentina, Brasil, Uruguay sekaligus (1864–1870)",
+  "createdAt": "2026-11-23T14:21:41.360Z",
+  "updatedAt": "2026-11-24T07:07:25.965Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.066Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:21:41.360Z",
+      "startedAt": "2026-11-23T14:21:41.360Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.066Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:21:02.820Z",
+      "startedAt": "2026-11-23T14:21:02.820Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:24:13.318Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:24:06.703Z",
+      "startedAt": "2026-11-23T14:24:06.703Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:24:28.856Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:24:24.477Z",
+      "startedAt": "2026-11-23T14:24:24.477Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.066Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-23T14:20:01.185Z",
+      "startedAt": "2026-11-23T14:20:01.185Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.066Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-23T14:23:40.332Z",
+      "startedAt": "2026-11-23T14:23:40.332Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.066Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:21:02.587Z",
+      "startedAt": "2026-11-23T14:21:02.587Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:38:38.541Z",
+          "text": "s3: rig 5/5, SHOTLIST.md + sfx.wav (-26 LUFS), draft berjalan"
+        },
+        {
+          "at": "2026-11-23T14:43:23.733Z",
+          "text": "Juri 3.50 (L4 M3 D4 C3 Mo5 R2), self 4.17; diterima 3.50 setelah 2 putaran (aturan 2026-11-23). Rig 5/5, camera 5/5, G18c VO 14 LU di atas SFX. Menunggu acc render final."
+        }
+      ],
+      "startedAt": "2026-11-23T14:38:38.541Z",
+      "doneAt": "2026-11-23T14:43:23.733Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-23T18:20:19.214Z",
+      "notes": [
+        {
+          "at": "2026-11-23T18:20:19.214Z",
+          "text": "Acc pengguna 2026-11-24: \"Gas, render final\" (sesi s3)."
+        },
+        {
+          "at": "2026-11-24T07:05:40.963Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60, 93.93 dtk, -13.7 LUFS, TP -1.8 dBFS, metadata + Ed25519 + C2PA VALID, deliver-check GREEN. Skor final self 3.67 (draf juri 3.50 diterima setelah 2 putaran)."
+        }
+      ],
+      "startedAt": "2026-11-23T18:20:19.214Z",
+      "doneAt": "2026-11-24T07:05:40.963Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T18:23:27.440Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-24T07:07:25.965Z",
+          "text": "SOCIAL_CAPTIONS.md lolos validator; NOTES.md; append_lesson worked HISTORYMAP; scheduled review 24h/72h/7d (fireAt 2027-01-04/06/10 19.00 WIB); file perantara dihapus; sesi s1+s2 diarsipkan."
+        }
+      ],
+      "doneAt": "2026-11-24T07:07:25.965Z",
+      "startedAt": "2026-11-23T18:23:11.768Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-negara-EP57",
+    "style": "HISTORYMAP",
+    "engine": "remotion",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-24T07:03:01.095Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-23T14:23:53.012Z",
+      "doing": "VO terkunci (vo.wav 90.7 dtk, dirapatkan dari vo-raw.wav via scripts/tighten-vo.py 0.42), timeline.json dibuat (6 parts + anchors). Style HISTORYMAP Remotion+R3F dipilih (alt: VINTAGEFORGE, TIMEFORGE). Belum: docs (STYLE_DECISION, ART_DIRECTION, SCRIPT, STORYBOARD, ASSET_MANIFEST), kode film, cover, SFX, draf.",
+      "files": [
+        "audio/vo.txt",
+        "audio/timeline.json",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "project/scripts/tighten-vo.py"
+      ],
+      "next": "Tulis docs; bangun src/episode/ParaguayFilm.tsx dengan FilmFromConfig (6 beat dari audio/timeline.json): peta meja perang Amerika Selatan (poligon lon/lat Paraguay/Argentina/Brasil/Uruguay, k=0.25), 3 panah aliansi, kartu López (figur generik tanpa wajah), token prajurit 60.000+60.000, rute gerilya ke Cerro Corá 1 Mar 1870, grafik populasi 420–450rb→150rb, 28rb laki-laki, figur 4:1, wedge wilayah ±30% lepas, chip 1876/1943, outro AUDIRA. Overlay: Subtitle + AudiraSignature (tanpa prop handle) + AudiraOutro. Lalu daftarkan Preview/Final di Root.tsx, cover, sfx, npm run draft.",
+      "snapshot": {
+        "episode": "EP57_PARAGUAY_PERANG_3_NEGARA",
+        "topic": "Paraguay melawan Argentina, Brasil, Uruguay sekaligus (1864–1870)",
+        "style": null,
+        "memoryEpisode": "sejarah-negara-EP57",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T14:25:12.261Z",
+      "doing": "Selesai: preflight lolos (node_modules = junction ke F:\\AUDIRA-SKILL-MOTION\\node_modules, bukan starter\\node_modules), check-env ok, channel @AudiraFaktaDunia, STATUS via MCP init (STATUS scaffold dipindah ke archive/), SOURCE_REGISTER disalin, style/STYLE_DECISION.md + cover-reference.png, docs/ART_DIRECTION, SCRIPT, STORYBOARD (6 scene + kolom Audio), ASSET_MANIFEST, VO terkunci 90.7 dtk (public/audio/vo.wav + vo-words.json, raw di vo-raw.wav), audio/timeline.json (parts hook 0–13.37, context –29.52, main –43.7, explanation –58.77, payoff –77.75, outro –93.91; anchors per angka). Belum ada kode film.",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "audio/timeline.json",
+        "project/public/audio/vo.wav",
+        "project/src/Root.tsx"
+      ],
+      "next": "Tulis project/src/episode/ParaguayFilm.tsx dengan FilmFromConfig (src/templates): beats dari audio/timeline.json; shots per beat pakai lookAt(target,{az,el,dist,fov}) karena tiap babak di lokasi berbeda di meja. Resep look dari src/kits/historymap (CartographicTerrain3D: meja RoundedBoxGeo + MAP_PAPER/TABLE/GILT, useSurfaceGrain seeded; TacticalPincerArrows3D: panah TubeGeometry dikuantisasi). Peta: poligon lon/lat → x=(lon+57)*0.25, z=-(lat+26)*0.25 (Paraguay emas, Argentina/Brasil/Uruguay crimson beda nada, wedge klaim ±30% Chaco→Argentina & utara→Brasil). GLB lokal (public/models/polyfork/*): soldiers-tent-4bd5b9, camp-tent-3c5c89, palm-tree-a307da, chilean-palm-45fef5, wheat-crop-7e08e6, corn-crop-b71f2f, basket-of-produce-7420cf, adobe-colonial-farmhouse-cf13d8, cannonball-f87cdc, deck-cannon-17849e. Manusia = ToyPerson (core/polish/Person.tsx) sebagai token, tanpa luka/darah. Overlay: HUD HTML (DISPLAY fonts, ≥36px, y 236–1520) + Subtitle (core/hud/Subtitle) + AudiraSignature seed=\"sejarah-negara-ep57\" TANPA prop handle + AudiraOutro seconds={3}. Tanpa useFrame (deterministik). Daftarkan ParaguayPreview (540×960@30) & ParaguayFinal (1080×1920@60, durasi 93.91 dtk) di src/Root.tsx (boleh hapus PenggantiGibranWapres dari Root). Lalu: npm run typecheck, npm run cover, audit:rig, npm run sfx, draft/THEME_CHECK.md, npm run draft -- ParaguayPreview, juri buta, gerbang acc render final.",
+      "snapshot": {
+        "episode": "EP57_PARAGUAY_PERANG_3_NEGARA",
+        "topic": "Paraguay melawan Argentina, Brasil, Uruguay sekaligus (1864–1870)",
+        "style": null,
+        "memoryEpisode": "sejarah-negara-EP57",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T14:32:32.877Z",
+      "doing": "s2 menulis kode film: project/src/episode/ParaguayMap.tsx (WarTable peta lon/lat → x=(lon+57)*.25, z=-(lat+26)*.25, 5 negara ExtrudeGeometry, 3 sungai, wedge Chaco/Misiones/Utara, MapArrow, DashedRoute, MapPin) dan ParaguayFilm.tsx (FilmFromConfig, 6 scene: hook 3 panah + 10 token 6–7 tenggelam; context López ToyPerson + aliansi berurutan; main 24 token seragam tenggelam di 34.6 + 24 konskrip masuk 37.2 + tenda/meriam GLB; explanation rute gerilya putus-putus + kemah + palem GLB + pin Cerro Corá 50.9; payoff kolom populasi 435k→150k impact 66.63 + kolom 28k + 4 perempuan:1 laki + ladang/rumah GLB; outro wedge ±30% terangkat 79.3 + pin pendudukan + kartu). HUD HTML Card per anchor di top=340, chip tahun, Subtitle y=1300 maxWords 5, Voiceover, AudiraOutro 3s, AudiraSignature seed sejarah-negara-ep57. ParaguayPreview/ParaguayFinal (93.91 dtk) terdaftar di Root.tsx (PenggantiGibran dihapus dari Root). BELUM typecheck.",
+      "command": "npm run typecheck",
+      "files": [
+        "project/src/episode/ParaguayFilm.tsx",
+        "project/src/episode/ParaguayMap.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "Di folder project: `npm run typecheck` (tsc 7; perbaiki error, mis. import JSON vo-words, tipe profile/look, SceneText font serifItalic/sans) → `npm run cover -- ParaguayPreview --episode=..` → `npm run audit:rig` → `npm run sfx` → tulis draft/THEME_CHECK.md (G22) → `npm run draft -- ParaguayPreview` → record_score self lalu juri buta subagent (qa/jury.md) → gerbang acc render final (contact sheet, skor juri, durasi, G18c). Lalu final render_batch (--vo public/audio/vo.wav, --sfx public/audio/sfx.wav, concurrency 2), QA, delivery.",
+      "snapshot": {
+        "episode": "EP57_PARAGUAY_PERANG_3_NEGARA",
+        "topic": "Paraguay melawan Argentina, Brasil, Uruguay sekaligus (1864–1870)",
+        "style": null,
+        "memoryEpisode": "sejarah-negara-EP57",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T14:38:31.097Z",
+      "doing": "s3: typecheck ok (sisa error hanya file template scaffold), Subtitle dipindah ke root film (Captions) + gap 0.4em di core/hud/Subtitle.tsx, cover ulang, rig 5/5 (scripts/rig-paraguay.ts, shots transisi dilebarkan), docs/SHOTLIST.md ditulis, sfx.wav −26 LUFS (PYTHONUTF8=1 wajib). Sekarang npm run draft -- ParaguayPreview.",
+      "command": "cd project; npm run draft -- ParaguayPreview",
+      "files": [
+        "project/src/episode/ParaguayFilm.tsx",
+        "project/scripts/rig-paraguay.ts",
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "Tulis draft/THEME_CHECK.md dari frame DRAFT_SHEET, record_score self, juri buta subagent (qa/jury.md) record_score jury, lalu gerbang acc render final.",
+      "snapshot": {
+        "episode": "EP57_PARAGUAY_PERANG_3_NEGARA",
+        "topic": "Paraguay melawan Argentina, Brasil, Uruguay sekaligus (1864–1870)",
+        "style": null,
+        "memoryEpisode": "sejarah-negara-EP57",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T14:43:32.255Z",
+      "doing": "s3 di GERBANG ACC render final. Draf selesai: draft/DRAFT_SHEET.jpg, juri 3.50 diterima setelah 2 putaran (tanpa poles lagi), self 4.17, rig 5/5, camera 5/5, G18c lolos (VO -16 vs SFX efektif -30 = 14 LU). Durasi film 93.91 dtk (VO 90.74). Lesson failed sudah dicatat. Menunggu jawaban pengguna.",
+      "command": "setelah acc: audira_episode_status update stage final approved:true (hanya dari jawaban pengguna), lalu di project/: npm run render:final -- ParaguayFinal --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc (atau audira_render_batch), background",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "Final QA (-14 LUFS, TP<-1, metadata ffmpeg, signature, frame check), record_score final, NOTES.md (tulis 'diterima 3.50 setelah 2 putaran'), SOCIAL_CAPTIONS.md 6 platform + Jadwal Upload (WIB) + Label Konten AI lolos audira_validate_social_captions + tampil di chat, append_lesson worked, 3 scheduled task review 24h/72h/7d, hapus file perantara.",
+      "snapshot": {
+        "episode": "EP57_PARAGUAY_PERANG_3_NEGARA",
+        "topic": "Paraguay melawan Argentina, Brasil, Uruguay sekaligus (1864–1870)",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-negara-EP57",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T18:20:19.530Z",
+      "doing": "Gerbang final SUDAH di-acc pengguna (2026-11-24, \"Gas, render final\"). Render final belum dimulai; dipindah ke sesi s4 karena context guard.",
+      "command": "cd project; npm run render:final -- ParaguayFinal --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error (background; atau audira_render_batch)",
+      "files": [
+        "project/src/episode/ParaguayFilm.tsx",
+        "draft/DRAFT_SHEET.jpg",
+        "project/public/audio/vo.wav",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "QA final (-14 LUFS, TP<-1 dBFS, metadata ffmpeg + ffprobe, signature, cek frame dari MP4), record_score final, NOTES.md ('diterima 3.50 setelah 2 putaran' + pelajaran), SOCIAL_CAPTIONS.md 6 platform + Jadwal Upload (WIB) + Label Konten AI lolos validator + tampil di chat, append_lesson worked, 3 scheduled task review 24h/72h/7d, hapus file perantara, cleanup sesi lama.",
+      "snapshot": {
+        "episode": "EP57_PARAGUAY_PERANG_3_NEGARA",
+        "topic": "Paraguay melawan Argentina, Brasil, Uruguay sekaligus (1864–1870)",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-negara-EP57",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T18:21:14.987Z",
+      "doing": "s4: render final ParaguayFinal 1080x1920@60 berjalan di background",
+      "command": "cd project; npm run render:final -- ParaguayFinal --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error",
+      "files": [
+        "project/out",
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "QA final (LUFS/TP, metadata ffmpeg+ffprobe, signature, contact sheet frame MP4), record_score final, NOTES.md, SOCIAL_CAPTIONS.md + validator, append_lesson, 3 scheduled task, cleanup",
+      "snapshot": {
+        "episode": "EP57_PARAGUAY_PERANG_3_NEGARA",
+        "topic": "Paraguay melawan Argentina, Brasil, Uruguay sekaligus (1864–1870)",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-negara-EP57",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T18:21:14.987Z",
+      "doing": "s4: render final ParaguayFinal 1080x1920@60 berjalan di background",
+      "command": "cd project; npm run render:final -- ParaguayFinal --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error",
+      "files": [
+        "project/out",
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "QA final (LUFS/TP, metadata ffmpeg+ffprobe, signature, contact sheet frame MP4), record_score final, NOTES.md, SOCIAL_CAPTIONS.md + validator, append_lesson, 3 scheduled task, cleanup",
+      "snapshot": {
+        "episode": "EP57_PARAGUAY_PERANG_3_NEGARA",
+        "topic": "Paraguay melawan Argentina, Brasil, Uruguay sekaligus (1864–1870)",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-negara-EP57",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T07:07:25.469Z"
+    }
+  ],
+  "session": 4,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP57 Paraguay melawan Argentina, Brasil, Uruguay sekaligus (1864–1870) · s2",
+      "at": "2026-11-23T14:25:12.260Z"
+    },
+    {
+      "no": 3,
+      "title": "EP57 Paraguay melawan Argentina, Brasil, Uruguay sekaligus (1864–1870) · s3",
+      "at": "2026-11-23T14:32:32.877Z"
+    },
+    {
+      "no": 4,
+      "title": "EP57 Paraguay melawan Argentina, Brasil, Uruguay sekaligus (1864–1870) · s4",
+      "at": "2026-11-23T18:20:19.530Z"
+    }
+  ]
+}

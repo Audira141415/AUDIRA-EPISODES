@@ -1,0 +1,203 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP05_BIKIN_MAP_PAKAI_PROMPT",
+  "topic": "Ledakan map Roblox baru 2026 (AI Build, map viral) dan tips membuatnya",
+  "createdAt": "2026-11-11T08:31:32.451Z",
+  "updatedAt": "2026-11-12T00:59:28.171Z",
+  "currentStage": "complete",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T09:52:40.148Z",
+          "text": "Aturan, memori seri Roblox sebelumnya (AUDIRA_ROBLOX_MAP_2026) dan motion brain dibaca 2026-11-11"
+        }
+      ],
+      "doneAt": "2026-11-11T09:52:40.148Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T08:33:07.570Z",
+          "text": "research/FACTS.md + SOURCE_REGISTER.md; menunggu pilihan style"
+        }
+      ],
+      "doneAt": "2026-11-11T08:33:07.570Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-11T10:11:53.996Z",
+      "notes": [
+        {
+          "at": "2026-11-11T09:52:35.151Z",
+          "text": "Style dipilih pengguna (\"Ya, semua ★\") 2026-11-11; cover topik sedang dibuat"
+        },
+        {
+          "at": "2026-11-11T09:56:41.160Z",
+          "text": "sync: STYLE_DECISION.md ada; acc tercatat di file"
+        },
+        {
+          "at": "2026-11-11T10:11:53.996Z",
+          "text": "Cover topik disetujui pengguna: \"Setuju, lanjut naskah\" (2026-11-11)"
+        }
+      ],
+      "startedAt": "2026-11-11T09:52:35.151Z",
+      "approvalSource": "file",
+      "doneAt": "2026-11-11T10:11:53.996Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-11T13:12:46.973Z",
+      "notes": [
+        {
+          "at": "2026-11-11T09:56:41.160Z",
+          "text": "sync: naskah ada; menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-11T10:13:32.807Z",
+          "text": "docs/SCRIPT.md ditulis (200 kata), menunggu acc"
+        },
+        {
+          "at": "2026-11-11T13:12:46.973Z",
+          "text": "Naskah disetujui pengguna: \"Setuju, buat VO\" (2026-11-11)"
+        }
+      ],
+      "startedAt": "2026-11-11T08:31:32.452Z",
+      "doneAt": "2026-11-11T13:12:46.973Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T13:12:46.973Z",
+          "text": "Studio seri bersama studio/ (starter terbaru, node_modules junction ke _cache), check-env + tsc OK; channel TECH @AudiraTECH"
+        }
+      ],
+      "doneAt": "2026-11-11T13:12:46.973Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T13:16:49.998Z",
+          "text": "VO Cartesia Galang terkunci: voEnd 90.8 s, film 94.8 s (audio/vo.wav, timeline.json)"
+        }
+      ],
+      "startedAt": "2026-11-11T13:12:46.973Z",
+      "doneAt": "2026-11-11T13:16:49.998Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T14:24:56.804Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "startedAt": "2026-11-11T13:16:49.998Z",
+      "doneAt": "2026-11-11T13:40:33.990Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-11T18:52:14.361Z",
+      "notes": [
+        {
+          "at": "2026-11-11T14:24:56.804Z",
+          "text": "sync: 1 gambar draf/contact sheet; menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-11T18:52:14.361Z",
+          "text": "Draf disetujui pengguna: \"Setuju, render final\" (2026-11-12). Juri buta terakhir 3,83; pengguna menyetujui walau juri di bawah 4 (poles berhenti, skor mentok di komposisi)"
+        }
+      ],
+      "startedAt": "2026-11-11T13:41:45.266Z",
+      "doneAt": "2026-11-11T18:52:14.361Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T00:21:58.655Z",
+          "text": "FINAL_EP05.mp4 94.8 s, 1080x1920@60, -13.7 LUFS, metadata+sig VALID+C2PA; frame dicek dari MP4; arsip archive/2026-11-12"
+        }
+      ],
+      "startedAt": "2026-11-11T18:52:14.361Z",
+      "doneAt": "2026-11-12T00:21:58.655Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T00:00:13.444Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-12T00:21:58.655Z",
+          "text": "SOCIAL_CAPTIONS.md (6 platform, jadwal 25-29 Nov 19.00 WIB, label AI) validator ok; SUBTITLES.srt; NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-12T00:21:58.655Z",
+      "startedAt": "2026-11-11T23:46:33.493Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T00:59:28.171Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-12T00:21:59.425Z",
+      "startedAt": "2026-11-12T00:21:59.425Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "roblox-map-baru-EP05",
+    "style": "DEVFORGE",
+    "wordCount": 200,
+    "estimatedDuration": {
+      "wordCount": 200,
+      "minSec": 80,
+      "maxSec": 89
+    }
+  },
+  "syncedAt": "2026-11-12T00:59:28.171Z"
+}

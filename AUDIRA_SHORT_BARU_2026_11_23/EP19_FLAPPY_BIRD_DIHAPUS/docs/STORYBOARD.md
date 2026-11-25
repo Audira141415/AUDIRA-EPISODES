@@ -1,0 +1,14 @@
+# STORYBOARD — EP19 Flappy Bird Dihapus Pembuatnya
+Style: PIXELSTORY
+
+| Scene | Waktu | BG/MG/FG/HUD | Kamera | Audio |
+|---|---|---|---|---|
+| A Hook | 0,00–7,27 | BG dinding kamar malam + jendela / MG meja kayu, HP pixel besar: burung AUDIRA terbang di antara menara bata / FG mug, kabel / HUD "US$50.000 / HARI" @1,28, tombol "HAPUS" ditekan @4,32 → layar hitam, "INI AUDIRA" @5,40 | push-in pelan ke HP, guncang kecil saat hapus | pop counter 1,28; klik + glitch 4,32; pop 5,40 |
+| B Konteks | 7,27–25,55 | BG kamar Hanoi: jendela atap, kabel listrik, bulan / MG meja + laptop berstiker AUDIRA, siluet programmer / FG lampu meja / HUD judul FLAPPY BIRD @7,63, NameCard DONG NGUYEN @9,54, chip .GEARS @14,68, kalender BEBERAPA HARI @17,95, chip RILIS 24 MEI 2013 @21,08, grafik datar SEPI @23,45 | dolly kiri→kanan, push-in ke laptop | whoosh 7,27; pop 7,63 / 9,54 / 14,68 / 17,95 / 21,08; nada turun 23,45 |
+| C1 Meledak | 25,55–33,10 | BG langit kota malam / MG billboard tangga lagu berstiker AUDIRA: grafik meledak @27,64, kartu #1 APP GRATIS @30,31 / FG atap gedung / HUD bendera-label AS, TIONGKOK, INGGRIS bergiliran | tilt-up ke billboard, crash zoom kecil 27,64 | whoosh 25,55; riser→impact 27,64; pop 30,31 / 30,96 / 31,34 / 32,26 |
+| C2 Aturan | 33,10–42,63 | Layar game penuh (palet teal): langit, awan pixel, menara bata bergulir / MG burung AUDIRA / HUD skor +1 @37,39, medali PERUNGGU 10 @38,58, PLATINUM 40 @40,90 | side-scroll konstan, burung naik tiap ketuk | whoosh 33,10; tap 34,60; ding 37,39; pop 38,58; impact 40,90 |
+| D1 Uang | 42,63–49,31 | BG dinding kamar / MG toples kaca di meja, hujan koin / FG HP dengan notifikasi menumpuk / HUD "±US$50.000/HARI" @45,66 + sub "PENGAKUANNYA KE THE VERGE" | crane turun mengikuti koin | whoosh 42,63; coin 45,66; pop 47,42 |
+| D2 Tweet | 49,31–58,74 | BG kamar gelap / MG laptop close-up, kartu pesan "8 FEB 2014" + "22 jam lagi…" @51,67 / HUD countdown 22:00:00 berjalan, chip BUKAN SOAL HUKUM @56,99 | push-in lambat ke layar laptop | whoosh 49,31; pop 51,67; tick countdown; pop 56,99 |
+| E1 Hilang | 58,74–71,24 | BG rak toko aplikasi pixel / MG HP "TIDAK DITEMUKAN" @61,01 / HUD kartu kutipan FORBES @63,36, "PRODUK YANG ADIKTIF" @69,26, "SUDAH JADI MASALAH" @70,43 | pull-out pelan, riser ke payoff | whoosh 58,74; glitch 61,01; pop 63,36; riser 66–69; impact 69,26 |
+| E2 Lelang | 71,24–78,99 | BG etalase lelang berlampu / MG HP di bantal beludru, palu lelang / HUD bid counter naik ke ">US$90.000" @75,56 (tawaran), stamp IKLAN DITURUNKAN @77,12 | orbit-pan kanan | whoosh 71,24; tick bid; impact 75,56; stamp 77,12 |
+| OUT Outro | 78,99–89,47 | BG kamar kembali / MG HP gelap, burung tidur di sarang / HUD "KAMU BERANI HAPUS?" @82,95, "IKUTI AUDIRA TECH" @84,58, kartu AUDIRA 85,67–89,47 | pull-out lambat | whoosh 78,99; pop 82,95 / 84,58; outro |

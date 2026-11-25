@@ -1,0 +1,204 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#efe3c8}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.06;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.16) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0) 42%,rgba(0,0,0,0) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Barlow Condensed,sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#1C1712;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#sig{position:absolute;z-index:19;opacity:0;font-family:Outfit,sans-serif;color:#fff;line-height:1.05;pointer-events:none;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+#sig b{display:block;font-weight:700;font-size:28px;letter-spacing:.14em}
+#sig i{display:block;font-style:normal;font-weight:500;font-size:17px;letter-spacing:.04em}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+
+#chip{background:#F6EEDC;padding:5px 12px 3px;border:3px solid #1C1712;box-shadow:4px 4px 0 #1C1712;font-size:20px;letter-spacing:.07em;opacity:1}
+.card{position:relative;display:inline-block;max-width:100%;box-sizing:border-box;background:#F6EEDC;padding:20px 30px 24px;border:4px solid #1C1712;box-shadow:10px 10px 0 #1C1712}
+.card:before{content:"";position:absolute;left:-4px;top:-4px;width:26px;height:26px;background:#B2452B;clip-path:polygon(0 0,100% 0,0 100%)}
+.k{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:31px;letter-spacing:.1em;color:#B2452B;margin-bottom:6px}
+.h{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:86px;line-height:.98;color:#1C1712;letter-spacing:.005em}
+.h.m{font-family:"IBM Plex Sans",sans-serif;font-weight:700;font-size:48px;line-height:1.14;letter-spacing:0}
+.h.q{font-size:72px;margin-top:4px;color:#B2452B}
+.sub{font-family:"IBM Plex Sans",sans-serif;font-weight:600;font-size:36px;line-height:1.22;color:#3b332a;margin-top:12px}
+.tr{font-family:"IBM Plex Sans",sans-serif;font-weight:500;font-style:italic;font-size:33px;line-height:1.3;color:#3b332a;margin-top:4px}
+.ar{font-family:Amiri,serif;direction:rtl;text-align:right;font-size:58px;line-height:1.72;color:#3B2C20}
+.rf{display:inline-block;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:25px;letter-spacing:.06em;color:#F6EEDC;background:#1C1712;padding:3px 12px 2px;white-space:nowrap}
+.chips{display:flex;gap:14px;margin-top:14px;flex-wrap:wrap}
+.chips span{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:40px;letter-spacing:.08em;color:#1C1712;background:#E8892B;border:3px solid #1C1712;padding:4px 16px 2px}
+.chips span.d{background:#1C1712;color:#F6EEDC}
+.ls{display:flex;flex-direction:column;gap:6px;margin-top:8px}
+.ls span{font-family:"IBM Plex Sans",sans-serif;font-weight:600;font-size:44px;line-height:1.12;color:#1C1712;padding-left:50px;position:relative}
+.ls span:before{content:"";position:absolute;left:4px;top:.3em;width:24px;height:24px;border:4px solid #1C1712;background:#E8892B;box-sizing:border-box;transform:skewY(-20deg)}
+.ln{font-family:"IBM Plex Sans",sans-serif;font-weight:700;font-size:38px;line-height:1.2;color:#B2452B;margin-top:12px;padding-top:10px;border-top:3px solid #1C1712}
+.ask{display:inline-block;margin-top:16px;font-family:"IBM Plex Sans",sans-serif;font-weight:700;font-size:38px;line-height:1.2;color:#1C1712;background:#E8892B;border:3px solid #1C1712;padding:10px 18px}
+</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="85.23" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI &middot; TANPA MENGGAMBARKAN SOSOK NABI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="card">
+    <div class="k">KISAH DALAM AL-QUR'AN &middot; 30</div>
+    <div class="h">BESI LUNAK DI TANGAN NABI DAUD</div>
+    <div class="sub" data-at="s1:Tapi" data-fx="rise">Tapi ia tetap makan dari hasil kerja tangannya sendiri.</div>
+  </div>
+</div>
+<div class="p" data-in="s2" data-out="s2:Wahai">
+  <div class="card">
+    <div class="k">SURAH SABA' <span class="rf">QS 34:10</span></div>
+    <div class="ar">وَلَقَدْ ءَاتَيْنَا دَاوُۥدَ مِنَّا فَضْلًا</div>
+    <div class="tr">&ldquo;Sungguh, telah Kami berikan kepada Dawud karunia dari Kami.&rdquo;</div>
+  </div>
+</div>
+<div class="p" data-in="s2:Wahai" data-out="s3">
+  <div class="card">
+    <div class="k">SURAH SABA' <span class="rf">QS 34:10</span></div>
+    <div class="ar">يَـٰجِبَالُ أَوِّبِى مَعَهُۥ وَٱلطَّيْرَ</div>
+    <div class="tr">&ldquo;Wahai gunung-gunung dan burung-burung! Bertasbihlah berulang-ulang bersama Dawud.&rdquo;</div>
+  </div>
+</div>
+<div class="p" data-in="s3" data-out="s3:burung-burung">
+  <div class="card">
+    <div class="k">SURAH SHAD <span class="rf">QS 38:18</span></div>
+    <div class="ar">إِنَّا سَخَّرْنَا ٱلْجِبَالَ مَعَهُۥ يُسَبِّحْنَ بِٱلْعَشِىِّ وَٱلْإِشْرَاقِ</div>
+    <div class="tr">&ldquo;Kami tundukkan gunung-gunung untuk bertasbih bersama dia pada waktu petang dan pagi.&rdquo;</div>
+    <div class="chips"><span data-at="s3:pagi" data-fx="rise">PAGI</span><span class="d" data-at="s3:petang" data-fx="rise">PETANG</span></div>
+  </div>
+</div>
+<div class="p" data-in="s3:burung-burung" data-out="s4">
+  <div class="card">
+    <div class="k">SURAH SHAD <span class="rf">QS 38:19</span></div>
+    <div class="ar">وَٱلطَّيْرَ مَحْشُورَةً ۖ كُلٌّ لَّهُۥٓ أَوَّابٌ</div>
+    <div class="tr">&ldquo;Dan burung-burung dalam keadaan terkumpul. Masing-masing sangat taat.&rdquo;</div>
+    <div class="ln" data-at="s3:Alam" data-fx="rise">Alam pun ikut memuji bersamanya.</div>
+  </div>
+</div>
+<div class="p" data-in="s4" data-out="s4:Perintahnya">
+  <div class="card">
+    <div class="k">SURAH SABA' <span class="rf">QS 34:10</span></div>
+    <div class="ar">وَأَلَنَّا لَهُ ٱلْحَدِيدَ</div>
+    <div class="tr">&ldquo;Dan Kami telah melunakkan besi untuknya.&rdquo;</div>
+  </div>
+</div>
+<div class="p" data-in="s4:Perintahnya" data-out="s4:Besi">
+  <div class="card">
+    <div class="k">PERINTAHNYA <span class="rf">QS 34:11</span></div>
+    <div class="ar">أَنِ ٱعْمَلْ سَـٰبِغَـٰتٍ وَقَدِّرْ فِى ٱلسَّرْدِ</div>
+    <div class="tr">&ldquo;Buatlah baju besi yang besar-besar dan ukurlah anyamannya.&rdquo;</div>
+    <div class="chips"><span data-at="s4:besar-besar" data-fx="rise">BESAR-BESAR</span><span class="d" data-at="s4:ukurlah" data-fx="rise">UKUR ANYAMANNYA</span></div>
+  </div>
+</div>
+<div class="p" data-in="s4:Besi" data-out="s5">
+  <div class="card">
+    <div class="k">BIASANYA</div>
+    <div class="h m">Besi biasanya:</div>
+    <div class="ls">
+      <span>dipanaskan</span>
+      <span data-at="s4:dipukul" data-fx="rise">dipukul keras</span>
+    </div>
+    <div class="ln" data-at="s4:menjadi" data-fx="rise">Di tangannya: lunak.</div>
+  </div>
+</div>
+<div class="p" data-in="s5" data-out="s5:Lalu">
+  <div class="card">
+    <div class="k">SURAH AL-ANBIYA <span class="rf">QS 21:80</span></div>
+    <div class="ar">وَعَلَّمْنَـٰهُ صَنْعَةَ لَبُوسٍ لَّكُمْ لِتُحْصِنَكُم مِّنۢ بَأْسِكُمْ</div>
+    <div class="tr">&ldquo;Dan Kami ajarkan kepada Dawud cara membuat baju besi untukmu, guna melindungi kamu dalam peperanganmu.&rdquo;</div>
+  </div>
+</div>
+<div class="p" data-in="s5:Lalu" data-out="s6">
+  <div class="card">
+    <div class="k">LALU AYAT ITU BERTANYA <span class="rf">QS 21:80</span></div>
+    <div class="ar">فَهَلْ أَنتُمْ شَـٰكِرُونَ</div>
+    <div class="h q">Apakah kamu bersyukur?</div>
+  </div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="card">
+    <div class="k">SABDA RASULULLAH <span class="rf">HR BUKHARI 2072</span></div>
+    <div class="h m">&ldquo;Tidak ada makanan yang lebih baik daripada hasil kerja tangan sendiri.&rdquo;</div>
+    <div class="ln" data-at="s6:Nabi" data-fx="rise">Nabi Daud makan dari hasil kerja tangannya.</div>
+  </div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Ayatnya">
+  <div class="card">
+    <div class="k">SEORANG RAJA <span class="rf">QS 38:20</span></div>
+    <div class="ar">وَشَدَدْنَا مُلْكَهُۥ وَءَاتَيْنَـٰهُ ٱلْحِكْمَةَ وَفَصْلَ ٱلْخِطَابِ</div>
+    <div class="tr">&ldquo;Dan Kami kuatkan kerajaannya dan Kami berikan hikmah kepadanya.&rdquo;</div>
+    <div class="ln" data-at="s7:tetap" data-fx="rise">Tetap menempa besinya sendiri.</div>
+  </div>
+</div>
+<div class="p" data-in="s7:Ayatnya" data-out="s8">
+  <div class="card">
+    <div class="k">PENUTUP AYAT <span class="rf">QS 34:11</span></div>
+    <div class="ar">وَٱعْمَلُوا۟ صَـٰلِحًا ۖ إِنِّى بِمَا تَعْمَلُونَ بَصِيرٌ</div>
+    <div class="tr">&ldquo;Kerjakanlah kebajikan. Sungguh, Aku Maha Melihat apa yang kamu kerjakan.&rdquo;</div>
+  </div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="card">
+    <div class="k">RENUNGAN</div>
+    <div class="h m">Karunia besar tidak menghapus kerja keras.</div>
+    <div class="sub" data-at="s8:Kerja" data-fx="rise">Kerja tangan sendiri adalah kemuliaan.</div>
+    <div class="ask" data-at="s8:Hasil" data-fx="rise">Hasil tangan sendiri apa yang paling kamu banggakan?</div>
+  </div>
+</div>
+<div id="sig"><b>AUDIRA</b><i>audira.my.id</i></div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">KISAH DALAM AL-QUR&#39;AN &middot; EP 30</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":8.366,"s2":8.526,"s2e":19.173,"s3":19.333,"s3e":29.988,"s4":30.148,"s4e":42.837,"s5":42.997,"s5e":52.432,"s6":52.592,"s6e":61.492,"s7":61.652,"s7e":72.507,"s8":72.667,"s8e":82.23,"end":82.23,"dur":85.23,"outro":82.48,"str":[2.5,39.89,40.49,41.09,65.512,66.232,66.952,67.672,68.392,69.112,69.832,70.552,71.272,71.992,73.067,74.507,75.947,77.387,78.827],"hot":[39.89,40.49,41.09],"links":[33.223,33.493,33.763,34.033,34.303,34.573,34.843,35.113,35.383,35.653,35.924,36.194,36.464,36.734,37.004,37.274,37.544,37.814,38.084,38.354]},AT={"s1:lunak":3.026,"s1:makan":6.168,"s1:Tapi":3.985,"s2:Wahai":13.789,"s3:pagi":22.088,"s3:petang":22.63,"s3:burung-burung":24.271,"s3:berkumpul":25.107,"s3:taat":27.435,"s3:Alam":28.564,"s4:lunakkan":31.491,"s4:Perintahnya":32.823,"s4:ukurlah":36.799,"s4:Besi":38.854,"s4:dipanaskan":39.69,"s4:menjadi":41.613,"s5:ajarkan":45.365,"s5:besi":46.96,"s5:melindungi":47.889,"s6:makanan":56.519,"s7:raja":62.555,"s7:hikmah":64.413,"s7:tetap":65.156,"s7:menempa":65.512,"s8:Kisah":80.404,"s8:AUDIRA":81.812,"s4:besar-besar":35.265,"s4:dipukul":40.433,"s5:Lalu":49.978,"s6:Nabi":59.511,"s7:Ayatnya":67.573,"s8:Kerja":75.413,"s8:Hasil":77.949},DUR=85.23,OUT=82.48;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ rise:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:''},t-.001);tl.fromTo(e,{opacity:0,y:12},{opacity:1,y:0,duration:.24,ease:'power3.out'},t);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{x:-130,y:75,skewY:-14,opacity:0},{x:0,y:0,skewY:0,opacity:1,duration:.28,ease:'power3.out'},a);},POUT=(tl,p,b)=>{tl.to(p,{x:130,y:-75,skewY:14,opacity:0,duration:.18,ease:'power2.in'},b-.2);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+// AUDIRA moving signature (port of AudiraSignature.tsx): 32% opacity, 4 safe-zone anchors, jumps every 18 s in a seeded order, hidden at the outro.
+(function(){const A=[[1015,221,'r'],[65,1190,'l'],[1015,864,'r'],[65,221,'l']];let h=2166136261;const sd="EP30_DAUD_BESI_LUNAK";for(let i=0;i<sd.length;i++)h=Math.imul(h^sd.charCodeAt(i),16777619)>>>0;const ord=[0,1,2,3];for(let i=3;i>0;i--){h=Math.imul(h^(h>>>15),2246822507)>>>0;const j=h%(i+1);[ord[i],ord[j]]=[ord[j],ord[i]];}
+const s=q('#sig');const C=18,OP=.32;for(let c=0;c*C<OUT;c++){const [x,y,al]=A[ord[c%4]];const t0=c*C,t1=Math.min((c+1)*C,OUT-.2);tl.set(s,{left:al==='l'?x:'auto',right:al==='r'?1080-x:'auto',top:y,textAlign:al==='l'?'left':'right'},t0);tl.fromTo(s,{opacity:0},{opacity:OP,duration:.5,ease:'none'},t0);tl.to(s,{opacity:0,duration:.4,ease:'none'},Math.max(t0+.6,t1-.4));}})();
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

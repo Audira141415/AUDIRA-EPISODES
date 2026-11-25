@@ -1,0 +1,120 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#2a1219}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.06;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.25) 42%,rgba(0,0,0,0.25) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'Space Mono',monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#F3E9D6;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.tag{display:table;font-family:'Space Mono',monospace;font-weight:700;font-size:28px;letter-spacing:.12em;color:#FFF3E2;background:#9E1B32;padding:9px 18px 8px;margin-bottom:16px;border:2px dashed rgba(242,182,50,.75);outline:4px solid #9E1B32;box-shadow:0 8px 20px rgba(20,10,14,.45)}
+.card{display:table;background:#F3E9D6;border-radius:8px;padding:16px 32px 22px;margin-bottom:16px;outline:3px dashed #C9A04A;outline-offset:-12px;box-shadow:0 22px 44px rgba(20,10,14,.55)}
+.big{font-family:'Playfair Display',serif;font-weight:900;font-size:92px;line-height:1.02;color:#2B1A14}
+.big span{color:#9E1B32}.big .sm{font-size:62px;color:#2B1A14}.big.sm2{font-size:76px;line-height:1.06}
+.ln{display:table;font-family:'Work Sans',sans-serif;font-weight:700;font-size:40px;line-height:1.2;color:#2B1A14;background:#F3E9D6;padding:11px 26px 13px 24px;margin-bottom:12px;border-left:12px solid #C9A04A;border-radius:0 8px 8px 0;outline:2px dashed rgba(158,27,50,.45);outline-offset:-7px;box-shadow:0 10px 24px rgba(20,10,14,.45);max-width:880px}
+.ln.r{border-left-color:#9E1B32}.ln.g{border-left-color:#3E7D4F}
+#chip{font-family:'Space Mono',monospace;font-size:26px;font-weight:700;color:#F3E9D6;opacity:.8;letter-spacing:.06em}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="83.63" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN CUPLIKAN ASLI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tag">CARA KERJA BENDA &middot; EP 12</div>
+  <div class="card"><div class="big">Gigi kembar,<br><span class="sm">siapa yang</span> <span>mengunci?</span></div></div>
+  <div class="ln" data-at="s1:Y" data-fx="lit">Jalur kecil berbentuk huruf Y</div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="tag">WHITCOMB JUDSON &middot; 1893</div>
+  <div class="ln" data-at="s2:clasp" data-fx="lit">Pengait sepatu: <i>clasp locker</i></div>
+  <div class="ln r" data-at="s2:macet" data-fx="lit">Sering macet, terbuka sendiri</div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tag">GIDEON SUNDBACK</div>
+  <div class="ln" data-at="s3:Swedia" data-fx="lit">Insinyur kelahiran Swedia</div>
+  <div class="ln g" data-at="s3:terbit" data-fx="lit">Paten diajukan 1914, terbit 1917</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="tag">GIGI PER INCI</div>
+  <div class="card" data-at="s4:sepuluh" data-fx="lit"><div class="big sm2">4 <span>&rarr; 10</span></div></div>
+  <div class="ln g" data-at="s4:cekungan" data-fx="lit">Tonjolan di satu sisi, cekungan di sisi lain</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="tag">SALING MENGUNCI</div>
+  <div class="ln" data-at="s5:masuk" data-fx="lit">Tonjolan masuk ke cekungan</div>
+  <div class="ln g" data-at="s5:sendok" data-fx="lit">Mirip sendok yang ditumpuk</div>
+  <div class="ln" data-at="s5:cukup" data-fx="lit">Satu jenis gigi untuk kedua sisi</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="tag">SLIDER</div>
+  <div class="ln g" data-at="s6:mengunci" data-fx="lit">Ke atas: jalur Y menekan gigi</div>
+  <div class="ln r" data-at="s6:membelah" data-fx="lit">Ke bawah: baji membelah kuncian</div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tag">1923 &middot; B. F. GOODRICH</div>
+  <div class="card" data-at="s7:zipper" data-fx="lit"><div class="big sm2">Zip<span>per</span></div></div>
+  <div class="ln" data-at="s7:meniru" data-fx="lit">Meniru bunyinya saat ditarik</div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="card" data-at="s8:aus" data-fx="lit"><div class="big sm2">Yang aus: <span>slider</span></div></div>
+  <div class="ln g" data-at="s8:Episode" data-fx="lit">Berikutnya: pulpen</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">CARA KERJA BENDA &middot; EP 12</div></div>
+<div id="sig">AUDIRA &middot; @AudiraExplained</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":5.86,"s2":6.02,"s2e":14.677,"s3":14.837,"s3e":23.637,"s4":23.797,"s4e":31.273,"s5":31.433,"s5e":43.812,"s6":43.972,"s6e":57.734,"s7":57.894,"s7e":68.51,"s8":68.67,"s8e":80.634,"end":80.634,"dur":83.63,"outro":80.884},AT={"s1:kembar":2.3,"s1:jalur":4.467,"s1:Y":5.783,"s1:mengunci":3.414,"s2:Tahun":6.02,"s2:Judson":8.819,"s2:mematenkan":10.203,"s2:sepatu":11.07,"s2:clasp":11.643,"s2:macet":13.114,"s2:terbuka":13.919,"s3:Gideon":14.984,"s3:Swedia":17.012,"s3:memperbaikinya":17.739,"s3:diajukan":19.69,"s3:terbit":21.965,"s4:Sundback":23.998,"s4:empat":25.794,"s4:sepuluh":26.491,"s4:tonjolan":28.796,"s4:cekungan":30.173,"s5:dipasang":32.982,"s5:dirapatkan":34.716,"s5:masuk":36.187,"s5:sendok":38.667,"s5:kembar":40.639,"s5:cukup":42.621,"s6:slider":45.713,"s6:tarik":47.431,"s6:atas":48.802,"s6:cabang":49.607,"s6:menyatu":50.474,"s6:mengunci":52.842,"s6:bawah":54.607,"s6:baji":55.273,"s6:membelah":56.418,"s7:zipper":58.17,"s7:muncul":59.285,"s7:bot":63.155,"s7:Goodrich":64.797,"s7:meniru":66.333,"s7:Zip":68.03,"s8:lepas":70,"s8:aus":71.33,"s8:giginya":73.606,"s8:AUDIRA":74.81,"s8:Episode":79.21,"s8:pulpen":80.232},DUR=83.63,OUT=80.884;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ lit:(e,t)=>tl.fromTo(e,{opacity:.8,x:-6},{opacity:1,x:0,duration:.3,ease:'power2.out'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{opacity:0,clipPath:'inset(0% 100% 0% 0%)',y:10},{opacity:1,clipPath:'inset(0% 0% 0% 0%)',y:0,duration:.55,ease:'power3.out'},a-.12);},POUT=(tl,p,b)=>{tl.to(p,{opacity:0,y:-20,duration:.3,ease:'power2.in'},b-.3);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0,y:40});tl.to('#outro',{opacity:1,y:0,duration:.45,ease:'power3.out'},OUT-.1);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP12_RITSLETING_ZIPPER")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

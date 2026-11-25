@@ -1,0 +1,13 @@
+EP43 Kabel Internet di Bawah Laut (COMICFORGE): 198 kata, 83–91 dtk
+
+Hook: Sembilan puluh sembilan persen internet dunia mengalir bukan lewat satelit luar angkasa, melainkan lewat pipa di dasar laut.
+
+Konteks: Saat Anda menonton siaran video streaming resolusi tinggi atau berkirim pesan antarbenua, sinyal data digital tidak dipancarkan melintasi atmosfer langit, melainkan merambat melintasi bentangan kabel serat optik bawah samudra sepanjang lebih dari satu koma empat juta kilometer di palung samudra terdalam.
+
+Pengembangan: Kabel bawah laut ini melintasi palung laut terdalam dengan tekanan air ribuan ton per meter persegi. Meskipun membawa miliaran gigabita data internet per detik, inti serat optik kaca murninya sebenarnya hanya berdiameter beberapa mikrometer, hampir setebal sehelai rambut manusia.
+
+Penjelasan: Agar tidak putus dihantam gempa tektonik dasar laut, jangkar kapal kargo, atau gigitan predator hiu, inti kaca tersebut dibungkus delapan lapis pelindung baja berkekuatan tinggi, tabung tembaga konduktor sepuluh ribu volt, getah pelindung air laut kedap, dan lapisan polietilen tebal. Tabung tembaga bertugas mengalirkan tegangan tinggi ribuan volt untuk menghidupkan unit amplifier optik penguat sinyal laser setiap jarak puluhan kilometer di dasar samudra gelap gulita.
+
+Payoff: Jaringan kabel bawah laut yang senyap ini adalah urat nadi peradaban modern yang menyatukan seluruh penduduk planet bumi dalam sekejap mata.
+
+Outro: Ini AUDIRA, Cara Kerja Benda. Episode berikutnya: lensa raksasa berundak mercusuar pembelok cahaya lilin puluhan kilometer.

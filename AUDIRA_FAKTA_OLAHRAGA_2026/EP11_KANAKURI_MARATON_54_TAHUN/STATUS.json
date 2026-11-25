@@ -1,0 +1,611 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP11_KANAKURI_MARATON_54_TAHUN",
+  "topic": "Shizo Kanakuri, maraton 54 tahun (Stockholm 1912 sampai 1967)",
+  "createdAt": "2026-11-24T11:21:06.645Z",
+  "updatedAt": "2026-11-24T17:33:55.291Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T11:22:36.466Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-24T11:21:47.653Z",
+      "startedAt": "2026-11-24T11:21:47.653Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [],
+      "doneAt": "2026-11-24T11:22:07.706Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T11:22:36.466Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T11:21:47.654Z",
+      "startedAt": "2026-11-24T11:21:47.654Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T11:22:36.466Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-24T11:21:47.654Z",
+      "startedAt": "2026-11-24T11:21:47.654Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T16:58:24.131Z",
+          "text": "studio bersama AUDIRA_FAKTA_OLAHRAGA_2026/studio, comp Ep11Preview/Ep11Final"
+        }
+      ],
+      "doneAt": "2026-11-24T16:58:24.131Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T11:25:52.162Z",
+          "text": "VO terkunci 87,4 dtk, film 91,4 dtk"
+        }
+      ],
+      "doneAt": "2026-11-24T11:25:52.162Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T16:54:37.789Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-24T16:58:24.347Z",
+      "startedAt": "2026-11-24T16:54:10.451Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T16:54:37.789Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json PASS"
+        },
+        {
+          "at": "2026-11-24T16:58:24.577Z",
+          "text": "juri buta putaran 1 LOLOS 3,83; setelah juri hanya poles Hakone, papan waktu, vignette (ceilings tetap 5)"
+        }
+      ],
+      "doneAt": "2026-11-24T16:58:24.577Z",
+      "startedAt": "2026-11-24T16:53:31.205Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T17:00:31.061Z",
+      "notes": [
+        {
+          "at": "2026-11-24T17:00:31.061Z",
+          "text": "acc pengguna 2026-11-25: \"Gas, render final\" setelah melihat contact sheet, skor 3,83, durasi, G18c, dan catatan G14/poles pasca-juri"
+        },
+        {
+          "at": "2026-11-24T17:16:44.735Z",
+          "text": "FINAL_KANAKURI.mp4 (render kedua 2026-11-25 00.15 setelah fix glitch 17,75 dan 82,43 dtk). qa_video PASS, juri final 3,83, -13,6 LUFS, TP -2,3."
+        }
+      ],
+      "startedAt": "2026-11-24T17:00:31.061Z",
+      "doneAt": "2026-11-24T17:16:44.735Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T17:07:45.469Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-24T17:16:45.304Z",
+          "text": "SOCIAL_CAPTIONS.md valid, SUBTITLES.srt, NOTES.md, 3 scheduled task review. Jam upload 3 Des 2026 19.00 WIB masih asumsi."
+        },
+        {
+          "at": "2026-11-24T17:33:55.291Z",
+          "text": "Pengguna mengonfirmasi upload Kamis 2026-12-03 19.00 WIB (2026-11-25). Jadwal review tidak berubah."
+        }
+      ],
+      "doneAt": "2026-11-24T17:16:45.303Z",
+      "startedAt": "2026-11-24T17:02:44.374Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "fakta-olahraga-EP11",
+    "style": "CHRONICLE",
+    "engine": "remotion",
+    "shortTitle": "Kanakuri",
+    "wordCount": 211,
+    "estimatedDuration": {
+      "wordCount": 211,
+      "minSec": 84,
+      "maxSec": 94
+    }
+  },
+  "handoverLog": [
+    {
+      "at": "2026-11-24T11:21:58.627Z",
+      "doing": "Riset, STYLE_DECISION (CHRONICLE 2D), naskah 211 kata selesai; belum ada docs lain, VO, kode",
+      "files": [
+        "docs/SCRIPT.md",
+        "docs/vo-script.txt",
+        "research/SOURCE_REGISTER.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "ART_DIRECTION, STORYBOARD, ASSET_MANIFEST, cover topik, VO, kode di studio/src/scenes/ep11, draf dan juri; lalu EP12 dan EP13 berurutan",
+      "snapshot": {
+        "episode": "EP11_KANAKURI_MARATON_54_TAHUN",
+        "topic": "Shizo Kanakuri, maraton 54 tahun (Stockholm 1912 sampai 1967)",
+        "style": null,
+        "memoryEpisode": "fakta-olahraga-EP11",
+        "currentStage": "context",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T11:25:52.627Z",
+      "doing": "VO EP11, EP12, EP13 terkunci; ringkasan rule + memori di BATCH_EP11_13.md; belum ada docs produksi dan kode",
+      "files": [
+        "BATCH_EP11_13.md",
+        "docs/script-lines.json",
+        "audio/timeline.json",
+        "studio/src/scenes/ep11/timeline.json"
+      ],
+      "next": "EP11: ART_DIRECTION, STORYBOARD, ASSET_MANIFEST, SHOTLIST, cover topik, kode studio/src/scenes/ep11 dari ep05, SFX, contact sheet, juri; lalu EP12 dan EP13 di sesi terpisah",
+      "snapshot": {
+        "episode": "EP11_KANAKURI_MARATON_54_TAHUN",
+        "topic": "Shizo Kanakuri, maraton 54 tahun (Stockholm 1912 sampai 1967)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP11",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP11_KANAKURI_MARATON_54_TAHUN/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T11:27:44.332Z",
+      "doing": "Sesi ini hanya membaca pola EP05 dan menulis docs/BUILD_SHEET.md; belum ada kode, docs rule 12, atau preflight EP11",
+      "files": [
+        "docs/BUILD_SHEET.md"
+      ],
+      "next": "Baca BATCH_EP11_13.md + EP11 docs/BUILD_SHEET.md saja, lalu preflight, ART_DIRECTION/STORYBOARD/ASSET_MANIFEST/SHOTLIST, kode studio/src/scenes/ep11, cover, sfx, draf, juri, G18c, gerbang acc",
+      "snapshot": {
+        "episode": "EP11_KANAKURI_MARATON_54_TAHUN",
+        "topic": "Shizo Kanakuri, maraton 54 tahun (Stockholm 1912 sampai 1967)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP11",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP11_KANAKURI_MARATON_54_TAHUN/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T11:30:00.713Z",
+      "doing": "s4: preflight bersih, docs rule 12 ditulis, GLB disalin ke studio/public/glb; menulis kode studio/src/scenes/ep11 (timing, sets, Film, Cover, index)",
+      "next": "Daftarkan EP11 di Root.tsx, typecheck, cover, sfx, contact sheet, juri",
+      "snapshot": {
+        "episode": "EP11_KANAKURI_MARATON_54_TAHUN",
+        "topic": "Shizo Kanakuri, maraton 54 tahun (Stockholm 1912 sampai 1967)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP11",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP11_KANAKURI_MARATON_54_TAHUN/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T11:31:54.026Z",
+      "doing": "s4 selesai: preflight 0 blocker 0 warning; docs ART_DIRECTION/STORYBOARD/ASSET_MANIFEST/SHOTLIST (Style: CHRONICLE); cover-reference.jpg; studio/src/scenes/ep11: chronicle/ (Captions pecah >24 karakter), Model.tsx, hud.tsx, timing.ts (T, CUT baru), index.ts, sets.tsx (A, B1, B2, B3 + helper). Belum typecheck, belum dirender.",
+      "files": [
+        "studio/src/scenes/ep11/sets.tsx",
+        "studio/src/scenes/ep11/timing.ts",
+        "EP11_KANAKURI_MARATON_54_TAHUN/docs/SHOTLIST.md"
+      ],
+      "next": "sets2.tsx (C1..OUT), Film.tsx, Cover.tsx, Root.tsx, typecheck, cover, SFX, contact sheet, juri, gerbang acc",
+      "snapshot": {
+        "episode": "EP11_KANAKURI_MARATON_54_TAHUN",
+        "topic": "Shizo Kanakuri, maraton 54 tahun (Stockholm 1912 sampai 1967)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP11",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP11_KANAKURI_MARATON_54_TAHUN/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T11:39:34.422Z",
+      "doing": "Kode EP11 lengkap: sets2.tsx, Film.tsx, Cover.tsx, hud dirapikan, timing (CUT c1b, c3c, e1b, out2 baru), Root.tsx terdaftar. Typecheck EP11 bersih (sisa 1 error lama di ep05, bukan milik kita). Ep11Cover berhasil dirender ke studio/out/ep11-cover.png tetapi belum dilihat sebagai gambar. Film belum dirender.",
+      "command": "node scripts/stills.mjs out/ep11-stills <detik,...s> Ep11Preview 0.5",
+      "files": [
+        "studio/src/scenes/ep11/sets2.tsx",
+        "studio/src/scenes/ep11/Film.tsx",
+        "studio/src/scenes/ep11/Cover.tsx",
+        "studio/src/scenes/ep11/hud.tsx",
+        "studio/src/scenes/ep11/timing.ts",
+        "studio/src/Root.tsx",
+        "studio/out/ep11-cover.png"
+      ],
+      "next": "Lihat cover, poles, simpan style/cover-topic.png; stills semua adegan lewat scripts/stills.mjs dan poles; perbarui SHOTLIST dengan adegan baru (c1b, c3c stasiun, e1b, out2); sfx; contact sheet; audit; THEME_CHECK; juri buta; G18c; gerbang acc.",
+      "snapshot": {
+        "episode": "EP11_KANAKURI_MARATON_54_TAHUN",
+        "topic": "Shizo Kanakuri, maraton 54 tahun (Stockholm 1912 sampai 1967)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP11",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP11_KANAKURI_MARATON_54_TAHUN/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T16:44:17.957Z",
+      "doing": "Sesi B (tahap 7): poles visual putaran 2 selesai dan terender sebagai still (out/ep11-s3, sheet F:/temp/ep11s3/sheet_1.png dan sheet_2.png). Bloom/uMax Stage dikecilkan, figur tanpa rambut panjang, gain outline 1.2, lift kamera per adegan (Film.tsx `lifted`), NearLayer (hud.tsx) rumput/penonton, KM30 tanpa HUD ganda, pembaca meja D1 dihapus, bed C3b dibalik. Typecheck EP11 bersih. Cover lama pudar, WAJIB render ulang.",
+      "files": [
+        "studio/src/scenes/ep11/Film.tsx",
+        "studio/src/scenes/ep11/sets.tsx",
+        "studio/src/scenes/ep11/sets2.tsx",
+        "studio/src/scenes/ep11/hud.tsx",
+        "studio/src/scenes/ep11/Cover.tsx",
+        "studio/src/scenes/ep11/chronicle/Stage.tsx",
+        "studio/src/scenes/ep11/chronicle/looks.ts"
+      ],
+      "next": "Poles sisa (lihat brief), cover-topic.png, SHOTLIST/STORYBOARD + sfx, contact sheet draf, audit visual/kamera, THEME_CHECK, juri buta; lalu sesi C gerbang acc",
+      "snapshot": {
+        "episode": "EP11_KANAKURI_MARATON_54_TAHUN",
+        "topic": "Shizo Kanakuri, maraton 54 tahun (Stockholm 1912 sampai 1967)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP11",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP11_KANAKURI_MARATON_54_TAHUN/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T16:51:42.878Z",
+      "doing": "s7 selesai: poles semua adegan (bloom rendah di ROAD/HEAT/Lazaro/Sleep/BOARD, lift C1 120, C1b 95, C2 115, E1b 105, B1 115, Fuji, gerbang, cup, map lift 310, HUD atas), cover dirender ulang ke style/cover-topic.png (bagus), SHOTLIST 21 shot lint 0 red 0 yellow, STORYBOARD baru, sfx.wav 91,4 dtk -20 LUFS 44 bunyi (stem -20 berpasangan volume=-10dB di render-final.mjs). Still terakhir F:/temp/ep11k2.jpg semuanya bagus; hanya papan E2 (74.2) tulisannya buram karena bloom, sudah diturunkan (emissive 0.85, BOARD bloom 0.1) dan BELUM dicek.",
+      "command": "node scripts/stills.mjs ../EP11_KANAKURI_MARATON_54_TAHUN/draft/frames 2.5s,12.0s,27.4s,36.2s,42.1s,57.1s,66.9s,74.2s Ep11Preview 1 (AUDIRA_MEMORY=off saat still biasa; cwd studio; TEMP/TMP F:/temp)",
+      "files": [
+        "studio/src/scenes/ep11/Film.tsx",
+        "studio/src/scenes/ep11/sets.tsx",
+        "studio/src/scenes/ep11/sets2.tsx",
+        "studio/src/scenes/ep11/Cover.tsx",
+        "studio/public/audio/ep11/sfx.wav",
+        "EP11_KANAKURI_MARATON_54_TAHUN/docs/SHOTLIST.md",
+        "EP11_KANAKURI_MARATON_54_TAHUN/docs/STORYBOARD.md",
+        "EP11_KANAKURI_MARATON_54_TAHUN/style/cover-topic.png"
+      ],
+      "next": "Sesi B lanjutan tahap 8: render 8 frame kunci (2.5 12.0 27.4 36.2 42.1 57.1 66.9 74.2, alternatif 48.4 84.2 34.2) Ep11Preview scale 1 ke draft/, cek papan 74.2, contact sheet, audit:visual (draft/look.json), klip 15-20 dtk audit:camera (draft/camera.json), draft/THEME_CHECK.md, skor self, juri buta, record_score stage draft memoryEpisode fakta-olahraga-EP11, G18c, npm run channel, lalu gerbang acc (sesi C)",
+      "snapshot": {
+        "episode": "EP11_KANAKURI_MARATON_54_TAHUN",
+        "topic": "Shizo Kanakuri, maraton 54 tahun (Stockholm 1912 sampai 1967)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP11",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP11_KANAKURI_MARATON_54_TAHUN/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T16:53:11.187Z",
+      "doing": "s8 tahap 8: contact-sheet.jpg + look.json (diversity 48,7) jadi; poles lengan tidur (sets2 SleepSet) + YearRoll 0,6 dtk; render klip 58-76 untuk audit:camera",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/look.json",
+        "draft/camera.json"
+      ],
+      "next": "render ulang frame 2.5/42.1, contact sheet baru, audit:camera ke draft/camera.json, THEME_CHECK, skor self + juri buta",
+      "snapshot": {
+        "episode": "EP11_KANAKURI_MARATON_54_TAHUN",
+        "topic": "Shizo Kanakuri, maraton 54 tahun (Stockholm 1912 sampai 1967)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP11",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP11_KANAKURI_MARATON_54_TAHUN/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T16:55:34.234Z",
+      "doing": "s8: vignette naik (HEAT .52, KM30 .58, HAKONE .56, STADION67 .54), contact sheet final draf, look.json --style=CHRONICLE ceilings semua 5, diversity 47.5, camera 5/5, THEME_CHECK 8 ya, skor self 4.0, G18c 20,4 LU, channel OK; juri buta putaran 1 sedang berjalan",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/look.json",
+        "draft/camera.json",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "record_score judge jury putaran 1; LOLOS -> STATUS setup/animation/draft done, handover newSession sesi C, gerbang acc, mulai EP12",
+      "snapshot": {
+        "episode": "EP11_KANAKURI_MARATON_54_TAHUN",
+        "topic": "Shizo Kanakuri, maraton 54 tahun (Stockholm 1912 sampai 1967)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP11",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP11_KANAKURI_MARATON_54_TAHUN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T16:58:33.720Z",
+      "doing": "Sesi B selesai. Juri buta putaran 1 LOLOS 3,83 (lighting 4, material 3, depth 4, composition 3, motion 5, readability 4). Setelah juri dipoles: Hakone backlit + selempang besar, tiang papan mundur, vignette. look.json ceilings 5 semua, diversity 47,3. camera.json klip 58-76: 5/5, dead 0, hold 0, median 0,084; klip 13-24: 4/5 (5,5 hentakan/10 dtk di peta B2), dead 0. G18c 20,4 LU (VO -16,1, SFX ducked -36,5). Durasi film 91,42 dtk. Preflight 0 blocker, channel OK.",
+      "command": "npm run render:final -- --comp=Ep11Final --out=../EP11_KANAKURI_MARATON_54_TAHUN/FINAL_KANAKURI.mp4 --vo=public/audio/ep11/vo.wav --sfx=public/audio/ep11/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=... --slug=... --ep=EP11",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/look.json",
+        "draft/camera.json",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Sesi C tahap 9: tampilkan contact sheet, skor, durasi, G18c, tunggu acc pengguna; setelah acc render:final, QA, delivery",
+      "snapshot": {
+        "episode": "EP11_KANAKURI_MARATON_54_TAHUN",
+        "topic": "Shizo Kanakuri, maraton 54 tahun (Stockholm 1912 sampai 1967)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP11",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP11_KANAKURI_MARATON_54_TAHUN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:01:38.013Z",
+      "doing": "Sesi C: render final antre di belakang render EP13 (script F:/temp/ep11-queue.ps1, log F:/temp/ep11-render.log). Acc render final pengguna 2026-11-25 sudah tercatat.",
+      "command": "npm run render:final -- --comp=Ep11Final --out=../EP11_KANAKURI_MARATON_54_TAHUN/FINAL_KANAKURI.mp4 --vo=public/audio/ep11/vo.wav --sfx=public/audio/ep11/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Kanakuri: Maraton 54 Tahun\" --slug=kanakuri-maraton-54-tahun --ep=EP11",
+      "files": [
+        "FINAL_KANAKURI.mp4"
+      ],
+      "next": "QA final, record_score final CHRONICLE self+jury (fakta-olahraga-EP11), SOCIAL_CAPTIONS, NOTES, append_lesson, STATUS, 3 scheduled task",
+      "snapshot": {
+        "episode": "EP11_KANAKURI_MARATON_54_TAHUN",
+        "topic": "Shizo Kanakuri, maraton 54 tahun (Stockholm 1912 sampai 1967)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP11",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP11_KANAKURI_MARATON_54_TAHUN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:09:18.522Z",
+      "doing": "Final pertama ter-tag (91,44 dtk, -13,6 LUFS, TP -2,3) tetapi qa_video hardOnly FAIL: glitch nyata 82,43 (pelari muncul mendadak di depan kamera, sets2.tsx RoadEndSet) dan 17,75 (kapal jadi kereta 1 frame, sets.tsx MapSet). Sudah diperbaiki di kode; 9 LONCAT lain = <Flash> sengaja (allow 1.6,26.867,66.467,68.25,69.683,70.583,71.483,72.233,73.283). Render ulang final lewat F:/temp/ep11-queue.ps1. SOCIAL_CAPTIONS.md valid + SUBTITLES.srt sudah ada.",
+      "command": "pwsh -NoProfile -File F:/temp/ep11-queue.ps1",
+      "files": [
+        "FINAL_KANAKURI.mp4",
+        "studio/src/scenes/ep11/sets.tsx",
+        "studio/src/scenes/ep11/sets2.tsx",
+        "studio/src/scenes/ep11/Film.tsx"
+      ],
+      "next": "qa_video hardOnly lagi, contact sheet final, record_score self + jury, NOTES, append_lesson, STATUS, 3 scheduled task (upload Kamis 2026-12-03 19.00 WIB)",
+      "snapshot": {
+        "episode": "EP11_KANAKURI_MARATON_54_TAHUN",
+        "topic": "Shizo Kanakuri, maraton 54 tahun (Stockholm 1912 sampai 1967)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP11",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP11_KANAKURI_MARATON_54_TAHUN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:09:18.522Z",
+      "doing": "Final pertama ter-tag (91,44 dtk, -13,6 LUFS, TP -2,3) tetapi qa_video hardOnly FAIL: glitch nyata 82,43 (pelari muncul mendadak di depan kamera, sets2.tsx RoadEndSet) dan 17,75 (kapal jadi kereta 1 frame, sets.tsx MapSet). Sudah diperbaiki di kode; 9 LONCAT lain = <Flash> sengaja (allow 1.6,26.867,66.467,68.25,69.683,70.583,71.483,72.233,73.283). Render ulang final lewat F:/temp/ep11-queue.ps1. SOCIAL_CAPTIONS.md valid + SUBTITLES.srt sudah ada.",
+      "command": "pwsh -NoProfile -File F:/temp/ep11-queue.ps1",
+      "files": [
+        "FINAL_KANAKURI.mp4",
+        "studio/src/scenes/ep11/sets.tsx",
+        "studio/src/scenes/ep11/sets2.tsx",
+        "studio/src/scenes/ep11/Film.tsx"
+      ],
+      "next": "qa_video hardOnly lagi, contact sheet final, record_score self + jury, NOTES, append_lesson, STATUS, 3 scheduled task (upload Kamis 2026-12-03 19.00 WIB)",
+      "snapshot": {
+        "episode": "EP11_KANAKURI_MARATON_54_TAHUN",
+        "topic": "Shizo Kanakuri, maraton 54 tahun (Stockholm 1912 sampai 1967)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "fakta-olahraga-EP11",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP11_KANAKURI_MARATON_54_TAHUN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T17:16:45.661Z"
+    }
+  ],
+  "session": 9,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP11 Shizo Kanakuri, maraton 54 tahun (Stockholm 1912 sampai 1967) · s2",
+      "at": "2026-11-24T11:21:58.626Z"
+    },
+    {
+      "no": 3,
+      "title": "EP11 Kanakuri · s3",
+      "at": "2026-11-24T11:25:52.627Z"
+    },
+    {
+      "no": 4,
+      "title": "EP11 Kanakuri · s4",
+      "at": "2026-11-24T11:27:44.332Z"
+    },
+    {
+      "no": 5,
+      "title": "EP11 Kanakuri · s5",
+      "at": "2026-11-24T11:31:54.025Z"
+    },
+    {
+      "no": 6,
+      "title": "EP11 Kanakuri · s6",
+      "at": "2026-11-24T11:39:34.421Z"
+    },
+    {
+      "no": 7,
+      "title": "EP11 Kanakuri · s7",
+      "at": "2026-11-24T16:44:17.957Z"
+    },
+    {
+      "no": 8,
+      "title": "EP11 Kanakuri · s8",
+      "at": "2026-11-24T16:51:42.878Z"
+    },
+    {
+      "no": 9,
+      "title": "EP11 Kanakuri · s9",
+      "at": "2026-11-24T16:58:33.720Z"
+    }
+  ],
+  "syncedAt": "2026-11-24T17:07:45.469Z"
+}

@@ -1,0 +1,670 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP25_TIGA_ORANG_TERJEBAK_GUA",
+  "topic": "Tiga orang terjebak di gua dan bertawasul dengan amal saleh (HR Bukhari & Muslim dari Ibnu Umar)",
+  "createdAt": "2026-11-22T18:00:33.894Z",
+  "updatedAt": "2026-11-23T12:24:56.906Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:03:25.047Z",
+          "text": "Dibaca: CLAUDE.md, SKILL audira-2d-motion, HANDOFF EP07 (pola Remotion 2D di engines/remotion-starter/src/episodes), NOTES EP34 QISSAH, memori GLOBAL (VO tulis 'Audira')."
+        }
+      ],
+      "doneAt": "2026-11-22T18:03:25.047Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:03:19.061Z",
+          "text": "SOURCE_REGISTER: Bukhari 2272 + Muslim 2743 (hadithunlocked mirror, sunnah.com 403). 120 dinar dari Bukhari."
+        }
+      ],
+      "doneAt": "2026-11-22T18:03:19.061Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-23T01:40:02.345Z",
+      "notes": [
+        {
+          "at": "2026-11-22T22:20:30.681Z",
+          "text": "Pengguna memilih HIKAYAT siluet kelir (\"1 HIKAYAT siluet\"), dari HIKAYAT / ISLAMICDOCUMENTARY / INKSTORY."
+        },
+        {
+          "at": "2026-11-23T00:52:58.823Z",
+          "text": "Ganti style (G21) setelah HIKAYAT gagal juri 2x (3.5, 3.33). Pengguna memilih \"ISLAMICDOCUMENTARY\" dari ISLAMICDOCUMENTARY / MANUSCRIPT / PAPERWORLD."
+        },
+        {
+          "at": "2026-11-23T01:40:02.345Z",
+          "text": "Gerbang style putaran 3: pengguna memilih INKSTORY (2026-11-23). ISLAMICDOCUMENTARY ditolak juri 3.17/3.67."
+        }
+      ],
+      "startedAt": "2026-11-22T22:20:30.681Z",
+      "doneAt": "2026-11-23T01:40:02.345Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T23:56:33.529Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T23:56:21.606Z",
+      "startedAt": "2026-11-22T23:56:21.606Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:24:16.582Z",
+          "text": "Proyek Remotion 2D (F:/AUDIRA-2D-SKILL-MOTION engines/remotion-starter, src/episodes/gua25) sudah dipakai sampai final."
+        }
+      ],
+      "doneAt": "2026-11-23T12:24:16.582Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:23:27.114Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-22T22:22:07.065Z",
+      "startedAt": "2026-11-22T22:22:07.065Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T00:04:27.317Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-23T00:04:26.666Z",
+      "startedAt": "2026-11-23T00:04:26.666Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T00:04:27.317Z",
+          "text": "sync: 1 gambar draf (bukan contact-sheet.jpg; buat dulu: bash sheet.sh <EP>)"
+        },
+        {
+          "at": "2026-11-23T01:13:03.946Z",
+          "text": "ISLAMICDOCUMENTARY juri r2 (terakhir) GAGAL 3.67 (L4 M4 D4 C3 Mo3 R4). Final TIDAK dirender. Kembali ke gerbang style: opsi r3 STAINEDGLASS / PAPERWORLD / INKSTORY (style/style-options-r3.jpg), menunggu pilihan pengguna."
+        },
+        {
+          "at": "2026-11-23T01:24:48.957Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        },
+        {
+          "at": "2026-11-23T12:13:14.220Z",
+          "text": "INKSTORY juri r1 3.67, r2 3.33 → diterima 3.67 setelah 2 putaran (aturan ≥3.5 → final). Kode final = r2 (perbaikan kritik r1; aspek yang turun di r2 tidak disentuh)."
+        }
+      ],
+      "doneAt": "2026-11-23T12:13:14.220Z",
+      "startedAt": "2026-11-23T00:04:26.668Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:19:37.272Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-23T12:24:49.485Z",
+          "text": "FINAL_VIDEO.mp4 84s 1080x1920@60, -14.0 LUFS, peak -1.9 dBFS, metadata ok, signature Ed25519+C2PA VALID, qa_video PASS. Draf diterima 3.67 setelah 2 putaran (r1 3.67, r2 3.33); juri final 3.50 (L4 M3 D4 C3 Mo3 R4)."
+        }
+      ],
+      "doneAt": "2026-11-23T12:24:49.485Z",
+      "startedAt": "2026-11-23T12:19:37.269Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:14:11.317Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T12:24:56.760Z",
+          "text": "SOCIAL_CAPTIONS.md (validator OK), SUBTITLES.srt, NOTES.md, lessons INKSTORY+GLOBAL, 3 task review-tiga-orang-gua-24h/-72h/-7d (upload Kam 26 Nov 2026 20.00 WIB). raw_final.mp4 dihapus."
+        }
+      ],
+      "doneAt": "2026-11-23T12:24:56.760Z",
+      "startedAt": "2026-11-23T12:13:45.329Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP25",
+    "style": "INKSTORY",
+    "engine": "remotion",
+    "previousStyles": [
+      "HIKAYAT",
+      "ISLAMICDOCUMENTARY"
+    ],
+    "shortTitle": "Gua",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "handoverLog": [
+    {
+      "at": "2026-11-22T22:22:58.976Z",
+      "doing": "VO selesai (80.02 s); docs naskah/storyboard + kode gua25 belum dibuat",
+      "files": [
+        "HANDOFF.md",
+        "docs/vo.txt",
+        "audio/vo.wav",
+        "audio/vo-words.json",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Baca HANDOFF.md; tulis docs rule 12, kode episodes/gua25, cover topik, draf+juri, SFX, final, delivery",
+      "snapshot": {
+        "episode": "EP25_TIGA_ORANG_TERJEBAK_GUA",
+        "topic": "Tiga orang terjebak di gua dan bertawasul dengan amal saleh (HR Bukhari & Muslim dari Ibnu Umar)",
+        "style": "HIKAYAT",
+        "memoryEpisode": "short-baru-11-23-EP25",
+        "currentStage": "style",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "in_progress"
+          },
+          "script": {
+            "approved": false,
+            "status": "pending"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP25_TIGA_ORANG_TERJEBAK_GUA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:01:26.082Z",
+      "doing": "Docs rule 12 + kode gua25 selesai (typecheck bersih), belum ada render",
+      "command": "npx remotion still engines/remotion-starter/src/episodes/gua25/index.tsx GuaEP25-Draft out.png --frame=<s*30> --public-dir=engines/remotion-starter/public --scale=0.5 --log=error",
+      "files": [
+        "engines/remotion-starter/src/episodes/gua25/Gua.tsx",
+        "docs/ART_DIRECTION.md",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md"
+      ],
+      "next": "Render still cek → cover-topic.png → contact sheet + THEME_CHECK + juri → SFX → final → delivery (lihat HANDOFF.md)",
+      "snapshot": {
+        "episode": "EP25_TIGA_ORANG_TERJEBAK_GUA",
+        "topic": "Tiga orang terjebak di gua dan bertawasul dengan amal saleh (HR Bukhari & Muslim dari Ibnu Umar)",
+        "style": "HIKAYAT",
+        "memoryEpisode": "short-baru-11-23-EP25",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP25_TIGA_ORANG_TERJEBAK_GUA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:51:18.635Z",
+      "doing": "Stills s3..s77 dirender ulang 07:29; contact-sheet.jpg baru 07:50; juri blind sedang menilai (belum ada skor)",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/stills/"
+      ],
+      "next": "record_score jury HIKAYAT draft → bila LOLOS: render final 60fps (TEMP=F:/_tmp_remotion_ep25, C: tinggal ~1 GB) + mix VO/SFX + metadata → delivery",
+      "snapshot": {
+        "episode": "EP25_TIGA_ORANG_TERJEBAK_GUA",
+        "topic": "Tiga orang terjebak di gua dan bertawasul dengan amal saleh (HR Bukhari & Muslim dari Ibnu Umar)",
+        "style": "HIKAYAT",
+        "memoryEpisode": "short-baru-11-23-EP25",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP25_TIGA_ORANG_TERJEBAK_GUA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:52:26.542Z",
+      "doing": "HIKAYAT gagal juri 2 putaran (3.5, 3.33) → kembali ke gerbang style; menunggu pilihan pengguna (ISLAMICDOCUMENTARY / MANUSCRIPT / PAPERWORLD, cover style/style-options-r2.jpg)",
+      "files": [
+        "style/style-options-r2.jpg"
+      ],
+      "next": "Setelah pilih: cover topik style baru → tulis ulang ART_DIRECTION/STORYBOARD/ASSET_MANIFEST dgn 'Style: <ID>' (G21), naskah+VO tetap → kode → draf+juri → final → delivery",
+      "snapshot": {
+        "episode": "EP25_TIGA_ORANG_TERJEBAK_GUA",
+        "topic": "Tiga orang terjebak di gua dan bertawasul dengan amal saleh (HR Bukhari & Muslim dari Ibnu Umar)",
+        "style": "HIKAYAT",
+        "memoryEpisode": "short-baru-11-23-EP25",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP25_TIGA_ORANG_TERJEBAK_GUA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:57:38.753Z",
+      "doing": "Style diganti ke ISLAMICDOCUMENTARY (acc pengguna). Gua.tsx ditulis ulang (tanpa figur; 3 pelita), typecheck bersih, belum dirender.",
+      "command": "$env:TEMP='F:\\_tmp_remotion_ep25'; npx remotion still engines/remotion-starter/src/episodes/gua25/index.tsx GuaEP25-Draft <out> --frame=<s*30> --public-dir=engines/remotion-starter/public --scale=0.5 --log=error",
+      "files": [
+        "engines/remotion-starter/src/episodes/gua25/Gua.tsx",
+        "HANDOFF.md",
+        "style/style-options-r2.jpg"
+      ],
+      "next": "Baca HANDOFF.md sesi 3: G21 docs ulang → still/cover-topic → contact sheet + THEME_CHECK → juri blind → final → delivery",
+      "snapshot": {
+        "episode": "EP25_TIGA_ORANG_TERJEBAK_GUA",
+        "topic": "Tiga orang terjebak di gua dan bertawasul dengan amal saleh (HR Bukhari & Muslim dari Ibnu Umar)",
+        "style": "ISLAMICDOCUMENTARY",
+        "memoryEpisode": "short-baru-11-23-EP25",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP25_TIGA_ORANG_TERJEBAK_GUA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T01:02:01.062Z",
+      "doing": "G21 docs selesai (Style: ISLAMICDOCUMENTARY). Still draf r1 dirender + poles (plakat vs meter, berkas cahaya, batu lebih terang, topShade amal3); render ulang still r2 berjalan",
+      "command": "bash F:/_tmp_remotion_ep25/stills.sh (TEMP=F:\\_tmp_remotion_ep25) → style/cover-topic.png + draft/stills_id/s*.png → ffmpeg xstack → draft/contact-sheet.jpg",
+      "files": [
+        "engines/remotion-starter/src/episodes/gua25/Gua.tsx",
+        "docs/ART_DIRECTION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "THEME_CHECK → juri blind → record_score draft → final render + mix → delivery",
+      "snapshot": {
+        "episode": "EP25_TIGA_ORANG_TERJEBAK_GUA",
+        "topic": "Tiga orang terjebak di gua dan bertawasul dengan amal saleh (HR Bukhari & Muslim dari Ibnu Umar)",
+        "style": "ISLAMICDOCUMENTARY",
+        "memoryEpisode": "short-baru-11-23-EP25",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP25_TIGA_ORANG_TERJEBAK_GUA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T01:04:56.797Z",
+      "doing": "Juri ISLAMICDOCUMENTARY r1 gagal (3.17, readability 2: gua terbaca jendela masjid terbuka). Poles r2 belum diterapkan.",
+      "command": "bash F:/_tmp_remotion_ep25/stills.sh lalu ffmpeg xstack → draft/contact-sheet.jpg",
+      "files": [
+        "HANDOFF.md",
+        "engines/remotion-starter/src/episodes/gua25/Gua.tsx",
+        "F:/_tmp_remotion_ep25/polish_r2_draft.md"
+      ],
+      "next": "Baca HANDOFF.md 'Update 2026-11-23 (sesi 4)': terapkan 5 perbaikan r2 di Gua.tsx → render sheet → juri r2 (terakhir) → final/delivery atau kembali ke gerbang style",
+      "snapshot": {
+        "episode": "EP25_TIGA_ORANG_TERJEBAK_GUA",
+        "topic": "Tiga orang terjebak di gua dan bertawasul dengan amal saleh (HR Bukhari & Muslim dari Ibnu Umar)",
+        "style": "ISLAMICDOCUMENTARY",
+        "memoryEpisode": "short-baru-11-23-EP25",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP25_TIGA_ORANG_TERJEBAK_GUA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T01:09:30.915Z",
+      "doing": "Poles r2 diterapkan ke Gua.tsx (patch F:/_tmp_remotion_ep25/patch_r2.py, backup Gua.r2pre.tsx), typecheck bersih; render still r2",
+      "command": "bash F:/_tmp_remotion_ep25/stills.sh lalu ffmpeg xstack → draft/contact-sheet.jpg",
+      "files": [
+        "engines/remotion-starter/src/episodes/gua25/Gua.tsx"
+      ],
+      "next": "Periksa sheet → juri blind r2 (TERAKHIR) → final atau tawarkan style baru",
+      "snapshot": {
+        "episode": "EP25_TIGA_ORANG_TERJEBAK_GUA",
+        "topic": "Tiga orang terjebak di gua dan bertawasul dengan amal saleh (HR Bukhari & Muslim dari Ibnu Umar)",
+        "style": "ISLAMICDOCUMENTARY",
+        "memoryEpisode": "short-baru-11-23-EP25",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP25_TIGA_ORANG_TERJEBAK_GUA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T01:43:57.858Z",
+      "doing": "Style INKSTORY dipilih (acc). Rancangan Gua.tsx INKSTORY ditulis di HANDOFF.md sesi 6; kode belum ditulis.",
+      "files": [
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/gua25/Gua.tsx",
+        "HANDOFF.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Tulis ulang gua25/Gua.tsx ke INKSTORY sesuai HANDOFF sesi 6 → typecheck → cover topik + G21 docs → stills/sheet/THEME_CHECK → juri (maks 2) → final + delivery",
+      "snapshot": {
+        "episode": "EP25_TIGA_ORANG_TERJEBAK_GUA",
+        "topic": "Tiga orang terjebak di gua dan bertawasul dengan amal saleh (HR Bukhari & Muslim dari Ibnu Umar)",
+        "style": "INKSTORY",
+        "memoryEpisode": "short-baru-11-23-EP25",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP25_TIGA_ORANG_TERJEBAK_GUA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T07:22:56.999Z",
+      "doing": "Juri blind INKSTORY r1 atas draft/contact-sheet.jpg (self 4.0 tercatat)",
+      "files": [
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/gua25/Gua.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "HANDOFF.md"
+      ],
+      "next": "record_score jury → lolos: render final 60fps + mix G18 + QA + metadata + delivery; gagal: poles + juri r2 (terakhir). Lihat HANDOFF sesi 8.",
+      "snapshot": {
+        "episode": "EP25_TIGA_ORANG_TERJEBAK_GUA",
+        "topic": "Tiga orang terjebak di gua dan bertawasul dengan amal saleh (HR Bukhari & Muslim dari Ibnu Umar)",
+        "style": "INKSTORY",
+        "memoryEpisode": "short-baru-11-23-EP25",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP25_TIGA_ORANG_TERJEBAK_GUA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T07:23:35.844Z",
+      "doing": "Juri INKSTORY r1 GAGAL 3.67 (material 3, composition 3); poles r2 belum dimulai",
+      "files": [
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/gua25/Gua.tsx",
+        "HANDOFF.md",
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "Poles r2 sesuai HANDOFF sesi 8 (kuas kering di figur/hewan, maks 2 plate, F2 bawah) → stills2.sh → sheet → self + juri r2 (terakhir) → final+delivery atau tawarkan style baru",
+      "snapshot": {
+        "episode": "EP25_TIGA_ORANG_TERJEBAK_GUA",
+        "topic": "Tiga orang terjebak di gua dan bertawasul dengan amal saleh (HR Bukhari & Muslim dari Ibnu Umar)",
+        "style": "INKSTORY",
+        "memoryEpisode": "short-baru-11-23-EP25",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP25_TIGA_ORANG_TERJEBAK_GUA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:11:56.863Z",
+      "doing": "Juri INKSTORY r1 GAGAL 3.67 (material 3, composition 3); poles r2 belum dimulai",
+      "files": [
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/gua25/Gua.tsx",
+        "HANDOFF.md",
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "Poles r2 sesuai HANDOFF sesi 8 (kuas kering di figur/hewan, maks 2 plate, F2 bawah) → stills2.sh → sheet → self + juri r2 (terakhir) → final+delivery atau tawarkan style baru",
+      "snapshot": {
+        "episode": "EP25_TIGA_ORANG_TERJEBAK_GUA",
+        "topic": "Tiga orang terjebak di gua dan bertawasul dengan amal saleh (HR Bukhari & Muslim dari Ibnu Umar)",
+        "style": "INKSTORY",
+        "memoryEpisode": "short-baru-11-23-EP25",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP25_TIGA_ORANG_TERJEBAK_GUA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:49:58.366Z",
+      "doing": "Poles r2 INKSTORY selesai di Gua.tsx (DryBrush + inkEdgeStrong figur/hewan, judul fade saat panel, Hook tanpa panel, 'sampai fajar' teks kuas, Sumber lembar kaligrafi + kuas menulis di bawah, caption unsaid inkMid); render stills2.sh",
+      "command": "bash F:/_tmp_remotion_ep25/stills2.sh",
+      "files": [
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/gua25/Gua.tsx",
+        "F:/_tmp_remotion_ep25/Gua.r1ink.tsx (backup r1)"
+      ],
+      "next": "sheet 3x3 → audit:visual → self + juri r2 (terakhir) → final (r1 3.67 ≥3.5 → final walau r2 gagal)",
+      "snapshot": {
+        "episode": "EP25_TIGA_ORANG_TERJEBAK_GUA",
+        "topic": "Tiga orang terjebak di gua dan bertawasul dengan amal saleh (HR Bukhari & Muslim dari Ibnu Umar)",
+        "style": "INKSTORY",
+        "memoryEpisode": "short-baru-11-23-EP25",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP25_TIGA_ORANG_TERJEBAK_GUA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:13:14.380Z",
+      "doing": "Render final video bisu 1080x1920@60 GuaEP25 → draft/raw_final.mp4 (background)",
+      "command": "cd F:/AUDIRA-2D-SKILL-MOTION && TEMP=F:\\_tmp_remotion_ep25 npx remotion render engines/remotion-starter/src/episodes/gua25/index.tsx GuaEP25 <EP>/draft/raw_final.mp4 --public-dir=engines/remotion-starter/public --concurrency=4 --log=error",
+      "files": [
+        "draft/raw_final.mp4",
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "mix ffmpeg (VO loudnorm -16, SFX volume=-10dB + sidechain ratio 8 att 5 rel 350 thr 0.015, stereo, loudnorm -14 TP -1.5 2-pass) → metadata → FINAL_VIDEO.mp4 → QA → tahap 10",
+      "snapshot": {
+        "episode": "EP25_TIGA_ORANG_TERJEBAK_GUA",
+        "topic": "Tiga orang terjebak di gua dan bertawasul dengan amal saleh (HR Bukhari & Muslim dari Ibnu Umar)",
+        "style": "INKSTORY",
+        "memoryEpisode": "short-baru-11-23-EP25",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP25_TIGA_ORANG_TERJEBAK_GUA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:20:06.444Z",
+      "doing": "FINAL_VIDEO.mp4 selesai (84 dtk, -14.0 LUFS, TP -1.9, metadata ok); SOCIAL_CAPTIONS.md lolos validator; SUBTITLES.srt dibuat",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt",
+        "HANDOFF.md"
+      ],
+      "next": "verify_signature + qa_video + record_score final (jury) → STATUS final/delivery done → NOTES.md + append_lesson → 3 scheduled task review (upload Kamis 26 Nov 2026 20.00 WIB) → caption di chat. Detail: HANDOFF.md sesi 10.",
+      "snapshot": {
+        "episode": "EP25_TIGA_ORANG_TERJEBAK_GUA",
+        "topic": "Tiga orang terjebak di gua dan bertawasul dengan amal saleh (HR Bukhari & Muslim dari Ibnu Umar)",
+        "style": "INKSTORY",
+        "memoryEpisode": "short-baru-11-23-EP25",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP25_TIGA_ORANG_TERJEBAK_GUA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:20:06.444Z",
+      "doing": "FINAL_VIDEO.mp4 selesai (84 dtk, -14.0 LUFS, TP -1.9, metadata ok); SOCIAL_CAPTIONS.md lolos validator; SUBTITLES.srt dibuat",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt",
+        "HANDOFF.md"
+      ],
+      "next": "verify_signature + qa_video + record_score final (jury) → STATUS final/delivery done → NOTES.md + append_lesson → 3 scheduled task review (upload Kamis 26 Nov 2026 20.00 WIB) → caption di chat. Detail: HANDOFF.md sesi 10.",
+      "snapshot": {
+        "episode": "EP25_TIGA_ORANG_TERJEBAK_GUA",
+        "topic": "Tiga orang terjebak di gua dan bertawasul dengan amal saleh (HR Bukhari & Muslim dari Ibnu Umar)",
+        "style": "INKSTORY",
+        "memoryEpisode": "short-baru-11-23-EP25",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP25_TIGA_ORANG_TERJEBAK_GUA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T12:24:56.906Z"
+    }
+  ],
+  "syncedAt": "2026-11-23T12:19:37.272Z",
+  "session": 11,
+  "sessionLog": [
+    {
+      "no": 10,
+      "title": "EP25 Gua · s10",
+      "at": "2026-11-23T10:11:56.861Z"
+    },
+    {
+      "no": 11,
+      "title": "EP25 Gua · s11",
+      "at": "2026-11-23T12:20:06.444Z"
+    }
+  ]
+}

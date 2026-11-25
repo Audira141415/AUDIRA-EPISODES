@@ -1,0 +1,395 @@
+<html>
+<head>
+    <title> BUILDING BIG: Bridge Basics</title>
+<!-- #bbinclude js_navbarrollovers_rel.incl -->
+<script language="JavaScript" type="text/javascript">
+<!--
+	if(document.images) {
+	    var dam1 = new Image();
+	    var dam2 = new Image();
+	    var sky1 = new Image();
+	    var sky2 = new Image();
+	    var dom1 = new Image();
+	    var dom2 = new Image();
+	    var bri1 = new Image();
+	    var bri2 = new Image();
+	    var dvd1 = new Image();
+	    var dvd2 = new Image();
+	    var tunnel1 = new Image();
+	    var tunnel2 = new Image();
+	    
+	    dvd1.src = "../images/navbar/buythedvd.gif";
+	    dvd2.src = "../images/navbar/buythedvd_hot.gif";
+	    tunnel1.src = "../images/navbar/tunmenu_1.gif";
+	    tunnel2.src = "../images/navbar/tunmenu_1hot.gif";
+	    dam1.src = "../images/navbar/dammenu.gif";
+	    dam2.src = "../images/navbar/dammenuhot.gif";
+	    sky1.src = "../images/navbar/skymenu.gif";
+	    sky2.src = "../images/navbar/skymenuhot.gif";
+	    dom1.src = "../images/navbar/dommenu.gif";
+	    dom2.src = "../images/navbar/dommenuhot.gif";
+	    bri1.src = "../images/navbar/brimenu.gif";
+	    bri2.src = "../images/navbar/brimenuhot.gif";
+}
+
+function off(imgName) {
+	if(document.images) {
+		document[imgName].src = eval(imgName + '1.src');
+	}
+}
+
+function on(imgName) {
+	if(document.images) {
+		document[imgName].src = eval(imgName + '2.src');
+	}
+}
+
+function pop(){
+	popup = window.open('','popup','height=200,width=300,scrollbars=YES,screenX=500,screenY=300');
+popup.focus();
+}
+
+
+// -->
+</script>
+<!-- end bbinclude -->
+<!-- #bbinclude "js_brirollovers_rel.incl" -->
+<script language="JavaScript" type="text/javascript">
+<!--
+	if(document.images) {
+	    var multi1 = new Image();
+	    var multi2 = new Image();
+	    var high1 = new Image();
+	    var high2 = new Image();
+	    var foot1 = new Image();
+	    var foot2 = new Image();
+	    var rail1 = new Image();
+	    var rail2 = new Image();
+	    var final1 = new Image();
+	    var final2 = new Image();
+	    var final3 = new Image();
+	    var final4 = new Image();
+	    var searchLoc = window.location.search;
+	    var index1 = window.location.search.indexOf(1);
+	    var index2 = window.location.search.indexOf(2);
+        var index3 = window.location.search.indexOf(3);
+        var index4 = window.location.search.indexOf(4);
+	    
+	    multi1.src = "../images/bridge/1.gif";
+	    multi2.src = "../images/bridge/1_text.gif";
+	    high1.src = "../images/bridge/3.gif";
+	    high2.src = "../images/bridge/3_text.gif";
+	    foot1.src = "../images/bridge/2.gif";
+	    foot2.src = "../images/bridge/2_text.gif";
+	    rail1.src = "../images/bridge/4.gif";
+	    rail2.src = "../images/bridge/4_text.gif";
+	    final1.src = "../bridge/challenge/images/final01.gif";
+	    final2.src = "../bridge/challenge/images/final02.gif";
+	    final3.src = "../bridge/challenge/images/final03.gif";
+	    final4.src = "../bridge/challenge/images/final04.gif";
+}
+/* THIS FUNCTION PLACES THE VARIABLE IN THE URL SEARCH STRING */
+function addBridge(finBridge,whichClicked)   {
+    var search = window.location.search;
+    var searchLoc = window.location.search + finBridge;
+    var indexLoc = window.location.search.indexOf(finBridge);
+    
+       // if finBridge is not present in search string; add it to search string
+    if ((indexLoc < 0) && (whichClicked.href))   {
+       whichClicked.href = ('../bridge/challenge/indexp.html' + '?' + searchLoc); 
+    }  else if (indexLoc >= 0) {
+    // if finBridge is already present in the URL do not add it again  
+    whichClicked.href = ('../bridge/challenge/indexp.html' + search);
+    /*ORIG CODE.  JS 1.2 DOES NOT WORK IN IE 3.01
+    whichClicked.href = ('../bridge/challenge/indexp.html' + search.replace(/\^?/,""));*/
+    }
+}    
+
+/*  THIS FUNCTION LOOKS IN THE URL SERACH STRING AND IF THERE IS SOMETHING IN THE SEARCH STRING IT THEN
+PASSES THE VARIABLE TO ANY OTHER PAGE YOU GO TO.*/
+function carryBridge(loc)   {
+/* THIS IS A MAC IE (4.5??) WORKAROUND -- IE WILL NOT PASS SEARCH VALUES IF THERE IS AN ANCHOR TAG IN THE URL*/
+    //FIND THE VALUE OF SEARCH, IF THERE IS ONE
+    //SEE WHAT IS IN THE SEARCH STRING--FOR USE IN THE ELSE SECTION
+    var myLoc = loc + window.location.search;
+    //GET THE ENTIRE URL
+    var where = window.location.href
+    //GET THE LENGTH OF THE URL
+    var oldLoc = where.length;
+    /*FIND OUT AT WHAT POSITION IN THE URL # APPEARS*/
+    var local = where.indexOf('#opt');
+    /*TAKE EVERYTHING IN THE URL AFTER # + 4 -- ie.  IGNORE # AND THE FOLLOWING 3 CHARACTERS IN THE URL AND TAKE WHATEVER IS REMAINING*/
+    var replaceLast = where.substring(local + 4,oldLoc); // '#opt' is 4 characters long
+    //ADD THE VALUE OF loc TO replaceLast TO GET THE NEW URL
+    var newLoc = loc + replaceLast;
+    //IF # IS PRESENT THEN USE THE WORKAROUND
+    if (local >= 0) {
+        window.location = newLoc;
+        return false;
+        //IF # IS NOT PRESENT DON'T WORRY ABOUT THE WORKAROUND
+    }   else    {
+        window.location = myLoc;
+    return false;
+    }
+}
+/* THIS FUNCTION LOOKS IN THE URL SEARCH STRING AND PULLS OUT ANY VARIABLES THAT ARE PRESENT.  THEN
+FINDS WHICH VARIABLES ARE PRESENT AND CHANGES IMAGES ON indexp.html BASED ON WHICH VARIABLES ARE
+PRESENT IN THE SEARCH STRING */
+function displayBridge(searchLoc)    {
+    var searchLoc = window.location.search;
+    var indexLoc = window.location.search.indexOf(searchLoc);
+    // SEARCH THE MODIFIED SEARCH STRING FOR AN INSTANCE OF EACH OF THE NUMBERS BELOW
+    var index1 = window.location.search.indexOf(1);
+    var index2 = window.location.search.indexOf(2);
+    var index3 = window.location.search.indexOf(3);
+    var index4 = window.location.search.indexOf(4);
+    /* IF THE NUMBER IS IN THE SEARCH STRING (INDEX? WILL BE >= 0) THEN CHANGE THE ORIG. IMAGE
+       TO THE NEW IMAGE. IF THE NUMBER IS NOT IN THE SEARCH STRING (INDEX? < 0) THEN DO NOTHING.
+    */
+    if (index1 >= 0)    {
+        document['multi'].src="images/final01.gif";
+     }
+
+    if (index2 >= 0)    {
+        document['foot'].src="images/final02.gif";
+    }
+
+    if (index3 >= 0)    {
+        document['high'].src="images/final03.gif";
+    }
+
+    if (index4 >= 0)    {
+        document['rail'].src="images/final04.gif";
+    }
+}
+/* ROLLOVER FUNCTION THAT WORKS WITH displayBridge(searchLoc) */
+function onbridge(imgName)    {
+    /* IF IMAGE NAME = ??? AND INDEX? ARE BOTH TRUE THEN DO NOTHING;
+     ELSE ACTIVATE THE ON() FUNCTION
+    */
+    if ((imgName == 'multi') && (index1 >= 0))  {
+        //do nothing
+      }  else if ((imgName == 'foot') && (index2 >= 0))   {
+        // do nothing
+      }  else if  ((imgName == 'high') && (index3 >= 0))   {
+        // do nothing
+      }  else if ((imgName == 'rail') && (index4 >= 0))   {
+        // do nothing
+      }  else   {
+            on(imgName);
+      }
+}
+    
+/* ROLLOVER FUNCTION THAT WORKS WITH displayBridge(searchLoc) */
+function offbridge(imgName)    {
+    /* IF IMAGE NAME = ??? AND INDEX? ARE BOTH TRUE THEN DO NOTHING;
+     ELSE ACTIVATE THE OFF() FUNCTION
+    */
+    if ((imgName == 'multi') && (index1 >= 0))  {
+        // do nothing
+        document['multi'].src="images/final01.gif";
+      }  else if ((imgName == 'foot') && (index2 >= 0))   {
+        // do nothing
+      }  else if ((imgName == 'high') && (index3 >= 0))   {
+        // do nothing
+      }  else if ((imgName == 'rail') && (index4 >= 0))   {
+        // do nothing
+      }  else  {
+            off(imgName);
+      }
+}
+
+
+// -->
+
+</script>
+<!-- end bbinclude -->
+
+
+
+	<!-- #bbinclude "stylesheet_rel.incl" -->
+	<link rel="stylesheet" type="text/css" href="../css/bb.css" title="BUILDING BIG Main Style">
+<!-- end bbinclude -->
+</head>
+<body background="../images/redgraph.gif" bgcolor="white" text="#333333" link="#CC0000" alink="#000000" vlink="#666666">
+
+<!-- #bbinclude pbs_globalnav.incl -->
+<!-- JAWS Header/Localization Delivery -->
+<script>var PBS_CHROME_CONFIG = {'api_key': '0087d141-33da-42a1-9e9f-797eb00e162e'};</script><script type="text/javascript" src="//d2ok2u3bz752mp.cloudfront.net/js/gc.js"></script>
+
+<!-- Google Tag Manager Delivery -->
+<!-- Ad Banners -->
+<!-- Google Tag Manager Delivery -->
+<script type="text/javascript">
+    GTMDataLayer = [];
+</script>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TWTDGH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','GTMDataLayer','GTM-TWTDGH');</script>
+
+
+<!-- end bbinclude -->
+<!-- HEADER TABLE -->
+<!-- #bbinclude "bri_basics_rel.incl" -->
+<table border="0" cellspacing="0" cellpadding="0" width="544">
+    <tr>
+        <td valign="top" align="right"><a href="../index.html"><img src="../images/bbiglogo.gif" alt="BUILDING BIG " width="103" height="113" border="0"></a></td>
+        <td valign="top" align="left"><img src="../images/bridge/briheadtop.gif" alt="Image with 5 links within the image" width="441" height="34" border="0" align="top" usemap="#top"><br><img src="../images/bridge/bribasicsbottom.gif" alt="Bridge Basics" width="441" height="79" border="0" align="top"></td>
+    </tr>
+</table>
+
+
+<map name="top">
+<area shape="rect" coords=" 206,7,238,22" HREF="../index.html" ALT="BUILDING BIG Home Page" onMouseOver="window.status='BUILDING BIG Home Page';return true">
+<area shape="rect" coords=" 243,7,296,22" HREF="../sitemap.html" ALT="BUILDING BIG Site Map" onMouseOver="window.status='BUILDING BIG Site Map';return true">
+<area shape="rect" coords=" 300,7,328,22" HREF="../lab/index.html" ALT="BUILDING BIG Labs" onMouseOver="window.status='BUILDING BIG Labs';return true">
+<area shape="rect" coords=" 333,6,387,22" HREF="../wonder/index.html" ALT="BUILDING BIG Databank" onMouseOver="window.status='BUILDING BIG Databank';return true">
+<area shape="rect" coords=" 394,5,440,22" HREF="../glossary_head.html" ALT="BUILDING BIG Glossary" onMouseOver="window.status='BUILDING BIG Glossary';return true">
+</map>
+
+<!-- end bbinclude -->
+<table border="0" cellspacing="0" cellpadding="0" width="544">
+    <tr>
+        <td valign="top" align="right" width="103">
+<!-- #bbinclude "global_leftnav_rel.incl" -->
+       
+ <a href="../bridge/index.html" onmouseover="on('bri')" onmouseout="off('bri')" target="_top" onClick="return carryBridge('../bridge/index.html')"><img name="bri" src="../images/navbar/brimenu.gif" alt="Bridges" width="103" height="18" border="0"></a><br><a href="../dome/index.html" onmouseover="on('dom')" onmouseout="off('dom')" target="_top"><img name="dom" src="../images/navbar/dommenu.gif" alt="Domes" width="103" height="18" border="0"></a><br><a href="../skyscraper/index.html" onmouseover="on('sky')" onmouseout="off('sky')" target="_top"><img name="sky" src="../images/navbar/skymenu.gif" alt="Skyscrapers" width="103" height="18" border="0"></a><br> <a href="../dam/index.html" onmouseover="on('dam')" onmouseout="off('dam')" target="_top"><img name="dam" src="../images/navbar/dammenu.gif" alt="Dams" width="103" height="18" border="0"></a><br><a href="../tunnel/index.html" onmouseover="on('tunnel')" onmouseout="off('tunnel')" target="_top"><img name="tunnel" src="../images/navbar/tunmenu_1.gif" alt="Tunnels" width="103" height="18" border="0"></a><br><a href="http://www.shoppbs.org/family/index.jsp?categoryId=11349993&utm_source=BuildingBig&utm_medium=LeftNav&utm_campaign=Others" onmouseover="on('dvd')" onmouseout="off('dvd')" target="_top"><img name="dvd" src="../images/navbar/buythedvd.gif" alt="Buy the DVD" width="103" height="79" border="0"></a>
+
+</td>
+<td height="100%" valign="top" align="left" width="1" bgcolor="#333333"><img src="../images/one_px.gif" alt="_" width="1" height="1" border="0"></td>
+<!-- end bbinclude -->
+<!-- #bbinclude "start_content.incl" -->
+        <td height="100%" width="46" bgcolor="#ffffff">&nbsp;</td>
+        <td valign="top" width="376" bgcolor="#ffffff" class="font">
+<!-- CONTENT STARTS HERE - IT IS WITHIN A TABLE -->
+<!-- end bbinclude -->
+<p>There are more than half a million bridges in the United States, and you rely on them every day to cross obstacles like streams, valleys, and railroad tracks. But do you know how they work? Or why some bridges are curved while others are straight? Engineers must consider many things -- like the distance to be spanned and the types of materials available -- before determining the size, shape, and overall look of a bridge. </p>
+
+<p>Since ancient times, engineers have designed three major types of bridges to withstand all forces of nature. </p>
+
+
+<a name="beam" id="beam"></a><!-- START NESTED VERT PIC/CAPTION TABLE -->
+<div><table border="0" cellpadding="0" cellspacing="0" align="right">
+        <tr>
+            <td><a href="beam.html" onClick="return carryBridge('beam.html')"><img src="../images/bridge/basics/beam_bridge.jpg" alt="Image of a Beam Bridge" width="130" height="100" border="0"></a></td>
+        </tr>
+        <tr>
+            <td class="caption">Beam bridge<br></td>
+        </tr>
+     </table><img src="../images/one_px_white.gif" alt="_" width="10" height="140" border="0" align="right">
+<!-- END NESTED VERT PIC/CAPTION TABLE -->
+<font class="header-font">The beam bridge...</font><br>
+consists of a horizontal <a href="../glossary.html#beam" onClick="pop();" target="popup" class="link-font"><font color="#333333">beam</font></a> supported at each end by <a href="../glossary.html#piers" onClick="pop();" target="popup" class="link-font"><font color="#333333">piers</font></a>. The weight of the beam pushes straight down on the piers. The farther apart its piers, the weaker the beam becomes. This is why beam bridges rarely <a href="../glossary.html#span" onClick="pop();" target="popup" class="link-font"><font color="#333333">span</font></a> more than 250 feet. <br><br>
+
+<a href="beam_forces.html">Sneak a peek at the forces that act on beam bridges!</a> <br><br>
+
+<a href="beam_types.html">Check out other types of beam bridges!</a> </div>
+<br clear="all"><br>
+
+<a name="truss" id="truss"></a><!-- START NESTED VERT PIC/CAPTION TABLE -->
+    <table border="0" cellpadding="0" cellspacing="0" align="left">
+        <tr>
+            <td><a href="firth_forth.html"><img src="../images/bridge/basics/firthofforth2_bridge.jpg" alt="Image of Cantilever Bridge" width="130" height="100" border="0"></a></td>
+        </tr>
+        <tr>
+            <td class="caption">Cantilever bridge: <br>Firth of Forth</td>
+        </tr>
+     </table><img src="../images/one_px_white.gif" alt="_" width="10" height="140" border="0" align="left">
+<!-- END NESTED VERT PIC/CAPTION TABLE -->
+<div><font class="header-font">The truss bridge...</font><br>
+consists of an assembly of triangles. Truss bridges are commonly made from a series of straight, <a href="../glossary.html#steel" onClick="pop();" target="popup" class="link-font"><font color="#333333">steel</font></a> bars. The <a href="../wonder/structure/firth_of_forth.html">Firth of Forth Bridge</a> in Scotland is a cantilever bridge, a complex version of the truss bridge. <a href="../glossary.html#rigid" onClick="pop();" target="popup" class="link-font"><font color="#333333">Rigid</font></a> arms extend from both sides of two piers. Diagonal steel tubes, projecting from the top and bottom of each <a href="../glossary.html#pier" onClick="pop();" target="popup" class="link-font"><font color="#333333">pier</font></a>, hold the arms in place. The arms that project toward the middle are only supported on one side, like really <a href="../glossary.html#strong" onClick="pop();" target="popup" class="link-font"><font color="#333333">strong</font></a> diving boards. These "diving boards," called cantilever arms, support a third, central <a href="../glossary.html#span" onClick="pop();" target="popup" class="link-font"><font color="#333333">span</font></a>.<br><br>
+<a href="truss_forces.html">Check out the forces that act on truss bridges!</a> </div>
+
+<br clear="all">
+<br>
+
+
+
+<!-- START NE!STED HOIRIZ PIC/CAPTION TABLE -->
+ <a name="arch" id="arch"></a>   <table border="0" cellpadding="0" cellspacing="0" align="right">
+        <tr>
+            <td><a href="aqueduct.html"><img src="../images/bridge/basics/aqueduct_bridge.jpg" alt="Aqueduct bridge - click to view larger image" width="130" height="100" border="0"></a></td>
+        </tr>
+        <tr>
+            <td class="caption">Ancient Roman aqueduct</td>
+        </tr>
+     </table><img src="../images/one_px_white.gif" alt="_" width="10" height="140" border="0" align="right">
+<!-- END NESTED HORIZ PIC/CAPTION TABLE -->
+<div><font class="header-font">The arch bridge...</font><br>
+has great natural strength. Thousands of years ago, Romans built arches out of stone. Today, most arch bridges are made of <a href="../glossary.html#steel" onClick="pop();" target="popup" class="link-font"><font color="#333333">steel</font></a> or <a href="../glossary.html#concrete" onClick="pop();" target="popup" class="link-font"><font color="#333333">concrete</font></a>, and they can <a href="../glossary.html#span" onClick="pop();" target="popup" class="link-font"><font color="#333333">span</font></a> up to 800 feet. <br><br>
+<a href="arch_forces.html">Catch a glimpse of the forces that act on arch bridges!</a><br><br>
+<a href="arch_built.html">Check out how arch bridges are built!</a>  </div>
+<br clear="all">
+<br>
+<!-- START NESTED VERT PIC/CAPTION TABLE -->
+
+
+<a name="susp" id="susp"></a><!-- START NESTED VERT PIC/CAPTION TABLE -->
+    <table border="0" cellpadding="0" cellspacing="0" align="left">
+        <tr>
+            <td><a href="golden_gate.html"><img src="../images/bridge/basics/goldengate_bridge.jpg" alt="Image of Suspension Bridge" width="130" height="100" border="0"></a></td>
+        </tr>
+        <tr>
+            <td class="caption">Suspension bridge: <br>Golden Gate Bridge
+          </td>
+        </tr>
+     </table><img src="../images/one_px_white.gif" alt="_" width="10" height="140" border="0" align="left">
+<!-- END NESTED VERT PIC/CAPTION TABLE -->
+<div><font class="header-font">The suspension bridge...</font><br>
+can span 2,000 to 7,000 feet -- way farther than any other type of bridge! Most suspension bridges have a <a href="../glossary.html#truss" onClick="pop()" 
+target="popup" class="link-font"><font color="#333333">truss</font></a> system beneath the roadway to resist <a href="../glossary.html#bend" onClick="pop();" target="popup" class="link-font"><font color="#333333">bending</font></a> and twisting. <br><br>
+<a href="susp_forces.html">See how forces act on suspension bridges!</a> <br><br>
+
+<a href="susp_bri.html">Check out another type of suspension bridge!</a> </div>
+
+
+<p>Now that you've mastered the bridge basics, test your bridge-building skills in the <a href="challenge/index.html">Bridge Challenge</a>! </p>
+
+
+
+
+<!-- #bbinclude "end_content.incl" -->
+<!-- END CONTENT TABLE -->
+<br></td>
+        <td height="100%" width="17" bgcolor="#ffffff" align="left">&nbsp;</td>
+        <td height="100%" valign="top" align="left" width="1" bgcolor="#333333"><img src="../images/one_px.gif" alt="_" width="1" height="1" border="0"></td>
+    </tr>
+    <tr>
+        <td colspan="1" height="1"></td>
+        <td colspan="5" valign="top" bgcolor="#333333" height="1"><img src="../images/horiz_one_px.gif" alt="_" width="1" height="1" border="0" align="top"></td>
+    </tr>
+</table>
+
+
+
+<br>
+<br>
+<!-- end bbinclude -->
+<!-- BEGIN FOOTER TABLE -->
+<!-- #bbinclude "footer_rel.incl" -->
+<table border="0" align="left" width="544">
+    <tr>
+        <td width="103">&nbsp;</td>
+        <td width="441">
+            <p class="footer">
+            <a href="../index.html"> Building Big Home</a> | <a href="../sitemap.html">Site Map</a> | <a href="../lab/index.html">Labs</a> | <a href="../wonder/index.html">Databank</a> | <a href="../glossary_head.html">Glossary</a>
+           <br>
+           <a href="../bridge/index.html" onClick="return carryBridge('../bridge/index.html')">Bridges</a> | <a href="../dome/index.html">Domes</a> | <a href="../skyscraper/index.html">Skyscrapers</a> | <a href="../dam/index.html">Dams</a> | <a href="../tunnel/index.html">Tunnels</a> <br>
+            <a href="../wonder/local.html">Local Wonders</a> | <a href="../profile/index.html">Who Builds Big?</a> | 
+            <a href="../educator/index.html">Educators' Guide</a> | <a href="http://www.shoppbs.org/family/index.jsp?categoryId=11349993&utm_source=BuildingBig&utm_medium=Footer&utm_campaign=Shop">Shop</a><br>
+</p>
+        <p class="footer-copyright">
+            This Web site was produced for <a href="http://www.pbs.org"> PBS Online</a> by <a href="http://main.wgbh.org"> WGBH</a>. <br>
+            Web site <a href="../copyright.html">&copy; 2000-2001</a> WGBH Educational Foundation.
+        </p>
+    </td>
+    </tr>
+</table>
+<br>
+<br>
+<br>
+
+</body>
+</html>
+<!-- end bbinclude -->
+
+

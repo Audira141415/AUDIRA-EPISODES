@@ -1,0 +1,154 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#140C08}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.05;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.42) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.58) 42%,rgba(0,0,0,0.58) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#F2C58A;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.p{transform-origin:0% 0%}
+.cd{position:relative;background:#F6E9D0;border:1px solid rgba(58,34,22,.22);border-radius:6px;box-shadow:0 22px 46px rgba(0,0,0,.55),0 2px 0 rgba(255,255,255,.55) inset}
+.kk{display:inline-flex;align-items:center;gap:16px;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:25px;line-height:1;letter-spacing:.16em;color:#F2C58A;background:#2A170E;padding:13px 22px 12px;border:1px solid #B5652B;border-radius:4px;margin-bottom:22px;box-shadow:0 10px 24px rgba(0,0,0,.5)}
+.kk i{font-style:normal;font-weight:700;color:#F6E9D0;border-right:1px solid #B5652B;padding-right:16px}
+.h1{display:inline-block;padding:14px 38px 22px;border-left:12px solid #B5652B;font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:700;font-size:132px;line-height:.98;color:#3A2216}
+.h1 em,.h2 em{font-style:italic;color:#B5652B}
+.h2{display:inline-block;padding:16px 32px 20px;border-left:12px solid #B5652B;font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:700;font-size:74px;line-height:1.02;color:#3A2216}
+.row{flex-direction:column;margin-top:16px;padding:13px 28px 15px;border-left:12px solid #B5652B;max-width:860px;box-sizing:border-box}
+.row b{display:block;font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:38px;line-height:1.12;letter-spacing:.03em;color:#3A2216}
+.row span{display:block;margin-top:6px;font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:600;font-size:44px;line-height:1.1;color:#5A3A26}
+.row.rd{border-left-color:#CE1126}.row.bl{border-left-color:#1F3D8A}.row.gr{border-left-color:#006847}
+.mega,.stat{display:flex;align-items:baseline;gap:18px;width:max-content;max-width:900px;box-sizing:border-box;margin-top:16px;padding:6px 32px 12px;border-left:12px solid #B5652B}
+.mega b,.stat b{font-family:'IBM Plex Mono',monospace;font-weight:700;font-variant-numeric:tabular-nums;font-size:132px;line-height:1.04;letter-spacing:-.02em;color:#3A2216}
+.stat b{font-size:104px}
+.stat.rd{border-left-color:#CE1126}.stat.rd b{color:#CE1126}
+.mega small,.stat small,.stat span{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:600;font-size:46px;color:#5A3A26}
+.note{display:inline-block;margin-top:16px;font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:500;font-size:36px;line-height:1.22;color:#F6E9D0;background:rgba(32,18,11,.86);border-left:4px solid #B5652B;padding:10px 20px;max-width:820px}
+.stamp{display:inline-block;margin-top:20px;font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:44px;letter-spacing:.1em;color:#FBEFDC;background:#CE1126;padding:12px 26px 10px;border:3px double #FBEFDC;border-radius:4px;transform:rotate(-2deg);box-shadow:0 12px 28px rgba(0,0,0,.55)}
+.stamp.gr{background:#006847;font-size:36px}
+.q{margin-top:22px;padding:18px 30px 20px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:42px;line-height:1.22;color:#F6E9D0;background:#2A170E;border-left:12px solid #CE1126;max-width:860px;box-sizing:border-box}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="92.08" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI &middot; DIORAMA MAKANAN</div>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600;1,9..144,700&family=IBM+Plex+Mono:wght@500;600;700&display=block">
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="kk"><i>EP 39</i>FAKTA SEJARAH NEGARA</div>
+  <div class="cd h1">Perang <em>Kue</em></div>
+  <div class="cd row " data-at="s1:toko" data-fx="card"><b>Prancis vs Meksiko</b><span>1838&ndash;1839</span></div>
+  <div class="cd row rd" data-at="s1:jenderal" data-fx="card"><b>seorang jenderal</b><span>kehilangan kakinya</span></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="kk"><i>No. 01</i>MEKSIKO &middot; 1832</div>
+  <div class="cd row " data-at="s2:Negara" data-fx="card"><b>NEGARA BARU MERDEKA</b><span>sering dilanda kerusuhan</span></div>
+  <div class="cd row rd" data-at="s2:dijarah" data-fx="card"><b>TOKO WARGA ASING</b><span>kerap dijarah</span></div>
+  <div class="note" data-at="s2:ganti" data-fx="fade">pemiliknya sulit mendapat ganti rugi</div>
+</div>
+<div class="p" data-in="s3" data-out="s3:Remontel#2">
+  <div class="kk"><i>No. 02</i>TACUBAYA &middot; KOTA MEKSIKO</div>
+  <div class="cd row " data-at="s3:Monsieur" data-fx="card"><b>MONSIEUR REMONTEL</b><span>pembuat kue Prancis</span></div>
+  <div class="cd row bl" data-at="s3:merusak" data-fx="card"><b>VERSI REMONTEL</b><span>perwira Meksiko merusak tokonya</span></div>
+  <div class="cd row gr" data-at="s3:Versi" data-fx="card"><b>VERSI MEKSIKO</b><span>perwira cuma menolak membayar</span></div>
+</div>
+<div class="p" data-in="s3:Remontel#2" data-out="s4">
+  <div class="kk"><i>No. 02</i>NOTA REMONTEL</div>
+  <div class="cd stat" data-at="s3:menuntut" data-fx="card"><small>menuntut</small><b><b class="ct nb" data-from="0" data-to="60000" data-a="s3:menuntut" data-d="0.5">0</b></b><span>peso</span></div>
+  <div class="cd stat rd" data-at="s3:kurang" data-fx="card"><small>nilai toko</small><b>&lt; 1.000</b><span>peso</span></div>
+  <div class="note" data-at="s3:seribu" data-fx="fade">1 koin cokelat = 1.000 peso</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="kk"><i>No. 03</i>PARIS &middot; 1838</div>
+  <div class="cd row " data-at="s4:keluhan" data-fx="card"><b>KELUHAN WARGA PRANCIS</b><span>dikumpulkan jadi satu tagihan</span></div>
+  <div class="cd mega" data-at="s4:menagih" data-fx="card"><b><b class="ct nb" data-from="0" data-to="600000" data-a="s4:menagih" data-d="0.5">0</b></b><small>peso</small></div>
+  <div class="note" data-at="s4:ribu" data-fx="fade">setara 3 juta franc</div>
+  <div class="stamp" data-at="s4:tidak" data-fx="stampc">TIDAK DIBAYAR</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="kk"><i>No. 04</i>TELUK MEKSIKO &middot; 1838</div>
+  <div class="cd row bl" data-at="s5:diblokade" data-fx="card"><b>ARMADA PRANCIS</b><span>memblokade pelabuhan Teluk</span></div>
+  <div class="cd row " data-at="s5:dibombardir" data-fx="card"><b>SAN JUAN DE ULÚA</b><span>benteng dibombardir</span></div>
+  <div class="cd row bl" data-at="s5:direbut" data-fx="card"><b>VERACRUZ</b><span>kota pelabuhan direbut</span></div>
+  <div class="stamp gr" data-at="s5:menyatakan" data-fx="stampc">MEKSIKO MENYATAKAN PERANG</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="kk"><i>No. 05</i>VERACRUZ &middot; DESEMBER 1838</div>
+  <div class="cd row gr" data-at="s6:Santa" data-fx="card"><b>JENDERAL SANTA ANNA</b><span>keluar dari masa pensiun</span></div>
+  <div class="cd row " data-at="s6:terkena" data-fx="card"><b>KAKINYA TERKENA MERIAM</b><span>dan harus diamputasi</span></div>
+  <div class="cd row " data-at="s6:dimakamkan" data-fx="card"><b>KAKI ITU DIMAKAMKAN</b><span>dengan upacara militer penuh</span></div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Dua">
+  <div class="kk"><i>No. 06</i>9 MARET 1839</div>
+  <div class="cd row " data-at="s7:mediasi" data-fx="card"><b>PERJANJIAN DAMAI</b><span>lewat mediasi Inggris</span></div>
+  <div class="cd stat" data-at="s7:berjanji" data-fx="card"><small>dijanjikan</small><b><b class="ct nb" data-from="0" data-to="600000" data-a="s7:berjanji" data-d="0.6">0</b></b><span>peso</span></div>
+  <div class="stamp" data-at="s7:tak" data-fx="stampc">TAK PERNAH DIBAYAR</div>
+</div>
+<div class="p" data-in="s7:Dua" data-out="s8">
+  <div class="kk"><i>No. 07</i>22 TAHUN KEMUDIAN</div>
+  <div class="cd mega" data-at="s7:Dua" data-fx="card"><b>1861</b></div>
+  <div class="cd row bl" data-at="s7:menyerbu" data-fx="card"><b>PRANCIS MENYERBU LAGI</b><span>tagihan lama jadi alasannya</span></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="kk"><i>AUDIRA</i>PATISERI SEJARAH</div>
+  <div class="cd h2">Semua bermula dari<br><em>tagihan toko kue</em></div>
+  <div class="cd q" data-at="s8:Menurut" data-fx="card">Menurut kamu, apa tuntutan ganti rugi paling tidak masuk akal yang pernah kamu dengar?</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 39</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":5.917,"s2":6.077,"s2e":17.18,"s3":17.34,"s3e":32.652,"s4":32.812,"s4e":41.169,"s5":41.329,"s5e":52.277,"s6":52.437,"s6e":63.562,"s7":63.722,"s7e":78.172,"s8":78.332,"s8e":89.076,"end":89.076,"dur":92.08,"outro":89.326},AT={"s1:toko":2.944,"s1:kue":3.223,"s1:jenderal":4.694,"s1:kakinya":5.622,"s2:Meksiko":6.115,"s2:1832":7.506,"s2:kerusuhan":11.639,"s2:dijarah":14.022,"s2:ganti":16.421,"s3:Seorang":17.34,"s3:Monsieur":19.07,"s3:merusak":22.704,"s3:Tacubaya":23.695,"s3:Versi":24.498,"s3:menolak":26.248,"s3:Remontel#2":27.587,"s3:menuntut":28.237,"s3:enam":28.81,"s3:kurang":31.398,"s3:seribu":31.94,"s4:Prancis":32.819,"s4:keluhan":34.166,"s4:1838":36.395,"s4:menagih":38.16,"s4:enam":38.671,"s4:ribu":39.12,"s4:tidak":40.457,"s5:Armada":41.34,"s5:Pelabuhan":43.492,"s5:diblokade":44.823,"s5:benteng":45.794,"s5:dibombardir":47.713,"s5:Veracruz":49.921,"s5:direbut":50.37,"s5:menyatakan":51.425,"s6:Jenderal":52.448,"s6:Santa":52.866,"s6:pensiun":54.182,"s6:terkena":56.968,"s6:meriam":57.85,"s6:diamputasi":59.166,"s6:dimakamkan":61.148,"s6:upacara":62.525,"s7:Maret":63.737,"s7:1839":64.349,"s7:mediasi":66.609,"s7:berjanji":69.701,"s7:enam":70.692,"s7:tak":72.968,"s7:Dua":74.53,"s7:kemudian":75.227,"s7:menyerbu":77.502,"s8:Semua":78.632,"s8:tagihan":79.793,"s8:Menurut":81.788,"s8:AUDIRA":87.171,"s2:Negara":9.394},DUR=92.08,OUT=89.326;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ card:(e,t)=>{const d=e.dataset.d||(e.matches('.row,.mega,.stat')?'flex':'block');gsap.set(e,{display:'none'});tl.set(e,{display:d},t);tl.fromTo(e,{opacity:0,y:22},{opacity:1,y:0,duration:.45,ease:'power2.out',immediateRender:false},t);},
+ stampc:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:'inline-block'},t);tl.fromTo(e,{scale:1.5,opacity:0},{scale:1,opacity:1,duration:.22,ease:'power4.in',immediateRender:false},t);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{opacity:0,y:20},{opacity:1,y:0,duration:.5,ease:'power2.out'},a-.1),POUT=(tl,p,b)=>tl.to(p,{opacity:0,y:-14,duration:.3,ease:'power2.in'},b-.3);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP39_PERANG_KUE_MEKSIKO")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

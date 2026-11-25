@@ -1,0 +1,591 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP70",
+  "topic": "Danau Nyos, Kamerun 1986: danau yang membunuh 1.746 orang dalam semalam (erupsi limnik CO2)",
+  "createdAt": "2026-11-24T15:08:07.744Z",
+  "updatedAt": "2026-11-24T23:10:32.518Z",
+  "currentStage": "final",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:08:54.660Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-24T15:08:07.746Z",
+      "startedAt": "2026-11-24T15:08:07.746Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:08:54.660Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-23T18:28:37.279Z",
+      "startedAt": "2026-11-23T18:28:37.279Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:12:47.700Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T15:12:24.363Z",
+      "startedAt": "2026-11-24T15:12:24.363Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:12:47.700Z",
+          "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-24T15:13:39.274Z",
+          "text": "Sesi A selesai: SOURCE_REGISTER (3 HIGH), STYLE_DECISION, ART_DIRECTION, SCRIPT 201 kata, STORYBOARD 9 baris, ASSET_MANIFEST. Cover topik ditunda ke awal sesi B (butuh scaffold). Preflight tahap 0 belum jalan (belum ada proyek)."
+        }
+      ],
+      "doneAt": "2026-11-24T15:13:39.274Z",
+      "startedAt": "2026-11-24T15:12:04.731Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:47:08.895Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T16:38:13.411Z",
+      "startedAt": "2026-11-22T16:38:13.411Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:53:05.934Z",
+          "text": "VO Cartesia speed 0.9 = 90,51 dtk (speed 1.0 = 74,1 dtk terlalu cepat). Segmen: s1 0.59, s2 8.27, s3 19.58, s4 32.96, s5 44.83, s6 58.20, s7 72.01, s8 85.57, akhir 90.50. Film 93,8 dtk (outro 90.8–93.8). STORYBOARD kolom Waktu diganti."
+        }
+      ],
+      "doneAt": "2026-11-24T15:53:05.934Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:50:59.608Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.572Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:29:16.327Z",
+          "text": "sync: look.json PASS"
+        },
+        {
+          "at": "2026-11-24T23:09:33.841Z",
+          "text": "TERRARIUM gagal 2 putaran juri (r1 3.33, r2 3.33: L3 M3 D4 C3 Mo5 R2). G21: ganti style ke DISASTERSIM (dipilih AI via recommend_fallback_style; alt WORLDFORGE, ABYSSFORGE). Ulang tahap 3 cover + tahap 4 docs dengan baris Style: DISASTERSIM; naskah + VO 90.51 dtk tetap."
+        },
+        {
+          "at": "2026-11-24T23:10:32.518Z",
+          "text": "sync: look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-24T23:07:36.534Z",
+      "startedAt": "2026-11-24T18:24:31.375Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "pending",
+      "approved": false,
+      "approvedAt": null,
+      "notes": []
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-negara-EP70",
+    "style": "DISASTERSIM",
+    "engine": "remotion",
+    "wordCount": 201,
+    "shortTitle": "Danau Nyos",
+    "estimatedDuration": {
+      "wordCount": 201,
+      "minSec": 80,
+      "maxSec": 89
+    },
+    "failedStyles": [
+      "TERRARIUM"
+    ],
+    "terrariumBestJury": 3.33
+  },
+  "syncedAt": "2026-11-24T23:10:32.518Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-24T15:13:47.508Z",
+      "doing": "Sesi A (tahap 0–4) selesai. Style TERRARIUM, Remotion + R3F 3D. Naskah 201 kata (estimasi 80–89 dtk), 8 segmen s1–s8, teks TTS siap di docs/SCRIPT.md bagian \"Teks TTS\". Storyboard 7 adegan + penutup + outro (toples kaca penampang danau → gabus lepas → erupsi → kabut CO2 menuruni lembah → lampu desa padam + danau merah → Monoun + pipa degassing air mancur). Finish DOCUMENTARY_WARM exp 1 env 0.55 AO. Maks 2 kartu HUD per beat, subjek ≥30% lebar frame, sub-line ≥48 px. Tanpa visual korban (lihat ART_DIRECTION Penggambaran).",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/SCRIPT.md (teks VO saja)",
+        "docs/ART_DIRECTION.md",
+        "research/SOURCE_REGISTER.md"
+      ],
+      "next": "Sesi B tahap 5: preflight + audira_init_motion_project / scaffold Remotion di folder episode (project/), mulai dari gold TERRARIUM F:/AUDIRA-SKILL-MOTION/kits/terrarium/gold/sains-anak-EP04 (GOLD.json + code/), render cover topik style/cover-topic.png (toples malam + \"1.746 JIWA · 1 MALAM\") dan record_score cover; lalu tahap 6 VO Cartesia (voice 04b567df-2923-4b0c-896b-4b7df0a07e1a) dari teks TTS SCRIPT.md, tahap 7 adegan + sfx, tahap 8 contact sheet + juri blind.",
+      "snapshot": {
+        "episode": "EP70",
+        "topic": "Danau Nyos, Kamerun 1986: danau yang membunuh 1.746 orang dalam semalam (erupsi limnik CO2)",
+        "style": "TERRARIUM",
+        "memoryEpisode": "sejarah-negara-EP70",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:51:45.254Z",
+      "doing": "Sesi B: scaffold project/ selesai (starter standar via robocopy + junction node_modules & polyfork, SERIES.json/channel.json FAKTADUNIA, preflight no blockers). Sekarang VO Cartesia dari audio/vo.txt.",
+      "files": [
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "audio/vo.txt"
+      ],
+      "next": "npm run vo, tulis src/episode (timeline/scenes/Film), cover-topic, sfx, draft + juri",
+      "snapshot": {
+        "episode": "EP70",
+        "topic": "Danau Nyos, Kamerun 1986: danau yang membunuh 1.746 orang dalam semalam (erupsi limnik CO2)",
+        "style": "TERRARIUM",
+        "memoryEpisode": "sejarah-negara-EP70",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:53:06.351Z",
+      "doing": "Sesi B bagian 1 selesai (konteks penuh): tahap 5 scaffold + tahap 6 VO. project/ = starter standar AUDIRA-SKILL-MOTION (robocopy /XJ, node_modules junction ke F:\\AUDIRA-SKILL-MOTION\\node_modules, public/models/polyfork junction ke E:/ASET glb), SERIES.json + src/brand/channel.json = FAKTADUNIA @AudiraFaktaDunia. preflight no blockers, check-env ok, smoke ok. JANGAN pakai new-project.mjs --kit=terrarium (itu proyek story-engine mandiri tanpa preflight/sfx/draft). Kit di src/kits/terrarium (GlassJar3D, materials makeGlassMaterial/makeWoodTexture/makeCorkTexture, camera/rig). VO: public/audio/vo.wav 90,51 dtk (Cartesia speed 0.9), vo-words.json 201 kata, vo.timing.json. Segmen VO: s1 0.59, s2 8.27, s3 19.58, s4 32.96, s5 44.83, s6 58.20, s7 72.01, s8 85.57, akhir 90.50 → FILM_SECONDS 93.8, OUTRO 90.8–93.8. Gold EP04 code tidak berisi kode episode (hanya Root generik); folder EP04 fotosintesis sudah tidak ada. Pola kode paling dekat: sibling ../EP72_GEMPA_LISBON_1755/project/src/episode/ (LisbonFilm.tsx: FilmScene + LOOK per scene + HudCard + Subtitle y1290 + Voiceover + AudiraOutro + AudiraSignature; timeline.ts: SHOTS Catmull-Rom + CARDS) — salin polanya, jangan edit EP72.",
+      "files": [
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "project/public/audio/vo.timing.json",
+        "docs/STORYBOARD.md",
+        "project/SERIES.json",
+        "project/src/brand/channel.json"
+      ],
+      "next": "Sesi B lanjutan (tahap 7–8): tulis src/episode/{NyosFilm.tsx,timeline.ts,scenes.tsx,parts.tsx} 7 adegan + outro sesuai docs/STORYBOARD.md (waktu sudah detik VO) dan ART_DIRECTION; daftarkan NyosPreview/NyosFinal/NyosCover di src/Root.tsx. Finish DOCUMENTARY_WARM exposure 1 envIntensity 0.55 ao; ruang gelap tanpa kubah langit kit; bokeh = bola meshBasicMaterial + DOF (bukan sprite). AudiraSignature seed danau-nyos-ep70 handle @AudiraFaktaDunia; plakat kuningan AUDIRA · DANAU NYOS 1986 di alas. Maks 2 kartu HUD per beat, subjek ≥30% lebar frame, sub-line ≥48 px, tanpa visual korban. Lalu cover style/cover-topic.png 1080×1920 (npm run cover / stills NyosCover) + record_score cover + baris cover di STYLE_DECISION.md; docs/SHOTLIST.md + npm run sfx; draft/THEME_CHECK.md; npm run draft -- NyosPreview (contact sheet + audit:visual + camera); record_score self lalu juri blind (maks 2 putaran). Lalu handover ke sesi C (newSession, detach, pindah grup FAKTADUNIA cg-088c6b20-6f17-40d6-8161-b1bc8401bbf4, arsipkan). Jangan render final. GPU dibagi: OOM → --concurrency=1.",
+      "snapshot": {
+        "episode": "EP70",
+        "topic": "Danau Nyos, Kamerun 1986: danau yang membunuh 1.746 orang dalam semalam (erupsi limnik CO2)",
+        "style": "TERRARIUM",
+        "memoryEpisode": "sejarah-negara-EP70",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T17:39:11.726Z",
+      "doing": "Tahap 5–6 selesai di s2 (VO terkunci 90,51 dtk, storyboard di detik VO); s3 dimulai dari sesi induk atas perintah pengguna 2026-11-25",
+      "next": "Sesi B lanjutan (tahap 7–8): tulis src/episode/{NyosFilm.tsx,timeline.ts,scenes.tsx,parts.tsx} 7 adegan + outro sesuai docs/STORYBOARD.md dan ART_DIRECTION; daftarkan komposisi Preview/Final/Cover; cover topik; SFX; THEME_CHECK; draft + juri buta. JANGAN render final.",
+      "snapshot": {
+        "episode": "EP70",
+        "topic": "Danau Nyos, Kamerun 1986: danau yang membunuh 1.746 orang dalam semalam (erupsi limnik CO2)",
+        "style": "TERRARIUM",
+        "memoryEpisode": "sejarah-negara-EP70",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T17:46:26.682Z",
+      "doing": "s3 tahap 7: kode film ditulis sebagian. SELESAI: project/src/episode/timeline.ts (SHOTS kamera A–H dalam detik VO, T story clock, CARDS HUD maks 1 sekaligus, VILLAGES) dan parts.tsx (Room, Terrain+terrainY/valleyPoint, Scatter GLB, Reeds, GlassJar, Cork pop, Plaque AUDIRA, LakeSection penampang potong z=0 + lakeState, PressureGauge, Eruption, GasFlow+gasFront, Village(i,t,label), Cattle, PipeFountain, MonounJar, PipeSpare). Template referensi: EP69_KIRUNA project/src/episode/KirunaFilm.tsx (FilmScene, HUD, Subtitle, Voiceover, AudiraOutro, AudiraSignature seed, Cover Freeze).",
+      "files": [
+        "project/src/episode/timeline.ts",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/NyosFilm.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "Tulis scenes.tsx (SCENES: Record<SceneId, FC<{t}>>; tiap scene render World bersama: Room, Terrain, Scatter, GlassJar, LakeSection(lakeState(t)), Cork, Plaque, PressureGauge (C), Eruption (D), GasFlow (D–F), Village×4 (label F 58.2–66), Cattle, PipeFountain+PipeSpare (G–H), MonounJar di [-3.4,0,-1.4], Reeds FG) dan NyosFilm.tsx (salin pola KirunaFilm: LOOK malam A–F, pagi G–H; magma pointLight merah; HUD papan rgba(18,13,10,0.82) aksen #3d8fb0, sub ≥48px; Subtitle y1300; AudiraSignature seed danau-nyos-ep70; NyosCover Freeze ~4s + plate DANAU PEMBUNUH). Daftarkan NyosPreview/NyosFinal/NyosCover di src/Root.tsx; hapus handle '@audira' di src/scenes/news/PenggantiGibranWapres.tsx (blocker channel gate EP69). Lalu typecheck, npm run cover -- NyosPreview --episode=.., docs/SHOTLIST.md (format EP69) + PYTHONUTF8=1 npm run sfx, draft/THEME_CHECK.md, npm run draft -- NyosPreview, juri buta (maks 2 putaran), handover Sesi C.",
+      "snapshot": {
+        "episode": "EP70",
+        "topic": "Danau Nyos, Kamerun 1986: danau yang membunuh 1.746 orang dalam semalam (erupsi limnik CO2)",
+        "style": "TERRARIUM",
+        "memoryEpisode": "sejarah-negara-EP70",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T17:47:43.608Z",
+      "doing": "s3 selesai menulis kode film (belum pernah dirender): project/src/episode/{timeline.ts,parts.tsx,scenes.tsx,NyosFilm.tsx}; komposisi NyosPreview/NyosFinal (93,8 dtk) + Still NyosCover terdaftar di src/Root.tsx; tsc bersih untuk file episode; handle '@audira' dihapus dari src/scenes/news/PenggantiGibranWapres.tsx (cegah blocker channel gate).",
+      "files": [
+        "project/src/episode/timeline.ts",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/NyosFilm.tsx",
+        "project/src/Root.tsx",
+        "docs/STORYBOARD.md",
+        "docs/ART_DIRECTION.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Sesi B lanjutan (tahap 7–8): 1) still cek cepat NyosPreview di 4.2s,14s,25s,38s,54s,62s,70s,82s (npm run stills) → perbaiki framing/cahaya (jar ±60% lebar frame, kabut CO2 terbaca, desa+label terbaca, cut-face penampang terbaca; cek puff billboard tidak jadi kotak gelap oleh AO). 2) npm run cover -- NyosPreview --episode=.. (atau render Still NyosCover ke style/cover-topic.png), record_score stage cover. 3) Tulis docs/SHOTLIST.md (format EP69, Offset: 0, Total 93.8, outro 90.8–93.8) lalu PYTHONUTF8=1 npm run sfx. 4) draft/THEME_CHECK.md (G22). 5) npm run draft -- NyosPreview → record_score self lalu juri buta subagent (qa/jury.md) judge jury; maks 2 putaran; LOLOS ≥3.8 atau terbaik ≥3.5. 6) Handover ke Sesi C (newSession, grup FAKTADUNIA). JANGAN render final.",
+      "snapshot": {
+        "episode": "EP70",
+        "topic": "Danau Nyos, Kamerun 1986: danau yang membunuh 1.746 orang dalam semalam (erupsi limnik CO2)",
+        "style": "TERRARIUM",
+        "memoryEpisode": "sejarah-negara-EP70",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:07:27.732Z",
+      "doing": "s4 Sesi B: still cek r1-r3 (project/out/r1,r2,r3/_sheet.jpg) + perbaikan. SUDAH: (a) src/core/hud/Subtitle.tsx disalin dari EP69 (gap kata 0.42em; sebelumnya kata menempel). (b) parts.tsx: lapisan air atas/dasar + termoklin jadi OPAQUE (material transparent tidak masuk pass transmisi kaca → air tak terlihat), lakeDeep #1f5a4b emissive 0.55, top emissive 0.4; kaca thickness 0.08 + FrontSide; mesh efek (puff gas, kolom erupsi, jet air mancur) di FX_LAYER via ref fx; opacity puff gas 0.42; batu basal depan plakat dibuang. Hasil r2/r3: air biru + lapisan CO2 hijau + gelembung terbaca, merah karat 70s jalan, pipa 82s ok. (c) docs/SHOTLIST.md ditulis (18 baris, Offset 0, Total 93.8). (d) sfx/cues/auto.py TARGET_LUFS -27 (pelajaran EP69 G18c), PYTHONUTF8=1 npm run sfx OK: public/audio/sfx.wav -27.0 LUFS, 35 suara.",
+      "command": "cd project && node scripts/stills.mjs out/rN 14s,62s NyosPreview  (±1 menit/frame)",
+      "files": [
+        "project/src/episode/parts.tsx",
+        "project/src/core/hud/Subtitle.tsx",
+        "docs/SHOTLIST.md",
+        "project/sfx/cues/auto.py",
+        "project/public/audio/sfx.wav",
+        "project/out/r3/_sheet.jpg"
+      ],
+      "next": "Sisa Sesi B: 1) DUA BATU PUTIH/ABU MELAYANG di dalam toples dekat bahu (terlihat di 14s/70s/82s, posisi layar tetap relatif toples, bukan back-face kaca — FrontSide tidak menghilangkan). Cari sumbernya: uji matikan <Scatter/>, <Cork/>, bokeh Room, atau GLB lain satu per satu (still 1 frame 14s); kemungkinan refleksi/transmission dari boulder GLB atau envmap. 2) Pita putih tajam di lembah 62s (scene F, sisi kiri) — opacity puff 0.9→0.42 tidak mengubahnya, jadi kemungkinan bukan puff; uji matikan GasFlow / cek DOF (FX_LAYER dikecualikan dari depth). Label CHA terpotong tepi kanan 62s: geser target kamera shot F 58.2–67.46 sedikit ke +x. 3) Cover: npm run cover -- NyosPreview --episode=.. atau render Still NyosCover ke style/cover-topic.png, record_score stage cover. 4) draft/THEME_CHECK.md (format EP69). 5) npm run draft -- NyosPreview → record_score self + juri buta subagent (F:/AUDIRA-SKILL-MOTION/qa/jury.md) judge jury; maks 2 putaran; LOLOS ≥3.8 atau terbaik ≥3.5. 6) Handover ke Sesi C. JANGAN render final. Folder dipakai sesi lain: sentuh hanya EP70, jangan commit.",
+      "snapshot": {
+        "episode": "EP70",
+        "topic": "Danau Nyos, Kamerun 1986: danau yang membunuh 1.746 orang dalam semalam (erupsi limnik CO2)",
+        "style": "TERRARIUM",
+        "memoryEpisode": "sejarah-negara-EP70",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:10:27.208Z",
+      "doing": "s4 akhir: uji sumber dua batu melayang di toples (still 14s skala 0.4: project/out/t1, t2). Hasil: BUKAN <Scatter/> (dimatikan, batu tetap ada; Scatter sudah dipulihkan) dan BUKAN envMap kaca (glass envMapIntensity 0.12 ditambahkan di parts.tsx, batu tetap ada; boleh dibiarkan). Kandidat berikut: GLB di Village (clay-storage-pot, hand-lantern), Cork, bokeh Room (sphere low-poly), MonounJar, atau sampling transmission. Uji satu per satu di scenes.tsx World.",
+      "command": "cd project && node scripts/stills.mjs out/tN 14s NyosPreview 0.4",
+      "files": [
+        "project/src/episode/parts.tsx",
+        "project/src/episode/scenes.tsx"
+      ],
+      "next": "Sesi s5: lanjutkan langkah 1–6 handover sebelumnya (batu melayang → pita putih 62s + label CHA → cover → THEME_CHECK → npm run draft -- NyosPreview → skor self + juri buta → handover Sesi C). Pengguna (via sesi lain) minta EP70 dijalankan sampai video final; gerbang acc sebelum render final tetap berlaku.",
+      "snapshot": {
+        "episode": "EP70",
+        "topic": "Danau Nyos, Kamerun 1986: danau yang membunuh 1.746 orang dalam semalam (erupsi limnik CO2)",
+        "style": "TERRARIUM",
+        "memoryEpisode": "sejarah-negara-EP70",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:20:56.182Z",
+      "doing": "s5: render draf contact sheet (batu toples FIXED via env map kaca sendiri useJarEnv; pita putih 62s FIXED: puff GasFlow diangkat + tone-mapped; target shot F digeser, CHA masuk frame; cover-topic.png dirender, skor cover self 3.6)",
+      "command": "cd project && npm run draft -- NyosPreview --frames=5s,14s,28s,38.5s,53s,62s,75s,82s,92s",
+      "files": [
+        "project/src/episode/parts.tsx",
+        "project/src/episode/timeline.ts",
+        "style/cover-topic.png"
+      ],
+      "next": "Isi draft/THEME_CHECK.md (G22) dari contact sheet, record_score self, juri buta subagent (qa/jury.md) judge jury, maks 2 putaran; lalu handover newSession ke Sesi C.",
+      "snapshot": {
+        "episode": "EP70",
+        "topic": "Danau Nyos, Kamerun 1986: danau yang membunuh 1.746 orang dalam semalam (erupsi limnik CO2)",
+        "style": "TERRARIUM",
+        "memoryEpisode": "sejarah-negara-EP70",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T18:29:05.344Z",
+      "doing": "Sesi B s5 selesai sampai juri ronde 1. FIXED: batu toples (sumber = pantulan softbox oktagon HDRI studio di kaca; scene.environmentIntensity mengabaikan material.envMapIntensity → GlassJar kini pakai env map sendiri useJarEnv di parts.tsx), pita putih 62s (puff GasFlow setengah terbenam → diangkat + tone-mapped), target kamera shot F digeser. Cover style/cover-topic.png (self 3.6). draft/THEME_CHECK.md semua ya. Draf r1: draft/DRAFT_SHEET.jpg (frame 5,14,28,38.5,53,62,75,82,92 s), camera.json motion 5 (klip CHECK_66-84s.mp4). Skor self 4.0; JURI r1 = 3.33 PERLU POLES (lighting 3, material 2, depth 4, composition 3, motion 5, readability 3). Ceilings look.json: material 3 (surface detail rendah, 55% bidang datar), readability 4. Poles r2 SUDAH diedit tapi BELUM dirender/diverifikasi: label desa jadi 'DESA NYOS/KAM/CHA/SUBUM' (timeline.ts VILLAGES; cek label 0.62 lebar muat), toples Monoun jadi 2 lapisan air + garis termoklin (parts.tsx MonounJar).",
+      "files": [
+        "project/src/episode/parts.tsx",
+        "project/src/episode/timeline.ts",
+        "project/src/episode/NyosFilm.tsx",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/look.json",
+        "draft/camera.json",
+        "draft/jury_input.json",
+        "style/cover-topic.png"
+      ],
+      "next": "Sesi B ronde 2 (s6): (1) poles sisa keluhan juri: frame 14s/28s/75s gelap keruh → naikkan key/hemi look NIGHT di NyosFilm.tsx (LOOK) atau tambah key hangat ke toples; lapisan air hero (LakeSection) pita datar → beri tekstur/gradien (makeSpeckleTexture tersedia); kartu '100 M' masih tampil saat VO 'gelombang dua puluh lima meter' (38.5s) → ganti/tambah kartu 'GELOMBANG 25 M' di CARDS timeline.ts; kabut 62s agak terang. (2) verifikasi still: cd project && node scripts/stills.mjs out/r4 14s,62s,75s NyosPreview 0.4. (3) npm run draft -- NyosPreview --frames=5s,14s,28s,38.5s,53s,62s,75s,82s,92s --clip=off (klip auto timeout saat GPU dibagi; camera.json r1 = motion 5 tetap valid bila timeline kamera tak berubah besar; bila perlu render klip manual: node node_modules/@remotion/cli/remotion-cli.js render src/index.ts NyosPreview ../draft/CHECK_66-84s.mp4 --frames=1980-2520 --log=error --gl=angle --concurrency=2 --timeout=180000 '--props={\"audiraQuality\":\"light\"}' lalu node scripts/camera-audit.mjs ../draft/CHECK_66-84s.mp4 --json=../draft/camera.json). (4) record_score self + juri buta subagent (prompt qa/jury.md; jury_input di draft/jury_input.json) judge jury, ronde 2 = terakhir. LOLOS ≥3.8 tanpa aspek <3, atau terbaik ≥3.5 → diterima; <3.5 → pilih style baru (G21). Juga append_lesson failed TERRARIUM: self over-rate +1 di lighting/material/composition/readability. (5) handover newSession ke Sesi C (gerbang acc render final). JANGAN render final.",
+      "snapshot": {
+        "episode": "EP70",
+        "topic": "Danau Nyos, Kamerun 1986: danau yang membunuh 1.746 orang dalam semalam (erupsi limnik CO2)",
+        "style": "TERRARIUM",
+        "memoryEpisode": "sejarah-negara-EP70",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:06:58.911Z",
+      "doing": "Sesi B s6: poles r2 selesai + still r5 OK (kartu GELOMBANG 25 M 37.85s, look NIGHT lebih terang, tekstur air waterTexture, Monoun 2 lapisan opaque, label auto-fit, kabut lembah 0.24). Sedang render contact sheet r2.",
+      "command": "cd project && npm run draft -- NyosPreview --frames=5s,14s,28s,38.5s,53s,62s,75s,82s,92s --clip=off",
+      "files": [
+        "project/src/episode/parts.tsx",
+        "project/src/episode/timeline.ts",
+        "project/src/episode/NyosFilm.tsx",
+        "project/out/r5/_sheet.jpg"
+      ],
+      "next": "record_score self + juri buta r2 (terakhir), append_lesson failed TERRARIUM, lalu handover newSession ke Sesi C.",
+      "snapshot": {
+        "episode": "EP70",
+        "topic": "Danau Nyos, Kamerun 1986: danau yang membunuh 1.746 orang dalam semalam (erupsi limnik CO2)",
+        "style": "TERRARIUM",
+        "memoryEpisode": "sejarah-negara-EP70",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:09:43.444Z",
+      "doing": "Sesi B s6 selesai: TERRARIUM juri r2 = 3.33 (L3 M3 D4 C3 Mo5 R2), sama dengan r1 → batas 2 putaran, <3.5 → G21 ganti style ke DISASTERSIM (alt WORLDFORGE, ABYSSFORGE). Draf r2 di draft/DRAFT_SHEET.jpg (r1 di DRAFT_SHEET_r1.jpg). Lesson failed TERRARIUM sudah dicatat.",
+      "files": [
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/ART_DIRECTION.md",
+        "docs/ASSET_MANIFEST.md",
+        "style/STYLE_DECISION.md",
+        "project/src/episode/timeline.ts",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/NyosFilm.tsx",
+        "project/public/audio/vo-words.json",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Sesi baru: ulang tahap 3 (cover topik DISASTERSIM, style/STYLE_DECISION.md ditulis ulang: TERRARIUM ditolak juri 3.33) + tahap 4 (ART_DIRECTION, STORYBOARD, ASSET_MANIFEST dengan baris 'Style: DISASTERSIM'); naskah + VO 90.51 dtk + vo-words.json TETAP. Lalu tahap 7–8 ulang di kode (lanskap lembah skala nyata: semburan 100 m, gelombang 25 m menghantam tepian, sungai CO2 tebal 50 m menuruni lembah ke 4 desa harus TERLIHAT, bukan hanya kartu). Keluhan juri yang wajib diatasi: (a) G22: tiap frame contact sheet subjek = kata VO; frame diambil ≥0,4 dtk setelah kartu.from; label desa cocok kata VO (62 s = Subum); (b) tidak ada latar hitam kosong; (c) kaca/gelembung jangan plastik; (d) maks 1 kartu per adegan, signature tidak bertabrakan header (kelemahan DISASTERSIM). Juri buta maks 2 putaran untuk DISASTERSIM. Setelah LOLOS/≥3.5 → handover Sesi C (gerbang acc render final). JANGAN render final.",
+      "snapshot": {
+        "episode": "EP70",
+        "topic": "Danau Nyos, Kamerun 1986: danau yang membunuh 1.746 orang dalam semalam (erupsi limnik CO2)",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sejarah-negara-EP70",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    }
+  ],
+  "session": 7,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP70 Danau Nyos · s2",
+      "at": "2026-11-24T15:13:47.507Z"
+    },
+    {
+      "no": 3,
+      "title": "EP70 Danau Nyos · s3",
+      "at": "2026-11-24T15:53:06.351Z"
+    },
+    {
+      "no": 3,
+      "title": "EP70 Danau Nyos · s3",
+      "at": "2026-11-24T17:39:11.725Z"
+    },
+    {
+      "no": 4,
+      "title": "EP70 Danau Nyos · s4",
+      "at": "2026-11-24T17:47:43.608Z"
+    },
+    {
+      "no": 5,
+      "title": "EP70 Danau Nyos · s5",
+      "at": "2026-11-24T18:07:27.731Z"
+    },
+    {
+      "no": 6,
+      "title": "EP70 Danau Nyos · s6",
+      "at": "2026-11-24T18:29:05.343Z"
+    },
+    {
+      "no": 7,
+      "title": "EP70 Danau Nyos · s7",
+      "at": "2026-11-24T23:09:43.443Z"
+    }
+  ],
+  "handover": {
+    "at": "2026-11-24T23:09:43.444Z",
+    "doing": "Sesi B s6 selesai: TERRARIUM juri r2 = 3.33 (L3 M3 D4 C3 Mo5 R2), sama dengan r1 → batas 2 putaran, <3.5 → G21 ganti style ke DISASTERSIM (alt WORLDFORGE, ABYSSFORGE). Draf r2 di draft/DRAFT_SHEET.jpg (r1 di DRAFT_SHEET_r1.jpg). Lesson failed TERRARIUM sudah dicatat.",
+    "files": [
+      "docs/SCRIPT.md",
+      "docs/STORYBOARD.md",
+      "docs/ART_DIRECTION.md",
+      "docs/ASSET_MANIFEST.md",
+      "style/STYLE_DECISION.md",
+      "project/src/episode/timeline.ts",
+      "project/src/episode/parts.tsx",
+      "project/src/episode/NyosFilm.tsx",
+      "project/public/audio/vo-words.json",
+      "draft/DRAFT_SHEET.jpg",
+      "draft/THEME_CHECK.md"
+    ],
+    "next": "Sesi baru: ulang tahap 3 (cover topik DISASTERSIM, style/STYLE_DECISION.md ditulis ulang: TERRARIUM ditolak juri 3.33) + tahap 4 (ART_DIRECTION, STORYBOARD, ASSET_MANIFEST dengan baris 'Style: DISASTERSIM'); naskah + VO 90.51 dtk + vo-words.json TETAP. Lalu tahap 7–8 ulang di kode (lanskap lembah skala nyata: semburan 100 m, gelombang 25 m menghantam tepian, sungai CO2 tebal 50 m menuruni lembah ke 4 desa harus TERLIHAT, bukan hanya kartu). Keluhan juri yang wajib diatasi: (a) G22: tiap frame contact sheet subjek = kata VO; frame diambil ≥0,4 dtk setelah kartu.from; label desa cocok kata VO (62 s = Subum); (b) tidak ada latar hitam kosong; (c) kaca/gelembung jangan plastik; (d) maks 1 kartu per adegan, signature tidak bertabrakan header (kelemahan DISASTERSIM). Juri buta maks 2 putaran untuk DISASTERSIM. Setelah LOLOS/≥3.5 → handover Sesi C (gerbang acc render final). JANGAN render final.",
+    "snapshot": {
+      "episode": "EP70",
+      "topic": "Danau Nyos, Kamerun 1986: danau yang membunuh 1.746 orang dalam semalam (erupsi limnik CO2)",
+      "style": "DISASTERSIM",
+      "memoryEpisode": "sejarah-negara-EP70",
+      "currentStage": "draft",
+      "gates": {
+        "final": {
+          "approved": false,
+          "status": "pending"
+        }
+      },
+      "voPath": null,
+      "draftScores": [],
+      "finals": [],
+      "draftRounds": 0
+    }
+  }
+}

@@ -51,7 +51,10 @@ From `<EP>/project`: `node build-video.mjs && python mix.py`. Snapshots: `bash .
 - font-family must be a literal font name in CSS (never a CSS variable). Use Google font names; HyperFrames loads them.
 - canvasTex(w,h,draw) without the repeat argument is clamp-to-edge; never set tex.repeat on it.
 - InstancedMesh moved per frame needs `frustumCulled = false`.
-- Three.js r186: with scene.environment set, material.envMapIntensity is ignored; set `scene.environmentIntensity`. One NaN pixel blows up through UnrealBloomPass into black blocks: guard shaders, add a NaN-zeroing ShaderPass before bloom.
+- Three.js r186: with scene.environment set, material.envMapIntensity is ignored; set `scene.environmentIntensity`. One NaN pixel blows up through UnrealBloomPass into black blocks: guard shaders; `stage()` already adds a NaN-zeroing ShaderPass before bloom.
+- Light backgrounds (white, cream, paper, sky): `stage({ exp: 0.82–0.9 })` and `scene.environmentIntensity ≈ 0.25`, or ACES blows them out.
+- Cut flashes: at most ±0.14 s around the cut, peak ≤ 0.4, tinted to the style palette (never pure white through bloom), and no contact-sheet slot within 0.3 s of a cut.
+- Camera plan: each beat uses a different shot type from its neighbours (wide / macro / top-down / low side), the hero stays ≥ 50% of frame width under any info card, and s1 and s8 never share an angle.
 - A scaleY/clip outro must also start hidden (opacity 0 or clipped), or a line shows during the whole film.
 - Caption karaoke: word gap at least 0.4em, active-word bounce at most 1.04. With wide display fonts add `margin:0 .16em` to `.w`. Check a caption crop.
 - Numbers and facts on screen match the script exactly; panels only use facts from the script. Indonesian on-screen text, short (panels support, the 3D world carries the scene).

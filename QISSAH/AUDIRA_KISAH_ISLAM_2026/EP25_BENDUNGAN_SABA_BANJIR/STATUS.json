@@ -1,0 +1,124 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP25_BENDUNGAN_SABA_BANJIR",
+  "topic": "Judul Episode",
+  "createdAt": "2026-11-12T10:06:29.587Z",
+  "updatedAt": "2026-11-12T10:07:57.163Z",
+  "currentStage": "animation",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.587Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.587Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T10:06:29.587Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T10:06:29.587Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit (EP04 Standard)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.587Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:57.162Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-08T13:14:11.866Z",
+      "startedAt": "2026-11-08T13:14:11.866Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci + visual audit",
+      "gate": true,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:57.163Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        }
+      ],
+      "doneAt": "2026-11-08T13:14:18.041Z",
+      "startedAt": "2026-11-08T13:14:18.041Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:57.163Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-12T10:06:29.587Z",
+      "startedAt": "2026-11-12T10:06:29.587Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "ep25_bendungan_saba_banjir",
+    "style": "islamic-flat-documentary",
+    "wordCount": 202,
+    "estimatedDuration": {
+      "wordCount": 202,
+      "minSec": 83,
+      "maxSec": 91
+    },
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-12T10:07:57.163Z"
+}

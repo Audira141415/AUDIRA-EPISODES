@@ -1,0 +1,232 @@
+1
+00:00:00,100 --> 00:00:01,323
+Sembilan ratus dua puluh lima
+
+2
+00:00:01,343 --> 00:00:02,081
+skill.
+
+3
+00:00:02,101 --> 00:00:03,459
+Kalau semuanya dibaca Claude
+
+4
+00:00:03,479 --> 00:00:04,651
+sekaligus, ingatannya penuh
+
+5
+00:00:04,671 --> 00:00:05,592
+sebelum mulai kerja.
+
+6
+00:00:05,612 --> 00:00:07,186
+Jadi kita pakai
+
+7
+00:00:07,206 --> 00:00:09,106
+audira-skill-mesh, sebuah
+
+8
+00:00:09,126 --> 00:00:11,156
+server MCP.
+
+9
+00:00:11,176 --> 00:00:13,773
+MCP itu colokan standar,
+
+10
+00:00:13,793 --> 00:00:15,412
+supaya Claude bisa memanggil
+
+11
+00:00:15,432 --> 00:00:16,366
+alat dari luar.
+
+12
+00:00:16,386 --> 00:00:17,418
+Claude tinggal mencari,
+
+13
+00:00:17,438 --> 00:00:18,285
+lalu memuat skill yang
+
+14
+00:00:18,305 --> 00:00:19,661
+dibutuhkan saja.
+
+15
+00:00:19,681 --> 00:00:20,493
+Mulai.
+
+16
+00:00:20,513 --> 00:00:22,830
+Pastikan Git dan Node.js sudah
+
+17
+00:00:22,850 --> 00:00:23,803
+ada.
+
+18
+00:00:23,823 --> 00:00:24,670
+Buka PowerShell,
+
+19
+00:00:24,690 --> 00:00:26,279
+masuk ke folder pengguna,
+
+20
+00:00:26,299 --> 00:00:27,935
+lalu clone repositorinya dari
+
+21
+00:00:27,955 --> 00:00:29,065
+GitHub.
+
+22
+00:00:29,085 --> 00:00:30,319
+Ukurannya sekitar seratus
+
+23
+00:00:30,339 --> 00:00:31,294
+empat puluh mega.
+
+24
+00:00:31,314 --> 00:00:35,687
+Masuk ke folder mcp-server,
+
+25
+00:00:35,707 --> 00:00:39,196
+lalu jalankan npm install.
+
+26
+00:00:39,216 --> 00:00:40,264
+Jangan dilewati.
+
+27
+00:00:40,284 --> 00:00:40,992
+Tanpa langkah ini,
+
+28
+00:00:41,012 --> 00:00:42,292
+servernya gagal menyala.
+
+29
+00:00:42,312 --> 00:00:44,419
+Sekarang daftarkan ke Claude.
+
+30
+00:00:44,439 --> 00:00:45,971
+Perintahnya satu baris:
+
+31
+00:00:45,991 --> 00:00:48,533
+claude mcp add,
+
+32
+00:00:48,553 --> 00:00:50,610
+lingkup user supaya berlaku di
+
+33
+00:00:50,630 --> 00:00:51,607
+semua proyek,
+
+34
+00:00:51,627 --> 00:00:54,337
+lalu nama server dan alamat
+
+35
+00:00:54,357 --> 00:00:54,932
+file-nya.
+
+36
+00:00:54,952 --> 00:00:56,975
+Bagian minus e menyimpan kunci
+
+37
+00:00:56,995 --> 00:00:58,925
+Cartesia, khusus untuk membuat
+
+38
+00:00:58,945 --> 00:00:59,622
+suara.
+
+39
+00:00:59,642 --> 00:01:00,164
+Di PowerShell,
+
+40
+00:01:00,184 --> 00:01:01,523
+taruh paling belakang.
+
+41
+00:01:01,543 --> 00:01:02,627
+Ditaruh di tengah,
+
+42
+00:01:02,647 --> 00:01:03,701
+perintahnya gagal,
+
+43
+00:01:03,721 --> 00:01:05,109
+dan itu sudah kami coba.
+
+44
+00:01:05,129 --> 00:01:06,232
+Tidak butuh suara?
+
+45
+00:01:06,252 --> 00:01:07,541
+Hapus bagian itu.
+
+46
+00:01:07,561 --> 00:01:08,825
+Dan jangan perlihatkan kuncimu
+
+47
+00:01:08,845 --> 00:01:10,087
+saat merekam layar.
+
+48
+00:01:10,107 --> 00:01:12,674
+Cek dengan claude mcp list.
+
+49
+00:01:12,694 --> 00:01:14,282
+Harus tertulis connected.
+
+50
+00:01:14,302 --> 00:01:15,552
+Lalu buka sesi baru,
+
+51
+00:01:15,572 --> 00:01:16,326
+dan minta:
+
+52
+00:01:16,346 --> 00:01:18,744
+jalankan audira_status.
+
+53
+00:01:18,764 --> 00:01:19,936
+Kalau jawabannya online,
+
+54
+00:01:19,956 --> 00:01:20,957
+dengan sembilan ratus skill
+
+55
+00:01:20,977 --> 00:01:23,171
+lebih, mesh-mu sudah hidup.
+
+56
+00:01:23,191 --> 00:01:24,982
+Dua-duanya sudah terpasang.
+
+57
+00:01:25,002 --> 00:01:25,679
+Di episode tiga,
+
+58
+00:01:25,699 --> 00:01:27,446
+kita pakai sampai jadi film.
+

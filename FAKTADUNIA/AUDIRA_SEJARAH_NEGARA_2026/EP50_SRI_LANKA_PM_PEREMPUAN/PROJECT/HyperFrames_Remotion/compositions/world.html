@@ -1,0 +1,142 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#1c1612}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.05;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0) 42%,rgba(0,0,0,0) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'IBM Plex Mono',Consolas,monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#E8D9B8;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.pre{position:absolute;left:-2000px;top:0;opacity:0}
+.p{transform-origin:0% 0%}
+.cd{position:relative;background:rgba(242,239,232,.95);border-radius:6px;box-shadow:0 14px 34px rgba(0,0,0,.5)}
+.kk{display:inline-flex;align-items:center;gap:16px;font-family:'IBM Plex Mono',Consolas,monospace;font-weight:600;font-size:24px;letter-spacing:.1em;color:#F2EFE8;margin-bottom:14px;padding:7px 18px 7px 7px;background:rgba(20,15,11,.78);border-radius:6px;border-bottom:4px solid #D4A63A}
+.kk i{font-style:normal;background:#D4A63A;color:#2B2622;padding:3px 10px;border-radius:3px}
+.h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;font-size:90px;line-height:.92;letter-spacing:.005em;color:#FBF6EC;text-shadow:0 6px 26px rgba(0,0,0,.75)}
+.h1 em{font-style:normal;color:#E8B954}
+.sub{display:flex;align-items:center;gap:18px;margin-top:20px}
+.yr{font-style:normal;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:62px;line-height:1;color:#2B2622;background:linear-gradient(135deg,#f3d27e,#c8922e);padding:10px 22px 8px;border-radius:6px;transform:rotate(-3deg);box-shadow:0 10px 26px rgba(0,0,0,.5)}
+.sl{display:inline-block;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:36px;letter-spacing:.12em;color:#F2EFE8;padding:8px 18px;border:3px solid #8D153A;background:rgba(141,21,58,.55);border-radius:6px}
+.row{flex-direction:column;margin-top:12px;padding:10px 24px 12px 24px;border-left:12px solid #D4A63A;max-width:920px;width:max-content;box-sizing:border-box}
+.row b{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;font-size:60px;line-height:1.02;color:#2B2622}
+.row span{display:block;font-family:'IBM Plex Mono',Consolas,monospace;font-weight:500;font-size:25px;line-height:1.32;color:#6B4F3A;max-width:840px}
+.row.dt b{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:58px;letter-spacing:-.01em}
+.row.gd b{color:#9A6A12}
+.row.mr{border-left-color:#8D153A}
+.row.gy{border-left-color:#7d7369}
+.row.sm b{font-size:48px}
+.row.nm b{font-size:64px}
+.terms{display:flex;gap:12px;padding:12px;background:rgba(20,15,11,.78)!important;width:max-content;border-radius:6px}
+.terms i{font-style:normal;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:40px;color:#2B2622;background:linear-gradient(135deg,#f3d27e,#c8922e);padding:10px 16px 8px;border-radius:4px}
+.q{margin-top:20px;padding:16px 26px 16px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;font-size:62px;line-height:1.04;color:#2B2622;border-left:12px solid #D4A63A;max-width:880px}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="85.63" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI KINTSUGI &middot; BUKAN POTRET TOKOH</div>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,700&family=IBM+Plex+Mono:wght@500;600&display=block">
+<div class="pre"><span style="font-family:'Cormorant Garamond',serif;font-weight:700">STATESWOMAN</span><span style="font-family:'Cormorant Garamond',serif;font-weight:600">Sirimavo</span><span style="font-family:'Cormorant Garamond',serif;font-weight:700;font-style:italic">janda</span><span style="font-family:'IBM Plex Mono',monospace;font-weight:500">1960</span><span style="font-family:'IBM Plex Mono',monospace;font-weight:600">AUDIRA</span></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2:Namanya">
+  <div class="kk"><i>EP 50</i>FAKTA SEJARAH NEGARA</div>
+  <div class="h1">PM PEREMPUAN<br><em>PERTAMA</em> DI DUNIA</div>
+  <div class="sub"><i class="yr" data-at="s1:1960" data-fx="stampc">1960</i><span class="sl" data-at="s1:Sri" data-fx="card">SRI LANKA</span></div>
+</div>
+<div class="p" data-in="s2:Namanya" data-out="s3">
+  <div class="kk"><i>01</i>CEYLON</div>
+  <div class="cd row nm" data-at="s2:Sirimavo" data-fx="card"><b>Sirimavo Bandaranaike</b><span>1916–2000 · istri Perdana Menteri Ceylon</span></div>
+  <div class="cd row mr" data-at="s2:nama" data-fx="card"><b>CEYLON = SRI LANKA</b><span>nama lama negara pulau ini</span></div>
+  <div class="cd row " data-at="s2:penasihat" data-fx="card"><b>PENASIHAT INFORMAL</b><span>fokus membantu perempuan di desa</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="kk"><i>02</i>DUKA</div>
+  <div class="cd row dt" data-at="s3:September" data-fx="card"><b>25 SEPTEMBER 1959</b><span>suaminya, sang perdana menteri, ditembak dan meninggal</span></div>
+  <div class="cd row gy" data-at="s3:goyah" data-fx="card"><b>PARTAI GOYAH</b><span>Sirimavo dibujuk untuk memimpin</span></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="kk"><i>03</i>DILANTIK</div>
+  <div class="cd row dt gd" data-at="s4:Juli" data-fx="card"><b>21 JULI 1960</b><span>partainya menang telak</span></div>
+  <div class="cd row nm" data-at="s4:pertama" data-fx="card"><b>PM PEREMPUAN PERTAMA DI DUNIA</b></div>
+  <div class="cd row sm" data-at="s4:pertahanan" data-fx="card"><b>+ MENTERI PERTAHANAN &amp; LUAR NEGERI</b></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="kk"><i>04</i>KATA BARU</div>
+  <div class="cd row sm" data-at="s5:Pers" data-fx="card"><b>PERS INGGRIS BINGUNG</b><span>statesman = negarawan laki-laki</span></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="kk"><i>05</i>TIGA KALI PM</div>
+  <div class="terms" data-at="s6:tiga" data-fx="card"><i>1960–65</i><i class="t2" data-at="s6:tiga+0.8" data-fx="pop">1970–77</i><i class="t3" data-at="s6:2000-0.3" data-fx="pop">1994–2000</i></div>
+  <div class="cd row dt mr" data-at="s6:1972" data-fx="card"><b>MEI 1972</b><span>Ceylon resmi menjadi Republik Sri Lanka</span></div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="kk"><i>06</i>IBU DAN PUTRI</div>
+  <div class="cd row sm" data-at="s7:Chandrika" data-fx="card"><b>1994 · CHANDRIKA KUMARATUNGA</b><span>presiden perempuan pertama Sri Lanka</span></div>
+  <div class="cd row sm gd" data-at="s7:mengangkat" data-fx="card"><b>MENGANGKAT IBUNYA JADI PM</b></div>
+  <div class="cd row dt gy" data-at="s7:Oktober" data-fx="card"><b>10 OKTOBER 2000</b><span>Sirimavo wafat, setelah memberi suara di pemilu</span></div>
+</div>
+<div class="p" data-in="s8" data-out="s8:Menurut">
+  <div class="kk"><i>07</i>KINTSUGI</div>
+  <div class="cd row nm" data-at="s8:Dari" data-fx="card"><b>DARI DUKA, MENJADI SEJARAH DUNIA</b></div>
+</div>
+<div class="p" data-in="s8:Menurut" data-out="@END">
+  <div class="cd q">Siapa perempuan pemimpin yang paling menginspirasimu? Tulis di komentar!</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 50</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":9.054,"s2":9.214,"s2e":19.464,"s3":19.624,"s3e":29.659,"s4":29.819,"s4e":40.361,"s5":40.521,"s5e":49.539,"s6":49.699,"s6e":59.588,"s7":59.748,"s7e":73.977,"s8":74.137,"s8e":82.627,"end":82.627,"dur":85.63,"outro":82.877},AT={"s1:kata":1.324,"s1:1960":2.602,"s1:Sri":8.497,"s2:Namanya":9.555,"s2:Sirimavo":9.942,"s2:Ceylon":13.007,"s2:nama":13.626,"s2:penasihat":15.669,"s2:desa":19.123,"s3:September":20.45,"s3:1959":21.301,"s3:ditembak":23.778,"s3:goyah":25.758,"s3:dibujuk":28.096,"s4:Juli":30.562,"s4:1960":31.259,"s4:menang":33.379,"s4:dilantik":34.339,"s4:pertama":37.079,"s4:pertahanan":38.844,"s5:Lawan":40.521,"s5:janda":42.162,"s5:Pers":43.295,"s5:statesman":45.568,"s5:berarti":46.017,"s5:baru":48.286,"s5:stateswoman":48.967,"s6:tiga":51.873,"s6:2000":53.282,"s6:keduanya":55.098,"s6:1972":55.965,"s6:Republik":58.457,"s7:1994":60.035,"s7:Chandrika":62.264,"s7:presiden":64.246,"s7:mengangkat":66.97,"s7:ibunya":67.357,"s7:Oktober":70.742,"s7:suara":72.661,"s8:Dari":74.137,"s8:sejarah":75.189,"s8:Menurut":76.325,"s8:AUDIRA":80.336,"s6:tiga+0.8":52.673,"s6:2000-0.3":52.982},DUR=85.63,OUT=82.877;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ card:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:e.classList.contains('sl')?'inline-block':'flex'},t);tl.fromTo(e,{opacity:0,y:18},{opacity:1,y:0,duration:.4,ease:'power3.out',immediateRender:false},t);},
+ stampc:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:'inline-block'},t);tl.fromTo(e,{scale:1.7,opacity:0,rotation:-9},{scale:1,opacity:1,rotation:-3,duration:.22,ease:'power4.in',immediateRender:false},t);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{opacity:0,y:-26},{opacity:1,y:0,duration:.38,ease:'power3.out'},a-.02),POUT=(tl,p,b)=>tl.to(p,{opacity:0,y:-22,duration:.22,ease:'power2.in'},b-.24);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP50_SRI_LANKA_PM_PEREMPUAN")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

@@ -1,0 +1,616 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP03_KENAPA_ES_MENGAPUNG",
+  "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+  "createdAt": "2026-11-23T14:16:30.124Z",
+  "updatedAt": "2026-11-24T09:28:50.285Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:18:15.062Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:16:30.125Z",
+      "startedAt": "2026-11-23T14:16:30.125Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:18:15.062Z",
+          "text": "sync: riset ada"
+        },
+        {
+          "at": "2026-11-23T14:22:17.192Z",
+          "text": "19 fakta (10 HIGH). Gunung es: 'hampir 9 dari 10' di bawah air (USCG 7/8); massa jenis air tampil '≈1 g/cm3'."
+        }
+      ],
+      "doneAt": "2026-11-23T14:22:17.192Z",
+      "startedAt": "2026-11-23T14:16:30.080Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:15:35.940Z",
+          "text": "AI memilih CAIR (Remotion 2D, look cairan+kaca, F:/AUDIRA-2D-SKILL-MOTION). Alt ditolak: BLUEPRINT, TUBUH, R3F. Cover topik dari frame hook setelah VO."
+        },
+        {
+          "at": "2026-11-23T15:16:33.265Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "startedAt": "2026-11-23T15:15:35.940Z",
+      "doneAt": "2026-11-23T15:15:35.806Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T18:19:37.737Z",
+          "text": "docs/SCRIPT.md (203 kata, 6 babak, koreksi wajib dipatuhi), STORYBOARD.md (9 scene + outro, kolom Audio), ART_DIRECTION.md, ASSET_MANIFEST.md."
+        }
+      ],
+      "doneAt": "2026-11-23T18:19:37.737Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:16:33.265Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-23T15:15:18.617Z",
+      "startedAt": "2026-11-23T15:15:18.617Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:16:33.265Z",
+          "text": "sync: VO sudah dibuat"
+        },
+        {
+          "at": "2026-11-23T18:19:33.536Z",
+          "text": "VO Cartesia 91,95 dtk → jeda >0,38 dtk dirapatkan (audio/tighten.py) → audio/vo.wav 83,9 dtk, vo-words.json digeser. Raw: vo_raw.wav, vo-words_raw.json. Docs tahap 4 (ART_DIRECTION, SCRIPT, STORYBOARD, ASSET_MANIFEST) selesai."
+        }
+      ],
+      "doneAt": "2026-11-23T18:19:33.536Z",
+      "startedAt": "2026-11-23T15:16:32.161Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T18:43:40.666Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-23T18:32:06.562Z",
+      "startedAt": "2026-11-23T18:32:06.562Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T18:43:40.666Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        }
+      ],
+      "doneAt": "2026-11-23T18:32:06.564Z",
+      "startedAt": "2026-11-23T18:32:06.564Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T07:28:25.053Z",
+      "notes": [
+        {
+          "at": "2026-11-24T07:28:25.053Z",
+          "text": "Acc pengguna 2026-11-24: \"Gas render final\""
+        },
+        {
+          "at": "2026-11-24T07:39:03.222Z",
+          "text": "FINAL_EP03_KENAPA_ES_MENGAPUNG.mp4 1080x1920@60 87.2s, -13.6 LUFS TP -1.9, verify VALID; render s4 dengan --public-dir proyek (s3 gagal 404). Juri final 3.17."
+        }
+      ],
+      "startedAt": "2026-11-24T07:28:25.053Z",
+      "doneAt": "2026-11-24T07:39:03.222Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:35:21.077Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T07:31:06.280Z",
+      "startedAt": "2026-11-24T07:31:06.280Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sains-anak-EP03",
+    "shortTitle": "Es Mengapung",
+    "style": "CAIR",
+    "engine": "remotion",
+    "wordCount": 203,
+    "voSeconds": 83.9,
+    "filmEnd": 84.2,
+    "totalSeconds": 87.2,
+    "estimatedDuration": {
+      "wordCount": 203,
+      "minSec": 81,
+      "maxSec": 90
+    }
+  },
+  "syncedAt": "2026-11-24T07:35:21.077Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-23T15:16:05.869Z",
+      "doing": "VO Cartesia dari audio/vo.txt (203 kata) → audio/vo.wav + audio/vo-words.json",
+      "files": [
+        "audio/vo.txt",
+        "project/ (salinan kerangka EP13 PLTA 2D)",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Tulis docs (ART_DIRECTION, SCRIPT, STORYBOARD, ASSET_MANIFEST) dengan waktu VO, lalu kode project/src/episodes/es (look CAIR)",
+      "snapshot": {
+        "episode": "EP03_KENAPA_ES_MENGAPUNG",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "CAIR",
+        "memoryEpisode": "sains-anak-EP03",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:19:46.422Z",
+      "doing": "Tahap 7: tulis kode project/src/episodes/es/ (look CAIR) — belum dimulai",
+      "files": [
+        "docs/STORYBOARD.md",
+        "docs/SCRIPT.md",
+        "audio/vo.wav",
+        "audio/vo-words.json",
+        "project/src/brand/channel.json",
+        "project/sfx/make_sfx.py (masih isi EP13, ganti cue)",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Salin audio/vo.wav → project/public/audio/vo.wav; buat project/src/episodes/es/{index.tsx,Es.tsx,words.json(=audio/vo-words.json)} pola EP13 PLTA (F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP13_CARA_KERJA_PLTA/project/src/episodes/plta) tapi import dari styles/cair/kit (Shots, Shot, MeshBg, Glass, Chip, Headline, Caption, tumblerPath, wave, GlassRect, Blob, Goo, hexPts). 9 scene sesuai docs/STORYBOARD.md, cut 6.9/18.8/27.0/35.4/49.7/59.4/74.8/79.1, END 84.2, outro 3. Caption top 1330. Komposisi EsEP03 (60fps), EsEP03-Draft (30fps), EsEP03-Cover. stills.mjs → draft/contact-sheet.jpg + style/cover-topic.png. sfx/make_sfx.py → audio/sfx.wav. Juri self + buta, THEME_CHECK, lalu gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP03_KENAPA_ES_MENGAPUNG",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "CAIR",
+        "memoryEpisode": "sains-anak-EP03",
+        "currentStage": "animation",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP03_KENAPA_ES_MENGAPUNG/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:28:27.118Z",
+      "doing": "Tahap 7: scene code project/src/episodes/es/Es.tsx (9 shot CAIR) + index.tsx + stills.mjs SUDAH DITULIS, tsc bersih. vo.wav sudah di project/public/audio. Belum dirender sama sekali.",
+      "files": [
+        "project/src/episodes/es/Es.tsx",
+        "project/src/episodes/es/index.tsx",
+        "project/stills.mjs",
+        "project/sfx/make_sfx.py"
+      ],
+      "next": "1) node stills.mjs ../draft/stills 1.0,4.6,12.5,24.6,33.0,42.0,46.0,53.0,58.5,66.0,72.5,77.6,82.8 ../style/cover-topic.png (TEMP=F:) lalu cek visual & perbaiki; 2) susun draft/contact-sheet.jpg (ffmpeg tile, lebar ±1200); 3) tulis ulang project/sfx/make_sfx.py dengan cue kolom Audio STORYBOARD, durasi 87.2 → audio/sfx.wav; 4) THEME_CHECK.md, juri self + buta (record_score CAIR, sains-anak-EP03); 5) gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP03_KENAPA_ES_MENGAPUNG",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "CAIR",
+        "memoryEpisode": "sains-anak-EP03",
+        "currentStage": "animation",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP03_KENAPA_ES_MENGAPUNG/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:02:53.705Z",
+      "doing": "Tahap 7 SELESAI: project/src/episodes/es/Es.tsx (9 shot CAIR, sudah dipoles: neraca S3 diturunkan, kisi S5 lebih terang, headline S8 until 75.85), index.tsx (EsEP03/-Draft/-Cover), stills.mjs. SFX: project/sfx/make_sfx.py ditulis ulang → audio/sfx.wav + project/public/audio/sfx.wav (87.2 dtk). Tahap 8 sebagian: draft/stills (14 frame 1.0…82.8), draft/contact-sheet.jpg (1224×614, cek visual OK), style/cover-topic.png.",
+      "files": [
+        "project/src/episodes/es/Es.tsx",
+        "project/src/episodes/es/index.tsx",
+        "project/stills.mjs",
+        "project/sfx/make_sfx.py",
+        "audio/sfx.wav",
+        "draft/contact-sheet.jpg",
+        "style/cover-topic.png",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "1) Isi draft/THEME_CHECK.md (14 baris, detik stills: 1.0 batu tenggelam, 5.8 es mengapung, 15.6 lilin padat tenggelam, 25.6 massa jenis neraca, 30.5 memuai +9% botol, 34.9 pipa pecah, 38.0 molekul berdesakan, 46.0 kisi segi enam berongga, 51.0 mitos gelembung, 58.5 galium bismut, 68.8 danau 4°C ikan, 72.5 danau membeku dari dasar, 77.6 gunung es 9 dari 10, 82.8 gelas AUDIRA + Bumi + @AudiraSains). 2) Juri self lalu juri buta (subagent, qa/jury.md) → audira_style_memory record_score style CAIR episode sains-anak-EP03 stage draft (jalankan npm run audit:visual di F:/AUDIRA-2D-SKILL-MOTION bila perlu ceilings). 3) Cek G18c (VO ≥12 LU di atas SFX). 4) BERHENTI di gerbang tahap 9: tunjukkan contact sheet, skor, durasi 87.2 dtk, G18c; tunggu acc. Setelah acc: npm run render:final dari F:/AUDIRA-2D-SKILL-MOTION --entry=<EP03>/project/src/episodes/es/index.tsx --comp=EsEP03 --vo --sfx --concurrency=2 background, TEMP=F:/temp; lalu QA + tahap 10.",
+      "snapshot": {
+        "episode": "EP03_KENAPA_ES_MENGAPUNG",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "CAIR",
+        "memoryEpisode": "sains-anak-EP03",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP03_KENAPA_ES_MENGAPUNG/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:05:57.453Z",
+      "doing": "Tahap 8: THEME_CHECK.md terisi 14 baris semua ya; self score CAIR draft 3.83 tercatat; G18c lolos (VO -16.4, SFX ducked -32.1, gap 15.7 LU, trim SFX -4.1 dB); juri buta subagent berjalan",
+      "files": [
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Catat skor juri (record_score judge jury). Bila LOLOS: gerbang tahap 9, tunjukkan contact sheet + skor + 87.2 dtk + G18c, tunggu acc. Setelah acc: render:final dari F:/AUDIRA-2D-SKILL-MOTION (TEMP=F:/temp) background.",
+      "snapshot": {
+        "episode": "EP03_KENAPA_ES_MENGAPUNG",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "CAIR",
+        "memoryEpisode": "sains-anak-EP03",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP03_KENAPA_ES_MENGAPUNG/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:11:04.409Z",
+      "doing": "Tahap 8 putaran 2: juri buta r1 = 3.5 PERLU POLES (tercatat). Es.tsx dipoles (DepthFG bokeh+vignette, bayangan esSoft, label besar, headline top 268, S4 botol hero + material pipa/kaca, S6 mitos 2 baris + galium cair/padat). Stills + contact sheet + cover dirender ulang. Juri buta r2 berjalan. Backup r1: scratchpad Es.round1.tsx. G18c lolos 15.7 LU.",
+      "files": [
+        "project/src/episodes/es/Es.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/stills",
+        "style/cover-topic.png",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Catat skor juri r2 (integer). Bila LOLOS atau terbaik >= 3.5 setelah 2 putaran: gerbang tahap 9 (contact sheet, skor, 87.2 dtk, G18c), tunggu acc.",
+      "snapshot": {
+        "episode": "EP03_KENAPA_ES_MENGAPUNG",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "CAIR",
+        "memoryEpisode": "sains-anak-EP03",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP03_KENAPA_ES_MENGAPUNG/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:12:55.782Z",
+      "doing": "Gerbang tahap 9: juri buta 2 putaran (3.5, 3.5) → diterima 3.50; bug SVG text fill diperbaiki; G18c lolos 15.7 LU; NOTES.md + lesson tercatat. MENUNGGU acc pengguna untuk render final.",
+      "files": [
+        "project/src/episodes/es/Es.tsx",
+        "draft/contact-sheet.jpg",
+        "NOTES.md"
+      ],
+      "next": "Setelah acc pengguna: update stage final approved true; dari F:/AUDIRA-2D-SKILL-MOTION (TEMP=F:/temp): npm run render:final -- --entry=F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP03_KENAPA_ES_MENGAPUNG/project/src/episodes/es/index.tsx --comp=EsEP03 --vo=<EP03>/project/public/audio/vo.wav --sfx=<EP03>/project/public/audio/sfx.wav --concurrency=2 (background); QA −14 LUFS/TP<−1, metadata, npm run verify; tahap 10.",
+      "snapshot": {
+        "episode": "EP03_KENAPA_ES_MENGAPUNG",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "CAIR",
+        "memoryEpisode": "sains-anak-EP03",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP03_KENAPA_ES_MENGAPUNG/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:28:40.049Z",
+      "doing": "Render final EP03 berjalan (acc pengguna ✓), log F:/temp/ep03-render.log",
+      "command": "cd F:/AUDIRA-2D-SKILL-MOTION; TEMP=F:/temp npm run render:final -- --entry=<EP03>/project/src/episodes/es/index.tsx --comp=EsEP03 --out=<EP03>/FINAL_EP03_KENAPA_ES_MENGAPUNG.mp4 --vo=<EP03>/project/public/audio/vo.wav --sfx=<EP03>/project/public/audio/sfx.wav --title=\"Kenapa Es Mengapung?\" --slug=kenapa-es-mengapung --ep=EP03 --date=2026-11-24 --concurrency=2",
+      "files": [
+        "FINAL_EP03_KENAPA_ES_MENGAPUNG.mp4"
+      ],
+      "next": "QA final (ffprobe 1080x1920@60, ebur128 -14 LUFS/TP<-1, metadata, npm run verify), record_score final, lalu tahap 10 (SOCIAL_CAPTIONS + validator, NOTES, lesson, 3 scheduled task).",
+      "snapshot": {
+        "episode": "EP03_KENAPA_ES_MENGAPUNG",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "CAIR",
+        "memoryEpisode": "sains-anak-EP03",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP03_KENAPA_ES_MENGAPUNG/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:29:02.030Z",
+      "doing": "Render final EP03 berjalan di background sesi s3 (acc pengguna ✓ 2026-11-24 \"Gas render final\"); log F:/temp/ep03-render.log; output FINAL_EP03_KENAPA_ES_MENGAPUNG.mp4 di folder episode. SOCIAL_CAPTIONS.md masih template.",
+      "command": "cd F:/AUDIRA-2D-SKILL-MOTION; TEMP=F:/temp npm run render:final -- --entry=<EP03>/project/src/episodes/es/index.tsx --comp=EsEP03 --out=<EP03>/FINAL_EP03_KENAPA_ES_MENGAPUNG.mp4 --vo=<EP03>/project/public/audio/vo.wav --sfx=<EP03>/project/public/audio/sfx.wav --title=\"Kenapa Es Mengapung?\" --slug=kenapa-es-mengapung --ep=EP03 --date=2026-11-24 --concurrency=2",
+      "files": [
+        "FINAL_EP03_KENAPA_ES_MENGAPUNG.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md"
+      ],
+      "next": "Tunggu render selesai (cek tail F:/temp/ep03-render.log: baris \"final: ...\" dan EXIT). Jangan render ulang kecuali gagal. QA: ffprobe 1080x1920@60 ~87.2s, ebur128 -14 LUFS TP<-1, metadata ffprobe, npm run verify -- <FINAL>, record_score final juri. Tahap 10: isi SOCIAL_CAPTIONS.md 6 platform dari audio/vo.txt (fakta: hampir 9 dari 10, ≈1 g/cm³, es 0,917, +9%, ≈4 °C; handle @AudiraSains) + jadwal WIB + label AI, validasi audira_validate_social_captions, tampilkan di chat; NOTES.md; append_lesson; 3 scheduled task review-kenapa-es-mengapung-24h/-72h/-7d (tanya jam upload).",
+      "snapshot": {
+        "episode": "EP03_KENAPA_ES_MENGAPUNG",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "CAIR",
+        "memoryEpisode": "sains-anak-EP03",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP03_KENAPA_ES_MENGAPUNG/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:32:01.579Z",
+      "doing": "s4: menunggu render final (log F:/temp/ep03-render.log). SOCIAL_CAPTIONS.md sudah terisi + lolos validator; SUBTITLES.srt dibuat.",
+      "files": [
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt",
+        "FINAL_EP03_KENAPA_ES_MENGAPUNG.mp4"
+      ],
+      "next": "Setelah EXIT 0: cek font judul (render log 404 Sora-Var.ttf karena render:final jalan dari root skill tanpa public dir proyek) dengan membandingkan frame MP4 vs draft/stills. Lalu QA ffprobe/ebur128/metadata/verify, record_score final juri, NOTES.md, append_lesson, scheduled tasks.",
+      "snapshot": {
+        "episode": "EP03_KENAPA_ES_MENGAPUNG",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "CAIR",
+        "memoryEpisode": "sains-anak-EP03",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP03_KENAPA_ES_MENGAPUNG/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:32:32.329Z",
+      "doing": "Render final EP03 GAGAL (exit 1): \"Error loading image with src: http://localhost:3000/public/brand/stacked-reversed.svg\" 404. render:final di F:/AUDIRA-2D-SKILL-MOTION memakai public dir proyek 2D, bukan EP03/project/public (stills.mjs pakai publicDir EP03). Tidak ada FINAL mp4.",
+      "command": "lihat handover sebelumnya; log F:/temp/ep03-render.log",
+      "next": "Perbaiki: cek apakah render-final.mjs punya opsi --public-dir; bila tidak, salin aset brand yang dipakai (EP03/project/public/brand/*) ke tempat yang dibaca render, atau tambah --public-dir. Jangan ubah perilaku script bersama tanpa alasan; cara aman: jalankan ulang dengan public dir EP03. Lalu render ulang (background, TEMP=F:/temp), QA, tahap 10.",
+      "snapshot": {
+        "episode": "EP03_KENAPA_ES_MENGAPUNG",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "CAIR",
+        "memoryEpisode": "sains-anak-EP03",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP03_KENAPA_ES_MENGAPUNG/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:33:27.624Z",
+      "doing": "s4: render final ulang (render s3 gagal: 404 brand/stacked-reversed.svg karena public dir root skill). Pakai salinan script F:/temp/claude/4b963ae6b9cd5ff7/3a9063e2-8b49-4148-ae7f-a081a49ad45a/scratchpad/render-final-ep03.mjs (ROOT tetap + --public-dir=<EP03>/project/public). Log F:/temp/ep03-render-s4.log (baris EXIT).",
+      "command": "cd F:/AUDIRA-2D-SKILL-MOTION; node <scratchpad>/render-final-ep03.mjs --entry=<EP03>/project/src/episodes/es/index.tsx --comp=EsEP03 --out=<EP03>/FINAL_EP03_KENAPA_ES_MENGAPUNG.mp4 --vo=<EP03>/project/public/audio/vo.wav --sfx=<EP03>/project/public/audio/sfx.wav --public-dir=<EP03>/project/public --title=\"Kenapa Es Mengapung?\" --slug=kenapa-es-mengapung --ep=EP03 --date=2026-11-24 --concurrency=2",
+      "files": [
+        "FINAL_EP03_KENAPA_ES_MENGAPUNG.mp4"
+      ],
+      "next": "QA final (ffprobe, ebur128, metadata, npm run verify, contact sheet), record_score final juri, NOTES.md, append_lesson, scheduled tasks. Caption + SRT sudah selesai.",
+      "snapshot": {
+        "episode": "EP03_KENAPA_ES_MENGAPUNG",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "CAIR",
+        "memoryEpisode": "sains-anak-EP03",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP03_KENAPA_ES_MENGAPUNG/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:33:27.624Z",
+      "doing": "s4: render final ulang (render s3 gagal: 404 brand/stacked-reversed.svg karena public dir root skill). Pakai salinan script F:/temp/claude/4b963ae6b9cd5ff7/3a9063e2-8b49-4148-ae7f-a081a49ad45a/scratchpad/render-final-ep03.mjs (ROOT tetap + --public-dir=<EP03>/project/public). Log F:/temp/ep03-render-s4.log (baris EXIT).",
+      "command": "cd F:/AUDIRA-2D-SKILL-MOTION; node <scratchpad>/render-final-ep03.mjs --entry=<EP03>/project/src/episodes/es/index.tsx --comp=EsEP03 --out=<EP03>/FINAL_EP03_KENAPA_ES_MENGAPUNG.mp4 --vo=<EP03>/project/public/audio/vo.wav --sfx=<EP03>/project/public/audio/sfx.wav --public-dir=<EP03>/project/public --title=\"Kenapa Es Mengapung?\" --slug=kenapa-es-mengapung --ep=EP03 --date=2026-11-24 --concurrency=2",
+      "files": [
+        "FINAL_EP03_KENAPA_ES_MENGAPUNG.mp4"
+      ],
+      "next": "QA final (ffprobe, ebur128, metadata, npm run verify, contact sheet), record_score final juri, NOTES.md, append_lesson, scheduled tasks. Caption + SRT sudah selesai.",
+      "snapshot": {
+        "episode": "EP03_KENAPA_ES_MENGAPUNG",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "CAIR",
+        "memoryEpisode": "sains-anak-EP03",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP03_KENAPA_ES_MENGAPUNG/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T07:39:03.568Z"
+    },
+    {
+      "at": "2026-11-24T07:39:23.797Z",
+      "doing": "s4 selesai: FINAL ok (QA lolos, verify VALID), juri final 3.17 tercatat, captions + SRT + NOTES + lessons selesai, draft/stills dihapus.",
+      "files": [
+        "NOTES.md",
+        "SOCIAL_CAPTIONS.md"
+      ],
+      "next": "Tunggu jam upload dari pengguna (default Rabu 25 Nov 2026 19.00 WIB TikTok). Lalu buat 3 scheduled task sekali jalan review-kenapa-es-mengapung-24h/-72h/-7d (+07:00) dengan prompt mandiri (folder episode, slug kenapa-es-mengapung, judul, 6 platform, metrik views/retensi/hook/komentar, catat NOTES.md tabel Pasca-tayang + audira_style_memory scope channel append_lesson), catat taskId di NOTES.md. Sesi lama EP03 s1–s3 tidak ada di daftar sesi aktif (sudah terarsip/tidak terlihat).",
+      "snapshot": {
+        "episode": "EP03_KENAPA_ES_MENGAPUNG",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "CAIR",
+        "memoryEpisode": "sains-anak-EP03",
+        "currentStage": "review",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP03_KENAPA_ES_MENGAPUNG/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:39:23.797Z",
+      "doing": "s4 selesai: FINAL ok (QA lolos, verify VALID), juri final 3.17 tercatat, captions + SRT + NOTES + lessons selesai, draft/stills dihapus.",
+      "files": [
+        "NOTES.md",
+        "SOCIAL_CAPTIONS.md"
+      ],
+      "next": "Tunggu jam upload dari pengguna (default Rabu 25 Nov 2026 19.00 WIB TikTok). Lalu buat 3 scheduled task sekali jalan review-kenapa-es-mengapung-24h/-72h/-7d (+07:00) dengan prompt mandiri (folder episode, slug kenapa-es-mengapung, judul, 6 platform, metrik views/retensi/hook/komentar, catat NOTES.md tabel Pasca-tayang + audira_style_memory scope channel append_lesson), catat taskId di NOTES.md. Sesi lama EP03 s1–s3 tidak ada di daftar sesi aktif (sudah terarsip/tidak terlihat).",
+      "snapshot": {
+        "episode": "EP03_KENAPA_ES_MENGAPUNG",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "CAIR",
+        "memoryEpisode": "sains-anak-EP03",
+        "currentStage": "review",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP03_KENAPA_ES_MENGAPUNG/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T09:28:50.285Z"
+    }
+  ],
+  "session": 4,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP03 Es Mengapung · s2",
+      "at": "2026-11-23T18:19:46.422Z"
+    },
+    {
+      "no": 3,
+      "title": "EP03 Es Mengapung · s3",
+      "at": "2026-11-24T07:02:53.705Z"
+    },
+    {
+      "no": 4,
+      "title": "EP03 Es Mengapung · s4",
+      "at": "2026-11-24T07:29:02.030Z"
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP05_ASAP_LINTAS_NEGARA",
+  "topic": "Riset 5 berita viral karhutla dan lonjakan ISPA di Papua dan daerah lain, Oktober-November 2026",
+  "createdAt": "2026-11-09T19:42:41.430Z",
+  "updatedAt": "2026-11-11T02:02:12.338Z",
+  "currentStage": "complete",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T13:11:18.983801+00:00",
+          "text": "Rules, memory and style memory read at start of series"
+        }
+      ],
+      "doneAt": "2026-11-10T13:11:18.983801+00:00"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-09T19:48:24.429Z",
+          "text": "22/27 sumber dibaca; Pekanbaru 13.850 ISPA 24 Agu-18 Okt (56 hari); Malaysia sekolah tutup; 20 korporasi tersangka (4 PMA, inisial saja)"
+        }
+      ],
+      "doneAt": "2026-11-09T19:48:24.429Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-10T06:58:43.937Z",
+      "notes": [
+        {
+          "at": "2026-11-09T22:12:47.991Z",
+          "text": "Pengguna memilih style utama 2026-11-10; cover topik sedang dirender"
+        },
+        {
+          "at": "2026-11-10T06:58:43.937Z",
+          "text": "Pengguna: \"Setuju, lanjut naskah\" (2026-11-10) untuk cover topik"
+        }
+      ],
+      "startedAt": "2026-11-09T22:12:47.991Z",
+      "doneAt": "2026-11-10T06:58:43.937Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-10T08:50:49.570Z",
+      "notes": [
+        {
+          "at": "2026-11-10T08:50:49.570Z",
+          "text": "User approved script 2026-11-10 (\"Setuju, buat VO\")"
+        }
+      ],
+      "doneAt": "2026-11-10T08:50:49.570Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T12:47:30.643279Z",
+          "text": "Shared studio/ (starter v4.3); film built in studio/src/scenes/epNN on audio timeline"
+        }
+      ],
+      "doneAt": "2026-11-10T12:47:30.643279Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T08:54:40.522Z",
+          "text": "Galang sonic-3 speed 1.0; speech 81.5 s, film 84.5 s; audio/vo.wav -16.5 LUFS; timeline in audio/timeline.json"
+        }
+      ],
+      "doneAt": "2026-11-10T08:54:40.522Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T12:47:30.643279Z",
+          "text": "Film built; 8-frame sheet draft/stills/_sheet.jpg + RISK_CLIP.mp4 with mix; lead polish rounds done"
+        }
+      ],
+      "doneAt": "2026-11-10T12:47:30.643279Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-10T12:52:18.714Z",
+      "notes": [
+        {
+          "at": "2026-11-10T12:47:30.643279Z",
+          "text": "Draft score LOLOS 4.0 recorded; waiting for user approval"
+        },
+        {
+          "at": "2026-11-10T12:52:18.714Z",
+          "text": "User approved draft 2026-11-10 (\"Setuju, render final\")"
+        }
+      ],
+      "startedAt": "2026-11-10T12:47:30.643279Z",
+      "doneAt": "2026-11-10T12:52:18.714Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T13:11:18.983801+00:00",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60 85.5s, -13.6 LUFS, peak -1.6; metadata tagged; archive/2026-11-10; final score 4.0"
+        }
+      ],
+      "doneAt": "2026-11-10T13:11:18.983801+00:00"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T13:11:18.983801+00:00",
+          "text": "SOCIAL_CAPTIONS.md validator ok; SUBTITLES.srt; NOTES.md; QA_REPORT.md; lessons appended"
+        }
+      ],
+      "doneAt": "2026-11-10T13:11:18.983801+00:00"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T02:02:12.338Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-10T13:11:21.056Z",
+      "startedAt": "2026-11-10T13:11:21.056Z"
+    }
+  ],
+  "data": {
+    "style": "HISTORYMAP",
+    "memoryEpisode": "asap-karhutla-ispa-EP05",
+    "wordCount": 205,
+    "estimatedDuration": {
+      "wordCount": 205,
+      "minSec": 82,
+      "maxSec": 91
+    },
+    "voSeconds": 81.5,
+    "filmSeconds": 84.5,
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-11T02:02:12.338Z"
+}

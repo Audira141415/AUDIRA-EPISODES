@@ -1,0 +1,370 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP30",
+  "topic": "Miracle on Ice — mahasiswa amatir AS kalahkan hoki Uni Soviet, Lake Placid 1980",
+  "createdAt": "2026-11-22T18:00:51.713Z",
+  "updatedAt": "2026-11-23T09:29:14.514Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:04:45.260Z",
+          "text": "Baca CLAUDE.md, GLOBAL+CHRONICLE memory, EP10 HANDOFF, EP05 sport facts."
+        }
+      ],
+      "doneAt": "2026-11-22T18:04:45.260Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:04:41.213Z",
+          "text": "SOURCE_REGISTER 14 fakta (Wikipedia MoI + IH80). Konteks: template EP10 Jesse Owens (lib 2D fig/set/hud)."
+        }
+      ],
+      "doneAt": "2026-11-22T18:04:41.213Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T22:20:13.553Z",
+      "notes": [
+        {
+          "at": "2026-11-22T22:20:13.553Z",
+          "text": "Pengguna memilih CHRONICLE (opsi 1) via AskUserQuestion 2026-11-23."
+        },
+        {
+          "at": "2026-11-23T00:05:25.055Z",
+          "text": "cover-topic.png + STYLE_DECISION.md (Style: CHRONICLE, approved yes)"
+        }
+      ],
+      "startedAt": "2026-11-22T22:20:13.553Z",
+      "doneAt": "2026-11-23T00:05:25.055Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T22:21:16.269Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T22:20:59.594Z",
+      "startedAt": "2026-11-22T22:20:59.594Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:20:47.499Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T17:51:12.000Z",
+      "startedAt": "2026-11-22T17:51:12.000Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:23:27.845Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-22T22:22:19.778Z",
+      "startedAt": "2026-11-22T22:22:19.778Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T00:05:28.449Z",
+          "text": "Film.tsx 12 adegan + rink.tsx + pose hoki; sfx.wav (payoff 53.3)"
+        }
+      ],
+      "doneAt": "2026-11-23T00:05:28.449Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T00:07:50.865Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        },
+        {
+          "at": "2026-11-23T09:29:07.013Z",
+          "text": "Juri r2 3.67; pengguna 2026-11-23: jangan ganti style, langsung render (override G16)"
+        }
+      ],
+      "doneAt": "2026-11-23T09:29:07.013Z",
+      "startedAt": "2026-11-23T00:06:53.256Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T09:29:09.969Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60 82s, -13.6 LUFS TP -1.9, metadata+Ed25519/C2PA VALID, qa_video PASS (3 allow disengaja)"
+        }
+      ],
+      "doneAt": "2026-11-23T09:29:09.969Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T00:08:30.013Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T09:29:13.701Z",
+          "text": "Caption valid, NOTES.md, lesson, 3 scheduled task review-miracle-on-ice-24h/-72h/-7d (upload Rab 2 Des 2026 19.00 WIB)"
+        }
+      ],
+      "doneAt": "2026-11-23T09:29:13.701Z",
+      "startedAt": "2026-11-23T00:08:16.598Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP30",
+    "engine": "remotion",
+    "channel": "SPORTFACTS",
+    "handle": "@AudiraSportFacts",
+    "style": "CHRONICLE"
+  },
+  "syncedAt": "2026-11-23T00:08:30.013Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T22:23:36.307Z",
+      "doing": "Style CHRONICLE acc; docs tahap 4 + VO selesai (audio/vo.wav, audio/timeline.json, speech 77,3 dtk). Sedang menulis kode 2D: project/src/lib/rink.tsx + Film.tsx + cover topik.",
+      "files": [
+        "project/src/lib/rink.tsx",
+        "project/src/Film.tsx",
+        "docs/SHOTLIST.md",
+        "audio/timeline.json"
+      ],
+      "next": "Film.tsx 12 adegan sesuai docs/SHOTLIST.md, Karaoke, cover-topic.png, sfx, contact sheet + juri, final.",
+      "snapshot": {
+        "episode": "EP30",
+        "topic": "Miracle on Ice — mahasiswa amatir AS kalahkan hoki Uni Soviet, Lake Placid 1980",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP30",
+        "currentStage": "style",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP30_MIRACLE_ON_ICE_1980/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T22:24:19.593Z",
+      "doing": "Sesi 1 berhenti (context guard). Riset, style CHRONICLE (acc), docs tahap 4, scaffold, VO terkunci selesai. Belum ada kode scene/cover topik.",
+      "files": [
+        "docs/HANDOFF.md",
+        "audio/timeline.json",
+        "project/src/lib",
+        "docs/STORYBOARD.md"
+      ],
+      "next": "Baca docs/HANDOFF.md, lanjut langkah 1–7 di sana (rink.tsx, Film.tsx, cover-topic, sfx, draf juri, final, delivery).",
+      "snapshot": {
+        "episode": "EP30",
+        "topic": "Miracle on Ice — mahasiswa amatir AS kalahkan hoki Uni Soviet, Lake Placid 1980",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP30",
+        "currentStage": "style",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP30_MIRACLE_ON_ICE_1980/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:05:31.199Z",
+      "doing": "Sesi 2 pindah (context guard). Langkah 1–4 HANDOFF selesai: Film.tsx 12 adegan, cover-topic, STYLE_DECISION, sfx.wav.",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/Film.tsx",
+        "project/src/lib/rink.tsx",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "Langkah 5: draf contact sheet + THEME_CHECK + skor self + juri buta; lalu 6 final render, 7 delivery. Baca bagian \"UPDATE Sesi 2\" di docs/HANDOFF.md.",
+      "snapshot": {
+        "episode": "EP30",
+        "topic": "Miracle on Ice — mahasiswa amatir AS kalahkan hoki Uni Soviet, Lake Placid 1980",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP30",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP30_MIRACLE_ON_ICE_1980/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:09:39.802Z",
+      "doing": "Draf r1 juri 3.67 PERLU POLES; poles r2 sudah dikode di Film.tsx, belum dirender/dinilai. SOCIAL_CAPTIONS.md ditulis, belum divalidasi.",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/Film.tsx",
+        "draft/THEME_CHECK.md",
+        "SOCIAL_CAPTIONS.md"
+      ],
+      "next": "Baca \"UPDATE Sesi 2b\" di docs/HANDOFF.md: render ulang contact sheet, juri r2, lalu final render + delivery.",
+      "snapshot": {
+        "episode": "EP30",
+        "topic": "Miracle on Ice — mahasiswa amatir AS kalahkan hoki Uni Soviet, Lake Placid 1980",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP30",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP30_MIRACLE_ON_ICE_1980/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:09:56.597Z",
+      "doing": "Sesi 3: tsc + render contact sheet r2 (stills.mjs out/draft), audit:visual, juri r2",
+      "command": "node scripts/stills.mjs out/draft \"5s,12s,20.8s,31.7s,40.8s,53.4s,59.2s,64.5s\" Ep30Preview 0.5",
+      "files": [
+        "project/out/draft/_sheet.jpg",
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "Bila juri r2 LOLOS → render final (HANDOFF langkah 6) + delivery (langkah 7)",
+      "snapshot": {
+        "episode": "EP30",
+        "topic": "Miracle on Ice — mahasiswa amatir AS kalahkan hoki Uni Soviet, Lake Placid 1980",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP30",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP30_MIRACLE_ON_ICE_1980/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:13:40.890Z",
+      "doing": "Render final CHRONICLE (pengguna 2026-11-23: jangan ganti style, langsung render; juri r2 3.67 di-override)",
+      "command": "node scripts/render-final.mjs --comp=Ep30Final --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=3 --concurrency=2 --encoder=nvenc --gl=vulkan --title=\"Miracle on Ice 1980\" --slug=miracle-on-ice-1980 --ep=EP30 --skip-memory-gate=\"...\" --log=error",
+      "files": [
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "QA final (LUFS, TP, metadata, qa_video, verify signature), record_score final, NOTES.md, lessons, 3 scheduled tasks, status review",
+      "snapshot": {
+        "episode": "EP30",
+        "topic": "Miracle on Ice — mahasiswa amatir AS kalahkan hoki Uni Soviet, Lake Placid 1980",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP30",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP30_MIRACLE_ON_ICE_1980/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:13:40.890Z",
+      "doing": "Render final CHRONICLE (pengguna 2026-11-23: jangan ganti style, langsung render; juri r2 3.67 di-override)",
+      "command": "node scripts/render-final.mjs --comp=Ep30Final --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=3 --concurrency=2 --encoder=nvenc --gl=vulkan --title=\"Miracle on Ice 1980\" --slug=miracle-on-ice-1980 --ep=EP30 --skip-memory-gate=\"...\" --log=error",
+      "files": [
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "QA final (LUFS, TP, metadata, qa_video, verify signature), record_score final, NOTES.md, lessons, 3 scheduled tasks, status review",
+      "snapshot": {
+        "episode": "EP30",
+        "topic": "Miracle on Ice — mahasiswa amatir AS kalahkan hoki Uni Soviet, Lake Placid 1980",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP30",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP30_MIRACLE_ON_ICE_1980/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T09:29:14.514Z"
+    }
+  ]
+}

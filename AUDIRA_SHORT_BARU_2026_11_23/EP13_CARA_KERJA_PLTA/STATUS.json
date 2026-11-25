@@ -1,0 +1,365 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP13_CARA_KERJA_PLTA",
+  "topic": "Cara kerja PLTA — air jatuh jadi listrik (bendungan, penstock, turbin, generator, trafo; Cirata/Saguling)",
+  "createdAt": "2026-11-22T17:57:11.534Z",
+  "updatedAt": "2026-11-23T09:52:50.110Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:25:15.985Z",
+          "text": "Memori GLOBAL: tulis \"Audira\" di VO, tighten pauses, sign await workaround, TP limiter. Channel: slot malam 19–22 WIB. Engine 2D Remotion (starter F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter, pola episodes/vaksin)."
+        }
+      ],
+      "doneAt": "2026-11-22T22:25:15.984Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:25:11.151Z",
+          "text": "11 fakta, 5 sumber (DOE HIGH, Wikipedia id/en). Cirata 1.000 MW 8 turbin; Saguling 700 MW head 362,4 m."
+        }
+      ],
+      "doneAt": "2026-11-22T22:25:11.151Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T23:52:30.560Z",
+      "notes": [
+        {
+          "at": "2026-11-22T22:27:43.275Z",
+          "text": "Ditawarkan: BLUEPRINT (utama, ≈DRAFTFORGE 2D: penampang bendungan), FLATLIFE (kartun flat + karakter), CAIR (air & kaca). Sheet: style/_style_options.jpg. Menunggu pilihan pengguna."
+        },
+        {
+          "at": "2026-11-22T23:52:30.560Z",
+          "text": "Pengguna memilih \"1 BLUEPRINT\" (2026-11-23). Engine Remotion 2D (SVG, mograph look BLUEPRINT dari F:/AUDIRA-2D-SKILL-MOTION)."
+        }
+      ],
+      "startedAt": "2026-11-22T22:27:43.275Z",
+      "doneAt": "2026-11-22T23:53:33.216Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T23:56:33.266Z",
+          "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-22T23:56:41.270Z",
+          "text": "Docs rule 12 ditulis (ART_DIRECTION, SCRIPT, STORYBOARD 10 baris, ASSET_MANIFEST). 200 kata."
+        }
+      ],
+      "doneAt": "2026-11-22T23:56:41.270Z",
+      "startedAt": "2026-11-22T23:56:19.910Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T23:53:19.409Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T23:52:36.664Z",
+      "startedAt": "2026-11-22T23:52:36.664Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T23:55:35.629Z",
+          "text": "sync: VO sudah dibuat"
+        },
+        {
+          "at": "2026-11-22T23:56:43.026Z",
+          "text": "VO Cartesia audio/vo.wav 85,59 dtk, 200 kata (vo-words.json). Film END 85,9 + outro 3 = 88,9 dtk. Offset 0."
+        }
+      ],
+      "doneAt": "2026-11-22T23:56:43.026Z",
+      "startedAt": "2026-11-22T23:55:17.376Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T00:07:50.105Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-23T00:07:44.378Z",
+      "startedAt": "2026-11-23T00:07:44.378Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T00:07:50.105Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        },
+        {
+          "at": "2026-11-23T00:14:09.526Z",
+          "text": "Juri buta r1 3.50 -> poles -> r2 3.83 (L4 M4 D3 C4 Mo4 R4), lolos ambang CLAUDE.md G16 (>=3.8, tidak ada aspek <3). Tool memory memakai ambang 4.0 (PERLU POLES) — dicatat di NOTES."
+        }
+      ],
+      "doneAt": "2026-11-23T00:14:09.526Z",
+      "startedAt": "2026-11-23T00:05:36.182Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T09:52:46.043Z",
+          "text": "FINAL_VIDEO.mp4 88,9 dtk 1080x1920@60, -14,1 LUFS, TP -1,3 dBFS, metadata ok, skor final 3,83"
+        }
+      ],
+      "doneAt": "2026-11-23T09:52:46.043Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T00:09:39.286Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T09:52:47.810Z",
+          "text": "captions validator ok; review tasks review-cara-kerja-plta-24h/-72h/-7d (upload 28 Nov 19.00 WIB); perantara dihapus"
+        }
+      ],
+      "doneAt": "2026-11-23T09:52:47.810Z",
+      "startedAt": "2026-11-23T00:09:04.735Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "in_progress",
+      "notes": [
+        {
+          "at": "2026-11-23T09:52:49.261Z",
+          "text": "menunggu scheduled task +24h/+72h/+7d"
+        }
+      ],
+      "startedAt": "2026-11-23T09:52:49.261Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP13",
+    "style": "BLUEPRINT",
+    "engine": "remotion",
+    "kitStyle": "DRAFTFORGE",
+    "wordCount": 200,
+    "estimatedDuration": {
+      "wordCount": 200,
+      "minSec": 80,
+      "maxSec": 89
+    }
+  },
+  "syncedAt": "2026-11-23T00:09:39.286Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T23:53:35.185Z",
+      "doing": "Style BLUEPRINT dipilih; VO.txt 200 kata siap; project/ disalin dari 2D remotion-starter (belum ada kode episode).",
+      "files": [
+        "docs/HANDOFF.md",
+        "docs/VO.txt",
+        "style/STYLE_DECISION.md",
+        "research/SOURCE_REGISTER.md",
+        "project/"
+      ],
+      "next": "Baca docs/HANDOFF.md → tulis docs rule 12 → VO Cartesia → kode src/episodes/plta → cover-topic → SFX → draf juri → final → delivery.",
+      "snapshot": {
+        "episode": "EP13_CARA_KERJA_PLTA",
+        "topic": "Cara kerja PLTA — air jatuh jadi listrik (bendungan, penstock, turbin, generator, trafo; Cirata/Saguling)",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP13",
+        "currentStage": "style",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T23:54:53.337Z",
+      "doing": "VO Cartesia dari docs/VO.txt → audio/vo.wav + audio/vo-words.json",
+      "files": [
+        "audio/vo.wav",
+        "audio/vo-words.json"
+      ],
+      "next": "docs rule 12 lalu kode project/src/episodes/plta",
+      "snapshot": {
+        "episode": "EP13_CARA_KERJA_PLTA",
+        "topic": "Cara kerja PLTA — air jatuh jadi listrik (bendungan, penstock, turbin, generator, trafo; Cirata/Saguling)",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP13",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:03:51.923Z",
+      "doing": "Kode episode project/src/episodes/plta ditulis (belum tsc/still). Docs + VO selesai.",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/episodes/plta/Plta.tsx",
+        "project/src/episodes/plta/parts.tsx",
+        "project/src/episodes/plta/index.tsx"
+      ],
+      "next": "Baca docs/HANDOFF.md langkah berikut 1–7: tsc → stills/contact sheet → cover → SFX → juri → final → delivery",
+      "snapshot": {
+        "episode": "EP13_CARA_KERJA_PLTA",
+        "topic": "Cara kerja PLTA — air jatuh jadi listrik (bendungan, penstock, turbin, generator, trafo; Cirata/Saguling)",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP13",
+        "currentStage": "animation",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP13_CARA_KERJA_PLTA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:08:25.959Z",
+      "doing": "render final PltaEP13 1080x1920@60 tanpa audio ke draft/video_noaudio.mp4 (juri draf putaran 1 berjalan paralel)",
+      "command": "cd project && npx remotion render src/episodes/plta/index.tsx PltaEP13 ../draft/video_noaudio.mp4 --public-dir=public --concurrency=4 --log=error",
+      "files": [
+        "project/src/episodes/plta/Plta.tsx",
+        "project/src/episodes/plta/parts.tsx",
+        "audio/sfx.wav",
+        "draft/THEME_CHECK.md",
+        "draft/contact-sheet.jpg",
+        "style/cover-topic.png"
+      ],
+      "next": "mix VO+SFX duck, loudnorm -14 + alimiter, metadata -> FINAL_VIDEO.mp4, qa_video hardOnly",
+      "snapshot": {
+        "episode": "EP13_CARA_KERJA_PLTA",
+        "topic": "Cara kerja PLTA — air jatuh jadi listrik (bendungan, penstock, turbin, generator, trafo; Cirata/Saguling)",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP13",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP13_CARA_KERJA_PLTA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:32:08.546Z",
+      "doing": "render ulang final PltaEP13 1080x1920@60 tanpa audio ke draft/video_noaudio.mp4 (TEMP=F:/temp/ep13), concurrency 2; juri draf r2 3,83 LOLOS",
+      "command": "cd project && TEMP=F:/temp/ep13 npx remotion render src/episodes/plta/index.tsx PltaEP13 ../draft/video_noaudio.mp4 --public-dir=public --concurrency=2 --log=error",
+      "files": [
+        "draft/video_noaudio.mp4"
+      ],
+      "next": "mix G18 (VO loudnorm -16, SFX volume=-10dB, sidechain ratio 8 attack 5 release 350 thr 0.015), master -14 LUFS TP<-1, metadata -> FINAL_VIDEO.mp4, qa, record_score final, status review",
+      "snapshot": {
+        "episode": "EP13_CARA_KERJA_PLTA",
+        "topic": "Cara kerja PLTA — air jatuh jadi listrik (bendungan, penstock, turbin, generator, trafo; Cirata/Saguling)",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP13",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP13_CARA_KERJA_PLTA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:32:08.546Z",
+      "doing": "render ulang final PltaEP13 1080x1920@60 tanpa audio ke draft/video_noaudio.mp4 (TEMP=F:/temp/ep13), concurrency 2; juri draf r2 3,83 LOLOS",
+      "command": "cd project && TEMP=F:/temp/ep13 npx remotion render src/episodes/plta/index.tsx PltaEP13 ../draft/video_noaudio.mp4 --public-dir=public --concurrency=2 --log=error",
+      "files": [
+        "draft/video_noaudio.mp4"
+      ],
+      "next": "mix G18 (VO loudnorm -16, SFX volume=-10dB, sidechain ratio 8 attack 5 release 350 thr 0.015), master -14 LUFS TP<-1, metadata -> FINAL_VIDEO.mp4, qa, record_score final, status review",
+      "snapshot": {
+        "episode": "EP13_CARA_KERJA_PLTA",
+        "topic": "Cara kerja PLTA — air jatuh jadi listrik (bendungan, penstock, turbin, generator, trafo; Cirata/Saguling)",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP13",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP13_CARA_KERJA_PLTA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T09:52:50.110Z"
+    }
+  ]
+}

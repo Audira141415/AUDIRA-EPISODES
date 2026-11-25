@@ -1,0 +1,639 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP01_KENAPA_LANGIT_BIRU",
+  "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+  "createdAt": "2026-11-23T14:16:30.083Z",
+  "updatedAt": "2026-11-24T13:22:19.352Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:18:15.027Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:16:30.084Z",
+      "startedAt": "2026-11-23T14:16:30.084Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:18:15.027Z",
+          "text": "sync: riset ada"
+        },
+        {
+          "at": "2026-11-23T14:22:16.882Z",
+          "text": "18 fakta (13 HIGH). Koreksi: rasio hamburan 5,86x (bukan 5,5x); Tyndall 1869."
+        }
+      ],
+      "doneAt": "2026-11-23T14:22:16.882Z",
+      "startedAt": "2026-11-23T14:16:30.080Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:15:57.321Z",
+          "text": "WORLDFORGE dipilih AI (alt GLASSCRAFT, NANOFORGE). Proyek project/ di-scaffold dari starter via robocopy + junction node_modules dan public/models/polyfork. Cover topik belum."
+        },
+        {
+          "at": "2026-11-23T15:16:33.227Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "startedAt": "2026-11-23T15:15:57.321Z",
+      "doneAt": "2026-11-23T15:15:57.059Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T18:23:24.424Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-23T18:21:51.633Z",
+      "startedAt": "2026-11-23T18:21:51.633Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:16:33.227Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T18:25:24.819Z",
+          "text": "VO Cartesia 82,66 dtk, 196 kata, vo.timing.json ok; film 86 dtk (outro 83–86)"
+        }
+      ],
+      "doneAt": "2026-11-23T18:25:24.819Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:16:33.227Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.572Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:44:58.905Z",
+          "text": "sync: look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-24T07:40:45.052Z",
+      "startedAt": "2026-11-24T07:40:45.052Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T09:28:27.545Z",
+      "notes": [
+        {
+          "at": "2026-11-24T09:28:27.545Z",
+          "text": "Acc pengguna 2026-11-24: \"Gas render final\" (juri 3.50 diterima setelah 2 putaran)"
+        },
+        {
+          "at": "2026-11-24T13:08:57.812Z",
+          "text": "FINAL_LANGIT_BIRU.mp4 1080x1920@60 91 dtk, -13.6 LUFS TP -1.9, metadata+signature ok, skor final 3.50"
+        }
+      ],
+      "startedAt": "2026-11-24T09:28:27.545Z",
+      "doneAt": "2026-11-24T13:08:57.812Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T13:21:51.082Z",
+          "text": "Caption lolos validator, SUBTITLES.srt, upload 25 Nov 2026 19.00 WIB, review task 24h/72h/7d terjadwal"
+        }
+      ],
+      "doneAt": "2026-11-24T13:21:51.082Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sains-anak-EP01",
+    "shortTitle": "Langit Biru",
+    "style": "WORLDFORGE",
+    "engine": "remotion",
+    "tier": "full3d"
+  },
+  "syncedAt": "2026-11-24T07:44:58.905Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-23T15:16:04.469Z",
+      "doing": "Tahap 3 selesai sebagian: style WORLDFORGE (Remotion+R3F full3d) dipilih, STYLE_DECISION.md ditulis, project/ di-scaffold dari starter (robocopy tanpa node_modules/out/models; junction node_modules -> F:\\AUDIRA-SKILL-MOTION\\node_modules, public/models/polyfork -> starter polyfork). JANGAN pakai new-project.mjs (gagal di junction, menyalin node_modules 19 GB).",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "project/"
+      ],
+      "next": "1) cd project; npm run check-env; npm run smoke. 2) Tahap 4: docs/ART_DIRECTION.md, SCRIPT.md (195-210 kata, 6 babak dari alur di SOURCE_REGISTER, 'Audira' di teks VO, 'hampir 6 kali', Tyndall 1869, tanpa tahun Einstein), STORYBOARD.md (>=6 baris dgn kolom Audio), ASSET_MANIFEST.md; subjek adegan via core/concepts (SunDisc, LightBeam, WaveRibbon, AirMolecule, ScatterBurst) + Sky/terrain worldforge (Mars). 3) VO Cartesia (speed 1). 4) Film via FilmFromConfig (starter/src/templates), cover topik dari frame hook (npm run cover), npm run sfx, npm run draft, THEME_CHECK, juri buta. 5) BERHENTI di gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP01_KENAPA_LANGIT_BIRU",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sains-anak-EP01",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:21:01.188Z",
+      "doing": "VO Cartesia dari audio/vo.txt (210 kata final) ke project/public/audio/vo.wav + vo-words.json",
+      "files": [
+        "audio/vo.txt",
+        "project/SERIES.json (disalin dari seri, handle @AudiraSains)"
+      ],
+      "next": "npm run vo -- public/audio/vo.wav; tulis docs tahap 4 (ART_DIRECTION/SCRIPT/STORYBOARD/ASSET_MANIFEST); bangun src/episodes/ep01/Film.tsx via FilmFromConfig",
+      "snapshot": {
+        "episode": "EP01_KENAPA_LANGIT_BIRU",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sains-anak-EP01",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:22:00.616Z",
+      "doing": "s2: SCRIPT.md final (196 kata), generate VO Cartesia ke project/public/audio/vo.wav + vo-words.json",
+      "command": "audira_generate_voiceover text=work/vo_one.txt",
+      "files": [
+        "docs/SCRIPT.md",
+        "work/vo_one.txt",
+        "project/public/audio/vo.wav"
+      ],
+      "next": "npm run vo -- public/audio/vo.wav; tulis STORYBOARD/SHOTLIST/ASSET_MANIFEST/ART_DIRECTION dgn waktu VO; Film.tsx di project/src/episodes/ep01 pola EP56 (FAKTADUNIA/.../EP56_KURSI_LISTRIK_1890/project/src/episodes/ep56/Film.tsx)",
+      "snapshot": {
+        "episode": "EP01_KENAPA_LANGIT_BIRU",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sains-anak-EP01",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:22:56.259Z",
+      "doing": "VO selesai (79.64 dtk, 210 kata, vo-words.json + vo.timing.json). Rencana adegan + jangkar waktu lengkap di shared notes EP01-s2-handover.md",
+      "files": [
+        "audio/vo.txt",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "project/public/audio/vo.timing.json",
+        "project/SERIES.json",
+        "C:/Users/ASUS/AppData/Local/Claude-Data/claude_pzs8sxrjxfjjc/side-session-notes/local_6a2e5f65-20b6-4eec-8a66-bfcf879cf76e/EP01-s2-handover.md"
+      ],
+      "next": "Tulis docs tahap 4 (ART_DIRECTION/SCRIPT/STORYBOARD/ASSET_MANIFEST) dari audio/vo.txt; bangun src/episodes/ep01/Film.tsx via FilmFromConfig (pola EP56) + daftarkan Preview/Final di Root.tsx; npm run cover; npm run sfx; npm run draft; THEME_CHECK; juri buta; berhenti di gerbang tahap 9",
+      "snapshot": {
+        "episode": "EP01_KENAPA_LANGIT_BIRU",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sains-anak-EP01",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:03:25.590Z",
+      "doing": "Docs tahap 4 + Film.tsx (LangitBiruPreview/Final) selesai, belum dirender. VO di disk tertimpa sesi dobel (196 kata/82,63 dtk) — harus generate ulang dari audio/vo.txt lalu retime Film.tsx.",
+      "files": [
+        "docs/ART_DIRECTION.md",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "project/src/episodes/ep01/Film.tsx",
+        "project/src/Root.tsx",
+        "C:/Users/ASUS/AppData/Local/Claude-Data/claude_pzs8sxrjxfjjc/side-session-notes/local_4a213ef3-0f0e-4f96-b836-b09d3c508ee8/EP01-s3-handover.md"
+      ],
+      "next": "Generate ulang VO dari audio/vo.txt + vo-words.json + npm run vo; retime Film.tsx ke jangkar baru; stills cek; SHOTLIST.md + npm run sfx; cover; draft; THEME_CHECK; juri buta; berhenti di gerbang tahap 9. Detail: side-session-notes/local_4a213ef3-0f0e-4f96-b836-b09d3c508ee8/EP01-s3-handover.md",
+      "snapshot": {
+        "episode": "EP01_KENAPA_LANGIT_BIRU",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sains-anak-EP01",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:07:46.973Z",
+      "doing": "s4: VO dibuat ulang (87,31 dtk, 210 kata), Film.tsx diretime lewat tabel RETIME (EP01_SECONDS 91), docs diretime. Sedang stills cek visual.",
+      "files": [
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "project/src/episodes/ep01/Film.tsx",
+        "docs/STORYBOARD.md",
+        "docs/SCRIPT.md"
+      ],
+      "next": "stills cek → SHOTLIST.md + npm run sfx → cover → draft → THEME_CHECK → juri buta → gerbang tahap 9",
+      "snapshot": {
+        "episode": "EP01_KENAPA_LANGIT_BIRU",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sains-anak-EP01",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:13:00.295Z",
+      "doing": "s4 selesai: VO 87,31 dtk/210 kata dikunci, Film.tsx diretime (RETIME, 91 dtk), docs + SHOTLIST + sfx.wav selesai, perbaikan visual dari still. Belum: cover, draft, THEME_CHECK, juri.",
+      "files": [
+        "project/src/episodes/ep01/Film.tsx",
+        "project/src/core/hud/Subtitle.tsx",
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav",
+        "C:/Users/ASUS/AppData/Local/Claude-Data/claude_pzs8sxrjxfjjc/side-session-notes/local_77577291-66f3-43d8-9659-55833688461a/EP01-s4-handover.md"
+      ],
+      "next": "npm run cover -- LangitBiruPreview --episode=.. --at=1.3s → npm run draft -- LangitBiruPreview → THEME_CHECK → record_score self + juri buta → gerbang tahap 9. Detail: side-session-notes/local_77577291-66f3-43d8-9659-55833688461a/EP01-s4-handover.md",
+      "snapshot": {
+        "episode": "EP01_KENAPA_LANGIT_BIRU",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sains-anak-EP01",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:39:15.812Z",
+      "doing": "s5: still Tyndall+papan dicek & diperbaiki (Subtitle width max-content, kamera Tyndall dist 56/50). Render cover + draft.",
+      "command": "npm run cover -- LangitBiruPreview --episode=.. --at=1.3s ; npm run draft -- LangitBiruPreview",
+      "files": [
+        "project/src/core/hud/Subtitle.tsx",
+        "project/src/episodes/ep01/Film.tsx"
+      ],
+      "next": "THEME_CHECK → record_score self + juri buta → gerbang tahap 9",
+      "snapshot": {
+        "episode": "EP01_KENAPA_LANGIT_BIRU",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sains-anak-EP01",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:56:45.698Z",
+      "doing": "s5: juri ronde 1 = 3.17 (PERLU POLES, crop tepi). Poles ronde 2 selesai di Film.tsx (kamera hook/Mars senja FOV46, molekul dirapatkan, mata+UNGU, papan sign, kartu N2 a=21.5, cahaya Mars). Render draf ronde 2.",
+      "command": "npm run draft -- LangitBiruPreview",
+      "files": [
+        "project/src/episodes/ep01/Film.tsx",
+        "project/src/core/hud/Subtitle.tsx",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "THEME_CHECK cek ulang → record_score self + juri buta ronde 2 (terakhir) → gerbang tahap 9 bila juri ≥3.8 atau ≥3.5 setelah 2 putaran",
+      "snapshot": {
+        "episode": "EP01_KENAPA_LANGIT_BIRU",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sains-anak-EP01",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:58:37.502Z",
+      "doing": "s5: draf diterima (juri 3.50 setelah 2 putaran). Menunggu acc pengguna untuk render final 1080×1920@60.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "NOTES.md"
+      ],
+      "next": "Setelah acc: update stage final approved true → qa-scene (G19) → npm run render:final -- ... --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav (--jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc) → metadata, LUFS −14/TP<−1 → delivery tahap 10.",
+      "snapshot": {
+        "episode": "EP01_KENAPA_LANGIT_BIRU",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sains-anak-EP01",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:29:56.324Z",
+      "doing": "s5: acc render final diterima. G19 qa-scene berjalan (draft/qa-scene.log).",
+      "command": "node scripts/qa-scene.mjs --comp=LangitBiruPreview --concurrency=2 --out=../draft",
+      "files": [
+        "draft/qa-scene.log",
+        "draft/qa-scene.json"
+      ],
+      "next": "Bila PASS/CHECK wajar: npm run render:final -- --comp=LangitBiruFinal --out=out/FINAL_LANGIT_BIRU.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=... --slug=kenapa-langit-biru --ep=EP01 → LUFS check → delivery.",
+      "snapshot": {
+        "episode": "EP01_KENAPA_LANGIT_BIRU",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sains-anak-EP01",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:37:18.013Z",
+      "doing": "s5: G19 PASS (qa-scene + qa-video review diisi). Render final berjalan, log draft/render-final.log.",
+      "command": "npm run render:final -- --comp=LangitBiruFinal --out=../FINAL_LANGIT_BIRU.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc \"--title=Kenapa Langit Biru?\" --slug=kenapa-langit-biru --ep=EP01",
+      "files": [
+        "FINAL_LANGIT_BIRU.mp4",
+        "project/src/core/scene/FilmScene.tsx",
+        "draft/qa-video.review.json"
+      ],
+      "next": "Cek LUFS -14 / TP<-1 + metadata ffprobe + cek frame MP4 → record_score final → delivery tahap 10.",
+      "snapshot": {
+        "episode": "EP01_KENAPA_LANGIT_BIRU",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sains-anak-EP01",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T12:06:03.201Z",
+      "doing": "s5: render final ke-1 gagal OOM Chrome (concurrency 2). Antrean render ulang --concurrency=1 (tunggu render lain <2), log draft/render-final.log.",
+      "command": "bash F:/temp/claude/4b963ae6b9cd5ff7/b2f0a2a7-3879-4188-8fbf-9dc005ecadee/scratchpad/queue-ep01.sh (npm run render:final -- --comp=LangitBiruFinal --out=../FINAL_LANGIT_BIRU.mp4 --vo --sfx --jobs=6 --concurrency=1 --gl=vulkan --encoder=nvenc --skip-memory-gate=<juri 3.50 2 putaran> --skip-channel=<kit file>)",
+      "files": [
+        "FINAL_LANGIT_BIRU.mp4",
+        "draft/render-final.log"
+      ],
+      "next": "Cek LUFS -14 / TP<-1 + metadata ffprobe + cek frame MP4 → record_score final → delivery tahap 10.",
+      "snapshot": {
+        "episode": "EP01_KENAPA_LANGIT_BIRU",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sains-anak-EP01",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T12:06:03.201Z",
+      "doing": "s5: render final ke-1 gagal OOM Chrome (concurrency 2). Antrean render ulang --concurrency=1 (tunggu render lain <2), log draft/render-final.log.",
+      "command": "bash F:/temp/claude/4b963ae6b9cd5ff7/b2f0a2a7-3879-4188-8fbf-9dc005ecadee/scratchpad/queue-ep01.sh (npm run render:final -- --comp=LangitBiruFinal --out=../FINAL_LANGIT_BIRU.mp4 --vo --sfx --jobs=6 --concurrency=1 --gl=vulkan --encoder=nvenc --skip-memory-gate=<juri 3.50 2 putaran> --skip-channel=<kit file>)",
+      "files": [
+        "FINAL_LANGIT_BIRU.mp4",
+        "draft/render-final.log"
+      ],
+      "next": "Cek LUFS -14 / TP<-1 + metadata ffprobe + cek frame MP4 → record_score final → delivery tahap 10.",
+      "snapshot": {
+        "episode": "EP01_KENAPA_LANGIT_BIRU",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sains-anak-EP01",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T13:08:58.343Z"
+    },
+    {
+      "at": "2026-11-24T13:22:19.352Z",
+      "doing": "Tahap 1–10 selesai (final, delivery, file perantara dihapus). Tahap 11 menunggu scheduled task review.",
+      "files": [
+        "NOTES.md",
+        "FINAL_LANGIT_BIRU.mp4",
+        "SOCIAL_CAPTIONS.md"
+      ],
+      "next": "Tidak ada kerja manual. Tahap 11 dijalankan scheduled task review-kenapa-langit-biru-24h/-72h/-7d (26 Nov, 28 Nov, 2 Des 2026 19.00 WIB).",
+      "snapshot": {
+        "episode": "EP01_KENAPA_LANGIT_BIRU",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sains-anak-EP01",
+        "currentStage": "review",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    }
+  ],
+  "session": 5,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP01 Langit Biru · s2",
+      "at": "2026-11-23T15:16:04.469Z"
+    },
+    {
+      "no": 3,
+      "title": "EP01 Langit Biru · s3",
+      "at": "2026-11-23T18:22:56.259Z"
+    },
+    {
+      "no": 4,
+      "title": "EP01 Langit Biru · s4",
+      "at": "2026-11-24T07:03:25.590Z"
+    },
+    {
+      "no": 5,
+      "title": "EP01 Langit Biru · s5",
+      "at": "2026-11-24T07:13:00.295Z"
+    }
+  ],
+  "handover": {
+    "at": "2026-11-24T13:22:19.352Z",
+    "doing": "Tahap 1–10 selesai (final, delivery, file perantara dihapus). Tahap 11 menunggu scheduled task review.",
+    "files": [
+      "NOTES.md",
+      "FINAL_LANGIT_BIRU.mp4",
+      "SOCIAL_CAPTIONS.md"
+    ],
+    "next": "Tidak ada kerja manual. Tahap 11 dijalankan scheduled task review-kenapa-langit-biru-24h/-72h/-7d (26 Nov, 28 Nov, 2 Des 2026 19.00 WIB).",
+    "snapshot": {
+      "episode": "EP01_KENAPA_LANGIT_BIRU",
+      "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+      "style": "WORLDFORGE",
+      "memoryEpisode": "sains-anak-EP01",
+      "currentStage": "review",
+      "gates": {
+        "final": {
+          "approved": true,
+          "status": "done"
+        }
+      },
+      "voPath": null,
+      "draftScores": [],
+      "finals": [],
+      "draftRounds": 0
+    }
+  }
+}

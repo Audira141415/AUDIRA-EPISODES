@@ -1,0 +1,186 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "AE-059",
+  "topic": "Bagaimana Pelabuhan Menahan Kapal Saat Ombak Besar?",
+  "createdAt": "2026-11-08T06:27:54.119818+00:00",
+  "updatedAt": "2026-11-11T02:02:12.426Z",
+  "currentStage": "complete",
+  "data": {
+    "style": "WORLDFORGE",
+    "wordCount": 136,
+    "estimatedDuration": {
+      "wordCount": 136,
+      "minSec": 54,
+      "maxSec": 60
+    },
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T06:27:54.119818+00:00",
+          "text": "CLAUDE.md, motion memory GLOBAL+channel, NOTES/STYLE_DECISION Batch 3-4 dibaca"
+        }
+      ],
+      "doneAt": "2026-11-08T06:27:54.119818+00:00"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T06:39:57.537237+00:00",
+          "text": "23 klaim. Breakwater, 4 jenis tali, fender, tali disetel ikut pasang surut, prosedur badai, snap-back. Panjang breakwater Priok tak terverifikasi."
+        }
+      ],
+      "doneAt": "2026-11-08T06:39:57.537237+00:00"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T07:44:00.757Z",
+          "text": "Pengguna pilih WORLDFORGE (Ya, semua no. 1); cover topik dirender"
+        },
+        {
+          "at": "2026-11-08T11:49:16.809Z",
+          "text": "Cover topik disetujui pengguna (\"Setuju semua\"), skor cover 4.0"
+        }
+      ],
+      "approved": true,
+      "approvedAt": "2026-11-08T11:49:16.809Z",
+      "startedAt": "2026-11-08T07:44:00.757Z",
+      "doneAt": "2026-11-08T11:49:16.809Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T12:01:39.363Z",
+          "text": "Naskah disetujui pengguna (\"Setuju, lanjut\")"
+        }
+      ],
+      "approved": true,
+      "approvedAt": "2026-11-08T12:01:39.363Z",
+      "doneAt": "2026-11-08T12:01:39.363Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T12:01:45.602343+00:00",
+          "text": "Studio BATCH05 dari BATCH04 (starter v4.2 + Polish/Person), node_modules junction, _tools disalin, stacked-reversed.svg ada"
+        }
+      ],
+      "doneAt": "2026-11-08T12:01:45.602343+00:00"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T12:01:45.602343+00:00",
+          "text": "Cartesia Galang sonic-3; build_vo.py → vo.wav + timeline.json; whisper cek brand/istilah OK (EP057 l15 re-voice)"
+        }
+      ],
+      "doneAt": "2026-11-08T12:01:45.602343+00:00"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T18:22:01.360795+00:00",
+          "text": "Film.tsx + STORYBOARD.md + sfx-cues.json; mix -14 LUFS"
+        }
+      ],
+      "startedAt": "2026-11-08T12:01:45.602343+00:00",
+      "doneAt": "2026-11-08T18:22:01.360795+00:00"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T18:22:01.360795+00:00",
+          "text": "draft/stills/_sheet.jpg + draft/RISK_CLIP.mp4; skor draf 4.0 (LOLOS)"
+        },
+        {
+          "at": "2026-11-08T18:22:30.455882+00:00",
+          "text": "Draf disetujui pengguna (\"Setuju, render final\")"
+        }
+      ],
+      "approved": true,
+      "approvedAt": "2026-11-08T18:22:30.455882+00:00",
+      "startedAt": "2026-11-08T18:22:01.360795+00:00",
+      "doneAt": "2026-11-08T18:22:30.455882+00:00"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T18:47:55.799295+00:00",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60, -13.6..-13.7 LUFS, TP<=-1.6, metadata+arsip, frame cek qa/final_frames.jpg, skor final 4.0"
+        }
+      ],
+      "startedAt": "2026-11-08T18:22:30.455882+00:00",
+      "doneAt": "2026-11-08T18:47:55.799295+00:00"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T18:47:55.799295+00:00",
+          "text": "SOCIAL_CAPTIONS.md validator ok, SUBTITLES.srt, QA_REPORT.md, NOTES.md, xlsx diperbarui"
+        }
+      ],
+      "doneAt": "2026-11-08T18:47:55.799295+00:00",
+      "startedAt": "2026-11-08T18:47:55.799295+00:00"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T02:02:12.426Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "startedAt": "2026-11-08T18:47:55.799295+00:00",
+      "doneAt": "2026-11-08T18:47:24.598Z"
+    }
+  ],
+  "syncedAt": "2026-11-11T02:02:12.426Z"
+}

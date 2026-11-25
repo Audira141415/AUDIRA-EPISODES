@@ -1,0 +1,173 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "AE-071",
+  "topic": "Bagaimana Gedung Dirancang Agar Tidak Mudah Terbakar?",
+  "createdAt": "2026-11-09T19:40:53.663259+00:00",
+  "updatedAt": "2026-11-11T02:02:12.435Z",
+  "currentStage": "complete",
+  "data": {
+    "style": "THERMALFORGE",
+    "memoryEpisode": "AUDIRA-EXPLAINED-AE071",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-09T19:40:53.663259+00:00",
+          "text": "CLAUDE.md, rule 08, motion memory GLOBAL, NOTES/STYLE_DECISION Batch 4-5 dibaca"
+        }
+      ],
+      "doneAt": "2026-11-09T19:40:53.663259+00:00"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-09T19:51:48.867102+00:00",
+          "text": "25 klaim. Permen PU 26/2008; TKA menit 60/60/60; pintu tahan api wajib menutup sendiri; firestop; presurisasi tangga >24 m (MED); sprinkler aktif oleh panas; Grenfell cladding netral."
+        }
+      ],
+      "startedAt": "2026-11-09T19:40:53.663259+00:00",
+      "doneAt": "2026-11-09T19:51:48.867102+00:00"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-09T22:09:26.153327+00:00",
+          "text": "Style no.1 disetujui pengguna; cover topik sedang dibuat"
+        },
+        {
+          "at": "2026-11-10T06:54:28.557052+00:00",
+          "text": "Cover topik disetujui pengguna (Setuju semua)"
+        }
+      ],
+      "approved": true,
+      "approvedAt": null,
+      "startedAt": "2026-11-09T19:51:48.867102+00:00",
+      "doneAt": "2026-11-10T06:54:28.557052+00:00"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T07:01:16.427176+00:00",
+          "text": "Naskah disetujui pengguna (Setuju, lanjut)"
+        }
+      ],
+      "approved": true,
+      "approvedAt": null,
+      "startedAt": "2026-11-10T06:54:28.557052+00:00",
+      "doneAt": "2026-11-10T07:01:16.427176+00:00"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [],
+      "doneAt": "2026-11-10T07:01:16.427176+00:00"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T07:01:16.427176+00:00",
+          "text": "VO Cartesia dikunci; whisper cek brand line; sync 96-98%"
+        }
+      ],
+      "doneAt": "2026-11-10T07:01:16.427176+00:00"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [],
+      "startedAt": "2026-11-10T07:01:16.427176+00:00",
+      "doneAt": "2026-11-10T07:23:29.600704+00:00"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T07:23:29.600704+00:00",
+          "text": "Contact sheet + risk clip LOLOS rubrik (audit:visual ceilings); menunggu acc"
+        },
+        {
+          "at": "2026-11-10T12:11:34.812Z",
+          "text": "Pengguna: \"Setuju, render final\" (2026-11-10)"
+        }
+      ],
+      "approved": true,
+      "approvedAt": "2026-11-10T12:11:34.812Z",
+      "startedAt": "2026-11-10T07:23:29.600704+00:00",
+      "doneAt": "2026-11-10T12:11:34.812Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T12:11:42.587784Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60, -13.6/-13.7 LUFS, TP <= -1.7, blackdetect 0, metadata + arsip, skor final 4,0 (evidence)"
+        }
+      ],
+      "startedAt": "2026-11-10T12:11:42.587784Z",
+      "doneAt": "2026-11-10T12:11:42.587784Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T12:11:42.587784Z",
+          "text": "SOCIAL_CAPTIONS.md 6 platform lolos validator, SUBTITLES.srt, NOTES.md, QA_REPORT.md, pelajaran motion memory"
+        }
+      ],
+      "startedAt": "2026-11-10T12:11:42.587784Z",
+      "doneAt": "2026-11-10T12:11:42.587784Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T02:02:12.435Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-10T12:10:16.241Z",
+      "startedAt": "2026-11-10T12:10:16.241Z"
+    }
+  ],
+  "syncedAt": "2026-11-11T02:02:12.435Z"
+}

@@ -1,0 +1,162 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#0B1418}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.035;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.34) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.42) 42%,rgba(0,0,0,0.42) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:262px;z-index:10;transform-origin:50% 50%}
+.nb{font-variant-numeric:tabular-nums}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Inter,sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#fff;opacity:.82}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:30px;color:#A3E635;letter-spacing:.14em}
+
+.tab{display:inline-block;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:30px;letter-spacing:.14em;color:#0B1418;background:#FF6A1A;padding:5px 16px 4px;margin-bottom:14px;clip-path:polygon(0 0,100% 0,calc(100% - 14px) 100%,0 100%)}
+.tab b{font-weight:800}
+.h0{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:178px;line-height:.86;color:#fff;letter-spacing:.01em;text-shadow:0 8px 30px rgba(0,0,0,.6)}
+.h0b{display:inline-block;margin-top:14px;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:96px;line-height:1;color:#fff;background:rgba(8,20,26,.78);border-left:8px solid #FF6A1A;padding:6px 22px 4px}
+.h0b b{color:#FF6A1A}
+.sub{font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:30px;color:#3FE6FF;margin-top:14px;text-shadow:0 2px 10px #000}
+.nw{background:rgba(8,20,26,.82);border-top:2px solid #3FE6FF;padding:12px 20px;margin-top:12px;width:860px}
+.nw.dim{border-top-color:#FF6A1A}
+.nw i{display:block;font-style:normal;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:27px;letter-spacing:.06em;color:#3FE6FF}
+.nw.dim i{color:#FF6A1A}
+.nw b{display:block;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:54px;line-height:1.04;color:#fff}
+.two{display:flex;gap:14px;width:900px}
+.cd{flex:1;background:rgba(8,20,26,.82);border-top:4px solid #3FE6FF;padding:12px 18px 16px}
+.cd.o{border-top-color:#FF6A1A}
+.cd i{display:block;font-style:normal;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:25px;letter-spacing:.06em;color:#3FE6FF}
+.cd.o i{color:#FF6A1A}
+.cd b{display:block;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:110px;line-height:1;color:#fff}
+.cd b.sm{font-size:84px;line-height:1.3}
+.cd>span{display:block;font-family:"IBM Plex Mono",monospace;font-size:24px;color:#cfe9ee;margin-bottom:8px}
+.cd em{display:inline-block;font-style:normal;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:34px;color:#0B1418;background:#F6F1E7;border-radius:30px;padding:2px 14px;margin:4px 6px 0 0}
+.big{background:rgba(8,20,26,.82);border-left:8px solid #3FE6FF;padding:8px 22px 12px;width:720px}
+.big b{display:block;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:150px;line-height:1;color:#fff}
+.big>span{display:block;font-family:"IBM Plex Mono",monospace;font-size:28px;color:#3FE6FF}
+.ln{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:44px;line-height:1.1;color:#fff;margin-top:14px;text-shadow:0 2px 12px #000;display:flex;align-items:center;gap:14px;width:900px}
+.ln i{flex:none;width:20px;height:20px;border-radius:50%}
+.dotr{background:#ff4a3a;box-shadow:0 0 14px #ff4a3a}.doto{background:#FF6A1A;box-shadow:0 0 14px #FF6A1A}
+.stp{display:inline-block;margin-top:6px;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:76px;line-height:.98;color:#FF6A1A;border:6px solid #FF6A1A;padding:10px 22px;background:rgba(8,20,26,.72);transform:rotate(-3deg)}
+.ts{background:rgba(8,20,26,.82);border-left:6px solid #FF6A1A;padding:8px 20px;margin-top:10px;width:760px}
+.ts i{display:block;font-style:normal;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:25px;letter-spacing:.08em;color:#FF6A1A}
+.ts b{display:block;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:72px;line-height:1.02;color:#fff}
+.ts>span{display:block;font-family:"IBM Plex Mono",monospace;font-size:25px;color:#cfe9ee}
+.bat{display:flex;align-items:center;gap:16px;background:rgba(8,20,26,.82);padding:10px 20px;margin-top:10px;width:760px;border-left:6px solid #3FE6FF}
+.bat i{font-style:normal;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:24px;color:#3FE6FF;width:200px}
+.bat .bar{flex:1;height:26px;border:2px solid #3FE6FF;padding:3px}
+.bat .fill{height:100%;width:33%;background:#3FE6FF;transform-origin:0 50%}
+.bat.e{border-left-color:#FF6A1A}.bat.e i{color:#FF6A1A}.bat.e .bar{border-color:#FF6A1A}.bat.e .fill{width:100%;background:#FF6A1A}
+.bat b{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:54px;color:#fff;width:170px;text-align:right}
+.h2{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:104px;line-height:.95;color:#fff;text-shadow:0 6px 26px rgba(0,0,0,.8)}
+.h2 b{color:#3FE6FF}
+.srcl{font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:21px;line-height:1.35;color:#e8f4f6;margin-top:14px;width:880px;text-shadow:0 2px 10px #000}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="85.16" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tab">CARA KERJA VIRAL &middot; EP 11</div>
+  <div class="h0">KOTAK<br>HITAM</div>
+  <div class="h0b" data-at="s1:oranye" data-fx="stamp">TAPI <b>ORANYE</b></div>
+  <div class="sub" data-at="s1:bertahan" data-fx="up">dirancang bertahan saat pesawat hancur</div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="tab">BERITA MINGGU INI</div>
+  <div class="nw" data-at="s2:penyelam" data-fx="left"><i>7 NOV &middot; SERUYAN</i><b>Penyelam TNI AL temukan perekam data heli Mi-17</b></div>
+  <div class="nw dim" data-at="s2:Florida" data-fx="left"><i>1 NOV &middot; FLORIDA</i><b>Perekam suara Learjet: keberadaannya belum jelas</b></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tab">ADA <b class="nb">2</b> PEREKAM</div>
+  <div class="two">
+    <div class="cd" data-at="s3:data" data-fx="up"><i>PEREKAM DATA</i><b class="nb">&ge; <span class="ct" data-from="0" data-to="88" data-a="s3:minimal" data-d="1.2">0</span></b><span>parameter</span>
+      <em data-at="s3:ketinggian" data-fx="pop">ketinggian</em><em data-at="s3:kecepatan" data-fx="pop">kecepatan</em><em data-at="s3:arah" data-fx="pop">arah</em></div>
+    <div class="cd o" data-at="s3:Perekam#2" data-fx="up"><i>PEREKAM SUARA</i><b class="sm">KOKPIT</b><span>yang ditangkap:</span>
+      <em data-at="s3:pilot" data-fx="pop">pilot</em><em data-at="s3:radio" data-fx="pop">radio</em><em data-at="s3:alarm" data-fx="pop">alarm</em></div>
+  </div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="tab">REKAMAN BERPUTAR</div>
+  <div class="big" data-at="s4:jam" data-fx="up"><b class="nb"><span class="ct" data-from="0" data-to="25" data-a="s4:sekitar" data-d="1.1">0</span> JAM</b><span>terakhir, perekam data</span></div>
+  <div class="ln" data-at="s4:ditimpa" data-fx="left"><i class="dotr"></i>data tertua ditimpa yang baru</div>
+  <div class="ln" data-at="s4:ekor" data-fx="left"><i class="doto"></i>dipasang di ekor: bagian paling mungkin selamat</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="tab">DIBUNGKUS BERLAPIS</div>
+  <div class="stp" data-at="s5:Inilah" data-fx="stamp">MODUL MEMORI<br>TAHAN BENTURAN</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="tab">UJI KETAHANAN</div>
+  <div class="ts" data-at="s6:benturan" data-fx="left"><i>BENTURAN</i><b class="nb"><span class="ct" data-from="0" data-to="3400" data-a="s6:benturan" data-d="0.9">0</span> &times; gravitasi</b></div>
+  <div class="ts" data-at="s6:api" data-fx="left"><i>API</i><b class="nb">1.100 &deg;C &middot; &plusmn; 1 jam</b></div>
+  <div class="ts" data-at="s6:tekanan" data-fx="left"><i>TEKANAN AIR</i><b class="nb">20.000 kaki</b></div>
+  <div class="ln" data-at="s6:oranye" data-fx="left"><i class="doto"></i>oranye: mudah terlihat di antara puing</div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tab">PINGER</div>
+  <div class="ts" data-at="s7:Sekali" data-fx="left"><i>DENYUT</i><b class="nb">1 kali / detik</b></div>
+  <div class="ts" data-at="s7:nada" data-fx="left"><i>NADA</i><b class="nb">37,5 kHz</b><span>tak terdengar telinga manusia</span></div>
+  <div class="bat" data-at="s7:selama" data-fx="up"><i>BATERAI</i><div class="bar"><div class="fill" data-at="s7:selama" data-fx="grow"></div></div><b class="nb">30 hari</b></div>
+  <div class="bat e" data-at="s7:Aturan" data-fx="up"><i>ATURAN EROPA</i><div class="bar"><div class="fill" data-at="s7:Aturan" data-fx="grow"></div></div><b class="nb">90 hari</b></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="tab">DIBACA DI LABORATORIUM</div>
+  <div class="h2" data-at="s8:disusun" data-fx="up">DETIK TERAKHIR<br><b>DISUSUN ULANG</b></div>
+  <div class="srcl" data-at="s8:Ikuti" data-fx="fade">Sumber: NTSB (CVR &amp; FDR); 14 CFR 91.609; ANTARA, Kompas.tv &amp; Media Indonesia (7 Nov 2026); CNN Indonesia (3 Nov 2026); Wikipedia (ULB, ED-112). Model 3D adalah ilustrasi generik.</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">CARA KERJA VIRAL &middot; EP 11</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":5.52,"s2":5.68,"s2e":16.035,"s3":16.195,"s3e":27.529,"s4":27.689,"s4e":36.989,"s5":37.149,"s5e":47.92,"s6":48.08,"s6e":61.238,"s7":61.398,"s7e":74.205,"s8":74.365,"s8e":82.155,"end":82.155,"dur":85.16,"outro":82.405},AT={"s1:oranye":1.836,"s2:penyelam":6.661,"s2:Florida":12.101,"s3:dua":16.988,"s3:parameter":20.412,"s3:suara":24.111,"s3:alarm":26.77,"s4:Rekamannya":27.725,"s4:ditimpa":29.645,"s4:jam":33.074,"s4:Keduanya":33.924,"s4:ekor":35.131,"s5:chip":38.959,"s5:blok":40.961,"s5:insulasi":42.169,"s5:cangkang":44.227,"s5:Inilah":46.187,"s6:benturan":49.176,"s6:api":52.133,"s6:tekanan":55.678,"s6:Warnanya":58.127,"s6:puing":60.851,"s7:tercebur":61.743,"s7:pinger":62.579,"s7:Sekali":64.237,"s7:Aturan":72.038,"s8:laboratorium":74.849,"s8:dibaca":76.447,"s8:disusun":78.849,"s1:bertahan":3.508,"s3:data":18.647,"s3:minimal":19.297,"s3:ketinggian":21.264,"s3:kecepatan":22.224,"s3:arah":22.998,"s3:Perekam#2":23.693,"s3:pilot":25.195,"s3:radio":25.811,"s4:sekitar":32.269,"s6:oranye":58.839,"s7:nada":66.314,"s7:selama":70.624,"s8:Ikuti":79.879},DUR=85.16,OUT=82.405;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ 
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{x:-70,clipPath:'inset(0 100% 0 0)',opacity:1},{x:0,clipPath:'inset(0 0% 0 0)',duration:.48,ease:'power3.out'},a-.18),POUT=(tl,p,b)=>tl.to(p,{y:-40,clipPath:'inset(0 0 100% 0)',duration:.3,ease:'power2.in'},b-.32);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP11_KOTAK_HITAM")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

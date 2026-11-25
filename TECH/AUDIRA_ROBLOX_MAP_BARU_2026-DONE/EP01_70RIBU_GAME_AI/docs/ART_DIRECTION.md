@@ -1,0 +1,29 @@
+# Art Direction — EP01 (BRICKCRAFT)
+
+- **Dunia:**
+  - meja kayu ek hangat dengan bata ABS glossy (RoundedBoxGeo r 0,055, POLISH.brickABS, tanpa grain) dan baseplate hijau;
+  - kota menara map mini sebagai latar;
+  - satu dunia yang menyambung, dengan stasiun bata untuk tiap kalimat di meja yang sama.
+- **Palet:**
+  - warna bata: merah #d11a2a, biru #0b5ed7, kuning #ffca2c, hijau #198754, oranye #fd7e14, ungu #7b3fc4;
+  - aksen cyan bercahaya untuk aliran AI dan petak "pakai AI";
+  - latar #1e2124.
+- **Cahaya:**
+  - key hangat dari kiri atas dengan bayangan; kotak bayangannya mengikuti target kamera;
+  - rim biru dingin dari belakang kanan, lampu oranye di lava, lampu cyan dari tablet;
+  - payoff: cahaya turun ke ±15% dan lampu merah menyala;
+  - "beda": spotlight hangat dengan cincin emas;
+  - outro kembali terang.
+- **Finish:** `hdri="studio"`, exposure 0,9, envIntensity 0,6, DOCUMENTARY_WARM, AO (parameter terbaik dari memori BRICKCRAFT). Exposure dan env ikut meredup di payoff.
+- **Karakter:** BlockAvatar R6 klasik (kulit kuning, torso biru, kaki hijau) skala 1,25.
+  - aktif di setiap bagian: selancar, mengetik, menunjuk, lari, lompat, cheer, think, wave;
+  - menghadap 3/4 ke kamera supaya dua kakinya terbaca;
+  - selalu di samping papan, tidak pernah menutup angka atau label.
+- **Tipografi:**
+  - headline cover: Lilita One;
+  - caption karaoke: Space Grotesk 700 di atas pelat gelap;
+  - papan 3D: tulisan cetak (canvas, Segoe UI Black) dalam bingkai bata.
+- **Brand:**
+  - bata putih "AUDIRA" di dudukan tablet (hook dan outro) dan tombol "IKUTI AUDIRA" di layar outro;
+  - tanda tangan bergerak, handle dari `channel.json` (TECH);
+  - `<AudiraOutro />` di 3 detik terakhir.

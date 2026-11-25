@@ -1,0 +1,16 @@
+# STORYBOARD — EP43 Pemilik Dua Kebun (PAPERWORLD 2D)
+
+Style: PAPERWORLD · estimasi film ±88 dtk · waktu final di-retime dari `audio/timeline.json` (Sesi B)
+
+| Scene | Waktu | BG/MG/FG/HUD | Kamera | Audio |
+|---|---|---|---|---|
+| S1 Hook | 0–7 | BG langit pagi keemasan + bukit kertas; MG dua kebun anggur kiri-kanan, sungai toska berkilau di tengah, keranjang penuh anggur; FG daun anggur blur; papan "AUDIRA" di gerbang kebun; HUD "2 KEBUN ANGGUR" (0,8 dtk); retakan kecil + hembusan daun saat "Ia keliru" | mulai dari framing cover, push-in pelan menyusuri sungai | whoosh buka, gemericik air, pop callout, hit rendah di "keliru" |
+| S2 Perumpamaan | 7–13 | Kartu ayat berbingkai ornamen "QS AL-KAHFI 18:32"; dua siluet lelaki di bukit (kaya: jubah ungu-emas; teman: jubah gading); label "PEMILIK KEBUN" / "TEMANNYA" | pan kiri→kanan dari kartu ke dua tokoh | whoosh potong, pop kartu |
+| S3 Tata kebun | 13–20 | Diorama elevasi 3/4: dua kebun anggur di para-para, cincin pohon kurma mengelilingi, petak ladang di antaranya, sungai membelah; label pita "ANGGUR" "KURMA" "LADANG"; lalu close-up tandan anggur penuh + callout "BERBUAH PENUH · 18:33" | crane turun dari elevasi ke close-up tandan | pop label beruntun, gemerisik daun |
+| S4 Sombong | 20–28 | Low angle pemilik di teras batu, dada membusung, tumpukan koin emas + barisan siluet pengikut di belakang; teman lebih kecil di bawah; kartu kutipan "HARTAKU LEBIH BANYAK · PENGIKUTKU LEBIH KUAT" (18:34) | low-angle push-in ke pemilik | whoosh, cling koin, pop kutipan |
+| S5 Tidak akan binasa | 28–36 | Pemilik masuk gerbang kebun, tangan terentang; matahari terik; stempel merah "TIDAK AKAN BINASA?" + kartu "18:35–36" | tracking samping mengikuti langkah | langkah, stamp, dengung rendah |
+| S6 Nasihat | 36–52 | Senja lembut; teman berdiri dengan tongkat; penampang tanah berlapis → satu tetes air jatuh (18:37); kartu ornamen "MASYA ALLAH · LA QUWWATA ILLA BILLAH" (18:39) + terjemah "TIADA KEKUATAN KECUALI DENGAN PERTOLONGAN ALLAH" | orbit pelan di sekitar teman, push ke tetes air, lalu tilt naik ke kartu | whoosh, tetes air, pop kartu, pad hening |
+| S7 Binasa | 52–60 | Badai: langit abu-biru, awan kertas gelap, angin; para-para patah dan roboh, tandan berjatuhan, sungai surut; stempel "DIBINASAKAN · 18:42" | goyang kecil, pull-back menyingkap kerusakan | rumble, retak kayu, riser pendek, impact roboh |
+| S8 Penyesalan | 60–70 | Pemilik berlutut di puing kebun; close-up kedua telapak tangan kertas berbalik bolak-balik; kartu kutipan "ADUHAI, SEKIRANYA DULU AKU TIDAK MEMPERSEKUTUKAN TUHANKU" (18:42); callout "TAK ADA PENOLONG · 18:43" | close-up tangan → pull-out ke tokoh sendirian di tengah puing | hening, angin tipis, pop kutipan |
+| S9 Payoff hujan→angin | 70–80 | Hujan perak → tunas kertas tumbuh jadi tanaman hijau → menguning oker → angin menerbangkan daun kertas melintas layar (FG besar ke BG); kartu "QS 18:45 · SEPERTI AIR HUJAN" | tracking horizontal mengikuti daun terbang | hujan, rise tumbuh, whoosh angin panjang, riser + impact payoff |
+| S10 Outro | 80–88 | Ladang kosong cahaya hangat, satu tunas kecil; kartu pertanyaan "APA YANG KAMU UCAPKAN SAAT MELIHAT MILIKMU?"; plakat "AUDIRA"; outro card AUDIRA 3 dtk terakhir | pull-back lebar, lalu tahan untuk outro card | pad tenang, chime, outro |

@@ -1,0 +1,13 @@
+EP31 Mata Kucing Reflektor Jalan (COMICFORGE): 198 kata, 83–91 dtk
+
+Hook: Tonjolan kecil berkilau di aspal jalan raya yang menyala terang saat terkena sorotan lampu mobil Anda.
+
+Konteks: Terutama saat berkendara di jalan tol atau jalan pegunungan gelap gulita tanpa lampu penerangan, tonjolan logam di aspal memandu jalur seperti barisan mutiara berkilau. Banyak pengendara mengira benda ini memakai lampu LED baterai atau panel tenaga surya.
+
+Pengembangan: Benda ini dinamakan Cat's Eye atau mata kucing, dipatenkan oleh Percy Shaw dari Inggris pada tahun seribu sembilan ratus tiga puluh empat. Hebatnya, benda ini sama sekali tidak memiliki baterai atau kabel listrik.
+
+Penjelasan: Inti rahasianya adalah prinsip retrorefleksi optik. Lensa bola kaca ganda di dalamnya memantulkan kembali berkas cahaya tepat ke arah mata pengemudi tanpa menyebar ke samping. Lebih cerdas lagi, lensa ini ditanam di dalam bantalan karet fleksibel dengan wadah besi cor. Setiap kali ban mobil melindas tonjolan ini, rumah karet akan amblas ke dalam aspal, mengaktifkan bilah karet wiper internal yang otomatis menyeka debu, lumpur, dan air dari permukaan kaca.
+
+Payoff: Mekanisme mekanis mandiri pembersih otomatis ini membuat mata kucing terus berkilau terang selama puluhan tahun, menyelamatkan jutaan pengemudi dari jurang dan tabrakan maut di malam hari.
+
+Outro: Ini AUDIRA, Cara Kerja Benda. Episode berikutnya: dentuman keras pipa air saat keran ditutup mendadak.

@@ -1,0 +1,173 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "AI-TUTORIAL-EP05",
+  "topic": "Belajar Pakai AI Tanpa Nyontek: Mode Guided Learning",
+  "createdAt": "2026-11-08T06:25:55.700Z",
+  "updatedAt": "2026-11-11T02:02:12.314Z",
+  "currentStage": "complete",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T06:26:04.654Z",
+          "text": "GLOBAL + channel motion memory read; past AI series (AI_MOTION_VIRAL, AI_GAME, roblox-*) excluded"
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T06:26:04.654Z",
+          "text": "../research/TITLE_RESEARCH.md + SOURCE_REGISTER.md; titles approved by user 2026-11-08"
+        }
+      ]
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-08T07:44:02.958Z",
+      "notes": [
+        {
+          "at": "2026-11-08T06:44:14.673Z",
+          "text": "User chose SKETCHFORGE (main pick) 2026-11-08; cover-topic.png rendered, cover score LOLOS 4.0; waiting for cover approval"
+        },
+        {
+          "at": "2026-11-08T07:44:02.958Z",
+          "text": "User approved topic covers: \"Setuju, lanjut naskah\" (2026-11-08)"
+        }
+      ]
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-08T07:49:23.729Z",
+      "notes": [
+        {
+          "at": "2026-11-08T07:49:23.729Z",
+          "text": "User approved SCRIPTS_DRAFT.md: \"Setuju, buat VO\" (2026-11-08). EP04 title -> \"Foto Ini Asli atau AI? Begini Cara Ceknya\""
+        }
+      ]
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T07:49:23.729Z",
+          "text": "Shared studio ../studio (starter v4.2, node_modules junction to CERITA_HIKMAH studio), smoke still OK"
+        }
+      ]
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T11:26:14.276Z",
+          "text": "VO locked: Cartesia Galang sonic-3, voEnd 86.03s, film 90.23s; studio/public/audio/ep05/vo.wav (-16 LUFS); timeline studio/src/scenes/ep05/timeline.json; whisper-checked, English UI terms native, AI='ei-ai'"
+        }
+      ]
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T11:52:47.504Z",
+          "text": "Film built in studio/src/scenes/epNN; STORYBOARD.md + sfx-cues.json"
+        }
+      ]
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-08T12:10:16.737Z",
+      "notes": [
+        {
+          "at": "2026-11-08T11:52:47.504Z",
+          "text": "draft/stills/_sheet.jpg scored LOLOS 4.0 (record_score draft); draft/RISK_CLIP_vo.mp4 = risk clip + VO; waiting for user approval"
+        },
+        {
+          "at": "2026-11-08T12:10:16.737Z",
+          "text": "User approved drafts: \"Setuju, render final\" (2026-11-08)"
+        }
+      ]
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T18:38:02.185Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60, -13.7 LUFS, TP<-1.5, ownership metadata, archive/2026-11-09, QA_REPORT.md LOLOS, final score 4.0"
+        },
+        {
+          "at": "2026-11-08T18:39:19.888Z",
+          "text": "User approved finals 2026-11-09 (\"Setuju, hapus perantara\"); intermediates deleted (risk clips, stills except _sheet.jpg, _cover, TTS clips, mix-pre, vo-raw, studio/out)"
+        }
+      ]
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T18:38:02.185Z",
+          "text": "SOCIAL_CAPTIONS.md (6 platform, Jadwal Upload WIB, Label Konten AI) validator ok; SUBTITLES.srt; NOTES.md"
+        }
+      ]
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T02:02:12.314Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-08T18:33:32.045Z",
+      "startedAt": "2026-11-08T18:33:32.045Z"
+    }
+  ],
+  "data": {
+    "style": "SKETCHFORGE",
+    "wordCount": 207,
+    "scriptFile": "../SCRIPTS_DRAFT.md",
+    "voEnd": 86.03,
+    "filmSeconds": 90.23,
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-11T02:02:12.314Z"
+}

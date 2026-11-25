@@ -1,0 +1,9 @@
+# Audio Plan — EP02 Algoritma: Al-Khawarizmi
+
+- **Master clock:** `audio/vo.wav` (Cartesia, suara Galang, terkunci, −16 LUFS), salinan `project/public/audio/vo.wav`. Tidak diubah.
+- **Bed:** `project/src/scenes/khawarizmi/mix.py` (jalankan dari `project/`) menulis `public/audio/bed.wav` (musik + ambience + SFX, tanpa suara, 92,036 s), lalu `public/audio/full.wav` dengan sidechain dari brief (bed −5 dB, kompresor ambang 0,02 rasio 4, amix) + `apad` ke 92,036 s (kompresor memotong ~0,2 s ekor).
+- **Identitas musik "tinta di bawah lilin":** drone A1+E2+A2 (tremolo lambat pada kuint), petikan mirip oud berjalan di maqam Rast (A, B, C♯ seperempat nada turun, D, E, F♯, G seperempat nada turun), lari qanun di awal tiap bagian, satu frase ney berdesah per bagian, pukulan daf sangat ringan hanya di bagian timbangan dan angka. Tanpa nyanyian.
+- **Ambience/foley:** room tone perpustakaan, letupan lilin acak, gores pena saat persamaan ditulis dan saat papan ditulis ulang, gores stilus di pasir (kanal, angka), sapuan pasir.
+- **SFX (shared/assets/sfx):** whoosh-cinematic ke tiap bagian; chime di "Itu nama orang" dan "Dixit"; pop di titik Khwarazm/Baghdad; whoosh-short saat suku pindah dan di "menjadi"; click-soft di "diseimbangkan" dan tiap coretan x/+/=; sparkle saat kitab hilang, di "algorithm", dan setelah VO; riser sebelum rantai; whoosh-short di "papan pasir", "naskah Latin"; typing di "kode program"; ping di "feed"; impact-bass-1 di akhir VO + 0,5 s. Semua waktu dari kata `timeline.json`.
+- **Level terukur:** full.wav −16,5 LUFS terintegrasi, puncak −4,4 dBFS; bed −25,5 LUFS sebelum −5 dB; RMS 18–43 s: full −19,3 dB vs bed (−5 dB) −31,0 dB, jadi bed ±12 dB di bawah sebelum ducking dan ±15 dB saat suara aktif.
+- **Final (belum dijalankan):** render final memakai `--vo=public/audio/full.wav`; mastering −14 LUFS / true peak < −1 dBFS dilakukan oleh `render:final`.

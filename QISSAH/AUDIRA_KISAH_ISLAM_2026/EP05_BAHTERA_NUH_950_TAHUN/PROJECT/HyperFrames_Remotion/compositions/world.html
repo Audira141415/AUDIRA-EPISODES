@@ -1,0 +1,203 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#2A323A}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.06;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.5) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.62) 42%,rgba(0,0,0,0.62) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#EFE6D2;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+
+.card{position:relative;background:linear-gradient(180deg,rgba(26,21,16,.93),rgba(17,13,10,.93));border:2px solid rgba(201,162,115,.32);box-shadow:0 26px 60px rgba(0,0,0,.55);padding:26px 30px 28px;margin-top:20px}
+.card:before{content:"";position:absolute;left:-14px;right:-14px;top:-22px;height:24px;border-radius:3px;background:repeating-linear-gradient(90deg,#8C6A46 0 3px,#9A7550 3px 40px,#86643f 40px 43px,#A47F58 43px 97px);box-shadow:0 5px 0 #3b2a1a}
+.card:after{content:"";position:absolute;top:-15px;left:14px;width:10px;height:10px;border-radius:50%;background:#2a1d12;box-shadow:874px 0 0 #2a1d12,430px 0 0 #2a1d12}
+.k{display:flex;align-items:center;gap:14px;font-family:Oswald,sans-serif;font-weight:600;font-size:25px;letter-spacing:.13em;color:#C9A273;padding-bottom:12px;border-bottom:2px solid rgba(201,162,115,.3);margin-bottom:14px}
+.k em{font-style:normal;background:#E9B44C;color:#15110D;padding:2px 12px;letter-spacing:.04em}
+.cnt{display:flex;align-items:flex-end;gap:18px;position:relative}
+.cnt .ct{font-family:Oswald,sans-serif;font-weight:700;font-size:210px;line-height:.86;color:#EFE6D2;letter-spacing:-.01em}
+.cnt .yr{font-family:Oswald,sans-serif;font-weight:600;font-size:64px;line-height:1;color:#E9B44C;padding-bottom:14px}
+.minus{position:absolute;right:0;top:0;font-family:Oswald,sans-serif;font-weight:700;font-size:64px;color:#15110D;background:#E9B44C;padding:2px 16px;transform-origin:50% 50%}
+.ref{margin-top:14px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:28px;letter-spacing:.06em;color:#3FB3A6}
+.h{font-family:Oswald,sans-serif;font-weight:700;font-size:96px;line-height:.98;color:#EFE6D2;text-transform:uppercase}
+.h.m{font-size:76px;line-height:1.02}
+.gold{color:#E9B44C}
+.row{display:flex;align-items:baseline;justify-content:space-between;gap:18px;padding:12px 0 6px;border-top:2px dashed rgba(201,162,115,.3);margin-top:10px}
+.row b{font-family:Oswald,sans-serif;font-weight:700;font-size:50px;line-height:1;color:#EFE6D2;flex:none}
+.row span{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:32px;color:#d6c9ae;text-align:right}
+.row.g b{color:#E9B44C}.row.r b{color:#D98A5B}.row.t b{color:#3FB3A6}
+.row .arw{font-family:Amiri,serif;font-size:44px;direction:rtl;color:#EFE6D2;font-weight:400}
+.ar{font-family:Amiri,serif;font-weight:400;font-size:62px;line-height:1.75;direction:rtl;text-align:right;color:#EFE6D2}
+.ar.sm{font-size:52px;margin-top:8px}
+.id{font-family:'Barlow Condensed',sans-serif;font-weight:500;font-size:36px;line-height:1.22;color:#d9cdb4;margin-top:6px}
+.q{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:50px;line-height:1.12;color:#EFE6D2;padding:8px 0 8px 22px;border-left:8px solid #9A7550;margin-top:12px}
+.q.dim{color:#bcae94;border-left-color:#5f5446}.q.gold{color:#E9B44C;border-left-color:#E9B44C}
+.pp{display:flex;align-items:center;gap:22px;margin-top:10px}
+.pp span{font-family:Oswald,sans-serif;font-weight:700;font-size:92px;line-height:1;color:#15110D;background:#C9A273;padding:4px 22px;box-shadow:0 6px 0 #5b4127}
+.pp i{font-style:normal;font-family:Oswald,sans-serif;font-weight:600;font-size:64px;color:#E9B44C}
+#chip{background:rgba(21,17,13,.6);padding:4px 10px}
+</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="89.19" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI &middot; TANPA MENGGAMBARKAN SOSOK NABI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="card">
+    <div class="k"><em>05</em>KISAH DALAM AL-QUR'AN</div>
+    <div class="cnt"><b class="ct nb" data-from="1000" data-to="950" data-a="s1:lima" data-d="0.9">1.000</b><span class="yr">TAHUN</span><span class="minus nb" data-at="s1:lima" data-fx="stamp">&minus;50</span></div>
+    <div class="ref">QS AL-'ANKABUT 29:14 &middot; SERIBU TAHUN KURANG LIMA PULUH</div>
+    <div class="row g" data-at="s1:sedikit" data-fx="nail"><b>HANYA SEDIKIT</b><span>yang beriman &middot; QS Hud 11:40</span></div>
+  </div>
+</div>
+<div class="p" data-in="s2" data-out="s2:Nuh">
+  <div class="card">
+    <div class="k"><em>29:14</em>SURAH AL-'ANKABUT</div>
+    <div class="ar" data-at="s2:Al-'Ankabut" data-fx="nail">فَلَبِثَ فِيهِمْ أَلْفَ سَنَةٍ إِلَّا خَمْسِينَ عَامًا</div>
+    <div class="id">"...maka dia tinggal bersama mereka seribu tahun kurang lima puluh tahun."</div>
+  </div>
+</div>
+<div class="p" data-in="s2:Nuh" data-out="s3">
+  <div class="card">
+    <div class="k"><em>71:5&ndash;9</em>SURAH NUH</div>
+    <div class="h m">NUH MENYERU</div>
+    <div class="row" data-at="s2:siang" data-fx="nail"><b>SIANG &amp; MALAM</b></div>
+    <div class="row" data-at="s2:terang-terangan" data-fx="nail"><b>TERANG-TERANGAN</b><span>dan diam-diam</span></div>
+    <div class="row r" data-at="s2:menyumbat" data-fx="nail"><b>JARI DI TELINGA</b><span>baju menutup wajah</span></div>
+  </div>
+</div>
+<div class="p" data-in="s3" data-out="s3:Nuh">
+  <div class="card">
+    <div class="k"><em>11:27</em>PARA PEMUKA MENGEJEK</div>
+    <div class="q" data-at="s3:kamu" data-fx="nail">"Kamu cuma manusia biasa."</div>
+    <div class="q" data-at="s3:pengikutmu" data-fx="nail">"Pengikutmu orang-orang rendahan."</div>
+  </div>
+</div>
+<div class="p" data-in="s3:Nuh" data-out="s4">
+  <div class="card">
+    <div class="k"><em>11:29</em>JAWABAN NUH</div>
+    <div class="q" data-at="s3:aku" data-fx="nail">"Aku tidak meminta harta darimu."</div>
+    <div class="h m gold" data-at="s3:Upahku" data-fx="nail">UPAHKU HANYA<br>DARI ALLAH</div>
+  </div>
+</div>
+<div class="p" data-in="s4" data-out="s4:Surah">
+  <div class="card">
+    <div class="k"><em>11:37&ndash;38</em>PERINTAH MEMBUAT KAPAL</div>
+    <div class="h m" data-at="s4:buatlah" data-fx="nail">BUATLAH KAPAL</div>
+    <div class="id">di bawah pengawasan Kami</div>
+    <div class="row r" data-at="s4:Setiap" data-fx="nail"><b>DIEJEK</b><span>setiap kali pemuka kaumnya lewat</span></div>
+  </div>
+</div>
+<div class="p" data-in="s4:Surah" data-out="s5">
+  <div class="card">
+    <div class="k"><em>54:13</em>SURAH AL-QAMAR</div>
+    <div class="ar">وَحَمَلْنَـٰهُ عَلَىٰ ذَاتِ أَلْوَٰحٍ وَدُسُرٍ</div>
+    <div class="pp"><span data-at="s4:papan" data-fx="stamp2">PAPAN</span><i data-at="s4:dan" data-fx="fade">&amp;</i><span data-at="s4:pasak" data-fx="stamp2">PASAK</span></div>
+  </div>
+</div>
+<div class="p" data-in="s5" data-out="s5:Nuh">
+  <div class="card">
+    <div class="k"><em>54:11&ndash;12</em>KETIKA PERINTAH DATANG</div>
+    <div class="row t" data-at="s5:langit" data-fx="nail"><b>PINTU LANGIT TERBUKA</b><span>air tercurah</span></div>
+    <div class="row t" data-at="s5:menyemburkan" data-fx="nail"><b>BUMI MENYEMBUR</b><span>mata air</span></div>
+  </div>
+</div>
+<div class="p" data-in="s5:Nuh" data-out="s6">
+  <div class="card">
+    <div class="k"><em>11:40&ndash;41</em>NAIK KE KAPAL</div>
+    <div class="row" data-at="s5:sepasang" data-fx="nail"><b>SEPASANG</b><span>dari setiap jenis hewan</span></div>
+    <div class="ar sm" data-at="s5:Naiklah" data-fx="nail">ٱرْكَبُوا۟ فِيهَا بِسْمِ ٱللَّهِ مَجْر۪ىٰهَا وَمُرْسَىٰهَآ</div>
+    <div class="id" data-at="s5:Naiklah" data-fx="nail">"Naiklah, dengan nama Allah, saat berlayar dan berlabuh."</div>
+  </div>
+</div>
+<div class="p" data-in="s6" data-out="s6:Nuh">
+  <div class="card">
+    <div class="k"><em>11:42</em>SURAH HUD</div>
+    <div class="h m" data-at="s6:gelombang" data-fx="nail">GELOMBANG<br>SETINGGI GUNUNG</div>
+  </div>
+</div>
+<div class="p" data-in="s6:Nuh" data-out="s7">
+  <div class="card">
+    <div class="k"><em>11:42&ndash;43</em>NUH DAN ANAKNYA</div>
+    <div class="q" data-at="s6:naiklah" data-fx="nail">"Naiklah bersama kami."</div>
+    <div class="q dim" data-at="s6:aku" data-fx="nail">"Aku akan berlindung ke gunung."</div>
+    <div class="row t" data-at="s6:Gelombang" data-fx="nail"><b>GELOMBANG MEMISAHKAN</b></div>
+  </div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Kapal">
+  <div class="card">
+    <div class="k"><em>11:44</em>SURAH HUD</div>
+    <div class="ar" data-at="s7:wahai" data-fx="nail">وَقِيلَ يَـٰٓأَرْضُ ٱبْلَعِى مَآءَكِ وَيَـٰسَمَآءُ أَقْلِعِى</div>
+    <div class="id" data-at="s7:wahai" data-fx="nail">"Wahai bumi, telanlah airmu. Wahai langit, berhentilah."</div>
+    <div class="row g" data-at="s7:Judi" data-fx="nail"><b>BUKIT JUDI</b><span class="arw">وَٱسْتَوَتْ عَلَى ٱلْجُودِىِّ</span></div>
+  </div>
+</div>
+<div class="p" data-in="s7:Kapal" data-out="s8">
+  <div class="card">
+    <div class="k"><em>54:15</em>SURAH AL-QAMAR</div>
+    <div class="h m gold">DIJADIKAN TANDA</div>
+    <div class="q" data-at="s7:Adakah" data-fx="nail">Adakah yang mau mengambil pelajaran?</div>
+  </div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="card">
+    <div class="k"><em>950</em>TAHUN MENYERU</div>
+    <div class="h m">TIDAK BERHENTI<br>WALAU DITERTAWAKAN</div>
+    <div class="q gold" data-at="s8:Menurut" data-fx="nail">Berapa lama kamu sanggup bertahan pada hal yang benar?</div>
+  </div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">KISAH DALAM AL-QUR&#39;AN &middot; EP 05</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":8.046,"s2":8.206,"s2e":20.969,"s3":21.129,"s3e":30.984,"s4":31.144,"s4e":43.319,"s5":43.479,"s5e":56.71,"s6":56.87,"s6e":67.456,"s7":67.616,"s7e":78.613,"s8":78.773,"s8e":86.19,"end":86.19,"dur":89.19,"outro":86.44,"HS":[38.986,39.201,39.416,39.631,39.846,40.061,40.276,40.491,40.706,40.921,41.136,41.351,41.566,41.781,41.996,42.211,42.426,42.641,42.856,43.071,43.286,43.501,43.716,43.931,44.146],"LT":[45.672,47.103,48.726,53.454,58.235,58.893,65.868,68.019]},AT={"s1:lima":1.423,"s1:Selama":2.475,"s1:kaumnya":4.519,"s1:sedikit":7.148,"s2:Tapi":16.31,"s2:menyumbat":16.913,"s2:menutupi":19.158,"s3:Nuh":27.068,"s3:mengejek":22.317,"s3:Upahku":29.823,"s4:buatlah":32.733,"s4:pengawasan":34.173,"s4:membangun":35.783,"s4:Setiap":36.936,"s4:mengejeknya":38.964,"s4:Surah":39.823,"s4:papan":42.436,"s4:pasak":42.947,"s5:langit":45.572,"s5:terbuka":45.881,"s5:tercurah":46.903,"s5:bumi":47.832,"s5:menyemburkan":48.126,"s5:mata":48.699,"s5:sepasang":50.92,"s5:orang-orang":52.685,"s5:Naiklah":53.954,"s5:berlabuh":56.291,"s6:gelombang":58.035,"s6:gunung":58.793,"s6:Nuh":59.714,"s6:anaknya":60.38,"s6:menjawab":63.102,"s6:Gelombang":65.568,"s7:Lalu":67.619,"s7:berhentilah":71.628,"s7:Air":72.461,"s7:berlabuh":73.545,"s7:Judi":74.567,"s7:Kapal":75.178,"s8:Menurut":82.924,"s2:Nuh":12.15,"s2:Al-'Ankabut":10.261,"s2:siang":13.11,"s2:terang-terangan":14.348,"s3:kamu":22.96,"s3:pengikutmu":24.756,"s3:aku":27.842,"s4:dan":42.793,"s5:Nuh":49.943,"s6:naiklah":61.363,"s6:aku":63.778,"s7:wahai":69.043,"s7:Adakah":77.034},DUR=89.19,OUT=86.44;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ nail:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:''},t-.001);tl.fromTo(e,{x:-70,opacity:0},{x:0,opacity:1,duration:.24,ease:'power3.in'},t);tl.fromTo(e,{y:-5},{y:0,duration:.18,ease:'bounce.out'},t+.24);},
+ stamp2:(e,t)=>{gsap.set(e,{opacity:0});tl.fromTo(e,{y:-60,scale:1.15,opacity:0},{y:0,scale:1,opacity:1,duration:.2,ease:'power4.in'},t);tl.fromTo(e,{rotation:-3},{rotation:0,duration:.3,ease:'elastic.out(1,.4)'},t+.2);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{x:-1150,rotation:-1.6,opacity:1},{x:0,rotation:-1.6,duration:.3,ease:'power3.in'},a-.14);tl.fromTo(p,{y:-14,rotation:-1.6},{y:0,rotation:0,duration:.34,ease:'bounce.out'},a+.16);},POUT=(tl,p,b)=>tl.to(p,{x:1150,rotation:1.2,duration:.28,ease:'power2.in'},b-.28);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{clipPath:'inset(0 100% 0 0)'});tl.to('#outro',{clipPath:'inset(0 0% 0 0)',duration:.42,ease:'power4.in'},OUT-.1);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

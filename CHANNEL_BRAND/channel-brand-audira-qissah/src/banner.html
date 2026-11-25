@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Amiri:wght@700&display=block" rel="stylesheet">
+<style>
+:root{--forest:#0B3D2E;--forest-deep:#072a20;--tosca:#00B894;--lime:#A3E635;--orange:#FF6A3D;--white:#FFFFFF}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:2560px;height:1440px;overflow:hidden;background:var(--forest)}
+body{position:relative;font-family:'Space Grotesk',sans-serif;color:var(--white)}
+.bg{position:absolute;inset:0;background:radial-gradient(ellipse 1400px 700px at 50% 50%,#0f4a38 0%,var(--forest) 55%,var(--forest-deep) 100%)}
+.pattern{position:absolute;inset:0;
+  -webkit-mask-image:linear-gradient(90deg,#000 0%,rgba(0,0,0,.55) 22%,transparent 34%,transparent 66%,rgba(0,0,0,.55) 78%,#000 100%);
+          mask-image:linear-gradient(90deg,#000 0%,rgba(0,0,0,.55) 22%,transparent 34%,transparent 66%,rgba(0,0,0,.55) 78%,#000 100%)}
+svg.arch{position:absolute;bottom:0}
+.band{position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(163,230,53,.32) 20%,rgba(163,230,53,.32) 80%,transparent)}
+.safe{position:absolute;left:507px;top:508px;width:1546px;height:423px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:38px}
+.row{display:flex;align-items:center;gap:52px}
+.row img{height:118px;display:block}
+.divider{width:4px;height:136px;background:var(--tosca);border-radius:2px}
+.title{display:flex;flex-direction:column;gap:18px}
+.title .t{display:flex;align-items:baseline;gap:30px}
+.title h1{font-weight:700;font-size:134px;line-height:.9;letter-spacing:-3px}
+.title h1 span{color:var(--orange)}
+.title .ar{font-family:'Amiri',serif;font-weight:700;font-size:80px;line-height:1;color:var(--lime);position:relative;top:-14px;direction:rtl}
+.title p{font-weight:500;font-size:33px;color:var(--lime);letter-spacing:.5px}
+.chips{display:flex;gap:22px}
+.chips div{font-weight:500;font-size:26px;padding:10px 24px;border:2px solid rgba(255,255,255,.28);border-radius:999px;color:rgba(255,255,255,.92)}
+.chips div b{display:inline-block;width:10px;height:10px;transform:rotate(45deg);background:var(--tosca);margin-right:14px;vertical-align:middle;position:relative;top:-2px}
+</style></head><body>
+<div class="bg"></div>
+<!-- 8-point star (khatam) tiling, faded toward the centre -->
+<svg class="pattern" width="2560" height="1440">
+  <defs>
+    <pattern id="k" width="120" height="120" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#00B894" stroke-opacity=".30" stroke-width="1.6" transform="translate(60 60)">
+        <rect x="-34" y="-34" width="68" height="68"/>
+        <rect x="-34" y="-34" width="68" height="68" transform="rotate(45)"/>
+        <circle r="14" stroke="#A3E635" stroke-opacity=".22"/>
+        <path d="M-60 0H-48M48 0H60M0 -60V-48M0 48V60"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="2560" height="1440" fill="url(#k)"/>
+</svg>
+<!-- arch silhouettes at the outer edges (TV/desktop only) -->
+<svg class="arch" style="left:90px" width="300" height="560" viewBox="0 0 300 560"><path d="M20 560V230C20 120 150 40 150 0C150 40 280 120 280 230V560Z" fill="#072a20" fill-opacity=".75" stroke="#00B894" stroke-opacity=".35" stroke-width="3"/></svg>
+<svg class="arch" style="right:90px" width="300" height="560" viewBox="0 0 300 560"><path d="M20 560V230C20 120 150 40 150 0C150 40 280 120 280 230V560Z" fill="#072a20" fill-opacity=".75" stroke="#00B894" stroke-opacity=".35" stroke-width="3"/></svg>
+<div class="band" style="top:452px"></div>
+<div class="band" style="top:986px"></div>
+<div class="safe">
+  <div class="row">
+    <img src="horizontal-reversed.svg" alt="audira multimedia digital">
+    <div class="divider"></div>
+    <div class="title"><div class="t"><h1>Qissah<span>.</span></h1><div class="ar">قِصَّة</div></div><p>Kisah Islam &amp; hikmah, dituturkan visual</p></div>
+  </div>
+  <div class="chips">
+    <div><b></b>Kisah Sahabat &amp; Ulama</div>
+    <div><b></b>Sejarah Islam</div>
+    <div><b></b>Cerita Hikmah</div>
+    <div><b></b>Rujukan Al-Qur'an &amp; Hadis</div>
+  </div>
+</div>
+</body></html>

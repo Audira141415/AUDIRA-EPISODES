@@ -1,0 +1,192 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP07_KOREK_API_GAS",
+  "topic": "EP07 Korek Api Gas",
+  "createdAt": "2026-11-12T10:06:29.704Z",
+  "updatedAt": "2026-11-13T12:24:27.873Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.704Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T23:54:13.079Z",
+      "note": "Riset bersumber: research/SOURCE_REGISTER.md + RESEARCH_REPORT.md"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-13T00:01:58.242Z",
+      "doneAt": "2026-11-13T00:01:58.242Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T23:54:13.079Z",
+      "doneAt": "2026-11-12T23:54:13.079Z",
+      "note": "Disetujui pengguna 2026-11-13 (acc menyeluruh di chat: \"langsung saja approve\"). Gaya belum dipilih. 198 kata."
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit (EP04 Standard)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-13T00:01:58.312Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [],
+      "doneAt": "2026-11-13T00:02:04.218Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T04:43:45.850Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-13T04:41:42.222Z",
+      "startedAt": "2026-11-13T04:41:42.222Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci + visual audit",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T04:43:45.850Z",
+          "text": "sync: 1 gambar draf/contact sheet; acc tidak tercatat, disimpulkan karena tahap sesudahnya sudah ada"
+        },
+        {
+          "at": "2026-11-13T05:01:09.894Z",
+          "text": "sync: 1 gambar draf/contact sheet; acc tidak tercatat, disimpulkan karena tahap sesudahnya sudah ada"
+        }
+      ],
+      "approved": true,
+      "approvedAt": null,
+      "approvalSource": "inferred",
+      "doneAt": "2026-11-13T04:58:36.716Z",
+      "startedAt": "2026-11-13T04:43:35.695Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T12:24:27.873Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        }
+      ],
+      "doneAt": "2026-11-13T12:06:00.877Z",
+      "startedAt": "2026-11-13T12:06:00.877Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:56.314Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-13T00:20:00.735Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "startedAt": "2026-11-12T10:06:29.705Z",
+      "doneAt": "2026-11-13T00:04:38.039Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "cara-kerja-benda-EP07",
+    "wordCount": 198,
+    "title": "Batu Api Korekmu Bukan Batu",
+    "estimateSec": "79–88",
+    "style": "COMICFORGE",
+    "approvalSource": "izin menyeluruh pengguna 2026-11-13",
+    "speechSec": 80.405,
+    "filmSec": 83.41,
+    "wpm": 148,
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-13T12:24:27.873Z",
+  "resetNote": "2026-11-13: riset/naskah/style/QA lama hasil skrip luar (placeholder) diarsipkan ke _review/_ARSIP_GENERATED_2026-11-12/; mulai ulang dari riset. 2026-11-13: riset + naskah baru selesai, naskah di-acc; berikutnya gerbang style.",
+  "handoverLog": [
+    {
+      "at": "2026-11-13T04:58:49.495Z",
+      "doing": "EP07 draf poles r5 selesai (skor juri r4 3.0, empat putaran tertahan di 3.0), belum dinilai ulang. Belum ada MP4.",
+      "next": "Sesi baru: juri buta draft/contact-sheet.jpg vs style/cover-reference.png (F:/AUDIRA-SKILL-MOTION/qa/jury.md). Sisa lemah: nozzle s5 nyaris tak terlihat, batang ferrocerium s2 polos, flame s7 belum dicek juri. Setelah LOLOS: draft approved (izin menyeluruh 2026-11-13) -> bash _tools/final.sh EP07_KOREK_API_GAS -> npm run sign (--c2pa) -> npm run deliver -> NOTES/QA/index."
+    },
+    {
+      "at": "2026-11-13T05:09:10.634Z",
+      "doing": "EP07 draf poles r6-r8 selesai di project/world3d.js (tinta x3.8, Ben-Day 17px 4 band, burst kuning midground per stasiun, kamera s1/s4/s6 mundur, api lathe inti maju). Juri r6 3,6 / r7 3,6 / r8 3,4: belum LOLOS. Sheet 3x3 1200px di draft/contact-sheet.jpg (frame 4.85,9.6,21,31,37.3,44.2,67.6,75,82.5), cover-topic diperbarui. Belum ada MP4. Cadangan r5: scratchpad world3d.r5.js.",
+      "files": [
+        "EP07_KOREK_API_GAS/project/world3d.js",
+        "EP07_KOREK_API_GAS/draft/contact-sheet.jpg",
+        "EP07_KOREK_API_GAS/style/cover-topic.png"
+      ],
+      "next": "Sesi baru: poles r9 lalu juri buta lagi. Perbaikan yang diminta juri r8: (1) satu beat korek UTUH terbaca sebagai benda (mis. s3 kamera lebih jauh atau s1 akhir), (2) jempol oranye terbaca kacang/batu api: kecilkan atau ganti warna kulit lebih jelas + kuku, (3) roda & rumah roda larut dalam halftone latar: kurangi saturasi/kontras latar (BGF + burst mgB opacity ~0.6) dan beri roda pita spekular, (4) s6 ganti sudut/skala agar beda dari hook, (5) 'BLUB! BLUB!' terpotong kiri (word x 0.0 -> ~0.4), (6) gelembung s5 variasi ukuran depan-belakang, (7) stempel 85% s8 beri ruang. Setelah LOLOS: update draft approved (izin menyeluruh 2026-11-13, tanpa field note) -> handover -> bash _tools/final.sh EP07_KOREK_API_GAS (background) -> npm run sign --c2pa -> npm run deliver -> NOTES/QA_REPORT/lesson/index."
+    },
+    {
+      "at": "2026-11-13T05:34:30.169Z",
+      "doing": "EP07 rebuild r9: project/world3d.js ditulis ulang dari nol (latar Ben-Day ungu/biru + sinar, burst kuning-merah per beat, onomatope raksasa di dunia, pecahan tetra di depan, korek magenta potong-belah, api datar bertinta). Juri buta r9 (putaran 1 dari 3 setelah rebuild): 3,33 (L3 M4 D4 C3 Mo3 R3), PERLU POLES. Sheet 3x3 di draft/contact-sheet.jpg (3.8,9.8,23.5,32,38.5,44,57.4,67.6,74), cover-topic diperbarui. Cadangan r8: scratchpad sesi lama world3d.r8.js. Belum ada MP4.",
+      "files": [
+        "EP07_KOREK_API_GAS/project/world3d.js",
+        "EP07_KOREK_API_GAS/draft/contact-sheet.jpg",
+        "EP07_KOREK_API_GAS/style/cover-topic.png"
+      ],
+      "next": "Sesi baru, poles r10 lalu juri buta (sisa 2 putaran): (1) s5 gas+udara: satu subjek jelas, kamera profil dekat nozzle, jet kerucut ramping (blob lebih sedikit/kecil), panah udara lebih sederhana, kurangi sinar di beat itu; (2) onomatope jangan keluar frame: ukuran <=0.95 (BLUB! BLUB!); (3) lighting: arah key lebih jelas, pita bayangan halftone lebih lebar di sisi gelap (ambang ndl HF), drop shadow/kontak; (4) s2 rod beri konteks (gagang merah + striker terlihat utuh, kamera mundur); (5) kontinuitas: palet latar beat berdekatan sekeluarga + whip terlihat; (6) pilih waktu snapshot saat kalimat caption utuh. Lalu juri -> bila LOLOS: update draft approved -> final.sh -> sign -> deliver -> docs."
+    },
+    {
+      "at": "2026-11-13T12:09:45.292Z",
+      "doing": "FINAL_VIDEO.mp4 EP07 sudah dirender 2026-11-13 19:06 via _tools/final.sh (60 fps, -14.0 LUFS, TP -1.8 dBTP, metadata kepemilikan). Belum ditandatangani, belum deliver. Acc draf dari pengguna 2026-11-13 'Ya, render final' (juri buta <4).",
+      "files": [
+        "EP07_KOREK_API_GAS/FINAL_VIDEO.mp4"
+      ],
+      "next": "JANGAN render ulang. Dari F:/AUDIRA-SKILL-MOTION/starter: npm run sign -- <EP07>/FINAL_VIDEO.mp4 --title=\"Batu Api Korekmu Bukan Batu\" --id=AUDIRA-cara-kerja-benda-EP07 --c2pa -> npm run deliver -- <EP07>/FINAL_VIDEO.mp4 (perbaiki RED) -> NOTES.md, QA_REPORT.md, record_score final, append_lesson, update final/delivery, SERIES_PLAN.md + MASTER_INDEX.md."
+    }
+  ],
+  "handover": {
+    "at": "2026-11-13T12:09:45.292Z",
+    "doing": "FINAL_VIDEO.mp4 EP07 sudah dirender 2026-11-13 19:06 via _tools/final.sh (60 fps, -14.0 LUFS, TP -1.8 dBTP, metadata kepemilikan). Belum ditandatangani, belum deliver. Acc draf dari pengguna 2026-11-13 'Ya, render final' (juri buta <4).",
+    "files": [
+      "EP07_KOREK_API_GAS/FINAL_VIDEO.mp4"
+    ],
+    "next": "JANGAN render ulang. Dari F:/AUDIRA-SKILL-MOTION/starter: npm run sign -- <EP07>/FINAL_VIDEO.mp4 --title=\"Batu Api Korekmu Bukan Batu\" --id=AUDIRA-cara-kerja-benda-EP07 --c2pa -> npm run deliver -- <EP07>/FINAL_VIDEO.mp4 (perbaiki RED) -> NOTES.md, QA_REPORT.md, record_score final, append_lesson, update final/delivery, SERIES_PLAN.md + MASTER_INDEX.md."
+  }
+}

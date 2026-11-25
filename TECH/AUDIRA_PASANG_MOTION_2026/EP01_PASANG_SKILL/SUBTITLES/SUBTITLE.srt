@@ -1,0 +1,296 @@
+1
+00:00:00,112 --> 00:00:00,897
+Satu kalimat,
+
+2
+00:00:00,917 --> 00:00:03,260
+jadi film tiga dimensi.
+
+3
+00:00:03,280 --> 00:00:04,963
+Tapi Claude belum bisa,
+
+4
+00:00:04,983 --> 00:00:06,294
+sampai satu folder masuk ke
+
+5
+00:00:06,314 --> 00:00:07,244
+tempat yang benar.
+
+6
+00:00:07,264 --> 00:00:08,541
+Folder itu skill
+
+7
+00:00:08,561 --> 00:00:09,691
+audira-motion.
+
+8
+00:00:09,711 --> 00:00:11,332
+Isinya arahan sutradara,
+
+9
+00:00:11,352 --> 00:00:11,998
+mesin gaya,
+
+10
+00:00:12,018 --> 00:00:13,183
+dan kerangka proyek.
+
+11
+00:00:13,203 --> 00:00:14,142
+Sekali pasang,
+
+12
+00:00:14,162 --> 00:00:15,412
+Claude Code tahu cara membuat
+
+13
+00:00:15,432 --> 00:00:16,944
+film vertikal dan merendernya
+
+14
+00:00:16,964 --> 00:00:17,873
+di komputermu.
+
+15
+00:00:17,893 --> 00:00:19,003
+Harus Claude Code ya,
+
+16
+00:00:19,023 --> 00:00:20,303
+chat biasa di browser tidak
+
+17
+00:00:20,323 --> 00:00:21,277
+bisa merender.
+
+18
+00:00:21,297 --> 00:00:21,943
+Siapkan dulu.
+
+19
+00:00:21,963 --> 00:00:22,717
+Akses Claude Code,
+
+20
+00:00:22,737 --> 00:00:24,094
+yang butuh paket berbayar atau
+
+21
+00:00:24,114 --> 00:00:25,596
+akun API.
+
+22
+00:00:25,616 --> 00:00:27,361
+Node.js versi dua puluh dua
+
+23
+00:00:27,381 --> 00:00:29,048
+koma tiga belas ke atas.
+
+24
+00:00:29,068 --> 00:00:32,114
+Lalu ffmpeg:
+
+25
+00:00:32,134 --> 00:00:32,888
+di Windows,
+
+26
+00:00:32,908 --> 00:00:34,390
+buka PowerShell dan ketik
+
+27
+00:00:34,410 --> 00:00:36,769
+winget install ffmpeg.
+
+28
+00:00:36,789 --> 00:00:37,481
+Tutup jendelanya,
+
+29
+00:00:37,501 --> 00:00:38,341
+buka lagi.
+
+30
+00:00:38,361 --> 00:00:39,884
+Sisakan disk lima giga.
+
+31
+00:00:39,904 --> 00:00:41,123
+Sekarang ekstrak ZIP paket
+
+32
+00:00:41,143 --> 00:00:41,571
+skill-nya.
+
+33
+00:00:41,591 --> 00:00:43,011
+Salin foldernya ke sini:
+
+34
+00:00:43,031 --> 00:00:44,234
+folder penggunamu,
+
+35
+00:00:44,254 --> 00:00:44,900
+titik claude,
+
+36
+00:00:44,920 --> 00:00:46,881
+skills, audira-motion.
+
+37
+00:00:46,901 --> 00:00:48,290
+Kalau foldernya belum ada,
+
+38
+00:00:48,310 --> 00:00:49,759
+buat sendiri.
+
+39
+00:00:49,779 --> 00:00:50,981
+Ini jebakan paling sering.
+
+40
+00:00:51,001 --> 00:00:53,249
+SKILL.md harus tepat di dalam
+
+41
+00:00:53,269 --> 00:00:54,178
+folder itu.
+
+42
+00:00:54,198 --> 00:00:55,556
+Kalau hasil ekstrak membuat
+
+43
+00:00:55,576 --> 00:00:56,898
+folder di dalam folder,
+
+44
+00:00:56,918 --> 00:00:57,687
+Claude tidak akan
+
+45
+00:00:57,707 --> 00:00:58,487
+menemukannya.
+
+46
+00:00:58,507 --> 00:00:59,401
+Buka foldernya,
+
+47
+00:00:59,421 --> 00:01:02,026
+pastikan SKILL.md langsung
+
+48
+00:01:02,046 --> 00:01:03,008
+terlihat.
+
+49
+00:01:03,028 --> 00:01:03,999
+Tutup Claude Code,
+
+50
+00:01:04,019 --> 00:01:04,847
+buka lagi.
+
+51
+00:01:04,867 --> 00:01:06,288
+Ketik garis miring,
+
+52
+00:01:06,308 --> 00:01:07,852
+audira-motion.
+
+53
+00:01:07,872 --> 00:01:09,082
+Muncul di daftar?
+
+54
+00:01:09,102 --> 00:01:10,641
+Berarti skill terpasang.
+
+55
+00:01:10,661 --> 00:01:11,574
+Tidak muncul?
+
+56
+00:01:11,594 --> 00:01:12,751
+Hampir selalu soal letak
+
+57
+00:01:12,771 --> 00:01:15,125
+SKILL.md tadi.
+
+58
+00:01:15,145 --> 00:01:16,348
+Di film pertama,
+
+59
+00:01:16,368 --> 00:01:17,756
+Claude minta izin membuat
+
+60
+00:01:17,776 --> 00:01:18,639
+folder proyek.
+
+61
+00:01:18,659 --> 00:01:20,249
+Lalu mengunduh paket dan
+
+62
+00:01:20,269 --> 00:01:21,147
+browser render,
+
+63
+00:01:21,167 --> 00:01:22,555
+sekitar lima ratus empat puluh
+
+64
+00:01:22,575 --> 00:01:24,094
+mega, dan merender tes
+
+65
+00:01:24,114 --> 00:01:24,716
+singkat.
+
+66
+00:01:24,736 --> 00:01:26,218
+Panduannya menyebut dua sampai
+
+67
+00:01:26,238 --> 00:01:27,058
+sepuluh menit.
+
+68
+00:01:27,078 --> 00:01:28,513
+Proyek berikutnya lebih cepat,
+
+69
+00:01:28,533 --> 00:01:29,881
+tinggal mengarahkan.
+
+70
+00:01:29,901 --> 00:01:31,182
+Skill sudah masuk.
+
+71
+00:01:31,202 --> 00:01:32,250
+Di episode dua,
+
+72
+00:01:32,270 --> 00:01:33,643
+kita sambungkan Claude ke
+
+73
+00:01:33,663 --> 00:01:34,680
+sembilan ratus lebih skill
+
+74
+00:01:34,700 --> 00:01:35,441
+lainnya.
+

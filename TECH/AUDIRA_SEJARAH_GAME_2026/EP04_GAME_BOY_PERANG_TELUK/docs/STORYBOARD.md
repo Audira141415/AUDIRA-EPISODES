@@ -1,0 +1,13 @@
+# STORYBOARD — EP04_GAME_BOY_PERANG_TELUK
+
+Waktu dari suara Cartesia yang sudah dikunci (`project/timeline.json`).
+
+- **s1** 0.1–5.3 dtk: Sebuah Game Boy terbakar dan meleleh kena bom. Tapi saat dinyalakan, ia masih bisa main Tetris.
+- **s2** 5.4–19.5 dtk: Game Boy adalah konsol genggam Nintendo yang dirilis tahun seribu sembilan ratus delapan puluh sembilan. Di Amerika, konsol ini d…
+- **s3** 19.7–26.0 dtk: Saat baraknya terkena bom, Game Boy miliknya ikut terbakar. Bagian depannya meleleh parah.
+- **s4** 26.2–34.0 dtk: Masih dalam masa tugas, Scoggins mengirim konsol itu ke majalah Nintendo Power. Ia berharap Game Boy-nya pengganti, sebagai hadiah khusus Desert Storm. Surat Scoggins dan foto ko…
+- **s7** 55.2–68.5 dtk: Konsol rusak itu lalu dipajang di toko Nintendo di New York sebagai bukti ketangguhannya, terus menyala dan dirawat berkala. Tahun dua ribu …
+- **s8** 68.7–77.3 dtk: Konsol paling tangguh di dunia: kena bom, tetap main Tetris. Konsol game pertamamu dulu masih ada? Ikuti AUDIRA untuk sejarah game …
+- **outro** 77.3–80.3 dtk: kartu AUDIRA, Created by Agus Dwi R., SEJARAH GAME · EP 04.
+
+Kamera: satu dunia 3D bersambung, setiap kunci kamera memakai jangkar kata/adegan. Detail adegan ada di `project/world3d.js`.

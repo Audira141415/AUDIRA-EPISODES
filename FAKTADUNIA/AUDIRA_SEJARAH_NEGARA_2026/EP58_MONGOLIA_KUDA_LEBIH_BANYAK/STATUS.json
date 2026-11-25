@@ -1,0 +1,660 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP58_MONGOLIA_KUDA_LEBIH_BANYAK",
+  "topic": "Mongolia: kuda lebih banyak dari manusia (5,1 juta kuda vs ±3,5 juta penduduk)",
+  "createdAt": "2026-11-23T14:22:56.228Z",
+  "updatedAt": "2026-11-24T12:22:34.829Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.084Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:22:56.229Z",
+      "startedAt": "2026-11-23T14:22:56.229Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.084Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:21:33.775Z",
+      "startedAt": "2026-11-23T14:21:33.775Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.084Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:23:10.941Z",
+      "startedAt": "2026-11-23T14:23:10.941Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:24:13.335Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:24:02.465Z",
+      "startedAt": "2026-11-23T14:24:02.465Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.084Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.000Z",
+      "startedAt": "2026-11-22T06:09:42.000Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:25:37.565Z",
+          "text": "VO Cartesia 83.17 s, 201 kata, project/public/audio/vo.wav + vo-words.json + vo.timing.json. Shotlist docs/SHOTLIST.md lint 0 red. Tahap 1-6 selesai (context, research, style WORLDFORGE, script, setup)."
+        }
+      ],
+      "doneAt": "2026-11-23T14:25:37.565Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.084Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.000Z",
+      "startedAt": "2026-11-22T16:52:30.000Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:21:01.772Z",
+          "text": "sync: look.json PASS"
+        },
+        {
+          "at": "2026-11-24T07:51:49.386Z",
+          "text": "WORLDFORGE juri 3.33 x2 → ganti POLYVERSE (G21 docs ditulis ulang 2026-11-24). Draf POLYVERSE belum dibuat."
+        },
+        {
+          "at": "2026-11-24T07:54:49.990Z",
+          "text": "sync: look.json PASS"
+        },
+        {
+          "at": "2026-11-24T09:49:28.288Z",
+          "text": "s6 POLYVERSE ronde 1: juri buta LOLOS 3.83 (L4 M4 D3 C3 Mo5 R4), self 4.0. Cover topik baru di style/cover-topic.png. THEME_CHECK diperbarui (Style: POLYVERSE)."
+        }
+      ],
+      "doneAt": "2026-11-24T09:49:28.288Z",
+      "startedAt": "2026-11-24T07:15:25.012Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T10:06:02.661Z",
+      "notes": [
+        {
+          "at": "2026-11-24T10:06:02.661Z",
+          "text": "Acc pengguna 2026-11-24: \"Gas render final\" (POLYVERSE, juri 3.83)."
+        },
+        {
+          "at": "2026-11-24T12:16:52.284Z",
+          "text": "QA final s7: ffprobe metadata ok, contact sheet draft/final_qa/FINAL_SHEET.jpg (outro + signature ok), juri buta final 3.83 LOLOS (L3 M4 D3 C4 Mo5 R4)."
+        }
+      ],
+      "startedAt": "2026-11-24T10:06:02.661Z",
+      "doneAt": "2026-11-24T12:16:52.284Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T12:21:47.637Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-24T12:22:34.829Z",
+          "text": "s7: SOCIAL_CAPTIONS.md lolos validator, SUBTITLES.srt (26 cue), NOTES.md, lesson POLYVERSE + GLOBAL, set_best, file perantara dihapus, 3 scheduled review (upload 4 Jan 2027 19.00 WIB)."
+        }
+      ],
+      "doneAt": "2026-11-24T12:22:34.829Z",
+      "startedAt": "2026-11-24T12:17:23.428Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-negara-EP58",
+    "style": "POLYVERSE",
+    "engine": "remotion",
+    "wordCount": 201,
+    "shortTitle": "Mongolia Kuda",
+    "voSeconds": 83.17,
+    "episodeSeconds": 86,
+    "estimatedDuration": {
+      "wordCount": 201,
+      "minSec": 80,
+      "maxSec": 89
+    },
+    "failedStyles": [
+      "WORLDFORGE"
+    ]
+  },
+  "syncedAt": "2026-11-24T12:21:47.637Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-23T14:26:09.405Z",
+      "doing": "Tahap 7 animasi belum dimulai; tahap 1-6 selesai (style WORLDFORGE, VO 83.17 s, shotlist lint 0 red)",
+      "files": [
+        "docs/HANDOFF.md",
+        "docs/SHOTLIST.md",
+        "docs/SCRIPT.md",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Baca docs/HANDOFF.md lalu tulis src/episodes/mongolia (kuda GLB animasi via AnimationMixer.setTime), daftar Composition, cover, sfx, draf + juri, gerbang acc render final",
+      "snapshot": {
+        "episode": "EP58_MONGOLIA_KUDA_LEBIH_BANYAK",
+        "topic": "Mongolia: kuda lebih banyak dari manusia (5,1 juta kuda vs ±3,5 juta penduduk)",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP58",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T14:32:50.147Z",
+      "doing": "Tahap 7: menulis kode scene project/src/episodes/mongolia/ (terrain.ts, Horse.tsx, Props.tsx sudah; Sets/Overlay/timeline/EpisodeMongolia belum). sfx.wav sudah.",
+      "files": [
+        "project/src/episodes/mongolia/terrain.ts",
+        "project/src/episodes/mongolia/Horse.tsx",
+        "project/src/episodes/mongolia/Props.tsx",
+        "docs/HANDOFF.md",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "Baca docs/HANDOFF.md bagian 'sesi 2 → sesi 3', tulis Sets.tsx, Overlay.tsx, timeline.ts, EpisodeMongolia.tsx, daftar di Root.tsx, typecheck, still uji, lalu tahap 8 dan gerbang 9.",
+      "snapshot": {
+        "episode": "EP58_MONGOLIA_KUDA_LEBIH_BANYAK",
+        "topic": "Mongolia: kuda lebih banyak dari manusia (5,1 juta kuda vs ±3,5 juta penduduk)",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP58",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T15:17:07.902Z",
+      "doing": "Tahap 7: kode scene mongolia selesai ditulis + typecheck bersih (timeline.ts, Sets.tsx, Overlay.tsx, EpisodeMongolia.tsx, Root MongoliaPreview/Final). Belum ada still.",
+      "command": "cd project && node scripts/stills.mjs out/t1 1s,5s,9s,15s,22s,30s,38s,45s,48s,55s,59s,63s,68s,72s,77s,81s MongoliaPreview 0.5",
+      "files": [
+        "project/src/episodes/mongolia/timeline.ts",
+        "project/src/episodes/mongolia/Sets.tsx",
+        "project/src/episodes/mongolia/Overlay.tsx",
+        "project/src/episodes/mongolia/EpisodeMongolia.tsx",
+        "project/src/episodes/mongolia/Horse.tsx",
+        "project/src/Root.tsx",
+        "docs/HANDOFF.md"
+      ],
+      "next": "Still uji per babak (lihat docs/HANDOFF.md 'sesi 3 → sesi 4'), perbaiki, cover-topic.png, lalu tahap 8 draf + juri, tahap 9 gerbang acc.",
+      "snapshot": {
+        "episode": "EP58_MONGOLIA_KUDA_LEBIH_BANYAK",
+        "topic": "Mongolia: kuda lebih banyak dari manusia (5,1 juta kuda vs ±3,5 juta penduduk)",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP58",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:28:26.310Z",
+      "doing": "Tahap 7 debug: still uji out/t2 menampilkan langit/terrain/HUD/subtitle benar, tapi kuda/ger/rumput tidak tampil (useModels kemungkinan null / junction polyfork tidak ikut bundle).",
+      "command": "cd project && node scripts/stills.mjs out/t3 1s,5s,9s,15s,22s,30s,38s,45s,48s,55s,59s,63s,68s,72s,77s,81s MongoliaPreview 0.5",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/episodes/mongolia/Horse.tsx",
+        "project/src/episodes/mongolia/EpisodeMongolia.tsx",
+        "project/src/episodes/mongolia/Sets.tsx",
+        "project/src/core/hud/Subtitle.tsx",
+        "project/src/episodes/mongolia/Overlay.tsx"
+      ],
+      "next": "Ikuti 'Update akhir sesi 3' di docs/HANDOFF.md: debug loading GLB, still ulang, perbaiki framing, cover-topic.png, tahap 8, gerbang acc tahap 9.",
+      "snapshot": {
+        "episode": "EP58_MONGOLIA_KUDA_LEBIH_BANYAK",
+        "topic": "Mongolia: kuda lebih banyak dari manusia (5,1 juta kuda vs ±3,5 juta penduduk)",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP58",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:12:49.013Z",
+      "doing": "Sesi 4: blocker kuda tidak tampil beres (advance() setelah model load); framing diperbaiki; cover + draft tahap 8 sedang render",
+      "command": "npm run cover -- MongoliaFinal --episode=.. --at=4.6s --force ; npm run draft -- MongoliaPreview --frames=1.5s,9s,15s,38s,45s,59s,69s,81s --clip=auto (log project/out/stage8.log)",
+      "files": [
+        "project/src/episodes/mongolia/Horse.tsx",
+        "project/src/episodes/mongolia/timeline.ts",
+        "project/src/episodes/mongolia/Props.tsx",
+        "project/src/episodes/mongolia/Sets.tsx",
+        "docs/HANDOFF.md"
+      ],
+      "next": "qa-scene, draft/THEME_CHECK.md, skor self + juri buta, gerbang tahap 9 (acc pengguna)",
+      "snapshot": {
+        "episode": "EP58_MONGOLIA_KUDA_LEBIH_BANYAK",
+        "topic": "Mongolia: kuda lebih banyak dari manusia (5,1 juta kuda vs ±3,5 juta penduduk)",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP58",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:17:31.733Z",
+      "doing": "Tahap 8: draft/DRAFT_SHEET.jpg + audit lolos (ceilings 5, kamera 5/5), cover style/cover-topic.png, THEME_CHECK ditulis, self score 4.17 dicatat. Juri buta subagent berjalan; qa-scene berjalan (log draft/qa-scene.log, out draft/qa)",
+      "command": "node scripts/qa-scene.mjs --comp=MongoliaPreview --cuts=3.2,6.7,12.4,19.5,27.3,36.0,41.5,44.0,50.9,57.2,60.3,66.6,69.6,74.0,78.9 --concurrency=2 --out=../draft/qa",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "style/cover-topic.png"
+      ],
+      "next": "Bila juri belum tercatat: juri buta ulang (qa/jury.md, DRAFT_SHEET + worldforge.jpg + jury_input.json) → record_score judge jury. Cek qa-scene. Lalu gerbang tahap 9: tampilkan sheet, skor juri, durasi 86 s, G18c → tunggu acc → render:final --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav",
+      "snapshot": {
+        "episode": "EP58_MONGOLIA_KUDA_LEBIH_BANYAK",
+        "topic": "Mongolia: kuda lebih banyak dari manusia (5,1 juta kuda vs ±3,5 juta penduduk)",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP58",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:18:23.429Z",
+      "doing": "Tahap 8 ronde 1 selesai: juri buta 3.33 PERLU POLES (self 4.17). qa-scene mungkin masih/sudah jalan (draft/qa-scene.log). Rencana poles ronde 2 lengkap di docs/HANDOFF.md bagian 'Akhir sesi 4 → sesi 5'.",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/episodes/mongolia/timeline.ts",
+        "project/src/episodes/mongolia/EpisodeMongolia.tsx",
+        "project/src/episodes/mongolia/terrain.ts",
+        "project/src/episodes/mongolia/Props.tsx",
+        "project/src/episodes/mongolia/Overlay.tsx"
+      ],
+      "next": "Poles ronde 2 (payoff ridge, aerial valley, cahaya sore rim, tekstur terrain/ger, kartu HUD ringkas) → npm run draft → self + juri buta → gerbang tahap 9 minta acc pengguna",
+      "snapshot": {
+        "episode": "EP58_MONGOLIA_KUDA_LEBIH_BANYAK",
+        "topic": "Mongolia: kuda lebih banyak dari manusia (5,1 juta kuda vs ±3,5 juta penduduk)",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP58",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:38:00.857Z",
+      "doing": "s5: QaProbe dipasang di EpisodeMongolia (FilmScene child), qa-scene jalan ulang (draft/qa-scene.log)",
+      "command": "node scripts/qa-scene.mjs --comp=MongoliaPreview --cuts=3.2,6.7,12.4,19.5,27.3,36.0,41.5,44.0,50.9,57.2,60.3,66.6,69.6,74.0,78.9 --concurrency=2 --out=../draft/qa",
+      "files": [
+        "project/src/episodes/mongolia/EpisodeMongolia.tsx"
+      ],
+      "next": "Poles ronde 2 (rencana di docs/HANDOFF.md 'Akhir sesi 4 → sesi 5') → npm run draft → self + juri buta → gerbang tahap 9",
+      "snapshot": {
+        "episode": "EP58_MONGOLIA_KUDA_LEBIH_BANYAK",
+        "topic": "Mongolia: kuda lebih banyak dari manusia (5,1 juta kuda vs ±3,5 juta penduduk)",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP58",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:50:34.305Z",
+      "doing": "s5: WORLDFORGE gagal 2 ronde juri (3.33/3.33, material 2). Ganti style ke POLYVERSE (aset low-poly faset). G21: tulis ulang ART_DIRECTION/STORYBOARD/ASSET_MANIFEST baris Style: POLYVERSE, STYLE_DECISION.md; look baru di EpisodeMongolia MOODS (pastel fajar, sun samping rendah ffbf8a, exposure 0.82, env 0.25), flatShading terrain/kuda, debu dodecahedron. QaProbe sudah terpasang; SFX TARGET_LUFS -28 (G18c gap kini ~12.6 LU).",
+      "files": [
+        "project/src/episodes/mongolia/EpisodeMongolia.tsx",
+        "project/src/episodes/mongolia/Props.tsx",
+        "project/src/episodes/mongolia/terrain.ts",
+        "project/sfx/cues/auto.py",
+        "style/STYLE_DECISION.md",
+        "docs/ART_DIRECTION.md"
+      ],
+      "next": "cover topik POLYVERSE → npm run draft → self + juri buta (ref quality-bar/polyverse.png) → qa-scene → gerbang tahap 9",
+      "snapshot": {
+        "episode": "EP58_MONGOLIA_KUDA_LEBIH_BANYAK",
+        "topic": "Mongolia: kuda lebih banyak dari manusia (5,1 juta kuda vs ±3,5 juta penduduk)",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP58",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:52:05.439Z",
+      "doing": "s5 selesai: QaProbe terpasang, qa-scene PASS EXIT 0 (look WORLDFORGE), WORLDFORGE gagal juri 2 ronde → style POLYVERSE, docs G21 ditulis, G18c diperbaiki (SFX -28, gap ~12.6 LU)",
+      "files": [
+        "docs/HANDOFF.md",
+        "style/STYLE_DECISION.md",
+        "project/src/episodes/mongolia/EpisodeMongolia.tsx"
+      ],
+      "next": "Look POLYVERSE di kode → still → cover → draft + THEME_CHECK → self + juri buta → qa-scene ulang → gerbang tahap 9 (detail docs/HANDOFF.md 'Sesi 5 → sesi 6')",
+      "snapshot": {
+        "episode": "EP58_MONGOLIA_KUDA_LEBIH_BANYAK",
+        "topic": "Mongolia: kuda lebih banyak dari manusia (5,1 juta kuda vs ±3,5 juta penduduk)",
+        "style": "POLYVERSE",
+        "memoryEpisode": "sejarah-negara-EP58",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:34:20.205Z",
+      "doing": "s6: look POLYVERSE diterapkan (MOODS pastel, Facets flatShading, filter kontras1.07/sat1.12, debu Dodeca, kamera winter+airag); still uji",
+      "command": "node .probe-still.mjs 1.5 9 15 38 59 81",
+      "files": [
+        "project/src/episodes/mongolia/EpisodeMongolia.tsx",
+        "project/src/episodes/mongolia/timeline.ts",
+        "project/src/episodes/mongolia/Props.tsx"
+      ],
+      "next": "cek still → cover → draft contact sheet → THEME_CHECK → juri buta → qa-scene → gerbang",
+      "snapshot": {
+        "episode": "EP58_MONGOLIA_KUDA_LEBIH_BANYAK",
+        "topic": "Mongolia: kuda lebih banyak dari manusia (5,1 juta kuda vs ±3,5 juta penduduk)",
+        "style": "POLYVERSE",
+        "memoryEpisode": "sejarah-negara-EP58",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T10:05:33.956Z",
+      "doing": "s6: berhenti di gerbang tahap 9 menunggu acc pengguna. Juri buta POLYVERSE r1 LOLOS 3.83; qa-scene PASS, qa-video 2 KEDIP salju ditandai ok di review.json; G18c gap ≈12.6 LU; durasi 86 s.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/qa/qa-video.review.json",
+        "style/cover-topic.png"
+      ],
+      "next": "Setelah acc: update stage final approved:true, lalu (background) cd project && npm run render:final -- MongoliaFinal --episode=.. --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc → QA (-14 LUFS, TP<-1, ffprobe metadata) → tahap 10.",
+      "snapshot": {
+        "episode": "EP58_MONGOLIA_KUDA_LEBIH_BANYAK",
+        "topic": "Mongolia: kuda lebih banyak dari manusia (5,1 juta kuda vs ±3,5 juta penduduk)",
+        "style": "POLYVERSE",
+        "memoryEpisode": "sejarah-negara-EP58",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T10:06:14.506Z",
+      "doing": "s6: render final MongoliaFinal (acc pengguna sudah). Restartable: jalankan ulang perintah yang sama, segmen selesai dilewati.",
+      "command": "cd project && node scripts/render-final.mjs --comp=MongoliaFinal --out=../FINAL_EP58_MONGOLIA_KUDA.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=3 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Mongolia: Kuda Lebih Banyak dari Manusia\" --slug=mongolia-kuda --ep=EP58",
+      "next": "QA final (-14 LUFS, TP<-1, ffprobe metadata, cek frame), record_score final juri, lalu tahap 10",
+      "snapshot": {
+        "episode": "EP58_MONGOLIA_KUDA_LEBIH_BANYAK",
+        "topic": "Mongolia: kuda lebih banyak dari manusia (5,1 juta kuda vs ±3,5 juta penduduk)",
+        "style": "POLYVERSE",
+        "memoryEpisode": "sejarah-negara-EP58",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T12:14:47.639Z",
+      "doing": "s6 selesai: final dirender (acc pengguna \"Gas render final\"). FINAL_EP58_MONGOLIA_KUDA.mp4 1080x1920@60, 5160 frame, −13.7 LUFS TP −1.8, metadata + Ed25519/C2PA OK, G18c gap 12.6 LU. Style POLYVERSE (3D Remotion), juri draf 3.83. audit final look: lighting & depth ceiling ≤3 (FINAL_EP58_MONGOLIA_KUDA.look.json).",
+      "files": [
+        "FINAL_EP58_MONGOLIA_KUDA.mp4",
+        "FINAL_EP58_MONGOLIA_KUDA.look.json",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/render-final.log",
+        "docs/HANDOFF.md",
+        "docs/SCRIPT.md",
+        "research/SOURCE_REGISTER.md",
+        "style/cover-topic.png"
+      ],
+      "next": "Sesi C lanjutan: QA final (cek beberapa frame dari MP4 via contact sheet kecil; −13.7 LUFS dalam toleransi −14±0.5), record_score stage final (judge jury, ceilings dari FINAL_*.look.json), update stage final done, lalu tahap 10: SOCIAL_CAPTIONS.md 6 platform + Jadwal Upload (WIB) + Label Konten AI → audira_validate_social_captions, NOTES.md, append_lesson/set_best POLYVERSE, hapus file perantara (project/out/seg, out/dbg, draft MP4 klip), tanya jam upload lalu buat 3 scheduled task review-mongolia-kuda-24h/-72h/-7d, arsipkan sesi lama EP58 (sessionCleanup).",
+      "snapshot": {
+        "episode": "EP58_MONGOLIA_KUDA_LEBIH_BANYAK",
+        "topic": "Mongolia: kuda lebih banyak dari manusia (5,1 juta kuda vs ±3,5 juta penduduk)",
+        "style": "POLYVERSE",
+        "memoryEpisode": "sejarah-negara-EP58",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    }
+  ],
+  "session": 7,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP58 Mongolia Kuda · s2",
+      "at": "2026-11-23T14:26:09.404Z"
+    },
+    {
+      "no": 3,
+      "title": "EP58 Mongolia Kuda · s3",
+      "at": "2026-11-23T14:32:50.147Z"
+    },
+    {
+      "no": 4,
+      "title": "EP58 Mongolia Kuda · s4",
+      "at": "2026-11-23T18:28:26.310Z"
+    },
+    {
+      "no": 5,
+      "title": "EP58 Mongolia Kuda · s5",
+      "at": "2026-11-24T07:18:23.429Z"
+    },
+    {
+      "no": 6,
+      "title": "EP58 Mongolia Kuda · s6",
+      "at": "2026-11-24T07:52:05.439Z"
+    },
+    {
+      "no": 7,
+      "title": "EP58 Mongolia Kuda · s7",
+      "at": "2026-11-24T12:14:47.638Z"
+    }
+  ],
+  "handover": {
+    "at": "2026-11-24T12:14:47.639Z",
+    "doing": "s6 selesai: final dirender (acc pengguna \"Gas render final\"). FINAL_EP58_MONGOLIA_KUDA.mp4 1080x1920@60, 5160 frame, −13.7 LUFS TP −1.8, metadata + Ed25519/C2PA OK, G18c gap 12.6 LU. Style POLYVERSE (3D Remotion), juri draf 3.83. audit final look: lighting & depth ceiling ≤3 (FINAL_EP58_MONGOLIA_KUDA.look.json).",
+    "files": [
+      "FINAL_EP58_MONGOLIA_KUDA.mp4",
+      "FINAL_EP58_MONGOLIA_KUDA.look.json",
+      "draft/DRAFT_SHEET.jpg",
+      "draft/render-final.log",
+      "docs/HANDOFF.md",
+      "docs/SCRIPT.md",
+      "research/SOURCE_REGISTER.md",
+      "style/cover-topic.png"
+    ],
+    "next": "Sesi C lanjutan: QA final (cek beberapa frame dari MP4 via contact sheet kecil; −13.7 LUFS dalam toleransi −14±0.5), record_score stage final (judge jury, ceilings dari FINAL_*.look.json), update stage final done, lalu tahap 10: SOCIAL_CAPTIONS.md 6 platform + Jadwal Upload (WIB) + Label Konten AI → audira_validate_social_captions, NOTES.md, append_lesson/set_best POLYVERSE, hapus file perantara (project/out/seg, out/dbg, draft MP4 klip), tanya jam upload lalu buat 3 scheduled task review-mongolia-kuda-24h/-72h/-7d, arsipkan sesi lama EP58 (sessionCleanup).",
+    "snapshot": {
+      "episode": "EP58_MONGOLIA_KUDA_LEBIH_BANYAK",
+      "topic": "Mongolia: kuda lebih banyak dari manusia (5,1 juta kuda vs ±3,5 juta penduduk)",
+      "style": "POLYVERSE",
+      "memoryEpisode": "sejarah-negara-EP58",
+      "currentStage": "final",
+      "gates": {
+        "final": {
+          "approved": true,
+          "status": "in_progress"
+        }
+      },
+      "voPath": null,
+      "draftScores": [],
+      "finals": [],
+      "draftRounds": 0
+    }
+  }
+}

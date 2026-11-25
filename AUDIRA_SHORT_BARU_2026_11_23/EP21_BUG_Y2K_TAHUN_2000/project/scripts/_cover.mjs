@@ -1,0 +1,11 @@
+import "./lib/tmpdir.mjs";
+import path from "node:path";
+import fs from "node:fs";
+import { bundle } from "@remotion/bundler";
+import { renderStill, selectComposition } from "@remotion/renderer";
+const out = path.resolve(process.argv[2]);
+const serveUrl = await bundle({ entryPoint: path.resolve("src/index.ts") });
+const composition = await selectComposition({ serveUrl, id: "Y2KCover" });
+await renderStill({ serveUrl, composition, output: out, frame: 0 });
+fs.rmSync(serveUrl, { recursive: true, force: true });
+console.log("cover:", out);

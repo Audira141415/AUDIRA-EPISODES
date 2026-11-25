@@ -1,0 +1,13 @@
+EP44 Lensa Raksasa Mercusuar Fresnel (COMICFORGE): 198 kata, 83–91 dtk
+
+Hook: Kubah kaca raksasa berundak aneh seperti sarang lebah kristal di puncak menara mercusuar pemandu kapal laut.
+
+Konteks: Selama ratusan tahun, para pelaut di tengah amukan badai laut malam hari mengandalkan sorotan cahaya menara mercusuar di tebing karang untuk menghindari maut. Banyak orang mengira mercusuar sejak dahulu menggunakan generator lampu sorot raksasa berkekuatan jutaan watt seperti lampu sorot stadion olahraga.
+
+Pengembangan: Faktanya, sebelum era elektrifikasi modern, sumber cahaya mercusuar hanyalah api lampu minyak tanah atau sumbu lilin kecil biasa. Rahasia pancaran cahayanya yang mampu menembus kabut laut pekat sejauh empat puluh kilometer terletak pada mahakarya rekayasa optik bernama Lensa Fresnel.
+
+Penjelasan: Diciptakan oleh fisikawan Prancis Augustin-Jean Fresnel pada tahun seribu delapan ratus dua puluh tiga, lensa ini memecah lensa cembung kaca tebal konvensional yang teramat berat menjadi serangkaian cincin prisma konsentris berundak tipis. Desain geometri berundak ini mampu menangkap hampir seluruh berkas cahaya lampu yang menyebar ke segala arah, lalu membiaskannya secara serentak menjadi satu berkas sinar cahaya paralel yang sangat padat, tajam, dan lurus tanpa menambah bobot kaca berlebih.
+
+Payoff: Inovasi optik revolusioner ini memangkas bobot lensa hingga puluhan kali lipat dan berhasil menyelamatkan puluhan ribu kapal dagang dari kuburan karang tajam samudra.
+
+Outro: Ini AUDIRA, Cara Kerja Benda. Nantikan serial penemuan teknologi menakjubkan berikutnya.

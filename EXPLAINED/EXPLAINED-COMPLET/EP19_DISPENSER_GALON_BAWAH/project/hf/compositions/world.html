@@ -1,0 +1,131 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#06091a}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.04;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.5) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.55) 42%,rgba(0,0,0,0.55) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Outfit,sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#00bcd4;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap');
+.p{font-family:Outfit,sans-serif;line-height:1.35}
+</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="84.17" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN CUPLIKAN ASLI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2" style="top:260px">
+ <div data-at="s1:dispenser" data-fx="pop" style="font-size:52px;font-weight:800;color:#00e5ff;text-transform:uppercase;letter-spacing:.06em">Dispenser Galon Bawah</div>
+ <div data-at="s1:melawan" data-fx="up" style="margin-top:18px;font-size:28px;color:#e0e0e0;opacity:.85">Air melawan gravitasi</div>
+ <div data-at="s1:pompa" data-fx="left" style="margin-top:14px;font-size:24px;color:#00bcd4">Diangkat pompa listrik kecil</div>
+</div>
+
+<div class="p" data-in="s2" data-out="s3" style="top:260px">
+ <div data-at="s2:Dispenser" data-fx="up" style="font-size:30px;font-weight:700;color:#e0e0e0">Dispenser Biasa</div>
+ <div data-at="s2:terbalik" data-fx="left" style="margin-top:12px;font-size:24px;color:#00bcd4">Galon terbalik di atas</div>
+ <div data-at="s2:Masalahnya" data-fx="up" style="margin-top:20px;font-size:28px;font-weight:700;color:#ff6d00">Masalah:</div>
+ <div data-at="s2:berat" data-fx="left" style="margin-top:8px;font-size:24px;color:#e0e0e0;opacity:.85">Galon penuh berat diangkat setinggi dada</div>
+</div>
+
+<div class="p" data-in="s3" data-out="s4" style="top:260px">
+ <div data-at="s3:memindahkan" data-fx="pop" style="font-size:30px;font-weight:700;color:#00e5ff">Galon di Bawah</div>
+ <div data-at="s3:mendorongnya" data-fx="up" style="margin-top:12px;font-size:24px;color:#e0e0e0">Dorong masuk ke lemari bawah</div>
+ <div data-at="s3:pipa" data-fx="left" style="margin-top:14px;font-size:24px;color:#00bcd4">Pipa penyedot masuk ke galon</div>
+</div>
+
+<div class="p" data-in="s4" data-out="s5" style="top:260px">
+ <div data-at="s4:pompa" data-fx="pop" style="font-size:30px;font-weight:700;color:#00e676">Pompa Listrik</div>
+ <div data-at="s4:menyedot" data-fx="up" style="margin-top:12px;font-size:24px;color:#e0e0e0">Menyedot air dari galon</div>
+ <div data-at="s4:tangki" data-fx="left" style="margin-top:14px;font-size:24px;color:#00e5ff">Mendorong naik ke tangki atas</div>
+</div>
+
+<div class="p" data-in="s5" data-out="s6" style="top:260px">
+ <div data-at="s5:pelampung" data-fx="pop" style="font-size:30px;font-weight:700;color:#00e676">Pelampung Otomatis</div>
+ <div data-at="s5:mematikan" data-fx="up" style="margin-top:12px;font-size:24px;color:#e0e0e0">Air naik → pelampung naik → pompa mati</div>
+ <div data-at="s5:menyala" data-fx="left" style="margin-top:14px;font-size:24px;color:#00e5ff">Air turun → pelampung turun → pompa nyala</div>
+</div>
+
+<div class="p" data-in="s6" data-out="s7" style="top:260px">
+ <div data-at="s6:dibagi" data-fx="pop" style="font-size:30px;font-weight:700;color:#e0e0e0">Dua Jalur</div>
+ <div data-at="s6:dingin" data-fx="left" style="margin-top:14px;font-size:24px;color:#448aff">Tangki dingin: kompresor / Peltier</div>
+ <div data-at="s6:elemen" data-fx="left" style="margin-top:10px;font-size:24px;color:#ff6d00">Tangki panas: elemen pemanas listrik</div>
+ <div data-at="s6:pengunci" data-fx="up" style="margin-top:14px;font-size:22px;color:#e0e0e0;opacity:.8">Keran panas ada pengunci keamanan</div>
+</div>
+
+<div class="p" data-in="s7" data-out="s8" style="top:260px">
+ <div data-at="s7:menekan" data-fx="pop" style="font-size:30px;font-weight:700;color:#00e5ff">Tekan Keran</div>
+ <div data-at="s7:membuka" data-fx="up" style="margin-top:12px;font-size:24px;color:#e0e0e0">Hanya membuka tangki atas</div>
+ <div data-at="s7:diam-diam" data-fx="left" style="margin-top:14px;font-size:24px;color:#00e676">Pompa bekerja diam-diam</div>
+ <div data-at="s7:sembilan" data-fx="up" style="margin-top:18px;font-size:38px;font-weight:800;color:#00e5ff"><b class="ct nb" data-from="0" data-to="19" data-a="s7:sembilan" data-d="1.2" data-suf=" L"></b></div>
+ <div data-at="s7:kilogram" data-fx="fade" style="margin-top:6px;font-size:22px;color:#e0e0e0;opacity:.8">tidak perlu diangkat</div>
+</div>
+
+<div class="p" data-in="s8" data-out="@END" style="top:280px">
+ <div data-at="s8:Pompa" data-fx="pop" style="font-size:28px;font-weight:700;color:#00e5ff">Pompa + Pelampung + 2 Tangki</div>
+ <div data-at="s8:bergantian" data-fx="up" style="margin-top:12px;font-size:24px;color:#e0e0e0">Bekerja bergantian untukmu</div>
+</div>
+
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">CARA KERJA BENDA &middot; EP 19</div></div>
+<div id="sig">AUDIRA &middot; @AudiraExplained</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":5.861,"s2":6.021,"s2e":15.079,"s3":15.239,"s3e":23.429,"s4":23.589,"s4e":31.149,"s5":31.309,"s5e":43.188,"s6":43.348,"s6e":59.187,"s7":59.347,"s7e":70.06,"s8":70.22,"s8e":81.175,"end":81.175,"dur":84.17,"outro":81.425},AT={"s1:dispenser":0.688,"s1:melawan":2.608,"s1:pompa":5.149,"s2:Dispenser":6.024,"s2:terbalik":7.881,"s2:Masalahnya":11.813,"s2:berat":13.377,"s3:memindahkan":16.716,"s3:mendorongnya":19.643,"s3:pipa":22.113,"s4:pompa":25.142,"s4:menyedot":26.83,"s4:tangki":29.446,"s5:pelampung":33.058,"s5:mematikan":35.721,"s5:menyala":42.553,"s6:dibagi":44.527,"s6:dingin":46.308,"s6:elemen":53.15,"s6:pengunci":55.626,"s7:menekan":59.983,"s7:membuka":61.392,"s7:diam-diam":63.606,"s7:sembilan":66.345,"s7:kilogram":68.342,"s8:Pompa":70.22,"s8:bergantian":72.918},DUR=84.17,OUT=81.425;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ 
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl, el, t) => {
+  tl.fromTo(el, { x: -60, opacity: 0 }, { x: 0, opacity: 1, duration: 0.38, ease: "power4.out" }, t);
+},POUT=(tl, el, t) => {
+  tl.to(el, { x: 60, opacity: 0, duration: 0.25, ease: "power2.in" }, t);
+};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP19_DISPENSER_GALON_BAWAH")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

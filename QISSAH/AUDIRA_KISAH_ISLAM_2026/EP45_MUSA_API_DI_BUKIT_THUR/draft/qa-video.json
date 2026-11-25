@@ -1,0 +1,256 @@
+{
+  "file": "F:\\AUDIRA-EPISODES\\QISSAH\\AUDIRA_KISAH_ISLAM_2026\\EP45_MUSA_API_DI_BUKIT_THUR\\draft\\qa-clean.mp4",
+  "size": "256x455",
+  "fps": 30,
+  "frames": 2838,
+  "cuts": {
+    "planned": [
+      8.2,
+      23.1,
+      37.1,
+      41.7,
+      46,
+      57.9,
+      67.6,
+      82.8,
+      91.6
+    ],
+    "detected": [
+      8.2,
+      23.1,
+      37.1,
+      41.7,
+      46,
+      57.9,
+      60.633,
+      67.6,
+      82.8
+    ],
+    "unplanned": [
+      60.633
+    ]
+  },
+  "ignore": [],
+  "ignoredAsMotion": 0,
+  "ignoredAsParticles": 0,
+  "ignoredAsFaint": 2,
+  "ignoredAtEdge": 3,
+  "allowed": [],
+  "findings": [
+    {
+      "id": "LONCAT@60.63",
+      "tier": "FAIL",
+      "type": "LONCAT",
+      "from": 60.633,
+      "to": 60.633,
+      "frames": [
+        1819,
+        1819
+      ],
+      "where": "whole frame",
+      "size": 1,
+      "strength": 16.2,
+      "note": "full-frame jump that is not a planned cut (camera snap or unplanned cut)",
+      "strip": "qa-video_01.jpg"
+    },
+    {
+      "id": "LONCAT@86.20",
+      "tier": "OK",
+      "type": "LONCAT",
+      "from": 86.2,
+      "to": 86.2,
+      "frames": [
+        2586,
+        2586
+      ],
+      "where": "x 0–56 %, y 78–100 %",
+      "size": 41,
+      "strength": 150.5,
+      "strip": "qa-video_02.jpg",
+      "verdict": "ok: S8 campfire lights at the family camp on 'Ia turun' (A.turun 86.18), designed reveal"
+    },
+    {
+      "id": "LONCAT@28.63",
+      "tier": "OK",
+      "type": "LONCAT",
+      "from": 28.633,
+      "to": 28.633,
+      "frames": [
+        859,
+        859
+      ],
+      "where": "x 56–61 %, y 72–75 %",
+      "size": 1,
+      "strength": 115.5,
+      "strip": "qa-video_03.jpg",
+      "verdict": "ok: S3 lantern lights on 'sesuluh api' (A.sesuluh 28.6), designed"
+    },
+    {
+      "id": "LONCAT@50.87",
+      "tier": "CHECK",
+      "type": "LONCAT",
+      "from": 50.867,
+      "to": 50.867,
+      "frames": [
+        1526,
+        1526
+      ],
+      "where": "x 28–72 %, y 63–69 %",
+      "size": 5,
+      "strength": 45.4,
+      "strip": "qa-video_04.jpg"
+    },
+    {
+      "id": "LONCAT@52.37",
+      "tier": "CHECK",
+      "type": "LONCAT",
+      "from": 52.367,
+      "to": 52.367,
+      "frames": [
+        1571,
+        1571
+      ],
+      "where": "x 28–72 %, y 63–69 %",
+      "size": 5,
+      "strength": 45.4,
+      "strip": "qa-video_05.jpg"
+    },
+    {
+      "id": "LONCAT@4.60",
+      "tier": "OK",
+      "type": "LONCAT",
+      "from": 4.6,
+      "to": 4.6,
+      "frames": [
+        138,
+        138
+      ],
+      "where": "x 33–50 %, y 88–97 %",
+      "size": 8,
+      "strength": 35.4,
+      "strip": "qa-video_06.jpg",
+      "verdict": "ok: S1 fire ignites on the slope on 'sebuah api' (A.apiNyala 4.4), ground glow turns on, designed"
+    },
+    {
+      "id": "LONCAT@69.80",
+      "tier": "CHECK",
+      "type": "LONCAT",
+      "from": 69.8,
+      "to": 69.8,
+      "frames": [
+        2094,
+        2094
+      ],
+      "where": "x 0–61 %, y 75–81 %",
+      "size": 22,
+      "strength": 20.2,
+      "strip": "qa-video_07.jpg"
+    },
+    {
+      "id": "LONCAT@49.67",
+      "tier": "CHECK",
+      "type": "LONCAT",
+      "from": 49.667,
+      "to": 49.733,
+      "frames": [
+        1490,
+        1492
+      ],
+      "where": "x 44–83 %, y 63–94 %",
+      "size": 8,
+      "strength": 32.1,
+      "strip": "qa-video_08.jpg"
+    },
+    {
+      "id": "LONCAT@56.63",
+      "tier": "CHECK",
+      "type": "LONCAT",
+      "from": 56.633,
+      "to": 56.633,
+      "frames": [
+        1699,
+        1699
+      ],
+      "where": "x 44–67 %, y 59–69 %",
+      "size": 5,
+      "strength": 36.5,
+      "strip": "qa-video_09.jpg"
+    },
+    {
+      "id": "LONCAT@55.33",
+      "tier": "CHECK",
+      "type": "LONCAT",
+      "from": 55.333,
+      "to": 55.333,
+      "frames": [
+        1660,
+        1660
+      ],
+      "where": "x 39–72 %, y 63–66 %",
+      "size": 5,
+      "strength": 31.5,
+      "strip": "qa-video_10.jpg"
+    },
+    {
+      "id": "LONCAT@53.83",
+      "tier": "CHECK",
+      "type": "LONCAT",
+      "from": 53.833,
+      "to": 53.833,
+      "frames": [
+        1615,
+        1615
+      ],
+      "where": "x 44–72 %, y 63–66 %",
+      "size": 4,
+      "strength": 30.4,
+      "strip": "qa-video_11.jpg"
+    },
+    {
+      "id": "FLICKER@79.53",
+      "tier": "CHECK",
+      "type": "FLICKER",
+      "from": 79.533,
+      "to": 80.533,
+      "frames": [
+        2386,
+        2416
+      ],
+      "where": "x 56–67 %, y 81–84 %",
+      "size": 2,
+      "strength": 18,
+      "strip": "qa-video_12.jpg"
+    },
+    {
+      "id": "FLICKER@30.50",
+      "tier": "CHECK",
+      "type": "FLICKER",
+      "from": 30.5,
+      "to": 31.467,
+      "frames": [
+        915,
+        944
+      ],
+      "where": "x 17–22 %, y 75–78 %",
+      "size": 1,
+      "strength": 18,
+      "strip": "qa-video_13.jpg"
+    },
+    {
+      "id": "FLICKER@71.37",
+      "tier": "CHECK",
+      "type": "FLICKER",
+      "from": 71.367,
+      "to": 72.333,
+      "frames": [
+        2141,
+        2170
+      ],
+      "where": "x 67–72 %, y 78–81 %",
+      "size": 1,
+      "strength": 18,
+      "strip": "qa-video_14.jpg"
+    }
+  ],
+  "result": "FAIL"
+}

@@ -1,0 +1,184 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#0B141B}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.05;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.55) 42%,rgba(0,0,0,0.55) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:"Noto Serif",serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#F4EEDF;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+
+.card{position:relative;background:linear-gradient(180deg,rgba(244,238,224,.96),rgba(234,226,208,.95));border:1.5px solid rgba(184,134,47,.55);border-radius:14px;padding:24px 32px 28px;box-shadow:0 26px 60px rgba(0,0,0,.42),inset 0 1px 0 rgba(255,255,255,.8),inset 0 -2px 0 rgba(120,100,70,.12)}
+.card.slim{padding:22px 32px 24px}
+.k{display:flex;align-items:center;gap:14px;font-family:"Noto Serif",serif;font-weight:700;font-size:25px;letter-spacing:.12em;color:#4F7D6C;padding-bottom:12px;border-bottom:1px solid rgba(79,125,108,.35);margin-bottom:12px}
+.k em{font-style:normal;color:#F2EBDC;background:#4F7D6C;padding:2px 12px;letter-spacing:.06em;border-radius:20px}
+.h{font-family:"Zen Old Mincho",serif;font-weight:900;font-size:96px;line-height:1.02;color:#16202A;letter-spacing:-.01em}
+.h.m{font-size:62px;line-height:1.1}
+.sub{font-family:"Noto Serif",serif;font-weight:600;font-size:34px;line-height:1.28;color:#16202A;margin-top:12px}
+.sub b{color:#B8862F;font-weight:700}
+.row{display:flex;align-items:baseline;gap:18px;margin-top:12px;padding-top:10px;border-top:1px solid rgba(22,32,42,.12)}
+.row b{flex:none;font-family:"Noto Serif",serif;font-weight:800;font-size:30px;letter-spacing:.08em;color:#4F7D6C}
+.row b.gd{color:#B8862F}.row b.rd{color:#8A3A2A}
+.row span{font-family:"Noto Serif",serif;font-weight:600;font-size:35px;line-height:1.2;color:#16202A}
+.quote{font-family:"Zen Old Mincho",serif;font-weight:700;font-size:48px;line-height:1.24;color:#16202A;margin-top:12px;padding-left:20px;border-left:5px solid #B8862F}
+.arc{text-align:center}
+.ar{font-family:Amiri,serif;direction:rtl;text-align:center;font-size:96px;line-height:1.7;color:#7A5410;text-shadow:0 0 18px rgba(233,188,98,.55);padding:0 0 4px}
+.tr{font-family:"Zen Old Mincho",serif;font-weight:700;font-size:44px;line-height:1.26;text-align:center;color:#16202A;padding-top:12px;border-top:1px solid rgba(184,134,47,.4)}
+.seam{position:absolute;left:-6px;top:0;width:calc(100% + 12px);height:100%;overflow:visible;pointer-events:none;opacity:0;filter:drop-shadow(0 0 6px rgba(233,188,98,.9))}
+.seam polyline{fill:none;stroke:#E9BC62;stroke-width:4;vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-dasharray:100;stroke-dashoffset:100}
+</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="80.86" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI &middot; TANPA MENGGAMBARKAN SOSOK NABI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2" data-c0="polygon(0% 40%,13% 43.7%,27% 56%,40% 42.6%,54% 55.9%,67% 59.4%,81% 48.5%,100% 42.2%,100% 42.2%,81% 48.5%,67% 59.4%,54% 55.9%,40% 42.6%,27% 56%,13% 43.7%,0% 40%)" data-c1="polygon(0% -4%,13% -4%,27% -4%,40% -4%,54% -4%,67% -4%,81% -4%,100% -4%,100% 104%,81% 104%,67% 104%,54% 104%,40% 104%,27% 104%,13% 104%,0% 104%)">
+  <div class="card slim"><div class="k"><em>09</em>KISAH DALAM AL-QUR'AN</div>
+  <div class="h">Musa &amp; Khidir</div>
+  <div class="sub" data-at="s1:Sebanyak" data-fx="seal">Setetes di paruh burung: ilmu manusia dibanding ilmu Allah <b>· HR Bukhari 122</b></div></div>
+  <svg class="seam" viewBox="0 0 100 100" preserveAspectRatio="none"><polyline points="0,40 13,43.7 27,56 40,42.6 54,55.9 67,59.4 81,48.5 100,42.2" pathLength="100"/></svg>
+</div>
+<div class="p" data-in="s2" data-out="s2:Allah" data-c0="polygon(0% 42.3%,13% 48.2%,27% 49%,40% 53.5%,54% 49.6%,67% 46.2%,81% 49.6%,100% 55.3%,100% 55.3%,81% 49.6%,67% 46.2%,54% 49.6%,40% 53.5%,27% 49%,13% 48.2%,0% 42.3%)" data-c1="polygon(0% -4%,13% -4%,27% -4%,40% -4%,54% -4%,67% -4%,81% -4%,100% -4%,100% 104%,81% 104%,67% 104%,54% 104%,40% 104%,27% 104%,13% 104%,0% 104%)">
+  <div class="card "><div class="k"><em>HR BUKHARI 122</em>SAHIH</div>
+  <div class="h m">&ldquo;Siapa manusia paling berilmu?&rdquo;</div>
+  <div class="row" data-at="s2:aku" data-fx="seal"><b class="rd">JAWAB</b><span>&ldquo;Aku.&rdquo;</span></div></div>
+  <svg class="seam" viewBox="0 0 100 100" preserveAspectRatio="none"><polyline points="0,42.3 13,48.2 27,49 40,53.5 54,49.6 67,46.2 81,49.6 100,55.3" pathLength="100"/></svg>
+</div>
+<div class="p" data-in="s2:Allah" data-out="s3" data-c0="polygon(0% 40.8%,13% 41.4%,27% 49%,40% 52%,54% 55.1%,67% 43.6%,81% 46%,100% 47.5%,100% 47.5%,81% 46%,67% 43.6%,54% 55.1%,40% 52%,27% 49%,13% 41.4%,0% 40.8%)" data-c1="polygon(0% -4%,13% -4%,27% -4%,40% -4%,54% -4%,67% -4%,81% -4%,100% -4%,100% 104%,81% 104%,67% 104%,54% 104%,40% 104%,27% 104%,13% 104%,0% 104%)">
+  <div class="card "><div class="k"><em>HR BUKHARI 122 · QS 18:60</em></div>
+  <div class="h m">Pertemuan dua laut</div>
+  <div class="row" data-at="s2:menunjukkan" data-fx="seal"><b class="">DITUNJUKKAN</b><span>seorang hamba yang lebih berilmu</span></div>
+  <div class="row" data-at="s2:Khidir" data-fx="seal"><b class="gd">KHIDIR</b><span>nama dari hadis</span></div></div>
+  <svg class="seam" viewBox="0 0 100 100" preserveAspectRatio="none"><polyline points="0,40.8 13,41.4 27,49 40,52 54,55.1 67,43.6 81,46 100,47.5" pathLength="100"/></svg>
+</div>
+<div class="p" data-in="s3" data-out="s3:Musa#2" data-c0="polygon(0% 52.3%,13% 54.8%,27% 56.6%,40% 57.7%,54% 54.9%,67% 46.2%,81% 43.9%,100% 57.2%,100% 57.2%,81% 43.9%,67% 46.2%,54% 54.9%,40% 57.7%,27% 56.6%,13% 54.8%,0% 52.3%)" data-c1="polygon(0% -4%,13% -4%,27% -4%,40% -4%,54% -4%,67% -4%,81% -4%,100% -4%,100% 104%,81% 104%,67% 104%,54% 104%,40% 104%,27% 104%,13% 104%,0% 104%)">
+  <div class="card "><div class="k"><em>QS AL-KAHF 18:61-64</em></div>
+  <div class="h m">Ikan melompat ke laut</div>
+  <div class="quote" data-at="s3:situlah" data-fx="seal">&ldquo;Itulah (tempat) yang kita cari.&rdquo;</div></div>
+  <svg class="seam" viewBox="0 0 100 100" preserveAspectRatio="none"><polyline points="0,52.3 13,54.8 27,56.6 40,57.7 54,54.9 67,46.2 81,43.9 100,57.2" pathLength="100"/></svg>
+</div>
+<div class="p" data-in="s3:Musa#2" data-out="s4" data-c0="polygon(0% 47.2%,13% 48.5%,27% 52.5%,40% 59.1%,54% 53.9%,67% 56.2%,81% 58.4%,100% 45.8%,100% 45.8%,81% 58.4%,67% 56.2%,54% 53.9%,40% 59.1%,27% 52.5%,13% 48.5%,0% 47.2%)" data-c1="polygon(0% -4%,13% -4%,27% -4%,40% -4%,54% -4%,67% -4%,81% -4%,100% -4%,100% 104%,81% 104%,67% 104%,54% 104%,40% 104%,27% 104%,13% 104%,0% 104%)">
+  <div class="card "><div class="k"><em>QS AL-KAHF 18:66-67</em></div>
+  <div class="row" data-at="s3:ikut" data-fx="seal"><b class="">MUSA</b><span>minta ikut untuk belajar</span></div>
+  <div class="quote" data-at="s3:kamu" data-fx="seal">&ldquo;Sungguh, engkau tidak akan sanggup sabar bersamaku.&rdquo;</div></div>
+  <svg class="seam" viewBox="0 0 100 100" preserveAspectRatio="none"><polyline points="0,47.2 13,48.5 27,52.5 40,59.1 54,53.9 67,56.2 81,58.4 100,45.8" pathLength="100"/></svg>
+</div>
+<div class="p" data-in="s4" data-out="s4:Kedua" data-c0="polygon(0% 44.5%,13% 56.9%,27% 50.1%,40% 55.6%,54% 57.3%,67% 53.1%,81% 53.7%,100% 59.2%,100% 59.2%,81% 53.7%,67% 53.1%,54% 57.3%,40% 55.6%,27% 50.1%,13% 56.9%,0% 44.5%)" data-c1="polygon(0% -4%,13% -4%,27% -4%,40% -4%,54% -4%,67% -4%,81% -4%,100% -4%,100% 104%,81% 104%,67% 104%,54% 104%,40% 104%,27% 104%,13% 104%,0% 104%)">
+  <div class="card "><div class="k"><em>1</em>QS AL-KAHF 18:71</div>
+  <div class="h m">Perahu dilubangi</div>
+  <div class="row" data-at="s4:protes" data-fx="seal"><b class="rd">MUSA PROTES</b><span>&ldquo;untuk menenggelamkan penumpangnya?&rdquo;</span></div></div>
+  <svg class="seam" viewBox="0 0 100 100" preserveAspectRatio="none"><polyline points="0,44.5 13,56.9 27,50.1 40,55.6 54,57.3 67,53.1 81,53.7 100,59.2" pathLength="100"/></svg>
+</div>
+<div class="p" data-in="s4:Kedua" data-out="s5" data-c0="polygon(0% 49.1%,13% 58.6%,27% 58%,40% 46%,54% 42.8%,67% 49.5%,81% 44.7%,100% 50%,100% 50%,81% 44.7%,67% 49.5%,54% 42.8%,40% 46%,27% 58%,13% 58.6%,0% 49.1%)" data-c1="polygon(0% -4%,13% -4%,27% -4%,40% -4%,54% -4%,67% -4%,81% -4%,100% -4%,100% 104%,81% 104%,67% 104%,54% 104%,40% 104%,27% 104%,13% 104%,0% 104%)">
+  <div class="card "><div class="k"><em>2</em>QS AL-KAHF 18:74</div>
+  <div class="h m">Seorang anak muda</div>
+  <div class="row" data-at="s4:protes#2" data-fx="seal"><b class="rd">MUSA PROTES</b><span>lebih keras</span></div></div>
+  <svg class="seam" viewBox="0 0 100 100" preserveAspectRatio="none"><polyline points="0,49.1 13,58.6 27,58 40,46 54,42.8 67,49.5 81,44.7 100,50" pathLength="100"/></svg>
+</div>
+<div class="p" data-in="s5" data-out="s5:Musa" data-c0="polygon(0% 47.6%,13% 41.6%,27% 43.7%,40% 50.9%,54% 42.8%,67% 50.8%,81% 52.9%,100% 57.4%,100% 57.4%,81% 52.9%,67% 50.8%,54% 42.8%,40% 50.9%,27% 43.7%,13% 41.6%,0% 47.6%)" data-c1="polygon(0% -4%,13% -4%,27% -4%,40% -4%,54% -4%,67% -4%,81% -4%,100% -4%,100% 104%,81% 104%,67% 104%,54% 104%,40% 104%,27% 104%,13% 104%,0% 104%)">
+  <div class="card "><div class="k"><em>3</em>QS AL-KAHF 18:77</div>
+  <div class="h m">Dinding hampir roboh</div>
+  <div class="row" data-at="s5:menolak" data-fx="seal"><b class="">NEGERI</b><span>menolak menjamu mereka</span></div>
+  <div class="row" data-at="s5:tanpa" data-fx="seal"><b class="gd">DITEGAKKAN</b><span>tanpa upah</span></div></div>
+  <svg class="seam" viewBox="0 0 100 100" preserveAspectRatio="none"><polyline points="0,47.6 13,41.6 27,43.7 40,50.9 54,42.8 67,50.8 81,52.9 100,57.4" pathLength="100"/></svg>
+</div>
+<div class="p" data-in="s5:Musa" data-out="s6" data-c0="polygon(0% 57.6%,13% 48.9%,27% 47.9%,40% 56.3%,54% 50.6%,67% 53.3%,81% 50.1%,100% 49.1%,100% 49.1%,81% 50.1%,67% 53.3%,54% 50.6%,40% 56.3%,27% 47.9%,13% 48.9%,0% 57.6%)" data-c1="polygon(0% -4%,13% -4%,27% -4%,40% -4%,54% -4%,67% -4%,81% -4%,100% -4%,100% 104%,81% 104%,67% 104%,54% 104%,40% 104%,27% 104%,13% 104%,0% 104%)">
+  <div class="card "><div class="k"><em>QS AL-KAHF 18:78</em></div>
+  <div class="row" data-at="s5:bertanya" data-fx="seal"><b class="">MUSA</b><span>bertanya lagi</span></div>
+  <div class="quote" data-at="s5:berpisah" data-fx="seal">&ldquo;Inilah perpisahan antara aku dengan engkau.&rdquo;</div></div>
+  <svg class="seam" viewBox="0 0 100 100" preserveAspectRatio="none"><polyline points="0,57.6 13,48.9 27,47.9 40,56.3 54,50.6 67,53.3 81,50.1 100,49.1" pathLength="100"/></svg>
+</div>
+<div class="p" data-in="s6" data-out="s6:Anak" data-c0="polygon(0% 49.9%,13% 44.5%,27% 55.4%,40% 43.6%,54% 49.4%,67% 49%,81% 57.1%,100% 58.6%,100% 58.6%,81% 57.1%,67% 49%,54% 49.4%,40% 43.6%,27% 55.4%,13% 44.5%,0% 49.9%)" data-c1="polygon(0% -4%,13% -4%,27% -4%,40% -4%,54% -4%,67% -4%,81% -4%,100% -4%,100% 104%,81% 104%,67% 104%,54% 104%,40% 104%,27% 104%,13% 104%,0% 104%)">
+  <div class="card "><div class="k"><em>1</em>QS 18:79 · TAFSIR IBNU KATSIR</div>
+  <div class="h m">Perahu orang miskin</div>
+  <div class="row" data-at="s6:raja" data-fx="seal"><b class="rd">RAJA</b><span>merampas setiap perahu yang baik</span></div>
+  <div class="row" data-at="s6:baik" data-fx="seal"><b class="gd">QS 18:79</b><span>&ldquo;aku bermaksud merusaknya&rdquo;</span></div></div>
+  <svg class="seam" viewBox="0 0 100 100" preserveAspectRatio="none"><polyline points="0,49.9 13,44.5 27,55.4 40,43.6 54,49.4 67,49 81,57.1 100,58.6" pathLength="100"/></svg>
+</div>
+<div class="p" data-in="s6:Anak" data-out="s6:Dan" data-c0="polygon(0% 49%,13% 42.6%,27% 42.9%,40% 43.9%,54% 56.3%,67% 53.3%,81% 52.5%,100% 50.6%,100% 50.6%,81% 52.5%,67% 53.3%,54% 56.3%,40% 43.9%,27% 42.9%,13% 42.6%,0% 49%)" data-c1="polygon(0% -4%,13% -4%,27% -4%,40% -4%,54% -4%,67% -4%,81% -4%,100% -4%,100% 104%,81% 104%,67% 104%,54% 104%,40% 104%,27% 104%,13% 104%,0% 104%)">
+  <div class="card "><div class="k"><em>2</em>QS AL-KAHF 18:80-81</div>
+  <div class="h m">Orang tuanya beriman</div>
+  <div class="row" data-at="s6:beriman" data-fx="seal"><b class="gd">DIGANTI</b><span>dengan yang lebih baik dan lebih sayang</span></div></div>
+  <svg class="seam" viewBox="0 0 100 100" preserveAspectRatio="none"><polyline points="0,49 13,42.6 27,42.9 40,43.9 54,56.3 67,53.3 81,52.5 100,50.6" pathLength="100"/></svg>
+</div>
+<div class="p" data-in="s6:Dan" data-out="s7" data-c0="polygon(0% 59.9%,13% 59.9%,27% 42%,40% 55.1%,54% 43.2%,67% 52.4%,81% 46.4%,100% 52.3%,100% 52.3%,81% 46.4%,67% 52.4%,54% 43.2%,40% 55.1%,27% 42%,13% 59.9%,0% 59.9%)" data-c1="polygon(0% -4%,13% -4%,27% -4%,40% -4%,54% -4%,67% -4%,81% -4%,100% -4%,100% 104%,81% 104%,67% 104%,54% 104%,40% 104%,27% 104%,13% 104%,0% 104%)">
+  <div class="card "><div class="k"><em>3</em>QS AL-KAHF 18:82</div>
+  <div class="h m">Harta dua anak yatim</div>
+  <div class="row" data-at="s6:tersimpan" data-fx="seal"><b class="gd">DI BAWAH DINDING</b><span>tersimpan harta</span></div>
+  <div class="row" data-at="s6:yatim" data-fx="seal"><b class="">AYAHNYA</b><span>orang yang saleh</span></div></div>
+  <svg class="seam" viewBox="0 0 100 100" preserveAspectRatio="none"><polyline points="0,59.9 13,59.9 27,42 40,55.1 54,43.2 67,52.4 81,46.4 100,52.3" pathLength="100"/></svg>
+</div>
+<div class="p" data-in="s7" data-out="s8" data-c0="polygon(0% 54.2%,13% 51.5%,27% 48.5%,40% 54.8%,54% 56.7%,67% 44.2%,81% 51.7%,100% 52.1%,100% 52.1%,81% 51.7%,67% 44.2%,54% 56.7%,40% 54.8%,27% 48.5%,13% 51.5%,0% 54.2%)" data-c1="polygon(0% -4%,13% -4%,27% -4%,40% -4%,54% -4%,67% -4%,81% -4%,100% -4%,100% 104%,81% 104%,67% 104%,54% 104%,40% 104%,27% 104%,13% 104%,0% 104%)">
+  <div class="card arc"><div class="k"><em>QS AL-KAHF 18:82</em>PENUTUP</div>
+  <div class="ar" data-at="s7:apa" data-fx="seal">وَمَا فَعَلْتُهُۥ عَنْ أَمْرِى</div>
+  <div class="tr" data-at="s7:kuperbuat" data-fx="seal">&ldquo;Apa yang kuperbuat bukan menurut kemauanku sendiri.&rdquo;</div></div>
+  <svg class="seam" viewBox="0 0 100 100" preserveAspectRatio="none"><polyline points="0,54.2 13,51.5 27,48.5 40,54.8 54,56.7 67,44.2 81,51.7 100,52.1" pathLength="100"/></svg>
+</div>
+<div class="p" data-in="s8" data-out="@END" data-c0="polygon(0% 47.7%,13% 42.9%,27% 44.4%,40% 45.9%,54% 56.2%,67% 49.7%,81% 52%,100% 54.7%,100% 54.7%,81% 52%,67% 49.7%,54% 56.2%,40% 45.9%,27% 44.4%,13% 42.9%,0% 47.7%)" data-c1="polygon(0% -4%,13% -4%,27% -4%,40% -4%,54% -4%,67% -4%,81% -4%,100% -4%,100% 104%,81% 104%,67% 104%,54% 104%,40% 104%,27% 104%,13% 104%,0% 104%)">
+  <div class="card slim"><div class="k"><em>RENUNGAN</em></div>
+  <div class="h m">Yang terlihat merugikan bisa jadi penyelamat</div></div>
+  <svg class="seam" viewBox="0 0 100 100" preserveAspectRatio="none"><polyline points="0,47.7 13,42.9 27,44.4 40,45.9 54,56.2 67,49.7 81,52 100,54.7" pathLength="100"/></svg>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">KISAH DALAM AL-QUR&#39;AN &middot; EP 09</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":6.549,"s2":6.709,"s2e":17.978,"s3":18.138,"s3e":29.998,"s4":30.158,"s4e":39.263,"s5":39.423,"s5e":48.56,"s6":48.72,"s6e":63.548,"s7":63.708,"s7e":71.383,"s8":71.543,"s8e":77.862,"end":77.862,"dur":80.86,"outro":78.112},AT={"s4:perahu":31.414,"s4:dilubangi":32.575,"s5:Khidir":42.04,"s5:situlah":47.399,"s5:berpisah":48.049,"s3:berangkat":18.862,"s3:batu":22.802,"s3:Musa#2":26.28,"s3:ikut":27.023,"s3:melompat":23.886,"s5:negeri":40.245,"s1:paruhnya":2.384,"s1:Sebanyak":3.406,"s1:manusia":4.567,"s1:Allah":6.193,"s2:Musa":8.579,"s2:berilmu":10.561,"s2:aku":11.877,"s2:menegurnya":13.356,"s2:menunjukkan":14.487,"s2:pertemuan":15.617,"s2:Hadis":16.802,"s3:ikan":20.905,"s3:laut":24.397,"s3:tempatnya":25.573,"s3:sabar":29.208,"s4:protes":33.644,"s4:Kedua":34.351,"s4:anak":35.837,"s4:membunuhnya":37.171,"s4:keras":38.861,"s5:menjamu":41.05,"s5:dinding":43.626,"s5:upah":45.22,"s5:lagi":46.532,"s6:dijelaskan":49.54,"s6:Perahu":50.376,"s6:miskin":51.94,"s6:raja":53.986,"s6:baik":55.72,"s6:Anak":56.388,"s6:dikhawatirkan":57.223,"s6:beriman":58.849,"s6:kekafiran":59.453,"s6:bawah":60.575,"s6:tersimpan":61.984,"s6:yatim":63.191,"s7:sendiri":68.044,"s7:delapan":70.687,"s8:penyelamat":73.462,"s8:Pernahkah":75.199,"s6:harta":62.526,"s6:Dan":60.343,"s6:merampas":54.559,"s2:laut":16.313,"s2:Khidir":17.669,"s3:situlah":25.264,"s3:Jawabnya":27.552,"s5:bertanya":46.129,"s7:apa":64.948,"s5:menegakkan":43.146,"s5:roboh":44.338,"s5:Musa":45.804,"s6:dua":62.82,"s8:pahami":74.515,"s2:Allah":12.814,"s3:kamu":28.155,"s4:protes#2":38.257,"s5:menolak":40.694,"s5:tanpa":44.849,"s7:kuperbuat":65.846},DUR=80.86,OUT=78.112;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ seal:(e,t)=>tl.fromTo(e,{opacity:0,clipPath:'inset(0 100% 0 0)'},{opacity:1,clipPath:'inset(0 0% 0 0)',duration:.6,ease:'power2.out'},t)&&tl.set(e,{clipPath:'none'},t+.62),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{const c=p.querySelector('.card'),s=p.querySelector('.seam'),l=s.querySelector('polyline');
+ tl.fromTo(p,{opacity:0},{opacity:1,duration:.01},a-.14);
+ tl.fromTo(s,{opacity:0},{opacity:1,duration:.05},a-.14);
+ tl.fromTo(l,{strokeDashoffset:100},{strokeDashoffset:0,duration:.28,ease:'power2.out'},a-.14);
+ tl.fromTo(c,{clipPath:p.dataset.c0},{clipPath:p.dataset.c1,duration:.55,ease:'power3.inOut'},a+.08);
+ tl.to(s,{opacity:0,duration:.4,ease:'power1.in'},a+.55);},POUT=(tl,p,b)=>{const c=p.querySelector('.card'),s=p.querySelector('.seam');
+ tl.to(s,{opacity:1,duration:.12},b-.55);
+ tl.to(c,{clipPath:p.dataset.c0,duration:.4,ease:'power3.in'},b-.5);
+ tl.to(p,{opacity:0,duration:.14,ease:'none'},b-.12);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0,clipPath:'polygon(0% 48%,25% 52%,50% 47%,75% 53%,100% 49%,100% 49%,75% 53%,50% 47%,25% 52%,0% 48%)'});tl.to('#outro',{opacity:1,duration:.2},OUT-.1);tl.to('#outro',{clipPath:'polygon(0% -2%,25% -2%,50% -2%,75% -2%,100% -2%,100% 102%,75% 102%,50% 102%,25% 102%,0% 102%)',duration:.9,ease:'power3.inOut'},OUT-.1);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

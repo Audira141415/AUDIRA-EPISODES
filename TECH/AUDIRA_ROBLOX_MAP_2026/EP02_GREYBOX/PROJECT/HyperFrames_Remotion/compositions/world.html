@@ -1,0 +1,136 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#0a0a0c}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.04;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.32) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.35) 42%,rgba(0,0,0,0.35) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#c9ccd2;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.p{background:rgba(10,10,12,.80);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:22px 30px 26px;box-shadow:0 18px 50px rgba(0,0,0,.45)}
+.p::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;border-radius:16px 0 0 16px;background:#00e6ff}
+.meta{display:flex;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:24px;letter-spacing:.12em;color:#00e6ff;margin-bottom:12px}
+.meta .r{color:#ffb703}
+.ttl{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:96px;line-height:.98;letter-spacing:-.01em;color:#f5f5f2}
+.ttl.sm{font-size:72px}
+.ttl em{font-style:normal;color:#ffb703}.ttl em.rd{color:#ff5a66;display:inline-block}.ttl i{font-style:normal;color:#00e6ff}
+.row{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.ln{display:inline-block;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:36px;color:#0a0a0c;background:#f5f5f2;border-radius:8px;padding:8px 18px 10px}
+.ln.dim{background:#2a2d36;color:#f5f5f2}.ln.q{background:#ffb703}
+.dot{display:inline-block;width:22px;height:22px;border-radius:50%;margin-right:8px;vertical-align:-2px}.dot.r{background:#ff3b4e}.dot.b{background:#2f8bff;margin-right:14px}
+.tools{display:flex;gap:12px;margin-top:18px}
+.tl{flex:1;background:#16181d;border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:14px 6px 10px;text-align:center;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:22px;color:#c9ccd2}
+.sh{display:block;margin:0 auto 10px;width:58px;height:58px;background:linear-gradient(135deg,#c4c8ce,#8d939b)}
+.sh.wedge{clip-path:polygon(0 100%,100% 100%,100% 0)}.sh.cyl{border-radius:50%/22%}.sh.ball{border-radius:50%}
+.ls{display:flex;flex-direction:column;gap:10px}
+.ls b{display:block;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:44px;line-height:1.1;color:#f5f5f2;padding:8px 0 8px 58px;position:relative}
+.ls b small{display:block;font-weight:500;font-size:28px;color:#aeb3bb}
+.ls b::before{position:absolute;left:0;top:10px;width:40px;height:40px;border-radius:8px;font-size:30px;line-height:40px;text-align:center;font-weight:800}
+.ls b.bad::before{content:"!";background:#ff5a66;color:#0a0a0c}
+.ls b.ok::before{content:"\2713";background:#00f59b;color:#0a0a0c}
+.stp{display:inline-block;margin-top:16px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:34px;color:#0a0a0c;background:#00f59b;padding:10px 18px;border-radius:8px;transform-origin:30% 50%}
+.ch{display:inline-block;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:30px;color:#0a0a0c;background:#ffb703;border-radius:999px;padding:8px 20px}
+#chip{font-family:'JetBrains Mono',monospace;font-size:20px;color:#c9ccd2;letter-spacing:.08em}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="92.51" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN CUPLIKAN ROBLOX</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="meta"><span>PETA LASER TAG // MAQUETTE</span><span class="r">EP 02</span></div>
+  <div class="ttl">MULAI DARI<br><em>KOTAK ABU-ABU</em></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="meta"><span>TAHAP PERTAMA // TATA LETAK</span></div>
+  <div class="ttl sm">GREYBOX <i>/</i> BLOCKING</div>
+  <div class="tools" data-at="s2:menyusun" data-fx="scan"><div class="tl"><b class="sh cube"></b>Blok</div><div class="tl"><b class="sh wedge"></b>Baji</div><div class="tl"><b class="sh cyl"></b>Silinder</div><div class="tl"><b class="sh ball"></b>Bola</div></div>
+  <div class="row"><b class="ln" data-at="s2:mencoba" data-fx="scan">Uji rasa main dulu</b><b class="ln dim" data-at="s2:memoles" data-fx="scan">Poles aset nanti</b></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="meta"><span>UJI MAIN // MASALAH KETAHUAN</span></div>
+  <div class="ls"><b class="bad" data-at="s3:susah" data-fx="scan">Susah dilewati</b><b class="bad" data-at="s3:keuntungan" data-fx="scan">Keuntungan tidak adil</b><b class="bad" data-at="s3:sebanding" data-fx="scan">Tidak sebanding karakter</b></div>
+  <b class="stp" data-at="s3:Memperbaikinya" data-fx="stamp">PERBAIKI SEKARANG: JAUH LEBIH MUDAH</b>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="meta"><span>TUTORIAL RESMI ROBLOX // CONTOH</span></div>
+  <div class="ttl sm">MAP LASER TAG<br><em>TIGA JALUR</em></div>
+  <div class="row"><b class="ln" data-at="s4:Zona" data-fx="scan"><s class="dot r"></s><s class="dot b"></s>Zona spawn di sisi berlawanan</b></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="meta"><span>JALUR SILANG × JALUR TENGAH</span></div>
+  <div class="ttl sm">PERSIMPANGAN =<br><em class="rd" data-at="s5:combat" data-fx="scan">COMBAT POCKET</em></div>
+  <div class="row"><b class="ln" data-at="s5:keramaian" data-fx="scan">Keramaian di tengah memang dirancang</b></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="meta"><span>UKURAN // FILE CONTOH</span></div>
+  <div class="ls"><b class="ok" data-at="s6:minimal" data-fx="scan">Pintu &amp; lorong ≥ 10 stud<small>dua pemain lewat bersamaan</small></b><b class="ok" data-at="s6:minimal#2" data-fx="scan">Dinding ≥ 10 stud<small>tidak bisa dilompati</small></b><b class="ok" data-at="s6:kamera" data-fx="scan">Kamera tidak tersangkut</b></div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="meta"><span>TAHAP AKHIR // POLES</span></div>
+  <div class="ttl sm">GANTI KE ASET<br><em>YANG DIPOLES</em></div>
+  <div class="row"><b class="ch" data-at="s7:tembok" data-fx="pop">Tembok</b><b class="ch" data-at="s7:jendela" data-fx="pop">Jendela</b><b class="ch" data-at="s7:lampu" data-fx="pop">Lampu</b><b class="ch" data-at="s7:dekorasi" data-fx="pop">Dekorasi</b></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="meta"><span>RAHASIA BIKIN MAP</span></div>
+  <div class="ttl sm">MAP SERU LAHIR<br>DARI <em>KOTAK POLOS</em></div>
+  <div class="row"><b class="ln q" data-at="s8:Kamu" data-fx="scan">Langsung menghias, atau greybox dulu?</b></div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">RAHASIA MAP ROBLOX &middot; EP 02</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":6.633,"s2":6.793,"s2e":16.331,"s3":16.491,"s3e":29.24,"s4":29.4,"s4e":42.628,"s5":42.788,"s5e":57.041,"s6":57.201,"s6e":72.133,"s7":72.293,"s7e":81.307,"s8":81.467,"s8e":89.511,"end":89.511,"dur":92.51,"outro":89.761},AT={"s1:cantik":2.283,"s2:Developer":9.644,"s2:mencoba":12.167,"s3:Area":19.48,"s3:Memperbaikinya":26.036,"s3:benda":23.574,"s3:dilewati":20.269,"s3:keuntungan":22.134,"s3:sebanding":24.564,"s3:susah":19.96,"s3:titik":21.205,"s4:Zona":34.224,"s4:berlawanan":36.902,"s4:eksterior":42.008,"s4:interior":40.352,"s4:tata":32.583,"s4:tengah":41.049,"s5:Jadi":53.504,"s5:Persimpangan":45.937,"s5:combat":50.377,"s5:keramaian":54.363,"s5:pertempuran":51.678,"s5:silang":43.847,"s5:tengah":46.819,"s6:Di":59.046,"s6:Setiap":66.931,"s6:Ukurannya":57.232,"s6:dilompati":70.074,"s6:dinding":67.349,"s6:dua":64.913,"s6:kamera":71.095,"s6:lebarnya":62.313,"s6:pintu":60.563,"s6:stud":63.752,"s6:stud#2":68.913,"s6:tingginya":67.767,"s7:dekorasi":80.642,"s7:diganti":76.135,"s7:jendela":79.357,"s7:lampu":79.961,"s7:tembok":78.598,"s8:Kamu":84.432,"s8:lahir":82.609,"s8:AUDIRA":87.592,"s1:abu-abu":5.805,"s2:Namanya":6.831,"s2:menyusun":10.155,"s2:memoles":15.557,"s6:minimal":62.963,"s6:minimal#2":68.123},DUR=92.51,OUT=89.761;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ scan:(e,t)=>tl.fromTo(e,{clipPath:'inset(0% 100% 0% 0%)',opacity:1},{clipPath:'inset(0% 0% 0% 0%)',duration:.38,ease:'power3.out'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{clipPath:'inset(0% 100% 0% 0%)',opacity:1,filter:'brightness(2.4)'},{clipPath:'inset(0% 0% 0% 0%)',filter:'brightness(1)',duration:.5,ease:'power3.out'},a-.08);},POUT=(tl,p,b)=>tl.to(p,{clipPath:'inset(0% 0% 0% 100%)',duration:.24,ease:'power2.in'},b-.24);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{clipPath:'inset(100% 0% 0% 0%)'});tl.to('#outro',{clipPath:'inset(0% 0% 0% 0%)',duration:.6,ease:'power3.inOut'},OUT-.3);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP02_GREYBOX")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

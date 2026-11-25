@@ -1,0 +1,192 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#EFE7DA}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.07;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.22) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0) 42%,rgba(0,0,0,0) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Lora,Georgia,serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#3C3733;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.g,.ct{font-family:Lora,Georgia,serif!important;font-variant-numeric:lining-nums}
+.p span.g{display:inline!important;font-size:inherit!important;font-weight:inherit!important;color:inherit!important;letter-spacing:inherit!important;margin:0!important;font-style:inherit!important;line-height:inherit!important}
+.pg{position:absolute;inset:0;z-index:14;pointer-events:none;overflow:hidden;background:linear-gradient(174deg,#FFFCF6,#FAF6EF 55%,#F1E9DB);backface-visibility:hidden;box-shadow:0 0 80px rgba(60,40,20,.5)}
+.pg .sp{position:absolute;left:0;top:0;bottom:0;width:180px;background:linear-gradient(90deg,rgba(90,64,40,.32),rgba(90,64,40,0))}
+.pg .bl{position:absolute;left:50%;top:44%;width:980px;height:980px;margin:-490px 0 0 -490px;border-radius:47% 53% 44% 56%/52% 45% 55% 48%;background:radial-gradient(circle at 46% 50%,rgba(215,131,124,.0) 0 22%,rgba(215,131,124,.55) 48%,rgba(215,131,124,.22) 62%,rgba(215,131,124,0) 72%)}
+.pg .b2{width:700px;height:700px;margin:-350px 0 0 -350px;top:58%;left:38%;background:radial-gradient(circle,rgba(78,123,156,.0) 0 30%,rgba(78,123,156,.42) 52%,rgba(78,123,156,0) 70%)}
+.kk{display:inline-block;font-family:Lora,Georgia,serif;font-weight:700;font-size:25px;letter-spacing:.14em;color:#FAF6EF;background:#4E7B9C;padding:8px 18px 7px;margin-bottom:14px;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);clip-path:polygon(0 3%,4% 0,30% 2%,62% 0,96% 2%,100% 0,99% 50%,100% 97%,70% 100%,38% 98%,6% 100%,0 96%,1% 50%)}
+.h1{display:inline-block;background:linear-gradient(174deg,#FFFCF6,#FAF6EF 55%,#F1E9DB);padding:6px 30px 16px;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:700;font-size:100px;line-height:.98;color:#3C3733;clip-path:polygon(0 3%,4% 0,30% 2%,62% 0,96% 2%,100% 0,99% 50%,100% 97%,70% 100%,38% 98%,6% 100%,0 96%,1% 50%)}
+.h1 em{font-style:italic;color:#B8605A}
+.h2{display:inline-block;background:linear-gradient(174deg,#FFFCF6,#FAF6EF 55%,#F1E9DB);padding:4px 26px 12px;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:700;font-size:84px;line-height:1.02;color:#3C3733;clip-path:polygon(0 3%,4% 0,30% 2%,62% 0,96% 2%,100% 0,99% 50%,100% 97%,70% 100%,38% 98%,6% 100%,0 96%,1% 50%)}
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+.ch{font-style:normal;font-family:Lora,Georgia,serif;font-weight:700;font-size:36px;padding:8px 20px 10px;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18)}
+.ch.no{background:linear-gradient(174deg,#FFFCF6,#FAF6EF 55%,#F1E9DB);color:#8A8178;text-decoration:line-through;text-decoration-color:#B8605A;text-decoration-thickness:4px}
+.ch.ok{background:#6F9779;color:#FAF6EF}
+.lb{display:inline-block;margin-top:12px;background:rgba(60,55,51,.88);padding:6px 18px 8px;font-family:Lora,Georgia,serif;font-style:italic;font-weight:600;font-size:34px;color:#FAF6EF}
+.lb.sm{font-size:30px}
+.row{display:flex;flex-direction:column;gap:2px;margin-top:14px;padding:12px 24px 14px;background:linear-gradient(174deg,#FFFCF6,#FAF6EF 55%,#F1E9DB);border-left:12px solid #4E7B9C;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18)}
+.row b{font-family:Lora,Georgia,serif;font-weight:700;font-size:42px;line-height:1.05;color:#4E7B9C;letter-spacing:.02em}
+.row span{font-family:Lora,Georgia,serif;font-weight:500;font-size:34px;line-height:1.2;color:#3C3733}
+.row.rs{border-left-color:#B8605A}.row.rs b{color:#B8605A}
+.row.sg{border-left-color:#6F9779}.row.sg b{color:#3F6449}
+.tag{display:flex;align-items:center;gap:20px;margin-top:14px;padding:12px 26px 12px 14px;background:linear-gradient(174deg,#FFFCF6,#FAF6EF 55%,#F1E9DB);box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);border-bottom:3px solid #D7837C}
+.tag .ic{flex:none;width:88px;height:88px}
+.tag b{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:700;font-size:56px;line-height:1;color:#3C3733}
+.tag span{display:block;font-family:Lora,Georgia,serif;font-weight:500;font-size:30px;line-height:1.2;color:#6A6058;margin-top:4px}
+.yrs{display:flex;gap:14px}
+.yr{flex:1;text-align:center;padding:4px 6px 12px;background:linear-gradient(174deg,#FFFCF6,#FAF6EF 55%,#F1E9DB);border-top:10px solid #D7837C;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18)}
+.yr b{display:block;font-family:Lora,Georgia,serif;font-weight:700;font-size:70px;line-height:1.08;color:#3C3733}
+.yr span{display:block;font-family:Lora,Georgia,serif;font-style:italic;font-weight:600;font-size:29px;color:#B8605A}
+.st{display:inline-block;margin-top:18px;font-family:Lora,Georgia,serif;font-weight:700;font-size:38px;letter-spacing:.08em;padding:8px 22px;color:#B8605A;border:5px double #B8605A;background:rgba(250,246,239,.94);transform:rotate(-3deg);box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18)}
+.st.ok{color:#3F6449;border-color:#3F6449;margin-left:18px}
+.pet{display:flex;flex-direction:column;gap:12px}
+.pet>div{display:flex;align-items:baseline;gap:16px;padding:6px 24px 10px;background:linear-gradient(174deg,#FFFCF6,#FAF6EF 55%,#F1E9DB);border-left:12px solid #6F9779;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18)}
+.pet>div.big{border-left-color:#B8605A}
+.pet i{font-style:normal;font-family:Lora,Georgia,serif;font-weight:700;font-size:34px;color:#4E7B9C;width:90px}
+.pet small{font-family:Lora,Georgia,serif;font-style:italic;font-weight:500;font-size:30px;color:#6A6058;width:150px}
+.pet>div>b{font-family:Lora,Georgia,serif;font-weight:700;font-size:74px;line-height:1.05;color:#3C3733}
+.pet>div.big>b{color:#B8605A}
+.tally{display:flex;align-items:center;gap:18px;margin-top:14px;padding:4px 28px 10px;background:linear-gradient(174deg,#FFFCF6,#FAF6EF 55%,#F1E9DB);box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);width:max-content}
+.tally div{text-align:center}.tally b{display:block;font-family:Lora,Georgia,serif;font-weight:700;font-size:120px;line-height:1.05;color:#3F6449}
+.tally .r b{color:#B8605A}.tally span{display:block;font-family:Lora,Georgia,serif;font-weight:600;font-size:28px;letter-spacing:.1em;color:#3C3733}
+.tally em{font-family:Lora,Georgia,serif;font-style:normal;font-size:80px;color:#3C3733}
+.date{margin-top:14px;padding:10px 26px 14px;background:#4E7B9C;color:#FAF6EF;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);width:max-content}
+.date b{display:block;font-family:Lora,Georgia,serif;font-weight:700;font-size:62px;line-height:1.05}
+.date span{display:block;font-family:Lora,Georgia,serif;font-style:italic;font-weight:500;font-size:31px;color:#E6EEF4}
+.q{margin-top:16px;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:700;font-size:54px;line-height:1.08;padding:16px 26px;color:#FAF6EF;background:#B8605A;border-bottom:8px solid #E8AB48;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18)}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="81.23" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI CAT AIR &middot; BUKAN FOTO SEJARAH</div>
+
+<div class="pg" data-at="s2:Di-0.37" data-fx="turn"><i class="sp"></i><i class="bl"></i><i class="bl b2"></i></div><div class="pg" data-at="s4:Mereka-0.37" data-fx="turn"><i class="sp"></i><i class="bl"></i><i class="bl b2"></i></div><div class="pg" data-at="s5:Di-0.37" data-fx="turn"><i class="sp"></i><i class="bl"></i><i class="bl b2"></i></div><div class="pg" data-at="s6:19-0.37" data-fx="turn"><i class="sp"></i><i class="bl"></i><i class="bl b2"></i></div><div class="pg" data-at="s6:Dua-0.37" data-fx="turn"><i class="sp"></i><i class="bl"></i><i class="bl b2"></i></div><div class="pg" data-at="s7:Tapi-0.37" data-fx="turn"><i class="sp"></i><i class="bl"></i><i class="bl b2"></i></div><div class="pg" data-at="s8:Semua-0.37" data-fx="turn"><i class="sp"></i><i class="bl"></i><i class="bl b2"></i></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="kk">FAKTA SEJARAH NEGARA &middot; EP <span class="g">20</span></div>
+  <div class="h1">Negara pertama<br><em>perempuan memilih</em></div>
+  <div class="chips"><i class="ch no" data-at="s1:Eropa" data-fx="ink" data-d="inline-block">Eropa? bukan</i><i class="ch no" data-at="s1:Amerika" data-fx="ink" data-d="inline-block">Amerika? bukan</i><i class="ch ok" data-at="s1:Pasifik" data-fx="ink" data-d="inline-block">Pasifik ✓</i></div>
+</div>
+<div class="p" data-in="s2" data-out="s2:Di">
+  <div class="kk">SAMUDRA PASIFIK</div>
+  <div class="h2">Selandia Baru</div>
+  <div class="lb" data-at="s2:Selandia" data-fx="ink" data-d="inline-block">ibu kota: Wellington</div>
+</div>
+<div class="p" data-in="s2:Di" data-out="s3">
+  <div class="kk">AKHIR ABAD KE-<span class="g">19</span></div>
+  <div class="row rs" data-at="s2:perempuan" data-fx="ink"><b>PEREMPUAN</b><span>belum boleh ikut memilih di pemilu</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s3:Rancangan">
+  <div class="kk">&plusmn; <span class="g">20</span> TAHUN KAMPANYE</div>
+  <div class="tag" data-at="s3:Kate" data-fx="ink"><svg viewBox="0 0 64 64" class="ic"><g transform="translate(32 32)"><path d="M-6 14q-12 8-18 2q8-4 18-2z" fill="#6F9779" opacity=".85"/><ellipse rx="11" ry="15" transform="rotate(0) translate(0 -11)" fill="#FFFDF8" stroke="#B9AFA2" stroke-width="1.4"/><ellipse rx="11" ry="15" transform="rotate(72) translate(0 -11)" fill="#FFFDF8" stroke="#B9AFA2" stroke-width="1.4"/><ellipse rx="11" ry="15" transform="rotate(144) translate(0 -11)" fill="#FFFDF8" stroke="#B9AFA2" stroke-width="1.4"/><ellipse rx="11" ry="15" transform="rotate(216) translate(0 -11)" fill="#FFFDF8" stroke="#B9AFA2" stroke-width="1.4"/><ellipse rx="11" ry="15" transform="rotate(288) translate(0 -11)" fill="#FFFDF8" stroke="#B9AFA2" stroke-width="1.4"/><circle r="6" fill="#E8AB48"/></g></svg><div><b>Kate Sheppard</b><span>tokoh utama kampanye hak pilih perempuan</span></div></div>
+</div>
+<div class="p" data-in="s3:Rancangan" data-out="s4">
+  <div class="kk">RUU HAK PILIH PEREMPUAN</div>
+  <div class="yrs">
+    <div class="yr" data-at="s3:1878" data-fx="ink"><b><span class="g">1878</span></b><span>kalah tipis</span></div>
+    <div class="yr" data-at="s3:1879" data-fx="ink"><b><span class="g">1879</span></b><span>kalah tipis</span></div>
+    <div class="yr" data-at="s3:1887" data-fx="ink"><b><span class="g">1887</span></b><span>kalah tipis</span></div>
+  </div>
+  <div class="st" data-at="s3:kandas" data-fx="stampc">KANDAS DI PARLEMEN</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="kk">PETISI TANDA TANGAN</div>
+  <div class="pet">
+    <div data-at="s4:sembilan" data-fx="ink"><i><span class="g">1891</span></i><small>lebih dari</small><b><b class="ct" data-from="0" data-to="9000" data-a="s4:sembilan" data-d="1.2"><span class="g">0</span></b></b></div>
+    <div data-at="s4:hampir" data-fx="ink"><i><span class="g">1892</span></i><small>hampir</small><b><b class="ct" data-from="9000" data-to="20000" data-a="s4:hampir" data-d="1.4"><span class="g">0</span></b></b></div>
+    <div class="big" data-at="s4:hampir#2" data-fx="ink"><i><span class="g">1893</span></i><small>hampir</small><b><b class="ct" data-from="20000" data-to="32000" data-a="s4:hampir#2" data-d="1.8"><span class="g">0</span></b></b></div>
+  </div>
+</div>
+<div class="p" data-in="s5" data-out="s5:Manuver">
+  <div class="kk">MAJELIS TINGGI &middot; <span class="g">8</span> SEPTEMBER <span class="g">1893</span></div>
+  <div class="tag" data-at="s5:Richard" data-fx="ink"><svg viewBox="0 0 64 64" class="ic"><g fill="none" stroke="#3C3733" stroke-width="2.6" stroke-linecap="round"><path d="M14 54L44 14"/><path d="M44 14q8 14-14 32q-4-22 14-32z" fill="#4E7B9C" fill-opacity=".55"/></g><circle cx="14" cy="54" r="4" fill="#3C3733"/></svg><div><b>Richard Seddon</b><span>Perdana Menteri, ingin RUU gagal</span></div></div>
+  <div class="row rs" data-at="s5:satu" data-fx="ink"><b><span class="g">1</span> ANGGOTA</b><span>dibujuk berbalik menolak</span></div>
+</div>
+<div class="p" data-in="s5:Manuver" data-out="s6">
+  <div class="kk">MAJELIS TINGGI &middot; <span class="g">8</span> SEPTEMBER <span class="g">1893</span></div>
+  <div class="row sg" data-at="s5:dua" data-fx="ink"><b><span class="g">2</span> ANGGOTA</b><span>marah, lalu berbalik mendukung</span></div>
+  <div class="tally" data-at="s5:Lolos" data-fx="ink"><div><b><span class="g">20</span></b><span>setuju</span></div><em>&ndash;</em><div class="r"><b><span class="g">18</span></b><span>menolak</span></div></div>
+  <div class="st ok" data-at="s5:Lolos" data-fx="stampc">LOLOS</div>
+</div>
+<div class="p" data-in="s6" data-out="s6:Dua">
+  <div class="kk">PENGESAHAN</div>
+  <div class="date" data-at="s6:September" data-fx="ink"><b><span class="g">19</span> September <span class="g">1893</span></b><span>disahkan menjadi undang-undang</span></div>
+  <div class="tag" data-at="s6:Glasgow" data-fx="ink"><svg viewBox="0 0 64 64" class="ic"><circle cx="32" cy="32" r="27" fill="#B8605A"/><circle cx="32" cy="32" r="22" fill="none" stroke="#8E3E3A" stroke-width="2"/><path d="M17 40l3-16 7 8 5-12 5 12 7-8 3 16z" fill="#FBE9D6"/><rect x="17" y="42" width="30" height="4" fill="#FBE9D6"/></svg><div><b>Lord Glasgow</b><span>Gubernur Selandia Baru</span></div></div>
+  <div class="lb" data-at="s6:Māori" data-fx="ink" data-d="inline-block">termasuk perempuan Māori</div>
+</div>
+<div class="p" data-in="s6:Dua" data-out="s7">
+  <div class="kk">PEMILU PERTAMA</div>
+  <div class="date" data-at="s6:Dua" data-fx="ink"><b><span class="g">28</span> November <span class="g">1893</span></b><span>perempuan ikut memilih</span></div>
+  <div class="lb sm" data-at="s6:pertama" data-fx="ink" data-d="inline-block">pemilih Māori: <span class="g">20</span> Desember <span class="g">1893</span></div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="kk">HAK UNTUK DIPILIH</div>
+  <div class="row " data-at="s7:1919" data-fx="ink"><b><span class="g">1919</span></b><span>perempuan boleh mencalonkan diri ke parlemen</span></div>
+  <div class="tag" data-at="s7:Elizabeth" data-fx="ink"><svg viewBox="0 0 64 64" class="ic"><g transform="translate(32 32)"><path d="M-6 14q-12 8-18 2q8-4 18-2z" fill="#6F9779" opacity=".85"/><ellipse rx="11" ry="15" transform="rotate(0) translate(0 -11)" fill="#FFFDF8" stroke="#B9AFA2" stroke-width="1.4"/><ellipse rx="11" ry="15" transform="rotate(72) translate(0 -11)" fill="#FFFDF8" stroke="#B9AFA2" stroke-width="1.4"/><ellipse rx="11" ry="15" transform="rotate(144) translate(0 -11)" fill="#FFFDF8" stroke="#B9AFA2" stroke-width="1.4"/><ellipse rx="11" ry="15" transform="rotate(216) translate(0 -11)" fill="#FFFDF8" stroke="#B9AFA2" stroke-width="1.4"/><ellipse rx="11" ry="15" transform="rotate(288) translate(0 -11)" fill="#FFFDF8" stroke="#B9AFA2" stroke-width="1.4"/><circle r="6" fill="#E8AB48"/></g></svg><div><b>Elizabeth McCombs</b><span>anggota parlemen perempuan pertama, <span class="g">1933</span></span></div></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="kk">SEMUA BERAWAL DARI</div>
+  <div class="h2">tanda tangan warga</div>
+  <div class="q" data-at="s8:Menurut" data-fx="ink">Perubahan besar apa yang bisa dimulai dari petisi?</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 20</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":7.295,"s2":7.455,"s2e":14.951,"s3":15.111,"s3e":29.048,"s4":29.208,"s4e":39.996,"s5":40.156,"s5e":51.487,"s6":51.647,"s6e":60.762,"s7":60.922,"s7e":69.862,"s8":70.022,"s8e":78.231,"end":78.231,"dur":81.23,"outro":78.481},AT={"s1:dunia":0.917,"s1:perempuan":2.186,"s1:memilih":3.115,"s1:Eropa":4.88,"s1:Amerika":5.87,"s1:Pasifik":6.799,"s2:Ini":7.492,"s2:Selandia":7.817,"s2:Di":9.149,"s2:perempuan":12.908,"s2:tidak":13.651,"s3:Kampanye":15.194,"s3:Kate":18.46,"s3:Rancangan":19.386,"s3:1878":22.327,"s3:1879":23.457,"s3:1887":25.472,"s3:kandas":26.587,"s4:Mereka":29.22,"s4:petisi":30.117,"s4:sembilan":31.358,"s4:1891":32.488,"s4:hampir":33.959,"s4:1892":35.104,"s4:hampir#2":37.086,"s4:1893":38.68,"s5:Di":40.156,"s5:Majelis":40.45,"s5:Richard":42.091,"s5:satu":44.614,"s5:berbalik":45.218,"s5:Manuver":46.302,"s5:marah":47.927,"s5:mendukung":48.794,"s5:Lolos":49.692,"s5:belas":51.007,"s6:19":51.647,"s6:Gubernur":53.966,"s6:Glasgow":54.617,"s6:mengesahkannya":55.004,"s6:termasuk":55.994,"s6:Māori":56.923,"s6:Dua":57.774,"s6:November":58.285,"s6:memilih":59.477,"s6:pertama":59.988,"s7:Tapi":61.305,"s7:dipilih":62.018,"s7:1919":63.302,"s7:Dan":64.717,"s7:perempuan":65.584,"s7:Elizabeth":66.574,"s7:terpilih":68.206,"s7:1933":68.841,"s8:Semua":70.022,"s8:tanda":71.079,"s8:Menurut":72.55,"s8:petisi":75.135,"s8:AUDIRA":76.42,"s2:Di-0.37":8.779,"s4:Mereka-0.37":28.85,"s5:Di-0.37":39.786,"s6:19-0.37":51.277,"s6:Dua-0.37":57.404,"s7:Tapi-0.37":60.935,"s8:Semua-0.37":69.652,"s5:dua":47.323,"s6:September":52.093},DUR=81.23,OUT=78.481;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ ink:(e,t)=>{const d=e.dataset.d||(e.classList.contains('row')||e.classList.contains('tag')||e.classList.contains('tally')||(e.parentNode&&e.parentNode.classList.contains('pet'))?'flex':'block');gsap.set(e,{display:'none'});tl.set(e,{display:d},t);tl.fromTo(e,{opacity:0,y:18,filter:'blur(7px)'},{opacity:1,y:0,filter:'blur(0px)',duration:.5,ease:'power2.out',immediateRender:false},t);},
+ stampc:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:'inline-block'},t);tl.fromTo(e,{scale:1.9,rotation:-8,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in',immediateRender:false},t);},
+ turn:(e,t)=>{const b=e.querySelectorAll('.bl');gsap.set(e,{opacity:0,rotationY:86,transformPerspective:2600,transformOrigin:'0% 50%'});gsap.set(b,{scale:.25,opacity:0});
+  tl.set(e,{opacity:1},t);tl.to(e,{rotationY:0,duration:.32,ease:'power2.in'},t);
+  tl.to(b,{scale:1.3,opacity:1,duration:.6,ease:'power2.out',stagger:.06},t+.1);
+  tl.to(e,{rotationY:-86,duration:.42,ease:'power2.inOut'},t+.41);tl.set(e,{opacity:0},t+.84);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{opacity:0,y:24},{opacity:1,y:0,duration:.45,ease:'power3.out'},a-.04),POUT=(tl,p,b)=>tl.to(p,{opacity:0,y:-10,duration:.22,ease:'power2.in'},b-.22);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP20_SELANDIA_BARU_HAK_PILIH")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

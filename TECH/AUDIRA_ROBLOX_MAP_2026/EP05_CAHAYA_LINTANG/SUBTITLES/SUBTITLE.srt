@@ -1,0 +1,256 @@
+1
+00:00:00,152 --> 00:00:01,788
+Benda kecil di Roblox bisa
+
+2
+00:00:01,808 --> 00:00:03,073
+kehilangan bayangannya.
+
+3
+00:00:03,093 --> 00:00:04,312
+Penyebabnya, bayangan juga
+
+4
+00:00:04,332 --> 00:00:05,352
+dihitung pakai kotak.
+
+5
+00:00:05,372 --> 00:00:06,606
+Di sistem cahaya voxel,
+
+6
+00:00:06,626 --> 00:00:08,107
+setiap kotak cahaya berukuran
+
+7
+00:00:08,127 --> 00:00:09,129
+empat kali empat kali empat
+
+8
+00:00:09,149 --> 00:00:09,801
+stud.
+
+9
+00:00:09,821 --> 00:00:11,550
+Objek harus lebih besar dari
+
+10
+00:00:11,570 --> 00:00:12,711
+itu untuk menampilkan bayangan
+
+11
+00:00:12,731 --> 00:00:13,687
+yang realistis.
+
+12
+00:00:13,707 --> 00:00:14,678
+Saat benda bergerak,
+
+13
+00:00:14,698 --> 00:00:15,918
+bayangannya dihitung ulang.
+
+14
+00:00:15,938 --> 00:00:17,636
+Semua pengaturan ini ada di
+
+15
+00:00:17,656 --> 00:00:18,937
+layanan bernama Lighting.
+
+16
+00:00:18,957 --> 00:00:20,500
+Dulu developer memilih sistem
+
+17
+00:00:20,520 --> 00:00:21,708
+cahaya lewat pengaturan
+
+18
+00:00:21,728 --> 00:00:23,131
+Technology.
+
+19
+00:00:23,151 --> 00:00:23,966
+Ada Voxel,
+
+20
+00:00:23,986 --> 00:00:25,669
+ada ShadowMap dengan bayangan
+
+21
+00:00:25,689 --> 00:00:27,109
+tajam dari matahari,
+
+22
+00:00:27,129 --> 00:00:28,205
+dan Future,
+
+23
+00:00:28,225 --> 00:00:29,804
+sistem cahaya paling canggih.
+
+24
+00:00:29,824 --> 00:00:31,084
+Sekarang pengaturan itu sudah
+
+25
+00:00:31,104 --> 00:00:31,650
+usang.
+
+26
+00:00:31,670 --> 00:00:33,050
+Penggantinya LightingStyle:
+
+27
+00:00:33,070 --> 00:00:35,535
+Soft untuk tampilan bergaya,
+
+28
+00:00:35,555 --> 00:00:37,067
+atau Realistic untuk tampilan
+
+29
+00:00:37,087 --> 00:00:37,775
+alami.
+
+30
+00:00:37,795 --> 00:00:39,756
+Soft cocok untuk map kartun,
+
+31
+00:00:39,776 --> 00:00:41,521
+Realistic untuk map yang ingin
+
+32
+00:00:41,541 --> 00:00:42,386
+terlihat nyata.
+
+33
+00:00:42,406 --> 00:00:43,562
+Lalu ada
+
+34
+00:00:43,582 --> 00:00:45,327
+PrioritizeLightingQuality.
+
+35
+00:00:45,347 --> 00:00:46,442
+Di perangkat yang lemah,
+
+36
+00:00:46,462 --> 00:00:48,113
+kamu memilih mana yang
+
+37
+00:00:48,133 --> 00:00:49,294
+diturunkan duluan:
+
+38
+00:00:49,314 --> 00:00:50,517
+kualitas bayangan di dekat
+
+39
+00:00:50,537 --> 00:00:52,519
+kamera, atau jarak pandang.
+
+40
+00:00:52,539 --> 00:00:53,649
+Ada satu pengaturan yang
+
+41
+00:00:53,669 --> 00:00:54,469
+jarang dipakai:
+
+42
+00:00:54,489 --> 00:00:56,203
+GeographicLatitude, lintang
+
+43
+00:00:56,223 --> 00:00:57,605
+geografis map.
+
+44
+00:00:57,625 --> 00:00:58,828
+Mengubahnya akan menggeser
+
+45
+00:00:58,848 --> 00:01:00,840
+posisi matahari di setiap jam.
+
+46
+00:01:00,860 --> 00:01:02,280
+Jamnya sendiri diatur lewat
+
+47
+00:01:02,300 --> 00:01:02,922
+ClockTime.
+
+48
+00:01:02,942 --> 00:01:04,594
+Artinya, jalur matahari di map
+
+49
+00:01:04,614 --> 00:01:05,677
+bisa dibuat mirip lokasi
+
+50
+00:01:05,697 --> 00:01:06,281
+nyata.
+
+51
+00:01:06,301 --> 00:01:07,752
+Misalnya Jakarta,
+
+52
+00:01:07,772 --> 00:01:09,067
+sekitar enam derajat di
+
+53
+00:01:09,087 --> 00:01:10,872
+selatan khatulistiwa.
+
+54
+00:01:10,892 --> 00:01:12,157
+Ditambah pengaturan jam,
+
+55
+00:01:12,177 --> 00:01:14,262
+suasana pagi atau senja di map
+
+56
+00:01:14,282 --> 00:01:15,376
+bisa terasa seperti dunia
+
+57
+00:01:15,396 --> 00:01:16,063
+nyata.
+
+58
+00:01:16,083 --> 00:01:17,766
+Jadi cahaya bukan cuma soal
+
+59
+00:01:17,786 --> 00:01:18,524
+terang dan gelap,
+
+60
+00:01:18,544 --> 00:01:20,803
+tapi soal suasana.
+
+61
+00:01:20,823 --> 00:01:22,490
+Kamu suka map yang realistis,
+
+62
+00:01:22,510 --> 00:01:23,388
+atau yang bergaya?
+
+63
+00:01:23,408 --> 00:01:24,673
+Ikuti AUDIRA untuk rahasia
+
+64
+00:01:24,693 --> 00:01:26,532
+bikin map berikutnya.
+

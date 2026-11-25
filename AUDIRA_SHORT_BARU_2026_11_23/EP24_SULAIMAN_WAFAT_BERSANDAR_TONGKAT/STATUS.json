@@ -1,0 +1,530 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP24_SULAIMAN_WAFAT_BERSANDAR_TONGKAT",
+  "topic": "Nabi Sulaiman AS wafat bersandar pada tongkat, jin tak menyadarinya (QS Saba 14)",
+  "createdAt": "2026-11-22T17:59:52.959Z",
+  "updatedAt": "2026-11-23T12:38:05.952Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:02:17.115Z",
+          "text": "Dibaca: CLAUDE.md, BRIEF_COMMON QISSAH (adab: nabi tak tampil dalam bentuk apa pun), HANDOFF/STYLE_DECISION EP08 Ilyas (2D PAPERWORLD), memori GLOBAL + PAPERWORLD/WAYANGFORGE/ISLAMICDOCUMENTARY, skill audira-2d-motion."
+        }
+      ],
+      "doneAt": "2026-11-22T18:02:17.115Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:02:11.695Z",
+          "text": "SOURCE_REGISTER: QS 34:12-14, 38:35-38 (A); Ibnu Katsir 34:14 (B: bersandar tongkat ~setahun, rayap); israiliyat dipisah (C)."
+        }
+      ],
+      "doneAt": "2026-11-22T18:02:11.695Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T22:20:47.248Z",
+      "notes": [
+        {
+          "at": "2026-11-22T22:20:47.248Z",
+          "text": "Pengguna memilih PAPERWORLD (dari PAPERWORLD / WAYANGFORGE / ISLAMICDOCUMENTARY)."
+        }
+      ],
+      "doneAt": "2026-11-22T22:20:47.248Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T23:57:39.218Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T23:57:24.382Z",
+      "startedAt": "2026-11-22T23:57:24.382Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T23:59:09.252Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T00:00:14.139Z",
+          "text": "VO Cartesia 80.11s, 191 kata, offset 0; vo.timing.json via npm run vo."
+        }
+      ],
+      "doneAt": "2026-11-23T00:00:14.139Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T23:59:09.252Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.572Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T12:20:45.036Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-23T12:20:40.905Z",
+      "startedAt": "2026-11-23T12:20:40.905Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:38:01.278Z",
+          "text": "FINAL_EP24_SULAIMAN_tagged.mp4 1080x1920@60, 5010 frame, -13.6 LUFS, TP -1.8 dBFS, qa_video PASS, signature VALID, metadata OK, record_score final 3.50 (diterima 3.50 setelah 2 putaran)"
+        }
+      ],
+      "doneAt": "2026-11-23T12:38:01.278Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:26:45.279Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T12:38:05.952Z",
+          "text": "Validator caption ok, SUBTITLES.srt, NOTES.md, lesson PAPERWORLD+GLOBAL, scheduled task review-ep24-sulaiman-tongkat-24h/-72h/-7d, draft/_s1.._s6 + clip dihapus"
+        }
+      ],
+      "doneAt": "2026-11-23T12:38:05.952Z",
+      "startedAt": "2026-11-23T12:26:04.388Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP24",
+    "engine": "remotion",
+    "series": "AUDIRA_SHORT_BARU_2026_11_23",
+    "channel": "AUDIRA QISSAH",
+    "style": "PAPERWORLD",
+    "shortTitle": "Sulaiman"
+  },
+  "handoverLog": [
+    {
+      "at": "2026-11-22T22:21:34.929Z",
+      "doing": "Style PAPERWORLD disetujui; mulai tahap 4 naskah/storyboard (belum ada file docs).",
+      "files": [
+        "HANDOFF.md",
+        "style/STYLE_DECISION.md",
+        "research/SOURCE_REGISTER.md"
+      ],
+      "next": "Baca HANDOFF.md di folder episode; tulis docs tahap 4, scaffold project, VO, animasi 2D, draft juri, final, delivery.",
+      "snapshot": {
+        "episode": "EP24_SULAIMAN_WAFAT_BERSANDAR_TONGKAT",
+        "topic": "Nabi Sulaiman AS wafat bersandar pada tongkat, jin tak menyadarinya (QS Saba 14)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP24",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": false,
+            "status": "pending"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T23:59:09.951Z",
+      "doing": "Tahap 4 selesai (docs + lint PASS); tahap 5 scaffold project/ selesai sebagian (copy starter + junction + SERIES.json). Belum: preflight/check-env, VO, kode.",
+      "files": [
+        "HANDOFF.md",
+        "docs/vo-script.txt",
+        "docs/STORYBOARD.md",
+        "docs/ART_DIRECTION.md",
+        "project/SERIES.json"
+      ],
+      "next": "Baca bagian UPDATE paling atas HANDOFF.md: preflight → VO Cartesia → Film.tsx dari template EP08 Ilyas.tsx → sfx → cover → draft juri → final → delivery.",
+      "snapshot": {
+        "episode": "EP24_SULAIMAN_WAFAT_BERSANDAR_TONGKAT",
+        "topic": "Nabi Sulaiman AS wafat bersandar pada tongkat, jin tak menyadarinya (QS Saba 14)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP24",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:00:12.485Z",
+      "doing": "Tahap 4–6 selesai: docs, scaffold project, VO 80.11s terkunci (vo.wav, vo-words.json, vo.timing.json). Waktu adegan dari VO tercatat di HANDOFF.md UPDATE 2.",
+      "files": [
+        "HANDOFF.md",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "Tahap 7: tulis project/src/ep24/Film.tsx dari template EP08 Ilyas.tsx, daftarkan SulaimanPreview/SulaimanFinal di Root.tsx, SHOTLIST.md + npm run sfx, cover-topic.png; lalu tahap 8 draft juri, 9 final, 10 delivery.",
+      "snapshot": {
+        "episode": "EP24_SULAIMAN_WAFAT_BERSANDAR_TONGKAT",
+        "topic": "Nabi Sulaiman AS wafat bersandar pada tongkat, jin tak menyadarinya (QS Saba 14)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP24",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:06:03.494Z",
+      "doing": "Tahap 7: Film.tsx v1 + Root terdaftar (SulaimanPreview/Final 83.5s). Still pertama draft/_s1/_sheet.jpg: audit PERLU POLES composition+readability.",
+      "command": "node scripts/stills.mjs ../draft/_s1 3s,12s,22s,27s,33s,43s,50s,56s,61s,67s,76s,79s SulaimanPreview",
+      "files": [
+        "HANDOFF.md",
+        "project/src/ep24/Film.tsx",
+        "project/src/Root.tsx",
+        "draft/_s1/_sheet.jpg",
+        "draft/_s1/look.json"
+      ],
+      "next": "Baca HANDOFF.md UPDATE 3: lihat draft/_s1 sheet+look.json, poles Film.tsx sampai audit lolos, SHOTLIST.md + npm run sfx, cover-topic.png, draft juri, final, delivery.",
+      "snapshot": {
+        "episode": "EP24_SULAIMAN_WAFAT_BERSANDAR_TONGKAT",
+        "topic": "Nabi Sulaiman AS wafat bersandar pada tongkat, jin tak menyadarinya (QS Saba 14)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP24",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:14:01.131Z",
+      "doing": "Tahap 7: Film.tsx v1 + Root terdaftar (SulaimanPreview/Final 83.5s). Still pertama draft/_s1/_sheet.jpg: audit PERLU POLES composition+readability.",
+      "command": "node scripts/stills.mjs ../draft/_s1 3s,12s,22s,27s,33s,43s,50s,56s,61s,67s,76s,79s SulaimanPreview",
+      "files": [
+        "HANDOFF.md",
+        "project/src/ep24/Film.tsx",
+        "project/src/Root.tsx",
+        "draft/_s1/_sheet.jpg",
+        "draft/_s1/look.json"
+      ],
+      "next": "Baca HANDOFF.md UPDATE 3: lihat draft/_s1 sheet+look.json, poles Film.tsx sampai audit lolos, SHOTLIST.md + npm run sfx, cover-topic.png, draft juri, final, delivery.",
+      "snapshot": {
+        "episode": "EP24_SULAIMAN_WAFAT_BERSANDAR_TONGKAT",
+        "topic": "Nabi Sulaiman AS wafat bersandar pada tongkat, jin tak menyadarinya (QS Saba 14)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP24",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:19:47.440Z",
+      "doing": "Audit still draft/_s4 LOLOS (semua cap 5). SHOTLIST.md ditulis; menjalankan npm run sfx",
+      "command": "npm run sfx -- --timing=public/audio/vo.timing.json --duration=83.5",
+      "files": [
+        "SHOTLIST.md",
+        "project/src/ep24/Film.tsx",
+        "draft/_s4/_sheet.jpg"
+      ],
+      "next": "cover-topic.png, draft/THEME_CHECK.md, klip audit:camera, juri draf, final",
+      "snapshot": {
+        "episode": "EP24_SULAIMAN_WAFAT_BERSANDAR_TONGKAT",
+        "topic": "Nabi Sulaiman AS wafat bersandar pada tongkat, jin tak menyadarinya (QS Saba 14)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP24",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:21:55.097Z",
+      "doing": "Juri buta draf putaran 1 PAPERWORLD (contact-sheet.jpg, camera.json 5/5, self 4.17). sfx.wav, cover-topic.png, THEME_CHECK.md selesai",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/camera.json",
+        "style/cover-topic.png",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "record_score jury; bila LOLOS atau ≥3.5 setelah 2 putaran: npm run render:final -- --comp=SulaimanFinal --out=../FINAL_EP24_SULAIMAN.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc",
+      "snapshot": {
+        "episode": "EP24_SULAIMAN_WAFAT_BERSANDAR_TONGKAT",
+        "topic": "Nabi Sulaiman AS wafat bersandar pada tongkat, jin tak menyadarinya (QS Saba 14)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP24",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:24:20.810Z",
+      "doing": "Juri buta draf putaran 2/2 PAPERWORLD berjalan (r1 juri 3.33 sudah dicatat). Putaran 2 poles: key light screen glow + vignette, bayangan pp/ppS lebih kuat, rim inset kartu, chip 44px, label rayap/tongkat 40px, jin hook masuk frame, S7b gulungan+tongkat+2 jin. Sheet draft/_s6 = draft/contact-sheet.jpg, audit lolos semua cap 5. THEME_CHECK, camera.json (5/5), sfx.wav, cover-topic.png selesai.",
+      "files": [
+        "project/src/ep24/Film.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/camera.json"
+      ],
+      "next": "record_score jury r2 (stage draft). Bila LOLOS ≥3.8 atau skor juri terbaik ≥3.5 → render final: cd project; set TEMP/TMP/RENDER_TMPDIR=F:\\temp\\render; npm run render:final -- --comp=SulaimanFinal --out=../FINAL_EP24_SULAIMAN.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error. Bila terbaik <3.5 → kembali gerbang style (G21). Lalu QA −14 LUFS/TP<−1, metadata ffmpeg, record_score final, tahap 10 delivery (SOCIAL_CAPTIONS.md, NOTES.md, lesson).",
+      "snapshot": {
+        "episode": "EP24_SULAIMAN_WAFAT_BERSANDAR_TONGKAT",
+        "topic": "Nabi Sulaiman AS wafat bersandar pada tongkat, jin tak menyadarinya (QS Saba 14)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP24",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:25:00.957Z",
+      "doing": "Draf DITERIMA 3.50 setelah 2 putaran juri (r1 3.33, r2 3.50, dicatat + lesson failed). Final belum dirender.",
+      "command": "cd project; TEMP/TMP/RENDER_TMPDIR=F:\\temp\\render; npm run render:final -- --comp=SulaimanFinal --out=../FINAL_EP24_SULAIMAN.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error",
+      "files": [
+        "project/src/ep24/Film.tsx",
+        "project/public/audio/vo.wav",
+        "project/public/audio/sfx.wav",
+        "draft/contact-sheet.jpg",
+        "style/cover-topic.png",
+        "SHOTLIST.md"
+      ],
+      "next": "Render final (perintah di atas, jangan poles lagi) → QA −14 LUFS/TP<−1 dBFS + audira_qa_video hardOnly → metadata ffmpeg (artist AUDIRA (Agus Dwi R.), comment AUDIRA-sulaiman-tongkat-EP24 | audira.my.id) → record_score final → tahap 10: SOCIAL_CAPTIONS.md 6 platform + Jadwal Upload (WIB) + Label Konten AI, audira_validate_social_captions, NOTES.md (tulis 'diterima 3.50 setelah 2 putaran'), append_lesson, caption tampil di chat, hapus draft/_s1.._s5 + clip.",
+      "snapshot": {
+        "episode": "EP24_SULAIMAN_WAFAT_BERSANDAR_TONGKAT",
+        "topic": "Nabi Sulaiman AS wafat bersandar pada tongkat, jin tak menyadarinya (QS Saba 14)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP24",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:26:18.657Z",
+      "doing": "Final BELUM ter-render. Draf diterima 3.50 setelah 2 putaran juri (aturan auto-accept), tapi gate memori di render-final.mjs menolak (tidak kenal auto-accept). sfx.wav sudah diturunkan −1.5 dB (G18c gap sebelumnya 11.7 LU < 12). SOCIAL_CAPTIONS.md ditulis; validator tinggal dicek ulang (hashtag X sudah ditambah).",
+      "command": "cd project; TEMP/TMP/RENDER_TMPDIR=F:\\temp\\render; npm run render:final -- --comp=SulaimanFinal --out=../FINAL_EP24_SULAIMAN.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --skip-memory-gate=\"draft diterima 3.50 setelah 2 putaran juri (keputusan pengguna 2026-11-23)\"",
+      "files": [
+        "SOCIAL_CAPTIONS.md",
+        "project/public/audio/sfx.wav",
+        "draft/final_run.log"
+      ],
+      "next": "Jalankan perintah render (background); cek G18c gap ≥12 LU (bila masih kurang, turunkan sfx.wav lagi −1 dB). QA −14 LUFS/TP<−1 + audira_qa_video hardOnly; metadata ffmpeg → FINAL_EP24_SULAIMAN_tagged.mp4 (artist \"AUDIRA (Agus Dwi R.)\", comment \"AUDIRA-sulaiman-tongkat-EP24 | audira.my.id\"); record_score final; audira_validate_social_captions (keyword Sulaiman, tongkat, rayap); NOTES.md (\"diterima 3.50 setelah 2 putaran\"); hapus draft/_s1.._s6 + draft/clip_45-63.mp4; tampilkan caption di chat; update status tahap 9 & 10.",
+      "snapshot": {
+        "episode": "EP24_SULAIMAN_WAFAT_BERSANDAR_TONGKAT",
+        "topic": "Nabi Sulaiman AS wafat bersandar pada tongkat, jin tak menyadarinya (QS Saba 14)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP24",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:27:02.357Z",
+      "doing": "render final FINAL_EP24_SULAIMAN.mp4 (s4, background, --skip-memory-gate)",
+      "command": "cd project; npm run render:final -- --comp=SulaimanFinal --out=../FINAL_EP24_SULAIMAN.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --skip-memory-gate=\"...\" > ../draft/final_run.log",
+      "files": [
+        "FINAL_EP24_SULAIMAN.mp4",
+        "draft/final_run.log"
+      ],
+      "next": "QA LUFS/TP + qa_video, metadata tagged, record_score final, validator caption, NOTES.md, hapus draft/_s*, clip",
+      "snapshot": {
+        "episode": "EP24_SULAIMAN_WAFAT_BERSANDAR_TONGKAT",
+        "topic": "Nabi Sulaiman AS wafat bersandar pada tongkat, jin tak menyadarinya (QS Saba 14)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP24",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:27:02.357Z",
+      "doing": "render final FINAL_EP24_SULAIMAN.mp4 (s4, background, --skip-memory-gate)",
+      "command": "cd project; npm run render:final -- --comp=SulaimanFinal --out=../FINAL_EP24_SULAIMAN.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --skip-memory-gate=\"...\" > ../draft/final_run.log",
+      "files": [
+        "FINAL_EP24_SULAIMAN.mp4",
+        "draft/final_run.log"
+      ],
+      "next": "QA LUFS/TP + qa_video, metadata tagged, record_score final, validator caption, NOTES.md, hapus draft/_s*, clip",
+      "snapshot": {
+        "episode": "EP24_SULAIMAN_WAFAT_BERSANDAR_TONGKAT",
+        "topic": "Nabi Sulaiman AS wafat bersandar pada tongkat, jin tak menyadarinya (QS Saba 14)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP24",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T12:38:05.783Z"
+    }
+  ],
+  "syncedAt": "2026-11-23T12:26:45.279Z",
+  "session": 4,
+  "sessionLog": [
+    {
+      "no": 3,
+      "title": "EP24 Sulaiman · s3",
+      "at": "2026-11-23T12:14:01.130Z"
+    },
+    {
+      "no": 4,
+      "title": "EP24 Sulaiman · s4",
+      "at": "2026-11-23T12:25:00.957Z"
+    }
+  ]
+}

@@ -1,0 +1,453 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP23_ISMAIL_PERINTAH_QURBAN",
+  "topic": "Nabi Ibrahim, Nabi Ismail, dan mimpi perintah penyembelihan (QS As-Saffat 100-111)",
+  "createdAt": "2026-11-22T17:59:36.210Z",
+  "updatedAt": "2026-11-23T12:46:22.951Z",
+  "currentStage": "voice",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:01:58.413Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        },
+        {
+          "at": "2026-11-22T18:01:59.371Z",
+          "text": "Dibaca: CLAUDE.md, BRIEF_COMMON QISSAH (adab visual), HANDOFF EP08 (pola 2D Remotion), memori GLOBAL + channel + PAPERWORLD/MANUSCRIPT."
+        }
+      ],
+      "doneAt": "2026-11-22T18:01:59.371Z",
+      "startedAt": "2026-11-22T18:00:08.437Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:01:21.556Z",
+          "text": "SOURCE_REGISTER: 20 klaim, ayat 37:99-113, 22:34, 22:37, 108:2 (A), Ibnu Katsir (B), israiliyat dipisah (C)."
+        }
+      ],
+      "doneAt": "2026-11-22T18:01:21.556Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T22:20:43.338Z",
+      "notes": [
+        {
+          "at": "2026-11-22T22:20:43.338Z",
+          "text": "Pengguna memilih ISLAMICDOCUMENTARY (dari ISLAMICDOCUMENTARY / STORYBOOK / PAPERWORLD)."
+        }
+      ],
+      "doneAt": "2026-11-22T22:20:43.338Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T23:57:39.199Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T23:57:16.287Z",
+      "startedAt": "2026-11-22T23:57:16.287Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:21:14.428Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:21:14.428Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.572Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T12:33:38.670Z",
+          "text": "sync: look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-23T12:31:33.414Z",
+      "startedAt": "2026-11-23T12:31:33.414Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:45:50.921Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-23T12:46:18.742Z",
+          "text": "FINAL_VIDEO.mp4 174 MB, 86 dtk, -13.7 LUFS, TP -1.6, metadata+C2PA valid. Override gate: memory (2 putaran 3.67), camera (medianSpeed 0.015 SVG flat), channel (file starter news)."
+        }
+      ],
+      "doneAt": "2026-11-23T12:46:18.742Z",
+      "startedAt": "2026-11-23T12:45:50.168Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:40:26.157Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-23T12:40:15.237Z",
+      "startedAt": "2026-11-23T12:40:15.237Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP23",
+    "style": "ISLAMICDOCUMENTARY",
+    "engine": "remotion",
+    "channel": "QISSAH",
+    "shortTitle": "Ismail",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-23T12:45:50.921Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T22:24:07.203Z",
+      "doing": "VO Cartesia dari docs/vo-script.txt ke project/public/audio/vo.wav",
+      "files": [
+        "docs/vo-script.txt",
+        "project/public/audio/vo.wav"
+      ],
+      "next": "npm run vo, tulis STORYBOARD/SHOTLIST dengan detik VO, kode 2D di project/src/episodes/ismail/",
+      "snapshot": {
+        "episode": "EP23_ISMAIL_PERINTAH_QURBAN",
+        "topic": "Nabi Ibrahim, Nabi Ismail, dan mimpi perintah penyembelihan (QS As-Saffat 100-111)",
+        "style": "ISLAMICDOCUMENTARY",
+        "memoryEpisode": "short-baru-11-23-EP23",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T22:25:55.102Z",
+      "doing": "Pindah sesi (context guard). VO terkunci 82.38 dtk; naskah, riset, style ISLAMICDOCUMENTARY selesai.",
+      "files": [
+        "docs/HANDOFF.md",
+        "docs/vo-script.txt",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "Baca docs/HANDOFF.md: STYLE_DECISION + docs storyboard, kode 2D project/src/episodes/ismail/Film.tsx, cover topik, sfx, draf juri, final, delivery.",
+      "snapshot": {
+        "episode": "EP23_ISMAIL_PERINTAH_QURBAN",
+        "topic": "Nabi Ibrahim, Nabi Ismail, dan mimpi perintah penyembelihan (QS As-Saffat 100-111)",
+        "style": "ISLAMICDOCUMENTARY",
+        "memoryEpisode": "short-baru-11-23-EP23",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T23:58:34.943Z",
+      "doing": "Pindah sesi (context guard sesi 2). Docs + STYLE_DECISION + SHOTLIST + sfx.wav selesai.",
+      "files": [
+        "docs/HANDOFF.md",
+        "SHOTLIST.md",
+        "docs/STORYBOARD.md",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "Tulis kode project/src/episodes/ismail/Film.tsx (pola EP08 Ilyas.tsx), daftarkan IsmailPreview/Final/Cover di Root, cover topik, draf juri, final, delivery. Baca docs/HANDOFF.md bagian 'Update sesi kedua'.",
+      "snapshot": {
+        "episode": "EP23_ISMAIL_PERINTAH_QURBAN",
+        "topic": "Nabi Ibrahim, Nabi Ismail, dan mimpi perintah penyembelihan (QS As-Saffat 100-111)",
+        "style": "ISLAMICDOCUMENTARY",
+        "memoryEpisode": "short-baru-11-23-EP23",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:19:53.214Z",
+      "doing": "Pindah sesi (context guard sesi 2). Docs + STYLE_DECISION + SHOTLIST + sfx.wav selesai.",
+      "files": [
+        "docs/HANDOFF.md",
+        "SHOTLIST.md",
+        "docs/STORYBOARD.md",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "Tulis kode project/src/episodes/ismail/Film.tsx (pola EP08 Ilyas.tsx), daftarkan IsmailPreview/Final/Cover di Root, cover topik, draf juri, final, delivery. Baca docs/HANDOFF.md bagian 'Update sesi kedua'.",
+      "snapshot": {
+        "episode": "EP23_ISMAIL_PERINTAH_QURBAN",
+        "topic": "Nabi Ibrahim, Nabi Ismail, dan mimpi perintah penyembelihan (QS As-Saffat 100-111)",
+        "style": "ISLAMICDOCUMENTARY",
+        "memoryEpisode": "short-baru-11-23-EP23",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:26:23.974Z",
+      "doing": "Sesi 3: kode Film.tsx selesai (12 adegan, HudCtx: visual di bawah bingkai mihrab, kartu di atas), IsmailPreview/Final/Cover terdaftar di Root, tsc bersih untuk file ini. Belum dirender sama sekali.",
+      "files": [
+        "project/src/episodes/ismail/Film.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "1) Cover: cd project; node scripts/stills.mjs out/cover 0 IsmailCover → salin ke style/cover-topic.png, tampilkan. 2) npm run draft -- IsmailPreview (env TEMP/TMP/RENDER_TMPDIR=F:\\temp\\render) → THEME_CHECK.md (G22) → juri buta (qa/jury.md) record_score draft. 3) render:final --comp=IsmailFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --encoder=nvenc. 4) Delivery. Lihat docs/HANDOFF.md.",
+      "snapshot": {
+        "episode": "EP23_ISMAIL_PERINTAH_QURBAN",
+        "topic": "Nabi Ibrahim, Nabi Ismail, dan mimpi perintah penyembelihan (QS As-Saffat 100-111)",
+        "style": "ISLAMICDOCUMENTARY",
+        "memoryEpisode": "short-baru-11-23-EP23",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:27:01.135Z",
+      "doing": "Sesi 3 selesai: Film.tsx + Root (IsmailPreview/Final/Cover) + cover topik style/cover-topic.png (look ceilings: lighting5 material5 depth3 comp5 read5). Belum ada draf.",
+      "files": [
+        "project/src/episodes/ismail/Film.tsx",
+        "project/src/Root.tsx",
+        "style/cover-topic.png"
+      ],
+      "next": "1) Poles depth (ceiling 3): tambah lapisan FG blur dekat kamera per adegan (bibir bukit/batu gelap blur 8px di bawah, parallax 1.4) + kabut atmosfer antara MG dan BG; glow lentera lebih kuat. 2) cd project; set TEMP/TMP/RENDER_TMPDIR=F:\\temp\\render; npm run draft -- IsmailPreview → draft/THEME_CHECK.md (G22) → juri buta subagent (F:/AUDIRA-SKILL-MOTION/qa/jury.md + draft/jury_input.json) → record_score draft judge jury (episode short-baru-11-23-EP23, style ISLAMICDOCUMENTARY). Maks 2 putaran; terbaik ≥3.5 → final. 3) npm run render:final -- --comp=IsmailFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --encoder=nvenc --title=\"Ibrahim, Ismail, dan Perintah dalam Mimpi\" --slug=ep23-ismail-qurban --ep=EP23; QA −14 LUFS TP<−1, metadata ffprobe, record_score final. 4) Delivery tahap 10.",
+      "snapshot": {
+        "episode": "EP23_ISMAIL_PERINTAH_QURBAN",
+        "topic": "Nabi Ibrahim, Nabi Ismail, dan mimpi perintah penyembelihan (QS As-Saffat 100-111)",
+        "style": "ISLAMICDOCUMENTARY",
+        "memoryEpisode": "short-baru-11-23-EP23",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:28:54.273Z",
+      "doing": "s4: poles depth selesai (kabut mist-<mode> di Dunes antara BG/MG/FG, FgDepth batu blur sudut bawah parallax 1.4, glow lentera 2 lapis). Render draf IsmailPreview.",
+      "command": "cd project; TEMP=TMP=RENDER_TMPDIR=F:\\temp\\render; npm run draft -- IsmailPreview",
+      "files": [
+        "project/src/episodes/ismail/Film.tsx"
+      ],
+      "next": "draft/THEME_CHECK.md → juri buta subagent → record_score draft jury → final",
+      "snapshot": {
+        "episode": "EP23_ISMAIL_PERINTAH_QURBAN",
+        "topic": "Nabi Ibrahim, Nabi Ismail, dan mimpi perintah penyembelihan (QS As-Saffat 100-111)",
+        "style": "ISLAMICDOCUMENTARY",
+        "memoryEpisode": "short-baru-11-23-EP23",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:40:27.322Z",
+      "doing": "s4: draf selesai 2 putaran juri (3.67 / 3.67, diterima ≥3.5). SOCIAL_CAPTIONS.md + SUBTITLES.srt (+0.3 offset) sudah ditulis. Render final berjalan.",
+      "command": "cd project; TEMP/TMP/RENDER_TMPDIR=F:\\temp\\render; npm run render:final -- --comp=IsmailFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --encoder=nvenc --title=\"Ibrahim, Ismail, dan Perintah dalam Mimpi\" --slug=ep23-ismail-qurban --ep=EP23",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt"
+      ],
+      "next": "QA LUFS/TP + ffprobe metadata → record_score final → validate captions → NOTES.md + lessons → scheduled tasks",
+      "snapshot": {
+        "episode": "EP23_ISMAIL_PERINTAH_QURBAN",
+        "topic": "Nabi Ibrahim, Nabi Ismail, dan mimpi perintah penyembelihan (QS As-Saffat 100-111)",
+        "style": "ISLAMICDOCUMENTARY",
+        "memoryEpisode": "short-baru-11-23-EP23",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:42:10.806Z",
+      "doing": "s4: render final berjalan (log F:/temp/render/ep23-final.log). Sudah: draf 2 putaran juri 3.67 diterima, dolly diperkuat (camera 5/5), SOCIAL_CAPTIONS.md lolos validator, SUBTITLES.srt (+0.3), NOTES.md, 2 lesson ISLAMICDOCUMENTARY.",
+      "command": "npm run render:final ... --skip-memory-gate=\"juri 2 putaran 3.67\" --skip-camera-gate=\"camera 5/5, medianSpeed 0.015 SVG flat\" (lihat NOTES.md)",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "NOTES.md"
+      ],
+      "next": "Bila FINAL_VIDEO.mp4 ada: ffprobe metadata (artist AUDIRA (Agus Dwi R.)), ebur128 I≈-14 TP<-1; record_score final (jury skor draf); update STATUS final+delivery done; tambah baris scheduled review di NOTES.md (3 task review-ep23-ismail-qurban-24h/72h/7d, upload Minggu 29 Nov 2026 19.30 WIB); tampilkan caption di chat.",
+      "snapshot": {
+        "episode": "EP23_ISMAIL_PERINTAH_QURBAN",
+        "topic": "Nabi Ibrahim, Nabi Ismail, dan mimpi perintah penyembelihan (QS As-Saffat 100-111)",
+        "style": "ISLAMICDOCUMENTARY",
+        "memoryEpisode": "short-baru-11-23-EP23",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:42:10.806Z",
+      "doing": "s4: render final berjalan (log F:/temp/render/ep23-final.log). Sudah: draf 2 putaran juri 3.67 diterima, dolly diperkuat (camera 5/5), SOCIAL_CAPTIONS.md lolos validator, SUBTITLES.srt (+0.3), NOTES.md, 2 lesson ISLAMICDOCUMENTARY.",
+      "command": "npm run render:final ... --skip-memory-gate=\"juri 2 putaran 3.67\" --skip-camera-gate=\"camera 5/5, medianSpeed 0.015 SVG flat\" (lihat NOTES.md)",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "NOTES.md"
+      ],
+      "next": "Bila FINAL_VIDEO.mp4 ada: ffprobe metadata (artist AUDIRA (Agus Dwi R.)), ebur128 I≈-14 TP<-1; record_score final (jury skor draf); update STATUS final+delivery done; tambah baris scheduled review di NOTES.md (3 task review-ep23-ismail-qurban-24h/72h/7d, upload Minggu 29 Nov 2026 19.30 WIB); tampilkan caption di chat.",
+      "snapshot": {
+        "episode": "EP23_ISMAIL_PERINTAH_QURBAN",
+        "topic": "Nabi Ibrahim, Nabi Ismail, dan mimpi perintah penyembelihan (QS As-Saffat 100-111)",
+        "style": "ISLAMICDOCUMENTARY",
+        "memoryEpisode": "short-baru-11-23-EP23",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T12:46:22.951Z"
+    }
+  ],
+  "session": 4,
+  "sessionLog": [
+    {
+      "no": 3,
+      "title": "EP23 Ismail · s3",
+      "at": "2026-11-23T12:19:53.213Z"
+    },
+    {
+      "no": 4,
+      "title": "EP23 Ismail · s4",
+      "at": "2026-11-23T12:27:01.135Z"
+    }
+  ]
+}

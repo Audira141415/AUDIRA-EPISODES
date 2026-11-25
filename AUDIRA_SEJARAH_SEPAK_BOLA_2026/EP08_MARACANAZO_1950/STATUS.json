@@ -1,0 +1,171 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP08_MARACANAZO_1950",
+  "topic": "Judul Episode",
+  "createdAt": "2026-11-12T10:06:29.477Z",
+  "updatedAt": "2026-11-22T13:07:56.843Z",
+  "currentStage": "animation",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.477Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.477Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T10:06:29.477Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T10:06:29.477Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit (EP04 Standard)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.477Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:55.868Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-12T05:09:58.874Z",
+      "startedAt": "2026-11-12T05:09:58.874Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci + visual audit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-17T06:05:27.439Z",
+          "text": "sync: look.json PASS; menunggu acc pengguna (tahap sesudahnya sudah ada, acc tetap wajib dicatat)"
+        },
+        {
+          "at": "2026-11-22T13:07:56.843Z",
+          "text": "sync: look.json PASS"
+        }
+      ],
+      "startedAt": "2026-11-13T09:38:12.841Z",
+      "doneAt": "2026-11-13T09:38:12.841Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T10:40:43.777Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        }
+      ],
+      "doneAt": "2026-11-13T10:30:42.969Z",
+      "startedAt": "2026-11-13T10:30:42.969Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:55.868Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-12T12:40:39.994Z",
+          "text": "Restored after outside script overwrite (17:06)."
+        },
+        {
+          "at": "2026-11-14T03:31:15.163Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-14T02:04:21.732Z",
+      "startedAt": "2026-11-12T10:06:29.477Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-sepak-bola-EP08",
+    "style": "FILMNOIR",
+    "wordCount": 218,
+    "estimatedDuration": {
+      "wordCount": 218,
+      "minSec": 87,
+      "maxSec": 97
+    },
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-22T13:07:56.843Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-13T09:39:47.377Z",
+      "doing": "EP08 poles putaran 2 selesai 2026-11-13: kamera scorer diperlebar (FilmScene.tsx SHOTS CUT.clock..CUT.goal), jersey kain (clothNormalTexture di filmTextures.ts, meshPhysical sheen). Draf baru di draft/stills/_sheet.jpg, look.json, camera.json (klip 840-1379 motion 5). Juri ulang: 3.83 PERLU POLES (composition 3, material 3).",
+      "files": [
+        "studio/src/scenes/ep08/FilmScene.tsx",
+        "studio/src/scenes/ep08/filmTextures.ts",
+        "studio/src/scenes/ep08/Film.tsx"
+      ],
+      "next": "Poles putaran 3 EP08: (1) frame 6 (~f2007, T.tahun): kartu stat 30 vs 50 memotong kepala Barbosa, turunkan kamera/naikkan kartu atau geser Barbosa ke bawah; (2) frame 3 (f972): AudiraSignature menimpa kepala Friaça, subtitle melintasi badan, turunkan figur di bawah bar subtitle atau naikkan kamera; (3) frame 4 (79') terlalu ramai; (4) pop kamera t=17.8 klip. Lalu stills 0,390,972,1278,1707,2007,2340,2490 Ep08Preview, audit:visual --json, klip risiko + audit:camera, skor sendiri, juri ulang."
+    },
+    {
+      "at": "2026-11-13T10:24:22.728Z",
+      "doing": "Render final EP07, EP08, EP09 (Ep07Final/Ep08Final/Ep09Final) berurutan, --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --skip-memory-gate. Pengguna (2026-11-13) minta render langsung tanpa juri ≥4 untuk 3 episode ini.",
+      "command": "cd studio; render:final per ep -> ../EPxx_*/FINAL_VIDEO.mp4, log scratchpad render_ep07-09.log",
+      "next": "Setelah selesai: npm run deliver -- ../EPxx/FINAL_VIDEO.mp4 per episode, cek RED/YELLOW. Segmen di studio/out/seg dipakai ulang bila diulang."
+    },
+    {
+      "at": "2026-11-13T10:33:36.064Z",
+      "doing": "Render final EP07/08/09 selesai 2026-11-13 (FINAL_VIDEO.mp4 di tiap folder, --skip-memory-gate atas permintaan pengguna). qa-gate: EP07 GREEN, EP09 GREEN, EP08 RED hanya karena 7 dip hitam ~0.25 dtk = transisi tirai venetian yang direncanakan (BLIND_CUTS di Film.tsx, cocok dengan CUT di timing.ts).",
+      "next": "EP08: tulis SHOTLIST.md dengan 7 cut (CUT.board 5.95, ticket, clock, goal, board2, silence, room) lalu qa-gate --shotlist agar GREEN. Lalu tahap 10 untuk EP07-09: SOCIAL_CAPTIONS.md 6 platform + jadwal + label AI, audira_validate_social_captions, record_score final, append_lesson. Catatan: studio memakai starter lama (tidak ada npm run draft/deliver); pakai node scripts/qa-gate.mjs."
+    }
+  ],
+  "handover": {
+    "at": "2026-11-13T10:33:36.064Z",
+    "doing": "Render final EP07/08/09 selesai 2026-11-13 (FINAL_VIDEO.mp4 di tiap folder, --skip-memory-gate atas permintaan pengguna). qa-gate: EP07 GREEN, EP09 GREEN, EP08 RED hanya karena 7 dip hitam ~0.25 dtk = transisi tirai venetian yang direncanakan (BLIND_CUTS di Film.tsx, cocok dengan CUT di timing.ts).",
+    "next": "EP08: tulis SHOTLIST.md dengan 7 cut (CUT.board 5.95, ticket, clock, goal, board2, silence, room) lalu qa-gate --shotlist agar GREEN. Lalu tahap 10 untuk EP07-09: SOCIAL_CAPTIONS.md 6 platform + jadwal + label AI, audira_validate_social_captions, record_score final, append_lesson. Catatan: studio memakai starter lama (tidak ada npm run draft/deliver); pakai node scripts/qa-gate.mjs."
+  }
+}

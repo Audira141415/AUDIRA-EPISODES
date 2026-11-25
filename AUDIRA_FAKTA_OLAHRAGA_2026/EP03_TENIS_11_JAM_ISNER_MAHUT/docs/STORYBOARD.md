@@ -1,0 +1,20 @@
+# Storyboard — EP03 Tenis 11 Jam: Isner vs Mahut (`BROADCASTFORGE`)
+
+Waktu = estimasi dari naskah 205 kata (≈ 1:22–1:31). Dikunci ulang ke detik VO Cartesia di tahap 6 (Audio Master Clock). Outro card AUDIRA 3,8 dtk terakhir. Grafis siaran tetap (LIVE bug + jam durasi) di y 250; subtitle karaoke y ≈ 1300.
+
+| Scene | Waktu | BG / MG / FG / HUD | Kamera | Audio |
+|---|---|---|---|---|
+| S1 Hook — "Satu set, 8 jam 11 menit" | 0:00–0:05 | BG langit senja + tribun GLB + dinding AUDIRA · MG net, Mahut di baseline jauh · FG Isner servis tampak belakang (frame cover) · HUD jam durasi berputar cepat 0:00 → 8:11, callout "SATU SET · 8 JAM 11 MENIT", ticker | Mulai tepat di SHOT_A, push-in pelan 0,6 m + tilt naik ikut bola | Swell stadium ambience, tick jam cepat, impact kecil saat "8:11" terkunci, pop teks callout |
+| S2 Context — siapa & aturan | 0:05–0:20 | BG LED wall melengkung studio · MG meja studio, dua kartu pemain stilasi di wall · FG glass name bar · HUD chip "WIMBLEDON 2010 · LAPANGAN 18", kartu "ISNER · AS · UNGGULAN 23" / "MAHUT · PRANCIS · KUALIFIKASI", kartu aturan "SET 5: TANPA TIE-BREAK · SELISIH 2 GAME" | Jib turun dari wide tinggi ke two-shot meja (resep kit), lalu dolly lateral ke kartu aturan | Whoosh transisi masuk studio, stinger berita pendek, pop tiap kartu, ambience studio rendah |
+| S3 Main A — hari 1 → hari 2 | 0:20–0:30 | BG langit berubah sore → senja · MG lapangan aus (wear 0.5 → 0.8), dua pemain reli · FG bola · HUD label hari "HARI 1" → "HARI 2", score bug set 5 naik | Wide telephoto broadcast (SHOT_B-like), dolly samping pelan; time-lapse cahaya | Whoosh potongan, ambience penonton naik-turun, pop label hari |
+| S4 Main B — papan skor macet + gelap | 0:30–0:42 | BG gelap biru · MG papan skor lapangan (subjek tunggal) · FG — · HUD stamp "PAPAN SKOR MATI" di samping papan, callout "47–47", lalu "59–59 · DIHENTIKAN" | Close setinggi pinggang ke papan, push-in; angka 45 → 46 → 47–47 memerah, layar padam; cut ke lapangan gelap wide | Tick elektronik per angka, glitch/buzz saat macet, drone rendah, power-down "thunk" saat padam, hening 0,4 dtk |
+| S5 Explanation — ace & poin | 0:42–0:59 | BG redup malam stilasi · MG server tampak samping di sorot spot · FG jejak bola cyan · HUD penghitung "113" menyala (Isner) + "103" redup (Mahut), lalu split bar "MAHUT 502 · ISNER 478" dengan stamp "TETAP KALAH" di sisi bar | Orbit pelan 25° mengelilingi server, lalu crane naik ke atas lapangan untuk bar poin | Whoosh potongan, "thwack" servis + whoosh bola tiap ace, counter tick, pop stamp |
+| S6 Payoff A — hari 3, 70–68 | 0:59–1:10 | BG siang cerah hari 3 · MG Mahut terlewati · FG Isner backhand, bola melintas · HUD label "HARI 3", score bug membesar ke tengah "70–68", jam "11:05", chip "183 GAME" | Low angle tracking ikut backhand, whip ke score bug | Riser 4 dtk menuju match point, IMPACT besar di "70–68", sorak penonton |
+| S7 Payoff B — babak 2 & aturan baru | 1:10–1:20 | BG lapangan lain grading dingin · MG figur Isner memegangi leher, duduk · FG — · HUD kartu "BABAK 2 · 74 MENIT · 0 ACE", lalu kartu "2018: TIE-BREAK DI SET PENENTU" | Static-feel dolly-out lambat dari Isner; cut ke kartu | Ambience sepi, pop kartu, satu nada piano/pad rendah |
+| S8 Outro — lapangan kosong + teaser | 1:20–1:31 | BG golden hour · MG lapangan kosong, plakat di dinding, papan AUDIRA · FG net · HUD kartu teaser "EP04 · PIT STOP 1,8 DETIK", lalu outro card AUDIRA 3,8 dtk | Crane mundur naik dari net ke wide | Ambience burung/angin, whoosh teaser, sting outro AUDIRA |
+
+## Catatan komposisi (pelajaran juri)
+- Satu subjek per frame: S4 papan skor saja (pemain keluar frame), S5 server saja, S7 Isner saja.
+- Set lapangan senja dipakai di S1, S3, S4 (gelap), S6 (siang), S8 (golden hour): grading dan kamera beda tiap kali, dan contact sheet memilih maksimal 2 frame dengan look yang sama.
+- Stamp/caption di samping subjek, label ≥ 34 px, score bug pindah ke atas (y ≈ 330) bila subtitle aktif di y 1300.
+- Brand AUDIRA: papan dinding (S1, S3, S6, S8), suara di hook + outro, tanda tangan bergerak `AudiraSignature` seed `olahraga-EP03`.

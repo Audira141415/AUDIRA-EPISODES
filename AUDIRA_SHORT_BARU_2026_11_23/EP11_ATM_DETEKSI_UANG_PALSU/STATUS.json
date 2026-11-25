@@ -1,0 +1,585 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP11_ATM_DETEKSI_UANG_PALSU",
+  "topic": "Cara mesin ATM & setor tunai mendeteksi uang palsu",
+  "createdAt": "2026-11-22T17:57:00.426Z",
+  "updatedAt": "2026-11-23T13:48:23.394Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:59:23.161Z",
+          "text": "GLOBAL + channel memory dibaca (VO tulis \"Audira\", Karaoke lebar penuh gap 0.4em, sign await, loudnorm TP, jobs=4 saat sesi lain render). Referensi EP04 (2D Remotion PAPERWORLD) sesi saudara. Engine: Remotion 2D murni (SVG/DOM) + skill audira-2d-motion."
+        }
+      ],
+      "doneAt": "2026-11-22T17:59:23.161Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:09:18.251Z",
+          "text": "sync: riset ada"
+        },
+        {
+          "at": "2026-11-22T22:21:26.090Z",
+          "text": "34 fakta di research/SOURCE_REGISTER.md (BI PBI 21/10/2019, Buku Panduan TE 2022, UU 7/2011, CNBC/Kompas/BCA/Mandiri). Tanpa angka kecepatan mesin (tidak terverifikasi)."
+        }
+      ],
+      "doneAt": "2026-11-22T22:21:26.090Z",
+      "startedAt": "2026-11-22T18:08:38.909Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T22:21:28.176Z",
+      "notes": [
+        {
+          "at": "2026-11-22T22:21:28.176Z",
+          "text": "Pengguna memilih \"1 INNERWORKS (Recommended)\" (2026-11-23). Ditolak: THERMALFORGE, DRAFTFORGE."
+        },
+        {
+          "at": "2026-11-23T12:24:34.677Z",
+          "text": "s3: style/cover-topic.png dirender dari Ep11Cover (1080x1920), ditampilkan tanpa acc kedua"
+        }
+      ],
+      "startedAt": "2026-11-22T22:21:28.176Z",
+      "doneAt": "2026-11-23T12:24:34.677Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T22:23:54.783Z",
+          "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-22T23:55:07.755Z",
+          "text": "SCRIPT 206 kata, STORYBOARD 8 adegan, ART_DIRECTION, ASSET_MANIFEST."
+        }
+      ],
+      "doneAt": "2026-11-22T23:55:07.755Z",
+      "startedAt": "2026-11-22T22:23:50.895Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:23:25.514Z",
+          "text": "sync: proyek render sudah disiapkan"
+        },
+        {
+          "at": "2026-11-22T23:55:09.031Z",
+          "text": "project/ dari starter, node_modules junction."
+        }
+      ],
+      "doneAt": "2026-11-22T23:55:09.031Z",
+      "startedAt": "2026-11-22T06:09:42.000Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T23:55:06.159Z",
+          "text": "Cartesia VO 78.76 s, 206 kata, project/public/audio/vo.wav + vo-words.json (salinan di audio/). Jeda maks 1.02 s, tidak dirapatkan."
+        }
+      ],
+      "doneAt": "2026-11-22T23:55:06.159Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:23:25.514Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.000Z",
+      "startedAt": "2026-11-22T16:52:30.000Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T12:26:45.046Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json PASS"
+        },
+        {
+          "at": "2026-11-23T12:37:39.365Z",
+          "text": "Juri putaran 2 = 3.67 (L3 M4 D3 C4 Mo4 R4), diterima setelah 2 putaran (≥3.5) → final. Sheet frame 3,11,24,33,43,52,64,76 s; look ceilings 5/5/5/5/5."
+        }
+      ],
+      "doneAt": "2026-11-23T12:37:39.365Z",
+      "startedAt": "2026-11-23T12:26:10.810Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T13:48:17.121Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60 4908 fr 81.8 dtk; -13.6 LUFS TP -1.8; metadata OK; signature VALID; qa_video PASS; record_score final 3.67 (diterima setelah 2 putaran); skip memory/camera/channel gate dengan alasan (draft/final_run.log)"
+        }
+      ],
+      "doneAt": "2026-11-23T13:48:17.121Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:40:25.961Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T13:48:23.236Z",
+          "text": "NOTES.md ditulis; scheduled task review-atm-uang-palsu-24h/72h/7d (28 Nov, 30 Nov, 4 Des 19.00 WIB); draft/stills + draft/clip.mp4 dihapus; caption tampil di chat"
+        }
+      ],
+      "doneAt": "2026-11-23T13:48:23.236Z",
+      "startedAt": "2026-11-23T12:37:21.021Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP11",
+    "engine": "remotion",
+    "channel": "EXPLAINED",
+    "handle": "@AudiraExplained",
+    "engineNote": "2D murni tanpa R3F",
+    "style": "INNERWORKS",
+    "voSeconds": 78.76,
+    "shortTitle": "ATM"
+  },
+  "syncedAt": "2026-11-23T12:40:25.961Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T22:26:53.833Z",
+      "doing": "Docs naskah selesai, scaffold project siap; berikutnya VO Cartesia",
+      "files": [
+        "docs/HANDOFF.md",
+        "audio/vo.txt",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Baca docs/HANDOFF.md, lalu VO dari audio/vo.txt → kode 2D src/ep11 → cover-topic → SFX → draf juri → final → delivery",
+      "snapshot": {
+        "episode": "EP11_ATM_DETEKSI_UANG_PALSU",
+        "topic": "Cara mesin ATM & setor tunai mendeteksi uang palsu",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP11",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:02:55.566Z",
+      "doing": "VO 78.76 s selesai + kode 2D project/src/ep11 selesai (tsc bersih), belum dirender",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/ep11/timing.ts",
+        "project/src/ep11/pieces.tsx",
+        "project/src/ep11/scenes.tsx",
+        "project/src/ep11/Film.tsx",
+        "project/src/Root.tsx",
+        "project/public/audio/vo.wav"
+      ],
+      "next": "Baca docs/HANDOFF.md bagian \"Update sesi 2\": stills cek → perbaiki → cover-topic.png → SHOTLIST + npm run sfx → draf juri → final → delivery",
+      "snapshot": {
+        "episode": "EP11_ATM_DETEKSI_UANG_PALSU",
+        "topic": "Cara mesin ATM & setor tunai mendeteksi uang palsu",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP11",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP11_ATM_DETEKSI_UANG_PALSU/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:14:01.292Z",
+      "doing": "VO 78.76 s selesai + kode 2D project/src/ep11 selesai (tsc bersih), belum dirender",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/ep11/timing.ts",
+        "project/src/ep11/pieces.tsx",
+        "project/src/ep11/scenes.tsx",
+        "project/src/ep11/Film.tsx",
+        "project/src/Root.tsx",
+        "project/public/audio/vo.wav"
+      ],
+      "next": "Baca docs/HANDOFF.md bagian \"Update sesi 2\": stills cek → perbaiki → cover-topic.png → SHOTLIST + npm run sfx → draf juri → final → delivery",
+      "snapshot": {
+        "episode": "EP11_ATM_DETEKSI_UANG_PALSU",
+        "topic": "Cara mesin ATM & setor tunai mendeteksi uang palsu",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP11",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP11_ATM_DETEKSI_UANG_PALSU/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:15:16.894Z",
+      "doing": "s3: render still cek 15 frame Ep11Preview ke project/out/ep11-stills",
+      "command": "cd project && node scripts/stills.mjs out/ep11-stills 3,10,19,24,28,33,38,43,48,52,55,59,64,71,75 Ep11Preview",
+      "next": "sheet kecil → perbaiki kode → cover-topic.png → SHOTLIST + sfx",
+      "snapshot": {
+        "episode": "EP11_ATM_DETEKSI_UANG_PALSU",
+        "topic": "Cara mesin ATM & setor tunai mendeteksi uang palsu",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP11",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP11_ATM_DETEKSI_UANG_PALSU/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:25:22.930Z",
+      "doing": "s3: still diperbaiki (audit ceilings 5/5/5/5/3), cover-topic.png ada, SHOTLIST + sfx.wav selesai; sekarang npm run draft (sheet 8 frame + klip 18 dtk 45-63)",
+      "command": "cd project && npm run draft -- Ep11Preview --frames=3s,10s,24s,33s,43s,52s,64s,75s --clip=45-63 --out=../draft",
+      "files": [
+        "project/src/ep11/scenes.tsx",
+        "project/src/ep11/pieces.tsx",
+        "project/src/ep11/Film.tsx",
+        "project/scripts/lib/layout-probe.js",
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "THEME_CHECK.md → record_score self → juri buta (subagent) → final render",
+      "snapshot": {
+        "episode": "EP11_ATM_DETEKSI_UANG_PALSU",
+        "topic": "Cara mesin ATM & setor tunai mendeteksi uang palsu",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP11",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP11_ATM_DETEKSI_UANG_PALSU/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:25:45.284Z",
+      "doing": "s3 selesai: still diperbaiki (ceilings 5/5/5/5/3), cover-topic.png, SHOTLIST + sfx.wav. draft.mjs rusak (await di non-async) → contact sheet manual",
+      "files": [
+        "docs/HANDOFF.md",
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav",
+        "style/cover-topic.png",
+        "project/src/ep11/scenes.tsx",
+        "project/src/ep11/pieces.tsx",
+        "project/src/ep11/Film.tsx",
+        "project/scripts/lib/layout-probe.js"
+      ],
+      "next": "Baca docs/HANDOFF.md 'Update sesi 3': contact sheet manual + klip kamera → THEME_CHECK → juri → final → delivery",
+      "snapshot": {
+        "episode": "EP11_ATM_DETEKSI_UANG_PALSU",
+        "topic": "Cara mesin ATM & setor tunai mendeteksi uang palsu",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP11",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP11_ATM_DETEKSI_UANG_PALSU/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:28:07.761Z",
+      "doing": "juri draf putaran 1 = 3.33 PERLU POLES; poles putaran 2 belum dimulai",
+      "files": [
+        "docs/HANDOFF.md",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/camera.json",
+        "project/src/ep11/scenes.tsx",
+        "project/src/ep11/pieces.tsx"
+      ],
+      "next": "Baca docs/HANDOFF.md 'Update akhir sesi 3': poles 4 poin → sheet ulang → juri putaran 2 → final (--vo --sfx, jobs 4) → delivery",
+      "snapshot": {
+        "episode": "EP11_ATM_DETEKSI_UANG_PALSU",
+        "topic": "Cara mesin ATM & setor tunai mendeteksi uang palsu",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP11",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP11_ATM_DETEKSI_UANG_PALSU/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:31:58.958Z",
+      "doing": "sesi 4: poles putaran 2 (shading/shadow/latar, framing, label ≥36, S8 count cepat) di pieces.tsx + scenes.tsx",
+      "files": [
+        "project/src/ep11/pieces.tsx",
+        "project/src/ep11/scenes.tsx"
+      ],
+      "next": "stills 3s,9.5s,24s,33s,43s,52s,64s,76s → sheet → juri putaran 2 → final",
+      "snapshot": {
+        "episode": "EP11_ATM_DETEKSI_UANG_PALSU",
+        "topic": "Cara mesin ATM & setor tunai mendeteksi uang palsu",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP11",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP11_ATM_DETEKSI_UANG_PALSU/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T12:37:57.347Z",
+      "doing": "juri putaran 2 = 3.67 DITERIMA; final belum dirender; SOCIAL_CAPTIONS.md sudah ditulis (belum divalidasi)",
+      "command": "npm run render:final -- --comp=Ep11Final --out=<episode>/FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Cara ATM Deteksi Uang Palsu\" --slug=atm-uang-palsu --ep=EP11",
+      "files": [
+        "docs/HANDOFF.md",
+        "SOCIAL_CAPTIONS.md",
+        "project/src/ep11/scenes.tsx",
+        "project/src/ep11/pieces.tsx"
+      ],
+      "next": "Baca docs/HANDOFF.md 'Update sesi 4' + 'Sisa langkah (sesi 5)': render:final (--vo --sfx, jobs 4) → QA LUFS/TP/metadata/qa_video → record_score final → delivery tahap 10",
+      "snapshot": {
+        "episode": "EP11_ATM_DETEKSI_UANG_PALSU",
+        "topic": "Cara mesin ATM & setor tunai mendeteksi uang palsu",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP11",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP11_ATM_DETEKSI_UANG_PALSU/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T13:03:28.989Z",
+      "doing": "render:final DITOLAK gate memori (juri 3.67 < 3.8, gate belum kenal aturan 'diterima ≥3.5 setelah 2 putaran'). Sudah: caption validator OK, SUBTITLES.srt (30 cue), lesson GLOBAL fix+failed tercatat. G18c audio OK (VO -16.2, SFX -28.3, gap 12.1 LU).",
+      "command": "set TEMP/TMP/RENDER_TMPDIR=F:\\temp\\render; cd project && npm run render:final -- --comp=Ep11Final --out=<episode>/FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Cara ATM Deteksi Uang Palsu\" --slug=atm-uang-palsu --ep=EP11 --log=error --skip-memory-gate=\"juri 3.67 diterima setelah 2 putaran (>=3.5, keputusan pengguna 2026-11-23)\"",
+      "files": [
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt",
+        "docs/HANDOFF.md"
+      ],
+      "next": "Jalankan perintah di atas (background) → ukur -14 LUFS/TP<-1, ffprobe metadata, audira_qa_video hardOnly → record_score final → NOTES.md ('diterima 3.67 setelah 2 putaran') → 3 scheduled task review-atm-uang-palsu-24h/72h/7d (upload Jumat 27 Nov 2026 19.00 WIB +07:00) → hapus draft/stills + draft/clip.mp4 → STATUS final+delivery done → caption tampil di chat",
+      "snapshot": {
+        "episode": "EP11_ATM_DETEKSI_UANG_PALSU",
+        "topic": "Cara mesin ATM & setor tunai mendeteksi uang palsu",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP11",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP11_ATM_DETEKSI_UANG_PALSU/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T13:41:48.871Z",
+      "doing": "render:final DITOLAK gate memori (juri 3.67 < 3.8, gate belum kenal aturan 'diterima ≥3.5 setelah 2 putaran'). Sudah: caption validator OK, SUBTITLES.srt (30 cue), lesson GLOBAL fix+failed tercatat. G18c audio OK (VO -16.2, SFX -28.3, gap 12.1 LU).",
+      "command": "set TEMP/TMP/RENDER_TMPDIR=F:\\temp\\render; cd project && npm run render:final -- --comp=Ep11Final --out=<episode>/FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Cara ATM Deteksi Uang Palsu\" --slug=atm-uang-palsu --ep=EP11 --log=error --skip-memory-gate=\"juri 3.67 diterima setelah 2 putaran (>=3.5, keputusan pengguna 2026-11-23)\"",
+      "files": [
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt",
+        "docs/HANDOFF.md"
+      ],
+      "next": "Jalankan perintah di atas (background) → ukur -14 LUFS/TP<-1, ffprobe metadata, audira_qa_video hardOnly → record_score final → NOTES.md ('diterima 3.67 setelah 2 putaran') → 3 scheduled task review-atm-uang-palsu-24h/72h/7d (upload Jumat 27 Nov 2026 19.00 WIB +07:00) → hapus draft/stills + draft/clip.mp4 → STATUS final+delivery done → caption tampil di chat",
+      "snapshot": {
+        "episode": "EP11_ATM_DETEKSI_UANG_PALSU",
+        "topic": "Cara mesin ATM & setor tunai mendeteksi uang palsu",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP11",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP11_ATM_DETEKSI_UANG_PALSU/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T13:42:42.987Z",
+      "doing": "render:final Ep11Final (s6) dengan --skip-memory-gate + --skip-camera-gate (G13 deadPct 17%, medianSpeed 0.03; poles dilarang setelah 2 putaran, preseden EP24)",
+      "command": "cd project && TEMP/TMP/RENDER_TMPDIR=F:\\temp\\render npm run render:final -- (sama seperti sebelumnya) \"--skip-memory-gate=keputusan pengguna 2026-11-23: diterima 3.67 setelah 2 putaran\" \"--skip-camera-gate=G13 deadPct 17%/medianSpeed 0.03; poles dilarang setelah 2 putaran (keputusan pengguna 2026-11-23)\"",
+      "files": [
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "LUFS/TP, ffprobe, verify_signature, qa_video hardOnly, record_score final, NOTES, 3 scheduled task, hapus draft/stills + clip.mp4, STATUS done",
+      "snapshot": {
+        "episode": "EP11_ATM_DETEKSI_UANG_PALSU",
+        "topic": "Cara mesin ATM & setor tunai mendeteksi uang palsu",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP11",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP11_ATM_DETEKSI_UANG_PALSU/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T13:42:42.987Z",
+      "doing": "render:final Ep11Final (s6) dengan --skip-memory-gate + --skip-camera-gate (G13 deadPct 17%, medianSpeed 0.03; poles dilarang setelah 2 putaran, preseden EP24)",
+      "command": "cd project && TEMP/TMP/RENDER_TMPDIR=F:\\temp\\render npm run render:final -- (sama seperti sebelumnya) \"--skip-memory-gate=keputusan pengguna 2026-11-23: diterima 3.67 setelah 2 putaran\" \"--skip-camera-gate=G13 deadPct 17%/medianSpeed 0.03; poles dilarang setelah 2 putaran (keputusan pengguna 2026-11-23)\"",
+      "files": [
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "LUFS/TP, ffprobe, verify_signature, qa_video hardOnly, record_score final, NOTES, 3 scheduled task, hapus draft/stills + clip.mp4, STATUS done",
+      "snapshot": {
+        "episode": "EP11_ATM_DETEKSI_UANG_PALSU",
+        "topic": "Cara mesin ATM & setor tunai mendeteksi uang palsu",
+        "style": "INNERWORKS",
+        "memoryEpisode": "short-baru-11-23-EP11",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP11_ATM_DETEKSI_UANG_PALSU/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T13:48:23.394Z"
+    }
+  ],
+  "session": 6,
+  "sessionLog": [
+    {
+      "no": 3,
+      "title": "EP11 ATM · s3",
+      "at": "2026-11-23T12:14:01.290Z"
+    },
+    {
+      "no": 4,
+      "title": "EP11 ATM · s4",
+      "at": "2026-11-23T12:28:07.761Z"
+    },
+    {
+      "no": 5,
+      "title": "EP11 ATM · s5",
+      "at": "2026-11-23T12:37:57.347Z"
+    },
+    {
+      "no": 6,
+      "title": "EP11 ATM · s6",
+      "at": "2026-11-23T13:41:48.869Z"
+    }
+  ]
+}

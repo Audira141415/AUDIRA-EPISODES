@@ -1,0 +1,500 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP44_YUSUF_DIBUANG_KE_SUMUR",
+  "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+  "createdAt": "2026-11-24T14:50:50.485Z",
+  "updatedAt": "2026-11-24T17:41:26.054Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:53:49.787Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-24T14:50:50.485Z",
+      "startedAt": "2026-11-24T14:50:50.485Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:52:44.631Z",
+          "text": "SOURCE_REGISTER: QS 12:4-20 + Ibnu Katsir. 9 fakta."
+        }
+      ],
+      "doneAt": "2026-11-24T14:52:44.631Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:57:21.633Z",
+          "text": "PAPERWORLD 2D Remotion SVG, pola gold EP18 Svalbard. STYLE_DECISION.md ditulis; cover-topic.png belum (render dari adegan hook)."
+        },
+        {
+          "at": "2026-11-24T14:58:03.256Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        },
+        {
+          "at": "2026-11-24T15:03:14.643Z",
+          "text": "PAPERWORLD 2D Remotion SVG; cover-topic.png dirender dari Ep44Cover (S1 hook t=2.5)."
+        }
+      ],
+      "startedAt": "2026-11-24T14:57:21.633Z",
+      "doneAt": "2026-11-24T15:03:14.643Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:56:43.157Z",
+          "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-24T15:03:14.792Z",
+          "text": "SCRIPT 196 kata + ART_DIRECTION + STORYBOARD 12 baris + ASSET_MANIFEST (Style: PAPERWORLD)."
+        }
+      ],
+      "doneAt": "2026-11-24T15:03:14.792Z",
+      "startedAt": "2026-11-24T14:56:30.313Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:55:38.825Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-24T14:55:37.054Z",
+      "startedAt": "2026-11-24T14:55:37.054Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:23:28.144Z",
+          "text": "VO Cartesia 90.50 s, 196 kata, offset 0; timing.ts dikunci (12 adegan, film 93.4)."
+        }
+      ],
+      "doneAt": "2026-11-24T15:23:28.144Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:55:38.825Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-24T14:55:37.103Z",
+      "startedAt": "2026-11-24T14:55:37.103Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:16:27.550Z",
+          "text": "sync: look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-24T15:15:51.629Z",
+      "startedAt": "2026-11-24T15:15:51.629Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T15:56:55.233Z",
+      "notes": [
+        {
+          "at": "2026-11-24T15:48:39.530Z",
+          "text": "G18c awal GAGAL (gap 11.0 LU, stem -26). Fix: sfx/cues/auto.py TARGET_LUFS -28, npm run sfx ulang (28 cue, TP -6.6). G18c ulang: VO -16.2, SFX ducked -29.2, gap 13.0 LU LOLOS. Backup stem lama: draft/_sfx_-26_backup.wav. Menunggu acc pengguna."
+        },
+        {
+          "at": "2026-11-24T15:56:55.233Z",
+          "text": "Acc pengguna 2026-11-24: \"Gas render\"."
+        },
+        {
+          "at": "2026-11-24T17:40:38.371Z",
+          "text": "qa-video hardOnly PASS (draft/qa-final), skor final self 3.83. FINAL_EP44_YUSUF_DIBUANG_KE_SUMUR.mp4 93.4 s -13.7 LUFS TP -1.9."
+        }
+      ],
+      "startedAt": "2026-11-24T15:48:39.530Z",
+      "doneAt": "2026-11-24T17:40:38.371Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T16:16:53.355Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T16:04:51.442Z",
+      "startedAt": "2026-11-24T16:04:51.442Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "kisah-islam-EP44",
+    "shortTitle": "Yusuf Sumur",
+    "style": "PAPERWORLD",
+    "engine": "remotion",
+    "wordCount": 196,
+    "estimatedDuration": {
+      "wordCount": 196,
+      "minSec": 78,
+      "maxSec": 87
+    }
+  },
+  "syncedAt": "2026-11-24T16:16:53.356Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-24T14:57:36.529Z",
+      "doing": "Sesi A (s1) sebagian: tahap 0 preflight lolos (no blockers), tahap 1 rule+memory GLOBAL/channel dibaca, tahap 3 style PAPERWORLD 2D Remotion SVG dipilih (STYLE_DECISION.md + cover-reference.jpg), docs/SCRIPT.md final 196 kata (6 tahap, markup {tampil|ucap}, Ya'qub→Yakub, Audira di intro+outro). SOURCE_REGISTER ditambah fakta 10–14 (12:6, 12:9–12, 12:18, 12:19). Proyek project/ disalin dari gold EP18 Svalbard (F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP18_SVALBARD_DILARANG_MATI/project): src/ep18 di-rename ke src/ep44 TAPI isinya masih kode Svalbard (Film.tsx export Ep18Film/Ep18Cover, scenes.tsx S1–S10 Svalbard, timing.ts Svalbard), Root.tsx masih import ./ep18 (rusak), public/audio kosong, node_modules = junction ke F:/AUDIRA-SKILL-MOTION/node_modules. STATUS checklist salah menandai tahap 4/5/7 done karena file salinan — abaikan.",
+      "files": [
+        "docs/SCRIPT.md",
+        "style/STYLE_DECISION.md",
+        "research/SOURCE_REGISTER.md",
+        "project/src/Root.tsx",
+        "project/src/ep44/Film.tsx",
+        "project/src/ep44/scenes.tsx",
+        "project/src/ep44/pieces.tsx",
+        "project/src/ep44/timing.ts"
+      ],
+      "next": "Lanjut Sesi A: (1) tulis docs/ART_DIRECTION.md (pola EP18: key light kiri-atas, bayangan jatuh panjang 28–40px, palet malam lavender/gurun pasir/emas, figur kertas tanpa wajah 20–35% tinggi frame, Yusuf & Ya'qub siluet + rim cahaya), docs/STORYBOARD.md ≥10 baris (S1 hook langit 11 bintang+matahari+bulan menunduk → mulut sumur; S2 kemah Kan'an pelita; S3 10 saudara di bayangan vs cahaya; S4 rapat + sketsa sumur + 'JANGAN BUNUH'; S5 berangkat + mata serigala; S6 potongan sumur hero + berkas cahaya wahyu; S7 senja pulang menangis + baju bernoda merah 'DARAH PALSU'; S8 kemah ayah 'FA SABRUN JAMIL'; S9 kafilah unta + timba turun/naik 'KABAR GEMBIRA!'; S10 koin 'BEBERAPA DIRHAM' + fajar 'MIMPI ITU BARU DIMULAI' + outro), docs/ASSET_MANIFEST.md (semua SVG prosedural di src/ep44/pieces.tsx: sumur, kemah, unta, serigala, timba, baju, koin, bintang); (2) perbaiki Root.tsx → Ep44Preview/Ep44Final/Ep44Cover, tulis S1 hook + Ep44Cover, render `npm run cover -- Ep44Cover --episode=..` → style/cover-topic.png, update stage style done + script done; (3) lalu Sesi B (VO Cartesia via audira_generate_voiceover, timing, adegan, SFX, contact sheet + juri). Lessons PAPERWORLD wajib: bayangan jatuh panjang + rim + light pool sejak pass pertama, variasi skala/close-up tiap adegan, label ≥40px, callout pita kertas di zona aman atas, figur kertas dengan crease (bukan kerucut halus).",
+      "snapshot": {
+        "episode": "EP44_YUSUF_DIBUANG_KE_SUMUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP44",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:03:30.398Z",
+      "doing": "Sesi A SELESAI (s2): docs/ART_DIRECTION.md, docs/STORYBOARD.md (12 baris S1–S12, waktu provisional), docs/ASSET_MANIFEST.md ditulis (Style: PAPERWORLD). Kode: src/ep44/pieces.tsx = pieces gold EP18 + pieces EP44 di akhir file (Y palet, star5/Star5, Moon, SunDisc, Robed figur jubah tanpa wajah pose stand/walk/sit/staff/reach/carry, WellMouth rx/frame/dark, Dune y/seed/peakX/peakH, FGBrush). src/ep44/scenes.tsx DITULIS ULANG: hanya Frame, cam, orbit(lt) elips, S1 hook (11 bintang+matahari+bulan menunduk ke anak di bukit, kamera turun ke mulut sumur; WellMouth frame={false} karena tiang menutupi anak) — SCENE_MAP = { S1 } saja; Film.tsx skip scene tanpa komponen. timing.ts = 12 adegan PROVISIONAL (S1 0–5.2 … S12 76.5–84.9, FILM_SECONDS 84.9, OUTRO 2.9) + callout hook \"11 BINTANG\" (big) & \"KE DASAR SUMUR\" (stamp). Film.tsx → Ep44Film/Ep44Stage/Ep44Cover, signature seed yusuf-sumur-ep44, handle dari channel.json (@AUDIRAQISSAH, npm run channel sudah). Root.tsx → Ep44Preview/Ep44Final/Ep44Cover (tsc bersih). public/audio/vo-words.json = [] placeholder. Cover style/cover-topic.png dirender (t=2.5, stamp \"MIMPI NABI YUSUF\" + plate \"DIBUANG KE SUMUR / QS Yusuf 4–20 · Audira Qissah\"). Stage style+script done. Pelajaran: Robed di S1 agak pucat tertutup glow — perkuat kontras/rim di pass berikut.",
+      "files": [
+        "docs/ART_DIRECTION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/SCRIPT.md",
+        "style/STYLE_DECISION.md",
+        "style/cover-topic.png",
+        "project/src/Root.tsx",
+        "project/src/ep44/Film.tsx",
+        "project/src/ep44/scenes.tsx",
+        "project/src/ep44/pieces.tsx",
+        "project/src/ep44/timing.ts"
+      ],
+      "next": "Sesi B tahap 5–8: (5) scaffold sudah ada — cukup `npm run check-env`. (6) VO: audira_generate_voiceover dari docs/SCRIPT.md (pakai teks ucap dari markup {tampil|ucap}; Ya'qub→Yakub, Audira) outputPath project/public/audio/vo.wav, wordsPath project/public/audio/vo-words.json; `npm run vo -- public/audio/vo.wav`; retime timing.ts SCENES+CALLOUTS ke detik VO + update STORYBOARD waktu. (7) tulis S2–S12 di scenes.tsx sesuai STORYBOARD (kemah+pelita, nasihat ayah, 10 saudara di bayangan, rapat+sketsa sumur, berangkat+mata serigala, potongan sumur hero + berkas wahyu, baju darah palsu senja, FA SABRUN JAMIL, kafilah unta + timba, koin dirham, fajar outro) dengan pieces baru (Tent2, Lamp, Camel, Bucket, Shirt, Coin, Palm, DarkTree, WolfEyes, Scroll, WellSection) — callout tiap ayat/angka; figur 20–35% tinggi frame, variasi skala/close-up; lalu shotlist + `npm run sfx`. (8) contact sheet 6–8 frame + `npm run audit:visual`, isi draft/THEME_CHECK.md (G22), record_score self lalu juri buta subagent (qa/jury.md), maks 2 putaran. Lalu pindah ke Sesi C (gerbang acc render final).",
+      "snapshot": {
+        "episode": "EP44_YUSUF_DIBUANG_KE_SUMUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP44",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:08:53.739Z",
+      "doing": "Sesi B dikerjakan di sesi s2 (pengguna: \"lanjut sesi B di sini aja\"; slot sesi baru penuh). Tahap 6: generate VO Cartesia dari project/public/audio/vo.txt (196 kata, teks ucap).",
+      "command": "audira_generate_voiceover scriptPath=project/public/audio/vo.txt outputPath=project/public/audio/vo.wav wordsPath=project/public/audio/vo-words.json",
+      "next": "npm run vo -- public/audio/vo.wav, retime timing.ts, tulis S2–S12.",
+      "snapshot": {
+        "episode": "EP44_YUSUF_DIBUANG_KE_SUMUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP44",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:09:15.705Z",
+      "doing": "Sesi B mulai: check-env OK. Teks TTS siap: project/public/audio/vo1.txt (1 baris, 196 kata, teks ucap: Yakub, Audira, fa shabrun jamiil). audira_generate_voiceover dengan scriptPath gagal (\"no timed lines\") — pakai parameter `text` berisi isi vo1.txt, outputPath project/public/audio/vo.wav, wordsPath project/public/audio/vo-words.json (saat ini [] placeholder). VO BELUM dibuat.",
+      "files": [
+        "project/public/audio/vo1.txt",
+        "project/src/ep44/timing.ts",
+        "project/src/ep44/scenes.tsx",
+        "project/src/ep44/pieces.tsx",
+        "docs/STORYBOARD.md"
+      ],
+      "next": "(6) generate VO via `text`, `npm run vo -- public/audio/vo.wav`, retime src/ep44/timing.ts SCENES (12) + CALLOUTS ke detik VO, update waktu STORYBOARD. (7) tulis S2–S12 di scenes.tsx (S1 sudah) + pieces baru; shotlist + `npm run sfx`. (8) contact sheet + audit:visual + draft/THEME_CHECK.md + record_score self lalu juri buta, maks 2 putaran. Lalu Sesi C.",
+      "snapshot": {
+        "episode": "EP44_YUSUF_DIBUANG_KE_SUMUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP44",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:15:23.909Z",
+      "doing": "Sesi B (di sesi s2, permintaan pengguna): VO terkunci 90.50 s (public/audio/vo.wav + vo-words.json + vo.timing.json), timing.ts retimed (12 adegan, FILM 93.4, outro 2.9), S1–S12 ditulis (scenes.tsx + props.tsx baru), docs/SHOTLIST.md, SFX public/audio/sfx.wav −26 LUFS. Still 13 frame dicek (out/s1/_sheet.jpg) OK. Sekarang: npm run draft -- Ep44Preview (contact sheet + audit visual + camera clip).",
+      "command": "npm run draft -- Ep44Preview",
+      "next": "Baca draft/DRAFT_SHEET.jpg, tulis draft/THEME_CHECK.md (G22), record_score self lalu juri buta (subagent, qa/jury.md), maks 2 putaran. Lalu Sesi C (acc render final; perintah render: audira_render_batch comp Ep44Final, vo public/audio/vo.wav, sfx public/audio/sfx.wav).",
+      "snapshot": {
+        "episode": "EP44_YUSUF_DIBUANG_KE_SUMUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP44",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:23:58.842Z",
+      "doing": "Sesi B SELESAI (dikerjakan di sesi s2 atas permintaan pengguna). VO Cartesia 90.50 s (project/public/audio/vo.wav, vo-words.json, vo.timing.json), film 93.4 s (outro 2.9). 12 adegan S1–S12 (src/ep44/scenes.tsx + props.tsx), SHOTLIST.md, SFX public/audio/sfx.wav −26 LUFS 28 cue. Draf: draft/DRAFT_SHEET.jpg (8 frame), ceilings L5 M5 D5 C5 R4, camera 5/5, THEME_CHECK 8/8 ya. Skor self 4.17; JURI BUTA r1 = 3.83 LOLOS (L4 M3 D4 C3 Mo5 R4). Kelemahan juri: figur datar minim serat, S4 tanpa fokus, papan AUDIRA QISSAH S2 terpotong kanan, papan KAFILAH S11 tertutup koin. Lesson failed sudah dicatat. Fix lokal: tsconfig.json disalin dari EP18 (hilang), scripts/draft.mjs hfStills async. Cover di-render ulang (arc bintang diturunkan).",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/DRAFT_REPORT.json",
+        "project/public/audio/vo.wav",
+        "project/public/audio/sfx.wav",
+        "project/src/ep44/timing.ts",
+        "docs/SHOTLIST.md"
+      ],
+      "next": "Sesi C tahap 9: tampilkan ke pengguna draft/DRAFT_SHEET.jpg, skor juri 3.83 LOLOS, durasi 93.4 s (VO 90.5), cek audio G18c (belum dijalankan: ukur VO vs SFX setelah mix/duck), lalu TUNGGU ACC. Setelah acc: update stage final approved true, render final via audira_render_batch start jobs=[{project: \"<EP>/project\", comp: \"Ep44Final\", vo: \"public/audio/vo.wav\", sfx: \"public/audio/sfx.wav\", title: \"Yusuf Dibuang ke Sumur\", slug: \"yusuf-dibuang-ke-sumur\", ep: \"EP44\"}] (antrian GPU bersama 4 sesi lain), QA −14 LUFS/TP<−1, metadata, record_score final. Lalu tahap 10 delivery (caption 6 platform, NOTES.md, 3 scheduled task review).",
+      "snapshot": {
+        "episode": "EP44_YUSUF_DIBUANG_KE_SUMUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP44",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T16:03:48.916Z",
+      "doing": "Sesi C: render final EP44 (acc pengguna \"Gas render\"). render_batch menolak G14 (rig-audit untuk kamera 3D; EP44 SVG 2D) → render:final langsung.",
+      "command": "cd project && npm run render:final -- --comp=Ep44Final --out=../FINAL_EP44_YUSUF_DIBUANG_KE_SUMUR.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Yusuf Dibuang ke Sumur\" --slug=yusuf-dibuang-ke-sumur --ep=EP44",
+      "files": [
+        "project/src/ep44/scenes.tsx (S7 push-in G13)",
+        "project/sfx/cues/auto.py (TARGET_LUFS -28)",
+        "project/public/audio/sfx.wav",
+        "draft/camera.json",
+        "draft/CHECK_50-68s.mp4"
+      ],
+      "next": "QA -14 LUFS/TP<-1, ffprobe metadata, qa_video hardOnly, record_score final, lalu tahap 10 delivery.",
+      "snapshot": {
+        "episode": "EP44_YUSUF_DIBUANG_KE_SUMUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP44",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T16:05:03.639Z",
+      "doing": "Sesi C s4: acc pengguna \"Gas render\" tercatat (final approved). G18c lolos 13.0 LU setelah SFX TARGET_LUFS -28 (npm run sfx ulang). G13 awal gagal (S7 parkir 54.6–57 s) → fix push-in S7 di src/ep44/scenes.tsx, klip CHECK_50-68s ulang: parked 0%, median 0.041, camera.json+DRAFT_REPORT diperbarui. render_batch menolak G14 (rig-audit = kamera 3D; EP44 SVG 2D, CAMERA_2D_KITS cuma PIXELSTORY) → render:final langsung saat antrean kosong. Channel gate: handle \"@audira\" di template sisa src/scenes/news/PenggantiGibranWapres.tsx dihapus. Render final sedang berjalan (log draft/render-final.log). SOCIAL_CAPTIONS.md sudah ditulis + validator OK (jadwal Jumat 27 Nov 2026 19.00 WIB).",
+      "command": "cd project && npm run render:final -- --comp=Ep44Final --out=../FINAL_EP44_YUSUF_DIBUANG_KE_SUMUR.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Yusuf Dibuang ke Sumur\" --slug=yusuf-dibuang-ke-sumur --ep=EP44",
+      "files": [
+        "SOCIAL_CAPTIONS.md",
+        "draft/render-final.log",
+        "project/src/ep44/scenes.tsx",
+        "project/sfx/cues/auto.py",
+        "draft/camera.json"
+      ],
+      "next": "Cek tail draft/render-final.log (bila gagal: perbaiki + jalankan ulang perintah). Lalu QA FINAL_EP44_YUSUF_DIBUANG_KE_SUMUR.mp4: ebur128 -14 LUFS/TP<-1, ffprobe metadata, audira_qa_video hardOnly; record_score stage final (self, PAPERWORLD, skor draf juri L4 M3 D4 C3 Mo5 R4 sebagai acuan). Tahap 10: NOTES.md (pelajaran: G18c gagal di stem -26 → -28; G13 S7 parkir setelah crane; G14 blok kit 2D SVG; template sisa memicu channel gate), append_lesson PAPERWORLD + GLOBAL, tampilkan caption di chat, 3 scheduled task review-yusuf-dibuang-ke-sumur-24h/-72h/-7d (upload Jumat 27 Nov 2026 19.00 WIB → fireAt 28 Nov 19.00, 30 Nov 19.00, 4 Des 19.00 +07:00), catat taskId di NOTES.md, update stage delivery done, EP44_GPU_RENDER.md di notes folder tandai SELESAI.",
+      "snapshot": {
+        "episode": "EP44_YUSUF_DIBUANG_KE_SUMUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP44",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T16:29:10.950Z",
+      "doing": "Sesi C s4 selesai sampai render final. FINAL_EP44_YUSUF_DIBUANG_KE_SUMUR.mp4 ada (166.5 MB, 1080x1920@60, 93.4 s, -13.7 LUFS, TP -1.9 dBFS, metadata title/artist/copyright/comment OK; tagged.tmp di-rename manual karena EPERM). Render via npm run render:final langsung (render_batch menolak G14 rig-audit: kit SVG 2D). Part NVENC gagal di jobs=6 (write EOF), lolos di jobs=4. SOCIAL_CAPTIONS.md sudah lolos validator (Jumat 27 Nov 2026 19.00 WIB). Acc final tercatat.",
+      "files": [
+        "FINAL_EP44_YUSUF_DIBUANG_KE_SUMUR.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "draft/render-final.log",
+        "project/src/ep44/timing.ts"
+      ],
+      "next": "1) audira_qa_video hardOnly pada FINAL_EP44_YUSUF_DIBUANG_KE_SUMUR.mp4 (cuts = batas scene di project/src/ep44/timing.ts). 2) record_score stage final judge self style PAPERWORLD (acuan juri draf L4 M3 D4 C3 Mo5 R4; motion naik karena S7 push-in). 3) update stage final done. 4) NOTES.md: pelajaran G18c stem -26 gagal (11.0 LU) → TARGET_LUFS -28 (13.0 LU); G13 S7 parkir setelah crane → push-in linear; G14 render_batch blok PAPERWORLD SVG 2D (CAMERA_2D_KITS hanya PIXELSTORY) → render:final langsung; template sisa src/scenes/news/PenggantiGibranWapres.tsx memicu channel gate; NVENC jobs=6 write EOF → jobs=4. 5) append_lesson PAPERWORLD (failed G13 crane-then-park; fix push-in) + GLOBAL (fix G14 2D kit). 6) Tampilkan isi SOCIAL_CAPTIONS.md lengkap di chat. 7) 3 scheduled task review-yusuf-dibuang-ke-sumur-24h/-72h/-7d fireAt 2026-11-28T19:00:00+07:00, 2026-11-30T19:00:00+07:00, 2026-12-04T19:00:00+07:00 (prompt mandiri: folder episode, slug, judul, 6 platform, metrik views/retensi/hook/komentar, catat NOTES.md + style_memory channel append_lesson); catat taskId di NOTES.md. 8) update delivery done, hapus draft/_sfx_-26_backup.wav dan draft/_stills, tandai SELESAI di C:/Users/ASUS/AppData/Local/Claude-Data/claude_pzs8sxrjxfjjc/side-session-notes/local_d5859065-cb01-4ecc-bd42-ca87016befe6/EP44_GPU_RENDER.md.",
+      "snapshot": {
+        "episode": "EP44_YUSUF_DIBUANG_KE_SUMUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP44",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T16:29:10.950Z",
+      "doing": "Sesi C s4 selesai sampai render final. FINAL_EP44_YUSUF_DIBUANG_KE_SUMUR.mp4 ada (166.5 MB, 1080x1920@60, 93.4 s, -13.7 LUFS, TP -1.9 dBFS, metadata title/artist/copyright/comment OK; tagged.tmp di-rename manual karena EPERM). Render via npm run render:final langsung (render_batch menolak G14 rig-audit: kit SVG 2D). Part NVENC gagal di jobs=6 (write EOF), lolos di jobs=4. SOCIAL_CAPTIONS.md sudah lolos validator (Jumat 27 Nov 2026 19.00 WIB). Acc final tercatat.",
+      "files": [
+        "FINAL_EP44_YUSUF_DIBUANG_KE_SUMUR.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "draft/render-final.log",
+        "project/src/ep44/timing.ts"
+      ],
+      "next": "1) audira_qa_video hardOnly pada FINAL_EP44_YUSUF_DIBUANG_KE_SUMUR.mp4 (cuts = batas scene di project/src/ep44/timing.ts). 2) record_score stage final judge self style PAPERWORLD (acuan juri draf L4 M3 D4 C3 Mo5 R4; motion naik karena S7 push-in). 3) update stage final done. 4) NOTES.md: pelajaran G18c stem -26 gagal (11.0 LU) → TARGET_LUFS -28 (13.0 LU); G13 S7 parkir setelah crane → push-in linear; G14 render_batch blok PAPERWORLD SVG 2D (CAMERA_2D_KITS hanya PIXELSTORY) → render:final langsung; template sisa src/scenes/news/PenggantiGibranWapres.tsx memicu channel gate; NVENC jobs=6 write EOF → jobs=4. 5) append_lesson PAPERWORLD (failed G13 crane-then-park; fix push-in) + GLOBAL (fix G14 2D kit). 6) Tampilkan isi SOCIAL_CAPTIONS.md lengkap di chat. 7) 3 scheduled task review-yusuf-dibuang-ke-sumur-24h/-72h/-7d fireAt 2026-11-28T19:00:00+07:00, 2026-11-30T19:00:00+07:00, 2026-12-04T19:00:00+07:00 (prompt mandiri: folder episode, slug, judul, 6 platform, metrik views/retensi/hook/komentar, catat NOTES.md + style_memory channel append_lesson); catat taskId di NOTES.md. 8) update delivery done, hapus draft/_sfx_-26_backup.wav dan draft/_stills, tandai SELESAI di C:/Users/ASUS/AppData/Local/Claude-Data/claude_pzs8sxrjxfjjc/side-session-notes/local_d5859065-cb01-4ecc-bd42-ca87016befe6/EP44_GPU_RENDER.md.",
+      "snapshot": {
+        "episode": "EP44_YUSUF_DIBUANG_KE_SUMUR",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP44",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T17:41:26.054Z"
+    }
+  ],
+  "session": 5,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP44 Yusuf Sumur · s2",
+      "at": "2026-11-24T14:57:36.529Z"
+    },
+    {
+      "no": 3,
+      "title": "EP44 Yusuf Sumur · s3",
+      "at": "2026-11-24T15:03:30.398Z"
+    },
+    {
+      "no": 4,
+      "title": "EP44 Yusuf Sumur · s4",
+      "at": "2026-11-24T15:23:58.842Z"
+    },
+    {
+      "no": 5,
+      "title": "EP44 Yusuf Sumur · s5",
+      "at": "2026-11-24T16:29:10.949Z"
+    }
+  ]
+}

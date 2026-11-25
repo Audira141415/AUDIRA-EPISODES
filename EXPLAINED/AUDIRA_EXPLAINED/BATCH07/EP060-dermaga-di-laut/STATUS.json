@@ -1,0 +1,269 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "AE-060",
+  "topic": "Bagaimana Dermaga Dibangun di Atas Laut?",
+  "createdAt": "2026-11-23T14:14:11.569Z",
+  "updatedAt": "2026-11-24T13:08:05.967Z",
+  "currentStage": "script",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:40.038Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:14:11.569Z",
+      "startedAt": "2026-11-23T14:14:11.569Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:40.869Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:21:33.013Z",
+      "startedAt": "2026-11-23T14:21:33.013Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:40.038Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:14:00.402Z",
+      "startedAt": "2026-11-23T14:14:00.402Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:17:52.808Z",
+          "text": "Cartesia sonic-3, build_vo.py: VO ends 59.29s, film 63.29s, timeline.json di studio/src/scenes/ep060"
+        }
+      ],
+      "doneAt": "2026-11-23T15:17:52.808Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "in_progress",
+      "notes": [
+        {
+          "at": "2026-11-24T07:21:51.554Z",
+          "text": "Film BEDAH 13 shot / 9 dunia (hook, peta, profil, tongkang, vibro, hammer, ujung tiang, timelapse, dek, ponton, outro). Draf sheet draft/stills/_sheet.jpg, RISK_CLIP 18.5-36 dtk, camera 5/5. Menunggu juri buta lead."
+        }
+      ],
+      "doneAt": "2026-11-24T07:21:51.554Z",
+      "startedAt": "2026-11-24T07:21:53.030Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T12:57:13.107Z",
+      "notes": [
+        {
+          "at": "2026-11-24T12:57:46.472Z",
+          "text": "sync: final: FINAL_VIDEO.mp4; acc tercatat di file"
+        }
+      ],
+      "approvalSource": "file",
+      "doneAt": "2026-11-24T12:57:13.107Z",
+      "startedAt": "2026-11-24T12:57:13.107Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T12:21:45.869Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T12:17:54.769Z",
+      "startedAt": "2026-11-24T12:17:54.769Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T13:08:05.967Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-24T13:04:27.515Z",
+      "startedAt": "2026-11-24T13:04:27.515Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "batch07-EP60",
+    "style": "BEDAH",
+    "shortTitle": "Dermaga di Laut",
+    "engine": "remotion",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-24T13:08:05.967Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-23T14:14:51.639Z",
+      "doing": "BATCH07 (AE-060/063/064/067/068): 5 subagen riset jalan; studio BATCH07/studio dari starter terbaru (node_modules junction ke F:/AUDIRA-SKILL-MOTION/starter/node_modules); _tools disalin dari BATCH06 (path diganti). Style: 060 BEDAH, 063 BUILDFORGE, 064 LIDARFORGE, 067 WORLDFORGE, 068 URBANFORGE (lihat style/STYLE_DECISION.md tiap EP).",
+      "files": [
+        "F:/AUDIRA-EPISODES/EXPLAINED/AUDIRA_EXPLAINED/BATCH07"
+      ],
+      "next": "Setelah riset: tulis BATCH07/_write_scripts.py (format BATCH06, ~150 kata/60 dtk sesuai bank), VO Cartesia via scripts/tts-cartesia.mjs + _tools/make_vo_requests.py + build_vo.py, daftarkan Root.tsx, lalu subagen cover+film per EP (COVER_BRIEF/FILM_BRIEF BATCH06 sebagai template), draf contact sheet + juri, gerbang render final.",
+      "snapshot": {
+        "episode": "AE-060",
+        "topic": "Bagaimana Dermaga Dibangun di Atas Laut?",
+        "style": null,
+        "memoryEpisode": "batch07-EP60",
+        "currentStage": "research",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T14:27:31.415Z",
+      "doing": "BATCH07: riset 5 EP + naskah + voiceover.json selesai. Detail lengkap di BATCH07/BATCH_HANDOFF.md.",
+      "files": [
+        "F:/AUDIRA-EPISODES/EXPLAINED/AUDIRA_EXPLAINED/BATCH07/BATCH_HANDOFF.md"
+      ],
+      "next": "Synth VO Cartesia 5 EP + build_vo.py, daftarkan Root.tsx, subagen cover+film, draf+juri, gerbang render final (lihat BATCH_HANDOFF.md).",
+      "snapshot": {
+        "episode": "AE-060",
+        "topic": "Bagaimana Dermaga Dibangun di Atas Laut?",
+        "style": null,
+        "memoryEpisode": "batch07-EP60",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T12:18:31.611Z",
+      "doing": "Sesi C BATCH07: render final 5 EP di background (render_finals.sh). EP060 percobaan 1 gagal (RuntimeError unreachable, flaky); caption + SRT 5 EP selesai dan lolos validator.",
+      "command": "bash _tools/render_finals.sh ep060 ep063 ep064 ep067 ep068 > _tools/render_finals.out 2>&1",
+      "files": [
+        "BATCH07/BATCH_HANDOFF.md",
+        "BATCH07/_tools/render_finals.sh",
+        "BATCH07/_tools/make_captions_data.py",
+        "BATCH07/_tools/write_notes_qa.py"
+      ],
+      "next": "Ulang render EP060, lalu QA (LUFS/TP/frame), finalize.sh metadata, NOTES/QA (write_notes_qa.py perlu isi Batch 7), record_score final, Ep067Cover, lesson URBANFORGE, hapus perantara, jam upload + scheduled review. Detail: BATCH07/BATCH_HANDOFF.md bagian \"Status Sesi C\".",
+      "snapshot": {
+        "episode": "AE-060",
+        "topic": "Bagaimana Dermaga Dibangun di Atas Laut?",
+        "style": "BEDAH",
+        "memoryEpisode": "batch07-EP60",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    }
+  ],
+  "session": 2,
+  "handover": {
+    "at": "2026-11-24T12:18:31.611Z",
+    "doing": "Sesi C BATCH07: render final 5 EP di background (render_finals.sh). EP060 percobaan 1 gagal (RuntimeError unreachable, flaky); caption + SRT 5 EP selesai dan lolos validator.",
+    "command": "bash _tools/render_finals.sh ep060 ep063 ep064 ep067 ep068 > _tools/render_finals.out 2>&1",
+    "files": [
+      "BATCH07/BATCH_HANDOFF.md",
+      "BATCH07/_tools/render_finals.sh",
+      "BATCH07/_tools/make_captions_data.py",
+      "BATCH07/_tools/write_notes_qa.py"
+    ],
+    "next": "Ulang render EP060, lalu QA (LUFS/TP/frame), finalize.sh metadata, NOTES/QA (write_notes_qa.py perlu isi Batch 7), record_score final, Ep067Cover, lesson URBANFORGE, hapus perantara, jam upload + scheduled review. Detail: BATCH07/BATCH_HANDOFF.md bagian \"Status Sesi C\".",
+    "snapshot": {
+      "episode": "AE-060",
+      "topic": "Bagaimana Dermaga Dibangun di Atas Laut?",
+      "style": "BEDAH",
+      "memoryEpisode": "batch07-EP60",
+      "currentStage": "script",
+      "gates": {
+        "final": {
+          "approved": false,
+          "status": "pending"
+        }
+      },
+      "voPath": null,
+      "draftScores": [],
+      "finals": []
+    }
+  },
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "AE-060 Bagaimana Dermaga Dibangun di Atas Laut? · s2",
+      "at": "2026-11-23T14:27:31.415Z"
+    }
+  ]
+}

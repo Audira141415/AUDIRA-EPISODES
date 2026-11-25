@@ -1,0 +1,27 @@
+# Batch 7 addendum (EP31–EP35): "Niat Baik yang Jadi Bumerang"
+
+Read these first, in order, and follow all of them: `_research/BRIEF_COMMON_B3.md`, `_research/BRIEF_COMMON_B4.md`, `_research/BRIEF_COMMON_B5.md`, `_research/BRIEF_COMMON_B6.md` (finishing traps). The newest finished reference implementations are EP21–EP25 and EP26–EP30 (for example EP26_PULAU_PHEASANT, EP28_PERANG_COD_ISLANDIA). Read one `build-video.mjs` + `world3d.js` before you start.
+
+Facts: `_research/FACTS_B7.md`, your episode's section (also in `<EP>/research/SOURCE_REGISTER.md`). Every on-screen number must match it. Script: `<EP>/script-lines.json` (already written; do not edit). Timeline: estimated `timeline.json` (do not edit; the real voice replaces it later, so key everything to word anchors `"sN:word"`).
+
+Your folder already has: `AUDIO/sfx`, `PROJECT/HyperFrames_Remotion/assets/{brand,img,lib}` (three.js + post libs + RoomEnvironment.js), `style/cover-reference.*`, `style/STYLE_DECISION.md`.
+
+Batch theme: every film is a CHAIN REACTION. Each episode must show its causal chain as a visible, recurring device (a chain of linked tokens/cards that grows link by link as the narrator names each step), styled in that episode's kit. The chain is the series' signature for this batch, but its look differs per style.
+
+## Kit per episode (read `F:\AUDIRA-SKILL-MOTION\kits\<style lowercase>\KIT.md`)
+- **EP31 SKETCHFORGE (Tikus Hanoi 1902):** DOCUMENTARY_WARM, exposure 0.85, envIntensity 0.25, AO on. Pencil-on-cream world: Hanoi street block and a cutaway of the sewer beneath it, drawn lines lifting into 3D blocks. Per-face canvas textures (cross-hatch on shadow side, single hatch front, clean top + smudge); plain cream boxes score material 3. Rats are simple sketched 3D figures (body, ears, tail as a separate piece so the tail can be cut off). Key props: the 1-cent coin, a ledger of daily counts (7.985 → 15.041 → 20.112), a tray of tails, a rat farm with crates. No faces of real people; Paul Doumer = name tag. Sensitive: plague deaths (159 infected, 110 died) as calm numbers, no corpses.
+- **EP32 FELTCRAFT (Kelinci Australia 1859):** DOCUMENTARY_WARM, exposure 0.82, envIntensity 0.25, AO on. Felt/wool diorama of Australia: stitched seams, fuzzy fibre normal/roughness, button details. Felt rabbits (rounded, wool texture) multiply from 24 into a carpet that spreads over a felt map of Australia (south-east first). Rabbit-proof fence (1901) as a stitched line; myxoma 1950 counter 600 juta → 100 juta. Thomas Austin = name tag + simple felt figure (ToyPerson rules: head with face, shoulders wider than hips, bent limbs, skin colour ≠ clothes). Callback card to EP02 Perang Emu. Keep it cute but honest about damage (bare eroded felt patches, ringbarked felt tree).
+- **EP33 RISOFORGE (Pipit China 1958):** no memory params yet; start DOCUMENTARY_WARM, exposure 0.9, envIntensity 0.3. Risograph print look: 2–3 spot inks (fluoro pink, blue, yellow) with misregistration, grain, halftone, layered paper planes in 3D depth. Sparrows and locusts as riso-printed cut-out layers. Chain: pipit → serangga/belalang → sawah → panen. Sensitive topic (famine): NO starving people, no bodies, no portraits of Mao or anyone; people only as small anonymous silhouettes beating gongs; famine stated as text. Do NOT imitate real propaganda posters or reproduce Chinese slogans; use original typography in Indonesian.
+- **EP34 TOONFORGE (Kucing Parasut Sarawak 1960):** APPLE_STUDIO_CLEAN, exposure 1.0, envIntensity 0.55, AO off (clean cel shading). Cel-shaded toon world: Borneo jungle, longhouse village, RAF transport plane, crates under parachutes, toon cats (expressive, cute, safe landing; never hurt). Chain: DDT → serangga → cicak? (dashed, marked "belum terbukti") → kucing → tikus → kucing terjun. The lizard link must look visually uncertain (dashed, question mark). Map card: Sarawak in north Borneo, label "Malaysia", border with "Kalimantan Barat (Indonesia)". Myth vs fact card: "14.000 kucing? MITOS" vs "23 kucing (koran 1960)".
+- **EP35 GLITCHFORGE (CrowdStrike 19 Juli 2024):** no params yet; follow the memory fix: if a white clinical studio, cut ambient ~0.6, side key ~3.6, darken backdrop toward top, vignette 0.3, contact shadows, out-of-focus foreground element. Glitch look: RGB split, datamosh blocks, scanline tears, but readable. A wall/grid of PC monitors flipping to blue screens (generic blue error screen with a sad-face-free original design; do NOT reproduce Microsoft's exact BSOD text or logos, and no CrowdStrike/Microsoft/Delta logos; names as plain text only). Counter to 8,5 juta. Clock card 11.09 WIB → 78 menit → revert. Chain: update → Channel File 291 → crash → bootloop → bandara/bank/RS. Manual fix: a tiny technician figure walking monitor to monitor; BitLocker 48-digit key as a long code strip.
+
+## Hook and cover
+- The hook (s1) must land visually in the first 3 s with the strongest image of the film.
+- Cover topic: 1080×1920 still of the strongest frame with the hook title panel visible → `style/cover-topic.png`.
+
+## Deliverables (same as B3/B4; NO MP4 render of any kind)
+1. `node build-video.mjs`, then `bash ../_tools/snap.sh <EP folder> "<8-10 times>"`; Read the contact sheet and iterate until every frame reads well.
+2. `style/cover-topic.png` (verify 1080×1920), `style/contact-sheet.jpg`.
+3. `python mix.py` once.
+4. Self-score 6 aspects 1–5 vs `style/cover-reference.*`; polish until avg ≥4 and none <3.
+5. Report briefly: files written, concept in 3 lines, cover path, scores, known weaknesses.

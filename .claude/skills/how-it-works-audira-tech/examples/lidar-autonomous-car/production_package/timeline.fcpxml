@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.9">
+  <resources>
+    <format id="r1" name="AUDIRA_Custom_1080x1920" frameDuration="1/30s" width="1080" height="1920"/>
+  </resources>
+  <library>
+    <event name="AUDIRA_TECH_EPISODE">
+      <project name="AUDIRA_TECH_EPISODE">
+        <sequence format="r1" duration="2250/30s">
+          <spine>
+            <clip name="Scene_01_Scene-01-Night-Drive-Hook" offset="0/30s" duration="240/30s" start="0s">
+              <video offset="0s" ref="r1" duration="240/30s"/>
+            </clip>
+            <clip name="Scene_02_Scene-02-Lidar-Exploded-View" offset="240/30s" duration="420/30s" start="0s">
+              <video offset="0s" ref="r1" duration="420/30s"/>
+            </clip>
+            <clip name="Scene_03_Scene-03-VCSEL-Pulse-Emission" offset="660/30s" duration="420/30s" start="0s">
+              <video offset="0s" ref="r1" duration="420/30s"/>
+            </clip>
+            <clip name="Scene_04_Scene-04-Time-of-Flight-Bounce" offset="1080/30s" duration="450/30s" start="0s">
+              <video offset="0s" ref="r1" duration="450/30s"/>
+            </clip>
+            <clip name="Scene_05_Scene-05-Point-Cloud-Reconstruction" offset="1530/30s" duration="420/30s" start="0s">
+              <video offset="0s" ref="r1" duration="420/30s"/>
+            </clip>
+            <clip name="Scene_06_Scene-06-Outro-Brand-Card" offset="1950/30s" duration="300/30s" start="0s">
+              <video offset="0s" ref="r1" duration="300/30s"/>
+            </clip>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>

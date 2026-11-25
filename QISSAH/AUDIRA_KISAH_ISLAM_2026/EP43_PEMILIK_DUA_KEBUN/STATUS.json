@@ -1,0 +1,490 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP43_PEMILIK_DUA_KEBUN",
+  "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+  "createdAt": "2026-11-24T14:50:50.341Z",
+  "updatedAt": "2026-11-24T16:32:31.779Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:53:49.766Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-24T14:50:50.342Z",
+      "startedAt": "2026-11-24T14:50:50.342Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:52:44.495Z",
+          "text": "SOURCE_REGISTER: QS 18:32-45 + Ibnu Katsir. 8 fakta."
+        }
+      ],
+      "doneAt": "2026-11-24T14:52:44.495Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:58:26.486Z",
+          "text": "PAPERWORLD Remotion 2D SVG (pola gold EP18/EP60, juri final 4.17). Alt: STORYBOOK, CHRONICLE. Cover topik dirender dari frame hook di Sesi B."
+        }
+      ],
+      "doneAt": "2026-11-24T14:58:26.486Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:58:26.646Z",
+          "text": "SCRIPT 198 kata (79–88 dtk), STORYBOARD 10 scene, ART_DIRECTION, ASSET_MANIFEST, audio/vo.txt. Semua baris Style: PAPERWORLD."
+        }
+      ],
+      "doneAt": "2026-11-24T14:58:26.646Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:06:06.731Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-24T14:59:40.376Z",
+      "startedAt": "2026-11-24T14:59:40.376Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:04:22.190Z",
+          "text": "VO Cartesia 83.50 dtk, 198 kata, speed 1, offset 0; Whisper: \"masya Allah, la kuatah illa billah\", \"bersama audira\" terbaca. VO dikunci. Film 86.6 dtk (outro 83.6–86.6)."
+        }
+      ],
+      "doneAt": "2026-11-24T15:04:22.190Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:06:06.731Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-24T15:16:21.046Z",
+          "text": "s3: scenes S1–S11 + Film/Root EP43, typecheck ep43 bersih, stills 15 frame cek (fix gate S5 terpotong, tokoh S2 lebih awal, kepala kneel), cover-topic.png dari Ep43Cover, docs/SHOTLIST.md, sfx.wav −26 LUFS 24 bunyi."
+        }
+      ],
+      "doneAt": "2026-11-24T15:16:21.046Z",
+      "startedAt": "2026-11-24T14:59:39.849Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:19:27.357Z",
+          "text": "sync: look.json PASS"
+        },
+        {
+          "at": "2026-11-24T15:27:27.595Z",
+          "text": "Juri 3.67 r1 + 3.67 r2 (material 3, composition 3); diterima 3.67 setelah 2 putaran. draft/DRAFT_SHEET.jpg, THEME_CHECK 8/8 ya, ceilings semua 5, camera 5/5."
+        }
+      ],
+      "doneAt": "2026-11-24T15:27:27.595Z",
+      "startedAt": "2026-11-24T15:18:50.940Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T15:47:46.023Z",
+      "notes": [
+        {
+          "at": "2026-11-24T15:47:46.023Z",
+          "text": "Acc pengguna 2026-11-24: \"Gas render\" (draf juri 3.67, 86.6 dtk, G18c gap 14.3 LU)"
+        },
+        {
+          "at": "2026-11-24T16:31:54.951Z",
+          "text": "FINAL_EP43_PEMILIK_DUA_KEBUN.mp4 1080x1920@60, 86.6 dtk, -13.7 LUFS TP -1.8, metadata ok, frame cek draft/FINAL_FRAMES.jpg. Render langsung render-final.mjs (pilihan pengguna) x264 jobs 3."
+        }
+      ],
+      "startedAt": "2026-11-24T15:47:46.023Z",
+      "doneAt": "2026-11-24T16:31:54.951Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:59:46.452Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T15:58:09.265Z",
+      "startedAt": "2026-11-24T15:58:09.265Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "kisah-islam-EP43",
+    "shortTitle": "Dua Kebun",
+    "style": "PAPERWORLD",
+    "engine": "remotion",
+    "tier": "2d-svg",
+    "wordCount": 198,
+    "estimatedDuration": {
+      "wordCount": 198,
+      "minSec": 79,
+      "maxSec": 88
+    }
+  },
+  "syncedAt": "2026-11-24T15:59:46.452Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-24T14:58:37.126Z",
+      "doing": "Sesi A selesai (tahap 0–4): preflight lolos tanpa blocker; style PAPERWORLD, engine Remotion 2D SVG (tanpa R3F, tanpa GLB) mengikuti pola gold EP18 Svalbard / EP60 Panama (juri final 4.17); docs rule 12 lengkap; naskah 198 kata (estimasi 79–88 dtk), 10 scene di STORYBOARD.",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/ART_DIRECTION.md",
+        "docs/SCRIPT.md",
+        "audio/vo.txt",
+        "research/SOURCE_REGISTER.md"
+      ],
+      "next": "Sesi B, tahap 5: scaffold project/ dengan menyalin pola proyek EP60 (F:/AUDIRA-EPISODES/FAKTADUNIA/AUDIRA_SEJARAH_NEGARA_2026/EP60_PANAMA_DUA_SAMUDRA/project: package.json, scripts/, src/core, src/brand, node_modules junction ke F:/AUDIRA-SKILL-MOTION/node_modules; src/ep60 → src/ep43, helper P/Layered/wave/LightPool/Rays/Figure dari pieces.tsx). Lalu tahap 6: VO Cartesia dari audio/vo.txt (audira_generate_voiceover, voice 04b567df-2923-4b0c-896b-4b7df0a07e1a, speed 1, cek lafal \"Audira\", \"Masya Allah\", \"la quwwata illa billah\"), npm run vo → timeline, kunci VO. Tahap 7: retime STORYBOARD ke detik VO, bangun 10 scene (multi-scene, kartu ayat QS 18:xx + callout tiap fakta, siluet tanpa wajah, papan AUDIRA di S1 + plakat outro, AudiraSignature seed EP43_PEMILIK_DUA_KEBUN, AudiraOutro), render cover-topic.png dari frame hook (±0,3 dtk) ke style/, SHOTLIST.md + npm run sfx. Tahap 8: draft/THEME_CHECK.md (G22), npm run draft, record_score self lalu juri buta (subagen) — lolos ≥3.8 tanpa aspek <3, maks 2 putaran; ≥3.5 setelah 2 putaran = terima. Kerja HANYA di folder EP43; 4 sesi lain (EP42, EP44–46) render paralel di PC sama: render via audira_render_batch, concurrency 1 bila VRAM penuh. Jangan commit.",
+      "snapshot": {
+        "episode": "EP43_PEMILIK_DUA_KEBUN",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP43",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T14:59:59.302Z",
+      "doing": "Sesi B tahap 5–6: project/ disalin dari EP60 (src/ep43 masih isi Panama), node_modules junction dibuat; sedang VO Cartesia",
+      "files": [
+        "project/src/ep43/",
+        "project/public/audio/vo.wav"
+      ],
+      "next": "npm run vo → retime timing.ts, tulis ulang src/ep43 pieces/scenes/Film untuk kebun",
+      "snapshot": {
+        "episode": "EP43_PEMILIK_DUA_KEBUN",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP43",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:07:40.588Z",
+      "doing": "Sesi B (lanjutan) tahap 7: tahap 5 selesai (project/ disalin dari EP60, node_modules junction ke F:/AUDIRA-SKILL-MOTION/node_modules, check-env Ready; smoke belum dijalankan). Tahap 6 selesai: VO Cartesia 83.50 dtk dikunci (public/audio/vo.wav + vo-words.json + vo.timing.json, offset 0; Whisper membaca 'masya Allah, la kuatah illa billah', 'bersama audira' = lolos). Tahap 7 sebagian: src/ep43/timing.ts SUDAH ditulis ulang (11 scene: S1 0–10.1 hook, S2 10.1–15.45 kartu QS 18:32 + dua lelaki, S3 15.45–25.9 tata kebun anggur/kurma/ladang/sungai → berbuah penuh 18:33, S4 25.9–31.2 sombong harta+pengikut 18:34, S5 31.2–41.0 masuk kebun 'tidak akan binasa' 18:35–36, S6 41.0–46.5 teman: dari tanah → setetes air 18:37, S7 46.5–55.75 kartu ornamen MASYA ALLAH · LA QUWWATA ILLA BILLAH 18:39 + terjemah, S8 55.75–59.8 badai para-para roboh 18:42, S9 59.8–71.0 close-up tangan dibolak-balik → kutipan 'aduhai sekiranya...' 18:42 → sendirian di puing 18:43, S10 71.0–79.3 payoff hujan→tumbuh→kering→diterbangkan angin 18:45, S11 79.3–86.6 tunas + kartu pertanyaan + plakat AUDIRA; FILM 86.6, OUTRO 3.0; 23 CALLOUTS). src/ep43/pieces.tsx = helper dasar EP60 (C palet kebun baru, P, Layered, blob, wave, LightPool, Rays, Water, Tree, Palm, Coin, Rain). src/ep43/garden.tsx BARU berisi Robed (siluet berjubah tanpa wajah, pose stand/boast/point/walk/spread/kneel/staff/hands), Grapes, Vineyard (fruit/collapse/dry), DatePalm, Field, Basket, AyahCard (kartu ayat bintang-8), Hand (flip), Plant (g/dry), Leaf, Gate (papan AUDIRA), River, star8, dropPath — belum di-typecheck.",
+      "files": [
+        "project/src/ep43/timing.ts",
+        "project/src/ep43/pieces.tsx",
+        "project/src/ep43/garden.tsx",
+        "project/src/ep43/scenes.tsx (masih EP60)",
+        "project/src/ep43/Film.tsx (masih EP60)",
+        "project/src/Root.tsx (masih EP60)",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md"
+      ],
+      "next": "Sesi baru: (1) tulis ulang src/ep43/scenes.tsx (masih isi Panama EP60, 689 baris — ganti total; pakai pola Frame/cam/Sun/Cloud/Hills/Mountains/Haze/FGFoliage di bagian atasnya, impor dari ./pieces dan ./garden; SCENE_MAP S1..S11; kamera orbit elips dx=sin(1.1lt)*24 dy=cos(1.1lt)*28 + zoom 1.05+0.012*lt, variasi close-up/wide/low-angle tiap scene; S1 papan AUDIRA via <Gate>; kartu ayat in-scene via AyahCard). (2) Film.tsx: ganti Ep60*→Ep43Film/Ep43Stage/Ep43Cover, EP43_SECONDS, AudiraSignature seed=\"EP43_PEMILIK_DUA_KEBUN\" (tanpa handle), cover t≈0.3 dtk + judul 'PEMILIK DUA KEBUN' / 'QS Al-Kahfi 32–45'. (3) Root.tsx: Ep43Preview/Ep43Final/Ep43Cover (hapus impor Ep60). (4) npm run typecheck, npm run smoke, stills cek. (5) render cover → ../style/cover-topic.png (npm run cover / remotion still Ep43Cover). (6) docs/SHOTLIST.md (format EP60: tabel # | Waktu | Objek | Aksi | Kamera | Teks layar | Beat + '## Audio cues' whoosh tiap potongan 10.1,15.45,25.9,31.2,41.0,46.5,55.75,59.8,71.0,79.3,83.6; riser 74–77, impact 77.1 'SEMUA AKAN LAYU'; Offset: 0) lalu npm run sfx. (7) Tahap 8: draft/THEME_CHECK.md G22, npm run draft -- Ep43Preview, record_score self lalu juri buta subagen (qa/jury.md), lolos ≥3.8 tanpa aspek <3, maks 2 putaran. Lalu handover newSession → Sesi C.",
+      "snapshot": {
+        "episode": "EP43_PEMILIK_DUA_KEBUN",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP43",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:14:25.005Z",
+      "doing": "Sesi B s3 tahap 7: src/ep43/scenes.tsx DITULIS ULANG (S1–S11 EP43, helper orb() orbit elips + zoom per plane, Tag, Gust, PalmRow; S3/S9 sub-shot crossfade; Gate AUDIRA di S1+S5, plakat S11; AyahCard S2 18:32, S7 18:39 teks reveal per baris, S9 18:42, S11 RENUNGAN). Film.tsx → Ep43Film/Ep43Stage/Ep43Cover (cover t=0.3, stempel ABADI?, judul PEMILIK DUA KEBUN / QS Al-Kahfi 32–45), AudiraSignature seed EP43_PEMILIK_DUA_KEBUN. Root.tsx → Ep43Preview/Ep43Final/Ep43Cover. npm run typecheck: ep43 bersih (3 error sisa = file kit core/qa/scene-qa.tsx + scenes/news/PenggantiGibranWapres.tsx, bawaan, abaikan).",
+      "files": [
+        "project/src/ep43/scenes.tsx",
+        "project/src/ep43/Film.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "(4) npm run smoke + stills Ep43Preview beberapa detik (mis. 1,12,20,24,28,35,44,50,58,62,66,70,74,77,81s) → contact sheet kecil, cek; (5) cover: npm run cover / remotion still Ep43Cover → ../style/cover-topic.png; (6) docs/SHOTLIST.md (format EP60, audio cues whoosh 10.1,15.45,25.9,31.2,41.0,46.5,55.75,59.8,71.0,79.3,83.6; riser 74–77, impact 77.1; Offset: 0) lalu npm run sfx; (7) tahap 8: draft/THEME_CHECK.md, npm run draft -- Ep43Preview, record_score self lalu juri buta subagen; lalu handover newSession → Sesi C.",
+      "snapshot": {
+        "episode": "EP43_PEMILIK_DUA_KEBUN",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP43",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:16:39.437Z",
+      "doing": "Sesi B s3 selesai tahap 7 (DONE): scenes.tsx S1–S11 + Film.tsx (Ep43Film/Ep43Stage/Ep43Cover, signature seed EP43_PEMILIK_DUA_KEBUN) + Root.tsx (Ep43Preview/Ep43Final/Ep43Cover); typecheck ep43 bersih (3 error sisa milik file kit bawaan, abaikan); stills 15 frame dicek (out/chk/_sheet.jpg; look.json ceilings semua 5 kecuali composition/readability 3 karena papan AUDIRA terpotong di S5 → sudah difix: track 240, jalan 160→640; S2 tokoh muncul lt 0.5; kepala kneel turun hy=+40 — fix BELUM diverifikasi ulang dengan stills); cover style/cover-topic.png + cover_1080x1350.png dari Ep43Cover; docs/SHOTLIST.md; npm run sfx → public/audio/sfx.wav −26 LUFS 24 bunyi. Tahap 8 dimulai: `npm run draft -- Ep43Preview` GAGAL: SyntaxError di project/scripts/draft.mjs:97 (`await` di fungsi non-async; salinan proyek 11.9K berbeda dari starter F:/AUDIRA-SKILL-MOTION/starter/scripts/draft.mjs 11.7K).",
+      "files": [
+        "project/scripts/draft.mjs",
+        "project/src/ep43/scenes.tsx",
+        "project/src/ep43/garden.tsx",
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav",
+        "style/cover-topic.png",
+        "project/out/chk/_sheet.jpg"
+      ],
+      "next": "Sesi B lanjutan (s4) tahap 8: (a) perbaiki project/scripts/draft.mjs (bandingkan dengan starter, salin versi starter bila starter lolos `node --check`; jangan sentuh starter/file seri). (b) cek ulang stills cepat `node scripts/stills.mjs out/chk 12s,36s,66s Ep43Preview` (verifikasi fix S2/S5/kneel, look.json harus tanpa cap 3). (c) tulis draft/THEME_CHECK.md (G22: tiap frame contact sheet, subjek layar = kata VO, semua 'ya'; urutan scene & VO ada di docs/SHOTLIST.md). (d) npm run draft -- Ep43Preview → draft/contact-sheet.jpg + audit:visual + audit:camera. (e) record_score self (stage draft, style PAPERWORLD, episode kisah-islam-EP43, ceilings dari look.json, camera json) lalu juri buta subagen (qa/jury.md: hanya contact sheet + cover quality-bar + ceilings + rubrik) judge jury. LOLOS ≥3.8 tanpa aspek <3; maks 2 putaran; ≥3.5 setelah 2 putaran = terima. Self PAPERWORLD bias +0.6. (f) selesai → handover newSession → Sesi C (tahap 9 gerbang acc: contact sheet, skor, durasi 86.6, G18c).",
+      "snapshot": {
+        "episode": "EP43_PEMILIK_DUA_KEBUN",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP43",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:18:24.929Z",
+      "doing": "s4 tahap 8: draft.mjs disalin dari starter (node --check OK); stills 12/36/66s verifikasi fix S2/S5/kneel OK, look.json tanpa cap <4. Sedang: npm run draft -- Ep43Preview",
+      "command": "cd project && npm run draft -- Ep43Preview",
+      "files": [
+        "project/scripts/draft.mjs",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "THEME_CHECK.md dari contact sheet → record_score self → juri buta subagen → handover newSession → Sesi C",
+      "snapshot": {
+        "episode": "EP43_PEMILIK_DUA_KEBUN",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP43",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:27:36.240Z",
+      "doing": "Sesi B selesai (s4): tahap 8 DONE. draft.mjs disalin dari starter. Fix outro: Ep43Stage di-unmount setelah outro card opak; handle outro 36px. Poles r2: kartu ayat S2/S7/S9 ke sepertiga atas, tokoh lebih besar, S3b tokoh pemilik di kebun, serat di Layered. Ceilings semua 5, camera 5/5, THEME_CHECK 8/8 ya. Self 4.17; juri r1 3.67, r2 3.67 (material 3, composition 3) → DITERIMA 3.67 setelah 2 putaran (NOTES.md + lesson failed dicatat). Jangan poles lagi, jangan ganti style.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/DRAFT_REPORT.json",
+        "draft/THEME_CHECK.md",
+        "NOTES.md",
+        "project/src/ep43/Film.tsx",
+        "project/src/ep43/scenes.tsx",
+        "project/public/audio/vo.wav",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "Sesi C tahap 9: cek audio G18c (VO ≥12 LU di atas SFX; public/audio/vo.wav + public/audio/sfx.wav), tampilkan draft/DRAFT_SHEET.jpg + skor juri 3.67 (diterima setelah 2 putaran) + durasi film 86.6 dtk (VO 83.5) + G18c, TUNGGU acc pengguna. Setelah acc: update stage final approved:true, lalu audira_render_batch start jobs [{project: <EP>/project, comp: \"Ep43Final\", vo: \"public/audio/vo.wav\", sfx: \"public/audio/sfx.wav\", slug: \"pemilik-dua-kebun\", ep: \"EP43\", title: \"Pemilik Dua Kebun — QS Al-Kahfi 32–45\"}] (3D/GPU antre dengan EP42/44–46). QA −14 LUFS TP<−1, metadata ffprobe, record_score final. Tahap 10: SOCIAL_CAPTIONS.md 6 platform + validator, lessons, 3 scheduled task review.",
+      "snapshot": {
+        "episode": "EP43_PEMILIK_DUA_KEBUN",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP43",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:52:14.984Z",
+      "doing": "Sesi C s5: acc final pengguna DICATAT (\"Gas render\"). G18c lolos (VO -16.6, SFX duck -30.9, gap 14.3 LU). render_batch ditolak G13 (camera.json deadPct 6, median 0.021) → FIX: S7 di scenes.tsx diberi track horizontal ±110, orb f1.6 k0.03, kartu ayat drift; klip CHECK_46-64s dirender ulang, audit:camera 5/5 parked 0% median 0.041 → G13 LOLOS. Lalu ditolak G14: rig-audit.json tidak ada; render-batch.js CAMERA_2D_KITS hanya PIXELSTORY, PAPERWORLD 2D SVG tidak punya rig 3D. Menunggu keputusan sesi induk/pengguna (tambah PAPERWORLD/tier 2d-svg ke pengecualian G14 di mcp-server, atau jalur lain).",
+      "files": [
+        "project/src/ep43/scenes.tsx",
+        "draft/CHECK_46-64s.mp4",
+        "draft/camera.json"
+      ],
+      "next": "Setelah G14 terselesaikan: audira_render_batch start job Ep43Final (vo public/audio/vo.wav, sfx public/audio/sfx.wav, slug pemilik-dua-kebun, EP43). Lalu QA -14 LUFS, TP<-1, ffprobe metadata, record_score final, tahap 10.",
+      "snapshot": {
+        "episode": "EP43_PEMILIK_DUA_KEBUN",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP43",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:57:04.242Z",
+      "doing": "Render final langsung (pilihan pengguna \"Render langsung\", G14 render_batch tidak berlaku untuk 2D SVG): npm run render:final di project/, out/Ep43Final.mp4",
+      "command": "node scripts/render-final.mjs --comp=Ep43Final --out=out/Ep43Final.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --slug=pemilik-dua-kebun --ep=EP43 --title=\"Pemilik Dua Kebun — QS Al-Kahfi 32–45\" --skip-rig-gate=\"2D SVG PAPERWORLD tanpa rig 3D\" --log=error",
+      "files": [
+        "project/out/Ep43Final.mp4"
+      ],
+      "next": "QA -14 LUFS / TP<-1, ffprobe metadata, cek frame, salin FINAL ke folder episode, record_score final, tahap 10.",
+      "snapshot": {
+        "episode": "EP43_PEMILIK_DUA_KEBUN",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP43",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:57:04.242Z",
+      "doing": "Render final langsung (pilihan pengguna \"Render langsung\", G14 render_batch tidak berlaku untuk 2D SVG): npm run render:final di project/, out/Ep43Final.mp4",
+      "command": "node scripts/render-final.mjs --comp=Ep43Final --out=out/Ep43Final.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --slug=pemilik-dua-kebun --ep=EP43 --title=\"Pemilik Dua Kebun — QS Al-Kahfi 32–45\" --skip-rig-gate=\"2D SVG PAPERWORLD tanpa rig 3D\" --log=error",
+      "files": [
+        "project/out/Ep43Final.mp4"
+      ],
+      "next": "QA -14 LUFS / TP<-1, ffprobe metadata, cek frame, salin FINAL ke folder episode, record_score final, tahap 10.",
+      "snapshot": {
+        "episode": "EP43_PEMILIK_DUA_KEBUN",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "kisah-islam-EP43",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T16:32:31.779Z"
+    }
+  ],
+  "session": 5,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP43 Dua Kebun · s2",
+      "at": "2026-11-24T14:58:37.126Z"
+    },
+    {
+      "no": 3,
+      "title": "EP43 Dua Kebun · s3",
+      "at": "2026-11-24T15:07:40.588Z"
+    },
+    {
+      "no": 4,
+      "title": "EP43 Dua Kebun · s4",
+      "at": "2026-11-24T15:16:39.437Z"
+    },
+    {
+      "no": 5,
+      "title": "EP43 Dua Kebun · s5",
+      "at": "2026-11-24T15:27:36.239Z"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=block" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0B3D2E}
+body{position:relative;background:radial-gradient(circle at 50% 50%,#0f4a38 0%,#0B3D2E 55%,#072a20 100%);font-family:'Space Grotesk',sans-serif}
+svg{position:absolute;left:240px;top:660px}
+p{position:absolute;left:0;right:0;top:1330px;text-align:center;color:#A3E635;font-weight:700;font-size:72px;letter-spacing:2px}
+</style></head><body>
+<!-- Instagram highlight cover: icon inside the centre circle crop. ?k=biologi|fisika|bumi|astronomi|sekolah -->
+<svg id="ic" width="600" height="600" viewBox="-300 -300 600 600" fill="none" stroke-linecap="round" stroke-linejoin="round"></svg>
+<p id="lb"></p>
+<script>
+const k=new URLSearchParams(location.search).get('k')||'biologi';
+const T='#00B894',O='#FF6A3D',Wt='#FFFFFF',sw=14;
+const ring=`<circle r="280" stroke="${T}" stroke-opacity=".55" stroke-width="8"/>`;
+const icons={
+  // DNA double helix
+  biologi:['BIOLOGI',(()=>{let a='M-60 -160',b='M60 -160',rungs='';
+    for(let y=-160;y<=160;y+=8){const x=60*Math.cos((y+160)/320*2*Math.PI);a+=`L${-x} ${y}`;b+=`L${x} ${y}`;}
+    for(let y=-130;y<=130;y+=52){const x=60*Math.cos((y+160)/320*2*Math.PI);rungs+=`<line x1="${-x}" y1="${y}" x2="${x}" y2="${y}"/>`;}
+    return `<g stroke="${O}" stroke-width="10">${rungs}</g><path d="${a}" stroke="${Wt}" stroke-width="${sw}"/><path d="${b}" stroke="${T}" stroke-width="${sw}"/>`;})()],
+  // atom
+  fisika:['FISIKA & KIMIA',`<g stroke="${Wt}" stroke-width="${sw}"><ellipse rx="160" ry="58"/><ellipse rx="160" ry="58" transform="rotate(60)"/><ellipse rx="160" ry="58" transform="rotate(120)"/></g><circle r="30" fill="${O}"/>`],
+  // volcano
+  bumi:['BUMI & ALAM',`<path d="M-160 150 L-50 -60 H50 L160 150 Z" stroke="${Wt}" stroke-width="${sw}"/><path d="M-50 -60 Q0 -20 50 -60" stroke="${Wt}" stroke-width="${sw}"/><g stroke="${O}" stroke-width="${sw}"><path d="M0 -90 V-160"/><path d="M-40 -95 L-75 -150"/><path d="M40 -95 L75 -150"/></g><path d="M-30 -40 Q-10 40 -40 100" stroke="${O}" stroke-width="${sw}"/>`],
+  // ringed planet
+  astronomi:['ASTRONOMI',`<path d="M-170 20 A170 50 0 0 0 170 20" stroke="${T}" stroke-width="${sw}" transform="rotate(-15)"/><circle r="95" stroke="${Wt}" stroke-width="${sw}" fill="#0B3D2E"/><path d="M-170 20 A170 50 0 0 1 -92 -10 M92 -10 A170 50 0 0 1 170 20" stroke="${T}" stroke-width="${sw}" transform="rotate(-15)"/><path d="M-80 50 A170 50 0 0 0 80 50" stroke="${T}" stroke-width="${sw}" transform="rotate(-15)"/><circle cx="130" cy="-130" r="20" fill="${O}"/>`],
+  // open book
+  sekolah:['MATERI SEKOLAH',`<g stroke="${Wt}" stroke-width="${sw}"><path d="M0 -100 Q-80 -140 -170 -110 V120 Q-80 90 0 130 Q80 90 170 120 V-110 Q80 -140 0 -100 Z"/><path d="M0 -100 V130"/></g><g stroke="${O}" stroke-width="10"><path d="M-130 -50 Q-75 -70 -30 -50"/><path d="M-130 0 Q-75 -20 -30 0"/><path d="M30 -50 Q75 -70 130 -50"/></g>`],
+};
+const [label,body]=icons[k];
+document.getElementById('ic').innerHTML=ring+body;
+document.getElementById('lb').textContent=label;
+</script>
+</body></html>

@@ -1,0 +1,227 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#05090D}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.06;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.45) 42%,rgba(0,0,0,0.45) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:"IBM Plex Mono",monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#EEF3F5;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+#scanl{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.2) 0 2px,rgba(0,0,0,0) 2px 4px);opacity:.28;z-index:8;pointer-events:none}
+#mute{position:absolute;inset:0;background:#1a2024;mix-blend-mode:saturation;opacity:0;z-index:6;pointer-events:none}
+#frm i{position:absolute;width:42px;height:42px;border-color:#FFBE55;border-style:solid;opacity:.5;z-index:9}
+#frm .c1{left:26px;top:170px;border-width:3px 0 0 3px}#frm .c2{right:26px;top:170px;border-width:3px 3px 0 0}
+#frm .c3{left:26px;top:1500px;border-width:0 0 3px 3px}#frm .c4{right:26px;top:1500px;border-width:0 3px 3px 0}
+#hudr{position:absolute;right:56px;top:184px;z-index:11;text-align:right;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:20px;line-height:1.3;color:#FFBE55;text-shadow:0 2px 8px #000}
+#hudalt{color:#EEF3F5;opacity:.8}
+#seam{position:absolute;left:0;right:0;top:0;height:0;z-index:9;opacity:0}
+#seam i{position:absolute;left:0;right:0;top:-2px;height:4px;background:#FFBE55;box-shadow:0 0 18px 3px rgba(255,190,85,.45)}
+#seam.mv i{top:-40px;height:80px;background:linear-gradient(180deg,rgba(255,190,85,0),rgba(255,190,85,.35) 40%,rgba(255,226,170,.95) 50%,rgba(255,190,85,.35) 60%,rgba(255,190,85,0));box-shadow:none}
+.feed{position:absolute;right:56px;z-index:11;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:19px;color:#071017;background:#FFBE55;padding:3px 10px;opacity:0}
+#lks{position:absolute;left:0;top:0;z-index:9;pointer-events:none}
+#lk{stroke:#FFBE55;stroke-width:4;stroke-dasharray:14 10;opacity:0;filter:drop-shadow(0 0 6px rgba(0,0,0,.9))}
+#badge{position:absolute;z-index:11;transform:translate(-50%,-50%);font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;font-size:44px;letter-spacing:.02em;color:#071017;background:#FFBE55;padding:4px 18px 6px;white-space:nowrap;opacity:0;box-shadow:0 8px 28px rgba(0,0,0,.6)}
+#pband{position:absolute;left:40px;width:960px;top:0;height:70px;z-index:12;opacity:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(255,190,85,.5) 0 2px,rgba(255,190,85,.12) 2px 5px);box-shadow:0 0 30px 4px rgba(255,190,85,.35);border-top:3px solid #FFBE55;border-bottom:3px solid #FFBE55}
+.p{color:#EEF3F5}
+.tk{display:inline-block;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:25px;color:#FFBE55;letter-spacing:.02em;margin-bottom:10px;text-shadow:0 2px 10px #000;background:rgba(5,9,13,.6);padding:2px 8px}
+.tk.ct2{color:#FF7A59}.tk.mt{color:#9AA3A7}
+.h1{font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;font-size:124px;line-height:.98;color:#EEF3F5;text-shadow:0 4px 26px #000;letter-spacing:.005em}.h1 em{font-style:normal;color:#7CD992}.h1 i{font-style:normal;color:#FFBE55}
+.h2{font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;font-size:150px;line-height:1;color:#EEF3F5;text-shadow:0 4px 26px #000}.h2.coral{color:#FF7A59}
+.h3{font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;font-size:96px;line-height:1;color:#9AA3A7;text-shadow:0 4px 22px #000}.h3.w{color:#EEF3F5;font-size:84px;margin-top:6px}
+.sub{display:inline-block;margin-top:8px;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:27px;color:#071017;background:#FFBE55;padding:6px 14px}.sub.coral{background:#FF7A59}
+.row{display:flex;gap:18px;align-items:center;margin-top:14px;padding:12px 18px;background:rgba(5,12,17,.84);border-left:7px solid #FFBE55;width:fit-content;max-width:900px}
+.row.cold{border-left-color:#9FD3FF}.row.coral{border-left-color:#FF7A59}.row.nut{border-left-color:#7CD992}
+.row b{flex:none;font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;font-size:48px;line-height:1;color:#EEF3F5}
+.row.nut b{color:#7CD992}.row.coral b{color:#FF7A59}.row.cold b{color:#9FD3FF}
+.row span{font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:26px;line-height:1.25;color:#EEF3F5}
+.meas{display:flex;gap:20px;align-items:flex-end}
+.meas>b{font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;font-size:170px;line-height:.9;color:#FFBE55;text-shadow:0 4px 26px #000}.meas>b b{font-weight:800}
+.meas span{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:30px;line-height:1.25;color:#EEF3F5;padding-bottom:14px;text-shadow:0 2px 10px #000}.meas span i{font-style:normal;color:#9AA3A7;font-size:26px}
+.date{font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;font-size:170px;line-height:.92;color:#FFBE55;text-shadow:0 0 30px rgba(255,190,85,.25),0 6px 26px #000}
+.card{display:flex;gap:18px;align-items:center;margin-top:12px;padding:12px;background:rgba(5,12,17,.88);border-top:5px solid #9FD3FF;box-shadow:0 14px 40px rgba(0,0,0,.55);width:fit-content;max-width:910px}
+.sil{flex:none;width:136px;text-align:center}.sil svg{width:136px;height:136px;display:block}
+.sil small{display:block;margin-top:4px;font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:500;color:#EEF3F5;opacity:.6}
+.card em{display:block;font-style:normal;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:21px;color:#9FD3FF}
+.card b{display:block;font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;font-size:56px;line-height:1.02;color:#EEF3F5}
+.card span{display:block;margin-top:4px;font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:24px;line-height:1.25;color:#EEF3F5;opacity:.92}
+.st{display:inline-block;margin-top:18px;font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;font-size:60px;line-height:1.05;padding:4px 22px 8px;color:#071017;box-shadow:0 10px 34px rgba(0,0,0,.6)}
+.st.coral{background:#FF7A59}
+.days{display:flex;align-items:flex-end;gap:18px}.days b{font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;font-size:210px;line-height:.88;color:#EEF3F5;text-shadow:0 6px 30px #000}.days i{font-style:normal;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:40px;color:#FFBE55;padding-bottom:18px}
+.mcard{margin-top:16px;background:rgba(14,18,21,.9);border:2px solid #3a4448;padding:8px 20px;width:fit-content}
+.mr{display:flex;gap:16px;align-items:baseline;padding:10px 0;border-bottom:1px solid #2c3438}.mr:last-child{border-bottom:none}
+.mr b{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:28px;color:#EEF3F5;min-width:330px}.mr span{font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:28px;color:#9AA3A7}
+.lb{margin-top:12px;font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:26px;color:#C3CACD;text-shadow:0 2px 10px #000}
+.ren{display:flex;align-items:center;gap:14px;margin-top:14px;padding:10px 18px;background:rgba(5,12,17,.86);width:fit-content}
+.ren s{font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;font-size:40px;color:#FF7A59;text-decoration-thickness:4px}.ren i{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:36px;color:#FFBE55}.ren b{font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;font-size:48px;color:#9FD3FF}
+.swap{position:relative;display:flex;align-items:center;gap:0;margin-top:14px;width:900px;height:250px}
+.bx{position:absolute;top:0;width:390px;height:240px;box-sizing:border-box;padding:16px 22px;background:rgba(5,12,17,.9);border:3px solid #FFBE55}
+#bxR{left:0}#bxM{left:510px}
+.bx em{display:block;font-style:normal;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:21px;color:#FFBE55}
+.bx b{display:block;font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;font-size:66px;line-height:1.05;color:#EEF3F5}
+.bx .pre{display:block;font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:23px;color:#9AA3A7}
+.bx .post{display:inline-block;margin-top:8px;font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;font-size:44px;padding:0 12px 2px;color:#071017}
+.bx .post.coral{background:#FF7A59}.bx .post.cold{background:#9FD3FF}
+.arr{position:absolute;left:400px;top:70px;width:100px;text-align:center;font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;font-size:80px;color:#FFBE55}
+.qq{display:inline-block;margin-top:18px;padding:10px 20px 12px;font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;font-size:62px;line-height:1.02;color:#071017;background:#FFBE55;max-width:860px}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="78.92" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI &middot; PETA DISEDERHANAKAN</div>
+
+<div id="scanl"></div>
+<div id="mute"></div>
+<div id="frm"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i></div>
+<div id="hudr"><div id="hudloc">FEED B</div><div id="hudalt">ALT --</div></div>
+<div id="seam"><i></i></div>
+<div id="fa" class="feed">FEED A &middot; MANHATTAN &middot; 40,78&deg;LU 73,97&deg;BB</div>
+<div id="fb" class="feed">FEED B &middot; PULAU RUN &middot; 4,55&deg;LS 129,68&deg;BT</div>
+<svg id="lks" width="1080" height="1920" viewBox="0 0 1080 1920"><line id="lk" x1="0" y1="0" x2="0" y2="0"/></svg>
+<div id="badge">DITUKAR?</div>
+<div id="pband"></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tk">FAKTA SEJARAH NEGARA / EP 11 / BRIEFING SATELIT</div>
+  <div class="h1">PULAU <em>RUN</em><br><i>&#8644;</i> MANHATTAN</div>
+  <div class="row cold" data-at="s1:New" data-fx="left"><b>MANHATTAN</b><span>pulau tempat kota New York berdiri</span></div>
+</div>
+<div class="p" data-in="s2" data-out="s2:Panjangnya">
+  <div class="tk">LAUT BANDA / MALUKU / INDONESIA</div>
+  <div class="h2" data-at="s2:Run" data-fx="up">PULAU RUN</div>
+  <div class="sub" data-at="s2:Banda" data-fx="left">KEPULAUAN BANDA &middot; PULAU PALING BARAT</div>
+</div>
+<div class="p" data-in="s2:Panjangnya" data-out="s3">
+  <div class="meas" data-at="s2:tiga" data-fx="fade"><b>&plusmn;<b class="ct" data-from="0" data-to="3" data-a="s2:tiga" data-d=".7">0</b> KM</b><span>panjang<br><i>lebar &plusmn; 1 km</i></span></div>
+  <div class="row" data-at="s2:abad" data-fx="left"><b>ABAD KE-17</b><span>penghasil pala &amp; fuli</span></div>
+  <div class="row nut" data-at="s2:mahal" data-fx="left"><b>PALA</b><span>harganya luar biasa mahal di Eropa</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s3:Kapten">
+  <div class="date" data-at="s3:1616" data-fx="up">1616</div>
+  <div class="row cold" data-at="s3:bersekutu" data-fx="left"><b>RUN + INGGRIS</b><span>warga Run memilih bersekutu</span></div>
+  <div class="row coral" data-at="s3:takut" data-fx="left"><b>ALASANNYA</b><span>takut pada Belanda</span></div>
+</div>
+<div class="p" data-in="s3:Kapten" data-out="s4">
+  <div class="card cold" data-at="s3:Kapten" data-fx="left"><div class="sil"><svg viewBox="0 0 100 100"><rect width="100" height="100" fill="#071017"/><g fill="#22313a"><ellipse cx="50" cy="47" rx="13" ry="16"/><rect x="44" y="59" width="12" height="12"/><path d="M8 100 C10 80 29 71 50 71 C71 71 90 80 92 100 Z"/><path d="M22 37 C30 31 70 31 78 37 C72 41 28 41 22 37 Z"/><path d="M36 35 C36 20 64 20 64 35 Z"/><path d="M40 88 L50 74 L60 88" stroke="#9FD3FF" stroke-width="3" fill="none" opacity=".7"/></g><rect x="1.5" y="1.5" width="97" height="97" fill="none" stroke="#9FD3FF" stroke-width="3"/></svg><small>SILUET ILUSTRASI</small></div><div><em>KAPTEN &middot; EAST INDIA COMPANY</em><b>NATHANIEL COURTHOPE</b><span>tiba di Run, 25 Des 1616</span></div></div>
+  <div class="row cold" data-at="s3:benteng" data-fx="left"><b>BENTENG</b><span>dibangun di Pulau Run</span></div>
+</div>
+<div class="p" data-in="s4" data-out="s4:Courthope">
+  <div class="tk ct2">PENGEPUNGAN</div>
+  <div class="h2 coral" data-at="s4:VOC" data-fx="up">VOC</div>
+  <div class="sub coral" data-at="s4:VOC" data-fx="left">KONGSI DAGANG BELANDA</div>
+  <div class="st coral" data-at="s4:mengepung" data-fx="stamp">RUN DIKEPUNG</div>
+</div>
+<div class="p" data-in="s4:Courthope" data-out="s5">
+  <div class="tk">BERTAHAN</div>
+  <div class="days"><b class="ct" data-from="0" data-to="1540" data-a="s4:bertahan" data-d="2.4">0</b><i>HARI</i></div>
+  <div class="row cold" data-at="s4:pasukannya" data-fx="left"><b>COURTHOPE</b><span>+ 39 pembela Eropa &amp; sekutu lokal</span></div>
+  <div class="st coral" data-at="s4:1620" data-fx="stamp">1620 &middot; COURTHOPE TEWAS</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="tk mt">SETELAH BELANDA MENGUASAI RUN</div>
+  <div class="h3" data-at="s5:kelamnya" data-fx="up">SISI KELAM</div>
+  <div class="mcard" data-at="s5:Laki-laki" data-fx="fade">
+    <div class="mr" data-at="s5:Laki-laki" data-fx="fade"><b>laki-laki dewasa</b><span>dibunuh atau diperbudak</span></div>
+    <div class="mr" data-at="s5:perempuan" data-fx="fade"><b>perempuan &amp; anak</b><span>diusir</span></div>
+    <div class="mr" data-at="s5:pohon" data-fx="fade"><b>semua pohon pala</b><span>ditebang</span></div>
+  </div>
+  <div class="lb" data-at="s5:supaya" data-fx="fade">supaya Inggris tak bisa kembali</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="tk">SEMENTARA ITU / AMERIKA UTARA</div>
+  <div class="date" data-at="s6:1664" data-fx="up">1664</div>
+  <div class="card cold" data-at="s6:Inggris" data-fx="left"><div class="sil"><svg viewBox="0 0 100 100"><rect width="100" height="100" fill="#071017"/><g fill="#22313a"><ellipse cx="50" cy="47" rx="13" ry="16"/><rect x="44" y="59" width="12" height="12"/><path d="M8 100 C10 80 29 71 50 71 C71 71 90 80 92 100 Z"/><path d="M30 52 C24 70 28 84 36 86 L38 50 Z M70 52 C76 70 72 84 64 86 L62 50 Z"/><path d="M34 34 C36 22 64 22 66 34 C58 31 42 31 34 34 Z"/><path d="M61 25 C70 17 80 18 84 22 C76 22 70 25 64 30 Z" fill="#9FD3FF" opacity=".7"/></g><rect x="1.5" y="1.5" width="97" height="97" fill="none" stroke="#9FD3FF" stroke-width="3"/></svg><small>SILUET ILUSTRASI</small></div><div><em>PIHAK INGGRIS</em><b>DUKE OF YORK</b><span>merebut New Amsterdam dari Belanda</span></div></div>
+  <div class="ren" data-at="s6:menamainya" data-fx="left"><s>NEW AMSTERDAM</s><i>&rarr;</i><b>NEW YORK</b></div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Inggris">
+  <div class="tk">AKHIR PERANG INGGRIS&ndash;BELANDA II</div>
+  <div class="date" data-at="s7:1667" data-fx="up">1667</div>
+  <div class="h3 w" data-at="s7:Breda" data-fx="up">PERJANJIAN BREDA</div>
+  <div class="row" data-at="s7:mengesahkan" data-fx="left"><b>STATUS QUO</b><span>yang dikuasai, tetap dikuasai</span></div>
+</div>
+<div class="p" data-in="s7:Inggris" data-out="s8">
+  <div class="tk">PERJANJIAN BREDA 1667 / HASIL</div>
+  <div class="swap">
+    <div class="bx" id="bxR"><em>PULAU</em><b>RUN</b><span class="pre">diklaim Inggris</span><span class="post coral" data-at="s7:dilepas" data-fx="pop">&rarr; BELANDA</span></div>
+    <div class="arr" id="sarr">&#8644;</div>
+    <div class="bx" id="bxM"><em>PULAU</em><b>MANHATTAN</b><span class="pre">dulu Belanda</span><span class="post cold" data-at="s7:memegang" data-fx="pop">&rarr; INGGRIS</span></div>
+  </div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="tk">HARI INI</div>
+  <div class="row cold" data-at="s8:Manhattan" data-fx="left"><b>MANHATTAN</b><span>salah satu pusat dunia</span></div>
+  <div class="row nut" data-at="s8:pohon" data-fx="left"><b>RUN</b><span>pohon pala masih tumbuh</span></div>
+  <div class="qq" data-at="s8:Menurut" data-fx="pop">SIAPA YANG SEBENARNYA MENANG?</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 11</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":5.225,"s2":5.385,"s2e":16.247,"s3":16.407,"s3e":24.448,"s4":24.608,"s4e":33.407,"s5":33.567,"s5e":44.666,"s6":44.826,"s6e":54.226,"s7":54.386,"s7e":62.629,"s8":62.789,"s8e":75.918,"end":75.918,"dur":78.92,"outro":76.168},AT={"s1:ditukar":1.587,"s1:Maluku":1.014,"s1:Manhattan":2.191,"s2:Panjangnya":7.729,"s2:kilometer":9.569,"s2:penghasil":12.355,"s2:tiga":9.29,"s2:abad":10.621,"s2:Banda":7.023,"s2:pala":12.804,"s3:warga":17.729,"s3:takut":20.129,"s3:Belanda":20.701,"s3:Courthope":22.435,"s3:membangun":23.519,"s3:benteng":23.906,"s3:tiba":22.884,"s3:Kapten":21.63,"s3:Inggris":19.494,"s4:VOC":26.089,"s4:mengepung":26.909,"s4:1620":32.618,"s4:bertahan":29.785,"s4:hari":31.209,"s4:Courthope":28.655,"s4:1.540":30.126,"s4:tewas":32.169,"s5:Laki-laki":37.004,"s5:ditebang":42.638,"s5:semua":41.803,"s5:dibunuh":38.474,"s5:diusir":40.394,"s5:Belanda":33.947,"s6:Amsterdam":50.06,"s6:Manhattan":52.011,"s6:menamainya":53.25,"s6:merebut":49.101,"s6:Inggris":48.714,"s6:Amerika":46.531,"s7:Breda":56.003,"s7:Run":60.926,"s7:Inggris":57.768,"s7:Belanda":62.18,"s8:pohon":67.618,"s8:jadi":64.042,"s8:dunia":65.637,"s8:Manhattan":63.268,"s8:pusat":65.327,"s8:Menurut":69.556,"s8:menang":71.568,"s1:New":4.265,"s2:Run":6.141,"s2:mahal":15.38,"s3:1616":16.708,"s3:bersekutu":18.689,"s4:pasukannya":29.367,"s5:kelamnya":36.284,"s5:perempuan":39.604,"s5:pohon":42.159,"s5:supaya":43.149,"s6:1664":47.63,"s7:1667":54.595,"s7:mengesahkan":56.297,"s7:dilepas":61.514,"s7:memegang":58.372},DUR=78.92,OUT=76.168;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ 
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.set(p,{opacity:1},a-.14),POUT=(tl,p,b)=>tl.set(p,{opacity:1},b);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{clipPath:'inset(100% 0% 0% 0%)'});tl.to('#outro',{clipPath:'inset(0% 0% 0% 0%)',duration:.5,ease:'power2.inOut'},OUT-.1);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(()=>{let L=null;const ez=(u)=>u<=0?0:u>=1?1:1-Math.pow(1-u,3);const pb=document.getElementById('pband');
+const bR=document.getElementById('bxR'),bM=document.getElementById('bxM'),ar=document.getElementById('sarr');
+const MR=[...document.querySelectorAll('.mr')];
+return (t)=>{
+ for(const m of MR)m.style.display=t>=AT[m.dataset.at]-.05?'flex':'none';
+ if(!L)L=[...document.querySelectorAll('#root .p')].map(p=>({p,first:p.dataset.first==='1',a:p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]),b:p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out])}));
+ let band=-1,bo=0;
+ for(const q of L){const H=q.p.offsetHeight+30,top=q.p.offsetTop-15;
+  const ui=q.first?1:(t-(q.a-.14))/.45,uo=(t-(q.b-.3))/.3;
+  if(uo>0&&uo<1){const u=ez(uo);q.p.style.clipPath='inset('+(u*100).toFixed(2)+'% -40px -40px -40px)';band=top+H*u;bo=Math.sin(Math.PI*uo);}
+  else if(ui>0&&ui<1){const u=ez(ui);q.p.style.clipPath='inset('+((1-u)*100).toFixed(2)+'% -40px -40px -40px)';band=top+H*(1-u);bo=Math.sin(Math.PI*Math.min(1,ui*1.1));}
+  else q.p.style.clipPath='none';}
+ if(band>=0){pb.style.top=(band-35).toFixed(1)+'px';pb.style.opacity=bo.toFixed(3);}else pb.style.opacity=0;
+ // Breda swap: the two boxes trade places on "Inggris"
+ const s0=AT['s7:Inggris']+.15,u=Math.min(1,Math.max(0,(t-s0)/.9)),e=u*u*(3-2*u);
+ if(bR){bR.style.transform='translate('+(510*e).toFixed(1)+'px,'+(-26*Math.sin(Math.PI*e)).toFixed(1)+'px)';bM.style.transform='translate('+(-510*e).toFixed(1)+'px,'+(26*Math.sin(Math.PI*e)).toFixed(1)+'px)';ar.style.transform='rotate('+(180*e).toFixed(1)+'deg)';}
+};})();
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP11_PULAU_RUN_DITUKAR_MANHATTAN")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

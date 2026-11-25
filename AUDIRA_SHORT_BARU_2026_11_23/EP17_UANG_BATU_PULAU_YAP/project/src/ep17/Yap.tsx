@@ -1,0 +1,866 @@
+// EP17 — Uang Batu Raksasa Pulau Yap (Rai). AUDIRA Fakta Dunia. Style: PAPERWORLD, Remotion 2D (SVG, tanpa R3F).
+// Semua nilai fungsi murni dari t (frame / fps): seek-safe, tanpa Math.random. Komposisi tanpa audio (render-final mux VO + SFX).
+// Waktu adegan = docs/SHOTLIST.md (detik VO terkunci 81,59 dtk). AUDIRA (Agus Dwi R.)
+import React from "react";
+import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
+import { AudiraSignature } from "../brand/AudiraSignature";
+import { AudiraOutro } from "../brand/AudiraOutro";
+import WORDS from "./words.json";
+import {
+  BODY, C, Canoe, Card, Cloud, Defs, Fish, Grain, H, HEAD, Hut, Island, Palm, Person, Rai, Raft, Seaweed, Sky, Stamp, Sun, Tag, W, Wave,
+  clamp01, easeInOut, easeOut, expoOut, lerp, mulberry, pop, prog, useFonts, wave,
+} from "./kit";
+
+export const YAP_SECONDS = 85;
+const OUTRO_AT = 82;
+const XF = 0.35;
+
+type SP = { t: number; lt: number };
+type Cm = { s: number; x: number; y: number };
+
+/** Parallax layer: f = depth factor (BG 0.3, MG 0.6, FG 1.0+). */
+const L: React.FC<{ c: Cm; f: number; children: React.ReactNode }> = ({ c, f, children }) => {
+  const s = 1 + (c.s - 1) * f;
+  const g = <g transform={`translate(540 960) scale(${s.toFixed(4)}) translate(${(-540 + c.x * f).toFixed(2)} ${(-960 + c.y * f).toFixed(2)})`}>{children}</g>;
+  // depth: far layers sit behind atmospheric haze, near (f > 1.05) layers are defocused
+  if (f > 1.05) return <g filter="url(#dof)">{g}</g>;
+  if (f < 0.5) return <>{g}<rect x={0} y={0} width={W} height={H} fill="#fff6e4" opacity={(0.5 - f) * 0.7} /></>;
+  return g;
+};
+
+const shake = (t: number, at: number, d: number, amp: number) => {
+  if (t < at || t > at + d) return 0;
+  const k = 1 - (t - at) / d;
+  return Math.sin((t - at) * 70) * amp * k;
+};
+
+const qpt = (a: [number, number], c: [number, number], b: [number, number], p: number): [number, number] => {
+  const u = 1 - p;
+  return [u * u * a[0] + 2 * u * p * c[0] + p * p * b[0], u * u * a[1] + 2 * u * p * c[1] + p * p * b[1]];
+};
+
+const Sand: React.FC<{ y: number; fill?: string; amp?: number }> = ({ y, fill = C.sand, amp = 26 }) => (
+  <g filter="url(#ps)">
+    <path d={`M-300 ${y} Q270 ${y - amp} 540 ${y} T1380 ${y} L1380 2600 L-300 2600 Z`} fill={fill} />
+  </g>
+);
+
+const Ground: React.FC<{ y: number }> = ({ y }) => (
+  <g filter="url(#ps)">
+    <path d={`M-300 ${y} Q300 ${y - 30} 700 ${y - 8} T1380 ${y} L1380 2600 L-300 2600 Z`} fill="#9cc46a" />
+    <path d={`M-300 ${y + 60} Q400 ${y + 30} 800 ${y + 52} T1380 ${y + 50} L1380 2600 L-300 2600 Z`} fill="#86b45a" />
+  </g>
+);
+
+const Grass: React.FC<{ x: number; y: number; s?: number; t: number }> = ({ x, y, s = 1, t }) => {
+  const sw = Math.sin(t * 2 + x) * 6;
+  return (
+    <g transform={`translate(${x} ${y}) scale(${s})`} filter="url(#psS)">
+      {[-50, -25, 0, 25, 50].map((dx, i) => (
+        <path key={i} d={`M${dx - 10} 0 Q${dx + sw} -90 ${dx + sw * 1.6 + (i - 2) * 12} ${-150 - (i % 2) * 40} Q${dx + 6} -80 ${dx + 10} 0 Z`} fill={i % 2 ? C.leaf : C.leafDark} />
+      ))}
+    </g>
+  );
+};
+
+const Bubbles: React.FC<{ t: number; x: number; y: number; n?: number; seed?: number }> = ({ t, x, y, n = 6, seed = 1 }) => (
+  <g>
+    {Array.from({ length: n }, (_, i) => {
+      const ph = ((t * 0.5 + i / n + seed * 0.13) % 1 + 1) % 1;
+      return <circle key={i} cx={x + Math.sin(t * 2 + i * 1.7) * 18 + (i - n / 2) * 10} cy={y - ph * 520} r={6 + (i % 3) * 4} fill="none" stroke="#e8f7fb" strokeWidth={3} opacity={0.75 * (1 - ph)} />;
+    })}
+  </g>
+);
+
+const Rays: React.FC<{ t: number; o?: number }> = ({ t, o = 0.14 }) => (
+  <g opacity={o}>
+    {[120, 360, 620, 860].map((x, i) => (
+      <path key={i} d={`M${x - 40 + Math.sin(t * 0.6 + i) * 30} -200 L${x + 40 + Math.sin(t * 0.6 + i) * 30} -200 L${x + 220} 2200 L${x - 120} 2200 Z`} fill="#ffffff" />
+    ))}
+  </g>
+);
+
+const MapGrid: React.FC = () => (
+  <g opacity={0.22} stroke="#ffffff" strokeWidth={2}>
+    {Array.from({ length: 16 }, (_, i) => <line key={`v${i}`} x1={-300 + i * 120} y1={-400} x2={-300 + i * 120} y2={2400} />)}
+    {Array.from({ length: 24 }, (_, i) => <line key={`h${i}`} x1={-400} y1={-400 + i * 120} x2={1500} y2={-400 + i * 120} />)}
+  </g>
+);
+
+const Pin: React.FC<{ x: number; y: number; t: number; at: number }> = ({ x, y, t, at }) => {
+  if (t < at) return null;
+  const p = expoOut((t - at) / 0.4);
+  const yy = lerp(y - 380, y, p);
+  const rp = ((t - at - 0.35) % 1.2 + 1.2) % 1.2;
+  return (
+    <g>
+      {t > at + 0.35 ? <ellipse cx={x} cy={y + 6} rx={30 + rp * 90} ry={(30 + rp * 90) * 0.4} fill="none" stroke={C.red} strokeWidth={5} opacity={1 - rp / 1.2} /> : null}
+      <g transform={`translate(${x} ${yy})`} filter="url(#ps)">
+        <path d="M0 0 C-12 -30 -44 -52 -44 -88 A44 44 0 1 1 44 -88 C44 -52 12 -30 0 0 Z" fill={C.red} />
+        <circle cx={0} cy={-88} r={17} fill={C.paper} />
+      </g>
+    </g>
+  );
+};
+
+/** Measuring arrow drawn with pathLength. */
+const Measure: React.FC<{ x1: number; y1: number; x2: number; y2: number; p: number; color?: string }> = ({ x1, y1, x2, y2, p, color = C.ink }) => {
+  if (p <= 0) return null;
+  const ang = Math.atan2(y2 - y1, x2 - x1);
+  const nx = -Math.sin(ang) * 22;
+  const ny = Math.cos(ang) * 22;
+  return (
+    <g stroke={color} strokeWidth={7} strokeLinecap="round" fill="none">
+      <path d={`M${x1} ${y1} L${x2} ${y2}`} pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - p} />
+      <path d={`M${x1 - nx} ${y1 - ny} L${x1 + nx} ${y1 + ny}`} />
+      {p > 0.98 ? <path d={`M${x2 - nx} ${y2 - ny} L${x2 + nx} ${y2 + ny}`} /> : null}
+    </g>
+  );
+};
+
+// ================= S1 · hook: batu 4 ton di pantai (0–5.5) =================
+const S1: React.FC<SP> = ({ t, lt }) => {
+  const c: Cm = { s: 1 + 0.12 * easeInOut(lt / 5.5), x: 0, y: -30 * easeInOut(lt / 5.5) + shake(t, 0.42, 0.45, 14) };
+  const fall = clamp01(t / 0.42);
+  const ry = lerp(-520, 1010, fall * fall);
+  const squash = t > 0.42 ? 1 - 0.06 * Math.sin(clamp01((t - 0.42) / 0.3) * Math.PI) : 1;
+  const dust = clamp01((t - 0.42) / 0.9);
+  return (
+    <>
+      <L c={c} f={0.25}>
+        <Sky id="s1sky" top="#f7cf95" bottom="#f6e7c9" />
+        <Sun x={830} y={360} r={95} />
+        <Cloud x={170 + lt * 18} y={300} s={0.9} />
+        <Cloud x={720 + lt * 12} y={560} s={0.6} />
+      </L>
+      <L c={c} f={0.4}>
+        <Wave y={860} amp={10} len={300} ph={t * 1.2} fill={C.sea3} />
+        <Wave y={905} amp={12} len={260} ph={-t * 1.5 + 1} fill={C.sea2} />
+        <Wave y={950} amp={10} len={220} ph={t * 1.8 + 2} fill={C.sea1} />
+      </L>
+      <L c={c} f={0.6}>
+        <Sand y={1060} />
+        <Palm x={120} y={1220} s={1.15} sway={Math.sin(t * 1.4) * 6} />
+        <Palm x={990} y={1180} s={1.0} sway={Math.sin(t * 1.2 + 1) * 6} flip />
+        <g transform={`translate(540 1310) scale(${1 / squash} ${squash}) translate(-540 -1310)`}>
+          <Rai x={540} y={ry} r={300} thick={44} />
+        </g>
+        {dust > 0 && dust < 1
+          ? [-1, 1].map((d) =>
+              [0, 1, 2].map((k) => (
+                <circle key={`${d}${k}`} cx={540 + d * (260 + dust * (120 + k * 60))} cy={1290 - k * 30 - dust * 40} r={30 + dust * 40} fill="#f3e2bd" opacity={0.85 * (1 - dust)} />
+              )),
+            )
+          : null}
+        <Person x={250} y={1340} h={270} face={1} arm={-30 + Math.sin(t * 3) * 6} arm2={-160} bob={Math.sin(t * 4) * 2} />
+        <Person x={835} y={1350} h={260} face={-1} shirt={C.yellow} arm={-150} arm2={20} bob={Math.sin(t * 4 + 1) * 2} />
+      </L>
+      <L c={c} f={1.15}>
+        <Grass x={40} y={1560} s={1.3} t={t} />
+        <Grass x={1040} y={1580} s={1.2} t={t + 1} />
+      </L>
+      <Card x={540} y={430} t={t} at={3.0} title="4 TON" sub="TIDAK PERNAH DIPINDAH" w={760} size={130} rot={-3} />
+    </>
+  );
+};
+
+// ================= S2 · batu di dasar laut, MASIH SAH (5.5–9.7) =================
+const S2: React.FC<SP> = ({ t, lt }) => {
+  const dive = easeInOut(lt / 1.6);
+  const c: Cm = { s: 1 + 0.05 * easeInOut(lt / 4.2), x: 0, y: lerp(760, 0, dive) };
+  const glow = 0.6 + 0.4 * Math.sin(t * 3);
+  return (
+    <>
+      <L c={c} f={1}>
+        <rect x={-300} y={-1200} width={1700} height={1450} fill="#f6e3bf" />
+        <Sky id="s2sea" top={C.sea2} bottom={C.sea5} />
+        <rect x={-300} y={250} width={1700} height={2200} fill="url(#s2sea)" />
+        <Wave y={250} amp={12} len={240} ph={t * 1.6} fill={C.sea1} />
+        <Rays t={t} />
+        <Fish x={((lt * 130 + 100) % 1400) - 200} y={620} s={1.1} color={C.yellow} flip />
+        <Fish x={1180 - ((lt * 90 + 200) % 1500)} y={820} s={0.9} />
+        <Fish x={((lt * 70 + 700) % 1400) - 200} y={500} s={0.7} color="#f29a6b" flip />
+        <Sand y={1230} fill="#d9bd85" amp={40} />
+        <Seaweed x={130} y={1250} h={300} t={t} />
+        <Seaweed x={210} y={1250} h={210} t={t + 1} color={C.leaf} />
+        <Seaweed x={900} y={1240} h={260} t={t + 2} />
+        <Rai x={540} y={1050} r={250} rot={9} thick={36} glow={glow} />
+        <Bubbles t={t} x={540} y={850} />
+      </L>
+      <L c={c} f={1.2}>
+        <path d="M-300 1300 Q200 1230 600 1290 T1400 1270 L1400 2600 L-300 2600 Z" fill="#c9a96d" filter="url(#ps)" />
+        <Seaweed x={1000} y={1380} h={320} t={t + 3} color={C.leaf} />
+      </L>
+      <Tag x={540} y={400} text="DI DASAR LAUT" size={54} o={clamp01((t - 6.5) / 0.3)} />
+      <Stamp x={540} y={620} t={t} at={7.7} text="MASIH SAH" size={120} />
+    </>
+  );
+};
+
+// ================= S3 · peta Pasifik, pin Pulau Yap (9.7–12.3) =================
+const S3: React.FC<SP> = ({ t, lt }) => {
+  const z = easeInOut(lt / 2.6);
+  const c: Cm = { s: lerp(1, 1.22, z), x: lerp(0, -30, z), y: lerp(0, 20, z) };
+  return (
+    <>
+      <L c={c} f={1}>
+        <rect x={-400} y={-400} width={1900} height={2800} fill={C.sea2} />
+        <MapGrid />
+        <path d="M-400 300 Q-120 380 -60 700 Q-20 1000 -160 1300 L-400 1300 Z" fill={C.leaf} filter="url(#ps)" />
+        <Tag x={250} y={560} text="FILIPINA" size={38} />
+        <Island x={860} y={700} w={110} h={70} />
+        <Tag x={860} y={800} text="GUAM" size={36} />
+        <Island x={300} y={1150} w={100} h={70} />
+        <Tag x={300} y={1250} text="PALAU" size={36} />
+        <Island x={580} y={960} w={190} h={110} />
+        {[[720, 760], [940, 880], [420, 820], [760, 1180]].map(([x, y], i) => <circle key={i} cx={x} cy={y} r={10} fill={C.sand} filter="url(#psS)" />)}
+        <text x={540} y={1180} textAnchor="middle" fontFamily={HEAD} fontSize={56} fill={C.paper} opacity={0.6} letterSpacing={10}>MIKRONESIA</text>
+        <Pin x={580} y={930} t={t} at={10.15} />
+      </L>
+      <Card x={540} y={420} t={t} at={10.1} title="PULAU YAP" sub="MIKRONESIA · PASIFIK" w={700} size={110} rot={2} />
+    </>
+  );
+};
+
+// ================= S4 · rai frontal, 3,6 m & 50 cm (12.3–20.4) =================
+const S4: React.FC<SP> = ({ t, lt }) => {
+  const c: Cm = { s: 1 + 0.07 * easeInOut(lt / 8.1), x: Math.sin(lt * 0.4) * 14, y: 20 * easeInOut(lt / 8.1) };
+  const side = easeInOut((t - 18.3) / 0.6);
+  const sx = lerp(1, 0.16, side);
+  return (
+    <>
+      <L c={c} f={0.3}>
+        <Sky id="s4sky" top="#f8d9a6" bottom="#f4ead5" />
+        <Cloud x={200 + lt * 10} y={330} s={0.8} />
+        <Hut x={150} y={1060} s={0.6} />
+        <Hut x={930} y={1050} s={0.55} tint="#b87d40" />
+      </L>
+      <L c={c} f={0.6}>
+        <Ground y={1250} />
+        <g transform={`translate(540 930) scale(${sx} 1) translate(-540 -930)`}>
+          <Rai x={540} y={930} r={340} thick={side > 0.5 ? 0 : 40} />
+        </g>
+        {side > 0.45 ? (
+          <g filter="url(#psL)" opacity={clamp01((side - 0.45) / 0.3)}>
+            <rect x={540 - 48} y={590} width={96} height={680} rx={30} fill={C.stoneMid} />
+            <rect x={540 - 48} y={590} width={36} height={680} rx={18} fill="#f3eee2" />
+            <rect x={540 - 22} y={872} width={44} height={116} fill="#5d4c36" opacity={0.85} />
+          </g>
+        ) : null}
+        <Person x={960} y={1272} h={300} face={-1} shirt={C.yellow} arm={-15} arm2={-40} bob={Math.sin(t * 3) * 2} />
+        <Measure x1={200} y1={540} x2={880} y2={540} p={prog(t, 16.4, 1.0, easeInOut) * (1 - side)} />
+        {t > 16.4 && side < 0.5 ? (
+          <g stroke={C.ink} strokeWidth={3} strokeDasharray="10 10" opacity={0.6 * (1 - side * 2)}>
+            <line x1={200} y1={540} x2={200} y2={930} />
+            <line x1={880} y1={540} x2={880} y2={930} />
+          </g>
+        ) : null}
+        <Measure x1={470} y1={540} x2={610} y2={540} p={prog(t, 18.8, 0.4, easeOut)} color={C.red} />
+      </L>
+      <L c={c} f={1.1}>
+        <Grass x={60} y={1600} s={1.2} t={t} />
+      </L>
+      <Tag x={290} y={470} text="RAI" size={70} fill={C.yellow} rot={-4} o={clamp01((t - 12.9) / 0.25) * (1 - clamp01((t - 16.2) / 0.3))} />
+      <Tag x={760} y={470} text="LUBANG DI TENGAH" size={40} rot={3} o={clamp01((t - 14.0) / 0.25) * (1 - clamp01((t - 16.2) / 0.3))} />
+      <Card x={540} y={360} t={t} at={17.3} title="3,6 m" sub="GARIS TENGAH" w={520} size={120} out={18.3} />
+      <Card x={540} y={360} t={t} at={18.7} title="50 cm" sub="TEBAL BATU" w={520} size={120} rot={2} accent={C.coral} />
+    </>
+  );
+};
+
+// ================= S5 · rute Yap → Palau ±400 km (20.4–25.6) =================
+const S5: React.FC<SP> = ({ t, lt }) => {
+  const c: Cm = { s: 1.05 + 0.05 * easeInOut(lt / 5.2), x: lerp(70, -70, easeInOut(lt / 5.2)), y: 0 };
+  const A: [number, number] = [820, 640];
+  const K: [number, number] = [300, 640];
+  const B: [number, number] = [270, 1150];
+  const p = prog(t, 22.8, 2.2, easeInOut);
+  const N = 34;
+  const [cx, cy] = qpt(A, K, B, p);
+  return (
+    <>
+      <L c={c} f={1}>
+        <rect x={-400} y={-400} width={1900} height={2800} fill={C.sea2} />
+        <MapGrid />
+        <Wave y={1500} amp={14} len={300} ph={t} fill={C.sea3} crest={false} />
+        <Island x={820} y={640} w={170} h={100} />
+        <Tag x={900} y={760} text="YAP" size={46} fill={C.yellow} />
+        <Island x={270} y={1150} w={150} h={95} />
+        <Tag x={270} y={1265} text="PALAU" size={46} fill={C.yellow} />
+        {Array.from({ length: N }, (_, i) => {
+          if (i / N > p) return null;
+          const [x, y] = qpt(A, K, B, i / N);
+          return <circle key={i} cx={x} cy={y} r={8} fill={C.paper} />;
+        })}
+        {p > 0 ? <Canoe x={cx} y={cy - 10} s={0.32} rock={Math.sin(t * 3) * 5} /> : null}
+      </L>
+      <Tag x={540} y={420} text="BATUNYA TIDAK ADA DI YAP" size={46} rot={-2} o={clamp01((t - 20.6) / 0.3) * (1 - clamp01((t - 23.6) / 0.3))} />
+      <Card x={700} y={980} t={t} at={24.1} title="±400 km" sub="KE PALAU" w={500} size={110} rot={-3} />
+    </>
+  );
+};
+
+// ================= S6 · gua tambang, pemahat (25.6–28.0) =================
+const S6: React.FC<SP> = ({ t, lt }) => {
+  const c: Cm = { s: 1 + 0.1 * easeInOut(lt / 2.6), x: -20 * lt, y: 0 };
+  const hit = (lt * 2.6) % 1;
+  const arm = -70 + Math.sin(hit * Math.PI) * 60;
+  return (
+    <>
+      <L c={c} f={0.3}>
+        <rect x={-400} y={-400} width={1900} height={2800} fill="#4a3424" />
+        <ellipse cx={860} cy={420} rx={260} ry={200} fill="#f6d9a8" />
+        <ellipse cx={860} cy={420} rx={260} ry={200} fill="none" stroke="#2f2016" strokeWidth={40} />
+        <Palm x={900} y={640} s={0.55} sway={Math.sin(t) * 4} />
+      </L>
+      <L c={c} f={0.6}>
+        <path d="M-300 1200 Q300 1150 700 1190 T1400 1180 L1400 2600 L-300 2600 Z" fill="#6b4a32" filter="url(#ps)" />
+        <path d="M380 1200 L420 700 Q600 620 820 720 L860 1200 Z" fill="#cfc6b2" filter="url(#ps)" />
+        <Rai x={630} y={960} r={210} thick={30} />
+        <path d="M420 760 Q470 700 540 720" stroke="#a69b84" strokeWidth={14} fill="none" />
+        <Person x={250} y={1230} h={360} face={1} shirt="#8f6b45" arm={arm} arm2={-100} bob={Math.sin(hit * Math.PI) * 4} />
+        <g transform={`translate(${250 + 70} ${1230 - 330}) rotate(${arm - 90})`}>
+          <rect x={60} y={-8} width={90} height={16} rx={6} fill={C.woodDark} />
+        </g>
+        {[0, 1, 2, 3, 4].map((k) => {
+          const ph = (hit + k * 0.13) % 1;
+          return <path key={k} d="M0 0 l14 -6 l6 12 l-12 6 Z" transform={`translate(${430 + ph * (60 + k * 30)} ${950 - ph * (90 - k * 25) + ph * ph * 120}) rotate(${ph * 300})`} fill="#f3eee2" opacity={1 - ph} />;
+        })}
+      </L>
+      <L c={c} f={1.2}>
+        {[60, 220, 470, 760, 1010].map((x, i) => <path key={i} d={`M${x - 50} -100 L${x + 50} -100 L${x} ${200 + (i % 2) * 120} Z`} fill="#3a281b" filter="url(#ps)" />)}
+      </L>
+      <Card x={540} y={420} t={t} at={26.2} title="BATU KAPUR KRISTAL" sub="KALSIT · GUA DI PALAU" w={860} size={74} rot={-2} />
+    </>
+  );
+};
+
+// ================= S7 · kano + rakit bambu (28.0–31.0) =================
+const S7: React.FC<SP> = ({ t, lt }) => {
+  const c: Cm = { s: 1.04, x: -lt * 30, y: Math.sin(lt) * 8 };
+  const bob = Math.sin(t * 2.4) * 10;
+  return (
+    <>
+      <L c={c} f={0.25}>
+        <Sky id="s7sky" top="#f8d39d" bottom="#f6ecd6" />
+        <Sun x={260} y={420} r={80} />
+        <Cloud x={700 - lt * 50} y={320} s={0.9} />
+        <Cloud x={1200 - lt * 50} y={520} s={0.6} />
+      </L>
+      <L c={c} f={0.5}>
+        <Wave y={1000} amp={16} len={320} ph={t * 2.2} fill={C.sea3} />
+      </L>
+      <L c={c} f={0.7}>
+        <line x1={480} y1={1040 + bob} x2={640} y2={1060 - bob} stroke={C.woodDark} strokeWidth={5} />
+        <Canoe x={330} y={1050 + bob} s={1} rock={Math.sin(t * 2.4) * 4} />
+        <Raft x={800} y={1080 - bob} s={0.95} rock={Math.sin(t * 2.4 + 1) * 4} />
+        <Person x={300} y={1040 + bob} h={150} face={1} arm={-60} arm2={30} />
+      </L>
+      <L c={c} f={1}>
+        <Wave y={1110} amp={20} len={280} ph={-t * 2.6} fill={C.sea2} />
+        <Wave y={1200} amp={18} len={240} ph={t * 3 + 1} fill={C.sea1} />
+      </L>
+      <Tag x={330} y={760} text="KANO" size={52} fill={C.yellow} rot={-3} o={clamp01((t - 29.3) / 0.25)} />
+      <Tag x={790} y={760} text="RAKIT BAMBU" size={52} fill={C.yellow} rot={3} o={clamp01((t - 29.8) / 0.25)} />
+      <Card x={540} y={420} t={t} at={28.3} title="BAWA PULANG" sub="MENYEBERANGI LAUT LEPAS" w={760} size={96} rot={-2} />
+    </>
+  );
+};
+
+// ================= S8 · badai, batu hilang (31.0–35.7) =================
+const S8: React.FC<SP> = ({ t, lt }) => {
+  const c: Cm = { s: 1.04 + 0.06 * easeInOut(lt / 4.7), x: Math.sin(t * 9) * 5 + shake(t, 32.6, 0.6, 16), y: Math.cos(t * 7) * 4 };
+  const rock = Math.sin(t * 2.2) * 9 + 14 * easeOut((t - 31.6) / 0.6);
+  const drop = clamp01((t - 31.9) / 0.85);
+  const flash = t > 33.0 && t < 33.18 ? 0.55 : 0;
+  const splash = clamp01((t - 32.6) / 0.8);
+  return (
+    <>
+      <L c={c} f={0.25}>
+        <Sky id="s8sky" top="#3f3550" bottom="#8c6a5c" />
+        <Cloud x={200 + lt * 30} y={300} s={1.2} fill="#5d4f63" />
+        <Cloud x={760 + lt * 20} y={420} s={1.0} fill="#6e5c6c" />
+      </L>
+      <L c={c} f={0.5}>
+        <Wave y={950} amp={40} len={360} ph={t * 2.6} fill={C.sea4} />
+      </L>
+      <L c={c} f={0.7}>
+        <Raft x={480} y={930} s={1.35} rock={rock} stone={drop <= 0} />
+        {drop > 0 ? <Rai x={lerp(560, 800, drop)} y={lerp(770, 1260, drop * drop)} r={150} rot={drop * 70} thick={24} ground={false} /> : null}
+        {splash > 0 && splash < 1
+          ? [0, 1, 2, 3, 4, 5].map((k) => (
+              <circle key={k} cx={760 + (k - 2.5) * 40 * (0.5 + splash)} cy={1150 - Math.sin((k / 5) * Math.PI) * 160 * splash + splash * splash * 120} r={18 - splash * 10} fill="#e8f7fb" opacity={1 - splash} />
+            ))
+          : null}
+      </L>
+      <L c={c} f={1}>
+        <Wave y={1130} amp={46} len={300} ph={-t * 3} fill={C.sea3} />
+        <Wave y={1230} amp={36} len={260} ph={t * 3.4 + 1} fill={C.sea2} />
+        <g opacity={0.35} stroke="#dfe6f0" strokeWidth={3}>
+          {Array.from({ length: 28 }, (_, i) => {
+            const x = ((i * 97 + t * 520) % 1500) - 200;
+            const y = ((i * 173 + t * 1400) % 1900) - 100;
+            return <line key={i} x1={x} y1={y} x2={x - 30} y2={y + 70} />;
+          })}
+        </g>
+      </L>
+      <rect x={0} y={0} width={W} height={H} fill="#fffbe8" opacity={flash} />
+      <Card x={540} y={420} t={t} at={31.6} title="BANYAK HILANG" sub="DITELAN LAUT" w={760} size={110} rot={-3} accent={C.coral} />
+      <Tag x={540} y={640} text="PELAUT PUN TEWAS" size={48} fill={C.ink} color={C.paper} rot={2} o={clamp01((t - 33.9) / 0.3)} />
+    </>
+  );
+};
+
+// ================= S9 · bayar pakai batu? (35.7–40.1) =================
+const S9: React.FC<SP> = ({ t, lt }) => {
+  const c: Cm = { s: 1 + 0.1 * easeInOut(lt / 4.4), x: -20 * easeInOut(lt / 4.4), y: 30 * easeInOut(lt / 4.4) };
+  const push = Math.sin(t * 5) * 4;
+  return (
+    <>
+      <L c={c} f={0.3}>
+        <Sky id="s9sky" top="#f8d9a6" bottom="#f4ead5" />
+        <Hut x={900} y={1080} s={0.6} />
+        <Cloud x={300 + lt * 14} y={360} s={0.7} />
+      </L>
+      <L c={c} f={0.6}>
+        <Ground y={1250} />
+        <Rai x={400} y={980} r={280} thick={40} />
+        <Person x={760} y={1260} h={290} face={-1} arm={-80 + push} arm2={-70 + push} bob={0} />
+        {[0, 1, 2].map((k) => {
+          const p = pop(t, 36.4 + k * 0.35, 0.4);
+          return p > 0 ? (
+            <text key={k} x={820 + k * 70} y={850 - k * 40 + Math.sin(t * 3 + k) * 10} fontFamily={HEAD} fontSize={90 + k * 10} fill={k === 1 ? C.coral : C.ink} transform={`rotate(${(k - 1) * 10} ${820 + k * 70} ${850 - k * 40})`} opacity={clamp01(p)}>
+              ?
+            </text>
+          ) : null;
+        })}
+        <Tag x={760} y={1060} text="UGH!" size={40} rot={8} o={clamp01((t - 37.2) / 0.2) * (0.6 + 0.4 * Math.sin(t * 6))} />
+      </L>
+      <Card x={540} y={430} t={t} at={36.5} title="BAYAR PAKAI BATU" sub="SEBERAT 4 TON?" w={860} size={96} rot={2} />
+    </>
+  );
+};
+
+// ================= S10 · desa: batu diam, ingatan berpindah + papan AUDIRA (40.1–50.0) =================
+const S10: React.FC<SP> = ({ t, lt }) => {
+  const c: Cm = { s: 1.06, x: lerp(60, -60, easeInOut(lt / 9.9)), y: 0 };
+  const hutsX = [170, 540, 910];
+  const owner = t < 47.4 ? 0 : t < 48.3 ? 1 : 2;
+  const ox0 = t < 45.6 ? hutsX[0] : lerp(hutsX[Math.max(0, owner - 1)], hutsX[owner], easeOut((t - [45.6, 47.4, 48.3][owner]) / 0.45));
+  const ox = Math.min(800, Math.max(280, ox0));
+  const names = ["KELUARGA A", "KELUARGA B", "KELUARGA C"];
+  const memo = clamp01((t - 42.2) / 0.4) * (1 - clamp01((t - 45.4) / 0.4));
+  return (
+    <>
+      <L c={c} f={0.3}>
+        <Sky id="s10sky" top="#f8d6a0" bottom="#f4ead5" />
+        <Cloud x={160 + lt * 10} y={300} s={0.8} />
+        <Cloud x={820 + lt * 8} y={520} s={0.55} />
+      </L>
+      <L c={c} f={0.55}>
+        <Ground y={1080} />
+        {hutsX.map((x, i) => <Hut key={i} x={x} y={1000} s={0.62} tint={["#c58a4a", "#b87d40", "#cf9655"][i]} />)}
+        {/* papan kayu AUDIRA (brand di dalam dunia) */}
+        <g filter="url(#ps)">
+          <rect x={302} y={860} width={14} height={200} fill={C.woodDark} />
+          <rect x={444} y={860} width={14} height={200} fill={C.woodDark} />
+          <rect x={270} y={790} width={220} height={86} rx={8} fill={C.wood} transform="rotate(-3 380 833)" />
+          <text x={380} y={854} textAnchor="middle" fontFamily={HEAD} fontSize={56} fill={C.paper} letterSpacing={4} transform="rotate(-3 380 833)">AUDIRA</text>
+        </g>
+      </L>
+      <L c={c} f={0.75}>
+        <Rai x={520} y={1070} r={210} thick={34} />
+        {[[180, 1300, C.coral, 1], [360, 1320, C.yellow, 1], [700, 1320, "#5aa0c0", -1], [880, 1300, C.leaf, -1]].map(([x, y, s, f], i) => (
+          <Person key={i} x={x as number} y={y as number} h={230} face={f as number} shirt={s as string} arm={-20 + Math.sin(t * 2 + i) * 8} arm2={20} bob={Math.sin(t * 3 + i) * 2} />
+        ))}
+        {memo > 0
+          ? [[150, 1040], [910, 1040]].map(([x, y], i) => (
+              <g key={i} opacity={memo} transform={`translate(${x} ${y - 40 - Math.sin(t * 2 + i) * 8})`}>
+                <circle cx={-30} cy={60} r={9} fill={C.paper} filter="url(#psS)" />
+                <circle cx={-14} cy={30} r={14} fill={C.paper} filter="url(#psS)" />
+                <ellipse cx={20} cy={-30} rx={70} ry={52} fill={C.paper} filter="url(#psS)" />
+                <Rai x={20} y={-34} r={34} thick={6} ground={false} />
+              </g>
+            ))
+          : null}
+        {t > 45.6 ? (
+          <g transform={`translate(${ox} ${700 + Math.sin(t * 3) * 8})`}>
+            <path d={`M${ox0 - ox} 40 L${ox0 - ox} 140`} stroke={C.ink} strokeWidth={4} strokeDasharray="8 8" />
+            <Tag x={0} y={0} text={`PEMILIK: ${names[owner]}`} size={36} fill={C.yellow} rot={-2} />
+          </g>
+        ) : null}
+      </L>
+      <L c={c} f={1.1}>
+        <Grass x={20} y={1640} s={1.2} t={t} />
+        <Palm x={-40} y={1500} s={1.1} sway={Math.sin(t) * 5} />
+      </L>
+      <Card x={540} y={400} t={t} at={40.2} title="BATU DIAM" sub="YANG BERPINDAH: INGATAN" w={740} size={110} rot={-2} out={45.3} />
+      <Card x={540} y={400} t={t} at={45.6} title="SELURUH DESA HAFAL" sub="SIAPA PEMILIKNYA" w={860} size={80} rot={2} accent={C.coral} />
+    </>
+  );
+};
+
+// ================= S11 · batu tenggelam, TETAP SAH (50.0–61.8) =================
+const S11: React.FC<SP> = ({ t, lt }) => {
+  const SEABED = 2650;
+  const cy = -1650 * easeInOut((t - 51.8) / 3.0);
+  const zoom = 1 + 0.12 * easeInOut((t - 55) / 6.8);
+  const c: Cm = { s: zoom, x: Math.sin(lt * 0.5) * 16, y: cy };
+  const drop = clamp01((t - 51.9) / 2.5);
+  const sx = 640 + Math.sin(drop * 9) * 40 * (1 - drop);
+  const sy = drop <= 0 ? 640 : lerp(640, SEABED - 150, drop * drop * (3 - 2 * drop));
+  const landed = t > 54.4;
+  const dust = clamp01((t - 54.4) / 1.0);
+  const glow = landed ? 0.5 + 0.5 * Math.sin(t * 2.5) : 0;
+  return (
+    <>
+      <L c={c} f={1}>
+        <rect x={-400} y={-1400} width={1900} height={2160} fill="#f6dfb7" />
+        <Sun x={220} y={330} r={80} />
+        <Sky id="s11sea" top={C.sea1} bottom="#0f3346" h={2400} />
+        <rect x={-400} y={760} width={1900} height={2600} fill="url(#s11sea)" />
+        <Rays t={t} o={0.1} />
+        <Raft x={600 + lt * 18} y={760 + Math.sin(t * 2.4) * 8} s={1} rock={Math.sin(t * 2.4) * 4 + (drop > 0 ? 10 : 0)} stone={drop <= 0} />
+        <Wave y={790} amp={14} len={260} ph={t * 2} fill={C.sea1} />
+        {[[1300, 1.1, C.yellow], [1700, 0.9, C.coral], [2050, 1.2, "#f29a6b"], [2300, 0.8, C.yellow]].map(([y, s, col], i) => (
+          <Fish key={i} x={((lt * (80 + i * 25) + i * 300) % 1500) - 200} y={y as number} s={s as number} color={col as string} flip={i % 2 === 0} />
+        ))}
+        <Sand y={SEABED} fill="#b99a62" amp={50} />
+        <Seaweed x={140} y={SEABED + 10} h={340} t={t} />
+        <Seaweed x={230} y={SEABED + 10} h={240} t={t + 1} color={C.leaf} />
+        <Seaweed x={930} y={SEABED} h={300} t={t + 2} />
+        {drop > 0 ? <Rai x={sx} y={sy} r={210} rot={drop * 40} thick={32} glow={glow} ground={landed} /> : null}
+        {drop > 0 && !landed ? <Bubbles t={t} x={sx} y={sy - 180} n={7} seed={3} /> : null}
+        {landed && dust < 1 ? [0, 1, 2, 3].map((k) => <circle key={k} cx={sx + (k - 1.5) * (120 + dust * 150)} cy={SEABED - 40 - dust * 60} r={40 + dust * 50} fill="#d9c08c" opacity={0.8 * (1 - dust)} />) : null}
+      </L>
+      <Tag x={540} y={420} text="SEBUAH BATU TENGGELAM" size={50} rot={-2} o={clamp01((t - 51.2) / 0.3) * (1 - clamp01((t - 53.6) / 0.3))} />
+      <Tag x={540} y={420} text="TAK PERNAH TERLIHAT LAGI" size={48} fill={C.ink} color={C.paper} rot={2} o={clamp01((t - 53.8) / 0.3) * (1 - clamp01((t - 55.3) / 0.3))} />
+      <Card x={540} y={420} t={t} at={55.6} title="SEMUA SEPAKAT" sub="BATU ITU MASIH ADA" w={760} size={104} rot={-2} out={59.4} />
+      <Stamp x={540} y={520} t={t} at={59.6} text="TETAP SAH" size={130} />
+      {t > 59.9 ? (
+        <g opacity={clamp01((t - 59.9) / 0.3)}>
+          <Tag x={250} y={780} text="KELUARGA A" size={36} rot={-2} />
+          <Tag x={830} y={780} text="KELUARGA B" size={36} fill={C.yellow} rot={2} />
+          <path d="M400 780 L680 780" stroke={C.ink} strokeWidth={8} strokeDasharray="18 10" />
+          <path d="M668 762 L700 780 L668 798 Z" fill={C.ink} />
+          <g transform={`translate(${lerp(400, 640, easeInOut((t - 60.1) / 1.0))} 780)`}>
+            <rect x={-46} y={-30} width={92} height={60} rx={6} fill={C.paper} stroke={C.ink} strokeWidth={4} filter="url(#psS)" />
+            <text x={0} y={10} textAnchor="middle" fontFamily={HEAD} fontSize={26} fill={C.ink}>BAYAR</text>
+          </g>
+        </g>
+      ) : null}
+    </>
+  );
+};
+
+// ================= S12 · brankas emas New York, Friedman 1991 (61.8–68.4) =================
+const GoldStack: React.FC<{ x: number; y: number }> = ({ x, y }) => (
+  <g transform={`translate(${x} ${y})`} filter="url(#ps)">
+    {[[0, 0], [1, 0], [2, 0], [0.5, 1], [1.5, 1], [1, 2]].map(([i, r], k) => (
+      <g key={k} transform={`translate(${(i - 1) * 120} ${-r * 62})`}>
+        <path d="M-56 0 L56 0 L44 -56 L-44 -56 Z" fill="url(#goldBar)" />
+        <path d="M-44 -56 L44 -56 L40 -46 L-40 -46 Z" fill="#fff1b8" opacity={0.7} />
+      </g>
+    ))}
+  </g>
+);
+
+const S12: React.FC<SP> = ({ t, lt }) => {
+  const c: Cm = { s: 1 + 0.1 * easeInOut(lt / 6.6), x: Math.sin(lt * 0.5) * 14, y: 40 * easeInOut(lt / 6.6) };
+  const flip = Math.abs(Math.cos(clamp01((t - 65.7) / 0.5) * Math.PI));
+  const label = t < 65.95 ? "MILIK NEGARA A" : "MILIK NEGARA B";
+  return (
+    <>
+      <L c={c} f={0.3}>
+        <rect x={-400} y={-400} width={1900} height={2800} fill="#3b5a52" />
+        <g stroke="#2e4842" strokeWidth={4} opacity={0.8}>
+          {Array.from({ length: 22 }, (_, r) => <line key={r} x1={-400} y1={-200 + r * 110} x2={1500} y2={-200 + r * 110} />)}
+          {Array.from({ length: 22 }, (_, r) => Array.from({ length: 9 }, (_, k) => <line key={`${r}-${k}`} x1={-300 + k * 220 + (r % 2) * 110} y1={-200 + r * 110} x2={-300 + k * 220 + (r % 2) * 110} y2={-90 + r * 110} />))}
+        </g>
+      </L>
+      <L c={c} f={0.5}>
+        <g transform={`translate(930 820) rotate(${lt * 6})`} filter="url(#psL)">
+          <circle r={250} fill="#8e9a96" />
+          <circle r={200} fill="#a9b4b0" stroke="#6d7976" strokeWidth={10} />
+          {[0, 60, 120, 180, 240, 300].map((a) => <rect key={a} x={-8} y={-190} width={16} height={150} fill="#6d7976" transform={`rotate(${a})`} />)}
+          <circle r={50} fill="#6d7976" />
+        </g>
+      </L>
+      <L c={c} f={0.7}>
+        <rect x={-300} y={1180} width={1700} height={900} fill="#2c403b" />
+        <GoldStack x={300} y={1180} />
+        <GoldStack x={680} y={1180} />
+        <g transform={`translate(300 930) scale(1 ${flip.toFixed(3)})`}>
+          <Tag x={0} y={0} text={label} size={36} fill={C.paper} />
+        </g>
+        <Tag x={680} y={930} text="MILIK NEGARA C" size={36} />
+      </L>
+      <Card x={540} y={400} t={t} at={62.1} title="MILTON FRIEDMAN" sub="EKONOM · 1991" w={820} size={96} rot={-2} />
+      <Tag x={540} y={640} text="BRANKAS EMAS · NEW YORK" size={44} fill={C.yellow} rot={2} o={clamp01((t - 64.2) / 0.3)} />
+      <Tag x={540} y={1260} text="EMASNYA TIDAK KELUAR" size={44} fill={C.ink} color={C.paper} rot={-2} o={clamp01((t - 66.8) / 0.3)} />
+    </>
+  );
+};
+
+// ================= S13 · buku besar bersama, AUDIRA LEDGER (68.4–75.5) =================
+const S13: React.FC<SP> = ({ t, lt }) => {
+  const c: Cm = { s: 1.04 + 0.05 * easeInOut(lt / 7.1), x: lerp(50, -50, easeInOut(lt / 7.1)), y: 0 };
+  const xs = [200, 370, 540, 710, 880];
+  const cross = prog(t, 74.0, 0.35, easeOut);
+  return (
+    <>
+      <L c={c} f={0.3}>
+        <Sky id="s13sky" top="#f8d6a0" bottom="#f4ead5" />
+        <Wave y={1180} amp={10} len={300} ph={t} fill={C.sea2} />
+        <Island x={860} y={1170} w={260} h={120} />
+      </L>
+      <L c={c} f={0.6}>
+        <Sand y={1260} />
+        {xs.map((x, i) => {
+          if (i === 0) return null;
+          const p = prog(t, 70.4 + i * 0.4, 0.3, easeOut);
+          return p > 0 ? <line key={`l${i}`} x1={xs[i - 1] + 62} y1={900} x2={xs[i - 1] + 62 + (x - xs[i - 1] - 124) * p} y2={900} stroke={C.ink} strokeWidth={10} strokeDasharray="22 10" /> : null;
+        })}
+        {xs.map((x, i) => {
+          const p = pop(t, 70.2 + i * 0.4, 0.45);
+          if (p <= 0) return null;
+          const audira = i === 2;
+          return (
+            <g key={i} transform={`translate(${x} ${900 + Math.sin(t * 2 + i) * 8}) scale(${p}) rotate(${(i - 2) * 3})`}>
+              <g filter="url(#ps)">
+                <rect x={-62} y={-62} width={124} height={124} rx={10} fill={audira ? C.yellow : C.paper} />
+              </g>
+              <rect x={-62} y={-62} width={124} height={124} rx={10} fill="none" stroke={C.ink} strokeWidth={4} />
+              {[0, 1, 2].map((k) => <line key={k} x1={-44} y1={-30 + k * 26} x2={44 - k * 18} y2={-30 + k * 26} stroke={C.ink} strokeWidth={5} opacity={0.6} />)}
+              <circle cx={0} cy={44} r={14} fill={C.stone} stroke={C.stoneSide} strokeWidth={3} />
+            </g>
+          );
+        })}
+        {t > 71.0 ? (
+          <Tag x={540} y={760} text="AUDIRA LEDGER" size={38} fill={C.ink} color={C.yellow} rot={-2} o={clamp01((t - 71.0) / 0.3)} />
+        ) : null}
+        {xs.map((x, i) => (
+          <Person key={i} x={x} y={1300} h={220} face={i < 2 ? 1 : -1} shirt={[C.coral, C.yellow, "#5aa0c0", C.leaf, "#c97b9a"][i]} arm={-160} arm2={160} bob={Math.sin(t * 3 + i) * 3} />
+        ))}
+      </L>
+      <Card x={540} y={400} t={t} at={70.3} title="BUKU BESAR BERSAMA" sub="MIRIP BLOCKCHAIN" w={880} size={84} rot={-2} out={73.4} />
+      {t > 73.5 ? (
+        <g transform={`translate(540 430) scale(${pop(t, 73.5, 0.4)})`}>
+          <g filter="url(#ps)">
+            <path d="M-150 -40 L0 -120 L150 -40 Z" fill={C.paper} />
+            <rect x={-140} y={-40} width={280} height={150} fill={C.paper} />
+          </g>
+          {[-90, -30, 30, 90].map((x) => <rect key={x} x={x - 12} y={-20} width={24} height={110} fill={C.stoneMid} />)}
+          <text x={0} y={-58} textAnchor="middle" fontFamily={HEAD} fontSize={40} fill={C.ink}>BANK</text>
+          <g stroke={C.red} strokeWidth={22} strokeLinecap="round">
+            <line x1={-170} y1={-130} x2={-170 + 340 * cross} y2={-130 + 260 * cross} />
+            {cross > 0.5 ? <line x1={170} y1={-130} x2={170 - 340 * (cross - 0.5) * 2} y2={-130 + 260 * (cross - 0.5) * 2} /> : null}
+          </g>
+        </g>
+      ) : null}
+      <Tag x={540} y={620} text="DIPEGANG SEMUA ORANG" size={42} fill={C.yellow} rot={2} o={clamp01((t - 73.2) / 0.3)} />
+    </>
+  );
+};
+
+// ================= S14 · hero golden hour: UANG = KEPERCAYAAN (75.5–82.0) =================
+const S14: React.FC<SP> = ({ t, lt }) => {
+  const k = easeInOut(lt / 6.5);
+  const c: Cm = { s: lerp(1.28, 1.0, k), x: 0, y: lerp(-60, 0, k) };
+  return (
+    <>
+      <L c={c} f={0.3}>
+        <Sky id="s14sky" top="#e9874f" bottom="#f7d79a" />
+        <Sun x={540} y={lerp(860, 960, k)} r={150} color="#ffd27a" />
+        <Cloud x={180 + lt * 12} y={420} s={0.9} fill="#f6b98a" />
+        <Cloud x={860 - lt * 10} y={560} s={0.7} fill="#f6b98a" />
+      </L>
+      <L c={c} f={0.5}>
+        <Wave y={1040} amp={10} len={300} ph={t * 1.2} fill="#c26a4a" crest={false} />
+        <Wave y={1080} amp={10} len={260} ph={-t * 1.4} fill="#a3523e" />
+      </L>
+      <L c={c} f={0.75}>
+        <Sand y={1180} fill="#d99a5a" />
+        <Rai x={540} y={940} r={290} thick={44} glow={0.6 + 0.3 * Math.sin(t * 2)} />
+        <Palm x={110} y={1260} s={1.15} sway={Math.sin(t) * 5} />
+        <Palm x={980} y={1240} s={1.05} sway={Math.sin(t + 1) * 5} flip />
+        <Person x={250} y={1320} h={240} face={1} shirt={C.coral} arm={-30} arm2={-150} />
+        <Person x={840} y={1320} h={230} face={-1} shirt={C.yellow} arm={-150} arm2={30} />
+      </L>
+      <Tag x={540} y={600} text="BUKAN SOAL BENDA" size={50} rot={-2} o={clamp01((t - 76.3) / 0.3) * (1 - clamp01((t - 79.3) / 0.3))} />
+      <Card x={540} y={400} t={t} at={77.9} title="UANG = KEPERCAYAAN" sub="AUDIRA FAKTA DUNIA" w={900} size={84} rot={-2} />
+      <Tag x={540} y={640} text="IKUTI UNTUK FAKTA BERIKUTNYA" size={40} fill={C.yellow} rot={2} o={clamp01((t - 79.5) / 0.3)} />
+    </>
+  );
+};
+
+// ================= captions (karaoke per kata) =================
+type Wd = { text: string; start: number; end: number };
+const CHUNKS: Wd[][] = (() => {
+  const out: Wd[][] = [];
+  let cur: Wd[] = [];
+  (WORDS as Wd[]).forEach((w, i, a) => {
+    cur.push(w);
+    const next = a[i + 1];
+    const punct = /[.,?!:]$/.test(w.text);
+    if (!next || cur.length >= 4 || (punct && cur.length >= 2) || /[.?!]$/.test(w.text) || next.start - w.end > 0.5) {
+      out.push(cur);
+      cur = [];
+    }
+  });
+  return out;
+})();
+
+const Captions: React.FC<{ t: number }> = ({ t }) => {
+  if (t >= OUTRO_AT - 0.1) return null;
+  const idx = CHUNKS.findIndex((ch, i) => t >= ch[0].start - 0.12 && t < (CHUNKS[i + 1]?.[0].start ?? ch[ch.length - 1].end + 0.6) - 0.12);
+  if (idx < 0) return null;
+  const ch = CHUNKS[idx];
+  if (t > ch[ch.length - 1].end + 0.8) return null;
+  return (
+    <div style={{ position: "absolute", left: 40, right: 40, bottom: 400, display: "flex", justifyContent: "center" }}>
+      <div style={{ background: "rgba(43,38,34,0.86)", borderRadius: 18, padding: "16px 28px", width: "100%", boxSizing: "border-box", textAlign: "center", boxShadow: "6px 8px 0 rgba(30,18,10,0.28)" }}>
+        {ch.map((w, i) => {
+          const active = t >= w.start && t < w.end + 0.05;
+          const s = active ? 1 + 0.04 * Math.sin((clamp01((t - w.start) / 0.18) * Math.PI) / 2) : 1;
+          return (
+            <span key={i} style={{ display: "inline-block", fontFamily: BODY, fontWeight: 700, fontSize: 64, lineHeight: 1.2, color: active ? C.yellow : C.paper, marginRight: i < ch.length - 1 ? "0.4em" : 0, transform: `scale(${s})` }}>
+              {w.text}
+            </span>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+// paper fibres + vignette (texture on flat planes; static, deterministic)
+const FIB = (() => {
+  const r = mulberry(1717);
+  return Array.from({ length: 1100 }, () => {
+    const x = r() * W, y = r() * H, a = r() * Math.PI, l = 8 + r() * 26;
+    return { x, y, x2: x + Math.cos(a) * l, y2: y + Math.sin(a) * l, w: 1 + r() * 1.6, d: r() > 0.5 };
+  });
+})();
+const Fibers: React.FC = () => (
+  <g>
+    <defs>
+      <radialGradient id="vig" cx="0.5" cy="0.45" r="0.75">
+        <stop offset="0.6" stopColor="#3a2818" stopOpacity="0" />
+        <stop offset="1" stopColor="#3a2818" stopOpacity="0.28" />
+      </radialGradient>
+      <filter id="mottle" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.014 0.02" numOctaves={4} seed={17} />
+        <feColorMatrix type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.25  0 0 0 0 0.15  0 0 0 1.6 -0.55" />
+      </filter>
+    </defs>
+    <rect x={0} y={0} width={W} height={H} filter="url(#mottle)" opacity={0.26} style={{ mixBlendMode: "multiply" }} />
+    {FIB.map((f, i) => <line key={i} x1={f.x} y1={f.y} x2={f.x2} y2={f.y2} stroke={f.d ? "#5a4330" : "#ffffff"} strokeWidth={f.w} opacity={f.d ? 0.12 : 0.2} />)}
+  </g>
+);
+
+// ================= foreground (defocused, near camera) + key light =================
+type FgKind = "land" | "sea" | "deep" | "none";
+const FG_KIND: FgKind[] = ["land", "deep", "none", "land", "none", "land", "sea", "sea", "land", "land", "deep", "none", "land", "land"];
+const blade = (x: number, h: number, lean: number, w: number) => `M${x - w} 1960 Q${x + lean * 0.3} ${1960 - h * 0.6} ${x + lean} ${1960 - h} Q${x + lean * 0.2 + w * 0.4} ${1960 - h * 0.5} ${x + w} 1960 Z`;
+const FG: React.FC<{ kind: FgKind; t: number; lt: number; o: number }> = ({ kind, t, lt, o }) => {
+  if (kind === "none" || o <= 0) return null;
+  const sw = Math.sin(t * 1.6) * 10;
+  const px = Math.sin(lt * 0.8) * 34; // moves more than the scene drift: reads as the nearest layer
+  const dark = kind === "land" ? ["#3e6a2a", "#2f5321", "#4f7f35"] : kind === "deep" ? ["#1f5a4e", "#174539", "#2b6e5c"] : ["#2d6f86", "#245a6e", "#3a86a0"];
+  const ground = kind === "land" ? "#6b4c2e" : kind === "deep" ? "#0c2a36" : "#123a4c";
+  const r = mulberry(kind.length * 31);
+  const pebbles = Array.from({ length: 9 }, () => ({ x: 120 + r() * 840, y: 1800 + r() * 90, rx: 18 + r() * 26 }));
+  return (
+    <g opacity={o}>
+      <defs>
+        <linearGradient id={`fgshade-${kind}`} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor={ground} stopOpacity="0" />
+          <stop offset="1" stopColor={ground} stopOpacity="0.5" />
+        </linearGradient>
+      </defs>
+      <rect x={0} y={1560} width={W} height={360} fill={`url(#fgshade-${kind})`} />
+      {kind !== "sea" ? (
+        <g filter="url(#psS)">
+          {pebbles.map((p, i) => <ellipse key={i} cx={p.x + px * 0.5} cy={p.y} rx={p.rx} ry={p.rx * 0.55} fill={i % 2 ? C.stoneMid : C.stoneSide} />)}
+        </g>
+      ) : null}
+      <g filter="url(#dof)" transform={`translate(${px} 0)`}>
+        {kind === "sea" ? (
+          <path d={wave(1790, 26, 340, t * 2)} fill={dark[0]} opacity={0.92} />
+        ) : (
+          <>
+            {[[-30, 420, 60, 46], [40, 520, 110, 40], [110, 380, 150, 36], [-10, 300, -40, 34]].map(([x, h, l, w], i) => (
+              <path key={`a${i}`} d={blade(x, h, l + sw, w)} fill={dark[i % 3]} />
+            ))}
+            {[[1110, 460, -70, 46], [1040, 360, -120, 40], [980, 280, -150, 34], [1090, 300, 30, 34]].map(([x, h, l, w], i) => (
+              <path key={`b${i}`} d={blade(x, h, l - sw, w)} fill={dark[(i + 1) % 3]} />
+            ))}
+          </>
+        )}
+      </g>
+    </g>
+  );
+};
+const KeyLight: React.FC = () => (
+  <>
+    <defs>
+      <linearGradient id="keyHi" x1="0" y1="0" x2="0.8" y2="0.7">
+        <stop offset="0" stopColor="#fff2cc" stopOpacity="0.5" />
+        <stop offset="0.5" stopColor="#fff2cc" stopOpacity="0" />
+      </linearGradient>
+      <linearGradient id="keyLo" x1="0.2" y1="0.25" x2="1" y2="1">
+        <stop offset="0.45" stopColor="#4a2e1a" stopOpacity="0" />
+        <stop offset="1" stopColor="#4a2e1a" stopOpacity="0.46" />
+      </linearGradient>
+    </defs>
+    <rect x={0} y={0} width={W} height={H} fill="url(#keyHi)" style={{ mixBlendMode: "screen" }} />
+    <rect x={0} y={0} width={W} height={H} fill="url(#keyLo)" style={{ mixBlendMode: "multiply" }} />
+  </>
+);
+
+// ================= director =================
+const SCENES: [number, number, React.FC<SP>][] = [
+  [0, 5.5, S1], [5.5, 9.7, S2], [9.7, 12.3, S3], [12.3, 20.4, S4], [20.4, 25.6, S5], [25.6, 28.0, S6], [28.0, 31.0, S7],
+  [31.0, 35.7, S8], [35.7, 40.1, S9], [40.1, 50.0, S10], [50.0, 61.8, S11], [61.8, 68.4, S12], [68.4, 75.5, S13], [75.5, OUTRO_AT + 0.4, S14],
+];
+
+export const Yap: React.FC = () => {
+  useFonts();
+  const frame = useCurrentFrame();
+  const { fps, width } = useVideoConfig();
+  const t = frame / fps;
+  const u = width / 1080;
+  return (
+    <AbsoluteFill style={{ background: C.cream, overflow: "hidden" }}>
+      <div style={{ position: "absolute", left: 0, top: 0, width: W, height: H, transform: `scale(${u})`, transformOrigin: "0 0" }}>
+        {SCENES.map(([a, b, S], i) => {
+          if (t < a || t >= b + XF) return null;
+          const fadeIn = i === 0 ? 1 : clamp01((t - a) / XF);
+          const lt = t - a;
+          // drift kontinu tambahan (kamera tidak pernah parkir)
+          // orbit elips (kecepatan tidak pernah nol) + zoom maju; zoom awal 1.05 menutup tepi saat geser
+          const dz = 1.05 + 0.012 * lt;
+          const dx = Math.sin(lt * 1.1 + i) * 24;
+          const dy = Math.cos(lt * 1.1 + i) * 28;
+          return (
+            <svg key={i} viewBox={`0 0 ${W} ${H}`} width={W} height={H} style={{ position: "absolute", inset: 0, opacity: fadeIn }}>
+              <Defs />
+              <g transform={`translate(${540 + dx} ${960 + dy}) scale(${dz.toFixed(4)}) translate(-540 -960)`}>
+                <S t={t} lt={lt} />
+              </g>
+              <FG kind={FG_KIND[i]} t={t} lt={lt} o={i === 10 ? clamp01((t - 53.2) / 0.8) : 1} />
+              <KeyLight />
+              <Fibers />
+              <Grain opacity={0.2} />
+              <rect x={0} y={0} width={W} height={H} fill="url(#vig)" />
+            </svg>
+          );
+        })}
+        <Captions t={t} />
+      </div>
+      {t >= OUTRO_AT - 0.2 ? <AudiraOutro seconds={YAP_SECONDS - OUTRO_AT} /> : null}
+      <AudiraSignature seed="ep17-uang-batu-yap" />
+    </AbsoluteFill>
+  );
+};

@@ -1,0 +1,577 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP22_DEMAM_TAMAGOTCHI_1996",
+  "topic": "Demam Tamagotchi 1996 — hewan peliharaan digital yang bisa \"mati\"",
+  "createdAt": "2026-11-22T18:00:57.870Z",
+  "updatedAt": "2026-11-23T13:08:31.894Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:01:10.835Z",
+          "text": "Memori GLOBAL: \"Audira\" di teks VO, tighten-pauses, sign await workaround, TP loudnorm, Karaoke lebar penuh. Channel: slot 19-22 WIB. Referensi pipeline 2D: AUDIRA_FAKTA_OLAHRAGA_2026/studio (EP01 final, PIXELSTORY). Engine Remotion 2D."
+        }
+      ],
+      "doneAt": "2026-11-22T18:01:10.835Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:02:46.222Z",
+          "text": "16 fakta, 9 sumber (4 HIGH). Mitos bunuh diri dihindari; penitipan = fitur dalam game."
+        }
+      ],
+      "doneAt": "2026-11-22T18:02:46.222Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T22:20:35.548Z",
+      "notes": [
+        {
+          "at": "2026-11-22T18:03:25.797Z",
+          "text": "Ditawarkan: PIXELSTORY (utama, layar LCD piksel = dunia hewan digital; gold juri 4.0 di studio 2D), Y2KCHROME (plastik transparan 90an), TOYDIORAMA (mainan diorama). Sheet style/_style_options.jpg. Menunggu pilihan pengguna."
+        },
+        {
+          "at": "2026-11-22T22:20:35.548Z",
+          "text": "Pengguna memilih \"1 PIXELSTORY\" (2026-11-23). Engine Remotion 2D (SVG piksel), studio basis AUDIRA_FAKTA_OLAHRAGA_2026/studio."
+        },
+        {
+          "at": "2026-11-22T23:58:27.268Z",
+          "text": "STYLE_DECISION.md ditulis (PIXELSTORY, approved yes). cover-topic.png dirender dari adegan hook film setelah set dibuat."
+        }
+      ],
+      "startedAt": "2026-11-22T18:03:25.797Z",
+      "doneAt": "2026-11-22T23:58:27.268Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T00:10:47.762Z",
+          "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-23T00:11:27.082Z",
+          "text": "SCRIPT/STORYBOARD/SHOTLIST/ASSET_MANIFEST ditulis (Style: PIXELSTORY), storyboard_lint PASS."
+        }
+      ],
+      "doneAt": "2026-11-23T00:11:27.082Z",
+      "startedAt": "2026-11-23T00:10:30.185Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T23:56:49.895Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T23:56:42.107Z",
+      "startedAt": "2026-11-22T23:56:42.107Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T23:58:46.995Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-22T23:58:36.670Z",
+      "startedAt": "2026-11-22T23:58:36.670Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T23:56:49.895Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T23:56:43.649Z",
+      "startedAt": "2026-11-22T23:56:43.649Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T13:02:11.340Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        }
+      ],
+      "doneAt": "2026-11-23T13:02:03.890Z",
+      "startedAt": "2026-11-23T13:02:03.890Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T13:08:25.331Z",
+          "text": "FINAL_VIDEO.mp4 -13.6 LUFS TP -1.9, signature VALID, qa_video PASS, record_score final jury 4.0"
+        }
+      ],
+      "doneAt": "2026-11-23T13:08:25.331Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T13:08:31.759Z",
+          "text": "SOCIAL_CAPTIONS.md validator ok, NOTES.md, 2 lesson PIXELSTORY, scheduled task review-demam-tamagotchi-1996-24h/-72h/-7d (24/26/30 Nov 21.00 WIB)"
+        }
+      ],
+      "doneAt": "2026-11-23T13:08:31.759Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-2026-EP22",
+    "engine": "remotion",
+    "channel": "TECH",
+    "handle": "@AudiraTECH",
+    "style": "PIXELSTORY",
+    "wordCount": 195,
+    "estimatedDuration": {
+      "wordCount": 195,
+      "minSec": 78,
+      "maxSec": 87
+    },
+    "shortTitle": "Tamagotchi"
+  },
+  "handoverLog": [
+    {
+      "at": "2026-11-22T22:21:41.948Z",
+      "doing": "Tahap 3 acc PIXELSTORY selesai; pindah sesi karena context guard 191k. Belum: STYLE_DECISION.md, cover-topic.png, scaffold project/, docs, VO, film.",
+      "files": [
+        "docs/HANDOFF.md",
+        "research/SOURCE_REGISTER.md",
+        "style/_style_options.jpg"
+      ],
+      "next": "Baca docs/HANDOFF.md, lalu STYLE_DECISION + cover topik, scaffold project dari AUDIRA_FAKTA_OLAHRAGA_2026/studio, naskah 6 bagian, VO Cartesia.",
+      "snapshot": {
+        "episode": "EP22_DEMAM_TAMAGOTCHI_1996",
+        "topic": "Demam Tamagotchi 1996 — hewan peliharaan digital yang bisa \"mati\"",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP22",
+        "currentStage": "style",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "in_progress"
+          },
+          "script": {
+            "approved": false,
+            "status": "pending"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T23:59:50.761Z",
+      "doing": "Sesi 2: STYLE_DECISION, ART_DIRECTION, script-lines, VO terkunci (total 86,726 dtk), project/ disalin dari EP06 (scene ep22 masih kode EP06). Pindah sesi karena context guard.",
+      "files": [
+        "docs/HANDOFF.md",
+        "docs/script-lines.json",
+        "audio/vo.wav",
+        "project/src/scenes/ep22/timeline.json",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Baca docs/HANDOFF.md (rencana 9 adegan + indeks kata VO). Tulis docs SCRIPT/STORYBOARD/SHOTLIST/ASSET_MANIFEST, lalu tulis ulang project/src/scenes/ep22 + Root.tsx, cover-topic, SFX, draf+juri, final, delivery.",
+      "snapshot": {
+        "episode": "EP22_DEMAM_TAMAGOTCHI_1996",
+        "topic": "Demam Tamagotchi 1996 — hewan peliharaan digital yang bisa \"mati\"",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-2026-EP22",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP22_DEMAM_TAMAGOTCHI_1996/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:10:17.921Z",
+      "doing": "Sesi 3: template EP06 dipelajari, pelajaran memori PIXELSTORY dicatat di HANDOFF (update sesi 3). Belum ada docs/kode baru.",
+      "files": [
+        "docs/HANDOFF.md"
+      ],
+      "next": "Tulis docs SCRIPT/STORYBOARD/SHOTLIST/ASSET_MANIFEST + storyboard_lint, lalu tulis ulang project/src/scenes/ep22 + Root.tsx dengan menghindari 5 kelemahan PIXELSTORY di HANDOFF.",
+      "snapshot": {
+        "episode": "EP22_DEMAM_TAMAGOTCHI_1996",
+        "topic": "Demam Tamagotchi 1996 — hewan peliharaan digital yang bisa \"mati\"",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-2026-EP22",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP22_DEMAM_TAMAGOTCHI_1996/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:11:29.743Z",
+      "doing": "Sesi 3 selesai: docs tahap 4 lengkap + lint PASS. Pindah sesi karena context guard sebelum menulis kode film.",
+      "files": [
+        "docs/HANDOFF.md",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/SHOTLIST.md",
+        "docs/ASSET_MANIFEST.md"
+      ],
+      "next": "Tulis ulang project/src/scenes/ep22 (sets, sprites, timing, Film, Cover, index) + Root.tsx sesuai HANDOFF (rencana 9 adegan + UPDATE sesi 3), tsc, stills, cover-topic, SFX, draf+juri, final, delivery.",
+      "snapshot": {
+        "episode": "EP22_DEMAM_TAMAGOTCHI_1996",
+        "topic": "Demam Tamagotchi 1996 — hewan peliharaan digital yang bisa \"mati\"",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-2026-EP22",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP22_DEMAM_TAMAGOTCHI_1996/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:36:23.944Z",
+      "doing": "Sesi 3 selesai: docs tahap 4 lengkap + lint PASS. Pindah sesi karena context guard sebelum menulis kode film.",
+      "files": [
+        "docs/HANDOFF.md",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/SHOTLIST.md",
+        "docs/ASSET_MANIFEST.md"
+      ],
+      "next": "Tulis ulang project/src/scenes/ep22 (sets, sprites, timing, Film, Cover, index) + Root.tsx sesuai HANDOFF (rencana 9 adegan + UPDATE sesi 3), tsc, stills, cover-topic, SFX, draf+juri, final, delivery.",
+      "snapshot": {
+        "episode": "EP22_DEMAM_TAMAGOTCHI_1996",
+        "topic": "Demam Tamagotchi 1996 — hewan peliharaan digital yang bisa \"mati\"",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-2026-EP22",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP22_DEMAM_TAMAGOTCHI_1996/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:37:24.713Z",
+      "doing": "Sesi 3 selesai: docs tahap 4 lengkap + lint PASS. Pindah sesi karena context guard sebelum menulis kode film.",
+      "files": [
+        "docs/HANDOFF.md",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/SHOTLIST.md",
+        "docs/ASSET_MANIFEST.md"
+      ],
+      "next": "Tulis ulang project/src/scenes/ep22 (sets, sprites, timing, Film, Cover, index) + Root.tsx sesuai HANDOFF (rencana 9 adegan + UPDATE sesi 3), tsc, stills, cover-topic, SFX, draf+juri, final, delivery.",
+      "snapshot": {
+        "episode": "EP22_DEMAM_TAMAGOTCHI_1996",
+        "topic": "Demam Tamagotchi 1996 — hewan peliharaan digital yang bisa \"mati\"",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-2026-EP22",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP22_DEMAM_TAMAGOTCHI_1996/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:40:03.015Z",
+      "doing": "Sesi 4: sprites.ts EP22 ditulis + rancangan kode lengkap dikunci di docs/HANDOFF.md (UPDATE sesi 4). Pindah sesi karena context guard.",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/scenes/ep22/sprites.ts"
+      ],
+      "next": "Tulis sets.ts, timing.ts, Film.tsx, Cover.tsx + Root.tsx sesuai RANCANGAN KODE di HANDOFF UPDATE sesi 4 (salin warehouse()/office() EP06 dari sets.ts lama sebelum ditimpa), tsc, stills, cover-topic, SFX, draf+juri, final, delivery.",
+      "snapshot": {
+        "episode": "EP22_DEMAM_TAMAGOTCHI_1996",
+        "topic": "Demam Tamagotchi 1996 — hewan peliharaan digital yang bisa \"mati\"",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-2026-EP22",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP22_DEMAM_TAMAGOTCHI_1996/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:45:25.383Z",
+      "doing": "Sesi 6: sets.ts + timing.ts EP22 ditulis (lihat docs/HANDOFF.md UPDATE sesi 6). Pindah sesi karena context guard.",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/scenes/ep22/sets.ts",
+        "project/src/scenes/ep22/timing.ts",
+        "_tools/ep06_backup/Film.tsx"
+      ],
+      "next": "Tulis Film.tsx (EggDev/Lcd + 9 adegan + HUD), Cover.tsx, Root.tsx sesuai HANDOFF UPDATE sesi 4 + 6; tsc; stills; cover-topic; SFX; draf+juri; final; delivery.",
+      "snapshot": {
+        "episode": "EP22_DEMAM_TAMAGOTCHI_1996",
+        "topic": "Demam Tamagotchi 1996 — hewan peliharaan digital yang bisa \"mati\"",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-2026-EP22",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP22_DEMAM_TAMAGOTCHI_1996/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T12:54:57.780Z",
+      "doing": "Sesi 7: Film.tsx EP22 ditulis (belum tsc). Pindah sesi karena context guard ±215k.",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/scenes/ep22/Film.tsx",
+        "project/src/scenes/ep22/Cover.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "Tulis Cover.tsx + Root.tsx (HANDOFF UPDATE sesi 7), npx tsc --noEmit, stills, cover-topic, SFX, draf+juri, final, delivery.",
+      "snapshot": {
+        "episode": "EP22_DEMAM_TAMAGOTCHI_1996",
+        "topic": "Demam Tamagotchi 1996 — hewan peliharaan digital yang bisa \"mati\"",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-2026-EP22",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP22_DEMAM_TAMAGOTCHI_1996/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T13:02:13.815Z",
+      "doing": "Sesi 8: Cover.tsx+Root.tsx EP22 ditulis, tsc OK, NearLayer FG bawah frame, cover-topic.png, sfx.wav, draft/contact-sheet.jpg (8 frame) + look.json. Render klip 0-18 dtk untuk audit:camera.",
+      "command": "npx remotion render Ep22Preview ../draft/clip.mp4 --frames=0-539",
+      "files": [
+        "project/src/scenes/ep22/Film.tsx",
+        "project/src/scenes/ep22/Cover.tsx",
+        "project/src/Root.tsx",
+        "project/src/scenes/ep22/sets.ts"
+      ],
+      "next": "audit:camera klip, THEME_CHECK.md, skor self + juri buta, lalu final render.",
+      "snapshot": {
+        "episode": "EP22_DEMAM_TAMAGOTCHI_1996",
+        "topic": "Demam Tamagotchi 1996 — hewan peliharaan digital yang bisa \"mati\"",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-2026-EP22",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP22_DEMAM_TAMAGOTCHI_1996/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T13:04:03.663Z",
+      "doing": "Render final Ep22Final 1080x1920@60 (juri draf LOLOS 4.0)",
+      "command": "npm run render:final -- --comp=Ep22Final --out=out/ep22/FINAL_EP22.mp4 --vo=public/audio/ep22/vo.wav --sfx=public/audio/ep22/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Demam Tamagotchi 1996\" --slug=demam-tamagotchi-1996 --ep=EP22",
+      "files": [
+        "project/out/ep22/FINAL_EP22.mp4"
+      ],
+      "next": "QA LUFS/TP, metadata ffmpeg, sign/verify, qa_video, FINAL_VIDEO.mp4, record_score final, delivery tahap 10.",
+      "snapshot": {
+        "episode": "EP22_DEMAM_TAMAGOTCHI_1996",
+        "topic": "Demam Tamagotchi 1996 — hewan peliharaan digital yang bisa \"mati\"",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-2026-EP22",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP22_DEMAM_TAMAGOTCHI_1996/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T13:05:06.900Z",
+      "doing": "Render final berjalan (log F:/temp/ep22_final.log), draf juri LOLOS 4.0, SOCIAL_CAPTIONS.md ditulis",
+      "command": "npm run render:final -- ... --skip-channel=\"batch short tanpa SERIES.json; src/brand/channel.json handle @AudiraTECH sudah benar\" (lihat HANDOFF UPDATE sesi 8)",
+      "files": [
+        "docs/HANDOFF.md",
+        "SOCIAL_CAPTIONS.md",
+        "project/out/ep22/FINAL_EP22.mp4"
+      ],
+      "next": "QA LUFS/TP, metadata → FINAL_VIDEO.mp4, verify_signature, qa_video, record_score final, validator caption, NOTES.md, append_lesson, 3 scheduled task, caption di chat",
+      "snapshot": {
+        "episode": "EP22_DEMAM_TAMAGOTCHI_1996",
+        "topic": "Demam Tamagotchi 1996 — hewan peliharaan digital yang bisa \"mati\"",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-2026-EP22",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP22_DEMAM_TAMAGOTCHI_1996/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T13:05:06.900Z",
+      "doing": "Render final berjalan (log F:/temp/ep22_final.log), draf juri LOLOS 4.0, SOCIAL_CAPTIONS.md ditulis",
+      "command": "npm run render:final -- ... --skip-channel=\"batch short tanpa SERIES.json; src/brand/channel.json handle @AudiraTECH sudah benar\" (lihat HANDOFF UPDATE sesi 8)",
+      "files": [
+        "docs/HANDOFF.md",
+        "SOCIAL_CAPTIONS.md",
+        "project/out/ep22/FINAL_EP22.mp4"
+      ],
+      "next": "QA LUFS/TP, metadata → FINAL_VIDEO.mp4, verify_signature, qa_video, record_score final, validator caption, NOTES.md, append_lesson, 3 scheduled task, caption di chat",
+      "snapshot": {
+        "episode": "EP22_DEMAM_TAMAGOTCHI_1996",
+        "topic": "Demam Tamagotchi 1996 — hewan peliharaan digital yang bisa \"mati\"",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-2026-EP22",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP22_DEMAM_TAMAGOTCHI_1996/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T13:08:31.894Z"
+    }
+  ],
+  "syncedAt": "2026-11-23T13:02:11.340Z",
+  "session": 8,
+  "sessionLog": [
+    {
+      "no": 4,
+      "title": "EP22 Tamagotchi · s4",
+      "at": "2026-11-23T12:36:23.942Z"
+    },
+    {
+      "no": 5,
+      "title": "EP22 Tamagotchi · s5",
+      "at": "2026-11-23T12:37:24.712Z"
+    },
+    {
+      "no": 6,
+      "title": "EP22 Tamagotchi · s6",
+      "at": "2026-11-23T12:40:03.015Z"
+    },
+    {
+      "no": 7,
+      "title": "EP22 Tamagotchi · s7",
+      "at": "2026-11-23T12:45:25.383Z"
+    },
+    {
+      "no": 8,
+      "title": "EP22 Tamagotchi · s8",
+      "at": "2026-11-23T12:54:57.780Z"
+    }
+  ]
+}

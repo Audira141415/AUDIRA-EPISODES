@@ -1,0 +1,220 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP04_KOREK_API",
+  "topic": "Cara pembuatan benda sehari-hari yang jarang diketahui",
+  "createdAt": "2026-11-11T08:10:25.583Z",
+  "updatedAt": "2026-11-16T15:16:45.040Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T08:15:54.418Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-11T08:10:25.585Z",
+      "startedAt": "2026-11-11T08:10:25.585Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T08:15:54.418Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-11T08:10:25.584Z",
+      "startedAt": "2026-11-11T08:10:25.584Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-11T23:51:24.467Z",
+      "notes": [
+        {
+          "at": "2026-11-11T23:51:37.305Z",
+          "text": "Style dipilih pengguna: \"Ya, semua utama\" (2026-11-12). Cover topik pending."
+        },
+        {
+          "at": "2026-11-12T00:00:13.292Z",
+          "text": "sync: STYLE_DECISION.md ada; acc tercatat di file"
+        }
+      ],
+      "startedAt": "2026-11-11T23:51:37.305Z",
+      "approvalSource": "file",
+      "doneAt": "2026-11-11T23:51:24.467Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T00:59:05.781Z",
+      "notes": [
+        {
+          "at": "2026-11-11T08:15:54.418Z",
+          "text": "sync: naskah ada; menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-12T00:59:05.781Z",
+          "text": "Cover topik + naskah disetujui pengguna: \"Setuju semua\" (2026-11-12)."
+        }
+      ],
+      "startedAt": "2026-11-11T08:10:25.584Z",
+      "doneAt": "2026-11-12T00:59:05.781Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-16T15:16:45.040Z",
+          "text": "sync: dunia world3d disiapkan (project/world3d.js + project/hf/hyperframes.json)"
+        }
+      ],
+      "doneAt": "2026-11-12T12:49:01.565Z",
+      "startedAt": "2026-11-12T12:49:01.565Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T01:00:49.799Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-12T01:00:41.775Z",
+      "startedAt": "2026-11-12T01:00:41.775Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T00:59:28.130Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-12T00:18:53.799Z",
+      "startedAt": "2026-11-12T00:18:53.799Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-13T18:07:21.827Z",
+      "notes": [
+        {
+          "at": "2026-11-12T00:59:28.130Z",
+          "text": "sync: 1 gambar draf/contact sheet; menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-12T12:46:13.484Z",
+          "text": "sync: 1 gambar draf/contact sheet; acc tidak tercatat, disimpulkan karena tahap sesudahnya sudah ada"
+        },
+        {
+          "at": "2026-11-13T17:46:39.057Z",
+          "text": "Juri buta LOLOS avg 4.0 (6 aspek, tak ada <3), tercatat di motion memory. Menunggu acc pengguna."
+        },
+        {
+          "at": "2026-11-13T18:07:21.828Z",
+          "text": "Acc pengguna (relai sesi induk): \"Acc keduanya\" 2026-11-14. Juri LOLOS 4.0. Lanjut render final."
+        }
+      ],
+      "startedAt": "2026-11-12T00:18:53.799Z",
+      "approvalSource": "inferred",
+      "doneAt": "2026-11-13T18:07:21.828Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T18:24:05.829Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60 88.17s, Ed25519 VALID+C2PA, metadata, deliver GREEN (2 yellow benign), FINAL_CHECK bersih, skor final self 4.0."
+        }
+      ],
+      "doneAt": "2026-11-13T18:24:05.829Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T12:46:13.484Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-12T12:42:35.948Z",
+      "startedAt": "2026-11-12T12:42:35.948Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "cara-pembuatan-EP04",
+    "style": "NANOFORGE",
+    "title": "Cara Pembuatan Korek Api",
+    "wordCount": 196,
+    "estimatedDuration": {
+      "wordCount": 196,
+      "minSec": 78,
+      "maxSec": 87
+    },
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-16T15:16:45.040Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-13T18:09:35.159Z",
+      "doing": "render final hf EP04 1080x1920@60, RENDER_TMPDIR=F:\\render-tmp (manual hf-render; MCP server env stale→C: ENOSPC)",
+      "command": "node F:/AUDIRA-SKILL-MOTION/starter/scripts/hf-render.mjs --project=.../project/hf --out=FINAL_VIDEO.mp4 --fps=60 --title=\"Cara Pembuatan Korek Api\" --slug=korek-api --ep=EP04",
+      "files": [
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "verifikasi FINAL_CHECK.jpg dari MP4, npm run deliver, sign Ed25519+C2PA, record_score final, caption sudah ada"
+    },
+    {
+      "at": "2026-11-13T18:09:35.159Z",
+      "doing": "render final hf EP04 1080x1920@60, RENDER_TMPDIR=F:\\render-tmp (manual hf-render; MCP server env stale→C: ENOSPC)",
+      "command": "node F:/AUDIRA-SKILL-MOTION/starter/scripts/hf-render.mjs --project=.../project/hf --out=FINAL_VIDEO.mp4 --fps=60 --title=\"Cara Pembuatan Korek Api\" --slug=korek-api --ep=EP04",
+      "files": [
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "verifikasi FINAL_CHECK.jpg dari MP4, npm run deliver, sign Ed25519+C2PA, record_score final, caption sudah ada",
+      "finishedAt": "2026-11-13T18:24:05.806Z"
+    }
+  ]
+}

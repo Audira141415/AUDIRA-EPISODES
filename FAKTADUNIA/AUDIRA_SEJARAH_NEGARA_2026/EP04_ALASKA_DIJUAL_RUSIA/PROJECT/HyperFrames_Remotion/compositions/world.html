@@ -1,0 +1,194 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#120B06}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.11;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.5) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0) 42%,rgba(0,0,0,0) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Georgia,serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#E9D9B6;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+
+#sep{position:absolute;inset:0;z-index:8;pointer-events:none;background:radial-gradient(ellipse at 50% 46%,rgba(80,46,14,0) 46%,rgba(60,32,10,.38) 82%,rgba(30,14,4,.7) 100%);mix-blend-mode:multiply}
+.p{transform-origin:0% 50%}
+.g,.num,.ct{font-family:Georgia,serif!important;font-variant-numeric:lining-nums}
+.p span.g{display:inline!important;font-size:inherit!important;font-weight:inherit!important;color:inherit!important;letter-spacing:inherit!important;margin:0!important;font-style:inherit!important;line-height:inherit!important}
+.kk{display:inline-block;font-family:Georgia,serif;font-weight:700;font-size:26px;letter-spacing:.14em;color:#E9D9B6;background:#3A2A1A;padding:7px 16px 6px;margin-bottom:14px;box-shadow:0 6px 18px rgba(0,0,0,.45)}
+.h1{display:inline-block;background:rgba(40,26,14,.86);padding:4px 22px 14px;box-shadow:0 14px 34px rgba(0,0,0,.45);font-family:"Playfair Display",Georgia,serif;font-weight:800;font-size:112px;line-height:.98;color:#E9D9B6;text-shadow:0 4px 24px rgba(0,0,0,.85),0 0 2px #000}
+.h1 em{font-style:italic;font-weight:700;color:#E8A877}
+.h2{display:inline-block;background:rgba(40,26,14,.86);padding:2px 20px 10px;box-shadow:0 14px 34px rgba(0,0,0,.45);font-family:"Playfair Display",Georgia,serif;font-weight:800;font-size:82px;line-height:1.02;color:#E9D9B6;text-shadow:0 4px 22px rgba(0,0,0,.85),0 0 2px #000;margin-bottom:6px}
+.h2 em{font-style:italic;font-weight:700}
+.card{background:linear-gradient(170deg,#F1E4C6,#E9D9B6 55%,#D9C499);color:#3A2A1A;border:2px solid #3A2A1A;outline:1px solid #3A2A1A;outline-offset:-8px;box-shadow:0 14px 34px rgba(0,0,0,.5)}
+.row{display:flex;gap:20px;align-items:center;margin-top:16px;padding:14px 22px}
+.row b{flex:none;font-family:"Playfair Display",Georgia,serif;font-weight:800;font-size:64px;line-height:1;color:#3A2A1A}
+.row b.big{font-size:84px}.row b.sm{font-size:42px;color:#B0643A}
+.row span{font-family:"EB Garamond",Georgia,serif;font-weight:600;font-size:33px;line-height:1.16;color:#3A2A1A}
+.row.cp b{color:#B0643A}
+.row.rd{border-color:#8E2A1E;outline-color:#8E2A1E}.row.rd b.sm,.row.rd span b.sm{color:#8E2A1E}
+.row .ic{flex:none;width:70px;height:70px;background:#8E2A1E;border-radius:50%;padding:10px;box-sizing:border-box}
+.row span b.sm{font-family:"Playfair Display",Georgia,serif;font-size:38px}
+.lb{display:inline-block;background:rgba(40,26,14,.8);padding:4px 16px 6px;font-family:"EB Garamond",Georgia,serif;font-weight:600;font-size:34px;line-height:1.2;color:#E9D9B6;margin-top:12px;text-shadow:0 2px 12px rgba(0,0,0,.95)}
+.lb.it{font-style:italic}
+.st{display:inline-block;margin-top:18px;font-family:Georgia,serif;font-weight:700;font-size:44px;letter-spacing:.06em;padding:8px 20px;color:#8E2A1E;border:5px double #8E2A1E;background:rgba(233,217,182,.92);transform:rotate(-3deg);box-shadow:0 10px 26px rgba(0,0,0,.45)}
+.st.gr{color:#3E5B3A;border-color:#3E5B3A}
+.tag{display:flex;align-items:center;gap:20px;margin-top:16px;padding:12px 22px 12px 14px;background:linear-gradient(170deg,#F1E4C6,#E9D9B6 60%,#D9C499);border:2px solid #3A2A1A;box-shadow:0 14px 34px rgba(0,0,0,.5)}
+.tag .bust{flex:none;width:104px;height:130px}
+.tags{display:flex;gap:12px}.tags .tag{flex:1;gap:10px;padding:10px 12px 10px 8px}.tags .bust{width:70px;height:88px}.tags .tag b{font-size:34px}.tags .tag span{font-size:25px}
+.blot{position:absolute;left:-760px;top:-340px;width:2600px;height:2600px;border-radius:47% 53% 51% 49%/52% 46% 54% 48%;background:radial-gradient(circle at 50% 50%,#1C1108 62%,#2A190B 70%,rgba(28,17,8,0) 71%);z-index:9;pointer-events:none}.blot.b2{border-radius:53% 47% 45% 55%/48% 54% 46% 52%}
+.tag b{display:block;font-family:"Playfair Display",Georgia,serif;font-weight:800;font-size:44px;line-height:1.04;color:#3A2A1A}
+.tag span{display:block;font-family:"EB Garamond",Georgia,serif;font-weight:600;font-style:italic;font-size:30px;line-height:1.15;color:#B0643A;margin-top:4px}
+.mega{display:flex;align-items:baseline;gap:14px;color:#E9D9B6;text-shadow:0 6px 26px rgba(0,0,0,.9),0 0 2px #000}
+.mega b{font-family:Georgia,serif;font-weight:700;font-size:200px;line-height:.95;color:#F0C46A}
+.mega small{font-family:Georgia,serif;font-weight:700;font-size:58px}
+.vote{display:flex;align-items:center;gap:22px}
+.vote>div{flex:1;text-align:center;padding:14px 8px 16px;background:linear-gradient(170deg,#F1E4C6,#E9D9B6 60%,#D9C499);border:2px solid #3A2A1A;box-shadow:0 14px 34px rgba(0,0,0,.5)}
+.vote b{display:block;font-weight:700;font-size:170px;line-height:1}.vote b.nv{color:#1F3550}.vote b.rd2{color:#8E2A1E}
+.vote span{display:block;font-family:Georgia,serif;font-weight:700;font-size:30px;letter-spacing:.14em;color:#3A2A1A}
+.vote i{font-style:normal;font-family:Georgia,serif;font-size:90px;color:#E9D9B6;text-shadow:0 2px 12px #000}
+.tries{display:flex;gap:16px;margin-top:16px}
+.tries>div{flex:1;text-align:center;padding:10px 4px 12px;background:linear-gradient(170deg,#F1E4C6,#E9D9B6 60%,#D9C499);border:2px solid #3A2A1A;box-shadow:0 12px 28px rgba(0,0,0,.5)}
+.tries b{display:block;font-family:Georgia,serif;font-weight:700;font-size:64px;line-height:1;color:#8E2A1E}
+.tries span{display:block;font-family:"EB Garamond",Georgia,serif;font-weight:700;font-size:30px;color:#3A2A1A}
+.tries .ok{border-color:#3E5B3A;outline:3px solid #3E5B3A}.tries .ok b{color:#3E5B3A}
+.cal{display:flex;gap:18px}
+.cal>div{flex:1;padding:12px 16px 14px;background:linear-gradient(170deg,#F1E4C6,#E9D9B6 60%,#D9C499);border:2px solid #3A2A1A;border-top:14px solid #B0643A;box-shadow:0 14px 34px rgba(0,0,0,.5)}
+.cal>div.nv{border-top-color:#1F3550}
+.cal span{display:block;font-family:Georgia,serif;font-weight:700;font-size:28px;letter-spacing:.14em;color:#3A2A1A}
+.cal b{display:block;font-weight:700;font-size:96px;line-height:1.02;color:#3A2A1A}
+.duo{display:flex;gap:14px;margin-top:18px}
+.duo i{flex:1;text-align:center;font-style:normal;font-family:"Playfair Display",Georgia,serif;font-weight:800;font-size:46px;padding:16px 4px;color:#E9D9B6;background:#3A2A1A;border:2px solid #C9A24A;box-shadow:0 12px 28px rgba(0,0,0,.5)}
+.duo i:last-child{background:#B0643A;color:#FFF4DE}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="85.18" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI SEJARAH &middot; BUKAN DOKUMEN ASLI</div>
+<div id="sep"></div>
+<div class="blot" data-at="s6:18-0.4" data-fx="blot"></div><div class="blot b2" data-at="s7:Alaska-0.35" data-fx="blot"></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="kk">FAKTA SEJARAH NEGARA &middot; EP <span class="g">04</span></div>
+  <div class="h1">Alaska,<br><em>dijual murah</em></div>
+  <div class="card row" data-at="s1:satu" data-fx="ink"><b class="num"><b class="ct" data-from="0" data-to="1518800" data-a="s1:satu" data-d="1.7"><span class="g">0</span></b> km²</b><span>wilayah yang dilepas Rusia</span></div>
+  <div class="card row cp" data-at="s1:Sekitar" data-fx="ink"><b class="num">&asymp; <span class="g">2</span> sen</b><span>dolar per acre</span></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="kk">ABAD KE-<span class="g">19</span> &middot; AMERIKA RUSIA</div>
+  <div class="h2">Pos dagang bulu</div>
+  <div class="card row" data-at="s2:berang-berang" data-fx="ink"><b class="num">&plusmn; <span class="g">300.000</span></b><span>berang-berang laut sebelum diburu</span></div>
+  <div class="st" data-at="s2:habis" data-fx="stamp">HAMPIR HABIS DIBURU</div>
+  <div class="card row rd" data-at="s2:Krimea" data-fx="ink"><svg viewBox="0 0 60 60" class="ic"><g stroke="#E9D9B6" stroke-width="5" stroke-linecap="round"><path d="M10 50L48 8M50 50L12 8"/><path d="M6 42l10 10M54 42L44 52" stroke-width="7"/></g></svg><span><b class="sm">KALAH PERANG KRIMEA</b><br><span class="g">1853</span>&ndash;<span class="g">1856,</span> kas negara terkuras</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="kk">MASALAH TERBESAR</div>
+  <div class="h2">Sulit dipertahankan</div>
+  <div class="card row rd" data-at="s3:Inggris" data-fx="ink"><b class="sm">INGGRIS</b><span>bisa merebutnya dari Kanada</span></div>
+  <div class="tag" data-at="s3:dijual" data-fx="ink"><svg viewBox="0 0 120 150" class="bust"><defs><radialGradient id="vg3" cx="50%" cy="40%" r="60%"><stop offset="0" stop-color="#F3E6C8"/><stop offset="1" stop-color="#CDB486"/></radialGradient></defs>
+<ellipse cx="60" cy="75" rx="56" ry="71" fill="url(#vg3)" stroke="#3A2A1A" stroke-width="3"/><ellipse cx="60" cy="75" rx="50" ry="65" fill="none" stroke="#3A2A1A" stroke-width="1.2"/>
+<g fill="#3A2A1A"><path d="M60 34c-15 0-24 11-24 25 0 10 4 17 9 22-2 4-6 6-13 9-11 4-17 11-19 27 13 13 28 19 47 19s34-6 47-19c-2-16-8-23-19-27-7-3-11-5-13-9 5-5 9-12 9-22 0-14-9-25-24-25z"/>
+<path d="M38 44l6-12 8 6 8-9 8 9 8-6 6 12z"/></g></svg><div><b>Tsar Alexander II</b><span>Kaisar Rusia: lebih baik dijual ke Amerika</span></div></div>
+</div>
+<div class="p" data-in="s4" data-out="s4:Harganya">
+  <div class="kk">WASHINGTON &middot; <span class="g">30</span> MARET <span class="g">1867</span></div>
+  <div class="card row" data-at="s4:Jam" data-fx="ink"><b class="num big"><span class="g">04.00</span></b><span>pagi, setelah negosiasi semalam suntuk</span></div>
+  <div class="tags"><div class="tag" data-at="s4:William" data-fx="ink"><svg viewBox="0 0 120 150" class="bust"><defs><radialGradient id="vg1" cx="50%" cy="40%" r="60%"><stop offset="0" stop-color="#F3E6C8"/><stop offset="1" stop-color="#CDB486"/></radialGradient></defs>
+<ellipse cx="60" cy="75" rx="56" ry="71" fill="url(#vg1)" stroke="#3A2A1A" stroke-width="3"/><ellipse cx="60" cy="75" rx="50" ry="65" fill="none" stroke="#3A2A1A" stroke-width="1.2"/>
+<g fill="#3A2A1A"><path d="M60 34c-15 0-24 11-24 25 0 10 4 17 9 22-2 4-6 6-13 9-11 4-17 11-19 27 13 13 28 19 47 19s34-6 47-19c-2-16-8-23-19-27-7-3-11-5-13-9 5-5 9-12 9-22 0-14-9-25-24-25z"/>
+<path d="M41 58c-4 6-4 16 0 24l4-2c-2-6-2-14 0-20z M79 58c4 6 4 16 0 24l-4-2c2-6 2-14 0-20z"/></g></svg><div><b>William H. Seward</b><span>Menlu AS</span></div></div><div class="tag" data-at="s4:Eduard" data-fx="ink"><svg viewBox="0 0 120 150" class="bust"><defs><radialGradient id="vg2" cx="50%" cy="40%" r="60%"><stop offset="0" stop-color="#F3E6C8"/><stop offset="1" stop-color="#CDB486"/></radialGradient></defs>
+<ellipse cx="60" cy="75" rx="56" ry="71" fill="url(#vg2)" stroke="#3A2A1A" stroke-width="3"/><ellipse cx="60" cy="75" rx="50" ry="65" fill="none" stroke="#3A2A1A" stroke-width="1.2"/>
+<g fill="#3A2A1A"><path d="M60 34c-15 0-24 11-24 25 0 10 4 17 9 22-2 4-6 6-13 9-11 4-17 11-19 27 13 13 28 19 47 19s34-6 47-19c-2-16-8-23-19-27-7-3-11-5-13-9 5-5 9-12 9-22 0-14-9-25-24-25z"/>
+<path d="M48 72c6 4 18 4 24 0l2 4c-8 5-20 5-28 0z"/></g></svg><div><b>Eduard de Stoeckl</b><span>Diplomat Rusia</span></div></div></div>
+</div>
+<div class="p" data-in="s4:Harganya" data-out="s5">
+  <div class="kk">HARGA PEMBELIAN</div>
+  <div class="mega"><small>US$</small><b class="ct" data-from="0" data-to="7.2" data-dec="1" data-a="s4:7,2" data-d="1.2"><span class="g">0,0</span></b><small>juta</small></div>
+  <div class="card row" data-at="s4:dolar" data-fx="ink"><b class="num sm"><span class="g">72</span> koin</b><span><span class="g">1</span> koin di timbangan = US$<span class="g">100.000</span></span></div>
+  <div class="lb" data-at="s4:dolar" data-fx="fade">dibayar dalam emas &middot; &asymp; US$<span class="g">4,74</span> per km²</div>
+</div>
+<div class="p" data-in="s5" data-out="s5:Ada">
+  <div class="kk">SENAT AS &middot; <span class="g">9</span> APRIL <span class="g">1867</span></div>
+  <div class="vote"><div data-at="s5:37" data-fx="pop"><b class="num nv"><span class="g">37</span></b><span>SETUJU</span></div><i data-at="s5:lawan" data-fx="fade">&ndash;</i><div data-at="s5:dua" data-fx="pop"><b class="num rd2"><span class="g">2</span></b><span>MENOLAK</span></div></div>
+  <div class="lb" data-at="s5:dua" data-fx="fade">perjanjian diratifikasi</div>
+</div>
+<div class="p" data-in="s5:Ada" data-out="s6">
+  <div class="kk">EJEKAN DI KORAN</div>
+  <div class="h2"><em>&ldquo;Seward&rsquo;s Folly&rdquo;</em></div>
+  <div class="lb">kebodohan Seward &middot; juga &ldquo;Seward&rsquo;s Icebox&rdquo;</div>
+  <div class="card row" data-at="s5:penelusuran" data-fx="ink"><b class="sm">PULUHAN KORAN</b><span>ditelusuri ulang oleh sejarawan</span></div>
+  <div class="card row" data-at="s5:mendukung" data-fx="ink"><b class="sm">MAYORITAS</b><span>koran mendukung atau netral (penelusuran <span class="g">48</span> koran besar)</span></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="kk">SITKA &middot; <span class="g">18</span> OKTOBER <span class="g">1867</span></div>
+  <div class="h2">Bendera diturunkan</div>
+  <div class="lb it" data-at="s6:Menurut" data-fx="fade">menurut catatan seorang saksi:</div>
+  <div class="tries"><div data-at="s6:tiang" data-fx="pop"><b>I</b><span>gagal</span></div><div data-at="s6:tentara" data-fx="pop"><b>II</b><span>gagal</span></div><div class="ok" data-at="s6:berhasil" data-fx="pop"><b>III</b><span>berhasil</span></div></div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Tahun">
+  <div class="kk">GANTI KALENDER</div>
+  <div class="cal"><div data-at="s7:Julian" data-fx="ink"><span>JULIAN</span><b class="num"><span class="g">6</span> Okt</b></div><div class="nv" data-at="s7:Gregorian" data-fx="ink"><span>GREGORIAN</span><b class="num"><span class="g">18</span> Okt</b></div></div>
+  <div class="st" data-at="s7:dua" data-fx="stamp">SELISIH <span class="g">12</span> HARI</div>
+</div>
+<div class="p" data-in="s7:Tahun" data-out="s8">
+  <div class="kk">NEGARA BAGIAN</div>
+  <div class="mega"><b class="num"><span class="g">1959</span></b></div>
+  <div class="card row" data-at="s7:resmi" data-fx="ink"><b class="num sm">ke-<span class="g">49</span></b><span>Alaska resmi jadi negara bagian AS</span></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="kk">HARI INI</div>
+  <div class="card row cp" data-at="s8:Dua" data-fx="ink"><b class="num"><span class="g">2</span> sen</b><span>per acre, tahun <span class="g">1867</span></span></div>
+  <div class="card row" data-at="s8:terluas" data-fx="ink"><b class="sm">TERLUAS</b><span>negara bagian terbesar di Amerika Serikat</span></div>
+  <div class="duo"><i data-at="s8:rugi" data-fx="pop">RUGI BESAR?</i><i data-at="s8:masuk" data-fx="pop">MASUK AKAL?</i></div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 04</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":8.06,"s2":8.22,"s2e":18.398,"s3":18.558,"s3e":28.748,"s4":28.908,"s4e":42.042,"s5":42.202,"s5e":51.761,"s6":51.921,"s6e":62.82,"s7":62.98,"s7e":74.354,"s8":74.514,"s8e":82.176,"end":82.176,"dur":85.18,"outro":82.426},AT={"s1:kilometer":3.799,"s1:sen":7.007,"s2:Rusia":10.54,"s2:Alaska":11.345,"s2:bulu":12.739,"s2:hampir":14.388,"s3:Kanada":23.842,"s3:merebutnya":24.523,"s3:Amerika":28.253,"s4:semalam":29.596,"s4:menandatangani":38.775,"s4:perjanjian":39.425,"s4:7,2":40.773,"s5:Senat":42.237,"s5:menyetujui":42.686,"s5:Seward's":45.921,"s6:Sitka":53.553,"s6:diturunkan":55.534,"s6:tersangkut":59.09,"s6:dan":60.096,"s6:ketiga":61.118,"s6:menurunkannya":62.202,"s7:Alaska":63.371,"s7:serah":68.573,"s7:1959":71.49,"s8:Rusia":79.374,"s8:keputusannya":80.659,"s6:18-0.4":51.558,"s7:Alaska-0.35":63.021,"s1:satu":2.901,"s1:Sekitar":6.357,"s2:berang-berang":13.552,"s2:habis":14.76,"s2:Krimea":17.964,"s3:Inggris":23.27,"s3:dijual":27.742,"s4:Harganya":40.417,"s4:Jam":30.942,"s4:William":35.137,"s4:Eduard":37.506,"s4:dolar":41.64,"s5:Ada":44.9,"s5:37":43.553,"s5:lawan":44.219,"s5:dua":44.389,"s5:penelusuran":48.448,"s5:mendukung":51.28,"s6:Menurut":56.923,"s6:tiang":59.647,"s6:tentara":60.762,"s6:berhasil":61.815,"s7:Tahun":71.227,"s7:Julian":66.219,"s7:Gregorian":70.291,"s7:dua":66.946,"s7:resmi":73.023,"s8:Dua":74.543,"s8:terluas":77.47,"s8:rugi":79.668,"s8:masuk":81.139},DUR=85.18,OUT=82.426;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ blot:(e,t)=>{tl.fromTo(e,{scale:0,opacity:1,rotation:-20},{scale:1,rotation:0,duration:.34,ease:"power2.in"},t);tl.to(e,{opacity:0,scale:1.15,duration:.4,ease:"power1.out"},t+.62);},
+ink:(e,t)=>tl.fromTo(e,{clipPath:'circle(0% at 14% 50%)',opacity:1},{clipPath:'circle(150% at 14% 50%)',duration:.5,ease:'power2.out'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{clipPath:'circle(0% at 6% 10%)',opacity:1,rotationY:-10,transformPerspective:1600},{clipPath:'circle(170% at 6% 10%)',rotationY:0,duration:.6,ease:'power2.inOut'},a-.2),POUT=(tl,p,b)=>tl.to(p,{rotationY:-92,transformPerspective:1600,opacity:0,duration:.34,ease:'power2.in'},b-.32);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

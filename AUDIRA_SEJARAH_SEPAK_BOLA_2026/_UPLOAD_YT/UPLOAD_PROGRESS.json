@@ -1,0 +1,32 @@
+{
+  "channel": "Audira Sport Facts (@AudiraSportFacts) / SPORTFACTS",
+  "channelId": "UCoDcAA8vcRgpSax9Mjyrllg",
+  "mode": "scheduled public, 2/day, night slots",
+  "note": "User uploaded 10 drafts (EP01-10) in YouTube Studio. EP11 NOT uploaded yet. Claude fills metadata per draft via Chrome. Metadata source: _UPLOAD_YT/NN_*.txt (JUDUL/DESKRIPSI/TAGS). Thumbnail custom skipped (OS dialog blocks it; video first-frame = cover).",
+  "recipe_per_draft": [
+    "1. YouTube Studio > Content > Shorts. find 'Edit draft for NN <TITLE>' -> click.",
+    "2. Title field: click, ctrl+a, Delete, type JUDUL (drop accents: Pele not Pele-accent).",
+    "3. Description field: type DESKRIPSI para + blank + 'Created by Agus Dwi R. AUDIRA Sport Facts.' + blank + hashtag line.",
+    "4. Scroll down ~10. Audience already 'No, not Made for Kids' (default) - leave.",
+    "5. Click 'Show more'. Scroll ~4. Paid promotion: click 'No, my video doesn't include paid promotion'.",
+    "6. Scroll ~4. AI use: click 'Yes' (user rule: AI label mandatory). Verify radio filled.",
+    "7. Scroll ~5 to Tags. Click field, type TAGS with trailing comma.",
+    "8. Click Next x3 (use find 'Next button at bottom of dialog' -> ref). Reaches Visibility.",
+    "9. find 'Schedule expand' -> click. Date default = tomorrow; change only if target differs (date button opens calendar, pick day). Time field: triple_click + type HH:MM + Return. Verify via screenshot (textbox read may lag).",
+    "10. Click 'Schedule' button. Close confirmation. Mark SCHEDULED here.",
+    "TRAP: viewport/coords shift per screenshot - prefer find+ref over fixed coords. TRAP: time textbox sometimes ignores first triple_click+type; re-do by coordinate and screenshot-verify. TRAP: wait for any 'Operation in progress' spinner before opening next draft."
+  ],
+  "episodes": {
+    "EP01": {"title": "Cuma 8 Negara Pernah Juara Dunia...", "schedule": "2026-11-14 19:30 WIB", "status": "SCHEDULED", "shortId": "o1rPBkJiicY"},
+    "EP02": {"title": "Brasil Lima Bintang...", "schedule": "2026-11-14 20:30 WIB", "status": "SCHEDULED", "shortId": "RxRAU8LQsJw"},
+    "EP03": {"schedule": "2026-11-15 19:30 WIB", "status": "SCHEDULED", "shortId": "1U2jrIYMMF8"},
+    "EP04": {"schedule": "2026-11-15 20:30 WIB", "status": "SCHEDULED", "shortId": "wBOd9bxcxVg"},
+    "EP05": {"schedule": "2026-11-16 19:30 WIB", "status": "SCHEDULED", "shortId": "NqSOUa7CRV8"},
+    "EP06": {"schedule": "2026-11-16 20:30 WIB", "status": "SCHEDULED", "shortId": "MQuwu91FsAg"},
+    "EP07": {"schedule": "2026-11-17 19:30 WIB", "status": "SCHEDULED", "shortId": "CEnuthm0THE"},
+    "EP08": {"schedule": "2026-11-17 20:30 WIB", "status": "SCHEDULED", "shortId": "1crlXG07x8A"},
+    "EP09": {"schedule": "2026-11-18 19:30 WIB", "status": "SCHEDULED", "shortId": "sYdYsJ3sGmw"},
+    "EP10": {"schedule": "2026-11-18 20:30 WIB", "status": "SCHEDULED", "shortId": "QmdNGFKHhjI"},
+    "EP11": {"schedule": "2026-11-19 19:30 WIB", "status": "NOT_UPLOADED"}
+  }
+}

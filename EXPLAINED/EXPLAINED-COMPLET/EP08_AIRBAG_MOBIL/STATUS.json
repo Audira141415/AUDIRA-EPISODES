@@ -1,0 +1,194 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP08_AIRBAG_MOBIL",
+  "topic": "EP08 Airbag Mobil",
+  "createdAt": "2026-11-12T10:06:29.706Z",
+  "updatedAt": "2026-11-13T12:24:27.887Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.706Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T23:54:13.079Z",
+      "note": "Riset bersumber: research/SOURCE_REGISTER.md + RESEARCH_REPORT.md"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-13T00:01:58.266Z",
+      "doneAt": "2026-11-13T00:01:58.266Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T23:54:13.079Z",
+      "doneAt": "2026-11-12T23:54:13.079Z",
+      "note": "Disetujui pengguna 2026-11-13 (acc menyeluruh di chat: \"langsung saja approve\"). Gaya belum dipilih. 197 kata."
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit (EP04 Standard)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-13T00:01:58.333Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [],
+      "doneAt": "2026-11-13T00:02:04.244Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T04:56:15.096Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-13T04:46:52.197Z",
+      "startedAt": "2026-11-13T04:46:52.197Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci + visual audit",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T04:56:15.096Z",
+          "text": "sync: 1 gambar draf/contact sheet; acc tidak tercatat, disimpulkan karena tahap sesudahnya sudah ada"
+        },
+        {
+          "at": "2026-11-13T05:01:09.903Z",
+          "text": "sync: 1 gambar draf/contact sheet; acc tidak tercatat, disimpulkan karena tahap sesudahnya sudah ada"
+        }
+      ],
+      "approved": true,
+      "approvedAt": null,
+      "approvalSource": "inferred",
+      "doneAt": "2026-11-13T04:58:08.396Z",
+      "startedAt": "2026-11-13T04:55:32.402Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T12:24:27.887Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        }
+      ],
+      "doneAt": "2026-11-13T12:09:23.110Z",
+      "startedAt": "2026-11-13T12:09:23.110Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:56.321Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-13T00:20:00.743Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "startedAt": "2026-11-12T10:06:29.707Z",
+      "doneAt": "2026-11-13T00:04:38.083Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "cara-kerja-benda-EP08",
+    "wordCount": 197,
+    "title": "Airbag Tidak Diisi Udara",
+    "estimateSec": "79–88",
+    "style": "PRECISION",
+    "approvalSource": "izin menyeluruh pengguna 2026-11-13",
+    "speechSec": 87.468,
+    "filmSec": 90.47,
+    "wpm": 135,
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-13T12:24:27.887Z",
+  "resetNote": "2026-11-13: riset/naskah/style/QA lama hasil skrip luar (placeholder) diarsipkan ke _review/_ARSIP_GENERATED_2026-11-12/; mulai ulang dari riset. 2026-11-13: riset + naskah baru selesai, naskah di-acc; berikutnya gerbang style.",
+  "handoverLog": [
+    {
+      "at": "2026-11-13T04:58:19.014Z",
+      "doing": "EP08 draf poles r4 selesai (skor juri r3 3.17), belum dinilai ulang. Belum ada MP4.",
+      "next": "Sesi baru: juri buta draft/contact-sheet.jpg vs style/cover-reference.jpg (F:/AUDIRA-SKILL-MOTION/qa/jury.md). Sisa lemah: dashboard gelap berat di s8, papan 13-23 kecil di s3, belum ada DOF sungguhan. Setelah LOLOS: draft approved (izin menyeluruh 2026-11-13) -> bash _tools/final.sh EP08_AIRBAG_MOBIL -> npm run sign (--c2pa) -> npm run deliver -> NOTES/QA/index."
+    },
+    {
+      "at": "2026-11-13T05:10:13.488Z",
+      "doing": "EP08 draf poles r5-r6 selesai (DOF depth-pass di world3d.js, s6 sudut samping + kepala menekan kantong, s8 kursi anak, papan 13-23 besar, panel lit lebih terang). Juri r4 3.17, r5 3.17, r6 3.33 (lighting 4, material 4, lainnya 3). Belum LOLOS, belum ada MP4.",
+      "files": [
+        "EP08_AIRBAG_MOBIL/project/world3d.js",
+        "EP08_AIRBAG_MOBIL/project/build-video.mjs",
+        "EP08_AIRBAG_MOBIL/draft/contact-sheet.jpg",
+        "EP08_AIRBAG_MOBIL/style/cover-topic.png"
+      ],
+      "next": "Sesi baru: poles r7 di project/world3d.js lalu juri buta lagi. Perbaikan juri r6: (1) s3 tarik kamera mundur/geser agar mobil utuh + papan AUDIRA CRASH tidak terpotong, hapus papan 13-23 di dunia (sudah ada di panel) atau panel, tambah detail mobil; (2) s4 kurangi teks: hapus satu label 3D (BAHAN KIMIA PADAT) atau jauhkan dari header; (3) s2 'ARAH MOBIL' terpotong kiri, s6 beri ruang kepala di bawah header (turunkan look y / mundur), DOF perkuat (Dof uniform amt 0.9 -> 1.4, R 13 -> 18). Contact sheet: bash ../../_tools/snap.sh EP08_AIRBAG_MOBIL \"3.8,11.6,27.95,35.4,45.6,53.3,73.5,80.5,89\" lalu gabung 3x3 400x711 ke draft/contact-sheet.jpg (PIL). Cover: frame 3.8 ke style/cover-topic.png. Setelah LOLOS: update draft approved -> bash _tools/final.sh EP08_AIRBAG_MOBIL -> npm run sign --c2pa -> npm run deliver -> NOTES/QA_REPORT/index."
+    },
+    {
+      "at": "2026-11-13T05:37:55.556Z",
+      "doing": "EP08 rebuild world3d.js r7-r9 selesai (studio sweep, 8 stasiun, DOF). Juri buta r7 3.33, r8 3.17, r9 3.0 (depth 4, motion 2). Belum LOLOS, belum ada MP4.",
+      "files": [
+        "EP08_AIRBAG_MOBIL/project/world3d.js",
+        "EP08_AIRBAG_MOBIL/project/build-video.mjs",
+        "EP08_AIRBAG_MOBIL/draft/contact-sheet.jpg",
+        "EP08_AIRBAG_MOBIL/style/cover-topic.png"
+      ],
+      "next": "Sesi baru: perbaikan juri r9 di project/world3d.js: (1) s6 dua frame dummy sama sudut -> setelah s6:Kantong ganti sudut (depan 3/4 atau atas) + grafik panel 'DIREDAM' lebih besar/kontras di build-video.mjs; (2) crash pasca-tabrak mundur lagi agar mobil + papan AUDIRA CRASH LAB utuh; (3) mobil & figurin kurang terbaca plastik: tambah reflektansi/env, tekstur halus; (4) kantong: kurangi noise vertex atau sheen agar tidak 'kembang kol'. Sheet 12 frame: snap.sh EP08_AIRBAG_MOBIL \"0.6,3.8,11.6,16.5,26.8,37.5,43.5,53.3,57,63,73.5,80.9,84\" lalu gabung 3x4 400x711 (buang frame 0.6) ke draft/contact-sheet.jpg; cover = frame 3.8. Cadangan r6: F:/hf-render-tmp/ep08_world3d_r6.js. Setelah LOLOS: update draft approved -> final.sh -> sign -> deliver."
+    },
+    {
+      "at": "2026-11-13T12:09:45.315Z",
+      "doing": "FINAL_VIDEO.mp4 EP08 sudah dirender 2026-11-13 19:09 via _tools/final.sh (60 fps, -14.0 LUFS, TP -1.8 dBTP, metadata kepemilikan). Belum ditandatangani, belum deliver. Acc draf dari pengguna 2026-11-13 'Ya, render final' (juri buta <4).",
+      "files": [
+        "EP08_AIRBAG_MOBIL/FINAL_VIDEO.mp4"
+      ],
+      "next": "JANGAN render ulang. Dari F:/AUDIRA-SKILL-MOTION/starter: npm run sign -- <EP08>/FINAL_VIDEO.mp4 --title=\"Airbag Tidak Diisi Udara\" --id=AUDIRA-cara-kerja-benda-EP08 --c2pa -> npm run deliver -- <EP08>/FINAL_VIDEO.mp4 (perbaiki RED) -> NOTES.md, QA_REPORT.md, record_score final, append_lesson, update final/delivery, SERIES_PLAN.md + MASTER_INDEX.md."
+    }
+  ],
+  "handover": {
+    "at": "2026-11-13T12:09:45.315Z",
+    "doing": "FINAL_VIDEO.mp4 EP08 sudah dirender 2026-11-13 19:09 via _tools/final.sh (60 fps, -14.0 LUFS, TP -1.8 dBTP, metadata kepemilikan). Belum ditandatangani, belum deliver. Acc draf dari pengguna 2026-11-13 'Ya, render final' (juri buta <4).",
+    "files": [
+      "EP08_AIRBAG_MOBIL/FINAL_VIDEO.mp4"
+    ],
+    "next": "JANGAN render ulang. Dari F:/AUDIRA-SKILL-MOTION/starter: npm run sign -- <EP08>/FINAL_VIDEO.mp4 --title=\"Airbag Tidak Diisi Udara\" --id=AUDIRA-cara-kerja-benda-EP08 --c2pa -> npm run deliver -- <EP08>/FINAL_VIDEO.mp4 (perbaiki RED) -> NOTES.md, QA_REPORT.md, record_score final, append_lesson, update final/delivery, SERIES_PLAN.md + MASTER_INDEX.md."
+  }
+}

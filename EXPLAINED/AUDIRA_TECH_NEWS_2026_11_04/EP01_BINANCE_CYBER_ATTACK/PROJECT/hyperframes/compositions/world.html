@@ -1,0 +1,179 @@
+<template><style>
+#root{position:absolute;inset:0;overflow:hidden;background:#02050A}
+#gl{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.p{position:absolute;inset:0;z-index:4;visibility:hidden;transform-origin:50% 40%;will-change:transform}
+.band{position:absolute;left:84px;right:84px;top:296px;height:985px;display:flex;flex-direction:column;justify-content:center;gap:30px}
+.band.top{justify-content:flex-start;padding-top:10px}.band.cen{align-items:center;text-align:center}
+.d{font-family:"Archivo Black",sans-serif;line-height:1;letter-spacing:-1px;color:#F3F8FF}
+.mono{font-family:"JetBrains Mono",monospace;font-weight:700;letter-spacing:.5px}
+.kick{font-size:31px;color:#6CC4FF;text-shadow:0 2px 10px #000}.cen2{text-align:center;align-self:center}
+.hero{font-size:238px;text-shadow:0 0 60px rgba(255,46,63,.55),0 8px 0 rgba(0,0,0,.55)}.hero2{font-size:150px;color:#FF2E3F;text-shadow:0 0 44px rgba(255,46,63,.55)}
+.hero3{font-size:150px;margin:14px 0 16px;letter-spacing:-3px}.hero4{font-size:290px;text-align:center;letter-spacing:-8px;text-shadow:0 6px 0 rgba(0,0,0,.45),0 0 50px rgba(0,0,0,.75)}
+.hl{background:#FF2E3F;color:#fff;padding:0 16px 6px;display:inline-block;text-shadow:none}
+.title{font-size:88px;line-height:1.02;text-shadow:0 4px 30px rgba(0,0,0,.85)}.title.big{font-size:124px;margin:16px 0 6px}
+.q{font-size:136px;line-height:1.06;text-shadow:0 6px 40px rgba(0,0,0,.9)}
+.src{font-family:Inter,sans-serif;font-weight:700;font-size:28px;color:#DCE8F2;background:rgba(2,5,10,.78);padding:8px 14px;align-self:flex-start;border-radius:4px}
+.note{font-family:Inter,sans-serif;font-weight:700;font-size:38px;line-height:1.24;color:#F3F8FF;text-shadow:0 2px 14px rgba(0,0,0,.9)}
+.tiny{font-size:28px;color:#C4D6E6;margin-top:10px}
+.chip{font-family:"JetBrains Mono",monospace;font-weight:800;font-size:34px;padding:16px 26px;border:3px solid;border-radius:6px;background:rgba(2,5,10,.82);align-self:center}
+.glass{background:linear-gradient(160deg,rgba(14,24,36,.88),rgba(5,10,18,.9));border:1px solid rgba(160,205,255,.3);border-radius:14px;padding:34px;box-shadow:0 34px 70px -16px rgba(0,0,0,.85),0 10px 26px -8px rgba(0,0,0,.65)}
+.clock{font-size:190px;letter-spacing:-5px;margin:16px 0 22px;color:#FF2E3F;font-variant-numeric:tabular-nums}
+.track{height:18px;background:rgba(160,205,255,.16);border-radius:3px;overflow:hidden;margin-bottom:22px}.track i{display:block;height:100%;width:100%;background:#FF2E3F;transform-origin:0 50%}.track.big{height:30px}.track .fill{transform-origin:0 50%}
+.cmp{display:flex;flex-direction:column;gap:16px;background:rgba(3,7,13,.72);padding:30px;border-radius:12px;border:1px solid rgba(160,205,255,.22)}.cl{font-size:31px;color:#F3F8FF}.bar{height:74px;transform-origin:0 50%;border-radius:2px;margin-bottom:16px}
+.tbl{display:flex;flex-direction:column;gap:6px}.row{display:flex;align-items:baseline;justify-content:space-between;gap:20px;border-bottom:1px solid rgba(160,205,255,.2);padding:14px 0}.rn{font-size:36px;color:#9FB7CC}.rv{font-size:112px;letter-spacing:-3px;font-variant-numeric:tabular-nums}
+.stamp{align-self:center;font-family:"Archivo Black",sans-serif;font-size:76px;line-height:1;color:#FF2E3F;border:7px solid #FF2E3F;padding:16px 28px;border-radius:8px;background:rgba(2,5,10,.82);text-align:center}
+.ev{display:flex;flex-direction:column;gap:8px;padding:22px 26px;background:rgba(5,10,18,.88);border-left:8px solid #2FA8FF;border-radius:4px}.ev.dim{border-left-color:#9FB7CC}.evk{font-size:28px;color:#9FB7CC}.evt{font-family:Inter,sans-serif;font-weight:900;font-size:50px;color:#F3F8FF;line-height:1.12}
+.dossier{display:flex;flex-direction:column;gap:12px}.tag{align-self:flex-start;font-size:36px;color:#02050A;background:#F3F8FF;padding:12px 18px;margin-top:12px}
+.vs{display:flex;gap:22px}.vsc{flex:1;display:flex;flex-direction:column;gap:18px;padding:30px 24px;background:rgba(5,10,18,.88);border:1px solid rgba(160,205,255,.3);border-radius:12px}.vst{font-size:62px;letter-spacing:-1px}
+.gates{display:flex;flex-direction:column;gap:30px;align-items:stretch}.gt{padding:44px 20px;text-align:center;border:5px solid #FF2E3F;background:rgba(2,5,10,.8);border-radius:12px;box-shadow:0 0 44px rgba(255,46,63,.34)}.gtt{font-size:96px}
+.logo{width:520px;align-self:center}.cr{font-family:Inter,sans-serif;font-weight:700;font-size:44px;color:#fff}
+#hud{position:absolute;left:84px;right:84px;top:190px;height:64px;z-index:8;display:flex;justify-content:space-between;align-items:center;font-family:"JetBrains Mono",monospace;font-weight:700;font-size:28px;color:#F3F8FF;text-shadow:0 2px 10px #000}
+#rec{display:inline-block;width:18px;height:18px;background:#FF2E3F;margin-right:14px;border-radius:50%}
+#capshade{position:absolute;left:0;right:0;top:1230px;height:400px;z-index:6;background:linear-gradient(transparent,rgba(1,3,7,.9) 26%,rgba(1,3,7,.9) 82%,transparent)}
+#vig{position:absolute;inset:0;z-index:3;background:radial-gradient(ellipse at center,transparent 46%,rgba(0,0,0,.66) 100%)}
+#grain{position:absolute;inset:-100px;background:url(assets/img/grain.png);opacity:.08;z-index:9;mix-blend-mode:overlay}
+#flash{position:absolute;inset:0;z-index:5;background:#FF2E3F;opacity:0}
+#black{position:absolute;inset:0;z-index:10;background:#000;opacity:0}
+#outro{position:absolute;inset:0;z-index:11;opacity:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:44px;padding-bottom:300px}
+.cred{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:28px;color:#9FB7CC;text-align:center;line-height:1.5}
+</style>
+<div id="root" data-composition-id="world" data-width="1080" data-height="1920">
+<canvas id="gl" width="1080" height="1920" data-layout-ignore></canvas>
+<div id="vig" data-layout-ignore></div>
+<div id="flash" data-layout-ignore></div>
+<section class="p" data-in="@0" data-out="s1:Angkanya" data-first="1"><div class="band cen">
+    <div class="mono kick">PENCURIAN ASET KRIPTO &middot; 29 OKT 2026</div>
+    <div class="d hero">US$6,3</div><div class="d hero2">MILIAR</div>
+    <div class="chip" style="color:#FF2E3F;border-color:#FF2E3F" data-at="s1:terbesar" data-fx="pop">REKOR, MENURUT AP</div>
+    <div class="src">Angka: estimasi Binance. Ilustrasi 3D.</div></div></section>
+<section class="p" data-in="s1:Angkanya" data-out="s2:29" ><div class="band">
+    <div class="d title" data-at="s1:Angkanya" data-fx="up">SEKITAR <span class="hl">4&times;</span> BYBIT</div>
+    <div class="cmp"><div class="mono cl">BYBIT, FEB 2025 &middot; US$1,5 MILIAR</div><div class="bar" style="width:22.9%;background:#2FA8FF" data-at="s1:kasus" data-fx="grow"></div>
+    <div class="mono cl">BINANCE, OKT 2026 &middot; US$6,3 MILIAR</div><div class="bar" style="width:96%;background:#FF2E3F" data-at="s1:Bybit" data-fx="grow"></div></div></div></section>
+<section class="p" data-in="s2:29" data-out="s2:Estimasi" ><div class="band top">
+    <div class="glass"><div class="mono kick">TRM LABS &middot; WAKTU UTC</div>
+    <div class="d clock" id="clock">20:05</div>
+    <div class="track"><i id="clockbar"></i></div>
+    <div class="note" data-at="s2:sebagian" data-fx="up">Sebagian besar keluar dalam sekitar 20 menit</div></div>
+    <div class="chip" style="color:#FF2E3F;border-color:#FF2E3F" data-at="s2:mengirim" data-fx="pop">DOMPET PANAS &#8594; PENYERANG</div></div></section>
+<section class="p" data-in="s2:Estimasi" data-out="s3:Bagaimana" ><div class="band"><div class="d title" data-at="s2:Estimasi" data-fx="up">TIGA HITUNGAN</div>
+    <div class="glass tbl"><div class="row" data-at="s2:Binance#2" data-fx="left"><span class="mono rn">BINANCE</span><span class="d rv" style="color:#F3F8FF">6,3</span></div><div class="row" data-at="s2:Binance#2+0.25" data-fx="left"><span class="mono rn">TRM LABS</span><span class="d rv" style="color:#F3F8FF">6,36</span></div><div class="row" data-at="s2:Elliptic" data-fx="left"><span class="mono rn">ELLIPTIC</span><span class="d rv" style="color:#FF2E3F">6,43</span></div>
+    <div class="mono tiny">US$ MILIAR. METODE VALUASI BERBEDA.</div></div></div></section>
+<section class="p" data-in="s3:Bagaimana" data-out="s4:31" ><div class="band">
+    <div class="d title" data-at="s3:Bagaimana" data-fx="up">BAGAIMANA PENYERANG MASUK?</div>
+    <div class="stamp" data-at="s3:Belum" data-fx="stamp">BELUM FINAL</div>
+    <div class="ev" data-at="s3:laptop" data-fx="left"><span class="mono evk">KLAIM AWAL BINANCE</span><span class="evt">Laptop teknisi disusupi</span></div>
+    <div class="ev" data-at="s3:menemukan" data-fx="left"><span class="mono evk">TEMUAN LANJUTAN BINANCE</span><span class="evt">Ada titik pembobolan lain</span></div>
+    <div class="ev dim" data-at="s3:Laporan" data-fx="left"><span class="mono evk">LAPORAN TEKNIS</span><span class="evt">Masih ditunggu</span></div></div></section>
+<section class="p" data-in="s4:31" data-out="s5:FBI" ><div class="band">
+    <div class="glass dossier" data-at="s4:FBI" data-fx="card"><div class="mono kick">PERNYATAAN FBI &middot; 31 OKT 2026</div>
+    <div class="d title big" data-at="s4:FBI" data-fx="up">FBI:</div><div class="d title big" style="color:#FF2E3F" data-at="s4:FBI#2" data-fx="up">KOREA UTARA</div>
+    <div class="note" data-at="s4:bertanggung" data-fx="up">disebut bertanggung jawab atas pencurian</div>
+    <div class="d title" data-at="s4:US$6" data-fx="up">&gt; US$6 MILIAR</div>
+    <div class="mono tag" data-at="s4:TraderTraitor" data-fx="pop">AKTIVITAS: TRADERTRAITOR</div></div>
+    <div class="src">Atribusi versi FBI. Korea Utara membantah.</div></div></section>
+<section class="p" data-in="s5:FBI" data-out="s5:Sekitar" ><div class="band">
+    <div class="d title" data-at="s5:FBI" data-fx="up">DIKONVERSI KE <span style="color:#2FA8FF">ETH</span></div>
+    <div class="vs"><div class="vsc" data-at="s5:stablecoin" data-fx="left"><svg width="92" height="92" viewBox="0 0 100 100" fill="none" stroke="#F3F8FF" stroke-width="7" stroke-linecap="round" aria-hidden="true"><path d="M50 8V92M14 29L86 71M14 71L86 29"/><path d="M38 16L50 28L62 16M38 84L50 72L62 84M10 45L26 37L22 20M90 55L74 63L78 80M10 55L26 63L22 80M90 45L74 37L78 20"/></svg><div class="d vst">STABLECOIN</div><div class="note">Bisa dibekukan penerbit</div></div>
+    <div class="vsc" data-at="s5:ETH" data-fx="left"><svg width="92" height="92" viewBox="0 0 100 100" fill="none" stroke="#FF2E3F" stroke-width="7" stroke-linecap="round" aria-hidden="true"><path d="M8 30C30 30 34 70 58 70H88M72 54L88 70L72 86"/><path d="M8 70C22 70 28 58 34 50M46 38C50 34 54 30 58 30H88M72 14L88 30L72 46"/></svg><div class="d vst" style="color:#FF2E3F">ETH</div><div class="note">Tidak bisa</div></div></div>
+    <div class="src">Pengamatan FBI. Penjelasan: Elliptic.</div></div></section>
+<section class="p" data-in="s5:Sekitar" data-out="s5:Sisanya" ><div class="band">
+    <div class="glass"><div class="mono kick">ELLIPTIC &middot; DIBEKUKAN ATAU DISITA</div>
+    <div class="d hero3" style="color:#F3F8FF" data-at="s5:US$2,85" data-fx="up">US$2,85<br>MILIAR</div>
+    <div class="track big"><i class="fill" style="width:44%;background:#BFE4FF" data-at="s5:miliar" data-fx="grow"></i></div>
+    <div class="note">44% dari US$6,43 miliar. Tiap balok: 1%.</div></div></div></section>
+<section class="p" data-in="s5:Sisanya" data-out="s5:FBI#2" ><div class="band">
+    <div class="d title" data-at="s5:Sisanya" data-fx="up"><span class="hl">SISANYA BERLARI</span></div>
+    <div class="glass tbl"><div class="row"><span class="d rv" id="cnt-w">0</span><span class="mono rn">DOMPET</span></div>
+    <div class="row" data-at="s5:lebih" data-fx="left"><span class="d rv" id="cnt-t">0</span><span class="mono rn">TRANSAKSI+</span></div>
+    <div class="row" data-at="s5:tiga" data-fx="left"><span class="d rv">3,5</span><span class="mono rn">HARI</span></div></div>
+    <div class="src">Elliptic. Jumlah titik 12.000, posisinya ilustrasi.</div></div></section>
+<section class="p" data-in="s5:FBI#2" data-out="s6:Binance" ><div class="band">
+    <div class="mono kick cen2" data-at="s5:memperingatkan" data-fx="up">TAHAP BERIKUTNYA, MENURUT FBI</div>
+    <div class="gates"><div class="gt" data-at="s5:DeFi" data-fx="pop"><div class="d gtt">DeFi</div></div><div class="gt" data-at="s5:instant" data-fx="pop"><div class="d gtt">INSTANT SWAP</div></div></div>
+    <div class="note cen2" data-at="s5:layanan" data-fx="up">FBI merilis 628 alamat dan meminta industri memblokirnya</div></div></section>
+<section class="p" data-in="s6:Binance" data-out="s7:Korea" ><div class="band top">
+    <div class="mono kick cen2">PERNYATAAN BINANCE</div>
+    <div class="d hero4"><span id="cnt-p">0</span>%</div>
+    <div class="d title cen2" data-at="s6:US$6" data-fx="up">&asymp; US$6 MILIAR DIGANTI</div>
+    <div class="note cen2" data-at="s6:dana#2" data-fx="up">Dari dana perusahaan. Kerugian tidak ditanggung pengguna, kata Binance.</div></div></section>
+<section class="p" data-in="s7:Korea" data-out="s8:Menurut" ><div class="band">
+    <div class="stamp" data-at="s7:membantah" data-fx="stamp">KOREA UTARA MEMBANTAH</div>
+    <div class="glass quote" data-at="s7:Kim" data-fx="card"><div class="mono kick">KIM YO JONG, DIKUTIP AP</div><div class="d title" style="color:#F3F8FF">&ldquo;PROVOKASI USANG&rdquo;</div></div>
+    <div class="ev dim" data-at="s7:FBI" data-fx="left"><span class="mono evk">FBI</span><span class="evt">Tetap menyebut TraderTraitor</span></div></div></section>
+<section class="p" data-in="s8:Menurut" data-out="s8:Kalau" ><div class="band">
+    <div class="glass"><div class="mono kick">ELLIPTIC &middot; PER 3 NOV 2026</div>
+    <div class="d hero3" style="color:#FF2E3F" data-at="s8:US$3,18" data-fx="up">US$3,18<br>MILIAR</div>
+    <div class="note" data-at="s8:masih" data-fx="up">Masih di alamat terkait pencurian</div></div></div></section>
+<section class="p" data-in="s8:Kalau" data-out="@END" ><div class="band cen">
+    <div class="d q" data-at="s8:seberapa" data-fx="up">SEBERAPA</div><div class="d q" style="color:#FF2E3F" data-at="s8:aman" data-fx="up">AMAN</div><div class="d q" data-at="s8:aset" data-fx="up">ASET DIGITAL</div><div class="d q" data-at="s8:kita" data-fx="up">KITA?</div></div></section>
+<div id="capshade" data-layout-ignore></div>
+<div id="hud"><div><span id="rec"></span>AUDIRA TECH NEWS</div><div id="hudr">KASUS BINANCE</div></div>
+<div id="grain" data-layout-ignore></div>
+<div id="black" data-layout-ignore></div>
+<div id="outro"><img class="logo" src="assets/brand/stacked-reversed.svg" alt="AUDIRA"><div class="cr">Created by Agus Dwi R.</div>
+<div class="cred">Sumber: FBI, AP, TRM Labs, Elliptic,<br>Binance, The Guardian, SecurityWeek.<br>Data per 4 November 2026.</div></div>
+</div>
+<script>
+(function(){
+const DUR=87.06,K={"bybit":7.605,"s2":8.391,"breach":12.201,"s2e":19.022,"s3":19.198,"s4":28.3,"s5":37.937,"frozen":45.357,"rest":49.024,"next":53.882,"s6":57.506,"replace":58.642,"s6e":67.466,"s7":67.642,"s7e":72.897,"q":79.074,"end":83.664,"dur":87.06,"shakes":[[0,0.05],[12.201,0.09],[31.814,0.1],[50.124,0.08],[68.796,0.14]]},AT={"s1:Angkanya":6.424,"s1:terbesar":4.379,"s2:29":8.391,"s1:kasus":7.401,"s1:Bybit":7.605,"s2:Estimasi":15.242,"s2:sebagian":13.504,"s2:mengirim":12.201,"s3:Bagaimana":19.198,"s2:Binance#2":15.568,"s2:Binance#2+0.25":15.818,"s2:Elliptic":17.488,"s4:31":28.3,"s3:Belum":20.768,"s3:laptop":23.1,"s3:menemukan":25.191,"s3:Laporan":26.835,"s5:FBI":38.032,"s4:FBI":29.437,"s4:FBI#2":31.122,"s4:bertanggung":32.642,"s4:US$6":34.53,"s4:TraderTraitor":37.082,"s5:Sekitar":45.357,"s5:stablecoin":42.54,"s5:ETH":44.224,"s5:Sisanya":49.024,"s5:US$2,85":45.724,"s5:miliar":46.513,"s5:FBI#2":53.882,"s5:lebih":51.21,"s5:tiga":52.92,"s6:Binance":57.528,"s5:memperingatkan":54.14,"s5:DeFi":55.714,"s5:instant":56.814,"s5:layanan":56.489,"s7:Korea":67.791,"s6:US$6":62.689,"s6:dana#2":64.14,"s8:Menurut":73.099,"s7:membantah":68.796,"s7:Kim":70.452,"s7:FBI":71.702,"s8:Kalau":79.074,"s8:US$3,18":74.946,"s8:masih":76.534,"s8:seberapa":82.265,"s8:aman":82.686,"s8:aset":82.89,"s8:kita":83.405},OUT=84.214;
+const END=OUT-0.1;
+const lbl=[[0,"KASUS BINANCE"],[8.391,"BERKAS 01 / PENCURIAN"],[19.198,"BERKAS 02 / JALUR MASUK"],[28.3,"BERKAS 03 / ATRIBUSI"],[37.937,"BERKAS 04 / PENCUCIAN"],[57.506,"BERKAS 05 / PEMULIHAN"],[67.642,"BERKAS 06 / BANTAHAN"],[73.099,"BERKAS 07 / SISA ASET"]];
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:60,opacity:0},{y:0,opacity:1,duration:.45,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:-80,opacity:0},{x:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.74,opacity:0},{scale:1,opacity:1,duration:.4,ease:'back.out(1.4)'},t),
+ card:(e,t)=>tl.fromTo(e,{y:110,rotationX:-12,opacity:0,transformPerspective:1200},{y:0,rotationX:0,opacity:1,duration:.58,ease:'power4.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-2,opacity:1,duration:.2,ease:'power4.in'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.7,ease:'power3.out'},t)
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{const f=FX[e.dataset.fx];const a=AT[e.dataset.at];if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else gsap.set(e,{opacity:0});f(e,a);});
+// Panels travel on the film's single axis: they push toward camera, in and out.
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:AT[p.dataset.in];
+  const b=p.dataset.out==='@END'?END:AT[p.dataset.out];
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first){tl.set(p,{opacity:1,scale:1},0);}
+  else tl.fromTo(p,{scale:.84,opacity:0},{scale:1,opacity:1,duration:.34,ease:'power4.out'},a-.14);
+  tl.to(p,{scale:1.2,opacity:0,duration:.24,ease:'power2.in'},b-.22);
+  tl.set(p,{visibility:'hidden'},b+.03);
+});
+tl.to('#flash',{opacity:.34,duration:.06,ease:'none'},K.breach);
+tl.to('#flash',{opacity:0,duration:.5,ease:'power2.out'},K.breach+.06);
+tl.to('#black',{opacity:1,duration:.5,ease:'power2.in'},END-.1);
+tl.to('#hud',{opacity:0,duration:.3},END-.1);
+tl.to('#outro',{opacity:1,duration:.35,ease:'power2.out'},OUT+.1);
+gsap.set('#outro',{opacity:0});
+const clock=q('#clock'),cbar=q('#clockbar'),cw=q('#cnt-w'),ct=q('#cnt-t'),cp=q('#cnt-p'),rec=q('#rec'),hudr=q('#hudr'),grain=q('#grain');
+const id=(n)=>Math.round(n).toLocaleString('de-DE');
+const ease=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+let draw=null;
+const tClock=[AT['s2:mengirim']-.9,AT['s2:Estimasi']-.25];
+const tW=[K.rest+.45,K.rest+1.6],tT=[AT['s5:lebih'],AT['s5:lebih']+1.1],tP=[K.replace,AT['s6:US$6']];
+function hud(t){
+  const u=Math.max(0,Math.min(1,(t-tClock[0])/(tClock[1]-tClock[0])));
+  const mins=u*20,mm=Math.floor(mins),ss=Math.floor((mins-mm)*60);
+  clock.textContent='20:'+String(5+mm).padStart(2,'0');
+  cbar.style.transform='scaleX('+u.toFixed(3)+')';
+  cw.textContent=id(12000*ease((t-tW[0])/(tW[1]-tW[0])));
+  ct.textContent=id(40000*ease((t-tT[0])/(tT[1]-tT[0])));
+  cp.textContent=String(Math.round(95*ease((t-tP[0])/(tP[1]-tP[0]))));
+  let l=lbl[0][1];for(const [a,b] of lbl){if(t>=a)l=b;}hudr.textContent=l;
+  rec.style.opacity=(Math.floor(t*1.5)%2===0)?'1':'.3';
+  const g=Math.floor(t*14);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';
+}
+let last=0;
+function renderAll(t){last=t;hud(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>renderAll(c.t)},0);
+window.addEventListener('hf-seek',e=>renderAll(e.detail.time));
+hud(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

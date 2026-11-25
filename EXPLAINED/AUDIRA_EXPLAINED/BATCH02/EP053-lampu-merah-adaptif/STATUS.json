@@ -1,0 +1,161 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "AE-053",
+  "topic": "Lampu Merah Bisa Mengatur Ribuan Kendaraan Secara Otomatis?",
+  "createdAt": "2026-11-06T23:08:14.831Z",
+  "updatedAt": "2026-11-07T09:19:33.186327+00:00",
+  "currentStage": "delivery",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-06T23:10:46.793576+00:00",
+          "text": "CLAUDE.md, memory, Batch 1 NOTES/STYLE_DECISION read; xlsx v2"
+        }
+      ],
+      "doneAt": "2026-11-06T23:10:46.793576+00:00"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-06T23:16:33.771714+00:00",
+          "text": "research/SOURCE_REGISTER.md + RESEARCH_REPORT.md"
+        }
+      ],
+      "doneAt": "2026-11-06T23:16:33.771714+00:00"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-07T03:36:35.128100+00:00",
+      "notes": [
+        {
+          "at": "2026-11-06T23:10:46.793576+00:00",
+          "text": "Pengguna: Ya, semua no. 1; cover topik dirender"
+        },
+        {
+          "at": "2026-11-07T03:36:35.128100+00:00",
+          "text": "Pengguna: Setuju semua (cover topik)"
+        }
+      ],
+      "doneAt": "2026-11-07T03:36:35.128100+00:00"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-07T03:47:15.694694+00:00",
+      "notes": [
+        {
+          "at": "2026-11-07T03:47:15.694694+00:00",
+          "text": "Pengguna: Setuju, lanjut"
+        }
+      ],
+      "doneAt": "2026-11-07T03:47:15.694694+00:00"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-07T03:47:15.694694+00:00",
+          "text": "Studio bersama BATCH02/studio; smoke still OK"
+        }
+      ],
+      "doneAt": "2026-11-07T03:47:15.694694+00:00"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-07T03:49:54.565280+00:00",
+          "text": "VO Galang, tempo x1.0, sync 97-98%"
+        }
+      ],
+      "doneAt": "2026-11-07T03:49:54.565280+00:00"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-07T08:41:02.740471+00:00",
+          "text": "Film + STORYBOARD + sfx-cues"
+        }
+      ],
+      "doneAt": "2026-11-07T08:41:02.740471+00:00"
+    },
+    {
+      "id": "draft",
+      "name": "Render draf 540×960 + audit visual + contact sheet",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-07T09:04:15.175857+00:00",
+      "notes": [
+        {
+          "at": "2026-11-07T08:41:02.740471+00:00",
+          "text": "draft/stills/_sheet.jpg (8 frame) + draft/RISK_CLIP.mp4 (16-18 s, audio -14 LUFS); audit:visual lulus (statis)"
+        },
+        {
+          "at": "2026-11-07T09:04:15.175857+00:00",
+          "text": "Revisi poin lemah lalu pengguna: Setuju, render final"
+        }
+      ],
+      "doneAt": "2026-11-07T09:04:15.175857+00:00"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-07T09:04:15.175857+00:00",
+          "text": "Patch branding: VO \"Ini AUDIRA Explained\", AudiraSignature, AUDIRA di adegan"
+        },
+        {
+          "at": "2026-11-07T09:19:33.186327+00:00",
+          "text": "FINAL_VIDEO.mp4 tagged + archive; QA_REPORT.md"
+        }
+      ],
+      "doneAt": "2026-11-07T09:19:33.186327+00:00"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-07T09:19:33.186327+00:00",
+          "text": "SOCIAL_CAPTIONS.md ok:true (Jadwal WIB + Label AI); NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-07T09:19:33.186327+00:00"
+    }
+  ],
+  "data": {
+    "style": "VOXELVERSE"
+  }
+}

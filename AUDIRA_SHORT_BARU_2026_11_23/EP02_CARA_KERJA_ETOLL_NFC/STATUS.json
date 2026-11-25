@@ -1,0 +1,573 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP02_CARA_KERJA_ETOLL_NFC",
+  "topic": "Cara kerja kartu e-Toll / tap NFC — kartu tanpa baterai kok bisa bayar",
+  "createdAt": "2026-11-22T17:49:01.515Z",
+  "updatedAt": "2026-11-23T10:16:34.170Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:49:09.211Z",
+          "text": "Dibaca: GLOBAL memory (VO tulis \"Audira\", true peak limiter, sign await, rename EPERM, --jobs 3-4 saat render paralel, Karaoke lebar penuh), EP33 vaksin (TUBUH 2D gagal juri 2x -> NANOFORGE), EP06 sepak bola VINTAGEFORGE, EP04 HD2D."
+        }
+      ],
+      "doneAt": "2026-11-22T17:49:09.211Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:51:44.945Z",
+          "text": "12 fakta bersumber; Rp2 juta dibuang (tak terverifikasi)."
+        }
+      ],
+      "doneAt": "2026-11-22T17:51:44.945Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T17:55:09.525Z",
+      "notes": [
+        {
+          "at": "2026-11-22T17:55:09.525Z",
+          "text": "Pengguna memilih BLUEPRINT (2026-11-23, jawaban \"BLUEPRINT (Recommended)\"). Alternatif ditolak: SEMESTA, FLATLIFE. Engine Remotion 2D."
+        }
+      ],
+      "startedAt": "2026-11-22T17:55:09.525Z",
+      "doneAt": "2026-11-22T17:55:09.071Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T17:58:08.736Z",
+          "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-22T17:58:12.056Z",
+          "text": "198 kata, estimasi 79-88 dtk. Docs rule 12 lengkap."
+        }
+      ],
+      "doneAt": "2026-11-22T17:58:12.056Z",
+      "startedAt": "2026-11-22T17:58:04.225Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:56:14.168Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T23:56:33.009Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-22T23:56:23.698Z",
+      "startedAt": "2026-11-22T23:56:23.698Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:56:29.585Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T17:56:25.467Z",
+      "startedAt": "2026-11-22T17:56:25.467Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T08:37:38.881Z",
+          "text": "sync: look.json FAIL (perlu perbaikan sebelum final)"
+        }
+      ],
+      "doneAt": "2026-11-23T08:37:11.814Z",
+      "startedAt": "2026-11-23T08:37:11.814Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T10:16:33.887Z",
+          "text": "FINAL_EP02_ETOLL_NFC.mp4 1080x1920@60 84 s; -13.7 LUFS TP -1.8; metadata ok; Ed25519 VALID + C2PA; qa_video PASS; juri final 3.83 LOLOS."
+        }
+      ],
+      "doneAt": "2026-11-23T10:16:33.887Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T10:05:05.723Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T10:16:34.030Z",
+          "text": "SOCIAL_CAPTIONS.md lolos validator; SUBTITLES.srt; NOTES.md; lessons BLUEPRINT+GLOBAL; scheduled review-etoll-nfc-24h/72h/7d (upload Rabu 25 Nov 19.00 WIB)."
+        }
+      ],
+      "doneAt": "2026-11-23T10:16:34.030Z",
+      "startedAt": "2026-11-23T10:04:03.569Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP02",
+    "engine": "remotion",
+    "channel": "EXPLAINED",
+    "style": "BLUEPRINT",
+    "wordCount": 198,
+    "estimatedDuration": {
+      "wordCount": 198,
+      "minSec": 79,
+      "maxSec": 88
+    },
+    "shortTitle": "e-Toll"
+  },
+  "syncedAt": "2026-11-23T10:05:05.723Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T17:55:23.256Z",
+      "doing": "Scaffold proyek render (project/) dari F:/AUDIRA-SKILL-MOTION/starter, lalu cover topik BLUEPRINT 1080x1920.",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "research/SOURCE_REGISTER.md",
+        "style/options/*.png"
+      ],
+      "next": "1) node F:/AUDIRA-SKILL-MOTION/new-project.mjs <EP>/project ; ganti node_modules dengan symlink ke /f/AUDIRA-SKILL-MOTION/node_modules (pola EP33); perbaiki project/SERIES.json -> EXPLAINED @AudiraExplained. 2) Salin kit BLUEPRINT 2D + deps (F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/styles/blueprint, styles/shared.tsx, lib/halus.tsx, lib/words.ts, components/WordCaptions.tsx, format.ts, theme.ts, fonts BP Head/BP Mono dari public) ke project/src/blueprint2d/. 3) Cover topik style/cover-topic.png: kartu e-Toll dibelah iso, kumparan antena + chip callout, gelombang medan 13,56 MHz bercahaya, gerbang tol. 4) Naskah docs (rule 12) 190-210 kata, VO tulis \"Audira\". Fakta: research/SOURCE_REGISTER.md. Perbaikan wajib 2D: gradien/glow, bayangan kontak, parallax, drift kamera kontinu, klip 540x960 + camera-audit sebelum juri.",
+      "snapshot": {
+        "episode": "EP02_CARA_KERJA_ETOLL_NFC",
+        "topic": "Cara kerja kartu e-Toll / tap NFC — kartu tanpa baterai kok bisa bayar",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP02",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T17:59:07.289Z",
+      "doing": "Tahap 6 VO Cartesia. audira_generate_voiceover dengan text panjang -> error \"spawn UNKNOWN\"; dengan scriptPath vo-script.txt -> \"no timed lines\". File audio/vo-timed.txt (satu baris \"[00:00] <teks>\") sudah dibuat, belum dicoba.",
+      "command": "audira_generate_voiceover scriptPath=F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP02_CARA_KERJA_ETOLL_NFC/audio/vo-timed.txt",
+      "files": [
+        "audio/vo-script.txt",
+        "audio/vo-timed.txt",
+        "docs/*.md",
+        "project/src/bp/",
+        "project/SERIES.json",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "1) audira_generate_voiceover scriptPath=audio/vo-timed.txt, outputPath=audio/vo.wav, wordsPath=audio/vo-words.json, lang id (bila gagal: pecah per paragraf \"[mm:ss] teks\" atau panggil skrip cartesia langsung; cek pola EP33 audio/). Durasi target 80-90 dtk; bila >90 pakai scripts/tighten-pauses.py maks 0,45 dtk. Salin vo.wav ke project/public/audio/vo.wav, npm run vo -- public/audio/vo.wav. 2) Tulis film 2D di project/src/ep02/ (SVG 1080x1920 dibungkus scale width/1080): pakai primitif src/bp/styles/blueprint/kit.tsx (B palette, Callout, Dim, Typed, IsoBox, line, Hatch, isoAt, poly, seg) + src/bp/styles/shared.tsx (p, pio, drawOn); JANGAN pakai GridBg/Drift/Caption kit (bergantung useVideoConfig 1080) — buat grid, drift kamera kontinu, karaoke caption sendiri (lebar penuh, gap 0.4em, di atas 380 px bawah). 8 adegan sesuai docs/STORYBOARD.md (S1 gerbang tap, S2 31 Okt 2017, S3 bongkar kartu + title block AUDIRA, S4 medan 13,56 MHz, S5 induksi 4 cm + Faraday 1831, S6 saldo + load modulation + palang + 4 vs 7 dtk, S7 MLFF satelit Bali Mandara, S8 outro) potong mengikuti vo-words.json. Wajib: glow feGaussianBlur pada medan/arus, bayangan kontak, gradien radial BG, parallax BG/MG/FG, drift kamera kontinu, <AudiraSignature seed=\"etoll-nfc-ep02\"/> lapisan terakhir, <AudiraOutro/> 3 dtk akhir, Audio vo.wav. Daftarkan EtollPreview (540x960@30) + EtollFinal (1080x1920@60) di src/Root.tsx. 3) Cover topik style/cover-topic.png (still frame S3) lalu tampilkan ke pengguna. 4) npm run sfx, contact sheet draf 6-8 frame + klip 540x960 + audit:camera + audit:visual, draft/THEME_CHECK.md, juri buta (qa/jury.md) record_score. 5) render:final --sfx --vo, limiter true peak, metadata, sign (await), qa_video hardOnly, FINAL_VIDEO.mp4, record_score final. 6) SOCIAL_CAPTIONS.md 6 platform + validator, NOTES.md, append_lesson, 3 scheduled task review.",
+      "snapshot": {
+        "episode": "EP02_CARA_KERJA_ETOLL_NFC",
+        "topic": "Cara kerja kartu e-Toll / tap NFC — kartu tanpa baterai kok bisa bayar",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP02",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T23:56:12.243Z",
+      "doing": "VO Cartesia via scriptPath vo-timed.txt (sesi lanjut)",
+      "command": "audira_generate_voiceover scriptPath=audio/vo-timed.txt",
+      "next": "Bila sukses: copy ke project/public/audio/vo.wav, npm run vo, tulis src/ep02",
+      "snapshot": {
+        "episode": "EP02_CARA_KERJA_ETOLL_NFC",
+        "topic": "Cara kerja kartu e-Toll / tap NFC — kartu tanpa baterai kok bisa bayar",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP02",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:04:13.141Z",
+      "doing": "Tahap 7 poles film 2D. VO SELESAI (audio/vo.wav 80,85 dtk, vo-words.json, disalin ke project/public/audio/, npm run vo -> public/audio/vo.timing.json). Film ditulis: project/src/ep02/parts.tsx (Defs glow/bgR/vig/shadow, camFor+layer parallax, Grid, FgRuler, Solid, Card, Gate, Reader, Hud, Title, TitleBlock, NoBattery) + project/src/ep02/EtollFilm.tsx (10 adegan: hook 0-9, ctx 9-15, bongkar 15-27, medan 27-35.2, induksi 35.2-45.2, arus 45.2-51, data 51-60, palang 60-66, mlff 66-74.7, outro 74.7-84; ETOLL_SECONDS=84, AudiraOutro 3 dtk, AudiraSignature seed etoll-nfc-ep02, caption karaoke sendiri). Terdaftar di src/Root.tsx: EtollPreview (540x960@30) + EtollFinal. tsc bersih. Still cek: node scripts/stills.mjs out/chk 5s,10.8s,22s,25.9s,33.5s,38.5s,43.8s,50.3s,56s,64.5s,71.2s,78.5s EtollPreview -> out/chk/_sheet.jpg terlihat bagus, tapi audit look.json: composition 2, readability 2.",
+      "command": "node scripts/stills.mjs out/chk 5s,10.8s,22s,25.9s,33.5s,38.5s,43.8s,50.3s,56s,64.5s,71.2s,78.5s EtollPreview",
+      "files": [
+        "project/src/ep02/parts.tsx",
+        "project/src/ep02/EtollFilm.tsx",
+        "project/src/Root.tsx",
+        "project/out/chk/look.json",
+        "project/out/chk/_sheet.jpg"
+      ],
+      "next": "PERBAIKI AUDIT LAYOUT (lihat out/chk/look.json layout.frames): (a) hampir semua teks SVG berwarna gagal kontras 1.3:1 'vs frame' padahal di atas kotak gelap -> cek scripts/layout-audit.mjs cara membaca warna teks; dugaan: membaca CSS color, bukan atribut fill -> tambahkan style {fill: <warna>, color: <warna>} pada <text> di parts.tsx (Hud, Title, TitleBlock, Reader label) dan EtollFilm.tsx, juga label S00-S15 (naikkan ke B.line) dan PEMBACA·KUMPARAN/e-TOLL; (b) terpotong tepi: callout '01 KUMPARAN ANTENA' (x 1000 textAnchor end -> geser/kecilkan, ingat kamera zoom 1.28 di bongkar), TitleBlock di bongkar x=500 w=520 keluar kanan saat zoom -> pindah x≈280, '±4 cm' induksi x=830 -> pindah kiri dimensi; (c) overlap '31' vs stempel NON-TUNAI di ctx -> pindah stempel ke bawah angka (translate(0 150)). Juga poles komposisi: gerbang di hook & palang terpotong kanan (isoAt(560,860) -> geser origin ke kiri ~470 dan kecilkan k), mobil antrean ctx berantakan. Lalu ulang stills, target ceilings composition/readability >= 4. Sesudah itu lanjut sisa langkah: cover topik style/cover-topic.png (still bongkar ~25.9s di EtollFinal, tampilkan ke pengguna), docs/SHOTLIST.md (format seperti EP01 QRIS docs/SHOTLIST.md, Offset: 0) + npm run sfx, contact sheet draf ke draft/contact-sheet.jpg + klip 540x960 15-20 dtk + audit:camera + audit:visual, draft/THEME_CHECK.md, juri buta (qa/jury.md) record_score style BLUEPRINT episode short-baru-11-23-EP02; render:final EtollFinal --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=3 --concurrency=2 --gl=vulkan --encoder=nvenc, limiter TP < -1, metadata, sign dengan skrip await sendiri, qa_video hardOnly, FINAL_VIDEO.mp4, record_score final; SOCIAL_CAPTIONS 6 platform + validator, NOTES.md, append_lesson, 3 scheduled task review.",
+      "snapshot": {
+        "episode": "EP02_CARA_KERJA_ETOLL_NFC",
+        "topic": "Cara kerja kartu e-Toll / tap NFC — kartu tanpa baterai kok bisa bayar",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP02",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP02_CARA_KERJA_ETOLL_NFC/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T08:51:48.054Z",
+      "doing": "Tahap 8 draf, juri putaran 1/2: PERLU POLES (rata-rata 3,67; depth 3, composition 3, readability 3; lighting 4, material 4, motion 5). Self 4,17 tercatat, jury tercatat, lesson failed tercatat. draft/THEME_CHECK.md selesai (9 frame, semua ya). Tanda tangan sudah bebas tabrakan (judul/HUD atas y+80 di 18-60 dtk, panel gelombang x250, HUD Bali Mandara x250, Gate labelShift hook [-150,-60]). draft.mjs diperbaiki (async hfStills) di EP02 + starter.",
+      "files": [
+        "project/src/ep02/EtollFilm.tsx",
+        "project/src/ep02/parts.tsx",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Poles putaran 2 (terakhir sebelum ganti style): (1) composition/depth: isi band bawah caption 1480-1920 px dengan dekor tanpa teks (lantai grid perspektif/bayangan/FgRuler lebih tebal, haze), tambah pemisah kedalaman (bayangan kontak, haze BG, blur FG) di adegan iso garis; (2) readability: label mono mikro (GERBANG TOL · AUDIRA 20px, PEMBACA · KUMPARAN, DWG EP02/SKALA di TitleBlock 20px, S00-S15 18px, e-TOLL) naikkan ≥30 px atau hapus, kontras ≥4.5:1; (3) frame sheet 55 dtk -> pilih 57 dtk (judul CHIP MENJAWAB sudah lengkap). Lalu npm run draft -- EtollPreview --frames=3s,11s,22s,31s,40s,57s,63s,71.5s,80s --out=../draft, self score + juri buta baru (qa/jury.md), record_score. Lolos -> render:final EtollFinal --vo --sfx (perlu docs/SHOTLIST.md + npm run sfx dulu bila belum).",
+      "snapshot": {
+        "episode": "EP02_CARA_KERJA_ETOLL_NFC",
+        "topic": "Cara kerja kartu e-Toll / tap NFC — kartu tanpa baterai kok bisa bayar",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP02",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP02_CARA_KERJA_ETOLL_NFC/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:57:47.642Z",
+      "doing": "Poles putaran 2 selesai di kode (Floor band bawah tanpa teks, Skyline BG, haze, bayangan kontak Ctx, label mikro >=30px). Render sheet draf putaran 2.",
+      "command": "cd project; TEMP=F:\\AUDIRA-TMP\\ep02 npm run draft -- EtollPreview --frames=3s,11s,22s,31s,40s,57s,63s,71.5s,80s --out=../draft",
+      "files": [
+        "project/src/ep02/EtollFilm.tsx",
+        "project/src/ep02/parts.tsx",
+        "draft/DRAFT_SHEET.jpg"
+      ],
+      "next": "THEME_CHECK frame 6 -> 57 dtk, self score, juri buta subagent (qa/jury.md), record_score jury. Lolos -> SHOTLIST + npm run sfx + render:final EtollFinal --vo --sfx.",
+      "snapshot": {
+        "episode": "EP02_CARA_KERJA_ETOLL_NFC",
+        "topic": "Cara kerja kartu e-Toll / tap NFC — kartu tanpa baterai kok bisa bayar",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP02",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP02_CARA_KERJA_ETOLL_NFC/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:01:45.276Z",
+      "doing": "Draf LOLOS juri buta putaran 2 (4,0; material 3, lainnya 4-5), skor jury tercatat. docs/SHOTLIST.md + public/audio/sfx.wav (-26 LUFS) dibuat. Render final EtollFinal dimulai di latar, log F:/AUDIRA-TMP/ep02/final.log.",
+      "command": "cd project; TEMP=F:\\AUDIRA-TMP\\ep02 npm run render:final -- EtollFinal --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error",
+      "files": [
+        "project/src/ep02/EtollFilm.tsx",
+        "project/src/ep02/parts.tsx",
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav",
+        "draft/DRAFT_SHEET.jpg"
+      ],
+      "next": "Cek log final; ukur -14 LUFS & TP<-1 (ffmpeg ebur128); metadata ffmpeg (artist AUDIRA (Agus Dwi R.), comment AUDIRA-etoll-nfc-EP02 | audira.my.id); audira_verify_signature; cek frame; record_score stage final judge jury; tahap 10: SOCIAL_CAPTIONS.md (6 platform + Jadwal Upload (WIB) + Label Konten AI) + audira_validate_social_captions, NOTES.md, lesson, tanya jam upload lalu 3 scheduled task review.",
+      "snapshot": {
+        "episode": "EP02_CARA_KERJA_ETOLL_NFC",
+        "topic": "Cara kerja kartu e-Toll / tap NFC — kartu tanpa baterai kok bisa bayar",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP02",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP02_CARA_KERJA_ETOLL_NFC/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:02:33.540Z",
+      "doing": "Render final EtollFinal jalan di latar (percobaan 1 gagal: butuh --comp= dan --out=). Output ../FINAL_EP02_ETOLL_NFC.mp4, log F:/AUDIRA-TMP/ep02/final.log. G18c audio OK: VO -16.4, SFX duck -31.6, gap 15.2 LU.",
+      "command": "cd project; TEMP=F:\\AUDIRA-TMP\\ep02 npm run render:final -- --comp=EtollFinal --out=../FINAL_EP02_ETOLL_NFC.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error",
+      "files": [
+        "FINAL_EP02_ETOLL_NFC.mp4",
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "Bila FINAL_EP02_ETOLL_NFC.mp4 lengkap (84 dtk, 1080x1920@60): ukur -14 LUFS & TP<-1; metadata ffmpeg; audira_verify_signature seed etoll-nfc-ep02; cek frame; record_score final self + juri buta; tahap 10 SOCIAL_CAPTIONS.md + validator, NOTES.md, lesson, hapus perantara, tanya jam upload lalu 3 scheduled task. Bila log error/proses mati: jalankan ulang perintah di latar.",
+      "snapshot": {
+        "episode": "EP02_CARA_KERJA_ETOLL_NFC",
+        "topic": "Cara kerja kartu e-Toll / tap NFC — kartu tanpa baterai kok bisa bayar",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP02",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP02_CARA_KERJA_ETOLL_NFC/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:03:06.522Z",
+      "doing": "Final BELUM dirender: render-final.mjs berhenti di gerbang G13 kamera (medianSpeed 0.031 < 0.04, dari draft/camera.json). G18c audio OK (VO -16.4, SFX duck -31.6, gap 15.2 LU). Belum ada FINAL mp4.",
+      "command": "cd project; TEMP=F:\\AUDIRA-TMP\\ep02 npm run render:final -- --comp=EtollFinal --out=../FINAL_EP02_ETOLL_NFC.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error",
+      "files": [
+        "project/src/ep02/parts.tsx",
+        "project/src/ep02/EtollFilm.tsx",
+        "draft/camera.json"
+      ],
+      "next": "Naikkan gerak kamera di camFor (project/src/ep02/parts.tsx: drift sin x 14 dan y 10 -> lebih besar/cepat, dan/atau jarak a->b per adegan di EtollFilm.tsx cams) tanpa menggeser teks ke jangkar AudiraSignature. Render klip 15-20 dtk 540x960, npm run audit:camera -- <clip> --json=../draft/camera.json sampai medianSpeed >= 0.04, deadPct <= 5%, longestHold <= 1.5. Lalu render:final (perintah di atas, --comp= dan --out= wajib), QA -14 LUFS/TP<-1, metadata, verify_signature, record_score final self+juri, tahap 10.",
+      "snapshot": {
+        "episode": "EP02_CARA_KERJA_ETOLL_NFC",
+        "topic": "Cara kerja kartu e-Toll / tap NFC — kartu tanpa baterai kok bisa bayar",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP02",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP02_CARA_KERJA_ETOLL_NFC/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:59:54.376Z",
+      "doing": "Pindah ke sesi baru (orkestrasi ulang 17 episode, 2026-11-23). Final belum dirender: gerbang G13 kamera gagal (medianSpeed 0.031 < 0.04). G18c audio OK.",
+      "command": "cd project; TEMP=F:\\AUDIRA-TMP\\ep02 npm run render:final -- --comp=EtollFinal --out=../FINAL_EP02_ETOLL_NFC.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error",
+      "files": [
+        "project/src/ep02/parts.tsx",
+        "project/src/ep02/EtollFilm.tsx",
+        "draft/camera.json"
+      ],
+      "next": "Naikkan gerak kamera di camFor (project/src/ep02/parts.tsx) dan/atau jarak a->b di EtollFilm.tsx cams, tanpa menggeser teks ke jangkar AudiraSignature. Klip 15-20 dtk 540x960 + npm run audit:camera -- <clip> --json=../draft/camera.json sampai medianSpeed >= 0.04, deadPct <= 5%, longestHold <= 1.5. Lalu render:final, QA -14 LUFS/TP<-1, metadata, verify_signature, record_score final, tahap 10.",
+      "snapshot": {
+        "episode": "EP02_CARA_KERJA_ETOLL_NFC",
+        "topic": "Cara kerja kartu e-Toll / tap NFC — kartu tanpa baterai kok bisa bayar",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP02",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP02_CARA_KERJA_ETOLL_NFC/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:00:47.198Z",
+      "doing": "Pindah ke sesi baru (orkestrasi ulang 17 episode, 2026-11-23). Final belum dirender: gerbang G13 kamera gagal (medianSpeed 0.031 < 0.04). G18c audio OK.",
+      "command": "cd project; TEMP=F:\\AUDIRA-TMP\\ep02 npm run render:final -- --comp=EtollFinal --out=../FINAL_EP02_ETOLL_NFC.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error",
+      "files": [
+        "project/src/ep02/parts.tsx",
+        "project/src/ep02/EtollFilm.tsx",
+        "draft/camera.json"
+      ],
+      "next": "Naikkan gerak kamera di camFor (project/src/ep02/parts.tsx) dan/atau jarak a->b di EtollFilm.tsx cams, tanpa menggeser teks ke jangkar AudiraSignature. Klip 15-20 dtk 540x960 + npm run audit:camera -- <clip> --json=../draft/camera.json sampai medianSpeed >= 0.04, deadPct <= 5%, longestHold <= 1.5. Lalu render:final, QA -14 LUFS/TP<-1, metadata, verify_signature, record_score final, tahap 10.",
+      "snapshot": {
+        "episode": "EP02_CARA_KERJA_ETOLL_NFC",
+        "topic": "Cara kerja kartu e-Toll / tap NFC — kartu tanpa baterai kok bisa bayar",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP02",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP02_CARA_KERJA_ETOLL_NFC/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:03:19.796Z",
+      "doing": "Render final EtollFinal (kamera sudah lolos G13: medianSpeed 0.048, parked 0%). Log: F:/AUDIRA-TMP/ep02/final.log",
+      "command": "cd project; TEMP=F:\\AUDIRA-TMP\\ep02 npm run render:final -- --comp=EtollFinal --out=../FINAL_EP02_ETOLL_NFC.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error",
+      "files": [
+        "project/src/ep02/parts.tsx",
+        "project/src/ep02/EtollFilm.tsx",
+        "draft/camera.json",
+        "FINAL_EP02_ETOLL_NFC.mp4"
+      ],
+      "next": "QA -14 LUFS/TP<-1, metadata, verify_signature, qa_video, record_score final, tahap 10 (SOCIAL_CAPTIONS, NOTES, append_lesson, 3 scheduled review).",
+      "snapshot": {
+        "episode": "EP02_CARA_KERJA_ETOLL_NFC",
+        "topic": "Cara kerja kartu e-Toll / tap NFC — kartu tanpa baterai kok bisa bayar",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP02",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP02_CARA_KERJA_ETOLL_NFC/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:04:08.745Z",
+      "doing": "Render final EtollFinal (attempt 2, with --skip-channel reason: starter scene news/PenggantiGibranWapres not in comp). SOCIAL_CAPTIONS.md done and validated. Log F:/AUDIRA-TMP/ep02/final.log",
+      "command": "npm run render:final -- --comp=EtollFinal --out=../FINAL_EP02_ETOLL_NFC.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error \"--skip-channel=starter scene news/PenggantiGibranWapres not in EtollFinal; EP02 AudiraSignature has no handle prop (channel default)\"",
+      "next": "QA LUFS/TP, metadata, verify_signature, qa_video, record_score final, NOTES.md, append_lesson, 3 scheduled review tasks (upload Rabu 25 Nov 2026 19.00 WIB).",
+      "snapshot": {
+        "episode": "EP02_CARA_KERJA_ETOLL_NFC",
+        "topic": "Cara kerja kartu e-Toll / tap NFC — kartu tanpa baterai kok bisa bayar",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP02",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP02_CARA_KERJA_ETOLL_NFC/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:04:08.745Z",
+      "doing": "Render final EtollFinal (attempt 2, with --skip-channel reason: starter scene news/PenggantiGibranWapres not in comp). SOCIAL_CAPTIONS.md done and validated. Log F:/AUDIRA-TMP/ep02/final.log",
+      "command": "npm run render:final -- --comp=EtollFinal --out=../FINAL_EP02_ETOLL_NFC.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error \"--skip-channel=starter scene news/PenggantiGibranWapres not in EtollFinal; EP02 AudiraSignature has no handle prop (channel default)\"",
+      "next": "QA LUFS/TP, metadata, verify_signature, qa_video, record_score final, NOTES.md, append_lesson, 3 scheduled review tasks (upload Rabu 25 Nov 2026 19.00 WIB).",
+      "snapshot": {
+        "episode": "EP02_CARA_KERJA_ETOLL_NFC",
+        "topic": "Cara kerja kartu e-Toll / tap NFC — kartu tanpa baterai kok bisa bayar",
+        "style": "BLUEPRINT",
+        "memoryEpisode": "short-baru-11-23-EP02",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP02_CARA_KERJA_ETOLL_NFC/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T10:16:34.170Z"
+    }
+  ],
+  "session": 5,
+  "sessionLog": [
+    {
+      "no": 5,
+      "title": "EP02 e-Toll · s5",
+      "at": "2026-11-23T10:00:47.197Z"
+    }
+  ]
+}

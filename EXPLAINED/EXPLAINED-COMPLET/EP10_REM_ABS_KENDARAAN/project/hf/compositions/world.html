@@ -1,0 +1,118 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#0A0C1A}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.05;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.45) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.1) 42%,rgba(0,0,0,0.1) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'Space Mono',monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#00E5FF;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.tag{display:table;font-family:'Space Mono',monospace;font-weight:700;font-size:26px;letter-spacing:.16em;color:#00E5FF;background:rgba(0,229,255,.08);border:1px solid rgba(0,229,255,.25);padding:8px 18px 7px;margin-bottom:14px;text-transform:uppercase}
+.card{display:table;background:rgba(10,12,26,.88);border:1px solid rgba(0,229,255,.2);border-radius:4px;padding:14px 28px 18px;margin-bottom:14px;box-shadow:0 0 32px rgba(0,229,255,.12),inset 0 0 60px rgba(0,229,255,.03)}
+.big{font-family:'Space Mono',monospace;font-weight:900;font-size:88px;line-height:1.05;color:#00E5FF;letter-spacing:-.02em}
+.big span{color:#FF5252}.big.sm{font-size:64px;line-height:1.1}
+.ln{display:table;font-family:Nunito,sans-serif;font-weight:800;font-size:40px;line-height:1.2;color:#E0E8FF;background:rgba(10,12,26,.82);padding:10px 22px 12px 20px;margin-bottom:10px;border-left:10px solid #00E5FF;border-radius:0 4px 4px 0;box-shadow:0 0 20px rgba(0,229,255,.08)}
+.ln.r{border-left-color:#FF5252;color:#FFD6D6}.ln.a{border-left-color:#FFB300;color:#FFE8B0}.ln.c{border-left-color:#00E5FF}
+#chip{font-family:'Space Mono',monospace;font-size:25px;font-weight:700;color:#00E5FF;opacity:.7;letter-spacing:.08em;background:rgba(10,12,26,.6);padding:3px 10px}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="84.47" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN CUPLIKAN ASLI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tag">CARA KERJA BENDA &middot; EP 10</div>
+  <div class="card"><div class="big">Rem dilepas<br><span>15&times;</span>/detik</div></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="tag">RODA TERKUNCI</div>
+  <div class="ln r" data-at="s2:terkunci" data-fx="scan">Roda berhenti, ban terseret</div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tag">GRIP &amp; STEERING</div>
+  <div class="ln c" data-at="s3:mencengkeram" data-fx="scan">Berputar &gt; terseret = grip kuat</div>
+  <div class="ln r" data-at="s3:dibelokkan" data-fx="scan">Terkunci = tak bisa belok</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="tag">4 KOMPONEN ABS</div>
+  <div class="ln c" data-at="s4:sensor" data-fx="scan">Sensor kecepatan roda</div>
+  <div class="ln a" data-at="s4:komputer" data-fx="scan">Komputer pengendali</div>
+  <div class="ln c" data-at="s4:katup" data-fx="scan">Katup tekanan</div>
+  <div class="ln a" data-at="s4:pompa" data-fx="scan">Pompa hidraulik</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="tag">SENSOR &rarr; ECU</div>
+  <div class="card" data-at="s5:melambat" data-fx="scan"><div class="big sm">Roda <span>melambat</span><br>= hampir terkunci</div></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="tag">SIKLUS ABS</div>
+  <div class="ln c" data-at="s6:menutup" data-fx="scan">Katup tutup &rarr; tekanan turun</div>
+  <div class="ln a" data-at="s6:Pompa" data-fx="scan">Pompa kembalikan tekanan</div>
+  <div class="ln r" data-at="s6:getaran" data-fx="scan">Getaran di pedal = ABS aktif</div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tag">MERCEDES &middot; BOSCH &middot; 1978</div>
+  <div class="card" data-at="s7:detik" data-fx="scan"><div class="big sm">15&times; dalam <span>1 detik</span></div></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="card" data-at="s8:arahkan" data-fx="scan"><div class="big sm">Tetap injak,<br><span>arahkan</span> setir</div></div>
+  <div class="ln c" data-at="s8:AUDIRA" data-fx="scan">Berikutnya: termos air panas</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">CARA KERJA BENDA &middot; EP 10</div></div>
+<div id="sig">AUDIRA &middot; @AudiraExplained</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":6.373,"s2":6.533,"s2e":15.091,"s3":15.251,"s3e":26.236,"s4":26.396,"s4e":33.767,"s5":33.927,"s5e":43.282,"s6":43.442,"s6e":57.21,"s7":57.37,"s7e":70.336,"s8":70.496,"s8e":81.468,"end":81.468,"dur":84.47,"outro":81.718},AT={"s1:dilepas":3.385,"s1:lima":5.088,"s2:diinjak":8.579,"s2:terkunci":12.853,"s2:terseret":14.147,"s3:terseret":15.77,"s3:parah":19.978,"s3:mencengkeram":16.25,"s3:lemah":17.473,"s3:dibelokkan":22.401,"s3:Setir":23.216,"s3:meluncur":25.198,"s3:lurus":25.585,"s4:sensor":28.802,"s4:komputer":30.776,"s4:katup":32.215,"s4:pompa":33.241,"s5:melambat":39.195,"s5:hampir":42.415,"s6:menutup":44.588,"s6:membuang":47.622,"s6:berputar":50.311,"s6:Pompa":51.113,"s6:siklus":53.505,"s6:getaran":55.709,"s7:Kaki":60.334,"s7:Sistem":62.952,"s7:detik":59.29,"s7:dipasang":66.9,"s7:delapan":69.965,"s8:injak":73,"s8:arahkan":74.826,"s8:AUDIRA":76.282},DUR=84.47,OUT=81.718;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ scan:(e,t)=>tl.fromTo(e,{opacity:.7,y:4},{opacity:1,y:0,duration:.25,ease:'power2.out'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{opacity:0,x:-20,clipPath:'inset(0 100% 0 0)'},{opacity:1,x:0,clipPath:'inset(0 0% 0 0)',duration:.4,ease:'power2.out'},a-.08);},POUT=(tl,p,b)=>{tl.to(p,{opacity:0,x:20,clipPath:'inset(0 0 0 100%)',duration:.25,ease:'power2.in'},b-.25);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0,scale:.95});tl.to('#outro',{opacity:1,scale:1,duration:.4,ease:'power3.out'},OUT-.1);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP10_REM_ABS_KENDARAAN")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

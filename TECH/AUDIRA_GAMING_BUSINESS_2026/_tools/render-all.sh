@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Renders every episode in sequence. Temp stays on F:.
+for e in EP01_ROBLOX_CREATOR_ECONOMY EP02_FORTNITE_CREATOR_ECONOMY EP03_ESPORTS_PROFESSIONAL EP04_MINECRAFT_CREATOR_BUSINESS EP05_CS2_DIGITAL_ASSET_ECONOMY; do
+  bash /f/AUDIRA-VIDEO-MOTION/TECH/AUDIRA_GAMING_BUSINESS_2026/_tools/render.sh $e 4 2>&1 | grep -E "LUFS|rror" | cut -c1-120
+done

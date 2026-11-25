@@ -1,0 +1,273 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP06_AIR_CONDITIONER_AC",
+  "topic": "EP06 Air Conditioner AC",
+  "createdAt": "2026-11-12T10:06:29.702Z",
+  "updatedAt": "2026-11-14T15:04:12.173Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.702Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T23:54:13.079Z",
+      "note": "Riset bersumber: research/SOURCE_REGISTER.md + RESEARCH_REPORT.md"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-13T00:01:47.628Z",
+      "doneAt": "2026-11-13T00:01:47.628Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T23:54:13.079Z",
+      "doneAt": "2026-11-12T23:54:13.079Z",
+      "note": "Disetujui pengguna 2026-11-13 (acc menyeluruh di chat: \"langsung saja approve\"). Gaya belum dipilih. 212 kata."
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit (EP04 Standard)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-13T00:01:58.288Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [],
+      "doneAt": "2026-11-13T00:02:04.194Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T04:43:45.841Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-13T04:41:49.016Z",
+      "startedAt": "2026-11-13T04:41:49.016Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci + visual audit",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T04:43:45.841Z",
+          "text": "sync: 1 gambar draf/contact sheet; acc tidak tercatat, disimpulkan karena tahap sesudahnya sudah ada"
+        },
+        {
+          "at": "2026-11-13T04:56:15.072Z",
+          "text": "sync: 1 gambar draf/contact sheet; acc tidak tercatat, disimpulkan karena tahap sesudahnya sudah ada"
+        },
+        {
+          "at": "2026-11-13T05:01:09.886Z",
+          "text": "sync: 1 gambar draf/contact sheet; acc tidak tercatat, disimpulkan karena tahap sesudahnya sudah ada"
+        }
+      ],
+      "approved": true,
+      "approvedAt": null,
+      "approvalSource": "inferred",
+      "doneAt": "2026-11-13T04:55:59.864Z",
+      "startedAt": "2026-11-13T04:41:49.021Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-14T15:04:12.173Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        }
+      ],
+      "doneAt": "2026-11-14T13:46:35.793Z",
+      "startedAt": "2026-11-14T13:46:35.793Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:56.306Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-13T00:20:00.728Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "startedAt": "2026-11-12T10:06:29.702Z",
+      "doneAt": "2026-11-13T00:03:56.680Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "cara-kerja-benda-EP06",
+    "wordCount": 212,
+    "title": "AC Pertama Dibuat untuk Kertas",
+    "estimateSec": "85–94",
+    "style": "PAPERWORLD",
+    "approvalSource": "izin menyeluruh pengguna 2026-11-13",
+    "speechSec": 90.691,
+    "filmSec": 93.69,
+    "wpm": 140,
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-14T15:04:12.173Z",
+  "resetNote": "2026-11-13: riset/naskah/style/QA lama hasil skrip luar (placeholder) diarsipkan ke _review/_ARSIP_GENERATED_2026-11-12/; mulai ulang dari riset. 2026-11-13: riset + naskah baru selesai, naskah di-acc; berikutnya gerbang style.",
+  "handoverLog": [
+    {
+      "at": "2026-11-12T23:54:19.435Z",
+      "doing": "Riset + naskah EP06–EP44 selesai dan di-acc (39 episode). Belum ada style/VO/render.",
+      "files": [
+        "SERIES_PLAN.md",
+        "MASTER_INDEX.md",
+        "_research/BRIEF_RISET_NASKAH.md"
+      ],
+      "next": "Sesi baru: gerbang style EP06 (audira_recommend_style dengan seriesDir, 2–3 opsi + cover, lalu cover topik), lanjut VO dari docs/script-lines.json. Satu sesi per ±3 episode. Lihat SERIES_PLAN.md dan MASTER_INDEX.md."
+    },
+    {
+      "at": "2026-11-13T00:00:29.213Z",
+      "doing": "VO Cartesia EP06-08 (vo.py tts+build), lalu build film per episode via subagent",
+      "command": "python _tools/vo.py EP0X tts --speed 1.0 && python _tools/vo.py EP0X build --tempo 1.0",
+      "files": [
+        "EP06_AIR_CONDITIONER_AC/audio/VO_MASTER.wav",
+        "EP07_KOREK_API_GAS/audio/VO_MASTER.wav",
+        "EP08_AIRBAG_MOBIL/audio/VO_MASTER.wav"
+      ],
+      "next": "Cek timeline.json EP06-08, lalu subagent build world3d.js/build-video.mjs/mix.py + cover-topic + contact sheet"
+    },
+    {
+      "at": "2026-11-13T00:03:03.717Z",
+      "doing": "3 subagent paralel membangun film EP06 (PAPERWORLD), EP07 (COMICFORGE), EP08 (PRECISION): world3d.js, build-video.mjs, mix.py, cover-topic.png, draft/contact-sheet.jpg. VO sudah terkunci.",
+      "files": [
+        "EP0X/project/world3d.js",
+        "EP0X/project/build-video.mjs",
+        "EP0X/project/mix.py"
+      ],
+      "next": "Juri buta per contact sheet -> record_score jury -> polish bila perlu -> bash _tools/final.sh EP06.. EP07.. EP08.. -> sign -> npm run deliver -> caption"
+    },
+    {
+      "at": "2026-11-13T04:42:52.386Z",
+      "doing": "EP06 draf gagal juri buta r1 (avg 3.0, komposisi 2: tanda AUDIRA terpotong, terlalu banyak panel teks, s4/s5 suram). Builder subagent sedang poles r2. EP07 (COMICFORGE) dan EP08 (PRECISION) subagent masih membangun film + cover + contact sheet. Caption EP06-08 sudah ditulis dan lolos validator. VO EP06-08 terkunci.",
+      "files": [
+        "EP06_AIR_CONDITIONER_AC/project/world3d.js",
+        "EP07_KOREK_API_GAS/project/world3d.js",
+        "EP08_AIRBAG_MOBIL/project/world3d.js"
+      ],
+      "next": "Per episode: juri buta (prompt F:/AUDIRA-SKILL-MOTION/qa/jury.md, hanya contact sheet + style/cover-reference) -> record_score jury -> poles sampai LOLOS -> update draft approved (izin menyeluruh 2026-11-13) -> bash _tools/final.sh EP06_AIR_CONDITIONER_AC EP07_KOREK_API_GAS EP08_AIRBAG_MOBIL (background) -> dari F:/AUDIRA-SKILL-MOTION/starter: npm run sign -- <EP>/FINAL_VIDEO.mp4 --title=.. --id=AUDIRA-cara-kerja-benda-EP0N --c2pa -> npm run deliver -- <EP>/FINAL_VIDEO.mp4 -> NOTES.md, QA_REPORT.md, append_lesson, SERIES_PLAN.md + MASTER_INDEX.md."
+    },
+    {
+      "at": "2026-11-13T04:51:58.389Z",
+      "doing": "Loop draf juri buta EP06-08 (builder subagent di sesi ini). Skor juri terakhir: EP06 r3 3.5 (poles r4 jalan), EP07 r2 3.0 (poles r3 jalan), EP08 r2 2.83 (poles r3 jalan). Semua skor tercatat di motion memory (cara-kerja-benda-EP0N). Belum ada MP4. Caption EP06-08 sudah lolos validator.",
+      "next": "Sesi baru: juri buta tiap draf (prompt F:/AUDIRA-SKILL-MOTION/qa/jury.md; hanya draft/contact-sheet.jpg + style/cover-reference.*). Jika belum lolos, poles sendiri di project/world3d.js + build-video.mjs (loop: node build-video.mjs && python mix.py && python ../../_tools/build-srt.py; snap: bash ../../_tools/snap.sh <EP> \"<times>\"). Setelah LOLOS: episode_status update draft approved (izin menyeluruh 2026-11-13) -> bash _tools/final.sh <EP...> (background) -> dari F:/AUDIRA-SKILL-MOTION/starter: npm run sign -- <EP>/FINAL_VIDEO.mp4 --title=.. --id=AUDIRA-cara-kerja-benda-EP0N --c2pa -> npm run deliver -- <EP>/FINAL_VIDEO.mp4 -> NOTES.md, QA_REPORT.md, append_lesson, SERIES_PLAN.md + MASTER_INDEX.md. Catatan: audira_episode_status update dengan 'note' error (bug push) — jangan pakai note."
+    },
+    {
+      "at": "2026-11-13T04:57:17.025Z",
+      "doing": "Loop draf juri buta EP06-08 dihentikan karena konteks sesi >290k. Skor juri terakhir: EP06 r5 3.33 (r4 3.5; berosilasi), EP07 r4 3.0 (poles r5 sedang jalan di subagent sesi lama), EP08 r3 3.17 (poles r4 sedang jalan). Belum ada MP4. Caption EP06-08 lolos validator. Semua skor + pelajaran di motion memory.",
+      "next": "Sesi baru per episode: 1) juri buta draf terkini (prompt F:/AUDIRA-SKILL-MOTION/qa/jury.md; hanya draft/contact-sheet.jpg + style/cover-reference.*). 2) EP06: kembalikan palet hangat pastel di s4-s6 (bukan dinding hijau/teal gelap), part mesin jadi kartu berlapis, Carrier lebih besar, kurangi kotak teks. 3) Setelah LOLOS: episode_status update draft approved (izin menyeluruh 2026-11-13) -> bash _tools/final.sh <EP> (background) -> dari F:/AUDIRA-SKILL-MOTION/starter: npm run sign -- <EP>/FINAL_VIDEO.mp4 --title=.. --id=AUDIRA-cara-kerja-benda-EP0N --c2pa -> npm run deliver -- <EP>/FINAL_VIDEO.mp4 -> NOTES.md, QA_REPORT.md, append_lesson, SERIES_PLAN.md + MASTER_INDEX.md. Jangan pakai field note di update (bug)."
+    },
+    {
+      "at": "2026-11-13T05:15:04.672Z",
+      "doing": "Loop draf juri buta EP06 r6-r12 selesai tanpa LOLOS (skor 3.33/3.17/3.33/3.67/3.5/3.67/3.33; plateau ~3.5). Konteks sesi >240k.",
+      "files": [
+        "EP06_AIR_CONDITIONER_AC/project/world3d.js",
+        "EP06_AIR_CONDITIONER_AC/project/build-video.mjs",
+        "EP06_AIR_CONDITIONER_AC/draft/contact-sheet.jpg"
+      ],
+      "next": "Sesi baru: pilih salah satu: (a) poles struktural: Carrier jadi figur kertas bulat bertekstur (bukan vektor datar), kurangi isi s7 (hapus matahari/1PK atau gabung), objek pembawa (carrier element) antar stasiun s3->s4 dan s6->s7; lalu juri ulang (prompt qa/jury.md, sheet frame 3.9,10,18,29,40,54,79,88,92 via snap.sh + 3x3 400x711). (b) minta keputusan pengguna soal gerbang. Setelah LOLOS: update draft approved -> bash _tools/final.sh EP06_AIR_CONDITIONER_AC -> sign -> deliver -> NOTES/QA_REPORT/index. VO terkunci, jangan vo.py."
+    },
+    {
+      "at": "2026-11-13T05:36:56.345Z",
+      "doing": "Rebuild r13 world3d.js dari nol selesai (chibi paper guide, 3 set). Juri buta putaran 1 pasca-rebuild: 3.17 (L3 M4 D3 C3 Mo3 R3). Belum LOLOS, belum ada MP4.",
+      "command": "bash _tools/snap.sh EP06_AIR_CONDITIONER_AC \"3.9,13.9,20.5,28.8,41,53,78.8,89,92\"",
+      "files": [
+        "EP06_AIR_CONDITIONER_AC/project/world3d.js",
+        "EP06_AIR_CONDITIONER_AC/project/build-video.mjs",
+        "EP06_AIR_CONDITIONER_AC/draft/contact-sheet.jpg",
+        "EP06_AIR_CONDITIONER_AC/style/cover-topic.png"
+      ],
+      "next": "Sesi baru, putaran juri 2-3 (maks): poles sesuai catatan handover di side-session-notes/EP06_handover.md, lalu snap \"3.9,13.9,20.5,28.8,41,53,78.8,89,92\" + sheet 3x3 400x711 -> draft/contact-sheet.jpg, juri buta (qa/jury.md). LOLOS -> draft approved -> final.sh -> sign -> deliver."
+    },
+    {
+      "at": "2026-11-13T12:02:17.528Z",
+      "doing": "Render final EP06-08 via _tools/final.sh (acc draf dari pengguna 2026-11-13 'Ya, render final', juri buta <4; tool status menolak acc tanpa juri LOLOS)",
+      "command": "bash _tools/final.sh EP06_AIR_CONDITIONER_AC EP07_KOREK_API_GAS EP08_AIRBAG_MOBIL > _review/final_EP06-08.log",
+      "next": "Cek FINAL_VIDEO.mp4 x3 -> npm run sign --c2pa -> npm run deliver -> NOTES/QA/index"
+    },
+    {
+      "at": "2026-11-13T12:09:45.259Z",
+      "doing": "Render final EP06 GAGAL sebelum render: project/mix.py baris 122 KeyError 's2:meleset' (anchor hilang setelah rebuild world3d/build-video). Belum ada FINAL_VIDEO.mp4. Acc draf dari pengguna 2026-11-13 'Ya, render final' (juri buta <4).",
+      "command": "bash _tools/final.sh EP06_AIR_CONDITIONER_AC",
+      "files": [
+        "EP06_AIR_CONDITIONER_AC/project/mix.py",
+        "_review/final_EP06-08.log"
+      ],
+      "next": "Perbaiki anchor di mix.py (pakai kata yang ada di s2 timeline.json atau tambahkan ke extraAt), lalu dari folder seri: bash _tools/final.sh EP06_AIR_CONDITIONER_AC (background) -> dari F:/AUDIRA-SKILL-MOTION/starter: npm run sign -- <EP06>/FINAL_VIDEO.mp4 --title=\"AC Pertama Dibuat untuk Kertas\" --id=AUDIRA-cara-kerja-benda-EP06 --c2pa -> npm run deliver -- <EP06>/FINAL_VIDEO.mp4 -> NOTES.md, QA_REPORT.md, record_score final, append_lesson, SERIES_PLAN.md + MASTER_INDEX.md."
+    },
+    {
+      "at": "2026-11-14T05:48:19.096Z",
+      "doing": "SIAP RENDER (rule 10): anchor s2:meleset + s6:membuang ditambah ke extraAt, build + mix lolos 2026-11-14. Berhenti di depan gerbang render, belum render.",
+      "files": [
+        "EP06_AIR_CONDITIONER_AC/project/build-video.mjs",
+        "EP06_AIR_CONDITIONER_AC/docs/READY_TO_RENDER.md"
+      ],
+      "next": "Hanya atas perintah pengguna: bash _tools/final.sh EP06_AIR_CONDITIONER_AC (atau audira_render_batch) -> npm run sign -> npm run deliver -> NOTES.md, caption, record_score final."
+    },
+    {
+      "at": "2026-11-14T13:44:01.452Z",
+      "doing": "render final (hyperframes)",
+      "command": "audira_render_batch start",
+      "batchId": "20261114-134401",
+      "files": [
+        "F:\\AUDIRA-VIDEO-MOTION\\EXPLAINED_CARA_KERJA_BENDA_2026\\EP06_AIR_CONDITIONER_AC\\FINAL_VIDEO.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261114-134401); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang."
+    }
+  ],
+  "handover": {
+    "at": "2026-11-14T13:44:01.452Z",
+    "doing": "render final (hyperframes)",
+    "command": "audira_render_batch start",
+    "batchId": "20261114-134401",
+    "files": [
+      "F:\\AUDIRA-VIDEO-MOTION\\EXPLAINED_CARA_KERJA_BENDA_2026\\EP06_AIR_CONDITIONER_AC\\FINAL_VIDEO.mp4"
+    ],
+    "next": "cek audira_render_batch status (batch 20261114-134401); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang."
+  }
+}

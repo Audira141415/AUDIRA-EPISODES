@@ -1,0 +1,157 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "AE-043",
+  "topic": "Mengapa Air PDAM Kadang Keruh Seperti Kopi Susu?",
+  "createdAt": "2026-11-06T17:05:28.740Z",
+  "updatedAt": "2026-11-06T22:51:52.488764+00:00",
+  "currentStage": "delivery",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-06T17:14:00.968591Z",
+          "text": "CLAUDE.md, rule 07, memory, xlsx v2 read"
+        }
+      ],
+      "doneAt": "2026-11-06T17:14:00.968591Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-06T17:14:00.968591Z",
+          "text": "done; see research/SOURCE_REGISTER.md"
+        }
+      ],
+      "doneAt": "2026-11-06T17:14:00.968591Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-06T17:19:35.690Z",
+      "notes": [
+        {
+          "at": "2026-11-06T17:14:00.968591Z",
+          "text": "Style no.1 dipilih pengguna 2026-11-07; cover topik sedang dirender"
+        },
+        {
+          "at": "2026-11-06T17:19:35.690Z",
+          "text": "Pengguna: \"Ya, semua no. 1\" lalu \"Setuju semua\" (cover topik)"
+        }
+      ],
+      "doneAt": "2026-11-06T17:19:35.690Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-06T17:21:04.040146+00:00",
+      "notes": [
+        {
+          "at": "2026-11-06T17:21:04.040146+00:00",
+          "text": "Pengguna: \"Setuju, lanjut\" untuk 5 naskah (SCRIPT.md)"
+        }
+      ],
+      "doneAt": "2026-11-06T17:21:04.040146+00:00"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-06T17:21:04.040146+00:00",
+          "text": "Studio bersama BATCH01/studio (Remotion+R3F, node_modules junction); still smoke OK"
+        }
+      ],
+      "doneAt": "2026-11-06T17:21:04.040146+00:00"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-06T21:48:03.422679+00:00",
+          "text": "VO Galang sonic-3 + tighten pauses + atempo<=1.15; vo.wav -16 LUFS; timeline.json"
+        }
+      ],
+      "doneAt": "2026-11-06T21:48:03.422679+00:00"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-06T21:48:03.422679+00:00",
+          "text": "Film + STORYBOARD.md + sfx-cues.json; stills draft/stills/_sheet.jpg"
+        }
+      ],
+      "doneAt": "2026-11-06T21:48:03.422679+00:00"
+    },
+    {
+      "id": "draft",
+      "name": "Render draf 540×960 + audit visual + contact sheet",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-06T22:36:48.178157+00:00",
+      "notes": [
+        {
+          "at": "2026-11-06T21:48:03.422679+00:00",
+          "text": "draft/PREVIEW.mp4 540x960@30, mix -14 LUFS; caption sync 96-98% within 0.25 s (whisper)"
+        },
+        {
+          "at": "2026-11-06T22:36:48.178157+00:00",
+          "text": "Revisi poin lemah lalu pengguna: \"Setuju, render final\""
+        }
+      ],
+      "doneAt": "2026-11-06T22:36:48.178157+00:00"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-06T22:51:52.488764+00:00",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60, QA_REPORT.md"
+        }
+      ],
+      "doneAt": "2026-11-06T22:51:52.488764+00:00"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-06T22:51:52.488764+00:00",
+          "text": "SOCIAL_CAPTIONS.md validator ok:true, NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-06T22:51:52.488764+00:00"
+    }
+  ],
+  "data": {
+    "style": "WATERCOLOR"
+  }
+}

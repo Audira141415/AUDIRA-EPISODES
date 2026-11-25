@@ -1,0 +1,142 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#05080C}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.06;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.55) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.5) 42%,rgba(0,0,0,0.5) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#CFE3E8;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+
+#topo{position:absolute;left:0;top:0;z-index:12;pointer-events:none;transform:translateY(2000px)}
+.p{clip-path:inset(0 0 0% 0)}
+.tk{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:32px;letter-spacing:.14em;color:#7FF0F5;margin-bottom:10px;text-shadow:0 2px 10px #000}
+.tk .yl{color:#F9E300;font-weight:700}
+.h1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:104px;line-height:.98;color:#EEF3F5;text-shadow:0 4px 26px #000;letter-spacing:.005em}.h1 span{color:#F9E300;font-size:84px}
+.h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:160px;line-height:.92;color:#EEF3F5;text-shadow:0 4px 26px #000}
+.h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:96px;line-height:1;color:#EEF3F5;text-shadow:0 4px 22px #000}.h3 span{color:#F9E300}
+.gd{color:#F2C14E!important}.tl{color:#7FF0F5!important}.rd{color:#FF5A4A!important}.sl{color:#A9C1E4!important}
+.lb{font-family:Barlow,sans-serif;font-weight:600;font-size:30px;line-height:1.25;color:#EEF3F5;margin-top:8px;text-shadow:0 2px 10px #000}
+.lb.sm2{font-size:26px;opacity:.9;margin-top:12px}
+.st{display:inline-block;margin-top:18px;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:54px;line-height:1.05;padding:8px 20px;color:#fff;background:#D52B1E;box-shadow:0 10px 30px rgba(0,0,0,.6);max-width:900px}
+.st.yb{background:#F9E300;color:#14100A}.st.sb{background:#3E5876;font-size:50px}
+.row{display:flex;gap:18px;align-items:center;margin-top:16px;padding:12px 18px;background:rgba(5,8,12,.74);border-left:6px solid #7FF0F5;backdrop-filter:blur(3px)}
+.row.gdb{border-left-color:#F2C14E}
+.row>b{flex:none;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:76px;line-height:1;color:#EEF3F5}.row>b.sm{font-size:46px}
+.row>b b{font-weight:800}
+.row span{font-family:Barlow,sans-serif;font-weight:600;font-size:31px;line-height:1.2;color:#EEF3F5}.row span i{font-style:normal;color:#7FF0F5;font-size:27px}
+.vs{display:flex;align-items:center;gap:16px;margin-top:6px}.vs b{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:64px;line-height:1;padding:8px 14px;background:rgba(5,8,12,.78)}.vs i{font-style:normal;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:44px;color:#EEF3F5}
+.alt{display:flex;align-items:flex-end;gap:12px;margin-top:14px}.alt b{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:150px;line-height:.85;color:#7FF0F5;text-shadow:0 0 30px rgba(70,230,242,.45),0 4px 20px #000}.alt span{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:40px;line-height:1;color:#EEF3F5;padding-bottom:6px}
+.duo{display:flex;gap:12px;margin-top:20px}.duo i{flex:1;text-align:center;font-style:normal;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:46px;padding:12px 4px;color:#14100A;background:#F9E300}.duo i+i{background:#EEF3F5}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="76.82" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI RELIEF, BUKAN DATA SURVEI</div>
+<svg id="topo" width="1080" height="900" viewBox="0 0 1080 900"><path d="M -20 40 L 0 40.0 L 40 48.9 L 80 55.8 L 120 59.4 L 160 59.5 L 200 57.0 L 240 53.3 L 280 50.1 L 320 48.2 L 360 47.4 L 400 46.8 L 440 45.0 L 480 41.2 L 520 35.2 L 560 27.9 L 600 21.1 L 640 16.7 L 680 16.0 L 720 19.3 L 760 25.7 L 800 33.6 L 840 40.9 L 880 46.1 L 920 48.8 L 960 49.6 L 1000 49.6 L 1040 50.3 L 1080 52.1 L 1120 54.8" stroke="#7FF0F5" stroke-opacity="0.55" stroke-width="1.6" fill="none"/><path d="M -20 78 L 0 106.1 L 40 106.7 L 80 103.1 L 120 97.4 L 160 91.9 L 200 88.0 L 240 86.0 L 280 84.9 L 320 82.9 L 360 78.6 L 400 71.2 L 440 61.9 L 480 52.7 L 520 46.3 L 560 44.7 L 600 48.7 L 640 57.5 L 680 68.7 L 720 79.6 L 760 87.8 L 800 92.4 L 840 93.7 L 880 93.3 L 920 93.1 L 960 94.4 L 1000 97.2 L 1040 100.2 L 1080 101.4 L 1120 99.0" stroke="#7FF0F5" stroke-opacity="0.55" stroke-width="1.6" fill="none"/><path d="M -20 116 L 0 142.2 L 40 133.8 L 80 127.3 L 120 123.6 L 160 121.6 L 200 119.5 L 240 115.0 L 280 107.0 L 320 96.2 L 360 85.0 L 400 76.6 L 440 73.8 L 480 78.2 L 520 89.0 L 560 103.5 L 600 118.3 L 640 130.0 L 680 136.9 L 720 139.0 L 760 138.1 L 800 136.7 L 840 136.8 L 880 138.9 L 920 141.9 L 960 143.5 L 1000 141.0 L 1040 133.1 L 1080 120.2 L 1120 104.6" stroke="#7FF0F5" stroke-opacity="0.55" stroke-width="1.6" fill="none"/><path d="M -20 154 L 0 160.1 L 40 157.0 L 80 154.6 L 120 150.3 L 160 142.3 L 200 130.7 L 240 118.0 L 280 107.7 L 320 103.6 L 360 107.9 L 400 120.3 L 440 138.0 L 480 156.8 L 520 172.4 L 560 182.1 L 600 185.4 L 640 184.1 L 680 181.1 L 720 179.4 L 760 180.1 L 800 182.6 L 840 184.2 L 880 181.9 L 920 173.6 L 960 159.1 L 1000 140.8 L 1040 122.7 L 1080 109.2 L 1120 103.3" stroke="#F9E300" stroke-opacity="0.9" stroke-width="3" fill="none"/><path d="M -20 192 L 0 184.4 L 40 176.9 L 80 165.3 L 120 151.6 L 160 139.8 L 200 134.3 L 240 138.1 L 280 151.7 L 320 172.3 L 360 195.1 L 400 214.9 L 440 227.9 L 480 232.8 L 520 231.2 L 560 226.5 L 600 222.3 L 640 221.0 L 680 222.1 L 720 223.5 L 760 221.4 L 800 213.1 L 840 197.7 L 880 177.3 L 920 156.1 L 960 139.4 L 1000 131.4 L 1040 133.6 L 1080 144.7 L 1120 160.8" stroke="#7FF0F5" stroke-opacity="0.55" stroke-width="1.6" fill="none"/><path d="M -20 230 L 0 215.0 L 40 210.6 L 80 208.3 L 120 209.3 L 160 214.1 L 200 222.0 L 240 231.0 L 280 239.3 L 320 244.9 L 360 247.3 L 400 246.8 L 440 244.6 L 480 242.2 L 520 240.7 L 560 240.5 L 600 240.7 L 640 240.0 L 680 237.3 L 720 231.9 L 760 224.5 L 800 216.4 L 840 209.7 L 880 206.2 L 920 206.6 L 960 210.7 L 1000 217.3 L 1040 224.3 L 1080 230.1 L 1120 233.8" stroke="#7FF0F5" stroke-opacity="0.55" stroke-width="1.6" fill="none"/><path d="M -20 268 L 0 240.1 L 40 246.1 L 80 256.5 L 120 269.1 L 160 281.0 L 200 289.7 L 240 293.7 L 280 293.2 L 320 289.7 L 360 285.5 L 400 282.3 L 440 280.8 L 480 280.5 L 520 279.6 L 560 276.5 L 600 270.1 L 640 260.6 L 680 249.9 L 720 240.5 L 760 235.0 L 800 235.0 L 840 240.4 L 880 249.5 L 920 259.9 L 960 269.0 L 1000 275.1 L 1040 278.1 L 1080 279.0 L 1120 279.7" stroke="#7FF0F5" stroke-opacity="0.55" stroke-width="1.6" fill="none"/><path d="M -20 306 L 0 306.9 L 40 322.7 L 80 334.7 L 120 340.7 L 160 340.6 L 200 335.8 L 240 329.4 L 280 323.7 L 320 320.4 L 360 319.0 L 400 317.9 L 440 314.6 L 480 307.6 L 520 296.7 L 560 283.8 L 600 271.8 L 640 264.3 L 680 263.4 L 720 269.7 L 760 281.4 L 800 295.4 L 840 308.2 L 880 317.2 L 920 321.9 L 960 323.1 L 1000 323.2 L 1040 324.4 L 1080 327.7 L 1120 332.7" stroke="#7FF0F5" stroke-opacity="0.55" stroke-width="1.6" fill="none"/><path d="M -20 344 L 0 388.1 L 40 388.7 L 80 382.8 L 120 373.8 L 160 365.2 L 200 359.3 L 240 356.3 L 280 354.6 L 320 351.4 L 360 344.3 L 400 332.7 L 440 318.1 L 480 303.9 L 520 294.2 L 560 292.2 L 600 298.9 L 640 312.9 L 680 330.5 L 720 347.3 L 760 359.9 L 800 366.7 L 840 368.5 L 880 367.9 L 920 367.7 L 960 369.8 L 1000 374.2 L 1040 378.8 L 1080 380.5 L 1120 376.3" stroke="#7FF0F5" stroke-opacity="0.55" stroke-width="1.6" fill="none"/><path d="M -20 382 L 0 419.0 L 40 407.0 L 80 397.8 L 120 392.6 L 160 389.9 L 200 386.7 L 240 380.0 L 280 368.3 L 320 352.6 L 360 336.6 L 400 324.9 L 440 321.5 L 480 328.3 L 520 344.2 L 560 365.3 L 600 386.4 L 640 402.9 L 680 412.4 L 720 415.1 L 760 413.7 L 800 411.7 L 840 412.0 L 880 415.2 L 920 419.4 L 960 421.4 L 1000 417.5 L 1040 405.8 L 1080 386.9 L 1120 364.4" stroke="#F9E300" stroke-opacity="0.9" stroke-width="3" fill="none"/><path d="M -20 420 L 0 422.7 L 40 421.3 L 80 420.2 L 120 418.1 L 160 414.3 L 200 408.9 L 240 403.1 L 280 398.4 L 320 396.8 L 360 399.0 L 400 404.8 L 440 413.1 L 480 421.8 L 520 428.9 L 560 433.2 L 600 434.5 L 640 433.8 L 680 432.5 L 720 431.7 L 760 432.1 L 800 433.2 L 840 433.9 L 880 432.7 L 920 428.7 L 960 421.9 L 1000 413.4 L 1040 405.1 L 1080 399.0 L 1120 396.6" stroke="#7FF0F5" stroke-opacity="0.55" stroke-width="1.6" fill="none"/><path d="M -20 458 L 0 453.7 L 40 449.5 L 80 443.1 L 120 435.7 L 160 429.4 L 200 426.6 L 240 429.0 L 280 436.6 L 320 448.0 L 360 460.3 L 400 471.0 L 440 477.8 L 480 480.2 L 520 479.2 L 560 476.6 L 600 474.4 L 640 473.7 L 680 474.4 L 720 475.1 L 760 473.8 L 800 469.1 L 840 460.5 L 880 449.4 L 920 437.9 L 960 429.1 L 1000 425.0 L 1040 426.5 L 1080 432.7 L 1120 441.6" stroke="#7FF0F5" stroke-opacity="0.55" stroke-width="1.6" fill="none"/><path d="M -20 496 L 0 468.9 L 40 461.2 L 80 457.3 L 120 459.6 L 160 468.5 L 200 482.6 L 240 498.7 L 280 513.2 L 320 523.0 L 360 526.9 L 400 525.7 L 440 521.7 L 480 517.4 L 520 515.0 L 560 514.6 L 600 514.9 L 640 513.6 L 680 508.5 L 720 498.8 L 760 485.4 L 800 471.2 L 840 459.5 L 880 453.5 L 920 454.6 L 960 462.3 L 1000 474.0 L 1040 486.5 L 1080 496.7 L 1120 503.0" stroke="#7FF0F5" stroke-opacity="0.55" stroke-width="1.6" fill="none"/><path d="M -20 534 L 0 490.8 L 40 500.6 L 80 517.1 L 120 536.8 L 160 555.3 L 200 568.4 L 240 574.3 L 280 573.2 L 320 567.6 L 360 561.0 L 400 556.0 L 440 553.9 L 480 553.4 L 520 551.9 L 560 546.8 L 600 536.5 L 640 521.6 L 680 504.9 L 720 490.4 L 760 482.3 L 800 482.7 L 840 491.5 L 880 506.1 L 920 522.3 L 960 536.3 L 1000 545.6 L 1040 549.9 L 1080 551.3 L 1120 552.5" stroke="#7FF0F5" stroke-opacity="0.55" stroke-width="1.6" fill="none"/><path d="M -20 572 L 0 574.6 L 40 597.1 L 80 614.0 L 120 622.2 L 160 621.5 L 200 614.5 L 240 605.1 L 280 597.1 L 320 592.4 L 360 590.5 L 400 588.8 L 440 583.9 L 480 573.5 L 520 557.7 L 560 539.0 L 600 522.1 L 640 511.7 L 680 511.0 L 720 520.5 L 760 537.7 L 800 557.8 L 840 576.0 L 880 588.8 L 920 595.1 L 960 596.7 L 1000 596.8 L 1040 598.6 L 1080 603.6 L 1120 610.7" stroke="#7FF0F5" stroke-opacity="0.55" stroke-width="1.6" fill="none"/><path d="M -20 610 L 0 630.5 L 40 630.6 L 80 627.7 L 120 623.5 L 160 619.6 L 200 616.9 L 240 615.6 L 280 614.8 L 320 613.3 L 360 609.9 L 400 604.4 L 440 597.6 L 480 591.2 L 520 586.9 L 560 586.1 L 600 589.5 L 640 596.1 L 680 604.2 L 720 611.9 L 760 617.6 L 800 620.6 L 840 621.3 L 880 621.0 L 920 621.0 L 960 622.0 L 1000 624.1 L 1040 626.1 L 1080 626.8 L 1120 624.7" stroke="#F9E300" stroke-opacity="0.9" stroke-width="3" fill="none"/><path d="M -20 648 L 0 667.8 L 40 661.2 L 80 656.4 L 120 653.6 L 160 652.2 L 200 650.4 L 240 646.6 L 280 640.1 L 320 631.6 L 360 622.9 L 400 616.7 L 440 615.2 L 480 619.2 L 520 628.0 L 560 639.6 L 600 651.0 L 640 659.8 L 680 664.7 L 720 666.0 L 760 665.2 L 800 664.1 L 840 664.4 L 880 666.1 L 920 668.4 L 960 669.4 L 1000 667.0 L 1040 660.4 L 1080 650.0 L 1120 637.7" stroke="#7FF0F5" stroke-opacity="0.55" stroke-width="1.6" fill="none"/><path d="M -20 686 L 0 690.5 L 40 688.1 L 80 686.1 L 120 682.3 L 160 675.4 L 200 665.8 L 240 655.4 L 280 647.4 L 320 644.7 L 360 649.0 L 400 659.8 L 440 674.6 L 480 689.9 L 520 702.3 L 560 709.7 L 600 711.9 L 640 710.5 L 680 708.1 L 720 706.8 L 760 707.6 L 800 709.6 L 840 710.6 L 880 708.3 L 920 700.9 L 960 688.6 L 1000 673.5 L 1040 658.9 L 1080 648.3 L 1120 644.3" stroke="#7FF0F5" stroke-opacity="0.55" stroke-width="1.6" fill="none"/><path d="M -20 724 L 0 716.9 L 40 710.3 L 80 700.1 L 120 688.5 L 160 679.0 L 200 675.1 L 240 679.3 L 280 691.5 L 320 709.4 L 360 728.7 L 400 745.0 L 440 755.3 L 480 758.8 L 520 757.0 L 560 752.9 L 600 749.5 L 640 748.5 L 680 749.6 L 720 750.5 L 760 748.3 L 800 740.6 L 840 727.0 L 880 709.5 L 920 691.8 L 960 678.3 L 1000 672.3 L 1040 675.1 L 1080 685.2 L 1120 699.2" stroke="#7FF0F5" stroke-opacity="0.55" stroke-width="1.6" fill="none"/><path d="M -20 762 L 0 722.4 L 40 711.5 L 80 706.4 L 120 710.1 L 160 723.4 L 200 744.0 L 240 767.2 L 280 787.7 L 320 801.3 L 360 806.5 L 400 804.5 L 440 798.6 L 480 792.6 L 520 789.2 L 560 788.7 L 600 789.0 L 640 786.9 L 680 779.3 L 720 765.0 L 760 745.7 L 800 725.2 L 840 708.8 L 880 700.7 L 920 702.9 L 960 714.4 L 1000 731.4 L 1040 749.3 L 1080 763.7 L 1120 772.6" stroke="#7FF0F5" stroke-opacity="0.55" stroke-width="1.6" fill="none"/><path d="M -20 800 L 0 780.2 L 40 784.9 L 80 792.7 L 120 801.8 L 160 810.2 L 200 816.1 L 240 818.7 L 280 818.0 L 320 815.4 L 360 812.3 L 400 810.1 L 440 809.1 L 480 808.9 L 520 808.2 L 560 805.7 L 600 800.8 L 640 793.9 L 680 786.1 L 720 779.6 L 760 776.0 L 800 776.5 L 840 780.7 L 880 787.5 L 920 795.0 L 960 801.4 L 1000 805.5 L 1040 807.5 L 1080 808.0 L 1120 808.6" stroke="#7FF0F5" stroke-opacity="0.55" stroke-width="1.6" fill="none"/><path d="M -20 838 L 0 840.1 L 40 852.3 L 80 861.2 L 120 865.4 L 160 864.8 L 200 860.8 L 240 855.7 L 280 851.4 L 320 849.0 L 360 848.0 L 400 847.0 L 440 844.2 L 480 838.4 L 520 829.7 L 560 819.5 L 600 810.5 L 640 805.1 L 680 805.0 L 720 810.5 L 760 819.9 L 800 830.9 L 840 840.7 L 880 847.4 L 920 850.7 L 960 851.5 L 1000 851.5 L 1040 852.6 L 1080 855.3 L 1120 859.2" stroke="#F9E300" stroke-opacity="0.9" stroke-width="3" fill="none"/></svg>
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tk">FAKTA SEJARAH NEGARA / EP 05</div>
+  <div class="h1">TANPA LAUT,<br><span>PUNYA ANGKATAN LAUT</span></div>
+  <div class="row" data-at="s1:sekitar" data-fx="left"><b class="nb">&plusmn;<b class="ct" data-from="0" data-to="5000" data-a="s1:sekitar" data-d="1.3">0</b></b><span>PERSONEL<br><i>Armada Boliviana</i></span></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="tk">BOLIVIA MERDEKA</div>
+  <div class="h2 gd" data-at="s2:1825" data-fx="pop">1825</div>
+  <div class="row gdb" data-at="s2:pantai" data-fx="left"><b class="sm gd">PANTAI PASIFIK</b><span>lewat Gurun Atacama, Departemen Litoral</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tk">PERANG PASIFIK</div>
+  <div class="h2">1879</div>
+  <div class="vs" data-at="s3:Bolivia" data-fx="left"><b class="rd">BOLIVIA + PERU</b><i>vs</i><b class="sl">CHILE</b></div>
+  <div class="st" data-at="s3:lepas" data-fx="stamp">PANTAI BOLIVIA LEPAS</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="tk">PERJANJIAN DAMAI &amp; PERSAHABATAN</div>
+  <div class="h2">1904</div>
+  <div class="row gdb" data-at="s4:rel" data-fx="left"><b class="sm gd">REL KERETA</b><span>Arica &ndash; La Paz, dibangun Chile</span></div>
+  <div class="row gdb" data-at="s4:berdagang" data-fx="left"><b class="sm gd">HAK DAGANG</b><span>lewat pelabuhan Chile</span></div>
+</div>
+<div class="p" data-in="s5" data-out="s5:Kini">
+  <div class="tk">FUERZA FLUVIAL Y LACUSTRE</div>
+  <div class="h2" data-at="s5:1963" data-fx="pop">1963</div>
+  <div class="row" data-at="s5:sungai" data-fx="left"><b class="sm tl">PASUKAN</b><span>sungai dan danau</span></div>
+</div>
+<div class="p" data-in="s5:Kini" data-out="s6">
+  <div class="tk">KINI BERPATROLI DI</div>
+  <div class="row" data-at="s5:Amazon" data-fx="left"><b class="sm tl">SUNGAI</b><span>anak-anak sungai Amazon</span></div>
+  <div class="row" data-at="s5:Titicaca" data-fx="left"><b class="sm tl">DANAU</b><span>Titicaca, berbagi dengan Peru</span></div>
+  <div class="alt" data-at="s5:3.812" data-fx="up"><b class="ct" data-from="0" data-to="3812" data-a="s5:3.812" data-d="1.6">0</b><span>m<br>dpl</span></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="tk">SETIAP <b class="yl">23 MARET</b></div>
+  <div class="h2" data-at="s6:Día" data-fx="up">DÍA DEL MAR</div>
+  <div class="lb" data-at="s6:Hari" data-fx="fade">HARI LAUT &middot; PLAZA ABAROA, LA PAZ</div>
+  <div class="st yb" data-at="s6:tuntutan" data-fx="stamp">TUNTUTAN: AKSES KE LAUT</div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tk">MAHKAMAH INTERNASIONAL (ICJ)</div>
+  <div class="row" data-at="s7:2013" data-fx="left"><b class="sm">2013</b><span>Bolivia menggugat Chile</span></div>
+  <div class="row" data-at="s7:Oktober" data-fx="left"><b class="sm">1 OKT 2018</b><span>putusan dibacakan</span></div>
+  <div class="st sb" data-at="s7:tidak" data-fx="stamp">12 HAKIM: CHILE TIDAK WAJIB BERUNDING</div>
+  <div class="lb sm2" data-at="s7:berunding" data-fx="fade">Pengadilan tidak memutus soal kepemilikan wilayah.</div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="tk">1879 &rarr; 2026</div>
+  <div class="h3">LAUT LEPAS<br>HAMPIR <span>150 TAHUN</span></div>
+  <div class="row" data-at="s8:berlayar" data-fx="left"><b class="sm tl">TETAP</b><span>berlayar di danau dan sungai</span></div>
+  <div class="duo"><i data-at="s8:keras" data-fx="pop">KERAS KEPALA?</i><i data-at="s8:kesetiaan" data-fx="pop">SETIA PADA SEJARAH?</i></div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 05</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":5.803,"s2":5.963,"s2e":14.235,"s3":14.395,"s3e":25.711,"s4":25.871,"s4e":34.685,"s5":34.845,"s5e":47.834,"s6":47.994,"s6e":56.162,"s7":56.322,"s7e":65.298,"s8":65.458,"s8e":73.817,"end":73.817,"dur":76.82,"outro":74.067},AT={"s2:Bolivia":6.255,"s2:pantai":10.845,"s3:memicu":18.645,"s3:Pasifik":19.218,"s3:Bolivia":20.146,"s3:Peru":21.23,"s3:melawan":21.555,"s3:Chile":21.88,"s3:Chile#2":22.909,"s3:menang":23.373,"s3:seluruh":24.178,"s3:lepas":25.293,"s4:rel":30.49,"s4:Arica":31.279,"s4:La":31.728,"s4:Paz":31.867,"s5:sungai":39.553,"s5:berpatroli":41.658,"s5:Amazon":42.835,"s5:Danau":43.516,"s5:Titicaca":43.872,"s5:3.812":44.862,"s6:Setiap":47.994,"s6:berparade":52.849,"s7:putusannya":62.759,"s7:keluar":63.301,"s7:wajib":64.617,"s7:berunding":64.849,"s8:tetap":69.618,"s8:Menurut":71.387,"s5:Kini":40.853,"s1:sekitar":4.456,"s2:1825":8.136,"s4:berdagang":33.229,"s5:1963":37.571,"s6:Día":50.225,"s6:Hari":50.999,"s6:tuntutan":53.778,"s7:2013":56.722,"s7:Oktober":61.01,"s7:tidak":64.369,"s8:berlayar":69.85,"s8:keras":71.991,"s8:kesetiaan":72.796},DUR=76.82,OUT=74.067;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ 
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{clipPath:'inset(100% 0 0 0)',opacity:1},{clipPath:'inset(0% 0 0 0)',duration:.55,ease:'power2.out',immediateRender:false},a-.18);},POUT=(tl,p,b)=>tl.to(p,{clipPath:'inset(0 0 100% 0)',duration:.3,ease:'power2.in'},b-.3);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

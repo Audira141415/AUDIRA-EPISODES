@@ -1,0 +1,666 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP04_PIT_STOP_F1_1_KOMA_8_DETIK",
+  "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+  "createdAt": "2026-11-22T06:26:14.159Z",
+  "updatedAt": "2026-11-23T09:06:25.963Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T06:29:39.175Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-22T06:26:14.160Z",
+      "startedAt": "2026-11-22T06:26:14.160Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T06:29:39.175Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-22T06:26:14.091Z",
+      "startedAt": "2026-11-22T06:26:14.091Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T07:23:09.246Z",
+      "notes": [
+        {
+          "at": "2026-11-22T07:04:49.863Z",
+          "text": "Rekomendasi: TOYDIORAMA (utama), CINESTORY, BONGKAR. Katalog GLB tidak punya mobil F1 (hanya mobil jalan 60-80an); mobil F1 dibangun prosedural, props GLB: tire-ccf0eb, checkered-flag-81784a, traffic-light-5e5ae6, service-bay-garage-aaf8e0."
+        },
+        {
+          "at": "2026-11-22T07:19:02.013Z",
+          "text": "Pengguna pilih TOYDIORAMA. Cover topik A/B dirender (Ep04CoverA/B), menunggu pilihan varian + acc."
+        },
+        {
+          "at": "2026-11-22T07:23:09.246Z",
+          "text": "Pengguna: \"Acc cover A\". cover-topic.png = varian A (Ep04CoverA, cam pos [1.3,10.8,7.4] target [0,0,-0.4] fov 32)."
+        }
+      ],
+      "startedAt": "2026-11-22T07:04:49.863Z",
+      "doneAt": "2026-11-22T07:23:09.246Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T07:31:25.740Z",
+      "notes": [
+        {
+          "at": "2026-11-22T07:26:10.991Z",
+          "text": "ART_DIRECTION, SCRIPT (202 kata ucapan, ±87 dtk), STORYBOARD (7 scene), ASSET_MANIFEST ditulis. Menunggu acc. Subtitle cover A dikoreksi (hapus klaim 'lebih cepat dari kedipan')."
+        },
+        {
+          "at": "2026-11-22T07:31:25.740Z",
+          "text": "Pengguna: \"Acc, lanjut VO\" (naskah + storyboard + art direction)."
+        }
+      ],
+      "startedAt": "2026-11-22T07:26:10.991Z",
+      "doneAt": "2026-11-22T07:31:25.740Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T07:46:43.679Z",
+          "text": "Studio bersama AUDIRA_FAKTA_OLAHRAGA_2026/studio, kode di scenes/ep04/."
+        }
+      ],
+      "doneAt": "2026-11-22T07:46:43.679Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T07:34:35.903Z",
+          "text": "sync: VO sudah dibuat"
+        },
+        {
+          "at": "2026-11-22T07:34:49.879Z",
+          "text": "VO terkunci: audio/vo.wav (speed 0.88, tight 79,34 dtk, 135 WPM). timeline studio/src/scenes/ep04/timeline.json total 83,34 dtk. docs/TIMING.md."
+        }
+      ],
+      "doneAt": "2026-11-22T07:34:49.879Z",
+      "startedAt": "2026-11-22T07:34:12.957Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T07:50:58.570Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T07:46:01.019Z",
+      "startedAt": "2026-11-22T07:46:01.019Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T08:01:06.624Z",
+      "notes": [
+        {
+          "at": "2026-11-22T07:50:58.570Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json FAIL (perlu perbaikan sebelum final); menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-22T08:01:06.624Z",
+          "text": "User acc draf 2026-11-22 (\"Approve, render final\"). Jury LOLOS avg 4.0."
+        }
+      ],
+      "startedAt": "2026-11-22T07:46:28.907Z",
+      "doneAt": "2026-11-22T08:01:06.624Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T09:05:37.738Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-23T09:06:21.256Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60, 83,37 dtk; -13,6 LUFS, TP -2,1 dBFS; metadata + Ed25519/C2PA valid; juri final LOLOS 3,83 (self 4,0)."
+        }
+      ],
+      "doneAt": "2026-11-23T09:06:21.256Z",
+      "startedAt": "2026-11-23T09:04:24.899Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T08:32:03.616Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-22T08:31:58.514Z",
+      "startedAt": "2026-11-22T08:31:58.514Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "fakta-olahraga-EP04",
+    "style": "TOYDIORAMA",
+    "engine": "remotion",
+    "wordCount": 202,
+    "estimatedDuration": {
+      "wordCount": 202,
+      "minSec": 81,
+      "maxSec": 90
+    },
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-23T09:05:37.738Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T07:19:19.632Z",
+      "doing": "Gerbang style tahap 3: TOYDIORAMA dipilih, cover topik A/B dirender (style/cover-topic-A.png, -B.png), menunggu pilihan varian + acc pengguna.",
+      "files": [
+        "studio/src/scenes/ep04/PitSet.tsx",
+        "studio/src/scenes/ep04/Cover.tsx",
+        "studio/src/scenes/ep04/Model.tsx",
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/style/STYLE_DECISION.md"
+      ],
+      "next": "Setelah acc: salin varian ke style/cover-topic.png, set approved yes di STYLE_DECISION.md + update style approved, lalu tahap 4 naskah (caveat riset di brief). Tahap 9: JANGAN pakai audira_render_batch (bug, lihat side-session-notes ep01-render-batch-blockers.md); pakai `npm run render:final` dari studio dengan --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --sfx=public/audio/sfx.wav --cuts=...; cek/buat GPU_LOCK.md di side-session-notes/local_1284e608-.../ sebelum render, hapus sesudahnya. Pakai scenes/ep04/Model.tsx (bukan _shared/Glb.tsx) untuk GLB bila ada SceneText.",
+      "snapshot": {
+        "episode": "EP04_PIT_STOP_F1_1_KOMA_8_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP04",
+        "currentStage": "style",
+        "gates": {
+          "style": {
+            "approved": false,
+            "status": "in_progress"
+          },
+          "script": {
+            "approved": false,
+            "status": "pending"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T07:23:16.361Z",
+      "doing": "Gerbang style selesai: TOYDIORAMA + cover A di-acc pengguna (style/cover-topic.png = Ep04CoverA). Mulai tahap 4 berikutnya.",
+      "files": [
+        "studio/src/scenes/ep04/PitSet.tsx",
+        "studio/src/scenes/ep04/Cover.tsx",
+        "studio/src/scenes/ep04/Model.tsx",
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/style/STYLE_DECISION.md"
+      ],
+      "next": "Tahap 4: docs/ART_DIRECTION.md → docs/SCRIPT.md + docs/STORYBOARD.md (≥6 baris, kolom Audio) → docs/ASSET_MANIFEST.md; 195–210 kata, hook dari fakta kuat (0,02 dtk lebih cepat dari 1,82 Red Bull Brasil 2019; ban 18 inci lebih berat; McLaren belum pernah menang DHL Fastest Pit Stop Award); tulis 'rekor tercatat sejak 2023 (per Nov 2026)'; lap 27; kontras Fangio GP Jerman 1957; tanpa Bobby Unser/1950-an semenit/torsi/kecepatan wheel gun; VO sebut AUDIRA; teaser outro 'Rumble in the Jungle'. Film dibuka dari frame Ep04CoverA. Tahap 9: render:final langsung (bukan audira_render_batch) + GPU_LOCK.md di side-session-notes/local_1284e608-.../. GLB pakai scenes/ep04/Model.tsx.",
+      "snapshot": {
+        "episode": "EP04_PIT_STOP_F1_1_KOMA_8_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP04",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": false,
+            "status": "pending"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T07:26:18.358Z",
+      "doing": "Tahap 4 ditulis (docs/ART_DIRECTION.md, SCRIPT.md 202 kata ±87 dtk, STORYBOARD.md 7 scene, ASSET_MANIFEST.md); menunggu acc naskah + storyboard + art direction dari pengguna.",
+      "files": [
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/docs/SCRIPT.md",
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/docs/STORYBOARD.md",
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/docs/ART_DIRECTION.md",
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/docs/ASSET_MANIFEST.md"
+      ],
+      "next": "Setelah acc: update script approved, tahap 5 setup (studio bersama sudah ada; scenes/ep04/ berisi PitSet/Cover/Model), tahap 6 VO Cartesia dari blok '>' SCRIPT.md (pakai bagian spoken markup), npm run vo, lalu timeline. script:check studio = mode long-form (abaikan RED). Tahap 9: render:final langsung + GPU_LOCK.md (bukan audira_render_batch).",
+      "snapshot": {
+        "episode": "EP04_PIT_STOP_F1_1_KOMA_8_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP04",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": false,
+            "status": "in_progress"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T07:32:23.492Z",
+      "doing": "VO Cartesia dibuat: audio/work/vo-raw.wav 75,93 dtk, 202 kata, words di vo-raw-words.json, timing di vo-raw.timing.json, batas blok di docs/TIMING.md. Belum dibuat vo-tight/vo.wav final, timeline.json, maupun scene film.",
+      "files": [
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/audio/work/vo-raw.wav",
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/audio/work/vo-raw-words.json",
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/docs/TIMING.md"
+      ],
+      "next": "Tahap 6 lanjut: kunci VO (ikuti pola EP01: vo-tight.wav → audio/vo.wav + studio/public/audio/ep04/vo.wav), buat scenes/ep04/timeline.json dari TIMING.md, lalu tahap 7: Film.tsx multi-scene S1–S7 (STORYBOARD.md) memakai PitSet.tsx + Model.tsx; tambah Ep04Preview/Ep04Final di Root.tsx dengan signed(\"Ep04\", EP04.Film) via Edit kecil (Read dulu). Cek pengucapan 'Rumble in the Jungle' di akhir VO. Tahap 9: render:final langsung + GPU_LOCK.md, bukan audira_render_batch.",
+      "snapshot": {
+        "episode": "EP04_PIT_STOP_F1_1_KOMA_8_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP04",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T07:46:43.611Z",
+      "doing": "Tahap 7 animasi selesai versi 1: studio/src/scenes/ep04/Film.tsx (7 scene S1–S7, HUD skala 1080, karaoke y1260, DoF+fog+vignette), Root Ep04Preview/Ep04Final terdaftar, SFX public/audio/ep04/sfx.wav (-20 LUFS) dari docs/SHOTLIST.md. Draf: draft/contact-sheet.jpg (8 frame 3.9/16/24/42/51/58/63/72 s) + audit:visual semua ceiling 5 (draft/look.json). Belum: klip gerak + audit:camera, skor self + juri buta, acc draf.",
+      "files": [
+        "studio/src/scenes/ep04/Film.tsx",
+        "studio/src/scenes/ep04/PitSet.tsx",
+        "studio/src/scenes/ep04/timeline.json",
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/docs/SHOTLIST.md",
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/draft/contact-sheet.jpg",
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/draft/look.json"
+      ],
+      "next": "Tahap 8: render klip 15–20 dtk 540x960 bagian paling berisiko (mis. 12–30 s: S2 tracking + S3 orbit) lewat GPU_LOCK.md, npm run audit:camera -- <clip> --json=draft/camera.json; record_score self (ceilings=draft/look.json, camera) lalu juri buta subagent (qa/jury.md) record_score judge jury; bila PERLU POLES poles; lalu minta acc draf pengguna dengan contact sheet. Catatan polish: pit box muncul di 3 frame (1,3,8) — juri bisa menegur; vignette cukup berat; mobil S2 terpotong kiri saat tracking. Tahap 9: render:final langsung --sfx=public/audio/ep04/sfx.wav + GPU_LOCK.md, bukan audira_render_batch.",
+      "snapshot": {
+        "episode": "EP04_PIT_STOP_F1_1_KOMA_8_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP04",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP04_PIT_STOP_F1_1_KOMA_8_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T07:55:08.345Z",
+      "doing": "Tahap 8: render klip draf 12–30 s (Ep04Preview frames 360-900) ke draft/clip-12-30.mp4; sudah poles S2 kamera (mobil utuh) + vignette lebih ringan di Film.tsx",
+      "command": "npx remotion render Ep04Preview ../EP04_PIT_STOP_F1_1_KOMA_8_DETIK/draft/clip-12-30.mp4 --frames=360-900 --log=error (GPU_LOCK.md dibuat; hapus setelah selesai)",
+      "files": [
+        "studio/src/scenes/ep04/Film.tsx",
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/draft/clip-12-30.mp4"
+      ],
+      "next": "audit:camera -> draft/camera.json; re-render contact sheet (stills.mjs) + audit:visual; record_score self lalu juri buta",
+      "snapshot": {
+        "episode": "EP04_PIT_STOP_F1_1_KOMA_8_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP04",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP04_PIT_STOP_F1_1_KOMA_8_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T08:00:10.818Z",
+      "doing": "Tahap 8 selesai teknis: draf LOLOS juri buta (avg 4.0, composition 3). Menunggu acc draf pengguna. Poles: S2 kamera tracking jarak 12.4 (mobil utuh), papan LUSAIL dipindah ke tengah atas, orbit S3 diperlambat (camera 5/5), vignette sedikit lebih ringan + subject light pool S4–S6 (depth ceiling 5, diversity 30.9).",
+      "files": [
+        "studio/src/scenes/ep04/Film.tsx",
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/draft/contact-sheet.jpg",
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/draft/look.json",
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/draft/camera.json",
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/draft/clip-12-30.mp4"
+      ],
+      "next": "Bila pengguna acc: update stage draft approved true, lalu Tahap 9 npm run render:final langsung --sfx=public/audio/ep04/sfx.wav dengan GPU_LOCK.md. Bila pengguna minta poles komposisi: isi lantai kosong bawah frame S2/S4/S5 (kamera lebih rendah/dekat), S4 mobil terpotong di tepi.",
+      "snapshot": {
+        "episode": "EP04_PIT_STOP_F1_1_KOMA_8_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP04",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP04_PIT_STOP_F1_1_KOMA_8_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T08:01:25.494Z",
+      "doing": "Tahap 9: render final Ep04Final 1080x1920@60 (GPU_LOCK.md dibuat; hapus setelah selesai/gagal)",
+      "command": "cd studio; npm run render:final -- --comp=Ep04Final --out=out/ep04/FINAL_EP04.mp4 --vo=public/audio/ep04/vo.wav --sfx=public/audio/ep04/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Pit Stop F1 1,80 Detik\" --slug=pit-stop-f1-1-koma-8-detik --ep=EP04",
+      "files": [
+        "studio/out/ep04/FINAL_EP04.mp4"
+      ],
+      "next": "QA: ffprobe metadata, loudnorm -14 LUFS/TP<-1, cek frame dari MP4, salin ke EP04 folder sebagai FINAL_VIDEO.mp4, record_score final (self + jury)",
+      "snapshot": {
+        "episode": "EP04_PIT_STOP_F1_1_KOMA_8_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP04_PIT_STOP_F1_1_KOMA_8_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T08:03:57.151Z",
+      "doing": "Tahap 9: render final percobaan 1 GAGAL (part 0 write EOF, 0.5 fps) karena GPU penuh oleh render-final AUDIRA_SAINS_ANAK_2026 EP03+EP05 tanpa GPU_LOCK. Skrip tunggu+retry jalan: scratchpad/ep04-final.sh (tunggu 0 proses render-final + lock bebas, lalu render).",
+      "command": "bash scratchpad/ep04-final.sh (isi: npm run render:final -- --comp=Ep04Final --out=out/ep04/FINAL_EP04.mp4 --vo=public/audio/ep04/vo.wav --sfx=public/audio/ep04/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Pit Stop F1 1,80 Detik\" --slug=pit-stop-f1-1-koma-8-detik --ep=EP04)",
+      "files": [
+        "studio/out/ep04/FINAL_EP04.mp4"
+      ],
+      "next": "Bila sukses: QA ffprobe metadata, loudness -14 LUFS / TP < -1, cek frame MP4, salin FINAL_VIDEO.mp4 ke folder EP04, record_score final self + jury. Bila skrip mati tanpa render: jalankan ulang perintah render:final manual setelah GPU bebas (cek nvidia-smi + GPU_LOCK.md).",
+      "snapshot": {
+        "episode": "EP04_PIT_STOP_F1_1_KOMA_8_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP04_PIT_STOP_F1_1_KOMA_8_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T08:32:39.094Z",
+      "doing": "Tahap 9 menunggu GPU (retry otomatis scratchpad ep04-final.sh; GPU_LOCK dipegang sesi lain). Tahap 10 sebagian: SOCIAL_CAPTIONS.md lolos validator, SUBTITLES.srt 49 cue, NOTES.md ditulis.",
+      "command": "npm run render:final -- --comp=Ep04Final --out=out/ep04/FINAL_EP04.mp4 --vo=public/audio/ep04/vo.wav --sfx=public/audio/ep04/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Pit Stop F1 1,80 Detik\" --slug=pit-stop-f1-1-koma-8-detik --ep=EP04 (dari studio/, pakai GPU_LOCK.md)",
+      "files": [
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/SOCIAL_CAPTIONS.md",
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/SUBTITLES.srt",
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/NOTES.md"
+      ],
+      "next": "Setelah final ada: cek out/ep04/FINAL_EP04.mp4 (ffprobe metadata, -14 LUFS, TP<-1, frame), salin ke EP04/FINAL_VIDEO.mp4, record_score final self + juri buta. Lalu tahap 10 sisa: 3 scheduled task review (review-pit-stop-f1-24h/-72h/-7d, default upload Kamis 26 Nov 2026 19.00 WIB +07:00), catat taskId di NOTES.md, append_lesson, hapus clip/draft MP4 perantara.",
+      "snapshot": {
+        "episode": "EP04_PIT_STOP_F1_1_KOMA_8_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP04_PIT_STOP_F1_1_KOMA_8_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:22:11.152Z",
+      "doing": "Tahap 9 belum mulai: render final EP04 belum ada (out/ep04 tanpa FINAL_EP04.mp4). Skrip retry otomatis mati saat sesi lama berakhir (GPU dipakai render-final sesi lain). Tahap 10 sebagian selesai: SOCIAL_CAPTIONS.md lolos validator, SUBTITLES.srt 49 cue, NOTES.md. Keputusan pengguna 2026-11-23: jam upload Kamis 26 Nov 2026 19.00 WIB.",
+      "command": "cd studio; (cek GPU_LOCK.md di side-session-notes/local_1284e608.../ + nvidia-smi + tidak ada proses render-final.mjs lain; buat lock) npm run render:final -- --comp=Ep04Final --out=out/ep04/FINAL_EP04.mp4 --vo=public/audio/ep04/vo.wav --sfx=public/audio/ep04/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Pit Stop F1 1,80 Detik\" --slug=pit-stop-f1-1-koma-8-detik --ep=EP04 ; hapus lock",
+      "files": [
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/SOCIAL_CAPTIONS.md",
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/SUBTITLES.srt",
+        "EP04_PIT_STOP_F1_1_KOMA_8_DETIK/NOTES.md",
+        "studio/src/scenes/ep04/Film.tsx"
+      ],
+      "next": "1) Render final (perintah di atas, tunggu GPU bebas). 2) QA: ffprobe metadata, -14 LUFS & TP < -1 dBFS, cek frame dari MP4; salin ke EP04/FINAL_VIDEO.mp4. 3) record_score final self + juri buta (qa/jury.md). 4) 3 scheduled task review fireAt 2026-11-27T19:00+07:00 / 2026-11-29T19:00+07:00 / 2026-12-03T19:00+07:00, taskId review-pit-stop-f1-1-koma-8-detik-24h/-72h/-7d; catat di NOTES.md. 5) append_lesson, hapus draft/clip-12-30.mp4 + draft/stills*.",
+      "snapshot": {
+        "episode": "EP04_PIT_STOP_F1_1_KOMA_8_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP04_PIT_STOP_F1_1_KOMA_8_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:49:35.123Z",
+      "doing": "G21 (Style: TOYDIORAMA di 3 docs) + G22 (draft/THEME_CHECK.md) dibetulkan oleh sesi batch render; final belum dirender",
+      "command": "audira_render_batch start updateScripts:true, job project=studio comp=Ep04Final out=out/ep04/FINAL_EP04.mp4 vo=public/audio/ep04/vo.wav sfx=public/audio/ep04/sfx.wav",
+      "files": [
+        "docs/ART_DIRECTION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Render setelah EP09 Fosbury selesai, lalu QA, FINAL_VIDEO.mp4, record_score final, scheduled review",
+      "snapshot": {
+        "episode": "EP04_PIT_STOP_F1_1_KOMA_8_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP04_PIT_STOP_F1_1_KOMA_8_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:01:32.500Z",
+      "doing": "render final Ep04Final (GPU lock dibuat)",
+      "command": "cd studio; npm run render:final -- --comp=Ep04Final --out=out/ep04/FINAL_EP04.mp4 --vo=public/audio/ep04/vo.wav --sfx=public/audio/ep04/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Pit Stop F1 1,80 Detik\" --slug=pit-stop-f1-1-koma-8-detik --ep=EP04",
+      "files": [
+        "studio/out/ep04/FINAL_EP04.mp4"
+      ],
+      "next": "hapus GPU_LOCK.md, QA (ffprobe metadata, -14 LUFS, TP<-1, frames), salin FINAL_VIDEO.mp4, record_score final self+jury, 3 scheduled review task, cleanup draft/clip-12-30.mp4 + draft/stills*",
+      "snapshot": {
+        "episode": "EP04_PIT_STOP_F1_1_KOMA_8_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP04_PIT_STOP_F1_1_KOMA_8_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:01:32.500Z",
+      "doing": "render final Ep04Final (GPU lock dibuat)",
+      "command": "cd studio; npm run render:final -- --comp=Ep04Final --out=out/ep04/FINAL_EP04.mp4 --vo=public/audio/ep04/vo.wav --sfx=public/audio/ep04/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Pit Stop F1 1,80 Detik\" --slug=pit-stop-f1-1-koma-8-detik --ep=EP04",
+      "files": [
+        "studio/out/ep04/FINAL_EP04.mp4"
+      ],
+      "next": "hapus GPU_LOCK.md, QA (ffprobe metadata, -14 LUFS, TP<-1, frames), salin FINAL_VIDEO.mp4, record_score final self+jury, 3 scheduled review task, cleanup draft/clip-12-30.mp4 + draft/stills*",
+      "snapshot": {
+        "episode": "EP04_PIT_STOP_F1_1_KOMA_8_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP04",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP04_PIT_STOP_F1_1_KOMA_8_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T09:06:25.963Z"
+    }
+  ]
+}

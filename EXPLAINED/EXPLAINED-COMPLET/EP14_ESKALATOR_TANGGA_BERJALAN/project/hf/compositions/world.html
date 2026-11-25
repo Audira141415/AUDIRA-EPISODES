@@ -1,0 +1,112 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#BFD9E6}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.06;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.28) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.1) 42%,rgba(0,0,0,0.1) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'Courier New',monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#4A2E1E;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.tag{display:table;font-family:'Courier New',monospace;font-weight:700;font-size:28px;letter-spacing:.12em;color:#FFF7E8;background:#C9563A;padding:9px 18px 8px;margin-bottom:16px;transform:rotate(-1.2deg);border-radius:4px;box-shadow:4px 4px 0 rgba(74,46,30,.3)}
+.card{display:table;background:#FFF7E8;border-radius:8px;padding:14px 30px 20px;margin-bottom:16px;border:3px dashed #C9563A;box-shadow:8px 8px 0 rgba(62,156,149,.35),0 18px 36px rgba(74,46,30,.25)}
+.big{font-family:Georgia,'Palatino Linotype',serif;font-weight:900;font-size:96px;line-height:1.0;color:#4A2E1E;letter-spacing:-.01em}
+.big span{color:#C9563A}.big .sm{font-size:62px;color:#4A2E1E}.big.sm2{font-size:68px;line-height:1.06}.big em{font-style:italic;color:#3E9C95}
+.ln{display:table;font-family:Nunito,sans-serif;font-weight:800;font-size:40px;line-height:1.2;color:#4A2E1E;background:#FFF7E8;padding:10px 24px 12px 22px;margin-bottom:12px;border-left:12px solid #F2B53B;border-radius:0 8px 8px 0;box-shadow:5px 5px 0 rgba(74,46,30,.2);max-width:880px}
+.ln.r{border-left-color:#C9563A}.ln.t{border-left-color:#3E9C95}
+#chip{font-family:'Courier New',monospace;font-size:27px;font-weight:700;color:#4A2E1E;opacity:.75;letter-spacing:.06em;background:rgba(255,247,232,.7);padding:3px 10px}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="87.11" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN CUPLIKAN ASLI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tag">CARA KERJA BENDA &middot; EP 14</div>
+  <div class="card"><div class="big">Anak tangga<br><span class="sm">tidak masuk</span> <span>lantai</span></div></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="tag">CONEY ISLAND &middot; 1896</div>
+  <div class="ln r" data-at="s2:Jesse" data-fx="stitch">Jesse Reno: tanjakan berjalan pertama</div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tag">PAMERAN PARIS &middot; 1900</div>
+  <div class="ln t" data-at="s3:Seeberger" data-fx="stitch">Seeberger + Otis: anak tangga sejati</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="tag">ANATOMI ANAK TANGGA</div>
+  <div class="ln r" data-at="s4:kereta" data-fx="stitch">Kereta kecil, 2 pasang roda, rantai</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="tag">DUA REL BERBEDA</div>
+  <div class="card" data-at="s5:terangkat" data-fx="stitch"><div class="big sm2">Rel berjauhan &rarr; <span>undakan</span></div></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="tag">KEMBALI RATA</div>
+  <div class="ln t" data-at="s6:merapat" data-fx="stitch">Rel merapat, pelat bergerigi, berbalik</div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tag">ASAL KATA</div>
+  <div class="card" data-at="s7:scala" data-fx="stitch"><div class="big sm2"><em>scala</em> &rarr; <span>eskalator</span></div></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="card" data-at="s8:rantai" data-fx="stitch"><div class="big sm2">Satu rantai <span>berputar</span></div></div>
+  <div class="ln t" data-at="s8:Episode" data-fx="stitch">Berikutnya: kompor induksi</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">CARA KERJA BENDA &middot; EP 14</div></div>
+<div id="sig">AUDIRA &middot; @AudiraExplained</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":6.356,"s2":6.516,"s2e":17.429,"s3":17.589,"s3e":25.696,"s4":25.856,"s4e":35.259,"s5":35.419,"s5e":47.28,"s6":47.44,"s6e":61.25,"s7":61.41,"s7e":73.675,"s8":73.835,"s8e":84.107,"end":84.107,"dur":87.11,"outro":84.357},AT={"s1:eskalator":1.062,"s1:lantai":2.455,"s1:berbalik":4.638,"s1:kakimu":5.86,"s2:Jesse":9.751,"s2:Reno":10.03,"s2:Coney":10.649,"s2:tanjakan":15.479,"s3:Seeberger":19.658,"s3:Otis":20.897,"s3:Pameran":23.838,"s3:Paris":24.194,"s4:kereta":27.164,"s4:roda":29.021,"s4:rantai":31.777,"s4:motor":33.185,"s5:rel":38.515,"s5:berjauhan":41.843,"s5:terangkat":44.084,"s5:undakan":46.274,"s5:terbentuk":46.816,"s6:merapat":49.595,"s6:rata":51.607,"s6:bergerigi":54.191,"s6:berbalik":55.398,"s6:mesin":56.327,"s6:Pegangan":56.977,"s6:gigi":58.618,"s7:merek":63.802,"s7:Seeberger":64.607,"s7:scala":67.223,"s7:tangga":68.952,"s7:lepas":71.734,"s7:umum":73.334,"s8:rantai":75.421,"s8:berputar":76.52,"s8:AUDIRA":78.44,"s8:Episode":81.984},DUR=87.11,OUT=84.357;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ stitch:(e,t)=>tl.fromTo(e,{opacity:.8,x:-8},{opacity:1,x:0,duration:.35,ease:'power2.out'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{opacity:0,y:30,scale:.92,transformOrigin:'50% 100%'},{opacity:1,y:0,scale:1,duration:.5,ease:'back.out(1.2)'},a-.12);},POUT=(tl,p,b)=>{tl.to(p,{opacity:0,y:-20,scale:.95,duration:.3,ease:'power2.in'},b-.3);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0,y:40});tl.to('#outro',{opacity:1,y:0,duration:.45,ease:'power3.out'},OUT-.1);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP14_ESKALATOR_TANGGA_BERJALAN")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

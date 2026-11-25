@@ -1,0 +1,369 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP01_BAITUL_HIKMAH",
+  "topic": "BAITUL_HIKMAH",
+  "createdAt": "2026-11-17T07:33:57.149Z",
+  "updatedAt": "2026-11-22T13:08:00.416Z",
+  "currentStage": "final",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-17T07:48:19.599Z",
+          "text": "Context dari sesi sebelumnya, dilanjutkan via compaction summary"
+        }
+      ],
+      "doneAt": "2026-11-17T07:48:19.599Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-17T07:39:30.152Z",
+          "text": "Riset via subagent, SOURCE_REGISTER + RESEARCH_REPORT lengkap"
+        }
+      ],
+      "doneAt": "2026-11-17T07:39:30.152Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-17T07:37:14.462Z",
+      "notes": [
+        {
+          "at": "2026-11-17T07:37:14.462Z",
+          "text": "MANUSCRIPT dipilih pengguna. Alasan: bahasa visual naskah/gulungan cocok dengan Baitul Hikmah. GOLD EP sejarah-islam-EP02 (4.67). Engine: Remotion + R3F (rule 14)."
+        }
+      ],
+      "doneAt": "2026-11-17T07:37:14.462Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-17T07:39:30.179Z",
+      "notes": [
+        {
+          "at": "2026-11-17T07:39:30.179Z",
+          "text": "142 kata, ~60 detik, hook tinta Tigris"
+        }
+      ],
+      "doneAt": "2026-11-17T07:39:30.179Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-17T07:48:12.452Z",
+          "text": "Remotion 4 + R3F scaffolded from EP01_KABAH template. node_modules junctioned."
+        }
+      ],
+      "doneAt": "2026-11-17T07:48:12.452Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-17T07:49:07.763Z",
+          "text": "VO 63s, 117 kata, 3 takes → best selected @0.95x speed. vo.wav + vo-words.json"
+        }
+      ],
+      "doneAt": "2026-11-17T07:49:07.763Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-17T07:48:19.571Z",
+          "text": "7 beat scenes: World.tsx (11 komponen 3D prosedural), Overlay.tsx (8 label + year chips), Film.tsx (ThreeCanvas + StudioEnv + lighting). motion.ts (state machine + camera rig). ASSET_MANIFEST.md lengkap."
+        }
+      ],
+      "doneAt": "2026-11-17T07:48:19.571Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-17T08:11:45.560Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-22T13:08:00.416Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        }
+      ],
+      "startedAt": "2026-11-17T08:03:30.684Z",
+      "doneAt": "2026-11-17T08:03:30.684Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-17T08:32:53.304Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-17T08:30:18.595Z",
+      "startedAt": "2026-11-17T08:30:18.595Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "peradaban-islam-EP01",
+    "style": "MANUSCRIPT",
+    "engine": "remotion",
+    "wordCount": 142,
+    "estimatedDuration": {
+      "wordCount": 142,
+      "minSec": 57,
+      "maxSec": 63
+    }
+  },
+  "handoverLog": [
+    {
+      "at": "2026-11-17T07:40:03.124Z",
+      "doing": "Setup project Remotion + R3F, menulis kode adegan 7 beat (MANUSCRIPT style)",
+      "files": [
+        "project/src/Root.tsx",
+        "project/src/scenes/baitul-hikmah/Film.tsx",
+        "project/src/scenes/baitul-hikmah/World.tsx"
+      ],
+      "next": "Scaffold project folder, install deps, tulis scenes, generate VO, render draft",
+      "snapshot": {
+        "episode": "EP01_BAITUL_HIKMAH",
+        "topic": "BAITUL_HIKMAH",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "peradaban-islam-EP01",
+        "currentStage": "context",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-17T07:48:28.755Z",
+      "doing": "Generate VO Cartesia dari SCRIPT.md, 142 kata, durasi ~63 detik",
+      "files": [
+        "audio/vo.wav",
+        "audio/vo-words.json"
+      ],
+      "next": "Render draft contact sheet + jury scoring",
+      "snapshot": {
+        "episode": "EP01_BAITUL_HIKMAH",
+        "topic": "BAITUL_HIKMAH",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "peradaban-islam-EP01",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-17T07:48:28.755Z",
+      "doing": "Generate VO Cartesia dari SCRIPT.md, 142 kata, durasi ~63 detik",
+      "files": [
+        "audio/vo.wav",
+        "audio/vo-words.json"
+      ],
+      "next": "Render draft contact sheet + jury scoring",
+      "snapshot": {
+        "episode": "EP01_BAITUL_HIKMAH",
+        "topic": "BAITUL_HIKMAH",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "peradaban-islam-EP01",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      },
+      "finishedAt": "2026-11-17T07:49:07.790Z"
+    },
+    {
+      "at": "2026-11-17T07:49:30.871Z",
+      "doing": "Render draft contact sheet — 7 stills dari key beats",
+      "files": [
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "Jury scoring → final render",
+      "snapshot": {
+        "episode": "EP01_BAITUL_HIKMAH",
+        "topic": "BAITUL_HIKMAH",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "peradaban-islam-EP01",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-VIDEO-MOTION/QISSAH_PERADABAN_ISLAM_2026/EP01_BAITUL_HIKMAH/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-17T08:27:17.124Z",
+      "doing": "Render final 1080x1920 via npm run render:final — user override draft gate",
+      "command": "cd project && npx remotion render BaitulHikmahFinal --gl=vulkan --codec=h264 --video-bitrate=8M out/BaitulHikmahFinal.mp4",
+      "files": [
+        "out/BaitulHikmahFinal.mp4"
+      ],
+      "next": "QA final MP4, caption, delivery",
+      "snapshot": {
+        "episode": "EP01_BAITUL_HIKMAH",
+        "topic": "BAITUL_HIKMAH",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "peradaban-islam-EP01",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-VIDEO-MOTION/QISSAH_PERADABAN_ISLAM_2026/EP01_BAITUL_HIKMAH/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-17T08:27:17.124Z",
+      "doing": "Render final 1080x1920 via npm run render:final — user override draft gate",
+      "command": "cd project && npx remotion render BaitulHikmahFinal --gl=vulkan --codec=h264 --video-bitrate=8M out/BaitulHikmahFinal.mp4",
+      "files": [
+        "out/BaitulHikmahFinal.mp4"
+      ],
+      "next": "QA final MP4, caption, delivery",
+      "snapshot": {
+        "episode": "EP01_BAITUL_HIKMAH",
+        "topic": "BAITUL_HIKMAH",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "peradaban-islam-EP01",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-VIDEO-MOTION/QISSAH_PERADABAN_ISLAM_2026/EP01_BAITUL_HIKMAH/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-17T08:30:23.581Z"
+    }
+  ],
+  "syncedAt": "2026-11-22T13:08:00.416Z"
+}

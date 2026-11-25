@@ -1,0 +1,176 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#2a1650}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.035;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.3) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.3) 42%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'Rubik',sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#ffffff;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.p{background:#ffffff;border:6px solid #111116;border-radius:4px;padding:16px 26px 22px;box-shadow:12px 12px 0 #111116}
+.tag{display:inline-block;font-family:'Rubik',sans-serif;font-weight:800;font-size:25px;letter-spacing:.08em;color:#ffffff;background:#e63946;padding:5px 16px;transform:skewX(-10deg);margin-bottom:8px}
+.ttl{font-family:'Bangers',sans-serif;font-size:104px;line-height:.92;letter-spacing:.02em;color:#111116}
+.ttl.sm{font-size:84px}.ttl em{font-style:normal;color:#e63946}
+.ttl.num{font-size:150px;color:#e63946;-webkit-text-stroke:4px #111116;paint-order:stroke fill}
+.hit{display:flex;align-items:center;gap:14px;margin-top:10px}
+.hit b#hc1,.hit b#hc6{display:inline-block;font-family:'Bangers',sans-serif;font-size:118px;line-height:.9;color:#ffc93c;-webkit-text-stroke:5px #111116;paint-order:stroke fill;transform-origin:50% 60%;min-width:80px;text-align:center}
+.hit.big b#hc6{font-size:150px;min-width:120px}
+.hit span{font-family:'Bangers',sans-serif;font-size:46px;line-height:.9;color:#111116}
+.bug{display:inline-block;margin-left:auto;font-family:'Bangers',sans-serif;font-size:72px;line-height:1;color:#ffffff;background:#e63946;border:5px solid #111116;padding:6px 20px 2px;box-shadow:6px 6px 0 #111116}
+.bug.yel{background:#ffc93c;color:#111116;font-size:62px}
+.two{display:flex;gap:22px;align-items:center}
+.yr{font-family:'Bangers',sans-serif;font-size:150px;line-height:.9;color:#e63946;-webkit-text-stroke:4px #111116;paint-order:stroke fill}
+.rows{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+.r{display:block;font-family:'Rubik',sans-serif;font-weight:800;font-size:38px;line-height:1.1;color:#111116}
+.r i{display:inline-block;font-style:normal;font-size:20px;letter-spacing:.1em;color:#ffffff;background:#111116;padding:3px 10px;margin-right:12px;vertical-align:6px}
+.r s{color:#e63946;text-decoration-thickness:5px}.r.ok i{background:#16b3a6}
+.four{position:relative;display:inline-block;font-family:'Bangers',sans-serif;font-size:64px;line-height:.8;color:#e63946;padding:0 8px}
+.four u{position:absolute;left:-4px;right:-4px;top:48%;height:7px;background:#111116;transform-origin:0 50%;transform:rotate(-12deg)}
+.strip{display:flex;gap:10px;margin-top:12px;background:#111116;padding:14px 12px;background-image:repeating-linear-gradient(90deg,#fff 0 10px,transparent 10px 26px);background-size:100% 8px;background-repeat:repeat-x;background-position:0 3px}
+.strip i{flex:1;font-style:normal;text-align:center;font-family:'Rubik',sans-serif;font-weight:800;font-size:22px;letter-spacing:.06em;color:#111116;background:#fff6d6;padding:10px 4px 6px;border:3px solid #111116}
+.strip i b{display:block;font-family:'Bangers',sans-serif;font-size:62px;line-height:1;color:#e63946}
+.strip i.sl{background:#ffc93c}
+.wnd{margin-top:10px;font-family:'Rubik',sans-serif;font-weight:800;font-size:26px;letter-spacing:.05em;color:#111116;background:#7ff0a0;border:4px solid #111116;padding:6px 14px;transform-origin:0 50%}
+.mlab{font-family:'Bangers',sans-serif;font-size:46px;color:#111116;letter-spacing:.04em}.mlab span{color:#16b3a6}
+.meter{position:relative;height:54px;margin:6px 0 8px;background:repeating-linear-gradient(90deg,#ffd9d9 0 22px,#ffc2c2 22px 44px);border:5px solid #111116}
+.meter .win{position:absolute;top:0;bottom:0;left:61%;width:3%;background:#3ddc84;border-left:4px solid #111116;border-right:4px solid #111116}
+.meter .cur{position:absolute;top:-14px;bottom:-14px;width:10px;margin-left:-5px;left:10%;background:#111116}
+.mnote{font-family:'Rubik',sans-serif;font-weight:700;font-size:30px;color:#111116}.mnote b{color:#12a35a}
+.row2{display:flex;gap:16px;align-items:center;margin-top:10px}.row2 .bug{margin-left:0;font-size:58px}.row2 .r{font-size:34px}
+.q{display:inline-block;margin-top:14px;font-family:'Rubik',sans-serif;font-weight:800;font-size:38px;color:#111116;background:#ffc93c;border:5px solid #111116;padding:8px 18px;box-shadow:6px 6px 0 #111116}
+#chip{font-family:'Rubik',sans-serif;font-weight:800;font-size:20px;color:#fff;letter-spacing:.08em;text-shadow:0 2px 0 #111}
+#flash{position:absolute;inset:0;background:#fff;mix-blend-mode:difference;opacity:0;z-index:6;pointer-events:none}
+#vhs{position:absolute;inset:0;z-index:6;opacity:0;pointer-events:none}
+#vhs .scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.16) 0 2px,rgba(255,255,255,0) 2px 5px)}
+#vhs .vl,#vhs .vr{position:absolute;top:1190px;font-family:'VT323',monospace;font-size:54px;color:#fff;text-shadow:3px 0 0 #ff2a6d,-3px 0 0 #2de2e6}
+#vhs .vl{left:60px}#vhs .vr{right:120px}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="77.9" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN CUPLIKAN ASLI</div>
+
+<div id="flash"></div>
+<div id="vhs"><div class="scan"></div><div class="vl"><span id="vmode">&#9664;&#9664; REWIND</span></div><div class="vr" id="vtc">00:00:00</div></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <span class="tag">SEJARAH GAME &middot; EP 03</span>
+  <div class="ttl">COMBO BERAWAL<br>DARI <em>BUG</em></div>
+  <div class="hit"><b id="hc1">1</b><span>HIT<br>COMBO</span><b class="bug" data-at="s1:bug" data-fx="stamp">BUG?</b></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <span class="tag">MESIN ARCADE</span>
+  <div class="two"><div class="yr" data-at="s2:Tahun" data-fx="lit">1991</div>
+  <div class="rows"><b class="r" data-at="s2:Capcom" data-fx="lit"><i>STUDIO</i>Capcom</b><b class="r" data-at="s2:Street" data-fx="lit"><i>GAME</i>Street Fighter II</b>
+  <b class="r" data-at="s2:dua" data-fx="lit"><i>WAKTU</i>&plusmn; 2 tahun</b><b class="r" data-at="s2:tiga" data-fx="lit"><i>TIM</i>35&ndash;40 orang</b></div></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <span class="tag">BONUS STAGE</span>
+  <div class="ttl sm">CEK <em>BUG</em></div>
+  <div class="rows"><b class="r" data-at="s3:setiap" data-fx="lit"><i>MUNCUL</i>Setiap 3 pertandingan</b><b class="r" data-at="s3:menghancurkan" data-fx="lit"><i>MISI</i>Hancurkan mobil = poin tambahan</b></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <span class="tag">REKAMAN DIPUTAR ULANG</span>
+  <div class="ttl sm">ADA YANG <em>ANEH</em></div>
+  <div class="strip"><i data-at="s4:pertama" data-fx="lit">PUKULAN<br><b>1</b></i><i class="sl" data-at="s4:menyelipkan" data-fx="lit">MENYELIP<br><b>2</b></i><i data-at="s4:berikutnya" data-fx="lit">LALU<br><b>3</b></i></div>
+  <div class="wnd" data-at="s4:kedua" data-fx="grow">JEDA SEMPIT DI ANTARA PUKULAN</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <span class="tag">MASALAHNYA</span>
+  <div class="mlab">TIMING</div>
+  <div class="meter"><i class="win" id="win5"></i><i class="cur" id="cur5"></i></div>
+  <div class="mnote" data-at="s5:sulit" data-fx="lit">jendela hijau: <b>sangat sulit</b></div>
+  <div class="rows"><b class="r" data-at="s5:mustahil" data-fx="lit"><i>TIM</i>Mustahil untuk pemain biasa</b>
+  <b class="r" data-at="s5:dihapus" data-fx="lit"><i>DIHAPUS?</i><s>tidak</s></b><b class="r ok" data-at="s5:tersembunyi" data-fx="lit"><i>NASIB</i>Dibiarkan tersembunyi</b></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <span class="tag">STREET FIGHTER II</span>
+  <div class="rows"><b class="r" data-at="s6:mengira" data-fx="lit"><i>TIM MENGIRA</i>Paling banyak <span class="four">4<u data-at="s6:Ternyata" data-fx="grow"></u></span> pukulan</b></div>
+  <div class="hit big"><b id="hc6">0</b><span>HIT<br>COMBO</span><b class="bug yel" data-at="s6:delapan" data-fx="stamp">SAMPAI 8!</b></div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Gamenya">
+  <span class="tag">GAME-GAME BERIKUTNYA</span>
+  <div class="mlab">TIMING <span data-at="s7:longgar" data-fx="lit">LEBIH LONGGAR</span></div>
+  <div class="meter"><i class="win" id="win7"></i><i class="cur" id="cur7"></i></div>
+  <div class="row2"><b class="bug" data-at="s7:resmi" data-fx="stamp">FITUR RESMI</b><b class="r" data-at="s7:standar" data-fx="lit"><i>LALU</i>Standar game fighting</b></div>
+</div>
+<div class="p" data-in="s7:Gamenya" data-out="s8">
+  <span class="tag">GAMENYA LARIS</span>
+  <div class="ttl num"><b class="ct" data-from="0" data-to="200000" data-a="s7:dua" data-d="1.3" data-pre="&gt;"></b></div>
+  <div class="rows"><b class="r" data-at="s7:mesin" data-fx="lit"><i>TERJUAL</i>mesin arcade</b><b class="r" data-at="s7:semua" data-fx="lit"><i>DARI</i>semua versinya, seluruh dunia</b></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <span class="tag">JADI&hellip;</span>
+  <div class="ttl sm">KESALAHAN BISA JADI<br><em>FITUR TERBAIK</em></div>
+  <div class="q" data-at="s8:Combo" data-fx="pop">Combo terpanjangmu berapa pukulan?</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">SEJARAH GAME &middot; EP 03</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":5.477,"s2":5.637,"s2e":16.129,"s3":16.289,"s3e":26.511,"s4":26.671,"s4e":37.713,"s5":37.873,"s5e":47.22,"s6":47.38,"s6e":52.71,"s7":52.87,"s7e":66.443,"s8":66.603,"s8e":74.904,"end":74.904,"dur":77.9,"outro":75.154,"h1":[-0.15,0.74,1.127,1.731,1.994,2.861],"h3":[23.988,24.793,25.752],"h4":[33.085,35.701,37.171],"h6":[49.537,49.722,50.14,50.341,51.487,51.874,52.06,52.292],"big":[2.861,25.752,52.292]},AT={"s1:bug":3.666,"s1:awalnya":2.861,"s2:dikerjakan":13.73,"s2:orang":15.742,"s3:menghancurkan":23.988,"s3:pengembang":17.907,"s3:mengecek":18.913,"s3:Babak":20.938,"s4:aneh":28.13,"s4:Adegannya":28.734,"s4:direkam":29.275,"s4:ulang":30.871,"s4:Ternyata":31.614,"s5:dibiarkan":46.198,"s5:tersembunyi":46.678,"s5:dihapus":45.238,"s6:Ternyata":51.487,"s6:delapan":52.292,"s7:resmi":57.703,"s7:standar":59.953,"s7:Gamenya":61.241,"s7:dunia":66.056,"s7:longgar":55.551,"s8:fitur":68.462,"s8:AUDIRA":73.155,"s2:Tahun":5.637,"s2:Capcom":7.552,"s2:Street":8.791,"s2:dua":12.749,"s2:tiga":14.271,"s3:setiap":22.316,"s4:pertama":33.085,"s4:menyelipkan":34.88,"s4:berikutnya":37.171,"s4:kedua":35.701,"s5:sulit":39.516,"s5:mustahil":41.869,"s6:mengira":48.701,"s7:dua":63.177,"s7:mesin":63.811,"s7:semua":64.709,"s8:Combo":69.51},DUR=77.9,OUT=75.154;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ lit:(e,t)=>{tl.fromTo(e,{opacity:.28},{opacity:1,duration:.18,ease:'power2.out'},t);tl.fromTo(e,{scale:1},{scale:1.05,duration:.09,yoyo:true,repeat:1,ease:'power2.out'},t);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{x:170,skewX:-14,opacity:0},{x:0,skewX:0,opacity:1,duration:.3,ease:'back.out(2.2)'},a-.06);},POUT=(tl,p,b)=>tl.to(p,{x:-220,skewX:14,opacity:0,duration:.2,ease:'power3.in'},b-.2);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{clipPath:'polygon(0 0,0 0,0 100%,0 100%)'});tl.to('#outro',{clipPath:'polygon(0 0,130% 0,100% 100%,0 100%)',duration:.45,ease:'power4.out'},OUT-.2);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{
+ const cnt=(a,x)=>{let n=0;for(const h of a)if(x>=h)n++;return n;};
+ const gb=AT['s1:bug'];
+ let te=t;if(t>=gb&&t<K.s2){const fr=Math.floor((t-gb)*10);te=fr<6?K.h1[4]+0.04+(fr%3)*0.06:K.h1[4]+0.1;}
+ const e1=q('#hc1');{const n=Math.max(1,cnt(K.h1,te));e1.textContent=n;const u=Math.min(1,Math.max(0,(te-K.h1[n-1])/0.18));e1.style.transform='scale('+(1.3-0.3*u)+') rotate('+(-6+6*u)+'deg)';}
+ const e6=q('#hc6');{const n=cnt(K.h6,t);e6.textContent=n;const u=n?Math.min(1,Math.max(0,(t-K.h6[n-1])/0.18)):1;e6.style.transform='scale('+(1.3-0.3*u)+')';e6.style.color=n>4?'#e63946':'#ffc93c';}
+ let f=0;for(const h of K.big)if(t>=h&&t<h+0.067)f=1;q('#flash').style.opacity=f;
+ const tR=AT['s4:Adegannya'],tU=AT['s4:ulang']+0.4;
+ const v=t>=tR&&t<K.s5-0.15?1:0;q('#vhs').style.opacity=v;
+ if(v){q('#vmode').innerHTML=t<tU?'&#9664;&#9664; REWIND':'&#9654; PLAY x0.25';const s=t<tU?Math.max(0,(tU-t)*4):(t-tU)*0.25;const fr=Math.floor(s*30)%30,ss=Math.floor(s)%60;q('#vtc').textContent='00:'+String(ss).padStart(2,'0')+':'+String(fr).padStart(2,'0');}
+ const c5=q('#cur5');c5.style.left=(50+44*Math.sin(t*3.4))+'%';
+ const w7=q('#win7'),c7=q('#cur7');const lu=Math.min(1,Math.max(0,(t-AT['s7:longgar'])/0.8));const wd=3+27*(lu*lu*(3-2*lu));w7.style.width=wd+'%';w7.style.left=(61-wd/2+1.5)+'%';c7.style.left=(50+44*Math.sin(t*3.4))+'%';
+ const gl=q('#gl');if(t>=gb&&t<gb+0.7){const fr=Math.floor(t*30);gl.style.transform='translateX('+(((fr*37)%9)-4)*4+'px)';gl.style.filter='hue-rotate('+((fr*53)%120)+'deg) saturate(1.5)';}else{gl.style.transform='';gl.style.filter='';}
+};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP03_STREET_FIGHTER_COMBO")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

@@ -1,0 +1,613 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP71_BAARLE_PINTU_DEPAN",
+  "topic": "Baarle-Hertog/Baarle-Nassau: pintu depan rumah menentukan negaramu (Belgia vs Belanda)",
+  "createdAt": "2026-11-24T15:08:26.608Z",
+  "updatedAt": "2026-11-24T18:39:51.919Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:08:54.680Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        },
+        {
+          "at": "2026-11-24T15:10:09.440Z",
+          "text": "Preflight lolos tanpa blocker. Memori SATELLITEBRIEFING + GLOBAL dibaca (selfBias +0,78; resep emisif wajib)."
+        }
+      ],
+      "doneAt": "2026-11-24T15:10:09.440Z",
+      "startedAt": "2026-11-24T15:08:34.288Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:08:54.680Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-23T18:28:37.279Z",
+      "startedAt": "2026-11-23T18:28:37.279Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:10:43.856Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        },
+        {
+          "at": "2026-11-24T15:12:12.921Z",
+          "text": "SATELLITEBRIEFING, Remotion+R3F (alt TOYDIORAMA). STYLE_DECISION.md terisi; cover-topic.png dirender di Sesi B."
+        }
+      ],
+      "doneAt": "2026-11-24T15:12:12.921Z",
+      "startedAt": "2026-11-24T15:10:22.292Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:11:52.497Z",
+          "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-24T15:12:13.068Z",
+          "text": "ART_DIRECTION, SCRIPT (230 kata terucap, ±88 dtk Cartesia), STORYBOARD 6 adegan, ASSET_MANIFEST, audio/vo.txt."
+        }
+      ],
+      "doneAt": "2026-11-24T15:12:13.068Z",
+      "startedAt": "2026-11-24T15:11:21.511Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:14:09.542Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:16:04.694Z",
+          "text": "VO Cartesia 04b567df, 230 kata, 89.97 dtk ucapan, WAV 90.0 dtk; tanpa pangkas. Film 93 dtk (outro 90–93)."
+        }
+      ],
+      "doneAt": "2026-11-24T15:16:04.694Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:14:09.542Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.572Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:57:02.194Z",
+          "text": "sync: 1 gambar draf (bukan contact-sheet.jpg; buat dulu: bash sheet.sh <EP>)"
+        },
+        {
+          "at": "2026-11-24T16:16:43.289Z",
+          "text": "Juri buta r1 3.5, r2 3.5 → diterima 3.50 setelah 2 putaran (draf r2). THEME_CHECK 8/8 ya. Ceilings 5, camera 5/5."
+        }
+      ],
+      "doneAt": "2026-11-24T16:16:43.289Z",
+      "startedAt": "2026-11-24T15:56:59.296Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T17:39:11.229Z",
+      "notes": [
+        {
+          "at": "2026-11-24T17:39:11.229Z",
+          "text": "Acc pengguna 2026-11-25: \"Ya, lanjutkan\" (jawaban atas tawaran melanjutkan 3 episode belum final; EP71 dijelaskan hanya menunggu acc render final, skor juri 3.50, kelemahan tampilan plastik/cahaya rata)."
+        },
+        {
+          "at": "2026-11-24T18:39:45.658Z",
+          "text": "FINAL_EP71_BAARLE.mp4 1080x1920@60 93.01s, -13.7 LUFS TP -1.8, signature VALID, deliver GREEN; override memory gate diizinkan pengguna 2026-11-25"
+        }
+      ],
+      "startedAt": "2026-11-24T17:39:11.229Z",
+      "doneAt": "2026-11-24T18:39:45.658Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T17:41:55.226Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T17:41:24.198Z",
+      "startedAt": "2026-11-24T17:41:24.198Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-negara-EP71",
+    "style": "SATELLITEBRIEFING",
+    "engine": "remotion",
+    "shortTitle": "Baarle",
+    "wordCount": 230,
+    "estimatedDuration": {
+      "wordCount": 230,
+      "minSec": 92,
+      "maxSec": 102
+    }
+  },
+  "syncedAt": "2026-11-24T17:41:55.226Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-24T15:12:23.687Z",
+      "doing": "Sesi A selesai (tahap 0–4): preflight lolos, SOURCE_REGISTER terverifikasi ulang (22 eksklave B, 7+1 NL, 1198, 1843, 1995, Loveren no.2/no.19, kafe pindah meja, toko Zeeman COVID 2020), STYLE_DECISION SATELLITEBRIEFING Remotion+R3F (alt TOYDIORAMA), ART_DIRECTION, SCRIPT (230 kata terucap, est. ±88 dtk Cartesia), STORYBOARD 6 adegan (S1 pintu, S2 peta tambal-sulam, S3 1198→1843→1995, S4 rumah Loveren, S5 kafe+toko, S6 orbit+outro), ASSET_MANIFEST (GLB lokal dicek ada), audio/vo.txt.",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/SCRIPT.md (teks VO saja untuk tahap 6)",
+        "audio/vo.txt",
+        "docs/ART_DIRECTION.md",
+        "research/SOURCE_REGISTER.md"
+      ],
+      "next": "Sesi B, mulai tahap 5: scaffold project/ dari starter Remotion + kit satellitebriefing (jangan pakai scripts/scaffold-episode.mjs, ia menimpa STATUS.json skema lain), check-env + smoke; tahap 6 VO Cartesia dari audio/vo.txt (bila > 92 dtk pangkas sesuai urutan di SCRIPT.md), kunci timing; tahap 7 6 adegan + cover-topic.png + npm run sfx; tahap 8 contact sheet + THEME_CHECK + juri buta (maks 2 putaran). Wajib resep memori: panel emisif z-4.5, grid emisif 3, cap amber, scan line, siluet FG #0F1418 z3.5, terrain bertekstur (bukan RoundedBox abu polos), sway ≤1,2, kosong di 380 px bawah, Finish CYBER_NEON_VOID exp 1.35 env 0.7 fog 9..30. selfBias +0,78: andalkan juri. Signature seed sejarah-negara-ep71, handle @AudiraFaktaDunia. Sesi paralel EP68–70/72 berbagi folder: sentuh hanya folder EP71, jangan commit, jangan edit SERIES.json/MASTER_INDEX.md. Render bersamaan: pakai --concurrency=1 bila VRAM penuh.",
+      "snapshot": {
+        "episode": "EP71_BAARLE_PINTU_DEPAN",
+        "topic": "Baarle-Hertog/Baarle-Nassau: pintu depan rumah menentukan negaramu (Belgia vs Belanda)",
+        "style": "SATELLITEBRIEFING",
+        "memoryEpisode": "sejarah-negara-EP71",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:15:57.655Z",
+      "doing": "Sesi B: tahap 5 selesai (project/ dari starter, node_modules junction, check-env+smoke OK), tahap 6 VO terkunci (public/audio/vo.wav 90.0 dtk, vo-words.json 230 kata, vo.timing.json). Batas adegan: S1 0–6.9, S2 6.9–22.9, S3 22.9–45.2, S4 45.2–62.4, S5A 62.4–70.9, S5B 70.9–84.5, S6 84.5–90, outro 90–93.",
+      "files": [
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "project/src/episode/"
+      ],
+      "next": "Tahap 7: tulis src/episode (timeline.ts, scenes.tsx, BaarleFilm.tsx) pola EP59, daftarkan BaarlePreview/BaarleFinal di Root.tsx, cover-topic.png, SHOTLIST.md + npm run sfx. Lalu tahap 8 draf.",
+      "snapshot": {
+        "episode": "EP71_BAARLE_PINTU_DEPAN",
+        "topic": "Baarle-Hertog/Baarle-Nassau: pintu depan rumah menentukan negaramu (Belgia vs Belanda)",
+        "style": "SATELLITEBRIEFING",
+        "memoryEpisode": "sejarah-negara-EP71",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:19:42.176Z",
+      "doing": "Sesi B (lanjutan, batas konteks). SELESAI: tahap 5 (project/ dari starter via robocopy, node_modules = junction ke F:/AUDIRA-SKILL-MOTION/node_modules, check-env + smoke OK, SERIES.json + src/brand/channel.json proyek = @AudiraFaktaDunia), tahap 6 VO terkunci (public/audio/vo.wav 90.0 dtk, vo-words.json 230 kata, vo.timing.json; tanpa pangkas). 17 GLB manifest disalin flat ke public/models/polyfork/ (subfolder salinan robocopy 884 MB sudah dihapus). DITULIS: project/src/episode/timeline.ts (FILM_SECONDS 93, OUTRO 3, SHOTS kamera per adegan S1..S6 dgn sway ≤0.12, CARDS HUD per kata VO, CUTS 6.9/22.9/45.2/62.4/70.9/84.5). Dimensi GLB (unit lokal, ada node transform jadi perkiraan): townhouse 4x7.5x8, corner-shop 8.85x7x8.85, door-set 1.35x2.1x0.17, bistro-table 0.7, chair 0.46x0.88, awning 2x3.3x1.5, antenna-mast 1.2x3.5, farmhouse 6x6.2x5, hedgerow 4x1.3x1.7, poplar 2.4x12.9.",
+      "files": [
+        "project/src/episode/timeline.ts",
+        "project/public/audio/vo-words.json",
+        "project/public/models/polyfork/",
+        "docs/STORYBOARD.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Tahap 7: tulis project/src/episode/scenes.tsx + BaarleFilm.tsx (pola EP59 ../EP59_FINLANDIA_3_JUTA_SAUNA/project/src/episode/SaunaFilm.tsx: FilmScene + cameraAt/shotAt + HUD overlay + Subtitle position 1290 + Voiceover audio/vo.wav + AudiraOutro + AudiraSignature seed sejarah-negara-ep71 handle @AudiraFaktaDunia), daftarkan BaarlePreview/BaarleFinal di src/Root.tsx. FilmScene: profile COLOR_PROFILES.CYBER_NEON_VOID, hdri night, exposure 1.35, envIntensity 0.7, fog 9..30, bg #070B0E. Bagian bersama: Ground bertekstur (useSurfaceGrain core/polish/Polish.tsx) + jalan, grid emisif canvas (emissiveIntensity 3), panel layar latar #1976D2 emissive 2.2 (z≈-4.5 relatif subjek / belakang), scan line amber emissive 4 bergerak, siluet FG antenna-mast tint #0F1418 + cap amber di z≈3.5 (jangan masuk 380 px bawah), HazeBand, BorderLine putus-putus putih emisif, Patch eksklave (ExtrudeGeometry poligon seeded, amber B / biru NL), label dunia SceneText (core/polish/Drei.tsx) BELGIA/BELANDA + papan AUDIRA di tiang. Adegan: S1/S2/S6 Town (6x9 unit, ~24 GLB bangunan size ~0.55, 22 patch amber muncul stagger 13.7–16.6, 7 biru 17.7–20.3, Ginhoven 21.3 di pita Belgia utama z 2.8..4; rumah hero townhouse di (0.3,0,0.6) + pintu amber + reticle + garis batas melintas). S3 ladang: farmhouse, hedgerow, bidang sewa amber vs Breda biru 30–35, kartu traktat 1843 mendarat 36.3–38.6, padang netral (1.8,0,-2.4) berkedip lalu amber 43.9. S4 Jalan Loveren: 5 townhouse sepanjang x, garis batas di x=0 menembus pintu rumah tengah, tanah kiri amber kanan biru, plat No.2 (59.1) & No.19 (60.9). S5A kafe: awning+chalkboard+2 meja, satu meja+kursi geser x 0.9→-0.9 pada 69.0–70.4. S5B toko: corner-shop di (−0.6,0,0) batas sepanjang x di z=0, pintu menghadap +z (NL), kotak hatch merah DITUTUP menutup separuh belakang 80.8; toko kedua di (2.6,0,0) berputar 180° 81.9–83.9, badge TUTUP→BUKA. Lalu: render still cek orientasi GLB (npm run stills -- out/qa 3s,15s,30s,50s,66s,80s,86s BaarlePreview), cover-topic.png ke style/ (pose akhir S1 + judul), docs/SHOTLIST.md + npm run sfx. Tahap 8: npm run draft -- BaarlePreview, draft/THEME_CHECK.md, audit:visual, skor self lalu juri buta (maks 2 putaran). Lalu handover ke Sesi C.",
+      "snapshot": {
+        "episode": "EP71_BAARLE_PINTU_DEPAN",
+        "topic": "Baarle-Hertog/Baarle-Nassau: pintu depan rumah menentukan negaramu (Belgia vs Belanda)",
+        "style": "SATELLITEBRIEFING",
+        "memoryEpisode": "sejarah-negara-EP71",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:21:10.839Z",
+      "doing": "Sesi B s3 belum dimulai (s2 berhenti di batas konteks 216k). Tambahan sejak handover sebelumnya: project/src/episode/parts.tsx DITULIS (C palet, clamp01/ease/rng, Ground bertekstur+jalan, Grid emisif 3, BackPanel #1976D2 2.2, HazeBand, ScanLine amber 4, Silhouette antenna #0F1418 + cap amber + papan AUDIRA SceneText, BorderLine putus-putus, Patch eksklave extrude, WorldLabel, Reticle, Building). CATATAN: checklist STATUS tahap 7 ✓ akibat auto-sync = SALAH; tahap 7 baru timeline.ts + parts.tsx. Belum typecheck.",
+      "files": [
+        "project/src/episode/timeline.ts",
+        "project/src/episode/parts.tsx",
+        "project/src/Root.tsx",
+        "../EP59_FINLANDIA_3_JUTA_SAUNA/project/src/episode/SaunaFilm.tsx"
+      ],
+      "next": "Tulis project/src/episode/scenes.tsx (S1..S6 pakai parts.tsx + timeline.ts) dan BaarleFilm.tsx (pola EP59 SaunaFilm.tsx), daftarkan BaarlePreview/BaarleFinal di src/Root.tsx, npx tsc --noEmit, stills cek orientasi GLB, cover-topic.png, SHOTLIST.md + npm run sfx; tahap 8 draft + THEME_CHECK + audit:visual + juri buta (maks 2 putaran); lalu handover Sesi C. Rencana adegan rinci ada di entri handover sebelumnya (log handover STATUS.json, verbose).",
+      "snapshot": {
+        "episode": "EP71_BAARLE_PINTU_DEPAN",
+        "topic": "Baarle-Hertog/Baarle-Nassau: pintu depan rumah menentukan negaramu (Belgia vs Belanda)",
+        "style": "SATELLITEBRIEFING",
+        "memoryEpisode": "sejarah-negara-EP71",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:50:16.476Z",
+      "doing": "Sesi B s3: scenes.tsx (S1..S6) + BaarleFilm.tsx ditulis, BaarlePreview/BaarleFinal (93 dtk) di Root.tsx, tsc bersih untuk episode. Sedang render stills cek orientasi GLB.",
+      "command": "npm run stills -- out/qa 3s,15s,30s,50s,66s,80s,86s BaarlePreview",
+      "files": [
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/BaarleFilm.tsx",
+        "project/src/Root.tsx",
+        "project/src/episode/timeline.ts"
+      ],
+      "next": "Periksa still (orientasi pintu townhouse/corner-shop, framing), perbaiki, cover-topic.png, SHOTLIST.md + npm run sfx, tahap 8 draft + THEME_CHECK + audit:visual + juri.",
+      "snapshot": {
+        "episode": "EP71_BAARLE_PINTU_DEPAN",
+        "topic": "Baarle-Hertog/Baarle-Nassau: pintu depan rumah menentukan negaramu (Belgia vs Belanda)",
+        "style": "SATELLITEBRIEFING",
+        "memoryEpisode": "sejarah-negara-EP71",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:53:34.232Z",
+      "doing": "Sesi B s3: scenes.tsx (S1,S2,S3,S4,S5A,S5B,S6) + BaarleFilm.tsx (HUD kartu top 300, chrome SAT-71 36px top 210, Subtitle 1300 plate gelap amber aktif, fog 6..18, vinyet kuat, spotLight subjek, Finish CYBER_NEON_VOID night exp 1.35 env 0.7) ditulis; BaarlePreview/BaarleFinal (93 dtk) di Root.tsx; tsc bersih. Stills putaran 1 (out/qa/_sheet.jpg): orientasi GLB OK (pintu townhouse & corner-shop menghadap +z). Audit: depth 2 (subject separation 17.5 vs 44.5), readability 3 (chrome 30px). Sudah diperbaiki: Subtitle gap 0.4em (core/hud/Subtitle.tsx lokal), chrome 36px, fog/vinyet/spot, hedgerow S3 dipipihkan, S5B toko 1.1/0.9 + hatch merah 1.25x0.95x0.62, label ganda S6 dihapus, DoorGlow S4 z 0.8. Belum render ulang.",
+      "command": "npm run stills -- out/qa 3s,15s,30s,50s,66s,80s,86s BaarlePreview",
+      "files": [
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/BaarleFilm.tsx",
+        "project/src/Root.tsx",
+        "project/src/core/hud/Subtitle.tsx",
+        "project/out/qa/_sheet.jpg"
+      ],
+      "next": "Render ulang stills, cek depth/readability ceilings (look.json), poles bila perlu; lalu style/cover-topic.png (pose akhir S1 ~6s), docs/SHOTLIST.md (CUTS 6.9/22.9/45.2/62.4/70.9/84.5) + npm run sfx; tahap 8: npm run draft -- BaarlePreview, draft/THEME_CHECK.md, audit:visual, skor self lalu juri buta (maks 2 putaran); handover Sesi C newSession.",
+      "snapshot": {
+        "episode": "EP71_BAARLE_PINTU_DEPAN",
+        "topic": "Baarle-Hertog/Baarle-Nassau: pintu depan rumah menentukan negaramu (Belgia vs Belanda)",
+        "style": "SATELLITEBRIEFING",
+        "memoryEpisode": "sejarah-negara-EP71",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:56:35.788Z",
+      "doing": "Sesi B s3: tahap 7 selesai — stills QA ceilings lighting5 material5 depth3 composition5 readability5 (DOF focus=jarak kamera, aperture 0.025, rim 2.2, fog 6..18); docs/SHOTLIST.md 17 shot; npm run sfx → public/audio/sfx.wav −26 LUFS 50 bunyi; style/cover-topic.png 1080×1920 (BaarleFinal 6.5s) + cover_1080x1350.png. Sedang tahap 8 draft.",
+      "command": "npm run draft -- BaarlePreview --frames=1.5s,15.5s,37.5s,49.5s,61s,70s,81s,88s",
+      "files": [
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav",
+        "style/cover-topic.png",
+        "draft/"
+      ],
+      "next": "Baca draft/DRAFT_SHEET.jpg, tulis draft/THEME_CHECK.md (G22), record_score self lalu juri buta subagent (qa/jury.md), maks 2 putaran; lalu handover Sesi C newSession + pesan ke orkestrator local_108c1a65-5fd2-4584-963a-21fb641b226a.",
+      "snapshot": {
+        "episode": "EP71_BAARLE_PINTU_DEPAN",
+        "topic": "Baarle-Hertog/Baarle-Nassau: pintu depan rumah menentukan negaramu (Belgia vs Belanda)",
+        "style": "SATELLITEBRIEFING",
+        "memoryEpisode": "sejarah-negara-EP71",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:59:18.360Z",
+      "doing": "Sesi B s3 berhenti di batas konteks 215k, titik aman. SELESAI tahap 7: scenes.tsx (S1..S6) + BaarleFilm.tsx + Root BaarlePreview/BaarleFinal 93 dtk, tsc bersih; docs/SHOTLIST.md; public/audio/sfx.wav (−26 LUFS); style/cover-topic.png 1080×1920. Tahap 8: draft/DRAFT_SHEET.jpg (8 frame 1.5,15.5,37.5,49.5,61,70,81,88 s) + draft/CHECK_50-68s.mp4; ceilings semua 5 (lighting/material/depth/composition/readability), camera motion 5/5, diversity 44.7, 'OK: no aspect capped below 4'. Pengamatan sheet: 61 s plat NL·19 kecil (kamera dekat atap S4), 81 s plat DITUTUP terpotong perspektif ('ITUTU'). BELUM: THEME_CHECK, skor self, juri.",
+      "command": "npm run draft -- BaarlePreview --frames=1.5s,15.5s,37.5s,49.5s,61s,70s,81s,88s (sudah jalan, hasil di draft/)",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/DRAFT_REPORT.json",
+        "draft/jury_input.json",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/BaarleFilm.tsx",
+        "docs/SHOTLIST.md",
+        "style/cover-topic.png"
+      ],
+      "next": "Sesi B lanjutan (tahap 8 sisa): tulis draft/THEME_CHECK.md (G22: tiap frame subjek = kata VO, semua 'ya'); audira_style_memory record_score style SATELLITEBRIEFING episode sejarah-negara-EP71 stage draft judge self (ceilings + camera dari draft/DRAFT_REPORT.json; selfBias +0.78 → jangan murah hati); lalu juri buta subagent dengan F:/AUDIRA-SKILL-MOTION/qa/jury.md + draft/jury_input.json + draft/DRAFT_SHEET.jpg + cover kit F:/AUDIRA-SKILL-MOTION/references/quality-bar/satellitebriefing.png → record_score judge jury. ≥3.8 & tak ada <3 = LOLOS; bila PERLU POLES maks 1 putaran lagi (kandidat poles: S4 kamera 54–62 s mundur agar plat B·2/NL·19 terbaca, plat DITUTUP S5B dihadapkan ke kamera rotY), terbaik ≥3.5 setelah 2 putaran diterima. Lalu handover Sesi C (newSession) dan SendMessage ke orkestrator local_108c1a65-5fd2-4584-963a-21fb641b226a. Batas: hanya folder EP71, tanpa commit, tanpa render MP4 penuh/resolusi penuh, --concurrency=1 bila VRAM penuh.",
+      "snapshot": {
+        "episode": "EP71_BAARLE_PINTU_DEPAN",
+        "topic": "Baarle-Hertog/Baarle-Nassau: pintu depan rumah menentukan negaramu (Belgia vs Belanda)",
+        "style": "SATELLITEBRIEFING",
+        "memoryEpisode": "sejarah-negara-EP71",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T16:02:52.922Z",
+      "doing": "Sesi B s4: draf putaran 2 (poles setelah juri r1 3.5). THEME_CHECK selesai, self 3.67, jury r1 3.5 tercatat. Poles: grid slate, counter 22 mulai 15.0/0.45 s, Plate auto-fit + DITUTUP rotY -0.55, plat S4 w 0.34 + kamera mundur, hemisphere 0.75. Backup r1 di draft/_r1_*.bak",
+      "command": "npm run draft -- BaarlePreview --frames=1.5s,15.5s,37.5s,49.5s,61s,70s,81s,88s --concurrency=1",
+      "files": [
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/timeline.ts",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/BaarleFilm.tsx",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Juri buta r2 → record_score jury; terbaik ≥3.5 diterima; handover Sesi C newSession; SendMessage orkestrator local_108c1a65-5fd2-4584-963a-21fb641b226a",
+      "snapshot": {
+        "episode": "EP71_BAARLE_PINTU_DEPAN",
+        "topic": "Baarle-Hertog/Baarle-Nassau: pintu depan rumah menentukan negaramu (Belgia vs Belanda)",
+        "style": "SATELLITEBRIEFING",
+        "memoryEpisode": "sejarah-negara-EP71",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T16:16:52.607Z",
+      "doing": "Sesi B SELESAI (tahap 5–8). Style SATELLITEBRIEFING, Remotion + R3F, comp BaarleFinal 93 dtk (VO Cartesia 90 dtk terkunci, public/audio/vo.wav; SFX public/audio/sfx.wav −26 LUFS). Draf: juri buta r1 3.5, r2 3.5 (L3 M3 D3 C3 Mo5 R4) → DITERIMA 3.50 setelah 2 putaran, draf r2 dipakai (draft/DRAFT_SHEET.jpg; r1 di draft/DRAFT_SHEET_r1.jpg). Ceilings audit semua 5, camera 5/5, diversity 44.6. THEME_CHECK 8/8 ya. NOTES.md + append_lesson failed sudah ditulis. Hasil cek audio G18c BELUM diukur: lakukan di awal Sesi C.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/DRAFT_REPORT.json",
+        "draft/THEME_CHECK.md",
+        "NOTES.md",
+        "project/public/audio/vo.wav",
+        "project/public/audio/sfx.wav",
+        "project/scripts/render-final.mjs"
+      ],
+      "next": "Sesi C · tahap 9: tampilkan contact sheet draft/DRAFT_SHEET.jpg, skor juri 3.5 (diterima setelah 2 putaran), durasi 93 dtk, hasil cek audio G18c (VO ≥12 LU di atas SFX), lalu TUNGGU acc pengguna. Setelah acc: di project/ jalankan `npm run render:final -- --comp=BaarleFinal --out=out/FINAL_EP71_BAARLE.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Baarle: Pintu Depan Menentukan Negara\" --slug=sejarah-negara --ep=EP71` (pakai --concurrency=1 / --jobs lebih kecil bila VRAM penuh), QA −14 LUFS TP < −1 dBFS, metadata ffprobe, record_score final. Lalu tahap 10: SOCIAL_CAPTIONS.md 6 platform + jadwal + label AI (validator), docs/SCRIPT.md + research/SOURCE_REGISTER.md hanya untuk caption, 3 scheduled task review.",
+      "snapshot": {
+        "episode": "EP71_BAARLE_PINTU_DEPAN",
+        "topic": "Baarle-Hertog/Baarle-Nassau: pintu depan rumah menentukan negaramu (Belgia vs Belanda)",
+        "style": "SATELLITEBRIEFING",
+        "memoryEpisode": "sejarah-negara-EP71",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:39:11.411Z",
+      "doing": "Sesi B selesai (draf diterima juri 3.50 setelah 2 putaran); acc render final sudah diberikan pengguna 2026-11-25",
+      "next": "Sesi C tahap 9–10: render final 1080x1920@60 sesuai handover sebelumnya (G18 mix, --sfx, --vo), QA, metadata, delivery, caption, 3 scheduled task review",
+      "snapshot": {
+        "episode": "EP71_BAARLE_PINTU_DEPAN",
+        "topic": "Baarle-Hertog/Baarle-Nassau: pintu depan rumah menentukan negaramu (Belgia vs Belanda)",
+        "style": "SATELLITEBRIEFING",
+        "memoryEpisode": "sejarah-negara-EP71",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:40:24.415Z",
+      "doing": "Sesi C: render final 1080x1920@60 (G18c lolos 13.6 LU: VO -16.4 / SFX -30.0 LUFS)",
+      "command": "cd project && npm run render:final -- --comp=BaarleFinal --out=out/FINAL_EP71_BAARLE.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Baarle: Pintu Depan Menentukan Negara\" --slug=sejarah-negara --ep=EP71 --log=error",
+      "files": [
+        "project/out/FINAL_EP71_BAARLE.mp4"
+      ],
+      "next": "QA -14 LUFS/TP<-1, ffprobe metadata, cek frame, record_score final, lalu tahap 10 caption + 3 scheduled task",
+      "snapshot": {
+        "episode": "EP71_BAARLE_PINTU_DEPAN",
+        "topic": "Baarle-Hertog/Baarle-Nassau: pintu depan rumah menentukan negaramu (Belgia vs Belanda)",
+        "style": "SATELLITEBRIEFING",
+        "memoryEpisode": "sejarah-negara-EP71",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:41:32.022Z",
+      "doing": "Sesi C: render final TERBLOKIR memory gate (juri 3.50 < 3.8). Override --skip-memory-gate ditolak classifier auto mode; butuh izin eksplisit pengguna. G18c lolos (gap 14.4 LU setelah duck). SOCIAL_CAPTIONS.md sudah ditulis + lolos validator (jadwal Minggu 17 Jan 2027 19.00 WIB).",
+      "command": "cd project && npm run render:final -- --comp=BaarleFinal --out=out/FINAL_EP71_BAARLE.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Baarle: Pintu Depan Menentukan Negara\" --slug=sejarah-negara --ep=EP71 --log=error \"--skip-memory-gate=diterima juri 3.50 setelah 2 putaran (aturan 2026-11-23)\"",
+      "files": [
+        "SOCIAL_CAPTIONS.md",
+        "project/out/FINAL_EP71_BAARLE.mp4"
+      ],
+      "next": "Setelah izin override: render, QA -14 LUFS/TP, ffprobe metadata, cek frame, record_score final, NOTES.md, lessons, 3 scheduled task review (review-baarle-24h/72h/7d, upload Minggu 17 Jan 2027 19.00 WIB)",
+      "snapshot": {
+        "episode": "EP71_BAARLE_PINTU_DEPAN",
+        "topic": "Baarle-Hertog/Baarle-Nassau: pintu depan rumah menentukan negaramu (Belgia vs Belanda)",
+        "style": "SATELLITEBRIEFING",
+        "memoryEpisode": "sejarah-negara-EP71",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T17:41:32.022Z",
+      "doing": "Sesi C: render final TERBLOKIR memory gate (juri 3.50 < 3.8). Override --skip-memory-gate ditolak classifier auto mode; butuh izin eksplisit pengguna. G18c lolos (gap 14.4 LU setelah duck). SOCIAL_CAPTIONS.md sudah ditulis + lolos validator (jadwal Minggu 17 Jan 2027 19.00 WIB).",
+      "command": "cd project && npm run render:final -- --comp=BaarleFinal --out=out/FINAL_EP71_BAARLE.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Baarle: Pintu Depan Menentukan Negara\" --slug=sejarah-negara --ep=EP71 --log=error \"--skip-memory-gate=diterima juri 3.50 setelah 2 putaran (aturan 2026-11-23)\"",
+      "files": [
+        "SOCIAL_CAPTIONS.md",
+        "project/out/FINAL_EP71_BAARLE.mp4"
+      ],
+      "next": "Setelah izin override: render, QA -14 LUFS/TP, ffprobe metadata, cek frame, record_score final, NOTES.md, lessons, 3 scheduled task review (review-baarle-24h/72h/7d, upload Minggu 17 Jan 2027 19.00 WIB)",
+      "snapshot": {
+        "episode": "EP71_BAARLE_PINTU_DEPAN",
+        "topic": "Baarle-Hertog/Baarle-Nassau: pintu depan rumah menentukan negaramu (Belgia vs Belanda)",
+        "style": "SATELLITEBRIEFING",
+        "memoryEpisode": "sejarah-negara-EP71",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T18:39:51.919Z"
+    }
+  ],
+  "session": 5,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP71 Baarle · s2",
+      "at": "2026-11-24T15:12:23.687Z"
+    },
+    {
+      "no": 3,
+      "title": "EP71 Baarle · s3",
+      "at": "2026-11-24T15:19:42.176Z"
+    },
+    {
+      "no": 4,
+      "title": "EP71 Baarle · s4",
+      "at": "2026-11-24T15:59:18.360Z"
+    },
+    {
+      "no": 5,
+      "title": "EP71 Baarle · s5",
+      "at": "2026-11-24T16:16:52.607Z"
+    },
+    {
+      "no": 5,
+      "title": "EP71 Baarle · s5",
+      "at": "2026-11-24T17:39:11.411Z"
+    }
+  ]
+}

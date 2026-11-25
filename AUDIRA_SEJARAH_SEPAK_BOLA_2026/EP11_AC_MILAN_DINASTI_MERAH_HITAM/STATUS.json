@@ -1,0 +1,264 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP11_AC_MILAN_DINASTI_MERAH_HITAM",
+  "topic": "AC Milan, Dinasti Merah-Hitam Eropa",
+  "createdAt": "2026-11-12T10:06:29.484Z",
+  "updatedAt": "2026-11-13T23:38:50.780Z",
+  "currentStage": "setup",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-13T10:41:21.131Z",
+      "notes": [
+        {
+          "at": "2026-11-13T10:41:21.131Z",
+          "text": "Reset 2026-11-13: STATUS lama berisi gerbang palsu dari skrip luar. Konteks dibaca ulang (EP04 MARBLEMUSEUM, EP05 TACTICBOARD, EP06–10 VINTAGEFORGE/PAPERWORLD/FILMNOIR/COMICFORGE/CHAINREACTION). File lama dipindah ke _superseded_2026-11-13/."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T10:41:23.117Z",
+          "text": "sync: riset ada"
+        },
+        {
+          "at": "2026-11-13T10:42:59.722Z",
+          "text": "Riset ulang 2026-11-13: 22 fakta dari 14 halaman Wikipedia dibaca langsung (UEFA.com terhalang cookie banner). research/SOURCE_REGISTER.md."
+        }
+      ],
+      "doneAt": "2026-11-13T10:42:59.722Z",
+      "startedAt": "2026-11-12T00:21:01.787Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "notes": [
+        {
+          "at": "2026-11-13T11:06:11.479Z",
+          "text": "Pengguna memilih TACTICBOARD (alternatif TIMEFORGE, STAINEDGLASS). Cover topik dirender: style/cover-topic.png (Ep11Cover). Menunggu acc cover."
+        },
+        {
+          "at": "2026-11-13T11:20:16.606Z",
+          "text": "Pengguna menyetujui TACTICBOARD + cover topik (style/cover-topic.png) 2026-11-13: \"Setuju, lanjut naskah\"."
+        }
+      ],
+      "startedAt": "2026-11-13T11:06:11.479Z",
+      "approvedAt": "2026-11-13T11:20:16.606Z",
+      "doneAt": "2026-11-13T11:20:16.606Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "notes": [
+        {
+          "at": "2026-11-13T11:20:52.104Z",
+          "text": "Naskah 6 tahap docs/SCRIPT.md, 213 kata (script:check --short OK, 1:25–1:35). Menunggu acc pengguna."
+        },
+        {
+          "at": "2026-11-13T11:21:17.798Z",
+          "text": "Pengguna menyetujui naskah docs/SCRIPT.md (213 kata, 1:25–1:35) 2026-11-13: \"Setuju naskah\"."
+        }
+      ],
+      "startedAt": "2026-11-13T11:20:52.104Z",
+      "approvedAt": "2026-11-13T11:21:17.798Z",
+      "doneAt": "2026-11-13T11:21:17.798Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T18:18:56.671Z",
+          "text": "VO Cartesia locked: speech 83.795s, total 87.795s, 213 display words, wpm 153. voice-lock tanpa MISMATCH. timeline.json + public/audio/ep11/vo.wav siap."
+        }
+      ],
+      "doneAt": "2026-11-13T18:18:56.671Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci + visual audit",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T18:40:47.322Z",
+          "text": "Draf contact sheet (8 beat) jadi. Self 4.17 (camera 5/5), juri buta LOLOS 4.17 (no aspek <3). Podium Dutch diganti kartu terpusat, glow trofi ke-7 dihangatkan. Menunggu acc pengguna."
+        },
+        {
+          "at": "2026-11-13T23:34:53.638Z",
+          "text": "Pengguna setuju draf 2026-11-14: \"Setuju, render final\". Juri buta LOLOS 4.17."
+        }
+      ],
+      "approved": true,
+      "startedAt": "2026-11-13T18:40:47.322Z",
+      "approvedAt": "2026-11-13T23:34:53.638Z",
+      "doneAt": "2026-11-13T23:34:53.638Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T23:37:54.509Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-13T23:38:45.575Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60 87.81 s, qa:gate GREEN (19 cek), signature VALID + C2PA, FINAL_CHECK.jpg ok"
+        }
+      ],
+      "doneAt": "2026-11-13T23:38:45.575Z",
+      "startedAt": "2026-11-13T23:37:17.073Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T23:37:54.509Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-13T23:38:50.753Z",
+          "text": "SOCIAL_CAPTIONS.md 6 platform lolos validator; jadwal 23 Nov 2026 19.00-20.15 WIB (perkiraan); lesson TACTICBOARD + GLOBAL tercatat"
+        }
+      ],
+      "doneAt": "2026-11-13T23:38:50.753Z",
+      "startedAt": "2026-11-13T23:37:43.274Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-sepak-bola-EP11",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ],
+    "style": "TACTICBOARD",
+    "wordCount": 213,
+    "estimatedDuration": {
+      "wordCount": 213,
+      "minSec": 85,
+      "maxSec": 95
+    }
+  },
+  "syncedAt": "2026-11-13T23:37:54.509Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-13T10:43:16.501Z",
+      "doing": "Gerbang style EP11: menunggu pilihan pengguna (TACTICBOARD utama, TIMEFORGE, STAINEDGLASS)",
+      "next": "Setelah pilihan: tulis style/STYLE_DECISION.md (approved: no), render cover topik 1080x1920, minta acc, lalu naskah 6 tahap"
+    },
+    {
+      "at": "2026-11-13T11:20:59.278Z",
+      "doing": "Gerbang naskah EP11: docs/SCRIPT.md 213 kata menunggu acc pengguna",
+      "files": [
+        "docs/SCRIPT.md",
+        "style/STYLE_DECISION.md",
+        "style/cover-topic.png",
+        "../studio/src/scenes/ep11/Cover.tsx"
+      ],
+      "next": "Setelah acc naskah: tandai script approved, lalu sesi baru: tahap 5 setup (studio/src/scenes/ep11, Ep11Cover sudah di Root.tsx) dan tahap 6 VO Cartesia. Jangan render MP4 sebelum VO dikunci."
+    },
+    {
+      "at": "2026-11-13T11:20:59.278Z",
+      "doing": "Gerbang naskah EP11: docs/SCRIPT.md 213 kata menunggu acc pengguna",
+      "files": [
+        "docs/SCRIPT.md",
+        "style/STYLE_DECISION.md",
+        "style/cover-topic.png",
+        "../studio/src/scenes/ep11/Cover.tsx"
+      ],
+      "next": "Setelah acc naskah: tandai script approved, lalu sesi baru: tahap 5 setup (studio/src/scenes/ep11, Ep11Cover sudah di Root.tsx) dan tahap 6 VO Cartesia. Jangan render MP4 sebelum VO dikunci.",
+      "finishedAt": "2026-11-13T11:21:17.820Z"
+    },
+    {
+      "at": "2026-11-13T18:17:50.734Z",
+      "doing": "VO Cartesia TTS + voice-lock (vo.py tts) lalu build timeline",
+      "command": "python _tools/vo.py EP11_AC_MILAN_DINASTI_MERAH_HITAM tts",
+      "next": "vo.py build + make-timeline.py, lalu build Film ep11"
+    },
+    {
+      "at": "2026-11-13T18:17:50.734Z",
+      "doing": "VO Cartesia TTS + voice-lock (vo.py tts) lalu build timeline",
+      "command": "python _tools/vo.py EP11_AC_MILAN_DINASTI_MERAH_HITAM tts",
+      "next": "vo.py build + make-timeline.py, lalu build Film ep11",
+      "finishedAt": "2026-11-13T18:18:57.705Z"
+    },
+    {
+      "at": "2026-11-13T18:28:49.714Z",
+      "doing": "Draft contact sheet ep11 (8 key beats via stills)",
+      "command": "node scripts/stills.mjs out/ep11-draft ... Ep11Preview",
+      "files": [
+        "studio/src/scenes/ep11/Film.tsx",
+        "world.tsx",
+        "timing.ts"
+      ],
+      "next": "record_score draft + juri buta, lalu minta acc draf"
+    },
+    {
+      "at": "2026-11-13T18:40:47.350Z",
+      "doing": "Draf LOLOS juri, menunggu acc pengguna",
+      "command": "audira_render_batch start (project studio, comp Ep11Final, vo audio/ep11/vo.wav)",
+      "files": [
+        "studio/src/scenes/ep11/Film.tsx",
+        "world.tsx",
+        "timing.ts",
+        "Root.tsx"
+      ],
+      "next": "Setelah acc: audira_render_batch status (cek antrean) -> render final Ep11Final 1080x1920@60 RENDER_TMPDIR=F: -> deliver -> captions 6 platform"
+    },
+    {
+      "at": "2026-11-13T23:35:22.235Z",
+      "doing": "Render final Ep11Final 1080x1920@60 (batch 20261113-233505, detached)",
+      "batchId": "20261113-233505",
+      "next": "Cek audira_render_batch status sampai done -> npm run deliver -- out/Ep11Final.mp4 (pindah ke EP11/FINAL_VIDEO.mp4) -> cek FINAL_CHECK.jpg -> record_score stage:final -> SOCIAL_CAPTIONS.md 6 platform + validate -> append_lesson/set_best. Catatan: slug sepakbola-EP11, channel SPORTFACTS, upload selang EP01-10 seri (lihat SERIES_PLAN)."
+    },
+    {
+      "at": "2026-11-13T23:35:22.235Z",
+      "doing": "Render final Ep11Final 1080x1920@60 (batch 20261113-233505, detached)",
+      "batchId": "20261113-233505",
+      "next": "Cek audira_render_batch status sampai done -> npm run deliver -- out/Ep11Final.mp4 (pindah ke EP11/FINAL_VIDEO.mp4) -> cek FINAL_CHECK.jpg -> record_score stage:final -> SOCIAL_CAPTIONS.md 6 platform + validate -> append_lesson/set_best. Catatan: slug sepakbola-EP11, channel SPORTFACTS, upload selang EP01-10 seri (lihat SERIES_PLAN).",
+      "finishedAt": "2026-11-13T23:38:50.780Z"
+    }
+  ]
+}

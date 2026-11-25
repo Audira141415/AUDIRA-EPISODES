@@ -1,0 +1,44 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      font-family: "Outfit", sans-serif;
+    }
+    .cap {
+      position: absolute;
+      left: 60px;
+      top: 1352px;
+      width: 860px;
+      text-align: left;
+      overflow: visible;
+    }
+    .cap-t {
+      display: inline;
+      padding: 6px 16px;
+      background: #f4f6fb;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+      font-weight: 900;
+      font-size: 54px;
+      line-height: 1.38;
+      color: #090a0f;
+    }
+    .cap-t em {
+      font-style: normal;
+      color: #c2410c;
+    }
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+{{CAPTIONS}}
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    document.querySelectorAll(".cap").forEach((el) => {
+      const s = parseFloat(el.dataset.start);
+      tl.fromTo(el.querySelector(".cap-t"), { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" }, s);
+    });
+    window.__timelines["captions"] = tl;
+  </script>
+</template>

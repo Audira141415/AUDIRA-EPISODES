@@ -1,0 +1,178 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#0C081A}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.07;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.35) 42%,rgba(0,0,0,0.35) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'Share Tech Mono','Courier New',monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#00F6FF;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.pre{position:absolute;left:-3000px;top:0;font-size:40px;opacity:0}
+.p{transform-origin:50% 30%}
+.kk{display:inline-block;font-family:'Share Tech Mono','Courier New',monospace;font-weight:400;font-size:30px;letter-spacing:.14em;color:#00F6FF;background:rgba(10,6,26,.88);padding:7px 18px 6px;margin-bottom:14px;border-left:8px solid #FF007F;text-shadow:0 0 10px rgba(0,246,255,.7);box-shadow:0 0 0 1px rgba(0,246,255,.35)}
+.kk.rd{color:#FF6A82;border-left-color:#FF1F45;text-shadow:0 0 10px rgba(255,31,69,.8)}
+.kk.am{color:#FF9E00;border-left-color:#FF9E00;text-shadow:0 0 10px rgba(255,158,0,.7)}
+.kk.mg{color:#FF7AC0;border-left-color:#00F6FF}
+.h1,.h2{display:inline-block;background:linear-gradient(180deg,rgba(18,10,40,.86),rgba(10,6,26,.9));box-shadow:0 0 0 2px rgba(0,246,255,.55),0 0 26px rgba(0,246,255,.25),0 18px 40px rgba(0,0,0,.6);font-family:Audiowide,'Arial Black',sans-serif;font-weight:400;color:#fff;text-shadow:0 0 6px rgba(255,0,127,.9),0 0 22px rgba(255,0,127,.55)}
+.h1{font-size:76px;line-height:1.08;padding:14px 26px 18px}
+.h2{font-size:60px;line-height:1.1;padding:12px 24px 16px;margin-bottom:4px}
+.h1 em,.h2 em{font-style:normal;color:#00F6FF;text-shadow:0 0 8px rgba(0,246,255,.9),0 0 24px rgba(0,246,255,.5)}
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px}
+.ch{font-style:normal;font-family:'Share Tech Mono','Courier New',monospace;font-size:36px;letter-spacing:.04em;color:#fff;padding:8px 18px 7px;margin-top:12px;background:rgba(10,6,26,.9);box-shadow:0 0 0 2px #00F6FF,0 0 18px rgba(0,246,255,.35)}
+.chips .ch{margin-top:0}
+.ch.rd{box-shadow:0 0 0 2px #FF1F45,0 0 18px rgba(255,31,69,.45);color:#FFD0D8}
+.ch.am{box-shadow:0 0 0 2px #FF9E00,0 0 18px rgba(255,158,0,.4);color:#FFE2B8}
+.ch.gn{box-shadow:0 0 0 2px #39FF14,0 0 18px rgba(57,255,20,.35);color:#D8FFD0}
+.ch s{text-decoration:line-through;text-decoration-color:#FF1F45;text-decoration-thickness:5px}
+.row{display:flex;flex-direction:column;gap:2px;margin-top:12px;padding:10px 22px 12px;background:linear-gradient(180deg,rgba(18,10,40,.86),rgba(10,6,26,.9));box-shadow:0 0 0 2px rgba(0,246,255,.55),0 0 26px rgba(0,246,255,.25),0 18px 40px rgba(0,0,0,.6);border-left:10px solid #FF007F}
+.row b{font-family:Audiowide,'Arial Black',sans-serif;font-weight:400;font-size:38px;line-height:1.1;color:#00F6FF;text-shadow:0 0 10px rgba(0,246,255,.6)}
+.row span{font-family:'Share Tech Mono','Courier New',monospace;font-size:34px;line-height:1.2;color:#E2E8F0}
+.row.gy{border-left-color:#9A9AA6}.row.gy b{color:#E8E8EE;text-shadow:none}
+.row.cy{border-left-color:#00F6FF}.row.cy b{color:#FF7AC0;text-shadow:0 0 10px rgba(255,0,127,.6)}
+.mega{width:max-content;font-family:Audiowide,'Arial Black',sans-serif;font-weight:400;font-size:150px;line-height:1.02;padding:4px 30px 10px;color:#FF9E00;background:linear-gradient(180deg,rgba(18,10,40,.86),rgba(10,6,26,.9));box-shadow:0 0 0 2px rgba(0,246,255,.55),0 0 26px rgba(0,246,255,.25),0 18px 40px rgba(0,0,0,.6);text-shadow:0 0 10px rgba(255,158,0,.9),0 0 34px rgba(255,0,127,.6)}
+.mega.sm{font-size:96px;color:#fff;text-shadow:0 0 8px rgba(255,0,127,.95),0 0 30px rgba(255,0,127,.6)}
+.mega small{font-family:'Share Tech Mono','Courier New',monospace;font-size:38px;color:#00F6FF;text-shadow:none;letter-spacing:.04em}
+.q{margin-top:14px;font-family:Audiowide,'Arial Black',sans-serif;font-size:42px;line-height:1.18;padding:16px 24px;color:#fff;background:linear-gradient(180deg,rgba(18,10,40,.86),rgba(10,6,26,.9));box-shadow:0 0 0 2px rgba(0,246,255,.55),0 0 26px rgba(0,246,255,.25),0 18px 40px rgba(0,0,0,.6);border-bottom:8px solid #FF007F;text-shadow:0 0 10px rgba(255,0,127,.7)}
+.sq{position:absolute;inset:0;z-index:15;pointer-events:none;opacity:0}
+.sq i{position:absolute;left:0;right:0;background:#000}
+.sq .st{top:0;height:50.2%;transform-origin:50% 0%}
+.sq .sb{bottom:0;height:50.2%;transform-origin:50% 100%}
+.sq .ln{top:50%;height:8px;margin-top:-4px;background:#F4F8FF;box-shadow:0 0 30px 8px rgba(200,240,255,.9),0 0 90px 20px rgba(255,0,127,.5)}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="83.21" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI RETRO &middot; BUKAN CUPLIKAN SIARAN ASLI</div>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide&family=Share+Tech+Mono&family=Monoton&display=block">
+<div class="pre"><span style="font-family:Audiowide">AB19</span><span style="font-family:'Share Tech Mono'">AB19</span><span style="font-family:Monoton">AB19</span></div>
+<div class="sq" data-at="s3:Tahun-0.2" data-fx="sq"><i class="st"></i><i class="sb"></i><i class="ln"></i></div>
+<div class="sq" data-at="s3:Tahun#2-0.2" data-fx="sq"><i class="st"></i><i class="sb"></i><i class="ln"></i></div>
+<div class="sq" data-at="s4:Larangan-0.2" data-fx="sq"><i class="st"></i><i class="sb"></i><i class="ln"></i></div>
+<div class="sq" data-at="s6:Dua-0.2" data-fx="sq"><i class="st"></i><i class="sb"></i><i class="ln"></i></div>
+<div class="sq" data-at="s7:Televisi-0.2" data-fx="sq"><i class="st"></i><i class="sb"></i><i class="ln"></i></div>
+<div class="sq" data-at="s8:Bhutan-0.2" data-fx="sq"><i class="st"></i><i class="sb"></i><i class="ln"></i></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="kk">FAKTA SEJARAH NEGARA &middot; EP 17</div>
+  <div class="h1">Sampai <em>1999</em>,<br>belum ada<br>siaran TV</div>
+  <i class="ch rd" data-at="s1:dilarang" data-fx="crt" data-d="inline-block">&#10005; PUNYA TV PERNAH DILARANG</i>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="kk">HIMALAYA &middot; ASIA SELATAN</div>
+  <div class="h2">Kerajaan <em>Bhutan</em></div>
+  <i class="ch " data-at="s2:antara" data-fx="crt" data-d="inline-block">di antara India &amp; Tiongkok</i>
+</div>
+<div class="p" data-in="s3" data-out="s3:Tahun#2">
+  <div class="kk am">1980-AN &middot; SINYAL BOCOR</div>
+  <div class="h2">Siaran tetangga<br>melewati gunung</div>
+  <div class="chips"><i class="ch am" data-at="s3:India" data-fx="crt" data-d="inline-block">INDIA &middot; DOORDARSHAN</i><i class="ch " data-at="s3:Bangladesh" data-fx="crt" data-d="inline-block">BANGLADESH &middot; BTV</i></div>
+</div>
+<div class="p" data-in="s3:Tahun#2" data-out="s4">
+  <div class="kk rd">LARANGAN</div>
+  <div class="mega" data-at="s3:1989" data-fx="crt" data-d="block">1989</div>
+  <div class="chips"><i class="ch rd" data-at="s3:pesawat" data-fx="crt" data-d="inline-block">&#10005; PESAWAT TV</i><i class="ch rd" data-at="s3:parabola" data-fx="crt" data-d="inline-block">&#10005; PARABOLA</i></div>
+  <div class="row " data-at="s3:warisan" data-fx="crt"><b>ALASAN</b><span>menjaga warisan budaya Bhutan</span></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="kk">TAPI&hellip;</div>
+  <div class="h2">Tidak sepenuhnya<br>dipatuhi</div>
+  <div class="row gy" data-at="s4:hitam" data-fx="crt"><b>TV HITAM PUTIH</b><span>beberapa tetap menyala</span></div>
+  <div class="row gy" data-at="s4:bajakan" data-fx="crt"><b>FILM INDIA BAJAKAN</b><span>beredar dari toko video</span></div>
+</div>
+<div class="p" data-in="s5" data-out="s5:Setelah">
+  <div class="kk am">TITIK BALIK</div>
+  <div class="h2">Final Piala<br>Dunia <em>1998</em></div>
+  <i class="ch gn" data-at="s5:uji" data-fx="crt" data-d="inline-block">siaran uji coba &middot; Thimphu</i>
+</div>
+<div class="p" data-in="s5:Setelah" data-out="s6">
+  <div class="kk">SETELAH ITU</div>
+  <div class="h2"><em>BBS</em> diizinkan</div>
+  <i class="ch gn" data-at="s5:membuka" data-fx="crt" data-d="inline-block">membuka televisi nasional</i>
+</div>
+<div class="p" data-in="s6" data-out="s6:Siarannya">
+  <div class="kk mg">MENGUDARA</div>
+  <div class="mega sm" data-at="s6:Dua" data-fx="crt" data-d="block">2 Juni 1999</div>
+  <div class="row cy" data-at="s6:BBS" data-fx="crt"><b>BBS TELEVISION</b><span>mulai siaran di Thimphu</span></div>
+  <i class="ch am" data-at="s6:dua" data-fx="crt" data-d="inline-block">25 tahun penobatan raja</i>
+</div>
+<div class="p" data-in="s6:Siarannya" data-out="s7">
+  <div class="kk">JADWAL SIARAN</div>
+  <div class="h2">Belum ada<br>jam tetap</div>
+  <i class="ch am" data-at="s6:tujuh" data-fx="crt" data-d="inline-block">biasanya mulai pukul 19.00</i>
+</div>
+<div class="p" data-in="s7" data-out="s7:Beberapa">
+  <div class="kk">TV KABEL IKUT MASUK</div>
+  <div class="mega sm" data-at="s7:puluhan" data-fx="crt" data-d="block">45+ <small>saluran India</small></div>
+  <i class="ch " data-at="s7:India" data-fx="crt" data-d="inline-block">data Desember 2000</i>
+</div>
+<div class="p" data-in="s7:Beberapa" data-out="s8">
+  <div class="kk rd">DILARANG</div>
+  <div class="h2">Dianggap merusak<br>budaya</div>
+  <div class="chips"><i class="ch rd" data-at="s7:WWE" data-fx="crt" data-d="inline-block"><s>WWE</s></i><i class="ch rd" data-at="s7:Fashion" data-fx="crt" data-d="inline-block"><s>Fashion TV</s></i><i class="ch rd" data-at="s7:MTV" data-fx="crt" data-d="inline-block"><s>MTV</s></i></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="kk mg">BHUTAN</div>
+  <div class="h2">Disebut negara<br><em>terakhir</em> yang<br>mengenal TV</div>
+  <div class="q" data-at="s8:Menurut" data-fx="crt">Melindungi budaya, atau membuat tertinggal?</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 17</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":8.006,"s2":8.166,"s2e":12.846,"s3":13.006,"s3e":25.233,"s4":25.393,"s4e":32.715,"s5":32.875,"s5e":44.098,"s6":44.258,"s6e":55.893,"s7":56.053,"s7e":69.522,"s8":69.682,"s8e":80.207,"end":80.207,"dur":83.21,"outro":80.457},AT={"s1:1999":0.567,"s1:dilarang":7.604,"s2:Bhutan":8.929,"s2:antara":11.545,"s3:India":15.558,"s3:Bangladesh":16.099,"s3:bocor":16.734,"s3:Tahun#2":18.654,"s3:1989":18.886,"s3:pesawat":20.604,"s3:parabola":21.982,"s3:dilarang":22.369,"s3:warisan":24.103,"s4:hitam":28.768,"s4:film":30.502,"s4:bajakan":31.013,"s4:toko":31.942,"s5:final":35.057,"s5:Ada":37.364,"s5:uji":37.905,"s5:Thimphu":38.989,"s5:Setelah":39.814,"s5:BBS":41.192,"s5:diizinkan":41.734,"s6:Dua":44.271,"s6:BBS":46.345,"s6:Thimphu":48.59,"s6:dua":50.307,"s6:Siarannya":52.521,"s6:jam":53.481,"s6:biasanya":54.283,"s6:tujuh":55.305,"s7:kabel":56.889,"s7:puluhan":58.932,"s7:saluran":59.381,"s7:India":60.015,"s7:Beberapa":60.68,"s7:dilarang":62.787,"s7:WWE":66.474,"s7:Fashion":67.139,"s7:MTV":68.964,"s8:terakhir":71.448,"s8:Menurut":74.075,"s8:melindungi":76.041,"s8:tertinggal":77.372,"s8:AUDIRA":78.536,"s3:Tahun-0.2":12.806,"s3:Tahun#2-0.2":18.454,"s4:Larangan-0.2":25.477,"s6:Dua-0.2":44.071,"s7:Televisi-0.2":55.853,"s8:Bhutan-0.2":69.483,"s5:membuka":42.674},DUR=83.21,OUT=80.457;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ crt:(e,t)=>{const d=e.dataset.d||(e.classList.contains('row')?'flex':'block');gsap.set(e,{display:'none'});tl.set(e,{display:d},t);tl.fromTo(e,{opacity:0,scaleY:.04,scaleX:1.06,filter:'brightness(3)'},{opacity:1,scaleY:1,scaleX:1,filter:'brightness(1)',duration:.26,ease:'power3.out',immediateRender:false},t);},
+ sq:(e,t)=>{const a=e.querySelector('.st'),b=e.querySelector('.sb'),l=e.querySelector('.ln');gsap.set([a,b],{scaleY:0});gsap.set(l,{scaleX:1,opacity:0});tl.set(e,{opacity:1},t);
+  tl.to([a,b],{scaleY:1,duration:.15,ease:'power3.in'},t);tl.to(l,{opacity:1,duration:.04},t+.1);tl.to(l,{scaleX:0,duration:.1,ease:'power2.in'},t+.16);
+  tl.to(l,{scaleX:1,duration:.08,ease:'power2.out'},t+.3);tl.to([a,b],{scaleY:0,duration:.24,ease:'power3.out'},t+.36);tl.to(l,{opacity:0,duration:.12},t+.4);tl.set(e,{opacity:0},t+.62);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{opacity:1,scaleY:.03,scaleX:1.08,filter:'brightness(3)'},{scaleY:1,scaleX:1,filter:'brightness(1)',duration:.32,ease:'power3.out'},a-.08),POUT=(tl,p,b)=>tl.to(p,{scaleY:.02,scaleX:1.06,opacity:0,duration:.2,ease:'power3.in'},b-.2);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP17_BHUTAN_TV_1999")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

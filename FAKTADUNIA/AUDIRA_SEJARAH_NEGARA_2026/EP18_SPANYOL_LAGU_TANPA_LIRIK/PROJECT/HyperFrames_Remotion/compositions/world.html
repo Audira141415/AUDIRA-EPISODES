@@ -1,0 +1,172 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#FFFCF6}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.035;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.12) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0) 42%,rgba(0,0,0,0) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'Work Sans',sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#25214A;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.p{transform-origin:0% 0%}
+.wipe{position:absolute;inset:0;z-index:14;pointer-events:none;overflow:hidden;opacity:0}
+.wipe .dc{position:absolute;width:430px;height:430px;border-radius:50%}
+.wipe .tr{position:absolute;width:0;height:0;border-left:150px solid transparent;border-right:150px solid transparent;border-bottom:260px solid #FFD234;transform:rotate(var(--r));filter:drop-shadow(8px 10px 0 #705890)}
+.wipe .zz{position:absolute;width:520px;height:90px;transform:rotate(var(--r))}
+.mc{position:relative;background:#fff;border:5px solid #25214A;box-shadow:10px 12px 0 #705890}
+.kk{display:inline-block;font-family:Righteous,sans-serif;font-size:30px;line-height:1.25;letter-spacing:.06em;color:#fff;background:#25214A;padding:7px 20px 5px;margin-bottom:22px;box-shadow:6px 7px 0 #705890}
+.kk.co{background:#FF5A5F}
+.h1{display:inline-block;padding:14px 30px 18px;background:#FFD234;font-family:Righteous,sans-serif;font-size:100px;line-height:1.0;color:#25214A}
+.h1 em,.h2 em{font-style:normal;color:#FF5A5F}
+.h2{display:table;padding:10px 26px 14px;background:#FFD234;font-family:Righteous,sans-serif;font-size:72px;line-height:1.02;color:#25214A;margin-bottom:6px}
+.st{display:inline-block;margin-top:26px;font-family:Righteous,sans-serif;font-size:44px;letter-spacing:.04em;padding:8px 24px 6px;color:#fff;background:#FF5A5F;border:5px solid #25214A;transform:rotate(-3deg);box-shadow:10px 12px 0 #705890}
+.row{flex-direction:column;margin-top:26px;padding:12px 24px 14px;border-left:18px solid #5CC8FF}
+.row b{font-family:Righteous,sans-serif;font-weight:400;font-size:46px;line-height:1.08;color:#25214A}
+.row span{font-family:'Work Sans',sans-serif;font-weight:600;font-size:32px;line-height:1.22;color:#3A3560}
+.row.co{border-left-color:#FF5A5F}.row.mi{border-left-color:#5EDFB0}.row.pu{border-left-color:#705890}
+.tag{align-items:center;gap:22px;margin-top:26px;padding:12px 26px 12px 14px}
+.tag svg{flex:none;width:96px;height:96px}
+.tag b{display:block;font-family:Righteous,sans-serif;font-weight:400;font-size:48px;line-height:1.05;color:#25214A}
+.tag span{display:block;font-family:'Work Sans',sans-serif;font-weight:600;font-size:31px;line-height:1.2;color:#3A3560;margin-top:4px}
+.mega{align-items:center;gap:24px;width:max-content;padding:2px 30px 4px;background:#FFD234}
+.mega b{font-family:Righteous,sans-serif;font-weight:400;font-size:176px;line-height:1.08;color:#FF5A5F;-webkit-text-stroke:5px #25214A;paint-order:stroke fill}
+.mega small{font-family:'Work Sans',sans-serif;font-weight:800;font-size:40px;line-height:1.12;color:#25214A}
+.chips{display:flex;flex-wrap:wrap;gap:18px 18px}
+.ch{font-style:normal;font-family:Righteous,sans-serif;font-size:46px;line-height:1.15;padding:8px 24px 6px;border:5px solid #25214A;box-shadow:10px 12px 0 #705890;color:#25214A}
+.ch.co{background:#FF5A5F;color:#fff}.ch.mi{background:#5EDFB0}.ch.sk{background:#5CC8FF}
+.q{margin-top:26px;padding:16px 26px 18px;font-family:Righteous,sans-serif;font-size:52px;line-height:1.1;color:#fff;background:#FF5A5F}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="80.61" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">DIORAMA MEMPHIS &middot; ILUSTRASI SEJARAH</div>
+
+<div class="wipe" data-at="s2:Ini" data-fx="wipe"><i class="dc" data-d="0.000" style="left:-80px;top:-78px;background:#FFD234"></i><i class="dc" data-d="0.150" style="left:190px;top:-78px;background:#5CC8FF"></i><i class="dc" data-d="0.300" style="left:460px;top:-78px;background:#F59FB5"></i><i class="dc" data-d="0.450" style="left:730px;top:-78px;background:#5EDFB0"></i><i class="dc" data-d="0.092" style="left:-80px;top:196px;background:#5EDFB0"></i><i class="dc" data-d="0.242" style="left:190px;top:196px;background:#25214A"></i><i class="dc" data-d="0.392" style="left:460px;top:196px;background:#FF5A5F"></i><i class="dc" data-d="0.542" style="left:730px;top:196px;background:#705890"></i><i class="dc" data-d="0.183" style="left:-80px;top:470px;background:#705890"></i><i class="dc" data-d="0.333" style="left:190px;top:470px;background:#FFD234"></i><i class="dc" data-d="0.483" style="left:460px;top:470px;background:#5CC8FF"></i><i class="dc" data-d="0.633" style="left:730px;top:470px;background:#F59FB5"></i><i class="dc" data-d="0.275" style="left:-80px;top:744px;background:#F59FB5"></i><i class="dc" data-d="0.425" style="left:190px;top:744px;background:#5EDFB0"></i><i class="dc" data-d="0.575" style="left:460px;top:744px;background:#25214A"></i><i class="dc" data-d="0.725" style="left:730px;top:744px;background:#FF5A5F"></i><i class="dc" data-d="0.367" style="left:-80px;top:1018px;background:#FF5A5F"></i><i class="dc" data-d="0.517" style="left:190px;top:1018px;background:#705890"></i><i class="dc" data-d="0.667" style="left:460px;top:1018px;background:#FFD234"></i><i class="dc" data-d="0.817" style="left:730px;top:1018px;background:#5CC8FF"></i><i class="dc" data-d="0.458" style="left:-80px;top:1292px;background:#5CC8FF"></i><i class="dc" data-d="0.608" style="left:190px;top:1292px;background:#F59FB5"></i><i class="dc" data-d="0.758" style="left:460px;top:1292px;background:#5EDFB0"></i><i class="dc" data-d="0.908" style="left:730px;top:1292px;background:#25214A"></i><i class="dc" data-d="0.550" style="left:-80px;top:1566px;background:#25214A"></i><i class="dc" data-d="0.700" style="left:190px;top:1566px;background:#FF5A5F"></i><i class="dc" data-d="0.850" style="left:460px;top:1566px;background:#705890"></i><i class="dc" data-d="1.000" style="left:730px;top:1566px;background:#FFD234"></i><i class="tr" data-d="0.15" style="left:120px;top:300px;--r:18deg;border-bottom-color:#FFD234"></i><i class="tr" data-d="0.35" style="left:760px;top:640px;--r:-24deg;border-bottom-color:#5EDFB0"></i><i class="tr" data-d="0.55" style="left:240px;top:1180px;--r:40deg;border-bottom-color:#FF5A5F"></i><i class="tr" data-d="0.75" style="left:700px;top:1540px;--r:-10deg;border-bottom-color:#5CC8FF"></i><svg class="zz" data-d="0.25" style="left:60px;top:820px;--r:-12deg" viewBox="0 0 520 90"><path d="M10 70 L60 20 L110 70 L160 20 L210 70 L260 20 L310 70 L360 20 L410 70 L460 20 L510 70" fill="none" stroke="#25214A" stroke-width="22" stroke-linejoin="miter"/></svg><svg class="zz" data-d="0.50" style="left:520px;top:260px;--r:14deg" viewBox="0 0 520 90"><path d="M10 70 L60 20 L110 70 L160 20 L210 70 L260 20 L310 70 L360 20 L410 70 L460 20 L510 70" fill="none" stroke="#25214A" stroke-width="22" stroke-linejoin="miter"/></svg><svg class="zz" data-d="0.75" style="left:380px;top:1420px;--r:-6deg" viewBox="0 0 520 90"><path d="M10 70 L60 20 L110 70 L160 20 L210 70 L260 20 L310 70 L360 20 L410 70 L460 20 L510 70" fill="none" stroke="#25214A" stroke-width="22" stroke-linejoin="miter"/></svg></div><div class="wipe" data-at="s3:Lagu" data-fx="wipe"><i class="dc" data-d="0.000" style="left:-80px;top:-78px;background:#FFD234"></i><i class="dc" data-d="0.150" style="left:190px;top:-78px;background:#5CC8FF"></i><i class="dc" data-d="0.300" style="left:460px;top:-78px;background:#F59FB5"></i><i class="dc" data-d="0.450" style="left:730px;top:-78px;background:#5EDFB0"></i><i class="dc" data-d="0.092" style="left:-80px;top:196px;background:#5EDFB0"></i><i class="dc" data-d="0.242" style="left:190px;top:196px;background:#25214A"></i><i class="dc" data-d="0.392" style="left:460px;top:196px;background:#FF5A5F"></i><i class="dc" data-d="0.542" style="left:730px;top:196px;background:#705890"></i><i class="dc" data-d="0.183" style="left:-80px;top:470px;background:#705890"></i><i class="dc" data-d="0.333" style="left:190px;top:470px;background:#FFD234"></i><i class="dc" data-d="0.483" style="left:460px;top:470px;background:#5CC8FF"></i><i class="dc" data-d="0.633" style="left:730px;top:470px;background:#F59FB5"></i><i class="dc" data-d="0.275" style="left:-80px;top:744px;background:#F59FB5"></i><i class="dc" data-d="0.425" style="left:190px;top:744px;background:#5EDFB0"></i><i class="dc" data-d="0.575" style="left:460px;top:744px;background:#25214A"></i><i class="dc" data-d="0.725" style="left:730px;top:744px;background:#FF5A5F"></i><i class="dc" data-d="0.367" style="left:-80px;top:1018px;background:#FF5A5F"></i><i class="dc" data-d="0.517" style="left:190px;top:1018px;background:#705890"></i><i class="dc" data-d="0.667" style="left:460px;top:1018px;background:#FFD234"></i><i class="dc" data-d="0.817" style="left:730px;top:1018px;background:#5CC8FF"></i><i class="dc" data-d="0.458" style="left:-80px;top:1292px;background:#5CC8FF"></i><i class="dc" data-d="0.608" style="left:190px;top:1292px;background:#F59FB5"></i><i class="dc" data-d="0.758" style="left:460px;top:1292px;background:#5EDFB0"></i><i class="dc" data-d="0.908" style="left:730px;top:1292px;background:#25214A"></i><i class="dc" data-d="0.550" style="left:-80px;top:1566px;background:#25214A"></i><i class="dc" data-d="0.700" style="left:190px;top:1566px;background:#FF5A5F"></i><i class="dc" data-d="0.850" style="left:460px;top:1566px;background:#705890"></i><i class="dc" data-d="1.000" style="left:730px;top:1566px;background:#FFD234"></i><i class="tr" data-d="0.15" style="left:120px;top:300px;--r:18deg;border-bottom-color:#FFD234"></i><i class="tr" data-d="0.35" style="left:760px;top:640px;--r:-24deg;border-bottom-color:#5EDFB0"></i><i class="tr" data-d="0.55" style="left:240px;top:1180px;--r:40deg;border-bottom-color:#FF5A5F"></i><i class="tr" data-d="0.75" style="left:700px;top:1540px;--r:-10deg;border-bottom-color:#5CC8FF"></i><svg class="zz" data-d="0.25" style="left:60px;top:820px;--r:-12deg" viewBox="0 0 520 90"><path d="M10 70 L60 20 L110 70 L160 20 L210 70 L260 20 L310 70 L360 20 L410 70 L460 20 L510 70" fill="none" stroke="#25214A" stroke-width="22" stroke-linejoin="miter"/></svg><svg class="zz" data-d="0.50" style="left:520px;top:260px;--r:14deg" viewBox="0 0 520 90"><path d="M10 70 L60 20 L110 70 L160 20 L210 70 L260 20 L310 70 L360 20 L410 70 L460 20 L510 70" fill="none" stroke="#25214A" stroke-width="22" stroke-linejoin="miter"/></svg><svg class="zz" data-d="0.75" style="left:380px;top:1420px;--r:-6deg" viewBox="0 0 520 90"><path d="M10 70 L60 20 L110 70 L160 20 L210 70 L260 20 L310 70 L360 20 L410 70 L460 20 L510 70" fill="none" stroke="#25214A" stroke-width="22" stroke-linejoin="miter"/></svg></div><div class="wipe" data-at="s5:Lirik" data-fx="wipe"><i class="dc" data-d="0.000" style="left:-80px;top:-78px;background:#FFD234"></i><i class="dc" data-d="0.150" style="left:190px;top:-78px;background:#5CC8FF"></i><i class="dc" data-d="0.300" style="left:460px;top:-78px;background:#F59FB5"></i><i class="dc" data-d="0.450" style="left:730px;top:-78px;background:#5EDFB0"></i><i class="dc" data-d="0.092" style="left:-80px;top:196px;background:#5EDFB0"></i><i class="dc" data-d="0.242" style="left:190px;top:196px;background:#25214A"></i><i class="dc" data-d="0.392" style="left:460px;top:196px;background:#FF5A5F"></i><i class="dc" data-d="0.542" style="left:730px;top:196px;background:#705890"></i><i class="dc" data-d="0.183" style="left:-80px;top:470px;background:#705890"></i><i class="dc" data-d="0.333" style="left:190px;top:470px;background:#FFD234"></i><i class="dc" data-d="0.483" style="left:460px;top:470px;background:#5CC8FF"></i><i class="dc" data-d="0.633" style="left:730px;top:470px;background:#F59FB5"></i><i class="dc" data-d="0.275" style="left:-80px;top:744px;background:#F59FB5"></i><i class="dc" data-d="0.425" style="left:190px;top:744px;background:#5EDFB0"></i><i class="dc" data-d="0.575" style="left:460px;top:744px;background:#25214A"></i><i class="dc" data-d="0.725" style="left:730px;top:744px;background:#FF5A5F"></i><i class="dc" data-d="0.367" style="left:-80px;top:1018px;background:#FF5A5F"></i><i class="dc" data-d="0.517" style="left:190px;top:1018px;background:#705890"></i><i class="dc" data-d="0.667" style="left:460px;top:1018px;background:#FFD234"></i><i class="dc" data-d="0.817" style="left:730px;top:1018px;background:#5CC8FF"></i><i class="dc" data-d="0.458" style="left:-80px;top:1292px;background:#5CC8FF"></i><i class="dc" data-d="0.608" style="left:190px;top:1292px;background:#F59FB5"></i><i class="dc" data-d="0.758" style="left:460px;top:1292px;background:#5EDFB0"></i><i class="dc" data-d="0.908" style="left:730px;top:1292px;background:#25214A"></i><i class="dc" data-d="0.550" style="left:-80px;top:1566px;background:#25214A"></i><i class="dc" data-d="0.700" style="left:190px;top:1566px;background:#FF5A5F"></i><i class="dc" data-d="0.850" style="left:460px;top:1566px;background:#705890"></i><i class="dc" data-d="1.000" style="left:730px;top:1566px;background:#FFD234"></i><i class="tr" data-d="0.15" style="left:120px;top:300px;--r:18deg;border-bottom-color:#FFD234"></i><i class="tr" data-d="0.35" style="left:760px;top:640px;--r:-24deg;border-bottom-color:#5EDFB0"></i><i class="tr" data-d="0.55" style="left:240px;top:1180px;--r:40deg;border-bottom-color:#FF5A5F"></i><i class="tr" data-d="0.75" style="left:700px;top:1540px;--r:-10deg;border-bottom-color:#5CC8FF"></i><svg class="zz" data-d="0.25" style="left:60px;top:820px;--r:-12deg" viewBox="0 0 520 90"><path d="M10 70 L60 20 L110 70 L160 20 L210 70 L260 20 L310 70 L360 20 L410 70 L460 20 L510 70" fill="none" stroke="#25214A" stroke-width="22" stroke-linejoin="miter"/></svg><svg class="zz" data-d="0.50" style="left:520px;top:260px;--r:14deg" viewBox="0 0 520 90"><path d="M10 70 L60 20 L110 70 L160 20 L210 70 L260 20 L310 70 L360 20 L410 70 L460 20 L510 70" fill="none" stroke="#25214A" stroke-width="22" stroke-linejoin="miter"/></svg><svg class="zz" data-d="0.75" style="left:380px;top:1420px;--r:-6deg" viewBox="0 0 520 90"><path d="M10 70 L60 20 L110 70 L160 20 L210 70 L260 20 L310 70 L360 20 L410 70 L460 20 L510 70" fill="none" stroke="#25214A" stroke-width="22" stroke-linejoin="miter"/></svg></div><div class="wipe" data-at="s6:Tahun" data-fx="wipe"><i class="dc" data-d="0.000" style="left:-80px;top:-78px;background:#FFD234"></i><i class="dc" data-d="0.150" style="left:190px;top:-78px;background:#5CC8FF"></i><i class="dc" data-d="0.300" style="left:460px;top:-78px;background:#F59FB5"></i><i class="dc" data-d="0.450" style="left:730px;top:-78px;background:#5EDFB0"></i><i class="dc" data-d="0.092" style="left:-80px;top:196px;background:#5EDFB0"></i><i class="dc" data-d="0.242" style="left:190px;top:196px;background:#25214A"></i><i class="dc" data-d="0.392" style="left:460px;top:196px;background:#FF5A5F"></i><i class="dc" data-d="0.542" style="left:730px;top:196px;background:#705890"></i><i class="dc" data-d="0.183" style="left:-80px;top:470px;background:#705890"></i><i class="dc" data-d="0.333" style="left:190px;top:470px;background:#FFD234"></i><i class="dc" data-d="0.483" style="left:460px;top:470px;background:#5CC8FF"></i><i class="dc" data-d="0.633" style="left:730px;top:470px;background:#F59FB5"></i><i class="dc" data-d="0.275" style="left:-80px;top:744px;background:#F59FB5"></i><i class="dc" data-d="0.425" style="left:190px;top:744px;background:#5EDFB0"></i><i class="dc" data-d="0.575" style="left:460px;top:744px;background:#25214A"></i><i class="dc" data-d="0.725" style="left:730px;top:744px;background:#FF5A5F"></i><i class="dc" data-d="0.367" style="left:-80px;top:1018px;background:#FF5A5F"></i><i class="dc" data-d="0.517" style="left:190px;top:1018px;background:#705890"></i><i class="dc" data-d="0.667" style="left:460px;top:1018px;background:#FFD234"></i><i class="dc" data-d="0.817" style="left:730px;top:1018px;background:#5CC8FF"></i><i class="dc" data-d="0.458" style="left:-80px;top:1292px;background:#5CC8FF"></i><i class="dc" data-d="0.608" style="left:190px;top:1292px;background:#F59FB5"></i><i class="dc" data-d="0.758" style="left:460px;top:1292px;background:#5EDFB0"></i><i class="dc" data-d="0.908" style="left:730px;top:1292px;background:#25214A"></i><i class="dc" data-d="0.550" style="left:-80px;top:1566px;background:#25214A"></i><i class="dc" data-d="0.700" style="left:190px;top:1566px;background:#FF5A5F"></i><i class="dc" data-d="0.850" style="left:460px;top:1566px;background:#705890"></i><i class="dc" data-d="1.000" style="left:730px;top:1566px;background:#FFD234"></i><i class="tr" data-d="0.15" style="left:120px;top:300px;--r:18deg;border-bottom-color:#FFD234"></i><i class="tr" data-d="0.35" style="left:760px;top:640px;--r:-24deg;border-bottom-color:#5EDFB0"></i><i class="tr" data-d="0.55" style="left:240px;top:1180px;--r:40deg;border-bottom-color:#FF5A5F"></i><i class="tr" data-d="0.75" style="left:700px;top:1540px;--r:-10deg;border-bottom-color:#5CC8FF"></i><svg class="zz" data-d="0.25" style="left:60px;top:820px;--r:-12deg" viewBox="0 0 520 90"><path d="M10 70 L60 20 L110 70 L160 20 L210 70 L260 20 L310 70 L360 20 L410 70 L460 20 L510 70" fill="none" stroke="#25214A" stroke-width="22" stroke-linejoin="miter"/></svg><svg class="zz" data-d="0.50" style="left:520px;top:260px;--r:14deg" viewBox="0 0 520 90"><path d="M10 70 L60 20 L110 70 L160 20 L210 70 L260 20 L310 70 L360 20 L410 70 L460 20 L510 70" fill="none" stroke="#25214A" stroke-width="22" stroke-linejoin="miter"/></svg><svg class="zz" data-d="0.75" style="left:380px;top:1420px;--r:-6deg" viewBox="0 0 520 90"><path d="M10 70 L60 20 L110 70 L160 20 L210 70 L260 20 L310 70 L360 20 L410 70 L460 20 L510 70" fill="none" stroke="#25214A" stroke-width="22" stroke-linejoin="miter"/></svg></div><div class="wipe" data-at="s8:Lebih" data-fx="wipe"><i class="dc" data-d="0.000" style="left:-80px;top:-78px;background:#FFD234"></i><i class="dc" data-d="0.150" style="left:190px;top:-78px;background:#5CC8FF"></i><i class="dc" data-d="0.300" style="left:460px;top:-78px;background:#F59FB5"></i><i class="dc" data-d="0.450" style="left:730px;top:-78px;background:#5EDFB0"></i><i class="dc" data-d="0.092" style="left:-80px;top:196px;background:#5EDFB0"></i><i class="dc" data-d="0.242" style="left:190px;top:196px;background:#25214A"></i><i class="dc" data-d="0.392" style="left:460px;top:196px;background:#FF5A5F"></i><i class="dc" data-d="0.542" style="left:730px;top:196px;background:#705890"></i><i class="dc" data-d="0.183" style="left:-80px;top:470px;background:#705890"></i><i class="dc" data-d="0.333" style="left:190px;top:470px;background:#FFD234"></i><i class="dc" data-d="0.483" style="left:460px;top:470px;background:#5CC8FF"></i><i class="dc" data-d="0.633" style="left:730px;top:470px;background:#F59FB5"></i><i class="dc" data-d="0.275" style="left:-80px;top:744px;background:#F59FB5"></i><i class="dc" data-d="0.425" style="left:190px;top:744px;background:#5EDFB0"></i><i class="dc" data-d="0.575" style="left:460px;top:744px;background:#25214A"></i><i class="dc" data-d="0.725" style="left:730px;top:744px;background:#FF5A5F"></i><i class="dc" data-d="0.367" style="left:-80px;top:1018px;background:#FF5A5F"></i><i class="dc" data-d="0.517" style="left:190px;top:1018px;background:#705890"></i><i class="dc" data-d="0.667" style="left:460px;top:1018px;background:#FFD234"></i><i class="dc" data-d="0.817" style="left:730px;top:1018px;background:#5CC8FF"></i><i class="dc" data-d="0.458" style="left:-80px;top:1292px;background:#5CC8FF"></i><i class="dc" data-d="0.608" style="left:190px;top:1292px;background:#F59FB5"></i><i class="dc" data-d="0.758" style="left:460px;top:1292px;background:#5EDFB0"></i><i class="dc" data-d="0.908" style="left:730px;top:1292px;background:#25214A"></i><i class="dc" data-d="0.550" style="left:-80px;top:1566px;background:#25214A"></i><i class="dc" data-d="0.700" style="left:190px;top:1566px;background:#FF5A5F"></i><i class="dc" data-d="0.850" style="left:460px;top:1566px;background:#705890"></i><i class="dc" data-d="1.000" style="left:730px;top:1566px;background:#FFD234"></i><i class="tr" data-d="0.15" style="left:120px;top:300px;--r:18deg;border-bottom-color:#FFD234"></i><i class="tr" data-d="0.35" style="left:760px;top:640px;--r:-24deg;border-bottom-color:#5EDFB0"></i><i class="tr" data-d="0.55" style="left:240px;top:1180px;--r:40deg;border-bottom-color:#FF5A5F"></i><i class="tr" data-d="0.75" style="left:700px;top:1540px;--r:-10deg;border-bottom-color:#5CC8FF"></i><svg class="zz" data-d="0.25" style="left:60px;top:820px;--r:-12deg" viewBox="0 0 520 90"><path d="M10 70 L60 20 L110 70 L160 20 L210 70 L260 20 L310 70 L360 20 L410 70 L460 20 L510 70" fill="none" stroke="#25214A" stroke-width="22" stroke-linejoin="miter"/></svg><svg class="zz" data-d="0.50" style="left:520px;top:260px;--r:14deg" viewBox="0 0 520 90"><path d="M10 70 L60 20 L110 70 L160 20 L210 70 L260 20 L310 70 L360 20 L410 70 L460 20 L510 70" fill="none" stroke="#25214A" stroke-width="22" stroke-linejoin="miter"/></svg><svg class="zz" data-d="0.75" style="left:380px;top:1420px;--r:-6deg" viewBox="0 0 520 90"><path d="M10 70 L60 20 L110 70 L160 20 L210 70 L260 20 L310 70 L360 20 L410 70 L460 20 L510 70" fill="none" stroke="#25214A" stroke-width="22" stroke-linejoin="miter"/></svg></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="kk">FAKTA SEJARAH NEGARA &middot; EP 18</div>
+  <div class="mc h1">Lagu kebangsaan<br><em>tanpa lirik</em></div>
+  <div class="st" data-at="s1:resmi" data-fx="stampc">TIDAK ADA LIRIK RESMI</div>
+</div>
+<div class="p" data-in="s2" data-out="s2:Bersama">
+  <div class="kk co">SPANYOL &middot; ESPA&Ntilde;A</div>
+  <div class="mc h2" data-at="s2:Marcha" data-fx="card" data-d="table">Marcha Real</div>
+  <div class="mc row co" data-at="s2:Mars" data-fx="card"><b>MARS KERAJAAN</b><span>nama lagu kebangsaan Spanyol</span></div>
+</div>
+<div class="p" data-in="s2:Bersama" data-out="s3">
+  <div class="kk">HANYA 3 DI DUNIA</div>
+  <div class="chips"><i class="ch co" data-at="s2:Bersama" data-fx="card" data-d="inline-block">Spanyol</i><i class="ch mi" data-at="s2:Bosnia" data-fx="card" data-d="inline-block">Bosnia &amp; Herzegovina</i><i class="ch sk" data-at="s2:Kosovo" data-fx="card" data-d="inline-block">Kosovo</i></div>
+  <div class="st" data-at="s2:tanpa" data-fx="stampc">TANPA LIRIK RESMI</div>
+</div>
+<div class="p" data-in="s3" data-out="s3:dengan">
+  <div class="kk">SALAH SATU YANG TERTUA</div>
+  <div class="mc mega" data-at="s3:1761" data-fx="card"><b>1761</b><small>pertama<br>tercetak</small></div>
+</div>
+<div class="p" data-in="s3:dengan" data-out="s4">
+  <div class="kk co">NAMA AWAL</div>
+  <div class="mc row " data-at="s3:Granadera" data-fx="card"><b>MARCHA GRANADERA</b><span>mars pasukan granadir</span></div>
+  <div class="mc tag" data-at="s3:Manuel" data-fx="card"><svg viewBox="0 0 64 64"><rect x="4" y="4" width="56" height="56" rx="28" fill="#5EDFB0" stroke="#25214A" stroke-width="4"/><circle cx="25" cy="42" r="6" fill="#25214A"/><rect x="29" y="16" width="4" height="27" fill="#25214A"/><path d="M33 16 q12 4 10 14 q-6-5-10-5z" fill="#25214A"/></svg><div><b>Manuel de Espinosa</b><span>penyusun mars, 1761</span></div></div>
+</div>
+<div class="p" data-in="s4" data-out="s4:Pada">
+  <div class="kk">MARS KEHORMATAN RESMI</div>
+  <div class="mc mega" data-at="s4:1770" data-fx="card"><b>1770</b><small>jadi mars<br>resmi</small></div>
+  <div class="mc tag" data-at="s4:Carlos" data-fx="card"><svg viewBox="0 0 64 64"><rect x="4" y="4" width="56" height="56" rx="28" fill="#FFD234" stroke="#25214A" stroke-width="4"/><path d="M15 43l3-20 8 9 6-13 6 13 8-9 3 20z" fill="#FF5A5F" stroke="#25214A" stroke-width="3" stroke-linejoin="round"/></svg><div><b>Raja Carlos III</b><span>menetapkan mars kehormatan resmi</span></div></div>
+</div>
+<div class="p" data-in="s4:Pada" data-out="s5">
+  <div class="kk co">NAIK STATUS</div>
+  <div class="mc tag" data-at="s4:Isabel" data-fx="card"><svg viewBox="0 0 64 64"><rect x="4" y="4" width="56" height="56" rx="28" fill="#FFD234" stroke="#25214A" stroke-width="4"/><path d="M15 43l3-20 8 9 6-13 6 13 8-9 3 20z" fill="#FF5A5F" stroke="#25214A" stroke-width="3" stroke-linejoin="round"/></svg><div><b>Ratu Isabel II</b><span>di masanya jadi lagu kebangsaan</span></div></div>
+  <div class="mc row mi" data-at="s4:kebangsaan" data-fx="card"><b>LAGU KEBANGSAAN</b><span>Marcha Real resmi jadi lagu negara</span></div>
+</div>
+<div class="p" data-in="s5" data-out="s5:Sejak">
+  <div class="kk">LIRIK PERNAH ADA</div>
+  <div class="mc row co" data-at="s5:resmi" data-fx="card"><b>TAK PERNAH RESMI</b><span>beberapa versi lirik dipakai, tak satu pun disahkan</span></div>
+  <div class="mc row pu" data-at="s5:Franco" data-fx="card"><b>ERA FRANCO</b><span>satu versi dipakai di masa diktator Franco</span></div>
+</div>
+<div class="p" data-in="s5:Sejak" data-out="s6">
+  <div class="kk">SEJAK</div>
+  <div class="mc mega" data-at="s5:1978" data-fx="card"><b>1978</b><small>dimainkan<br>tanpa kata</small></div>
+</div>
+<div class="p" data-in="s6" data-out="s6:Sayembara">
+  <div class="kk">2007 &middot; KOMITE OLIMPIADE SPANYOL</div>
+  <div class="mc h2" data-at="s6:memberi" data-fx="card" data-d="table">Cari lirik resmi</div>
+  <div class="mc row co" data-at="s6:Madrid" data-fx="card"><b>PENCALONAN MADRID</b><span>tuan rumah Olimpiade 2016</span></div>
+</div>
+<div class="p" data-in="s6:Sayembara" data-out="s7">
+  <div class="kk co">SAYEMBARA TERBUKA</div>
+  <div class="mc h2" data-at="s6:ribuan" data-fx="card" data-d="table">Ribuan naskah<br>masuk</div>
+</div>
+<div class="p" data-in="s7" data-out="s7:ditarik">
+  <div class="kk">JURI MEMILIH 1 PEMENANG</div>
+  <div class="mc tag" data-at="s7:pemenang" data-fx="card"><svg viewBox="0 0 64 64"><rect x="4" y="4" width="56" height="56" rx="28" fill="#5CC8FF" stroke="#25214A" stroke-width="4"/><path d="M19 45l4-12 18-18 8 8-18 18z" fill="#fff" stroke="#25214A" stroke-width="3" stroke-linejoin="round"/></svg><div><b>Paulino Cubero</b><span>penulis lirik pemenang</span></div></div>
+  <div class="st" data-at="s7:dikritik" data-fx="stampc">DIKRITIK HABIS</div>
+</div>
+<div class="p" data-in="s7:ditarik" data-out="s8">
+  <div class="kk co">DITARIK</div>
+  <div class="mc mega" data-at="s7:lima" data-fx="card"><b>5</b><small>hari<br>kemudian</small></div>
+  <div class="st" data-at="s7:dibatalkan" data-fx="stampc">DIBATALKAN TANPA BATAS WAKTU</div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="kk">SEJAK 1761</div>
+  <div class="mc mega" data-at="s8:tahun" data-fx="card"><b>260+</b><small>tahun<br>tanpa kata</small></div>
+  <div class="mc q" data-at="s8:Menurut" data-fx="card">Lebih kuat dengan lirik, atau tanpa lirik?</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 18</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":6.18,"s2":6.34,"s2e":18.725,"s3":18.885,"s3e":30.15,"s4":30.31,"s4e":38.858,"s5":39.018,"s5e":48.081,"s6":48.241,"s6e":57.12,"s7":57.28,"s7e":68.262,"s8":68.422,"s8e":77.611,"end":77.611,"dur":80.61,"outro":77.861},AT={"s1:resmi":2.155,"s1:dinyanyikan":5.143,"s2:Spanyol":7.67,"s2:Real":10.079,"s2:Bosnia":12.672,"s2:Kosovo":14.421,"s2:tanpa":17.688,"s3:1761":23.411,"s3:Granadera":25.749,"s3:Manuel":28.989,"s4:1770":30.545,"s4:Carlos":32.263,"s4:Isabel":36.242,"s4:kebangsaan":38.161,"s5:resmi":40.899,"s5:Franco":43.399,"s5:1978":44.35,"s5:dimainkan":47.168,"s6:Madrid":53.065,"s6:Sayembara":55.185,"s6:ribuan":56.238,"s7:pemenang":59.18,"s7:dikritik":61.622,"s7:lima":64.468,"s7:ditarik":63.387,"s7:dibatalkan":66.729,"s8:kata":70.561,"s8:Menurut":71.236,"s2:Ini":6.958,"s3:Lagu":19.083,"s5:Lirik":39.336,"s6:Tahun":48.241,"s8:Lebih":68.441,"s2:Bersama":12.316,"s2:Marcha":9.692,"s2:Mars":10.897,"s3:dengan":24.975,"s4:Pada":35.561,"s5:Sejak":44.041,"s6:memberi":50.928,"s8:tahun":69.787},DUR=80.61,OUT=77.861;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ card:(e,t)=>{const d=e.dataset.d||(e.matches('.row,.tag,.mega')?'flex':'block');gsap.set(e,{display:'none'});tl.set(e,{display:d},t);tl.fromTo(e,{opacity:0,x:-40,y:30,boxShadow:'0px 0px 0 #705890'},{opacity:1,x:0,y:0,boxShadow:'10px 12px 0 #705890',duration:.34,ease:'back.out(2)',immediateRender:false},t);},
+ stampc:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:'inline-block'},t);tl.fromTo(e,{scale:1.8,rotation:-10,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.22,ease:'back.out(2)',immediateRender:false},t);},
+ wipe:(e,t)=>{tl.set(e,{opacity:1},t-.62);e.querySelectorAll('.dc,.tr,.zz').forEach(b=>{const d=+b.dataset.d;const big=b.classList.contains('dc');gsap.set(b,{scale:0});
+  tl.fromTo(b,{scale:0},{scale:1,duration:big?.2:.24,ease:'back.out(1.6)',immediateRender:false},t-.56+d*.36);
+  tl.to(b,{scale:0,duration:.18,ease:'power2.in'},t+.06+d*.36);});tl.set(e,{opacity:0},t+.64);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{opacity:0,x:-60},{opacity:1,x:0,duration:.34,ease:'back.out(1.8)'},a-.05),POUT=(tl,p,b)=>tl.to(p,{opacity:0,x:50,duration:.2,ease:'power2.in'},b-.2);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP18_SPANYOL_LAGU_TANPA_LIRIK")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

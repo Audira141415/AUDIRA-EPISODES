@@ -1,0 +1,224 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "sejarah-islam-EP11",
+  "topic": "Abbas ibn Firnas: Manusia pertama yang mencoba terbang (875 M, Córdoba)",
+  "createdAt": "2026-11-18T08:49:51.133Z",
+  "updatedAt": "2026-11-18T11:23:31.773Z",
+  "currentStage": "draft",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-18T08:50:03.649Z",
+          "text": "Aturan CLAUDE.md, memori style SKETCHFORGE, EP10 NOTES + STYLE_DECISION sudah dibaca"
+        }
+      ],
+      "doneAt": "2026-11-18T08:50:03.648Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-18T08:50:03.682Z",
+          "text": "SOURCE_REGISTER.md lengkap: 8 sumber (EI2, Ibn Hayyan, al-Maqqari, puisi Mu'min ibn Said, White 1961, Lienhard 2004, IAU, Wikipedia)"
+        }
+      ],
+      "doneAt": "2026-11-18T08:50:03.682Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-18T08:52:06.543Z",
+      "notes": [
+        {
+          "at": "2026-11-18T08:50:03.710Z",
+          "text": "User acc style 2026-11-18 (\\\"Setuju semua\\\"); cover topik belum dirender"
+        },
+        {
+          "at": "2026-11-18T08:52:06.543Z",
+          "text": "User acc style+naskah 2026-11-18 (\\\"Setuju semua\\\", \\\"Naskah OK, lanjut\\\"); cover topik dirender bersama scene"
+        }
+      ],
+      "startedAt": "2026-11-18T08:50:03.710Z",
+      "doneAt": "2026-11-18T08:52:06.543Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-18T08:52:06.576Z",
+      "notes": [
+        {
+          "at": "2026-11-18T08:52:06.576Z",
+          "text": "212 kata, 85-94 dtk. User acc 2026-11-18 (\\\"Naskah OK, lanjut\\\")"
+        }
+      ],
+      "doneAt": "2026-11-18T08:52:06.576Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-18T11:23:31.773Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-13T15:33:14.435Z",
+      "startedAt": "2026-11-13T15:33:14.435Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-18T09:08:19.458Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-18T08:52:37.542Z",
+      "startedAt": "2026-11-18T08:52:37.542Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-18T11:23:31.773Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-18T08:58:52.825Z",
+      "startedAt": "2026-11-18T08:58:52.825Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "pending",
+      "approved": false,
+      "approvedAt": null,
+      "notes": []
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-islam-EP11",
+    "style": "SKETCHFORGE",
+    "wordCount": 212,
+    "estimatedDuration": {
+      "wordCount": 212,
+      "minSec": 85,
+      "maxSec": 94
+    }
+  },
+  "handoverLog": [
+    {
+      "at": "2026-11-18T08:52:23.268Z",
+      "doing": "Generate VO Cartesia dari naskah EP11",
+      "command": "audira_generate_voiceover",
+      "files": [
+        "audio/vo.wav",
+        "audio/vo-words.json"
+      ],
+      "next": "Analisis timing VO, buat timeline.json, lalu setup scene 3D SKETCHFORGE",
+      "snapshot": {
+        "episode": "sejarah-islam-EP11",
+        "topic": "Abbas ibn Firnas: Manusia pertama yang mencoba terbang (875 M, Córdoba)",
+        "style": "SKETCHFORGE",
+        "memoryEpisode": "sejarah-islam-EP11",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    }
+  ],
+  "handover": {
+    "at": "2026-11-18T08:52:23.268Z",
+    "doing": "Generate VO Cartesia dari naskah EP11",
+    "command": "audira_generate_voiceover",
+    "files": [
+      "audio/vo.wav",
+      "audio/vo-words.json"
+    ],
+    "next": "Analisis timing VO, buat timeline.json, lalu setup scene 3D SKETCHFORGE",
+    "snapshot": {
+      "episode": "sejarah-islam-EP11",
+      "topic": "Abbas ibn Firnas: Manusia pertama yang mencoba terbang (875 M, Córdoba)",
+      "style": "SKETCHFORGE",
+      "memoryEpisode": "sejarah-islam-EP11",
+      "currentStage": "setup",
+      "gates": {
+        "style": {
+          "approved": true,
+          "status": "done"
+        },
+        "script": {
+          "approved": true,
+          "status": "done"
+        },
+        "draft": {
+          "approved": false,
+          "status": "pending"
+        }
+      },
+      "voPath": null,
+      "draftScores": [],
+      "finals": []
+    }
+  },
+  "syncedAt": "2026-11-18T11:23:31.773Z"
+}

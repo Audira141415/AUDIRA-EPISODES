@@ -1,0 +1,728 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+  "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+  "createdAt": "2026-11-23T14:16:30.143Z",
+  "updatedAt": "2026-11-24T12:16:50.886Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:18:15.079Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:16:30.144Z",
+      "startedAt": "2026-11-23T14:16:30.144Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:18:15.079Z",
+          "text": "sync: riset ada"
+        },
+        {
+          "at": "2026-11-23T14:22:17.334Z",
+          "text": "19 fakta (5 HIGH). 127 gunung api aktif (PVMBG); 'salah satu terbanyak', bukan 'terbanyak'; Krakatau tanpa angka dB; status harian dicek ulang/tidak dipakai."
+        }
+      ],
+      "doneAt": "2026-11-23T14:22:17.334Z",
+      "startedAt": "2026-11-23T14:16:30.080Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:17:13.254Z",
+          "text": "DISASTERSIM 3D Remotion dipilih AI (alt TERRARIUM, SCALEFORGE). Cover topik = frame hook, dibuat setelah adegan 1 jadi."
+        }
+      ],
+      "doneAt": "2026-11-23T15:17:13.254Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:08:13.807Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-24T07:08:00.219Z",
+      "startedAt": "2026-11-24T07:08:00.219Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:16:33.290Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T18:20:31.966Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-23T18:20:27.246Z",
+      "startedAt": "2026-11-23T18:20:27.246Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:16:33.290Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.572Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:54:45.293Z",
+          "text": "sync: look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-24T07:46:50.930Z",
+      "startedAt": "2026-11-24T07:46:50.930Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T09:28:25.337Z",
+      "notes": [
+        {
+          "at": "2026-11-24T09:28:25.337Z",
+          "text": "Acc pengguna 2026-11-24: \"Gas render final\" (juri 3.83, G18c 17.2 LU)"
+        },
+        {
+          "at": "2026-11-24T12:16:50.886Z",
+          "text": "FINAL_EP04_GUNUNG_MELETUS.mp4 disalin ke folder episode; deliver GREEN; juri buta final 3.83 LOLOS (draft/FINAL_SHEET.jpg)"
+        }
+      ],
+      "startedAt": "2026-11-24T09:28:25.337Z",
+      "doneAt": "2026-11-24T12:16:50.886Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T09:42:40.064Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T09:37:19.845Z",
+      "startedAt": "2026-11-24T09:37:19.845Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sains-anak-EP04",
+    "shortTitle": "Gunung Meletus",
+    "style": "DISASTERSIM",
+    "engine": "remotion",
+    "wordCount": 208,
+    "estimatedDuration": {
+      "wordCount": 208,
+      "minSec": 83,
+      "maxSec": 92
+    }
+  },
+  "syncedAt": "2026-11-24T09:42:40.064Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-23T15:17:23.622Z",
+      "doing": "Tahap 4–6: naskah final di audio/vo.txt (208 kata, 6 paragraf = 6 babak). Style DISASTERSIM Remotion 3D sudah diputuskan (style/STYLE_DECISION.md berisi rencana 6 adegan). Proyek Remotion: project/ = salinan F:/AUDIRA-SKILL-MOTION/starter + junction node_modules ke starter; channel.json sudah @AudiraSains. GLB disalin ke project/public/models/polyfork (classroom-globe-16a96e, energy-drink-can-c47bcf, observation-tower-69b692, antenna-mast-0954b0, rice-paddy-tile-dc727e, palm-tree-a307da, banana-plant-978d7f, village-child-bef09e, hanga-roa-fishing-boat-f09534, lava-rock-pile-d56d19, crater-terrain-blob-bd6af6, geyser-cone-2b5033, beach-hut-fc7649, dll). Tidak ada GLB gunung api: gunung dibuat prosedural (LatheGeometry + noise + vertexColors). Kit kode di project/src/kits/disastersim (EarthBlock3D, materials, palette, motion).",
+      "files": [
+        "audio/vo.txt",
+        "style/STYLE_DECISION.md",
+        "project/"
+      ],
+      "next": "1) Tulis docs/SCRIPT.md, docs/ART_DIRECTION.md, docs/STORYBOARD.md (≥6 baris + kolom Audio), docs/ASSET_MANIFEST.md dari vo.txt + STYLE_DECISION. 2) audira_generate_voiceover scriptPath audio/vo.txt → project/public/audio/vo.wav + voiceover.json, lalu npm run vo. 3) Buat project/src/episodes/gunung/ (Episode, World per adegan, rig, Overlay) mengikuti pola EP31 AUDIRA_CARA_KERJA_VIRAL_2026/EP31_CARA_KERJA_INTERNET/project/src/episodes/internet; daftarkan GunungPreview/GunungFinal di Root.tsx. 4) Hapus/benahi handle \"@audira\" di src/scenes/news/PenggantiGibranWapres.tsx (gagal channel gate). 5) SFX, contact sheet, juri, berhenti di gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP04",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:21:27.604Z",
+      "doing": "VO TERKUNCI: project/public/audio/vo.wav 76.63 dtk + vo-words.json (200 kata, naskah audio/vo.txt). Film 80.5 dtk (outro card 77.5–80.5). Adegan (dtk VO): S1 Krakatau 0–8.4 · S2 globe Cincin Api 8.4–20.4 · S3 balok bumi lempeng/air/magma 20.4–36.6 · S4a kaleng soda 36.6–43.9 · S4b Hawaii(45.5) vs Merapi(49.9) 43.9–53.9 · S5a Tambora 53.9–61.6 (salju 58.2) · S5b pos pantau PVMBG 61.6–70.4 (Normal 67.7, Waspada 68.4, Siaga 69.1, Awas 69.8) · S6 outro sawah sunrise 70.4–80.5. Sedang menulis kode di project/src/episodes/gunung/.",
+      "files": [
+        "project/src/episodes/gunung/",
+        "project/public/audio/vo.wav",
+        "audio/vo.txt"
+      ],
+      "next": "Selesaikan src/episodes/gunung (timing.ts, Volcano.tsx, Scenes.tsx, rig.ts, Overlay.tsx, EpisodeGunung.tsx), daftarkan GunungPreview/GunungFinal di Root.tsx, render stills uji, cover-topic, SFX, contact sheet, juri; berhenti di gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP04",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:21:31.962Z",
+      "doing": "Pindah ke sesi baru (batas konteks). Kode episode belum ditulis.",
+      "next": "Tulis project/src/episodes/gunung/* sesuai rencana adegan di handover sebelumnya dan style/STYLE_DECISION.md.",
+      "snapshot": {
+        "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP04",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:25:52.110Z",
+      "doing": "s2: tulis project/src/episodes/gunung/* (timeline, Volcano, Scenes, GunungOverlay, EpisodeGunung) + Root.tsx GunungPreview/GunungFinal. Handle @audira di PenggantiGibranWapres sudah dibenahi.",
+      "files": [
+        "project/src/episodes/gunung/",
+        "project/src/Root.tsx"
+      ],
+      "next": "stills uji per adegan → docs tahap 4 (SCRIPT/ART_DIRECTION/STORYBOARD/ASSET_MANIFEST/SHOTLIST) → npm run sfx → npm run draft -- GunungPreview → THEME_CHECK → skor self + juri → gerbang tahap 9",
+      "snapshot": {
+        "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP04",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:03:11.236Z",
+      "doing": "s2 selesai menulis kode episode: project/src/episodes/gunung/{timeline.ts,Volcano.tsx,GunungEarthBlock.tsx,Scenes.tsx,GunungOverlay.tsx,EpisodeGunung.tsx}; GunungPreview/GunungFinal terdaftar di Root.tsx; handle @audira di PenggantiGibranWapres dihapus (pakai channel.json). Belum ada still/render.",
+      "files": [
+        "project/src/episodes/gunung/",
+        "project/src/Root.tsx",
+        "project/src/scenes/news/PenggantiGibranWapres.tsx"
+      ],
+      "next": "1) npx tsc --noEmit: error 'Cannot find module three' + JSX intrinsic (mesh dll) muncul juga — cek apakah sama di file kit lain (masalah junction node_modules/types, bukan kode); kalau hanya file gunung, perbaiki. 2) npm run stills -- out/test 4s,14s,30s,40s,48s,56s,60s,66s,74s GunungPreview 0.5 → periksa contact sheet: orientasi globe GLB vs busur Cincin Api (GLOBE_R/GLOBE_C/yaw di Scenes.tsx), skala GLB, label, kamera. 3) docs tahap 4 (SCRIPT/ART_DIRECTION/STORYBOARD ≥6 baris+kolom Audio/ASSET_MANIFEST + docs/SHOTLIST.md untuk sfx), style/cover-topic.png dari frame hook. 4) npm run sfx. 5) npm run draft -- GunungPreview. 6) draft/THEME_CHECK.md, record_score self + juri buta subagent (maks 2 putaran). 7) BERHENTI di gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP04",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:11:59.127Z",
+      "doing": "s3: stills uji putaran 2 (out/test2) berjalan setelah perbaikan. Sudah: junction project/node_modules diganti ke F:/AUDIRA-SKILL-MOTION/node_modules (dulu starter/node_modules kosong → error 'three'); tsc bersih untuk gunung. Fix: Volcano.tsx makeLabel lokal (lebar sesuai teks, dulu terpotong jadi plate hitam), AshPlume lebih halus (ico detail 3, tanpa flatShading, warna #9C958E); Subtitle.tsx gap 0.4em (kata menempel); GunungOverlay chapter tag ber-plate + nowrap + nama bab dipendekkan; Scenes.tsx S2: busur Cincin Api memakai transform bola GLB (GLOBE_K=4/0.3022, R=0.0962K, C y=0.1897K, tilt Z -23.5°, yaw luar), label INDONESIA mengikuti titik ll(-2,118), kamera close az -20. Docs ditulis: SCRIPT, ART_DIRECTION, STORYBOARD, ASSET_MANIFEST (Style: DISASTERSIM).",
+      "command": "node scripts/stills.mjs out/test2 1.5s,5s,11s,17.5s,22s,26s,30s,35s,47s,52.8s,56s,64s GunungPreview 0.5",
+      "files": [
+        "project/src/episodes/gunung/Scenes.tsx",
+        "project/src/episodes/gunung/Volcano.tsx",
+        "project/src/episodes/gunung/GunungOverlay.tsx",
+        "project/src/core/hud/Subtitle.tsx",
+        "docs/SCRIPT.md",
+        "docs/ART_DIRECTION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md"
+      ],
+      "next": "1) Periksa project/out/test2/_sheet.jpg: S3 balok bumi (stills putaran 1 terlalu dekat, bidang oranye mendominasi → mundurkan RIG3), posisi label 3D tiap adegan, kolom abu. 2) Tulis docs/SHOTLIST.md (format EP31, baris Style: DISASTERSIM, Offset: 0, tabel # | Waktu | Objek | Aksi | Kamera | Teks | Beat, ikuti SC/BEAT di timeline.ts). 3) style/cover-topic.png dari frame hook (npm run cover atau still 1080×1920 ~5s). 4) npm run sfx. 5) npm run draft -- GunungPreview. 6) draft/THEME_CHECK.md + record_score self + juri buta subagent. 7) STOP di gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP04",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:13:19.459Z",
+      "doing": "s3 selesai di titik aman: stills putaran 2 di project/out/test2/_sheet.jpg (12 frame: 1.5,5,11,17.5,22,26,30,35,47,52.8,56,64 dtk). docs SCRIPT/ART_DIRECTION/STORYBOARD/ASSET_MANIFEST/SHOTLIST ditulis (Style: DISASTERSIM). Junction node_modules sudah benar (F:/AUDIRA-SKILL-MOTION/node_modules).",
+      "files": [
+        "project/out/test2/_sheet.jpg",
+        "project/src/episodes/gunung/Scenes.tsx",
+        "project/src/episodes/gunung/Volcano.tsx",
+        "project/src/episodes/gunung/GunungEarthBlock.tsx",
+        "project/src/episodes/gunung/GunungOverlay.tsx",
+        "docs/SHOTLIST.md"
+      ],
+      "next": "Temuan putaran 2 yang harus diperbaiki: (a) Label3D masih tampil sebagai blok hitam yang menutupi sebagian teks (mis. 'KR■■ELAT SUNDA', '■ ENCER', '■ KENTAL', '■ SUMBAWA', '■S PANTAU') — cek makeLabel lokal di Volcano.tsx (canvas lebar dinamis; mungkin tekstur/sprite center/scale), atau ganti ke <Text> drei / HTML overlay; label juga terpotong tepi layar (INDONESIA di 17.5s, HAWAII/MERAPI di 47–52s) → pindahkan posisi ke dalam frame. (b) Frame 1.5s: blok hitam besar kiri-atas (langit tidak tergambar; cek SkyDome radius vs far/fog atau posisi kamera S1). (c) S3 balok bumi: bidang oranye mantel mendominasi, kamera terlalu dekat → mundurkan RIG3 (dist lebih besar, el lebih tinggi) supaya balok utuh + gunung terbaca; teks 'AUDIRA GEOLAB · LEMPENG &' di dasar terpotong. (d) Cincin Api sudah menempel di bola globe (fix GLOBE_K benar). (e) Kolom abu Tambora sekarang lembut tapi seperti gumpalan krem besar — perbanyak count/kecilkan size, warna lebih abu. (f) Kubah Merapi seperti bola pink → warna lebih gelap/batu. Lalu: render stills lagi → style/cover-topic.png dari frame hook (≈5 dtk, 1080×1920) → npm run sfx → npm run draft -- GunungPreview → draft/THEME_CHECK.md → record_score self + juri buta subagent (maks 2 putaran) → BERHENTI di gerbang tahap 9 (contact sheet, skor juri, durasi 80.5 dtk, G18c).",
+      "snapshot": {
+        "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP04",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:43:16.346Z",
+      "doing": "s4: fix putaran 3 selesai (label/sky ke FX_LAYER, RIG3 mundur, abu Tambora abu-abu, kubah Merapi batu, maxWords 4, PVMBG digabung di vo-words.json). Stills out/test5 audit tanpa cap <4. Sekarang: cover + sfx + draft.",
+      "command": "npm run cover -- GunungFinal --episode=.. --at=5s; npm run sfx; npm run draft -- GunungPreview",
+      "files": [
+        "project/src/episodes/gunung/Scenes.tsx",
+        "project/src/episodes/gunung/Volcano.tsx",
+        "project/src/episodes/gunung/EpisodeGunung.tsx",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "THEME_CHECK.md, record_score self + juri buta, berhenti di gerbang tahap 9",
+      "snapshot": {
+        "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP04",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:54:22.418Z",
+      "doing": "s4 selesai di titik aman. Sudah: label/langit/glow/ring ke FX_LAYER (Volcano.tsx, blok hitam hilang); RIG3 mundur (balok bumi + gunung terbaca); abu Tambora abu-abu count 340 size 0.62; kubah Merapi batu gelap + plume Merapi abu-abu glowBase off; label INDONESIA/HAWAII/POS PANTAU/INDO-AUSTRALIA dipindah; Subtitle maxWords 4 (layout bottom-380 lolos); PVMBG digabung jadi satu kata di public/audio/vo-words.json; style/cover-topic.png (5 dtk) dibuat; npm run sfx selesai (-26 LUFS, 34 sounds); npm run draft lolos (ceilings L5 M5 D5 C5 R4, camera motion 5/5) TETAPI setelah itu anak pose-T di S6 diganti orang-orangan sawah (scarecrow-334079, Scenes.tsx S6) → draft harus dirender ulang. Model karakter Polyfork (farmer-363820) T-pose dan rotasi tulang tidak berefek (AssetModel clone) — jangan pakai karakter berdiri di close-up.",
+      "command": "npm run draft -- GunungPreview",
+      "files": [
+        "project/src/episodes/gunung/Scenes.tsx",
+        "project/src/episodes/gunung/Volcano.tsx",
+        "project/src/episodes/gunung/GunungEarthBlock.tsx",
+        "project/src/episodes/gunung/EpisodeGunung.tsx",
+        "project/public/audio/vo-words.json",
+        "style/cover-topic.png",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "1) cek out/test6/crop.png (orang-orangan sawah di 70.8 dtk) 2) npm run draft -- GunungPreview (ulang) → lihat draft/DRAFT_SHEET.jpg 3) tulis draft/THEME_CHECK.md (tiap frame: subjek layar = kata VO, semua ya) 4) record_score self stage draft (ceilings+camera dari draft/DRAFT_REPORT.json) 5) juri buta subagent (qa/jury.md + jury_input.json, maks 2 putaran) record_score judge jury 6) BERHENTI di gerbang tahap 9: tampilkan contact sheet, skor juri, durasi 80.5 dtk, G18c (VO ≥12 LU di atas SFX). Jangan render final tanpa acc.",
+      "snapshot": {
+        "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP04",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:54:56.915Z",
+      "doing": "s5: still S6 orang-orangan sawah OK; render ulang draf",
+      "command": "npm run draft -- GunungPreview (di project/)",
+      "next": "THEME_CHECK.md, record_score self, juri buta, G18c, gerbang tahap 9",
+      "snapshot": {
+        "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP04",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:57:30.205Z",
+      "doing": "s5: draf dirender ulang (scarecrow S6), THEME_CHECK 8 baris ya, self 4.17, juri buta 3.83 LOLOS (comp 3, read 3: label balok subduksi F3/F4 kecil+terpotong kiri), G18c VO -15.8 vs SFX ducked -33.0 = 17.2 LU lolos. Menunggu acc pengguna di gerbang tahap 9.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Setelah acc: update stage final approved true, lalu npm run render:final dengan --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav (G18), QA, metadata, delivery. Opsi pengguna: poles label F3/F4 dulu (render draf ulang + juri putaran 2).",
+      "snapshot": {
+        "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP04",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:28:37.773Z",
+      "doing": "s5: render final GunungFinal (acc pengguna tercatat)",
+      "command": "npm run render:final -- --comp=GunungFinal --out=out/FINAL_EP04_GUNUNG_MELETUS.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --gl=vulkan --encoder=nvenc --title=\"Kenapa Gunung Meletus?\" --slug=kenapa-gunung-meletus --ep=EP04 (resume aman: segmen disimpan)",
+      "files": [
+        "project/out/FINAL_EP04_GUNUNG_MELETUS.mp4"
+      ],
+      "next": "QA: ffprobe metadata, LUFS -14 / TP < -1, cek frame MP4, record_score final, npm run deliver, tahap 10",
+      "snapshot": {
+        "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP04",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:31:50.498Z",
+      "doing": "s5: render final ke-2. Render pertama ditolak G13 (deadPct 6%: settle() akhir RIG4b 52.5-53.9 dtk). Diganti fr() terus bergerak, draft ulang: deadPct 0, kamera 5/5.",
+      "command": "npm run render:final -- --comp=GunungFinal --out=out/FINAL_EP04_GUNUNG_MELETUS.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --gl=vulkan --encoder=nvenc --title=\"Kenapa Gunung Meletus?\" --slug=kenapa-gunung-meletus --ep=EP04",
+      "files": [
+        "project/src/episodes/gunung/Scenes.tsx",
+        "project/out/FINAL_EP04_GUNUNG_MELETUS.mp4"
+      ],
+      "next": "QA final: ffprobe metadata, LUFS -14 / TP < -1, cek frame MP4, record_score final, npm run deliver, tahap 10",
+      "snapshot": {
+        "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP04",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:37:46.902Z",
+      "doing": "s5 selesai di titik aman. FINAL jadi: project/out/FINAL_EP04_GUNUNG_MELETUS.mp4 (80.5 dtk, 1080x1920@60, -13.7 LUFS, TP -2, metadata + signature VALID, deliver GREEN, 1 YELLOW template tak dipakai). Fix G13: RIG4b settle -> fr() (deadPct 0). Skor final self 3.83, juri final 3.50 PERLU POLES (lighting/depth/comp/read 3; terlemah: adegan Hawaii vs Merapi gelap + tabel silika kecil; label TAMBORA tertutup caption; HUD menumpuk di globe). SOCIAL_CAPTIONS.md ditulis + validator ok (jadwal Kamis 26 Nov 19.00 WIB). Menunggu keputusan pengguna: kirim final apa adanya, atau poles adegan S4b/S5a/S2 lalu render final ulang.",
+      "files": [
+        "project/src/episodes/gunung/Scenes.tsx",
+        "SOCIAL_CAPTIONS.md",
+        "project/out/FINAL_EP04_GUNUNG_MELETUS.mp4"
+      ],
+      "next": "Bila kirim apa adanya: SUBTITLES.srt (audira_generate_srt), salin FINAL ke folder episode, NOTES.md, append_lesson worked, update stage final done + delivery, hapus file perantara, tanya jam upload lalu 3 scheduled task review (+24j/+72j/+7h). Bila poles: perbaiki S4b (cahaya kawah, foreground, tabel silika lebih besar/kontras), label TAMBORA di atas caption, rapikan HUD globe; npm run draft (tambah --frames per adegan), juri lagi, render:final ulang.",
+      "snapshot": {
+        "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP04",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:47:44.358Z",
+      "doing": "Pengguna memilih \"Poles lalu render ulang\" (2026-11-24). Final lama project/out/FINAL_EP04_GUNUNG_MELETUS.mp4 juri 3.50 PERLU POLES.",
+      "files": [
+        "project/src/episodes/gunung/Scenes.tsx",
+        "project/src/episodes/gunung/Volcano.tsx",
+        "project/src/episodes/gunung/GunungOverlay.tsx"
+      ],
+      "next": "Poles: S4b Hawaii vs Merapi (43.9-53.9 dtk: kawah lebih terang, foreground, tabel silika lebih besar/kontras), label TAMBORA·SUMBAWA di S5a jangan tertutup caption (y 1300), rapikan HUD menumpuk di globe S2, label balok subduksi S3 tidak terpotong tepi kiri. npm run draft -- GunungPreview --frames=<1 per adegan>, THEME_CHECK, skor self+juri buta (draf putaran 2: auto-accept ≥3.5), lalu render:final ulang (acc pengguna sudah ada, perintah sama), QA, juri final, tahap 10 (SRT, NOTES, bersih-bersih, jadwal review).",
+      "snapshot": {
+        "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP04",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:51:07.285Z",
+      "doing": "s6: poles selesai (S2 kamera+kartu sm, S3 label h0.5/plakat AUDIRA GEOLAB x1.0, S4b sky+light+foreground+tabel silika besar, S5a label y5.8). Render draf contact sheet.",
+      "command": "npm run draft -- GunungPreview --frames=4.2s,15s,27s,40.5s,50.5s,56s,60s,69.3s,73s",
+      "files": [
+        "project/src/episodes/gunung/Scenes.tsx",
+        "project/src/episodes/gunung/GunungOverlay.tsx",
+        "project/src/episodes/gunung/GunungEarthBlock.tsx"
+      ],
+      "next": "THEME_CHECK, skor self+juri (putaran 2, ≥3.5 auto-accept), render:final background, deliver, juri final, tahap 10.",
+      "snapshot": {
+        "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP04",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T10:05:41.459Z",
+      "doing": "s6: draf putaran 2 juri 3.17 (terbaik 3.83 → diterima). Render final ulang berjalan di background.",
+      "command": "npm run render:final -- --comp=GunungFinal --out=out/FINAL_EP04_GUNUNG_MELETUS.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --gl=vulkan --encoder=nvenc --title=\"Kenapa Gunung Meletus?\" --slug=kenapa-gunung-meletus --ep=EP04",
+      "files": [
+        "project/out/FINAL_EP04_GUNUNG_MELETUS.mp4"
+      ],
+      "next": "deliver QA, juri final, append_lesson failed (signature vs tag bab atas bertabrakan, kerucut plastik), NOTES 'diterima 3.83 setelah 2 putaran', SRT, salin FINAL, hapus perantara, caption + jadwal review.",
+      "snapshot": {
+        "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP04",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T12:14:43.595Z",
+      "doing": "s6 selesai: poles S2/S3/S4b/S5a, draf putaran 2 juri 3.17 (terbaik 3.83 → diterima setelah 2 putaran), render final ulang SELESAI: project/out/FINAL_EP04_GUNUNG_MELETUS.mp4 (80.5 dtk, -13.7 LUFS, TP -2 dBFS, G18c gap 17.2 LU, metadata + signature Ed25519 VALID). SUBTITLES.srt dibuat (28 cue). append_lesson failed+fix DISASTERSIM sudah dicatat.",
+      "files": [
+        "project/out/FINAL_EP04_GUNUNG_MELETUS.mp4",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "SUBTITLES.srt",
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md"
+      ],
+      "next": "Sesi C lanjutan: (1) di project/: npm run deliver -- out/FINAL_EP04_GUNUNG_MELETUS.mp4; (2) contact sheet frame dari MP4 final, record_score final self lalu juri buta subagent (F:/AUDIRA-SKILL-MOTION/qa/jury.md, cover references/quality-bar/disastersim.png); (3) salin FINAL ke folder episode; isi NOTES.md (worked/failed/fix, 'diterima 3.83 setelah 2 putaran', offset VO, parameter render, juri final); append_lesson worked; update stage final+delivery done; (4) hapus perantara: draft/CHECK_42-60s.mp4, draft/_stills, project/out/test*, project/out/seg; (5) tampilkan caption SOCIAL_CAPTIONS.md lengkap di chat (sudah lolos validator), tanya jam upload (default Kamis 26 Nov 2026 19.00 WIB), buat 3 scheduled task review-kenapa-gunung-meletus-24h/-72h/-7d (fireAt +07:00), catat taskId di NOTES.md.",
+      "snapshot": {
+        "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP04",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    }
+  ],
+  "session": 7,
+  "handover": {
+    "at": "2026-11-24T12:14:43.595Z",
+    "doing": "s6 selesai: poles S2/S3/S4b/S5a, draf putaran 2 juri 3.17 (terbaik 3.83 → diterima setelah 2 putaran), render final ulang SELESAI: project/out/FINAL_EP04_GUNUNG_MELETUS.mp4 (80.5 dtk, -13.7 LUFS, TP -2 dBFS, G18c gap 17.2 LU, metadata + signature Ed25519 VALID). SUBTITLES.srt dibuat (28 cue). append_lesson failed+fix DISASTERSIM sudah dicatat.",
+    "files": [
+      "project/out/FINAL_EP04_GUNUNG_MELETUS.mp4",
+      "draft/DRAFT_SHEET.jpg",
+      "draft/THEME_CHECK.md",
+      "SUBTITLES.srt",
+      "SOCIAL_CAPTIONS.md",
+      "NOTES.md"
+    ],
+    "next": "Sesi C lanjutan: (1) di project/: npm run deliver -- out/FINAL_EP04_GUNUNG_MELETUS.mp4; (2) contact sheet frame dari MP4 final, record_score final self lalu juri buta subagent (F:/AUDIRA-SKILL-MOTION/qa/jury.md, cover references/quality-bar/disastersim.png); (3) salin FINAL ke folder episode; isi NOTES.md (worked/failed/fix, 'diterima 3.83 setelah 2 putaran', offset VO, parameter render, juri final); append_lesson worked; update stage final+delivery done; (4) hapus perantara: draft/CHECK_42-60s.mp4, draft/_stills, project/out/test*, project/out/seg; (5) tampilkan caption SOCIAL_CAPTIONS.md lengkap di chat (sudah lolos validator), tanya jam upload (default Kamis 26 Nov 2026 19.00 WIB), buat 3 scheduled task review-kenapa-gunung-meletus-24h/-72h/-7d (fireAt +07:00), catat taskId di NOTES.md.",
+    "snapshot": {
+      "episode": "EP04_KENAPA_GUNUNG_MELETUS",
+      "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+      "style": "DISASTERSIM",
+      "memoryEpisode": "sains-anak-EP04",
+      "currentStage": "final",
+      "gates": {
+        "final": {
+          "approved": true,
+          "status": "in_progress"
+        }
+      },
+      "voPath": null,
+      "draftScores": [],
+      "finals": [],
+      "draftRounds": 0
+    }
+  },
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP04 Gunung Meletus · s2",
+      "at": "2026-11-23T18:21:31.962Z"
+    },
+    {
+      "no": 3,
+      "title": "EP04 Gunung Meletus · s3",
+      "at": "2026-11-24T07:03:11.236Z"
+    },
+    {
+      "no": 4,
+      "title": "EP04 Gunung Meletus · s4",
+      "at": "2026-11-24T07:13:19.459Z"
+    },
+    {
+      "no": 5,
+      "title": "EP04 Gunung Meletus · s5",
+      "at": "2026-11-24T07:54:22.418Z"
+    },
+    {
+      "no": 6,
+      "title": "EP04 Gunung Meletus · s6",
+      "at": "2026-11-24T09:47:44.358Z"
+    },
+    {
+      "no": 7,
+      "title": "EP04 Gunung Meletus · s7",
+      "at": "2026-11-24T12:14:43.594Z"
+    }
+  ]
+}

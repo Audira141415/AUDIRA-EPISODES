@@ -1,0 +1,496 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP07_PHELPS_MENANG_0_KOMA_01_DETIK",
+  "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+  "createdAt": "2026-11-23T14:14:13.758Z",
+  "updatedAt": "2026-11-24T07:56:06.371Z",
+  "currentStage": "setup",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:38.393Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:14:13.758Z",
+      "startedAt": "2026-11-23T14:14:13.758Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:38.393Z",
+          "text": "sync: riset ada"
+        },
+        {
+          "at": "2026-11-23T14:25:00.729Z",
+          "text": "24 fakta, 5 HIGH. Netral soal siapa menyentuh duluan; touchpad 1,5–2,5 kg; 2 cm = hitungan sendiri."
+        }
+      ],
+      "doneAt": "2026-11-23T14:25:00.729Z",
+      "startedAt": "2026-11-22T06:26:14.091Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:16:00.409Z",
+          "text": "TOYDIORAMA 3D dipilih AI (alt BROADCASTFORGE, CINESTORY). Cover topik menyusul dari komposisi Ep07Cover. Naskah docs/SCRIPT.md ±211 kata sudah ditulis."
+        },
+        {
+          "at": "2026-11-23T15:16:33.148Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "startedAt": "2026-11-23T15:16:00.409Z",
+      "doneAt": "2026-11-23T15:15:31.883Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:16:33.148Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-23T15:15:51.752Z",
+      "startedAt": "2026-11-23T15:15:51.752Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T18:20:15.791Z",
+          "text": "sync: VO sudah dibuat"
+        },
+        {
+          "at": "2026-11-23T18:20:31.745Z",
+          "text": "VO dikunci: klip per bagian digabung → vo_tighten (ucapan 87,53 dtk, film 91,53 dtk, -16 LUFS). studio/src/scenes/ep07/timeline.json + studio/public/audio/ep07/vo.wav"
+        }
+      ],
+      "doneAt": "2026-11-23T18:20:31.745Z",
+      "startedAt": "2026-11-23T18:20:15.765Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:25:31.266Z",
+          "text": "s3: tsc ok, stills diperbaiki, cover-topic.png, docs ditulis, sfx.wav -20 LUFS (studio/public/audio/ep07/sfx.wav)"
+        }
+      ],
+      "doneAt": "2026-11-24T07:25:31.266Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:26:09.569Z",
+          "text": "Juri r1 LOLOS 3.83 (L4 M4 D4 C3 Mo5 R3). THEME_CHECK 8/8 ya. G18c: VO -16 vs SFX efektif -30 LUFS = 14 LU. Menunggu acc render final."
+        }
+      ],
+      "doneAt": "2026-11-24T07:26:09.569Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T07:34:55.043Z",
+      "notes": [
+        {
+          "at": "2026-11-24T07:34:55.043Z",
+          "text": "Acc pengguna 2026-11-24: \"Gas render final\" (s3, setelah laporan gerbang: juri 3,83, 91,5 dtk, G18c 14 LU)"
+        },
+        {
+          "at": "2026-11-24T07:56:06.006Z",
+          "text": "FINAL_EP07.mp4 1080x1920@60, 91.5 s, -13.6 LUFS TP -2.0, signature VALID, metadata ok, qa-video PASS, record_score final self 4.0 (s4)"
+        }
+      ],
+      "startedAt": "2026-11-24T07:34:55.043Z",
+      "doneAt": "2026-11-24T07:56:06.006Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:54:45.137Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-24T07:56:06.196Z",
+          "text": "SOCIAL_CAPTIONS.md validator ok (upload Minggu 29 Nov 2026 19.00 WIB), NOTES.md, 3 lesson, review tasks review-phelps-0-01-24h/72h/7d (s4)"
+        }
+      ],
+      "doneAt": "2026-11-24T07:56:06.196Z",
+      "startedAt": "2026-11-24T07:51:13.250Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "fakta-olahraga-EP07",
+    "shortTitle": "Phelps 0,01",
+    "style": "TOYDIORAMA",
+    "engine": "remotion",
+    "wordCount": 211,
+    "estimatedDuration": {
+      "wordCount": 211,
+      "minSec": 84,
+      "maxSec": 94
+    }
+  },
+  "syncedAt": "2026-11-24T07:54:45.137Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-23T15:15:32.092Z",
+      "doing": "Tahap 3: style TOYDIORAMA 3D dipilih (STYLE_DECISION.md). Preflight OK. GLB disalin ke studio/public/glb (match-scoreboard-58f51e, trophy-cabinet-e963ac, eye-in-the-sky-23fe89, lifebuoy-on-a-post-57421b, class-tv-trolley-2f9fa2). Pola kode = studio/src/scenes/ep04 (Film.tsx, Cover.tsx, Model.tsx).",
+      "files": [
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Buat studio/src/scenes/ep07/{PoolSet,Cover,Film,Model,index}.tsx (6 adegan: S1 dinding finis 0,01; S2 Water Cube + rak 6 emas + slot Spitz 1972; S3 balapan overhead posisi 7 24,04; S4 touchpad 1,5–2,5 kg + papan skor 50,58/50,59 + kamera atas 1/10.000; S5 8 emas/7 RD/17 renang/9 hari/36 tahun; S6 penggaris ≈2 cm). Daftarkan Ep07Cover di Root.tsx (Edit kecil, sesi EP06 juga mengedit Root). Lalu naskah docs/SCRIPT.md ±200 kata (Cavic ditulis 'Cavic' di TTS), VO, timeline.",
+      "snapshot": {
+        "episode": "EP07_PHELPS_MENANG_0_KOMA_01_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": null,
+        "memoryEpisode": "fakta-olahraga-EP07",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T15:16:29.291Z",
+      "doing": "Tahap 6 VO: docs/SCRIPT.md + docs/script-lines.json selesai (6 id: hook, konteks, pengembangan, penjelasan, payoff, outro). Menjalankan TTS Cartesia via _tools/vo.py.",
+      "command": "cd F:/AUDIRA-EPISODES && python AUDIRA_FAKTA_OLAHRAGA_2026/_tools/vo.py EP07_PHELPS_MENANG_0_KOMA_01_DETIK tts ; lalu ... build",
+      "files": [
+        "docs/SCRIPT.md",
+        "docs/script-lines.json"
+      ],
+      "next": "Cek durasi (80–92 dtk), salin timeline.json ke studio/src/scenes/ep07/timeline.json dan vo.wav ke studio/public/audio/ep07/vo.wav. Lalu kode ep07 (lihat handover sebelumnya), cover, STORYBOARD/ART_DIRECTION/ASSET_MANIFEST.",
+      "snapshot": {
+        "episode": "EP07_PHELPS_MENANG_0_KOMA_01_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP07",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T15:17:22.752Z",
+      "doing": "VO Cartesia mentah selesai per bagian via MCP audira_generate_voiceover (karena F:/AUDIRA-EPISODES/.env tidak ada, _tools/vo.py tts gagal): audio/work/clips/{hook,konteks,pengembangan,penjelasan,payoff,outro}.wav + .words.json. Durasi mentah 11.66+20.2+18.44+25.73+12.82+8.31 = 97,2 dtk (terlalu panjang, ada jeda/padding).",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/SCRIPT.md",
+        "docs/script-lines.json",
+        "audio/work/clips/"
+      ],
+      "next": "1) Rapatkan jeda tiap klip (pola _tools/vo.py: trim hening, jeda antar-bagian 0,45 dtk, lead 0,1; atempo 1.05–1.08 bila perlu) → target film 84–92 dtk; normalisasi -16 LUFS → audio/vo.wav + studio/public/audio/ep07/vo.wav. 2) timeline.json format EP04 (lead, voEnd, total=voEnd+4, sections, clips[{id,section,text,start,end,words[{w,s,e}]}]) dengan kata tampil (Cavic→Čavić, angka tampil dari docs/script-lines.json) → studio/src/scenes/ep07/timeline.json + audio/timeline.json. 3) Kode studio/src/scenes/ep07/ (salin pola ep04: Film.tsx, Cover.tsx, Model.tsx) 6 adegan sesuai docs/SCRIPT.md; swimmer = ToyPerson pose=\"swimFreestyle\" + poseOverride kupu-kupu; daftarkan Ep07Cover/Ep07Preview/Ep07Final + SLUG Ep07:\"olahraga-EP07\" di studio/src/Root.tsx (Edit kecil; sesi EP06/EP08–10 juga mengedit Root). 4) cover-topic.png, docs STORYBOARD/ART_DIRECTION/ASSET_MANIFEST, SFX, contact sheet + juri + draft/THEME_CHECK.md, berhenti di gerbang render final.",
+      "snapshot": {
+        "episode": "EP07_PHELPS_MENANG_0_KOMA_01_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:27:08.870Z",
+      "doing": "Kode ep07 baru ditulis, BELUM typecheck/render. VO terkunci (film 91,53 dtk; studio/src/scenes/ep07/timeline.json + studio/public/audio/ep07/vo.wav + audio/vo.wav + audio/timeline.json). Root.tsx sudah berisi Ep07Cover/Ep07Preview/Ep07Final + SLUG Ep07.",
+      "files": [
+        "studio/src/scenes/ep07/Film.tsx",
+        "studio/src/scenes/ep07/PoolSet.tsx",
+        "studio/src/scenes/ep07/Cover.tsx",
+        "studio/src/scenes/ep07/Model.tsx",
+        "studio/src/scenes/ep07/index.ts",
+        "studio/src/scenes/ep07/timeline.json",
+        "studio/src/Root.tsx"
+      ],
+      "next": "1) cd studio; npx tsc --noEmit (perbaiki error di scenes/ep07 saja). 2) Still per adegan Ep07Preview di t=2.6,12,16,21,31,41,48,54,62,72,78,84 (npm run stills -- <outdir> <times> Ep07Preview) → periksa orientasi/skala GLB (trophy-cabinet, match-scoreboard, eye-in-the-sky, class-tv-trolley, grandstand, hoarding, lifebuoy), posisi perenang/REACH di dinding, kamera tracking S3 (raceCam) dan slow-mo, PadMacro (ToyHand + Touchpad ×4 + Gauge), RulerShot. 3) cover-topic.png dari komposisi Ep07Cover → style/cover-topic.png. 4) Tulis ulang docs/STORYBOARD.md, docs/ART_DIRECTION.md, docs/ASSET_MANIFEST.md (masih template; wajib baris \"Style: TOYDIORAMA\"), docs/SHOTLIST.md utk npm run sfx. 5) npm run sfx, contact sheet draf 540x960 + npm run audit:visual + audit:camera, draft/THEME_CHECK.md, juri blind record_score (judge jury). 6) Berhenti di gerbang tahap 9: tampilkan contact sheet, skor, durasi 91,5 dtk, cek G18c; minta acc. Render pakai --concurrency=2 di background.",
+      "snapshot": {
+        "episode": "EP07_PHELPS_MENANG_0_KOMA_01_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP07_PHELPS_MENANG_0_KOMA_01_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:20:44.133Z",
+      "doing": "s3: tsc lolos; still diperiksa & diperbaiki (papan kayu menutup kolam -> dipotong; pelampung tali lintasan diperkecil; PadMacro digelapkan; panel 50,58/50,59 di scoreboard GLB; eye-in-the-sky dipindah ke tiang + kamera s4c dari samping). Sekarang: cover-topic.png",
+      "files": [
+        "studio/src/scenes/ep07/Film.tsx",
+        "studio/src/scenes/ep07/PoolSet.tsx"
+      ],
+      "next": "Docs STORYBOARD/ART_DIRECTION/ASSET_MANIFEST/SHOTLIST (Style: TOYDIORAMA) -> npm run sfx -- --shotlist=../EP07_PHELPS_MENANG_0_KOMA_01_DETIK/docs/SHOTLIST.md --out=public/audio/ep07/sfx.wav -> contact sheet draft/contact-sheet.jpg + audit:visual + audit:camera -> THEME_CHECK -> juri -> gerbang tahap 9",
+      "snapshot": {
+        "episode": "EP07_PHELPS_MENANG_0_KOMA_01_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP07_PHELPS_MENANG_0_KOMA_01_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:23:32.228Z",
+      "doing": "s3 selesai: tsc lolos; still diperbaiki (kolam tertutup papan walnut -> dipotong di PoolSet.tsx; pelampung r0.02; PadMacro dinding #4f93a8 + spot 20; panel 50,58/50,59 di scoreboard; eye-in-the-sky ke tiang x2.4 + kamera s4c dari samping). style/cover-topic.png dirender. docs ART_DIRECTION/STORYBOARD/ASSET_MANIFEST/SHOTLIST ditulis (Style: TOYDIORAMA). SFX: studio/public/audio/ep07/sfx.wav (-20 LUFS, 42 suara).",
+      "files": [
+        "studio/src/scenes/ep07/Film.tsx",
+        "studio/src/scenes/ep07/PoolSet.tsx",
+        "studio/public/audio/ep07/sfx.wav",
+        "EP07_PHELPS_MENANG_0_KOMA_01_DETIK/docs/SHOTLIST.md"
+      ],
+      "next": "1) Contact sheet draf 8 frame 540x960: cd studio; node scripts/stills.mjs ../EP07_PHELPS_MENANG_0_KOMA_01_DETIK/draft/sheet 2.6s,16s,36s,41s,48s,54s,62s,72s,78s,84s Ep07Preview -> salin _sheet.jpg ke draft/contact-sheet.jpg. 2) npm run audit:visual (+ audit:camera pada klip 15 dtk 540x960 bila perlu). 3) draft/THEME_CHECK.md (tiap frame subjek = kata VO, semua ya). 4) record_score self lalu juri blind subagent (judge jury, stage draft, style TOYDIORAMA, episode fakta-olahraga-EP07). 5) Gerbang tahap 9: tampilkan contact sheet, skor, durasi 91,5 dtk, cek G18c (VO >=12 LU di atas SFX; stem SFX -20 LUFS -> volume=-10dB). Jangan render final tanpa acc.",
+      "snapshot": {
+        "episode": "EP07_PHELPS_MENANG_0_KOMA_01_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP07_PHELPS_MENANG_0_KOMA_01_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:26:09.784Z",
+      "doing": "Berhenti di gerbang tahap 9: draf juri LOLOS 3.83, contact sheet draft/contact-sheet.jpg, menunggu acc pengguna",
+      "next": "Setelah acc: update stage final approved true; (opsional, murah) perbaiki chip f4/f6 opaque + kartu samping terpotong; audira_qa_scene Ep07Preview; render:final Ep07Final --vo=public/audio/ep07/vo.wav --sfx=public/audio/ep07/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc di background; QA -14 LUFS TP<-1; metadata; delivery tahap 10.",
+      "snapshot": {
+        "episode": "EP07_PHELPS_MENANG_0_KOMA_01_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP07_PHELPS_MENANG_0_KOMA_01_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:35:01.489Z",
+      "doing": "Acc render final diterima dari pengguna (\"Gas render final\", 2026-11-24, s3). Stage final approved true. Render belum dimulai.",
+      "files": [
+        "studio/src/scenes/ep07/Film.tsx",
+        "studio/src/scenes/ep07/PoolSet.tsx",
+        "EP07_PHELPS_MENANG_0_KOMA_01_DETIK/draft/contact-sheet.jpg"
+      ],
+      "next": "1) Poles kecil dari juri (opsional, murah, sebelum render): chip HUD opaque gelap di touchpad (t≈45-50) dan 1/10.000 + filmstrip chip lebih besar (t≈59-62); kartu samping SPITZ/PECAH di MedalShelf jangan terpotong tepi kanan. 2) audira_qa_scene project=studio comp=Ep07Preview cuts=9.52,27.52,44.44,51.99,56.96,67.13,79.47. 3) cd studio; npm run render:final -- Ep07Final --vo=public/audio/ep07/vo.wav --sfx=public/audio/ep07/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc (background). 4) QA -14 LUFS TP<-1, frame check, metadata ffmpeg, record_score final. 5) Tahap 10 delivery.",
+      "snapshot": {
+        "episode": "EP07_PHELPS_MENANG_0_KOMA_01_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP07_PHELPS_MENANG_0_KOMA_01_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:50:25.197Z",
+      "doing": "s4: poles juri selesai (panel gelap Timer kg + 1/10.000, filmstrip lebih besar, tag MedalShelf x=0.55) + fix QA (blend pose wave→cheer, tangan touchpad tanpa snap, figur Serbia pop-in ease). qa-video PASS (draft/qa-video.json; qa-scene tanpa probe karena EP07 tak punya <Solid>). Render final berjalan.",
+      "command": "cd studio; npm run render:final -- --comp=Ep07Final --out=out/ep07/FINAL_EP07.mp4 --vo=public/audio/ep07/vo.wav --sfx=public/audio/ep07/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --slug=phelps-menang-0-koma-01-detik --ep=EP07",
+      "files": [
+        "studio/src/scenes/ep07/Film.tsx",
+        "studio/src/scenes/ep07/PoolSet.tsx",
+        "studio/out/ep07/FINAL_EP07.mp4"
+      ],
+      "next": "QA final (-14 LUFS, TP<-1, frame check), metadata ffmpeg -> EP07 folder FINAL_EP07.mp4, record_score final, lalu tahap 10 delivery.",
+      "snapshot": {
+        "episode": "EP07_PHELPS_MENANG_0_KOMA_01_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP07_PHELPS_MENANG_0_KOMA_01_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:51:30.590Z",
+      "doing": "s4: render final berjalan di background (log: scratchpad render.log). SOCIAL_CAPTIONS.md sudah ditulis dan lolos validator (jadwal Minggu 29 Nov 2026 19.00 WIB). qa-video PASS.",
+      "command": "cd studio; npm run render:final -- --comp=Ep07Final --out=out/ep07/FINAL_EP07.mp4 --vo=public/audio/ep07/vo.wav --sfx=public/audio/ep07/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --slug=phelps-menang-0-koma-01-detik --ep=EP07",
+      "files": [
+        "SOCIAL_CAPTIONS.md",
+        "studio/out/ep07/FINAL_EP07.mp4",
+        "NOTES.md"
+      ],
+      "next": "Bila studio/out/ep07/FINAL_EP07.mp4 ada: ukur ebur128 (-14 LUFS, TP<-1), cek 3 frame, ffmpeg metadata kepemilikan -> EP07/FINAL_EP07.mp4, record_score final (TOYDIORAMA, fakta-olahraga-EP07), isi NOTES.md, append_lesson (fix: blend pose via poseOverride; tag MedalShelf x=0.55; Timer panel gelap), update stage final+delivery done, 3 scheduled task review-phelps-0-01-24h/72h/7d (upload Minggu 29 Nov 2026 19.00 WIB), tampilkan caption di chat.",
+      "snapshot": {
+        "episode": "EP07_PHELPS_MENANG_0_KOMA_01_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP07_PHELPS_MENANG_0_KOMA_01_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:51:30.590Z",
+      "doing": "s4: render final berjalan di background (log: scratchpad render.log). SOCIAL_CAPTIONS.md sudah ditulis dan lolos validator (jadwal Minggu 29 Nov 2026 19.00 WIB). qa-video PASS.",
+      "command": "cd studio; npm run render:final -- --comp=Ep07Final --out=out/ep07/FINAL_EP07.mp4 --vo=public/audio/ep07/vo.wav --sfx=public/audio/ep07/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --slug=phelps-menang-0-koma-01-detik --ep=EP07",
+      "files": [
+        "SOCIAL_CAPTIONS.md",
+        "studio/out/ep07/FINAL_EP07.mp4",
+        "NOTES.md"
+      ],
+      "next": "Bila studio/out/ep07/FINAL_EP07.mp4 ada: ukur ebur128 (-14 LUFS, TP<-1), cek 3 frame, ffmpeg metadata kepemilikan -> EP07/FINAL_EP07.mp4, record_score final (TOYDIORAMA, fakta-olahraga-EP07), isi NOTES.md, append_lesson (fix: blend pose via poseOverride; tag MedalShelf x=0.55; Timer panel gelap), update stage final+delivery done, 3 scheduled task review-phelps-0-01-24h/72h/7d (upload Minggu 29 Nov 2026 19.00 WIB), tampilkan caption di chat.",
+      "snapshot": {
+        "episode": "EP07_PHELPS_MENANG_0_KOMA_01_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP07_PHELPS_MENANG_0_KOMA_01_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T07:56:06.371Z"
+    }
+  ],
+  "session": 4,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP07 Phelps 0,01 · s2",
+      "at": "2026-11-23T15:17:22.752Z"
+    },
+    {
+      "no": 3,
+      "title": "EP07 Phelps 0,01 · s3",
+      "at": "2026-11-23T18:27:08.870Z"
+    },
+    {
+      "no": 4,
+      "title": "EP07 Phelps 0,01 · s4",
+      "at": "2026-11-24T07:35:01.488Z"
+    }
+  ]
+}

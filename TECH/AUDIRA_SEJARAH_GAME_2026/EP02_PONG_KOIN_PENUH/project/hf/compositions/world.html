@@ -1,0 +1,150 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#E8D3DC}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.03;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.14) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0) 42%,rgba(0,0,0,0) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'Nunito',sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#4B3F5C;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.fg{position:absolute;left:0;border-radius:50%;filter:blur(30px);opacity:.62;z-index:6;pointer-events:none}
+.p{background:rgba(255,255,255,.88);border-radius:34px;padding:26px 34px 30px;box-shadow:0 18px 46px rgba(120,90,160,.22),inset 0 0 0 2px rgba(255,255,255,.9)}
+.eb{font-family:'Nunito',sans-serif;font-weight:800;font-size:26px;letter-spacing:.2em;color:#F2558F;margin-bottom:10px;display:flex;align-items:center}
+.eb i{display:inline-block;width:14px;height:14px;border-radius:50%;background:#F2558F;margin-right:14px}
+.ttl{font-family:'Fredoka',sans-serif;font-weight:600;font-size:96px;line-height:.98;color:#4B3F5C;letter-spacing:-.01em}
+.ttl.sm{font-size:64px;line-height:1.02;margin-bottom:8px}
+.ttl em,.row em{font-style:normal;color:#F2558F}
+.dots{display:flex;gap:10px;margin-top:18px}.dots b{display:block;width:22px;height:12px;border-radius:6px;background:#FF8DB6}.dots b:nth-child(2){background:#A98BF0}.dots b:nth-child(3){width:70px;background:#6FD8B0}
+.row{font-family:'Nunito',sans-serif;font-weight:800;font-size:40px;line-height:1.2;color:#4B3F5C;margin-top:12px;display:flex;align-items:center;flex-wrap:wrap;gap:12px}
+.row.sm2{font-size:33px;font-weight:700}
+.ch{display:inline-block;font-family:'Nunito',sans-serif;font-weight:800;font-size:36px;border-radius:999px;padding:6px 22px 8px;color:#4B3F5C}
+.ch.sky{background:#CFE6FB}.ch.mint{background:#C8F2E2}.ch.but{background:#FFD96A}
+.big{font-family:'Fredoka',sans-serif;font-weight:600;font-size:66px;color:#A98BF0;margin-top:14px;line-height:1}
+.nb{font-family:'Fredoka',sans-serif;font-weight:600;font-size:58px;color:#F2558F;min-width:80px}
+.bar{height:16px;border-radius:8px;background:rgba(75,63,92,.12);margin-top:10px;overflow:hidden}.bar s{display:block;height:100%;width:100%;background:linear-gradient(90deg,#FF8DB6,#A98BF0,#6FD8B0);transform-origin:0 50%;text-decoration:none}
+.hl{display:inline-block;background:#F2558F;color:#fff;border-radius:14px;padding:4px 14px 6px;transform-origin:30% 50%}
+.ic{display:inline-flex;width:46px;height:46px;border-radius:50%;align-items:center;justify-content:center;font-size:28px;color:#fff;flex:none}
+.row.x .ic{background:#F2558F}.row.v .ic{background:#2FB98A}
+.sk{position:relative}.sk s{position:absolute;left:-4px;right:-4px;top:52%;height:5px;border-radius:3px;background:#F2558F;transform-origin:0 50%}
+.date{margin-top:16px;font-family:'Fredoka',sans-serif;font-weight:600;font-size:62px;line-height:1;color:#fff;background:#A98BF0;border-radius:24px;padding:16px 24px 18px;display:inline-block;transform-origin:20% 50%}
+.date small{display:block;font-family:'Nunito',sans-serif;font-weight:800;font-size:24px;letter-spacing:.18em;opacity:.9;margin-bottom:6px}
+.row.q{display:inline-flex;background:#FFD96A;border-radius:999px;padding:8px 26px 10px}
+#chip{font-family:'Nunito',sans-serif;font-weight:800;font-size:21px;color:#4B3F5C;letter-spacing:.1em;opacity:.7}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="80.86" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN CUPLIKAN ASLI</div>
+
+<div class="fg" data-k="0.9" data-x="-120" style="top:1520px;width:420px;height:420px;background:radial-gradient(circle at 40% 38%,#FFC2D8,#FF8DB6 60%,rgba(255,141,182,0) 72%)"></div>
+<div class="fg" data-k="1.3" data-x="860" style="top:1610px;width:360px;height:360px;background:radial-gradient(circle at 40% 38%,#C8F5E3,#6FD8B0 60%,rgba(111,216,176,0) 72%)"></div>
+<div class="fg" data-k="0.6" data-x="930" style="top:120px;width:260px;height:260px;filter:blur(22px);background:radial-gradient(circle at 40% 38%,#FFF0B0,#FFD96A 60%,rgba(255,217,106,0) 72%)"></div>
+<div class="fg" data-k="1.1" data-x="1500" style="top:1450px;width:300px;height:300px;background:radial-gradient(circle at 40% 38%,#E2D8FF,#A98BF0 60%,rgba(169,139,240,0) 72%)"></div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="eb"><i></i>SEJARAH GAME &middot; EP 02</div>
+  <div class="ttl">MESIN PONG<br><em>RUSAK</em> KARENA<br>KOIN?</div>
+  <div class="dots"><b></b><b></b><b></b></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="eb"><i></i>AGUSTUS 1972 &middot; CALIFORNIA</div>
+  <div class="row" data-at="s2:Atari" data-fx="lit">Atari, perusahaan baru</div>
+  <div class="row"><span class="ch sky" data-at="s2:Nolan" data-fx="lit">Nolan Bushnell</span><span class="ch mint" data-at="s2:Allan" data-fx="lit">Allan Alcorn</span></div>
+  <div class="big" data-at="s2:Andy" data-fx="lit">Andy Capp's Tavern</div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="eb"><i></i>PROTOTIPE</div>
+  <div class="row" data-at="s3:televisi" data-fx="lit">TV hitam-putih <span class="ch but" data-at="s3:dolar" data-fx="lit">$75</span></div>
+  <div class="row" data-at="s3:lemari" data-fx="lit">Masuk lemari kayu</div>
+  <div class="row" data-at="s3:jukebox" data-fx="lit">Dekat jukebox &amp; pinball</div>
+  <div class="row" data-at="s3:dua" data-fx="lit">2 pemukul + 1 bola = <em>tenis meja di layar</em></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="eb"><i></i>MALAM PERTAMA</div>
+  <div class="ttl sm" data-at="s4:ramai" data-fx="lit">LANGSUNG <em>RAMAI</em></div>
+  <div class="row" data-at="s4:satu" data-fx="lit"><b class="nb">1,5</b>&nbsp;minggu berikutnya</div>
+  <div class="bar"><s data-at="s4:satu" data-fx="grow"></s></div>
+  <div class="row" data-at="s4:makin" data-fx="lit">Makin banyak yang datang</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="eb"><i></i>LALU...</div>
+  <div class="ttl sm" data-at="s5:bermasalah" data-fx="lit">MESINNYA <em>BERMASALAH</em></div>
+  <div class="row" data-at="s5:Pemilik" data-fx="lit">Pemilik bar menelepon Alcorn</div>
+  <div class="row" data-at="s5:wadah" data-fx="lit">Wadah koin <b class="hl" data-at="s5:meluap" data-fx="stamp">PENUH SAMPAI MELUAP</b></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="eb"><i></i>KEPUTUSAN</div>
+  <div class="ttl sm" data-at="s6:berubah" data-fx="lit">BUSHNELL <em>BERUBAH PIKIRAN</em></div>
+  <div class="row x" data-at="s6:menjual" data-fx="lit"><span class="ic">&#10005;</span><span class="sk">Jual lisensi ke perusahaan lain<s data-at="s6:lain" data-fx="grow"></s></span></div>
+  <div class="row v" data-at="s6:memutuskan" data-fx="lit"><span class="ic">&#10003;</span>Bikin mesinnya sendiri</div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="eb"><i></i>MODAL</div>
+  <div class="row x" data-at="s7:menolak" data-fx="lit"><span class="ic">&#10005;</span>Bank menolak memberi pinjaman</div>
+  <div class="row sm2" data-at="s7:pinball" data-fx="lit">Pong dianggap sejenis pinball, dicap dekat mafia</div>
+  <div class="row v" data-at="s7:kredit" data-fx="lit"><span class="ic">&#10003;</span>Akhirnya dapat kredit</div>
+  <div class="date" data-at="s7:November" data-fx="lit"><small>PONG DIUMUMKAN</small>29 NOVEMBER 1972</div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="eb"><i></i>SEJARAH GAME</div>
+  <div class="ttl sm">KERUSAKAN PALING<br><em>MENGUNTUNGKAN</em></div>
+  <div class="row q" data-at="s8:Kalau" data-fx="lit">Pemilik bar: senang atau panik?</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">SEJARAH GAME &middot; EP 02</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":4.914,"s2":5.074,"s2e":16.32,"s3":16.48,"s3e":31.91,"s4":32.07,"s4e":38.771,"s5":38.931,"s5e":48.448,"s6":48.608,"s6e":57.266,"s7":57.426,"s7e":70.145,"s8":70.305,"s8e":77.863,"end":77.863,"dur":80.86,"outro":78.113},AT={"s3:jukebox":24.662,"s3:Permainannya":26.537,"s3:pinball":25.746,"s7:mafia":63.491,"s7:Tapi":64.258,"s5:koin":47.41,"s2:Dua":7.855,"s2:menaruh":12.444,"s3:televisi":18.376,"s3:dimasukkan":21.627,"s5:Lalu":38.958,"s5:dibuka":44.237,"s1:rusak":1.943,"s5:bermasalah":40.027,"s2:perusahaan":8.552,"s2:Nolan":10.519,"s2:Andy":15.36,"s3:Alcorn":17.726,"s3:Mesinnya":23.346,"s3:sederhana":27.109,"s5:menelepon":41.807,"s5:memperbaikinya":42.968,"s5:ketemu":45.197,"s5:meluap":46.838,"s6:menjual":52.467,"s6:Mereka":55.037,"s7:pinjaman":58.955,"s7:pinball":61.091,"s7:kredit":65.666,"s7:November":68.397,"s8:Kalau":72.738,"s8:AUDIRA":76.361,"s3:kayu":22.664,"s3:seharga":19.521,"s2:seribu":6.058,"s6:berubah":49.598,"s6:Atari":50.759,"s6:memutuskan":55.346,"s6:sendiri":56.693,"s6:Bushnell":49.257,"s6:pikiran":49.892,"s5:Alcorn":42.318,"s5:Saat":43.958,"s5:masalahnya":44.686,"s5:wadah":45.615,"s2:Allan":11.401,"s4:ramai":34.746,"s4:makin":36.991,"s6:lain":54.48,"s7:menolak":58.088,"s5:sen":48.215,"s8:Kerusakan":70.314,"s2:Atari":9.682,"s3:dolar":20.744,"s3:lemari":22.339,"s3:dua":28.004,"s4:satu":35.582,"s5:Pemilik":41.048},DUR=80.86,OUT=78.113;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ lit:(e,t)=>tl.fromTo(e,{opacity:.3},{opacity:1,duration:.25,ease:'power2.out'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{y:-46,scale:.95,opacity:0},{y:0,scale:1,opacity:1,duration:.5,ease:'back.out(1.6)'},a-.1);},POUT=(tl,p,b)=>tl.to(p,{y:-36,scale:.97,opacity:0,duration:.24,ease:'power2.in'},b-.24);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{clipPath:'circle(0% at 50% 58%)'});tl.to('#outro',{clipPath:'circle(120% at 50% 58%)',duration:.7,ease:'power3.inOut'},OUT-.3);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP02_PONG_KOIN_PENUH")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

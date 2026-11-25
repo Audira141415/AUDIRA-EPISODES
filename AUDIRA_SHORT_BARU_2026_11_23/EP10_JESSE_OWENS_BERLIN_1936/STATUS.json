@@ -1,0 +1,438 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP10_JESSE_OWENS_BERLIN_1936",
+  "topic": "Jesse Owens — 4 emas di Olimpiade Berlin 1936 (AUDIRA Sport Facts)",
+  "createdAt": "2026-11-22T17:48:42.878Z",
+  "updatedAt": "2026-11-23T09:26:01.862Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:50:00.670Z",
+          "text": "Preflight: tidak ada proyek npm per-episode (Remotion 2D memakai node_modules workspace F:/AUDIRA-EPISODES). Memory GLOBAL: tulis 'Audira' di VO, loudnorm 2-pass TP -1.5, sign lewat skrip await, qa_video hardOnly."
+        }
+      ],
+      "doneAt": "2026-11-22T17:50:00.670Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:56:14.338Z",
+          "text": "sync: riset ada"
+        },
+        {
+          "at": "2026-11-22T17:56:33.867Z",
+          "text": "research/SOURCE_REGISTER.md: 32 fakta, mitos dihindari (Coubertin Long 1964 SALAH; saran Long diperdebatkan; jabat tangan Hitler mitos), catatan naskah."
+        }
+      ],
+      "doneAt": "2026-11-22T17:56:33.866Z",
+      "startedAt": "2026-11-22T17:55:48.726Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T17:50:43.645Z",
+      "notes": [
+        {
+          "at": "2026-11-22T17:49:57.092Z",
+          "text": "Konteks dibaca (GLOBAL+channel memory, EP05 seri fakta olahraga). Riset jalan paralel (subagen). Rekomendasi 2D: CHRONICLE (utama), FILM16, RISOFORGE. TIMEFORGE/VINTAGEFORGE ditolak: bahasa visual 3D diorama, lemah di composition. Menunggu pilihan pengguna."
+        },
+        {
+          "at": "2026-11-22T17:50:43.645Z",
+          "text": "Pengguna memilih CHRONICLE (2026-11-23). Lanjut cover topik."
+        },
+        {
+          "at": "2026-11-22T17:56:32.091Z",
+          "text": "Cover topik dirender: style/cover-topic.png (Ep10Cover). STYLE_DECISION.md lengkap."
+        }
+      ],
+      "startedAt": "2026-11-22T17:49:57.092Z",
+      "doneAt": "2026-11-22T17:56:32.091Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T22:21:34.378Z",
+          "text": "docs ART_DIRECTION/SCRIPT/STORYBOARD/ASSET_MANIFEST; VO text audio/vo.txt 202 kata"
+        }
+      ],
+      "doneAt": "2026-11-22T22:21:34.378Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:54:02.905Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T17:51:12.368Z",
+      "startedAt": "2026-11-22T17:51:12.368Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T09:25:48.461Z",
+          "text": "VO Cartesia 77,83 dtk, offset 0,3; project/public/audio/vo.wav"
+        }
+      ],
+      "doneAt": "2026-11-23T09:25:48.461Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:26:53.710Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T22:26:50.551Z",
+      "startedAt": "2026-11-22T22:26:50.551Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T22:26:53.710Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-22T22:26:15.948Z",
+      "startedAt": "2026-11-22T22:26:15.948Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T00:19:42.688Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-23T09:25:53.625Z",
+          "text": "Render ulang 16:18 dari kode terakhir: 81,52 dtk 1080x1920@60, -13,7 LUFS, TP -2,6, metadata ok, Ed25519 VALID + C2PA, qa_video PASS, self final 3.83"
+        }
+      ],
+      "doneAt": "2026-11-23T09:25:53.625Z",
+      "startedAt": "2026-11-23T00:15:18.557Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T00:01:14.702Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T09:25:57.287Z",
+          "text": "Caption 6 platform validator ok, NOTES.md, lesson CHRONICLE+GLOBAL, task review-jesse-owens-berlin-1936-24h/-72h/-7d (26 Nov, 28 Nov, 2 Des 19.00 WIB), file perantara dihapus"
+        }
+      ],
+      "doneAt": "2026-11-23T09:25:57.287Z",
+      "startedAt": "2026-11-23T00:01:03.948Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "in_progress",
+      "notes": [
+        {
+          "at": "2026-11-23T09:25:59.660Z",
+          "text": "Menunggu upload Rabu 25 Nov 2026 19.00 WIB; scheduled task 24h/72h/7d terpasang"
+        }
+      ],
+      "startedAt": "2026-11-23T09:25:59.660Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP10",
+    "engine": "remotion",
+    "engineNote": "Remotion 2D (tanpa R3F), skill audira-2d-motion",
+    "style": "CHRONICLE",
+    "wordCount": 202,
+    "estimatedDuration": {
+      "wordCount": 202,
+      "minSec": 81,
+      "maxSec": 90
+    },
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-23T00:19:42.689Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T17:56:40.972Z",
+      "doing": "Style CHRONICLE di-acc, cover topik selesai, riset selesai, library 2D siap (project/src/lib/fig.tsx siluet berkontur, set.tsx langit/stadion/lintasan/skyline/grain, hud.tsx DateStamp/Counter/Card/NameTag/Quote/Citation/Medal/BrandPlate + useFonts). Sesi dipindah karena context guard.",
+      "command": "cd project; node ../../../node_modules/@remotion/cli/remotion-cli.js still src/index.ts Ep10Cover ../style/cover-topic.png --frame=60 --log=error",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "style/cover-topic.png",
+        "research/SOURCE_REGISTER.md",
+        "project/src/lib/fig.tsx",
+        "project/src/lib/set.tsx",
+        "project/src/lib/hud.tsx",
+        "project/src/Cover.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "Tahap 4: tulis docs/ART_DIRECTION.md, SCRIPT.md (195–210 kata, pakai 'Audira' di VO), STORYBOARD.md, ASSET_MANIFEST.md, SHOTLIST.md dari research/SOURCE_REGISTER.md bagian 'Catatan naskah'. Lalu VO Cartesia (audira_generate_voiceover → project/public/audio/vo.wav + vo-words.json), npm run vo, scene 2D multi-scene di project/src/Film.tsx (+ Root.tsx), npm run sfx, contact sheet draf + juri, render:final --vo --sfx, tagging, captions.",
+      "snapshot": {
+        "episode": "EP10_JESSE_OWENS_BERLIN_1936",
+        "topic": "Jesse Owens — 4 emas di Olimpiade Berlin 1936 (AUDIRA Sport Facts)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP10",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T22:27:48.824Z",
+      "doing": "Draft juri buta (contact-sheet LOLOS self 4.17); VO 77.83s, Film.tsx 17 shot, sfx.wav siap",
+      "files": [
+        "project/src/Film.tsx",
+        "project/src/Root.tsx",
+        "docs/SHOTLIST.md",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "record_score jury → render final: cd project; node scripts/render-final.mjs --comp=Ep10Final --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --encoder=nvenc --slug=jesse-owens-berlin-1936 --ep=EP10",
+      "snapshot": {
+        "episode": "EP10_JESSE_OWENS_BERLIN_1936",
+        "topic": "Jesse Owens — 4 emas di Olimpiade Berlin 1936 (AUDIRA Sport Facts)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP10",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T22:28:59.130Z",
+      "doing": "Draft juri putaran 1 = 3.50 PERLU POLES; daftar poles di HANDOFF.md. Sesi dipindah (context guard).",
+      "files": [
+        "HANDOFF.md",
+        "project/src/Film.tsx",
+        "project/src/lib/set.tsx",
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "Poles Film.tsx/lib (lighting rays+haze, crowd lembut, occluder FG, framing S4c/finale, teks kecil) → contact sheet → juri putaran 2 → final.",
+      "snapshot": {
+        "episode": "EP10_JESSE_OWENS_BERLIN_1936",
+        "topic": "Jesse Owens — 4 emas di Olimpiade Berlin 1936 (AUDIRA Sport Facts)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP10",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:01:33.930Z",
+      "doing": "Juri putaran 2 selesai: 3.83 (L4 M3 D4 C3 Mo5 R4). Aturan pengguna G16 (>=3.8, tak ada <3) = LOLOS, tapi audira_style_memory menandai PERLU POLES (ambang 4) + batas 2 putaran, sehingga gate render-final.mjs (butuh jury pass=true) akan menolak final.",
+      "command": "node scripts/render-final.mjs --comp=Ep10Final --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --encoder=nvenc --title=\"Jesse Owens: 4 Emas Berlin 1936\" --slug=jesse-owens-berlin-1936 --ep=EP10",
+      "files": [
+        "project/src/Film.tsx",
+        "project/src/lib/set.tsx",
+        "project/src/lib/hud.tsx",
+        "draft/contact-sheet.jpg",
+        "SOCIAL_CAPTIONS.md",
+        "HANDOFF.md"
+      ],
+      "next": "Butuh keputusan sesi induk/pengguna: (a) ikuti G16 => final perlu cara lolos gate tanpa bypass (mis. perbaiki ambang tool ke 3.8), atau (b) kembali ke gerbang style (G21). SOCIAL_CAPTIONS.md sudah didraf (belum divalidasi). Jangan render final sebelum keputusan.",
+      "snapshot": {
+        "episode": "EP10_JESSE_OWENS_BERLIN_1936",
+        "topic": "Jesse Owens — 4 emas di Olimpiade Berlin 1936 (AUDIRA Sport Facts)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP10",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:04:25.631Z",
+      "doing": "Pengguna memutuskan 2026-11-23: \"Ikuti G16, final\". Juri buta 3.83 = LOLOS menurut G16. Final belum dirender; dilanjutkan sesi fresh.",
+      "command": "node scripts/render-final.mjs --comp=Ep10Final --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --encoder=nvenc --title=\"Jesse Owens: 4 Emas Berlin 1936\" --slug=jesse-owens-berlin-1936 --ep=EP10 --skip-memory-gate=\"G16 pengguna: juri buta 3.83 >= 3.8, tidak ada aspek <3; keputusan pengguna 2026-11-23\"",
+      "files": [
+        "HANDOFF.md",
+        "SOCIAL_CAPTIONS.md",
+        "project/src/Film.tsx"
+      ],
+      "next": "Render final (background) dengan override --skip-memory-gate beralasan (perintah lengkap di HANDOFF.md), lalu QA (ffprobe metadata, -14 LUFS, TP<-1, audira_qa_video hardOnly), record_score final, validasi SOCIAL_CAPTIONS.md, NOTES.md, append_lesson CHRONICLE, 3 scheduled task review, hapus draft/clip-30-48.mp4, tampilkan caption.",
+      "snapshot": {
+        "episode": "EP10_JESSE_OWENS_BERLIN_1936",
+        "topic": "Jesse Owens — 4 emas di Olimpiade Berlin 1936 (AUDIRA Sport Facts)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP10",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:08:57.218Z",
+      "doing": "Render final FINAL_VIDEO.mp4 (background) dengan override --skip-memory-gate G16; karaoke top sudah 1400",
+      "command": "cd project; node scripts/render-final.mjs --comp=Ep10Final --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --encoder=nvenc --title=\"Jesse Owens: 4 Emas Berlin 1936\" --slug=jesse-owens-berlin-1936 --ep=EP10 --skip-memory-gate=\"G16 pengguna: juri buta 3.83 >= 3.8, tidak ada aspek <3; keputusan pengguna 2026-11-23\"",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "project/src/Film.tsx"
+      ],
+      "next": "QA (ffprobe metadata, -14 LUFS, TP<-1, qa_video hardOnly, frame), record_score final, status update, delivery (validasi caption, SRT, NOTES, lesson, 3 scheduled task, hapus draft/clip-30-48.mp4)",
+      "snapshot": {
+        "episode": "EP10_JESSE_OWENS_BERLIN_1936",
+        "topic": "Jesse Owens — 4 emas di Olimpiade Berlin 1936 (AUDIRA Sport Facts)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP10",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:10:53.884Z",
+      "doing": "Render ulang final FINAL_VIDEO.mp4: set.tsx/Film.tsx diubah 07:28 setelah final 07:22 (poles kerumunan). Override G16 sama (juri 3.83).",
+      "command": "cd project; node scripts/render-final.mjs --comp=Ep10Final --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --encoder=nvenc --title=\"Jesse Owens: 4 Emas Berlin 1936\" --slug=jesse-owens-berlin-1936 --ep=EP10 --skip-memory-gate=\"G16 ...\"",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "render-final.log"
+      ],
+      "next": "QA LUFS/TP/metadata/signature/qa_video, record_score final, caption validate, NOTES, lesson, 3 scheduled task, status review",
+      "snapshot": {
+        "episode": "EP10_JESSE_OWENS_BERLIN_1936",
+        "topic": "Jesse Owens — 4 emas di Olimpiade Berlin 1936 (AUDIRA Sport Facts)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP10",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:10:53.884Z",
+      "doing": "Render ulang final FINAL_VIDEO.mp4: set.tsx/Film.tsx diubah 07:28 setelah final 07:22 (poles kerumunan). Override G16 sama (juri 3.83).",
+      "command": "cd project; node scripts/render-final.mjs --comp=Ep10Final --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --encoder=nvenc --title=\"Jesse Owens: 4 Emas Berlin 1936\" --slug=jesse-owens-berlin-1936 --ep=EP10 --skip-memory-gate=\"G16 ...\"",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "render-final.log"
+      ],
+      "next": "QA LUFS/TP/metadata/signature/qa_video, record_score final, caption validate, NOTES, lesson, 3 scheduled task, status review",
+      "snapshot": {
+        "episode": "EP10_JESSE_OWENS_BERLIN_1936",
+        "topic": "Jesse Owens — 4 emas di Olimpiade Berlin 1936 (AUDIRA Sport Facts)",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP10",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T09:26:01.862Z"
+    }
+  ]
+}

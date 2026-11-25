@@ -1,0 +1,123 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#03121C}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.04;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.34) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.22) 42%,rgba(0,0,0,0.22) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:190px;z-index:10;transform-origin:50% 50%}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:30px;color:#A3E635;letter-spacing:.14em}
+
+.cd{display:inline-block;font-family:"IBM Plex Mono",monospace;font-weight:700;font-size:28px;letter-spacing:.03em;color:#E9F6F7;border-bottom:3px solid #FF6A3D;padding:2px 2px 6px;margin-bottom:14px;text-shadow:0 1px 8px rgba(0,0,0,.9)}
+.h0{font-family:Montserrat,sans-serif;font-weight:900;font-size:152px;line-height:1;letter-spacing:-.03em;color:#fff;text-shadow:0 4px 34px rgba(0,30,50,.65)}
+.h2{font-family:Montserrat,sans-serif;font-weight:900;font-size:76px;line-height:1.05;letter-spacing:-.02em;color:#fff;text-shadow:0 3px 22px rgba(0,20,40,.9);margin-bottom:8px}
+.tl{font-family:Montserrat,sans-serif;font-weight:700;font-size:39px;color:#fff;text-shadow:0 2px 14px rgba(0,20,40,.9);margin-top:6px}
+.ln{background:rgba(3,18,28,.74);border-left:7px solid #5FD9DC;padding:12px 18px;margin-top:10px}
+.ln.alt{border-left-color:#FF6A3D}
+.ln b{display:block;font-family:Montserrat,sans-serif;font-weight:900;font-size:50px;line-height:1.08;letter-spacing:-.01em;color:#fff}
+.ln span{display:block;font-family:Montserrat,sans-serif;font-weight:700;font-size:31px;line-height:1.16;color:#5FD9DC}
+.nums{display:flex;gap:12px}
+.nums>div{flex:1;background:rgba(3,18,28,.74);border-top:6px solid #FF6A3D;padding:12px 16px}
+.nums b{display:block;font-family:Montserrat,sans-serif;font-weight:900;font-size:62px;line-height:1.06;letter-spacing:-.02em;color:#fff}
+.nums b.up{color:#FF6A3D}
+.nums span{display:block;font-family:Montserrat,sans-serif;font-weight:700;font-size:30px;color:#5FD9DC}
+.note{font-family:Montserrat,sans-serif;font-weight:700;font-size:33px;line-height:1.16;color:#fff;margin-top:12px;text-shadow:0 2px 12px #000}
+.srcl{font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:25px;line-height:1.2;color:#E9F6F7;margin-top:10px;text-shadow:0 1px 8px #000}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="80.2" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="cd">HOW THE WORLD WORKS &middot; EP 03</div>
+  <div class="h0">TSUNAMI</div>
+  <div class="tl">Melintasi samudra secepat pesawat jet</div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="cd">ZONA SUBDUKSI, ILUSTRASI</div>
+  <div class="ln" data-at="s2:lempeng" data-fx="left"><b>LEMPENG SAMUDRA</b><span>menyusup ke bawah lempeng benua</span></div>
+  <div class="note" data-at="s2:Tegangan" data-fx="fade">Tegangan menumpuk di patahan</div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="cd">PERPINDAHAN VERTIKAL</div>
+  <div class="ln" data-at="s3:kolom" data-fx="left"><b>KOLOM AIR TERDORONG</b><span>dari dasar sampai permukaan</span></div>
+  <div class="note" data-at="s3:menyebar" data-fx="fade">Gelombang menyebar ke segala arah</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="cd">OMBAK vs TSUNAMI</div>
+  <div class="ln" data-at="s4:Ombak" data-fx="left"><b>OMBAK ANGIN</b><span>hanya di permukaan</span></div>
+  <div class="ln alt" data-at="s4:Tsunami" data-fx="left"><b>TSUNAMI</b><span>seluruh kedalaman, jarak puncak ratusan km</span></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="cd">LAUT DALAM &middot; c = &radic;(g &times; h)</div>
+  <div class="nums"><div data-at="s5:4.600" data-fx="pop"><b class="nb">4.600 m</b><span>kedalaman</span></div><div data-at="s5:765" data-fx="pop"><b class="nb">765 km/j</b><span>kecepatan</span></div></div>
+  <div class="ln" data-at="s5:tingginya" data-fx="left"><b class="nb">&lt; 1 M</b><span>tinggi di laut dalam, umumnya</span></div>
+  <div class="srcl" data-at="s5:4.600" data-fx="fade">Tinggi gelombang pada penampang diperbesar</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="cd">PENDANGKALAN &middot; TIDAK BERSKALA</div>
+  <div class="nums"><div data-at="s6:melambat" data-fx="pop"><b class="nb">30&ndash;50</b><span>km/jam di pantai</span></div><div data-at="s6:meninggi" data-fx="pop"><b class="up">&#8593; TINGGI</b><span>jarak memendek</span></div></div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="cd">RUN-UP &middot; TIDAK BERSKALA</div>
+  <div class="ln" data-at="s7:Sumatra" data-fx="left"><b class="nb">&plusmn;50 M</b><span>maksimum, Sumatra utara, 2004 (NOAA)</span></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="h2" data-at="s8:berseri" data-fx="left">GELOMBANG BERSERI</div>
+  <div class="ln" data-at="s8:surut" data-fx="left"><b>LAUT SURUT?</b><span>segera lari ke tempat tinggi</span></div>
+  <div class="srcl" data-at="s8:surut" data-fx="fade">Sumber: NOAA NWS, NOAA JetStream, tsunami.gov</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">HOW THE WORLD WORKS &middot; EP 03</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":6.873,"s2":7.033,"s2e":14.409,"s3":14.569,"s3e":25.492,"s4":25.652,"s4e":34.136,"s5":34.296,"s5e":49.04,"s6":49.2,"s6e":60.205,"s7":60.365,"s7e":67.937,"s8":68.097,"s8e":77.205,"end":77.205,"dur":80.2,"outro":77.455},AT={"s2:lepas":14.022,"s3:Gempa":14.569,"s3:kolom":18.525,"s3:menyebar":24.424,"s4:Ombak":27.874,"s4:Tsunami":30.103,"s5:Kecepatannya":34.7,"s5:Kapal":46.889,"s5:765":41.836,"s6:Mendekati":49.2,"s6:melambat":52.637,"s6:meninggi":57.048,"s7:darat":60.543,"s7:Sumatra":64.842,"s8:berseri":69.217,"s8:surut":74.976,"s2:lempeng":10.09,"s2:Tegangan":12.335,"s5:4.600":38.211,"s5:tingginya":44.899},DUR=80.2,OUT=77.455;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ 
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{x:-110,opacity:0},{x:0,opacity:1,duration:.34,ease:'power4.out'},a-.14),POUT=(tl,p,b)=>tl.to(p,{x:110,opacity:0,duration:.2,ease:'power3.in'},b-.2);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});
+tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

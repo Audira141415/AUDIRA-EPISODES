@@ -1,0 +1,280 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP03_KALENG_MINUMAN",
+  "topic": "Cara pembuatan benda sehari-hari yang jarang diketahui",
+  "createdAt": "2026-11-11T08:10:25.580Z",
+  "updatedAt": "2026-11-16T15:16:45.018Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T08:15:54.415Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-11T08:10:25.581Z",
+      "startedAt": "2026-11-11T08:10:25.581Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T08:15:54.415Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-11T08:10:25.579Z",
+      "startedAt": "2026-11-11T08:10:25.579Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-11T23:51:24.467Z",
+      "notes": [
+        {
+          "at": "2026-11-11T23:51:37.278Z",
+          "text": "Style dipilih pengguna: \"Ya, semua utama\" (2026-11-12). Cover topik pending."
+        },
+        {
+          "at": "2026-11-12T00:00:13.222Z",
+          "text": "sync: STYLE_DECISION.md ada; acc tercatat di file"
+        }
+      ],
+      "startedAt": "2026-11-11T23:51:37.278Z",
+      "approvalSource": "file",
+      "doneAt": "2026-11-11T23:51:24.467Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T00:59:05.689Z",
+      "notes": [
+        {
+          "at": "2026-11-11T08:15:54.416Z",
+          "text": "sync: naskah ada; menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-12T00:59:05.689Z",
+          "text": "Cover topik + naskah disetujui pengguna: \"Setuju semua\" (2026-11-12)."
+        }
+      ],
+      "startedAt": "2026-11-11T08:10:25.579Z",
+      "doneAt": "2026-11-12T00:59:05.689Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-16T15:16:45.018Z",
+          "text": "sync: dunia world3d disiapkan (project/world3d.js + project/hf/hyperframes.json)"
+        }
+      ],
+      "doneAt": "2026-11-13T18:25:58.554Z",
+      "startedAt": "2026-11-13T18:25:58.554Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T01:00:49.792Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-12T01:00:11.543Z",
+      "startedAt": "2026-11-12T01:00:11.543Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T00:59:28.123Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-12T00:16:50.861Z",
+      "startedAt": "2026-11-12T00:16:50.861Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-12T00:59:28.123Z",
+          "text": "sync: 1 gambar draf/contact sheet; menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-12T12:46:13.476Z",
+          "text": "sync: 1 gambar draf/contact sheet; acc tidak tercatat, disimpulkan karena tahap sesudahnya sudah ada"
+        }
+      ],
+      "startedAt": "2026-11-12T00:17:57.262Z",
+      "approvalSource": "inferred",
+      "doneAt": "2026-11-12T12:45:22.174Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T23:36:36.556Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        }
+      ],
+      "doneAt": "2026-11-13T18:44:06.995Z",
+      "startedAt": "2026-11-13T18:44:06.995Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T12:46:13.476Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-12T12:42:35.948Z",
+      "startedAt": "2026-11-12T12:42:35.948Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "cara-pembuatan-EP03",
+    "style": "SATISFYFORGE",
+    "title": "Cara Pembuatan Kaleng Minuman",
+    "wordCount": 191,
+    "estimatedDuration": {
+      "wordCount": 191,
+      "minSec": 76,
+      "maxSec": 85
+    },
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-16T15:16:45.018Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-13T17:48:24.822Z",
+      "doing": "Poles draf EP03 (juri 2.83 gagal): readability (grid s5 8→4 baris), composition (kurangi 34→18 deco, kamera anti-crop), lighting +sedikit",
+      "files": [
+        "project/hf/compositions/world.html",
+        "project/hf/assets/lib/world3d.js"
+      ],
+      "next": "bash _tools/sheet.sh EP03_KALENG_MINUMAN → record_score self → juri buta"
+    },
+    {
+      "at": "2026-11-13T18:10:42.291Z",
+      "doing": "Poles round 2: material (alu metalness 1, rough 0.16, env 1.0), lighting (hemi 0.26), depth (fog 20-55). Juri round 1 = 3.33 (material 2, lighting 3, depth 3); komposisi/readability fix sudah lolos (4,4)",
+      "batchId": "b0o0va7lm",
+      "files": [
+        "project/world3d.js"
+      ],
+      "next": "Lihat draft/contact-sheet.jpg baru → record_score self → juri buta → bila LOLOS minta acc draf, bila gagal poles lagi aspek lemah. Edit sumber: project/world3d.js + project/build-video.mjs (BUKAN hf/ copy, ketimpa build). Redraft: bash _tools/sheet.sh EP03_KALENG_MINUMAN"
+    },
+    {
+      "at": "2026-11-13T18:13:10.034Z",
+      "doing": "Draf EP03 belum lolos juri. 3 ronde: juri 2.83 -> 3.33 -> 3.17. SUDAH LOLOS: composition 4, readability 4 (grid s5 8->4 baris, deco 34->20, kamera anti-crop). MACET: material 2 (logam baca plastik, tak ada specular highlight tajam). Fog depth sudah di-revert (mencuci kontras).",
+      "files": [
+        "project/world3d.js"
+      ],
+      "next": "Satu ronde material TERAKHIR di project/world3d.js (BUKAN hf/ copy): (1) alu roughness 0.16->0.06 (highlight mirror tajam); (2) tambah 1 strip env PUTIH terang di envStrips (mis [2,2,0xffffff,6.0,5,8,4]) agar logam punya hotspot glossy bersih seperti referensi; (3) depth: gelapkan/dinginkan backdrop pabrik (haze 0.1/0.18 -> lebih gelap) + vignette #vig lebih dalam, JANGAN fog. Lalu: bash _tools/sheet.sh EP03_KALENG_MINUMAN -> record_score self -> juri buta (general-purpose, hanya sheet + F:/AUDIRA-SKILL-MOTION/references/quality-bar/satisfyforge.png + rubrik qa/jury.md). Butuh material>=4 + avg>=4. Baru minta acc draf. SETELAH acc: cek audira_render_batch status (jangan render serempak sesi lain), lalu audira_render_batch final 1080x1920@60 RENDER_TMPDIR F:, FINAL_CHECK.jpg, npm run deliver, caption 6 platform."
+    },
+    {
+      "at": "2026-11-13T18:17:53.238Z",
+      "doing": "Draf round 4 material fix selesai (alu rough 0.06, env strip putih, haze 0.26/0.4, vig 0.38). Sheet dibuat, self-score 4.0 LOLOS. Juri buta sedang jalan (subagent general-purpose).",
+      "files": [
+        "project/world3d.js",
+        "project/build-video.mjs",
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "Tunggu verdict juri -> record_score judge:jury. Jika LOLOS (material>=4,avg>=4): minta acc draf ke pengguna, lalu audira_render_batch status -> render final 1080x1920@60 RENDER_TMPDIR F: -> FINAL_CHECK.jpg -> npm run deliver -> validasi caption. Jika PERLU POLES: poles aspek lemah di project/world3d.js, ulang sheet.sh."
+    },
+    {
+      "at": "2026-11-13T18:26:52.052Z",
+      "doing": "Draf ronde 7 selesai. Material dipoles maksimal (env base gelap, streak putih tajam intensity 20, alu roughness 0.025 envMapIntensity 2.6 no-clearcoat, exposure 1.08). 3 juri plateau material=3 (avg 3.67-3.83); pipeline tak punya HDRI, juri terus minta hdri studio. Nunggu keputusan pengguna: override ke final atau 1 juri lagi.",
+      "files": [
+        "project/world3d.js",
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "Jika pengguna acc/override: audira_render_batch status -> render final 1080x1920@60 RENDER_TMPDIR F: (HyperFrames project/hf) -> FINAL_CHECK.jpg -> npm run deliver -> validasi SOCIAL_CAPTIONS.md. Jika minta juri lagi: subagent general-purpose lihat draft/contact-sheet.jpg + quality-bar + rubrik."
+    },
+    {
+      "at": "2026-11-13T18:35:38.108Z",
+      "doing": "Render final EP03 1080x1920@60 via _tools/final.sh (override pengguna: material mentok juri-3, cap 3x draf). Temp F:\\hf-render-tmp (manual, bukan batch MCP — server tak punya RENDER_TMPDIR, batch kemarin ENOSPC C:). Background.",
+      "command": "FPS=60 bash _tools/final.sh EP03_KALENG_MINUMAN",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "project/out/raw.mp4",
+        "project/out/qc/qc.log"
+      ],
+      "next": "Tunggu FINAL_VIDEO.mp4. Lalu: verifikasi FINAL_CHECK (8 frame dari MP4, cek black-frame), cek qc.log, validasi SOCIAL_CAPTIONS.md (audira_validate_social_captions), hapus note GPU di shared folder, record_score final, tampilkan caption 6 platform."
+    },
+    {
+      "at": "2026-11-13T18:40:58.821Z",
+      "doing": "render final (hyperframes)",
+      "command": "audira_render_batch start",
+      "batchId": "20261113-184058",
+      "files": [
+        "F:\\AUDIRA-VIDEO-MOTION\\AUDIRA_CARA_PEMBUATAN_2026\\EP03_KALENG_MINUMAN\\FINAL_VIDEO.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261113-184058); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang."
+    },
+    {
+      "at": "2026-11-13T18:41:10.588Z",
+      "doing": "Render final EP03 via audira_render_batch (batch 20261113-184058, pid 2868), temp F:\\render-tmp (junction C:\\render-tmp->F:, server env pakai C:). Antre di balik EP02 (hyperframes per-account lock). Override pengguna: material mentok juri-3, cap 3x draf.",
+      "batchId": "20261113-184058",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "project/out/raw.mp4"
+      ],
+      "next": "Cek audira_render_batch status sampai done. Lalu: FINAL_CHECK 8 frame dari FINAL_VIDEO.mp4 (cek black-frame NaN+bloom), npm run verify / sign Ed25519+C2PA, deliver/qa:gate, record_score final, audira_validate_social_captions, tampilkan caption 6 platform dari SOCIAL_CAPTIONS.md. JANGAN hapus junction C:\\render-tmp (dipakai batch). Jangan render ulang (render:final skip final terkini)."
+    }
+  ],
+  "handover": {
+    "at": "2026-11-13T18:41:10.588Z",
+    "doing": "Render final EP03 via audira_render_batch (batch 20261113-184058, pid 2868), temp F:\\render-tmp (junction C:\\render-tmp->F:, server env pakai C:). Antre di balik EP02 (hyperframes per-account lock). Override pengguna: material mentok juri-3, cap 3x draf.",
+    "batchId": "20261113-184058",
+    "files": [
+      "FINAL_VIDEO.mp4",
+      "project/out/raw.mp4"
+    ],
+    "next": "Cek audira_render_batch status sampai done. Lalu: FINAL_CHECK 8 frame dari FINAL_VIDEO.mp4 (cek black-frame NaN+bloom), npm run verify / sign Ed25519+C2PA, deliver/qa:gate, record_score final, audira_validate_social_captions, tampilkan caption 6 platform dari SOCIAL_CAPTIONS.md. JANGAN hapus junction C:\\render-tmp (dipakai batch). Jangan render ulang (render:final skip final terkini)."
+  }
+}

@@ -1,0 +1,469 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP42_SAMIRI_ANAK_SAPI_EMAS",
+  "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+  "createdAt": "2026-11-24T14:50:50.193Z",
+  "updatedAt": "2026-11-24T16:05:16.685Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:53:49.747Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-24T14:50:50.192Z",
+      "startedAt": "2026-11-24T14:50:50.192Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:52:44.355Z",
+          "text": "SOURCE_REGISTER: QS 20:83-98, 7:142-154, 2:51-54 + Ibnu Katsir. 8 fakta."
+        }
+      ],
+      "doneAt": "2026-11-24T14:52:44.355Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:58:03.224Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        },
+        {
+          "at": "2026-11-24T14:58:39.557Z",
+          "text": "CHRONICLE 3D (siluet tanpa wajah). Alternatif ditolak BRONZEFORGE, CINESTORY. Cover topik dirender di sesi B dari frame hook (perlu set gurun baru)."
+        }
+      ],
+      "doneAt": "2026-11-24T14:58:39.557Z",
+      "startedAt": "2026-11-24T14:57:36.964Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:58:39.700Z",
+          "text": "docs rule 12 lengkap: ART_DIRECTION, SCRIPT (200 kata ≈ 80–89 dtk), STORYBOARD 7 adegan, ASSET_MANIFEST. Teks TTS: docs/VO_TEXT.txt"
+        }
+      ],
+      "doneAt": "2026-11-24T14:58:39.700Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:56:43.124Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T13:59:24.307Z",
+      "startedAt": "2026-11-22T13:59:24.307Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:02:56.032Z",
+          "text": "Cartesia voice 04b567df, 86.66 dtk, 200 kata, audio/vo.wav + vo-words.json (timestamp per kata)"
+        }
+      ],
+      "doneAt": "2026-11-24T15:02:56.032Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T14:56:43.124Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-24T14:56:04.809Z",
+      "startedAt": "2026-11-24T14:56:04.809Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:19:27.331Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json PASS"
+        },
+        {
+          "at": "2026-11-24T15:20:05.936Z",
+          "text": "Juri buta putaran 1: 3.83 LOLOS (4/3/4/4/4/4). draft/contact-sheet.jpg, look.json, camera.json (5/5), THEME_CHECK 8/8 ya. G18c: VO -27.3 vs SFX stem -39.7 = 12.4 LU; mix -14.0 LUFS TP -1.5."
+        }
+      ],
+      "doneAt": "2026-11-24T15:20:05.936Z",
+      "startedAt": "2026-11-24T15:18:09.464Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T15:47:28.892Z",
+      "notes": [
+        {
+          "at": "2026-11-24T15:47:28.892Z",
+          "text": "Acc pengguna 2026-11-24: \"Gas render\""
+        },
+        {
+          "at": "2026-11-24T16:05:09.953Z",
+          "text": "FINAL_SAMIRI_ANAK_SAPI_EMAS.mp4 1080x1920@60 91.7s, -14.0 LUFS TP -1.4, metadata ok, QA kit 10/11 (warning adegan tanpa tokoh disengaja), juri final 3.67"
+        }
+      ],
+      "startedAt": "2026-11-24T15:47:28.892Z",
+      "doneAt": "2026-11-24T16:05:09.953Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:51:05.439Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-24T16:05:16.341Z",
+          "text": "SOCIAL_CAPTIONS.md lolos validator; NOTES.md; 3 lessons; perantara dihapus; review task 24h/72h/7d dibuat (upload asumsi Rabu 25 Nov 19.00 WIB)"
+        }
+      ],
+      "doneAt": "2026-11-24T16:05:16.341Z",
+      "startedAt": "2026-11-24T15:49:02.564Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "kisah-islam-EP42",
+    "shortTitle": "Samiri",
+    "sessionNo": 1,
+    "style": "CHRONICLE",
+    "engine": "remotion",
+    "kit": "chronicle",
+    "wordCount": 200,
+    "estimatedDuration": {
+      "wordCount": 200,
+      "minSec": 80,
+      "maxSec": 89
+    }
+  },
+  "syncedAt": "2026-11-24T15:51:05.440Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-24T14:58:51.735Z",
+      "doing": "Sesi A selesai (tahap 0–4). Pre-flight lolos tanpa blocker. Style CHRONICLE, engine Remotion+R3F 3D, kit chronicle disalin ke project/ (node new-project.mjs --kit=chronicle; node_modules sudah ada). Docs rule 12 lengkap + STYLE_DECISION terisi (G20 bersih, G21 baris Style: CHRONICLE di 3 docs). Naskah 200 kata (≈80–89 dtk), teks TTS persis di docs/VO_TEXT.txt (ejaan \"Audira\"). Cover topik BELUM dirender: perlu set gurun baru dulu. Catatan: checklist STATUS menandai tahap 7 ✓ palsu (sinkron dari file kit), abaikan.",
+      "files": [
+        "docs/VO_TEXT.txt",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/ART_DIRECTION.md",
+        "style/STYLE_DECISION.md",
+        "research/SOURCE_REGISTER.md",
+        "project/FORMAT-NASKAH.md",
+        "project/src/film/sets.tsx",
+        "F:/AUDIRA-SKILL-MOTION/kits/chronicle/KIT.md"
+      ],
+      "next": "Sesi B, tahap 5–8: (5) cek kit: cd project; npm run check-env; npm run smoke. (6) VO Cartesia audira_generate_voiceover dari docs/VO_TEXT.txt (voice 04b567df-2923-4b0c-896b-4b7df0a07e1a, id) → kunci timing per kalimat; tulis project/stories/samiri/naskah.txt format CHRONICLE (FORMAT-NASKAH.md: satu baris = satu kalimat VO, tag [TEMPAT]/[ANGKA]/[SUMBER]/[NAMA]/[TANGGAL]) + vo.wav. (7) Engine work di project/src/film/sets.tsx episode ini: tambah set `gurun` (dune, tenda GLB soldiers-tent/canvas-ridge-tent, unta camel-base, obor, altar batu bertulis AUDIRA QISSAH), `thur` (lereng batu + cahaya puncak), `laut` (pantai tanpa palem); patung anak sapi = GLB cow-base diskala kecil, material emas PBR metalness 1 rough 0.22 #d4a537; tungku lebur + emas cair; lauh = slab-path-stone. Tambah SetId di director/types.ts + kata kunci lokasi di plan.ts. Kontur: Musa emas, Harun cyan, Samiri merah; tanpa wajah. Render cover topik dari frame hook → style/cover-topic.png. SFX npm run sfx / scripts/sound.mjs. (8) contact sheet 6–8 frame 540×960 + audit:visual + draft/THEME_CHECK.md (G22) + juri buta (qa/jury.md) record_score. Render berat: pakai audira_render_batch (4 sesi lain render di PC sama).",
+      "snapshot": {
+        "episode": "EP42_SAMIRI_ANAK_SAPI_EMAS",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "CHRONICLE",
+        "memoryEpisode": "kisah-islam-EP42",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:02:55.882Z",
+      "doing": "Sesi B s2: tahap 5 SELESAI (check-env ok; smoke lolos setelah perbaikan kit: scripts/lib/* starter disalin tanpa timpa media.mjs; qa-gate.mjs/qa-scene.mjs/src/core/qa/scene-qa.tsx dikembalikan ke versi kit chronicle, versi starter disimpan sbg scripts/qa-delivery-starter.mjs + qa-scene-starter.mjs). Tahap 6 VO SELESAI: audio/vo.wav 86.66 dtk, 200 kata, timestamp Cartesia per kata di audio/vo-words.json (format [{text,start,end}]). GLB katalog sudah disalin ke project/public/glb/: cow-base, camel-base, soldiers-tent-4bd5b9, canvas-ridge-tent-f0df0d, gold-coin-29afc1, gold-ingot-85e62e, slab-path-stone-e526f7, large-coastal-boulder-a2cab1, medium-rock-e08405, cauldron-on-coals-ddbab6 (semua bbox ternormalisasi ±1, dasar y=-1; sapi tinggi 2.46, unta 3.33).",
+      "files": [
+        "audio/vo.wav",
+        "audio/vo-words.json",
+        "project/public/glb/",
+        "project/src/film/sets.tsx",
+        "project/src/director/plan.ts",
+        "project/src/director/types.ts",
+        "project/src/film/PlaceScene.tsx",
+        "project/src/film/ChronicleFilm.tsx",
+        "project/scripts/make.mjs",
+        "project/FORMAT-NASKAH.md",
+        "docs/STORYBOARD.md",
+        "docs/VO_TEXT.txt"
+      ],
+      "next": "Tahap 6b–7. Arsitektur kit: scripts/make.mjs <id> membaca stories/<id>/naskah.txt (FORMAT-NASKAH.md) → src/director/parse.ts+plan.ts → Plan (scenes kind place/map/end) → src/film/ChronicleFilm.tsx → PlaceScene.tsx (SETS[set].Comp + stageCast + shotKeys). Set dipilih dari SET_RULES regex di plan.ts (spec [TEMPAT]); SetId union di src/director/types.ts; SETS map di src/film/sets.tsx (tiap set = Comp + Anchors). LANGKAH: (a) tambah loader GLB (three/examples/jsm/loaders/GLTFLoader + delayRender, cache per url, normalisasi tinggi, dasar y=0) di src/film/glb.tsx; (b) tambah SetId gurun/thur/tungku/laut + SET_RULES (gurun|padang pasir|kemah → gurun; bukit thur|lereng|puncak → thur; tungku|lebur → tungku; laut|ombak → laut) SEBELUM aturan lama 'bukit'/'kemah'; (c) tambah flag extras di PlanScene.place dari spec: patung (sapi emas cow-base MeshStandard metalness 1 rough 0.22 #d4a537 di altar batu + teks AUDIRA QISSAH), lauh (2 slab jatuh), abu/bakar (Flames+AshColumn di patung), sendiri (lingkaran kosong); (d) make.mjs: bila stories/<id>/vo-words.json ada, pakai timestamp itu (bukan speech-run) → times per baris; (e) tulis project/stories/samiri/naskah.txt (22 baris VO persis docs/VO_TEXT.txt, 7 adegan sesuai docs/STORYBOARD.md: c00 gurun malam patung+16 kaum sujud, c01 thur fajar Musa=emas jalan + kemah Harun=cyan, c02 tungku api + gurun patung Samiri=merah, c03 gurun senja Harun vs kaum, Musa datang, lauh, c04 gurun siang Samiri sendiri, c05 gurun api → laut, c06 laut fajar + PENUTUP) dengan [ANGKA] 30 → 40 malam, [SUMBER] QS Taha 20:88/20:90/20:97/20:98, QS Al-A'raf 7:148, [NAMA] Nabi Harun/Samiri; salin audio/vo.wav + vo-words.json ke stories/samiri/; (f) node scripts/make.mjs samiri --plan lalu --stills → cover-topic.png dari frame hook (patung) ke ../style/; AudiraSignature (F:/AUDIRA-ALL-SKILL/assets/brand/AudiraSignature.tsx, seed samiri-anak-sapi-emas, handle @AUDIRAQISSAH) dipasang di ChronicleFilm; SFX via scripts/sound.mjs. Lalu tahap 8 (contact sheet, audit, THEME_CHECK, juri buta) dan Sesi C sesuai brief awal.",
+      "snapshot": {
+        "episode": "EP42_SAMIRI_ANAK_SAPI_EMAS",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "CHRONICLE",
+        "memoryEpisode": "kisah-islam-EP42",
+        "currentStage": "voice",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/QISSAH/AUDIRA_KISAH_ISLAM_2026/EP42_SAMIRI_ANAK_SAPI_EMAS/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:05:19.092Z",
+      "doing": "Sesi B s2 (lanjutan tahap 7, BELUM selesai). Tahap 5 & 6 SELESAI (lihat handover sebelumnya: kit fix, VO 86.66 dtk audio/vo.wav + audio/vo-words.json). Kode tahap 7 yang SUDAH ditulis (tsc --noEmit bersih): (1) project/src/film/glb.tsx — <Glb name pos h rotY material tint/> loader GLTFLoader+delayRender dari public/glb/, normalisasi tinggi, GOLD() material emas PBR; (2) project/src/film/sinai.tsx — set Gurun (dune, tenda+unta GLB, obor, Altar batu bertulis AUDIRA QISSAH + patung cow-base emas + cincin lenguhan; extras: patung, bakar (api+abu), sendiri (cincin merah kosong, tanpa kemah), lauh (2 slab)), Thur (lereng batu GLB + gunung + cahaya puncak), Tungku (cauldron-on-coals GLB, emas cair, koin/ingot jatuh), Laut (pantai tanpa palem, batu GLB, extras abu); anchors GURUN_A/GURUN_SOLO_A/THUR_A/TUNGKU_A/LAUT_A; (3) sets.tsx: SetProps.extras + SETS gurun/thur/tungku/laut; PlaceScene.tsx: pakai GURUN_SOLO_A bila gurun tanpa patung, teruskan extras, fog laut dibatasi; (4) director/types.ts SetId + place.extras; plan.ts SET_RULES baru di atas (tungku|lebur → tungku, bukit thur|lereng|puncak → thur, laut|ombak → laut, gurun|padang pasir → gurun) + extras dari kata di spec [TEMPAT] (patung, lauh, bakar, sendiri, abu, ...); (5) scripts/make.mjs: bila stories/<id>/vo-words.json ada → timing Cartesia per kata (urut), warning bila kata tidak cocok. CATATAN stager: semua anggota grup lead diletakkan di posisi lead → selalu beri 1 tokoh tunggal berwarna sebagai lead (Samiri=merah/Musa=emas/Harun=cyan) + kaum sebagai grup terpisah.",
+      "files": [
+        "project/src/film/glb.tsx",
+        "project/src/film/sinai.tsx",
+        "project/src/film/sets.tsx",
+        "project/src/film/PlaceScene.tsx",
+        "project/src/director/plan.ts",
+        "project/src/director/types.ts",
+        "project/scripts/make.mjs",
+        "project/FORMAT-NASKAH.md",
+        "docs/STORYBOARD.md",
+        "docs/VO_TEXT.txt",
+        "audio/vo.wav",
+        "audio/vo-words.json"
+      ],
+      "next": "Sesi s3 (masih Sesi B): (e) tulis project/stories/samiri/naskah.txt (FORMAT-NASKAH.md): 22 baris VO PERSIS docs/VO_TEXT.txt (kata harus sama urut dengan vo-words), 7 adegan [TEMPAT] sesuai docs/STORYBOARD.md: c00 'gurun malam, patung' TOKOH 1 Samiri (jubah) berdiri = merah, 16 kaum (jubah, sorban) sujud; c01a 'lereng bukit thur, pagi' TOKOH 1 Nabi Musa (jubah, sorban) berjalan = emas + [TANGGAL] BUKIT THUR / SINAI + [ANGKA] 30 → 40 malam, Janji Allah kepada Musa (QS 7:142); c01b 'gurun pagi, tenda' TOKOH 1 Nabi Harun (jubah, sorban) berdiri = cyan, 6 kaum + [NAMA] Nabi Harun — saudara Musa; c02a 'tungku lebur malam' TOKOH 1 Samiri = merah + [NAMA] Samiri; c02b 'gurun malam, patung' Samiri + kaum sujud + [SUMBER] tidak bisa berbicara, tidak menunjukkan jalan — QS Al-A'raf 7:148; c03 'gurun senja' Harun cyan menunjuk + kaum + [SUMBER] kalian hanya diuji dengan patung itu — QS Taha 20:90, lalu 'gurun senja, lauh' Musa emas + Harun cyan; c04 'gurun siang, sendiri' Samiri merah + [SUMBER] Lā misās — jangan sentuh aku — QS Taha 20:97; c05 'gurun malam, patung, bakar' lalu 'laut senja, abu'; c06 'laut pagi' + [SUMBER] Tuhanmu hanyalah Allah — QS Taha 20:98 + [PENUTUP] AUDIRA QISSAH — Samiri dan Anak Sapi Emas. (f) cp ../audio/vo.wav ../audio/vo-words.json stories/samiri/; node scripts/make.mjs samiri --plan (cek warning mismatch), lalu node scripts/make.mjs samiri --stills 2s,10s,22s,30s,45s,62s,75s,84s → periksa sheet; cover-topic.png (frame hook ~2s, 1080×1920) ke ../style/. (g) Pasang AudiraSignature (salin F:/AUDIRA-ALL-SKILL/assets/brand/AudiraSignature.tsx ke src/brand/, seed samiri-anak-sapi-emas, handle @AUDIRAQISSAH) sebagai lapisan terakhir di src/film/ChronicleFilm.tsx; SFX lewat scripts/sound.mjs (dipanggil make.mjs --preview). Tahap 8: contact sheet 6–8 frame 540×960, audit visual, draft/THEME_CHECK.md (G22), juri buta qa/jury.md → record_score (judge jury); maks 2 putaran, ≥3.5 setelah 2 putaran = terima. Akhir Sesi B: handover newSession → Sesi C (gerbang acc tahap 9 → audira_render_batch, QA, caption 6 platform, NOTES, 3 scheduled task). Jangan commit; kerja HANYA di folder EP42.",
+      "snapshot": {
+        "episode": "EP42_SAMIRI_ANAK_SAPI_EMAS",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "CHRONICLE",
+        "memoryEpisode": "kisah-islam-EP42",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/QISSAH/AUDIRA_KISAH_ISLAM_2026/EP42_SAMIRI_ANAK_SAPI_EMAS/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:13:46.444Z",
+      "doing": "Sesi B s3 (tahap 7, hampir selesai). SELESAI di s3: (e) project/stories/samiri/naskah.txt ditulis (22 baris VO persis, 12 adegan [TEMPAT] + PENUTUP), vo.wav + vo-words.json disalin ke stories/samiri/, plan OK 91.7 dtk 13 adegan tanpa warning mismatch kata. Perbaikan visual: (1) src/film/glb.tsx: SkeletonUtils.clone (camel/cow rigged sebelumnya digambar di origin) + setelah model masuk graph panggil useThree advance() lalu continueRender (frameloop never → dulu GLB tak pernah tergambar); GOLD emissive #7a4c10 0.55. (2) sinai.tsx: altar [0.2,0,-10], GURUN_A lead [-1.2,0,-6.4] (patung terlihat di hook), calf h 2.1 shadow off, light 40; lauh = 2 box tablet 0.8x1.2 dekat kaki tokoh; GURUN_SOLO_A second [-0.4,0,-3.8] rows [-4,4,-9,-5.5]; tungku: cauldron [-0.2,0,-5.6] di belakang-kiri Samiri, TUNGKU_A lead [0.5,0,-4.4]. (3) src/kits/chronicle/Overlay.tsx: Cite/NameTag/Counter label diberi panel gelap rgba(11,12,16,.74) + border emas, Cite top 250, src 36px emas. Stills 12 detik terakhir (out/samiri/stills/_sheet.jpg) bagus: patung emas di altar AUDIRA QISSAH, tungku+emas, Harun cyan, Musa emas, Samiri merah, lingkaran merah la misas, patung terbakar, abu ke laut. Ghost sapi gelap di kiri hook = unta jauh (bukan bug). Kelemahan sisa: langit pagi/siang/laut pagi pucat (washed), laut senja/pagi kosong tanpa tokoh, kerumunan senja (42s) dekat kamera.",
+      "command": "cd project && node scripts/make.mjs samiri --stills 3s,11s,17s,24s,31s,42s,51s,59s,68s,74s,78s,84s",
+      "files": [
+        "project/stories/samiri/naskah.txt",
+        "project/src/film/glb.tsx",
+        "project/src/film/sinai.tsx",
+        "project/src/kits/chronicle/Overlay.tsx",
+        "project/out/samiri/stills/_sheet.jpg",
+        "project/src/film/ChronicleFilm.tsx",
+        "project/scripts/sound.mjs"
+      ],
+      "next": "Sesi s4 (masih Sesi B): 1) node scripts/make.mjs samiri --stills 3s,42s (cek calf h2.1 + rows baru); cover topik: node scripts/stills.mjs ../style/_cover 3s ChroniclePreview 2 out/samiri/plan.json → salin png ke ../style/cover-topic.png (1080x1920). 2) Salin F:/AUDIRA-ALL-SKILL/assets/brand/AudiraSignature.tsx ke project/src/brand/, pasang sebagai lapisan terakhir di src/film/ChronicleFilm.tsx (komponen ChronicleFilm, return AbsoluteFill baris ~91-105): <AudiraSignature seed=\"samiri-anak-sapi-emas\" handle=\"@AUDIRAQISSAH\" />. 3) Audio: kit make.mjs memanggil scripts/sound.mjs (score orisinal + SFX + VO → stories/samiri/mix.wav, −14 LUFS) saat --preview/--final; pertimbangkan --no-music + SFX saja (kisah Islam) dan pastikan G18 (VO ≥12 LU di atas SFX). 4) Tahap 8: contact sheet 6–8 frame 540x960 (detik aman: 3,11,24,31,42,59,68,74 — sesudah label terkunci), npm run audit:visual, draft/THEME_CHECK.md (G22), juri buta qa/jury.md → record_score judge jury (style CHRONICLE, episode kisah-islam-EP42). Maks 2 putaran; ≥3.5 setelah 2 putaran = terima. 5) Akhir Sesi B: handover newSession → Sesi C (gerbang acc → audira_render_batch, QA, caption 6 platform, NOTES, 3 scheduled task). Jangan commit; kerja HANYA di folder EP42.",
+      "snapshot": {
+        "episode": "EP42_SAMIRI_ANAK_SAPI_EMAS",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "CHRONICLE",
+        "memoryEpisode": "kisah-islam-EP42",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/QISSAH/AUDIRA_KISAH_ISLAM_2026/EP42_SAMIRI_ANAK_SAPI_EMAS/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:18:55.676Z",
+      "doing": "s4 Sesi B tahap 8: render klip 35-55s + audit kamera, lalu juri buta",
+      "command": "npx remotion render src/index.ts ChroniclePreview out/samiri/draft/clip_35-55.mp4 --props=out/samiri/props.json --frames=1050-1650 && camera-audit.mjs → ../draft/camera.json",
+      "files": [
+        "project/src/brand/AudiraSignature.tsx",
+        "project/src/brand/channel.json",
+        "project/src/film/ChronicleFilm.tsx",
+        "project/src/film/stage.ts",
+        "project/scripts/sound.mjs",
+        "style/cover-topic.png",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/look.json"
+      ],
+      "next": "record_score self+jury (ceilings draft/look.json, camera draft/camera.json, still draft/contact-sheet.jpg); lalu handover newSession → Sesi C",
+      "snapshot": {
+        "episode": "EP42_SAMIRI_ANAK_SAPI_EMAS",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "CHRONICLE",
+        "memoryEpisode": "kisah-islam-EP42",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/QISSAH/AUDIRA_KISAH_ISLAM_2026/EP42_SAMIRI_ANAK_SAPI_EMAS/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:20:24.557Z",
+      "doing": "Sesi B selesai (s4): tahap 7 ditutup + tahap 8 draf juri LOLOS. Dikerjakan: (1) AudiraSignature dipasang di project/src/brand/ (AudiraSignature.tsx, channelOf.ts, channel.json QISSAH/@AUDIRAQISSAH) sebagai lapisan terakhir ChronicleFilm.tsx, seed samiri-anak-sapi-emas, disembunyikan saat qaNoOverlay. (2) Cover topik style/cover-topic.png 1080x1920 dari frame 3s (patung emas di altar, kaum sujud, Samiri merah). (3) Fix framing medium shot di src/film/stage.ts: d 7.0, fov 42, aim y0.89 → kaki tokoh y≈1264 di atas caption 1300 (sebelumnya y≈1700). (4) Audio: scripts/sound.mjs MUSIC=0 (kisah nabi tanpa musik), SFX=0.22; mix public/stories/samiri/mix.wav -14.0 LUFS TP -1.5; G18c VO -27.3 vs SFX stem -39.7 = 12.4 LU LOLOS; plan.json audio → stories/samiri/mix.wav; salinan di audio/mix + audio/sfx. (5) Draf: draft/contact-sheet.jpg (8 frame 3,11,17,24,42,59,68,74 s), draft/look.json (ceiling 5 semua), draft/camera.json (klip 35-55 s: 5/5), draft/THEME_CHECK.md 8/8 ya. Skor self 4.0; juri buta putaran 1 = 3.83 LOLOS (lighting 4, material 3, depth 4, composition 4, motion 4, readability 4). Kelemahan juri: cincin cakram emas transparan memotong patung di hook; siluet matte datar; F8 tanpa laut/abu (laut muncul di 76-87 s). Durasi film 91.6 dtk (VO 86.66 + end card).",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/look.json",
+        "draft/camera.json",
+        "draft/THEME_CHECK.md",
+        "style/cover-topic.png",
+        "project/src/film/ChronicleFilm.tsx",
+        "project/src/film/stage.ts",
+        "project/scripts/sound.mjs",
+        "project/src/brand/channel.json",
+        "project/out/samiri/plan.json",
+        "project/public/stories/samiri/mix.wav"
+      ],
+      "next": "Sesi C tahap 9: tampilkan draft/contact-sheet.jpg, skor juri 3.83, durasi 91.6 dtk, G18c 12.4 LU, lalu TUNGGU acc pengguna. Setelah acc: audira_episode_status update stage final approved:true. PENTING: project/ tidak punya scripts/render-final.mjs (audira_render_batch plan menolak). Pilihan: audira_render_batch start dengan updateScripts:true (salin render-final dari starter; mix sudah di-bake di plan.audio, jadi jangan pass --sfx ganda) ATAU kit sendiri `cd project && node scripts/make.mjs samiri --final` (render 1080x1920 60fps + QA otomatis di out/samiri/qa/; make.mjs memanggil ulang sound.mjs dengan MUSIC 0 SFX 0.22). Hanya satu render 3D GPU bersamaan (sesi EP43-46 paralel) → cek audira_render_batch queue dulu. Lalu: metadata kepemilikan ffmpeg, ukur -14 LUFS TP<-1, record_score final (self + juri), tahap 10 caption 6 platform (SOCIAL_CAPTIONS.md + validator), NOTES.md, 3 scheduled task review. Jangan commit; kerja hanya di folder EP42.",
+      "snapshot": {
+        "episode": "EP42_SAMIRI_ANAK_SAPI_EMAS",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "CHRONICLE",
+        "memoryEpisode": "kisah-islam-EP42",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/QISSAH/AUDIRA_KISAH_ISLAM_2026/EP42_SAMIRI_ANAK_SAPI_EMAS/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:48:01.313Z",
+      "doing": "Sesi C s5: acc final diterima (\"Gas render\"). Render final kit 1080x1920@60 + QA otomatis berjalan.",
+      "command": "cd project && node scripts/make.mjs samiri --final  (output project/out/samiri/samiri_1080x1920_60fps.mp4, QA out/samiri/qa/)",
+      "files": [
+        "project/out/samiri/samiri_1080x1920_60fps.mp4",
+        "project/out/samiri/qa/report.json"
+      ],
+      "next": "Metadata kepemilikan ffmpeg -> FINAL_SAMIRI_tagged.mp4 di folder EP, ukur -14 LUFS TP<-1, record_score final self+juri, tahap 10 caption + NOTES + scheduled task review.",
+      "snapshot": {
+        "episode": "EP42_SAMIRI_ANAK_SAPI_EMAS",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "CHRONICLE",
+        "memoryEpisode": "kisah-islam-EP42",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/QISSAH/AUDIRA_KISAH_ISLAM_2026/EP42_SAMIRI_ANAK_SAPI_EMAS/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:48:01.313Z",
+      "doing": "Sesi C s5: acc final diterima (\"Gas render\"). Render final kit 1080x1920@60 + QA otomatis berjalan.",
+      "command": "cd project && node scripts/make.mjs samiri --final  (output project/out/samiri/samiri_1080x1920_60fps.mp4, QA out/samiri/qa/)",
+      "files": [
+        "project/out/samiri/samiri_1080x1920_60fps.mp4",
+        "project/out/samiri/qa/report.json"
+      ],
+      "next": "Metadata kepemilikan ffmpeg -> FINAL_SAMIRI_tagged.mp4 di folder EP, ukur -14 LUFS TP<-1, record_score final self+juri, tahap 10 caption + NOTES + scheduled task review.",
+      "snapshot": {
+        "episode": "EP42_SAMIRI_ANAK_SAPI_EMAS",
+        "topic": "Kisah-kisah menakjubkan dalam Al-Quran dan sejarah Islam",
+        "style": "CHRONICLE",
+        "memoryEpisode": "kisah-islam-EP42",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/QISSAH/AUDIRA_KISAH_ISLAM_2026/EP42_SAMIRI_ANAK_SAPI_EMAS/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T16:05:16.685Z"
+    }
+  ],
+  "session": 5,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP42 Samiri · s2",
+      "at": "2026-11-24T14:58:51.735Z"
+    },
+    {
+      "no": 3,
+      "title": "EP42 Samiri · s3",
+      "at": "2026-11-24T15:05:19.092Z"
+    },
+    {
+      "no": 4,
+      "title": "EP42 Samiri · s4",
+      "at": "2026-11-24T15:13:46.443Z"
+    },
+    {
+      "no": 5,
+      "title": "EP42 Samiri · s5",
+      "at": "2026-11-24T15:20:24.557Z"
+    }
+  ]
+}

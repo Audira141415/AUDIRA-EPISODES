@@ -1,0 +1,203 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#2A1D16}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.05;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.34) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.32) 42%,rgba(0,0,0,0.32) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#FFF3E2;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.pre{position:absolute;left:-2000px;top:0;opacity:0}
+#ash{position:absolute;inset:0;z-index:12;pointer-events:none;opacity:0;background:radial-gradient(ellipse at 50% 45%,#5B463A 0%,#2B1F19 55%,#120C09 100%)}
+.cd{position:relative;background:rgba(22,17,14,.80);border:1.5px solid rgba(255,196,150,.30);border-radius:12px;box-shadow:0 14px 40px rgba(0,0,0,.45)}
+.kk{display:inline-flex;align-items:center;gap:14px;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:27px;letter-spacing:.08em;color:#FFF3E2;margin-bottom:14px;padding:6px 18px 6px 6px;background:rgba(22,17,14,.78);border-radius:8px;border:1.5px solid rgba(255,196,150,.3)}
+.kk i{font-style:normal;background:#FF7A2F;color:#16110E;padding:3px 12px;border-radius:5px}
+.h1{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+.h1 .ln{font-family:'Anton',Impact,sans-serif;font-size:124px;line-height:1.0;letter-spacing:.01em;color:#FFF3E2;text-shadow:0 6px 30px rgba(0,0,0,.7),0 2px 0 rgba(0,0,0,.6)}
+.h1 .b2{font-size:94px;color:#A9DBFF;line-height:1.02}
+.chips{display:flex;margin-top:16px}
+.ch{font-style:normal;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:32px;letter-spacing:.05em;color:#16110E;background:#FF7A2F;padding:8px 18px;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.45)}
+.ch.ice{background:#A9DBFF}
+.row{display:flex;flex-direction:column;margin-top:14px;padding:12px 24px 14px;border-left:10px solid #FF7A2F;max-width:900px;width:max-content;box-sizing:border-box}
+.row b{display:block;font-family:'Archivo',sans-serif;font-weight:800;font-size:50px;line-height:1.06;color:#FFF3E2;letter-spacing:-.005em}
+.row span{display:block;font-family:'Archivo',sans-serif;font-weight:600;font-size:31px;line-height:1.2;color:#D9C6B4;max-width:840px;margin-top:2px}
+.row.em b{color:#FFB27A}.row.calm{border-left-color:#B9A99A}.row.su{border-left-color:#E9D27A}.row.su b{color:#F6E7AE}
+.row.ic{border-left-color:#A9DBFF}
+.mega{display:inline-flex;align-items:baseline;gap:12px;margin-top:14px;padding:6px 28px 12px;border-left:10px solid #FF7A2F}
+.mega b{font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:170px;line-height:1;color:#FFF3E2}
+.mega small{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:48px;color:#FFB27A}
+.hgt b{color:#FFD2B0}
+.hrow{display:inline-flex;align-items:center;gap:18px;margin-top:14px;padding:10px 24px;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:40px;color:#FFF3E2}
+.hrow s{color:#A9988A;text-decoration-thickness:3px;text-decoration-color:#FF7A2F}.hrow em{font-style:normal;color:#FF7A2F}.hrow b{color:#FFF3E2}
+.yr{display:inline-flex;flex-direction:column;padding:4px 30px 16px;border-left:10px solid #A9DBFF;margin-top:6px}
+.yr b{font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:190px;line-height:1;color:#A9DBFF}
+.yr span{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:34px;letter-spacing:.06em;color:#FFF3E2}
+.fk{display:inline-block;margin-top:16px;padding:8px 30px 16px;font-family:'Anton',Impact,sans-serif;font-size:122px;line-height:1.05;color:#F4E9D6;border-left:10px solid #FF7A2F}
+.tri{display:flex;gap:16px;margin-top:6px}
+.tri i{font-style:normal;font-family:'Anton',Impact,sans-serif;font-size:88px;line-height:1;color:#16110E;background:#FFF3E2;padding:10px 22px 12px;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.45)}
+.tri i:nth-child(2){background:#FFB27A}.tri i:nth-child(3){background:#A9DBFF}
+.note{margin-top:16px;font-family:'Archivo',sans-serif;font-weight:600;font-size:36px;color:#FFF3E2;text-shadow:0 2px 12px rgba(0,0,0,.8)}
+.q{margin-top:20px;padding:20px 28px 22px;font-family:'Archivo',sans-serif;font-weight:800;font-size:56px;line-height:1.1;color:#FFF3E2;border-left:10px solid #FF7A2F;max-width:900px;box-sizing:border-box}
+#ripple{position:absolute;left:56px;top:1108px;width:920px;height:160px;z-index:10}
+#ripple .rings{position:absolute;left:0;top:0;border-radius:18px;background:linear-gradient(90deg,rgba(22,17,14,.82),rgba(22,17,14,.55));box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.rg{fill:none;stroke:rgba(255,196,150,.42);stroke-width:2;stroke-dasharray:6 7;transform-box:fill-box;transform-origin:center}
+.wv{fill:none;stroke:#FF7A2F;stroke-width:5;opacity:0;transform-box:fill-box;transform-origin:center}
+#ripple .vol{position:absolute;left:6px;top:28px;width:80px;display:flex;flex-direction:column;align-items:center}
+#ripple .vol svg{width:66px;height:66px}
+#ripple .vol b{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:15px;letter-spacing:.06em;color:#FFF3E2;margin-top:-2px}
+.pin{position:absolute;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;padding:4px 9px 5px;background:rgba(255,243,226,.96);border-radius:8px;box-shadow:0 6px 16px rgba(0,0,0,.45);white-space:nowrap}
+.pin.hi{top:10px}.pin.lo{top:86px}
+.pin i{font-style:normal;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:16px;line-height:1;color:#9A5A30;letter-spacing:.06em}
+.pin b{font-family:'Archivo',sans-serif;font-weight:800;font-size:21px;line-height:1.08;color:#16110E}
+.pin.fk{background:#FF7A2F}.pin.fk i{color:#16110E}
+.pin:before{content:"";position:absolute;left:50%;width:2px;height:14px;background:rgba(255,243,226,.8)}
+.pin.hi:before{top:100%}.pin.lo:before{bottom:100%}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="89.54" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI 3D &middot; BUKAN CUPLIKAN ASLI</div>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@600;800&family=IBM+Plex+Mono:wght@500;600&display=block">
+<div class="pre"><span style="font-family:'Anton',sans-serif">TAMBORA 1815</span><span style="font-family:'Archivo',sans-serif;font-weight:800">Sumbawa</span><span style="font-family:'Archivo',sans-serif;font-weight:600">Sumbawa</span><span style="font-family:'IBM Plex Mono',monospace;font-weight:600">2.851 m</span><span style="font-family:'IBM Plex Mono',monospace;font-weight:500">2.851 m</span></div>
+<div id="ash"></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2:April">
+  <div class="kk"><i>EP 42</i>FAKTA SEJARAH NEGARA</div>
+  <div class="h1"><span class="ln">GUNUNG MELETUS,</span><span class="ln b2">EROPA KEHILANGAN</span><span class="ln b2">MUSIM PANAS</span></div>
+  <div class="chips"><i class="ch" data-at="s1:Indonesia" data-fx="stampc">TAMBORA &middot; SUMBAWA &middot; INDONESIA</i></div>
+  <div class="chips"><i class="ch ice" data-at="s1:Eropa" data-fx="stampc">&#10052; 1816 &middot; TANPA MUSIM PANAS</i></div>
+</div>
+<div class="p" data-in="s2:April" data-out="s2:Dentumannya">
+  <div class="kk"><i>01</i>APRIL 1815</div>
+  <div class="cd row " data-at="s2:Tambora" data-fx="card"><b>GUNUNG TAMBORA</b><span>Pulau Sumbawa, Nusa Tenggara Barat</span></div>
+  <div class="cd row em" data-at="s2:terkuat" data-fx="card"><b>LETUSAN TERKUAT</b><span>dalam sejarah yang tercatat &middot; skala VEI 7</span></div>
+</div>
+<div class="p" data-in="s2:Dentumannya" data-out="s3">
+  <div class="kk"><i>01</i>DENTUMANNYA TERDENGAR SAMPAI</div>
+  <div class="cd row " data-at="s2:Batavia" data-fx="card"><b>BATAVIA</b><span>kini Jakarta</span></div>
+  <div class="cd mega" data-at="s2:seribu-0.3" data-fx="card"><small>&gt;</small><b class="ct nb" data-from="0" data-to="1260" data-a="s2:seribu-0.3" data-d="1.4" data-dec="0">0</b><small>km</small></div>
+</div>
+<div class="p" data-in="s3" data-out="s3:Desa-desa">
+  <div class="kk"><i>02</i>SEPERTIGA TUBUH GUNUNG LENYAP</div>
+  <div class="cd mega hgt" data-at="s3:Tingginya" data-fx="card"><small>&plusmn;</small><b class="ct nb" data-from="4300" data-to="2851" data-a="s3:menjadi" data-d="2.6" data-dec="0">4300</b><small>m</small></div>
+  <div class="cd hrow" data-at="s3:menjadi" data-fx="card"><s>&plusmn;4.300 m</s><em>&rarr;</em><b>2.851 m</b></div>
+</div>
+<div class="p" data-in="s3:Desa-desa" data-out="s4">
+  <div class="kk"><i>02</i>KAKI GUNUNG</div>
+  <div class="cd row em" data-at="s3:Desa-desa" data-fx="card"><b>DESA-DESA TERSAPU</b><span>oleh awan panas (aliran piroklastik)</span></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="kk"><i>03</i>SUMBAWA &amp; LOMBOK</div>
+  <div class="cd row " data-at="s4:Abu" data-fx="card"><b>ABU MENUTUP SAWAH</b><span>panen hilang, kelaparan dan penyakit menyusul</span></div>
+  <div class="cd row calm" data-at="s4:puluhan" data-fx="card"><b>PULUHAN RIBU JIWA</b><span>korban letusan, kelaparan, dan penyakit</span></div>
+  <div class="cd row calm" data-at="s4:tujuh" data-fx="card"><b>SATU PERKIRAAN: SEDIKITNYA 71.000</b><span>angka antarsumber berbeda</span></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="kk"><i>04</i>TIDAK BERHENTI DI NUSANTARA</div>
+  <div class="cd row su" data-at="s5:belerang" data-fx="card"><b>GAS BELERANG NAIK</b><span>ke lapisan atas atmosfer (stratosfer)</span></div>
+  <div class="cd row su" data-at="s5:menyebar" data-fx="card"><b>MENYEBAR KE SELURUH DUNIA</b></div>
+  <div class="cd row su" data-at="s5:memantulkan" data-fx="card"><b>MEMANTULKAN SINAR MATAHARI</b><span>bumi menjadi lebih dingin</span></div>
+</div>
+<div class="p" data-in="s6" data-out="s6:Panen">
+  <div class="kk"><i>05</i>SETAHUN KEMUDIAN</div>
+  <div class="cd yr" data-at="s6:1816" data-fx="card"><b>1816</b><span>TAHUN TANPA MUSIM PANAS</span></div>
+  <div class="cd row ic" data-at="s6:Salju" data-fx="card"><b>SALJU DI BULAN JUNI</b><span>timur laut Amerika</span></div>
+</div>
+<div class="p" data-in="s6:Panen" data-out="s6:Di">
+  <div class="kk"><i>05</i>EROPA 1816</div>
+  <div class="cd row ic" data-at="s6:Panen" data-fx="card"><b>PANEN GAGAL</b></div>
+  <div class="cd row ic" data-at="s6:harga" data-fx="card"><b>HARGA PANGAN MELONJAK</b></div>
+  <div class="cd row ic" data-at="s6:kerusuhan" data-fx="card"><b>KERUSUHAN PANGAN</b><span>pecah di banyak kota</span></div>
+</div>
+<div class="p" data-in="s6:Di" data-out="s7">
+  <div class="kk"><i>05</i>INDIA 1816</div>
+  <div class="cd row ic" data-at="s6:India" data-fx="card"><b>MUSIM HUJAN KACAU</b></div>
+  <div class="cd row ic" data-at="s6:kolera" data-fx="card"><b>WABAH KOLERA</b><span>menyebar dari Benggala</span></div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Dari">
+  <div class="kk"><i>06</i>SWISS &middot; JUNI 1816</div>
+  <div class="cd row ic" data-at="s7:hujan" data-fx="card"><b>HUJAN TAK BERHENTI</b><span>sekelompok penulis terkurung di Villa Diodati, Jenewa</span></div>
+  <div class="cd row " data-at="s7:berlomba" data-fx="card"><b>LOMBA CERITA HANTU</b><span>untuk mengisi waktu</span></div>
+</div>
+<div class="p" data-in="s7:Dari" data-out="s8">
+  <div class="kk"><i>06</i>DARI LOMBA ITU</div>
+  <div class="cd row " data-at="s7:Mary" data-fx="card"><b>MARY SHELLEY MENULIS</b></div>
+  <div class="cd fk" data-at="s7:Frankenstein" data-fx="card">Frankenstein</div>
+</div>
+<div class="p" data-in="s8" data-out="s8:Menurut">
+  <div class="kk"><i>07</i>SATU GUNUNG DI SUMBAWA</div>
+  <div class="tri"><i data-at="s8:cuaca" data-fx="stampc">CUACA</i><i data-at="s8:perut" data-fx="stampc">PERUT</i><i data-at="s8:sastra" data-fx="stampc">SASTRA</i></div>
+  <div class="note" data-at="s8:dunia" data-fx="fade">ikut berubah di seluruh dunia</div>
+</div>
+<div class="p" data-in="s8:Menurut" data-out="@END">
+  <div class="cd q">Kalau letusan sebesar ini terjadi hari ini, apa yang paling dulu terdampak? Tulis di komentar!</div>
+</div>
+<div id="ripple" data-at="s2:Dentumannya" data-fx="fade">
+  <svg class="rings" viewBox="0 0 920 160" width="920" height="160">
+    <defs><clipPath id="rc"><rect x="0" y="0" width="920" height="160" rx="18"/></clipPath></defs>
+    <g clip-path="url(#rc)"><circle class="rg" cx="46" cy="80" r="122" data-at="s2:Dentumannya" data-fx="ring"/><circle class="rg" cx="46" cy="80" r="230" data-at="s4:Abu" data-fx="ring"/><circle class="rg" cx="46" cy="80" r="338" data-at="s5:belerang" data-fx="ring"/><circle class="rg" cx="46" cy="80" r="446" data-at="s6:Salju" data-fx="ring"/><circle class="rg" cx="46" cy="80" r="554" data-at="s6:Panen" data-fx="ring"/><circle class="rg" cx="46" cy="80" r="662" data-at="s6:kolera" data-fx="ring"/><circle class="rg" cx="46" cy="80" r="770" data-at="s7:Frankenstein" data-fx="ring"/><circle class="wv" cx="46" cy="80" r="40"/></g>
+  </svg>
+  <div class="vol"><svg viewBox="0 0 64 64"><path d="M4 56 L24 22 L28 26 L36 26 L40 22 L60 56 Z" fill="#5A4436" stroke="#FFF3E2" stroke-width="3" stroke-linejoin="round"/><path d="M26 24 C24 12 34 14 31 4 M33 24 C38 14 44 16 42 6" fill="none" stroke="#FF7A2F" stroke-width="4" stroke-linecap="round"/></svg><b>TAMBORA</b></div>
+  <div class="pin hi" style="left:168px" data-at="s2:Dentumannya" data-fx="pin"><i>01</i><b>DENTUMAN</b></div><div class="pin lo" style="left:276px" data-at="s4:Abu" data-fx="pin"><i>02</i><b>ABU</b></div><div class="pin hi" style="left:384px" data-at="s5:belerang" data-fx="pin"><i>03</i><b>BELERANG</b></div><div class="pin lo" style="left:492px" data-at="s6:Salju" data-fx="pin"><i>04</i><b>SALJU JUNI</b></div><div class="pin hi" style="left:600px" data-at="s6:Panen" data-fx="pin"><i>05</i><b>GAGAL PANEN</b></div><div class="pin lo" style="left:708px" data-at="s6:kolera" data-fx="pin"><i>06</i><b>KOLERA</b></div><div class="pin hi fk" style="left:816px" data-at="s7:Frankenstein" data-fx="pin"><i>07</i><b>FRANKENSTEIN</b></div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 42</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":5.162,"s2":5.322,"s2e":16.448,"s3":16.608,"s3e":26.654,"s4":26.814,"s4e":36.11,"s5":36.27,"s5e":45.958,"s6":46.118,"s6e":64.256,"s7":64.416,"s7e":75.09,"s8":75.25,"s8e":86.542,"end":86.542,"dur":89.54,"outro":86.792},AT={"s1:gunung":0.518,"s1:meletus":1.663,"s1:Eropa":3.521,"s2:Gunung":6.71,"s2:Sumbawa":7.933,"s2:Letusannya":9.806,"s2:Batavia":13.77,"s2:seribu":14.947,"s2:kilometer":15.643,"s2:Dentumannya-0.3":12.278,"s3:Sepertiga":16.608,"s3:lenyap":17.695,"s3:Tingginya":18.635,"s3:empat":19.936,"s3:menjadi":21.283,"s3:meter#2":23.171,"s3:Desa-desa":24.348,"s3:tersapu":25.385,"s3:awan":25.865,"s4:Abu":26.819,"s4:sawah":27.469,"s4:Lombok":28.552,"s4:Korban":29.57,"s4:puluhan":32.686,"s4:tujuh":35.212,"s5:Tapi":36.283,"s5:Nusantara":37.815,"s5:Gas":38.767,"s5:Gas-0.35":38.417,"s5:naik":40.168,"s5:atmosfer":41.22,"s5:menyebar":42.025,"s5:dunia":42.784,"s5:memantulkan":43.745,"s5:matahari":45.308,"s6:1816":46.633,"s6:dijuluki":47.887,"s6:Salju":50.846,"s6:Juni":52.007,"s6:Amerika":53.277,"s6:Panen":54.42,"s6:Eropa":55.178,"s6:harga":55.72,"s6:melonjak":56.308,"s6:kerusuhan":57.499,"s6:kota":58.768,"s6:Di":59.499,"s6:Di-0.2":59.299,"s6:India":59.669,"s6:hujan":61.028,"s6:kacau":61.292,"s6:kolera":62.94,"s6:Benggala":63.869,"s7:Swiss":64.896,"s7:hujan":65.376,"s7:mengurung":66.212,"s7:penulis":67.079,"s7:vila":67.868,"s7:mengisi":68.794,"s7:berlomba":70.326,"s7:hantu":71.472,"s7:Dari":72.121,"s7:Mary":73.402,"s7:Frankenstein":74.439,"s8:Satu":75.25,"s8:Sumbawa":76.004,"s8:cuaca":76.716,"s8:perut":77.088,"s8:sastra":78.156,"s8:dunia":78.589,"s8:Menurut":79.409,"s8:letusan":80.58,"s8:AUDIRA":84.685,"s2:April":5.332,"s1:Indonesia":0.874,"s2:Dentumannya":12.578,"s2:Tambora":6.973,"s2:terkuat":10.503,"s2:seribu-0.3":14.647,"s5:belerang":39.278},DUR=89.54,OUT=86.792;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ card:(e,t)=>{tl.fromTo(e,{opacity:0,y:34},{opacity:1,y:0,duration:.42,ease:'power3.out',immediateRender:false},t);},
+ stampc:(e,t)=>{tl.fromTo(e,{scale:1.35,opacity:0},{scale:1,opacity:1,duration:.26,ease:'power3.out',immediateRender:false},t);},
+ ring:(e,t)=>{tl.fromTo(e,{scale:.05,opacity:0},{scale:1,opacity:1,duration:.9,ease:'power2.out',immediateRender:false},t-.1);const w=q('#ripple .wv');tl.fromTo(w,{scale:.4,opacity:.95},{scale:(+e.getAttribute('r'))/40*1.12,opacity:0,duration:1.0,ease:'power1.out',immediateRender:false},t-.15);},
+ pin:(e,t)=>{tl.fromTo(e,{opacity:0,y:(e.classList.contains('hi')?-14:14),scale:.7},{opacity:1,y:0,scale:1,duration:.38,ease:'back.out(2)',immediateRender:false},t+.25);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{opacity:0,y:40},{opacity:1,y:0,duration:.42,ease:'power3.out'},a-.02),POUT=(tl,p,b)=>tl.to(p,{opacity:0,y:-30,duration:.24,ease:'power2.in'},b-.24);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{const cs=["s2","s2:Dentumannya-0.3","s3","s5:Gas-0.35","s6","s6:Di-0.2","s7","s8"].map(k=>AT[k]??K[k]);let k=0;for(const c of cs){const d=Math.abs(t-c);if(d<0.32)k=Math.max(k,1-Math.pow(d/0.32,2));}q('#ash').style.opacity=k.toFixed(3);
+   const pn=document.querySelectorAll('#ripple .pin');const w=AT['s8:Satu'];pn.forEach((p,i)=>{const d=t-(w+0.5+i*0.12);p.style.filter=(d>0&&d<0.5)?'brightness(1.25)':'none';});};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP42_TAMBORA_TAHUN_TANPA_MUSIM_PANAS")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

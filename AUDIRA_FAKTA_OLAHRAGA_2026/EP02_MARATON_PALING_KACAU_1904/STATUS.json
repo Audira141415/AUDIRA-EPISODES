@@ -1,0 +1,657 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP02_MARATON_PALING_KACAU_1904",
+  "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+  "createdAt": "2026-11-22T06:26:14.118Z",
+  "updatedAt": "2026-11-23T08:24:14.866Z",
+  "currentStage": "complete",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T06:29:39.138Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-22T06:26:14.118Z",
+      "startedAt": "2026-11-22T06:26:14.118Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T06:29:39.138Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-22T06:26:14.091Z",
+      "startedAt": "2026-11-22T06:26:14.091Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T07:23:02.486Z",
+      "notes": [
+        {
+          "at": "2026-11-22T07:04:25.372Z",
+          "text": "Rekomendasi: VINTAGEFORGE (utama), FILM16, TIMEFORGE. Menunggu pilihan pengguna."
+        },
+        {
+          "at": "2026-11-22T07:05:15.107Z",
+          "text": "Pengguna pilih VINTAGEFORGE (2026-11-22). Berikutnya: cover topik."
+        },
+        {
+          "at": "2026-11-22T07:18:23.802Z",
+          "text": "Cover topik A/B dirender: style/candidates/cover-topic-A.png, -B.png (Ep02CoverA/B). Menunggu acc pengguna."
+        },
+        {
+          "at": "2026-11-22T07:23:02.486Z",
+          "text": "Pengguna acc cover B (\"B, acc\", 2026-11-22). cover-topic.png = Ep02CoverB, framing FRAMING_B."
+        }
+      ],
+      "startedAt": "2026-11-22T07:04:25.372Z",
+      "doneAt": "2026-11-22T07:23:02.486Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T07:42:19.465Z",
+      "notes": [
+        {
+          "at": "2026-11-22T07:34:35.867Z",
+          "text": "sync: naskah ada; menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-22T07:35:22.467Z",
+          "text": "Docs tahap 4 ditulis (ART_DIRECTION, SCRIPT 200 kata, STORYBOARD 9 baris/7 set, ASSET_MANIFEST). Menunggu acc pengguna."
+        },
+        {
+          "at": "2026-11-22T07:42:19.465Z",
+          "text": "Pengguna: \"Acc semua\" (naskah + storyboard + art direction), 2026-11-22."
+        }
+      ],
+      "startedAt": "2026-11-22T07:34:21.476Z",
+      "doneAt": "2026-11-22T07:42:19.465Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T07:43:10.506Z",
+          "text": "Studio bersama sudah ada; 9 GLB baru disalin ke studio/public/glb; check-env Ready. Smoke dilewati: studio sudah merender EP01 + cover EP02."
+        }
+      ],
+      "doneAt": "2026-11-22T07:43:10.506Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T07:50:58.522Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-22T07:43:28.967Z",
+      "startedAt": "2026-11-22T07:43:28.967Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T08:19:10.316Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T08:10:58.506Z",
+      "startedAt": "2026-11-22T08:10:58.506Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T08:19:10.316Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json FAIL (perlu perbaikan sebelum final); menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-22T13:07:56.258Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json PASS"
+        }
+      ],
+      "startedAt": "2026-11-22T08:18:39.625Z",
+      "doneAt": "2026-11-22T08:38:24.231Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T08:24:03.820Z",
+          "text": "FINAL_EP02.mp4 88.1s 1080x1920@60, -13.6 LUFS TP -1.8, metadata+Ed25519+C2PA valid. Juri buta final 3.83 LOLOS (depth 3). Sheet final/contact-sheet-final.jpg. Draf 3.5 tidak lolos; render atas perintah pengguna (--skip-memory-gate)."
+        }
+      ],
+      "doneAt": "2026-11-23T08:24:03.820Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T13:09:18.335Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T08:24:08.045Z",
+          "text": "SOCIAL_CAPTIONS.md lolos validator; NOTES.md lengkap; append_lesson VINTAGEFORGE (worked+failed); 3 scheduled task review-maraton-paling-kacau-1904-24h/-72h/-7d (25 Nov, 27 Nov, 1 Des 2026 19.00 WIB); perantara studio/out/ep02, ep02-draft, ep02-d1, ep02-stills, ep02-clip.mp4 dihapus; sig.json + render.json dipindah ke folder episode."
+        }
+      ],
+      "doneAt": "2026-11-23T08:24:08.045Z",
+      "startedAt": "2026-11-22T13:08:05.342Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T08:23:31.399Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        },
+        {
+          "at": "2026-11-23T08:24:14.239Z",
+          "text": "Belum ada data tayang. Dijadwalkan: review-maraton-paling-kacau-1904-24h (25 Nov), -72h (27 Nov), -7d (1 Des 2026), 19.00 WIB. Task -7d menandai done."
+        },
+        {
+          "at": "2026-11-23T08:24:14.866Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-23T08:23:30.608Z",
+      "startedAt": "2026-11-23T08:23:30.608Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "fakta-olahraga-EP02",
+    "style": "VINTAGEFORGE",
+    "engine": "remotion",
+    "wordCount": 200,
+    "estimatedDuration": {
+      "wordCount": 200,
+      "minSec": 80,
+      "maxSec": 89
+    }
+  },
+  "syncedAt": "2026-11-23T08:24:14.866Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T07:18:45.914Z",
+      "doing": "Gerbang style tahap 3: menunggu pengguna pilih cover topik A atau B (VINTAGEFORGE sudah dipilih).",
+      "files": [
+        "style/candidates/cover-topic-A.png",
+        "style/candidates/cover-topic-B.png",
+        "style/STYLE_DECISION.md",
+        "studio/src/scenes/ep02/Cover.tsx",
+        "studio/src/scenes/ep02/RoadSet.tsx",
+        "studio/src/scenes/ep02/Model.tsx"
+      ],
+      "next": "Setelah acc: salin kandidat ke style/cover-topic.png, set STYLE_DECISION approved yes, update style approved:true, lanjut tahap 4 naskah (caveat riset di brief). Tahap 9: JANGAN pakai audira_render_batch (bug, lihat side-session-notes ep01-render-batch-blockers.md); pakai npm run render:final dari studio --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --sfx=public/audio/sfx.wav --cuts=...; cek/buat GPU_LOCK.md di side-session-notes/local_1284e608-.../ (isi EP, waktu, perintah), hapus setelah selesai/gagal. Pakai ep02/Model.tsx (bukan _shared/Glb.tsx); debu 3D rusak di AO, pakai overlay 2D.",
+      "snapshot": {
+        "episode": "EP02_MARATON_PALING_KACAU_1904",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP02",
+        "currentStage": "style",
+        "gates": {
+          "style": {
+            "approved": false,
+            "status": "in_progress"
+          },
+          "script": {
+            "approved": false,
+            "status": "pending"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T07:23:10.084Z",
+      "doing": "Tahap 3 selesai (VINTAGEFORGE + cover B di-acc). Siap mulai tahap 4 naskah; belum ada file docs yang ditulis.",
+      "files": [
+        "style/cover-topic.png",
+        "style/cover.json",
+        "style/STYLE_DECISION.md",
+        "studio/src/scenes/ep02/Cover.tsx",
+        "studio/src/scenes/ep02/RoadSet.tsx",
+        "studio/src/scenes/ep02/Model.tsx"
+      ],
+      "next": "Tahap 4: tulis docs/ART_DIRECTION.md -> docs/SCRIPT.md + docs/STORYBOARD.md (>=6 baris, kolom Audio SFX) -> docs/ASSET_MANIFEST.md; 195-210 kata, hook 0-3s, VO sebut AUDIRA, outro teaser 'Laga Tenis 11 Jam'. Film dibuka dari frame cover B (FRAMING_B, mobil + penumpang melambai). Caveat riset wajib: jangan sebut berat Hicks; 'dipapah pelatihnya' bukan 'digotong'; Carvajal apel lalu kram tetap finis ke-4, 'tidur siang' bukan fakta pasti; jangan sebut jumlah negara; titik air resmi hanya 1 (sekitar mil 12); waktu Hicks 3:28:53. Minta acc naskah+storyboard+art direction sekaligus. Tahap 9: render:final langsung dari studio + GPU_LOCK.md (bukan audira_render_batch). Pakai ep02/Model.tsx; debu 3D rusak di AO -> overlay 2D.",
+      "snapshot": {
+        "episode": "EP02_MARATON_PALING_KACAU_1904",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP02",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": false,
+            "status": "pending"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T07:35:29.234Z",
+      "doing": "Tahap 4 docs selesai ditulis; menunggu acc pengguna naskah+storyboard+art direction",
+      "files": [
+        "docs/ART_DIRECTION.md",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md"
+      ],
+      "next": "Setelah acc: update script approved:true + ubah 'approved: no' di SCRIPT.md; tahap 5 salin 9 GLB baru (daftar di ASSET_MANIFEST) ke studio/public/glb, check-env + smoke; tahap 6 VO Cartesia (teks TTS: Audira, Saint Louis, striknin).",
+      "snapshot": {
+        "episode": "EP02_MARATON_PALING_KACAU_1904",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP02",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": false,
+            "status": "in_progress"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T07:43:05.370Z",
+      "doing": "Tahap 5 selesai (9 GLB disalin, check-env OK; smoke dilewati karena studio sudah terbukti di EP01). Tahap 6: generate VO Cartesia dari audio/work/vo-timed.txt",
+      "command": "audira_generate_voiceover scriptPath=audio/work/vo-timed.txt outputPath=audio/work/vo-raw.wav wordsPath=audio/work/vo-raw-words.json; lalu python _tools/vo_tighten.py EP02_MARATON_PALING_KACAU_1904; python _tools/make-timeline.py EP02_MARATON_PALING_KACAU_1904",
+      "next": "Tulis docs/TIMING.md, lalu tahap 7 bangun scene ep02",
+      "snapshot": {
+        "episode": "EP02_MARATON_PALING_KACAU_1904",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP02",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T08:23:23.778Z",
+      "doing": "Tahap 8 draf: contact sheet draft/contact-sheet.jpg (frames 1,12.2,20.6,38,47,57.2,69.5,81.5 s dari Ep02Preview), ceilings semua 5, self 4.0; menunggu juri buta",
+      "files": [
+        "studio/src/scenes/ep02/Film.tsx",
+        "studio/src/scenes/ep02/sets.tsx",
+        "studio/src/scenes/ep02/hud.tsx",
+        "studio/src/scenes/ep02/timing.ts",
+        "draft/contact-sheet.jpg",
+        "draft/look.json",
+        "draft/camera.json",
+        "studio/public/audio/ep02/sfx.wav"
+      ],
+      "next": "Catat skor juri (record_score judge jury). Jika lolos: minta acc draf pengguna. Lalu tahap 9 render:final Ep02Final via GPU_LOCK: --vo=public/audio/ep02/vo.wav --sfx=public/audio/ep02/sfx.wav --cuts dari timing CUTS.",
+      "snapshot": {
+        "episode": "EP02_MARATON_PALING_KACAU_1904",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP02",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP02_MARATON_PALING_KACAU_1904/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T08:24:04.793Z",
+      "doing": "Tahap 8 draf putaran 1/2: juri buta 3.33 PERLU POLES (lighting 3, material 3, depth 4, composition 3, motion 4, readability 3). Self 4.0. Sesi dihentikan karena batas konteks.",
+      "command": "cd studio; node scripts/stills.mjs out/ep02-draft 1s,12.2s,20.6s,38s,47s,57.2s,69.5s,81.5s Ep02Preview; node scripts/visual-audit.mjs out/ep02-draft --style=VINTAGEFORGE --json=../EP02_MARATON_PALING_KACAU_1904/draft/look.json --sheet=../EP02_MARATON_PALING_KACAU_1904/draft/compare.jpg --episode-dir=../EP02_MARATON_PALING_KACAU_1904 --comp=Ep02Preview; cp out/ep02-draft/_sheet.jpg ../EP02_MARATON_PALING_KACAU_1904/draft/contact-sheet.jpg",
+      "files": [
+        "studio/src/scenes/ep02/Film.tsx",
+        "studio/src/scenes/ep02/sets.tsx",
+        "studio/src/scenes/ep02/hud.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/look.json",
+        "draft/camera.json"
+      ],
+      "next": "Poles putaran 2 di Film.tsx Stage + hud.tsx: (1) ringankan overlay 2D: vignette alpha 0.82→~0.45 dan scrim bawah 0.7→~0.3, ganti pemisahan subjek dengan cahaya nyata (spotLight ke subjek per adegan, hemisphere lebih rendah); (2) isi sepertiga bawah dengan set FG (jalan/meja/lintasan), bukan coklat kosong; (3) Captions: kata belum aktif rgba(243,234,214,0.5)→0.78; (4) pompa B2 dan botol D1 jangan terpotong tepi kiri (geser target kamera); (5) RouteMap sub-label 36→42 px; (6) material figur ToyPerson kurang plastik (roughness kain). Re-render sheet, audit:visual (cek depth ≥4), skor self lalu juri buta baru (prompt qa/jury.md, hanya sheet+cover+ceilings+camera). Lolos → minta acc draf pengguna → tahap 9 render:final Ep02Final via GPU_LOCK.md: --vo=public/audio/ep02/vo.wav --sfx=public/audio/ep02/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error, cuts = timing.ts CUTS. Catatan: klip draf lewat npx remotion render butuh --gl=angle --timeout=120000 (vulkan timeout di frame awal).",
+      "snapshot": {
+        "episode": "EP02_MARATON_PALING_KACAU_1904",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP02",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP02_MARATON_PALING_KACAU_1904/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T08:38:24.307Z",
+      "doing": "Tahap 8 putaran poles 2 selesai (sheet baru di draft/contact-sheet.jpg, depth ceiling 3, self 3.67 sebelum poles material). Juri buta putaran 2 berjalan.",
+      "command": "poles: overlay 2D ringan, PoolLight spotlight ke target kamera, sun 0.45/hemi 0.2, fog #4f3922, DOF aperture 0.006, Cam lift 0.09 (A=0,B1=0.02,D1/OUT=0), karaoke 0.78, RouteMap 42px, ToyPerson ep02 weave bump + skin matte, env 0.45",
+      "files": [
+        "studio/src/scenes/ep02/Film.tsx",
+        "studio/src/scenes/ep02/sets.tsx",
+        "studio/src/scenes/ep02/hud.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/look.json"
+      ],
+      "next": "Catat skor juri (record_score judge jury, ceilings depth 3). Lolos → minta acc draf. Gagal → putaran 3 terakhir: depth (kartu HUD terang di cincin atas menekan separation), material.",
+      "snapshot": {
+        "episode": "EP02_MARATON_PALING_KACAU_1904",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP02",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP02_MARATON_PALING_KACAU_1904/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T08:39:18.455Z",
+      "doing": "Tahap 8 putaran 2 selesai: juri buta 3.5 PERLU POLES (lighting 4, material 3, depth 3 [ceiling 3, separation 37.9 vs 74.3], composition 3, motion 4, readability 4). audira_style_memory menyatakan BATAS 2x DRAF TERCAPAI → rule 6c wajib ganti style, kecuali pengguna memutuskan lain. Menunggu keputusan pengguna.",
+      "command": "poles r2 diterapkan: overlay 2D ringan, PoolLight spotlight ke target kamera (angle 0.21, int 240), sun 0.45/hemi 0.2, fog #4f3922, DOF aperture 0.006 maxBlur 0.02, Cam lift 0.09 (A=0, B1=0.02, D1/OUT=0), karaoke 0.78, RouteMap 42 px, ToyPerson ep02 weave bump + skin matte, env 0.45, kamera B2/D1 mundur",
+      "files": [
+        "studio/src/scenes/ep02/Film.tsx",
+        "studio/src/scenes/ep02/sets.tsx",
+        "studio/src/scenes/ep02/hud.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/look.json"
+      ],
+      "next": "Keputusan pengguna: (a) ganti style per rule 6c: audira_recommend_style failedStyles [VINTAGEFORGE], tawarkan 2–3 + cover, cover topik baru, lanjut dari tahap 4 (naskah+VO tetap bisa dipakai); atau (b) izin eksplisit satu putaran poles VINTAGEFORGE lagi: isi sepertiga bawah dengan prop FG terang dan fokus (kerb, peti, marka lintasan, tepi meja), kain bertekstur terlihat (garis/tambalan/kotor), botol strychnine bukan GLB faceted, B1 runner kiri terpotong, kata emas karaoke kontras di lantai tan. Sesi baru disarankan (konteks ±210k).",
+      "snapshot": {
+        "episode": "EP02_MARATON_PALING_KACAU_1904",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP02",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP02_MARATON_PALING_KACAU_1904/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T13:00:09.266Z",
+      "doing": "Tahap 9 render final Ep02Final atas perintah pengguna \"lanjut render\" (juri draf 3.5 tidak lolos; --skip-memory-gate dengan alasan). GPU_LOCK.md dibuat.",
+      "command": "cd studio; npm run render:final -- --comp=Ep02Final --out=out/ep02/FINAL_EP02.mp4 --vo=public/audio/ep02/vo.wav --sfx=public/audio/ep02/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Maraton Paling Kacau 1904\" --slug=maraton-paling-kacau-1904 --ep=EP02 --skip-memory-gate=\"...\"",
+      "files": [
+        "studio/out/ep02/FINAL_EP02.mp4"
+      ],
+      "next": "Hapus GPU_LOCK.md; ffprobe metadata; QA frame + loudness; salin final ke folder episode; juri final; tahap 10 caption.",
+      "snapshot": {
+        "episode": "EP02_MARATON_PALING_KACAU_1904",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP02",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": true,
+            "status": "done"
+          },
+          "draft": {
+            "approved": false,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP02_MARATON_PALING_KACAU_1904/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T13:08:16.988Z",
+      "doing": "Render final Ep02Final berjalan di background (log studio/out/ep02-final.log, GPU_LOCK dilepas otomatis). SOCIAL_CAPTIONS.md tahap 10 selesai dan lolos validator.",
+      "files": [
+        "SOCIAL_CAPTIONS.md",
+        "studio/out/ep02/FINAL_EP02.mp4",
+        "studio/out/ep02-final.log"
+      ],
+      "next": "Setelah render: cek EXIT di log; ffprobe metadata (artist AUDIRA (Agus Dwi R.)), loudness −14 LUFS, cek frame; salin FINAL ke folder episode; juri final + record_score final; NOTES.md; append_lesson; tanya jam upload (default Selasa 24 Nov 2026 19.00 WIB) lalu 3 scheduled task review-maraton-paling-kacau-1904-24h/-72h/-7d.",
+      "snapshot": {
+        "episode": "EP02_MARATON_PALING_KACAU_1904",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP02",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP02_MARATON_PALING_KACAU_1904/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T13:25:32.974Z",
+      "doing": "Final selesai: FINAL_EP02.mp4 (88.1 dtk, 1080×1920@60, 5286 frame, −13.6 LUFS, TP −1.8 dBFS, metadata + Ed25519 + C2PA OK), disalin ke folder episode. GPU_LOCK EP02 dilepas (lock yang ada sekarang milik EP05). SOCIAL_CAPTIONS.md lolos validator. Render melewati memory gate atas perintah pengguna (juri draf 3.5).",
+      "files": [
+        "FINAL_EP02.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "studio/out/ep02-final.log"
+      ],
+      "next": "Cek frame dari MP4 (contact sheet final), juri final + record_score stage final, NOTES.md (pelajaran: juri 3.5, pool light, lift, skip gate), append_lesson, konfirmasi jam upload lalu 3 scheduled task review-maraton-paling-kacau-1904-24h/-72h/-7d, hapus file perantara.",
+      "snapshot": {
+        "episode": "EP02_MARATON_PALING_KACAU_1904",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP02",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP02_MARATON_PALING_KACAU_1904/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:20:38.817Z",
+      "doing": "Final FINAL_EP02.mp4 selesai dan QA metadata OK; SOCIAL_CAPTIONS.md lolos validator. Pengguna konfirmasi jam upload: Selasa 24 Nov 2026 19.00 WIB (TikTok), berurutan +20 menit per platform.",
+      "files": [
+        "FINAL_EP02.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "studio/out/ep02-final.log",
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "1) Contact sheet frame dari FINAL_EP02.mp4 + juri final + record_score stage final. 2) NOTES.md (juri draf 3.5, render atas perintah pengguna dengan --skip-memory-gate, PoolLight/lift/weave, LUFS −13.6, taskId review). 3) append_lesson VINTAGEFORGE. 4) 3 scheduled task fireAt 2026-11-25T19:00+07:00, 2026-11-27T19:00+07:00, 2026-12-01T19:00+07:00, taskId review-maraton-paling-kacau-1904-24h/-72h/-7d. 5) Hapus file perantara (studio/out/ep02-draft, studio/out/ep02 segmen). 6) update final + delivery done.",
+      "snapshot": {
+        "episode": "EP02_MARATON_PALING_KACAU_1904",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP02",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP02_MARATON_PALING_KACAU_1904/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:20:38.817Z",
+      "doing": "Final FINAL_EP02.mp4 selesai dan QA metadata OK; SOCIAL_CAPTIONS.md lolos validator. Pengguna konfirmasi jam upload: Selasa 24 Nov 2026 19.00 WIB (TikTok), berurutan +20 menit per platform.",
+      "files": [
+        "FINAL_EP02.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "studio/out/ep02-final.log",
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "1) Contact sheet frame dari FINAL_EP02.mp4 + juri final + record_score stage final. 2) NOTES.md (juri draf 3.5, render atas perintah pengguna dengan --skip-memory-gate, PoolLight/lift/weave, LUFS −13.6, taskId review). 3) append_lesson VINTAGEFORGE. 4) 3 scheduled task fireAt 2026-11-25T19:00+07:00, 2026-11-27T19:00+07:00, 2026-12-01T19:00+07:00, taskId review-maraton-paling-kacau-1904-24h/-72h/-7d. 5) Hapus file perantara (studio/out/ep02-draft, studio/out/ep02 segmen). 6) update final + delivery done.",
+      "snapshot": {
+        "episode": "EP02_MARATON_PALING_KACAU_1904",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "fakta-olahraga-EP02",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP02_MARATON_PALING_KACAU_1904/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T08:24:14.577Z"
+    }
+  ]
+}

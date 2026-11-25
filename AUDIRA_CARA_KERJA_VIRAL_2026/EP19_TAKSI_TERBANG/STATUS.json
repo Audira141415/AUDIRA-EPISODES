@@ -1,0 +1,155 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "CARA-KERJA-VIRAL-EP19",
+  "topic": "Taksi terbang eVTOL terbang formasi",
+  "createdAt": "2026-11-09T00:41:06.151163+00:00",
+  "updatedAt": "2026-11-11T02:02:12.363Z",
+  "currentStage": "complete",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-09T00:41:06.151163+00:00",
+          "text": "Memori seri, motion brain, GLOBAL style memory dibaca."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-09T00:41:06.151163+00:00",
+          "text": "_research/EP19_taksi_terbang_evtol.md"
+        }
+      ]
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-09T00:41:06.151163+00:00",
+          "text": "Pengguna memilih POLYVERSE (opsi utama) 2026-11-09; cover topik menunggu acc."
+        },
+        {
+          "at": "2026-11-09T01:43:01.055606+00:00",
+          "text": "Pengguna: \"Setuju semua\" (cover topik + naskah), 2026-11-09."
+        }
+      ],
+      "approved": true,
+      "approvedAt": "2026-11-09T01:43:01.055606+00:00"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-09T01:43:01.055606+00:00",
+          "text": "Pengguna: \"Setuju semua\" (cover topik + naskah), 2026-11-09."
+        }
+      ],
+      "approved": true,
+      "approvedAt": "2026-11-09T01:43:01.055606+00:00"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": []
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-09T01:47:08.689995+00:00",
+          "text": "Cartesia Galang, timeline dikunci; ujaran 83.3 dtk."
+        }
+      ]
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": []
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-09T01:47:08.689995+00:00",
+          "text": "style/draft-contact-sheet.jpg, record_score LOLOS; menunggu acc."
+        },
+        {
+          "at": "2026-11-09T01:48:37.775449+00:00",
+          "text": "Pengguna: \"Setuju, render final\" (2026-11-09)."
+        }
+      ],
+      "approved": true,
+      "approvedAt": "2026-11-09T01:48:37.775449+00:00"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-09T05:46:53.461709+00:00",
+          "text": "FINAL_VIDEO.mp4 60 fps, -14.0 LUFS, metadata dicek ffprobe."
+        }
+      ]
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-09T05:46:53.461709+00:00",
+          "text": "SOCIAL_CAPTIONS.md 6 platform, validator ok:true; NOTES.md."
+        }
+      ]
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T02:02:12.363Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-09T05:46:53.473Z",
+      "startedAt": "2026-11-09T05:46:53.473Z"
+    }
+  ],
+  "data": {
+    "style": "POLYVERSE",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-11T02:02:12.363Z"
+}

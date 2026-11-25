@@ -1,0 +1,10 @@
+import { bundle } from '@remotion/bundler';
+import path from 'path';
+import fs from 'fs';
+process.chdir('F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP32_BONGKAR_RAHASIA_RUMAH/project');
+const serveUrl = await bundle({ entryPoint: path.resolve('src/index.ts'), ignoreRegisterRootWarning: false, publicDir: path.resolve('public') });
+console.log('Bundle dir:', serveUrl);
+const glbPath = path.join(serveUrl, 'models', 'building', 'two-story-house-40f6dc.glb');
+console.log('GLB in bundle:', fs.existsSync(glbPath) ? 'EXISTS' : 'NOT FOUND');
+const topFiles = fs.readdirSync(serveUrl).filter(f => !f.endsWith('.js') && !f.endsWith('.map') && !f.endsWith('.LICENSE.txt'));
+console.log('Non-JS root files:', topFiles.slice(0, 20));

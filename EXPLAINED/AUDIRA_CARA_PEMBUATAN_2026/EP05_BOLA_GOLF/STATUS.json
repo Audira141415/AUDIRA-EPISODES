@@ -1,0 +1,225 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP05_BOLA_GOLF",
+  "topic": "Cara pembuatan benda sehari-hari yang jarang diketahui",
+  "createdAt": "2026-11-11T08:10:25.587Z",
+  "updatedAt": "2026-11-16T15:16:45.060Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T08:15:54.421Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-11T08:10:25.589Z",
+      "startedAt": "2026-11-11T08:10:25.589Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T08:15:54.421Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-11T08:10:25.588Z",
+      "startedAt": "2026-11-11T08:10:25.588Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-11T23:51:24.469Z",
+      "notes": [
+        {
+          "at": "2026-11-11T23:51:37.346Z",
+          "text": "Style dipilih pengguna: \"Ya, semua utama\" (2026-11-12). Cover topik pending."
+        },
+        {
+          "at": "2026-11-12T00:00:13.342Z",
+          "text": "sync: STYLE_DECISION.md ada; acc tercatat di file"
+        }
+      ],
+      "startedAt": "2026-11-11T23:51:37.346Z",
+      "approvalSource": "file",
+      "doneAt": "2026-11-11T23:51:24.469Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T00:59:05.803Z",
+      "notes": [
+        {
+          "at": "2026-11-11T08:15:54.421Z",
+          "text": "sync: naskah ada; menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-12T00:59:05.803Z",
+          "text": "Cover topik + naskah disetujui pengguna: \"Setuju semua\" (2026-11-12)."
+        }
+      ],
+      "startedAt": "2026-11-11T08:10:25.588Z",
+      "doneAt": "2026-11-12T00:59:05.803Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-16T15:16:45.060Z",
+          "text": "sync: dunia world3d disiapkan (project/world3d.js + project/hf/hyperframes.json)"
+        }
+      ],
+      "doneAt": "2026-11-12T12:50:07.744Z",
+      "startedAt": "2026-11-12T12:50:07.744Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T01:24:35.214Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-12T01:01:22.869Z",
+      "startedAt": "2026-11-12T01:01:22.869Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T00:59:28.136Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-12T00:21:43.803Z",
+      "startedAt": "2026-11-12T00:21:43.803Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-13T18:07:25.488Z",
+      "notes": [
+        {
+          "at": "2026-11-12T00:59:28.136Z",
+          "text": "sync: 1 gambar draf/contact sheet; menunggu acc pengguna"
+        },
+        {
+          "at": "2026-11-12T12:46:13.492Z",
+          "text": "sync: 1 gambar draf/contact sheet; acc tidak tercatat, disimpulkan karena tahap sesudahnya sudah ada"
+        },
+        {
+          "at": "2026-11-13T17:52:05.743Z",
+          "text": "Draf contact sheet current. Self score avg 4.0 LOLOS. Juri buta berjalan (subagent). Final render sebelumnya GAGAL ENOSPC di C: — final wajib RENDER_TMPDIR=F:."
+        },
+        {
+          "at": "2026-11-13T18:07:25.488Z",
+          "text": "Juri buta LOLOS 4.17. Pengguna acc draf 2026-11-14 (\"Acc keduanya\" via sesi orkestrasi + \"lanjutkan\")."
+        }
+      ],
+      "startedAt": "2026-11-12T00:21:43.806Z",
+      "approvalSource": "inferred",
+      "doneAt": "2026-11-13T18:07:25.488Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-13T18:19:54.911Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-13T18:21:51.198Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60 88.4s, -14 LUFS TP -1.6. QC: 0 decode err/freeze/black. Ed25519+C2PA VALID, owner metadata. FINAL_CHECK bersih. Skor final self 4.17."
+        }
+      ],
+      "doneAt": "2026-11-13T18:21:51.198Z",
+      "startedAt": "2026-11-13T18:19:50.469Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T12:46:13.492Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-12T12:42:35.949Z",
+      "startedAt": "2026-11-12T12:42:35.949Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "cara-pembuatan-EP05",
+    "style": "INNERWORKS",
+    "title": "Cara Pembuatan Bola Golf",
+    "wordCount": 195,
+    "estimatedDuration": {
+      "wordCount": 195,
+      "minSec": 78,
+      "maxSec": 87
+    },
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-16T15:16:45.060Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-13T18:08:05.232Z",
+      "doing": "Render final EP05 60fps via _tools/final.sh (TEMP paksa F:, bukan MCP batch yang pakai C:)",
+      "command": "bash _tools/final.sh EP05_BOLA_GOLF",
+      "files": [
+        "EP05_BOLA_GOLF/FINAL_VIDEO.mp4"
+      ],
+      "next": "FINAL_CHECK dari MP4, sign Ed25519+C2PA, npm deliver/qc, record_score final, caption sudah ada"
+    },
+    {
+      "at": "2026-11-13T18:08:05.232Z",
+      "doing": "Render final EP05 60fps via _tools/final.sh (TEMP paksa F:, bukan MCP batch yang pakai C:)",
+      "command": "bash _tools/final.sh EP05_BOLA_GOLF",
+      "files": [
+        "EP05_BOLA_GOLF/FINAL_VIDEO.mp4"
+      ],
+      "next": "FINAL_CHECK dari MP4, sign Ed25519+C2PA, npm deliver/qc, record_score final, caption sudah ada",
+      "finishedAt": "2026-11-13T18:21:51.230Z"
+    }
+  ]
+}

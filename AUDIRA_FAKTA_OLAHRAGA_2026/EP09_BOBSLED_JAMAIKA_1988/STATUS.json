@@ -1,0 +1,780 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP09_BOBSLED_JAMAIKA_1988",
+  "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+  "createdAt": "2026-11-23T14:14:17.993Z",
+  "updatedAt": "2026-11-24T13:12:59.312Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:38.426Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:14:17.994Z",
+      "startedAt": "2026-11-23T14:14:17.994Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:38.426Z",
+          "text": "sync: riset ada"
+        },
+        {
+          "at": "2026-11-23T14:29:57.243Z",
+          "text": "30 fakta, 8 HIGH. Koreksi premis: atlet BERJALAN di samping kereta ke finis (bukan memikul/mendorong — itu film). 1994 tidak di atas Swiss."
+        }
+      ],
+      "doneAt": "2026-11-23T14:29:57.243Z",
+      "startedAt": "2026-11-22T06:26:14.091Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:15:45.694Z",
+          "text": "TOYDIORAMA 3D dipilih AI (tanpa acc). Cover topik menyusul setelah kode scene."
+        },
+        {
+          "at": "2026-11-23T15:16:33.188Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        },
+        {
+          "at": "2026-11-24T07:49:01.690Z",
+          "text": "s6: style diganti TOYDIORAMA -> CINESTORY (G21, juri buta TOYDIORAMA 3.33 x2). 5 masalah visual s5 diperbaiki (salju abu-biru, hookCam, S4 crane, S5/S6/S7 framing, gunung batu+tudung salju)."
+        }
+      ],
+      "startedAt": "2026-11-23T15:15:45.694Z",
+      "doneAt": "2026-11-24T07:49:01.690Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:13:55.595Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-24T07:12:24.483Z",
+      "startedAt": "2026-11-24T07:12:24.483Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:20:04.988Z",
+          "text": "Studio seri bersama (studio/, Ep09Preview/Ep09Final di Root.tsx), stills + audit berjalan."
+        }
+      ],
+      "doneAt": "2026-11-24T07:20:04.988Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:16:33.189Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-23T15:16:04.884Z",
+      "startedAt": "2026-11-23T15:16:04.884Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:13:37.374Z",
+          "text": "S3: framing kamera diperbaiki, cover-topic.png, docs rule 12 lengkap, sfx.wav (-20 LUFS stem)"
+        }
+      ],
+      "doneAt": "2026-11-24T07:13:37.374Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:20:56.022Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-24T07:17:57.972Z",
+      "startedAt": "2026-11-24T07:17:57.972Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T12:07:23.614Z",
+      "notes": [
+        {
+          "at": "2026-11-24T12:06:42.220Z",
+          "text": "Acc pengguna langsung di sesi s7, 2026-11-24: \"Yes, render final\". Render dijalankan di s8."
+        },
+        {
+          "at": "2026-11-24T12:07:23.614Z",
+          "text": "Acc pengguna langsung di s8 (2026-11-24): \"Gas, render final\". Juri 3.67 diterima setelah 2 putaran."
+        },
+        {
+          "at": "2026-11-24T13:12:58.993Z",
+          "text": "FINAL_EP09_BOBSLED_JAMAIKA.mp4 1080x1920@60, 90.77 dtk, -13.6 LUFS TP -1.9 dBFS, metadata ffprobe OK, Ed25519 VALID + C2PA. Juri buta final 3.50 (L3 M3 D4 C3 Mo4 R4)."
+        }
+      ],
+      "startedAt": "2026-11-24T12:06:42.220Z",
+      "doneAt": "2026-11-24T13:12:58.993Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T12:08:56.267Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-24T13:12:59.159Z",
+          "text": "SOCIAL_CAPTIONS.md lolos validator; NOTES.md diisi; review task review-bobsled-jamaika-24h/-72h/-7d (2/4/8 Des 2026 19.00 WIB). File perantara draf belum dihapus (menunggu pengguna melihat final)."
+        }
+      ],
+      "doneAt": "2026-11-24T13:12:59.159Z",
+      "startedAt": "2026-11-24T12:08:42.760Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "fakta-olahraga-EP09",
+    "shortTitle": "Bobsled Jamaika",
+    "style": "CINESTORY",
+    "engine": "remotion",
+    "wordCount": 210,
+    "estimatedDuration": {
+      "wordCount": 210,
+      "minSec": 84,
+      "maxSec": 93
+    }
+  },
+  "syncedAt": "2026-11-24T12:08:56.267Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-23T15:18:15.772Z",
+      "doing": "Tahap 7 dimulai: VO terkunci (timeline 90,741 dtk), Set.tsx + Model.tsx ditulis di studio/src/scenes/ep09/. Film.tsx/Cover.tsx/index.ts belum.",
+      "files": [
+        "docs/HANDOFF_S1.md",
+        "docs/script-lines.json",
+        "style/STYLE_DECISION.md",
+        "studio/src/scenes/ep09/Set.tsx",
+        "studio/src/scenes/ep09/Model.tsx",
+        "studio/src/scenes/ep09/timeline.json"
+      ],
+      "next": "Baca docs/HANDOFF_S1.md (rencana scene + waktu kata + sisa langkah), lalu tulis ep09/Film.tsx, Cover.tsx, index.ts, daftarkan di Root.tsx, typecheck, cover, docs rule 12, sfx, contact sheet + juri, gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:26:59.798Z",
+      "doing": "Tahap 7: Film.tsx/Cover.tsx/index.ts ditulis + Root.tsx terdaftar (Ep09Cover/Preview/Final). Belum typecheck, belum still.",
+      "files": [
+        "docs/HANDOFF_S2.md",
+        "studio/src/scenes/ep09/Film.tsx",
+        "studio/src/scenes/ep09/Cover.tsx",
+        "studio/src/scenes/ep09/Set.tsx",
+        "studio/src/Root.tsx"
+      ],
+      "next": "Baca docs/HANDOFF_S2.md: typecheck, cover-topic.png, still per scene, docs rule 12, sfx, contact sheet + juri, gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:30:06.896Z",
+      "doing": "Tahap 7: Film/Cover/index ditulis, typecheck bersih, still pertama draft/stills1 dilihat; daftar perbaikan kamera/helm di docs/HANDOFF_S2.md.",
+      "files": [
+        "docs/HANDOFF_S2.md",
+        "draft/stills1/_sheet_small.jpg",
+        "studio/src/scenes/ep09/Film.tsx",
+        "studio/src/scenes/ep09/Set.tsx"
+      ],
+      "next": "Baca docs/HANDOFF_S2.md bagian \"Update akhir sesi 2\": perbaiki framing, still ulang, cover-topic.png, docs rule 12, sfx, contact sheet + juri, gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:13:33.087Z",
+      "doing": "Tahap 7 selesai: framing kamera diperbaiki, cover-topic.png, docs rule 12, sfx.wav. Berikutnya tahap 8 contact sheet + juri.",
+      "files": [
+        "docs/HANDOFF_S3.md",
+        "studio/src/scenes/ep09/Film.tsx",
+        "studio/src/scenes/ep09/Set.tsx",
+        "studio/src/scenes/ep09/Cover.tsx",
+        "style/cover-topic.png",
+        "studio/public/audio/ep09/sfx.wav"
+      ],
+      "next": "Baca docs/HANDOFF_S3.md: contact sheet 8 frame → draft/contact-sheet.jpg, audit:visual, THEME_CHECK.md, juri self + buta, record_score, lalu gerbang tahap 9 (acc pengguna).",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:20:00.682Z",
+      "doing": "Tahap 8: contact sheet + audit:visual + audit:camera (5/5) + THEME_CHECK selesai, self-score 4.17; juri buta berjalan",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/look.json",
+        "draft/camera.json",
+        "draft/THEME_CHECK.md",
+        "studio/src/scenes/ep09/Film.tsx (Timer S1 top 560)"
+      ],
+      "next": "record_score jury, lalu gerbang tahap 9 (acc pengguna). G18c pra-cek: VO -16.5 / SFX duck -35.0 LUFS",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:24:47.164Z",
+      "doing": "Tahap 8 putaran 2: juri buta putaran 2 berjalan. Putaran 1 juri 3.33 (PERLU POLES). Poles: StageApron (papan kayu + footlight FG d=3.9), SubjectSpot, ambient turun, sprinter S2, kamera crash front target s.x-0.45 fov 44. Sheet baru: draft/contact-sheet.jpg (frame 190,360,612,1065,1722,1995,2250,2490)",
+      "files": [
+        "studio/src/scenes/ep09/Film.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/look.json",
+        "draft/camera.json"
+      ],
+      "next": "record_score jury putaran 2; bila >= 3.5 -> gerbang tahap 9 (acc pengguna). G18c pra-cek VO -16.5 / SFX duck -35.0 LUFS",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:25:51.442Z",
+      "doing": "TOYDIORAMA gagal 2 putaran juri (3.33 / 3.33 < 3.5) -> ganti style ke CINESTORY (3D, alt PAINTERLY/PANELVERSE), ulang tahap 4 (G21). VO tetap.",
+      "files": [
+        "docs/HANDOFF_S4.md",
+        "studio/src/scenes/ep09/Film.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Sesi s5: baca docs/HANDOFF_S4.md, STYLE_DECISION CINESTORY + cover topik, tulis ulang ART_DIRECTION/STORYBOARD/ASSET_MANIFEST/SHOTLIST (Style: CINESTORY), restyle studio/src/scenes/ep09, contact sheet, juri, gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:43:00.120Z",
+      "doing": "s5: restyle CINESTORY di kode SELESAI sebagian: studio/src/scenes/ep09/cine/ (Character/pose/looks/mats disalin dari kit cinestory, CinePerson.tsx pengganti ToyPerson, look.ts material CINE + snowTex), Set.tsx (material cat/es/salju, lembah salju + gunung, Athlete=CinePerson), Film.tsx (hookCam S1 rendah head-on lensa panjang; S4 crane tinggi; tim 4 orang di pantai S2; S5 kamera ikut kereta; S6 kereta berhenti di depan papan skor + 4 atlet cheer + floodlight; ForeDrift FG salju menggantikan StageApron; grade CINEMA_TEAL_ORANGE; vignette ringan), Cover.tsx (grade/warna). tsc lolos. Backup Film s4: scratchpad Film.s4.bak. BELUM: render still, docs tahap 4, STYLE_DECISION.",
+      "files": [
+        "studio/src/scenes/ep09/Film.tsx",
+        "studio/src/scenes/ep09/Set.tsx",
+        "studio/src/scenes/ep09/Cover.tsx",
+        "studio/src/scenes/ep09/cine/CinePerson.tsx",
+        "studio/src/scenes/ep09/cine/look.ts"
+      ],
+      "next": "Render stills 8 frame (190,360,612,1065,1722,1995,2250,2490 @30fps Ep09Preview) → cek visual + perbaiki; render Ep09Cover → style/cover-topic.png; tulis STYLE_DECISION.md + docs ART_DIRECTION/STORYBOARD/ASSET_MANIFEST/SHOTLIST dengan baris 'Style: CINESTORY'; contact sheet, audit:visual, audit:camera, THEME_CHECK, juri self+buta (maks 2 putaran) → gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:44:18.928Z",
+      "doing": "s5 selesai: restyle CINESTORY di kode (cine/CinePerson.tsx + look.ts, Set.tsx, Film.tsx, Cover.tsx; tsc lolos). Still CINESTORY pertama: draft/cine1/_sheet.jpg (frame 190,360,612,1065,1722,1995,2250,2490). Sudah beres: tim 4 orang di pantai S2, S6 kereta + tim + papan skor, S5 kereta utuh, S1 head-on rendah vs S4 crane tinggi. Masalah tersisa di sheet: (1) bawah frame terlalu putih/overexposed: salju CINE.snow + sheen terlalu terang dan ForeDrift jadi gumpalan putih besar di bawah (kecilkan/turunkan, warna salju lebih abu-biru #dfe6ee, kurangi sheen, tambah bayangan/biru malam), (2) S1 f190 kereta terlalu dekat & terpotong kanan (hookCam: jauhkan/target lebih ke kereta, fov), (3) S4 f1722 kereta kecil mengambang di tengah putih, (4) S5/S7 atlet berdiri di tepi frame terpotong, (5) langit S6/S7 segitiga gunung terlalu besar/polos. data.style CINESTORY belum tersimpan (pakai update stage style).",
+      "files": [
+        "studio/src/scenes/ep09/Film.tsx",
+        "studio/src/scenes/ep09/Set.tsx",
+        "studio/src/scenes/ep09/Cover.tsx",
+        "studio/src/scenes/ep09/cine/CinePerson.tsx",
+        "studio/src/scenes/ep09/cine/look.ts",
+        "EP09_BOBSLED_JAMAIKA_1988/draft/cine1/_sheet.jpg"
+      ],
+      "next": "s6: baca docs/HANDOFF_S4.md + catatan handover ini; perbaiki 5 masalah visual di Film.tsx/look.ts, render stills ulang (node scripts/stills.mjs ../EP09_BOBSLED_JAMAIKA_1988/draft/cineN <frames> Ep09Preview 1); update stage style data.style=CINESTORY; tulis STYLE_DECISION.md + docs ART_DIRECTION/STORYBOARD/ASSET_MANIFEST/SHOTLIST dengan baris 'Style: CINESTORY'; render Ep09Cover → style/cover-topic.png; contact sheet draft/contact-sheet.jpg, audit:visual, audit:camera, THEME_CHECK, juri self+buta (maks 2 putaran CINESTORY) → gerbang tahap 9 (acc pengguna).",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:50:25.301Z",
+      "doing": "s6: 5 masalah visual beres (draft/cine4/_sheet.jpg = draft/contact-sheet.jpg), docs G21 + STYLE_DECISION CINESTORY ditulis, audit:visual semua ceiling 5 (draft/look.json). Sedang: cover --force + klip audit:camera S4-S5.",
+      "files": [
+        "studio/src/scenes/ep09/Film.tsx",
+        "studio/src/scenes/ep09/Set.tsx",
+        "studio/src/scenes/ep09/cine/look.ts",
+        "EP09_BOBSLED_JAMAIKA_1988/style/STYLE_DECISION.md",
+        "EP09_BOBSLED_JAMAIKA_1988/docs/ART_DIRECTION.md"
+      ],
+      "next": "npm run cover -- Ep09Cover --episode=../EP09_BOBSLED_JAMAIKA_1988 --force; klip 540x960 frame 1500-2099 -> draft/clip_s4s5.mp4, audit:camera --json=draft/camera.json; THEME_CHECK ulang; juri self + buta (qa/jury.md) -> record_score CINESTORY draft; gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CINESTORY",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:52:39.344Z",
+      "doing": "s6: visual beres, docs G21 + STYLE_DECISION CINESTORY, cover-topic.png (--force), cover-reference.jpg, contact-sheet.jpg (=cine4), audit:visual ceiling 5 (draft/look.json), audit:camera 5/5 (draft/camera.json), THEME_CHECK 8/8 ya. Sedang: juri self + juri buta CINESTORY putaran 1.",
+      "files": [
+        "EP09_BOBSLED_JAMAIKA_1988/draft/contact-sheet.jpg",
+        "EP09_BOBSLED_JAMAIKA_1988/draft/look.json",
+        "EP09_BOBSLED_JAMAIKA_1988/draft/camera.json"
+      ],
+      "next": "Juri buta subagent (qa/jury.md: contact-sheet.jpg + F:/AUDIRA-SKILL-MOTION/references/quality-bar/cinestory.jpg + look.json ceilings + rubric) -> record_score CINESTORY stage draft judge jury (+ self) dengan ceilings look.json dan camera camera.json. Lolos (>=3.8, tidak ada <3) -> gerbang tahap 9: tampilkan sheet, skor, durasi 90,741 dtk, G18c (VO -16,5 vs SFX -35,0 LUFS = 18,5 LU), minta acc. Gagal -> poles aspek lemah, putaran 2.",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CINESTORY",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:54:03.948Z",
+      "doing": "s6 selesai: CINESTORY juri buta putaran 1 = 3,5 (L3 M3 D3 C3 R4 motion5), PERLU POLES. Self 4,17. Docs G21, STYLE_DECISION, cover-topic.png, cover-reference.jpg, contact-sheet.jpg (=draft/cine4), look.json (ceiling 5), camera.json (5/5), THEME_CHECK 8/8 sudah beres.",
+      "files": [
+        "studio/src/scenes/ep09/Film.tsx",
+        "studio/src/scenes/ep09/Set.tsx",
+        "studio/src/scenes/ep09/cine/look.ts",
+        "EP09_BOBSLED_JAMAIKA_1988/draft/contact-sheet.jpg"
+      ],
+      "next": "s7: poles putaran 2 CINESTORY (terakhir) di studio/src/scenes/ep09/Film.tsx + Set.tsx + cine/look.ts: (1) lampu per beat: key hangat keras + rim biru dingin pada kereta/tim, light pool floodlight di S1/S4/S6, S2 pantai golden-hour kontras (bukan biru/pasir rata); kurangi ambient; (2) depth: fog/haze lebih rapat ke gunung & pinus, DOF lebih kuat; (3) komposisi: bawah 40–50% kosong di f190/f1065/f1722 → kamera lebih rendah & dekat (low-angle kereta), variasi skala f360/f1995/f2490 (jangan baris figur tengah sama); (4) material: decal JAMAICA sisi jauh terbalik (Set.tsx Bobsled SceneText s<0 → hanya render sisi yang menghadap kamera atau tanpa rotasi PI), snow normal/sparkle; (5) chip merah hook f190 tabrakan watermark AUDIRA kiri atas → geser chip turun (top 300). Lalu stills cine5 (8 frame sama), copy ke draft/contact-sheet.jpg, audit:visual, juri buta putaran 2 (subagent, tanpa skor lama) → record_score jury. Juri terbaik >= 3,5 → langsung gerbang tahap 9 (aturan 2 putaran). Gerbang: tampilkan sheet, skor, durasi 90,741 dtk, G18c VO -16,5 vs SFX -35,0 LUFS = 18,5 LU, minta acc pengguna. Jangan render final tanpa acc.",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CINESTORY",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:35:10.779Z",
+      "doing": "s7: poles putaran 2 diterapkan (Film.tsx: rig lampu key/rim/FloodPools, lowCam, ForeDrift lebih dekat, figur S2/S5/S7 tidak sebaris, chip top 330; Set.tsx: decal JAMAICA satu sisi + tegak saat terbalik). Render stills cine5.",
+      "command": "cd studio; node scripts/stills.mjs ../EP09_BOBSLED_JAMAIKA_1988/draft/cine5 190,360,612,1065,1722,1995,2250,2490 Ep09Preview",
+      "files": [
+        "studio/src/scenes/ep09/Film.tsx",
+        "studio/src/scenes/ep09/Set.tsx"
+      ],
+      "next": "Cek sheet cine5, copy ke draft/contact-sheet.jpg, audit:visual, THEME_CHECK, juri buta putaran 2, lalu gerbang tahap 9. Backup versi s6: scratchpad Film.s6.tsx/Set.s6.tsx (tidak permanen).",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CINESTORY",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:40:06.600Z",
+      "doing": "s7: poles putaran 2 selesai di Film.tsx/Set.tsx (lampu key/rim/FloodPools fixed di dunia, lowCam per scene, FG drift, figur S2/S5/S7 bervariasi, chip top 330, decal JAMAICA satu sisi). Sheet baru draft/contact-sheet.jpg = draft/cine5/_sheet.jpg (f360/f612 dari cine5b), look.json ceiling 5 semua, THEME_CHECK 8/8 diperbarui. MASALAH: audit:camera klip S4-S5 (frame 1560-2099) turun ke 3/5 (too fast 22%, jerks 5/10s) vs klip lama 5/5; perbaikan lampu-fixed belum terukur karena render ketiga timeout (delayRender model GLB 30 s).",
+      "command": "cd studio; npx remotion render src/index.ts Ep09Preview ../EP09_BOBSLED_JAMAIKA_1988/draft/clip_s4s5_r2.mp4 --frames=1560-2099 --log=error --muted --overwrite --timeout=120000 --concurrency=2; npm run audit:camera -- ../EP09_BOBSLED_JAMAIKA_1988/draft/clip_s4s5_r2.mp4 --json=../EP09_BOBSLED_JAMAIKA_1988/draft/camera.json",
+      "files": [
+        "studio/src/scenes/ep09/Film.tsx",
+        "studio/src/scenes/ep09/Set.tsx",
+        "EP09_BOBSLED_JAMAIKA_1988/draft/contact-sheet.jpg",
+        "EP09_BOBSLED_JAMAIKA_1988/draft/THEME_CHECK.md",
+        "EP09_BOBSLED_JAMAIKA_1988/draft/look.json"
+      ],
+      "next": "Bila motion masih 3: kembalikan lowCam S4/S5 ke kamera asli (return c untuk s4/s5) lalu ukur lagi (klip lama 5/5). Lalu render ulang stills 1722,1995 bila S4/S5 berubah, rakit sheet 8 frame (cine5 + pengganti), juri buta putaran 2 (prompt F:/AUDIRA-SKILL-MOTION/qa/jury.md, cover F:/AUDIRA-SKILL-MOTION/references/quality-bar/cinestory.jpg, ceilings look.json, camera.json, kolom Frame|Detik|Kata VO THEME_CHECK) → record_score jury stage draft. Lalu gerbang tahap 9: SendUserFile contact sheet, skor juri, durasi 90,741 dtk, G18c VO -16,5 vs SFX -35,0 = 18,5 LU, tunggu acc. Jangan render final tanpa acc.",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CINESTORY",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T09:49:19.797Z",
+      "doing": "s7: GERBANG tahap 9 — menunggu acc pengguna. Juri P2 = 3,67 (L4 M3 D4 C3 Mo4 R4), diterima setelah 2 putaran (record_score + append_lesson + NOTES sudah). Sheet draft/contact-sheet.jpg terkirim. camera.json 4/5 (clip_s4s5_r2.mp4).",
+      "next": "Setelah acc pengguna: update stage final approved true, render:final 1080x1920@60 dengan --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav (setelan rule 07 §4.9), QA -14 LUFS/TP<-1, metadata, record_score final, lalu tahap 10. Tanpa acc: JANGAN render.",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CINESTORY",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T12:05:39.099Z",
+      "doing": "s7 selesai: final approved (acc pengguna via sesi pemantau). Render final belum dimulai; konteks s7 penuh.",
+      "next": "s8: render final Ep09Final 1080x1920@60 (npm run render:final dengan --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav, --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc; maks 2 render final bersamaan di PC, OOM Chrome -> --concurrency=1), QA -14 LUFS TP<-1, metadata ffprobe, record_score final, tahap 10 delivery.",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CINESTORY",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T12:07:41.291Z",
+      "doing": "s8: render final Ep09Final 1080x1920@60 (acc pengguna langsung s8, tercatat)",
+      "command": "cd studio; npm run render:final -- --comp=Ep09Final --out=../EP09_BOBSLED_JAMAIKA_1988/FINAL_EP09_BOBSLED_JAMAIKA.mp4 --vo=public/audio/ep09/vo.wav --sfx=public/audio/ep09/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Jamaika Ikut Bobsled 1988\" --slug=bobsled-jamaika --ep=EP09",
+      "files": [
+        "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/FINAL_EP09_BOBSLED_JAMAIKA.mp4"
+      ],
+      "next": "QA -14 LUFS TP<-1, ffprobe metadata, record_score final juri buta, tahap 10 delivery (captions validator, NOTES, 3 scheduled review)",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CINESTORY",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T12:20:53.609Z",
+      "doing": "s8: render final Ep09Final. 3 percobaan gagal (Chrome OOM x2, browser setup timeout) saat render EP59 jalan bersamaan dan C: tinggal ~300 MB. Kini menunggu EP59 selesai lalu render otomatis --jobs=6 --concurrency=1, TEMP=F:/temp/remotion-ep09. Caption 6 platform sudah ditulis & lolos validator.",
+      "command": "cd studio; TEMP=F:/temp/remotion-ep09 npm run render:final -- --comp=Ep09Final --out=../EP09_BOBSLED_JAMAIKA_1988/FINAL_EP09_BOBSLED_JAMAIKA.mp4 --vo=public/audio/ep09/vo.wav --sfx=public/audio/ep09/sfx.wav --jobs=6 --concurrency=1 --gl=vulkan --encoder=nvenc --title=\"Jamaika Ikut Bobsled 1988\" --slug=bobsled-jamaika --ep=EP09 (log work/render-final-4.log)",
+      "next": "QA -14 LUFS TP<-1, ffprobe metadata, record_score final juri buta, NOTES.md, 3 scheduled review task (upload Selasa 1 Des 2026 19.00 WIB)",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CINESTORY",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T13:12:22.225Z",
+      "doing": "s8: FINAL_EP09_BOBSLED_JAMAIKA.mp4 SELESAI (1080x1920@60, 90.77 dtk, -13.6 LUFS, TP -1.9, metadata ffprobe OK, Ed25519 VALID + C2PA). SOCIAL_CAPTIONS.md lolos validator. NOTES.md diisi. 3 scheduled task dibuat: review-bobsled-jamaika-24h/-72h/-7d (2/4/8 Des 2026 19.00 WIB). Juri buta final #1 (frame acak work/finalqa/final-sheet.jpg) = L3 M3 D4 C3 Mo4 R2 (tidak adil: frame bukan frame kunci). Juri buta #2 berjalan pada work/finalqa/final-sheet-key.jpg (frame kunci draf x2 @60fps).",
+      "files": [
+        "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/FINAL_EP09_BOBSLED_JAMAIKA.mp4",
+        "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/SOCIAL_CAPTIONS.md",
+        "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/NOTES.md"
+      ],
+      "next": "record_score stage final judge jury (still work/finalqa/final-sheet-key.jpg); update stage final done + delivery done; append_lesson CINESTORY (render OOM saat 2 render lain jalan + C: penuh → tunggu PC kosong, TEMP ke F:, --concurrency=1); NOTES ## Review terjadwal taskId; tampilkan caption lengkap di chat; hapus file perantara (draft clip mp4, folder stills1-5/cine1-5c).",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CINESTORY",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T13:12:22.225Z",
+      "doing": "s8: FINAL_EP09_BOBSLED_JAMAIKA.mp4 SELESAI (1080x1920@60, 90.77 dtk, -13.6 LUFS, TP -1.9, metadata ffprobe OK, Ed25519 VALID + C2PA). SOCIAL_CAPTIONS.md lolos validator. NOTES.md diisi. 3 scheduled task dibuat: review-bobsled-jamaika-24h/-72h/-7d (2/4/8 Des 2026 19.00 WIB). Juri buta final #1 (frame acak work/finalqa/final-sheet.jpg) = L3 M3 D4 C3 Mo4 R2 (tidak adil: frame bukan frame kunci). Juri buta #2 berjalan pada work/finalqa/final-sheet-key.jpg (frame kunci draf x2 @60fps).",
+      "files": [
+        "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/FINAL_EP09_BOBSLED_JAMAIKA.mp4",
+        "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/SOCIAL_CAPTIONS.md",
+        "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/NOTES.md"
+      ],
+      "next": "record_score stage final judge jury (still work/finalqa/final-sheet-key.jpg); update stage final done + delivery done; append_lesson CINESTORY (render OOM saat 2 render lain jalan + C: penuh → tunggu PC kosong, TEMP ke F:, --concurrency=1); NOTES ## Review terjadwal taskId; tampilkan caption lengkap di chat; hapus file perantara (draft clip mp4, folder stills1-5/cine1-5c).",
+      "snapshot": {
+        "episode": "EP09_BOBSLED_JAMAIKA_1988",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "CINESTORY",
+        "memoryEpisode": "fakta-olahraga-EP09",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP09_BOBSLED_JAMAIKA_1988/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T13:12:59.312Z"
+    }
+  ],
+  "session": 8,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP09 Bobsled Jamaika · s2",
+      "at": "2026-11-23T15:18:15.772Z"
+    },
+    {
+      "no": 3,
+      "title": "EP09 Bobsled Jamaika · s3",
+      "at": "2026-11-23T18:30:06.896Z"
+    },
+    {
+      "no": 4,
+      "title": "EP09 Bobsled Jamaika · s4",
+      "at": "2026-11-24T07:13:33.087Z"
+    },
+    {
+      "no": 5,
+      "title": "EP09 Bobsled Jamaika · s5",
+      "at": "2026-11-24T07:25:51.442Z"
+    },
+    {
+      "no": 6,
+      "title": "EP09 Bobsled Jamaika · s6",
+      "at": "2026-11-24T07:44:18.928Z"
+    },
+    {
+      "no": 7,
+      "title": "EP09 Bobsled Jamaika · s7",
+      "at": "2026-11-24T07:54:03.947Z"
+    },
+    {
+      "no": 8,
+      "title": "EP09 Bobsled Jamaika · s8",
+      "at": "2026-11-24T12:05:39.099Z"
+    }
+  ]
+}

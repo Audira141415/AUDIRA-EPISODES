@@ -1,0 +1,473 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP56_KURSI_LISTRIK_1890",
+  "topic": "Kursi listrik pertama 1890 — dokter gigi, Perang Arus, eksekusi gagal di Auburn",
+  "createdAt": "2026-11-23T14:19:50.573Z",
+  "updatedAt": "2026-11-23T18:27:01.001Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.047Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:20:16.196Z",
+      "startedAt": "2026-11-23T14:20:16.196Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.047Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:17:35.899Z",
+      "startedAt": "2026-11-23T14:17:35.899Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.047Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:23:03.852Z",
+      "startedAt": "2026-11-23T14:23:03.852Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.047Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:21:12.167Z",
+      "startedAt": "2026-11-23T14:21:12.167Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.047Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:09.878Z",
+          "text": "Tahap 1-3,5,6 selesai di s1: VINTAGEFORGE 3D Remotion; VO dikunci 90.96 dtk (lihat docs/HANDOFF.md). Naskah ditulis (docs/SCRIPT.md); storyboard/art direction belum."
+        }
+      ],
+      "doneAt": "2026-11-23T14:23:09.878Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:23:42.047Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:19:42.549Z",
+      "startedAt": "2026-11-23T14:19:42.549Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:42:35.490Z",
+          "text": "Juri 3.50 (2 putaran, diterima ≥3.5). Sheet draft/DRAFT_SHEET.jpg. G18c gap 12.8 LU. Menunggu acc render final."
+        }
+      ],
+      "doneAt": "2026-11-23T14:42:35.490Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-23T15:10:17.674Z",
+      "notes": [
+        {
+          "at": "2026-11-23T15:10:17.674Z",
+          "text": "Acc pengguna 2026-11-23 (s4): \"Gas render final\"."
+        },
+        {
+          "at": "2026-11-23T18:26:57.833Z",
+          "text": "s5: FINAL 94.01s 1080x1920@60, -13.7 LUFS TP -1.8, signed VALID, deliver GREEN, qa:video PASS, juri final 3.50 (diterima setelah 2 putaran)"
+        }
+      ],
+      "startedAt": "2026-11-23T15:10:17.674Z",
+      "doneAt": "2026-11-23T18:26:57.833Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T18:23:27.421Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T18:27:01.001Z",
+          "text": "SOCIAL_CAPTIONS.md validator ok, SUBTITLES.srt, NOTES.md s5, lessons VINTAGEFORGE, arsip archive/2026-11-24, upload Sabtu 2 Jan 2027 19.00 WIB, review tasks review-ep56-kursi-listrik-24h/72h/7d"
+        }
+      ],
+      "doneAt": "2026-11-23T18:27:01.001Z",
+      "startedAt": "2026-11-23T18:23:18.997Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-negara-EP56",
+    "shortTitle": "Kursi Listrik",
+    "style": "VINTAGEFORGE",
+    "engine": "remotion",
+    "wordCount": 191,
+    "voSeconds": 90.96,
+    "estimatedDuration": {
+      "wordCount": 191,
+      "minSec": 76,
+      "maxSec": 85
+    }
+  },
+  "handoverLog": [
+    {
+      "at": "2026-11-23T14:23:04.193Z",
+      "doing": "VO dikunci 90.96 dtk; mulai docs storyboard + bangun Film.tsx",
+      "files": [
+        "docs/HANDOFF.md",
+        "docs/SCRIPT.md",
+        "style/STYLE_DECISION.md",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "Baca docs/HANDOFF.md; tulis ART_DIRECTION/STORYBOARD/ASSET_MANIFEST/SHOTLIST; bangun project/src/episodes/ep56 dengan FilmFromConfig; cover; sfx; draft",
+      "snapshot": {
+        "episode": "EP56_KURSI_LISTRIK_1890",
+        "topic": "Kursi listrik pertama 1890 — dokter gigi, Perang Arus, eksekusi gagal di Auburn",
+        "style": null,
+        "memoryEpisode": "sejarah-negara-EP56",
+        "currentStage": "context",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T14:23:15.172Z",
+      "doing": "Batas konteks s1; lanjut di s2 dari docs/HANDOFF.md",
+      "next": "Tahap 4 docs (ART_DIRECTION/STORYBOARD/ASSET_MANIFEST/SHOTLIST) lalu tahap 7 Film.tsx",
+      "snapshot": {
+        "episode": "EP56_KURSI_LISTRIK_1890",
+        "topic": "Kursi listrik pertama 1890 — dokter gigi, Perang Arus, eksekusi gagal di Auburn",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "sejarah-negara-EP56",
+        "currentStage": "context",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T14:25:44.203Z",
+      "doing": "Batas konteks s2 (hanya riset API kit/aset; belum ada file tulis)",
+      "files": [
+        "docs/HANDOFF.md"
+      ],
+      "next": "Baca docs/HANDOFF.md bagian s2→s3, lalu tulis ART_DIRECTION/STORYBOARD/ASSET_MANIFEST/SHOTLIST dan project/src/episodes/ep56/Film.tsx",
+      "snapshot": {
+        "episode": "EP56_KURSI_LISTRIK_1890",
+        "topic": "Kursi listrik pertama 1890 — dokter gigi, Perang Arus, eksekusi gagal di Auburn",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "sejarah-negara-EP56",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T14:27:28.080Z",
+      "doing": "s3: tulis docs (ART/STORYBOARD/ASSET/SHOTLIST) lalu Film.tsx",
+      "files": [
+        "docs/ART_DIRECTION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/SHOTLIST.md",
+        "project/src/episodes/ep56/Film.tsx"
+      ],
+      "next": "cover, sfx, draft, juri, gerbang acc",
+      "snapshot": {
+        "episode": "EP56_KURSI_LISTRIK_1890",
+        "topic": "Kursi listrik pertama 1890 — dokter gigi, Perang Arus, eksekusi gagal di Auburn",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "sejarah-negara-EP56",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T14:35:05.115Z",
+      "doing": "s3 selesai: docs + Film.tsx/Props.tsx + Root terdaftar, tsc bersih; belum dirender",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/episodes/ep56/Film.tsx",
+        "project/src/episodes/ep56/Props.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "cek still/draft KursiListrikPreview, perbaiki GLB/framing, cover, sfx, THEME_CHECK, juri, gerbang acc",
+      "snapshot": {
+        "episode": "EP56_KURSI_LISTRIK_1890",
+        "topic": "Kursi listrik pertama 1890 — dokter gigi, Perang Arus, eksekusi gagal di Auburn",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "sejarah-negara-EP56",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T14:41:58.649Z",
+      "doing": "s4: draft r1 selesai (draft/DRAFT_SHEET.jpg, THEME_CHECK.md, cover-topic.png, sfx.wav -26 LUFS, G18c gap 12.8 LU). Juri buta r1 berjalan.",
+      "files": [
+        "project/src/episodes/ep56/Film.tsx (Overlay inverse-scale wrapper untuk Subtitle/Signature/Outro)",
+        "project/src/episodes/ep56/Props.tsx (BackWall #b8956a)",
+        "project/src/core/hud/Subtitle.tsx (gap 0.4em)",
+        "project/scripts/draft.mjs (cli path fallback ../node_modules)"
+      ],
+      "next": "record_score jury; bila LOLOS -> gerbang acc render final (tampilkan sheet, skor, 94 dtk, G18c); setelah acc: npm run render:final -- --comp=KursiListrikFinal --out=../FINAL_EP56_KURSI_LISTRIK_1890.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --gl=vulkan --encoder=nvenc --jobs=4",
+      "snapshot": {
+        "episode": "EP56_KURSI_LISTRIK_1890",
+        "topic": "Kursi listrik pertama 1890 — dokter gigi, Perang Arus, eksekusi gagal di Auburn",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "sejarah-negara-EP56",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T14:43:22.643Z",
+      "doing": "s4 di GERBANG render final (tahap 9), menunggu acc pengguna. Draf diterima: juri buta 3.50 (L4 M4 D3 C3 Mo4 R3), self 3.83; G18c gap 12.8 LU; durasi 94 dtk. channel.json diperbaiki ke @AudiraFaktaDunia (sebelumnya @AudiraExplained) dan cover-topic.png dirender ulang --force.",
+      "command": "npm run render:final -- --comp=KursiListrikFinal --out=../FINAL_EP56_KURSI_LISTRIK_1890.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --gl=vulkan --encoder=nvenc --jobs=4",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "style/cover-topic.png",
+        "project/src/brand/channel.json",
+        "NOTES.md"
+      ],
+      "next": "Setelah acc: audira_episode_status update stage final approved:true (kutip kata pengguna), lalu cd project && npm run render:final -- --comp=KursiListrikFinal --out=../FINAL_EP56_KURSI_LISTRIK_1890.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --gl=vulkan --encoder=nvenc --jobs=4 (background). Lalu metadata ffmpeg, qa:video, record_score final (juri buta pada sheet final), SOCIAL_CAPTIONS.md 6 platform + validator, NOTES.md, append_lesson, 3 scheduled review (review-ep56-kursi-listrik-24h/-72h/-7d), SendMessage ke local_c491555b-6c29-4434-aa53-ad8e1869414e.",
+      "snapshot": {
+        "episode": "EP56_KURSI_LISTRIK_1890",
+        "topic": "Kursi listrik pertama 1890 — dokter gigi, Perang Arus, eksekusi gagal di Auburn",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "sejarah-negara-EP56",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T15:10:24.287Z",
+      "doing": "Acc render final sudah diberikan pengguna (\"Gas render final\", s4). Render final BELUM dimulai; s5 menjalankannya.",
+      "command": "cd project && npm run render:final -- --comp=KursiListrikFinal --out=../FINAL_EP56_KURSI_LISTRIK_1890.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --gl=vulkan --encoder=nvenc --jobs=4",
+      "files": [
+        "NOTES.md",
+        "draft/DRAFT_SHEET.jpg",
+        "style/cover-topic.png",
+        "project/src/brand/channel.json"
+      ],
+      "next": "s5: render final (perintah di bawah, background) → metadata ffmpeg → qa:video/deliver → juri buta final + record_score final → SOCIAL_CAPTIONS.md 6 platform + validator → NOTES.md + append_lesson → 3 scheduled review → SendMessage induk.",
+      "snapshot": {
+        "episode": "EP56_KURSI_LISTRIK_1890",
+        "topic": "Kursi listrik pertama 1890 — dokter gigi, Perang Arus, eksekusi gagal di Auburn",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "sejarah-negara-EP56",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T15:11:08.332Z",
+      "doing": "Render final berjalan di background (s4), log `render-final.log`. Percobaan pertama gagal di channel gate karena file starter `src/scenes/news/PenggantiGibranWapres.tsx` (bukan EP56); diulang dengan --skip-channel beralasan.",
+      "command": "npm run render:final -- --comp=KursiListrikFinal --out=../FINAL_EP56_KURSI_LISTRIK_1890.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --gl=vulkan --encoder=nvenc --jobs=4 \"--skip-channel=...\"",
+      "files": [
+        "render-final.log",
+        "FINAL_EP56_KURSI_LISTRIK_1890.mp4"
+      ],
+      "next": "s5 (kartu task_0608f883): cek tail render-final.log / FINAL_EP56_KURSI_LISTRIK_1890.mp4 → metadata, QA, juri final, caption, NOTES, scheduled review, SendMessage induk.",
+      "snapshot": {
+        "episode": "EP56_KURSI_LISTRIK_1890",
+        "topic": "Kursi listrik pertama 1890 — dokter gigi, Perang Arus, eksekusi gagal di Auburn",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "sejarah-negara-EP56",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T15:11:08.332Z",
+      "doing": "Render final berjalan di background (s4), log `render-final.log`. Percobaan pertama gagal di channel gate karena file starter `src/scenes/news/PenggantiGibranWapres.tsx` (bukan EP56); diulang dengan --skip-channel beralasan.",
+      "command": "npm run render:final -- --comp=KursiListrikFinal --out=../FINAL_EP56_KURSI_LISTRIK_1890.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --gl=vulkan --encoder=nvenc --jobs=4 \"--skip-channel=...\"",
+      "files": [
+        "render-final.log",
+        "FINAL_EP56_KURSI_LISTRIK_1890.mp4"
+      ],
+      "next": "s5 (kartu task_0608f883): cek tail render-final.log / FINAL_EP56_KURSI_LISTRIK_1890.mp4 → metadata, QA, juri final, caption, NOTES, scheduled review, SendMessage induk.",
+      "snapshot": {
+        "episode": "EP56_KURSI_LISTRIK_1890",
+        "topic": "Kursi listrik pertama 1890 — dokter gigi, Perang Arus, eksekusi gagal di Auburn",
+        "style": "VINTAGEFORGE",
+        "memoryEpisode": "sejarah-negara-EP56",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T15:15:08.781Z"
+    }
+  ],
+  "session": 5,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP56 Kursi Listrik · s2",
+      "at": "2026-11-23T14:23:15.171Z"
+    },
+    {
+      "no": 3,
+      "title": "EP56 Kursi Listrik · s3",
+      "at": "2026-11-23T14:25:44.203Z"
+    },
+    {
+      "no": 4,
+      "title": "EP56 Kursi Listrik · s4",
+      "at": "2026-11-23T14:35:05.115Z"
+    },
+    {
+      "no": 5,
+      "title": "EP56 Kursi Listrik · s5",
+      "at": "2026-11-23T15:10:24.287Z"
+    }
+  ],
+  "syncedAt": "2026-11-23T18:23:27.421Z"
+}

@@ -1,0 +1,12 @@
+import React from "react";
+import { Composition } from "remotion";
+import { Cover } from "./Cover";
+import { Film, FILM_SEC } from "./Film";
+
+export const Root: React.FC = () => (
+  <>
+    <Composition id="Ep30Cover" component={Cover} durationInFrames={120} fps={60} width={1080} height={1920} />
+    <Composition id="Ep30Preview" component={Film} defaultProps={{ withAudio: true }} durationInFrames={Math.round(FILM_SEC * 30)} fps={30} width={1080} height={1920} />
+    <Composition id="Ep30Final" component={Film} durationInFrames={Math.round(FILM_SEC * 60)} fps={60} width={1080} height={1920} />
+  </>
+);

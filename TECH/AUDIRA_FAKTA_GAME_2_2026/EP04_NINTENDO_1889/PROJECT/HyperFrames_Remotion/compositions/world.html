@@ -1,0 +1,141 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#E7DCC4}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.05;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.26) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0) 42%,rgba(0,0,0,0) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'Zen Kaku Gothic New',sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#F6F0E1;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.p .st{display:block;width:fit-content;max-width:900px;box-sizing:border-box;background:#EFE3C8;color:#0F2747;border:4px solid #1B1A1F;box-shadow:inset 0 0 0 7px #EFE3C8,inset 0 0 0 10px #D9472B,9px 11px 0 rgba(27,26,31,.38);font-family:'Zen Antique',serif;margin-bottom:16px}
+.tag{display:inline-block;font-family:'Zen Kaku Gothic New',sans-serif;font-weight:700;font-size:27px;letter-spacing:.12em;color:#F6F0E1;background:#D9472B;padding:7px 18px 8px;border:3px solid #1B1A1F;margin-bottom:16px}
+.big{font-size:118px;line-height:1.02;padding:22px 34px 18px;letter-spacing:.01em}.big span{color:#D9472B}
+.h{font-size:47px;line-height:1.16;padding:16px 28px 17px}.q{font-size:52px}.dt{font-size:56px;color:#A8301C}
+.y{background:#D9A441!important;box-shadow:inset 0 0 0 7px #D9A441,inset 0 0 0 10px #1B1A1F,9px 11px 0 rgba(27,26,31,.38)!important}
+.g{color:#5a5e66!important}
+.seal{display:inline-block;font-family:'Zen Kaku Gothic New',sans-serif;font-weight:900;font-size:44px;letter-spacing:.06em;color:#F6F0E1;background:#D9472B;border:5px solid #A8301C;outline:3px solid #F6F0E1;outline-offset:-12px;padding:14px 26px;transform:rotate(-3deg);box-shadow:6px 8px 0 rgba(27,26,31,.35);margin:4px 0 16px 6px}
+.seal.big2{font-size:84px;padding:12px 40px;letter-spacing:.1em}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-bottom:16px}.row .st{margin-bottom:0}
+.c{font-size:50px;padding:14px 26px}
+.n9{font-size:104px;color:#0F2747}.n6{font-size:104px;color:#D9472B!important}
+.arw{font-family:'Zen Kaku Gothic New',sans-serif;font-weight:900;font-size:90px;color:#1B1A1F}.yen{font-family:'Zen Antique',serif;font-size:70px;color:#0F2747;background:#EFE3C8;border:4px solid #1B1A1F;padding:6px 18px}
+.uh{font-size:84px;color:#D9472B}
+#chip{font-family:'Zen Kaku Gothic New',sans-serif;font-weight:700;color:#F6F0E1;background:#0F2747;padding:3px 12px;top:176px;font-size:21px;letter-spacing:.06em}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="94.23" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN CUPLIKAN GAME</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tag">FAKTA GAME &middot; EP 04</div>
+  <div class="st big">NINTENDO<br>LAHIR <span>1889</span></div>
+  <div class="seal" data-at="s1:kartu" data-fx="stamp">bukan game, tapi kartu</div>
+</div>
+<div class="p" data-in="s2" data-out="s2:Arti">
+  <div class="tag">AWAL MULA</div>
+  <div class="st h dt">23 SEP 1889 &middot; KYOTO</div>
+  <div class="st h" data-at="s2:Fusajiro" data-fx="unr">Fusajiro Yamauchi mendirikan Nintendo</div>
+  <div class="st h y" data-at="s2:hanafuda" data-fx="unr">Kartu hanafuda buatan tangan</div>
+</div>
+<div class="p" data-in="s2:Arti" data-out="s3">
+  <div class="tag">ARTI NAMA YANG SERING DISEBUT</div>
+  <div class="st h q" data-at="s2:serahkan" data-fx="unr">&ldquo;Serahkan keberuntungan pada langit&rdquo;?</div>
+  <div class="seal" data-at="s2:tidak" data-fx="stamp">BELUM TERBUKTI</div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tag">1959</div>
+  <div class="st h" data-at="s3:Disney" data-fx="unr">Kerja sama dengan Disney: kartu bergambar karakter</div>
+  <div class="st h y" data-at="s3:melonjak" data-fx="unr">Penjualan melonjak</div>
+  <div class="st h g" data-at="s3:jenuh" data-fx="unr">Lalu bisnis kartu jenuh</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="tag">MENCOBA USAHA LAIN</div>
+  <div class="st h" data-at="s4:1960" data-fx="unr">1960 &middot; Daiya Taxi, Kyoto</div>
+  <div class="st h" data-at="s4:nasi" data-fx="unr">Nasi instan</div>
+  <div class="st h" data-at="s4:Chiritory" data-fx="unr">Chiritory, penyedot debu</div>
+  <div class="seal big2" data-at="s4:gagal" data-fx="stamp">GAGAL</div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="tag">SETELAH OLIMPIADE TOKYO 1964</div>
+  <div class="st h">Harga saham Nintendo</div>
+  <div class="row"><b class="st big n9" data-at="s5:sembilan" data-fx="unr">900</b><b class="arw" data-at="s5:ke" data-fx="fade">&rarr;</b><b class="st big n6" data-at="s5:enam" data-fx="stamp">60</b><b class="yen" data-at="s5:enam" data-fx="fade">YEN</b></div>
+</div>
+<div class="p" data-in="s6" data-out="s6:Ultra">
+  <div class="tag">1966 &middot; PENYELAMAT TAK TERDUGA</div>
+  <div class="st h" data-at="s6:mainan" data-fx="unr">Mainan lengan panjang, dibuat montir untuk iseng</div>
+</div>
+<div class="p" data-in="s6:Ultra" data-out="s7">
+  <div class="tag">1966 &middot; DIJUAL SEBAGAI</div>
+  <div class="st big uh">ULTRA HAND</div>
+  <div class="st h y" data-at="s6:ratusan" data-fx="unr">Laku ratusan ribu unit</div>
+  <div class="st h" data-at="s6:Yokoi#2" data-fx="unr">Yokoi pindah ke pengembangan produk</div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tag">CERITA YANG BEREDAR</div>
+  <div class="st h q" data-at="s7:love" data-fx="unr">Nintendo punya jaringan love hotel?</div>
+  <div class="st h y" data-at="s7:tidak" data-fx="unr">Isao Yamazaki: tidak ada bukti</div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="tag">SEBELUM MARIO</div>
+  <div class="row"><b class="st c" data-at="s8:kartu" data-fx="unr">kartu</b><b class="st c" data-at="s8:taksi" data-fx="unr">taksi</b><b class="st c" data-at="s8:nasi" data-fx="unr">nasi instan</b></div>
+  <div class="st h y" data-at="s8:Menurutmu" data-fx="unr">Usaha mana yang paling aneh?</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA GAME &middot; EP 04</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":6.406,"s2":6.566,"s2e":24.696,"s3":24.856,"s3e":34.087,"s4":34.247,"s4e":46.922,"s5":47.082,"s5e":53.503,"s6":53.663,"s6e":71.468,"s7":71.628,"s7e":81.188,"s8":81.348,"s8e":91.23,"end":91.23,"dur":94.23,"outro":91.48},AT={"s1:kartu":5.895,"s2:Arti":19,"s2:hanafuda":14.953,"s2:serahkan":21.043,"s3:Disney":27.393,"s3:Penjualannya":30.51,"s3:jenuh":33.777,"s3:melonjak":31.052,"s4:1960":36.442,"s4:Chiritory":45.329,"s4:Daiya":40.126,"s4:Semuanya":46.055,"s4:nasi":42.93,"s4:penyedot":44.431,"s5:enam":52.915,"s5:jatuh":51.475,"s5:saham":50.717,"s5:sembilan":52.017,"s6:Gunpei":62.816,"s6:Hiroshi":58.575,"s6:Ultra":66.718,"s6:Yokoi#2":69.224,"s6:iseng":64.829,"s6:laku":67.786,"s6:mainan":60.077,"s6:melihat":59.751,"s6:pengembangan":70.694,"s7:Isao":77.055,"s7:Ternyata":75.259,"s7:buktinya":78.587,"s7:koran":80.507,"s7:laporan":79.423,"s7:tidak":77.922,"s8:AUDIRA":89.728,"s8:Menurutmu":87.097,"s8:kartu":84.329,"s8:nasi":86.18,"s8:taksi":85.19,"s4:gagal":46.519,"s4:Taxi":40.343,"s6:Hand":66.95,"s6:ratusan":68.065,"s2:Kyoto":13.621,"s2:Fusajiro":11.284,"s2:tidak":23.442,"s5:ke":52.822,"s7:love":74.426},DUR=94.23,OUT=91.48;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ unr:(e,t)=>tl.fromTo(e,{clipPath:'inset(-12% 100% -12% -6%)',opacity:1},{clipPath:'inset(-12% -6% -12% -6%)',opacity:1,duration:.42,ease:'power2.out'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{clipPath:'inset(-12% 100% -12% -6%)',x:-24,opacity:1},{clipPath:'inset(-12% -6% -12% -6%)',x:0,opacity:1,duration:.55,ease:'power2.inOut'},a-.08),POUT=(tl,p,b)=>tl.to(p,{clipPath:'inset(-12% -6% -12% 100%)',x:24,duration:.3,ease:'power2.in'},b-.3);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{clipPath:'inset(0% 50% 0% 50%)'});tl.to('#outro',{clipPath:'inset(0% 0% 0% 0%)',duration:.6,ease:'power3.inOut'},OUT-.3);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP04_NINTENDO_1889")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

@@ -1,0 +1,13 @@
+EP35 Katup Degassing Kemasan Kopi (COMICFORGE): 198 kata, 83–91 dtk
+
+Hook: Lubang plastik kecil di bungkus kopi kemasan. Tempat mencium aroma kopi? Ternyata bukan itu fungsinya.
+
+Konteks: Di bagian depan kantong biji kopi premium, terdapat piringan plastik kecil dengan lubang udara di tengahnya. Hampir semua konsumen sengaja mendekatkan hidung ke lubang tersebut untuk mencium keharuman aroma kopi sebelum membeli, mengira pabrik sengaja membuatnya sebagai lubang tester penciuman.
+
+Pengembangan: Piringan plastik tersebut sebenarnya adalah One-Way Degassing Valve atau katup pelepas gas satu arah, sebuah teknologi pengawetan mikromekanik yang sangat cerdas.
+
+Penjelasan: Setelah biji kopi disangrai matang, reaksi kimia termal terus melepaskan gas karbon dioksida dalam volume raksasa hingga berminggu-minggu. Jika bungkus kopi disegel rapat tanpa katup, kantong akan menggelembung kencang hingga meledak di rak toko. Namun jika dilubangi biasa, oksigen udara luar akan masuk dan mengoksidasi minyak alami kopi, membuat rasanya basi tengik dalam hitungan hari. Di dalam katup ini terdapat diafragma karet elastis berpelumas silikon. Katup hanya akan membuka ke luar saat tekanan gas karbon dioksida di dalam kantong naik, dan langsung mengunci rapat kedap udara mencegah oksigen luar masuk.
+
+Payoff: Katup kecil ini menjaga bungkus kopi tidak meledak sekaligus mempertahankan kesegaran cita rasa kopi hingga berbulan-bulan.
+
+Outro: Ini AUDIRA, Cara Kerja Benda. Episode berikutnya: lempeng logam yang sengaja dikorbankan agar kapal laut tidak karam.

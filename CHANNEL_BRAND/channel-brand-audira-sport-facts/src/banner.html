@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@500;700&display=block" rel="stylesheet">
+<style>
+:root{--forest:#0B3D2E;--forest-deep:#072a20;--tosca:#00B894;--lime:#A3E635;--orange:#FF6A3D;--white:#FFFFFF}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow:hidden;background:var(--forest)}
+body{position:relative;font-family:'Space Grotesk',sans-serif;color:var(--white)}
+.bg{position:absolute;inset:0;background:radial-gradient(ellipse 55% 50% at 50% 50%,#0f4a38 0%,var(--forest) 55%,var(--forest-deep) 100%)}
+/* turf stripes, very faint */
+.turf{position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.018) 0 120px,transparent 120px 240px)}
+.court{position:absolute;inset:0;
+  -webkit-mask-image:linear-gradient(90deg,#000 0%,rgba(0,0,0,.55) 22%,transparent 37%,transparent 63%,rgba(0,0,0,.55) 78%,#000 100%);
+          mask-image:linear-gradient(90deg,#000 0%,rgba(0,0,0,.55) 22%,transparent 37%,transparent 63%,rgba(0,0,0,.55) 78%,#000 100%)}
+.ball{position:absolute;top:50%}
+.tag{position:absolute;font-family:'JetBrains Mono',monospace;font-weight:500;color:rgba(163,230,53,.8);letter-spacing:1px;white-space:nowrap;transform:translate(-50%,-50%)}
+.tag b{font-weight:700;color:var(--white);margin-right:12px}
+.tag i{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--orange);vertical-align:middle;margin-right:12px;position:relative;top:-2px}
+.band{position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(163,230,53,.32) 20%,rgba(163,230,53,.32) 80%,transparent)}
+.safe{position:absolute;width:1546px;height:423px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:38px;transform-origin:center}
+.row{display:flex;align-items:center;gap:52px}
+.row img{height:112px;display:block}
+.divider{width:4px;height:136px;background:var(--tosca);border-radius:2px}
+.title{display:flex;flex-direction:column;gap:18px}
+.title h1{font-weight:700;font-size:132px;line-height:.9;letter-spacing:-3px;white-space:nowrap}
+.title h1 span{color:var(--orange)}
+.title p{font-weight:500;font-size:33px;color:var(--lime);letter-spacing:.5px;white-space:nowrap}
+.chips{display:flex;gap:20px}
+.chips div{font-weight:500;font-size:26px;padding:10px 24px;border:2px solid rgba(255,255,255,.28);border-radius:999px;color:rgba(255,255,255,.92);white-space:nowrap}
+.chips div b{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--tosca);margin-right:14px;vertical-align:middle;position:relative;top:-2px}
+</style></head><body>
+<div class="bg"></div>
+<div class="turf"></div>
+<svg class="court" id="court"></svg>
+<div class="band" id="b1"></div>
+<div class="band" id="b2"></div>
+<div class="safe" id="safe">
+  <div class="row">
+    <img src="horizontal-reversed.svg" alt="audira multimedia digital">
+    <div class="divider"></div>
+    <div class="title"><h1>Sport Facts<span>.</span></h1><p>Fakta, sejarah &amp; analisis olahraga. Bersumber.</p></div>
+  </div>
+  <div class="chips">
+    <div><b></b>Sepak Bola</div>
+    <div><b></b>Basket</div>
+    <div><b></b>Bulu Tangkis</div>
+    <div><b></b>MotoGP &amp; F1</div>
+    <div><b></b>Analisis Data</div>
+  </div>
+</div>
+<script>
+// ?w=2560&h=1440&s=1&tags=1  (s = scale of the centred content block)
+const q=new URLSearchParams(location.search);
+const W=+(q.get('w')||2560),H=+(q.get('h')||1440),S=+(q.get('s')||1),TAGS=q.get('tags')!=='0';
+document.documentElement.style.width=document.body.style.width=W+'px';
+document.documentElement.style.height=document.body.style.height=H+'px';
+const safe=document.getElementById('safe');
+safe.style.left=(W-1546)/2+'px';safe.style.top=(H-423)/2+'px';safe.style.transform=`scale(${S})`;
+const half=423*S/2+30*S;
+document.getElementById('b1').style.top=(H/2-half)+'px';
+document.getElementById('b2').style.top=(H/2+half)+'px';
+
+// left half: football pitch markings; right half: basketball court. Faded toward centre.
+const c=document.getElementById('court');c.setAttribute('width',W);c.setAttribute('height',H);
+const m=Math.max(24,H*0.05), yT=m, yB=H-m, L=m, R=W-m, cy=H/2, ph=yB-yT, lw=Math.max(2,2.4*S);
+let d='';
+d+=`M${L} ${yT}H${R}V${yB}H${L}Z`;            // outer touchline
+d+=`M${W/2} ${yT}V${yB}`;                       // halfway line
+// football penalty area + goal area + arc (left)
+const pa=ph*0.6, pd=ph*0.27, ga=ph*0.28, gd=ph*0.09;
+d+=`M${L} ${cy-pa/2}H${L+pd}V${cy+pa/2}H${L}`;
+d+=`M${L} ${cy-ga/2}H${L+gd}V${cy+ga/2}H${L}`;
+const ar=ph*0.15, ax=L+pd*0.68, dx=pd-(ax-L);
+const ay=Math.sqrt(Math.max(0,ar*ar-dx*dx));
+d+=`M${L+pd} ${cy-ay}A${ar} ${ar} 0 0 1 ${L+pd} ${cy+ay}`;
+// basketball key + free-throw circle + three-point arc (right)
+const kw=ph*0.32, kd=ph*0.36;
+d+=`M${R} ${cy-kw/2}H${R-kd}V${cy+kw/2}H${R}`;
+d+=`M${R-kd} ${cy-kw/2}A${kw/2} ${kw/2} 0 0 0 ${R-kd} ${cy+kw/2}`;
+const tr=ph*0.44;
+d+=`M${R} ${cy-tr}H${R-ph*0.12}A${tr} ${tr} 0 0 0 ${R-ph*0.12} ${cy+tr}H${R}`;
+let svg=`<path d="${d}" stroke="#00B894" stroke-opacity=".22" stroke-width="${lw}" fill="none"/>`;
+svg+=`<circle cx="${L+pd*0.68}" cy="${cy}" r="${3*lw}" fill="#00B894" fill-opacity=".4"/>`; // penalty spot
+svg+=`<circle cx="${R-ph*0.05}" cy="${cy}" r="${ph*0.03}" stroke="#FF6A3D" stroke-opacity=".55" stroke-width="${lw}" fill="none"/>`; // hoop
+c.innerHTML=svg;
+
+// line-art balls on the outer edges (visible on TV/desktop, cropped on mobile)
+function mk(cx,r){
+  const s=document.createElementNS('http://www.w3.org/2000/svg','svg');
+  s.setAttribute('class','ball');s.setAttribute('width',2*r+20);s.setAttribute('height',2*r+20);
+  s.setAttribute('viewBox',`${-r-10} ${-r-10} ${2*r+20} ${2*r+20}`);
+  s.style.left=(cx-r-10)+'px';s.style.marginTop=(-r-10)+'px';
+  document.body.insertBefore(s,safe);return s;
+}
+function football(cx,r){
+  const s=mk(cx,r);
+  let g=`<circle r="${r}" fill="#072a20" fill-opacity=".78" stroke="#00B894" stroke-opacity=".6" stroke-width="${3*S}"/>`;
+  const p=r*0.34, pts=[], outer=[];
+  for(let i=0;i<5;i++){const a=-Math.PI/2+i*2*Math.PI/5;pts.push([p*Math.cos(a),p*Math.sin(a)]);outer.push([r*.98*Math.cos(a),r*.98*Math.sin(a)]);}
+  g+=`<g transform="rotate(-14)" stroke="#00B894" stroke-opacity=".45" stroke-width="${2.2*S}" fill="none">`;
+  g+=`<path d="M${pts.map(q=>q.join(' ')).join('L')}Z" fill="#00B894" fill-opacity=".25"/>`;
+  for(const a of pts)g+=`<line x1="${a[0]}" y1="${a[1]}" x2="${a[0]*2.9}" y2="${a[1]*2.9}"/>`;
+  g+=`</g>`;
+  // orange dashed trajectory: a shot curling into the frame
+  g+=`<path d="M${-r*.7} ${r*.55} Q ${r*.1} ${-r*1.05} ${r*.72} ${-r*.35}" fill="none" stroke="#FF6A3D" stroke-width="${3.5*S}" stroke-dasharray="${10*S} ${9*S}"/>`;
+  g+=`<circle cx="${r*.72}" cy="${-r*.35}" r="${9*S}" fill="#A3E635"/>`;
+  s.innerHTML=g;
+}
+function basketball(cx,r){
+  const s=mk(cx,r);
+  let g=`<circle r="${r}" fill="#072a20" fill-opacity=".78" stroke="#00B894" stroke-opacity=".6" stroke-width="${3*S}"/>`;
+  g+=`<g transform="rotate(16)" stroke="#00B894" stroke-opacity=".45" stroke-width="${2.4*S}" fill="none">`;
+  g+=`<line y1="${-r}" y2="${r}"/><line x1="${-r}" x2="${r}"/>`;
+  g+=`<path d="M${-r*.7} ${-r*.71} Q ${-r*.18} 0 ${-r*.7} ${r*.71}"/><path d="M${r*.7} ${-r*.71} Q ${r*.18} 0 ${r*.7} ${r*.71}"/>`;
+  g+=`</g>`;
+  g+=`<path d="M${r*.7} ${r*.55} Q ${-r*.1} ${-r*1.05} ${-r*.72} ${-r*.35}" fill="none" stroke="#FF6A3D" stroke-width="${3.5*S}" stroke-dasharray="${10*S} ${9*S}"/>`;
+  g+=`<circle cx="${-r*.72}" cy="${-r*.35}" r="${9*S}" fill="#FF6A3D"/>`;
+  s.innerHTML=g;
+}
+const gut=W/2-735*S-24;
+const Rb=Math.min(H*0.3,gut*0.4);
+const cxL=gut/2, cxR=W-cxL;
+football(cxL,Rb);
+basketball(cxR,Rb);
+
+// dated facts as stat tags above/below each ball, tall canvases only
+function tag(yr,txt,cx,y){
+  const e=document.createElement('div');e.className='tag';
+  e.style.fontSize='19px';e.style.top=y+'px';e.style.left=cx+'px';
+  e.innerHTML=`<i></i><b>${yr}</b>${txt}`;document.body.insertBefore(e,safe);
+}
+if(H>=1000&&TAGS){
+  tag('1930','PIALA DUNIA PERTAMA',cxL,H/2-Rb-48);
+  tag('1992','EMAS OLIMPIADE RI',cxL,H/2+Rb+48);
+  tag('1891','BASKET LAHIR',cxR,H/2-Rb-48);
+  tag('1949','GP MOTOR PERTAMA',cxR,H/2+Rb+48);
+}
+</script>
+</body></html>

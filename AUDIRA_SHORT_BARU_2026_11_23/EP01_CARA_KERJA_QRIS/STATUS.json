@@ -1,0 +1,818 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP01_CARA_KERJA_QRIS",
+  "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+  "createdAt": "2026-11-22T17:49:12.364Z",
+  "updatedAt": "2026-11-23T12:16:57.979Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:49:44.874Z",
+          "text": "Preflight lolos tanpa blocker. Memori GLOBAL: tulis \"Audira\" di VO, tighten-pauses, sign await workaround, TP loudnorm. Channel: slot malam 19-22 WIB. Engine 2D Remotion (React/SVG tanpa R3F)."
+        }
+      ],
+      "doneAt": "2026-11-22T17:49:44.874Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:50:55.995Z",
+          "text": "11 fakta, 7 sumber (4 HIGH). Data terbaru BI Okt 2026: 71,91 jt pengguna, 51,31 jt merchant, +70,95% yoy."
+        }
+      ],
+      "doneAt": "2026-11-22T17:50:55.995Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-23T08:34:12.963Z",
+      "notes": [
+        {
+          "at": "2026-11-22T17:52:03.875Z",
+          "text": "Ditawarkan: ISOCRAFT (utama, isometric infographic 2D), DRAFTFORGE (blueprint), CIRCUITFORGE (papan sirkuit). Sheet: style/_style_options.jpg. Menunggu pilihan pengguna."
+        },
+        {
+          "at": "2026-11-22T17:52:26.586Z",
+          "text": "Pengguna memilih \"1 ISOCRAFT\" (2026-11-23). Engine Remotion 2D (SVG isometrik datar, tanpa R3F)."
+        },
+        {
+          "at": "2026-11-23T08:34:12.963Z",
+          "text": "Pengguna memilih BONGKAR (2026-11-23) setelah CIRCUITFORGE gagal juri 2 ronde (2.67, 3.0)."
+        }
+      ],
+      "startedAt": "2026-11-22T17:52:03.875Z",
+      "doneAt": "2026-11-23T08:34:12.963Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T18:00:58.005Z",
+          "text": "docs/ART_DIRECTION, SCRIPT, STORYBOARD (6 baris + Audio), ASSET_MANIFEST, SHOTLIST (lint 0 red). Acc naskah tidak diperlukan (keputusan pengguna 2026-11-22: hanya gerbang style)."
+        }
+      ],
+      "doneAt": "2026-11-22T18:00:58.005Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:54:02.713Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:00:52.771Z",
+          "text": "VO Cartesia 83,13 dtk → tighten (14 jeda >0,6→0,45) 77,63 dtk; public/audio/vo.wav + vo-words.json + vo.timing.json. Offset 0,3; film 81,2 dtk. Docs rule 12 + SHOTLIST ditulis."
+        }
+      ],
+      "doneAt": "2026-11-22T18:00:52.771Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:54:02.713Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.572Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T22:43:31.160Z",
+          "text": "draft/r3 juri buta LOLOS 4.17 (L4 M4 D4 C4 R4 Mo5); THEME_CHECK 8/8 ya. Auto-approve per keputusan pengguna 2026-11-22 (acc hanya di style)."
+        },
+        {
+          "at": "2026-11-23T00:08:54.592Z",
+          "text": "Restyle ke CIRCUITFORGE (pilihan pengguna 2026-11-23) setelah ISOCRAFT gagal juri 2 putaran."
+        },
+        {
+          "at": "2026-11-23T07:27:25.928Z",
+          "text": "sync: look.json PASS"
+        },
+        {
+          "at": "2026-11-23T09:06:13.641Z",
+          "text": "BONGKAR draf lolos juri r2 3.83 (2026-11-23)"
+        }
+      ],
+      "doneAt": "2026-11-23T09:06:13.641Z",
+      "startedAt": "2026-11-23T00:08:54.592Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:51:09.207Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-23T09:28:54.968Z",
+          "text": "BONGKAR final 2026-11-23: -13.7 LUFS TP -1.9, metadata ok, signature VALID, qa_video PASS, juri final 3.67 PERLU POLES (L4 M3 D4 C3 Mo4 R4; draf 3.83). Poles tidak dikerjakan (kode qris2d dikunci brief), keputusan ke pengguna."
+        },
+        {
+          "at": "2026-11-23T12:16:57.979Z",
+          "text": "Pengguna: \"Kirim apa adanya\" (2026-11-23) — final BONGKAR juri 3.67 diterima tanpa poles."
+        }
+      ],
+      "doneAt": "2026-11-23T12:16:57.979Z",
+      "startedAt": "2026-11-22T22:49:32.461Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:51:09.207Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T09:28:55.302Z",
+          "text": "SOCIAL_CAPTIONS.md validator ok (tidak menyebut style lama); NOTES.md BONGKAR; 3 lesson BONGKAR; review task 24h/72h/7d sudah ada. Perantara dihapus kecuali _old_ISOCRAFT_FINAL.mp4 (hapus ditolak auto-mode, perlu pengguna)."
+        }
+      ],
+      "doneAt": "2026-11-23T09:28:55.302Z",
+      "startedAt": "2026-11-22T22:44:18.621Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP01",
+    "engine": "remotion",
+    "channel": "EXPLAINED",
+    "handle": "@AudiraExplained",
+    "style": "BONGKAR",
+    "wordCount": 194,
+    "voSeconds": 77.63,
+    "filmSeconds": 81.2,
+    "voOffset": 0.3,
+    "estimatedDuration": {
+      "wordCount": 194,
+      "minSec": 78,
+      "maxSec": 86
+    },
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-23T07:27:25.928Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T22:43:30.963Z",
+      "doing": "render final QrisFinal 1080x1920@60 → FINAL_VIDEO.mp4",
+      "command": "cd project; npm run render:final -- --comp=QrisFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Cara Kerja QRIS\" --slug=ep01-cara-kerja-qris --ep=EP01",
+      "files": [
+        "project/src/scenes/qris/QrisFilm.tsx",
+        "draft/THEME_CHECK.md",
+        "SOCIAL_CAPTIONS.md"
+      ],
+      "next": "QA LUFS/TP, metadata, audira_qa_video, record_score final, delivery (SOCIAL_CAPTIONS sudah ditulis)",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "ISOCRAFT",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T22:46:38.995Z",
+      "doing": "render final gagal di part 13 (net::ERR_CONNECTION_RESET, transient); segmen lain di project/out/seg, render restartable",
+      "command": "cd project; npm run render:final -- --comp=QrisFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Cara Kerja QRIS\" --slug=ep01-cara-kerja-qris --ep=EP01 --log=error --skip-channel=\"file kit lain PenggantiGibranWapres.tsx, bukan komposisi QrisFinal\"",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md",
+        "draft/r3/_sheet.jpg",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Ulang render (bila gagal lagi: --jobs=4). Lalu cek -14 LUFS/TP<-1, metadata ffprobe, audira_qa_video hardOnly, record_score final jury, perbaiki SOCIAL_CAPTIONS format (validator: YouTube judul/Tags, X cuitan tidak terdeteksi), append_lesson, 3 scheduled task, hapus perantara, caption di chat.",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "ISOCRAFT",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T22:50:22.520Z",
+      "doing": "FINAL_VIDEO.mp4 sudah dirender (81,2 dtk, 1080x1920@60, -13,7 LUFS, TP -1,9, metadata ok). Signature Ed25519 BELUM valid: tag audira_signature=e30 ({} kosong) dan fs.renameSync(tmp→file) di project/scripts/lib/sign.mjs:108 kena EPERM di drive F:.",
+      "command": "cd project; npm run sign -- <abs FINAL_VIDEO.mp4> --title=\"Cara Kerja QRIS\" --id=AUDIRA-ep01-cara-kerja-qris-EP01 --date=2026-11-23",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "project/scripts/lib/sign.mjs",
+        "project/scripts/sign-video.mjs",
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md"
+      ],
+      "next": "1) Perbaiki sign: cek apakah signVideo async tidak di-await di scripts/sign-video.mjs (payload jadi {}), dan ganti renameSync dengan copyFileSync+unlinkSync (atau unlink dest dulu) di lib/sign.mjs; sign lalu audira_verify_signature VALID. 2) audira_qa_video hardOnly cuts=10.85,25.6,34.63,57.55,71.66,78.2. 3) record_score final (self + juri buta subagent, sheet frame dari MP4). 4) SOCIAL_CAPTIONS validator masih error YouTube judul/Tags + X cuitan: cari format SOCIAL_CAPTIONS episode lain yang lolos. 5) append_lesson ISOCRAFT/GLOBAL (lihat NOTES.md), 3 scheduled task review-ep01-cara-kerja-qris-24h/-72h/-7d (upload Selasa 24 Nov 2026 19.00 WIB), hapus perantara project/out/st1..st3, project/out/seg, draft/r1, draft/r2, draft/r3/clip.mp4, caption di chat.",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "ISOCRAFT",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T22:54:42.576Z",
+      "doing": "Sesi 3 selesai: signature VALID (fix await + copyFileSync di project/scripts), qa_video PASS, caption lolos validator, NOTES, lesson ISOCRAFT+GLOBAL, 3 scheduled task review-ep01-cara-kerja-qris-24h/-72h/-7d, perantara dihapus. Juri buta FINAL 3,67 PERLU POLES (C3 R3).",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "draft/final/_sheet.jpg",
+        "NOTES.md",
+        "SOCIAL_CAPTIONS.md"
+      ],
+      "next": "Menunggu keputusan pengguna: poles + render final ulang (kamera hub 48–55 dtk k≤1,1 agar ISSUER/ACQUIRER tidak terpotong, label gedung ≥40 px, caption naik ±80 px, saturasi naik), lalu sign ulang (npm run sign sudah diperbaiki), qa_video, juri final; atau kirim final sekarang.",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "ISOCRAFT",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T22:58:16.035Z",
+      "doing": "Poles pasca juri final 3,67 selesai di kode: Act4 kamera hub 43.4–48.6 target (548,482) k0.92–0.95 (ISSUER/ACQUIRER/menara masuk frame), acquirer beat k1.25–1.32, ISSUER fade-out 50.0–50.8, label Building pakai pelat putih + teks tengah (iso.tsx), palet ground #F3E7D2 board #EACB98, caption naik top 1300 (plate 1282) di hud.tsx, Rp15.000 font 20. Contact sheet baru draft/r4/_sheet.jpg (10 frame): audit:visual tanpa cap <4 (composition 5, readability 4). Signature script sudah diperbaiki (await + copyFileSync).",
+      "files": [
+        "project/src/scenes/qris/QrisFilm.tsx",
+        "project/src/scenes/qris/iso.tsx",
+        "project/src/scenes/qris/hud.tsx",
+        "draft/r4/_sheet.jpg",
+        "FINAL_VIDEO.mp4",
+        "NOTES.md"
+      ],
+      "next": "1) Juri buta draft r4 (subagent, qa/jury.md, sheet draft/r4/_sheet.jpg + style/cover-reference.png) → record_score stage draft judge jury ISOCRAFT short-baru-11-23-EP01; harus ≥3.8. 2) Hapus/rename FINAL_VIDEO.mp4 lama lalu render final sekali dari project/: npm run render:final -- --comp=QrisFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error (background). 3) Cek LUFS −14/TP<−1, metadata ffmpeg (title \"Cara Kerja QRIS\", artist \"AUDIRA (Agus Dwi R.)\", copyright \"© 2026 AUDIRA - Agus Dwi R. All rights reserved.\", comment \"AUDIRA-ep01-cara-kerja-qris-EP01 | audira.my.id\", date 2026-11-23). 4) npm run sign -- <abs FINAL_VIDEO.mp4> --title=\"Cara Kerja QRIS\" --id=AUDIRA-ep01-cara-kerja-qris-EP01 --date=2026-11-23, audira_verify_signature. 5) audira_qa_video hardOnly cuts=10.85,25.6,34.63,57.55,71.66,78.2; frame sheet dari MP4 (8 detik: 1.2,7.8,17.6,29.5,48,54.6,65,76.5) → juri buta final + record_score final. 6) Update NOTES.md QA final; caption tidak berubah (sudah lolos validator); tampilkan caption lengkap di chat; hapus draft/final lama bila diganti, project/out sementara.",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "ISOCRAFT",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T23:00:43.151Z",
+      "doing": "Juri buta draf r4 ISOCRAFT = 3.5 (L3 M4 D4 C3 R2, motion 5) → PERLU POLES, batas 2 putaran draf tercapai; lesson failed dicatat. Menunggu pengguna memilih style pengganti (rule 6c / G21).",
+      "files": [
+        "draft/r4/_sheet.jpg",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Setelah pengguna pilih style (kandidat: CIRCUITFORGE utama, INNERWORKS, CERDIK): update style/STYLE_DECISION.md (Style: <ID>, ISOCRAFT ditolak juri 3.5), render cover topik, ulang tahap 4 (docs baris Style:), lalu tahap 7–10 tanpa acc. FINAL_VIDEO.mp4 lama (ISOCRAFT, juri final 3.67) belum dihapus.",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "ISOCRAFT",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:00:35.630Z",
+      "doing": "Pengguna memilih CIRCUITFORGE (2026-11-23) setelah ISOCRAFT gagal juri draf r4 3.5. STYLE_DECISION.md sudah ditulis ulang (Style: CIRCUITFORGE, approved yes). GLB sudah disalin ke project/public/models/polyfork: smartphone-5f05e5, office-tower-1538cc, monolith-office-tower-422420, small-server-rack-8ae0a4, market-stall-94937d, cafe-storefront-unit-443728, gold-coin-29afc1, banded-cash-bundle-7da278, shopper-base. Film 3D belum ditulis.",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "project/public/models/polyfork/",
+        "project/src/scenes/qris/QrisFilm.tsx",
+        "project/src/scenes/qris/hud.tsx"
+      ],
+      "next": "1) STATUS: data.style=CIRCUITFORGE; salin cover-reference. 2) Tulis project/src/scenes/qris/QrisCircuit.tsx (Remotion+R3F, pola EP31 F:/AUDIRA-EPISODES/AUDIRA_CARA_KERJA_VIRAL_2026/EP31_CARA_KERJA_INTERNET/project/src/episodes/internet/*: FilmScene + KeyLight + CircuitAtmosphere + shotPlan/cameraAt dari core/camera/moves.ts). VO/naskah/SFX TETAP (vo.wav, offset 0.3, 81.2 dtk, potongan 10.85/25.6/34.63/57.55/71.66/78.2). Overlay pakai Tag/Stamp/BigNumber/Caption dari hud.tsx + blok Hud di QrisFilm.tsx (timing sama); Caption band krem → ganti gelap, BigNumber beri plate putih (teks ink). Satu papan PCB panjang sumbu x, label silkscreen drei Text font staticFile('fonts/SpaceGrotesk-Variable.ttf'). Zona: WARUNG x=0 (market-stall + shopper + smartphone + QR stand tekstur canvas; hook scan→paket cahaya→centang) · STANDAR x=-14 (QR raksasa rata papan header merah QRIS; menara BI monolith biru + ASPI office-tower teal naik; flashback 8 HP berwarna tiap QR sendiri menyatu jadi 1 QRIS) · ANATOMI (QR modul voxel terangkat, baris EMVCo/NAMA/NMID/RUPIAH kartu HUD) · JARINGAN x=14–46 (HP → ISSUER office-tower biru → GPN: 4 small-server-rack 2x2 label ARTAJASA/RINTIS/JALIN/ALTO menyala bergantian + chip tengah → ACQUIRER office-tower ungu → warung, paket bola cahaya + trail di jalur tembaga; RC 00 stamp; HP pedagang centang) · PAYOFF x=60 (paket berputar cepat 3 menara + bendera merah putih; grid 72 smartphone 71,91 JT + 51 lapak 51,31 JT; tumpukan gold-coin MDR 0% usaha mikro ≤Rp500rb) · CLOSE (crane/reveal seluruh papan menyala, outro 78.2). Cahaya: key berarah + rim cyan, hindari vignette abu; jaga objek dalam frame 9:16 (jangan crop tepi). 3) Root.tsx: komposisi QrisFinal/QrisPreview → QrisCircuit. 4) Ulang docs tahap 4 (ART_DIRECTION/STORYBOARD/ASSET_MANIFEST baris 'Style: CIRCUITFORGE'), cover topik, THEME_CHECK. 5) Draf contact sheet 8–10 frame + audit:visual + audit:camera klip → juri buta (F:/AUDIRA-SKILL-MOTION/qa/jury.md, cover circuitforge) record_score draft ≥3.8. 6) Final: rename FINAL_VIDEO.mp4 lama, npm run render:final -- --comp=QrisFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error; LUFS −14 TP<−1; metadata ffmpeg; npm run sign; verify; qa_video hardOnly; juri final + record_score final. 7) NOTES.md, hapus perantara, tampilkan caption 6 platform dari SOCIAL_CAPTIONS.md (jangan buat ulang caption/lesson/task review).",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "ISOCRAFT",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:07:43.729Z",
+      "doing": "CIRCUITFORGE film ditulis: project/src/scenes/qris/QrisCircuit.tsx (World: PCB 110x22 sumbu x; WARUNG x=0 market-stall+shopper (Character loader GLTF+AnimationMixer Idle)+QR stand canvas+HP; STANDAR/ANATOMI x=-18 QR voxel instanced + menara BI monolith/ASPI + 8 HP app flashback + baris EMVCo/NMID SceneText; JARINGAN HP x14, ISSUER x21, GPN x29 MicrochipBga + 4 rack ARTAJASA/RINTIS/JALIN/ALTO, ACQUIRER x37, warung cafe x45; PAYOFF ring x56 + bendera, grid 72 HP/51 lapak x61, koin MDR x69; kamera shotPlan BEATS; FollowKey light; overlay Hud (export dari QrisFilm.tsx) + Caption). hud.tsx: band caption gelap, BigNumber plate putih. Root.tsx: QrisPreview/QrisCover/QrisFinal → QrisCircuit. tsc bersih untuk qris. BELUM dirender sama sekali: posisi GLB/kamera/orientasi layar HP (plane z=+0.0056*s) masih tebakan.",
+      "files": [
+        "project/src/scenes/qris/QrisCircuit.tsx",
+        "project/src/scenes/qris/hud.tsx",
+        "project/src/scenes/qris/QrisFilm.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "1) STATUS data.style=CIRCUITFORGE; salin F:/AUDIRA-ALL-SKILL/assets/style-covers/circuitforge.jpg ke style/cover-reference.jpg. 2) cd project; node scripts/stills.mjs out/c1 1.5s,6s,8s,13s,17s,22s,29s,38s,45s,48.5s,53s,56.5s,60s,64.5s,69s,75s QrisPreview 0.5 → periksa satu sheet (perbaiki: layar HP menghadap kamera, skala/posisi GLB, framing 9:16, tag HUD tidak menutupi subjek, cahaya tidak gelap). 3) Ulang docs tahap 4 (ART_DIRECTION/STORYBOARD/ASSET_MANIFEST/SHOTLIST baris 'Style: CIRCUITFORGE'), cover topik npm run cover / still QrisCover → style/cover-topic.png, draft/THEME_CHECK.md. 4) Draf contact sheet 8–10 frame draft/c1/_sheet.jpg + npm run audit:visual + klip 15–20 dtk 540x960 (bagian jaringan 43–58) + npm run audit:camera → juri buta subagent (F:/AUDIRA-SKILL-MOTION/qa/jury.md, cover circuitforge.jpg) → record_score draft judge jury style CIRCUITFORGE episode short-baru-11-23-EP01 ≥3.8 (maks 2 putaran). 5) Final: rename FINAL_VIDEO.mp4 lama (ISOCRAFT) lalu npm run render:final -- --comp=QrisFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Cara Kerja QRIS\" --slug=ep01-cara-kerja-qris --ep=EP01 (background); LUFS −14 TP<−1; metadata ffmpeg; npm run sign -- <abs> --title=\"Cara Kerja QRIS\" --id=AUDIRA-ep01-cara-kerja-qris-EP01 --date=2026-11-23; audira_verify_signature; audira_qa_video hardOnly cuts=10.85,25.6,34.63,57.55,71.66,78.2; juri final + record_score final. 6) NOTES.md, hapus perantara (out/c*, draft lama, final ISOCRAFT), tampilkan caption 6 platform dari SOCIAL_CAPTIONS.md (jangan buat ulang).",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "ISOCRAFT",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T07:23:59.632Z",
+      "doing": "CIRCUITFORGE dipoles: fix delayRender shopper (handle di effect), kamera jaringan segaris bus (az -62/-84), beat warung 55.0, baris EMVCo skala 0.6, cover topik coverAt 38 → style/cover-topic.png. draft.mjs fix async hfStills. Sedang: npm run draft -- QrisPreview --frames=... --clip=40-58 (out draft/). Subagent menulis ulang docs tahap 4 + draft/THEME_CHECK.md (Style: CIRCUITFORGE).",
+      "command": "npm run draft -- QrisPreview --frames=1.5s,8s,17s,29s,38s,45s,48.5s,53s,56.5s,60s,64.5s,75s --clip=40-58",
+      "files": [
+        "project/src/scenes/qris/QrisCircuit.tsx",
+        "project/src/Root.tsx",
+        "project/scripts/draft.mjs",
+        "style/cover-topic.png"
+      ],
+      "next": "Cek docs ada 'Style: CIRCUITFORGE' + THEME_CHECK semua ya; lihat draft/DRAFT_SHEET.jpg; juri buta subagent (F:/AUDIRA-SKILL-MOTION/qa/jury.md, cover F:/AUDIRA-ALL-SKILL/assets/style-covers/circuitforge.jpg) → record_score draft jury CIRCUITFORGE short-baru-11-23-EP01 ≥3.8; npm run sfx; lalu langkah 5–6 handover sebelumnya (render final, QA, sign, NOTES, caption).",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "CIRCUITFORGE",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T07:28:03.141Z",
+      "doing": "Juri buta ronde 1 CIRCUITFORGE: 2.67 PERLU POLES (sudah record_score jury). Poles ronde 1 SUDAH diterapkan di QrisCircuit.tsx (belum dirender): START az20 dist3.8; beat 27.4 target z-0.5 el70 dist12.5; beat 38.6 dist12.5; beat ACQ 51.8→50.6; label rak jadi Silk di lantai; LENS exposure 0.82. Docs tahap 4 + THEME_CHECK CIRCUITFORGE selesai; sfx.wav diregenerasi; cover-topic coverAt 38 selesai; draft.mjs fix async.",
+      "command": "cd project; npm run draft -- QrisPreview --frames=1.5s,8s,17s,29s,38s,45s,48.5s,53s,56.5s,60s,64.5s,75s --clip=40-58",
+      "files": [
+        "project/src/scenes/qris/QrisCircuit.tsx",
+        "project/src/scenes/qris/QrisFilm.tsx",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "1) Jalankan perintah draft; lihat draft/DRAFT_SHEET.jpg: cek 53s tower ACQUIRER terlihat (G22), 1.5s stand QR tidak terpotong, 29s banner QRIS tidak di top safe 236px, 38s HP 'WARUNG' tidak terpotong, 48.5s tak ada tabrakan teks; cahaya lebih low-key (saran memori: FogExp2 #040e08 0.018, kurangi cahaya cyan). 2) Juri buta ronde 2 (subagent, F:/AUDIRA-SKILL-MOTION/qa/jury.md + draft/jury_input.json + cover F:/AUDIRA-ALL-SKILL/assets/style-covers/circuitforge.jpg) → record_score draft jury CIRCUITFORGE short-baru-11-23-EP01 dengan ceilings+camera dari draft/DRAFT_REPORT.json. Ronde 2 = terakhir: bila <3.8 kembali ke gerbang style (tanya pengguna). 3) Bila LOLOS: final (rename FINAL_VIDEO.mp4 lama ISOCRAFT dulu) npm run render:final -- --comp=QrisFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Cara Kerja QRIS\" --slug=ep01-cara-kerja-qris --ep=EP01; LUFS −14 TP<−1; metadata; npm run sign; audira_verify_signature; audira_qa_video cuts=10.85,25.6,34.63,57.55,71.66,78.2; juri final + record_score final. 4) NOTES.md (pelajaran: delayRender di effect, kamera 9:16 segaris bus, draft.mjs async), append_lesson CIRCUITFORGE, hapus perantara (project/out/c1..c5, final ISOCRAFT), tampilkan caption SOCIAL_CAPTIONS.md.",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "CIRCUITFORGE",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:27:47.607Z",
+      "doing": "Render draf ronde 2 CIRCUITFORGE (poles ronde 1 diterapkan)",
+      "command": "cd project; npm run draft -- QrisPreview --frames=1.5s,8s,17s,29s,38s,45s,48.5s,53s,56.5s,60s,64.5s,75s --clip=40-58 (TEMP=F:\\_tmp_ep01qris)",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/DRAFT_REPORT.json",
+        "project/src/scenes/qris/QrisCircuit.tsx"
+      ],
+      "next": "Lihat draft/DRAFT_SHEET.jpg, juri buta ronde 2 (terakhir), record_score draft jury; bila LOLOS render final sesuai handover sebelumnya (rename FINAL_VIDEO.mp4 ISOCRAFT dulu)",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "CIRCUITFORGE",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:33:03.026Z",
+      "doing": "CIRCUITFORGE gagal juri ronde 2 (3.0, semua aspek 3; sudah record_score + append_lesson failed). Menunggu pengguna memilih style baru: BONGKAR (utama, juri 4.0 di EP12 seri sama), PRECISION, INNERWORKS. Kandidat ditolak: CIRCUITFORGE, ISOCRAFT.",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "style/_style_options_r3.jpg"
+      ],
+      "next": "Setelah pengguna memilih: update STYLE_DECISION.md (Style: <ID>, riwayat CIRCUITFORGE gagal 2.67/3.0), render cover topik, ulang tahap 4 (ART_DIRECTION, STORYBOARD, ASSET_MANIFEST dengan baris Style; naskah/VO tetap), bangun scene baru, draf, juri, final.",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "CIRCUITFORGE",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:35:19.821Z",
+      "doing": "Pindah style ke BONGKAR (acc pengguna 2026-11-23). Belum ada kode/docs BONGKAR. Rencana lengkap di C:\\Users\\ASUS\\AppData\\Local\\Claude-Data\\claude_pzs8sxrjxfjjc\\side-session-notes\\local_6d792261-192b-48ec-b55e-4587600dbd8a\\EP01_QRIS_BONGKAR_HANDOVER.md",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/",
+        "project/src/qris2d/",
+        "project/src/Root.tsx"
+      ],
+      "next": "Baca file handover itu; STYLE_DECISION → docs tahap 4 (Style: BONGKAR) → kode src/qris2d dari gold EP12 → cover topik → sfx → draf → juri → final",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "BONGKAR",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:44:19.438Z",
+      "doing": "BONGKAR: docs tahap 4 + STYLE_DECISION selesai; kode project/src/qris2d/{pieces,scenes,timing,Film}.tsx selesai (typecheck bersih), Root.tsx QrisPreview/QrisFinal/QrisCover → QrisFilm2D/QrisCover2D. Belum: render cover, still cek, THEME_CHECK, sfx, draft, juri.",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/ART_DIRECTION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/SHOTLIST.md",
+        "docs/SCRIPT.md",
+        "project/src/qris2d/",
+        "project/src/Root.tsx"
+      ],
+      "next": "Render cover: npx remotion still src/index.ts QrisCover ../style/cover-topic.png; cek stills beberapa detik (2,9,15,22,30,38,46,54,60,65,69,76) lalu tulis draft/THEME_CHECK.md (Style: BONGKAR) → npm run sfx → npm run draft -- QrisPreview --frames=... --clip=... (TEMP=F:\\_tmp_ep01qris, background) → juri buta (qa/jury.md, cover bongkar.jpg) → record_score draft jury BONGKAR short-baru-11-23-EP01 → bila lolos final per handover note.",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "BONGKAR",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:46:23.829Z",
+      "doing": "Kode BONGKAR qris2d jalan; cover style/cover-topic.png dirender; sheet cek project/out/q2d/sheet.jpg. Poles kecil sebelum draf: (1) S8 paket \"00\" menutupi papan BANK PEDAGANG → geser ke atas-kanan (y ey-360, x ex+120); (2) label S1 \"HP pembeli\" dan label rak \"Artajasa\" S7 terpotong tepi kiri oleh sway kamera → geser anchor/x ke dalam (≥90 px); (3) S9 peta kecil — perbesar ms awal 1.0→ tetap, isotype ok.",
+      "files": [
+        "project/src/qris2d/scenes.tsx",
+        "style/cover-topic.png",
+        "project/out/q2d/sheet.jpg"
+      ],
+      "next": "Poles 3 item → tulis draft/THEME_CHECK.md (Style: BONGKAR, frame=detik sheet) → npm run sfx → npm run draft -- QrisPreview --frames=2s,7.6s,9.8s,17s,22.5s,31.5s,38.5s,48s,54.5s,60.8s,64s,69.5s,76.5s --clip=44:62 (TEMP/TMP=F:\\_tmp_ep01qris, background) → juri buta → record_score draft jury BONGKAR → final per catatan handover side-session.",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "BONGKAR",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:48:15.025Z",
+      "doing": "Draf BONGKAR r1: poles 3 item selesai (Label clamp 90..990 di pieces.tsx, paket 00 S8 ex+120/ey-360), THEME_CHECK.md ditulis, sfx.wav -26 LUFS. Render draf jalan.",
+      "command": "TEMP=F:\\_tmp_ep01qris npm run draft -- QrisPreview --frames=2s,7.6s,9.8s,17s,22.5s,31.5s,38.5s,48s,54.5s,60.8s,64s,69.5s,76.5s --clip=44:62",
+      "files": [
+        "project/src/qris2d/scenes.tsx",
+        "project/src/qris2d/pieces.tsx",
+        "draft/THEME_CHECK.md",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "Lihat draft/DRAFT_SHEET.jpg + camera.json → juri buta subagent (jury.md, cover bongkar.jpg) → record_score draft jury BONGKAR short-baru-11-23-EP01 → final per side-session handover note",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "BONGKAR",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:05:28.179Z",
+      "doing": "Draf BONGKAR ronde juri 2 (TERAKHIR). r1 juri = 3.5 (lighting/material/depth/readability 3, comp 4, motion 5) sudah record_score. Poles r2 selesai: Frame (scenes.tsx) key light hangat kiri-atas + cool kanan-bawah 0.42 + dinding/lantai gradien; Film.tsx QrisStage lapisan soft-light 135deg + bokeh/FG blur + vignette 0.32; pieces.tsx rightF 0.45, sheen 0.6, sideShade 0.34, Contact lebih gelap; label sub Plate 32px. Probe layout (scripts/lib/layout-probe.js) diperbaiki: teks SVG baca fill + svgBoxBehind. Plafon audit sekarang semua >=4, readability 5, camera 5. DRAFT_SHEET.jpg r2 sudah dirender.",
+      "command": "Juri buta subagent: jury.md + bongkar.jpg + draft/DRAFT_SHEET.jpg + draft/jury_input.json + tabel 13 frame (lihat draft/THEME_CHECK.md)",
+      "files": [
+        "project/src/qris2d/scenes.tsx",
+        "project/src/qris2d/pieces.tsx",
+        "project/src/qris2d/Film.tsx",
+        "project/scripts/lib/layout-probe.js",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "record_score draft jury BONGKAR short-baru-11-23-EP01 (ronde 2). LOLOS (avg>=3.8, tak ada <3) → final per side-session note EP01_QRIS_BONGKAR_HANDOVER.md langkah 6 (rename FINAL_VIDEO.mp4 lama → _old_ISOCRAFT_FINAL.mp4; render:final --comp=QrisFinal --vo --offset=0.3 --sfx; sfx stem -26 LUFS). GAGAL → berhenti, tawarkan style baru ke pengguna (tanpa 'terima saja').",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "BONGKAR",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:06:13.223Z",
+      "doing": "Draf BONGKAR LOLOS juri r2 (3.83: L4 M4 D4 C3 Mo5 R3), record_score jury draft tersimpan. Belum mulai final.",
+      "command": "cd project; npm run render:final -- --comp=QrisFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Cara Kerja QRIS\" --slug=ep01-cara-kerja-qris --ep=EP01",
+      "files": [
+        "project/src/qris2d/scenes.tsx",
+        "project/src/qris2d/pieces.tsx",
+        "project/src/qris2d/Film.tsx",
+        "project/scripts/lib/layout-probe.js",
+        "draft/DRAFT_SHEET.jpg"
+      ],
+      "next": "Final: rename FINAL_VIDEO.mp4 lama (ISOCRAFT) → _old_ISOCRAFT_FINAL.mp4; render:final (TEMP/TMP=F:\\_tmp_ep01qris, background); cek -14 LUFS TP < -1 dBFS; metadata ffprobe; npm run sign + audira_verify_signature; audira_qa_video hardOnly; juri final buta + record_score final; NOTES.md (pelajaran: probe layout SVG fill/svgBoxBehind fix; lighting pass soft-light naikkan L/M/D 3→4; sisa lemah label kecil & lantai kosong); append_lesson BONGKAR; hapus perantara (project/out/c1..c5, draft r3/r4, CHECK_40-58s.mp4, final lama); SOCIAL_CAPTIONS.md perbarui bila sebut style lama + audira_validate_social_captions; caption tampil di chat.",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "BONGKAR",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:12:10.826Z",
+      "doing": "Render final BONGKAR (QrisFinal) di background; final lama sudah di-rename _old_ISOCRAFT_FINAL.mp4",
+      "command": "cd project; npm run render:final -- --comp=QrisFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Cara Kerja QRIS\" --slug=ep01-cara-kerja-qris --ep=EP01 (TEMP/TMP=F:\\_tmp_ep01qris)",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "_old_ISOCRAFT_FINAL.mp4"
+      ],
+      "next": "Ukur -14 LUFS TP<-1; ffprobe metadata; npm run sign + verify; qa_video hardOnly; juri final buta + record_score final; NOTES + append_lesson; hapus perantara; caption + validasi + 3 scheduled review task",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "BONGKAR",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:12:10.826Z",
+      "doing": "Render final BONGKAR (QrisFinal) di background; final lama sudah di-rename _old_ISOCRAFT_FINAL.mp4",
+      "command": "cd project; npm run render:final -- --comp=QrisFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0.3 --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Cara Kerja QRIS\" --slug=ep01-cara-kerja-qris --ep=EP01 (TEMP/TMP=F:\\_tmp_ep01qris)",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "_old_ISOCRAFT_FINAL.mp4"
+      ],
+      "next": "Ukur -14 LUFS TP<-1; ffprobe metadata; npm run sign + verify; qa_video hardOnly; juri final buta + record_score final; NOTES + append_lesson; hapus perantara; caption + validasi + 3 scheduled review task",
+      "snapshot": {
+        "episode": "EP01_CARA_KERJA_QRIS",
+        "topic": "Cara kerja QRIS — dari scan sampai saldo pindah dalam 2 detik",
+        "style": "BONGKAR",
+        "memoryEpisode": "short-baru-11-23-EP01",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T09:28:55.610Z"
+    }
+  ]
+}

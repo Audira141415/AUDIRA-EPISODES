@@ -1,0 +1,487 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP27_COMANECI_SKOR_SEMPURNA_1976",
+  "topic": "Nadia Comăneci — nilai 10 sempurna pertama Olimpiade, papan skor tampil 1.00 (Montreal 1976) — AUDIRA Sport Facts",
+  "createdAt": "2026-11-22T18:00:30.315Z",
+  "updatedAt": "2026-11-23T12:18:18.011Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:09:18.522Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-22T18:00:30.316Z",
+      "startedAt": "2026-11-22T18:00:30.316Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:09:18.522Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-22T18:07:02.688Z",
+      "startedAt": "2026-11-22T18:07:02.688Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T22:21:04.262Z",
+      "notes": [
+        {
+          "at": "2026-11-22T18:01:16.799Z",
+          "text": "Konteks dibaca (GLOBAL memory, EP10 handoff/library 2D, seri fakta olahraga EP05). Riset jalan di subagen. Rekomendasi 2D: CHRONICLE (utama), FILM16, PANELVERSE. Menunggu pilihan pengguna."
+        },
+        {
+          "at": "2026-11-22T22:21:04.262Z",
+          "text": "Pengguna memilih CHRONICLE (Recommended) 2026-11-23. Lanjut cover topik."
+        },
+        {
+          "at": "2026-11-22T22:25:21.808Z",
+          "text": "Cover topik dirender: style/cover-topic.png (Ep27Cover). STYLE_DECISION.md lengkap. Library baru project/src/lib/gym.tsx (Arena, UnevenBars, Beam, BarGymnast, Gymnast, Scoreboard 7-seg, JudgeCard)."
+        }
+      ],
+      "startedAt": "2026-11-22T18:01:16.799Z",
+      "doneAt": "2026-11-22T22:25:21.808Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T23:55:07.532Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T23:54:41.787Z",
+      "startedAt": "2026-11-22T23:54:41.787Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:21:54.983Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T17:51:12.000Z",
+      "startedAt": "2026-11-22T17:51:12.000Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:27:08.171Z",
+          "text": "VO Cartesia 78,95 dtk / 189 kata: project/public/audio/vo.wav + vo-words.json + vo.timing.json. Rencana adegan per detik VO di docs/HANDOFF.md."
+        }
+      ],
+      "doneAt": "2026-11-22T22:27:08.171Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T00:00:01.288Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T23:59:28.920Z",
+      "startedAt": "2026-11-22T23:59:28.920Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T00:00:01.288Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        },
+        {
+          "at": "2026-11-23T10:53:38.904Z",
+          "text": "Juri putaran 2 = 3.33; juri terbaik 3.5 (putaran 1) >= 3.5 -> diterima 3.5 setelah 2 putaran, langsung final (keputusan pengguna 2026-11-23). Poles putaran 2 dipertahankan: 5 aspek visual juri sama dengan putaran 1, beda hanya motion (cap juri), dan memperbaiki judul tabrak watermark + \"73\" terpotong."
+        }
+      ],
+      "doneAt": "2026-11-23T10:53:38.904Z",
+      "startedAt": "2026-11-22T23:59:28.920Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:10:26.040Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-23T12:18:16.982Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60, 82 dtk, -13.8 LUFS / TP -1.8 dBFS, metadata + Ed25519 VALID + C2PA, qa_video PASS, record_score final jury 3.5 (diterima setelah 2 putaran)."
+        }
+      ],
+      "doneAt": "2026-11-23T12:18:16.982Z",
+      "startedAt": "2026-11-23T10:58:00.480Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T12:10:26.040Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T12:18:17.493Z",
+          "text": "SOCIAL_CAPTIONS.md lolos validator (6 platform, jadwal Kamis 26 Nov 2026 19.00 WIB, label AI), SUBTITLES.srt, NOTES.md, append_lesson CHRONICLE, 3 scheduled task review-comaneci-skor-sempurna-1976-24h/-72h/-7d."
+        }
+      ],
+      "doneAt": "2026-11-23T12:18:17.493Z",
+      "startedAt": "2026-11-23T10:53:09.476Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP27",
+    "engine": "remotion",
+    "channel": "AUDIRA Sport Facts",
+    "handle": "@AudiraSportFacts",
+    "style": "CHRONICLE",
+    "wordCount": 189,
+    "voSeconds": 78.95,
+    "estimatedDuration": {
+      "wordCount": 189,
+      "minSec": 76,
+      "maxSec": 84
+    },
+    "shortTitle": "Comăneci",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-23T12:10:26.040Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T22:25:55.567Z",
+      "doing": "VO Cartesia dari docs/vo.txt (189 kata) ke project/public/audio/vo.wav + vo-words.json",
+      "files": [
+        "docs/vo.txt",
+        "project/public/audio/vo.wav"
+      ],
+      "next": "vo-analyze, timing.ts, tulis docs (SCRIPT/STORYBOARD/SHOTLIST/ART_DIRECTION/ASSET_MANIFEST) sesuai detik VO, lalu Film.tsx",
+      "snapshot": {
+        "episode": "EP27_COMANECI_SKOR_SEMPURNA_1976",
+        "topic": "Nadia Comăneci — nilai 10 sempurna pertama Olimpiade, papan skor tampil 1.00 (Montreal 1976) — AUDIRA Sport Facts",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP27",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T22:27:10.820Z",
+      "doing": "Pindah sesi (context guard). Berikutnya docs tahap 4 + Film.tsx tahap 7.",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/lib/gym.tsx",
+        "project/public/audio/vo.wav"
+      ],
+      "next": "Baca docs/HANDOFF.md, tulis SCRIPT/STORYBOARD/ART_DIRECTION/ASSET_MANIFEST/SHOTLIST, lalu src/Film.tsx multi-scene + sfx, contact sheet juri, final, delivery.",
+      "snapshot": {
+        "episode": "EP27_COMANECI_SKOR_SEMPURNA_1976",
+        "topic": "Nadia Comăneci — nilai 10 sempurna pertama Olimpiade, papan skor tampil 1.00 (Montreal 1976) — AUDIRA Sport Facts",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP27",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:00:31.717Z",
+      "doing": "Pindah sesi (context guard sesi 2). Film.tsx + SFX + contact sheet draf selesai; audit G13 gagal (diversity 24, median speed 0.018, hold 2 dtk).",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/Film.tsx",
+        "project/public/audio/sfx.wav",
+        "draft/contact-sheet.jpg",
+        "draft/camera.json",
+        "draft/sheet/look.json"
+      ],
+      "next": "Baca docs/HANDOFF.md bagian \"Sesi 2\": perbaiki variasi warna + gerak kamera di Film.tsx, render ulang contact sheet + klip + camera-audit, THEME_CHECK, skor self + juri, lalu final, QA, delivery.",
+      "snapshot": {
+        "episode": "EP27_COMANECI_SKOR_SEMPURNA_1976",
+        "topic": "Nadia Comăneci — nilai 10 sempurna pertama Olimpiade, papan skor tampil 1.00 (Montreal 1976) — AUDIRA Sport Facts",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP27",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:20:15.458Z",
+      "doing": "Draf juri putaran 1 = 3.5 PERLU POLES; poles putaran 2 belum dimulai",
+      "command": "export RENDER_TMPDIR=F:/render-tmp/ep27; node scripts/stills.mjs ../draft/sheet 3s,7.6s,15s,28.5s,38.2s,50.5s,64.5s,71s Ep27Final 0.5",
+      "files": [
+        "project/src/Film.tsx",
+        "project/src/lib/gym.tsx",
+        "draft/THEME_CHECK.md",
+        "docs/HANDOFF.md"
+      ],
+      "next": "Poles Film.tsx sesuai docs/HANDOFF.md Sesi 3, render sheet (RENDER_TMPDIR di F:), juri putaran 2, lalu tahap 9-10",
+      "snapshot": {
+        "episode": "EP27_COMANECI_SKOR_SEMPURNA_1976",
+        "topic": "Nadia Comăneci — nilai 10 sempurna pertama Olimpiade, papan skor tampil 1.00 (Montreal 1976) — AUDIRA Sport Facts",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP27",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:11:56.198Z",
+      "doing": "Draf juri putaran 1 = 3.5 PERLU POLES; poles putaran 2 belum dimulai",
+      "command": "export RENDER_TMPDIR=F:/render-tmp/ep27; node scripts/stills.mjs ../draft/sheet 3s,7.6s,15s,28.5s,38.2s,50.5s,64.5s,71s Ep27Final 0.5",
+      "files": [
+        "project/src/Film.tsx",
+        "project/src/lib/gym.tsx",
+        "draft/THEME_CHECK.md",
+        "docs/HANDOFF.md"
+      ],
+      "next": "Poles Film.tsx sesuai docs/HANDOFF.md Sesi 3, render sheet (RENDER_TMPDIR di F:), juri putaran 2, lalu tahap 9-10",
+      "snapshot": {
+        "episode": "EP27_COMANECI_SKOR_SEMPURNA_1976",
+        "topic": "Nadia Comăneci — nilai 10 sempurna pertama Olimpiade, papan skor tampil 1.00 (Montreal 1976) — AUDIRA Sport Facts",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP27",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:50:05.127Z",
+      "doing": "Poles putaran 2 diterapkan di Film.tsx (S1a, S3a, S5b+Crowd, S7a lampu+siluet) dan gym.tsx (bezel); render contact sheet putaran 2",
+      "command": "export RENDER_TMPDIR=F:/render-tmp/ep27 TEMP=F:/render-tmp/ep27 TMP=F:/render-tmp/ep27; node scripts/stills.mjs ../draft/sheet 3s,7.6s,15s,28.5s,38.2s,50.5s,64.5s,71s Ep27Final 0.5",
+      "files": [
+        "project/src/Film.tsx",
+        "project/src/lib/gym.tsx",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Cek sheet, THEME_CHECK baris 8 -> 71.0 dtk, juri putaran 2 (terakhir), lalu final",
+      "snapshot": {
+        "episode": "EP27_COMANECI_SKOR_SEMPURNA_1976",
+        "topic": "Nadia Comăneci — nilai 10 sempurna pertama Olimpiade, papan skor tampil 1.00 (Montreal 1976) — AUDIRA Sport Facts",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP27",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:53:39.142Z",
+      "doing": "Render final 1080x1920@60 (background); draf diterima 3.5 setelah 2 putaran juri",
+      "command": "cd project; export RENDER_TMPDIR=F:/render-tmp/ep27 TEMP=F:/render-tmp/ep27 TMP=F:/render-tmp/ep27; npm run render:final -- --comp=Ep27Final --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --log=error --title=\"Nilai 10 Sempurna yang Tampil 1.00\" --slug=comaneci-skor-sempurna-1976 --ep=EP27",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "SOCIAL_CAPTIONS.md"
+      ],
+      "next": "QA -14 LUFS / TP < -1, ffprobe metadata, audira_verify_signature, audira_qa_video, record_score final; lalu tahap 10 (SOCIAL_CAPTIONS.md sudah ditulis, validasi), NOTES.md, append_lesson, 3 scheduled task review-comaneci-skor-sempurna-1976-24h/-72h/-7d (TikTok Kamis 26 Nov 2026 19.00 WIB)",
+      "snapshot": {
+        "episode": "EP27_COMANECI_SKOR_SEMPURNA_1976",
+        "topic": "Nadia Comăneci — nilai 10 sempurna pertama Olimpiade, papan skor tampil 1.00 (Montreal 1976) — AUDIRA Sport Facts",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP27",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:54:11.200Z",
+      "doing": "Render final berjalan (background, log F:/render-tmp/ep27/final.log) dengan --skip-memory-gate (juri 3.5 lalu 3.33, diterima 3.5 setelah 2 putaran). Tahap 8 done. SOCIAL_CAPTIONS.md lolos validator. append_lesson CHRONICLE failed sudah.",
+      "command": "cd project; export RENDER_TMPDIR=F:/render-tmp/ep27 TEMP=F:/render-tmp/ep27 TMP=F:/render-tmp/ep27; npm run render:final -- --comp=Ep27Final --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --log=error \"--title=Nilai 10 Sempurna yang Tampil 1.00\" --slug=comaneci-skor-sempurna-1976 --ep=EP27 \"--skip-memory-gate=keputusan pengguna 2026-11-23: 2 putaran juri, juri terbaik 3.5 -> final\"  (render:final melewati final yang masih terkini)",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md",
+        "SUBTITLES.srt"
+      ],
+      "next": "Cek FINAL_VIDEO.mp4: ebur128 -14 LUFS / TP < -1, ffprobe metadata artist/copyright, audira_verify_signature, audira_qa_video hardOnly (allow 5.84,47.9 flash), record_score final (jury 3.5-ish scores). SUBTITLES.srt: audira_generate_srt dengan voiceoverFile=project/public/audio/vo-words.json (audio/voiceover.json tak ada). NOTES.md (catat 'diterima 3.5 setelah 2 putaran', 3 taskId). 3 scheduled task review-comaneci-skor-sempurna-1976-24h/-72h/-7d fireAt 2026-11-27T19:00+07:00, 2026-11-29T19:00+07:00, 2026-12-03T19:00+07:00 (upload TikTok Kamis 26 Nov 19.00 WIB). Update stage final+delivery done. Hapus draft/sheet frame & clip.mp4 setelah final. Tampilkan caption di chat.",
+      "snapshot": {
+        "episode": "EP27_COMANECI_SKOR_SEMPURNA_1976",
+        "topic": "Nadia Comăneci — nilai 10 sempurna pertama Olimpiade, papan skor tampil 1.00 (Montreal 1976) — AUDIRA Sport Facts",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP27",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:55:03.188Z",
+      "doing": "Render final berjalan (log F:/render-tmp/ep27/final.log). Sudah: SOCIAL_CAPTIONS.md lolos validator, SUBTITLES.srt, NOTES.md, 3 scheduled task review dibuat, append_lesson CHRONICLE.",
+      "command": "npm run render:final ... --skip-memory-gate=\"...\" --skip-channel=\"hanya SERIES.json batch tidak ada\" (lihat handover sebelumnya; render:final melewati final yang masih terkini)",
+      "files": [
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "Bila FINAL_VIDEO.mp4 ada: ebur128 (-14 LUFS, TP < -1), ffprobe metadata, audira_verify_signature, audira_qa_video hardOnly allow 5.84,47.9, record_score final (judge jury, skor 4/3/3/3/4/3), update stage final done + delivery done, hapus draft/sheet/*.png & draft/clip.mp4, tampilkan caption. Bila tidak ada: jalankan ulang perintah render.",
+      "snapshot": {
+        "episode": "EP27_COMANECI_SKOR_SEMPURNA_1976",
+        "topic": "Nadia Comăneci — nilai 10 sempurna pertama Olimpiade, papan skor tampil 1.00 (Montreal 1976) — AUDIRA Sport Facts",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP27",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T10:55:03.188Z",
+      "doing": "Render final berjalan (log F:/render-tmp/ep27/final.log). Sudah: SOCIAL_CAPTIONS.md lolos validator, SUBTITLES.srt, NOTES.md, 3 scheduled task review dibuat, append_lesson CHRONICLE.",
+      "command": "npm run render:final ... --skip-memory-gate=\"...\" --skip-channel=\"hanya SERIES.json batch tidak ada\" (lihat handover sebelumnya; render:final melewati final yang masih terkini)",
+      "files": [
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "Bila FINAL_VIDEO.mp4 ada: ebur128 (-14 LUFS, TP < -1), ffprobe metadata, audira_verify_signature, audira_qa_video hardOnly allow 5.84,47.9, record_score final (judge jury, skor 4/3/3/3/4/3), update stage final done + delivery done, hapus draft/sheet/*.png & draft/clip.mp4, tampilkan caption. Bila tidak ada: jalankan ulang perintah render.",
+      "snapshot": {
+        "episode": "EP27_COMANECI_SKOR_SEMPURNA_1976",
+        "topic": "Nadia Comăneci — nilai 10 sempurna pertama Olimpiade, papan skor tampil 1.00 (Montreal 1976) — AUDIRA Sport Facts",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP27",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T12:18:18.011Z"
+    }
+  ],
+  "session": 4,
+  "sessionLog": [
+    {
+      "no": 4,
+      "title": "EP27 Comăneci · s4",
+      "at": "2026-11-23T10:11:56.196Z"
+    }
+  ]
+}

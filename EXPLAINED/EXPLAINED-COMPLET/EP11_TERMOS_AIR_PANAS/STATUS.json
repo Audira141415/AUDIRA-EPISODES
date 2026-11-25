@@ -1,0 +1,162 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP11_TERMOS_AIR_PANAS",
+  "topic": "EP11 Termos Air Panas",
+  "createdAt": "2026-11-12T10:06:29.714Z",
+  "updatedAt": "2026-11-14T15:25:21.505Z",
+  "currentStage": "style",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.714Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T23:54:13.079Z",
+      "note": "Riset bersumber: research/SOURCE_REGISTER.md + RESEARCH_REPORT.md"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover topik",
+      "gate": true,
+      "status": "pending"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T23:54:13.079Z",
+      "doneAt": "2026-11-12T23:54:13.079Z",
+      "note": "Disetujui pengguna 2026-11-13 (acc menyeluruh di chat: \"langsung saja approve\"). Gaya belum dipilih. 196 kata."
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit (EP04 Standard)",
+      "gate": false,
+      "status": "pending"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-14T05:52:59.846Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-14T05:51:36.142Z",
+      "startedAt": "2026-11-14T05:51:36.142Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci + visual audit",
+      "gate": true,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI",
+      "gate": false,
+      "status": "pending",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:56.343Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "startedAt": "2026-11-12T10:06:29.714Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "ep11_termos_air_panas",
+    "wordCount": 196,
+    "title": "Termos Pertama Dibuat untuk Benda Sedingin Minus 196 Derajat",
+    "estimateSec": "78–87"
+  },
+  "syncedAt": "2026-11-14T05:52:59.846Z",
+  "resetNote": "2026-11-13: riset/naskah/style/QA lama hasil skrip luar (placeholder) diarsipkan ke _review/_ARSIP_GENERATED_2026-11-12/; mulai ulang dari riset. 2026-11-13: riset + naskah baru selesai, naskah di-acc; berikutnya gerbang style.",
+  "handoverLog": [
+    {
+      "at": "2026-11-14T13:44:01.491Z",
+      "doing": "render final (hyperframes)",
+      "command": "audira_render_batch start",
+      "batchId": "20261114-134401",
+      "files": [
+        "F:\\AUDIRA-VIDEO-MOTION\\EXPLAINED_CARA_KERJA_BENDA_2026\\EP11_TERMOS_AIR_PANAS\\FINAL_VIDEO.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261114-134401); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang."
+    },
+    {
+      "at": "2026-11-14T15:14:05.445Z",
+      "doing": "render final (hyperframes)",
+      "command": "audira_render_batch start",
+      "batchId": "20261114-151405",
+      "files": [
+        "F:\\AUDIRA-VIDEO-MOTION\\EXPLAINED_CARA_KERJA_BENDA_2026\\EP11_TERMOS_AIR_PANAS\\FINAL_VIDEO.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261114-151405); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang."
+    },
+    {
+      "at": "2026-11-14T15:19:23.733Z",
+      "doing": "render final (hyperframes)",
+      "command": "audira_render_batch start",
+      "batchId": "20261114-151923",
+      "files": [
+        "F:\\AUDIRA-VIDEO-MOTION\\EXPLAINED_CARA_KERJA_BENDA_2026\\EP11_TERMOS_AIR_PANAS\\FINAL_VIDEO.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261114-151923); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang."
+    },
+    {
+      "at": "2026-11-14T15:25:21.505Z",
+      "doing": "render final (hyperframes)",
+      "command": "audira_render_batch start",
+      "batchId": "20261114-152521",
+      "files": [
+        "F:\\AUDIRA-VIDEO-MOTION\\EXPLAINED_CARA_KERJA_BENDA_2026\\EP11_TERMOS_AIR_PANAS\\FINAL_VIDEO.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261114-152521); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang."
+    }
+  ],
+  "handover": {
+    "at": "2026-11-14T15:25:21.505Z",
+    "doing": "render final (hyperframes)",
+    "command": "audira_render_batch start",
+    "batchId": "20261114-152521",
+    "files": [
+      "F:\\AUDIRA-VIDEO-MOTION\\EXPLAINED_CARA_KERJA_BENDA_2026\\EP11_TERMOS_AIR_PANAS\\FINAL_VIDEO.mp4"
+    ],
+    "next": "cek audira_render_batch status (batch 20261114-152521); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang."
+  }
+}

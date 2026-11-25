@@ -1,0 +1,47 @@
+{
+  "name": "audira-chronicle-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AUDIRA Motion CHRONICLE project (Remotion + React Three Fiber): naskah + voice-over → 3D silhouette history documentary, 9:16.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "typecheck": "tsc --noEmit",
+    "check-env": "node scripts/check-env.mjs",
+    "make": "node scripts/make.mjs",
+    "qa": "node scripts/qa.mjs",
+    "smoke": "node scripts/make.mjs diponegoro --plan && node scripts/stills.mjs out/smoke 3s,13s,19s,26s ChroniclePreview 1 out/diponegoro/plan.json",
+    "look:cast": "node scripts/stills.mjs out/look/cast 1s,2s Lookdev",
+    "stills": "node scripts/stills.mjs",
+    "qa:video": "node scripts/qa-video.mjs",
+    "qa:scene": "node scripts/qa-scene.mjs"
+  },
+  "dependencies": {
+    "@react-three/fiber": "9.8.2",
+    "@remotion/cli": "4.0.539",
+    "@remotion/google-fonts": "4.0.539",
+    "@remotion/three": "4.0.539",
+    "mediabunny": "^1.62.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.539",
+    "three": "0.186.1",
+    "three-mesh-bvh": "0.9.16"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "4.0.539",
+    "@remotion/renderer": "4.0.539",
+    "@types/react": "19.2.7",
+    "@types/three": "0.186.0",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "zod": "4.6.7"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true
+  }
+}

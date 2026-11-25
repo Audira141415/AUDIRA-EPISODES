@@ -3,7 +3,7 @@
   "episode": "EP74_DARVAZA_KAWAH_API",
   "topic": "Fakta sejarah unik negara-negara di dunia",
   "createdAt": "2026-11-24T18:16:39.764Z",
-  "updatedAt": "2026-11-25T00:20:56.815Z",
+  "updatedAt": "2026-11-25T00:21:34.755Z",
   "currentStage": "review",
   "stages": [
     {
@@ -482,6 +482,35 @@
         "finals": [],
         "draftRounds": 0
       }
+    },
+    {
+      "at": "2026-11-25T00:20:55.110Z",
+      "doing": "s6: FINAL_EP74_DARVAZA_tagged.mp4 selesai (-13.7 LUFS TP -1.9, qa_video PASS, metadata ok), SOCIAL_CAPTIONS valid, SUBTITLES.srt, NOTES.md, 3 scheduled task review dibuat, lesson fix+failed WORLDFORGE dicatat.",
+      "files": [
+        "FINAL_EP74_DARVAZA_tagged.mp4",
+        "NOTES.md",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt"
+      ],
+      "next": "Sisa: update stage final+delivery done; topik 034 di F:/AUDIRA-ALL-SKILL/channel-topics/audira-faktadunia/topics.md hapus \"(proses)\" + commit file itu saja; hapus project/out + F:/render-tmp sisa EP74; git add folder EP74 saja (tanpa mp4 bila .gitignore) + commit.",
+      "snapshot": {
+        "episode": "EP74_DARVAZA_KAWAH_API",
+        "topic": "Fakta sejarah unik negara-negara di dunia",
+        "style": "WORLDFORGE",
+        "memoryEpisode": "sejarah-negara-EP74",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-25T00:21:34.755Z"
     }
   ],
   "session": 6,
@@ -511,33 +540,5 @@
       "title": "EP74 Darvaza · s6",
       "at": "2026-11-24T23:16:13.389Z"
     }
-  ],
-  "handover": {
-    "at": "2026-11-25T00:20:55.110Z",
-    "doing": "s6: FINAL_EP74_DARVAZA_tagged.mp4 selesai (-13.7 LUFS TP -1.9, qa_video PASS, metadata ok), SOCIAL_CAPTIONS valid, SUBTITLES.srt, NOTES.md, 3 scheduled task review dibuat, lesson fix+failed WORLDFORGE dicatat.",
-    "files": [
-      "FINAL_EP74_DARVAZA_tagged.mp4",
-      "NOTES.md",
-      "SOCIAL_CAPTIONS.md",
-      "SUBTITLES.srt"
-    ],
-    "next": "Sisa: update stage final+delivery done; topik 034 di F:/AUDIRA-ALL-SKILL/channel-topics/audira-faktadunia/topics.md hapus \"(proses)\" + commit file itu saja; hapus project/out + F:/render-tmp sisa EP74; git add folder EP74 saja (tanpa mp4 bila .gitignore) + commit.",
-    "snapshot": {
-      "episode": "EP74_DARVAZA_KAWAH_API",
-      "topic": "Fakta sejarah unik negara-negara di dunia",
-      "style": "WORLDFORGE",
-      "memoryEpisode": "sejarah-negara-EP74",
-      "currentStage": "final",
-      "gates": {
-        "final": {
-          "approved": true,
-          "status": "in_progress"
-        }
-      },
-      "voPath": null,
-      "draftScores": [],
-      "finals": [],
-      "draftRounds": 0
-    }
-  }
+  ]
 }

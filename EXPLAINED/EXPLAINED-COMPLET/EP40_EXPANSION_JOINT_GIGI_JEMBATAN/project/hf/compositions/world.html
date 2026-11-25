@@ -1,0 +1,114 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#9CC4E4}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.06;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.28) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.1) 42%,rgba(0,0,0,0.1) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'Courier New',monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#1D2733;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.tag{display:table;font-family:'Courier New',monospace;font-weight:700;font-size:28px;letter-spacing:.12em;color:#1D2733;background:#F2B51C;padding:9px 18px 8px;margin-bottom:16px;transform:rotate(-0.8deg);box-shadow:4px 4px 0 rgba(29,39,51,.3)}
+.card{display:table;background:#F4F1EA;border-radius:4px;padding:14px 30px 20px;margin-bottom:16px;box-shadow:8px 8px 0 #2F5F8F,0 20px 40px rgba(29,39,51,.35)}
+.big{font-family:Arial Black,Arial,sans-serif;font-weight:900;font-size:96px;line-height:1.0;color:#1D2733;letter-spacing:-.01em}
+.big span{color:#C8322A}.big .sm{font-size:62px;color:#1D2733}.big.sm2{font-size:68px;line-height:1.06}
+.ln{display:table;font-family:Arial,sans-serif;font-weight:800;font-size:41px;line-height:1.2;color:#1D2733;background:#F4F1EA;padding:10px 24px 12px 22px;margin-bottom:12px;border-left:12px solid #F2B51C;border-radius:0 4px 4px 0;box-shadow:5px 5px 0 rgba(29,39,51,.25);max-width:880px}
+.ln.r{border-left-color:#C8322A}.ln.y{border-left-color:#F2B51C}.ln.b{border-left-color:#2F5F8F}
+#chip{font-family:'Courier New',monospace;font-size:27px;font-weight:700;color:#1D2733;opacity:.75;letter-spacing:.06em;background:rgba(244,241,234,.7);padding:3px 10px}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="81.08" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN CUPLIKAN ASLI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tag">CARA KERJA BENDA &middot; EP 40</div>
+  <div class="card"><div class="big">Gigi baja<br><span class="sm">di</span> <span>jembatan</span></div></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="tag">SIAR MUAI</div>
+  <div class="ln y" data-at="s2:melintas" data-fx="lit">Guncangan saat mobil melintas</div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tag">BAJA &amp; BETON</div>
+  <div class="ln r" data-at="s3:panas" data-fx="lit">Memanjang saat panas</div>
+  <div class="ln b" data-at="s3:dingin" data-fx="lit">Memendek saat dingin</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="tag">KOEFISIEN MUAI</div>
+  <div class="card" data-at="s4:derajat" data-fx="lit"><div class="big sm2">12 / sejuta<br><span>per 1 &deg;C</span></div></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="tag">DIKUNCI MATI</div>
+  <div class="ln r" data-at="s5:melengkung" data-fx="lit">Lantai melengkung &amp; retak</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="tag">PELAT BERGERIGI</div>
+  <div class="ln y" data-at="s6:sisir" data-fx="lit">Dua sisir saling menyisip</div>
+  <div class="ln b" data-at="s6:rata" data-fx="lit">Permukaan tetap rata</div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tag">HITUNGAN</div>
+  <div class="card" data-at="s7:enam" data-fx="lit"><div class="big sm2">+36 cm<br><span>maks 50 cm</span></div></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="card" data-at="s8:bernapas" data-fx="lit"><div class="big sm2">Bernapas<br><span>tanpa patah</span></div></div>
+  <div class="ln y" data-at="s8:Episode" data-fx="lit">Berikutnya: kotak hitam pesawat</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">CARA KERJA BENDA &middot; EP 40</div></div>
+<div id="sig">AUDIRA &middot; @AudiraExplained</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":5.649,"s2":5.809,"s2e":13.169,"s3":13.329,"s3e":21.471,"s4":21.631,"s4e":30.372,"s5":30.532,"s5e":38.379,"s6":38.539,"s6e":55.791,"s7":55.951,"s7e":67.218,"s8":67.378,"s8e":78.075,"end":78.075,"dur":81.08,"outro":78.325},AT={"s1:sengaja":3.482,"s1:retak":5.34,"s2:melintas":12.131,"s3:panas":16.767,"s3:dingin":18.579,"s3:menyusut":19.799,"s3:umurnya":21.007,"s4:derajat":27.579,"s4:sejuta":25.009,"s4:panjang":30,"s5:dikunci":31.873,"s5:muai":33.591,"s5:melengkung":36.274,"s5:retak":37.993,"s6:terperosok":42.78,"s6:panas":49.199,"s6:dingin":51.242,"s6:sisir":48.239,"s6:menjauh":52.372,"s6:rata":54.505,"s7:enam":61.564,"s7:setengah":66.599,"s7:tiga":59.335,"s8:bernapas":70.118,"s8:AUDIRA":71.929,"s8:Episode":75.041},DUR=81.08,OUT=78.325;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ lit:(e,t)=>tl.fromTo(e,{opacity:.82,x:-5},{opacity:1,x:0,duration:.28,ease:'power2.out'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{opacity:0,y:30,scale:.92},{opacity:1,y:0,scale:1,duration:.45,ease:'back.out(1.2)'},a-.1);},POUT=(tl,p,b)=>{tl.to(p,{opacity:0,y:-20,duration:.28,ease:'power2.in'},b-.28);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0,y:40});tl.to('#outro',{opacity:1,y:0,duration:.45,ease:'power3.out'},OUT-.1);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP40_EXPANSION_JOINT_GIGI_JEMBATAN")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@500&display=block" rel="stylesheet">
+<style>
+:root{--forest:#0B3D2E;--forest-deep:#072a20;--tosca:#00B894;--lime:#A3E635;--orange:#FF6A3D;--white:#FFFFFF}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow:hidden;background:var(--forest)}
+body{position:relative;font-family:'Space Grotesk',sans-serif;color:var(--white)}
+.bg{position:absolute;inset:0;background:radial-gradient(ellipse 55% 50% at 50% 50%,#0f4a38 0%,var(--forest) 55%,var(--forest-deep) 100%)}
+.grid{position:absolute;inset:0;
+  -webkit-mask-image:linear-gradient(90deg,#000 0%,rgba(0,0,0,.5) 22%,transparent 36%,transparent 64%,rgba(0,0,0,.5) 78%,#000 100%);
+          mask-image:linear-gradient(90deg,#000 0%,rgba(0,0,0,.5) 22%,transparent 36%,transparent 64%,rgba(0,0,0,.5) 78%,#000 100%)}
+.globe{position:absolute;top:50%}
+.coord{position:absolute;font-family:'JetBrains Mono',monospace;font-weight:500;color:rgba(163,230,53,.75);letter-spacing:1px;white-space:nowrap}
+.coord i{display:inline-block;border-radius:50%;background:var(--orange);vertical-align:middle;position:relative}
+.band{position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(163,230,53,.32) 20%,rgba(163,230,53,.32) 80%,transparent)}
+.safe{position:absolute;width:1546px;height:423px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:38px;transform-origin:center}
+.row{display:flex;align-items:center;gap:52px}
+.row img{height:118px;display:block}
+.divider{width:4px;height:136px;background:var(--tosca);border-radius:2px}
+.title{display:flex;flex-direction:column;gap:18px}
+.title h1{font-weight:700;font-size:134px;line-height:.9;letter-spacing:-3px;white-space:nowrap}
+.title h1 span{color:var(--orange)}
+.title p{font-weight:500;font-size:33px;color:var(--lime);letter-spacing:.5px}
+.chips{display:flex;gap:22px}
+.chips div{font-weight:500;font-size:26px;padding:10px 24px;border:2px solid rgba(255,255,255,.28);border-radius:999px;color:rgba(255,255,255,.92);white-space:nowrap}
+.chips div b{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--tosca);margin-right:14px;vertical-align:middle;position:relative;top:-2px}
+</style></head><body>
+<div class="bg"></div>
+<svg class="grid" id="grid"></svg>
+<div class="band" id="b1"></div>
+<div class="band" id="b2"></div>
+<div class="safe" id="safe">
+  <div class="row">
+    <img src="horizontal-reversed.svg" alt="audira multimedia digital">
+    <div class="divider"></div>
+    <div class="title"><h1>Fakta Dunia<span>.</span></h1><p>Fakta dunia yang terlalu aneh untuk dikarang</p></div>
+  </div>
+  <div class="chips">
+    <div><b></b>Sejarah Aneh</div>
+    <div><b></b>Fakta Negara</div>
+    <div><b></b>Perang &amp; Geopolitik</div>
+    <div><b></b>Kisah Nyata Bersumber</div>
+  </div>
+</div>
+<script>
+// ?w=2560&h=1440&s=1  (s = scale of the centred content block)
+const q=new URLSearchParams(location.search);
+const W=+(q.get('w')||2560),H=+(q.get('h')||1440),S=+(q.get('s')||1);
+document.documentElement.style.width=document.body.style.width=W+'px';
+document.documentElement.style.height=document.body.style.height=H+'px';
+const safe=document.getElementById('safe');
+safe.style.left=(W-1546)/2+'px';safe.style.top=(H-423)/2+'px';safe.style.transform=`scale(${S})`;
+const half=423*S/2+30*S;
+document.getElementById('b1').style.top=(H/2-half)+'px';
+document.getElementById('b2').style.top=(H/2+half)+'px';
+
+// lat/long graticule across the whole canvas, faded toward the centre
+const g=document.getElementById('grid');g.setAttribute('width',W);g.setAttribute('height',H);
+const step=Math.round(110*S);let p='';
+for(let x=(W/2)%step;x<W;x+=step)p+=`M${x} 0V${H}`;
+for(let y=(H/2)%step;y<H;y+=step)p+=`M0 ${y}H${W}`;
+g.innerHTML=`<path d="${p}" stroke="#00B894" stroke-opacity=".16" stroke-width="1.4" fill="none"/>`;
+
+// wireframe globes on the outer edges (visible on TV/desktop, cropped on mobile)
+function globe(cx,r,tilt){
+  const s=document.createElementNS('http://www.w3.org/2000/svg','svg');
+  s.setAttribute('class','globe');s.setAttribute('width',2*r+20);s.setAttribute('height',2*r+20);
+  s.setAttribute('viewBox',`${-r-10} ${-r-10} ${2*r+20} ${2*r+20}`);
+  s.style.left=(cx-r-10)+'px';s.style.marginTop=(-r-10)+'px';
+  let d=`<circle r="${r}" fill="#072a20" fill-opacity=".72" stroke="#00B894" stroke-opacity=".55" stroke-width="${3*S}"/>`;
+  d+=`<g transform="rotate(${tilt})" fill="none" stroke="#00B894" stroke-opacity=".38" stroke-width="${2*S}">`;
+  for(const k of [.25,.55,.82])d+=`<ellipse rx="${r*k}" ry="${r}"/>`;
+  d+=`<line y1="${-r}" y2="${r}"/>`;
+  for(const t of [-.66,-.33,0,.33,.66]){const y=r*t,w=Math.sqrt(r*r-y*y);d+=`<line x1="${-w}" x2="${w}" y1="${y}" y2="${y}"/>`;}
+  d+=`</g>`;
+  // orange route arc with pins: a "fact" travelling across the world
+  d+=`<path d="M${-r*.55} ${r*.2} Q ${0} ${-r*.75} ${r*.5} ${-r*.1}" fill="none" stroke="#FF6A3D" stroke-width="${3.5*S}" stroke-dasharray="${10*S} ${9*S}"/>`;
+  d+=`<circle cx="${-r*.55}" cy="${r*.2}" r="${9*S}" fill="#FF6A3D"/><circle cx="${r*.5}" cy="${-r*.1}" r="${9*S}" fill="#A3E635"/>`;
+  s.innerHTML=d;document.body.insertBefore(s,safe);
+}
+const R=Math.min(H*0.36,W*0.11);
+// globe inner edge sits just outside the visible content block (~690px half-width at scale 1)
+const cxL=W/2-690*S-24-R, cxR=W-cxL;
+globe(cxL,R,-18);
+globe(cxR,R,18);
+
+// coordinate tags of stories already on the channel: above/below each globe, tall canvases only
+function tag(txt,cx,y){
+  const e=document.createElement('div');e.className='coord';
+  e.style.fontSize='22px';e.style.top=y+'px';e.style.left=cx+'px';e.style.transform='translate(-50%,-50%)';
+  e.innerHTML=`<i style="width:10px;height:10px;margin-right:12px"></i>${txt}`;
+  document.body.insertBefore(e,safe);
+}
+if(H>=1000){
+  tag('64.2°N 149.5°W · ALASKA',cxL,H/2-R-46);
+  tag('6.16°S 39.19°E · ZANZIBAR',cxL,H/2+R+46);
+  tag('59.33°N 18.07°E · STOCKHOLM',cxR,H/2-R-46);
+  tag('WESTERN AUSTRALIA · 1932',cxR,H/2+R+46);
+}
+</script>
+</body></html>

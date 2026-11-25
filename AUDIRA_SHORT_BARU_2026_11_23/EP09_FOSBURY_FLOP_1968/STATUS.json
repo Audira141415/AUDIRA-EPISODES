@@ -1,0 +1,657 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP09",
+  "topic": "Fosbury Flop — lompat tinggi terbalik yang mengubah olahraga selamanya",
+  "createdAt": "2026-11-22T17:51:38.098Z",
+  "updatedAt": "2026-11-23T09:31:27.651Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:52:45.797Z",
+          "text": "Baca CLAUDE.md, NOTES EP04 Fakta Olahraga, motion memory GLOBAL (VO: tulis \"Audira\" bukan \"AUDIRA\"; Karaoke lebar penuh gap 0.4em; render final rename EPERM, TP limiter)."
+        }
+      ],
+      "doneAt": "2026-11-22T17:52:45.797Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:52:39.481Z",
+          "text": "research/SOURCE_REGISTER.md: 19 fakta dari 3 sumber Wikipedia (WebSearch error, olympics.com timeout)."
+        }
+      ],
+      "doneAt": "2026-11-22T17:52:39.481Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T23:57:58.685Z",
+      "notes": [
+        {
+          "at": "2026-11-22T17:52:41.175Z",
+          "text": "Ditawarkan: TACTICBOARD (utama), CHALKCRAFT, VINTAGEFORGE. Papan: style/style-options.jpg. Menunggu pilihan pengguna."
+        },
+        {
+          "at": "2026-11-22T17:57:17.097Z",
+          "text": "Pengguna pilih \"1 TACTICBOARD\" (2026-11-23). Cover topik menyusul dari komposisi Ep09Cover."
+        },
+        {
+          "at": "2026-11-22T23:57:58.685Z",
+          "text": "Pengguna pilih \"CHRONICLE\" (2026-11-23) setelah TACTICBOARD gagal juri 2x (3.33, 3.50)."
+        }
+      ],
+      "startedAt": "2026-11-22T17:52:41.175Z",
+      "doneAt": "2026-11-22T23:57:58.685Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T17:56:49.597Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T17:56:47.067Z",
+      "startedAt": "2026-11-22T17:56:47.067Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:55:14.045Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:26:19.271Z",
+          "text": "VO Cartesia project/public/audio/vo.wav 87,84 dtk dikunci, vo-words.json"
+        }
+      ],
+      "doneAt": "2026-11-22T22:26:19.271Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:56:14.316Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-22T18:01:24.199Z",
+          "text": "Koreksi sync otomatis: animasi belum selesai (hanya kit.tsx). VO selesai 87,84 dtk."
+        },
+        {
+          "at": "2026-11-22T18:01:53.273Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T18:00:13.741Z",
+      "startedAt": "2026-11-22T17:55:32.100Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T22:26:53.693Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh); look.json FAIL (perlu perbaikan sebelum final)"
+        }
+      ],
+      "doneAt": "2026-11-22T22:25:54.390Z",
+      "startedAt": "2026-11-22T22:25:54.390Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T09:11:50.496Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-23T09:31:23.132Z",
+          "text": "Final r2 FINAL_VIDEO.mp4 (root): 89 dtk 1080x1920@60, -13.6 LUFS, TP -1.8 dBFS, metadata + Ed25519 VALID + C2PA, qa_video PASS, juri final r1 3.67 -> poles label tumpuk -> r2 4.0 LOLOS."
+        }
+      ],
+      "doneAt": "2026-11-23T09:31:23.132Z",
+      "startedAt": "2026-11-23T09:10:15.792Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:30:34.947Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T09:31:25.275Z",
+          "text": "Caption validator ok, NOTES.md, lessons CHRONICLE+GLOBAL, scheduled task review-ep09-fosbury-flop-1968-24h/-72h/-7d (upload Selasa 24 Nov 19.00 WIB), project/out/seg + perantara dihapus."
+        }
+      ],
+      "doneAt": "2026-11-23T09:31:25.275Z",
+      "startedAt": "2026-11-22T22:28:39.456Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "in_progress",
+      "notes": [
+        {
+          "at": "2026-11-23T09:31:26.770Z",
+          "text": "Menunggu upload + scheduled task 24j/72j/7h."
+        }
+      ],
+      "startedAt": "2026-11-23T09:31:26.770Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP09",
+    "engine": "hyperframes",
+    "engineImpl": "Remotion 2D (tanpa R3F)",
+    "channel": "AUDIRA Sport Facts",
+    "handle": "@AudiraSportFacts",
+    "style": "CHRONICLE",
+    "styleFailed": [
+      "TACTICBOARD"
+    ],
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-23T09:11:50.496Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T17:57:23.113Z",
+      "doing": "Generate VO Cartesia dari audio/vo-timed.txt (1 baris [00:00], 214 kata). Project Remotion 2D sudah disalin dari F:/AUDIRA-SKILL-MOTION/starter ke project/ (node_modules dari F:/AUDIRA-EPISODES/node_modules, SERIES.json = SPORTFACTS, channel.json sudah). Belum ada kode scene.",
+      "files": [
+        "docs/SCRIPT.md",
+        "audio/vo.txt",
+        "audio/vo-timed.txt",
+        "research/SOURCE_REGISTER.md",
+        "style/STYLE_DECISION.md",
+        "project/SERIES.json"
+      ],
+      "next": "1) VO -> project/public/audio/vo.wav + vo-words.json, lalu npm run vo. 2) Tulis project/src/scenes/ep09/ (Fosbury.tsx 2D TACTICBOARD: papan hijau-slate, bidak, panah kapur; 7 scene: hook koran 'World's Laziest High Jumper'+emas 1968, gaya gunting/straddle->flop + Medford usia 16, kutipan ikan + bak pasir->busa, fisika pusat massa di bawah mistar, papan skor 20 Okt 1968 2,24 m percobaan 3 vs perak 2,22, Munich 28/40 + 34/36 medali, outro) + Root.tsx baru (Ep09Preview/Ep09Final/Ep09Cover). 3) Cover topik style/cover-topic.png. 4) docs ART_DIRECTION/STORYBOARD/ASSET_MANIFEST/SHOTLIST, sfx, contact sheet + juri, render:final --vo --sfx, metadata, SOCIAL_CAPTIONS.",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Fosbury Flop — lompat tinggi terbalik yang mengubah olahraga selamanya",
+        "style": "TACTICBOARD",
+        "memoryEpisode": "short-baru-11-23-EP09",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T17:57:58.546Z",
+      "doing": "VO selesai: project/public/audio/vo.wav (92,18 dtk, 213 kata) + vo-words.json. Sesi dipindah ke sesi baru (batas konteks). Belum ada kode scene, belum ada cover topik.",
+      "files": [
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "audio/vo-timed.txt"
+      ],
+      "next": "1) Rapatkan VO ke <=90 dtk (jeda antarkalimat maks 0,45 dtk: F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/_tools/vo_tighten.py atau scripts/tighten-pauses.py; perbarui vo-words.json), cek ejaan 'Audira' di outro, lalu npm run vo. 2) Tulis project/src/scenes/ep09/ (2D TACTICBOARD, SVG/CSS tanpa R3F) + ganti project/src/Root.tsx dengan hanya Ep09Preview(540x960@30)/Ep09Final(1080x1920@60)/Ep09Cover; scene dipotong per detik VO. 3) style/cover-topic.png. 4) docs ART_DIRECTION/STORYBOARD/ASSET_MANIFEST/SHOTLIST + draft/THEME_CHECK.md, npm run sfx, contact sheet 6-8 frame + juri buta (record_score draft), render:final --vo --sfx --title --slug=fosbury-flop-1968 --ep=EP09, metadata ffprobe, qa_video hardOnly, SOCIAL_CAPTIONS 6 platform + validator, NOTES.md, append_lesson TACTICBOARD.",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Fosbury Flop — lompat tinggi terbalik yang mengubah olahraga selamanya",
+        "style": "TACTICBOARD",
+        "memoryEpisode": "short-baru-11-23-EP09",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T18:01:22.601Z",
+      "doing": "VO dirapatkan: project/public/audio/vo.wav 87,84 dtk (-16 LUFS), vo-words.json (213 kata; raw di public/audio/work/). Kata tampilan: src/scenes/ep09/words.ts (187 kata, 61 chunk; generator scripts/words-ep09.py). Kit 2D selesai: src/scenes/ep09/kit.tsx (Board, Hud, Card, Callout, Chip, Figure+POSES+com(), Bar, ChalkPath, ramp/pop/win). Belum ada Ep09.tsx / Root.tsx baru.",
+      "files": [
+        "project/src/scenes/ep09/kit.tsx",
+        "project/src/scenes/ep09/words.ts",
+        "project/scripts/words-ep09.py",
+        "project/scripts/vo-tighten-ep09.py",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "1) Tulis src/scenes/ep09/Ep09.tsx; film 89,0 dtk (AudiraOutro 3 dtk mulai 86,0; AudiraSignature seed fosbury-flop-1968 tanpa handle), komposisi muted (VO lewat render:final --vo). Potongan scene (detik VO): S1 hook 0–9.9 (kliping koran 'WORLD'S LAZIEST HIGH JUMPER' stabilo; figur flop di arc 3.4–8; chip MEXICO CITY 1968 @6.0; medali EMAS @9.1) | S2a 9.9–20.2 (kartu DICK FOSBURY; gaya gunting 12.0–16.2 lalu straddle 16.2–20.2, X merah @18.1; satu hero lit) | S2b 20.2–29.6 (UMUR 16 • SMA MEDFORD, OREGON; morph scissors→flop 23.5–26.6 onion skin; PUNGGUNG DULU @27.4, KEPALA DULU @28.5) | S3a 29.6–37.2 (kutipan 'ikan menggelepar di perahu' koran lokal 1964; busa @34.0) | S3b 37.2–44.8 (pasir @38.85, serbuk gergaji @39.5, serpihan kayu @41.2, jatuh punggung 42.4, BERBAHAYA @43.9, busa ±0,9 m) | S4 44.8–59.6 (PUSAT MASSA @46.9, figur flop di atas mistar 48.7, kepala & kaki turun @50.9, titik CoM lewat di bawah mistar @53.6, TENAGA SAMA → MISTAR LEBIH TINGGI @57.6) | S5 59.6–71.9 (20 OKT 1968, 21 TAHUN @63.6, counter 2,24 m 64.8–66, percobaan X X O @66.5, REKOR OLIMPIADE @67.8, perak 2,22 ghost @69.2) | S6 71.9–81.6 (MUNICH 1972 grid 40 bidak, 28 lit; 1972–2000 36 medali, 34 lit @76.9) | S7 81.6–89 (figur flop hero, 'DIEJEK → STANDAR', plat AUDIRA SPORT FACTS @85.2). Karaoke lebar penuh di atas zona 380 px bawah, gap 0.4em. Board drift kontinu + zoom pelan per scene. 2) Root.tsx: hanya Ep09Preview 540x960@30, Ep09Final 1080x1920@60, Ep09Cover (still), skala desain 1080 via transform. 3) style/cover-topic.png. 4) docs ART_DIRECTION/STORYBOARD/ASSET_MANIFEST/SHOTLIST (+ Offset 0), draft/THEME_CHECK.md, npm run sfx, contact sheet + juri buta, render:final, metadata, qa_video, SOCIAL_CAPTIONS, NOTES, memory.",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Fosbury Flop — lompat tinggi terbalik yang mengubah olahraga selamanya",
+        "style": "TACTICBOARD",
+        "memoryEpisode": "short-baru-11-23-EP09",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T18:03:06.056Z",
+      "doing": "Sesi lanjutan: menulis src/scenes/ep09/Ep09.tsx + Root.tsx (Ep09Preview/Final/Cover)",
+      "files": [
+        "project/src/scenes/ep09/Ep09.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "cover-topic.png, docs ART_DIRECTION/STORYBOARD/ASSET_MANIFEST/SHOTLIST, THEME_CHECK, sfx, contact sheet + juri, render:final",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Fosbury Flop — lompat tinggi terbalik yang mengubah olahraga selamanya",
+        "style": "TACTICBOARD",
+        "memoryEpisode": "short-baru-11-23-EP09",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T18:12:01.696Z",
+      "doing": "Ep09.tsx + Root.tsx (Ep09Preview/Ep09Final/Ep09Cover) SELESAI; style/cover-topic.png dirender; docs SHOTLIST/ART_DIRECTION/STORYBOARD/ASSET_MANIFEST ditulis. Poles audit:visual putaran 3: ceilings lighting5 material5 depth3 composition3 readability2 (penyebab: SVG <text> dibaca warna hitam -> sudah diberi color chalk di Stage; HUD tumpang outro -> film disembunyikan setelah 86.6 dtk). Contact sheet terakhir out/chk3/_sheet.jpg.",
+      "files": [
+        "project/src/scenes/ep09/Ep09.tsx",
+        "project/src/Root.tsx",
+        "project/src/scenes/ep09/kit.tsx",
+        "docs/SHOTLIST.md",
+        "docs/ART_DIRECTION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "style/cover-topic.png"
+      ],
+      "next": "1) cd project; node scripts/stills.mjs out/chk4 2s,5.5s,9.4s,14s,18.4s,25s,28.8s,33s,35.5s,40.5s,44.3s,48s,52s,55s,58.5s,62s,66.8s,69.6s,74.5s,79s,84s,85.5s,87.5s,1s Ep09Preview → cek look.json ceilings (readability harus ≥3). 2) draft/THEME_CHECK.md (tiap frame subjek = kata VO, semua ya). 3) npm run sfx (SHOTLIST di docs/, Offset 0). 4) klip 540x960 bagian S4 44.8-60 + npm run audit:camera; juri buta subagent (qa/jury.md) record_score draft judge jury, lolos ≥3.8. 5) render:final --comp=Ep09Final --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Fosbury Flop 1968\" --slug=fosbury-flop-1968 --ep=EP09; metadata ffmpeg + ffprobe; audira_qa_video hardOnly; -14 LUFS TP<-1; FINAL_VIDEO.mp4; record_score final; SOCIAL_CAPTIONS.md (6 platform + Jadwal Upload (WIB) + Label Konten AI) validator; NOTES.md; append_lesson TACTICBOARD (worked: zona caption 1290-1520 dikosongkan, Stage fit/spot; failed: SVG text tanpa CSS color dibaca hitam oleh audit:layout).",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Fosbury Flop — lompat tinggi terbalik yang mengubah olahraga selamanya",
+        "style": "TACTICBOARD",
+        "memoryEpisode": "short-baru-11-23-EP09",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T22:26:16.077Z",
+      "doing": "Juri buta draf (contact sheet draft/contact-sheet.jpg dari out/chk5, motion 4 dari klip S4). sfx.wav sudah dibuat, THEME_CHECK.md sudah. Scene drift dinaikkan (zoom 0.08 default, S4 0.07, travel S4 mulai 45.6).",
+      "files": [
+        "project/src/scenes/ep09/Ep09.tsx",
+        "draft/THEME_CHECK.md",
+        "draft/contact-sheet.jpg",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "record_score jury; lalu render:final --comp=Ep09Final --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Fosbury Flop 1968\" --slug=fosbury-flop-1968 --ep=EP09; metadata, qa_video, loudness, FINAL_VIDEO.mp4, captions, NOTES, lesson.",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Fosbury Flop — lompat tinggi terbalik yang mengubah olahraga selamanya",
+        "style": "TACTICBOARD",
+        "memoryEpisode": "short-baru-11-23-EP09",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T22:29:13.751Z",
+      "doing": "BERHENTI di gerbang style (G16/rule 6c). TACTICBOARD gagal juri 2 putaran: 3.33 (chk5) lalu 3.50 (chk6), aspek lemah lighting/depth/readability (depth & readability terkunci ceiling 3). Menunggu pengguna memilih style baru. Kandidat: CHRONICLE (arsip koran 1968), PANELVERSE (komik panel), FILM16 (film 16mm era 1968). Fallback tool menyarankan DEVFORGE/ARCADECRT (kurang cocok).",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "SOCIAL_CAPTIONS.md",
+        "project/src/scenes/ep09/Ep09.tsx",
+        "project/src/scenes/ep09/kit.tsx",
+        "project/public/audio/sfx.wav"
+      ],
+      "next": "Setelah pengguna pilih: render cover topik di style baru (style/cover-topic.png), STYLE_DECISION.md (Style: <ID>, TACTICBOARD ditolak juri), ulang tahap 4 docs (G21) dengan VO yang sama (vo.wav 87,84 dtk tetap dipakai), tulis ulang visual Ep09.tsx, lalu draf juri, render:final (flag di handover sebelumnya), QA, caption (SOCIAL_CAPTIONS.md sudah ditulis, ganti baris Style), NOTES.md.",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Fosbury Flop — lompat tinggi terbalik yang mengubah olahraga selamanya",
+        "style": "TACTICBOARD",
+        "memoryEpisode": "short-baru-11-23-EP09",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T23:58:12.435Z",
+      "doing": "Pengguna pilih CHRONICLE (2026-11-23), dicatat di STATUS style approved + data.style=CHRONICLE. Belum ada perubahan visual. Ep09.tsx/kit.tsx masih TACTICBOARD (poles putaran 2). Memori CHRONICLE: EP10 Jesse Owens (folder saudara EP10) pakai CHRONICLE 2D, juri 3.50 gagal; avoid: langit gradasi + siluet glow saja -> perlu sumber cahaya berarah (god-rays), haze, rim light satu sisi, occluder FG blur, kerumunan massa lembut. Resep: siluet hitam berkontur warna, set hangat, peta relief/pin, tanggal, counter, kutipan, end card sumber.",
+      "files": [
+        "STATUS.json",
+        "SOCIAL_CAPTIONS.md",
+        "draft/THEME_CHECK.md",
+        "project/src/scenes/ep09/Ep09.tsx",
+        "project/src/scenes/ep09/kit.tsx"
+      ],
+      "next": "1) Lihat cover F:/AUDIRA-SKILL-MOTION/references/quality-bar/chronicle.jpg + F:/AUDIRA-SKILL-MOTION/kits/chronicle/KIT.md, dan cek EP10 (../EP10_*) project/src/scenes untuk komponen CHRONICLE 2D yang bisa dipakai ulang. 2) Restyle project/src/scenes/ep09/kit.tsx + Ep09.tsx ke CHRONICLE (pertahankan timing scene & kata VO, words.ts, Captions zona y 1290-1520, AudiraSignature/outro). Ganti papan hijau jadi set hangat stadion/arsip 1968 dengan cahaya berarah. 3) style/cover-topic.png (Ep09Cover), style/STYLE_DECISION.md (Style: CHRONICLE, TACTICBOARD ditolak juri 3.33/3.50, approved: yes), ulang docs ART_DIRECTION/STORYBOARD/ASSET_MANIFEST/SHOTLIST dengan baris Style: CHRONICLE (G21). 4) node scripts/stills.mjs out/chr1 <24 detik sama seperti chk6> Ep09Preview; ceilings; draft/THEME_CHECK.md ulang; npm run sfx; klip S4 frames 1344-1800 + audit:camera; juri buta subagent (F:/AUDIRA-SKILL-MOTION/qa/jury.md) record_score style CHRONICLE judge jury, lolos >=3.8 (maks 2 putaran). 5) render:final --comp=Ep09Final --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Fosbury Flop 1968\" --slug=fosbury-flop-1968 --ep=EP09; metadata ffmpeg + ffprobe; audira_qa_video hardOnly; -14 LUFS TP<-1; FINAL_VIDEO.mp4; record_score final. 6) SOCIAL_CAPTIONS.md sudah ada (ganti Style: TACTICBOARD -> CHRONICLE di baris kepala), audira_generate_srt, validator; NOTES.md; append_lesson CHRONICLE; caption di chat.",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Fosbury Flop — lompat tinggi terbalik yang mengubah olahraga selamanya",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP09",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:03:35.628Z",
+      "doing": "Restyle CHRONICLE SELESAI di kode: kit.tsx (palet, Backdrop = Sky+Stadium+LightRays+Haze+Track+kolam cahaya, Figure siluet hitam berkontur + rim glow), set.tsx (salinan EP10 lib/set.tsx, tick lintasan diredam), Ep09.tsx (Scene punya mood/sunX/occ per babak, Occluder FG, Finish grain 0.09). Fix readability terakhir (medal label, chip biru fg ink, chip bak 36px, BUSA stroke, panel gelap DIEJEK/STANDAR, ruler label pelat gelap) BELUM dirender ulang. Contact sheet out/chr1 (sebelum fix): ceilings lighting/material/depth/composition 5, readability 2, diversity 30.1. Docs G21 sudah: STYLE_DECISION.md (Style: CHRONICLE, approved yes), ART_DIRECTION/ASSET_MANIFEST/SCRIPT/SHOTLIST/STORYBOARD baris Style: CHRONICLE. Cover lama -> style/cover-topic-tacticboard.png; style/cover-reference.jpg = quality-bar chronicle. cover-topic.png BELUM dirender.",
+      "files": [
+        "project/src/scenes/ep09/kit.tsx",
+        "project/src/scenes/ep09/set.tsx",
+        "project/src/scenes/ep09/Ep09.tsx",
+        "style/STYLE_DECISION.md",
+        "docs/ART_DIRECTION.md",
+        "docs/SHOTLIST.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md"
+      ],
+      "next": "1) cd project; node scripts/stills.mjs out/chr2 2s,5.5s,9.4s,14s,18.4s,25s,28.8s,33s,35.5s,40.5s,44.3s,48s,52s,55s,58.5s,62s,66.8s,69.6s,74.5s,79s,84s,85.5s,87.5s,1s Ep09Preview → readability ceiling harus >=3 (sisa warn @AudiraSportFacts 34px dari AudiraSignature boleh). Lihat _sheet.jpg (kecil). 2) Render cover: npx remotion still Ep09Cover ../style/cover-topic.png (cek dulu cara di package.json/scripts cover). 3) Contact sheet draf 6-8 frame -> ../draft/contact-sheet.jpg + look.json; draft/THEME_CHECK.md ulang (subjek = kata VO, semua ya, sebut CHRONICLE). 4) npm run sfx; klip S4 frames 1344-1800 540x960 + npm run audit:camera -> draft/camera.json. 5) Self record_score lalu juri buta subagent (F:/AUDIRA-SKILL-MOTION/qa/jury.md) record_score style CHRONICLE judge jury episode short-baru-11-23-EP09; tool passRule avg>=4 tanpa aspek <3 (CLAUDE.md 3.8). Maks 2 putaran. 6) render:final --comp=Ep09Final --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Fosbury Flop 1968\" --slug=fosbury-flop-1968 --ep=EP09 (background); metadata+ffprobe; audira_qa_video hardOnly; -14 LUFS TP<-1; FINAL_VIDEO.mp4; record_score final. 7) SOCIAL_CAPTIONS.md baris 3 Style: TACTICBOARD -> CHRONICLE; audira_generate_srt; validator (keywords Fosbury, 1968, Mexico City, Flop); NOTES.md; append_lesson CHRONICLE; tampilkan caption.",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Fosbury Flop — lompat tinggi terbalik yang mengubah olahraga selamanya",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP09",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:04:54.657Z",
+      "doing": "Render stills out/chr2 (readability check pasca fix CHRONICLE)",
+      "command": "cd project; node scripts/stills.mjs out/chr2 <24 detik> Ep09Preview",
+      "next": "Langkah 2-7 handover sebelumnya (cover, contact sheet, sfx+klip, juri, final, caption)",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Fosbury Flop — lompat tinggi terbalik yang mengubah olahraga selamanya",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP09",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:14:34.664Z",
+      "doing": "Juri buta putaran 2 (putaran 1 GAGAL 3.33: hook tanpa pelompat, figur stiker, FG tak terlihat). Poles sudah diterapkan & sheet putaran 2 di draft/contact-sheet.jpg; self 4.17 tercatat. Backup kode r1 di project/out/*.r1.bak. draft.mjs diperbaiki (async hfStills); klip harus dirender manual (remotion cli ada di F:/AUDIRA-EPISODES/node_modules). SFX dibuat ulang dengan --timing=public/audio/vo-words.json. cover-topic.png sudah. SOCIAL_CAPTIONS baris Style sudah CHRONICLE.",
+      "files": [
+        "project/src/scenes/ep09/kit.tsx",
+        "project/src/scenes/ep09/Ep09.tsx",
+        "project/src/scenes/ep09/set.tsx",
+        "project/scripts/draft.mjs",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Jika juri r2 lolos: record_score jury, lalu render:final (flag di handover sebelumnya) background, metadata, QA, caption/SRT/NOTES/lesson. Jika gagal: berhenti, kembali ke gerbang style (G16/G21).",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Fosbury Flop — lompat tinggi terbalik yang mengubah olahraga selamanya",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP09",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:15:31.203Z",
+      "doing": "Juri r2 LOLOS 4.0 (tercatat). Render final berjalan (background), log project/out/render-final.log, resumable.",
+      "command": "npm run render:final -- --comp=Ep09Final --out=out/FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Fosbury Flop 1968\" --slug=fosbury-flop-1968 --ep=EP09",
+      "next": "Cek metadata ffprobe, LUFS -14 TP<-1, audira_qa_video hardOnly, salin ke ../FINAL_VIDEO.mp4, record_score final, lalu SRT + validator + NOTES.md + lesson worked + caption di chat.",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Fosbury Flop — lompat tinggi terbalik yang mengubah olahraga selamanya",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP09",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:25:04.171Z",
+      "doing": "Render final ulang setelah fix G13. Juri draf r2 LOLOS 4.0 (tercatat). render:final pertama ditolak G13 (deadPct 6, medianSpeed 0.014). Fix: Scene di Ep09.tsx memindahkan gerak kamera kuat ke lapisan backdrop (bx sin 95px, zoom 0.22*zoom/dtk, inset -120); kartu tetap drift lembut. Klip S4 baru: median 0.062, parked 0% (project/out/camera-r3.json, disalin ke draft/camera.json). Stills out/chr4: semua ceiling 5. PENTING: C: penuh 0 MB → set TEMP/TMP ke project/out/tmp sebelum render; Bash stdout gagal, pakai PowerShell + Out-File ke F:. SRT sudah (SUBTITLES.srt), caption validator ok, Style CHRONICLE.",
+      "command": "PowerShell: $env:TEMP=\"<project>\\out\\tmp\"; $env:TMP=$env:TEMP; npm run render:final -- --comp=Ep09Final --out=out/FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Fosbury Flop 1968\" --slug=fosbury-flop-1968 --ep=EP09 *> out/render-final.log",
+      "files": [
+        "project/src/scenes/ep09/Ep09.tsx",
+        "project/out/FINAL_VIDEO.mp4",
+        "draft/camera.json"
+      ],
+      "next": "Cek log (metadata/LUFS/TP), ffprobe metadata, audira_qa_video hardOnly, salin ke ../FINAL_VIDEO.mp4, record_score final (judge jury subagent pada frame dari MP4), NOTES.md, append_lesson worked + fix G13, update status final/delivery, tampilkan caption di chat.",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Fosbury Flop — lompat tinggi terbalik yang mengubah olahraga selamanya",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP09",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:48:03.228Z",
+      "doing": "Render final Ep09Final ulang (render sebelumnya gagal part 10 write EOF, C: penuh) oleh sesi batch render-final",
+      "command": "PowerShell (project): $env:TEMP=\"F:\\render-tmp\\ep09\"; $env:TMP=$env:TEMP; npm run render:final -- --comp=Ep09Final --out=out/FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Fosbury Flop 1968\" --slug=fosbury-flop-1968 --ep=EP09 *> out/render-final2.log",
+      "files": [
+        "project/out/FINAL_VIDEO.mp4",
+        "project/out/render-final2.log"
+      ],
+      "next": "Cek log LUFS/TP, ffprobe metadata, qa_video hardOnly, salin ke ../FINAL_VIDEO.mp4, record_score final juri, NOTES.md, append_lesson",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Fosbury Flop — lompat tinggi terbalik yang mengubah olahraga selamanya",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP09",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:24:53.700Z",
+      "doing": "Render final r2 setelah poles juri final r1 (3.67: tag PERAK pindah luar tiang, XXO turun, eyebrow HUD 36px lineHeight 1, banner TENAGA SAMA ke y680, chip S2a y650)",
+      "command": "PowerShell (project): $env:TEMP=\"F:\\temp\"; npm run render:final -- --comp=Ep09Final --out=out/FINAL_VIDEO_r2.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Fosbury Flop 1968\" --slug=fosbury-flop-1968 --ep=EP09 *> out/render-final3.log",
+      "files": [
+        "project/src/scenes/ep09/Ep09.tsx",
+        "project/src/scenes/ep09/kit.tsx",
+        "project/out/FINAL_VIDEO_r2.mp4"
+      ],
+      "next": "Bila rename EPERM: remux metadata manual. Salin ke ../FINAL_VIDEO.mp4, sign via scratch sign-retry (npm run sign bug: async tanpa await + rename EPERM), LUFS/TP, qa_video hardOnly, contact sheet dari MP4, juri buta r2, NOTES.md, lessons, 3 scheduled task, status review, hapus project/out/seg",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Fosbury Flop — lompat tinggi terbalik yang mengubah olahraga selamanya",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP09",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:24:53.700Z",
+      "doing": "Render final r2 setelah poles juri final r1 (3.67: tag PERAK pindah luar tiang, XXO turun, eyebrow HUD 36px lineHeight 1, banner TENAGA SAMA ke y680, chip S2a y650)",
+      "command": "PowerShell (project): $env:TEMP=\"F:\\temp\"; npm run render:final -- --comp=Ep09Final --out=out/FINAL_VIDEO_r2.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Fosbury Flop 1968\" --slug=fosbury-flop-1968 --ep=EP09 *> out/render-final3.log",
+      "files": [
+        "project/src/scenes/ep09/Ep09.tsx",
+        "project/src/scenes/ep09/kit.tsx",
+        "project/out/FINAL_VIDEO_r2.mp4"
+      ],
+      "next": "Bila rename EPERM: remux metadata manual. Salin ke ../FINAL_VIDEO.mp4, sign via scratch sign-retry (npm run sign bug: async tanpa await + rename EPERM), LUFS/TP, qa_video hardOnly, contact sheet dari MP4, juri buta r2, NOTES.md, lessons, 3 scheduled task, status review, hapus project/out/seg",
+      "snapshot": {
+        "episode": "EP09",
+        "topic": "Fosbury Flop — lompat tinggi terbalik yang mengubah olahraga selamanya",
+        "style": "CHRONICLE",
+        "memoryEpisode": "short-baru-11-23-EP09",
+        "currentStage": "review",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T09:31:27.651Z"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#0B0907}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.04;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.42) 42%,rgba(0,0,0,0.42) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#F3E9D6;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.pre{position:absolute;left:-2000px;top:0;opacity:0}
+.p{transform-origin:0% 0%}
+#flash{position:absolute;inset:0;z-index:6;pointer-events:none;opacity:0;background:radial-gradient(ellipse at 50% 55%,rgba(255,190,110,.55),rgba(255,140,40,0) 70%)}
+.cd{position:relative;background:linear-gradient(180deg,rgba(24,19,14,.86),rgba(12,9,7,.86));border:1.5px solid rgba(255,181,71,.55);border-radius:14px;box-shadow:0 18px 40px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,236,200,.18)}
+.kk{display:inline-flex;align-items:center;gap:14px;font-family:'JetBrains Mono',Consolas,monospace;font-weight:700;font-size:26px;letter-spacing:.08em;color:#FFB547;margin-bottom:16px;padding:7px 18px 7px 7px;background:rgba(10,8,6,.82);border:1.5px solid rgba(255,181,71,.6);border-radius:8px}
+.kk i{font-style:normal;background:#FFB547;color:#0E0B08;padding:3px 12px;border-radius:5px}
+.h1{display:flex;flex-direction:column;align-items:flex-start;gap:0}
+.h1 .ln{font-family:Inter,'Segoe UI',sans-serif;font-weight:900;font-size:104px;line-height:.98;letter-spacing:-.01em;color:#F3E9D6;text-shadow:0 6px 24px rgba(0,0,0,.6)}
+.h1 .big{font-size:150px;line-height:1;background:linear-gradient(180deg,#FFF0C8 0%,#FFC566 38%,#F08A26 72%,#B4520E 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 0 rgba(30,10,0,.9)) drop-shadow(0 8px 22px rgba(0,0,0,.7))}
+.h1 .big .ct{font:inherit;color:inherit}
+.chips{display:flex;gap:14px;margin-top:20px;flex-wrap:wrap}
+.ch{font-style:normal;font-family:Inter,sans-serif;font-weight:900;font-size:44px;line-height:1;letter-spacing:.02em;padding:14px 22px 12px;border-radius:12px}
+.st1{background:#FF5A4A;color:#fff;transform:rotate(-2deg);box-shadow:0 10px 26px rgba(0,0,0,.45)}
+.st2{background:linear-gradient(180deg,#FFC566,#D9741A);color:#0E0B08;box-shadow:0 10px 26px rgba(0,0,0,.45),inset 0 2px 0 rgba(255,255,255,.5)}
+.ban{display:inline-block;font-family:Inter,sans-serif;font-weight:900;font-size:76px;line-height:1;color:#fff;background:#FF5A4A;padding:16px 26px 14px;border-radius:12px;transform:rotate(-2deg);box-shadow:0 14px 34px rgba(0,0,0,.5);margin-top:18px}
+.row{display:flex;flex-direction:column;margin-top:16px;padding:14px 26px 16px;border-left:12px solid #FFB547;max-width:900px;width:max-content;box-sizing:border-box}
+.row b{display:block;font-family:Inter,sans-serif;font-weight:900;font-size:52px;line-height:1.05;letter-spacing:-.005em;color:#F3E9D6}
+.row b .ct{display:inline;margin:0;font:inherit;color:#FFB547}
+.row span{display:block;margin-top:6px;font-family:Inter,sans-serif;font-weight:500;font-size:32px;line-height:1.2;color:#B9AC98;max-width:820px}
+.row.am b{color:#FFB547}.row.rd{border-left-color:#FF5A4A}.row.rd b{color:#FF8A7A}
+.spd b{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:96px;color:#FFB547}.spd b small{font-size:44px;color:#F3E9D6}
+.thermo .bar{position:relative;width:760px;height:22px;margin-top:14px;border-radius:11px;background:rgba(255,255,255,.08);overflow:hidden}
+.thermo .bar i{position:absolute;inset:0;transform-origin:0 50%;background:linear-gradient(90deg,#7FC4FF,#C9E4FF 30%,#FFD08A 70%,#FF8A3D)}
+.thermo .bar.visc i{background:linear-gradient(90deg,#D2781E,#8A3A0A 50%,#2A0E03)}
+.thermo b{font-size:44px}
+.calm{padding:20px 30px 22px;border-left:12px solid #B9AC98;border-color:rgba(185,172,152,.5);max-width:880px}
+.calm b{display:block;font-family:Inter,sans-serif;font-weight:800;font-size:56px;line-height:1.1;color:#F3E9D6}
+.calm span{display:block;margin-top:8px;font-family:Inter,sans-serif;font-weight:500;font-size:40px;color:#B9AC98}
+.vs{display:flex;gap:20px;align-items:stretch}
+.mm,.ff{display:flex;align-items:center;padding:16px 24px;box-sizing:border-box}
+.mm b,.ff b{font-family:Inter,sans-serif;font-weight:900;font-size:50px;line-height:1.05;color:#F3E9D6}
+.mm{width:330px}.mm b{color:#8F8577;text-decoration:line-through;text-decoration-thickness:5px;text-decoration-color:#FF5A4A}
+.ff{width:500px;background:linear-gradient(180deg,#FFC566,#D9741A);border-color:#FFD99A}.ff b{color:#0E0B08}
+.stp{position:absolute;right:-22px;top:-30px;font-style:normal;font-family:Inter,sans-serif;font-weight:900;font-size:56px;line-height:1;color:#fff;background:#FF5A4A;border-radius:10px;padding:10px 16px 8px;transform:rotate(6deg);box-shadow:0 8px 20px rgba(0,0,0,.45)}
+.q{margin-top:10px;padding:22px 30px 24px;font-family:Inter,sans-serif;font-weight:800;font-size:56px;line-height:1.12;color:#F3E9D6;border-left:12px solid #FFB547;max-width:900px}
+.q em{display:block;margin-top:12px;font-style:normal;color:#FFB547;font-size:44px}
+#rip{position:absolute;left:30px;top:1092px;width:960px;height:180px;z-index:10}
+#rip .rg{position:absolute;left:0;top:0;width:960px;height:180px}
+#rip .rings{position:absolute;left:0;top:0;width:960px;height:180px;overflow:hidden;pointer-events:none}
+.ring{position:absolute;left:52px;top:153px;width:1200px;height:240px;margin:-120px 0 0 -600px;border-radius:50%;border:4px solid #FFB547;opacity:0;box-sizing:border-box}
+.rv{position:absolute;left:12px;top:96px;width:84px;display:flex;flex-direction:column;align-items:center}
+.rv svg{width:80px;height:80px;filter:drop-shadow(0 6px 10px rgba(0,0,0,.6))}
+.rv span{margin-top:-4px;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:17px;letter-spacing:.06em;color:#F3E9D6;background:rgba(10,8,6,.8);padding:2px 6px;border-radius:4px}
+.rc{position:absolute;top:0;width:128px;height:178px}
+.rc .rt{position:absolute;left:0;top:0;width:128px;height:96px;box-sizing:border-box;padding:10px 8px 8px;background:linear-gradient(180deg,rgba(28,21,15,.92),rgba(12,9,7,.92));border:1.5px solid rgba(255,181,71,.65);border-top:5px solid #FFB547;border-radius:10px;text-align:center;box-shadow:0 10px 22px rgba(0,0,0,.5)}
+.rc .rt b{display:block;font-family:Inter,sans-serif;font-weight:900;font-size:23px;line-height:1.02;color:#F3E9D6}
+.rc .rt span{display:block;margin-top:5px;font-family:Inter,sans-serif;font-weight:700;font-size:19px;line-height:1.05;color:#FFB547}
+.rc .bd{position:absolute;left:44px;top:120px;width:40px;height:50px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;background:radial-gradient(circle at 34% 30%,#FFE7B8 0 9%,#E8902C 22%,#8A3A0A 60%,#2A0E03 100%);box-shadow:0 6px 12px rgba(0,0,0,.55)}
+.rc .bd::before{content:"";position:absolute;left:18px;top:-18px;width:4px;height:20px;background:linear-gradient(#FFB547,#8A3A0A);border-radius:2px}
+.rc .pz{position:absolute;left:-6px;top:-6px;width:140px;height:108px;border:4px solid #FFB547;border-radius:14px;opacity:0;box-sizing:border-box}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="91.72" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI 3D &middot; BUKAN FOTO ASLI</div>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&family=JetBrains+Mono:wght@500;700&family=DM+Serif+Display&display=block">
+<div class="pre"><span style="font-family:'Inter';font-weight:900">MOLASE 1919</span><span style="font-family:'Inter';font-weight:800">a</span><span style="font-family:'Inter';font-weight:700">a</span><span style="font-family:'Inter';font-weight:500">a</span><span style="font-family:'JetBrains Mono';font-weight:700">A 1</span><span style="font-family:'JetBrains Mono';font-weight:500">A 1</span><span style="font-family:'DM Serif Display'">AUDIRA</span></div>
+<div id="flash"></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2:Lima">
+  <div class="kk"><i>EP 45</i>FAKTA SEJARAH NEGARA</div>
+  <div class="h1"><span class="ln">GELOMBANG</span><span class="ln big">8 METER</span></div>
+  <div class="chips"><i class="ch st1" data-at="s1:Bukan" data-fx="stampc">BUKAN AIR</i><i class="ch st2" data-at="s1:sirup" data-fx="stampc">SIRUP TEBU · MOLASE</i></div>
+</div>
+<div class="p" data-in="s2:Lima" data-out="s2:berdiri">
+  <div class="kk"><i>01</i>LOKASI &amp; WAKTU</div>
+  <div class="cd row am" data-at="s2:Januari" data-fx="card"><b>15 JANUARI 1919</b></div>
+  <div class="cd row " data-at="s2:Boston" data-fx="card"><b>BOSTON, AMERIKA SERIKAT</b><span>tepi pelabuhan, kawasan North End</span></div>
+</div>
+<div class="p" data-in="s2:berdiri" data-out="s3">
+  <div class="kk"><i>02</i>TANGKI BAJA</div>
+  <div class="cd row am" data-at="s2:setinggi" data-fx="card"><b>TINGGI <span class="ct nb" data-from="0" data-to="15" data-a="s2:lima" data-d="0.8" >15</span> M</b></div>
+  <div class="cd row " data-at="s2:berisi" data-fx="card"><b>±<span class="ct nb" data-from="0" data-to="12000" data-a="s2:berisi" data-d="1.9" >12000</span> TON MOLASE</b><span>sirup kental sisa pembuatan gula</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s3:Tapi">
+  <div class="kk"><i>03</i>UNTUK APA?</div>
+  <div class="cd row am" data-at="s3:alkohol" data-fx="card"><b>MOLASE → ALKOHOL</b></div>
+  <div class="cd row " data-at="s3:minuman" data-fx="card"><b>MINUMAN + BAHAN AMUNISI</b></div>
+</div>
+<div class="p" data-in="s3:Tapi" data-out="s4">
+  <div class="kk"><i>04</i>MASALAH SEJAK AWAL</div>
+  <div class="cd row rd" data-at="s3:bocor" data-fx="card"><b>DINDINGNYA BOCOR</b><span>molase merembes di sambungan</span></div>
+  <div class="cd row am" data-at="s3:dicat" data-fx="card"><b>&ldquo;SOLUSINYA&rdquo;: DICAT COKELAT</b><span>supaya rembesan tidak kelihatan</span></div>
+</div>
+<div class="p" data-in="s4" data-out="s4:Siang">
+  <div class="kk"><i>05</i>SEBELUM BENCANA</div>
+  <div class="cd row thermo" data-at="s4:udara" data-fx="card"><b>BEKU BERHARI-HARI → MENGHANGAT CEPAT</b><div class="bar"><i data-at="s4:menghangat" data-fx="grow"></i></div></div>
+  <div class="cd row am" data-at="s4:Sehari" data-fx="card"><b>SEHARI SEBELUMNYA</b><span>kapal mengisi molase hangat ke dalam tangki</span></div>
+</div>
+<div class="p" data-in="s4:Siang" data-out="s5">
+  <div class="kk"><i>06</i>SIANG HARI · 15 JANUARI 1919</div>
+  <div class="cd row am" data-at="s4:paku" data-fx="card"><b>PAKU KELINGNYA LEPAS</b><span>satu per satu</span></div>
+  <div class="ban" data-at="s4:terbelah" data-fx="stampc">TANGKI TERBELAH</div>
+</div>
+<div class="p" data-in="s5" data-out="s5:menabrak">
+  <div class="kk"><i>07</i>GELOMBANG MOLASE</div>
+  <div class="cd row am" data-at="s5:berat" data-fx="card"><b>LEBIH BERAT DARI AIR</b></div>
+  <div class="cd row spd" data-at="s5:lima" data-fx="card"><b>±<span class="ct nb" data-from="0" data-to="56" data-a="s5:lima" data-d="1.6" >56</span> <small>KM/JAM</small></b></div>
+</div>
+<div class="p" data-in="s5:menabrak" data-out="s6">
+  <div class="kk"><i>07</i>YANG DITERJANG</div>
+  <div class="cd row rd" data-at="s5:rel" data-fx="card"><b>REL KERETA LAYANG DITABRAK</b></div>
+  <div class="cd row " data-at="s5:menggeser" data-fx="card"><b>RUMAH BERGESER DARI FONDASINYA</b></div>
+</div>
+<div class="p" data-in="s6" data-out="s6:Dua">
+  <div class="kk"><i>08</i>LALU MENGENTAL</div>
+  <div class="cd row thermo" data-at="s6:mendingin" data-fx="card"><b>MENDINGIN → KENTAL SEPERTI LEM</b><div class="bar visc"><i data-at="s6:mengental" data-fx="grow"></i></div><span>cepat menerjang, lalu menjebak</span></div>
+</div>
+<div class="p" data-in="s6:Dua" data-out="s7">
+  <div class="kk"><i>08</i>KORBAN</div>
+  <div class="cd calm" data-at="s6:Dua" data-fx="fade"><b>21 orang meninggal</b><span>sekitar 150 orang terluka</span></div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Tapi">
+  <div class="kk"><i>09</i>TUDUHAN PERUSAHAAN</div>
+  <div class="cd row " data-at="s7:anarkis" data-fx="card"><b>&ldquo;ANARKIS MELEDAKKAN TANGKI&rdquo;</b><span>versi perusahaan pemilik tangki</span></div>
+</div>
+<div class="p" data-in="s7:Tapi" data-out="s7:Gugatan">
+  <div class="kk"><i>10</i>PUTUSAN SETELAH 3 TAHUN SIDANG</div>
+  <div class="vs">
+    <div class="cd mm" data-at="s7:pengadilan" data-fx="card"><b>ANARKIS?</b><i class="stp" data-at="s7:menyatakan" data-fx="stampc">BUKAN</i></div>
+    <div class="cd ff" data-at="s7:perusahaanlah" data-fx="card"><b>PERUSAHAAN LALAI</b></div>
+  </div>
+  <div class="cd row rd" data-at="s7:tipis" data-fx="card"><b>BAJANYA TERLALU TIPIS</b></div>
+  <div class="cd row rd" data-at="s7:diuji" data-fx="card"><b>TIDAK PERNAH DIUJI DENGAN BENAR</b></div>
+</div>
+<div class="p" data-in="s7:Gugatan" data-out="s8">
+  <div class="kk"><i>11</i>GUGATAN KELOMPOK</div>
+  <div class="cd row am" data-at="s7:seratus" data-fx="card"><b><span class="ct nb" data-from="0" data-to="119" data-a="s7:seratus" data-d="1.4" >119</span> WARGA</b></div>
+  <div class="cd row " data-at="s7:pertama" data-fx="card"><b>SALAH SATU YANG PERTAMA</b><span>di negara bagian Massachusetts</span></div>
+</div>
+<div class="p" data-in="s8" data-out="s8:Satu">
+  <div class="kk"><i>12</i>KONON</div>
+  <div class="cd row am" data-at="s8:bau" data-fx="card"><b>BAU MANIS DI HARI PANAS</b><span>masih tercium selama puluhan tahun</span></div>
+</div>
+<div class="p" data-in="s8:Satu" data-out="s8:Menurut">
+  <div class="kk"><i>13</i>PEMICUNYA KECIL</div>
+  <div class="cd row am" data-at="s8:Satu" data-fx="card"><b>SATU TANGKI YANG DICAT</b><span>untuk menutupi bocor, bukan memperbaikinya</span></div>
+</div>
+<div class="p" data-in="s8:Menurut" data-out="@END">
+  <div class="cd q">Kebocoran apa yang sering kita tutupi, bukan diperbaiki? <em>Tulis di komentar!</em></div>
+</div>
+<div id="rip" data-at="s4:paku" data-fx="fade">
+  <svg class="rg" viewBox="0 0 960 180" preserveAspectRatio="none"><defs><linearGradient id="tube" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7B860"/><stop offset=".35" stop-color="#B8560E"/><stop offset="1" stop-color="#3A1503"/></linearGradient></defs><rect x="60" y="146" width="890" height="14" rx="7" fill="url(#tube)"/><rect x="70" y="148" width="870" height="3" rx="2" fill="rgba(255,240,210,.55)"/></svg>
+  <div class="rings"><i class="ring" data-at="s4:paku" data-fx="ring"></i><i class="ring" data-at="s4:terbelah" data-fx="ring"></i><i class="ring" data-at="s5:Gelombangnya" data-fx="ring"></i><i class="ring" data-at="s5:menabrak" data-fx="ring"></i><i class="ring" data-at="s6:meninggal" data-fx="ring"></i><i class="ring" data-at="s7:Gugatan" data-fx="ring"></i></div>
+  <div class="rv"><svg viewBox="0 0 80 80"><defs><radialGradient id="rvg" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#F2F5F7"/><stop offset=".45" stop-color="#9AA3AA"/><stop offset="1" stop-color="#3A4046"/></radialGradient></defs><circle cx="40" cy="40" r="30" fill="url(#rvg)" stroke="#15181b" stroke-width="4"/><circle cx="31" cy="30" r="7" fill="rgba(255,255,255,.75)"/></svg><span>PEMICU</span></div>
+  <div class="rc" style="left:112px" data-at="s4:paku" data-fx="bead"><div class="rt"><b>PAKU KELING</b><span>lepas</span></div><i class="bd"></i><i class="pz" data-at="s8:Satu+0.00" data-fx="puls"></i></div><div class="rc" style="left:248px" data-at="s4:terbelah" data-fx="bead"><div class="rt"><b>TANGKI</b><span>terbelah</span></div><i class="bd"></i><i class="pz" data-at="s8:Satu+0.12" data-fx="puls"></i></div><div class="rc" style="left:384px" data-at="s5:Gelombangnya" data-fx="bead"><div class="rt"><b>OMBAK 8 M</b><span>56 km/jam</span></div><i class="bd"></i><i class="pz" data-at="s8:Satu+0.24" data-fx="puls"></i></div><div class="rc" style="left:520px" data-at="s5:menabrak" data-fx="bead"><div class="rt"><b>REL &amp; RUMAH</b><span>ditabrak</span></div><i class="bd"></i><i class="pz" data-at="s8:Satu+0.36" data-fx="puls"></i></div><div class="rc" style="left:656px" data-at="s6:meninggal" data-fx="bead"><div class="rt"><b>21 ORANG</b><span>meninggal</span></div><i class="bd"></i><i class="pz" data-at="s8:Satu+0.48" data-fx="puls"></i></div><div class="rc" style="left:792px" data-at="s7:Gugatan" data-fx="bead"><div class="rt"><b>119 WARGA</b><span>menggugat</span></div><i class="bd"></i><i class="pz" data-at="s8:Satu+0.60" data-fx="puls"></i></div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 45</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":4.976,"s2":5.136,"s2e":17.873,"s3":18.033,"s3e":29.138,"s4":29.298,"s4e":39.774,"s5":39.934,"s5e":49.136,"s6":49.296,"s6e":56.77,"s7":56.93,"s7e":73.167,"s8":73.327,"s8e":88.722,"end":88.722,"dur":91.72,"outro":88.972},AT={"s1:delapan":1.537,"s2:Boston":7.545,"s2:berdiri":10.221,"s2:setinggi":11.119,"s2:dua":14.322,"s2:berisi":13.703,"s2:ton":14.956,"s3:Tapi":23.63,"s3:bocor":26.181,"s3:dicat":28.518,"s4:udara":30.237,"s4:menghangat":30.531,"s4:Sehari":33.087,"s4:kapal":33.954,"s4:mengisi":34.31,"s4:tangki":35.548,"s4:Siang":36.121,"s4:paku":37.499,"s4:lepas":38.149,"s4:terbelah":39.356,"s5:Gelombangnya":42.43,"s5:lima":44.102,"s5:menabrak":46.118,"s5:layang":47.109,"s5:menggeser":47.681,"s6:mengental":51.769,"s6:lem":52.512,"s6:Dua":52.729,"s6:terluka":56.15,"s7:anarkis":58.483,"s7:sidang":61.521,"s7:lalai":63.889,"s7:benar":67.884,"s7:Gugatan":68.756,"s7:seratus":69.112,"s7:warga":69.839,"s8:hari":74.433,"s8:tercium":75.873,"s8:Satu":78.721,"s8:menutupi":80.765,"s8:Menurut":82.173,"s2:Lima":5.254,"s1:Bukan":3.278,"s1:sirup":4.419,"s2:Januari":5.857,"s2:lima":11.929,"s3:alkohol":20.541,"s3:minuman":21.975,"s5:berat":40.98,"s5:rel":46.629,"s6:mendingin":51.104,"s7:Tapi":60.143,"s7:pengadilan":62.063,"s7:menyatakan":62.651,"s7:perusahaanlah":63.193,"s7:tipis":65.516,"s7:diuji":67.28,"s7:pertama":71.759,"s8:bau":76.384,"s6:meninggal":53.627,"s8:Satu+0.00":78.721,"s8:Satu+0.12":78.841,"s8:Satu+0.24":78.961,"s8:Satu+0.36":79.081,"s8:Satu+0.48":79.201,"s8:Satu+0.60":79.321},DUR=91.72,OUT=88.972;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ card:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:'flex'},t);tl.fromTo(e,{opacity:0,y:34,filter:'blur(6px)'},{opacity:1,y:0,filter:'blur(0px)',duration:.42,ease:'power4.out',immediateRender:false},t);},
+ stampc:(e,t)=>{tl.fromTo(e,{scale:1.8,opacity:0},{scale:1,opacity:1,duration:.2,ease:'power4.in',immediateRender:false},t);},
+ bead:(e,t)=>{gsap.set(e,{opacity:0});const b=e.querySelector('.bd'),c=e.querySelector('.rt');tl.set(e,{opacity:1},t-.01);tl.fromTo(b,{y:-110,scaleY:1.5,scaleX:.6},{y:0,scaleY:1,scaleX:1,duration:.45,ease:'power2.in',immediateRender:false},t);tl.to(b,{scaleY:.7,scaleX:1.3,duration:.09,yoyo:true,repeat:1,ease:'power1.out'},t+.45);tl.fromTo(c,{opacity:0,y:-18},{opacity:1,y:0,duration:.36,ease:'power3.out',immediateRender:false},t+.12);},
+ ring:(e,t)=>{tl.fromTo(e,{opacity:.95,scale:.04},{opacity:0,scale:1,duration:1.3,ease:'power2.out',immediateRender:false},t+.4);},
+ puls:(e,t)=>{tl.fromTo(e,{opacity:1,scale:.92},{opacity:0,scale:1.25,duration:.6,ease:'power2.out',immediateRender:false},t);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{opacity:0,y:40,filter:'blur(8px)'},{opacity:1,y:0,filter:'blur(0px)',duration:.4,ease:'power4.out'},a-.02),POUT=(tl,p,b)=>tl.to(p,{opacity:0,y:-30,filter:'blur(6px)',duration:.22,ease:'power2.in'},b-.22);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{const f=q('#flash');const hits=[AT['s4:terbelah'],AT['s5:menabrak']];let k=0;for(const h of hits){const d=t-h;if(d>0&&d<0.7)k=Math.max(k,1-d/0.7);}f.style.opacity=k*0.8;const rp=q('#rip');if(rp)rp.style.visibility=(t>AT['s8:Menurut']-0.1)?'hidden':'visible';};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP45_BANJIR_MOLASE_BOSTON_1919")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

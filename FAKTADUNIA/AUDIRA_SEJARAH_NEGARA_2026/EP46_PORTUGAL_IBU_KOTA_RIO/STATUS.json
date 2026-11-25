@@ -1,0 +1,128 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP46_PORTUGAL_IBU_KOTA_RIO",
+  "topic": "Portugal memindahkan ibu kotanya ke Rio de Janeiro (1808-1821)",
+  "createdAt": "2026-11-09T19:22:24.556437+00:00",
+  "updatedAt": "2026-11-11T02:02:12.526Z",
+  "currentStage": "complete",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        "Memori seri + style memory dibaca 2026-11-10"
+      ]
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        "_research/FACTS_B10.md (Wikipedia API, 10 Nov 2026)"
+      ]
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-09T23:57:12.102300+00:00",
+      "notes": [
+        "Style MOSAICFORGE dipilih pengguna ('Ya, opsi 1 semua'); cover topik dibuat",
+        "cover-topic.png lolos skor cover 4,0 (2026-11-10); menunggu acc pengguna",
+        "Disetujui pengguna ('Ya, generate suara', 2026-11-10)"
+      ]
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-09T23:57:12.102300+00:00",
+      "notes": [
+        "Naskah di _research/style-gate/batch10-naskah.md, menunggu acc",
+        "Disetujui pengguna ('Ya, generate suara', 2026-11-10)"
+      ]
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": []
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        "VO Cartesia Galang dikunci 2026-11-10, timeline dibangun ulang"
+      ]
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": []
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-10T00:08:21.241622+00:00",
+      "notes": [
+        "Contact sheet draf pertama perlu poles",
+        "Draf lolos skor 4,0 setelah poles (2026-11-10); menunggu acc pengguna",
+        "Draf disetujui pengguna ('Ya, render final', 2026-11-10)"
+      ]
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        "FINAL_VIDEO.mp4 1080x1920@60, -14 LUFS, metadata kepemilikan dicek ffprobe"
+      ]
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        "SOCIAL_CAPTIONS.md lolos audira_validate_social_captions; NOTES.md ditulis"
+      ]
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T02:02:12.526Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-10T04:45:41.305Z",
+      "startedAt": "2026-11-10T04:45:41.305Z"
+    }
+  ],
+  "data": {
+    "style": "MOSAICFORGE",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-11T02:02:12.526Z"
+}

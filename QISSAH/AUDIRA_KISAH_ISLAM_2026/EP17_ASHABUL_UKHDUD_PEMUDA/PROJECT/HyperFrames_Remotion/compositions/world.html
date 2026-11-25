@@ -1,0 +1,215 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#120c08}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.06;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.42) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.55) 42%,rgba(0,0,0,0.55) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'EB Garamond',serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#F6E7C4;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#sig{position:absolute;z-index:19;opacity:0;font-family:Outfit,sans-serif;color:#fff;line-height:1.05;pointer-events:none;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+#sig b{display:block;font-weight:700;font-size:28px;letter-spacing:.14em}
+#sig i{display:block;font-style:normal;font-weight:500;font-size:17px;letter-spacing:.04em}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+
+#capfloor{background:linear-gradient(180deg,rgba(18,10,4,0),rgba(18,10,4,.55) 40%,rgba(18,10,4,.55) 72%,rgba(18,10,4,0))}
+.card{position:relative;display:inline-block;max-width:100%;box-sizing:border-box;padding:24px 34px 26px;border-radius:6px;
+ background:radial-gradient(130% 100% at 30% 15%,#FBF2DC 0%,#F3E7CB 50%,#E4D0A4 100%);border:4px solid #C9A044;
+ box-shadow:inset 0 0 0 5px #F3E7CB,inset 0 0 0 8px #1F3F8F,inset 0 0 0 10px #F3E7CB,inset 0 0 0 11px #A8301E,0 20px 40px rgba(0,0,0,.55),0 4px 0 #8a6a2a}
+.card:after{content:"";position:absolute;inset:0;background:url(assets/img/grain.png);opacity:.14;mix-blend-mode:multiply;pointer-events:none}
+.k{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-family:'EB Garamond',serif;font-weight:700;font-size:27px;letter-spacing:.12em;color:#A8301E;margin-bottom:6px}
+.k i{display:block;width:16px;height:16px;background:#1F3F8F;transform:rotate(45deg);box-shadow:0 0 0 3px #C9A044}
+.h{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:72px;line-height:.98;color:#2A1D14;letter-spacing:.01em}
+.h.s{font-size:52px;line-height:1.06}
+.sub{font-family:'EB Garamond',serif;font-weight:600;font-style:italic;font-size:38px;line-height:1.2;color:#4A3424}
+.qt{font-family:'Cormorant Garamond',serif;font-weight:700;font-style:italic;font-size:50px;line-height:1.12;color:#2A1D14;margin-top:4px}
+.qt .rf{vertical-align:middle;margin-left:6px;font-style:normal}
+.rf{display:inline-block;font-family:'EB Garamond',serif;font-weight:700;font-size:24px;letter-spacing:.05em;color:#FFE3A0;background:#1F3F8F;padding:4px 14px 5px;border-radius:3px;white-space:nowrap;box-shadow:0 0 0 2px #C9A044}
+.row{display:flex;align-items:center;gap:16px;margin-top:12px;flex-wrap:wrap}
+.tag{font-family:'EB Garamond',serif;font-weight:700;font-size:36px;color:#2A1D14;border-bottom:3px solid #A8301E;padding-bottom:2px}
+.big{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:50px;letter-spacing:.04em;color:#FFF3D6;background:#A8301E;padding:4px 20px 6px;border-radius:3px;box-shadow:0 0 0 3px #C9A044}
+.ar{font-family:Amiri,serif;direction:rtl;text-align:right;font-size:60px;line-height:1.6;color:#2A1D14}
+.ar.xl{font-size:76px;line-height:1.55;color:#1A2F6A}
+.ic{display:inline-flex;align-items:center;gap:24px}
+.ico{flex:none;width:120px;height:94px}
+.ls{display:flex;flex-direction:column;gap:6px}
+.ls span{font-family:'EB Garamond',serif;font-weight:600;font-size:42px;color:#2A1D14;padding-left:36px;position:relative}
+.ls span:before{content:"";position:absolute;left:4px;top:.5em;width:14px;height:14px;background:#C9A044;transform:rotate(45deg)}
+.ask{display:inline-block;margin-top:14px;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:44px;line-height:1.1;color:#FFF3D6;background:#1F3F8F;padding:10px 22px 12px;border-radius:4px;box-shadow:0 0 0 3px #C9A044}
+</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="94.34" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI &middot; TANPA MENGGAMBARKAN SOSOK NABI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="card">
+    <div class="k"><i></i>KISAH DALAM AL-QUR'AN &middot; 17</div>
+    <div class="h">PEMUDA DAN<br>PARIT BERAPI</div>
+    <div class="row" data-at="s1:beriman" data-fx="ink"><span class="sub">rakyatnya justru beriman</span><span class="rf">HR Muslim 3005</span></div>
+  </div>
+</div>
+<div class="p" data-in="s2" data-out="s2:Kisah">
+  <div class="card">
+    <div class="k"><i></i>SURAH AL-BURUJ <span class="rf" data-at="s2:Al-Buruj" data-fx="ink">QS 85:4-5</span></div>
+    <div class="ar">قُتِلَ أَصْحَـٰبُ ٱلْأُخْدُودِ</div>
+    <div class="ar" data-at="s2:parit" data-fx="inkr">ٱلنَّارِ ذَاتِ ٱلْوَقُودِ</div>
+    <div class="sub" data-at="s2:berapi" data-fx="ink">para pembuat parit berapi</div>
+    <div class="row" data-at="s2:hanya" data-fx="ink"><span class="tag">hanya karena beriman kepada Allah</span><span class="rf">QS 85:8</span></div>
+  </div>
+</div>
+<div class="p" data-in="s2:Kisah" data-out="s3">
+  <div class="card ic">
+    <svg class="ico" viewBox="0 0 90 70"><path d="M45 14C33 6 16 6 6 10v52c10-4 27-4 39 4z" fill="#F3E7CB" stroke="#2A1D14" stroke-width="2.5"/><path d="M45 14c12-8 29-8 39-4v52c-10-4-27-4-39 4z" fill="#E8D7AE" stroke="#2A1D14" stroke-width="2.5"/><path d="M45 14v52" stroke="#C9A044" stroke-width="3"/><path d="M14 22h22M14 30h22M14 38h18M54 22h22M54 30h22M54 38h18" stroke="#2A1D14" stroke-opacity=".45" stroke-width="2"/><circle cx="25" cy="50" r="5" fill="#C9A044"/><circle cx="65" cy="50" r="5" fill="#A8301E"/></svg>
+    <div>
+      <div class="k"><i></i>KISAH LENGKAPNYA</div>
+      <div class="h s">Hadis riwayat Muslim</div>
+      <div class="row" data-at="s2:Muslim" data-fx="ink"><span class="sub">dari Shuhaib</span><span class="rf">HR Muslim 3005</span></div>
+    </div>
+  </div>
+</div>
+<div class="p" data-in="s3" data-out="s3:Di">
+  <div class="card">
+    <div class="k"><i></i>DI ISTANA SEORANG RAJA</div>
+    <div class="ls">
+      <span>penyihir istana yang sudah tua</span>
+      <span data-at="s3:pemuda" data-fx="ink">seorang pemuda diajari sihir</span>
+    </div>
+  </div>
+</div>
+<div class="p" data-in="s3:Di" data-out="s4">
+  <div class="card">
+    <div class="k"><i></i>DI PERJALANAN</div>
+    <div class="h s">bertemu seorang rahib</div>
+    <div class="row" data-at="s3:iman" data-fx="ink"><span class="tag">mulai belajar iman</span><span class="rf">HR Muslim 3005</span></div>
+  </div>
+</div>
+<div class="p" data-in="s4" data-out="s4:Ia">
+  <div class="card">
+    <div class="k"><i></i>SUATU HARI</div>
+    <div class="h s">Binatang besar menghalangi jalan</div>
+    <div class="sub" data-at="s4:melempar" data-fx="ink">melempar batu sambil berdoa</div>
+    <div class="row" data-at="s4:terbuka" data-fx="ink"><span class="tag">jalan kembali terbuka</span></div>
+  </div>
+</div>
+<div class="p" data-in="s4:Ia" data-out="s5">
+  <div class="card">
+    <div class="k"><i></i>IA MULAI MENYEMBUHKAN</div>
+    <div class="h s">orang buta dan orang sakit</div>
+    <div class="qt" data-at="s4:bukan" data-fx="ink">&ldquo;Bukan aku yang menyembuhkan, Allah yang menyembuhkan.&rdquo; <span class="rf">HR Muslim 3005</span></div>
+  </div>
+</div>
+<div class="p" data-in="s5" data-out="s5:Lalu">
+  <div class="card">
+    <div class="k"><i></i>RAJA MURKA</div>
+    <div class="h s">mencoba menyingkirkan pemuda itu</div>
+    <div class="ls">
+      <span data-at="s5:gunung" data-fx="ink">dari puncak gunung</span>
+      <span data-at="s5:laut" data-fx="ink">di tengah laut</span>
+    </div>
+    <div class="row" data-at="s5:gagal" data-fx="ink"><b class="big">DUA KALI GAGAL</b></div>
+  </div>
+</div>
+<div class="p" data-in="s5:Lalu" data-out="s6">
+  <div class="card">
+    <div class="k"><i></i>PEMUDA ITU BERKATA</div>
+    <div class="qt">&ldquo;Kamu tidak akan bisa membunuhku, kecuali dengan satu cara.&rdquo;</div>
+  </div>
+</div>
+<div class="p" data-in="s6" data-out="s6:Raja">
+  <div class="card">
+    <div class="k"><i></i>SATU CARA</div>
+    <div class="sub">kumpulkan orang di satu lapangan</div>
+    <div class="qt" data-at="s6:dengan" data-fx="ink">&ldquo;Dengan nama Allah, Tuhan pemuda ini.&rdquo;</div>
+  </div>
+</div>
+<div class="p" data-in="s6:Raja" data-out="s7">
+  <div class="card">
+    <div class="k"><i></i>DENGAN NAMA ALLAH</div>
+    <div class="h s">Raja melakukannya</div>
+    <div class="sub" data-at="s6:wafat" data-fx="ink">dan pemuda itu wafat</div>
+    <div class="qt" data-at="s6:Orang-orang" data-fx="ink">&ldquo;Kami beriman kepada Tuhan pemuda ini.&rdquo; <span class="rf">HR Muslim 3005</span></div>
+  </div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Al-Qur'an">
+  <div class="card">
+    <div class="k"><i></i>PARIT-PARIT BERAPI <span class="rf">QS 85:4-7</span></div>
+    <div class="h s">Raja menggali parit berapi</div>
+    <div class="sub" data-at="s7:memaksa" data-fx="ink">untuk memaksa mereka kembali</div>
+    <div class="row" data-at="s7:teguh" data-fx="ink"><b class="big">MEREKA TETAP TEGUH</b></div>
+  </div>
+</div>
+<div class="p" data-in="s7:Al-Qur'an" data-out="s8">
+  <div class="card">
+    <div class="k"><i></i>AL-QUR'AN MENUTUPNYA <span class="rf">QS 85:9</span></div>
+    <div class="ar xl">وَٱللَّهُ عَلَىٰ كُلِّ شَىْءٍ شَهِيدٌ</div>
+    <div class="sub" data-at="s7:Menyaksikan" data-fx="ink">Allah Maha Menyaksikan segala sesuatu.</div>
+  </div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="card">
+    <div class="k"><i></i>PELAJARAN</div>
+    <div class="h s">Kemenangan tidak selalu berarti selamat di dunia.</div>
+    <div class="sub" data-at="s8:keyakinan" data-fx="ink">keyakinan yang menular ke ribuan orang</div>
+    <div class="ask" data-at="s8:Menurut" data-fx="ink">Apa yang membuat pemuda itu begitu teguh?</div>
+  </div>
+</div>
+<div id="sig"><b>AUDIRA</b><i>audira.my.id</i></div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">KISAH DALAM AL-QUR&#39;AN &middot; EP 17</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":7.499,"s2":7.659,"s2e":17.312,"s3":17.472,"s3e":30.153,"s4":30.313,"s4e":45.013,"s5":45.173,"s5e":57.963,"s6":58.123,"s6e":72.119,"s7":72.279,"s7e":80.755,"s8":80.915,"s8e":91.344,"end":91.344,"dur":94.34,"outro":91.594},AT={"s1:pemuda":2.801,"s1:beriman":5.703,"s2:parit":10.029,"s2:menyiksa":11.755,"s2:beriman":12.421,"s2:Kisah":15.3,"s2:Al-Buruj":8.528,"s3:pemuda":22.601,"s3:diajari":23.468,"s3:Di":24.565,"s3:rahib":27.506,"s3:iman":29.503,"s4:binatang":31.823,"s4:melempar":34.923,"s4:batu":35.527,"s4:berdoa":36.069,"s4:terbuka":37.929,"s4:Ia":38.695,"s4:menyembuhkan":39.206,"s4:Allah":44.069,"s5:murka":45.525,"s5:gunung":48.915,"s5:laut":50.246,"s5:gagal":51.377,"s5:Lalu":52.053,"s5:satu":57.451,"s6:Kumpulkan":58.329,"s6:lapangan":59.49,"s6:panah":60.636,"s6:dengan":62.588,"s6:Raja":65.4,"s6:wafat":67.891,"s6:Orang-orang":68.572,"s6:beriman":70.602,"s7:menggali":73.266,"s7:parit-parit":73.622,"s7:memaksa":74.984,"s7:teguh":76.884,"s7:Al-Qur'an":77.564,"s8:keyakinan":84.318,"s8:ribuan":85.371,"s8:Menurut":86.175,"s8:Kisah":88.945,"s8:AUDIRA":90.957,"s2:berapi":10.323,"s2:hanya":13.086,"s2:Muslim":16.925,"s4:bukan":42.396,"s7:Menyaksikan":79.408},DUR=94.34,OUT=91.594;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ ink:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:''},t-.001);tl.fromTo(e,{opacity:1,clipPath:'inset(-20% 100% -20% 0)'},{clipPath:'inset(-20% 0% -20% 0)',duration:.55,ease:'power1.inOut'},t);},
+ inkr:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:''},t-.001);tl.fromTo(e,{opacity:1,clipPath:'inset(-20% 0 -20% 100%)'},{clipPath:'inset(-20% 0 -20% 0%)',duration:.8,ease:'power1.inOut'},t);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.set(p,{opacity:1,rotationY:-100,transformOrigin:'100% 50%',transformPerspective:1500,filter:'brightness(.55)'},a-.36);tl.to(p,{rotationY:0,filter:'brightness(1)',duration:.52,ease:'power2.out'},a-.35);},POUT=(tl,p,b)=>{tl.set(p,{transformOrigin:'0% 50%'},b-.4);tl.to(p,{rotationY:100,filter:'brightness(.5)',duration:.36,ease:'power2.in'},b-.4);tl.set(p,{opacity:0},b-.03);};
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+// AUDIRA moving signature (port of AudiraSignature.tsx): 32% opacity, 4 safe-zone anchors, jumps every 18 s in a seeded order, hidden at the outro.
+(function(){const A=[[1015,221,'r'],[65,1190,'l'],[1015,864,'r'],[65,221,'l']];let h=2166136261;const sd="EP17_ASHABUL_UKHDUD_PEMUDA";for(let i=0;i<sd.length;i++)h=Math.imul(h^sd.charCodeAt(i),16777619)>>>0;const ord=[0,1,2,3];for(let i=3;i>0;i--){h=Math.imul(h^(h>>>15),2246822507)>>>0;const j=h%(i+1);[ord[i],ord[j]]=[ord[j],ord[i]];}
+const s=q('#sig');const C=18,OP=.32;for(let c=0;c*C<OUT;c++){const [x,y,al]=A[ord[c%4]];const t0=c*C,t1=Math.min((c+1)*C,OUT-.2);tl.set(s,{left:al==='l'?x:'auto',right:al==='r'?1080-x:'auto',top:y,textAlign:al==='l'?'left':'right'},t0);tl.fromTo(s,{opacity:0},{opacity:OP,duration:.5,ease:'none'},t0);tl.to(s,{opacity:0,duration:.4,ease:'none'},Math.max(t0+.6,t1-.4));}})();
+gsap.set('#outro',{opacity:0,rotationY:-90,transformOrigin:'100% 50%',transformPerspective:1800});tl.set('#outro',{opacity:1},OUT-.2);tl.to('#outro',{rotationY:0,duration:.6,ease:'power2.out'},OUT-.2);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

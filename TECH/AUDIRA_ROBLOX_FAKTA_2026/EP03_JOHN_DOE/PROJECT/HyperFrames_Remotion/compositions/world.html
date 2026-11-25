@@ -1,0 +1,142 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#0B0B0D}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.07;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.62) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.42) 42%,rgba(0,0,0,0.42) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Special Elite,monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#D9C49A;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+
+.p{right:96px}
+.tab{display:inline-block;font-family:Oswald,sans-serif;font-weight:600;font-size:26px;letter-spacing:.14em;color:#1A1A1A;background:#D9C49A;padding:8px 22px 6px;border-radius:10px 10px 0 0;margin-left:22px}
+.tab.cy{background:#6FE3FF}
+.sheet{background:#D9C49A;color:#1A1A1A;padding:22px 30px 24px;border-radius:4px 10px 10px 10px;box-shadow:0 18px 40px rgba(0,0,0,.6),0 2px 0 rgba(0,0,0,.4);background-image:linear-gradient(180deg,rgba(255,255,255,.08),rgba(0,0,0,.06))}
+.sheet.db{background:#0f1a1f;color:#6FE3FF;border:2px solid rgba(111,227,255,.55)}
+.hl{font-family:Oswald,sans-serif;font-weight:700;font-size:104px;line-height:1.02;letter-spacing:.01em;margin:0 0 6px}
+.hl.md{font-size:80px}
+.hl.sm{font-size:58px;line-height:1.1}
+.hl .dim{font-weight:500;font-size:60px;opacity:.6}
+.red{color:#C1272D}.redt{color:#C1272D}
+.db .redt{color:#ff6b6b}
+.tw{font-family:"Special Elite",monospace;font-size:38px;line-height:1.25;margin:4px 0 6px}
+.mono{font-family:"Special Elite",monospace;font-size:34px;line-height:1.25;margin:2px 0 8px}
+.mono.big{font-size:52px;color:#fff}
+.db .hl{color:#fff}
+.row{display:block;margin-top:8px}
+.chip{display:inline-block;font-family:Oswald,sans-serif;font-weight:600;font-size:40px;color:#fff;background:#1A1A1A;padding:6px 16px 8px;border-radius:6px;margin:6px 10px 4px 0}
+.stamp{display:inline-block;font-family:Oswald,sans-serif;font-weight:700;font-size:52px;letter-spacing:.08em;color:#C1272D;border:6px solid #C1272D;padding:2px 18px;border-radius:8px;margin-top:10px}
+.stamp.big{font-size:118px;padding:0 30px;border-width:9px;letter-spacing:.1em}
+.glitch{font-family:Oswald,sans-serif;font-weight:700;font-size:46px;color:#fff;background:#1A1A1A;padding:6px 14px;display:inline-block;margin:6px 0 8px;text-shadow:3px 0 0 #C1272D,-3px 0 0 #6FE3FF}
+.nb{font-variant-numeric:tabular-nums}
+#chip{color:#D9C49A;font-family:"Special Elite",monospace;font-weight:400;font-size:22px;top:182px;opacity:.75}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="80.98" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN CUPLIKAN ROBLOX</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tab">BERKAS KASUS &middot; EP 03</div>
+  <div class="sheet"><div class="hl red flick">18 MARET</div>
+  <div class="tw" data-at="s1:Siapa" data-fx="type">Siapa sebenarnya John Doe?</div></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="tab">ARSIP AKUN</div>
+  <div class="sheet"><div class="hl sm">Setiap akun punya nomor ID</div>
+  <div class="row"><b class="chip" data-at="s2:satu" data-fx="drop">#1 Roblox</b><b class="chip" data-at="s2:dua" data-fx="drop">#2 John Doe</b><b class="chip" data-at="s2:tiga" data-fx="drop">#3 Jane Doe</b></div></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tab">KAMUS</div>
+  <div class="sheet"><div class="hl sm" data-at="s3:samaran" data-fx="type">John Doe = nama samaran</div>
+  <div class="tw" data-at="s3:Fulan" data-fx="type">mirip &ldquo;si Fulan&rdquo;</div>
+  <div class="stamp" data-at="s3:contoh" data-fx="stamp">NAMA CONTOH</div></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="tab cy">API PUBLIK ROBLOX</div>
+  <div class="sheet db"><div class="mono" data-at="s4:Ketiga" data-fx="type">#1 #2 #3: detik yang sama</div>
+  <div class="hl md nb" data-at="s4:Februari" data-fx="drop">27.02.2006</div>
+  <div class="mono big nb" data-at="s4:UTC" data-fx="type">21:06:40 UTC</div>
+  <div class="tw redt" data-at="s4:Tidak" data-fx="type">#4 dan #5: tidak ada</div></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="tab">PEMBANDING</div>
+  <div class="sheet"><div class="hl sm" data-at="s5:builderman" data-fx="type">builderman</div>
+  <div class="tw" data-at="s5:David" data-fx="type">pendiri Roblox, David Baszucki</div>
+  <div class="hl nb"><span class="dim">ID #</span><b class="ct" data-from="3" data-to="156" data-a="s5:seratus" data-d="2.2">3</b></div>
+  <div class="tw" data-at="s5:delapan" data-fx="type">dibuat 08.03.2006</div></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="tab">ASAL RUMOR</div>
+  <div class="sheet"><div class="hl nb" data-at="s6:2017" data-fx="drop">&plusmn; 2017</div>
+  <div class="tw" data-at="s6:YouTuber" data-fx="type">disebar beberapa YouTuber</div>
+  <div class="glitch" data-at="s6:rumor" data-fx="drop">&ldquo;JOHN DOE HACK 18 MARET&rdquo;</div>
+  <div class="tw" data-at="s6:TikTok" data-fx="type">diulang tiap tahun, sampai TikTok</div></div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tab">KESIMPULAN</div>
+  <div class="sheet"><div class="stamp big" data-at="s7:bukti" data-fx="stamp">HOAKS</div>
+  <div class="tw" data-at="s7:diblokir" data-fx="type">Status akun: tidak diblokir</div>
+  <div class="hl sm redt" data-at="s7:penipuan" data-fx="drop">Minta password = PENIPUAN</div></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="tab">KASUS DITUTUP</div>
+  <div class="sheet"><div class="hl sm" data-at="s8:Jadi" data-fx="type">John Doe = akun #2</div>
+  <div class="tw" data-at="s8:hacker" data-fx="type">Bukan hacker.</div>
+  <div class="hl sm redt" data-at="s8:Kamu" data-fx="drop">Kamu pernah termakan rumor ini?</div></div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA ROBLOX &middot; EP 03</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":6.007,"s2":6.167,"s2e":13.224,"s3":13.384,"s3e":23.76,"s4":23.92,"s4e":36.071,"s5":36.231,"s5e":46.172,"s6":46.332,"s6e":60.846,"s7":61.006,"s7e":71.108,"s8":71.268,"s8e":77.977,"end":77.977,"dur":80.98,"outro":78.227},AT={"s1:John":2.684,"s2:Doe":11.553,"s2:Jane":12.683,"s3:John":14.212,"s3:Jane":15.125,"s4:API":25.234,"s4:dibuat":28.357,"s4:detik":28.806,"s4:sama":29.255,"s4:empat":34.787,"s4:lima":35.236,"s7:Kalau":65.923,"s7:password":68.895,"s8:Dia":73.364,"s1:Siapa":5.171,"s2:satu":8.813,"s2:dua":10.763,"s2:tiga":12.296,"s3:samaran":16.379,"s3:Fulan":19.8,"s3:contoh":21.979,"s4:Ketiga":26.979,"s4:Februari":30.563,"s4:UTC":33.675,"s4:Tidak":35.561,"s5:builderman":38.135,"s5:David":40.661,"s5:seratus":42.612,"s5:delapan":44.732,"s6:2017":49.801,"s6:YouTuber":51.72,"s6:rumor":52.525,"s6:TikTok":60.396,"s7:bukti":62.021,"s7:diblokir":65.108,"s7:penipuan":70.164,"s8:Jadi":71.32,"s8:hacker":72.373,"s8:Kamu":76.475},DUR=80.98,OUT=78.227;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ type:(e,t)=>{tl.set(e,{opacity:1},t);tl.fromTo(e,{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)',duration:Math.min(.9,.04*e.textContent.length),ease:'steps('+Math.max(4,e.textContent.length)+')'},t);},
+ drop:(e,t)=>tl.fromTo(e,{y:-36,rotation:-3,opacity:0},{y:0,rotation:0,opacity:1,duration:.3,ease:'back.out(1.6)'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{y:-120,rotation:-5,opacity:0},{y:0,rotation:-.7,opacity:1,duration:.46,ease:'back.out(1.25)'},a-.06),POUT=(tl,p,b)=>tl.to(p,{y:170,rotation:1.8,opacity:0,duration:.24,ease:'power2.in'},b-.24);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{clipPath:'inset(0 0 100% 0)'});tl.to('#outro',{clipPath:'inset(0 0 0% 0)',duration:.5,ease:'power3.inOut'},OUT-.3);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(()=>{const f=document.querySelector('.flick');return (t)=>{if(!f)return;const k=Math.floor(t*14);const h=((k*2654435761)>>>0)%100;f.style.opacity=t<1.2?Math.min(1,t/0.3):(h<12?.25:1);f.style.transform=h<6?'translateX(6px)':'none';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

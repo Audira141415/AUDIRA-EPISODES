@@ -1,0 +1,224 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#EFE7DA}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.07;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.22) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0) 42%,rgba(0,0,0,0) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Nunito,'Segoe UI',sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#3C3733;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.pre{position:absolute;left:-2000px;top:0;opacity:0}
+.p{transform-origin:0% 0%}
+.pg{position:absolute;inset:0;z-index:14;pointer-events:none;overflow:hidden;background:linear-gradient(174deg,#FFFCF6,#FAF6EF 55%,#F1E9DB);backface-visibility:hidden;box-shadow:0 0 80px rgba(60,40,20,.5)}
+.pg .sp{position:absolute;left:0;top:0;bottom:0;width:180px;background:linear-gradient(90deg,rgba(90,64,40,.32),rgba(90,64,40,0))}
+.pg .bl{position:absolute;left:50%;top:44%;width:980px;height:980px;margin:-490px 0 0 -490px;border-radius:47% 53% 44% 56%/52% 45% 55% 48%;background:radial-gradient(circle at 46% 50%,rgba(184,100,62,0) 0 22%,rgba(184,100,62,.42) 48%,rgba(232,171,72,.22) 62%,rgba(232,171,72,0) 72%)}
+.pg .b2{width:700px;height:700px;margin:-350px 0 0 -350px;top:58%;left:38%;background:radial-gradient(circle,rgba(111,151,121,0) 0 30%,rgba(111,151,121,.42) 52%,rgba(111,151,121,0) 70%)}
+.kk{display:inline-block;font-family:Nunito,'Segoe UI',sans-serif;font-weight:800;font-size:25px;letter-spacing:.12em;color:#FAF6EF;background:#B8643E;padding:8px 18px 7px;margin-bottom:14px;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);clip-path:polygon(0 3%,4% 0,30% 2%,62% 0,96% 2%,100% 0,99% 50%,100% 97%,70% 100%,38% 98%,6% 100%,0 96%,1% 50%)}
+.h1{display:inline-block;background:linear-gradient(174deg,#FFFCF6,#FAF6EF 55%,#F1E9DB);padding:8px 32px 18px;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);font-family:Fraunces,Georgia,serif;font-weight:700;font-size:96px;line-height:1.0;color:#3C3733;clip-path:polygon(0 3%,4% 0,30% 2%,62% 0,96% 2%,100% 0,99% 50%,100% 97%,70% 100%,38% 98%,6% 100%,0 96%,1% 50%)}
+.h1 em{font-style:italic;color:#B8605A}
+.h2{display:inline-block;background:linear-gradient(174deg,#FFFCF6,#FAF6EF 55%,#F1E9DB);padding:6px 28px 14px;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);font-family:Fraunces,Georgia,serif;font-weight:700;font-size:70px;line-height:1.04;color:#3C3733;clip-path:polygon(0 3%,4% 0,30% 2%,62% 0,96% 2%,100% 0,99% 50%,100% 97%,70% 100%,38% 98%,6% 100%,0 96%,1% 50%)}
+.h2 em{font-style:italic;color:#B8605A;font-size:58px}
+.chips{display:flex;flex-direction:column;align-items:flex-start;gap:12px;margin-top:16px}
+.ch{font-style:normal;font-family:Nunito,'Segoe UI',sans-serif;font-weight:800;font-size:40px;padding:8px 22px 10px;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);display:inline-block}
+.ch.st{color:#FAF6EF;background:#B8605A;transform:rotate(-2deg);font-weight:900;font-size:48px;letter-spacing:.03em}
+.ch.sf{color:#3C3733;background:linear-gradient(174deg,#FFFCF6,#FAF6EF 55%,#F1E9DB);font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:700;font-size:40px;clip-path:polygon(0 3%,4% 0,30% 2%,62% 0,96% 2%,100% 0,99% 50%,100% 97%,70% 100%,38% 98%,6% 100%,0 96%,1% 50%)}
+.ch.ss{margin-top:16px}
+.row{display:flex;flex-direction:column;margin-top:14px;padding:12px 26px 14px;background:linear-gradient(174deg,#FFFCF6,#FAF6EF 55%,#F1E9DB);border-left:10px solid #4E7B9C;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);width:max-content;max-width:900px;box-sizing:border-box;clip-path:polygon(0 3%,4% 0,30% 2%,62% 0,96% 2%,100% 0,99% 50%,100% 97%,70% 100%,38% 98%,6% 100%,0 96%,1% 50%)}
+.row b{font-family:Nunito,'Segoe UI',sans-serif;font-weight:900;font-size:50px;line-height:1.05;color:#4E7B9C;letter-spacing:.01em}
+.row span{font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:600;font-size:34px;line-height:1.2;color:#3C3733;margin-top:4px}
+.row.big b{font-size:62px}.row.rs{border-left-color:#B8605A}.row.rs b{color:#B8605A}.row.ok{border-left-color:#6F9779}.row.ok b{color:#3F6449}
+.ct{font-variant-numeric:lining-nums tabular-nums}
+.row b .ct,.tally b .ct,.dur b .ct{display:inline;font:inherit;color:inherit;margin:0;letter-spacing:inherit}
+.date{display:block;margin-top:4px;padding:10px 26px 14px;background:#4E7B9C;color:#FAF6EF;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);width:max-content;clip-path:polygon(0 3%,4% 0,30% 2%,62% 0,96% 2%,100% 0,99% 50%,100% 97%,70% 100%,38% 98%,6% 100%,0 96%,1% 50%)}
+.date b{display:block;font-family:Fraunces,Georgia,serif;font-weight:700;font-size:58px;line-height:1.05}
+.date span{display:block;font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:600;font-size:30px;color:#E6EEF4}
+.tally{display:flex;align-items:baseline;flex-wrap:wrap;gap:14px;background:linear-gradient(174deg,#FFFCF6,#FAF6EF 55%,#F1E9DB);padding:10px 28px 14px;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);width:max-content;clip-path:polygon(0 3%,4% 0,30% 2%,62% 0,96% 2%,100% 0,99% 50%,100% 97%,70% 100%,38% 98%,6% 100%,0 96%,1% 50%)}
+.tally b{font-family:Nunito,'Segoe UI',sans-serif;font-weight:900;font-size:120px;line-height:1;color:#B8605A}.tally b.of{color:#4E7B9C;font-size:92px}
+.tally em{font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:600;font-size:46px;color:#3C3733}
+.tally span{flex-basis:100%;font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:600;font-size:34px;color:#3C3733;margin-top:-4px}
+.dots{display:flex;flex-wrap:wrap;gap:6px;width:810px;margin-top:14px;padding:16px 20px;background:rgba(250,246,239,.92);box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);clip-path:polygon(0 3%,4% 0,30% 2%,62% 0,96% 2%,100% 0,99% 50%,100% 97%,70% 100%,38% 98%,6% 100%,0 96%,1% 50%)}
+.dt{display:block;width:21px;height:21px;border-radius:50%;border:2px solid rgba(78,123,156,.55);box-sizing:border-box}
+.dt.on{background:radial-gradient(circle at 40% 35%,#E7A39C,#B8605A);border-color:#B8605A}
+.sys{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.sy{display:flex;align-items:center;gap:14px;font-style:normal;font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:700;font-size:48px;color:#3C3733;background:linear-gradient(174deg,#FFFCF6,#FAF6EF 55%,#F1E9DB);padding:8px 26px 10px 14px;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);clip-path:polygon(0 3%,4% 0,30% 2%,62% 0,96% 2%,100% 0,99% 50%,100% 97%,70% 100%,38% 98%,6% 100%,0 96%,1% 50%)}
+.sy svg{width:56px;height:56px}
+.dur{background:linear-gradient(174deg,#FFFCF6,#FAF6EF 55%,#F1E9DB);padding:14px 26px 20px;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);width:820px;box-sizing:border-box;clip-path:polygon(0 3%,4% 0,30% 2%,62% 0,96% 2%,100% 0,99% 50%,100% 97%,70% 100%,38% 98%,6% 100%,0 96%,1% 50%)}
+.dur .ends{display:flex;justify-content:space-between}.dur b{font-family:Nunito,'Segoe UI',sans-serif;font-weight:800;font-size:38px;color:#4E7B9C}.dur b.r{color:#B8605A}
+.dur .bar{position:relative;height:22px;margin-top:12px;border-radius:11px;background:rgba(60,55,51,.1);overflow:hidden}
+.dur .bar i{position:absolute;inset:0;transform-origin:0 50%;background:linear-gradient(90deg,#9DB5C4,#D7837C 60%,#B8605A)}
+.st2{display:inline-block;font-family:Nunito,'Segoe UI',sans-serif;font-weight:900;font-size:58px;letter-spacing:.06em;padding:8px 24px;color:#B8605A;border:6px double #B8605A;background:rgba(250,246,239,.95);transform:rotate(-3deg);box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18)}
+.mm{display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.no{font-style:normal;font-family:Nunito,'Segoe UI',sans-serif;font-weight:800;font-size:40px;color:#3C3733;background:linear-gradient(174deg,#FFFCF6,#FAF6EF 55%,#F1E9DB);padding:6px 22px 8px;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);clip-path:polygon(0 3%,4% 0,30% 2%,62% 0,96% 2%,100% 0,99% 50%,100% 97%,70% 100%,38% 98%,6% 100%,0 96%,1% 50%)}
+.no s{color:#B8605A;text-decoration:none;font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:700}
+.dx{margin-top:14px;padding:14px 26px 18px;background:#4E7B9C;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);width:max-content;max-width:900px;clip-path:polygon(0 3%,4% 0,30% 2%,62% 0,96% 2%,100% 0,99% 50%,100% 97%,70% 100%,38% 98%,6% 100%,0 96%,1% 50%)}
+.dx b{display:block;font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:700;font-size:56px;line-height:1.05;color:#FAF6EF}
+.dx .fl{display:flex;align-items:center;gap:14px;margin-top:12px}
+.dx .fl span{font-family:Nunito,'Segoe UI',sans-serif;font-weight:800;font-size:34px;padding:6px 16px;border-radius:8px}
+.dx .c1{background:#FAF6EF;color:#B8605A}.dx .c2{background:#E8AB48;color:#3C3733}.dx .fl i{font-style:normal;font-family:Nunito,'Segoe UI',sans-serif;font-weight:900;font-size:40px;color:#FAF6EF}
+.nt{margin-top:12px;font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:600;font-size:32px;color:#3C3733;background:rgba(250,246,239,.94);padding:8px 20px;width:max-content;max-width:880px;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18)}
+.vs{display:flex;align-items:center;gap:14px;margin-top:16px}
+.vs span{font-family:Nunito,'Segoe UI',sans-serif;font-weight:900;font-size:40px;padding:12px 22px;color:#FAF6EF;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);clip-path:polygon(0 3%,4% 0,30% 2%,62% 0,96% 2%,100% 0,99% 50%,100% 97%,70% 100%,38% 98%,6% 100%,0 96%,1% 50%)}
+.vs .a{background:#4E7B9C}.vs .b{background:#B8605A}.vs i{font-style:normal;font-family:Nunito,'Segoe UI',sans-serif;font-weight:900;font-size:54px;color:#3C3733}
+.q{margin-top:16px;font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:700;font-size:56px;line-height:1.08;padding:16px 26px 20px;color:#FAF6EF;background:#B8605A;border-bottom:8px solid #E8AB48;max-width:900px;box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18)}
+.q em{display:block;margin-top:10px;font-size:42px;color:#FFE9C8}
+#dev{position:absolute;left:30px;top:1100px;width:960px;height:180px;z-index:10}
+#dev .br{position:absolute;left:0;top:118px;width:960px;height:40px}
+#dev .seg{position:absolute;top:132px;height:10px;border-radius:6px;background:linear-gradient(90deg,#D7837C,#B8605A);transform-origin:0 50%;opacity:.85}
+.dn{position:absolute;top:0;width:160px;height:180px}
+.dn .dl{position:absolute;left:4px;top:0;width:152px;box-sizing:border-box;padding:8px 6px 9px;text-align:center;background:linear-gradient(174deg,#FFFCF6,#FAF6EF 55%,#F1E9DB);box-shadow:0 14px 30px rgba(70,52,34,.28),0 2px 4px rgba(70,52,34,.18);clip-path:polygon(0 3%,4% 0,30% 2%,62% 0,96% 2%,100% 0,99% 50%,100% 97%,70% 100%,38% 98%,6% 100%,0 96%,1% 50%)}
+.dn .dl b{display:block;font-family:Nunito,'Segoe UI',sans-serif;font-weight:900;font-size:22px;line-height:1.05;color:#3C3733;letter-spacing:.02em}
+.dn .dl span{display:block;font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:600;font-size:20px;line-height:1.1;color:#B8605A;margin-top:3px}
+.dn .db{position:absolute;left:58px;top:110px;width:44px;height:44px;border-radius:47% 53% 41% 59%/55% 44% 56% 45%;background:radial-gradient(circle at 40% 36%,#F2B9AF 0 18%,#D7837C 45%,#B8605A 100%);box-shadow:0 0 0 3px rgba(250,246,239,.9),0 6px 12px rgba(70,52,34,.35)}
+.dn .dr{position:absolute;left:30px;top:82px;width:100px;height:100px;border-radius:50%;border:4px solid #D7837C;opacity:0;box-sizing:border-box}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="89.59" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI CAT AIR &middot; BUKAN FOTO SEJARAH</div>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600;1,9..144,700&family=Nunito:wght@600;700;800;900&display=block">
+<div class="pre"><span style="font-family:Fraunces;font-weight:700">Wabah 1962</span><span style="font-family:Fraunces;font-style:italic;font-weight:700">tawa</span><span style="font-family:Nunito;font-weight:800">AUDIRA 159</span><span style="font-family:Nunito;font-weight:700">a</span><span style="font-family:Nunito;font-weight:900">a</span></div>
+<div class="pg" data-at="s2:Tanganyika-0.42" data-fx="turn"><i class="sp"></i><i class="bl"></i><i class="bl b2"></i></div><div class="pg" data-at="s2:ada-0.42" data-fx="turn"><i class="sp"></i><i class="bl"></i><i class="bl b2"></i></div><div class="pg" data-at="s5:Ketika-0.42" data-fx="turn"><i class="sp"></i><i class="bl"></i><i class="bl b2"></i></div><div class="pg" data-at="s6:Total-0.42" data-fx="turn"><i class="sp"></i><i class="bl"></i><i class="bl b2"></i></div><div class="pg" data-at="s7:Tidak-0.42" data-fx="turn"><i class="sp"></i><i class="bl"></i><i class="bl b2"></i></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="kk">FAKTA SEJARAH NEGARA &middot; EP 53</div>
+  <div class="h1">Wabah <em>tawa</em><br>Tanganyika 1962</div>
+  <div class="chips"><i class="ch st" data-at="s1:empat" data-fx="stampc">14 SEKOLAH TUTUP</i><i class="ch sf" data-at="s1:tertawa" data-fx="chip">gejala: tawa yang tak bisa berhenti</i></div>
+</div>
+<div class="p" data-in="s2" data-out="s2:ada">
+  <div class="kk">01 &middot; DI MANA?</div>
+  <div class="row big" data-at="s2:Tanganyika" data-fx="ink"><b>TANGANYIKA</b><span>kini bagian dari Tanzania</span></div>
+  <div class="row rs" data-at="s2:merdeka" data-fx="ink"><b>MERDEKA 9 DESEMBER 1961</b><span>beberapa minggu sebelum wabah</span></div>
+</div>
+<div class="p" data-in="s2:ada" data-out="s3">
+  <div class="kk">02 &middot; KASHASHA, TEPI DANAU VICTORIA</div>
+  <div class="row big" data-at="s2:asrama" data-fx="ink"><b>SEKOLAH ASRAMA PUTRI</b><span>milik misi &middot; siswi usia 12&ndash;18 tahun</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s3:Dalam">
+  <div class="kk">03 &middot; AWALNYA</div>
+  <div class="date" data-at="s3:Januari" data-fx="ink"><b>30 Januari 1962</b><span>di kelas, siang hari</span></div>
+  <div class="row " data-at="s3:tiga" data-fx="ink"><b><span class="ct nb" data-from="0" data-to="3" data-a="s3:tiga" data-d="0.5">3</span> SISWI MULAI TERTAWA</b><span>dan tidak bisa berhenti</span></div>
+  <div class="row rs" data-at="s3:menular" data-fx="ink"><b>LALU MENULAR</b><span>dari satu meja ke meja lain</span></div>
+</div>
+<div class="p" data-in="s3:Dalam" data-out="s4">
+  <div class="kk">04 &middot; DALAM BEBERAPA MINGGU</div>
+  <div class="tally" data-at="s3:Dalam" data-fx="ink"><b><span class="ct nb" data-from="0" data-to="95" data-a="s3:Dalam" data-d="2.3">95</span></b><em>dari</em><b class="of">159</b><span>siswi ikut terkena</span></div>
+  <div class="dots" data-at="s3:Dalam" data-fx="ink"><i class="dt" id="d0"></i><i class="dt" id="d1"></i><i class="dt" id="d2"></i><i class="dt" id="d3"></i><i class="dt" id="d4"></i><i class="dt" id="d5"></i><i class="dt" id="d6"></i><i class="dt" id="d7"></i><i class="dt" id="d8"></i><i class="dt" id="d9"></i><i class="dt" id="d10"></i><i class="dt" id="d11"></i><i class="dt" id="d12"></i><i class="dt" id="d13"></i><i class="dt" id="d14"></i><i class="dt" id="d15"></i><i class="dt" id="d16"></i><i class="dt" id="d17"></i><i class="dt" id="d18"></i><i class="dt" id="d19"></i><i class="dt" id="d20"></i><i class="dt" id="d21"></i><i class="dt" id="d22"></i><i class="dt" id="d23"></i><i class="dt" id="d24"></i><i class="dt" id="d25"></i><i class="dt" id="d26"></i><i class="dt" id="d27"></i><i class="dt" id="d28"></i><i class="dt" id="d29"></i><i class="dt" id="d30"></i><i class="dt" id="d31"></i><i class="dt" id="d32"></i><i class="dt" id="d33"></i><i class="dt" id="d34"></i><i class="dt" id="d35"></i><i class="dt" id="d36"></i><i class="dt" id="d37"></i><i class="dt" id="d38"></i><i class="dt" id="d39"></i><i class="dt" id="d40"></i><i class="dt" id="d41"></i><i class="dt" id="d42"></i><i class="dt" id="d43"></i><i class="dt" id="d44"></i><i class="dt" id="d45"></i><i class="dt" id="d46"></i><i class="dt" id="d47"></i><i class="dt" id="d48"></i><i class="dt" id="d49"></i><i class="dt" id="d50"></i><i class="dt" id="d51"></i><i class="dt" id="d52"></i><i class="dt" id="d53"></i><i class="dt" id="d54"></i><i class="dt" id="d55"></i><i class="dt" id="d56"></i><i class="dt" id="d57"></i><i class="dt" id="d58"></i><i class="dt" id="d59"></i><i class="dt" id="d60"></i><i class="dt" id="d61"></i><i class="dt" id="d62"></i><i class="dt" id="d63"></i><i class="dt" id="d64"></i><i class="dt" id="d65"></i><i class="dt" id="d66"></i><i class="dt" id="d67"></i><i class="dt" id="d68"></i><i class="dt" id="d69"></i><i class="dt" id="d70"></i><i class="dt" id="d71"></i><i class="dt" id="d72"></i><i class="dt" id="d73"></i><i class="dt" id="d74"></i><i class="dt" id="d75"></i><i class="dt" id="d76"></i><i class="dt" id="d77"></i><i class="dt" id="d78"></i><i class="dt" id="d79"></i><i class="dt" id="d80"></i><i class="dt" id="d81"></i><i class="dt" id="d82"></i><i class="dt" id="d83"></i><i class="dt" id="d84"></i><i class="dt" id="d85"></i><i class="dt" id="d86"></i><i class="dt" id="d87"></i><i class="dt" id="d88"></i><i class="dt" id="d89"></i><i class="dt" id="d90"></i><i class="dt" id="d91"></i><i class="dt" id="d92"></i><i class="dt" id="d93"></i><i class="dt" id="d94"></i><i class="dt" id="d95"></i><i class="dt" id="d96"></i><i class="dt" id="d97"></i><i class="dt" id="d98"></i><i class="dt" id="d99"></i><i class="dt" id="d100"></i><i class="dt" id="d101"></i><i class="dt" id="d102"></i><i class="dt" id="d103"></i><i class="dt" id="d104"></i><i class="dt" id="d105"></i><i class="dt" id="d106"></i><i class="dt" id="d107"></i><i class="dt" id="d108"></i><i class="dt" id="d109"></i><i class="dt" id="d110"></i><i class="dt" id="d111"></i><i class="dt" id="d112"></i><i class="dt" id="d113"></i><i class="dt" id="d114"></i><i class="dt" id="d115"></i><i class="dt" id="d116"></i><i class="dt" id="d117"></i><i class="dt" id="d118"></i><i class="dt" id="d119"></i><i class="dt" id="d120"></i><i class="dt" id="d121"></i><i class="dt" id="d122"></i><i class="dt" id="d123"></i><i class="dt" id="d124"></i><i class="dt" id="d125"></i><i class="dt" id="d126"></i><i class="dt" id="d127"></i><i class="dt" id="d128"></i><i class="dt" id="d129"></i><i class="dt" id="d130"></i><i class="dt" id="d131"></i><i class="dt" id="d132"></i><i class="dt" id="d133"></i><i class="dt" id="d134"></i><i class="dt" id="d135"></i><i class="dt" id="d136"></i><i class="dt" id="d137"></i><i class="dt" id="d138"></i><i class="dt" id="d139"></i><i class="dt" id="d140"></i><i class="dt" id="d141"></i><i class="dt" id="d142"></i><i class="dt" id="d143"></i><i class="dt" id="d144"></i><i class="dt" id="d145"></i><i class="dt" id="d146"></i><i class="dt" id="d147"></i><i class="dt" id="d148"></i><i class="dt" id="d149"></i><i class="dt" id="d150"></i><i class="dt" id="d151"></i><i class="dt" id="d152"></i><i class="dt" id="d153"></i><i class="dt" id="d154"></i><i class="dt" id="d155"></i><i class="dt" id="d156"></i><i class="dt" id="d157"></i><i class="dt" id="d158"></i></div>
+</div>
+<div class="p" data-in="s4" data-out="s4:Serangannya">
+  <div class="kk">05 &middot; BUKAN TAWA YANG MENYENANGKAN</div>
+  <div class="sys"><i class="sy" data-at="s4:menangis" data-fx="chip"><svg viewBox="0 0 40 40"><path d="M20 4C25 14 30 20 30 26a10 10 0 0 1-20 0c0-6 5-12 10-22z" fill="#6FA0C8" stroke="#3C3733" stroke-width="1.6"/></svg>menangis</i><i class="sy" data-at="s4:gelisah" data-fx="chip"><svg viewBox="0 0 40 40" fill="none" stroke="#E8AB48" stroke-width="3.2" stroke-linecap="round"><path d="M5 12l7-5 7 6 7-6 9 5"/><path d="M5 22l7-5 7 6 7-6 9 5"/><path d="M5 32l7-5 7 6 7-6 9 5"/></svg>gelisah</i><i class="sy" data-at="s4:pingsan" data-fx="chip"><svg viewBox="0 0 40 40" fill="none" stroke="#9C7A8E" stroke-width="3" stroke-linecap="round"><path d="M20 20m-2 0a2 2 0 1 1 4 0a5 5 0 1 1-9 0a8 8 0 1 1 15 0a11 11 0 1 1-20 0"/></svg>pingsan</i><i class="sy" data-at="s4:sesak" data-fx="chip"><svg viewBox="0 0 40 40" fill="none" stroke="#4E7B9C" stroke-width="3" stroke-linecap="round"><path d="M4 12q6-6 12 0t12 0t10 0"/><path d="M4 21q6-6 12 0t12 0t10 0"/><path d="M4 30q6-6 12 0t12 0t10 0"/></svg>sesak napas</i></div>
+</div>
+<div class="p" data-in="s4:Serangannya" data-out="s5">
+  <div class="kk">06 &middot; LAMA SERANGAN</div>
+  <div class="dur" data-at="s4:Serangannya" data-fx="ink"><div class="ends"><b>beberapa jam</b><b class="r">sampai <span class="ct nb" data-from="0" data-to="16" data-a="s4:enam" data-d="0.4">16</span> hari</b></div><div class="bar"><i data-at="s4:jam" data-fx="grow"></i></div></div>
+  <div class="row ok" data-at="s4:guru" data-fx="ink"><b>PARA GURU: TIDAK TERKENA</b><span>sama sekali</span></div>
+</div>
+<div class="p" data-in="s5" data-out="s5:Di">
+  <div class="kk">07 &middot; MARET 1962</div>
+  <div class="st2" data-at="s5:ditutup" data-fx="stampc">SEKOLAH DITUTUP</div>
+  <div class="row rs" data-at="s5:pulang" data-fx="ink"><b>SISWI PULANG KE DESA</b><span>dan wabahnya ikut pulang</span></div>
+</div>
+<div class="p" data-in="s5:Di" data-out="s5:Ketika">
+  <div class="kk">08 &middot; DESA NSHAMBA</div>
+  <div class="row big" data-at="s5:dua" data-fx="ink"><b><span class="ct nb" data-from="0" data-to="217" data-a="s5:Nshamba" data-d="1.3">217</span> ORANG</b><span>ikut terkena, kebanyakan anak muda</span></div>
+</div>
+<div class="p" data-in="s5:Ketika" data-out="s6">
+  <div class="kk">09 &middot; SEKOLAH DIBUKA LAGI</div>
+  <div class="row big" data-at="s5:lima" data-fx="ink"><b><span class="ct nb" data-from="0" data-to="57" data-a="s5:Ketika" data-d="2.3">57</span> SISWI</b><span>kembali tertawa</span></div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="kk">10 &middot; TOTALNYA</div>
+  <div class="row big" data-at="s6:seribu" data-fx="ink"><b>&plusmn;<span class="ct nb" data-from="0" data-to="1000" data-a="s6:Total" data-d="0.8">1.000</span> ORANG</b><span>terdampak</span></div>
+  <div class="row rs" data-at="s6:empat" data-fx="ink"><b><span class="ct nb" data-from="0" data-to="14" data-a="s6:empat" data-d="0.5">14</span> SEKOLAH DITUTUP</b></div>
+  <div class="row " data-at="s6:delapan" data-fx="ink"><b>&plusmn;<span class="ct nb" data-from="0" data-to="18" data-a="s6:delapan" data-d="0.5">18</span> BULAN</b><span>baru wabah mereda</span></div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Di">
+  <div class="kk">11 &middot; PENYEBABNYA?</div>
+  <div class="mm"><i class="no" data-at="s7:virus" data-fx="chip">virus? <s>tidak ditemukan</s></i><i class="no" data-at="s7:racun" data-fx="chip">racun? <s>tidak ditemukan</s></i></div>
+  <div class="dx" data-at="s7:penyakit" data-fx="ink"><b>penyakit psikogenik massal</b>
+    <div class="fl"><span class="c1">stres menumpuk</span><i>&rarr;</i><span class="c2">tubuh bereaksi nyata</span></div></div>
+  <div class="nt" data-at="s7:nyata" data-fx="ink">bukan pura-pura, bukan &ldquo;kesurupan&rdquo;, bukan bahan lelucon</div>
+</div>
+<div class="p" data-in="s7:Di" data-out="s8">
+  <div class="kk">12 &middot; TEKANAN DI NEGARA YANG BARU MERDEKA</div>
+  <div class="row " data-at="s7:harapan" data-fx="ink"><b>HARAPAN TINGGI</b><span>untuk generasi pertama yang bersekolah</span></div>
+  <div class="vs" data-at="s7:benturan" data-fx="ink"><span class="a">aturan sekolah misi</span><i>&harr;</i><span class="b">adat di rumah</span></div>
+</div>
+<div class="p" data-in="s8" data-out="s8:Menurut">
+  <div class="kk">PELAJARANNYA</div>
+  <div class="h2">Tawa yang menular<br><em>bisa jadi sinyal tubuh</em></div>
+  <div class="ch sf ss" data-at="s8:beres" data-fx="chip">&ldquo;ada yang tidak beres&rdquo;</div>
+</div>
+<div class="p" data-in="s8:Menurut" data-out="@END">
+  <div class="kk">GILIRAN KAMU</div>
+  <div class="q">Bentuk stres apa yang menular di sekitar kita? <em>Tulis di komentar.</em></div>
+</div>
+<div id="dev" data-at="s3:tiga" data-fx="fade">
+  <svg class="br" viewBox="0 0 960 40" preserveAspectRatio="none"><path d="M60 22 C 260 12, 520 30, 900 18" stroke="#ECE4D6" stroke-width="12" fill="none" stroke-linecap="round" opacity=".9"/></svg>
+  <i class="seg" style="left:92px;width:190px" data-at="s3:menular-0.35" data-fx="grow"></i><i class="seg" style="left:282px;width:190px" data-at="s5:desa-0.35" data-fx="grow"></i><i class="seg" style="left:472px;width:190px" data-at="s6:seribu-0.35" data-fx="grow"></i><i class="seg" style="left:662px;width:190px" data-at="s6:ditutup-0.35" data-fx="grow"></i><div class="dn" style="left:12px" data-at="s3:tiga" data-fx="bloom"><div class="dl"><b>SEKOLAH</b><span>3 siswi</span></div><i class="db"></i><i class="dr"></i><i class="dr r2"></i></div><div class="dn" style="left:202px" data-at="s3:menular" data-fx="bloom"><div class="dl"><b>ASRAMA</b><span>tawa menular</span></div><i class="db"></i><i class="dr"></i><i class="dr r2"></i></div><div class="dn" style="left:392px" data-at="s5:desa" data-fx="bloom"><div class="dl"><b>DESA</b><span>Nshamba</span></div><i class="db"></i><i class="dr"></i><i class="dr r2"></i></div><div class="dn" style="left:582px" data-at="s6:seribu" data-fx="bloom"><div class="dl"><b>SEKOLAH LAIN</b><span>±1.000 orang</span></div><i class="db"></i><i class="dr"></i><i class="dr r2"></i></div><div class="dn" style="left:772px" data-at="s6:ditutup" data-fx="bloom"><div class="dl"><b>14 SEKOLAH</b><span>ditutup</span></div><i class="db"></i><i class="dr"></i><i class="dr r2"></i></div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 53</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":6.976,"s2":7.136,"s2e":17.749,"s3":17.909,"s3e":30.44,"s4":30.6,"s4e":42.057,"s5":42.217,"s5e":52.446,"s6":52.606,"s6e":59.465,"s7":59.625,"s7e":75.032,"s8":75.192,"s8e":86.591,"end":86.591,"dur":89.59,"outro":86.841},AT={"s1:sekolah":3.23,"s1:tertawa":5.351,"s1:empat":2.812,"s2:Tanganyika":7.17,"s2:merdeka":11.79,"s2:Kashasha":13.941,"s2:Victoria":15.598,"s2:ada":16.139,"s2:asrama":16.944,"s3:tiga":19.312,"s3:menular":24.415,"s3:sembilan":26.477,"s3:Dalam":25.068,"s3:lima":27.173,"s4:menyenangkan":31.428,"s4:menangis":32.542,"s4:gelisah":33.524,"s4:pingsan":34.414,"s4:sesak":35.528,"s4:Serangannya":36.541,"s4:jam":37.594,"s4:enam":38.585,"s4:guru":40.71,"s4:sekali":41.686,"s5:ditutup":42.632,"s5:Para":43.901,"s5:pulang":44.381,"s5:desa":44.675,"s5:wabahnya":45.155,"s5:Di":46.749,"s5:Nshamba":47.074,"s5:dua":47.678,"s5:terkena":48.669,"s5:Ketika":49.474,"s5:lima":50.852,"s6:Total":52.616,"s6:sekitar":53.127,"s6:seribu":53.545,"s6:orang":53.839,"s6:empat":54.928,"s6:ditutup":55.811,"s6:delapan":58.66,"s7:virus":60.426,"s7:racun":61.618,"s7:penyakit":63.677,"s7:tubuh":65.5,"s7:nyata":66.429,"s7:menumpuk":67.807,"s7:Di":68.618,"s7:harapan":71.25,"s7:benturan":72.54,"s7:aturan":73.437,"s7:adat":74.351,"s8:beres":80.023,"s8:Menurut":80.715,"s2:Tanganyika-0.42":6.75,"s2:ada-0.42":15.719,"s5:Ketika-0.42":49.054,"s6:Total-0.42":52.196,"s7:Tidak-0.42":59.232,"s3:Januari":18.387,"s3:menular-0.35":24.065,"s5:desa-0.35":44.325,"s6:seribu-0.35":53.195,"s6:ditutup-0.35":55.461},DUR=89.59,OUT=86.841;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ ink:(e,t)=>{const d=e.dataset.d||(e.classList.contains('row')||e.classList.contains('tally')||e.classList.contains('vs')||e.classList.contains('dots')?'flex':'block');gsap.set(e,{display:'none'});tl.set(e,{display:d},t);tl.fromTo(e,{opacity:0,y:18,filter:'blur(7px)'},{opacity:1,y:0,filter:'blur(0px)',duration:.5,ease:'power2.out',immediateRender:false},t);},
+ chip:(e,t)=>{const d=e.classList.contains('sy')?'flex':'inline-block';gsap.set(e,{display:'none'});tl.set(e,{display:d},t);tl.fromTo(e,{opacity:0,x:-24,filter:'blur(6px)'},{opacity:1,x:0,filter:'blur(0px)',duration:.45,ease:'power2.out',immediateRender:false},t);},
+ stampc:(e,t)=>{tl.fromTo(e,{scale:1.9,rotation:-8,opacity:0},{scale:1,rotation:-2,opacity:1,duration:.22,ease:'power4.in',immediateRender:false},t);},
+ bloom:(e,t)=>{gsap.set(e,{opacity:0});const b=e.querySelector('.db'),l=e.querySelector('.dl'),rs=e.querySelectorAll('.dr');tl.set(e,{opacity:1},t-.01);tl.fromTo(b,{scale:.1,opacity:0},{scale:1,opacity:1,duration:.55,ease:'back.out(1.6)',immediateRender:false},t);tl.fromTo(l,{opacity:0,y:-14},{opacity:1,y:0,duration:.4,ease:'power2.out',immediateRender:false},t+.12);rs.forEach((r,i)=>tl.fromTo(r,{scale:.3,opacity:.9},{scale:1.7,opacity:0,duration:1.3,ease:'power2.out',immediateRender:false},t+.1+i*.35));},
+ turn:(e,t)=>{const b=e.querySelectorAll('.bl');gsap.set(e,{opacity:0,rotationY:86,transformPerspective:2600,transformOrigin:'0% 50%'});gsap.set(b,{scale:.25,opacity:0});
+  tl.set(e,{opacity:1},t);tl.to(e,{rotationY:0,duration:.32,ease:'power2.in'},t);
+  tl.to(b,{scale:1.3,opacity:1,duration:.6,ease:'power2.out',stagger:.06},t+.1);
+  tl.to(e,{rotationY:-86,duration:.42,ease:'power2.inOut'},t+.41);tl.set(e,{opacity:0},t+.84);},
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{opacity:0,y:24},{opacity:1,y:0,duration:.45,ease:'power3.out'},a-.04),POUT=(tl,p,b)=>tl.to(p,{opacity:0,y:-10,duration:.22,ease:'power2.in'},b-.22);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{const a=AT['s3:Dalam'],d=2.3;let n=t<AT['s3:tiga']?0:t<a?3:Math.round(95*(1-Math.pow(1-Math.min(1,Math.max(0,(t-a)/d)),3)));n=Math.max(n,t>=AT['s3:tiga']?3:0);for(let i=0;i<159;i++){const e=document.getElementById('d'+i);if(e)e.className=i<n?'dt on':'dt';}const dv=q('#dev');if(dv)dv.style.visibility=(t>AT['s8:Menurut']-0.1)?'hidden':'visible';};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP53_WABAH_TAWA_TANGANYIKA_1962")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

@@ -1,0 +1,403 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP20_ANGRY_BIRDS_GAME_KE52",
+  "topic": "Angry Birds — game ke-52 Rovio yang menyelamatkan studio dari bangkrut (2009)",
+  "createdAt": "2026-11-22T17:59:18.265Z",
+  "updatedAt": "2026-11-23T09:59:42.821Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:00:06.687Z",
+          "text": "Memori GLOBAL+channel dibaca; pola EP05/EP06 batch ini (HyperFrames 2D, lib dari TECH/AUDIRA_SEJARAH_GAME_2026) jadi acuan."
+        }
+      ],
+      "doneAt": "2026-11-22T18:00:06.687Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:09:18.405Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-22T18:03:20.103Z",
+      "startedAt": "2026-11-22T18:03:20.103Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T22:21:14.311Z",
+      "notes": [
+        {
+          "at": "2026-11-22T22:21:14.311Z",
+          "text": "Pengguna memilih PIXELSTORY lewat AskUserQuestion 2026-11-23. Alternatif ditolak: PAPERWORLD, COMICFORGE."
+        }
+      ],
+      "doneAt": "2026-11-22T22:21:14.311Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T22:23:26.314Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T22:22:37.846Z",
+      "startedAt": "2026-11-22T22:22:37.846Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T00:19:17.230Z",
+          "text": "build-video.mjs + mix.py ditulis (pola EP05); anchor s1:ke-52 diganti s1:game#2+0.6 (regex anchor membaca -52 sebagai offset)"
+        }
+      ],
+      "doneAt": "2026-11-23T00:19:17.230Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:23:26.314Z",
+          "text": "sync: VO sudah dibuat"
+        },
+        {
+          "at": "2026-11-22T22:23:58.948Z",
+          "text": "VO dikunci: MCP generate_voiceover per baris speed 0.95 -> lib/vo.py tts --skip-tts + build tempo 1.0. audio/VO_MASTER.wav, project/timeline.json (speech 84.70, film 87.7). JANGAN generate ulang."
+        }
+      ],
+      "doneAt": "2026-11-22T22:23:58.948Z",
+      "startedAt": "2026-11-22T22:22:44.967Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T00:28:56.480Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-23T00:23:07.080Z",
+      "startedAt": "2026-11-23T00:23:07.080Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T00:28:56.480Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        },
+        {
+          "at": "2026-11-23T09:13:50.742Z",
+          "text": "Juri r2 3.17 (PERLU POLES). Pengguna 2026-11-23 eksplisit: \"jgn ganti langsung render\" → tetap PIXELSTORY, render final tanpa ganti style."
+        }
+      ],
+      "doneAt": "2026-11-23T09:13:50.742Z",
+      "startedAt": "2026-11-23T00:22:53.636Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T09:58:56.528Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-23T09:59:38.783Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60 87.7s, -14.0 LUFS, TP -1.8, qa_video PASS, metadata ok. Dirender atas instruksi pengguna meski juri 3.17."
+        }
+      ],
+      "doneAt": "2026-11-23T09:59:38.782Z",
+      "startedAt": "2026-11-23T09:57:31.314Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T09:19:50.961Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T09:59:41.865Z",
+          "text": "SOCIAL_CAPTIONS.md validator ok, NOTES.md, 3 scheduled task review-angry-birds-game-ke52-24h/72h/7d (upload Sabtu 28 Nov 2026 19.00 WIB)."
+        }
+      ],
+      "doneAt": "2026-11-23T09:59:41.865Z",
+      "startedAt": "2026-11-23T09:15:36.524Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP20",
+    "engine": "hyperframes",
+    "channel": "TECH",
+    "handle": "@AudiraTECH",
+    "style": "PIXELSTORY",
+    "wordCount": 206,
+    "voSeconds": 84.7,
+    "filmSeconds": 87.7,
+    "estimatedDuration": {
+      "wordCount": 206,
+      "minSec": 82,
+      "maxSec": 92
+    },
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-23T09:58:56.528Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T22:22:40.474Z",
+      "doing": "VO Cartesia per baris via lib/vo.py tts (dari project/)",
+      "command": "cd project; python lib/vo.py x tts --speed 0.95; python lib/vo.py x build --tempo 1.0",
+      "files": [
+        "project/script-lines.json",
+        "audio/VO_MASTER.wav",
+        "project/timeline.json"
+      ],
+      "next": "Tulis docs, world2d.js (PIXELSTORY 2D, pola EP05 PlayStation), build-video.mjs, mix.py",
+      "snapshot": {
+        "episode": "EP20_ANGRY_BIRDS_GAME_KE52",
+        "topic": "Angry Birds — game ke-52 Rovio yang menyelamatkan studio dari bangkrut (2009)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP20",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T22:24:51.227Z",
+      "doing": "Pindah sesi (konteks penuh). VO terkunci; berikutnya docs + world2d.js.",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/script-lines.json",
+        "project/timeline.json",
+        "audio/VO_MASTER.wav"
+      ],
+      "next": "Baca docs/HANDOFF.md, tulis STYLE_DECISION + docs rule 12, lalu world2d.js/build-video.mjs/mix.py pola EP05 PlayStation",
+      "snapshot": {
+        "episode": "EP20_ANGRY_BIRDS_GAME_KE52",
+        "topic": "Angry Birds — game ke-52 Rovio yang menyelamatkan studio dari bangkrut (2009)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP20",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:01:23.446Z",
+      "doing": "Tulis project/world2d.js + build-video.mjs + mix.py (docs rule 12 + STYLE_DECISION sudah ditulis)",
+      "files": [
+        "project/world2d.js",
+        "project/build-video.mjs",
+        "project/mix.py"
+      ],
+      "next": "snapshot cover-topic + contact sheet 8 frame, juri",
+      "snapshot": {
+        "episode": "EP20_ANGRY_BIRDS_GAME_KE52",
+        "topic": "Angry Birds — game ke-52 Rovio yang menyelamatkan studio dari bangkrut (2009)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP20",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:05:50.254Z",
+      "doing": "Docs rule 12 + STYLE_DECISION + project/world2d.js selesai (belum dirender). Batas konteks sesi 2 tercapai.",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/world2d.js",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md"
+      ],
+      "next": "Tulis build-video.mjs + mix.py (rencana panel & SFX di docs/HANDOFF.md 'Update sesi 2'), snapshot cek world2d, cover-topic, contact sheet + juri, final, delivery",
+      "snapshot": {
+        "episode": "EP20_ANGRY_BIRDS_GAME_KE52",
+        "topic": "Angry Birds — game ke-52 Rovio yang menyelamatkan studio dari bangkrut (2009)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP20",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:25:10.704Z",
+      "doing": "Draf juri putaran 2: poles world2d (refleksi lantai, glow, LEVEL 52 pindah, zoom s3, chip 32px) sudah diterapkan, belum dirender. Juri putaran 1 = 3.17.",
+      "command": "cd project/hf; $env:TEMP='F:\\hf-render-tmp'; npx hyperframes snapshot --no-end -o ..\\..\\work\\draft3 --at \"6.9,13.5,24.5,33.6,42.3,59.8,66.2,82.5\"",
+      "files": [
+        "project/world2d.js",
+        "project/build-video.mjs",
+        "project/mix.py",
+        "draft/THEME_CHECK.md",
+        "docs/HANDOFF.md"
+      ],
+      "next": "Snapshot 8 frame → draft/contact-sheet.jpg → self + juri buta putaran 2 → mix.py (TEMP ke F:, C: penuh) → final → delivery. Detail di docs/HANDOFF.md 'Update sesi 3'.",
+      "snapshot": {
+        "episode": "EP20_ANGRY_BIRDS_GAME_KE52",
+        "topic": "Angry Birds — game ke-52 Rovio yang menyelamatkan studio dari bangkrut (2009)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP20",
+        "currentStage": "animation",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T09:10:01.902Z",
+      "doing": "Sesi 4: snapshot draf r2 (8 frame) ke work/draft3",
+      "command": "cd project; node build-video.mjs; cd hf; TEMP=F:\\hf-render-tmp npx hyperframes snapshot --no-end -o ../../work/draft3 --at \"6.9,13.5,24.5,33.6,42.3,59.8,66.2,82.5\"",
+      "next": "sheet.py → contact-sheet → juri r2",
+      "snapshot": {
+        "episode": "EP20_ANGRY_BIRDS_GAME_KE52",
+        "topic": "Angry Birds — game ke-52 Rovio yang menyelamatkan studio dari bangkrut (2009)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP20",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:18:34.931Z",
+      "doing": "Sesi 4: juri r2 3.17, pengguna bilang \"jgn ganti langsung render\" → tetap PIXELSTORY. mix.py jalan; SOCIAL_CAPTIONS.md sudah ditulis (Sabtu 28 Nov 19.00).",
+      "command": "python mix.py (project/) lalu npx hyperframes render -o ../out/raw.mp4 -f 60 -q standard -w 6 (hf/, TEMP F:\\hf-render-tmp)",
+      "next": "master.py → FINAL_VIDEO.mp4, qc.py, metadata, qa_video hardOnly, record_score final, NOTES, validator, 3 scheduled task, status review",
+      "snapshot": {
+        "episode": "EP20_ANGRY_BIRDS_GAME_KE52",
+        "topic": "Angry Birds — game ke-52 Rovio yang menyelamatkan studio dari bangkrut (2009)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP20",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:18:34.931Z",
+      "doing": "Sesi 4: juri r2 3.17, pengguna bilang \"jgn ganti langsung render\" → tetap PIXELSTORY. mix.py jalan; SOCIAL_CAPTIONS.md sudah ditulis (Sabtu 28 Nov 19.00).",
+      "command": "python mix.py (project/) lalu npx hyperframes render -o ../out/raw.mp4 -f 60 -q standard -w 6 (hf/, TEMP F:\\hf-render-tmp)",
+      "next": "master.py → FINAL_VIDEO.mp4, qc.py, metadata, qa_video hardOnly, record_score final, NOTES, validator, 3 scheduled task, status review",
+      "snapshot": {
+        "episode": "EP20_ANGRY_BIRDS_GAME_KE52",
+        "topic": "Angry Birds — game ke-52 Rovio yang menyelamatkan studio dari bangkrut (2009)",
+        "style": "PIXELSTORY",
+        "memoryEpisode": "short-baru-11-23-EP20",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T09:59:42.821Z"
+    }
+  ]
+}

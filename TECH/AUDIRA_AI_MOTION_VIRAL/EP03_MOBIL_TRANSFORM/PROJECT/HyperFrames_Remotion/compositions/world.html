@@ -1,0 +1,117 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#050506}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.035;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.3) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.3) 42%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Montserrat,sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#F7F7F5;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+
+#chip{opacity:.68}
+.l{font-family:Montserrat,sans-serif;font-weight:700;font-size:25px;letter-spacing:.2em;color:#FFB25A;padding-bottom:10px;border-bottom:1px solid rgba(255,178,90,.65);margin-bottom:14px}
+.h{font-family:Montserrat,sans-serif;font-weight:800;font-size:84px;line-height:1.04;letter-spacing:-.03em;color:#F7F7F5}.h span{color:#FFB25A}.h.sm{font-size:72px}
+.k{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.22)}
+.k u{text-decoration:none;font-family:Montserrat,sans-serif;font-weight:800;font-size:36px;letter-spacing:-.01em;color:#F7F7F5;white-space:nowrap}.k i{font-style:normal;font-family:Montserrat,sans-serif;font-weight:500;font-size:29px;color:#FFB25A;text-align:right}.k.hi u{color:#FFB25A}
+.st{display:flex;gap:10px;margin-top:16px}.st b{flex:1;text-align:center;font-family:Montserrat,sans-serif;font-weight:800;font-size:31px;letter-spacing:.02em;padding:12px 0;border:1px solid #FFB25A;color:#FFB25A}
+.pr{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:43px;line-height:1.28;color:#F7F7F5}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="83.95" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">MOBIL FIKTIF. ILUSTRASI 3D, BUKAN HASIL AI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="l">AI MOTION TANPA RIBET &mdash; EP 03</div>
+  <div class="h">Sedan tua<br><span>jadi mobil balap.</span></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="l">KUNCINYA</div>
+  <div class="h">Dua gambar.</div>
+  <div class="k" data-at="s2:awal"><u>FRAME AWAL</u><i>Start and End Frames, Kling</i></div>
+  <div class="k" data-at="s2:akhir"><u>FRAME AKHIR</u><i>First and last frame, Veo</i></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="l">GAMBAR KEDUA DARI GAMBAR PERTAMA</div>
+  <div class="k" data-at="s3:sudut"><u>SUDUT KAMERA</u><i>sama</i></div>
+  <div class="k" data-at="s3:posisi"><u>POSISI</u><i>sama</i></div>
+  <div class="k" data-at="s3:cahaya"><u>CAHAYA</u><i>sama</i></div>
+  <div class="k hi" data-at="s3:mobilnya"><u>MOBIL</u><i>satu-satunya yang berubah</i></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="l">PANDUAN KLING</div>
+  <div class="h sm" data-at="s4:semirip">Semirip mungkin.</div>
+  <div class="k" data-at="s4:pindah"><u>TERLALU BEDA</u><i>bisa pindah shot</i></div>
+  <div class="st"><b data-at="s4:sedan" data-fx="fade">SEDAN</b><b data-at="s4:rangka" data-fx="fade">RANGKA</b><b data-at="s4:balap" data-fx="fade">BALAP</b></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="l">PROMPT = PROSES</div>
+  <div class="pr" data-at="s5:Panel">panel bodi terbuka,</div>
+  <div class="pr" data-at="s5:rangka">rangka bergeser,</div>
+  <div class="pr" data-at="s5:roda">roda melebar,</div>
+  <div class="pr" data-at="s5:kamera">kamera diam</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="l">COMPOSITING</div>
+  <div class="h sm" data-at="s6:Frame">Akhir klip 1<br><span>= awal klip 2</span></div>
+  <div class="st"><b data-at="s6:percikan" data-fx="fade">API</b><b data-at="s6:bayangan" data-fx="fade">BAYANGAN</b><b data-at="s6:bass" data-fx="fade">BASS</b></div>
+</div>
+<div class="p" data-in="s7" data-out="@END">
+  <div class="l">SEBELUM UNGGAH</div>
+  <div class="k" data-at="s7:realistis"><u>REALISTIS</u><i>YouTube wajib label AI</i></div>
+  <div class="k" data-at="s7:logo"><u>LOGO MEREK</u><i>hindari milik orang</i></div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">AI MOTION TANPA RIBET &middot; EP 03</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":5.171,"s2":5.331,"s2e":16.506,"s3":16.666,"s3e":31.544,"s4":31.704,"s4e":45.375,"s5":45.535,"s5e":55.993,"s6":56.153,"s6e":70.957,"s7":71.117,"s7e":80.951,"end":80.951,"dur":83.95,"outro":81.201},AT={"s1:balap":1.949,"s2:awal":7.336,"s2:akhir":8.265,"s2:mengisi":9.32,"s3:sudut":22.607,"s3:sama":23.35,"s4:sedan":41.994,"s4:rangka":42.412,"s4:balap":43.883,"s5:Panel":48.3,"s5:rangka":49.601,"s5:roda":50.902,"s5:diam":52.602,"s6:percikan":63.762,"s6:bayangan":64.536,"s6:bass":66.036,"s6:mendarat":67.444,"s6:sambungannya":61.773,"s7:label":75.688,"s3:posisi":23.954,"s3:cahaya":24.975,"s3:mobilnya":26.745,"s4:semirip":33.799,"s4:pindah":36.926,"s5:kamera":52.215,"s6:Frame":58.708,"s7:realistis":72.25,"s7:logo":78.102},DUR=83.95,OUT=81.201;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ up:(e,t)=>tl.fromTo(e,{x:32,opacity:0},{x:0,opacity:1,duration:.34,ease:'power4.out'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{x:70,opacity:0},{x:0,opacity:1,duration:.5,ease:'power4.out'},a-.05),POUT=(tl,p,b)=>tl.to(p,{x:-60,opacity:0,duration:.22,ease:'power2.in'},b-.22);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.5,ease:'power2.inOut'},OUT-.1);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

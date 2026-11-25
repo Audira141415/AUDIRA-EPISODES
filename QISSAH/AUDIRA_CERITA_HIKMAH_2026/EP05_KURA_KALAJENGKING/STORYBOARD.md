@@ -1,0 +1,14 @@
+# STORYBOARD — EP05 (kolom waktu = estimasi awal; timecode suara asli ada di SCRIPT.md, film total 2:37)
+
+| Adegan | Waktu | Yang terlihat | Kamera | Suara |
+|---|---|---|---|---|
+| 1 Hook (s1) | 0:00–0:10 | Kertas beras membuka ke sungai lebar, lapisan gunung tinta dan kabut; judul "Kura-kura dan Kalajengking" tertulis kuas, stempel merah "Hikmah" menghentak | wide tinggi, turun perlahan | petikan senar pentatonik, angin, burung jauh, klik stempel |
+| 2 Tepi sungai (s2a–s2d) | 0:10–0:31 | Pan gulungan dari sungai ke tepi kiri: kalajengking di ujung batu, menunduk ke air saat "tidak bisa berenang"; kura-kura berjemur di batu datar, mata terpejam | pan horizontal, lalu medium ke batu, lalu ke kura-kura | whoosh pan, aliran sungai |
+| 3 Permintaan & penolakan (s2e–s3c) | 0:31–0:51 | Kalajengking memanggil, capit terangkat; kura-kura menoleh, kepala tertarik masuk saat "Apa?"; kalajengking tertawa (capit & ekor bergoyang) | two-shot diagonal; close kura-kura dari balik batu kalajengking | pop di "Apa?" |
+| 4 Logika (s4a–s4c) | 0:51–1:11 | Close kalajengking bicara, capit membuka-menutup mengikuti kata | push-in pelan | musik menyurut di bawah dialog |
+| 5 Menimbang (s5a–s5d) | 1:11–1:35 | Kura-kura memejam, kepala bergoyang menimbang; setelah "Naiklah" berbalik ke arah seberang; kalajengking merayap turun dari batu dan naik ke tempurung | close kura-kura, lalu two-shot medium | whoosh pendek saat berbalik |
+| 6 Menyeberang (s6a–s6d) | 1:35–1:57 | Kura-kura masuk air, berenang dengan jejak riak; tepi menjauh dalam kabut; kamera rendah dekat air; ekor mulai naik dan ujungnya memerah | travelling seperti gulungan dibuka: medium, melebar, lalu rendah | cipratan, kayuhan, drone tegang + denyut di "tepat di tengah sungai" |
+| 7 Sengatan (s7a–s7b) | 1:58–2:10 | Pada kata "menyengat" ekor menyerang leher: letupan tinta merah, noda merah menyebar di permukaan; kaki melemas, riak melingkar | close ke leher, naik ke atas memperlihatkan noda merah, lalu turun ke garis air | riser lalu impact bass |
+| 8 Tenggelam (s8a–s8f) | 2:11–2:38 | Bawah air abu-biru: kura-kura miring tenggelam, gelembung, awan tinta merah, berkas cahaya; kalajengking menunduk, ekor dan capit layu; keduanya hilang ke gelap | ikut turun, close kalajengking di "tabiatku", lalu berhenti saat mereka menghilang | whoosh menyelam, dengung rendah, gelembung, musik teredam |
+| 9 Hikmah (s9a–s9f) | 2:39–3:09 | Kamera naik menembus permukaan: sungai tenang, sisa merah memudar; lanskap lebar. Huruf kuas "Kenali dulu karakter seseorang…" muncul per kata; "Teman itu seperti tombol lift": kamera menengadah ke puncak saat "naik", turun ke air saat "turun" | naik, pan lebar pelan, tilt naik/turun | chime, sparkle "naik", whoosh "turun", senar kembali |
+| 10 Penutup | 3:09–3:17 | "Kenali tabiat, sebelum percaya." + stempel merah, lalu kartu outro hijau dengan logo AUDIRA dan "Created by Agus Dwi R." | lanskap bergerak halus | klik stempel, ping outro |

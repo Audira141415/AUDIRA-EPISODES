@@ -1,0 +1,126 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "roblox-map-EP04",
+  "topic": "Batas 20.000 segitiga dan collision fidelity",
+  "createdAt": "2026-11-08T13:00:22.613465+00:00",
+  "updatedAt": "2026-11-11T02:02:12.453Z",
+  "currentStage": "complete",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        "Riset 8 Nov 2026: ../RESEARCH_REPORT.md, ../SOURCE_REGISTER.md"
+      ]
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        "Riset 8 Nov 2026: ../RESEARCH_REPORT.md, ../SOURCE_REGISTER.md"
+      ]
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-08T13:47:16.408228+00:00",
+      "notes": [
+        "2026-11-08 pengguna memilih DRAFTFORGE; cover topik sedang dibuat.",
+        "2026-11-08 cover-topic.png + draft-contact-sheet.jpg di style/, menunggu acc cover + naskah.",
+        "2026-11-08 pengguna: \"Approved, continue\" (cover + naskah)."
+      ]
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-08T13:47:16.408228+00:00",
+      "notes": [
+        "2026-11-08 pengguna: \"Approved, continue\" (cover + naskah)."
+      ]
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": []
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        "Cartesia VO dikunci, film 89.27 dtk."
+      ]
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": []
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-08T19:50:18.604265+00:00",
+      "notes": [
+        "style/draft-contact-sheet.jpg pada timing VO asli; skor draf LOLOS (EP01, EP04 setelah satu putaran poles; EP05 setelah remap kamera).",
+        "2026-11-09 pengguna: \"Approved, render final\"."
+      ]
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        "2026-11-09 FINAL_VIDEO.mp4 1080x1920@60, QC lolos, caption validator ok."
+      ]
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        "2026-11-09 FINAL_VIDEO.mp4 1080x1920@60, QC lolos, caption validator ok."
+      ]
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T02:02:12.453Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-08T20:14:24.771Z",
+      "startedAt": "2026-11-08T20:14:24.771Z"
+    }
+  ],
+  "data": {
+    "style": "DRAFTFORGE",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-11T02:02:12.453Z"
+}

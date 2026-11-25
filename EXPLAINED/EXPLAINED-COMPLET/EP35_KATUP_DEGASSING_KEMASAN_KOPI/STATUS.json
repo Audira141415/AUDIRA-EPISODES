@@ -1,0 +1,132 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP35_KATUP_DEGASSING_KEMASAN_KOPI",
+  "topic": "EP35 Katup Degassing Kemasan Kopi",
+  "createdAt": "2026-11-12T10:06:29.770Z",
+  "updatedAt": "2026-11-14T13:44:01.805Z",
+  "currentStage": "style",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.770Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T23:54:13.079Z",
+      "note": "Riset bersumber: research/SOURCE_REGISTER.md + RESEARCH_REPORT.md"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover topik",
+      "gate": true,
+      "status": "pending"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T23:54:13.079Z",
+      "doneAt": "2026-11-12T23:54:13.079Z",
+      "note": "Disetujui pengguna 2026-11-13 (acc menyeluruh di chat: \"langsung saja approve\"). Gaya belum dipilih. 215 kata."
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit (EP04 Standard)",
+      "gate": false,
+      "status": "pending"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-14T06:44:13.993Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-14T06:02:33.817Z",
+      "startedAt": "2026-11-14T06:02:33.817Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci + visual audit",
+      "gate": true,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI",
+      "gate": false,
+      "status": "pending",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:56.535Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "startedAt": "2026-11-12T10:06:29.770Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "ep35_katup_degassing_kemasan_kopi",
+    "wordCount": 215,
+    "title": "Tombol Kecil yang Membuang Lima Liter Gas dari Kemasan Kopi",
+    "estimateSec": "86–96"
+  },
+  "syncedAt": "2026-11-14T06:44:13.993Z",
+  "resetNote": "2026-11-13: riset/naskah/style/QA lama hasil skrip luar (placeholder) diarsipkan ke _review/_ARSIP_GENERATED_2026-11-12/; mulai ulang dari riset. 2026-11-13: riset + naskah baru selesai, naskah di-acc; berikutnya gerbang style.",
+  "handoverLog": [
+    {
+      "at": "2026-11-14T13:44:01.805Z",
+      "doing": "render final (hyperframes)",
+      "command": "audira_render_batch start",
+      "batchId": "20261114-134401",
+      "files": [
+        "F:\\AUDIRA-VIDEO-MOTION\\EXPLAINED_CARA_KERJA_BENDA_2026\\EP35_KATUP_DEGASSING_KEMASAN_KOPI\\FINAL_VIDEO.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261114-134401); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang."
+    }
+  ],
+  "handover": {
+    "at": "2026-11-14T13:44:01.805Z",
+    "doing": "render final (hyperframes)",
+    "command": "audira_render_batch start",
+    "batchId": "20261114-134401",
+    "files": [
+      "F:\\AUDIRA-VIDEO-MOTION\\EXPLAINED_CARA_KERJA_BENDA_2026\\EP35_KATUP_DEGASSING_KEMASAN_KOPI\\FINAL_VIDEO.mp4"
+    ],
+    "next": "cek audira_render_batch status (batch 20261114-134401); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang."
+  }
+}

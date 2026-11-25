@@ -1,0 +1,492 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP69",
+  "topic": "Kiruna, Swedia: kota dipindah karena tambang, gereja 672 ton jalan 5 km (Agustus 2025)",
+  "createdAt": "2026-11-24T15:08:31.698Z",
+  "updatedAt": "2026-11-24T16:29:17.178Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:08:54.641Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-24T15:08:31.702Z",
+      "startedAt": "2026-11-24T15:08:31.702Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:08:54.641Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-24T15:08:54.488Z",
+      "startedAt": "2026-11-24T15:08:54.488Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:11:24.525Z",
+          "text": "HD2D 3D dipilih AI (STYLE_DECISION approved: yes). Cover referensi tersalin. Sisa: cover-topic.png dirender di sesi B setelah scaffold."
+        },
+        {
+          "at": "2026-11-24T15:11:52.461Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "startedAt": "2026-11-24T15:11:24.525Z",
+      "doneAt": "2026-11-24T15:11:12.468Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:10:43.823Z",
+          "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-24T15:11:12.603Z",
+          "text": "Sesi A selesai: SOURCE_REGISTER, STYLE_DECISION (HD2D), ART_DIRECTION, SCRIPT (185 kata tulis ≈ 87 dtk), STORYBOARD 8 adegan, ASSET_MANIFEST, VO_TEXT.txt"
+        }
+      ],
+      "doneAt": "2026-11-24T15:11:12.603Z",
+      "startedAt": "2026-11-24T15:09:51.147Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:14:03.262Z",
+          "text": "project/ = salinan starter AUDIRA-SKILL-MOTION, node_modules junction, 21 GLB di public/models/polyfork, channel FAKTADUNIA; check-env, smoke, preflight lolos (no blockers)."
+        }
+      ],
+      "doneAt": "2026-11-24T15:14:03.262Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:15:42.341Z",
+          "text": "VO dikunci 80,48 dtk (212 kata) setelah kalimat biaya LKAB dipotong (take 1 = 92,37 dtk). Timing adegan + HUD di docs/TIMING_LOCK.md. FILM_SECONDS 83.6, outro 3 dtk."
+        }
+      ],
+      "doneAt": "2026-11-24T15:15:42.341Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:14:09.509Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-24T15:15:46.212Z",
+          "text": "Belum dikerjakan: auto-sync menandai done karena file starter (sfx/, scripts). Film EP69 belum ada di project/src/episode/."
+        },
+        {
+          "at": "2026-11-24T15:16:26.867Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.572Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:35:11.750Z",
+          "text": "sync: look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-24T15:35:09.531Z",
+      "startedAt": "2026-11-24T15:35:09.531Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T15:56:00.036Z",
+      "notes": [
+        {
+          "at": "2026-11-24T15:47:30.209Z",
+          "text": "s5: G18c awal gap 11.4 LU (gagal). sfx/cues/auto.py TARGET_LUFS -26 -> -27, npm run sfx (PYTHONUTF8=1) -> stem -27.0 TP -8.1; G18c ulang VO -16.0 / SFX duck -28.4 = gap 12.4 LU lolos. Menunggu acc render final."
+        },
+        {
+          "at": "2026-11-24T15:56:00.036Z",
+          "text": "Acc pengguna 2026-11-24: \"Gas render final\"."
+        },
+        {
+          "at": "2026-11-24T16:29:16.793Z",
+          "text": "FINAL_EP69_KIRUNA_KOTA_PINDAH.mp4 1080x1920@60 83.6s, -13.6 LUFS TP -1.9, metadata + Ed25519 + C2PA VALID, deliver GREEN. Juri final 3.67 (C3 Mo3), self 4.33."
+        }
+      ],
+      "startedAt": "2026-11-24T15:47:30.209Z",
+      "doneAt": "2026-11-24T16:29:16.793Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T15:59:45.657Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-24T16:29:16.984Z",
+          "text": "SOCIAL_CAPTIONS validator ok, SUBTITLES.srt, NOTES.md, lessons HD2D+GLOBAL, scheduled tasks review-kiruna-kota-pindah-24h/72h/7d (16/18/22 Jan 2027 19.00 WIB)."
+        }
+      ],
+      "doneAt": "2026-11-24T16:29:16.984Z",
+      "startedAt": "2026-11-24T15:57:33.612Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sejarah-negara-EP69",
+    "style": "HD2D",
+    "engine": "remotion",
+    "wordCount": 212,
+    "shortTitle": "Kiruna",
+    "hero": "clapboard-church-03a6f5",
+    "estimatedDuration": {
+      "wordCount": 212,
+      "minSec": 85,
+      "maxSec": 94
+    },
+    "voSeconds": 80.48,
+    "filmSeconds": 83.6
+  },
+  "syncedAt": "2026-11-24T15:59:45.657Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-24T15:11:24.719Z",
+      "doing": "Sesi A (tahap 0–4) selesai: riset tersalin ke research/SOURCE_REGISTER.md (F1–F10, larangan jumlah warga/rumah; gereja 5 km vs pusat kota ±3 km), style HD2D Remotion+R3F (alt TOYDIORAMA), naskah 185 kata tulis ≈ 228 kata ucap ≈ 87 dtk, storyboard 8 adegan, art direction, asset manifest GLB (hero clapboard-church-03a6f5 recolor merah Falu #8E2B22, trailer eight-wheel-industrial-hauler-4dc3d7 ×2, mine-headframe-735cf4, mobile-crane-671d3f, bailey-bridge-section-d5c408, lamp-post-c9e409, traffic-light-5e5ae6).",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/ART_DIRECTION.md",
+        "docs/SCRIPT.md",
+        "docs/VO_TEXT.txt",
+        "research/SOURCE_REGISTER.md"
+      ],
+      "next": "Sesi B · Produksi, mulai tahap 5: scaffold project (pola episode Remotion+R3F seri ini, mis. EP60 project/ + kit HD2D; npm run check-env, smoke, preflight -- --episode=<dir>), render cover-topic.png (still, bukan MP4) → tahap 6 VO Cartesia dari docs/VO_TEXT.txt (angka sudah ditulis kata, LKAB dieja \"El Ka A Be\", \"Audira\"), kunci timing; bila VO > 92 dtk potong kalimat biaya LKAB → tahap 7 multi-scene 8 adegan + HUD callout + npm run sfx → tahap 8 contact sheet + audit:visual + draft/THEME_CHECK.md + juri buta. Terapkan perbaikan memori HD2D: tekstur map+bump 0.5, apron terang, lampu hangat FG, tilt-shift aperture 0.006 maxBlur 0.03, Finish DOCUMENTARY_WARM exp 1 env 0.55 ao; adegan gereja = Agustus sore tanpa salju. Berhenti sebelum render final (gerbang acc ada di sesi C).",
+      "snapshot": {
+        "episode": "EP69",
+        "topic": "Kiruna, Swedia: kota dipindah karena tambang, gereja 672 ton jalan 5 km (Agustus 2025)",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-negara-EP69",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:15:58.993Z",
+      "doing": "Sesi B s2 selesai tahap 5–6 (context guard 191k): project/ = salinan F:/AUDIRA-SKILL-MOTION/starter (node_modules junction ke F:/AUDIRA-SKILL-MOTION/node_modules), 21 GLB manifest disalin ke project/public/models/polyfork/<id>.glb, channel.json + SERIES.json = FAKTADUNIA (@AudiraFaktaDunia); check-env, smoke, preflight lolos tanpa blocker. VO Cartesia dikunci 80,48 dtk / 212 kata (project/public/audio/vo.wav + vo-words.json + vo.timing.json); kalimat biaya LKAB dipotong (take 1 = 92,37 dtk), VO_TEXT/SCRIPT/STORYBOARD diperbarui. Timing 8 adegan + 25 HUD callout dikunci di docs/TIMING_LOCK.md (FILM_SECONDS 83.6, outro 3 dtk dari 80.6). Cover topik BELUM dirender.",
+      "files": [
+        "docs/TIMING_LOCK.md",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/ART_DIRECTION.md",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "project/src/kits/hd2d/"
+      ],
+      "next": "Sesi B lanjutan (s3), tahap 7: bangun film di project/src/episode/ mengikuti pola EP59 (F:/AUDIRA-EPISODES/FAKTADUNIA/AUDIRA_SEJARAH_NEGARA_2026/EP59_FINLANDIA_3_JUTA_SAUNA/project/src/episode/: SaunaFilm.tsx = FilmScene + LOOK per scene + HudCard + Subtitle y1290 + Voiceover + AudiraOutro + AudiraSignature; timeline.ts = SHOTS Catmull-Rom + CARDS; scenes.tsx/parts.tsx = AssetModel id/assetType/size/ground/tint/grain). Kit HD2D ada di project/src/kits/hd2d (textures.ts hd2dTexture cobble/ashlar/plank/shingle, PixelHeroBillboard3D sprite, Overlay JRPG dialog, palette). Daftarkan KirunaPreview/KirunaFinal + Still KirunaCover di src/Root.tsx. 8 adegan per docs/TIMING_LOCK.md + docs/STORYBOARD.md; hero gereja clapboard-church-03a6f5 recolor #8E2B22 sama di semua adegan; FilmScene profile DOCUMENTARY_WARM exposure 1 envIntensity 0.55 ao, focus + aperture 0.006 maxBlur 0.03; apron terang, lampu jalan hangat FG; S1/S5–S8 Agustus sore tanpa salju, S2–S4 senja bersalju. AudiraSignature seed kiruna-ep69 handle @AudiraFaktaDunia; papan AUDIRA S1, plakat S8. Lalu render cover style/cover-topic.png (npm run cover / stills), npm run sfx (SHOTLIST.md dari tabel adegan), tahap 8: npm run draft/stills contact sheet 6–8 frame → draft/contact-sheet.jpg, npm run audit:visual, audit:camera klip, draft/THEME_CHECK.md (G22), record_score self lalu juri buta subagent (qa/jury.md) judge jury. LOLOS (≥3.8, tak ada <3) atau 2 putaran skor ≥3.5 → handover newSession ke Sesi C. JANGAN render final 1080×1920.",
+      "snapshot": {
+        "episode": "EP69",
+        "topic": "Kiruna, Swedia: kota dipindah karena tambang, gereja 672 ton jalan 5 km (Agustus 2025)",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-negara-EP69",
+        "currentStage": "animation",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:22:29.778Z",
+      "doing": "Sesi B s3 tahap 7: menulis film di project/src/episode/. SUDAH: timeline.ts (SHOTS 8 adegan A–H = S1–S8, CARDS 25 callout kind big/card/chip/stamp/dialog, FILM_SECONDS 83.6), parts.tsx (Church = GLB clapboard-church recolor Falu #8E2B22 via vertex color + clapboard canvas map+bump 0.5 + boxUV, ghost untuk cutaway; Organ; Trailers 2 SPMT prosedural; Folk/Crowd sprite pixel billboard; Lamp GLB + pointLight hangat; Tree/TreeRow; Ground/Road texMat hd2dTexture; MineHill + headframe; SignBoard canvas text; Haze). BELUM: scenes.tsx (SceneA–H), KirunaFilm.tsx (pola EP59 SaunaFilm: FilmScene DOCUMENTARY_WARM exposure 1 env 0.55 ao, focus=dist cam-target aperture 0.006 maxBlur 0.03, LOOK per scene: S1/S5–S8 Agustus sore, S2–S4 senja bersalju; HUD JRPG navy+emas; Subtitle y1290 DISPLAY 'El'/'Ka'/'A'/'Be'→LKAB, Audira→AUDIRA; Voiceover; AudiraOutro; AudiraSignature seed kiruna-ep69), Root.tsx (KirunaPreview/KirunaFinal + KirunaCover via Freeze ±2.2 dtk).",
+      "files": [
+        "project/src/episode/timeline.ts",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/KirunaFilm.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "Tulis scenes.tsx + KirunaFilm.tsx + daftar Root.tsx → npm run typecheck → npm run stills untuk cek tiap adegan → npm run cover -- KirunaPreview --episode=.. → npm run sfx → tahap 8 draft contact sheet, audit:visual, THEME_CHECK, record_score self + juri buta. JANGAN render final.",
+      "snapshot": {
+        "episode": "EP69",
+        "topic": "Kiruna, Swedia: kota dipindah karena tambang, gereja 672 ton jalan 5 km (Agustus 2025)",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-negara-EP69",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:25:44.691Z",
+      "doing": "Sesi B s3 (context guard 215k): kode film tahap 7 SELESAI ditulis dan lolos typecheck (npx tsc --noEmit tanpa error di src/episode/Root.tsx), BELUM dirender sama sekali. File: project/src/episode/timeline.ts (SHOTS A–H = S1–S8 kamera Catmull-Rom, CARDS 25 callout kind big/card/chip/stamp/dialog), parts.tsx (Church = GLB clapboard-church-03a6f5 dimuat sendiri lewat GLTFLoader, vertex color putih→Falu #8E2B22, gelap y>3→atap #2B2522, UV planar boxUV + tekstur clapboard canvas map+bump 0.5, prop ghost untuk cutaway; Organ pipa emas; Trailers 2 SPMT prosedural kuning; Folk/Crowd sprite pixel billboard 8 fps dgn rim pucat + bendera Swedia; Lamp GLB + bulb emisif + pointLight hangat; Tree/TreeRow; Ground/Road texMat hd2dTexture cobble/ashlar/plank; MineHill + headframe GLB; SignBoard teks canvas; Haze), scenes.tsx (SceneA hook jalan raya + papan AUDIRA; SceneB peta Skandinavia kanvas di meja + pin KIRUNA + garis Lingkar Arktik lalu kota bersalju di x=30; SceneC penampang tambang 3 level terowongan + shaft + meteran kedalaman + retak + rumah bergeser; SceneD pusat lama/baru + panah emas + crane; SceneE gereja 1912 sore + papan 1912 + warga mendongak; SceneF trailer masuk, angkat, pita 24 m, crane cabut tiang/lampu lalu lintas/jembatan; SceneG perjalanan + kerumunan ikut + kamera TV + matahari time-lapse; SceneH putar 180° + cutaway orgel + plakat AUDIRA · KIRUNA 2025), KirunaFilm.tsx (FilmScene DOCUMENTARY_WARM exposure 1 env 0.55 ao, focus=jarak kamera-target, aperture 0.006 maxBlur 0.03; LOOK AUG/DUSK; HUD JRPG navy + bingkai emas di top 262; dialog box top 900; stamp merah; subtitle y1290 dengan LKAB/AUDIRA; Voiceover; AudiraOutro; AudiraSignature seed kiruna-ep69), Root.tsx (KirunaPreview, KirunaFinal, Still KirunaCover = Freeze 2.4 dtk). Orientasi depan gereja, skala GLB, framing kamera tiap adegan BELUM diverifikasi visual.",
+      "files": [
+        "project/src/episode/timeline.ts",
+        "project/src/episode/parts.tsx",
+        "project/src/episode/scenes.tsx",
+        "project/src/episode/KirunaFilm.tsx",
+        "project/src/Root.tsx",
+        "docs/TIMING_LOCK.md",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md"
+      ],
+      "next": "Sesi B lanjutan: (1) npm run stills -- out/chk 2s,10s,14.5s,20s,24s,31s,36s,45s,52s,57s,62s,68s,73s,75.5s,79s KirunaPreview 0.5 lalu buat 1 contact sheet kecil (±1200 px) untuk cek; perbaiki skala/orientasi/kamera/cahaya (jangan baca banyak still terpisah). (2) npm run cover -- KirunaPreview --episode=.. --at=2.4s → style/cover-topic.png (atau render Still KirunaCover). (3) Tulis docs/SHOTLIST.md dari tabel adegan TIMING_LOCK bila belum ada, npm run sfx. (4) Tahap 8: npm run draft -- KirunaPreview (contact sheet → draft/contact-sheet.jpg), npm run audit:visual, audit:camera klip, draft/THEME_CHECK.md (G22 semua ya), record_score self lalu juri buta subagent (qa/jury.md) judge jury. LOLOS ≥3.8 tanpa aspek <3, atau 2 putaran skor terbaik ≥3.5 → handover newSession ke Sesi C. JANGAN render final 1080×1920.",
+      "snapshot": {
+        "episode": "EP69",
+        "topic": "Kiruna, Swedia: kota dipindah karena tambang, gereja 672 ton jalan 5 km (Agustus 2025)",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-negara-EP69",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:33:18.613Z",
+      "doing": "Sesi B s4: still cek diperbaiki (GLB 404 → salin ke public/models/polyfork/<type>/, spasi kata subtitle 0.42em, kamera gereja ditarik mundur PULL di timeline.ts, adegan C 31s/D 36s/orgel 75.5s dibingkai ulang, orgel diputar menghadap kamera), cover-topic.png 1080x1920, docs/SHOTLIST.md, sfx.wav -26 LUFS. Sedang: npm run draft -- KirunaPreview.",
+      "command": "npm run draft -- KirunaPreview --frames=2s,10s,24s,31s,38.5s,52s,62s,75.5s",
+      "files": [
+        "project/src/episode/timeline.ts",
+        "project/src/episode/scenes.tsx",
+        "project/src/core/hud/Subtitle.tsx",
+        "docs/SHOTLIST.md",
+        "style/cover-topic.png"
+      ],
+      "next": "THEME_CHECK.md, record_score self, juri buta, lalu handover newSession ke Sesi C",
+      "snapshot": {
+        "episode": "EP69",
+        "topic": "Kiruna, Swedia: kota dipindah karena tambang, gereja 672 ton jalan 5 km (Agustus 2025)",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-negara-EP69",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T15:36:22.670Z",
+      "doing": "Sesi B s4: draf putaran 1 selesai. npm run draft -- KirunaPreview --frames=2s,10s,24s,31s,38.5s,52s,62s,75.5s → draft/DRAFT_SHEET.jpg (+ salinan contact-sheet.jpg), ceilings L5 M5 D5 C5 R4, camera 5/5 (klip CHECK_44-62s.mp4). THEME_CHECK.md 8 baris semua ya. Self score 4.17 tercatat. Juri buta subagent sedang berjalan.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/camera.json",
+        "draft/jury_input.json"
+      ],
+      "next": "record_score judge jury (scores juri, ceilings+camera sama, still draft/DRAFT_SHEET.jpg). LOLOS → handover newSession Sesi C. Gagal → poles aspek lemah, draft ulang, skor ulang (maks 2 putaran).",
+      "snapshot": {
+        "episode": "EP69",
+        "topic": "Kiruna, Swedia: kota dipindah karena tambang, gereja 672 ton jalan 5 km (Agustus 2025)",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-negara-EP69",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:36:57.026Z",
+      "doing": "Sesi B SELESAI (s4). Draf putaran 1 juri buta LOLOS 4.17 (L4 M4 D5 C3 Mo5 R4; self 4.17). Ceilings L5 M5 D5 C5 R4, camera 5/5. THEME_CHECK 8 baris ya. Perbaikan s4: GLB disalin ke public/models/polyfork/<type>/; Subtitle.tsx gap 0.42em + kata depan opacity 0.62; timeline.ts PULL (A1.35 E/F/H1.75 G1.7) menarik kamera gereja mundur; adegan C 31s, D 33.3–40.3, orgel 74.7–76.6 dibingkai ulang; orgel diputar (group rot π/2) menghadap kamera; vignette elips 64%/34% 0.62 di KirunaFilm.tsx (depth cap 2→5). cover-topic.png 1080x1920 + cover_1080x1350.png. docs/SHOTLIST.md 18 shot; public/audio/sfx.wav −26 LUFS TP −7.1. Keputusan: style HD2D, Remotion+R3F, VO 80.48 s, film 83.6 s @ KirunaFinal. Kelemahan juri: frame 38.5s (pusat lama/baru) subjek kurang jelas, papan PUSAT BARU terpotong; hook 2s gereja terpotong tepi kiri — opsional poles kecil sebelum final, bukan wajib.",
+      "command": "npm run render:final -- KirunaFinal --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav (belum dijalankan; tunggu acc)",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/camera.json",
+        "draft/look.json",
+        "draft/THEME_CHECK.md",
+        "style/cover-topic.png",
+        "public/audio/sfx.wav",
+        "docs/SHOTLIST.md"
+      ],
+      "next": "Sesi C · Final tahap 9: tampilkan draft/DRAFT_SHEET.jpg, skor juri 4.17, durasi 83.6 s, cek audio G18c, lalu TUNGGU acc pengguna. Setelah acc: npm run render:final -- KirunaFinal ... --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav (setelan PC AUDIRA rule 07 §4 poin 9: --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc), QA −14 LUFS TP<−1, metadata, record_score final + juri, tahap 10 delivery (SOCIAL_CAPTIONS 6 platform, NOTES.md, 3 scheduled task review).",
+      "snapshot": {
+        "episode": "EP69",
+        "topic": "Kiruna, Swedia: kota dipindah karena tambang, gereja 672 ton jalan 5 km (Agustus 2025)",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-negara-EP69",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:56:31.513Z",
+      "doing": "Sesi C s5: render final KirunaFinal 1080x1920@60 (acc pengguna sudah). G18c lolos 12.4 LU setelah TARGET_LUFS -27.",
+      "command": "npm run render:final -- --comp=KirunaFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=3 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "project/public/audio/sfx.wav",
+        "project/sfx/cues/auto.py"
+      ],
+      "next": "QA -14 LUFS TP<-1, metadata -> FINAL_VIDEO_tagged, record_score final self+jury, tahap 10 delivery, 3 scheduled task.",
+      "snapshot": {
+        "episode": "EP69",
+        "topic": "Kiruna, Swedia: kota dipindah karena tambang, gereja 672 ton jalan 5 km (Agustus 2025)",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-negara-EP69",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T15:56:31.513Z",
+      "doing": "Sesi C s5: render final KirunaFinal 1080x1920@60 (acc pengguna sudah). G18c lolos 12.4 LU setelah TARGET_LUFS -27.",
+      "command": "npm run render:final -- --comp=KirunaFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=3 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "project/public/audio/sfx.wav",
+        "project/sfx/cues/auto.py"
+      ],
+      "next": "QA -14 LUFS TP<-1, metadata -> FINAL_VIDEO_tagged, record_score final self+jury, tahap 10 delivery, 3 scheduled task.",
+      "snapshot": {
+        "episode": "EP69",
+        "topic": "Kiruna, Swedia: kota dipindah karena tambang, gereja 672 ton jalan 5 km (Agustus 2025)",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-negara-EP69",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T16:29:17.178Z"
+    }
+  ],
+  "session": 5,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP69 Kiruna · s2",
+      "at": "2026-11-24T15:11:24.719Z"
+    },
+    {
+      "no": 3,
+      "title": "EP69 Kiruna · s3",
+      "at": "2026-11-24T15:15:58.993Z"
+    },
+    {
+      "no": 4,
+      "title": "EP69 Kiruna · s4",
+      "at": "2026-11-24T15:25:44.691Z"
+    },
+    {
+      "no": 5,
+      "title": "EP69 Kiruna · s5",
+      "at": "2026-11-24T15:36:57.026Z"
+    }
+  ]
+}

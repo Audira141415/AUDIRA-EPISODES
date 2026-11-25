@@ -1,0 +1,145 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#03141A}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.035;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.45) 42%,rgba(0,0,0,0.45) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:262px;z-index:10;transform-origin:50% 50%}
+.nb{font-variant-numeric:tabular-nums}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Inter,sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#fff;opacity:.82}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:30px;color:#A3E635;letter-spacing:.14em}
+
+.p{filter:drop-shadow(0 10px 30px rgba(0,0,0,.45))}
+.st{display:inline-flex;align-items:center;gap:12px;font-family:"JetBrains Mono",monospace;font-weight:700;font-size:25px;letter-spacing:.14em;color:#3FE0D0;background:rgba(3,20,26,.82);border:1px solid rgba(63,224,208,.45);border-radius:8px;padding:8px 16px;margin-bottom:14px}
+.st i{width:12px;height:12px;border-radius:50%;background:#3FE0D0;box-shadow:0 0 12px #3FE0D0}
+.h0{font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:132px;line-height:.92;color:#E6FBF8;letter-spacing:.01em;text-shadow:0 0 28px rgba(63,224,208,.45),0 6px 24px rgba(0,0,0,.7)}
+.sub{font-family:"Chakra Petch",sans-serif;font-weight:600;font-size:42px;color:#FFB547;margin-top:12px;text-shadow:0 2px 14px rgba(0,0,0,.8)}
+.h1{font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:84px;line-height:1;color:#E6FBF8;text-shadow:0 0 24px rgba(63,224,208,.4),0 4px 20px rgba(0,0,0,.8)}
+.h1 em{font-style:normal;color:#3FE0D0}
+.ro{background:rgba(3,20,26,.84);border:1px solid rgba(63,224,208,.3);border-left:6px solid #3FE0D0;border-radius:10px;padding:12px 20px;margin-top:12px;width:fit-content;max-width:860px}
+.ro b{display:block;font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:50px;line-height:1.05;color:#E6FBF8}
+.ro span{display:block;font-family:"JetBrains Mono",monospace;font-weight:500;font-size:25px;line-height:1.3;color:#9FF5EC;margin-top:4px}
+.stp{display:inline-block;margin-top:16px;font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:54px;color:#FFB547;border:4px solid #FFB547;border-radius:8px;padding:4px 18px;transform:rotate(-3deg);background:rgba(3,20,26,.7)}
+.tag{display:inline-block;margin-top:14px;font-family:"JetBrains Mono",monospace;font-weight:700;font-size:27px;letter-spacing:.06em;color:#03141A;background:#3FE0D0;border-radius:8px;padding:10px 16px}
+.tag.q{background:#FFB547}
+.du{display:flex;gap:14px;width:900px}.du>div{flex:1;background:rgba(3,20,26,.86);border:1px solid rgba(63,224,208,.35);border-top:6px solid #3FE0D0;border-radius:10px;padding:10px 18px}
+.du b{font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:118px;line-height:1;color:#E6FBF8}
+.du small{font-family:"Chakra Petch",sans-serif;font-weight:600;font-size:52px;color:#3FE0D0;margin:0 6px}
+.du span{display:block;font-family:"JetBrains Mono",monospace;font-size:25px;color:#9FF5EC}
+.tel{margin-top:14px;background:rgba(3,20,26,.86);border:1px solid rgba(63,224,208,.35);border-top:6px solid #FFB547;border-radius:10px;padding:10px 20px;width:640px}
+.tel b{display:block;font-family:"Chakra Petch",sans-serif;font-weight:700;font-size:110px;line-height:1;color:#E6FBF8}
+.tel>span{display:block;font-family:"JetBrains Mono",monospace;font-size:26px;color:#9FF5EC}
+.scw{margin-top:16px;width:620px;background:rgba(3,20,26,.86);border:1px solid rgba(63,224,208,.35);border-radius:10px;padding:10px 14px 6px}
+.scl{display:flex;justify-content:space-between;align-items:center;font-family:"JetBrains Mono",monospace;font-weight:700;font-size:21px;letter-spacing:.12em;color:#9FF5EC}
+.bmeter{display:inline-block;width:150px;height:12px;border:1px solid rgba(255,181,71,.6);border-radius:6px;overflow:hidden}
+.bmeter i{display:block;height:100%;background:#FFB547;transform-origin:0 50%}
+.scope{display:block;width:592px;height:110px}
+.scope polyline{fill:none;stroke:#FFB547;stroke-width:3.5;filter:drop-shadow(0 0 6px rgba(255,181,71,.8))}
+.scope .mid{stroke:rgba(63,224,208,.25);stroke-width:1.5}
+.srcl{font-family:Inter,sans-serif;font-weight:500;font-size:23px;line-height:1.35;color:#d6efec;margin-top:16px;max-width:860px;text-shadow:0 2px 10px #000}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="86.69" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN SARAN MEDIS</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="st"><i></i>CARA KERJA VIRAL &middot; EP 15</div>
+  <div class="h0">SAKLAR<br>DI DADA</div>
+  <div class="sub">penghenti gemetar Parkinson</div>
+  <div class="scw"><div class="scl"><span>GELOMBANG BETA</span><span class="bmeter"><i></i></span></div><svg class="scope" viewBox="0 0 600 120" preserveAspectRatio="none"><path d="M0 60H600" class="mid"/><polyline points=""/></svg></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="st"><i></i>3 NOV 2026 &middot; JAKARTA</div>
+  <div class="ro" data-at="s2:Jakarta" data-fx="left"><b>LAYANAN DBS DIUMUMKAN</b><span>stimulasi otak dalam, untuk Parkinson</span></div>
+  <div class="stp" data-at="s2:pertama" data-fx="stamp">BUKAN YANG PERTAMA</div>
+  <div class="ro" data-at="s2:dekade" data-fx="left"><b>&gt; 1 DEKADE</b><span>DBS sudah dilakukan di Indonesia</span></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="st"><i></i>PETA TARGET &middot; MRI</div>
+  <div class="ro" data-at="s3:Elektroda" data-fx="left"><b>ELEKTRODA TIPIS</b><span>masuk lewat lubang kecil di tengkorak</span></div>
+  <div class="tag" data-at="s3:sadar" data-fx="pop">PASIEN SERING SADAR &middot; TREMOR DIUJI</div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="st"><i></i>JALUR KABEL</div>
+  <div class="h1" data-at="s4:Inilah" data-fx="up">ALAT PACU JANTUNG<br><em>UNTUK OTAK</em></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="st"><i></i>STIMULASI ON</div>
+  <div class="du">
+    <div data-at="s5:130" data-fx="pop"><small>&plusmn;</small><b class="ct" data-from="0" data-to="130" data-a="s5:130" data-d="1.1">0</b><span>denyut per detik</span></div>
+    <div data-at="s5:60" data-fx="pop"><b>60</b><small>&micro;s</small><span>lebar tiap denyut</span></div>
+  </div>
+  <div class="tag" data-at="s5:Tremor" data-fx="pop">TREMOR MEREDA HAMPIR SEKETIKA</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="st"><i></i>KENAPA BERHASIL?</div>
+  <div class="ro" data-at="s6:beta" data-fx="left"><b>GELOMBANG BETA 13&ndash;30 Hz</b><span>terkait gerakan lambat dan kaku</span></div>
+  <div data-at="s6:serempak" data-fx="up"><div class="scw"><div class="scl"><span>SINYAL BETA</span><span class="bmeter"><i></i></span></div><svg class="scope" viewBox="0 0 600 120" preserveAspectRatio="none"><path d="M0 60H600" class="mid"/><polyline points=""/></svg></div></div>
+  <div class="tag q" data-at="s6:caranya" data-fx="pop">CARANYA BELUM SEPENUHNYA DIPAHAMI</div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="st"><i></i>FEB 2025 &middot; FDA</div>
+  <div class="ro" data-at="s7:adaptif" data-fx="left"><b>DBS ADAPTIF</b><span>mendengar sinyal beta, mengatur stimulasinya</span></div>
+  <div class="tel" data-at="s7:orang" data-fx="up"><b>&gt;<span class="ct" data-from="0" data-to="200000" data-a="s7:orang" data-d="1.4">0</span></b><span>orang di dunia memakai DBS</span></div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="h1" data-at="s8:Bukan" data-fx="up">PENGENDALI GEJALA<br><em>BUKAN PENYEMBUH</em></div>
+  <div class="srcl" data-at="s8:pengendali" data-fx="fade">Sumber: Koeglsperger dkk. 2019 (Front Neurol); K&uuml;hn dkk. 2008 (J Neurosci); AJMC 26 Feb 2025; Medtronic 4 Nov 2026; Media Indonesia &amp; Olenka 3 Nov 2026; detikNews 2015. Model 3D adalah ilustrasi. Konsultasikan dengan dokter saraf.</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">CARA KERJA VIRAL &middot; EP 15</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":5.161,"s2":5.321,"s2e":18.715,"s3":18.875,"s3e":34.318,"s4":34.478,"s4e":42.468,"s5":42.628,"s5e":53.312,"s6":53.472,"s6e":66.426,"s7":66.586,"s7e":77.449,"s8":77.609,"s8e":83.687,"end":83.687,"dur":86.69,"outro":83.937},AT={"s1:menghentikan":2.53,"s1:detik":4.001,"s1:Bagaimana":4.495,"s3:MRI":21.073,"s3:subtalamikus":25.052,"s3:globus":26.399,"s3:cincin":29.013,"s3:masuk":29.756,"s3:diuji":33.869,"s4:Kabelnya":34.872,"s4:telinga":37.55,"s4:stimulator":38.746,"s5:dinyalakan":43.343,"s6:Kenapa":53.48,"s6:Stimulasi":63.149,"s7:FDA":69.15,"s7:mendengar":72.392,"s7:mengatur":73.414,"s8:pengendali":80.155,"s2:Jakarta":7.666,"s2:pertama":13.872,"s2:dekade":18.375,"s3:Elektroda":27.666,"s3:sadar":31.887,"s4:Inilah":40.827,"s5:130":47.012,"s5:60":49.767,"s5:Tremor":51.501,"s6:beta":58.473,"s6:serempak":57.606,"s6:caranya":64.987,"s7:adaptif":70.466,"s7:orang":76.35,"s8:Bukan":77.616},DUR=86.69,OUT=83.937;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ 
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{clipPath:'inset(0% 0% 100% 0%)',opacity:1,filter:'brightness(2.4) drop-shadow(0 10px 30px rgba(0,0,0,.45))'},{clipPath:'inset(0% 0% 0% 0%)',filter:'brightness(1) drop-shadow(0 10px 30px rgba(0,0,0,.45))',duration:.5,ease:'power3.out'},a-.16),POUT=(tl,p,b)=>tl.to(p,{clipPath:'inset(49.5% 0% 49.5% 0%)',duration:.26,ease:'power3.in'},b-.36).to(p,{opacity:0,duration:.06},b-.1);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP15_DBS_PACU_OTAK")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

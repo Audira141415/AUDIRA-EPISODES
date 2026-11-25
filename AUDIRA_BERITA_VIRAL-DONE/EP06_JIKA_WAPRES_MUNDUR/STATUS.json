@@ -1,0 +1,166 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP06_JIKA_WAPRES_MUNDUR",
+  "topic": "5 berita viral Indonesia 10 November 2026 (riset saja, belum produksi)",
+  "createdAt": "2026-11-11T06:24:34.518Z",
+  "updatedAt": "2026-11-11T07:48:49.130Z",
+  "currentStage": "setup",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T07:48:49.129Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-11T07:33:07.833Z",
+      "startedAt": "2026-11-11T07:33:07.833Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T07:48:49.129Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-11T06:24:34.518Z",
+      "startedAt": "2026-11-11T06:24:34.518Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-11T07:33:32.041Z",
+      "notes": [
+        {
+          "at": "2026-11-11T07:48:49.129Z",
+          "text": "sync: STYLE_DECISION.md ada; acc tercatat di file"
+        }
+      ],
+      "approvalSource": "file",
+      "doneAt": "2026-11-11T07:33:32.041Z",
+      "startedAt": "2026-11-11T07:33:32.041Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-11T07:48:49.129Z",
+          "text": "sync: naskah ada; acc tidak tercatat, disimpulkan karena tahap sesudahnya sudah ada"
+        }
+      ],
+      "approvalSource": "inferred",
+      "doneAt": "2026-11-11T06:46:47.207Z",
+      "startedAt": "2026-11-11T06:46:47.207Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T07:48:49.129Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-11T06:47:13.970Z",
+      "startedAt": "2026-11-11T06:47:13.970Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T07:48:49.130Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-11T07:31:07.219Z",
+      "startedAt": "2026-11-11T07:31:07.219Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-11T07:48:49.130Z",
+          "text": "sync: 1 gambar draf/contact sheet; acc tidak tercatat, disimpulkan karena tahap sesudahnya sudah ada"
+        }
+      ],
+      "approvalSource": "inferred",
+      "doneAt": "2026-11-11T07:00:55.117Z",
+      "startedAt": "2026-11-11T07:00:55.117Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T07:48:49.130Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        }
+      ],
+      "doneAt": "2026-11-11T07:33:07.554Z",
+      "startedAt": "2026-11-11T07:33:07.554Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T07:48:49.130Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-11T07:31:42.532Z",
+      "startedAt": "2026-11-11T07:31:42.532Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "berita-viral-10-nov-EP06",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-11T07:48:49.130Z"
+}

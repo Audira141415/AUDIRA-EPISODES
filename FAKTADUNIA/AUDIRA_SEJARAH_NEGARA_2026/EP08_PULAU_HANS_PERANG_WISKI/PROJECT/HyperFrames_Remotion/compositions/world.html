@@ -1,0 +1,204 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#E6F0F6}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.035;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.16) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0) 42%,rgba(0,0,0,0) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Manrope,sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#2B5C7A;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+
+#crk{position:absolute;left:0;top:0;z-index:12;pointer-events:none;filter:drop-shadow(0 0 6px rgba(127,184,214,.9))}
+.p{color:#16324A}
+.tk{display:inline-block;font-family:Manrope,sans-serif;font-weight:800;font-size:25px;letter-spacing:.14em;color:#16324A;background:rgba(255,255,255,.88);padding:9px 18px;border-radius:999px;box-shadow:0 8px 22px rgba(22,50,74,.16)}
+.tk b{font-weight:800}
+.h1{margin-top:14px;font-family:Fraunces,serif;font-weight:800;font-size:100px;line-height:.98;color:#16324A;text-shadow:0 2px 0 rgba(255,255,255,.75),0 0 28px rgba(232,244,250,.95)}
+.h1 em{font-style:italic;font-weight:700;color:#D52B1E}
+.h1.sm{font-size:88px}
+.h2{margin-top:10px;font-family:Fraunces,serif;font-weight:800;font-size:150px;line-height:.9;color:#16324A;text-shadow:0 2px 0 rgba(255,255,255,.75),0 0 30px rgba(232,244,250,.95)}
+.h2.sm{font-size:96px;margin-top:14px}
+.card{display:inline-block;margin-top:14px;max-width:880px;font-family:Manrope,sans-serif;font-weight:700;font-size:32px;line-height:1.25;color:#16324A;background:rgba(255,255,255,.92);padding:14px 22px;border-radius:22px;box-shadow:0 12px 28px rgba(22,50,74,.18)}
+.card i{display:block;font-style:normal;font-weight:600;font-size:25px;color:#2B5C7A;margin-top:4px}
+.card.q{font-size:36px}
+.row{display:flex;gap:20px;align-items:center;margin-top:14px;padding:12px 24px;background:rgba(255,255,255,.92);border-radius:24px;border-left:10px solid #7FB8D6;box-shadow:0 12px 28px rgba(22,50,74,.18);width:fit-content;max-width:880px}
+.row>b{flex:none;font-family:Fraunces,serif;font-weight:800;font-size:68px;line-height:1;color:#16324A}.row>b.sm{font-size:50px;color:#9A5B14}
+.row>b b{font-weight:800}
+.row span{font-family:Manrope,sans-serif;font-weight:700;font-size:30px;line-height:1.2;color:#16324A}.row span i{font-style:normal;font-weight:600;font-size:24px;color:#2B5C7A}
+.row.r2{border-left-color:#D52B1E}
+.fl{display:block;flex:none;border-radius:3px;box-shadow:0 0 0 2px rgba(22,50,74,.25)}
+.duo{display:flex;gap:14px;margin-top:20px}
+.bru{display:inline-block;font-style:normal;font-family:Manrope,sans-serif;font-weight:800;font-size:38px;letter-spacing:.03em;padding:10px 18px;color:#fff;background:#D52B1E;border:5px solid #16324A;box-shadow:8px 8px 0 #16324A}
+.bru.w{background:#fff;color:#16324A}
+.st{display:inline-block;margin-top:20px;font-family:Manrope,sans-serif;font-weight:800;font-size:44px;line-height:1.08;letter-spacing:.02em;padding:10px 20px;color:#fff;background:#D52B1E;border:5px solid #16324A;box-shadow:9px 9px 0 #16324A;max-width:860px}
+.st.w{background:#fff;color:#16324A;font-size:40px}
+.vs{display:flex;gap:14px;align-items:center;margin-top:14px}
+.vs span{display:flex;gap:12px;align-items:center;font-family:Manrope,sans-serif;font-weight:800;font-size:32px;color:#16324A;background:rgba(255,255,255,.94);padding:10px 18px;border-radius:18px;box-shadow:0 10px 24px rgba(22,50,74,.18)}
+.vs i{font-style:normal;font-family:Manrope,sans-serif;font-weight:800;font-size:46px;color:#16324A}
+.sign{display:inline-block;margin-top:16px;background:#fff;border:6px solid #C8102E;border-radius:10px;padding:14px 24px;box-shadow:0 14px 30px rgba(22,50,74,.22)}
+.sign .dk{font-family:Fraunces,serif;font-weight:800;font-style:italic;font-size:46px;color:#16324A}
+.sign .id{font-family:Manrope,sans-serif;font-weight:700;font-size:28px;color:#2B5C7A;margin-top:4px}
+.tally{display:flex;gap:16px;align-items:center;margin-top:16px;padding:12px 20px;background:#fff;border:5px solid #16324A;box-shadow:8px 8px 0 #16324A;width:fit-content}
+.tally b{font-family:Manrope,sans-serif;font-weight:800;font-size:32px;letter-spacing:.06em;color:#16324A}
+.tally span{display:flex;gap:10px;align-items:center}.tally em{display:none}
+.war{display:inline-block;margin-top:6px;font-family:Manrope,sans-serif;font-weight:800;font-size:132px;line-height:.9;letter-spacing:.01em;color:#fff;background:#D52B1E;padding:18px 34px 26px;border:7px solid #16324A;box-shadow:16px 16px 0 #16324A}
+.war small{display:block;font-size:26px;letter-spacing:.2em;margin-bottom:12px;color:#FFE3DF}
+.ad{width:600px;background:#fff;border:5px solid #16324A;border-radius:16px;box-shadow:10px 10px 0 #16324A;overflow:hidden;margin-top:18px}
+.ad.a2{margin-left:250px;margin-top:-6px}
+.ad .bar{display:flex;gap:9px;align-items:center;height:42px;padding:0 16px;background:#E8F4FA;border-bottom:4px solid #16324A}
+.ad .bar i{width:14px;height:14px;border-radius:50%;background:#7FB8D6;border:2px solid #16324A}
+.ad .bar span{margin-left:12px;flex:1;font-family:Manrope,sans-serif;font-weight:600;font-size:21px;color:#2B5C7A;background:#fff;border-radius:999px;padding:2px 14px;border:2px solid #BCD6E4}
+.ad .bd{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding:14px 20px 18px}
+.ad .bd b{font-family:Manrope,sans-serif;font-weight:800;font-size:20px;letter-spacing:.06em;background:#F9E27A;color:#16324A;padding:2px 10px;border-radius:6px}
+.ad .bd p{margin:0;width:100%;font-family:Fraunces,serif;font-weight:800;font-size:44px;line-height:1.05;color:#16324A}
+.lb{margin-top:14px;font-family:Manrope,sans-serif;font-weight:600;font-size:22px;color:#2B5C7A}
+.tag{display:flex;gap:18px;align-items:center;margin-top:12px;padding:12px 22px;background:rgba(255,255,255,.94);border-radius:20px;box-shadow:0 10px 24px rgba(22,50,74,.18);width:fit-content}
+.tag b{display:block;font-family:Fraunces,serif;font-weight:800;font-size:40px;line-height:1.05;color:#16324A}
+.tag span{display:block;font-family:Manrope,sans-serif;font-weight:700;font-size:23px;color:#2B5C7A;margin-top:2px}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="88.85" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI &middot; SKALA DISEDERHANAKAN</div>
+<svg id="crk" width="1080" height="1920" viewBox="0 0 1080 1920"><polyline id="crk1" points="" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="bevel"/><polyline id="crk2" points="" fill="none" stroke="#7FB8D6" stroke-width="2" stroke-linejoin="bevel"/></svg>
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="tk">FAKTA SEJARAH NEGARA &middot; EP 08</div>
+  <div class="h1">Dua negara,<br><em>satu pulau</em></div>
+  <div class="row" data-at="s1:hampir" data-fx="left"><b>&plusmn;50</b><span>tahun bersengketa<br><i>1973 &ndash; 2022</i></span></div>
+  <div class="duo"><i class="bru" data-at="s1:Bendera" data-fx="pop">BENDERA</i><i class="bru w" data-at="s1:sebotol" data-fx="pop">+ SEBOTOL MINUMAN</i></div>
+</div>
+<div class="p" data-in="s2" data-out="s2:Luasnya">
+  <div class="tk">SELAT NARES &middot; ARKTIK</div>
+  <div class="h1">Pulau Hans</div>
+  <div class="card" data-at="s2:batu" data-fx="up">batu gundul, tak berpenghuni<br><i>Inuit menyebutnya Tartupaluk: &ldquo;berbentuk ginjal&rdquo;</i></div>
+</div>
+<div class="p" data-in="s2:Luasnya" data-out="s3">
+  <div class="row"><b><b class="ct" data-from="0" data-to="1.3" data-a="s2:1,3" data-d="1" data-dec="1">0,0</b> km&sup2;</b><span>luas pulau<br><i>&plusmn; 1.290 &times; 1.199 m</i></span></div>
+  <div class="row" data-at="s2:35" data-fx="left"><b><b class="ct" data-from="0" data-to="35" data-a="s2:35" data-d="1.1">0</b> km</b><span>lebar selat<br><i>Kanada &harr; Greenland</i></span></div>
+  <div class="st" data-at="s2:perairan" data-fx="stamp">MASUK PERAIRAN KEDUANYA</div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="tk">17 DES 1973 &middot; PERJANJIAN LANDAS KONTINEN</div>
+  <div class="h2">1973</div>
+  <div class="card" data-at="s3:menyepakati" data-fx="up">Kanada &amp; Denmark sepakat batas laut</div>
+  <div class="vs" data-at="s3:mengklaim" data-fx="pop"><span><svg class="fl" width="48" height="24" viewBox="0 0 48 24"><rect width="48" height="24" fill="#fff"/><rect width="12" height="24" fill="#D52B1E"/><rect x="36" width="12" height="24" fill="#D52B1E"/><polygon points="24.0,5.3 25.2,7.6 26.8,7.0 26.2,10.6 28.5,9.2 29.2,10.2 31.3,9.6 30.2,11.8 31.6,12.4 28.2,14.8 28.8,16.0 24.8,15.4 24.5,18.7 23.5,18.7 23.2,15.4 19.2,16.0 19.8,14.8 16.4,12.4 17.8,11.8 16.7,9.6 18.8,10.2 19.5,9.2 21.8,10.6 21.2,7.0 22.8,7.6" fill="#D52B1E"/></svg> &ldquo;milik kami&rdquo;</span><span><svg class="fl" width="42" height="31.8" viewBox="0 0 37 28"><rect width="37" height="28" fill="#C8102E"/><rect x="12" width="4" height="28" fill="#fff"/><rect y="12" width="37" height="4" fill="#fff"/></svg> &ldquo;milik kami&rdquo;</span></div>
+  <div class="st" data-at="s3:titik" data-fx="stamp">TANPA TITIK TEMU</div>
+</div>
+<div class="p" data-in="s4" data-out="s4:Konon">
+  <div class="tk">MENTERI DENMARK URUSAN GREENLAND</div>
+  <div class="h2">1984</div>
+  <div class="sign" data-at="s4:pesan" data-fx="pop"><div class="dk">&ldquo;Velkommen til den danske &oslash;&rdquo;</div><div class="id">Selamat datang di pulau Denmark</div></div>
+</div>
+<div class="p" data-in="s4:Konon" data-out="s5">
+  <div class="st" data-at="s4:Konon" data-fx="stamp">KONON&hellip;</div>
+  <div class="card" data-at="s4:sebotol" data-fx="up">ikut ditinggalkan: sebotol minuman keras Denmark<br><i>cerita yang beredar: brendi atau schnapps</i></div>
+</div>
+<div class="p" data-in="s5" data-out="s5:Media">
+  <div class="tk">BALASAN KANADA</div>
+  <div class="row r2" data-at="s5:benderanya" data-fx="left"><svg class="fl" width="84" height="42" viewBox="0 0 84 42"><rect width="84" height="42" fill="#fff"/><rect width="21" height="42" fill="#D52B1E"/><rect x="63" width="21" height="42" fill="#D52B1E"/><polygon points="42.0,9.4 44.1,13.2 46.9,12.2 45.9,18.5 49.9,16.1 51.2,17.8 54.7,16.8 52.9,20.6 55.2,21.7 49.4,25.9 50.5,28.1 43.4,27.0 42.9,32.6 41.1,32.6 40.6,27.0 33.5,28.1 34.6,25.9 28.8,21.7 31.1,20.6 29.3,16.8 32.8,17.8 34.1,16.1 38.1,18.5 37.1,12.2 39.9,13.2" fill="#D52B1E"/></svg><span>bendera Kanada</span></div>
+  <div class="row r2" data-at="s5:wiski" data-fx="left"><b class="sm">WISKI</b><span>sebotol Canadian Club</span></div>
+  <div class="tally" data-at="s5:Begitu" data-fx="up"><b>BERGANTIAN</b><span id="tal"><em id="t0"><svg class="fl" width="52" height="26" viewBox="0 0 52 26"><rect width="52" height="26" fill="#fff"/><rect width="13" height="26" fill="#D52B1E"/><rect x="39" width="13" height="26" fill="#D52B1E"/><polygon points="26.0,5.8 27.3,8.2 29.1,7.5 28.4,11.5 30.9,9.9 31.7,11.0 33.9,10.4 32.8,12.8 34.2,13.4 30.6,16.1 31.2,17.4 26.9,16.7 26.5,20.2 25.5,20.2 25.1,16.7 20.8,17.4 21.4,16.1 17.8,13.4 19.2,12.8 18.1,10.4 20.3,11.0 21.1,9.9 23.6,11.5 22.9,7.5 24.7,8.2" fill="#D52B1E"/></svg></em><em id="t1"><svg class="fl" width="46" height="34.8" viewBox="0 0 37 28"><rect width="37" height="28" fill="#C8102E"/><rect x="12" width="4" height="28" fill="#fff"/><rect y="12" width="37" height="4" fill="#fff"/></svg></em><em id="t2"><svg class="fl" width="52" height="26" viewBox="0 0 52 26"><rect width="52" height="26" fill="#fff"/><rect width="13" height="26" fill="#D52B1E"/><rect x="39" width="13" height="26" fill="#D52B1E"/><polygon points="26.0,5.8 27.3,8.2 29.1,7.5 28.4,11.5 30.9,9.9 31.7,11.0 33.9,10.4 32.8,12.8 34.2,13.4 30.6,16.1 31.2,17.4 26.9,16.7 26.5,20.2 25.5,20.2 25.1,16.7 20.8,17.4 21.4,16.1 17.8,13.4 19.2,12.8 18.1,10.4 20.3,11.0 21.1,9.9 23.6,11.5 22.9,7.5 24.7,8.2" fill="#D52B1E"/></svg></em><em id="t3"><svg class="fl" width="46" height="34.8" viewBox="0 0 37 28"><rect width="37" height="28" fill="#C8102E"/><rect x="12" width="4" height="28" fill="#fff"/><rect y="12" width="37" height="4" fill="#fff"/></svg></em><em id="t4"><svg class="fl" width="52" height="26" viewBox="0 0 52 26"><rect width="52" height="26" fill="#fff"/><rect width="13" height="26" fill="#D52B1E"/><rect x="39" width="13" height="26" fill="#D52B1E"/><polygon points="26.0,5.8 27.3,8.2 29.1,7.5 28.4,11.5 30.9,9.9 31.7,11.0 33.9,10.4 32.8,12.8 34.2,13.4 30.6,16.1 31.2,17.4 26.9,16.7 26.5,20.2 25.5,20.2 25.1,16.7 20.8,17.4 21.4,16.1 17.8,13.4 19.2,12.8 18.1,10.4 20.3,11.0 21.1,9.9 23.6,11.5 22.9,7.5 24.7,8.2" fill="#D52B1E"/></svg></em></span></div>
+</div>
+<div class="p" data-in="s5:Media" data-out="s5:Tahun">
+  <div class="war" data-at="s5:Media" data-fx="stamp"><small>JULUKAN MEDIA</small>PERANG<br>WISKI</div>
+  <div class="st w" data-at="s5:sengketa" data-fx="stamp">sengketa paling ramah di dunia</div>
+</div>
+<div class="p" data-in="s5:Tahun" data-out="s6">
+  <div class="tk">2005 &middot; PERANG PINDAH KE IKLAN DARING</div>
+  <div class="ad a1" data-at="s5:perangnya" data-fx="pop"><div class="bar"><i></i><i></i><i></i><span>pencarian: hans island</span></div><div class="bd"><b>Iklan</b><svg class="fl" width="30" height="22.7" viewBox="0 0 37 28"><rect width="37" height="28" fill="#C8102E"/><rect x="12" width="4" height="28" fill="#fff"/><rect y="12" width="37" height="4" fill="#fff"/></svg><p>Pulau Hans milik Denmark!</p></div></div>
+  <div class="ad a2" data-at="s5:iklan" data-fx="pop"><div class="bar"><i></i><i></i><i></i><span>pencarian: hans island</span></div><div class="bd"><b>Iklan</b><svg class="fl" width="34" height="17" viewBox="0 0 34 17"><rect width="34" height="17" fill="#fff"/><rect width="8.5" height="17" fill="#D52B1E"/><rect x="25.5" width="8.5" height="17" fill="#D52B1E"/><polygon points="17.0,3.8 17.9,5.4 19.0,4.9 18.6,7.5 20.2,6.5 20.7,7.2 22.1,6.8 21.4,8.4 22.4,8.8 20.0,10.5 20.4,11.4 17.6,10.9 17.4,13.2 16.6,13.2 16.4,10.9 13.6,11.4 14.0,10.5 11.6,8.8 12.6,8.4 11.9,6.8 13.3,7.2 13.8,6.5 15.4,7.5 15.0,4.9 16.1,5.4" fill="#D52B1E"/></svg><p>Bukan. Milik Kanada!</p></div></div>
+  <div class="lb" data-at="s5:iklan" data-fx="fade">ilustrasi iklan, bukan tangkapan layar asli</div>
+</div>
+<div class="p" data-in="s6" data-out="s6:pembagian">
+  <div class="tk">SETELAH <b class="ct" data-from="0" data-to="17" data-a="s6:17" data-d=".8">0</b> TAHUN NEGOSIASI</div>
+  <div class="h2 sm">14 Juni 2022</div>
+  <div class="tag" data-at="s6:Kanada" data-fx="left"><svg class="fl" width="60" height="30" viewBox="0 0 60 30"><rect width="60" height="30" fill="#fff"/><rect width="15" height="30" fill="#D52B1E"/><rect x="45" width="15" height="30" fill="#D52B1E"/><polygon points="30.0,6.7 31.5,9.5 33.5,8.7 32.8,13.2 35.7,11.5 36.6,12.7 39.1,12.0 37.8,14.7 39.5,15.5 35.3,18.5 36.0,20.0 31.0,19.3 30.6,23.3 29.4,23.3 29.0,19.3 24.0,20.0 24.7,18.5 20.6,15.5 22.2,14.7 20.9,12.0 23.4,12.7 24.3,11.5 27.2,13.2 26.5,8.7 28.5,9.5" fill="#D52B1E"/></svg><div><b>M&eacute;lanie Joly</b><span>Menteri Luar Negeri Kanada</span></div></div>
+  <div class="tag" data-at="s6:Denmark" data-fx="left"><svg class="fl" width="52" height="39.4" viewBox="0 0 37 28"><rect width="37" height="28" fill="#C8102E"/><rect x="12" width="4" height="28" fill="#fff"/><rect y="12" width="37" height="4" fill="#fff"/></svg><div><b>Jeppe Kofod</b><span>Menteri Luar Negeri Denmark</span></div></div>
+  <div class="tag" data-at="s6:Greenland" data-fx="left"><svg class="fl" width="54" height="36.0" viewBox="0 0 18 12"><rect width="18" height="6" fill="#fff"/><rect y="6" width="18" height="6" fill="#C8102E"/><path d="M3 6 A4 4 0 0 1 11 6 Z" fill="#C8102E"/><path d="M3 6 A4 4 0 0 0 11 6 Z" fill="#fff"/></svg><div><b>M&uacute;te B. Egede</b><span>Perdana Menteri Greenland</span></div></div>
+</div>
+<div class="p" data-in="s6:pembagian" data-out="s7">
+  <div class="tk">PULAU DIBAGI DUA</div>
+  <div class="h1">kira-kira<br><em>separuh-separuh</em></div>
+  <div class="card" data-at="s6:mengikuti" data-fx="up">mengikuti retakan alami di permukaannya</div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="tk">PERBATASAN DARAT BARU</div>
+  <div class="row"><b><b class="ct" data-from="0" data-to="1280" data-a="s7:1.280" data-d="1.4">0</b> m</b><span>panjang garis batas<br><i>di atas Pulau Hans</i></span></div>
+  <div class="vs" data-at="s7:bertetangga" data-fx="pop"><span><svg class="fl" width="48" height="24" viewBox="0 0 48 24"><rect width="48" height="24" fill="#fff"/><rect width="12" height="24" fill="#D52B1E"/><rect x="36" width="12" height="24" fill="#D52B1E"/><polygon points="24.0,5.3 25.2,7.6 26.8,7.0 26.2,10.6 28.5,9.2 29.2,10.2 31.3,9.6 30.2,11.8 31.6,12.4 28.2,14.8 28.8,16.0 24.8,15.4 24.5,18.7 23.5,18.7 23.2,15.4 19.2,16.0 19.8,14.8 16.4,12.4 17.8,11.8 16.7,9.6 18.8,10.2 19.5,9.2 21.8,10.6 21.2,7.0 22.8,7.6" fill="#D52B1E"/></svg> Kanada</span><i>&harr;</i><span><svg class="fl" width="42" height="31.8" viewBox="0 0 37 28"><rect width="37" height="28" fill="#C8102E"/><rect x="12" width="4" height="28" fill="#fff"/><rect y="12" width="37" height="4" fill="#fff"/></svg> Denmark</span></div>
+  <div class="st" data-at="s7:paling" data-fx="stamp">PERBATASAN DARAT ANTARNEGARA PALING UTARA DI DUNIA</div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="h1 sm">Perang tanpa<br><em>pecundang</em></div>
+  <div class="card q" data-at="s8:Menurut" data-fx="up">Sengketa perbatasan lain bisa sesantai ini?</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 08</div></div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":6.388,"s2":6.548,"s2e":18.555,"s3":18.715,"s3e":30.57,"s4":30.73,"s4e":42.208,"s5":42.368,"s5e":54.575,"s6":54.735,"s6e":68.169,"s7":68.329,"s7e":78.939,"s8":79.099,"s8e":85.849,"end":85.849,"dur":88.85,"outro":86.099},AT={"s1:sebotol":5.599,"s1:Bendera":4.794,"s2:Selat":8.865,"s2:Nares":9.113,"s2:Kanada":9.98,"s2:Greenland":10.615,"s2:negara":18.183,"s2:kedua":17.951,"s2:pulau":16.898,"s2:Pulau":6.791,"s3:1973":19.053,"s3:batas":23.171,"s3:itu":24.363,"s3:Tapi":25.183,"s3:Hans":26.112,"s3:keduanya":26.917,"s3:temu":30.245,"s3:Kanada":20.771,"s3:Denmark":21.545,"s4:menteri":32.477,"s4:Denmark":32.848,"s4:Greenland":33.56,"s4:mendarat":33.885,"s4:menancapkan":34.551,"s4:bendera":35.186,"s4:selamat":37.941,"s4:sebotol":40.846,"s4:keras":41.605,"s5:membalas":43.16,"s5:Canadian":45.497,"s5:Perang":49.449,"s5:2005":52.206,"s5:Begitu+0.45":46.927,"s5:Begitu+0.9":47.377,"s5:Begitu+1.35":47.827,"s5:bergantian":47.205,"s5:dunia":51.106,"s6:empat":56.012,"s6:menandatangani":62.436,"s6:separuh-separuh":65.151,"s6:retakan":66.791,"s6:negosiasi":59.495,"s6:Kanada":60.16,"s6:Denmark":60.779,"s6:Greenland":61.987,"s7:perbatasan":69.165,"s7:Kanada":72.228,"s7:Denmark":73.482,"s7:darat":69.769,"s7:utara":78.072,"s7:dunia":78.552,"s7:meter":71.44,"s8:tanpa":80.081,"s8:pecundang":80.592,"s8:sesantai":85.167,"s1:hampir":2.636,"s2:Luasnya":11.652,"s2:batu":7.457,"s2:1,3":12.318,"s2:35":15.134,"s2:perairan":17.595,"s3:menyepakati":22.381,"s3:mengklaim":28.202,"s3:titik":29.92,"s4:Konon":39.68,"s4:pesan":37.229,"s5:Media":48.582,"s5:benderanya":43.841,"s5:wiski":45.188,"s5:Begitu":46.477,"s5:Tahun":51.866,"s5:sengketa":50.115,"s5:perangnya":52.779,"s5:iklan":53.816,"s6:pembagian":63.148,"s6:17":58.798,"s6:mengikuti":66.358,"s7:1.280":70.481,"s7:bertetangga":74.317,"s7:paling":77.623,"s8:Menurut":81.753},DUR=88.85,OUT=86.099;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ 
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.set(p,{opacity:1},a-.14),POUT=(tl,p,b)=>tl.set(p,{opacity:1},b);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(()=>{let L=null;const J=[0,-22,14,-10,24,-16,8,-20,12,0];const ez=(u)=>u<=0?0:u>=1?1:1-Math.pow(1-u,3);
+const crk1=document.getElementById('crk1'),crk2=document.getElementById('crk2');
+const SW=[AT['s5:benderanya']-.2,AT['s5:Begitu'],AT['s5:Begitu+0.45'],AT['s5:Begitu+0.9'],AT['s5:Begitu+1.35']];
+return (t)=>{
+ if(!L)L=[...document.querySelectorAll('#root .p')].map(p=>({p,first:p.dataset.first==='1',a:p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]),b:p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out])}));
+ let line='',lo=0;
+ for(const q of L){const W=q.p.offsetWidth,H=q.p.offsetHeight;
+  const ui=q.first?1:(t-(q.a-.14))/.5,uo=(t-(q.b-.34))/.32;
+  let mode=0,X=0;
+  if(uo>0&&uo<1){mode=2;X=-40+(W+90)*ez(uo);}else if(ui>0&&ui<1){mode=1;X=-40+(W+90)*ez(ui);}
+  if(mode===0){q.p.style.clipPath='none';continue;}
+  const pts=J.map((j,k)=>[X+j,-30+(H+60)*k/(J.length-1)]);
+  const edge=pts.map(([x,y])=>x.toFixed(1)+'px '+y.toFixed(1)+'px');
+  q.p.style.clipPath=mode===1?'polygon(-60px -30px,'+edge.join(',')+',-60px '+(H+30)+'px)':'polygon('+edge.join(',')+','+(W+120)+'px '+(H+30)+'px,'+(W+120)+'px -30px)';
+  const u=mode===1?ui:uo;lo=Math.max(lo,Math.sin(Math.PI*Math.min(1,u*1.15)));
+  line=pts.map(([x,y])=>(56+x).toFixed(1)+','+(q.p.offsetTop+y).toFixed(1)).join(' ');}
+ crk1.setAttribute('points',line);crk2.setAttribute('points',line);crk1.style.opacity=crk2.style.opacity=lo.toFixed(3);
+ for(let i=0;i<5;i++){const e=document.getElementById('t'+i);if(e)e.style.display=t>=SW[i]?'block':'none';}
+};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

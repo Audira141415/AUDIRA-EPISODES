@@ -1,0 +1,162 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#CBD5CC}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.05;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.3) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.18) 42%,rgba(0,0,0,0.18) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:236px;z-index:10;transform-origin:50% 50%}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:'Courier Prime','Courier New',monospace;font-weight:700;font-size:23px;letter-spacing:.04em;color:#4A2E1E;opacity:.82}
+.nb{font-variant-numeric:tabular-nums}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:27px;color:#A3E635;letter-spacing:.06em}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+
+.pre{position:absolute;left:-2000px;top:0;opacity:0}
+.p{transform-origin:20% 0%}
+.cd{position:relative;background:radial-gradient(ellipse at 30% 20%,#FFFBF2,#FFF6E6 60%,#F6EAD2);border-radius:22px;box-shadow:0 10px 26px rgba(60,35,15,.38),inset 0 -6px 0 rgba(120,80,40,.12)}
+.cd::after{content:'';position:absolute;inset:9px;border:3px dashed #B5532F;border-radius:15px;pointer-events:none}
+.kk{display:inline-flex;align-items:center;gap:14px;font-family:'Courier Prime','Courier New',monospace;font-weight:700;font-size:26px;letter-spacing:.06em;color:#FFF6E6;margin-bottom:14px;padding:8px 20px 8px 8px;background:#3E6B4F;border-radius:14px;box-shadow:0 6px 14px rgba(40,25,10,.35);outline:2px dashed rgba(255,246,230,.7);outline-offset:-6px}
+.kk i{font-style:normal;background:#F2B53B;color:#4A2E1E;padding:3px 12px;border-radius:9px}
+.hero{padding:26px 34px 30px;max-width:900px;box-sizing:border-box}
+.h1{font-family:'Fraunces',Georgia,serif;font-weight:800;font-size:96px;line-height:.98;letter-spacing:-.01em;color:#4A2E1E}
+.h1 em{font-style:italic;color:#B5532F}
+.hk{display:flex;align-items:center;margin-top:22px}
+.row{display:flex;flex-direction:column;margin-top:14px;padding:16px 34px 18px;max-width:900px;width:max-content;box-sizing:border-box}
+.row b{display:block;font-family:'Fraunces',Georgia,serif;font-weight:800;font-size:54px;line-height:1.04;color:#4A2E1E}
+.row span{display:block;margin-top:4px;font-family:'Courier Prime','Courier New',monospace;font-weight:700;font-size:26px;line-height:1.3;color:#7A5A44}
+.row b span{display:inline;font:inherit;color:inherit;margin:0}
+.row.rd b{color:#B5532F}
+.row.qt b{font-style:italic;font-size:46px;max-width:780px;white-space:normal}
+.q{margin-top:20px;padding:22px 36px 24px;font-family:'Fraunces',Georgia,serif;font-weight:800;font-size:60px;line-height:1.05;color:#4A2E1E;max-width:880px;box-sizing:border-box}
+#chain{position:absolute;left:0;top:1146px;width:1080px;height:110px;overflow:hidden;z-index:10;pointer-events:none}
+#chainin{position:absolute;left:56px;top:14px;display:flex;align-items:center;white-space:nowrap}
+.lk{position:relative;display:inline-flex;align-items:center;height:72px;padding:0 26px;margin-left:62px;border-radius:18px;font-style:normal;font-family:'Courier Prime','Courier New',monospace;font-weight:700;font-size:31px;letter-spacing:.03em;color:#FFF6E6;box-shadow:0 7px 14px rgba(40,20,5,.42),inset 0 -5px 0 rgba(0,0,0,.14)}
+.lk:first-child{margin-left:0}
+.lk::after{content:'';position:absolute;inset:6px;border:2.5px dashed rgba(255,246,230,.85);border-radius:13px}
+.lk::before{content:'';position:absolute;left:-64px;top:31px;width:66px;height:0;border-top:5px dashed #B5532F;filter:drop-shadow(0 2px 1px rgba(0,0,0,.3))}
+.lk:first-child::before{display:none}
+.hk .lk{height:66px;font-size:30px}
+.c1{background-color:#B5532F}.c2{background-color:#5E8A4C}.c3{background-color:#C98A2E}.c4{background-color:#3E8C88}.c5{background-color:#7B4AA8}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="90.97" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI FLANEL &middot; BUKAN SKALA SEBENARNYA</div>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,800;1,9..144,800&family=Courier+Prime:wght@700&display=block">
+<div class="pre"><span style="font-family:'Fraunces',serif;font-weight:800">AUDIRA 1859</span><span style="font-family:'Fraunces',serif;font-weight:800;font-style:italic">kelinci</span><span style="font-family:'Courier Prime',monospace;font-weight:700">VICTORIA</span></div>
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="kk"><i>EP 32</i>FAKTA SEJARAH NEGARA</div>
+  <div class="cd hero"><div class="h1">24 Kelinci,<br><em>1 Benua</em> Kewalahan</div>
+  <div class="hk"><i class="lk c1" data-at="s1:Dua" data-fx="lk">24 EKOR · 1859</i><i class="lk c2" data-at="s1:ratusan" data-fx="lk">RATUSAN JUTA</i></div></div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="kk"><i>01</i>VICTORIA, AUSTRALIA · OKTOBER 1859</div>
+  <div class="cd row " data-at="s2:Thomas" data-fx="card"><b>Thomas Austin</b><span>pemilik lahan asal Inggris</span></div>
+  <div class="cd row " data-at="s2:berburu" data-fx="card"><b>Rindu berburu kelinci</b><span>hobi lamanya di Inggris</span></div>
+  <div class="cd row rd" data-at="s2:tidak" data-fx="card"><b>Kelinci asli Australia: 0</b></div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="kk"><i>02</i>BARWON PARK, DEKAT WINCHELSEA</div>
+  <div class="cd row" data-at="s3:dua" data-fx="card"><b><span class="ct" data-from="0" data-to="24" data-a="s3:dua" data-d="1.0">24</span> ekor dilepas</b><span>untuk diburu di lahannya sendiri</span></div>
+  <div class="cd row qt" data-at="s3:Katanya" data-fx="card"><b>“Beberapa kelinci tidak akan banyak merugikan.”</b><span>parafrase ucapan Austin</span></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="kk"><i>03</i>IA KELIRU</div>
+  <div class="cd row " data-at="s4:bercampur" data-fx="card"><b>Liar + peliharaan</b><span>kelinci pesanan bercampur</span></div>
+  <div class="cd row rd" data-at="s4:tangguh" data-fx="card"><b>Keturunan yang tangguh</b><span>cocok dengan alam Australia</span></div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="kk"><i>04</i>LEDAKAN POPULASI</div>
+  <div class="cd row" data-at="s5:lima" data-fx="card"><b>1866 · <span class="ct" data-from="0" data-to="50000" data-a="s5:lima" data-d="0.8">50.000</span> ditembak</b><span>laporan koran lokal (Geelong Advertiser)</span></div>
+  <div class="cd row " data-at="s5:dua" data-fx="card"><b>2 juta per tahun</b><span>ditembak, tanpa terasa bedanya</span></div>
+  <div class="cd row rd" data-at="s5:penyebaran" data-fx="card"><b>Penyebaran mamalia tercepat</b><span>yang pernah tercatat di dunia</span></div>
+</div>
+<div class="p" data-in="s6" data-out="s6:Tahun">
+  <div class="kk"><i>05</i>KERUSAKAN</div>
+  <div class="cd row " data-at="s6:Rumput" data-fx="card"><b>Rumput habis</b></div>
+  <div class="cd row " data-at="s6:pohon" data-fx="card"><b>Pohon muda mati</b><span>kulit batangnya dimakan</span></div>
+  <div class="cd row rd" data-at="s6:tanah" data-fx="card"><b>Tanah tergerus erosi</b></div>
+</div>
+<div class="p" data-in="s6:Tahun" data-out="s7">
+  <div class="kk"><i>06</i>AUSTRALIA BARAT · 1901</div>
+  <div class="cd row " data-at="s6:pagar" data-fx="card"><b>Pagar anti-kelinci</b><span>dibangun sepanjang ratusan kilometer</span></div>
+  <div class="cd row rd" data-at="s6:lolos" data-fx="card"><b>Kelincinya tetap lolos</b></div>
+</div>
+<div class="p" data-in="s7" data-out="s7:Studi">
+  <div class="kk"><i>07</i>1950 · VIRUS MYXOMA</div>
+  <div class="cd row" data-at="s7:enam" data-fx="card"><b><span class="ct" data-from="600" data-to="100" data-a="s7:menjadi" data-d="0.8">600</span> juta ekor</b><span>perkiraan populasi: 600 juta → 100 juta</span></div>
+  <div class="cd row rd" data-at="s7:beradaptasi" data-fx="card"><b>Yang selamat beradaptasi</b><span>dan jumlahnya naik lagi</span></div>
+</div>
+<div class="p" data-in="s7:Studi" data-out="s8">
+  <div class="kk"><i>08</i>STUDI GENETIK 2022</div>
+  <div class="cd row " data-at="s7:berasal" data-fx="card"><b>Berasal dari kelinci Austin</b><span>kelinci liar Australia hari ini</span></div>
+</div>
+<div class="p" data-in="s8" data-out="s8:Menurut">
+  <div class="kk"><i>EP 02</i>INGAT EPISODE INI?</div>
+  <div class="cd row " data-at="s8:Perang" data-fx="card"><b>Perang Emu · 1932</b><span>Australia vs hewan, lagi</span></div>
+</div>
+<div class="p" data-in="s8:Menurut" data-out="@END">
+  <div class="cd q">Menurut kamu, siapa yang paling bersalah? Tulis di komentar!</div>
+</div>
+<div id="chain"><div id="chainin">
+  <i class="lk c1" data-at="s3:melepas" data-fx="lk">24 KELINCI</i><i class="lk c3" data-at="s4:bercampur" data-fx="lk">BERCAMPUR</i><i class="lk c2" data-at="s4:tangguh" data-fx="lk">TANGGUH</i><i class="lk c4" data-at="s5:lima" data-fx="lk">50.000 DITEMBAK</i><i class="lk c1" data-at="s5:juta" data-fx="lk">2 JUTA/TAHUN</i><i class="lk c3" data-at="s6:Rumput" data-fx="lk">RUMPUT HABIS</i><i class="lk c2" data-at="s6:erosi" data-fx="lk">EROSI</i><i class="lk c4" data-at="s6:pagar" data-fx="lk">PAGAR 1901</i><i class="lk c1" data-at="s6:lolos" data-fx="lk">LOLOS</i><i class="lk c5" data-at="s7:myxoma" data-fx="lk">MYXOMA 1950</i><i class="lk c1" data-at="s7:naik" data-fx="lk">NAIK LAGI</i>
+</div></div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">FAKTA SEJARAH NEGARA &middot; EP 32</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":7.941,"s2":8.101,"s2e":21.089,"s3":21.249,"s3e":29.517,"s4":29.677,"s4e":36.595,"s5":36.755,"s5e":50.554,"s6":50.714,"s6e":65.032,"s7":65.192,"s7e":81.309,"s8":81.469,"s8e":87.971,"end":87.971,"dur":90.97,"outro":88.221},AT={"s1:Dua":0.542,"s1:ekor":1.13,"s1:kelinci":1.409,"s1:peternakan":2.879,"s1:Seratus":3.483,"s1:juta":5.697,"s1:benua":6.981,"s1:kewalahan":7.26,"s2:Victoria":11.015,"s2:Thomas":13.099,"s2:rindu":15.975,"s2:berburu":17.195,"s2:Padahal":18.39,"s2:tidak":19.789,"s3:melepas":21.475,"s3:dua":21.986,"s3:lahannya":23.874,"s3:Katanya":24.656,"s3:halaman":29.068,"s4:bercampur":31.642,"s4:peliharaan":32.756,"s4:keturunannya":34.072,"s4:Australia":35.961,"s5:lima":40.358,"s5:pemburu":42.015,"s5:Dalam":42.73,"s5:bedanya":46.755,"s5:penyebaran":48.062,"s5:dunia":50.167,"s6:Rumput":50.732,"s6:habis":51.072,"s6:pohon":51.822,"s6:kulitnya":53.324,"s6:dimakan":53.649,"s6:tanah":54.825,"s6:tergerus":55.15,"s6:Tahun":56.342,"s6:membangun":59.599,"s6:pagar":60.048,"s6:kilometer":62.784,"s6:lolos":64.613,"s7:virus":66.402,"s7:myxoma":66.758,"s7:turun":69.39,"s7:enam":70.148,"s7:menjadi":70.83,"s7:juta#2":71.526,"s7:Tapi":72.362,"s7:beradaptasi":73.059,"s7:jumlahnya":74.08,"s7:lagi":74.622,"s7:Studi":75.272,"s7:memastikan":77.919,"s7:berasal":80.071,"s7:Austin":80.861,"s8:Perang":81.732,"s8:Emu":81.995,"s8:Menurut":83.172,"s8:bersalah":84.735,"s8:AUDIRA":86.175,"s1:ratusan":5.341,"s4:tangguh":35.357,"s5:dua":43.752,"s5:juta":43.969,"s6:erosi":55.537,"s7:naik":74.436},DUR=90.97,OUT=88.221;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ card:(e,t)=>{gsap.set(e,{display:'none'});tl.set(e,{display:'flex'},t);tl.fromTo(e,{opacity:0,y:26,rotation:-1.5},{opacity:1,y:0,rotation:0,duration:.4,ease:'back.out(1.6)',immediateRender:false},t);},
+ lk:(e,t)=>tl.fromTo(e,{opacity:0,scale:.45,rotation:-9},{opacity:1,scale:1,rotation:0,duration:.38,ease:'back.out(2.2)'},t),
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>tl.fromTo(p,{opacity:0,y:-36,rotation:-1.2},{opacity:1,y:0,rotation:0,duration:.42,ease:'back.out(1.3)'},a-.02),POUT=(tl,p,b)=>tl.to(p,{opacity:0,y:-26,duration:.22,ease:'power2.in'},b-.24);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(function(){const box=q('#chainin');const L=[...box.querySelectorAll('.lk')].map(e=>({e,a:AT[e.dataset.at]}));
+const sm=(x)=>{x=Math.max(0,Math.min(1,x));return x*x*(3-2*x);};
+return (t)=>{let r=0,prev=0;for(const l of L){const right=l.e.offsetLeft+l.e.offsetWidth;const p=sm((t-l.a+0.05)/0.55);if(p<=0)break;r=prev+(right-prev)*p;prev=right;}
+box.style.transform='translateX('+Math.min(0,912-r).toFixed(1)+'px)';};})();
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP32_KELINCI_AUSTRALIA")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

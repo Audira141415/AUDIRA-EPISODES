@@ -1,0 +1,151 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP20_SELANDIA_BARU_HAK_PILIH",
+  "topic": "Hak pilih perempuan Selandia Baru 1893",
+  "createdAt": "2026-11-07T12:00:00Z",
+  "updatedAt": "2026-11-11T02:02:12.485Z",
+  "currentStage": "complete",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": []
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": []
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "notes": [
+        "Style opsi 1 dipilih pengguna 2026-11-07; cover topik menunggu acc.",
+        {
+          "at": "2026-11-08T02:15:14.210Z",
+          "text": "Cover topik disetujui pengguna 2026-11-08 (\"Ya, generate suara\")."
+        }
+      ],
+      "approvedAt": "2026-11-08T02:15:14.210Z",
+      "doneAt": "2026-11-08T02:15:14.210Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "notes": [
+        {
+          "at": "2026-11-08T02:15:20.518841Z",
+          "text": "Naskah disetujui pengguna 2026-11-08 (\"Ya, generate suara\")."
+        }
+      ],
+      "approvedAt": "2026-11-08T02:15:20.518841Z",
+      "doneAt": "2026-11-08T02:15:20.518841Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [],
+      "doneAt": "2026-11-08T02:15:20.518841Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T02:20:14.785518Z",
+          "text": "VO Cartesia (Galang) dikunci; timeline.json dari VO; AUDIO/VO_MASTER.wav + mix."
+        }
+      ],
+      "doneAt": "2026-11-08T02:20:14.785518Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        "Dunia 3D + style/contact-sheet.jpg (timing estimasi); cover style/cover-topic.png, skor cover LOLOS."
+      ],
+      "doneAt": "2026-11-08T02:20:14.785518Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "notes": [
+        {
+          "at": "2026-11-08T02:20:14.785518Z",
+          "text": "style/contact-sheet.jpg (8 frame, timing VO), skor draft LOLOS; menunggu acc."
+        },
+        {
+          "at": "2026-11-08T02:25:25.195505Z",
+          "text": "Draft disetujui pengguna 2026-11-08 (\"Ya, render final\")."
+        }
+      ],
+      "approvedAt": "2026-11-08T02:25:25.195505Z",
+      "doneAt": "2026-11-08T02:25:25.195505Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T02:36:21.489360Z",
+          "text": "FINAL_VIDEO.mp4 81.2 s, -14.0 LUFS, TP -1.9, metadata ditulis."
+        }
+      ],
+      "doneAt": "2026-11-08T02:36:21.489360Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-08T02:36:21.489360Z",
+          "text": "SOCIAL_CAPTIONS.md lolos validator MCP (ok: true), NOTES.md ditulis."
+        }
+      ],
+      "doneAt": "2026-11-08T02:36:21.489360Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T02:02:12.485Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-08T02:36:21.494Z",
+      "startedAt": "2026-11-08T02:36:21.494Z"
+    }
+  ],
+  "data": {
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-11T02:02:12.485Z"
+}

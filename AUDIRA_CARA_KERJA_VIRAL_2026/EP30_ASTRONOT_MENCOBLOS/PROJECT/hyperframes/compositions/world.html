@@ -1,0 +1,166 @@
+<template><style>#root{position:absolute;inset:0;overflow:hidden;background:#1c2547}
+#gl{position:absolute;inset:0;width:1080px;height:1920px;display:block}
+#grain{position:absolute;left:0;top:0;width:1280px;height:2120px;background:url(assets/img/grain.png);opacity:0.06;mix-blend-mode:overlay;pointer-events:none;z-index:9}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 42%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);pointer-events:none;z-index:8}
+#capfloor{position:absolute;left:0;right:0;top:1230px;height:440px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,0.42) 42%,rgba(0,0,0,0.42) 70%,rgba(0,0,0,0));z-index:7;pointer-events:none}
+.p{position:absolute;left:56px;right:110px;top:262px;z-index:10;transform-origin:50% 50%}
+.nb{font-variant-numeric:tabular-nums}
+#sig{position:absolute;left:0;top:0;z-index:19;font-family:Outfit,sans-serif;font-weight:600;font-size:28px;letter-spacing:.08em;color:#fff;opacity:.32;text-shadow:0 1px 3px rgba(0,0,0,.6);white-space:nowrap;pointer-events:none}
+#chip{position:absolute;left:56px;top:186px;z-index:11;font-family:Inter,sans-serif;font-weight:700;font-size:23px;letter-spacing:.04em;color:#fff;opacity:.82}
+#outro{position:absolute;inset:0;background:#0B3D2E;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:300px;box-sizing:border-box;z-index:20}
+#outro img{width:520px;display:block}
+#outro .cr{margin-top:44px;font-family:Outfit,sans-serif;font-weight:600;font-size:46px;color:#fff;letter-spacing:.01em}
+#outro .sr{margin-top:18px;font-family:Outfit,sans-serif;font-weight:400;font-size:30px;color:#A3E635;letter-spacing:.14em}
+
+.p{transform-origin:50% 0%}
+.kick{display:inline-block;font-family:"Nunito",sans-serif;font-weight:900;font-size:27px;letter-spacing:.12em;color:#fff;background:#e3806a;padding:7px 18px 6px;border-radius:4px;box-shadow:0 3px 0 #c4614f,0 8px 14px rgba(40,25,15,.3);margin-bottom:16px}
+.h0{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.h0 span{font-family:"Fraunces",serif;font-style:italic;font-weight:700;font-size:104px;line-height:1.02;color:#3b2a22;padding:6px 30px 14px;background:#faf4e8;border-radius:6px;box-shadow:0 2px 0 #e5d8c1,0 3px 0 #d8c7a9,0 14px 22px rgba(40,25,15,.32);transform:rotate(-1.2deg)}
+.h0 .ln2{margin-left:70px;transform:rotate(1deg);background:#f2d58e}
+.h0.sm span{font-size:84px}
+.row{display:flex;align-items:center;gap:16px;margin-top:20px;flex-wrap:wrap;width:900px}
+.tab{font-style:normal;font-family:"Nunito",sans-serif;font-weight:900;font-size:46px;color:#3b2a22;background:#faf4e8;padding:6px 22px 8px;border-radius:5px;box-shadow:0 3px 0 #d8c7a9,0 10px 16px rgba(40,25,15,.3)}
+.tab.gold{background:#e7b54a}.tab.cob{background:#5f7cb6;color:#fff;box-shadow:0 3px 0 #435e95,0 10px 16px rgba(40,25,15,.3)}.tab.wax{background:#b5382f;color:#fff;box-shadow:0 3px 0 #7d1f19,0 10px 16px rgba(40,25,15,.3)}
+.plain{font-style:normal;font-family:"Nunito",sans-serif;font-weight:800;font-size:44px;color:#fff;text-shadow:0 3px 8px rgba(20,15,35,.8)}
+.plain.sm{font-size:38px}
+.q{display:inline-block;margin-top:20px;font-family:"Fraunces",serif;font-style:italic;font-weight:600;font-size:48px;color:#3b2a22;padding:8px 24px 12px;background:#faf4e8;border-radius:6px;box-shadow:0 2px 0 #e5d8c1,0 3px 0 #d8c7a9,0 14px 22px rgba(40,25,15,.32);background:#9dd1bb;transform:rotate(-.8deg)}
+.cd{width:860px;margin-top:16px;padding:14px 26px 18px;background:#faf4e8;border-radius:6px;box-shadow:0 2px 0 #e5d8c1,0 3px 0 #d8c7a9,0 14px 22px rgba(40,25,15,.32)}
+.cd.cob{background:#dfe6f4}
+.cd b{display:block;font-family:"Fraunces",serif;font-style:italic;font-weight:700;font-size:56px;line-height:1.08;color:#3b2a22}
+.cd b.big{font-size:76px}
+.cd span{display:block;font-family:"Nunito",sans-serif;font-weight:700;font-size:33px;line-height:1.25;color:#5a4636;margin-top:6px}
+.stamp{display:inline-block;margin-top:20px;font-family:"Nunito",sans-serif;font-weight:900;font-size:46px;letter-spacing:.02em;color:#fff;background:#b5382f;padding:8px 26px 10px;border-radius:50px;box-shadow:0 4px 0 #7d1f19,0 10px 16px rgba(40,25,15,.35)}
+.steps{width:880px}
+.steps>div{display:flex;align-items:center;font-family:"Nunito",sans-serif;font-weight:800;font-size:38px;line-height:1.2;color:#3b2a22;padding:12px 18px;margin-top:12px;background:#faf4e8;border-radius:6px;box-shadow:0 2px 0 #e5d8c1,0 3px 0 #d8c7a9,0 14px 22px rgba(40,25,15,.32)}
+.steps i{flex:none;font-style:normal;width:58px;height:58px;line-height:56px;text-align:center;border-radius:50%;background:#e3806a;color:#fff;font-family:"Fraunces",serif;font-weight:700;font-size:38px;margin-right:16px}
+.steps i.c{background:#5f7cb6}.steps i.g{background:#e7b54a;color:#3b2a22}
+.route{display:flex;flex-wrap:wrap;align-items:center;gap:10px 8px;width:900px}
+.route b{font-family:"Nunito",sans-serif;font-weight:900;font-size:36px;color:#3b2a22;padding:8px 18px 10px;background:#faf4e8;border-radius:6px;box-shadow:0 2px 0 #e5d8c1,0 3px 0 #d8c7a9,0 14px 22px rgba(40,25,15,.32)}
+.route b.g{background:#f2d58e}.route b.s{background:#ead2a0}.route b.c{background:#dfe6f4}.route b.r{background:#e3806a;color:#fff}
+.route em{font-style:normal;font-family:"Nunito",sans-serif;font-weight:900;font-size:40px;color:#fff;text-shadow:0 2px 6px rgba(20,15,35,.8)}
+.note{display:inline-block;margin-top:14px;font-family:"Fraunces",serif;font-style:italic;font-weight:500;font-size:30px;color:#fff;background:rgba(38,50,90,.72);padding:5px 16px;border-radius:4px}
+.two{display:flex;gap:16px;width:900px}
+.two>div{flex:1;padding:12px 18px 14px;background:#faf4e8;border-radius:6px;box-shadow:0 2px 0 #e5d8c1,0 3px 0 #d8c7a9,0 14px 22px rgba(40,25,15,.32)}
+.two>div.cob{background:#dfe6f4}
+.two em{display:block;font-style:normal;font-family:"Nunito",sans-serif;font-weight:800;font-size:28px;color:#7d5843}
+.two b{display:block;font-family:"Fraunces",serif;font-style:italic;font-weight:700;font-size:50px;line-height:1.05;color:#3b2a22;margin-top:2px}
+.two b .ct{font:inherit;color:inherit}
+.two span{display:block;font-family:"Nunito",sans-serif;font-weight:700;font-size:28px;line-height:1.2;color:#5a4636;margin-top:6px}
+.huge{font-family:"Fraunces",serif;font-style:italic;font-weight:800;font-size:128px;line-height:1;color:#3b2a22;padding:4px 28px 14px;background:#faf4e8;border-radius:6px;box-shadow:0 2px 0 #e5d8c1,0 3px 0 #d8c7a9,0 14px 22px rgba(40,25,15,.32);background:#f2d58e}
+.huge .ct{font:inherit;color:inherit}
+.chips .tab{font-size:50px}
+.srcl{font-family:"Nunito",sans-serif;font-weight:600;font-size:24px;line-height:1.3;color:#3b2a22;margin-top:22px;width:860px;padding:10px 16px;background:#faf4e8;border-radius:6px;box-shadow:0 2px 0 #e5d8c1,0 3px 0 #d8c7a9,0 14px 22px rgba(40,25,15,.32)}
+#chip{font-family:"Nunito",sans-serif!important;font-weight:800!important;color:#3b2a22!important;background:#faf4e8;padding:4px 12px;border-radius:4px;opacity:.92!important;box-shadow:0 3px 8px rgba(20,15,35,.35)}</style>
+<div id="root" data-composition-id="world" data-start="0" data-duration="85.15" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<div id="grain"></div><div id="vig"></div><div id="capfloor"></div>
+<div id="chip">ILUSTRASI, BUKAN REKAMAN ASLI</div>
+
+<div class="p" data-first="1" data-in="@0" data-out="s2">
+  <div class="kick">CARA KERJA VIRAL &middot; EP 30</div>
+  <div class="h0"><span>Bilik suara</span><span class="ln2">paling jauh</span></div>
+  <div class="row"><i class="tab gold nb" data-at="s1:400" data-fx="pop">400 km</i><i class="plain" data-at="s1:kepala" data-fx="left">di atas kepala kita</i></div>
+  <div class="q" data-at="s1:pulang" data-fx="up">Bagaimana surat suaranya pulang?</div>
+</div>
+<div class="p" data-in="s2" data-out="s3">
+  <div class="kick">3 NOVEMBER &middot; PEMILU SELA AMERIKA SERIKAT</div>
+  <div class="cd"><b class="big" data-at="s2:Tiga" data-fx="pop">3 astronaut NASA</b><span data-at="s2:Stasiun" data-fx="fade">di Stasiun Luar Angkasa Internasional</span></div>
+  <div class="stamp" data-at="s2:kabin" data-fx="stamp">bilik suara = kabin tidur</div>
+</div>
+<div class="p" data-in="s3" data-out="s4">
+  <div class="kick">1 &middot; DIMULAI DARI BUMI</div>
+  <div class="cd" data-at="s3:meminta" data-fx="up"><b>Minta surat suara</b><span>sebelum terbang, seperti warga Amerika di luar negeri</span></div>
+  <div class="cd cob" data-at="s3:Bab" data-fx="up"><b>Bab 106 UU Pemilu Texas</b><span>tempat kebanyakan astronaut terdaftar</span></div>
+</div>
+<div class="p" data-in="s4" data-out="s5">
+  <div class="kick">2 &middot; NAIK KE ORBIT</div>
+  <div class="steps">
+    <div data-at="s4:menyiapkan" data-fx="left"><i>a</i>Petugas pemilu: surat suara elektronik terenkripsi</div>
+    <div data-at="s4:Mission" data-fx="left"><i class="c">b</i>Mission Control Houston kirim ke stasiun</div>
+    <div data-at="s4:kunci" data-fx="left"><i class="g">c</i>Kunci akses khusus tiap astronaut</div>
+  </div>
+</div>
+<div class="p" data-in="s5" data-out="s6">
+  <div class="kick">3 &middot; JALUR PULANG</div>
+  <div class="route">
+    <b data-at="s5:Jalur" data-fx="pop">Stasiun</b><em data-at="s5:naik" data-fx="fade">&rarr;</em>
+    <b class="g" data-at="s5:TDRS" data-fx="pop">Satelit relay TDRS</b><em data-at="s5:turun" data-fx="fade">&rarr;</em>
+    <b class="s" data-at="s5:White" data-fx="pop">White Sands, New Mexico</b><em data-at="s5:lewat" data-fx="fade">&rarr;</em>
+    <b class="c" data-at="s5:lewat" data-fx="pop">Mission Control</b><em data-at="s5:petugas" data-fx="fade">&rarr;</em>
+    <b class="r" data-at="s5:petugas" data-fx="pop">Petugas pemilu</b>
+  </div>
+  <div class="note" data-at="s5:Jalur" data-fx="fade">jalur yang biasa dijelaskan NASA</div>
+</div>
+<div class="p" data-in="s6" data-out="s7">
+  <div class="kick">KENAPA MEMUTAR?</div>
+  <div class="two">
+    <div data-at="s6:melaju" data-fx="up"><em>Stasiun melaju</em><b class="nb"><span class="ct" data-from="0" data-to="28000" data-a="s6:melaju" data-d="0.40">0</span> km/jam</b><span data-at="s6:antena" data-fx="fade">antena darat: beberapa menit</span></div>
+    <div class="cob" data-at="s6:Satelit" data-fx="up"><em>Satelit relay</em><b class="nb">hampir 36.000 km</b><span data-at="s6:selalu" data-fx="fade">hampir selalu melihat stasiun</span></div>
+  </div>
+  <div class="note" data-at="s6:Satelit" data-fx="fade">ilustrasi, skala jarak tidak sebenarnya</div>
+</div>
+<div class="p" data-in="s7" data-out="s8">
+  <div class="kick">TOTAL PERJALANAN</div>
+  <div class="row"><i class="plain sm">kira-kira</i><b class="huge nb"><span class="ct" data-from="0" data-to="72000" data-a="s7:Total" data-d="2.03">0</span> km</b></div>
+  <div class="row"><i class="tab gold" data-at="s7:seperempat" data-fx="pop">&plusmn; seperempat detik</i><i class="tab wax" data-at="s7:terkunci" data-fx="stamp">TERKUNCI</i></div>
+  <div class="note" data-at="s7:hanya" data-fx="fade">hanya astronaut &amp; petugas pemilu yang bisa membukanya</div>
+</div>
+<div class="p" data-in="s8" data-out="@END">
+  <div class="h0 sm"><span>Sejauh apa pun</span><span class="ln2">prosesnya sama</span></div>
+  <div class="row chips"><i class="tab" data-at="s8:minta" data-fx="pop">minta</i><i class="tab cob" data-at="s8:isi" data-fx="pop">isi</i><i class="tab gold" data-at="s8:kirim" data-fx="pop">kirim</i><i class="tab wax" data-at="s8:rahasia" data-fx="pop">rahasia</i></div>
+  <div class="srcl" data-at="s8:Ikuti" data-fx="fade">Sumber: NASA (2020, 2024), Texas Election Code Bab 106, Space.com &amp; TIME (3 Nov 2026). Jalur data: cara yang biasa dijelaskan NASA; jarak &amp; waktu perkiraan. Stasiun, astronaut &amp; lokasi: ilustrasi kertas generik.</div>
+</div>
+<div id="outro"><img src="assets/brand/stacked-reversed.svg" alt=""><div class="cr">Created by Agus Dwi R.</div><div class="sr">CARA KERJA VIRAL &middot; EP 30</div></div>
+<div id="sig">AUDIRA &middot; audira.my.id</div>
+</div>
+<script>
+(function(){
+const K={"s1":0.1,"s1e":5.953,"s2":6.113,"s2e":15.338,"s3":15.498,"s3e":29.191,"s4":29.351,"s4e":39.156,"s5":39.316,"s5e":50.104,"s6":50.264,"s6e":63.66,"s7":63.82,"s7e":73.018,"s8":73.178,"s8e":82.152,"end":82.152,"dur":85.15,"outro":82.402},AT={"s1:400":1.866,"s1:kepala":3.105,"s1:pulang":5.597,"s2:Tiga":9.781,"s2:Stasiun":11.577,"s2:memilih":13.682,"s2:kabin":14.549,"s3:Dimulai":15.501,"s3:terbang":17.126,"s3:meminta":18.473,"s3:warga":20.578,"s3:Bab":23.606,"s3:Texas":26.005,"s3:terdaftar":28.726,"s4:menyiapkan":31.865,"s4:terenkripsi":33.738,"s4:Mission":34.791,"s4:Houston":35.689,"s4:mengirimnya":36.076,"s4:stasiun":36.71,"s4:kunci":37.453,"s5:mengisinya":40.075,"s5:Jalur":41.127,"s5:naik":43.166,"s5:TDRS":44.156,"s5:turun":45.178,"s5:White":45.983,"s5:Mexico":47.008,"s5:lewat":47.581,"s5:Mission":47.813,"s5:petugas":49.253,"s6:memutar":50.633,"s6:melaju":51.654,"s6:28.000":51.948,"s6:antena":54.859,"s6:menit":56.778,"s6:Satelit":57.375,"s6:geostasioner":58.969,"s6:selalu":62.839,"s6:melihatnya#2":63.164,"s7:Total":63.82,"s7:72.000":65.851,"s7:seperempat":67.863,"s7:Isinya":69.04,"s7:terkunci":69.659,"s7:hanya":70.51,"s7:petugas":71.501,"s7:membukanya":72.6,"s8:Sejauh":73.43,"s8:minta":77.161,"s8:isi":78.061,"s8:kirim":78.603,"s8:rahasia":79.3,"s8:Ikuti":80.233},DUR=85.15,OUT=82.402;
+const tl=gsap.timeline({paused:true});
+const q=(s)=>document.querySelector(s);
+const FX={
+ up:(e,t)=>tl.fromTo(e,{y:54,opacity:0},{y:0,opacity:1,duration:.42,ease:'power4.out'},t),
+ left:(e,t)=>tl.fromTo(e,{x:90,opacity:0},{x:0,opacity:1,duration:.4,ease:'power4.out'},t),
+ pop:(e,t)=>tl.fromTo(e,{scale:.7,opacity:0},{scale:1,opacity:1,duration:.38,ease:'back.out(1.5)'},t),
+ fade:(e,t)=>tl.fromTo(e,{opacity:0},{opacity:1,duration:.3,ease:'none'},t),
+ grow:(e,t)=>tl.fromTo(e,{scaleX:0},{scaleX:1,duration:.65,ease:'power3.out'},t),
+ growy:(e,t)=>tl.fromTo(e,{scaleY:0},{scaleY:1,duration:.65,ease:'power3.out'},t),
+ stamp:(e,t)=>tl.fromTo(e,{scale:1.9,rotation:-7,opacity:0},{scale:1,rotation:-3,opacity:1,duration:.2,ease:'power4.in'},t),
+ 
+};
+document.querySelectorAll('#root [data-at]').forEach(e=>{
+  const f=FX[e.dataset.fx||'up'];const a=AT[e.dataset.at];
+  if(e.dataset.fx==='grow')gsap.set(e,{scaleX:0});else if(e.dataset.fx==='growy')gsap.set(e,{scaleY:0});else gsap.set(e,{opacity:0});
+  f(e,a);
+});
+const PIN=(tl,p,a)=>{tl.fromTo(p,{opacity:0,rotationX:-95,y:-30,transformPerspective:1600,transformOrigin:'50% 0%'},{opacity:1,rotationX:0,y:0,duration:.55,ease:'back.out(1.5)'},a-.16);},POUT=(tl,p,b)=>tl.to(p,{opacity:0,y:-120,x:-50,rotation:-5,duration:.34,ease:'power2.in'},b-.34);
+document.querySelectorAll('#root .p').forEach(p=>{
+  const first=p.dataset.first==='1';
+  const a=p.dataset.in==='@0'?0:(AT[p.dataset.in]??K[p.dataset.in]);
+  const b=p.dataset.out==='@END'?OUT-.1:(AT[p.dataset.out]??K[p.dataset.out]);
+  gsap.set(p,{visibility:'hidden',opacity:0});
+  tl.set(p,{visibility:'visible'},first?0:Math.max(0,a-.14));
+  if(first)tl.set(p,{opacity:1},0);else PIN(tl,p,a);
+  POUT(tl,p,b);
+  tl.set(p,{visibility:'hidden'},b+.04);
+});
+gsap.set('#outro',{opacity:0});tl.to('#outro',{opacity:1,duration:.3,ease:'power2.out'},OUT);
+// counters: <b class="ct" data-from data-to data-a data-b data-dec>
+const cts=[...document.querySelectorAll('.ct')].map(e=>({e,from:+e.dataset.from||0,to:+e.dataset.to,a:AT[e.dataset.a]??K[e.dataset.a],d:+e.dataset.d||1,dec:+e.dataset.dec||0,pre:e.dataset.pre||'',suf:e.dataset.suf||''}));
+const fmt=(v,d)=>v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const eout=(x)=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const grain=q('#grain');
+let draw=null,last=0;
+const HUD=(t)=>{};
+const SIG=(function(){const e=q('#sig');if(!e)return null;const P=[[690,1200],[60,1200],[700,660],[60,930],[640,240],[380,1120]];let h=0;for(const ch of "EP30_ASTRONOT_MENCOBLOS")h=(h*31+ch.charCodeAt(0))>>>0;const ord=P.map((p,i)=>[p,(h>>>(i*3))%97+i]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);return (t)=>{const k=Math.floor(t/18)%ord.length;e.style.transform='translate('+ord[k][0]+'px,'+ord[k][1]+'px)';e.style.visibility=t>=OUT?'hidden':'visible';};})();
+function all(t){last=t;for(const c of cts)c.e.textContent=c.pre+fmt(c.from+(c.to-c.from)*eout((t-c.a)/c.d),c.dec)+c.suf;
+ const g=Math.floor(t*12);grain.style.transform='translate3d('+(-((g*37)%100))+'px,'+(-((g*61)%100))+'px,0)';HUD(t);if(SIG)SIG(t);if(draw)draw(t);}
+const c={t:0};
+tl.to(c,{t:DUR,duration:DUR,ease:'none',onUpdate:()=>all(c.t)},0);
+window.addEventListener('hf-seek',e=>all(e.detail.time));
+all(0);
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.world3d=import('./assets/lib/world3d.js').then(m=>{draw=m.create(q('#gl'),K,AT);draw(last);});
+window.__timelines["world"]=tl;
+})();
+</script></template>

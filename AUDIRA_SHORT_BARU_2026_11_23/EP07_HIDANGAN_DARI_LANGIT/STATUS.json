@@ -1,0 +1,713 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP07_HIDANGAN_DARI_LANGIT",
+  "topic": "Hidangan dari langit — permintaan Hawariyyun kepada Nabi Isa AS (QS Al-Maidah 112–115)",
+  "createdAt": "2026-11-22T17:48:40.322Z",
+  "updatedAt": "2026-11-23T10:09:32.485Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:54:02.846Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-22T17:50:12.582Z",
+      "startedAt": "2026-11-22T17:50:12.582Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:50:15.824Z",
+          "text": "SOURCE_REGISTER F1–F10, Kemenag + Ibnu Katsir"
+        }
+      ],
+      "doneAt": "2026-11-22T17:50:15.824Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-23T08:42:32.450Z",
+      "notes": [
+        {
+          "at": "2026-11-22T17:50:48.021Z",
+          "text": "3 kandidat ditawarkan: ISLAMICDOCUMENTARY / MANUSCRIPT / WATERCOLOR, menunggu pilihan pengguna"
+        },
+        {
+          "at": "2026-11-22T17:51:19.299Z",
+          "text": "Pengguna pilih \\\"1 ISLAMICDOCUMENTARY\\\" (2026-11-23)"
+        },
+        {
+          "at": "2026-11-22T23:56:15.946Z",
+          "text": "2026-11-23 pengguna memilih \"1 PAPERWORLD\" setelah ISLAMICDOCUMENTARY gagal juri 2 putaran."
+        },
+        {
+          "at": "2026-11-23T07:22:39.921Z",
+          "text": "PAPERWORLD gagal juri r2 3.17 → ganti style; tawarkan MANUSCRIPT/CHRONICLE/STORYBOOK"
+        },
+        {
+          "at": "2026-11-23T07:27:26.045Z",
+          "text": "sync: STYLE_DECISION.md ada; acc tercatat di file"
+        },
+        {
+          "at": "2026-11-23T08:42:32.450Z",
+          "text": "Pengguna memilih \"1 MANUSCRIPT\" (2026-11-23) setelah PAPERWORLD gagal juri 2x"
+        }
+      ],
+      "startedAt": "2026-11-22T17:50:48.021Z",
+      "doneAt": "2026-11-23T08:42:32.450Z",
+      "approvalSource": "file"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T17:54:02.846Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T17:53:19.357Z",
+      "startedAt": "2026-11-22T17:53:19.357Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T09:51:04.456Z",
+          "text": "Kode di engines/remotion-starter/src/episodes/hidangan07 (salinan project/hidangan07)"
+        }
+      ],
+      "doneAt": "2026-11-23T09:51:04.456Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T17:54:02.846Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-22T17:52:22.786Z",
+      "startedAt": "2026-11-22T17:52:22.786Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:09:18.176Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T18:05:10.031Z",
+      "startedAt": "2026-11-22T18:05:10.031Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T18:09:18.177Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        }
+      ],
+      "doneAt": "2026-11-22T18:04:47.577Z",
+      "startedAt": "2026-11-22T18:04:47.577Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T09:36:24.428Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-23T09:50:49.403Z",
+          "text": "FINAL_VIDEO.mp4 85.0s 1080x1920@60, -14.0 LUFS TP -1.3, metadata OK, qa_video PASS (fix LONCAT 44.13/64.2 via segmen+splice)"
+        }
+      ],
+      "doneAt": "2026-11-23T09:50:49.403Z",
+      "startedAt": "2026-11-23T09:36:13.461Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T22:21:13.059Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T09:51:05.845Z",
+          "text": "Captions validator ok; NOTES.md; lessons MANUSCRIPT+GLOBAL; scheduled tasks review-hidangan-dari-langit-24h/-72h/-7d (upload Kamis 26 Nov 19.30 WIB)"
+        }
+      ],
+      "doneAt": "2026-11-23T09:51:05.845Z",
+      "startedAt": "2026-11-22T22:21:02.915Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "in_progress",
+      "notes": [
+        {
+          "at": "2026-11-23T09:51:07.552Z",
+          "text": "Menunggu upload 26 Nov 2026 19.30 WIB; 3 scheduled task review terpasang"
+        }
+      ],
+      "startedAt": "2026-11-23T09:51:07.552Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP07",
+    "engine": "remotion",
+    "channel": "QISSAH",
+    "handle": "@AUDIRAQISSAH",
+    "style": "MANUSCRIPT",
+    "styleHistory": [
+      "ISLAMICDOCUMENTARY (gagal juri 2x 3.33)",
+      "PAPERWORLD (gagal juri 2x 3.33/3.17)"
+    ],
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "handoverLog": [
+    {
+      "at": "2026-11-22T17:52:52.696Z",
+      "doing": "VO dikunci (81.64 s, audio/vo.wav + vo-words.json). Menulis docs + kode Remotion 2D di F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/hidangan07/ (salinan ke project/)",
+      "files": [
+        "docs/vo.txt",
+        "audio/vo.wav",
+        "audio/vo-words.json"
+      ],
+      "next": "Tulis Hidangan.tsx (8 scene, END=82.0, outro 3 s, total 85 s), cover topik still, contact sheet, juri, final render + mix ffmpeg (VO -16 LUFS, SFX -20 duck), metadata, caption",
+      "snapshot": {
+        "episode": "EP07_HIDANGAN_DARI_LANGIT",
+        "topic": "Hidangan dari langit — permintaan Hawariyyun kepada Nabi Isa AS (QS Al-Maidah 112–115)",
+        "style": "ISLAMICDOCUMENTARY",
+        "memoryEpisode": "short-baru-11-23-EP07",
+        "currentStage": "context",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          },
+          "script": {
+            "approved": false,
+            "status": "pending"
+          },
+          "draft": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP07_HIDANGAN_DARI_LANGIT/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T17:56:50.107Z",
+      "doing": "Kode Remotion 2D ditulis (belum dikompilasi). Detail langkah lanjut di HANDOFF.md episode.",
+      "files": [
+        "HANDOFF.md",
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/hidangan07/Hidangan.tsx",
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/hidangan07/parts.tsx"
+      ],
+      "next": "Ikuti HANDOFF.md: tsc → still/contact sheet → cover topik → juri → SFX → render final + mix → caption",
+      "snapshot": {
+        "episode": "EP07_HIDANGAN_DARI_LANGIT",
+        "topic": "Hidangan dari langit — permintaan Hawariyyun kepada Nabi Isa AS (QS Al-Maidah 112–115)",
+        "style": "ISLAMICDOCUMENTARY",
+        "memoryEpisode": "short-baru-11-23-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP07_HIDANGAN_DARI_LANGIT/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T18:05:56.275Z",
+      "doing": "Draf contact sheet + cover topik selesai; juri buta belum (subagen gagal model override). SFX skrip siap, numpy hilang.",
+      "files": [
+        "HANDOFF.md",
+        "draft/contact-sheet.jpg",
+        "style/cover-topic.png",
+        "project/sfx/make_sfx.py"
+      ],
+      "next": "Baca HANDOFF.md episode: juri draf → SFX → render final 60 fps → mix + metadata → QA → SRT + caption → NOTES",
+      "snapshot": {
+        "episode": "EP07_HIDANGAN_DARI_LANGIT",
+        "topic": "Hidangan dari langit — permintaan Hawariyyun kepada Nabi Isa AS (QS Al-Maidah 112–115)",
+        "style": "ISLAMICDOCUMENTARY",
+        "memoryEpisode": "short-baru-11-23-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP07_HIDANGAN_DARI_LANGIT/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T22:20:25.816Z",
+      "doing": "render final 60 fps tanpa audio → draft/video_noaudio.mp4 (SFX audio/sfx.wav sudah jadi; juri draf berjalan)",
+      "command": "npx remotion render engines/remotion-starter/src/episodes/hidangan07/index.tsx HidanganEP07 <ep>/draft/video_noaudio.mp4 --public-dir=engines/remotion-starter/public --concurrency=4 --log=error",
+      "next": "HANDOFF langkah 4 (mix + metadata)",
+      "snapshot": {
+        "episode": "EP07_HIDANGAN_DARI_LANGIT",
+        "topic": "Hidangan dari langit — permintaan Hawariyyun kepada Nabi Isa AS (QS Al-Maidah 112–115)",
+        "style": "ISLAMICDOCUMENTARY",
+        "memoryEpisode": "short-baru-11-23-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP07_HIDANGAN_DARI_LANGIT/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T22:27:01.012Z",
+      "doing": "ISLAMICDOCUMENTARY gagal juri 2x (3.33). Menunggu pengguna memilih style baru: PAPERWORLD / STORYBOOK / STAINEDGLASS. SFX, SRT, caption sudah jadi.",
+      "files": [
+        "HANDOFF.md",
+        "draft/contact-sheet.jpg",
+        "audio/sfx.wav",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt"
+      ],
+      "next": "Setelah pilihan: cover topik → ulang tahap 4 (G21) → kode → contact sheet → juri → render final → mix → QA → NOTES (lihat HANDOFF.md)",
+      "snapshot": {
+        "episode": "EP07_HIDANGAN_DARI_LANGIT",
+        "topic": "Hidangan dari langit — permintaan Hawariyyun kepada Nabi Isa AS (QS Al-Maidah 112–115)",
+        "style": "ISLAMICDOCUMENTARY",
+        "memoryEpisode": "short-baru-11-23-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP07_HIDANGAN_DARI_LANGIT/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-22T23:56:34.236Z",
+      "doing": "Style diganti ke PAPERWORLD (pilihan pengguna). Belum mulai restyle kode.",
+      "files": [
+        "HANDOFF.md"
+      ],
+      "next": "HANDOFF.md bagian \"Update sesi 3\": STYLE_DECISION → docs G21 → restyle kode hidangan07 → contact sheet → juri → final",
+      "snapshot": {
+        "episode": "EP07_HIDANGAN_DARI_LANGIT",
+        "topic": "Hidangan dari langit — permintaan Hawariyyun kepada Nabi Isa AS (QS Al-Maidah 112–115)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP07_HIDANGAN_DARI_LANGIT/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:05:01.757Z",
+      "doing": "Restyle PAPERWORLD selesai di kode hidangan07 (tsc bersih), belum dirender",
+      "files": [
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/hidangan07/parts.tsx",
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/hidangan07/Hidangan.tsx",
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/public/hidangan07/paper.png",
+        "HANDOFF.md"
+      ],
+      "next": "HANDOFF.md \"Update sesi 4\": STYLE_DECISION + docs G21 → stills → cover topik → contact sheet → juri → final → mix → QA → NOTES → caption",
+      "snapshot": {
+        "episode": "EP07_HIDANGAN_DARI_LANGIT",
+        "topic": "Hidangan dari langit — permintaan Hawariyyun kepada Nabi Isa AS (QS Al-Maidah 112–115)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP07_HIDANGAN_DARI_LANGIT/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:17:52.800Z",
+      "doing": "Juri buta draf PAPERWORLD r1 (contact sheet + cover topik sudah jadi; STYLE_DECISION, docs G21, THEME_CHECK selesai)",
+      "files": [
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/hidangan07/parts.tsx",
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/hidangan07/Hidangan.tsx",
+        "draft/contact-sheet.jpg",
+        "style/cover-topic.png"
+      ],
+      "next": "Bila juri LOLOS: render final 60fps (TEMP=F:/tmp-remotion-ep07 karena C: penuh) → mix → metadata → QA → NOTES",
+      "snapshot": {
+        "episode": "EP07_HIDANGAN_DARI_LANGIT",
+        "topic": "Hidangan dari langit — permintaan Hawariyyun kepada Nabi Isa AS (QS Al-Maidah 112–115)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP07_HIDANGAN_DARI_LANGIT/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:18:46.242Z",
+      "doing": "Juri r1 PAPERWORLD 3.33 PERLU POLES; poles r2 (material ketebalan kartu, key light/rim, variasi skala meja, 45/47 beda, FG menimpa tepi)",
+      "files": [
+        "HANDOFF.md",
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/hidangan07/parts.tsx",
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/hidangan07/Hidangan.tsx"
+      ],
+      "next": "HANDOFF.md 'Update sesi 5': poles r2 → stills → contact sheet → juri r2 → bila lolos render final (TEMP F:, C: penuh)",
+      "snapshot": {
+        "episode": "EP07_HIDANGAN_DARI_LANGIT",
+        "topic": "Hidangan dari langit — permintaan Hawariyyun kepada Nabi Isa AS (QS Al-Maidah 112–115)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP07_HIDANGAN_DARI_LANGIT/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T07:21:11.057Z",
+      "doing": "Poles r2 PAPERWORLD selesai di kode (filter kartu tebal + contact shadow + inner shade, meja variasi 8/62.1/66/78, push kamera pintu 45/47, FG lentera/daun/siluet). Contact sheet r2 baru di draft/contact-sheet.jpg. Sedang juri buta r2.",
+      "files": [
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/hidangan07/parts.tsx",
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/hidangan07/Hidangan.tsx",
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "record_score jury r2. LOLOS (≥3.8, tak ada <3) → render final (TEMP F:/tmp-remotion-ep07) + mix G18 + QA. GAGAL → stop, append_lesson failed, kembali gerbang style.",
+      "snapshot": {
+        "episode": "EP07_HIDANGAN_DARI_LANGIT",
+        "topic": "Hidangan dari langit — permintaan Hawariyyun kepada Nabi Isa AS (QS Al-Maidah 112–115)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP07_HIDANGAN_DARI_LANGIT/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T07:22:37.513Z",
+      "doing": "PAPERWORLD gagal juri 2x (3.33, 3.17); gerbang style dibuka ulang, menunggu pilihan pengguna (MANUSCRIPT / CHRONICLE / STORYBOOK)",
+      "files": [
+        "HANDOFF.md",
+        "style/style-gate-r3.jpg"
+      ],
+      "next": "HANDOFF.md 'Update sesi 6': setelah pilih style → STYLE_DECISION + cover topik → G21 docs → kode → juri → final",
+      "snapshot": {
+        "episode": "EP07_HIDANGAN_DARI_LANGIT",
+        "topic": "Hidangan dari langit — permintaan Hawariyyun kepada Nabi Isa AS (QS Al-Maidah 112–115)",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "short-baru-11-23-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP07_HIDANGAN_DARI_LANGIT/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:42:38.499Z",
+      "doing": "Style baru MANUSCRIPT dipilih pengguna (\"1 MANUSCRIPT\", STATUS style approved). Belum ada kerja MANUSCRIPT.",
+      "files": [
+        "HANDOFF.md",
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/hidangan07/Hidangan.tsx",
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/hidangan07/parts.tsx"
+      ],
+      "next": "STYLE_DECISION.md MANUSCRIPT (lama → _paperworld_old) + cover-reference (quality-bar/manuscript.png) → restyle kode hidangan07 ke MANUSCRIPT (timing/words.json tetap) → cover topik 1080×1920 → G21 docs (Style: MANUSCRIPT) + THEME_CHECK + baris Style SOCIAL_CAPTIONS → stills → contact sheet → juri buta (maks 2) → final + mix G18 + QA → NOTES/lesson",
+      "snapshot": {
+        "episode": "EP07_HIDANGAN_DARI_LANGIT",
+        "topic": "Hidangan dari langit — permintaan Hawariyyun kepada Nabi Isa AS (QS Al-Maidah 112–115)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP07_HIDANGAN_DARI_LANGIT/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:46:08.867Z",
+      "doing": "Restyle kode hidangan07 ke MANUSCRIPT (parts.tsx + Hidangan.tsx ditulis ulang). STYLE_DECISION.md MANUSCRIPT + cover-reference.png SUDAH; cover lama → *_paperworld_old.*",
+      "files": [
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/hidangan07/parts.tsx",
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/hidangan07/Hidangan.tsx"
+      ],
+      "next": "tsc → cover topik style/cover-topic.png → G21 docs + THEME_CHECK + SOCIAL_CAPTIONS Style → stills → sheet → juri buta",
+      "snapshot": {
+        "episode": "EP07_HIDANGAN_DARI_LANGIT",
+        "topic": "Hidangan dari langit — permintaan Hawariyyun kepada Nabi Isa AS (QS Al-Maidah 112–115)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP07_HIDANGAN_DARI_LANGIT/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:51:35.639Z",
+      "doing": "Kode MANUSCRIPT hidangan07 selesai ditulis (tsc bersih), belum dirender. STYLE_DECISION + cover-reference selesai.",
+      "files": [
+        "HANDOFF.md",
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/hidangan07/Hidangan.tsx",
+        "F:/AUDIRA-2D-SKILL-MOTION/engines/remotion-starter/src/episodes/hidangan07/parts.tsx",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Baca HANDOFF.md \"Update sesi 8\": stills cek bug → cover-topic.png → G21 docs + THEME_CHECK + SOCIAL_CAPTIONS Style → contact sheet → juri buta → final",
+      "snapshot": {
+        "episode": "EP07_HIDANGAN_DARI_LANGIT",
+        "topic": "Hidangan dari langit — permintaan Hawariyyun kepada Nabi Isa AS (QS Al-Maidah 112–115)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP07_HIDANGAN_DARI_LANGIT/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T08:58:34.897Z",
+      "doing": "render final HidanganEP07 1080x1920@60 tanpa audio → draft/video_noaudio.mp4 (juri r2 MANUSCRIPT LOLOS 3.83)",
+      "command": "npx remotion render engines/remotion-starter/src/episodes/hidangan07/index.tsx HidanganEP07 <ep>/draft/video_noaudio.mp4 --public-dir=engines/remotion-starter/public --concurrency=4 --log=error (TEMP=F:/tmp-remotion-ep07)",
+      "files": [
+        "draft/video_noaudio.mp4"
+      ],
+      "next": "mix G18 → FINAL_VIDEO.mp4 + metadata → QA → NOTES/lesson/score final → delivery (HANDOFF Next versi lama 4–7)",
+      "snapshot": {
+        "episode": "EP07_HIDANGAN_DARI_LANGIT",
+        "topic": "Hidangan dari langit — permintaan Hawariyyun kepada Nabi Isa AS (QS Al-Maidah 112–115)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP07_HIDANGAN_DARI_LANGIT/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:42:46.639Z",
+      "doing": "s10: final video_noaudio.mp4 (5100f) OK; qa_video FAIL LONCAT 44.13 (medalion dim snap) & 64.2 (storm color snap) → kode diperbaiki; render ulang segmen frame 2580-2699 & 3780-3899 ke draft/seg*.mp4 lalu splice → draft/video_fixed.mp4",
+      "command": "npx remotion render ... HidanganEP07 draft/segA.mp4 --frames=2580-2699 ; segB --frames=3780-3899",
+      "files": [
+        "draft/video_noaudio.mp4",
+        "draft/mix.wav",
+        "FINAL_VIDEO.mp4"
+      ],
+      "next": "splice → mux mix.wav (stereo, -14.0 LUFS, TP -1.5 sudah di draft/mix.wav) + metadata → qa_video ulang → NOTES/memory/scheduled tasks/status review",
+      "snapshot": {
+        "episode": "EP07_HIDANGAN_DARI_LANGIT",
+        "topic": "Hidangan dari langit — permintaan Hawariyyun kepada Nabi Isa AS (QS Al-Maidah 112–115)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP07_HIDANGAN_DARI_LANGIT/audio/vo.wav",
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:43:00.098Z",
+      "doing": "Juri r2 LOLOS 3.83. FINAL_VIDEO.mp4 (-14.0 LUFS, TP -1.3, metadata) dibuat dari render SEBELUM fix LONCAT. QA FAIL LONCAT 44.13 & 64.2; fix sudah di kode (sesi s10).",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "draft/video_noaudio.mp4",
+        "draft/mix.wav",
+        "project/mix.sh",
+        "HANDOFF.md"
+      ],
+      "next": "Render ulang draft/video_noaudio.mp4 → mux dari draft/mix.wav + metadata (project/mix.sh) → audira_qa_video hardOnly → record_score final → NOTES/append_lesson/STATUS → cleanup → caption di chat",
+      "snapshot": {
+        "episode": "EP07_HIDANGAN_DARI_LANGIT",
+        "topic": "Hidangan dari langit — permintaan Hawariyyun kepada Nabi Isa AS (QS Al-Maidah 112–115)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP07_HIDANGAN_DARI_LANGIT/audio/vo.wav",
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T09:43:00.098Z",
+      "doing": "Juri r2 LOLOS 3.83. FINAL_VIDEO.mp4 (-14.0 LUFS, TP -1.3, metadata) dibuat dari render SEBELUM fix LONCAT. QA FAIL LONCAT 44.13 & 64.2; fix sudah di kode (sesi s10).",
+      "files": [
+        "FINAL_VIDEO.mp4",
+        "draft/video_noaudio.mp4",
+        "draft/mix.wav",
+        "project/mix.sh",
+        "HANDOFF.md"
+      ],
+      "next": "Render ulang draft/video_noaudio.mp4 → mux dari draft/mix.wav + metadata (project/mix.sh) → audira_qa_video hardOnly → record_score final → NOTES/append_lesson/STATUS → cleanup → caption di chat",
+      "snapshot": {
+        "episode": "EP07_HIDANGAN_DARI_LANGIT",
+        "topic": "Hidangan dari langit — permintaan Hawariyyun kepada Nabi Isa AS (QS Al-Maidah 112–115)",
+        "style": "MANUSCRIPT",
+        "memoryEpisode": "short-baru-11-23-EP07",
+        "currentStage": "setup",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP07_HIDANGAN_DARI_LANGIT/audio/vo.wav",
+        "draftScores": [],
+        "finals": [
+          "FINAL_VIDEO.mp4"
+        ],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T09:51:08.975Z"
+    }
+  ],
+  "syncedAt": "2026-11-23T09:36:24.428Z"
+}

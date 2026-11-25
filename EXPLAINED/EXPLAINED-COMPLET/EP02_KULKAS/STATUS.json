@@ -1,0 +1,163 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP02_KULKAS",
+  "topic": "Judul Episode",
+  "createdAt": "2026-11-12T10:06:29.694Z",
+  "updatedAt": "2026-11-12T12:03:36.792Z",
+  "currentStage": "complete",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.694Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.694Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T10:06:29.694Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-12T10:06:29.694Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit (EP04 Standard)",
+      "gate": false,
+      "status": "done",
+      "doneAt": "2026-11-12T10:06:29.694Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:56.276Z",
+          "text": "sync: VO sudah dibuat"
+        }
+      ],
+      "doneAt": "2026-11-12T01:28:29.778Z",
+      "startedAt": "2026-11-12T01:28:29.778Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:56.276Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-12T01:16:24.354Z",
+      "startedAt": "2026-11-12T01:16:24.354Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci + visual audit",
+      "gate": true,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:56.276Z",
+          "text": "sync: 1 gambar draf/contact sheet; acc tidak tercatat, disimpulkan karena tahap sesudahnya sudah ada"
+        }
+      ],
+      "approved": true,
+      "approvedAt": null,
+      "approvalSource": "inferred",
+      "doneAt": "2026-11-12T06:39:10.595Z",
+      "startedAt": "2026-11-12T06:39:10.595Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:56.276Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-12T11:22:47.716Z",
+          "text": "FINAL_VIDEO.mp4 81.8 s 60 fps, -14.0 LUFS, TP -1.7; metadata ok"
+        }
+      ],
+      "doneAt": "2026-11-12T11:22:47.716Z",
+      "startedAt": "2026-11-12T06:53:46.149Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T10:07:56.276Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-12T11:22:47.716Z",
+          "text": "SOCIAL_CAPTIONS.md validator ok; NOTES.md; lessons in motion memory"
+        }
+      ],
+      "doneAt": "2026-11-12T11:22:47.716Z",
+      "startedAt": "2026-11-12T10:06:29.694Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-12T12:03:36.792Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-12T11:22:47.716Z",
+      "startedAt": "2026-11-12T11:22:47.716Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "cara-kerja-benda-EP02",
+    "style": "THERMALFORGE",
+    "wordCount": 187,
+    "estimatedDuration": {
+      "wordCount": 187,
+      "minSec": 75,
+      "maxSec": 83
+    },
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ],
+    "title": "Kulkas Tidak Membuat Dingin"
+  },
+  "syncedAt": "2026-11-12T12:03:36.792Z",
+  "notes": [
+    {
+      "at": "2026-11-12T11:22:47.604Z",
+      "text": "data restored (style/title/wordCount had been overwritten by another session as precision-cgi/202)"
+    }
+  ]
+}

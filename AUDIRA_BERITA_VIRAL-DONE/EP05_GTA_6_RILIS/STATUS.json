@@ -1,0 +1,182 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP05_GTA_6_RILIS",
+  "topic": "5 berita viral Indonesia 10 November 2026 (riset saja, belum produksi)",
+  "createdAt": "2026-11-10T15:25:29.853Z",
+  "updatedAt": "2026-11-11T02:51:47.422Z",
+  "currentStage": "complete",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T15:29:13.517Z",
+          "text": "Memori + seri sebelumnya dibaca 2026-11-10"
+        }
+      ],
+      "doneAt": "2026-11-10T15:29:13.517Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-10T15:29:18.000Z",
+          "text": "RESEARCH_REPORT.md + SOURCE_REGISTER.md ditulis 2026-11-10; tunggu pilihan topik pengguna"
+        }
+      ],
+      "doneAt": "2026-11-10T15:29:18.000Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-10T15:45:40.000Z",
+      "notes": [
+        {
+          "at": "2026-11-10T15:32:37.000Z",
+          "text": "Topik dipilih pengguna 2026-11-10. Rekomendasi style: CIRCUITFORGE / RETROWAVE / DEVFORGE (sheet _review/style_gate_covers.jpg). Menunggu pilihan."
+        },
+        {
+          "at": "2026-11-10T15:45:40.000Z",
+          "text": "Pengguna: \"Setuju semua\" (cover topik) 2026-11-10"
+        }
+      ],
+      "doneAt": "2026-11-10T15:45:40.000Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + estimasi durasi",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-11T01:47:30.000Z",
+      "notes": [
+        {
+          "at": "2026-11-11T01:39:34.000Z",
+          "text": "docs/SCRIPT.md draf (197 kata terucap, 79-88 dtk); menunggu acc"
+        },
+        {
+          "at": "2026-11-11T01:47:30.000Z",
+          "text": "Pengguna: \"Setuju semua\" (naskah) 2026-11-11"
+        }
+      ],
+      "doneAt": "2026-11-11T01:47:30.000Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T01:47:30.000Z",
+          "text": "studio/ seri (starter v4.3, junction _cache), typecheck + smoke OK 2026-11-10"
+        }
+      ],
+      "doneAt": "2026-11-11T01:47:30.000Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T01:51:17.000Z",
+          "text": "VO dikunci 2026-11-11: speech 75.741 s, -16 LUFS; audio/vo.wav + timeline.json -> studio/src/scenes/epNN/timeline.json"
+        }
+      ],
+      "doneAt": "2026-11-11T01:51:17.000Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T02:15:54.000Z",
+          "text": "Film dibangun (Remotion R3F), storyboard + sfx-cues; 2026-11-11"
+        }
+      ],
+      "doneAt": "2026-11-11T02:15:54.000Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-11T02:17:17.000Z",
+      "notes": [
+        {
+          "at": "2026-11-11T02:15:54.000Z",
+          "text": "Contact sheet 8 frame + RISK_CLIP_silent.mp4; skor draf LOLOS di style memory; menunggu acc"
+        },
+        {
+          "at": "2026-11-11T02:17:17.000Z",
+          "text": "Pengguna: \"Setuju semua\" (draf) 2026-11-11"
+        }
+      ],
+      "doneAt": "2026-11-11T02:17:17.000Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T02:36:49.000Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60, -13.7 LUFS, metadata + arsip; skor final LOLOS"
+        }
+      ],
+      "doneAt": "2026-11-11T02:36:49.000Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T02:36:49.000Z",
+          "text": "SOCIAL_CAPTIONS.md (validator ok), SUBTITLES.srt, NOTES.md; pelajaran di motion memory"
+        }
+      ],
+      "doneAt": "2026-11-11T02:36:49.000Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-11T02:51:47.422Z",
+          "text": "sync: review pasca-tayang tercatat di NOTES.md"
+        }
+      ],
+      "doneAt": "2026-11-11T02:36:49.194Z",
+      "startedAt": "2026-11-11T02:36:49.194Z"
+    }
+  ],
+  "data": {
+    "memoryEpisode": "berita-viral-10-nov-EP05",
+    "style": "CIRCUITFORGE",
+    "wordCount": 197,
+    "voSeconds": 75.741,
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-11T02:51:47.422Z"
+}

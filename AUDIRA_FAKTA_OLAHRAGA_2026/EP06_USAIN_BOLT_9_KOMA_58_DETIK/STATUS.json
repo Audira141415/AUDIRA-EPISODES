@@ -1,0 +1,505 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP06_USAIN_BOLT_9_KOMA_58_DETIK",
+  "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+  "createdAt": "2026-11-23T14:14:13.600Z",
+  "updatedAt": "2026-11-24T08:10:48.281Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:38.375Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-23T14:14:13.601Z",
+      "startedAt": "2026-11-23T14:14:13.601Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T14:14:38.375Z",
+          "text": "sync: riset ada"
+        },
+        {
+          "at": "2026-11-23T14:21:01.142Z",
+          "text": "21 fakta, 7 HIGH; research/SOURCE_REGISTER.md + RESEARCH_REPORT.md (subagent orkestrator 2026-11-23)"
+        }
+      ],
+      "doneAt": "2026-11-23T14:21:01.142Z",
+      "startedAt": "2026-11-22T06:26:14.091Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:16:33.130Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        },
+        {
+          "at": "2026-11-23T15:17:07.314Z",
+          "text": "TOYDIORAMA 3D dipilih AI (alt BROADCASTFORGE, DATAPHYSICAL). Preflight lolos. Cover topik belum dirender (dibuat dari komposisi Ep06CoverA setelah scene dibangun)."
+        }
+      ],
+      "doneAt": "2026-11-23T15:17:07.314Z",
+      "startedAt": "2026-11-23T15:15:15.217Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T15:17:20.819Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-23T15:16:49.653Z",
+      "startedAt": "2026-11-23T15:16:49.653Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:23:40.730Z",
+          "text": "studio bersama, scene ep06 terdaftar di Root.tsx"
+        }
+      ],
+      "doneAt": "2026-11-24T07:23:40.730Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T18:19:42.002Z",
+          "text": "sync: VO sudah dibuat"
+        },
+        {
+          "at": "2026-11-23T18:19:47.493Z",
+          "text": "VO terkunci: audio/vo.wav (Cartesia speed 0.9, raw 93,99 dtk, tight 86,46 dtk, 211 kata). Timeline studio/src/scenes/ep06/timeline.json total 90,46 dtk; studio/public/audio/ep06/vo.wav. Sections: HOOK 0.1-10.5, KONTEKS 11.0-25.1, PENGEMBANGAN 25.5-44.7, PENJELASAN 45.1-62.8, PAYOFF 63.2-82.8, OUTRO 83.2-86.3."
+        }
+      ],
+      "doneAt": "2026-11-23T18:19:47.493Z",
+      "startedAt": "2026-11-23T15:17:52.542Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:10:57.315Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-24T07:23:40.387Z",
+          "text": "s4: stills uji + perbaikan framing (papan OWENS, speedometer, panel HUD anti-duplikat papan 3D). Cover style/cover-topic.png. SFX public/audio/ep06/sfx.wav (-20 LUFS, 38 bunyi). Klip S3 audit:camera 5/5."
+        }
+      ],
+      "doneAt": "2026-11-24T07:23:40.387Z",
+      "startedAt": "2026-11-24T07:10:26.375Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:10:57.315Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        }
+      ],
+      "doneAt": "2026-11-24T07:10:26.376Z",
+      "startedAt": "2026-11-24T07:10:26.376Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T07:34:58.437Z",
+      "notes": [
+        {
+          "at": "2026-11-24T07:34:58.437Z",
+          "text": "Acc pengguna 2026-11-24: \"Gas render final\""
+        },
+        {
+          "at": "2026-11-24T08:10:43.266Z",
+          "text": "FINAL_EP06_USAIN_BOLT_9_KOMA_58.mp4 1080x1920@60 90.48s, -13.6 LUFS, TP -2.2, metadata + signature OK. Jury final 3.67."
+        }
+      ],
+      "startedAt": "2026-11-24T07:34:58.437Z",
+      "doneAt": "2026-11-24T08:10:43.266Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T07:37:15.598Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T07:36:50.321Z",
+      "startedAt": "2026-11-24T07:36:50.321Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "fakta-olahraga-EP06",
+    "shortTitle": "Bolt 9,58",
+    "style": "TOYDIORAMA",
+    "engine": "remotion",
+    "wordCount": 207,
+    "estimatedDuration": {
+      "wordCount": 207,
+      "minSec": 83,
+      "maxSec": 92
+    }
+  },
+  "syncedAt": "2026-11-24T07:37:15.598Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-23T15:17:07.465Z",
+      "doing": "Tahap 4: SCRIPT.md + docs/script-lines.json (207 kata, 6 blok hook/konteks/pengembangan/penjelasan/payoff/outro) SELESAI. Belum: ART_DIRECTION.md, STORYBOARD.md, ASSET_MANIFEST.md, VO, scene.",
+      "files": [
+        "EP06_USAIN_BOLT_9_KOMA_58_DETIK/docs/SCRIPT.md",
+        "EP06_USAIN_BOLT_9_KOMA_58_DETIK/docs/script-lines.json",
+        "EP06_USAIN_BOLT_9_KOMA_58_DETIK/style/STYLE_DECISION.md",
+        "studio/public/glb (6 GLB baru: bleacher-stand-run-1627c2, spectator-d086fe, floodlight-mast-4482be, trophy-cabinet-e963ac, pit-podium-c70397, sand-timer-6acb1b)"
+      ],
+      "next": "1) Tulis docs/ART_DIRECTION.md, STORYBOARD.md (tabel >=6 baris Scene|Waktu|BG/MG/FG/HUD|Kamera|Audio), ASSET_MANIFEST.md (baris 'Style: TOYDIORAMA'). Rencana 6 scene: S1 hook stadion diorama malam, 8 ToyPerson sprint, timer 0,00->9,58 + CoverText; S2 konteks tribun Berlin (bleacher-stand-run, spectator, floodlight-mast GLB), papan BERLIN 16 AGU 2009, plakat OWENS 1936, Bolt (onePiece kuning #f2c230 / hijau) crouch di balok start, chip BOLT 22 TH · REKOR 9,69; S3 lomba diperlambat, kamera tracking samping (jarak ±12 fov 32), penanda meter, chip REAKSI 0,146 / UNGGUL TIPIS 20 M (2,89 vs 2,92) / MEMIMPIN ±30 M / 60 M 6,31 / 80 M 7,92; S4 meja ukur overhead: jejak kaki ±41 renggang vs ±45 rapat, penggaris 2,47 M, speedometer 44,72 KM/JAM RATA-RATA 60-80 M (bukan puncak); S5 podium + papan 9,58 vs 9,71 (-0,13), 9,69->9,58 (-0,11 TERBESAR SEJAK 1968), 19,19 200 M 20 AGU 2009, trophy-cabinet MASIH REKOR DUNIA 2026; S6 outro lintasan kosong + kartu KAPAN PECAH?. Papan iklan in-world bertulis AUDIRA. 2) VO: audira_generate_voiceover text = gabungan bagian spoken script-lines.json (speed ±0.9), output EP06/audio/work/vo-raw.wav + vo-raw-words.json; lalu python _tools/vo_tighten.py EP06_USAIN_BOLT_9_KOMA_58_DETIK; python _tools/make-timeline.py EP06_USAIN_BOLT_9_KOMA_58_DETIK (dari folder seri) -> studio/src/scenes/ep06/timeline.json + public/audio/ep06/vo.wav. 3) Scene: salin pola studio/src/scenes/ep04 (Film.tsx, Model.tsx, Cover.tsx, index.ts) ke ep06; pose sprint via ToyPerson poseOverride (lean, lengan ±1.1, siku -1.4, lutut tinggi); tambah Ep06CoverA/Ep06Preview/Ep06Final + SLUG Ep06 'olahraga-EP06' di studio/src/Root.tsx dengan Edit kecil (Root dipakai 5 sesi paralel). 4) npm run sfx, contact sheet, audit:visual, juri, THEME_CHECK, gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP06_USAIN_BOLT_9_KOMA_58_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP06",
+        "currentStage": "script",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:19:47.911Z",
+      "doing": "VO + timeline SELESAI (total 90,46 dtk). Folder studio/src/scenes/ep06/ hanya berisi timeline.json. Docs ART_DIRECTION/STORYBOARD/ASSET_MANIFEST belum ditulis.",
+      "files": [
+        "studio/src/scenes/ep06/timeline.json",
+        "studio/public/audio/ep06/vo.wav",
+        "EP06_USAIN_BOLT_9_KOMA_58_DETIK/audio/vo.wav",
+        "EP06_USAIN_BOLT_9_KOMA_58_DETIK/audio/timeline.json"
+      ],
+      "next": "1) docs/ART_DIRECTION.md, STORYBOARD.md (tabel 6 scene, waktu dari timeline.json sections), ASSET_MANIFEST.md, semua dengan baris 'Style: TOYDIORAMA'. 2) Bangun studio/src/scenes/ep06 (Film.tsx, Model.tsx salin dari ep04, Cover.tsx, index.ts) sesuai rencana 6 scene di handover sebelumnya / STATUS.json; tambah Ep06CoverA + Ep06Preview + Ep06Final + SLUG Ep06 'olahraga-EP06' di studio/src/Root.tsx dengan Edit kecil. 3) cover topik -> style/cover-topic.png. 4) npm run sfx, contact sheet 6-8 frame, audit:visual, juri self+jury record_score, draft/THEME_CHECK.md. 5) Gerbang tahap 9: minta acc pengguna.",
+      "snapshot": {
+        "episode": "EP06_USAIN_BOLT_9_KOMA_58_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP06",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP06_USAIN_BOLT_9_KOMA_58_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:24:14.429Z",
+      "doing": "s2: docs ART_DIRECTION/STORYBOARD/ASSET_MANIFEST/SHOTLIST selesai. Menulis studio/src/scenes/ep06 (Set.tsx, Film.tsx, Cover.tsx, Model.tsx, index.ts). Skala 0,55 unit/m, lintasan x -27,5..27,5, lajur z ±3,2, Bolt lajur z=0,4.",
+      "files": [
+        "EP06_USAIN_BOLT_9_KOMA_58_DETIK/docs/SHOTLIST.md",
+        "studio/src/scenes/ep06/"
+      ],
+      "next": "Root.tsx Ep06 (Edit kecil), stills uji, cover-topic.png, npm run sfx, contact sheet, audit:visual, juri, THEME_CHECK, gerbang tahap 9.",
+      "snapshot": {
+        "episode": "EP06_USAIN_BOLT_9_KOMA_58_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP06",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP06_USAIN_BOLT_9_KOMA_58_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T18:26:00.365Z",
+      "doing": "s2 berhenti (batas konteks). SELESAI: docs ART_DIRECTION/STORYBOARD/ASSET_MANIFEST/SHOTLIST (Style: TOYDIORAMA); studio/src/scenes/ep06/Model.tsx (salinan ep04), index.ts (export CoverA, Film, TOTAL_SECONDS), Set.tsx (stadion: M=0,55 unit/m, START_X=-27,5, FINISH_X=27,5, laneZ(i), xAt(m), RUNNERS 8 pelari dgn splits Bolt/Gay, distAt, sprintPose/crouchPose/finishPose, RaceRunner, WalnutStage, Track(markers,glowMarker,tape), Stands(crowd,lights) dgn GLB bleacher/grandstand/spectator/floodlight/hoarding AUDIRA, MeterPlaque, Board). BELUM: Film.tsx, Cover.tsx, Root.tsx, belum pernah dirender (Set.tsx belum dicek typecheck).",
+      "files": [
+        "EP06_USAIN_BOLT_9_KOMA_58_DETIK/docs/ART_DIRECTION.md",
+        "EP06_USAIN_BOLT_9_KOMA_58_DETIK/docs/STORYBOARD.md",
+        "EP06_USAIN_BOLT_9_KOMA_58_DETIK/docs/ASSET_MANIFEST.md",
+        "EP06_USAIN_BOLT_9_KOMA_58_DETIK/docs/SHOTLIST.md",
+        "studio/src/scenes/ep06/Set.tsx",
+        "studio/src/scenes/ep06/Model.tsx",
+        "studio/src/scenes/ep06/index.ts"
+      ],
+      "next": "1) Tulis ep06/Cover.tsx (COVER_CAMS.A pos [-24,7.5,12] target [-18,0.5,0] fov 32; StadiumScene + CoverText 'LARI TERCEPAT SEPANJANG MASA' / '9,58 DETIK' / 'Berlin 2009. Rekor dunia 17 tahun.'; export CoverA) dan ep06/Film.tsx dgn pola ep04/Film.tsx (camAt, Chip, Timer, pop, Captions, Finish DOCUMENTARY_WARM, vignette, flash cut). CUT = section start-0,3: s2 10,70, s3 25,25, s4 44,83, s5 62,92, s6 82,92; TOTAL 90,46. S1: lomba real-time rc=t-1.0, timer berhenti 9,58 di t≈10,58, chip REKOR DUNIA 17 TAHUN @5,6; kamera cover lalu tracking samping Bolt pos [bx+1.5,2.6,12]. S2: Bolt crouch semua lajur, Board OWENS · OLIMPIADE 1936 di (-24,_,4.2), chip BERLIN · 16 AGU 2009 @11,0, OWENS 1936 @15,3, BOLT · 22 TH · REKOR 9,69 @19,0/23,1; dolly ke balok start. S3: slow-mo peta film->race (25,4,0)(26,5,0,146)(30,1,2,89)(33,8,3,78)(37,0,6,31)(40,3,7,92)(43,6,9,58)(44,83,10,2); markers [20,30,60,80]; chip REAKSI 0,146 DTK · TERMASUK PALING LAMBAT @26,5, 20 M: UNGGUL TIPIS @30,1, ±30 M: MEMIMPIN @32,7, 60 M · 6,31 @37,0, 80 M · 7,92 @40,3, LARI PENUH SAMPAI GARIS @42; tracking pos [bx+0.6,2.4,9.5]. S4 meja ukur overhead: 2 jalur sepanjang z (6 unit), jejak kuning 41 muncul 46,7-50,0, navy 45 muncul 53,4-56,3, figur Bolt sprint beku + penggaris 2,47 M @50,7-53,4 di z=+4,5, speedometer jarum ke 44,72 di z=-5 @57-61; HUD ±41 LANGKAH, 2,47 M/LANGKAH, ±45 LANGKAH, 44,72 KM/JAM · RATA-RATA 60-80 M (BUKAN PUNCAK). S5: papan 9,58 BOLT/9,71 GAY + −0,13 @63,2-68,3, papan rekor 9,69->9,58 −0,11 TERBESAR SEJAK ERA ELEKTRONIK (1968) @70,5, trophy-cabinet + 19,19 · 200 M @78,6, MASIH REKOR DUNIA · 2026 @81,2; podium prosedural 3 balok, Bolt finishPose. S6: lintasan kosong + tape, kartu KAPAN PECAH? @83,2. VO staticFile('audio/ep06/vo.wav'). 2) Root.tsx Edit kecil: import * as EP06, SLUG Ep06 'olahraga-EP06', Ep06CoverA, Ep06Preview, Ep06Final (pola Ep05). 3) npm run typecheck; stills uji (node scripts/stills.mjs out/ep06/test 1s,8s,18s,35s,50s,60s,70s,84s Ep06Preview 0.5) dan perbaiki orientasi GLB/pose. 4) cover -> style/cover-topic.png; npm run sfx -- --shotlist=../EP06_USAIN_BOLT_9_KOMA_58_DETIK/docs/SHOTLIST.md --out=public/audio/ep06/sfx.wav; contact sheet draft/contact-sheet.jpg; audit:visual; juri self + jury; THEME_CHECK. 5) Gerbang tahap 9 (acc pengguna).",
+      "snapshot": {
+        "episode": "EP06_USAIN_BOLT_9_KOMA_58_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP06",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP06_USAIN_BOLT_9_KOMA_58_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:04:17.515Z",
+      "doing": "s3: Cover.tsx + Film.tsx EP06 ditulis, Root.tsx sudah berisi Ep06CoverA/Ep06Preview/Ep06Final + SLUG Ep06, typecheck lolos tanpa error EP06. Belum ada render sama sekali.",
+      "command": "node scripts/stills.mjs out/ep06/test 1s,8s,18s,35s,50s,52s,59s,66s,79s,84s Ep06Preview 0.5",
+      "files": [
+        "studio/src/scenes/ep06/Cover.tsx",
+        "studio/src/scenes/ep06/Film.tsx",
+        "studio/src/Root.tsx"
+      ],
+      "next": "1) Stills uji: cd studio; node scripts/stills.mjs out/ep06/test 1s,8s,18s,35s,50s,52s,59s,66s,79s,84s Ep06Preview 0.5 → buat satu contact sheet kecil, periksa orientasi GLB (bleacher/grandstand/hoarding scale x66/x8 di Set.tsx bisa salah sumbu; spectator tint), pose pelari (heading PI/2 = lari +x), BoltTag, S4 meja ukur (overhead kamera [0,13.5,3.2]; ruler z=4.6; SpeedDial z=-5), S5 podium + Board + trophy-cabinet. Perbaiki. 2) Cover: npm run cover / render Ep06CoverA → EP06.../style/cover-topic.png. 3) npm run sfx -- --shotlist=../EP06_USAIN_BOLT_9_KOMA_58_DETIK/docs/SHOTLIST.md --out=public/audio/ep06/sfx.wav. 4) contact sheet 6–8 frame 540×960 → EP06.../draft/contact-sheet.jpg; npm run audit:visual; draft/THEME_CHECK.md; juri self + blind jury (record_score TOYDIORAMA, episode fakta-olahraga-EP06, maks 2 putaran). 5) Gerbang tahap 9: tampilkan contact sheet, skor, durasi 90,46 dtk, cek G18c, minta acc. Catatan desain: S1 raceS1=(t-1)*1.06 (timer stop 9,58 di t≈10,04), S3 slow-mo S3_MAP, HUD chip per angka di Film.tsx Hud. Lights prop bernama `sun` (bukan key).",
+      "snapshot": {
+        "episode": "EP06_USAIN_BOLT_9_KOMA_58_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP06",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP06_USAIN_BOLT_9_KOMA_58_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:04:24.386Z",
+      "doing": "s3 selesai di titik aman (kode EP06 lengkap, typecheck lolos); pindah ke sesi baru karena batas konteks.",
+      "next": "Mulai dari langkah 1 (stills uji) pada catatan handover sebelumnya.",
+      "snapshot": {
+        "episode": "EP06_USAIN_BOLT_9_KOMA_58_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP06",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP06_USAIN_BOLT_9_KOMA_58_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T07:25:44.647Z",
+      "doing": "s4: juri buta r1 = 3,5 PERLU POLES (lighting/depth/composition/readability 3, material 4, motion 5 dari audit:camera clip-s3). Poles r2 sudah diterapkan di Film.tsx (SubjectSpot hangat ikut Bolt, kamera S1/S3 lebih dekat + front 3/4 37,6-39,4 dtk, kamera S2 dipusatkan ke start, papan S5 w2,6 + kamera mundur, label HUD 44/42 px) dan Set.tsx (BOARD_XS [-23,-5,11,23]). Contact sheet r2 sudah dirender: studio/out/ep06/draft2/_sheet.jpg (belum dicek, belum dicopy ke draft/).",
+      "files": [
+        "studio/src/scenes/ep06/Film.tsx",
+        "studio/src/scenes/ep06/Set.tsx",
+        "EP06_USAIN_BOLT_9_KOMA_58_DETIK/draft/THEME_CHECK.md",
+        "EP06_USAIN_BOLT_9_KOMA_58_DETIK/draft/contact-sheet.jpg"
+      ],
+      "next": "1) Cek studio/out/ep06/draft2/_small.jpg; bila OK: cp _sheet.jpg ../EP06.../draft/contact-sheet.jpg; npm run audit:visual -- out/ep06/draft2 --style=TOYDIORAMA --json=out/ep06/draft2/look.json. 2) Juri buta r2 (subagent, qa/jury.md AUDIRA-SKILL-MOTION, hanya contact sheet + cover toydiorama.png + ceilings) lalu record_score judge jury (camera = out/ep06/camera.json skor 5, atau render ulang klip 750-1290 untuk audit:camera karena kamera S3 berubah). Ini putaran terakhir: skor terbaik >= 3,5 → langsung gerbang final. 3) append_lesson failed TOYDIORAMA. 4) Gerbang tahap 9: tampilkan contact sheet, skor juri, durasi 90,46 dtk, G18c lolos (VO -16,3 LUFS, SFX stem -20 → -10 dB = -30 → 14 LU), minta acc. THEME_CHECK.md sudah ditulis (update detik/subjek bila frame berubah). SFX: public/audio/ep06/sfx.wav. Cover: style/cover-topic.png.",
+      "snapshot": {
+        "episode": "EP06_USAIN_BOLT_9_KOMA_58_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP06",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP06_USAIN_BOLT_9_KOMA_58_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:33:59.938Z",
+      "doing": "s4: draf LOLOS juri buta r2 (avg 4,0: lighting 4, material 4, depth 4, composition 4, readability 3, motion 5). contact-sheet.jpg r2 + THEME_CHECK r2 (8 ya) + lessons dicatat. Menunggu acc pengguna di gerbang tahap 9.",
+      "files": [
+        "EP06_USAIN_BOLT_9_KOMA_58_DETIK/draft/contact-sheet.jpg",
+        "EP06_USAIN_BOLT_9_KOMA_58_DETIK/draft/THEME_CHECK.md",
+        "studio/src/scenes/ep06/Film.tsx",
+        "studio/src/scenes/ep06/Set.tsx"
+      ],
+      "next": "Setelah acc pengguna: audira_episode_status update stage final approved true; render final di studio: npm run render:final -- Ep06Final (cek usage scripts/render-final.mjs) --vo=public/audio/ep06/vo.wav --sfx=public/audio/ep06/sfx.wav --concurrency=2 (background, GPU dipakai bersama) → FINAL di folder episode; QA -14 LUFS TP < -1, metadata ffprobe, record_score final; lalu tahap 10 (SOCIAL_CAPTIONS.md 6 platform + validator, NOTES.md, scheduled tasks review).",
+      "snapshot": {
+        "episode": "EP06_USAIN_BOLT_9_KOMA_58_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP06",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP06_USAIN_BOLT_9_KOMA_58_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:35:13.557Z",
+      "doing": "Acc render final dari pengguna sudah dicatat (stage final approved). Render final BELUM dimulai (dipindah ke sesi baru karena batas konteks).",
+      "command": "cd studio; npm run render:final -- --comp=Ep06Final --out=../EP06_USAIN_BOLT_9_KOMA_58_DETIK/FINAL_EP06_USAIN_BOLT_9_KOMA_58.mp4 --vo=public/audio/ep06/vo.wav --sfx=public/audio/ep06/sfx.wav --jobs=2 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Usain Bolt 9,58 Detik\" --slug=usain-bolt-9-58 --ep=EP06",
+      "files": [
+        "studio/src/scenes/ep06/Film.tsx",
+        "studio/public/audio/ep06/sfx.wav",
+        "studio/public/audio/ep06/vo.wav",
+        "EP06_USAIN_BOLT_9_KOMA_58_DETIK/draft/contact-sheet.jpg"
+      ],
+      "next": "1) Jalankan command di background (GPU dipakai bersama sesi EP07-EP10, jangan naikkan jobs). 2) QA: -14 LUFS, TP < -1 dBFS, ffprobe metadata (artist AUDIRA (Agus Dwi R.)), cek frame dari MP4, record_score TOYDIORAMA stage final (episode fakta-olahraga-EP06). 3) Tahap 10: docs/SOCIAL_CAPTIONS.md 6 platform + Jadwal Upload (WIB) + Label Konten AI, audira_validate_social_captions, NOTES.md (juri r1 3,5 → r2 4,0; pelajaran sudah dicatat di memory), tampilkan caption di chat, tanya jam upload lalu 3 scheduled task review-usain-bolt-9-58-24h/72h/7d. 4) Hapus perantara (studio/out/ep06/test*, draft*, clip-s3.mp4). Jangan commit; jangan tulis ulang Root.tsx.",
+      "snapshot": {
+        "episode": "EP06_USAIN_BOLT_9_KOMA_58_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP06",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP06_USAIN_BOLT_9_KOMA_58_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:35:51.114Z",
+      "doing": "Render final EP06 berjalan di background (sesi s5), log di scratchpad render-ep06.log",
+      "command": "cd studio; npm run render:final -- --comp=Ep06Final --out=../EP06_USAIN_BOLT_9_KOMA_58_DETIK/FINAL_EP06_USAIN_BOLT_9_KOMA_58.mp4 --vo=public/audio/ep06/vo.wav --sfx=public/audio/ep06/sfx.wav --jobs=2 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Usain Bolt 9,58 Detik\" --slug=usain-bolt-9-58 --ep=EP06",
+      "next": "QA (LUFS/TP/ffprobe/frame), record_score final, SOCIAL_CAPTIONS + NOTES, hapus perantara, jadwalkan review",
+      "snapshot": {
+        "episode": "EP06_USAIN_BOLT_9_KOMA_58_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP06",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP06_USAIN_BOLT_9_KOMA_58_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T07:35:51.114Z",
+      "doing": "Render final EP06 berjalan di background (sesi s5), log di scratchpad render-ep06.log",
+      "command": "cd studio; npm run render:final -- --comp=Ep06Final --out=../EP06_USAIN_BOLT_9_KOMA_58_DETIK/FINAL_EP06_USAIN_BOLT_9_KOMA_58.mp4 --vo=public/audio/ep06/vo.wav --sfx=public/audio/ep06/sfx.wav --jobs=2 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --title=\"Usain Bolt 9,58 Detik\" --slug=usain-bolt-9-58 --ep=EP06",
+      "next": "QA (LUFS/TP/ffprobe/frame), record_score final, SOCIAL_CAPTIONS + NOTES, hapus perantara, jadwalkan review",
+      "snapshot": {
+        "episode": "EP06_USAIN_BOLT_9_KOMA_58_DETIK",
+        "topic": "Fakta olahraga dunia lintas cabang (bulu tangkis, atletik, tenis, F1, tinju)",
+        "style": "TOYDIORAMA",
+        "memoryEpisode": "fakta-olahraga-EP06",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/EP06_USAIN_BOLT_9_KOMA_58_DETIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-24T08:10:48.281Z"
+    }
+  ],
+  "session": 5,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP06 Bolt 9,58 · s2",
+      "at": "2026-11-23T18:19:47.911Z"
+    },
+    {
+      "no": 3,
+      "title": "EP06 Bolt 9,58 · s3",
+      "at": "2026-11-23T18:26:00.365Z"
+    },
+    {
+      "no": 4,
+      "title": "EP06 Bolt 9,58 · s4",
+      "at": "2026-11-24T07:04:24.386Z"
+    },
+    {
+      "no": 5,
+      "title": "EP06 Bolt 9,58 · s5",
+      "at": "2026-11-24T07:35:13.557Z"
+    }
+  ]
+}

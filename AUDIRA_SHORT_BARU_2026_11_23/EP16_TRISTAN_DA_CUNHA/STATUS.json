@@ -1,0 +1,518 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP16_TRISTAN_DA_CUNHA",
+  "topic": "Tristan da Cunha — pulau berpenghuni paling terpencil di dunia",
+  "createdAt": "2026-11-22T17:57:28.582Z",
+  "updatedAt": "2026-11-23T01:10:15.838Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:01:56.721Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        },
+        {
+          "at": "2026-11-22T22:24:09.141Z",
+          "text": "GLOBAL memory dibaca (VO tulis \"Audira\", Karaoke lebar penuh gap 0.4em, sign await, loudnorm TP, jobs=4 saat sesi lain render). Template 2D: EP04 Sentinel (Remotion 2D SVG, HANDOFF)."
+        }
+      ],
+      "doneAt": "2026-11-22T22:24:09.141Z",
+      "startedAt": "2026-11-22T17:59:56.804Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T18:01:56.721Z",
+          "text": "sync: riset ada"
+        },
+        {
+          "at": "2026-11-22T22:24:10.797Z",
+          "text": "20 fakta di research/SOURCE_REGISTER.md (Wikipedia + tristandc.com, populasi 220 per 18 Nov 2026, jarak St Helena 2.437 km)."
+        }
+      ],
+      "doneAt": "2026-11-22T22:24:10.797Z",
+      "startedAt": "2026-11-22T17:59:57.136Z"
+    },
+    {
+      "id": "style",
+      "name": "Gerbang style: rekomendasi + cover → cover topik",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-22T23:52:00.321Z",
+      "notes": [
+        {
+          "at": "2026-11-22T23:52:00.321Z",
+          "text": "Pengguna memilih \"HISTORYMAP (Recommended)\" (2026-11-23). Ditolak: PAPERWORLD, WATERCOLOR. Engine Remotion 2D SVG."
+        }
+      ],
+      "startedAt": "2026-11-22T23:52:00.321Z",
+      "doneAt": "2026-11-22T23:55:08.155Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-22T23:55:35.699Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T23:55:19.992Z",
+      "startedAt": "2026-11-22T23:55:19.992Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T23:52:26.787Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T23:52:11.939Z",
+      "startedAt": "2026-11-22T23:52:11.939Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T23:57:18.003Z",
+          "text": "VO Cartesia 85.03 dtk, 208 kata, vo-words.json + vo.timing.json; salinan audio/vo.wav"
+        }
+      ],
+      "doneAt": "2026-11-22T23:57:18.003Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-22T23:52:26.787Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T23:52:12.539Z",
+      "startedAt": "2026-11-22T23:52:12.539Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "approved": false,
+      "approvedAt": null,
+      "notes": [
+        {
+          "at": "2026-11-23T00:50:44.522Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        }
+      ],
+      "doneAt": "2026-11-23T00:49:55.950Z",
+      "startedAt": "2026-11-23T00:49:55.950Z"
+    },
+    {
+      "id": "final",
+      "name": "Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T01:06:24.421Z",
+          "text": "sync: final: FINAL_VIDEO.mp4"
+        },
+        {
+          "at": "2026-11-23T01:10:11.387Z",
+          "text": "FINAL_VIDEO.mp4 1080x1920@60 88.1s, -13.7 LUFS TP -1.9, metadata ok, Ed25519 VALID, qa_video PASS. Juri final 4.00 LOLOS (self 4.00). F9 fix BUKAN SOAL JARAK, render ulang."
+        }
+      ],
+      "doneAt": "2026-11-23T01:10:11.387Z",
+      "startedAt": "2026-11-23T01:03:20.285Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-23T00:58:04.850Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-23T01:10:14.991Z",
+          "text": "SOCIAL_CAPTIONS lolos validator, SUBTITLES.srt, NOTES.md, lesson HISTORYMAP+GLOBAL, 3 scheduled task review-tristan-da-cunha-ep16-24h/-72h/-7d, draft-clip dihapus."
+        }
+      ],
+      "doneAt": "2026-11-23T01:10:14.991Z",
+      "startedAt": "2026-11-23T00:57:58.545Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "short-baru-11-23-EP16",
+    "engine": "remotion",
+    "engineNote": "Remotion 2D murni (SVG/DOM, tanpa R3F)",
+    "channel": "FAKTADUNIA",
+    "handle": "@AudiraFaktaDunia",
+    "style": "HISTORYMAP",
+    "finals": [
+      "FINAL_VIDEO.mp4"
+    ]
+  },
+  "syncedAt": "2026-11-23T01:06:24.421Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-22T23:55:35.523Z",
+      "doing": "Generate VO Cartesia dari audio/vo.txt ke project/public/audio/vo.wav",
+      "files": [
+        "audio/vo.txt",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "npm run vo, lalu tulis kode src/ep16 (pola EP04 Film/pieces/scenes/timing) dan cover-topic",
+      "snapshot": {
+        "episode": "EP16_TRISTAN_DA_CUNHA",
+        "topic": "Tristan da Cunha — pulau berpenghuni paling terpencil di dunia",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP16",
+        "currentStage": "script",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T23:56:08.024Z",
+      "doing": "Docs + style selesai; VO belum (scriptPath gagal, pakai text)",
+      "files": [
+        "docs/HANDOFF.md",
+        "audio/vo.txt"
+      ],
+      "next": "Baca docs/HANDOFF.md: VO via text → npm run vo → kode src/ep16 → cover → draft → final → delivery",
+      "snapshot": {
+        "episode": "EP16_TRISTAN_DA_CUNHA",
+        "topic": "Tristan da Cunha — pulau berpenghuni paling terpencil di dunia",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP16",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-22T23:56:51.822Z",
+      "doing": "Generate VO Cartesia via text",
+      "files": [
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "npm run vo, lalu kode src/ep16",
+      "snapshot": {
+        "episode": "EP16_TRISTAN_DA_CUNHA",
+        "topic": "Tristan da Cunha — pulau berpenghuni paling terpencil di dunia",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP16",
+        "currentStage": "voice",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:03:58.769Z",
+      "doing": "VO selesai (85.03s); kode src/ep16 ditulis (tsc bersih), belum dirender",
+      "files": [
+        "project/src/ep16/",
+        "docs/HANDOFF.md"
+      ],
+      "next": "Render cover + stills sheet Ep16Preview, perbaiki visual, SHOTLIST+sfx, juri, final, delivery (lihat docs/HANDOFF.md UPDATE sesi 2)",
+      "snapshot": {
+        "episode": "EP16_TRISTAN_DA_CUNHA",
+        "topic": "Tristan da Cunha — pulau berpenghuni paling terpencil di dunia",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP16",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP16_TRISTAN_DA_CUNHA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:13:06.773Z",
+      "doing": "Kode ep16 + cover selesai; sheet poles ceilings L5 M5 D5 C5 R3 (sisa: kartouche S15 SVG→HTML)",
+      "files": [
+        "docs/HANDOFF.md",
+        "project/src/ep16/scenes.tsx",
+        "style/cover-topic.png",
+        "project/out/ep16-stills/_sheet.jpg"
+      ],
+      "next": "Lihat docs/HANDOFF.md UPDATE sesi 2b: fix S15, SHOTLIST+sfx, THEME_CHECK, klip+audit, juri self+jury, final, delivery",
+      "snapshot": {
+        "episode": "EP16_TRISTAN_DA_CUNHA",
+        "topic": "Tristan da Cunha — pulau berpenghuni paling terpencil di dunia",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP16",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP16_TRISTAN_DA_CUNHA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:50:38.997Z",
+      "doing": "Draft: klip camera 5/5, sheet ulang tanpa cap, draft/contact-sheet.jpg + THEME_CHECK.md, self score 4.17; menunggu juri buta",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "project/src/ep16/scenes.tsx"
+      ],
+      "next": "record_score jury; bila LOLOS → render final (perintah di docs/HANDOFF.md sesi 2b langkah 4), lalu delivery langkah 5",
+      "snapshot": {
+        "episode": "EP16_TRISTAN_DA_CUNHA",
+        "topic": "Tristan da Cunha — pulau berpenghuni paling terpencil di dunia",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP16",
+        "currentStage": "draft",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP16_TRISTAN_DA_CUNHA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-23T00:55:06.132Z",
+      "doing": "Draf putaran 2: juri-1 3.33 PERLU POLES; poles (Paper texture, lipatan peta, awan FG, label 50px, hook pulau besar+riak, plate S5 statis, kartu PELABUHAN TRISTAN S14); sheet ulang ceilings semua 5; menunggu juri buta putaran 2 (terakhir)",
+      "files": [
+        "project/src/ep16/Film.tsx",
+        "project/src/ep16/pieces.tsx",
+        "project/src/ep16/scenes.tsx",
+        "project/src/ep16/timing.ts",
+        "draft/contact-sheet.jpg"
+      ],
+      "next": "record_score jury putaran 2; LOLOS → render final (HANDOFF sesi 2b langkah 4). Gagal → kembali ke gerbang style (G16/G21)",
+      "snapshot": {
+        "episode": "EP16_TRISTAN_DA_CUNHA",
+        "topic": "Tristan da Cunha — pulau berpenghuni paling terpencil di dunia",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP16",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP16_TRISTAN_DA_CUNHA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:55:39.380Z",
+      "doing": "Render final (juri-2 LOLOS 3.83) — log F:/tmp-ep16/final.log",
+      "command": "cd project && npm run render:final -- --comp=Ep16Final --out=out/FINAL.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --title=\"Tristan da Cunha: Pulau Berpenghuni Paling Terpencil di Dunia\" --slug=tristan-da-cunha-ep16 --ep=EP16",
+      "files": [
+        "project/out/FINAL.mp4"
+      ],
+      "next": "QA: loudness -14 LUFS TP<-1, ffprobe metadata, audira_verify_signature, audira_qa_video hardOnly, salin FINAL_VIDEO.mp4, record_score final; lalu delivery (HANDOFF sesi 2b langkah 5)",
+      "snapshot": {
+        "episode": "EP16_TRISTAN_DA_CUNHA",
+        "topic": "Tristan da Cunha — pulau berpenghuni paling terpencil di dunia",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP16",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP16_TRISTAN_DA_CUNHA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:56:39.745Z",
+      "doing": "Draf LOLOS juri-2 3.83 (tercatat). SFX diturunkan TARGET_LUFS -29 (project/sfx/cues/auto.py), npm run sfx ulang → G18c gap 12.9 LU OK. Render final BELUM jalan: diblok channel gate karena file sisa starter src/scenes/news/PenggantiGibranWapres.tsx (handle @audira), bukan bagian Ep16Final; Ep16 Film.tsx pakai <AudiraSignature seed=\"tristan-da-cunha-ep16\" /> tanpa handle (ikut channel).",
+      "command": "cd project && npm run render:final -- --comp=Ep16Final --out=out/FINAL.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --title=\"Tristan da Cunha: Pulau Berpenghuni Paling Terpencil di Dunia\" --slug=tristan-da-cunha-ep16 --ep=EP16 --skip-channel=\"file sisa starter PenggantiGibranWapres.tsx tidak dipakai Ep16Final; signature Ep16 tanpa handle\"",
+      "files": [
+        "project/sfx/cues/auto.py",
+        "project/public/audio/sfx.wav",
+        "project/src/ep16/Film.tsx",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Render final (perintah di atas, latar belakang, export TMPDIR=F:/tmp-ep16) → QA: -14 LUFS TP<-1, ffprobe metadata, audira_verify_signature, audira_qa_video hardOnly, salin FINAL_VIDEO.mp4 ke folder episode, record_score final HISTORYMAP short-baru-11-23-EP16 → delivery: SOCIAL_CAPTIONS.md 6 platform (format EP01) + Jadwal + Label AI, validator expectedKeywords Tristan, SUBTITLES.srt, NOTES.md, append_lesson HISTORYMAP, 3 scheduled task review-tristan-da-cunha-ep16-24h/-72h/-7d, caption tampil di chat.",
+      "snapshot": {
+        "episode": "EP16_TRISTAN_DA_CUNHA",
+        "topic": "Tristan da Cunha — pulau berpenghuni paling terpencil di dunia",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP16",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP16_TRISTAN_DA_CUNHA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T00:59:26.464Z",
+      "doing": "Render final SEDANG JALAN di latar belakang (dimulai sesi lama, --skip-channel), log F:/tmp-ep16/final.log, output project/out/FINAL.mp4. SOCIAL_CAPTIONS.md selesai + lolos validator; SUBTITLES.srt selesai (24 cue).",
+      "command": "cd project && npm run render:final -- --comp=Ep16Final --out=out/FINAL.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --title=\"Tristan da Cunha: Pulau Berpenghuni Paling Terpencil di Dunia\" --slug=tristan-da-cunha-ep16 --ep=EP16 --skip-channel=\"file sisa starter PenggantiGibranWapres.tsx tidak dipakai Ep16Final; signature Ep16 tanpa handle\"",
+      "files": [
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt",
+        "project/out/FINAL.mp4"
+      ],
+      "next": "Tunggu render selesai (cek tail final.log / keberadaan out/FINAL*.mp4; jangan render ulang bila sudah ada). QA: -14 LUFS TP<-1, ffprobe metadata, audira_verify_signature, audira_qa_video hardOnly, salin FINAL_VIDEO.mp4, record_score final (self + jury). NOTES.md, append_lesson HISTORYMAP, 3 scheduled task review, hapus draft-clip.mp4, caption tampil di chat.",
+      "snapshot": {
+        "episode": "EP16_TRISTAN_DA_CUNHA",
+        "topic": "Tristan da Cunha — pulau berpenghuni paling terpencil di dunia",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP16",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP16_TRISTAN_DA_CUNHA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T01:05:04.413Z",
+      "doing": "Render ulang final setelah fix kartu payoff (font tanpa glyph ≠ → teks \"BUKAN SOAL JARAK\" di timing.ts). Log F:/tmp-ep16/final2.log",
+      "command": "cd project && npm run render:final -- --comp=Ep16Final --out=out/FINAL.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --title=\"Tristan da Cunha: Pulau Berpenghuni Paling Terpencil di Dunia\" --slug=tristan-da-cunha-ep16 --ep=EP16 --skip-channel=\"...\"",
+      "files": [
+        "project/src/ep16/timing.ts",
+        "project/out/FINAL.mp4",
+        "FINAL_VIDEO.mp4",
+        "NOTES.md"
+      ],
+      "next": "Bila rename EPERM: mv FINAL.tagged.tmp.mp4 → FINAL.mp4, tanda tangan dengan scratch sign-ep16.mjs (await). QA ulang (LUFS, ffprobe, verify, qa_video), salin FINAL_VIDEO.mp4, contact sheet baru, record_score final jury (juri: 4,4,4,4,5,3 sebelum fix) — NOTES.md JURY_PLACEHOLDER, STATUS final+delivery done, caption di chat. Scheduled task + lesson + draft-clip hapus SUDAH.",
+      "snapshot": {
+        "episode": "EP16_TRISTAN_DA_CUNHA",
+        "topic": "Tristan da Cunha — pulau berpenghuni paling terpencil di dunia",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP16",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP16_TRISTAN_DA_CUNHA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-23T01:05:04.413Z",
+      "doing": "Render ulang final setelah fix kartu payoff (font tanpa glyph ≠ → teks \"BUKAN SOAL JARAK\" di timing.ts). Log F:/tmp-ep16/final2.log",
+      "command": "cd project && npm run render:final -- --comp=Ep16Final --out=out/FINAL.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=4 --concurrency=2 --title=\"Tristan da Cunha: Pulau Berpenghuni Paling Terpencil di Dunia\" --slug=tristan-da-cunha-ep16 --ep=EP16 --skip-channel=\"...\"",
+      "files": [
+        "project/src/ep16/timing.ts",
+        "project/out/FINAL.mp4",
+        "FINAL_VIDEO.mp4",
+        "NOTES.md"
+      ],
+      "next": "Bila rename EPERM: mv FINAL.tagged.tmp.mp4 → FINAL.mp4, tanda tangan dengan scratch sign-ep16.mjs (await). QA ulang (LUFS, ffprobe, verify, qa_video), salin FINAL_VIDEO.mp4, contact sheet baru, record_score final jury (juri: 4,4,4,4,5,3 sebelum fix) — NOTES.md JURY_PLACEHOLDER, STATUS final+delivery done, caption di chat. Scheduled task + lesson + draft-clip hapus SUDAH.",
+      "snapshot": {
+        "episode": "EP16_TRISTAN_DA_CUNHA",
+        "topic": "Tristan da Cunha — pulau berpenghuni paling terpencil di dunia",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "short-baru-11-23-EP16",
+        "currentStage": "final",
+        "gates": {
+          "style": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SHORT_BARU_2026_11_23/EP16_TRISTAN_DA_CUNHA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-23T01:10:15.838Z"
+    }
+  ]
+}

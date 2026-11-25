@@ -1,0 +1,6 @@
+# Audio Plan — EP03
+
+- **VO (terkunci):** `audio/vo.wav` (Cartesia Galang, -16,4 LUFS), salinan `project/public/audio/vo.wav`. Master clock; suara selesai 81,85 s, film 85,85 s.
+- **Bed:** `project/src/scenes/haytham/mix.py` (jalankan dari `project/`) menulis `public/audio/bed.wav` (85,85 s): musik + ambience + SFX, tanpa suara. Identitas "lilin di kamar tertutup": drone C rendah + kuint yang mengembang, ney napas (sinus + noise pita, vibrato) dengan frasa jarang di C Kurd, petikan qanun (Karplus-Strong) di tiap awal bagian, detak frame-drum lembut hanya selama eksperimen, room tone + derak lilin. Tanpa nyanyian.
+- **SFX (shared/assets/sfx, berjangkar kata):** whoosh-cinematic ("Sekitar", "cahaya.", "pula"), pop ("Ibnu"), click-soft ("sinar", tiap lilin dinyalakan), whoosh-short ("Khalifah", "Tutup", "memotret"), impact-bass-1 ("Konon", "2015"), ping ("kembali"), riser (sebelum "obscura"), chime ("camera", kartu outro), sparkle ("ponselmu"), palang kayu sintetis ("dikurung").
+- **Mix:** bed -5 dB, sidechain ke VO (threshold 0,02, ratio 4, attack 20, release 450), amix tanpa normalisasi → `public/audio/full.wav` 48 kHz stereo. Terukur: bed -26,3 LUFS sebelum -5 dB (sekitar 15 dB di bawah suara setelah ducking), full -16,4 LUFS, true peak -4,3 dBFS. Normalisasi akhir ke -14 LUFS dilakukan oleh render final (`--vo public/audio/full.wav`).
