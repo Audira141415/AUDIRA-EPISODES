@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Momen Paling Mengharukan dalam Sejarah Olimpiade yang Bikin Nangis
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Semifinal 400 m putra Olimpiade Barcelona digelar 3 Agustus 1992 pukul 19.15 di Estadio Olímpico de Montjuïc. Derek Redmond (GBR) tercatat DNF di semifinal heat 1. Babak pertama (1 Agustus) ia tercepat 45,03 dtk; perempat final (2 Agustus) ia juara heat dengan 45,02 dtk. Final 5 Agustus dimenangi Quincy Watts (USA). | 400 metres, Men — Olympic Games 1992, Olympedia (OlyMADMen), 2024 | https://www.olympedia.org/results/63996 | 2026-11-25 | HIGH |
+| 2 | Ayah Derek menolongnya berdiri dan mendampinginya ke garis finis, sambil berkata kurang lebih: "We started your career together, so let's finish this race together." | 400 metres, Men — Olympic Games 1992, Olympedia, 2024 | https://www.olympedia.org/results/63996 | 2026-11-25 | HIGH |
+| 3 | Jim Redmond lari dari kursinya di tribun untuk menolong Derek yang hamstring-nya robek; keduanya menyelesaikan semifinal 400 m bersama. Jim wafat Oktober 2022 dalam usia 81 tahun. British Olympic Association: momen yang "never be forgotten". | Jim Redmond: Tributes paid after death of Derek Redmond's father, BBC Sport, 4 Okt 2022 | https://www.bbc.co.uk/sport/athletics/63128944 | 2026-11-25 | HIGH |
+| 4 | Dua puluh tahun setelah Barcelona, Jim Redmond dipilih jadi salah satu dari 250 pembawa obor British Olympic Association untuk Olimpiade London 2012. AP: ayahnya "virtually carried him the rest of the way". | Jim Redmond to carry Olympic torch, Associated Press via ESPN, 10 Jan 2012 | https://www.espn.com/olympics/story/_/id/7445920/2012-london-games-derek-redmond-father-carry-olympic-torch | 2026-11-25 | HIGH |
+| 5 | Derek menolak tandu, memilih menyelesaikan lomba; Jim menerobos petugas keamanan; 65.000 penonton memberi standing ovation; Derek didiskualifikasi dan tercatat "Did Not Finish" karena bantuan dari luar. Sebelum 1992 ia sudah 8 kali operasi; di Seoul 1988 mundur 90 dtk sebelum heat karena cedera tendon Achilles. Momen ini dipakai video IOC "Celebrate Humanity" dan iklan Visa 2008. | Derek Redmond, Wikipedia (dengan kutipan Observer, ESPN, BBC), rev. 2026 | https://en.wikipedia.org/wiki/Derek_Redmond | 2026-11-25 | MEDIUM |
+| 6 | Hamstring robek di semifinal heat 1 sekitar 150 m setelah start; 68 atlet dari 52 negara di nomor ini; Watts mencetak rekor Olimpiade 43,71 di semifinal heat 2. | Athletics at the 1992 Summer Olympics – Men's 400 metres, Wikipedia, rev. 2026 | https://en.wikipedia.org/wiki/Athletics_at_the_1992_Summer_Olympics_%E2%80%93_Men%27s_400_metres | 2026-11-25 | MEDIUM |
+| 7 | Rangkuman: delapan operasi sebelum 1992; tandu dibawa ke lintasan; Jim menerobos keamanan; 65.000 penonton berdiri; status DNF. Kutipan Derek: ia merasa akan mencetak rekor pribadi bila finis. | Remembering Derek Redmond's heartbreaking and inspirational Olympics race finish with his dad, Smooth Radio, 2022 | https://www.smoothradio.com/news/entertainment/derek-redmond-olympics-1992-race-video/ | 2026-11-25 | MEDIUM |

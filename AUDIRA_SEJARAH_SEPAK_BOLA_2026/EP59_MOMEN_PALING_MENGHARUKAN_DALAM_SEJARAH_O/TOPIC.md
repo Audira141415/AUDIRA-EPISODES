@@ -5,7 +5,11 @@ title: "Momen Paling Mengharukan dalam Sejarah Olimpiade yang Bikin Nangis"
 hook: "Pelari yang menggendong anaknya ke garis finish — semua orang menangis"
 styleCandidates: ["CINESTORY (2D)", "FILM16 (2D)", "CHARACTERFLOW (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook asli keliru (ayah menopang anak, bukan pelari menggendong anak); folder salah seri (atletik, bukan sepak bola); hindari wajah asli dan logo Olimpiade/Visa/Nike."
 ---
 
 # Momen Paling Mengharukan dalam Sejarah Olimpiade yang Bikin Nangis

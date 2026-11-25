@@ -1,33 +1,16 @@
-# SOURCE_REGISTER — `Sejarah game yang viral dan jarang diketahui`
+# Source Register — Kenapa Indonesia Butuh Data Center Sendiri
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | PP 71/2019 tentang Penyelenggaraan Sistem dan Transaksi Elektronik berlaku 10 Oktober 2019 dan mencabut PP 82/2012 | PP No. 71 Tahun 2019 (metadata), JDIH BPK RI, 2019 | https://peraturan.bpk.go.id/Details/122030/pp-no-71-tahun-2019 | 2026-11-25 | HIGH |
+| 2 | PP 71/2019 Pasal 20 ayat (2): penyelenggara sistem elektronik lingkup publik wajib mengelola, memproses, dan/atau menyimpan sistem dan data elektronik di wilayah Indonesia (ayat 3: pengecualian bila teknologi tidak tersedia di dalam negeri) | Teks PP No. 71 Tahun 2019 (PDF), Pemerintah RI via JDIH BPK, 2019 | https://peraturan.bpk.go.id/Download/112816/PP%20Nomor%2071%20Tahun%202019.pdf | 2026-11-25 | HIGH |
+| 3 | PP 71/2019 Pasal 21: penyelenggara lingkup privat boleh menyimpan data di dalam dan/atau di luar wilayah Indonesia, asal menjamin efektivitas pengawasan dan penegakan hukum serta memberi akses untuk pengawasan | Teks PP No. 71 Tahun 2019 (PDF), Pemerintah RI via JDIH BPK, 2019 | https://peraturan.bpk.go.id/Download/112816/PP%20Nomor%2071%20Tahun%202019.pdf | 2026-11-25 | HIGH |
+| 4 | UU 27/2022 tentang Pelindungan Data Pribadi ditetapkan dan berlaku 17 Oktober 2022 | UU No. 27 Tahun 2022 (metadata), JDIH BPK RI, 2022 | https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022 | 2026-11-25 | HIGH |
+| 5 | UU PDP Pasal 56: transfer data pribadi ke luar wilayah hukum RI boleh bila negara penerima punya pelindungan setara atau lebih tinggi; Pasal 57 ayat (3): denda administratif paling tinggi 2% pendapatan tahunan; Pasal 74: masa penyesuaian paling lama 2 tahun | Teks UU No. 27 Tahun 2022 (PDF), Pemerintah RI via JDIH BPK, 2022 | https://peraturan.bpk.go.id/Download/224884/UU%20Nomor%2027%20Tahun%202022.pdf | 2026-11-25 | HIGH |
+| 6 | PDNS 2 di Surabaya diserang ransomware Brain Cipher, gangguan terdeteksi 17 Juni 2024; peretas minta tebusan 8 juta dolar AS (sekitar Rp131 miliar) | "Menkominfo jelaskan kronologi serangan siber PDNS 2", ANTARA, 2024 | https://www.antaranews.com/berita/4171167/menkominfo-jelaskan-kronologi-serangan-siber-pdns-2 | 2026-11-25 | HIGH |
+| 7 | Per Februari 2024, PDNS berbasis cloud (kerja sama Telkom dan Lintasarta) menampung data sekitar 400 institusi pemerintah; data akan dipindah ke PDN Cikarang, Batam, IKN | "PDNS berbasis cloud telah tampung 400 institusi pemerintah", ANTARA, 6 Feb 2024 | https://www.antaranews.com/berita/3951180/pdns-berbasis-cloud-telah-tampung-400-institusi-pemerintah | 2026-11-25 | HIGH |
+| 8 | Anggota Komisi I DPR Sukamta menyebut Kominfo tidak mewajibkan pencadangan (backup) data di PDN, sehingga data instansi berpotensi hilang | "Data Kementerian Harus Masuk PDN tapi Tak Ada Back Up, Komisi I DPR: Konyol", Kompas.com, 29 Jun 2024 | https://nasional.kompas.com/read/2024/06/29/13021901/data-kementerian-harus-masuk-pdn-tapi-tak-ada-back-up-komisi-i-dpr-konyol | 2026-11-25 | MEDIUM |
+| 9 | Serangan PDNS 2 mengganggu 239 instansi (30 kementerian/lembaga, 15 provinsi, 148 kabupaten, 48 kota); rencana 4 PDN: Cikarang (Bekasi), Batam, Balikpapan/IKN, Labuan Bajo | "Pusat Data Nasional", Wikipedia bahasa Indonesia, diakses 2026 | https://id.wikipedia.org/wiki/Pusat_Data_Nasional | 2026-11-25 | MEDIUM |
+| 10 | AWS punya region Asia Pacific (Jakarta), kode ap-southeast-3, 3 availability zone di Indonesia (bukti sebagian layanan cloud global sudah punya pusat data di dalam negeri) | "AWS Regions", Amazon Web Services documentation, 2026 | https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html | 2026-11-25 | HIGH |

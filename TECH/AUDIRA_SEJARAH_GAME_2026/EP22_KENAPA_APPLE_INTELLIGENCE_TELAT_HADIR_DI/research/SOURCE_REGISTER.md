@@ -1,33 +1,20 @@
-# SOURCE_REGISTER — `Sejarah game yang viral dan jarang diketahui`
+# Source Register — Kenapa Apple Intelligence Telat Hadir di iPhone
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
+| 1 | Apple Intelligence diumumkan 10 Juni 2024 di WWDC; Siri dijanjikan bisa memakai konteks pribadi (pesan, email) | Introducing Apple Intelligence, the personal intelligence system, Apple Newsroom, 2024 | https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/ | 2026-11-25 | HIGH |
+| 2 | 28 Oktober 2024 gelombang pertama rilis (Writing Tools, ringkasan notifikasi, Clean Up di Photos); Siri personal disebut "akan datang" | Apple Intelligence is available today on iPhone, iPad, and Mac, Apple Newsroom, 2024 | https://www.apple.com/newsroom/2024/10/apple-intelligence-is-available-today-on-iphone-ipad-and-mac/ | 2026-11-25 | HIGH |
+| 3 | Per iOS 27 (2026): perangkat minimum iPhone 15 Pro; bahasa didukung: Inggris, Denmark, Belanda, Prancis, Jerman, Italia, Norwegia, Portugis, Spanyol, Swedia, Turki, Vietnam, Mandarin (sederhana/tradisional), Jepang, Korea. Bahasa Indonesia tidak ada | How to get Apple Intelligence, Apple Support, 2026 | https://support.apple.com/en-us/121115 | 2026-11-25 | HIGH |
+| 4 | Maret 2025 Apple menyatakan Siri personal "taking us longer than we thought to deliver", dijadwalkan "in the coming year" | Apple Removes Siri Personal Context Reference, MacRumors, 2025 | https://www.macrumors.com/2025/03/11/apple-removes-siri-personal-context-reference/ | 2026-11-25 | MEDIUM |
+| 5 | Rilis awal hanya bahasa Inggris AS (iOS 18.1); lokal Inggris lain 11 Des 2024; 10+ bahasa baru + Uni Eropa 31 Maret 2025 (iOS 18.4) | Apple Intelligence, Wikipedia (rujukan Apple/9to5Mac), 2026 | https://en.wikipedia.org/wiki/Apple_Intelligence | 2026-11-25 | MEDIUM |
+| 6 | ChatGPT (akhir 2022) dilaporkan membuat petinggi Apple kaget ("blindsided"); model internal kode nama "Ajax" dilaporkan Juli 2023 | Apple Preps Ajax Generative AI, Bloomberg (Mark Gurman), 2023; Wikipedia Apple Intelligence §History | https://www.bloomberg.com/news/articles/2023-07-19/apple-preps-ajax-generative-ai-apple-gpt-to-rival-openai-and-google | 2026-11-25 | MEDIUM |
+| 7 | Gugatan iklan menyesatkan Landsheft v. Apple diajukan 19 Maret 2025 (N.D. Cal., 5:25-cv-02668); Mei 2026 Apple setuju usulan penyelesaian 250 juta dolar AS tanpa mengaku salah, menunggu persetujuan pengadilan | Landsheft v. Apple Inc. docket, CourtListener; ringkasan Wikipedia Apple Intelligence §Lawsuit, 2026 | https://www.courtlistener.com/docket/69759747/landsheft-v-apple-inc/ | 2026-11-25 | MEDIUM |
+| 8 | Model on-device Apple ±3 miliar parameter (AFM; AFM 3 Core 2026 tetap 3 miliar) | Apple Intelligence §Foundation models, Wikipedia, 2026 | https://en.wikipedia.org/wiki/Apple_Intelligence | 2026-11-25 | MEDIUM |
+| 9 | Apple berencana membayar ±1 miliar dolar per tahun untuk model Gemini Google 1,2 triliun parameter untuk Siri baru | Apple Plans to Use 1.2 Trillion Parameter Google Gemini Model to Power New Siri, Bloomberg (Mark Gurman), 5 Nov 2025 | https://www.bloomberg.com/news/articles/2025-11-05/apple-plans-to-use-1-2-trillion-parameter-google-gemini-model-to-power-new-siri | 2026-11-25 | HIGH |
+| 10 | 12 Januari 2026: Apple dan Google umumkan kerja sama multi-tahun; Apple Foundation Models generasi berikut berbasis Gemini, tetap jalan di perangkat + Private Cloud Compute | Joint statement from Google and Apple, Google Blog, 2026 | https://blog.google/company-news/inside-google/company-announcements/joint-statement-google-apple/ | 2026-11-25 | HIGH |
+| 11 | 8 Juni 2026 Apple umumkan Siri AI (konteks pribadi, onscreen awareness); beta untuk pengguna "later this year", perangkat berbahasa Inggris dulu | Apple introduces Siri AI, a profoundly more capable and personal assistant, Apple Newsroom, 2026 | https://www.apple.com/newsroom/2026/06/apple-introduces-siri-ai-a-profoundly-more-capable-and-personal-assistant/ | 2026-11-25 | HIGH |
+| 12 | 15 Juli 2026 Alibaba: Qwen diintegrasikan ke Apple Intelligence untuk pengguna di Tiongkok | Alibaba's U.S.-listed shares rise 4% after Qwen AI set to be integrated in Apple Intelligence, CNBC, 2026 | https://www.cnbc.com/2026/07/15/alibaba-qwen-ai-apple-intelligence.html | 2026-11-25 | HIGH |
 
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+Catatan: #7 dan #8 dikutip lewat Wikipedia (CourtListener memblokir akses otomatis). Angka 250 juta dolar = usulan penyelesaian; VO memakai "setuju bayar", bukan "sudah bayar".

@@ -5,7 +5,11 @@ title: "Kenapa Novak Djokovic Dianggap GOAT Tenis Meski Dibenci Separuh Dunia"
 hook: "24 Grand Slam — lebih dari Federer dan Nadal, tapi tetap tak dicintai"
 styleCandidates: ["DATAPHYSICAL (2D)", "PRECISION (2D)", "CHARACTERFLOW (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak   # tidak = fakta cepat basi (rekor, harga, produk)
+risiko: "Tokoh nyata hidup (pakai siluet, tanpa wajah/logo turnamen); isu vaksin dan deportasi harus netral; rekor 24 gelar bisa bertambah, tulis per Nov 2026."
 ---
 
 # Kenapa Novak Djokovic Dianggap GOAT Tenis Meski Dibenci Separuh Dunia

@@ -5,7 +5,11 @@ title: "Kenapa Apple Intelligence Telat Hadir di iPhone"
 hook: "Fitur AI paling ditunggu Apple — dan kenapa butuh waktu lama"
 styleCandidates: ["BROADCASTFORGE (2D)", "CYBERFORGE (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak
+risiko: "Fakta cepat basi (status beta Siri AI dan daftar bahasa per Nov 2026); angka 250 juta dolar dan 3 miliar parameter bersumber sekunder; hindari logo Apple/Google asli."
 ---
 
 # Kenapa Apple Intelligence Telat Hadir di iPhone

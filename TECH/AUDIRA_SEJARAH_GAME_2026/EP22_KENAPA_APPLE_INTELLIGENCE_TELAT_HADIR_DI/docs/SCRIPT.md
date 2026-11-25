@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP22`)
+# Naskah — Kenapa Apple Intelligence Telat Hadir di iPhone
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: iPhone melayang di tengah, layar menampilkan gelombang Siri yang membeku; kalender di belakang berputar cepat dari 2024 ke 2026. HUD: "2024 → 2026" + stempel "BETA".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Apple menjanjikan Siri super pintar tahun 2024. Siri itu baru datang dua tahun kemudian, dan masih berlabel beta.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: panggung presentasi gelap dengan layar proyeksi besar; di layar muncul gelembung pesan dan amplop email yang ditarik ke ikon Siri. HUD: "10 JUNI 2024 · WWDC". Tanpa logo Apple asli (pakai teks nama).
 
-> <konteks singkat + "Di Audira, ...">
+> Juni 2024, di panggung WWDC, Apple mengumumkan Apple Intelligence: AI yang paham konteks pribadimu, dari pesan sampai email.
 
-## c02 — <Judul Bab 1>
+## c02 — Start belakangan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: lintasan balap dua jalur; penanda "ChatGPT · 2022" melesat jauh di depan, penanda Apple baru keluar garis start. Folder rahasia berlabel "AJAX" terbuka. HUD: "AKHIR 2022" lalu "JULI 2023 · AJAX".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Masalahnya, Apple start belakangan. Waktu ChatGPT meledak akhir 2022, petinggi Apple dilaporkan kaget. Model buatan sendiri, Ajax, baru terungkap Juli 2023.
 
-## c03 — <Judul Bab 2>
+## c03 — Rilis setengah jadi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: kotak paket terbuka di meja; keluar tiga ikon (pena, tumpukan notifikasi, penghapus foto), slot keempat berlabel "SIRI" kosong. Deretan iPhone lama tergeser, hanya iPhone 15 Pro yang menyala. HUD: "28 OKT 2024", chip "EN-US ONLY", "iPhone 15 Pro+".
 
-> <teks narasi>
+> Oktober 2024, gelombang pertama rilis: alat tulis, ringkasan notifikasi, penghapus objek di foto. Fitur Siri yang paling ditunggu belum ikut. Cuma bahasa Inggris Amerika, cuma iPhone 15 Pro ke atas.
 
-## c04 — <Judul Bab 3>
+## c04 — Pengakuan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: papan iklan raksasa di jalan kota dengan Siri bercahaya; lampunya padam satu per satu, kain penutup "COMING LATER" menutupinya. Di latar, kotak-kotak iPhone keluar dari toko. HUD: "MARET 2025" + kutipan "longer than we thought".
 
-> <teks narasi>
+> Maret 2025, Apple akhirnya mengaku: Siri yang personal butuh waktu lebih lama dari perkiraan. Padahal iklannya sudah tayang, iPhone-nya sudah laku.
 
-## c05 — <Judul Bab 4>
+## c05 — Gugatan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: ruang sidang miniatur; berkas gugatan jatuh ke meja hakim, lalu tumpukan uang naik membentuk angka. HUD: "19 MARET 2025", counter "$250 JUTA" + label kecil "usulan penyelesaian · tanpa mengaku salah".
 
-> <teks narasi>
+> Belum sebulan, tepatnya 19 Maret 2025, gugatan iklan menyesatkan masuk pengadilan. Mei 2026, Apple setuju bayar 250 juta dolar, tanpa mengaku salah.
 
-## c06 — <Judul Bab 5>
+## c06 — Kenapa selama ini?
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **14 dtk**
+- Visual: timbangan skala; di kiri chip kecil "iPhone · 3 MILIAR", di kanan rak server raksasa "GEMINI · 1,2 TRILIUN" hingga timbangan miring ekstrem. Lalu dua jalur kabel bertemu di satu konektor. HUD: "3 MILIAR vs 1,2 TRILIUN PARAMETER", "±$1 MILIAR/TAHUN", "12 JAN 2026".
 
-> <teks narasi>
+> Kenapa selama ini? Model di dalam iPhone cuma sekitar 3 miliar parameter. Gemini milik Google yang dilirik Apple: 1,2 triliun. Kabarnya, biayanya sekitar satu miliar dolar setahun. Januari 2026, kerja samanya resmi.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: iPhone kembali di tengah, Siri menyala penuh dengan stempel "BETA · EN". Menu bahasa bergulir: English, Français, 日本語, ... baris "Bahasa Indonesia" abu-abu dengan tanda belum. Kamera mundur ke iPhone di tangan siluet pengguna Indonesia, lalu outro card AUDIRA. HUD: "8 JUNI 2026 · SIRI AI", "PER NOV 2026: BELUM".
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Juni 2026, Siri AI akhirnya diumumkan, beta, bahasa Inggris dulu. Bahasa Indonesia? Per November 2026, belum masuk daftar. Jadi buat kita, Apple Intelligence masih telat. Ikuti AUDIRA untuk cerita berikutnya.
+
+## Opsi hook lain
+
+1. Apple sampai setuju bayar 250 juta dolar gara-gara satu fitur Siri yang tak kunjung datang.
+2. iPhone kamu punya AI, tapi belum bisa diajak bicara bahasa Indonesia. Ini sebabnya.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **192 kata** ≈ **82 dtk** (@140 WPM; 77–85 dtk @150–135 WPM)

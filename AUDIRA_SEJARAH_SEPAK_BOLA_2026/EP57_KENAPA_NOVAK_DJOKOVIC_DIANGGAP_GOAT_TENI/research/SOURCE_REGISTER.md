@@ -1,33 +1,17 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Kenapa Novak Djokovic Dianggap GOAT Tenis Meski Dibenci Separuh Dunia
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Djokovic juara US Open 2023 (6-3, 7-6, 6-3 atas Medvedev) = gelar Grand Slam ke-24 | "Ageless Djokovic dismantles Medvedev in US Open final to win 24th grand slam", Tumaini Carayol / The Guardian, 2023 | https://www.theguardian.com/sport/2023/sep/10/novak-djokovic-wins-us-open-tennis-2023-daniil-medvedev-24th-grand-slam | 2026-11-25 | HIGH |
+| 2 | Final Wimbledon 2019: Djokovic kalahkan Federer 7-6(5), 1-6, 7-6(4), 4-6, 13-12(3); Federer punya dua championship point dan Djokovic menyelamatkan keduanya; penonton Centre Court "ardently behind Federer" dan meneriakkan "Roger! Roger!" | "Federer vs. Djokovic: Wimbledon 2019 final" (live), Christopher Clarey & Ben Rothenberg / The New York Times, 2019 (arsip Wayback) | https://web.archive.org/web/20190714181512/https://www.nytimes.com/2019/07/14/sports/tennis/federer-vs-djokovic.html | 2026-11-25 | HIGH |
+| 3 | US Open 2020: Djokovic memukul bola ke belakang dan mengenai tenggorokan hakim garis perempuan, lalu didiskualifikasi (default) | "Novak Djokovic disqualified after hitting ball at line judge in US Open", BBC Sport, 2020 | https://www.bbc.com/sport/tennis/54051920 | 2026-11-25 | HIGH |
+| 4 | 16 Jan 2022: Federal Court Australia menolak banding secara bulat; Djokovic dideportasi setelah visanya dibatalkan Menteri Imigrasi Alex Hawke (dianggap "talisman of anti-vaccination sentiment") | "Novak Djokovic leaves Australia after court upholds visa cancellation", The Guardian, 2022 | https://www.theguardian.com/sport/2022/jan/16/novak-djokovic-to-be-deported-from-australia-after-losing-appeal-against-visa-cancellation | 2026-11-25 | HIGH |
+| 5 | Djokovic mengalahkan Carlos Alcaraz dan meraih emas Olimpiade pertamanya (Paris 2024) | "Novak Djokovic defeats Carlos Alcaraz for first Olympic gold medal", ATP Tour, 2024 | https://www.atptour.com/en/news/djokovic-alcaraz-paris-olympics-2024-gold-medal-match | 2026-11-25 | HIGH |
+| 6 | Nadal mengakui Djokovic "best in history" dari sisi angka | "Nadal concedes Djokovic is 'best in history' in terms of numbers", The Guardian, 2023 | https://www.theguardian.com/sport/2023/sep/20/nadal-concedes-djokovic-is-the-best-in-history-in-terms-of-numbers | 2026-11-25 | HIGH |
+| 7 | Per 25 Nov 2026: 428 minggu No. 1 ATP (rekor), 8× No. 1 akhir tahun (rekor), 24 major (rekor), 40 Masters (rekor), lahir 22 Mei 1987 (umur 37 saat emas Paris 2024); final Wimbledon 2019 = final terpanjang Wimbledon (4 jam 57 menit) | "Novak Djokovic", Wikipedia (dengan kutipan ATP), revisi Nov 2026 | https://en.wikipedia.org/wiki/Novak_Djokovic | 2026-11-25 | MEDIUM |
+| 8 | Saat embargo dan bom NATO di Serbia (1999), Djokovic sempat berlatih di kolam renang kosong yang diubah jadi lapangan tenis | "Novak Djokovic" — bagian Early life, Wikipedia | https://en.wikipedia.org/wiki/Novak_Djokovic | 2026-11-25 | MEDIUM |
+| 9 | Head-to-head: Djokovic unggul 27–23 atas Federer; Federer 20 major, Nadal 22, Djokovic 24 | "Djokovic–Federer rivalry", Wikipedia | https://en.wikipedia.org/wiki/Djokovic%E2%80%93Federer_rivalry | 2026-11-25 | MEDIUM |
+| 10 | Head-to-head: Djokovic unggul 31–29 atas Nadal (60 pertemuan); Nadal unggul 11–7 di major | "Djokovic–Nadal rivalry", Wikipedia | https://en.wikipedia.org/wiki/Djokovic%E2%80%93Nadal_rivalry | 2026-11-25 | MEDIUM |
+| 11 | Per musim 2026: belum ada major ke-25; kalah di final Australian Open 2026 dari Alcaraz; akhir 2026 peringkat 12 | "Novak Djokovic" — bagian 2026, Wikipedia | https://en.wikipedia.org/wiki/Novak_Djokovic | 2026-11-25 | MEDIUM |

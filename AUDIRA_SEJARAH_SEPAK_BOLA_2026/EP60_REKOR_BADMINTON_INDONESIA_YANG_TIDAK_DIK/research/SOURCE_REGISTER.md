@@ -1,33 +1,16 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Rekor Badminton Indonesia yang Tidak Diketahui Banyak Orang
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Indonesia juara Piala Thomas 14 kali, terbanyak dari negara mana pun (setelah gelar 2021) | Indonesia Wins Thomas Cup after 19 Years, Jaja Suteja & Heru Andriyanto / Jakarta Globe, 2021 | https://jakartaglobe.id/news/indonesia-wins-thomas-cup-after-19-years | 2026-11-25 | HIGH |
+| 2 | Final Piala Thomas 2020 digelar 17 Okt 2021 di Ceres Arena, Aarhus, Denmark; Indonesia menang 3–0 atas Tiongkok; trofi pulang setelah 19 tahun (gelar sebelumnya 2002) | Indonesia Wins Thomas Cup after 19 Years, Jakarta Globe, 2021 | https://jakartaglobe.id/news/indonesia-wins-thomas-cup-after-19-years | 2026-11-25 | HIGH |
+| 3 | Rudy Hartono juara tunggal putra All England 8 kali, 7 kali beruntun (1968–1974); juara dunia 1980; Indonesia juara Piala Thomas 4 edisi beruntun (1970, 1973, 1976, 1979) | Badminton - Awaiting the return of a glorious era, Margareth Aritonang & Imanuddin Razak / The Jakarta Post, 2015 | https://www.thejakartapost.com/news/2015/08/11/badminton-awaiting-return-a-glorious-era.html | 2026-11-25 | HIGH |
+| 4 | Rudy Hartono menang All England pertama 1968 di usia 18; total 8 gelar (1968–1974 & 1976); juara dunia 1980 | When Indonesia's Rudy Hartono ruled the badminton world, Shivani Naik / The Indian Express, 2018 | https://indianexpress.com/article/sports/badminton/badminton-world-champion-indonesia-when-rudy-ruled-5463085/ | 2026-11-25 | HIGH |
+| 5 | Olimpiade Barcelona 1992: emas tunggal putri Susi (Susy) Susanti, emas tunggal putra Alan Budikusuma; Indonesia puncak tabel medali bulu tangkis (2 emas, 2 perak, 1 perunggu) | Badminton at the 1992 Summer Olympics, Olympedia (OlyMADMen) | https://www.olympedia.org/editions/23/sports/BDM | 2026-11-25 | HIGH |
+| 6 | Sebelum 1992 Indonesia belum pernah meraih emas Olimpiade meski ikut sejak 1952; medali satu-satunya perak panahan beregu putri Seoul 1988; parade di Jakarta dihadiri hampir 1 juta orang | Indonesia's Golden Couple who won badminton's first Olympic golds, Chia Han Keong / Yahoo News Singapore, 2021 | https://sg.news.yahoo.com/indonesia-golden-couple-badmintons-first-olympic-golds-020631154.html | 2026-11-25 | MEDIUM |
+| 7 | Rekor beruntun Indonesia di Piala Thomas: 4 gelar (1970–1979) dan 5 gelar (1994, 1996, 1998, 2000, 2002); di edisi 1973, 1976, 1979 Indonesia menang 51 dari 54 partai; per 2026 juara bertahan Tiongkok | Thomas Cup, Wikipedia (merujuk Pat Davis, Guinness Book of Badminton, 1983) | https://en.wikipedia.org/wiki/Thomas_Cup | 2026-11-25 | MEDIUM |
+| 8 | 8 gelar All England membuat Rudy Hartono tercatat di Guinness Book of Records; juara All England termuda saat itu (18 tahun) | Rudy Hartono, Wikipedia (merujuk profil BWF Museum & The Straits Times 1974/1976) | https://en.wikipedia.org/wiki/Rudy_Hartono | 2026-11-25 | MEDIUM |
+| 9 | Bulu tangkis debut sebagai cabang medali resmi Olimpiade di Barcelona 1992; emas tunggal putri = emas Olimpiade pertama Indonesia | Badminton at the 1992 Summer Olympics, Wikipedia (merujuk Olympedia) | https://en.wikipedia.org/wiki/Badminton_at_the_1992_Summer_Olympics | 2026-11-25 | MEDIUM |
+| 10 | Piala Sudirman edisi perdana 1989 di Jakarta dimenangi Indonesia; nama piala dari Dick Sudirman, tokoh bulu tangkis Indonesia | Sudirman Cup, Wikipedia (merujuk BWF "The historic journey of the Sudirman Cup") | https://en.wikipedia.org/wiki/Sudirman_Cup | 2026-11-25 | MEDIUM |

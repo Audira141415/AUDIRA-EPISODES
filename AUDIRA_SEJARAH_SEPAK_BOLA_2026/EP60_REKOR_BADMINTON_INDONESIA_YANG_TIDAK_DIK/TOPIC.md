@@ -5,7 +5,11 @@ title: "Rekor Badminton Indonesia yang Tidak Diketahui Banyak Orang"
 hook: "7 kali berturut-turut juara Thomas Cup — dominasi yang tak terbendung"
 styleCandidates: ["DATAPHYSICAL (2D)", "BROADCASTFORGE (2D)", "PIXELSTORY (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook asli salah (7× beruntun milik Rudy Hartono di All England, bukan Piala Thomas); tokoh nyata wajib siluet tanpa wajah; status 14 gelar terbanyak per 2026 perlu dicek tiap edisi."
 ---
 
 # Rekor Badminton Indonesia yang Tidak Diketahui Banyak Orang

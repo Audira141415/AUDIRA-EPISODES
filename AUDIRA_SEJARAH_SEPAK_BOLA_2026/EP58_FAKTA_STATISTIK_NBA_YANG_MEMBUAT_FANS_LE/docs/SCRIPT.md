@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris` (`EP58`)
+# Naskah — Fakta Statistik NBA yang Membuat Fans LeBron James Terdiam
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: papan skor arena raksasa berputar cepat ke angka 43.672, lalu kamera menukik ke kotak trofi yang masih kosong; callout HUD "USIA 27" berdenyut merah.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Pencetak poin terbanyak dalam sejarah NBA. Tapi cincin juara pertamanya baru datang di usia 27.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: label HUD "AUDIRA STATS" muncul di layar papan skor; siluet pemain bernomor 23 (tanpa wajah, tanpa logo tim) berjalan keluar terowongan ke lapangan Cleveland bernuansa anggur-emas; kartu HUD "DRAFT 2003 · PICK #1" dan "UMUR 19".
 
-> <konteks singkat + "Di Audira, ...">
+> Ini AUDIRA, dan angka LeBron James tidak semuanya manis. Dia dipilih nomor satu di draft 2003, lalu langsung main di NBA pada umur 19.
 
-## c02 — <Judul Bab 1>
+## c02 — Rekor yang menyalip Kareem
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: dua menara bola basket bertumpuk (data physical) tumbuh berdampingan, 43.672 vs 38.387, menara kiri menembus atap; kalender HUD "7 FEB 2023 · vs OKC" lalu papan skor malam itu "38 PTS". Tag kecil "per 25 Nov 2026".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Per 25 November 2026, total poin musim regulernya 43.672. Kareem Abdul-Jabbar, pemegang rekor sebelumnya, berhenti di 38.387. LeBron menyalipnya pada 7 Februari 2023 melawan Oklahoma City, dengan 38 poin malam itu.
 
-## c03 — <Judul Bab 2>
+## c03 — Cuma sekali jadi top skor
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **9 dtk**
+- Visual: lemari trofi dengan deretan rak bertuliskan musim; hanya satu rak berisi plakat "TOP SKOR 2007–08", sisanya kosong dan berdebu; HUD "1x" dan "30.0 PPG" menghentak.
 
-> <teks narasi>
+> Anehnya, raja poin sepanjang masa ini cuma sekali jadi top skor dalam satu musim, yaitu 2007–08, dengan rata-rata 30 poin.
 
-## c04 — <Judul Bab 3>
+## c04 — Final 2011 yang runtuh
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: arena gelap, lampu sorot redup; grafik garis rata-rata poin jatuh ke 17,8 dengan panah merah "−9"; papan skor seri "DAL 4 – 2 MIA"; siluet pemain berlutut.
 
-> <teks narasi>
+> Lalu final. Di Final 2011 melawan Dallas, rata-ratanya cuma 17,8 poin. Turun sembilan poin dari musim reguler, penurunan terbesar dalam sejarah liga. Miami kalah 4–2.
 
-## c05 — <Judul Bab 4>
+## c05 — Balas dendam 2012
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: lampu arena menyala penuh, konfeti; papan skor seri "MIA 4 – 1 OKC"; tiga kartu HUD statistik Finals MVP bertumpuk: 28,6 PTS / 10,2 REB / 7,4 AST; trofi turun ke kotak yang tadinya kosong.
 
-> <teks narasi>
+> Setahun kemudian dia membalas. Final 2012 melawan Thunder dimenangi 4–1, dan LeBron jadi MVP Final dengan 28,6 poin, 10,2 rebound, dan 7,4 assist. Itu musim kesembilannya.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan: rekor Final 4–6
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **12 dtk**
+- Visual: papan tulis taktik dengan 10 bola basket berjajar (satu per Final); 4 bola menyala emas, 6 retak abu-abu; layar terbelah dua: kubu "PEMBENCI" vs kubu "PENGGEMAR" dengan kerumunan siluet.
 
-> <teks narasi>
+> Totalnya sepuluh kali tampil di Final, empat kali juara, enam kali kalah. Buat pembencinya, itu bukti dia rapuh. Buat penggemarnya, masuk Final sepuluh kali saja sudah gila.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: timeline 24 musim memanjang dari 2003 ke 2026, tiap musim jadi bata menara poin yang naik ke puncak golden hour; HUD "24 MUSIM"; teks kinetik "LEBRON atau JORDAN?"; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi rekor poin itu bukan soal satu musim yang meledak. Itu soal bertahan dua puluh empat musim. Menurutmu, LeBron atau Jordan? Tulis di komentar.
+
+## Opsi hook lain
+
+1. Sepuluh kali masuk Final NBA, enam kali pulang kalah. Itu LeBron James.
+2. Raja poin sepanjang masa, tapi cuma sekali jadi top skor semusim.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **192 kata** ≈ **82 dtk**

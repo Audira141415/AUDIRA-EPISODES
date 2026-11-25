@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP24`)
+# Naskah — Kenapa Indonesia Butuh Data Center Sendiri
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **11** · estimasi **5 dtk**
+- Visual: Ponsel di tangan, ikon foto dan chat terangkat jadi paket data, terbang keluar peta Indonesia menuju server jauh di seberang laut. HUD tanda tanya "DI MANA DATAMU?".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Data kamu bisa saja tidak tinggal di Indonesia. Dan itu legal.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Gedung pusat data generik berdiri di peta Indonesia, papan label "AUDIRA" di atap. Lampu rak menyala satu per satu.
 
-> <konteks singkat + "Di Audira, ...">
+> Di AUDIRA, kita bongkar kenapa Indonesia butuh pusat data sendiri, dan kenapa itu saja ternyata belum cukup.
 
-## c02 — <Judul Bab 1>
+## c02 — Aturan main: publik vs swasta
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **35** · estimasi **15 dtk**
+- Visual: Dokumen peraturan membelah layar jadi dua. Kiri: gedung pemerintah dengan gembok di dalam peta RI. Kanan: logo aplikasi generik (tanpa merek nyata) dengan panah keluar ke luar negeri. Callout HUD "PP 71/2019 · 10 OKT 2019", "PASAL 20: WAJIB DI RI", "PASAL 21: BOLEH LUAR NEGERI".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Sejak Oktober 2019, Peraturan Pemerintah 71 membagi dua. Data layanan pemerintah wajib disimpan di dalam negeri. Tapi aplikasi swasta, termasuk yang kamu pakai tiap hari, boleh menyimpan datanya di luar negeri, asal tetap bisa diawasi.
 
-## c03 — <Judul Bab 2>
+## c03 — UU PDP: syarat keluar negeri
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Timbangan: kiri bendera-netral "RI", kanan "NEGARA TUJUAN". Paket data hanya lewat gerbang bila timbangan seimbang. Callout HUD "UU 27/2022", "DENDA MAKS 2% PENDAPATAN".
 
-> <teks narasi>
+> Tahun 2022, Undang-Undang Pelindungan Data Pribadi menambah syarat. Data pribadi boleh dikirim ke luar negeri, asal negara tujuannya punya perlindungan yang setara atau lebih tinggi. Pelanggar bisa didenda sampai dua persen pendapatan tahunan.
 
-## c04 — <Judul Bab 3>
+## c04 — Semua telur di satu keranjang
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **16** · estimasi **7 dtk**
+- Visual: Ratusan ikon gedung instansi (tanpa logo) mengalir ke satu rak server besar berlabel "PDNS". Counter HUD naik ke "±400 INSTANSI".
 
-> <teks narasi>
+> Masalahnya, pemerintah sendiri menitipkan data sekitar empat ratus instansi di satu tempat: Pusat Data Nasional Sementara.
 
-## c05 — <Judul Bab 4>
+## c05 — Juni 2024: disandera
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Rak server berubah merah, gembok raksasa mengunci, layar ransom generik. Peta pin "SURABAYA". Callout HUD "JUNI 2024", "BRAIN CIPHER", "TEBUSAN US$8 JUTA". Ikon layanan publik padam berurutan, ikon backup kosong dicoret.
 
-> <teks narasi>
+> Juni 2024, ransomware Brain Cipher mengunci PDNS 2 di Surabaya. Peretas minta tebusan delapan juta dolar Amerika. Ratusan instansi terganggu, dan banyak data ternyata tidak punya cadangan.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan: lokasi vs kendali
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Diagram dua lapis: lapis "LOKASI" (gedung di peta RI) dan lapis "PERLINDUNGAN" (backup di kota kedua, perisai, enkripsi). Lapis kedua menyala saat disebut. HUD checklist: HUKUM RI ✓, PENGAWASAN ✓, BACKUP ✓.
 
-> <teks narasi>
+> Jadi pusat data sendiri itu soal kendali. Hukum Indonesia berlaku penuh, dan pengawasan jadi lebih mudah. Tapi lokasi saja tidak cukup. Tanpa cadangan dan keamanan berlapis, data di dalam negeri tetap bisa disandera.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: Hero shot malam: dua pusat data di dua pulau terhubung garis cahaya cadangan, paket data kembali "pulang" ke peta Indonesia. Kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Data kita butuh rumah di sini, lengkap dengan kunci cadangannya. Simpan video ini, dan ikuti AUDIRA untuk cerita teknologi berikutnya.
+
+## Opsi hook lain
+
+1. Pemerintah menyimpan data 400 instansi di satu tempat. Lalu tempat itu dikunci peretas.
+2. Delapan juta dolar. Itu harga yang diminta peretas untuk data negara kita.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **192 kata** ≈ **77–85 dtk**

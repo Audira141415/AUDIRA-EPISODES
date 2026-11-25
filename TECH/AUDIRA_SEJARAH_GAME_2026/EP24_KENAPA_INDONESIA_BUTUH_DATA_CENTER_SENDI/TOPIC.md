@@ -5,7 +5,11 @@ title: "Kenapa Indonesia Butuh Data Center Sendiri"
 hook: "Semua data kamu tersimpan di luar negeri — dan ini masalah besar"
 styleCandidates: ["BROADCASTFORGE (2D)", "DATAPHYSICAL (2D)", "PRECISION (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook asli tidak akurat (data publik wajib di RI) sudah dikoreksi; topik politis ringan soal PDNS, jaga netral tanpa wajah/logo; folder salah seri (SEJARAH_GAME)."
 ---
 
 # Kenapa Indonesia Butuh Data Center Sendiri

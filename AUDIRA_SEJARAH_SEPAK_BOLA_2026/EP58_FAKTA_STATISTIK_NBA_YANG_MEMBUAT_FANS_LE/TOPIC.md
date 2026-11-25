@@ -5,7 +5,11 @@ title: "Fakta Statistik NBA yang Membuat Fans LeBron James Terdiam"
 hook: "Rekor poin sepanjang masa, tapi ring pertama baru datang di usia 27"
 styleCandidates: ["DATAPHYSICAL (2D)", "CHARACTERFLOW (2D)", "PIXELSTORY (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak   # tidak = fakta cepat basi (rekor, harga, produk)
+risiko: "Total poin dan jumlah musim berubah tiap laga (LeBron masih aktif di 76ers), cek ulang sebelum VO; folder salah seri (sepak bola, padahal basket)."
 ---
 
 # Fakta Statistik NBA yang Membuat Fans LeBron James Terdiam

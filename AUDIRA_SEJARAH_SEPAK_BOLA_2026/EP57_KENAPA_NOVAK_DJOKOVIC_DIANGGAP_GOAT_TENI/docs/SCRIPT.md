@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris` (`EP57`)
+# Naskah — Kenapa Novak Djokovic Dianggap GOAT Tenis Meski Dibenci Separuh Dunia
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Angka "24" raksasa jatuh dan mengunci di tengah layar, 24 trofi siluet berbaris di belakangnya. Saat kalimat kedua, kamera mundur cepat: tribun penuh siluet penonton mengangkat papan bertuliskan "ROGER". HUD: chip "24 GRAND SLAM · per Nov 2026".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Dua puluh empat gelar Grand Slam, terbanyak dalam sejarah tenis putra. Tapi di final Wimbledon, satu stadion justru meneriakkan nama lawannya.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: Siluet pemain (tanpa wajah) berdiri di baseline lapangan rumput. Layar terbelah dua: kiri timbangan berisi tumpukan trofi (turun berat), kanan meteran "simpati penonton" yang hampir kosong.
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya Novak Djokovic. Angka bilang dia yang terbaik. Lalu kenapa banyak penonton memilih tidak mencintainya?
 
-## c02 — <Judul Bab 1>
+## c02 — Anak perang Beograd
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Peta Serbia, pin Beograd, langit malam dengan kilatan ledakan jauh. Pindah ke kolam renang kosong berlantai keramik retak, net tenis dibentang melintang, bocah siluet memukul bola ke dinding kolam. HUD: kartu tahun "1999".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Ceritanya mulai di Beograd. Waktu bom NATO jatuh tahun sembilan puluh sembilan, bocah Novak berlatih di kolam renang kosong yang disulap jadi lapangan tenis.
 
-## c03 — <Judul Bab 2>
+## c03 — Si pengganggu duopoli
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Panggung pesta: dua siluet berlabel "FEDERER" dan "NADAL" di bawah lampu sorot dengan tumpukan trofi masing-masing (20 dan 22). Siluet ketiga masuk dari pinggir layar, lampu sorot tidak mengikutinya, tapi tumpukan trofinya terus naik melewati keduanya. HUD: bar chart 20 / 22 / 24.
 
-> <teks narasi>
+> Dia datang terlambat ke pesta. Federer dan Nadal sudah jadi idola dunia. Djokovic dianggap pengganggu cerita dua jagoan itu, dan dia terus menang.
 
-## c04 — <Judul Bab 3>
+## c04 — Final Wimbledon 2019
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Centre Court rumput dari atas, papan skor besar berjalan ke "12–12" lalu "13–12". Gelombang tribun bersorak, teks "ROGER! ROGER!" bergetar di udara. Dua lampu merah "MATCH POINT" menyala lalu padam satu per satu. HUD: "13–12 set ke-5 · 2 match point diselamatkan" dan "Final terpanjang Wimbledon".
 
-> <teks narasi>
+> Final Wimbledon dua ribu sembilan belas. Centre Court bersorak "Roger, Roger". Federer pegang dua match point. Djokovic menyelamatkan keduanya, lalu menang di final terpanjang sejarah Wimbledon.
 
-## c05 — <Judul Bab 4>
+## c05 — Luka yang dia buat sendiri
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Dua berkas kasus seperti map arsip. Map 1 "US OPEN 2020": animasi bola melambung ke belakang menuju bendera hakim garis, stempel merah "DISKUALIFIKASI". Map 2 "AUSTRALIA 2022": paspor dan visa dicap "DIBATALKAN", lalu pesawat siluet lepas landas dari landasan. HUD: kartu tahun "2020" dan "2022".
 
-> <teks narasi>
+> Citranya sering dia rusak sendiri. Tahun dua ribu dua puluh, bolanya mengenai hakim garis dan dia didiskualifikasi dari US Open. Dua tahun kemudian, dia dideportasi dari Australia setelah visanya dibatalkan soal vaksin Covid.
 
-## c06 — <Judul Bab 5>
+## c06 — Angka tidak punya perasaan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **37** · estimasi **15 dtk**
+- Visual: Ruang data gelap. Kalender berisi 428 kotak minggu menyala satu per satu jadi dinding cahaya. Delapan mahkota kecil mendarat berurutan. Dua papan head-to-head bergeser masuk: "27–23 vs Federer", "31–29 vs Nadal". Penutup bab: kutipan teks Nadal tanpa foto. HUD: "428 MINGGU No. 1", "8× No. 1 AKHIR TAHUN" (per Nov 2026).
 
-> <teks narasi>
+> Tapi angka tidak punya perasaan. Empat ratus dua puluh delapan minggu di peringkat satu dunia. Delapan kali jadi nomor satu akhir tahun. Unggul rekor pertemuan atas Federer dan Nadal. Nadal pun mengakui, secara angka dialah yang terbaik.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Lapangan tanah liat merah Paris saat golden hour, medali emas berputar turun ke tengah lemari trofi yang kini penuh (4 trofi major + medali). Kamera crane naik, lemari menyala. Papan nama "AUDIRA" di dinding lemari. Outro card AUDIRA. HUD: "PARIS 2024 · umur 37 · EMAS".
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Di Paris dua ribu dua puluh empat, umur tiga puluh tujuh, dia akhirnya merebut emas Olimpiade. Koleksinya lengkap. Dicintai atau tidak, sejarah sudah memilih namanya. Ikuti AUDIRA untuk kisah berikutnya.
+
+## Opsi hook lain
+
+1. Dua match point. Satu stadion meneriakkan nama lawan. Dan dia tetap menang.
+2. Pemain tenis paling sukses sepanjang masa ini pernah dideportasi dari sebuah negara.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **209 kata** ≈ **84–93 dtk** (150–135 WPM; ±87 dtk @144 WPM)
