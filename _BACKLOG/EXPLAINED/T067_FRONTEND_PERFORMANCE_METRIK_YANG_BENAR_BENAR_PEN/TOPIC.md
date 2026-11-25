@@ -1,0 +1,23 @@
+---
+channel: EXPLAINED
+topicNo: "067"
+title: "Frontend Performance: Metrik yang Benar-Benar Penting (LCP, FID, CLS)"
+hook: "Google Core Web Vitals bukan cuma SEO — itu UX"
+styleCandidates: ["DATAPHYSICAL (2D)", "TRADINGTERMINAL (2D)", "PRECISION (2D)"]
+source: channel-topics/audira-dev/topics.md
+stage: backlog
+---
+
+# Frontend Performance: Metrik yang Benar-Benar Penting (LCP, FID, CLS)
+
+- **Channel:** EXPLAINED · topik #067
+- **Hook awal:** Google Core Web Vitals bukan cuma SEO — itu UX
+- **Kandidat style (dari daftar topik, belum final):** DATAPHYSICAL (2D), TRADINGTERMINAL (2D), PRECISION (2D)
+
+Folder benih. Belum ada riset, naskah, atau STATUS.json.
+
+## Cara mulai produksi (sesi A)
+1. Pindahkan folder ini ke folder seri yang sedang dikerjakan di root `F:\AUDIRA-EPISODES\`, beri nama `EPxx_<SLUG>`.
+2. Jalankan `audira_episode_status` `action: "init"` di folder itu, lalu ikuti pipeline tahap 0.
+3. Style final dipilih di tahap 3 dari skor motion memory; kandidat di atas hanya titik awal.
+4. Setelah final, tandai baris #067 di `channel-topics/audira-dev/topics.md` dengan `[x] <SERI>/EPxx`.
