@@ -5,7 +5,11 @@ title: "Evolusi Manusia: Nenek Moyangmu Pernah Hidup Bersama Spesies Lain"
 hook: "Homo sapiens bukan satu-satunya manusia di Bumi — dan kita kawin dengan mereka"
 styleCandidates: ["WORLDFORGE (3D)", "CHRONICLE (2D)", "PAPERWORLD (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 5
+awet: ya
+risiko: "sedang: hook asli tidak akurat (sudah dikoreksi di naskah), angka DNA Neanderthal punya estimasi beragam, rekonstruksi wajah manusia purba sebaiknya siluet"
 ---
 
 # Evolusi Manusia: Nenek Moyangmu Pernah Hidup Bersama Spesies Lain

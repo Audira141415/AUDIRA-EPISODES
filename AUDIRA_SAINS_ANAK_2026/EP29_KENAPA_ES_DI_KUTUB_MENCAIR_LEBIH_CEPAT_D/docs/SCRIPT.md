@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP29`)
+# Naskah — Kenapa Es di Kutub Mencair Lebih Cepat dari Prediksi
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: bongkahan es laut Arktik retak dan pecah di depan kamera; HUD layar komputer iklim dengan garis prediksi biru tertinggal dari garis observasi merah yang menukik.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Es di Kutub Utara meleleh lebih cepat daripada tebakan komputer iklim terbaik. Kenapa bisa begitu? AUDIRA bongkar sekarang.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: satelit mengorbit di atas Arktik, memindai lapisan es; grafik dua garis (model vs satelit) melebar. HUD callout "2007 · Faster than forecast".
 
-> <konteks singkat + "Di Audira, ...">
+> Tahun 2007, ilmuwan membandingkan data satelit dengan model iklim. Hasilnya, es laut Arktik di bulan September menyusut jauh lebih cepat dari ramalan.
 
-## c02 — <Judul Bab 1>
+## c02 — Seberapa cepat
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: peta Arktik dari atas, tutupan es putih mengerut per dekade (timelapse 1979 → kini); globe dengan termometer Arktik naik 4x lebih tinggi dari termometer Bumi. HUD "−12,2% / dekade" dan "±4x sejak 1979".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Sekarang lajunya sekitar 12 persen tiap sepuluh tahun. Dan Arktik memanas hampir empat kali lebih cepat dari rata-rata Bumi sejak 1979.
 
-## c03 — <Judul Bab 2>
+## c03 — Rahasia warna (albedo)
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: close-up sinar Matahari mengenai tiga permukaan berjejer: es laut, es bersalju, laut gelap; panah cahaya memantul dengan tebal berbeda. HUD tiga bar "50–70%", "90%", "6%".
 
-> <teks narasi>
+> Kuncinya ada di warna. Es laut memantulkan 50 sampai 70 persen cahaya Matahari. Es berselimut salju bahkan sampai 90 persen. Laut yang gelap? Cuma 6 persen.
 
-## c04 — <Judul Bab 3>
+## c04 — Lingkaran umpan balik
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **12 dtk**
+- Visual: diagram melingkar 3D di atas laut: es mencair → laut gelap terbuka → air menghangat (warna merah menyebar) → es tepi makin tipis; panah lingkaran berputar makin cepat. Beruang kutub di bongkahan es yang menyusut.
 
-> <teks narasi>
+> Jadi begitu es mencair, laut gelap terbuka dan menyerap panas. Airnya menghangat, es di sekitarnya makin cepat meleleh, lalu laut terbuka makin luas. Lingkaran ini berputar sendiri.
 
-## c05 — <Judul Bab 4>
+## c05 — Es darat dan tanah beku
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: pindah ke daratan Greenland, tebing gletser runtuh ke laut (HUD "3.902 miliar ton · 1992–2018"); lalu potongan tanah tundra memperlihatkan lapisan permafrost dengan gelembung gas naik. HUD "±1.500 miliar ton karbon".
 
-> <teks narasi>
+> Di darat, Greenland kehilangan sekitar 3.902 miliar ton es antara 1992 dan 2018. Di tanah beku Arktik juga tersimpan sekitar 1.500 miliar ton karbon. Kalau mencair, sebagian bisa lepas jadi gas rumah kaca.
 
-## c06 — <Judul Bab 5>
+## c06 — Kenapa model meleset
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: ruang data peneliti; layar grafik model CMIP6 dikoreksi ke garis observasi, kurva proyeksi es September turun ke nol. HUD "2023 · model meremehkan" dan ikon "emisi rendah" tetap menuju bebas es.
 
-> <teks narasi>
+> Lalu kenapa model meleset? Studi tahun 2023 menemukan model iklim terbaru cenderung meremehkan efek gas rumah kaca pada es laut. Setelah dikoreksi, September tanpa es tetap muncul, bahkan kalau emisi rendah.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **9 dtk**
+- Visual: hero shot Arktik saat golden hour, kamera naik memperlihatkan es putih di sisi kiri dan laut gelap di kanan, lingkaran umpan balik bercahaya di langit; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi es kutub tidak sekadar mencair. Ia ikut mempercepat pencairannya sendiri. Ikuti AUDIRA untuk sains di balik berita iklim berikutnya.
+
+## Opsi hook lain
+
+1. Warna putih menyelamatkan Kutub Utara. Begitu putihnya hilang, panasnya datang dua kali lipat.
+2. Tahun 2007, komputer iklim meramal es Arktik. Satelit membuktikan ramalan itu terlalu santai.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **198 kata** ≈ **85 dtk**

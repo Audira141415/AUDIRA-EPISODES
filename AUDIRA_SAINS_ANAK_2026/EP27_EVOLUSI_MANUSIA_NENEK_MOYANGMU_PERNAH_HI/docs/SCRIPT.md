@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP27`)
+# Naskah — Evolusi Manusia: Nenek Moyangmu Pernah Hidup Bersama Spesies Lain
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: Siluet empat sosok manusia berbeda tinggi berdiri berjajar di bukit senja; tiga siluet perlahan memudar, satu tersisa. Teks HUD "DULU: BANYAK MANUSIA".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Dulu, kita bukan satu-satunya manusia di Bumi. Dan nenek moyangmu pernah punya anak bersama mereka.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Peta Afrika, kamera menukik ke Maroko; tengkorak fosil berputar di atas meja batu. HUD callout "315.000 TAHUN" + pin "Jebel Irhoud, Maroko".
 
-> <konteks singkat + "Di Audira, ...">
+> Spesies kita, Homo sapiens, sudah ada sejak sekitar 315 ribu tahun lalu. Fosil tertuanya ditemukan di Jebel Irhoud, Maroko.
 
-## c02 — <Judul Bab 1>
+## c02 — Neanderthal
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Lanskap zaman es bersalju di Eropa; sosok Neanderthal (siluet stylized, tubuh pendek-kekar) berjalan di depan api unggun. HUD "NEANDERTHAL · Eropa & Asia".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Di Eropa dan Asia, hidup manusia lain bernama Neanderthal. Tubuhnya pendek dan kekar, pas untuk bertahan di zaman es yang dingin.
 
-## c03 — <Judul Bab 2>
+## c03 — Denisova
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Interior gua Siberia, senter menyorot tulang jari kecil; zoom ke untai DNA yang menyala. HUD "GUA DENISOVA · Siberia".
 
-> <teks narasi>
+> Lalu ada manusia Denisova. Mereka dikenali dari secuil tulang jari di sebuah gua di Siberia. Bentuk tubuhnya masih misteri, tapi DNA-nya bisa dibaca.
 
-## c04 — <Judul Bab 3>
+## c04 — Sepupu dari Flores
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Peta Indonesia, kamera turun ke Pulau Flores dan mulut Gua Liang Bua; sosok kecil di samping penggaris raksasa "106 cm". Panel kecil pindah ke peta Filipina "Homo luzonensis".
 
-> <teks narasi>
+> Indonesia juga punya. Di Liang Bua, Flores, hidup Homo floresiensis, tingginya cuma sekitar satu meter. Tulangnya berumur 100 ribu sampai 60 ribu tahun. Di Filipina ada sepupunya, Homo luzonensis.
 
-## c05 — <Judul Bab 4>
+## c05 — Pertemuan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Peta dunia, panah migrasi Homo sapiens keluar dari Afrika bertemu dua zona berwarna (Neanderthal, Denisova); dua jejak kaki bertemu di satu titik.
 
-> <teks narasi>
+> Saat Homo sapiens keluar dari Afrika, mereka bertemu Neanderthal dan Denisova. Mereka saling menikah dan punya anak. Buktinya masih tersimpan sampai sekarang.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan: DNA kita
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **34** · estimasi **14 dtk**
+- Visual: Untai DNA raksasa berputar; potongan berwarna menyala di dalamnya. Dua bar data muncul: "1–4% NEANDERTHAL" dan "4–6% DENISOVA · Papua & Melanesia".
 
-> <teks narasi>
+> Orang yang leluhurnya dari luar Afrika membawa sekitar 1 sampai 4 persen DNA Neanderthal. Orang Papua dan Melanesia membawa 4 sampai 6 persen DNA Denisova. Jadi, sepotong kecil mereka masih hidup di tubuh kita.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **14 dtk**
+- Visual: Timeline horizontal; cabang-cabang spesies padam satu per satu ("±40.000 TAHUN LALU: Neanderthal hilang"), satu cabang tersisa menyala menuju cermin; anak melihat bayangannya dengan untai DNA berkilau. Outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Neanderthal menghilang sekitar 40 ribu tahun lalu. Sepupu lainnya juga punah. Sekarang tinggal kita sendirian. Tapi waktu kamu bercermin, ingat: jejak mereka ada di dalam dirimu. Ikuti AUDIRA untuk cerita sains berikutnya.
+
+## Opsi hook lain
+
+1. Ada sedikit Neanderthal di dalam tubuhmu, dan itu bukan dongeng.
+2. Dulu ada manusia setinggi satu meter yang hidup di Flores. Mereka bukan kita.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **195 kata** ≈ **78–87 dtk**

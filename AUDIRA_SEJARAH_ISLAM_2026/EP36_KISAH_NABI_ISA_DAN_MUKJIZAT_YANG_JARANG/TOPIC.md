@@ -5,7 +5,11 @@ title: "Kisah Nabi Isa dan Mukjizat yang Jarang Disebut dalam Ceramah"
 hook: "Selain menyembuhkan orang sakit, ada satu mukjizat Nabi Isa yang hampir tidak pernah diceritakan"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "STORYBOOK (2D)", "CINESTORY (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Sensitif akidah: wajib frasa 'dengan izin Allah' dan tanpa wajah Nabi Isa/Maryam; hook asli berlebihan (mukjizat ada di QS 3:49, bukan tersembunyi)."
 ---
 
 # Kisah Nabi Isa dan Mukjizat yang Jarang Disebut dalam Ceramah

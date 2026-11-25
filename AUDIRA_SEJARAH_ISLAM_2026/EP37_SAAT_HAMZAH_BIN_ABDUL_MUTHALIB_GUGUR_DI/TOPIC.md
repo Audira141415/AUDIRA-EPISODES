@@ -5,7 +5,11 @@ title: "Saat Hamzah bin Abdul Muthalib Gugur di Uhud: Duka Terdalam Nabi SAW"
 hook: "Paman yang paling ia cintai terbunuh dan dimutilasi — dan Nabi SAW melarang dirinya membalas"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "CINESTORY (2D)", "CHRONICLE (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "QISSAH: tanpa wajah Nabi/sahabat, hindari visual mutilasi; kisah sumpah balas 70 orang dan Hind mengunyah hati lemah, tidak dinarasikan"
 ---
 
 # Saat Hamzah bin Abdul Muthalib Gugur di Uhud: Duka Terdalam Nabi SAW

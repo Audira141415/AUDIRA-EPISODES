@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi`
+# Source Register — Kenapa Es di Kutub Mencair Lebih Cepat dari Prediksi
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Es laut Arktik September 1953–2006 menyusut lebih cepat dari hampir semua simulasi model IPCC AR4 ("faster than forecast") | Arctic sea ice decline: Faster than forecast, Stroeve, Holland, Meier, Scambos & Serreze, Geophysical Research Letters, 2007 | https://doi.org/10.1029/2007GL029703 | 2026-11-25 | HIGH |
+| 2 | Luas minimum es laut Arktik (September) menyusut 12,2% per dekade dibanding rata-rata 1981–2010; data satelit sejak 1979 | Arctic Sea Ice Minimum Extent (Earth Indicators), NASA Science, diakses 2026 | https://science.nasa.gov/earth/explore/earth-indicators/arctic-sea-ice-minimum-extent | 2026-11-25 | HIGH |
+| 3 | Arktik memanas hampir 4 kali lebih cepat dari rata-rata global selama 1979–2021; rasio ini sangat jarang muncul di simulasi model iklim | The Arctic has warmed nearly four times faster than the globe since 1979, Rantanen et al., Communications Earth & Environment, 2022 | https://doi.org/10.1038/s43247-022-00498-3 | 2026-11-25 | HIGH |
+| 4 | Albedo: es laut memantulkan 50–70% radiasi Matahari, es berselimut salju hingga 90%, laut hanya ±6% (albedo 0,06) | The science of sea ice, National Snow and Ice Data Center (NSIDC), diakses 2026 | https://nsidc.org/learn/parts-cryosphere/sea-ice/science-sea-ice | 2026-11-25 | HIGH |
+| 5 | Model CMIP6 rata-rata meremehkan pengaruh gas rumah kaca pada es laut Arktik; setelah dikoreksi, September bebas es diproyeksikan di semua skenario termasuk emisi rendah | Observationally-constrained projections of an ice-free Arctic even under a low emission scenario, Kim, Min, Gillett et al., Nature Communications, 2023 | https://doi.org/10.1038/s41467-023-38511-8 | 2026-11-25 | HIGH |
+| 6 | Lapisan es Greenland kehilangan 3.902 Gt (miliar ton) es selama 1992–2018 (rekonsiliasi IMBIE) | Mass balance of the Greenland Ice Sheet from 1992 to 2018, The IMBIE Team (Shepherd et al.), Nature, 2020 | https://doi.org/10.1038/s41586-019-1855-2 | 2026-11-25 | HIGH |
+| 7 | Stok karbon organik tanah di wilayah permafrost sirkumpolar utara ±1.460–1.600 Pg (miliar ton), dibulatkan ±1.500 di VO; pelepasannya = umpan balik karbon permafrost | Permafrost carbon cycle, Wikipedia (merujuk Schuur et al., Nature 2015, doi:10.1038/nature14338), diakses 2026 | https://en.wikipedia.org/wiki/Permafrost_carbon_cycle | 2026-11-25 | MEDIUM |
+| 8 | IPCC AR6 (2021): Arktik kemungkinan praktis bebas es pada September setidaknya sekali sebelum 2050; "bebas es" = luas < 1 juta km² | Arctic sea ice decline, Wikipedia (merujuk IPCC AR6 WG1 SPM), diakses 2026 | https://en.wikipedia.org/wiki/Arctic_sea_ice_decline | 2026-11-25 | MEDIUM |

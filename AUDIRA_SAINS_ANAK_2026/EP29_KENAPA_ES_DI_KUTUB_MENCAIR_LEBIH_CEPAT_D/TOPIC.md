@@ -5,7 +5,11 @@ title: "Kenapa Es di Kutub Mencair Lebih Cepat dari Prediksi"
 hook: "Siklus umpan balik iklim yang membuat pemanasan global semakin sulit dihentikan"
 styleCandidates: ["DISASTERSIM (3D)", "WORLDFORGE (3D)", "DATAPHYSICAL (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "sedang: \"es di kutub\" di judul sebenarnya hanya Arktik dan hook \"sulit dihentikan\" berlebihan (dikoreksi di naskah); angka permafrost baru MEDIUM"
 ---
 
 # Kenapa Es di Kutub Mencair Lebih Cepat dari Prediksi

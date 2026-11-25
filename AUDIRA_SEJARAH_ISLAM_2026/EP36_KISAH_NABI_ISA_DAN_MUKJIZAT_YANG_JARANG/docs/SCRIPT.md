@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP36`)
+# Naskah — Kisah Nabi Isa dan Mukjizat yang Jarang Disebut dalam Ceramah
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: close-up dapur rumah batu kuno, mangkuk roti dan kurma, lemari kayu setengah terbuka; teks kinetik "apa yang kamu makan?". Tanpa tokoh.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Lauk tadi pagi, simpanan di lemari, semuanya disebutkan tanpa pernah dilihat. Ini AUDIRA, dan ini mukjizat Nabi Isa yang jarang dibahas.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **14** · estimasi **6 dtk**
+- Visual: mushaf terbuka, kaligrafi ayat bercahaya; HUD callout "QS Ali Imran : 49" + chip "5 tanda".
 
-> <konteks singkat + "Di Audira, ...">
+> Semua tercatat di surah Ali Imran ayat 49. Satu ayat, isinya lima tanda kerasulan.
 
-## c02 — <Judul Bab 1>
+## c02 — Burung dari tanah liat
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: tangan (tanpa wajah) membentuk burung dari tanah liat basah, tiupan cahaya, burung terbang ke langit senja. Teks "dengan izin Allah".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Pertama, beliau membentuk burung dari tanah liat, meniupnya, lalu tanah itu terbang menjadi burung sungguhan di depan mata mereka. Ayatnya menegaskan, semua terjadi dengan izin Allah.
 
-## c03 — <Judul Bab 2>
+## c03 — Buta sejak lahir dan kusta
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: siluet orang di gang pasar Palestina kuno, mata tertutup kain; cahaya lembut menyapu, kain jatuh. HUD "al-akmah = buta sejak lahir".
 
-> <teks narasi>
+> Kedua, beliau menyembuhkan orang yang buta sejak lahir dan penderita kusta. Bukan sakit mata biasa, tapi buta yang dibawa dari kandungan.
 
-## c04 — <Judul Bab 3>
+## c04 — Menghidupkan orang mati
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: makam batu di bukit, cahaya fajar masuk dari celah; frasa "dengan izin Allah" muncul kedua kali, lebih besar.
 
-> <teks narasi>
+> Ketiga, beliau menghidupkan orang mati. Lagi-lagi ayatnya mengulang frasa yang sama, dengan izin Allah, bukan kuasa beliau sendiri.
 
-## c05 — <Judul Bab 4>
+## c05 — Mukjizat yang jarang dibahas
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **14 dtk**
+- Visual: kembali ke dapur hook; kamera masuk ke lemari, roti, kendi, kantong kurma menyala satu per satu seperti diberi label HUD. Kerumunan siluet Bani Israil.
 
-> <teks narasi>
+> Lalu bagian yang jarang masuk ceramah. Nabi Isa berkata, aku beritahukan kepadamu apa yang kamu makan dan apa yang kamu simpan di rumahmu. Rahasia dapur dan lemari, terbuka di depan Bani Israil.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **35** · estimasi **15 dtk**
+- Visual: diagram kecil "tidak bisa ditebak orang luar"; transisi ke buaian kayu dengan kain putih dan cahaya (tanpa bayi terlihat). HUD "3 bayi berbicara · HR Bukhari 3436 · Muslim 2550 (sahih)".
 
-> <teks narasi>
+> Kenapa makanan dan simpanan? Hal sekecil itu tidak bisa ditebak orang luar. Dan mukjizatnya dimulai jauh lebih awal. Dalam hadis sahih Bukhari dan Muslim, hanya tiga bayi yang berbicara di buaian, dan Isa yang pertama.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: montase lima ikon mukjizat tersusun di sekitar kaligrafi QS 3:49, golden hour, lalu outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi lain kali kisah Nabi Isa dibacakan, ingat ayat 49, lima tanda dalam satu ayat, dan bagian yang sering terlewat itu. Ikuti AUDIRA untuk kisah para nabi berikutnya.
+
+## Opsi hook lain
+
+1. Satu ayat Al-Qur'an memuat lima mukjizat Nabi Isa, dan yang terakhir hampir tidak pernah dibahas.
+2. Bayi yang membela ibunya dari buaian. Hadis sahih bilang, hanya tiga yang pernah begitu.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **195 kata** ≈ **78–87 dtk**

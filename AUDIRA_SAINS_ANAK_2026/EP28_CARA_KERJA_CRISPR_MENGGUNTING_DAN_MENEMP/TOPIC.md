@@ -5,7 +5,11 @@ title: "Cara Kerja CRISPR: Menggunting dan Menempel DNA Seperti Dokumen"
 hook: "Teknologi revolusioner yang bisa menghapus penyakit genetik — dan risikonya yang belum kita pahami"
 styleCandidates: ["NANOFORGE (3D)", "INNERWORKS (3D)", "CERDIK (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Analogi potong-tempel dan klaim hapus penyakit menyesatkan bila tak diluruskan; kasus bayi CRISPR 2018 tanpa wajah orang nyata."
 ---
 
 # Cara Kerja CRISPR: Menggunting dan Menempel DNA Seperti Dokumen

@@ -5,65 +5,65 @@
 
 ## c00_hook — Hook
 
-- Kata: **13** · estimasi **5 dtk**
-- Visual: Ujung jari raksasa menekan kaca, cap sidik jari tercetak; stempel "BUKAN UNTUK POLISI" dicoret, kamera zoom masuk ke garis-garis.
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Close-up ujung jari raksasa, garis sidik jari menyala di layar, lalu zoom masuk ke lekukan garisnya. Callout: 'bukan untuk polisi'.
 
-> Sidik jarimu tidak dibuat untuk polisi. Lalu, untuk apa garis-garis kecil itu ada?
+> Sidik jarimu bukan dibuat untuk polisi. Garis itu sudah ada sebelum ada yang berpikir soal kejahatan. Lalu untuk apa? Ini AUDIRA.
 
 ## c01_intro — Intro
 
-- Kata: **21** · estimasi **9 dtk**
-- Visual: Dua tangan kembar identik berdampingan, dua cap sidik jari ditumpuk dan tidak cocok; HUD "KEMBAR IDENTIK ≠", untai DNA kembar di latar.
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Penampang janin kartun tanpa wajah, jari kecil dengan garis tumbuh; HUD '15 minggu'.
 
-> Setiap orang punya pola sidik jari sendiri, bahkan anak kembar identik. Padahal DNA mereka hampir sama persis. Jadi, dari mana bedanya?
+> Garis ini terbentuk di dalam kandungan, sekitar minggu ke-15, lalu menetap seumur hidupmu. Namanya friction ridges, artinya garis gesekan.
 
-## c02 — Di dalam kandungan
+## c02 — Sejarah pemakaian
 
-- Kata: **21** · estimasi **9 dtk**
-- Visual: Rahim bercahaya lembut, janin siluet, zoom ke ujung jari mungil; kulit mulai menonjol. HUD "MINGGU KE-13".
+- Kata: **30** · estimasi **12 dtk**
+- Visual: Peta India 1858 bergaya ilustrasi, kontrak kertas dengan cap jari tinta; HUD '1858' dan '1892'. Tanpa wajah tokoh.
 
-> Jawabannya dimulai di dalam kandungan. Sekitar minggu ke-13, kulit ujung jari janin mulai membentuk tonjolan pertama, cikal bakal garis sidik jari.
+> Tahun 1858, William Herschel di India mulai memakainya sebagai tanda tangan. Tahun 1892, Francis Galton menghitung peluang dua orang punya sidik jari sama: sekitar satu banding 64 miliar. Hampir mustahil.
 
-## c03 — Gelombang garis
+## c03 — Bukan untuk manusia saja
 
-- Kata: **29** · estimasi **12 dtk**
-- Visual: Close-up permukaan ujung jari seperti peta; beberapa titik awal menyala, garis tumbuh menyebar seperti riak air. HUD "2023 · UNIV. EDINBURGH · CELL".
+- Kata: **20** · estimasi **8 dtk**
+- Visual: Deretan siluet kera, gorila, koala memanjat dahan; telapak mereka diperbesar menunjukkan garis. Callout: 'primata dan koala'.
 
-> Tahun 2023, tim peneliti Universitas Edinburgh menemukan caranya. Garis itu tumbuh seperti gelombang, dari beberapa titik awal di ujung jari, lalu menyebar ke seluruh bantalan jari dan saling bertemu.
+> Tapi itu cuma cara kita memakainya. Simpanse, gorila, bahkan koala juga punya sidik jari, dan mereka jelas tidak peduli polisi.
 
-## c04 — Sinyal Turing
+## c04 — Teori cengkeram
 
-- Kata: **21** · estimasi **9 dtk**
-- Visual: Level sel: tiga partikel sinyal berwarna berlabel WNT, EDAR, BMP saling dorong dan mundur, pola belang muncul di lapisan kulit. HUD "SISTEM TURING".
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Jari menekan kaca akrilik; area kontak menyala, garis dan lembah terlihat; HUD 'kontak berkurang 1/3'.
 
-> Tiga sinyal kimia, yaitu WNT, EDAR, dan BMP, saling dorong dan saling rem. Ilmuwan menyebut mekanisme pembuat pola ini sistem Turing.
+> Teori lama bilang garis bikin genggaman kuat. Tahun 2009, Warman menguji jari di kaca akrilik. Garis justru mengurangi luas kontak sepertiga, dan fungsi cengkeram jadi diragukan.
 
-## c05 — Tabrakan jadi pola
+## c05 — Teori sensor sentuh
 
-- Kata: **29** · estimasi **12 dtk**
-- Visual: Tiga jari berjajar, gelombang dari titik berbeda bertabrakan dan menghasilkan tiga pola; kartu HUD "LENGKUNG · SANGKUTAN · PUSARAN".
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Robot jari sensor menggesek tekstur halus; gelombang getaran memusat ke satu puncak frekuensi. HUD 'Pacinian'.
 
-> Di mana gelombang mulai, dan di mana mereka bertabrakan, selalu sedikit berbeda di tiap jari. Bentuk ujung jari ikut menentukan. Hasilnya lengkung, sangkutan, atau pusaran yang tak pernah sama.
+> Teori lain: garis itu antena sentuhan. Tahun 2009, Scheibert membuat jari sensor tiruan. Dengan garis, getaran tekstur halus memusat di satu frekuensi yang pas untuk reseptor Pacinian.
 
-## c06 — Penjelasan fungsi
+## c06 — Cara terbentuk
 
-- Kata: **40** · estimasi **17 dtk**
-- Visual: Uji lab: jari menekan kaca akrilik, area kontak menyusut, HUD "−1/3 LUAS SENTUH · 2009", ikon genggaman dicoret. Lalu jari mengusap kain, gelombang getaran menyala menuju reseptor di bawah kulit.
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Animasi pola Turing: gelombang garis menyebar dari beberapa titik di ujung jari dan bertemu. HUD 'EDAR, WNT, BMP' dan '2023'.
 
-> Terus, fungsinya apa? Dulu dikira supaya genggaman kuat. Tapi uji tahun 2009 menunjukkan sidik jari justru mengurangi luas sentuhan sepertiga di kaca akrilik. Penelitian lain menemukan garis ini memperkuat getaran saat jari mengusap benda, jadi tekstur halus lebih mudah terasa.
+> Dan polanya? Studi di Cell tahun 2023 menunjukkan sinyal EDAR, WNT, dan BMP mengatur garis seperti gelombang dari titik awal yang berbeda. Titik awalnya beda, polanya pun beda.
 
 ## c07_payoff — Payoff + outro
 
-- Kata: **24** · estimasi **10 dtk**
-- Visual: Payoff: ribuan sidik jari berbeda tersusun membentuk satu jari raksasa, pusaran unik berputar ke kamera; label "AUDIRA" terukir di kaca lab; outro card AUDIRA.
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Jari raksasa dengan tiga ikon: cengkeram, sentuh, identitas; outro card AUDIRA.
 
-> Jadi keunikan sidik jarimu bukan tujuan evolusi, tapi efek samping proses tumbuh yang acak. Ikuti AUDIRA untuk cerita sains seru di balik tubuhmu sendiri.
+> Jadi jawabannya belum final. Mungkin membantu sentuhan, tapi ilmuwan belum sepakat. Yang jelas, pola sidik jarimu sendiri hampir tak mungkin ada kembarannya. Ikuti AUDIRA untuk sains berikutnya.
 
 ## Opsi hook lain
 
-1. Ada orang yang lahir tanpa sidik jari sama sekali. Jadi, sebenarnya sidik jari itu buat apa?
-2. Kembar identik punya DNA hampir sama, tapi sidik jarinya beda. Kok bisa?
+1. Garis di ujung jarimu itu punya tugas, tapi bukan yang kamu kira. Apa?
+2. Ilmuwan masih berdebat: kenapa jarimu bergaris? Ini AUDIRA.
 
 ## Total
 
-- **198 kata** ≈ **79–88 dtk**
+- **198 kata** ≈ **82 dtk**

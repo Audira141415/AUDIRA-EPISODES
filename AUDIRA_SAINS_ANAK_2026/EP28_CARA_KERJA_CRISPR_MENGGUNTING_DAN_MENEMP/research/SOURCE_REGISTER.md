@@ -1,33 +1,16 @@
-# SOURCE_REGISTER — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi`
+# Source Register — Cara Kerja CRISPR: Menggunting dan Menempel DNA Seperti Dokumen
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | CRISPR adalah sistem kekebalan bakteri yang memberi perlindungan dari virus (bakteriofag); bukti eksperimen dilaporkan 2007 | CRISPR Provides Acquired Resistance Against Viruses in Prokaryotes, Barrangou dkk., Science, 2007 | https://doi.org/10.1126/science.1138140 | 2026-11-25 | HIGH |
+| 2 | Cas9 diprogram oleh RNA ganda/pemandu untuk memotong DNA di urutan target; diterbitkan Agustus 2012 | A Programmable Dual-RNA–Guided DNA Endonuclease in Adaptive Bacterial Immunity, Jinek, Chylinski, Fonfara, Hauer, Doudna, Charpentier, Science, 2012 | https://doi.org/10.1126/science.1225829 | 2026-11-25 | HIGH |
+| 3 | Nobel Kimia 2020 untuk Emmanuelle Charpentier dan Jennifer Doudna "for the development of a method for genome editing"; disebut "genetic scissors"; kode kehidupan bisa diubah dalam beberapa minggu | Press release: The Nobel Prize in Chemistry 2020, Royal Swedish Academy of Sciences, 2020 | https://www.nobelprize.org/prizes/chemistry/2020/press-release/ | 2026-11-25 | HIGH |
+| 4 | 8 Des 2023 FDA menyetujui Casgevy, terapi pertama berbasis CRISPR/Cas9, untuk penyakit sel sabit usia ≥12 th; sel punca darah diedit lalu ditransplantasi, menaikkan hemoglobin janin (HbF) | FDA Approves First Gene Therapies to Treat Patients with Sickle Cell Disease, U.S. FDA, 2023 | https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapies-treat-patients-sickle-cell-disease | 2026-11-25 | HIGH |
+| 5 | RNA pemandu mengenali urutan DNA target, Cas9 memotong; lalu mesin perbaikan DNA milik sel dipakai untuk menambah, menghapus, atau mengganti potongan; edit sel telur/sperma/embrio bisa diwariskan | What are genome editing and CRISPR-Cas9?, MedlinePlus Genetics (NIH/NLM), diakses 2026 | https://medlineplus.gov/genetics/understanding/genomicresearch/genomeediting/ | 2026-11-25 | HIGH |
+| 6 | Cas9 mengecek DNA yang cocok dengan 20 nukleotida bagian spacer RNA pemandu; perlu sekuens PAM (NGG pada S. pyogenes) | Cas9, Wikipedia, 2026 | https://en.wikipedia.org/wiki/Cas9 | 2026-11-25 | MEDIUM |
+| 7 | CRISPR-Cas dapat memicu mutasi di luar target (off-target) dengan frekuensi tinggi di sel manusia | High-frequency off-target mutagenesis induced by CRISPR-Cas nucleases in human cells, Fu dkk., Nature Biotechnology, 2013 | https://doi.org/10.1038/nbt.2623 | 2026-11-25 | HIGH |
+| 8 | He Jiankui mengumumkan kelahiran bayi kembar dengan genom hasil edit (akhir 2018), memicu pertanyaan etika global | The CRISPR-baby scandal: what's next for human gene-editing, Nature News, 2019 | https://www.nature.com/articles/d41586-019-00673-1 | 2026-11-25 | HIGH |
+| 9 | Edit germline diwariskan lintas generasi; banyak negara punya regulasi ketat untuk mencegahnya | What is Genome Editing?, NHGRI (genome.gov), 2019 (diperbarui) | https://www.genome.gov/about-genomics/policy-issues/what-is-Genome-Editing | 2026-11-25 | HIGH |
+| 10 | Efek off-target = modifikasi genetik tak disengaja (mutasi titik, delesi, insersi, translokasi) | Off-target genome editing, Wikipedia, 2026 | https://en.wikipedia.org/wiki/Off-target_genome_editing | 2026-11-25 | MEDIUM |
