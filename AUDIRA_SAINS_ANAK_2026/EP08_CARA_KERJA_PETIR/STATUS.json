@@ -1,0 +1,523 @@
+{
+  "schema": "audira-episode-status/1",
+  "episode": "EP08_CARA_KERJA_PETIR",
+  "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+  "createdAt": "2026-11-24T18:19:34.023Z",
+  "updatedAt": "2026-11-25T00:29:09.292Z",
+  "currentStage": "review",
+  "stages": [
+    {
+      "id": "context",
+      "name": "Baca aturan, memori & 2–3 episode terakhir",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:50.628Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        },
+        {
+          "at": "2026-11-24T18:24:46.197Z",
+          "text": "Preflight OK (warn VRAM: sesi paralel). Baca NOTES EP04/EP05 + memori DISASTERSIM."
+        }
+      ],
+      "doneAt": "2026-11-24T18:24:46.197Z",
+      "startedAt": "2026-11-24T18:20:33.056Z"
+    },
+    {
+      "id": "research",
+      "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:20:50.629Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-23T14:16:30.080Z",
+      "startedAt": "2026-11-23T14:16:30.080Z"
+    },
+    {
+      "id": "style",
+      "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:29:12.866Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T18:26:30.003Z",
+      "startedAt": "2026-11-24T18:26:30.003Z"
+    },
+    {
+      "id": "script",
+      "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:11:15.997Z",
+          "text": "docs ART_DIRECTION/SCRIPT/STORYBOARD (8 adegan)/ASSET_MANIFEST ditulis s2; VO Cartesia speed 1.04 = 84,1 dtk, 208 kata; film 87,3 dtk"
+        }
+      ],
+      "doneAt": "2026-11-24T23:11:15.997Z"
+    },
+    {
+      "id": "setup",
+      "name": "Scaffold folder + setup kit",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:29:12.866Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-22T06:09:42.263Z",
+      "startedAt": "2026-11-22T06:09:42.263Z"
+    },
+    {
+      "id": "voice",
+      "name": "VO Cartesia + analisis timing + timeline",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:11:17.647Z",
+          "text": "project/public/audio/vo.wav + vo-words.json (84,10 s, speed 1.04, offset 0); salinan di audio/"
+        }
+      ],
+      "doneAt": "2026-11-24T23:11:17.647Z"
+    },
+    {
+      "id": "animation",
+      "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T18:29:12.866Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-22T16:52:30.572Z",
+      "startedAt": "2026-11-22T16:52:30.572Z"
+    },
+    {
+      "id": "draft",
+      "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:23:02.224Z",
+          "text": "sync: look.json PASS"
+        }
+      ],
+      "doneAt": "2026-11-24T23:22:42.143Z",
+      "startedAt": "2026-11-24T23:22:42.143Z"
+    },
+    {
+      "id": "final",
+      "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
+      "gate": true,
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-24T23:25:36.644Z",
+      "notes": [
+        {
+          "at": "2026-11-24T23:25:36.644Z",
+          "text": "pre-approved user 2026-11-25 (batch 10 short otonom); draf juri 3,83 LOLOS"
+        },
+        {
+          "at": "2026-11-25T00:29:02.139Z",
+          "text": "s5: resume 15 segmen sisa (jobs=3 conc=2) 63 dtk; FINAL_EP08_PETIR_tagged.mp4 87.3 dtk, -13.7 LUFS TP -1.8 dBFS, metadata AUDIRA ok; record_score final jury 3.83. Render s4 berhenti tanpa log (sesi diam, bukan error render)."
+        }
+      ],
+      "startedAt": "2026-11-24T23:25:36.644Z",
+      "doneAt": "2026-11-25T00:29:02.139Z"
+    },
+    {
+      "id": "delivery",
+      "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
+      "gate": false,
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-24T23:29:27.337Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-24T23:26:22.068Z",
+      "startedAt": "2026-11-24T23:26:22.068Z"
+    },
+    {
+      "id": "review",
+      "name": "Review pasca-tayang 24 jam / 72 jam / 7 hari (views, retensi, hook) → NOTES.md",
+      "gate": false,
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "data": {
+    "memoryEpisode": "sains-anak-EP08",
+    "style": "DISASTERSIM",
+    "engine": "remotion",
+    "shortTitle": "Petir",
+    "slug": "cara-kerja-petir",
+    "channel": "SAINS",
+    "handle": "@AudiraSains",
+    "wordCount": 208,
+    "voSeconds": 84.1,
+    "filmSeconds": 87.3,
+    "estimatedDuration": {
+      "wordCount": 208,
+      "minSec": 83,
+      "maxSec": 92
+    }
+  },
+  "syncedAt": "2026-11-24T23:29:27.337Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-24T18:26:43.447Z",
+      "doing": "Sesi A s1 (tahap 0–3 sebagian) selesai karena context guard: folder EP08 dibuat (add_episode), project/ = salinan starter AUDIRA-SKILL-MOTION (robocopy, junction polyfork + node_modules ke F:/AUDIRA-SKILL-MOTION/node_modules), preflight OK (warn VRAM saja). Riset selesai: research/SOURCE_REGISTER.md (F1–F14, NWS/NSSL/Wikipedia). Koreksi judul: 1/3000 dtk TIDAK didukung sumber → judul \"Cara Kerja Petir: Awan ke Tanah dalam 1/100 Detik\" (NWS 4000fps: leader→return stroke ±1/133–1/50 dtk). Style DISASTERSIM 3D Remotion, STYLE_DECISION.md terisi. Naskah VO final 208 kata di audio/vo.txt (8 baris = 8 adegan: hook, kumulonimbus, muatan es/graupel, stepped leader + streamer, return stroke 1/3 c, 28.000°C → guntur, cahaya vs suara bagi 3, keselamatan + outro). Ejaan VO \"Audira\".",
+      "files": [
+        "research/SOURCE_REGISTER.md",
+        "style/STYLE_DECISION.md",
+        "audio/vo.txt",
+        "project/ (starter)"
+      ],
+      "next": "Sesi A lanjutan (s2): (1) tulis docs/ART_DIRECTION.md, docs/SCRIPT.md (salin vo.txt per adegan + kata), docs/STORYBOARD.md (tabel ≥8 baris Scene|Waktu|BG/MG/FG/HUD|Kamera|Audio, baris 'Style: DISASTERSIM'), docs/ASSET_MANIFEST.md — format contoh EP04 docs. Rencana adegan: S1 hook badai malam desa, kilat ke pohon, HUD '≈1/100 dtk' vs 'kedip 100–150 ms'; S2 menara awan kumulonimbus (GLB towering-cloud-2e00f1 diskalakan + awan prosedural), HUD '±12 km'; S3 cutaway awan: kristal es (+) naik, graupel (−) turun, tanah (+); S4 stepped leader zig-zag 50 m/lompatan turun ke desa, streamer naik dari antena/pohon; S5 return stroke melesat naik, kartu '1/3 kecepatan cahaya', kedip 3–4×; S6 jalur panas 28.000 °C vs Matahari 5×, udara mengembang → cincin gelombang (ring #9FE3FF) = guntur; S7 anak di jendela rumah, cahaya vs suara, hitung 3 dtk = 1 km; S8 anak masuk rumah, 'Dengar guntur? Masuk rumah!' + outro card. GLB: two-story-house-40f6dc, street-tree-0d33f3, pine-tree-3ea075, rooftop-antenna-mast-6e4944, neighborhood-child-8cc5ac, bush-8bb596, monolith-office-tower-422420, towering-cloud-2e00f1. (2) cover topik 1080×1920 ke style/cover-topic.png. (3) Lalu sesi B: VO Cartesia dari audio/vo.txt (pakai text, bukan scriptPath), tahap 5–8. Aturan otonom: gerbang tahap 9 sudah pre-approved user 2026-11-25; kunci F:/AUDIRA-EPISODES/_render.lock sebelum render final; setelah final update topik 023 di F:/AUDIRA-ALL-SKILL/channel-topics/audira-sains/topics.md jadi '[x] SAINS_ANAK/EP08', commit hanya file EP08.",
+      "snapshot": {
+        "episode": "EP08_CARA_KERJA_PETIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP08",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:16:16.918Z",
+      "doing": "Sesi s2: tahap 4 selesai (docs ART_DIRECTION/SCRIPT/STORYBOARD 8 adegan/ASSET_MANIFEST). VO Cartesia speed 1.04 selesai: project/public/audio/vo.wav + vo-words.json 84,10 dtk (salinan audio/). Film 87,3 dtk (outro 3,2). GLB disalin flat ke project/public/models/polyfork/. AssetModel.tsx diganti versi EP09 (SkeletonUtils fix). Kode episode ditulis di project/src/episodes/petir/: timeline.ts (SCENES hook 0–8.45, cloud –12.2, charges –26.6, leader –40, stroke –51, heat –63.8, distance –76.9, safety –87.3; flash(), stepped()), fx.tsx (Bolt instanced, Rain, StormFog, Ground, CloudPuffs+makeTower, Charge sprite +/−, Ring, LabelPlate, GlowBall), scenes.tsx (8 scene fns, cache memo() bukan useMemo, SCENE_FN). BELUM: Hud.tsx, PetirFilm.tsx, registrasi Root.tsx, typecheck, draf.",
+      "files": [
+        "docs/ART_DIRECTION.md",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "project/src/episodes/petir/timeline.ts",
+        "project/src/episodes/petir/fx.tsx",
+        "project/src/episodes/petir/scenes.tsx",
+        "project/src/core/assets/AssetModel.tsx"
+      ],
+      "next": "(1) Tulis project/src/episodes/petir/Hud.tsx meniru EP09 abyss/Hud.tsx (Card pop + SafeLabel, palet ring #9FE3FF, amber #FFB547, POS #E5533D, NEG #4FC3D9). Kartu (dtk film): hook '≈ 1/100 detik' 1.0–6.3 y270 + 'awan → tanah' 1.3, 'lebih cepat dari kedipan mata (0,1–0,15 dtk)' 3.9–6.3 y520, 'KOK BISA?' 5.4–6.45 y620; cloud 'KUMULONIMBUS' 8.6–12.1 + 'awan badai, puncak ±12 km'; charges 'ANGIN MENGADUK ES' 12.3–17.4 + 'kristal es · graupel', '+ KRISTAL ES → PUNCAK' 17.9–20.8, '− GRAUPEL → BAWAH' 21.4–24.2, '+ TANAH' 24.6–26.5, label 'ilustrasi, tidak berskala' S3–S4; leader 'TARIKAN MAKIN KUAT' 27.0–30.2, '±50 m' + 'per lompatan' 30.5–33.0, 'PEMIMPIN BERTINGKAT' 33.0–35.0 (#C9A2FF), 'pohon · antena · gedung' bertahap 34.8/36.0/36.8–39.8; stroke 'TERSAMBUNG!' 40.3–43.0, 'ARUS BALIK ↑' 43.3–47.6 + '1/3 kecepatan cahaya' 45.1, 'berkedip 3–4×' 48.9–50.9; heat '28.000 °C' 51.4–57.9 + 'suhu jalur kilat', '5× permukaan Matahari' 55.6–57.9, 'UDARA MENGEMBANG ↔ MENYUSUT' 58.4–62.6, 'GUNTUR!' 62.9–63.7; distance 'CAHAYA: hampir seketika' 64.1–69.5, 'SUARA: ±1/3 km per detik' 66.4–69.5, stopwatch 0,0→3,0 dtk 69.8–72.8, '÷ 3' 71.6, '3 dtk ÷ 3 ≈ 1 km' 73.3–76.7; safety 'MASIH DENGAR GUNTUR?' 77.2–80.7, 'MASUK RUMAH!' 80.9–83.9 (#E5533D). Kartu big mulai y ≥ 262. (2) PetirFilm.tsx = salin EP09 AbyssFilm.tsx (Karaoke, Voiceover offset 0, FilmScene profile COLOR_PROFILES.DOCUMENTARY_WARM exposure 1.05 envIntensity 0.45 ao, rim cyan #6FD8FF dari belakang, AudiraSignature seed 'sains-EP08-petir', AudiraOutro 3.2), ganti palet ke ring #9FE3FF. Panggil SCENE_FN langsung (tanpa hooks). (3) Root.tsx: PetirPreview/PetirFinal. (4) npm run typecheck, stills per adegan, cek orientasi rumah/anak, contact sheet + audit:visual + juri buta (pola EP09: draft/DRAFT_SHEET.jpg, THEME_CHECK.md), cover-topic.png dari frame hook. (5) npm run sfx, render final antre _render.lock, QA, caption, NOTES, lesson, 3 scheduled task, topik 023, commit.",
+      "snapshot": {
+        "episode": "EP08_CARA_KERJA_PETIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP08",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP08_CARA_KERJA_PETIR/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:17:56.833Z",
+      "doing": "s2 selesai di batas konteks: docs tahap 4 lengkap; VO 84,10 dtk (speed 1.04) di project/public/audio/; kode film lengkap di project/src/episodes/petir/ (timeline.ts, fx.tsx, scenes.tsx, Hud.tsx, PetirFilm.tsx) + Root.tsx terdaftar PetirPreview/PetirFinal (87,3 dtk). npx tsc --noEmit bersih untuk petir. Belum ada still/render apa pun.",
+      "files": [
+        "project/src/episodes/petir/timeline.ts",
+        "project/src/episodes/petir/fx.tsx",
+        "project/src/episodes/petir/scenes.tsx",
+        "project/src/episodes/petir/Hud.tsx",
+        "project/src/episodes/petir/PetirFilm.tsx",
+        "project/src/Root.tsx",
+        "docs/STORYBOARD.md",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "Sesi B lanjutan (tahap 7–8) lalu C: (1) cd project; node scripts/stills.mjs out/s 4s,10s,20s,25s,33s,44s,56s,62s,72s,80s PetirPreview 1 → cek: orientasi rumah two-story-house (pintu menghadap kamera di S8?), arah hadap anak neighborhood-child (S7 harus membelakangi kamera, S8 berjalan ke rumah), bolt terlihat, kabut tidak menelan desa, kartu HUD tidak tabrakan signature (top ≥ 262). Perbaiki di scenes.tsx (posisi/rotasi). (2) style/cover-topic.png dari frame hook (npm run cover atau still 1080×1920 PetirFinal ±1.0s). (3) draft/THEME_CHECK.md (tiap frame subjek = kata VO), contact sheet 540×960 8 frame (1 per adegan) → draft/DRAFT_SHEET.jpg, npm run audit:visual, audit:camera klip, juri buta subagent (qa/jury.md) → record_score judge jury stage draft; lolos ≥3.8 atau ≥3.5 setelah 2 putaran. Pola persis EP09 (F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP09_LAUT_DALAM_MISTERIUS/NOTES.md bagian Teknis). (4) PYTHONUTF8=1 npm run sfx -- --duration=87.3. (5) Gerbang final sudah pre-approved user 2026-11-25 (update stage final approved:true note 'pre-approved user 2026-11-25 (batch 10 short otonom)'); kunci F:/AUDIRA-EPISODES/_render.lock (umur <60 mnt = tunggu via background loop); npm run render:final -- --comp=PetirFinal --out=../FINAL_EP08_PETIR.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=4 --concurrency=1 --gl=vulkan --encoder=nvenc; hapus lock. QA −14 LUFS TP<−1, metadata ffmpeg → FINAL_EP08_PETIR_tagged.mp4, ffprobe. (6) SOCIAL_CAPTIONS.md 6 platform + Jadwal Upload (WIB) + Label Konten AI → audira_validate_social_captions; SUBTITLES.srt; NOTES.md; append_lesson DISASTERSIM; record_score final; 3 scheduled task review-cara-kerja-petir-24h/-72h/-7d (slot pertama default). (7) topik 023 di F:/AUDIRA-ALL-SKILL/channel-topics/audira-sains/topics.md: hapus '(proses)' → '[x] SAINS_ANAK/EP08'; commit repo AUDIRA-EPISODES hanya folder EP08 (git add AUDIRA_SAINS_ANAK_2026/EP08_CARA_KERJA_PETIR), commit topics.md terpisah di repo F:/AUDIRA-ALL-SKILL. Catatan: AssetModel.tsx EP08 sudah pakai SkeletonUtils.clone; GLB disalin flat ke public/models/polyfork/. Pindah sesi s2→s3 karena context guard 219k.",
+      "snapshot": {
+        "episode": "EP08_CARA_KERJA_PETIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP08",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP08_CARA_KERJA_PETIR/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-24T23:25:43.679Z",
+      "doing": "s3: render final PetirFinal (lock _render.lock dipegang EP08). Draf juri 3,83 LOLOS; fix: Charge sprite→geometri, AssetModel prop clip/clipTime (anak Idle/Walk), handle @AudiraSains, SHOTLIST.md dibuat, sfx.wav −26 LUFS.",
+      "command": "cd project; npm run render:final -- --comp=PetirFinal --out=../FINAL_EP08_PETIR.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=4 --concurrency=1 --gl=vulkan --encoder=nvenc",
+      "files": [
+        "FINAL_EP08_PETIR.mp4"
+      ],
+      "next": "hapus F:/AUDIRA-EPISODES/_render.lock; QA −14 LUFS TP<−1; metadata → FINAL_EP08_PETIR_tagged.mp4; langkah (6)–(7) handover s2",
+      "snapshot": {
+        "episode": "EP08_CARA_KERJA_PETIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP08",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP08_CARA_KERJA_PETIR/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:26:34.941Z",
+      "doing": "s3: render final PetirFinal berjalan (background, lock _render.lock dipegang EP08 sejak 2026-11-24T23:25Z). Selesai di s3: still fix (Charge sprite→geometri disc; AssetModel prop clip/clipTime → anak Idle/Walk; rumah S7 dipindah [2.6,0,-4.5]; halo bolt 12 sisi ×8; handle @AudiraSains via npm run channel; subline hook at 3.5 size 46; tag ilustrasi 38px), cover-topic.png (4s), THEME_CHECK 8/8 ya, DRAFT_SHEET, juri buta 3,83 LOLOS (L4 M3 D4 C4 Mo5 R3), docs/SHOTLIST.md, sfx.wav −26 LUFS, SUBTITLES.srt (29 cue), SOCIAL_CAPTIONS.md tervalidasi ok, stage final approved:true. G18c: VO −16.7, SFX duck −30.3, gap 13.6 LU.",
+      "command": "cd project; npm run render:final -- --comp=PetirFinal --out=../FINAL_EP08_PETIR.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=4 --concurrency=1 --gl=vulkan --encoder=nvenc --log=error --skip-channel=\"PenggantiGibranWapres.tsx sisa template, tidak dipakai PetirFinal\"",
+      "files": [
+        "FINAL_EP08_PETIR.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "SUBTITLES.srt",
+        "docs/SHOTLIST.md",
+        "draft/THEME_CHECK.md",
+        "project/src/core/assets/AssetModel.tsx",
+        "project/src/episodes/petir/fx.tsx",
+        "project/src/episodes/petir/scenes.tsx",
+        "project/src/episodes/petir/Hud.tsx"
+      ],
+      "next": "Bila FINAL_EP08_PETIR.mp4 belum ada: cek lock, jalankan perintah render lagi. Lalu: hapus F:/AUDIRA-EPISODES/_render.lock; ukur ffmpeg loudnorm (−14 LUFS, TP<−1); ffmpeg -c copy metadata (title \"Cara Kerja Petir: Awan ke Tanah dalam 1/100 Detik\", artist \"AUDIRA (Agus Dwi R.)\", copyright \"© 2026 AUDIRA - Agus Dwi R. All rights reserved.\", comment \"AUDIRA-cara-kerja-petir-EP08 | audira.my.id\", date 2026-11-25) → FINAL_EP08_PETIR_tagged.mp4, ffprobe; record_score final (jury skor draf sebagai dasar); NOTES.md (pola EP09: worked/failed/fix/teknis/jadwal review); append_lesson DISASTERSIM (failed: awan puff matte terbaca plastik; fix: sprite + AO = kotak hitam → geometri; fix: GLB ber-rig T-pose → AssetModel clip); 3 scheduled task review-cara-kerja-petir-24h (2026-11-27T19:00+07:00) / -72h (2026-11-29T19:00+07:00) / -7d (2026-12-03T19:00+07:00); topik 023 di F:/AUDIRA-ALL-SKILL/channel-topics/audira-sains/topics.md tanpa (proses); hapus project/out/s* still sementara; commit hanya folder EP08 + commit topics.md terpisah.",
+      "snapshot": {
+        "episode": "EP08_CARA_KERJA_PETIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP08",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP08_CARA_KERJA_PETIR/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:27:28.774Z",
+      "doing": "s3: render final ulang (percobaan 2; percobaan 1 part 4 gagal font ERR_SOCKET_NOT_CONNECTED). SUDAH: NOTES.md, 2 lesson DISASTERSIM, 3 scheduled task review-cara-kerja-petir-24h/-72h/-7d, SOCIAL_CAPTIONS valid, SUBTITLES.srt.",
+      "command": "cd project; npm run render:final -- --comp=PetirFinal --out=../FINAL_EP08_PETIR.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=4 --concurrency=1 --gl=vulkan --encoder=nvenc --log=error --skip-channel=\"PenggantiGibranWapres.tsx sisa template, tidak dipakai PetirFinal\"",
+      "next": "Sisa saja: hapus F:/AUDIRA-EPISODES/_render.lock; ukur −14 LUFS TP<−1; metadata ffmpeg → FINAL_EP08_PETIR_tagged.mp4 (title \"Cara Kerja Petir: Awan ke Tanah dalam 1/100 Detik\", comment \"AUDIRA-cara-kerja-petir-EP08 | audira.my.id\", date 2026-11-25), ffprobe; record_score final judge jury (skor draf 4/3/4/4/5/3); update stage final+delivery done; topik 023 audira-sains/topics.md tanpa (proses); hapus project/out/s s2 s3; commit folder EP08 saja + commit topics.md terpisah di F:/AUDIRA-ALL-SKILL.",
+      "snapshot": {
+        "episode": "EP08_CARA_KERJA_PETIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP08",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP08_CARA_KERJA_PETIR/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:27:43.230Z",
+      "doing": "s3 berhenti di context guard 216k saat render final percobaan 2 berjalan di background sesi s3 (log F:/temp/claude/4b963ae6b9cd5ff7/9e553809-6047-4c7c-b601-72afc6a7fdc3/scratchpad/render2.log). Lock _render.lock dipegang EP08 sejak 2026-11-24T23:25Z. SUDAH: NOTES.md, lesson, 3 scheduled task, SOCIAL_CAPTIONS valid, SUBTITLES.srt, juri draf 3,83 LOLOS.",
+      "command": "cd project; npm run render:final -- --comp=PetirFinal --out=../FINAL_EP08_PETIR.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=4 --concurrency=1 --gl=vulkan --encoder=nvenc --log=error --skip-channel=\"PenggantiGibranWapres.tsx sisa template, tidak dipakai PetirFinal\"",
+      "next": "(a) Bila FINAL_EP08_PETIR.mp4 belum ada: cek proses node render masih jalan (tasklist / log render2.log berubah); bila mati/gagal, jalankan perintah render di atas di background (lock tetap milik EP08). (b) hapus F:/AUDIRA-EPISODES/_render.lock; ukur −14 LUFS TP<−1 (ffmpeg loudnorm print_format=json); metadata → FINAL_EP08_PETIR_tagged.mp4 (title \"Cara Kerja Petir: Awan ke Tanah dalam 1/100 Detik\", artist \"AUDIRA (Agus Dwi R.)\", copyright \"© 2026 AUDIRA - Agus Dwi R. All rights reserved.\", comment \"AUDIRA-cara-kerja-petir-EP08 | audira.my.id\", date 2026-11-25, -movflags +faststart+use_metadata_tags), ffprobe. (c) record_score final judge jury DISASTERSIM episode sains-anak-EP08 (4/3/4/4/5/3). (d) update stage final + delivery done. (e) topics.md baris 023 F:/AUDIRA-ALL-SKILL/channel-topics/audira-sains/topics.md: '[x] SAINS_ANAK/EP08 (proses)' → '[x] SAINS_ANAK/EP08'. (f) hapus project/out/s project/out/s2 project/out/s3. (g) git add AUDIRA_SAINS_ANAK_2026/EP08_CARA_KERJA_PETIR saja (tanpa mp4 bila .gitignore menolak) + commit; commit topics.md terpisah di F:/AUDIRA-ALL-SKILL.",
+      "snapshot": {
+        "episode": "EP08_CARA_KERJA_PETIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP08",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP08_CARA_KERJA_PETIR/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:29:48.626Z",
+      "doing": "s3 berhenti (context 225k). Render final percobaan 2 dan 3 GAGAL: part 4 lalu part 45, \"[NetworkError: A network error occurred.]\" / ERR_SOCKET_NOT_CONNECTED memuat font dari localhost:3000. Dugaan: bentrok port 3000 dengan sesi lain yang merender still bersamaan, atau terlalu banyak part paralel. Lock _render.lock SUDAH DILEPAS. Belum ada FINAL. SUDAH: NOTES.md, lesson, 3 scheduled task, SOCIAL_CAPTIONS valid, SUBTITLES.srt, juri draf 3,83 LOLOS, stage final approved:true.",
+      "command": "cd project; npm run render:final -- --comp=PetirFinal --out=../FINAL_EP08_PETIR.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=2 --concurrency=1 --gl=vulkan --encoder=nvenc --log=error --skip-channel=\"PenggantiGibranWapres.tsx sisa template, tidak dipakai PetirFinal\"",
+      "next": "(a) Ambil _render.lock (aturan batch), cek tidak ada render/stills lain jalan (port 3000); render ulang di background dengan --jobs=2 (perintah di atas). Bila gagal NetworkError lagi: cek render-final.mjs opsi port/bundle sekali, atau render tanpa paralel. (b) hapus lock; QA −14 LUFS TP<−1; metadata → FINAL_EP08_PETIR_tagged.mp4 (title \"Cara Kerja Petir: Awan ke Tanah dalam 1/100 Detik\", artist \"AUDIRA (Agus Dwi R.)\", copyright \"© 2026 AUDIRA - Agus Dwi R. All rights reserved.\", comment \"AUDIRA-cara-kerja-petir-EP08 | audira.my.id\", date 2026-11-25, -movflags +faststart+use_metadata_tags), ffprobe. (c) record_score final judge jury DISASTERSIM sains-anak-EP08 (4/3/4/4/5/3). (d) stage final + delivery done. (e) topics.md 023 F:/AUDIRA-ALL-SKILL/channel-topics/audira-sains/topics.md: '[x] SAINS_ANAK/EP08 (proses)' → '[x] SAINS_ANAK/EP08'. (f) hapus project/out/s, s2, s3. (g) git add AUDIRA_SAINS_ANAK_2026/EP08_CARA_KERJA_PETIR saja + commit; commit topics.md terpisah di F:/AUDIRA-ALL-SKILL.",
+      "snapshot": {
+        "episode": "EP08_CARA_KERJA_PETIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP08",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP08_CARA_KERJA_PETIR/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-24T23:37:27.493Z",
+      "doing": "s4: menunggu _render.lock (EP07 sejak 23:34Z). render-final.mjs dipatch: tiap worker pakai --port unik (41000+rand+i) agar tidak rebutan port 3000.",
+      "command": "cd project; npm run render:final -- --comp=PetirFinal --out=../FINAL_EP08_PETIR.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=2 --concurrency=1 --gl=vulkan --encoder=nvenc --log=error --skip-channel=\"PenggantiGibranWapres.tsx sisa template, tidak dipakai PetirFinal\"",
+      "files": [
+        "project/scripts/render-final.mjs"
+      ],
+      "next": "Setelah lock bebas: tulis lock \"EP08_CARA_KERJA_PETIR <ISO>\", render background (perintah sama, --jobs=2), hapus lock; lalu langkah (b)-(g) handover sebelumnya.",
+      "snapshot": {
+        "episode": "EP08_CARA_KERJA_PETIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP08",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP08_CARA_KERJA_PETIR/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-25T00:22:27.439Z",
+      "doing": "render final macet: 45 segmen di project/out/seg, segmen terakhir 06:29 WIB, tidak ada proses render, sesi s4 idle (cek 07:21 WIB oleh koordinator)",
+      "next": "Cek log render (project/out/*.log) cari error; perbaiki penyebab; jalankan ulang render-final (resumable dari segmen) setelah memegang F:/AUDIRA-EPISODES/_render.lock; lalu QA, tag, caption, 3 task, topik 023, commit folder EP08",
+      "snapshot": {
+        "episode": "EP08_CARA_KERJA_PETIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP08",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP08_CARA_KERJA_PETIR/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-25T00:23:51.065Z",
+      "doing": "s5: render final resume (45/60 segmen ada, 5238 frame); menunggu _render.lock (EP75 sejak 00:21Z). Caption valid, 3 task review ada.",
+      "command": "cd project; npm run render:final -- --comp=PetirFinal --out=../FINAL_EP08_PETIR.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=3 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --skip-channel=\"PenggantiGibranWapres.tsx sisa template, tidak dipakai PetirFinal\"",
+      "next": "Ambil lock, jalankan perintah (resume), hapus lock; QA −14 LUFS TP<−1; tag → FINAL_EP08_PETIR_tagged.mp4; record_score final jury DISASTERSIM sains-anak-EP08 (4/3/4/4/5/3); topik 023 hapus (proses); commit folder EP08.",
+      "snapshot": {
+        "episode": "EP08_CARA_KERJA_PETIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP08",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP08_CARA_KERJA_PETIR/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-25T00:23:51.065Z",
+      "doing": "s5: render final resume (45/60 segmen ada, 5238 frame); menunggu _render.lock (EP75 sejak 00:21Z). Caption valid, 3 task review ada.",
+      "command": "cd project; npm run render:final -- --comp=PetirFinal --out=../FINAL_EP08_PETIR.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=3 --concurrency=2 --gl=vulkan --encoder=nvenc --log=error --skip-channel=\"PenggantiGibranWapres.tsx sisa template, tidak dipakai PetirFinal\"",
+      "next": "Ambil lock, jalankan perintah (resume), hapus lock; QA −14 LUFS TP<−1; tag → FINAL_EP08_PETIR_tagged.mp4; record_score final jury DISASTERSIM sains-anak-EP08 (4/3/4/4/5/3); topik 023 hapus (proses); commit folder EP08.",
+      "snapshot": {
+        "episode": "EP08_CARA_KERJA_PETIR",
+        "topic": "Sains \"kenapa\" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi",
+        "style": "DISASTERSIM",
+        "memoryEpisode": "sains-anak-EP08",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SAINS_ANAK_2026/EP08_CARA_KERJA_PETIR/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-25T00:29:09.292Z"
+    }
+  ],
+  "session": 5,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP08 Petir · s2",
+      "at": "2026-11-24T18:26:43.447Z"
+    },
+    {
+      "no": 3,
+      "title": "EP08 Petir · s3",
+      "at": "2026-11-24T23:17:56.833Z"
+    },
+    {
+      "no": 4,
+      "title": "EP08 Petir · s4",
+      "at": "2026-11-24T23:27:43.230Z"
+    },
+    {
+      "no": 5,
+      "title": "EP08 Petir · s5",
+      "at": "2026-11-25T00:22:27.439Z"
+    }
+  ]
+}
