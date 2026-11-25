@@ -5,7 +5,11 @@ title: "Kisah di Balik Sepatu Botak Ronaldinho yang Mengubah Sepak Bola"
 hook: "Trik elastico yang ditemukan seorang bocah miskin di Brasil"
 styleCandidates: ["CINESTORY (2D)", "CHARACTERFLOW (2D)", "STORYBOOK (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul 'sepatu botak' dan hook 'elastico ditemukan bocah miskin' tidak didukung sumber (elastico ciptaan Sérgio Echigo, sepatu = iklan Nike 2005 yang ternyata CGI); kematian ayah sensitif dan versi penyebabnya berbeda antar sumber."
 ---
 
 # Kisah di Balik Sepatu Botak Ronaldinho yang Mengubah Sepak Bola

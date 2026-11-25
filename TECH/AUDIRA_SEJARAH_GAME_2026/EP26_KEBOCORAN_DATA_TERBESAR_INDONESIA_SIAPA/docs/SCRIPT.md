@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP26`)
+# Naskah — Kebocoran Data Terbesar Indonesia: Siapa yang Bertanggung Jawab?
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: tumpukan kartu SIM raksasa runtuh jadi aliran baris data ke layar forum peretas gelap; HUD counter melompat ke **1,3 MILIAR** (#2); tanda tanya besar di atas siluet tanpa wajah.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Satu koma tiga miliar data kartu SIM orang Indonesia pernah dijual di forum peretas. Penjualnya? Sampai sekarang belum terungkap pasti.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: diagram alur tiga langkah (server bocor, forum gelap, koin kripto), lalu dua papan nama teks lembaga saling memantulkan stempel "BANTAH". Tanpa logo.
 
-> <konteks singkat + "Di Audira, ...">
+> Dan ini bukan kejadian tunggal. Polanya selalu mirip: data muncul di forum gelap, dijual pakai kripto, lalu semua pihak saling bantah.
 
-## c02 — <Judul Bab 1>
+## c02 — BPJS 2021
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: rak berkas medis (kartu kesehatan generik) tersedot ke layar; callout **MEI 2021 · 279 JUTA** dan koin **0,15 BTC** (#1); satu berkas bertanda nisan kecil.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Mei 2021, data 279 juta penduduk yang diduga dari BPJS Kesehatan ditawarkan sekitar 0,15 bitcoin. Termasuk data orang yang sudah meninggal.
 
-## c03 — <Judul Bab 2>
+## c03 — Bjorka 2022
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: ponsel dengan field NIK + nomor HP terblur; avatar tanpa wajah "Bjorka" di chat Telegram generik; kartu nama pejabat (teks saja, tanpa foto) beterbangan; callout **SEPT 2022 · TIM KHUSUS** (#2, #3).
 
-> <teks narasi>
+> September 2022, akun Bjorka menjual data registrasi SIM itu, isinya NIK dan nomor HP. Lalu ia menyebar data pribadi pejabat. Pemerintah sampai membentuk tim khusus.
 
-## c04 — <Judul Bab 3>
+## c04 — Dukcapil 2023
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: kartu identitas generik dibelah jadi kolom-kolom; kolom "NAMA IBU KANDUNG" menyala merah dan tersambung garis ke ikon gembok bank; callout **JULI 2023 · 337 JUTA** + tag **RRR** (#4).
 
-> <teks narasi>
+> Juli 2023, peretas bernama RRR menawarkan 337 juta data yang diduga dari Dukcapil. Ada nama ibu kandung di sana, yang sering dipakai bank untuk verifikasi.
 
-## c05 — <Judul Bab 4>
+## c05 — PDN 2024
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: ruang server Surabaya, rak demi rak terkunci rantai merah; layar tebusan **8 JUTA DOLAR**; peta Indonesia dengan **239** titik instansi padam berurutan; tag **BRAIN CIPHER** (#5).
 
-> <teks narasi>
+> Juni 2024, giliran Pusat Data Nasional Sementara di Surabaya. Ransomware Brain Cipher mengunci datanya, minta tebusan 8 juta dolar, dan 239 instansi terganggu.
 
-## c06 — <Judul Bab 5>
+## c06 — Siapa yang bertanggung jawab
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: buku UU tebal terbuka, halaman "UU 27/2022"; timbangan dua sisi: kiri gedung lembaga (siluet) dengan callout **DENDA ≤ 2% PENDAPATAN**, kanan siluet hoodie dengan callout **PENJARA ≤ 5 TAHUN** (#7).
 
-> <teks narasi>
+> Jadi, siapa yang bertanggung jawab? Undang-Undang Pelindungan Data Pribadi tahun 2022 menunjuk dua pihak. Lembaga penyimpan data yang lalai bisa didenda sampai 2 persen pendapatan tahunan. Pencuri datanya terancam penjara sampai 5 tahun.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: kursi kosong dengan name plate teks "DIRJEN APTIKA" (#6); lalu berkas kasus bertanda "2025 · BELUM DIPASTIKAN" (#8); semua aliran data dari adegan sebelumnya menyatu jadi satu kunci gembok yang retak; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Dirjen Aptika memang mundur setelah kasus PDN. Tapi pria yang ditangkap tahun 2025 belum dipastikan Bjorka asli. Datanya sudah bocor, pertanggungjawabannya yang belum tuntas. Ini AUDIRA.
+
+## Opsi hook lain
+
+1. Nama ibu kandungmu, kunci terakhir rekening bank, pernah dijual di forum peretas. Pelakunya belum ketemu.
+2. 239 instansi pemerintah terganggu oleh satu ransomware, dan peretasnya minta tebusan 8 juta dolar.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **194 kata** ≈ **81 dtk**

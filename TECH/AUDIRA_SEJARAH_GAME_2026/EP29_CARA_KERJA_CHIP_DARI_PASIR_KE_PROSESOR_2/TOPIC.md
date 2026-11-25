@@ -5,7 +5,11 @@ title: "Cara Kerja Chip: Dari Pasir ke Prosesor 2nm"
 hook: "Miliaran transistor di ujung jari — proses pembuatan yang menakjubkan"
 styleCandidates: ["NANOFORGE (3D)", "CIRCUITFORGE (2D)", "INNERWORKS (3D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah; judul '2nm' perlu dijelaskan sebagai nama generasi, status produksi 2 nm dan rekor transistor cepat berubah (tulis per 2026-11-25)"
 ---
 
 # Cara Kerja Chip: Dari Pasir ke Prosesor 2nm

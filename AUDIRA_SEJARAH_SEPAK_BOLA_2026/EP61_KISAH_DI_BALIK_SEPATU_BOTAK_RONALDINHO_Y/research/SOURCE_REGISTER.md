@@ -1,33 +1,18 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Kisah di Balik Sepatu Botak Ronaldinho yang Mengubah Sepak Bola
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Keluarga Ronaldinho dulu tinggal di Vila Nova (Porto Alegre); saat kakaknya Roberto dikontrak Grêmio, klub membelikan rumah dua lantai dengan taman dan kolam renang | Homage from Catalonia, Justin Webster / The Guardian (The Observer), 2005 | https://www.theguardian.com/sport/2005/jun/05/football.features | 2026-11-25 | HIGH |
+| 2 | Januari 1989 ayahnya, João, kena serangan jantung saat berenang di kolam rumah itu dan meninggal beberapa hari kemudian di rumah sakit | Homage from Catalonia, Justin Webster / The Guardian, 2005 | https://www.theguardian.com/sport/2005/jun/05/football.features | 2026-11-25 | HIGH |
+| 3 | Umur 7, ayahnya memaksa dia main hanya dua sentuhan; Ronaldinho menangis, tapi kini mengaku paham maksudnya | Homage from Catalonia, Justin Webster / The Guardian, 2005 | https://www.theguardian.com/sport/2005/jun/05/football.features | 2026-11-25 | HIGH |
+| 4 | Tumbuh di sepak bola pantai dan futsal; di satu laga mencetak semua gol dalam kemenangan 23-0 | Noughty Boys: Ronaldinho was a magician, Carl Anka / BBC Three, 2018 | https://www.bbc.co.uk/bbcthree/article/b3cf523a-62e5-40af-91c5-49185d3f1579 | 2026-11-25 | HIGH |
+| 5 | Iklan Nike 2005: Ronaldinho diberi sepatu putih-emas, menembak mistar dan bola kembali ke kakinya; ditonton sejuta kali di YouTube; belakangan terungkap efek komputer | Noughty Boys: Ronaldinho was a magician, Carl Anka / BBC Three, 2018 | https://www.bbc.co.uk/bbcthree/article/b3cf523a-62e5-40af-91c5-49185d3f1579 | 2026-11-25 | HIGH |
+| 6 | Di sebagian Afrika, terutama Nigeria, elastico dijuluki "The Gaucho" untuk menghormati Ronaldinho | Noughty Boys: Ronaldinho was a magician, Carl Anka / BBC Three, 2018 | https://www.bbc.co.uk/bbcthree/article/b3cf523a-62e5-40af-91c5-49185d3f1579 | 2026-11-25 | HIGH |
+| 7 | 19 Des 2005: Pemain Terbaik Dunia FIFA kedua kali berturut-turut, 960 poin (Lampard 429, Eto'o 190) | Ronaldinho wins world award again, BBC Sport, 2005 | https://news.bbc.co.uk/sport2/hi/football/4486166.stm | 2026-11-25 | HIGH |
+| 8 | Real Madrid 0-3 Barcelona (19 Nov 2005): fans Real Madrid bertepuk tangan untuk Ronaldinho di Bernabéu | Real Madrid 0 Barcelona 3: Bernabeu forced to pay homage as Ronaldinho soars above the galacticos, The Independent, 2005 | https://www.independent.co.uk/sport/football/european/real-madrid-0-barcelona-3-bernabeu-forced-to-pay-homage-as-ronaldinho-soars-above-the-galacticos-516202.html | 2026-11-25 | HIGH |
+| 9 | Lahir 21 Maret 1980 di Porto Alegre; ayah João de Assis Moreira pekerja galangan kapal; ayah meninggal saat dia 8 tahun; 23 gol dalam laga 23-0 di umur 13; belajar elastico dari video idolanya Rivelino | Ronaldinho, Wikipedia | https://en.wikipedia.org/wiki/Ronaldinho | 2026-11-25 | MEDIUM |
+| 10 | Elastico/flip flap diciptakan Sérgio Echigo; Rivelino mempelajarinya 1964 di tim muda Corinthians dan memamerkannya di Piala Dunia 1970 | Flip flap (association football), Wikipedia | https://en.wikipedia.org/wiki/Flip_flap_(association_football) | 2026-11-25 | MEDIUM |
+| 11 | Sérgio Echigo (lahir 1945), pemain Brasil keturunan Jepang, pencipta elastico, rekan Rivelino di Corinthians 1964 | Sérgio Echigo, Wikipedia | https://en.wikipedia.org/wiki/S%C3%A9rgio_Echigo | 2026-11-25 | MEDIUM |
+| 12 | Ballon d'Or 2005 diberikan ke Ronaldinho pada 28 Nov 2005 | 2005 Ballon d'Or, Wikipedia | https://en.wikipedia.org/wiki/2005_Ballon_d%27Or | 2026-11-25 | MEDIUM |

@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP27`)
+# Naskah — AR Glasses 2025: Masa Depan yang Sudah Dekat
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **14** · estimasi **6 dtk**
+- Visual: POV orang memakai kacamata di trotoar kota; gelembung pesan muncul melayang di lensa. Ponsel di saku tetap gelap. HUD tanggal "SEP 2025" berdenyut di atas.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Pesan muncul di depan matamu, tanpa ponsel. Kacamata ini sudah dijual sejak September 2025.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: transisi rewind ke lab komputer era 1960-an, monitor CRT hijau; sebuah head-mounted display besar di atas kepala figur tanpa wajah, kubus wireframe melayang di depan mata. HUD "1968 · IVAN SUTHERLAND".
 
-> <konteks singkat + "Di Audira, ...">
+> Tapi mimpinya jauh lebih tua. Tahun 1968, Ivan Sutherland sudah membuat layar yang dipasang di kepala, menampilkan grafis komputer di atas dunia nyata.
 
-## c02 — <Judul Bab 1>
+## c02 — Google Glass
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: kacamata generik dengan prisma kecil di satu sisi berputar di atas meja kaca; label harga "$1.500" menempel; ikon gembok privasi dan tanda tanya bermunculan; layar redup dengan stempel "2015 · DIHENTIKAN". HUD "2013".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tahun 2013, Google mencoba lewat Google Glass. Harganya 1.500 dolar, dan banyak orang langsung khawatir soal privasi. Awal 2015, programnya dihentikan.
 
-## c03 — <Judul Bab 2>
+## c03 — Orion, prototipe yang tak dijual
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: ruang tamu gelap; kacamata tebal dengan hologram jendela dan bola dunia melayang di ruangan. Busur 70° tergambar di depan mata. Lalu kalkulator biaya naik ke "±$10.000 / unit", kacamata masuk kotak kaca bertuliskan "PROTOTIPE".
 
-> <teks narasi>
+> Tahun 2024, Meta memamerkan Orion. Bidang pandangnya 70 derajat, hologram bisa melayang di ruangan. Masalahnya, satu unit butuh biaya sekitar 10.000 dolar. Orion pun tidak pernah dijual.
 
-## c04 — <Judul Bab 3>
+## c04 — Ray-Ban Display masuk toko
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: etalase toko kacamata, rak berjajar; satu kacamata hitam generik (tanpa logo) diangkat ke spotlight. Kotak layar kecil menyala di sisi lensa lalu padam. HUD "17 SEP 2025" dan label harga "$799".
 
-> <teks narasi>
+> Yang akhirnya dijual justru versi lebih sederhana. Tanggal 17 September 2025, Meta mengumumkan Ray-Ban Display, harganya 799 dolar. Layarnya kecil, di sisi pandangan, dan cuma menyala saat dibutuhkan.
 
-## c05 — <Judul Bab 4>
+## c05 — Gelang pembaca otot
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: close-up pergelangan tangan dengan gelang; garis sinyal otot berdenyut dari jari ke gelang; jari mencubit dan menu melingkar terbuka di lensa. Counter HUD naik ke "±200.000 PESERTA".
 
-> <teks narasi>
+> Kendalinya juga aneh. Gelang Neural Band membaca sinyal otot di pergelangan. Cukup cubit jari, menu terbuka. Meta mengembangkannya dari riset dengan hampir 200.000 peserta.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan: dekat, tapi belum penuh
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **35** · estimasi **15 dtk**
+- Visual: kacamata diurai (exploded view) dengan kartu spesifikasi "600×600 px", "5.000 nits", "69 g"; lalu perbandingan dua busur bidang pandang 70° (Orion) vs 20° (Ray-Ban Display) berdampingan. Penutup adegan: logo teks generik "Android XR" di papan blueprint kacamata dan headset.
 
-> <teks narasi>
+> Layarnya 600 kali 600 piksel, terang sampai 5.000 nits, dan bobotnya 69 gram. Tapi ini belum AR penuh, karena bidang pandangnya baru 20 derajat. Google pun sudah menyiapkan Android XR, khusus untuk kacamata dan headset.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **10 dtk**
+- Visual: kembali ke trotoar kota saat golden hour; garis waktu 1968 → 2013 → 2024 → 2025 menyala satu per satu di langit; lensa kacamata memantulkan papan HUD "AUDIRA"; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi kacamata AR sejati belum tiba, tapi langkah pertamanya sudah ada di toko. Ikuti AUDIRA, karena layar berikutnya mungkin menempel di wajahmu.
+
+## Opsi hook lain
+
+1. Tahun 1968 kacamata ini cuma mimpi di lab. Sekarang harganya 799 dolar.
+2. Meta punya kacamata AR seharga 10.000 dolar per unit, dan sengaja tidak menjualnya.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **194 kata** ≈ **78–86 dtk**

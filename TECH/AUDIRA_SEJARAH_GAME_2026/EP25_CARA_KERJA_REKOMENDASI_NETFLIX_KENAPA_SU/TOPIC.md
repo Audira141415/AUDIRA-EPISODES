@@ -5,7 +5,11 @@ title: "Cara Kerja Rekomendasi Netflix: Kenapa Susah Berhenti Nonton"
 hook: "Algoritma yang sudah tahu tontonan berikutnya sebelum kamu memilih"
 styleCandidates: ["DEVFORGE (2D)", "DATAPHYSICAL (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook asli melebih-lebihkan (algoritma menebak peluang, bukan tahu); angka 80% dari WIRED 2017 bukan rilis resmi; hindari logo Netflix dan wajah aktor nyata."
 ---
 
 # Cara Kerja Rekomendasi Netflix: Kenapa Susah Berhenti Nonton

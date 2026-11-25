@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sejarah game yang viral dan jarang diketahui`
+# Source Register — Cara Kerja Rekomendasi Netflix: Kenapa Susah Berhenti Nonton
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Netflix memperkirakan peluang kamu menikmati sebuah judul dari interaksi (riwayat tonton, rating), anggota lain dengan selera mirip, dan info judul (genre, aktor, tahun rilis); juga jam menonton, bahasa, perangkat, dan berapa lama judul ditonton. Data demografis (umur, jenis kelamin) tidak dipakai. | How Netflix's Recommendations System Works, Netflix Help Center, diakses 2026 | https://help.netflix.com/en/node/100639 | 2026-11-25 | HIGH |
+| 2 | Netflix Prize mulai 2 Oktober 2006; hadiah utama US$1.000.000 diberikan 21 September 2009 kepada tim BellKor's Pragmatic Chaos yang mengalahkan algoritma Netflix (Cinematch) 10,06%. Data latih: 100.480.507 rating dari 480.189 pengguna untuk 17.770 film. | Netflix Prize, Wikipedia, diakses 2026 | https://en.wikipedia.org/wiki/Netflix_Prize | 2026-11-25 | MEDIUM |
+| 3 | Per 2012, 75% dari yang ditonton orang di Netflix berasal dari suatu bentuk rekomendasi. Metode pemenang Netflix Prize diuji offline, tetapi tambahan akurasinya dinilai tidak sebanding dengan upaya rekayasa untuk dipasang di produksi. Progress Prize 2007: tim Korbell, peningkatan 8,43%, gabungan 107 algoritma. | Netflix Recommendations: Beyond the 5 stars (Part 1), Xavier Amatriain & Justin Basilico, Netflix Tech Blog, 6 Apr 2012 (arsip Wayback) | https://web.archive.org/web/2016/http://techblog.netflix.com/2012/04/netflix-recommendations-beyond-5-stars.html | 2026-11-25 | HIGH |
+| 4 | Gambar sampul (artwork) dipersonalisasi per anggota. Contoh dari Netflix: penggemar film romantis bisa diberi artwork Good Will Hunting bergambar Matt Damon & Minnie Driver, penggemar komedi diberi artwork Robin Williams. Sinyal yang dipakai termasuk judul yang diputar, genre, negara, bahasa, perangkat, jam, dan hari. | Artwork Personalization at Netflix, Ashok Chandrashekar, Fernando Amat, Justin Basilico, Tony Jebara, Netflix TechBlog, 7 Des 2017 | https://netflixtechblog.com/artwork-personalization-c589f074ad76 | 2026-11-25 | HIGH |
+| 5 | Algoritma rekomendasi Netflix diperbaiki lewat A/B test yang berfokus pada retensi anggota dan engagement jangka menengah, ditambah eksperimen offline. | The Netflix Recommender System: Algorithms, Business Value, and Innovation, Carlos A. Gomez-Uribe & Neil Hunt, ACM TMIS 6(4), 2015, DOI 10.1145/2843948 (abstrak dibaca via arsip Wayback) | https://doi.org/10.1145/2843948 | 2026-11-25 | HIGH |
+| 6 | Lebih dari 80% acara TV yang ditonton di Netflix ditemukan lewat sistem rekomendasi (per 2017). Penonton dibagi ke "taste communities", jumlahnya "a couple of thousand"; satu orang bisa masuk beberapa kelompok (kutipan Todd Yellin, VP Product Innovation Netflix). | This is how Netflix's top-secret recommendation system works, Libby Plummer, WIRED, 22 Agu 2017 | https://www.wired.com/story/how-do-netflixs-algorithms-work-machine-learning-helps-to-predict-what-viewers-will-like/ | 2026-11-25 | MEDIUM |
+| 7 | Netflix punya setelan profil "Autoplay Next Episode" yang otomatis memutar episode berikutnya dan bisa dimatikan pengguna. | How to autoplay the next episode, Netflix Help Center, diakses 2026 | https://help.netflix.com/en/node/121518 | 2026-11-25 | HIGH |
+| 8 | Setelan "Autoplay previews" (cuplikan otomatis saat menjelajah) bisa dinyalakan atau dimatikan per profil di Playback settings. | How to turn autoplay previews on or off, Netflix Help Center, diakses 2026 | https://help.netflix.com/en/node/2102 | 2026-11-25 | HIGH |

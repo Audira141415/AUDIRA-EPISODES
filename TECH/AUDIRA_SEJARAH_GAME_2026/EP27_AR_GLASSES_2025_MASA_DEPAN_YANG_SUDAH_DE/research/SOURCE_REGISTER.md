@@ -1,33 +1,17 @@
-# SOURCE_REGISTER — `Sejarah game yang viral dan jarang diketahui`
+# Source Register — AR Glasses 2025: Masa Depan yang Sudah Dekat
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | 1968: Ivan Sutherland mempublikasikan layar tiga dimensi yang dipasang di kepala (head-mounted display), dipresentasikan di AFIPS Fall Joint Computer Conference, 9–11 Desember 1968 | "A head-mounted three dimensional display", Ivan E. Sutherland, AFIPS Fall Joint Computer Conference (ACM), 1968 (metadata via Crossref) | https://doi.org/10.1145/1476589.1476686 | 2026-11-25 | HIGH |
+| 2 | Istilah "augmented reality" dipakai di makalah Thomas Caudell & David Mizell (Boeing) tentang head-up display untuk proses manufaktur, 1992 | "Augmented reality: an application of heads-up display technology to manual manufacturing processes", Caudell & Mizell, HICSS (IEEE), 1992 (metadata via Crossref) | https://doi.org/10.1109/HICSS.1992.183317 | 2026-11-25 | HIGH |
+| 3 | Google Glass Explorer Edition dijual 1.500 dolar AS; pengiriman mulai 16 April 2013; 15 Januari 2015 Google menghentikan program Explorer; kritik soal harga dan privasi; penjualan Enterprise Edition dihentikan 15 Maret 2023 | "Google Glass", Wikipedia, diakses 2026 | https://en.wikipedia.org/wiki/Google_Glass | 2026-11-25 | MEDIUM |
+| 4 | Meta memperkenalkan Orion (nama kode Project Nazare) September 2024 sebagai "kacamata AR paling canggih"; tidak dijual ke konsumen, hanya untuk karyawan Meta dan audiens eksternal terpilih | "Introducing Orion, Our First True Augmented Reality Glasses", Meta Newsroom, 2024 | https://about.fb.com/news/2024/09/introducing-orion-our-first-true-augmented-reality-glasses/ | 2026-11-25 | HIGH |
+| 5 | Orion punya bidang pandang 70 derajat; lensa silicon carbide; biaya produksi sekitar 10.000 dolar AS per unit, alasan utama tidak dijual | "Hands-on with Orion, Meta's first pair of AR glasses", Alex Heath, The Verge, 25 Sep 2024 | https://www.theverge.com/24253908/meta-orion-ar-glasses-demo-mark-zuckerberg-interview | 2026-11-25 | HIGH |
+| 6 | Meta Ray-Ban Display diumumkan 17 September 2025 di Connect; mulai 799 dolar AS termasuk Meta Neural Band; dijual di AS mulai 30 September 2025; layar diletakkan di sisi pandangan, tidak menyala terus | "Meta Ray-Ban Display: AI Glasses With an EMG Wristband", Meta Newsroom, 2025 | https://about.fb.com/news/2025/09/meta-ray-ban-display-ai-glasses-emg-wristband/ | 2026-11-25 | HIGH |
+| 7 | Meta Neural Band = gelang EMG yang membaca sinyal otot jadi perintah; hasil riset dengan hampir 200.000 peserta; baterai hingga 18 jam, IPX7 | "Meta Ray-Ban Display: AI Glasses With an EMG Wristband", Meta Newsroom, 2025 | https://about.fb.com/news/2025/09/meta-ray-ban-display-ai-glasses-emg-wristband/ | 2026-11-25 | HIGH |
+| 8 | Layar Ray-Ban Display 600 x 600 piksel, bidang pandang 20 derajat, kecerahan hingga 5.000 nits; baterai ±6 jam pemakaian campuran; bobot 69 gram | "Meta Ray-Ban Display hands-on", Victoria Song, The Verge, 18 Sep 2025 | https://www.theverge.com/news/779566/meta-ray-ban-display-hands-on-smart-glasses-price-battery-specs | 2026-11-25 | HIGH |
+| 9 | Google mengumumkan Android XR 12 Desember 2024, bersama Samsung dan Qualcomm, platform untuk headset dan kacamata | "Android XR: The Gemini era comes to headsets and glasses", Shahram Izadi, Google Blog, 2024 | https://blog.google/products/android/android-xr/ | 2026-11-25 | HIGH |
+| 10 | Android XR diluncurkan 20 Oktober 2025 (headset Samsung Galaxy XR); kacamata Android XR masih dikembangkan | "Android XR", Wikipedia, diakses 2026 | https://en.wikipedia.org/wiki/Android_XR | 2026-11-25 | MEDIUM |
+| 11 | Garis waktu AR: 1968 HMD see-through Sutherland; 1990 istilah AR diatribusikan ke Caudell; 1992 Virtual Fixtures (Louis Rosenberg); 2024 Meta Orion | "Augmented reality", Wikipedia, diakses 2026 | https://en.wikipedia.org/wiki/Augmented_reality | 2026-11-25 | MEDIUM |

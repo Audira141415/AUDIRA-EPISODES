@@ -1,33 +1,17 @@
-# SOURCE_REGISTER — `Sejarah game yang viral dan jarang diketahui`
+# Source Register — Kebocoran Data Terbesar Indonesia: Siapa yang Bertanggung Jawab?
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Mei 2021: data 279 juta penduduk diduga dari BPJS Kesehatan dijual di forum online seharga 0,15 bitcoin (± Rp87 juta), termasuk data orang yang sudah meninggal | BPJS Kesehatan Telusuri Dugaan Kebocoran Data Milik 279 Juta Penduduk Indonesia, Liputan6.com, 20 Mei 2021 | https://www.liputan6.com/tekno/read/4562464/bpjs-kesehatan-telusuri-dugaan-kebocoran-data-milik-279-juta-penduduk-indonesia | 2026-11-25 | MEDIUM |
+| 2 | Akhir Agustus/awal September 2022: akun Bjorka menjual 1,3 miliar data registrasi kartu SIM (87 GB; NIK, nomor HP, operator, tanggal registrasi) ± Rp743 juta; Kominfo membantah data berasal dari Kominfo | 1,3 Miliar Data SIM Card RI Diduga Bocor, kumparanTECH, 1 Sep 2022 | https://kumparan.com/kumparantech/1-3-miliar-data-sim-card-ri-diduga-bocor-nik-hingga-nomor-hp-1ym2UVZuJhe | 2026-11-25 | MEDIUM |
+| 3 | September 2022: Bjorka menyebar data pribadi pejabat (doxing) lewat Telegram; pemerintah membentuk tim khusus | Respons Pemerintah Bentuk Tim Khusus Setelah Miliaran Data Dibobol "Hacker" Bjorka, Kompas.com, 13 Sep 2022 | https://nasional.kompas.com/read/2022/09/13/06230641/respons-pemerintah-bentuk-tim-khusus-setelah-miliaran-data-dibobol-hacker | 2026-11-25 | HIGH |
+| 4 | Juli 2023: peretas "RRR" menawarkan 337 juta data diduga dari Dukcapil Kemendagri di BreachForums; memuat NIK, tanggal lahir, dan nama ibu kandung yang dipakai verifikasi perbankan | Ratusan juta data Dukcapil Kemendagri diduga bocor, pakar siber: "Ini peretasan paling parah", BBC News Indonesia, 18 Jul 2023 | https://www.bbc.com/indonesia/articles/c51v25916zlo | 2026-11-25 | HIGH |
+| 5 | Juni 2024: PDNS 2 Surabaya diserang ransomware Brain Cipher; tebusan 8 juta dolar AS (± Rp131 miliar); 239 instansi terganggu (30 K/L, 15 provinsi, 148 kabupaten, 48 kota) | Menkominfo jelaskan kronologi serangan siber PDNS 2, ANTARA News, 27 Jun 2024 | https://www.antaranews.com/berita/4171167/menkominfo-jelaskan-kronologi-serangan-siber-pdns-2 | 2026-11-25 | HIGH |
+| 6 | 4 Juli 2024: Dirjen Aptika Kominfo Semuel A. Pangerapan mundur, menyatakan bertanggung jawab atas serangan PDN | Dirjen Aptika Kominfo Semuel Mundur: Kasus PDN Itu Tanggung Jawab Saya, kumparanNEWS, 4 Jul 2024 | https://kumparan.com/kumparannews/dirjen-aptika-kominfo-semuel-mundur-kasus-pdn-itu-tanggung-jawab-saya-233uI3s20Q9/full | 2026-11-25 | MEDIUM |
+| 7 | UU No. 27/2022 tentang Pelindungan Data Pribadi ditetapkan 17 Okt 2022 (LN 2022/196); denda administratif maks 2% pendapatan/penerimaan tahunan (Pasal 57); memperoleh data pribadi orang lain secara melawan hukum: penjara maks 5 tahun dan/atau denda maks Rp5 miliar (Pasal 67 ayat 1); masa penyesuaian 2 tahun (Pasal 74); lembaga pelaksana ditetapkan Presiden (Pasal 58) | UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi, JDIH BPK RI, 2022 | https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022 | 2026-11-25 | HIGH |
+| 8 | 23 Sep 2025: Polda Metro Jaya menangkap WFT di Minahasa atas dugaan akses ilegal dan pemerasan bank (klaim 4,9 juta data nasabah); polisi belum bisa memastikan ia Bjorka asli 2022 | Police Uncertain If Teen Suspect Is the Real Hacker "Bjorka", Jakarta Globe, 4 Okt 2025 | https://jakartaglobe.id/news/police-uncertain-if-teen-suspect-is-the-real-hacker-bjorka | 2026-11-25 | MEDIUM |
+| 9 | Identitas asli Bjorka belum diketahui pasti; mengaku tinggal di Warsawa; tidak ada bukti resmi yang mengonfirmasi individu tertentu sebagai Bjorka | Bjorka (peretas), Wikipedia bahasa Indonesia, diakses 2026 | https://id.wikipedia.org/wiki/Bjorka_(peretas) | 2026-11-25 | MEDIUM |
+| 10 | Kasus lain: Tokopedia 91 juta akun (Mei 2020), IndiHome 26,7 juta (Agu 2022), MyPertamina 44 juta (Nov 2022), BSI 15 juta (Mei 2023), NPWP 6 juta (2024) | Kebocoran data di Indonesia, Wikipedia bahasa Indonesia, diakses 2026 | https://id.wikipedia.org/wiki/Kebocoran_data_di_Indonesia | 2026-11-25 | MEDIUM |
+| 11 | PDNS dibangun bersama Telkom dan Lintasarta sebagai solusi sementara; Feb 2024 menampung data 400 institusi; Komisi I DPR menyoroti tidak adanya cadangan data | Pusat Data Nasional, Wikipedia bahasa Indonesia, diakses 2026 | https://id.wikipedia.org/wiki/Pusat_Data_Nasional | 2026-11-25 | MEDIUM |

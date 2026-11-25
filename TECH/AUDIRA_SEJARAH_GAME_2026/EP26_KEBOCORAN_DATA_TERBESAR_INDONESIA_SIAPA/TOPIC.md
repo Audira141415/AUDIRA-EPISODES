@@ -5,7 +5,11 @@ title: "Kebocoran Data Terbesar Indonesia: Siapa yang Bertanggung Jawab?"
 hook: "Ratusan juta data warga bocor — dan pelakunya masih bebas"
 styleCandidates: ["BROADCASTFORGE (2D)", "GLITCHFORGE (2D)", "CYBERFORGE (3D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Rule 15 (topik hukum/berita): tanpa wajah pejabat dan logo lembaga; semua asal data berstatus diduga; status kasus Bjorka (tersangka 2025) bisa berubah."
 ---
 
 # Kebocoran Data Terbesar Indonesia: Siapa yang Bertanggung Jawab?

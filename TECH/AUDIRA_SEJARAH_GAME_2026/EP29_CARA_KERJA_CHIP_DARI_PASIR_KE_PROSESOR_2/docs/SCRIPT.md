@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP29`)
+# Naskah — Cara Kerja Chip: Dari Pasir ke Prosesor 2nm
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **11** · estimasi **5 dtk**
+- Visual: Makro segenggam pasir kuarsa di telapak tangan, butirannya tersedot naik dan memadat jadi die chip berkilau. HUD: "PASIR → PROSESOR".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Segenggam pasir ini bisa berubah jadi otak laptop kamu. Begini perjalanannya.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **14** · estimasi **6 dtk**
+- Visual: Batu kuarsa dan butir pasir diperbesar, label atom Si menyala. Kontras: butir kotor (bintik pengotor merah) vs butir bersih.
 
-> <konteks singkat + "Di Audira, ...">
+> Pasir dan batu kuarsa kaya silikon. Masalahnya, chip butuh silikon yang nyaris tanpa kotoran.
 
-## c02 — <Judul Bab 1>
+## c02 — Pemurnian
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Reaktor kimia transparan: silikon kasar berubah jadi gas, gas naik di kolom penyulingan, lalu mengendap di batang polisilikon abu mengilap. HUD kinetik: "99,9999%".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Jadi silikon kasar dimurnikan lewat proses Siemens. Diubah jadi gas, disuling, lalu diurai lagi sampai kemurniannya 99,9999 persen.
 
-## c03 — <Judul Bab 2>
+## c03 — Kristal tunggal dan wafer
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Cawan kuarsa berisi silikon cair oranye, benih kristal berputar dan ditarik naik membentuk batang silinder panjang. Gergaji mengiris batang jadi cakram cermin. HUD: "1.425 °C", "≤ 2 m · ratusan kg", "300 mm".
 
-> <teks narasi>
+> Silikon murni itu dilelehkan di suhu 1.425 derajat Celsius. Kristal benih dicelupkan, diputar, lalu ditarik pelan. Hasilnya batang kristal tunggal sepanjang sampai dua meter. Batang ini diiris tipis jadi wafer selebar 300 milimeter.
 
-## c04 — <Judul Bab 3>
+## c04 — Cahaya EUV
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **37** · estimasi **16 dtk**
+- Visual: Interior mesin EUV (tanpa logo): tetesan timah jatuh, laser memipihkan lalu menguapkannya jadi plasma ungu, cahaya memantul di deretan cermin berlapis dan mendarat di wafer membentuk pola sirkuit. HUD: "50.000×/detik", "13,5 nm".
 
-> <teks narasi>
+> Lalu bagian paling gila. Mesin EUV buatan ASML menembakkan laser ke tetesan timah cair, lima puluh ribu kali tiap detik. Timahnya jadi plasma yang memancarkan cahaya 13,5 nanometer. Cermin berlapis memantulkannya untuk mencetak pola sirkuit ke wafer.
 
-## c05 — <Judul Bab 4>
+## c05 — Gedung pencakar langit mini
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Penampang chip naik lapis demi lapis seperti gedung kaca, robot cleanroom memindahkan wafer antar mesin, kalender berlari. HUD: "≤ 100 lapisan", "ratusan langkah", "≤ 4 bulan".
 
-> <teks narasi>
+> Proses ini diulang lapis demi lapis. Chip modern bisa punya sampai seratus lapisan yang harus pas presisi. Dari desain ke produksi massal bisa empat bulan.
 
-## c06 — <Judul Bab 5>
+## c06 — Arti "2 nanometer"
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Penggaris nano menunjuk transistor, label "2 nm" dicoret jadi "nama generasi". Zoom ke transistor nanosheet: lembaran saluran bertumpuk dibungkus gerbang dari segala sisi. HUD: "TSMC N2 · produksi massal 4Q 2025".
 
-> <teks narasi>
+> Terus, apa artinya 2 nanometer? Ternyata itu nama generasi, bukan ukuran fisik transistor. TSMC mulai produksi massal 2 nanometer di akhir 2025, pakai transistor nanosheet yang gerbangnya membungkus dari segala sisi.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Kamera mundur dari transistor ke die, die masuk ke laptop yang menyala, lalu kembali ke segenggam pasir. HUD besar: "92 MILIAR transistor (M3 Max, 3 nm)". Outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Hasilnya? Apple M3 Max yang masih 3 nanometer saja sudah memuat 92 miliar transistor. Semuanya berawal dari pasir. Ikuti AUDIRA untuk teknologi berikutnya.
+
+## Opsi hook lain
+
+1. 92 miliar saklar mungil dicetak pakai cahaya, dan bahan dasarnya pasir.
+2. Chip 2 nanometer itu sebenarnya tidak berukuran 2 nanometer.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **192 kata** ≈ **77–85 dtk**
