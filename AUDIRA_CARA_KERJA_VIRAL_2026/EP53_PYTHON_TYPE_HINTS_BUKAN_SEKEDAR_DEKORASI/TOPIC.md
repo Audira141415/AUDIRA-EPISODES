@@ -5,7 +5,11 @@ title: "Python Type Hints: Bukan Sekedar Dekorasi"
 hook: "Mypy + type hints = dokumentasi yang nggak pernah basi"
 styleCandidates: ["DEVFORGE (2D)", "PRECISION (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Hook 'dokumentasi nggak pernah basi' hanya benar bila mypy dijalankan rutin; topik niche developer; rule 15 tanpa logo Python/Dropbox."
 ---
 
 # Python Type Hints: Bukan Sekedar Dekorasi

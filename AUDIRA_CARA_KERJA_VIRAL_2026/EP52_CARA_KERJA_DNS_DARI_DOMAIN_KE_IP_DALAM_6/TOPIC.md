@@ -5,7 +5,11 @@ title: "Cara Kerja DNS: Dari Domain ke IP dalam 60 Detik"
 hook: "Setiap request yang kamu buat butuh ini — dan hampir semua dev nggak paham"
 styleCandidates: ["CIRCUITFORGE (2D)", "INNERWORKS (3D)", "DATAPHYSICAL (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul \"60 Detik\" menyesatkan (lookup hitungan milidetik) dan klaim hook \"hampir semua dev nggak paham\" tanpa data; angka instance root berubah; tanpa logo ISP/operator (rule 15)."
 ---
 
 # Cara Kerja DNS: Dari Domain ke IP dalam 60 Detik

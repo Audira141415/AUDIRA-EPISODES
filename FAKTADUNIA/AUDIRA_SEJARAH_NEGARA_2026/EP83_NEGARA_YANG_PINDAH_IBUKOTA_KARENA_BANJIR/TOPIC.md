@@ -5,7 +5,11 @@ title: "Negara yang Pindah Ibukota karena Banjir"
 hook: "Bangladesh, Myanmar, dan Nigeria memindahkan pusat pemerintahan demi kelangsungan hidup"
 styleCandidates: ["NEGERI (3D)", "HISTORYMAP (2D)", "CHRONICLE (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook/judul asal keliru (Bangladesh/Myanmar/Nigeria bukan karena banjir); naskah sudah dikoreksi ke Belize + Indonesia, status IKN perlu dicek ulang sebelum VO."
 ---
 
 # Negara yang Pindah Ibukota karena Banjir

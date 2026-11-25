@@ -5,7 +5,11 @@ title: "HTTP Status Code yang Sering Disalahgunakan Developer"
 hook: "200 untuk semua response? Ada yang lebih salah dari itu"
 styleCandidates: ["CERDIK (2D)", "BONGKAR (2D)", "ARCADECRT (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "rendah; hook 'lebih salah' opini editorial dan 200-untuk-error sah di GraphQL, rule 15 aman (tanpa logo browser/organisasi)"
 ---
 
 # HTTP Status Code yang Sering Disalahgunakan Developer

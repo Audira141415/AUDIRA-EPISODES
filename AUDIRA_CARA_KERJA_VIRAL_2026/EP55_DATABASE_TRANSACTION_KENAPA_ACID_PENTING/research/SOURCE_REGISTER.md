@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Cara kerja benda dan fenomena viral yang jarang diketahui`
+# Source Register — Database Transaction: Kenapa ACID Penting dan Kapan Bisa Diabaikan
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Akronim ACID (Atomicity, Consistency, Isolation, Durability) diperkenalkan Theo Härder dan Andreas Reuter tahun 1983 sebagai prinsip pemulihan database berbasis transaksi | Principles of transaction-oriented database recovery, T. Haerder & A. Reuter, ACM Computing Surveys, 1983 | https://doi.org/10.1145/289.291 | 2026-11-25 | HIGH |
+| 2 | Transaksi menggabungkan beberapa langkah jadi satu operasi all-or-nothing; contoh transfer bank: debit satu rekening dan kredit rekening lain harus terjadi semua atau tidak sama sekali; keadaan antara tidak terlihat oleh transaksi lain | PostgreSQL Documentation §3.4 Transactions, PostgreSQL Global Development Group, 2025 (versi current) | https://www.postgresql.org/docs/current/tutorial-transactions.html | 2026-11-25 | HIGH |
+| 3 | Write-Ahead Logging: perubahan file data baru boleh ditulis setelah catatan log-nya disimpan permanen, sehingga setelah crash database bisa dipulihkan dari log (REDO) | PostgreSQL Documentation §28.3 Write-Ahead Logging (WAL), PostgreSQL Global Development Group, 2025 (versi current) | https://www.postgresql.org/docs/current/wal-intro.html | 2026-11-25 | HIGH |
+| 4 | BASE (Basically Available, Soft state, Eventually consistent) diajukan sebagai alternatif ACID untuk sistem tersebar skala besar: mengorbankan konsistensi seketika demi ketersediaan | BASE: An Acid Alternative, D. Pritchett, ACM Queue, 2008 | https://doi.org/10.1145/1394127.1394128 | 2026-11-25 | HIGH |
+| 5 | Teorema CAP dibuktikan formal: layanan web tersebar tidak bisa sekaligus konsisten, selalu tersedia, dan tahan partisi jaringan | Brewer's conjecture and the feasibility of consistent, available, partition-tolerant web services, S. Gilbert & N. Lynch, ACM SIGACT News, 2002 | https://doi.org/10.1145/564585.564601 | 2026-11-25 | HIGH |
+| 6 | Definisi tiap sifat ACID: atomicity = satu unit sukses/gagal total walau mati listrik/crash; consistency = hanya data valid sesuai aturan (constraint) yang masuk; isolation = eksekusi bersamaan menghasilkan keadaan sama seperti berurutan; durability = transaksi yang sudah commit tetap ada walau sistem gagal. Gray lebih dulu menamai A, C, D; IBM IMS mendukung transaksi ACID sejak 1973 | ACID, Wikipedia (dengan kutipan Haerder-Reuter dan Gray-Reuter), 2026 | https://en.wikipedia.org/wiki/ACID | 2026-11-25 | MEDIUM |
+| 7 | Eventual consistency: bila tidak ada update baru, semua pembacaan pada akhirnya mengembalikan nilai terakhir; dipakai luas demi ketersediaan tinggi | Eventual consistency, Wikipedia, 2026 | https://en.wikipedia.org/wiki/Eventual_consistency | 2026-11-25 | MEDIUM |
+| 8 | Di MongoDB operasi pada satu dokumen bersifat atomik; transaksi multi-dokumen tersedia tetapi biayanya lebih mahal dan tidak menggantikan desain skema yang baik (replica set FCV ≥ 4.0, sharded ≥ 4.2) | Transactions, MongoDB Manual, MongoDB Inc., 2026 | https://www.mongodb.com/docs/manual/core/transactions/ | 2026-11-25 | MEDIUM |

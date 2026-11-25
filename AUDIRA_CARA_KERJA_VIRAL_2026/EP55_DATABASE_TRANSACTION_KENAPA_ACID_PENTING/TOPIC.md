@@ -5,7 +5,11 @@ title: "Database Transaction: Kenapa ACID Penting dan Kapan Bisa Diabaikan"
 hook: "Tanpa paham ini, data corruption tinggal menunggu waktu"
 styleCandidates: ["DATAPHYSICAL (2D)", "PRECISION (2D)", "CIRCUITFORGE (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Hook 'data corruption' berlebihan (sudah dikoreksi di naskah); konsep abstrak perlu diagram kuat; tanpa logo PostgreSQL/MongoDB/bank nyata (rule 15)."
 ---
 
 # Database Transaction: Kenapa ACID Penting dan Kapan Bisa Diabaikan

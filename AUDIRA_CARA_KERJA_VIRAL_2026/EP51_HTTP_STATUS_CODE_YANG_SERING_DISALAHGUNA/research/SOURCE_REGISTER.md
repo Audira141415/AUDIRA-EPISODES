@@ -1,33 +1,22 @@
-# SOURCE_REGISTER — `Cara kerja benda dan fenomena viral yang jarang diketahui`
+# Source Register — HTTP Status Code yang Sering Disalahgunakan Developer
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Standar semantik HTTP terbaru adalah RFC 9110 (Juni 2022); kode status 3 digit, rentang 100–599, digit pertama menentukan 5 kelas (1xx–5xx), dua digit terakhir tidak punya peran kategori | RFC 9110 HTTP Semantics, Fielding/Nottingham/Reschke (IETF), 2022 | https://www.rfc-editor.org/rfc/rfc9110 | 2026-11-25 | HIGH |
+| 2 | 401 Unauthorized = request tidak punya kredensial autentikasi yang valid; server WAJIB (MUST) mengirim header WWW-Authenticate | RFC 9110 §15.5.2, IETF, 2022 | https://www.rfc-editor.org/rfc/rfc9110#section-15.5.2 | 2026-11-25 | HIGH |
+| 3 | 403 Forbidden = server memahami request tetapi menolak memenuhinya; kredensial yang dikirim dianggap tidak cukup | RFC 9110 §15.5.4, IETF, 2022 | https://www.rfc-editor.org/rfc/rfc9110#section-15.5.4 | 2026-11-25 | HIGH |
+| 4 | 404 Not Found boleh dipakai bila server tidak bersedia mengungkap bahwa resource ada; 410 Gone lebih tepat bila resource hilang permanen | RFC 9110 §15.5.5, IETF, 2022 | https://www.rfc-editor.org/rfc/rfc9110#section-15.5.5 | 2026-11-25 | HIGH |
+| 5 | 422 Unprocessable Content = tipe konten dipahami dan sintaks benar, tetapi instruksi di dalamnya tidak bisa diproses (salah secara makna) | RFC 9110 §15.5.21, IETF, 2022 | https://www.rfc-editor.org/rfc/rfc9110#section-15.5.21 | 2026-11-25 | HIGH |
+| 6 | 500 Internal Server Error = server menemui kondisi tak terduga yang mencegahnya memenuhi request | RFC 9110 §15.6.1, IETF, 2022 | https://www.rfc-editor.org/rfc/rfc9110#section-15.6.1 | 2026-11-25 | HIGH |
+| 7 | 302 Found: karena alasan historis, user agent BOLEH mengubah metode POST menjadi GET; 307 Temporary Redirect: user agent TIDAK BOLEH (MUST NOT) mengubah metode | RFC 9110 §15.4.3 & §15.4.8, IETF, 2022 | https://www.rfc-editor.org/rfc/rfc9110#section-15.4.3 | 2026-11-25 | HIGH |
+| 8 | 308 Permanent Redirect didefinisikan di RFC 7538 (April 2015) sebagai versi permanen yang juga mempertahankan metode | RFC 7538 The HTTP Status Code 308 (Permanent Redirect), J. Reschke (IETF), 2015 | https://www.rfc-editor.org/rfc/rfc7538 | 2026-11-25 | HIGH |
+| 9 | 429 Too Many Requests (RFC 6585, April 2012) = pengguna mengirim terlalu banyak request dalam waktu tertentu (rate limiting); BOLEH menyertakan header Retry-After | RFC 6585 Additional HTTP Status Codes, Nottingham & Fielding (IETF), 2012 | https://www.rfc-editor.org/rfc/rfc6585 | 2026-11-25 | HIGH |
+| 10 | RFC 9457 (Juli 2023, menggantikan RFC 7807): anggota "status" di body hanya advisory; generator WAJIB memakai kode status yang sama di response HTTP sebenarnya agar software HTTP generik tetap berperilaku benar | RFC 9457 Problem Details for HTTP APIs, Nottingham/Wilde/Dalal (IETF), 2023 | https://www.rfc-editor.org/rfc/rfc9457 | 2026-11-25 | HIGH |
+| 11 | 418 I'm a teapot berasal dari RFC 2324 (HTCPCP), RFC lelucon 1 April 1998 | RFC 2324 Hyper Text Coffee Pot Control Protocol, L. Masinter (IETF), 1998 | https://www.rfc-editor.org/rfc/rfc2324 | 2026-11-25 | HIGH |
+| 12 | RFC 9110 mencadangkan 418 di registri IANA karena sudah terlalu sering dipakai sebagai lelucon sehingga tidak bisa dipakai untuk makna lain | RFC 9110 §15.5.19, IETF, 2022 | https://www.rfc-editor.org/rfc/rfc9110#section-15.5.19 | 2026-11-25 | HIGH |
+| 13 | 201 Created: resource baru diidentifikasi lewat header Location (atau target URI bila Location tidak ada) | RFC 9110 §15.3.2, IETF, 2022 | https://www.rfc-editor.org/rfc/rfc9110#section-15.3.2 | 2026-11-25 | HIGH |
+| 14 | 401 mirip 403, bedanya 403 dikirim saat kredensial valid tetapi klien tidak punya izin untuk aksi itu | MDN Web Docs "401 Unauthorized", Mozilla, diakses 2026 | https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/401 | 2026-11-25 | MEDIUM |
+| 15 | GraphQL over HTTP (Working Draft): bila operasi dieksekusi dan hanya terjadi execution error, server SHOULD membalas 200 OK (pengecualian sah untuk error di dalam 200) | GraphQL over HTTP spec (Working Draft), GraphQL Foundation | https://github.com/graphql/graphql-over-http/blob/main/spec/GraphQLOverHTTP.md | 2026-11-25 | MEDIUM |
+| 16 | Pedoman Azure REST API: DO return HTTP status code yang merepresentasikan hasil operasi layanan | Microsoft Azure REST API Guidelines, Microsoft (GitHub), vNext | https://github.com/microsoft/api-guidelines/blob/vNext/azure/Guidelines.md | 2026-11-25 | MEDIUM |

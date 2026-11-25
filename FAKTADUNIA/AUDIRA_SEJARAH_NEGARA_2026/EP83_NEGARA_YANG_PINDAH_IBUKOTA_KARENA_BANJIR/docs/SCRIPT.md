@@ -1,93 +1,69 @@
-# SCRIPT — `Fakta sejarah unik negara-negara di dunia` (`EP83`)
+# Naskah — Negara yang Pindah Ibukota karena Banjir
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **16** · estimasi **7 dtk**
+- Visual: Kota pesisir kayu dihantam gelombang badai, atap-atap terlepas; potong cepat ke jalan baru menembus hutan menuju gedung-gedung baru di dataran tinggi.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Satu badai menghancurkan ibukota sebuah negara. Sampai pemerintahnya memilih pergi, membangun ibukota baru jauh di pedalaman.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: Peta Amerika Tengah, zoom ke Belize; pin "Belize City" di garis pantai; HUD tanggal "31 OKT 1961"; spiral awan badai mendekat dari Karibia.
 
-> <konteks singkat + "Di Audira, ...">
+> Ini Belize, di Amerika Tengah. Tanggal 31 Oktober 1961, Badai Hattie menghantam ibukotanya, Belize City.
 
-## c02 — <Judul Bab 1>
+## c02 — Kota di permukaan laut
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Penampang kota setinggi laut; garis air pasang naik ke lantai tiga rumah kayu; HUD "4,3 m" di penggaris air, lalu kartu "75% RUMAH HANCUR" dan "307 TEWAS".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Masalahnya, kota ini berdiri tepat di permukaan laut. Air pasang badai naik sampai 4 meter lebih. Sekitar 75 persen rumah dan tempat usaha hancur, dan 307 orang tewas.
 
-## c03 — <Judul Bab 2>
+## c03 — Lari ke pedalaman
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Panah rute dari pantai ke pedalaman di peta relief; HUD "80 KM" dan "76 M DPL"; crane membangun gedung pemerintahan Belmopan; kartu tahun "1970".
 
-> <teks narasi>
+> Pemerintah ambil keputusan nekat. Ibukota dipindah 80 kilometer ke pedalaman, ke dataran 76 meter di atas laut. Namanya Belmopan. Tahun 1970, pemerintahan resmi pindah ke sana.
 
-## c04 — <Judul Bab 3>
+## c04 — Jakarta tenggelam pelan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Diorama pesisir Jakarta, tanah turun bertahap seperti lift; penggaris HUD "1–15 CM/TAHUN" lalu titik merah "28 CM"; air rob merembes ke jalan pesisir.
 
-> <teks narasi>
+> Sekarang, Indonesia mengalami hal yang mirip. Tanah Jakarta turun 1 sampai 15 sentimeter per tahun, di beberapa titik sampai 28 sentimeter. Banjir rob pun makin sering masuk ke pesisir.
 
-## c05 — <Judul Bab 4>
+## c05 — Nusantara
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Peta Indonesia, panah Jakarta ke Kalimantan Timur; kartu "26 AGU 2019", stempel dokumen "UU 3/2022"; lahan hutan berubah jadi lokasi konstruksi dengan crane; timeline bar sampai "2045".
 
-> <teks narasi>
+> Tahun 2019, pemerintah mengumumkan ibukota pindah ke Kalimantan Timur. Tahun 2022, undang-undangnya disahkan. Ibukota baru itu bernama Nusantara, dibangun bertahap sampai tahun 2045.
 
-## c06 — <Judul Bab 5>
+## c06 — Luruskan mitos
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Tiga kartu negara (Myanmar, Nigeria, Bangladesh) di peta dunia; tiap kartu dicap "BUKAN BANJIR"; HUD "NAYPYIDAW 2005", "ABUJA 1991", "DHAKA: TETAP"; ikon perisai militer, tangan bersatu, kota padat.
 
-> <teks narasi>
+> Tapi hati-hati dengan mitos. Myanmar pindah ke Naypyidaw tahun 2005, dan Nigeria ke Abuja tahun 1991, bukan karena banjir. Alasannya militer, persatuan, dan Lagos yang terlalu padat. Bangladesh malah masih beribukota di Dhaka.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Split screen: Belmopan yang sudah jadi (golden hour) vs Nusantara yang masih dibangun; papan proyek bertuliskan AUDIRA; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi, ada satu ibukota yang sudah pindah karena air, dan satu lagi masih dibangun. Menurutmu, Nusantara bakal sesukses Belmopan? Fakta dunia lainnya, ikuti terus di AUDIRA.
+
+## Opsi hook lain
+
+1. Tahun 1961, air laut naik setinggi lantai tiga, dan sebuah negara memutuskan meninggalkan ibukotanya.
+2. Tanah Jakarta turun sampai 28 sentimeter setahun. Ada negara lain yang pernah kabur dari masalah serupa.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **196 kata** ≈ **81 dtk** (78–87 dtk @150–135 WPM)

@@ -1,33 +1,17 @@
-# SOURCE_REGISTER — `Fakta sejarah unik negara-negara di dunia`
+# Source Register — Negara yang Pindah Ibukota karena Banjir
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Belmopan direncanakan sebagai ibukota baru British Honduras/Belize, dibangun di pedalaman, menggantikan ibukota lama di pesisir (Belize City) | Belmopan: a New Capital for a New Country, Ricketts, Docomomo Journal no. 43, 2010 (doi:10.52200/43.a.smv82dgu) | https://docomomojournal.com/index.php/journal/article/view/87 | 2026-11-25 | HIGH |
+| 2 | Penurunan tanah Jakarta 1982–2010: umumnya 1–15 cm/tahun, beberapa lokasi sampai sekitar 20–28 cm/tahun; penyebab utama ekstraksi air tanah, beban bangunan, konsolidasi alami, tektonik | Land subsidence of Jakarta (Indonesia) and its relation with urban development, Abidin, Andreas, Gumilar dkk., Natural Hazards 59, 2011 (doi:10.1007/s11069-011-9866-9) | https://link.springer.com/article/10.1007/s11069-011-9866-9 | 2026-11-25 | HIGH |
+| 3 | Laju khas penurunan tanah Jakarta 3–10 cm/tahun (1982–2014); penurunan tanah memperluas banjir pesisir dan banjir sungai; pesisir Jakarta sudah mengalami banjir rob saat pasang | On correlation between urban development, land subsidence and flooding phenomena in Jakarta, Abidin dkk., Proc. IAHS 370, 2015 (doi:10.5194/piahs-370-15-2015) | https://piahs.copernicus.org/articles/370/15/2015/ | 2026-11-25 | HIGH |
+| 4 | 26 Agustus 2019: Indonesia mengumumkan ibukota baru di Kalimantan (Borneo); sebagian Jakarta turun sampai 25 cm/tahun dan hampir separuhnya di bawah permukaan laut | Indonesia picks Borneo island as site of new capital, BBC News, 2019 | https://www.bbc.com/news/world-asia-49470258 | 2026-11-25 | HIGH |
+| 5 | UU No. 3 Tahun 2022 tentang Ibu Kota Negara ditetapkan 15 Februari 2022; Ibu Kota Nusantara berfungsi sebagai ibukota NKRI | Undang-undang (UU) Nomor 3 Tahun 2022 tentang Ibu Kota Negara, JDIH BPK RI, 2022 | https://peraturan.bpk.go.id/Details/198400/uu-no-3-tahun-2022 | 2026-11-25 | HIGH |
+| 6 | Hurricane Hattie mendarat di selatan Belize City 31 Oktober 1961 (puncak kategori 5, kategori 4 saat mendarat); air pasang badai sampai 4,3 m dekat Belize City; kota berpenduduk 31.000 di permukaan laut; 307 tewas di wilayah itu; pemerintah lalu mengumumkan rencana memindah ibukota ke dataran tinggi | Hurricane Hattie, Wikipedia (dengan kutipan), 2026 | https://en.wikipedia.org/wiki/Hurricane_Hattie | 2026-11-25 | MEDIUM |
+| 7 | Hattie menghancurkan sekitar 75% rumah dan tempat usaha Belize City; Belmopan 80 km ke pedalaman, 76 m di atas permukaan laut; situs dipilih 1962, dibangun mulai 1967, pemerintahan pindah 1970 | Belmopan, Wikipedia (dengan kutipan), 2026 | https://en.wikipedia.org/wiki/Belmopan | 2026-11-25 | MEDIUM |
+| 8 | Nusantara di Kalimantan Timur menggantikan Jakarta karena kepadatan dan penurunan tanah; dibangun dalam lima tahap sampai 2045 | Nusantara (city), Wikipedia (dengan kutipan), 2026 | https://en.wikipedia.org/wiki/Nusantara_(city) | 2026-11-25 | MEDIUM |
+| 9 | Naypyidaw resmi menggantikan Yangon sebagai ibukota administratif Myanmar pada 6 November 2005; alasan bersifat militer/strategis, bukan banjir | Naypyidaw, Wikipedia (dengan kutipan), 2026 | https://en.wikipedia.org/wiki/Naypyidaw | 2026-11-25 | MEDIUM |
+| 10 | Abuja menggantikan Lagos sebagai ibukota Nigeria pada 12 Desember 1991; alasan: lokasi netral antar-etnis di tengah negara dan Lagos terlalu padat | Abuja, Wikipedia (dengan kutipan), 2026 | https://en.wikipedia.org/wiki/Abuja | 2026-11-25 | MEDIUM |
+| 11 | Dhaka adalah ibukota Bangladesh (tidak pernah dipindah karena banjir) | Dhaka, Wikipedia (dengan kutipan), 2026 | https://en.wikipedia.org/wiki/Dhaka | 2026-11-25 | MEDIUM |

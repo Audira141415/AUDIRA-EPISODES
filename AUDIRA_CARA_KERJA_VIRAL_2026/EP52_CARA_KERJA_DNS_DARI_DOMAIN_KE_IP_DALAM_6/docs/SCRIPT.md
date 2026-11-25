@@ -1,93 +1,69 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP52`)
+# Naskah — Cara Kerja DNS: Dari Domain ke IP dalam 60 Detik
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Close-up tangan menekan Enter di laptop; bilah alamat kosong, lalu tanda tanya DNS menyala besar di tengah layar. HUD: "DNS?"
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Kamu ketik satu alamat web, tekan Enter. Sebelum halaman muncul, perangkatmu wajib bertanya dulu ke sistem yang jarang kamu pikirkan: DNS. Ini AUDIRA.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Nama domain audira.my.id terurai jadi deretan angka IP; buku telepon raksasa terbuka, halaman berisi nama di kiri dan angka di kanan. HUD: "nama → IP"
 
-> <konteks singkat + "Di Audira, ...">
+> Komputer nggak paham nama seperti audira.my.id. Yang mereka kenal cuma angka, yaitu alamat IP. DNS adalah buku telepon internet yang menerjemahkan nama jadi angka.
 
-## c02 — <Judul Bab 1>
+## c02 — Cache lokal dan resolver
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Paket pertanyaan keluar dari ponsel, cek laci memori perangkat (kosong), lalu meluncur ke gedung resolver generik tanpa logo penyedia. HUD: "Cache lokal: kosong" → "Resolver"
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Langkah pertama, perangkatmu cek ingatannya sendiri. Kalau jawabannya belum ada, pertanyaan dilempar ke resolver, biasanya milik penyedia internetmu.
 
-## c03 — <Judul Bab 2>
+## c03 — Root server
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **34** · estimasi **15 dtk**
+- Visual: Peta dunia gelap; 13 pilar huruf A–M berdiri, lalu tiap pilar memecah jadi ribuan titik anycast menyala di peta. HUD: "13 root · 12 operator · ±2.000 titik"
 
-> <teks narasi>
+> Resolver lalu bertanya ke root server. Secara resmi cuma ada tiga belas nama root, dari A sampai M, dikelola dua belas organisasi. Tapi berkat anycast, salinannya tersebar di sekitar dua ribu titik di dunia.
 
-## c04 — <Judul Bab 3>
+## c04 — Server TLD
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Pilar root menunjuk tiga pintu bertuliskan .id, .com, .org; dinding di belakang dipenuhi label akhiran. HUD: "1.435 TLD"
 
-> <teks narasi>
+> Root nggak tahu jawabannya, tapi tahu siapa yang tahu: server untuk akhiran seperti titik id atau titik com. Sekarang ada lebih dari seribu empat ratus akhiran semacam itu.
 
-## c05 — <Judul Bab 4>
+## c05 — Server otoritatif
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Paket masuk ke rak server otoritatif domain tujuan; kartu IP keluar dan meluncur balik lewat jalur yang sama ke ponsel. HUD: kartu alamat IP
 
-> <teks narasi>
+> Server akhiran itu menunjuk ke server otoritatif milik domain tujuan. Dari sinilah alamat IP aslinya keluar, lalu dikirim balik ke perangkatmu.
 
-## c06 — <Judul Bab 5>
+## c06 — Cache dan TTL
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Kartu IP masuk laci cache dengan jam pasir TTL berjalan; permintaan kedua langsung dijawab dari laci, stopwatch berhenti di 14 ms. HUD: "TTL" + "±14 ms"
 
-> <teks narasi>
+> Jawaban itu disimpan sementara sesuai TTL, jadi permintaan berikutnya nggak perlu keliling lagi. Resolver publik yang cepat bisa menjawab rata-rata sekitar empat belas milidetik.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **37** · estimasi **16 dtk**
+- Visual: Tahun 1983: gulungan kertas HOSTS.TXT tunggal berubah jadi jaringan global menyala di bola dunia; name plate teks "Paul Mockapetris" tanpa wajah; lalu outro card AUDIRA. HUD: "1983" + "40+ tahun"
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Sistem ini diusulkan Paul Mockapetris tahun seribu sembilan ratus delapan puluh tiga, menggantikan satu file daftar nama bersama. Lebih dari empat puluh tahun kemudian, ia tetap bekerja tiap kali kamu klik. Ikuti AUDIRA untuk cara kerja lainnya.
+
+## Opsi hook lain
+
+1. Sebelum satu situs terbuka, perangkatmu sudah bertanya ke server di belahan dunia lain.
+2. Tiga belas nama server menopang hampir semua alamat web yang kamu buka.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **209 kata** ≈ **90 dtk**
