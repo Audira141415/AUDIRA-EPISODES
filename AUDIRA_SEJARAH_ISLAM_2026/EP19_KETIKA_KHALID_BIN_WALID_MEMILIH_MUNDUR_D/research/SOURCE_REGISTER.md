@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Sejarah peradaban Islam yang jarang diketahui`
+# Source Register — Ketika Khalid bin Walid Memilih Mundur Demi Menyelamatkan Islam
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Nabi menunjuk Zaid bin Haritsah sebagai komandan Mu'tah; bila gugur diganti Ja'far, lalu Abdullah bin Rawahah (Ibnu Umar). Sahih. | Sahih al-Bukhari no. 4261 (Kitab al-Maghazi), al-Bukhari | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-bukhari/4261.json | 2026-11-25 | HIGH |
+| 2 | Nabi mengabarkan gugurnya Zaid, Ja'far, Ibnu Rawahah sambil matanya mengalirkan air mata; lalu panji diambil "salah satu pedang Allah" hingga Allah beri kemenangan (Anas). Sahih. | Sahih al-Bukhari no. 4262, al-Bukhari | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-bukhari/4262.json (Arab: ara-bukhari/4262.json) | 2026-11-25 | HIGH |
+| 3 | Khalid: di hari Mu'tah sembilan pedang patah di tangannya, tersisa pedang Yaman. Sahih. | Sahih al-Bukhari no. 4265, al-Bukhari | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-bukhari/4265.json | 2026-11-25 | HIGH |
+| 4 | Mu'tah: September 629 M (1 Jumadil Awal 8 H), 3.000 pasukan, tiga komandan gugur berurutan, Khalid memimpin penarikan; sumber awal berselisih menang/kalah; mayoritas prajurit pulang selamat; kabar cemoohan di Madinah (sumber belakangan, dinilai Watt untuk memojokkan Khalid). | Battle of Mu'tah, Wikipedia (merujuk Watt, Powers, Kaegi, Donner), diakses 2026-11 | https://en.wikipedia.org/wiki/Battle_of_Mu'tah | 2026-11-25 | MED |
+| 5 | Gelar Sayfullah ada di Bukhari sebagai "salah satu pedang Allah"; waktu/tempat gelar bervariasi di sumber sejarah. Khalid dicopot Umar dari komando tertinggi Syria sekitar 638 M (setelah Yarmuk); digantikan Abu Ubaidah; sebab diperdebatkan (harta rampasan, kekhawatiran ketergantungan pasukan); Khalid pidato perpisahan lalu tetap berdinas di bawah Abu Ubaidah. | Khalid ibn al-Walid, Wikipedia (Featured Article; merujuk Sayf ibn Umar, Ibn Asakir, Athamina, Shaban, dll.), diakses 2026-11 | https://en.wikipedia.org/wiki/Khalid_ibn_al-Walid | 2026-11-25 | MED |
+| 6 | Riwayat Ibnu Umar: pasukan lari dari sebuah sariyyah, Nabi: "kalian al-'akkarun (kembali menyerang)". Tidak menyebut Mu'tah secara eksplisit; dinilai dhaif (Albani, Syu'aib al-Arnaut, Zubair Ali Zai). | Sunan Abu Dawud no. 2647, Abu Dawud | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-abudawud/2647.json | 2026-11-25 | MED |
+| 7 | Versi Tirmidzi riwayat yang sama: Tirmidzi menilai hasan gharib; Ahmad Syakir dan Albani menilai dhaif. | Jami' at-Tirmidzi no. 1716, at-Tirmidzi | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-tirmidhi/1716.json | 2026-11-25 | MED |

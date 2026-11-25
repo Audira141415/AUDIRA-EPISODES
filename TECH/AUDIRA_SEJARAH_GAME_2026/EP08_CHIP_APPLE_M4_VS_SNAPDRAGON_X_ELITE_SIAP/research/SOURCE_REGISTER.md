@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Sejarah game yang viral dan jarang diketahui`
+# Source Register — Apple M5 vs Snapdragon X2 Elite (dulu: Chip Apple M4 vs Snapdragon X Elite)
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | M4 diumumkan 7 Mei 2024; 3 nm generasi kedua; CPU hingga 10 inti; GPU 10 inti; Neural Engine hingga 38 triliun operasi per detik | Apple introduces M4 chip, Apple Newsroom, 2024 | https://www.apple.com/newsroom/2024/05/apple-introduces-m4-chip/ | 2026-11-25 | HIGH |
+| 2 | M5 diumumkan 15 Okt 2025; 3 nm generasi ketiga; GPU 10 inti dengan Neural Accelerator per inti; lebih dari 4x komputasi puncak GPU untuk AI vs M4; hingga 15% multithread vs M4; memori 153GB/s (klaim uji internal Apple, Sep 2025) | Apple unleashes M5, Apple Newsroom, 2025 | https://www.apple.com/newsroom/2025/10/apple-unleashes-m5-the-next-big-leap-in-ai-performance-for-apple-silicon/ | 2026-11-25 | HIGH |
+| 3 | Snapdragon X Elite: SoC 4 nm, CPU Oryon 12 inti, NPU Hexagon | Snapdragon X Elite (halaman produk), Qualcomm, 2026 | https://www.qualcomm.com/laptops/products/snapdragon-x-elite | 2026-11-25 | HIGH |
+| 4 | Snapdragon X2 Elite Extreme 18 inti, boost 5.0GHz, TSMC 3 nm, diumumkan 24 Sep 2025 di Snapdragon Summit; 6 inti performance | Qualcomm Announces X2 Elite SoCs, Michael Larabel, Phoronix, 24 Sep 2025 | https://www.phoronix.com/news/Qualcomm-X2-Elite-Announced | 2026-11-25 | MEDIUM |
+| 5 | X Elite diumumkan 24 Okt 2023 dengan NPU 45 TOPS; X2 Elite NPU 80 TOPS (varian tertentu 85), hingga 18 inti | List of Qualcomm Snapdragon systems on chips, Wikipedia (merujuk materi Qualcomm), dibaca 2026 | https://en.wikipedia.org/wiki/List_of_Qualcomm_Snapdragon_systems_on_chips | 2026-11-25 | MEDIUM |
+| 6 | Geekbench 6 (uji Tom's Hardware): single-core MacBook Air M5 4.168 vs HP OmniBook Ultra 14 (X2 Elite X2E-90-100) 3.942; multi-core OmniBook 20.075, ZenBook A16 memimpin dengan 22.733; terbit 3 Jul 2026 | HP OmniBook Ultra 14 (Snapdragon X2 Elite) review, Tom's Hardware, 2026 | https://www.tomshardware.com/laptops/hp-omnibook-ultra-14-snapdragon-x2-elite-2026-review | 2026-11-25 | HIGH |
+| 7 | Q3 2024: 720.000 PC memakai X Elite = 0,8% pasar (laporan dikutip TechRadar; lonjakan 180% dari Q2 2024) | x86 reigns supreme as Snapdragon X Elite chips captured just 0.8% of the market..., Hassam Nasir, Tom's Hardware, 26 Nov 2024 | https://www.tomshardware.com/pc-components/cpus/x86-reigns-supreme-as-snapdragon-x-elite-chips-captured-just-0-8-percent-of-the-market-with-720-000-units-sold-in-q3-2024-qualcomm-misses-out-on-rising-ai-pc-sales-with-intel-and-amd-taking-charge | 2026-11-25 | MEDIUM |

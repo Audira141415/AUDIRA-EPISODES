@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP101`)
+# Naskah — Kenapa Ilmu Pengetahuan Terus Berubah — dan Itu Bukan Kelemahannya
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **11** · estimasi **5 dtk** · mulai ±0:00
+- Visual: Papan tata surya: sembilan planet, lalu Pluto tercoret dari barisan. Teks besar "9 → 8".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Pluto dulu planet kesembilan, lalu dicoret. Apakah ilmuwan salah? Justru sebaliknya.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **17** · estimasi **7 dtk** · mulai ±0:05
+- Visual: Tiga kartu bergeser masuk: bola planet, perut/lambung ilustrasi, peta benua. Logo AUDIRA di sudut papan.
 
-> <konteks singkat + "Di Audira, ...">
+> Banyak orang mengira sains yang berubah itu sains yang gagal. Di AUDIRA, kita lihat tiga kisah nyata.
 
-## c02 — <Judul Bab 1>
+## c02 — Pluto dan delapan planet
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **37** · estimasi **16 dtk** · mulai ±0:12
+- Visual: Sabuk Kuiper dengan bola es kecil (Pluto, Eris); callout HUD 1930, 2005, 2006; garis orbit Pluto menyilang; papan IAU menyisakan delapan planet.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tahun 1930, Pluto ditemukan dan disebut planet kesembilan. Lalu astronom menemukan benda sekelas Pluto, termasuk Eris pada 2005. Pada 2006, IAU membuat definisi baru: planet harus sudah membersihkan jalur orbitnya. Pluto belum, jadi ia jadi planet kerdil.
 
-## c03 — <Judul Bab 2>
+## c03 — Bakteri di lambung
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **36** · estimasi **15 dtk** · mulai ±0:28
+- Visual: Penampang lambung ilustrasi; bakteri spiral Helicobacter pylori membesar; callout HUD 1982 dan 1984; gelas kaldu dengan label bakteri.
 
-> <teks narasi>
+> Kisah kedua: perut. Tahun 1982, dokter yakin tukak lambung disebabkan stres. Barry Marshall dan Robin Warren menemukan bakteri Helicobacter pylori di lambung pasien. Banyak yang ragu, sampai Marshall menelan kultur bakteri itu pada 1984. Lambungnya meradang.
 
-## c04 — <Judul Bab 3>
+## c04 — Benua yang bergeser
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **14 dtk** · mulai ±0:43
+- Visual: Peta dunia; benua-benua bergeser menyatu jadi Pangaea; callout HUD 1912 dan 200 juta tahun; siluet kapal ekspedisi es Greenland.
 
-> <teks narasi>
+> Kisah ketiga ada di bawah kakimu. Tahun 1912, Alfred Wegener mengusulkan bahwa benua bergeser. Sekitar 200 juta tahun lalu, katanya, Pangaea mulai terpecah. Ide itu ditolak karena ia tak bisa menjelaskan gayanya.
 
-## c05 — <Judul Bab 4>
+## c05 — Bukti menang
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk** · mulai ±0:57
+- Visual: Lempeng-lempeng bumi bergerak di dasar laut; bakteri diberantas antibiotik; Wegener tetap di Greenland, 1930.
 
-> <teks narasi>
+> Wegener meninggal tahun 1930. Setelah itu, data dasar laut menghidupkan idenya kembali sebagai teori lempeng tektonik. Polanya: semuanya berubah karena bukti baru, bukan opini.
 
-## c06 — <Judul Bab 5>
+## c06 — Kenapa ini kekuatan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk** · mulai ±0:67
+- Visual: Timbangan: sisi kiri "bisa diuji", sisi kanan "bisa salah"; stempel Nobel 2005 muncul di atas kisah Marshall dan Warren.
 
-> <teks narasi>
+> Inilah kekuatan sains. Gagasannya boleh diuji, dan boleh terbukti salah. Nobel Kedokteran 2005 justru diberikan kepada dua orang yang membantah pendapat mapan. Teori yang tak bisa dikoreksi bukan lagi sains.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk** · mulai ±0:80
+- Visual: Tiga ikon (planet, lambung, benua) tersusun jadi satu papan bertuliskan "Berubah = Bekerja"; kartu penutup AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi saat sains berubah, itu bukan tanda ia lemah. Itu tanda ia masih bekerja. Ikuti AUDIRA untuk kisah sains berikutnya.
+
+## Opsi hook lain
+
+1. Kamu masih menghafal sembilan planet? Pelajaran itu sudah kedaluwarsa, dan itu bagus.
+2. Seorang dokter menelan bakteri demi membuktikan dirinya benar. Dia menang Nobel.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **207 kata** ≈ **87 dtk** (135–150 WPM: 83–92 dtk).

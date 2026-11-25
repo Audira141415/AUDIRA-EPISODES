@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris` (`EP100`)
+# Naskah — 4 Fakta Gila Surfing Kompetitif: Hiu di Final, Ombak 26 Meter
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **12** · estimasi **5 dtk**
+- Visual: siluet peselancar di papan, bayangan sirip hiu melintas di bawahnya, air gelap; HUD "19 JULI 2015".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Final dunia surfing. Dua menit berjalan, tiba-tiba ada hiu di bawah papan.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: peta pantai Jeffreys Bay, Afrika Selatan, zoom ke titik lomba; teks kinetik "SURFING KOMPETITIF".
 
-> <konteks singkat + "Di Audira, ...">
+> Surfing itu olahraga yang arenanya laut lepas. Tidak ada lapangan, tidak ada jaring pengaman. AUDIRA kumpulkan empat fakta yang jarang dibahas.
 
-## c02 — <Judul Bab 1>
+## c02 — Hiu di final
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **39** · estimasi **16 dtk**
+- Visual: ilustrasi dua peselancar siluet di laut, sirip hiu mendekat; callout "19 JULI 2015" dan "2 MENIT"; jetski datang, event dibatalkan.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tanggal 19 Juli 2015, Jeffreys Bay, Afrika Selatan. Mick Fanning melawan Julian Wilson di final. Dua menit jalan, seekor hiu yang diduga hiu putih menyerang. Fanning mengira semuanya sudah selesai. Ia selamat tanpa luka, lombanya dibatalkan, hadiah dibagi dua.
 
-## c03 — <Judul Bab 2>
+## c03 — Ombak raksasa
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: tebing Nazaré, dinding ombak raksasa, siluet peselancar kecil di depannya; callout "26,21 M / 86 KAKI".
 
-> <teks narasi>
+> Sekarang soal ombak. Oktober 2020, Nazaré, Portugal. Sebastian Steudtner menunggangi ombak setinggi 26,21 meter, rekor dunia Guinness.
 
-## c04 — <Judul Bab 3>
+## c04 — Harga nyawa
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: ombak Mavericks gelap berkabut, dua penanda siluet bertanggal; callout "23 DES 1994" lalu "16 MAR 2011".
 
-> <teks narasi>
+> Ombak sebesar itu menelan korban. Mark Foo meninggal di Mavericks, 23 Desember 1994. Sion Milosky, di tempat yang sama, 16 Maret 2011. Itu surfing ombak raksasa, bukan tur WSL.
 
-## c05 — <Judul Bab 4>
+## c05 — Risiko hiu sebenarnya
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: infografis dunia, titik gigitan per negara, angka 65 dan 9 membesar, Australia dengan tiga ikon peselancar; callout "65 / 9 / 3".
 
-> <teks narasi>
+> Lalu hiunya, seberapa sering? Tahun 2025, lembaga ISAF mengonfirmasi enam puluh lima gigitan tanpa provokasi di seluruh dunia. Sembilan fatal. Tiga dari itu peselancar di Australia, digigit hiu putih. Risikonya tetap sangat kecil.
 
-## c06 — <Judul Bab 5>
+## c06 — Sisi lain surfing
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: papan skor tur, dua trofi sama besar; callout "2019: HADIAH SAMA"; lalu siluet juara dengan "11 GELAR", "USIA 20".
 
-> <teks narasi>
+> Tapi surfing juga maju. September 2018, WSL umumkan hadiah sama untuk pria dan wanita mulai musim 2019. Dan Kelly Slater, juara dunia sebelas kali, jadi juara termuda ketika berusia dua puluh, tahun 1992.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: matahari terbenam di atas ombak, peselancar siluet mendayung ke luar; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi surfing bukan cuma gaya dan pantai. Ini olahraga melawan alam, dan kadang alam yang menjawab. Ikuti AUDIRA untuk fakta olahraga berikutnya.
+
+## Opsi hook lain
+
+1. Dua menit setelah final dimulai, juara dunia dikira habis di laut.
+2. Rekor ombak surfing: 26 meter. Itu bukan sekadar air.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **206 kata** ≈ **82–92 dtk** (@150–135 WPM)

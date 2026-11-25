@@ -5,7 +5,11 @@ title: "Rekor Manusia Paling Lama Bertahan Tanpa Tidur"
 hook: "Randy Gardner: 11 hari tanpa tidur — dan apa yang terjadi pada tubuhnya"
 styleCandidates: ["BONGKAR (2D)", "CHRONICLE (2D)", "PAPERWORLD (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak
+risiko: "Judul/hook lama menyiratkan Gardner pemegang rekor; sudah dikoreksi, klaim Guinness hanya via Wikipedia; hindari kesan menyarankan ditiru."
 ---
 
 # Rekor Manusia Paling Lama Bertahan Tanpa Tidur

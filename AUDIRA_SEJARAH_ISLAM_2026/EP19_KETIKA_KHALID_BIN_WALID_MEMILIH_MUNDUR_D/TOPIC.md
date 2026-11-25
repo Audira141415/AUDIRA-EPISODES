@@ -5,7 +5,11 @@ title: "Ketika Khalid bin Walid Memilih Mundur Demi Menyelamatkan Islam"
 hook: "Jenderal tanpa kekalahan itu tiba-tiba dicopot — dan reaksinya mengejutkan seluruh pasukan"
 styleCandidates: ["CHRONICLE (2D)", "CINESTORY (2D)", "WORLDFORGE (3D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul/hook asli menggabungkan dua peristiwa dan klaim tak terverifikasi (dikoreksi); tafsir 'mengalah' ditandai tafsir; topik sensitif Umar-Khalid dan riwayat cemoohan lemah."
 ---
 
 # Ketika Khalid bin Walid Memilih Mundur Demi Menyelamatkan Islam

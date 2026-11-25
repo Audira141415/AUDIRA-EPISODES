@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP11`)
+# Naskah — DNA Manusia Sama dengan Simpanse — Berapa Persen Sebenarnya?
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Layar hitam, dua untai DNA (manusia biru, simpanse oranye) berdampingan; callout HUD besar "99%?" lalu retak jadi tanda tanya.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Katanya DNA kita 99 persen sama dengan simpanse. Angka itu cuma separuh cerita. Ini AUDIRA, kita cek.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **12 dtk**
+- Visual: Siluet kera dan manusia berhadapan, tangga DNA bergulir; HUD "2005" dan "35 juta huruf" menghentak; lalu "1,23%".
 
-> <konteks singkat + "Di Audira, ...">
+> Tahun 2005, ilmuwan membandingkan genom simpanse dengan genom kita. Sekitar 35 juta huruf DNA berbeda. Kalau cuma huruf tertukar yang dihitung, bedanya 1,23 persen. Dari situlah angka 99 persen lahir.
 
-## c02 — <Judul Bab 1>
+## c02 — Bab 1 — Huruf, sisipan, dan hilangan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Dua barisan huruf A-T-G-C disejajarkan; huruf tertukar menyala merah, potongan disisipkan dan dihapus; HUD "5 juta" lalu "±96%".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tapi ada juga potongan DNA yang disisipkan atau hilang, sekitar lima juta kejadian. Kalau semuanya dihitung, kemiripan kita turun jadi sekitar 96 persen. Jadi angkanya bergantung cara menghitung.
 
-## c03 — <Judul Bab 2>
+## c03 — Bab 2 — Genom lengkap 2025
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Enam siluet kera besar berjajar, garis kromosom utuh dari ujung ke ujung; bagian berulang menyala; HUD "2025" dan "12,5–27,3%".
 
-> <teks narasi>
+> Tahun 2025, peneliti membaca lengkap genom enam spesies kera. Hasilnya, 12,5 sampai 27,3 persen genom kera sulit disejajarkan dengan genom kita.
 
-## c04 — <Judul Bab 3>
+## c04 — Bab 3 — Kromosom nomor 2
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Dua kromosom kera purba bergerak mendekat, ujungnya (telomer) menyatu menjadi kromosom 2 manusia; HUD "1991" dan "kromosom 2".
 
-> <teks narasi>
+> Lalu bedanya di mana? Kromosom nomor 2 kita ternyata hasil dua kromosom kera purba yang menyatu ujung ke ujung. Jejak sambungannya masih ada.
 
-## c05 — <Judul Bab 4>
+## c05 — Bab 4 — Gen otak
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Irisan otak janin 2D, sel saraf menyala; label HAR1 dan NOTCH2NL; sel punca membelah lebih lama, korteks menebal.
 
-> <teks narasi>
+> Lalu gen otak. Wilayah HAR1 berubah sangat cepat pada manusia dan aktif di otak janin. Gen NOTCH2NL, khas manusia, membuat sel punca otak lebih lama berkembang. Mungkin itu sebab otak kita lebih besar.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Dua orang manusia berdampingan, tangga DNA hampir identik, HUD "0,1%"; lalu beberapa titik penting menyala di kromosom.
 
-> <teks narasi>
+> Jadi bedanya bukan soal banyaknya huruf. Dua manusia saja beda sekitar 0,1 persen. Yang menentukan adalah segelintir tempat penting, seperti gen otak tadi.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **13 dtk**
+- Visual: Skala persentase "96–99%" dengan jarum bergerak; kamera menjauh ke siluet manusia dan simpanse; kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi 99 persen tidak salah, tapi belum lengkap. Tergantung cara hitung, kita sekitar 96 sampai 99 persen mirip simpanse. Di sisa kecil itulah cerita jadi manusia tersembunyi. Ikuti AUDIRA untuk sains berikutnya.
+
+## Opsi hook lain
+
+1. Dua manusia beda 0,1 persen. Manusia dan simpanse beda 1,2 persen. Tapi kenapa kita yang bisa membaca ini?
+2. Para ilmuwan menghitung ulang DNA kita dan simpanse. Angkanya ternyata bukan 99 persen.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **207 kata** ≈ **86 dtk** (135–150 WPM: 83–92 dtk)

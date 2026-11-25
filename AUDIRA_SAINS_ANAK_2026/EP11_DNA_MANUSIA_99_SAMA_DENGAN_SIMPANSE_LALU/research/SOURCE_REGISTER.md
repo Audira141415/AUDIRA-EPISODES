@@ -1,33 +1,15 @@
-# SOURCE_REGISTER — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi`
+# Source Register — DNA Manusia Sama dengan Simpanse — Berapa Persen Sebenarnya?
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Draf genom simpanse (Pan troglodytes) dibandingkan dengan manusia: ±35 juta perubahan satu huruf (SNP), ±5 juta kejadian sisipan/hilangan (indel), plus penataan ulang kromosom | Initial sequence of the chimpanzee genome and comparison with the human genome, Chimpanzee Sequencing and Analysis Consortium, Nature 437:69-87, 2005 | https://pubmed.ncbi.nlm.nih.gov/16136131/ | 2026-11-25 | HIGH |
+| 2 | Substitusi satu huruf rata-rata 1,23% antara salinan genom manusia dan simpanse (≤1,06% divergensi tetap antarspesies); indel membuat ±1,5% sekuens eukromatin spesifik-garis keturunan di tiap spesies | Teks lengkap artikel yang sama (Nature 2005) | https://www.nature.com/articles/nature04072 | 2026-11-25 | HIGH |
+| 3 | Dengan memasukkan indel, sampel 779 kb: substitusi 1,4% + indel 3,4%; kesamaan persis ±95% (angka 98,5% kemungkinan keliru); sampel kecil (5 klon BAC) | Divergence between samples of chimpanzee and human DNA sequences is 5%, counting indels, R. J. Britten, PNAS 99:13633-5, 2002 | https://pubmed.ncbi.nlm.nih.gov/12368483/ | 2026-11-25 | HIGH |
+| 4 | Genom lengkap telomer-ke-telomer 6 spesies kera (simpanse, bonobo, gorila, 2 orangutan, siamang); 12,5–27,3% genom kera gagal sejajar atau tidak konsisten dengan penyejajaran satu-lawan-satu dengan manusia; divergensi lebih besar dari perkiraan sebelumnya | Complete sequencing of ape genomes, Yoo D, ... Eichler EE, Nature 641:401-418, 2025 (teks via PMC12058530) | https://pubmed.ncbi.nlm.nih.gov/40205052/ | 2026-11-25 | HIGH |
+| 5 | Kromosom 2 manusia = sisa fusi telomer-telomer dua kromosom kera leluhur (jejak ulangan telomer di pita 2q13) | Origin of human chromosome 2: an ancestral telomere-telomere fusion, IJdo JW et al., PNAS 88:9051-5, 1991 | https://pubmed.ncbi.nlm.nih.gov/1924367/ | 2026-11-25 | HIGH |
+| 6 | HAR1 = wilayah human accelerated region paling cepat berevolusi; bagian gen RNA HAR1F, aktif di neuron Cajal-Retzius korteks janin minggu ke-7 sampai 19 | An RNA gene expressed during cortical development evolved rapidly in humans, Pollard KS et al., Nature 443:167-72, 2006 | https://pubmed.ncbi.nlm.nih.gov/16915236/ | 2026-11-25 | HIGH |
+| 7 | Tiga paralog NOTCH2NL khas manusia aktif di glia radial, memperkuat sinyal Notch dan menunda diferensiasi progenitor saraf; mungkin berkontribusi pada neokorteks lebih besar | Human-Specific NOTCH2NL Genes Affect Notch Signaling and Cortical Neurogenesis, Fiddes IT et al., Cell 173:1356-69, 2018 | https://pubmed.ncbi.nlm.nih.gov/29856954/ | 2026-11-25 | HIGH |
+| 8 | Beda genetik antarindividu manusia ±0,1%; simpanse dan bonobo ±1,2% (hanya substitusi); bila delesi/duplikasi/sisipan dihitung ada tambahan 4–5% | Genetics (Human Origins), Smithsonian National Museum of Natural History | https://humanorigins.si.edu/evidence/genetics | 2026-11-25 | MEDIUM |
+| 9 | Ulasan: genom ape lengkap memberi pandangan dekat evolusi manusia | Complete ape genomes offer a close-up view of human evolution, L. Kuderna, Nature (News & Views) 641:313-314, 2025 | https://pubmed.ncbi.nlm.nih.gov/40205103/ | 2026-11-25 | MEDIUM |

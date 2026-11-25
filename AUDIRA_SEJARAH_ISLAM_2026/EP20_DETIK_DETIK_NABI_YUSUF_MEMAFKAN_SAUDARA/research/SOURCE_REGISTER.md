@@ -1,33 +1,18 @@
-# SOURCE_REGISTER — `Sejarah peradaban Islam yang jarang diketahui`
+# Source Register — Detik-Detik Nabi Yusuf Memaafkan Saudara-Saudaranya
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | QS Yusuf 12:58: saudara-saudara Yusuf datang ke Mesir, Yusuf mengenal mereka, mereka tidak mengenalnya | Al-Quran, Surah Yusuf ayat 58 (teks Arab + terjemah Kemenag via Quran.com API) | https://api.quran.com/api/v4/verses/by_key/12:58?translations=33&fields=text_uthmani | 2026-11-25 | HIGH |
+| 2 | QS 12:4-5: mimpi Yusuf melihat sebelas bintang, matahari, bulan bersujud; Yaqub melarangnya menceritakan kepada saudara-saudaranya | Al-Quran, Surah Yusuf ayat 4-5 | https://api.quran.com/api/v4/verses/by_key/12:4?translations=33&fields=text_uthmani | 2026-11-25 | HIGH |
+| 3 | QS 12:76: "Demikianlah Kami mengatur (rencana) untuk Yusuf"; QS 12:77: Yusuf menyembunyikan kejengkelan dalam hatinya dan tidak menampakkannya | Al-Quran, Surah Yusuf ayat 76-77 | https://api.quran.com/api/v4/verses/by_key/12:76?translations=33&fields=text_uthmani | 2026-11-25 | HIGH |
+| 4 | QS 12:89-90: Yusuf bertanya "Tahukah kamu apa yang telah kamu perbuat terhadap Yusuf dan saudaranya karena kamu tidak menyadari (akibat)nya?"; mereka bertanya "Apakah engkau benar-benar Yusuf?"; jawab: "Aku Yusuf dan ini saudaraku" | Al-Quran, Surah Yusuf ayat 89-90 | https://api.quran.com/api/v4/verses/by_key/12:89?translations=33&fields=text_uthmani | 2026-11-25 | HIGH |
+| 5 | QS 12:92: "Pada hari ini tidak ada cercaan terhadap kamu, mudah-mudahan Allah mengampuni kamu. Dan Dia Maha Penyayang di antara para penyayang" | Al-Quran, Surah Yusuf ayat 92 | https://api.quran.com/api/v4/verses/by_key/12:92?translations=33&fields=text_uthmani | 2026-11-25 | HIGH |
+| 6 | QS 12:93 dan 12:96: Yusuf menyuruh membawa bajunya, diusapkan ke wajah Yaqub, Yaqub melihat kembali | Al-Quran, Surah Yusuf ayat 93 dan 96 | https://api.quran.com/api/v4/verses/by_key/12:93?translations=33 | 2026-11-25 | HIGH |
+| 7 | QS 12:100: mimpi terwujud, orang tua dan saudara bersujud; Yusuf menyebut setan merusak hubungan antara dirinya dan saudara-saudaranya | Al-Quran, Surah Yusuf ayat 100 | https://api.quran.com/api/v4/verses/by_key/12:100?translations=33&fields=text_uthmani | 2026-11-25 | HIGH |
+| 8 | HR. Bukhari no. 3374 (Kitab Para Nabi), dari Abu Hurairah: Nabi menyebut Yusuf bin Yaqub bin Ishaq bin Ibrahim sebagai orang paling mulia (derajat: Shahih, riwayat Bukhari) | Shahih al-Bukhari no. 3374, via Hadith API (fawazahmed0) | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-bukhari/3374.json | 2026-11-25 | HIGH |
+| 9 | HR. Bukhari no. 3372: andai Nabi tinggal di penjara selama Yusuf, beliau akan menerima tawaran bebas; menunjukkan panjangnya sabar Yusuf (derajat: Shahih, Bukhari) | Shahih al-Bukhari no. 3372, via Hadith API (fawazahmed0) | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-bukhari/3372.json | 2026-11-25 | HIGH |
+| 10 | Tafsir Ibn Katsir QS 12:4: mimpi Yusuf terwujud "empat puluh tahun kemudian, atau menurut sebagian, delapan puluh tahun" (angka dari riwayat tafsir, bukan dari ayat atau hadis sahih) | Tafsir Ibn Kathir (terjemah Inggris) QS 12:4, Ismail ibn Kathir, abad ke-14 M, via Quran.com API | https://api.quran.com/api/v4/tafsirs/169/by_ayah/12:4 | 2026-11-25 | MEDIUM |
+| 11 | Tafsir Ibn Katsir QS 12:92: Yusuf tampaknya membuka identitas hanya atas perintah Allah, sebagaimana ia menyembunyikannya di dua pertemuan awal (dengan catatan "Allah lebih tahu"); setelah itu ia memaafkan dan mendoakan ampunan | Tafsir Ibn Kathir QS 12:92, via Quran.com API | https://api.quran.com/api/v4/tafsirs/169/by_ayah/12:92 | 2026-11-25 | MEDIUM |
+| 12 | Ringkasan kisah Yusuf dalam Islam: saudara-saudara mengaku salah, Yusuf memaafkan, memberikan bajunya untuk Yaqub | Joseph in Islam, Wikipedia (dengan kutipan Surah Yusuf) | https://en.wikipedia.org/wiki/Joseph_in_Islam | 2026-11-25 | MEDIUM |

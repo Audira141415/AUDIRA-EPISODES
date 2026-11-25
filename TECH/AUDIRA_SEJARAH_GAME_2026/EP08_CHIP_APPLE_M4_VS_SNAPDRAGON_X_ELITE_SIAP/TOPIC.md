@@ -5,7 +5,11 @@ title: "Chip Apple M4 vs Snapdragon X Elite: Siapa Pemenangnya?"
 hook: "Dua chip terkuat 2024 diadu — hasilnya mengejutkan"
 styleCandidates: ["SCALEFORGE (3D)", "PRECISION (2D)", "NANOFORGE (3D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: tidak   # skor Geekbench dan generasi chip cepat basi
+risiko: "Judul asli usang (M4 dan X Elite sudah punya penerus); skor satu laptop tidak mewakili chip; klaim Apple adalah uji internal; tanpa logo perusahaan."
 ---
 
 # Chip Apple M4 vs Snapdragon X Elite: Siapa Pemenangnya?

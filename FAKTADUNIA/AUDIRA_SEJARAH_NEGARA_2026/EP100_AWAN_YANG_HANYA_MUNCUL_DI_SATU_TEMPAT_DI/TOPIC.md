@@ -5,7 +5,11 @@ title: "Awan yang Hanya Muncul di Satu Tempat di Dunia"
 hook: "Morning Glory Cloud di Australia — fenomena awan tabung yang belum sepenuhnya dipahami"
 styleCandidates: ["WORLDFORGE (3D)", "PAPERWORLD (2D)", "DISASTERSIM (3D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul/hook keliru (bukan satu tempat, bukan misteri), sudah dikoreksi; 3 jurnal hanya terverifikasi metadata; angka 40 km/jam anekdot."
 ---
 
 # Awan yang Hanya Muncul di Satu Tempat di Dunia

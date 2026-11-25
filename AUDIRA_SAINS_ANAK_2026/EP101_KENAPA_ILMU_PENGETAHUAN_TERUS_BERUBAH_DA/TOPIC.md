@@ -5,7 +5,11 @@ title: "Kenapa Ilmu Pengetahuan Terus Berubah — dan Itu Bukan Kelemahannya"
 hook: "Falsifiabilitas, peer review, dan mekanisme koreksi diri yang membuat sains metode paling andal yang ada"
 styleCandidates: ["DATAPHYSICAL (2D)", "CERDIK (2D)", "PAPERWORLD (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul asli abstrak; naskah pakai 3 kisah konkret; Wikipedia dipakai untuk 3 sumber MEDIUM."
 ---
 
 # Kenapa Ilmu Pengetahuan Terus Berubah — dan Itu Bukan Kelemahannya

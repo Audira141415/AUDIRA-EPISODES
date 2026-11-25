@@ -5,7 +5,11 @@ title: "Negara yang Tidak Punya Bandara Internasional"
 hook: "Liechtenstein, San Marino, Monaco — negara yang bergantung pada airport tetangganya"
 styleCandidates: ["HISTORYMAP (2D)", "NEGERI (3D)", "SATELLITEBRIEFING (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Hook perlu presisi: San Marino punya lapangan terbang kecil Torraccia; akses ke bandara Rimini bisa berubah; sumber naskah Factbook + Wikipedia (MEDIUM)."
 ---
 
 # Negara yang Tidak Punya Bandara Internasional

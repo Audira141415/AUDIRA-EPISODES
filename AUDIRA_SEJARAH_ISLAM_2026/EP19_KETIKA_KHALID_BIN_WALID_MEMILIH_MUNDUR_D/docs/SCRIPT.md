@@ -1,93 +1,70 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP19`)
+# Naskah — Ketika Khalid bin Walid Memilih Mundur Demi Menyelamatkan Islam
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
+> Catatan: judul/hook asli dikoreksi di research/RESEARCH_REPORT.md (dua peristiwa berbeda, "tanpa kekalahan" dan "mengejutkan pasukan" tidak terverifikasi).
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **13** · estimasi **6 dtk** · mulai ±0:00
+- Visual: Siluet komandan tanpa wajah di tepi lembah, tiga panji tumbang berurutan; HUD: 3 komandan.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Tiga komandan gugur berturut-turut. Panji jatuh ke tangan Khalid bin Walid. Keputusannya: mundur.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **14 dtk** · mulai ±0:05
+- Visual: Peta bergerak Madinah ke Mu'tah, timur Sungai Yordan; HUD: 629 M, 3.000 pasukan; barisan siluet kecil menghadapi lautan siluet Bizantium.
 
-> <konteks singkat + "Di Audira, ...">
+> Tahun 629 Masehi, di Mu'tah, timur Sungai Yordan. Pasukan Muslim sekitar tiga ribu orang. Lawannya tentara Bizantium dan sekutu Arab mereka, jauh lebih besar. Ini kisah AUDIRA tentang mundur yang paling diperdebatkan.
 
-## c02 — <Judul Bab 1>
+## c02 — Tiga komandan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **28** · estimasi **12 dtk** · mulai ±0:19
+- Visual: Halaman kitab Sahih Bukhari terbuka, tiga panji bertuliskan Zaid, Ja'far, Abdullah bin Rawahah tumbang bergiliran; siluet Nabi tanpa wajah; HUD: Bukhari 4261, 4262 (sahih).
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Nabi menunjuk Zaid bin Haritsah, lalu Ja'far, lalu Abdullah bin Rawahah. Ketiganya gugur. Menurut Anas bin Malik dalam Sahih Bukhari, Nabi menyampaikan kabar itu dengan air mata mengalir.
 
-## c03 — <Judul Bab 2>
+## c03 — Pedang Khalid
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **12 dtk** · mulai ±0:31
+- Visual: Close-up bilah pedang patah berserakan di pasir, tersisa satu pedang Yaman; HUD: 9 pedang patah, Bukhari 4265 (sahih).
 
-> <teks narasi>
+> Khalid mengambil alih. Ia bercerita sendiri: sembilan pedang patah di tangannya, tinggal satu pedang Yaman. Riwayat ini sahih, tercatat di Bukhari. Nabi menyebutnya salah satu pedang Allah.
 
-## c04 — <Judul Bab 3>
+## c04 — Memilih mundur
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk** · mulai ±0:42
+- Visual: Barisan siluet menarik diri pelan ke selatan, debu menutup pasukan lawan, panah mundur di peta.
 
-> <teks narasi>
+> Lalu Khalid menarik pasukan. Sumber awal berselisih: ada yang mencatat kekalahan memalukan, ada yang menyebut kemenangan. Yang jelas, sebagian besar prajurit pulang dengan selamat.
 
-## c05 — <Judul Bab 4>
+## c05 — Cemoohan di Madinah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **18** · estimasi **8 dtk** · mulai ±0:53
+- Visual: Gerbang Madinah senja, siluet warga menunjuk, barisan tertunduk; label layar: riwayat lemah.
 
-> <teks narasi>
+> Kabarnya, di Madinah mereka dicemooh sebagai pelari. Kisah ini tidak sekuat Bukhari, jadi kita simpan sebagai kabar saja.
 
-## c06 — <Judul Bab 5>
+## c06 — Dicopot Umar
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **37** · estimasi **16 dtk** · mulai ±0:60
+- Visual: Lompatan waktu: peta Syria, panji komando berpindah dari Khalid ke Abu Ubaidah; HUD: 638 M, Homs.
 
-> <teks narasi>
+> Sekitar tahun 638, Umar bin Khattab mencopot Khalid dari komando tertinggi di Syria. Alasannya diperdebatkan: pembagian harta rampasan, atau kekhawatiran pasukan terlalu bergantung pada satu orang. Khalid menerima, berpidato perpisahan, lalu tetap berjuang di bawah Abu Ubaidah.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk** · mulai ±0:76
+- Visual: Dua adegan berdampingan, mundur di Mu'tah dan penyerahan panji di Syria, menyatu jadi satu siluet berjalan menuju fajar; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Dua keputusan, satu pola: mengalah demi tujuan yang lebih besar. Itu tafsir kita, bukan klaim sumber. Simak kisah sejarah Islam lainnya bersama AUDIRA.
+
+## Opsi hook lain
+
+1. "Sembilan pedang patah di tangannya, lalu ia memilih pulang."
+2. "Panglima terbaik dicopot, dan ia menurut."
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **202 kata** ≈ **87 dtk** pada 140 WPM (81–90 dtk pada 150–135 WPM).

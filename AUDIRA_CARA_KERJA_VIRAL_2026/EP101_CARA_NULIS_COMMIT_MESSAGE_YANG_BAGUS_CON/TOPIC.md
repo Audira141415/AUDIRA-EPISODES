@@ -5,7 +5,11 @@ title: "Cara Nulis Commit Message yang Bagus: Conventional Commits"
 hook: "History yang bersih = debugging lebih cepat 6 bulan kemudian"
 styleCandidates: ["DEVFORGE (2D)", "CERDIK (2D)", "CHARACTERFLOW (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah; klaim 6 bulan adalah framing bukan statistik, angka 50/72 adalah panduan bukan batas keras"
 ---
 
 # Cara Nulis Commit Message yang Bagus: Conventional Commits

@@ -1,33 +1,17 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Jonatan Christie: Dari Emas Asian Games 2018 ke Peringkat 1 Dunia 2026
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
+| 1 | Jonatan Christie resmi ranking 1 dunia BWF per 24 Agustus 2026 (rilis 25 Agustus), naik 3 tingkat dari peringkat 3; 87.631 poin, unggul 629 poin atas Christo Popov (ranking 2); Shi Yuqi turun ke 6; judul menyebut penantian 26 tahun | Jonatan Christie Sah jadi Tunggal Putra No 1 Dunia, Penantian 26 Tahun Indonesia Berakhir, Kompas.com, 2026 | https://www.kompas.com/badminton/read/2026/08/25/12102718/jonatan-christie-sah-jadi-tunggal-putra-no-1-dunia-penantian-26-tahun | 2026-11-25 | HIGH |
+| 2 | Final beregu putra Asian Games 2026 (Aichi-Nagoya): Indonesia bangkit dari 0-2 menang 3-2 atas China, emas beregu putra pertama sejak 1998 | Indonesia End 28-Year Wait for Asian Games Men's Badminton Gold, Jakarta Globe, 24 Sep 2026 | https://jakartaglobe.id/news/indonesia-end-28year-wait-for-asian-games-mens-badminton-gold | 2026-11-25 | HIGH |
+| 3 | Christie (World No. 1) ikut emas beregu Asian Games 2026 meski kalah di ketiga pertandingannya dan tidak menyumbang poin | Three Matches, Three Defeats -- and an Asian Games Gold for Jonatan Christie, Jakarta Globe (ringkasan di halaman daftar berita), 2026 | https://jakartaglobe.id/news/three-matches-three-defeats-and-an-asian-games-gold-for-jonatan-christie | 2026-11-25 | HIGH |
+| 4 | Christie tersingkir di Kejuaraan Dunia 2026 di New Delhi; berusia 28 tahun, mengaku kecewa | Tempo turun buyarkan langkah Jonatan di Kejuaraan Dunia 2026, ANTARA News, 2026 | https://www.antaranews.com/berita/5704044/tempo-turun-buyarkan-langkah-jonatan-di-kejuaraan-dunia-2026 | 2026-11-25 | HIGH |
+| 5 | Asian Games 2018 Jakarta: menang 21-18, 20-22, 21-15 atas Chou Tien-chen, emas tunggal putra | Jonatan Christie, Wikipedia (bagian Career 2018-2019), diakses 2026-11-25 | https://en.wikipedia.org/wiki/Jonatan_Christie | 2026-11-25 | MEDIUM |
+| 6 | All England 2024: kalahkan Anthony Ginting di final, gelar Super 1000 pertama, juara tunggal putra All England pertama Indonesia dalam 30 tahun; final sesama Indonesia pertama sejak 1994 | Jonatan Christie, Wikipedia (bagian 2024; merujuk Olympics.com dan Tempo, belum dibuka langsung), diakses 2026-11-25 | https://en.wikipedia.org/wiki/Jonatan_Christie | 2026-11-25 | MEDIUM |
+| 7 | 2025: umumkan keluar pelatnas 15 Mei 2025; seret gelar sejak All England 2024, lalu juara Korea Open (akhir September), Denmark Open, dan Hylo Open (Oktober-November 2025) | Jonatan Christie, Wikipedia (bagian 2025-2026), diakses 2026-11-25 | https://en.wikipedia.org/wiki/Jonatan_Christie | 2026-11-25 | MEDIUM |
+| 8 | Infobox: lahir 15 September 1997, julukan Jojo, rekor karier 359 menang 161 kalah, peringkat tertinggi 1 (25 Agustus 2026), peringkat saat ini 8 per 17 November 2026 | Jonatan Christie, Wikipedia (infobox), diakses 2026-11-25 | https://en.wikipedia.org/wiki/Jonatan_Christie | 2026-11-25 | MEDIUM |
+| 9 | Kejuaraan Dunia 2026: berhenti di babak ketiga dari Rasmus Gemke | Jonatan Christie, Wikipedia (bagian 2025-2026), diakses 2026-11-25 | https://en.wikipedia.org/wiki/Jonatan_Christie | 2026-11-25 | MEDIUM |
 
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+Catatan: klaim awal "smash 418 km/jam" tidak ditemukan di sumber mana pun yang dibaca, jadi TIDAK dicatat sebagai fakta. Situs BWF memblokir akses otomatis (HTTP 403); Olympics.com dan Tempo juga tidak bisa dibuka. Angka peringkat berubah tiap pekan: selalu tulis "per <tanggal>".

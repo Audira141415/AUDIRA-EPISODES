@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Fakta sejarah unik negara-negara di dunia`
+# Source Register — Awan yang Hanya Muncul di Satu Tempat di Dunia
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Morning Glory di Teluk Carpentaria muncul cukup konsisten September–November, biasanya beberapa kali per periode; terbentuk dari interaksi angin laut dua sisi Semenanjung Cape York, udara dingin turun menyelip di bawah lapisan inversi di atas teluk dan memicu gelombang | What's the science behind these spectacular weather photos?, Bureau of Meteorology (BoM), 2019 | https://media.bom.gov.au/social/blog/2272/whats-the-science-behind-these-spectacular-weather-photos/ | 2026-11-25 | HIGH |
+| 2 | Panjang bisa >1.000 km (setara Sydney–Melbourne), kecepatan sampai 60 km/jam, tinggi sampai 1 km; musim Agustus–November; embun di kulkas bar Burketown dianggap tanda; hembusan angin ±40 km/jam; bagi masyarakat Aborigin pertanda burung melimpah; pilot motor glider/hang glider datang untuk menunggangi | Soaring the glory, Abbie Thomas, ABC Science, 2003 | http://www.abc.net.au/science/articles/2003/08/07/2045486.htm | 2026-11-25 | HIGH |
+| 3 | Studi ilmiah klasik: Morning Glory Teluk Carpentaria dijelaskan sebagai undular bore atmosfer | The Morning Glory of the Gulf of Carpentaria: An Atmospheric Undular Bore, R.H. Clarke, R.K. Smith, D.G. Reid, Monthly Weather Review 109, 1981 (hanya judul/metadata diverifikasi via Crossref) | https://doi.org/10.1175/1520-0493(1981)109<1726:tmgotg>2.0.co;2 | 2026-11-25 | HIGH |
+| 4 | Fenomena serupa tercatat di luar Australia: studi kasus Morning Glory di Oklahoma (AS) | Morning Glory Wave Clouds in Oklahoma: A Case Study, Haase & Smith, Monthly Weather Review 112, 1984 (judul/metadata via Crossref) | https://doi.org/10.1175/1520-0493(1984)112<2078:mgwcio>2.0.co;2 | 2026-11-25 | HIGH |
+| 5 | Meteorolog Roger Smith (Univ. München): fenomena "tidak lagi misteri" dan dipahami baik; awan serupa di Munich sekitar sekali per dekade; sampai 10 gelombang berderet; Cape York unik karena rutin tiap musim gugur di Burketown; kurang diteliti karena langka | Weird, Rare Clouds and the Physics Behind Them, WIRED, 2009 | https://www.wired.com/2009/09/clouds/ | 2026-11-25 | MEDIUM |
+| 6 | Awan roll/arcus sampai 1.000 km, tinggi 1–2 km, sering hanya 100–200 m di atas tanah, kecepatan 10–20 m/s; satu-satunya lokasi yang diketahui bisa diprediksi dan teramati rutin adalah selatan Teluk Carpentaria; dilaporkan sesekali di AS, Kanada, Selat Inggris, Munich, Berlin, Rusia timur; laporan pilot RAAF 1942; studi sejak awal 1970-an oleh Reg Clarke | Morning Glory cloud, Wikipedia (merujuk Clarke dkk.), diakses 2026 | https://en.wikipedia.org/wiki/Morning_Glory_cloud | 2026-11-25 | MEDIUM |
+| 7 | Studi kasus garis awan Teluk Carpentaria 25–26 Oktober 1984 (kajian berulang) | Morning glory wind surges and the Gulf of Carpentaria cloud line of 25-26 October 1984, Smith & Page, Australian Meteorological Magazine, 1985 (metadata via Crossref) | https://doi.org/10.1071/es85018 | 2026-11-25 | MEDIUM |

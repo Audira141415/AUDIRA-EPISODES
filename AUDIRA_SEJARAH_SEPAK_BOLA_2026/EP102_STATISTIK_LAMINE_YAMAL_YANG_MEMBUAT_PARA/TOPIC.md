@@ -5,7 +5,11 @@ title: "Statistik Lamine Yamal yang Membuat Para Legenda Merasa Tua"
 hook: "Gol di Euro 2024 di usia 16 tahun 362 hari — termuda sepanjang sejarah"
 styleCandidates: ["DATAPHYSICAL (2D)", "CHARACTERFLOW (2D)", "BROADCASTFORGE (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak
+risiko: "Angka (gol, rekor) cepat basi; beberapa fakta hanya bersumber Wikipedia; tanpa wajah dan logo."
 ---
 
 # Statistik Lamine Yamal yang Membuat Para Legenda Merasa Tua

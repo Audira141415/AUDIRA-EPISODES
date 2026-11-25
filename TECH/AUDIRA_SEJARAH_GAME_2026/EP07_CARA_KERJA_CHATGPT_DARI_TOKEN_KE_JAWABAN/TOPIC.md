@@ -5,7 +5,11 @@ title: "Cara Kerja ChatGPT: Dari Token ke Jawaban"
 hook: "Setiap kata yang kamu ketik diubah jadi angka — begini prosesnya"
 styleCandidates: ["CIRCUITFORGE (2D)", "NANOFORGE (3D)", "DEVFORGE (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook awal kurang akurat (kata vs token) dan RLHF disederhanakan; rendah selebihnya"
 ---
 
 # Cara Kerja ChatGPT: Dari Token ke Jawaban

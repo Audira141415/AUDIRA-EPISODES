@@ -5,7 +5,11 @@ title: "Kenapa Startup AI Indonesia Bisa Kalah Sebelum Mulai"
 hook: "Modal besar tidak cukup — ini kesalahan fatal yang sering dilakukan"
 styleCandidates: ["BROADCASTFORGE (2D)", "DATAPHYSICAL (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak
+risiko: "Judul asli (bisa kalah sebelum mulai) tidak terbukti; angka pendanaan seluruh sektor digital bukan khusus AI, rule 15 (tanpa logo/wajah), kampus Batam baru rencana."
 ---
 
 # Kenapa Startup AI Indonesia Bisa Kalah Sebelum Mulai

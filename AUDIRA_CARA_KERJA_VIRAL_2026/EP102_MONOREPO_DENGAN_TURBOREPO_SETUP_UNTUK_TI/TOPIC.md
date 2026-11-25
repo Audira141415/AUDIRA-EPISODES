@@ -5,7 +5,11 @@ title: "Monorepo dengan Turborepo: Setup untuk Tim JavaScript"
 hook: "Shared code tanpa shared chaos"
 styleCandidates: ["NANOFORGE (3D)", "DEVFORGE (2D)", "CIRCUITFORGE (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "rendah; jangan pakai logo Vercel/Turborepo asli (rule 15), hindari nomor versi dan angka kecepatan"
 ---
 
 # Monorepo dengan Turborepo: Setup untuk Tim JavaScript

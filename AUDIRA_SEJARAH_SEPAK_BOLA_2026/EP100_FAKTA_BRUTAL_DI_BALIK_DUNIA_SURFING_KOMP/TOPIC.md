@@ -5,7 +5,11 @@ title: "Fakta Brutal di Balik Dunia Surfing Kompetitif yang Jarang Diketahui"
 hook: "Ombak 20 meter, hiu, dan keputusan split-second yang menentukan hidup mati"
 styleCandidates: ["CINESTORY (2D)", "FILM16 (2D)", "NEKAT (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak
+risiko: "Angka ISAF 2025 dan rekor ombak bisa berubah; hook awal (20 m, hidup mati) vague, diganti fakta konkret; Fanning tidak digigit, jangan overklaim."
 ---
 
 # Fakta Brutal di Balik Dunia Surfing Kompetitif yang Jarang Diketahui

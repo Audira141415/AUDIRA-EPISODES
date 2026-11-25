@@ -5,7 +5,11 @@ title: "Detik-Detik Nabi Yusuf Memafkan Saudara-Saudaranya Setelah 40 Tahun"
 hook: "Rahasia mengapa ia tidak langsung memperkenalkan diri saat bisa saja melakukannya"
 styleCandidates: ["STORYBOOK (2D)", "ISLAMICDOCUMENTARY (2D)", "CINESTORY (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul \"40 tahun\" tidak ada di Quran/hadis shahih (hanya riwayat tafsir); alasan diam Yusuf adalah tafsir, bukan teks."
 ---
 
 # Detik-Detik Nabi Yusuf Memafkan Saudara-Saudaranya Setelah 40 Tahun

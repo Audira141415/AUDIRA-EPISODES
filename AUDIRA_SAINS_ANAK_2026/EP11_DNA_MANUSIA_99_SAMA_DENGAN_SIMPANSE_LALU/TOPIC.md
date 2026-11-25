@@ -5,7 +5,11 @@ title: "DNA Manusia 99% Sama dengan Simpanse — Lalu 1% Itu Apa?"
 hook: "Perbedaan tipis yang memisahkan manusia dari kera ternyata ada di tempat yang tak terduga"
 styleCandidates: ["NANOFORGE (3D)", "CERDIK (2D)", "BEDAH (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul asli 99% sama menyesatkan; angka bergantung metode (98,8% SNP vs sekitar 96% dengan indel), hubungan gen otak ke ukuran otak masih hipotesis."
 ---
 
 # DNA Manusia 99% Sama dengan Simpanse — Lalu 1% Itu Apa?

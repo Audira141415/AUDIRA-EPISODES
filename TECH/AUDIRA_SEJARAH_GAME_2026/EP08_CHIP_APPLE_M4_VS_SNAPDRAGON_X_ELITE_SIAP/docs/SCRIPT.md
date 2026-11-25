@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP08`)
+# Naskah — Apple M5 vs Snapdragon X2 Elite: Siapa Menang Ronde Kedua?
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **16** · estimasi **7 dtk** · mulai ±0:00
+- Visual: Dua blok chip abstrak (kotak bertuliskan teks 2024) bergeser mundur, dua blok baru lebih besar maju dari depan; HUD teks 2 generasi. Tanpa logo perusahaan.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Chip laptop terkuat 2024 itu sekarang sudah dua generasi tertinggal. Dan perang barunya jauh lebih seru.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk** · mulai ±0:06
+- Visual: Garis waktu horizontal: kartu Okt 2023 (chip kotak 12 inti) lalu Mei 2024 (chip kotak 10 inti), dua chip di timbangan; kartu HUD 2023 dan 2024.
 
-> <konteks singkat + "Di Audira, ...">
+> Qualcomm mengumumkan Snapdragon X Elite pada Oktober 2023. Apple menjawab dengan M4 pada Mei 2024. Keduanya sempat diadu habis-habisan. Sekarang AUDIRA cek ulang, siapa yang masih unggul.
 
-## c02 — <Judul Bab 1>
+## c02 — Apple M4
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **21** · estimasi **9 dtk** · mulai ±0:18
+- Visual: Die chip diagram tembus: 10 inti menyala satu per satu, Neural Engine berdenyut; callout HUD 10 inti, 3 nm, 38 triliun op/dtk.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> M4 punya CPU sampai 10 inti, dibuat dengan teknologi 3 nanometer generasi kedua. Neural Engine-nya mencapai 38 triliun operasi per detik.
 
-## c03 — <Judul Bab 2>
+## c03 — Snapdragon X Elite
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk** · mulai ±0:27
+- Visual: Die chip kedua dibelah: 12 inti, denah NPU; siluet laptop Windows generik di belakang; callout 12 inti, 4 nm, 45 TOPS.
 
-> <teks narasi>
+> Snapdragon X Elite membalas dengan 12 inti Oryon di proses 4 nanometer, plus NPU 45 TOPS. Sasarannya jelas: laptop Windows.
 
-## c04 — <Judul Bab 3>
+## c04 — Kenyataan pasar
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk** · mulai ±0:35
+- Visual: Grafik 100 kotak PC, hanya sebagian satu kotak menyala; callout besar 720 ribu dan 0,8%, label Q3 2024.
 
-> <teks narasi>
+> Hasilnya? Di kuartal ketiga 2024, laporan yang dikutip Tom's Hardware mencatat hanya 720 ribu laptop memakai X Elite. Itu cuma 0,8 persen pasar PC.
 
-## c05 — <Judul Bab 4>
+## c05 — Penerus datang
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **36** · estimasi **15 dtk** · mulai ±0:45
+- Visual: Dua die baru berdampingan: X2 dengan 18 inti menyala + bar NPU 80 TOPS, lalu M5 dengan 10 inti GPU berkilat; callout 18 inti, 80 TOPS, 4x GPU AI, tanggal Sep 2025 dan Okt 2025.
 
-> <teks narasi>
+> Lalu penerusnya datang. September 2025, Snapdragon X2 Elite: sampai 18 inti dan NPU 80 TOPS. Oktober 2025, Apple M5: GPU 10 inti dengan akselerator saraf, lebih dari 4 kali komputasi GPU puncak untuk AI dibanding M4.
 
-## c06 — <Judul Bab 5>
+## c06 — Adu skor
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk** · mulai ±1:00
+- Visual: Dua bar horizontal Geekbench 4.168 vs 3.942 (single-core), lalu bar multi-core memanjang ke 22.733; label per Juli 2026, uji Tom's Hardware.
 
-> <teks narasi>
+> Siapa menang? Per Juli 2026, Tom's Hardware mengukur Geekbench single-core MacBook Air M5 di 4.168, laptop X2 Elite di 3.942. Tapi di multi-core, laptop Snapdragon lain memimpin dengan 22.733.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk** · mulai ±1:13
+- Visual: Timbangan seimbang: bar satu inti condong ke Apple, bar banyak inti condong ke Snapdragon; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi Apple unggul tipis di satu inti, Snapdragon kuat di banyak inti. Pemenangnya tergantung pekerjaanmu. Ikuti terus AUDIRA untuk adu chip berikutnya.
+
+## Opsi hook lain
+
+1. Chip yang kamu kira paling kencang di 2024 ternyata sudah pensiun. Siapa penggantinya?
+2. Cuma 0,8 persen laptop yang memakai chip ini. Sekarang versi barunya datang menyerang.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **195 kata** ≈ **82 dtk** pada 142 WPM (rentang 78–87 dtk).

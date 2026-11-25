@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi`
+# Source Register — Cara Kerja Gen Dominan dan Resesif: Warisan Biologis dari Mendel
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Individu menerima dua versi (alel) tiap gen, satu dari tiap orang tua; bila berbeda, alel dominan diekspresikan dan efek alel resesif tertutup (masked) | Dominant (Genetics Glossary), NHGRI/NIH | https://www.genome.gov/genetics-glossary/Dominant | 2026-11-25 | HIGH |
+| 2 | Pola autosomal dominan (satu salinan cukup; contoh Huntington) dan autosomal resesif (dua salinan berubah; orang tua pembawa biasanya tidak bergejala; contoh cystic fibrosis, sickle cell) | What are the different ways a genetic condition can be inherited?, MedlinePlus Genetics (NIH/NLM) | https://medlineplus.gov/genetics/understanding/inheritance/inheritancepatterns/ | 2026-11-25 | HIGH |
+| 3 | Dulu dikira warna mata satu gen (cokelat dominan atas biru); model itu terlalu sederhana; orang tua mata biru bisa punya anak mata cokelat (jarang); banyak gen terlibat, termasuk OCA2 dan HERC2 di kromosom 15 | Eye color, MedlinePlus Genetics (NIH/NLM) | https://medlineplus.gov/genetics/understanding/traits/eyecolor/ | 2026-11-25 | HIGH |
+| 4 | Mendel mengusulkan prinsip pewarisan tahun 1865; sekitar delapan tahun percobaan pada Pisum sativum; tujuh sifat masing-masing dua bentuk; rasio 3:1 pada F2 (bulat:keriput) menunjukkan bentuk resesif tersembunyi | Gregor Mendel and the Principles of Inheritance, Ilona Miko, Nature Education (Scitable) | https://www.nature.com/scitable/topicpage/gregor-mendel-and-the-principles-of-inheritance-593/ | 2026-11-25 | HIGH |
+| 5 | Mendel (20 Juli 1822 - 6 Januari 1884), biarawan Augustinian; menguji sekitar 28.000 tanaman 1856-1863; polong kuning x hijau menghasilkan keturunan pertama kuning semua; de Vries, Correns, Tschermak memverifikasi temuannya secara independen tahun 1900 | Gregor Mendel, Wikipedia (diambil via API) | https://en.wikipedia.org/wiki/Gregor_Mendel | 2026-11-25 | MEDIUM |
+| 6 | Prinsip Mendel diusulkan 1865 dan 1866, ditemukan ulang 1900 oleh Hugo de Vries dan Carl Correns; diintegrasikan dengan teori kromosom oleh Thomas Hunt Morgan 1915 | Mendelian inheritance, Wikipedia (diambil via API) | https://en.wikipedia.org/wiki/Mendelian_inheritance | 2026-11-25 | MEDIUM |
+| 7 | Kotak Punnett dirancang Reginald C. Punnett tahun 1905 untuk memprediksi genotipe keturunan | Punnett square, Wikipedia (diambil via API) | https://en.wikipedia.org/wiki/Punnett_square | 2026-11-25 | MEDIUM |
+| 8 | Ada bentuk dominansi lain: dominansi tak lengkap dan kodominan; sifat terkait kromosom X berpola berbeda | Dominance (genetics), Wikipedia (diambil via API) | https://en.wikipedia.org/wiki/Dominance_(genetics) | 2026-11-25 | MEDIUM |

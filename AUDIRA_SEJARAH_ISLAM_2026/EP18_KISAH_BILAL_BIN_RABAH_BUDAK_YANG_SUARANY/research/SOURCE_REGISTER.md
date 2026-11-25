@@ -1,33 +1,19 @@
-# SOURCE_REGISTER — `Sejarah peradaban Islam yang jarang diketahui`
+# Source Register — Kisah Bilal bin Rabah: Budak yang Suaranya Mengguncang Dunia
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
+| 1 | Bilal budak milik Umayyah bin Khalaf (Bani Jumah); ayah Rabah/Ribah, ibu Hamamah; Umayyah menelentangkan Bilal di lembah saat terik, batu besar di dada, syarat: tinggalkan Muhammad, sembah Al-Lat dan Al-Uzza; Bilal berkata "Ahad, ahad"; Waraqah bin Naufal berkata "Ahad, demi Allah, Bilal" | The Life of Muhammad (terjemahan A. Guillaume atas Sirah Ibnu Ishaq/Ibnu Hisham), Oxford University Press, 1955 (bagian penyiksaan budak muslim) | https://archive.org/details/GuillaumeLifeOfMuhammad | 2026-11-25 | HIGH |
+| 2 | Abu Bakar menegur Umayyah lalu menukar Bilal dengan seorang budak lain yang lebih kuat dan masih kafir (versi Ibnu Ishaq: pertukaran, bukan uang); Abu Bakar memerdekakan enam budak sebelum hijrah dan Bilal yang ketujuh | The Life of Muhammad (terjemahan A. Guillaume atas Sirah Ibnu Ishaq/Ibnu Hisham), Oxford University Press, 1955 | https://archive.org/details/GuillaumeLifeOfMuhammad | 2026-11-25 | HIGH |
+| 3 | Umayyah bin Khalaf tewas di Badar; Bilal berteriak mengenalinya sebagai musuh yang dulu menyiksanya | The Life of Muhammad (terjemahan A. Guillaume atas Sirah Ibnu Ishaq/Ibnu Hisham), Oxford University Press, 1955 (bagian Badar) | https://archive.org/details/GuillaumeLifeOfMuhammad | 2026-11-25 | HIGH |
+| 4 | Nabi memerintahkan Bilal berdiri mengumandangkan azan di Madinah (usul Umar: seseorang memanggil salat), Sahih al-Bukhari no. 604 | Sahih al-Bukhari 604 (derajat: Sahih), teks Inggris via Hadith API | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-bukhari/604.json | 2026-11-25 | HIGH |
+| 5 | Nabi mendengar suara langkah Bilal di depannya di surga; Bilal mengaku rutin salat sunnah setelah wudu, Sahih al-Bukhari no. 1149 | Sahih al-Bukhari 1149 (Sahih), via Hadith API | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-bukhari/1149.json | 2026-11-25 | HIGH |
+| 6 | Umar berkata: "Abu Bakar adalah sayyid (pemimpin) kita dan dia memerdekakan sayyid kita", maksudnya Bilal, Sahih al-Bukhari no. 3754 | Sahih al-Bukhari 3754 (Sahih), via Hadith API | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-bukhari/3754.json | 2026-11-25 | HIGH |
+| 7 | Lafaz azan datang dari mimpi Abdullah bin Zaid; Nabi menyuruh mengajarkannya ke Bilal karena suaranya lebih lantang; Umar bermimpi serupa | Sunan Ibnu Majah 706 (Hasan: Albani, Al-Arnaut); paralel Abu Dawud 499 (Hasan Sahih: Albani); via Hadith API | https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/eng-ibnmajah/706.json | 2026-11-25 | HIGH |
+| 8 | Saat Fathu Makkah, Nabi masuk Ka'bah bersama Bilal dan memerintahkannya azan | The Life of Muhammad (terjemahan A. Guillaume atas Sirah Ibnu Ishaq/Ibnu Hisham), Oxford University Press, 1955 (bagian penaklukan Makkah) | https://archive.org/details/GuillaumeLifeOfMuhammad | 2026-11-25 | HIGH |
+| 9 | Lahir Makkah 580, wafat sekitar 640 (versi modern 5 Maret 580 - 2 Maret 640); azan Fathu Makkah (630) dari atas Ka'bah menurut kutipan Ibnu Katsir (Al-Bidayah wan-Nihayah, dari Malik); bendahara Baitul Mal; wafat di Damaskus (al-Suyuti: 17-21 H, usia sedikit di atas 60); makam diperselisihkan Damaskus/Yordania | Bilal ibn Rabah, Wikipedia (mengutip Ibnu Katsir dan al-Suyuti) | https://en.wikipedia.org/wiki/Bilal_ibn_Rabah | 2026-11-25 | MEDIUM |
+| 10 | Umayyah bin Khalaf: pemimpin Bani Jumah, penyiksa Bilal; Abu Bakar membebaskan Bilal | Umayya ibn Khalaf, Wikipedia | https://en.wikipedia.org/wiki/Umayya_ibn_Khalaf | 2026-11-25 | MEDIUM |
+| 11 | Bilal muazin pertama Islam (Sunni); Syiah menyebut asal lafaz azan berbeda (wahyu langsung) | Adhan, Wikipedia | https://en.wikipedia.org/wiki/Adhan | 2026-11-25 | MEDIUM |
 
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+Catatan: nomor Bukhari mengikuti penomoran sunnah.com; sunnah.com memblokir curl, jadi teks diverifikasi lewat Hadith API (fawazahmed0). Guillaume dibaca dari teks OCR archive.org.

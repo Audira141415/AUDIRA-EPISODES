@@ -1,93 +1,70 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP09`)
+# Naskah — Kenapa Startup AI Indonesia Kesulitan Bersaing
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Grafik batang pendanaan swasta digital Indonesia runtuh dari 9,2 ke 0,6 miliar dolar, peta Indonesia di belakang. HUD "US$9,2 M → US$0,6 M".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Pendanaan digital Indonesia anjlok dari sembilan koma dua miliar dolar jadi nol koma enam miliar. Tapi pengguna AI kita terbanyak di Asia Tenggara.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Meja data bergaya broadcast, dua dokumen laporan bertumpuk dengan label tahun, tanpa logo. Teks "AUDIRA" di papan HUD.
 
-> <konteks singkat + "Di Audira, ...">
+> Ini AUDIRA. Katanya kalah sebelum mulai. Kita cek pakai angka dari e-Conomy SEA dan Stanford AI Index.
 
-## c02 — <Judul Bab 1>
+## c02 — Modal
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Dua tumpukan koin: raksasa (109,1 miliar dolar, label AS) dan 9,3 miliar dolar (label Tiongkok); tumpukan Indonesia kecil sekali di pojok. Callout angka kinetik.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Modal dulu. Tahun dua ribu dua puluh empat, investasi swasta AI Amerika seratus sembilan koma satu miliar dolar. Tiongkok sembilan koma tiga miliar. Seluruh sektor digital Indonesia, di bawah satu miliar.
 
-## c03 — <Judul Bab 2>
+## c03 — Pengguna
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **14 dtk**
+- Visual: Peta Asia Tenggara, Indonesia menyala 43%; lingkaran kedua hanya terisi 37%. Ikon ponsel dengan hitungan sesi 1,8 per minggu.
 
-> <teks narasi>
+> Pengguna kita juara. Empat puluh tiga persen pengguna AI enam negara Asia Tenggara ada di Indonesia, tapi pemakaiannya cuma tiga puluh tujuh persen. Sekitar satu koma delapan sesi seminggu, terendah di kawasan.
 
-## c04 — <Judul Bab 3>
+## c04 — Komputasi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Rak server dan GPU generik (tanpa logo) berjajar di pulau Batam pada peta; blueprint kampus 360 MW, hitungan 170.000 GPU. Label "rencana".
 
-> <teks narasi>
+> Komputasi? Di Batam ada rencana kampus AI tiga ratus enam puluh megawatt, untuk sekitar seratus tujuh puluh ribu GPU. Diumumkan Juni dua ribu dua puluh enam. Baru rencana.
 
-## c05 — <Judul Bab 4>
+## c05 — Talenta
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Siluet ratusan mahasiswa dengan laptop mengalir ke gerbang, counter "100 ribu per tahun" berlabel "target". Garis waktu 2020 sampai 2045.
 
-> <teks narasi>
+> Talenta? Komdigi menargetkan seratus ribu talenta digital per tahun lewat AI Talent Factory. Strategi nasional AI sudah ada sejak dua ribu dua puluh. Tapi itu target, bukan hasil.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Aliran uang berbentuk panah dari banyak kotak menyempit ke satu kotak bertanda "AI" menyala. HUD "~80%".
 
-> <teks narasi>
+> Arah uang berubah. Di Asia Tenggara, sekitar delapan puluh persen nilai pendanaan kini ke perusahaan ber-AI di produk intinya. Investor pilih yang sudah menghasilkan.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Tiga indikator (modal, komputasi, talenta) berubah dari merah ke kuning; kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi bukan kalah sebelum mulai. Modal tipis, pemakaian dangkal, komputasi baru dibangun. Peluang realistisnya di aplikasi, bukan model raksasa. Ikuti AUDIRA untuk data teknologi berikutnya.
+
+## Opsi hook lain
+
+1. Indonesia punya pengguna AI terbanyak di Asia Tenggara, tapi pemakaiannya terendah. Kenapa?
+2. Satu negara punya 109 miliar dolar untuk AI. Indonesia punya kurang dari satu miliar untuk seluruh sektor digital.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **208 kata** ≈ **83-92 dtk** (≈ 89 dtk @140 WPM)
+- Angka per laporan: Stanford AI Index 2025 (data 2024), e-Conomy SEA 2026 (data sampai H1 2026).

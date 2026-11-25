@@ -1,93 +1,71 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP20`)
+# Naskah — Detik-Detik Nabi Yusuf Memaafkan Saudara-Saudaranya
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
+> Koreksi judul: "setelah 40 tahun" dihapus. Angka itu hanya riwayat tafsir (Ibn Katsir; sebagian 80 tahun), bukan Quran/hadis shahih. Lihat `research/RESEARCH_REPORT.md`.
+> Adab QISSAH: tidak ada wajah Yusuf, Yaqub, atau saudara-saudaranya (siluet, bayangan, tangan, benda).
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: siluet gelap sosok berjubah duduk di singgasana Mesir, tanpa wajah; bayangan sebelas siluet berdiri di depannya; kamera dolly-in ke singgasana.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Yusuf berkuasa di Mesir. Saudara-saudara yang dulu membuangnya berdiri di depannya. Ia mengenal mereka. Tapi ia diam.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: kaligrafi ayat 12:58 muncul di langit gurun; HUD "QS Yusuf 12:58"; siluet rombongan tiba di gerbang kota; logo AUDIRA kecil di papan petunjuk dunia.
 
-> <konteks singkat + "Di Audira, ...">
+> Menurut Surah Yusuf ayat lima puluh delapan, mereka sama sekali tidak mengenalnya. Ini kisah di AUDIRA, tentang maaf yang datang pelan-pelan.
 
-## c02 — <Judul Bab 1>
+## c02 — Mimpi Sebelas Bintang
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **18** · estimasi **7 dtk**
+- Visual: langit malam, sebelas bintang, matahari, bulan berputar lalu menunduk; HUD "11 bintang"; siluet ayah menaruh tangan di bahu siluet anak kecil.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Semuanya bermula dari mimpi: sebelas bintang, matahari, dan bulan bersujud kepadanya. Ayahnya, Yaqub, melarang ia menceritakannya kepada saudara-saudaranya.
 
-## c03 — <Judul Bab 2>
+## c03 — Mereka Datang Meminta Makanan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: kafilah unta di padang pasir, gudang gandum, tangan memegang karung; piala raja berkilau; siluet menahan napas; HUD "Yusuf 12:77".
 
-> <teks narasi>
+> Puluhan tahun kemudian, mereka datang meminta bahan makanan. Yusuf tidak langsung memperkenalkan diri. Bahkan saat saudaranya dituduh mencuri, Al-Quran mencatat Yusuf menyembunyikan perasaannya dalam hati.
 
-## c04 — <Judul Bab 3>
+## c04 — Momen Pengungkapan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **13 dtk**
+- Visual: ruangan sepi, bayangan siluet sebelas orang menatap satu sosok; cahaya jatuh perlahan ke sosok itu; teks kinetik "Aku Yusuf" per kata; HUD "12:89-90".
 
-> <teks narasi>
+> Lalu tiba momen itu. Yusuf bertanya, tahukah kalian apa yang telah kalian perbuat terhadap Yusuf dan saudaranya, ketika kalian tidak menyadarinya? Mereka terkejut: benarkah engkau Yusuf? Ia menjawab, aku Yusuf, dan ini saudaraku.
 
-## c05 — <Judul Bab 4>
+## c05 — Maaf Tanpa Cercaan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: bayangan siluet saudara bersimpuh, bayangan tangan Yusuf terulur; kalimat ayat 12:92 menyala; gamis lipat diserahkan ke tangan pembawa; HUD "12:92".
 
-> <teks narasi>
+> Tidak ada amarah. Ayat sembilan puluh dua: pada hari ini tidak ada cercaan terhadap kalian, semoga Allah mengampuni kalian. Lalu ia menitipkan bajunya, supaya ayahnya dapat melihat kembali.
 
-## c06 — <Judul Bab 5>
+## c06 — Kenapa Ia Menunggu?
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **34** · estimasi **14 dtk**
+- Visual: dua jalur panah di peta: "Quran: tidak menyebut alasan" vs "Ibn Katsir: atas perintah Allah"; halaman tafsir klasik berayun; HUD "±40 tahun (riwayat tafsir)" bertanda "bukan hadis shahih".
 
-> <teks narasi>
+> Kenapa ia menunggu? Al-Quran tidak menyebut alasannya. Ibnu Katsir menduga itu atas perintah Allah, sambil menulis, Allah lebih tahu. Sebagian riwayat tafsir menyebut sekitar empat puluh tahun, tapi angka itu bukan dari hadis shahih.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: kitab Shahih Bukhari terbuka, HUD "Bukhari 3374 (Shahih)"; fajar emas di atas arabesque; siluet dua tangan berjabat; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Dalam Shahih Bukhari nomor tiga ribu tiga ratus tujuh puluh empat, Nabi menyebut Yusuf sebagai orang paling mulia. Sabar, takwa, lalu maaf tanpa cercaan. Ikuti terus kisah para nabi bersama AUDIRA.
+
+## Opsi hook lain
+
+1. Ia bisa berkata "ini aku" sejak hari pertama. Kenapa Yusuf memilih diam?
+2. Saudara-saudara yang membuangnya berdiri di depannya. Apa yang ia ucapkan setelah itu?
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **207 kata** ≈ **86 dtk** (145 WPM; 83–92 dtk di 150–135 WPM)

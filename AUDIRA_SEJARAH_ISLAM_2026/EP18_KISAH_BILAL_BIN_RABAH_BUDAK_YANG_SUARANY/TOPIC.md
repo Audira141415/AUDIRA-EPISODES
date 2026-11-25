@@ -5,7 +5,11 @@ title: "Kisah Bilal bin Rabah: Budak yang Suaranya Mengguncang Dunia"
 hook: "Dari cambukan di pasir panas Mekkah hingga menjadi manusia pertama yang mengumandangkan azan"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "CHARACTERFLOW (2D)", "CINESTORY (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook awal kurang akurat (bukan manusia pertama azan; cambukan tak ada di sumber awal); harga pembebasan dan azan di atap Ka'bah beda antar riwayat, wajib atribusi."
 ---
 
 # Kisah Bilal bin Rabah: Budak yang Suaranya Mengguncang Dunia

@@ -1,93 +1,70 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP18`)
+# Naskah — Kisah Bilal bin Rabah: Budak yang Suaranya Mengguncang Dunia
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
+> QISSAH: tanpa wajah Nabi/sahabat (siluet). Kitab + derajat hadis disebut di VO dan callout.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **10** · estimasi **4 dtk** · mulai ±0:00
+- Visual: Siluet tanpa wajah terlentang di pasir putih terik, batu besar menindih dada; teks raksasa kinetik "AHAD" berdenyut. Matahari putih membakar.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Batu panas menindih dadanya. Dia hanya mengulang satu kata: Ahad.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk** · mulai ±0:04
+- Visual: Peta gurun Hijaz, titik Makkah menyala; HUD "±580" saat nama lahir muncul; tulisan arab kaligrafi nama Bilal. Siluet ibu dan anak.
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya Bilal bin Rabah, budak kelahiran Makkah sekitar tahun 580. Di AUDIRA, kisahnya kami rangkum dari kitab sirah dan hadis sahih.
 
-## c02 — <Judul Bab 1>
+## c02 — Majikan dan batu
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **33** · estimasi **14 dtk** · mulai ±0:13
+- Visual: Lembah Makkah siang bolong, bayangan pendek; siluet majikan berdiri, siluet Bilal diseret lalu ditelentangkan; batu besar ditaruh perlahan. Label "Umayyah bin Khalaf" sebagai name plate teks.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Majikannya, Umayyah bin Khalaf, tahu Bilal masuk Islam. Menurut Ibnu Ishaq, Umayyah membaringkannya telentang di lembah pada jam paling terik, lalu menaruh batu besar di dadanya. Pilihannya: tinggalkan Muhammad, atau mati di sana.
 
-## c03 — <Judul Bab 2>
+## c03 — Satu kata
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk** · mulai ±0:27
+- Visual: Close-up teks "Ahad, Ahad" bergetar di udara panas; siluet pria lewat berhenti (Waraqah bin Naufal), gelombang panas menutup frame; ilustrasi kitab sirah terbuka dengan cap "Sirah Ibnu Ishaq".
 
-> <teks narasi>
+> Bilal tidak goyah. Dia terus berkata, "Ahad, ahad." Satu, satu. Ibnu Ishaq mencatat, Waraqah bin Naufal lewat dan berkata, "Ahad, demi Allah, Bilal."
 
-## c04 — <Judul Bab 3>
+## c04 — Dimerdekakan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk** · mulai ±0:36
+- Visual: Dua siluet berhadapan di gerbang rumah; Abu Bakar menunjuk, adegan pertukaran budak (dua siluet bertukar tempat); rantai pecah menjadi cahaya; kartu kutipan "Sahih al-Bukhari 3754".
 
-> <teks narasi>
+> Abu Bakar lewat dan menegur Umayyah, lalu menukar Bilal dengan seorang budak lain dan memerdekakannya. Umar kelak berkata, Abu Bakar pemimpin kita, dan dia memerdekakan pemimpin kita. Hadis sahih riwayat Bukhari.
 
-## c05 — <Judul Bab 4>
+## c05 — Azan pertama
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **36** · estimasi **15 dtk** · mulai ±0:49
+- Visual: Madinah, atap rumah rendah menjelang fajar, siluet berdiri di atap dengan tangan terentang; gelombang suara emas menyebar ke kota; HUD "Bukhari 604 · Sahih" dan "Ibnu Majah 706 · Hasan".
 
-> <teks narasi>
+> Di Madinah, kaum muslimin mencari cara memanggil salat. Nabi memerintahkan Bilal berdiri dan azan, kata hadis sahih Bukhari. Lafaznya dari mimpi Abdullah bin Zaid, hadis hasan Ibnu Majah, dan diajarkan ke Bilal karena suaranya lebih lantang.
 
-## c06 — <Judul Bab 5>
+## c06 — Kembali ke Makkah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk** · mulai ±1:05
+- Visual: Ka'bah sebagai siluet kubus hitam berkain, siluet kecil di dekatnya; peta bergerak dari Madinah ke Makkah; HUD "630"; matahari terbit emas menggantikan matahari putih bab 1.
 
-> <teks narasi>
+> Tahun 630, Makkah ditaklukkan. Di kota tempat dulu dia disiksa, Bilal diperintah azan di Ka'bah. Ibnu Katsir menyebut dari atapnya. Hadis sahih juga mencatat Nabi mendengar langkah Bilal di surga.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk** · mulai ±1:17
+- Visual: Garis waktu emas dari 580 ke ±640; peta Damaskus; siluet menara masjid dengan gelombang suara terus menyebar melintasi benua; kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Bilal wafat di Damaskus sekitar tahun 640. Budak itu sudah lama pergi, tapi suaranya masih terdengar lima kali sehari. Ikuti AUDIRA untuk kisah berikutnya.
+
+## Opsi hook lain
+
+1. Dia disiksa di pasir Makkah, tapi justru suaranya yang dipanggil Nabi untuk azan pertama.
+2. Satu kata menyelamatkan harga dirinya: Ahad. Dari budak, jadi muazin pertama Islam.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **208 kata** ≈ **88 dtk**

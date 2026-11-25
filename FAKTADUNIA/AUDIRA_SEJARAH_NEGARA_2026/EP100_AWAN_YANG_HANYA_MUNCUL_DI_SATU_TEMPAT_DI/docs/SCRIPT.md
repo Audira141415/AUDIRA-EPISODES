@@ -1,93 +1,69 @@
-# SCRIPT — `Fakta sejarah unik negara-negara di dunia` (`EP100`)
+# Naskah — Awan yang Hanya Muncul di Satu Tempat di Dunia
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **15** · estimasi **6 dtk** · Mulai ±0:00
+- Visual: Langit gelap dini hari; satu dinding awan tabung raksasa melaju ke arah kota mungil. Callout HUD: 1.000 km.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Awan sepanjang seribu kilometer menyerbu satu kota kecil di Australia. Ini terjadi hampir setiap tahun.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **17** · estimasi **7 dtk** · Mulai ±0:07
+- Visual: Peta Australia utara zoom ke Teluk Carpentaria dan Queensland; pin lokasi, label Morning Glory.
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya Morning Glory. Awan tabung ini muncul di Teluk Carpentaria, Queensland. Hanya di sana ia datang rutin.
 
-## c02 — <Judul Bab 1>
+## c02 — Burketown menunggu
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **28** · estimasi **12 dtk** · Mulai ±0:18
+- Visual: Diorama kota kecil Burketown di malam hari; bar dengan kulkas berembun; kalender September sampai November; angin kencang menggoyang kaleng. Callout HUD: 40 km/jam.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Dari September sampai November, warga Burketown menunggu satu tanda: embun di kulkas bar. Artinya udara cukup lembap. Lalu angin berhenti, dan hembusan empat puluh kilometer per jam menerjang.
 
-## c03 — <Judul Bab 2>
+## c03 — Ukuran raksasa
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk** · Mulai ±0:34
+- Visual: Perbandingan skala: garis awan membentang dari Sydney ke Melbourne di peta; gulungan awan berderet satu sampai sepuluh. Callout HUD: 1.000 km, 1 km, 60 km/jam, 10 gulungan.
 
-> <teks narasi>
+> Panjangnya bisa seribu kilometer, setara Sydney ke Melbourne. Tingginya sekitar satu kilometer, lajunya sampai enam puluh kilometer per jam. Kadang satu gulungan, kadang sepuluh berderet.
 
-## c04 — <Judul Bab 3>
+## c04 — Dapurnya: Semenanjung Cape York
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **36** · estimasi **15 dtk** · Mulai ±0:50
+- Visual: Penampang semenanjung: angin laut dari dua pantai bertemu, siang jadi malam, udara dingin turun menyelip di bawah lapisan stabil di atas teluk, gelombang menggelinding.
 
-> <teks narasi>
+> Rahasianya ada di Semenanjung Cape York. Siang hari, angin laut dari dua pantai bertemu di tengah. Malam hari, udara dingin turun dan menyelip di bawah lapisan stabil di atas teluk. Lahirlah gelombang yang menggelinding melintasi teluk.
 
-## c05 — <Judul Bab 4>
+## c05 — Awan berputar mundur?
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk** · Mulai ±1:07
+- Visual: Animasi penampang awan: uap naik dan menjadi awan di bagian depan, menguap di bagian belakang, awan tetap bergerak maju.
 
-> <teks narasi>
+> Awannya tampak berputar mundur, padahal tidak. Di depan, uap air naik dan jadi awan. Di belakang, awan menguap lagi. Terus terbentuk, terus hilang, sambil maju.
 
-## c06 — <Judul Bab 5>
+## c06 — Masih misterius?
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **13 dtk** · Mulai ±1:20
+- Visual: Tiga peta kecil berganti: Teluk Carpentaria, Oklahoma, Munich; ikon timeline satu dekade. Callout HUD: 1 dekade.
 
-> <teks narasi>
+> Masih misterius? Tidak lagi. Meteorolog Roger Smith bilang fenomena ini sudah dipahami baik. Awan serupa pernah tercatat di Oklahoma, bahkan di Munich sekitar sekali sedekade. Tapi hanya di sini ia datang rutin.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **13 dtk** · Mulai ±1:35
+- Visual: Pesawat layang kecil meluncur di depan dinding awan saat fajar emas; burung berterbangan di bawahnya; kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Pilot pesawat layang datang dari berbagai negara untuk berselancar di atasnya. Bagi masyarakat Aborigin setempat, awan ini pertanda burung melimpah. Satu bentuk geografi, satu awan langka. Ikuti AUDIRA untuk fakta dunia lainnya.
+
+## Opsi hook lain
+
+1. Satu awan sepanjang Sydney ke Melbourne, dan ia datang tiap pagi ke kota berpenduduk segelintir orang.
+2. Embun di kulkas bar ini tanda bahwa awan raksasa akan datang.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **210 kata** ≈ **84–91 dtk** (@135–150 WPM: 84–93 dtk)

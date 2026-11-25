@@ -5,7 +5,11 @@ title: "Frontend Performance: Metrik yang Benar-Benar Penting (LCP, FID, CLS)"
 hook: "Google Core Web Vitals bukan cuma SEO — itu UX"
 styleCandidates: ["DATAPHYSICAL (2D)", "TRADINGTERMINAL (2D)", "PRECISION (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: tidak
+risiko: "Judul menyebut FID yang sudah pensiun (diganti INP 12 Maret 2024); angka 43% situs seluler (2024) cepat basi; topik teknis kurang mudah divisualkan."
 ---
 
 # Frontend Performance: Metrik yang Benar-Benar Penting (LCP, FID, CLS)

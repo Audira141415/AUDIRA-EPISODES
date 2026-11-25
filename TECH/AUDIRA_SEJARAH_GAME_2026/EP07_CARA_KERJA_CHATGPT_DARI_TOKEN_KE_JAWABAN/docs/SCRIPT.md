@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP07`)
+# Naskah — Cara Kerja ChatGPT: Dari Token ke Jawaban
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **13** · estimasi **5 dtk**
+- Visual: Layar gelap, kalimat ketikan 'halo, apa kabar' muncul di kotak chat; tiap huruf berubah jadi deretan angka yang jatuh ke bawah. Callout HUD: kata 'angka'.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Kamu ngetik satu kalimat, tapi ChatGPT tidak membaca hurufnya. Ia cuma melihat angka.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **16** · estimasi **7 dtk**
+- Visual: Jalur horizontal bergaya papan sirkuit: ketikan, token, model, jawaban, menyala berurutan. Teks AUDIRA tertulis di papan sirkuit.
 
-> <konteks singkat + "Di Audira, ...">
+> Di AUDIRA kita bedah jalurnya, dari ketikanmu sampai jawaban muncul. Langkah pertama: teks dipotong jadi token.
 
-## c02 — <Judul Bab 1>
+## c02 — Token: Teks Jadi Angka
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **45** · estimasi **19 dtk**
+- Visual: Kalimat dipotong pisau cahaya jadi kepingan warna (kata utuh, setengah kata, tanda baca), tiap kepingan diberi nomor. HUD: '1 token ≈ 4 huruf', '2015'.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Token itu potongan teks, bisa satu kata, setengah kata, atau tanda baca. Kira-kira satu token sama dengan empat huruf Inggris. Kata langka dipecah jadi potongan subkata, teknik yang diusulkan untuk penerjemahan mesin sejak 2015. Tiap potongan dapat nomor, dan nomor itulah yang masuk ke model.
 
-## c03 — <Judul Bab 2>
+## c03 — Transformer
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Diagram blok Transformer bergaya blueprint dengan garis perhatian antar kata; delapan chip GPU menyala. HUD: '2017', '41,8 BLEU', '3,5 hari', '8 GPU'.
 
-> <teks narasi>
+> Isi modelnya arsitektur Transformer, dari makalah delapan peneliti tahun 2017: Attention Is All You Need. Hasilnya skor terjemahan 41,8 BLEU, dilatih cuma tiga setengah hari di delapan GPU.
 
-## c04 — <Judul Bab 3>
+## c04 — Menebak Token Berikutnya
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: Rak server dan kata demi kata muncul berantai di layar, setiap kata baru lahir dari tebakan. HUD: '175 miliar parameter' (GPT-3).
 
-> <teks narasi>
+> Tugasnya sederhana: menebak token berikutnya. Diulang satu token demi satu token sampai jadi jawaban. GPT-3 melakukannya dengan 175 miliar parameter.
 
-## c05 — <Judul Bab 4>
+## c05 — Dilatih Penilaian Manusia
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Robot layanan membaca dua jawaban dan menunjuk yang lebih baik; timbangan menampilkan model kecil menang atas model besar. HUD: '1,3 miliar vs 175 miliar', '2022', '100x'.
 
-> <teks narasi>
+> Model mentah belum tentu nurut. Jadi tahun 2022 OpenAI melatihnya dengan penilaian manusia. Hasilnya aneh: model 1,3 miliar parameter lebih disukai daripada GPT-3 yang seratus kali lebih besar.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan: Kenapa Bisa Salah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Kalender menyorot 30 November 2022; kotak chat menampilkan jawaban rapi bertanda tanya merah. HUD: '30 Nov 2022', 'pratinjau riset'.
 
-> <teks narasi>
+> ChatGPT meluncur 30 November 2022 sebagai pratinjau riset. OpenAI sendiri mengakui, kadang jawabannya terdengar meyakinkan padahal salah. Saat pelatihan, tidak ada sumber kebenaran.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Rangkaian ringkas: ketik, angka, tebak, rangkai, dalam empat ikon; berakhir ke kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi jawaban itu tidak dicari, tapi dirangkai token demi token. Ketik, jadi angka, ditebak, dirangkai. Itu seluruh triknya. Ikuti AUDIRA untuk bedah teknologi lainnya.
+
+## Opsi hook lain
+
+1. Kata yang kamu ketik ke ChatGPT dipotong-potong dulu sebelum dibaca. Ini caranya.
+2. ChatGPT tidak mencari jawaban. Ia menebak, satu potongan kata sekali jalan.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **197 kata** ≈ **79–88 dtk**

@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP100`)
+# Naskah — Cara Kerja Gen Dominan dan Resesif: Warisan Biologis dari Mendel
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Close-up dua pasang mata biru berdampingan (orang tua), lalu bayi bermata cokelat muncul di antara mereka; HUD teks 'BIRU + BIRU = COKELAT?'
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Orang tua bermata biru, anak bermata cokelat. Mungkin? Mungkin. Dan itu membongkar mitos genetika yang diajarkan di sekolah.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Ladang biara abad ke-19, siluet biarawan menyiram tanaman polong; callout HUD '1865' dan 'Gregor Mendel'; logo AUDIRA kecil sebagai papan di ladang
 
-> <konteks singkat + "Di Audira, ...">
+> Mitos itu berawal dari seorang biarawan, Gregor Mendel. Tahun {1865|delapan belas enam puluh lima} dia melaporkan percobaannya pada kacang polong. Delapan tahun dia menanam, menyilangkan, dan menghitung.
 
-## c02 — <Judul Bab 1>
+## c02 — Percobaan kacang polong
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Tujuh bunga/sifat berganti cepat (tinggi, warna biji, bentuk polong); dua polong kuning dan hijau disilang; generasi pertama kuning semua; generasi kedua: tiga kuning satu hijau; HUD '28.000 tanaman' dan '3:1'
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Dia mengamati tujuh sifat. Dia menguji sekitar {28.000|dua puluh delapan ribu} tanaman. Polong kuning disilang dengan hijau: anak pertama kuning semua. Hijaunya hilang? Tidak. Di generasi berikutnya hijau muncul lagi, kira-kira tiga banding satu.
 
-## c03 — <Judul Bab 2>
+## c03 — Faktor tak terlihat, alel
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **36** · estimasi **15 dtk**
+- Visual: Diagram DNA/kromosom berpasangan: satu dari ayah, satu dari ibu; kotak Punnett menyala; versi dominan menutupi versi resesif seperti tirai
 
-> <teks narasi>
+> Mendel menyimpulkan ada faktor tak terlihat. Sekarang kita sebut gen. Kamu punya dua versi tiap gen, alel: satu dari ayah, satu dari ibu. Kalau keduanya beda, versi dominan yang tampil. Versi resesif cuma tertutup, tidak lenyap.
 
-## c04 — <Judul Bab 3>
+## c04 — Pada manusia
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **12 dtk**
+- Visual: Dua orang tua sehat membawa satu salinan gen bertanda; anak dengan dua salinan; siluet sel paru-paru (cystic fibrosis) lalu siluet otak (Huntington); label 'resesif' vs 'dominan'
 
-> <teks narasi>
+> Pada manusia sama. Cystic fibrosis itu resesif: dua orang tua sehat bisa sama-sama membawa satu salinan gen yang berubah. Huntington itu dominan: satu salinan saja sudah cukup untuk menimbulkan penyakit.
 
-## c05 — <Judul Bab 4>
+## c05 — Karya yang diabaikan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Naskah makalah tua di meja; kalender berputar dari 1884 ke 1900; tiga siluet ilmuwan tanpa wajah dengan nama de Vries, Correns, Tschermak muncul sebagai HUD
 
-> <teks narasi>
+> Mendel wafat tahun {1884|delapan belas delapan puluh empat}. Tahun {1900|sembilan belas ratus}, tiga ilmuwan, de Vries, Correns, dan Tschermak, memverifikasi temuannya secara terpisah.
 
-## c06 — <Judul Bab 5>
+## c06 — Kenapa mata biru bisa punya anak cokelat
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Peta kromosom 15 membesar, dua gen OCA2 dan HERC2 menyala; iris mata tembus pandang dengan butir pigmen melanin berkurang atau bertambah
 
-> <teks narasi>
+> Lalu kenapa mata biru bisa punya anak cokelat? Dulu dikira warna mata cuma diatur satu gen. Ternyata banyak gen terlibat, termasuk OCA2 dan HERC2 di kromosom {15|lima belas}.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Kotak Punnett memudar jadi untaian banyak gen berwarna; kalimat besar 'DOMINAN = TAMPIL, RESESIF = TERSEMBUNYI'; outro card AUDIRA
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi dominan bukan berarti lebih hebat, hanya yang tampil. Resesif bukan hilang, hanya menunggu. Itulah warisan Mendel, dari AUDIRA.
+
+## Opsi hook lain
+
+1. Mata biru bertemu mata biru, lahir bayi bermata cokelat. Gen apa yang bermain?
+2. Satu biarawan, 28.000 tanaman polong, dan aturan yang masih dipakai dokter sampai sekarang.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **201 kata** ≈ **80–89 dtk** @135–150 WPM
