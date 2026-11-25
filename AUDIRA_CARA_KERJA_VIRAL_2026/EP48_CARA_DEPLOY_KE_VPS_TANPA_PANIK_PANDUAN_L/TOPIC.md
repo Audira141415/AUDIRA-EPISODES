@@ -5,7 +5,11 @@ title: "Cara Deploy ke VPS Tanpa Panik: Panduan Lengkap Nginx + SSL"
 hook: "Dari zero sampai production dalam satu video"
 styleCandidates: ["DEVFORGE (2D)", "PRECISION (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Judul 'panduan lengkap' berlebihan untuk 85 dtk; angka 45 hari/2028 dan ambang Certbot perlu dicek ulang; logo Nginx/Let's Encrypt dilarang (rule 15)"
 ---
 
 # Cara Deploy ke VPS Tanpa Panik: Panduan Lengkap Nginx + SSL

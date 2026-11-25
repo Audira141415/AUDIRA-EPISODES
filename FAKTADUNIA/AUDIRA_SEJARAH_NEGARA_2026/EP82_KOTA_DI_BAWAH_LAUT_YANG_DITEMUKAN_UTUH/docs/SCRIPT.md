@@ -1,93 +1,69 @@
-# SCRIPT — `Fakta sejarah unik negara-negara di dunia` (`EP82`)
+# Naskah — Kota di Bawah Laut yang Ditemukan Utuh
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: kamera menembus permukaan laut biru jernih, turun ke dasar pasir; garis-garis dinding batu membentuk jalan kota terlihat dari atas. HUD: "3–4 m" dan "±5.000 TAHUN".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Di bawah air sedalam tiga sampai empat meter di Yunani, ada kota berumur sekitar lima ribu tahun. Jalan-jalannya masih kelihatan.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: peta Yunani zoom ke Peloponnese, pin di Teluk Vatika, Laconia, di depan Pulau Elafonisos. Label nama "PAVLOPETRI" muncul di peta; papan HUD bertulisan AUDIRA.
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya Pavlopetri, di Teluk Vatika, Laconia. Ini AUDIRA, dan para arkeolog menyebutnya kota tenggelam tertua yang pernah ditemukan.
 
-## c02 — <Judul Bab 1>
+## c02 — Penemuan 1967
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: perahu kecil di permukaan, penyelam bersnorkel menarik pita meteran di atas dinding batu; kertas denah tangan tergambar garis demi garis. HUD: "1967 · Nicholas Flemming", lalu "1968 · Tim Cambridge".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tahun seribu sembilan ratus enam puluh tujuh, oseanografer Nicholas Flemming menemukannya. Setahun kemudian, tim Cambridge memetakannya cuma pakai snorkel dan pita meteran.
 
-## c03 — <Judul Bab 2>
+## c03 — Denah hampir lengkap
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: tampilan atas (top-down) denah kota: jalan menyala satu per satu, blok bangunan terhitung, deretan makam batu kecil di tepi. HUD counter: "15 BANGUNAN", "±40 MAKAM".
 
-> <teks narasi>
+> Yang bikin heboh, denah kotanya hampir lengkap, persis seperti peta. Ada jalan, setidaknya lima belas bangunan, dan sekitar empat puluh makam batu.
 
-## c04 — <Judul Bab 3>
+## c04 — Survei 2009
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **35** · estimasi **15 dtk**
+- Visual: wahana robot bawah air dan pancaran sonar menyapu dasar laut; grid fotogrametri membangun model 3D reruntuhan; pecahan tembikar di-scan. HUD: "2009 · Universitas Nottingham", "+9.000 m²", "±2800 SM".
 
-> <teks narasi>
+> Tahun dua ribu sembilan, tim Universitas Nottingham datang dengan sonar dan kamera robot. Mereka menemukan sembilan ribu meter persegi bangunan baru. Tembikarnya membuktikan kota ini sudah dihuni sejak sekitar dua ribu delapan ratus sebelum Masehi.
 
-## c05 — <Judul Bab 4>
+## c05 — Kehidupan di kota
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: rekonstruksi kota di daratan zaman perunggu: alat tenun dengan pemberat tanah liat, kain dijemur di halaman, lalu guci besar (pithos) diturunkan dari kapal dagang. HUD: rute panah "KRETA → PAVLOPETRI".
 
-> <teks narasi>
+> Penduduknya menenun kain, kelihatan dari banyaknya pemberat alat tenun. Guci besar dari Kreta juga ditemukan, tanda kota ini pelabuhan dagang.
 
-## c06 — <Judul Bab 5>
+## c06 — Kenapa tenggelam
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **13 dtk**
+- Visual: penampang (cross-section) pantai: tanah retak dan turun karena gempa, garis air naik bertahap, kota perlahan tertutup laut; lalu kontras dengan kota lain yang ditimpa bangunan baru dan ladang. HUD: "±1000 SM", ikon gempa, panah muka laut naik.
 
-> <teks narasi>
+> Lalu kenapa tenggelam? Sekitar seribu sebelum Masehi, gempa demi gempa menurunkan daratannya, sementara permukaan laut pelan-pelan naik. Karena tidak pernah muncul lagi, kota ini tidak ditimpa bangunan baru atau dibajak jadi ladang.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: model 3D digital kota berputar, lalu transisi ke hero shot bawah air berkilau cahaya matahari; penyelam melayang di atas jalan kota; outro card AUDIRA. HUD: badge "PERTAMA DIPETAKAN PENUH 3D".
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Hasilnya, Pavlopetri jadi kota bawah air pertama yang dipetakan digital penuh dalam tiga dimensi. Kota zaman perunggu, nyaris utuh, menunggu di dasar laut. Kamu berani menyelam ke sana?
+
+## Opsi hook lain
+
+1. Kota ini lebih tua dari piramida Giza, dan kamu cuma perlu snorkel untuk melihatnya. (cek dulu: Piramida Giza ±2560 SM vs hunian Pavlopetri ±2800 SM; belum ada di register)
+2. Tiga meter di bawah ombak Yunani, ada jalanan yang terakhir dilewati orang tiga ribu tahun lalu.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **197 kata** ≈ **82 dtk**

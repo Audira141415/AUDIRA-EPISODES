@@ -1,93 +1,69 @@
-# SCRIPT — `Fakta sejarah unik negara-negara di dunia` (`EP81`)
+# Naskah — Pulau yang Tidak Boleh Dikunjungi Manusia — Selamanya
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: kamera menukik dari laut ke pulau hutan berkarang; garis merah radius putus-putus menyala melingkari pulau, ikon borgol dan tanda bahaya muncul di HUD.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Ada satu pulau yang kalau kamu injak, kamu bisa ditangkap polisi. Atau pulang tinggal nama.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: peta Teluk Benggala zoom ke Kepulauan Andaman, pin "North Sentinel"; callout HUD "±60 km²"; siluet suku tanpa wajah di tepi hutan.
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya North Sentinel, pulau kecil di Kepulauan Andaman, India. Luasnya cuma sekitar enam puluh kilometer persegi, tertutup hutan lebat dan karang. Penghuninya suku Sentinel, salah satu suku paling terisolasi di dunia.
 
-## c02 — <Judul Bab 1>
+## c02 — Pendaratan 1880
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: kapal kolonial dan sekoci mendarat di pantai, tone sepia; callout HUD "1880 · Maurice Portman" dan ikon "6 orang dibawa: 2 lansia + 4 anak"; siluet anak-anak kembali ke pantai.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tahun 1880, perwira Inggris Maurice Portman mendarat di sana. Ia membawa pergi enam penduduk, sepasang lansia dan empat anak. Yang tua meninggal karena sakit, anak-anaknya dipulangkan.
 
-## c03 — <Judul Bab 2>
+## c03 — Kelapa damai 1991
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: perahu tim India di air dangkal, kelapa mengapung ke arah pantai; callout HUD "1967: misi hadiah dimulai" lalu "1991 · Madhumala Chattopadhyay"; tangan siluet menerima kelapa.
 
-> <teks narasi>
+> Sejak 1967, India mencoba bersahabat lewat hadiah. Tahun 1991, antropolog Madhumala Chattopadhyay menyodorkan kelapa, dan untuk pertama kalinya mereka menerimanya dengan damai.
 
-## c04 — <Judul Bab 3>
+## c04 — Panah kembali bicara
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: montase cepat tiga kartu tahun: helikopter di atas pantai pasca tsunami dengan siluet pemanah ("2004"), perahu nelayan hanyut ke karang ("2006 · 2 nelayan"), pantai kosong di senja dengan jejak kaki ("2018 · John Allen Chau"). Tanpa wajah dan tanpa jasad.
 
-> <teks narasi>
+> Tapi setelah itu, panah kembali bicara. Usai tsunami 2004, seorang pria memanah helikopter. Tahun 2006, dua nelayan tewas. Tahun 2018, misionaris Amerika John Allen Chau terbunuh, dan jasadnya tak pernah diambil.
 
-## c05 — <Judul Bab 4>
+## c05 — Zona larangan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: tampak atas pulau, cincin radius 5 km mengembang di laut; dokumen regulasi "1956" berstempel; perahu karet kecil dicegat kapal patroli, callout "2025: turis ditangkap".
 
-> <teks narasi>
+> Karena itu, aturan India sejak 1956 melarang siapa pun mendekat dalam radius lima kilometer. Pelanggar ditangkap, seperti turis yang nekat mendarat tahun 2025.
 
-## c06 — <Judul Bab 5>
+## c06 — Alasan sebenarnya
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: diagram kuman/virus flu menyebar dari perahu ke pulau, desa siluet memudar; penghitung HUD "50–150 orang" berdenyut.
 
-> <teks narasi>
+> Alasannya bukan cuma panah. Mereka tak punya kekebalan terhadap penyakit luar, bahkan flu biasa. Satu kunjungan bisa memusnahkan seluruh suku, yang jumlahnya diperkirakan cuma lima puluh sampai seratus lima puluh orang.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: kamera mundur tinggi, pulau utuh di golden hour dikelilingi cincin pelindung yang berubah dari merah jadi emas; papan HUD "AUDIRA"; outro card.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi larangan itu bukan untuk melindungi kita dari mereka. Justru melindungi mereka dari kita. Ikuti AUDIRA untuk fakta dunia lainnya.
+
+## Opsi hook lain
+
+1. Lima kilometer. Lewat dari garis ini, kamu bisa ditangkap, atau kena panah.
+2. Ini satu-satunya pulau di mana pemerintah India sendiri memilih untuk tidak masuk.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **199 kata** ≈ **84 dtk**

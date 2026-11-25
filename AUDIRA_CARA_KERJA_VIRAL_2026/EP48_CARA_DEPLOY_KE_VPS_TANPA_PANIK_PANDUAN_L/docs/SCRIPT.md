@@ -1,93 +1,69 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP48`)
+# Naskah — Cara Deploy ke VPS Tanpa Panik: Panduan Lengkap Nginx + SSL
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **10** · estimasi **4 dtk**
+- Visual: terminal hitam berkedip, satu perintah salah, lalu pintu baja server terbanting menutup dengan kursor terjebak di luar. HUD: "TERKUNCI".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Satu perintah salah, dan kamu terkunci di luar servermu sendiri.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: rak server sewaan menyala sendirian di ruang gelap, kosong tanpa label; ikon gembok abu-abu belum terpasang.
 
-> <konteks singkat + "Di Audira, ...">
+> VPS itu komputer sewaan yang selalu nyala di internet. Masalahnya, waktu baru dibuat, dia masih polos. Belum ada web server, belum ada gembok HTTPS. Ini peta lima langkahnya.
 
-## c02 — <Judul Bab 1>
+## c02 — Kunci SSH
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: kunci fisik masuk ke lubang pintu server; papan password di sampingnya dicoret silang. HUD chip: "PasswordAuthentication = yes (bawaan)".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Langkah satu, pintu masuk. Login lewat SSH pakai kunci, bukan password. Bawaannya, OpenSSH masih menerima password, jadi matikan setelah kuncimu terbukti jalan.
 
-## c03 — <Judul Bab 2>
+## c03 — Firewall UFW
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: pagar tumbuh mengelilingi server; satu gerbang bertanda 22 terbuka lebih dulu sebelum pagar dikunci. HUD callout besar: "PORT 22".
 
-> <teks narasi>
+> Langkah dua, pagar. Begitu UFW dinyalakan, semua koneksi masuk ditolak. Jadi izinkan port 22 dulu, baru aktifkan. Kalau urutannya kebalik, itulah momen kamu terkunci di luar.
 
-## c04 — <Judul Bab 3>
+## c04 — Nginx
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: loket penjaga di depan gedung kota mini menerima paket dari dua jalur bertanda 80 dan 443, meneruskannya ke gedung aplikasi. Terminal kecil menampilkan `nginx -t` lalu centang hijau. Name plate teks "Nginx", tanpa logo.
 
-> <teks narasi>
+> Langkah tiga, penjaga pintu. Nginx menerima tamu di port 80 dan 443, lalu meneruskannya ke aplikasimu. Sebelum reload, jalankan nginx minus t. Perintah ini mengecek konfigurasimu sebelum dipakai.
 
-## c05 — <Judul Bab 4>
+## c05 — Sertifikat Let's Encrypt
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: gembok emas terbang dari menara teks "Let's Encrypt" (name plate, tanpa logo) ke gerbang 80, lalu terpasang di jalur 443. HUD: "GRATIS · HTTP-01 · PORT 80".
 
-> <teks narasi>
+> Langkah empat, gembok. Certbot meminta sertifikat gratis dari Let's Encrypt dan memasangnya langsung ke Nginx. Syaratnya, port 80 harus terbuka, karena verifikasi HTTP-01 cuma jalan di port itu.
 
-## c06 — <Judul Bab 5>
+## c06 — Perpanjangan otomatis
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **36** · estimasi **15 dtk**
+- Visual: jam dinding raksasa dengan cincin hitung mundur 90 hari; di sepertiga terakhir cincin berubah hijau dan robot kecil mengganti gembok. Cincin lalu menyusut jadi 45. HUD: "90 HARI → 45 HARI · 2028".
 
-> <teks narasi>
+> Langkah lima, yang paling sering dilupakan: perpanjangan. Sertifikat Let's Encrypt cuma berlaku 90 hari. Certbot memperbaruinya otomatis saat umurnya tinggal sepertiga. Dan paling lambat 2028, umurnya dipangkas jadi 45 hari. Perpanjangan manual makin tidak masuk akal.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: kamera mundur, lima lapis menyatu: kunci, pagar, penjaga, gembok, jam; kota mini menyala aman di malam hari. Outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Kunci, pagar, penjaga, gembok, dan jam otomatis. Lima lapis ini yang bikin servermu aman ditinggal tidur. Simpan videonya buat deploy pertamamu, dan ikuti AUDIRA untuk cara kerja lainnya.
+
+## Opsi hook lain
+
+1. Sertifikat HTTPS gratismu cuma hidup 90 hari, dan sebentar lagi tinggal 45.
+2. Deploy pertama jarang gagal karena kode. Biasanya karena lima langkah ini dilewati.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **206 kata** ≈ **85 dtk** (82–92 dtk @135–150 WPM)

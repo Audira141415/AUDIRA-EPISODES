@@ -1,33 +1,17 @@
-# SOURCE_REGISTER — `Fakta sejarah unik negara-negara di dunia`
+# Source Register — Pulau yang Tidak Boleh Dikunjungi Manusia — Selamanya
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Suku Sentinel dan suku asli Andaman dilindungi Andaman and Nicobar (Protection of Aboriginal Tribes) Regulation, 1956; upaya India menjangkau mereka dimulai 1967 dan selalu disambut permusuhan; 2006 dua nelayan pencari kepiting ilegal tidak kembali; Agustus 2018 syarat Restricted Area Permit dicabut untuk 29 pulau berpenghuni | "North Sentinel Island…" (Explained), Jay Mazoomdaar, The Indian Express, 2018 | https://indianexpress.com/article/explained/north-sentinel-island-andaman-nicobar-tribe-american-killed-5460144/ | 2026-11-25 | HIGH |
+| 2 | Semua orang luar, warga India maupun asing, dilarang mendekat dalam radius 5 km (3 mil) dari pulau untuk melindungi penduduk dari penyakit luar; turis AS Mykhailo Polyakov ditangkap 2025 setelah mendarat ±5 menit; suku diperkirakan ±150 orang | "US tourist arrested for landing on forbidden Indian tribal island", The Guardian, 2025 | https://www.theguardian.com/world/2025/apr/03/us-tourist-arrested-for-landing-on-forbidden-indian-tribal-island | 2026-11-25 | HIGH |
+| 3 | Misionaris AS John Allen Chau tewas di North Sentinel November 2018 (antara 16–17 Nov); nelayan melihat jasadnya diseret dan dikubur di pantai; otoritas India memutuskan tidak mengambil jasadnya | "India has no plans to recover body of US missionary killed by tribe", The Guardian, 2018 | https://www.theguardian.com/world/2018/nov/28/india-body-john-allen-chau-missionary-killed-by-sentinelese-tribe | 2026-11-25 | HIGH |
+| 4 | Chau dibunuh dengan panah saat mendarat 17 Nov 2018; tujuh orang ditangkap; pada 2006 dua nelayan tewas | "John Allen Chau: 'Incredibly dangerous' to retrieve body from North Sentinel", BBC News, 2018 | https://www.bbc.com/news/world-asia-india-46345231 | 2026-11-25 | HIGH |
+| 5 | Januari 1991: tim Anthropological Survey of India termasuk antropolog Madhumala Chattopadhyay menyodorkan kelapa dan suku Sentinel menerimanya dengan damai; ia perempuan pertama yang melakukan kontak | "Meet the first woman to contact one of the world's most isolated tribes", National Geographic, 2018 | https://www.nationalgeographic.com/premium/article/first-woman-chattopadhyay-contact-sentinelese-andaman | 2026-11-25 | HIGH |
+| 6 | India memperdebatkan cara menghitung suku Sentinel di sensus 2027; sejak sensus 2011 berlaku zona eksklusi 5 km | "India wrestles with how census can count tribe that shuns contact with outside world", Penny Macrae, The Guardian, 2025 | https://www.theguardian.com/world/2025/jul/26/india-census-2027-north-sentinel-island-most-isolated-tribe | 2026-11-25 | HIGH |
+| 7 | Kajian ulang situasi suku Sentinel pasca pembunuhan pendakwah AS, di jurnal Anthropological Survey of India vol. 68 no. 1 | "The Sentinelese of North Sentinel Island: A Reappraisal of Tribal Scenario in an Andaman Island in the Context of Killing of an American Preacher", M. Sasikumar, Journal of the Anthropological Survey of India, 2019 (doi:10.1177/2277436X19844882) | https://doi.org/10.1177/2277436X19844882 | 2026-11-25 | HIGH |
+| 8 | Suku Sentinel adalah masyarakat adat paling terisolasi di dunia; 1880 Maurice Vidal Portman membawa sepasang lansia dan empat anak ke Port Blair; foto pasca tsunami 2004 menunjukkan pria Sentinel memanah helikopter; 2006 nelayan Sunder Raj dan Pandit Tiwari tewas; mereka tak punya kekebalan terhadap penyakit luar seperti flu; populasi diperkirakan 50–150 orang | "The Sentinelese", Survival International, diakses 2026 | https://www.survivalinternational.org/peoples/sentinelese | 2026-11-25 | MEDIUM |
+| 9 | Luas pulau ±59,67 km², ±50 km barat Port Blair; ekspedisi Portman Januari 1880, pasangan lansia meninggal karena sakit dan empat anak dipulangkan; kontak damai pertama 4 Januari 1991 (T.N. Pandit, AnSI); sensus 2011 hanya mencatat 15 orang (perkiraan dari pengamatan); gempa 2004 mengangkat pulau 1,5–2 m | "North Sentinel Island", Wikipedia (dengan rujukan), revisi diakses 2026-11-25 | https://en.wikipedia.org/wiki/North_Sentinel_Island | 2026-11-25 | MEDIUM |
+| 10 | Suku Sentinel disebut telah mendiami pulau "diperkirakan 55.000 tahun" tanpa kontak (angka perkiraan, bukan hasil uji genetik suku Sentinel) | "North Sentinel Island…" (Explained), Jay Mazoomdaar, The Indian Express, 2018 | https://indianexpress.com/article/explained/north-sentinel-island-andaman-nicobar-tribe-american-killed-5460144/ | 2026-11-25 | MEDIUM |
+| 11 | Kematian Chau menyorot kembali masyarakat paling terisolasi; suku Sentinel menyerang dengan busur dan panah | Artikel BBC News tentang suku terisolasi pasca kematian Chau, 2018 | https://www.bbc.com/news/world-46301059 | 2026-11-25 | MEDIUM |

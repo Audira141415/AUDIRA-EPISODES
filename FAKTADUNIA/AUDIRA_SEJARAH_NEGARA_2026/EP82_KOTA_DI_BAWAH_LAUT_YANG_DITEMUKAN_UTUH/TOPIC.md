@@ -5,7 +5,11 @@ title: "Kota di Bawah Laut yang Ditemukan Utuh"
 hook: "Pavlopetri di Yunani tenggelam 5.000 tahun lalu dan baru ditemukan lengkap"
 styleCandidates: ["CHRONICLE (2D)", "WORLDFORGE (3D)", "VISUALINVESTIGATION (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook asli salah (kota berumur ±5.000 tahun, tenggelam ±1000 SM) dan waktu tenggelam masih diperdebatkan; naskah sudah dikoreksi."
 ---
 
 # Kota di Bawah Laut yang Ditemukan Utuh

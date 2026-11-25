@@ -1,33 +1,16 @@
-# SOURCE_REGISTER — `Fakta sejarah unik negara-negara di dunia`
+# Source Register — Kota di Bawah Laut yang Ditemukan Utuh
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
+| 1 | Situs ditemukan 1967 oleh N. C. Flemming (Institute of Oceanography), lepas pantai selatan Laconia di seberang Pulau Elafonisos; 1968 Cambridge Underwater Exploration Group mensurvei dan memetakan denah kota | Pavlopetri: an Underwater Bronze Age Town in Laconia, A. Harding, G. Cadogan, R. Howell, The Annual of the British School at Athens, 1969 | https://doi.org/10.1017/s0068245400014544 | 2026-11-25 | HIGH |
+| 2 | Survei 2009: tambahan 9.000 m² bangunan baru; tembikar menunjukkan hunian sepanjang Zaman Perunggu, setidaknya 2800 SM–1100 SM (sebelumnya dikira Mykenai 1600–1000 SM); survei 1968 pakai snorkel dan pita meteran | World's oldest submerged town dates back 5,000 years, University of Nottingham (press release), Oktober 2009 (arsip) | https://web.archive.org/web/20120707013134/http://www.nottingham.ac.uk/news/pressreleases/2009/october/worlds-oldest-submerged-town-dates-back-5000-years.aspx | 2026-11-25 | HIGH |
+| 3 | Pavlopetri berada di kedalaman 3–4 m lepas pantai selatan Laconia; ada bangunan, halaman, jalan, makam bilik (chamber tomb) | Race to preserve the world's oldest submerged town, University of Nottingham (press release), Mei 2009 (arsip) | https://web.archive.org/web/20111123035433/http://nottingham.ac.uk/news/pressreleases/2009/may/race-to-preserve-the-worlds-oldest-submerged-town.aspx | 2026-11-25 | HIGH |
+| 4 | Pemetaan kota tenggelam tertua di dunia dengan stereo-vision dari wahana robotik (Australian Centre for Field Robotics + Nottingham) | Reconstructing Pavlopetri: Mapping the world's oldest submerged town using stereo-vision, I. Mahon, O. Pizarro, M. Johnson-Roberson, A. Friedman, S. B. Williams, J. C. Henderson, IEEE ICRA, 2011 | https://doi.org/10.1109/icra.2011.5980536 | 2026-11-25 | HIGH |
+| 5 | Jon Henderson: tidak diragukan ini kota tenggelam tertua di dunia; tenggelam sekitar 1000 SM; situs ±30.000 m² dasar laut; kemungkinan megaron | Lost Greek city that may have inspired Atlantis myth gives up secrets, The Guardian, 2009-10-16 | https://www.theguardian.com/science/2009/oct/16/lost-greek-city-atlantis-myth | 2026-11-25 | HIGH |
+| 6 | Pavlopetri menjadi kota bawah air pertama yang dipetakan dan direkam digital penuh dalam tiga dimensi (musim 2011); rumah, halaman, jalan tertata; masa jaya bersamaan peradaban Minoa (Kreta) dan Mykenai | Pavlopetri: A window on to Bronze Age suburban life, Jon Henderson, BBC News Magazine, 2011-10-08 | https://www.bbc.co.uk/news/magazine-15191614 | 2026-11-25 | HIGH |
+| 7 | Teluk Vatika, Laconia; denah kota hampir lengkap (jalan, bangunan, makam); setidaknya 15 bangunan di kedalaman 3–4 m; ±40 makam cist + 2 makam bilik; banyak pemberat alat tenun (industri tekstil); pithoi dari Kreta = pelabuhan dagang; tenggelam karena gempa + kenaikan muka laut, tidak pernah muncul lagi sehingga tidak ditimpa bangunan atau dibajak; dinding pertama dicatat Fokion Negris 1904 | Pavlopetri, Wikipedia (bersitasi), revisi 2026-11-10 | https://en.wikipedia.org/wiki/Pavlopetri | 2026-11-25 | MEDIUM |
+| 8 | Ancaman situs saat ini (jangkar kapal, sedimen, polusi) dan strategi perlindungan | Preserving Pavlopetri: Current Challenges and Future Strategies for Protecting the World's Oldest Submerged Town, J. C. Henderson, N. Flemming, International Journal of Nautical Archaeology, 2026 | https://doi.org/10.1080/10572414.2026.2685632 | 2026-11-25 | MEDIUM |
 
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+Catatan: #8 hanya metadata Crossref (abstrak tidak tersedia), dipakai sebagai konteks, bukan angka di VO. Halaman World Monuments Fund (https://www.wmf.org/project/pavlopetri) terbuka tetapi teksnya tidak terbaca lewat curl, jadi tidak dicatat sebagai fakta.

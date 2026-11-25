@@ -5,7 +5,11 @@ title: "Kenapa Code Review Kamu Nggak Efektif (dan Cara Memperbaikinya)"
 hook: "Banyak tim nggak dapat value dari code review karena melakukan ini"
 styleCandidates: ["BONGKAR (2D)", "CHARACTERFLOW (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Rule 15: nama Microsoft/Google/Cisco hanya name plate teks, tanpa logo; angka Cisco dari materi vendor (MEDIUM)."
 ---
 
 # Kenapa Code Review Kamu Nggak Efektif (dan Cara Memperbaikinya)

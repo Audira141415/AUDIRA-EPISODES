@@ -1,93 +1,69 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP50`)
+# Naskah — Monorepo vs Polyrepo: Mana yang Lebih Baik untuk Tim Kamu
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: satu gudang raksasa berisi tumpukan kardus kode menjulang; HUD menghentak "2 MILIAR BARIS KODE" lalu stempel merah "JANGAN IKUT-IKUTAN?". Name plate teks "Google" (tanpa logo).
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Google simpan dua miliar baris kode di satu gudang. Kenapa banyak engineer bilang jangan ditiru? Ini bedahan AUDIRA.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: layar terbelah. Kiri: satu gudang besar dengan semua kardus proyek. Kanan: deretan gudang kecil, tiap gudang satu kardus. Label HUD "MONOREPO" vs "POLYREPO".
 
-> <konteks singkat + "Di Audira, ...">
+> Ada dua cara menyimpan kode. Monorepo: semua proyek di satu repositori. Polyrepo: tiap proyek punya repositori sendiri. Ini mengatur cara tim kerja tiap hari.
 
-## c02 — <Judul Bab 1>
+## c02 — Skala Google
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **41** · estimasi **17 dtk**
+- Visual: kamera terbang masuk ke gudang; rak server berderet; counter HUD "86 TB" dan "25.000+ DEVELOPER" (chip tahun "JAN 2015"); dua aliran kardus masuk, label "16.000 manusia" dan "24.000 otomatis"; papan nama "PIPER".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Januari 2015, repo Google sekitar delapan puluh enam terabyte, dipakai lebih dari dua puluh lima ribu developer. Tiap hari kerja masuk enam belas ribu perubahan manusia, plus dua puluh empat ribu otomatis. Git biasa nggak kuat, jadi mereka bikin sendiri: Piper.
 
-## c03 — <Judul Bab 2>
+## c03 — Windows pindah ke Git
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: truk kontainer mengangkut ribuan kardus ke satu dermaga gudang; HUD "3,5 JUTA FILE", "300 GB", "±4.000 ENGINEER", chip "2017". Name plate teks "Windows · Microsoft" (tanpa logo).
 
-> <teks narasi>
+> Microsoft menyusul. Tahun 2017, kode Windows, tiga setengah juta file dan tiga ratus gigabyte, dipindah ke satu repo Git untuk sekitar empat ribu engineer.
 
-## c04 — <Judul Bab 3>
+## c04 — Untungnya monorepo
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: denah gudang transparan, semua rak terlihat; satu balok "API" diganti, garis berpendar menjalar ke semua proyek pemakai dan ikut berubah serentak. Callout "1 COMMIT, SEMUA IKUT".
 
-> <teks narasi>
+> Untungnya jelas. Semua kode kelihatan, gampang dicari dan dipakai ulang. Ubah satu API, semua kode pemakainya bisa ikut diperbarui sekaligus.
 
-## c05 — <Judul Bab 4>
+## c05 — Kartu polyrepo
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: kembali ke deretan gudang kecil; tiap pintu punya gembok sendiri; tiap gudang memakai perkakas berbeda. Kartu HUD "SURVEI 2018" dengan tiga ikon: perkakas bebas, akses terbatas, stabil.
 
-> <teks narasi>
+> Polyrepo punya kartu sendiri. Survei engineer Google tahun 2018: repo terpisah memberi kebebasan memilih tools, akses yang bisa dibatasi, dan kode lebih stabil.
 
-## c06 — <Judul Bab 5>
+## c06 — Biaya tersembunyi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **13 dtk**
+- Visual: gudang tunggal mulai sesak, kabel dependensi saling membelit, roda gigi build berputar berat; kartu kutipan teks "Matt Klein, 2019" (tanpa foto) dan kutipan paper "not for everyone".
 
-> <teks narasi>
+> Kritiknya keras. Matt Klein, engineer Lyft, menulis tahun 2019: di skala besar, monorepo tetap menghadapi masalah polyrepo, plus kode yang saling terikat. Penulis paper Google pun mengakui, ini bukan untuk semua orang.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: timbangan besar; piring kiri "TOOLING + KODE TERBUKA", piring kanan "BATAS AKSES + TOOLS BEBAS"; timbangan bergoyang lalu dua jalur menyala ke gudang besar dan deretan gudang kecil. Outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jangan tanya mana yang keren. Tanya: timmu siap investasi tooling, dan nyaman semua kode terbuka? Kalau iya, monorepo. Butuh batas tegas? Polyrepo. Ikuti AUDIRA buat bedahan berikutnya.
+
+## Opsi hook lain
+
+1. Satu repo, dua miliar baris kode. Google bilang berhasil, tapi penulisnya sendiri bilang: ini bukan untuk semua orang.
+2. Kodemu satu gudang besar, atau puluhan gudang kecil? Pilihan ini diam-diam menentukan cara timmu kerja.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **209 kata** ≈ **84–93 dtk**

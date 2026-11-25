@@ -5,7 +5,11 @@ title: "Pulau yang Tidak Boleh Dikunjungi Manusia — Selamanya"
 hook: "North Sentinel Island: suku yang menolak kontak dengan dunia luar selama ribuan tahun"
 styleCandidates: ["CHRONICLE (2D)", "VISUALINVESTIGATION (2D)", "WORLDFORGE (3D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 5
+awet: ya
+risiko: "Isu sensitif suku adat dan kematian (Chau, nelayan): visual tanpa wajah/jasad, hindari framing 'suku pembunuh'; judul 'selamanya' dan hook 'ribuan tahun' tidak akurat."
 ---
 
 # Pulau yang Tidak Boleh Dikunjungi Manusia — Selamanya

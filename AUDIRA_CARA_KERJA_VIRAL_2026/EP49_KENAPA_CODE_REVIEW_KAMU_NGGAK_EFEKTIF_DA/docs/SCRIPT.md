@@ -1,93 +1,69 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP49`)
+# Naskah — Kenapa Code Review Kamu Nggak Efektif (dan Cara Memperbaikinya)
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **9** · estimasi **4 dtk**
+- Visual: layar diff kode, kaca pembesar menyapu baris, ikon kumbang "BUG" tertangkap lalu dicoret merah; teks kinetik "DATANYA BILANG LAIN".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Code review kamu buat nangkep bug? Datanya bilang lain.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: tumpukan kartu komentar review dilempar ke meja riset, counter HUD "570 KOMENTAR" berputar, chip tahun "2013", name plate teks "Microsoft" (tanpa logo).
 
-> <konteks singkat + "Di Audira, ...">
+> Tahun 2013, peneliti membedah 570 komentar review dari berbagai tim di Microsoft. Mereka cuma ingin tahu satu hal: review itu sebenarnya menghasilkan apa?
 
-## c02 — <Judul Bab 1>
+## c02 — Ekspektasi vs kenyataan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: kartu-kartu tersortir ke wadah berlabel; wadah "BUG" kecil dengan callout "14%", wadah besar "KETERBACAAN", "SOLUSI LAIN", "BERBAGI ILMU" penuh.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Hasilnya mengejutkan. Nemu bug memang alasan nomor satu orang melakukan review. Tapi komentar soal bug cuma 14 persen. Sisanya soal keterbacaan, solusi alternatif, dan berbagi ilmu.
 
-## c03 — <Judul Bab 2>
+## c03 — Studi kedua
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: diagram donat terbelah; irisan kecil "≈15% BUG" berdenyut, setengah lingkaran "≥50% PERAWATAN KODE" menyala; chip tahun "2015".
 
-> <teks narasi>
+> Studi tahun 2015 menemukan pola yang mirip. Cuma sekitar 15 persen komentar yang menunjuk kemungkinan bug. Paling sedikit separuhnya membahas perawatan kode jangka panjang.
 
-## c04 — <Judul Bab 3>
+## c04 — Penyebab 1: ukuran
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **36** · estimasi **15 dtk**
+- Visual: tumpukan file diff meninggi; meter "komentar berguna" turun saat file bertambah; penggaris baris menandai zona hijau "200–400 BARIS", jam pasir "60 MENIT".
 
-> <teks narasi>
+> Lalu kenapa review sering terasa sia-sia? Penyebab pertama: ukuran. Makin banyak file dalam satu review, makin sedikit komentar yang berguna. Studi tim Cisco menyarankan 200 sampai 400 baris sekali duduk, dan jangan lebih dari 60 menit.
 
-## c05 — <Judul Bab 4>
+## c05 — Penyebab 2: konteks
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: karakter reviewer tanpa wajah di depan peta kode berkabut; kabut menipis tiap kunjungan (1, 2, 3); bar "33%" tumbuh jadi "67%".
 
-> <teks narasi>
+> Penyebab kedua: reviewer yang asing dengan kodenya. Di review pertama, cuma 33 persen komentarnya dianggap berguna. Saat meninjau bagian yang sama untuk ketiga kalinya, angkanya naik jadi 67 persen.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan: perubahan kecil, review cepat
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: arus perubahan kecil berbentuk balok mengalir cepat di conveyor; counter "9 JUTA", kartu "MEDIAN 24 BARIS", stopwatch "< 4 JAM"; name plate teks "Google" (tanpa logo).
 
-> <teks narasi>
+> Google menunjukkan kebalikannya. Dari 9 juta perubahan, median ukurannya cuma 24 baris, dan median seluruh proses review di bawah 4 jam.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: checklist 3 langkah tercentang satu per satu ("±100 BARIS", "REVIEWER KENAL KODE", "≤ 1 HARI KERJA"), lalu outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi resepnya begini. Pecah perubahan jadi kecil, sekitar 100 baris. Pilih reviewer yang kenal kodenya. Balas paling lambat satu hari kerja. Ikuti AUDIRA untuk bongkar cara kerja lainnya.
+
+## Opsi hook lain
+
+1. Cuma 14 persen komentar code review yang ngomongin bug. Terus sisanya buat apa?
+2. Pull request seribu baris itu bukan di-review. Itu di-scroll.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **196 kata** ≈ **84 dtk**

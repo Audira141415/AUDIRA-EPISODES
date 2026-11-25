@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Cara kerja benda dan fenomena viral yang jarang diketahui`
+# Source Register — Kenapa Code Review Kamu Nggak Efektif (dan Cara Memperbaikinya)
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Studi 2013 di Microsoft: 570 komentar review (200 thread) diklasifikasi manual; 17 developer dari 16 tim produk diamati; survei 165 manajer + 873 programmer | Expectations, Outcomes, and Challenges of Modern Code Review, Bacchelli & Bird, ICSE 2013 | https://doi.org/10.1109/ICSE.2013.6606617 | 2026-11-25 | HIGH |
+| 2 | Menemukan defect = motivasi utama bagi 44% programmer, tapi komentar kategori defect hanya 78 (14%), urutan ke-4 dari 9; kategori terbanyak = code improvement 29%; manfaat lain: transfer pengetahuan, kesadaran tim, solusi alternatif; pemahaman kode = tantangan utama | Expectations, Outcomes, and Challenges of Modern Code Review, Bacchelli & Bird, ICSE 2013 (PDF penulis) | https://sback.it/publications/icse2013.pdf | 2026-11-25 | HIGH |
+| 3 | Hanya sekitar 15% komentar reviewer menunjuk kemungkinan defect; minimal 50% komentar soal maintainability jangka panjang | Code Reviews Do Not Find Bugs: How the Current Code Review Best Practice Slows Us Down, Czerwonka, Greiler & Tilford, ICSE SEIP 2015 | https://doi.org/10.1109/ICSE.2015.131 | 2026-11-25 | HIGH |
+| 4 | Reviewer tanpa paparan sebelumnya ke bagian kode: ~33% komentar dinilai berguna; review ketiga pada bagian sama: ~67%. Kegunaan komentar turun saat jumlah file bertambah, terasa mulai ≥ 20 file | Czerwonka, Greiler & Tilford, ICSE SEIP 2015 (PDF penulis) | https://www.michaelagreiler.com/wp-content/uploads/2019/02/Code-Reviews-Do-Not-Find-Bugs.-How-the-Current-Code-Review-Best-Practice-Slows-Us-Down.pdf | 2026-11-25 | HIGH |
+| 5 | Studi review di Google: log 9 juta perubahan; median 24 baris diubah; median reviewer 1; median latensi seluruh proses review < 4 jam; 70% perubahan di-commit < 24 jam | Modern Code Review: A Case Study at Google, Sadowski, Söderberg, Church, Sipko & Bacchelli, ICSE SEIP 2018 | https://doi.org/10.1145/3183519.3183525 | 2026-11-25 | HIGH |
+| 6 | Pedoman: ~100 baris biasanya ukuran wajar, 1000 baris biasanya terlalu besar; respons review maksimal satu hari kerja | Google Engineering Practices: Small CLs & Speed of Code Reviews, Google, (diakses 2026) | https://google.github.io/eng-practices/review/developer/small-cls.html ; https://google.github.io/eng-practices/review/reviewer/speed.html | 2026-11-25 | MEDIUM |
+| 7 | Studi SmartBear atas tim Cisco: review maks 200–400 baris sekali; laju < 500 LOC/jam; jangan review > 60 menit sekali duduk | Best Practices for Peer Code Review, SmartBear (vendor), t.t. | https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/ | 2026-11-25 | MEDIUM |

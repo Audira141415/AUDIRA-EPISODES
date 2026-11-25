@@ -5,7 +5,11 @@ title: "Monorepo vs Polyrepo: Mana yang Lebih Baik untuk Tim Kamu"
 hook: "Jawaban berbeda tergantung ukuran tim dan kecepatan deploy"
 styleCandidates: ["TACTICBOARD (2D)", "DATAPHYSICAL (2D)", "DEVFORGE (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Hook TOPIC.md (ukuran tim & kecepatan deploy) tidak didukung sumber; angka Google 2015 & Windows 2017 sudah lama; rule 15 wajib tanpa logo perusahaan."
 ---
 
 # Monorepo vs Polyrepo: Mana yang Lebih Baik untuk Tim Kamu
