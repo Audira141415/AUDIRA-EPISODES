@@ -5,7 +5,11 @@ title: "Kisah Sunan Ampel: Pendiri Pesantren Pertama di Nusantara"
 hook: "Bagaimana seorang Arab keturunan Yaman membangun sistem pendidikan Islam yang bertahan 600 tahun?"
 styleCandidates: ["WAYANGFORGE (2D)", "NEGERI (3D)", "ISLAMICDOCUMENTARY (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Biografi berbasis babad (1401/1443/1481 = tradisi); klaim pesantren pertama dan keturunan Yaman tidak terverifikasi; wali wajib siluet tanpa wajah"
 ---
 
 # Kisah Sunan Ampel: Pendiri Pesantren Pertama di Nusantara

@@ -5,7 +5,11 @@ title: "Planet Terbesar di Tata Surya Punya Badai yang Sudah Berlangsung 400 Tah
 hook: "Great Red Spot di Jupiter adalah badai raksasa lebih besar dari Bumi yang tak pernah berhenti"
 styleCandidates: ["WORLDFORGE (3D)", "DISASTERSIM (3D)", "SCALEFORGE (3D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul \"400 tahun\" keliru menurut studi GRL 2024 (badai sekarang tercatat sejak 1831); naskah sudah koreksi, judul final sebaiknya diubah; angin 496 km/jam hanya sumber MEDIUM"
 ---
 
 # Planet Terbesar di Tata Surya Punya Badai yang Sudah Berlangsung 400 Tahun

@@ -5,7 +5,11 @@ title: "Misteri Dark Matter: 27% Alam Semesta yang Tak Terlihat"
 hook: "Materi gelap tidak memancarkan cahaya, tapi gravitasinya menahan galaksi-galaksi tetap utuh"
 styleCandidates: ["ABYSSFORGE (3D)", "WORLDFORGE (3D)", "SCALEFORGE (3D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah; angka 27% adalah pembulatan (Planck 2018 ±26%), selalu sebut 'sekitar' dan atribusi NASA"
 ---
 
 # Misteri Dark Matter: 27% Alam Semesta yang Tak Terlihat

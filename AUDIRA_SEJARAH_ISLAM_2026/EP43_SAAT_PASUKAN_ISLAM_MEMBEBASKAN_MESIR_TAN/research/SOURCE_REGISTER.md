@@ -1,33 +1,15 @@
-# SOURCE_REGISTER — `Sejarah peradaban Islam yang jarang diketahui`
+# Source Register — Saat Pasukan Islam Membebaskan Mesir Tanpa Pertumpahan Darah Besar
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Amr bin al-Ash (w. 663, Fustat) penakluk Mesir; mengalahkan pasukan Byzantium di Heliopolis (640) dan Babylon (641), masuk Alexandria (642); mendirikan Fustat dan masjid yang masih berdiri | ʿAmr ibn al-ʿĀṣ, Encyclopaedia Britannica Editors | https://www.britannica.com/biography/Amr-ibn-al-As | 2026-11-25 | HIGH |
+| 2 | Amr "mengambil pajak yang telah ditetapkan, tetapi tidak mengambil harta gereja, tidak menjarah"; Amr masuk Alexandria "tanpa susah payah"; patriark Benjamin pulang ke Alexandria di tahun ke-13 pelariannya; penduduk Alexandria hendak merajam Cyrus karena perjanjian | The Chronicle of John, Bishop of Nikiu, bab CXX–CXXI, terj. R. H. Charles (1916) | https://www.tertullian.org/fathers/nikiu2_chronicle.htm | 2026-11-25 | HIGH |
+| 3 | Hadis: "Kalian akan menaklukkan Mesir ... perlakukan penduduknya dengan baik, karena mereka punya hak perlindungan (dzimmah) dan hubungan kekerabatan (rahim)" — Sahih Muslim no. 2543, derajat sahih | Sahih Muslim, Kitab Keutamaan Sahabat, no. 2543 (teks Inggris diverifikasi via hadith-api fawazahmed0, eng-muslim no. 6494 / book 44 hadis 323) | https://sunnah.com/muslim:2543a | 2026-11-25 | HIGH |
+| 4 | Desember 639 Amr berangkat ke Mesir dengan 4.000 prajurit; Pelusium dikepung ±2 bulan, jatuh Februari 640; bala bantuan 2×4.000 (Zubair bin al-Awwam) tiba September 640, total ±12.000; Babylon diserbu 6 April 641 dan dikosongkan Romawi; perjanjian Cyrus: gencatan ±11 bulan, garnisun Romawi pergi lewat laut, gereja tidak disita, Yahudi boleh tinggal, jizyah 2 dinar per pria dewasa; pasukan Romawi terakhir berlayar 17 September 642 | Muslim conquest of Egypt, Wikipedia (mengutip Butler 1902, Kennedy 2007, John of Nikiu) | https://en.wikipedia.org/wiki/Muslim_conquest_of_Egypt | 2026-11-25 | MEDIUM |
+| 5 | Pertempuran Heliopolis Juli 640, ±15 km dari Babylon; pertempuran kavaleri dekat Abbasiyah | Battle of Heliopolis, Wikipedia | https://en.wikipedia.org/wiki/Battle_of_Heliopolis | 2026-11-25 | MEDIUM |
+| 6 | Benteng Babylon: benteng Romawi di tepi Nil, lokasi Kairo Tua (Koptik Kairo) sekarang | Babylon Fortress, Wikipedia | https://en.wikipedia.org/wiki/Babylon_Fortress | 2026-11-25 | MEDIUM |
+| 7 | Fustat dibangun Amr langsung setelah penaklukan 641 di samping Kairo Tua; nama berarti "tenda"; kemudian menyatu dengan Kairo | Fustat, Wikipedia | https://en.wikipedia.org/wiki/Fustat | 2026-11-25 | MEDIUM |
+| 8 | Masjid Amr bin al-Ash dibangun 641–642 sebagai pusat Fustat; masjid pertama yang dibangun di Mesir dan salah satu yang pertama di Afrika | Mosque of Amr ibn al-As, Wikipedia | https://en.wikipedia.org/wiki/Mosque_of_Amr_ibn_al-As | 2026-11-25 | MEDIUM |
+| 9 | Ringkasan Bahasa Indonesia penaklukan Mesir (rujukan istilah lokal) | Penaklukan Mesir oleh Muslim, Wikipedia bahasa Indonesia | https://id.wikipedia.org/wiki/Penaklukan_Mesir_oleh_Muslim | 2026-11-25 | MEDIUM |

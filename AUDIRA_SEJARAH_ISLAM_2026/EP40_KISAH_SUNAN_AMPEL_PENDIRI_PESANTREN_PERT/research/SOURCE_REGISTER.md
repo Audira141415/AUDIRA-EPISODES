@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sejarah peradaban Islam yang jarang diketahui`
+# Source Register — Kisah Sunan Ampel: Pendiri Pesantren Pertama di Nusantara
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Sunan Ampel berdakwah di Majapahit dengan izin Prabu Brawijaya; mendirikan pesantren di wilayah pintu utama Majapahit di atas tanah pemberian raja; murid-muridnya ikut menyebarkan Islam; dakwah tanpa paksaan | Peranan Sunan Ampel dalam Dakwah Islam dan Pembentukan Masyarakat Muslim Nusantara di Ampeldenta, Nur Hamiyatun, Dakwatuna 5(1), 2019 | https://doi.org/10.36835/dakwatuna.v5i1.321 | 2026-11-25 | HIGH |
+| 2 | Kurun dakwah Sunan Ampel di Surabaya 1443–1481 M; dakwah damai tanpa kekerasan sehingga diterima warga Surabaya | Sunan Ampel dalam Aktivitas Kehidupan Sehari-hari, Menyebarkan Agama Islam dan Kegiatan Sosial Tahun 1443–1481, Moh. Mustaqim, Al-Maquro 3(1), 2022 | https://doi.org/10.47759/maquro.v3i1.298 | 2026-11-25 | HIGH |
+| 3 | Kurikulum pesantren Ampel Denta memadukan Al-Qur'an, hadis, fikih, dan tasawuf; metode ceramah, keteladanan, pembiasaan, dialog, dakwah adaptif budaya | Islamic Education in Java: A Historical Study of Sunan Ampel's Educational System, Mahfud Ifendi & Mohd Roslan Mohd Nor, At-Taqwa 22(2), 2026 | https://doi.org/10.54069/attaqwa.v22i2.1199 | 2026-11-25 | HIGH |
+| 4 | Strategi dakwah Sunan Ampel: pernikahan, kekerabatan, membangun masjid dan pesantren, mengajar warga sekitar (riset memakai buku, jurnal, dan babad) | Sunan Ampel dan Dakwahnya dalam Islamisasi Jawa Timur, Raihan S. B. Harahap dkk., Tabsyir 4(3), 2023 | https://doi.org/10.59059/tabsyir.v4i3.155 | 2026-11-25 | HIGH |
+| 5 | Lahir 1401 di Champa (Vietnam tengah), ayah Maulana Malik Ibrahim / Ibrahim as-Samarqandi, ibu putri Champa; datang ke Jawa 1443 menjenguk bibi Dwarawati, istri raja Majapahit; teori keturunan Tionghoa (Bong Swi Hoo); putra Sunan Bonang dan Sunan Drajat; guru Sunan Giri dan Raden Patah; ajaran Moh Limo; wafat 1481, makam di kompleks Masjid Ampel | Sunan Ampel, Wikipedia bahasa Inggris (merujuk Agus Sunyoto, Atlas Wali Songo, 2014), 2026 | https://en.wikipedia.org/wiki/Sunan_Ampel | 2026-11-25 | MEDIUM |
+| 6 | Nama Sayyid Ali Rahmatullah / Raden Rahmat; ibu Dewi Candrawulan; Moh Limo = moh mabok, moh main, moh madon, moh madat, moh maling; versi ini menyebut lahir di "Kerajaan Jeumpa" dan rute Palembang–Tuban (sumber babad/serat) | Sunan Ampel, Wikipedia bahasa Indonesia (merujuk Serat Walisana, Sajarah Dalem), 2026 | https://id.wikipedia.org/wiki/Sunan_Ampel | 2026-11-25 | MEDIUM |
+| 7 | Masjid Ampel di Semampir, Surabaya, masjid tua Jawa Timur, menurut tradisi dibangun 1421 oleh Sunan Ampel; makamnya di kompleks masjid | Ampel Mosque, Wikipedia bahasa Inggris, 2026 | https://en.wikipedia.org/wiki/Ampel_Mosque | 2026-11-25 | MEDIUM |
+| 8 | Silsilah Wali Songo berbeda antar naskah Babad Tanah Jawi; Sunan Ampel lahir di Champa 1401, guru Raden Patah, mertua sekaligus sepupu Sunan Giri | Wali Sanga, Wikipedia bahasa Inggris, 2026 | https://en.wikipedia.org/wiki/Wali_Sanga | 2026-11-25 | MEDIUM |

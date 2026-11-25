@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP33`)
+# Naskah — Cara Kerja Hormon Stres: Kortisol Bisa Membunuhmu Perlahan
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **16** · estimasi **7 dtk**
+- Visual: siluet manusia purba berlari dari singa di padang rumput, potong cepat (match cut) ke tangan memegang ponsel dengan notifikasi chat kantor menyala; denyut merah di dada.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Hormon yang dulu menyelamatkan nenek moyang kita dari singa, sekarang bisa dipicu oleh notifikasi chat kantor.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **16** · estimasi **7 dtk**
+- Visual: molekul kortisol 3D berputar, kamera menyelam ke tubuh transparan dari otak turun ke dua kelenjar adrenal di atas ginjal; label HUD "KORTISOL" + papan kecil AUDIRA di diorama tubuh.
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya kortisol. Di AUDIRA, kita bongkar cara kerjanya, dari otak sampai kelenjar kecil di atas ginjal.
 
-## c02 — <Judul Bab 1>
+## c02 — Alarm pertama: adrenalin
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **27** · estimasi **12 dtk**
+- Visual: close-up otak, amigdala menyala merah, kilat sinyal ke hipotalamus, lalu turun ke kelenjar adrenal yang menyemprotkan partikel adrenalin; jantung berdebar, meteran tekanan darah naik (HUD "TEKANAN DARAH ↑", "GULA DARAH ↑").
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Begitu kamu melihat bahaya, amigdala di otak mengirim sinyal darurat ke hipotalamus. Kelenjar adrenal langsung memompa adrenalin. Jantung berdebar, tekanan darah naik, gula dilepas ke aliran darah.
 
-## c03 — <Judul Bab 2>
+## c03 — Gelombang kedua: sumbu HPA
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **9 dtk**
+- Visual: diagram estafet vertikal hipotalamus → hipofisis → adrenal; tiga kapsul pesan berlabel HUD "CRH", "ACTH", "KORTISOL" meluncur bergantian seperti tongkat estafet.
 
-> <teks narasi>
+> Kalau bahayanya belum hilang, datang gelombang kedua. Hipotalamus melepas CRH, kelenjar hipofisis membalas dengan ACTH, lalu kelenjar adrenal memproduksi kortisol.
 
-## c04 — <Judul Bab 3>
+## c04 — Kortisol si pahlawan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: kortisol sebagai kurir di pembuluh darah: mengantar gula ke otot, memadamkan api radang kecil; transisi ke kamar tidur saat matahari terbit dan jam weker, grafik kortisol melonjak dengan callout HUD "30–45 MENIT SETELAH BANGUN".
 
-> <teks narasi>
+> Dalam dosis singkat, kortisol itu pahlawan. Ia menjaga gula darah, mengatur tekanan darah, dan meredam radang. Tiap pagi kadarnya melonjak tajam, 30 sampai 45 menit setelah kamu bangun.
 
-## c05 — <Judul Bab 4>
+## c05 — Zebra vs manusia
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: buku terbuka berjudul zebra (HUD "ROBERT SAPOLSKY · 1994"), zebra dikejar singa lalu kembali merumput tenang (grafik stres naik lalu turun); split-screen dengan manusia di kemacetan, tagihan, kalender tenggat, grafik stres datar tinggi.
 
-> <teks narasi>
+> Ahli biologi Robert Sapolsky menulis buku tentang zebra yang jarang sakit maag. Zebra stres hanya saat dikejar singa, lalu tenang lagi. Manusia memutar ulang tagihan, macet, dan tenggat seharian.
 
-## c06 — <Judul Bab 5>
+## c06 — Alarm yang tak pernah mati
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **43** · estimasi **18 dtk**
+- Visual: mesin dengan jarum RPM di zona merah; pembuluh darah menyempit dengan plak menumpuk; peta dunia dengan 32 titik menyala dan kartu HUD "32 NEGARA" lalu "RISIKO STROKE ×1,95" (label kecil "stres di rumah").
 
-> <teks narasi>
+> Saat alarm tidak pernah dimatikan, sistem ini seperti mesin yang digeber terus. Harvard Medical School mencatat stres kronis ikut mendorong tekanan darah tinggi dan plak di pembuluh darah. Studi di 32 negara menemukan stres di rumah terkait risiko stroke hampir dua kali lipat.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: kaki menginjak pedal rem besar berlabel "PARASIMPATIS"; tiga ikon menyala (bulan tidur, sepatu lari, napas); grafik kortisol kembali bergelombang normal; kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi kortisol bukan musuh. Masalahnya, remnya jarang diinjak: tidur cukup, bergerak, dan napas pelan. Ikuti AUDIRA untuk cara kerja tubuhmu berikutnya.
+
+## Opsi hook lain
+
+1. Zebra dikejar singa tidak kena maag. Kamu dikejar tenggat, tubuhmu yang menanggung.
+2. Ada hormon yang bikin kamu kuat saat bahaya datang, tapi diam-diam merusak kalau menyala terus.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **200 kata** ≈ **80–89 dtk**

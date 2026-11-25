@@ -5,7 +5,11 @@ title: "Saat Pasukan Islam Membebaskan Mesir Tanpa Pertumpahan Darah Besar"
 hook: "Amr bin al-Ash masuk ke Mesir dengan 4.000 prajurit melawan kekaisaran Byzantine — bagaimana bisa menang?"
 styleCandidates: ["CHRONICLE (2D)", "CINESTORY (2D)", "HISTORYMAP (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul \"tanpa pertumpahan darah besar\" tidak akurat (ada pengepungan dan pertempuran); sahabat Nabi wajib siluet tanpa wajah; narasi antaragama (Koptik) harus netral"
 ---
 
 # Saat Pasukan Islam Membebaskan Mesir Tanpa Pertumpahan Darah Besar

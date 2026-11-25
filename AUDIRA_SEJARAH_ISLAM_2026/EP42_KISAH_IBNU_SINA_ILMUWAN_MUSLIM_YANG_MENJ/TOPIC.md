@@ -5,7 +5,11 @@ title: "Kisah Ibnu Sina: Ilmuwan Muslim yang Menjadi Bapak Kedokteran Modern"
 hook: "Buku medisnya dipakai di universitas Eropa selama 600 tahun — siapa sebenarnya dia?"
 styleCandidates: ["MANUSCRIPT (2D)", "CHRONICLE (2D)", "WORLDFORGE (3D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook \"600 tahun\" dan gelar \"bapak kedokteran modern\" berlebihan (dikoreksi ke ±5 abad); tahun lahir tidak pasti; pandangan filsafat Ibnu Sina dikritik sebagian ulama, tidak dibahas"
 ---
 
 # Kisah Ibnu Sina: Ilmuwan Muslim yang Menjadi Bapak Kedokteran Modern

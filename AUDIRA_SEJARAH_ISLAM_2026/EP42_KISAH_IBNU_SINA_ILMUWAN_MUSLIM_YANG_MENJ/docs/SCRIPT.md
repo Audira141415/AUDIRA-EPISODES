@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP42`)
+# Naskah — Kisah Ibnu Sina: Ilmuwan Muslim yang Menjadi Bapak Kedokteran Modern
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: kitab tebal tua terbuka di meja kuliah Eropa, halaman berganti dari aksara Arab ke Latin; HUD "±5 ABAD".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Satu buku kedokteran dipakai kampus Eropa sekitar lima abad. Penulisnya seorang Muslim dari Bukhara. Kisahnya ada di AUDIRA.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: peta Asia Tengah, pin menyala di Afshana dan Bukhara, siluet kota berkubah Samaniyah; callout "IBNU SINA / AVICENNA" dan "±980".
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya Ibnu Sina, di Barat dikenal sebagai Avicenna. Ia lahir sekitar tahun 980 di desa Afshana, dekat Bukhara, kota ilmu Dinasti Samaniyah.
 
-## c02 — <Judul Bab 1>
+## c02 — Anak jenius di istana
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: siluet anak tanpa wajah dengan mushaf di rehal (HUD "10 TAHUN"), lalu pintu perpustakaan istana terbuka ke rak gulungan; callout "17 TAHUN · DOKTER EMIR NUH II".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Menurut otobiografinya, ia hafal Al-Qur'an di usia sepuluh tahun. Umur tujuh belas, ia sudah dipanggil mengobati Emir Nuh kedua, lalu boleh membaca isi perpustakaan istana.
 
-## c03 — <Judul Bab 2>
+## c03 — Hidup dalam pelarian
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: peta bergerak, garis rute Bukhara ke Gurganj, Rey, Hamadan; HUD "999 SAMANIYAH RUNTUH"; transisi ke sel benteng gelap dengan lentera dan pena tetap menulis, chip "4 BULAN".
 
-> <teks narasi>
+> Tapi hidupnya tidak tenang. Dinasti Samaniyah runtuh tahun 999, dan Ibnu Sina berpindah dari kota ke kota, dari Gurganj, Rey, sampai Hamadan. Ia bahkan sempat dipenjara empat bulan, dan tetap menulis.
 
-## c04 — <Judul Bab 3>
+## c04 — Al-Qanun fi al-Tibb
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: kitab besar dirakit menjadi lima jilid berdiri berjajar, tiap jilid berlabel (anatomi, obat, penyakit per organ, racikan); HUD "1025" dan "5 JILID".
 
-> <teks narasi>
+> Karya besarnya, kitab Al-Qanun fi al-Tibb, selesai tahun 1025. Isinya lima jilid, dari dasar anatomi, obat-obatan, penyakit per organ, sampai racikan obat.
 
-## c05 — <Judul Bab 4>
+## c05 — Ide yang mendahului zaman
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: diagram paru-paru dengan titik penularan menyebar antarorang (siluet), lalu meja apotek dengan botol ramuan dan daftar checklist "7 ATURAN UJI OBAT" yang tercentang satu per satu.
 
-> <teks narasi>
+> Isinya maju untuk zamannya. Ia sudah menyebut TBC sebagai penyakit menular, dan menyusun tujuh aturan untuk menguji khasiat obat, mirip logika uji klinis hari ini.
 
-## c06 — <Judul Bab 5>
+## c06 — Menyeberang ke Eropa
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: kitab Arab berpindah ke meja penerjemah di Toledo (HUD "ABAD KE-12 · LATIN"), mesin cetak menekan halaman "1472", lalu rak ruang kuliah universitas Eropa; timeline sampai "ABAD KE-17".
 
-> <teks narasi>
+> Abad ke-12, Qanun diterjemahkan ke bahasa Latin di Toledo. Edisi cetaknya terbit tahun 1472, dan universitas Eropa mengajarkannya sebagai buku wajib sampai abad ke-17.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: makam bercahaya senja di Hamadan (HUD "1037"), counter "450 KARYA → 240 SELAMAT", kamera mundur ke peta yang menghubungkan Bukhara dan Eropa, lalu outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Ibnu Sina wafat di Hamadan tahun 1037. Dari sekitar 450 karya, kira-kira 240 masih selamat. Ilmunya melintasi agama dan benua. Ikuti AUDIRA untuk kisah ilmuwan Muslim berikutnya.
+
+## Opsi hook lain
+
+1. Di usia tujuh belas, anak ini sudah mengobati seorang emir. Bukunya kemudian diajarkan di Eropa ratusan tahun.
+2. Dipenjara, diusir dari kota ke kota, tapi buku kedokterannya bertahan lima abad.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **194 kata** ≈ **78–86 dtk**

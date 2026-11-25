@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP43`)
+# Naskah — Saat Pasukan Islam Membebaskan Mesir Tanpa Pertumpahan Darah Besar
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **18** · estimasi **7 dtk**
+- Visual: Siluet barisan unta dan penunggang tanpa wajah di punggung bukit pasir, kontras dengan benteng batu raksasa di kejauhan. HUD besar "4.000" vs ikon mahkota Byzantium.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Hanya empat ribu prajurit melawan kekaisaran yang menguasai Mesir. Di AUDIRA, kita bongkar bagaimana Mesir bisa berpindah tangan.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: Peta animasi Semenanjung Sinai, panah rute dari Palestina ke delta Nil. HUD tanggal "DES 639". Ladang gandum delta Nil dan kapal gandum menuju Konstantinopel.
 
-> <konteks singkat + "Di Audira, ...">
+> Desember 639, Amr bin al-Ash memimpin pasukan kecil menyeberangi gurun Sinai. Mesir saat itu lumbung gandum Byzantium, dijaga benteng-benteng tebal.
 
-## c02 — <Judul Bab 1>
+## c02 — Bukan tanpa perang
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Stempel merah "KELIRU" menimpa teks "tanpa pertumpahan darah". Lalu benteng Pelusium dikepung (siluet tangga, debu), pindah ke bentrokan kavaleri di Heliopolis. HUD "PELUSIUM ±2 BULAN", "HELIOPOLIS 640".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Banyak yang bilang ini penaklukan tanpa darah. Itu keliru. Benteng Pelusium dikepung sekitar dua bulan, lalu pecah pertempuran di Heliopolis tahun 640.
 
-## c03 — <Judul Bab 2>
+## c03 — Benteng Babylon
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Kolom-kolom bala bantuan dari Madinah bergerak di peta, counter HUD naik 4.000 → 12.000. Close-up tembok Benteng Babylon di tepi Nil (lokasi Kairo Tua), gerbang terbuka. HUD "APRIL 641".
 
-> <teks narasi>
+> Bala bantuan dari Madinah datang, pasukan Amr menjadi sekitar dua belas ribu orang. Benteng Babylon, dekat Kairo sekarang, akhirnya jatuh April 641 setelah dikepung berbulan-bulan.
 
-## c04 — <Judul Bab 3>
+## c04 — Meja perundingan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Pindah dari medan perang ke ruang perundingan: meja kayu, gulungan perjanjian, dua siluet tanpa wajah. Tiga poin perjanjian muncul sebagai kartu HUD: "GENCATAN 11 BULAN", "PASUKAN ROMAWI PERGI LEWAT LAUT", "GEREJA TIDAK DISITA".
 
-> <teks narasi>
+> Tapi ujung kisahnya justru di meja perundingan. Cyrus, penguasa Byzantium di Mesir, menyetujui gencatan senjata sebelas bulan. Tentara Romawi pergi lewat laut, gereja tidak boleh disita.
 
-## c05 — <Judul Bab 4>
+## c05 — Patriark pulang
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Koin emas berjatuhan ke timbangan, HUD "JIZYAH 2 DINAR / PRIA DEWASA". Lalu siluet patriark Koptik berjalan pulang menyusuri jalan Alexandria, lonceng gereja, HUD "13 TAHUN DALAM PELARIAN".
 
-> <teks narasi>
+> Penduduk membayar jizyah dua dinar per pria dewasa. Patriark Koptik Benjamin, yang tiga belas tahun lari dari kejaran Byzantium, justru dipanggil pulang ke Alexandria.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **34** · estimasi **14 dtk**
+- Visual: Manuskrip kronik tua terbuka, kutipan Yohanes dari Nikiu menyala baris demi baris. Lalu kaligrafi teks hadis (tanpa figur) dengan label "SAHIH MUSLIM 2543".
 
-> <teks narasi>
+> Kenapa ini menarik? Yohanes dari Nikiu, uskup Koptik yang keras mengkritik pasukan Muslim, tetap mencatat bahwa Amr tidak mengambil harta gereja. Ini sejalan dengan pesan Nabi dalam Sahih Muslim: perlakukan penduduk Mesir dengan baik.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Gerbang Alexandria terbuka tanpa perlawanan, kapal Romawi menjauh di laut. Lalu time-lapse tenda Amr berubah menjadi kota Fustat dan masjid pertama di Mesir, golden hour. Outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Tahun 642, Amr masuk Alexandria tanpa perlawanan. Di dekat bekas tendanya berdiri kota Fustat dan masjid pertama di Mesir, cikal bakal kota Kairo hari ini. Ikuti AUDIRA untuk kisah berikutnya.
+
+## Opsi hook lain
+
+1. Mesir jatuh ke tangan Muslim bukan karena satu pertempuran besar, tapi karena satu perjanjian yang membuat penduduk Alexandria marah.
+2. Uskup yang membenci pasukan Muslim justru menulis satu kalimat pujian untuk panglima mereka.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **199 kata** ≈ **80–88 dtk**

@@ -5,7 +5,11 @@ title: "Cara Kerja Hormon Stres: Kortisol Bisa Membunuhmu Perlahan"
 hook: "Hormon yang berguna di savana Afrika kini merusak tubuh manusia modern setiap hari"
 styleCandidates: ["ANATOMIX (3D)", "NANOFORGE (3D)", "CERDIK (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul berlebihan (kortisol tidak membunuh langsung; stres kronis = asosiasi risiko), klaim kesehatan harus diucapkan hati-hati tanpa saran medis"
 ---
 
 # Cara Kerja Hormon Stres: Kortisol Bisa Membunuhmu Perlahan
