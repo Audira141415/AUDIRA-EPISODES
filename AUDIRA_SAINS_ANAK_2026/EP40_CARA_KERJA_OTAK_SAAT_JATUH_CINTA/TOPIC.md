@@ -5,7 +5,11 @@ title: "Cara Kerja Otak Saat Jatuh Cinta"
 hook: "Kimia saraf di balik cinta romantis yang hampir identik dengan gejala OCD dan adiksi"
 styleCandidates: ["ANATOMIX (3D)", "NANOFORGE (3D)", "CERDIK (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook asli melebih-lebihkan ('hampir identik' OCD/adiksi); studi bersampel kecil, naskah pakai kata 'mirip'; aset otak/vole tidak ada di katalog GLB"
 ---
 
 # Cara Kerja Otak Saat Jatuh Cinta

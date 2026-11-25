@@ -5,7 +5,11 @@ title: "Suara yang Tak Terdengar Bisa Membunuhmu: Infrasound"
 hook: "Frekuensi di bawah ambang pendengaran manusia yang bisa menyebabkan teror, mual, bahkan kematian"
 styleCandidates: ["FLUIDFORGE (3D)", "POLYVERSE (3D)", "CERDIK (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul/hook 'bisa membunuh' tidak didukung bukti; naskah harus menyebut belum terbukti agar tidak menyesatkan anak"
 ---
 
 # Suara yang Tak Terdengar Bisa Membunuhmu: Infrasound

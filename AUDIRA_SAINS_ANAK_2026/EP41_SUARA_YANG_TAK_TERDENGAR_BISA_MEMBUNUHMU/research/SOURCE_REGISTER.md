@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi`
+# Source Register — Suara yang Tak Terdengar Bisa Membunuhmu: Infrasound
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Konser "Infrasonic" London (31 Mei 2003): nada 17 Hz disisipkan ke sebagian lagu tanpa diberi tahu; penonton melaporkan 22% lebih banyak "pengalaman aneh" (Richard Wiseman) | "Ghosts in the machine? Low frequency sound linked to strange sensations" (Sciencenews), The Guardian, 2003 | https://www.theguardian.com/science/2003/sep/08/sciencenews.science | 2026-11-25 | HIGH |
+| 2 | Letusan Hunga Tonga 15 Jan 2022: infrasound 0,01–20 Hz terdeteksi global; gelombang Lamb mengelilingi Bumi 4 kali (+3 antipoda) dalam 6 hari; ukuran ledakan sebanding Krakatau 1883 | "Atmospheric waves and global seismoacoustic observations of the January 2022 Hunga eruption, Tonga", Matoza dkk., Science, 2022 | https://doi.org/10.1126/science.abo7063 | 2026-11-25 | HIGH |
+| 3 | Gajah Asia menghasilkan panggilan infrasonik (di bawah ambang dengar manusia) | "Infrasonic calls of the Asian elephant (Elephas maximus)", Payne, Langbauer & Thomas, Behavioral Ecology and Sociobiology, 1986 | https://doi.org/10.1007/BF00300007 | 2026-11-25 | HIGH |
+| 4 | Infrasound = suara di bawah batas dengar manusia, umumnya 20 Hz (ANSI/ASA S1.1-2013); Gavreau 1957: mual berminggu-minggu di gedung lab akibat motor 7 Hz yang diperkuat resonansi saluran udara; uji getaran program antariksa AS (hingga 160 dB, 2–3 Hz) menyebabkan mual & gangguan penglihatan; uji 144 dB (1975) dan 130 dB/7,5 Hz (1972) tanpa efek merugikan serius; Altmann: tak ada bukti andal infrasound menyebabkan mual | "Infrasound", Wikipedia (en) | https://en.wikipedia.org/wiki/Infrasound | 2026-11-25 | MEDIUM |
+| 5 | Vic Tandy (1998, "Ghost in the Machine", J. Soc. Psychical Research): rasa takut & "sosok abu-abu" di lab ternyata dari kipas ekstraktor baru ±19 Hz (18,98 Hz) | "Vic Tandy", Wikipedia (en) + bagian "Infrasound" | https://en.wikipedia.org/wiki/Vic_Tandy | 2026-11-25 | MEDIUM |
+| 6 | Gajah Afrika memanggil di 15–35 Hz, hingga ±117 dB, jangkauan ±10 km; paus balin berkomunikasi ratusan km | "Infrasound" § Animal communication, Wikipedia (en) | https://en.wikipedia.org/wiki/Infrasound | 2026-11-25 | MEDIUM |
+| 7 | Letusan Krakatau 1883 terdengar hingga Rodrigues (±4.800 km), suara terkeras yang tercatat sejarah | "1883 eruption of Krakatoa", Wikipedia (en) | https://en.wikipedia.org/wiki/1883_eruption_of_Krakatoa | 2026-11-25 | MEDIUM |
+| 8 | Tinjauan ilmiah tentang definisi & persepsi infrasound (rujukan latar, bukan angka VO) | "What is infrasound?", G. Leventhall, Progress in Biophysics and Molecular Biology, 2007 | https://doi.org/10.1016/j.pbiomolbio.2006.07.006 | 2026-11-25 | MEDIUM |

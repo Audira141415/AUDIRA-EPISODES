@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP47`)
+# Naskah — Detik-Detik Pembukaan Mekkah: Momen Terbesar Tanpa Pertumpahan Darah
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Lautan siluet pasukan di punggung bukit menghadap lembah Makkah saat fajar, HUD counter 0 → "10.000" menghentak di tengah. Tanpa wajah.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Sepuluh ribu pasukan berdiri di depan kota yang dulu mengusir mereka. Satu perintah saja, Makkah bisa banjir darah.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: Peta Hijaz, panah Madinah → Makkah bergerak ke selatan; HUD "Ramadan 8 H" dan "±630 M"; gulungan perjanjian robek di tengah peta (Hudaibiyah).
 
-> <konteks singkat + "Di Audira, ...">
+> Ramadan tahun delapan Hijriah, sekitar 630 Masehi. Perjanjian Hudaibiyah dilanggar sekutu Quraisy. Pasukan Madinah bergerak ke selatan, diam-diam, menuju Makkah.
 
-## c02 — <Judul Bab 1>
+## c02 — Api di Marr az-Zahran
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Lembah gelap malam penuh ratusan api unggun berkelip; tiga siluet penunggang unta mengintai dari batu; HUD "Marr az-Zahran".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Malam itu Abu Sufyan bin Harb, pemimpin Quraisy, keluar mengintai. Di lembah Marr az-Zahran ia melihat api unggun sebanyak api Arafah. Ia tertangkap penjaga, lalu masuk Islam.
 
-## c03 — <Judul Bab 2>
+## c03 — Barisan di depan bukit
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Kamera di belakang siluet satu orang di puncak bukit; di bawahnya barisan kabilah lewat bergelombang, tiap barisan dengan panji warna berbeda; HUD nama kabilah muncul satu per satu.
 
-> <teks narasi>
+> Paginya ia ditempatkan di atas bukit. Kabilah demi kabilah lewat di depannya: Ghifar, Juhainah, Sulaim, lalu kaum Anshar. Pembawa bendera Anshar berseru, hari ini hari pertempuran besar.
 
-## c04 — <Judul Bab 3>
+## c04 — Tiga pintu aman
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Siluet Ka'bah dari kejauhan, lalu tiga kartu HUD bertumpuk: rumah Abu Sufyan, pedang diletakkan di tanah, pintu kayu dikunci. Tiap kartu menyala hijau "AMAN".
 
-> <teks narasi>
+> Jawaban Nabi tegas. Bukan, hari ini Allah memuliakan Ka'bah. Lalu diumumkan: siapa masuk rumah Abu Sufyan, aman. Siapa meletakkan senjata, aman. Siapa mengunci pintunya, aman.
 
-## c05 — <Judul Bab 4>
+## c05 — Hampir tanpa darah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Peta kota Makkah dengan empat panah pasukan masuk dari arah berbeda; satu panah (sisi Khalid) berkedip merah dengan ikon bentrok; HUD "2 gugur". Lalu gang kota dengan pintu-pintu tertutup.
 
-> <teks narasi>
+> Apakah benar tanpa darah? Tidak sepenuhnya. Pasukan Khalid bin Walid sempat dihadang, dan dua penunggang kudanya gugur. Tapi rumah yang menutup pintu dibiarkan aman.
 
-## c06 — <Judul Bab 5>
+## c06 — Tiga ratus enam puluh berhala
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Pelataran Ka'bah dikelilingi berhala batu; HUD counter "360" menurun saat berhala runtuh satu per satu oleh tongkat (tangan saja, tanpa wajah); kaligrafi QS Al-Isra 81 muncul.
 
-> <teks narasi>
+> Di sekitar Ka'bah berdiri tiga ratus enam puluh berhala. Satu per satu dijatuhkan dengan tongkat, sambil dibacakan: kebenaran telah datang, dan yang batil telah lenyap.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Sunrise emas di atas Makkah, kamera naik dari pintu rumah yang terbuka ke Ka'bah di kejauhan; teks kinetik "memaafkan"; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Lelaki yang dulu memimpin perang melawan Islam, kini rumahnya jadi tempat berlindung. Kemenangan terbesar hari itu bukan merebut kota, tapi memilih memaafkan. Ikuti AUDIRA untuk kisah berikutnya.
+
+## Opsi hook lain
+
+1. Sepuluh ribu pasukan, satu kota musuh, dan perintah pertama yang keluar justru: siapa mengunci pintunya, aman.
+2. Orang yang paling lama memerangi Islam, rumahnya justru dijadikan tempat paling aman di Makkah.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **193 kata** ≈ **77–86 dtk** @135–150 WPM

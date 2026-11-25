@@ -5,7 +5,11 @@ title: "Saat Abu Sufyan Masuk Islam: Kisah Musuh Terbesar yang Berbalik Menjadi 
 hook: "Orang yang paling lama memusuhi Nabi akhirnya masuk Islam — dan kisahnya penuh kejutan"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "CHARACTERFLOW (2D)", "CINESTORY (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Ketulusan keislaman Abu Sufyan diperdebatkan (Sunni vs Syiah, Ibnu Ishaq: masuk Islam di bawah tekanan) — narasi netral; tokoh tanpa wajah"
 ---
 
 # Saat Abu Sufyan Masuk Islam: Kisah Musuh Terbesar yang Berbalik Menjadi Sahabat

@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP46`)
+# Naskah — Kisah Sunan Giri: Ulama yang Membuat Islam Menyebar Lewat Permainan Anak
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: Anak-anak (siluet) duduk melingkar main Cublak-cublak Suweng di halaman, kerikil berpindah tangan; kamera turun dari bulan purnama. HUD: "Lagu masa kecilmu?"
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Lagu yang kamu nyanyikan waktu kecil, menurut tradisi Jawa, dikaitkan dengan seorang wali. Ini AUDIRA.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Peta Jawa Timur, pin menyala di Gresik; siluet ulama berjubah di tepi pantai, tanpa wajah. HUD name plate: "Raden Paku · Sunan Giri".
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya Raden Paku, dikenal sebagai Sunan Giri, salah satu Walisongo dari Gresik, Jawa Timur. Hidupnya dimulai dengan cara yang tidak biasa.
 
-## c02 — <Judul Bab 1>
+## c02 — Bayi di tengah laut
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Laut malam bergelombang, peti kayu kecil terapung; kapal dagang layar mendekat, lentera menyorot peti. Label kecil "menurut babad". HUD: "Jaka Samudra = anak samudra".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Menurut babad, bayi ini lahir di Blambangan, lalu dilarung ke laut dalam sebuah peti. Pelaut anak buah Nyai Ageng Pinatih dari Gresik menemukannya, lalu menamainya Jaka Samudra.
 
-## c03 — <Judul Bab 2>
+## c03 — Pesantren di atas bukit
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Close-up pena dan kitab di surau Ampel (siluet guru dan murid), lalu transisi ke bukit hijau dengan bangunan pesantren beratap tumpang. HUD: "Giri = gunung".
 
-> <teks narasi>
+> Setelah dewasa, ia berguru kepada Sunan Ampel. Lalu ia membangun pesantren di sebuah bukit di Gresik. Dalam bahasa Jawa, gunung disebut giri. Dari situlah namanya.
 
-## c04 — <Judul Bab 3>
+## c04 — Raja sekaligus guru
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Gapura Giri Kedaton, angka besar "1487" menghentak; peta Nusantara, garis jalur santri memanjang ke Lombok, Sulawesi, Maluku. HUD callout: "1487 · Hari Jadi Gresik" dan "±30 tahun memerintah".
 
-> <teks narasi>
+> Tahun 1487, ia dinobatkan memimpin Giri Kedaton, dan memerintah sekitar tiga puluh tahun. Tahun itu kini diperingati sebagai hari jadi Gresik. Santri-santrinya membawa pengaruh Giri ke Lombok, Sulawesi, sampai Maluku.
 
-## c05 — <Judul Bab 4>
+## c05 — Lagu untuk anak-anak
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Halaman desa sore hari, tiga kartu judul lagu muncul bergantian: "Cublak-cublak Suweng", "Padhang Bulan", "Jamuran"; anak-anak (siluet) membentuk lingkaran jamur.
 
-> <teks narasi>
+> Tapi yang paling melekat justru caranya mendekati anak-anak. Tradisi menyebut beberapa tembang dolanan sebagai karyanya: Cublak-cublak Suweng, Padhang Bulan, dan permainan Jamuran.
 
-## c06 — <Judul Bab 5>
+## c06 — Kenapa lewat lagu
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Lirik mengambang per kata; subeng (anting) emas dan kerikil di telapak tangan, lalu bulan purnama menerangi desa. HUD: "Nasihat: jangan diperbudak harta" dan "Bulan = penerang". Label "tradisi lisan".
 
-> <teks narasi>
+> Kenapa lewat lagu? Anak-anak menghafal sambil bermain. Peneliti membaca liriknya sebagai nasihat soal mencari harta, dan terang bulan sebagai lambang cahaya Islam. Tapi ingat, atribusi ini berasal dari tradisi lisan.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Hero shot: lingkaran anak masa kini bermain di bawah purnama, kamera naik ke bukit Giri saat fajar; HUD "500+ tahun"; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Lebih dari lima ratus tahun kemudian, anak-anak di Jawa masih menyanyikannya di halaman rumah, sering tanpa tahu siapa yang dikaitkan dengannya. Ikuti AUDIRA untuk kisah berikutnya.
+
+## Opsi hook lain
+
+1. Ia ditemukan terapung di laut sebagai bayi, lalu menjadi raja sekaligus guru di Gresik.
+2. Cublak-cublak Suweng ternyata bukan sekadar lagu main, ada nasihat di dalamnya.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **196 kata** ≈ **78–87 dtk** @135–150 WPM

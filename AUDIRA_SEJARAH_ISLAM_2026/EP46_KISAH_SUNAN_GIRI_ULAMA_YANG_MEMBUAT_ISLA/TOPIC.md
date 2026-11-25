@@ -5,7 +5,11 @@ title: "Kisah Sunan Giri: Ulama yang Membuat Islam Menyebar Lewat Permainan Anak
 hook: "Ia menyebarkan Islam lewat lagu-lagu dan permainan — metode yang masih terasa sampai hari ini"
 styleCandidates: ["WAYANGFORGE (2D)", "BATIKFORGE (2D)", "NEGERI (3D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Atribusi lagu dan kisah peti di laut bersumber tradisi/babad, wajib ditandai; Lir-ilir milik tradisi Sunan Kalijaga; tokoh suci tanpa wajah."
 ---
 
 # Kisah Sunan Giri: Ulama yang Membuat Islam Menyebar Lewat Permainan Anak

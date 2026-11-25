@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP40`)
+# Naskah — Cara Kerja Otak Saat Jatuh Cinta
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **16** · estimasi **7 dtk**
+- Visual: otak 3D transparan, jantung berdenyut di depan; satu titik di tengah otak menyala merah muda lalu menjalar. Label HUD "AUDIRA LAB".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Jatuh cinta itu bukan cuma perasaan. Di otakmu, ada sistem yang menyala mirip kecanduan. Ini AUDIRA.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: ruang lab, scanner berputar, layar memunculkan foto siluet orang tercinta (tanpa wajah). HUD "2005 · 17 orang".
 
-> <konteks singkat + "Di Audira, ...">
+> Tahun 2005, peneliti memindai otak 17 orang yang sedang kasmaran sambil melihat foto orang yang mereka cintai.
 
-## c02 — <Judul Bab 1>
+## c02 — Sistem hadiah dopamin
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: kamera masuk ke dalam otak; VTA dan nukleus kaudatus menyala, molekul dopamin mengalir. Inset koin dan makanan muncul di jalur yang sama. HUD label "VTA" dan "Kaudatus".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Yang menyala adalah area kaya dopamin: area tegmental ventral dan nukleus kaudatus. Ini sistem hadiah, yang juga aktif saat kita dapat uang atau makanan enak.
 
-## c03 — <Judul Bab 2>
+## c03 — Serotonin dan pikiran obsesif
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: peta Italia menunjuk Pisa, lalu close-up sinaps; pengangkut serotonin menipis. Grafik batang tiga kolom: kontrol tinggi, jatuh cinta dan OCD sama rendah. HUD "1999 · Pisa · 20 orang".
 
-> <teks narasi>
+> Lalu soal susah berhenti memikirkan dia. Tahun 1999, tim di Pisa, Italia, mengukur pengangkut serotonin pada 20 orang yang baru jatuh cinta. Hasilnya lebih rendah dari orang biasa, setara pasien OCD.
 
-## c04 — <Judul Bab 3>
+## c04 — Ditolak cinta
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: smartphone menampilkan pesan "kita udahan ya", retak; otak berubah biru kemerahan, jalur craving menyala. HUD "2010 · 15 orang".
 
-> <teks narasi>
+> Bagaimana kalau ditolak? Studi tahun 2010 pada 15 orang yang baru diputus menemukan area yang juga terlibat saat pecandu kokain merasa ketagihan.
 
-## c05 — <Judul Bab 4>
+## c05 — Amigdala meredup
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **9 dtk**
+- Visual: amigdala berbentuk almon menyala oranye lalu meredup seperti lampu diredupkan; ikon alarm memudar. HUD "Amigdala".
 
-> <teks narasi>
+> Tapi ada juga bagian otak yang justru meredup, termasuk amigdala, pusat rasa waspada. Mungkin karena itu kita jadi kurang kritis.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan: ikatan jangka panjang
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: diorama padang rumput dengan dua tikus vole meringkuk; molekul oksitosin dan vasopresin melayang. Transisi ke dua kursi tua di teras, timeline "21 tahun" berjalan, VTA kembali menyala. HUD "Oksitosin · Vasopresin" dan "21 tahun".
 
-> <teks narasi>
+> Lalu kenapa cinta bisa bertahan lama? Pada tikus padang rumput, hormon oksitosin dan vasopresin, bersama dopamin, membentuk ikatan pasangan. Dan pada pasangan yang menikah rata-rata 21 tahun, area dopamin itu masih bisa menyala.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: semua area yang tadi menyala menyatu membentuk jantung cahaya di dalam otak, kamera mundur ke hero shot; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi cinta memang mirip kecanduan, tapi bukan penyakit. Itu cara otak menjaga kita tetap dekat dengan orang yang kita sayangi, bahkan bertahun-tahun. Ikuti AUDIRA untuk sains seru berikutnya.
+
+## Opsi hook lain
+
+1. Otak orang yang baru jatuh cinta ternyata mirip otak pengidap OCD. Begini buktinya.
+2. Lihat foto gebetan, dan bagian otak yang sama dengan saat dapat hadiah langsung menyala.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **192 kata** ≈ **77–85 dtk**

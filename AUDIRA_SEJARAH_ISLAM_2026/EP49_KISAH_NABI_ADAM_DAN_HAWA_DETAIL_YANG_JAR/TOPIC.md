@@ -5,7 +5,11 @@ title: "Kisah Nabi Adam dan Hawa: Detail yang Jarang Diceritakan dari Surga ke B
 hook: "Perjalanan dari surga ke bumi bukan sekadar pengusiran — ada dialog yang sangat menyentuh"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "STORYBOOK (2D)", "WORLDFORGE (3D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Kisah nabi: wajib tanpa wajah Adam/Hawa, malaikat dan setan tidak difigurkan; riwayat israiliyat (lokasi turun, Arafah) tidak dinarasikan"
 ---
 
 # Kisah Nabi Adam dan Hawa: Detail yang Jarang Diceritakan dari Surga ke Bumi

@@ -5,7 +5,11 @@ title: "Detik-Detik Pembukaan Mekkah: Momen Terbesar Tanpa Pertumpahan Darah"
 hook: "Bagaimana Nabi SAW memilih memaafkan saat bisa saja menghukum semua musuhnya?"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "CHRONICLE (2D)", "CINESTORY (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 5
+awet: ya
+risiko: "Judul 'tanpa pertumpahan darah' perlu dilunakkan (ada 2 Muslim gugur + bentrok Khandamah); kalimat 'pergilah kalian bebas' hanya riwayat sirah; tanpa wajah Nabi/sahabat."
 ---
 
 # Detik-Detik Pembukaan Mekkah: Momen Terbesar Tanpa Pertumpahan Darah
