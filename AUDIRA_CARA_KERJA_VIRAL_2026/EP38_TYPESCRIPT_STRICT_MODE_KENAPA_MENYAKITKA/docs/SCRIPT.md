@@ -1,93 +1,69 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP38`)
+# Naskah — TypeScript Strict Mode: Kenapa Menyakitkan tapi Wajib
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Editor kode gelap, satu baris merah menyala di bawah kata user.name. Teks HUD: ERROR di layar kompilasi, bukan di layar pelanggan.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Garis merah di editor itu menyebalkan. Tapi garis merah itu murah. Yang mahal adalah bug yang baru ketahuan saat pelanggan sudah login.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Folder tsconfig.json terbuka, baris "strict": true menyala. Label AUDIRA kecil di sudut editor.
 
-> <konteks singkat + "Di Audira, ...">
+> Ini AUDIRA. Satu baris di tsconfig, strict true, bikin TypeScript mendadak cerewet. Wajar kalau kamu ingin mematikannya lagi.
 
-## c02 — <Judul Bab 1>
+## c02 — Apa isi strict
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Satu kartu strict pecah jadi empat kartu flag: strictNullChecks, noImplicitAny, noImplicitThis, alwaysStrict. Callout HUD: 2017.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Strict itu saklar induk, muncul di TypeScript 2.3, April 2017. Awalnya isinya empat: strictNullChecks, noImplicitAny, noImplicitThis, dan alwaysStrict. Versi baru bisa menambah anggota.
 
-## c03 — <Judul Bab 2>
+## c03 — Bab 1: Null
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **35** · estimasi **15 dtk**
+- Visual: Animasi kotak berlabel string diisi petak kosong bertanda null; kode users.find mengembalikan undefined lalu aplikasi runtuh. Callout HUD: 1965, ALGOL W.
 
-> <teks narasi>
+> Yang paling menyakitkan strictNullChecks. Tanpa dia, null dan undefined diabaikan, jadi kamu menulis kode seolah data pasti ada. Tony Hoare memasukkan null ke ALGOL W tahun 1965 karena gampang dibuat, lalu menyebutnya kesalahan miliaran dolar.
 
-## c04 — <Judul Bab 3>
+## c04 — Bab 2: Any
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Parameter fungsi s berlabel any, kode memanggil s.subtr dengan angka 42, kartu error 7006 muncul. Kapsul any berubah jadi gembok.
 
-> <teks narasi>
+> Berikutnya noImplicitAny. Kalau TypeScript tak bisa menebak tipe, dia diam-diam memakai any, artinya tidak diperiksa. Typo subtr, bukan substr, lolos tanpa suara. Dengan strict, langsung ketahuan.
 
-## c05 — <Judul Bab 4>
+## c05 — Bab 3: Bukti angka
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Diagram 400 kotak bug JavaScript, 58 kotak menyala biru. Callout HUD: 400 bug, 58 terdeteksi.
 
-> <teks narasi>
+> Apakah garis merah itu berguna? Satu studi memeriksa 400 bug publik JavaScript. TypeScript 2.0 mendeteksi 58 di antaranya, sekitar 15 persen, padahal bug itu sudah lolos tes dan review.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Garis waktu: error kecil di editor di kiri, ledakan di production di kanan. Sisi kiri murah, sisi kanan mahal.
 
-> <teks narasi>
+> Error saat kompilasi kamu perbaiki dalam semenit, di mesinmu sendiri. Bug yang sama di production harus dicari lewat log dan hotfix. Strict memindahkan rasa sakit ke tempat paling murah.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Layar tsconfig baru tanpa baris strict; kartu: TypeScript 6.0, Maret 2026, strict default true. Lalu kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Dan sekarang kamu tak perlu menyalakannya lagi. Sejak TypeScript 6.0, Maret 2026, strict sudah menyala secara default. Proyek baru terjaga. Ikuti AUDIRA untuk penjelasan teknologi berikutnya.
+
+## Opsi hook lain
+
+1. Ada satu baris di tsconfig yang membuat proyekmu merah semua, dan justru itu bagus.
+2. Kamu pernah mematikan strict mode karena kesal? Dengar ini dulu.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **208 kata** ≈ **87 dtk**

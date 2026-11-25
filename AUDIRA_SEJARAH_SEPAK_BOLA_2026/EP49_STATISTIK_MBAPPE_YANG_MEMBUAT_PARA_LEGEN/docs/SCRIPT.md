@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris` (`EP49`)
+# Naskah — Statistik Mbappe yang Membuat Para Legenda Terdiam
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Angka 22 raksasa di tengah layar, lalu dua puluh dua siluet pemain 3D generik berlari satu per satu mengisi garis timeline; HUD: 22 GOL / 22 LAGA.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Dua puluh dua gol. Dua puluh dua pertandingan. Kylian Mbappé baru 27 tahun, dan namanya sudah di puncak pencetak gol Piala Dunia sepanjang masa, per Juli 2026.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Papan peringkat 3D bertingkat: balok Klose 16, Messi 21, Mbappé 22 naik satu per satu; callout HUD angka.
 
-> <konteks singkat + "Di Audira, ...">
+> Rekor lama dipegang Miroslav Klose dengan 16 gol. Lionel Messi mendekat sampai 21. Mbappé melewati keduanya dalam tiga turnamen: 2018, 2022, dan 2026.
 
-## c02 — <Judul Bab 1>
+## c02 — Rusia 2018
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Peta Rusia dengan stadion 3D generik, siluet remaja berlari menuju gawang, trofi emas generik; HUD: 19 TAHUN 207 HARI.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Mulai dari Rusia 2018. Usianya 19 tahun 207 hari saat mencetak gol di final, dan Prancis juara dunia. Sebelum dia, hanya Pelé, sesama remaja, yang melakukannya.
 
-## c03 — <Judul Bab 2>
+## c03 — Final Qatar 2022
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Lapangan malam, tiga bola menembus gawang berurutan, papan skor generik tanpa logo; HUD: HAT-TRICK 2022.
 
-> <teks narasi>
+> Qatar 2022. Di final, dia mencetak hat-trick. Prancis kalah, tapi empat gol di dua final jadi rekor terbanyak. Hanya Geoff Hurst, tahun 1966, yang pernah hat-trick di final.
 
-## c04 — <Judul Bab 3>
+## c04 — Sepatu Emas dua kali
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Sepatu emas 3D berputar di podium, dua kali, diikuti tabel gol per turnamen: 8 lalu 10; HUD: 8 GOL, 10 GOL.
 
-> <teks narasi>
+> Di Qatar dia dapat Sepatu Emas dengan delapan gol. Di 2026, sepuluh gol memberinya Sepatu Emas kedua. Dia pemain pertama yang menang dua kali.
 
-## c05 — <Judul Bab 4>
+## c05 — Dibanding para legenda
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Tiga jalur lari paralel di trek 3D: panjang jalur = jumlah laga; Mbappé 22, Messi 34, Klose 24, Ronaldo 19; HUD rasio.
 
-> <teks narasi>
+> Bandingkan efisiensinya. Messi: 34 laga untuk 21 gol. Klose: 24 laga untuk 16 gol. Ronaldo dari Brasil: 19 laga untuk 15 gol. Mbappé: 22 gol dalam 22 laga.
 
-## c06 — <Judul Bab 5>
+## c06 — Angka di luar Piala Dunia
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Globe data berputar lalu pecah menjadi empat tumpukan bola: Monaco, PSG, Madrid, Prancis; HUD: 400 GOL.
 
-> <teks narasi>
+> Di luar Piala Dunia pun gila. Per November 2025, usia 26, dia mencapai 400 gol karier menurut Opta: 27 untuk Monaco, 256 PSG, 62 Real Madrid, 55 Prancis.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Satu siluet berdiri di puncak tangga bar 22, sorotan stadion menyala, outro card AUDIRA; HUD: REKOR 1958 vs 2026.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Satu rekor masih bertahan: 13 gol Just Fontaine dalam satu turnamen, 1958, hanya dalam enam laga. Mbappé berhenti di sepuluh. Ikuti AUDIRA untuk angka berikutnya.
+
+## Opsi hook lain
+
+1. Messi butuh 34 pertandingan untuk 21 gol Piala Dunia. Mbappé cukup 22.
+2. Rekor yang dipegang Klose dan Messi jatuh ke pemain berusia 27 tahun.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **209 kata** ≈ **88 dtk**

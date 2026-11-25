@@ -5,7 +5,11 @@ title: "Negara dengan Dua Ibu Kota Resmi yang Berbeda Fungsi"
 hook: "Bolivia, Afrika Selatan, dan beberapa negara lain punya sistem ibukota ganda"
 styleCandidates: ["HISTORYMAP (2D)", "NEGERI (3D)", "CHRONICLE (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Judul dua ibu kota resmi tidak persis: konstitusi Bolivia hanya sebut Sucre; La Paz pusat pemerintahan (diperdebatkan)."
 ---
 
 # Negara dengan Dua Ibu Kota Resmi yang Berbeda Fungsi

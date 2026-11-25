@@ -1,33 +1,18 @@
-# SOURCE_REGISTER — `Sejarah peradaban Islam yang jarang diketahui`
+# Source Register — Kejayaan Andalusia: 800 Tahun Peradaban Islam di Eropa yang Terlupakan
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
+| 1 | Al-Andalus = wilayah Muslim di Iberia 711–1492; kekhalifahan Cordoba 929–1031; Emirat Granada (Nasrid) 1238–1492 | Al-Andalus, Wikipedia (artikel ensiklopedia, mengutip sumber akademik), rev. 2026 | https://en.wikipedia.org/wiki/Al-Andalus | 2026-11-25 | MEDIUM |
+| 2 | Thariq bin Ziyad mendarat di Gibraltar 30 April 711; menang di Guadalete 19 Juli 711; Abdurrahman I proklamasi amir di Cordoba 756; Abdurrahman III khalifah 929 | Al-Andalus, Wikipedia, 2026 | https://en.wikipedia.org/wiki/Al-Andalus#History | 2026-11-25 | MEDIUM |
+| 3 | Cordoba periode kejayaan sejak abad ke-8, sekitar 300 masjid dibangun, bersaing dengan Konstantinopel, Damaskus, Baghdad; Masjid Agung jadi katedral di bawah Ferdinand III abad ke-13 | Historic Centre of Cordoba, UNESCO World Heritage Centre, deskripsi situs no. 313 | https://whc.unesco.org/en/list/313/ | 2026-11-25 | HIGH |
+| 4 | Medina Azahara dibangun pertengahan abad ke-10 sebagai pusat Kekhalifahan Cordoba; dihancurkan dalam perang saudara 1009–1010; terlupakan hampir 1.000 tahun hingga ditemukan kembali awal abad ke-20 | Caliphate City of Medina Azahara, UNESCO World Heritage Centre, deskripsi situs no. 1560 | https://whc.unesco.org/en/list/1560/ | 2026-11-25 | HIGH |
+| 5 | Pembangunan Madinat al-Zahra dimulai 936 (mungkin 940), sekitar 5 km dari Cordoba; dijarah 1010–1013; penggalian sejak 1911; terdaftar UNESCO 2018; perpustakaan 'ratusan ribu jilid' hanya menurut beberapa catatan | Madinat al-Zahra, Wikipedia, 2026 | https://en.wikipedia.org/wiki/Madinat_al-Zahra | 2026-11-25 | MEDIUM |
+| 6 | Masjid Agung Cordoba dibangun 785 atas perintah Abdurrahman I; minaret 958 dan mihrab 971 ditambahkan; jadi katedral 1236 saat Ferdinand III merebut Cordoba | Mosque–Cathedral of Córdoba, Wikipedia, 2026 | https://en.wikipedia.org/wiki/Mosque%E2%80%93Cathedral_of_C%C3%B3rdoba | 2026-11-25 | MEDIUM |
+| 7 | Perang saudara 1009–1013; 1013 Berber menjarah Cordoba dan membakar kompleks istana; kekhalifahan resmi dihapus 1031 menjadi taifa; Toledo direbut Kristen 1085; Toledo School of Translators (Gerard dari Cremona) menerjemahkan Arab ke Latin | Al-Andalus, bagian Taifas period, Wikipedia, 2026 | https://en.wikipedia.org/wiki/Al-Andalus#Taifas_period | 2026-11-25 | MEDIUM |
+| 8 | Az-Zahrawi (Abulcasis) wafat 1013, dokter bedah terbesar Islam Barat; Ziryab tiba di Cordoba 822 membawa musik Abbasiyah; perkiraan 70.000–80.000 naskah disalin per tahun di Cordoba abad ke-10 (perkiraan sejarawan) | Al-Andalus, bagian Medicine/Music/Libraries, Wikipedia, 2026 | https://en.wikipedia.org/wiki/Al-Andalus#Medicine | 2026-11-25 | MEDIUM |
+| 9 | Granada menyerah 2 Januari 1492 (Muhammad XI/Boabdil); Perjanjian Granada ditandatangani 25 November 1491; perang 1482–1492 melawan Isabella I dan Ferdinand II | Granada War, Wikipedia, 2026 | https://en.wikipedia.org/wiki/Granada_War | 2026-11-25 | MEDIUM |
+| 10 | Alhambra, Generalife, Albayzín: Alhambra satu-satunya kota istana periode Islam yang masih terpelihara; seni Nasrid | Alhambra, Generalife and Albayzín, Granada, UNESCO World Heritage Centre, deskripsi situs no. 314 | https://whc.unesco.org/en/list/314/ | 2026-11-25 | HIGH |
 
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+Catatan: Britannica dan Met Museum memblokir akses otomatis (403/429), jadi tidak dipakai. Wikipedia dipakai MEDIUM; tahap 4 disarankan menambah satu sumber akademik cetak (mis. Kennedy, Muslim Spain and Portugal, 1996) untuk angka populasi.

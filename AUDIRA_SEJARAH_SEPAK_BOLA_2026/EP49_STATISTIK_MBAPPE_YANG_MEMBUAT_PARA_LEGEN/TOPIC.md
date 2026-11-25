@@ -5,7 +5,11 @@ title: "Statistik Mbappe yang Membuat Para Legenda Terdiam"
 hook: "Cetak gol lebih banyak dari Ronaldo di usia yang sama — siapa sangka"
 styleCandidates: ["DATAPHYSICAL (2D)", "PRECISION (2D)", "BROADCASTFORGE (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak
+risiko: "Angka rekor Piala Dunia per 19 Juli 2026 bisa berubah di 2030; hook Ronaldo awal tidak terverifikasi; FIFA/UEFA tidak terbaca, bergantung ESPN, Fox, BBC."
 ---
 
 # Statistik Mbappe yang Membuat Para Legenda Terdiam

@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sejarah game yang viral dan jarang diketahui`
+# Source Register — Rahasia Algoritma TikTok yang Membuat Kamu Terus Scroll
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Feed For You diurutkan dari kombinasi faktor: interaksi pengguna (like, share, komentar, follow), info video (caption, suara, hashtag), pengaturan perangkat/akun (bobot lebih rendah). Menonton video panjang sampai habis berbobot lebih besar daripada kesamaan negara. | How TikTok recommends videos #ForYou, TikTok Newsroom, 18 Jun 2020 | https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you | 2026-11-25 | HIGH |
+| 2 | Jumlah pengikut dan performa video sebelumnya bukan faktor langsung rekomendasi. | How TikTok recommends videos #ForYou, TikTok Newsroom, 2020 | https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you | 2026-11-25 | HIGH |
+| 3 | Feed biasanya tidak menampilkan dua video berturut-turut dengan suara atau kreator yang sama; video tak terduga sengaja diselipkan demi keragaman. Pengguna baru memilih kategori minat; tanpa itu mulai dari feed populer umum. | How TikTok recommends videos #ForYou, TikTok Newsroom, 2020 | https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you | 2026-11-25 | HIGH |
+| 4 | Alur: pilih video lolos moderasi, prediksi (probabilitas like, share, komentar, skip) digabung jadi skor, ranking, cek kemiripan, aturan rekomendasi. Konten akun di bawah 16 tahun tidak layak direkomendasikan. Alat kontrol: Not Interested, filter kata kunci, refresh For You. | Introduction to the TikTok recommendation system, TikTok Transparency Center (halaman dibaca 2026-11-25; copyright 2025) | https://www.tiktok.com/transparency/en/recommendation-system | 2026-11-25 | HIGH |
+| 5 | Lebih dari 1 miliar orang datang ke TikTok tiap bulan (pengumuman 27 Sep 2021; kalimat serupa masih ada di Transparency Center). | Thanks a billion!, TikTok Newsroom, 27 Sep 2021 (arsip Wayback) | https://web.archive.org/web/2021/https://newsroom.tiktok.com/en-us/1-billion-people-on-tiktok | 2026-11-25 | HIGH |
+| 6 | Makalah peneliti ByteDance: sistem rekomendasi online training, parameter sparse disinkronkan ke serving tiap interval level menit; diterapkan di produk BytePlus Recommend (bukan klaim langsung soal TikTok). | Monolith: Real Time Recommendation System With Collisionless Embedding Table, Liu dkk., arXiv 2209.07663, 2022 | https://arxiv.org/abs/2209.07663 | 2026-11-25 | HIGH |
+| 7 | Iklan TikTok menjangkau 2,33 miliar pengguna (usia 18+) per Oktober 2026 menurut alat iklan TikTok; ini angka jangkauan iklan, bukan pengguna aktif bulanan resmi. | Essential TikTok statistics and trends for 2026, DataReportal, 2026 | https://datareportal.com/essential-tiktok-stats | 2026-11-25 | MEDIUM |
+| 8 | TikTok dan Douyin berbagi antarmuka mirip tetapi beroperasi terpisah; TikTok diblokir di China daratan. | TikTok, Wikipedia (ringkasan REST API), diakses 2026 | https://en.wikipedia.org/wiki/TikTok | 2026-11-25 | MEDIUM |

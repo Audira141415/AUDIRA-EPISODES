@@ -5,7 +5,11 @@ title: "Rahasia Algoritma TikTok yang Membuat Kamu Terus Scroll"
 hook: "1,5 miliar pengguna dikendalikan satu algoritma — begini cara kerjanya"
 styleCandidates: ["DEVFORGE (2D)", "DATAPHYSICAL (2D)", "CYBERFORGE (3D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak
+risiko: "Angka pengguna cepat basi dan hook 1,5 miliar tak terverifikasi; bobot sinyal tak dipublikasikan, jangan klaim bocoran."
 ---
 
 # Rahasia Algoritma TikTok yang Membuat Kamu Terus Scroll

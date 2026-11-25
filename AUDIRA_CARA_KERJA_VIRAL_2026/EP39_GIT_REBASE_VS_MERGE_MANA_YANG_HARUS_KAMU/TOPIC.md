@@ -5,7 +5,11 @@ title: "Git Rebase vs Merge: Mana yang Harus Kamu Pakai"
 hook: "Jawaban salah bikin history repo jadi spaghetti"
 styleCandidates: ["BONGKAR (2D)", "VISUALINVESTIGATION (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Topik debat opini tim; judul menyiratkan satu jawaban benar, naskah dibingkai sesuai situasi."
 ---
 
 # Git Rebase vs Merge: Mana yang Harus Kamu Pakai

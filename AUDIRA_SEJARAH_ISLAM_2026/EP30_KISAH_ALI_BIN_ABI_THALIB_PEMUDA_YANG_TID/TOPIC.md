@@ -5,7 +5,11 @@ title: "Kisah Ali bin Abi Thalib: Pemuda yang Tidur di Tempat Tidur Nabi Saat An
 hook: "Bagaimana ia bisa begitu tenang menghadapi ratusan pedang yang siap menebas lehernya?"
 styleCandidates: ["ISLAMICDOCUMENTARY (2D)", "CINESTORY (2D)", "CHARACTERFLOW (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Derajat riwayat Ahmad (Ibnu Abbas) dan jubah hijau belum terverifikasi; sensitif Sunni-Syiah; hook \"ratusan pedang\" tidak akurat."
 ---
 
 # Kisah Ali bin Abi Thalib: Pemuda yang Tidur di Tempat Tidur Nabi Saat Ancaman Pembunuhan

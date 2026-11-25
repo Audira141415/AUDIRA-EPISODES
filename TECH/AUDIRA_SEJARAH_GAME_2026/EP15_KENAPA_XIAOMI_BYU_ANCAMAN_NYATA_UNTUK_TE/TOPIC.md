@@ -5,7 +5,11 @@ title: "Kenapa Xiaomi BYU Ancaman Nyata untuk Tesla di Asia"
 hook: "Mobil listrik Rp 300 jutaan yang bisa mengalahkan Tesla Model 3"
 styleCandidates: ["SCALEFORGE (3D)", "BROADCASTFORGE (2D)", "DATAPHYSICAL (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: tidak
+risiko: "Judul memakai nama model \"BYU\" yang tidak ada (kemungkinan YU7) dan hook Rp 300 jutaan serta \"mengalahkan Model 3\" tidak akurat; data bulanan cepat basi; tidak ada logo/wajah (rule TECH)."
 ---
 
 # Kenapa Xiaomi BYU Ancaman Nyata untuk Tesla di Asia

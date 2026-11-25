@@ -5,7 +5,11 @@ title: "Kenapa Kita Menguap Saat Orang Lain Menguap"
 hook: "Fenomena menular ini berhubungan dengan empati, dan hewan lain pun mengalaminya"
 styleCandidates: ["ANATOMIX (3D)", "CERDIK (2D)", "BEDAH (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Kaitan menguap-empati diperdebatkan; hook harus ditulis sebagai dugaan, bukan fakta"
 ---
 
 # Kenapa Kita Menguap Saat Orang Lain Menguap

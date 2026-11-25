@@ -5,7 +5,11 @@ title: "Kenapa Ada Orang yang Tidak Bisa Merasakan Nyeri"
 hook: "Penyakit langka yang terdengar seperti superpower tapi kenyataannya sangat berbahaya"
 styleCandidates: ["ANATOMIX (3D)", "INNERWORKS (3D)", "BEDAH (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah; jangan klaim naloxone membuat pasien merasa nyeri pertama kali (hanya dari Wikipedia), hindari wajah orang nyata"
 ---
 
 # Kenapa Ada Orang yang Tidak Bisa Merasakan Nyeri

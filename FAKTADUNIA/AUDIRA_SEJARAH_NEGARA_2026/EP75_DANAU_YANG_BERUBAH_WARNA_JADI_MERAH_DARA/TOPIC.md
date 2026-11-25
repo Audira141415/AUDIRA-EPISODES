@@ -5,7 +5,11 @@ title: "Danau yang Berubah Warna Jadi Merah Darah Setiap Tahun"
 hook: "Lake Natron di Tanzania — fenomena ilmiah yang terlihat seperti horor"
 styleCandidates: ["WORLDFORGE (3D)", "DISASTERSIM (3D)", "PAPERWORLD (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul tidak akurat: warna tidak merah darah setiap tahun, bergantung penguapan; pH beda antarsumber (10,5 vs >12)."
 ---
 
 # Danau yang Berubah Warna Jadi Merah Darah Setiap Tahun

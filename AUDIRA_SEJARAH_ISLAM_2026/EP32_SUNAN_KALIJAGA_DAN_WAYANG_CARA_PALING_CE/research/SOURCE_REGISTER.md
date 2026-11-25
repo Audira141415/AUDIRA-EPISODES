@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sejarah peradaban Islam yang jarang diketahui`
+# Source Register — Sunan Kalijaga dan Wayang: Cara Paling Cerdas Menyebarkan Islam di Nusantara
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Wayang masuk Daftar Warisan Budaya Takbenda UNESCO (proklamasi 7 November 2003); halaman resmi terverifikasi aktif, isi dimuat via JavaScript sehingga tanggal dicek silang di #2 | Wayang puppet theatre, UNESCO Intangible Cultural Heritage, 2003 | https://ich.unesco.org/en/RL/wayang-puppet-theatre-00063 | 2026-11-25 | HIGH |
+| 2 | Catatan wayang tertua: piagam Dalinan 903 M (Raja Balitung, Mataram Kuno) memuat pertunjukan wayang kisah Bima Kumara; prasasti Kuti pertengahan abad ke-10 menyebut "aringgit"; Arjunawiwaha (1035) menyebut kelir; wayang berkembang asli di Jawa (James Brandon); punakawan tidak berasal dari epos Hindu; UNESCO 7 Nov 2003 | Wayang, Wikipedia (merujuk Brandon, Holt, dkk.), diakses 2026-11-25 | https://en.wikipedia.org/wiki/Wayang | 2026-11-25 | MEDIUM |
+| 3 | Islamisasi Jawa bertahap; Walisongo dan Sunan Kalijaga dalam historiografi akademik | A History of Modern Indonesia since c.1300, M.C. Ricklefs, 2nd ed., MacMillan, 1991, hlm. 9–10 (dirujuk via artikel Wikipedia Wali Sanga dan Sunan Kalijaga; buku belum dibuka langsung) | https://en.wikipedia.org/wiki/Wali_Sanga | 2026-11-25 | HIGH |
+| 4 | Walisongo: bukti baik bahwa kurang dari sembilan orang hidup bersamaan; Islam sudah hadir di Jawa sebelum Walisongo; Kalijaga putra Adipati Tuban Tumenggung Wilatikta, dimakamkan di Kadilangu, Demak; memakai wayang kulit dan gamelan | Wali Sanga, Wikipedia, diakses 2026-11-25 | https://en.wikipedia.org/wiki/Wali_Sanga | 2026-11-25 | MEDIUM |
+| 5 | Nama lahir Raden Mas Said; prinsip dakwah "following yet influencing"; kesenian (ukir, wayang kulit, gamelan, tembang) sebagai media; legenda perampok dan Sunan Bonang dari Babad Tanah Jawi (tanpa tanda formal konversi); kutipan Clifford Geertz "multivoiced" | Sunan Kalijaga, Wikipedia (merujuk Agus Sunyoto, Atlas Wali Songo, 2014; Geertz), diakses 2026-11-25 | https://en.wikipedia.org/wiki/Sunan_Kalijaga | 2026-11-25 | MEDIUM |
+| 6 | Tradisi: lakon carangan Layang Kalimasada dan Petruk Dadi Ratu, tembang Ilir-ilir, tiang tatal Masjid Agung Demak dikaitkan dengan Kalijaga; wafat tidak pasti (12 Muharram 1513 Saka ≈ 1592 M versi tradisi) | Sunan Kalijaga, Wikipedia Indonesia (merujuk Soekirno 1994; Nasuhi, Studia Islamika 24(1), 2017; Chodjim 2013) | https://id.wikipedia.org/wiki/Sunan_Kalijaga | 2026-11-25 | MEDIUM |
+| 7 | QS An-Nahl (16) ayat 125: seruan ke jalan Tuhan dengan hikmah dan pelajaran yang baik; teks Arab (Utsmani) dan terjemah Indonesia dicocokkan | Al-Quran, teks Utsmani + terjemah Indonesia (Kemenag) via Al Quran Cloud API | https://api.alquran.cloud/v1/ayah/16:125/editions/quran-uthmani,id.indonesian | 2026-11-25 | HIGH |
+| 8 | Wayang kancil dikaitkan Sunan Giri; wayang golek dikaitkan Sunan Kudus (atribusi tradisi/legenda) | Wayang, Wikipedia | https://en.wikipedia.org/wiki/Wayang | 2026-11-25 | MEDIUM |

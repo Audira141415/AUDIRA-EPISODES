@@ -1,93 +1,69 @@
-# SCRIPT — `Fakta sejarah unik negara-negara di dunia` (`EP75`)
+# Naskah — Danau yang Berubah Warna Jadi Merah Darah Setiap Tahun
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Danau merah-oranye dari udara, kerak garam putih, HUD "pH 10,5".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Danau ini merah seperti darah, tapi bukan darah. Ini danau paling ganjil di Afrika, kisah dari AUDIRA.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Peta Tanzania utara, titik Danau Natron di Gregory Rift, callout "57 km".
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya Danau Natron, di Tanzania utara. Panjangnya sekitar 57 kilometer, tapi dalamnya kurang dari tiga meter. Tanpa jalan keluar, air hanya hilang lewat penguapan.
 
-## c02 — <Judul Bab 1>
+## c02 — Bab 1: Mengapa merah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Time-lapse air biru menyusut, kerak garam muncul, tepian dangkal jadi oranye.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Saat kering, air menguap dan garam makin pekat. Sianobakteri penyuka garam pun berkembang. Pigmen merahnya mewarnai air terbuka jadi merah pekat, perairan dangkal jadi oranye. Sebelumnya, danau biru.
 
-## c03 — <Judul Bab 2>
+## c03 — Bab 2: Air yang ekstrem
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Termometer 60 derajat, skala pH berpenanda 10,5 di samping botol amonia, satu ikan kecil di mata air tepi.
 
-> <teks narasi>
+> Airnya sangat basa. pH-nya pernah terukur 10,5, nyaris sama dengan amonia. Suhunya bisa sekitar 60 derajat Celsius. Hanya satu spesies ikan yang bertahan.
 
-## c04 — <Judul Bab 3>
+## c04 — Bab 3: Burung yang diawetkan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Siluet burung dan kelelawar berkerak garam di tepi danau, ilustrasi kertas, tanpa orang.
 
-> <teks narasi>
+> Karena itu, bangkai burung dan kelelawar di sana awet berlapis kerak. Nick Brandt memotretnya tahun 2013. Banyak yang bilang hewannya jadi batu. Sebenarnya diawetkan air basa.
 
-## c05 — <Judul Bab 4>
+## c05 — Bab 4: Taman flamingo
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Ribuan flamingo merah muda di pulau kristal garam, callout "75%".
 
-> <teks narasi>
+> Anehnya, tempat ini rumah bagi flamingo. Sekitar 75 persen flamingo kecil dunia lahir di Natron. Mereka bersarang di pulau kristal garam. Air basa jadi benteng, karena predator sulit mendekat.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Diagram kitaran: tinggi air, pulau garam, sarang, jeda 3-4 tahun.
 
-> <teks narasi>
+> Sarang hanya bisa dibuat bila tinggi air pas. Terlalu tinggi, pulau garam tenggelam. Terlalu rendah, predator berjalan menyeberang. Jadi mereka berbiak massal sekitar tiap tiga sampai empat tahun.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Danau merah saat golden hour, lencana tanggal 4 Juli 2001, outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Sejak 4 Juli 2001, Natron berstatus Situs Ramsar, lahan basah internasional. Rencana pabrik soda abu di tepinya dihentikan pada 2008. Jadi merahnya bukan horor. Itu tanda kehidupan yang bertahan di tempat paling keras.
+
+## Opsi hook lain
+
+1. Air ini nyaris sekeras amonia, tapi jutaan flamingo lahir di sana.
+2. Burung yang jatuh ke danau ini tak membusuk. Kenapa?
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **208 kata** ≈ **87 dtk**

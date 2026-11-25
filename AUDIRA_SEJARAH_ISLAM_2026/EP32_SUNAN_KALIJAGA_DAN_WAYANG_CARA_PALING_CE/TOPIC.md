@@ -5,7 +5,11 @@ title: "Sunan Kalijaga dan Wayang: Cara Paling Cerdas Menyebarkan Islam di Nusan
 hook: "Ia menggunakan seni budaya Jawa yang sudah ada untuk membawa orang ke Islam — tanpa konflik"
 styleCandidates: ["WAYANGFORGE (2D)", "BATIKFORGE (2D)", "NEGERI (3D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Atribusi lakon dan lagu ke Kalijaga berbasis tradisi; klaim tanpa konflik perlu dibingkai hati-hati; rujukan akademik belum dibuka langsung"
 ---
 
 # Sunan Kalijaga dan Wayang: Cara Paling Cerdas Menyebarkan Islam di Nusantara

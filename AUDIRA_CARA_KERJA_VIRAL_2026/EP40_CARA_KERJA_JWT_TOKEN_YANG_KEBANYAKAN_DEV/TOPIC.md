@@ -5,7 +5,11 @@ title: "Cara Kerja JWT Token yang Kebanyakan Developer Salah Pahami"
 hook: "Kalau kamu pikir JWT itu \"aman by default\", baca ini dulu"
 styleCandidates: ["CIRCUITFORGE (2D)", "CYBERFORGE (2D)", "PRECISION (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Sumber hanya RFC dan satu artikel; tidak ada statistik adopsi/kerentanan terverifikasi, hindari angka."
 ---
 
 # Cara Kerja JWT Token yang Kebanyakan Developer Salah Pahami

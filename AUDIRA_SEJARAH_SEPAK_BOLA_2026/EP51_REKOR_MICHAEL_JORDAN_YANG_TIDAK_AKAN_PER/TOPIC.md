@@ -5,7 +5,11 @@ title: "Rekor Michael Jordan yang Tidak Akan Pernah Disamai Siapapun"
 hook: "6 ring, 6 MVP Final — dan tidak pernah kalah di seri final NBA"
 styleCandidates: ["DATAPHYSICAL (2D)", "CHARACTERFLOW (2D)", "PIXELSTORY (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak
+risiko: "Judul terlalu mutlak: rekor 72 menang sudah dipecahkan Warriors 2016; angka LeBron bisa berubah."
 ---
 
 # Rekor Michael Jordan yang Tidak Akan Pernah Disamai Siapapun

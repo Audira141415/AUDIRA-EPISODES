@@ -5,7 +5,11 @@ title: "Fosil Tertua di Bumi: Jejak Kehidupan 3,5 Miliar Tahun Lalu"
 hook: "Makhluk purba yang meninggalkan tanda di batu dan mengubah seluruh atmosfer planet ini"
 styleCandidates: ["TERRARIUM (3D)", "WORLDFORGE (3D)", "CHRONICLE (2D)"]
 source: channel-topics/audira-sains/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul/hook tidak akurat (tidak ada fosil tertua yang disepakati; atmosfer berubah 2,5 miliar tahun lalu, bukan 3,5); fosil mikroba tertua masih diperdebatkan."
 ---
 
 # Fosil Tertua di Bumi: Jejak Kehidupan 3,5 Miliar Tahun Lalu

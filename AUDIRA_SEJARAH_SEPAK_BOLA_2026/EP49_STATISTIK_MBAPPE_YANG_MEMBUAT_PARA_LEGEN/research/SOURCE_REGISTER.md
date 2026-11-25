@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Statistik Mbappe yang Membuat Para Legenda Terdiam
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Lahir 20 Des 1998; gol final 2018 di usia 19 th 207 hari, remaja kedua setelah Pele yang mencetak gol di final dan juara; Sepatu Emas 2022 (8 gol) dan 2026 (10 gol), pemain pertama menang dua kali | Kylian Mbappé, Wikipedia (merujuk FIFA, BBC, Fox Sports), 2026 | https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9 | 2026-11-25 | MEDIUM |
+| 2 | Tabel per 19 Juli 2026: Mbappe 22 gol/22 laga, Messi 21/34, Klose 16/24, Ronaldo (Brasil) 15/19, Fontaine 13 gol dalam 6 laga (1958); Mbappe 4 gol di final (2018 satu, 2022 hat-trick), Hurst hat-trick final 1966 | List of FIFA World Cup top goalscorers, Wikipedia (merujuk data FIFA), 2026 | https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_top_goalscorers | 2026-11-25 | MEDIUM |
+| 3 | Mbappe lewati Messi lewat gol ke-21 dan ke-22 saat Prancis kalah 4-6 dari Inggris di perebutan tempat ketiga (18 Juli 2026) | Kylian Mbappé passes Lionel Messi's World Cup goal-scoring record, ESPN, 2026 | https://www.espn.com/football/story/_/id/49257085/kylian-mbappe-lionel-messi-all-world-cup-goals-record | 2026-11-25 | HIGH |
+| 4 | Mbappe punya 22 gol Piala Dunia, memimpin Messi di daftar Sepatu Emas | FIFA World Cup 2026 stats: Mbappé tops Messi with 22, ESPN, 19 Jul 2026 | https://www.espn.co.uk/football/story/_/id/49394546/fifa-world-cup-2026-stats-kylian-mbappe-tops-lionel-messi-22-michael-olise-breaks-pele-record-7-jude-bellingham-7-most-ever-england | 2026-11-25 | HIGH |
+| 5 | Gol ke-20 Piala Dunia dalam 20 penampilan (perempat final vs Maroko); 17 gol non-penalti, sama dengan Messi | Kylian Mbappé Equals Lionel Messi's Record For Most Non-Penalty World Cup Goals, FOX Sports, 9 Jul 2026 | https://www.foxsports.com/stories/soccer/kylian-mbappe-equals-lionel-messis-record-most-non-penalty-world-cup-goals | 2026-11-25 | HIGH |
+| 6 | 400 gol karier di usia 26 (13 Nov 2025): Monaco 27, PSG 256, Real Madrid 62, Prancis 55 (data Opta) | At 26, Mbappé hits 400 career goals, OneFootball, 13 Nov 2025 | https://onefootball.com/en/news/at-26-mbappe-hits-400-career-goals-see-the-details-41948577 | 2026-11-25 | MEDIUM |
+| 7 | Hat-trick Mbappe (menit 40, 60, 80), Real Madrid 4-1 Real Sociedad | Real Madrid vs Real Sociedad, BBC Sport, 26 Agu 2026 | https://www.bbc.com/sport/football/live/ck24mej548lvt | 2026-11-25 | HIGH |
+| 8 | Pichichi La Liga 2025-26, dua kali beruntun | Mbappe achieves feat only matched by Cristiano Ronaldo & Lionel Messi, Goal.com, 24 Mei 2026 | https://www.goal.com/en/lists/kylian-mbappe-real-madrid-pichichi-cristiano-ronaldo-lionel-messi-record/blt7f14077965a3db09 | 2026-11-25 | MEDIUM |

@@ -5,7 +5,11 @@ title: "Quantum Computing Explained: Kapan Komputer Kuantum Siap?"
 hook: "Komputer yang bisa memecahkan password dalam detik — tapi ada satu masalah besar"
 styleCandidates: ["NANOFORGE (3D)", "CIRCUITFORGE (2D)", "VOXELVERSE (3D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak
+risiko: "Hook awal tidak akurat (bukan password, bukan dalam detik); angka hardware dan roadmap cepat basi; katalog GLB lemah untuk tema kuantum."
 ---
 
 # Quantum Computing Explained: Kapan Komputer Kuantum Siap?

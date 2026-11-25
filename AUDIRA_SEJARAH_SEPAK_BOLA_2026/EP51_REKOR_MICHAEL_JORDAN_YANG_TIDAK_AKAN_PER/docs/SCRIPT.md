@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris` (`EP51`)
+# Naskah — Rekor Michael Jordan yang Tidak Akan Pernah Disamai Siapapun
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Siluet pemain 3D generik tanpa wajah melompat ke ring, enam trofi emas muncul berderet; HUD besar "6-0".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Enam kali tampil di Final NBA. Enam kali juara. Nol kali kalah. Ini rekor Michael Jordan, dan AUDIRA akan buktikan kenapa susah disamai.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Lapangan basket gelap dari atas, siluet figur nomor 23 generik berdiri di tengah, HUD "Chicago Bulls 1991-1998" sebagai teks polos tanpa logo.
 
-> <konteks singkat + "Di Audira, ...">
+> Lima belas musim di NBA, enam cincin juara bersama Chicago Bulls. Tapi yang gila bukan jumlah cincinnya. Yang gila, ia tidak pernah kalah saat Final.
 
-## c02 — <Judul Bab 1>
+## c02 — Bab 1 - Enam Final, enam juara
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Garis waktu horizontal 1991 sampai 1998, enam trofi muncul satu per satu di tiap tahun juara; HUD "1991 1992 1993 1996 1997 1998".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Juara pertama tahun 1991, lalu 1992 dan 1993. Ia sempat pensiun untuk main bisbol, kembali, lalu menang lagi 1996, 1997, 1998. Enam Final, enam kemenangan.
 
-## c03 — <Judul Bab 2>
+## c03 — Bab 2 - Enam Final MVP
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Enam piala MVP Final berputar di layar, satu per satu menyala; HUD "6 Final MVP" dan bar perbandingan dengan angka "4" milik pemain terdekat.
 
-> <teks narasi>
+> Di tiap Final itu ia dipilih jadi pemain terbaik. Enam MVP Final, rekor NBA. Pemain terdekat, LeBron James, punya empat per 25 November 2026.
 
-## c04 — <Judul Bab 3>
+## c04 — Bab 3 - Sepuluh gelar top skor
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Grafik batang sepuluh musim, tiap batang naik sebagai pilar emas; HUD "10 gelar top skor" dan "7 beruntun".
 
-> <teks narasi>
+> Soal mencetak poin, ia juara sepuluh kali, rekor NBA. Tujuh di antaranya beruntun. Rata-rata karier 30,1 poin per laga, tertinggi sepanjang sejarah. Di playoff, 33,4.
 
-## c05 — <Judul Bab 4>
+## c05 — Bab 4 - Musim 72 menang
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Papan skor besar menghitung naik menuju "72-10", lalu angka "73-9" menimpanya dari sisi lain layar.
 
-> <teks narasi>
+> Musim 1995-96, Bulls menang 72 laga, rekor saat itu. Tapi kami harus koreksi: tahun 2016 Golden State Warriors menang 73. Tidak semua rekornya abadi.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan - Kenapa sulit disamai
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Siluet pemain berdiri di antara dua pilar: pilar "juara" dan pilar "MVP Final"; pilar ketiga "tanpa kalah" menyala terakhir.
 
-> <teks narasi>
+> Kenapa tiga rekor tadi sulit disamai? Karena pemain harus sehat, timnya juara, dan ia terbaik di seri itu. Berulang kali. Sekali kalah saja, nol itu hilang.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Siluet dribble menjauh ke arah kamera, enam trofi jadi cahaya emas; kartu outro AUDIRA, Created by Agus Dwi R.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Per tanggal sekarang, belum ada yang menyamai enam Final tanpa kalah plus enam MVP Final. Sampai ada yang menyamai, angka itu milik satu nama. Ikuti AUDIRA untuk rekor berikutnya.
+
+## Opsi hook lain
+
+1. Dua puluh tahun lebih berlalu, dan belum ada yang pulang dari Final dengan catatan sebersih ini.
+2. Enam trofi, enam MVP Final, nol kekalahan. Bisakah angka ini disamai?
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **201 kata** ≈ **84 dtk**

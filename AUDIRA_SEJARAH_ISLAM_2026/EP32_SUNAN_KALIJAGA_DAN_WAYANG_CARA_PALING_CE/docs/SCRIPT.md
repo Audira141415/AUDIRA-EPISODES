@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah peradaban Islam yang jarang diketahui` (`EP32`)
+# Naskah — Sunan Kalijaga dan Wayang: Cara Paling Cerdas Menyebarkan Islam di Nusantara
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: siluet gunungan wayang menutup layar kelir, lampu blencong menyala, bayangan Semar muncul; callout HUD "Tanpa perang".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Satu layar kain, satu lampu minyak. Begitulah Sunan Kalijaga dikenang membawa Islam ke Jawa, tanpa perang. Tapi benarkah wayang ciptaannya? Jawabannya mengejutkan.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: relief prasasti batu bergaya 2D, tahun "903" muncul besar di HUD, siluet dalang Bima Kumara di kelir.
 
-> <konteks singkat + "Di Audira, ...">
+> Pertama, luruskan satu hal. Wayang bukan ciptaan Sunan Kalijaga. Prasasti Dalinan, tahun 903, sudah mencatat pertunjukan wayang tentang Bima, jauh sebelum Islam berkuasa di Jawa.
 
-## c02 — <Judul Bab 1>
+## c02 — Siapa Sunan Kalijaga
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: peta pesisir utara Jawa dengan penanda Tuban dan Demak; siluet tanpa wajah bergerak di jalan hutan; label "Legenda" pada adegan perampok.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Lalu siapa dia? Raden Said, putra Adipati Tuban, anggota Walisongo. Menurut Babad Tanah Jawi, dulu ia perampok yang bertemu Sunan Bonang. Itu legenda, bukan catatan pasti.
 
-## c03 — <Judul Bab 2>
+## c03 — Mengikuti sambil memengaruhi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: kolase gamelan, ukiran kayu, dan tembang suluk; kata "mengikuti sambil memengaruhi" tampil kinetik di tengah.
 
-> <teks narasi>
+> Prinsipnya mengikuti sambil memengaruhi. Daripada melarang kesenian lama, ia memakainya: gamelan, ukiran, tembang suluk, dan wayang kulit.
 
-## c04 — <Judul Bab 3>
+## c04 — Lakon dan punakawan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: wayang Semar, Gareng, Petruk, Bagong berjajar di kelir; callout HUD "Petruk Dadi Ratu" dan "Layang Kalimasada".
 
-> <teks narasi>
+> Menurut tradisi, ia menyusun lakon seperti Layang Kalimasada dan Petruk Dadi Ratu. Punakawan Semar, Gareng, Petruk, dan Bagong bukan dari epos India. Penonton tertawa dulu, lalu merenung.
 
-## c05 — <Judul Bab 4>
+## c05 — Dasar dakwah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: kaligrafi emas surah An-Nahl 16:125 melayang di atas pola arabesque; teks terjemah menyorot kata "hikmah".
 
-> <teks narasi>
+> Dasarnya sering dikaitkan dengan Surah An-Nahl ayat seratus dua puluh lima: serulah ke jalan Tuhanmu dengan hikmah dan pelajaran yang baik. Hikmah berarti cara bijak, bukan paksaan.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan sejarawan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: garis waktu pesisir Jawa dengan kapal dagang; label "bertahap", "pedagang", "guru sufi"; sembilan lingkaran Walisongo tidak sejajar di garis waktu.
 
-> <teks narasi>
+> Tapi sejarawan mengingatkan. Menurut M. C. Ricklefs, Islam masuk Jawa bertahap lewat pedagang dan guru sufi. Walisongo bukan sembilan orang sezaman, dan banyak kisah Kalijaga bersumber dari babad.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: kelir bercahaya emas, bayangan gunungan membuka; HUD "UNESCO 2003"; kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi wayang bukan senjata, melainkan jembatan. Tahun dua ribu tiga, UNESCO menetapkan wayang sebagai warisan budaya dunia. Dari selembar kain, lahir dakwah yang merangkul. Ikuti AUDIRA untuk kisah Nusantara berikutnya.
+
+## Opsi hook lain
+
+1. Wayang itu sudah ada sebelum Islam datang ke Jawa. Lalu kenapa Sunan Kalijaga yang dikenang?
+2. Ia tidak membakar kesenian lama. Ia memakainya untuk bercerita.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **202 kata** ≈ **85 dtk**

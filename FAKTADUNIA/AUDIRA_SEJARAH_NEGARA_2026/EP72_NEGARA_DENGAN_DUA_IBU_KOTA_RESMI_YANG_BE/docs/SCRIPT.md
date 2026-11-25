@@ -1,93 +1,69 @@
-# SCRIPT — `Fakta sejarah unik negara-negara di dunia` (`EP72`)
+# Naskah — Negara dengan Dua Ibu Kota Resmi yang Berbeda Fungsi
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **13** · estimasi **5 dtk**
+- Visual: Peta Bolivia, pin merah di Sucre lalu pin biru di La Paz; HUD teks 'Pasal 6: Sucre'.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Di konstitusinya, ibu kota Bolivia adalah Sucre. Tapi presidennya berkantor di kota lain.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Globe berputar, tiga siluet gedung pemerintahan tanpa wajah; label AUDIRA di papan HUD.
 
-> <konteks singkat + "Di Audira, ...">
+> Banyak negara memisahkan ibu kota di atas kertas dari tempat pemerintah benar-benar bekerja. Di AUDIRA kali ini, kita bedah empat contohnya.
 
-## c02 — <Judul Bab 1>
+## c02 — Bolivia: Sucre dan La Paz
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **32** · estimasi **13 dtk**
+- Visual: Kota pegunungan Andes, kubah putih Sucre, lalu La Paz di lembah dengan gunung Illimani; callout '3.650 m' dan 'Pasal 6, Konstitusi 2009'.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Pasal enam Konstitusi Bolivia tahun 2009 menyebut: Sucre adalah ibu kota Bolivia. Tapi kursi pemerintahan ada di La Paz, kota di ketinggian sekitar 3.650 meter. Itu ibu kota administratif tertinggi di dunia.
 
-## c03 — <Judul Bab 2>
+## c03 — Afrika Selatan: tiga ibu kota
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Peta Afrika Selatan, tiga pin: Pretoria (gedung Union Buildings, siluet), Cape Town (gunung Table Mountain), Bloemfontein (gedung pengadilan); callout '3 kota'.
 
-> <teks narasi>
+> Afrika Selatan malah membaginya jadi tiga. Pretoria jadi ibu kota eksekutif, tempat pemerintah bekerja. Cape Town jadi ibu kota legislatif: konstitusi menyebut kursi Parlemen ada di sana. Bloemfontein dikenal sebagai ibu kota yudisial.
 
-## c04 — <Judul Bab 3>
+## c04 — Belanda: Amsterdam dan Den Haag
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Kanal Amsterdam bergeser ke gedung parlemen Den Haag; callout 'Pasal 32' dan '1588'.
 
-> <teks narasi>
+> Belanda lebih halus lagi. Konstitusinya hanya menyebut Amsterdam sebagai ibu kota, tempat raja dilantik. Tapi sejak tahun 1588, parlemen dan pemerintah berkedudukan di Den Haag.
 
-## c05 — <Judul Bab 4>
+## c05 — Malaysia: pindah ke Putrajaya
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Menara kembar Kuala Lumpur padat lalu kubah Putrajaya; callout '1999' dan '2003'.
 
-> <teks narasi>
+> Malaysia memindahkan pusat pemerintahan dari Kuala Lumpur ke Putrajaya pada 1999, karena terlalu padat. Peradilan menyusul pada 2003. Tapi Kuala Lumpur tetap ibu kota menurut konstitusi federal, dan Parlemen masih bersidang di sana.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan: tiga arti ibu kota
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Diagram tiga ikon: dokumen hukum, gedung kekuasaan, upacara negara; keempat negara menyala bergantian.
 
-> <teks narasi>
+> Jadi, ibu kota bisa berarti tiga hal berbeda: yang tertulis di hukum, tempat pemerintah bekerja, dan tempat upacara negara digelar. Sering kali ketiganya beda kota.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Peta dunia, empat negara menyala, lalu kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi kalau ada yang bertanya apa ibu kota sebuah negara, jawabannya bisa lebih dari satu. Ikuti AUDIRA untuk fakta dunia lain yang mengejutkan.
+
+## Opsi hook lain
+
+1. Bolivia punya dua kota yang sama-sama disebut ibu kota. Yang satu di konstitusi, yang satu tempat presiden bekerja.
+2. Satu negara, tiga ibu kota. Afrika Selatan membaginya sesuai fungsi.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **205 kata** ≈ **85 dtk**

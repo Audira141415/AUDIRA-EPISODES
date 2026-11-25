@@ -5,7 +5,11 @@ title: "TypeScript Strict Mode: Kenapa Menyakitkan tapi Wajib"
 hook: "Rasa sakit di development jauh lebih murah dari bug di production"
 styleCandidates: ["DEVFORGE (2D)", "PRECISION (2D)", "GLITCHFORGE (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Judul 'wajib' adalah opini; visual kode abstrak; TS 6.0 menjadikan strict default sehingga sudut 'wajib menyalakan' melemah untuk proyek baru."
 ---
 
 # TypeScript Strict Mode: Kenapa Menyakitkan tapi Wajib

@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Cara kerja benda dan fenomena viral yang jarang diketahui`
+# Source Register — Git Rebase vs Merge: Mana yang Harus Kamu Pakai
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Rebase membuat history terlihat linear; hasil akhir (snapshot) sama dengan merge, hanya history yang beda | Pro Git, bab "Git Branching - Rebasing", Scott Chacon & Ben Straub | https://git-scm.com/book/en/v2/Git-Branching-Rebasing | 2026-11-25 | HIGH |
+| 2 | Peringatan resmi: jangan rebase commit yang sudah ada di luar repositorymu dan jadi dasar kerja orang lain; kolaborator harus re-merge dan jadi berantakan | Pro Git, "The Perils of Rebasing", Chacon & Straub | https://git-scm.com/book/en/v2/Git-Branching-Rebasing | 2026-11-25 | HIGH |
+| 3 | Branch hasil rebase tersusun dari commit baru (bukan commit lama dipindah) | git-rebase documentation, Git project | https://git-scm.com/docs/git-rebase | 2026-11-25 | HIGH |
+| 4 | git merge --no-ff selalu membuat merge commit, bahkan saat bisa fast-forward; fast-forward tidak membuat merge commit | git-merge documentation, Git project | https://git-scm.com/docs/git-merge | 2026-11-25 | HIGH |
+| 5 | Tombol Merge pull request di GitHub memakai --no-ff; merge commit menyimpan semua commit; squash menggabungkan semua commit PR jadi satu commit | About pull request merges, GitHub Docs, 2026 | https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges | 2026-11-25 | HIGH |
+| 6 | Interactive rebase bisa squash/fixup commit jadi satu | About Git rebase, GitHub Docs | https://docs.github.com/en/get-started/using-git/about-git-rebase | 2026-11-25 | MEDIUM |
+| 7 | Opsi --force-with-lease tersedia di git push untuk push paksa yang lebih aman | git-push documentation, Git project | https://git-scm.com/docs/git-push | 2026-11-25 | HIGH |

@@ -1,93 +1,69 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP40`)
+# Naskah — Cara Kerja JWT Token yang Kebanyakan Developer Salah Pahami
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **14** · estimasi **6 dtk**
+- Visual: Layar gelap, selembar token panjang tiga warna melayang; huruf kunci bergetar. HUD: "JWT".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Token JWT di aplikasimu bukan brankas. Isinya terbuka, dan bisa dipalsukan kalau setelanmu salah.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Panel kode: sebuah request login, token berpindah dari server ke browser dalam kapsul. HUD: "RFC 7519 · Mei 2015".
 
-> <konteks singkat + "Di Audira, ...">
+> Di AUDIRA kali ini kita bongkar JWT. Standarnya terbit Mei 2015, RFC 7519, dan dipakai luas buat login. Tapi cara kerjanya sering disalahpahami.
 
-## c02 — <Judul Bab 1>
+## c02 — Anatomi token
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **30** · estimasi **12 dtk**
+- Visual: Token dibelah jadi tiga blok berlabel Header, Payload, Signature, dipisah tiga titik bercahaya. HUD: "3 bagian".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Sebuah JWT terdiri dari tiga bagian yang dipisah titik. Header, payload, dan signature. Header dan payload cuma di-encode pakai base64url. Itu bukan enkripsi, siapa pun yang pegang token bisa membacanya.
 
-## c03 — <Judul Bab 2>
+## c03 — Kesalahan pertama
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Amplop transparan berisi kartu data; ikon gembok palsu retak di atasnya.
 
-> <teks narasi>
+> Kesalahan pertama: menaruh data sensitif di payload karena dikira terkunci. Signature menjaga keutuhan isi, bukan kerahasiaannya. Mau rahasia, pakai JWE, versi terenkripsi.
 
-## c04 — <Judul Bab 3>
+## c04 — Algoritma none
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Header token diedit: tulisan alg berganti jadi "none", kolom signature mengosong. HUD: alg = none.
 
-> <teks narasi>
+> Kesalahan kedua lebih berbahaya. Header memuat field alg, algoritma tanda tangan. Spesifikasi mengenal nilai none, artinya tanpa tanda tangan. Beberapa library dulu menerimanya sebagai token sah. Penyerang tinggal ubah payload dan kosongkan signature.
 
-## c05 — <Judul Bab 4>
+## c05 — Tertukar kunci
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **12 dtk**
+- Visual: Dua kunci bersebelahan: kunci publik berlabel RSA diubah jadi gembok HMAC. HUD: RS256 menjadi HS256.
 
-> <teks narasi>
+> Ada juga serangan tertukar RSA dan HMAC, dipublikasikan Tim McLean pada 2015. Penyerang ubah alg jadi HS256, lalu pakai kunci publik sebagai rahasia HMAC. Server yang percaya header menganggapnya valid.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan: cara aman
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **12 dtk**
+- Visual: Daftar centang menyala satu per satu: algoritma, exp, issuer, audience. HUD: RFC 8725 · Februari 2020.
 
-> <teks narasi>
+> Obatnya ada di RFC 8725, terbit Februari 2020. Server menentukan sendiri algoritma yang diizinkan, jangan percaya header. Periksa juga kedaluwarsa exp, issuer, dan audience. Gagal satu saja, tolak seluruh token.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Token sehat berstempel hijau melewati gerbang; kartu outro AUDIRA muncul.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> JWT aman kalau dipakai benar, bukan aman dari sananya. Jangan taruh rahasia di dalamnya, kunci algoritmanya, validasi semua klaim. Ikuti AUDIRA untuk bedah teknologi lainnya.
+
+## Opsi hook lain
+
+1. Satu karakter di header, dan server percaya token palsu. Ini bug JWT paling terkenal.
+2. Payload JWT-mu bisa dibaca siapa saja. Kamu sudah tahu?
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **207 kata** ≈ **86 dtk**

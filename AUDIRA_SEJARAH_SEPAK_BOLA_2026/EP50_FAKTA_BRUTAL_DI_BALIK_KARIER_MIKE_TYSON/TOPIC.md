@@ -5,7 +5,11 @@ title: "Fakta Brutal di Balik Karier Mike Tyson yang Jarang Diceritakan"
 hook: "Juara dunia termuda yang hidupnya hampir hancur sebelum 30 tahun"
 styleCandidates: ["CINESTORY (2D)", "CHARACTERFLOW (2D)", "FILM16 (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Kasus hukum 1992 sensitif: hanya putusan, tanpa nama korban; BoxRec tidak bisa diakses, rekor sebaiknya dicek ulang."
 ---
 
 # Fakta Brutal di Balik Karier Mike Tyson yang Jarang Diceritakan

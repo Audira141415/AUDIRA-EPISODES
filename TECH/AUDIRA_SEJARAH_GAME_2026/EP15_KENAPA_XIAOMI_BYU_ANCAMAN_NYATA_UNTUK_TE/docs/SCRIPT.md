@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP15`)
+# Naskah — Kenapa Xiaomi BYU Ancaman Nyata untuk Tesla di Asia
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **16** · estimasi **6 dtk**
+- Visual: Siluet SUV listrik generik (tanpa logo) di sisi kiri, tag harga "US$34.410" menghentak di tengah, panah menunjuk ke siluet SUV kedua berlabel teks "Model Y" (teks saja, tanpa logo).
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Perusahaan HP ini jual SUV listrik seharga sekitar 34 ribu dolar. Targetnya terang-terangan: Tesla Model Y.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **8 dtk**
+- Visual: Timeline horizontal April 2024 sampai September 2026; counter angka naik ke "800.000+" di ujung garis. Siluet sedan generik (SU7) bergerak di atas garis.
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya Xiaomi. Mobil pertamanya, SU7, mulai dikirim April 2024. Dua puluh sembilan bulan kemudian, total pengiriman mereka lewat 800 ribu unit.
 
-## c02 — <Judul Bab 1>
+## c02 — Versi murah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **37** · estimasi **15 dtk**
+- Visual: Diagram baterai dan kurva isi daya 10 ke 80 persen; callout HUD "233.500 yuan", "643 km", "20 menit". Papan nama teks "Lei Jun" (tanpa wajah).
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Mei 2026, mereka meluncurkan YU7 versi standar. Harga mulai 233.500 yuan, jarak tempuh 643 kilometer, cas dari 10 sampai 80 persen cuma 20 menit. Pendirinya, Lei Jun, bahkan mengaku membatalkan versi murah ini tahun lalu adalah kesalahan.
 
-## c03 — <Judul Bab 2>
+## c03 — Skala
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Dua batang bar chart: bar besar "486.532" (Tesla, Q3 2026) vs bar kecil "±101 ribu" (Xiaomi). Callout "hampir 5x".
 
-> <teks narasi>
+> Tapi skalanya masih beda jauh. Kuartal ketiga 2026, Tesla mengirim 486.532 mobil di seluruh dunia. Xiaomi, dari data bulanan, sekitar 101 ribu. Selisihnya hampir lima kali lipat.
 
-## c04 — <Judul Bab 3>
+## c04 — Tekanan di China
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **38** · estimasi **15 dtk**
+- Visual: Peta China bergaris, dua panah turun; kartu data "US$5,65 M ke US$5,21 M" lalu grafik garis pengiriman Xiaomi bulanan dengan titik September "40.015" dan tanda merah "-4,6%".
 
-> <teks narasi>
+> Di China, pendapatan Tesla turun dari 5,65 miliar dolar jadi 5,21 miliar dolar di kuartal yang sama. Tapi Xiaomi juga tidak mulus. September cuma 40.015 unit, turun 4,6 persen dari tahun lalu. Target setahun, 550 ribu, terasa jauh.
 
-## c05 — <Judul Bab 4>
+## c05 — Jurus baru
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: SUV besar tujuh kursi generik muncul dari siluet, counter "27.147" naik; lalu peta Eropa dengan empat negara menyala (Jerman, Italia, Spanyol, Swedia) dan label "2027".
 
-> <teks narasi>
+> Jurus barunya Sky Nomad, SUV hibrida dengan generator pengisi baterai. Terjual 27.147 unit di Oktober, beberapa pekan setelah rilis. Tahun 2027, rencananya Eropa menyusul.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **11 dtk**
+- Visual: Timbangan dua sisi, harga di satu sisi, skala pengiriman di sisi lain; tulisan "Ancaman nyata?" berubah jadi "Belum menyalip".
 
-> <teks narasi>
+> Jadi, ancaman nyata atau bukan? Sebagian nyata. Xiaomi menekan harga dan masuk ke wilayah Tesla. Tapi untuk menyalip, angkanya harus terus naik, bukan cuma naik di judul berita.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Dua siluet mobil berdampingan di garis finis, jarak kecil; kartu outro AUDIRA (`audira-outro-card.svg`).
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Tesla belum kalah. Tapi pesaing dari luar industri mobil kini berdiri sangat dekat. Ikuti terus di AUDIRA.
+
+## Opsi hook lain
+
+1. Hampir lima kali lebih kecil dari Tesla, tapi Xiaomi bikin Tesla di China terasa tertekan. Kok bisa?
+2. Dua puluh sembilan bulan, 800 ribu mobil. Dari perusahaan yang dulu cuma jual HP.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **208 kata** ≈ **83 dtk** (135–150 WPM: 83–92 dtk)

@@ -5,7 +5,11 @@ title: "Kejayaan Andalusia: 800 Tahun Peradaban Islam di Eropa yang Terlupakan"
 hook: "Cordoba pernah menjadi kota paling maju di dunia — apa yang akhirnya menghancurkannya?"
 styleCandidates: ["CHRONICLE (2D)", "WORLDFORGE (3D)", "HISTORYMAP (2D)"]
 source: channel-topics/audira-qissah/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Klaim superlatif (kota paling maju, angka populasi) dan hook menyederhanakan sebab; perlu sumber akademik cetak tambahan."
 ---
 
 # Kejayaan Andalusia: 800 Tahun Peradaban Islam di Eropa yang Terlupakan

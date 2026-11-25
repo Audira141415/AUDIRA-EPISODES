@@ -1,93 +1,71 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP16`)
+# Naskah — Rahasia Algoritma TikTok yang Membuat Kamu Terus Scroll
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Layar ponsel mengambang, kartu skor tampil di atas tiap video.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Kamu bukan cuma menonton TikTok. Tiap video diberi skor, khusus untukmu, dan kamu tidak pernah melihat angkanya.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Globe jaringan titik berdenyut, HUD angka 1 miliar.
 
-> <konteks singkat + "Di Audira, ...">
+> TikTok sendiri menyebut lebih dari satu miliar orang datang tiap bulan, per laporan 2021. Tapi tidak ada dua feed yang sama. Di AUDIRA kali ini, kita bedah halaman For You.
 
-## c02 — <Judul Bab 1>
+## c02 — Sinyal
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Ikon jempol, bagikan, komentar, skip mengalir ke ponsel.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Mulai dari sinyal. Video yang kamu tonton, suka, bagikan, atau lewati. Akun yang kamu ikuti. Bahkan bahasa dan jenis perangkatmu ikut dihitung, meski bobotnya lebih kecil.
 
-## c03 — <Judul Bab 2>
+## c03 — Bobot
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Bar durasi tonton penuh membesar, bar negara sama mengecil.
 
-> <teks narasi>
+> Yang paling berat? Menurut TikTok, menonton video panjang sampai habis bobotnya lebih besar daripada sekadar satu negara dengan kreatornya. Diam menonton pun sudah dianggap suara.
 
-## c04 — <Judul Bab 3>
+## c04 — Prediksi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Tumpukan video melewati lima gerbang berlabel tahap, skor menyatu.
 
-> <teks narasi>
+> Lalu sistem menebak. Seberapa mungkin kamu menyukai, membagikan, mengomentari, atau melewati tiap video. Semua tebakan digabung jadi satu skor, dan skor tertinggi masuk feedmu.
 
-## c05 — <Judul Bab 4>
+## c05 — Pengikut
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Akun kecil siluet naik tangga ranking, hitungan pengikut diabaikan.
 
-> <teks narasi>
+> Dan jumlah pengikut bukan faktor langsung. Video dari akun kecil bisa meledak, karena yang dinilai videonya, bukan nama besarnya.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Dua video bersuara sama saling tolak, video acak diselipkan.
 
-> <teks narasi>
+> Biar tidak membosankan, ada cek kemiripan. Dua video dengan suara sama jarang muncul berturutan. Kadang video acak sengaja diselipkan, supaya sistem tahu minat barumu.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Jari menekan Tidak Tertarik, feed berganti; kartu AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Makalah peneliti ByteDance bahkan menyebut sinkronisasi parameter tiap menit pada sistem rekomendasi real-time. Artinya, satu jarimu bisa mengubah feed. Mau ganti arah? Tekan Tidak Tertarik. Ikuti AUDIRA.
+
+## Opsi hook lain
+
+1. Satu video, satu skor: begini TikTok memilih apa yang kamu tonton berikutnya.
+2. Kenapa jempolmu susah berhenti? Jawabannya ada di skor tak terlihat.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
+- **192 kata** ≈ **81 dtk**
 
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+Catatan: angka 1 miliar = klaim TikTok 2021 (bukan 1,5 miliar). Callout HUD: >1 miliar, 5 tahap, per menit.

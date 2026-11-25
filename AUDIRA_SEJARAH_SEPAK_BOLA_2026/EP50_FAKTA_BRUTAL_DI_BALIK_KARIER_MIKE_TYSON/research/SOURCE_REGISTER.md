@@ -1,33 +1,20 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Fakta Brutal di Balik Karier Mike Tyson yang Jarang Diceritakan
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
+| 1 | Lahir 30 Juni 1966 di Brooklyn; juara kelas berat termuda sepanjang sejarah di usia 20 | Mike Tyson, Encyclopaedia Britannica (The Editors), arsip Wayback 2024-12-26 | https://web.archive.org/web/2024/https://www.britannica.com/biography/Mike-Tyson | 2026-11-25 | HIGH |
+| 2 | Debut pro 6 Mar 1985 (usia 18); 19 laga pertama menang KO; 22 Nov 1986 TKO ronde 2 atas Trevor Berbick di usia 20 tahun 4 bulan | Mike Tyson, Wikipedia (merujuk The Ring, ESPN, BoxRec) | https://en.wikipedia.org/wiki/Mike_Tyson | 2026-11-25 | MEDIUM |
+| 3 | Keluarga pindah ke Brownsville saat Tyson 10 tahun; ibu meninggal saat Tyson 16 tahun; Cus D'Amato jadi wali hukum | Mike Tyson, Wikipedia (bagian Early life) | https://en.wikipedia.org/wiki/Mike_Tyson | 2026-11-25 | MEDIUM |
+| 4 | 11 Feb 1990 Tokyo Dome: Buster Douglas KO Tyson ronde 10, knockdown pertama dalam karier Tyson, wasit Octavio Meyran | Mike Tyson vs. Buster Douglas, Wikipedia (merujuk liputan kontemporer) | https://en.wikipedia.org/wiki/Mike_Tyson_vs._Buster_Douglas | 2026-11-25 | MEDIUM |
+| 5 | Dinyatakan bersalah (kasus pemerkosaan, Indianapolis) 10 Feb 1992, Tyson membantah dan pengacara (Dershowitz) mengajukan banding; vonis 6 tahun penjara; bebas bersyarat setelah 3 tahun (1995) | Mike Tyson, Wikipedia (bagian Rape conviction, merujuk putusan pengadilan Indiana); selaras dengan Britannica (#1) | https://en.wikipedia.org/wiki/Mike_Tyson | 2026-11-25 | MEDIUM |
+| 6 | 28 Jun 1997 Tyson didiskualifikasi setelah ronde 3 karena menggigit telinga Holyfield; honor 30 juta dolar, 3 juta langsung ditahan komisi Nevada | Tyson DQd for biting Holyfield, Associated Press via Slam! Boxing, 29 Juni 1997 (arsip Wayback 2001) | https://web.archive.org/web/20010517113908/http://www.canoe.com/BoxingTysonHolyfield/jun28_fightstory.html | 2026-11-25 | HIGH |
+| 7 | Holyfield mengalahkan Tyson 9 Nov 1996 (TKO ronde 11, gelar WBA); rematch berakhir DQ | Evander Holyfield vs. Mike Tyson II, Wikipedia (merujuk AP, ESPN) | https://en.wikipedia.org/wiki/Evander_Holyfield_vs._Mike_Tyson_II | 2026-11-25 | MEDIUM |
+| 8 | 2000: Tyson mulai tahun dengan utang 3,3 juta dolar namun berpenghasilan 65,7 juta; Agustus 2003 mengajukan kebangkrutan | Mike Tyson, Wikipedia (bagian Financial/Post-title career, merujuk laporan keuangan dan pers) | https://en.wikipedia.org/wiki/Mike_Tyson | 2026-11-25 | MEDIUM |
+| 9 | Rekor akhir 50 menang (44 KO), 7 kalah, 2 no contest; International Boxing Hall of Fame 2011 | Mike Tyson, Wikipedia (infobox, merujuk BoxRec dan IBHOF); Britannica (#1) untuk karier | https://en.wikipedia.org/wiki/Mike_Tyson | 2026-11-25 | MEDIUM |
+| 10 | 15 Nov 2024 Tyson kalah angka mutlak dari Jake Paul, skor 80–72, 79–73, 79–73 | Jake Paul vs. Mike Tyson, Wikipedia (merujuk liputan Netflix dan media besar) | https://en.wikipedia.org/wiki/Jake_Paul_vs._Mike_Tyson | 2026-11-25 | MEDIUM |
+| 11 | 11 Feb 1990 Tyson kehilangan gelar dari Buster Douglas, salah satu kejutan terbesar tinju; 7 Mar 1987 meraih WBA, Agu 1987 diakui juara tiga badan | Mike Tyson, Encyclopaedia Britannica (arsip Wayback 2024-12-26) | https://web.archive.org/web/2024/https://www.britannica.com/biography/Mike-Tyson | 2026-11-25 | HIGH |
+| 12 | 2003 mengajukan kebangkrutan, klaim utang 34 juta dolar setelah mengantongi sekitar 400 juta dolar sepanjang karier | Mike Tyson, Encyclopaedia Britannica (arsip Wayback 2024-12-26) | https://web.archive.org/web/2024/https://www.britannica.com/biography/Mike-Tyson | 2026-11-25 | HIGH |
 
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+Catatan: BoxRec, ibhof.com, nytimes.com dan britannica.com langsung memblokir akses otomatis (403/koneksi gagal) saat riset; Britannica dibaca lewat arsip Wayback. Angka denda kasus 1999 berbeda antar sumber (5.000 vs 2.500 dolar), maka tidak dipakai di naskah.

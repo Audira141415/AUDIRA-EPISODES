@@ -1,93 +1,62 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP39`)
+# Naskah — Git Rebase vs Merge: Mana yang Harus Kamu Pakai
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **12** · estimasi **5 dtk**
+- Visual: dua jalur commit berbentuk graf, satu lurus rapi, satu bercabang kusut; teks "REBASE vs MERGE"
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Rebase atau merge? Pilih yang salah, dan history repo timmu jadi kusut.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Visual: graf commit branch main dan fitur berpisah; callout "dua cara menyatukan"
 
-> <konteks singkat + "Di Audira, ...">
+> Branch fiturmu mau disatukan ke main. Git punya dua cara: merge dan rebase. Kode akhirnya sama persis. Yang beda cuma bentuk history-nya. AUDIRA bedah keduanya.
 
-## c02 — <Judul Bab 1>
+## c02 — Merge
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Visual: dua cabang bertemu di satu titik, muncul node merge commit; HUD "--no-ff"
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Merge menyatukan dua cabang lewat satu merge commit. Semua commit lama tetap utuh. Dengan opsi no-ff, Git selalu membuat merge commit. Tombol merge pull request di GitHub juga begitu.
 
-## c03 — <Judul Bab 2>
+## c03 — Rebase
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Visual: commit fitur terangkat lalu dipasang ulang di ujung main; commit lama pudar, commit baru bercahaya
 
-> <teks narasi>
+> Rebase beda. Commit-mu diangkat, lalu dipasang ulang di ujung main. History jadi lurus. Tapi hasilnya commit baru dengan hash baru. Kodenya sama, identitas commit-nya berubah.
 
-## c04 — <Judul Bab 3>
+## c04 — Bahaya
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Visual: dua developer, graf commit berbenturan; tanda larangan merah di commit yang sudah dipush
 
-> <teks narasi>
+> Bahayanya di sini. Dokumentasi Pro Git bilang: jangan rebase commit yang sudah dipakai orang lain. Rekan setimmu harus re-merge, dan semuanya berantakan. Terpaksa push ulang? Pakai force-with-lease.
 
-## c05 — <Judul Bab 4>
+## c05 — Squash
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Visual: lima commit kecil menyusut jadi satu; HUD "1 commit"
 
-> <teks narasi>
+> Opsi ketiga di GitHub: squash and merge. Semua commit di pull request jadi satu commit. History ringkas, tapi commit perantara tidak tersimpan terpisah.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Visual: tabel keputusan dua kolom, ikon centang untuk lokal dan pribadi, ikon tim untuk bersama
 
-> <teks narasi>
+> Aturan praktisnya: branch pribadi yang belum dipush, rebase boleh. Branch yang dipakai bareng, merge. Mau sebersih mungkin, squash.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Visual: dua graf berakhir di titik yang sama, lalu kartu outro AUDIRA
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Intinya, tidak ada jawaban tunggal. Kodenya sama, yang kamu pilih adalah bentuk history dan risikonya. Rebase untuk milikmu sendiri, merge untuk yang sudah dibagi. Simpan video ini sebelum tabrakan history berikutnya. Ikuti AUDIRA untuk bedah teknologi lainnya.
+
+## Opsi hook lain
+
+1. Kodenya sama persis. Tapi satu perintah Git ini bisa bikin timmu bertengkar.
+2. Jangan pernah rebase ini. Dokumentasi resmi Git sendiri yang bilang.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **196 kata** ≈ **82 dtk** (@143 WPM)

@@ -5,7 +5,11 @@ title: "Hutan yang Lebih Tua dari Pohon-Pohonnya Sendiri"
 hook: "Hutan Białowieża menyimpan ekosistem yang selamat dari Zaman Es"
 styleCandidates: ["WORLDFORGE (3D)", "PAPERWORLD (2D)", "CHRONICLE (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook awal (selamat dari Zaman Es) tidak akurat, dikoreksi; isu penebangan politis, naskah netral per putusan CJEU; GLB bison belum ada."
 ---
 
 # Hutan yang Lebih Tua dari Pohon-Pohonnya Sendiri

@@ -1,93 +1,69 @@
-# SCRIPT — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi` (`EP21`)
+# Naskah — Kenapa Kita Menguap Saat Orang Lain Menguap
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **14** · estimasi **6 dtk**
+- Visual: Close-up siluet kepala tanpa wajah detail, mulut terbuka menguap; teks kinetik MENGUAP muncul per kata; mulut-mulut siluet lain ikut terbuka berantai.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Kamu baru membaca kata menguap, dan mulutmu mulai gatal ingin terbuka. Itu bukan kebetulan.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Deretan siluet orang duduk bersama; satu menguap, gelombang menguap menjalar ke yang lain. Logo AUDIRA kecil di HUD.
 
-> <konteks singkat + "Di Audira, ...">
+> Halo, ini AUDIRA. Menguap itu menular. Cukup melihat orang lain menguap, dan tubuhmu sering ikut. Para ilmuwan sudah lama penasaran, kenapa bisa begitu?
 
-## c02 — <Judul Bab 1>
+## c02 — Anak dan usia
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Karakter anak ber-rig dari bayi ke anak besar di garis waktu; HUD callout 120 anak, usia 1-6 tahun, lonjakan di usia 4.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Anehnya, bayi tidak ikut menguap. Penelitian pada 120 anak usia satu sampai enam tahun menemukan, menguap menular baru melonjak di usia empat tahun. Jadi kemampuan ini tumbuh seiring kita besar.
 
-## c03 — <Judul Bab 2>
+## c03 — Kedekatan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Diagram lingkaran konsentris: keluarga di tengah, lalu teman, kenalan, orang asing di luar; panah penularan menebal ke dalam.
 
-> <teks narasi>
+> Lalu siapa yang paling menularkan? Studi pada orang dewasa menemukan urutannya: keluarga dulu, lalu teman, kenalan, dan terakhir orang asing. Makin dekat, makin mudah tertular.
 
-## c04 — <Judul Bab 3>
+## c04 — Hewan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Dua panel: kelompok simpanse (model 3D/ilustrasi) menguap berantai, lalu anjing menatap pemilik yang menguap; HUD 23 simpanse, 25 anjing.
 
-> <teks narasi>
+> Hewan juga begitu. Dua puluh tiga simpanse lebih sering menguap saat melihat teman sekelompok menguap, dibanding simpanse asing. Dua puluh lima anjing menguap lebih sering saat pemiliknya yang menguap.
 
-## c05 — <Judul Bab 4>
+## c05 — Dugaan empati
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Ikon hati dan dua siluet terhubung benang; lalu tanda tanya besar muncul; HUD 328 orang, skor empati tidak menjelaskan.
 
-> <teks narasi>
+> Karena itu banyak peneliti menduga, ini tanda empati. Tapi hati-hati. Pada 328 orang, skor empati ternyata tidak menjelaskan siapa yang gampang tertular.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **35** · estimasi **15 dtk**
+- Visual: Grafik batang: usia menjelaskan 8%, sisa 92% abu-abu bertanda tanya; ikon panel kritik jurnal 2017.
 
-> <teks narasi>
+> Usia hanya menjelaskan delapan persen perbedaannya. Sisanya masih misteri. Sebagian orang memang selalu tidak tertular, dan itu stabil dari waktu ke waktu. Tinjauan tahun 2017 menyimpulkan, bukti yang mengaitkan menguap dengan empati masih belum konsisten.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Kamera mundur: ruang penuh siluet, satu per satu menguap; kartu outro AUDIRA, Created by Agus Dwi R.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi, jawabannya: kita belum tahu pasti. Mungkin ada kaitan dengan kedekatan sosial, mungkin tidak. Sekarang, apakah kamu sudah menguap? Ikuti AUDIRA untuk sains yang jujur.
+
+## Opsi hook lain
+
+1. Coba tahan menguap setelah membaca ini. Susah, kan?
+2. Simpanse dan anjing pun ikut menguap. Kenapa?
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **203 kata** ≈ **85 dtk**

@@ -1,33 +1,21 @@
-# SOURCE_REGISTER — `Sejarah game yang viral dan jarang diketahui`
+# Source Register — Kenapa Xiaomi BYU Ancaman Nyata untuk Tesla di Asia
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
+> Data per 2026-11-25. Kurs dolar dikutip dari sumber, bukan dihitung sendiri. Angka turunan ditandai "(hitung sendiri)".
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Tesla Q3 2026: produksi 464.391, pengiriman 486.532 unit; Model 3/Y dikirim 478.237 | Tesla, Inc. Form 8-K Exhibit 99.1 (rilis produksi dan pengiriman), SEC, 2 Okt 2026 | https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/exhibit991111111.htm | 2026-11-25 | HIGH |
+| 2 | Pendapatan Tesla di China Q3 2026 US$5.209 juta vs US$5.653 juta Q3 2025 (turun ±8%, hitung sendiri) | Tesla, Inc. Form 10-Q periode 30 Sep 2026 (catatan segmen geografis), SEC, 22 Okt 2026 | https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm | 2026-11-25 | HIGH |
+| 3 | Pendapatan Tesla di China 9 bulan 2026 US$14.068 juta vs US$14.261 juta 9 bulan 2025 | Tesla, Inc. Form 10-Q periode 30 Sep 2026, SEC, 2026 | https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm | 2026-11-25 | HIGH |
+| 4 | Lini mobil resmi Xiaomi: SU7, YU7, SU7 Ultra, Sky Nomad N70 dan N90 Max (tidak ada model bernama "BYU") | Situs resmi Xiaomi EV (xiaomiev.com), 2026 | https://www.xiaomiev.com/ | 2026-11-25 | HIGH |
+| 5 | Strategi mobil listrik Xiaomi diumumkan dengan rencana investasi US$10 miliar selama sepuluh tahun | Xiaomi Global, halaman Tentang/Milestones, mi.com, 2026 | https://www.mi.com/global/about/ | 2026-11-25 | HIGH |
+| 6 | YU7 Standard mulai 233.500 yuan (US$34.410); baterai LFP 73,0 kWh; jarak CLTC 643 km; cas 10–80% 20 menit; pengiriman dimulai 26 Mei 2026; disebut menantang Tesla Model Y | Xiaomi begins deliveries of cheaper YU7 standard edition to rival Tesla, Lei Kang, CnEVPost, 26 Mei 2026 | https://cnevpost.com/2026/05/26/xiaomi-begins-deliveries-cheaper-yu7-standard/ | 2026-11-25 | MEDIUM |
+| 7 | Lei Jun mengaku membatalkan versi standar YU7 tahun lalu adalah kesalahan (peluncuran 21 Mei 2026) | Xiaomi begins deliveries of cheaper YU7 standard edition to rival Tesla, CnEVPost, 2026 | https://cnevpost.com/2026/05/26/xiaomi-begins-deliveries-cheaper-yu7-standard/ | 2026-11-25 | MEDIUM |
+| 8 | Total pengiriman Xiaomi lewat 800.000 unit, ±29 bulan sejak SU7 dikirim April 2024; target 2026 550.000 unit; akhir Juli 2026: 499.175 SU7 + 268.455 YU7 | Xiaomi's cumulative vehicle deliveries top 800,000 as Sky Nomad launch nears, CnEVPost, 7 Sep 2026 | https://cnevpost.com/2026/09/07/xiaomi-cumulative-vehicle-deliveries-800000/ | 2026-11-25 | MEDIUM |
+| 9 | Pengiriman Xiaomi: Jul 2026 31.267, Agu 30.153, Sep 40.015 (Sep turun 4,61% yoy, penurunan yoy kedua beruntun); Sky Nomad 12.444 unit di September. Q3 = 101.435 (hitung sendiri) | Xiaomi Auto September deliveries hit 2026 high of 40,015, CnEVPost (data CPCA), 13 Okt 2026 | https://cnevpost.com/2026/10/13/xiaomi-auto-sept-2026-deliveries-2/ | 2026-11-25 | MEDIUM |
+| 10 | Jan–Jul 2026 pengiriman Xiaomi 216.322 unit (+14,83% yoy); 2025 penuh ±411.837 unit (jumlah tabel bulanan, hitung sendiri) | Xiaomi SU7 series tops 500,000 cumulative deliveries, CnEVPost, 17 Agu 2026 | https://cnevpost.com/2026/08/17/xiaomi-su7-500000-cumulative-deliveries/ | 2026-11-25 | MEDIUM |
+| 11 | Sky Nomad (SUV extended-range, rilis Sep 2026) terjual 27.147 unit di Oktober 2026; SU7 dan YU7 menurun | Xiaomi does it again: Skynomad sells 27,147 cars in October, CarNewsChina, 10 Nov 2026 | https://carnewschina.com/2026/11/10/xiaomi-does-it-again-skynomad-sells-27147-cars-in-october-just-weeks-after-launch/ | 2026-11-25 | MEDIUM |
+| 12 | Xiaomi akan jual di Jerman, Italia, Spanyol, Swedia pada 2027; bea masuk UE 43,5%; disampaikan Lu Weibing di earnings call 24 Nov 2026 | Xiaomi Auto will start EU sales in Germany, Italy, Spain and Sweden in 2027, CarNewsChina, 24 Nov 2026 | https://carnewschina.com/2026/11/24/xiaomi-auto-will-start-eu-sales-in-germany-italy-spain-and-sweden-in-2027/ | 2026-11-25 | MEDIUM |
+| 13 | Pre-sale luar China pertama di UAE: SU7 Standard 169.900 AED (US$46.263) vs 219.900 yuan (US$33.011) di China; pengiriman Des 2026 | Xiaomi hits global market as SU7, YU7 and Skynomad open UAE presales, CarNewsChina, 19 Nov 2026 | https://carnewschina.com/2026/11/19/xiaomi-hits-global-market-as-su7-yu7-and-skynomad-open-uae-presales/ | 2026-11-25 | MEDIUM |
+| 14 | YU7 meraih 240.000 pesanan terkunci dalam 18 jam setelah rilis Juni 2025 | Xiaomi YU7, Wikipedia (merujuk laporan media), diakses 2026 | https://en.wikipedia.org/wiki/Xiaomi_YU7 | 2026-11-25 | MEDIUM |

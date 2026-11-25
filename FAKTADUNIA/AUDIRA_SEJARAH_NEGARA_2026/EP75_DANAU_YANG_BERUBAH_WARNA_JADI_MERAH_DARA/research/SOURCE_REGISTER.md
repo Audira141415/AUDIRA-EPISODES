@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Fakta sejarah unik negara-negara di dunia`
+# Source Register — Danau yang Berubah Warna Jadi Merah Darah Setiap Tahun
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Danau Natron: danau garam sangat basa di Tanzania utara, di Gregory Rift; dangkal (kurang dari 3 m), maks 57 km x 22 km; suhu sering di atas 40 C; dialiri Sungai Ewaso Ngiro dan mata air panas | Lake Natron, Wikipedia (merujuk LakeNet, WWF, Ramsar), diakses 2026 | https://en.wikipedia.org/wiki/Lake_Natron | 2026-11-25 | MEDIUM |
+| 2 | Merah air terbuka dan oranye perairan dangkal berasal dari pigmen merah sianobakteri saat penguapan musim kering menaikkan salinitas; kerak garam; flamingo kecil (2,5 juta, satu perhitungan) bergantung pada Natron sebagai satu-satunya tempat berbiak di Rift Valley | Lake Natron, Tanzania, NASA Earth Observatory Newsroom, 2006 | https://web.archive.org/web/20061001020850/http://earthobservatory.nasa.gov/Newsroom/NewImages/images.php3?img_id=17239 | 2026-11-25 | HIGH |
+| 3 | Lahan basah Lake Natron Basin ditetapkan Situs Ramsar 4 Juli 2001, luas 224.781 ha, Wilayah Arusha | Lake Natron Basin, Ramsar Sites Information Service (Konvensi Ramsar), 2001 | https://rsis.ramsar.org/ris/1080 | 2026-11-25 | HIGH |
+| 4 | pH air terukur setinggi 10,5, nyaris setinggi amonia; suhu air bisa 140 F (60 C); satu spesies ikan (Alcolapia latilabris); bangkai burung dan kelelawar awet difoto Nick Brandt | This Alkaline African Lake Turns Animals into Stone, Joseph Stromberg, Smithsonian Magazine, 2013 | https://www.smithsonianmag.com/science-nature/this-alkaline-african-lake-turns-animals-into-stone-445359/ | 2026-11-25 | HIGH |
+| 5 | Danau biru sebelum penguapan musim kering; merah/oranye karena sianobakteri; sekitar 75% flamingo kecil dunia lahir di sini; sarang di pulau kristal garam; berbiak massal sekali tiap 3-4 tahun saat kondisi tepat; pH 9-10 | The Deadly Lake Where 75 Percent of the World's Lesser Flamingos Are Born, Jennifer Billock, Smithsonian Magazine, 2016 | https://www.smithsonianmag.com/travel/flamingos-find-life-among-death-180959265/ | 2026-11-25 | HIGH |
+| 6 | Lake Natron: lokasi berbiak paling signifikan dan reguler bagi sebagian besar populasi dunia flamingo kecil (Phoenicopterus minor); danau soda dangkal di cekungan tertutup | Lake Natron, Key Biodiversity Areas factsheet 6994, KBA Partnership/BirdLife | https://www.keybiodiversityareas.org/site/factsheet/6994 | 2026-11-25 | HIGH |
+| 7 | Hewan tidak menjadi batu: air alkali mengawetkan bangkai (kalsifikasi); Nick Brandt, buku Across the Ravaged Land (Abrams, 2013); ekosistem lahan basah, flamingo, tilapia, alga tetap hidup | Lake That Turns Animals to Stone? Not Quite, Live Science, 2013 | https://www.livescience.com/40135-photographer-rick-brandt-lake-natron.html | 2026-11-25 | MEDIUM |
+| 8 | Tata Chemicals menyatakan tidak melanjutkan proyek pabrik soda abu di Natron (Juni 2008) | Lake Natron, Wikipedia (merujuk pernyataan Tata Chemicals, 2008) | https://en.wikipedia.org/wiki/Lake_Natron | 2026-11-25 | MEDIUM |

@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Sains "kenapa" untuk umum & pelajar: fisika, biologi, kimia, bumi, astronomi`
+# Source Register — Kenapa Ada Orang yang Tidak Bisa Merasakan Nyeri
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Tiga keluarga di Pakistan utara tanpa rasa nyeri; gen SCN9A (kromosom 2q24.3) penyandi Nav1.7; tiga mutasi nonsense; Nav1.7 hilang fungsi | An SCN9A channelopathy causes congenital inability to experience pain, Cox JJ dkk, Nature 2006 | https://pubmed.ncbi.nlm.nih.gov/17167479/ | 2026-11-25 | HIGH |
+| 2 | Tidak merasa nyeri sejak lahir; tetap bisa bedakan tajam/tumpul dan panas/dingin; lebih banyak cedera, patah tulang, luka gigit, kerusakan mata; harapan hidup bisa lebih pendek; Nav1.7 di nosiseptor; sangat langka | Channelopathy-associated congenital insensitivity to pain, MedlinePlus Genetics (NIH/NLM) | https://medlineplus.gov/genetics/condition/congenital-insensitivity-to-pain/ | 2026-11-25 | HIGH |
+| 3 | Hilangnya Nav1.7 menaikkan enkefalin (opioid alami); naloxone mengurangi analgesia pada tikus dan pasien Nav1.7-null; blocker Nav1.7 saja mungkin lemah | Endogenous opioids contribute to insensitivity to pain in humans and mice lacking sodium channel Nav1.7, Minett MS dkk, Nat Commun 2015 | https://pubmed.ncbi.nlm.nih.gov/26634308/ | 2026-11-25 | HIGH |
+| 4 | Ada beberapa gen penyebab lain (mis. CLTCL1/clathrin heavy chain-22: tak merasa nyeri dan sentuhan) | A novel disorder reveals clathrin heavy chain-22 is essential for human pain and touch development, Nahorski MS dkk, Brain 2015 | https://pubmed.ncbi.nlm.nih.gov/26068709/ | 2026-11-25 | HIGH |
+| 5 | Blocker Nav1.7/Nav1.8 diuji klinis sebagai analgesik tanpa efek samping pusat | Dexpramipexole blocks Nav1.8 sodium channels..., Urru M dkk, Pain 2020 | https://pubmed.ncbi.nlm.nih.gov/31815915/ | 2026-11-25 | MEDIUM |
+| 6 | Ringkasan CIP: gejala (luka mulut, patah tulang berulang, kadang tak berkeringat), ~10 kelainan, epidemiologi belum jelas, tidak ada terapi baku | Congenital insensitivity to pain, Wikipedia | https://en.wikipedia.org/wiki/Congenital_insensitivity_to_pain | 2026-11-25 | MEDIUM |
+| 7 | Mutasi PRDM12 juga penyebab CIP (kasus anak menggaruk wajah) | Moss C dkk, Br J Dermatol 2018 | https://pubmed.ncbi.nlm.nih.gov/29949203/ | 2026-11-25 | MEDIUM |
