@@ -5,7 +5,11 @@ title: "Negara yang Wilayahnya Lebih Kecil dari Kebun Binatang"
 hook: "Vatikan hanya 44 hektar — lebih kecil dari banyak lapangan golf"
 styleCandidates: ["SCALEFORGE (3D)", "HISTORYMAP (2D)", "TOYDIORAMA (3D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul jamak melebar (hanya Vatikan < kebun binatang kota; Monaco hanya < taman safari raksasa) dan luas Vatikan 44 vs 49 ha beda sumber."
 ---
 
 # Negara yang Wilayahnya Lebih Kecil dari Kebun Binatang

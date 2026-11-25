@@ -1,56 +1,41 @@
-# Research Report — Negara yang Wilayahnya Ada di Dalam Negara Lain
+# Riset — Negara yang Wilayahnya Ada di Dalam Negara Lain
 
 ## Sumber utama
-
-- Governorate of Vatican City State (vaticanstate.va): geografi dan asal-usul negara (#1, #2). HIGH.
-- CIA World Factbook: Holy See, San Marino, Lesotho (#3, #4, #5). HIGH. Halaman cia.gov dirender JavaScript, jadi angka dibaca dari mirror data Factbook (github.com/factbook/factbook.json). Cek ulang di halaman cia.gov saat tahap 2.
-- Wikipedia (Enclave and exclave, San Marino, Lesotho, Vatican City): definisi enklave dan fakta pendukung (#6–#9). MEDIUM.
-- Britannica (403) dan UNESCO WHC (blokir bot) tidak terbaca lewat curl, jadi tidak dipakai.
+Lihat `SOURCE_REGISTER.md`: 5 HIGH (World Bank x2, Vatican City State, PBB) dan sisanya MEDIUM (Wikipedia, dipakai untuk detail sejarah). CIA World Factbook dan Britannica tidak dapat diakses (SPA/403), jadi tidak dicatat.
 
 ## Fakta terverifikasi
-
-1. Hanya tiga negara berdaulat yang seluruhnya dikelilingi satu negara lain: Vatikan, San Marino, Lesotho (#6, #5).
-2. Vatikan luasnya 0,44 km² atau 44 hektare (#1); batas daratnya 3,4 km, seluruhnya dengan Italia (#3).
-3. Vatikan lahir dari Perjanjian Lateran, ditandatangani 11 Februari 1929 (#2), setelah Roma dianeksasi Kerajaan Italia pada 1870 (#3).
-4. San Marino luasnya 61 km², batas daratnya 37 km dengan Italia, titik tertingginya Monte Titano 739 m (#4).
-5. Menurut tradisi, San Marino didirikan tukang batu bernama Marinus pada tahun 301 M, dan mengklaim sebagai republik tertua di dunia (#4).
-6. San Marino punya dua kepala negara sekaligus (Captains Regent) yang dipilih tiap enam bulan (#7).
-7. Lesotho luasnya 30.355 km², batas daratnya 1.106 km hanya dengan Afrika Selatan (#5), dan terbesar dari tiga negara enklave (#8).
-8. Lesotho merdeka dari Inggris pada 4 Oktober 1966; sebelumnya bernama Basutoland (#5).
-9. Titik terendah Lesotho 1.400 m, titik tertingginya Thabana Ntlenyana 3.482 m (#5).
+1. Hanya tiga negara berdaulat yang enklave murni: Lesotho, San Marino, Vatikan (#1).
+2. Lesotho dikelilingi Afrika Selatan, penduduk di atas 2,4 juta per World Bank overview; angka 2025 2.363.325 (#2, #3). Narasi memakai "lebih dari 2,3 juta".
+3. Luas San Marino 61,2 km2, penduduk 34.109 (2025) (#3).
+4. Vatikan lahir lewat Perjanjian Lateran 11 Februari 1929 (#4, #10).
+5. Lesotho masuk PBB 17 Oktober 1966, San Marino 2 Maret 1992 (#5).
+6. Vatikan sekitar 0,49 km2, sekitar 882 penduduk, Roma direbut Italia 1870 (#6).
+7. San Marino klaim berdiri 301 M, dua Kapten Bupati berganti tiap enam bulan (#7).
+8. Basutoland protektorat Inggris 1868, merdeka 4 Oktober 1966, titik terendah 1.400 m (#8).
+9. LHWP skema pemindahan air terbesar Afrika, air ke sistem Sungai Vaal (#9).
 
 ## Perselisihan / Kontroversi
-
-- **Judul dan hook TOPIC.md**: akurat. Ketiga negara di hook memang satu-satunya enklave berdaulat. Tidak perlu koreksi. Catatan kecil: Vatikan tepatnya berada di dalam kota Roma (Italia); naskah menyebut "di tengah kota Roma".
-- **Tahun berdiri San Marino (301)**: tanggal tradisional (legenda Santo Marinus), bukan dokumen sezaman. Naskah wajib menyebut "menurut tradisi" (sudah).
-- **"Republik tertua di dunia"**: klaim San Marino sendiri. Naskah memakai kata "mengaku" (sudah).
-- **Populasi**: angka berbeda antar sumber (San Marino 35.291 versi CIA 2025 vs 33.559 versi Wikipedia 2026; Vatikan ±1.000 versi CIA 2024). Tidak dipakai di VO.
-- **Luas Vatikan di CIA**: kolom "total" tertulis 0 km² karena pembulatan; pakai 0,44 km² dari Governorate (#1).
-- **"Seluruh Lesotho di atas 1.000 m"** sering dikutip; yang terverifikasi hanya titik terendah 1.400 m (#5). Naskah memakai 1.400 m.
+- Judul "wilayahnya ada di dalam negara lain" kurang tepat secara istilah: yang dibahas adalah negara enklave (seluruhnya dikelilingi satu negara), bukan eksklave. Koreksi: narasi menjelaskan perbedaan keduanya. Hook "terkurung total" akurat.
+- 301 M untuk San Marino adalah klaim tradisi (legenda Santo Marinus), bukan fakta terdokumentasi; narasi memakai "konon".
+- Luas Vatikan beredar 0,44 km2 (versi lama) dan 0,49 km2 (Wikipedia saat ini); narasi memakai "sekitar 0,49".
+- Klaim "tahanan di Vatikan" setelah 1870 tidak dinarasikan karena hanya bersumber MEDIUM; dibuang dari naskah final.
+- Vatikan tidak tercatat di daftar anggota PBB (pengamat via Takhta Suci).
 
 ## Angka kunci untuk HUD
-
 | Angka/tahun/nama | Konteks | # sumber |
 |---|---|---|
-| 3 negara | Enklave berdaulat di dunia | #6 |
-| 0,44 km² / 44 ha | Luas Vatikan | #1 |
-| 3,4 km | Batas Vatikan–Italia | #3 |
-| 1870 | Roma dianeksasi Kerajaan Italia | #3 |
-| 11 Februari 1929 | Perjanjian Lateran | #2 |
-| 61 km² | Luas San Marino | #4 |
-| 37 km | Batas San Marino–Italia | #4 |
-| 301 M | Tahun berdiri San Marino (tradisi) | #4 |
-| Monte Titano 739 m | Bukit tempat San Marino | #4 |
-| 2 kepala negara / 6 bulan | Captains Regent San Marino | #7 |
-| 30.355 km² | Luas Lesotho | #5 |
-| 1.106 km | Batas Lesotho–Afrika Selatan | #5 |
-| 1966 | Lesotho merdeka dari Inggris | #5 |
-| 1.400 m | Titik terendah Lesotho | #5 |
-| Thabana Ntlenyana 3.482 m | Puncak tertinggi Lesotho | #5 |
+| 3 | Negara enklave berdaulat | 1 |
+| 0,49 km2 / 882 | Luas dan penduduk Vatikan | 6 |
+| 11 Februari 1929 | Perjanjian Lateran | 4, 10 |
+| 1870 | Italia merebut Roma | 6 |
+| 301 M | Klaim pendirian San Marino | 7 |
+| 61 km2 / 34 ribu | San Marino | 3, 7 |
+| 1868 / 4 Okt 1966 | Basutoland protektorat / merdeka | 8 |
+| 2,3 juta / 1.400 m | Penduduk dan titik terendah Lesotho | 3, 8 |
+| 17 Okt 1966 / 2 Mar 1992 | Masuk PBB | 5 |
 
 ## Poin kunci
-
-- Konsep sederhana dan sangat visual: tiga titik terkurung di peta, ukuran kontras (44 ha vs 30.355 km²).
-- Tiga babak alami: perjanjian (Vatikan), legenda (San Marino), pegunungan (Lesotho).
-- Fakta awet; tidak ada isu sensitif besar. Hindari wajah paus atau tokoh nyata; tampilkan bangunan, peta, dokumen.
-- Payoff terkuat: Lesotho, negara yang titik terendahnya saja 1.400 m.
+- Tiga negara, dua pengepung (Italia, Afrika Selatan).
+- Lesotho dikepung tapi punya aset: air dan ketinggian.
+- Bedakan enklave dan eksklave (Nakhchivan).
+- Visual tanpa wajah orang nyata: peta, arsitektur, siluet.

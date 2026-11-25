@@ -5,65 +5,65 @@
 
 ## c00_hook — Hook
 
-- Kata: **17** · estimasi **7 dtk**
-- Visual: globe berputar cepat lalu berhenti; tiga titik merah menyala di Italia dan Afrika bagian selatan, masing-masing dikurung lingkaran garis batas yang menutup rapat. HUD: "3 NEGARA · 1 TETANGGA".
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Peta Eropa-Afrika gelap; tiga titik menyala (Lesotho, San Marino, Vatikan) dikepung garis perbatasan merah. Zoom cepat ke Roma, titik kecil muat di dalam kota. HUD: angka 3.
 
-> Ada tiga negara di dunia yang dikurung penuh oleh satu negara lain. Tanpa pantai, tanpa tetangga kedua.
+> Cuma ada tiga negara di dunia yang dikepung total oleh satu negara lain. Salah satunya muat di dalam kota Roma. Ini AUDIRA.
 
 ## c01_intro — Intro
 
-- Kata: **23** · estimasi **10 dtk**
-- Visual: diagram peta sederhana: satu blok wilayah kecil di tengah blok besar, label "ENKLAVE" muncul; lalu tiga kartu nama negara meluncur masuk (Vatikan, San Marino, Lesotho).
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Peta Afrika Selatan dengan siluet Lesotho di tengah, lalu peta Italia dengan dua titik. Panah melingkar menandai kepungan. HUD: kata ENKLAVE.
 
-> Istilahnya enklave: wilayah yang seluruh perbatasannya cuma bersentuhan dengan satu negara. Hanya tiga negara berdaulat yang seperti ini: Vatikan, San Marino, dan Lesotho.
+> Istilahnya enklave: seluruh perbatasannya dikelilingi satu negara saja. Lesotho dikelilingi Afrika Selatan. San Marino dan Vatikan dikelilingi Italia.
 
-## c02 — Vatikan, yang paling mungil
+## c02 — Vatikan
 
-- Kata: **27** · estimasi **11 dtk**
-- Visual: zoom dari peta Roma ke kompleks berkubah dan lapangan oval; garis batas 3,4 km digambar mengelilinginya. Callout HUD: "0,44 km²", "44 HEKTARE", "BATAS 3,4 KM".
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Model kubah Basilika Santo Petrus dan Lapangan Santo Petrus dari udara, tanpa wajah orang. Peta Roma 1870 lalu dokumen Perjanjian Lateran. HUD: 0,49 km2, 882 jiwa, 1870, 11 Februari 1929.
 
-> Mulai dari yang paling mungil. Luas Vatikan cuma nol koma empat empat kilometer persegi, di tengah kota Roma. Garis batasnya dengan Italia hanya tiga koma empat kilometer.
+> Vatikan luasnya sekitar 0,49 kilometer persegi, penghuninya sekitar 882 orang. Tahun 1870 Roma jatuh ke Kerajaan Italia. Baru 11 Februari 1929, Perjanjian Lateran menjadikannya negara berdaulat.
 
-## c03 — Lahir dari perjanjian
+## c03 — San Marino
 
-- Kata: **27** · estimasi **11 dtk**
-- Visual: timeline horizontal: penanda "1870" (wilayah kepausan menyusut di peta Italia, Roma ikut dicaplok), lalu meja perjanjian dengan dokumen bersegel dan tanggal "11·02·1929". Tanpa wajah tokoh nyata.
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Gunung Titano dengan tiga menara benteng; siluet tukang batu (tanpa wajah) membangun kapel kecil. Dua siluet Kapten Bupati berjubah. HUD: 301 M, 61 km2, 34 ribu, 6 bulan.
 
-> Kenapa bisa begitu? Tahun 1870, Kerajaan Italia mencaplok Roma, dan paus kehilangan wilayahnya. Sengketa itu baru selesai lewat Perjanjian Lateran, sebelas Februari 1929, yang melahirkan negara Vatikan.
+> San Marino jauh lebih tua. Konon berdiri tahun 301 Masehi dari Santo Marinus, tukang batu pelarian. Luasnya sekitar 61 kilometer persegi, penduduknya sekitar 34 ribu. Tiap enam bulan, dua Kapten Bupati memimpin bersama.
 
-## c04 — San Marino, republik di atas bukit
+## c04 — Lesotho
 
-- Kata: **37** · estimasi **16 dtk**
-- Visual: kamera naik ke bukit batu terjal bermenara (Monte Titano), batas 37 km menyala di sekeliling; dua kursi kepala negara berdampingan dengan jam pasir berputar "6 BULAN". Callout: "61 km²", "301 M", "2 KEPALA NEGARA".
+- Kata: **32** · estimasi **13 dtk**
+- Visual: Dataran tinggi berpegunungan, desa dengan rumah batu bulat, siluet penunggang kuda berselimut. Diagram ketinggian garis 1.400 m. HUD: 1868, 4 Oktober 1966, 2,3 juta, 1.400 m.
 
-> Lalu San Marino, enam puluh satu kilometer persegi, dikelilingi Italia sepanjang tiga puluh tujuh kilometer. Menurut tradisi, negara ini berdiri tahun 301, dan mengaku republik tertua di dunia. Kepala negaranya dua orang sekaligus, diganti tiap enam bulan.
+> Lesotho dulu bernama Basutoland, protektorat Inggris sejak 1868, merdeka 4 Oktober 1966. Penduduknya lebih dari 2,3 juta. Titik terendahnya 1.400 meter di atas laut, tertinggi di dunia untuk titik terendah sebuah negara.
 
-## c05 — Lesotho, si raksasa enklave
+## c05 — Lesotho jual air
 
-- Kata: **21** · estimasi **9 dtk**
-- Visual: peta pindah ke Afrika bagian selatan; Afrika Selatan berwarna abu, Lesotho menyala di tengahnya, garis batas 1.106 km berjalan. Callout: "30.355 km²", "MERDEKA 1966".
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Bendungan besar, terowongan pegunungan, animasi aliran air biru menuju Sungai Vaal di peta Afrika Selatan. HUD: skema air terbesar di Afrika.
 
-> Yang paling besar ada di Afrika. Lesotho, 30.355 kilometer persegi, dikepung Afrika Selatan sepanjang 1.106 kilometer. Merdeka dari Inggris pada 1966.
+> Bagaimana bertahan kalau dikepung? Lesotho menjual air. Lewat bendungan dan terowongan, air pegunungannya mengalir ke Sungai Vaal di Afrika Selatan, skema pemindahan air terbesar di Afrika.
 
-## c06 — Negeri yang tak pernah rendah
+## c06 — Penjelasan enklave vs eksklave
 
-- Kata: **27** · estimasi **11 dtk**
-- Visual: penampang medan 3D Lesotho; garis permukaan laut di bawah, penggaris ketinggian naik ke 1.400 m (titik terendah) lalu ke puncak 3.482 m. Callout: "TITIK TERENDAH 1.400 M", "PUNCAK 3.482 M".
+- Kata: **25** · estimasi **10 dtk**
+- Visual: Diagram dua panel: enklave (satu penjuru) vs eksklave. Peta Nakhchivan diapit Armenia, Iran, Turki dengan tiga panah. HUD: Nakhchivan bukan enklave.
 
-> Yang bikin unik, titik terendah Lesotho ada di ketinggian 1.400 meter. Artinya seluruh negeri ini berada di atas 1.400 meter, dengan puncak Thabana Ntlenyana setinggi 3.482 meter.
+> Jangan tertukar dengan eksklave, wilayah terpisah dari negara induknya. Nakhchivan milik Azerbaijan diapit Armenia, Iran, dan Turki. Dikelilingi lebih dari satu negara, ia bukan enklave.
 
 ## c07_payoff — Payoff + outro
 
-- Kata: **29** · estimasi **12 dtk**
-- Visual: tiga diorama berjajar (kubah Vatikan, menara San Marino, pegunungan Lesotho), masing-masing di dalam peta negara pengurungnya; kamera mundur, lalu kartu outro AUDIRA.
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Tiga negara kecil berjajar di peta dunia, bingkai terbuka ke luar. Garis UN: 17 Okt 1966, 2 Mar 1992. Outro card AUDIRA, Created by Agus Dwi R.
 
-> Tiga negara, tiga cerita: satu lahir dari perjanjian, satu dari legenda tukang batu, satu dari pegunungan. Semuanya hidup di dalam peta negara lain. Ikuti AUDIRA untuk fakta dunia berikutnya.
+> Terkurung bukan berarti terkunci. Lesotho masuk PBB 17 Oktober 1966, San Marino 2 Maret 1992, Vatikan berstatus pengamat. Ikuti AUDIRA untuk peta batas lainnya.
 
 ## Opsi hook lain
 
-1. Ada negara yang bisa kamu kelilingi batasnya cuma tiga koma empat kilometer. Dan dia tinggal di dalam kota negara lain.
-2. Satu negara di Afrika ini titik paling rendahnya saja 1.400 meter. Dan seluruhnya dikurung satu tetangga.
+1. Negara ini seluruhnya ada di dalam kota Roma. Luasnya kurang dari setengah kilometer persegi.
+2. Satu negara Afrika tidak punya tetangga selain satu raksasa. Namanya Lesotho.
 
 ## Total
 
-- **208 kata** ≈ **83–92 dtk** @135–150 WPM
+- **206 kata** ≈ **86 dtk**

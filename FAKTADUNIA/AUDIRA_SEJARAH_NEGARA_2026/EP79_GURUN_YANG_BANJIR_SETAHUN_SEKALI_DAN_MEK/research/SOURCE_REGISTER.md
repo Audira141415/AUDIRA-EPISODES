@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Fakta sejarah unik negara-negara di dunia`
+# Source Register — Gurun yang Banjir Setahun Sekali dan Mekar Bunga
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Gurun Atacama di Chile utara disebut gurun terkering dan tertua di Bumi; dijadikan model lingkungan Mars dalam riset astrobiologi | Life at the dry edge: Microorganisms of the Atacama Desert, Azúa-Bustos, Urrejola & Vicuña, FEBS Letters, 2012 | https://doi.org/10.1016/j.febslet.2012.07.025 | 2026-11-25 | HIGH |
+| 2 | Pengamatan iklim 4 tahun (Sep 1994–Okt 1998) di inti gurun yang paling kering: hanya satu hujan berarti, 2,3 mm; El Niño 1997–98 tidak membawa hujan berarti ke Atacama tengah | Temperature and Moisture Conditions for Life in the Extreme Arid Region of the Atacama Desert, McKay, Friedmann, Gómez-Silva et al., Astrobiology, 2003 | https://doi.org/10.1089/153110703769016460 | 2026-11-25 | HIGH |
+| 3 | Data satelit NDVI: 13 kali "desierto florido" antara 1981–2015; tiga besar 1997–98, 2002–03, 2011; terbesar 2011 berlangsung 180 hari (Juli–Desember) seluas 11.136 km²; dipicu akumulasi hujan 2–12 bulan sebelum dan selama peristiwa | GIMMS NDVI time series reveal the extent, duration, and intensity of "blooming desert" events in the hyper-arid Atacama Desert, Chávez, Moreira-Muñoz, Galleguillos et al., Int. J. Applied Earth Observation and Geoinformation 76, 2019 | https://doi.org/10.1016/j.jag.2018.11.013 | 2026-11-25 | HIGH |
+| 4 | Decreto N° 12 (8 Maret 2023, terbit Diario Oficial 12 Juni 2023) membentuk Parque Nacional Desierto Florido di komune Copiapó, luas 57.108,4 hektare; fenomena = munculnya sekitar 200 spesies tahunan dan geofit (umbi), banyak endemik; area menyimpan bank biji dengan potensi berkecambah tinggi | Decreto N° 12 crea el "Parque Nacional Desierto Florido", Ministerio de Bienes Nacionales, Diario Oficial de la República de Chile N° 43.575, 2023 | https://www.diariooficial.interior.gob.cl/publicaciones/2023/06/12/43575/01/2328033.pdf | 2026-11-25 | HIGH |
+| 5 | Presiden Gabriel Boric mengumumkan Parque Nacional Desierto Florido pada 2 Oktober 2022 (taman nasional ke-44 Chile), ±30 km selatan kota Copiapó; "lebih dari 200 spesies bunga"; Boric: menginjak/menggilas biji mencegah gurun berbunga | Boric anuncia la creación del Parque Nacional Desierto Florido, Beatriz Mellado, Emol (El Mercurio), 2022 | https://www.emol.com/noticias/Nacional/2022/10/02/1074441/parque-nacional-desierto-florido.html | 2026-11-25 | MEDIUM |
+| 6 | Hujan terlebat dalam dua dekade (Maret 2015) memicu longsor lumpur dan banjir yang menewaskan 28 orang; hujan itu membangunkan biji yang tertidur bertahun-tahun sehingga gurun mekar merah muda pada 2015; Atacama biasanya ±15 mm hujan/tahun | Atacama Desert Blooms Pink After Historic Rainfall (Photos), Tia Ghose, Live Science, 2015 | https://www.livescience.com/52632-atacama-desert-flowers-bloom.html | 2026-11-25 | MEDIUM |
+| 7 | Desierto florido terjadi September–November pada tahun curah hujan tinggi, dari selatan Vallenar sampai utara Copiapó; terkait El Niño (laut Pasifik menghangat sehingga hujan meningkat) | Desert bloom, Wikipedia (EN, dengan rujukan NOAA & Smithsonian), diakses 2026 | https://en.wikipedia.org/wiki/Desert_bloom | 2026-11-25 | MEDIUM |
+| 8 | Spesies berumbi (añañuca) mekar duluan, lalu spesies berbiji; pata de guanaco (Cistanthe grandiflora) menutupi area paling luas; Charles Darwin mencatat efek hujan pada vegetasi Copiapó tahun 1835 | Desierto florido, Wikipedia (ES, dengan rujukan Squeo 2008, Darwin 1995), diakses 2026 | https://es.wikipedia.org/wiki/Desierto_florido | 2026-11-25 | MEDIUM |

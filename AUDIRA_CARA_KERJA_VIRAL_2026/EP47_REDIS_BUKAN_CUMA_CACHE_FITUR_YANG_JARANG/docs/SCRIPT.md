@@ -1,93 +1,69 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP47`)
+# Naskah — Redis Bukan Cuma Cache: Fitur yang Jarang Developer Tahu
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: Kotak "CACHE" di server rack retak dan terbuka, dari dalamnya keluar enam ikon fitur (antrean, toa, keran, gerbang, piala, pin lokasi). HUD: "Redis = cache?" dicoret.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Kamu pakai Redis cuma buat cache? Sayang banget. Ini AUDIRA, dan isinya jauh lebih banyak.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: Chip RAM raksasa, data melesat masuk-keluar dalam kilatan cahaya. HUD: "2009" dan "key-value · in-memory".
 
-> <konteks singkat + "Di Audira, ...">
+> Redis lahir tahun 2009 sebagai database key-value yang tinggal di memori. Karena datanya di RAM, baca dan tulisnya super cepat.
 
-## c02 — <Judul Bab 1>
+## c02 — Antrean tugas
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **36** · estimasi **15 dtk**
+- Visual: Ban berjalan berisi kardus tugas masuk ke list, robot worker mengambil satu per satu; satu worker jatuh, kardusnya aman di rak cadangan. HUD: "LMOVE · reliable queue".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Pertama, antrean. Aplikasi mendorong tugas ke sebuah list, lalu worker mengambilnya satu per satu. Dokumentasi Redis punya pola reliable queue: tugas dipindah ke list cadangan pakai LMOVE, jadi tidak hilang kalau worker mati di tengah jalan.
 
-## c03 — <Judul Bab 2>
+## c03 — Pub/Sub
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Menara antena memancarkan satu pesan ke banyak penerima; satu penerima lampunya mati dan pesannya jatuh lalu hilang. HUD: "PUBLISH · at-most-once".
 
-> <teks narasi>
+> Kedua, pub/sub. Satu pesan dikirim ke channel, semua pendengar langsung menerimanya. Pas buat notifikasi dan chat. Tapi ingat, sifatnya at-most-once. Pendengar yang sedang offline, ketinggalan pesannya.
 
-## c04 — <Judul Bab 3>
+## c04 — Streams
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Pita log panjang yang terus bertambah, dibagi ke tiga kelompok worker berwarna. HUD: "Streams · sejak v5.0 · consumer group".
 
-> <teks narasi>
+> Butuh yang lebih tahan banting? Sejak versi 5.0 ada Streams. Pesannya tersimpan seperti buku log, dan consumer group membagi kerja ke banyak worker.
 
-## c05 — <Judul Bab 4>
+## c05 — Rate limiting
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Palang gerbang tol dengan penghitung digital per IP; angka naik 1 sampai 10, request ke-11 ditolak palang turun. HUD: "INCR + EXPIRE · 10 req/dtk".
 
-> <teks narasi>
+> Ketiga, rate limiting. Tiap request menaikkan counter per IP dengan INCR, lalu counter itu kedaluwarsa sendiri lewat EXPIRE. Contoh resminya: maksimal sepuluh request per detik. Lebih dari itu, tolak.
 
-## c06 — <Judul Bab 5>
+## c06 — Fitur tersembunyi lain
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **34** · estimasi **14 dtk**
+- Visual: Tiga panel cepat: podium leaderboard skor naik-turun (HUD "ZADD"), peta kota dengan pin lokasi terdekat (HUD "GEOADD"), wadah kecil berlabel 12 KB menelan ribuan titik pengunjung (HUD "HyperLogLog · 12 KB · ±0,81%").
 
-> <teks narasi>
+> Masih ada lagi. Sorted set untuk leaderboard game. GEOADD untuk mencari lokasi terdekat. Lalu HyperLogLog, yang menghitung pengunjung unik cukup dengan dua belas kilobyte memori, dan errornya cuma sekitar nol koma delapan satu persen.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Kamera mundur: semua adegan tadi ternyata berjalan dari satu server rack yang sama, menyala serempak. Lalu outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi sebelum menambah message broker atau database baru, cek dulu. Bisa jadi Redis yang sudah kamu punya sanggup mengerjakannya. Simpan video ini buat proyek berikutnya.
+
+## Opsi hook lain
+
+1. Satu server Redis bisa jadi antrean, toa, satpam, dan papan skor sekaligus.
+2. Developer pasang Redis buat cache, lalu berhenti di situ. Padahal itu baru pintu depannya.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **208 kata** ≈ **83–92 dtk** (@150–135 WPM)

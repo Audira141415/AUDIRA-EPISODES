@@ -5,7 +5,11 @@ title: "Redis Bukan Cuma Cache: Fitur yang Jarang Developer Tahu"
 hook: "Queue, pub/sub, rate limiting — semua bisa pakai Redis"
 styleCandidates: ["NANOFORGE (3D)", "DEVFORGE (2D)", "CIRCUITFORGE (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "rule 15: jangan tampilkan logo Redis; topik niche developer, jangkauan penonton umum terbatas"
 ---
 
 # Redis Bukan Cuma Cache: Fitur yang Jarang Developer Tahu

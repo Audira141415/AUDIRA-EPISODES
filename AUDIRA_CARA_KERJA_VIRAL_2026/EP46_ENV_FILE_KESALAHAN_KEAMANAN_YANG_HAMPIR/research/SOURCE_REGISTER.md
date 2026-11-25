@@ -1,33 +1,15 @@
-# SOURCE_REGISTER — `Cara kerja benda dan fenomena viral yang jarang diketahui`
+# Source Register — .env File: Kesalahan Keamanan yang Hampir Semua Junior Developer Lakukan
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | 23.770.171 rahasia baru terdeteksi di commit GitHub publik sepanjang 2024 (naik 25%); 15% penulis commit pernah membocorkan rahasia | The State of Secrets Sprawl 2025, GitGuardian, 2025 | https://www.gitguardian.com/state-of-secrets-sprawl-report-2025 | 2026-11-25 | MEDIUM |
+| 2 | 70% rahasia yang bocor pada 2022 masih valid saat laporan 2025 terbit | The State of Secrets Sprawl 2025, GitGuardian, 2025 | https://www.gitguardian.com/state-of-secrets-sprawl-report-2025 | 2026-11-25 | MEDIUM |
+| 3 | Sebagian kode situs pengguna T-Connect (Toyota) terpublikasi di GitHub, memuat access key ke data server; dapat diakses pihak ketiga Desember 2017 – 15 September 2022; 296.019 email + nomor pelanggan berpotensi bocor; kunci diganti 17 September 2022 | T-Connect 個人情報漏洩の可能性に関するお詫びとお知らせ, Toyota Motor Corporation, 2022 (arsip Wayback) | https://global.toyota/jp/newsroom/corporate/38095972.html | 2026-11-25 | HIGH |
+| 4 | Toyota menyalahkan subkontraktor pengembang; kunci di GitHub hampir lima tahun | Toyota discloses data leak after access key exposed on GitHub, Bill Toulas / BleepingComputer, 10 Okt 2022 | https://www.bleepingcomputer.com/news/security/toyota-discloses-data-leak-after-access-key-exposed-on-github/ | 2026-11-25 | MEDIUM |
+| 5 | Nov 2016: penyusup memakai access key yang diposting insinyur Uber di situs berbagi kode, mengunduh file berisi >25 juta nama + email, 22 juta nama + nomor HP, 600.000 nama + nomor SIM | Uber Agrees to Expanded Settlement with FTC Related to Privacy, Security Claims, U.S. Federal Trade Commission, April 2018 (arsip Wayback) | https://www.ftc.gov/news-events/news/press-releases/2018/04/uber-agrees-expanded-settlement-ftc-related-privacy-security-claims | 2026-11-25 | HIGH |
+| 6 | Bila data sensitif berupa secret ter-commit, langkah pertama adalah revoke dan/atau rotate secret itu; menghapus dari riwayat butuh rewrite history (git-filter-repo) | Removing sensitive data from a repository, GitHub Docs, 2025 | https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository | 2026-11-25 | HIGH |
+| 7 | "Files already tracked by Git are not affected" oleh .gitignore | gitignore Documentation, Git project (git-scm.com) | https://git-scm.com/docs/gitignore | 2026-11-25 | HIGH |
+| 8 | Push protection: fitur secret scanning yang mencegah kredensial ter-push ke repositori, bukan sekadar memberi peringatan sesudahnya | About push protection, GitHub Docs, 2025 | https://docs.github.com/en/code-security/secret-scanning/introduction/about-push-protection | 2026-11-25 | HIGH |
+| 9 | Prinsip memisah konfigurasi/kredensial dari kode lewat environment variables; tes: kode bisa dibuka publik kapan saja tanpa membocorkan kredensial | The Twelve-Factor App — III. Config, Adam Wiggins, 2011 | https://12factor.net/config | 2026-11-25 | MEDIUM |

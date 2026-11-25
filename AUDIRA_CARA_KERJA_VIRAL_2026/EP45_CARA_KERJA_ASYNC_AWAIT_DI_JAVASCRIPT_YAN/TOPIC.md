@@ -5,7 +5,11 @@ title: "Cara Kerja Async/Await di JavaScript yang Sebenarnya"
 hook: "Bukan soal sintaks — soal kenapa callback hell ada solusinya"
 styleCandidates: ["CIRCUITFORGE (2D)", "CHAINREACTION (2D)", "DEVFORGE (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook asli kurang akurat (callback hell tidak dihapus); detail microtick spesifik V8 bisa berubah."
 ---
 
 # Cara Kerja Async/Await di JavaScript yang Sebenarnya

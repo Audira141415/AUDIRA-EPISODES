@@ -1,93 +1,69 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP46`)
+# Naskah — .env File: Kesalahan Keamanan yang Hampir Semua Junior Developer Lakukan
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Layar editor gelap, baris `API_KEY=` mengetik sendiri, tombol commit ditekan; kunci bercahaya meluncur keluar layar menuju globe jaringan.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Satu baris di file .env, satu commit ceroboh, dan kunci rahasiamu bisa dibaca siapa saja di internet.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Folder proyek: file kode di kiri, file .env bergembok di kanan dengan label "RAHASIA"; panah repo publik menyala merah.
 
-> <konteks singkat + "Di Audira, ...">
+> File .env itu tempat menyimpan password database dan API key, dipisah dari kode. Idenya bagus. Masalahnya, file ini sering ikut ter-commit ke repositori publik. AUDIRA bedah kesalahan klasik ini.
 
-## c02 — <Judul Bab 1>
+## c02 — Skala masalah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **35** · estimasi **15 dtk**
+- Visual: Peta dunia gelap, ribuan titik kunci menyala; penghitung HUD naik ke 23,8 JUTA; lalu kartu HUD 70% di atas kalender 2022.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Seberapa sering? Menurut GitGuardian, sepanjang 2024 ada 23,8 juta rahasia baru bocor di GitHub publik. Lebih parah lagi, 70 persen rahasia yang bocor tahun 2022 masih aktif saat laporannya terbit. Bocor, tapi tidak pernah diganti.
 
-## c03 — <Judul Bab 2>
+## c03 — Kasus Toyota
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **14 dtk**
+- Visual: Mobil generik tanpa logo terhubung ke server; potongan kode melayang di repo publik; garis waktu Des 2017 → 15 Sep 2022; HUD 296.019.
 
-> <teks narasi>
+> Contoh nyata: Toyota. Sebagian kode situs T-Connect terunggah ke GitHub, lengkap dengan kunci akses ke server data pelanggan. Kunci itu terbuka dari Desember 2017 sampai 15 September 2022. Data 296.019 pelanggan berisiko.
 
-## c04 — <Judul Bab 3>
+## c04 — Kasus Uber
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Gudang awan penyimpanan; kunci jatuh dari halaman berbagi kode; berkas data mengalir keluar; HUD 2016 dan 25 JUTA.
 
-> <teks narasi>
+> Uber juga pernah kena. Tahun 2016, menurut FTC, seorang insinyurnya memposting kunci akses di situs berbagi kode. Penyusup memakainya untuk mengunduh lebih dari 25 juta nama dan email.
 
-## c05 — <Judul Bab 4>
+## c05 — Jebakan hapus
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Riwayat commit sebagai rantai blok; blok .env dihapus di ujung rantai, tapi blok lama tetap menyala; stiker .gitignore memantul dari file yang sudah dilacak.
 
-> <teks narasi>
+> Lalu jebakannya. Menghapus file di commit berikutnya tidak cukup, karena riwayat Git masih menyimpannya. Dan .gitignore tidak berlaku untuk file yang sudah dilacak Git.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan: cara aman
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Checklist tiga langkah: kunci lama dicoret dan dibuang, kunci baru keluar, baris `.env` masuk daftar .gitignore.
 
-> <teks narasi>
+> Jadi, menurut dokumentasi GitHub, langkah pertama adalah cabut dan ganti kuncinya, baru bersihkan riwayat. Setelah itu, masukkan .env ke .gitignore sebelum commit pertama.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Gerbang push tertutup perisai hijau, kunci memantul dan tertahan di luar; kartu outro AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> GitHub juga punya push protection yang memblokir kunci sebelum terkirim. Ingat aturannya: kunci bocor berarti kunci hangus. Ganti dulu, baru rapikan.
+
+## Opsi hook lain
+
+1. Kamu sudah hapus file .env dari GitHub? Sayangnya kuncinya masih bisa dibaca.
+2. Kunci akses Toyota terbuka di GitHub hampir lima tahun, dan nggak ada yang sadar.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **209 kata** ≈ **90 dtk**

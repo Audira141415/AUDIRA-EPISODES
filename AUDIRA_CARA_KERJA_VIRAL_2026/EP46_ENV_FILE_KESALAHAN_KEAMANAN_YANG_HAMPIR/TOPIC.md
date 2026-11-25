@@ -5,7 +5,11 @@ title: ".env File: Kesalahan Keamanan yang Hampir Semua Junior Developer Lakukan
 hook: "Satu commit ceroboh bisa expose API key ke seluruh internet"
 styleCandidates: ["CYBERFORGE (2D)", "DEVFORGE (2D)", "GLITCHFORGE (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul 'hampir semua junior developer' tidak didukung data (hanya 15% penulis commit, #1); angka GitGuardian data vendor; tanpa logo Toyota/Uber/GitHub (rule 15)."
 ---
 
 # .env File: Kesalahan Keamanan yang Hampir Semua Junior Developer Lakukan

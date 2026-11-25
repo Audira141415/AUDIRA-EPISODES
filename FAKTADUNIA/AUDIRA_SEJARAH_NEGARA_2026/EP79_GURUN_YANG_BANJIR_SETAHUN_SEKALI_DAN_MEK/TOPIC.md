@@ -5,7 +5,11 @@ title: "Gurun yang Banjir Setahun Sekali dan Mekar Bunga"
 hook: "Atacama Chile — gurun terkering di bumi yang sesekali berubah jadi taman"
 styleCandidates: ["WORLDFORGE (3D)", "PAPERWORLD (2D)", "CHRONICLE (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul 'setahun sekali' keliru (mekar tidak tahunan, 13 kali dalam 1981–2015); banjir 2015 dengan 28 korban harus dinarasikan netral tanpa visual korban"
 ---
 
 # Gurun yang Banjir Setahun Sekali dan Mekar Bunga
