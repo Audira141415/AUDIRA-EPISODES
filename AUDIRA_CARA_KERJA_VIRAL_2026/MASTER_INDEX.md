@@ -60,3 +60,83 @@
 | 51 | [EP51_HTTP_STATUS_CODE_YANG_SERING_DISALAHGUNA](EP51_HTTP_STATUS_CODE_YANG_SERING_DISALAHGUNA/) | HTTP Status Code yang Sering Disalahgunakan Developer | context | - |
 | 52 | [EP52_CARA_KERJA_DNS_DARI_DOMAIN_KE_IP_DALAM_6](EP52_CARA_KERJA_DNS_DARI_DOMAIN_KE_IP_DALAM_6/) | Cara Kerja DNS: Dari Domain ke IP dalam 60 Detik | context | - |
 | 53 | [EP53_PYTHON_TYPE_HINTS_BUKAN_SEKEDAR_DEKORASI](EP53_PYTHON_TYPE_HINTS_BUKAN_SEKEDAR_DEKORASI/) | Python Type Hints: Bukan Sekedar Dekorasi | context | - |
+| 54 | [EP54_CURSOR_AI_VS_GITHUB_COPILOT_MANA_YANG_LE](EP54_CURSOR_AI_VS_GITHUB_COPILOT_MANA_YANG_LE/) | Cursor AI vs GitHub Copilot: Mana yang Lebih Worth It untuk Developer Indonesia | context | - |
+| 55 | [EP55_DATABASE_TRANSACTION_KENAPA_ACID_PENTING](EP55_DATABASE_TRANSACTION_KENAPA_ACID_PENTING/) | Database Transaction: Kenapa ACID Penting dan Kapan Bisa Diabaikan | context | - |
+| 56 | [EP56_CARA_BACA_ERROR_STACK_TRACE_SEPERTI_SENI](EP56_CARA_BACA_ERROR_STACK_TRACE_SEPERTI_SENI/) | Cara Baca Error Stack Trace seperti Senior Developer | context | - |
+| 57 | [EP57_REACT_USEEFFECT_PANDUAN_UNTUK_BERHENTI_B](EP57_REACT_USEEFFECT_PANDUAN_UNTUK_BERHENTI_B/) | React useEffect: Panduan untuk Berhenti Bikin Memory Leak | context | - |
+| 58 | [EP58_SSH_KEY_SETUP_SEKALI_UNTUK_SEUMUR_HIDUP](EP58_SSH_KEY_SETUP_SEKALI_UNTUK_SEUMUR_HIDUP/) | SSH Key Setup Sekali untuk Seumur Hidup | context | - |
+| 59 | [EP59_KENAPA_API_KAMU_BUTUH_RATE_LIMITING_DENG](EP59_KENAPA_API_KAMU_BUTUH_RATE_LIMITING_DENG/) | Kenapa API Kamu Butuh Rate Limiting (dengan Contoh Nyata) | context | - |
+| 60 | [EP60_PYTHON_LIST_COMPREHENSION_KAPAN_MEMBANTU](EP60_PYTHON_LIST_COMPREHENSION_KAPAN_MEMBANTU/) | Python List Comprehension: Kapan Membantu dan Kapan Menyiksa | context | - |
+| 61 | [EP61_CARA_KERJA_BROWSER_RENDER_KENAPA_CSS_KAM](EP61_CARA_KERJA_BROWSER_RENDER_KENAPA_CSS_KAM/) | Cara Kerja Browser Render: Kenapa CSS Kamu Bikin Frame Drop | context | - |
+| 62 | [EP62_GIT_STASH_FITUR_YANG_SEHARUSNYA_KAMU_PAK](EP62_GIT_STASH_FITUR_YANG_SEHARUSNYA_KAMU_PAK/) | Git Stash: Fitur yang Seharusnya Kamu Pakai Lebih Sering | context | - |
+| 63 | [EP63_DOCKER_COMPOSE_UNTUK_DEVELOPMENT_SETUP_Y](EP63_DOCKER_COMPOSE_UNTUK_DEVELOPMENT_SETUP_Y/) | Docker Compose untuk Development: Setup yang Bikin Onboarding Jadi 5 Menit | context | - |
+| 64 | [EP64_KENAPA_SENIOR_DEVELOPER_MENULIS_LEBIH_SE](EP64_KENAPA_SENIOR_DEVELOPER_MENULIS_LEBIH_SE/) | Kenapa Senior Developer Menulis Lebih Sedikit Kode | context | - |
+| 65 | [EP65_WEBSOCKET_VS_SERVER_SENT_EVENTS_KAPAN_PA](EP65_WEBSOCKET_VS_SERVER_SENT_EVENTS_KAPAN_PA/) | Websocket vs Server-Sent Events: Kapan Pakai Real-time | context | - |
+| 66 | [EP66_POSTGRESQL_VS_MYSQL_PERBEDAAN_YANG_BENAR](EP66_POSTGRESQL_VS_MYSQL_PERBEDAAN_YANG_BENAR/) | PostgreSQL vs MySQL: Perbedaan yang Benar-Benar Penting | context | - |
+| 67 | [EP67_CARA_KERJA_GARBAGE_COLLECTION_DI_NODE_JS](EP67_CARA_KERJA_GARBAGE_COLLECTION_DI_NODE_JS/) | Cara Kerja Garbage Collection di Node.js yang Perlu Kamu Tahu | context | - |
+| 68 | [EP68_SEMANTIC_VERSIONING_KENAPA_1_0_0_VS_1_1](EP68_SEMANTIC_VERSIONING_KENAPA_1_0_0_VS_1_1/) | Semantic Versioning: Kenapa 1.0.0 vs 1.1.0 vs 2.0.0 Bukan Sembarang Angka | context | - |
+| 69 | [EP69_LINUX_COMMAND_YANG_WAJIB_DEVELOPER_HAFAL](EP69_LINUX_COMMAND_YANG_WAJIB_DEVELOPER_HAFAL/) | Linux Command yang Wajib Developer Hafal | context | - |
+| 70 | [EP70_CARA_KERJA_OAUTH_2_0_LOGIN_DENGAN_GOOGLE](EP70_CARA_KERJA_OAUTH_2_0_LOGIN_DENGAN_GOOGLE/) | Cara Kerja OAuth 2.0: "Login dengan Google" Itu Sebenarnya Bagaimana | context | - |
+| 71 | [EP71_PYTHON_DECORATOR_BUKAN_MAGIC_INI_CARA_KE](EP71_PYTHON_DECORATOR_BUKAN_MAGIC_INI_CARA_KE/) | Python Decorator: Bukan Magic, Ini Cara Kerjanya | context | - |
+| 72 | [EP72_KENAPA_KAMU_BUTUH_LOGGING_YANG_PROPER_BU](EP72_KENAPA_KAMU_BUTUH_LOGGING_YANG_PROPER_BU/) | Kenapa Kamu Butuh Logging yang Proper (Bukan cuma print) | context | - |
+| 73 | [EP73_CI_CD_PIPELINE_PERTAMA_KAMU_DENGAN_GITHU](EP73_CI_CD_PIPELINE_PERTAMA_KAMU_DENGAN_GITHU/) | CI/CD Pipeline Pertama Kamu dengan GitHub Actions | context | - |
+| 74 | [EP74_JAVASCRIPT_CLOSURE_KENAPA_INI_BIKIN_BING](EP74_JAVASCRIPT_CLOSURE_KENAPA_INI_BIKIN_BING/) | JavaScript Closure: Kenapa Ini Bikin Bingung dan Cara Memahaminya | context | - |
+| 75 | [EP75_CARA_SETUP_PRETTIER_ESLINT_YANG_TIDAK_BI](EP75_CARA_SETUP_PRETTIER_ESLINT_YANG_TIDAK_BI/) | Cara Setup Prettier + ESLint yang Tidak Bikin Tim Bertengkar | context | - |
+| 76 | [EP76_MICROSERVICE_VS_MONOLITH_JANGAN_PERCAYA](EP76_MICROSERVICE_VS_MONOLITH_JANGAN_PERCAYA/) | Microservice vs Monolith: Jangan Percaya Hype | context | - |
+| 77 | [EP77_CARA_KERJA_HASH_PASSWORD_KENAPA_MD5_SUDA](EP77_CARA_KERJA_HASH_PASSWORD_KENAPA_MD5_SUDA/) | Cara Kerja Hash Password: Kenapa MD5 Sudah Mati | context | - |
+| 78 | [EP78_NPM_VS_YARN_VS_PNPM_MANA_YANG_HARUS_KAMU](EP78_NPM_VS_YARN_VS_PNPM_MANA_YANG_HARUS_KAMU/) | npm vs yarn vs pnpm: Mana yang Harus Kamu Pakai di 2025 | context | - |
+| 79 | [EP79_CARA_BACA_DOKUMENTASI_API_DENGAN_EFEKTIF](EP79_CARA_BACA_DOKUMENTASI_API_DENGAN_EFEKTIF/) | Cara Baca Dokumentasi API dengan Efektif | context | - |
+| 80 | [EP80_DATABASE_N_1_PROBLEM_BUG_YANG_TERSEMBUNY](EP80_DATABASE_N_1_PROBLEM_BUG_YANG_TERSEMBUNY/) | Database N+1 Problem: Bug yang Tersembunyi di Balik Kode yang Kelihatan Benar | context | - |
+| 81 | [EP81_CARA_KERJA_TCP_IP_UNTUK_DEVELOPER_YANG_P](EP81_CARA_KERJA_TCP_IP_UNTUK_DEVELOPER_YANG_P/) | Cara Kerja TCP/IP untuk Developer: Yang Perlu Kamu Tahu (Nggak Lebih) | context | - |
+| 82 | [EP82_PYTHON_ASYNCIO_KAPAN_BERGUNA_DAN_KAPAN_O](EP82_PYTHON_ASYNCIO_KAPAN_BERGUNA_DAN_KAPAN_O/) | Python asyncio: Kapan Berguna dan Kapan Overkill | context | - |
+| 83 | [EP83_KENAPA_KAMU_HARUS_NULIS_UNIT_TEST_MESKI](EP83_KENAPA_KAMU_HARUS_NULIS_UNIT_TEST_MESKI/) | Kenapa Kamu Harus Nulis Unit Test (Meski Deadline Mepet) | context | - |
+| 84 | [EP84_API_VERSIONING_STRATEGI_YANG_DIPAKAI_BIG](EP84_API_VERSIONING_STRATEGI_YANG_DIPAKAI_BIG/) | API Versioning: Strategi yang Dipakai Big Tech | context | - |
+| 85 | [EP85_CARA_KERJA_WEBASSEMBLY_KENAPA_INI_BUKAN](EP85_CARA_KERJA_WEBASSEMBLY_KENAPA_INI_BUKAN/) | Cara Kerja WebAssembly: Kenapa Ini Bukan Hype | context | - |
+| 86 | [EP86_GIT_BISECT_CARA_TERCEPAT_MENEMUKAN_COMMI](EP86_GIT_BISECT_CARA_TERCEPAT_MENEMUKAN_COMMI/) | Git Bisect: Cara Tercepat Menemukan Commit yang Bikin Bug | context | - |
+| 87 | [EP87_ENVIRONMENT_VARIABLES_BEST_PRACTICE_YANG](EP87_ENVIRONMENT_VARIABLES_BEST_PRACTICE_YANG/) | Environment Variables Best Practice yang Jarang Diikuti | context | - |
+| 88 | [EP88_CARA_MENULIS_README_YANG_ORANG_MAU_BACA](EP88_CARA_MENULIS_README_YANG_ORANG_MAU_BACA/) | Cara Menulis README yang Orang Mau Baca | context | - |
+| 89 | [EP89_PYTHON_GENERATOR_HEMAT_MEMORY_UNTUK_DATA](EP89_PYTHON_GENERATOR_HEMAT_MEMORY_UNTUK_DATA/) | Python Generator: Hemat Memory untuk Data Besar | context | - |
+| 90 | [EP90_KENAPA_TYPESCRIPT_ENUM_ITU_BERMASALAH_DA](EP90_KENAPA_TYPESCRIPT_ENUM_ITU_BERMASALAH_DA/) | Kenapa TypeScript Enum Itu Bermasalah (dan Alternatifnya) | context | - |
+| 91 | [EP91_LOAD_BALANCER_CARA_KERJA_DAN_KAPAN_KAMU](EP91_LOAD_BALANCER_CARA_KERJA_DAN_KAPAN_KAMU/) | Load Balancer: Cara Kerja dan Kapan Kamu Butuh Satu | context | - |
+| 92 | [EP92_CARA_SETUP_DEVELOPMENT_ENVIRONMENT_DI_WS](EP92_CARA_SETUP_DEVELOPMENT_ENVIRONMENT_DI_WS/) | Cara Setup Development Environment di WSL2 untuk Windows Developer | context | - |
+| 93 | [EP93_REACT_SERVER_COMPONENTS_REVOLUSI_ATAU_KO](EP93_REACT_SERVER_COMPONENTS_REVOLUSI_ATAU_KO/) | React Server Components: Revolusi atau Komplikasi | context | - |
+| 94 | [EP94_CARA_KERJA_EVENT_LOOP_NODE_JS_KENAPA_SIN](EP94_CARA_KERJA_EVENT_LOOP_NODE_JS_KENAPA_SIN/) | Cara Kerja Event Loop Node.js: Kenapa Single Thread Bisa Handle Ribuan Request | context | - |
+| 95 | [EP95_DATABASE_MIGRATION_BEST_PRACTICE_JANGAN](EP95_DATABASE_MIGRATION_BEST_PRACTICE_JANGAN/) | Database Migration Best Practice: Jangan Sampai Data Produksi Hilang | context | - |
+| 96 | [EP96_CARA_PAKAI_AI_UNTUK_CODE_REVIEW_BUKAN_GA](EP96_CARA_PAKAI_AI_UNTUK_CODE_REVIEW_BUKAN_GA/) | Cara Pakai AI untuk Code Review (Bukan Gantikan Developer) | context | - |
+| 97 | [EP97_PYTHON_DATACLASS_VS_PYDANTIC_MANA_YANG_H](EP97_PYTHON_DATACLASS_VS_PYDANTIC_MANA_YANG_H/) | Python dataclass vs Pydantic: Mana yang Harus Kamu Pakai | context | - |
+| 98 | [EP98_KUBERNETES_DASAR_KAPAN_VPS_BIASA_SUDAH_T](EP98_KUBERNETES_DASAR_KAPAN_VPS_BIASA_SUDAH_T/) | Kubernetes Dasar: Kapan VPS Biasa Sudah Tidak Cukup | context | - |
+| 99 | [EP99_CARA_KERJA_REGEX_PANDUAN_PRAKTIS_YANG_TI](EP99_CARA_KERJA_REGEX_PANDUAN_PRAKTIS_YANG_TI/) | Cara Kerja Regex: Panduan Praktis yang Tidak Bikin Kepala Pusing | context | - |
+| 100 | [EP100_FRONTEND_PERFORMANCE_METRIK_YANG_BENAR_B](EP100_FRONTEND_PERFORMANCE_METRIK_YANG_BENAR_B/) | Frontend Performance: Metrik yang Benar-Benar Penting (LCP, FID, CLS) | context | - |
+| 101 | [EP101_CARA_NULIS_COMMIT_MESSAGE_YANG_BAGUS_CON](EP101_CARA_NULIS_COMMIT_MESSAGE_YANG_BAGUS_CON/) | Cara Nulis Commit Message yang Bagus: Conventional Commits | context | - |
+| 102 | [EP102_MONOREPO_DENGAN_TURBOREPO_SETUP_UNTUK_TI](EP102_MONOREPO_DENGAN_TURBOREPO_SETUP_UNTUK_TI/) | Monorepo dengan Turborepo: Setup untuk Tim JavaScript | context | - |
+| 103 | [EP103_KENAPA_SENIOR_DEVELOPER_LEBIH_SUKA_BORIN](EP103_KENAPA_SENIOR_DEVELOPER_LEBIH_SUKA_BORIN/) | Kenapa Senior Developer Lebih Suka Boring Technology | context | - |
+| 104 | [EP104_PYTHON_CLICK_VS_ARGPARSE_BIKIN_CLI_TOOL](EP104_PYTHON_CLICK_VS_ARGPARSE_BIKIN_CLI_TOOL/) | Python Click vs argparse: Bikin CLI Tool yang Layak Pakai | context | - |
+| 105 | [EP105_CARA_KERJA_HTTPS_TLS_HANDSHAKE_DALAM_2_M](EP105_CARA_KERJA_HTTPS_TLS_HANDSHAKE_DALAM_2_M/) | Cara Kerja HTTPS: TLS Handshake dalam 2 Menit | context | - |
+| 106 | [EP106_DEPENDENCY_INJECTION_BUKAN_HANYA_UNTUK_J](EP106_DEPENDENCY_INJECTION_BUKAN_HANYA_UNTUK_J/) | Dependency Injection: Bukan Hanya untuk Java Enterprise | context | - |
+| 107 | [EP107_CARA_DEBUG_MEMORY_LEAK_DI_NODE_JS_APLIKA](EP107_CARA_DEBUG_MEMORY_LEAK_DI_NODE_JS_APLIKA/) | Cara Debug Memory Leak di Node.js Aplikasi | context | - |
+| 108 | [EP108_OPEN_SOURCE_CONTRIBUTION_PERTAMA_KAMU_PA](EP108_OPEN_SOURCE_CONTRIBUTION_PERTAMA_KAMU_PA/) | Open Source Contribution Pertama Kamu: Panduan Step by Step | context | - |
+| 109 | [EP109_CARA_KERJA_MESSAGE_QUEUE_RABBITMQ_VS_KAF](EP109_CARA_KERJA_MESSAGE_QUEUE_RABBITMQ_VS_KAF/) | Cara Kerja Message Queue: RabbitMQ vs Kafka untuk Developer Indonesia | context | - |
+| 110 | [EP110_JAVASCRIPT_MAP_VS_OBJECT_KAPAN_KAMU_HARU](EP110_JAVASCRIPT_MAP_VS_OBJECT_KAPAN_KAMU_HARU/) | JavaScript Map vs Object: Kapan Kamu Harus Pilih Map | context | - |
+| 111 | [EP111_CARA_SETUP_MONITORING_PRODUCTION_DENGAN](EP111_CARA_SETUP_MONITORING_PRODUCTION_DENGAN/) | Cara Setup Monitoring Production dengan Grafana + Prometheus | context | - |
+| 112 | [EP112_PYTHON_EXCEPTION_HANDLING_YANG_BENAR_BEY](EP112_PYTHON_EXCEPTION_HANDLING_YANG_BENAR_BEY/) | Python Exception Handling yang Benar: Beyond try/except | context | - |
+| 113 | [EP113_CARA_KERJA_BROWSER_STORAGE_COOKIE_VS_LOC](EP113_CARA_KERJA_BROWSER_STORAGE_COOKIE_VS_LOC/) | Cara Kerja Browser Storage: Cookie vs localStorage vs sessionStorage vs IndexedDB | context | - |
+| 114 | [EP114_DESIGN_PATTERN_YANG_BENAR_BENAR_DIPAKAI](EP114_DESIGN_PATTERN_YANG_BENAR_BENAR_DIPAKAI/) | Design Pattern yang Benar-Benar Dipakai di Production | context | - |
+| 115 | [EP115_CARA_OPTIMALKAN_DOCKER_IMAGE_SIZE_DARI_1](EP115_CARA_OPTIMALKAN_DOCKER_IMAGE_SIZE_DARI_1/) | Cara Optimalkan Docker Image Size: Dari 1GB ke 100MB | context | - |
+| 116 | [EP116_TYPESCRIPT_UTILITY_TYPES_YANG_DEVELOPER](EP116_TYPESCRIPT_UTILITY_TYPES_YANG_DEVELOPER/) | TypeScript Utility Types yang Developer Jarang Pakai | context | - |
+| 117 | [EP117_CARA_KERJA_DATABASE_CONNECTION_POOL_KENA](EP117_CARA_KERJA_DATABASE_CONNECTION_POOL_KENA/) | Cara Kerja Database Connection Pool: Kenapa Default Settings Sering Salah | context | - |
+| 118 | [EP118_GIT_HOOKS_AUTOMASI_YANG_BIKIN_TIM_LEBIH](EP118_GIT_HOOKS_AUTOMASI_YANG_BIKIN_TIM_LEBIH/) | Git Hooks: Automasi yang Bikin Tim Lebih Produktif | context | - |
+| 119 | [EP119_CARA_MENULIS_API_DOCUMENTATION_YANG_DEVE](EP119_CARA_MENULIS_API_DOCUMENTATION_YANG_DEVE/) | Cara Menulis API Documentation yang Developer Mau Baca | context | - |
+| 120 | [EP120_PYTHON_CONCURRENCY_THREAD_VS_PROCESS_VS](EP120_PYTHON_CONCURRENCY_THREAD_VS_PROCESS_VS/) | Python Concurrency: Thread vs Process vs Async | context | - |
+| 121 | [EP121_CARA_KERJA_CDN_KENAPA_WEBSITE_KAMU_HARUS](EP121_CARA_KERJA_CDN_KENAPA_WEBSITE_KAMU_HARUS/) | Cara Kerja CDN: Kenapa Website Kamu Harus Pakai Ini | context | - |
+| 122 | [EP122_NEXT_JS_APP_ROUTER_PERBEDAAN_YANG_BENAR](EP122_NEXT_JS_APP_ROUTER_PERBEDAAN_YANG_BENAR/) | Next.js App Router: Perbedaan yang Benar-Benar Penting dari Pages Router | context | - |
+| 123 | [EP123_CARA_INTERVIEW_TEKNIS_YANG_INTERVIEWER_C](EP123_CARA_INTERVIEW_TEKNIS_YANG_INTERVIEWER_C/) | Cara Interview Teknis: Yang Interviewer Cari (dari Perspektif Interviewer) | context | - |
+| 124 | [EP124_PYTHON_CONTEXT_MANAGER_BEYOND_OPEN_FILE](EP124_PYTHON_CONTEXT_MANAGER_BEYOND_OPEN_FILE/) | Python Context Manager: Beyond open() File | context | - |
+| 125 | [EP125_KENAPA_KAMU_HARUS_PAKAI_ZOD_UNTUK_VALIDA](EP125_KENAPA_KAMU_HARUS_PAKAI_ZOD_UNTUK_VALIDA/) | Kenapa Kamu Harus Pakai Zod untuk Validasi TypeScript | context | - |
+| 126 | [EP126_CARA_KERJA_BROWSER_CACHE_KENAPA_HALAMAN](EP126_CARA_KERJA_BROWSER_CACHE_KENAPA_HALAMAN/) | Cara Kerja Browser Cache: Kenapa Halaman Lama Muncul Terus | context | - |
+| 127 | [EP127_TEKNIK_REFACTORING_YANG_AMAN_UBAH_KODE_T](EP127_TEKNIK_REFACTORING_YANG_AMAN_UBAH_KODE_T/) | Teknik Refactoring yang Aman: Ubah Kode Tanpa Takut Merusak | context | - |
+| 128 | [EP128_CARA_SETUP_POSTGRESQL_FULL_TEXT_SEARCH_T](EP128_CARA_SETUP_POSTGRESQL_FULL_TEXT_SEARCH_T/) | Cara Setup PostgreSQL Full-Text Search: Tanpa Elasticsearch | context | - |
+| 129 | [EP129_JAVASCRIPT_PROXY_DAN_REFLECT_KEKUATAN_YA](EP129_JAVASCRIPT_PROXY_DAN_REFLECT_KEKUATAN_YA/) | JavaScript Proxy dan Reflect: Kekuatan yang Jarang Dimanfaatkan | context | - |
+| 130 | [EP130_CARA_KERJA_GIT_INTERNALS_OBJECT_MODEL_DI](EP130_CARA_KERJA_GIT_INTERNALS_OBJECT_MODEL_DI/) | Cara Kerja Git Internals: Object Model di Balik Commit | context | - |
+| 131 | [EP131_DEVELOPER_BURNOUT_TANDA_TANDA_DAN_CARA_M](EP131_DEVELOPER_BURNOUT_TANDA_TANDA_DAN_CARA_M/) | Developer Burnout: Tanda-Tanda dan Cara Mencegahnya Sebelum Terlambat | context | - |
+| 132 | [EP132_CARA_BUILD_PERSONAL_PORTFOLIO_YANG_DEVEL](EP132_CARA_BUILD_PERSONAL_PORTFOLIO_YANG_DEVEL/) | Cara Build Personal Portfolio yang Developer Senior Mau Lihat | context | - |
+| 133 | [EP133_ROADMAP_DEVELOPER_2025_SKILL_YANG_PERLU](EP133_ROADMAP_DEVELOPER_2025_SKILL_YANG_PERLU/) | Roadmap Developer 2025: Skill yang Perlu Kamu Prioritaskan (Versi Realistis) | context | - |

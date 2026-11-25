@@ -95,3 +95,74 @@
 | 86 | [EP86_NEGARA_YANG_ZONA_WAKTUNYA_BERBEDA_3_5_JA](EP86_NEGARA_YANG_ZONA_WAKTUNYA_BERBEDA_3_5_JA/) | Negara yang Zona Waktunya Berbeda 3,5 Jam dari Negara Tetangga | context | - |
 | 87 | [EP87_DANAU_DALAM_YANG_MENYIMPAN_AIR_TAWAR_20](EP87_DANAU_DALAM_YANG_MENYIMPAN_AIR_TAWAR_20/) | Danau Dalam yang Menyimpan Air Tawar 20% Dunia | context | - |
 | 88 | [EP88_REKOR_HUJAN_PALING_DERAS_DI_BUMI_DALAM_S](EP88_REKOR_HUJAN_PALING_DERAS_DI_BUMI_DALAM_S/) | Rekor Hujan Paling Deras di Bumi — Dalam Satu Menit | context | - |
+| 89 | [EP89_NEGARA_YANG_TIDAK_PUNYA_SUNGAI_SAMA_SEKA](EP89_NEGARA_YANG_TIDAK_PUNYA_SUNGAI_SAMA_SEKA/) | Negara yang Tidak Punya Sungai Sama Sekali | context | - |
+| 90 | [EP90_PULAU_YANG_DIBAGI_DUA_NEGARA_BERBEDA](EP90_PULAU_YANG_DIBAGI_DUA_NEGARA_BERBEDA/) | Pulau yang Dibagi Dua Negara Berbeda | context | - |
+| 91 | [EP91_POHON_TERTUA_DI_BUMI_HIDUP_SEJAK_5_000_T](EP91_POHON_TERTUA_DI_BUMI_HIDUP_SEJAK_5_000_T/) | Pohon Tertua di Bumi — Hidup sejak 5.000 Tahun Lalu | context | - |
+| 92 | [EP92_NEGARA_YANG_WILAYAHNYA_TERSEBAR_DI_3_BEN](EP92_NEGARA_YANG_WILAYAHNYA_TERSEBAR_DI_3_BEN/) | Negara yang Wilayahnya Tersebar di 3 Benua | context | - |
+| 93 | [EP93_NEGARA_YANG_BERGANTI_NAMA_PALING_BANYAK](EP93_NEGARA_YANG_BERGANTI_NAMA_PALING_BANYAK/) | Negara yang Berganti Nama Paling Banyak dalam 100 Tahun | context | - |
+| 94 | [EP94_JALAN_RAYA_TERPANJANG_DI_DUNIA_YANG_MENE](EP94_JALAN_RAYA_TERPANJANG_DI_DUNIA_YANG_MENE/) | Jalan Raya Terpanjang di Dunia yang Menembus 14 Negara | context | - |
+| 95 | [EP95_PULAU_YANG_LAHIR_DAN_MATI_DALAM_SETAHUN](EP95_PULAU_YANG_LAHIR_DAN_MATI_DALAM_SETAHUN/) | Pulau yang Lahir dan Mati dalam Setahun | context | - |
+| 96 | [EP96_NEGARA_DENGAN_BENDERA_PALING_RUMIT_DI_DU](EP96_NEGARA_DENGAN_BENDERA_PALING_RUMIT_DI_DU/) | Negara dengan Bendera Paling Rumit di Dunia | context | - |
+| 97 | [EP97_NEGARA_YANG_PUNYA_LEBIH_BANYAK_GAJAH_DAR](EP97_NEGARA_YANG_PUNYA_LEBIH_BANYAK_GAJAH_DAR/) | Negara yang Punya Lebih Banyak Gajah dari Manusia | context | - |
+| 98 | [EP98_KOTA_YANG_PUNYA_DUA_NAMA_RESMI_BERBEDA_D](EP98_KOTA_YANG_PUNYA_DUA_NAMA_RESMI_BERBEDA_D/) | Kota yang Punya Dua Nama Resmi Berbeda dalam Dua Bahasa | context | - |
+| 99 | [EP99_PANTAI_YANG_PASIRNYA_BERWARNA_PINK_HITAM](EP99_PANTAI_YANG_PASIRNYA_BERWARNA_PINK_HITAM/) | Pantai yang Pasirnya Berwarna Pink, Hitam, dan Hijau | context | - |
+| 100 | [EP100_AWAN_YANG_HANYA_MUNCUL_DI_SATU_TEMPAT_DI](EP100_AWAN_YANG_HANYA_MUNCUL_DI_SATU_TEMPAT_DI/) | Awan yang Hanya Muncul di Satu Tempat di Dunia | context | - |
+| 101 | [EP101_REKOR_MANUSIA_PALING_LAMA_BERTAHAN_TANPA](EP101_REKOR_MANUSIA_PALING_LAMA_BERTAHAN_TANPA/) | Rekor Manusia Paling Lama Bertahan Tanpa Tidur | context | - |
+| 102 | [EP102_NEGARA_YANG_TIDAK_PUNYA_BANDARA_INTERNAS](EP102_NEGARA_YANG_TIDAK_PUNYA_BANDARA_INTERNAS/) | Negara yang Tidak Punya Bandara Internasional | context | - |
+| 103 | [EP103_SEMENANJUNG_YANG_JADI_REBUTAN_3_NEGARA_S](EP103_SEMENANJUNG_YANG_JADI_REBUTAN_3_NEGARA_S/) | Semenanjung yang Jadi Rebutan 3 Negara Sekaligus | context | - |
+| 104 | [EP104_NEGARA_DENGAN_ANGKA_HARAPAN_HIDUP_TERTIN](EP104_NEGARA_DENGAN_ANGKA_HARAPAN_HIDUP_TERTIN/) | Negara dengan Angka Harapan Hidup Tertinggi di Dunia — Bukan Swiss | context | - |
+| 105 | [EP105_KOTA_YANG_MATAHARIYA_TIDAK_TERBENAM_SELA](EP105_KOTA_YANG_MATAHARIYA_TIDAK_TERBENAM_SELA/) | Kota yang Matahariya Tidak Terbenam Selama 2 Bulan | context | - |
+| 106 | [EP106_PULAU_YANG_PINDAH_KEPEMILIKAN_17_KALI_DA](EP106_PULAU_YANG_PINDAH_KEPEMILIKAN_17_KALI_DA/) | Pulau yang Pindah Kepemilikan 17 Kali dalam 400 Tahun | context | - |
+| 107 | [EP107_REKOR_GEMPA_TERBESAR_YANG_PERNAH_TERCATA](EP107_REKOR_GEMPA_TERBESAR_YANG_PERNAH_TERCATA/) | Rekor Gempa Terbesar yang Pernah Tercatat Manusia | context | - |
+| 108 | [EP108_NEGARA_YANG_WILAYAH_LAUTNYA_LEBIH_BESAR](EP108_NEGARA_YANG_WILAYAH_LAUTNYA_LEBIH_BESAR/) | Negara yang Wilayah Lautnya Lebih Besar dari Daratannya 50 Kali | context | - |
+| 109 | [EP109_GUNUNG_YANG_LEBIH_TINGGI_DARI_EVEREST_JI](EP109_GUNUNG_YANG_LEBIH_TINGGI_DARI_EVEREST_JI/) | Gunung yang Lebih Tinggi dari Everest — Jika Diukur dari Dasar Laut | context | - |
+| 110 | [EP110_NEGARA_YANG_PERNAH_MENYATAKAN_PERANG_PAD](EP110_NEGARA_YANG_PERNAH_MENYATAKAN_PERANG_PAD/) | Negara yang Pernah Menyatakan Perang pada Amerika — Dua Kali | context | - |
+| 111 | [EP111_JEMBATAN_TERPANJANG_DI_DUNIA_YANG_MELINT](EP111_JEMBATAN_TERPANJANG_DI_DUNIA_YANG_MELINT/) | Jembatan Terpanjang di Dunia yang Melintas di Atas Laut | context | - |
+| 112 | [EP112_HUTAN_YANG_HIDUP_DI_BAWAH_ES_ANTARKTIKA](EP112_HUTAN_YANG_HIDUP_DI_BAWAH_ES_ANTARKTIKA/) | Hutan yang Hidup di Bawah Es Antarktika | context | - |
+| 113 | [EP113_NEGARA_YANG_BERGABUNG_DAN_BUBAR_DALAM_SA](EP113_NEGARA_YANG_BERGABUNG_DAN_BUBAR_DALAM_SA/) | Negara yang Bergabung dan Bubar dalam Satu Generasi | context | - |
+| 114 | [EP114_KAWAH_METEORIT_YANG_MENGUBAH_JALUR_EVOLU](EP114_KAWAH_METEORIT_YANG_MENGUBAH_JALUR_EVOLU/) | Kawah Meteorit yang Mengubah Jalur Evolusi Manusia | context | - |
+| 115 | [EP115_NEGARA_DENGAN_LEBIH_DARI_700_BAHASA_RESM](EP115_NEGARA_DENGAN_LEBIH_DARI_700_BAHASA_RESM/) | Negara dengan Lebih dari 700 Bahasa Resmi | context | - |
+| 116 | [EP116_KOTA_PALING_TERPENCIL_DI_DUNIA_RATUSAN_K](EP116_KOTA_PALING_TERPENCIL_DI_DUNIA_RATUSAN_K/) | Kota Paling Terpencil di Dunia — Ratusan Km dari Pemukiman Lain | context | - |
+| 117 | [EP117_REKOR_SUHU_TERTINGGI_YANG_PERNAH_DICATAT](EP117_REKOR_SUHU_TERTINGGI_YANG_PERNAH_DICATAT/) | Rekor Suhu Tertinggi yang Pernah Dicatat di Bumi | context | - |
+| 118 | [EP118_NEGARA_YANG_IBUKOTANYA_ADA_DI_NEGARA_LAI](EP118_NEGARA_YANG_IBUKOTANYA_ADA_DI_NEGARA_LAI/) | Negara yang Ibukotanya Ada di Negara Lain | context | - |
+| 119 | [EP119_AIR_TERJUN_TERBESAR_DI_DUNIA_ADA_DI_BAWA](EP119_AIR_TERJUN_TERBESAR_DI_DUNIA_ADA_DI_BAWA/) | Air Terjun Terbesar di Dunia Ada di Bawah Laut | context | - |
+| 120 | [EP120_HEWAN_YANG_HIDUP_DI_DUA_BENUA_BERBEDA_TA](EP120_HEWAN_YANG_HIDUP_DI_DUA_BENUA_BERBEDA_TA/) | Hewan yang Hidup di Dua Benua Berbeda Tanpa Bisa Berenang | context | - |
+| 121 | [EP121_NEGARA_YANG_PERNAH_PUNYA_DUA_PRESIDEN_RE](EP121_NEGARA_YANG_PERNAH_PUNYA_DUA_PRESIDEN_RE/) | Negara yang Pernah Punya Dua Presiden Resmi Sekaligus | context | - |
+| 122 | [EP122_TEMPAT_DI_BUMI_YANG_TIDAK_PERNAH_HUJAN_S](EP122_TEMPAT_DI_BUMI_YANG_TIDAK_PERNAH_HUJAN_S/) | Tempat di Bumi yang Tidak Pernah Hujan Selama 400 Tahun | context | - |
+| 123 | [EP123_PULAU_YANG_HANYA_DIHUNI_PINGUIN_DAN_ILMU](EP123_PULAU_YANG_HANYA_DIHUNI_PINGUIN_DAN_ILMU/) | Pulau yang Hanya Dihuni Pinguin dan Ilmuwan | context | - |
+| 124 | [EP124_REKOR_BANJIR_PALING_MEMATIKAN_DALAM_SEJA](EP124_REKOR_BANJIR_PALING_MEMATIKAN_DALAM_SEJA/) | Rekor Banjir Paling Mematikan dalam Sejarah Modern | context | - |
+| 125 | [EP125_NEGARA_DENGAN_JAM_TANGAN_BERBEDA_DARI_ZO](EP125_NEGARA_DENGAN_JAM_TANGAN_BERBEDA_DARI_ZO/) | Negara dengan Jam Tangan Berbeda dari Zona Waktu Resminya | context | - |
+| 126 | [EP126_GLETSER_YANG_MAJU_BUKAN_MUNDUR_ANOMALI_K](EP126_GLETSER_YANG_MAJU_BUKAN_MUNDUR_ANOMALI_K/) | Gletser yang Maju, Bukan Mundur — Anomali Kutub Utara | context | - |
+| 127 | [EP127_NEGARA_YANG_WILAYAHNYA_HANYA_ADA_DI_PETA](EP127_NEGARA_YANG_WILAYAHNYA_HANYA_ADA_DI_PETA/) | Negara yang Wilayahnya Hanya Ada di Peta Tua | context | - |
+| 128 | [EP128_KOTA_YANG_DIBANGUN_DI_ATAS_DANAU_DAN_MAS](EP128_KOTA_YANG_DIBANGUN_DI_ATAS_DANAU_DAN_MAS/) | Kota yang Dibangun di Atas Danau dan Masih Berdiri | context | - |
+| 129 | [EP129_REKOR_LETUSAN_VULKANIK_PALING_KERAS_YANG](EP129_REKOR_LETUSAN_VULKANIK_PALING_KERAS_YANG/) | Rekor Letusan Vulkanik Paling Keras yang Pernah Didengar Manusia | context | - |
+| 130 | [EP130_NEGARA_YANG_PUNYA_WILAYAH_TAPI_TIDAK_PUN](EP130_NEGARA_YANG_PUNYA_WILAYAH_TAPI_TIDAK_PUN/) | Negara yang Punya Wilayah Tapi Tidak Punya Penduduk | context | - |
+| 131 | [EP131_SUNGAI_YANG_MENGALIR_KE_ATAS_ILUSI_OPTIK](EP131_SUNGAI_YANG_MENGALIR_KE_ATAS_ILUSI_OPTIK/) | Sungai yang Mengalir ke Atas — Ilusi Optik Geografis Nyata | context | - |
+| 132 | [EP132_NEGARA_YANG_BANKRUT_DAN_DIJUAL_UTANGNYA](EP132_NEGARA_YANG_BANKRUT_DAN_DIJUAL_UTANGNYA/) | Negara yang Bankrut dan Dijual Utangnya ke Negara Lain | context | - |
+| 133 | [EP133_HUTAN_BAMBU_YANG_TUMBUH_90_CM_PER_HARI](EP133_HUTAN_BAMBU_YANG_TUMBUH_90_CM_PER_HARI/) | Hutan Bambu yang Tumbuh 90 cm per Hari | context | - |
+| 134 | [EP134_NEGARA_YANG_PERNAH_PERANG_DENGAN_DIRINYA](EP134_NEGARA_YANG_PERNAH_PERANG_DENGAN_DIRINYA/) | Negara yang Pernah Perang dengan Dirinya Sendiri — Dua Kali | context | - |
+| 135 | [EP135_KAWASAN_ES_YANG_MENYIMPAN_VIRUS_BERUSIA](EP135_KAWASAN_ES_YANG_MENYIMPAN_VIRUS_BERUSIA/) | Kawasan Es yang Menyimpan Virus Berusia 50.000 Tahun | context | - |
+| 136 | [EP136_REKOR_MIGRASI_HEWAN_TERPANJANG_DI_BUMI](EP136_REKOR_MIGRASI_HEWAN_TERPANJANG_DI_BUMI/) | Rekor Migrasi Hewan Terpanjang di Bumi | context | - |
+| 137 | [EP137_NEGARA_YANG_PERNAH_PUNYA_WILAYAH_DI_SEMU](EP137_NEGARA_YANG_PERNAH_PUNYA_WILAYAH_DI_SEMU/) | Negara yang Pernah Punya Wilayah di Semua Benua | context | - |
+| 138 | [EP138_PULAU_BUATAN_YANG_PALING_AMBISIUS_DALAM](EP138_PULAU_BUATAN_YANG_PALING_AMBISIUS_DALAM/) | Pulau Buatan yang Paling Ambisius dalam Sejarah | context | - |
+| 139 | [EP139_REKOR_TSUNAMI_TERTINGGI_YANG_PERNAH_TERC](EP139_REKOR_TSUNAMI_TERTINGGI_YANG_PERNAH_TERC/) | Rekor Tsunami Tertinggi yang Pernah Tercatat | context | - |
+| 140 | [EP140_NEGARA_YANG_MENGGANTI_KONSTITUSINYA_PALI](EP140_NEGARA_YANG_MENGGANTI_KONSTITUSINYA_PALI/) | Negara yang Mengganti Konstitusinya Paling Sering | context | - |
+| 141 | [EP141_GUA_KRISTAL_TERBESAR_DI_DUNIA_YANG_HAMPI](EP141_GUA_KRISTAL_TERBESAR_DI_DUNIA_YANG_HAMPI/) | Gua Kristal Terbesar di Dunia yang Hampir Tidak Bisa Dikunjungi | context | - |
+| 142 | [EP142_NEGARA_DENGAN_PANTAI_TERPANJANG_DI_BUMI](EP142_NEGARA_DENGAN_PANTAI_TERPANJANG_DI_BUMI/) | Negara dengan Pantai Terpanjang di Bumi | context | - |
+| 143 | [EP143_TORNADO_TERBESAR_YANG_PERNAH_MENYENTUH_B](EP143_TORNADO_TERBESAR_YANG_PERNAH_MENYENTUH_B/) | Tornado Terbesar yang Pernah Menyentuh Bumi | context | - |
+| 144 | [EP144_NEGARA_YANG_PUNYA_WILAYAH_NON_CONTIGUOUS](EP144_NEGARA_YANG_PUNYA_WILAYAH_NON_CONTIGUOUS/) | Negara yang Punya Wilayah Non-Contiguous di Tengah Negara Lain | context | - |
+| 145 | [EP145_PULAU_YANG_BERUBAH_KEPEMILIKAN_KARENA_SA](EP145_PULAU_YANG_BERUBAH_KEPEMILIKAN_KARENA_SA/) | Pulau yang Berubah Kepemilikan karena Satu Perjanjian Golf | context | - |
+| 146 | [EP146_REKOR_KECEPATAN_ANGIN_TERTINGGI_DI_BUMI](EP146_REKOR_KECEPATAN_ANGIN_TERTINGGI_DI_BUMI/) | Rekor Kecepatan Angin Tertinggi di Bumi — Bukan di Tornado | context | - |
+| 147 | [EP147_NEGARA_YANG_DUA_KALI_JADI_NEGARA_MERDEKA](EP147_NEGARA_YANG_DUA_KALI_JADI_NEGARA_MERDEKA/) | Negara yang Dua Kali Jadi Negara Merdeka di Abad yang Sama | context | - |
+| 148 | [EP148_LUBANG_BUMI_PALING_DALAM_YANG_PERNAH_DIB](EP148_LUBANG_BUMI_PALING_DALAM_YANG_PERNAH_DIB/) | Lubang Bumi Paling Dalam yang Pernah Dibor Manusia | context | - |
+| 149 | [EP149_HUTAN_BAWAH_LAUT_KELP_FOREST_YANG_TERSEM](EP149_HUTAN_BAWAH_LAUT_KELP_FOREST_YANG_TERSEM/) | Hutan Bawah Laut — Kelp Forest yang Tersembunyi | context | - |
+| 150 | [EP150_REKOR_NEGARA_PALING_BANYAK_DIKUNJUNGI_TU](EP150_REKOR_NEGARA_PALING_BANYAK_DIKUNJUNGI_TU/) | Rekor Negara Paling Banyak Dikunjungi Turis dalam Setahun | context | - |
+| 151 | [EP151_NEGARA_YANG_HIDUP_TANPA_HUBUNGAN_DIPLOMA](EP151_NEGARA_YANG_HIDUP_TANPA_HUBUNGAN_DIPLOMA/) | Negara yang Hidup Tanpa Hubungan Diplomatik dengan Siapapun | context | - |
+| 152 | [EP152_GUNUNG_BERAPI_SUPERVOLCANO_YANG_TIDUR_DI](EP152_GUNUNG_BERAPI_SUPERVOLCANO_YANG_TIDUR_DI/) | Gunung Berapi Supervolcano yang Tidur di Bawah Taman Nasional Amerika | context | - |
+| 153 | [EP153_NEGARA_YANG_WILAYAH_LAUTNYA_DIHITUNG_MUN](EP153_NEGARA_YANG_WILAYAH_LAUTNYA_DIHITUNG_MUN/) | Negara yang Wilayah Lautnya Dihitung Mundur | context | - |
+| 154 | [EP154_JEMBATAN_KACA_YANG_MEMBUAT_ORANG_PINGSAN](EP154_JEMBATAN_KACA_YANG_MEMBUAT_ORANG_PINGSAN/) | Jembatan Kaca yang Membuat Orang Pingsan karena Takut | context | - |
+| 155 | [EP155_REKOR_BENCANA_ALAM_PALING_MAHAL_DALAM_SE](EP155_REKOR_BENCANA_ALAM_PALING_MAHAL_DALAM_SE/) | Rekor Bencana Alam Paling Mahal dalam Sejarah | context | - |
+| 156 | [EP156_NEGARA_YANG_PERNAH_DIJAJAH_SEMUA_KEKUATA](EP156_NEGARA_YANG_PERNAH_DIJAJAH_SEMUA_KEKUATA/) | Negara yang Pernah Dijajah Semua Kekuatan Besar Eropa | context | - |
+| 157 | [EP157_KOTA_YANG_DIBANGUN_SEMPURNA_DI_ATAS_JARI](EP157_KOTA_YANG_DIBANGUN_SEMPURNA_DI_ATAS_JARI/) | Kota yang Dibangun Sempurna di Atas Jaringan Terowongan | context | - |
+| 158 | [EP158_REKOR_MIGRASI_MANUSIA_TERBESAR_DALAM_SAT](EP158_REKOR_MIGRASI_MANUSIA_TERBESAR_DALAM_SAT/) | Rekor Migrasi Manusia Terbesar dalam Satu Peristiwa | context | - |
+| 159 | [EP159_NEGARA_YANG_IBUKOTANYA_ADA_DI_NEGARA_DEN](EP159_NEGARA_YANG_IBUKOTANYA_ADA_DI_NEGARA_DEN/) | Negara yang Ibukotanya Ada di Negara dengan Nama Sama | context | - |
