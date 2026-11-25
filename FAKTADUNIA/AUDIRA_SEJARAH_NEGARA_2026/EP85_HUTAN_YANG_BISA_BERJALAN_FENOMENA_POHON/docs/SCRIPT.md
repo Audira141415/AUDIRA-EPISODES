@@ -1,93 +1,69 @@
-# SCRIPT — `Fakta sejarah unik negara-negara di dunia` (`EP85`)
+# Naskah — Hutan yang Bisa Berjalan — Fenomena Pohon Berjalan Nyata
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **12** · estimasi **5 dtk**
+- Visual: Palem berakar tunjang di tengah hutan hujan; akar-akarnya terangkat bergantian seperti kaki melangkah. HUD callout "20 m / tahun?" dengan tanda tanya berkedip.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Pohon ini katanya bisa berjalan. Dua puluh meter setahun, mengejar cahaya matahari.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Peta Amerika Tengah dan Selatan; titik sebaran menyala di Peru, Kolombia, Ekuador. HUD label nama latin "Socratea exorrhiza" + penggaris tinggi "25 m".
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya palem berjalan, Socratea exorrhiza. Ia tumbuh di hutan hujan Amerika Tengah dan Selatan, paling banyak tercatat di Peru, Kolombia, dan Ekuador. Tingginya bisa sampai dua puluh lima meter.
 
-## c02 — <Judul Bab 1>
+## c02 — Kaki laba-laba
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Kamera turun ke pangkal batang, close-up kerucut akar tunjang yang menggantung di atas tanah. HUD penampang akar "8–10 cm".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Yang bikin heboh, akarnya. Batangnya tidak menancap langsung ke tanah, tapi berdiri di atas belasan akar tunjang, mirip kaki laba-laba raksasa. Tiap akar tebalnya delapan sampai sepuluh senti.
 
-## c03 — <Judul Bab 2>
+## c03 — Teori 1980
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **38** · estimasi **16 dtk**
+- Visual: Kartu jurnal bertanggal "1980 · Amazon Peru"; animasi 4 langkah: pohon tumbang menimpa palem, akar baru tumbuh di sisi lain, akar lama membusuk, batang berdiri tegak bergeser.
 
-> <teks narasi>
+> Tahun seribu sembilan ratus delapan puluh, antropolog John Bodley meneliti palem ini di Amazon Peru. Teorinya: kalau palem tertimpa pohon tumbang, ia menumbuhkan akar baru di sisi lain, akar lama membusuk, lalu batangnya berdiri tegak di tempat baru.
 
-## c04 — <Judul Bab 3>
+## c04 — Mitos membesar
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: Rombongan wisata di jalur hutan, pemandu menunjuk palem; balon cerita membesar dengan angka "20 m / tahun" yang terus naik.
 
-> <teks narasi>
+> Dari situ cerita membesar. Pemandu wisata bilang palem ini bisa pindah dua puluh meter setahun.
 
-## c05 — <Judul Bab 4>
+## c05 — Bantahan 2005
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Meja lapangan peneliti, pita ukur di sekeliling kerucut akar; stempel merah "MITOS" menghantam angka 20 m. HUD "2005 · Gerardo Avalos".
 
-> <teks narasi>
+> Masalahnya, data tidak mendukung. Tahun dua ribu lima, ahli palem Gerardo Avalos meneliti struktur akarnya. Kesimpulannya, palem ini tetap di titik ia berkecambah. Kata Avalos, itu cuma legenda.
 
-## c06 — <Judul Bab 5>
+## c06 — Fungsi sebenarnya
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **38** · estimasi **16 dtk**
+- Visual: Penampang samping: palem berakar tunjang vs palem biasa berbatang tebal, panah gaya menunjukkan kestabilan; kamera naik menembus celah kanopi yang terbuka. HUD "2007 · 80 pohon".
 
-> <teks narasi>
+> Lalu buat apa kaki sebanyak itu? Studi tahun dua ribu tujuh pada delapan puluh pohon memberi jawaban. Akar tunjang bikin palem bisa tumbuh tinggi dan tetap kokoh, tanpa harus menebalkan batang, jadi cepat menyambar celah cahaya di kanopi.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Hero shot golden hour dari bawah: palem menjulang menembus kanopi, bukan melangkah ke samping; papan kayu bertulisan "AUDIRA" di pangkal akar, lalu outro card.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi pohon ini tidak berjalan. Ia memanjat ke atas, bukan melangkah ke samping. Ikuti AUDIRA untuk fakta dunia yang sudah dicek.
+
+## Opsi hook lain
+
+1. Pemandu wisata bilang palem ini pindah dua puluh meter setahun. Ilmuwan bilang lain.
+2. Pohon berkaki dari hutan Amazon. Benar bisa jalan, atau cuma dongeng?
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **209 kata** ≈ **84–93 dtk**

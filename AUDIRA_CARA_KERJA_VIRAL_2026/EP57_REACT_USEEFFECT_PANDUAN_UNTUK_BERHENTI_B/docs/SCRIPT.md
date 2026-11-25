@@ -1,93 +1,69 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP57`)
+# Naskah — React useEffect: Panduan untuk Berhenti Bikin Memory Leak
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **11** · estimasi **5 dtk**
+- Visual: jendela browser bergaya generik, komponen kartu menghilang dari layar, tapi ikon jam di belakangnya tetap berdetak dan angka penghitung terus naik. HUD: "unmount ✓ · timer: masih jalan".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Komponenmu sudah hilang dari layar, tapi timer-nya masih berdetak di belakang.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **8 dtk**
+- Visual: garis waktu 2019, chip HUD "React 16.8 · 2019", lalu empat ikon keluar dari kotak komponen: jam (timer), antena (langganan data), telinga (event listener), panah jaringan (fetch).
 
-> <konteks singkat + "Di Audira, ...">
+> Sejak React 16.8 tahun 2019, kita pakai useEffect untuk urusan di luar React: timer, langganan data, event listener, dan fetch.
 
-## c02 — <Judul Bab 1>
+## c02 — Efek tidak berhenti sendiri
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: kode setInterval menyala; komponen dicopot dari pohon komponen, jam tetap berdetak. Tiap kali halaman dibuka lagi, satu jam baru menumpuk (counter HUD 1 → 2 → 3 → 4), memori naik di grafik kecil.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Masalahnya, efek itu tidak berhenti sendiri. Kalau kamu pasang setInterval lalu komponennya unmount, intervalnya tetap berdetak. Tiap halaman dibuka lagi, muncul satu timer baru. Menumpuk.
 
-## c03 — <Judul Bab 2>
+## c03 — Cleanup di return
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: blok kode useEffect dibelah, baris `return () => {...}` disorot. Diagram siklus: setup → dependency berubah → cleanup → setup lagi → unmount → cleanup terakhir. HUD "cleanup = fungsi di return".
 
-> <teks narasi>
+> Obatnya ada di return. Fungsi yang kamu kembalikan dari useEffect disebut cleanup. React menjalankannya sebelum efek diulang karena dependency berubah, dan sekali lagi saat komponen dicopot.
 
-## c04 — <Judul Bab 3>
+## c04 — Pasangan setup dan pembersih
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **10 dtk**
+- Visual: papan pasangan seperti colokan dan stopkontak: setInterval ↔ clearInterval, addEventListener ↔ removeEventListener, subscribe ↔ unsubscribe, fetch ↔ abort(). Tiap pasangan mengunci dengan bunyi klik.
 
-> <teks narasi>
+> Isinya pasangan dari setup. Pasang setInterval, cleanup memanggil clearInterval. Pasang addEventListener, cleanup memanggil removeEventListener. Buka langganan, cleanup menutupnya. Untuk fetch, pakai AbortController lalu panggil abort.
 
-## c05 — <Judul Bab 4>
+## c05 — Warning yang dihapus
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: konsol merah berisi warning setState pada komponen unmount, lalu dicoret dan memudar. Chip HUD "React 18 · Maret 2022 · warning dihapus". Ikon alarm palsu (false positive).
 
-> <teks narasi>
+> Lalu bagaimana dengan peringatan setState pada komponen yang sudah unmount? React 18, rilis Maret 2022, menghapusnya. Alasannya, peringatan itu lebih sering salah alarm. Set state setelah unmount sebenarnya tidak berbuat apa-apa.
 
-## c06 — <Judul Bab 5>
+## c06 — Strict Mode sebagai detektor
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **34** · estimasi **14 dtk**
+- Visual: panel konsol development: komponen di-mount, dicopot, di-mount ulang; log "Connecting…" muncul 2× tanpa "Disconnected". HUD "Strict Mode · dev only · mount → unmount → mount". Lalu versi dengan cleanup: log berpasangan rapi.
 
-> <teks narasi>
+> Kebocoran yang asli datang dari langganan yang lupa ditutup. Karena itu, Strict Mode di development sengaja memasang, mencopot, lalu memasang ulang komponen sekali. Kalau log koneksimu muncul dua kali tanpa pemutusan, cleanup-mu belum ada.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: semua jam yang menumpuk berhenti satu per satu, grafik memori turun rata. Kartu aturan besar "Setiap setup → satu pembersih". Outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Aturannya cuma satu: setiap setup butuh pasangan pembersihnya. Tulis return-nya dulu, baru efeknya. Simpan video ini, dan ikuti AUDIRA untuk cara kerja kode berikutnya.
+
+## Opsi hook lain
+
+1. Pindah halaman sepuluh kali, dan sekarang ada sepuluh timer yang jalan bareng.
+2. Warning yang kamu takutkan itu sudah dihapus sejak React 18. Masalahnya ada di tempat lain.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **196 kata** ≈ **78–87 dtk** @135–150 WPM

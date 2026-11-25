@@ -5,7 +5,11 @@ title: "Hutan yang Bisa Berjalan — Fenomena Pohon Berjalan Nyata"
 hook: "Di Ekuador ada pohon yang akarnya bergerak mencari sinar matahari"
 styleCandidates: ["WORLDFORGE (3D)", "PAPERWORLD (2D)", "CHRONICLE (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul dan hook menyiratkan pohon benar-benar berjalan, padahal literatur menyebutnya mitos; naskah wajib framing mitos vs fakta."
 ---
 
 # Hutan yang Bisa Berjalan — Fenomena Pohon Berjalan Nyata

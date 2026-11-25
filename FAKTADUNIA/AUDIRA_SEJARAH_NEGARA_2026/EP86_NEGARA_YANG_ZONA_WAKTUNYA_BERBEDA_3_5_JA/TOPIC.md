@@ -5,7 +5,11 @@ title: "Negara yang Zona Waktunya Berbeda 3,5 Jam dari Negara Tetangga"
 hook: "India dan Nepal punya offset waktu unik yang membingungkan dunia"
 styleCandidates: ["HISTORYMAP (2D)", "SATELLITEBRIEFING (2D)", "PAPERWORLD (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook awal India–Nepal salah (selisihnya 15 menit, bukan 3,5 jam); Celah Wakhjir bukan pos lintas umum, jangan diklaim bisa dilalui turis."
 ---
 
 # Negara yang Zona Waktunya Berbeda 3,5 Jam dari Negara Tetangga

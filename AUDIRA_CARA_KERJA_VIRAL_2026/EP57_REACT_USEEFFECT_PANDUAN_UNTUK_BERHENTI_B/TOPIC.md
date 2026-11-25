@@ -5,7 +5,11 @@ title: "React useEffect: Panduan untuk Berhenti Bikin Memory Leak"
 hook: "Komponen yang unmount tapi masih update state itu mimpi buruk"
 styleCandidates: ["CIRCUITFORGE (2D)", "DEVFORGE (2D)", "CYBERFORGE (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Hook asli kurang akurat sejak React 18 (setState setelah unmount = no-op), naskah sudah dikoreksi; logo React/browser tidak boleh tampil (rule 15)."
 ---
 
 # React useEffect: Panduan untuk Berhenti Bikin Memory Leak

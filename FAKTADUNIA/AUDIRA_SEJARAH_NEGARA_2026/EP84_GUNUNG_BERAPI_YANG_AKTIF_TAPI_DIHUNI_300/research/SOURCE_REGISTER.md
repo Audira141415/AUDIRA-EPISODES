@@ -1,33 +1,18 @@
-# SOURCE_REGISTER — `Fakta sejarah unik negara-negara di dunia`
+# Source Register — Gunung Berapi yang Aktif tapi Dihuni 300.000 Orang
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Zona merah Vesuvius dihuni sekitar 670.000 orang; rencana pemindahan disusun Regione Campania bersama ACaMIR | Piano nazionale di protezione civile per il rischio vulcanico al Vesuvio, Dipartimento della Protezione Civile, 2024 | https://www.protezionecivile.gov.it/it/approfondimento/aggiornamento-del-piano-nazionale-di-protezione-civile-il-vesuvio | 2026-11-25 | HIGH |
+| 2 | Target evakuasi seluruh zona merah dalam 72 jam (Rencana 2001: hingga 7 hari); warga dipindahkan ke region/provinsi "kembaran" di Italia dengan bus, kereta, atau kapal | Piano nazionale di protezione civile per il rischio vulcanico al Vesuvio, Dipartimento della Protezione Civile, 2024 | https://www.protezionecivile.gov.it/it/approfondimento/aggiornamento-del-piano-nazionale-di-protezione-civile-il-vesuvio | 2026-11-25 | HIGH |
+| 3 | Zona merah baru ditetapkan 2014; skenario acuan letusan sub-Plinian dengan kolom erupsi 10–20 km | Piano nazionale di protezione civile per il rischio vulcanico al Vesuvio, Dipartimento della Protezione Civile, 2024 | https://www.protezionecivile.gov.it/it/approfondimento/aggiornamento-del-piano-nazionale-di-protezione-civile-il-vesuvio | 2026-11-25 | HIGH |
+| 4 | Letusan Pompeii (79 M) termasuk letusan Plinian besar; setelah letusan 1944 Vesuvius masuk fase tenang, saluran erupsi tersumbat lava letusan terakhir, aktivitas kini seismik rendah dan fumarol | Vesuvio – Storia eruttiva, INGV Osservatorio Vesuviano, t.t. | https://www.ov.ingv.it/index.php/monitoraggio-sismico-e-vulcanico/vesuvio/vesuvio-storia-eruttiva | 2026-11-25 | HIGH |
+| 5 | Letusan 1631 terjadi setelah lebih dari lima abad tenang; mulai pukul 07.00 tanggal 16 Desember 1631, kolom 13–19 km; awan panas 17 Desember menghancurkan banyak desa di kaki gunung | L'eruzione del 1631, INGV Osservatorio Vesuviano, t.t. | https://www.ov.ingv.it/index.php/storia-vesuvio/1631 | 2026-11-25 | HIGH |
+| 6 | Osservatorio Vesuviano didirikan 1841, institusi ilmiah tertua yang khusus mempelajari gunung api; gedung asli di lereng Vesuvius, 608 m dpl | La storia dell'Osservatorio Vesuviano, INGV Osservatorio Vesuviano, t.t. | https://www.ov.ingv.it/index.php/la-sezione/chi-siamo/la-storia-dell-osservatorio-vesuviano | 2026-11-25 | HIGH |
+| 7 | Puncak 1.281 m dpl; letusan 79 M mengubur Pompeii dan Herculaneum; letusan Maret 1944 menghancurkan San Sebastiano al Vesuvio, Massa di Somma, Ottaviano; saat itu pangkalan USAAF 340th Bomb Group (Perang Dunia II) dekat Terzigno; lereng bawah berupa kebun anggur; sekitar 3 juta orang tinggal cukup dekat untuk terdampak | Mount Vesuvius, Wikipedia (kontributor), 2026 | https://en.wikipedia.org/wiki/Mount_Vesuvius | 2026-11-25 | MEDIUM |
+| 8 | Letusan Desember 1631 menewaskan sedikitnya 4.000 orang, letusan paling mematikan sejak 79 M | 1631 eruption of Mount Vesuvius, Wikipedia (kontributor), 2026 | https://en.wikipedia.org/wiki/1631_eruption_of_Mount_Vesuvius | 2026-11-25 | MEDIUM |
+| 9 | Lacryma Christi adalah anggur (wine) khas Napoli yang dibuat di lereng Vesuvius | Lacryma Christi, Wikipedia (kontributor), 2026 | https://en.wikipedia.org/wiki/Lacryma_Christi | 2026-11-25 | MEDIUM |
+| 10 | Zona merah ±200 km², mencakup 24 comune dan 3 quartiere kota Napoli (diperluas dari 18 comune di Rencana 2001) | Vesuvio, Wikipedia bahasa Italia (kontributor), 2026 | https://it.wikipedia.org/wiki/Vesuvio | 2026-11-25 | MEDIUM |
+| 11 | Pemerintah berupaya mengurangi penduduk zona merah: bongkar bangunan ilegal, Taman Nasional Vesuvius (5 Juni 1995), insentif finansial untuk pindah | Mount Vesuvius, Wikipedia (kontributor), 2026 | https://en.wikipedia.org/wiki/Mount_Vesuvius | 2026-11-25 | MEDIUM |
+| 12 | Kajian akademik persepsi risiko warga muda di kawasan urban Vesuvius (rujukan latar, isi tidak dikutip di naskah) | Volcanic risk perception of young people in the urban areas of Vesuvius, Carlino, Somma & Mayberry, J. Volcanol. Geotherm. Res., 2008 | https://doi.org/10.1016/j.jvolgeores.2007.12.010 | 2026-11-25 | MEDIUM |

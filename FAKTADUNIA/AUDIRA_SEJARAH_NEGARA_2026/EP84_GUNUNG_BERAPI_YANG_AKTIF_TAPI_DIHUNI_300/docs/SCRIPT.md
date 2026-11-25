@@ -1,93 +1,69 @@
-# SCRIPT — `Fakta sejarah unik negara-negara di dunia` (`EP84`)
+# Naskah — Gunung Berapi yang Aktif tapi Dihuni 300.000 Orang
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Malam hari di lereng Vesuvius: lampu rumah berderet di kaki kerucut gunung, Teluk Napoli di latar. HUD kinetik besar `670.000` muncul di atas gunung, lalu siluet Pompeii berabu samar di bawahnya.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Enam ratus tujuh puluh ribu orang tidur setiap malam di kaki gunung yang dulu mengubur Pompeii. Dan mereka memilih tetap tinggal.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Peta 3D Teluk Napoli dari udara, kerucut Vesuvius naik dari peta. Callout tinggi `1.281 m`. Wilayah zona merah menyala merah, chip `24 kota + 3 distrik Napoli`.
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya Vesuvius. Tingginya seribu dua ratus delapan puluh satu meter, berdiri di tepi Teluk Napoli, Italia. Pemerintah menandai lerengnya sebagai zona merah: dua puluh empat kota, plus tiga distrik Napoli.
 
-## c02 — <Judul Bab 1>
+## c02 — Pompeii, 79 M
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Kota Romawi (kolom batu, jalan berbatu) tertimbun hujan abu dan batu apung; kamera turun dari kolom erupsi ke jalan kota. Callout tahun `79 M`, label `Pompeii` dan `Herculaneum`.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tahun tujuh puluh sembilan Masehi, letusannya mengubur Pompeii dan Herculaneum di bawah abu dan batu apung. Dua kota Romawi hilang sekaligus.
 
-## c03 — <Judul Bab 2>
+## c03 — Bangun setelah lima abad, 1631
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Lereng hijau tenang (time-lapse rumput tumbuh, chip `> 5 abad diam`), lalu kolom erupsi dan awan panas menuruni lereng ke desa. Callout `16 Desember 1631` dan `≥ 4.000 korban`.
 
-> <teks narasi>
+> Lalu Vesuvius diam lebih dari lima abad. Orang lupa. Enam belas Desember enam belas tiga puluh satu, ia bangun. Awan panas menyapu desa di kakinya, sedikitnya empat ribu orang tewas.
 
-## c04 — <Judul Bab 3>
+## c04 — Letusan terakhir, 1944
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Lava pijar mengalir menelan atap desa, pesawat era Perang Dunia II di lapangan terbang dekat gunung tertutup abu. Callout `Maret 1944`, label desa `San Sebastiano` dan `Massa di Somma`.
 
-> <teks narasi>
+> Letusan terakhirnya terjadi Maret sembilan belas empat puluh empat, di tengah Perang Dunia Kedua. Lava menelan desa San Sebastiano dan Massa di Somma.
 
-## c05 — <Judul Bab 4>
+## c05 — Kenapa bertahan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Kebun anggur di lereng bawah, tangan memetik buah anggur, botol berlabel `Lacryma Christi`. Lalu potongan penampang gunung: saluran magma tertutup sumbat lava, chip `sunyi sejak 1944`.
 
-> <teks narasi>
+> Jadi kenapa orang bertahan? Tanah vulkaniknya subur. Kebun anggur di lereng menghasilkan anggur Lacryma Christi. Dan sejak sembilan belas empat puluh empat, gunung ini sunyi, karena saluran magmanya tersumbat lava lama.
 
-## c06 — <Judul Bab 5>
+## c06 — Pemantau dan rencana evakuasi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **35** · estimasi **15 dtk**
+- Visual: Gedung observatorium neoklasik di bukit lereng (chip `sejak 1841`, `tertua di dunia`) dengan grafik seismik berjalan. Lalu peta evakuasi: panah bus, kereta, kapal keluar dari zona merah, jam hitung mundur `72 jam`.
 
-> <teks narasi>
+> Tapi sunyi bukan berarti mati. Sejak delapan belas empat puluh satu, Osservatorio Vesuviano, lembaga pemantau gunung api tertua di dunia, terus mengawasinya. Rencana darurat Italia menargetkan evakuasi seluruh zona merah dalam tujuh puluh dua jam.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **18** · estimasi **8 dtk**
+- Visual: Hero shot Vesuvius saat fajar, kota menyala di kaki gunung. Tiga angka berbaris: `670.000` · `3 hari` · `1 gunung`. Lalu outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Enam ratus tujuh puluh ribu orang, tiga hari, satu gunung yang menunggu. Ikuti AUDIRA untuk fakta dunia berikutnya.
+
+## Opsi hook lain
+
+1. Pompeii terkubur hampir dua ribu tahun lalu. Gunung yang menguburnya masih aktif, dan kakinya penuh rumah.
+2. Kalau gunung ini meletus, Italia harus memindahkan enam ratus tujuh puluh ribu orang dalam tiga hari.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **209 kata** ≈ **88 dtk**

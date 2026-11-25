@@ -5,7 +5,11 @@ title: "Cursor AI vs GitHub Copilot: Mana yang Lebih Worth It untuk Developer In
 hook: "Harga, fitur, dan jujur soal keterbatasannya"
 styleCandidates: ["CERDIK (2D)", "BONGKAR (2D)", "ARCADECRT (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: tidak
+risiko: "Harga dan paket cepat berubah (Cursor kini dibundel X/Grok pasca-akuisisi SpaceX); rule 15 melarang logo produk, visual wajib UI generik."
 ---
 
 # Cursor AI vs GitHub Copilot: Mana yang Lebih Worth It untuk Developer Indonesia

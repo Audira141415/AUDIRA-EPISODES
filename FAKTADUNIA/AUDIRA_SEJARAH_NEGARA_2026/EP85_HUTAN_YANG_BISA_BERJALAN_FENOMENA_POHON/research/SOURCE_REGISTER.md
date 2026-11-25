@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Fakta sejarah unik negara-negara di dunia`
+# Source Register — Hutan yang Bisa Berjalan — Fenomena Pohon Berjalan Nyata
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Bodley & Benson (1980) mengajukan "stilt-root walking": palem yang tertimpa pohon tumbang menumbuhkan akar tunjang baru lalu berdiri tegak menjauh dari titik berkecambah; lokasi Amazon Peru | Stilt-Root Walking by an Iriarteoid Palm in the Peruvian Amazon, John H. Bodley & Foley C. Benson, Biotropica 12(1):67–71, 1980 | https://doi.org/10.2307/2387775 | 2026-11-25 | HIGH |
+| 2 | Studi struktur akar tunjang S. exorrhiza dan Iriartea deltoidea; perkembangan akar tunjang terkait ukuran pohon dan fungsinya menjaga kestabilan mekanis, tidak mendukung klaim "berjalan" | Stilt Root Structure in the Neotropical Palms Iriartea deltoidea and Socratea exorrhiza, Gerardo Avalos, Diego Salazar, Ana L. Araya, Biotropica 37(1):44–53, 2005 | https://doi.org/10.1111/j.1744-7429.2005.03148.x | 2026-11-25 | HIGH |
+| 3 | n = 80 pohon di dua lokasi tropis dataran rendah; akar tunjang memungkinkan palem bertambah tinggi dan tetap stabil tanpa menebalkan batang, sehingga cepat memanfaatkan celah cahaya | The function of stilt roots in the growth strategy of Socratea exorrhiza (Arecaceae) at two neotropical sites, Gregory R. Goldsmith & Rakan A. Zahawi, Revista de Biología Tropical 55(3–4):787–793, 2007 (abstrak PubMed 19086384) | https://doi.org/10.15517/rbt.v55i3-4.5955 | 2026-11-25 | HIGH |
+| 4 | Data sebaran: 26.067 catatan kejadian; terbanyak Peru (10.978), Kolombia (7.396), Bolivia (4.220), Ekuador (1.292); juga Kosta Rika, Panama, Brasil, Guyana | GBIF occurrence facet Socratea exorrhiza (taxonKey 2732453), GBIF.org, diakses 2026 | https://api.gbif.org/v1/occurrence/search?taxonKey=2732453&facet=country&limit=0 | 2026-11-25 | HIGH |
+| 5 | Kutipan Avalos ke Skeptical Inquirer: kepercayaan palem berjalan "just a myth"; palem bisa lebih dari 20 m; kerucut akar butuh waktu lama berkembang, sedangkan celah kanopi berubah cepat | The Myth of the Walking Tree, Benjamin Radford, Skeptical Inquirer 33(6):23, Nov/Des 2009 | https://skepticalinquirer.org/wp-content/uploads/sites/29/2009/11/p23.pdf | 2026-11-25 | MEDIUM |
+| 6 | Pemandu wisata di Amerika Latin biasa bilang palem berjalan bisa pindah hingga 20 m per tahun; Avalos: palem tetap di titik berkecambah, "just a legend" | A Persistent Rumor Suggests This Tree Can Walk Around, But Is It True?, Carly Cassella, ScienceAlert, 2024 | https://www.sciencealert.com/a-persistent-rumor-suggests-this-tree-can-walk-around-but-is-it-true | 2026-11-25 | MEDIUM |
+| 7 | Tinggi hingga 25 m (umumnya 15–20 m), diameter batang hingga 16 cm; akar tunjang tebal 8–10 cm; Corner (1961) menduga adaptasi rawa, tanpa bukti | Socratea exorrhiza, Wikipedia (merujuk Zotz & Vollrath 2003 J. Trop. Ecol.; Bodley & Benson 1980), revisi 2026 | https://en.wikipedia.org/wiki/Socratea_exorrhiza | 2026-11-25 | MEDIUM |

@@ -1,93 +1,69 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP54`)
+# Naskah — Cursor AI vs GitHub Copilot: Mana yang Lebih Worth It untuk Developer Indonesia
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: dua kartu harga raksasa berdiri berhadapan, "$10" kiri dan "$30" kanan, garis "VS" menyambar di tengah. Ikon editor generik (tanpa logo asli).
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Sepuluh dolar atau tiga puluh dolar sebulan? Dua asisten koding ini sama-sama jago, tapi cara narik duitnya beda jauh.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: tangga empat anak tangga harga Copilot naik satu per satu; HUD callout "Gratis · $10 · $39 · $100" + chip "per Nov 2026".
 
-> <konteks singkat + "Di Audira, ...">
+> Per November dua ribu dua puluh enam, GitHub Copilot punya paket gratis, Pro sepuluh dolar, Pro plus tiga puluh sembilan, dan Max seratus dolar.
 
-## c02 — <Judul Bab 1>
+## c02 — Cara Copilot menghitung
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: editor kode dengan baris autocomplete mengalir tanpa henti (badge "∞"), lalu panel chat yang memakan koin kredit; HUD "1 kredit = $0,01" dan gauge "$15/bulan".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Di Copilot berbayar, autocomplete kode tidak dibatasi. Yang dihitung cuma chat dan agen, pakai kredit AI. Satu kredit nilainya satu sen dolar, dan paket Pro dapat jatah lima belas dolar sebulan.
 
-## c03 — <Judul Bab 2>
+## c03 — Cursor dan kesepakatan SpaceX
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: jendela editor biru-abu (generik, bukan screenshot VS Code) bertransformasi jadi editor Cursor generik; lalu kontrak raksasa distempel, HUD "$60 miliar" + "Agustus 2026". Roket mainan siluet melintas (tanpa logo SpaceX).
 
-> <teks narasi>
+> Cursor beda cerita. Editor ini dibangun dari kode VS Code, jadi terasa akrab. Sejak Agustus dua ribu dua puluh enam, Cursor resmi jadi milik SpaceX lewat kesepakatan enam puluh miliar dolar.
 
-## c04 — <Judul Bab 3>
+## c04 — Paket Cursor sekarang
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: tiga tiket langganan meluncur masuk: "Plus $8 · hanya Grok", "Premium $30 · agen cloud + review kode", "Ultra $200". HUD chip "per Nov 2026".
 
-> <teks narasi>
+> Akibatnya, paket Cursor sekarang dibundel dengan langganan X dan Grok. Paket Plus delapan dolar cuma bisa pakai model Grok. Premium tiga puluh dolar membuka agen cloud dan review kode.
 
-## c05 — <Judul Bab 4>
+## c05 — Jujur soal keterbatasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: struk belanja panjang tercetak, baris "Model pihak ketiga — tarif API" berkedip merah; lalu meteran Copilot Free berhenti di "2.000 saran/bulan".
 
-> <teks narasi>
+> Jujur soal kekurangannya. Model pihak ketiga seperti Claude atau GPT di Cursor tidak termasuk harga bulanan, dibayar terpisah sesuai tarif API. Copilot gratis juga dibatasi dua ribu saran kode sebulan.
 
-## c06 — <Judul Bab 5>
+## c06 — Siapa cocok pakai apa
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: layar terbelah: kiri kartu mahasiswa generik + centang "Copilot Student: gratis"; kanan banyak tab file dikerjakan agen sekaligus + ikon dompet terbuka.
 
-> <teks narasi>
+> Buat mahasiswa, Copilot Student gratis setelah verifikasi. Buat kamu yang rutin menyuruh agen mengubah banyak file sekaligus, Cursor lebih leluasa, asal siap budget tambahan.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: timbangan besar menyeimbangkan dua kartu, lalu kalender 30 hari tercentang; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi, mulai dari Copilot gratis, ukur pemakaianmu sebulan, baru putuskan. Harga bisa berubah kapan saja. Simpan video ini dan ikuti AUDIRA.
+
+## Opsi hook lain
+
+1. Cursor sekarang milik SpaceX. Terus, harganya buat developer jadi gimana?
+2. Autocomplete Copilot tak terbatas, tapi chat-nya dihitung per sen. Ini bedanya dengan Cursor.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **209 kata** ≈ **84–93 dtk** @135–150 WPM

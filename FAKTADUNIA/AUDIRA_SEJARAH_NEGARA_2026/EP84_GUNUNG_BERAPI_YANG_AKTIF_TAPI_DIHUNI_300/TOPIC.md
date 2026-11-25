@@ -5,7 +5,11 @@ title: "Gunung Berapi yang Aktif tapi Dihuni 300.000 Orang"
 hook: "Vesuvius Italia — orang-orang memilih hidup di lereng gunung yang bisa meletus kapan saja"
 styleCandidates: ["DISASTERSIM (3D)", "WORLDFORGE (3D)", "CHRONICLE (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Angka 300.000 di judul salah (sumber resmi 670.000), wajib dikoreksi di tahap 4; topik bencana, hindari framing warga nekat."
 ---
 
 # Gunung Berapi yang Aktif tapi Dihuni 300.000 Orang
