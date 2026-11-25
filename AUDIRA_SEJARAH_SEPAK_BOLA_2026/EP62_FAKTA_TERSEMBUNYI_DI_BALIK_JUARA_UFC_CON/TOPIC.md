@@ -5,7 +5,11 @@ title: "Fakta Tersembunyi di Balik Juara UFC Conor McGregor"
 hook: "Dari pengangguran menerima tunjangan sosial ke miliuner dalam 3 tahun"
 styleCandidates: ["CINESTORY (2D)", "NEKAT (2D)", "CHARACTERFLOW (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook tunjangan sosial tidak terverifikasi (diganti bayaran $60 ribu ke $3 juta); payoff menyebut putusan perdata kekerasan seksual 2024 (isu sensitif, status banding perlu dicek); tokoh nyata wajib siluet tanpa wajah."
 ---
 
 # Fakta Tersembunyi di Balik Juara UFC Conor McGregor

@@ -5,7 +5,11 @@ title: "Rekor Steph Curry yang Membuktikan Tinggi Badan Bukan Segalanya"
 hook: "3 ring, 4 MVP, dan 400 lebih three-pointer dalam satu musim"
 styleCandidates: ["DATAPHYSICAL (2D)", "CHARACTERFLOW (2D)", "PIXELSTORY (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak
+risiko: "Hook asli salah (benar: 4 cincin, 2 MVP); total tripoin terus berubah selama Curry aktif; topik basket ada di seri sepak bola; hindari wajah asli dan logo NBA/Warriors."
 ---
 
 # Rekor Steph Curry yang Membuktikan Tinggi Badan Bukan Segalanya

@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris` (`EP62`)
+# Naskah — Fakta Tersembunyi di Balik Juara UFC Conor McGregor
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: Petarung siluet (tanpa wajah asli) di bawah lampu oktagon; satu amplop kecil berlabel HUD "APR 2013 · $60.000" terbanting, lalu tumpukan uang membesar ke HUD "$3.000.000 · AGS 2016". Tiga lingkar tahun berputar cepat 2013 → 2016.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> April 2013, pemuda Dublin ini dapat bonus enam puluh ribu dolar. Tiga tahun kemudian, satu malam bertarung dibayar tiga juta dolar.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: Kamera dolly ke papan nama kayu bertuliskan "CONOR McGREGOR" di dinding gym (teks, bukan foto). Label HUD "AUDIRA · FAKTA TERSEMBUNYI" menempel di sabuk juara generik.
 
-> <konteks singkat + "Di Audira, ...">
+> Ini Conor McGregor. Di AUDIRA, kita bongkar fakta yang jarang dibahas di balik sabuk juaranya.
 
-## c02 — <Judul Bab 1>
+## c02 — Dari kunci pipa ke sarung tangan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: Dapur Dublin, pipa bocor, kunci pipa dan sabuk perkakas; HUD "MAGANG TUKANG LEDENG · 1 TAHUN". Kunci pipa jatuh, berubah jadi sarung tangan MMA. Pindah ke gym SBG: matras, samsak, HUD "2008 · SBG DUBLIN · JOHN KAVANAGH".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Sebelum jadi petarung, dia magang tukang ledeng setahun karena didorong orang tuanya. Tahun 2008 dia mulai berlatih di Straight Blast Gym di bawah pelatih John Kavanagh.
 
-## c03 — <Judul Bab 2>
+## c03 — Debut kilat
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **9 dtk**
+- Visual: Oktagon arena debut, dua siluet petarung; stopwatch besar berhenti di HUD "1:07"; kartu bonus "KNOCKOUT OF THE NIGHT · $60.000" terbang ke kamera.
 
-> <teks narasi>
+> Debut UFC-nya lawan Marcus Brimage cuma makan satu menit tujuh detik. Menang TKO, langsung dapat bonus Knockout of the Night.
 
-## c04 — <Judul Bab 3>
+## c04 — 13 detik
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Arena Las Vegas gelap, papan skor "UFC 194 · DES 2015". Hitungan mundur raksasa 13 → 0 memenuhi layar, satu pukulan kiri siluet, slow-motion jatuh. HUD "13 DTK · FINIS TERCEPAT LAGA GELAR UFC".
 
-> <teks narasi>
+> Desember 2015, UFC 194. Lawannya José Aldo, juara yang hampir sepuluh tahun tidak pernah kalah. Semuanya selesai dalam tiga belas detik, finis tercepat di laga perebutan gelar UFC.
 
-## c05 — <Judul Bab 4>
+## c05 — Dua sabuk
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Siluet kota New York malam, kamera masuk ke arena penuh (Madison Square Garden sebagai teks HUD). Dua sabuk juara generik mendarat di kedua bahu siluet. HUD "NOV 2016 · UFC 205 · 2 SABUK SEKALIGUS · PERTAMA DI UFC".
 
-> <teks narasi>
+> November 2016 di Madison Square Garden, dia menjatuhkan Eddie Alvarez di ronde kedua. Jadilah dia orang pertama di UFC yang memegang dua sabuk sekaligus.
 
-## c06 — <Judul Bab 5>
+## c06 — Uang meledak
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **12 dtk**
+- Visual: Ring tinju (bukan oktagon), tumpukan uang naik seperti grafik batang: "$30 JUTA · 2017 · vs MAYWEATHER", lalu menara uang tertinggi "$180 JUTA · FORBES 2021 · ATLET TERKAYA DUNIA". Botol wiski generik tanpa merek di puncak menara.
 
-> <teks narasi>
+> Uangnya ikut meledak. Lawan Floyd Mayweather tahun 2017, bayaran terjaminnya tiga puluh juta dolar. Tahun 2021, Forbes menobatkannya atlet berpenghasilan tertinggi dunia: seratus delapan puluh juta dolar.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Ruang sidang Dublin bergaya diorama, palu hakim jatuh; HUD "NOV 2024 · PUTUSAN PERDATA · GANTI RUGI €248.000+". Menara uang dan sabuk retak dan memudar. Kamera mundur ke dapur awal dengan kunci pipa di lantai (bookend). Outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Tapi November 2024, juri pengadilan perdata di Dublin memutus dia melakukan kekerasan seksual pada 2018. Dari tukang ledeng ke puncak dunia, lalu tercoreng ulahnya sendiri. Ikuti AUDIRA untuk kisah juara berikutnya.
+
+## Opsi hook lain
+
+1. Tiga belas detik. Cuma segitu waktu yang dia butuhkan untuk merebut sabuk juara dunia.
+2. Dulu dia magang memperbaiki pipa bocor. Lalu dia jadi orang pertama di UFC yang memegang dua sabuk sekaligus.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **192 kata** ≈ **82 dtk** (77–85 dtk @135–150 WPM)

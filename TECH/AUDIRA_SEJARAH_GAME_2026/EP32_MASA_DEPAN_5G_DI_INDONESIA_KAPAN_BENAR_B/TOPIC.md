@@ -5,7 +5,11 @@ title: "Masa Depan 5G di Indonesia: Kapan Benar-Benar Merata?"
 hook: "5G sudah hadir tapi kenapa terasa lambat — ini penjelasannya"
 styleCandidates: ["BROADCASTFORGE (2D)", "DATAPHYSICAL (2D)", "PRECISION (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak   # tidak = fakta cepat basi (rekor, harga, produk)
+risiko: "Angka BTS/kecepatan cepat basi dan hasil lelang Juli 2026 perlu dicek final ke Komdigi; tanpa logo operator; '±2031' hanya perkiraan."
 ---
 
 # Masa Depan 5G di Indonesia: Kapan Benar-Benar Merata?

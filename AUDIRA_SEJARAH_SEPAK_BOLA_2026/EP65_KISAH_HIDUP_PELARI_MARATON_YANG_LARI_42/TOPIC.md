@@ -5,7 +5,11 @@ title: "Kisah Hidup Pelari Maraton yang Lari 42 Km Meski Kakinya Patah"
 hook: "Kisata nyata: keberanian yang membuat seluruh stadion berdiri"
 styleCandidates: ["CINESTORY (2D)", "CHARACTERFLOW (2D)", "FILM16 (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul dan hook tidak akurat (kaki tidak patah tapi lutut dislokasi; stadion hanya tersisa beberapa ribu penonton), wajib koreksi judul; tokoh nyata ditampilkan siluet."
 ---
 
 # Kisah Hidup Pelari Maraton yang Lari 42 Km Meski Kakinya Patah

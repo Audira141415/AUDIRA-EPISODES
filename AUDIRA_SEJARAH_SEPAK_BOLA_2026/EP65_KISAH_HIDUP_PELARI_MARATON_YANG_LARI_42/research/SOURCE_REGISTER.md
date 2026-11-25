@@ -1,33 +1,14 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Kisah Hidup Pelari Maraton yang Lari 42 Km Meski Kakinya Patah
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Akhwari kram (±30 km), lalu jatuh saat pelari berebut posisi; bahu terbentur, lutut robek dan dislokasi; dibalut "first aid" lalu lanjut. Masuk stadion hampir tepat 60 menit setelah Mamo Wolde; beberapa ribu penonton bertahan. Kutipan "My country did not send me ... 5,000 miles to finish the race". Kota 2.250 m, tanpa latihan ketinggian; juara maraton Afrika saat itu. | "I never thought of stopping": marathon man Akhwari on his epic effort at the '68 Games, IOC News, 2020 (arsip Wayback 2024-08-16) | https://www.olympics.com/ioc/news/-i-never-thought-of-stopping-marathon-man-akhwari-on-his-epic-effort-at-the-68-games | 2026-11-25 | HIGH |
+| 2 | 18 dari 75 pelari start mundur; Akhwari finis terakhir lebih dari satu jam setelah juara, disoraki beberapa ribu penonton setelah matahari terbenam; lutut sobek + dislokasi; 1970 finis ke-5 maraton Commonwealth Games. | Marathon man Akhwari demonstrates superhuman spirit, Olympics.com (Olympic Channel) (arsip Wayback 2024-08-16) | https://www.olympics.com/en/news/marathon-man-akhwari-demonstrates-superhuman-spirit | 2026-11-25 | HIGH |
+| 3 | Maraton putra Olimpiade 1968: 20 Okt 1968 pukul 15:00, Estadio Olímpico Universitario, 75 peserta dari 41 negara, 42.195 m point-to-point, ketinggian kota 2.240 m. Juara Mamo Wolde (ETH) 2-20:26; Akhwari (TAN) peringkat 57, 3-25:17. | Marathon, Men — 1968 Summer Olympics, Olympedia (OlyMADMen) | https://www.olympedia.org/results/60599 | 2026-11-25 | HIGH |
+| 4 | Biodata Akhwari: lahir 1938 (data lain 1942) di Mbulu, Tanzania; lutut dibalut penuh, berjalan dan terpincang di mil-mil terakhir; Medali Pahlawan Nasional Tanzania 1983; mendirikan John Stephen Akhwari Athletic Foundation; PB maraton 2-15:05 (1970). | John Stephen Akhwari — athlete profile, Olympedia (OlyMADMen) | https://www.olympedia.org/athletes/76535 | 2026-11-25 | HIGH |
+| 5 | Jatuh di ±19 km (versi Wikipedia, tanpa rujukan); kru TV dikirim dari upacara medali saat kabar ada satu pelari lagi; diundang menyerahkan medali maraton Sydney 2000; pembawa obor di Dar es Salaam 13 April 2008. | John Stephen Akhwari, Wikipedia (diakses 2026) | https://en.wikipedia.org/wiki/John_Stephen_Akhwari | 2026-11-25 | MEDIUM |
+| 6 | 75 peserta dari 41 negara, 18 tidak finis; start 15:00 waktu lokal; rute dari Zócalo ke Stadion Olimpiade. | Athletics at the 1968 Summer Olympics – Men's marathon, Wikipedia (diakses 2026) | https://en.wikipedia.org/wiki/Athletics_at_the_1968_Summer_Olympics_%E2%80%93_Men%27s_marathon | 2026-11-25 | MEDIUM |
+| 7 | Akhwari masuk stadion malam 20 Okt 1968 dengan kaki kanan berbalut tebal; lutut dislokasi dan bahu cedera. | John Akhwari and His Last Place Finish, Roy Tomizawa (The Olympians), 2016 | https://theolympians.co/2016/05/20/john-akhwari-champions-do-finish-last/ | 2026-11-25 | MEDIUM |
+| 8 | Narasi resmi panitia Beijing 2008: Akhwari masuk ujung stadion dalam gelap, kaki berdarah dan berbalut. | John Stephen Akhwari - the greatest last place finish ever, situs resmi Olimpiade Beijing 2008 (arsip Wayback 2011) | https://web.archive.org/web/20111224182309/http://en.beijing2008.cn/education/stories/n214077658.shtml | 2026-11-25 | MEDIUM |

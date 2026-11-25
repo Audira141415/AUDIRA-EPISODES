@@ -1,33 +1,13 @@
-# SOURCE_REGISTER — `Sejarah game yang viral dan jarang diketahui`
+# Source Register — Microsoft Copilot vs Google Workspace AI: Mana Lebih Produktif?
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Microsoft 365 Copilot diumumkan 16 Maret 2023; harga US$30/pengguna/bulan ditetapkan Juli 2023; GA 1 November 2023 untuk pelanggan Enterprise yang membeli > 300 lisensi | Microsoft Copilot, Wikipedia (kontributor), diakses 2026 | https://en.wikipedia.org/wiki/Microsoft_Copilot | 2026-11-25 | MEDIUM |
+| 2 | Microsoft mengumumkan peluncuran Microsoft 365 Copilot untuk enterprise pada 1 November (2023) | Microsoft 365 Copilot availability date and price, Nathan Edwards / The Verge, 2023 | https://www.theverge.com/2023/9/21/23883798/microsoft-365-copilot-availability-date-price | 2026-11-25 | MEDIUM |
+| 3 | Duet AI for Google Workspace dinyatakan tersedia umum (GA), dengan uji coba tanpa biaya; sebelumnya dipakai ribuan perusahaan dan > 1 juta trusted tester | Now Available: Duet AI for Google Workspace, Aparna Pappu / Google Workspace Blog, 30 Agustus 2023 | https://workspace.google.com/blog/product-announcements/duet-ai-in-workspace-now-available | 2026-11-25 | HIGH |
+| 4 | Duet AI berganti nama jadi Gemini for Google Workspace; Gemini Business mulai US$20/pengguna/bulan, Gemini Enterprise US$30/pengguna/bulan (komitmen tahunan) | Gemini for Google Workspace (pengumuman Gemini Business & Enterprise), Google Blog, Februari 2024 | https://blog.google/products/workspace/google-gemini-workspace/ | 2026-11-25 | HIGH |
+| 5 | Gemini dimasukkan ke paket Workspace Business/Enterprise; contoh Business Standard + add-on Gemini dulu US$32, kini US$14 (hanya US$2 di atas harga tanpa Gemini); harga pelanggan lama berubah mulai 17 Maret 2025 | Google Workspace enables the future of AI-powered work for every business, Jerry Dischler / Google Workspace Blog, 16 Januari 2025 | https://workspace.google.com/blog/product-announcements/empowering-businesses-with-AI | 2026-11-25 | HIGH |
+| 6 | Uji coba GDS 30 Sep–31 Des 2024: 20.000 pegawai di 12 organisasi pemerintah Inggris; rata-rata hemat 26 menit/hari; 82% tidak mau kembali ke kondisi sebelum Copilot | Microsoft 365 Copilot Experiment: Cross-Government Findings Report, Government Digital Service (UK), 2 Juni 2025 | https://www.gov.uk/government/publications/microsoft-365-copilot-experiment-cross-government-findings-report | 2026-11-25 | HIGH |
+| 7 | Pilot DBT (Okt–Des 2024, 1.000 lisensi): evaluasi tidak menemukan bukti penghematan waktu berujung produktivitas lebih tinggi; tugas meringkas/menulis paling memuaskan, membuat PowerPoint dan menjadwalkan rapat paling rendah | Microsoft 365 Copilot pilot: DBT evaluation report, Department for Business and Trade (UK), 28 Agustus 2025 | https://www.gov.uk/government/publications/microsoft-365-copilot-pilot-dbt-evaluation-report | 2026-11-25 | HIGH |

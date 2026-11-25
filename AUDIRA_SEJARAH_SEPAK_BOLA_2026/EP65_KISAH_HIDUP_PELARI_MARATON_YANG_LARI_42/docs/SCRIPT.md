@@ -1,93 +1,70 @@
-# SCRIPT — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris` (`EP65`)
+# Naskah — Kisah Hidup Pelari Maraton yang Lari 42 Km Meski Kakinya Patah
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
+Catatan riset: kaki Akhwari tidak patah (lutut dislokasi); lihat RESEARCH_REPORT.md bagian Kontroversi.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **16** · estimasi **7 dtk**
+- Visual: Close-up lutut berbalut perban kotor darah di aspal malam, kaki terpincang melangkah; HUD merah "LUTUT DISLOKASI".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Lututnya dislokasi, kakinya berdarah, tapi dia tidak berhenti. Ini mungkin finis paling berani dalam sejarah Olimpiade.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Peta Meksiko zoom ke Mexico City, garis kontur ketinggian naik; HUD "20 OKT 1968" + "2.240 M"; pelari siluet terengah.
 
-> <konteks singkat + "Di Audira, ...">
+> Mexico City, 20 Oktober 1968. Maraton Olimpiade digelar di ketinggian lebih dari dua ribu meter. Udaranya tipis, dan banyak pelari mulai kram.
 
-## c02 — <Judul Bab 1>
+## c02 — Sang pelari
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Barisan start di Zócalo, kamera dolly ke satu pelari bernomor dada Tanzania (siluet/tanpa wajah realistis); HUD "75 PELARI" + name plate "JOHN STEPHEN AKHWARI · TANZANIA · JUARA AFRIKA".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Di antara 75 pelari, ada John Stephen Akhwari dari Tanzania, juara maraton Afrika. Masalahnya, dia belum pernah latihan di dataran setinggi itu.
 
-## c03 — <Judul Bab 2>
+## c03 — Jatuh
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Kerumunan pelari berdesakan, satu sosok terjatuh slow-motion ke aspal; flash merah, ikon sendi lutut bergeser (diagram anatomi sederhana).
 
-> <teks narasi>
+> Di tengah lomba, para pelari saling sikut berebut posisi. Akhwari terjatuh keras ke aspal. Lututnya dislokasi, bahunya luka parah. Rasa sakitnya bikin dia hampir tidak bisa melangkah.
 
-## c04 — <Judul Bab 3>
+## c04 — Bangkit
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Tenda medis pinggir jalan, perban dililit; counter HUD "18 MUNDUR" berdetak; sosok bangkit dan berjalan terpincang di jalan kota yang mulai sepi.
 
-> <teks narasi>
+> Kakinya dibalut perban seadanya. Hari itu delapan belas pelari menyerah. Akhwari memilih bangkit, lalu jalan terpincang-pincang menuju stadion. Dia tidak mau jadi yang kesembilan belas.
 
-## c05 — <Judul Bab 4>
+## c05 — Juara dan senja
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Stadion: podium medali, siluet juara; HUD "MAMO WOLDE · 2:20:26"; langit berganti oranye ke gelap, lampu stadion menyala.
 
-> <teks narasi>
+> Sementara itu, Mamo Wolde dari Ethiopia sudah juara dengan waktu dua jam dua puluh menit. Upacara medali berjalan, dan matahari sudah terbenam.
 
-## c06 — <Judul Bab 5>
+## c06 — Masuk stadion
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Gerbang stadion malam, sosok berbalut masuk lintasan, perban berkibar; tribun setengah kosong, beberapa ribu penonton berdiri bersorak; HUD "+1 JAM" lalu "#57 · TERAKHIR".
 
-> <teks narasi>
+> Lebih dari satu jam setelah sang juara, Akhwari masuk stadion dengan perban berkibar. Beberapa ribu penonton yang masih bertahan langsung bersorak. Dia finis di urutan ke-57, paling akhir.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **34** · estimasi **14 dtk**
+- Visual: Finis di garis, kamera naik ke langit malam; kutipan kinetik per kata "5.000 MIL ... UNTUK MENYELESAIKANNYA"; kartu "1983 · MEDALI PAHLAWAN NASIONAL"; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Waktu ditanya kenapa tidak berhenti, jawabannya jadi legenda: negaraku tidak mengirimku sejauh lima ribu mil untuk memulai lomba, tapi untuk menyelesaikannya. Tahun 1983, Tanzania menganugerahinya Medali Pahlawan Nasional. Ikuti AUDIRA untuk kisah olahraga berikutnya.
+
+## Opsi hook lain
+
+1. Dia finis paling akhir, satu jam setelah juara. Tapi justru dia yang paling diingat Olimpiade.
+2. Lututnya lepas dari sendi di tengah maraton. Yang dia lakukan setelah itu bikin dunia terdiam.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **196 kata** ≈ **83 dtk**

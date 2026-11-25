@@ -5,7 +5,11 @@ title: "Microsoft Copilot vs Google Workspace AI: Mana Lebih Produktif?"
 hook: "Dua raksasa bertarung di produktivitas — ini pemenangnya"
 styleCandidates: ["BROADCASTFORGE (2D)", "SCALEFORGE (3D)", "DEVFORGE (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: tidak
+risiko: "Hook 'ini pemenangnya' tidak didukung data head-to-head; harga/nama produk cepat berubah dan harga Microsoft hanya dari sumber MEDIUM."
 ---
 
 # Microsoft Copilot vs Google Workspace AI: Mana Lebih Produktif?

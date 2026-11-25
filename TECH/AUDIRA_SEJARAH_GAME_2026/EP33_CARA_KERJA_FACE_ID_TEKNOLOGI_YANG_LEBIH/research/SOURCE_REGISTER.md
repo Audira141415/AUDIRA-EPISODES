@@ -1,33 +1,16 @@
-# SOURCE_REGISTER — `Sejarah game yang viral dan jarang diketahui`
+# Source Register — Cara Kerja Face ID: Teknologi yang Lebih Aman dari Password
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Face ID memproyeksikan lebih dari 30.000 titik inframerah tak terlihat; kamera TrueDepth terdiri dari dot projector, kamera inframerah, dan flood illuminator | The future is here: iPhone X, Apple Newsroom, 2017 | https://www.apple.com/newsroom/2017/09/the-future-is-here-iphone-x/ | 2026-11-25 | HIGH |
+| 2 | Neural engine A11 Bionic (iPhone X) dual-core, hingga 600 miliar operasi per detik, dipakai untuk Face ID | The future is here: iPhone X, Apple Newsroom, 2017 | https://www.apple.com/newsroom/2017/09/the-future-is-here-iphone-x/ | 2026-11-25 | HIGH |
+| 3 | Kamera TrueDepth mengambil peta kedalaman + gambar inframerah; neural engine di Secure Enclave mengubahnya jadi representasi matematis; data dienkripsi dengan kunci yang hanya tersedia bagi Secure Enclave; dirancang bekerja bahkan dalam gelap total | About Face ID advanced technology, Apple Support, (diakses 2026) | https://support.apple.com/en-us/102381 | 2026-11-25 | HIGH |
+| 4 | Peluang orang acak membuka perangkat dengan Face ID < 1 banding 1.000.000 (satu tampilan terdaftar); Touch ID < 1 banding 50.000; dengan dua tampilan Face ID hingga 1 banding 500.000 | Touch ID, Face ID, Optic ID, passcodes, and passwords — Apple Platform Security, Apple, (diakses 2026) | https://support.apple.com/guide/security/touch-id-face-id-passcodes-and-passwords-sec9479035f1/web | 2026-11-25 | HIGH |
+| 5 | Peluang menebak kode sandi 4 digit biasa: 1 banding 10.000 | About Touch ID advanced security technology, Apple Support, (diakses 2026) | https://support.apple.com/en-us/105095 | 2026-11-25 | HIGH |
+| 6 | Face ID hanya mengizinkan 5 kali gagal sebelum kode sandi diminta; kode sandi juga diminta bila perangkat tidak dibuka > 48 jam | About Face ID advanced technology, Apple Support, (diakses 2026) | https://support.apple.com/en-us/102381 | 2026-11-25 | HIGH |
+| 7 | Peluang salah cocok lebih tinggi untuk kembar dan saudara mirip, serta anak di bawah 13 tahun | About Face ID advanced technology, Apple Support, (diakses 2026) | https://support.apple.com/en-us/102381 | 2026-11-25 | HIGH |
+| 8 | Face ID mengecek perhatian (mata terbuka, menatap perangkat) dan memakai jaringan saraf untuk perhatian, pencocokan, dan anti-spoofing | Face ID and Touch ID security — Apple Platform Security, Apple, (diakses 2026) | https://support.apple.com/guide/security/face-id-and-touch-id-security-sec067eb0c9e/web | 2026-11-25 | HIGH |
+| 9 | Face ID diumumkan bersama iPhone X pada 12 September 2017 di Steve Jobs Theater; teknologinya berbasis PrimeSense (diakuisisi Apple 2013, dasar sensor Kinect) | Face ID, Wikipedia, 2026 | https://en.wikipedia.org/wiki/Face_ID | 2026-11-25 | MEDIUM |
+| 10 | Firma keamanan Vietnam Bkav mengklaim membuka Face ID dengan topeng (Nov 2017); pakar menilai bukan ancaman bagi pengguna biasa karena butuh pengukuran wajah detail | Hackers Claim to Break Face ID a Week After iPhone X Release, Andy Greenberg / WIRED, 2017 | https://www.wired.com/story/hackers-say-broke-face-id-security/ | 2026-11-25 | MEDIUM |

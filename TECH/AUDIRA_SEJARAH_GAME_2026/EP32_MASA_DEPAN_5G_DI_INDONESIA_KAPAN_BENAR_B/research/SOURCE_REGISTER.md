@@ -1,33 +1,19 @@
-# SOURCE_REGISTER — `Sejarah game yang viral dan jarang diketahui`
+# Source Register — Masa Depan 5G di Indonesia: Kapan Benar-Benar Merata?
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
+| 1 | Telkomsel menerima SKLO 5G dari Kominfo (diterbitkan 21 Mei 2021, diserahkan 24 Mei 2021); layanan 5G diluncurkan serentak 27 Mei 2021, terbatas di 6 lokasi residensial Jabodetabek + Solo, Medan, Balikpapan, Denpasar, Batam, Surabaya, Makassar, Bandung (9 kota/wilayah) | Telkomsel Resmi Jadi Operator Seluler Pertama yang Menggelar Jaringan 5G di Indonesia, Telkomsel (siaran pers), 2021 — arsip Wayback | https://web.archive.org/web/20230406074236/https://www.telkomsel.com//about-us/news/telkomsel-resmi-jadi-operator-seluler-pertama-yang-menggelar-jaringan-5g-di-indonesia | 2026-11-25 | HIGH |
+| 2 | Peluncuran 5G Telkomsel 27 Mei memakai alokasi 20 MHz di pita 2,3 GHz; Indonesia kekurangan spektrum; Fitch Ratings menilai kurangnya pita 700 MHz dan 3,5 GHz menunda peluncuran 5G penuh dua tahun; Menkominfo 2020: butuh ≥ 2.042 MHz untuk 4G+5G pada 2024, baru teralokasi < 800 MHz | Cautious start to 5G in spectrum-starved Indonesia, Robert Clark / Light Reading, 15 Juni 2021 | https://www.lightreading.com/asia/cautious-start-to-5g-in-spectrum-starved-indonesia/d/d-id/770175 | 2026-11-25 | HIGH |
+| 3 | Per 11 Maret 2025: Telkomsel sudah membangun total 2.200 BTS 5G di 56 kota dan kabupaten; ±1.400 di antaranya di Jabotabek; 5G baru berjalan berkelanjutan di Jakarta dan Bali | Telkomsel Rampung Gelar Jaringan 5G di Jabotabek, Depok Menyusul, CNN Indonesia, 12 Maret 2025 | https://www.cnnindonesia.com/teknologi/20250312124755-213-1207924/telkomsel-rampung-gelar-jaringan-5g-di-jabotabek-depok-menyusul | 2026-11-25 | HIGH |
+| 4 | Ookla Speedtest Q1–Q2 2025 (5G Indonesia): median unduh Telkomsel 88,03 Mbps, IM3 Ooredoo 60,97 Mbps, XL 41,08 Mbps; Speed Score Telkomsel 42,47 (tercepat) | 2025 Indonesia 5G Q1–Q2 Speedtest Award Report, Ookla, 2025 (PDF) | https://www.speedtest.net/awards/reports/2025/2025_Indonesia_5G_Q1Q2.pdf | 2026-11-25 | HIGH |
+| 5 | Lelang harga 7 Juli 2026 (pilih blok 8–10 Juli): 700 MHz — XLSmart 30 MHz (2x15) Rp35,34 miliar/MHz, Telkomsel 20 MHz (2x10), Indosat 20 MHz (2x10); 2,6 GHz — Telkomsel 80 MHz (Rp6,823 miliar/MHz), Indosat 60 MHz, XLSmart 50 MHz. Hasil belum final saat terbit (masa sanggah s.d. 14 Juli 2026) | Hasil Lelang Frekuensi, XLSmart Unggul di 700 MHz, Telkomsel di 2,6 GHz, Lely Maulida / Kompas.com, 11 Juli 2026 | https://tekno.kompas.com/read/2026/07/11/13580097/hasil-lelang-frekuensi-xlsmart-unggul-di-700-mhz-telkomsel-di-2-6-ghz | 2026-11-25 | HIGH |
+| 6 | Komitmen pemenang lelang 2026, dalam waktu paling lama lima tahun: 4G di ≥ 538 desa/kelurahan yang ditetapkan Komdigi, dan cakupan 5G minimal 51 persen populasi nasional pada kota dan kabupaten yang dikomitmenkan. Turunan naskah: 2026 + 5 tahun ≈ 2031 (perkiraan, bukan tanggal resmi) | Hasil Lelang Frekuensi, XLSmart Unggul di 700 MHz, Telkomsel di 2,6 GHz, Kompas.com, 11 Juli 2026 | https://tekno.kompas.com/read/2026/07/11/13580097/hasil-lelang-frekuensi-xlsmart-unggul-di-700-mhz-telkomsel-di-2-6-ghz | 2026-11-25 | HIGH |
+| 7 | Tabel alokasi spektrum 5G operator Indonesia (Telkomsel 80 MHz 2,6 GHz & 2x10 MHz 700 MHz per Juli 2026; Indosat 60 MHz 2,6 GHz; XLSmart 2x15 MHz 700 MHz); merujuk siaran pers Komdigi 10 Juli 2026 | List of 5G NR networks, Wikipedia (en), revisi Oktober 2026 | https://en.wikipedia.org/wiki/List_of_5G_NR_networks | 2026-11-25 | MEDIUM |
+| 8 | Jangkauan 5G masih terbatas di perkotaan/padat penduduk; peluncuran awal Telkomsel di Batam, Kelapa Gading, PIK, Pondok Indah, Widya Chandra, BSD, Alam Sutera | 5G, Wikipedia bahasa Indonesia, revisi September 2026 | https://id.wikipedia.org/wiki/5G | 2026-11-25 | MEDIUM |
+| 9 | Uji coba 5G Telkomsel di Asian Games 2018 (Jakarta, Palembang); uji 5G Batam 2019 mencapai 1.169 Mbps | Telkomsel, Wikipedia bahasa Indonesia, revisi November 2026 | https://id.wikipedia.org/wiki/Telkomsel | 2026-11-25 | MEDIUM |
 
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+## Catatan
+- Siaran pers resmi Komdigi (komdigi.go.id, 10 Juli 2026) menolak akses otomatis (HTTP 403); angka lelang diverifikasi lewat Kompas.com (#5, #6) dan dicek silang dengan tabel Wikipedia (#7). Cek ulang ke Komdigi saat tahap 2 produksi.
+- Angka kecepatan dan jumlah BTS cepat berubah: sebut "per Maret 2025" / "paruh pertama 2025" di layar.

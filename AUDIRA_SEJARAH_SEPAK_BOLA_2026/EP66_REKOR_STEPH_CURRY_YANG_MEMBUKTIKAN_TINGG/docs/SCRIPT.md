@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris` (`EP66`)
+# Naskah — Rekor Steph Curry yang Membuktikan Tinggi Badan Bukan Segalanya
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: siluet pemain bernomor 30 berdiri di samping penggaris tinggi raksasa; HUD "188 cm" menyala, lalu bola melambung dari jauh dan masuk ring.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Tingginya cuma 188 senti, tapi dia raja tembakan tiga angka sepanjang sejarah NBA. Ini kisahnya, di AUDIRA.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: lapangan SMA tahun 2006, timbangan menunjuk "160 lb"; surat beasiswa ditolak dengan stempel merah; HUD "2006".
 
-> <konteks singkat + "Di Audira, ...">
+> Tahun 2006, Stephen Curry lulus SMA dengan berat sekitar 160 pon. Terlalu kecil, kata para pemandu bakat. Virginia Tech, kampus ayahnya sendiri, tidak memberinya beasiswa.
 
-## c02 — <Judul Bab 1>
+## c02 — Davidson dan draf
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: aula kampus kecil, papan skor menghitung "162" tripoin; lalu panggung draf dengan kartu "#7 · 2009".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Dia akhirnya masuk Davidson, kampus kecil. Di sana dia memecahkan rekor NCAA: 162 tripoin dalam satu musim. Tahun 2009, Golden State Warriors memilihnya di urutan ketujuh.
 
-## c03 — <Judul Bab 2>
+## c03 — Musim 402
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: grafik batang tripoin per musim melonjak ke "402"; papan klasemen "73 menang"; badge "MVP bulat pertama".
 
-> <teks narasi>
+> Musim 2015–16 jadi ledakan. Curry memasukkan 402 tembakan tiga angka dalam satu musim, rekor. Timnya menang 73 kali, terbanyak sepanjang sejarah liga. Dan dia jadi MVP pertama yang dipilih secara bulat.
 
-## c04 — <Judul Bab 3>
+## c04 — Empat cincin
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: lemari trofi terbuka satu per satu, empat cincin berlabel 2015, 2017, 2018, 2022; HUD "2 MVP + 1 MVP Final".
 
-> <teks narasi>
+> Lalu datang trofi. Juara NBA tahun 2015, 2017, 2018, dan 2022. Empat cincin, ditambah dua gelar MVP musim reguler dan satu MVP Final.
 
-## c05 — <Judul Bab 4>
+## c05 — Rekor karier
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: arena malam hari, penghitung digital berputar ke "2.974" lalu garis Ray Allen terlewati; lompat ke "4.000" dengan tanggal "13 Mar 2025".
 
-> <teks narasi>
+> Empat belas Desember 2021, di Madison Square Garden, tripoin ke-2.974 melewati rekor Ray Allen. Maret 2025, dia jadi pemain pertama yang menembus 4.000 tripoin.
 
-## c06 — <Judul Bab 5>
+## c06 — Penjelasan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: diagram lapangan dari atas, busur tiga angka menyala; peta panas tembakan menyebar ke luar busur; HUD "8× pemimpin tripoin liga".
 
-> <teks narasi>
+> Kenapa bisa? Dia tidak menang lewat tinggi atau otot. Dia menang lewat akurasi. Delapan kali dia memimpin liga dalam jumlah tripoin, juga rekor. Tembakan jauhnya mengubah cara orang bermain basket.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: siluet 188 cm berdiri di depan dinding angka 402, 2.974, 4.000 yang menyala bersamaan; bola terakhir masuk; outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi, tinggi badan memang bisa membuka pintu. Tapi akurasi yang menentukan siapa yang masuk buku sejarah. Kamu tim tinggi badan, atau tim akurasi? Tulis di komentar.
+
+## Opsi hook lain
+
+1. Empat cincin, dua MVP, dan 402 tripoin dalam satu musim, dari pemain yang dulu ditolak karena terlalu kecil.
+2. Kampus ayahnya sendiri menolak memberinya beasiswa. Sekarang dia pemegang rekor tripoin terbanyak di NBA.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **202 kata** ≈ **81–90 dtk** @135–150 WPM

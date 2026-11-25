@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP30`)
+# Naskah — Microsoft Copilot vs Google Workspace AI: Mana Lebih Produktif?
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **21** · estimasi **9 dtk**
+- Visual: dua meja kantor berhadapan seperti ring tinju, laptop kiri berlabel "Copilot", kanan "Gemini"; jam dinding berputar cepat lalu panah grafik produktivitas mendatar. HUD: "Hemat waktu ≠ produktif?"
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Microsoft dan Google sama-sama jualan asisten AI buat kantor. Tapi pemerintah Inggris nemu hal aneh: hemat waktu, belum tentu makin produktif.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **9** · estimasi **4 dtk**
+- Visual: timbangan emas di tengah layar, satu sisi kartu "DATA", sisi lain kartu "IKLAN" yang terlempar keluar. Label HUD "ADU BUKTI".
 
-> <konteks singkat + "Di Audira, ...">
+> Kita adu dua raksasa ini pakai data, bukan iklan.
 
-## c02 — <Judul Bab 1>
+## c02 — Microsoft start duluan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **37** · estimasi **16 dtk**
+- Visual: lantai kantor korporat (open plan, partisi kaca), kalender raksasa membalik ke 16 MARET 2023; label harga melayang di atas laptop. HUD: "16 Mar 2023", "US$30 / orang / bulan", "GA 1 Nov 2023 · > 300 lisensi".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Microsoft start duluan. Enam belas Maret dua ribu dua puluh tiga, Microsoft 365 Copilot diumumkan. Harganya tiga puluh dolar per orang per bulan, dan waktu rilis November, cuma buat perusahaan yang beli di atas tiga ratus lisensi.
 
-## c03 — <Judul Bab 2>
+## c03 — Google mengejar
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: garis waktu horizontal berjalan; ikon generik surat, dokumen, kamera video menyala satu per satu (tanpa logo asli); papan nama "Duet AI" berganti jadi "Gemini". HUD: "Agu 2023 · Duet AI", "Feb 2024 · Gemini", "mulai US$20".
 
-> <teks narasi>
+> Google ngejar. Agustus dua ribu dua puluh tiga, Duet AI masuk Gmail, Docs, dan Meet. Februari dua ribu dua puluh empat, namanya diganti Gemini, mulai dua puluh dolar.
 
-## c04 — <Judul Bab 3>
+## c04 — Perang harga
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: tumpukan koin emas runtuh dari 32 jadi 14 di atas kasir; label harga dicoret. HUD: "Jan 2025", "US$32 → US$14" (Business Standard).
 
-> <teks narasi>
+> Lalu Google main harga. Januari dua ribu dua puluh lima, Gemini dibundel ke paket Workspace. Yang dulu bayar tiga puluh dua dolar, sekarang cukup empat belas.
 
-## c05 — <Judul Bab 4>
+## c05 — Uji coba 20.000 pegawai
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: gedung kantor pemerintahan generik, kamera mundur memperlihatkan barisan meja yang terisi (karakter tanpa wajah nyata); jam dinding berputar mundur 26 menit. HUD: "20.000 pegawai · 12 organisasi", "−26 menit/hari", "82%".
 
-> <teks narasi>
+> Tapi apa beneran bikin produktif? Pemerintah Inggris nguji Copilot ke dua puluh ribu pegawai. Rata-rata hemat dua puluh enam menit sehari, dan delapan puluh dua persen nggak mau balik.
 
-## c06 — <Judul Bab 5>
+## c06 — Hemat waktu bukan produktif
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: split screen ceklist — kiri hijau (ringkasan, draf surat), kanan merah (slide berantakan, kalender rapat bentrok); grafik produktivitas tetap datar. HUD: "1.000 lisensi", "Bukti produktivitas naik: TIDAK DITEMUKAN".
 
-> <teks narasi>
+> Masalahnya, kementerian lain yang nguji seribu lisensi nggak nemu bukti produktivitas naik. AI-nya jago meringkas dan bikin draf, tapi lemah bikin slide dan jadwal rapat.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: dua meja dari hook bergeser jadi dua jalur: jalur "Outlook + Teams" ke Copilot, jalur "Gmail + Docs" ke Gemini; karakter pekerja memilih jalurnya sendiri; ditutup outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi pemenangnya bukan merek. Kantormu hidup di Outlook dan Teams? Copilot. Di Gmail dan Docs? Gemini. Sisanya tergantung cara kamu pakai. Ikuti AUDIRA buat adu teknologi berikutnya.
+
+## Opsi hook lain
+
+1. Dua puluh ribu pegawai negeri dikasih AI kantor. Hasilnya bikin Microsoft dan Google sama-sama kikuk.
+2. Tiga puluh dua dolar jadi empat belas dolar dalam semalam. Itu cara Google melawan Copilot.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **202 kata** ≈ **81–90 dtk**

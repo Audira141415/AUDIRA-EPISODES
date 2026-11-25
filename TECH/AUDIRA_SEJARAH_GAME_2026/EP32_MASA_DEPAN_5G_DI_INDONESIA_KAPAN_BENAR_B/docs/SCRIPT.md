@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP32`)
+# Naskah — Masa Depan 5G di Indonesia: Kapan Benar-Benar Merata?
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: Layar HP close-up, ikon "5G" menyala di status bar, video di layar macet dengan ikon loading berputar. Teks kinetik "5G … tapi muter?" menghentak di tengah.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Logo 5G di HP kamu nyala, tapi videonya masih muter-muter. Kenapa? Di AUDIRA, kita bedah.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Kalender sobek berhenti di 27 Mei 2021, lalu peta Indonesia dengan sembilan titik kota menyala kecil (Jabodetabek, Batam, Medan, Surabaya, dll.). HUD: "27 MEI 2021 · 9 KOTA".
 
-> <konteks singkat + "Di Audira, ...">
+> 5G resmi masuk Indonesia tanggal 27 Mei 2021. Telkomsel duluan, di sembilan kota, itu pun cuma di titik-titik tertentu.
 
-## c02 — <Judul Bab 1>
+## c02 — Spektrum sempit
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **34** · estimasi **14 dtk**
+- Visual: Metafora jalan tol data: jalur 5G yang sempit (label "20 MHz · 2,3 GHz") dijejali mobil-paket data, macet. Callout kanan: "Fitch: 700 MHz + 3,5 GHz kurang → mundur 2 tahun".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Masalah pertama: jalan tol datanya sempit. Peluncuran awal cuma pakai 20 MHz di pita 2,3 GHz. Fitch Ratings waktu itu menilai kurangnya pita 700 MHz dan 3,5 GHz bikin 5G penuh mundur dua tahun.
 
-## c03 — <Judul Bab 2>
+## c03 — Menara masih sedikit
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Peta Indonesia gelap, menara BTS 5G tumbuh satu per satu; counter HUD naik ke "2.200 BTS · 56 KOTA/KAB". Hanya Jakarta dan Bali yang menyala penuh (glow), sisanya titik redup.
 
-> <teks narasi>
+> Masalah kedua: menaranya masih sedikit. Maret 2025, Telkomsel punya sekitar 2.200 BTS 5G di 56 kota dan kabupaten. Yang jalan berkelanjutan baru Jakarta dan Bali.
 
-## c04 — <Judul Bab 3>
+## c04 — Bukan 5G-nya yang lambat
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: Speedometer besar berputar ke "88 Mbps" (label "median unduh 5G Telkomsel · Ookla H1 2025"). Lalu HP berjalan keluar dari lingkaran sinyal 5G, ikon status bar turun dari 5G ke 4G, jarum speedometer jatuh.
 
-> <teks narasi>
+> Padahal kalau dapat sinyalnya, kencangnya lumayan. Data Ookla paruh pertama 2025, median unduh 5G Telkomsel 88 Mbps. Jadi yang bikin lambat bukan 5G-nya, tapi HP kamu sering lompat balik ke 4G.
 
-## c05 — <Judul Bab 4>
+## c05 — Lelang Juli 2026
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Palu lelang mengetuk; dua balok spektrum turun ke meja: "700 MHz" (lebar, gelombang panjang menjangkau jauh) dan "2,6 GHz" (gelombang rapat). Kartu HUD: "Telkomsel · 80 MHz @ 2,6 GHz" dan "XLSmart · 2x15 MHz @ 700 MHz". Tanpa logo operator, nama dalam teks polos.
 
-> <teks narasi>
+> Juli 2026, pemerintah akhirnya melelang pita 700 MHz dan 2,6 GHz. Telkomsel dapat 80 MHz di 2,6 GHz. XLSmart menang di 700 MHz, pita yang sinyalnya bisa menjangkau jauh.
 
-## c06 — <Judul Bab 5>
+## c06 — Syarat pemenang
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **22** · estimasi **9 dtk**
+- Visual: Dokumen komitmen terbuka; progress bar populasi mengisi sampai "51%"; jam pasir dengan label "≤ 5 TAHUN". Ikon desa kecil "538 desa · 4G" muncul di pojok.
 
-> <teks narasi>
+> Syaratnya, dalam paling lama lima tahun, pemenang wajib membawa 5G ke minimal 51 persen populasi di kota dan kabupaten yang mereka komitmenkan.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **23** · estimasi **10 dtk**
+- Visual: Timeline horizontal 2021 → 2026 → "± 2031", peta Indonesia menyala separuh lebih, sisanya masih redup; kamera mundur ke hero shot peta. Outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Jadi kapan merata? Kalau komitmen ini jalan, sekitar 2031 baru separuh lebih warga kebagian. Sisanya masih harus nunggu. Follow buat bedah teknologi berikutnya.
+
+## Opsi hook lain
+
+1. 5G sudah lima tahun di Indonesia, tapi kenapa HP kamu masih sering balik ke 4G?
+2. Kecepatan 5G kita sebenarnya 88 Mbps. Masalahnya, sinyalnya jarang ketemu.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **198 kata** ≈ **79–88 dtk** @135–150 WPM

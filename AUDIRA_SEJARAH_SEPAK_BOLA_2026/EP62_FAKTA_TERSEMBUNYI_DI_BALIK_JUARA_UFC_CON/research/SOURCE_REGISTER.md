@@ -1,33 +1,17 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Fakta Tersembunyi di Balik Juara UFC Conor McGregor
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
+| 1 | Jose Aldo vs McGregor (UFC 194, Des 2015) berlangsung 13 detik; Aldo hampir satu dekade tak kalah di laga pro; finis tercepat dalam laga perebutan gelar UFC | By The Numbers - Fastest Finishes in Title Fights, UFC.com, 2018 | https://www.ufc.com/news/numbers-fastest-finishes-title-fights | 2026-11-25 | HIGH |
+| 2 | UFC 205 (12 Nov 2016, Madison Square Garden): McGregor KO Eddie Alvarez ronde 2, orang pertama di UFC yang memegang dua sabuk sekaligus | Conor McGregor makes history with second-round KO of Eddie Alvarez at UFC 205, Kevin Iole / Yahoo Sports, 2016 | https://sports.yahoo.com/conor-mcgregor-makes-history-with-second-round-ko-of-eddie-alvarez-at-ufc-205-064440860.html | 2026-11-25 | HIGH |
+| 3 | 22 Nov 2024: juri pengadilan perdata (High Court) Dublin memutus McGregor menyerang Nikita Hand di hotel Dublin, Des 2018; ganti rugi lebih dari €248.000 | Conor McGregor: Nikita Hand wins civil case against MMA star, BBC News, 2024 | https://www.bbc.co.uk/news/articles/clyrxl00151o | 2026-11-25 | HIGH |
+| 4 | Forbes 2021: McGregor atlet berpenghasilan tertinggi dunia, $180 juta (pertama kali); 2018 peringkat 4 dengan $99 juta | Conor McGregor Tops Forbes' Top 10 List Of The World's Highest-Paid Athletes For The First-Time Ever, Forbes PR, 2021 (diverifikasi via Wikipedia; akses langsung 403) | https://www.forbes.com/sites/forbespr/2021/05/12/conor-mcgregor-tops-forbes-top-10-list-of-the-worlds-highest-paid-athletes-for-the-first-time-ever/ | 2026-11-25 | HIGH |
+| 5 | Mayweather vs McGregor (26 Ags 2017): bayaran terjamin Mayweather $100 juta, McGregor $30 juta (Nevada State Athletic Commission); McGregor kalah TKO ronde 10 | Floyd guaranteed $100M, Conor at least $30M, Dan Rafael / ESPN, 2017 (diverifikasi via Wikipedia) | http://www.espn.com/boxing/story/_/id/20461204/floyd-mayweather-guaranteed-100-million-purse-conor-mcgregor-get-30-million | 2026-11-25 | MEDIUM |
+| 6 | Debut UFC 6 Apr 2013 (UFC on Fuel TV 9) vs Marcus Brimage: menang TKO ronde 1, 1:07; bonus Knockout of the Night $60.000 | UFC on FUEL TV 9 bonuses: McGregor, Madadi, Pickett, Easton win $60,000, MMAjunkie Staff, 2013 (diverifikasi via Wikipedia "UFC on Fuel TV: Mousasi vs. Latifi") | http://www.mmajunkie.com/news/2013/04/ufc-on-fuel-tv-9-bonuses-mcgregor-madadi-pickett-easton-win-60000 | 2026-11-25 | MEDIUM |
+| 7 | UFC 202 (Ags 2016): bayaran terungkap McGregor $3.000.000, rekor bayaran pertarungan UFC saat itu | Full UFC 202 salaries: McGregor, Diaz get $5 million of $6.1 million total payout, MMAjunkie Staff, 2016 (diverifikasi via Wikipedia "UFC 202") | http://mmajunkie.com/2016/08/full-ufc-202-salaries-mcgregor-diaz-get-5-million-of-6-1-million-total-payout | 2026-11-25 | MEDIUM |
+| 8 | Atas dorongan orang tua, McGregor magang tukang ledeng setahun dan menganggapnya berat dan membosankan; 2008 mulai berlatih di Straight Blast Gym Dublin di bawah John Kavanagh | Conor McGregor, Wikipedia (mengutip Irish Independent, 18 Mei 2015) | https://en.wikipedia.org/wiki/Conor_McGregor | 2026-11-25 | MEDIUM |
+| 9 | Apr 2021: McGregor dan mitra menjual saham mayoritas Proper No. Twelve ke Proximo Spirits, kesepakatan dilaporkan hingga $600 juta; Nov 2024 Proximo berhenti memakai nama McGregor | Barrels of cash: Conor sells whiskey for $600M, ESPN, 2021 (diverifikasi via Wikipedia) | https://www.espn.co.uk/mma/story/_/id/31346618/conor-mcgregor-sells-majority-whiskey-brand-proper-no-twelve-600m | 2026-11-25 | MEDIUM |
 
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+Catatan: #1, #2, #3 dibaca langsung (HTTP 200). #4–#9 diverifikasi lewat teks Wikipedia yang mengutip sumber tersebut; akses langsung diblokir (403/202) saat riset. Baca ulang #4 dan #7 langsung sebelum VO dikunci.

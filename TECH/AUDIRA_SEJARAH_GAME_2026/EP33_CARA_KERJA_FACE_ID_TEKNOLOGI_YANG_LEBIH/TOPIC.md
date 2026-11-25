@@ -5,7 +5,11 @@ title: "Cara Kerja Face ID: Teknologi yang Lebih Aman dari Password"
 hook: "30.000 titik inframerah yang mengenal wajahmu dalam gelap"
 styleCandidates: ["NANOFORGE (3D)", "PRECISION (2D)", "INNERWORKS (3D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Judul 'lebih aman dari password' terlalu mutlak (Apple hanya bandingkan dengan PIN 4 digit); angka 30.000 titik dari rilis iPhone X 2017; jangan tampilkan logo Apple."
 ---
 
 # Cara Kerja Face ID: Teknologi yang Lebih Aman dari Password
