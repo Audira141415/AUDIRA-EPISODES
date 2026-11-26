@@ -1,0 +1,27 @@
+---
+channel: TECH
+topicNo: "024"
+title: "React useEffect: Panduan untuk Berhenti Bikin Memory Leak"
+hook: "Komponen yang unmount tapi masih update state itu mimpi buruk"
+styleCandidates: ["CIRCUITFORGE (2D)", "DEVFORGE (2D)", "CYBERFORGE (2D)"]
+source: channel-topics/audira-dev/topics.md
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Hook asli kurang akurat sejak React 18 (setState setelah unmount = no-op), naskah sudah dikoreksi; logo React/browser tidak boleh tampil (rule 15)."
+---
+
+# React useEffect: Panduan untuk Berhenti Bikin Memory Leak
+
+- **Channel:** TECH · topik #024
+- **Hook awal:** Komponen yang unmount tapi masih update state itu mimpi buruk
+- **Kandidat style (dari daftar topik, belum final):** CIRCUITFORGE (2D), DEVFORGE (2D), CYBERFORGE (2D)
+
+Folder benih. Belum ada riset, naskah, atau STATUS.json.
+
+## Cara mulai produksi (sesi A)
+1. Pindahkan folder ini ke folder seri yang sedang dikerjakan di root `F:\AUDIRA-EPISODES\`, beri nama `EPxx_<SLUG>`.
+2. Jalankan `audira_episode_status` `action: "init"` di folder itu, lalu ikuti pipeline tahap 0.
+3. Style final dipilih di tahap 3 dari skor motion memory; kandidat di atas hanya titik awal.
+4. Setelah final, tandai baris #024 di `channel-topics/audira-dev/topics.md` dengan `[x] <SERI>/EPxx`.

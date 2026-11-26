@@ -1,0 +1,27 @@
+---
+channel: TECH
+topicNo: "015"
+title: "Cara Deploy ke VPS Tanpa Panik: Panduan Lengkap Nginx + SSL"
+hook: "Dari zero sampai production dalam satu video"
+styleCandidates: ["DEVFORGE (2D)", "PRECISION (2D)", "CERDIK (2D)"]
+source: channel-topics/audira-dev/topics.md
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 3
+awet: ya
+risiko: "Judul 'panduan lengkap' berlebihan untuk 85 dtk; angka 45 hari/2028 dan ambang Certbot perlu dicek ulang; logo Nginx/Let's Encrypt dilarang (rule 15)"
+---
+
+# Cara Deploy ke VPS Tanpa Panik: Panduan Lengkap Nginx + SSL
+
+- **Channel:** TECH · topik #015
+- **Hook awal:** Dari zero sampai production dalam satu video
+- **Kandidat style (dari daftar topik, belum final):** DEVFORGE (2D), PRECISION (2D), CERDIK (2D)
+
+Folder benih. Belum ada riset, naskah, atau STATUS.json.
+
+## Cara mulai produksi (sesi A)
+1. Pindahkan folder ini ke folder seri yang sedang dikerjakan di root `F:\AUDIRA-EPISODES\`, beri nama `EPxx_<SLUG>`.
+2. Jalankan `audira_episode_status` `action: "init"` di folder itu, lalu ikuti pipeline tahap 0.
+3. Style final dipilih di tahap 3 dari skor motion memory; kandidat di atas hanya titik awal.
+4. Setelah final, tandai baris #015 di `channel-topics/audira-dev/topics.md` dengan `[x] <SERI>/EPxx`.
