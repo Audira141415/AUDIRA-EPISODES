@@ -5,7 +5,11 @@ title: "Cara Kerja Sinyal Kereta Api: Kenapa Kereta Tidak Bertabrakan"
 hook: "Rel dibagi menjadi blok-blok, dan hanya satu kereta boleh ada di tiap blok"
 styleCandidates: ["URBANFORGE (3D)", "DATAPHYSICAL (2D)", "PRECISION (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # prinsip blok, deteksi, dan interlocking awet; contoh CBTC bisa berubah
+risiko: "Hook dikoreksi (satu kereta per blok hanya fixed block kondisi normal; moving block/CBTC tanpa blok tetap); judul menjanjikan kereta tidak bertabrakan padahal tabrakan masih terjadi; jarak pengereman dan CBTC LRT Jabodebek baru dari Wikipedia; rule 15: tanpa logo KAI/LRT/Kemenhub, tanpa kecelakaan tertentu."
 ---
 
 # Cara Kerja Sinyal Kereta Api: Kenapa Kereta Tidak Bertabrakan

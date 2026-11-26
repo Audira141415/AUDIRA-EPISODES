@@ -5,7 +5,11 @@ title: "Kenapa Kereta Tidak Bisa Mengerem Mendadak"
 hook: "Kereta yang melaju bisa butuh ratusan meter untuk benar-benar berhenti"
 styleCandidates: ["SCALEFORGE (3D)", "DATAPHYSICAL (2D)", "URBANFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # fisika pengereman dan pasal UU awet; data kecelakaan KAI cepat basi
+risiko: "Hook asli (ratusan meter) meremehkan, dikoreksi jadi lebih dari satu kilometer; angka 800–1.200 m dari rilis KAI (bukan dokumen teknis DJKA), angka >1,6 km dari Operation Lifesaver AS; rule 15: tanpa logo KAI, tanpa kecelakaan spesifik, pesan keselamatan wajib."
 ---
 
 # Kenapa Kereta Tidak Bisa Mengerem Mendadak

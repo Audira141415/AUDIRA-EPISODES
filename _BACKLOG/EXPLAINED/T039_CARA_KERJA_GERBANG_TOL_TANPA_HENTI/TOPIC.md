@@ -5,7 +5,11 @@ title: "Cara Kerja Gerbang Tol Tanpa Henti"
 hook: "Kartu di dasbor dibaca gelombang radio saat mobilmu masih melaju"
 styleCandidates: ["URBANFORGE (3D)", "CIRCUITFORGE (2D)", "DATAPHYSICAL (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: tidak   # cara kerja radio/kamera/satelit awet; status MLFF Indonesia cepat basi
+risiko: "Hook asli tidak akurat untuk Indonesia (kartu di dasbor = sistem Singapura), sudah dikoreksi; status MLFF berpolemik dan cepat berubah, cek berita terbaru; rule 15: jangan sebut badan usaha pelaksana, aplikasi, atau merek kartu."
 ---
 
 # Cara Kerja Gerbang Tol Tanpa Henti

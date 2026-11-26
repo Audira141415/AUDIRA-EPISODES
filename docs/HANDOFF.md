@@ -4,7 +4,7 @@
 - Cara: batch 6 topik, 1 subagen general-purpose per topik, spec `F:/AUDIRA-ALL-SKILL/scripts/backlog-tools/PILOT_SPEC.md`
   (tanggal = hari ini, rule 15 EXPLAINED), cek `node F:/AUDIRA-ALL-SKILL/scripts/backlog-tools/verify-eps.mjs <folder...>`,
   lalu commit repo episode `feat(backlog): riset EXPLAINED batch N (T..)` + push.
-- Progres: batch 1 = T001–T006: SELESAI, 6/6 OK, commit b5a1baf1. Batch 2 = T007–T012: SELESAI, 6/6 OK, commit dde22419. Batch 3 = T013–T018: SELESAI, 6/6 OK, commit a4068c80. Batch 4 = T019–T024: SELESAI, 6/6 OK, commit b409670d. Batch 5 = T025–T030: SELESAI, 6/6 OK, commit a2694336. Batch 6 = T031–T036: SELESAI, 6/6 OK. Batch 1–6 sudah di origin. Batch 7 = T037–T042.
+- Progres: batch 1 = T001–T006: SELESAI, 6/6 OK, commit b5a1baf1. Batch 2 = T007–T012: SELESAI, 6/6 OK, commit dde22419. Batch 3 = T013–T018: SELESAI, 6/6 OK, commit a4068c80. Batch 4 = T019–T024: SELESAI, 6/6 OK, commit b409670d. Batch 5 = T025–T030: SELESAI, 6/6 OK, commit a2694336. Batch 6 = T031–T036: SELESAI, 6/6 OK, commit 6c91d788. Batch 7 = T037–T042: SELESAI, 6/6 OK. Batch 1–7 sudah di origin. Batch 8 = T043–T048.
 - Catatan agen: WebSearch/WebFetch error (model haiku tidak tersedia) -> agen pakai curl ke halaman asli/Bing/Wikipedia API; tulis itu di brief.
 - Cek ulang sebelum produksi: T002 BI-Rate 6,00% (per 18 Nov 2026), T003 JISDOR + puncak 1998 (baru Wikipedia), T005 MDR/pengguna QRIS, T001 inflasi per Sep 2026.
   Batch 2: T007 "maks 100 lembar/setor" (1 bank), aturan BI uang dicek mesin sebelum masuk ATM belum ketemu;
@@ -37,6 +37,12 @@
   T034 "≈4 °C terasa lebih sejuk" hanya pada 27 °C/RH 50%/1 m/s (HUD wajib "terasa"), ambang suhu kipas beda antar sumber (tidak di VO), panas motor baru Wikipedia;
   T035 >150 m/dtk dari unit bermerek di studi, 540 km/jam konversi sendiri, 40 dtk & 10 dtk=90% dari tinjauan 2012, 17 dtk hanya pria; debat higiene didanai industri (sajikan netral);
   T036 tahun 1974 & inspirasi Morse baru Wikipedia, jangan tulis "barcode tak pernah memuat harga" (barang timbang toko), jangan tampilkan 13 digit 899 lengkap.
+  Batch 7: T037 urutan 6 lapisan baru dari produsen, "10x lebih tipis dari rambut" pembulatan (sumber 8–18x), suhu/waktu UHT beda antar sumber, BPOM/Codex UHT belum terbuka;
+  T038 12D "1 banding 1 triliun" disederhanakan, 121 °C (acuan 121,1), pH 4,6, Appert "1810" = tahun publikasi; regulasi semua FDA (jangan tulis "aturan Indonesia");
+  T039 status MLFF setelah 27 Sep 2026 (dipakai di VO c06), ERP Singapura "1998" + klaim alat dasbor dihapus akhir 2026 (GNSS) baru Wikipedia/LTA, 5,8 GHz baru Wikipedia;
+  T040 "20 kV AC dari PLN" 1 studi lintas Bogor, IEC 60850 1.000–1.800 V via Wikipedia, rel jalur balik tanpa dokumen KAI, data pelanggan per Jul 2026;
+  T041 800–1.200 m hanya rilis KAI (cari dok DJKA), >1,6 km & 6.000 t = kereta barang AS (label HUD), "lebih dari 20x" hitungan sendiri beda kecepatan;
+  T042 PM 44/2018 masih berlaku?, LRT Jabodebek CBTC GoA3 & gagal-aman track circuit baru Wikipedia, jarak pengereman samakan dgn T041, judul saran "Cara Sinyal Mencegah Kereta Bertabrakan".
 - Lanjut: Lanjut dari topik pertama yang TOPIC.md-nya masih `stage: backlog`:
   `grep -L "stage: drafted" _BACKLOG/EXPLAINED/*/TOPIC.md | head -6`.
 

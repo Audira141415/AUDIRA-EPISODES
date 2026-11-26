@@ -5,7 +5,11 @@ title: "Cara Kerja KRL: Kereta yang Ditenagai Kabel di Atasnya"
 hook: "Lengan di atap kereta menyentuh kabel bertegangan ribuan volt sepanjang perjalanan"
 styleCandidates: ["URBANFORGE (3D)", "INNERWORKS (3D)", "BUILDFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # mekanisme LAA/pantograf awet; data pelanggan dan rencana elektrifikasi cepat basi
+risiko: "Hook asli (ribuan volt) dikoreksi jadi 1.500 V DC eksak; 20 kV AC dari studi satu lintas; media pernah salah tulis 3.000/4.000 volt; pesan keselamatan wajib tanpa instruksi berbahaya; rule 15: tanpa logo/livery KAI/PLN."
 ---
 
 # Cara Kerja KRL: Kereta yang Ditenagai Kabel di Atasnya

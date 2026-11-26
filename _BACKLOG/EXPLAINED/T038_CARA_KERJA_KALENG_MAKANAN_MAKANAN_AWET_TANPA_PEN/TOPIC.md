@@ -5,7 +5,11 @@ title: "Cara Kerja Kaleng Makanan: Makanan Awet Tanpa Pengawet"
 hook: "Kaleng dipanaskan setelah ditutup rapat — kunci yang ditemukan dua abad lalu"
 styleCandidates: ["BONGKAR (2D)", "INNERWORKS (3D)", "CHRONICLE (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # sains pengalengan dan sejarah 1810 tidak basi
+risiko: "Hook dikoreksi: Appert (1810) pakai botol kaca, kaleng timah lewat paten Durand 1810; 'tanpa pengawet' tidak mutlak; frasa 12D '1 banding 1 triliun' disederhanakan, cek ulang; regulasi BPOM belum terverifikasi; wajib pesan keselamatan botulisme tanpa instruksi pengalengan rumahan."
 ---
 
 # Cara Kerja Kaleng Makanan: Makanan Awet Tanpa Pengawet

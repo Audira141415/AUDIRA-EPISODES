@@ -5,7 +5,11 @@ title: "Kenapa Kemasan Susu Kotak Bisa Tahan Berbulan-bulan Tanpa Kulkas"
 hook: "Kotak susu itu punya enam lapisan, salah satunya aluminium setipis rambut"
 styleCandidates: ["BONGKAR (2D)", "NANOFORGE (3D)", "INNERWORKS (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # proses UHT + aseptik dan struktur kemasan awet; komposisi lapisan bisa berubah (penghalang berbasis kertas sedang dikembangkan)
+risiko: "Hook asli (aluminium setipis rambut) meremehkan, dikoreksi jadi kira-kira sepuluh kali lebih tipis (6,5 µm vs 60–120 µm); premis awet karena kemasan dikoreksi jadi UHT + aseptik + kemasan; urutan enam lapisan hanya dari produsen; rule 15: tanpa merek kemasan dan merek susu."
 ---
 
 # Kenapa Kemasan Susu Kotak Bisa Tahan Berbulan-bulan Tanpa Kulkas
