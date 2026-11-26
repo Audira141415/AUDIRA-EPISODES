@@ -5,7 +5,11 @@ title: "Cara Kerja Polisi Tidur: Desain yang Diperhitungkan"
 hook: "Tinggi dan lebar polisi tidur ternyata punya hitungan supaya aman dilewati"
 styleCandidates: ["URBANFORGE (3D)", "PRECISION (2D)", "BONGKAR (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme awet; angka ukuran bisa berubah bila Dirjen Hubdat menerbitkan spesifikasi baru
+risiko: "Hook dilebihkan sedikit (bukan cuma tinggi-lebar, dan aman hanya bila pelan), dikoreksi; angka ukuran dari PM 14/2021 yang sudah dicabut PM 48/2023 (spesifikasi kini ditetapkan Dirjen, dokumen belum ditemukan); rule 15: tanpa logo Kemenhub/Dishub, netral soal polisi tidur buatan warga."
 ---
 
 # Cara Kerja Polisi Tidur: Desain yang Diperhitungkan

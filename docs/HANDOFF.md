@@ -4,7 +4,8 @@
 - Cara: batch 6 topik, 1 subagen general-purpose per topik, spec `F:/AUDIRA-ALL-SKILL/scripts/backlog-tools/PILOT_SPEC.md`
   (tanggal = hari ini, rule 15 EXPLAINED), cek `node F:/AUDIRA-ALL-SKILL/scripts/backlog-tools/verify-eps.mjs <folder...>`,
   lalu commit repo episode `feat(backlog): riset EXPLAINED batch N (T..)` + push.
-- Progres: batch 1 = T001–T006: SELESAI, 6/6 OK, commit b5a1baf1. Batch 2 = T007–T012: SELESAI, 6/6 OK, commit dde22419. Batch 3 = T013–T018: SELESAI, 6/6 OK, commit a4068c80. Batch 4 = T019–T024: SELESAI, 6/6 OK, commit b409670d. Batch 5 = T025–T030: SELESAI, 6/6 OK, commit a2694336. Batch 6 = T031–T036: SELESAI, 6/6 OK, commit 6c91d788. Batch 7 = T037–T042: SELESAI, 6/6 OK. Batch 1–7 sudah di origin. Batch 8 = T043–T048.
+- Progres: batch 1 = T001–T006: SELESAI, 6/6 OK, commit b5a1baf1. Batch 2 = T007–T012: SELESAI, 6/6 OK, commit dde22419. Batch 3 = T013–T018: SELESAI, 6/6 OK, commit a4068c80. Batch 4 = T019–T024: SELESAI, 6/6 OK, commit b409670d. Batch 5 = T025–T030: SELESAI, 6/6 OK, commit a2694336. Batch 6 = T031–T036: SELESAI, 6/6 OK, commit 6c91d788. Batch 7 = T037–T042: SELESAI, 6/6 OK, commit 40bdc7b8. Batch 1–7 sudah di origin.
+  Batch 8 = T043–T048: SELESAI, 6/6 OK, di-commit + push. Batch 9 = T049–T054.
 - Catatan agen: WebSearch/WebFetch error (model haiku tidak tersedia) -> agen pakai curl ke halaman asli/Bing/Wikipedia API; tulis itu di brief.
 - Cek ulang sebelum produksi: T002 BI-Rate 6,00% (per 18 Nov 2026), T003 JISDOR + puncak 1998 (baru Wikipedia), T005 MDR/pengguna QRIS, T001 inflasi per Sep 2026.
   Batch 2: T007 "maks 100 lembar/setor" (1 bank), aturan BI uang dicek mesin sebelum masuk ATM belum ketemu;
@@ -43,6 +44,12 @@
   T040 "20 kV AC dari PLN" 1 studi lintas Bogor, IEC 60850 1.000–1.800 V via Wikipedia, rel jalur balik tanpa dokumen KAI, data pelanggan per Jul 2026;
   T041 800–1.200 m hanya rilis KAI (cari dok DJKA), >1,6 km & 6.000 t = kereta barang AS (label HUD), "lebih dari 20x" hitungan sendiri beda kecepatan;
   T042 PM 44/2018 masih berlaku?, LRT Jabodebek CBTC GoA3 & gagal-aman track circuit baru Wikipedia, jarak pengereman samakan dgn T041, judul saran "Cara Sinyal Mencegah Kereta Bertabrakan".
+  Batch 8: T043 3.674 perlintasan sebidang (KAI per Mei/Okt 2026 via ANTARA, cari data DJKA), "4–7 dtk" hanya palang ≤7,5 m (9 m: 9–13 dtk), 1–1,5 km & 3 menit "atau sesuai desain"; hook dikoreksi: palang berpenjaga tetap ditutup petugas, kabar dari stasiun + sensor.
+  T045 (OK src=9 high=7 kata=201): insiden ±25% penyebab macet = data AS 2005, BBM hemat "hingga 40%" (22–42,5%, lintasan 260 m), kepadatan kritis 25 kend/km 1 titik tol Jepang, aturan 2–3 dtk baru Wikipedia (cari Korlantas/Kemenhub), ">2 km" hitungan sendiri; hook: satu rem saja tak cukup, perlu kepadatan di atas ambang.
+  T048 (OK src=10 high=6 kata=208): PM 82/2018 dicabut PM 48/2023 (berlaku 13 Okt 2023, tanpa angka; ukuran oleh Dirjen Hubdat Psl 13(3), belum ketemu) → angka naskah dari PM 14/2021 ("aturan 2021"), ganti bila ada aturan Dirjen baru; "12 cm" populer tidak dipakai; cek UU 6/2023 ubah pidana UU 22/2009; efektivitas FHWA/ITE 33–48% studi AS tidak di VO.
+  T047 (OK src=14 high=6 kata=206): "×16" hitungan sendiri dari aturan pangkat empat (sumber baru MEDIUM, laporan AASHO belum dibuka), tahun 1956–1960 baru Wikipedia, SU 2018 Rev 2 sudah diganti SU 2025; hook: truk berat + air bekerja bersama, bukan salah satu.
+  T046 (OK src=15 high=7 kata=202): judul "ribuan ton" berlebihan → usul "Ratusan Ton per Bentang di Atas Tiang Ramping" (1 bentang ±40 m = 520,73 t dari prosiding mahasiswa PNJ, MEDIUM, cari HIGH; 40 m disimpulkan), −60% gaya gempa contoh spektrum AASHTO, kedalaman tiang "puluhan meter" data FHWA AS, cek versi SNI terbaru; gaya gempa ditanggung bantalan/isolator, SNI 2833 target "tidak runtuh".
+  T044 (OK src=17 high=7 kata=203): klaim operator "penuh ≤2 jam" vs hitungan 350 kWh/120 kW ≈2,9 jam (naskah "beberapa jam"), "80% dalam 15 menit" pantograf = 1 armada Turki (label), rute kota ±200 km/hari baru Wikipedia, "500 bus per Okt 2026" cepat basi, pantograf di Jakarta belum terbukti (visual c06 generik), baterai "sebagian di atap".
 - Lanjut: Lanjut dari topik pertama yang TOPIC.md-nya masih `stage: backlog`:
   `grep -L "stage: drafted" _BACKLOG/EXPLAINED/*/TOPIC.md | head -6`.
 

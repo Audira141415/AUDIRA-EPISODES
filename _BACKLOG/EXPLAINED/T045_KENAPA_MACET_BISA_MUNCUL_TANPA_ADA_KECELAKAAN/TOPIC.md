@@ -5,7 +5,11 @@ title: "Kenapa Macet Bisa Muncul Tanpa Ada Kecelakaan"
 hook: "Satu pengemudi menginjak rem bisa menciptakan gelombang macet sejauh kilometer"
 styleCandidates: ["URBANFORGE (3D)", "CHAINREACTION (2D)", "DATAPHYSICAL (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 5
+awet: ya   # fisika gelombang macet awet; data FHWA 2005 dan hasil eksperimen tetap valid sebagai riset
+risiko: "Hook asli (satu rem = macet sejauh kilometer) dilebihkan: butuh kepadatan di atas ambang kritis, jarak km hanya hitungan ilustrasi 15–20 km/jam × 10 menit; data penyebab macet dari AS 2005, bukan Indonesia; rule 15: mobil tanpa merek, tidak menyalahkan daerah/operator."
 ---
 
 # Kenapa Macet Bisa Muncul Tanpa Ada Kecelakaan

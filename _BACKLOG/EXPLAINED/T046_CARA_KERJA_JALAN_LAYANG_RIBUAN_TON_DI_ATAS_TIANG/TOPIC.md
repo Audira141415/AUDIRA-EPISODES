@@ -5,7 +5,11 @@ title: "Cara Kerja Jalan Layang: Ribuan Ton di Atas Tiang Ramping"
 hook: "Tiang jalan layang dirancang menahan beban sekaligus goyangan gempa"
 styleCandidates: ["BUILDFORGE (3D)", "URBANFORGE (3D)", "SCALEFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # fisika & standar awet; cek versi SNI terbaru sebelum produksi
+risiko: "Judul 'ribuan ton' dilebihkan: satu bentang box girder ±520 t (prosiding MEDIUM, panjang 40 m inferensi), dikoreksi jadi ratusan ton per bentang; isolasi seismik tidak dipakai semua jalan layang; rule 15: tanpa nama proyek/BUMN/kontraktor dan tanpa kegagalan jembatan tertentu."
 ---
 
 # Cara Kerja Jalan Layang: Ribuan Ton di Atas Tiang Ramping

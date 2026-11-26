@@ -5,7 +5,11 @@ title: "Cara Kerja Bus Listrik dan Tempat Mengisinya"
 hook: "Bus seberat belasan ton bisa jalan seharian dengan baterai di atap dan lantainya"
 styleCandidates: ["URBANFORGE (3D)", "INNERWORKS (3D)", "DATAPHYSICAL (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # cara kerja dan cara mengisi awet; jumlah armada (500 per Okt 2026) dan target 2030 cepat basi
+risiko: "Hook asli (baterai di atap dan lantainya) hanya terverifikasi untuk atap, dikoreksi jadi 'beda tiap model, sebagian di atap'; 'seharian' berlaku untuk rute kota ±200 km dengan isi semalam; klaim waktu isi depo dari operator tidak konsisten (cek ulang); rule 15: tanpa merek bus/baterai, Transjakarta hanya teks tanpa logo."
 ---
 
 # Cara Kerja Bus Listrik dan Tempat Mengisinya

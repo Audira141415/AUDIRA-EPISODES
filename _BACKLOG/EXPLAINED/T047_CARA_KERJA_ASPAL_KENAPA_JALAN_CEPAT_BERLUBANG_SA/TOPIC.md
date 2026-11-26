@@ -5,7 +5,11 @@ title: "Cara Kerja Aspal: Kenapa Jalan Cepat Berlubang Saat Hujan"
 hook: "Musuh terbesar aspal bukan truk berat, melainkan air yang masuk ke bawahnya"
 styleCandidates: ["BUILDFORGE (3D)", "BONGKAR (2D)", "CHAINREACTION (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme air + beban dan aturan pangkat empat awet; data ODOL/WIM cepat basi
+risiko: "Hook asli (bukan truk, melainkan air) berlebihan, dikoreksi jadi air + beban berat bekerja bersama; pangkat empat hanya aturan praktis (x16 = hitungan sendiri, sumber AASHO masih MEDIUM); rule 15: tanpa logo dinas/operator/aplikasi, tidak menyalahkan instansi atau daerah."
 ---
 
 # Cara Kerja Aspal: Kenapa Jalan Cepat Berlubang Saat Hujan

@@ -5,7 +5,11 @@ title: "Cara Kerja Palang Pintu Perlintasan Kereta"
 hook: "Palang tidak ditutup oleh penjaga yang melihat kereta — rel sendiri yang memberi tahu"
 styleCandidates: ["URBANFORGE (3D)", "CHAINREACTION (2D)", "INNERWORKS (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme dan regulasi awet; jumlah perlintasan (3.674) dan statistik KAI cepat basi
+risiko: "Hook dikoreksi (perlintasan dijaga tetap ditutup petugas, tapi kabar datang dari genta stasiun dan detektor rel; hanya perlintasan otomatis PM 94/2018 yang tanpa penjaga); angka 3.674 perlintasan hanya dari rilis KAI di ANTARA; rule 15: tanpa logo KAI/Kemenhub, tanpa kecelakaan tertentu; pesan keselamatan wajib."
 ---
 
 # Cara Kerja Palang Pintu Perlintasan Kereta
