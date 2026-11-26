@@ -5,22 +5,12 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node F:/AUDIRA-VIDEO-MOTION/scripts/hooks/pipeline-guard.mjs"
+            "command": "node F:/AUDIRA-ALL-SKILL/scripts/hooks/pipeline-guard.mjs"
           }
         ],
         "matcher": {
-          "tool_name": "Write|Edit"
+          "tool_name": "Write|Edit|Bash|PowerShell|mcp__audira-skill-mesh__audira_render_batch|mcp__audira-skill-mesh__audira_generate_voiceover"
         }
-      }
-    ],
-    "UserPromptSubmit": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node F:/AUDIRA-VIDEO-MOTION/scripts/hooks/context-guard.mjs"
-          }
-        ]
       }
     ]
   }
