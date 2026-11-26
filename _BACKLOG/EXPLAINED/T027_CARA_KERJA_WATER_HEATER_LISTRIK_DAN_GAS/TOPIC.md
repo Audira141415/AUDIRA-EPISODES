@@ -5,7 +5,11 @@ title: "Cara Kerja Water Heater Listrik dan Gas"
 hook: "Air dingin masuk, air hangat keluar — tanpa kamu menunggu panci mendidih"
 styleCandidates: ["INNERWORKS (3D)", "FLUIDFORGE (3D)", "BONGKAR (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # prinsip kerja dan keselamatan awet; regulasi lokal bisa berubah
+risiko: "Hook asli hanya akurat untuk tipe instan (tangki perlu pemanasan awal), dikoreksi; topik keselamatan CO/listrik wajib pesan aman tanpa instruksi teknis; angka 30 mA dan GPM dari sumber AS/Inggris, SNI/PUIL belum diverifikasi; rule 15: tanpa merek water heater."
 ---
 
 # Cara Kerja Water Heater Listrik dan Gas

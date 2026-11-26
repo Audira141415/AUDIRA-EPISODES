@@ -5,7 +5,11 @@ title: "Cara Kerja Penyedot Debu"
 hook: "Bukan menyedot — debu sebenarnya didorong masuk oleh udara di luar"
 styleCandidates: ["INNERWORKS (3D)", "FLUIDFORGE (3D)", "BONGKAR (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # prinsip fisika & definisi HEPA awet; tidak ada harga/rekor
+risiko: "Hook dilebihkan (alat tetap menurunkan tekanan; debu diseret arus udara; beda tekanan hanya ±13–25 kPa), dikoreksi; angka 13 kPa dari satu studi CFD; anjuran abu panas belum bersumber resmi; rule 15: tanpa merek/logo penyedot debu nyata."
 ---
 
 # Cara Kerja Penyedot Debu

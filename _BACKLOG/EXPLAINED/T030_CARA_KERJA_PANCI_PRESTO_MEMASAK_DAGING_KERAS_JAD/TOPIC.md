@@ -5,7 +5,11 @@ title: "Cara Kerja Panci Presto: Memasak Daging Keras Jadi Empuk"
 hook: "Air di dalam presto mendidih di suhu lebih tinggi dari 100°C"
 styleCandidates: ["INNERWORKS (3D)", "BONGKAR (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # fisika titik didih dan kolagen tidak basi
+risiko: "Hook benar tapi kabur, dipertajam jadi ±120 °C (bergantung setelan tekanan); klaim waktu ½–¼ hanya sumber MEDIUM; topik keselamatan wajib checklist pencegahan; rule 15: tanpa merek panci nyata dan tanpa wajah."
 ---
 
 # Cara Kerja Panci Presto: Memasak Daging Keras Jadi Empuk

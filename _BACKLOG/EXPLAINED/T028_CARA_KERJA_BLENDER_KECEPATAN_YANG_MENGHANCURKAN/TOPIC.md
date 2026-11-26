@@ -5,7 +5,11 @@ title: "Cara Kerja Blender: Kecepatan yang Menghancurkan Es"
 hook: "Pisau blender berputar ratusan kali dalam satu detik dan menciptakan pusaran"
 styleCandidates: ["INNERWORKS (3D)", "FLUIDFORGE (3D)", "PRECISION (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # mekanisme fisika awet; angka rpm = spesifikasi maks/tanpa beban, bukan rekor
+risiko: "Hook didukung tapi hanya untuk blender daya tinggi (rpm maks/tanpa beban, 267–533 putaran/dtk hitungan sendiri); objek inti tidak ada di katalog GLB; rule 15: blender generik tanpa merek, pesan keselamatan tanpa adegan tangan dekat pisau."
 ---
 
 # Cara Kerja Blender: Kecepatan yang Menghancurkan Es

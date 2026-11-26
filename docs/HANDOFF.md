@@ -4,7 +4,7 @@
 - Cara: batch 6 topik, 1 subagen general-purpose per topik, spec `F:/AUDIRA-ALL-SKILL/scripts/backlog-tools/PILOT_SPEC.md`
   (tanggal = hari ini, rule 15 EXPLAINED), cek `node F:/AUDIRA-ALL-SKILL/scripts/backlog-tools/verify-eps.mjs <folder...>`,
   lalu commit repo episode `feat(backlog): riset EXPLAINED batch N (T..)` + push.
-- Progres: batch 1 = T001–T006: SELESAI, 6/6 OK, commit b5a1baf1. Batch 2 = T007–T012: SELESAI, 6/6 OK, commit dde22419. Batch 3 = T013–T018: SELESAI, 6/6 OK, commit a4068c80. Batch 4 = T019–T024: SELESAI, 6/6 OK verify, di-commit. Batch 1 sudah di origin; batch 2–4 belum push. Batch 5 = T025–T030.
+- Progres: batch 1 = T001–T006: SELESAI, 6/6 OK, commit b5a1baf1. Batch 2 = T007–T012: SELESAI, 6/6 OK, commit dde22419. Batch 3 = T013–T018: SELESAI, 6/6 OK, commit a4068c80. Batch 4 = T019–T024: SELESAI, 6/6 OK, commit b409670d. Batch 5 = T025–T030: SELESAI, 6/6 OK. Batch 1–5 sudah di origin. Batch 6 = T031–T036.
 - Catatan agen: WebSearch/WebFetch error (model haiku tidak tersedia) -> agen pakai curl ke halaman asli/Bing/Wikipedia API; tulis itu di brief.
 - Cek ulang sebelum produksi: T002 BI-Rate 6,00% (per 18 Nov 2026), T003 JISDOR + puncak 1998 (baru Wikipedia), T005 MDR/pengguna QRIS, T001 inflasi per Sep 2026.
   Batch 2: T007 "maks 100 lembar/setor" (1 bank), aturan BI uang dicek mesin sebelum masuk ATM belum ketemu;
@@ -25,6 +25,12 @@
   T022 tarif Rp1.444,70/kWh per TW III 2026 (ANTARA); belum ada dokumen PLN/SPLN resmi soal STS;
   T023 trip magnetik 0,06–0,07 dtk dari 1 uji lab (cek IEC 60898-1); kebakaran Jakarta 2024 789 vs 787;
   T024 tekanan tabung ±4 bar = estimasi sendiri (label HUD), tekanan keluar resmi SNI 7369 belum terbaca.
+  Batch 5: T025 −60% kematian & "3 dari 5" = data NFPA AS 2018–2022 (cek laporan baru), Am-241 ≤1 µCi (NRC 2021), aturan buang BAPETEN belum diriset;
+  T026 Permenaker 04/1980 masih berlaku? (1,2 m / 15 m / 2x setahun), 112 baru pilot Bali per Sep 2026, interval isi ulang bertentangan di regulasi (tidak dipakai);
+  T027 ELCB ≤30 mA (HSE UK) cocokkan PUIL, 9,5 L/menit konversi ENERGY STAR AS, termostat ±55 °C baru Wikipedia, SNI/ESDM belum terverifikasi;
+  T028 25.000 rpm = spek maks 1 model 1.200 W (berbeban ±17.900), "motor universal" baru Wikipedia, 267–533 put/dtk = hitungan sendiri;
+  T029 13 kPa dari 1 simulasi CFD (bukan rata-rata pasar), ±25 kPa hanya Wikipedia de, larangan abu panas belum bersumber resmi;
+  T030 "½–¼ waktu masak" baru Wikipedia, kolagen "±60 °C" penyederhanaan 53–63 °C, 120,9 °C interpolasi NIST (label), SNI presto belum terbaca.
 - Lanjut: Lanjut dari topik pertama yang TOPIC.md-nya masih `stage: backlog`:
   `grep -L "stage: drafted" _BACKLOG/EXPLAINED/*/TOPIC.md | head -6`.
 

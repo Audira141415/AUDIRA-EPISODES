@@ -5,7 +5,11 @@ title: "Cara Kerja Detektor Asap"
 hook: "Alat seukuran piring kecil ini bisa mencium asap sebelum kamu melihat api"
 styleCandidates: ["INNERWORKS (3D)", "NANOFORGE (3D)", "BONGKAR (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # prinsip kerja awet; statistik NFPA diperbarui berkala (pakai "AS, 2018–2022")
+risiko: "Hook asli dilebihkan (mencium, sebelum melihat api, seukuran piring) sudah dikoreksi; statistik hanya data AS; Am-241 bisa memicu takut radiasi, sampaikan faktual tanpa instruksi membongkar; rule 15: detektor generik tanpa merek, siluet tanpa wajah."
 ---
 
 # Cara Kerja Detektor Asap
