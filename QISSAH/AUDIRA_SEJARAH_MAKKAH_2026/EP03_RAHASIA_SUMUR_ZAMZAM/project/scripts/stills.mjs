@@ -27,6 +27,15 @@ const cleanup = () => fs.rmSync(serveUrl, { recursive: true, force: true });
 process.on("exit", cleanup);
 const composition = await selectComposition({ serveUrl, id });
 const frames = list.split(",").map((t) => (t.endsWith("s") ? Math.round(parseFloat(t) * composition.fps) : parseInt(t, 10)));
+// A contact sheet always shows the outro card (directive 00 stage 8): add one when the list stops before the last 3 s.
+// AUDIRA_OUTRO_TILE=off keeps the list as given (cover or single-frame checks).
+{
+  const lastFrame = composition.durationInFrames - 1;
+  if (process.env.AUDIRA_OUTRO_TILE !== "off" && frames.length > 1 && !frames.some((f) => f >= lastFrame - Math.round(3 * composition.fps))) {
+    frames.push(Math.max(0, lastFrame - Math.round(1.5 * composition.fps)));
+    console.log(`outro tile added: frame ${frames.at(-1)}`);
+  }
+}
 const files = [];
 const renderAll = async (gl) => {
   // one browser for all stills: WebGL contexts are expensive to create and tear down

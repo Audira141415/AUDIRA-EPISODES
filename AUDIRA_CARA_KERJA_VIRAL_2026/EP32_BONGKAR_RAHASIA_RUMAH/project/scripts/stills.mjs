@@ -50,6 +50,15 @@ const last = composition.durationInFrames - 1;
 const frames = list.split(",").map((t) =>
   Math.min(last, Math.max(0, t.endsWith("%") ? Math.round((parseFloat(t) / 100) * last)
     : t.endsWith("s") ? Math.round(parseFloat(t) * composition.fps) : parseInt(t, 10))));
+// A contact sheet always shows the outro card (directive 00 stage 8): add one when the list stops before the last 3 s.
+// AUDIRA_OUTRO_TILE=off keeps the list as given (cover or single-frame checks).
+{
+  const lastFrame = composition.durationInFrames - 1;
+  if (process.env.AUDIRA_OUTRO_TILE !== "off" && frames.length > 1 && !frames.some((f) => f >= lastFrame - Math.round(3 * composition.fps))) {
+    frames.push(Math.max(0, lastFrame - Math.round(1.5 * composition.fps)));
+    console.log(`outro tile added: frame ${frames.at(-1)}`);
+  }
+}
 // sizes for callers (npm run draft) so they need not bundle again
 fs.writeFileSync(path.join(outDir, "_meta.json"), JSON.stringify({ id, fps: composition.fps, durationInFrames: composition.durationInFrames, width: composition.width, height: composition.height, frames }));
 const files = [];
