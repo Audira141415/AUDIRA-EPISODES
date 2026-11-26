@@ -4,7 +4,7 @@
 - Cara: batch 6 topik, 1 subagen general-purpose per topik, spec `F:/AUDIRA-ALL-SKILL/scripts/backlog-tools/PILOT_SPEC.md`
   (tanggal = hari ini, rule 15 EXPLAINED), cek `node F:/AUDIRA-ALL-SKILL/scripts/backlog-tools/verify-eps.mjs <folder...>`,
   lalu commit repo episode `feat(backlog): riset EXPLAINED batch N (T..)` + push.
-- Progres: batch 1 = T001–T006: SELESAI, 6/6 OK, commit b5a1baf1. Batch 2 = T007–T012: SELESAI, 6/6 OK, commit dde22419. Batch 3 = T013–T018: SELESAI, 6/6 OK, commit a4068c80. Batch 4 = T019–T024: SELESAI, 6/6 OK, commit b409670d. Batch 5 = T025–T030: SELESAI, 6/6 OK. Batch 1–5 sudah di origin. Batch 6 = T031–T036.
+- Progres: batch 1 = T001–T006: SELESAI, 6/6 OK, commit b5a1baf1. Batch 2 = T007–T012: SELESAI, 6/6 OK, commit dde22419. Batch 3 = T013–T018: SELESAI, 6/6 OK, commit a4068c80. Batch 4 = T019–T024: SELESAI, 6/6 OK, commit b409670d. Batch 5 = T025–T030: SELESAI, 6/6 OK, commit a2694336. Batch 6 = T031–T036: SELESAI, 6/6 OK. Batch 1–6 sudah di origin. Batch 7 = T037–T042.
 - Catatan agen: WebSearch/WebFetch error (model haiku tidak tersedia) -> agen pakai curl ke halaman asli/Bing/Wikipedia API; tulis itu di brief.
 - Cek ulang sebelum produksi: T002 BI-Rate 6,00% (per 18 Nov 2026), T003 JISDOR + puncak 1998 (baru Wikipedia), T005 MDR/pengguna QRIS, T001 inflasi per Sep 2026.
   Batch 2: T007 "maks 100 lembar/setor" (1 bank), aturan BI uang dicek mesin sebelum masuk ATM belum ketemu;
@@ -31,6 +31,12 @@
   T028 25.000 rpm = spek maks 1 model 1.200 W (berbeban ±17.900), "motor universal" baru Wikipedia, 267–533 put/dtk = hitungan sendiri;
   T029 13 kPa dari 1 simulasi CFD (bukan rata-rata pasar), ±25 kPa hanya Wikipedia de, larangan abu panas belum bersumber resmi;
   T030 "½–¼ waktu masak" baru Wikipedia, kolagen "±60 °C" penyederhanaan 53–63 °C, 120,9 °C interpolasi NIST (label), SNI presto belum terbaca.
+  Batch 6: T031 "7 dari 10 RT minum air ber-E. coli" = SKAMRT 2020 (semua sumber air, cari data baru), "3 minggu bakteri naik" studi 1981, pori UF/RO CDC vs Wikipedia;
+  T032 FMR ≤1:10.000 & FNMR <5% = syarat pedoman NIST SP 800-63B-4 (bukan spek kunci konsumen), "jari luka" belum bersumber;
+  T033 lendutan <0,5 mm dari 1 datasheet, HX711 ×128/24-bit khusus chip itu, 5–10 mV hitungan sendiri, tera ulang 1 tahun (Permendag 24/2024);
+  T034 "≈4 °C terasa lebih sejuk" hanya pada 27 °C/RH 50%/1 m/s (HUD wajib "terasa"), ambang suhu kipas beda antar sumber (tidak di VO), panas motor baru Wikipedia;
+  T035 >150 m/dtk dari unit bermerek di studi, 540 km/jam konversi sendiri, 40 dtk & 10 dtk=90% dari tinjauan 2012, 17 dtk hanya pria; debat higiene didanai industri (sajikan netral);
+  T036 tahun 1974 & inspirasi Morse baru Wikipedia, jangan tulis "barcode tak pernah memuat harga" (barang timbang toko), jangan tampilkan 13 digit 899 lengkap.
 - Lanjut: Lanjut dari topik pertama yang TOPIC.md-nya masih `stage: backlog`:
   `grep -L "stage: drafted" _BACKLOG/EXPLAINED/*/TOPIC.md | head -6`.
 

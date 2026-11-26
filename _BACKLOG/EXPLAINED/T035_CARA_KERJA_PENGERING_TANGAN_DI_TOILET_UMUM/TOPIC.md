@@ -5,7 +5,11 @@ title: "Cara Kerja Pengering Tangan di Toilet Umum"
 hook: "Mesin pengering modern memeras air dari tanganmu dengan lembaran udara tipis"
 styleCandidates: ["FLUIDFORGE (3D)", "INNERWORKS (3D)", "BONGKAR (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # prinsip kerja awet; spesifikasi kecepatan model bisa berubah
+risiko: "Hook asli (memeras air) tidak akurat, dikoreksi jadi menyapu/mengikis; angka kecepatan dari unit bermerek di studi; debat higiene dipengaruhi pendanaan industri, wajib netral; rule 15: tanpa merek/logo pengering."
 ---
 
 # Cara Kerja Pengering Tangan di Toilet Umum

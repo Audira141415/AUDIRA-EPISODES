@@ -5,7 +5,11 @@ title: "Cara Kerja Barcode di Kemasan Belanja"
 hook: "Garis hitam-putih itu menyimpan angka yang dibaca laser dalam sekejap"
 styleCandidates: ["BONGKAR (2D)", "PRECISION (2D)", "CIRCUITFORGE (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # mekanisme EAN/GTIN awet; tren pemindai laser→kamera dan 1D→2D bisa bergeser
+risiko: "Hook asli (dibaca laser) dikoreksi jadi laser atau kamera, isi barcode = GTIN bukan harga; 1974 dan kode Morse baru bersumber Wikipedia (MEDIUM); rule 15: semua barcode/kemasan fiktif, tanpa logo GS1/peritel, tanpa wajah penemu; jangan tampilkan nomor 899 lengkap 13 digit."
 ---
 
 # Cara Kerja Barcode di Kemasan Belanja

@@ -5,7 +5,11 @@ title: "Cara Kerja Kipas Angin: Kenapa Terasa Sejuk Padahal Suhunya Sama"
 hook: "Kipas tidak mendinginkan udara — kipas mempercepat keringatmu menguap"
 styleCandidates: ["FLUIDFORGE (3D)", "INNERWORKS (3D)", "CERDIK (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # fisika & fisiologi awet; ambang suhu panduan kesehatan bisa berubah
+risiko: "Hook asli hanya menyebut penguapan, dikoreksi jadi dua mekanisme (konveksi + penguapan) dan motor kipas sedikit menambah panas; ambang suhu kipas beda antar sumber (35/37–39/40 °C) sehingga VO hanya menyebut suhu kulit ≈35 °C + pesan keselamatan umum; CDC tidak bisa dibuka; rule 15: kipas generik tanpa merek."
 ---
 
 # Cara Kerja Kipas Angin: Kenapa Terasa Sejuk Padahal Suhunya Sama

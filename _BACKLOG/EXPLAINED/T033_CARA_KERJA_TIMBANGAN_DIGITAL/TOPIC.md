@@ -5,7 +5,11 @@ title: "Cara Kerja Timbangan Digital"
 hook: "Tidak ada pegas — timbanganmu mengukur seberapa jauh logam kecil melengkung"
 styleCandidates: ["INNERWORKS (3D)", "PRECISION (2D)", "BONGKAR (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # prinsip fisika awet; aturan tera ulang bisa berubah
+risiko: "Hook asli (tidak ada pegas, lendutan mikrometer) keliru: logam load cell adalah pegasnya dan lendutan beban penuh < 0,25–0,5 mm; angka lendutan dari satu datasheet; x128/24-bit khusus chip HX711; rule 15: timbangan dan chip tanpa merek/logo."
 ---
 
 # Cara Kerja Timbangan Digital

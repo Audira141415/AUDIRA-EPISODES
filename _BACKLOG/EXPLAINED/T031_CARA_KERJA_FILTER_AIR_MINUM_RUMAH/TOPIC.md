@@ -5,7 +5,11 @@ title: "Cara Kerja Filter Air Minum Rumah"
 hook: "Air keran melewati beberapa lapis saringan sebelum aman diminum"
 styleCandidates: ["INNERWORKS (3D)", "NANOFORGE (3D)", "FLUIDFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # prinsip kerja filter awet; data SKAMRT 2020 dan klaim produk bisa berubah
+risiko: "Hook asli (lapis saringan = aman diminum) berlebihan, dikoreksi; angka SKAMRT 2020 perlu dicek versi terbaru; pesan keselamatan wajib (ganti cartridge, uji, rebus bila ragu); rule 15: tanpa merek filter dan logo NSF/Kemenkes/WHO."
 ---
 
 # Cara Kerja Filter Air Minum Rumah

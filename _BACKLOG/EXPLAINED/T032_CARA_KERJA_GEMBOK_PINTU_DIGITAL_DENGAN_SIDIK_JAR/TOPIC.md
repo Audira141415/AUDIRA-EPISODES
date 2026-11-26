@@ -5,7 +5,11 @@ title: "Cara Kerja Gembok Pintu Digital dengan Sidik Jari"
 hook: "Pola garis di ujung jarimu diubah jadi peta titik, bukan disimpan sebagai foto"
 styleCandidates: ["INNERWORKS (3D)", "CIRCUITFORGE (2D)", "BONGKAR (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # prinsip sensor dan minutiae awet; pedoman NIST dan fitur produk bisa diperbarui
+risiko: "Hook asli terlalu mutlak (bukan disimpan sebagai foto), dikoreksi jadi umumnya; FMR/FNMR adalah syarat pedoman NIST, bukan spesifikasi kunci konsumen; kata luka belum bersumber; rule 15: tanpa merek kunci, tanpa instruksi membobol."
 ---
 
 # Cara Kerja Gembok Pintu Digital dengan Sidik Jari
