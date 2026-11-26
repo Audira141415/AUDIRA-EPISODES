@@ -5,7 +5,11 @@ title: "Cara Kerja Pompa Air Rumah: Mengangkat Air dari Dalam Tanah"
 hook: "Mesin kecil di belakang rumah menarik air dari kedalaman puluhan meter"
 styleCandidates: ["INNERWORKS (3D)", "FLUIDFORGE (3D)", "BONGKAR (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # fisika pompa tidak basi
+risiko: "Hook asli (menarik air dari puluhan meter) salah untuk pompa hisap: batas fisika ±10,3 m, praktis ±7,6 m; dikoreksi jadi twist pompa celup. Sumber HIGH dari AS (USGS/NIST/DOE) + teks Galileo, belum ada SNI; rule 15: pompa generik tanpa merek, Galileo tanpa potret."
 ---
 
 # Cara Kerja Pompa Air Rumah: Mengangkat Air dari Dalam Tanah

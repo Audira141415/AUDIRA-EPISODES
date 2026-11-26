@@ -5,7 +5,11 @@ title: "Cara Kerja Setrika Uap"
 hook: "Uap panas melemaskan serat kain sampai kerutannya hilang dalam satu sapuan"
 styleCandidates: ["INNERWORKS (3D)", "BONGKAR (2D)", "PRECISION (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # mekanisme fisika dan simbol ISO 3758 awet
+risiko: "Hook asli (hilang dalam satu sapuan) dilebihkan, dikoreksi; suhu per titik beda antar sumber (pakai GINETEX 120/160/210 °C); mekanisme uap internal hanya sumber MEDIUM; rule 15: setrika dan kemeja generik tanpa merek."
 ---
 
 # Cara Kerja Setrika Uap

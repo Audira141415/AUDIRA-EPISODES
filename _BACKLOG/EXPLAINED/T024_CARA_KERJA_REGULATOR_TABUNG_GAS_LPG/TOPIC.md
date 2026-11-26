@@ -5,7 +5,11 @@ title: "Cara Kerja Regulator Tabung Gas LPG"
 hook: "Gas di dalam tabung bertekanan tinggi — benda kecil ini yang menjinakkannya"
 styleCandidates: ["INNERWORKS (3D)", "BONGKAR (2D)", "PRECISION (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # fisika regulator dan SNI awet; komposisi LPG bisa bergeser
+risiko: "Hook asli (tekanan tinggi) dipertajam jadi rasio >100x; tekanan tabung ±4 bar adalah estimasi turunan NIST+LEMIGAS; angka tekanan keluar resmi SNI 7369 belum dibaca langsung (pakai 280 mmH2O uji kompor SNI 7368); saran 'buka jendela' belum bersumber resmi; rule 15: tabung/regulator generik tanpa logo, tanpa instruksi bongkar."
 ---
 
 # Cara Kerja Regulator Tabung Gas LPG

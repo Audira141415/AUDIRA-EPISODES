@@ -5,7 +5,11 @@ title: "Cara Kerja Meteran Listrik Token"
 hook: "Angka 20 digit yang kamu ketik ternyata kunci terenkripsi yang hanya cocok untuk meteranmu"
 styleCandidates: ["INNERWORKS (3D)", "CIRCUITFORGE (2D)", "BONGKAR (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # mekanisme token awet; tarif per kWh cepat basi
+risiko: "Hook asli menyebut token sebagai kunci (dikoreksi: pesan terenkripsi, kuncinya di dalam meteran); penggunaan STS oleh meteran PLN belum terkonfirmasi sumber resmi; tarif per triwulan III 2026 cepat basi; rule 15: meteran/struk generik tanpa logo PLN atau merek, tanpa detail teknis yang memudahkan pembobolan."
 ---
 
 # Cara Kerja Meteran Listrik Token

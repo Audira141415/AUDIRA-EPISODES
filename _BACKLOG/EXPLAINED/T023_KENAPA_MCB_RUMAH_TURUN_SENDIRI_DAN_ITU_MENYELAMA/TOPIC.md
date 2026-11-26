@@ -5,7 +5,11 @@ title: "Kenapa MCB Rumah Turun Sendiri — dan Itu Menyelamatkanmu"
 hook: "Saklar kecil di kotak listrik bereaksi lebih cepat dari kedipan mata"
 styleCandidates: ["INNERWORKS (3D)", "CIRCUITFORGE (2D)", "CHAINREACTION (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # fisika MCB dan standar awet; data kebakaran Jakarta per 2023–2024
+risiko: "Hook kedipan hanya benar untuk trip magnetik (korsleting), angka 0,06 dtk dari satu uji lab; trip termal puluhan detik; batas waktu IEC belum dibaca dari teks standar asli; rule 15: MCB generik tanpa logo PLN/merek, wajib pesan keselamatan."
 ---
 
 # Kenapa MCB Rumah Turun Sendiri — dan Itu Menyelamatkanmu
