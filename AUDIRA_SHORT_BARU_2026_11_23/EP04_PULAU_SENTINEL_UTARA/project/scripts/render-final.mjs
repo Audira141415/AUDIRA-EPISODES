@@ -34,6 +34,13 @@ import { bundle } from "@remotion/bundler";
 import { openBrowser, renderMedia, renderStill, selectComposition } from "@remotion/renderer";
 import { glMode, isWebGLError, switchToSoftware, tolerateClosedTargets } from "./gl.mjs";
 import { context, records, remember } from "./lib/memory.mjs";
+import { withRenderPort } from "./lib/render-port.mjs";
+// --parallel-safe (or AUDIRA_PARALLEL=5): up to 5 renders at the same time on one PC. Forces --jobs=1
+// --concurrency=2, so 5 renders x 2 tabs = 10 tabs, under the ~12 tab limit (rule 07 §4).
+if (!process.argv.includes("--worker") && (process.argv.includes("--parallel-safe") || Number(process.env.AUDIRA_PARALLEL) > 1)) {
+  process.argv = process.argv.filter((a) => !/^--(jobs|concurrency)=/.test(a)).concat("--jobs=1", "--concurrency=2");
+  console.log("parallel-safe: --jobs=1 --concurrency=2");
+}
 
 tolerateClosedTargets();
 
@@ -115,11 +122,10 @@ async function renderRange(serveUrl, composition, a, b, tmp, onProgress) {
   let gl = glArg, enc = encoder;
   for (;;) {
     try {
-      await renderMedia({
-        composition, serveUrl, codec: "h264", crf: enc === "nvenc" ? undefined : crf, pixelFormat: "yuv420p", muted: true,
+      await withRenderPort((port) => renderMedia({ port, composition, serveUrl, codec: "h264", crf: enc === "nvenc" ? undefined : crf, pixelFormat: "yuv420p", muted: true,
         frameRange: [a, b], outputLocation: tmp, concurrency, imageFormat: "png", chromiumOptions: { gl },
         timeoutInMilliseconds: 300000, ffmpegOverride: encodeArgs(enc), onProgress,
-      });
+      }));
       return;
     } catch (e) {
       if (enc === "nvenc" && isNvencError(e)) {
@@ -138,7 +144,7 @@ async function renderRange(serveUrl, composition, a, b, tmp, onProgress) {
 // Worker mode: render one segment from an existing bundle, then exit. Started by the parent below.
 if (process.argv.includes("--worker")) {
   const serveUrl = arg("serve"), a = Number(arg("from")), b = Number(arg("to")), tmp = arg("tmp");
-  const composition = await selectComposition({ serveUrl, id: comp });
+  const composition = await withRenderPort((port) => selectComposition({ port, serveUrl, id: comp }));
   await renderRange(serveUrl, composition, a, b, tmp, ({ progress }) => process.stdout.write(`${Math.round(progress * 100)}\n`));
   process.exit(0);
 }
@@ -225,7 +231,7 @@ fs.mkdirSync(segDir, { recursive: true });
   if (!ch.problem) console.log(`channel: ${ch.handle}${ch.written ? " (wrote src/brand/channel.json)" : ""}`);
 }
 const serveUrl = await bundle({ entryPoint: path.resolve("src/index.ts") });
-const composition = await selectComposition({ serveUrl, id: comp });
+const composition = await withRenderPort((port) => selectComposition({ port, serveUrl, id: comp }));
 const N = composition.durationInFrames;
 // Frames in a finished segment, read with MediaBunny (packet count) instead of ffprobe -count_packets.
 // 0 for a missing or corrupt file, so resume re-renders that segment.
@@ -302,8 +308,8 @@ if (todo.length && !process.argv.includes("--no-preflight")) {
   try {
     for (const f of frames) {
       try {
-        await renderStill({ composition, serveUrl, frame: f, output: path.join(pre, `f${f}.jpg`), imageFormat: "jpeg", scale: 0.25,
-          puppeteerInstance: browser, chromiumOptions: { gl: glArg }, timeoutInMilliseconds: 120000 });
+        await withRenderPort((port) => renderStill({ port, composition, serveUrl, frame: f, output: path.join(pre, `f${f}.jpg`), imageFormat: "jpeg", scale: 0.25,
+          puppeteerInstance: browser, chromiumOptions: { gl: glArg }, timeoutInMilliseconds: 120000 }));
       } catch (e) {
         console.error(`Preflight failed at frame ${f} (${(f / composition.fps).toFixed(1)} s): ${String(e?.message ?? e).split("\n")[0]}\n` +
           `  Nothing was rendered. Fix the scene, or skip this check with --no-preflight.`);

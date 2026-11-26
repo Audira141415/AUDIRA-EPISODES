@@ -11,6 +11,13 @@ import path from "node:path";
 import { bundle } from "@remotion/bundler";
 import { renderMedia, selectComposition } from "@remotion/renderer";
 import { glMode, isWebGLError, switchToSoftware, tolerateClosedTargets } from "./gl.mjs";
+import { withRenderPort } from "./lib/render-port.mjs";
+// --parallel-safe (or AUDIRA_PARALLEL=5): up to 5 renders at the same time on one PC. Forces --jobs=1
+// --concurrency=2, so 5 renders x 2 tabs = 10 tabs, under the ~12 tab limit (rule 07 §4).
+if (!process.argv.includes("--worker") && (process.argv.includes("--parallel-safe") || Number(process.env.AUDIRA_PARALLEL) > 1)) {
+  process.argv = process.argv.filter((a) => !/^--(jobs|concurrency)=/.test(a)).concat("--jobs=1", "--concurrency=2");
+  console.log("parallel-safe: --jobs=1 --concurrency=2");
+}
 
 tolerateClosedTargets();
 
@@ -28,7 +35,7 @@ const ff = (a) => {
 const segDir = path.join("out", "seg");
 fs.mkdirSync(segDir, { recursive: true });
 const serveUrl = await bundle({ entryPoint: path.resolve("src/index.ts"), enableCaching: false });
-const composition = await selectComposition({ serveUrl, id: comp });
+const composition = await withRenderPort((port) => selectComposition({ port, serveUrl, id: comp }));
 const N = composition.durationInFrames;
 const count = (f) => Number(spawnSync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-count_packets", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", f], { encoding: "utf8" }).stdout.trim() || 0);
 const list = [];
@@ -43,11 +50,10 @@ for (let i = 0; i < parts; i++) {
   }
   console.log(`part ${i}: frames ${a}-${b}`);
   const tmp = path.join(segDir, `part${i}.tmp.mp4`);
-  const renderPart = () => renderMedia({
-    composition, serveUrl, codec: "h264", crf, pixelFormat: "yuv420p", muted: true, frameRange: [a, b], outputLocation: tmp,
+  const renderPart = () => withRenderPort((port) => renderMedia({ port, composition, serveUrl, codec: "h264", crf, pixelFormat: "yuv420p", muted: true, frameRange: [a, b], outputLocation: tmp,
     concurrency, imageFormat: "jpeg", jpegQuality: 95, chromiumOptions: { gl }, timeoutInMilliseconds: 300000,
     onProgress: ({ progress }) => process.stdout.write(`\r  ${(progress * 100).toFixed(0)}%`),
-  });
+  }));
   try {
     await renderPart();
   } catch (e) {

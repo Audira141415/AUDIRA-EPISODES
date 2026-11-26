@@ -8,6 +8,7 @@ import { execFileSync } from "node:child_process";
 import { bundle } from "@remotion/bundler";
 import { openBrowser, renderStill, selectComposition } from "@remotion/renderer";
 import { glMode, isWebGLError, switchToSoftware, tolerateClosedTargets } from "./gl.mjs";
+import { withRenderPort } from "./lib/render-port.mjs";
 
 tolerateClosedTargets();
 
@@ -22,7 +23,7 @@ const serveUrl = await bundle({ entryPoint: path.resolve("src/index.ts") });
 // bundles are ~50 MB each; never leave them in the temp dir, even when a render throws
 const cleanup = () => fs.rmSync(serveUrl, { recursive: true, force: true });
 process.on("exit", cleanup);
-const composition = await selectComposition({ serveUrl, id });
+const composition = await withRenderPort((port) => selectComposition({ port, serveUrl, id }));
 const frames = list.split(",").map((t) => (t.endsWith("s") ? Math.round(parseFloat(t) * composition.fps) : parseInt(t, 10)));
 // A contact sheet always shows the outro card (directive 00 stage 8): add one when the list stops before the last 3 s.
 // AUDIRA_OUTRO_TILE=off keeps the list as given (cover or single-frame checks).
@@ -41,7 +42,7 @@ const renderAll = async (gl) => {
     files.length = 0;
     for (const frame of frames) {
       const output = path.join(outDir, `f${String(frame).padStart(4, "0")}.png`);
-      await renderStill({ composition, serveUrl, output, frame, scale: Number(scaleArg), chromiumOptions: { gl }, timeoutInMilliseconds: 180000, puppeteerInstance });
+      await withRenderPort((port) => renderStill({ port, composition, serveUrl, output, frame, scale: Number(scaleArg), chromiumOptions: { gl }, timeoutInMilliseconds: 180000, puppeteerInstance }));
       files.push(output);
       process.stdout.write(`${frame} `);
     }

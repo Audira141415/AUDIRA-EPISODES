@@ -12,6 +12,7 @@ import { context } from "./lib/memory.mjs";
 import { bundle } from "@remotion/bundler";
 import { openBrowser, renderStill, selectComposition } from "@remotion/renderer";
 import { glMode, isWebGLError, switchToSoftware, tolerateClosedTargets } from "./gl.mjs";
+import { withRenderPort } from "./lib/render-port.mjs";
 
 tolerateClosedTargets();
 
@@ -45,7 +46,7 @@ if (probe) fs.rmSync(probeDir, { recursive: true, force: true });
 // bundles are ~50 MB each; never leave them in the temp dir, even when a render throws
 const cleanup = () => fs.rmSync(serveUrl, { recursive: true, force: true });
 process.on("exit", cleanup);
-const composition = await selectComposition({ serveUrl, id });
+const composition = await withRenderPort((port) => selectComposition({ port, serveUrl, id }));
 const last = composition.durationInFrames - 1;
 const frames = list.split(",").map((t) =>
   Math.min(last, Math.max(0, t.endsWith("%") ? Math.round((parseFloat(t) / 100) * last)
@@ -69,7 +70,7 @@ const renderAll = async (gl) => {
     files.length = 0;
     for (const frame of frames) {
       const output = path.join(outDir, `f${String(frame).padStart(4, "0")}.png`);
-      await renderStill({ composition, serveUrl, output, frame, scale: Number(scaleArg), chromiumOptions: { gl }, timeoutInMilliseconds: 180000, puppeteerInstance, ...(probe ? { onBrowserLog } : {}) });
+      await withRenderPort((port) => renderStill({ port, composition, serveUrl, output, frame, scale: Number(scaleArg), chromiumOptions: { gl }, timeoutInMilliseconds: 180000, puppeteerInstance, ...(probe ? { onBrowserLog } : {}) }));
       files.push(output);
       process.stdout.write(`${frame} `);
     }

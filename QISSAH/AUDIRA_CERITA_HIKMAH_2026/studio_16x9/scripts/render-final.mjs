@@ -24,6 +24,13 @@ import { fileURLToPath } from "node:url";
 import { bundle } from "@remotion/bundler";
 import { renderMedia, selectComposition } from "@remotion/renderer";
 import { glMode, isWebGLError, switchToSoftware, tolerateClosedTargets } from "./gl.mjs";
+import { withRenderPort } from "./lib/render-port.mjs";
+// --parallel-safe (or AUDIRA_PARALLEL=5): up to 5 renders at the same time on one PC. Forces --jobs=1
+// --concurrency=2, so 5 renders x 2 tabs = 10 tabs, under the ~12 tab limit (rule 07 §4).
+if (!process.argv.includes("--worker") && (process.argv.includes("--parallel-safe") || Number(process.env.AUDIRA_PARALLEL) > 1)) {
+  process.argv = process.argv.filter((a) => !/^--(jobs|concurrency)=/.test(a)).concat("--jobs=1", "--concurrency=2");
+  console.log("parallel-safe: --jobs=1 --concurrency=2");
+}
 
 tolerateClosedTargets();
 
@@ -54,11 +61,10 @@ async function renderRange(serveUrl, composition, a, b, tmp, onProgress) {
   let gl = glArg, enc = encoder;
   for (;;) {
     try {
-      await renderMedia({
-        composition, serveUrl, codec: "h264", crf: enc === "nvenc" ? undefined : crf, pixelFormat: "yuv420p", muted: true,
+      await withRenderPort((port) => renderMedia({ port, composition, serveUrl, codec: "h264", crf: enc === "nvenc" ? undefined : crf, pixelFormat: "yuv420p", muted: true,
         frameRange: [a, b], outputLocation: tmp, concurrency, imageFormat: "jpeg", jpegQuality: 95, chromiumOptions: { gl },
         timeoutInMilliseconds: 300000, ffmpegOverride: enc === "nvenc" ? nvencArgs : undefined, onProgress,
-      });
+      }));
       return;
     } catch (e) {
       if (enc === "nvenc" && isNvencError(e)) {
@@ -77,7 +83,7 @@ async function renderRange(serveUrl, composition, a, b, tmp, onProgress) {
 // Worker mode: render one segment from an existing bundle, then exit. Started by the parent below.
 if (process.argv.includes("--worker")) {
   const serveUrl = arg("serve"), a = Number(arg("from")), b = Number(arg("to")), tmp = arg("tmp");
-  const composition = await selectComposition({ serveUrl, id: comp });
+  const composition = await withRenderPort((port) => selectComposition({ port, serveUrl, id: comp }));
   await renderRange(serveUrl, composition, a, b, tmp, ({ progress }) => process.stdout.write(`${Math.round(progress * 100)}\n`));
   process.exit(0);
 }
@@ -90,7 +96,7 @@ const ff = (a) => {
 const segDir = path.join("out", "seg", `${comp}-${path.parse(out).name}`);
 fs.mkdirSync(segDir, { recursive: true });
 const serveUrl = await bundle({ entryPoint: path.resolve("src/index.ts") });
-const composition = await selectComposition({ serveUrl, id: comp });
+const composition = await withRenderPort((port) => selectComposition({ port, serveUrl, id: comp }));
 const N = composition.durationInFrames;
 const count = (f) => Number(spawnSync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-count_packets", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", f], { encoding: "utf8" }).stdout.trim() || 0);
 const list = [];
