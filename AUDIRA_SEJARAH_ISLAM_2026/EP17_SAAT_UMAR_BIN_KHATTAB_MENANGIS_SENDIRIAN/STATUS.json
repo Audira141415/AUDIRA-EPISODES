@@ -3,9 +3,9 @@
   "episode": "EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN",
   "topic": "Sejarah peradaban Islam yang jarang diketahui",
   "createdAt": "2026-11-25T02:39:46.939Z",
-  "updatedAt": "2026-11-25T09:34:12.983Z",
-  "currentStage": "style",
-  "sessionPhase": "A",
+  "updatedAt": "2026-11-26T18:52:48.779Z",
+  "currentStage": "review",
+  "sessionPhase": "C",
   "stages": [
     {
       "id": "context",
@@ -39,8 +39,19 @@
       "id": "style",
       "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-26T14:08:55.428Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        },
+        {
+          "at": "2026-11-26T14:09:42.020Z",
+          "text": "HD2D (Remotion+R3F), alt FILMNOIR/MOSAICFORGE ditolak. Basis kode EP04 scenes/mansamusa. Cover topik dirender di Sesi B dari frame hook."
+        }
+      ],
+      "doneAt": "2026-11-26T14:09:42.020Z",
+      "startedAt": "2026-11-26T14:07:51.636Z"
     },
     {
       "id": "script",
@@ -60,45 +71,101 @@
       "id": "setup",
       "name": "Scaffold folder + setup kit",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-26T14:12:45.725Z",
+          "text": "sync: proyek render sudah disiapkan"
+        },
+        {
+          "at": "2026-11-26T14:13:25.049Z",
+          "text": "project/ = salinan EP04 HD2D (pola mansamusa) + scripts/sfx/src/core dari starter terbaru; node_modules junction ke _cache/remotion-r3f. Kit hd2d via new-project = framework lain, tidak dipakai."
+        }
+      ],
+      "doneAt": "2026-11-26T14:13:25.049Z",
+      "startedAt": "2026-11-14T10:01:56.477Z"
     },
     {
       "id": "voice",
       "name": "VO Cartesia + analisis timing + timeline",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-26T14:14:33.528Z",
+          "text": "VO Cartesia 84.35 dtk (208 kata, voice 04b567df), audio/vo.wav + vo-words.json; project/public/audio/vo.wav; timeline.json via src/scenes/umar/build-timeline.mjs (lead 0, total 88.0). Bagian: hook 0.5-7.6, intro 8.0-16.9, ronda 17.5-24.6, periuk 25.0-41.7, karung 42.2-53.0, ramadah 53.4-63.8, hisab 64.1-73.7, payoff 74.8-84.35."
+        }
+      ],
+      "doneAt": "2026-11-26T14:14:33.528Z"
     },
     {
       "id": "animation",
       "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-26T14:12:45.725Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-26T14:42:53.815Z",
+          "text": "src/scenes/umar: UmarFilm.tsx + SetsNight.tsx (peta, kemah/periuk, Madinah, Harrah) + SetsDay.tsx (gudang, Ramadah, kamar hisab, masjid fajar) + world.tsx + sprites.ts + camera.ts (10 CUTS dari kata VO) + Overlay.tsx. Comp UmarPreview/UmarFinal (60 fps, TOTAL 88) + UmarCover di Root.tsx. style/cover-topic.png. docs/SHOTLIST.md, public/audio/sfx.wav -26 LUFS (26 bunyi). node_modules junction diarahkan ulang ke AUDIRA_FAKTA_OLAHRAGA_2026/studio/node_modules (target lama hilang)."
+        }
+      ],
+      "doneAt": "2026-11-26T14:42:53.815Z",
+      "startedAt": "2026-11-11T10:29:46.602Z"
     },
     {
       "id": "draft",
       "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-26T14:42:59.025Z",
+          "text": "Putaran 1 LOLOS. draft/DRAFT_SHEET.jpg (8 frame: 2.5, 12.5, 36.5, 44.2, 56.6, 70.8, 76.3, 86.5 dtk), audit ceilings semua 5, camera 5/5 (klip CHECK_47-65s.mp4), diversity 27.2. THEME_CHECK.md 8 baris ya. Self 4.17; juri buta 4.33 (L4 M4 D5 C4 Mo5 R4). Terlemah: karung hero terbaca jeriken plastik (frame 4), unta terpotong tepi kiri di bawah kartu HUD (frame 5). SFX -26 LUFS; VO mentah -29 LUFS (render:final loudnorm -16 → jarak ≈14 LU, G18c ok)."
+        }
+      ],
+      "doneAt": "2026-11-26T14:42:59.025Z"
     },
     {
       "id": "final",
       "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
       "gate": true,
-      "status": "pending",
-      "approved": false,
-      "approvedAt": null,
-      "notes": []
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-26T16:27:28.077Z",
+      "notes": [
+        {
+          "at": "2026-11-26T16:27:28.077Z",
+          "text": "Acc pengguna 2026-11-26: \"Gas render\". G18c: VO -29 -> loudnorm -16, SFX -26 -> -30 efektif, selisih ~14 LU."
+        },
+        {
+          "at": "2026-11-26T18:52:48.609Z",
+          "text": "FINAL_EP17_UMAR_PERIUK.mp4 1080x1920@60, 88 dtk, -13.7 LUFS TP -1.8, G18c 13.3 LU, metadata + signature valid. Self final 3.83 (depth cap 3)."
+        }
+      ],
+      "startedAt": "2026-11-26T16:27:28.077Z",
+      "doneAt": "2026-11-26T18:52:48.608Z"
     },
     {
       "id": "delivery",
       "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-26T18:51:23.861Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        },
+        {
+          "at": "2026-11-26T18:52:48.779Z",
+          "text": "SOCIAL_CAPTIONS.md valid (6 platform, jadwal Minggu 13 Des 2026 19.00 WIB), SUBTITLES.srt, NOTES.md, lessons HD2D+GLOBAL, review tasks review-umar-periuk-24h/72h/7d."
+        }
+      ],
+      "doneAt": "2026-11-26T18:52:48.779Z",
+      "startedAt": "2026-11-26T18:45:05.648Z"
     },
     {
       "id": "review",
@@ -109,7 +176,344 @@
     }
   ],
   "data": {
-    "memoryEpisode": "sejarah-islam-EP17"
+    "memoryEpisode": "sejarah-islam-EP17",
+    "style": "HD2D",
+    "engine": "remotion",
+    "shortTitle": "Umar Periuk",
+    "wordCount": 208,
+    "title": "Saat Umar bin Khattab Menangis di Depan Periuk Berisi Air",
+    "estimatedDuration": {
+      "wordCount": 208,
+      "minSec": 83,
+      "maxSec": 92
+    },
+    "voDuration": 84.35,
+    "total": 88
   },
-  "syncedAt": "2026-11-25T09:34:12.983Z"
+  "syncedAt": "2026-11-26T18:51:23.861Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-26T14:09:49.679Z",
+      "doing": "Sesi A selesai: style HD2D (Remotion+R3F, diorama 3D + sprite piksel tanpa wajah), alt FILMNOIR/MOSAICFORGE ditolak. Naskah final 208 kata (~83-92 dtk), judul dikoreksi \"Saat Umar bin Khattab Menangis di Depan Periuk Berisi Air\", teks TTS pakai \"Audira\". ART_DIRECTION/STORYBOARD/ASSET_MANIFEST terisi. shortTitle \"Umar Periuk\". Cover topik belum (render di Sesi B dari frame hook).",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/ART_DIRECTION.md",
+        "docs/SCRIPT.md (teks VO saja)"
+      ],
+      "next": "Sesi B: tahap setup. Salin starter baru (node F:/AUDIRA-SKILL-MOTION/new-project.mjs project --kit=hd2d) atau salin pola EP04 (AUDIRA_SEJARAH_ISLAM_2026/EP04_MANSA_MUSA_EMAS_KAIRO/project, scenes/mansamusa: pixel.tsx sprite voxel, time.ts W()/timeline.json, Overlay.tsx, mix.py, Finish DOCUMENTARY_WARM) ke src/scenes/umar. node_modules = junction ke F:/AUDIRA-VIDEO-MOTION/_cache/remotion-r3f/node_modules. VO: audira_generate_voiceover teks VO SCRIPT.md, lalu bangun timeline.json (lines/parts/words). Draf contact sheet + juri buta, lalu handover Sesi C.",
+      "snapshot": {
+        "episode": "EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP17",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T14:15:26.446Z",
+      "doing": "Sesi B (lanjutan, batas konteks): tahap 5 setup SELESAI, tahap 6 VO SELESAI. Tahap 7 animasi BELUM dimulai (STATUS checklist menandai 7 ✓ karena sync otomatis — abaikan, kode adegan belum ada).",
+      "files": [
+        "project/src/scenes/umar/ (disalin dari EP04 mansamusa: pixel.tsx, time.ts, Overlay.tsx, camera.ts, mix.py — Overlay/camera MASIH isi EP04, wajib ditulis ulang)",
+        "project/src/scenes/umar/timeline.json + build-timeline.mjs (VO 84.35 dtk, total 88.0, lead 0)",
+        "project/src/scenes/mansamusa/ (referensi pola: CairoMarket.tsx Sky/Dome/Minaret, MansaMusaFilm.tsx lampu+Finish, MapTable.tsx peta relief)",
+        "project/public/audio/vo.wav",
+        "project/public/models/polyfork/*.glb (campfire-cook-tripod-d95a1e, canvas-ridge-tent-f0df0d, clay-storage-pot-626452, gold-balance-scale-66497b, grain-sack-401d96, bread-loaf-0e0ab5) via <AssetModel id=... size ground polish/>",
+        "audio/vo-lines.txt, audio/vo-words.json"
+      ],
+      "next": "Sesi B lanjutan: tahap 7 — tulis src/scenes/umar (UmarFilm.tsx multi-scene ≥8 set sesuai docs/STORYBOARD.md, camera.ts CUTS/SEGMENTS pakai W() kata VO, Overlay.tsx: PINS/Hud/Captions CUTS per l01–l25, CoverTitle \"UMAR MENANGIS / DI DEPAN PERIUK\", sprite tanpa wajah di pixel.tsx), daftarkan UmarFilm + UmarCover di src/Root.tsx (hapus import mansamusa), npm run typecheck, still per beat, cover-topic.png dari frame hook ke style/, npm run sfx. Lalu tahap 8: contact sheet 6–8 frame + audit:visual + draft/THEME_CHECK.md + juri self + juri buta subagent (record_score). Lalu handover newSession → Sesi C.",
+      "snapshot": {
+        "episode": "EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP17",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T14:43:22.733Z",
+      "doing": "Sesi B selesai (tahap 7–8). Style HD2D, engine Remotion + R3F. VO 84.35 dtk, film 88.0 dtk @60. 8 set / 11 segmen di project/src/scenes/umar (UmarFilm, SetsNight, SetsDay, world, sprites, camera, Overlay). Comp: UmarPreview, UmarFinal, UmarCover. Draf putaran 1 LOLOS: juri buta 4.33 (lighting 4, material 4, depth 5, composition 4, motion 5, readability 4), self 4.17; ceilings audit semua 5, camera 5/5, diversity 27.2. Contact sheet draft/DRAFT_SHEET.jpg, THEME_CHECK 8/8 ya. Terlemah: karung hero frame 4 terbaca jeriken plastik; unta frame 5 terpotong kiri di bawah kartu HUD (opsional poles sebelum final, tanpa juri ulang wajib). SFX public/audio/sfx.wav -26 LUFS (G18); VO mentah -29 LUFS, render:final loudnorm -16 → VO ≈14 LU di atas SFX (G18c ok, ukur ulang di final). node_modules junction kini → F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/studio/node_modules (target lama hilang). typecheck: kode umar bersih; 6 error lama starter (lucide-react, scene-qa, palette kit) tidak terkait.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/DRAFT_REPORT.json",
+        "draft/THEME_CHECK.md",
+        "style/cover-topic.png",
+        "docs/SHOTLIST.md",
+        "project/src/scenes/umar/UmarFilm.tsx",
+        "project/src/scenes/umar/camera.ts",
+        "project/src/scenes/umar/Overlay.tsx",
+        "project/public/audio/sfx.wav",
+        "project/public/audio/vo.wav"
+      ],
+      "next": "Sesi C: tahap 9 gerbang acc — tunjukkan draft/DRAFT_SHEET.jpg + skor juri 4.33 + durasi 88 dtk + G18c, tunggu acc, lalu render final: (di project/) node scripts/render-final.mjs --comp=UmarFinal --out=../FINAL_VIDEO.mp4 --vo=public/audio/vo.wav --offset=0 --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc",
+      "snapshot": {
+        "episode": "EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP17",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-26T14:43:49.241Z",
+      "doing": "Sesi B selesai: tahap 5–8. Juri buta draf 4.33 LOLOS putaran 1 (lighting 4, material 4, depth 5, composition 4, motion 5, readability 4); self 4.17. Kelemahan: karung tepung frame 4 terbaca seperti jerigen plastik, unta terpotong tepi kiri di frame 5 di bawah kartu HUD; diversity 27.2 (<30, tidak membatasi skor).",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/look.json",
+        "draft/camera.json",
+        "style/cover-topic.png",
+        "project/src/scenes/umar/ (UmarFilm.tsx, SetsNight.tsx, SetsDay.tsx, world.tsx, sprites.ts, camera.ts, Overlay.tsx)",
+        "project/src/Root.tsx (UmarPreview, UmarFinal, UmarCover)",
+        "project/public/audio/vo.wav, project/public/audio/sfx.wav",
+        "docs/SHOTLIST.md"
+      ],
+      "next": "Sesi C tahap 9: tampilkan draft/DRAFT_SHEET.jpg, skor juri 4.33, durasi 88.0 dtk (VO 84.35), cek G18c (sfx.wav −26 LUFS 26 cue; VO mentah −29 LUFS → loudnorm −16, perkiraan VO ~14 LU di atas SFX), tunggu acc pengguna. Opsional sebelum acc: perbaiki karung (pakai GLB grain-sack-401d96 / material kain) & unta terpotong. Setelah acc: cek audira_render_batch queue, render UmarFinal 1080×1920@60 via audira_render_batch (project=project, comp UmarFinal, vo public/audio/vo.wav, sfx public/audio/sfx.wav, slug umar-periuk, ep EP17, title judul), QA −14 LUFS TP<−1, metadata, record_score final, lalu tahap 10.",
+      "snapshot": {
+        "episode": "EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP17",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-26T16:52:42.858Z",
+      "doing": "Sesi C tahap 9: acc pengguna SUDAH (\"Gas render\", tercatat final approved). render_batch start ditolak gerbang pra-render berurutan; sudah diperbaiki: (1) G14 rig: draft/rig-audit.json per-segmen 5/5 (film pakai 10 hard cut di bawah veil; key tengah seg2 & seg5 di camera.ts jadi pass-through M, dorong seg2 diperpendek; wrapper audit di scratchpad umar-seg.ts). (2) look.json crushLo: meja peta diperbesar 7.0x9.0 + bg peta #2E2026 (SetsNight.tsx), vignette set map x0.6 (Overlay.tsx L277), lift screen #100D13 hanya set harrah & mosque (Overlay.tsx L279). (3) clipHi outro: frame kunci f2595 (kartu outro brand) dipindah ke draft/_stills/_extra, diganti f2475 (payoff periuk). Frame kunci sekarang 10: 75,375,630,1095,1326,1698,1830,2124,2289,2475 (UmarPreview 30fps). Semua crush ≤0.6, clipHi 0, tidak ada aspek tercap. SISA: keyframe diversity 29.3 < 30 (gerbang look.json).",
+      "files": [
+        "project/src/scenes/umar/camera.ts",
+        "project/src/scenes/umar/SetsNight.tsx",
+        "project/src/scenes/umar/Overlay.tsx",
+        "draft/rig-audit.json",
+        "draft/look.json",
+        "draft/_stills/",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "Naikkan diversity ≥30 secara jujur (mis. pilih frame kunci yang mewakili beat berbeda, atau tambah perbedaan warna/value antar set malam yang mirip: camp f1095 vs payoff f2475), npm run audit:visual -- ../draft/_stills --style=HD2D --json=../draft/look.json --sheet=../draft/compare.jpg (dari project/), lalu audira_render_batch start (project F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN/project, comp UmarFinal, vo public/audio/vo.wav, sfx public/audio/sfx.wav, slug umar-periuk, ep EP17, title \"Saat Umar bin Khattab Menangis di Depan Periuk Berisi Air\"). Lalu QA -14 LUFS TP<-1, ffprobe metadata, record_score final, tahap 10 (SOCIAL_CAPTIONS 6 platform + jadwal WIB + label AI, validasi, NOTES.md, lesson HD2D: G14 rig untuk film ber-cut butuh audit per segmen; gerbang look.json cek crush per frame ≤2% & clipHi 0 & diversity ≥30, sebaiknya dijalankan di sesi B; hapus perantara; 3 scheduled task review). Antrean QISSAH berikut: EP20, EP21, EP22, EP23 (Sesi A/B/C masing-masing).",
+      "snapshot": {
+        "episode": "EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP17",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-26T16:53:22.501Z",
+      "doing": "Sesi C (s4) habis konteks di tahap 9. Acc render final SUDAH dari pengguna (\"Gas render\"). Gerbang G14 rig lolos (5/5 per segmen). look.json: crush/clipHi beres, tidak ada aspek tercap; sisa diversity 29.3 < 30 (10 frame kunci: 75,375,630,1095,1326,1698,1830,2124,2289,2475 @UmarPreview 30fps). Membuang f2475 tidak menaikkan diversity.",
+      "files": [
+        "draft/look.json",
+        "draft/_stills/",
+        "draft/compare.jpg",
+        "draft/rig-audit.json",
+        "draft/THEME_CHECK.md",
+        "project/src/scenes/umar/Overlay.tsx",
+        "project/src/scenes/umar/SetsNight.tsx",
+        "project/src/scenes/umar/SetsDay.tsx",
+        "project/src/scenes/umar/camera.ts"
+      ],
+      "next": "Sesi C lanjutan tahap 9: naikkan keyframe diversity ≥30 dengan perbaikan visual nyata (set malam camp/store/room terlalu mirip warna-value: mis. bedakan grade/warna cahaya set room (biru dingin lilin) atau store (lebih terang/hangat), atau frame kunci beat lain yang belum terwakili seperti pot hook ±5.5 dtk = frame 165). Jalankan dari project/: render still yang berubah `npx remotion still src/index.ts UmarPreview ../draft/_stills/fNNNN.png --frame=NNNN --gl=angle --log=error`, lalu `npm run audit:visual -- ../draft/_stills --style=HD2D --json=../draft/look.json --sheet=../draft/compare.jpg`. Gerbang look.json: tiap frame crushLo ≤2%, clipHi 0, diversity ≥30, tak ada aspek < 4. Lalu audira_render_batch start (project F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN/project, comp UmarFinal, vo public/audio/vo.wav, sfx public/audio/sfx.wav, slug umar-periuk, ep EP17, title \"Saat Umar bin Khattab Menangis di Depan Periuk Berisi Air\"), QA -14 LUFS TP<-1, ffprobe metadata, record_score final, lalu tahap 10. Antrean QISSAH sesudahnya: EP20, EP21, EP22, EP23.",
+      "snapshot": {
+        "episode": "EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP17",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-26T18:43:52.646Z",
+      "doing": "render final (UmarFinal)",
+      "command": "audira_render_batch start",
+      "batchId": "20261126-184352",
+      "files": [
+        "out/UmarFinal.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261126-184352); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang.",
+      "snapshot": {
+        "episode": "EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP17",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-26T18:45:46.915Z",
+      "doing": "render final (UmarFinal)",
+      "command": "audira_render_batch start",
+      "batchId": "20261126-184546",
+      "files": [
+        "out/UmarFinal.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261126-184546); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang.",
+      "snapshot": {
+        "episode": "EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP17",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-26T18:47:30.109Z",
+      "doing": "render final (UmarFinal)",
+      "command": "audira_render_batch start",
+      "batchId": "20261126-184730",
+      "files": [
+        "out/UmarFinal.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261126-184730); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang.",
+      "snapshot": {
+        "episode": "EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP17",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    }
+  ],
+  "session": 5,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP17 Umar Periuk · s2",
+      "phase": "B",
+      "at": "2026-11-26T14:09:49.679Z"
+    },
+    {
+      "no": 3,
+      "title": "EP17 Umar Periuk · s3",
+      "phase": "B",
+      "at": "2026-11-26T14:15:26.445Z"
+    },
+    {
+      "no": 4,
+      "title": "EP17 Umar Periuk · s4",
+      "phase": "C",
+      "at": "2026-11-26T14:43:49.241Z"
+    },
+    {
+      "no": 5,
+      "title": "EP17 Umar Periuk · s5",
+      "phase": "C",
+      "at": "2026-11-26T16:53:22.501Z"
+    }
+  ],
+  "handover": {
+    "at": "2026-11-26T18:47:30.109Z",
+    "doing": "render final (UmarFinal)",
+    "command": "audira_render_batch start",
+    "batchId": "20261126-184730",
+    "files": [
+      "out/UmarFinal.mp4"
+    ],
+    "next": "cek audira_render_batch status (batch 20261126-184730); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang.",
+    "snapshot": {
+      "episode": "EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN",
+      "topic": "Sejarah peradaban Islam yang jarang diketahui",
+      "style": "HD2D",
+      "memoryEpisode": "sejarah-islam-EP17",
+      "currentStage": "final",
+      "gates": {
+        "final": {
+          "approved": true,
+          "status": "in_progress"
+        }
+      },
+      "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN/audio/vo.wav",
+      "draftScores": [],
+      "finals": [],
+      "draftRounds": 0
+    }
+  }
 }

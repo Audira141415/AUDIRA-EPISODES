@@ -1,6 +1,8 @@
-# Naskah — Saat Umar bin Khattab Menangis Sendirian di Malam Hari
+# Naskah — Saat Umar bin Khattab Menangis di Depan Periuk Berisi Air
 
-> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+Style: HD2D
+
+> FINAL tahap 4 (2026-11-26). Judul dikoreksi sesuai riset (tidak ada riwayat Umar menangis sendirian). Teks TTS menulis "Audira", bukan AUDIRA.
 > Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
@@ -57,7 +59,7 @@
 - Kata: **25** · estimasi **11 dtk**
 - Visual: Masjid berjamaah saat fajar dari shaf paling belakang, barisan punggung jamaah, gelombang suara isak merambat ke belakang (visual riak cahaya). Lalu kembali ke periuk yang kini berisi bubur hangat, api padam pelan, fade ke outro card AUDIRA. HUD: "terdengar sampai shaf terakhir".
 
-> Isak tangisnya pernah terdengar sampai shaf paling belakang. Kekuasaan sebesar itu, dan yang ia takutkan cuma satu: ditanya Allah tentang rakyatnya. Kisah berikutnya, di AUDIRA.
+> Isak tangisnya pernah terdengar sampai shaf paling belakang. Kekuasaan sebesar itu, dan yang ia takutkan cuma satu: ditanya Allah tentang rakyatnya. Kisah berikutnya, di Audira.
 
 ## Opsi hook lain
 
