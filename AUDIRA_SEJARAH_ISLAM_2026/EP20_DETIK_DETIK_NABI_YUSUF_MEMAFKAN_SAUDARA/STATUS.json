@@ -3,8 +3,8 @@
   "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
   "topic": "Sejarah peradaban Islam yang jarang diketahui",
   "createdAt": "2026-11-25T02:39:47.471Z",
-  "updatedAt": "2026-11-25T09:34:13.035Z",
-  "currentStage": "style",
+  "updatedAt": "2026-11-26T23:30:24.986Z",
+  "currentStage": "setup",
   "sessionPhase": "A",
   "stages": [
     {
@@ -39,8 +39,14 @@
       "id": "style",
       "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-26T23:30:19.750Z",
+          "text": "HD2D 3D Remotion+R3F dipilih AI (alt ISLAMICDOCUMENTARY, MOSAICFORGE). cover-reference.png disalin; cover-topic.png dirender di Sesi B setelah scaffold (pola EP17)."
+        }
+      ],
+      "doneAt": "2026-11-26T23:30:19.750Z"
     },
     {
       "id": "script",
@@ -51,9 +57,13 @@
         {
           "at": "2026-11-25T09:34:13.035Z",
           "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-26T23:30:24.986Z",
+          "text": "SCRIPT final 208 kata (8 chapter), STORYBOARD 8 set, ART_DIRECTION, ASSET_MANIFEST, STYLE_DECISION ditulis 2026-11-27, semua baris Style: HD2D."
         }
       ],
-      "doneAt": "2026-11-25T03:15:13.562Z",
+      "doneAt": "2026-11-26T23:30:24.986Z",
       "startedAt": "2026-11-25T03:15:13.562Z"
     },
     {
@@ -109,7 +119,69 @@
     }
   ],
   "data": {
-    "memoryEpisode": "sejarah-islam-EP20"
+    "memoryEpisode": "sejarah-islam-EP20",
+    "style": "HD2D",
+    "engine": "remotion",
+    "shortTitle": "Yusuf Memaafkan",
+    "wordCount": 208,
+    "estimatedDuration": {
+      "wordCount": 208,
+      "minSec": 83,
+      "maxSec": 92
+    }
   },
-  "syncedAt": "2026-11-25T09:34:13.035Z"
+  "syncedAt": "2026-11-25T09:34:13.035Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-26T18:53:30.537Z",
+      "doing": "Antrean QISSAH: EP17 Umar Periuk selesai (final, caption, review terjadwal, commit 658c0fe8). EP20 belum dimulai produksinya; riset sudah ada di folder.",
+      "next": "Sesi A EP20 (tahap 0–4): preflight, baca aturan seperlunya, riset yang sudah ada (jangan riset ulang), style + engine dipilih AI (adab: tanpa wajah nabi), cover topik, naskah 190–210 kata + storyboard + manifest. Pelajaran EP17 untuk sesi B: cek G18c (stem SFX -28 LUFS), node scripts/channel.mjs --check (pakai <AudiraOutro code=QISSAH>), look.json crush ≤2%/diversity ≥30, dan audit separasi set malam di sesi B.",
+      "snapshot": {
+        "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": null,
+        "memoryEpisode": "sejarah-islam-EP20",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    }
+  ],
+  "session": 2,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP20 Sejarah peradaban Islam yang jarang diketahui · s2",
+      "phase": "A",
+      "at": "2026-11-26T18:53:30.537Z"
+    }
+  ],
+  "handover": {
+    "at": "2026-11-26T18:53:30.537Z",
+    "doing": "Antrean QISSAH: EP17 Umar Periuk selesai (final, caption, review terjadwal, commit 658c0fe8). EP20 belum dimulai produksinya; riset sudah ada di folder.",
+    "next": "Sesi A EP20 (tahap 0–4): preflight, baca aturan seperlunya, riset yang sudah ada (jangan riset ulang), style + engine dipilih AI (adab: tanpa wajah nabi), cover topik, naskah 190–210 kata + storyboard + manifest. Pelajaran EP17 untuk sesi B: cek G18c (stem SFX -28 LUFS), node scripts/channel.mjs --check (pakai <AudiraOutro code=QISSAH>), look.json crush ≤2%/diversity ≥30, dan audit separasi set malam di sesi B.",
+    "snapshot": {
+      "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
+      "topic": "Sejarah peradaban Islam yang jarang diketahui",
+      "style": null,
+      "memoryEpisode": "sejarah-islam-EP20",
+      "currentStage": "style",
+      "gates": {
+        "final": {
+          "approved": false,
+          "status": "pending"
+        }
+      },
+      "voPath": null,
+      "draftScores": [],
+      "finals": []
+    }
+  }
 }
