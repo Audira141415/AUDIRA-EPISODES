@@ -5,7 +5,11 @@ title: "Suku Bunga Naik, Cicilanmu Ikut Naik — Ini Rantainya"
 hook: "Satu keputusan rapat bank sentral bisa sampai ke tagihan KPR di rumahmu"
 styleCandidates: ["CHAINREACTION (2D)", "DATAPHYSICAL (2D)", "TRADINGTERMINAL (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: tidak
+risiko: "Angka BI-Rate cepat basi (cek ulang tiap RDG), simulasi cicilan wajib dilabeli ilustrasi, rule 15 tanpa wajah/logo BI-OJK-bank dan netral menilai kebijakan."
 ---
 
 # Suku Bunga Naik, Cicilanmu Ikut Naik — Ini Rantainya

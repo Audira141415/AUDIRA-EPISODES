@@ -5,7 +5,11 @@ title: "Ke Mana Perginya Uang Saat Kamu Bayar Pakai QR"
 hook: "Scan satu kode, saldo pindah dalam dua detik — padahal ada lima pihak yang terlibat"
 styleCandidates: ["CIRCUITFORGE (2D)", "CHAINREACTION (2D)", "DATAPHYSICAL (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: tidak   # tidak = fakta cepat basi (rekor, harga, produk)
+risiko: "Tarif MDR dan jumlah pengguna cepat berubah (wajib 'per <tanggal>' dan cek ulang); hook 'dua detik' tidak bersumber; rule 15 tanpa merek bank/aplikasi"
 ---
 
 # Ke Mana Perginya Uang Saat Kamu Bayar Pakai QR

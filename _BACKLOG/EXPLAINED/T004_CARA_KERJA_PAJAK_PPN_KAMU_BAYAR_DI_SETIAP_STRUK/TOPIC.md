@@ -5,7 +5,11 @@ title: "Cara Kerja Pajak PPN: Kamu Bayar di Setiap Struk Belanja"
 hook: "Ada angka kecil di struk minimarket yang ternyata ikut membiayai jalan di depan rumahmu"
 styleCandidates: ["DATAPHYSICAL (2D)", "BONGKAR (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: tidak   # tidak = fakta cepat basi (rekor, harga, produk)
+risiko: "Tarif PPN bisa berubah (tulis per 26 Nov 2026) dan isu kenaikan 12% sensitif politik; rule 15 netral, tanpa logo minimarket nyata."
 ---
 
 # Cara Kerja Pajak PPN: Kamu Bayar di Setiap Struk Belanja

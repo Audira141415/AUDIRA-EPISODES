@@ -5,7 +5,11 @@ title: "Kenapa Rupiah Bisa Melemah Terhadap Dolar"
 hook: "Tidak ada yang mengatur angka kurs tiap pagi — lalu siapa yang menentukannya?"
 styleCandidates: ["TRADINGTERMINAL (2D)", "DATAPHYSICAL (2D)", "CHAINREACTION (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: tidak   # tidak = fakta cepat basi (rekor, harga, produk)
+risiko: "Angka kurs cepat basi (cek ulang JISDOR sebelum VO); hook asli perlu koreksi karena BI menerbitkan kurs acuan harian dan mengintervensi; rule 15 netral politik, tanpa logo BI/bank."
 ---
 
 # Kenapa Rupiah Bisa Melemah Terhadap Dolar
