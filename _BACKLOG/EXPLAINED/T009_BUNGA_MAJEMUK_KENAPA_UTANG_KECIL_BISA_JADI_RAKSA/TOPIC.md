@@ -5,7 +5,11 @@ title: "Bunga Majemuk: Kenapa Utang Kecil Bisa Jadi Raksasa"
 hook: "Pinjaman Rp1 juta bisa berlipat jauh lebih besar kalau kamu tidak paham rumus ini"
 styleCandidates: ["DATAPHYSICAL (2D)", "SCALEFORGE (3D)", "CHAINREACTION (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # konsep rumus awet; batas bunga OJK "per Nov 2026" perlu dicek ulang saat produksi
+risiko: "Hook asli melebihkan: pindar berizin dibatasi total maks 100% pokok (Rp1 jt maks Rp2 jt), jadi angka 'hampir 3 juta' wajib diberi label ilustrasi; batas OJK bisa berubah; rule 15 tanpa logo OJK/aplikasi, bukan nasihat keuangan."
 ---
 
 # Bunga Majemuk: Kenapa Utang Kecil Bisa Jadi Raksasa

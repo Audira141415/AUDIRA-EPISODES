@@ -5,7 +5,11 @@ title: "Cara Kerja Asuransi: Bisnis Menjual Rasa Aman"
 hook: "Ribuan orang membayar sedikit supaya satu orang yang sial tidak bangkrut"
 styleCandidates: ["CERDIK (2D)", "DATAPHYSICAL (2D)", "TOYDIORAMA (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # konsep awet; angka premi/klaim/penetrasi "per 2024" perlu dicek ulang saat produksi
+risiko: "Rule 15: tanpa merek/logo perusahaan asuransi, OJK, atau BPJS; netral dan bukan nasihat keuangan; angka OJK 2024 termasuk BPJS dan bisa digantikan buku statistik 2025."
 ---
 
 # Cara Kerja Asuransi: Bisnis Menjual Rasa Aman

@@ -5,7 +5,11 @@ title: "Rahasia Pengaman di Selembar Uang Kertas"
 hook: "Terawang uangmu ke lampu — ada tujuh lapisan pengaman yang sulit ditiru"
 styleCandidates: ["BONGKAR (2D)", "PRECISION (2D)", "NANOFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # ciri 3D stabil; detail per seri (TE 2022) dan pasal pidana perlu cek ulang saat produksi
+risiko: "Hook 'tujuh lapisan' tidak akurat (BI: 8 ciri 3D + UV); rule 15: uang digambar generik tanpa wajah pahlawan/logo BI dan bukan replika yang bisa dicetak; detail TE 2022 per pecahan belum terkonfirmasi."
 ---
 
 # Rahasia Pengaman di Selembar Uang Kertas

@@ -5,7 +5,11 @@ title: "Perjalanan Sebutir Beras dari Sawah sampai Piringmu"
 hook: "Beras di piringmu sudah berpindah tangan setidaknya enam kali"
 styleCandidates: ["PAPERWORLD (2D)", "CHAINREACTION (2D)", "WORLDFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # alur rantai pasok awet; harga, HET, dan cadangan cepat basi
+risiko: "Hook asli (setidaknya enam kali) dilebihkan, dikoreksi jadi bisa lima kali; margin BPS dari 2018 perlu dicek versi terbaru; HET/harga/cadangan cepat basi; rule 15: tanpa logo Bulog/Bapanas/BPS, netral soal HET dan impor."
 ---
 
 # Perjalanan Sebutir Beras dari Sawah sampai Piringmu

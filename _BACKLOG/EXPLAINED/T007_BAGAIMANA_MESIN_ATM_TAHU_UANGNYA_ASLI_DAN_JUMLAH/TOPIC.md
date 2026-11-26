@@ -5,7 +5,11 @@ title: "Bagaimana Mesin ATM Tahu Uangnya Asli dan Jumlahnya Pas"
 hook: "Di dalam ATM ada sensor yang menghitung lembar uang lebih teliti dari kasir"
 styleCandidates: ["INNERWORKS (3D)", "BONGKAR (2D)", "PRECISION (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # mekanisme awet; batas setor tunai 100 lembar (satu bank) per 2026-11-26 bisa berubah
+risiko: "Hook asli (lebih teliti dari kasir) tidak terverifikasi dan sudah dikoreksi; rule 15: tanpa logo bank/BI, uang kertas generik bukan replika rupiah; aturan cek mesin sebelum isi ATM untuk Indonesia belum ditemukan di sumber publik BI."
 ---
 
 # Bagaimana Mesin ATM Tahu Uangnya Asli dan Jumlahnya Pas

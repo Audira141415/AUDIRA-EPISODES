@@ -5,7 +5,11 @@ title: "Kenapa Harga Cabai Bisa Naik Lima Kali Lipat dalam Sebulan"
 hook: "Hujan di satu kabupaten bisa membuat sambal di warung kota lain mendadak mahal"
 styleCandidates: ["CHAINREACTION (2D)", "DATAPHYSICAL (2D)", "TERRARIUM (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # mekanisme awet; angka harga "per Nov 2026" perlu diperbarui saat produksi
+risiko: "Judul 'lima kali lipat dalam sebulan' tidak didukung data (terdokumentasi ±2-3x sebulan, ±5x per musim) sehingga judul perlu dikoreksi; harga cepat basi; rule 15: netral, tanpa menyalahkan pedagang/pemerintah."
 ---
 
 # Kenapa Harga Cabai Bisa Naik Lima Kali Lipat dalam Sebulan
