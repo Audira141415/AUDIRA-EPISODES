@@ -5,7 +5,11 @@ title: "Tarif Ojek Online Naik Saat Hujan — Begini Rumusnya"
 hook: "Algoritma menghitung jumlah pemesan dan pengemudi setiap beberapa detik"
 styleCandidates: ["DATAPHYSICAL (2D)", "CIRCUITFORGE (2D)", "URBANFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: tidak   # angka tarif dan komisi ojol sedang berubah (Perpres 27/2026, aturan turunan s.d. 31 Des 2026)
+risiko: "Hook asli (setiap beberapa detik) tidak terverifikasi, diganti real-time; rumus surge aplikator tidak publik; angka tarif KP 667/2022 bisa berubah oleh aturan turunan Perpres 27/2026; rule 15: tanpa nama/logo aplikator, netral soal komisi."
 ---
 
 # Tarif Ojek Online Naik Saat Hujan — Begini Rumusnya

@@ -5,7 +5,11 @@ title: "Kenapa Harga Emas Naik Saat Dunia Sedang Panik"
 hook: "Saat berita buruk muncul, orang di seluruh dunia berbondong-bondong ke logam yang sama"
 styleCandidates: ["TRADINGTERMINAL (2D)", "DATAPHYSICAL (2D)", "SCALEFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: tidak   # mekanisme safe haven awet; harga emas dan pembelian bank sentral cepat basi
+risiko: "Harga emas sangat berubah (puncak Jan 2026 lalu turun ±25% per Nov 2026), wajib tulis per tanggal; hook asli terlalu umum, dikoreksi; rule 15: tanpa merek emas, logo lembaga, atau pihak konflik; bukan nasihat investasi."
 ---
 
 # Kenapa Harga Emas Naik Saat Dunia Sedang Panik

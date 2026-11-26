@@ -5,7 +5,11 @@ title: "Kenapa Harga Tiket Pesawat Berubah Setiap Kali Kamu Cek"
 hook: "Kursi yang sama di pesawat yang sama bisa punya sepuluh harga berbeda"
 styleCandidates: ["DATAPHYSICAL (2D)", "CHAINREACTION (2D)", "PRECISION (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # mekanisme awet; TBA, persentase kelompok layanan, dan fuel surcharge cepat basi
+risiko: "Hook asli (sepuluh harga) tidak bersumber, dikoreksi jadi sampai 26 kelas pemesanan; judul memancing mitos cookie yang tidak terbukti (studi 2014, perlu nuansa); PM 20/2019 & KM 106/2019 sedang direvisi; rule 15: tanpa nama/logo maskapai, OTA, dan kementerian."
 ---
 
 # Kenapa Harga Tiket Pesawat Berubah Setiap Kali Kamu Cek

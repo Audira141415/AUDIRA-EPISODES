@@ -5,7 +5,11 @@ title: "Cara Kerja Subsidi: Siapa yang Sebenarnya Membayar Selisih Harga"
 hook: "Harga di SPBU bukan harga asli — ada selisih yang dibayar dari kas negara"
 styleCandidates: ["DATAPHYSICAL (2D)", "CHAINREACTION (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # mekanisme subsidi vs kompensasi awet; angka per liter dan realisasi cepat basi
+risiko: "Hook asli terlalu umum (tidak semua BBM di SPBU disubsidi; Pertalite secara hukum kompensasi, bukan subsidi), dikoreksi; angka per liter resmi masih per Agustus 2025; rule 15: isu politik sensitif, tanpa logo Pertamina/PLN/Kemenkeu dan tanpa nama pejabat."
 ---
 
 # Cara Kerja Subsidi: Siapa yang Sebenarnya Membayar Selisih Harga

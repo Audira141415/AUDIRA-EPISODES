@@ -5,7 +5,11 @@ title: "Cara Kerja Diskon Besar-besaran: Toko Tetap Untung"
 hook: "Diskon 70% tidak selalu berarti toko rugi — ini hitungan di baliknya"
 styleCandidates: ["BONGKAR (2D)", "DATAPHYSICAL (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-26"
+prioritas: 4
+awet: ya   # rumus margin, loss leader, dan pasal UU awet; contoh rupiah hanya ilustrasi
+risiko: "Rule 15: semua toko, rak, label, dan marketplace wajib generik tanpa merek; angka rupiah wajib berlabel ilustrasi; topik harga coret jangan menuduh pihak tertentu; hook asli perlu nuansa (diskon 70% bisa rugi per barang)."
 ---
 
 # Cara Kerja Diskon Besar-besaran: Toko Tetap Untung
