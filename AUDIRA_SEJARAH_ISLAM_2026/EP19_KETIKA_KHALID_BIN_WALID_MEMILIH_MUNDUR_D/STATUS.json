@@ -3,81 +3,163 @@
   "episode": "EP19_KETIKA_KHALID_BIN_WALID_MEMILIH_MUNDUR_D",
   "topic": "Sejarah peradaban Islam yang jarang diketahui",
   "createdAt": "2026-11-25T02:39:47.289Z",
-  "updatedAt": "2026-11-25T02:39:47.289Z",
-  "currentStage": "context",
-  "sessionPhase": "A",
+  "updatedAt": "2026-11-26T12:51:45.815Z",
+  "currentStage": "review",
+  "sessionPhase": "C",
   "stages": [
     {
       "id": "context",
       "name": "Baca aturan, memori & 2–3 episode terakhir",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-25T09:34:13.017Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-25T09:23:36.423Z",
+      "startedAt": "2026-11-25T09:23:36.423Z"
     },
     {
       "id": "research",
       "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-25T09:34:13.017Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-25T03:14:52.718Z",
+      "startedAt": "2026-11-25T03:14:52.718Z"
     },
     {
       "id": "style",
       "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-25T15:04:30.092Z",
+          "text": "sync: STYLE_DECISION.md ada"
+        },
+        {
+          "at": "2026-11-25T15:04:40.730Z",
+          "text": "HISTORYMAP, Remotion R3F 3D, tanpa figur manusia. Cover topik dirender di Sesi B dari frame hook."
+        }
+      ],
+      "startedAt": "2026-11-25T15:02:01.263Z",
+      "doneAt": "2026-11-25T15:04:40.730Z"
     },
     {
       "id": "script",
       "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-25T09:34:13.017Z",
+          "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-25T15:04:40.916Z",
+          "text": "Naskah ditulis ulang 8 segmen (202 kata); klaim \"jauh lebih besar\" dan \"Homs\" dihapus karena tanpa sumber. Docs ditulis ulang untuk HISTORYMAP (G21)."
+        }
+      ],
+      "doneAt": "2026-11-25T15:04:40.916Z",
+      "startedAt": "2026-11-25T03:15:11.141Z"
     },
     {
       "id": "setup",
       "name": "Scaffold folder + setup kit",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-25T15:07:46.500Z",
+          "text": "starter + kit historymap disalin, node_modules junction, check-env + smoke OK, preflight tanpa blocker; GLB lokal di public/models/polyfork"
+        }
+      ],
+      "doneAt": "2026-11-25T15:07:46.500Z"
     },
     {
       "id": "voice",
       "name": "VO Cartesia + analisis timing + timeline",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-25T15:09:18.549Z",
+          "text": "VO Cartesia 87.86 dtk, 202 kata, loudnorm -16 TP -1.5 dikunci (project/public/audio/vo.wav; mentah audio/vo_raw.wav). Whisper: Mu'tah, Ja'far, Audira terbaca benar (audio/vo_asr.txt). Segmen: audio/vo.segments.json"
+        }
+      ],
+      "doneAt": "2026-11-25T15:09:18.549Z"
     },
     {
       "id": "animation",
       "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-25T15:10:01.289Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-26T11:40:39.208Z",
+          "text": "s7: 4 temuan S6 diperbaiki, beats3 still, cover-topic, SHOTLIST, sfx -28 LUFS"
+        }
+      ],
+      "doneAt": "2026-11-26T11:40:39.208Z",
+      "startedAt": "2026-11-25T15:06:32.947Z"
     },
     {
       "id": "draft",
       "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-26T11:40:42.693Z",
+          "text": "Diterima 3.50 setelah 2 putaran juri buta (comp 3, read 2). draft/contact-sheet.jpg (beats3), look.json tanpa aspek <4, camera 4/5, G18c 14.7 LU, THEME_CHECK lengkap."
+        }
+      ],
+      "doneAt": "2026-11-26T11:40:42.693Z"
     },
     {
       "id": "final",
       "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
       "gate": true,
-      "status": "pending",
-      "approved": false,
-      "approvedAt": null,
-      "notes": []
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-26T12:44:06.935Z",
+      "notes": [
+        {
+          "at": "2026-11-26T12:44:06.935Z",
+          "text": "acc pengguna 2026-11-26: \"Gas render\""
+        },
+        {
+          "at": "2026-11-26T12:50:47.571Z",
+          "text": "FINAL_EP19_KHALID_MUNDUR.mp4 1080x1920@60 91.0s, -13.7 LUFS TP -1.8, metadata ffprobe ok, skor final self 3.67 (draf juri 3.50 setelah 2 putaran)"
+        }
+      ],
+      "startedAt": "2026-11-26T12:44:06.935Z",
+      "doneAt": "2026-11-26T12:50:47.571Z"
     },
     {
       "id": "delivery",
       "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-26T12:51:45.815Z",
+          "text": "SOCIAL_CAPTIONS.md lolos validator, SUBTITLES.srt, NOTES.md, 3 lesson motion memory, file perantara dihapus, scheduled task review-khalid-mundur-24h/72h/7d (upload Jumat 11 Des 2026 19.00 WIB)"
+        }
+      ],
+      "doneAt": "2026-11-26T12:51:45.815Z"
     },
     {
       "id": "review",
@@ -88,6 +170,447 @@
     }
   ],
   "data": {
-    "memoryEpisode": "sejarah-islam-EP19"
-  }
+    "memoryEpisode": "sejarah-islam-EP19",
+    "style": "HISTORYMAP",
+    "engine": "remotion",
+    "shortTitle": "Khalid Mundur",
+    "wordCount": 202,
+    "estimatedDuration": {
+      "wordCount": 202,
+      "minSec": 81,
+      "maxSec": 90
+    }
+  },
+  "syncedAt": "2026-11-25T15:10:01.289Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-25T15:02:01.080Z",
+      "doing": "Sesi A: style dipilih HISTORYMAP, Remotion + R3F 3D (meja peta perang, tanpa figur manusia). Menulis STYLE_DECISION, ART_DIRECTION, SCRIPT, STORYBOARD, ASSET_MANIFEST. Riset sudah diaudit: 7 sumber, 3 HIGH.",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/ART_DIRECTION.md",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md"
+      ],
+      "next": "Selesaikan docs tahap 3–4, lalu handover newSession ke Sesi B (tahap 5).",
+      "snapshot": {
+        "episode": "EP19_KETIKA_KHALID_BIN_WALID_MEMILIH_MUNDUR_D",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": null,
+        "memoryEpisode": "sejarah-islam-EP19",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-25T15:04:41.118Z",
+      "doing": "Sesi A selesai (tahap 0–4; preflight G1 BELUM dijalankan karena project/ belum ada, jalankan setelah scaffold). Style HISTORYMAP, engine Remotion + R3F 3D, tanpa figur manusia sama sekali (panji, kuda, tenda, pedang, kitab). Naskah 202 kata, 8 segmen, estimasi 81–87 dtk. Docs ART_DIRECTION, SCRIPT, STORYBOARD, ASSET_MANIFEST, STYLE_DECISION terisi. VO dan skor juri belum ada.",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/SCRIPT.md (teks VO saja)",
+        "docs/ART_DIRECTION.md (bila perlu)"
+      ],
+      "next": "Sesi B mulai tahap 5: scaffold project/ dari starter + kit historymap, check-env, smoke, preflight; lalu VO Cartesia (tahap 6), adegan + SFX + cover topik (7), contact sheet + THEME_CHECK + juri (8). Render final jangan: menunggu acc pengguna di Sesi C. Perintah render nanti: npm run render:final dengan --vo dan --sfx, --gl=vulkan --encoder=nvenc --jobs=3 bila GPU dibagi.",
+      "snapshot": {
+        "episode": "EP19_KETIKA_KHALID_BIN_WALID_MEMILIH_MUNDUR_D",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP19",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-25T15:09:18.727Z",
+      "doing": "Sesi B bagian 1 selesai (batas token): tahap 5 (scaffold, GLB lokal, check-env, smoke, preflight tanpa blocker) dan tahap 6 (VO terkunci 87.86 dtk). Belum ada kode adegan.",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/ART_DIRECTION.md",
+        "audio/vo.segments.json",
+        "project/public/audio/vo-words.json",
+        "project/src/Root.tsx"
+      ],
+      "next": "Lanjut Sesi B tahap 7: tulis project/src/scenes/khalid/*, daftarkan KhalidPreview/KhalidFinal di Root.tsx (FILM_SECONDS 91.0, OUTRO 3.0), still per beat, SHOTLIST.md, sfx TARGET_LUFS -28, style/cover-topic.png; lalu tahap 8 contact sheet + audit + THEME_CHECK + juri. Detik segmen: s1 0.06-6.47, s2 7.04-16.83, s3 17.46-28.79, s4 29.13-40.91, s5 41.42-53.00, s6 54.04-61.16, s7 61.87-77.04, s8 77.52-87.85. Potongan scene usulan: 0/6.95/17.35/29.08/41.35/53.55/61.7/77.3/91.0.",
+      "snapshot": {
+        "episode": "EP19_KETIKA_KHALID_BIN_WALID_MEMILIH_MUNDUR_D",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP19",
+        "currentStage": "animation",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T10:58:34.483Z",
+      "doing": "Sesi B s3: tahap 7 menulis project/src/scenes/khalid/* (satu dunia meja peta, rig kamera kontinu tanpa cut agar audit:rig 5/5, stasiun Mu'tah(-1.9,-2.7) Madinah(2.6,5.6) Syria(-0.6,-6) kitab(6.8,-4) pedang(6.8,1))",
+      "files": [
+        "project/src/scenes/khalid/",
+        "project/src/Root.tsx"
+      ],
+      "next": "still per beat, audit:rig, cover-topic, SHOTLIST, sfx; lalu tahap 8",
+      "snapshot": {
+        "episode": "EP19_KETIKA_KHALID_BIN_WALID_MEMILIH_MUNDUR_D",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP19",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T11:04:21.975Z",
+      "doing": "Sesi B s3 (batas token): sudah menulis project/src/scenes/khalid/timing.ts (CUTS, ss/lin/ease), geo.ts (lon/lat->meja: x=(lon-37.3)*1.35, z=(29-lat)*1.3, utara=-z; sheet 8.4x14.8; MUTAH/MADINAH/SYRIA, BOOK [6.6,-3.4], SAND [6.6,1.6] di meja timur; ROUTE_LL Madinah-Khaybar-Tayma-Tabuk-Ma'an-Mu'tah; poligon RED_SEA/MED_SEA, DEAD_SEA, JORDAN_LL; heightAt() relief seeded peak + value noise, stasiun diratakan) dan rig.ts (satu penerbangan kamera kontinu TANPA cut, KEYS {t,tg,az,el,dist,fov}, Hermite; export poseAt, rigPose, project() world->layout 1080x1920). audit:rig sekarang 4/5: puncak 2.55 > 1.2 di transisi 18.0-19.1, 28.6-30.4, 40.7-41.9, 53.6-54.2, 60.9-63.8 (flight antar stasiun terlalu cepat). Belum ada komponen TSX, Root belum didaftarkan.",
+      "files": [
+        "project/src/scenes/khalid/timing.ts",
+        "project/src/scenes/khalid/geo.ts",
+        "project/src/scenes/khalid/rig.ts",
+        "docs/STORYBOARD.md",
+        "docs/ART_DIRECTION.md",
+        "docs/ASSET_MANIFEST.md",
+        "style/STYLE_DECISION.md",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "Sesi B lanjutan: (1) perbaiki rig.ts: perlambat flight (mulai lebih awal di ekor VO, tambah key tengah dengan dist lebih besar/arc tinggi, kurangi lompatan az) sampai audit:rig 5/5 (`npm run audit:rig -- src/scenes/khalid/rig.ts rigPose --frames=5460 --fps=60 --json=../draft/rig-audit.json`). (2) tulis World.tsx (meja kayu, sheet peta displaced dari heightAt + tekstur canvas: tint hipsometrik, kontur, laut hatch, grid lat/lon, serat, lipatan, noda; tali emas, pelat kuningan AUDIRA QISSAH di tepi selatan+utara via SceneText; kubah latar gradien; mood cahaya per scene di-blend: key directional mengikuti target kamera + spot pool hangat; rute tube emas tumbuh), Banner.tsx (panji prosedural kain bergelombang deterministik, jatuh/rebah, lowered di tiang, glow), Models.tsx (loader GLB + SkeletonUtils.clone + AnimationMixer.setTime untuk horse/camel), Swords.tsx (GLB arming-sword dipotong CPU: verteks y>cut dijepit = patah; 9 jatuh di baki pasir 32.7-34.4, counter 1-9, pedang Yaman utuh 35.4), Book.tsx (kitab prosedural, halaman garis abstrak, lilin + tetes di 28.3, lentera GLB, 3 panji mini menyala di nama 18.1/20.4/22.4, rebah 19.9/21.7/24.2), Madinah.tsx (tembok adobe GLB ring, gerbang utara, rumah lumpur, palem, barisan panji+kuda tertunduk mendekat gerbang 54-61), Syria.tsx (tenda komando, tiang 2.6: panji Khalid turun 64.5-66.3, panji gading Abu Ubaidah naik 66-67.8, panji Khalid ditancap di barisan depan 74.9-75.6), Hud.tsx (satu kartu per waktu, label peta HTML 46px via project(), karaoke 56px y=1300 dengan angka 629/3.000/638, tanpa yatim), KhalidFilm.tsx (FilmScene shot=poseAt(t), Voiceover offset 0, AudiraOutro code QISSAH, AudiraSignature seed ep19-khalid-mundur code QISSAH lapisan terakhir), daftarkan KhalidPreview/KhalidFinal (91 dtk) di Root.tsx. Lalu still per beat, cover-topic, SHOTLIST, sfx -28, tahap 8 (contact sheet, audit, THEME_CHECK, G24, G18c, juri buta maks 2 putaran), lalu handover ke Sesi C.",
+      "snapshot": {
+        "episode": "EP19_KETIKA_KHALID_BIN_WALID_MEMILIH_MUNDUR_D",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP19",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T11:09:50.414Z",
+      "doing": "Sesi B s4 (batas token): rig.ts DIPERBAIKI, audit:rig 5/5 (peak 1.19, 51 perubahan, rest 0) -> draft/rig-audit.json. Flight antar stasiun kini tiga fase (lepas dari stasiun dengan dist naik, jelajah tinggi/jauh, push-in) dengan key baru 16.9/18.3, 29.45/30.85/32.2, 41.5/43.0/44.4, 54.0/55.6, 62.0/63.9/65.5. Jangan ubah key flight tanpa menjalankan audit:rig lagi. Belum ada komponen TSX; Root.tsx masih hanya ShowcasePreview.",
+      "files": [
+        "project/src/scenes/khalid/rig.ts",
+        "project/src/scenes/khalid/timing.ts",
+        "project/src/scenes/khalid/geo.ts",
+        "draft/rig-audit.json",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/ART_DIRECTION.md",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "Sesi B lanjutan (tahap 7-8), mulai dari langkah 2: tulis komponen TSX di project/src/scenes/khalid/. API yang sudah dicek: FilmScene (src/core/scene/FilmScene.tsx: frame, shot {pos,target,fov}, background, profile COLOR_PROFILES.DOCUMENTARY_WARM, hdri \"warmStudio\", envIntensity 0.55, exposure 1, ao=false, near 0.05, far 80, overlay(scale)=>HTML 1080x1920). Contoh pola kit: src/kits/historymap/example/HistoryMapExample.tsx (KeyLight + fog [oceanVoid,12,26]); KeyLight membidik origin dengan extent tetap, jadi tulis directional light sendiri yang target-nya mengikuti poseAt(t).target dan shadow extent dari camDist. Pola caption karaoke + Chip + AudiraOutro/AudiraSignature (Sequence from setelah hook): F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP07_IBNU_BATTUTA_29_TAHUN/project/src/scenes/battuta/BattutaFilm.tsx. AudiraOutro props {seconds, code}; AudiraSignature {seed, code, outroSeconds}; FONT dari src/core/type/fonts.ts; Voiceover {src, offset} di src/core/film/Voiceover.tsx; AssetModel {id, size, ground, tint, polish, position, rotation, scale} (clone biasa, jadi horse/camel ber-rig pakai GLTFLoader + SkeletonUtils.clone + AnimationMixer.setTime sendiri). GLB lokal di public/models/polyfork/ (root: palm-tree-a307da, soldiers-tent-4bd5b9; subfolder animal/ prop/ building/ dst.) - cek ada tidaknya arming-sword-ab8738, saddled-horse-da86d3/horse-base, camel-base, adobe-tapia-wall-run-074dd5, table-candle-lantern-a7b5af, round-wooden-shield-b81fe3 dengan Glob. vo-words.json = array {text,start,end,id}; kata kunci: Zaid 18.1, Ja'far 20.4, Abdullah 22.4, gugur 19.9/21.7/24.2, air mata 28.3, sembilan 32.7, satu pedang Yaman 35.4, pedang Allah 40.4, menarik 42.2, kekalahan 47.2, kemenangan 48.8, selamat 52.6, Madinah 55.1, belakangan 58.6, 638 62.5-63.2, mencopot 64.5, Syria 66.2, harta rampasan 69.3, bergantung 71.5, berjuang 75.4, Abu Ubaidah 76.4, mana yang lebih berat 84.9, Audira Qissah 87.2. Rincian isi tiap komponen ada di catatan handover sebelumnya (World, Banner, Models, Swords, Book, Madinah, Syria, Hud, KhalidFilm). Daftarkan KhalidPreview 540x960@30 dan KhalidFinal 1080x1920@60, 91 dtk, di src/Root.tsx. Lalu: still per beat (npm run stills -- out/<dir> 1s,9s,... KhalidPreview), cover-topic.png dari frame hook 1080x1920, SHOTLIST.md, TARGET_LUFS=-28 di sfx/cues/auto.py, $env:PYTHONUTF8=1; npm run sfx; tahap 8 (contact sheet 540x960 di draft/, audit:visual, klip 15-20 dtk audit:camera, THEME_CHECK, G24, G18c >= 12 LU, record_score self lalu juri buta, maks 2 putaran), lalu handover ke Sesi C. Jangan render final.",
+      "snapshot": {
+        "episode": "EP19_KETIKA_KHALID_BIN_WALID_MEMILIH_MUNDUR_D",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP19",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T11:18:01.444Z",
+      "doing": "Sesi B s5 (batas token): ditulis cues.ts, World.tsx, Banner.tsx, Models.tsx (useGLB + RigModel) di project/src/scenes/khalid/ — belum dirender/typecheck. GLB diverifikasi. Rig tetap 5/5 (tidak diubah).",
+      "files": [
+        "draft/S5_COMPONENT_PLAN.md",
+        "project/src/scenes/khalid/cues.ts",
+        "project/src/scenes/khalid/World.tsx",
+        "project/src/scenes/khalid/Banner.tsx",
+        "project/src/scenes/khalid/Models.tsx",
+        "project/src/scenes/khalid/rig.ts",
+        "project/src/scenes/khalid/timing.ts",
+        "project/src/scenes/khalid/geo.ts",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md"
+      ],
+      "next": "Sesi B lanjutan (tahap 7-8): BACA draft/S5_COMPONENT_PLAN.md dulu (API komponen yang sudah ada, posisi, jadwal kartu/label, sisa komponen). Tulis Swords.tsx, Book.tsx, Madinah.tsx, Syria.tsx, stasiun Mu'tah + kolom s5 + s8, Hud.tsx, KhalidFilm.tsx; daftarkan KhalidPreview 540x960@30 + KhalidFinal 1080x1920@60 (91 dtk) di src/Root.tsx; typecheck; still per beat; cover-topic.png; SHOTLIST.md; TARGET_LUFS=-28 + $env:PYTHONUTF8=1; npm run sfx; tahap 8 (contact sheet, audit:visual, klip audit:camera, THEME_CHECK, G24, G18c, record_score self + juri buta maks 2 putaran), lalu handover ke Sesi C. Jangan render final. Jangan ubah key flight rig.ts tanpa audit:rig.",
+      "snapshot": {
+        "episode": "EP19_KETIKA_KHALID_BIN_WALID_MEMILIH_MUNDUR_D",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP19",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T11:24:58.344Z",
+      "doing": "s6: semua komponen ditulis (Swords, Book, Places=Madinah+Syria, Mutah=stasiun+kolom+s8, Hud, KhalidFilm), Root punya KhalidPreview/KhalidFinal/KhalidCover; tsc lolos. Render still per beat.",
+      "command": "npm run stills -- out/beats1 1s,4s,9s,13s,20s,28s,34s,37s,45s,52s,58s,66s,75s,82s,86s KhalidPreview",
+      "files": [
+        "project/src/scenes/khalid/KhalidFilm.tsx",
+        "project/src/scenes/khalid/Hud.tsx",
+        "project/src/scenes/khalid/Mutah.tsx",
+        "project/src/scenes/khalid/Places.tsx",
+        "project/src/scenes/khalid/Book.tsx",
+        "project/src/scenes/khalid/Swords.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "periksa contact sheet still, perbaiki visual, cover-topic (KhalidCover 4s), SHOTLIST.md, TARGET_LUFS=-28, sfx, tahap 8",
+      "snapshot": {
+        "episode": "EP19_KETIKA_KHALID_BIN_WALID_MEMILIH_MUNDUR_D",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP19",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T11:26:28.214Z",
+      "doing": "Sesi B s6 (batas token 193k): semua komponen khalid ditulis, Root punya KhalidPreview/KhalidFinal/KhalidCover, tsc lolos, still per beat out/beats1/_sheet.jpg dirender tanpa error (look: tidak ada aspek < 4). Temuan: relief terlalu tinggi, label peta hilang di top-down, karavan/kolom terlalu kecil, busur s8 tipis.",
+      "files": [
+        "draft/S6_REVIEW.md",
+        "draft/S5_COMPONENT_PLAN.md",
+        "project/src/scenes/khalid/",
+        "project/src/Root.tsx",
+        "project/out/beats1/_sheet.jpg"
+      ],
+      "next": "Sesi B lanjutan s7 (tahap 7-8): baca draft/S6_REVIEW.md, perbaiki 4 temuan, still beats2, cover-topic (KhalidCover 4s), SHOTLIST.md, TARGET_LUFS=-28, sfx, tahap 8 (contact sheet, audit:visual, audit:camera, THEME_CHECK, G24, G18c, record_score self + juri buta maks 2 putaran), lalu handover ke Sesi C. Jangan render final. Rig 5/5 jangan diubah.",
+      "snapshot": {
+        "episode": "EP19_KETIKA_KHALID_BIN_WALID_MEMILIH_MUNDUR_D",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP19",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T11:37:36.974Z",
+      "doing": "s7 tahap 8 putaran juri 2: poles readability/composition sudah di kode (suar cahaya + busur tinggi finale, label MU'TAH/SYRIA lift 2.3 setelah 79.3s, label PASUKAN MUNDUR 46-56s, plakat AUDIRA menghadap kamera t>=52). Juri 1 = 3.5 (comp 3, read 2) tercatat; self 4.0 tercatat. Tahap 7 selesai: relief x0.3, label pin+anti-tabrakan, cover-topic.png (KhalidCover 2s), docs/SHOTLIST.md, TARGET_LUFS -28, sfx.wav -28 LUFS. G18c gap 14.7 LU, camera 4/5 (draft/camera.json), THEME_CHECK ditulis.",
+      "command": "npm run stills -- out/beats3 1s,4s,9s,13s,20s,28s,34s,37.8s,45.8s,52s,58s,66s,75.6s,82s,86s KhalidPreview",
+      "files": [
+        "draft/THEME_CHECK.md",
+        "draft/contact-sheet.jpg",
+        "draft/camera.json",
+        "draft/look.json",
+        "docs/SHOTLIST.md",
+        "style/cover-topic.png",
+        "project/src/scenes/khalid/Hud.tsx",
+        "project/src/scenes/khalid/Mutah.tsx",
+        "project/src/scenes/khalid/World.tsx",
+        "project/src/scenes/khalid/geo.ts"
+      ],
+      "next": "cek sheet beats3 -> salin ke draft/contact-sheet.jpg, audit:visual --json=../draft/look.json, perbarui THEME_CHECK detik 37.8/45.8/75.6, juri buta putaran 2 (maks), record_score jury; skor terbaik >=3.5 -> tandai animation+draft done, append_lesson failed (juri: F8/F14 teks-saja, finale di pita karaoke), handover newSession ke Sesi C.",
+      "snapshot": {
+        "episode": "EP19_KETIKA_KHALID_BIN_WALID_MEMILIH_MUNDUR_D",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP19",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T11:40:51.563Z",
+      "doing": "Sesi B selesai (s7): style HISTORYMAP, Remotion + R3F 3D, VO terkunci 87.86 dtk (public/audio/vo.wav), film 91 dtk. Draf diterima 3.50 setelah 2 putaran juri buta (lighting 4, material 4, depth 4, composition 3, motion 4, readability 2); self 4.0. Contact sheet: draft/contact-sheet.jpg (15 frame 540x960). look.json tanpa aspek <4, audit:layout 0 masalah. Kamera klip 40-58 dtk 4/5 (draft/camera.json). G18c: VO -16.6 LUFS vs SFX ter-duck -31.3 = 14.7 LU (lolos). SFX: public/audio/sfx.wav -28 LUFS (TARGET_LUFS -28). Cover: style/cover-topic.png (KhalidCover 2 dtk). THEME_CHECK + G24 lolos. Rig 5/5 tidak diubah.",
+      "files": [
+        "draft/contact-sheet.jpg",
+        "draft/look.json",
+        "draft/camera.json",
+        "draft/THEME_CHECK.md",
+        "NOTES.md",
+        "style/cover-topic.png",
+        "docs/SCRIPT.md (hanya tahap 10)",
+        "research/SOURCE_REGISTER.md (hanya tahap 10)"
+      ],
+      "next": "Sesi C: tahap 9 gerbang acc. Tampilkan draft/contact-sheet.jpg, skor juri 3.50 (diterima setelah 2 putaran), durasi 91 dtk, G18c 14.7 LU; tunggu acc pengguna. Setelah acc: update stage final approved true, lalu dari project/: npm run render:final -- --comp=KhalidFinal --out=<FINAL_EP19_...mp4> --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc (sesi lain bisa memakai GPU: bila page crashed pakai --jobs=3; skor juri 3.50 setelah 2 putaran mungkin butuh --skip-memory-gate beralasan). QA -14 LUFS / TP < -1, metadata ffprobe, record_score final, lalu tahap 10 caption.",
+      "snapshot": {
+        "episode": "EP19_KETIKA_KHALID_BIN_WALID_MEMILIH_MUNDUR_D",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP19",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-26T12:44:30.834Z",
+      "doing": "Sesi C s8: render final 1080x1920@60 (acc pengguna \"Gas render\")",
+      "command": "cd project && npm run render:final -- --comp=KhalidFinal --out=../FINAL_EP19_KHALID_MUNDUR.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --skip-memory-gate=\"...\"",
+      "files": [
+        "FINAL_EP19_KHALID_MUNDUR.mp4"
+      ],
+      "next": "QA -14 LUFS/TP<-1, metadata tag + ffprobe, cek frame, record_score final, tahap 10 caption + NOTES + lessons + 3 scheduled task",
+      "snapshot": {
+        "episode": "EP19_KETIKA_KHALID_BIN_WALID_MEMILIH_MUNDUR_D",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP19",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    }
+  ],
+  "session": 8,
+  "handover": {
+    "at": "2026-11-26T12:44:30.834Z",
+    "doing": "Sesi C s8: render final 1080x1920@60 (acc pengguna \"Gas render\")",
+    "command": "cd project && npm run render:final -- --comp=KhalidFinal --out=../FINAL_EP19_KHALID_MUNDUR.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --skip-memory-gate=\"...\"",
+    "files": [
+      "FINAL_EP19_KHALID_MUNDUR.mp4"
+    ],
+    "next": "QA -14 LUFS/TP<-1, metadata tag + ffprobe, cek frame, record_score final, tahap 10 caption + NOTES + lessons + 3 scheduled task",
+    "snapshot": {
+      "episode": "EP19_KETIKA_KHALID_BIN_WALID_MEMILIH_MUNDUR_D",
+      "topic": "Sejarah peradaban Islam yang jarang diketahui",
+      "style": "HISTORYMAP",
+      "memoryEpisode": "sejarah-islam-EP19",
+      "currentStage": "final",
+      "gates": {
+        "final": {
+          "approved": true,
+          "status": "in_progress"
+        }
+      },
+      "voPath": null,
+      "draftScores": [],
+      "finals": [],
+      "draftRounds": 0
+    }
+  },
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP19 Khalid Mundur · s2",
+      "phase": "B",
+      "at": "2026-11-25T15:04:41.118Z"
+    },
+    {
+      "no": 3,
+      "title": "EP19 Khalid Mundur · s3",
+      "phase": "B",
+      "at": "2026-11-25T15:09:18.727Z"
+    },
+    {
+      "no": 4,
+      "title": "EP19 Khalid Mundur · s4",
+      "phase": "B",
+      "at": "2026-11-26T11:04:21.975Z"
+    },
+    {
+      "no": 5,
+      "title": "EP19 Khalid Mundur · s5",
+      "phase": "B",
+      "at": "2026-11-26T11:09:50.414Z"
+    },
+    {
+      "no": 6,
+      "title": "EP19 Khalid Mundur · s6",
+      "phase": "B",
+      "at": "2026-11-26T11:18:01.444Z"
+    },
+    {
+      "no": 7,
+      "title": "EP19 Khalid Mundur · s7",
+      "phase": "B",
+      "at": "2026-11-26T11:26:28.213Z"
+    },
+    {
+      "no": 8,
+      "title": "EP19 Khalid Mundur · s8",
+      "phase": "C",
+      "at": "2026-11-26T11:40:51.563Z"
+    }
+  ]
 }

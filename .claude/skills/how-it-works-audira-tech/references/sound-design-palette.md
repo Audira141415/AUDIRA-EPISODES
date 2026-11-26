@@ -4,6 +4,8 @@ Desain suara (*sound design*) adalah 50% dari dampak emosional video dokumenter 
 
 ---
 
+> **AUDIRA override:** angka peak dan ducking di file ini hanya gambaran relatif antar-lapis. Mix final mengikuti G18 (`F:/AUDIRA-ALL-SKILL/.agents/rules/on-demand/pipeline-guards.md`): VO `loudnorm=I=-16`, SFX efektif −30 LUFS, duck SFX `ratio=8 attack=5 release=350 threshold=0.015`, master −14 LUFS dan true peak < −1 dBFS. Ducking musik: directive 00 poin 7.
+
 ## 🎧 1. Struktur 4 Lapisan Audio (Acoustic Stems)
 
 ```

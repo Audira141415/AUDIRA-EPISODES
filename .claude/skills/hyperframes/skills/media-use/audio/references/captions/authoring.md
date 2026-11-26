@@ -44,6 +44,8 @@ Scan for words deserving distinct treatment:
 
 ## Script-to-Style Mapping
 
+> **AUDIRA override:** active-word scale ≤ 1.04, word gap ≥ 0.4em, no `elastic.out` or overshoot on caption words. Overshoot, bounce, `back.out(1.7)` and `elastic.out` in this file do not apply.
+
 | Tone         | Font mood                | Animation                          | Color                       | Size    |
 | ------------ | ------------------------ | ---------------------------------- | --------------------------- | ------- |
 | Hype/launch  | Heavy condensed, 800-900 | Scale-pop, back.out(1.7), 0.1-0.2s | Bright on dark              | 72-96px |

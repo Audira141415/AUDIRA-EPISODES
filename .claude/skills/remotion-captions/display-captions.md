@@ -31,6 +31,8 @@ Alternatives are available at [Remotion Captions Elements](https://www.remotion.
 
 Fetch its source code from https://www.remotion.dev/elements/captions/basic-captions.md and copy the `basic-captions.tsx` file into the project unchanged.
 
+> **AUDIRA override:** contoh di file ini memakai komposisi 1920x1080 @ 30 fps dan `bottom: 120`. Video AUDIRA: 1080x1920 @ 60 fps, blok caption berakhir di atas zona 380 px bawah (`bottom` ≥ 380, sesuaikan `translate`).
+
 ## Displaying captions alongside video content
 
 Keep each clip's video and captions inside the same `<Sequence>` or `<TransitionSeries.Sequence>`.
@@ -175,8 +177,8 @@ Posisi: **350px dari bawah** (aman di atas UI platform TikTok 320px dan Instagra
 
 > **AUDIRA bounce cap**: CLAUDE.md mengatur `bounce kata aktif ≤ 1.04`.
 > Bold spring ini menghasilkan overshoot ~1.05 (marginal). Bounce menghasilkan ~1.2 (melanggar).
-> Untuk pipeline AUDIRA: gunakan Clean, atau clamp scale dengan `Math.min(springScale, 1.04)`.
-> Bold/Bounce di bawah ini sebagai referensi atau untuk proyek non-AUDIRA yang tidak punya cap.
+> Kode Bold/Bounce di bawah sudah di-clamp dengan `Math.min(springRaw, 1.04)`; jangan pakai nilai mentahnya.
+> **Jarak kata** (semua preset): ≥ 0,4em, misalnya `marginInline: "0.2em"` di tiap kata.
 
 ### Bold — edukasi, motivasi
 
@@ -222,10 +224,10 @@ const springScale = Math.min(springRaw, 1.04); // AUDIRA bounce cap ≤ 1.04 (ra
 // combineTokensWithinMilliseconds: 1500
 
 // Bukan spring — gunakan interpolate:
-const opacity = interpolate(localFrame, [0, 6], [0, 1], {
+const opacity = interpolate(localFrame, [0, 0.2 * fps], [0, 1], {
   extrapolateRight: "clamp",
 });
-// Fade in 6 frame (200ms di 30fps)
+// Fade in 0,2 detik
 ```
 
 ### Implementasi `createTikTokStyleCaptions`
@@ -256,4 +258,4 @@ Tidak overlap. Hierarki visual:
 1. Hook text (atas, besar)
 2. Konten video (tengah)
 3. Caption (bawah, word-level)
-4. Progress bar (paling bawah, subtle)
+4. Progress bar (subtle, di atas zona 380 px bawah)

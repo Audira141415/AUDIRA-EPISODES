@@ -6,6 +6,8 @@ version: 4.0.541
 
 # Remotion Maps
 
+> **AUDIRA override:** contoh 30 fps dan `--gl=angle --concurrency=1` hanya untuk still atau klip cek; video AUDIRA 60 fps dan final lewat `npm run render:final` (tahap 9). Atribusi penyedia peta wajib terlihat di frame untuk semua teknik, termasuk MapTiler (abaikan instruksi menyembunyikan logo/atribusi), dan dicatat di `research/SOURCE_REGISTER.md`.
+
 Choose exactly one technique from the intended shot, then load only that technique's `TECHNIQUE.md`.
 Every technique directory is self-contained and may be removed without breaking the others.
 

@@ -27,7 +27,7 @@ Tagline: **Understand the Technology Around You.**
 | Attribute | Nilai (rule 07/09) |
 |---|---|
 | **Aspect Ratio** | 9:16 vertical (`1080x1920`) — 16:9 hanya bila pengguna meminta |
-| **Durasi** | 80–92 detik, 190–210 kata, 8 scenes (s1–s8) |
+| **Durasi** | 80–90 detik, 190–210 kata, 8 scenes (s1–s8) |
 | **Narration Speed** | 135–150 WPM |
 | **Safe Zone** | Panel y 236, caption y 1300, bottom 380 clear, active-word bounce ≤ 1.04 |
 | **Visual Core** | 3D Exploded View, Cutaway, X-Ray HUD, Macro, Physical Simulation, Microscopic |
@@ -40,7 +40,7 @@ Tagline: **Understand the Technology Around You.**
 
 1. **Riset Mekanisme Nyata (No Hallucinations):** Jangan pernah mengarang komponen, diagram sirkuit, atau jalur fluida. Semua klaim mekanis harus bersandar pada dokumentasi resmi manufaktur, paten, atau literatur teknik.
 2. **Show the Causal Chain:** Jangan sekadar memperlihatkan objek diam yang diputar. Tunjukkan hubungan sebab-akibat: *Trigger → Sensor/Input → Controller/Processor → Actuator/Physical Effect → System Output*.
-3. **Motion Vector Continuity (Motion Doctrine):** Setiap perpindahan klip AI video wajib mewarisi momentum kamera (vektor arah orbit, zoom, atau panning) agar penonton tidak mengalami disorientasi spasial (*spatial whiplash*).
+3. **Motion Vector Continuity (Motion Doctrine):** Setiap perpindahan adegan (termasuk klip AI video bila dipakai) wajib mewarisi momentum kamera (vektor arah orbit, zoom, atau panning) agar penonton tidak mengalami disorientasi spasial (*spatial whiplash*).
 4. **Cinematic 3D + HUD Overlays:** Pisahkan visual menjadi 2 layer:
    - **Base Video Layer:** Scene 3D Remotion + R3F (world3d hanya bila dipaksa). Klip model video AI (Kling, Runway, Luma Ray 2, Wan 2.1) opsional, tanpa teks generator mentah.
    - **Telemetry/HUD Layer:** Motion graphic overlay (HyperFrames / Remotion / After Effects) berupa garis penunjuk, dimensi CAD, nilai sensor live, dan teks keterangan.
@@ -50,6 +50,10 @@ Tagline: **Understand the Technology Around You.**
 ---
 
 ## 🔄 3. Workflow Produksi 12 Fase
+
+> **AUDIRA override (directive 00 menang).** 12 fase ini adalah isi kerja di dalam pipeline 11 tahap, bukan pipeline terpisah:
+> Fase 01–02 → tahap 2 (Claim Ledger dicatat di `research/SOURCE_REGISTER.md`) · Fase 03–07 → tahap 4 (naskah, storyboard, manifest) · Fase 08 → hanya bila diminta · Fase 09 → tahap 6 (VO) dan 7 (SFX) · Fase 10 → tahap 7 · Fase 12 → cek isi sebelum juri tahap 8 · Fase 11 → tahap 10.
+> Nilai resmi = `audira_style_memory` `record_score` di tahap 8. Satu-satunya gerbang acc = tahap 9.
 
 ```mermaid
 flowchart TD
@@ -61,9 +65,9 @@ flowchart TD
     P6 --> P7["07. Visual Mode & HUD Mapping"]
     P7 --> P8["08. Multi-Model AI Video Prompts"]
     P8 --> P9["09. Audio Master & Sound Design"]
-    P9 --> P10["10. HyperFrames Timeline Plan"]
+    P9 --> P10["10. Timeline Plan (Remotion)"]
     P10 --> P11["11. Packaging & SEO Matrix"]
-    P11 --> P12["12. Quality Gate (PASS/REVIEW/FAIL)"]
+    P11 --> P12["12. Cek Isi sebelum Juri"]
 ```
 
 ### Fase 01 — Topic Framing & Scope
@@ -92,11 +96,12 @@ Setiap mekanisme wajib dirumuskan dalam 3 layer pemahaman:
 ### Fase 05 — Broadcast Scriptwriting (Bahasa Indonesia)
 - Tulis naskah VO dengan metronom ketat (135–150 WPM untuk 9:16).
 - Format penulisan naskah:
-  - `[00:00 - 00:08]` **Hook:** Langsung ke misteri teknis atau aksi ekstrem.
-  - `[00:08 - 00:25]` **Problem / Inside Look:** Transisi dari eksterior ke interior mesin.
-  - `[00:25 - 00:55]` **Core Mechanism:** Urutan rantai sebab-akibat komponen.
-  - `[00:55 - 01:15]` **The Critical Engineering Genius:** Solusi pintar insinyur mengatasi kendala fisik (panas, gesekan, latensi).
-  - `[01:15 - 01:30]` **Resolution & Outro:** Dampak teknologi dan penutup tajam AUDIRA TECH.
+  - `[00:00 - 00:03]` **Hook:** Langsung ke misteri teknis atau aksi ekstrem.
+  - `[00:04 - 00:15]` **Context (Inside Look):** Transisi dari eksterior ke interior mesin.
+  - `[00:16 - 00:45]` **Main Development (Core Mechanism):** Urutan rantai sebab-akibat komponen.
+  - `[00:46 - 01:10]` **Explanation (The Critical Engineering Genius):** Solusi pintar insinyur mengatasi kendala fisik (panas, gesekan, latensi).
+  - `[01:11 - 01:25]` **Visual Payoff:** Mekanisme lengkap bekerja dan dampak teknologinya.
+  - `[01:26 - 01:30]` **Outro:** Penutup tajam AUDIRA TECH + outro card AUDIRA.
 
 ### Fase 06 — Storyboard & Shot Vectoring (Motion Doctrine)
 - Bagi naskah menjadi adegan berdurasi 4–8 detik per klip.
@@ -128,9 +133,9 @@ Tulis prompt video mandiri (*standalone*) yang kompatibel dengan model video ter
   - **Sci-Fi / UI SFX:** Bass drops saat cutaway, digital data pulses saat HUD menyala, whoosh berarah saat kamera orbit.
   - **Music:** Industrial tech, minimalist synth pulse, cinematic ambient drone.
 
-### Fase 10 — HyperFrames Timeline & Compositing Plan
+### Fase 10 — Timeline & Compositing Plan (Remotion default)
 - Susun spesifikasi timeline compositing:
-  - Video clips alignment (layer 0).
+  - Scene 3D Remotion + R3F atau klip video bila diminta (layer 0).
   - Web HUD overlays / SVG leader lines (layer 1).
   - Kinetic typography captions (layer 2).
   - Sound cues (audio layer).
@@ -143,11 +148,14 @@ Wajib membuat berkas `SOCIAL_CAPTIONS.md` di folder episode dan **MENAMPILKAN LA
 3. **YouTube Shorts:** 3 variasi judul high-CTR (<100 karakter), deskripsi lengkap + timestamp chapters + minimal 3 hashtag, YouTube Tags (<500 karakter), pinned comment, dan rekomendasi thumbnail.
 4. **Facebook (Reels & Trending Feeds):** Storytelling naratif bernada percakapan, analogi logis, pemicu diskusi interaktif, dan minimal 3 hashtag.
 5. **X (Twitter):** Format cuitan tunggal atau pembuka utas (thread) padat fakta (<=280 karakter termasuk hashtag) dengan daya retweet tinggi dan minimal 1 hashtag.
+6. **Threads:** Post pembuka + utas pendek, tiap post maks 500 karakter, minimal 1 topic tag.
+
+Wajib juga di `SOCIAL_CAPTIONS.md`: `## Jadwal Upload (WIB)` (satu baris per platform: hari dan jam) dan `## Label Konten AI` (TikTok "AI-generated content", YouTube "Altered or synthetic content", Meta "AI info").
 
 Sebelum selesai, jalankan `audira_validate_social_captions` sampai hasilnya `ok: true`.
 
-### Fase 12 — Automated Quality Gate
-Audit hasil paket produksi dengan skor 1–10:
+### Fase 12 — Cek Isi (bukan gerbang)
+Daftar cek tambahan sebelum juri; nilai resmi tetap `record_score` (tahap 8). Skor 1–10:
 1. **Scientific Integrity (1-10):** Apakah prinsip mekanis benar dan diverifikasi?
 2. **Visual Continuity (1-10):** Apakah vektor kamera berkesinambungan?
 3. **Audio-Pacing Sync (1-10):** Apakah durasi VO cocok dengan timecode adegan?
@@ -163,10 +171,10 @@ Skill ini dilengkapi utilitas otomasi Python di folder `scripts/`:
 
 | Script | Fungsi |
 |---|---|
-| `orchestrate_episode.py` | **Master Pipeline Runner:** Menjalankan audit naskah, generate prompt multi-engine, align subtitle, scaffold HyperFrames, dan ekspor timeline NLE dalam 1 langkah. |
+| `orchestrate_episode.py` | **Master Pipeline Runner:** Menjalankan audit naskah, generate prompt multi-engine, align subtitle, scaffold HyperFrames, dan ekspor timeline NLE dalam 1 langkah. **Jangan dipakai untuk episode AUDIRA** (memanggil `scaffold_hyperframes.py`, melewati layout dan gerbang); jalankan script lain satu per satu. |
 | `generate_prompts.py` | Mengonversi scene definitions menjadi prompt siap pakai untuk Kling, Runway, Luma, dan Wan 2.1. |
 | `align_captions.py` | Membuat subtitle dinamis sinkron kata demi kata (WebVTT, SRT, dan Kinetic JSON). |
-| `scaffold_hyperframes.py` | Membuat boilerplate project HyperFrames lengkap dengan HUD overlays dan timeline konfigurasi. |
+| `scaffold_hyperframes.py` | Membuat boilerplate project HyperFrames lengkap dengan HUD overlays dan timeline konfigurasi. **Jangan dipakai untuk episode AUDIRA**; scaffold lewat `audira_project_layout`. |
 | `export_timeline.py` | Mengekspor storyboard ke format DaVinci Resolve EDL, Final Cut Pro XML (FCPXML), dan timeline JSON. |
 | `verify_episode.py` | Melakukan audit otomatis terhadap durasi naskah (WPM), rasio safe zone, dan penyaringan frasa klise AI (*Anti-Slop*). |
 

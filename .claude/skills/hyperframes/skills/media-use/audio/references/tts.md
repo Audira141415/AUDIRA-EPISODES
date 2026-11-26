@@ -1,5 +1,7 @@
 # Text To Speech
 
+> **AUDIRA override (levels):** the −31 LUFS music level below is for HyperFrames docs videos. AUDIRA mixes follow G18 (`F:/AUDIRA-ALL-SKILL/.agents/rules/on-demand/pipeline-guards.md`) and directive 00 point 7.
+
 `npx hyperframes tts` synthesizes locally with Kokoro. It does not accept a
 `--provider` or `--words` flag. For HeyGen audio plus word timestamps, use the
 bundled `heygen-tts.mjs` script below.

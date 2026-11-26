@@ -1,6 +1,6 @@
 ---
 name: islamic-flat-documentary
-description: "Animasi dokumenter flat 2D/2.5D sinematik bertema sejarah peradaban Islam, kisah nabi, sains era keemasan Islam, narasi kebudayaan Islam. Arabesque Girih, siluet kubah & menara, palet gurun emas & lapis lazuli, adab visual tanpa wajah. Engine fleksibel sesuai kebutuhan. By AUDIRA (Agus Dwi R)."
+description: "Animasi dokumenter flat 2D/2.5D sinematik bertema sejarah peradaban Islam, kisah nabi, sains era keemasan Islam, narasi kebudayaan Islam. Arabesque Girih, siluet kubah & menara, palet gurun emas & lapis lazuli, adab visual tanpa wajah. Engine Remotion: R3F default (rule 14), Remotion 2D flat bila AI memilih 2D. By AUDIRA (Agus Dwi R)."
 license: Proprietary Commercial (AUDIRA)
 metadata:
   author: AUDIRA (Agus Dwi R)
@@ -12,7 +12,8 @@ metadata:
 
 Author & Architect: **AUDIRA (Agus Dwi R)**  
 Version: `1.0.0 Commercial Release`  
-Target Frameworks: Remotion, SVG Vector Canvas, GSAP, CSS Keyframes
+Target Frameworks: Remotion + React Three Fiber (default, rule 14) atau Remotion 2D + SVG; gerak dari `useCurrentFrame`, bukan GSAP / CSS Keyframes (keduanya hanya di HyperFrames)  
+Format: 1080×1920 (9:16) @ 60 fps, safe zone atas 180 px dan bawah 380 px
 
 ---
 

@@ -1,93 +1,72 @@
-# SCRIPT — `Fakta sejarah unik negara-negara di dunia` (`EP89`)
+# Naskah — Negara yang Tidak Punya Sungai Sama Sekali
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **6** · estimasi **3 dtk**
+- Visual: Peta Arab Saudi muncul dari kegelapan, ikon minyak berkilau di satu sisi, sisi lain kering retak — teks HUD "0 SUNGAI" muncul besar
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Arab Saudi. Minyak melimpah, sungai? Nol.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **15** · estimasi **6 dtk**
+- Visual: Globe berputar, 17 titik merah menyala satu per satu di seluruh dunia — callout "17 NEGARA" di tengah layar
 
-> <konteks singkat + "Di Audira, ...">
+> Tujuh belas negara di dunia tidak punya satu pun sungai permanen. Ini ceritanya, di {AUDIRA|Audira}.
 
-## c02 — <Judul Bab 1>
+## c02 — Raksasa Tanpa Air
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **32** · estimasi **14 dtk** · mulai ±0:09
+- Visual: Peta Semenanjung Arab muncul, negara-negara menyala bergantian (Saudi, Kuwait, Qatar, Bahrain, UAE) — callout HUD "{2.000.000|dua juta} km²" di atas Saudi, lalu wadi kering yang retak muncul di close-up
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Semenanjung Arab, daratan terbesar di dunia tanpa sungai permanen. Arab Saudi, {2.000.000|dua juta} kilometer persegi, hanya punya wadi — aliran air sementara yang kering sepanjang tahun. Kuwait, Qatar, Bahrain, dan {UAE|u-a-e}, semuanya sama.
 
-## c03 — <Judul Bab 2>
+## c03 — Yang Kecil dan Yang Jauh
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **36** · estimasi **15 dtk** · mulai ±0:23
+- Visual: Zoom ke peta Eropa, Vatikan muncul sebagai titik kecil di dalam Roma — garis biru Sungai Tiber mengalir tepat di luar batas merah. Lalu transisi ke laut, gelembung air tawar muncul dari dasar laut di dekat Bahrain — callout "{0,5|nol koma lima} km²"
 
-> <teks narasi>
+> Bukan cuma gurun. Vatikan, negara terkecil dunia, luas cuma {0,5|nol koma lima} kilometer persegi, juga tanpa sungai. Tiber mengalir tepat di luar batasnya. Bahrain, artinya "dua laut", justru punya mata air tawar di dasar laut asin.
 
-## c04 — <Judul Bab 3>
+## c04 — Mesin Pengubah Laut
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **14 dtk** · mulai ±0:38
+- Visual: Pabrik desalinasi raksasa di tepi laut, pipa-pipa besar memproses air biru menjadi jernih — callout HUD "{1.000.000|satu juta} m³/hari" dan "${7,2|tujuh koma dua} MILIAR" berkilau. Zoom out memperlihatkan skala industrial
 
-> <teks narasi>
+> Lalu bagaimana mereka minum? Desalinasi. Arab Saudi produsen air laut olahan terbesar di dunia. Pabrik Ras al-Khair memproses {1.000.000|satu juta} meter kubik per hari, dibangun dengan biaya {7,2|tujuh koma dua} miliar dolar.
 
-## c05 — <Judul Bab 4>
+## c05 — Harga Mahal Tanpa Sungai
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **35** · estimasi **15 dtk** · mulai ±0:52
+- Visual: Pipa raksasa membentang melintasi gurun, callout "{467|empat ratus enam puluh tujuh} KM" — lalu split screen: satu sisi kilang minyak, sisi lain pabrik air, callout "{25%|dua puluh lima persen}" minyak → air. Grafik batang air tanah turun drastis, callout "{80%|delapan puluh persen} TERSEDOT"
 
-> <teks narasi>
+> Airnya dipompa {467|empat ratus enam puluh tujuh} kilometer dari Teluk Persia ke Riyadh. {25%|Dua puluh lima} persen minyak Arab Saudi habis untuk desalinasi. Air tanah purba mereka, setara Danau Erie, sudah tersedot {80%|delapan puluh} persen.
 
-## c06 — <Judul Bab 5>
+## c06 — Kenapa Bisa Tanpa Sungai?
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **32** · estimasi **14 dtk** · mulai ±1:07
+- Visual: Diagram sederhana: awan → hujan → sungai, lalu X merah di atas gurun (terlalu kering) dan X merah di atas atol (terlalu kecil). Transisi ke foto Kuwait Towers hitam putih 1951, callout "{1951|sembilan belas lima puluh satu}" — fade ke pabrik desalinasi modern
 
-> <teks narasi>
+> Sungai butuh curah hujan tetap dan wilayah tangkapan luas. Negara gurun terlalu kering. Pulau atol terlalu kecil. Kuwait bahkan jadi negara pertama yang pakai desalinasi skala besar, sejak {1951|sembilan belas lima puluh satu}.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **16** · estimasi **7 dtk** · mulai ±1:21
+- Visual: Montase cepat: gurun Arab → atol Pasifik → air mengalir dari keran — hero shot globe dengan 17 titik menyala, logo AUDIRA muncul dengan outro card
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Dari gurun Arab sampai atol Pasifik, manusia selalu menemukan jalan. Fakta dunia lainnya, hanya di {AUDIRA|Audira}.
+
+## Opsi hook lain
+
+1. "Tujuh belas negara di dunia ini, nol sungai. Bagaimana mereka bertahan?"
+2. "Vatikan, negara terkecil dunia, punya satu kesamaan dengan Arab Saudi: nol sungai."
+3. "Bayangkan negara seluas empat kali Prancis tanpa setetes pun air sungai."
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **204 kata** ≈ **82–91 dtk** @135–150 WPM (87 dtk @140 WPM)
+- 8 blok: hook, intro, 5 chapter, payoff + outro
+- Setiap angka/tahun di VO tercatat di SOURCE_REGISTER (#1–#8)

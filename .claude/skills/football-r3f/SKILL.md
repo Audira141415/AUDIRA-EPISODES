@@ -1,11 +1,11 @@
 ---
 name: football-r3f
-description: "⛔ RULE 13 (aturan mati): topik sepak bola / football / soccer WAJIB Remotion 4 + React Three Fiber. world3d DILARANG. Pola studio: AUDIRA_SEJARAH_SEPAK_BOLA_2026 (11 EP, avg 4.11/5, QA 10/11 GREEN). Deteksi: nama seri mengandung 'sepak bola', 'football', 'soccer', atau frasa serupa — bukan kata tunggal 'bola'. Permintaan eksplisit pengguna menang."
+description: "⛔ RULE 13 (aturan mati): topik sepak bola / football / soccer WAJIB Remotion 4 + React Three Fiber. world3d tidak direkomendasikan tetapi boleh bila pengguna meminta. Pola studio: AUDIRA_SEJARAH_SEPAK_BOLA_2026 (11 EP, avg 4.11/5, QA 10/11 GREEN). Deteksi: nama seri mengandung 'sepak bola', 'football', 'soccer', atau frasa serupa — bukan kata tunggal 'bola'. Permintaan eksplisit pengguna menang."
 ---
 
 # Football R3F — Rule 13 Engine Directive
 
-> **ATURAN MATI** — ditetapkan oleh Agus Dwi R.
+> Ditetapkan dari 11 episode Sejarah Sepak Bola EP01–EP11 (November 2026).
 
 ## Kapan berlaku
 
@@ -14,9 +14,9 @@ Episode yang topiknya sepak bola, football, atau soccer — terdeteksi dari:
 - Topik episode eksplisit tentang sejarah/fakta sepak bola
 - **Bukan** kata tunggal "bola" (yang bisa merujuk bola golf, bola basket, dll.)
 
-## Engine wajib
+## Engine
 
-**Remotion 4 + React Three Fiber** (3D). `world3d.js` **DILARANG**.
+**Remotion 4 + React Three Fiber** (3D) direkomendasikan. `world3d.js` **tidak direkomendasikan** (kamera terlalu dekat, latar blur pada konten taktis — bukti EP12 Barcelona), tetapi boleh bila pengguna meminta (rule 13 §6). Permintaan eksplisit pengguna menang; sebutkan risikonya sekali, lalu jalankan.
 
 ## Pola studio
 

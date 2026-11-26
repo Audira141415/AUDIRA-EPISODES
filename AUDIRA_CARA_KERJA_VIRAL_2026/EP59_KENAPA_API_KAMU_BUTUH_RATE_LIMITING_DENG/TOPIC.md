@@ -5,7 +5,11 @@ title: "Kenapa API Kamu Butuh Rate Limiting (dengan Contoh Nyata)"
 hook: "Tanpa ini satu user bisa DDoS server kamu sendiri"
 styleCandidates: ["CYBERFORGE (2D)", "DEVFORGE (2D)", "NANOFORGE (3D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah — konsep teknis evergreen, tidak menyentuh wajah/logo (rule 15 aman)"
 ---
 
 # Kenapa API Kamu Butuh Rate Limiting (dengan Contoh Nyata)

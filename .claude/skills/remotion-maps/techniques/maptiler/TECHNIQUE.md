@@ -61,7 +61,7 @@ Use MapTiler vector layers for suitable provider features and custom GeoJSON for
 
 ## Keep it minmal
 
-Strip clutter on `load`: remove `symbol` layers (place labels) and `/other border/i` (admin-1 inner borders); hide the logo via CSS. Keep country + disputed borders.
+Strip clutter on `load`: remove `symbol` layers (place labels) and `/other border/i` (admin-1 inner borders). AUDIRA: do not hide the logo or attribution. Keep country + disputed borders.
 
 ## Files
 

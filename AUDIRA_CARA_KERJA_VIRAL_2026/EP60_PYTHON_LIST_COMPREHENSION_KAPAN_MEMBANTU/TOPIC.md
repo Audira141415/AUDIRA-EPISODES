@@ -5,7 +5,11 @@ title: "Python List Comprehension: Kapan Membantu dan Kapan Menyiksa"
 hook: "Satu liner yang elegan vs satu liner yang tidak ada yang bisa baca"
 styleCandidates: ["DEVFORGE (2D)", "CERDIK (2D)", "PIXELSTORY (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah"
 ---
 
 # Python List Comprehension: Kapan Membantu dan Kapan Menyiksa

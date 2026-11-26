@@ -17,10 +17,10 @@ Mesin produksi video dokumenter edukasi teknik dan sains populer untuk **AUDIRA 
 4. **Engineering HUD & Blueprint Overlays:**
    - Desain terpisah antara layer video 3D dan layer telemetry/HUD (garis penunjuk *leader lines*, caliper CAD, grafik RPM/Voltase, partikel arus).
 5. **Toolkit Otomasi Python Lengkap (`scripts/`):**
-   - `orchestrate_episode.py`: Master pipeline runner (audit naskah, generate prompt multi-engine, align subtitle, scaffold HyperFrames, dan ekspor timeline NLE).
+   - `orchestrate_episode.py`: Master pipeline runner (audit naskah, generate prompt multi-engine, align subtitle, scaffold HyperFrames, dan ekspor timeline NLE). Jangan dipakai untuk episode AUDIRA (melewati layout dan gerbang).
    - `generate_prompts.py`: Format otomatis prompt video per adegan sesuai target engine (Kling, Runway, Luma, Wan 2.1).
    - `align_captions.py`: Pembuat subtitle kata-demi-kata (SRT, WebVTT, Kinetic JSON) dengan batasan safe-zone.
-   - `scaffold_hyperframes.py`: Scaffold proyek HyperFrames dalam satu perintah.
+   - `scaffold_hyperframes.py`: Scaffold proyek HyperFrames dalam satu perintah. Bukan langkah standar: episode AUDIRA di-scaffold lewat `audira_project_layout`.
    - `export_timeline.py`: Ekspor timeline multi-format (DaVinci Resolve EDL, Final Cut Pro FCPXML, JSON).
    - `verify_episode.py`: Pengecekan otomatis kecepatan narasi (WPM) dan penyaringan frasa klise AI (*Anti-Slop*).
 6. **Integrasi Tool MCP AUDIRA:**
@@ -87,7 +87,7 @@ python scripts/generate_prompts.py --input scenes.json --engine all --ar 9:16
 python scripts/align_captions.py --script script.txt --duration 75 --output captions
 ```
 
-#### C. Scaffold Proyek HyperFrames:
+#### C. Scaffold Proyek HyperFrames (opsional, bukan untuk episode AUDIRA; pakai `audira_project_layout`):
 ```bash
 python scripts/scaffold_hyperframes.py --output ./episodes/camera-ois --title "Camera OIS" --ar 9:16
 ```
@@ -99,7 +99,7 @@ python scripts/verify_episode.py --script script.txt --duration 75
 
 #### E. Ekspor Timeline NLE (EDL / FCPXML / JSON):
 ```bash
-python scripts/export_timeline.py --input scenes.json --output timeline --format all --fps 30
+python scripts/export_timeline.py --input scenes.json --output timeline --format all --fps 60
 ```
 
 ---

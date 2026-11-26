@@ -7,7 +7,7 @@ website: "https://audira.my.id/"
 license: "Proprietary Commercial"
 category: "economic-journalism"
 engine: "Remotion + R3F (default since 2026-11-17); world3d only when the user forces it"
-style_code: "TRADINGTERMINAL + DATAPHYSICAL + EDITORIAL_INFOGRAPHIC"
+style_code: "TRADINGTERMINAL + DATAPHYSICAL"
 ---
 
 # Economic Storytelling Explainer Skill — AUDIRA (Agus Dwi R)
@@ -23,8 +23,8 @@ Specialized motion skill for visual economic journalism: explaining interest rat
    - Background: Dark macro economic atmosphere (`#0A0E17` obsidian or financial slate) with subdued world trade grids.
    - Foreground: Laser-sharp HUD telemetry, dynamic ticker bars, and high-contrast statistical callouts (`JetBrains Mono` numbers, `Inter` / `Cinzel` titles).
 3. **Flow Dynamics**:
-   - Capital flows rendered as luminous directional particle streams along trade routes (Strait of Malacca, Suez Canal, Panama Canal).
-   - Particle velocity and line thickness correspond directly to trade volume (e.g., $1.2 Trillion / year).
+   - Capital flows shown with concrete carriers (GLB cargo ships, containers, trucks) moving along trade routes (Strait of Malacca, Suez Canal, Panama Canal); light streams are an accent only.
+   - Carrier count, speed and route line thickness correspond directly to trade volume (e.g., $1.2 Trillion / year).
 
 ## 2. Color Palette & Financial Tokens
 
@@ -100,5 +100,5 @@ export const EconomicMetricBar: React.FC<{
 ## 5. Anti-Slop Enforcement
 - ❌ DILARANG menggunakan grafik garis acak tanpa label sumbu X (Tahun/Bulan) dan sumbu Y (Persentase/Milyar USD).
 - ❌ DILARANG membuat analogi abstrak yang membingungkan penonton tanpa korelasi langsung ke topik narasi.
-- ✅ WAJIB menampilkan sumber data resmi pada pojok bawah (e.g. `Source: Federal Reserve / World Bank / BPS / IMF Database`).
+- ✅ WAJIB menampilkan sumber data resmi di dalam safe zone, y ≤ 1540 px (e.g. `Source: Federal Reserve / World Bank / BPS / IMF Database`).
 

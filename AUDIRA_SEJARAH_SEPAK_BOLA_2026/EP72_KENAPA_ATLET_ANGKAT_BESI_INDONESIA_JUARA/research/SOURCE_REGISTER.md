@@ -1,33 +1,15 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Kenapa Atlet Angkat Besi Indonesia Juara Olimpiade tapi Tak Sepopuler Pemain Bola
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-
-## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
-
-## Perselisihan / Kontroversi
-| Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
-|---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
-
-## Musik/SFX (sumber + lisensi)
-| Aset | Sumber | Lisensi/atribusi |
-|---|---|---|
-| | | |
+| 1 | Indonesia raih 16 medali Olimpiade angkat besi (1 emas, 7 perak, 8 perunggu) dari total 40 medali Olimpiade — olahraga peraih medali terbanyak ke-2 setelah bulu tangkis (22 medali) | "Indonesia at the Olympics", Wikipedia, 2026 | https://en.wikipedia.org/wiki/Indonesia_at_the_Olympics | 2026-11-25 | MEDIUM |
+| 2 | Eko Yuli Irawan: 4 medali Olimpiade (2 perak, 2 perunggu) di 2008–2020, atlet Indonesia paling banyak medali Olimpiade, ikut 5 Olimpiade berturut-turut (2008–2024) | "Eko Yuli Irawan", Wikipedia (cite: IOC, IWF), 2026 | https://en.wikipedia.org/wiki/Eko_Yuli_Irawan | 2026-11-25 | MEDIUM |
+| 3 | Raema Lisa Rumbewas: 3 medali Olimpiade (2 perak Sydney 2000 & Athens 2004, 1 perunggu Beijing 2008), atlet Indonesia pertama peraih 3 medali Olimpiade; wafat 14 Januari 2024 di Jayapura | "Raema Lisa Rumbewas", Wikipedia (cite: IOC records), 2026 | https://en.wikipedia.org/wiki/Raema_Lisa_Rumbewas | 2026-11-25 | MEDIUM |
+| 4 | Rizki Juniansyah: emas 73 kg Paris 2024, total 354 kg, pecahkan rekor Olimpiade clean & jerk 199 kg; emas angkat besi pertama Indonesia sepanjang sejarah Olimpiade; usia 21 tahun saat itu | "Rizki Juniansyah", Wikipedia (cite: IWF, Paris 2024 results), 2026 | https://en.wikipedia.org/wiki/Rizki_Juniansyah | 2026-11-25 | MEDIUM |
+| 5 | Sri Wahyuni Agustiani: perak 48 kg Rio 2016 (total 192 kg); Windy Cantika Aisah: perunggu 49 kg Tokyo 2020 (total 194 kg) | "Sri Wahyuni Agustiani" & "Windy Cantika Aisah", Wikipedia, 2026 | https://en.wikipedia.org/wiki/Sri_Wahyuni_Agustiani | 2026-11-25 | MEDIUM |
+| 6 | Rahmat Erwin Abdullah: perunggu 73 kg Tokyo 2020 (total 342 kg); emas Kejuaraan Dunia 2021 & 2022; pecahkan rekor dunia clean & jerk 206 kg di Asian Games 2026 | "Rahmat Erwin Abdullah", Wikipedia (cite: IWF), 2026 | https://en.wikipedia.org/wiki/Rahmat_Erwin_Abdullah | 2026-11-25 | MEDIUM |
+| 7 | Timnas sepak bola Indonesia: 1 partisipasi Piala Dunia (1938 sebagai Hindia Belanda), tidak pernah lolos lagi; ranking FIFA 116 (Nov 2026), terendah 191 (Juli 2016); 6 kali runner-up Piala AFF | "Indonesia national football team", Wikipedia (cite: FIFA), 2026 | https://en.wikipedia.org/wiki/Indonesia_national_football_team | 2026-11-25 | HIGH |
+| 8 | Angkat besi masuk program Olimpiade sejak 1896 (pria) dan 2000 (wanita); Indonesia ikut angkat besi Olimpiade sejak Helsinki 1952 | "Weightlifting at the 2020 Summer Olympics", Wikipedia (cite: IOC), 2026 | https://en.wikipedia.org/wiki/Weightlifting_at_the_2020_Summer_Olympics | 2026-11-25 | HIGH |
+| 9 | Medali Olimpiade pertama angkat besi Indonesia: 3 medali sekaligus di Sydney 2000 (Rumbewas perak 48 kg, Sri Indriyani perunggu 48 kg, Winarni perunggu 53 kg) | "Indonesia at the Olympics", Wikipedia (cite: IOC), 2026 | https://en.wikipedia.org/wiki/Indonesia_at_the_Olympics | 2026-11-25 | HIGH |

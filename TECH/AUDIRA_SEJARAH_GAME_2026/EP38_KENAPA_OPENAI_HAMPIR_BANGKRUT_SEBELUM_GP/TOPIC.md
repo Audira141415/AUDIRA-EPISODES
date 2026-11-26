@@ -5,7 +5,11 @@ title: "Kenapa OpenAI Hampir Bangkrut Sebelum GPT-4 Rilis"
 hook: "Drama internal yang hampir mengakhiri perusahaan AI terbesar dunia"
 styleCandidates: ["BROADCASTFORGE (2D)", "CHRONICLE (2D)", "DATAPHYSICAL (2D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "Hook asli TOPIC.md ('drama internal') lebih cocok untuk krisis Nov 2023 (pemecatan Altman), bukan krisis keuangan pra-GPT-4; naskah sudah dikoreksi ke sudut keuangan. OpenAI tidak pernah resmi menyatakan 'hampir bangkrut'."
 ---
 
 # Kenapa OpenAI Hampir Bangkrut Sebelum GPT-4 Rilis

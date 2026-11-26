@@ -1,93 +1,69 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP39`)
+# Naskah — Masa Depan Internet: Starlink vs Jaringan Terestrial
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **10** · estimasi **4 dtk**
+- Visual: orbit Bumi dilihat dari luar atmosfer, ribuan titik cahaya satelit mengelilingi planet; zoom cepat ke satu satelit Starlink. HUD callout "11.150 SATELIT" muncul besar.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> 11 ribu satelit mengorbit Bumi sekarang. Semuanya milik satu perusahaan.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: logo SpaceX dan antena Starlink di atap rumah. Peta dunia menyala titik-titik pelanggan di 160 negara. HUD callout "13,6 JUTA PELANGGAN" dan "$11,4 MILIAR".
 
-> <konteks singkat + "Di Audira, ...">
+> Starlink, proyek internet satelit dari SpaceX. Di 2026, pelanggannya sudah 13,6 juta di 160 negara. Dalam 18 bulan, naik hampir 3 kali lipat. Pendapatan 2025 tembus 11,4 miliar dolar.
 
-## c02 — <Judul Bab 1>
+## c02 — Raksasa di Dasar Laut
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **31** · estimasi **13 dtk**
+- Visual: transisi ke dasar samudra. Kabel fiber optik terbentang di seabed, kapal penarik kabel di permukaan. HUD callout "99% DATA" dan "300+ KABEL". Cahaya biru menyebar di sepanjang kabel.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tapi ada fakta yang sering dilupakan. 99% lalu lintas data antar-benua sebenarnya lewat kabel bawah laut. Lebih dari 300 kabel fiber optik terbentang di dasar samudra, mengangkut ratusan terabit per detik.
 
-## c03 — <Judul Bab 2>
+## c03 — Kecepatan Cahaya vs Orbit
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: split screen vertikal. Kiri: sinar cahaya melesat di dalam serat optik (close-up fiber bersinar). Kanan: sinyal naik-turun ke satelit di orbit. HUD callout "102 PETABIT/DTK" vs "1 TERABIT". Teks "100.000x" muncul besar di tengah.
 
-> <teks narasi>
+> Kabel ini jauh lebih cepat. Tahun 2025, peneliti berhasil kirim data 102 petabit per detik lewat satu kabel serat optik. Kapasitas satelit Starlink tercanggih? 1 terabit. Beda 100 ribu kali.
 
-## c04 — <Judul Bab 3>
+## c04 — 2 Miliar Tanpa Internet
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: peta dunia gelap di Afrika, Asia Selatan, pedesaan. Siluet orang di desa tanpa listrik. HUD callout "2,2 MILIAR OFFLINE" dan "23%". Garis kabel berhenti di tepi kota, tidak sampai ke desa.
 
-> <teks narasi>
+> Lalu kenapa Starlink penting? Karena 2,2 miliar orang di dunia masih belum bisa akses internet. Di negara miskin, cuma 23% penduduk yang terhubung. Memasang kabel ke pelosok butuh biaya dan waktu luar biasa.
 
-## c05 — <Judul Bab 4>
+## c05 — Antena Kecil, Dampak Besar
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: antena kecil Starlink dipasang di atap rumah desa. Sinyal naik ke satelit, data mengalir turun. HUD callout "150 MBPS" dan "25 MS". Anak-anak di desa mulai membuka laptop.
 
-> <teks narasi>
+> Starlink menjawab itu. Pasang antena kecil, langsung dapat internet 150 megabit per detik dengan latensi 25 milidetik. Tanpa gali tanah, tanpa tarik kabel ratusan kilometer.
 
-## c06 — <Judul Bab 5>
+## c06 — Bukan Lawan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk**
+- Visual: globe Bumi berputar. Di bawahnya garis kabel bersinar, di atasnya orbit satelit. Dua jaringan bertemu di titik-titik kota pesisir. Teks "TULANG PUNGGUNG" di kabel, "JANGKAUAN TERAKHIR" di satelit.
 
-> <teks narasi>
+> Jadi ini bukan soal siapa menang. Kabel bawah laut tetap jadi tulang punggung internet dunia. Starlink jadi perpanjangan tangan ke daerah yang kabel tidak bisa jangkau.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Bumi penuh dari orbit, kabel bersinar di dasar laut dan satelit di orbit membentuk satu jaringan utuh. Zoom out megah, transisi ke outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Masa depan internet butuh dua-duanya. Kabel di dasar laut, satelit di orbit. Bukan lawan, tapi tim. AUDIRA.
+
+## Opsi hook lain
+
+1. "99% internet dunia lewat dasar laut. Lalu ngapain Elon Musk kirim 11 ribu satelit?"
+2. "Satu perusahaan punya lebih banyak satelit dari seluruh negara di dunia digabung."
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **201 kata** ≈ **80–89 dtk**

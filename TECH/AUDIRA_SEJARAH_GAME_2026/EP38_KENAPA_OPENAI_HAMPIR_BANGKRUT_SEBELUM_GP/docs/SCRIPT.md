@@ -1,93 +1,70 @@
-# SCRIPT — `Sejarah game yang viral dan jarang diketahui` (`EP38`)
+# Naskah — Kenapa OpenAI Hampir Bangkrut Sebelum GPT-4 Rilis
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **8** · estimasi **3 dtk**
+- Visual: Layar gelap, logo OpenAI retak perlahan, angka "$133 juta" muncul besar lalu menyusut di sebelah "$1 miliar" yang memudar. Callout HUD: "$133M vs $1B".
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> OpenAI hampir bangkrut. Lalu satu produk mengubah segalanya.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **28** · estimasi **12 dtk**
+- Visual: Ruang kantor kecil 2015, meja kerja berjajar, siluet 11 orang berdiri di depan papan tulis bertuliskan "AGI for humanity". Callout HUD: "2015 · 11 pendiri" lalu transisi ke angka "$1 miliar" yang runtuh jadi "$133 juta".
 
-> <konteks singkat + "Di Audira, ...">
+> Tahun 2015, Elon Musk dan Sam Altman mendirikan OpenAI sebagai organisasi nirlaba. 11 pendiri. Janji dana awal 1 miliar dollar. Tapi sampai 2021, yang terkumpul cuma 133 juta.
 
-## c02 — <Judul Bab 1>
+## c02 — Uang Habis, Ambisi Membesar
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Rak server menyala satu per satu, counter biaya berputar naik cepat. Zoom out ke deretan server raksasa dengan label "128.000 CPU". Callout HUD: "$7,9 juta cloud 2017" dan "128.000 CPU".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Masalahnya, AI butuh uang gila-gilaan. Tahun 2017, OpenAI habiskan 7,9 juta dollar untuk sewa cloud. Melatih bot Dota 2 butuh 128.000 CPU selama berminggu-minggu. Dan itu sebelum GPT-3 ada.
 
-## c03 — <Judul Bab 2>
+## c03 — Berubah Demi Bertahan
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk**
+- Visual: Dokumen "Nonprofit" disobek, berganti jadi dokumen baru "Capped-Profit · 100x". Logo Microsoft turun dari atas layar, angka "$1 miliar" menyala. Callout HUD: "2019 · capped-profit · 100x batas".
 
-> <teks narasi>
+> Tahun 2019, OpenAI ambil keputusan kontroversial: berubah dari nirlaba jadi perusahaan capped-profit. Keuntungan dibatasi 100 kali lipat investasi. Microsoft langsung masuk, suntik 1 miliar dollar.
 
-## c04 — <Judul Bab 3>
+## c04 — Bakar Uang untuk GPT-4
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **12 dtk**
+- Visual: Timeline horizontal: titik "Agustus 2022" menyala, model GPT-4 berputar di tengah layar. Bar uang terbakar dari kiri ke kanan. Callout HUD: ">$100 juta biaya latihan" dan "+$2 miliar Microsoft".
 
-> <teks narasi>
+> Tapi 1 miliar belum cukup. GPT-4 selesai dilatih Agustus 2022. Biaya latihannya? Lebih dari 100 juta dollar. Microsoft tambah 2 miliar sampai 2022, tapi kas terus terbakar.
 
-## c05 — <Judul Bab 4>
+## c05 — ChatGPT: Penyelamat Tak Terduga
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **11 dtk**
+- Visual: Layar chat muncul, pesan-pesan bertumpuk cepat. Counter pengguna meledak: 1 juta, 10 juta, 100 juta. Hujan confetti digital. Lalu cek raksasa "$10 miliar" turun. Callout HUD: "30 Nov 2022 · ChatGPT" dan "100 juta user · 2 bulan".
 
-> <teks narasi>
+> November 2022, OpenAI meluncurkan ChatGPT gratis. Dalam 5 hari, 1 juta orang mendaftar. Dalam 2 bulan, 100 juta pengguna. Januari 2023, Microsoft suntik lagi 10 miliar dollar.
 
-## c06 — <Judul Bab 5>
+## c06 — Dari Lab Kecil ke Raksasa AI
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Gedung kantor kecil bertransformasi jadi menara kaca raksasa. Angka valuasi naik: $1 miliar, $10 miliar, $29 miliar. Logo GPT-4 muncul megah. Callout HUD: "14 Maret 2023 · GPT-4" dan "valuasi $29 miliar".
 
-> <teks narasi>
+> Maret 2023, GPT-4 dirilis ke publik. Perusahaan yang hampir kehabisan uang mendadak bernilai 29 miliar dollar. Dari lab nirlaba yang kesulitan bayar server, jadi raksasa AI paling berpengaruh di dunia.
 
-## c07_payoff — Payoff dan Penutup
+## c07_payoff — Payoff + outro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **19** · estimasi **8 dtk**
+- Visual: Split screen: kiri = kantor kecil gelap 2015, kanan = menara AI megah 2023. Zoom out perlahan, outro card AUDIRA muncul. Callout HUD: "2015 vs 2023".
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Pelajarannya? Yang memisahkan kebangkrutan dan dominasi global kadang cuma satu produk yang tepat, di waktu yang tepat. Ini AUDIRA.
+
+## Opsi hook lain
+
+1. 1 miliar dollar dijanjikan. Yang datang cuma 133 juta. Ini kisah OpenAI.
+2. GPT-4 hampir tidak pernah ada. Ini alasannya.
+3. 7,9 juta dollar habis cuma buat sewa server. Dan itu baru 2017.
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **209 kata** ≈ **84–93 dtk**

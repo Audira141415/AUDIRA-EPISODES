@@ -5,7 +5,11 @@ title: "Kenapa Atlet Angkat Besi Indonesia Juara Olimpiade tapi Tak Sepopuler Pe
 hook: "Sri Wahyuni, Rahmat, Eko Yuli — pahlawan yang terlupakan"
 styleCandidates: ["CHARACTERFLOW (2D)", "CINESTORY (2D)", "DATAPHYSICAL (2D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah"
 ---
 
 # Kenapa Atlet Angkat Besi Indonesia Juara Olimpiade tapi Tak Sepopuler Pemain Bola

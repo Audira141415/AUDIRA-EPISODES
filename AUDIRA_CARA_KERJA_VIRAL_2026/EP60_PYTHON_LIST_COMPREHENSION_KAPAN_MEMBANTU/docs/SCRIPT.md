@@ -1,93 +1,69 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP60`)
+# Naskah — Python List Comprehension: Kapan Membantu dan Kapan Menyiksa
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **17** · estimasi **7 dtk**
+- Visual: Layar IDE gelap. Empat baris for loop Python muncul satu per satu, lalu menyusut menjadi satu baris panjang. Baris itu berkedip merah — rekan kerja muncul dengan ekspresi bingung (siluet, tanpa wajah).
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> {4|Empat} baris kode Python jadi satu baris. Tapi kalau salah pakai, satu baris itu bikin semua orang bingung.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **26** · estimasi **11 dtk** · mulai ±0:07
+- Visual: Logo Python berputar, timeline 2000–2026 muncul. Teks "List Comprehension" muncul besar. Transisi ke split screen: kode elegan vs kode berantakan.
 
-> <konteks singkat + "Di Audira, ...">
+> Namanya list comprehension. Lahir di Python {2.0|dua titik nol}, tahun {2000|dua ribu}. Jadi senjata favorit programmer. Di {AUDIRA|Audira}, kita bedah kapan dia berguna dan kapan menyiksa.
 
-## c02 — <Judul Bab 1>
+## c02 — Cara Kerja Dasar
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **26** · estimasi **11 dtk** · mulai ±0:18
+- Visual: Animasi diagram: list masukan `[1, 2, 3, ...]` mengalir lewat "mesin" comprehension, keluar sebagai list baru. Split panel: 4 baris for loop di kiri menyusut jadi 1 baris di kanan. HUD callout: **4 baris → 1 baris**.
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Prinsipnya sederhana. Ambil list, proses tiap elemen, hasilkan list baru. Satu baris. For loop biasa butuh {4|empat} baris untuk hal yang sama. List comprehension? Cukup satu.
 
-## c03 — <Judul Bab 2>
+## c03 — Kenapa Lebih Cepat
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **42** · estimasi **18 dtk** · mulai ±0:29
+- Visual: Diagram dua jalur: jalur kiri "FOR LOOP" melewati kotak "cari .append() di dictionary" tiap iterasi (lambat, merah). Jalur kanan "LIST COMP" langsung ke kotak "LIST_APPEND bytecode" (cepat, hijau). HUD callout: **3,47 dtk vs 0,54 dtk** dan **6x lebih cepat**. Speedometer animasi.
 
-> <teks narasi>
+> Kenapa lebih cepat? List comprehension pakai bytecode khusus: {LIST_APPEND|LIST APPEND}. For loop harus cari method append lewat dictionary tiap putaran. Benchmark Python Wiki: for loop biasa butuh {3,47|tiga koma empat tujuh} detik, comprehension mendekati {0,54|nol koma lima empat}. Hampir {6x|enam kali} lipat.
 
-## c04 — <Judul Bab 3>
+## c04 — Kapan Jadi Masalah
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk** · mulai ±0:47
+- Visual: Baris kode list comprehension mulai pendek, lalu bertambah panjang melewati garis batas 79 karakter (garis merah vertikal). Nested 3 tingkat muncul — baris meledak ke kanan, layar harus scroll. HUD callout: **79 karakter** (batas PEP 8). Ikon peringatan berkedip.
 
-> <teks narasi>
+> Tapi ada jebakan. {PEP 8|PEP delapan}, panduan gaya resmi Python, batasi baris maksimal {79|tujuh puluh sembilan} karakter. List comprehension bersarang {3|tiga} tingkat bisa meledak sampai {200|dua ratus} karakter. Mustahil dibaca.
 
-## c05 — <Judul Bab 4>
+## c05 — Aturan Emas
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **25** · estimasi **11 dtk** · mulai ±0:59
+- Visual: Flowchart keputusan animasi: "Berapa for?" → "1 for + 1 if" → centang hijau "Pakai comprehension". "2+ for / efek samping" → silang merah "Pakai for loop". Di bawah: penggaris horizontal dengan batas "bisa dibaca tanpa scroll". Checklist muncul satu per satu.
 
-> <teks narasi>
+> Aturan emasnya: satu for, satu if — pakai comprehension. {2|Dua} for bersarang atau efek samping? Pakai for loop biasa. Kalau harus scroll ke kanan, sudah kebanyakan.
 
-## c06 — <Judul Bab 5>
+## c06 — Jebakan Nested
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **17** · estimasi **7 dtk** · mulai ±1:10
+- Visual: Panel kode nested comprehension untuk transpose matriks — kelihatan ringkas. Time-lapse 3 bulan: kalender berputar. Programmer sama kembali, menatap kode dengan bingung (siluet). Teks overlay: "3 bulan kemudian..."
 
-> <teks narasi>
+> Kesalahan umum: nested comprehension untuk matriks. Kelihatan pintar, tapi {3|tiga} bulan kemudian kamu sendiri bingung kode buatanmu.
 
 ## c07_payoff — Payoff dan Penutup
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **21** · estimasi **9 dtk** · mulai ±1:17
+- Visual: Split screen akhir: kiri = for loop rapi dan terbaca, kanan = list comprehension ringkas dan terbaca. Keduanya bersinar hijau. Zoom out ke layar laptop, lalu transisi ke outro card AUDIRA (`audira-outro-card.svg`).
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> List comprehension itu alat, bukan gaya hidup. Pakai di tempat yang tepat, kode jadi pendek, cepat, dan tetap bisa dibaca. {AUDIRA|Audira}.
+
+## Opsi hook lain
+
+1. "Python punya fitur yang bikin kode enam kali lebih cepat. Tapi juga enam kali lebih susah dibaca."
+2. "Semua programmer Python pakai list comprehension. Tapi separuhnya pakai di tempat yang salah."
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **203 kata** ≈ **81–90 dtk** @135–150 WPM.

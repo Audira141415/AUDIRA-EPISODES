@@ -1,93 +1,70 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP58`)
+# Naskah — SSH Key Setup Sekali untuk Seumur Hidup
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **14** · estimasi **6 dtk**
+- Visual: Terminal gelap, kursor berkedip, teks "Password:" muncul lalu "Authentication failed" merah berulang. Glitch effect.
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Setiap kali push ke GitHub, ketik password. Ditolak. Ketik lagi. Ditolak lagi. Capek, kan?
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **20** · estimasi **9 dtk**
+- Visual: Layar terbagi — kiri terminal password merah, kanan terminal kunci hijau bersinar. Transisi wipe ke kanan.
 
-> <konteks singkat + "Di Audira, ...">
+> Ada satu setup yang cuma perlu dilakukan sekali, dan kamu tidak akan pernah ketik password lagi. Namanya SSH key. Di AUDIRA, kita bedah cara kerjanya.
 
-## c02 — <Judul Bab 1>
+## c02 — Asal Usul SSH
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **27** · estimasi **12 dtk**
+- Visual: Tahun 1995 besar muncul. Siluet tanpa wajah (rule 15) di depan komputer retro. Paket data melayang, disadap siluet penyerang. HUD: "Helsinki, 1995".
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Tahun 1995, jaringan kampus di Finlandia diretas lewat teknik sniffing. Seorang peneliti langsung bikin solusi: protokol SSH, komunikasi terenkripsi ujung ke ujung yang menggantikan password telanjang.
 
-## c03 — <Judul Bab 2>
+## c03 — Cara Kerja Key Pair
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **38** · estimasi **16 dtk**
+- Visual: Animasi gembok dan anak kunci muncul berpasangan. Kunci privat masuk ikon laptop, kunci publik terbang ke ikon server. Diagram panah: "Tantangan" dari server, "Jawaban" dari laptop. HUD: "Public + Private = Pair".
 
-> <teks narasi>
+> SSH key bekerja dengan pasangan. Kunci privat tinggal di komputermu, tidak pernah dikirim ke mana pun. Kunci publik disimpan di server. Waktu kamu push, server kasih tantangan matematika yang cuma bisa dijawab kunci privatmu. Cocok? Masuk. Tanpa password.
 
-## c04 — <Judul Bab 3>
+## c04 — Kenapa Ed25519
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **33** · estimasi **14 dtk**
+- Visual: Dua kunci di timbangan — kiri RSA besar bertuliskan "3072 bit", kanan Ed25519 kecil bertuliskan "256 bit". Timbangan miring ke kanan. HUD callout: "94x lebih kecil".
 
-> <teks narasi>
+> Ada banyak tipe kunci. Yang paling direkomendasikan sekarang: Ed25519. Ukurannya cuma 256 bit, tapi keamanannya setara RSA 3072 bit. Lebih kecil 94 kali, lebih cepat, dan tahan serangan side-channel. GitHub sendiri merekomendasikan tipe ini.
 
-## c05 — <Judul Bab 4>
+## c05 — Tiga Langkah Setup
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **36** · estimasi **15 dtk**
+- Visual: Terminal overlay gelap. Teks diketik typewriter effect: langkah 1 muncul, centang hijau. Langkah 2, centang. Langkah 3, centang. Checklist HUD. HUD: "3 Langkah. Sekali. Selesai."
 
-> <teks narasi>
+> Setupnya cuma tiga langkah. Pertama, buka terminal, ketik ssh-keygen minus t ed25519. Kunci langsung dibuat di folder .ssh. Kedua, tambahkan ke ssh-agent supaya sistem ingat. Ketiga, copy kunci publik ke GitHub. Selesai.
 
-## c06 — <Judul Bab 5>
+## c06 — Keamanan Ekstra
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Perisai muncul mengelilingi ikon kunci. Teks "passphrase" sebagai lapisan perisai kedua. Skenario laptop hilang: ikon laptop memudar, kunci tetap terlindungi. HUD: "Passphrase = Lapisan Kedua".
 
-> <teks narasi>
+> Mau lebih aman? Tambahkan passphrase saat generate. Meskipun laptop hilang, kunci privatmu tetap terkunci. Ganti komputer? Copy folder .ssh ke mesin baru.
 
 ## c07_payoff — Payoff dan Penutup
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **12** · estimasi **5 dtk**
+- Visual: Terminal — `git push` diketik, "Everything up-to-date" hijau instan. Zoom out, badge "SSH Connected". Transisi ke outro card AUDIRA.
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> Satu setup, nol password, seumur hidup. Setup SSH key-mu hari ini. Bersama AUDIRA.
+
+## Opsi hook lain
+
+1. "GitHub sudah hapus password sejak 2021. Kamu masih pakai password buat push?"
+2. "Tiga langkah. Sekali setup. Tidak pernah ketik password lagi."
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **204 kata** ≈ **82–91 dtk** @135–150 WPM.
+- 8 blok: hook, intro, 5 chapter, payoff + outro.

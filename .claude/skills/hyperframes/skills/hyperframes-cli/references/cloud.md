@@ -80,6 +80,8 @@ Rules support comments, globs, and negation. A later rule can override a default
 
 ## Render options
 
+> **AUDIRA override:** final renders pass `--fps 60`; the default below is 30.
+
 | Flag                   | Default                     | Meaning                                                                                                                        |
 | ---------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | `--fps`                | `30`                        | Frames per second, 1–240.                                                                                                      |

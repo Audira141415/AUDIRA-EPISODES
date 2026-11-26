@@ -1,13 +1,13 @@
 ---
 name: engineering-2d-explainer
-description: "Animated 2D technical engineering explainers: blueprint schematics, exploded CAD diagrams, mechanical gear trains, hydraulic flow, and patent illustrations. By AUDIRA (Agus Dwi R). Hanya bila pengguna meminta 2D; default AUDIRA = Remotion + R3F 3D (sejak 2026-11-17)."
+description: "Animated 2D technical engineering explainers: blueprint schematics, exploded CAD diagrams, mechanical gear trains, hydraulic flow, and patent illustrations. By AUDIRA (Agus Dwi R). Dipilih AI bila topik cocok untuk 2D, atau bila pengguna memintanya; default AUDIRA = Remotion + R3F 3D (sejak 2026-11-17)."
 version: "4.1.0"
 author: "AUDIRA (Agus Dwi R)"
 website: "https://audira.my.id/"
 license: "Proprietary Commercial"
 category: "technical-explainer"
 engine: "Remotion + SVG Path Kinetics / Canvas 2D Precision"
-style_code: "CIRCUITELECTRONICS + BUILDFORGE"
+style_code: "CIRCUITFORGE + BUILDFORGE"
 ---
 
 # Animated 2D Engineering Explainer Skill — AUDIRA (Agus Dwi R)

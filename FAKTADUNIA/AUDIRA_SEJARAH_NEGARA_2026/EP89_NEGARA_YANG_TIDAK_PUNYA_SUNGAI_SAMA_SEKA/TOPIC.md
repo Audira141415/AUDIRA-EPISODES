@@ -5,7 +5,11 @@ title: "Negara yang Tidak Punya Sungai Sama Sekali"
 hook: "Arab Saudi punya lautan minyak tapi nol sungai permanen"
 styleCandidates: ["WORLDFORGE (3D)", "HISTORYMAP (2D)", "NEGERI (3D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah — fakta geografis stabil, tidak sensitif, tidak ada wajah/logo"
 ---
 
 # Negara yang Tidak Punya Sungai Sama Sekali

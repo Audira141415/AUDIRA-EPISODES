@@ -61,8 +61,9 @@ npx remotion still Short out/f-end.png   --frame=90 --props='{...}'
 node .agents/skills/motion-skills/scripts/contact-sheet.mjs sheet.png out/f-start.png out/f-mid.png out/f-end.png
 
 # 3. Render MP4 & uji spesifikasi
+# AUDIRA: final hanya lewat `npm run render:final` atau `audira_render_batch` (directive 00 tahap 9), setelah acc; `npx remotion render` langsung hanya untuk klip cek pendek.
 npx remotion render Short out/short.mp4 --props='{...}'
-node .agents/skills/motion-skills/scripts/probe-mp4.mjs out/short.mp4 1080x1920 30
+node .agents/skills/motion-skills/scripts/probe-mp4.mjs out/short.mp4 1080x1920 60
 ```
 
 #### C. Heavy Tier — Manim Math Animation

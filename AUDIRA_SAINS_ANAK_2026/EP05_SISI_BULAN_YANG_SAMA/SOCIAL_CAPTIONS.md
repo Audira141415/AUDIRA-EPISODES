@@ -9,7 +9,22 @@ Hook: <...> · Cover: <3–5 kata> · Deskripsi: <...> · Pin: nomor seri + play
 Caption: <...> · 5 poin nilai: <...> · Tags: #AUDIRA #<...>
 
 ## YouTube Shorts
-Judul (<100 krt): <...> · Deskripsi SEO: <...> · Tags (<500 krt): <...> · Pin: <...>
+**Teks cover:** Kenapa Bulan Selalu Sama?
+
+**Judul:** Kenapa Kita Selalu Melihat Sisi Bulan yang Sama? #shorts
+
+**Deskripsi:**
+Bulan tetap berputar. Satu putaran pada porosnya butuh 27,3 hari, persis sama dengan satu kali mengelilingi Bumi, jadi sisi yang sama terus menghadap kita. Ilmuwan menyebutnya penguncian pasang surut. Karena Bulan sedikit bergoyang (librasi), dari Bumi kita bisa melihat sekitar 59% permukaannya. Sisi jauh juga tidak gelap: Luna 3 memotretnya pertama kali tahun 1959, Chang'e 4 mendarat di sana tahun 2019, dan Chang'e 6 membawa pulang 1.935 gram sampel. Laser ke cermin peninggalan Apollo menunjukkan Bulan menjauh 3,8 cm per tahun.
+
+Sumber: NASA NSSDC Moon Fact Sheet; NASA Science "Tidal Locking" dan "Moon Facts"; Wikipedia "Chang'e 4", "Chang'e 6", "Tidal locking".
+
+Seri Sains "Kenapa" dari AUDIRA Sains (@AudiraSains). Created by Agus Dwi R.
+
+#sains #faktasains #bulan #astronomi #AUDIRA
+
+**Tags:** kenapa bulan selalu sama, sisi jauh bulan, sisi gelap bulan, penguncian pasang surut, tidal locking, rotasi bulan, librasi, luna 3, change 4, change 6, astronomi, sains anak, AUDIRA Sains
+
+**Komentar pin:** Seri Sains "Kenapa" #5 · Playlist: Sains Kenapa · Episode sebelumnya: Kenapa Gunung Meletus? (EP04).
 
 ## Facebook Reels
 Caption cerita: <...> · Pemicu diskusi: <...> · Tags: #AUDIRA #<...>

@@ -5,7 +5,8 @@ title: "Pohon Tertua di Bumi — Hidup sejak 5.000 Tahun Lalu"
 hook: "Methuselah Pine di California: benih sudah tumbuh saat piramida Mesir dibangun"
 styleCandidates: ["WORLDFORGE (3D)", "CHRONICLE (2D)", "TIMEFORGE (3D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
 ---
 
 # Pohon Tertua di Bumi — Hidup sejak 5.000 Tahun Lalu

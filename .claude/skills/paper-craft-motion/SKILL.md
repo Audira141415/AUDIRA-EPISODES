@@ -7,7 +7,7 @@ website: "https://audira.my.id/"
 license: "Proprietary Commercial"
 category: "motion-graphics"
 engine: "Remotion + R3F (default since 2026-11-17); world3d only when the user forces it"
-style_code: "PAPERCUTOUT"
+style_code: "PAPERWORLD"
 ---
 
 # Paper Craft Motion Skill — AUDIRA (Agus Dwi R)

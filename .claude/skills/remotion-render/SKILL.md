@@ -4,6 +4,8 @@ description: Export a Remotion video
 version: 4.0.541
 ---
 
+> **AUDIRA override:** `npx remotion render` / `still` di bawah hanya untuk still dan klip cek pendek. Final hanya lewat `npm run render:final -- ... --sfx=public/audio/sfx.wav --vo=public/audio/vo.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc` atau `audira_render_batch`, setelah acc tahap 9.
+
 ## General rendering strategy
 
 Use Remotion's bundled browser for rendering, including compositions using

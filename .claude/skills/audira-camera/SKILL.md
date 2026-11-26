@@ -29,7 +29,7 @@ HyperFrames films follow `motion-doctrine` instead; this skill is for the starte
    npm run audit:rig -- src/kits/<kit>/camera/rig.ts <poseFunction> --frames=<n> --fps=<film fps>
    ```
    It reports jumps (the camera teleports), abrupt speed changes, mid-film stops and peak speed. Aim for 5/5.
-7. **Measure the video** on a 15–20 s draft clip (540×960) — draft clips for Remotion rule 13/14 only; world3d uses contact sheet + `look.json`, no MP4 draft — or the whole final:
+7. **Measure the video** on a 15–20 s draft clip (540×960) — required for every engine (G13); world3d also keeps contact sheet + `look.json` — or the whole final:
    ```bash
    npm run audit:camera -- out/draft-clip.mp4 --json=out/camera.json
    ```
@@ -62,7 +62,7 @@ The audit uses ffmpeg `vidstabdetect` motion vectors on the rendered video, find
 | Jerks and pops (cuts excluded), indicative | > 4 / > 10 per 10 s | −1 / −2 |
 | Too fast (> 0.6 frame widths per second) | > 10 % of seconds | −1 |
 
-Short planned stillness is allowed (a payoff hold, the outro card): up to 15 % parked seconds and 3 s holds are free. The per-second strip in the output (`. - = # !`) shows where to fix.
+Short planned stillness is allowed (a payoff hold, the outro card): up to 15 % parked seconds and 3 s holds cost no score points. The score is not the gate: G13 still requires `deadPct` ≤ 5 % and `longestHold` ≤ 1.5 s before the final render. The per-second strip in the output (`. - = # !`) shows where to fix.
 
 **What it measures well and what it does not.** It measures the picture, so it counts fast-moving foreground objects too: a giant gear spinning past the lens reads as motion, which is also a readability problem. Parked seconds, long holds, speed and pops are reliable. Jerk counts are only indicative in 3D: when the camera passes close to objects at several depths, parallax alone produces velocity changes as large as a real handover jerk. For example, a rig that is mathematically smooth still measured 7.5 per 10 s. For smoothness, trust `audit:rig`.
 

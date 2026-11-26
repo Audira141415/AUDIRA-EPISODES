@@ -1,93 +1,69 @@
-# SCRIPT — `Cara kerja benda dan fenomena viral yang jarang diketahui` (`EP59`)
+# Naskah — Kenapa API Kamu Butuh Rate Limiting (dengan Contoh Nyata)
 
-> ✅ Gerbang tahap 4: acc naskah SEBELUM VO. Standar EP01 Makkah.
-> - **Short (9:16):** 190–210 kata, 6 tahap (Hook/Context/Main/Explanation/Payoff/Outro), 80–90 dtk @135–150 WPM.
-> - **Long-form (16:9 + 2 short):** ≥ 1000 kata, ≥ 6 chapter, estimasi durasi per chapter, short turunan di akhir.
-> - Hook tajam 0–3s, bukan klise AI ("Tahukah Anda", "Pernahkah Anda membayangkan").
-> - VO sebut "AUDIRA" di hook atau outro. Markup `{display|spoken}` untuk angka/satuan/simbol/kata asing.
-> - Fakta HANYA dari `research/SOURCE_REGISTER.md` (level HIGH/MED). Jangan mengarang angka.
-
-Format: `<format video>`. Narator: Cartesia Galang (`04b567df`), `lang: id`. Style: `<STYLE>`.
-
-**Estimasi durasi:** `<N> kata ≈ <N>–<N> dtk` @135–150 WPM.
+> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+> Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:00
-- Visual: <deskripsi visual yang bisa dibaca tanpa suara>
+- Kata: **10** · estimasi **4 dtk**
+- Visual: Terminal gelap, angka request naik eksponensial, server rack berkedip merah lalu mati total
 
-> <kalimat pembuka yang menangkap atensi instan — bukan "Tahukah Anda">
+> Satu user, tanpa batas, bisa matikan server kamu sendiri.
 
 ## c01_intro — Intro
 
-- Kata: **N** · estimasi **N dtk** · mulai ±0:NN
-- Visual: <deskripsi visual>
+- Kata: **12** · estimasi **5 dtk**
+- Visual: Gerbang digital terbuka, siluet request berbaris menuju pintu API, logo AUDIRA muncul di sudut
 
-> <konteks singkat + "Di Audira, ...">
+> Rate limiting adalah penjaga gerbang API. AUDIRA bahas kenapa ini wajib.
 
-## c02 — <Judul Bab 1>
+## c02 — Kasus Parler
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual detail per aksi>
+- Kata: **24** · estimasi **11 dtk**
+- Visual: Globe data mengecil, angka {8 TB|delapan terabyte} muncul besar di HUD, ikon video bertumpuk dengan pin GPS menyebar di peta
 
-> <teks narasi — setiap angka/nama asing dalam markup {display|spoken}>
+> Dua ribu dua puluh satu, Parler kehilangan delapan terabyte data. Satu juta video dengan GPS pengguna, diunduh habis. Penyebabnya: tidak ada pembatas akses API.
 
-## c03 — <Judul Bab 2>
+## c03 — Cara Kerja Rate Limiting
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **30** · estimasi **13 dtk**
+- Visual: Diagram split-screen: kiri GitHub dengan callout {5.000/jam|lima ribu per jam}, kanan Stripe dengan callout {100/dtk|seratus per detik}. Meter request naik, lalu muncul badge besar "429"
 
-> <teks narasi>
+> Rate limiting membatasi berapa kali user memanggil API per waktu. GitHub: lima ribu request per jam. Stripe: seratus per detik. Lewat batas? Kode empat ratus dua puluh sembilan: terlalu banyak permintaan.
 
-## c04 — <Judul Bab 3>
+## c04 — Empat Algoritma
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **36** · estimasi **15 dtk**
+- Visual: Empat panel animasi bergiliran: ember berisi token, pipa menetes konstan, blok waktu dengan counter, lalu hybrid sliding window. Panel fixed window berkedip merah saat angka {2x|dua kali lipat} muncul
 
-> <teks narasi>
+> Empat algoritma utama. Token bucket: jatah token terisi berkala. Leaky bucket: antrian konstan seperti tetesan air. Fixed window menghitung per blok waktu, tapi celah di batas bisa meloloskan dua kali lipat traffic. Sliding window memperbaiki itu.
 
-## c05 — <Judul Bab 4>
+## c05 — Tiga Risiko Tanpa Rate Limiting
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **29** · estimasi **12 dtk**
+- Visual: Tiga kolom infografis vertikal: ikon server terbakar (resource habis), ikon tagihan meledak (biaya cloud), ikon gembok terbuka (serangan). Tiap kolom muncul bergiliran dengan angka animasi
 
-> <teks narasi>
+> Tanpa rate limiting, tiga risiko. Resource habis oleh satu user, yang lain tidak bisa akses. Biaya cloud meledak karena bayar per request. Dan serangan brute force jadi lebih mudah.
 
-## c06 — <Judul Bab 5>
+## c06 — Langkah Implementasi
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **27** · estimasi **12 dtk**
+- Visual: Checklist animasi tiga langkah, ikon sliding window di-highlight, endpoint dengan angka limit, lalu respons 429 dengan header yang jelas
 
-> <teks narasi>
+> Mulai dari sliding window, algoritma paling seimbang. Atur batas per endpoint. Kembalikan kode empat ratus dua puluh sembilan dengan header yang jelas agar developer tahu kapan coba lagi.
 
 ## c07_payoff — Payoff dan Penutup
 
-- Kata: **N** · estimasi **N dtk** · mulai ±N:NN
-- Visual: <deskripsi visual>
+- Kata: **24** · estimasi **10 dtk**
+- Visual: Server kokoh dengan pagar digital berlapis, callout {10.000 RPS|sepuluh ribu request per detik} dari AWS, transisi ke outro card AUDIRA
 
-> <rangkuman visual + CTA + "... bersama {AUDIRA|Audira}.">
+> AWS sediakan sepuluh ribu request per detik sebagai default. Tiap API besar punya batas. Rate limiting bukan fitur tambahan. Ini fondasi keamanan API kamu. Bersama AUDIRA.
+
+## Opsi hook lain
+
+1. "Delapan terabyte data bocor karena satu kesalahan: tidak ada rate limiting."
+2. "API tanpa batas itu seperti pintu terbuka tanpa penjaga."
 
 ## Total
 
-- **N kata**, estimasi **N dtk ≈ N menit** pada 140 WPM (N–N menit pada 150–135 WPM).
-- N blok: hook, intro, N chapter, payoff + CTA.
-- End screen 20 dtk terakhir menimpa CTA + outro card AUDIRA.
-
-## Short turunan (9:16, dirender ulang, bukan crop)
-
-### short01 — <Judul Short 1>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek yang bisa berdiri sendiri>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
-### short02 — <Judul Short 2>
-
-- Memakai ulang: `<chapter>`, dari kalimat "<...>" sampai akhir.
-- Hook baru (0–3 dtk): "<hook pendek>"
-- Penutup: "<CTA ke video panjang + {AUDIRA|Audira}>"
-- Kata: N · estimasi **N dtk** (rentang 45–90 dtk terpenuhi).
-
----
-**Cek:** `npm run script:check -- docs/SCRIPT.md` (tandai `[SHORT 1]`/`[SHORT 2]` per chapter).
+- **~200 kata** ≈ **80–89 dtk** @135–150 WPM

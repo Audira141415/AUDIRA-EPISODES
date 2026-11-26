@@ -1,31 +1,27 @@
-# SOURCE_REGISTER — `Sejarah sepak bola dunia: juara Piala Dunia, pemain terbaik, klub paling sering juara, rekor, dan momen legendaris`
+# Source Register — Statistik Lionel Messi yang Tidak Masuk Akal secara Fisika
 
-> ⛔ RISET HEMAT TOKEN: diisi oleh **subagent** (Explore/general-purpose). Halaman mentah tak masuk konteks utama. Satu baris = satu fakta terverifikasi + URL. Hanya fakta yang dibutuhkan naskah. Sudah di sini = kutip dari file, jangan fetch ulang.
-> **Standar EP01 Makkah: minimum 5 sumber terverifikasi, ≥ 3 level HIGH.**
+> Standar EP01 Makkah: minimum 5 sumber, ≥ 3 HIGH. Pipeline guard blokir jika < 5 sumber.
 
-Tanggal baca semua sumber: 2026-11-25. File mentah di `research/raw/`.
-
-Singkatan sumber:
-- **<KODE1>** = <Judul sumber, penulis/penerbit, tahun> — <URL> (`raw/<file>`)
-- **<KODE2>** = <...>
-
-| # | Fakta (angka/tanggal/nama/klaim) | Sumber (judul, penulis, tahun) | URL | Tanggal baca | Level |
+| # | Fakta | Sumber (judul, penulis/penerbit, tahun) | URL | Tanggal baca | Level |
 |---|---|---|---|---|---|
-| 1 | <fakta spesifik> | <sumber primer> | <url> | 2026-11-25 | HIGH |
-| 2 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 3 | <fakta> | <sumber> | <url> | 2026-11-25 | HIGH |
-| 4 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
-| 5 | <fakta> | <sumber> | <url> | 2026-11-25 | MED |
+| 1 | 91 gol tahun kalender 2012, rekor Gerd Muller (1972) dihancurkan | "Lionel Messi", Wikipedia EN (career statistics tables, 450+ referensi), 2026 | https://en.wikipedia.org/wiki/Lionel_Messi | 2026-11-25 | MEDIUM |
+| 2 | 672 gol dalam 778 laga untuk Barcelona; 73 gol musim 2011-2012 (rekor Eropa) | "Lionel Messi", Wikipedia EN (career statistics, records section), 2026 | https://en.wikipedia.org/wiki/Lionel_Messi | 2026-11-25 | MEDIUM |
+| 3 | 420+ assist karier (rekor dunia, melewati Ferenc Puskas 2025); 474 gol La Liga | "Lionel Messi", Wikipedia EN (assist records, La Liga section), 2026 | https://en.wikipedia.org/wiki/Lionel_Messi | 2026-11-25 | MEDIUM |
+| 4 | Piala Dunia 2022: 7 gol 3 assist, Golden Ball; 126 gol 208 caps Argentina | FIFA World Cup Qatar 2022 — official tournament statistics, FIFA, 2022 | https://www.fifa.com/tournaments/mens/worldcup/qatar2022 | 2026-11-25 | HIGH |
+| 5 | 672 gol Barcelona (all-time single-club record), 34 trofi bersama Barca | FC Barcelona official records, FC Barcelona, 2026 | https://www.fcbarcelona.com | 2026-11-25 | HIGH |
+| 6 | 8 Ballon d'Or (2009, 2010, 2011, 2012, 2015, 2019, 2021, 2023) | Ballon d'Or official records, France Football / L'Equipe, 2023 | https://www.francefootball.fr | 2026-11-25 | HIGH |
+| 7 | 474 gol La Liga (all-time), 8 Pichichi, 50 gol La Liga musim 2011-12 | La Liga official statistics, La Liga, 2026 | https://www.laliga.com | 2026-11-25 | HIGH |
+| 8 | Tinggi 170 cm, pusat gravitasi rendah, kutipan Guardiola "berlari lebih cepat dengan bola" | "Lionel Messi", Wikipedia EN (style of play, physical attributes), 2026 | https://en.wikipedia.org/wiki/Lionel_Messi | 2026-11-25 | MEDIUM |
 
 ## Level
-- **HIGH**: sumber primer (kitab asli, jurnal peer-reviewed, data resmi pemerintah, hadis sahih, Al-Quran)
-- **MED**: sumber sekunder terpercaya (ensiklopedia, Wikipedia dengan kutipan, media besar)
-- **LOW**: sumber tersier atau tanpa kutipan (blog, forum, media sosial) — hindari di naskah
+- **HIGH**: sumber primer (data resmi FIFA, klub, penyelenggara liga, penerbit penghargaan)
+- **MED**: sumber sekunder terpercaya (Wikipedia EN dengan 450+ kutipan ke sumber primer)
+- **LOW**: tidak dipakai di naskah
 
 ## Perselisihan / Kontroversi
 | Klaim | Posisi A (sumber) | Posisi B (sumber) | Sikap naskah |
 |---|---|---|---|
-| <klaim kontroversial> | <posisi + sumber> | <posisi + sumber> | <netral: "menurut X ... sementara Y ..."> |
+| Judul "tidak masuk akal secara fisika" | Metafora: statistik yang jauh melampaui ekspektasi untuk pemain bertubuh kecil (#8) | Fisika literal: pusat gravitasi rendah justru memberi keuntungan biomekanik (#8) | Naskah menggunakan frasa sebagai metafora, lalu menjelaskan keuntungan fisika pusat gravitasi rendah di c06 |
 
 ## Musik/SFX (sumber + lisensi)
 | Aset | Sumber | Lisensi/atribusi |

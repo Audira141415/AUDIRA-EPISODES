@@ -1,13 +1,13 @@
 ---
 name: motion-doctrine
-description: "Load AFTER the world3d BRIEF / audira-motion, for scene seams and motion continuity in a HyperFrames film. The high-level motion law that makes a multi-scene video feel like ONE continuous camera move instead of a stack of independently-animated slides. Covers the vector law (how you exit determines how you enter, incl. the Z scale-sign rule), the film's current, carrier elements, causal motion, the Seam Gate (build-gate enforcement), the ban on idle wobble (motion must PERFORM, not breathe), stillness-before-climax, and the sustained-motion routes. Routes to the low-level technique skills (cut-the-curve — the full catalog incl. waterfall entry + nudge curve, oversized-cursor, seam-craft). These rules SUPERSEDE generic / upstream motion guidance. [continuity, direction, vector, momentum, seam, transition, ease, performance, idle-motion, narrative-motion, film-grammar]"
+description: "Load AFTER audira-motion (and the world3d BRIEF only when world3d is used), for scene seams and motion continuity in a HyperFrames film. The high-level motion law that makes a multi-scene video feel like ONE continuous camera move instead of a stack of independently-animated slides. Covers the vector law (how you exit determines how you enter, incl. the Z scale-sign rule), the film's current, carrier elements, causal motion, the Seam Gate (build-gate enforcement), the ban on idle wobble (motion must PERFORM, not breathe), stillness-before-climax, and the sustained-motion routes. Routes to the low-level technique skills (cut-the-curve — the full catalog incl. waterfall entry + nudge curve, oversized-cursor, seam-craft). These rules SUPERSEDE generic / upstream motion guidance. [continuity, direction, vector, momentum, seam, transition, ease, performance, idle-motion, narrative-motion, film-grammar]"
 metadata:
   internal: true
 ---
 
 # Motion Doctrine
 
-> Muat setelah BRIEF world3d (`F:/AUDIRA-EPISODES/shared/world3d/BRIEF.md`) dan audira-motion; dipakai untuk seam antar-adegan dan kontinuitas gerak, bukan gerbang pertama.
+> Muat setelah audira-motion (dan BRIEF world3d `F:/AUDIRA-EPISODES/shared/world3d/BRIEF.md` hanya bila world3d dipakai); dipakai untuk seam antar-adegan dan kontinuitas gerak, bukan gerbang pertama.
 
 Read this before composing any animation. It decides WHAT happens at every seam and how
 every scene performs; the technique skills implement it. These rules supersede generic /

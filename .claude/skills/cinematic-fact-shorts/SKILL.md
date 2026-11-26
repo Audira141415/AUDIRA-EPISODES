@@ -7,7 +7,7 @@ website: "https://audira.my.id/"
 license: "Proprietary Commercial"
 category: "short-form-video"
 engine: "Remotion + R3F (default since 2026-11-17); world3d only when the user forces it"
-style_code: "KINETICTYPOGRAPHY + OPENSHORTS"
+style_code: "TEXTVOYAGE + CINESTORY"
 ---
 
 # Cinematic Fact Shorts Skill — AUDIRA (Agus Dwi R)
@@ -17,7 +17,7 @@ Specialized motion skill for high-retention short-form video (YouTube Shorts, Ti
 ## 1. Video Architecture & Retention Psychology
 
 1. **The 3-Second Hook Rule**:
-   - Frame 0–90 (Seconds 0–3): Visual shock + provocative question + rapid camera zoom.
+   - Seconds 0–3 (frame 0–180 at 60 fps): Visual shock + provocative question + rapid camera zoom.
    - Example visual hook: A countdown meter racing down to zero, or a classified stamp slamming down.
 2. **Safe Zones for 9:16 Vertical (1080 × 1920)**:
    - Top: panel y 236px (profile/UI).
@@ -28,8 +28,8 @@ Specialized motion skill for high-retention short-form video (YouTube Shorts, Ti
    - Active spoken word scales up (`scale: 1.04` max — world3d BRIEF limit) with accent color (Electric Yellow `#FFDF00` or Neon Lime `#39FF14`).
    - Heavy drop shadow + dark stroke (`-webkit-text-stroke: 4px black`) to guarantee legibility on any background.
 4. **Pacing & Beat Matching**:
-   - Shot duration: Never hold a single static camera for more than 2.2 seconds.
-   - Cut transitions: Hard whip pan, flash zoom, or sound-synced glitch cut every 60–75 frames.
+   - Shot duration: Never hold a single static camera for more than 1.5 seconds.
+   - Transitions: continuous camera move (whip pan or push-through carried into the next scene), synced to sound, every 2–2.5 seconds.
 
 ## 2. Color Palette & Hook Tokens
 
@@ -80,7 +80,7 @@ export const WordPop: React.FC<{
         fontSize: 54,
         textTransform: 'uppercase',
         textShadow: '0 4px 18px rgba(0,0,0,0.9), 0 0 8px rgba(0,0,0,1)',
-        margin: '0 8px',
+        margin: '0 0.2em',
       }}
     >
       {word}

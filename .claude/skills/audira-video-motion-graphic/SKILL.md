@@ -12,6 +12,11 @@ metadata:
 
 # Bang Motion — motion graphic web yang bukan PPT
 
+> **AUDIRA override (menang atas isi di bawah untuk video AUDIRA).**
+> - **Suara**: VO Cartesia lewat `audira_generate_voiceover` dan caption karaoke per kata wajib. Alur "naskah VO + ajakan merekam" dan "tanpa subtitle/caption" tidak berlaku; lewati VO hanya bila pengguna memberi file sendiri atau memilih musik/SFX saja.
+> - **Keunikan**: palet, font, latar, dan gerak boleh sama dengan proyek sebelumnya bila kualitasnya tinggi (directive 00 poin 3). Aturan "wajib berbeda dari proyek sebelumnya" tidak berlaku.
+> - **Rasio**: default 9:16 1080×1920 @ 60, termasuk saat pengguna menjawab "terserah" (default 16:9 di tabel `references/explainer.md` tidak berlaku).
+
 **v1.19.0 · by [Bang Tutorial](https://youtube.com/bangtutorial) · MIT.** Riwayat perubahan di `CHANGELOG.md`;
 cara pasang di `README.md`.
 

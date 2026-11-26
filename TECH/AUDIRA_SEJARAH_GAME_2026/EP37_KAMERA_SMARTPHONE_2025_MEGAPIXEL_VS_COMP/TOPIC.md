@@ -5,7 +5,11 @@ title: "Kamera Smartphone 2025: Megapixel vs Computational Photography"
 hook: "200MP tidak berarti foto terbaik — ini yang sebenarnya penting"
 styleCandidates: ["PRECISION (2D)", "BONGKAR (2D)", "SCALEFORGE (3D)"]
 source: channel-topics/audira-tech/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: tidak   # teknologi sensor dan fitur berubah tiap tahun (produk baru, benchmark baru)
+risiko: "rendah"
 ---
 
 # Kamera Smartphone 2025: Megapixel vs Computational Photography

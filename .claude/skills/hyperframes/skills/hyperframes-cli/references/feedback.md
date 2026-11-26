@@ -1,6 +1,6 @@
 # Feedback reports
 
-After verifying a successful render, send one feedback report unless telemetry is disabled or the user opted out:
+**AUDIRA override: never send feedback or gap reports to an outside service without the user's permission; note the gap in the report instead.** Upstream default: after verifying a successful render, send one feedback report unless telemetry is disabled or the user opted out:
 
 ```bash
 npx hyperframes feedback --rating <0-10> --comment "<specific result or friction>"

@@ -5,7 +5,11 @@ title: "SSH Key Setup Sekali untuk Seumur Hidup"
 hook: "Stop ketik password setiap push ke GitHub"
 styleCandidates: ["DEVFORGE (2D)", "PIXELSTORY (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-dev/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 4
+awet: ya
+risiko: "rendah — fakta teknis stabil, tidak ada wajah/logo (rule 15 aman), Ed25519 standar mapan"
 ---
 
 # SSH Key Setup Sekali untuk Seumur Hidup

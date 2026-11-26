@@ -153,7 +153,7 @@ npx hyperframes render --docker                       # byte-identical
 
 ### feedback (report after rendering)
 
-After a render is verified, send one feedback line per task. This is the maintainers' primary signal — a render that finishes silently tells them nothing.
+**AUDIRA override: never send feedback or gap reports to an outside service without the user's permission; note the gap in the report instead.** Upstream default: after a render is verified, send one feedback line per task. This is the maintainers' primary signal — a render that finishes silently tells them nothing.
 
 ```bash
 npx hyperframes feedback --rating 10                              # clean run, no notes

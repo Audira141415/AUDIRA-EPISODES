@@ -108,6 +108,8 @@ When working with Captions, load [Remotion Captions](../remotion-captions/SKILL.
 
 ### Bundle-Once Render-Many
 
+> Bukan jalur final AUDIRA. Final = `npm run render:final` (dengan `--sfx` dan `--vo`, G18) atau `audira_render_batch`. Pola ini hanya untuk klip cek atau proyek lain.
+
 Untuk batch render multi-segment (episode dengan banyak adegan), bundle sekali dan reuse Chrome:
 
 ```js
@@ -211,6 +213,8 @@ const EpisodePropsSchema = z.object({
 |-----------|------|
 | > 150 | Fast, snappy |
 | < 100 | Slow, gentle |
+
+> **Satuan `f` di tiga bagian berikut = 1/30 detik** (Spring Overlap, Physics, Acting Line). Di proyek AUDIRA 60 fps kalikan 2, atau tulis `detik * fps`.
 
 ### Spring Overlap Timing (kamera & objek multi-part)
 

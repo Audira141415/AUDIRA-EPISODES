@@ -5,6 +5,8 @@ metadata:
   tags: sfx, sound, effect, audio
 ---
 
+> **AUDIRA override:** SFX episode dibuat dengan `npm run sfx` (dari `SHOTLIST.md` + timing VO) dan di-mix oleh `render:final --sfx`. Jangan pasang SFX lewat `<Audio>`: segmen render tanpa audio (G18b), jadi SFX itu tidak ikut mix dan tidak di-duck (G18).
+
 To include a sound effect, use `<Audio>` from `@remotion/media`:
 
 ```tsx

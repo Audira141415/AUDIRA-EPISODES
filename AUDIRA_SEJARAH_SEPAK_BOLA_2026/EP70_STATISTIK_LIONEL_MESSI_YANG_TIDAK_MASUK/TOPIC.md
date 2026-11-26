@@ -5,7 +5,11 @@ title: "Statistik Lionel Messi yang Tidak Masuk Akal secara Fisika"
 hook: "1 pemain, 1 bola — tapi 8 orang musuh selalu gagal merebutnya"
 styleCandidates: ["DATAPHYSICAL (2D)", "PRECISION (2D)", "SCALEFORGE (3D)"]
 source: channel-topics/audira-sportfacts/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
+prioritas: 5
+awet: ya
+risiko: "rendah"
 ---
 
 # Statistik Lionel Messi yang Tidak Masuk Akal secara Fisika

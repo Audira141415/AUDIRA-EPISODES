@@ -65,6 +65,8 @@ A crossfade is two clips on different tracks that overlap, each with a fade.
 
 ## Music under a voice
 
+> **AUDIRA override:** the final mix follows G18 (`F:/AUDIRA-ALL-SKILL/.agents/rules/on-demand/pipeline-guards.md`): SFX duck `ratio=8 attack=5 release=350 threshold=0.015`, SFX at least 12 LU under the voice, master −14 LUFS with true peak below −1 dBFS; music ducking per directive 00 point 7. The numbers below are upstream defaults.
+
 Duck the bed with a `volume` lane on the music: full level before the voice, down to about 0.3–0.4 while anyone speaks (word timings from `npx hyperframes transcribe` or the voiceover give the times), back up after. Then carve the bed, which dips only the bands the voice uses: `node <SKILL_DIR>/audio/scripts/carve.mjs --comp index.html` (needs `ffmpeg` and `@hyperframes/core` in the project; `--dry-run` to see the plan). It is the same analysis as Studio's carve panel. It reads only double-quoted attributes (JSON quotes as `&quot;`), so write the bed's chain and lanes that way or it overwrites them. Never put a carve on a voice track.
 
 ## Group buses

@@ -7,7 +7,7 @@ website: "https://audira.my.id/"
 license: "Proprietary Commercial"
 category: "engineering-3d"
 engine: "Remotion + R3F (default since 2026-11-17); world3d only when the user forces it"
-style_code: "BUILDFORGE + URBANMASSING"
+style_code: "BUILDFORGE + URBANFORGE"
 ---
 
 # Cinematic Infrastructure Explainer Skill — AUDIRA (Agus Dwi R)
@@ -26,7 +26,7 @@ Specialized motion skill for engineering explainers, megaproject construction ti
    - Stage 1: Piling & Excavation (Wireframe callout + yellow boundary laser).
    - Stage 2: Substructure & Pier Formwork (Rising volumetric sweep).
    - Stage 3: Superstructure Segment Launching (Crane trolley motion + tension cable tightening).
-   - Stage 4: Commissioning & Traffic Flow (Pulse particle trajectories).
+   - Stage 4: Commissioning & Traffic Flow (GLB vehicles or trains in motion; pulse particles are an accent only).
 
 ## 2. Palette & Industrial Color Tokens
 

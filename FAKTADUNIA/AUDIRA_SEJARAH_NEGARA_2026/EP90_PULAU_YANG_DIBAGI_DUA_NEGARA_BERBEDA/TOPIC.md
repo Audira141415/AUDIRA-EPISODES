@@ -5,7 +5,8 @@ title: "Pulau yang Dibagi Dua Negara Berbeda"
 hook: "Hispaniola: Haiti dan Dominika membuktikan bagaimana sejarah membelah daratan"
 styleCandidates: ["HISTORYMAP (2D)", "NEGERI (3D)", "VISUALINVESTIGATION (2D)"]
 source: channel-topics/audira-faktadunia/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-25"
 ---
 
 # Pulau yang Dibagi Dua Negara Berbeda

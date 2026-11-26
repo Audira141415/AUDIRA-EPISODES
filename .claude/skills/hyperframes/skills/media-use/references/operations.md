@@ -171,6 +171,8 @@ data-automation='{"version":1,"lanes":[{"target":"volume","points":[{"t":0,"v":0
 
 B2, bake ducking only for exported or standalone files.
 
+> **AUDIRA override:** the final mix follows G18 (`F:/AUDIRA-ALL-SKILL/.agents/rules/on-demand/pipeline-guards.md`): SFX duck `ratio=8 attack=5 release=350 threshold=0.015`, SFX at least 12 LU under the voice, master −14 LUFS with true peak below −1 dBFS; music ducking per directive 00 point 7. The numbers below are upstream defaults.
+
 ```bash
 ffmpeg -i bgm.mp3 -i voice.wav \
   -filter_complex "[0][1]sidechaincompress=threshold=0.03:ratio=8:attack=200:release=400[ducked]" \

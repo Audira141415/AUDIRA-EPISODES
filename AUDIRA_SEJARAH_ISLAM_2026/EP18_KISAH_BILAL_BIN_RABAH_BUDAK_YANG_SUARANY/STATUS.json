@@ -3,81 +3,159 @@
   "episode": "EP18_KISAH_BILAL_BIN_RABAH_BUDAK_YANG_SUARANY",
   "topic": "Sejarah peradaban Islam yang jarang diketahui",
   "createdAt": "2026-11-25T02:39:47.116Z",
-  "updatedAt": "2026-11-25T02:39:47.116Z",
-  "currentStage": "context",
-  "sessionPhase": "A",
+  "updatedAt": "2026-11-26T12:52:09.244Z",
+  "currentStage": "final",
+  "sessionPhase": "C",
   "stages": [
     {
       "id": "context",
       "name": "Baca aturan, memori & 2–3 episode terakhir",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-25T09:34:13.000Z",
+          "text": "sync: pekerjaan episode sudah dimulai"
+        }
+      ],
+      "doneAt": "2026-11-25T09:23:36.423Z",
+      "startedAt": "2026-11-25T09:23:36.423Z"
     },
     {
       "id": "research",
       "name": "Riset bersumber (research/SOURCE_REGISTER.md)",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-25T09:34:13.000Z",
+          "text": "sync: riset ada"
+        }
+      ],
+      "doneAt": "2026-11-25T03:11:10.746Z",
+      "startedAt": "2026-11-25T03:11:10.746Z"
     },
     {
       "id": "style",
       "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-25T14:53:17.058Z",
+          "text": "PAPERWORLD 2D dipilih AI. Cover topik ditunda ke Sesi B (frame hook film); docs tahap 4 final, 207 kata."
+        }
+      ],
+      "doneAt": "2026-11-25T14:53:17.058Z"
     },
     {
       "id": "script",
       "name": "Naskah 6 tahap + storyboard + art direction + estimasi durasi",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-25T09:34:13.000Z",
+          "text": "sync: naskah ada"
+        }
+      ],
+      "doneAt": "2026-11-25T03:10:08.729Z",
+      "startedAt": "2026-11-25T03:10:08.729Z"
     },
     {
       "id": "setup",
       "name": "Scaffold folder + setup kit",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-25T15:00:19.632Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-25T15:04:29.513Z",
+      "startedAt": "2026-11-25T14:54:52.631Z"
     },
     {
       "id": "voice",
       "name": "VO Cartesia + analisis timing + timeline",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-25T15:04:29.682Z",
+          "text": "VO Cartesia 87,68 dtk dikunci, lafal dicek Whisper"
+        }
+      ],
+      "doneAt": "2026-11-25T15:04:29.682Z"
     },
     {
       "id": "animation",
       "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-25T15:00:19.632Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-25T15:04:37.326Z",
+          "text": "Auto-sync salah menandai done. Yang ada baru timing.ts + pieces.tsx (belum dirender); Film.tsx, scenes, SFX belum dibuat."
+        },
+        {
+          "at": "2026-11-25T15:05:06.065Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-25T14:57:11.346Z",
+      "startedAt": "2026-11-25T14:57:11.346Z"
     },
     {
       "id": "draft",
       "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-26T11:18:49.810Z",
+          "text": "Juri buta r2 3.83 LOLOS (r1 3.5). Sheet draft/stills/_sheet.jpg, THEME_CHECK 15/15, camera 5/5, rig 5/5."
+        }
+      ],
+      "doneAt": "2026-11-26T11:18:49.810Z"
     },
     {
       "id": "final",
       "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
       "gate": true,
-      "status": "pending",
-      "approved": false,
-      "approvedAt": null,
-      "notes": []
+      "status": "in_progress",
+      "approved": true,
+      "approvedAt": "2026-11-26T12:46:53.524Z",
+      "notes": [
+        {
+          "at": "2026-11-26T12:46:16.839Z",
+          "text": "G18c diukur 2026-11-26 (graph G18 identik render-final): VO -16.3 LUFS, SFX ter-duck -31.4 LUFS, gap 15.1 LU (>= 12, lolos, sfx.wav tidak diubah). Menunggu acc pengguna."
+        },
+        {
+          "at": "2026-11-26T12:46:53.524Z",
+          "text": "Acc pengguna 2026-11-26: \"Gas render\"."
+        }
+      ],
+      "startedAt": "2026-11-26T12:46:16.839Z"
     },
     {
       "id": "delivery",
       "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-26T12:52:09.244Z",
+          "text": "sync: SOCIAL_CAPTIONS.md ada"
+        }
+      ],
+      "doneAt": "2026-11-26T12:50:03.602Z",
+      "startedAt": "2026-11-26T12:50:03.602Z"
     },
     {
       "id": "review",
@@ -88,6 +166,338 @@
     }
   ],
   "data": {
-    "memoryEpisode": "sejarah-islam-EP18"
-  }
+    "memoryEpisode": "sejarah-islam-EP18",
+    "style": "PAPERWORLD",
+    "engine": "remotion",
+    "dimension": "2D",
+    "wordCount": 207,
+    "shortTitle": "Bilal bin Rabah",
+    "estimatedDuration": {
+      "wordCount": 207,
+      "minSec": 83,
+      "maxSec": 92
+    }
+  },
+  "syncedAt": "2026-11-26T12:52:09.244Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-25T14:50:53.048Z",
+      "doing": "Sesi A tahap 3-4: style dipilih AI = PAPERWORLD, engine Remotion 2D (SVG kertas berlapis, siluet tanpa wajah). Riset lengkap (11 sumber), naskah draf 208 kata ada. Menulis STYLE_DECISION, ART_DIRECTION, SCRIPT final, STORYBOARD, ASSET_MANIFEST. Cover topik belum dirender (butuh proyek; hook memblokir kode adegan di fase A).",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/ART_DIRECTION.md",
+        "docs/SCRIPT.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md"
+      ],
+      "next": "Selesaikan docs tahap 3-4, lalu handover newSession ke Sesi B (tahap 5 scaffold). Referensi kode: gold kits/paperworld/gold/short-baru-11-23-EP18/code dan QISSAH/AUDIRA_KISAH_ISLAM_2026/EP43-46.",
+      "snapshot": {
+        "episode": "EP18_KISAH_BILAL_BIN_RABAH_BUDAK_YANG_SUARANY",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": null,
+        "memoryEpisode": "sejarah-islam-EP18",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-25T14:53:26.242Z",
+      "doing": "Sesi A selesai: style PAPERWORLD, Remotion 2D SVG kertas berlapis, 207 kata (83-92 dtk), shortTitle Bilal bin Rabah, 13 adegan + outro. Riset 11 sumber. Adab: Nabi tidak digambarkan sama sekali, sahabat hanya siluet tanpa wajah, tanpa teks Arab buatan, tanpa rekaman azan. Koreksi naskah: tanpa klaim cambukan, harga pembelian, atau 'manusia pertama azan'. Cover topik belum ada. npm run preflight belum dijalankan (proyek belum ada).",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/SCRIPT.md",
+        "docs/ART_DIRECTION.md"
+      ],
+      "next": "Sesi B: mulai tahap setup (5) scaffold Remotion + preflight, lalu VO (6), visual + SFX (7), cover-topic dari frame hook, contact sheet + THEME_CHECK + juri (8).",
+      "snapshot": {
+        "episode": "EP18_KISAH_BILAL_BIN_RABAH_BUDAK_YANG_SUARANY",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "sejarah-islam-EP18",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-25T14:57:25.931Z",
+      "doing": "Sesi B: scaffold project/ selesai (starter + kit paperworld, node_modules junction); VO dari audio/vo_tts.txt sedang dibuat ke project/public/audio/vo.wav",
+      "files": [
+        "audio/vo_tts.txt",
+        "project/src/Root.tsx"
+      ],
+      "next": "kunci VO, tulis project/src/ep18 (pola EP46 QISSAH src/ep46), 13 adegan",
+      "snapshot": {
+        "episode": "EP18_KISAH_BILAL_BIN_RABAH_BUDAK_YANG_SUARANY",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "sejarah-islam-EP18",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-25T15:04:37.532Z",
+      "doing": "Sesi B s2 berhenti karena batas konteks. Tahap 5 dan 6 selesai (VO dikunci 87,68 dtk). Tahap 7 baru timing.ts + pieces.tsx, belum pernah dirender. Film.tsx, scenes, SFX, cover-topic BELUM ada.",
+      "files": [
+        "docs/BUILD_NOTES.md",
+        "docs/STORYBOARD.md",
+        "project/src/ep18/timing.ts",
+        "project/src/ep18/pieces.tsx"
+      ],
+      "next": "Lanjut Sesi B tahap 7 sesuai docs/BUILD_NOTES.md (camera2d, Film, 15 adegan, cover, SFX), lalu tahap 8.",
+      "snapshot": {
+        "episode": "EP18_KISAH_BILAL_BIN_RABAH_BUDAK_YANG_SUARANY",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "sejarah-islam-EP18",
+        "currentStage": "animation",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T10:59:46.680Z",
+      "doing": "Sesi B s3 berhenti karena batas konteks. Tahap 7 sebagian: camera2d.ts, set.tsx, Film.tsx, Root.tsx, scenes1.tsx (S1–S3b) ditulis, belum ditypecheck/dirender.",
+      "files": [
+        "docs/BUILD_NOTES.md",
+        "docs/STORYBOARD.md",
+        "project/src/ep18/timing.ts",
+        "project/src/ep18/pieces.tsx",
+        "project/src/ep18/set.tsx",
+        "project/src/ep18/Film.tsx",
+        "project/src/ep18/scenes1.tsx"
+      ],
+      "next": "Lanjut Sesi B tahap 7: tulis scenes2.tsx (S4a–S5b), scenes3.tsx (S6a–S8b), scenes.tsx (SCENE_MAP), tsc, contact sheet still per adegan, cover-topic.png, SHOTLIST.md, SFX (TARGET_LUFS -28, PYTHONUTF8=1), preflight; lalu tahap 8 (contact sheet, audit:visual, THEME_CHECK, G24, audit:camera + audit:rig, record_score self + juri buta, maks 2 putaran). Lalu handover newSession ke Sesi C.",
+      "snapshot": {
+        "episode": "EP18_KISAH_BILAL_BIN_RABAH_BUDAK_YANG_SUARANY",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "sejarah-islam-EP18",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T11:08:11.295Z",
+      "doing": "Sesi B s4 berhenti karena batas konteks (±192k). Tahap 7: semua 15 adegan ditulis (scenes1-3 + scenes.tsx), tsc bersih, still 15 adegan dicek dan diperbaiki; audit stills_r2 tanpa aspek di bawah 4.",
+      "files": [
+        "docs/BUILD_NOTES.md",
+        "docs/STORYBOARD.md",
+        "project/src/ep18/timing.ts",
+        "project/src/ep18/Film.tsx",
+        "project/src/ep18/scenes.tsx",
+        "project/src/ep18/scenes1.tsx",
+        "project/src/ep18/scenes2.tsx",
+        "project/src/ep18/scenes3.tsx",
+        "draft/stills_r2/_sheet.jpg"
+      ],
+      "next": "Lanjut Sesi B (masih tahap 7→8): cover-topic.png dari Ep18Cover, SHOTLIST.md, SFX ep18.py (TARGET_LUFS -28, payoff 70.64, PYTHONUTF8=1 npm run sfx), preflight; tahap 8: contact sheet 540x960, audit:visual, THEME_CHECK, G24, klip ≤20 dtk 540x960 audit:camera, audit:rig src/ep18/camera2d.ts rigPose, record_score self + juri buta (maks 2 putaran). Lalu handover newSession ke Sesi C. Detail di docs/BUILD_NOTES.md bagian 'Serah terima s4 ke s5'.",
+      "snapshot": {
+        "episode": "EP18_KISAH_BILAL_BIN_RABAH_BUDAK_YANG_SUARANY",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "sejarah-islam-EP18",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T11:17:18.226Z",
+      "doing": "Sesi B s5 tahap 8 juri putaran 2. Selesai: cover-topic.png (Ep18Cover), docs/SHOTLIST.md, sfx/cues/ep18.py (-28 LUFS, payoff 70.64, sfx.wav 52 bunyi), preflight bersih, draft/THEME_CHECK.md 15/15 ya + G24, klip draft/clip_44-64.mp4 audit:camera 5/5 (draft/camera.json), audit:rig 5/5. Self 4.17; juri r1 3.5 (lighting 4, material 3, depth 4, composition 3, motion 5, readability 2). Poles r2 sudah: Ring jadi annulus kertas matte (pieces.tsx), rings S4a sy 0.4, Waraqah S4b wx 40->340, ref sublabel 54px (Film.tsx), Bilal siluet di S7b + jejak dipipihkan + scraps 10.",
+      "files": [
+        "project/src/ep18/pieces.tsx",
+        "project/src/ep18/scenes2.tsx",
+        "project/src/ep18/scenes3.tsx",
+        "project/src/ep18/Film.tsx",
+        "draft/stills/_sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "docs/SHOTLIST.md",
+        "project/sfx/cues/ep18.py"
+      ],
+      "next": "Sisa r2: S7b Bilal lebih besar (bs lerp 1.8->1.0, bu maks 0.8, jejak hanya sampai bu) dan S4b Fig s 2.1->1.7 wx->380; render ulang contact sheet (node scripts/stills.mjs ../draft/stills <15 frame> Ep18Preview 0.5), audit:visual, juri buta r2 (subagent: jury.md + sheet + paperworld.jpg + ceilings, motion 5), record_score jury. Lolos >=3.8 tanpa aspek <3, atau terbaik >=3.5 setelah 2 putaran -> handover newSession ke Sesi C.",
+      "snapshot": {
+        "episode": "EP18_KISAH_BILAL_BIN_RABAH_BUDAK_YANG_SUARANY",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "sejarah-islam-EP18",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T11:19:03.993Z",
+      "doing": "Sesi B selesai (s5). Style PAPERWORLD, Remotion 2D SVG kertas, VO terkunci 87,68 dtk (film 91,0 dtk incl. outro 3 dtk). Draf juri buta LOLOS r2 3.83 (lighting 4, material 4, depth 4, composition 3, motion 5, readability 3; r1 3.5; self 4.17). Contact sheet terbaik: draft/stills/_sheet.jpg (15 frame Ep18Preview). THEME_CHECK 15/15 ya + G24 di draft/THEME_CHECK.md. audit:camera klip 44-64 s 5/5 (draft/camera.json, parked 0%, median 0.097), audit:rig 5/5. Cover: style/cover-topic.png. SFX: project/sfx/cues/ep18.py -> project/public/audio/sfx.wav (-28 LUFS, TP -7, payoff impact 70,64). Preflight bersih. G18c BELUM diukur: ukur lewat render-final (bukan cek manual), target VO >= 12 LU di atas SFX; bila < 12, turunkan sfx.wav 2 dB (memori PAPERWORLD). Adab: tanpa wajah, Nabi tidak digambarkan, tanpa teks Arab, tanpa rekaman azan.",
+      "files": [
+        "STATUS.json",
+        "draft/stills/_sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/camera.json",
+        "style/cover-topic.png",
+        "project/scripts/render-final.mjs",
+        "project/public/audio/sfx.wav",
+        "docs/SCRIPT.md",
+        "research/SOURCE_REGISTER.md"
+      ],
+      "next": "Sesi C: tahap 9 gerbang acc. Tampilkan contact sheet draft/stills/_sheet.jpg, skor juri 3.83, durasi 91 dtk, hasil G18c; tunggu acc pengguna. Setelah acc: cek usage di project/scripts/render-final.mjs lalu render final 1080x1920@60 dari komposisi final EP18 (Ep18Final) dengan --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc; cek public/brand/stacked-reversed.svg ada (AudiraOutro); -14 LUFS TP < -1; metadata; record_score final. Lalu tahap 10 delivery.",
+      "snapshot": {
+        "episode": "EP18_KISAH_BILAL_BIN_RABAH_BUDAK_YANG_SUARANY",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "sejarah-islam-EP18",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-26T12:47:21.988Z",
+      "doing": "Sesi C s6: acc final tercatat; render final Ep18Final 1080x1920@60 berjalan di background. G18c gap 15.1 LU lolos.",
+      "command": "cd project && npm run render:final -- --comp=Ep18Final --out=../FINAL_EP18_BILAL_BIN_RABAH.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Kisah Bilal bin Rabah\" --slug=bilal-bin-rabah --ep=EP18 --log=error",
+      "files": [
+        "FINAL_EP18_BILAL_BIN_RABAH.mp4"
+      ],
+      "next": "QA -14 LUFS TP<-1, ffprobe metadata, cek frame, record_score final, lalu tahap 10 delivery",
+      "snapshot": {
+        "episode": "EP18_KISAH_BILAL_BIN_RABAH_BUDAK_YANG_SUARANY",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "PAPERWORLD",
+        "memoryEpisode": "sejarah-islam-EP18",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    }
+  ],
+  "session": 6,
+  "handover": {
+    "at": "2026-11-26T12:47:21.988Z",
+    "doing": "Sesi C s6: acc final tercatat; render final Ep18Final 1080x1920@60 berjalan di background. G18c gap 15.1 LU lolos.",
+    "command": "cd project && npm run render:final -- --comp=Ep18Final --out=../FINAL_EP18_BILAL_BIN_RABAH.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=6 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Kisah Bilal bin Rabah\" --slug=bilal-bin-rabah --ep=EP18 --log=error",
+    "files": [
+      "FINAL_EP18_BILAL_BIN_RABAH.mp4"
+    ],
+    "next": "QA -14 LUFS TP<-1, ffprobe metadata, cek frame, record_score final, lalu tahap 10 delivery",
+    "snapshot": {
+      "episode": "EP18_KISAH_BILAL_BIN_RABAH_BUDAK_YANG_SUARANY",
+      "topic": "Sejarah peradaban Islam yang jarang diketahui",
+      "style": "PAPERWORLD",
+      "memoryEpisode": "sejarah-islam-EP18",
+      "currentStage": "final",
+      "gates": {
+        "final": {
+          "approved": true,
+          "status": "in_progress"
+        }
+      },
+      "voPath": null,
+      "draftScores": [],
+      "finals": [],
+      "draftRounds": 0
+    }
+  },
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP18 Bilal bin Rabah · s2",
+      "phase": "B",
+      "at": "2026-11-25T14:53:26.242Z"
+    },
+    {
+      "no": 3,
+      "title": "EP18 Bilal bin Rabah · s3",
+      "phase": "B",
+      "at": "2026-11-25T15:04:37.532Z"
+    },
+    {
+      "no": 4,
+      "title": "EP18 Bilal bin Rabah · s4",
+      "phase": "B",
+      "at": "2026-11-26T10:59:46.680Z"
+    },
+    {
+      "no": 5,
+      "title": "EP18 Bilal bin Rabah · s5",
+      "phase": "B",
+      "at": "2026-11-26T11:08:11.294Z"
+    },
+    {
+      "no": 6,
+      "title": "EP18 Bilal bin Rabah · s6",
+      "phase": "C",
+      "at": "2026-11-26T11:19:03.993Z"
+    }
+  ]
 }
