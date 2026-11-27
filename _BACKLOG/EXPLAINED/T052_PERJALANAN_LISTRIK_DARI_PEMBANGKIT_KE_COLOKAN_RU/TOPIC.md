@@ -5,7 +5,11 @@ title: "Perjalanan Listrik dari Pembangkit ke Colokan Rumahmu"
 hook: "Listrik yang menyalakan lampumu dibuat ratusan kilometer jauhnya, sepersekian detik lalu"
 styleCandidates: ["CHAINREACTION (2D)", "URBANFORGE (3D)", "CIRCUITFORGE (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # alur fisika dan tangga tegangan awet; panjang jaringan dan susut cepat basi (per 2024)
+risiko: "Hook asli salah kaprah (elektron tidak menempuh ratusan km; yang merambat energi) dan 'ratusan km' tidak selalu benar, dikoreksi; susut dan panjang jaringan per 2024; status Permen ESDM 04/2009 dan SNI tegangan belum pasti; rule 15: tanpa logo PLN, charger tanpa merek; pesan keselamatan kabel tiang."
 ---
 
 # Perjalanan Listrik dari Pembangkit ke Colokan Rumahmu

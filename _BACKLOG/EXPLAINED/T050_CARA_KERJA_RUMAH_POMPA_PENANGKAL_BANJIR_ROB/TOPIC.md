@@ -5,7 +5,11 @@ title: "Cara Kerja Rumah Pompa Penangkal Banjir Rob"
 hook: "Kota di bawah permukaan laut bergantung pada pompa raksasa yang bekerja tanpa henti"
 styleCandidates: ["URBANFORGE (3D)", "FLUIDFORGE (3D)", "SATELLITEBRIEFING (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme polder awet; jumlah pompa, kapasitas Pluit, dan laju penurunan tanah cepat basi
+risiko: "Hook asli dilebihkan (hanya sebagian Jakarta di bawah laut, pompa tidak nonstop), dikoreksi; kapasitas Waduk Pluit tidak konsisten (39 vs 49 m3/dtk) dan per-unit baru MEDIUM; angka 18-20% wilayah baru MEDIUM; rule 15: tanpa wajah pejabat/operator dan logo Pemprov/Dinas SDA, netral soal NCICD."
 ---
 
 # Cara Kerja Rumah Pompa Penangkal Banjir Rob

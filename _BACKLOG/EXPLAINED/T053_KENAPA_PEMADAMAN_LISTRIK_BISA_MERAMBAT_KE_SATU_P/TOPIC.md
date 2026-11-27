@@ -5,7 +5,11 @@ title: "Kenapa Pemadaman Listrik Bisa Merambat ke Satu Pulau"
 hook: "Satu gangguan kecil bisa menjatuhkan jaringan listrik berpenduduk puluhan juta"
 styleCandidates: ["CHAINREACTION (2D)", "DATAPHYSICAL (2D)", "SATELLITEBRIEFING (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme awet; angka 2019 historis, contoh 2025-2026 bisa bertambah
+risiko: "Hook dan judul berlebihan (rangkaian gangguan, bukan satu gangguan kecil; 21,9 juta pelanggan bukan penduduk; 2019 hanya separuh Jawa), semua angka 2019 baru MEDIUM dari berita, dugaan pohon belum final; rule 15: tanpa logo PLN/operator asing, tanpa menyalahkan pihak."
 ---
 
 # Kenapa Pemadaman Listrik Bisa Merambat ke Satu Pulau

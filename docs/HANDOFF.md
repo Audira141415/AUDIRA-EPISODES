@@ -5,7 +5,7 @@
   (tanggal = hari ini, rule 15 EXPLAINED), cek `node F:/AUDIRA-ALL-SKILL/scripts/backlog-tools/verify-eps.mjs <folder...>`,
   lalu commit repo episode `feat(backlog): riset EXPLAINED batch N (T..)` + push.
 - Progres: batch 1 = T001–T006: SELESAI, 6/6 OK, commit b5a1baf1. Batch 2 = T007–T012: SELESAI, 6/6 OK, commit dde22419. Batch 3 = T013–T018: SELESAI, 6/6 OK, commit a4068c80. Batch 4 = T019–T024: SELESAI, 6/6 OK, commit b409670d. Batch 5 = T025–T030: SELESAI, 6/6 OK, commit a2694336. Batch 6 = T031–T036: SELESAI, 6/6 OK, commit 6c91d788. Batch 7 = T037–T042: SELESAI, 6/6 OK, commit 40bdc7b8. Batch 1–7 sudah di origin.
-  Batch 8 = T043–T048: SELESAI, 6/6 OK, di-commit + push. Batch 9 = T049–T054.
+  Batch 8 = T043–T048: SELESAI, 6/6 OK, commit 43eccee1. Batch 9 = T049–T054: SELESAI, 6/6 OK, di-commit + push. Batch 10 = T055–T060.
 - Catatan agen: WebSearch/WebFetch error (model haiku tidak tersedia) -> agen pakai curl ke halaman asli/Bing/Wikipedia API; tulis itu di brief.
 - Cek ulang sebelum produksi: T002 BI-Rate 6,00% (per 18 Nov 2026), T003 JISDOR + puncak 1998 (baru Wikipedia), T005 MDR/pengguna QRIS, T001 inflasi per Sep 2026.
   Batch 2: T007 "maks 100 lembar/setor" (1 bank), aturan BI uang dicek mesin sebelum masuk ATM belum ketemu;
@@ -50,6 +50,12 @@
   T047 (OK src=14 high=6 kata=206): "×16" hitungan sendiri dari aturan pangkat empat (sumber baru MEDIUM, laporan AASHO belum dibuka), tahun 1956–1960 baru Wikipedia, SU 2018 Rev 2 sudah diganti SU 2025; hook: truk berat + air bekerja bersama, bukan salah satu.
   T046 (OK src=15 high=7 kata=202): judul "ribuan ton" berlebihan → usul "Ratusan Ton per Bentang di Atas Tiang Ramping" (1 bentang ±40 m = 520,73 t dari prosiding mahasiswa PNJ, MEDIUM, cari HIGH; 40 m disimpulkan), −60% gaya gempa contoh spektrum AASHTO, kedalaman tiang "puluhan meter" data FHWA AS, cek versi SNI terbaru; gaya gempa ditanggung bantalan/isolator, SNI 2833 target "tidak runtuh".
   T044 (OK src=17 high=7 kata=203): klaim operator "penuh ≤2 jam" vs hitungan 350 kWh/120 kW ≈2,9 jam (naskah "beberapa jam"), "80% dalam 15 menit" pantograf = 1 armada Turki (label), rute kota ±200 km/hari baru Wikipedia, "500 bus per Okt 2026" cepat basi, pantograf di Jakarta belum terbukti (visual c06 generik), baterai "sebagian di atap".
+  Batch 9: T049 kala ulang (Lampiran I per tipologi kota + luas tangkapan, bukan per tingkat saluran) baru dari salinan paralegal (MEDIUM), kapasitas drainase Jakarta 100–150 mm/hari pernyataan pejabat tidak konsisten (per 2025), Permen PU 12/2014 "Berlaku" tapi cek jdih.pu.go.id; hook: drainase satu faktor saja.
+  T050 hanya ±18–20% Jakarta di bawah laut (kajian SDA+ITB 2021 via berita), Waduk Pluit 39 vs ±49 m³/dtk tidak konsisten, −190 cm MEDIUM, 602 pompa/205 lokasi per Jun 2025 cepat basi, turun tanah ±5,7 cm/th (cek periode di PDF BRIN); hook: pompa jalan saat muka air lewat batas, bukan nonstop.
+  T051 ±575 km & status tahap (mangrove Okt 2026, tanggul beton 2027, NCICD A3 432 m) MEDIUM cepat basi, "±25×" = titik terparah 15 cm/th vs laut 5–6 mm/th (hitungan sendiri, HUD "titik terparah"), Perpres 77/2025 cek JDIH Setneg; hook: tanggul ikut amblas, harus ditinggikan.
+  T052 susut 8,55%, 72.655 kms, 573.650 trafo = Statistik PLN 2024 (ganti bila 2025 terbit), drift 0,22 mm/s hitungan sendiri, Permen ESDM 04/2009 Aturan Distribusi status belum pasti (JDIH ESDM 403); rumah 230 V bukan 220 V; hook: energi merambat, elektron hampir diam.
+  T053 semua angka 2019 (21,9 juta pelanggan, 11.45→11.48, ±9 jam, pohon 8,5 m) baru MEDIUM, laporan investigasi resmi belum ketemu; judul usul "…ke Separuh Pulau"; angka 49,5 Hz/≥30% dari Grid Code 2020 (bukan aturan saat kejadian); hook: rangkaian gangguan, bukan satu.
+  T054 SPLN D3.002-1:2007 dibaca dari salinan kupdf (cek asli; "10–400 kVA" bacaan tabel rusak), "≈50:1" rasio tegangan bukan lilitan (Dyn5 ±87:1), status Permen ESDM 04/2009 & SNI 04-0227-2003 vs IEC 60038:2009; hook: 20.000 V → 230 V, tangki tak selalu tabung.
 - Lanjut: Lanjut dari topik pertama yang TOPIC.md-nya masih `stage: backlog`:
   `grep -L "stage: drafted" _BACKLOG/EXPLAINED/*/TOPIC.md | head -6`.
 

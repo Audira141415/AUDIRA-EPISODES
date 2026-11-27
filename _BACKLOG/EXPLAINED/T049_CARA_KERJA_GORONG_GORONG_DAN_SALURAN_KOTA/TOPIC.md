@@ -5,7 +5,11 @@ title: "Cara Kerja Gorong-gorong dan Saluran Kota"
 hook: "Di bawah kakimu ada sungai buatan yang menentukan kota banjir atau tidak"
 styleCandidates: ["URBANFORGE (3D)", "FLUIDFORGE (3D)", "BUILDFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme dan Permen awet; kapasitas drainase Jakarta (mm/hari) cepat basi
+risiko: "Hook asli berlebihan (drainase bukan satu-satunya penentu banjir, 'sungai buatan' cuma metafora), dikoreksi; tabel kala ulang dari salinan lampiran non-resmi; kapasitas Jakarta 100–150 mm/hari hanya dari pernyataan pejabat via berita dan tidak konsisten; rule 15: tanpa landmark/logo, netral soal penanganan banjir DKI."
 ---
 
 # Cara Kerja Gorong-gorong dan Saluran Kota

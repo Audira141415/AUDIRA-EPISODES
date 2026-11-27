@@ -5,7 +5,11 @@ title: "Cara Kerja Tanggul Laut Raksasa"
 hook: "Dinding laut harus menahan ombak, pasang, dan tanah yang terus turun sekaligus"
 styleCandidates: ["BUILDFORGE (3D)", "SATELLITEBRIEFING (2D)", "SCALEFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # cara kerja tanggul awet; status proyek, panjang rencana, dan laju penurunan tanah cepat basi
+risiko: "Hook asli keliru (tanggul tidak menahan penurunan tanah, justru ikut turun), sudah dikoreksi; status proyek dan 575 km baru MEDIUM dan cepat basi; rule 15: proyek pemerintah netral, tanpa wajah pejabat, logo lembaga, atau angka biaya."
 ---
 
 # Cara Kerja Tanggul Laut Raksasa
