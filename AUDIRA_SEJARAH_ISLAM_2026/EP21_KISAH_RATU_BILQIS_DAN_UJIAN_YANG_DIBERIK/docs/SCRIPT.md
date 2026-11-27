@@ -1,6 +1,8 @@
 # Naskah — Kisah Ratu Bilqis dan Ujian yang Diberikan Nabi Sulaiman
 
-> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
+Style: HD2D
+
+> Final tahap 4 (2026-11-27). Teks TTS menulis "Audira" (bukan AUDIRA). Durasi dikunci ulang dari vo.wav di tahap 6.
 > Short: 190–210 kata @135–150 WPM.
 
 ## c00_hook — Hook
@@ -57,7 +59,7 @@
 - Kata: **38** · estimasi **16 dtk** · mulai ±1:12
 - Visual: Aula istana kaca bersinar fajar; siluet ratu mengangkat tangan berdoa tanpa wajah. Matahari di langit digantikan kaligrafi nama Allah; gerbang Saba terbuka. Outro card AUDIRA. HUD kutipan 27:44.
 
-> Bilqis berkata, Ya Tuhanku, aku telah menzalimi diriku. Aku berserah diri bersama Sulaiman kepada Allah, Tuhan seluruh alam. Ayat itu tidak menyebut ia bersujud pada kaca. Ia berpindah dari menyembah matahari kepada Allah. Kisah lain menunggu di AUDIRA.
+> Bilqis berkata, Ya Tuhanku, aku telah menzalimi diriku. Aku berserah diri bersama Sulaiman kepada Allah, Tuhan seluruh alam. Ayat itu tidak menyebut ia bersujud di sana. Ia berpindah dari menyembah matahari kepada Allah. Kisah lain menunggu di AUDIRA.
 
 ## Opsi hook lain
 

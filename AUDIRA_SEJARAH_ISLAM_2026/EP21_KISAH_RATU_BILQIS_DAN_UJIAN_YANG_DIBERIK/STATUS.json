@@ -3,8 +3,8 @@
   "episode": "EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK",
   "topic": "Sejarah peradaban Islam yang jarang diketahui",
   "createdAt": "2026-11-25T02:39:47.642Z",
-  "updatedAt": "2026-11-25T09:34:13.051Z",
-  "currentStage": "style",
+  "updatedAt": "2026-11-27T00:15:44.329Z",
+  "currentStage": "setup",
   "sessionPhase": "A",
   "stages": [
     {
@@ -39,8 +39,14 @@
       "id": "style",
       "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-27T00:15:37.402Z",
+          "text": "HD2D 3D Remotion+R3F (diorama + sprite tanpa wajah, lantai kaca di atas air). Cover topik dirender di Sesi B dari frame hook film (pola EP17/EP20). Preflight 2026-11-27: no blockers."
+        }
+      ],
+      "doneAt": "2026-11-27T00:15:37.402Z"
     },
     {
       "id": "script",
@@ -51,9 +57,13 @@
         {
           "at": "2026-11-25T09:34:13.051Z",
           "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-27T00:15:44.329Z",
+          "text": "SCRIPT final 208 kata (≈86 dtk @145 WPM), STORYBOARD 8 set + outro, ART_DIRECTION, ASSET_MANIFEST, semua baris Style: HD2D."
         }
       ],
-      "doneAt": "2026-11-25T03:27:42.264Z",
+      "doneAt": "2026-11-27T00:15:44.329Z",
       "startedAt": "2026-11-25T03:27:42.264Z"
     },
     {
@@ -109,7 +119,74 @@
     }
   ],
   "data": {
-    "memoryEpisode": "sejarah-islam-EP21"
+    "memoryEpisode": "sejarah-islam-EP21",
+    "style": "HD2D",
+    "engine": "remotion",
+    "shortTitle": "Ratu Bilqis",
+    "alternatives": [
+      "ISLAMICDOCUMENTARY",
+      "WORLDFORGE"
+    ],
+    "wordCount": 208,
+    "estimatedDuration": {
+      "wordCount": 208,
+      "minSec": 83,
+      "maxSec": 92
+    }
   },
-  "syncedAt": "2026-11-25T09:34:13.051Z"
+  "syncedAt": "2026-11-25T09:34:13.051Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-27T00:10:42.844Z",
+      "doing": "Antrean QISSAH: EP21 belum diproduksi (riset ada, belum ada final). Sesi baru dibuat atas permintaan pengguna 2026-11-27.",
+      "next": "Sesi A (tahap 0–4): preflight, style+engine dipilih AI, cover topik, naskah+storyboard+manifest. Pelajaran EP17: TARGET_LUFS -28, <AudiraOutro code=QISSAH>, look.json crush ≤2%/diversity ≥30 dicek di sesi B.",
+      "snapshot": {
+        "episode": "EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": null,
+        "memoryEpisode": "sejarah-islam-EP21",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    }
+  ],
+  "session": 2,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP21 Sejarah peradaban Islam yang jarang diketahui · A2 (s2)",
+      "phase": "A",
+      "phaseNo": 2,
+      "at": "2026-11-27T00:10:42.842Z"
+    }
+  ],
+  "handover": {
+    "at": "2026-11-27T00:10:42.844Z",
+    "doing": "Antrean QISSAH: EP21 belum diproduksi (riset ada, belum ada final). Sesi baru dibuat atas permintaan pengguna 2026-11-27.",
+    "next": "Sesi A (tahap 0–4): preflight, style+engine dipilih AI, cover topik, naskah+storyboard+manifest. Pelajaran EP17: TARGET_LUFS -28, <AudiraOutro code=QISSAH>, look.json crush ≤2%/diversity ≥30 dicek di sesi B.",
+    "snapshot": {
+      "episode": "EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK",
+      "topic": "Sejarah peradaban Islam yang jarang diketahui",
+      "style": null,
+      "memoryEpisode": "sejarah-islam-EP21",
+      "currentStage": "style",
+      "gates": {
+        "final": {
+          "approved": false,
+          "status": "pending"
+        }
+      },
+      "voPath": null,
+      "draftScores": [],
+      "finals": []
+    }
+  }
 }
