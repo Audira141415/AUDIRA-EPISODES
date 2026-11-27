@@ -5,7 +5,11 @@ title: "Kenapa Grafik di Berita Bisa Menyesatkan"
 hook: "Sumbu yang dipotong bisa membuat kenaikan 2% terlihat seperti lonjakan besar"
 styleCandidates: ["DATAPHYSICAL (2D)", "VISUALINVESTIGATION (2D)", "BROADCASTFORGE (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya
+risiko: "rendah — topik netral, semua contoh ilustrasi, tidak menyebut media/organisasi tertentu"
 ---
 
 # Kenapa Grafik di Berita Bisa Menyesatkan

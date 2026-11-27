@@ -5,7 +5,11 @@ title: "Cara Cek Foto Lama yang Diklaim Kejadian Baru"
 hook: "Foto banjir tahun lalu sering beredar lagi sebagai berita hari ini — begini cara melacaknya"
 styleCandidates: ["VISUALINVESTIGATION (2D)", "BROADCASTFORGE (2D)", "BONGKAR (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya
+risiko: "rendah — alat yang disebut (Google Lens, TinEye) stabil; angka indeks TinEye bisa berubah (MEDIUM); Yandex hanya disebut di riset, tidak di naskah"
 ---
 
 # Cara Cek Foto Lama yang Diklaim Kejadian Baru

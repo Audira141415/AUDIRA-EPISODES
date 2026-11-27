@@ -5,7 +5,11 @@ title: "Kenapa Kemarau Panjang Bikin Air Tanah Habis"
 hook: "Sumur yang dulu penuh bisa kering karena air tanah butuh waktu lama untuk terisi lagi"
 styleCandidates: ["TERRARIUM (3D)", "FLUIDFORGE (3D)", "DATAPHYSICAL (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya
+risiko: "judul 'habis' berlebihan — dikoreksi ke 'turun'; residence time stabil tapi data subsidensi kota cepat berubah; status PP 43/2008 vs PP 22/2021 perlu dikonfirmasi ke JDIH"
 ---
 
 # Kenapa Kemarau Panjang Bikin Air Tanah Habis

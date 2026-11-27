@@ -5,7 +5,11 @@ title: "Cara Kerja Penipuan Telepon dan Pesan Berantai"
 hook: "Penipu tidak menebak — mereka memakai naskah yang sama berulang kali"
 styleCandidates: ["VISUALINVESTIGATION (2D)", "CHAINREACTION (2D)", "BONGKAR (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme social engineering dan hukum awet; modus spesifik (APK dll) cepat berubah
+risiko: "Data kerugian Indonesia tidak terverifikasi HIGH (hanya pakai data IC3 global); modus APK/phishing berkembang cepat — cek ulang saat produksi; UU ITE revisi UU 1/2024 perlu cek detail perubahan Pasal 28."
 ---
 
 # Cara Kerja Penipuan Telepon dan Pesan Berantai

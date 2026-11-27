@@ -5,7 +5,11 @@ title: "Cara Kerja Hutan Mangrove Menahan Abrasi"
 hook: "Akar mangrove meredam ombak lebih murah daripada tembok beton"
 styleCandidates: ["TERRARIUM (3D)", "WORLDFORGE (3D)", "SATELLITEBRIEFING (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme fisik awet; luas mangrove dan regulasi cepat basi (tulis "per 2025")
+risiko: "Hook asli (lebih murah daripada beton) terlalu absolut, dikoreksi bersyarat; angka reduksi gelombang (McIvor 2012) adalah tinjauan literatur bukan studi tunggal; BRGM sudah bubar akhir 2024; PP 27/2025 baru, cek aturan turunan; rule 15: tanpa logo KLH/BPLH."
 ---
 
 # Cara Kerja Hutan Mangrove Menahan Abrasi

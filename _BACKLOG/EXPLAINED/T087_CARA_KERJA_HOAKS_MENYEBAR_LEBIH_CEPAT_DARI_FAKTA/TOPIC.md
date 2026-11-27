@@ -5,7 +5,11 @@ title: "Cara Kerja Hoaks Menyebar Lebih Cepat dari Fakta"
 hook: "Kabar bohong punya pola yang membuatnya lebih sering dibagikan — ini polanya"
 styleCandidates: ["CHAINREACTION (2D)", "VISUALINVESTIGATION (2D)", "DATAPHYSICAL (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme psikologis/sosial awet; angka sitasi dan regulasi bisa basi
+risiko: "Angka 70% retweet khusus Twitter 2006–2017, jangan generalisasi; topik sensitif: hindari contoh hoaks politik Indonesia tertentu; UU 1/2024 Pasal 28 perlu dicek teks lengkap saat produksi."
 ---
 
 # Cara Kerja Hoaks Menyebar Lebih Cepat dari Fakta
