@@ -5,7 +5,11 @@ title: "Cara Kerja Triase IGD: Kenapa Pasien Terakhir Bisa Dilayani Duluan"
 hook: "Antrean di IGD tidak berdasarkan siapa yang datang duluan"
 styleCandidates: ["DATAPHYSICAL (2D)", "CERDIK (2D)", "CHAINREACTION (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme triase awet; status regulasi perlu dicek ulang
+risiko: "Hook terlalu mutlak, diperhalus jadi belum tentu; topik kesehatan: pesan keselamatan saja; status Permenkes 47/2018 bisa berubah (penggantian permenkes pasca PP 28/2024); rule 15: tanpa logo RS/BPJS dan wajah nyata."
 ---
 
 # Cara Kerja Triase IGD: Kenapa Pasien Terakhir Bisa Dilayani Duluan

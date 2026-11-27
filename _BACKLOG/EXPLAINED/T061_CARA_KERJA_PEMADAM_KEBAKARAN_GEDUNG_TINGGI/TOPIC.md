@@ -5,7 +5,11 @@ title: "Cara Kerja Pemadam Kebakaran Gedung Tinggi"
 hook: "Tangga mobil pemadam tidak sampai lantai 30 — lalu bagaimana api di atas dipadamkan?"
 styleCandidates: ["BUILDFORGE (3D)", "INNERWORKS (3D)", "DISASTERSIM (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme dan aturan awet; jumlah/jangkauan unit skylift bisa berubah
+risiko: "Hook asli (tangga tidak sampai lantai 30) dilebihkan, dikoreksi ke unit 104 m vs lantai 40; Permen PU 26/2008 berlaku via Pasal 348 PP 16/2021, edisi SNI belum dicek; rule 15: mobil tangga tanpa merek, tanpa logo damkar."
 ---
 
 # Cara Kerja Pemadam Kebakaran Gedung Tinggi

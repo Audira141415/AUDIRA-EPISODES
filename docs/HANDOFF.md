@@ -5,7 +5,7 @@
   (tanggal = hari ini, rule 15 EXPLAINED), cek `node F:/AUDIRA-ALL-SKILL/scripts/backlog-tools/verify-eps.mjs <folder...>`,
   lalu commit repo episode `feat(backlog): riset EXPLAINED batch N (T..)` + push.
 - Progres: batch 1 = T001–T006: SELESAI, 6/6 OK, commit b5a1baf1. Batch 2 = T007–T012: SELESAI, 6/6 OK, commit dde22419. Batch 3 = T013–T018: SELESAI, 6/6 OK, commit a4068c80. Batch 4 = T019–T024: SELESAI, 6/6 OK, commit b409670d. Batch 5 = T025–T030: SELESAI, 6/6 OK, commit a2694336. Batch 6 = T031–T036: SELESAI, 6/6 OK, commit 6c91d788. Batch 7 = T037–T042: SELESAI, 6/6 OK, commit 40bdc7b8. Batch 1–7 sudah di origin.
-  Batch 8 = T043–T048: SELESAI, 6/6 OK, commit 43eccee1. Batch 9 = T049–T054: SELESAI, 6/6 OK, commit dfbd9fda. Batch 10 = T055–T060: SELESAI, 6/6 OK, di-commit + push. Batch 11 = T061–T066.
+  Batch 8 = T043–T048: SELESAI, 6/6 OK, commit 43eccee1. Batch 9 = T049–T054: SELESAI, 6/6 OK, commit dfbd9fda. Batch 10 = T055–T060: SELESAI, 6/6 OK, commit ce871ccd. Batch 11 = T061–T066: SELESAI, 6/6 OK, di-commit + push. Batch 12 = T067–T072.
 - Catatan agen: WebSearch/WebFetch error (model haiku tidak tersedia) -> agen pakai curl ke halaman asli/Bing/Wikipedia API; tulis itu di brief.
 - Cek ulang sebelum produksi: T002 BI-Rate 6,00% (per 18 Nov 2026), T003 JISDOR + puncak 1998 (baru Wikipedia), T005 MDR/pengguna QRIS, T001 inflasi per Sep 2026.
   Batch 2: T007 "maks 100 lembar/setor" (1 bank), aturan BI uang dicek mesin sebelum masuk ATM belum ketemu;
@@ -63,6 +63,12 @@
   T059 141 kab/kota per Mar 2025 vs "182" Des 2025 (MEDIUM, bentrok), Kendari 2.360→22 valid hanya sepekan pertama, pilot Bali 25 Sep 2026 = integrasi nasional (bukan awal 112); hook: belum semua daerah bisa menjawab, "hitungan detik" dihapus.
   T060 Permenkes 19/2016 (SPGDT/119) dicabut Permenkes 1/2026 tanpa angka 119 (cek Kepmenkes), daftar alat kabin baru Wikipedia (cari standar resmi), cek tekstur GLB ambulance-van-29919a (lambang palang merah); judul usul "Cara Kerja Ambulans Gawat Darurat: Bukan Sekadar Mobil Bersirene".
   Catatan sumber: halaman ANTARA memuat larangan crawling AI tanpa izin — kutip fakta saja, jangan salin teks; utamakan sumber resmi.
+  Batch 11: T061 skylift DKI 104 m & 90 m (MEDIUM via media, cepat basi), tinggi lantai 30/40 hitungan sendiri, ambang lift kebakaran/presurisasi dari Permen PU 26/2008 (berlaku via Psl 348 PP 16/2021), versi SNI belum dicek BSN; hook: 104 m hampir sampai lantai 30 → VO pakai lantai 40.
+  T062 waktu tunggu 10/30/60/120 menit = ATS Australia (sebut Australia), Indonesia 4 warna (Permenkes 47/2018 masih berlaku, cek JDIH); hook: "yang datang duluan belum tentu dilayani duluan".
+  T063 5,6 juta kantong/th (Menkes Des 2024 via ANTARA) MEDIUM; "2% penduduk WHO" tidak ada di fact sheet (tidak dipakai); PP 7/2011 dicabut PP 28/2024, Permenkes 91/2015 masih dipertahankan Psl 1169 (cek pengganti); hook: bisa dipecah 3, tidak selalu.
+  T064 peserta 285,8 juta, PBI 96,8 juta, iuran Rp118 T vs manfaat Rp132 T, aset DJS Rp30,04 T = MEDIUM cepat basi (awet: tidak); iuran masih Perpres 64/2020, KRIS/iDRG uji coba per Okt 2026 — cek perubahan keempat Perpres 82/2018; hook: "jutaan" → ratusan juta + APBN/pemberi kerja.
+  T065 −90…−60 °C hanya 1 vaksin mRNA per Feb 2022, lampiran Permenkes 12/2017 dicabut Permenkes 3/2026 (pedoman vaksin pengganti belum ketemu), CDOB: Per BPOM 20/2025 dicabut sebagian 16/2026 (teks belum dibaca); "50% vaksin terbuang" tidak dipakai; judul usul "…Tidak Boleh Panas, Tidak Boleh Beku".
+  T066 galat ±3,1/2,2/1,5% & 0,24% hitungan sendiri, 820.161 TPS (MEDIUM), nomor putusan MK 2019 belum pasti (mkri.id Cloudflare), PKPU 9/2022 Psl 19 aturan 2 jam; netral: hanya angka ILUSTRASI; judul usul "…Kenapa Sampel Kecil Bisa Mendekati Hasil Resmi".
 - Lanjut: Lanjut dari topik pertama yang TOPIC.md-nya masih `stage: backlog`:
   `grep -L "stage: drafted" _BACKLOG/EXPLAINED/*/TOPIC.md | head -6`.
 

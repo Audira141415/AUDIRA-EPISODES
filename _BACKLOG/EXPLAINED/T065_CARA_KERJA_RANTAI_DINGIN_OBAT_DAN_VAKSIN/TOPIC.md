@@ -5,7 +5,11 @@ title: "Cara Kerja Rantai Dingin Obat dan Vaksin"
 hook: "Obat tertentu harus tetap dingin sejak dari pabrik sampai disuntikkan"
 styleCandidates: ["CHAINREACTION (2D)", "SATELLITEBRIEFING (2D)", "INNERWORKS (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # prinsip rantai dingin, VVM, dan uji kocok awet; status regulasi dan contoh vaksin ultra-dingin bisa berubah
+risiko: "Hook asli (harus dingin) menyesatkan karena banyak vaksin rusak bila beku, dikoreksi jadi rentang suhu tepat; angka 50% WHO lemah, tidak dipakai; Lampiran Permenkes 12/2017 sudah dicabut Permenkes 3/2026, pengganti teknis belum ditemukan; rule 15: tanpa merek vaksin dan logo lembaga."
 ---
 
 # Cara Kerja Rantai Dingin Obat dan Vaksin

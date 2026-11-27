@@ -5,7 +5,11 @@ title: "Cara Kerja Sistem Jaminan Kesehatan: Gotong Royong dalam Angka"
 hook: "Iuran jutaan peserta yang sehat membiayai pengobatan peserta yang sakit"
 styleCandidates: ["DATAPHYSICAL (2D)", "CERDIK (2D)", "CHAINREACTION (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: tidak   # mekanisme gotong royong/kapitasi awet; jumlah peserta, PBI, arus kas, dan iuran (menunggu Perpres KRIS) cepat basi
+risiko: "Hook asli (iuran jutaan peserta sehat) dikoreksi: peserta ±285,8 juta dan sepertiganya dibayar APBN; iuran per kelas bisa berubah begitu Perpres pelaksana KRIS terbit; isu keuangan BPJS sensitif politik, rule 15: tanpa logo/kartu BPJS, netral."
 ---
 
 # Cara Kerja Sistem Jaminan Kesehatan: Gotong Royong dalam Angka

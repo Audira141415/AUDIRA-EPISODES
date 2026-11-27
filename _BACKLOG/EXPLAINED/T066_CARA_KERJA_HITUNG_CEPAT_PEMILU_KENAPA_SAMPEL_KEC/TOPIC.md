@@ -5,7 +5,11 @@ title: "Cara Kerja Hitung Cepat Pemilu: Kenapa Sampel Kecil Bisa Akurat"
 hook: "Ribuan TPS sampel bisa memperkirakan hasil jutaan suara — ini matematikanya"
 styleCandidates: ["DATAPHYSICAL (2D)", "PRECISION (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # matematika dan aturan awet; jumlah TPS berubah tiap pemilu, regulasi bisa direvisi
+risiko: "Isu politik sensitif: wajib netral (tanpa nama calon/partai/lembaga, angka hasil berlabel ILUSTRASI); hook dikoreksi jadi 'mendekati' + rentang galat, bukan hasil resmi; nomor putusan MK 2019 belum dicek; rule 15 tanpa logo KPU."
 ---
 
 # Cara Kerja Hitung Cepat Pemilu: Kenapa Sampel Kecil Bisa Akurat

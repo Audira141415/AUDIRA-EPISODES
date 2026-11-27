@@ -5,7 +5,11 @@ title: "Cara Kerja Donor Darah: Perjalanan Sekantong Darah"
 hook: "Darah yang kamu sumbangkan dipisah jadi tiga bagian untuk tiga pasien berbeda"
 styleCandidates: ["CHAINREACTION (2D)", "NANOFORGE (3D)", "CERDIK (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # alur donor dan suhu simpan awet; angka kebutuhan nasional dan status regulasi bisa berubah
+risiko: "Hook asli (tiga pasien berbeda) dilebihkan, dikoreksi jadi bisa tiga dan tidak selalu; PP 7/2011 sudah dicabut PP 28/2024, Permenkes 91/2015 masih berlaku via Pasal 1169 tapi bisa diganti; angka kebutuhan 5,6 juta kantong (per 2024) dari berita; rule 15: tanpa logo PMI/lambang palang merah, pendonor dan pasien siluet."
 ---
 
 # Cara Kerja Donor Darah: Perjalanan Sekantong Darah
