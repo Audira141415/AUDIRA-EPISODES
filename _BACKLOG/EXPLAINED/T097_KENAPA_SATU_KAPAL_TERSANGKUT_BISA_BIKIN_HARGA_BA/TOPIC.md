@@ -5,7 +5,11 @@ title: "Kenapa Satu Kapal Tersangkut Bisa Bikin Harga Barang Naik"
 hook: "Jalur laut sempit dilewati sebagian besar barang dunia — satu sumbatan berdampak ke mana-mana"
 styleCandidates: ["SATELLITEBRIEFING (2D)", "CHAINREACTION (2D)", "SCALEFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme chokepoint → harga awet; angka volume, tarif, dan status Laut Merah cepat basi
+risiko: "Hook asli 'sebagian besar barang dunia' berlebihan, dikoreksi (Suez = 15% per IMF). Angka $9,6 miliar/hari dari Lloyd's List via Wikipedia (MEDIUM, paywall). Status krisis Laut Merah sangat dinamis. Tarif kontainer spesifik tidak ditemukan dari sumber HIGH."
 ---
 
 # Kenapa Satu Kapal Tersangkut Bisa Bikin Harga Barang Naik

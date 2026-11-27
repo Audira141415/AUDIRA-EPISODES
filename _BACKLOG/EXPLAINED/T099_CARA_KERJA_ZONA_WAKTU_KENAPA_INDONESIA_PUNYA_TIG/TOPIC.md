@@ -5,7 +5,11 @@ title: "Cara Kerja Zona Waktu: Kenapa Indonesia Punya Tiga"
 hook: "Jam di Sabang dan Merauke berbeda dua jam, padahal masih satu negara"
 styleCandidates: ["HISTORYMAP (2D)", "SATELLITEBRIEFING (2D)", "WORLDFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # fakta zona waktu stabil; proposal 2012 sudah mati
+risiko: "Keppres 41/1987 belum dikonfirmasi statusnya di JDIH (situs JS-only); sumber mayoritas Wikipedia (MEDIUM); 15° per zona hitungan sendiri. Netral: tanpa logo pemerintah."
 ---
 
 # Cara Kerja Zona Waktu: Kenapa Indonesia Punya Tiga

@@ -5,7 +5,11 @@ title: "Cara Kerja Peti Kemas: Kotak Besi yang Mengubah Perdagangan Dunia"
 hook: "Ukuran peti kemas yang seragam membuat ongkos kirim barang jatuh drastis"
 styleCandidates: ["SCALEFORGE (3D)", "URBANFORGE (3D)", "CHRONICLE (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme kontainerisasi awet; angka throughput pelabuhan cepat basi
+risiko: "Angka biaya Levinson ($5,86→$0,16) belum diverifikasi dari buku langsung (hanya sumber sekunder); throughput TEU pelabuhan cepat basi; ejaan Malcom (satu L) sering disalahtulis; rule 15: tanpa logo pelayaran/Pelindo, tanpa wajah orang nyata."
 ---
 
 # Cara Kerja Peti Kemas: Kotak Besi yang Mengubah Perdagangan Dunia

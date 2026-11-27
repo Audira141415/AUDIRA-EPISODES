@@ -5,7 +5,11 @@ title: "Cara Kerja Tahun Kabisat: Kenapa Februari Kadang 29 Hari"
 hook: "Bumi butuh sekitar 365¼ hari mengelilingi Matahari — seperempat hari itu harus disimpan"
 styleCandidates: ["CHRONICLE (2D)", "WORLDFORGE (3D)", "CERDIK (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # fakta astronomi & sejarah tidak berubah
+risiko: "Sumber utama HIGH hanya timeanddate.com (2); sisanya MEDIUM (Wikipedia). Sosigenes 'dari Alexandria' tidak dikonfirmasi Pliny. Cek jurnal astronomi saat produksi."
 ---
 
 # Cara Kerja Tahun Kabisat: Kenapa Februari Kadang 29 Hari
