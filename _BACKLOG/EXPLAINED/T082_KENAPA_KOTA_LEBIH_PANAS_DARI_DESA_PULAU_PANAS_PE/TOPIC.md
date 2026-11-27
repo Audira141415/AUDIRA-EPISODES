@@ -5,7 +5,11 @@ title: "Kenapa Kota Lebih Panas dari Desa: Pulau Panas Perkotaan"
 hook: "Beton dan aspal menyimpan panas siang hari lalu melepasnya sepanjang malam"
 styleCandidates: ["URBANFORGE (3D)", "SATELLITEBRIEFING (2D)", "DATAPHYSICAL (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya
+risiko: "angka cool roof dan regulasi RTH perlu cek ulang; data Jakarta hanya surface UHI (Landsat), bukan atmospheric"
 ---
 
 # Kenapa Kota Lebih Panas dari Desa: Pulau Panas Perkotaan

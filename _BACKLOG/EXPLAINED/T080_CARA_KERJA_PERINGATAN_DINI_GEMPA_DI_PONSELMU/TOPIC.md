@@ -5,7 +5,11 @@ title: "Cara Kerja Peringatan Dini Gempa di Ponselmu"
 hook: "Ponsel bisa berbunyi beberapa detik sebelum guncangan sampai ke tempatmu"
 styleCandidates: ["CHAINREACTION (2D)", "SATELLITEBRIEFING (2D)", "DISASTERSIM (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya
+risiko: "InaEEWS masih pilot/alfa (bisa berubah cepat); status Android EEW di Indonesia belum dikonfirmasi eksplisit; angka 228 sensor dan 88,8% dari sumber BMKG 2025 — cek ulang saat produksi"
 ---
 
 # Cara Kerja Peringatan Dini Gempa di Ponselmu

@@ -5,7 +5,11 @@ title: "Cara Kerja Hujan Buatan (Modifikasi Cuaca)"
 hook: "Pesawat menaburkan garam ke awan — tapi tidak bisa menciptakan hujan dari langit cerah"
 styleCandidates: ["WORLDFORGE (3D)", "SATELLITEBRIEFING (2D)", "CHAINREACTION (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # konsep awet; biaya TMC per penerbangan dan struktur BRIN bisa berubah
+risiko: "Efektivitas TMC diperdebatkan — jangan klaim angka absolut tanpa label studi. Nama unit TMC di BRIN per 2026 perlu dicek ulang saat produksi (struktur BRIN sering berubah). Netral politik soal program pemerintah."
 ---
 
 # Cara Kerja Hujan Buatan (Modifikasi Cuaca)

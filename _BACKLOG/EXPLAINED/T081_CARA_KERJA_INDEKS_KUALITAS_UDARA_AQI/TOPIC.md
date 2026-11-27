@@ -5,7 +5,11 @@ title: "Cara Kerja Indeks Kualitas Udara (AQI)"
 hook: "Angka berwarna di aplikasi cuaca itu dihitung dari partikel yang tak terlihat"
 styleCandidates: ["DATAPHYSICAL (2D)", "NANOFORGE (3D)", "SATELLITEBRIEFING (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme indeks awet; peringkat kota dan data tahunan cepat basi
+risiko: "Judul asli menyebut AQI tapi Indonesia pakai ISPU — perlu koreksi; PermenLHK P.14/2020 (PM2.5 sebagai parameter ke-6) hanya MEDIUM (sumber primer gagal diakses); data IQAir bukan data resmi KLHK."
 ---
 
 # Cara Kerja Indeks Kualitas Udara (AQI)

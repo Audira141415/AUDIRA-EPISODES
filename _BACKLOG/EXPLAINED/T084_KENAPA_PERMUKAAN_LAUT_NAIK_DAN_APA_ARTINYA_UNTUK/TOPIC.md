@@ -5,7 +5,11 @@ title: "Kenapa Permukaan Laut Naik dan Apa Artinya untuk Pesisir"
 hook: "Air laut naik beberapa milimeter per tahun — kecil, tapi menumpuk setiap tahun"
 styleCandidates: ["SATELLITEBRIEFING (2D)", "DATAPHYSICAL (2D)", "WORLDFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya
+risiko: "angka laju terbaru (mm/thn) bisa diperbarui oleh WMO/satelit; kisaran BMKG Indonesia (3–7 mm/thn) baru MEDIUM; Perpres 98/2021 belum diverifikasi di JDIH"
 ---
 
 # Kenapa Permukaan Laut Naik dan Apa Artinya untuk Pesisir

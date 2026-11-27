@@ -5,7 +5,11 @@ title: "Cara Kerja Skala Gempa: Beda Magnitudo dan Intensitas"
 hook: "Gempa magnitudo 7 bukan sedikit lebih kuat dari 6 — energinya sekitar 32 kali"
 styleCandidates: ["DATAPHYSICAL (2D)", "SCALEFORGE (3D)", "DISASTERSIM (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # formula fisika dan definisi skala tidak berubah; contoh gempa (Aceh, Palu, Cianjur) stabil
+risiko: "Hook '32 kali' benar (energi, 10^1.5), tapi VO wajib bedakan dari guncangan; SIG-BMKG tidak terkonfirmasi — BMKG saat ini pakai MMI; sumber kebanyakan MEDIUM (Wikipedia mengutip paper standar), coba buka USGS sebelum produksi; magnitudo BMKG vs USGS beda 0,1–0,2 unit (wajar); rule 15: tanpa logo BMKG/USGS, netral."
 ---
 
 # Cara Kerja Skala Gempa: Beda Magnitudo dan Intensitas

@@ -5,7 +5,7 @@
   (tanggal = hari ini, rule 15 EXPLAINED), cek `node F:/AUDIRA-ALL-SKILL/scripts/backlog-tools/verify-eps.mjs <folder...>`,
   lalu commit repo episode `feat(backlog): riset EXPLAINED batch N (T..)` + push.
 - Progres: batch 1 = T001–T006: SELESAI, 6/6 OK, commit b5a1baf1. Batch 2 = T007–T012: SELESAI, 6/6 OK, commit dde22419. Batch 3 = T013–T018: SELESAI, 6/6 OK, commit a4068c80. Batch 4 = T019–T024: SELESAI, 6/6 OK, commit b409670d. Batch 5 = T025–T030: SELESAI, 6/6 OK, commit a2694336. Batch 6 = T031–T036: SELESAI, 6/6 OK, commit 6c91d788. Batch 7 = T037–T042: SELESAI, 6/6 OK, commit 40bdc7b8. Batch 1–7 sudah di origin.
-  Batch 8 = T043–T048: SELESAI, 6/6 OK, commit 43eccee1. Batch 9 = T049–T054: SELESAI, 6/6 OK, commit dfbd9fda. Batch 10 = T055–T060: SELESAI, 6/6 OK, commit ce871ccd. Batch 11 = T061–T066: SELESAI, 6/6 OK, commit 4da4b891. Batch 12 = T067–T072: SELESAI, 6/6 OK, di-commit + push. Batch 13 = T073–T078: SELESAI, 6/6 OK, di-commit + push. Batch 14 = T079–T084.
+  Batch 8 = T043–T048: SELESAI, 6/6 OK, commit 43eccee1. Batch 9 = T049–T054: SELESAI, 6/6 OK, commit dfbd9fda. Batch 10 = T055–T060: SELESAI, 6/6 OK, commit ce871ccd. Batch 11 = T061–T066: SELESAI, 6/6 OK, commit 4da4b891. Batch 12 = T067–T072: SELESAI, 6/6 OK, di-commit + push. Batch 13 = T073–T078: SELESAI, 6/6 OK, di-commit + push. Batch 14 = T079–T084: SELESAI, 6/6 OK, di-commit + push. Batch 15 = T085–T090.
 - Catatan agen: WebSearch/WebFetch error (model haiku tidak tersedia) -> agen pakai curl ke halaman asli/Bing/Wikipedia API; tulis itu di brief.
 - Cek ulang sebelum produksi: T002 BI-Rate 6,00% (per 18 Nov 2026), T003 JISDOR + puncak 1998 (baru Wikipedia), T005 MDR/pengguna QRIS, T001 inflasi per Sep 2026.
   Batch 2: T007 "maks 100 lembar/setor" (1 bank), aturan BI uang dicek mesin sebelum masuk ATM belum ketemu;
@@ -81,6 +81,12 @@
   T076 1.204 meninggal/140 hilang (Sumatra per Feb 2026) MEDIUM via ANTARA, intersepsi hutan 15–35% MEDIUM (UGM), 15 cm konversi 6 inci NWS (hitungan sendiri), deforestasi disajikan netral, bnpb.go.id 403;
   T077 "100 mm/hari" hanya kriteria tipologi zona (Permen PU 22/2007, bukan ambang pasti), Guzzetti 2008 HIGH tapi baru abstrak, data DIBI tidak dipakai, SNI 8235:2017 status belum pasti (BSN diblokir);
   T078 hook "tanah padat" keliru → pasir/lanau lepas jenuh air (USGS), Mw 7,5 (bukan 7,4), Jono Oge >2 km (UGM 2021), Petobo 180 ha MEDIUM (Kompas), zona merah Palu MEDIUM (berita), atlas likuifaksi Badan Geologi tidak terbuka.
+  Batch 14: T079 "32 kali" benar (energi 10^1.5), SIG-BMKG tidak terkonfirmasi (BMKG pakai MMI), USGS 403/404 saat riset, magnitudo Palu MEDIUM (Wikipedia);
+  T080 InaEEWS 228 sensor & 88,8% = data pilot 2025 (cepat basi), Android EEW Indonesia belum dikonfirmasi eksplisit, Cell Broadcast gempa "sedang diuji coba" tanpa referensi rinci;
+  T081 Indonesia pakai ISPU bukan AQI, PermenLHK P.14/2020 (PM2.5 parameter ke-6) MEDIUM (JDIH KLHK gagal akses), PP 22/2021 Berlaku (PP 41/1999 dicabut);
+  T082 Jakarta SUHII ~6 °C = surface UHI Landsat (label wajib "suhu permukaan"), cool roof −1,2…−3,3 °C = suhu indoor tanpa AC (bukan ambient), RTH 30% UU 26/2007 dipertahankan pasca-Cipta Kerja tapi pasal PP 21/2021 belum diverifikasi;
+  T083 hook garam akurat untuk Indonesia (NaCl), biaya TMC Rp200 jt/penerbangan MEDIUM (Wikipedia), nama unit TMC BRIN bisa berubah, UU 31/2009 & PP 46/2012 Berlaku;
+  T084 hook diubah "hampir setengah sentimeter/tahun" (IPCC 3,7→WMO 4,62 mm/thn), "2.000 pulau hilang" tidak dipakai, BMKG 3–7 mm/thn MEDIUM, Perpres 98/2021 JDIH 404, subsidensi Jakarta 25 cm/thn Wikipedia.
 - Lanjut: Lanjut dari topik pertama yang TOPIC.md-nya masih `stage: backlog`:
   `grep -L "stage: drafted" _BACKLOG/EXPLAINED/*/TOPIC.md | head -6`.
 
