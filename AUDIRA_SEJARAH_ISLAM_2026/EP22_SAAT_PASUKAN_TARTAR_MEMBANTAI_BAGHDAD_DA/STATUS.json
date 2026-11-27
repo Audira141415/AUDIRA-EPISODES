@@ -3,9 +3,9 @@
   "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
   "topic": "Sejarah peradaban Islam yang jarang diketahui",
   "createdAt": "2026-11-25T02:39:47.814Z",
-  "updatedAt": "2026-11-27T00:58:02.146Z",
-  "currentStage": "draft",
-  "sessionPhase": "B",
+  "updatedAt": "2026-11-27T02:27:59.692Z",
+  "currentStage": "review",
+  "sessionPhase": "C",
   "stages": [
     {
       "id": "context",
@@ -120,24 +120,52 @@
       "id": "draft",
       "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-27T01:52:38.365Z",
+          "text": "sync: draft/contact-sheet.jpg (sheet.sh)"
+        },
+        {
+          "at": "2026-11-27T01:58:23.074Z",
+          "text": "Juri buta r1 3.67, r2 3.50; diterima 3.67 setelah 2 putaran. draft/contact-sheet.jpg = r1, THEME_CHECK 10 baris ya, camera s5 4/5. Commit c8d3e9f4."
+        }
+      ],
+      "doneAt": "2026-11-27T01:58:23.074Z",
+      "startedAt": "2026-11-27T01:50:18.010Z"
     },
     {
       "id": "final",
       "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
       "gate": true,
-      "status": "pending",
-      "approved": false,
-      "approvedAt": null,
-      "notes": []
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-27T02:17:48.882Z",
+      "notes": [
+        {
+          "at": "2026-11-27T02:17:48.882Z",
+          "text": "Acc pengguna 2026-11-27: \"Gas render\" (contact sheet juri 3.67, 95 dtk, G18c 16 LU)"
+        },
+        {
+          "at": "2026-11-27T02:27:55.391Z",
+          "text": "FINAL_EP22_BAGHDAD_1258.mp4 1080x1920@60 95 dtk; -13.7 LUFS TP -1.8; G18c 16.7 LU; metadata + signature VALID; record_score final 3.5"
+        }
+      ],
+      "startedAt": "2026-11-27T02:17:48.882Z",
+      "doneAt": "2026-11-27T02:27:55.391Z"
     },
     {
       "id": "delivery",
       "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-27T02:27:59.514Z",
+          "text": "SOCIAL_CAPTIONS.md lolos validator; jadwal Rabu 16 Des 2026 19.00-20.40 WIB; 2 lesson HISTORYMAP; scheduled task review-baghdad-1258-24h/-72h/-7d"
+        }
+      ],
+      "doneAt": "2026-11-27T02:27:59.514Z"
     },
     {
       "id": "review",
@@ -159,7 +187,7 @@
       "maxSec": 86
     }
   },
-  "syncedAt": "2026-11-27T00:24:20.917Z",
+  "syncedAt": "2026-11-27T01:52:38.365Z",
   "handoverLog": [
     {
       "at": "2026-11-27T00:10:43.248Z",
@@ -465,9 +493,127 @@
         "draftScores": [],
         "finals": []
       }
+    },
+    {
+      "at": "2026-11-27T00:58:20.434Z",
+      "doing": "Sesi B s7 selesai TAHAP 7 (commit cc129396): rig.ts KEYS, Hud.tsx (29 kartu, RuinStrip 2×2, EraBar 750→1258, label BAGDAD/S. TIGRIS/HAMADAN·PERSIA, MERGE), BaghdadFilm.tsx, Root.tsx (BaghdadPreview/BaghdadFinal/BaghdadCover). typecheck bersih kecuali starter src/core/qa/scene-qa.tsx (bukan kode episode), smoke+preflight lolos. Still per beat (project/out/beats, out/beats2) audit HISTORYMAP: tidak ada aspek di-cap <4, diversity 73.9. style/cover-topic.png dari BaghdadCover 3.5 dtk. docs/SHOTLIST.md ditulis; sfx.wav −28 LUFS 18 suara, TP −5.9; G18c terhitung: VO loudnorm −16 vs SFX −28−4 dB = −32 → 16 LU ≥12. Keputusan tetap: style HISTORYMAP, Remotion+R3F 3D, VO dikunci 91.67 dtk, film 95 dtk.",
+      "files": [
+        "STATUS.json",
+        "draft/B_PLAN.md",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/SHOTLIST.md",
+        "project/out/beats2/_sheet.jpg",
+        "project/src/scenes/baghdad/Trays.tsx",
+        "project/src/scenes/baghdad/rig.ts"
+      ],
+      "next": "Sesi B lanjutan tahap 8 (draft): 1) cd project; npm run stills -- out/draft 4s,17s,30s,41s,51s,64s,72s,79.5s,86s BaghdadPreview, salin out/draft/_sheet.jpg → draft/contact-sheet.jpg (lihat diperkecil ±1100 px). 2) npm run audit:visual (crush ≤2%, clipHi 0, diversity ≥30). 3) Klip 15–20 dtk 540×960 dari s5 (45–62 dtk) BaghdadPreview → npm run audit:camera untuk skor motion. 4) Isi draft/THEME_CHECK.md (G22, subjek layar = kata VO tiap frame, semua ya). 5) record_score self (stage draft, ceilings dari look.json, camera json), lalu juri buta subagent (qa/jury.md) judge jury. Lolos ≥3.8 tanpa aspek <3; maks 2 putaran; terbaik ≥3.5 diterima. Kandidat poles: s3 baki surat agak gelap (naikkan candle/key), payoff s7 79.5 dtk terlalu oranye (Trays.tsx emissive rak + PayoffLamp). JANGAN render final. Akhir B: ikuti sessionBoundary (handover newSession, sesi C).",
+      "snapshot": {
+        "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP22",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T01:58:34.500Z",
+      "doing": "Sesi B selesai (s8, commit c8d3e9f4): tahap 8 draf. Juri buta r1 3.67 (L4 M4 D4 C3 Mo4 R3), r2 3.50 (L4 M3 D4 C3 Mo4 R3) → DITERIMA 3.67 setelah 2 putaran (aturan ≥3.5). Contact sheet terbaik draft/contact-sheet.jpg (r1; r2 di draft/contact-sheet-r2.jpg). Kode sekarang = r2 (poles di atas r1: segel bercincin emas, RuinStrip 46 px, air roughness 0.42). THEME_CHECK.md 10 baris semua ya. audit:camera s5 4/5 (draft/camera.json), look ceilings L5 M5 D5 C5 R4, diversity ~71. Keputusan tetap: style HISTORYMAP, Remotion+R3F 3D, VO dikunci 91.67 dtk (project/public/audio/vo.wav), film 95 dtk, sfx.wav −28 LUFS; G18c terhitung 16 LU (VO −16 vs SFX −32) ≥12 — ukur ulang di master final.",
+      "files": [
+        "STATUS.json",
+        "draft/contact-sheet.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/camera.json",
+        "NOTES.md",
+        "project/scripts/render-final.mjs",
+        "docs/SCRIPT.md (hanya tahap 10)",
+        "research/SOURCE_REGISTER.md (hanya tahap 10)"
+      ],
+      "next": "Sesi C: tahap 9 gerbang acc. Tampilkan draft/contact-sheet.jpg, skor juri 3.67 (diterima setelah 2 putaran), durasi 95 dtk, G18c 16 LU; tunggu acc pengguna. Setelah acc: update final approved:true lalu di project/: npm run render:final -- --comp=BaghdadFinal --out=../FINAL_EP22_BAGHDAD_1258.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=3 --concurrency=2 --gl=vulkan --encoder=nvenc (jobs=3 karena GPU dibagi sesi lain; --skip-memory-gate beralasan bila gate menolak juri 3.67 setelah 2 putaran, preseden EP57). QA: −14 LUFS, TP < −1 dBFS, metadata ffprobe, signature, outro; record_score final. Lalu tahap 10 delivery (caption 6 platform, validator, NOTES, 3 scheduled task review).",
+      "snapshot": {
+        "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP22",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-27T02:18:14.899Z",
+      "doing": "Sesi C s9: render final setelah acc pengguna \"Gas render\"",
+      "command": "cd project && npm run render:final -- --comp=BaghdadFinal --out=../FINAL_EP22_BAGHDAD_1258.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=3 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Saat Pasukan Tartar Membantai Bagdad\" --slug=baghdad-1258 --ep=EP22 --log=error",
+      "files": [
+        "FINAL_EP22_BAGHDAD_1258.mp4",
+        "NOTES.md"
+      ],
+      "next": "QA (−14 LUFS, TP<−1, ffprobe metadata, signature, outro), record_score final, lalu tahap 10 delivery",
+      "snapshot": {
+        "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP22",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-27T02:18:14.899Z",
+      "doing": "Sesi C s9: render final setelah acc pengguna \"Gas render\"",
+      "command": "cd project && npm run render:final -- --comp=BaghdadFinal --out=../FINAL_EP22_BAGHDAD_1258.mp4 --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav --jobs=3 --concurrency=2 --gl=vulkan --encoder=nvenc --title=\"Saat Pasukan Tartar Membantai Bagdad\" --slug=baghdad-1258 --ep=EP22 --log=error",
+      "files": [
+        "FINAL_EP22_BAGHDAD_1258.mp4",
+        "NOTES.md"
+      ],
+      "next": "QA (−14 LUFS, TP<−1, ffprobe metadata, signature, outro), record_score final, lalu tahap 10 delivery",
+      "snapshot": {
+        "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP22",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-27T02:27:59.691Z"
     }
   ],
-  "session": 7,
+  "session": 9,
   "sessionLog": [
     {
       "no": 2,
@@ -510,38 +656,20 @@
       "phase": "B",
       "phaseNo": 5,
       "at": "2026-11-27T00:43:26.680Z"
+    },
+    {
+      "no": 8,
+      "title": "EP22 Baghdad 1258 · B6 (s8)",
+      "phase": "B",
+      "phaseNo": 6,
+      "at": "2026-11-27T00:58:20.434Z"
+    },
+    {
+      "no": 9,
+      "title": "EP22 Baghdad 1258 · C1 (s9)",
+      "phase": "C",
+      "phaseNo": 1,
+      "at": "2026-11-27T01:58:34.500Z"
     }
-  ],
-  "handover": {
-    "at": "2026-11-27T00:56:32.424Z",
-    "doing": "Sesi B s7 selesai tahap 7 kode: rig.ts KEYS (kamera s1–s8 sesuai B_PLAN s5, s2 tetap memuat kota sampai 19 dtk, s3 d 4.0–4.4, s7 payoff d 3.7), Hud.tsx (CARDS 29 kartu, RuinStrip 2×2 ikon Landmark/Crown/BookOpen/Stethoscope dicoret per CUE, EraBar 750→1258 padam di berakhir, LABELS BAGDAD/S. TIGRIS/HAMADAN·PERSIA, MERGE 1258./ke-37./3.000/140:/10/20/2 juta/AUDIRA), BaghdadFilm.tsx, Root.tsx (BaghdadPreview/Final/Cover). typecheck bersih (kecuali starter scene-qa indirect, bukan kode episode), smoke + preflight lolos (No blockers). Still per beat out/beats + out/beats2: audit HISTORYMAP no aspect capped below 4 setelah perbaikan (lampu payoff Trays diredam, RuinStrip font 40). style/cover-topic.png dirender dari BaghdadCover frame 3.5 dtk. sfx/cues/auto.py TARGET_LUFS sudah -28.",
-    "files": [
-      "project/src/scenes/baghdad/rig.ts",
-      "project/src/scenes/baghdad/Hud.tsx",
-      "project/src/scenes/baghdad/BaghdadFilm.tsx",
-      "project/src/scenes/baghdad/Trays.tsx",
-      "project/src/Root.tsx",
-      "project/out/beats/_sheet.jpg",
-      "project/out/beats2/_sheet.jpg",
-      "style/cover-topic.png",
-      "draft/B_PLAN.md"
-    ],
-    "next": "Sesi B lanjutan (s8): PYTHONUTF8=1 npm run sfx (butuh SHOTLIST.md; bila tak ada, tulis dari docs/STORYBOARD kolom Audio + CUE di cues.ts), cek G18c. Lalu tahap 8: contact sheet 8 frame (npm run stills -- out/draft 4s,17s,30s,41s,51s,64s,72s,79.5s,86s BaghdadPreview → salin _sheet.jpg ke draft/contact-sheet.jpg), npm run audit:visual (crush ≤2%, clipHi 0, diversity ≥30; still terakhir diversity 73.9), klip 15–20 dtk 540×960 bagian s5 (45–62 dtk) untuk audit:camera, isi draft/THEME_CHECK.md (G22), record_score self lalu juri buta subagent (qa/jury.md), maks 2 putaran. Catatan visual: s3 tray surat agak gelap, payoff s7 masih sangat oranye — poles bila juri minta. JANGAN render final.",
-    "snapshot": {
-      "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
-      "topic": "Sejarah peradaban Islam yang jarang diketahui",
-      "style": "HISTORYMAP",
-      "memoryEpisode": "sejarah-islam-EP22",
-      "currentStage": "draft",
-      "gates": {
-        "final": {
-          "approved": false,
-          "status": "pending"
-        }
-      },
-      "voPath": null,
-      "draftScores": [],
-      "finals": []
-    }
-  }
+  ]
 }
