@@ -5,7 +5,11 @@ title: "Cara Kerja Air Minum Isi Ulang: Apa yang Terjadi di Depot"
 hook: "Air galon isi ulang melewati filter dan lampu UV dalam beberapa menit"
 styleCandidates: ["INNERWORKS (3D)", "BONGKAR (2D)", "FLUIDFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: tidak   # angka kepatuhan SLHS dan data bakteriologis cepat berubah seiring penertiban
+risiko: "Hook asli menyederhanakan (hanya UV, padahal banyak depot tanpa UV); Permenkes 43/2014 sudah dicabut oleh Permenkes 2/2023; angka 4,01% SLHS dan data IWI 2021 bisa berubah; topik sanitasi depot sensitif (jangan menakut-nakuti, pesan cek legalitas saja); rule 15: tanpa logo Dinkes/BPOM/Kemendag."
 ---
 
 # Cara Kerja Air Minum Isi Ulang: Apa yang Terjadi di Depot

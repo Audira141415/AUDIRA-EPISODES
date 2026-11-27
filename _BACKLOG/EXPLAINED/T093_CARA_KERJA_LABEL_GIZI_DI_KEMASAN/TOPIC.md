@@ -5,7 +5,11 @@ title: "Cara Kerja Label Gizi di Kemasan"
 hook: "Satu bungkus camilan bisa berisi tiga takaran saji — angka yang sering terlewat"
 styleCandidates: ["BONGKAR (2D)", "DATAPHYSICAL (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # konsep label gizi awet; ambang FoP dan AKG acuan bisa berubah per regulasi
+risiko: "Per BPOM 22/2019 dan 20/2021 tidak bisa dikonfirmasi langsung (JDIH BPOM di balik WAF); cek ulang status berlaku dan ambang FoP di tahap produksi. Acuan AKG 2.150 kkal perlu dikonfirmasi. Netral: tanpa logo/merek nyata (rule 15)."
 ---
 
 # Cara Kerja Label Gizi di Kemasan

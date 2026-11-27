@@ -5,7 +5,11 @@ title: "Cara Kerja Pengujian Obat Sebelum Dijual"
 hook: "Satu obat baru melewati beberapa fase uji bertahun-tahun sebelum sampai apotek"
 styleCandidates: ["CHAINREACTION (2D)", "DATAPHYSICAL (2D)", "NANOFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya
+risiko: "angka biaya ($2,6B vs $985M) diperdebatkan — wajib sebut kedua estimasi; status Per BPOM 25/2015 belum terverifikasi daring"
 ---
 
 # Cara Kerja Pengujian Obat Sebelum Dijual

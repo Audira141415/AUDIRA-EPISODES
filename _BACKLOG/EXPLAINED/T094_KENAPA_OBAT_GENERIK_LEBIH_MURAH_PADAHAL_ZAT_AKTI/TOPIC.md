@@ -5,7 +5,11 @@ title: "Kenapa Obat Generik Lebih Murah padahal Zat Aktifnya Sama"
 hook: "Selisih harga obat bermerek dan generik bukan soal isi, tapi soal biaya penemuan"
 styleCandidates: ["BONGKAR (2D)", "DATAPHYSICAL (2D)", "NANOFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya
+risiko: "Kepmenkes HET 4829/2021 belum dikonfirmasi statusnya per 2026; angka biaya R&D ($985M) dari studi 2020 bisa diperbarui"
 ---
 
 # Kenapa Obat Generik Lebih Murah padahal Zat Aktifnya Sama

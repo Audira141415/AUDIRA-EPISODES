@@ -5,7 +5,7 @@
   (tanggal = hari ini, rule 15 EXPLAINED), cek `node F:/AUDIRA-ALL-SKILL/scripts/backlog-tools/verify-eps.mjs <folder...>`,
   lalu commit repo episode `feat(backlog): riset EXPLAINED batch N (T..)` + push.
 - Progres: batch 1 = T001–T006: SELESAI, 6/6 OK, commit b5a1baf1. Batch 2 = T007–T012: SELESAI, 6/6 OK, commit dde22419. Batch 3 = T013–T018: SELESAI, 6/6 OK, commit a4068c80. Batch 4 = T019–T024: SELESAI, 6/6 OK, commit b409670d. Batch 5 = T025–T030: SELESAI, 6/6 OK, commit a2694336. Batch 6 = T031–T036: SELESAI, 6/6 OK, commit 6c91d788. Batch 7 = T037–T042: SELESAI, 6/6 OK, commit 40bdc7b8. Batch 1–7 sudah di origin.
-  Batch 8 = T043–T048: SELESAI, 6/6 OK, commit 43eccee1. Batch 9 = T049–T054: SELESAI, 6/6 OK, commit dfbd9fda. Batch 10 = T055–T060: SELESAI, 6/6 OK, commit ce871ccd. Batch 11 = T061–T066: SELESAI, 6/6 OK, commit 4da4b891. Batch 12 = T067–T072: SELESAI, 6/6 OK, di-commit + push. Batch 13 = T073–T078: SELESAI, 6/6 OK, di-commit + push. Batch 14 = T079–T084: SELESAI, 6/6 OK, di-commit + push. Batch 15 = T085–T090: SELESAI, 6/6 OK, di-commit + push (T087/T089/T090 kata <195, poles saat produksi). Batch 16 = T091–T096.
+  Batch 8 = T043–T048: SELESAI, 6/6 OK, commit 43eccee1. Batch 9 = T049–T054: SELESAI, 6/6 OK, commit dfbd9fda. Batch 10 = T055–T060: SELESAI, 6/6 OK, commit ce871ccd. Batch 11 = T061–T066: SELESAI, 6/6 OK, commit 4da4b891. Batch 12 = T067–T072: SELESAI, 6/6 OK, di-commit + push. Batch 13 = T073–T078: SELESAI, 6/6 OK, di-commit + push. Batch 14 = T079–T084: SELESAI, 6/6 OK, di-commit + push. Batch 15 = T085–T090: SELESAI, 6/6 OK, di-commit + push (T087/T089/T090 kata <195, poles saat produksi). Batch 16 = T091–T096: SELESAI, 6/6 OK, di-commit + push (T091/T092/T095 ch=7, T095 kata=192, poles saat produksi).
 - Catatan agen: WebSearch/WebFetch error (model haiku tidak tersedia) -> agen pakai curl ke halaman asli/Bing/Wikipedia API; tulis itu di brief.
 - Cek ulang sebelum produksi: T002 BI-Rate 6,00% (per 18 Nov 2026), T003 JISDOR + puncak 1998 (baru Wikipedia), T005 MDR/pengguna QRIS, T001 inflasi per Sep 2026.
   Batch 2: T007 "maks 100 lembar/setor" (1 bank), aturan BI uang dicek mesin sebelum masuk ATM belum ketemu;
@@ -93,6 +93,12 @@
   T088 hook generik OK, EXIF hilang di medsos (c03), AI-generated = batas teknik (c05), TinEye 77,6 miliar MEDIUM, WEF 2024 HIGH;
   T089 (**kata=193, poles saat produksi**) hook "naskah" dikoreksi (penipu adaptif), IC3 $16,6 miliar HIGH, KUHP baru Psl 492 berlaku 2 Jan 2026, UU ITE Psl 28(1) perubahan belum dicek;
   T090 (**kata=191, ch=7, poles saat produksi**) hook sumbu terpotong OK, truncated axis kadang tepat (Cairo 2019, c04), semua contoh ILUSTRASI berlabel, Pandey 2015 paywall.
+  Batch 16: T091 ch=7, tanggal kedaluwarsa "best before" vs "use by" dari Codex/EU bukan regulasi Indo (BPOM 31/2018 belum terbuka);
+  T092 ch=7, titik asap 180-230°C dari Wikipedia (cek jurnal food chem), karsinogen akrolein bersyarat suhu (c04), PP 28/2004 bab minyak goreng curah belum terbaca;
+  T093 AKG 2.150 kkal/hari (beberapa sumber 2.000), threshold FoP gula >6g/natrium >300mg/lemak jenuh >4g per takaran saji dari BPOM 20/2021 (JDIH WAF), Perka BPOM 22/2019 status belum pasti;
+  T094 Kepmenkes HET 4829/2021 status uncertain (farmalkes error), R&D $985M studi 2020 (mungkin ada studi baru), 88% resep generik AS data 2014, data exclusivity Indo belum terverifikasi;
+  T095 (**kata=192, ch=7, poles saat produksi**) fase uji 1-4 standar FDA (BPOM 32/2019 belum terbaca dari JDIH), "10 tahun" rata-rata perkiraan konservatif, "95% gagal" = onkologi (Nature 2019);
+  T096 pori UF/RO "0,01 mikron" disederhanakan dari 0,01-0,1 µm, TDS <500 ppm ambang WHO (Permenkes 2/2023 mungkin berbeda), 65.000+ depot per ASPADA MEDIUM cepat basi.
 - Lanjut: Lanjut dari topik pertama yang TOPIC.md-nya masih `stage: backlog`:
   `grep -L "stage: drafted" _BACKLOG/EXPLAINED/*/TOPIC.md | head -6`.
 

@@ -5,7 +5,11 @@ title: "Kenapa Minyak Goreng Bekas Berbahaya Dipakai Berulang"
 hook: "Setiap kali dipanaskan, minyak membentuk zat baru yang tidak kamu inginkan"
 styleCandidates: ["NANOFORGE (3D)", "BONGKAR (2D)", "CHAINREACTION (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # konsep kimia awet; angka SNI dan batas TPC stabil
+risiko: "Judul 'berbahaya' perlu nuansa (risiko kumulatif, bukan racun akut); SNI 3741:2013 perlu verifikasi status terbaru (situs BSN terblokir); angka '3–4 kali pakai' bukan rekomendasi resmi."
 ---
 
 # Kenapa Minyak Goreng Bekas Berbahaya Dipakai Berulang
