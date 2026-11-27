@@ -5,7 +5,11 @@ title: "Cara Kerja Nomor Darurat 112"
 hook: "Satu panggilan darurat diteruskan ke polisi, ambulans, atau pemadam dalam hitungan detik"
 styleCandidates: ["CHAINREACTION (2D)", "DATAPHYSICAL (2D)", "URBANFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # alur & dasar hukum awet; jumlah kab/kota dan status pilot Bali cepat basi
+risiko: "Hook asli (dalam hitungan detik) tidak didukung data resmi, dikoreksi; 112 baru aktif di sebagian kab/kota (141 per Mar 2025 vs klaim 182 Des 2025, MEDIUM); rule 15: tanpa logo Komdigi/Kemendagri/Polri/pemda, pilot Bali disajikan netral."
 ---
 
 # Cara Kerja Nomor Darurat 112

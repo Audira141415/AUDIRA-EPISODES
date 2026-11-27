@@ -5,7 +5,7 @@
   (tanggal = hari ini, rule 15 EXPLAINED), cek `node F:/AUDIRA-ALL-SKILL/scripts/backlog-tools/verify-eps.mjs <folder...>`,
   lalu commit repo episode `feat(backlog): riset EXPLAINED batch N (T..)` + push.
 - Progres: batch 1 = T001–T006: SELESAI, 6/6 OK, commit b5a1baf1. Batch 2 = T007–T012: SELESAI, 6/6 OK, commit dde22419. Batch 3 = T013–T018: SELESAI, 6/6 OK, commit a4068c80. Batch 4 = T019–T024: SELESAI, 6/6 OK, commit b409670d. Batch 5 = T025–T030: SELESAI, 6/6 OK, commit a2694336. Batch 6 = T031–T036: SELESAI, 6/6 OK, commit 6c91d788. Batch 7 = T037–T042: SELESAI, 6/6 OK, commit 40bdc7b8. Batch 1–7 sudah di origin.
-  Batch 8 = T043–T048: SELESAI, 6/6 OK, commit 43eccee1. Batch 9 = T049–T054: SELESAI, 6/6 OK, di-commit + push. Batch 10 = T055–T060.
+  Batch 8 = T043–T048: SELESAI, 6/6 OK, commit 43eccee1. Batch 9 = T049–T054: SELESAI, 6/6 OK, commit dfbd9fda. Batch 10 = T055–T060: SELESAI, 6/6 OK, di-commit + push. Batch 11 = T061–T066.
 - Catatan agen: WebSearch/WebFetch error (model haiku tidak tersedia) -> agen pakai curl ke halaman asli/Bing/Wikipedia API; tulis itu di brief.
 - Cek ulang sebelum produksi: T002 BI-Rate 6,00% (per 18 Nov 2026), T003 JISDOR + puncak 1998 (baru Wikipedia), T005 MDR/pengguna QRIS, T001 inflasi per Sep 2026.
   Batch 2: T007 "maks 100 lembar/setor" (1 bank), aturan BI uang dicek mesin sebelum masuk ATM belum ketemu;
@@ -56,6 +56,13 @@
   T052 susut 8,55%, 72.655 kms, 573.650 trafo = Statistik PLN 2024 (ganti bila 2025 terbit), drift 0,22 mm/s hitungan sendiri, Permen ESDM 04/2009 Aturan Distribusi status belum pasti (JDIH ESDM 403); rumah 230 V bukan 220 V; hook: energi merambat, elektron hampir diam.
   T053 semua angka 2019 (21,9 juta pelanggan, 11.45→11.48, ±9 jam, pohon 8,5 m) baru MEDIUM, laporan investigasi resmi belum ketemu; judul usul "…ke Separuh Pulau"; angka 49,5 Hz/≥30% dari Grid Code 2020 (bukan aturan saat kejadian); hook: rangkaian gangguan, bukan satu.
   T054 SPLN D3.002-1:2007 dibaca dari salinan kupdf (cek asli; "10–400 kVA" bacaan tabel rusak), "≈50:1" rasio tegangan bukan lilitan (Dyn5 ±87:1), status Permen ESDM 04/2009 & SNI 04-0227-2003 vs IEC 60038:2009; hook: 20.000 V → 230 V, tangki tak selalu tabung.
+  Batch 10: T055 kehilangan air 33,2% (data 2022 via ANTARA) & cakupan pipa ±20% per Feb 2026 MEDIUM, Permenkes 2/2023 dicabut sebagian Permenkes 3/2026 (lampiran baku mutu masih berlaku, cek JDIH); hook: jernih belum tentu siap diminum.
+  T056 26% terkelola, 141.926 t/hari, 481 vs ±369 TPA open dumping MEDIUM cepat basi; tenggat open dumping berubah-ubah (Jul 2026/2027/2028, VO hanya "ratusan TPA"); dasbor resmi kini sampahnasional.kemenlh.go.id; hook: ±3 dari 4 kantong tak terkelola (hitungan sendiri).
+  T057 71% daur ulang botol PET = studi industri (label HUD, cek/hapus), "1% tekstil" data 2021; Perbadan BPOM 20/2019 dicabut 11/2026 (aturan teknis daur ulang Psl 9(2) belum ketemu); hook: dua jalur (botol lagi vs kaus/downcycling).
+  T058 asal HPSN 21 Feb hanya MEDIUM, contoh BRIN Malang per Mei 2026; Leuwigajah 143 jiwa (Lavigne 2014); hook: metana menyala sendiri baru ±537 °C, "terbakar sendiri" dihapus.
+  T059 141 kab/kota per Mar 2025 vs "182" Des 2025 (MEDIUM, bentrok), Kendari 2.360→22 valid hanya sepekan pertama, pilot Bali 25 Sep 2026 = integrasi nasional (bukan awal 112); hook: belum semua daerah bisa menjawab, "hitungan detik" dihapus.
+  T060 Permenkes 19/2016 (SPGDT/119) dicabut Permenkes 1/2026 tanpa angka 119 (cek Kepmenkes), daftar alat kabin baru Wikipedia (cari standar resmi), cek tekstur GLB ambulance-van-29919a (lambang palang merah); judul usul "Cara Kerja Ambulans Gawat Darurat: Bukan Sekadar Mobil Bersirene".
+  Catatan sumber: halaman ANTARA memuat larangan crawling AI tanpa izin — kutip fakta saja, jangan salin teks; utamakan sumber resmi.
 - Lanjut: Lanjut dari topik pertama yang TOPIC.md-nya masih `stage: backlog`:
   `grep -L "stage: drafted" _BACKLOG/EXPLAINED/*/TOPIC.md | head -6`.
 

@@ -5,7 +5,11 @@ title: "Perjalanan Air Keran dari Sungai sampai Rumahmu"
 hook: "Air sungai yang keruh melewati banyak tahap sebelum keluar jernih dari keran"
 styleCandidates: ["CHAINREACTION (2D)", "FLUIDFORGE (3D)", "URBANFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # proses pengolahan dan baku mutu awet; angka kehilangan air dan cakupan pipa cepat basi
+risiko: "Hook asli menyiratkan air keran jernih = siap minum dan sumber selalu sungai, dikoreksi; NRW 33,2% (2022) dan cakupan ±20% (Feb 2026) baru MEDIUM; Permenkes 2/2023 dicabut sebagian oleh Permenkes 3/2026 (lampiran masih berlaku); rule 15: tanpa nama/logo PDAM."
 ---
 
 # Perjalanan Air Keran dari Sungai sampai Rumahmu

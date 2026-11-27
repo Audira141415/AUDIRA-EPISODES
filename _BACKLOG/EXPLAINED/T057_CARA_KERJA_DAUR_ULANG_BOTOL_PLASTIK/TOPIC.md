@@ -5,7 +5,11 @@ title: "Cara Kerja Daur Ulang Botol Plastik"
 hook: "Botol bekas dicacah, dicuci, dilelehkan — lalu bisa jadi kaus yang kamu pakai"
 styleCandidates: ["CHAINREACTION (2D)", "INNERWORKS (3D)", "BONGKAR (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # proses daur ulang awet; angka 71% (klaim industri) dan status aturan BPOM bisa berubah
+risiko: "Hook asli melewatkan pemilahan dan nuansa downcycling (botol ke kaus jarang didaur ulang lagi), dikoreksi jadi dua jalur; 71% hanya klaim studi industri, bukan data resmi; aturan BPOM 20/2019 sudah dicabut Perbadan 11/2026; rule 15: tanpa merek botol/pakaian dan logo BPOM."
 ---
 
 # Cara Kerja Daur Ulang Botol Plastik

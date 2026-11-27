@@ -5,7 +5,11 @@ title: "Cara Kerja Gas Metana dari Tempat Pembuangan Sampah"
 hook: "Gunungan sampah menghasilkan gas yang bisa terbakar sendiri — atau dimanfaatkan"
 styleCandidates: ["DISASTERSIM (3D)", "CHAINREACTION (2D)", "WORLDFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # proses kimia awet; data timbulan sampah dan proyek penangkapan gas cepat basi
+risiko: "Hook asli (terbakar sendiri) dilebihkan, dikoreksi jadi bisa terbakar/meledak dengan mekanisme panas+oksigen; korban Leuwigajah beda antar sumber (143 vs >150); topik bencana: tanpa visual korban, tanpa instruksi menyalakan gas; rule 15: tanpa logo KLH/BRIN."
 ---
 
 # Cara Kerja Gas Metana dari Tempat Pembuangan Sampah

@@ -5,7 +5,11 @@ title: "Ke Mana Perginya Sampah Setelah Diangkut Truk"
 hook: "Sampah rumahmu tidak hilang — ia memulai perjalanan panjang yang jarang dilihat"
 styleCandidates: ["CHAINREACTION (2D)", "WORLDFORGE (3D)", "SATELLITEBRIEFING (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # alur TPS-TPA dan regulasi awet; timbulan, % terkelola, jumlah TPA open dumping, dan tenggat cepat basi
+risiko: "Hook asli (perjalanan panjang) menyiratkan semua sampah diolah, dikoreksi: baru ±26% terkelola; angka nasional antar-rilis tidak konsisten dan tenggat open dumping bergeser; rule 15: tanpa logo KLH/Pemprov/truk dinas, netral, tanpa visual korban longsor Bantargebang."
 ---
 
 # Ke Mana Perginya Sampah Setelah Diangkut Truk

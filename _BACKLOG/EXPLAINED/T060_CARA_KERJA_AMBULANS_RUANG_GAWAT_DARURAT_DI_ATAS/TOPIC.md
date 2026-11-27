@@ -5,7 +5,11 @@ title: "Cara Kerja Ambulans: Ruang Gawat Darurat di Atas Roda"
 hook: "Ambulans membawa peralatan yang menjaga pasien tetap hidup selama perjalanan"
 styleCandidates: ["INNERWORKS (3D)", "BONGKAR (2D)", "URBANFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme dan UU awet; status regulasi 119 dan nomor layanan perlu dicek ulang
+risiko: "Hook asli dilebihkan (tidak semua ambulans gawat darurat, tidak menjamin pasien hidup), dikoreksi; dasar 119 (Permenkes 19/2016) dicabut Permenkes 1/2026; daftar alat ambulans dari sumber internasional; golden hour diperdebatkan; rule 15: tanpa logo RS, merek, palang merah, wajah pasien."
 ---
 
 # Cara Kerja Ambulans: Ruang Gawat Darurat di Atas Roda
