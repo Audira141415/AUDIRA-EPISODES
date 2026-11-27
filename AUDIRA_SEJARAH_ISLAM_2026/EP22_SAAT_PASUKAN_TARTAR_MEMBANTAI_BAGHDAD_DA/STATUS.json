@@ -3,9 +3,9 @@
   "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
   "topic": "Sejarah peradaban Islam yang jarang diketahui",
   "createdAt": "2026-11-25T02:39:47.814Z",
-  "updatedAt": "2026-11-27T00:15:35.753Z",
-  "currentStage": "setup",
-  "sessionPhase": "A",
+  "updatedAt": "2026-11-27T00:58:02.146Z",
+  "currentStage": "draft",
+  "sessionPhase": "B",
   "stages": [
     {
       "id": "context",
@@ -75,22 +75,46 @@
       "id": "setup",
       "name": "Scaffold folder + setup kit",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-27T00:24:20.917Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-25T15:24:23.153Z",
+      "startedAt": "2026-11-25T15:24:23.153Z"
     },
     {
       "id": "voice",
       "name": "VO Cartesia + analisis timing + timeline",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-27T00:23:21.559Z",
+          "text": "VO Cartesia dikunci: public/audio/vo.wav 91.67 dtk, 203 kata, vo-words.json + vo.timing.json. Film 95.0 dtk (outro 92–95)."
+        }
+      ],
+      "doneAt": "2026-11-27T00:23:21.559Z"
     },
     {
       "id": "animation",
       "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-27T00:24:20.917Z",
+          "text": "sync: adegan/still sudah ada"
+        },
+        {
+          "at": "2026-11-27T00:58:02.146Z",
+          "text": "s7: rig/Hud/BaghdadFilm/Root selesai, typecheck+smoke+preflight lolos, still per beat audit tanpa cap <4, cover-topic.png (3.5 dtk), docs/SHOTLIST.md, sfx.wav -28 LUFS 18 suara (G18c: VO -16 vs SFX -32 = 16 LU)."
+        }
+      ],
+      "doneAt": "2026-11-27T00:58:02.146Z",
+      "startedAt": "2026-11-27T00:20:29.987Z"
     },
     {
       "id": "draft",
@@ -135,7 +159,7 @@
       "maxSec": 86
     }
   },
-  "syncedAt": "2026-11-25T09:34:13.069Z",
+  "syncedAt": "2026-11-27T00:24:20.917Z",
   "handoverLog": [
     {
       "at": "2026-11-27T00:10:43.248Z",
@@ -157,9 +181,293 @@
         "draftScores": [],
         "finals": []
       }
+    },
+    {
+      "at": "2026-11-27T00:15:46.854Z",
+      "doing": "Sesi A selesai (commit 9e661968): style HISTORYMAP, engine Remotion + R3F 3D, meja peta Bagdad bundar di dua tepi Tigris, tanpa figur manusia (panji hitam Abbasiyah, tug merah Mongol, tenda, kuda, bangunan). Naskah 193 kata, 8 segmen s1–s8, estimasi 77–86 dtk. Docs ART_DIRECTION, SCRIPT, STORYBOARD, ASSET_MANIFEST, STYLE_DECISION terisi (Style: HISTORYMAP). cover-reference.png disalin; cover-topic.png BELUM (render di Sesi B dari frame hook). Preflight G1 BELUM (project/ belum ada). shortTitle \"Baghdad 1258\".",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/SCRIPT.md (teks VO saja)"
+      ],
+      "next": "Sesi B mulai tahap setup: scaffold project/ dari starter + kit historymap (basis kode EP19 project/src/scenes/khalid → src/scenes/baghdad), check-env, smoke, preflight; VO Cartesia dari teks VO SCRIPT.md (tulis \"Audira\"); adegan s1–s8 + cover-topic.png + SFX (TARGET_LUFS -28); contact sheet + THEME_CHECK + look.json (crush ≤2%, clipHi 0, diversity ≥30) + juri buta. Render final jangan: acc pengguna di Sesi C. Final nanti: npm run render:final --comp=/--out= dengan --vo dan --sfx, --gl=vulkan --encoder=nvenc, --jobs=3 bila GPU dibagi; render 3D lewat antrean audira_render_batch.",
+      "snapshot": {
+        "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP22",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T00:21:44.560Z",
+      "doing": "Sesi B: project/ discaffold dari EP19 (src/scenes/baghdad = salinan khalid, node_modules junction ke F:/AUDIRA-SKILL-MOTION/node_modules). Generate VO Cartesia dari audio/vo_tts.txt.",
+      "command": "audira_generate_voiceover scriptPath=audio/vo_tts.txt → project/public/audio/vo.wav",
+      "files": [
+        "audio/vo_tts.txt",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json"
+      ],
+      "next": "npm run vo, kunci timing; tulis BaghdadFilm + rig + cues; adegan s1–s8; SFX -28; contact sheet + juri.",
+      "snapshot": {
+        "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP22",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T00:23:16.446Z",
+      "doing": "Sesi B (s3) bagian 1 selesai: (5) project/ disalin dari EP19 (robocopy tanpa node_modules/out/public/models/public/audio); node_modules = junction ke F:/AUDIRA-SKILL-MOTION/node_modules; src/scenes/baghdad = salinan mentah src/scenes/khalid (BELUM diadaptasi: KhalidFilm.tsx, Mutah/Places/Swords/Book masih isi EP19; Root.tsx masih import khalid). public/models/polyfork kosong: salin GLB flat (<id>.glb) dari E:/ASET/ASSET-AUDIRA/downloads/glb/ atau EP19 project/public/models/polyfork (soldiers-tent-4bd5b9, campaign-map-scroll-d4a382, palm-tree-a307da ada di EP19 flat; animal/horse-base untuk RigModel). check-env/smoke/preflight BELUM dijalankan. (6) VO SELESAI dan DIKUNCI: audio/vo_tts.txt (203 kata, angka ditulis huruf, \"Audira\"), project/public/audio/vo.wav 91.67 dtk + vo-words.json (203 kata, field text/start/end) + vo.timing.json (npm run vo). Akhir kalimat terakhir tiap segmen: s1 selamat 10.51, s2 datang 23.45, s3 datang 33.95, s4 kota 45.40, s5 diketahui 59.64, s6 itu 68.38, s7 padam 79.66, s8 berikutnya 91.67. CUTS rencana: [0, 11.1, 23.9, 34.6, 45.9, 60.2, 68.8, 80.2, 95.0]; FILM_SECONDS 95.0, OUTRO_SECONDS 3 (outro 92–95, setelah VO). Kata kunci cue: 1258 0.7, Bagdad 3.0, jatuh 6.6, selamat 10.1, Audira 11.4, Abbasiyah 16.0, Al-Musta'sim 17.5, khalifah ke-37 18.8, timur 20.9, Mongol 22.2, Hulagu 22.8, pesan 24.5, tunduk 25.9, hancur 27.5, menolak 29.1, menolongnya 31.6, tidak pernah datang 33.3, Januari 35.0, mengepung 36.2, Tigris 37.3, Tanggul 38.8, banjir 40.7, Sepuluh Februari 41.6, menyerah 43.5, tiga ribu tokoh 44.4, Tiga hari 45.9, masuk 47.4, Sepekan 48.1, Masjid 49.5, istana 50.0, perpustakaan 50.9, rumah sakit 52.7, Korbannya 54.7, dua juta 57.0, Angka 58.1, Dua puluh Februari 60.2, dieksekusi 61.8, karpet 63.4, Lima abad 66.3, berakhir 67.7, Konon 68.8, menghitam 69.8, tinta buku 70.4, Michal Biran 72.0, gambaran sastra 73.3, Perpustakaan 74.6, dua tahun 76.6, Kota hancur 77.9, padam 79.4, Al-Quran 80.4, Ali Imran 81.9, ayat 140 82.4, pergilirkan 85.4, Kejayaan 87.4, runtuh 88.0, terpecah 89.1, Ikuti Audira 90.0.",
+      "files": [
+        "audio/vo_tts.txt",
+        "project/public/audio/vo.wav",
+        "project/public/audio/vo-words.json",
+        "project/public/audio/vo.timing.json",
+        "project/src/scenes/baghdad/",
+        "project/src/Root.tsx",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Tahap 7 di sesi baru: adaptasi src/scenes/baghdad (geo.ts → Irak–Persia: Bagdad 33.31N 44.36E, Hamadan 34.80N 48.51E, Tigris skematik; World.tsx peta tekstur baru, MOODS 8 scene, tanpa Laut Merah/Tengah; Hud.tsx CARDS/LABELS/MERGE baru (tiga puluh tujuh→37, seribu dua ratus lima puluh delapan→1258, tiga ribu→3.000, seratus empat puluh→140); rig.ts KEYS baru per STORYBOARD; BaghdadFilm.tsx director s1–s8 + City/Tigris/Letters/Carpet/Books/Smoke per ASSET_MANIFEST; Banner.tsx & Models.tsx (RigModel) dipakai ulang; hapus Mutah/Places/Swords/Book/KhalidFilm setelah tidak dipakai; Root.tsx comp BaghdadPreview/BaghdadFinal/BaghdadCover; AudiraSignature seed baghdad-1258 code QISSAH). Lalu check-env, smoke, preflight --episode=.., cover-topic.png, SFX TARGET_LUFS -28 + PYTHONUTF8=1 npm run sfx, tahap 8 contact sheet + audit:visual + THEME_CHECK + juri.",
+      "snapshot": {
+        "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP22",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T00:23:32.030Z",
+      "doing": "Sesi B s3 berhenti di batas token (219k): scaffold project/ + VO dikunci (lihat handover sebelumnya untuk cue lengkap).",
+      "files": [
+        "audio/vo_tts.txt",
+        "project/public/audio/vo-words.json",
+        "project/src/scenes/baghdad/",
+        "project/src/Root.tsx",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Sesi B lanjutan: tahap 7 (adaptasi src/scenes/baghdad, GLB, check-env/smoke/preflight, cover-topic, SFX -28) lalu tahap 8 (contact sheet, audit:visual, THEME_CHECK, juri buta maks 2 putaran).",
+      "snapshot": {
+        "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP22",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T00:30:07.549Z",
+      "doing": "Sesi B s4 berhenti di batas token (context guard). Selesai: GLB manifest disalin flat ke project/public/models/polyfork (+animal/horse-base), check-env lolos, file EP19 tak terpakai dihapus, timing.ts/cues.ts/geo.ts Bagdad ditulis. Rencana kode lengkap per scene + HUD + MERGE di draft/B_PLAN.md.",
+      "files": [
+        "draft/B_PLAN.md",
+        "project/src/scenes/baghdad/timing.ts",
+        "project/src/scenes/baghdad/cues.ts",
+        "project/src/scenes/baghdad/geo.ts",
+        "project/src/scenes/baghdad/World.tsx",
+        "project/src/scenes/baghdad/Hud.tsx",
+        "project/src/scenes/baghdad/rig.ts",
+        "project/src/Root.tsx",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md"
+      ],
+      "next": "Sesi B lanjutan (tahap 7): baca draft/B_PLAN.md, tulis World.tsx (tekstur Tigris/Eufrat/Teluk, MOODS 8), City.tsx, Siege.tsx, Trays.tsx, rig.ts KEYS, Hud.tsx, BaghdadFilm.tsx, Root.tsx; npm run typecheck, smoke, preflight; cover-topic; SFX TARGET_LUFS -28 + PYTHONUTF8=1 npm run sfx. Lalu tahap 8 (contact sheet, audit:visual, THEME_CHECK, juri buta maks 2 putaran). JANGAN render final.",
+      "snapshot": {
+        "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP22",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T00:36:23.932Z",
+      "doing": "Sesi B s5 berhenti di batas token (context guard 197k). Selesai di s5: World.tsx versi Bagdad (sungai, grid, Teluk Persia, Route merah, MOODS 8) dan City.tsx baru (kota bundar, pita Tigris, 4 landmark ruinable, panji istana). Keputusan koordinat + kamera dicatat di draft/B_PLAN.md bagian \"s5 progres\".",
+      "files": [
+        "draft/B_PLAN.md",
+        "project/src/scenes/baghdad/World.tsx",
+        "project/src/scenes/baghdad/City.tsx",
+        "project/src/scenes/baghdad/geo.ts",
+        "project/src/scenes/baghdad/cues.ts",
+        "project/src/scenes/baghdad/timing.ts",
+        "project/src/scenes/baghdad/Hud.tsx",
+        "project/src/scenes/baghdad/rig.ts",
+        "project/src/scenes/baghdad/Banner.tsx",
+        "project/src/scenes/baghdad/Models.tsx",
+        "project/src/Root.tsx",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md"
+      ],
+      "next": "Sesi B lanjutan (tahap 7): baca draft/B_PLAN.md (termasuk \"s5 progres\"), tulis Siege.tsx, Trays.tsx (Letters/Carpet/Dock), asap s5, rig.ts KEYS, Hud.tsx (CARDS/LABELS/MERGE), BaghdadFilm.tsx, Root.tsx; npm run typecheck, smoke, preflight; cover-topic; SFX TARGET_LUFS -28 + PYTHONUTF8=1 npm run sfx. Lalu tahap 8 (contact sheet, audit:visual, THEME_CHECK, juri buta maks 2 putaran). JANGAN render final.",
+      "snapshot": {
+        "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP22",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T00:43:26.681Z",
+      "doing": "Sesi B s6 berhenti di batas token (context guard 195k). Selesai: Siege.tsx (MongolLine, HamadanCamp+kuda, Pincers, Flood tanggul+banjir+tenda hitam, GateBanner, Smoke, DawnRing) dan Trays.tsx (Letters segel retak + HelpArrow, CarpetTray menggulung, Dock buku/air menghitam/rak menyala). Keduanya belum ditypecheck. Detail export + waktu di draft/B_PLAN.md bagian \"s6 progres\".",
+      "files": [
+        "draft/B_PLAN.md",
+        "project/src/scenes/baghdad/Siege.tsx",
+        "project/src/scenes/baghdad/Trays.tsx",
+        "project/src/scenes/baghdad/City.tsx",
+        "project/src/scenes/baghdad/World.tsx",
+        "project/src/scenes/baghdad/geo.ts",
+        "project/src/scenes/baghdad/cues.ts",
+        "project/src/scenes/baghdad/timing.ts",
+        "project/src/scenes/baghdad/Hud.tsx",
+        "project/src/scenes/baghdad/rig.ts",
+        "project/src/Root.tsx",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md"
+      ],
+      "next": "Sesi B lanjutan tahap 7: rig.ts KEYS baru (kamera rencana di B_PLAN \"s5 progres\"), Hud.tsx (CARDS/LABELS/MERGE dari B_PLAN), BaghdadFilm.tsx (rakit sesuai \"s6 progres\"), Root.tsx BaghdadPreview/Final/Cover; npm run typecheck, smoke, preflight; still per beat; cover-topic.png dari frame hook; SFX TARGET_LUFS -28 + PYTHONUTF8=1 npm run sfx. Lalu tahap 8 (contact sheet, audit:visual, THEME_CHECK, juri buta maks 2 putaran). JANGAN render final. VO dikunci (vo.wav 91.67 dtk).",
+      "snapshot": {
+        "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP22",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T00:52:26.051Z",
+      "doing": "Sesi B s7: rig.ts KEYS, Hud.tsx, BaghdadFilm.tsx, Root.tsx (BaghdadPreview/Final/Cover) selesai; typecheck bersih (kecuali starter scene-qa), smoke + preflight lolos. Sedang render still per beat BaghdadPreview.",
+      "command": "npm run stills -- out/beats 4s,17s,22.5s,30s,41s,51s,64s,72s,79.5s,86s BaghdadPreview",
+      "files": [
+        "project/src/scenes/baghdad/rig.ts",
+        "project/src/scenes/baghdad/Hud.tsx",
+        "project/src/scenes/baghdad/BaghdadFilm.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "Periksa still per beat (out/beats/_sheet.jpg), perbaiki, cover-topic.png dari hook, SFX TARGET_LUFS -28 + PYTHONUTF8=1 npm run sfx, lalu tahap 8 contact sheet + audit:visual + THEME_CHECK + juri.",
+      "snapshot": {
+        "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP22",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T00:56:32.424Z",
+      "doing": "Sesi B s7 selesai tahap 7 kode: rig.ts KEYS (kamera s1–s8 sesuai B_PLAN s5, s2 tetap memuat kota sampai 19 dtk, s3 d 4.0–4.4, s7 payoff d 3.7), Hud.tsx (CARDS 29 kartu, RuinStrip 2×2 ikon Landmark/Crown/BookOpen/Stethoscope dicoret per CUE, EraBar 750→1258 padam di berakhir, LABELS BAGDAD/S. TIGRIS/HAMADAN·PERSIA, MERGE 1258./ke-37./3.000/140:/10/20/2 juta/AUDIRA), BaghdadFilm.tsx, Root.tsx (BaghdadPreview/Final/Cover). typecheck bersih (kecuali starter scene-qa indirect, bukan kode episode), smoke + preflight lolos (No blockers). Still per beat out/beats + out/beats2: audit HISTORYMAP no aspect capped below 4 setelah perbaikan (lampu payoff Trays diredam, RuinStrip font 40). style/cover-topic.png dirender dari BaghdadCover frame 3.5 dtk. sfx/cues/auto.py TARGET_LUFS sudah -28.",
+      "files": [
+        "project/src/scenes/baghdad/rig.ts",
+        "project/src/scenes/baghdad/Hud.tsx",
+        "project/src/scenes/baghdad/BaghdadFilm.tsx",
+        "project/src/scenes/baghdad/Trays.tsx",
+        "project/src/Root.tsx",
+        "project/out/beats/_sheet.jpg",
+        "project/out/beats2/_sheet.jpg",
+        "style/cover-topic.png",
+        "draft/B_PLAN.md"
+      ],
+      "next": "Sesi B lanjutan (s8): PYTHONUTF8=1 npm run sfx (butuh SHOTLIST.md; bila tak ada, tulis dari docs/STORYBOARD kolom Audio + CUE di cues.ts), cek G18c. Lalu tahap 8: contact sheet 8 frame (npm run stills -- out/draft 4s,17s,30s,41s,51s,64s,72s,79.5s,86s BaghdadPreview → salin _sheet.jpg ke draft/contact-sheet.jpg), npm run audit:visual (crush ≤2%, clipHi 0, diversity ≥30; still terakhir diversity 73.9), klip 15–20 dtk 540×960 bagian s5 (45–62 dtk) untuk audit:camera, isi draft/THEME_CHECK.md (G22), record_score self lalu juri buta subagent (qa/jury.md), maks 2 putaran. Catatan visual: s3 tray surat agak gelap, payoff s7 masih sangat oranye — poles bila juri minta. JANGAN render final.",
+      "snapshot": {
+        "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HISTORYMAP",
+        "memoryEpisode": "sejarah-islam-EP22",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
     }
   ],
-  "session": 2,
+  "session": 7,
   "sessionLog": [
     {
       "no": 2,
@@ -167,18 +475,64 @@
       "phase": "A",
       "phaseNo": 2,
       "at": "2026-11-27T00:10:43.248Z"
+    },
+    {
+      "no": 3,
+      "title": "EP22 Baghdad 1258 · B1 (s3)",
+      "phase": "B",
+      "phaseNo": 1,
+      "at": "2026-11-27T00:15:46.853Z"
+    },
+    {
+      "no": 4,
+      "title": "EP22 Baghdad 1258 · B2 (s4)",
+      "phase": "B",
+      "phaseNo": 2,
+      "at": "2026-11-27T00:23:32.029Z"
+    },
+    {
+      "no": 5,
+      "title": "EP22 Baghdad 1258 · B3 (s5)",
+      "phase": "B",
+      "phaseNo": 3,
+      "at": "2026-11-27T00:30:07.549Z"
+    },
+    {
+      "no": 6,
+      "title": "EP22 Baghdad 1258 · B4 (s6)",
+      "phase": "B",
+      "phaseNo": 4,
+      "at": "2026-11-27T00:36:23.932Z"
+    },
+    {
+      "no": 7,
+      "title": "EP22 Baghdad 1258 · B5 (s7)",
+      "phase": "B",
+      "phaseNo": 5,
+      "at": "2026-11-27T00:43:26.680Z"
     }
   ],
   "handover": {
-    "at": "2026-11-27T00:10:43.248Z",
-    "doing": "Antrean QISSAH: EP22 belum diproduksi (riset ada, belum ada final). Sesi baru dibuat atas permintaan pengguna 2026-11-27.",
-    "next": "Sesi A (tahap 0–4): preflight, style+engine dipilih AI, cover topik, naskah+storyboard+manifest. Pelajaran EP17: TARGET_LUFS -28, <AudiraOutro code=QISSAH>, look.json crush ≤2%/diversity ≥30 dicek di sesi B.",
+    "at": "2026-11-27T00:56:32.424Z",
+    "doing": "Sesi B s7 selesai tahap 7 kode: rig.ts KEYS (kamera s1–s8 sesuai B_PLAN s5, s2 tetap memuat kota sampai 19 dtk, s3 d 4.0–4.4, s7 payoff d 3.7), Hud.tsx (CARDS 29 kartu, RuinStrip 2×2 ikon Landmark/Crown/BookOpen/Stethoscope dicoret per CUE, EraBar 750→1258 padam di berakhir, LABELS BAGDAD/S. TIGRIS/HAMADAN·PERSIA, MERGE 1258./ke-37./3.000/140:/10/20/2 juta/AUDIRA), BaghdadFilm.tsx, Root.tsx (BaghdadPreview/Final/Cover). typecheck bersih (kecuali starter scene-qa indirect, bukan kode episode), smoke + preflight lolos (No blockers). Still per beat out/beats + out/beats2: audit HISTORYMAP no aspect capped below 4 setelah perbaikan (lampu payoff Trays diredam, RuinStrip font 40). style/cover-topic.png dirender dari BaghdadCover frame 3.5 dtk. sfx/cues/auto.py TARGET_LUFS sudah -28.",
+    "files": [
+      "project/src/scenes/baghdad/rig.ts",
+      "project/src/scenes/baghdad/Hud.tsx",
+      "project/src/scenes/baghdad/BaghdadFilm.tsx",
+      "project/src/scenes/baghdad/Trays.tsx",
+      "project/src/Root.tsx",
+      "project/out/beats/_sheet.jpg",
+      "project/out/beats2/_sheet.jpg",
+      "style/cover-topic.png",
+      "draft/B_PLAN.md"
+    ],
+    "next": "Sesi B lanjutan (s8): PYTHONUTF8=1 npm run sfx (butuh SHOTLIST.md; bila tak ada, tulis dari docs/STORYBOARD kolom Audio + CUE di cues.ts), cek G18c. Lalu tahap 8: contact sheet 8 frame (npm run stills -- out/draft 4s,17s,30s,41s,51s,64s,72s,79.5s,86s BaghdadPreview → salin _sheet.jpg ke draft/contact-sheet.jpg), npm run audit:visual (crush ≤2%, clipHi 0, diversity ≥30; still terakhir diversity 73.9), klip 15–20 dtk 540×960 bagian s5 (45–62 dtk) untuk audit:camera, isi draft/THEME_CHECK.md (G22), record_score self lalu juri buta subagent (qa/jury.md), maks 2 putaran. Catatan visual: s3 tray surat agak gelap, payoff s7 masih sangat oranye — poles bila juri minta. JANGAN render final.",
     "snapshot": {
       "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
       "topic": "Sejarah peradaban Islam yang jarang diketahui",
-      "style": null,
+      "style": "HISTORYMAP",
       "memoryEpisode": "sejarah-islam-EP22",
-      "currentStage": "style",
+      "currentStage": "draft",
       "gates": {
         "final": {
           "approved": false,
