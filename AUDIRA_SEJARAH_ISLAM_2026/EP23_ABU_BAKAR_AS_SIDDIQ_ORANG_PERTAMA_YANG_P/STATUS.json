@@ -3,8 +3,8 @@
   "episode": "EP23_ABU_BAKAR_AS_SIDDIQ_ORANG_PERTAMA_YANG_P",
   "topic": "Sejarah peradaban Islam yang jarang diketahui",
   "createdAt": "2026-11-25T02:39:47.992Z",
-  "updatedAt": "2026-11-27T00:15:28.639Z",
-  "currentStage": "setup",
+  "updatedAt": "2026-11-27T00:23:35.374Z",
+  "currentStage": "animation",
   "sessionPhase": "B",
   "stages": [
     {
@@ -66,15 +66,27 @@
       "id": "setup",
       "name": "Scaffold folder + setup kit",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-27T00:23:23.461Z",
+          "text": "project/ disalin dari EP17 (tanpa node_modules/out; node_modules = junction ke AUDIRA_FAKTA_OLAHRAGA_2026/studio/node_modules). check-env + smoke lolos."
+        }
+      ],
+      "doneAt": "2026-11-27T00:23:23.461Z"
     },
     {
       "id": "voice",
       "name": "VO Cartesia + analisis timing + timeline",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-27T00:23:23.656Z",
+          "text": "VO Cartesia speed 1.1 dikunci: 89.815 dtk (205 kata, ~137 WPM; speed 1.0 = 105 dtk, 1.2 = 70 dtk). audio/vo.wav + vo-words.json + vo-lines.txt; salinan project/public/audio/vo.wav. timeline: project/src/scenes/abubakar/timeline.json (total 93.465, tail 3.65)."
+        }
+      ],
+      "doneAt": "2026-11-27T00:23:23.656Z"
     },
     {
       "id": "animation",
@@ -176,9 +188,67 @@
         "draftScores": [],
         "finals": []
       }
+    },
+    {
+      "at": "2026-11-27T00:20:07.271Z",
+      "doing": "Sesi B: project disalin dari EP17 (node_modules junction ke FAKTA_OLAHRAGA studio), check-env lolos; smoke + VO Cartesia",
+      "files": [
+        "project/",
+        "audio/vo-lines.txt",
+        "audio/vo.txt"
+      ],
+      "next": "npm run vo, build-timeline, scene code src/scenes/abubakar (9 set)",
+      "snapshot": {
+        "episode": "EP23_ABU_BAKAR_AS_SIDDIQ_ORANG_PERTAMA_YANG_P",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP23",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T00:23:35.374Z",
+      "doing": "Sesi B bagian 1 selesai (batas konteks): tahap 5 setup DONE (project/ dari EP17, node_modules junction, check-env+smoke lolos). Tahap 6 VO DONE: Cartesia speed 1.1 = 89.815 dtk (speed 1.0=105, 1.2=70; jangan generate ulang). audio/vo.wav, vo-words.json, vo-lines.txt; project/public/audio/vo.wav. src/scenes/abubakar/ = SALINAN MENTAH src/scenes/umar (EP17), hanya build-timeline.mjs + timeline.json sudah EP23 (parts hook 0.17-10.77, intro 11.10-21.15, benar 21.90-29.54, bukti 30.16-39.41, gua 40.20-55.14, pengakuan 55.48-67.46, penjelasan 68.05-77.52, payoff 78.36-89.82; total 93.465). Semua file lain di abubakar/ masih kode Umar (SetsNight/SetsDay/Overlay/camera/sprites/UmarFilm/mix.py) dan Root.tsx belum mendaftarkan komposisi EP23.",
+      "files": [
+        "project/src/scenes/abubakar/timeline.json",
+        "project/src/scenes/abubakar/build-timeline.mjs",
+        "audio/vo.wav",
+        "audio/vo-words.json",
+        "audio/vo-lines.txt",
+        "project/src/scenes/umar/ (referensi EP17)",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "style/STYLE_DECISION.md"
+      ],
+      "next": "Sesi B lanjutan (tahap 7–8): tulis ulang src/scenes/abubakar untuk 9 set STORYBOARD (c00 alun-alun Makkah malam, c01 peta Hijaz, c02 meja juru tulis + wadah gulungan cap AUDIRA, c03 jalan batu siang rantai Bilal, c04a lereng Tsur obor, c04b dalam gua, c05 masjid Madinah sore, c06 timbangan, c07 Madinah fajar); CUTS dari W()/WE() kata VO; HUD callout tiap angka (573 M, 3661, 3754, 622 M, 9:40, 3654, 632–634 M); Nabi = berkas cahaya; ganti nama UmarFilm->AbuBakarFilm, komposisi AbuBakarCover/Preview/Final di Root.tsx, seed signature sejarah-islam-ep23, CoverTitle EP23; outro AudiraOutro code QISSAH; render style/cover-topic.png dari frame hook; npm run sfx (TARGET_LUFS -28 di sfx/cues/auto.py, gap G18c >=12 LU); contact sheet + npm run audit:visual (crush <=2%, clipHi 0, diversity >=30) + audit rig per segmen; draft/THEME_CHECK.md; juri self + juri buta record_score (maks 2 putaran; >=3.5 setelah 2 = terima). Lalu handover newSession ke Sesi C.",
+      "snapshot": {
+        "episode": "EP23_ABU_BAKAR_AS_SIDDIQ_ORANG_PERTAMA_YANG_P",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP23",
+        "currentStage": "animation",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP23_ABU_BAKAR_AS_SIDDIQ_ORANG_PERTAMA_YANG_P/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
     }
   ],
-  "session": 3,
+  "session": 4,
   "sessionLog": [
     {
       "no": 2,
@@ -193,32 +263,43 @@
       "phase": "B",
       "phaseNo": 1,
       "at": "2026-11-27T00:15:28.639Z"
+    },
+    {
+      "no": 4,
+      "title": "EP23 Abu Bakar · B2 (s4)",
+      "phase": "B",
+      "phaseNo": 2,
+      "at": "2026-11-27T00:23:35.374Z"
     }
   ],
   "handover": {
-    "at": "2026-11-27T00:15:28.639Z",
-    "doing": "Sesi A selesai: preflight lolos (no blocker). Style HD2D, engine Remotion + R3F 3D (diorama + sprite piksel tanpa wajah), basis kode EP17 `scenes/umar` (EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN/project) → `src/scenes/abubakar`. Naskah final 205 kata, 8 chapter (c00 hook alun-alun Makkah, c01 peta Hijaz, c02 meja juru tulis Bukhari 3661, c03 rantai Bilal siang, c04a lereng Tsur obor + c04b dalam gua, c05 masjid Madinah menangis, c06 timbangan \"tanpa bertanya? tidak tercatat\", c07 Madinah fajar khalifah 632–634), estimasi 82–91 dtk. Nabi = berkas cahaya, tidak pernah figur. Brand in-scene: cap AUDIRA pada wadah gulungan c02. cover-reference.png ada; cover-topic.png BELUM (render frame hook di Sesi B setelah scaffold).",
+    "at": "2026-11-27T00:23:35.374Z",
+    "doing": "Sesi B bagian 1 selesai (batas konteks): tahap 5 setup DONE (project/ dari EP17, node_modules junction, check-env+smoke lolos). Tahap 6 VO DONE: Cartesia speed 1.1 = 89.815 dtk (speed 1.0=105, 1.2=70; jangan generate ulang). audio/vo.wav, vo-words.json, vo-lines.txt; project/public/audio/vo.wav. src/scenes/abubakar/ = SALINAN MENTAH src/scenes/umar (EP17), hanya build-timeline.mjs + timeline.json sudah EP23 (parts hook 0.17-10.77, intro 11.10-21.15, benar 21.90-29.54, bukti 30.16-39.41, gua 40.20-55.14, pengakuan 55.48-67.46, penjelasan 68.05-77.52, payoff 78.36-89.82; total 93.465). Semua file lain di abubakar/ masih kode Umar (SetsNight/SetsDay/Overlay/camera/sprites/UmarFilm/mix.py) dan Root.tsx belum mendaftarkan komposisi EP23.",
     "files": [
-      "style/STYLE_DECISION.md",
+      "project/src/scenes/abubakar/timeline.json",
+      "project/src/scenes/abubakar/build-timeline.mjs",
+      "audio/vo.wav",
+      "audio/vo-words.json",
+      "audio/vo-lines.txt",
+      "project/src/scenes/umar/ (referensi EP17)",
       "docs/STORYBOARD.md",
       "docs/ASSET_MANIFEST.md",
-      "docs/SCRIPT.md",
-      "docs/ART_DIRECTION.md"
+      "style/STYLE_DECISION.md"
     ],
-    "next": "Sesi B: mulai tahap setup (scaffold project, salin starter dari EP17 project tanpa node_modules/out, check-env + smoke), render cover-topic.png dari frame hook, lalu VO Cartesia (teks VO docs/SCRIPT.md, tulis \"Audira\"), npm run vo, scene code 9 set, npm run sfx (TARGET_LUFS -28), contact sheet + audit:visual (crush ≤2%, clipHi 0, diversity ≥30, rig audit per segmen), THEME_CHECK, juri buta. Outro <AudiraOutro code=\"QISSAH\" />.",
+    "next": "Sesi B lanjutan (tahap 7–8): tulis ulang src/scenes/abubakar untuk 9 set STORYBOARD (c00 alun-alun Makkah malam, c01 peta Hijaz, c02 meja juru tulis + wadah gulungan cap AUDIRA, c03 jalan batu siang rantai Bilal, c04a lereng Tsur obor, c04b dalam gua, c05 masjid Madinah sore, c06 timbangan, c07 Madinah fajar); CUTS dari W()/WE() kata VO; HUD callout tiap angka (573 M, 3661, 3754, 622 M, 9:40, 3654, 632–634 M); Nabi = berkas cahaya; ganti nama UmarFilm->AbuBakarFilm, komposisi AbuBakarCover/Preview/Final di Root.tsx, seed signature sejarah-islam-ep23, CoverTitle EP23; outro AudiraOutro code QISSAH; render style/cover-topic.png dari frame hook; npm run sfx (TARGET_LUFS -28 di sfx/cues/auto.py, gap G18c >=12 LU); contact sheet + npm run audit:visual (crush <=2%, clipHi 0, diversity >=30) + audit rig per segmen; draft/THEME_CHECK.md; juri self + juri buta record_score (maks 2 putaran; >=3.5 setelah 2 = terima). Lalu handover newSession ke Sesi C.",
     "snapshot": {
       "episode": "EP23_ABU_BAKAR_AS_SIDDIQ_ORANG_PERTAMA_YANG_P",
       "topic": "Sejarah peradaban Islam yang jarang diketahui",
       "style": "HD2D",
       "memoryEpisode": "sejarah-islam-EP23",
-      "currentStage": "setup",
+      "currentStage": "animation",
       "gates": {
         "final": {
           "approved": false,
           "status": "pending"
         }
       },
-      "voPath": null,
+      "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP23_ABU_BAKAR_AS_SIDDIQ_ORANG_PERTAMA_YANG_P/audio/vo.wav",
       "draftScores": [],
       "finals": []
     }
