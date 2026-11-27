@@ -93,9 +93,9 @@ const RuinStrip: React.FC<{ t: number }> = ({ t }) => {
           const Icon = r.icon;
           return (
             <div key={i} style={{ display: "flex", alignItems: "center", gap: 16, position: "relative", opacity: Math.max(0.3, clamp01((t - r.at + 0.25) / 0.2)), transform: `scale(${0.85 + 0.15 * pop})` }}>
-              <Icon size={76} strokeWidth={1.7} color={strike > 0.5 ? "rgba(244,235,214,0.5)" : GOLD} />
-              <div style={{ color: strike > 0.5 ? "rgba(244,235,214,0.7)" : IVORY, fontSize: 40, fontWeight: 800, letterSpacing: 1 }}>{r.name}</div>
-              <div style={{ position: "absolute", left: 0, top: 36, height: 8, width: `${strike * 100}%`,background: RED, borderRadius: 4 }} />
+              <Icon size={84} strokeWidth={2} color={strike > 0.5 ? "rgba(244,235,214,0.85)" : GOLD} />
+              <div style={{ color: IVORY, fontSize: 46, fontWeight: 800, letterSpacing: 0, whiteSpace: "nowrap" }}>{r.name}</div>
+              <div style={{ position: "absolute", left: 0, top: 40, height: 8, width: `${strike * 100}%`,background: RED, borderRadius: 4 }} />
             </div>
           );
         })}

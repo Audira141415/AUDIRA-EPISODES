@@ -3,9 +3,9 @@
   "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
   "topic": "Sejarah peradaban Islam yang jarang diketahui",
   "createdAt": "2026-11-25T02:39:47.471Z",
-  "updatedAt": "2026-11-26T23:30:24.986Z",
-  "currentStage": "setup",
-  "sessionPhase": "A",
+  "updatedAt": "2026-11-27T01:57:56.786Z",
+  "currentStage": "review",
+  "sessionPhase": "C",
   "stages": [
     {
       "id": "context",
@@ -70,45 +70,93 @@
       "id": "setup",
       "name": "Scaffold folder + setup kit",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-26T23:35:07.224Z",
+          "text": "sync: proyek render sudah disiapkan"
+        }
+      ],
+      "doneAt": "2026-11-26T14:13:08.000Z",
+      "startedAt": "2026-11-26T14:13:08.000Z"
     },
     {
       "id": "voice",
       "name": "VO Cartesia + analisis timing + timeline",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-26T23:34:19.849Z",
+          "text": "VO Cartesia 88.1 dtk (208 kata, voice 04b567df), audio/vo.wav + vo-words.json + vo-lines.txt; salinan project/public/audio/vo.wav; timeline project/src/scenes/yusuf/timeline.json (voEnd 88.097, total 91.747; parts hook 0.26–6.86, intro 7.49–14.33, mimpi 15.17–24.72, gudang 25.25–35.64, ungkap 36.27–50.16, maaf 50.68–61.87, tunggu 62.17–74.77, payoff 75.50–88.10). \"Audira\" di 12.26 dan 87.80."
+        }
+      ],
+      "doneAt": "2026-11-26T23:34:19.849Z"
     },
     {
       "id": "animation",
       "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-26T23:35:07.224Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-26T23:33:48.833Z",
+      "startedAt": "2026-11-26T23:33:48.833Z"
     },
     {
       "id": "draft",
       "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-27T00:24:20.860Z",
+          "text": "sync: look.json PASS"
+        },
+        {
+          "at": "2026-11-27T00:41:21.397Z",
+          "text": "R2 juri buta LOLOS 4.17 (L4 M4 D4 C4 Mo5 R4; R1 3.67). Hook/gerbang/gudang dipose ulang ke pita fokus; rig 9 segmen 5/5; THEME_CHECK 11 baris ya; cover dirender ulang."
+        }
+      ],
+      "doneAt": "2026-11-27T00:41:21.397Z",
+      "startedAt": "2026-11-27T00:22:34.442Z"
     },
     {
       "id": "final",
       "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
       "gate": true,
-      "status": "pending",
-      "approved": false,
-      "approvedAt": null,
-      "notes": []
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-27T00:46:48.636Z",
+      "notes": [
+        {
+          "at": "2026-11-27T00:46:48.636Z",
+          "text": "Acc pengguna 2026-11-27: \"Gas, render final\" (draf R2 juri 4.17)."
+        },
+        {
+          "at": "2026-11-27T01:57:13.987Z",
+          "text": "FINAL_EP20_YUSUF_MEMAAFKAN.mp4 1080x1920@60 91.75 dtk, -13.7 LUFS TP -1.8, G18c 15.9 LU, metadata+signature OK, blackdetect 0. record_score final self 4.17."
+        }
+      ],
+      "startedAt": "2026-11-27T00:46:48.636Z",
+      "doneAt": "2026-11-27T01:57:13.987Z"
     },
     {
       "id": "delivery",
       "name": "Caption 6 platform + jadwal upload + label AI (validator ok) + NOTES.md + tampil di chat + jadwalkan review (3 scheduled task)",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-27T01:57:51.051Z",
+          "text": "SOCIAL_CAPTIONS.md lolos validator (6 platform, jadwal Senin 14 Des 2026 19.00 WIB, label AI). NOTES.md + QA_REPORT.md. Lesson HD2D + GLOBAL. Scheduled task review-nabi-yusuf-memaafkan-24h/72h/7d. File perantara dihapus."
+        }
+      ],
+      "doneAt": "2026-11-27T01:57:51.051Z"
     },
     {
       "id": "review",
@@ -130,7 +178,7 @@
       "maxSec": 92
     }
   },
-  "syncedAt": "2026-11-25T09:34:13.035Z",
+  "syncedAt": "2026-11-27T00:24:20.861Z",
   "handoverLog": [
     {
       "at": "2026-11-26T18:53:30.537Z",
@@ -152,36 +200,544 @@
         "draftScores": [],
         "finals": []
       }
+    },
+    {
+      "at": "2026-11-26T23:30:46.782Z",
+      "doing": "Sesi A selesai (commit 7124bfb1): style HD2D, engine Remotion + R3F 3D (diorama tilt-shift + sprite piksel berkerudung tanpa wajah), basis kode EP17 scenes/umar → src/scenes/yusuf. Naskah final 208 kata, 8 chapter, estimasi 83–92 dtk. Storyboard 8 set: aula istana malam (hook), gerbang kota Nil (papan AUDIRA), atap Kanaan malam bintang, gudang gandum obor (piala goblet-87c3ba, karung grain-sack-401d96 cap AUDIRA), aula siang berkas cahaya (AKU YUSUF), aula low-angle + pembawa gamis, meja kitab lampu minyak (±40 tahun = riwayat tafsir), bukit fajar + kartu Bukhari 3374. cover-reference.png disalin; cover-topic.png BELUM, render di Sesi B setelah scaffold (frame hook).",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/SCRIPT.md",
+        "docs/ART_DIRECTION.md"
+      ],
+      "next": "Sesi B: mulai tahap setup (scaffold Remotion, salin basis EP17 HD2D), render cover-topic.png, VO Cartesia dari docs/SCRIPT.md (teks pakai \"Audira\"), visual + SFX, contact sheet + juri. Pelajaran EP17: stem SFX TARGET_LUFS = -28 (G18c gap ≥12 LU), outro <AudiraOutro code=\"QISSAH\" /> + node scripts/channel.mjs --check, look.json crush ≤2% / clipHi 0 / diversity ≥30, separasi suhu cahaya tiap set malam sebelum juri, fill dari arah kamera untuk punggung sprite. Antrean QISSAH setelah EP20: EP21 Ratu Bilqis, EP22 Tartar Baghdad, EP23 Abu Bakar.",
+      "snapshot": {
+        "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP20",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T23:33:05.446Z",
+      "doing": "Sesi B: scaffold project/ (salinan EP17 tanpa node_modules/out/audio, junction node_modules ke FAKTA_OLAHRAGA studio). Sedang generate VO Cartesia dari audio/vo.txt.",
+      "files": [
+        "project/",
+        "audio/vo-lines.txt",
+        "audio/vo.txt"
+      ],
+      "next": "build timeline (adaptasi build-timeline.mjs ke src/scenes/yusuf), tulis scene yusuf 8 set, render cover-topic, SFX, contact sheet, juri",
+      "snapshot": {
+        "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP20",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T23:34:38.915Z",
+      "doing": "Sesi B (s3) terpotong context guard. SELESAI: project/ disalin dari EP17 (tanpa node_modules/out/audio), node_modules = junction ke F:/AUDIRA-EPISODES/AUDIRA_FAKTA_OLAHRAGA_2026/studio/node_modules; folder scene src/scenes/umar SUDAH di-rename ke src/scenes/yusuf, tapi ISI FILE MASIH KODE EP17 UMAR (UmarFilm.tsx, SetsNight.tsx, SetsDay.tsx, Overlay.tsx, camera.ts, sprites.ts, world.tsx, pixel.tsx, time.ts, mix.py) dan src/Root.tsx masih import ./scenes/umar/UmarFilm.tsx (akan error). VO tahap 6 SELESAI: audio/vo.wav 88.1 dtk + vo-words.json + vo-lines.txt (8 paragraf = 8 part), salinan project/public/audio/vo.wav; build-timeline.mjs sudah diadaptasi (PARTS hook,intro,mimpi,gudang,ungkap,maaf,tunggu,payoff) dan timeline.json EP20 sudah dibangun (voEnd 88.097, total 91.747; hook 0.26–6.86, intro 7.49–14.33, mimpi 15.17–24.72, gudang 25.25–35.64, ungkap 36.27–50.16, maaf 50.68–61.87, tunggu 62.17–74.77, payoff 75.50–88.10). Polyfork GLB lokal di public/models/polyfork: grain-sack-401d96, gold-balance-scale-66497b, clay-storage-pot-626452, bread-loaf, campfire, canvas tent (goblet-87c3ba dan looted-gilded-throne-008fc3 BELUM ada, cari/salin via audira_search_assets). Pola EP17 yang dipakai ulang: world.tsx (Sky, Ground, Scatter, Fire, OilLamp, Moon, textTexture, Walker, Backer), pixel.tsx (PixelSprite voxel), camera.ts (CUTS di jeda VO via W()/WE(), SEGMENTS pose H/M, veilAt), Overlay.tsx (Pins diproyeksikan, Hud card/quote, Captions karaoke CAP per line l01..l25, CoverTitle), film = satu set per segmen + Finish DOCUMENTARY_WARM + fill pointLight dari kamera + AudiraOutro code QISSAH + AudiraSignature seed sejarah-islam-ep20 handle @AUDIRAQISSAH.",
+      "files": [
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "style/STYLE_DECISION.md",
+        "audio/vo-lines.txt",
+        "project/src/scenes/yusuf/",
+        "project/src/Root.tsx",
+        "project/src/scenes/yusuf/timeline.json"
+      ],
+      "next": "Sesi B lanjutan: (1) tulis ulang src/scenes/yusuf jadi YusufFilm.tsx dengan 8 set sesuai docs/STORYBOARD.md: aula istana malam dari belakang singgasana (hook, sebelas sprite + bayangan panjang), gerbang kota bata lumpur tepi Nil dengan papan AUDIRA + unta (intro, kartu QS 12:58), atap Kanaan malam bintang 11 bintang + matahari + bulan, ayah+anak dari belakang (mimpi), gudang gandum obor + timbangan + karung GLB grain-sack cap AUDIRA + piala goblet (gudang, QS 12:77), aula siang berkas cahaya jendela atap + kinetik AKU · YUSUF (ungkap, QS 12:89–90), aula low-angle bersimpuh + gamis + pembawa berlari ke kafilah (maaf, QS 12:92), meja kitab lampu minyak + jam pasir + dua kartu Quran vs Ibnu Katsir + ±40 TAHUN RIWAYAT TAFSIR BUKAN HADIS SHAHIH (tunggu), bukit fajar rombongan + SHAHIH BUKHARI 3374 + SABAR·TAKWA·MAAF (payoff). Adab: semua sprite berkerudung tanpa wajah, dari belakang/samping; Nabi Muhammad tidak digambar. Update Root.tsx (komposisi YusufFilm + YusufCoverFrame), CoverTitle \"SEJARAH ISLAM · EP20\". (2) npm run typecheck + smoke, render style/cover-topic.png (frame hook), tutup stage setup. (3) sfx: TARGET_LUFS -28 di sfx/cues/auto.py, npm run sfx. (4) tahap 8: contact sheet 8 frame (tiap set 1 frame), npm run audit:visual (crush ≤2%, clipHi 0, diversity ≥30), audit:camera, rig per segmen, draft/THEME_CHECK.md (G22), record_score self lalu juri buta subagen (qa/jury.md), maks 2 putaran, ≥3.5 terbaik diterima. (5) Akhir B: handover newSession true → Sesi C (gerbang acc render final). Pelajaran EP17: separasi suhu cahaya tiap set malam, fill dari arah kamera untuk punggung sprite, jangan karung prosedural, node scripts/channel.mjs --check.",
+      "snapshot": {
+        "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP20",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T23:39:43.913Z",
+      "doing": "Sesi B s4 (terpotong context guard di tengah tahap 7, scene code). SELESAI s4: (a) GLB disalin ke project/public/models/polyfork: goblet-87c3ba, looted-gilded-throne-008fc3, an-hourglass-with-sand-ec9f11, standing-brazier-c9e4ee, chained-book-lectern-381597. (b) src/scenes/yusuf/sprites.ts DITULIS ULANG untuk EP20: YUSUF_SEATED, YUSUF_STAND, YUSUF_REACH, YUSUF_FRONT_REACH (kerudung penuh, tanpa wajah), BENYAMIN_STAND/BENYAMIN_FRONT, BRO_FRONT[5]/BRO_BACK[5]/BRO_WALK_A[5]/BRO_WALK_B[5]/BRO_KNEEL[5], YAQUB_STAND, CHILD_STAND, RUNNER_A/B (profil bawa gamis putih), OFFICER_BACK, CAMEL_GRAIN. Konvensi: peta sprite = tampak belakang dilihat dari +z; kamera SELALU di sisi +z; figur yang menghadap kamera pakai peta HOOD_FRONT (kerudung + bayangan dalam, tanpa mata/mulut). (c) src/scenes/yusuf/SetsHall.tsx BARU: ashlarTex(), Column papirus, Brazier (GLB + Fire), HallShell (lantai ashlar, 10 tiang, dinding, plakat AUDIRA di atas pintu, karpet merah), HallNightSet (hook: singgasana di HALL.throneFar z+0.95 menghadap -z, Yusuf duduk dari belakang, 11 saudara di z -1.55 BRO_SLOTS, Spot dingin dari pintu belakang untuk bayangan panjang), HallDaySet (ungkap: berkas cahaya atap + debu, saudara mundur di W(terkejut), Benyamin pindah ke sisi Yusuf di W(saudaraku); revealState), HallLowSet (maaf: singgasana HALL.throneNear z -1.55 menghadap +z, Yusuf YUSUF_FRONT_REACH, 10 saudara bersimpuh dari belakang, yang depan berdiri di W(semoga); gamis terlipat di bangku; forgiveState), StoreSet (gudang: karung GLB, StampSack GLB + decal AUDIRA, timbangan GLB, karung kecil Benyamin terbuka di W(dituduh) dan piala goblet naik; storeState; Yusuf depan-kiri dari belakang). (d) world.tsx + komponen Spot (spotLight dengan target Object3D ter-mount). BELUM typecheck. Orientasi GLB singgasana (rotasi 0 vs PI) belum dicek visual.",
+      "files": [
+        "project/src/scenes/yusuf/sprites.ts",
+        "project/src/scenes/yusuf/SetsHall.tsx",
+        "project/src/scenes/yusuf/world.tsx",
+        "project/src/scenes/yusuf/pixel.tsx",
+        "project/src/scenes/yusuf/time.ts",
+        "project/src/scenes/yusuf/UmarFilm.tsx (pola film, akan diganti)",
+        "project/src/scenes/yusuf/camera.ts (pola EP17, akan ditulis ulang)",
+        "project/src/scenes/yusuf/Overlay.tsx (pola EP17, akan ditulis ulang)",
+        "project/src/Root.tsx",
+        "docs/STORYBOARD.md",
+        "style/STYLE_DECISION.md",
+        "docs/ASSET_MANIFEST.md"
+      ],
+      "next": "Sesi B lanjutan (s5), tahap 7 lalu 8. (1) Tulis src/scenes/yusuf/SetsOut.tsx: GateSet (gerbang bata lumpur + menara + papan AUDIRA, Nil di samping, kurma; rombongan BRO_WALK + CAMEL_GRAIN berjalan masuk dari +z ke -z), RoofSet (atap Kanaan malam, 11 bintang menyala satu per satu dari W(sebelas) sampai W(bintang), matahari + bulan miring menunduk di W(bersujud), YAQUB_STAND + CHILD_STAND dari belakang, OilLamp hangat vs bulan biru), RoadSet (jalan gurun senja, RUNNER_A/B berlari ke kafilah CAMEL_GRAIN, l18), BookSet (meja kitab, buku terbuka, OilLamp, GLB an-hourglass-with-sand-ec9f11 berputar 180° di W(menunggu), chained-book-lectern-381597 opsional), HillSet (bukit fajar, kota Mesir di bawah, piramida jauh, rombongan BRO_WALK + YAQUB berjalan ke matahari terbit). (2) camera.ts baru: SetId = hallNight|gate|roof|store|hallDay|hallLow|road|book|hill; CUTS di jeda antar-baris pakai batas line timeline (helper LS(id)=line.start, LE(id)=line.end): C1 mid(LE l04,LS l05) hallNight→gate; C2 l06/l07 gate→roof; C3 l08/l09 roof→store; C4 l11/l12 store→hallDay; C5 l15/l16 hallDay→hallLow; C6 l17/l18 hallLow→road; C7 l18/l19 road→book; C8 l22/l23 book→hill. Pose H/M per segmen, kamera selalu z positif relatif figur, tiap segmen bergerak (rig audit). COVER = pose awal hallNight (dolly-in dari balik singgasana melewati bahu Yusuf ke barisan sebelas). (3) Overlay.tsx tulis ulang: PINS per set baru, HUD (QS 12:58 MEREKA TIDAK MENGENALNYA; 11 BINTANG penghitung; YAQUB: JANGAN CERITAKAN; QS 12:77 DISEMBUNYIKAN DALAM HATI; QS 12:89 kartu pertanyaan; kinetik AKU · YUSUF; QS 12:92 TIDAK ADA CERCAAN; dua kartu QURAN: TIDAK MENYEBUT ALASAN vs IBNU KATSIR: ATAS PERINTAH ALLAH; ±40 TAHUN + RIWAYAT TAFSIR, BUKAN HADIS SHAHIH; SHAHIH BUKHARI 3374; SABAR · TAKWA · MAAF), CAP = {} (default 4 kata), CoverTitle \"SEJARAH ISLAM · EP20\" / \"YUSUF MEMAAFKAN\" + chip \"IA MENGENAL MEREKA\". Vignette/scrim per set. (4) YusufFilm.tsx (salin pola UmarFilm.tsx: LIGHT per SetId, SET_COMPONENT, Finish DOCUMENTARY_WARM, fill pointLight dari kamera 0.9, AudiraOutro code QISSAH, AudiraSignature seed sejarah-islam-ep20 handle @AUDIRAQISSAH, export YusufFilm/YusufCoverFrame/YUSUF_COVER_SECONDS/YUSUF_TOTAL), hapus UmarFilm.tsx/SetsNight.tsx/SetsDay.tsx/mix.py lama setelah tak dipakai; Root.tsx baris 7 + 89–91 ganti ke YusufCover/YusufPreview/YusufFinal. (5) npm run typecheck, smoke (stills komposisi YusufPreview), cek orientasi singgasana, render style/cover-topic.png, tutup stage setup + animation. (6) TARGET_LUFS = -28 di sfx/cues/auto.py, npm run sfx. (7) Tahap 8: contact sheet 8 frame (set berbeda), audit:visual (crush ≤2%, clipHi 0, diversity ≥30), audit:camera, audit:rig per segmen, draft/THEME_CHECK.md (G22), record_score self lalu juri buta subagen (qa/jury.md), maks 2 putaran, ≥3.5 terbaik diterima. (8) Akhir B: handover newSession true → Sesi C.",
+      "snapshot": {
+        "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP20",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T23:45:33.509Z",
+      "doing": "Sesi B s5 (tahap 7 scene code). SELESAI s5: (a) time.ts + helper LS(id)/LE(id)/WL(lineId,word). (b) SetsOut.tsx BARU (belum typecheck): GateSet{t,f,c0,c1} (gerbang bata+menara+papan AUDIRA GATE.board, Nil kanan, 8 Walker saudara z 2.3→-2.4, 2 unta CAMEL_GRAIN x 1.9→0.35 z -0.75), RoofSet (atap slab top y0, kota bawah y -1.6, 11 PixelStar via starsLit(t), SunDisc+Moon muncul W(matahari)/W(bulan), turun di W(bersujud) dreamState; ROOF.yaqub [-0.13,0,-0.25], child [0.14,0,-0.2]; OilLamp + Spot biru), RoadSet{c0,c1} (runnerAt(t,c0,c1) x -1.5→0.9 z 0.1, kafilah x 1.55–2.25), BookSet (meja, kitab BOOK.book [0,0.53,0.05], jam pasir BOOK.glass [0.5,0.52,-0.12] flip glassFlip(t) di W(menunggu) & W(sekitar), lectern GLB, jendela biru), HillSet{c0} (bukit cylinder top y0, kota+sungai+piramida y -1.6, matahari z -30, keluarga Walker z 0.6→-1.5 sampai OUTRO_AT+1). Timeline: CUTS = C1 7.175 (l04/l05), C2 14.75, C3 24.985, C4 35.95, C5 50.42, C6 58.21, C7 62.02, C8 75.135; TOTAL 91.747, voEnd 88.097.",
+      "files": [
+        "project/src/scenes/yusuf/SetsOut.tsx",
+        "project/src/scenes/yusuf/time.ts",
+        "project/src/scenes/yusuf/SetsHall.tsx",
+        "project/src/scenes/yusuf/world.tsx",
+        "project/src/scenes/yusuf/sprites.ts",
+        "project/src/scenes/yusuf/camera.ts",
+        "project/src/scenes/yusuf/Overlay.tsx",
+        "project/src/scenes/yusuf/UmarFilm.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "Sisa Sesi B: (2) camera.ts baru, SetId hallNight|gate|roof|store|hallDay|hallLow|road|book|hill, CUTS=mid(LE,LS) pasangan l04/l05,l06/l07,l08/l09,l11/l12,l15/l16,l17/l18,l18/l19,l22/l23. Rencana pose (H=hold, M=pass): hallNight H(0,[0.35,1.05,2.6]->[0,0.45,-1.2],36)=COVER, M(W(berdiri),[0.3,0.95,1.8]->[0,0.4,-1.4],34), H(C1,[0.32,1.0,1.5]->[0,0.38,-1.55],32) (cek singgasana menutupi Yusuf; kalau ya naikkan y / balik rotasi). gate H(C1,[0.4,2.6,3.4]->[0,1.1,-1.5],38), M(W(ayat),[0.6,1.4,2.6]->[0,0.6,-1.2],36), M(W(audira)-0.3,[0.3,1.3,2.0]->[0,1.25,-1.5],34), H(C2,[0.2,1.2,1.6]->[0,1.1,-1.6],34). roof H(C2,[0,1.6,2.0]->[0,2.6,-5],38), M(W(bersujud),[0,1.2,1.8]->[0,1.6,-4],36), H(W(ayahnya),[0.1,0.85,1.3]->[0,0.55,-1],34), H(C3,[0.08,0.75,0.95]->[0,0.5,-1],33). store H(C3,[1.6,1.2,2.4]->[0.4,0.35,-0.6],36), M(W(langsung),[0.9,1.0,2.0]->[-0.4,0.4,0.2],34), M(W(dituduh),[0.85,0.75,1.1]->[0.62,0.35,0.15],32), H(W(menyembunyikan),[-0.3,1.05,2.1]->[-0.9,0.45,0.6],34), H(C4,[-0.4,1.0,1.9]->[-0.95,0.45,0.6],34). hallDay (samping, x 1.15 di dalam kolom, hindari singgasana z1.25) H(C4,[1.15,1.35,2.6]->[-0.1,0.4,-1.4],36), M(W(bertanya),[1.15,1.1,1.9]->[-0.1,0.4,-1.0],34), M(W(terkejut),[1.1,0.95,1.5]->[0,0.4,-0.6],34), H(W(aku)-0.5,[1.05,0.85,1.25]->[0,0.5,0.55],32,stay0.4), M(W(saudaraku)+0.3,[1.1,0.95,1.6]->[0.15,0.45,0.2],33), H(C5,[1.15,1.0,1.8]->[0.15,0.45,0.1],33). hallLow H(C5,[0,0.3,1.9]->[0,0.45,-1],36), M(W(cercaan),[0.1,0.28,1.4]->[0,0.5,-1],34), H(W(mengampuni),[0.05,0.35,1.15]->[0,0.55,-1],32), H(C6,[0,0.4,1.05]->[0,0.55,-1],32). road H(C6,[-1.2,0.6,2.0]->[-1.2,0.35,0],34), H(C7,[0.6,0.65,2.0]->[0.7,0.35,0],34). book H(C7,[0,1.6,0.6]->[0,0.5,-0.05],38), M(W(alasannya),[0.3,1.2,0.8]->[0.35,0.55,-0.1],34), H(W(katsir),[0.4,0.95,0.95]->[0.45,0.6,-0.1],32), M(W(riwayat),[-0.1,1.0,1.2]->[0.05,0.55,-0.2],34), H(C8,[-0.15,1.1,1.4]->[0,0.55,-0.25],35). hill H(C8,[0.25,0.75,1.6]->[0,0.45,-0.4],34), M(W(mulia),[0.3,1.2,2.4]->[0,0.5,-1.4],36), H(W(sabar),[0.2,1.7,3.0]->[0,0.6,-2.5],38), H(TOTAL,[0.1,2.2,3.6]->[0,0.7,-4],40). Fungsi rig/camAt/veilAt/segmentAt/setAt salin dari camera.ts EP17. (3) Overlay.tsx: import dari SetsHall (HALL,BRO_SLOTS,STORE,storeState) + SetsOut (GATE,ROOF,runnerAt,BOOK,starsLit); kata ganda pakai WL(lineId,word) (mis. yusuf di l15, ayat l17, al-quran l20, shahih l23, maaf l24). HUD: hook card IA MENGENAL MEREKA (W(ia)) lalu TAPI IA DIAM (W(tapi)..C1); quote QS YUSUF 12:58 MEREKA TIDAK MENGENALNYA (W(menurut)..LS l06); card MIMPI YUSUF n BINTANG (starsLit) + MATAHARI & BULAN; quote PESAN AYAHNYA, YAQUB: JANGAN CERITAKAN KEPADA SAUDARAMU (W(melarang)..C3); card PULUHAN TAHUN KEMUDIAN / MINTA BAHAN MAKANAN; quote QS 12:77 DISEMBUNYIKAN DALAM HATI (WL l11 al-quran..C4); quote QS 12:89 TAHUKAH KALIAN APA YANG TELAH KALIAN PERBUAT? (W(bertanya)..W(terkejut)); kinetik AKU · YUSUF besar tengah + kicker QS 12:90, & INI SAUDARAKU (..C5); card TIDAK ADA AMARAH (l16); quote QS YUSUF 12:92 TIDAK ADA CERCAAN TERHADAP KALIAN (WL l17 ayat..C6); card DITITIPKAN BAJU YUSUF (W(menitipkan)..C7); dua card QURAN: TIDAK MENYEBUT ALASAN (WL l20 al-quran) + IBNU KATSIR: ATAS PERINTAH ALLAH (+ALLAH LEBIH TAHU) sampai LS l22; card ±40 TAHUN + label merah RIWAYAT TAFSIR · BUKAN HADIS SHAHIH (W(sebagian)..C8); card SUMBER SHAHIH BUKHARI NO. 3374 + YUSUF: ORANG PALING MULIA; SABAR · TAKWA · MAAF berurutan (W sabar/takwa/WL l24 maaf); card KISAH PARA NABI DI AUDIRA (LS l25..OUTRO). Pins: YUSUF/PENGUASA MESIR (hallNight), GERBANG MESIR (gate [0,1.75,-1.6]), YAQUB + YUSUF KECIL (roof), PIALA RAJA + KARUNG ADIKNYA (store), SAUDARANYA (hallDay Benyamin), BAJU YUSUF/UNTUK YAQUB (road runnerAt), TAFSIR IBNU KATSIR (book). CAP={} (default 4). CoverTitle SEJARAH ISLAM · EP20 / YUSUF MEMAAFKAN + chip IA MENGENAL MEREKA. Vignette 0.5 untuk gate/hallDay/hill/road. (4) YusufFilm.tsx dari UmarFilm.tsx: LIGHT hallNight{.3,.9,.2,.4} gate{1.3,.5,.8,.6} roof{.15,1.1,.3,.35} store{.4,.6,.2,.45} hallDay{1.1,.5,.7,.55} hallLow{.35,.7,.25,.4} road{1.2,.6,.6,.5} book{.2,.5,.15,.4} hill{1,.7,.7,.55}; set dengan props c0/c1 (Gate C1,C2; Road C6,C7; Hill C8); seed sejarah-islam-ep20; hapus UmarFilm.tsx, SetsNight.tsx, SetsDay.tsx, mix.py lama. Root.tsx baris 7 (import ./scenes/umar/UmarFilm.tsx — folder sudah yusuf, import rusak) + baris Composition Umar* → YusufCover/YusufPreview/YusufFinal. (5) typecheck, smoke stills YusufPreview, cover-topic.png. (6) TARGET_LUFS -28 + npm run sfx. (7) tahap 8 draf + juri. (8) handover newSession → Sesi C.",
+      "snapshot": {
+        "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP20",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T23:46:05.929Z",
+      "doing": "Sesi B s5 terpotong context guard. SELESAI s5: time.ts (LS/LE/WL), SetsOut.tsx (Gate/Roof/Road/Book/Hill), camera.ts BARU EP20 (9 SetId, 8 CUTS, SEGMENTS sesuai rencana pose di handover sebelumnya, COVER = pose awal hallNight). Belum typecheck.",
+      "files": [
+        "project/src/scenes/yusuf/camera.ts",
+        "project/src/scenes/yusuf/SetsOut.tsx",
+        "project/src/scenes/yusuf/time.ts",
+        "project/src/scenes/yusuf/Overlay.tsx",
+        "project/src/scenes/yusuf/UmarFilm.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "Sesi B lanjutan: (3) Overlay.tsx tulis ulang (rencana HUD/pins/CoverTitle lengkap ada di handover log sebelumnya, verbose get); (4) YusufFilm.tsx dari UmarFilm.tsx (LIGHT per SetId, SET_COMPONENT; GateSet c0=CUTS[0] c1=CUTS[1], RoadSet c0=CUTS[5] c1=CUTS[6], HillSet c0=CUTS[7]; seed sejarah-islam-ep20), hapus UmarFilm.tsx/SetsNight.tsx/SetsDay.tsx/mix.py lama, Root.tsx import baris 7 + Composition YusufCover/YusufPreview/YusufFinal; (5) typecheck + smoke + cek singgasana + cover-topic.png; (6) TARGET_LUFS -28 + npm run sfx; (7) tahap 8 draf + juri; (8) handover newSession → Sesi C.",
+      "snapshot": {
+        "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP20",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-26T23:51:28.616Z",
+      "doing": "Sesi B s6 (context guard 193k). SELESAI s6: Overlay.tsx ditulis ulang EP20 (PINS yusuf/bros/gerbang/yaqub/piala/benyamin/tafsir; HUD kenal/diam/q58/audira/mimpi n bintang/yaqub/puluhan/dituduh/q77/q89/benarkah/AKU·YUSUF+QS 12:90/amarah/q92/baju/alasan/katsir/±40 TAHUN+RIWAYAT TAFSIR·BUKAN HADIS SHAHIH/bukhari 3374/SABAR·TAKWA·MAAF/next; CAP={}; CoverTitle SEJARAH ISLAM · EP20 / YUSUF MEMAAFKAN chip IA MENGENAL MEREKA; vignette 0.5 untuk gate/hallDay/road/hill; screen-lift untuk roof/book/hallNight). YusufFilm.tsx dibuat (LIGHT per SetId, SET_COMPONENT dengan wrapper c0/c1, cover t=0.02 pose COVER, seed sejarah-islam-ep20, AudiraOutro QISSAH). UmarFilm.tsx/SetsNight.tsx/SetsDay.tsx/mix.py dihapus. Root.tsx → YusufCover/YusufPreview/YusufFinal. polish=\"metal\" (tipe tidak ada) dihapus dari AssetModel di SetsHall/SetsOut. npm run typecheck: 0 error di scenes/yusuf (error di src/core & src/kits bawaan starter, abaikan). Still uji: node scripts/stills.mjs out/s6 3s,10.5s,21s,33s,48.5s,55s,60s,68s,82s YusufPreview → out/s6/_sheet.jpg; look.json ceilings lighting5 material5 depth5 composition2 readability4, diversity 45.8.",
+      "files": [
+        "project/src/scenes/yusuf/Overlay.tsx",
+        "project/src/scenes/yusuf/YusufFilm.tsx",
+        "project/src/scenes/yusuf/camera.ts",
+        "project/src/scenes/yusuf/SetsHall.tsx",
+        "project/src/scenes/yusuf/SetsOut.tsx",
+        "project/src/Root.tsx",
+        "project/out/s6/_sheet.jpg",
+        "project/out/s6/look.json"
+      ],
+      "next": "Sesi B lanjutan s7, perbaiki komposisi (ceiling composition 2) lalu tahap 8. Temuan sheet out/s6: (a) hallNight 3s: Yusuf di singgasana TIDAK terlihat (hanya ujung emas singgasana kiri bawah); singgasana GLB looted-gilded-throne di HALL.throneFar kemungkinan menutupi Yusuf → cek rotasi (0 vs PI) / naikkan kamera / geser Yusuf; render juga frame 0 (cover). (b) gate 10.5s: kamera terlalu dekat dinding gerbang, layar penuh dinding bata, papan AUDIRA + rombongan tak terlihat, pin GERBANG MESIR tertutup quote q58 → mundurkan/naikkan pose gate di camera.ts, pin minY lebih rendah. (c) roof 21s: gelap biru, sprite Yaqub+anak cuma blur di bawah, pin menunjuk kosong → pose roof dekat W(ayahnya) harus membingkai sprite (target y ~0.4, kamera lebih rendah/dekat), bintang lebih terang. (d) store 33s: OK tapi gelap, Yusuf tidak tampak. (e) hallDay 48.5: Yusuf blob putih blur di kiri; kicker QS 12:90 tertimpa. (f) hallLow 55 OK (Yusuf depan berkerudung di singgasana), saudara bersimpuh tak tampak. (g) road 60 dan hill 82: PERSEGI HITAM besar di langit kanan atas (bukan SunDisc sprite; cek Sky component/backface atau mesh lain; book tidak ada). Pin baju sudah dihapus (dobel dengan HUD). (h) hill 82: kata TAKWA belum muncul pada 82s tapi bayangannya terlihat → wajar (ramp). Setelah fix: stills ulang → (6) TARGET_LUFS = -28 di sfx/cues/auto.py + npm run sfx; render style/cover-topic.png (YusufCover); (7) tahap 8: npm run draft -- YusufPreview (contact sheet + audit:visual + audit:camera), npm run audit:rig per segmen, draft/THEME_CHECK.md (G22), record_score self lalu juri buta subagen (qa/jury.md), maks 2 putaran, terbaik ≥3.5 diterima; node scripts/channel.mjs --check. (8) akhir B: handover newSession true → Sesi C. Antrean rantai QISSAH: EP17 selesai; EP20 (sedang); EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK; EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA; EP23_ABU_BAKAR_AS_SIDDIQ_ORANG_PERTAMA_YANG_P.",
+      "snapshot": {
+        "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP20",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T00:10:42.976Z",
+      "doing": "Sesi B s7 (context guard 195k). Fix komposisi putaran 1 (out/s7/_sheet.jpg, audit: no aspect capped below 4, composition naik dari 2): gate kamera mundur ke z 7.6→3.8 (gerbang utuh + papan AUDIRA terlihat), pin GERBANG pindah ke menara kiri [-0.85,1.8], kicker QS 12:90 diberi latar gelap, aula siang pose dari belakang-samping x 1.0 (Yusuf terlihat), store key 0.6. Fix putaran 2 SUDAH DIEDIT tapi BELUM dirender: (1) hook: Yusuf kini BERDIRI di dais di samping singgasana, YUSUF_HOOK [-0.45,0.14,0.8] (YUSUF_STAND + Backer), COVER pos [-0.15,1.1,2.6] tgt [-0.3,0.42,-1.2]; pin yusuf ikut YUSUF_HOOK. (2) roof W(ayahnya) [0.2,0.85,1.9]→[0,0.3,-0.25], C3 [0.15,0.75,1.6] (s7 terlalu dekat, Yaqub gumpal besar). (3) store W(menyembunyikan) [-1.05,1.05,2.3]→[-0.6,0.35,-0.2] (Yusuf depan-kiri, karung di belakang). (4) PERSEGI HITAM langit road+hill masih ada di s7 walau SunDisc sudah additive → SunDisc diganti mesh plane + meshBasicMaterial additive (belum diuji). Bila masih hitam: hapus SunDisc di RoadSet/HillSet (cek juga sumber lain: Spot castShadow RoadSet? Finish DOF NaN di langit). typecheck 0 error di scenes/yusuf.",
+      "command": "node scripts/stills.mjs out/s8 0.1s,3s,10.5s,22.5s,34.5s,48.5s,55s,60s,68s,82s YusufPreview",
+      "files": [
+        "project/src/scenes/yusuf/camera.ts",
+        "project/src/scenes/yusuf/SetsHall.tsx",
+        "project/src/scenes/yusuf/SetsOut.tsx",
+        "project/src/scenes/yusuf/Overlay.tsx",
+        "project/src/scenes/yusuf/YusufFilm.tsx",
+        "project/out/s7/_sheet.jpg",
+        "project/out/s7/look.json"
+      ],
+      "next": "Sesi B lanjutan s8: node scripts/stills.mjs out/s8 0.1s,3s,10.5s,22.5s,34.5s,48.5s,55s,60s,68s,82s YusufPreview → cek _sheet.jpg (hook Yusuf terlihat, atap ayah+anak terbingkai, gudang Yusuf tampak, langit road/hill tanpa persegi hitam). Lalu: TARGET_LUFS = -28 di sfx/cues/auto.py + npm run sfx; render style/cover-topic.png (YusufCover, npm run cover atau stills frame 0); tahap 8: npm run draft -- YusufPreview, npm run audit:rig per segmen, draft/THEME_CHECK.md (G22), record_score self lalu juri buta subagen (qa/jury.md), maks 2 putaran, terbaik ≥3.5 diterima; node scripts/channel.mjs --check; akhir B: handover newSession true → Sesi C. Antrean rantai QISSAH: EP17 selesai; EP20 (sedang); EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK; EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA; EP23_ABU_BAKAR_AS_SIDDIQ_ORANG_PERTAMA_YANG_P.",
+      "snapshot": {
+        "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP20",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T00:19:48.145Z",
+      "doing": "Sesi B s8: stills s8 OK (langit road/hill bersih, atap ayah+anak terbingkai); fix s8: pin YAQUB b=W(melarang)-0.3 (overlap kartu), pose gudang menyembunyikan [-1.1,0.75,3.0] / C4 [-1.05,0.72,2.8] (Yusuf tampak), COVER pos [-0.3,1.15,3.0] tgt [-0.05,0.45,-1.2]. docs/SHOTLIST.md dibuat; vo.timing.json + sfx.wav (-28 LUFS, 28 suara) jadi; style/cover-topic.png dirender ulang. Sekarang: npm run draft -- YusufPreview.",
+      "command": "npm run draft -- YusufPreview",
+      "files": [
+        "project/src/scenes/yusuf/camera.ts",
+        "project/src/scenes/yusuf/Overlay.tsx",
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav",
+        "style/cover-topic.png"
+      ],
+      "next": "audit:rig per segmen, THEME_CHECK, skor self + juri buta, channel --check, lalu handover newSession → Sesi C",
+      "snapshot": {
+        "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP20",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T00:24:07.143Z",
+      "doing": "Sesi B s8 tahap 8: draf putaran 1 dirender (draft/DRAFT_SHEET.jpg, 11 frame 0.1,3,10.5,22.5,35.6,48.5,55,60,68,82,90.23 s; ceilings L5 M5 D5 C5 R4, camera 5/5, diversity 41.9). draft/rig-audit.json per segmen 5/5 (seg4 gudang: key menyembunyikan jadi M [-0.4,0.8,2.6], hold C4 [-1.1,0.75,3.0]). THEME_CHECK 11 baris ya. SHOTLIST.md + sfx.wav -28 LUFS + cover-topic.png jadi. Skor self 4.17. Sekarang: juri buta subagen (F:/AUDIRA-SKILL-MOTION/qa/jury.md, cover quality-bar F:/AUDIRA-SKILL-MOTION/references/quality-bar/hd2d.png).",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/rig-audit.json",
+        "draft/look.json",
+        "draft/camera.json",
+        "docs/SHOTLIST.md",
+        "project/public/audio/sfx.wav",
+        "style/cover-topic.png"
+      ],
+      "next": "Bila juri LOLOS (≥3.8, tak ada <3): record_score jury, node scripts/channel.mjs --check, update draft done, handover newSession → Sesi C (judul newSessionTitle), detach, move QISSAH, archive self. Bila gagal: poles aspek lemah, putaran 2.",
+      "snapshot": {
+        "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP20",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T00:25:09.865Z",
+      "doing": "Sesi B s8 selesai di batas konteks. Draf R1 dirender (draft/DRAFT_SHEET.jpg, frame 0.1,3,10.5,22.5,35.6,48.5,55,60,68,82,90.23 s). Self 4.17, JURI BUTA 3.67 PERLU POLES: L4 M4 D4 C3 Mo5 R2. G22 gagal: F5 (35.6s) VO \"menyembunyikan perasaannya\" tapi Yusuf tak tampak (hanya karung+timbangan, sprite Yusuf di FG tilt-shift buram); F3 (10.5s) VO \"tidak mengenalnya\" tapi saudara kecil buram di bawah gerbang; F1 Yusuf buram bukan fokus, banyak elemen bersaing. F3 kartu QS 12:58 + pin GERBANG MESIR + papan AUDIRA menumpuk di atas. Sudah jadi: docs/SHOTLIST.md, public/audio/vo.timing.json, public/audio/sfx.wav (-28 LUFS), style/cover-topic.png (COVER pos [-0.3,1.15,3.0] tgt [-0.05,0.45,-1.2]), draft/THEME_CHECK.md (11 baris; isi ulang setelah R2), draft/rig-audit.json 5/5 per segmen (skrip scratch: esbuild camera.ts → cam.mjs + rigseg.mjs; tulis ulang bila camera.ts diubah), channel --check ok. Fix s8 di camera.ts: pin YAQUB b=W(melarang)-0.3; gudang M(menyembunyikan)[-0.4,0.8,2.6] + H(C4)[-1.1,0.75,3.0].",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "project/src/scenes/yusuf/camera.ts",
+        "project/src/scenes/yusuf/SetsHall.tsx",
+        "project/src/scenes/yusuf/SetsOut.tsx",
+        "project/src/scenes/yusuf/Overlay.tsx"
+      ],
+      "next": "Sesi B lanjutan, draf PUTARAN 2 (terakhir): (a) gudang ~34–36s: Yusuf harus besar & tajam di pita fokus tilt-shift (bukan FG) dengan karung/piala di belakang, mis. kamera samping-depan Yusuf (wajah tetap tanpa fitur) atau pindah STORE.yusuf ke dekat target kamera; (b) gerbang ~10.5s: saudara+unta lebih besar & fokus di tengah, pindahkan pin GERBANG MESIR agar tak menumpuk dengan kartu 12:58; (c) hook 0.1s: Yusuf dalam fokus/lebih besar, kurangi elemen bersaing (elang singgasana). Cek rig per segmen tetap 5. Lalu npm run draft -- YusufPreview --frames=0.1s,3s,10.5s,22.5s,35.6s,48.5s,55s,60s,68s,82s, isi ulang THEME_CHECK, record_score self + juri buta subagen (F:/AUDIRA-SKILL-MOTION/qa/jury.md, cover F:/AUDIRA-SKILL-MOTION/references/quality-bar/hd2d.png). Terbaik ≥3.5 setelah R2 → diterima (catat NOTES.md \"diterima <skor> setelah 2 putaran\"); <3.5 → ganti style. Lalu update draft done, handover newSession → Sesi C.",
+      "snapshot": {
+        "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP20",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-27T00:42:18.610Z",
+      "doing": "Sesi C s9: draf R2 LOLOS juri buta 4.17 (L4 M4 D4 C4 Mo5 R4; R1 3.67). Fix R2 di camera.ts (COVER [-0.85,1.0,2.7]→[-0.62,0.56,0.75]; gerbang keys ayat/ini-1.1/audira-0.3/C2 dekat saudara; gudang dituduh [0.6,0.9,1.65], M(menyembunyikan) dihapus, H(C4) [-1.8,0.5,3.25]→[0,0.22,1.0]), SetsHall (STORE.yusuf [-0.25,0,1.0], OilLamp [-0.8,0,0.55], anglo hook ±1.2 z1.3), SetsOut (unta a 0.9+k*0.6 b -0.9+k*0.6), Overlay (pin gerbang [0.6,0.8,GATE.z+0.32] up60 minY780). rig-audit.json 9 segmen 5/5, cover dirender ulang, THEME_CHECK 11 ya. Gerbang tahap 9 ditampilkan ke pengguna, MENUNGGU ACC. Audio: VO -27.8 LUFS raw (loudnorm -16), SFX -28 → -32 setelah -4dB; G18c resmi diukur render-final.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/rig-audit.json",
+        "project/src/scenes/yusuf/camera.ts",
+        "project/src/scenes/yusuf/SetsHall.tsx",
+        "project/src/scenes/yusuf/SetsOut.tsx",
+        "project/src/scenes/yusuf/Overlay.tsx",
+        "style/cover-topic.png"
+      ],
+      "next": "Setelah acc pengguna: update final approved:true (kutip kata pengguna), audira_render_batch final YusufFilm 1080x1920@60 dengan sfx public/audio/sfx.wav + vo public/audio/vo.wav + metadata; QA; tahap 10 delivery (caption 6 platform, jadwal, label AI, validator, NOTES.md, 3 scheduled task review). Antrean rantai: EP21 Ratu Bilqis, EP22 Baghdad, EP23 Abu Bakar.",
+      "snapshot": {
+        "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP20",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-27T00:54:30.581Z",
+      "doing": "Sesi C s9 berhenti di batas konteks. Draf R2 LOLOS juri buta 4.17; ACC PENGGUNA SUDAH DIBERIKAN (\"Gas, render final\", final approved:true). render_batch start ditolak 2x oleh gerbang look.json: (1) crushLo gudang f1068 10.7% → DIPERBAIKI (SetsHall StoreSet: background #2A1C1A, fog #3A2A24 4.5-13, pointLight [-1.2,1.2,3.1] #FFC88A int 90 dist 10 + hemisphereLight 2.6; crushLo 0); (2) clipHi 1.3 di f2707.png = frame 90.23 dtk kartu outro yang ditambahkan otomatis oleh draft.mjs (putih murni). EP17 lolos karena look.json-nya tanpa frame outro.",
+      "files": [
+        "draft/look.json",
+        "draft/DRAFT_SHEET.jpg",
+        "project/src/scenes/yusuf/SetsHall.tsx",
+        "project/src/scenes/yusuf/camera.ts",
+        "project/scripts/draft.mjs"
+      ],
+      "next": "Selesaikan gerbang look.json: render ulang draf TANPA frame outro (cek scripts/draft.mjs: cara menonaktifkan outro auto / opsi frames) atau turunkan putih kartu outro ke <255 (mis. #F4F1EA) — jangan ubah gerbang. Lalu audira_render_batch start: project EP20/project, comp YusufFinal, sfx public/audio/sfx.wav, vo public/audio/vo.wav, title \"Detik-Detik Nabi Yusuf Memaafkan Saudaranya\", slug nabi-yusuf-memaafkan, ep EP20. QA (−14 LUFS, TP<−1, ffprobe metadata, G18c), record_score final, tahap 10 delivery (caption 6 platform, jadwal, label AI, validator, NOTES.md, 3 scheduled task review). Commit hanya file EP20 (bukan project/src/kits, src/core, public salinan starter). Antrean rantai: EP21 Ratu Bilqis, EP22 Baghdad, EP23 Abu Bakar.",
+      "snapshot": {
+        "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP20",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-27T01:50:55.123Z",
+      "doing": "s10: gerbang look.json lolos (draf ulang AUDIRA_OUTRO_TILE=off, stale f1035/f2707 dihapus). Render final YusufFinal via audira_render_batch start.",
+      "command": "audira_render_batch start project=EP20/project comp=YusufFinal sfx=public/audio/sfx.wav vo=public/audio/vo.wav",
+      "files": [
+        "draft/look.json",
+        "draft/DRAFT_SHEET.jpg"
+      ],
+      "next": "QA final (−14 LUFS, TP<−1, G18c, ffprobe), record_score final, tahap 10 delivery, commit EP20.",
+      "snapshot": {
+        "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP20",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-27T01:50:55.400Z",
+      "doing": "render final (YusufFinal)",
+      "command": "audira_render_batch start",
+      "batchId": "20261127-015055",
+      "files": [
+        "out/YusufFinal.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261127-015055); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang.",
+      "snapshot": {
+        "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP20",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-27T01:50:55.400Z",
+      "doing": "render final (YusufFinal)",
+      "command": "audira_render_batch start",
+      "batchId": "20261127-015055",
+      "files": [
+        "out/YusufFinal.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261127-015055); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang.",
+      "snapshot": {
+        "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP20",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      },
+      "finishedAt": "2026-11-27T01:57:56.786Z"
     }
   ],
-  "session": 2,
+  "session": 10,
   "sessionLog": [
     {
       "no": 2,
       "title": "EP20 Sejarah peradaban Islam yang jarang diketahui · s2",
       "phase": "A",
       "at": "2026-11-26T18:53:30.537Z"
+    },
+    {
+      "no": 3,
+      "title": "EP20 Yusuf Memaafkan · s3",
+      "phase": "B",
+      "at": "2026-11-26T23:30:46.781Z"
+    },
+    {
+      "no": 4,
+      "title": "EP20 Yusuf Memaafkan · s4",
+      "phase": "B",
+      "at": "2026-11-26T23:34:38.915Z"
+    },
+    {
+      "no": 5,
+      "title": "EP20 Yusuf Memaafkan · s5",
+      "phase": "B",
+      "at": "2026-11-26T23:39:43.913Z"
+    },
+    {
+      "no": 6,
+      "title": "EP20 Yusuf Memaafkan · s6",
+      "phase": "B",
+      "at": "2026-11-26T23:46:05.929Z"
+    },
+    {
+      "no": 7,
+      "title": "EP20 Yusuf Memaafkan · s7",
+      "phase": "B",
+      "at": "2026-11-26T23:51:28.616Z"
+    },
+    {
+      "no": 8,
+      "title": "EP20 Yusuf Memaafkan · B6 (s8)",
+      "phase": "B",
+      "phaseNo": 6,
+      "at": "2026-11-27T00:10:42.976Z"
+    },
+    {
+      "no": 9,
+      "title": "EP20 Yusuf Memaafkan · C1 (s9)",
+      "phase": "C",
+      "phaseNo": 1,
+      "at": "2026-11-27T00:25:09.864Z"
+    },
+    {
+      "no": 10,
+      "title": "EP20 Yusuf Memaafkan · C2 (s10)",
+      "phase": "C",
+      "phaseNo": 2,
+      "at": "2026-11-27T00:54:30.581Z"
     }
-  ],
-  "handover": {
-    "at": "2026-11-26T18:53:30.537Z",
-    "doing": "Antrean QISSAH: EP17 Umar Periuk selesai (final, caption, review terjadwal, commit 658c0fe8). EP20 belum dimulai produksinya; riset sudah ada di folder.",
-    "next": "Sesi A EP20 (tahap 0–4): preflight, baca aturan seperlunya, riset yang sudah ada (jangan riset ulang), style + engine dipilih AI (adab: tanpa wajah nabi), cover topik, naskah 190–210 kata + storyboard + manifest. Pelajaran EP17 untuk sesi B: cek G18c (stem SFX -28 LUFS), node scripts/channel.mjs --check (pakai <AudiraOutro code=QISSAH>), look.json crush ≤2%/diversity ≥30, dan audit separasi set malam di sesi B.",
-    "snapshot": {
-      "episode": "EP20_DETIK_DETIK_NABI_YUSUF_MEMAFKAN_SAUDARA",
-      "topic": "Sejarah peradaban Islam yang jarang diketahui",
-      "style": null,
-      "memoryEpisode": "sejarah-islam-EP20",
-      "currentStage": "style",
-      "gates": {
-        "final": {
-          "approved": false,
-          "status": "pending"
-        }
-      },
-      "voPath": null,
-      "draftScores": [],
-      "finals": []
-    }
-  }
+  ]
 }

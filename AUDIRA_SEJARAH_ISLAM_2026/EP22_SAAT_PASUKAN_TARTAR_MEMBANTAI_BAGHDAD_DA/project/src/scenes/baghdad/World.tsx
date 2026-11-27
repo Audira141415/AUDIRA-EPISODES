@@ -287,11 +287,11 @@ type Mood = { key: string; keyI: number; dir: [number, number, number]; fill: nu
 const MOODS: Mood[] = [
   { key: "#ffc07e", keyI: 2.6, dir: [-0.85, 0.4, 0.35], fill: 0.32, fillColor: "#9fb2d4", spot: 16, spotColor: "#ffd49a", rim: 0.8 }, // s1 golden dusk
   { key: "#ffe6c2", keyI: 2.3, dir: [-0.5, 0.85, 0.3], fill: 0.5, fillColor: "#cfd8e6", spot: 14, spotColor: "#ffd9a0", rim: 0.5 }, // s2 even warm
-  { key: "#ffb877", keyI: 1.0, dir: [-0.5, 0.7, 0.5], fill: 0.22, fillColor: "#7f8fb0", spot: 26, spotColor: "#ffb060", rim: 0.7 }, // s3 dim candle
+  { key: "#ffc48e", keyI: 1.6, dir: [-0.5, 0.7, 0.5], fill: 0.34, fillColor: "#7f8fb0", spot: 26, spotColor: "#ffb060", rim: 0.7 }, // s3 dim candle
   { key: "#cfe0ff", keyI: 1.7, dir: [0.45, 0.75, -0.45], fill: 0.34, fillColor: "#8ea4c8", spot: 18, spotColor: "#dfeaff", rim: 0.9 }, // s4 cold blue haze
   { key: "#ff9f5e", keyI: 2.2, dir: [0.85, 0.35, 0.3], fill: 0.34, fillColor: "#a7a0c8", spot: 10, spotColor: "#ffb070", rim: 1.6 }, // s5 orange smoke + strong cold rim
   { key: "#ffcf9a", keyI: 0.9, dir: [-0.3, 0.9, 0.3], fill: 0.2, fillColor: "#8a90b0", spot: 34, spotColor: "#ffd8a8", rim: 1.1 }, // s6 dark, narrow spot
-  { key: "#bcd2ff", keyI: 1.3, dir: [0.4, 0.6, -0.6], fill: 0.3, fillColor: "#7f98c8", spot: 22, spotColor: "#e6eeff", rim: 1.3 }, // s7 blue night + rim
+  { key: "#bcd2ff", keyI: 1.5, dir: [0.4, 0.6, -0.6], fill: 0.38, fillColor: "#7f98c8", spot: 22, spotColor: "#e6eeff", rim: 1.3 }, // s7 blue night + rim
   { key: "#ffd27a", keyI: 2.6, dir: [0.9, 0.35, 0.2], fill: 0.42, fillColor: "#c8c4d8", spot: 8, spotColor: "#ffd890", rim: 0.6 }, // s8 golden dawn from the east
 ];
 const blendMood = (t: number): Mood => {

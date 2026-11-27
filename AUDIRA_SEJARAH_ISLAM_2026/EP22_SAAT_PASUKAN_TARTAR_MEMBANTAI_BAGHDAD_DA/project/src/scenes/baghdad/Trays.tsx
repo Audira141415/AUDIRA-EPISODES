@@ -45,8 +45,13 @@ const Seal: React.FC<{ crack: number }> = ({ crack }) => (
     {[-1, 1].map((s) => (
       <group key={s} position={[s * crack * 0.07, 0, s * crack * 0.02]} rotation={[0, 0, s * crack * -0.35]}>
         <mesh rotation={[0, s > 0 ? 0 : Math.PI, 0]} castShadow>
-          <cylinderGeometry args={[0.1, 0.11, 0.035, 24, 1, false, 0, Math.PI]} />
-          <meshPhysicalMaterial color="#9b1c16" roughness={0.35} clearcoat={0.7} emissive="#4a0806" emissiveIntensity={0.2} />
+          <cylinderGeometry args={[0.17, 0.185, 0.05, 32, 1, false, 0, Math.PI]} />
+          <meshPhysicalMaterial color="#b0221a" roughness={0.35} clearcoat={0.7} emissive="#5a0a07" emissiveIntensity={0.35} />
+        </mesh>
+        {/* stamped gold ring so the half discs read as one broken wax seal */}
+        <mesh rotation={[0, s > 0 ? 0 : Math.PI, 0]} position={[0, 0.028, 0]}>
+          <cylinderGeometry args={[0.1, 0.1, 0.01, 32, 1, false, 0, Math.PI]} />
+          <meshStandardMaterial color="#E8B84A" metalness={0.7} roughness={0.3} emissive="#E8B84A" emissiveIntensity={0.25} />
         </mesh>
       </group>
     ))}
@@ -216,20 +221,20 @@ const SHELVES = [
 ];
 export const Dock: React.FC<{ t: number }> = ({ t }) => {
   const ink = inkAt(t);
-  const water = new THREE.Color("#2f6a98").lerp(new THREE.Color("#0b0c10"), ink);
+  const water = new THREE.Color("#2f6a98").lerp(new THREE.Color("#141b2e"), ink);
   return (
     <group position={[DOCK[0], 0, DOCK[1]]}>
       <Tray w={3.0} d={2.4} color="#3a2618" />
       {/* river channel along the near side */}
       <mesh position={[0, 0.062, 0.35]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
         <planeGeometry args={[2.9, 0.9, 1, 1]} />
-        <meshPhysicalMaterial color={water} roughness={0.06} clearcoat={1} clearcoatRoughness={0.04} emissive={ink > 0.5 ? "#000000" : "#16354f"} emissiveIntensity={0.3 * (1 - ink)} />
+        <meshPhysicalMaterial color={water} roughness={0.42} clearcoat={0.25} clearcoatRoughness={0.5} emissive={ink > 0.5 ? "#000000" : "#16354f"} emissiveIntensity={0.3 * (1 - ink)} />
       </mesh>
       {/* ink plume spreading from the books */}
       {ink > 0.01 ? (
         <mesh position={[0, 0.066, 0.35]} rotation={[-Math.PI / 2, 0, 0]} scale={[0.3 + ink * 1.1, 0.3 + ink * 0.25, 1]}>
           <circleGeometry args={[1, 40]} />
-          <meshBasicMaterial color="#050608" transparent opacity={0.75 * ink} depthWrite={false} />
+          <meshBasicMaterial color="#10162a" transparent opacity={0.7 * ink} depthWrite={false} />
         </mesh>
       ) : null}
       {/* dock planks */}
@@ -263,8 +268,8 @@ export const Dock: React.FC<{ t: number }> = ({ t }) => {
         const k = ss(s.t0, s.t0 + 0.5, t);
         return (
           <group key={i} position={[s.x, 0.06, -0.85]}>
-            <AssetModel id={s.id} size={0.95} ground tint="#7a5232" emissive="#ffb85a" emissiveIntensity={0.05 + k * 0.2} />
-            {k > 0.01 ? <pointLight position={[0, 0.5, 0.35]} color="#ffb85a" intensity={k * 0.9} distance={1.6} decay={2} /> : null}
+            <AssetModel id={s.id} size={0.95} ground tint="#7a5232" emissive="#ffd9a8" emissiveIntensity={0.04 + k * 0.1} />
+            {k > 0.01 ? <pointLight position={[0, 0.5, 0.35]} color="#ffe2b8" intensity={k * 0.6} distance={1.6} decay={2} /> : null}
           </group>
         );
       })}
@@ -283,7 +288,7 @@ const PayoffLamp: React.FC<{ t: number }> = ({ t }) => {
         <sphereGeometry args={[0.05, 20, 14]} />
         <meshBasicMaterial color="#FFE6A8" toneMapped={false} />
       </mesh>
-      <pointLight color="#ffc870" intensity={k * 2.2} distance={4} decay={2} />
+      <pointLight color="#fff0d6" intensity={k * 1.3} distance={4} decay={2} />
     </group>
   );
 };
