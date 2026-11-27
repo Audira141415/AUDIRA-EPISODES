@@ -5,7 +5,11 @@ title: "Cara Kerja Sensus Penduduk: Menghitung Ratusan Juta Orang"
 hook: "Bagaimana negara tahu jumlah penduduknya padahal orang terus lahir dan pindah?"
 styleCandidates: ["DATAPHYSICAL (2D)", "SATELLITEBRIEFING (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme sensus awet; angka Dukcapil/SUPAS dan status RUU Statistik cepat basi
+risiko: "Hook menyiratkan angka pasti & terkini, dikoreksi jadi 'sensus = potret satu momen, disambung registrasi & survei'; tiga angka resmi berbeda (270,20/284,67/288,3 juta) wajib berlabel; RUU Statistik sedang dibahas DPR; rule 15: tanpa wajah petugas/warga dan logo BPS/Dukcapil."
 ---
 
 # Cara Kerja Sensus Penduduk: Menghitung Ratusan Juta Orang

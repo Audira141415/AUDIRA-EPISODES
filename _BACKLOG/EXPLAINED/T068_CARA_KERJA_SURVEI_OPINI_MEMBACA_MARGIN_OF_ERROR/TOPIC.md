@@ -5,7 +5,11 @@ title: "Cara Kerja Survei Opini: Membaca Margin of Error"
 hook: "Angka \"plus minus 3%\" di survei punya arti yang sering disalahpahami"
 styleCandidates: ["DATAPHYSICAL (2D)", "CERDIK (2D)", "BROADCASTFORGE (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # konsep statistik awet; status PKPU 9/2022 perlu dicek ulang
+risiko: "Hook asli menulis 'plus minus 3%' padahal satuannya poin persen (dikoreksi); politik sensitif: semua angka contoh ILUSTRASI tanpa nama calon/partai/lembaga survei; rule 15: tanpa logo KPU/TV; margin selisih ±5,8 hitungan sendiri."
 ---
 
 # Cara Kerja Survei Opini: Membaca Margin of Error

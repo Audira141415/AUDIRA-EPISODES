@@ -5,7 +5,11 @@ title: "Cara Kerja Pengiriman Paket: Dari Klik Bayar sampai Depan Pintu"
 hook: "Paketmu bisa melewati lima gudang dan tiga kendaraan dalam dua hari"
 styleCandidates: ["CHAINREACTION (2D)", "URBANFORGE (3D)", "SATELLITEBRIEFING (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # alur dan teknologi awet; volume paket/hari dan status regulasi bisa berubah
+risiko: "Hook asli (lima gudang, tiga kendaraan, dua hari) tidak bersumber, dikoreksi jadi beberapa gudang + label ilustrasi; volume 7 juta paket/hari hanya klaim Wamenkomdigi via media (MEDIUM); rule 15: tanpa merek/logo kurir dan marketplace, regulasi disajikan netral."
 ---
 
 # Cara Kerja Pengiriman Paket: Dari Klik Bayar sampai Depan Pintu

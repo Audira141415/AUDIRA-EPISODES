@@ -5,7 +5,7 @@
   (tanggal = hari ini, rule 15 EXPLAINED), cek `node F:/AUDIRA-ALL-SKILL/scripts/backlog-tools/verify-eps.mjs <folder...>`,
   lalu commit repo episode `feat(backlog): riset EXPLAINED batch N (T..)` + push.
 - Progres: batch 1 = T001–T006: SELESAI, 6/6 OK, commit b5a1baf1. Batch 2 = T007–T012: SELESAI, 6/6 OK, commit dde22419. Batch 3 = T013–T018: SELESAI, 6/6 OK, commit a4068c80. Batch 4 = T019–T024: SELESAI, 6/6 OK, commit b409670d. Batch 5 = T025–T030: SELESAI, 6/6 OK, commit a2694336. Batch 6 = T031–T036: SELESAI, 6/6 OK, commit 6c91d788. Batch 7 = T037–T042: SELESAI, 6/6 OK, commit 40bdc7b8. Batch 1–7 sudah di origin.
-  Batch 8 = T043–T048: SELESAI, 6/6 OK, commit 43eccee1. Batch 9 = T049–T054: SELESAI, 6/6 OK, commit dfbd9fda. Batch 10 = T055–T060: SELESAI, 6/6 OK, commit ce871ccd. Batch 11 = T061–T066: SELESAI, 6/6 OK, di-commit + push. Batch 12 = T067–T072.
+  Batch 8 = T043–T048: SELESAI, 6/6 OK, commit 43eccee1. Batch 9 = T049–T054: SELESAI, 6/6 OK, commit dfbd9fda. Batch 10 = T055–T060: SELESAI, 6/6 OK, commit ce871ccd. Batch 11 = T061–T066: SELESAI, 6/6 OK, commit 4da4b891. Batch 12 = T067–T072: SELESAI, 6/6 OK, di-commit + push. Batch 13 = T073–T078.
 - Catatan agen: WebSearch/WebFetch error (model haiku tidak tersedia) -> agen pakai curl ke halaman asli/Bing/Wikipedia API; tulis itu di brief.
 - Cek ulang sebelum produksi: T002 BI-Rate 6,00% (per 18 Nov 2026), T003 JISDOR + puncak 1998 (baru Wikipedia), T005 MDR/pengguna QRIS, T001 inflasi per Sep 2026.
   Batch 2: T007 "maks 100 lembar/setor" (1 bank), aturan BI uang dicek mesin sebelum masuk ATM belum ketemu;
@@ -69,6 +69,12 @@
   T064 peserta 285,8 juta, PBI 96,8 juta, iuran Rp118 T vs manfaat Rp132 T, aset DJS Rp30,04 T = MEDIUM cepat basi (awet: tidak); iuran masih Perpres 64/2020, KRIS/iDRG uji coba per Okt 2026 — cek perubahan keempat Perpres 82/2018; hook: "jutaan" → ratusan juta + APBN/pemberi kerja.
   T065 −90…−60 °C hanya 1 vaksin mRNA per Feb 2022, lampiran Permenkes 12/2017 dicabut Permenkes 3/2026 (pedoman vaksin pengganti belum ketemu), CDOB: Per BPOM 20/2025 dicabut sebagian 16/2026 (teks belum dibaca); "50% vaksin terbuang" tidak dipakai; judul usul "…Tidak Boleh Panas, Tidak Boleh Beku".
   T066 galat ±3,1/2,2/1,5% & 0,24% hitungan sendiri, 820.161 TPS (MEDIUM), nomor putusan MK 2019 belum pasti (mkri.id Cloudflare), PKPU 9/2022 Psl 19 aturan 2 jam; netral: hanya angka ILUSTRASI; judul usul "…Kenapa Sampel Kecil Bisa Mendekati Hasil Resmi".
+  Batch 12: T067 suara/kursi 2024 (peringkat 4: 16,1 jt→68 kursi vs peringkat 5: 14,7 jt→69) & 84 dapil MEDIUM (Wikipedia), isi Putusan MK 116/PUU-XXI/2023 via ANTARA; Panja RUU Pemilu mulai 11 Nov 2026 (wacana ambang 5%) → bila disahkan tulis ulang c02/c06; awet tidak.
+  T068 ±3,1/2,2/4,9/5,8 hitungan sendiri (rumus 0,98/√n via Wikipedia), ±6,9 n=200 AAPOR HIGH; hook: "plus minus tiga" = poin persen, bukan 3%.
+  T069 UU 12/2011 diubah UU 15/2019, 13/2022, 1/2026 (hanya Psl 15); cek RUU perubahan; pengundang kini menteri kesekretariatan negara (UU 13/2022 Psl 85); hook: disetujui paripurna belum berlaku sampai diundangkan.
+  T070 KUHAP baru UU 20/2025 berlaku 2 Jan 2026 (istilah: advokat, perlawanan, pembelaan, jawaban; 8 alat bukti Psl 235, "pengamatan hakim" diuji MK 92/PUU-XXIV/2026), Psl 215 diperbaiki MK 383/PUU-XXIV/2026 (MEDIUM); judul usul "Cara Kerja Sidang Pidana: Siapa Melakukan Apa".
+  T071 tiga angka berlabel: 270,20 jt (SP2020), 284,67 jt (SUPAS 2025, MEDIUM), 288.315.089 (Dukcapil 31 Des 2025, MEDIUM, cek DKB Sem I 2026); SP2030 & RUU Statistik belum pasti.
+  T072 "7 juta paket/hari" klaim Wamenkomdigi Feb 2026 (MEDIUM), alur hub&spoke dari 1 kurir (generik); Permenkomdigi 8/2025 (diskon di bawah biaya pokok ≤3 hari/bln Psl 45, ganti rugi ≤10× ongkir Psl 73) cek perubahan; hook: "dua hari" keliru (batas 3/7 hari).
 - Lanjut: Lanjut dari topik pertama yang TOPIC.md-nya masih `stage: backlog`:
   `grep -L "stage: drafted" _BACKLOG/EXPLAINED/*/TOPIC.md | head -6`.
 

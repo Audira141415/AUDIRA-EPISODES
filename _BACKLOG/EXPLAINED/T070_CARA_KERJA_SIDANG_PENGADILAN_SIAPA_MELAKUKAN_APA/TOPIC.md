@@ -5,7 +5,11 @@ title: "Cara Kerja Sidang Pengadilan: Siapa Melakukan Apa"
 hook: "Hakim, jaksa, dan pengacara punya peran berbeda — ini alur sidang dari awal"
 styleCandidates: ["CERDIK (2D)", "PAPERWORLD (2D)", "CHAINREACTION (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 3
+awet: ya   # alur sidang awet; pasal KUHAP baru masih diuji di MK (pengamatan hakim dll.)
+risiko: "Hukum acara baru (UU 20/2025, berlaku 2 Jan 2026) menggantikan alur lama: eksepsi/replik/duplik bukan istilah UU, alat bukti berubah (petunjuk hilang, pengamatan hakim sedang diuji MK); hook 'pengacara' dikoreksi jadi advokat; judul dibatasi ke sidang pidana; rule 15: tanpa wajah, lambang pengadilan, atau kasus nyata."
 ---
 
 # Cara Kerja Sidang Pengadilan: Siapa Melakukan Apa

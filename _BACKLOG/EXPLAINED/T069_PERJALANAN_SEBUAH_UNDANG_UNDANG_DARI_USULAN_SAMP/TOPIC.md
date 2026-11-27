@@ -5,7 +5,11 @@ title: "Perjalanan Sebuah Undang-Undang dari Usulan sampai Berlaku"
 hook: "Satu aturan negara melewati banyak meja sebelum benar-benar mengikat"
 styleCandidates: ["CHAINREACTION (2D)", "PAPERWORLD (2D)", "CERDIK (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 3
+awet: ya   # alur berdasar UUD + UU 12/2011; cek ulang status perubahan UU 12/2011 sebelum produksi
+risiko: "Topik politik-hukum (rule 15): wajib netral, tanpa wajah anggota DPR/pejabat, tanpa lambang/logo lembaga, tanpa menilai UU tertentu; hook asli kabur, dikoreksi jadi mengikat sejak diundangkan; contoh UU 2/2018 disebut faktual saja."
 ---
 
 # Perjalanan Sebuah Undang-Undang dari Usulan sampai Berlaku
