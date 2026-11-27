@@ -1,69 +1,51 @@
-# Naskah — Saat Pasukan Tartar Membantai Baghdad dalam 40 Hari
+# Naskah — Saat Pasukan Tartar Membantai Bagdad (EP22)
 
-> DRAF pra-produksi (backlog, 2026-11-25). Difinalkan di tahap 4 setelah style dipilih.
-> Short: 190–210 kata @135–150 WPM.
+Style: HISTORYMAP
 
-## c00_hook — Hook
+> Final Sesi A (2026-11-27). 193 kata (tahun "1258" dibaca 5 kata, jadi ±197 kata ucap) ≈ 77–83 dtk di 140–150 WPM, plus outro ±3 dtk.
+> Teks TTS menulis "Audira" (bukan AUDIRA) supaya lafal benar. Waktu di bawah estimasi 142 WPM; di Sesi B diganti detik VO (Audio Master Clock).
+> Koreksi dari draf backlog: klaim "Hulagu mengaku dua juta" dibuang (sumber hanya ringkasan Wikipedia); "40 hari" tidak dipakai (tidak terverifikasi, [#4] RESEARCH_REPORT); "diinjak kuda" dibuang (kekerasan tidak eksplisit).
 
-- Kata: **20** · estimasi **8 dtk**
-- Visual: Peta Timur Tengah 1258 bergerak, titik Bagdad menyala di tepi Tigris; HUD callout besar "1258" (tanpa wajah)
+## s1 Hook (0:00–0:08) — 20 kata
+- Visual: kota Bagdad bundar menyala emas di tepi Tigris, HUD "1258"; bayangan panji Mongol dari timur menutup peta, panji hitam Abbasiyah rebah.
 
-> Tahun 1258. Bagdad, kota yang lima abad menjadi pusat dunia Islam, jatuh hanya dalam hitungan hari. Dan khalifahnya tidak selamat.
+> Tahun 1258. Bagdad, kota yang lima abad menjadi pusat dunia Islam, jatuh dalam hitungan hari. Dan khalifah terakhirnya tidak selamat.
 
-## c01_intro — Intro
+## s2 Konteks (0:08–0:17) — 21 kata [#4, #5]
+- Visual: peta penuh Irak–Persia, label BAGDAD / TIGRIS / PERSIA; kartu "AL-MUSTA'SIM · KHALIFAH KE-37"; rute tenda dan panji tug merah dari timur, kartu "HULAGU".
 
-- Kata: **22** · estimasi **9 dtk**
-- Visual: Siluet kubah dan menara Bagdad di tepi Tigris, kartu teks "Al-Musta'sim, khalifah ke-37", panah pasukan dari timur
+> Di Audira, kita buka kisahnya. Bagdad adalah ibu kota Abbasiyah, dipimpin Al-Musta'sim, khalifah ke-37. Dari timur, pasukan Mongol pimpinan Hulagu datang.
 
-> Di AUDIRA, kita bongkar kisahnya. Bagdad ibu kota Dinasti Abbasiyah, dipimpin Al-Musta'sim, khalifah ke-37. Pasukan Mongol di bawah Hulagu datang dari timur.
+## s3 Ultimatum (0:17–0:25) — 18 kata [#4]
+- Visual: baki surat, dua gulungan berhadapan, segel lilin retak; kartu "TUNDUK ATAU HANCUR"; panah bantuan dari barat memudar sebelum sampai.
 
-## c02 — Tawaran damai ditolak
+> Hulagu mengirim pesan: tunduk, atau hancur. Al-Musta'sim menolak, yakin dunia Islam akan menolongnya. Pertolongan itu tidak pernah datang.
 
-- Kata: **19** · estimasi **8 dtk**
-- Visual: Dua gulungan surat berhadapan di atas peta, siluet utusan tanpa wajah, stempel retak
+## s4 Pengepungan (0:25–0:36) — 26 kata [#4, #5]
+- Visual: kota dari atas, dua panah merah menjepit dua tepi Tigris; tanggul jebol, air meluas menelan tenda Abbasiyah; HUD "29 JAN" lalu "10 FEB", "±3.000 TOKOH".
 
-> Hulagu menawarkan damai: tunduk, atau dihancurkan. Al-Musta'sim menolak, dan yakin dunia Islam akan membantunya. Bantuan itu tidak pernah tiba.
+> Akhir Januari, Mongol mengepung dari dua tepi Sungai Tigris. Tanggul dijebol, pasukan Bagdad terjebak banjir. Sepuluh Februari, sang khalifah menyerah bersama sekitar tiga ribu tokoh kota.
 
-## c03 — Pengepungan
+## s5 Penjarahan (0:36–0:48) — 29 kata [#4, #7]
+- Visual: eye-level di dalam kota model; kubah, istana, perpustakaan, rumah sakit runtuh bergiliran, asap memanjang; HUD kalender "13–20 FEB", lalu "±800 RIBU – 2 JUTA · PERKIRAAN".
 
-- Kata: **28** · estimasi **12 dtk**
-- Visual: Peta kota dari atas: dua pasukan menjepit dua tepi Tigris, tanggul jebol, air membanjiri; HUD "3.000 tokoh"
+> Tiga hari kemudian, Mongol masuk. Sepekan penuh kota dijarah. Masjid, istana, perpustakaan, dan rumah sakit dihancurkan. Korbannya diperkirakan ratusan ribu sampai dua juta jiwa. Angka pastinya tidak pernah diketahui.
 
-> Akhir Januari, Mongol mengepung kota dari dua sisi Tigris. Tanggul sungai dijebol, pasukan Bagdad terjebak banjir. Tanggal 10 Februari, sang khalifah menyerah bersama sekitar tiga ribu tokoh kota.
+## s6 Akhir khalifah (0:48–0:58) — 22 kata [#4, #5]
+- Visual: karpet tergulung diam di lantai, panji hitam terlipat di sebelahnya; garis waktu emas "750 → 1258" retak; HUD "20 FEB 1258".
 
-## c04 — Penjarahan sepekan
+> Dua puluh Februari, Al-Musta'sim dieksekusi. Ia digulung dalam karpet, karena Mongol pantang menumpahkan darah raja. Lima abad Kekhalifahan Abbasiyah berakhir hari itu.
 
-- Kata: **38** · estimasi **16 dtk**
-- Visual: Kota berasap, siluet bangunan terbakar, kalender "13 Februari" lalu tujuh hari; HUD rentang angka korban
+## s7 Mitos tinta (0:58–1:09) — 27 kata [#3, #6]
+- Visual: buku jatuh ke sungai, air menghitam; kartu "GAMBARAN SASTRA · MICHAL BIRAN"; air kembali biru, rak perpustakaan menyala satu per satu, HUD "2 TAHUN".
 
-> Tiga hari kemudian, 13 Februari, Mongol masuk. Sepekan penuh mereka menjarah dan membunuh. Masjid, istana, perpustakaan, rumah sakit dihancurkan. Penulis Muslim menyebut korbannya delapan ratus ribu sampai dua juta. Hulagu sendiri mengaku dua juta, angka yang dinilai berlebihan.
+> Konon Sungai Tigris menghitam oleh tinta buku. Sejarawan Michal Biran menyebutnya gambaran sastra. Perpustakaan besar Bagdad dibuka lagi dalam dua tahun. Kota hancur, tapi ilmu tidak padam.
 
-## c05 — Akhir khalifah
+## s8 Payoff + outro (1:09–1:22, outro sampai ±1:25) — 30 kata [#1]
+- Visual: fajar emas menyapu peta dari timur, kubah Bagdad berkilau; kartu terjemah QS Ali Imran 3:140; pull-back tinggi ke pelat AUDIRA QISSAH, lalu `<AudiraOutro code="QISSAH" />`.
 
-- Kata: **24** · estimasi **10 dtk**
-- Visual: Karpet tergulung di tanah, bayangan kuda lewat, tanpa wajah; kalender "20 Februari"; garis waktu Abbasiyah retak
-
-> Tanggal 20 Februari, Al-Musta'sim dieksekusi. Orang Mongol pantang menumpahkan darah bangsawan, jadi ia digulung dalam karpet lalu diinjak kuda. Lima abad Kekhalifahan Abbasiyah berakhir.
-
-## c06 — Mitos tinta Tigris
-
-- Kata: **28** · estimasi **12 dtk**
-- Visual: Tumpukan buku jatuh ke sungai, air menghitam, lalu stempel "gambaran sastra" muncul dan perpustakaan menyala kembali; HUD "2 tahun"
-
-> Konon Tigris menghitam oleh tinta buku. Sejarawan Michal Biran menilai itu gambaran sastra. Perpustakaan besar Bagdad dibuka lagi dalam dua tahun. Kota hancur, tapi ilmu tidak mati seketika.
-
-## c07_payoff — Payoff + outro
-
-- Kata: **28** · estimasi **12 dtk**
-- Visual: Ayat Ali Imran 3:140 dalam kaligrafi di atas kubah Bagdad saat matahari terbit, logo outro AUDIRA
-
-> Al-Quran mengingatkan, Surah Ali Imran ayat 140: masa kejayaan dan kehancuran Kami pergilirkan di antara manusia. Peradaban bisa runtuh karena sombong dan terpecah. Ikuti AUDIRA untuk kisah berikutnya.
-
-## Opsi hook lain
-
-1. 1258: Bagdad jatuh, dan khalifah terakhirnya digulung dalam karpet.
-2. Mereka bilang Sungai Tigris menghitam oleh tinta. Benarkah?
+> Al-Quran mengingatkan dalam Surah Ali Imran ayat 140: masa kejayaan dan kehancuran Kami pergilirkan di antara manusia. Kejayaan bisa runtuh saat umat lengah dan terpecah. Ikuti Audira untuk kisah berikutnya.
 
 ## Total
-
-- **207 kata** ≈ **87 dtk**
+- **193 kata** (±197 kata ucap) ≈ **77–83 dtk** + outro.
+- Brand di suara: s2 ("Di Audira") dan s8 ("Ikuti Audira").

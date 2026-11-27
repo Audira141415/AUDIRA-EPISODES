@@ -3,8 +3,8 @@
   "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
   "topic": "Sejarah peradaban Islam yang jarang diketahui",
   "createdAt": "2026-11-25T02:39:47.814Z",
-  "updatedAt": "2026-11-25T09:34:13.069Z",
-  "currentStage": "style",
+  "updatedAt": "2026-11-27T00:15:35.753Z",
+  "currentStage": "setup",
   "sessionPhase": "A",
   "stages": [
     {
@@ -39,8 +39,19 @@
       "id": "style",
       "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-27T00:13:45.228Z",
+          "text": "HISTORYMAP, Remotion + R3F 3D: meja peta pengepungan Bagdad dua tepi Tigris, basis kode EP19 khalid. Alternatif: HD2D, MOSAICFORGE."
+        },
+        {
+          "at": "2026-11-27T00:15:28.800Z",
+          "text": "STYLE_DECISION.md penuh, cover-reference.png disalin dari EP19. Cover topik dirender di Sesi B setelah scaffold (preseden EP19)."
+        }
+      ],
+      "startedAt": "2026-11-27T00:13:45.227Z",
+      "doneAt": "2026-11-27T00:15:28.800Z"
     },
     {
       "id": "script",
@@ -51,9 +62,13 @@
         {
           "at": "2026-11-25T09:34:13.069Z",
           "text": "sync: naskah ada"
+        },
+        {
+          "at": "2026-11-27T00:15:35.753Z",
+          "text": "Naskah final 193 kata, 8 segmen s1–s8, ≈77–83 dtk. Klaim Hulagu 2 juta, 40 hari, dan 'diinjak kuda' dibuang. ART_DIRECTION, STORYBOARD, ASSET_MANIFEST ditulis (Style: HISTORYMAP)."
         }
       ],
-      "doneAt": "2026-11-25T03:27:47.323Z",
+      "doneAt": "2026-11-27T00:15:35.753Z",
       "startedAt": "2026-11-25T03:27:47.323Z"
     },
     {
@@ -109,7 +124,70 @@
     }
   ],
   "data": {
-    "memoryEpisode": "sejarah-islam-EP22"
+    "memoryEpisode": "sejarah-islam-EP22",
+    "style": "HISTORYMAP",
+    "engine": "remotion",
+    "shortTitle": "Baghdad 1258",
+    "wordCount": 193,
+    "estimatedDuration": {
+      "wordCount": 193,
+      "minSec": 77,
+      "maxSec": 86
+    }
   },
-  "syncedAt": "2026-11-25T09:34:13.069Z"
+  "syncedAt": "2026-11-25T09:34:13.069Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-27T00:10:43.248Z",
+      "doing": "Antrean QISSAH: EP22 belum diproduksi (riset ada, belum ada final). Sesi baru dibuat atas permintaan pengguna 2026-11-27.",
+      "next": "Sesi A (tahap 0–4): preflight, style+engine dipilih AI, cover topik, naskah+storyboard+manifest. Pelajaran EP17: TARGET_LUFS -28, <AudiraOutro code=QISSAH>, look.json crush ≤2%/diversity ≥30 dicek di sesi B.",
+      "snapshot": {
+        "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": null,
+        "memoryEpisode": "sejarah-islam-EP22",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    }
+  ],
+  "session": 2,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP22 Sejarah peradaban Islam yang jarang diketahui · A2 (s2)",
+      "phase": "A",
+      "phaseNo": 2,
+      "at": "2026-11-27T00:10:43.248Z"
+    }
+  ],
+  "handover": {
+    "at": "2026-11-27T00:10:43.248Z",
+    "doing": "Antrean QISSAH: EP22 belum diproduksi (riset ada, belum ada final). Sesi baru dibuat atas permintaan pengguna 2026-11-27.",
+    "next": "Sesi A (tahap 0–4): preflight, style+engine dipilih AI, cover topik, naskah+storyboard+manifest. Pelajaran EP17: TARGET_LUFS -28, <AudiraOutro code=QISSAH>, look.json crush ≤2%/diversity ≥30 dicek di sesi B.",
+    "snapshot": {
+      "episode": "EP22_SAAT_PASUKAN_TARTAR_MEMBANTAI_BAGHDAD_DA",
+      "topic": "Sejarah peradaban Islam yang jarang diketahui",
+      "style": null,
+      "memoryEpisode": "sejarah-islam-EP22",
+      "currentStage": "style",
+      "gates": {
+        "final": {
+          "approved": false,
+          "status": "pending"
+        }
+      },
+      "voPath": null,
+      "draftScores": [],
+      "finals": []
+    }
+  }
 }

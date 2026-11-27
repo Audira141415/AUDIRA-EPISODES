@@ -1,43 +1,18 @@
-# STORYBOARD — `Sejarah peradaban Islam yang jarang diketahui` (`EP22`)
+# STORYBOARD — Saat Pasukan Tartar Membantai Bagdad (EP22)
 
-Style: <STYLE>  <!-- G21: ID style aktif (sama dengan STATUS.json data.style). Ganti style = tulis ulang file ini. -->
+Style: HISTORYMAP
 
-> Standar EP01 Makkah. Satu baris per chapter, waktu VO terkunci (Audio Master Clock). Kamera gerak kontinu — bukan slide statis (Anti-PPT). Multi-plane: BG / MG / FG / HUD / caption.
+Satu meja peta. Waktu di bawah estimasi 142 WPM; di Sesi B diganti detik VO. Kunci kamera terikat ke kata. BG: latar malam + kabut + tepi meja. MG: stasiun. FG: tali emas, tiang panji, butir debu blur. HUD: satu kartu HTML per frame. Caption y=1300; label peta tidak di y 1200–1450.
 
-**World layout:**
-- **Main stage:** <deskripsi set utama dan posisinya>
-- **Chapter stations:** <deskripsi set per chapter dan posisi relatif>
-- **Between stations:** <bagaimana kamera berpindah — spline, time roads, dll>
-- **Station visibility:** <kapan setiap set muncul dan menghilang>
-
-**Planes in every shot:**
-- **BG:** <backdrop, fog, langit>
-- **MG:** <set piece 3D utama>
-- **FG:** <elemen dekat kamera>
-- **HUD:** chapter card, callout, year pills
-- **Subtitles:** <posisi, ukuran, warna aktif>
-
-| # | Time (VO locked) | Set | Aksi visual (mute-readable) | Gerak kamera | Audio |
+| Scene | Waktu | Set (BG / MG / FG / HUD) | Aksi visual (terbaca tanpa suara) | Kamera | Audio |
 |---|---|---|---|---|---|
-| c00 Hook | 0:00–0:NN | <set> | <apa yang terlihat tanpa suara> | <dolly/crane/orbit/track> | <SFX/music cue> |
-| c01 Intro | 0:NN–0:NN | <set> | <aksi visual> | <gerak> | <audio> |
-| c02 Bab 1 | N:NN–N:NN | <set> | <aksi visual detail — per beat dalam chapter> | <gerak> | <audio> |
-| c03 Bab 2 | N:NN–N:NN | <set> | <aksi visual> | <gerak> | <audio> |
-| c04 Bab 3 | N:NN–N:NN | <set> | <aksi visual> | <gerak> | <audio> |
-| c05 Bab 4 | N:NN–N:NN | <set> | <aksi visual> | <gerak> | <audio> |
-| c06 Bab 5 | N:NN–N:NN | <set> | <aksi visual> | <gerak> | <audio> |
-| c07 Payoff | N:NN–N:NN | <set> | <aksi visual rangkuman + lineup> | <gerak> | <audio> |
-| End screen | N:NN–N:NN | <set> | Slow drift, 2 dashed frames untuk YouTube end-screen | | <ambient> |
-| Outro | N:NN–N:NN | — | brand/stacked-reversed.svg + "Created by Agus Dwi R." | | Soft impact |
+| s1 Hook | 0:00–0:08 | BG senja emas; MG Bagdad bundar + Tigris, panji hitam Abbasiyah di istana; FG tiang tug merah blur; HUD "1258" lalu "JATUH DALAM HITUNGAN HARI" | frame 0 sudah penuh: kota menyala; bayangan panji merah menjalar dari timur, panji hitam rebah di "tidak selamat" | oblique rendah dekat (d≈8), dolly maju ke istana | drone rendah, whoosh di "Bagdad", impact di "tidak selamat" |
+| s2 Konteks | 0:08–0:17 | BG meja; MG sheet peta Irak–Persia penuh; FG tali emas + pelat AUDIRA QISSAH; HUD label BAGDAD / TIGRIS / PERSIA, kartu "AL-MUSTA'SIM · KHALIFAH KE-37", kartu "HULAGU" | Bagdad bersinar di tengah; dari Persia, deret tenda dan tug merah tumbuh dan bergerak ke barat sepanjang rute | naik ke top-down jarak ≥ 9, geser ke timur mengikuti rute | whoosh, pop tiap label |
+| s3 Ultimatum | 0:17–0:25 | BG gelap; MG baki surat: dua gulungan berhadapan, lilin, segel merah; FG lembar surat blur; HUD "TUNDUK ATAU HANCUR" | gulungan Mongol terbuka, segel lilin retak di "menolak"; panah emas bantuan dari barat bergerak lalu memudar di "tidak pernah datang" | close macro, orbit 25° | gesek kertas, retak segel, nada turun |
+| s4 Pengepungan | 0:25–0:36 | BG kabut biru; MG Bagdad + Tigris dari atas, tanggul selatan; FG kabut rendah; HUD "29 JAN", "10 FEB", "±3.000 TOKOH" | dua panah merah menjepit kota dari dua tepi; tanggul pecah, lembar air meluas menelan tenda hitam; di "menyerah" panji hitam di gerbang turun | top-down miring (d≥8), push-in lt*0.05 ke tanggul | gemuruh air, retak tanah, pop kartu |
+| s5 Penjarahan | 0:36–0:48 | BG langit jingga asap; MG jalan kota model: kubah, istana, perpustakaan, rumah sakit (ikon kartu); FG asap memanjang + rim dingin; HUD "13–20 FEB", lalu "±800 RIBU – 2 JUTA · PERKIRAAN" | empat bangunan meredup dan runtuh bergiliran sesuai kata (masjid → istana → perpustakaan → rumah sakit); asap naik, tanpa figur | eye-level di dalam kota, tracking menyamping antar bangunan | api rendah, 4 thud bergiliran, riser kecil ke kartu angka |
+| s6 Akhir khalifah | 0:48–0:58 | BG gelap, haze; MG baki karpet: karpet tenun tergulung, panji hitam terlipat; FG pinggir karpet blur; HUD "20 FEB 1258", bar emas "750 → 1258" | karpet menggulung sendiri lalu diam; bar garis waktu emas retak dan padam di "berakhir" | high angle pelan turun ke karpet, spot sempit | sunyi, satu dentum rendah, retak kaca di bar |
+| s7 Mitos tinta | 0:58–1:09 | BG malam; MG tepi Tigris utara, dermaga buku, rak perpustakaan; FG halaman blur; HUD "GAMBARAN SASTRA · MICHAL BIRAN", lalu "2 TAHUN" | buku jatuh ke sungai, air menghitam; stempel kartu muncul, air kembali biru; rak menyala satu per satu dan buku naik ke rak | low angle sejajar air, crane naik ke rak | percik air, pop stempel, riser + impact (payoff utama) di "tidak padam" |
+| s8 Outro | 1:09–1:25 | BG fajar emas; MG seluruh peta, kubah Bagdad berkilau; FG pelat AUDIRA QISSAH; HUD kartu terjemah QS Ali Imran 3:140, lalu outro card | cahaya fajar menyapu peta dari timur ke barat; pull-back tinggi; outro `<AudiraOutro code="QISSAH" />` | pull-back oblique tinggi, sudut beda dari s2 | pad hangat, impact lembut, ekor |
 
-## Shorts (9:16, re-rendered from the same world)
-
-| Short | Length | Hook frame (0–3 s) | Body (reused chapter) | Ending |
-|---|---|---|---|---|
-| short01 | ~N dtk | <hook visual baru> | <chapter> | CTA ke long |
-| short02 | ~N dtk | <hook visual baru> | <chapter> | CTA ke long |
-
----
-- Brand di dalam adegan (label HUD/objek) min. 1× — anti-reupload.
-- Safe zone: atas 180 px, bawah 380 px. Periksa still di setiap beat.
-- Setiap baris "Aksi visual" harus bisa dibaca tanpa suara (Mute Test).
+Potong scene ≥ 0.5 dtk setelah kata terakhir babak. Model hero (G17): kota Bagdad di s1, s2, s4, s5, s8 adalah komponen yang sama; surat (s3), karpet (s6), dan buku (s7) adalah subjek VO yang berbeda. Multi-scene: 6 set berbeda (kota, peta, baki surat, banjir, jalan kota, baki karpet, dermaga buku, fajar).
