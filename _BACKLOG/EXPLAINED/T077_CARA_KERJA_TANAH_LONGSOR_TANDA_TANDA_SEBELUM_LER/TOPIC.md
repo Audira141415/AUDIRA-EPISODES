@@ -5,7 +5,11 @@ title: "Cara Kerja Tanah Longsor: Tanda-tanda Sebelum Lereng Runtuh"
 hook: "Retakan kecil dan mata air baru bisa jadi peringatan sebelum lereng ambruk"
 styleCandidates: ["DISASTERSIM (3D)", "WORLDFORGE (3D)", "CHAINREACTION (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme dan tanda awet; data kejadian BNPB dan status SNI perlu dicek saat produksi
+risiko: "Hook pada dasarnya benar (pakai 'bisa'), tapi judul berkesan longsor selalu didahului tanda: VO wajib sebut debris flow bisa tanpa gejala; angka 100 mm/hari hanya kriteria pedoman PU 2007, bukan ambang pasti; status SNI 8235:2017 belum terverifikasi dan tidak dipakai; topik keselamatan, rule 15 tanpa logo BNPB/Badan Geologi dan tanpa foto korban."
 ---
 
 # Cara Kerja Tanah Longsor: Tanda-tanda Sebelum Lereng Runtuh

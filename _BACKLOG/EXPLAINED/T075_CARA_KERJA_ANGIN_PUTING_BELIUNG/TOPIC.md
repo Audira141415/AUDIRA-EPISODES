@@ -5,7 +5,11 @@ title: "Cara Kerja Angin Puting Beliung"
 hook: "Udara berputar sekencang mobil di jalan tol, terbentuk dalam hitungan menit"
 styleCandidates: ["DISASTERSIM (3D)", "FLUIDFORGE (3D)", "WORLDFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme awet; peringkat BNPB dan kasus terbaru perlu dicek ulang
+risiko: "Hook asli berlebihan: 'sekencang mobil di tol' hanya cocok untuk Rancaekek (rata-rata ±65 km/jam), 'terbentuk dalam hitungan menit' keliru (yang singkat durasinya, <10 menit); istilah tornado diperdebatkan BMKG vs peneliti BRIN; rule 15: tanpa logo BMKG/BRIN/BNPB dan tanpa wajah korban."
 ---
 
 # Cara Kerja Angin Puting Beliung

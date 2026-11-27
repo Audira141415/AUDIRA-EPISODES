@@ -5,7 +5,11 @@ title: "El Niño dan La Niña: Lautan Jauh yang Mengatur Hujan di Indonesia"
 hook: "Suhu laut di Pasifik bisa membuat sawah di Jawa kering atau kebanjiran"
 styleCandidates: ["SATELLITEBRIEFING (2D)", "WORLDFORGE (3D)", "CHAINREACTION (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme ENSO/IOD awet; status El Niño/IOD per Nov 2026 dan prakiraan musim hujan cepat basi
+risiko: "Hook asli (sawah Jawa kering atau kebanjiran) dilebihkan, dikoreksi ke kemarau lebih kering + IOD + batasan musim; status ENSO/IOD dan prakiraan BMKG cepat basi; data BMKG dan BPS 2023 baru MEDIUM (via ANTARA); rule 15: tanpa logo NOAA/BMKG/BoM/BPS."
 ---
 
 # El Niño dan La Niña: Lautan Jauh yang Mengatur Hujan di Indonesia

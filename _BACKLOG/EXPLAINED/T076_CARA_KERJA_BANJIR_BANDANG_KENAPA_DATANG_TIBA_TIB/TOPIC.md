@@ -5,7 +5,11 @@ title: "Cara Kerja Banjir Bandang: Kenapa Datang Tiba-tiba"
 hook: "Hujan di hulu bisa sampai ke desa di hilir dalam hitungan jam"
 styleCandidates: ["DISASTERSIM (3D)", "FLUIDFORGE (3D)", "SATELLITEBRIEFING (2D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme awet; angka korban Sumatra dan kasus Solok bisa diperbarui
+risiko: "Bencana dengan korban jiwa: angka korban BNPB baru MEDIUM (via ANTARA); definisi BNPB tidak terbaca (situs 403); isu deforestasi sensitif, disajikan netral tanpa menyalahkan pihak; rule 15 tanpa wajah/logo."
 ---
 
 # Cara Kerja Banjir Bandang: Kenapa Datang Tiba-tiba

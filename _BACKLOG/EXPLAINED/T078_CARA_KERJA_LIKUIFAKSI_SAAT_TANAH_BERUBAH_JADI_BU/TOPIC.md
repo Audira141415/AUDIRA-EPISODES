@@ -5,7 +5,11 @@ title: "Cara Kerja Likuifaksi: Saat Tanah Berubah Jadi Bubur"
 hook: "Guncangan gempa bisa membuat tanah padat mengalir seperti cairan"
 styleCandidates: ["DISASTERSIM (3D)", "FLUIDFORGE (3D)", "WORLDFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme awet; angka Palu historis (per Okt 2018) tidak berubah
+risiko: "Hook asli (tanah padat mengalir) keliru, dikoreksi jadi pasir lepas jenuh air; angka rumah/luas Palu hanya MEDIUM (data awal BNPB via media); topik bencana nyata: tanpa wajah/korban, netral soal relokasi zona merah."
 ---
 
 # Cara Kerja Likuifaksi: Saat Tanah Berubah Jadi Bubur

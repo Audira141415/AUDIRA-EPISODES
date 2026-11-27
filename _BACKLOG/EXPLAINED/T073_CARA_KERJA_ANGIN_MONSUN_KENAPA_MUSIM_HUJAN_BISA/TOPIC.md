@@ -5,7 +5,11 @@ title: "Cara Kerja Angin Monsun: Kenapa Musim Hujan Bisa Datang Terlambat"
 hook: "Angin yang berbalik arah dua kali setahun menentukan kapan petani mulai menanam"
 styleCandidates: ["SATELLITEBRIEFING (2D)", "DATAPHYSICAL (2D)", "WORLDFORGE (3D)"]
 source: channel-topics/audira-explained/topics.md
-stage: backlog
+stage: drafted
+researchedAt: "2026-11-27"
+prioritas: 4
+awet: ya   # mekanisme monsun awet; hook 61% (prediksi BMKG 2026/2027) cepat basi, ganti tiap musim
+risiko: "Hook asli berlebihan (monsun bukan satu-satunya penentu waktu tanam; tidak semua wilayah berpola monsunal), dikoreksi; angka prediksi BMKG 2026/2027 cepat basi; data Ambon baru MEDIUM; rule 15: tanpa logo BMKG/Kementan."
 ---
 
 # Cara Kerja Angin Monsun: Kenapa Musim Hujan Bisa Datang Terlambat
