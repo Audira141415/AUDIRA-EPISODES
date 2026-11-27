@@ -3,9 +3,9 @@
   "episode": "EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK",
   "topic": "Sejarah peradaban Islam yang jarang diketahui",
   "createdAt": "2026-11-25T02:39:47.642Z",
-  "updatedAt": "2026-11-27T00:15:44.329Z",
-  "currentStage": "setup",
-  "sessionPhase": "A",
+  "updatedAt": "2026-11-27T02:02:52.952Z",
+  "currentStage": "delivery",
+  "sessionPhase": "C",
   "stages": [
     {
       "id": "context",
@@ -70,38 +70,74 @@
       "id": "setup",
       "name": "Scaffold folder + setup kit",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-27T00:20:16.454Z",
+          "text": "project/ disalin dari EP20 (robocopy tanpa node_modules/out/audio), node_modules junction ke AUDIRA_FAKTA_OLAHRAGA_2026/studio/node_modules, scenes/yusuf -> scenes/bilqis. Cover topik dirender setelah set hook jadi."
+        }
+      ],
+      "doneAt": "2026-11-27T00:20:16.454Z"
     },
     {
       "id": "voice",
       "name": "VO Cartesia + analisis timing + timeline",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-27T00:21:41.806Z",
+          "text": "VO Cartesia speed 1.1 (speed 1.0 = 98.6 dtk, terlalu lambat): audio/vo.wav 88.19 dtk, voEnd 88.158, total 91.808 (tail 3.65 outro). 208 kata, 30 baris, timeline.json dari build-timeline.mjs. Teks TTS \"Audira\"."
+        }
+      ],
+      "doneAt": "2026-11-27T00:21:41.806Z"
     },
     {
       "id": "animation",
       "name": "Shotlist + animasi 3D + still per beat + sound design (npm run sfx)",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-27T00:24:20.890Z",
+          "text": "sync: adegan/still sudah ada"
+        }
+      ],
+      "doneAt": "2026-11-27T00:19:33.015Z",
+      "startedAt": "2026-11-27T00:19:33.015Z"
     },
     {
       "id": "draft",
       "name": "Draf: contact sheet frame kunci (+ klip 15–20 dtk bila perlu) + audit visual",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-27T01:22:38.983Z",
+          "text": "Juri buta putaran 1 LOLOS 3.83 (L4 M4 D4 C3 Mo5 R3); self 4.0. DRAFT_SHEET 8 frame, ceilings semua 5, diversity 40.2, camera 5/5, rig-audit min 4, THEME_CHECK 8/8 ya."
+        }
+      ],
+      "doneAt": "2026-11-27T01:22:38.983Z"
     },
     {
       "id": "final",
       "name": "Gerbang render final (acc) → Final 1080×1920 @ 60 + QA audio/visual + outro AUDIRA",
       "gate": true,
-      "status": "pending",
-      "approved": false,
-      "approvedAt": null,
-      "notes": []
+      "status": "done",
+      "approved": true,
+      "approvedAt": "2026-11-27T01:50:41.253Z",
+      "notes": [
+        {
+          "at": "2026-11-27T01:50:41.253Z",
+          "text": "Acc pengguna 2026-11-27: \"Gas render\" (setelah contact sheet, juri 3.83, 91.8 dtk, G18c 16 LU)."
+        },
+        {
+          "at": "2026-11-27T02:02:26.872Z",
+          "text": "FINAL_EP21_RATU_BILQIS.mp4: 1080x1920@60, 91.83 dtk, -13.8 LUFS TP -1.8 dBFS, G18c 14.9 LU, metadata ffprobe ok, C2PA signature valid, outro QISSAH ok."
+        }
+      ],
+      "startedAt": "2026-11-27T01:50:41.253Z",
+      "doneAt": "2026-11-27T02:02:26.872Z"
     },
     {
       "id": "delivery",
@@ -132,9 +168,12 @@
       "wordCount": 208,
       "minSec": 83,
       "maxSec": 92
-    }
+    },
+    "voSeconds": 88.19,
+    "voSpeed": 1.1,
+    "total": 91.808
   },
-  "syncedAt": "2026-11-25T09:34:13.051Z",
+  "syncedAt": "2026-11-27T00:24:20.890Z",
   "handoverLog": [
     {
       "at": "2026-11-27T00:10:42.844Z",
@@ -156,9 +195,390 @@
         "draftScores": [],
         "finals": []
       }
+    },
+    {
+      "at": "2026-11-27T00:15:59.726Z",
+      "doing": "Sesi A selesai (commit 22f258bb): preflight no blockers; style HD2D, engine Remotion + R3F 3D (diorama + sprite piksel tanpa wajah), alternatif ditolak ISLAMICDOCUMENTARY/WORLDFORGE; naskah final 208 kata (≈83–92 dtk), STORYBOARD 8 set (istana kaca hook, kota Saba+Marib, perkemahan burung/kuil matahari, majelis obor, gurun→aula singgasana, aula disamarkan, istana kaca wide, bukit fajar) + outro; ART_DIRECTION, ASSET_MANIFEST; cover-reference.png disalin, cover-topic.png BELUM (render di Sesi B dari frame hook, pola EP17/EP20).",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/ART_DIRECTION.md",
+        "docs/SCRIPT.md"
+      ],
+      "next": "Sesi B: mulai tahap setup. Scaffold project/ dengan menyalin basis kode EP20 HD2D (scenes/yusuf) / EP17 (scenes/umar) → src/scenes/bilqis; render cover-topic.png dari frame hook; VO Cartesia dari teks VO SCRIPT.md (tulis \"Audira\" di teks TTS); SFX stem TARGET_LUFS=-28; <AudiraOutro code=\"QISSAH\" /> + node scripts/channel.mjs --check; AudiraSignature seed \"ratu-bilqis-ujian\" handle @AUDIRAQISSAH. Lantai kaca = MeshPhysicalMaterial transmission di atas bidang air bergerak, harus terbaca air di hook (G22). GLB: looted-gilded-throne-008fc3, chest-dais-d2bc39, coin-hoard-heap-07b6e4, cut-ruby-3ded3a, cut-emerald-74d180. Adab: Sulaiman hanya jauh/belakang, ujung jubah Bilqis sebatas mata kaki, tanpa lafaz Allah di objek dunia. Sebelum juri: look.json crush ≤2%/clipHi 0/diversity ≥30, audit rig per segmen (draft/rig-audit.json), THEME_CHECK.md.",
+      "snapshot": {
+        "episode": "EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP21",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T00:23:02.554Z",
+      "doing": "Sesi B s3 berhenti karena batas konteks: tahap 5 scaffold SELESAI (project/ salinan EP20, node_modules junction, scenes/bilqis), tahap 6 VO SELESAI (audio/vo.wav 88.19 dtk speed 1.1, timeline.json 30 baris, voEnd 88.158, total 91.808). Tahap 7 belum menulis kode: rencana lengkap 9 set + CUTS + sprite + HUD di draft/B_PLAN.md.",
+      "files": [
+        "draft/B_PLAN.md",
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "project/src/scenes/bilqis/",
+        "project/src/Root.tsx",
+        "audio/vo-lines.txt"
+      ],
+      "next": "Sesi B lanjutan: baca draft/B_PLAN.md, tulis ulang src/scenes/bilqis (camera.ts, sprites.ts, SetsHall/SetsOut → set Bilqis, Overlay.tsx, BilqisFilm.tsx), perbaiki Root.tsx import Yusuf→Bilqis, typecheck, stills per beat, cover-topic.png, SHOTLIST + npm run sfx (TARGET_LUFS -28), channel --check, contact sheet + audit:visual + audit:rig + THEME_CHECK + juri buta. Akhir B: handover newSession → sesi C.",
+      "snapshot": {
+        "episode": "EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP21",
+        "currentStage": "animation",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T00:30:35.728Z",
+      "doing": "Sesi B s4 tahap 7: sprites.ts + camera.ts Bilqis selesai; menulis SetsHall/SetsOut/Overlay/BilqisFilm/Root (lihat draft/B_PLAN.md bagian \"Progres s4\").",
+      "files": [
+        "draft/B_PLAN.md",
+        "project/src/scenes/bilqis/sprites.ts",
+        "project/src/scenes/bilqis/camera.ts",
+        "project/src/scenes/bilqis/SetsHall.tsx",
+        "project/src/scenes/bilqis/SetsOut.tsx",
+        "project/src/scenes/bilqis/Overlay.tsx",
+        "project/src/scenes/bilqis/BilqisFilm.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "Tulis SetsHall.tsx (glassHook, majelis, hall, glassWide), SetsOut.tsx (saba, camp, temple, desert, hill), Overlay.tsx (HUD EP21), BilqisFilm.tsx (LIGHT per set, signature seed ratu-bilqis-ujian, AudiraOutro QISSAH), Root.tsx import Bilqis → typecheck → stills → cover-topic → SHOTLIST + sfx → channel --check → contact sheet + audit:visual + audit:rig + THEME_CHECK + juri buta.",
+      "snapshot": {
+        "episode": "EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP21",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T00:33:30.532Z",
+      "doing": "Sesi B s4 (batas konteks): tahap 7 kode — SELESAI sprites.ts, camera.ts (9 set, CUTS, SEGMENTS), SetsHall.tsx DRAFT belum typecheck (GlassFloor transmission + air normal map bergulir + ikan, GlassHookSet, MajelisSet, HallSet, GlassWideSet; ashlarTex tetap diekspor). GLB chest/coin/ruby/emerald sudah di public/models/polyfork.",
+      "files": [
+        "draft/B_PLAN.md",
+        "project/src/scenes/bilqis/sprites.ts",
+        "project/src/scenes/bilqis/camera.ts",
+        "project/src/scenes/bilqis/SetsHall.tsx",
+        "project/src/scenes/bilqis/SetsOut.tsx",
+        "project/src/scenes/bilqis/Overlay.tsx",
+        "project/src/scenes/bilqis/BilqisFilm.tsx",
+        "project/src/Root.tsx"
+      ],
+      "next": "Sesi B lanjutan: tulis SetsOut.tsx (SabaSet, CampSet, TempleSet, DesertSet, HillSet — tata letak di draft/B_PLAN.md \"Progres s4\"; helper Block/House/Palm/SunDisc dari SetsOut lama boleh dipakai ulang, import ashlarTex dari SetsHall), Overlay.tsx (PINS/HUD/CoverTitle EP21, daftar HUD di B_PLAN), BilqisFilm.tsx (LIGHT per SetId baru, SET_COMPONENT, export BilqisFilm/BilqisCoverFrame/BILQIS_COVER_SECONDS/BILQIS_TOTAL, signature seed ratu-bilqis-ujian @AUDIRAQISSAH, AudiraOutro QISSAH, delayRender \"Bilqis fonts\"), Root.tsx baris 7/89–91 Yusuf→Bilqis (BilqisCover/BilqisPreview/BilqisFinal) → npm run typecheck → stills per beat → cover-topic.png → SHOTLIST + npm run sfx (TARGET_LUFS -28 sudah) → channel --check → contact sheet + audit:visual + audit:rig + THEME_CHECK + juri buta.",
+      "snapshot": {
+        "episode": "EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP21",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T00:39:33.344Z",
+      "doing": "Sesi B s5 (batas konteks): tahap 7 kode. SELESAI (belum typecheck): SetsOut.tsx ditulis ulang (SabaSet, CampSet, TempleSet, DesertSet, HillSet + ekspor SABA/CAMP/TEMPLE/DESERT/HILL, caravanAt, throneStreak, hudhudCamp, hudhudTemple, raised), BilqisFilm.tsx (LIGHT 9 SetId, SET_COMPONENT, BilqisFilm/BilqisCoverFrame/BILQIS_COVER_SECONDS/BILQIS_TOTAL, signature seed ratu-bilqis-ujian, fonts \"Bilqis fonts\"), Root.tsx baris 7/89-91 → BilqisCover/BilqisPreview/BilqisFinal. Detail tata letak di draft/B_PLAN.md bagian \"Progres s5\".",
+      "files": [
+        "draft/B_PLAN.md",
+        "project/src/scenes/bilqis/Overlay.tsx",
+        "project/src/scenes/bilqis/SetsOut.tsx",
+        "project/src/scenes/bilqis/SetsHall.tsx",
+        "project/src/scenes/bilqis/BilqisFilm.tsx",
+        "project/src/scenes/bilqis/camera.ts",
+        "project/src/Root.tsx"
+      ],
+      "next": "Sesi B lanjutan: tulis ulang Overlay.tsx (masih kode Yusuf; pakai pola Pins/Hud/Captions/CoverTitle/FilmOverlay yang sama; import BILQIS_HOOK, COUNCIL, THRONE_HALL, hallState, corridorState dari SetsHall + ekspor SetsOut; PINS & HUD per daftar di B_PLAN \"Isi set\"; CoverTitle \"SEJARAH ISLAM · EP21\" / \"RATU BILQIS\" + \"KOLAM?\"; vignette 0.5 untuk saba/camp/desert/hill; matte lift untuk majelis/glassHook/glassWide) → npm run typecheck (perbaiki SetsHall/SetsOut; hapus import Walker tak terpakai di SetsOut) → stills per beat → style/cover-topic.png dari BilqisCover (kaca harus terbaca air, G22) → docs/SHOTLIST.md + npm run sfx → node scripts/channel.mjs --check → contact sheet + audit:visual + audit:rig → draft/THEME_CHECK.md → skor self + juri buta record_score draft.",
+      "snapshot": {
+        "episode": "EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP21",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T00:54:28.071Z",
+      "doing": "Sesi B s6 (batas konteks): Overlay.tsx EP21 selesai, typecheck bersih (episode), stills 17 beat di draft/beats (ceiling comp 3 karena teks SEBELUM/MATAMU tumpang, readability 4 karena signature 34px; diversity 42.9). Temuan framing hook/saba/majelis/kolam2 terlalu dekat (kaca tidak terbaca air), flash TIBA terlalu putih — rinci di draft/B_PLAN.md \"Progres s6\".",
+      "files": [
+        "draft/B_PLAN.md",
+        "project/src/scenes/bilqis/Overlay.tsx",
+        "project/src/scenes/bilqis/camera.ts",
+        "project/src/scenes/bilqis/SetsHall.tsx",
+        "project/src/scenes/bilqis/SetsOut.tsx",
+        "project/src/scenes/bilqis/BilqisFilm.tsx",
+        "draft/beats/_sheet.jpg",
+        "draft/beats/look.json"
+      ],
+      "next": "Sesi B lanjutan (tahap 7–8): perbaiki 7 temuan B_PLAN \"Progres s6\" (camera.ts pose + Overlay giant lineHeight + flash hall + signature size) → stills ulang → npm run cover -- BilqisCover --episode=.. (style/cover-topic.png, kaca terbaca air G22) → docs/SHOTLIST.md + npm run sfx + node scripts/channel.mjs --check → contact sheet draf 8 frame + audit:visual + audit:rig per segmen (draft/rig-audit.json) → draft/THEME_CHECK.md → skor self + juri buta record_score draft. Render 3D: cek audira_render_batch queue dulu.",
+      "snapshot": {
+        "episode": "EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP21",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T01:13:05.254Z",
+      "doing": "Sesi B s7: 7 temuan s6 diperbaiki (camera.ts hook/saba/majelis/kolam2 mundur, NOBLE_SLOTS ke dalam ±0.6–0.72, flash TIBA 4 + ring 0.6, Overlay giant lineHeight 1.12 + kedip 132, handle signature 0.7, outro handle 38). Stills ulang: ceilings semua 5, diversity 42.6. Cover topik baru (--force) kaca+air+ikan terbaca. docs/SHOTLIST.md + sfx (-28 LUFS, 22 bunyi) + channel check ok. Sekarang: npm run draft -- BilqisPreview (contact sheet + audit visual + camera clip).",
+      "command": "cd project && npm run draft -- BilqisPreview",
+      "files": [
+        "project/src/scenes/bilqis/camera.ts",
+        "project/src/scenes/bilqis/SetsHall.tsx",
+        "project/src/scenes/bilqis/Overlay.tsx",
+        "project/src/brand/AudiraSignature.tsx",
+        "project/src/brand/AudiraOutro.tsx",
+        "docs/SHOTLIST.md",
+        "style/cover-topic.png"
+      ],
+      "next": "audit:rig per segmen → draft/rig-audit.json, draft/THEME_CHECK.md, skor self + juri buta record_score draft, lalu handover newSession ke Sesi C.",
+      "snapshot": {
+        "episode": "EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP21",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T01:16:24.449Z",
+      "doing": "Sesi B s7: npm run draft -- BilqisPreview OK (ceilings semua 5, diversity 40.5, camera motion 5/5; draft/DRAFT_SHEET.jpg, DRAFT_REPORT.json, jury_input.json). Pin lorong + card masuk diakhiri LS(l24)-0.4 (kontras transien). Cover topik + SHOTLIST + sfx selesai.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/DRAFT_REPORT.json",
+        "draft/jury_input.json",
+        "draft/THEME_CHECK.md"
+      ],
+      "next": "npm run audit:rig -- src/scenes/bilqis/camera.ts → draft/rig-audit.json; isi draft/THEME_CHECK.md (8 frame draf); record_score self + juri buta (qa/jury.md) stage draft; lalu handover newSession → Sesi C.",
+      "snapshot": {
+        "episode": "EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP21",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T01:21:53.377Z",
+      "doing": "Sesi B s7: draft putaran 1 selesai (DRAFT_SHEET 8 frame, ceilings semua 5, diversity 40.2, camera 5/5, rig-audit min 4 → draft/rig-audit.json), THEME_CHECK 8 baris ya, self score 4.0 tercatat; juri buta subagent sedang menilai.",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/THEME_CHECK.md",
+        "draft/rig-audit.json",
+        "draft/jury_input.json"
+      ],
+      "next": "record_score judge jury stage draft dari hasil juri; LOLOS → handover newSession Sesi C (render final 1080x1920: render:final BilqisFinal --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav).",
+      "snapshot": {
+        "episode": "EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP21",
+        "currentStage": "draft",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T01:22:47.991Z",
+      "doing": "Sesi B selesai (s7): style HD2D, engine Remotion + R3F 3D, VO 88.19 dtk (film 91.81 dtk). Juri buta draft LOLOS 3.83 (lighting 4, material 4, depth 4, composition 3, motion 5, readability 3); self 4.0. Contact sheet draft/DRAFT_SHEET.jpg (8 frame), ceilings audit:visual semua 5, diversity 40.2, audit:camera 5/5, draft/rig-audit.json min 4, THEME_CHECK 8/8 ya. Cover style/cover-topic.png. SFX public/audio/sfx.wav −28 LUFS (22 bunyi) dari docs/SHOTLIST.md; channel check ok (@AUDIRAQISSAH). G18c belum diukur (diukur saat/ sesudah render final). Catatan juri (opsional bila pengguna minta poles): blur tilt-shift berat di F2/F7, chip PERANG/HADIAH menimpa pin BILQIS di F4, sub-label pixel kecil.",
+      "command": "audira_render_batch start comp BilqisFinal --vo=public/audio/vo.wav --sfx=public/audio/sfx.wav",
+      "files": [
+        "draft/DRAFT_SHEET.jpg",
+        "draft/DRAFT_REPORT.json",
+        "draft/THEME_CHECK.md",
+        "draft/rig-audit.json",
+        "style/cover-topic.png",
+        "public/audio/sfx.wav"
+      ],
+      "next": "Sesi C: tahap 9 gerbang acc — tampilkan DRAFT_SHEET + skor juri 3.83 + durasi 91.8 dtk + cek G18c, tunggu acc pengguna; lalu audira_render_batch start {project: <EP>/project, comp: BilqisFinal, vo: public/audio/vo.wav, sfx: public/audio/sfx.wav, slug, title, ep: EP21} (cek queue dulu), QA −14 LUFS TP<−1, tahap 10 delivery.",
+      "snapshot": {
+        "episode": "EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP21",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-27T01:56:55.115Z",
+      "doing": "Sesi C s8: acc render diterima (\"Gas render\"). Gate G14 rig 4->5 diperbaiki (camera.ts pose pembuka seg saba/camp/desert didekatkan, draft/rig-audit.json 5/5). Gate look.json clipHi>0 -> BilqisFilm root filter brightness(0.975); npm run draft BilqisPreview --out=../draft sedang jalan ulang. SOCIAL_CAPTIONS.md selesai + validator ok (tayang Selasa 15 Des 2026 19.00).",
+      "command": "npm run draft -- BilqisPreview --out=../draft",
+      "files": [
+        "project/src/scenes/bilqis/camera.ts",
+        "project/src/scenes/bilqis/BilqisFilm.tsx",
+        "draft/rig-audit.json",
+        "draft/look.json",
+        "SOCIAL_CAPTIONS.md"
+      ],
+      "next": "Bila look.json clipHi semua 0: audira_render_batch start {project: <EP>/project, comp: BilqisFinal, vo: public/audio/vo.wav, sfx: public/audio/sfx.wav, slug: ratu-bilqis-ujian, ep: EP21, title: \"Kisah Ratu Bilqis dan Ujian yang Diberikan Kepadanya\"}; QA -14 LUFS TP<-1, ffprobe metadata, record_score final, NOTES, lessons, 3 scheduled task review (upload 15 Des 2026 19.00 WIB).",
+      "snapshot": {
+        "episode": "EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP21",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-27T01:57:17.987Z",
+      "doing": "render final (BilqisFinal)",
+      "command": "audira_render_batch start",
+      "batchId": "20261127-015717",
+      "files": [
+        "out/BilqisFinal.mp4"
+      ],
+      "next": "cek audira_render_batch status (batch 20261127-015717); setelah selesai: QA (qa:gate, audit:cover), metadata cek, delivery. Jangan render ulang.",
+      "snapshot": {
+        "episode": "EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP21",
+        "currentStage": "final",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "in_progress"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
+    },
+    {
+      "at": "2026-11-27T02:02:52.952Z",
+      "doing": "Sesi C s8: final selesai (FINAL_EP21_RATU_BILQIS.mp4, -13.8 LUFS, TP -1.8, metadata ok). SOCIAL_CAPTIONS.md validator ok, NOTES.md ditulis, lessons HD2D+GLOBAL dicatat, record_score final self 3.83.",
+      "files": [
+        "FINAL_EP21_RATU_BILQIS.mp4",
+        "SOCIAL_CAPTIONS.md",
+        "NOTES.md"
+      ],
+      "next": "Buat 3 scheduled task review-ratu-bilqis-ujian-24h/72h/7d (16/18/22 Des 2026 19.00 +07:00), update delivery done, hapus intermediate (project/out/BilqisFinal.mp4 duplikat, draft/CHECK_49-67s.mp4), arsip sesi lama EP21 (s5,s6 dst), commit file EP21.",
+      "snapshot": {
+        "episode": "EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP21",
+        "currentStage": "delivery",
+        "gates": {
+          "final": {
+            "approved": true,
+            "status": "done"
+          }
+        },
+        "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK/audio/vo.wav",
+        "draftScores": [],
+        "finals": [],
+        "draftRounds": 0
+      }
     }
   ],
-  "session": 2,
+  "session": 8,
   "sessionLog": [
     {
       "no": 2,
@@ -166,27 +586,75 @@
       "phase": "A",
       "phaseNo": 2,
       "at": "2026-11-27T00:10:42.842Z"
+    },
+    {
+      "no": 3,
+      "title": "EP21 Ratu Bilqis · B1 (s3)",
+      "phase": "B",
+      "phaseNo": 1,
+      "at": "2026-11-27T00:15:59.726Z"
+    },
+    {
+      "no": 4,
+      "title": "EP21 Ratu Bilqis · B2 (s4)",
+      "phase": "B",
+      "phaseNo": 2,
+      "at": "2026-11-27T00:23:02.554Z"
+    },
+    {
+      "no": 5,
+      "title": "EP21 Ratu Bilqis · B3 (s5)",
+      "phase": "B",
+      "phaseNo": 3,
+      "at": "2026-11-27T00:33:30.532Z"
+    },
+    {
+      "no": 6,
+      "title": "EP21 Ratu Bilqis · B4 (s6)",
+      "phase": "B",
+      "phaseNo": 4,
+      "at": "2026-11-27T00:39:33.344Z"
+    },
+    {
+      "no": 7,
+      "title": "EP21 Ratu Bilqis · B5 (s7)",
+      "phase": "B",
+      "phaseNo": 5,
+      "at": "2026-11-27T00:54:28.070Z"
+    },
+    {
+      "no": 8,
+      "title": "EP21 Ratu Bilqis · C1 (s8)",
+      "phase": "C",
+      "phaseNo": 1,
+      "at": "2026-11-27T01:22:47.991Z"
     }
   ],
   "handover": {
-    "at": "2026-11-27T00:10:42.844Z",
-    "doing": "Antrean QISSAH: EP21 belum diproduksi (riset ada, belum ada final). Sesi baru dibuat atas permintaan pengguna 2026-11-27.",
-    "next": "Sesi A (tahap 0–4): preflight, style+engine dipilih AI, cover topik, naskah+storyboard+manifest. Pelajaran EP17: TARGET_LUFS -28, <AudiraOutro code=QISSAH>, look.json crush ≤2%/diversity ≥30 dicek di sesi B.",
+    "at": "2026-11-27T02:02:52.952Z",
+    "doing": "Sesi C s8: final selesai (FINAL_EP21_RATU_BILQIS.mp4, -13.8 LUFS, TP -1.8, metadata ok). SOCIAL_CAPTIONS.md validator ok, NOTES.md ditulis, lessons HD2D+GLOBAL dicatat, record_score final self 3.83.",
+    "files": [
+      "FINAL_EP21_RATU_BILQIS.mp4",
+      "SOCIAL_CAPTIONS.md",
+      "NOTES.md"
+    ],
+    "next": "Buat 3 scheduled task review-ratu-bilqis-ujian-24h/72h/7d (16/18/22 Des 2026 19.00 +07:00), update delivery done, hapus intermediate (project/out/BilqisFinal.mp4 duplikat, draft/CHECK_49-67s.mp4), arsip sesi lama EP21 (s5,s6 dst), commit file EP21.",
     "snapshot": {
       "episode": "EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK",
       "topic": "Sejarah peradaban Islam yang jarang diketahui",
-      "style": null,
+      "style": "HD2D",
       "memoryEpisode": "sejarah-islam-EP21",
-      "currentStage": "style",
+      "currentStage": "delivery",
       "gates": {
         "final": {
-          "approved": false,
-          "status": "pending"
+          "approved": true,
+          "status": "done"
         }
       },
-      "voPath": null,
+      "voPath": "F:/AUDIRA-EPISODES/AUDIRA_SEJARAH_ISLAM_2026/EP21_KISAH_RATU_BILQIS_DAN_UJIAN_YANG_DIBERIK/audio/vo.wav",
       "draftScores": [],
-      "finals": []
+      "finals": [],
+      "draftRounds": 0
     }
   }
 }
