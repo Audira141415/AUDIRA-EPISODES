@@ -3,9 +3,9 @@
   "episode": "EP23_ABU_BAKAR_AS_SIDDIQ_ORANG_PERTAMA_YANG_P",
   "topic": "Sejarah peradaban Islam yang jarang diketahui",
   "createdAt": "2026-11-25T02:39:47.992Z",
-  "updatedAt": "2026-11-25T09:34:13.086Z",
-  "currentStage": "style",
-  "sessionPhase": "A",
+  "updatedAt": "2026-11-27T00:15:28.639Z",
+  "currentStage": "setup",
+  "sessionPhase": "B",
   "stages": [
     {
       "id": "context",
@@ -39,8 +39,14 @@
       "id": "style",
       "name": "Style + engine 2D/3D (dipilih AI, tanpa acc) → cover topik",
       "gate": false,
-      "status": "pending",
-      "notes": []
+      "status": "done",
+      "notes": [
+        {
+          "at": "2026-11-27T00:15:19.520Z",
+          "text": "HD2D 3D Remotion+R3F, basis kode EP17 scenes/umar. Alt ditolak: ISLAMICDOCUMENTARY (juri 3.67, lemah gua), PAPERWORLD. Cover topik dirender di Sesi B (kode adegan diblokir fase A)."
+        }
+      ],
+      "doneAt": "2026-11-27T00:15:19.520Z"
     },
     {
       "id": "script",
@@ -109,7 +115,112 @@
     }
   ],
   "data": {
-    "memoryEpisode": "sejarah-islam-EP23"
+    "memoryEpisode": "sejarah-islam-EP23",
+    "style": "HD2D",
+    "engine": "remotion",
+    "shortTitle": "Abu Bakar",
+    "wordCount": 205,
+    "estimatedDuration": {
+      "wordCount": 205,
+      "minSec": 82,
+      "maxSec": 91
+    }
   },
-  "syncedAt": "2026-11-25T09:34:13.086Z"
+  "syncedAt": "2026-11-25T09:34:13.086Z",
+  "handoverLog": [
+    {
+      "at": "2026-11-27T00:10:43.615Z",
+      "doing": "Antrean QISSAH: EP23 belum diproduksi (riset ada, belum ada final). Sesi baru dibuat atas permintaan pengguna 2026-11-27.",
+      "next": "Sesi A (tahap 0–4): preflight, style+engine dipilih AI, cover topik, naskah+storyboard+manifest. Pelajaran EP17: TARGET_LUFS -28, <AudiraOutro code=QISSAH>, look.json crush ≤2%/diversity ≥30 dicek di sesi B.",
+      "snapshot": {
+        "episode": "EP23_ABU_BAKAR_AS_SIDDIQ_ORANG_PERTAMA_YANG_P",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": null,
+        "memoryEpisode": "sejarah-islam-EP23",
+        "currentStage": "style",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    },
+    {
+      "at": "2026-11-27T00:15:28.639Z",
+      "doing": "Sesi A selesai: preflight lolos (no blocker). Style HD2D, engine Remotion + R3F 3D (diorama + sprite piksel tanpa wajah), basis kode EP17 `scenes/umar` (EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN/project) → `src/scenes/abubakar`. Naskah final 205 kata, 8 chapter (c00 hook alun-alun Makkah, c01 peta Hijaz, c02 meja juru tulis Bukhari 3661, c03 rantai Bilal siang, c04a lereng Tsur obor + c04b dalam gua, c05 masjid Madinah menangis, c06 timbangan \"tanpa bertanya? tidak tercatat\", c07 Madinah fajar khalifah 632–634), estimasi 82–91 dtk. Nabi = berkas cahaya, tidak pernah figur. Brand in-scene: cap AUDIRA pada wadah gulungan c02. cover-reference.png ada; cover-topic.png BELUM (render frame hook di Sesi B setelah scaffold).",
+      "files": [
+        "style/STYLE_DECISION.md",
+        "docs/STORYBOARD.md",
+        "docs/ASSET_MANIFEST.md",
+        "docs/SCRIPT.md",
+        "docs/ART_DIRECTION.md"
+      ],
+      "next": "Sesi B: mulai tahap setup (scaffold project, salin starter dari EP17 project tanpa node_modules/out, check-env + smoke), render cover-topic.png dari frame hook, lalu VO Cartesia (teks VO docs/SCRIPT.md, tulis \"Audira\"), npm run vo, scene code 9 set, npm run sfx (TARGET_LUFS -28), contact sheet + audit:visual (crush ≤2%, clipHi 0, diversity ≥30, rig audit per segmen), THEME_CHECK, juri buta. Outro <AudiraOutro code=\"QISSAH\" />.",
+      "snapshot": {
+        "episode": "EP23_ABU_BAKAR_AS_SIDDIQ_ORANG_PERTAMA_YANG_P",
+        "topic": "Sejarah peradaban Islam yang jarang diketahui",
+        "style": "HD2D",
+        "memoryEpisode": "sejarah-islam-EP23",
+        "currentStage": "setup",
+        "gates": {
+          "final": {
+            "approved": false,
+            "status": "pending"
+          }
+        },
+        "voPath": null,
+        "draftScores": [],
+        "finals": []
+      }
+    }
+  ],
+  "session": 3,
+  "sessionLog": [
+    {
+      "no": 2,
+      "title": "EP23 Sejarah peradaban Islam yang jarang diketahui · A2 (s2)",
+      "phase": "A",
+      "phaseNo": 2,
+      "at": "2026-11-27T00:10:43.615Z"
+    },
+    {
+      "no": 3,
+      "title": "EP23 Abu Bakar · B1 (s3)",
+      "phase": "B",
+      "phaseNo": 1,
+      "at": "2026-11-27T00:15:28.639Z"
+    }
+  ],
+  "handover": {
+    "at": "2026-11-27T00:15:28.639Z",
+    "doing": "Sesi A selesai: preflight lolos (no blocker). Style HD2D, engine Remotion + R3F 3D (diorama + sprite piksel tanpa wajah), basis kode EP17 `scenes/umar` (EP17_SAAT_UMAR_BIN_KHATTAB_MENANGIS_SENDIRIAN/project) → `src/scenes/abubakar`. Naskah final 205 kata, 8 chapter (c00 hook alun-alun Makkah, c01 peta Hijaz, c02 meja juru tulis Bukhari 3661, c03 rantai Bilal siang, c04a lereng Tsur obor + c04b dalam gua, c05 masjid Madinah menangis, c06 timbangan \"tanpa bertanya? tidak tercatat\", c07 Madinah fajar khalifah 632–634), estimasi 82–91 dtk. Nabi = berkas cahaya, tidak pernah figur. Brand in-scene: cap AUDIRA pada wadah gulungan c02. cover-reference.png ada; cover-topic.png BELUM (render frame hook di Sesi B setelah scaffold).",
+    "files": [
+      "style/STYLE_DECISION.md",
+      "docs/STORYBOARD.md",
+      "docs/ASSET_MANIFEST.md",
+      "docs/SCRIPT.md",
+      "docs/ART_DIRECTION.md"
+    ],
+    "next": "Sesi B: mulai tahap setup (scaffold project, salin starter dari EP17 project tanpa node_modules/out, check-env + smoke), render cover-topic.png dari frame hook, lalu VO Cartesia (teks VO docs/SCRIPT.md, tulis \"Audira\"), npm run vo, scene code 9 set, npm run sfx (TARGET_LUFS -28), contact sheet + audit:visual (crush ≤2%, clipHi 0, diversity ≥30, rig audit per segmen), THEME_CHECK, juri buta. Outro <AudiraOutro code=\"QISSAH\" />.",
+    "snapshot": {
+      "episode": "EP23_ABU_BAKAR_AS_SIDDIQ_ORANG_PERTAMA_YANG_P",
+      "topic": "Sejarah peradaban Islam yang jarang diketahui",
+      "style": "HD2D",
+      "memoryEpisode": "sejarah-islam-EP23",
+      "currentStage": "setup",
+      "gates": {
+        "final": {
+          "approved": false,
+          "status": "pending"
+        }
+      },
+      "voPath": null,
+      "draftScores": [],
+      "finals": []
+    }
+  }
 }

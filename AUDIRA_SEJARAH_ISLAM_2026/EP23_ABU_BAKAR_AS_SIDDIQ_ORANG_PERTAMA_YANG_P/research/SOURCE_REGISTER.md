@@ -13,3 +13,4 @@
 | 7 | Lahir Makkah 573 M, Bani Taim (Quraisy); khalifah 8 Jun 632 s.d. 23 Agu 634; wafat di Madinah usia 60 | "Abu Bakr", Wikipedia (merujuk Watt 1960 dll.), revisi 2026-11-22 | https://en.wikipedia.org/wiki/Abu_Bakr | 2026-11-25 | MEDIUM |
 | 8 | Ibnu Katsir: Abu Bakar laki-laki merdeka dewasa pertama masuk Islam (Khadijah wanita pertama, Zaid budak merdeka pertama, Ali anak pertama) | Al-Bidayah wa an-Nihayah, Ibnu Katsir, dikutip di "Abu Bakr", Wikipedia | https://en.wikipedia.org/wiki/Abu_Bakr | 2026-11-25 | MEDIUM |
 | 9 | Hijrah 622 M: berlindung di gua Gunung Tsur, dekat 5 mil dari Makkah | "Abu Bakr", Wikipedia, bagian Migration to Medina | https://en.wikipedia.org/wiki/Abu_Bakr | 2026-11-25 | MEDIUM |
+| 10 | Gelar al-Siddiq ("yang membenarkan / yang jujur") diberikan kepada Abu Bakar | "Abu Bakr", Wikipedia, bagian nama dan gelar | https://en.wikipedia.org/wiki/Abu_Bakr | 2026-11-27 | MEDIUM |
